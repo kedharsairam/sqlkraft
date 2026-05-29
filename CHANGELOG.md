@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.13.0] — 2026-05-29
+
+### Added
+
+- **Arrow-key navigation with active selection** — Search results now track `activeIndex` state; ArrowUp/ArrowDown cycle through results with smooth `scrollIntoView`; Enter navigates to the selected result. Active item gets `background: rgba(255,255,255,0.05)` and `border-left: 2px solid var(--text-secondary)` highlight
+- **Ctrl+K placeholder hint** — Search input placeholder updated to `"Search references... (Ctrl+K)"` for discoverability
+- **Programmatic result navigation** — `navigateToResult()` helper updates the recently viewed list in `sessionStorage` before navigating, so both click and Enter-key selection are tracked
+
+### Changed
+
+- **Result name color neutralized** — `.result-name` color changed from `var(--accent)` to `var(--text-primary)` matching the site-wide accent→neutral conversion; `.result-cat` background changed from `rgba(47,128,237,0.12)` accent tint to neutral `rgba(255,255,255,0.06)`
+- **Hover state refined** — `.result-item:hover` uses `rgba(255,255,255,0.05)` (was accent blue `rgba(47,128,237,0.08)`) for consistent neutral palette
+
 ## [0.12.0] — 2026-05-29
 
 ### Added
