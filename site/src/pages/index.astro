@@ -90,7 +90,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   /* ── Hero ── */
   .hero {
     text-align: center;
-    padding: clamp(48px, 6vw, 80px) 0 0;
+    /* Top spacing is handled by .app-shell padding (var(--space-lg) from nav) */
+    padding: 0;
   }
   .hero h1 {
     font-size: clamp(2.25rem, 5vw, 4.5rem);
@@ -123,7 +124,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   .portal-card {
     flex: 0 0 clamp(300px, 25vw, 440px);
     display: block;
-    padding: clamp(20px, 2.5vw, 30px) clamp(18px, 2vw, 26px) clamp(20px, 2.5vw, 28px);
+    padding: clamp(18px, 2vw, 28px);
     border: 1px solid var(--border-glass);
     border-radius: clamp(10px, 1.2vw, 14px);
     background: var(--bg-secondary);
@@ -152,7 +153,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   /* ── Footer ── */
   .footer {
-    margin-top: clamp(48px, 6vw, 80px);
+    margin-top: clamp(var(--space-xl), 6vw, 5rem);
     padding-top: clamp(16px, 2vw, 26px);
     border-top: 1px solid var(--border-glass);
     text-align: center;
@@ -166,9 +167,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     .hero h1 {
       font-size: clamp(1.8rem, 6vw, 2.5rem);
     }
-    .tagline {
-      font-size: clamp(0.9rem, 3vw, 1.2rem);
-    }
+  .tagline {
+    margin-top: var(--space-xs);
+    font-size: clamp(14px, 2vw, 18px);
+  }
+  .subtitle {
+    margin: var(--space-sm) auto var(--space-lg);
+    font-size: clamp(13px, 1.6vw, 16px);
+    max-width: 680px;
+  }
     .subtitle {
       margin-bottom: 2.5rem;
     }
