@@ -102,10 +102,10 @@ const sevColor = SEVERITY_COLORS[severity] || "#6272a4";
   .breadcrumb {
     display: flex;
     align-items: center;
-    gap: 8px;
-    font-size: 13px;
+    gap: clamp(4px, 0.8vw, 10px);
+    font-size: clamp(11px, 1.2vw, 14px);
     color: var(--text-secondary);
-    margin-bottom: 24px;
+    margin-bottom: clamp(16px, 2.5vw, 28px);
   }
   .breadcrumb a {
     color: var(--accent);
@@ -122,12 +122,12 @@ const sevColor = SEVERITY_COLORS[severity] || "#6272a4";
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 16px;
-    margin-bottom: 12px;
+    gap: clamp(8px, 1.5vw, 18px);
+    margin-bottom: clamp(8px, 1vw, 14px);
     flex-wrap: wrap;
   }
   .detail-title {
-    font-size: 28px;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     font-weight: 700;
   }
   .wait-name {
@@ -136,13 +136,13 @@ const sevColor = SEVERITY_COLORS[severity] || "#6272a4";
   }
   .badge-strip {
     display: flex;
-    gap: 8px;
+    gap: clamp(4px, 0.8vw, 10px);
     flex-wrap: wrap;
   }
   .badge {
-    font-size: 11px;
+    font-size: clamp(10px, 1vw, 12px);
     font-weight: 600;
-    padding: 4px 12px;
+    padding: clamp(2px, 0.3vw, 5px) clamp(8px, 1vw, 14px);
     border-radius: 4px;
     letter-spacing: 0.5px;
   }
@@ -153,43 +153,43 @@ const sevColor = SEVERITY_COLORS[severity] || "#6272a4";
   .tag-strip {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
-    margin-bottom: 20px;
+    gap: clamp(4px, 0.6vw, 8px);
+    margin-bottom: clamp(12px, 2vw, 24px);
   }
   .tag-pill {
-    font-size: 12px;
+    font-size: clamp(11px, 1vw, 13px);
     color: var(--text-secondary);
     background: rgba(255, 255, 255, 0.06);
-    padding: 3px 10px;
+    padding: clamp(2px, 0.3vw, 4px) clamp(6px, 0.8vw, 12px);
     border-radius: 4px;
     font-family: var(--font-mono);
   }
 
   .scripts-callout {
-    padding: 14px 18px;
+    padding: clamp(10px, 1.5vw, 18px);
     border: 1px solid var(--accent);
-    border-radius: 8px;
+    border-radius: clamp(6px, 0.8vw, 10px);
     background: rgba(47, 128, 237, 0.06);
-    margin-bottom: 24px;
-    font-size: 13px;
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+    font-size: clamp(12px, 1.2vw, 14px);
     color: var(--text-secondary);
   }
   .scripts-callout strong {
     color: var(--text-primary);
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: clamp(6px, 0.8vw, 10px);
   }
   .script-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: clamp(4px, 0.8vw, 10px);
   }
   .script-link {
     font-family: var(--font-mono);
-    font-size: 12px;
+    font-size: clamp(11px, 1vw, 13px);
     color: var(--accent);
     text-decoration: none;
-    padding: 2px 8px;
+    padding: clamp(1px, 0.2vw, 3px) clamp(6px, 0.7vw, 10px);
     border: 1px solid rgba(47, 128, 237, 0.3);
     border-radius: 4px;
   }
@@ -198,76 +198,11 @@ const sevColor = SEVERITY_COLORS[severity] || "#6272a4";
     text-decoration: none;
   }
 
-  .body-content {
-    line-height: 1.8;
-    font-size: 14px;
-    color: var(--text-secondary);
-  }
-  .body-content h2 {
-    font-size: 20px;
-    color: var(--text-primary);
-    margin: 32px 0 12px;
-    font-weight: 600;
-  }
-  .body-content h3 {
-    font-size: 16px;
-    color: var(--text-primary);
-    margin: 24px 0 10px;
-    font-weight: 600;
-  }
-  .body-content p {
-    margin-bottom: 14px;
-  }
-  .body-content ul,
-  .body-content ol {
-    margin-bottom: 14px;
-    padding-left: 20px;
-  }
-  .body-content li {
-    margin-bottom: 6px;
-  }
-  .body-content pre {
-    background: #0d1117;
-    padding: 16px;
-    border-radius: 8px;
-    overflow-x: auto;
-    margin-bottom: 16px;
-  }
-  .body-content code {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    color: #e6edf3;
-  }
-  .body-content :not(pre) > code {
-    font-size: 13px;
-    color: var(--accent);
-    background: rgba(47, 128, 237, 0.1);
-    padding: 1px 6px;
-    border-radius: 3px;
-  }
-  .body-content table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 16px;
-    font-size: 13px;
-  }
-  .body-content th {
-    text-align: left;
-    padding: 8px 12px;
-    border-bottom: 2px solid var(--border-glass);
-    color: var(--text-primary);
-    font-weight: 600;
-  }
-  .body-content td {
-    padding: 8px 12px;
-    border-bottom: 1px solid var(--border-glass);
-  }
-
   .detail-footer {
-    margin-top: 40px;
-    padding-top: 16px;
+    margin-top: clamp(24px, 4vw, 48px);
+    padding-top: clamp(12px, 1.5vw, 20px);
     border-top: 1px solid var(--border-glass);
-    font-size: 13px;
+    font-size: clamp(12px, 1.2vw, 14px);
   }
   .detail-footer a {
     color: var(--accent);

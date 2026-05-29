@@ -1,32 +1,27 @@
 # SqlKraft Session Notes
 
-## v0.4.0 Capstone — Phase 5 Final Sweep Complete
+## v0.7.0 — Stage 8 Fluid Responsive Design System
 
 ### What was done
-- **3 new PDF extractions** (1,636 pages): HA (p.866-2043), Upgrade (p.6442-6655), Migration (p.7155-7398)
-- **303 operations articles added**: high-availability (236), upgrade (26), migration (30), data-tools (8), azure-arc (3)
-- **Classification fixes**: SSDT entries re-mapped from ssb-diagnose→data-tools (8 articles), Azure Arc re-mapped from azure-synapse→azure-arc (3 articles)
-- **Search index**: 6,266 records (+279 from sweep)
-- **Build**: 6,321 pages, zero errors, 64.46s
-- **Committed**: `0abe4e1` v0.4.0 capstone pushed, CI green
+- **Fluid CSS variable system** — 6 new CSS custom properties in BaseLayout (`--content-max-width`, `--fluid-gap-sm/md/lg`, `--fluid-padding-h/v`) using `clamp()` for viewport-adaptive sizing
+- **Global fluid override layer** — `is:global` rules with `!important` on 15+ body-content selectors enforce fluid font-sizes, padding, and responsive table overflow across all 6,591 pages
+- **Homepage hero** — all values converted to `clamp()` for true fluid scaling
+- **Nav bar** — fluid inner container and link font sizes
+- **Global responsive tables** — `overflow-x: auto` with `-webkit-overflow-scrolling: touch`
+- **All 10 collection index pages** — breadcrumbs, page headers, card grids, item cards converted to `clamp()` values
+- **All 10 collection detail pages** — layout CSS converted to `clamp()`; redundant `.body-content` scoped CSS blocks removed (handled by BaseLayout global `!important` layer)
+- **Build**: 6,591 pages built in 62s, zero errors
 
-### All 14 operations topics now populated
-- azure-arc: 3, azure-synapse: 53, configuration: 10, data-tools: 8, event-classes: 192, high-availability: 236, linux-operations: 129, migration: 30, monitor: 370, profiler: 85, sqlpackage: 14, ssb-diagnose: 80, ssms: 35, upgrade: 26
-
-### Total content: 6,310 files, 10 collections, 6,266 search index records
-
-### Key scripts
-- `extractor/sweep_mapper.py` — New! Post-processing mapper for page-range-based topic assignments and classification overrides
-- `extractor/operations_mapper.py` — v0.5.0 main operations ingestion engine (Range 2)
-- `extractor/narrative_mapper.py` — v0.4.0 narrative content engine
+### Key commits
+- (pending push — Stage 8 fluid CSS edits across BaseLayout, index.astro, scripts/index.astro, scripts/[id].astro, dmvs/index.astro, dmvs/[id].astro, wait-statistics/index.astro, wait-statistics/[id].astro, operations/index.astro, architecture/index.astro, tsql-reference/index.astro, stored-procedures/index.astro, functions/index.astro, errors/index.astro, catalog-views/index.astro + all 7 remaining [id].astro detail pages)
 
 ### Known issues
-- Scripts collection remains empty (intentional — no scripts have been extracted yet)
-- p.1-865 first pages (intro/backup/restore) still untapped but not needed for current scope
-- p.9568-14418 (replication, tools, Analysis Services, SSRS, MDS, full-text search) still untapped
+- (none)
 
 ### Build commands
-- `cd site && npm run build` — production build
+- `cd site && npm run build` — production build (62s, 6,591 pages)
 - `cd site && node rebuild-search-index.cjs` — search index regeneration
-- `cd extractor && python operations_mapper.py` — Range 2 operations extraction
-- `cd extractor && python sweep_mapper.py` — Phase 5 sweep (runs after operations_mapper.py)
+
+### Next Steps
+1. Verify CI passes on GitHub
+2. Stage 9 (search enhancements, cookbook tag browsing, or other content features)
