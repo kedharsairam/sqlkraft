@@ -1,0 +1,271 @@
+import { defineCollection, z } from "astro:content";
+
+/**
+ * SqlKraft — Astro Content Collection Schemas
+ *
+ * All collections use strict Zod validation. Each content type has a
+ * dedicated collection directory under src/content/.
+ */
+
+// ──────────────────────────────────────────
+// DMVs (Dynamic Management Views)
+// ──────────────────────────────────────────
+const dmvsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    name: z.string(),
+    title: z.string(),
+    category: z.enum([
+      "execution",
+      "index",
+      "os",
+      "io",
+      "memory",
+      "transactions",
+      "in-memory",
+      "availability",
+      "security",
+      "service-broker",
+      "full-text",
+      "resource-governor",
+    ]),
+    description: z.preprocess((v) => v ?? "", z.string()),
+    tags: z.preprocess((v) => v ?? [], z.array(z.string())),
+    permissions: z.string().optional(),
+    introducedVersion: z.string().optional(),
+    pubDate: z.date(),
+    updatedDate: z.date().optional(),
+  }),
+});
+
+// ──────────────────────────────────────────
+// Wait Statistics
+// ──────────────────────────────────────────
+const waitStatisticsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    name: z.string(), // e.g., "CXPACKET"
+    title: z.string(),
+    category: z.enum([
+      "baseline",
+      "triage",
+      "top-consumer",
+      "latency",
+      "blocking",
+      "memory",
+      "scheduling",
+      "io",
+    ]),
+    severity: z.enum(["critical", "high", "medium", "low", "info"]),
+    description: z.preprocess((v) => v ?? "", z.string().max(300)),
+    tags: z.preprocess((v) => v ?? [], z.array(z.string())),
+    relatedScripts: z.array(z.string()).optional(),
+    pubDate: z.date(),
+    updatedDate: z.date().optional(),
+  }),
+});
+
+// ──────────────────────────────────────────
+// System Catalog Views
+// ──────────────────────────────────────────
+const catalogViewsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    name: z.string(),
+    title: z.string(),
+    category: z.enum([
+      "databases-files",
+      "objects",
+      "security",
+      "indexes",
+      "partitions",
+      "query-store",
+      "service-broker",
+      "full-text",
+      "configuration",
+      "xml",
+      "spatial",
+      "external",
+    ]),
+    description: z.preprocess((v) => v ?? "", z.string()),
+    tags: z.preprocess((v) => v ?? [], z.array(z.string())),
+    pubDate: z.date(),
+  }),
+});
+
+// ──────────────────────────────────────────
+// System Functions
+// ──────────────────────────────────────────
+const functionsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    name: z.string(),
+    title: z.string(),
+    category: z.enum([
+      "aggregate",
+      "analytic",
+      "conversion",
+      "cryptographic",
+      "date-time",
+      "mathematical",
+      "metadata",
+      "ranking",
+      "security",
+      "string",
+      "system",
+      "system-statistical",
+      "text-image",
+      "trigger",
+      "json",
+      "ai",
+    ]),
+    returnType: z.string().optional(),
+    description: z.preprocess((v) => v ?? "", z.string()),
+    tags: z.preprocess((v) => v ?? [], z.array(z.string())),
+    pubDate: z.date(),
+  }),
+});
+
+// ──────────────────────────────────────────
+// Stored Procedures (System)
+// ──────────────────────────────────────────
+const storedProceduresCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    name: z.string(),
+    title: z.string(),
+    category: z.enum([
+      "general",
+      "catalog",
+      "configuration",
+      "cursor",
+      "database-mail",
+      "full-text",
+      "maintenance",
+      "replication",
+      "security",
+      "spatial",
+    ]),
+    description: z.preprocess((v) => v ?? "", z.string()),
+    tags: z.preprocess((v) => v ?? [], z.array(z.string())),
+    pubDate: z.date(),
+  }),
+});
+
+// ──────────────────────────────────────────
+// T-SQL Reference
+// ──────────────────────────────────────────
+const tsqlReferenceCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    name: z.string(),
+    title: z.string(),
+    category: z.enum([
+      "statements",
+      "queries",
+      "language-elements",
+      "data-types",
+      "operators",
+      "functions",
+      "hints",
+      "predicates",
+      "transactions",
+      "variables",
+    ]),
+    description: z.preprocess((v) => v ?? "", z.string()),
+    syntax: z.string().optional(),
+    tags: z.preprocess((v) => v ?? [], z.array(z.string())),
+    pubDate: z.date(),
+  }),
+});
+
+// ──────────────────────────────────────────
+// Error Codes
+// ──────────────────────────────────────────
+const errorsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    name: z.string(),
+    title: z.string(),
+    errorNumber: z.number(),
+    severity: z.enum(["critical", "high", "medium", "low", "info"]),
+    category: z.enum([
+      "connection",
+      "deadlock",
+      "corruption",
+      "io",
+      "query-execution",
+      "authentication",
+      "replication",
+      "system",
+    ]),
+    description: z.preprocess((v) => v ?? "", z.string()),
+    messageText: z.string().optional(),
+    tags: z.preprocess((v) => v ?? [], z.array(z.string())),
+    pubDate: z.date(),
+  }),
+});
+
+// ──────────────────────────────────────────
+// Architecture / Narrative
+// ──────────────────────────────────────────
+const architectureCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    topic: z.enum([
+      "query-processing",
+      "index-architecture",
+      "memory-management",
+      "locking",
+      "deadlocks",
+      "thread-task",
+      "io-fundamentals",
+      "transaction-log",
+      "latch-contention",
+      "spinlock-contention",
+    ]),
+    description: z.preprocess((v) => v ?? "", z.string()),
+    tags: z.preprocess((v) => v ?? [], z.array(z.string())),
+    pubDate: z.date(),
+  }),
+});
+
+// ──────────────────────────────────────────
+// T-SQL Scripts (curated library)
+// ──────────────────────────────────────────
+const scriptsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    name: z.string(),
+    title: z.string(),
+    description: z.preprocess((v) => v ?? "", z.string()),
+    category: z.enum([
+      "index-maintenance",
+      "performance-diagnostics",
+      "wait-statistics",
+      "backup-restore",
+      "security-audit",
+      "monitoring",
+      "configuration",
+      "maintenance",
+    ]),
+    tags: z.preprocess((v) => v ?? [], z.array(z.string())),
+    pubDate: z.date(),
+  }),
+});
+
+// ──────────────────────────────────────────
+// Registry
+// ──────────────────────────────────────────
+export const collections = {
+  dmvs: dmvsCollection,
+  "wait-statistics": waitStatisticsCollection,
+  "catalog-views": catalogViewsCollection,
+  functions: functionsCollection,
+  "stored-procedures": storedProceduresCollection,
+  "tsql-reference": tsqlReferenceCollection,
+  errors: errorsCollection,
+  architecture: architectureCollection,
+  scripts: scriptsCollection,
+};
