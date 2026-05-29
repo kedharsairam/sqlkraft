@@ -3,17 +3,17 @@ title: "Accessing the Current Transaction"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   If a transaction is active at the point at which common language runtime (CLR) code running
-  
+
   on SQL Server is entered, the transaction is exposed throu
 tags:
   - "clr-integration"

@@ -1,8 +1,8 @@
 ---
-name: 'FLOOR'
-title: 'FLOOR'
-category: 'statements'
-description: ''
+name: "FLOOR"
+title: "FLOOR"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

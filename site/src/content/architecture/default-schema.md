@@ -3,21 +3,21 @@ title: "Default Schema"
 topic: "json-data"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   SQL database in Microsoft Fabric
-  
+
   Use
-  
+
   with the default schema to retu
 tags:
   - "json-data"

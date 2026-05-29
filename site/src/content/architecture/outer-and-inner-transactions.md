@@ -1,7 +1,7 @@
 ---
-title: 'Outer and inner transactions'
-topic: 'io-fundamentals'
-description: 'An explicit inner transaction can be started within an explicit outer transaction. This is primarily'
+title: "Outer and inner transactions"
+topic: "io-fundamentals"
+description: "An explicit inner transaction can be started within an explicit outer transaction. This is primarily"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

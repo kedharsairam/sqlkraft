@@ -1,8 +1,8 @@
 ---
-name: 'AI_GENERATE_EMBEDDINGS'
-title: 'AI_GENERATE_EMBEDDINGS'
-category: 'statements'
-description: ''
+name: "AI_GENERATE_EMBEDDINGS"
+title: "AI_GENERATE_EMBEDDINGS"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

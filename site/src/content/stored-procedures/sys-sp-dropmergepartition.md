@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_dropmergepartition'
-title: 'sp_dropmergepartition'
-category: 'general'
-description: 'Analytics Platform System (PDW) Removes a partition for a parameterized row filter from a publication. This stored procedure is executed at the Publisher on the publication database. This stored procedure also removes the corresponding snapshot job and snapshot files for the partition. Transact-SQL syntax conventions function at the Subscriber used to define the partition. function at the Subscrib'
+name: "sys.sp_dropmergepartition"
+title: "sp_dropmergepartition"
+category: "general"
+description: "Analytics Platform System (PDW) Removes a partition for a parameterized row filter from a publication. This stored procedure is executed at the Publisher on the publication database. This stored procedure also removes the corresponding snapshot job and snapshot files for the partition. Transact-SQL syntax conventions function at the Subscriber used to define the partition. function at the Subscrib"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

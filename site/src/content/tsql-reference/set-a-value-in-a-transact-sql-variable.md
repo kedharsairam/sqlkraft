@@ -1,8 +1,8 @@
 ---
-name: 'Set a value in a Transact-SQL variable'
-title: 'Set a value in a Transact-SQL variable'
-category: 'statements'
-description: 'Variables have local scope and are only visible within the batch or procedure where you define'
+name: "Set a value in a Transact-SQL variable"
+title: "Set a value in a Transact-SQL variable"
+category: "statements"
+description: "Variables have local scope and are only visible within the batch or procedure where you define"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

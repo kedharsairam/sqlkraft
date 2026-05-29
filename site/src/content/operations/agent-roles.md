@@ -3,13 +3,13 @@ title: "Agent roles"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article lists the server and database roles and mappings that the installation of Azure
-  
+
   extension for SQL Server creates.
-  
+
   When you install Azure extension for SQL Serve
 tags:
   - "azure-synapse"
@@ -67,11 +67,11 @@ An instance level feature is enabled or disabled or settings are updated
 
 Extension service is restarted
 
-*
+-
 
-*
+-
 
-*
+-
 
 ７
 

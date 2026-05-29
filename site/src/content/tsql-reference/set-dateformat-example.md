@@ -1,8 +1,8 @@
 ---
-name: 'SET DATEFORMAT example'
-title: 'SET DATEFORMAT example'
-category: 'statements'
-description: 'format says that an example date string of ''01-03-2018'' would be'
+name: "SET DATEFORMAT example"
+title: "SET DATEFORMAT example"
+category: "statements"
+description: "format says that an example date string of '01-03-2018' would be"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

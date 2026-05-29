@@ -1,8 +1,8 @@
 ---
-name: 'Table variables vs temporary tables'
-title: 'Table variables vs temporary tables'
-category: 'data-types'
-description: 'Indexes can''t be created explicitly on'
+name: "Table variables vs temporary tables"
+title: "Table variables vs temporary tables"
+category: "data-types"
+description: "Indexes can't be created explicitly on"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

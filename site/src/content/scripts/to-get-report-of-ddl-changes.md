@@ -1,7 +1,7 @@
 ---
-name: 'To Get Report of DDL Changes'
-title: 'To Get Report of DDL Changes'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To Get Report of DDL Changes"
+title: "To Get Report of DDL Changes"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["automation"]
 pubDate: 2025-03-15
@@ -17,66 +17,66 @@ DECLARE @HTMLDataTypeSizeChange NVARCHAR(MAX);
 DECLARE @EmailBody NVARCHAR(MAX);
 
 -- HTML for New Tables Created
-SET @HTMLtable = 
+SET @HTMLtable =
 N'<H5 style="color: #3dab15; font-family: Arial, Verdana">New Tables Created Report</H5>' +
 N'<table border="3" style="font-family: Arial, Verdana; text-align:left; font-size:9pt; color: #000033; width: auto;">' +
 N'<tr style="text-align: left;">
-<th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: auto;">New Tables Created</th> 
+<th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: auto;">New Tables Created</th>
 </tr>' +
-CAST(( 
-    SELECT 
+CAST((
+    SELECT
         Currents.TableName AS 'td'
-    FROM 
+    FROM
         (SELECT table_name AS TableName
          FROM information_schema.tables
          WHERE table_type = 'BASE TABLE') AS Currents
-    LEFT JOIN 
+    LEFT JOIN
         TableStructureSnapshot AS Snapshots
-    ON 
+    ON
         Currents.TableName = Snapshots.TableName
-    WHERE 
+    WHERE
         Snapshots.TableName IS NULL
     FOR XML PATH('tr'), TYPE
-) AS NVARCHAR(MAX) ) + 
+) AS NVARCHAR(MAX) ) +
 N'</table>';
 
 -- HTML for New Tables Count
-SET @HTMLTablecount = 
+SET @HTMLTablecount =
 N'<H5 style="color: #3dab15; font-family: Arial, Verdana">Total Count of Tables</H5>'+
 N'<table border="3" style="font-family: Arial, Verdana; text-align:left; font-size:9pt; width: auto; color: #000033">' +
 N'<tr style="text-align: left;">
-<th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">New Tables Count</th> 
+<th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">New Tables Count</th>
 </tr>' +
-CAST(( 
-    SELECT 
+CAST((
+    SELECT
         COUNT(*) AS 'td'
-    FROM 
+    FROM
         information_schema.tables
     FOR XML PATH('tr'), TYPE
-) AS NVARCHAR(MAX) ) + 
+) AS NVARCHAR(MAX) ) +
 N'</table>';
 
 -- HTML for Missing Tables
-SET @HTMLDeletedTables = 
+SET @HTMLDeletedTables =
 N'<H5 style="color: #3dab15; font-family: Arial, Verdana">Missing Tables Report</H5>' +
 N'<table border="3" style="font-family: Arial, Verdana; text-align:left; font-size:9pt; color: #000033">' +
 N'<tr style="text-align: left;">
-<th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">Missing Tables</th> 
+<th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">Missing Tables</th>
 </tr>' +
-CAST(( 
-    SELECT 
-      DISTINCT 
+CAST((
+    SELECT
+      DISTINCT
         Snapshots.TableName, ''
-    FROM 
+    FROM
         TableStructureSnapshot AS Snapshots
-    LEFT JOIN 
+    LEFT JOIN
         information_schema.tables AS Currents
-    ON 
+    ON
         Snapshots.TableName = Currents.table_name
-    WHERE 
+    WHERE
         Currents.table_name IS NULL
     FOR XML PATH('tr'), TYPE
-) AS NVARCHAR(MAX) ) + 
+) AS NVARCHAR(MAX) ) +
 N'</table>';
 
 -- Create a temporary table for column comparison results
@@ -92,29 +92,29 @@ CREATE TABLE #ComparisonResults (
 
 -- Insert comparison results into the temporary table
 INSERT INTO #ComparisonResults (TableName, ColumnName, DataType, IsNullable)
-SELECT 
-    curr.TableName, 
-    curr.ColumnName, 
-    curr.DataType, 
+SELECT
+    curr.TableName,
+    curr.ColumnName,
+    curr.DataType,
     curr.IsNullable
-FROM 
+FROM
     (SELECT table_name AS TableName, column_name AS ColumnName, data_type AS DataType, is_nullable AS IsNullable
      FROM information_schema.columns) AS curr
-FULL OUTER JOIN 
+FULL OUTER JOIN
     TableStructureSnapshot AS snap
-ON 
-    curr.TableName = snap.TableName 
+ON
+    curr.TableName = snap.TableName
     AND curr.ColumnName = snap.ColumnName
-WHERE 
-    curr.TableName IS NULL 
-    OR snap.TableName IS NULL 
-    OR curr.ColumnName IS NULL 
-    OR snap.ColumnName IS NULL 
-    OR curr.DataType <> snap.DataType 
+WHERE
+    curr.TableName IS NULL
+    OR snap.TableName IS NULL
+    OR curr.ColumnName IS NULL
+    OR snap.ColumnName IS NULL
+    OR curr.DataType <> snap.DataType
     OR curr.IsNullable <> snap.IsNullable;
 
 -- Generate HTML for New Columns Detected
-SET @HTMLNewColumns = 
+SET @HTMLNewColumns =
 N'<H5 style="color: #3dab15; font-family: Arial, Verdana">New Columns Detected</H5>' +
 N'<table border="3" style="font-family: Arial, Verdana; text-align:left; font-size:9pt; color: #000033">' +
 N'<tr style="text-align: left;">
@@ -123,22 +123,22 @@ N'<tr style="text-align: left;">
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">DataType</th>
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">IsNullable</th>
 </tr>' +
-CAST(( 
-    SELECT 
+CAST((
+    SELECT
       TableName AS 'TD',
       ColumnName AS 'TD',
       DataType AS 'TD',
       IsNullable AS 'TD'
-    FROM 
+    FROM
         #ComparisonResults
-    WHERE 
+    WHERE
         TableName IS NOT NULL
     FOR XML PATH('tr'), TYPE
-) AS NVARCHAR(MAX) ) + 
+) AS NVARCHAR(MAX) ) +
 N'</table>';
 
 -- HTML for Datatype Changes
-SET @HTMLDataTypeChange = 
+SET @HTMLDataTypeChange =
 N'<H5 style="color: #3dab15; font-family: Arial, Verdana">Datatype Changes Detected</H5>' +
 N'<table border="3" style="font-family: Arial, Verdana; text-align:left; font-size:9pt; color: #000033">' +
 N'<tr style="text-align: left;">
@@ -147,39 +147,39 @@ N'<tr style="text-align: left;">
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">OldDataType</th>
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">NewDataType</th>
 </tr>' +
-CAST(( 
-    SELECT 
+CAST((
+    SELECT
       tss.TableName AS 'TD',
       tss.ColumnName AS 'TD',
       tss.OldDataType AS 'TD',
       tss.NewDataType AS 'TD'
-    FROM 
-        (SELECT 
+    FROM
+        (SELECT
             tss.TableName,
             tss.ColumnName,
             tss.DataType AS OldDataType,
             ic.DATA_TYPE AS NewDataType
-        FROM 
+        FROM
             TableStructureSnapshot tss
-        JOIN 
+        JOIN
             information_schema.columns ic
-        ON 
+        ON
             tss.TableName = ic.TABLE_NAME
             AND tss.ColumnName = ic.COLUMN_NAME
         JOIN
             information_schema.tables it
         ON
             it.TABLE_NAME = tss.TableName
-        WHERE 
+        WHERE
             tss.DataType <> ic.DATA_TYPE
             AND it.TABLE_TYPE = 'BASE TABLE'
         ) AS tss
     FOR XML PATH('tr'), TYPE
-) AS NVARCHAR(MAX) ) + 
+) AS NVARCHAR(MAX) ) +
 N'</table>';
 
 -- HTML for Datatype Size Changes
-SET @HTMLDataTypeSizeChange = 
+SET @HTMLDataTypeSizeChange =
 N'<H5 style="color: #3dab15; font-family: Arial, Verdana">Datatype Size Changes Detected</H5>' +
 N'<table border="3" style="font-family: Arial, Verdana; text-align:left; font-size:9pt; color: #000033">' +
 N'<tr style="text-align: left;">
@@ -188,42 +188,42 @@ N'<tr style="text-align: left;">
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">OldMaxLength</th>
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">NewMaxLength</th>
 </tr>' +
-CAST(( 
-    SELECT 
+CAST((
+    SELECT
       tss.TableName AS 'TD',
       tss.ColumnName AS 'TD',
       tss.OldMaxLength AS 'TD',
       tss.NewMaxLength AS 'TD'
-    FROM 
-        (SELECT 
+    FROM
+        (SELECT
             tss.TableName,
             tss.ColumnName,
             tss.CHARACTER_MAXIMUM_LENGTH AS OldMaxLength,
             ic.CHARACTER_MAXIMUM_LENGTH AS NewMaxLength
-        FROM 
+        FROM
             TableStructureSnapshot tss
-        JOIN 
+        JOIN
             information_schema.columns ic
-        ON 
+        ON
             tss.TableName = ic.TABLE_NAME
             AND tss.ColumnName = ic.COLUMN_NAME
         JOIN
             information_schema.tables it
         ON
             it.TABLE_NAME = tss.TableName
-        WHERE 
+        WHERE
             tss.CHARACTER_MAXIMUM_LENGTH <> ic.CHARACTER_MAXIMUM_LENGTH
             AND it.TABLE_TYPE = 'BASE TABLE'
         ) AS tss
     FOR XML PATH('tr'), TYPE
-) AS NVARCHAR(MAX) ) + 
+) AS NVARCHAR(MAX) ) +
 N'</table>';
 
 -- Combine all sections into a single email body
 SET @EmailBody = @HTMLTablecount + N'<br/><br/>' + @HTMLtable + N'<br/><br/>' + @HTMLDeletedTables + N'<br/><br/>' + @HTMLNewColumns + N'<br/><br/>' + @HTMLDataTypeChange + N'<br/><br/>' + @HTMLDataTypeSizeChange;
 
 -- Send email with the combined HTML body
-EXEC msdb.dbo.sp_send_dbmail 
+EXEC msdb.dbo.sp_send_dbmail
     @profile_name = 'your_db_mail_profile',
     @recipients = 'your_email@example.com',
     @body = @EmailBody,

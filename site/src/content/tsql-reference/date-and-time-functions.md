@@ -1,8 +1,8 @@
 ---
-name: 'Date and time functions'
-title: 'Date and time functions'
-category: 'data-types'
-description: 'The following tables list the Transact-SQL date and time functions. For more information about determinism, see'
+name: "Date and time functions"
+title: "Date and time functions"
+category: "data-types"
+description: "The following tables list the Transact-SQL date and time functions. For more information about determinism, see"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -33,8 +33,8 @@ Windows API to determine the accuracy.
 
 Function
 
-
 ## Syntax
+
 Return value
 
 Return data
@@ -103,8 +103,8 @@ and time of the computer on which the
 
 instance of SQL Server is running.
 
-
 ## returns the date and
+
 time values as UTC time (Coordinated
 
 Universal Time).
@@ -125,8 +125,8 @@ Expand table
 
 Function
 
-
 ## Syntax
+
 Return value
 
 Return
@@ -225,8 +225,8 @@ Nondeterministic
 
 Function
 
-
 ## Syntax
+
 Return value
 
 Return data
@@ -343,8 +343,8 @@ Expand table
 
 Function
 
-
 ## Syntax
+
 Return value
 
 Return data
@@ -403,8 +403,8 @@ Deterministic
 
 Function
 
-
 ## Syntax
+
 Return value
 
 Return data type
@@ -541,8 +541,8 @@ Expand table
 
 Function
 
-
 ## Syntax
+
 Return value
 
 Return data type
@@ -555,8 +555,8 @@ precision.
 
 Function
 
-
 ## Syntax
+
 Return value
 
 Return
@@ -603,8 +603,8 @@ Deterministic
 
 Function
 
-
 ## Syntax
+
 Return value
 
 Return data type

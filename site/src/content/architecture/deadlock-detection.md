@@ -1,7 +1,7 @@
 ---
-title: 'Deadlock detection'
-topic: 'locking'
-description: 'However, when separate transactions hold partition locks in a table and want a lock'
+title: "Deadlock detection"
+topic: "locking"
+description: "However, when separate transactions hold partition locks in a table and want a lock"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

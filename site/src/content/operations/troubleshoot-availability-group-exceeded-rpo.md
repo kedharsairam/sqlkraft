@@ -3,18 +3,18 @@ title: "Troubleshoot: Availability group exceeded RPO"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   After you perform a forced manual failover on an availability group to an asynchronous-
-  
-  commit secondary replica, you may find that data loss is more 
+
+  commit secondary replica, you may find that data loss is more
 tags:
   - "high-availability"
   - "troubleshoot-availability-group-exceeded-rpo"

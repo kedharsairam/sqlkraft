@@ -3,9 +3,9 @@ title: "Running SQL Server Unit Tests"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   To improve and maintain the quality of your code, you can create and run SQL Server unit tests
-  
+
   that verify the behavior of any database object and then check in those tests to version con
 tags:
   - "ssb-diagnose"
@@ -115,7 +115,7 @@ How
 
 to: Configure and Run Scheduled Tests After Building Your Application (Visual Studio
 
-2010)
+2010.
 
 or
 

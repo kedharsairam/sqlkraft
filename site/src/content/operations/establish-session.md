@@ -3,21 +3,21 @@ title: "Establish session"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   After the mirror database is prepared (see
-  
+
   Prepare a Mirror Database for Mirroring (SQL
-  
+
   Server)
-  
+
   ), you can establish a database mirroring session. T
 tags:
   - "high-availability"

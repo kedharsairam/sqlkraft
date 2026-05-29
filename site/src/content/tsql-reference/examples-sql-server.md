@@ -1,8 +1,8 @@
 ---
-name: 'Examples: SQL Server'
-title: 'Examples: SQL Server'
-category: 'statements'
-description: 'permissions on the specified user name. When no execution context is specified,'
+name: "Examples: SQL Server"
+title: "Examples: SQL Server"
+category: "statements"
+description: "permissions on the specified user name. When no execution context is specified,"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -11,14 +11,14 @@ pubDate: 2026-05-29
 
 ## B. Use multiple parameters
 
-
 ## permissions on the specified user name. When no execution context is specified,
+
 or
 
 is specified,
 
-
 ## permissions aren't required.
+
 The code samples in this article use the
 
 or
@@ -255,8 +255,8 @@ which
 
 returned seven columns. The following example demonstrates using the
 
-
 ## syntax to change the names and data types of the returning result set.
+
 SQL
 
 : SQL Server 2012 (11.x) and later versions, and Azure SQL Database.

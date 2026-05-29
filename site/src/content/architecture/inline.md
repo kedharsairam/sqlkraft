@@ -1,7 +1,7 @@
 ---
-title: 'inline)'
-topic: 'query-processing'
-description: 'This might involve comparing any user-defined code construct that is stored in the'
+title: "inline)"
+topic: "query-processing"
+description: "This might involve comparing any user-defined code construct that is stored in the"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

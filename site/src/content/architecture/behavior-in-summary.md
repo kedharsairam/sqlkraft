@@ -1,7 +1,7 @@
 ---
-title: 'Behavior in summary'
-topic: 'io-fundamentals'
-description: 'The following table summarizes the differences between'
+title: "Behavior in summary"
+topic: "io-fundamentals"
+description: "The following table summarizes the differences between"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

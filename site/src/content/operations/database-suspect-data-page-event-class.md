@@ -3,25 +3,25 @@ title: "Database Suspect Data Page Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event class indicates when a page is added to the
-  
+
   suspect_pages
-  
+
   table in
-  
+
   msdb
-  
+
   . Incl
 tags:
   - "event-classes"

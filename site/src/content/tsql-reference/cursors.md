@@ -1,8 +1,8 @@
 ---
-name: 'Cursors'
-title: 'Cursors'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "Cursors"
+title: "Cursors"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

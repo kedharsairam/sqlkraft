@@ -1,8 +1,8 @@
 ---
-name: 'Supported string literal formats for datetime'
-title: 'Supported string literal formats for datetime'
-category: 'data-types'
-description: 'is two digits, ranging from'
+name: "Supported string literal formats for datetime"
+title: "Supported string literal formats for datetime"
+category: "data-types"
+description: "is two digits, ranging from"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -229,8 +229,8 @@ LANGUAGE
 
 setting.
 
-
 ## Examples:
+
 This format is similar to the ISO 8601 format, except it contains no date separators.
 
 The ODBC API defines escape sequences to represent date and time values, which ODBC calls

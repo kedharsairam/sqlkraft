@@ -3,11 +3,11 @@ title: "Walkthrough: Using a Custom Test Condition to Verify the Results of a St
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   In this feature extension walkthrough, you create a test condition, and you verify its
-  
+
   functionality by creating a SQL Server unit test. The process includes creating a class library
-  
+
   pro
 tags:
   - "ssb-diagnose"

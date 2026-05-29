@@ -3,19 +3,19 @@ title: "How to: Retrieve Information from a Service Broker Error Message (Transa
 topic: "service-broker"
 description: |
   SQL)
-  
+
   09/02/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   A message of type
-  
+
   is a Service Broker
-  
+
   error message. Messages of this type are XML documents that contain a numeric code for th
 tags:
   - "service-broker"

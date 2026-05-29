@@ -1,8 +1,8 @@
 ---
-name: '| (Bitwise OR)'
-title: '| (Bitwise OR)'
-category: 'operators'
-description: ''
+name: "| (Bitwise OR)"
+title: "| (Bitwise OR)"
+category: "operators"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
-name: 'To Run Entire Session in specific Isolation Lev'
-title: 'To Run Entire Session in specific Isolation Lev'
-description: 'add this line in the beginning of the all the commands'
+name: "To Run Entire Session in specific Isolation Lev"
+title: "To Run Entire Session in specific Isolation Lev"
+description: "add this line in the beginning of the all the commands"
 category: performance
 tags: ["performance", "session"]
 pubDate: 2025-03-15

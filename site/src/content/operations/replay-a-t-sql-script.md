@@ -3,15 +3,15 @@ title: "Replay a T-SQL Script"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   When you test possible solutions to a performance problem, use SQL Server Profiler to replay
-  
+
   Transact-SQL scripts, and compare perform
 tags:
   - "profiler"

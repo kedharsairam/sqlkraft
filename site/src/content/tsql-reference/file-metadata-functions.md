@@ -1,8 +1,8 @@
 ---
-name: 'File metadata functions'
-title: 'File metadata functions'
-category: 'statements'
-description: 'assumes that, if not specified, the maximum length of'
+name: "File metadata functions"
+title: "File metadata functions"
+category: "statements"
+description: "assumes that, if not specified, the maximum length of"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -95,8 +95,8 @@ used.
 
 The following sample reads the NYC Yellow Taxi data files for the last three months of 2017 and
 
-
 ## returns the number of rides per file. The
+
 part of the query specifies which files will be
 
 read.

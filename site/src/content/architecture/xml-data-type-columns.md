@@ -3,23 +3,23 @@ title: "XML Data Type & Columns"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   This article discusses the advantages and the limitations of the
-  
+
   data type in SQL Server,
-  
+
   and helps y
 tags:
   - "xml-data"

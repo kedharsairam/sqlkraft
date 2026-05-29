@@ -3,23 +3,23 @@ title: "ETL workflow"
 topic: "monitor"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Use the
-  
+
   WWI_Integration
-  
+
   ETL package to migrate data from the WideWorldImporters database
-  
+
   to the WideWorldImportersDW database as
 tags:
   - "monitor"

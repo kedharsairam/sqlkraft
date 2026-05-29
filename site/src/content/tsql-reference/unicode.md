@@ -1,8 +1,8 @@
 ---
-name: 'UNICODE'
-title: 'UNICODE'
-category: 'statements'
-description: ''
+name: "UNICODE"
+title: "UNICODE"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

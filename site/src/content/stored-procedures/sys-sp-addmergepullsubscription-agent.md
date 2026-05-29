@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addmergepullsubscription_agent'
-title: 'sp_addmergepullsubscription_agent'
-category: 'general'
-description: 'Adds a new agent job used to schedule synchronization of a pull subscription to a merge publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions'
+name: "sys.sp_addmergepullsubscription_agent"
+title: "sp_addmergepullsubscription_agent"
+category: "general"
+description: "Adds a new agent job used to schedule synchronization of a pull subscription to a merge publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,7 +1,7 @@
 ---
-title: 'Option: Use a GUID as the leading key column of the index'
-topic: 'index-architecture'
-description: 'The following table definition can be used to generate a modulo that aligns to the number of'
+title: "Option: Use a GUID as the leading key column of the index"
+topic: "index-architecture"
+description: "The following table definition can be used to generate a modulo that aligns to the number of"
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -3,17 +3,17 @@ title: "SqlPackage with data in Parquet files"
 topic: "sqlpackage"
 description: |
   SqlPackage with data in Parquet files
-  
+
   07/30/2025
-  
+
   This article covers SqlPackage support for interacting with data stored in Azure Blob Storage
-  
+
   that is in Parquet format.
-  
+
   With
-  
+
   extract
-  
+
   , the datab
 tags:
   - "sqlpackage"

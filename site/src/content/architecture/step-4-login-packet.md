@@ -1,7 +1,7 @@
 ---
-title: 'Step 4. Login packet'
-topic: 'transaction-log'
-description: 'This packet is encrypted and might show as'
+title: "Step 4. Login packet"
+topic: "transaction-log"
+description: "This packet is encrypted and might show as"
 tags: ["transaction-log", "architecture"]
 pubDate: 2026-05-29
 ---

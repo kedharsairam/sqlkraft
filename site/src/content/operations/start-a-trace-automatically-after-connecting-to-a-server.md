@@ -3,18 +3,17 @@ title: "Start a Trace Automatically after Connecting to a Server"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to start traces automatically after connecting to an instance of SQL
-  
+
   Server by using SQL Server Profiler.
-  
-  
+
 tags:
   - "profiler"
   - "start-a-trace-automatically-after-connecting-to-a-server"

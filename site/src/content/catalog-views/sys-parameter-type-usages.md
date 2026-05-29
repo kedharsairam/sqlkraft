@@ -1,8 +1,8 @@
 ---
-name: 'sys.parameter_type_usages'
-title: 'sys.parameter_type_usages'
-category: 'compatibility'
-description: 'Returns one row for each parameter that is of user-defined type. ID of the object to which this parameter belongs. ID of the parameter. Is unique within the object. To return the name of the type, join to the role. For more information, see Scalar Types Catalog Views (Transact-SQL) This view does not return rows for parameters of numbered procedures.'
+name: "sys.parameter_type_usages"
+title: "sys.parameter_type_usages"
+category: "compatibility"
+description: "Returns one row for each parameter that is of user-defined type. ID of the object to which this parameter belongs. ID of the parameter. Is unique within the object. To return the name of the type, join to the role. For more information, see Scalar Types Catalog Views (Transact-SQL) This view does not return rows for parameters of numbered procedures."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

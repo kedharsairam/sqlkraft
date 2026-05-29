@@ -4,6 +4,15 @@ import { getCollection } from "astro:content";
 
 const allSps = await getCollection("stored-procedures");
 const sorted = allSps.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+// Group by category
+const grouped = {};
+for (const entry of sorted) {
+  const cat = entry.data.category || "other";
+  if (!grouped[cat]) grouped[cat] = [];
+  grouped[cat].push(entry);
+}
+const categories = Object.keys(grouped).sort();
 ---
 
 <BaseLayout
@@ -24,26 +33,42 @@ const sorted = allSps.sort((a, b) => a.data.name.localeCompare(b.data.name));
     </p>
   </header>
 
-  <div class="card-grid">
+  <!-- Category jump nav -->
+  <nav class="section-jump">
     {
-      sorted.map((entry) => {
-        const { name, description, category, tags } = entry.data;
-        return (
-          <a href={`/sqlkraft/stored-procedures/${entry.slug}/`} class="item-card">
-            <div class="card-title">{name}</div>
-            <span class="cat-badge">{category}</span>
-            <p class="card-desc">{description || "No description available."}</p>
-            <div class="card-tags">
-              {tags.slice(0, 3).map((tag) => (
-                <span class="card-tag">#{tag}</span>
-              ))}
-              {tags.length > 3 && <span class="card-tag-more">+{tags.length - 3} more</span>}
-            </div>
-          </a>
-        );
-      })
+      categories.map((cat) => (
+        <a href={`#cat-${cat}`} class="jump-link">
+          {cat}
+        </a>
+      ))
     }
-  </div>
+  </nav>
+
+  <!-- Sectioned card grids -->
+  {
+    categories.map((cat) => (
+      <section id={`cat-${cat}`} class="category-section">
+        <h2 class="section-heading">{cat}</h2>
+        <div class="card-grid">
+          {grouped[cat].map((entry) => {
+            const { name, description, tags } = entry.data;
+            return (
+              <a href={`/sqlkraft/stored-procedures/${entry.slug}/`} class="item-card">
+                <div class="card-title">{name}</div>
+                <p class="card-desc">{description || "No description available."}</p>
+                <div class="card-tags">
+                  {tags.slice(0, 3).map((tag) => (
+                    <span class="card-tag">#{tag}</span>
+                  ))}
+                  {tags.length > 3 && <span class="card-tag-more">+{tags.length - 3} more</span>}
+                </div>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    ))
+  }
 </BaseLayout>
 
 <style>
@@ -80,18 +105,54 @@ const sorted = allSps.sort((a, b) => a.data.name.localeCompare(b.data.name));
     max-width: min(700px, 90vw);
     line-height: 1.6;
   }
+  /* ── Section jump nav ── */
+  .section-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(4px, 0.6vw, 8px);
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+  }
+  .jump-link {
+    font-size: clamp(11px, 1.1vw, 13px);
+    color: var(--text-secondary);
+    padding: clamp(3px, 0.4vw, 6px) clamp(8px, 1vw, 14px);
+    border: 1px solid var(--border-glass);
+    border-radius: 20px;
+    text-decoration: none;
+    transition:
+      border-color 0.2s,
+      color 0.2s;
+  }
+  .jump-link:hover {
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+  .category-section {
+    margin-bottom: clamp(20px, 3vw, 36px);
+    scroll-margin-top: 72px;
+  }
+  .section-heading {
+    font-size: clamp(13px, 1.3vw, 16px);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: clamp(8px, 1vw, 14px);
+    padding-bottom: clamp(4px, 0.5vw, 8px);
+    border-bottom: 1px solid var(--border-glass);
+    text-transform: capitalize;
+  }
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(clamp(300px, 30vw, 480px), 1fr));
-    gap: clamp(10px, 1.5vw, 18px);
+    grid-template-columns: repeat(auto-fill, minmax(clamp(240px, 18vw, 320px), 1fr));
+    gap: clamp(8px, 1vw, 14px);
   }
   .item-card {
     display: flex;
     flex-direction: column;
-    gap: clamp(6px, 0.8vw, 10px);
-    padding: clamp(14px, 1.8vw, 28px);
+    gap: clamp(4px, 0.6vw, 8px);
+    padding: clamp(12px, 1.5vw, 22px);
     border: 1px solid var(--border-glass);
-    border-radius: clamp(8px, 1vw, 12px);
+    border-radius: clamp(6px, 0.8vw, 10px);
     background: var(--bg-secondary);
     text-decoration: none;
     color: inherit;
@@ -106,19 +167,9 @@ const sorted = allSps.sort((a, b) => a.data.name.localeCompare(b.data.name));
   }
   .card-title {
     font-family: var(--font-mono);
-    font-size: clamp(12px, 1.3vw, 15px);
+    font-size: clamp(11px, 1.2vw, 14px);
     font-weight: 600;
     color: var(--text-primary);
-  }
-  .cat-badge {
-    font-size: clamp(10px, 1vw, 12px);
-    font-weight: 500;
-    color: var(--text-secondary);
-    background: rgba(255, 255, 255, 0.06);
-    padding: clamp(1px, 0.2vw, 3px) clamp(6px, 0.8vw, 11px);
-    border-radius: 4px;
-    align-self: flex-start;
-    text-transform: capitalize;
   }
   .card-desc {
     font-size: clamp(11px, 1.1vw, 13px);

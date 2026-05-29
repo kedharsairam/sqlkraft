@@ -1,8 +1,8 @@
 ---
-name: 'Overview: SQL Server 2025'
-title: 'Overview: SQL Server 2025'
-category: 'statements'
-description: 'SQL Server 2016 (13.x) and later versions'
+name: "Overview: SQL Server 2025"
+title: "Overview: SQL Server 2025"
+category: "statements"
+description: "SQL Server 2016 (13.x) and later versions"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -33,7 +33,7 @@ choose.
 
 In the following row, select the product name you're interested in, and only that product's information is displayed.
 
-* SQL Server *
+- SQL Server \*
 
 Azure SQL Database
 

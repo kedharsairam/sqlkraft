@@ -3,17 +3,17 @@ title: "Create a Table"
 topic: "filestream"
 description: |
   Article
-  
+
   •
-  
+
   01/22/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic shows how to create a table for storing FILESTREAM data.
-  
+
   When the database has a FILESTREAM filegroup, you can create or modify tables to s
 tags:
   - "filestream"

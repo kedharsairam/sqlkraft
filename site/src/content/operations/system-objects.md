@@ -3,17 +3,17 @@ title: "System Objects"
 topic: "high-availability"
 description: |
   10/21/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   This article serves as a reference page to all the various system objects that can be used when
-  
+
   working with availability groups (AGs).
-  
+
   Descripti
 tags:
   - "high-availability"

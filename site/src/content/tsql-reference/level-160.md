@@ -1,8 +1,8 @@
 ---
-name: 'level 160'
-title: 'level 160'
-category: 'statements'
-description: 'Regular expressions can be used to match'
+name: "level 160"
+title: "level 160"
+category: "statements"
+description: "Regular expressions can be used to match"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

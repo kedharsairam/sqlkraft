@@ -3,19 +3,19 @@ title: "Import a bacpac file"
 topic: "ssms"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Import a
-  
+
   file - to create a copy of the original database, with the data, on a new
-  
+
   instance
 tags:
   - "ssms"

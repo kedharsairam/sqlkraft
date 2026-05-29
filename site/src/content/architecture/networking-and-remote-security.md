@@ -3,15 +3,15 @@ title: "Networking and Remote Security"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   To help enable secure, reliable communication between different instances of SQL Server,
-  
+
   Service Broker includes features to let you m
 tags:
   - "service-broker"

@@ -3,11 +3,11 @@ title: "Lesson 1: Connecting to the Database Engine"
 topic: "configuration"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   When you install the SQL Server Database Engine, the tools that are installed depend upon the
-  
+
   edition and your setup choices. This lesson describes the principal tools, and d
 tags:
   - "configuration"

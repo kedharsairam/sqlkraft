@@ -1,8 +1,8 @@
 ---
-name: 'sys.spatial_indexes'
-title: 'sys.spatial_indexes'
-category: 'indexes'
-description: 'Represents the main index information of the spatial indexes. Type description of spatial index: GEOMETRY = geometric spatial index GEOGRAPHY = geographic spatial index GEOMETRY_GRID, GEOMETRY_AUTO_GRID, GEOGRAPHY_GRID, GEOGRAPHY_AUTO_GRID Note: For information about tessellation schemes, see The inherited columns has_filter and filter_definition appear after the columns that are specific to spati'
+name: "sys.spatial_indexes"
+title: "sys.spatial_indexes"
+category: "indexes"
+description: "Represents the main index information of the spatial indexes. Type description of spatial index: GEOMETRY = geometric spatial index GEOGRAPHY = geographic spatial index GEOMETRY_GRID, GEOMETRY_AUTO_GRID, GEOGRAPHY_GRID, GEOGRAPHY_AUTO_GRID Note: For information about tessellation schemes, see The inherited columns has_filter and filter_definition appear after the columns that are specific to spati"
 tags: ["indexes", "catalog-view"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_help_log_shipping_secondary_database'
-title: 'sp_help_log_shipping_secondary_database'
-category: 'general'
-description: 'This stored procedure retrieves the settings for one or more secondary databases. Transact-SQL syntax conventions The name of the secondary database. The ID for the secondary server in the log shipping configuration.'
+name: "sys.sp_help_log_shipping_secondary_database"
+title: "sp_help_log_shipping_secondary_database"
+category: "general"
+description: "This stored procedure retrieves the settings for one or more secondary databases. Transact-SQL syntax conventions The name of the secondary database. The ID for the secondary server in the log shipping configuration."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -3,19 +3,19 @@ title: "Generate XML from rowsets"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   You can generate an
-  
+
   data type instance from a rowset by using FOR XML with the new
-  
+
   directiv
 tags:
   - "xml-data"

@@ -1,7 +1,7 @@
 ---
-title: 'B. Work with READ COMMITTED isolation using row versioning'
-topic: 'io-fundamentals'
-description: 'transaction using row versioning runs concurrently with'
+title: "B. Work with READ COMMITTED isolation using row versioning"
+topic: "io-fundamentals"
+description: "transaction using row versioning runs concurrently with"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

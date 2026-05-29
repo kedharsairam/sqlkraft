@@ -1,7 +1,7 @@
 ---
-title: 'Security cache objects'
-topic: 'query-processing'
-description: '7. Verify user permissions on all columns, for example, the permissions of the user on'
+title: "Security cache objects"
+topic: "query-processing"
+description: "7. Verify user permissions on all columns, for example, the permissions of the user on"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -18,8 +18,8 @@ and
 
 , and schema
 
-
 ## permissions on
+
 and
 
 .
@@ -28,8 +28,8 @@ and
 
 SQL Server repeats the process for every single role that the user belongs to. Once all
 
-
 ## permissions are obtained, the server performs a check to ensure that the user has all the
+
 necessary grants in the chain and not a single deny in the chain. After the permission check is
 
 complete, the query execution begins.
@@ -54,8 +54,8 @@ To make the workflow explained in the previous section faster, SQL Server caches
 
 different objects inside security caches. Some of the objects that are cached include:
 
-
 ## Description
+
 The server-wide security context for a principal is held within this structure. It
 
 contains a hashtable of user tokens and serves as the starting point or base for all

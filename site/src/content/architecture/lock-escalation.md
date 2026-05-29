@@ -1,7 +1,7 @@
 ---
-title: 'Lock escalation'
-topic: 'locking'
-description: 'mode key-range lock is placed on the index row corresponding to the name'
+title: "Lock escalation"
+topic: "locking"
+description: "mode key-range lock is placed on the index row corresponding to the name"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

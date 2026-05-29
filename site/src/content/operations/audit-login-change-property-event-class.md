@@ -3,28 +3,28 @@ title: "Audit Login Change Property Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class occurs when you use the
-  
+
   stored
-  
+
   procedure, the
-  
-  stored procedure, or the ALTER LOGIN 
+
+  stored procedure, or the ALTER LOGIN
 tags:
   - "event-classes"
   - "audit-login-change-property-event-class"

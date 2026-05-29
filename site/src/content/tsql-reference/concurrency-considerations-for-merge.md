@@ -1,8 +1,8 @@
 ---
-name: 'Concurrency considerations for MERGE'
-title: 'Concurrency considerations for MERGE'
-category: 'queries'
-description: 'optimizer doesn''t need to perform extra validation processing to locate and update'
+name: "Concurrency considerations for MERGE"
+title: "Concurrency considerations for MERGE"
+category: "queries"
+description: "optimizer doesn't need to perform extra validation processing to locate and update"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
@@ -71,7 +71,7 @@ operations in (but not limited to) the following scenarios:
 
 ETL operations involving large row counts be executed during a time when other
 
-concurrent operations aren't* expected. When heavy concurrency is expected, separate
+concurrent operations aren't\* expected. When heavy concurrency is expected, separate
 
 ,
 

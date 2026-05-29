@@ -3,21 +3,21 @@ title: "How to: Activate Service Broker Message Delivery in Databases (Transact-
 topic: "service-broker"
 description: |
   ﾃ
-  
+
   Summarize this article for me
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   By default,
-  
+
   Service Broker
-  
+
   is enabled and message delivery is active in a database when the
-  
+
   database is create
 tags:
   - "service-broker"

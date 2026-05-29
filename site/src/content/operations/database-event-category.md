@@ -3,21 +3,21 @@ title: "Database Event Category"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event category contains event classes to monitor the SQL Server Database
-  
+
   Engine.
-  
+
   Descr
 tags:
   - "event-classes"

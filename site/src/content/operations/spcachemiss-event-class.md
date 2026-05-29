@@ -3,18 +3,17 @@ title: "SP:CacheMiss Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The SP:CacheMiss event class indicates that the procedure is not found in the cache. If the
-  
-  
+
 tags:
   - "event-classes"
   - "spcachemiss-event-class"

@@ -3,17 +3,17 @@ title: "Configure FailureConditionLevel"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Use the FailureConditionLevel property to set the conditions for the Always On Failover Cluster
-  
+
   Instance (FCI) to fail over or restart. Changes to thi
 tags:
   - "high-availability"

@@ -1,7 +1,7 @@
 ---
-title: 'Advanced transaction information'
-topic: 'io-fundamentals'
-description: 'There are a few cases where disallowing page or row locking can be beneficial, if the access'
+title: "Advanced transaction information"
+topic: "io-fundamentals"
+description: "There are a few cases where disallowing page or row locking can be beneficial, if the access"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

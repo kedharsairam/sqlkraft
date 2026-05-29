@@ -3,17 +3,17 @@ title: "Mirroring page"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Access this page from the principal database, and use it to configure and to modify the
-  
+
   properties of database mirroring for a database. Also use it t
 tags:
   - "collation"

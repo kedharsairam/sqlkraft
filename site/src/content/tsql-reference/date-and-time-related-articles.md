@@ -1,16 +1,16 @@
 ---
-name: 'Date and time-related articles'
-title: 'Date and time-related articles'
-category: 'data-types'
-description: 'function returns the'
+name: "Date and time-related articles"
+title: "Date and time-related articles"
+category: "data-types"
+description: "function returns the"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
 
 Function
 
-
 ## Syntax
+
 Return value
 
 Return
@@ -141,8 +141,8 @@ Not applicable
 
 Function
 
-
 ## Syntax
+
 Return value
 
 Return
@@ -195,8 +195,8 @@ Expand table
 
 Article
 
-
 ## Description
+
 FORMAT
 
 The

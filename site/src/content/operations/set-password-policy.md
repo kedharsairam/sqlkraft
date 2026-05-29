@@ -3,11 +3,11 @@ title: "Set password policy"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server 2022 (16.x) and later versions on Linux
-  
+
   This article describes how to set up and manage password policies for SQL Server logins on Linux.
-  
+
   Custom password policies are availab
 tags:
   - "linux-operations"

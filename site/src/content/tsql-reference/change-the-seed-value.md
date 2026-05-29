@@ -1,8 +1,8 @@
 ---
-name: 'Change the seed value'
-title: 'Change the seed value'
-category: 'statements'
-description: 'value. If a transaction inserts a row and is later rolled back, the next'
+name: "Change the seed value"
+title: "Change the seed value"
+category: "statements"
+description: "value. If a transaction inserts a row and is later rolled back, the next"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -13,7 +13,7 @@ value. If a transaction inserts a row and is later rolled back, the next
 
 row inserted uses
 
-+ the
+- the
 
 current increment
 

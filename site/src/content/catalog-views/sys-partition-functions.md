@@ -1,11 +1,11 @@
 ---
-name: 'sys.partition_functions'
-title: 'sys.partition_functions'
-category: 'partitions'
-description: 'Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each partition function in SQL Server. Name of the partition function. Is unique within the database. Partition function ID. Is unique within the database. Number of partitions created by the function. 1 = Boundary value is included in the RIGHT range of the : SQL Server 2012 (11.x) and later. 1 = Object is used fo'
+name: "sys.partition_functions"
+title: "sys.partition_functions"
+category: "partitions"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each partition function in SQL Server. Name of the partition function. Is unique within the database. Partition function ID. Is unique within the database. Number of partitions created by the function. 1 = Boundary value is included in the RIGHT range of the : SQL Server 2012 (11.x) and later. 1 = Object is used fo"
 tags: ["partitions", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'ALTER PARTITION FUNCTION'
+syntax: "ALTER PARTITION FUNCTION"
 ---
 
 ## Description

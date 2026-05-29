@@ -3,15 +3,15 @@ title: "Remote Service Bindings"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   A remote service binding establishes a relationship between a local database user, the
-  
+
   certificate for the user, and the name of a rem
 tags:
   - "service-broker"

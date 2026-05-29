@@ -1,7 +1,7 @@
 ---
-title: 'Avoid locking hints'
-topic: 'locking'
-description: 'enabled, and the number of queries where LAQ wasn''t used for various reasons. This'
+title: "Avoid locking hints"
+topic: "locking"
+description: "enabled, and the number of queries where LAQ wasn't used for various reasons. This"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'sys.query_store_runtime_stats'
-title: 'sys.query_store_runtime_stats'
-category: 'query-store'
-description: 'SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Contains information about the runtime execution statistics information for the query. Identifier of the row that represents runtime the past runtime statistics intervals. For currently active interval, there may be multiple rows representing runtime statistics for the plan represents runtime statistics that are flushed to '
+name: "sys.query_store_runtime_stats"
+title: "sys.query_store_runtime_stats"
+category: "query-store"
+description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Contains information about the runtime execution statistics information for the query. Identifier of the row that represents runtime the past runtime statistics intervals. For currently active interval, there may be multiple rows representing runtime statistics for the plan represents runtime statistics that are flushed to "
 tags: ["query-store", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

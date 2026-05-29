@@ -3,27 +3,27 @@ title: "Server Event Category"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event category contains general server events.
-  
+
   Description
-  
+
   Mount Tape Event Class
-  
+
   Indicates tha
 tags:
   - "event-classes"

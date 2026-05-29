@@ -1,7 +1,7 @@
 ---
-title: 'Dynamic locking'
-topic: 'locking'
-description: 'Monitor lock escalation by using the'
+title: "Dynamic locking"
+topic: "locking"
+description: "Monitor lock escalation by using the"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

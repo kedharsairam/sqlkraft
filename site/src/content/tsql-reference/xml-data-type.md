@@ -1,8 +1,8 @@
 ---
-name: 'xml data type'
-title: 'xml data type'
-category: 'data-types'
-description: 'When you convert between'
+name: "xml data type"
+title: "xml data type"
+category: "data-types"
+description: "When you convert between"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

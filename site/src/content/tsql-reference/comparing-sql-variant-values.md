@@ -1,8 +1,8 @@
 ---
-name: 'Comparing sql_variant Values'
-title: 'Comparing sql_variant Values'
-category: 'queries'
-description: 'ODBC does not fully support'
+name: "Comparing sql_variant Values"
+title: "Comparing sql_variant Values"
+category: "queries"
+description: "ODBC does not fully support"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

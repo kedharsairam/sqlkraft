@@ -1,8 +1,8 @@
 ---
-name: 'sys.column_encryption_keys'
-title: 'sys.column_encryption_keys'
-category: 'compatibility'
-description: 'SQL Server 2016 (13.x) and later versions Analytics Platform System (PDW) Returns information about column encryption keys (CEKs) created with the statement. Each row represents a CEK. Date the CEK was last modified. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see CREATE CO'
+name: "sys.column_encryption_keys"
+title: "sys.column_encryption_keys"
+category: "compatibility"
+description: "SQL Server 2016 (13.x) and later versions Analytics Platform System (PDW) Returns information about column encryption keys (CEKs) created with the statement. Each row represents a CEK. Date the CEK was last modified. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see CREATE CO"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

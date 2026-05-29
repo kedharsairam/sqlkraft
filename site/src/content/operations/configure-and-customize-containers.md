@@ -3,13 +3,13 @@ title: "Configure and customize containers"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article explains how you can configure and customize SQL Server Linux containers using
-  
+
   Docker. You can persist your data, move files from and to containers, an
 tags:
   - "linux-operations"

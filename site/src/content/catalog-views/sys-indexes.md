@@ -1,8 +1,8 @@
 ---
-name: 'sys.indexes'
-title: 'sys.indexes'
-category: 'indexes'
-description: 'The percentage of space on each index page for storing data when the index is created or replaces the fill factor when the index was created, becoming the new default for the index and for any other nonclustered indexes rebuilt, because a clustered index is uses the fill factor value last specified for the index. This value is stored in the must be specified. If isn''t specified, the default fill f'
+name: "sys.indexes"
+title: "sys.indexes"
+category: "indexes"
+description: "The percentage of space on each index page for storing data when the index is created or replaces the fill factor when the index was created, becoming the new default for the index and for any other nonclustered indexes rebuilt, because a clustered index is uses the fill factor value last specified for the index. This value is stored in the must be specified. If isn't specified, the default fill f"
 tags: ["indexes", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

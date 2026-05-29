@@ -1,8 +1,8 @@
 ---
-name: 'Considerations When You Use the SET Statements'
-title: 'Considerations When You Use the SET Statements'
-category: 'statements'
-description: 'SET TRANSACTION ISOLATION LEVEL'
+name: "Considerations When You Use the SET Statements"
+title: "Considerations When You Use the SET Statements"
+category: "statements"
+description: "SET TRANSACTION ISOLATION LEVEL"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

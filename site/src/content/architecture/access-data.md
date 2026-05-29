@@ -3,19 +3,19 @@ title: "Access Data"
 topic: "filestream"
 description: |
   Article
-  
+
   •
-  
+
   01/22/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article describes how to use the Transact-SQL INSERT, UPDATE, and DELETE statements to
-  
+
   manage FILESTREAM data.
-  
+
   To add a row to a table that supp
 tags:
   - "filestream"

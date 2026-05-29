@@ -3,7 +3,7 @@ name: "xquery-boolean-constructor-functions-true"
 title: "XQuery - Boolean Constructor Functions - true"
 category: "xquery"
 description: "XQuery Language Reference: Boolean Constructor Functions - true"
-syntax: "xs:boolean(\"1\")"
+syntax: 'xs:boolean("1")'
 tags:
   - "xquery"
   - "boolean-constructor-functions-true"

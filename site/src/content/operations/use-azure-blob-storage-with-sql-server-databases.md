@@ -3,14 +3,13 @@ title: "Use Azure Blob Storage with SQL Server databases"
 topic: "configuration"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   This tutorial helps you understand how to use the Azure Blob Storage for data files and
-  
+
   backups in SQL Server 2016 (13.x) and later versions.
-  
-  
+
 tags:
   - "configuration"
   - "use-azure-blob-storage-with-sql-server-databases"

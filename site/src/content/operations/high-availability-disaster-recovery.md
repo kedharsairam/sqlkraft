@@ -3,15 +3,15 @@ title: "High availability & disaster recovery"
 topic: "monitor"
 description: |
   SQL Server high availability and disaster
-  
+
   09/08/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   To provide high availability and disaster recovery for your SQL Server services, choose from a
-  
+
   wide variety of industry
 tags:
   - "monitor"

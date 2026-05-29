@@ -3,13 +3,13 @@ title: "Create, Alter, & Drop"
 topic: "filestream"
 description: |
   09/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Describes how to create a new FileTable, or alter or drop an existing FileTable.
-  
+
   A FileTable is a specialized user table that has a predefined and fixed schema. T
 tags:
   - "filestream"

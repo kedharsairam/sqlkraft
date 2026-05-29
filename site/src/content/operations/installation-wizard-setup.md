@@ -3,15 +3,15 @@ title: "Installation Wizard (Setup)"
 topic: "upgrade"
 description: |
   06/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   The SQL Server Installation Wizard provides a single feature tree for an in-place upgrade of
-  
+
   SQL Server components to the latest version of SQL Se
 tags:
   - "upgrade"

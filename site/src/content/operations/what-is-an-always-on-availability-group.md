@@ -3,12 +3,12 @@ title: "What is an Always On availability group?"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article introduces the Always On availability groups concepts that are central for
-  
-  configuring and managing one or more availability groups in the Enterprise edition of 
+
+  configuring and managing one or more availability groups in the Enterprise edition of
 tags:
   - "high-availability"
   - "what-is-an-always-on-availability-group"

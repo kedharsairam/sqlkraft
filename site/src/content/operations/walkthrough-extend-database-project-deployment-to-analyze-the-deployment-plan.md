@@ -3,11 +3,11 @@ title: "Walkthrough: Extend Database Project Deployment to Analyze the Deploymen
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   You can create deployment contributors to perform custom actions when you deploy a SQL
-  
+
   project. You can create either a DeploymentPlanModifier or a DeploymentPlanExecutor. Use a
-  
+
   Deployme
 tags:
   - "ssb-diagnose"

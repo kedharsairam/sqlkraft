@@ -3,17 +3,17 @@ title: "Revert to a Snapshot"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   04/25/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   If data in an online database becomes damaged, in some cases, reverting the database to a
-  
+
   database snapshot that predates the damage might be an appro
 tags:
   - "collation"

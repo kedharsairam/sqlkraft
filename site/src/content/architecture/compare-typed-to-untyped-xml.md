@@ -3,23 +3,23 @@ title: "Compare Typed to Untyped XML"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   You can create variables, parameters, and columns of the
-  
+
   type. You can optionally
-  
+
   associate a collect
 tags:
   - "xml-data"

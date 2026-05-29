@@ -1,7 +1,7 @@
 ---
-title: 'What''s new in SQL Server installation'
-topic: 'io-fundamentals'
-description: 'Installation is supported on x64 processors only. For more information, see'
+title: "What's new in SQL Server installation"
+topic: "io-fundamentals"
+description: "Installation is supported on x64 processors only. For more information, see"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

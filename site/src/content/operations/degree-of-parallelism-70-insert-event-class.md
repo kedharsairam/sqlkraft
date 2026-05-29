@@ -3,19 +3,19 @@ title: "Degree of Parallelism (7.0 Insert) Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event class occurs each time SQL Server executes a
-  
+
   SELECT, INSERT, UPDATE, or DELETE st
 tags:
   - "event-classes"
@@ -73,7 +73,7 @@ serial.
 
 serial.
 
->= 0x02000000 indicates a parallel plan
+> = 0x02000000 indicates a parallel plan
 
 running in parallel.
 

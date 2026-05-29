@@ -3,13 +3,13 @@ title: "Install sqlpackage"
 topic: "sqlpackage"
 description: |
   ﾃ
-  
+
   Summarize this article for me
-  
+
   SqlPackage runs on Windows, macOS, and Linux, and is available to install through
-  
+
   or as a standalone zip download. For details about the latest release, see the
-  
+
   rel
 tags:
   - "sqlpackage"

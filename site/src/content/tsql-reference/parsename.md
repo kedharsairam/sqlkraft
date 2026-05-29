@@ -1,8 +1,8 @@
 ---
-name: 'PARSENAME'
-title: 'PARSENAME'
-category: 'statements'
-description: ''
+name: "PARSENAME"
+title: "PARSENAME"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

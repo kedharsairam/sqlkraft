@@ -3,15 +3,15 @@ title: "Creating Service Broker Applications"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This section provides a general overview of the structure of a Service Broker application,
-  
+
   discusses some of the most common strategie
 tags:
   - "service-broker"

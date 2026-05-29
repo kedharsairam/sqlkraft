@@ -1,8 +1,8 @@
 ---
-name: 'String and binary types'
-title: 'String and binary types'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "String and binary types"
+title: "String and binary types"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -51,8 +51,8 @@ SQL database in Microsoft Fabric
 
 SQL Server supports the following string and binary types.
 
-
 ## Description
+
 binary and
 
 varbinary

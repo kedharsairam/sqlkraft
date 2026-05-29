@@ -3,11 +3,11 @@ title: "SQL Server Unit Test Files"
 topic: "ssb-diagnose"
 description: |
   SQL Server unit test files
-  
+
   09/10/2025
-  
+
   Like the unit tests for managed code, SQL Server unit tests reside in test projects. You can see
-  
+
   the items that compose a SQL Server unit test in the hierarchy
 tags:
   - "ssb-diagnose"

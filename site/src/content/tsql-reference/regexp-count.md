@@ -1,8 +1,8 @@
 ---
-name: 'REGEXP_COUNT'
-title: 'REGEXP_COUNT'
-category: 'statements'
-description: '### Always-up-to-date'
+name: "REGEXP_COUNT"
+title: "REGEXP_COUNT"
+category: "statements"
+description: "### Always-up-to-date"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

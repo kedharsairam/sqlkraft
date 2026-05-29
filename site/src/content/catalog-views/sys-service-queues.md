@@ -1,8 +1,8 @@
 ---
-name: 'sys.service_queues'
-title: 'sys.service_queues'
-category: 'compatibility'
-description: 'Contains a row for each object in the database that is a service queue, with For a list of columns that this view inherits, see Maximum number of the concurrent readers Three-part name of the activation procedure. ID of the EXECUTE AS database principal. NULL by default or if EXECUTE AS CALLER. ID of the specified principal if EXECUTE AS SELF 1 = Messages are retained until dialog end. : SQL Serve'
+name: "sys.service_queues"
+title: "sys.service_queues"
+category: "compatibility"
+description: "Contains a row for each object in the database that is a service queue, with For a list of columns that this view inherits, see Maximum number of the concurrent readers Three-part name of the activation procedure. ID of the EXECUTE AS database principal. NULL by default or if EXECUTE AS CALLER. ID of the specified principal if EXECUTE AS SELF 1 = Messages are retained until dialog end. : SQL Serve"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

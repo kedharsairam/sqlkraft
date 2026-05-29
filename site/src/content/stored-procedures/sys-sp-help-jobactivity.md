@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_help_jobactivity'
-title: 'sp_help_jobactivity'
-category: 'general'
-description: 'Lists information about the runtime state of SQL Server Agent jobs. Transact-SQL syntax conventions The job identification number. must be specified, but both can''t be specified. must be specified, but both can''t be specified. The session ID to report information about.'
+name: "sys.sp_help_jobactivity"
+title: "sp_help_jobactivity"
+category: "general"
+description: "Lists information about the runtime state of SQL Server Agent jobs. Transact-SQL syntax conventions The job identification number. must be specified, but both can't be specified. must be specified, but both can't be specified. The session ID to report information about."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,7 +1,7 @@
 ---
-name: 'To Find Details about Database Files'
-title: 'To Find Details about Database Files'
-description: 'for resource database'
+name: "To Find Details about Database Files"
+title: "To Find Details about Database Files"
+description: "for resource database"
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

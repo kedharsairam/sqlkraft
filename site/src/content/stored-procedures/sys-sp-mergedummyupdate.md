@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_mergedummyupdate'
-title: 'sp_mergedummyupdate'
-category: 'general'
-description: 'Does a dummy update on the given row, so that it sends again during the next merge. This stored procedure can be executed at the Publisher, on the publication database, or at the Subscriber, on the subscription database. Transact-SQL syntax conventions The name of the source object. , with no default. The row identifier. , with no default. is used in merge replication.'
+name: "sys.sp_mergedummyupdate"
+title: "sp_mergedummyupdate"
+category: "general"
+description: "Does a dummy update on the given row, so that it sends again during the next merge. This stored procedure can be executed at the Publisher, on the publication database, or at the Subscriber, on the subscription database. Transact-SQL syntax conventions The name of the source object. , with no default. The row identifier. , with no default. is used in merge replication."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

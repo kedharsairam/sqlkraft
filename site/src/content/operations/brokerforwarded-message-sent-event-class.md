@@ -3,23 +3,23 @@ title: "Broker:Forwarded Message Sent Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server generates a Broker:Forwarded Message Sent event when Service Broker forwards a
-  
+
   message.
-  
+
   Description
-  
+
   Applicati
 tags:
   - "event-classes"

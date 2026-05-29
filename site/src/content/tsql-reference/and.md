@@ -1,8 +1,8 @@
 ---
-name: 'AND'
-title: 'AND'
-category: 'operators'
-description: ''
+name: "AND"
+title: "AND"
+category: "operators"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

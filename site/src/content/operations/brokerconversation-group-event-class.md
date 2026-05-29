@@ -3,21 +3,21 @@ title: "Broker:Conversation Group Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server generates a
-  
+
   event when Service Broker creates a new
-  
+
   conversation group or drops an existing conversation group
 tags:
   - "event-classes"

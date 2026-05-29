@@ -3,18 +3,18 @@ title: "LocalDBStopInstance"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Stops the specified SQL Server Express LocalDB instance from running.
-  
+
   C++
-  
+
   [Input] The name of the LocalDB instance to stop.
-  
-  [Input] One or a combination of the 
+
+  [Input] One or a combination of the
 tags:
   - "clr-integration"
   - "localdbstopinstance"

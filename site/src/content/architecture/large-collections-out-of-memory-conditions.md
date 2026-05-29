@@ -3,16 +3,16 @@ title: "Large collections & out-of-memory conditions"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   SQL database in Microsoft Fabric
-  
+
   During a call to the built-in XML_SCHEMA_NAMESPACE() function on a large XML schema
-  
-  collection, or when you try to drop 
+
+  collection, or when you try to drop
 tags:
   - "xml-data"
   - "large-collections-out-of-memory-conditions"

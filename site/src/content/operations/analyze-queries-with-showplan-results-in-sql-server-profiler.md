@@ -3,17 +3,17 @@ title: "Analyze Queries with SHOWPLAN Results in SQL Server Profiler"
 topic: "profiler"
 description: |
   SQL Server Profiler
-  
+
   06/05/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   You can add Showplan event classes to a trace definition that cause SQL Server Profiler to
-  
+
   gather and display que
 tags:
   - "profiler"

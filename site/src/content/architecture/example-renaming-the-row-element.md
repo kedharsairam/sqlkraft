@@ -3,19 +3,19 @@ title: "Example: Renaming the <row> Element"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   For each row in the result set, the RAW mode generates an element
-  
+
   . You can optionally
-  
+
   spec
 tags:
   - "xml-data"

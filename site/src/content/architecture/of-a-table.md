@@ -3,21 +3,21 @@ title: "Of a Table"
 topic: "collation"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL database in Microsoft
-  
+
   Fabric
-  
+
   You can use the following steps to
 tags:
   - "collation"

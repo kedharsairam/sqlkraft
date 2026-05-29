@@ -1,7 +1,7 @@
 ---
-name: 'To Encrypt Database using Transparent Data Encr'
-title: 'To Encrypt Database using Transparent Data Encr'
-description: 'create a master key'
+name: "To Encrypt Database using Transparent Data Encr"
+title: "To Encrypt Database using Transparent Data Encr"
+description: "create a master key"
 category: security-audit
 tags: ["database", "encryption", "security-audit"]
 pubDate: 2025-03-15

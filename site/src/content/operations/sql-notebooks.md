@@ -3,9 +3,9 @@ title: "SQL Notebooks"
 topic: "profiler"
 description: |
   SQL Notebooks (preview)
-  
+
   SQL Notebooks in the MSSQL extension for Visual Studio Code provide notebook-based SQL
-  
+
   development using native Visual Studio Code Jupyter notebooks. You can combine interact
 tags:
   - "profiler"

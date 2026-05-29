@@ -1,8 +1,8 @@
 ---
-name: 'Partitioned views'
-title: 'Partitioned views'
-category: 'statements'
-description: 'A computation. The column cannot be computed from an expression that uses other'
+name: "Partitioned views"
+title: "Partitioned views"
+category: "statements"
+description: "A computation. The column cannot be computed from an expression that uses other"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

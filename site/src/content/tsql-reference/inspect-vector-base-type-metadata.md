@@ -1,8 +1,8 @@
 ---
-name: 'Inspect vector base type metadata'
-title: 'Inspect vector base type metadata'
-category: 'predicates'
-description: 'The following query confirms actual base type and dimensions of a'
+name: "Inspect vector base type metadata"
+title: "Inspect vector base type metadata"
+category: "predicates"
+description: "The following query confirms actual base type and dimensions of a"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

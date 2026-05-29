@@ -3,17 +3,17 @@ title: "Remote Blob Store (RBS)"
 topic: "filestream"
 description: |
   Article
-  
+
   •
-  
+
   11/29/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   SQL Server Remote BLOB Store (RBS) is an optional add-on component that lets database
-  
+
   administrators store binary large objects in commodity storage s
 tags:
   - "filestream"

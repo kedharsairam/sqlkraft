@@ -1,8 +1,8 @@
 ---
-name: 'Use EXECUTE with stored procedures'
-title: 'Use EXECUTE with stored procedures'
-category: 'statements'
-description: 'Nesting occurs when one module calls another or executes managed code by referencing a'
+name: "Use EXECUTE with stored procedures"
+title: "Use EXECUTE with stored procedures"
+category: "statements"
+description: "Nesting occurs when one module calls another or executes managed code by referencing a"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

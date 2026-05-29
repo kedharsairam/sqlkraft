@@ -1,8 +1,8 @@
 ---
-name: 'SQRT'
-title: 'SQRT'
-category: 'statements'
-description: ''
+name: "SQRT"
+title: "SQRT"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

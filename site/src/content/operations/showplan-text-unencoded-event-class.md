@@ -3,17 +3,17 @@ title: "Showplan Text (Unencoded) Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Showplan Text (Unencoded) event class occurs when Microsoft SQL Server executes a SQL
-  
+
   st
 tags:
   - "event-classes"

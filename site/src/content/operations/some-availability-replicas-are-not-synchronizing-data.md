@@ -3,25 +3,25 @@ title: "Some availability replicas are not synchronizing data"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   01/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   : Availability Replicas Data Synchronization State
-  
+
   : Some availability replicas are not synchronizing data.
-  
+
   :
-  
+
   Warning
-  
+
   : Availability group
-  
+
   This po
 tags:
   - "high-availability"

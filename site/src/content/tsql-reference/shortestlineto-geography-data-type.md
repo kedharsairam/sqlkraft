@@ -1,8 +1,8 @@
 ---
-name: 'ShortestLineTo (geography Data Type)'
-title: 'ShortestLineTo (geography Data Type)'
-category: 'data-types'
-description: ''
+name: "ShortestLineTo (geography Data Type)"
+title: "ShortestLineTo (geography Data Type)"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

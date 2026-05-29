@@ -1,7 +1,7 @@
 ---
-title: 'System tables'
-topic: 'query-processing'
-description: 'fn_servershareddrives'
+title: "System tables"
+topic: "query-processing"
+description: "fn_servershareddrives"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

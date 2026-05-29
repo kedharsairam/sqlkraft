@@ -3,23 +3,23 @@ title: "Install & configure"
 topic: "monitor"
 description: |
   Article
-  
+
   •
-  
+
   08/01/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   Analytics Platform System (PDW)
-  
+
   This article contains installation and config
 tags:
   - "monitor"

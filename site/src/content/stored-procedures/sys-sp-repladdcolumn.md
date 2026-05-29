@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_repladdcolumn'
-title: 'sp_repladdcolumn'
-category: 'general'
-description: 'Adds a column to an existing published table article. Allows the new column to be added to all publishers that publish this table, or just add the column to a specific publication that publishes the table. This stored procedure is executed at the Publisher on the publication Transact-SQL syntax conventions The name of the table article that contains the new column to add. This stored procedure is '
+name: "sys.sp_repladdcolumn"
+title: "sp_repladdcolumn"
+category: "general"
+description: "Adds a column to an existing published table article. Allows the new column to be added to all publishers that publish this table, or just add the column to a specific publication that publishes the table. This stored procedure is executed at the Publisher on the publication Transact-SQL syntax conventions The name of the table article that contains the new column to add. This stored procedure is "
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

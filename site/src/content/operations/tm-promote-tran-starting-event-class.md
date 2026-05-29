@@ -3,17 +3,17 @@ title: "TM: Promote Tran Starting Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The TM: Promote Tran Starting event class indicates that a PROMOTE TRANSACTION request is
-  
+
   st
 tags:
   - "event-classes"

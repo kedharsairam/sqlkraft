@@ -3,15 +3,15 @@ title: "Specify fill factor"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This article describes what fill factor is and how to specify a fill factor value for an inde
 tags:
   - "filestream"

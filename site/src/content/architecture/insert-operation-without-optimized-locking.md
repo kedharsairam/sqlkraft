@@ -1,7 +1,7 @@
 ---
-title: 'Insert operation without optimized locking'
-topic: 'locking'
-description: 'database option and the'
+title: "Insert operation without optimized locking"
+topic: "locking"
+description: "database option and the"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

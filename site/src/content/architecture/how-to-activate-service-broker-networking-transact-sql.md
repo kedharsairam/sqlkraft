@@ -3,15 +3,15 @@ title: "How to: Activate Service Broker Networking (Transact-SQL)"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker doesn't send or receive messages over the network by default. To activate
-  
+
   Service Broker networking in an instance, cre
 tags:
   - "service-broker"

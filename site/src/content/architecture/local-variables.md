@@ -1,6 +1,6 @@
 ---
-title: 'Local variables'
-topic: 'query-processing'
+title: "Local variables"
+topic: "query-processing"
 description: 'Parameter sensitivity, also known as "parameter sniffing", refers to a process whereby SQL'
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29

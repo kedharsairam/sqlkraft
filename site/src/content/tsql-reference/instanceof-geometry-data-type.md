@@ -1,8 +1,8 @@
 ---
-name: 'InstanceOf (geometry Data Type)'
-title: 'InstanceOf (geometry Data Type)'
-category: 'predicates'
-description: '### GeometryCollection'
+name: "InstanceOf (geometry Data Type)"
+title: "InstanceOf (geometry Data Type)"
+category: "predicates"
+description: "### GeometryCollection"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

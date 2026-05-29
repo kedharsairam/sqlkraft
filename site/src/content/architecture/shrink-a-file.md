@@ -3,21 +3,21 @@ title: "Shrink a file"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   07/03/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to shrink a data or log file in SQL Server by using SQL Server
-  
+
   Management S
 tags:
   - "collation"

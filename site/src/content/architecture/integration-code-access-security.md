@@ -3,13 +3,13 @@ title: "Integration Code Access Security"
 topic: "clr-integration"
 description: |
   07/23/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The common language runtime (CLR) supports a security model called code access security for
-  
+
   managed code. In this model, permissions are granted to assemblies bas
 tags:
   - "clr-integration"

@@ -3,22 +3,22 @@ title: "Overview"
 topic: "high-availability"
 description: |
   ﾃ
-  
+
   Summarize this article for me
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   SQL Server Log shipping allows you to automatically send transaction log backups from a
-  
+
   primary database
-  
+
   on a
-  
+
   primary server
-  
-  instance to 
+
+  instance to
 tags:
   - "high-availability"
   - "overview"

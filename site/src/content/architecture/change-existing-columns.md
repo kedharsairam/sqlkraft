@@ -3,19 +3,19 @@ title: "Change Existing Columns"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The ALTER TABLE statement supports the
-  
+
   data type. For example, you can alter any string
-  
+
   typ
 tags:
   - "xml-data"

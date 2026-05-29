@@ -1,8 +1,8 @@
 ---
-name: 'Convert decimal and numeric data'
-title: 'Convert decimal and numeric data'
-category: 'data-types'
-description: 'data types, SQL Server considers each combination of precision and'
+name: "Convert decimal and numeric data"
+title: "Convert decimal and numeric data"
+category: "data-types"
+description: "data types, SQL Server considers each combination of precision and"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

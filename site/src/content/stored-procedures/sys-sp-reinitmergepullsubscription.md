@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_reinitmergepullsubscription'
-title: 'sp_reinitmergepullsubscription'
-category: 'general'
-description: 'Marks a merge pull subscription for reinitialization the next time the Merge Agent runs. This stored procedure is executed at the Subscriber in the subscription database. Transact-SQL syntax conventions The name of the Publisher database.'
+name: "sys.sp_reinitmergepullsubscription"
+title: "sp_reinitmergepullsubscription"
+category: "general"
+description: "Marks a merge pull subscription for reinitialization the next time the Merge Agent runs. This stored procedure is executed at the Subscriber in the subscription database. Transact-SQL syntax conventions The name of the Publisher database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

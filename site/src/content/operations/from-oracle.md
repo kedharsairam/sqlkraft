@@ -3,19 +3,19 @@ title: "From Oracle"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   01/08/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   In this guide, you learn how to migrate your Oracle databases to SQL Server by using SQL
-  
+
   Server Migration Assistant for Oracle (SSMA for Oracle).
-  
+
   For
 tags:
   - "migration"

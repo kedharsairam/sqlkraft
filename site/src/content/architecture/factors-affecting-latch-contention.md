@@ -1,7 +1,7 @@
 ---
-title: 'Factors affecting latch contention'
-topic: 'io-fundamentals'
-description: 'later in this article. This performance improvement is directed at systems with high numbers of'
+title: "Factors affecting latch contention"
+topic: "io-fundamentals"
+description: "later in this article. This performance improvement is directed at systems with high numbers of"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

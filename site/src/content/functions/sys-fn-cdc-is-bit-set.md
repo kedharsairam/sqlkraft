@@ -1,11 +1,11 @@
 ---
-name: 'sys.fn_cdc_is_bit_set'
-title: 'sys.fn_cdc_is_bit_set'
-category: 'change-data-capture'
-description: 'Indicates whether a captured column has been updated by checking whether its ordinal position is set within a provided bitmask. Transact-SQL syntax conventions Is the ordinal position in the mask to check. Is the mask identifying updated columns. This function is typically used as part of a change data query to indicate whether a column has changed. In this scenario, the function sys.fn_cdc_get_co'
+name: "sys.fn_cdc_is_bit_set"
+title: "sys.fn_cdc_is_bit_set"
+category: "change-data-capture"
+description: "Indicates whether a captured column has been updated by checking whether its ordinal position is set within a provided bitmask. Transact-SQL syntax conventions Is the ordinal position in the mask to check. Is the mask identifying updated columns. This function is typically used as part of a change data query to indicate whether a column has changed. In this scenario, the function sys.fn_cdc_get_co"
 tags: ["change-data-capture", "function"]
 pubDate: 2026-05-29
-syntax: 'sys.fn_cdc_is_bit_set ( position , update_mask )'
+syntax: "sys.fn_cdc_is_bit_set ( position , update_mask )"
 ---
 
 ## Description

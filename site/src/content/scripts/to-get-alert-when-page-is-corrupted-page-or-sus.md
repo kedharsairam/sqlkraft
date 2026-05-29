@@ -1,7 +1,7 @@
 ---
-name: 'To Get Alert When Page is Corrupted Page or Sus'
-title: 'To Get Alert When Page is Corrupted Page or Sus'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To Get Alert When Page is Corrupted Page or Sus"
+title: "To Get Alert When Page is Corrupted Page or Sus"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["automation"]
 pubDate: 2025-03-15
@@ -26,7 +26,7 @@ from msdb.dbo.suspect_pages sp
 inner join sys.databases d on d.database_id=sp.database_id
 inner join sys.master_files mf on mf.database_id=sp.database_id and mf.file_id=sp.file_id
 ========================================
-select DB_NAME(database_id) AS DBNAME, * from msdb.dbo.suspect_pages 
+select DB_NAME(database_id) AS DBNAME, * from msdb.dbo.suspect_pages
 
 Delete from msdb.dbo.suspect_pages where last_update_date < getdate()-30
 ========================================
@@ -61,7 +61,7 @@ set @tableHTML =
 from msdb.dbo.suspect_pages sp
 inner join sys.databases d on d.database_id=sp.database_id
 inner join sys.master_files mf on mf.database_id=sp.database_id and mf.file_id=sp.file_id
-              for xml path('tr'), TYPE 
+              for xml path('tr'), TYPE
     ) as nvarchar(max) ) +
     N'</table>' ;
 
@@ -69,7 +69,7 @@ IF @count > 0
   exec msdb.dbo.sp_send_dbmail
     @profile_name ='DBATEAM',
     @recipients=N'xxxxx@gmail.com',
-    @body= @tableHTML, 
+    @body= @tableHTML,
     @subject = @subj,
     @body_format = 'HTML'
 ```

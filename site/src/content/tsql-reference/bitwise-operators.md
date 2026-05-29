@@ -1,8 +1,8 @@
 ---
-name: 'Bitwise operators'
-title: 'Bitwise operators'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "Bitwise operators"
+title: "Bitwise operators"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -67,7 +67,7 @@ If bits at any position are both
 
 = 75
 
------------------
+---
 
 = 10
 
@@ -81,7 +81,7 @@ If either bit at any position is
 
 = 75
 
------------------
+---
 
 = 235
 
@@ -89,7 +89,7 @@ Reverses the bit value at every bit position.
 
 = 170
 
------------------
+---
 
 = 85
 

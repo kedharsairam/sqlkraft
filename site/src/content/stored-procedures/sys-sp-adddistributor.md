@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_adddistributor'
-title: 'sp_adddistributor'
-category: 'general'
-description: 'table (if there isn''t one), marks the server entry as a Distributor, and stores property information. This stored procedure is executed at the database to register and mark the server as a distributor. In the case of a remote distributor, it''s also executed at the Publisher from the Transact-SQL syntax conventions , with no default. This parameter is only used if setting up a remote Distributor. I'
+name: "sys.sp_adddistributor"
+title: "sp_adddistributor"
+category: "general"
+description: "table (if there isn't one), marks the server entry as a Distributor, and stores property information. This stored procedure is executed at the database to register and mark the server as a distributor. In the case of a remote distributor, it's also executed at the Publisher from the Transact-SQL syntax conventions , with no default. This parameter is only used if setting up a remote Distributor. I"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

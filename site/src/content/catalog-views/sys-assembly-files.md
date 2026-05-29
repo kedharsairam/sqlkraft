@@ -1,8 +1,8 @@
 ---
-name: 'sys.assembly_files'
-title: 'sys.assembly_files'
-category: 'databases-files'
-description: 'Contains a row for each file that makes up an assembly. ID of the assembly to which this file belongs. ID of the file. Is unique within an assembly. The file ID numbered 1 The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see CLR Assembly Catalog Views (Transact-SQL) ASSEMBLYPROP'
+name: "sys.assembly_files"
+title: "sys.assembly_files"
+category: "databases-files"
+description: "Contains a row for each file that makes up an assembly. ID of the assembly to which this file belongs. ID of the file. Is unique within an assembly. The file ID numbered 1 The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see CLR Assembly Catalog Views (Transact-SQL) ASSEMBLYPROP"
 tags: ["databases-files", "catalog-view"]
 pubDate: 2026-05-29
 ---

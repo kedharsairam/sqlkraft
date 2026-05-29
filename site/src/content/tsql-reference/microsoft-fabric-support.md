@@ -1,8 +1,8 @@
 ---
-name: 'Microsoft Fabric support'
-title: 'Microsoft Fabric support'
-category: 'statements'
-description: 'The ANSI and ISO 8601 compliance sections of the'
+name: "Microsoft Fabric support"
+title: "Microsoft Fabric support"
+category: "statements"
+description: "The ANSI and ISO 8601 compliance sections of the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

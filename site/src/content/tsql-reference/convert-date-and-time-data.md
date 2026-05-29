@@ -1,8 +1,8 @@
 ---
-name: 'Convert date and time data'
-title: 'Convert date and time data'
-category: 'data-types'
-description: 'is two digits, ranging from 01 to 31 depending on the month, which'
+name: "Convert date and time data"
+title: "Convert date and time data"
+category: "data-types"
+description: "is two digits, ranging from 01 to 31 depending on the month, which"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

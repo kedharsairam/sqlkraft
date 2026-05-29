@@ -3,18 +3,18 @@ title: "How to: Resume Service Broker Networking (Transact-SQL)"
 topic: "service-broker"
 description: |
   09/02/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker sends and receives messages over the network while any endpoint for Service
-  
+
   Broker is in the
-  
-  state. To resume Service 
+
+  state. To resume Service
 tags:
   - "service-broker"
   - "how-to-resume-service-broker-networking-transact-sql"

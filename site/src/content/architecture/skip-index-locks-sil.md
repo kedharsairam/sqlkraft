@@ -1,7 +1,7 @@
 ---
-title: 'Skip index locks (SIL)'
-topic: 'index-architecture'
-description: 'With TID locking, short-duration exclusive ('
+title: "Skip index locks (SIL)"
+topic: "index-architecture"
+description: "With TID locking, short-duration exclusive ("
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

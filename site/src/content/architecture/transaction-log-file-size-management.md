@@ -1,7 +1,7 @@
 ---
-title: 'Transaction log file size management'
-topic: 'io-fundamentals'
-description: 'Hot add CPU is the ability to dynamically add CPUs to a running system. Adding CPUs can'
+title: "Transaction log file size management"
+topic: "io-fundamentals"
+description: "Hot add CPU is the ability to dynamically add CPUs to a running system. Adding CPUs can"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

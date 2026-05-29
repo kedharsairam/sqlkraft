@@ -1,8 +1,8 @@
 ---
-name: 'Declare a Transact-SQL variable'
-title: 'Declare a Transact-SQL variable'
-category: 'language-elements'
-description: 'Azure SQL Managed Instance'
+name: "Declare a Transact-SQL variable"
+title: "Declare a Transact-SQL variable"
+category: "language-elements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "language-elements"]
 pubDate: 2026-05-29
 ---

@@ -3,19 +3,19 @@ title: "Maintain publications"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   09/27/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   After you have created a publication, it might be necessary to add or drop articles, or change
-  
+
   publication and article pro
 tags:
   - "migration"

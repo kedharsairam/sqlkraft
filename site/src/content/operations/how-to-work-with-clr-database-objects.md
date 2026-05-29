@@ -3,12 +3,12 @@ title: "How to: Work with CLR Database Objects"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   In addition to the Transact-SQL programming language, you can use .NET Framework
-  
+
   languages to create database objects that retrieve and update data. Database objects that are
-  
-  written in 
+
+  written in
 tags:
   - "ssb-diagnose"
   - "how-to-work-with-clr-database-objects"

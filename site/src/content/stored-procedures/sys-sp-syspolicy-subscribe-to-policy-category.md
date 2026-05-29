@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_syspolicy_subscribe_to_policy_category'
-title: 'sp_syspolicy_subscribe_to_policy_category'
-category: 'general'
-description: 'Adds a policy category subscription for the specified database. Transact-SQL syntax conventions The name of the policy category that you want the database to subscribe to. in the context of the database where you want to add a policy category subscription.'
+name: "sys.sp_syspolicy_subscribe_to_policy_category"
+title: "sp_syspolicy_subscribe_to_policy_category"
+category: "general"
+description: "Adds a policy category subscription for the specified database. Transact-SQL syntax conventions The name of the policy category that you want the database to subscribe to. in the context of the database where you want to add a policy category subscription."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'msdb.dbo.syspolicy_policy_categories'
+syntax: "msdb.dbo.syspolicy_policy_categories"
 ---
 
 ## Description

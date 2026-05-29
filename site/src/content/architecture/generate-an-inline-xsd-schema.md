@@ -3,19 +3,19 @@ title: "Generate an Inline XSD Schema"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   10/17/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   In a FOR XML clause, you can request that your query return an inline schema together with
-  
+
   the query results. If you want an XDR s
 tags:
   - "xml-data"

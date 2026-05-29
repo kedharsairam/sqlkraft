@@ -1,8 +1,8 @@
 ---
-name: 'Temporary tables'
-title: 'Temporary tables'
-category: 'statements'
-description: 'The Database Engine doesn''t enforce an order in which DEFAULT, IDENTITY, ROWGUIDCOL, or'
+name: "Temporary tables"
+title: "Temporary tables"
+category: "statements"
+description: "The Database Engine doesn't enforce an order in which DEFAULT, IDENTITY, ROWGUIDCOL, or"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -169,8 +169,8 @@ Output
 
 When you create local or global temporary tables, the
 
-
 ## syntax supports constraint
+
 definitions except for
 
 constraints. If a

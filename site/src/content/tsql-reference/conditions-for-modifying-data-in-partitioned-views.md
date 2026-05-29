@@ -1,8 +1,8 @@
 ---
-name: 'Conditions for modifying data in partitioned views'
-title: 'Conditions for modifying data in partitioned views'
-category: 'predicates'
-description: 'It cannot be a computed, identity, default, or'
+name: "Conditions for modifying data in partitioned views"
+title: "Conditions for modifying data in partitioned views"
+category: "predicates"
+description: "It cannot be a computed, identity, default, or"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

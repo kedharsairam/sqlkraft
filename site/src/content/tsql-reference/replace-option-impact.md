@@ -1,8 +1,8 @@
 ---
-name: 'REPLACE option impact'
-title: 'REPLACE option impact'
-category: 'queries'
-description: 'When restoring a database to SQL Server 2022 (16.x) from a previous version, it is'
+name: "REPLACE option impact"
+title: "REPLACE option impact"
+category: "queries"
+description: "When restoring a database to SQL Server 2022 (16.x) from a previous version, it is"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

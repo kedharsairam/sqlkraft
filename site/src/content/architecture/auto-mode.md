@@ -3,26 +3,26 @@ title: "AUTO Mode"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   As described in
-  
+
   FOR XML (SQL Server)
-  
+
   , AUTO mode returns query results as nested XML
-  
-  elements. This 
+
+  elements. This
 tags:
   - "xml-data"
   - "auto-mode"

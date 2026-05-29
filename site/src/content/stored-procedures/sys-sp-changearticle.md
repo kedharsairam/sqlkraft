@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_changearticle'
-title: 'sp_changearticle'
-category: 'general'
-description: 'Changes the properties of an article in a transactional or snapshot publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication that contains the article. The name of the article whose property is to be changed. An article property to change.'
+name: "sys.sp_changearticle"
+title: "sp_changearticle"
+category: "general"
+description: "Changes the properties of an article in a transactional or snapshot publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication that contains the article. The name of the article whose property is to be changed. An article property to change."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

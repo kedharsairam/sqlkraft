@@ -1,8 +1,8 @@
 ---
-name: 'sys.masked_columns'
-title: 'sys.masked_columns'
-category: 'objects'
-description: 'SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric view to query for table-columns that have a dynamic data masking function applied to them. This view inherits from the indicating if the column is masked, and if so, what masking function is defined. This view only shows the columns on which there is a masking function applied. ID of the object to which this column belongs.'
+name: "sys.masked_columns"
+title: "sys.masked_columns"
+category: "objects"
+description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric view to query for table-columns that have a dynamic data masking function applied to them. This view inherits from the indicating if the column is masked, and if so, what masking function is defined. This view only shows the columns on which there is a masking function applied. ID of the object to which this column belongs."
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

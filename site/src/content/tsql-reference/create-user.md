@@ -1,8 +1,8 @@
 ---
-name: 'CREATE USER'
-title: 'CREATE USER'
-category: 'statements'
-description: 'Summarize this article for me'
+name: "CREATE USER"
+title: "CREATE USER"
+category: "statements"
+description: "Summarize this article for me"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

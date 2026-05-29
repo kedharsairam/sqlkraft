@@ -3,17 +3,17 @@ title: "SP:Completed Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The SP:Completed event class indicates that the stored procedure has completed executing.
-  
+
   De
 tags:
   - "event-classes"

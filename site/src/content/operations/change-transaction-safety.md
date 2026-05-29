@@ -3,17 +3,17 @@ title: "Change transaction safety"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Transaction safety is the attribute that controls the operating mode of the session. At any time,
-  
+
   however, the database owner can change the transacti
 tags:
   - "high-availability"

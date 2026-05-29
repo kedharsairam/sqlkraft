@@ -3,19 +3,19 @@ title: "Security best practices"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Contained databases have some unique threats that should be understood and mitigated by
-  
+
   SQL Server Database Engine adminis
 tags:
   - "collation"

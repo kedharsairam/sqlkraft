@@ -1,8 +1,8 @@
 ---
-name: 'Transact-SQL reference'
-title: 'Transact-SQL reference'
-category: 'statements'
-description: 'CREATE SERVER AUDIT (Transact-SQL)'
+name: "Transact-SQL reference"
+title: "Transact-SQL reference"
+category: "statements"
+description: "CREATE SERVER AUDIT (Transact-SQL)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

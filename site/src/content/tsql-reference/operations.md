@@ -1,8 +1,8 @@
 ---
-name: 'operations'
-title: 'operations'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "operations"
+title: "operations"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -23,8 +23,8 @@ connected.
 
 Transact-SQL syntax conventions
 
-
 ## syntaxsql
+
 Specifies the requested amount of time, in seconds, for the manual checkpoint to complete.
 
 checkpoint_duration

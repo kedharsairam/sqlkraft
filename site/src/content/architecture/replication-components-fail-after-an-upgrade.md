@@ -1,7 +1,7 @@
 ---
-title: 'Replication components fail after an upgrade'
-topic: 'io-fundamentals'
-description: 'SQL Server 2025 (17.x)'
+title: "Replication components fail after an upgrade"
+topic: "io-fundamentals"
+description: "SQL Server 2025 (17.x)"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

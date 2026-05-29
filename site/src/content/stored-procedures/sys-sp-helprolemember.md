@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_helprolemember'
-title: 'sp_helprolemember'
-category: 'general'
-description: 'Returns information about the direct members of a role in the current database. Transact-SQL syntax conventions The name of a role in the current database. must exist in the current database. If isn''t specified, then all roles that contain at least one member from the current database are returned. Name of the role in the current database.'
+name: "sys.sp_helprolemember"
+title: "sp_helprolemember"
+category: "general"
+description: "Returns information about the direct members of a role in the current database. Transact-SQL syntax conventions The name of a role in the current database. must exist in the current database. If isn't specified, then all roles that contain at least one member from the current database are returned. Name of the role in the current database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -91,5 +91,4 @@ EXECUTE sp_helprolemember
 'Role2';
 ```
 
-
-*(... and 8 more examples)*
+_(... and 8 more examples)_

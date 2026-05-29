@@ -1,7 +1,7 @@
 ---
-title: 'Nonclustered index architecture'
-topic: 'index-architecture'
-description: 'values are ordered in the nonclustered index, the query optimizer can quickly find all entries in'
+title: "Nonclustered index architecture"
+topic: "index-architecture"
+description: "values are ordered in the nonclustered index, the query optimizer can quickly find all entries in"
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

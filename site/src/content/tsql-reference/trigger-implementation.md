@@ -1,8 +1,8 @@
 ---
-name: 'Trigger implementation'
-title: 'Trigger implementation'
-category: 'statements'
-description: 'At least one of the three'
+name: "Trigger implementation"
+title: "Trigger implementation"
+category: "statements"
+description: "At least one of the three"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -49,8 +49,8 @@ When used after
 
 @@ROWCOUNT (Transact-SQL)
 
-
 ## returns the total number of rows
+
 inserted, updated, and deleted to the client.
 
 is a fully reserved keyword when the database compatibility level is set to

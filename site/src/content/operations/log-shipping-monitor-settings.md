@@ -3,19 +3,19 @@ title: "Log Shipping Monitor Settings"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Use this page to configure and to modify the properties of the log shipping monitor server.
-  
+
   For an explanation of log shipping concepts, see
-  
+
   About Lo
 tags:
   - "high-availability"

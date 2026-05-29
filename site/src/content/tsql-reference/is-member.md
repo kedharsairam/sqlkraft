@@ -1,8 +1,8 @@
 ---
-name: 'IS_MEMBER'
-title: 'IS_MEMBER'
-category: 'statements'
-description: '### Microsoft Entra ID'
+name: "IS_MEMBER"
+title: "IS_MEMBER"
+category: "statements"
+description: "### Microsoft Entra ID"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

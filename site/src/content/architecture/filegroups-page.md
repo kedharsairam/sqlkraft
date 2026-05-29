@@ -3,22 +3,22 @@ title: "Filegroups page"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Use this page to view the filegroups or add a new filegroup to the selected database. Filegroup
-  
+
   types are separated into
-  
+
   row
-  
-  filegroups, FILESTREAM 
+
+  filegroups, FILESTREAM
 tags:
   - "collation"
   - "filegroups-page"

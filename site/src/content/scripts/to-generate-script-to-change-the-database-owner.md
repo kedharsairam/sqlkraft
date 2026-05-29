@@ -1,7 +1,7 @@
 ---
-name: 'To Generate Script to Change the Database Owner'
-title: 'To Generate Script to Change the Database Owner'
-description: 'SQL Server diagnostic script for database operations.'
+name: "To Generate Script to Change the Database Owner"
+title: "To Generate Script to Change the Database Owner"
+description: "SQL Server diagnostic script for database operations."
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

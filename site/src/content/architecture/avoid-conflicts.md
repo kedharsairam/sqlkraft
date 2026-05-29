@@ -3,17 +3,17 @@ title: "Avoid Conflicts"
 topic: "filestream"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Applications that use SqlOpenFilestream() to open Win32 file handles for reading or writing
-  
+
   FILESTREAM BLOB data can encounter conflict errors with Tr
 tags:
   - "filestream"
@@ -79,23 +79,23 @@ Allowed
 
 COMMIT TRANSACTION
 
-Denied*
+Denied\*
 
-Denied*.
+Denied\*.
 
 SAVE TRANSACTION
 
-Denied*
+Denied\*
 
-Denied*
+Denied\*
 
 ROLLBACK
 
-Allowed*
+Allowed\*
 
-Allowed*
+Allowed\*
 
-* The transaction is canceled, and open handles for the transaction context are invalidated. The
+- The transaction is canceled, and open handles for the transaction context are invalidated. The
 
 application must close all open handles.
 

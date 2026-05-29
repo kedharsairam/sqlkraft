@@ -1,8 +1,8 @@
 ---
-name: 'FULLTEXTSERVICEPROPERTY'
-title: 'FULLTEXTSERVICEPROPERTY'
-category: 'statements'
-description: '### sp_fulltext_service'
+name: "FULLTEXTSERVICEPROPERTY"
+title: "FULLTEXTSERVICEPROPERTY"
+category: "statements"
+description: "### sp_fulltext_service"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

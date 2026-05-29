@@ -1,8 +1,8 @@
 ---
-name: 'Remarks for DML triggers'
-title: 'Remarks for DML triggers'
-category: 'statements'
-description: 'For a CLR trigger, specifies the method of an assembly to bind with the trigger. The method'
+name: "Remarks for DML triggers"
+title: "Remarks for DML triggers"
+category: "statements"
+description: "For a CLR trigger, specifies the method of an assembly to bind with the trigger. The method"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -215,8 +215,8 @@ or
 
 actions that run on multiple columns. This function
 
-
 ## returns a bit pattern that indicates which columns were inserted or updated.
+
 must be the first statement in the batch and can apply to only one table.
 
 A trigger is created only in the current database; however, a trigger can reference objects

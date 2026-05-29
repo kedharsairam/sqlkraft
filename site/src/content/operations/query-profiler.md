@@ -3,13 +3,13 @@ title: "Query profiler"
 topic: "profiler"
 description: |
   The Query Profiler in the MSSQL extension for Visual Studio Code captures and monitors
-  
+
   database activity in real time using
-  
+
   Extended Events
-  
+
   . You can observe live T-SQL activity, identify
-  
+
   slow ope
 tags:
   - "profiler"

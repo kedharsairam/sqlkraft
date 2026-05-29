@@ -1,7 +1,7 @@
 ---
-title: 'FILE_FLAG_WRITE_THROUGH'
-topic: 'query-processing'
-description: 'SQL Server data modification statements generate logical page writes. You can picture this'
+title: "FILE_FLAG_WRITE_THROUGH"
+topic: "query-processing"
+description: "SQL Server data modification statements generate logical page writes. You can picture this"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

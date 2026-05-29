@@ -3,15 +3,15 @@ title: "Handling Poison Messages"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes one way that an application that uses Service Broker can detect a poison
-  
+
   message and remove the message from th
 tags:
   - "service-broker"

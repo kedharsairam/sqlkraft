@@ -1,7 +1,7 @@
 ---
-name: 'sys.dm_os_cluster_nodes'
-title: 'sys.dm_os_cluster_nodes'
-category: 'os'
+name: "sys.dm_os_cluster_nodes"
+title: "sys.dm_os_cluster_nodes"
+category: "os"
 description: 'Analytics Platform System (PDW) Returns one row for each node in the failover cluster instance configuration. If the current instance is a failover clustered instance, it returns a list of nodes on which this failover cluster instance (formerly "virtual server") has been defined. If the current server instance is not a failover clustered instance, it returns an empty rowset. Name of a node in the '
 tags: ["os", "dmv"]
 pubDate: 2026-05-29

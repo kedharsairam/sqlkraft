@@ -1,7 +1,7 @@
 ---
-title: 'Active log'
-topic: 'transaction-log'
-description: 'The number of log records reaches the number the Database Engine estimates it can'
+title: "Active log"
+topic: "transaction-log"
+description: "The number of log records reaches the number the Database Engine estimates it can"
 tags: ["transaction-log", "architecture"]
 pubDate: 2026-05-29
 ---

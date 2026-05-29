@@ -3,17 +3,17 @@ title: "Organize Columns Displayed in a Trace"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   You can group data columns in a trace by selecting
-  
+
   in the trace table or
-  
+
   dialog box, or when you define a trace. Grouping the data co
 tags:
   - "profiler"

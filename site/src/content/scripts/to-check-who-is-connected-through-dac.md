@@ -1,14 +1,14 @@
 ---
-name: 'To check Who is Connected through DAC'
-title: 'To check Who is Connected through DAC'
-description: 'SQL Server diagnostic script for security-audit operations.'
+name: "To check Who is Connected through DAC"
+title: "To check Who is Connected through DAC"
+description: "SQL Server diagnostic script for security-audit operations."
 category: security-audit
 tags: ["health-check", "security-audit"]
 pubDate: 2025-03-15
 ---
 
 ```sql
-select 
+select
 es.original_login_name,
 es.session_id,
 es.login_time,

@@ -1,8 +1,8 @@
 ---
-name: 'Q. Use SELECT INTO with UNION'
-title: 'Q. Use SELECT INTO with UNION'
-category: 'statements'
-description: 'In the following example, the'
+name: "Q. Use SELECT INTO with UNION"
+title: "Q. Use SELECT INTO with UNION"
+category: "statements"
+description: "In the following example, the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

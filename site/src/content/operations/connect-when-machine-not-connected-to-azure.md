@@ -3,17 +3,17 @@ title: "Connect when machine not connected to Azure"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article explains how to connect your SQL Server instance to Azure Arc. Before you proceed,
-  
+
   complete the
-  
+
   Prerequisites - SQL Server enabled by Azure Arc
-  
+
   .
-  
+
   If the serve
 tags:
   - "azure-synapse"

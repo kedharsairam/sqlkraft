@@ -3,18 +3,18 @@ title: "Coding"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   When coding your user-defined type (UDT) definition, you must implement various features,
-  
-  depending on whether you're implementing the UDT as a class 
+
+  depending on whether you're implementing the UDT as a class
 tags:
   - "clr-integration"
   - "coding"

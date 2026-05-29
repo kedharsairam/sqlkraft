@@ -3,17 +3,17 @@ title: "Linux FAQ"
 topic: "linux-operations"
 description: |
   SQL Server on Linux frequently asked
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   The following sections provide common questions and answers for SQL Server running on Linux.
-  
+
   1.
-  
+
   SQL Server is currently suppo
 tags:
   - "linux-operations"

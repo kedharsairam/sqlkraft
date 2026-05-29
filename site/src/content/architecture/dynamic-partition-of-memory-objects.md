@@ -1,7 +1,7 @@
 ---
-title: 'Dynamic partition of memory objects'
-topic: 'memory-management'
-description: 'page protection because it''s affected by every byte of the page, however, it''s moderately'
+title: "Dynamic partition of memory objects"
+topic: "memory-management"
+description: "page protection because it's affected by every byte of the page, however, it's moderately"
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---

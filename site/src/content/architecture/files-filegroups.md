@@ -3,13 +3,13 @@ title: "Files & filegroups"
 topic: "collation"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   At a minimum, every SQL Server database has two operating system files: a data file and a log
-  
+
   file. Data files contain data and objects such as ta
 tags:
   - "collation"

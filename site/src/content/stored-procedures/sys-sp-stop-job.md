@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_stop_job'
-title: 'sp_stop_job'
-category: 'general'
-description: 'Instructs SQL Server Agent to stop the execution of a job. Transact-SQL syntax conventions The identification number of the job to stop. The name of the originating server. If specified, all multiserver jobs are stopped. . Specify this parameter only when Multi Server Administration (MSX/TSX) feature isn''t supported on Azure SQL Managed'
+name: "sys.sp_stop_job"
+title: "sp_stop_job"
+category: "general"
+description: "Instructs SQL Server Agent to stop the execution of a job. Transact-SQL syntax conventions The identification number of the job to stop. The name of the originating server. If specified, all multiserver jobs are stopped. . Specify this parameter only when Multi Server Administration (MSX/TSX) feature isn't supported on Azure SQL Managed"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,8 +1,8 @@
 ---
-name: 'C. Four ranking functions used in the same query'
-title: 'C. Four ranking functions used in the same query'
-category: 'predicates'
-description: 'This example returns the top ten employees ranked by their salary. Because the'
+name: "C. Four ranking functions used in the same query"
+title: "C. Four ranking functions used in the same query"
+category: "predicates"
+description: "This example returns the top ten employees ranked by their salary. Because the"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

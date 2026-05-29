@@ -1,8 +1,8 @@
 ---
-name: 'table'
-title: 'table'
-category: 'data-types'
-description: 'statement positioned on a cursor that uses'
+name: "table"
+title: "table"
+category: "data-types"
+description: "statement positioned on a cursor that uses"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -15,8 +15,8 @@ or
 
 statement positioned on a cursor that uses
 
-
 ## syntax.
+
 The
 
 clause isn't supported in the following statements:

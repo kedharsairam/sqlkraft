@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_dropdistributiondb'
-title: 'sp_dropdistributiondb'
-category: 'general'
-description: 'Azure SQL Managed Instance Drops a distribution database. Drops the physical files used by the database if they aren''t used by another database. This stored procedure is executed at the Distributor on any database. Transact-SQL syntax conventions The database to drop. , with no default. Specifies whether this node was previously part of an availability group for the distribution @former_ag_seconda'
+name: "sys.sp_dropdistributiondb"
+title: "sp_dropdistributiondb"
+category: "general"
+description: "Azure SQL Managed Instance Drops a distribution database. Drops the physical files used by the database if they aren't used by another database. This stored procedure is executed at the Distributor on any database. Transact-SQL syntax conventions The database to drop. , with no default. Specifies whether this node was previously part of an availability group for the distribution @former_ag_seconda"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_dropdistributiondb'
+syntax: "sp_dropdistributiondb"
 ---
 
 ## Description

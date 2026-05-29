@@ -1,7 +1,7 @@
 ---
-name: 'To Replicate Data from Table A to Table B in Da'
-title: 'To Replicate Data from Table A to Table B in Da'
-description: 'Requirement:whenever data is inserterd,updated,or deleted in tablea that has to replicate to the tableb in same database.'
+name: "To Replicate Data from Table A to Table B in Da"
+title: "To Replicate Data from Table A to Table B in Da"
+description: "Requirement:whenever data is inserterd,updated,or deleted in tablea that has to replicate to the tableb in same database."
 category: automation
 tags: ["automation", "table"]
 pubDate: 2025-03-15
@@ -9,11 +9,11 @@ pubDate: 2025-03-15
 
 ```sql
 --Requirement:whenever data is inserterd,updated,or deleted in tablea that has to replicate to the tableb in same database.
---We can achieve this functionality using database level triggers. 
+--We can achieve this functionality using database level triggers.
 --Note:Server level triggers are not supported in Azure sql database.
 
 --Demo:
---Step1: 
+--Step1:
 CREATE TABLE [dbo].[tableA](
 	[ID] [int] NULL,
 	[Name] [varchar](100) NULL,
@@ -52,10 +52,10 @@ declare @id int,@name varchar(100), @salary int
 select @id = deleted.id
 from deleted
 
-delete from tableb where @id = id 
+delete from tableb where @id = id
 end
 
---Step4:Create a update trigger 
+--Step4:Create a update trigger
 create trigger dbo.customize_update
 on dbo.tablea
 after update
@@ -103,7 +103,7 @@ update tablea set ID = 10 where id = 1
 update tablea set name ='super'  where id = 3
 update tablea set Salary=3000 where id = 3
 
---Clean Up 
+--Clean Up
 drop table tableA
 drop table tableb
 

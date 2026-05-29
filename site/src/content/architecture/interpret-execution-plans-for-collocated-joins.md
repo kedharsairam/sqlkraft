@@ -1,7 +1,7 @@
 ---
-title: 'Interpret execution plans for collocated joins'
-topic: 'query-processing'
-description: 'The Showplan methods'
+title: "Interpret execution plans for collocated joins"
+topic: "query-processing"
+description: "The Showplan methods"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_add_maintenance_plan'
-title: 'sp_add_maintenance_plan'
-category: 'general'
-description: 'Adds a maintenance plan and returns the plan ID. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Transact-SQL syntax conventions Specifies the name of the maintenance plan to be added. Specifies the ID of the maintenance plan. This stored procedure is used with databas'
+name: "sys.sp_add_maintenance_plan"
+title: "sp_add_maintenance_plan"
+category: "general"
+description: "Adds a maintenance plan and returns the plan ID. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Transact-SQL syntax conventions Specifies the name of the maintenance plan to be added. Specifies the ID of the maintenance plan. This stored procedure is used with databas"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

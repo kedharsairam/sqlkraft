@@ -3,17 +3,17 @@ title: "Interoperability & Coexistence"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Database mirroring can be used with the following features or components of SQL Server:
-  
+
   Always On Failover Cluster Instances (SQL Server Failover Clus
 tags:
   - "high-availability"

@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_delete_log_shipping_alert_job'
-title: 'sp_delete_log_shipping_alert_job'
-category: 'general'
-description: 'Removes an alert job from the log shipping monitor server if the job exists and there are no more primary or secondary databases to be monitored. Transact-SQL syntax conventions fixed server role can run this procedure.'
+name: "sys.sp_delete_log_shipping_alert_job"
+title: "sp_delete_log_shipping_alert_job"
+category: "general"
+description: "Removes an alert job from the log shipping monitor server if the job exists and there are no more primary or secondary databases to be monitored. Transact-SQL syntax conventions fixed server role can run this procedure."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_delete_log_shipping_alert_job'
+syntax: "sp_delete_log_shipping_alert_job"
 ---
 
 ## Description

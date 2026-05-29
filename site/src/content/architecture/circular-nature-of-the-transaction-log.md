@@ -1,7 +1,7 @@
 ---
-title: 'Circular nature of the transaction log'
-topic: 'io-fundamentals'
-description: 'Each VLF contains one or more'
+title: "Circular nature of the transaction log"
+topic: "io-fundamentals"
+description: "Each VLF contains one or more"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

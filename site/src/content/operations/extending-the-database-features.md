@@ -3,11 +3,11 @@ title: "Extending the Database Features"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   You can create feature extensions that let you extend features such as unit testing, and
-  
+
   database code analysis. For more information, see the following articles:
-  
+
   Customize database buil
 tags:
   - "ssb-diagnose"

@@ -1,7 +1,7 @@
 ---
-name: 'To Create Table'
-title: 'To Create Table'
-description: 'SQL Server diagnostic script for database operations.'
+name: "To Create Table"
+title: "To Create Table"
+description: "SQL Server diagnostic script for database operations."
 category: database
 tags: ["database", "table"]
 pubDate: 2025-03-15

@@ -1,8 +1,8 @@
 ---
-name: 'Related tasks'
-title: 'Related tasks'
-category: 'statements'
-description: 'The following example creates a server audit called'
+name: "Related tasks"
+title: "Related tasks"
+category: "statements"
+description: "The following example creates a server audit called"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

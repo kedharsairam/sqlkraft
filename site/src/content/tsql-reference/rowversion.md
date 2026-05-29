@@ -1,8 +1,8 @@
 ---
-name: 'rowversion'
-title: 'rowversion'
-category: 'data-types'
-description: ''
+name: "rowversion"
+title: "rowversion"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

@@ -3,15 +3,15 @@ title: "Service Script Example"
 topic: "service-broker"
 description: |
   09/15/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This Transact-SQL code sample defines a service that archives untyped XML documents. Two
-  
+
   scripts are included: the contract script and
 tags:
   - "service-broker"

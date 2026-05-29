@@ -1,8 +1,8 @@
 ---
-name: 'insert (XML DML)'
-title: 'insert (XML DML)'
-category: 'queries'
-description: ''
+name: "insert (XML DML)"
+title: "insert (XML DML)"
+category: "queries"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

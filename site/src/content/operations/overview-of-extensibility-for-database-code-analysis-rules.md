@@ -3,17 +3,17 @@ title: "Overview of Extensibility for Database Code Analysis Rules"
 topic: "ssb-diagnose"
 description: |
   Article
-  
+
   •
-  
+
   03/11/2025
-  
+
   The
-  
+
   provided code analysis rules
-  
+
   report on Transact-SQL design, naming, and performance
-  
+
   warnings in your database code. If the built-in code analysis rules don't include cov
 tags:
   - "ssb-diagnose"

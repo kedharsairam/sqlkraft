@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_dropserver'
-title: 'sp_dropserver'
-category: 'general'
-description: 'Azure SQL Managed Instance Removes a server from the list of known remote and linked servers on the local instance of SQL Transact-SQL syntax conventions The server to be removed. , with no default. Indicates that related remote and linked server logins for must also be removed if , with a default of An error is returned if you run on a server with associated remote and linked server login entries'
+name: "sys.sp_dropserver"
+title: "sp_dropserver"
+category: "general"
+description: "Azure SQL Managed Instance Removes a server from the list of known remote and linked servers on the local instance of SQL Transact-SQL syntax conventions The server to be removed. , with no default. Indicates that related remote and linked server logins for must also be removed if , with a default of An error is returned if you run on a server with associated remote and linked server login entries"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

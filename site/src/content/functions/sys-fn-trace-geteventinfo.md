@@ -1,11 +1,11 @@
 ---
-name: 'sys.fn_trace_geteventinfo'
-title: 'sys.fn_trace_geteventinfo'
-category: 'system'
-description: 'Returns information about an event being traced. Transact-SQL syntax conventions Is the ID of the trace. , with no default. ID of the traced event ID numbers of all columns collected for each event This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Use Extended Events ins'
+name: "sys.fn_trace_geteventinfo"
+title: "sys.fn_trace_geteventinfo"
+category: "system"
+description: "Returns information about an event being traced. Transact-SQL syntax conventions Is the ID of the trace. , with no default. ID of the traced event ID numbers of all columns collected for each event This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Use Extended Events ins"
 tags: ["system", "function"]
 pubDate: 2026-05-29
-syntax: 'fn_trace_geteventinfo ( trace_id )'
+syntax: "fn_trace_geteventinfo ( trace_id )"
 ---
 
 ## Description

@@ -3,15 +3,15 @@ title: "Close a Trace Window"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to close the trace window for traces that are running or for saved
-  
+
   traces you're viewing by using SQL Serve
 tags:
   - "profiler"

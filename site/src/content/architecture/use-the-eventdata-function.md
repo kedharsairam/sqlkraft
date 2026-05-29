@@ -3,17 +3,17 @@ title: "Use the EVENTDATA Function"
 topic: "change-data-capture"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Information about an event that fires a DDL trigger is captured by using the EVENTDATA
-  
+
   funct
 tags:
   - "change-data-capture"

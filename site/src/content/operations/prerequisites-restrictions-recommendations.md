@@ -3,13 +3,13 @@ title: "Prerequisites, restrictions, & recommendations"
 topic: "high-availability"
 description: |
   Prerequisites, restrictions, and
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article describes considerations for deploying Always On availability groups, including
-  
+
   prerequisites, restrictions, and recommendation
 tags:
   - "high-availability"

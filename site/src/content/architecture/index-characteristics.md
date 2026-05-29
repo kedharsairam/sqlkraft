@@ -1,7 +1,7 @@
 ---
-title: 'Index characteristics'
-topic: 'index-architecture'
-description: 'Examine column uniqueness. A unique index instead of a nonunique index on the same'
+title: "Index characteristics"
+topic: "index-architecture"
+description: "Examine column uniqueness. A unique index instead of a nonunique index on the same"
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

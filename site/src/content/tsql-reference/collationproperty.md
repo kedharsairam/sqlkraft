@@ -1,8 +1,8 @@
 ---
-name: 'COLLATIONPROPERTY'
-title: 'COLLATIONPROPERTY'
-category: 'statements'
-description: ''
+name: "COLLATIONPROPERTY"
+title: "COLLATIONPROPERTY"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

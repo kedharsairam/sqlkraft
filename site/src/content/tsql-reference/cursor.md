@@ -1,8 +1,8 @@
 ---
-name: 'cursor'
-title: 'cursor'
-category: 'data-types'
-description: '### sp_describe_cursor'
+name: "cursor"
+title: "cursor"
+category: "data-types"
+description: "### sp_describe_cursor"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

@@ -3,17 +3,17 @@ title: "Recover from a failure"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to recover from cluster failures by using the Failover Cluster Manager
-  
+
   snap-in after a failover occurs in SQL Server. The Fai
 tags:
   - "high-availability"

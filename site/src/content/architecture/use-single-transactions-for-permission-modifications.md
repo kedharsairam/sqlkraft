@@ -1,7 +1,7 @@
 ---
-title: 'Use single transactions for permission modifications'
-topic: 'io-fundamentals'
-description: 'Given the high-level invalidation nature of security caches (database/server level), perform'
+title: "Use single transactions for permission modifications"
+topic: "io-fundamentals"
+description: "Given the high-level invalidation nature of security caches (database/server level), perform"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

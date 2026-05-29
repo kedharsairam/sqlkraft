@@ -3,15 +3,15 @@ title: "Disable"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This article describes how to disable an index or constraints in SQL Server by using SQL Serv
 tags:
   - "filestream"

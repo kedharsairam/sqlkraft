@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addmergepublication'
-title: 'sp_addmergepublication'
-category: 'general'
-description: 'Creates a new merge publication. This stored procedure is executed at the Publisher on the database that is being published. Transact-SQL syntax conventions'
+name: "sys.sp_addmergepublication"
+title: "sp_addmergepublication"
+category: "general"
+description: "Creates a new merge publication. This stored procedure is executed at the Publisher on the database that is being published. Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

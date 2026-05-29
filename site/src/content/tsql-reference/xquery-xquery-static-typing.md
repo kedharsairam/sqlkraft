@@ -68,7 +68,7 @@ results of a path expression using that element will be zero or more elements of
 
 . This is currently expressed by using an expression such as
 
-where the asterisk (*) indicates the cardinality of the resulting type.
+where the asterisk (\*) indicates the cardinality of the resulting type.
 
 In this example, the expression may result in zero or more elements of name "age" and type
 

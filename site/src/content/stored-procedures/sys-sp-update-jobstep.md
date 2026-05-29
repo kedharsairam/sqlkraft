@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_update_jobstep'
-title: 'sp_update_jobstep'
-category: 'general'
-description: 'Changes the setting for a step in a job that is used to perform automated activities in the SQL Transact-SQL syntax conventions The identification number of the job to which the step belongs.'
+name: "sys.sp_update_jobstep"
+title: "sp_update_jobstep"
+category: "general"
+description: "Changes the setting for a step in a job that is used to perform automated activities in the SQL Transact-SQL syntax conventions The identification number of the job to which the step belongs."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,8 +1,8 @@
 ---
-name: 'views'
-title: 'views'
-category: 'statements'
-description: 'The value being inserted into the partitioning column satisfies at least one of the'
+name: "views"
+title: "views"
+category: "statements"
+description: "The value being inserted into the partitioning column satisfies at least one of the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -111,8 +111,8 @@ To update a partitioned view, the user must have
 
 , and
 
-
 ## permissions on the member tables.
+
 ### smalldatetime
 
 ### smalldatetime

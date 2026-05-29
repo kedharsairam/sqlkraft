@@ -1,8 +1,8 @@
 ---
-name: 'Trace flags'
-title: 'Trace flags'
-category: 'statements'
-description: 'The following table lists and describes the trace flags that are available in SQL Server.'
+name: "Trace flags"
+title: "Trace flags"
+category: "statements"
+description: "The following table lists and describes the trace flags that are available in SQL Server."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -29,8 +29,8 @@ use
 
 .
 
-
 ## Description
+
 Increases the verboseness of the merge replication agent logging.
 
 Important
@@ -117,8 +117,8 @@ Expand table
 
 #### 272
 
-
 ## Description
+
 only for time-limited troubleshooting purposes. For more information, see
 
 Find errors with the
@@ -259,8 +259,8 @@ server restarts unexpectedly or fails over to a secondary server. Identity cachi
 
 #### Scope
 
-
 ## Description
+
 performance on tables with identity columns.
 
 Note
@@ -381,8 +381,8 @@ at the time of your choice.
 
 #### 809
 
-
 ## Description
+
 Disables page prefetching scans. If you turn on trace flag 652, SQL Server no longer brings
 
 database pages into the buffer pool before these database pages are consumed by the scans. As a
@@ -493,8 +493,8 @@ introduced in SQL Server 2022 (16.x) and the behavior is enabled by default in S
 
 #### 834
 
-
 ## Description
+
 Enables extra I/O diagnostics to check for Lost Write or Stale Read conditions during file I/O
 
 operations. Trace flag 818 enables an in-memory ring buffer that is used for tracking the last 2,048
@@ -613,8 +613,8 @@ increase the kernel CPU time and reduce performance. This occurs if memory becom
 
 #### Scope
 
-
 ## Description
+
 requiring SQL Server to call Windows APIs to allocate and deallocate memory instead of reusing
 
 memory cached in the SQLOS workspace. Trace flag 834 can also cause unnecessary memory
@@ -735,8 +735,8 @@ KB4548103
 
 #### 1118
 
-
 ## Description
+
 Suppress long buffer pool scan complete messages (
 
 error 898
@@ -871,8 +871,8 @@ MIXED_PAGE_ALLOCATION option of
 
 #### locks
 
-
 ## Description
+
 information, see
 
 ALTER DATABASE SET options
@@ -881,8 +881,8 @@ ALTER DATABASE SET options
 
 : Global only.
 
-
 ## Returns the resources and types of locks participating in a deadlock and also the current command
+
 affected. For more information about deadlocks, see the
 
 Deadlocks guide
@@ -931,8 +931,8 @@ Resolve blocking problems caused by lock escalation in SQL Server
 
 : Global or session.
 
-
 ## Returns the resources and types of locks that are participating in a deadlock and also the current
+
 command affected, in an XML format that doesn't comply with any XSD schema. For more
 
 information about deadlocks, see the
@@ -1001,8 +1001,8 @@ Server configuration options
 
 #### 1448
 
-
 ## Description
+
 If both trace flags 1211 and 1224 are set, 1211 takes precedence over 1224. However, because trace
 
 flag 1211 prevents escalation in every case, even under memory pressure, use
@@ -1135,8 +1135,8 @@ availability database, or a log reader instance. This trace flag must be enabled
 
 #### 2312
 
-
 ## Description
+
 instance. It takes effect immediately without a restart. This trace flag can be activated ahead of time
 
 or when an asynchronous secondary replica fails.
@@ -1255,8 +1255,8 @@ Starting with SQL Server 2016 (13.x) Service Pack 1, to accomplish this at the q
 
 #### Scope
 
-
 ## Description
+
 query hint
 
 instead of using this trace flag.
@@ -1379,8 +1379,8 @@ this behavior is controlled by the Database Engine and trace flag 2371 has no ef
 
 #### Applies to
 
-
 ## Description
+
 Enable automatically generated quick statistics for ascending keys (histogram amendment). If trace
 
 flag 2389 is set, and a leading statistics column is marked as ascending, then the histogram used to
@@ -1505,8 +1505,8 @@ Note
 
 #### 2528
 
-
 ## Description
+
 option in
 
 ALTER DATABASE SCOPED
@@ -1633,8 +1633,8 @@ Server configuration: max degree of parallelism
 
 #### 2549
 
-
 ## Description
+
 Note
 
 : Parallel DBCC checks should typically be enabled (default). The query processor reevaluates
@@ -1761,8 +1761,8 @@ KB2634571
 
 #### 2592
 
-
 ## Description
+
 : Global only.
 
 Causes a memory dump of SQL Server to become a filtered dump (default is mini dump). This
@@ -1913,8 +1913,8 @@ Warning
 
 #### Scope
 
-
 ## Description
+
 : SQL Server 2019 (15.x) and later versions.
 
 : Global and session.
@@ -2045,8 +2045,8 @@ Backup compression (SQL Server)
 
 #### 3428
 
-
 ## Description
+
 Enables SQL Server Backup to URL logging for page blobs in Azure Storage only. Logging writes to
 
 a specific error log file. For more information, see
@@ -2157,8 +2157,8 @@ Redo
 
 #### Scope
 
-
 ## Description
+
 thread falls behind due to resource contention
 
 and
@@ -2293,8 +2293,8 @@ Note
 
 #### Scope
 
-
 ## Description
+
 Limits the amount of information returned to users who aren't authenticated as members of the
 
 fixed server role, by masking the parameters of some error messages using
@@ -2407,8 +2407,8 @@ KB4552159
 
 #### 4139
 
-
 ## Description
+
 Disables parameter sniffing unless
 
 ,
@@ -2551,8 +2551,8 @@ KB2952101
 
 #### Scope
 
-
 ## Description
+
 Starting with SQL Server 2016 (13.x) Service Pack 1, to accomplish this at the query level, add the
 
 query hint
@@ -2673,8 +2673,8 @@ Server
 
 #### Scope
 
-
 ## Description
+
 Makes server-level metadata visible to application roles. In SQL Server, an application role can't
 
 access metadata outside its own database because application roles aren't associated with a server-
@@ -2793,8 +2793,8 @@ only for time-limited troubleshooting sessions.
 
 #### Applies to
 
-
 ## Description
+
 Pauses TDE encryption scan and causes encryption scan worker to exit without doing any work. The
 
 database continues to be in encrypting state (encryption in progress). To resume re-encryption
@@ -2911,8 +2911,8 @@ versions.
 
 #### 7117
 
-
 ## Description
+
 : Global and session.
 
 Enables performance improvement of query operations with spatial data types in SQL Server 2012
@@ -3035,8 +3035,8 @@ cleaner to ignore the bit and continue the cleaning operation.
 
 #### 7752
 
-
 ## Description
+
 : SQL Server 2022 (16.x) CU 9 and later versions.
 
 : Global only.
@@ -3147,8 +3147,8 @@ to Query Store synchronous load (default behavior during database recovery).
 
 #### 8015
 
-
 ## Description
+
 Note
 
 : Starting with SQL Server 2019 (15.x), this behavior is controlled by the Database Engine and
@@ -3257,8 +3257,8 @@ KB2813214
 
 #### 8048
 
-
 ## Description
+
 : Global only.
 
 Disable the exception ring buffer. The exception ring buffer records the last 256 exceptions that are
@@ -3375,8 +3375,8 @@ KB2809338
 
 #### 8095
 
-
 ## Description
+
 Note
 
 : Starting with SQL Server 2014 (12.x) Service Pack 2 and SQL Server 2016 (13.x), this behavior
@@ -3489,8 +3489,8 @@ applies to builds where bitmap filtering is enabled by default.
 
 #### Applies to
 
-
 ## Description
+
 : SQL Server 2016 (13.x) CU 13 and later versions, SQL Server 2017 (14.x) CU 20 and later
 
 versions, and SQL Server 2019 (15.x).
@@ -3605,8 +3605,8 @@ enabled by default and this trace flag has no effect. If you'd like to disable t
 
 #### 8239
 
-
 ## Description
+
 revert to the older behavior, you can use trace flag 8125. However, in most cases this choice isn't
 
 recommended.
@@ -3769,8 +3769,8 @@ issues
 
 #### Scope
 
-
 ## Description
+
 : SQL Server 2022 (16.x) CU 3 and later versions.
 
 : Global only.
@@ -3895,8 +3895,8 @@ later versions.
 
 #### Scope
 
-
 ## Description
+
 Enables the fix for a contention issue with high
 
 wait times that you might
@@ -4013,8 +4013,8 @@ Disable locked pages for IO operations for high-end systems with high performanc
 
 #### 9349
 
-
 ## Description
+
 Enables a fix to address a parallel redo failure on a secondary replica by disabling inlined log IO,
 
 limiting the contention possibility from many workers to the subset of background LogWriter
@@ -4139,8 +4139,8 @@ top sort operator that boosts performance for many analytical queries.
 
 #### Scope
 
-
 ## Description
+
 : Global or session or query (QUERYTRACEON).
 
 Disables batch mode for sort operator. For more information, see
@@ -4273,8 +4273,8 @@ Note
 
 #### Scope
 
-
 ## Description
+
 Disables batch mode execution. For more information, see
 
 KB4016902
@@ -4409,8 +4409,8 @@ KB2683304
 
 #### Applies to
 
-
 ## Description
+
 Sets the fixed estimation for Table Valued Functions to the default of 1 (corresponding to the
 
 default under the Query Optimizer cardinality estimation model of SQL Server 2008 R2 (10.50.x)
@@ -4539,8 +4539,8 @@ sys.dm_xe_session_events
 
 #### Scope
 
-
 ## Description
+
 : Global only.
 
 Enables the SQL Server error log to record the start or stop of Extended Events (XEvents) sessions.
@@ -4653,8 +4653,8 @@ versions.
 
 #### Applies to
 
-
 ## Description
+
 Reuses the hidden schedulers used by the Memory Optimized tables.
 
 : SQL Server 2019 (15.x) CU 20 and later versions, and SQL Server 2022 (16.x) CU 3 and
@@ -4761,8 +4761,8 @@ Database Hyperscale service tier.
 
 #### 11068
 
-
 ## Description
+
 and later versions.
 
 Starting with SQL Server 2017 (14.x) CU 31, SQL Server 2019 (15.x) CU 18, and SQL Server 2022
@@ -4895,8 +4895,8 @@ might result in more than one compressed rowgroup, if the insert operation is ex
 
 #### Applies to
 
-
 ## Description
+
 mode. Without this trace flag, the insert operation would result in one compressed rowgroup.
 
 : SQL Server 2019 (15.x) and later versions.
@@ -4969,8 +4969,8 @@ KB5000895
 
 Enables you to add Microsoft Entra ID users via the
 
-
 ## syntax in the
+
 statement.
 
 Note
@@ -5031,8 +5031,8 @@ CREATE USER
 
 #### Applies to
 
-
 ## Description
+
 : Global only.
 
 Increases the flow control limits for the number of messages that each availability group gate
@@ -5149,8 +5149,8 @@ KB5026717
 
 #### Scope
 
-
 ## Description
+
 : Global only.
 
 Enables the automatic plan correction (APC) model of the automatic tuning feature to use a time-
@@ -5257,8 +5257,8 @@ availability group or other scenarios.
 
 #### 15915
 
-
 ## Description
+
 Disables the Azure Key Vault access that is required for a newly created Virtual Log File (VLF), which
 
 allows high-volume customer workloads to continue without interruption. Once this trace flag is
@@ -5359,8 +5359,8 @@ from multiple connections, which could cause a memory leak. The memory isn't cle
 
 #### Scope
 
-
 ## Description
+
 you restart the SQL Server service.
 
 : SQL Server 2019 (15.x) CU 29 and later versions.

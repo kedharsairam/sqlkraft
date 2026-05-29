@@ -3,21 +3,21 @@ title: "DTCTransaction Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Use the
-  
+
   event class to monitor the state of SQL Server Database Engine
-  
+
   transactions coordinated through Microsoft Distributed Tra
 tags:
   - "event-classes"

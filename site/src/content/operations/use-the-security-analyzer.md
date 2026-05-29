@@ -3,9 +3,9 @@ title: "Use the security analyzer"
 topic: "profiler"
 description: |
   Quickstart: Security analyzer
-  
+
   GitHub Copilot helps developers identify and address common security risks in SQL code and
-  
+
   application-layer queries. It detects vulnerabilities like SQL injection, ove
 tags:
   - "profiler"

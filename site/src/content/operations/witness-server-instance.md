@@ -3,19 +3,19 @@ title: "Witness Server Instance"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Use this page to specify information about the server instance that is to serve as the witness for
-  
+
   the session.
-  
+
   Establish a Database Mirroring Sessio
 tags:
   - "high-availability"

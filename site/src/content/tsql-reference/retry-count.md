@@ -1,8 +1,8 @@
 ---
-name: 'Retry count'
-title: 'Retry count'
-category: 'statements'
-description: 'specifies the directory on the local SQL Server instance where the ONNX'
+name: "Retry count"
+title: "Retry count"
+category: "statements"
+description: "specifies the directory on the local SQL Server instance where the ONNX"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

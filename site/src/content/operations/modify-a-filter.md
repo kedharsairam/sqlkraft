@@ -3,15 +3,15 @@ title: "Modify a filter"
 topic: "profiler"
 description: |
   06/05/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   You add filters to trace templates, which contain the trace definitions, to limit the number of
-  
+
   events gathered by a trace. Limiting t
 tags:
   - "profiler"

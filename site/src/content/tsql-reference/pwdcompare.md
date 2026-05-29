@@ -1,8 +1,8 @@
 ---
-name: 'PWDCOMPARE'
-title: 'PWDCOMPARE'
-category: 'statements'
-description: ''
+name: "PWDCOMPARE"
+title: "PWDCOMPARE"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

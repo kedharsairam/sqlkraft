@@ -3,24 +3,24 @@ title: "Server Memory Change Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class occurs when Microsoft SQL Server memory usage has
-  
-  increased or decreased by either 1 
+
+  increased or decreased by either 1
 tags:
   - "event-classes"
   - "server-memory-change-event-class"

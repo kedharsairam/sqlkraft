@@ -1,7 +1,7 @@
 ---
-name: 'To View List of Top 10 High Memory Utilization'
-title: 'To View List of Top 10 High Memory Utilization'
-description: 'SQL Server diagnostic script for architecture operations.'
+name: "To View List of Top 10 High Memory Utilization"
+title: "To View List of Top 10 High Memory Utilization"
+description: "SQL Server diagnostic script for architecture operations."
 category: architecture
 tags: ["architecture", "memory"]
 pubDate: 2025-03-15

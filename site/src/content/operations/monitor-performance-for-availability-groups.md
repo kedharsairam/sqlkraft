@@ -3,17 +3,17 @@ title: "Monitor performance for availability groups"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/27/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The performance aspect of Always On Availability Groups is crucial to maintaining the service-
-  
+
   level agreement (SLA) for your mission-critical databas
 tags:
   - "high-availability"

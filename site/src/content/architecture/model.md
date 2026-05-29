@@ -3,21 +3,21 @@ title: "model"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The
-  
+
   database is used as the template for all databases created on an instance of SQL
-  
+
   Server. Because
-  
+
   is created every time SQL Server is started, th
 tags:
   - "collation"

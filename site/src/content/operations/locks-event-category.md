@@ -3,19 +3,19 @@ title: "Locks Event Category"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Use the event classes in the
-  
+
   event category to monitor locki
 tags:
   - "event-classes"
@@ -99,7 +99,7 @@ Tracks when a lock is released.
 
 Lock:Timeout (timeout
 
-> 0) Event Class
+> 0. Event Class
 
 Tracks when lock requests cannot be completed because another transaction
 

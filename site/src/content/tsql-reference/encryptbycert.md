@@ -1,8 +1,8 @@
 ---
-name: 'ENCRYPTBYCERT'
-title: 'ENCRYPTBYCERT'
-category: 'statements'
-description: ''
+name: "ENCRYPTBYCERT"
+title: "ENCRYPTBYCERT"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

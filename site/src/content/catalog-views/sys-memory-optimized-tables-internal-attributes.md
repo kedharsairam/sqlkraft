@@ -1,8 +1,8 @@
 ---
-name: 'sys.memory_optimized_tables_internal_attributes'
-title: 'sys.memory_optimized_tables_internal_attributes'
-category: 'objects'
-description: 'To get more details about the memory consumption of off-row columns you can use the following query, which shows the memory consumption of all internal tables and their indexes that are used to store the off-row columns: Use the following query to show the memory consumption of columnstore indexes on'
+name: "sys.memory_optimized_tables_internal_attributes"
+title: "sys.memory_optimized_tables_internal_attributes"
+category: "objects"
+description: "To get more details about the memory consumption of off-row columns you can use the following query, which shows the memory consumption of all internal tables and their indexes that are used to store the off-row columns: Use the following query to show the memory consumption of columnstore indexes on"
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

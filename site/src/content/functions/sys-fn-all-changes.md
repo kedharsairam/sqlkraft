@@ -1,16 +1,16 @@
 ---
-name: 'sys.fn_all_changes_'
-title: 'sys.fn_all_changes_<capture_instance>'
-category: 'system'
-description: 'function serves as a wrapper for the query function. The stored procedure is used to generate the script to create the Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to'
+name: "sys.fn_all_changes_"
+title: "sys.fn_all_changes_<capture_instance>"
+category: "system"
+description: "function serves as a wrapper for the query function. The stored procedure is used to generate the script to create the Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to"
 tags: ["system", "function"]
 pubDate: 2026-05-29
-syntax: 'sys.sp_cdc_generate_wrapper_function'
+syntax: "sys.sp_cdc_generate_wrapper_function"
 ---
 
 ## Description
 
-function serves as a wrapper for the query function. The stored procedure is used to generate the script to create the Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to systematically query for changes that occurred within an interval bounded by values instead of by LSN values. The wrapper functions perform all the required conversions between the provided values and the LSN values needed internally as arguments to the query functions. When the wrapper functions are used serially to process a stream of change data, they ensure that no data is lost or repeated provided that the scripts for all of the wrapper functions for a schema's defined query functions. The template operation column, __CDC_OPERATION, which is a one- or two-character column that identifies
+function serves as a wrapper for the query function. The stored procedure is used to generate the script to create the Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to systematically query for changes that occurred within an interval bounded by values instead of by LSN values. The wrapper functions perform all the required conversions between the provided values and the LSN values needed internally as arguments to the query functions. When the wrapper functions are used serially to process a stream of change data, they ensure that no data is lost or repeated provided that the scripts for all of the wrapper functions for a schema's defined query functions. The template operation column, \_\_CDC_OPERATION, which is a one- or two-character column that identifies
 
 ## Syntax
 
@@ -64,9 +64,9 @@ bound is included.
 
 The result set that is returned by the
 
-wrapper function returns the __$start_lsn and
+wrapper function returns the \_\_$start_lsn and
 
-__$seqval columns of the change table as columns __CDC_STARTLSN and __CDC_SEQVAL,
+**$seqval columns of the change table as columns **CDC_STARTLSN and \_\_CDC_SEQVAL,
 
 respectively. It follows these with only those tracked columns that appeared in the
 
@@ -80,7 +80,7 @@ is NULL, all tracked
 
 source columns are returned. The source columns are followed by an operation column,
 
-__CDC_OPERATION, which is a one- or two-character column that identifies the operation.
+\_\_CDC_OPERATION, which is a one- or two-character column that identifies the operation.
 
 Bit flags are then appended to the result set for each column that is identified in the
 
@@ -88,7 +88,7 @@ Bit flags are then appended to the result set for each column that is identified
 
 wrapper, the bit flags will always be NULL if
 
-__CDC_OPERATION is 'D', 'I', or 'UO'. If __CDC_OPERATION is 'UN', the flag will be set to 1 or 0,
+**CDC_OPERATION is 'D', 'I', or 'UO'. If **CDC_OPERATION is 'UN', the flag will be set to 1 or 0,
 
 depending on whether the update operation caused a change to the column.
 
@@ -118,13 +118,13 @@ time of lowest LSN or highest LSN, then execution of these functions will return
 
 . This error should be handled by the developer.
 
-sys.fn_net_changes_<capture_instance>
+sys.fn*net_changes*<capture_instance>
 
 sys.sp_cdc_generate_wrapper_function (Transact-SQL)
 
-cdc.fn_cdc_get_all_changes_<capture_instance> (Transact-SQL)
+cdc.fn*cdc_get_all_changes*<capture_instance> (Transact-SQL)
 
-operation column, __CDC_OPERATION, which is a one- or two-character column that identifies
+operation column, \_\_CDC_OPERATION, which is a one- or two-character column that identifies
 
 the operation.
 
@@ -136,9 +136,9 @@ wrapper, the bit flags will always be NULL if the
 
 @row_filter_option that is used in the call to the wrapper function is 'all' or 'all with merge'. If
 
-the @row_filter_option is set to 'all with mask', and __CDC_OPERATION is 'D' or 'I', the value of
+the @row_filter_option is set to 'all with mask', and \_\_CDC_OPERATION is 'D' or 'I', the value of
 
-the flag will also be NULL. If __CDC_OPERATION is 'UN', the flag will be set to 1 or 0, depending
+the flag will also be NULL. If \_\_CDC_OPERATION is 'UN', the flag will be set to 1 or 0, depending
 
 on whether the
 
@@ -170,8 +170,8 @@ time of lowest LSN or highest LSN, then execution of these functions will return
 
 . This error should be handled by the developer.
 
-sys.fn_all_changes_<capture_instance>
+sys.fn*all_changes*<capture_instance>
 
 sys.sp_cdc_generate_wrapper_function (Transact-SQL)
 
-cdc.fn_cdc_get_net_changes_<capture_instance> (Transact-SQL)
+cdc.fn*cdc_get_net_changes*<capture_instance> (Transact-SQL)

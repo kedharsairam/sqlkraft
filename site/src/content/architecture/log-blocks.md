@@ -1,7 +1,7 @@
 ---
-title: 'Log blocks'
-topic: 'locking'
-description: 'Additionally, SQL Server can log a'
+title: "Log blocks"
+topic: "locking"
+description: "Additionally, SQL Server can log a"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

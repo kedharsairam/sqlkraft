@@ -1,8 +1,8 @@
 ---
-name: 'JSON functions'
-title: 'JSON functions'
-category: 'statements'
-description: 'SQL Server 2016 (13.x) and later versions'
+name: "JSON functions"
+title: "JSON functions"
+category: "statements"
+description: "SQL Server 2016 (13.x) and later versions"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -35,8 +35,8 @@ JSON data. Use JSON functions to validate or change JSON documents, or to extrac
 
 complex values.
 
-
 ## Description
+
 ISJSON
 
 Tests whether a string contains valid JSON.

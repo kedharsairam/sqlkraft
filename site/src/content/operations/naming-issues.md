@@ -3,21 +3,21 @@ title: "Naming issues"
 topic: "ssms"
 description: |
   Article
-  
+
   •
-  
+
   11/22/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   When you analyze the T-SQL code in your database project, one or more
 tags:
   - "ssms"
@@ -71,7 +71,7 @@ SR0011: Avoid using special characters in object names
 
 SR0012: Avoid using reserved words for type names
 
-SR0016: Avoid using sp_ as a prefix for stored procedures
+SR0016: Avoid using sp\_ as a prefix for stored procedures
 
 If you name a database object by using any character in the following table, you make it more
 

@@ -1,7 +1,7 @@
 ---
-title: 'Extents'
-topic: 'query-processing'
-description: 'The index key of a clustered index can''t contain'
+title: "Extents"
+topic: "query-processing"
+description: "The index key of a clustered index can't contain"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -3,15 +3,15 @@ title: "Naming Service Broker Objects"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes considerations for naming service broker objects. The conventions differ
-  
+
   slightly for public interface objects,
 tags:
   - "service-broker"

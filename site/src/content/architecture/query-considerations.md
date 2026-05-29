@@ -1,7 +1,7 @@
 ---
-title: 'Query considerations'
-topic: 'query-processing'
-description: '### sys.dm_db_index_usage_stats'
+title: "Query considerations"
+topic: "query-processing"
+description: "### sys.dm_db_index_usage_stats"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

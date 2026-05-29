@@ -3,17 +3,17 @@ title: "Getting started"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Depending on your scenario, you can either create new system-
 tags:
   - "tables"

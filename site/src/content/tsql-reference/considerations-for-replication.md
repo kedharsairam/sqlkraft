@@ -1,8 +1,8 @@
 ---
-name: 'Considerations for replication'
-title: 'Considerations for replication'
-category: 'statements'
-description: 'Under database compatibility level 110 and higher, any columns in remote tables of type'
+name: "Considerations for replication"
+title: "Considerations for replication"
+category: "statements"
+description: "Under database compatibility level 110 and higher, any columns in remote tables of type"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

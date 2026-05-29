@@ -3,15 +3,15 @@ title: "Create Nested Triggers"
 topic: "change-data-capture"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Both DML and DDL triggers are nested when a trigger performs an action that initiates another
 tags:
   - "change-data-capture"

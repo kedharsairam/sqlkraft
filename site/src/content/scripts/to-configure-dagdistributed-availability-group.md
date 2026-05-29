@@ -1,14 +1,14 @@
 ---
-name: 'To Configure DAG(Distributed Availability Group'
-title: 'To Configure DAG(Distributed Availability Group'
-description: 'Create Endpoints in all the Replicas and in all the Nodes With LISTENER_IP = ALL'
+name: "To Configure DAG(Distributed Availability Group"
+title: "To Configure DAG(Distributed Availability Group"
+description: "Create Endpoints in all the Replicas and in all the Nodes With LISTENER_IP = ALL"
 category: high-availability
 tags: ["availability-group", "configuration", "high-availability"]
 pubDate: 2025-03-15
 ---
 
 ```sql
---Create Endpoints in all the Replicas and in all the Nodes With LISTENER_IP = ALL 
+--Create Endpoints in all the Replicas and in all the Nodes With LISTENER_IP = ALL
 CREATE ENDPOINT [Hadr_endpoint]
 STATE=STARTED
 AS TCP (LISTENER_PORT = 5022, LISTENER_IP = ALL)
@@ -20,7 +20,7 @@ GO
 CREATE LOGIN [instance_name] FROM WINDOWS
 GRANT CONNECT ON ENDPOINT::[Hadr_endpoint] TO [instance_name]
 
---configure AG Between Node1 & Node2, 
+--configure AG Between Node1 & Node2,
 CREATE AVAILABILITY GROUP [AG1]
 FOR DATABASE AGDB1
 REPLICA ON N'Node1' WITH (ENDPOINT_URL = N'TCP://Node1.abc.com:5022',

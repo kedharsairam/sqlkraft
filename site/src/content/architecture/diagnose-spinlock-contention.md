@@ -1,7 +1,7 @@
 ---
-title: 'Diagnose spinlock contention'
-topic: 'locking'
-description: 'As stated previously spinlocks are most common on high concurrency systems that are under'
+title: "Diagnose spinlock contention"
+topic: "locking"
+description: "As stated previously spinlocks are most common on high concurrency systems that are under"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -16,8 +16,8 @@ Name resolution problems caused by a failure to fully qualify names of objects. 
 
 information, see
 
-
 ## Description of SQL Server blocking caused by compile locks
+
 . This specific
 
 issue is described in more detail within this article.

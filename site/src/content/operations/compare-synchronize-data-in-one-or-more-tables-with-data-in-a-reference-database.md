@@ -3,19 +3,19 @@ title: "Compare & Synchronize Data in One or More Tables with Data in a Referenc
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   You can compare the data in a
-  
+
   source
-  
+
   database and a
-  
+
   target
-  
+
   database and specify which tables
-  
+
   should be compared. The data can be reviewed to guide a decision about which changes to
-  
+
   s
 tags:
   - "ssb-diagnose"

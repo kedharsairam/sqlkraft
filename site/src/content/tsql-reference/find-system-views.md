@@ -1,8 +1,8 @@
 ---
-name: 'Find system views'
-title: 'Find system views'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Find system views"
+title: "Find system views"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

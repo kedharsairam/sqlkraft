@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_generatefilters'
-title: 'sp_generatefilters'
-category: 'general'
-description: 'Creates filters on foreign key tables when a specified table is replicated. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to be filtered.'
+name: "sys.sp_generatefilters"
+title: "sp_generatefilters"
+category: "general"
+description: "Creates filters on foreign key tables when a specified table is replicated. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to be filtered."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

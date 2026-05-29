@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_dropmergepublication'
-title: 'sp_dropmergepublication'
-category: 'general'
-description: 'Drops a merge publication and its associated Snapshot Agent. All subscriptions must be dropped before dropping a merge publication. The articles in the publication are dropped automatically. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to drop. existing merge publications are removed as well as the Snaps'
+name: "sys.sp_dropmergepublication"
+title: "sp_dropmergepublication"
+category: "general"
+description: "Drops a merge publication and its associated Snapshot Agent. All subscriptions must be dropped before dropping a merge publication. The articles in the publication are dropped automatically. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to drop. existing merge publications are removed as well as the Snaps"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

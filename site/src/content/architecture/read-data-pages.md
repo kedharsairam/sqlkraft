@@ -1,7 +1,7 @@
 ---
-title: 'Read data pages'
-topic: 'query-processing'
-description: 'Azure SQL Managed Instance'
+title: "Read data pages"
+topic: "query-processing"
+description: "Azure SQL Managed Instance"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

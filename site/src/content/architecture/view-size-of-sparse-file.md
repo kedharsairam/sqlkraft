@@ -3,18 +3,18 @@ title: "View size of sparse file"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to use Transact-SQL to verify that a SQL Server database file is a
-  
-  sparse file and to find out its actual and maximum sizes. 
+
+  sparse file and to find out its actual and maximum sizes.
 tags:
   - "collation"
   - "view-size-of-sparse-file"

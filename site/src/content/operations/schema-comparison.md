@@ -3,17 +3,17 @@ title: "Schema comparison"
 topic: "ssms"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The schema comparison tooling enables you to compare two database definitions, where the
-  
+
   sou
 tags:
   - "ssms"

@@ -3,11 +3,11 @@ title: "US Government region"
 topic: "azure-synapse"
 description: |
   SQL Server enabled by Azure Arc in US
-  
+
   This article describes features and limitations currently available for SQL Server enabled by
-  
+
   Azure Arc on US Government regions. It also:
-  
+
   Points to instructio
 tags:
   - "azure-synapse"

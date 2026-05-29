@@ -3,21 +3,21 @@ title: "Planned manual failover"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   09/04/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to perform a manual failover without data loss (a
-  
+
   planned manual
-  
+
   failover
-  
+
   ) on an Always On availability group by using SQL
 tags:
   - "high-availability"

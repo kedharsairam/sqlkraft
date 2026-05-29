@@ -3,17 +3,17 @@ title: "Host Protection Attributes"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The common language runtime (CLR) provides a mechanism to annotate managed application
-  
+
   programming interfaces (APIs) that are part of the .NET Framewo
 tags:
   - "clr-integration"

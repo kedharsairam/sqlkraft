@@ -1,8 +1,8 @@
 ---
-name: 'Examples'
-title: 'Examples'
-category: 'statements'
-description: 'To view the current setting for this setting, run the following query.'
+name: "Examples"
+title: "Examples"
+category: "statements"
+description: "To view the current setting for this setting, run the following query."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

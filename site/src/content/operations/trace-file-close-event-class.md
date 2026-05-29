@@ -3,25 +3,25 @@ title: "Trace File Close Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class indicates that a trace file has been closed during a trace file
-  
+
   rollover.
-  
+
   Descriptio
 tags:
   - "event-classes"

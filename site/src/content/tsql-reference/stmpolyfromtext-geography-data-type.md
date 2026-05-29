@@ -1,8 +1,8 @@
 ---
-name: 'STMPolyFromText (geography Data Type)'
-title: 'STMPolyFromText (geography Data Type)'
-category: 'data-types'
-description: '### geographyMultiPolygon'
+name: "STMPolyFromText (geography Data Type)"
+title: "STMPolyFromText (geography Data Type)"
+category: "data-types"
+description: "### geographyMultiPolygon"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

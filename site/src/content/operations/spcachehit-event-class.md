@@ -3,17 +3,17 @@ title: "SP:CacheHit Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The SP:CacheHit event class indicates that a stored procedure is in the plan cache.
-  
+
   Descript
 tags:
   - "event-classes"

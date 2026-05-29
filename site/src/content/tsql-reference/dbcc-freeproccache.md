@@ -1,8 +1,8 @@
 ---
-name: 'DBCC FREEPROCCACHE'
-title: 'DBCC FREEPROCCACHE'
-category: 'statements'
-description: '### sys.dm_exec_procedure_stats (Transact-SQL)'
+name: "DBCC FREEPROCCACHE"
+title: "DBCC FREEPROCCACHE"
+category: "statements"
+description: "### sys.dm_exec_procedure_stats (Transact-SQL)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

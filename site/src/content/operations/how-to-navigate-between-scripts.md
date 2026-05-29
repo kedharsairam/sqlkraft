@@ -3,9 +3,9 @@ title: "How to: Navigate Between Scripts"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   The Transact-SQL Editor for offline development provides two useful navigation tools that are
-  
+
   familiar to Visual Studio users: Go To Definition and Find All References. For example, you c
 tags:
   - "ssb-diagnose"

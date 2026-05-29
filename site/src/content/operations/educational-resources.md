@@ -3,15 +3,15 @@ title: "Educational resources"
 topic: "monitor"
 description: |
   Tutorials, quickstarts, and other educational resources meant to teach you to work with SQL
-  
+
   Server and Azure SQL Database.
-  
+
   ｄ
-  
+
   Azure SQL for beginners
-  
+
   Azure SQL fundamentals
-  
+
   Azure SQL hands-on labs
 tags:
   - "monitor"

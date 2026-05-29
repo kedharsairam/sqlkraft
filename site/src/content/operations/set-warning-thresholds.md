@@ -3,21 +3,21 @@ title: "Set Warning Thresholds"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Use this dialog box to enable and configure one or more warning thresholds for the database
-  
+
   selected in the navigation tree of the
-  
+
   dialog box.
-  
+
   The d
 tags:
   - "high-availability"
@@ -57,7 +57,7 @@ Name of a partner server instance in the form
 
 SYSTEM
 
-**\**
+\*\*\*\*
 
 INSTANCE_NAME
 

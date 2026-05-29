@@ -3,16 +3,16 @@ title: "Managing Forwarding (Service Broker)"
 topic: "service-broker"
 description: |
   09/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Message forwarding allows a SQL Server instance to forward Service Broker messages between
-  
-  two or more other instances of SQL Server. 
+
+  two or more other instances of SQL Server.
 tags:
   - "service-broker"
   - "managing-forwarding-service-broker"

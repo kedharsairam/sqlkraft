@@ -3,19 +3,19 @@ title: "SQL Server features"
 topic: "monitor"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   WideWorldImporters use of SQL Server features and capabilities in the OLTP database.
-  
+
   WideWorldImporters is designed to showcase ma
 tags:
   - "monitor"

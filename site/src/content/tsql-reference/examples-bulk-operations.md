@@ -1,8 +1,8 @@
 ---
-name: 'Examples: Bulk Operations'
-title: 'Examples: Bulk Operations'
-category: 'statements'
-description: 'For a more detailed example on how to access delta files stored on Azure Data Lake Gen2, see'
+name: "Examples: Bulk Operations"
+title: "Examples: Bulk Operations"
+category: "statements"
+description: "For a more detailed example on how to access delta files stored on Azure Data Lake Gen2, see"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

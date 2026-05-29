@@ -1,17 +1,17 @@
 ---
-name: '3079'
-title: 'Error 3079'
+name: "3079"
+title: "Error 3079"
 errorNumber: 3079
-severity: 'medium'
-category: 'io'
-description: 'Description device type. 3079 16 No Could not find the blob file %.*ls. Please make sure that the file name points to a valid blob file. 3080 16 No Invalid Backup Path. The length of the default backu'
+severity: "medium"
+category: "io"
+description: "Description device type. 3079 16 No Could not find the blob file %.*ls. Please make sure that the file name points to a valid blob file. 3080 16 No Invalid Backup Path. The length of the default backu"
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---
 
 ## Description
 
-Description device type. 3079 16 No Could not find the blob file %.*ls. Please make sure that the file name points to a valid blob file. 3080 16 No Invalid Backup Path. The length of the default backu
+Description device type. 3079 16 No Could not find the blob file %.\*ls. Please make sure that the file name points to a valid blob file. 3080 16 No Invalid Backup Path. The length of the default backu
 
 ## Severity
 
@@ -19,5 +19,4 @@ MEDIUM (Level N/A)
 
 ## Troubleshooting
 
-*(Diagnostic content pending full extraction)*
-
+_(Diagnostic content pending full extraction)_

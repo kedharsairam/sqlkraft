@@ -3,25 +3,25 @@ title: "DiagnosticInformation Element"
 topic: "ssb-diagnose"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   The
-  
+
   element contains all elements that report the diagnostic
-  
+
   information found by the utility.
-  
+
   is the root element of a
-  
+
   XML output file.
-  
+
   XML
-  
+
   Description
-  
+
   N/A
-  
+
   Descriptio
 tags:
   - "ssb-diagnose"

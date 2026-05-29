@@ -1,7 +1,7 @@
 ---
-name: 'To Add TDE Enabled Databases to Always on AG'
-title: 'To Add TDE Enabled Databases to Always on AG'
-description: 'Create Master Key in all Replicas'
+name: "To Add TDE Enabled Databases to Always on AG"
+title: "To Add TDE Enabled Databases to Always on AG"
+description: "Create Master Key in all Replicas"
 category: high-availability
 tags: ["database", "high-availability"]
 pubDate: 2025-03-15
@@ -16,7 +16,7 @@ GO
 
 --Create Database Encryption Certificate
 USE master;
-GO 
+GO
 CREATE CERTIFICATE Certificatename WITH SUBJECT='Certificatesubject';
 GO
 
@@ -53,7 +53,7 @@ DECRYPTION BY PASSWORD='[password]');
 USE [master]
 RESTORE DATABASE [databasename]
 FROM  DISK = N'path\filename.bak'
-WITH  FILE = 1,  
+WITH  FILE = 1,
 MOVE N'logicalfilename' TO N'path\filename.mdf',
 MOVE N'logicalfinename_log' TO N'path\filename_log.ldf',
 NOUNLOAD,  STATS = 5
@@ -69,7 +69,7 @@ CREATE AVAILABILITY GROUP [TDE] WITH (DB_FAILOVER = ON) FOR REPLICA ON
 --Join all the Secondary Replicas in Availability Group
 
 --Add TDE Enabled User Database to Availability Group in Primary Replica
-USE master 
+USE master
 GO
 ALTER AVAILABILITY GROUP TDE ADD DATABASE [Databasename]
 

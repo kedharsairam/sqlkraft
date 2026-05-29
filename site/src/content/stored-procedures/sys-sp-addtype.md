@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addtype'
-title: 'sp_addtype'
-category: 'general'
-description: 'Transact-SQL syntax conventions The name of the alias data type. Alias data type names must follow the rules for must be unique in each database. The physical, or SQL Server supplied, data type on which the alias data type is based. , with no default, and can be one of these values: This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, an'
+name: "sys.sp_addtype"
+title: "sp_addtype"
+category: "general"
+description: "Transact-SQL syntax conventions The name of the alias data type. Alias data type names must follow the rules for must be unique in each database. The physical, or SQL Server supplied, data type on which the alias data type is based. , with no default, and can be one of these values: This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, an"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

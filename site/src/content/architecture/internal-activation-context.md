@@ -3,17 +3,17 @@ title: "Internal Activation Context"
 topic: "service-broker"
 description: |
   09/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes the execution context for a stored procedure that is started by internal
-  
+
   activation.
-  
+
   A queue configured for ac
 tags:
   - "service-broker"

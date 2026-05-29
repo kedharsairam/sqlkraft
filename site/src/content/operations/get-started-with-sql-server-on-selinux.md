@@ -3,13 +3,13 @@ title: "Get started with SQL Server on SELinux"
 topic: "linux-operations"
 description: |
   This article helps you get started with SQL Server as a
-  
+
   confined service
-  
+
   on a Security-Enhanced
-  
+
   Linux (SELinux) distribution based on Red Hat Enterprise Linux (RHEL).
-  
+
   Security-Enhanced Linux (SELi
 tags:
   - "linux-operations"

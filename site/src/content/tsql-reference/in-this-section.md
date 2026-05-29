@@ -1,8 +1,8 @@
 ---
-name: 'In This Section'
-title: 'In This Section'
-category: 'predicates'
-description: 'Azure SQL Managed Instance'
+name: "In This Section"
+title: "In This Section"
+category: "predicates"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---
@@ -29,8 +29,8 @@ auxiliary RESTORE commands include: RESTORE FILELISTONLY, RESTORE HEADERONLY,
 
 RESTORE LABELONLY, RESTORE REWINDONLY, and RESTORE VERIFYONLY.
 
-
 ## Description
+
 RESTORE
 
 (Transact-SQL)
@@ -47,8 +47,8 @@ can also be used to revert a database to a database snapshot.
 
 RESTORE
 
-
 ## Arguments
+
 (Transact-SQL)
 
 Documents the arguments described in the "Syntax" sections of the RESTORE
@@ -85,8 +85,8 @@ Expand table
 
 #### Statement
 
-
 ## Description
+
 these six statements. The support for each argument is indicated in the description
 
 of the argument.

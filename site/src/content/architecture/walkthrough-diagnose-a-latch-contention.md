@@ -1,7 +1,7 @@
 ---
-title: 'Walkthrough: Diagnose a latch contention'
-topic: 'io-fundamentals'
-description: 'Allows the use of other partitioning features, such as archiving data using a sliding'
+title: "Walkthrough: Diagnose a latch contention"
+topic: "io-fundamentals"
+description: "Allows the use of other partitioning features, such as archiving data using a sliding"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

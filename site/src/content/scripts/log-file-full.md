@@ -1,7 +1,7 @@
 ---
-name: 'Log File Full'
-title: 'Log File Full'
-description: '1) Verify the space utilization of the log file'
+name: "Log File Full"
+title: "Log File Full"
+description: "1) Verify the space utilization of the log file"
 category: troubleshooting
 tags: ["troubleshooting"]
 pubDate: 2025-03-15
@@ -21,21 +21,21 @@ select name,log_reuse_wait_desc from sys.databases
 
 --Reuse of transaction log space is currently waiting on one of the following:
 --0 = Nothing
---1 = Checkpoint 
---2 = Log Backup 
+--1 = Checkpoint
+--2 = Log Backup
 --3 = Active backup or restore
 --4 = Active Transaction
 --5 = Database Mirroring
---6 = Replication 
---7 = Database snapshot creation 
+--6 = Replication
+--7 = Database snapshot creation
 --8 = Log Scan
 --9 = An Always On Availability Groups secondary replica is applying transaction log records of this database to a corresponding secondary database
 --9 = Other (Transient)
---10 = For internal use only 
---11 = For internal use only 
---12 = For internal use only 
---13 = Oldest page 
---14 = Other 
+--10 = For internal use only
+--11 = For internal use only
+--12 = For internal use only
+--13 = Oldest page
+--14 = Other
 --16 = XTP_CHECKPOINT (When a database uses a recovery model and has a memory-optimized data filegroup, you should expect to see the log_reuse_wait column indicate checkpoint or xtp_checkpoint)
 
 --If Log Backup is the reason
@@ -49,7 +49,7 @@ select name,log_reuse_wait_desc from sys.databases
 
 select * from sys.sysprocesses where dbid=<int>
 select * from sys.dm_exec_requests where database_id=<int> and session_id>50
-(or) 
+(or)
 DBCC OPENTRAN
 
 DBCC INPUTBUFFER(spid)
@@ -59,14 +59,14 @@ DBCC INPUTBUFFER(spid)
 --Inform application team to issue COMMIT for the uncommitted transactions.
 
 --If AG/Replication/Mirroring are the reasons
---6) Whether AG/Replication/DB Mirroring are enabled or not. 
+--6) Whether AG/Replication/DB Mirroring are enabled or not.
 --Troubleshoot AG/Replication/DB Mirroring.
 
 --In other cases (Special Cases)
 --7) If space is a constraint in L: drive, add another log file from different drive which has ample space.
 --Check if any log file truncation and shrink can be performed, it is always good to cleanup space in log file than adding new files.
 
---8) Change Recovery Model to Simple, then perform Shrink Operation. 
+--8) Change Recovery Model to Simple, then perform Shrink Operation.
 --If Log Shipping/Mirroring are enabled then disable them first and perform this operation.
 --Condition: After changing recovery model from Full to Simple and again to Full. Take a FULL Backup.
 
@@ -95,7 +95,7 @@ BACKUP LOG [DatabaseName] TO DISK = 'nul:'
 --If shrink is unsuccesful then find the transactions that are holding the log file. Never attempt to take a log backup in Simple Recovery Model. Adding a file is possible, if space is available.
 
 --Answer like this (Interviews - Special Case3):-
---Sometimes it is also possible that when log file is full and database is in Full Recovery model and when you check the reason it shows Replication. But replication was never configured on that database. Even if you try to take log backup, it will run but we cannot Shrink the log file? 
+--Sometimes it is also possible that when log file is full and database is in Full Recovery model and when you check the reason it shows Replication. But replication was never configured on that database. Even if you try to take log backup, it will run but we cannot Shrink the log file?
 
 --------------------------------------------------------------------------------------------------------
 --The Transaction log growth may occur because of the following reasons

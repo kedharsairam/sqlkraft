@@ -1,7 +1,7 @@
 ---
-name: 'To Generate Script to Failover Multiple Always'
-title: 'To Generate Script to Failover Multiple Always'
-description: 'SQL Server diagnostic script for high-availability operations.'
+name: "To Generate Script to Failover Multiple Always"
+title: "To Generate Script to Failover Multiple Always"
+description: "SQL Server diagnostic script for high-availability operations."
 category: high-availability
 tags: ["failover", "high-availability"]
 pubDate: 2025-03-15
@@ -13,7 +13,7 @@ SELECT 'ALTER AVAILABILITY GROUP',NAME + ' '+'FAILOVER' FROM
 FROM SYS.DM_HADR_AVAILABILITY_REPLICA_STATES AS ARS
 INNER JOIN SYS.AVAILABILITY_REPLICAS AS AR
     ON ARS.REPLICA_ID = AR.REPLICA_ID
-INNER JOIN SYS.AVAILABILITY_GROUPS AS AG 
+INNER JOIN SYS.AVAILABILITY_GROUPS AS AG
     ON ARS.GROUP_ID = AG.GROUP_ID
 WHERE ARS.ROLE_DESC = 'Primary' )  TEMP
 

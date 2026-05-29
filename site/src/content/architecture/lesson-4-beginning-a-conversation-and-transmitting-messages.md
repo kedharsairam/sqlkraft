@@ -3,15 +3,15 @@ title: "Lesson 4: Beginning a Conversation and Transmitting Messages"
 topic: "service-broker"
 description: |
   09/04/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   In this lesson, you learn to start a conversation that spans two databases in the same instance
-  
+
   of the Database Engine. You also learn
 tags:
   - "service-broker"

@@ -3,19 +3,19 @@ title: "Prepare MI link migration"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article helps you prepare your environment for a
-  
+
   Managed Instance link migration
-  
+
   of your
-  
+
   SQL Server instance enabled by Azure Arc to
-  
+
   Azure SQL Managed Instance
-  
+
   in th
 tags:
   - "azure-synapse"

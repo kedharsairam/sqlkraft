@@ -1,7 +1,7 @@
 ---
-name: 'To View List of Tables Participating in Replica'
-title: 'To View List of Tables Participating in Replica'
-description: 'SQL Server diagnostic script for replication operations.'
+name: "To View List of Tables Participating in Replica"
+title: "To View List of Tables Participating in Replica"
+description: "SQL Server diagnostic script for replication operations."
 category: replication
 tags: ["replication", "table"]
 pubDate: 2025-03-15

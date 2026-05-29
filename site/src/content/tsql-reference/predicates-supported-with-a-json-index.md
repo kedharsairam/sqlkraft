@@ -1,8 +1,8 @@
 ---
-name: 'Predicates supported with a JSON index'
-title: 'Predicates supported with a JSON index'
-category: 'queries'
-description: 'For a list of features supported by the editions of SQL Server on Windows, see:'
+name: "Predicates supported with a JSON index"
+title: "Predicates supported with a JSON index"
+category: "queries"
+description: "For a list of features supported by the editions of SQL Server on Windows, see:"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

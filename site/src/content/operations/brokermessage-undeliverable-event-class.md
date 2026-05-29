@@ -3,21 +3,21 @@ title: "Broker:Message Undeliverable Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   03/31/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server generates a
-  
+
   event when Service Broker is unable to
-  
+
   retain a received message that should have been delivered t
 tags:
   - "event-classes"

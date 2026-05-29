@@ -1,8 +1,8 @@
 ---
-name: 'sys.fn_hadr_backup_is_preferred_replica'
-title: 'sys.fn_hadr_backup_is_preferred_replica'
-category: 'backup-restore'
-description: 'Used to determine if the current replica is the preferred backup replica. Transact-SQL syntax conventions The name of the database to be backed up. is type sysname. Returns data type if the database on the current instance is on the preferred replica, For databases that aren''t part of an availability group, this function always returns If the specified database doesn''t exist, the function returns '
+name: "sys.fn_hadr_backup_is_preferred_replica"
+title: "sys.fn_hadr_backup_is_preferred_replica"
+category: "backup-restore"
+description: "Used to determine if the current replica is the preferred backup replica. Transact-SQL syntax conventions The name of the database to be backed up. is type sysname. Returns data type if the database on the current instance is on the preferred replica, For databases that aren't part of an availability group, this function always returns If the specified database doesn't exist, the function returns "
 tags: ["backup-restore", "function"]
 pubDate: 2026-05-29
 syntax: |

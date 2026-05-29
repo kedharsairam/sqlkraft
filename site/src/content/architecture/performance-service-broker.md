@@ -3,15 +3,15 @@ title: "Performance (Service Broker)"
 topic: "service-broker"
 description: |
   09/10/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   The performance of a Service Broker application is generally determined by two factors:
-  
+
   The number of messages arriving within a speci
 tags:
   - "service-broker"

@@ -3,10 +3,10 @@ title: "Use smart query builder"
 topic: "profiler"
 description: |
   Quickstart: Use the smart query builder
-  
+
   In this quickstart, you learn how the query building assistant helps you craft efficient, accurate,
-  
-  and secure queries using either raw SQL or your preferred 
+
+  and secure queries using either raw SQL or your preferred
 tags:
   - "profiler"
   - "use-smart-query-builder"

@@ -3,15 +3,15 @@ title: "Set up"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes the prerequisites and recommendations for setting up database mirroring.
-  
+
   For an introduction to database mirroring, see
-  
+
   Database Mirroring (SQL Server)
-  
+
 tags:
   - "high-availability"
   - "set-up"

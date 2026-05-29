@@ -1,7 +1,7 @@
 ---
-name: 'To Identify Deadlock'
-title: 'To Identify Deadlock'
-description: 'old method'
+name: "To Identify Deadlock"
+title: "To Identify Deadlock"
+description: "old method"
 category: performance
 tags: ["deadlock", "performance"]
 pubDate: 2025-03-15

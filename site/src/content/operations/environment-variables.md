@@ -3,15 +3,15 @@ title: "Environment variables"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   You can use several different environment variables to configure SQL Server on Linux. These
-  
+
   variables are used in two scenarios:
-  
+
   To configure initial setup with th
 tags:
   - "linux-operations"

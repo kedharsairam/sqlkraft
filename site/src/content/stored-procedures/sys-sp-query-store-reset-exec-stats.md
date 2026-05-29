@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_query_store_reset_exec_stats'
-title: 'sp_query_store_reset_exec_stats'
-category: 'general'
-description: 'SQL Server 2016 (13.x) and later versions Azure SQL Database SQL Managed Instance SQL database in Microsoft Fabric Clears the runtime stats for a specific query plan from the Query Store. Transact-SQL syntax conventions The ID of the query plan to be cleared. , with no default. Requires the ALTER permission on the database. Arguments for extended stored procedures must be entered in the specific o'
+name: "sys.sp_query_store_reset_exec_stats"
+title: "sp_query_store_reset_exec_stats"
+category: "general"
+description: "SQL Server 2016 (13.x) and later versions Azure SQL Database SQL Managed Instance SQL database in Microsoft Fabric Clears the runtime stats for a specific query plan from the Query Store. Transact-SQL syntax conventions The ID of the query plan to be cleared. , with no default. Requires the ALTER permission on the database. Arguments for extended stored procedures must be entered in the specific o"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

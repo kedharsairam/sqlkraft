@@ -1,8 +1,8 @@
 ---
-name: 'NULL and UNKNOWN'
-title: 'NULL and UNKNOWN'
-category: 'operators'
-description: ''
+name: "NULL and UNKNOWN"
+title: "NULL and UNKNOWN"
+category: "operators"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

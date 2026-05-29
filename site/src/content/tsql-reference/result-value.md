@@ -1,8 +1,8 @@
 ---
-name: 'Result value'
-title: 'Result value'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Result value"
+title: "Result value"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -21,8 +21,8 @@ Compares a scalar value with a single-column set of values. SOME and ANY are equ
 
 Transact-SQL syntax conventions
 
-
 ## syntaxsql
+
 scalar_expression
 
 Is any valid

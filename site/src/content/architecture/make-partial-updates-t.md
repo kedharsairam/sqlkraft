@@ -3,21 +3,21 @@ title: "Make Partial Updates t"
 topic: "filestream"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   An application uses FSCTL_SQL_FILESTREAM_FETCH_OLD_CONTENT to make partial updates to
-  
+
   FILESTREAM BLOB data. The
-  
+
   DeviceIoControl
-  
+
   function passes this
 tags:
   - "filestream"

@@ -3,17 +3,17 @@ title: "Failover Policy"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   In a SQL Server failover cluster instance (FCI), only one node can own the Windows Server
-  
+
   Failover Cluster (WSFC) cluster resource group at a given ti
 tags:
   - "high-availability"

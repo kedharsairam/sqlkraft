@@ -3,15 +3,15 @@ title: "Transmission Queue"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker uses a transmission queue as a holding area for messages. Each database
-  
+
   contains a separate transmission queue. The tra
 tags:
   - "service-broker"

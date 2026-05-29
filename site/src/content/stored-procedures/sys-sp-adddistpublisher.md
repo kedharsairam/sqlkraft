@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_adddistpublisher'
-title: 'sp_adddistpublisher'
-category: 'general'
-description: 'Configures a Publisher to use a specified distribution database. This stored procedure is executed at the Distributor on any database. The stored procedures must have been run prior to using this stored procedure. Transact-SQL syntax conventions Server name can be specified as for a named instance. Specify the port number for your connection when SQL Server is deployed on Linux or Windows with a c'
+name: "sys.sp_adddistpublisher"
+title: "sp_adddistpublisher"
+category: "general"
+description: "Configures a Publisher to use a specified distribution database. This stored procedure is executed at the Distributor on any database. The stored procedures must have been run prior to using this stored procedure. Transact-SQL syntax conventions Server name can be specified as for a named instance. Specify the port number for your connection when SQL Server is deployed on Linux or Windows with a c"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

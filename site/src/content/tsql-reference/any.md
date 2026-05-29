@@ -1,8 +1,8 @@
 ---
-name: 'ANY'
-title: 'ANY'
-category: 'predicates'
-description: 'Azure SQL Managed Instance'
+name: "ANY"
+title: "ANY"
+category: "predicates"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

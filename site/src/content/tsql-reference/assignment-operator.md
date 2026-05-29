@@ -1,8 +1,8 @@
 ---
-name: '= (Assignment Operator)'
-title: '= (Assignment Operator)'
-category: 'operators'
-description: 'Azure SQL Managed Instance'
+name: "= (Assignment Operator)"
+title: "= (Assignment Operator)"
+category: "operators"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

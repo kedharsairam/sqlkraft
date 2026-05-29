@@ -1,8 +1,8 @@
 ---
-name: 'SET STATISTICS TIME'
-title: 'SET STATISTICS TIME'
-category: 'statements'
-description: 'For Transact-SQL statements that do not produce STATISTICS PROFILE result sets, only the'
+name: "SET STATISTICS TIME"
+title: "SET STATISTICS TIME"
+category: "statements"
+description: "For Transact-SQL statements that do not produce STATISTICS PROFILE result sets, only the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

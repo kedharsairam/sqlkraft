@@ -3,17 +3,17 @@ title: "DDL Triggers"
 topic: "change-data-capture"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   DDL triggers fire in response to various Data Definition Language (DDL) events. These events
-  
+
 tags:
   - "change-data-capture"
   - "ddl-triggers"

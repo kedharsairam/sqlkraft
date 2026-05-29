@@ -3,19 +3,19 @@ title: "Monitor"
 topic: "tables"
 description: |
   Article
-  
+
   •
-  
+
   02/04/2025
-  
+
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later
-  
+
   Azure SQL Managed Instance
-  
+
   You can use existing views to track detailed and summarized memory consumption for every
-  
+
   system-vers
 tags:
   - "tables"

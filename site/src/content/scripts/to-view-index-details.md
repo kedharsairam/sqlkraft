@@ -1,7 +1,7 @@
 ---
-name: 'To View Index Details'
-title: 'To View Index Details'
-description: 'SQL Server diagnostic script for index-maintenance operations.'
+name: "To View Index Details"
+title: "To View Index Details"
+description: "SQL Server diagnostic script for index-maintenance operations."
 category: index-maintenance
 tags: ["index-maintenance", "indexing"]
 pubDate: 2025-03-15
@@ -26,7 +26,7 @@ SELECT
 	ROUND ([ips].[avg_fragmentation_in_percent], 2) AS [Fragmentation],
 	[ips].[page_count] AS [Pages],
 	ROUND ([ips].[avg_page_space_used_in_percent], 2) AS [Page Density]
-FROM sys.dm_db_index_physical_stats 
+FROM sys.dm_db_index_physical_stats
 (DB_ID (N'databasename'), NULL, NULL, NULL, N'DETAILED') [ips]
 CROSS APPLY [sys].[indexes] [si]
 WHERE

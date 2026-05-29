@@ -3,22 +3,22 @@ title: "Transaction Promotion"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Transaction
-  
+
   promotion
-  
+
   describes a lightweight, local transaction that can be automatically
-  
-  promoted to a fully distributable transaction as needed. 
+
+  promoted to a fully distributable transaction as needed.
 tags:
   - "clr-integration"
   - "transaction-promotion"

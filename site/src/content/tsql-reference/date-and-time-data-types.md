@@ -1,8 +1,8 @@
 ---
-name: 'Date and time data types'
-title: 'Date and time data types'
-category: 'data-types'
-description: 'Summarize this article for me'
+name: "Date and time data types"
+title: "Date and time data types"
+category: "data-types"
+description: "Summarize this article for me"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -33,8 +33,8 @@ SQL database in Microsoft Fabric
 
 The sections in this article cover all Transact-SQL date and time data types and functions, including usage and
 
-
 ## examples.
+
 The following table lists the Transact-SQL date and time data types.
 
 Data type

@@ -3,15 +3,15 @@ title: "Enable & disable"
 topic: "high-availability"
 description: |
   ﾃ
-  
+
   Summarize this article for me
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Before you can create and configure an Always On availability group, you must enable the
-  
+
   Always On availability groups feature on each insta
 tags:
   - "high-availability"

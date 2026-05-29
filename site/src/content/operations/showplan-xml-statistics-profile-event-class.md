@@ -3,18 +3,17 @@ title: "Showplan XML Statistics Profile Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Showplan XML Statistics Profile event class occurs when Microsoft SQL Server executes a
-  
-  
+
 tags:
   - "event-classes"
   - "showplan-xml-statistics-profile-event-class"

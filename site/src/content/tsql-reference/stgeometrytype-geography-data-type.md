@@ -1,8 +1,8 @@
 ---
-name: 'STGeometryType (geography Data Type)'
-title: 'STGeometryType (geography Data Type)'
-category: 'data-types'
-description: '### GeometryCollection'
+name: "STGeometryType (geography Data Type)"
+title: "STGeometryType (geography Data Type)"
+category: "data-types"
+description: "### GeometryCollection"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

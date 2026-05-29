@@ -1,7 +1,7 @@
 ---
-title: 'Key-range lock modes'
-topic: 'locking'
-description: 'Key-range locks protect a range of rows implicitly included in a record set being read by a'
+title: "Key-range lock modes"
+topic: "locking"
+description: "Key-range locks protect a range of rows implicitly included in a record set being read by a"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -86,8 +86,8 @@ K
 
 .
 
-
 ## Description
+
 Shared range, shared resource lock;
 
 range scan.

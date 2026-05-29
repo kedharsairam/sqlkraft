@@ -1,7 +1,7 @@
 ---
-title: 'Lock escalation with mixed lock types'
-topic: 'locking'
-description: 'and at least 5,000 row locks in the clustered index for'
+title: "Lock escalation with mixed lock types"
+topic: "locking"
+description: "and at least 5,000 row locks in the clustered index for"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

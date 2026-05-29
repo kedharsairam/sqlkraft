@@ -3,21 +3,21 @@ title: "Deploy and connect to containers"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article explains how to deploy and connect to SQL Server Linux containers.
-  
+
   For other deployment scenarios, see:
-  
+
   Windows
-  
+
   Linux
-  
+
   Container cluster on Azure
-  
+
   Th
 tags:
   - "linux-operations"

@@ -3,13 +3,13 @@ title: "Storage, kernel, CPU, and network best practices"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article covers operating system and hardware configuration recommendations to maximize
-  
+
   performance for SQL Server on Linux, including storage, kernel, CPU, and
 tags:
   - "linux-operations"

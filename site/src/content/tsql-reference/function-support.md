@@ -1,8 +1,8 @@
 ---
-name: 'Function support'
-title: 'Function support'
-category: 'statements'
-description: 'data type must be a JSON object or a JSON array. Scalars, booleans, and'
+name: "Function support"
+title: "Function support"
+category: "statements"
+description: "data type must be a JSON object or a JSON array. Scalars, booleans, and"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
-title: 'Lock granularity and hierarchies'
-topic: 'locking'
-description: 'Locking is a mechanism used by the Database Engine to synchronize access by multiple users to'
+title: "Lock granularity and hierarchies"
+topic: "locking"
+description: "Locking is a mechanism used by the Database Engine to synchronize access by multiple users to"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -108,8 +108,8 @@ acquire shared locks on rows and intent shared locks on the pages and table.
 
 The following table shows the resources that the Database Engine can lock.
 
-
 ## Description
+
 A row identifier used to lock a single row within a heap.
 
 A row lock to lock a single row in a B-tree index.

@@ -1,7 +1,7 @@
 ---
-name: 'To View List of Memory Clerks'
-title: 'To View List of Memory Clerks'
-description: 'SQL Server diagnostic script for architecture operations.'
+name: "To View List of Memory Clerks"
+title: "To View List of Memory Clerks"
+description: "SQL Server diagnostic script for architecture operations."
 category: architecture
 tags: ["architecture", "memory"]
 pubDate: 2025-03-15

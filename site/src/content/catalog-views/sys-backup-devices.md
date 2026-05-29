@@ -1,8 +1,8 @@
 ---
-name: 'sys.backup_devices'
-title: 'sys.backup_devices'
-category: 'compatibility'
-description: '105 = A permanent backup device. All permanent device names and device numbers can be Physical block size used to write the media family. Can be Mirror number (0-3). RESTORE VERIFYONLY FROM WITH LOADHISTORY populates the columns of the table with the appropriate values from the media-set header. To reduce the number of rows in this table and in other backup and history tables, execute the sp_delet'
+name: "sys.backup_devices"
+title: "sys.backup_devices"
+category: "compatibility"
+description: "105 = A permanent backup device. All permanent device names and device numbers can be Physical block size used to write the media family. Can be Mirror number (0-3). RESTORE VERIFYONLY FROM WITH LOADHISTORY populates the columns of the table with the appropriate values from the media-set header. To reduce the number of rows in this table and in other backup and history tables, execute the sp_delet"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |
@@ -93,7 +93,7 @@ Korean_Wansung_Unico
 
 Lithuanian_Classic
 
-SQL_AltDiction_CP1253_
+SQL*AltDiction_CP1253*
 
 These collations exist in SQL Server 2005 (9.x)
 

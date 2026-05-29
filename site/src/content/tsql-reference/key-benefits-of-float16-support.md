@@ -1,8 +1,8 @@
 ---
-name: 'Key benefits of float16 support'
-title: 'Key benefits of float16 support'
-category: 'statements'
-description: 'SQL Server 2025 (17.x)'
+name: "Key benefits of float16 support"
+title: "Key benefits of float16 support"
+category: "statements"
+description: "SQL Server 2025 (17.x)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

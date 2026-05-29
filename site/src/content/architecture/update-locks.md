@@ -1,7 +1,7 @@
 ---
-title: 'Update locks'
-topic: 'locking'
-description: 'Additional locking resources are available for'
+title: "Update locks"
+topic: "locking"
+description: "Additional locking resources are available for"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -20,8 +20,8 @@ resources can be accessed by concurrent transactions.
 
 The following table shows the resource lock modes that the Database Engine uses.
 
-
 ## Description
+
 Used for read operations that don't change or update data, such as a
 
 statement.

@@ -1,17 +1,17 @@
 ---
-name: '7641'
-title: 'Error 7641'
+name: "7641"
+title: "Error 7641"
 errorNumber: 7641
-severity: 'medium'
-category: 'io'
-description: 'Description 7641 16 No Full-Text catalog ''%ls'' does not exist in database ''%.*ls'' or user does not have permission to perform this action. 7642 16 No A full-text catalog named ''%ls'' already exists in '
+severity: "medium"
+category: "io"
+description: "Description 7641 16 No Full-Text catalog '%ls' does not exist in database '%.*ls' or user does not have permission to perform this action. 7642 16 No A full-text catalog named '%ls' already exists in "
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---
 
 ## Description
 
-Description 7641 16 No Full-Text catalog '%ls' does not exist in database '%.*ls' or user does not have permission to perform this action. 7642 16 No A full-text catalog named '%ls' already exists in 
+Description 7641 16 No Full-Text catalog '%ls' does not exist in database '%.\*ls' or user does not have permission to perform this action. 7642 16 No A full-text catalog named '%ls' already exists in
 
 ## Severity
 
@@ -19,5 +19,4 @@ MEDIUM (Level N/A)
 
 ## Troubleshooting
 
-*(Diagnostic content pending full extraction)*
-
+_(Diagnostic content pending full extraction)_

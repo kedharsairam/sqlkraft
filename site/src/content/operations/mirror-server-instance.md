@@ -3,17 +3,17 @@ title: "Mirror Server Instance"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   11/25/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Use this page to specify information about the server instance with the mirror database.
-  
+
   Establish a Database Mirroring Session Using Windows Authenti
 tags:
   - "high-availability"

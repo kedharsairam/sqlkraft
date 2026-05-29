@@ -1,7 +1,7 @@
 ---
-title: 'Schedule of parallel tasks'
-topic: 'thread-task'
-description: '### AdventureWorks2016_EXT sample'
+title: "Schedule of parallel tasks"
+topic: "thread-task"
+description: "### AdventureWorks2016_EXT sample"
 tags: ["thread-task", "architecture"]
 pubDate: 2026-05-29
 ---

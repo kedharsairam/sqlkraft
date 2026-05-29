@@ -1,8 +1,8 @@
 ---
-name: 'Angle conversion'
-title: 'Angle conversion'
-category: 'statements'
-description: 'This group provides the elementary trigonometric functions that compute ratios of a right'
+name: "Angle conversion"
+title: "Angle conversion"
+category: "statements"
+description: "This group provides the elementary trigonometric functions that compute ratios of a right"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -15,8 +15,8 @@ geometric computation, spatial transformations, data analysis, and simulation mo
 
 require angle-based calculations.
 
-
 ## Description
+
 SIN
 
 Sine of the specified angle.
@@ -41,8 +41,8 @@ them in navigation, geospatial analytics, error-vector calculations, and any sce
 
 compute direction or orientation from component values.
 
-
 ## Description
+
 ASIN
 
 Angle (in radians) whose sine is the given value (arcsine).

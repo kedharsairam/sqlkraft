@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_help_log_shipping_primary_secondary'
-title: 'sp_help_log_shipping_primary_secondary'
-category: 'general'
-description: 'This stored procedure returns information regarding all the secondary databases for a given Transact-SQL syntax conventions The name of the database on the primary server. The name of the secondary instance of the SQL Server Database Engine in the log'
+name: "sys.sp_help_log_shipping_primary_secondary"
+title: "sp_help_log_shipping_primary_secondary"
+category: "general"
+description: "This stored procedure returns information regarding all the secondary databases for a given Transact-SQL syntax conventions The name of the database on the primary server. The name of the secondary instance of the SQL Server Database Engine in the log"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_droplogin'
-title: 'sp_droplogin'
-category: 'general'
-description: 'Removes a SQL Server login, which prevents access to an instance of SQL Server under that Transact-SQL syntax conventions The login to be removed. , with no default. exist in SQL Server. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.'
+name: "sys.sp_droplogin"
+title: "sp_droplogin"
+category: "general"
+description: "Removes a SQL Server login, which prevents access to an instance of SQL Server under that Transact-SQL syntax conventions The login to be removed. , with no default. exist in SQL Server. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

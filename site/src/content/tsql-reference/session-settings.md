@@ -1,8 +1,8 @@
 ---
-name: 'Session settings'
-title: 'Session settings'
-category: 'statements'
-description: 'Data Manipulation Language (DML) affect the information stored in the database. Use these'
+name: "Session settings"
+title: "Session settings"
+category: "statements"
+description: "Data Manipulation Language (DML) affect the information stored in the database. Use these"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -23,8 +23,8 @@ UPDATE
 
 MERGE
 
-
 ## Permissions statements determine which users and logins can access data and perform
+
 operations. For more information about authentication and access, see the
 
 Security center

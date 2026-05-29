@@ -3,9 +3,9 @@ title: "How to: Outline & Add Snippets to T-SQL Script"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   SQL Server Data Tools includes a code library consisting of code snippets that are ready to be
-  
+
   inserted in your application. Each snippet performs a complete scripting task such as creati
 tags:
   - "ssb-diagnose"

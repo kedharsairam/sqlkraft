@@ -3,17 +3,17 @@ title: "LocalDB API sample"
 topic: "clr-integration"
 description: |
   SQL Server Express LocalDB reference
-  
+
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This section contains information about the SQL Server Express LocalDB:
-  
+
   SQL Server Express LocalDB error messages
-  
+
   SQL Serve
 tags:
   - "clr-integration"

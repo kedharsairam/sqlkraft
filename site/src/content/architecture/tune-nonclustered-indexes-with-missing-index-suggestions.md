@@ -3,17 +3,17 @@ title: "Tune nonclustered indexes with missing index suggestions"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The missing indexes feature is a lightweight tool for finding missing indexes that might
-  
+
   sig
 tags:
   - "filestream"

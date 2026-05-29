@@ -1,7 +1,7 @@
 ---
-title: 'Degree of parallelism (DOP)'
-topic: 'query-processing'
-description: 'The serial execution plan is trivial, or does not exceed the cost threshold for parallelism'
+title: "Degree of parallelism (DOP)"
+topic: "query-processing"
+description: "The serial execution plan is trivial, or does not exceed the cost threshold for parallelism"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_dropmergefilter'
-title: 'sp_dropmergefilter'
-category: 'general'
-description: 'drops all the merge filter columns defined on the merge filter that is to be dropped. This stored procedure is executed at the Publisher on the Transact-SQL syntax conventions The name of the filter to be dropped.'
+name: "sys.sp_dropmergefilter"
+title: "sp_dropmergefilter"
+category: "general"
+description: "drops all the merge filter columns defined on the merge filter that is to be dropped. This stored procedure is executed at the Publisher on the Transact-SQL syntax conventions The name of the filter to be dropped."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

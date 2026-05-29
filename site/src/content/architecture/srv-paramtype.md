@@ -3,19 +3,19 @@ title: "srv_paramtype"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Returns the data type of a remote stored procedure call parameter.
-  
+
   srvproc
-  
+
   Is a pointer to the SRV_PROC structure that is the handle for a particular
 tags:
   - "clr-integration"

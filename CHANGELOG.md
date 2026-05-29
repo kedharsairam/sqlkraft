@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.11.0] — 2026-05-29
+
+### Added
+
+- **Category-tailored section architecture** — Five flat-list index pages (dmvs, catalog-views, stored-procedures, functions, errors) now group content into semantic categorical sections with jump-nav pill bars: dmvs (12 categories), catalog-views (4), stored-procedures (10), functions (7), errors (5 severities). Each section has scroll-linked heading with border-bottom divider and `scroll-margin-top: 72px`
+- **Multi-column compact card grid** — All 10 index page card grids changed from `clamp(300px, 30vw, 480px)` to `clamp(240px, 18vw, 320px)` enabling 3–4 columns on 1080p displays; grid gap reduced from `clamp(10px, 1.5vw, 18px)` to `clamp(8px, 1vw, 14px)`
+- **Severity-colored error badges** — Error index cards display inline severity badge with color-coded border/background per critical/high/medium/low/info classification using `SEVERITY_COLORS` map
+
+### Changed
+
+- **Global link color unified** — All `a { color: var(--accent) }` links changed to `var(--text-primary)` in BaseLayout; breadcrumb/detail-footer links use `var(--text-secondary)`; cat-badge background `rgba(47, 128, 237, 0.12)` → `rgba(255, 255, 255, 0.06)`, color `var(--accent)` → `var(--text-secondary)`; `:not(pre) > code` color from `var(--accent)` → `#e6edf3`; detail-title accent → `var(--text-primary)`
+- **Section-jump pill links** — Category jump nav uses `var(--text-secondary)` with border-glass border, hover transitions to `var(--text-primary)` and white border — clean neutral interaction model replacing blue accent pills
+- **Category badges removed from section-grouped pages** — Since category is now the section heading, per-card `.cat-badge` is redundant and removed from dmvs, catalog-views, stored-procedures, functions, errors index cards
+
+### Fixed
+
+- **Orphaned template code in section-grouped pages** — Removed dangling HTML/JSX remnants from old template in `errors/index.astro`, `functions/index.astro`, `dmvs/index.astro`, and `stored-procedures/index.astro` that were causing build-time compilation errors (`category is not defined`)
+- **Errors index breadcrumb link color** — Changed from `var(--accent)` to `var(--text-secondary)` for neutral link consistency
+
 ## [0.10.0] — 2026-05-29
 
 ### Removed

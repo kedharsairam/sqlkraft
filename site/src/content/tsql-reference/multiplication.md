@@ -1,8 +1,8 @@
 ---
-name: '* (Multiplication)'
-title: '* (Multiplication)'
-category: 'operators'
-description: ''
+name: "* (Multiplication)"
+title: "* (Multiplication)"
+category: "operators"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

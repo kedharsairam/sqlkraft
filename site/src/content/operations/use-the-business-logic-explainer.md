@@ -3,9 +3,9 @@ title: "Use the business logic explainer"
 topic: "profiler"
 description: |
   Quickstart: Use the business logic explainer
-  
+
   In this quickstart, you learn how the business logic explainer helps developers understand and
-  
+
   work with complex application logic implemented in SQL, ob
 tags:
   - "profiler"

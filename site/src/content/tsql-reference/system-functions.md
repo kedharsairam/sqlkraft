@@ -1,8 +1,8 @@
 ---
-name: 'System Functions'
-title: 'System Functions'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "System Functions"
+title: "System Functions"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'datetimeoffset description'
-title: 'datetimeoffset description'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "datetimeoffset description"
+title: "datetimeoffset description"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

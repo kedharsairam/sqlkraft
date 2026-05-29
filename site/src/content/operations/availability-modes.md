@@ -3,17 +3,17 @@ title: "Availability modes"
 topic: "high-availability"
 description: |
   06/26/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   In Always On availability groups, the
-  
+
   availability mode
-  
+
   is a replica property that determines
-  
+
   whether a given availability replica can run in synchronous-commit
 tags:
   - "high-availability"

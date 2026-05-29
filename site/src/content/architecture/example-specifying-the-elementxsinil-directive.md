@@ -3,18 +3,17 @@ title: "Example: Specifying the ELEMENTXSINIL Directive"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   When you specify the ELEMENT directive to retrieve element-centric XML, if the column has a
-  
-  
+
 tags:
   - "xml-data"
   - "example-specifying-the-elementxsinil-directive"

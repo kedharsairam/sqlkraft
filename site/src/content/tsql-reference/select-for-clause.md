@@ -1,10 +1,10 @@
 ---
-name: 'SELECT - FOR clause'
-title: 'SELECT - FOR clause'
-category: 'queries'
-description: ''
+name: "SELECT - FOR clause"
+title: "SELECT - FOR clause"
+category: "queries"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

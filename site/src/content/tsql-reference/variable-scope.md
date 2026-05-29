@@ -1,8 +1,8 @@
 ---
-name: 'Variable scope'
-title: 'Variable scope'
-category: 'variables'
-description: 'To declare more than one local variable, use a comma after the first local variable definition,'
+name: "Variable scope"
+title: "Variable scope"
+category: "variables"
+description: "To declare more than one local variable, use a comma after the first local variable definition,"
 tags: ["tsql", "variables"]
 pubDate: 2026-05-29
 ---

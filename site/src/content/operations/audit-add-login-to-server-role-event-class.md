@@ -3,23 +3,23 @@ title: "Audit Add Login to Server Role Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class occurs whenever a login is added or removed
-  
+
   from a fixed server role. This event clas
 tags:
   - "event-classes"

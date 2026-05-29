@@ -1,7 +1,7 @@
 ---
-title: 'Diagnostic walkthrough'
-topic: 'query-processing'
-description: 'sys.dm_os_spinlock_stats'
+title: "Diagnostic walkthrough"
+topic: "query-processing"
+description: "sys.dm_os_spinlock_stats"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

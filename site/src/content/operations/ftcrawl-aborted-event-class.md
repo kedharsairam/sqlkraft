@@ -3,24 +3,24 @@ title: "FT:Crawl Aborted Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class indicates that an exception has been encountered during a
-  
-  full-text crawl. The error 
+
+  full-text crawl. The error
 tags:
   - "event-classes"
   - "ftcrawl-aborted-event-class"

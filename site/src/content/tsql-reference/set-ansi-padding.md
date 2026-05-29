@@ -1,8 +1,8 @@
 ---
-name: 'SET ANSI_PADDING'
-title: 'SET ANSI_PADDING'
-category: 'statements'
-description: '### Deprecated Database Engine features in SQL'
+name: "SET ANSI_PADDING"
+title: "SET ANSI_PADDING"
+category: "statements"
+description: "### Deprecated Database Engine features in SQL"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

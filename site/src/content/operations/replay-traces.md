@@ -3,15 +3,15 @@ title: "Replay Traces"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Replay is the ability to reproduce activity that has been captured in a trace. When you create or
-  
+
   edit a trace, you can save the trace
 tags:
   - "profiler"

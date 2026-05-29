@@ -3,17 +3,17 @@ title: "Enable"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This article describes how to enable a disabled index in SQL Server by using SQL Server
-  
+
   Mana
 tags:
   - "filestream"

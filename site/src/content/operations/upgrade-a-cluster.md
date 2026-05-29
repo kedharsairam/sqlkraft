@@ -3,15 +3,15 @@ title: "Upgrade a cluster"
 topic: "high-availability"
 description: |
   ﾃ
-  
+
   Summarize this article for me
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   SQL Server supports upgrading a failover cluster to a new version of SQL Server, to a new SQL
-  
+
   Server service pack or cumulative update, or w
 tags:
   - "high-availability"

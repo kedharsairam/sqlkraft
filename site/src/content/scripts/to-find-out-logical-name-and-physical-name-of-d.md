@@ -1,7 +1,7 @@
 ---
-name: 'To Find out Logical Name and Physical Name of D'
-title: 'To Find out Logical Name and Physical Name of D'
-description: 'for a specific database'
+name: "To Find out Logical Name and Physical Name of D"
+title: "To Find out Logical Name and Physical Name of D"
+description: "for a specific database"
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

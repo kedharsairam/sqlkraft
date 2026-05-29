@@ -3,15 +3,15 @@ title: "Install and connect (Red Hat)"
 topic: "linux-operations"
 description: |
   Quickstart: Install SQL Server and create a
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   In this quickstart, you install SQL Server 2025 (17.x) on Red Hat Enterprise Linux (RHEL) 9.x or 10.x.
-  
+
   Then you connect
 tags:
   - "linux-operations"

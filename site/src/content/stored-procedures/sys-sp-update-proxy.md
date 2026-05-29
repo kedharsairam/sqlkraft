@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_update_proxy'
-title: 'sp_update_proxy'
-category: 'general'
-description: 'Defines attributes of a SQL Server Agent proxy account. This table is stored in the ID of the proxy account. Name of the proxy account. ID of the credential that the proxy account uses. Status of the proxy account: Description that the user entered when the proxy account was Microsoft Windows security_identifier of the user or group associated with the proxy credential at the time the proxy is add'
+name: "sys.sp_update_proxy"
+title: "sp_update_proxy"
+category: "general"
+description: "Defines attributes of a SQL Server Agent proxy account. This table is stored in the ID of the proxy account. Name of the proxy account. ID of the credential that the proxy account uses. Status of the proxy account: Description that the user entered when the proxy account was Microsoft Windows security_identifier of the user or group associated with the proxy credential at the time the proxy is add"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -3,15 +3,15 @@ title: "Described"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   An index is an on-disk structure associated with a table or view that speeds retrieval of row
 tags:
   - "filestream"

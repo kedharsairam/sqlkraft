@@ -3,11 +3,11 @@ title: "Connect when machine already connected to Azure"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article explains how to connect your SQL Server instance to Azure Arc on an Arc-enabled
-  
+
   server. For example, you need to use this method to connect a SQL Server instance
 tags:
   - "azure-synapse"

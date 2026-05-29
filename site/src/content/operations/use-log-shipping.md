@@ -3,13 +3,13 @@ title: "Use log shipping"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   Log shipping is a SQL Server high availability (HA) configuration where a database from a
-  
+
   primary server is replicated onto one or more secondary servers. Log shipp
 tags:
   - "linux-operations"

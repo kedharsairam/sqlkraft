@@ -3,23 +3,23 @@ title: "srv_pfield"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/17/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Returns information about a database connection.
-  
+
   srvproc
-  
+
   Pointer identifying a database connection.
-  
+
   field
-  
+
   Specifies data on the connection to retur
 tags:
   - "clr-integration"

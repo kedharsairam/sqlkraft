@@ -1,8 +1,8 @@
 ---
-name: 'SET FMTONLY'
-title: 'SET FMTONLY'
-category: 'statements'
-description: '### sp_describe_first_result_set (Transact-SQL)'
+name: "SET FMTONLY"
+title: "SET FMTONLY"
+category: "statements"
+description: "### sp_describe_first_result_set (Transact-SQL)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

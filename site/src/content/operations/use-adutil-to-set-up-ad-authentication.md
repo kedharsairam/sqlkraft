@@ -3,16 +3,16 @@ title: "Use adutil to set up AD Authentication"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This tutorial explains how to configure Windows Active Directory authentication for SQL Server
-  
+
   on Linux using
-  
-  . For another method of configuring Active Directory 
+
+  . For another method of configuring Active Directory
 tags:
   - "linux-operations"
   - "use-adutil-to-set-up-ad-authentication"

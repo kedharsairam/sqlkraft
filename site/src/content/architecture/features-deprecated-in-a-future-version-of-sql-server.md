@@ -1,7 +1,7 @@
 ---
-title: 'Features deprecated in a future version of SQL Server'
-topic: 'io-fundamentals'
-description: 'Compatibility Level as long as possible, to make the'
+title: "Features deprecated in a future version of SQL Server"
+topic: "io-fundamentals"
+description: "Compatibility Level as long as possible, to make the"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -210,7 +210,7 @@ ALTER INDEX
 
 .
 
-sys.sp_db_selective_xml_
+sys.sp*db_selective_xml*
 
 Backup and
 
@@ -268,7 +268,7 @@ Korean_Wansung_Unico
 
 Lithuanian_Classic
 
-SQL_AltDiction_CP1253_
+SQL*AltDiction_CP1253*
 
 Collations
 
@@ -334,8 +334,8 @@ Data types
 
 timestamp
 
-
 ## syntax for
+
 rowversion
 
 data type
@@ -710,8 +710,8 @@ Index options
 
 , or
 
-
 ## syntax without parentheses
+
 around the options.
 
 Rewrite the statement to use the current syntax.
@@ -848,14 +848,14 @@ Security
 
 The
 
-
 ## syntax
+
 Replaced by the new
 
 and
 
-
 ## syntax
+
 Security
 
 Security
@@ -908,12 +908,12 @@ that was correct in SQL Server 2000 (8.x). The
 
 output doesn't reflect changes to the
 
-
 ## permissions hierarchy implemented in SQL
+
 Server 2008 (10.0.x). For more information, see
 
-
 ## Permissions of Fixed Server Roles
+
 .
 
 Security
@@ -928,14 +928,14 @@ ALL Permission
 
 Security
 
-
 ## PERMISSIONS intrinsic function
+
 Query
 
 instead.
 
-
 ## PERMISSIONS
+
 Security
 
 SETUSER
@@ -1448,14 +1448,14 @@ Transact-SQL
 
 table_name.index_name
 
-
 ## syntax in
+
 index_name
 
 table_name
 
-
 ## syntax in
+
 .
 
 with two-pa
@@ -1536,11 +1536,11 @@ Multiple table hints with
 
 Transact-SQL
 
-The select list of an aggregate indexed view must contain COUNT_BIG (*) in
+The select list of an aggregate indexed view must contain COUNT_BIG (\*) in
 
 90 compatibility mode
 
-Use COUNT_BIG (*).
+Use COUNT_BIG (\*).
 
 Index view select list wit
 
@@ -1556,8 +1556,8 @@ Indirect TVF hints
 
 Transact-SQL
 
-
 ## syntax:
+
 Category
 
 Deprecated feature

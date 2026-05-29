@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_help_agent_parameter'
-title: 'sp_help_agent_parameter'
-category: 'general'
-description: 'Returns all the parameters of a profile from the procedure is executed at the Distributor where the agent is running, on any database. Transact-SQL syntax conventions The ID of the profile from the , which returns all parameters.'
+name: "sys.sp_help_agent_parameter"
+title: "sp_help_agent_parameter"
+category: "general"
+description: "Returns all the parameters of a profile from the procedure is executed at the Distributor where the agent is running, on any database. Transact-SQL syntax conventions The ID of the profile from the , which returns all parameters."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

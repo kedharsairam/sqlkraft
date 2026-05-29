@@ -1,8 +1,8 @@
 ---
-name: 'sys.fn_helpcollations'
-title: 'sys.fn_helpcollations'
-category: 'system'
-description: 'To list the SQL Server collations supported by your server, execute the following query. CREATE DATABASE DECLARE @local_variable sys.fn_helpcollations Last updated on 11/18/2025 For Sort Order ID 80, use any of the Window collations with the code page of 1250, and binary order. For example: Albanian_BIN, Croatian_BIN, Czech_BIN, Romanian_BIN, Slovak_BIN, Slovenian_BIN.'
+name: "sys.fn_helpcollations"
+title: "sys.fn_helpcollations"
+category: "system"
+description: "To list the SQL Server collations supported by your server, execute the following query. CREATE DATABASE DECLARE @local_variable sys.fn_helpcollations Last updated on 11/18/2025 For Sort Order ID 80, use any of the Window collations with the code page of 1250, and binary order. For example: Albanian_BIN, Croatian_BIN, Czech_BIN, Romanian_BIN, Slovak_BIN, Slovenian_BIN."
 tags: ["system", "function"]
 pubDate: 2026-05-29
 syntax: |

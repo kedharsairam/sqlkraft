@@ -1,7 +1,7 @@
 ---
-title: 'Mechanical hard drives'
-topic: 'query-processing'
-description: 'Other drive implementations, such as IDE, ATA, and SATA:'
+title: "Mechanical hard drives"
+topic: "query-processing"
+description: "Other drive implementations, such as IDE, ATA, and SATA:"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

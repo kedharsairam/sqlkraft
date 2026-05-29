@@ -1,10 +1,10 @@
 ---
-name: 'Replicate schema changes'
-title: 'Replicate schema changes'
-category: 'statements'
-description: ''
+name: "Replicate schema changes"
+title: "Replicate schema changes"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

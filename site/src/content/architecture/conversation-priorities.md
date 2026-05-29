@@ -3,15 +3,15 @@ title: "Conversation Priorities"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Conversation priorities are a set of user-defined rules, each of which specifies a priority level
-  
+
   and the criteria for determining whi
 tags:
   - "service-broker"

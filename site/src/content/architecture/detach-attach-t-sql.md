@@ -3,17 +3,17 @@ title: "Detach & attach (T-SQL)"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   08/10/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to move a detached database to another location and re-attach it to
-  
+
   the same or a different server instance in SQL Server. Ho
 tags:
   - "collation"

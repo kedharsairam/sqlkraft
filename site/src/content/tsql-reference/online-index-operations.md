@@ -1,8 +1,8 @@
 ---
-name: 'Online index operations'
-title: 'Online index operations'
-category: 'queries'
-description: 'is specified when the row or page lock options are set, the settings are applied to all'
+name: "Online index operations"
+title: "Online index operations"
+category: "queries"
+description: "is specified when the row or page lock options are set, the settings are applied to all"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
@@ -147,9 +147,9 @@ decide when the build for a paused index can be resumed. The
 
 in minutes for
 
-must be greater than 0 minutes and less than or equal to one week (7 *
+must be greater than 0 minutes and less than or equal to one week (7 \*
 
-24 * 60 = 10080 minutes). A long pause in an index operation might noticeably impact
+24 \* 60 = 10080 minutes). A long pause in an index operation might noticeably impact
 
 the DML performance on a specific table as well as the database disk capacity since
 

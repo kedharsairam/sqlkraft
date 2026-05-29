@@ -1,11 +1,11 @@
 ---
-name: 'sys.syslanguages'
-title: 'sys.syslanguages'
-category: 'compatibility'
-description: 'Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains one row for each language present in the instance of SQL Server. for Tuesday, and so on, through Official language name, for example, Alternative language name, for example, Comma-separated list of full-length month names in order from January through December, with each name having up to 20 characters. Comma-separated list '
+name: "sys.syslanguages"
+title: "sys.syslanguages"
+category: "compatibility"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains one row for each language present in the instance of SQL Server. for Tuesday, and so on, through Official language name, for example, Alternative language name, for example, Comma-separated list of full-length month names in order from January through December, with each name having up to 20 characters. Comma-separated list "
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'SELECT * from dbo.syslanguages;'
+syntax: "SELECT * from dbo.syslanguages;"
 ---
 
 ## Description

@@ -1,11 +1,11 @@
 ---
-name: 'sys.dm_os_latch_stats'
-title: 'sys.dm_os_latch_stats'
-category: 'os'
-description: 'Analytics Platform System (PDW) Returns information about all latch waits organized by class. Number of waits on latches in this class. This counter is incremented at the start of a latch wait. Total wait time, in milliseconds, on latches in this class. This column is updated every five minutes during a latch wait and at the end of a latch wait. Maximum time a memory object has waited on this latc'
+name: "sys.dm_os_latch_stats"
+title: "sys.dm_os_latch_stats"
+category: "os"
+description: "Analytics Platform System (PDW) Returns information about all latch waits organized by class. Number of waits on latches in this class. This counter is incremented at the start of a latch wait. Total wait time, in milliseconds, on latches in this class. This column is updated every five minutes during a latch wait and at the end of a latch wait. Maximum time a memory object has waited on this latc"
 tags: ["os", "dmv"]
 pubDate: 2026-05-29
-syntax: '##MS_ServerStateReader##'
+syntax: "##MS_ServerStateReader##"
 ---
 
 ## Description

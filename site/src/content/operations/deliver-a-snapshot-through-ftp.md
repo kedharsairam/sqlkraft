@@ -3,19 +3,19 @@ title: "Deliver a snapshot through FTP"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   09/27/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to deliver a snapshot through FTP in SQL Server by using SQL Server
-  
+
   Management Studio or Transact-SQL.
-  
+
   By default, snapshots
 tags:
   - "migration"

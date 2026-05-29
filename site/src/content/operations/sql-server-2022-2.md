@@ -3,15 +3,15 @@ title: "SQL Server 2022"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article provides details of features supported by the various editions of SQL Server 2022
-  
+
   (16.x) on Linux.
-  
+
   For editions and supported features of SQL Server o
 tags:
   - "linux-operations"

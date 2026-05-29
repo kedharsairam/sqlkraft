@@ -3,15 +3,15 @@ title: "Managing Conversation Priorities"
 topic: "service-broker"
 description: |
   09/10/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker conversation priorities let you specify which conversations to prioritize so that
-  
+
   their messages aren't blocked by larg
 tags:
   - "service-broker"

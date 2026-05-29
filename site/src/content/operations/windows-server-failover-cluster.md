@@ -3,19 +3,19 @@ title: "Windows Server failover cluster"
 topic: "high-availability"
 description: |
   SQL Server
-  
+
   Article
-  
+
   •
-  
+
   09/29/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article provides an overview of using a Windows Server Failover Cluster (WSFC) with SQL
-  
+
   Server for high availability and disaster rec
 tags:
   - "high-availability"

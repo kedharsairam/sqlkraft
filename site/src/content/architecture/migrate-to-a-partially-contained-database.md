@@ -3,19 +3,19 @@ title: "Migrate to a partially contained database"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic discusses how to prepare to change to the partially contained database model and
-  
+
   then provides the migration steps.
-  
+
   Preparing to Migrate a
 tags:
   - "collation"

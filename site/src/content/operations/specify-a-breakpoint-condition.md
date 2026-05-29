@@ -3,13 +3,13 @@ title: "Specify a Breakpoint Condition"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   A breakpoint condition is a Transact-SQL expression that the debugger evaluates when the
-  
+
   breakpoint is reached. If the condition is satisfied and any specified hi
 tags:
   - "ssb-diagnose"

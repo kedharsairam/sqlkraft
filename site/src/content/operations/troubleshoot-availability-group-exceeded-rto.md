@@ -3,18 +3,18 @@ title: "Troubleshoot: Availability group exceeded RTO"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   After an automatic failover or a planned manual failover without data loss on an availability
-  
-  group, you may find that the failover time exceeds your 
+
+  group, you may find that the failover time exceeds your
 tags:
   - "high-availability"
   - "troubleshoot-availability-group-exceeded-rto"

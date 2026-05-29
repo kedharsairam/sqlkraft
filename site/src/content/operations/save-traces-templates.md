@@ -3,15 +3,15 @@ title: "Save traces & templates"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   It's important to distinguish saving trace files from saving trace templates. Saving a trace file
-  
+
   involves saving the captured event d
 tags:
   - "profiler"
@@ -61,7 +61,7 @@ trace table.
 
 When you use a trace file, SQL Server Profiler saves captured event data (not trace definitions)
 
-to a SQL Server Profiler Trace (*.trc) file. The extension is added to the end of the file
+to a SQL Server Profiler Trace (\*.trc) file. The extension is added to the end of the file
 
 automatically when the trace file is saved, regardless of any other specified extension. For
 

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_change_log_shipping_secondary_primary'
-title: 'sp_change_log_shipping_secondary_primary'
-category: 'general'
-description: 'Changes secondary database settings. Transact-SQL syntax conventions The name of the primary instance of the SQL Server Database Engine in the log shipping The name of the database on the primary server.'
+name: "sys.sp_change_log_shipping_secondary_primary"
+title: "sp_change_log_shipping_secondary_primary"
+category: "general"
+description: "Changes secondary database settings. Transact-SQL syntax conventions The name of the primary instance of the SQL Server Database Engine in the log shipping The name of the database on the primary server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

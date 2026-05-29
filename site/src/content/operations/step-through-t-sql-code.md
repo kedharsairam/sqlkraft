@@ -3,13 +3,13 @@ title: "Step Through T-SQL Code"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The Transact-SQL debugger enables you to control which Transact-SQL statements are run in a
-  
+
   Database Engine Query Editor window. You can pause the debugger on ind
 tags:
   - "ssb-diagnose"

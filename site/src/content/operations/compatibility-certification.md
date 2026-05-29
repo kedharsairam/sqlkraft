@@ -3,17 +3,17 @@ title: "Compatibility Certification"
 topic: "upgrade"
 description: |
   06/16/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Compatibility certification allows businesses to upgrade and modernize a SQL Server database
-  
+
   on-premises, in the c
 tags:
   - "upgrade"

@@ -1,7 +1,7 @@
 ---
-name: 'To Generate Script to Attach and Detach all Dat'
-title: 'To Generate Script to Attach and Detach all Dat'
-description: 'Generate the Attach and Detach Script'
+name: "To Generate Script to Attach and Detach all Dat"
+title: "To Generate Script to Attach and Detach all Dat"
+description: "Generate the Attach and Detach Script"
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

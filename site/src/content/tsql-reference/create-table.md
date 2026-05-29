@@ -1,8 +1,8 @@
 ---
-name: 'CREATE TABLE'
-title: 'CREATE TABLE'
-category: 'statements'
-description: '### CREATE TABLE (Fabric Data'
+name: "CREATE TABLE"
+title: "CREATE TABLE"
+category: "statements"
+description: "### CREATE TABLE (Fabric Data"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

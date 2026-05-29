@@ -3,12 +3,12 @@ title: "Add database objects using item templates"
 topic: "profiler"
 description: |
   ﾃ
-  
+
   Summarize this article for me
-  
+
   Use the SQL Database Projects extension for Visual Studio Code to add common database
-  
-  objects to your project using item templates. Item templates generate properly 
+
+  objects to your project using item templates. Item templates generate properly
 tags:
   - "profiler"
   - "add-database-objects-using-item-templates"

@@ -3,26 +3,26 @@ title: "Availability replica is not joined"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   : Availability Replica Join State
-  
+
   : Availability Replica is not joined.
-  
+
   :
-  
+
   Warning
-  
+
   : Availability replica
-  
-  This policy checks the join state of the 
+
+  This policy checks the join state of the
 tags:
   - "high-availability"
   - "availability-replica-is-not-joined"

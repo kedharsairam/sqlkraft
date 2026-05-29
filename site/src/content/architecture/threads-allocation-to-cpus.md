@@ -1,7 +1,7 @@
 ---
-title: 'Threads allocation to CPUs'
-topic: 'thread-task'
-description: 'A worker thread can only remain active in the scheduler during its quantum (4 ms) and must'
+title: "Threads allocation to CPUs"
+topic: "thread-task"
+description: "A worker thread can only remain active in the scheduler during its quantum (4 ms) and must"
 tags: ["thread-task", "architecture"]
 pubDate: 2026-05-29
 ---

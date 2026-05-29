@@ -1,8 +1,8 @@
 ---
-name: 'Singleton checks'
-title: 'Singleton checks'
-category: 'statements'
-description: 'When reporting errors,'
+name: "Singleton checks"
+title: "Singleton checks"
+category: "statements"
+description: "When reporting errors,"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

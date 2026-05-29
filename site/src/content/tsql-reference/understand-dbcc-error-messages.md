@@ -1,8 +1,8 @@
 ---
-name: 'Understand DBCC error messages'
-title: 'Understand DBCC error messages'
-category: 'statements'
-description: 'command finishes, a message is written to the SQL Server error log.'
+name: "Understand DBCC error messages"
+title: "Understand DBCC error messages"
+category: "statements"
+description: "command finishes, a message is written to the SQL Server error log."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -21,8 +21,8 @@ value, and the amount of time the command ran. The following table lists and des
 
 state values that can be included in the message.
 
-
 ## Description
+
 0
 
 Error number 8930 was raised. This indicates a metadata corruption that caused the DBCC

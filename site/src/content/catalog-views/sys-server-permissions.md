@@ -1,8 +1,8 @@
 ---
-name: 'sys.server_permissions'
-title: 'sys.server_permissions'
-category: 'security'
-description: 'Returns one row for each server-level permission. Identifies class of thing on which permission exists. Description of class on which permission exists. One of the ID of the securable on which permission exists, interpreted according to class. For most, this is just the kind of ID that applies to what the class represents. Interpretation for non-standard is as Secondary ID of thing on which permis'
+name: "sys.server_permissions"
+title: "sys.server_permissions"
+category: "security"
+description: "Returns one row for each server-level permission. Identifies class of thing on which permission exists. Description of class on which permission exists. One of the ID of the securable on which permission exists, interpreted according to class. For most, this is just the kind of ID that applies to what the class represents. Interpretation for non-standard is as Secondary ID of thing on which permis"
 tags: ["security", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,7 +1,7 @@
 ---
-name: 'To Add Article in Replication'
-title: 'To Add Article in Replication'
-description: '1. first add the table to the publication and then disable the settings'
+name: "To Add Article in Replication"
+title: "To Add Article in Replication"
+description: "1. first add the table to the publication and then disable the settings"
 category: replication
 tags: ["replication"]
 pubDate: 2025-03-15

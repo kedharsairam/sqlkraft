@@ -3,19 +3,19 @@ title: "Modified Features"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   04/15/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   The following features have been modified to be supported by a partially contained database.
-  
+
   Features are usually modified
 tags:
   - "collation"

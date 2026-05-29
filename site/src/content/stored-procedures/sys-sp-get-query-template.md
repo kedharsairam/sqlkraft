@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_get_query_template'
-title: 'sp_get_query_template'
-category: 'general'
-description: 'Returns the parameterized form of a query. The results returned mimic the parameterized form of a query that results from using forced parameterization. Transact-SQL syntax conventions The query for which the parameterized version is to be generated. , and must be enclosed in single quotation marks and be preceded by the , provided as indicated, to receive the Arguments for extended stored procedu'
+name: "sys.sp_get_query_template"
+title: "sp_get_query_template"
+category: "general"
+description: "Returns the parameterized form of a query. The results returned mimic the parameterized form of a query that results from using forced parameterization. Transact-SQL syntax conventions The query for which the parameterized version is to be generated. , and must be enclosed in single quotation marks and be preceded by the , provided as indicated, to receive the Arguments for extended stored procedu"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_get_query_template'
+syntax: "sp_get_query_template"
 ---
 
 ## Description

@@ -3,17 +3,17 @@ title: "QN:Dynamics Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The QN:Dynamics event class reports information about the background activity that the
-  
+
   Datab
 tags:
   - "event-classes"

@@ -3,18 +3,18 @@ title: "LocalDBShareInstance"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Shares the specified SQL Server Express LocalDB instance with other users of the computer,
-  
+
   using the specified shared name.
-  
+
   C++
-  
-  [Input] The SID of the instance 
+
+  [Input] The SID of the instance
 tags:
   - "clr-integration"
   - "localdbshareinstance"

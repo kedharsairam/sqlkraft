@@ -1,8 +1,8 @@
 ---
-name: 'Reserved keywords'
-title: 'Reserved keywords'
-category: 'statements'
-description: 'This behavior is applicable only when'
+name: "Reserved keywords"
+title: "Reserved keywords"
+category: "statements"
+description: "This behavior is applicable only when"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

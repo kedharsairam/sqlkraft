@@ -1,7 +1,7 @@
 ---
-name: 'To Deal with Endpoints'
-title: 'To Deal with Endpoints'
-description: 'to see the list of endpoints'
+name: "To Deal with Endpoints"
+title: "To Deal with Endpoints"
+description: "to see the list of endpoints"
 category: general
 tags: ["general"]
 pubDate: 2025-03-15
@@ -24,7 +24,7 @@ grant connect on endpoint :: endpointname to loginname
 --to grant connect to everyone
 grant connect on endpoint :: [tsql default tcp] to [public]
 
---to revoke connect 
+--to revoke connect
 revoke connect on endpoint :: endpointname to loginname
 
 --to change the status of endpoint

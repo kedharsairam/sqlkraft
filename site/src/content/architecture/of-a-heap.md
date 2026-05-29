@@ -3,21 +3,21 @@ title: "Of a heap"
 topic: "collation"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL database in Microsoft
-  
+
   Fabric
-  
+
   You can use the following steps to
 tags:
   - "collation"
@@ -71,7 +71,7 @@ Calculate its size:
 
 = 2 + ((
 
-+ 7) / 8)
+- 7. / 8)
 
 Only the integer part of this expression should be used. Discard any remainder.
 

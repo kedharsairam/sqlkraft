@@ -3,17 +3,17 @@ title: "Example: Specifying the CDATA Directive"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   If the directive is set to
-  
+
   , the contained data isn't entity encoded, but is put in the CDAT
 tags:
   - "xml-data"

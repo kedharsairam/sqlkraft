@@ -1,8 +1,8 @@
 ---
-name: 'sys.syspermissions'
-title: 'sys.syspermissions'
-category: 'security'
-description: 'Contains information about permissions granted and denied to users, groups, and roles in the ID of the object for object permissions. ID of the user, group, or role affected by the permission. ID of the user, group, or role that granted or denied the permission. Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. Identified for informational purposes '
+name: "sys.syspermissions"
+title: "sys.syspermissions"
+category: "security"
+description: "Contains information about permissions granted and denied to users, groups, and roles in the ID of the object for object permissions. ID of the user, group, or role affected by the permission. ID of the user, group, or role that granted or denied the permission. Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. Identified for informational purposes "
 tags: ["security", "catalog-view"]
 pubDate: 2026-05-29
 ---

@@ -3,15 +3,15 @@ title: "Understanding Collation and Service Broker"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker is designed to let services and applications communicate easily and efficiently in
-  
+
   instances with different collation c
 tags:
   - "service-broker"

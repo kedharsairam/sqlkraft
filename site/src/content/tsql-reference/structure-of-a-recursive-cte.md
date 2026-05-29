@@ -1,8 +1,8 @@
 ---
-name: 'Structure of a recursive CTE'
-title: 'Structure of a recursive CTE'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Structure of a recursive CTE"
+title: "Structure of a recursive CTE"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
-title: 'Server Configuration Options'
-topic: 'io-fundamentals'
-description: 'A master key must exist and password must be correct.'
+title: "Server Configuration Options"
+topic: "io-fundamentals"
+description: "A master key must exist and password must be correct."
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -38,8 +38,8 @@ the permissions hierarchy implemented in SQL Server 2008.
 
 For more information, see
 
-
 ## Permissions of Fixed Server Roles
+
 .
 
 ,
@@ -50,14 +50,14 @@ For more information, see
 
 ALL Permission
 
-
 ## PERMISSIONS intrinsic function
+
 Query
 
 instead.
 
-
 ## PERMISSIONS
+
 SETUSER
 
 SETUSER

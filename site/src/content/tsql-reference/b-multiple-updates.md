@@ -1,8 +1,8 @@
 ---
-name: 'B. Multiple updates'
-title: 'B. Multiple updates'
-category: 'statements'
-description: 'Here''s the result set.'
+name: "B. Multiple updates"
+title: "B. Multiple updates"
+category: "statements"
+description: "Here's the result set."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

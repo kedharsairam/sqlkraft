@@ -3,19 +3,19 @@ title: "User-Defined Data Types (UDT)"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   doesn't support common language runtime (CLR) user-defined data types (UDTs).
-  
+
   To use
-  
+
   with C
 tags:
   - "xml-data"

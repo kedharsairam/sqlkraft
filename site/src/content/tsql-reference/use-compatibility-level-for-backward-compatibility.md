@@ -1,8 +1,8 @@
 ---
-name: 'Use compatibility level for backward compatibility'
-title: 'Use compatibility level for backward compatibility'
-category: 'statements'
-description: 'When a stored procedure executes, it uses the current compatibility level of the database in'
+name: "Use compatibility level for backward compatibility"
+title: "Use compatibility level for backward compatibility"
+category: "statements"
+description: "When a stored procedure executes, it uses the current compatibility level of the database in"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -49,8 +49,8 @@ For more information, including the recommended workflow for upgrading database
 
 compatibility level, see
 
-
 ## Best Practices for upgrading database compatibility level
+
 .
 
 functionality introduced in a given SQL Server version is

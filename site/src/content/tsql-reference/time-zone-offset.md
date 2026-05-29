@@ -1,8 +1,8 @@
 ---
-name: 'Time zone offset'
-title: 'Time zone offset'
-category: 'data-types'
-description: 'doesn''t allow addition for a'
+name: "Time zone offset"
+title: "Time zone offset"
+category: "data-types"
+description: "doesn't allow addition for a"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

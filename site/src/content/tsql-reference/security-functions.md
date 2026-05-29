@@ -1,8 +1,8 @@
 ---
-name: 'Security Functions'
-title: 'Security Functions'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Security Functions"
+title: "Security Functions"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -77,8 +77,8 @@ USER_NAME (Transact-SQL)
 
 ORIGINAL_LOGIN (Transact-SQL)
 
-
 ## PERMISSIONS (Transact-SQL)
+
 For information about membership in Windows groups, see
 
 xp_logininfo (Transact-SQL)

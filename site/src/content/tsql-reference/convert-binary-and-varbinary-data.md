@@ -1,8 +1,8 @@
 ---
-name: 'Convert binary and varbinary data'
-title: 'Convert binary and varbinary data'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "Convert binary and varbinary data"
+title: "Convert binary and varbinary data"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -55,7 +55,7 @@ indicates that the
 
 maximum storage size is 2^31-1 bytes. The storage size is the actual length of the data entered
 
-+ 2 bytes. The data that is entered can be 0 bytes in length. The ANSI SQL synonym for
+- 2 bytes. The data that is entered can be 0 bytes in length. The ANSI SQL synonym for
 
 is
 

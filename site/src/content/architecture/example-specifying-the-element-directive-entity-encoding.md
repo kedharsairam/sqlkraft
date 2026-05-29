@@ -3,21 +3,21 @@ title: "Example: Specifying the ELEMENT Directive & Entity Encoding"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This example illustrates the difference between the
-  
+
   and
-  
+
   directives. The
-  
+
   directive entitize
 tags:
   - "xml-data"

@@ -1,10 +1,10 @@
 ---
-name: 'SELECT - INTO clause'
-title: 'SELECT - INTO clause'
-category: 'queries'
-description: ''
+name: "SELECT - INTO clause"
+title: "SELECT - INTO clause"
+category: "queries"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

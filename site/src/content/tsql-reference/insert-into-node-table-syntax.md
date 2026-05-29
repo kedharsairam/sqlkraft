@@ -1,8 +1,8 @@
 ---
-name: 'INSERT Into node table syntax'
-title: 'INSERT Into node table syntax'
-category: 'queries'
-description: 'SQL Server 2017 (14.x) and later versions'
+name: "INSERT Into node table syntax"
+title: "INSERT Into node table syntax"
+category: "queries"
+description: "SQL Server 2017 (14.x) and later versions"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
@@ -29,8 +29,8 @@ Transact-SQL syntax conventions
 
 The syntax for inserting into a Node table is the same as for a regular table.
 
-
 ## syntaxsql
+
 ```sql
 node
 ```

@@ -1,7 +1,7 @@
 ---
-name: 'To Find Missing Index Queries in Plan Cache'
-title: 'To Find Missing Index Queries in Plan Cache'
-description: 'SQL Server diagnostic script for index-maintenance operations.'
+name: "To Find Missing Index Queries in Plan Cache"
+title: "To Find Missing Index Queries in Plan Cache"
+description: "SQL Server diagnostic script for index-maintenance operations."
 category: index-maintenance
 tags: ["cache", "index-maintenance", "indexing"]
 pubDate: 2025-03-15
@@ -10,7 +10,7 @@ pubDate: 2025-03-15
 ```sql
 WITH XMLNAMESPACES
    (DEFAULT 'http://schemas.microsoft.com/sqlserver/2004/07/showplan')
- 
+
 SELECT query_plan,
        n.value('(@StatementText)[1]', 'VARCHAR(4000)') AS sql_text,
        n.value('(//MissingIndexGroup/@Impact)[1]', 'FLOAT') AS impact,
@@ -53,15 +53,15 @@ FROM
 ) AS tab (query_plan)
 CROSS APPLY query_plan.nodes('[path]') AS q(n)
 WHERE n.exist('QueryPlan/MissingIndexes') = 1;
- 
+
 -- Trim trailing comma from lists
 UPDATE #MissingIndexInfo
 SET equality_columns = LEFT(equality_columns,LEN(equality_columns)-1),
    inequality_columns = LEFT(inequality_columns,LEN(inequality_columns)-1),
    include_columns = LEFT(include_columns,LEN(include_columns)-1);
- 
+
 SELECT *
 FROM #MissingIndexInfo;
- 
+
 DROP TABLE #MissingIndexInfo;
 ```

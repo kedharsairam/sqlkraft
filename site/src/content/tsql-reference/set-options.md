@@ -1,8 +1,8 @@
 ---
-name: 'Set options'
-title: 'Set options'
-category: 'statements'
-description: 'Disabling an index prevents user access to the index, and for clustered indexes, to the'
+name: "Set options"
+title: "Set options"
+category: "statements"
+description: "Disabling an index prevents user access to the index, and for clustered indexes, to the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -3,23 +3,23 @@ title: "LineString"
 topic: "spatial-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL analytics endpoint in Microsoft Fabric
-  
+
   Warehouse in Microsoft Fabric
-  
+
   SQL
-  
+
   database in Microsoft Fabric
-  
+
   A
-  
+
   is a one-dimen
 tags:
   - "spatial-data"

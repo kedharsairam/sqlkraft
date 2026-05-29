@@ -1,7 +1,7 @@
 ---
-title: 'Symptoms and causes of spinlock contention'
-topic: 'locking'
-description: 'This article provides in-depth information on how to identify and resolve issues related to'
+title: "Symptoms and causes of spinlock contention"
+topic: "locking"
+description: "This article provides in-depth information on how to identify and resolve issues related to"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

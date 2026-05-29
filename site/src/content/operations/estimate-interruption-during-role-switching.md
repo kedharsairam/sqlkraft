@@ -3,17 +3,17 @@ title: "Estimate interruption during role switching"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   During a role switch, the amount of time that database mirroring will be out of service depends
-  
+
   on the type of role switching and the cause of the rol
 tags:
   - "high-availability"

@@ -3,17 +3,17 @@ title: "Register Mirrored Database"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Use this dialog box to register one or more mirrored databases on a given server instance by
-  
+
   adding the database or databases to the Database Mirrorin
 tags:
   - "high-availability"

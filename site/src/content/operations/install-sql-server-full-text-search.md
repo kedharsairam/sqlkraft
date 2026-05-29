@@ -3,19 +3,19 @@ title: "Install SQL Server Full-Text Search"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   The following steps install
-  
+
   Full-Text Search
-  
+
   (
-  
+
   ) on Linux. You can use Full-Text
-  
+
   Search to run full-text queries against character-based data in SQL Server table
 tags:
   - "linux-operations"

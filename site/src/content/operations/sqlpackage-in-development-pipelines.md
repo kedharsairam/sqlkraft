@@ -3,15 +3,15 @@ title: "SqlPackage in development pipelines"
 topic: "sqlpackage"
 description: |
   SqlPackage in development pipelines
-  
+
   06/27/2025
-  
+
   SqlPackage
-  
+
   is a command-line utility that automates several database development tasks and
-  
+
   can be incorporated into CI/CD pipelines.
-  
+
   If SqlPackage i
 tags:
   - "sqlpackage"

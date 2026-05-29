@@ -1,7 +1,7 @@
 ---
-name: 'To Get Alert When Database Recovery Model is Ch'
-title: 'To Get Alert When Database Recovery Model is Ch'
-description: 'This code will trigger an alert to your email when recovery model got change.'
+name: "To Get Alert When Database Recovery Model is Ch"
+title: "To Get Alert When Database Recovery Model is Ch"
+description: "This code will trigger an alert to your email when recovery model got change."
 category: automation
 tags: ["automation", "database"]
 pubDate: 2025-03-15
@@ -13,7 +13,7 @@ USE [master]
 GO
 
 CREATE OR ALTER TRIGGER [RecoveryModechanged]
-ON ALL SERVER 
+ON ALL SERVER
 FOR ALTER_DATABASE AS
 BEGIN
     DECLARE @text nvarchar(max)
@@ -22,9 +22,9 @@ BEGIN
     DECLARE @body nvarchar(max)
     DECLARE @subject nvarchar(255)
 
-    SET @text = EVENTDATA().value('(/EVENT_INSTANCE/TSQLCommand/CommandText)[1]', 'nvarchar(max)') 
-    SET @login = EVENTDATA().value('(/EVENT_INSTANCE/LoginName)[1]', 'varchar(128)') 
-    SET @recovery = PATINDEX('%RECOVERY%', @text) 
+    SET @text = EVENTDATA().value('(/EVENT_INSTANCE/TSQLCommand/CommandText)[1]', 'nvarchar(max)')
+    SET @login = EVENTDATA().value('(/EVENT_INSTANCE/LoginName)[1]', 'varchar(128)')
+    SET @recovery = PATINDEX('%RECOVERY%', @text)
 
     SET @subject = 'Alter database on ' + @@SERVERNAME + ' - Recovery model changed!'
 
@@ -38,7 +38,7 @@ BEGIN
                 '</table></body></html>'
 
     IF @recovery > 0
-    BEGIN 
+    BEGIN
         EXEC msdb.dbo.sp_send_dbmail
             @profile_name = 'outlook',
             @recipients = 'musicandra@gmail.com',
@@ -97,7 +97,7 @@ BEGIN
     DECLARE @DatabaseName NVARCHAR(128);
     DECLARE @NewRecoveryModel NVARCHAR(50);
 
-    SELECT 
+    SELECT
         @LoginName = ORIGINAL_LOGIN(),
         @HostName = HOST_NAME(),
         @DatabaseName = @EventData.value('(/EVENT_INSTANCE/DatabaseName)[1]', 'NVARCHAR(128)');

@@ -1,8 +1,8 @@
 ---
-name: 'the index'
-title: 'the index'
-category: 'hints'
-description: 'fragments containing multiple languages are supported. For more information, see'
+name: "the index"
+title: "the index"
+category: "hints"
+description: "fragments containing multiple languages are supported. For more information, see"
 tags: ["tsql", "hints"]
 pubDate: 2026-05-29
 ---

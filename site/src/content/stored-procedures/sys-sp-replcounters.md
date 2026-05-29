@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_replcounters'
-title: 'sp_replcounters'
-category: 'general'
-description: 'Returns replication statistics about latency, throughput, and transaction count for each published database. This stored procedure is executed at the Publisher on any database. Transact-SQL syntax conventions Number of transactions in the log awaiting delivery to the Average number of transactions per second delivered to the Average time, in seconds, that transactions were in the log before Log se'
+name: "sys.sp_replcounters"
+title: "sp_replcounters"
+category: "general"
+description: "Returns replication statistics about latency, throughput, and transaction count for each published database. This stored procedure is executed at the Publisher on any database. Transact-SQL syntax conventions Number of transactions in the log awaiting delivery to the Average number of transactions per second delivered to the Average time, in seconds, that transactions were in the log before Log se"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

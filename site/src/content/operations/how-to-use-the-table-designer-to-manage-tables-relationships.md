@@ -3,11 +3,11 @@ title: "How to: Use the Table Designer to Manage Tables & Relationships"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   The Table Designer provides a visual experience alongside the Transact-SQL Editor for creating
-  
+
   and editing table structure, including table-specific programming objects, for SQL Server
-  
+
   d
 tags:
   - "ssb-diagnose"

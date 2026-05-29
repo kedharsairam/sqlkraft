@@ -3,19 +3,19 @@ title: "View & modify properties"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   09/27/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This topic describes how to view and modify publication properties in SQL Server by using SQL
-  
+
   Server Management Studio, Tr
 tags:
   - "migration"

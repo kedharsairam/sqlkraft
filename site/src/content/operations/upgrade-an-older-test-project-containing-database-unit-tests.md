@@ -3,11 +3,11 @@ title: "Upgrade an Older Test Project Containing Database Unit Tests"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   You can upgrade an older test project, which was created in Visual Studio 2010 and that
-  
+
   contains database unit tests, to use the new SQL Server Data Tools database unit testing
-  
+
   runtime a
 tags:
   - "ssb-diagnose"

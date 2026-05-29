@@ -1,7 +1,7 @@
 ---
-name: 'To view Tasks, Transactions, SPID, etc'
-title: 'To view Tasks, Transactions, SPID, etc'
-description: 'Get Avg Task Count and Avg Runnable Task Count'
+name: "To view Tasks, Transactions, SPID, etc"
+title: "To view Tasks, Transactions, SPID, etc"
+description: "Get Avg Task Count and Avg Runnable Task Count"
 category: architecture
 tags: ["architecture"]
 pubDate: 2025-03-15

@@ -3,18 +3,18 @@ title: "PreConnect:Completed Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The PreConnect:Completedevent class indicates when a LOGON trigger or the Resource
-  
-  Governor 
+
+  Governor
 tags:
   - "event-classes"
   - "preconnectcompleted-event-class"

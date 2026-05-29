@@ -1,10 +1,10 @@
 ---
-name: 'Numeric magnitude and sign (single-value'
-title: 'Numeric magnitude and sign (single-value'
-category: 'data-types'
-description: ''
+name: "Numeric magnitude and sign (single-value"
+title: "Numeric magnitude and sign (single-value"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

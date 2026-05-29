@@ -3,11 +3,11 @@ title: "Scripts in SQL Server Unit Tests"
 topic: "ssb-diagnose"
 description: |
   09/09/2025
-  
+
   Each SQL Server unit test contains a single pre-test action, test action, and post-test action.
-  
+
   Each of these actions in turn contains:
-  
+
   A Transact-SQL script that executes on a database.
 tags:
   - "ssb-diagnose"

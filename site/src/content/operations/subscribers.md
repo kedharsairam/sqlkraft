@@ -3,11 +3,11 @@ title: "Subscribers"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   When an Always On availability group (AG) fails over, containing a database that is a replication
-  
+
   subscriber, the replication subscription might fail. For transactional repli
 tags:
   - "high-availability"

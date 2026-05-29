@@ -1,8 +1,8 @@
 ---
-name: 'PRINT'
-title: 'PRINT'
-category: 'statements'
-description: ''
+name: "PRINT"
+title: "PRINT"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

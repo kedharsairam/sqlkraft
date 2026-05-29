@@ -1,7 +1,7 @@
 ---
-name: 'To View the Complete List of all Usernames in I'
-title: 'To View the Complete List of all Usernames in I'
-description: 'SQL Server diagnostic script for security-audit operations.'
+name: "To View the Complete List of all Usernames in I"
+title: "To View the Complete List of all Usernames in I"
+description: "SQL Server diagnostic script for security-audit operations."
 category: security-audit
 tags: ["security-audit", "user"]
 pubDate: 2025-03-15
@@ -14,7 +14,7 @@ BEGIN
 DECLARE @SQLVerNo INT;
 SET @SQLVerNo = cast(substring(CAST(Serverproperty('ProductVersion') AS VARCHAR(50)) ,0,charindex('.',CAST(Serverproperty('ProductVersion') AS VARCHAR(50)) ,0)) as int);
 
-IF @SQLVerNo >= 9 
+IF @SQLVerNo >= 9
     IF EXISTS (SELECT TOP 1 *
                FROM Tempdb.sys.objects (nolock)
                WHERE name LIKE '#TUser%')
@@ -44,7 +44,7 @@ BEGIN
 INSERT INTO #TUser
 EXEC sp_MSForEachdb
 '
- SELECT 
+ SELECT
    @@SERVERNAME,
    ''?'' as DBName,
    u.name As UserName,
@@ -55,7 +55,7 @@ EXEC sp_MSForEachdb
    u.uid,
    u.sid
  FROM [?].dbo.sysUsers u
-   LEFT JOIN ([?].dbo.sysMembers m 
+   LEFT JOIN ([?].dbo.sysMembers m
    JOIN [?].dbo.sysUsers r
    ON m.groupuid = r.uid)
    ON m.memberuid = u.uid
@@ -66,13 +66,13 @@ EXEC sp_MSForEachdb
 '
 END
 
-ELSE 
+ELSE
 IF @SQLVerNo >= 9
 BEGIN
 INSERT INTO #TUser
 EXEC sp_MSForEachdb
 '
- SELECT 
+ SELECT
    @@SERVERNAME,
    ''?'',
    u.name,
@@ -84,7 +84,7 @@ EXEC sp_MSForEachdb
    u.sid
  FROM [?].sys.database_principals u
    LEFT JOIN ([?].sys.database_role_members m
-   JOIN [?].sys.database_principals r 
+   JOIN [?].sys.database_principals r
    ON m.role_principal_id = r.principal_id)
    ON m.member_principal_id = u.principal_id
    LEFT JOIN [?].sys.server_principals l

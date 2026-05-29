@@ -1,8 +1,8 @@
 ---
-name: 'datetime2'
-title: 'datetime2'
-category: 'data-types'
-description: ''
+name: "datetime2"
+title: "datetime2"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

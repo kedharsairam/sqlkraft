@@ -1,8 +1,8 @@
 ---
-name: 'MIN_ACTIVE_ROWVERSION'
-title: 'MIN_ACTIVE_ROWVERSION'
-category: 'statements'
-description: ''
+name: "MIN_ACTIVE_ROWVERSION"
+title: "MIN_ACTIVE_ROWVERSION"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

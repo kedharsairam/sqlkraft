@@ -1,8 +1,8 @@
 ---
-name: 'Clustered indexes'
-title: 'Clustered indexes'
-category: 'statements'
-description: 'You can also specify the'
+name: "Clustered indexes"
+title: "Clustered indexes"
+category: "statements"
+description: "You can also specify the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

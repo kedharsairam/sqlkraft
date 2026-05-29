@@ -3,11 +3,11 @@ title: "SQL Server Data Tools, SDK-style"
 topic: "data-tools"
 description: |
   SQL Server Data Tools, SDK-style (preview)
-  
+
   SQL Server Data Tools (SSDT)
-  
+
   is a set of development tools in Visual Studio with focused on
-  
+
   building SQL Server databases and Azure SQL databases. SDK-sty
 tags:
   - "data-tools"

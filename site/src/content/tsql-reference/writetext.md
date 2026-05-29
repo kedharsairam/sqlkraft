@@ -1,8 +1,8 @@
 ---
-name: 'WRITETEXT'
-title: 'WRITETEXT'
-category: 'statements'
-description: ''
+name: "WRITETEXT"
+title: "WRITETEXT"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

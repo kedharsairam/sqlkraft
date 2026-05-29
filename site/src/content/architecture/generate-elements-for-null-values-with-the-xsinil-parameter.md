@@ -3,19 +3,19 @@ title: "Generate Elements for NULL Values with the XSINIL Parameter"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   directive constructs XML in which each column value maps to an element in the
-  
+
   XML. By d
 tags:
   - "xml-data"

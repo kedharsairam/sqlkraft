@@ -3,12 +3,12 @@ title: "Accessing in ADO.NET"
 topic: "clr-integration"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   User-defined types (UDTs) are written using any of the languages supported by the .NET
-  
-  Framework common language runtime (CLR) that produce verifiable code. This includes C# 
+
+  Framework common language runtime (CLR) that produce verifiable code. This includes C#
 tags:
   - "clr-integration"
   - "accessing-in-adonet"

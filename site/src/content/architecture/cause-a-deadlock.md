@@ -1,7 +1,7 @@
 ---
-title: 'Cause a deadlock'
-topic: 'locking'
-description: 'shorter duration than a higher isolation level, such as'
+title: "Cause a deadlock"
+topic: "locking"
+description: "shorter duration than a higher isolation level, such as"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

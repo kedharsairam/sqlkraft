@@ -3,11 +3,11 @@ title: "Troubleshooting SqlPackage"
 topic: "sqlpackage"
 description: |
   SqlPackage
-  
+
   In some scenarios, SqlPackage operations take longer than expected or fail to complete. This
-  
+
   article describes some frequently suggested tactics to troubleshoot or improve performance of
-  
+
 tags:
   - "sqlpackage"
   - "troubleshooting-sqlpackage"

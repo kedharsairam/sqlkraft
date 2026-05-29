@@ -1,8 +1,8 @@
 ---
-name: 'sys.system_views'
-title: 'sys.system_views'
-category: 'objects'
-description: 'Contains one row for each system view that is shipped with SQL Server. All system views are contained in the schemas named For a list of columns that this view inherits, see 1 = View has a replication filter. 1 = VIEW_METADATA option specified for view. For more 1 = Table contains persisted data that depends on an assembly whose definition changed during the last ALTER ASSEMBLY. Will be reset to 0'
+name: "sys.system_views"
+title: "sys.system_views"
+category: "objects"
+description: "Contains one row for each system view that is shipped with SQL Server. All system views are contained in the schemas named For a list of columns that this view inherits, see 1 = View has a replication filter. 1 = VIEW_METADATA option specified for view. For more 1 = Table contains persisted data that depends on an assembly whose definition changed during the last ALTER ASSEMBLY. Will be reset to 0"
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
 ---

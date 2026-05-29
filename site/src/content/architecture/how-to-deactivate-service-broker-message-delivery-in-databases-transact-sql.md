@@ -3,15 +3,15 @@ title: "How to: Deactivate Service Broker Message Delivery in Databases (Transac
 topic: "service-broker"
 description: |
   09/02/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   When message delivery isn't active, messages remain in the transmission queue. To determine
-  
+
   whether Service Broker is active for a dat
 tags:
   - "service-broker"

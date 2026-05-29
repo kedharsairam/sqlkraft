@@ -1,8 +1,8 @@
 ---
-name: 'type'
-title: 'type'
-category: 'statements'
-description: '### Increased dimensionality support'
+name: "type"
+title: "type"
+category: "statements"
+description: "### Increased dimensionality support"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
-title: 'Monitor row versioning and the version store'
-topic: 'io-fundamentals'
-description: 'Enough disk space should be allocated to accommodate this requirement.'
+title: "Monitor row versioning and the version store"
+topic: "io-fundamentals"
+description: "Enough disk space should be allocated to accommodate this requirement."
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -204,7 +204,7 @@ running transactions, it might be useful to monitor the generation and cleanup r
 
 estimate the maximum size of the version store.
 
-[size of common version store] = 2 * [version store data generated per minute] * [longest
+[size of common version store] = 2 _ [version store data generated per minute] _ [longest
 
 running time (minutes) of the transaction]
 

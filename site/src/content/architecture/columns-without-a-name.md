@@ -3,17 +3,17 @@ title: "Columns without a Name"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Any column without a name will be inlined. For example, computed columns or nested scalar
-  
+
   qu
 tags:
   - "xml-data"

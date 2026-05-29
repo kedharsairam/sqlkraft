@@ -1,7 +1,7 @@
 ---
-title: 'Write caching in storage controllers'
-topic: 'query-processing'
-description: 'A component in the I/O path (for example, a driver, controller, or firmware) can cause long I/Os'
+title: "Write caching in storage controllers"
+topic: "query-processing"
+description: "A component in the I/O path (for example, a driver, controller, or firmware) can cause long I/Os"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

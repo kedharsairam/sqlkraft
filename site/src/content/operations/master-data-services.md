@@ -3,17 +3,17 @@ title: "Master Data Services"
 topic: "upgrade"
 description: |
   06/04/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   The following are the scenarios for upgrading Microsoft SQL Server Master Data Services.
-  
+
   Upgrade without Database Engine Upgrade
-  
+
   Upgrade with Dat
 tags:
   - "upgrade"

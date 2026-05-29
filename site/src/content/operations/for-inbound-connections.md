@@ -3,17 +3,17 @@ title: "For inbound connections"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   11/25/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes the steps for configuring server instances to use certificates to authenticate
-  
+
   inbound connections for database mirroring. Before
 tags:
   - "high-availability"

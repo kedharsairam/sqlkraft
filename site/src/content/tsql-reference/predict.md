@@ -1,12 +1,12 @@
 ---
-name: 'PREDICT'
-title: 'PREDICT'
-category: 'statements'
-description: ''
+name: "PREDICT"
+title: "PREDICT"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-### * SQL Server *
+### _ SQL Server _
 
 #### syntaxsql

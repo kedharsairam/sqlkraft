@@ -3,19 +3,19 @@ title: "Ring buffers"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Some diagnostic Always On availability group (AG) information can be obtained from the SQL
-  
+
   Server ring buffers, or the
-  
+
   dynamic management view (DMV).
 tags:
   - "high-availability"

@@ -3,19 +3,19 @@ title: "Files page"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Use this page to create a new database, or view or modify properties for the selected database.
-  
+
   This topic applies to the
-  
+
   for existing databases, and
 tags:
   - "collation"

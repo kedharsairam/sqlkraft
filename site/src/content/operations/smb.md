@@ -3,19 +3,19 @@ title: "SMB"
 topic: "linux-operations"
 description: |
   Article
-  
+
   •
-  
+
   01/21/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article explains how to configure SMB storage for a failover cluster instance (FCI) on Linux.
-  
+
   In the non-Windows world, SMB is also refe
 tags:
   - "linux-operations"

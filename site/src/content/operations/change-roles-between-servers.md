@@ -3,17 +3,17 @@ title: "Change roles between servers"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   After you have failed over a SQL Server log shipping configuration to a secondary server, you
-  
+
   can configure your secondary database to act as the prim
 tags:
   - "high-availability"

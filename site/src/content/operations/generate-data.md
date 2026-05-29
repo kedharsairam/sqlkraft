@@ -3,19 +3,19 @@ title: "Generate data"
 topic: "monitor"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   The released versions of the WideWorldImporters and WideWorldImportersDW databases have
-  
+
   data from January 1, 2013, up to the day t
 tags:
   - "monitor"

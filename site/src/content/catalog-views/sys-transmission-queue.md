@@ -1,11 +1,11 @@
 ---
-name: 'sys.transmission_queue'
-title: 'sys.transmission_queue'
-category: 'compatibility'
-description: 'Specifies whether poison message handling is enabled for the queue. The default is ON. A queue that has poison message handling set to OFF will not be disabled after five consecutive transaction rollbacks. This allows for a custom poison message handing system to be defined by the application. Specifies the SQL Server filegroup on which to create this queue. You can use the parameter to identify a'
+name: "sys.transmission_queue"
+title: "sys.transmission_queue"
+category: "compatibility"
+description: "Specifies whether poison message handling is enabled for the queue. The default is ON. A queue that has poison message handling set to OFF will not be disabled after five consecutive transaction rollbacks. This allows for a custom poison message handing system to be defined by the application. Specifies the SQL Server filegroup on which to create this queue. You can use the parameter to identify a"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'sys.transmission_queue'
+syntax: "sys.transmission_queue"
 ---
 
 ## Description

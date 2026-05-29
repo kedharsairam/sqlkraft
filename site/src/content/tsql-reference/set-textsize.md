@@ -1,8 +1,8 @@
 ---
-name: 'SET TEXTSIZE'
-title: 'SET TEXTSIZE'
-category: 'statements'
-description: ''
+name: "SET TEXTSIZE"
+title: "SET TEXTSIZE"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -3,15 +3,15 @@ title: "SQL Server on Azure VMs >"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server on Azure VM
-  
+
   This article provides an overview of SQL Server on Azure Virtual Machines (VMs) on the
-  
+
   Windows platform.
-  
+
   If you're new to SQL Server on Azure VMs, check out the
-  
+
 tags:
   - "azure-synapse"
   - "sql-server-on-azure-vms"

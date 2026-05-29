@@ -1,8 +1,8 @@
 ---
-name: 'Convert character data'
-title: 'Convert character data'
-category: 'statements'
-description: 'For information about converting character data, see'
+name: "Convert character data"
+title: "Convert character data"
+category: "statements"
+description: "For information about converting character data, see"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

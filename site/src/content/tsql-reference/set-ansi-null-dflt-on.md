@@ -1,8 +1,8 @@
 ---
-name: 'SET ANSI_NULL_DFLT_ON'
-title: 'SET ANSI_NULL_DFLT_ON'
-category: 'statements'
-description: '### ANSI null default'
+name: "SET ANSI_NULL_DFLT_ON"
+title: "SET ANSI_NULL_DFLT_ON"
+category: "statements"
+description: "### ANSI null default"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

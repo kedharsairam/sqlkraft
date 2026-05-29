@@ -3,15 +3,15 @@ title: "Handling Service Broker Error Messages"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker applications must handle two types of error messages received from
-  
+
   conversations: error messages created by an applicat
 tags:
   - "service-broker"

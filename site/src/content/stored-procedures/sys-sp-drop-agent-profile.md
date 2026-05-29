@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_drop_agent_profile'
-title: 'sp_drop_agent_profile'
-category: 'general'
-description: 'table. This stored procedure is executed at the Transact-SQL syntax conventions The ID of the profile to be dropped. is used in all types of replication. The parameters of the given profile are also dropped from the'
+name: "sys.sp_drop_agent_profile"
+title: "sp_drop_agent_profile"
+category: "general"
+description: "table. This stored procedure is executed at the Transact-SQL syntax conventions The ID of the profile to be dropped. is used in all types of replication. The parameters of the given profile are also dropped from the"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_drop_agent_profile'
+syntax: "sp_drop_agent_profile"
 ---
 
 ## Description

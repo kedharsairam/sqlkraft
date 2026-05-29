@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_revoke_proxy_from_subsystem'
-title: 'sp_revoke_proxy_from_subsystem'
-category: 'general'
-description: 'Revokes access to a subsystem from a proxy. Transact-SQL syntax conventions The proxy identification number of the proxy to revoke access from. must be specified, but both can''t be specified. The name of the proxy to revoke access from. must be specified, but both can''t be specified. The ID number of the subsystem to revoke access to.'
+name: "sys.sp_revoke_proxy_from_subsystem"
+title: "sp_revoke_proxy_from_subsystem"
+category: "general"
+description: "Revokes access to a subsystem from a proxy. Transact-SQL syntax conventions The proxy identification number of the proxy to revoke access from. must be specified, but both can't be specified. The name of the proxy to revoke access from. must be specified, but both can't be specified. The ID number of the subsystem to revoke access to."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

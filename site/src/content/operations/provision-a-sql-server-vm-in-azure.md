@@ -3,14 +3,14 @@ title: "Provision a SQL Server VM in Azure >"
 topic: "linux-operations"
 description: |
   SQL Server in the Azure portal
-  
+
   Applies to:
-  
+
   SQL Server on Azure VM
-  
+
   In this quickstart tutorial, you use the Azure portal to create a Linux virtual machine with SQL
-  
-  Server 2017 installed. You learn 
+
+  Server 2017 installed. You learn
 tags:
   - "linux-operations"
   - "provision-a-sql-server-vm-in-azure"

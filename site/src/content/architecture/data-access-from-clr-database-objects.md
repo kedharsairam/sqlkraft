@@ -3,17 +3,17 @@ title: "Data access from CLR database objects"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   A common language runtime (CLR) routine might easily access data stored in the instance of
-  
+
   SQL Server in which it runs, and data stored in remote inst
 tags:
   - "clr-integration"

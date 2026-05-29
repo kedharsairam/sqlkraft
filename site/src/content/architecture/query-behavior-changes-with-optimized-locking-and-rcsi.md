@@ -1,7 +1,7 @@
 ---
-title: 'Query behavior changes with optimized locking and RCSI'
-topic: 'query-processing'
-description: 'Lock after qualification is not used in the following scenarios:'
+title: "Query behavior changes with optimized locking and RCSI"
+topic: "query-processing"
+description: "Lock after qualification is not used in the following scenarios:"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -38,8 +38,8 @@ When the DML statement has an
 
 clause that inserts data into a table variable or
 
-
 ## returns a result set.
+
 When the DML statement uses more than one index seek or scan operator to read the
 
 rows being modified.

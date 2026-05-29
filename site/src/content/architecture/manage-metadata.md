@@ -3,19 +3,19 @@ title: "Manage metadata"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   04/15/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article is relevant in the following situations:
-  
+
   Configuring the availability replicas of an Always On availability groups availability group.
-  
+
   S
 tags:
   - "collation"

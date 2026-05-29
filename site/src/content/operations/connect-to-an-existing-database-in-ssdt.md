@@ -3,11 +3,11 @@ title: "Connect to an existing database in SSDT"
 topic: "data-tools"
 description: |
   09/09/2025
-  
+
   This article shows how a user can connect to an existing database in SQL Server Data Tools
-  
+
   (SSDT). SSDT allows you to connect to an existing database, run queries with Transact-SQL (T-
-  
+
   S
 tags:
   - "data-tools"
@@ -61,11 +61,11 @@ SQL Server Object
 
 . Alternatively, you can use the shortcut
 
-+
+-
 
 (backslash) and then type
 
-+
+-
 
 .
 

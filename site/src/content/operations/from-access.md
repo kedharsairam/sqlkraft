@@ -3,17 +3,17 @@ title: "From Access"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   09/16/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   In this guide, you learn how to migrate your Microsoft Access databases to SQL Server by using
-  
+
   SQL Server Migration Assistant for Access (SSMA for Acc
 tags:
   - "migration"

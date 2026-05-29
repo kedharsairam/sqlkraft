@@ -3,16 +3,16 @@ title: "Manage auto deploy"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   SQL Server instances are automatically connected to Azure Arc when they are installed on an
-  
+
   Azure Arc-enabled Server and the Arc server resource is in a
-  
+
   supported region
-  
-  . 
+
+  .
 tags:
   - "azure-synapse"
   - "manage-auto-deploy"

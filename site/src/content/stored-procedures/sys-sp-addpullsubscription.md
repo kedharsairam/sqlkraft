@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addpullsubscription'
-title: 'sp_addpullsubscription'
-category: 'general'
-description: 'Adds a pull subscription to a snapshot or transactional publication. This stored procedure is executed at the Subscriber on the database where the pull subscription is to be created. Transact-SQL syntax conventions Server name can be specified as for a named instance. Specify the port number for your connection when SQL Server is deployed on Linux or Windows with a custom port, and the browser ser'
+name: "sys.sp_addpullsubscription"
+title: "sp_addpullsubscription"
+category: "general"
+description: "Adds a pull subscription to a snapshot or transactional publication. This stored procedure is executed at the Subscriber on the database where the pull subscription is to be created. Transact-SQL syntax conventions Server name can be specified as for a named instance. Specify the port number for your connection when SQL Server is deployed on Linux or Windows with a custom port, and the browser ser"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

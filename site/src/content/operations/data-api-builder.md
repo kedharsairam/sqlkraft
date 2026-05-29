@@ -3,13 +3,13 @@ title: "Data API builder"
 topic: "profiler"
 description: |
   The MSSQL extension for Visual Studio Code includes an integrated UI for
-  
+
   Data API builder
-  
+
   ,
-  
+
   so you can create REST, GraphQL, and MCP endpoints for your SQL database tables without
-  
+
   writing configur
 tags:
   - "profiler"

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_configure'
-title: 'sp_configure'
-category: 'general'
-description: 'Summarize this article for me Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Returns information about the current SET options. Transact-SQL syntax conventions The options can come from use of the command or from the value. Session values configured with the command override the Many tools, such as Management Studio, automatically configure set options. Each user ha'
+name: "sys.sp_configure"
+title: "sp_configure"
+category: "general"
+description: "Summarize this article for me Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Returns information about the current SET options. Transact-SQL syntax conventions The options can come from use of the command or from the value. Session values configured with the command override the Many tools, such as Management Studio, automatically configure set options. Each user ha"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -460,5 +460,4 @@ SELECT
 -1
 ```
 
-
-*(... and 11 more examples)*
+_(... and 11 more examples)_

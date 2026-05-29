@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_setdefaultdatatypemapping'
-title: 'sp_setdefaultdatatypemapping'
-category: 'general'
-description: 'Marks an existing data type mapping between SQL Server and a non-SQL Server database management system (DBMS) as the default. This stored procedure is executed at the Transact-SQL syntax conventions Identifies an existing data type mapping. , then the remaining parameters aren''t required.'
+name: "sys.sp_setdefaultdatatypemapping"
+title: "sp_setdefaultdatatypemapping"
+category: "general"
+description: "Marks an existing data type mapping between SQL Server and a non-SQL Server database management system (DBMS) as the default. This stored procedure is executed at the Transact-SQL syntax conventions Identifies an existing data type mapping. , then the remaining parameters aren't required."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,8 +1,8 @@
 ---
-name: 'WITH GRANT OPTION'
-title: 'WITH GRANT OPTION'
-category: 'statements'
-description: 'Granting a permission removes'
+name: "WITH GRANT OPTION"
+title: "WITH GRANT OPTION"
+category: "statements"
+description: "Granting a permission removes"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

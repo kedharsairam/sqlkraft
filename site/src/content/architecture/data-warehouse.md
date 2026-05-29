@@ -3,17 +3,17 @@ title: "Data warehouse"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL database in Microsoft Fabric
-  
+
   Columnstore indexes, in conjunction with partitioning, are e
 tags:
   - "filestream"

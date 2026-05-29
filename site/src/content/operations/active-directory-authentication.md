@@ -3,15 +3,15 @@ title: "Active Directory authentication"
 topic: "linux-operations"
 description: |
   07/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article provides an overview of Active Directory authentication for SQL Server on Linux.
-  
+
   Active Directory authentication is also known as Integrated
 tags:
   - "linux-operations"

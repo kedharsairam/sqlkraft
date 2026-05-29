@@ -3,15 +3,15 @@ title: "Non-Deterministic content models"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Non-deterministic content models are accepted in SQL Server if the occurrence constraints are
 tags:
   - "xml-data"

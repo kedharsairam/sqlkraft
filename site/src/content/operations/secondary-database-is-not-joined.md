@@ -3,26 +3,26 @@ title: "Secondary database is not joined"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   : Availability Database Join State
-  
+
   : Secondary database is not joined.
-  
+
   :
-  
+
   Warning
-  
+
   : Availability database
-  
-  This policy checks the join state of the 
+
+  This policy checks the join state of the
 tags:
   - "high-availability"
   - "secondary-database-is-not-joined"

@@ -1,8 +1,8 @@
 ---
-name: 'FILE_IDEX'
-title: 'FILE_IDEX'
-category: 'statements'
-description: ''
+name: "FILE_IDEX"
+title: "FILE_IDEX"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

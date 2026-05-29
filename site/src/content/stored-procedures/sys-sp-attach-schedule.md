@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_attach_schedule'
-title: 'sp_attach_schedule'
-category: 'general'
-description: 'Transact-SQL syntax conventions The job identification number of the job to which the schedule is added. must be specified, but both can''t be specified. The name of the job to which the schedule is added. must be specified, but both can''t be specified. The schedule identification number of the schedule to set for the job.'
+name: "sys.sp_attach_schedule"
+title: "sp_attach_schedule"
+category: "general"
+description: "Transact-SQL syntax conventions The job identification number of the job to which the schedule is added. must be specified, but both can't be specified. The name of the job to which the schedule is added. must be specified, but both can't be specified. The schedule identification number of the schedule to set for the job."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

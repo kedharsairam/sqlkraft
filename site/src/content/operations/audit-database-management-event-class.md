@@ -3,27 +3,27 @@ title: "Audit Database Management Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class occurs when a database is created, altered, or
-  
+
   dropped.
-  
+
   Description
-  
+
   Name of the cli
 tags:
   - "event-classes"

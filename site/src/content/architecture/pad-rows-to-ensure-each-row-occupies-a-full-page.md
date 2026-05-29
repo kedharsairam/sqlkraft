@@ -1,7 +1,7 @@
 ---
-title: 'Pad rows to ensure each row occupies a full page'
-topic: 'query-processing'
-description: 'One possible strategy for avoiding excessive page latch contention is to pad rows with a'
+title: "Pad rows to ensure each row occupies a full page"
+topic: "query-processing"
+description: "One possible strategy for avoiding excessive page latch contention is to pad rows with a"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

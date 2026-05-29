@@ -1,8 +1,8 @@
 ---
-name: 'char and varchar'
-title: 'char and varchar'
-category: 'data-types'
-description: '### character varying'
+name: "char and varchar"
+title: "char and varchar"
+category: "data-types"
+description: "### character varying"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

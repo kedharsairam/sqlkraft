@@ -1,8 +1,8 @@
 ---
-name: 'sys.external_file_formats'
-title: 'sys.external_file_formats'
-category: 'external'
-description: 'SQL Server 2016 (13.x) and later Azure SQL Database Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) Removes a PolyBase external file format. Transact-SQL syntax conventions The name of the external file format to drop. To view a list of external file formats use the sys.external_file_formats Requires ALTER ANY EXTERNAL FILE FORMAT.'
+name: "sys.external_file_formats"
+title: "sys.external_file_formats"
+category: "external"
+description: "SQL Server 2016 (13.x) and later Azure SQL Database Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) Removes a PolyBase external file format. Transact-SQL syntax conventions The name of the external file format to drop. To view a list of external file formats use the sys.external_file_formats Requires ALTER ANY EXTERNAL FILE FORMAT."
 tags: ["external", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

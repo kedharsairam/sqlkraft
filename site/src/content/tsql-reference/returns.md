@@ -1,8 +1,8 @@
 ---
-name: 'Returns'
-title: 'Returns'
-category: 'statements'
-description: 'Returns the number of passwords tracked for the login, using the password-'
+name: "Returns"
+title: "Returns"
+category: "statements"
+description: "Returns the number of passwords tracked for the login, using the password-"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -10,6 +10,7 @@ pubDate: 2026-05-29
 ## Description
 
 ## Returns the number of passwords tracked for the login, using the password-
+
 policy enforcement mechanism. 0 if the password policy isn't enforced.
 
 Resuming password policy enforcement restarts at 1.
@@ -22,16 +23,16 @@ Indicates whether the login must change its password the next time it
 
 connects.
 
-
 ## Returns the date when the SQL Server login was locked out because it had
-exceeded the permitted number of failed login attempts.
 
+exceeded the permitted number of failed login attempts.
 
 ## Returns the hash of the password.
 
 ## Returns the date when the current password was set.
 
 ## Returns the algorithm used to hash the password. In SQL Server 2022 (16.x)
+
 and earlier versions, the stored password information is calculated using SHA-
 
 512 of the salted password. Starting with SQL Server 2025 (17.x), an iterated

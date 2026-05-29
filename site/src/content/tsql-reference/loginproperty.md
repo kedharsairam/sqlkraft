@@ -1,8 +1,8 @@
 ---
-name: 'LOGINPROPERTY'
-title: 'LOGINPROPERTY'
-category: 'statements'
-description: '#### BadPasswordCount'
+name: "LOGINPROPERTY"
+title: "LOGINPROPERTY"
+category: "statements"
+description: "#### BadPasswordCount"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

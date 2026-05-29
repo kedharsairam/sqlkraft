@@ -3,27 +3,27 @@ title: "Audit Database Object Take Ownership Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class occurs when a change of owner for
-  
+
   objects within database scope occurs.
-  
+
   Description
-  
+
 tags:
   - "event-classes"
   - "audit-database-object-take-ownership-event-class"

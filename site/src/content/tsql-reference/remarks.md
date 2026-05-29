@@ -1,8 +1,8 @@
 ---
-name: 'Remarks'
-title: 'Remarks'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Remarks"
+title: "Remarks"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -29,8 +29,8 @@ SQL statement raises a run-time error.
 
 Transact-SQL syntax conventions
 
-
 ## syntaxsql
+
 When SET XACT_ABORT is ON, if a Transact-SQL statement raises a run-time error, the entire
 
 transaction is terminated and rolled back.

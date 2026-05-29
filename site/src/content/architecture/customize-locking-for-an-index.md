@@ -1,7 +1,7 @@
 ---
-title: 'Customize locking for an index'
-topic: 'index-architecture'
-description: 'As shown in the following example, if the transaction isolation level is set to'
+title: "Customize locking for an index"
+topic: "index-architecture"
+description: "As shown in the following example, if the transaction isolation level is set to"
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

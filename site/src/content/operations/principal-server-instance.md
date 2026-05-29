@@ -3,17 +3,17 @@ title: "Principal Server Instance"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Use this page to specify information about the server instance of the principal database. The
-  
+
   principal database is the copy of the database that begi
 tags:
   - "high-availability"

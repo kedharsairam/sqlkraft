@@ -1,8 +1,8 @@
 ---
-name: 'Supplementary characters (surrogate pairs)'
-title: 'Supplementary characters (surrogate pairs)'
-category: 'statements'
-description: 'A positive integer or'
+name: "Supplementary characters (surrogate pairs)"
+title: "Supplementary characters (surrogate pairs)"
+category: "statements"
+description: "A positive integer or"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -59,8 +59,8 @@ length
 
 ,
 
-
 ## returns
+
 . Review
 
 E. Use SUBSTRING with optional length argument
@@ -69,8 +69,8 @@ for an
 
 example.
 
-
 ## Returns character data if
+
 expression
 
 is one of the supported character data types. Returns

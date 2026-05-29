@@ -3,18 +3,18 @@ title: "Context vs. regular connections"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   If you're connecting to a remote server, always use regular connections rather than context
-  
-  connections. If you need to connect to the same server on 
+
+  connections. If you need to connect to the same server on
 tags:
   - "clr-integration"
   - "context-vs-regular-connections"

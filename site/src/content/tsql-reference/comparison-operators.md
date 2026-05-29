@@ -1,8 +1,8 @@
 ---
-name: 'Comparison Operators'
-title: 'Comparison Operators'
-category: 'operators'
-description: ''
+name: "Comparison Operators"
+title: "Comparison Operators"
+category: "operators"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

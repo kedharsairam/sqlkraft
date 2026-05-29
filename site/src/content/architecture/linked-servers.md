@@ -1,7 +1,7 @@
 ---
-title: 'Linked servers'
-topic: 'query-processing'
-description: 'Always On availability groups'
+title: "Linked servers"
+topic: "query-processing"
+description: "Always On availability groups"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -48,14 +48,14 @@ Feature name
 
 , or
 
-
 ## syntax without parentheses
+
 around the options.
 
 Rewrite the statement to use the current
 
-
 ## syntax.
+
 INDEX_OPTION
 
 Deprecated feature

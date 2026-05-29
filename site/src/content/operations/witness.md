@@ -3,18 +3,18 @@ title: "Witness"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   12/14/2022
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   To support automatic failover, a database mirroring session must be configured in high-safety
-  
-  mode and also possess a third server instance, known as 
+
+  mode and also possess a third server instance, known as
 tags:
   - "high-availability"
   - "witness"

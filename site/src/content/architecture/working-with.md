@@ -3,17 +3,17 @@ title: "Working with"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   You can access user-defined type (UDT) functionality in SQL Server from the Transact-SQL
-  
+
   language by using regular query syntax. UDTs can be used in t
 tags:
   - "clr-integration"

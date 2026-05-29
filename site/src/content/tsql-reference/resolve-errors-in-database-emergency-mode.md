@@ -1,8 +1,8 @@
 ---
-name: 'Resolve errors in database emergency mode'
-title: 'Resolve errors in database emergency mode'
-category: 'predicates'
-description: 'detects a corruption error. When the'
+name: "Resolve errors in database emergency mode"
+title: "Resolve errors in database emergency mode"
+category: "predicates"
+description: "detects a corruption error. When the"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---
@@ -79,8 +79,8 @@ column value must be manually updated. If
 
 detects such an error,
 
-
 ## returns a
+
 warning, the error number 2570, and information to identify the affected row and manually
 
 correct the error.

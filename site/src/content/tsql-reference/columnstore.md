@@ -1,8 +1,8 @@
 ---
-name: 'columnstore'
-title: 'columnstore'
-category: 'statements'
-description: 'This example creates a table as a heap, and then converts it to a clustered columnstore index'
+name: "columnstore"
+title: "columnstore"
+category: "statements"
+description: "This example creates a table as a heap, and then converts it to a clustered columnstore index"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

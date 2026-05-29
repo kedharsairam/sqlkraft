@@ -1,8 +1,8 @@
 ---
-name: 'Character string constants'
-title: 'Character string constants'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "Character string constants"
+title: "Character string constants"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

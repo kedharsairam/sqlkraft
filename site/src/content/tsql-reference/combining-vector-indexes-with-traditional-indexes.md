@@ -1,8 +1,8 @@
 ---
-name: 'Combining vector indexes with traditional indexes'
-title: 'Combining vector indexes with traditional indexes'
-category: 'queries'
-description: 'For large-scale data replacement (for example, deleting most rows and inserting an'
+name: "Combining vector indexes with traditional indexes"
+title: "Combining vector indexes with traditional indexes"
+category: "queries"
+description: "For large-scale data replacement (for example, deleting most rows and inserting an"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

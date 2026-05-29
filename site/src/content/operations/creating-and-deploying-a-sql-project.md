@@ -3,17 +3,17 @@ title: "Creating and deploying a SQL project"
 topic: "ssms"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The development cycle of a SQL database project enables database development to be
-  
+
   integrate
 tags:
   - "ssms"

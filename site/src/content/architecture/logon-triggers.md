@@ -3,21 +3,21 @@ title: "Logon Triggers"
 topic: "change-data-capture"
 description: |
   Article
-  
+
   •
-  
+
   04/09/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Logon triggers fire stored procedures in response to a
-  
+
   event. This event is raised when a
-  
+
   user session is established wit
 tags:
   - "change-data-capture"

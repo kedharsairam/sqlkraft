@@ -1,7 +1,7 @@
 ---
-title: 'Partitioned attribute'
-topic: 'io-fundamentals'
-description: 'When an operator such as an Index Seek is executed on a partitioned table or index, the'
+title: "Partitioned attribute"
+topic: "io-fundamentals"
+description: "When an operator such as an Index Seek is executed on a partitioned table or index, the"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

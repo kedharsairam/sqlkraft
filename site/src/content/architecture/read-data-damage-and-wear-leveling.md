@@ -1,7 +1,7 @@
 ---
-title: 'Read data damage and wear leveling'
-topic: 'query-processing'
-description: 'A newly formatted drive usually holds all zeros. An erased block of a solid-state device is all'
+title: "Read data damage and wear leveling"
+topic: "query-processing"
+description: "A newly formatted drive usually holds all zeros. An erased block of a solid-state device is all"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

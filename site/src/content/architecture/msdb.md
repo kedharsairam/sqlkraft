@@ -3,21 +3,21 @@ title: "msdb"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   01/29/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   database is used by SQL Server Agent for scheduling alerts and jobs and by other
-  
+
   features such as SQL Server Manageme
 tags:
   - "collation"

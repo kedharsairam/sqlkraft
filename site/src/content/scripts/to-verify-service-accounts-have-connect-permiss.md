@@ -1,7 +1,7 @@
 ---
-name: 'To Verify Service Accounts have Connect Permiss'
-title: 'To Verify Service Accounts have Connect Permiss'
-description: 'run this query in all the machines to view the permissions'
+name: "To Verify Service Accounts have Connect Permiss"
+title: "To Verify Service Accounts have Connect Permiss"
+description: "run this query in all the machines to view the permissions"
 category: general
 tags: ["general"]
 pubDate: 2025-03-15

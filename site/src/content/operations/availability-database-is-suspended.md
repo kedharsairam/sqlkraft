@@ -3,21 +3,21 @@ title: "Availability database is suspended"
 topic: "high-availability"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   : Availability Database Suspension State
-  
+
   : Availability database is suspended.
-  
+
   :
-  
+
   Warning
-  
+
   : Availability database
-  
+
   This policy checks the state of data movement
 tags:
   - "high-availability"

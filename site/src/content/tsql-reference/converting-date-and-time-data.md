@@ -1,8 +1,8 @@
 ---
-name: 'Converting Date and Time Data'
-title: 'Converting Date and Time Data'
-category: 'data-types'
-description: 'When you convert to date and time data types, SQL Server rejects all values it cannot recognize'
+name: "Converting Date and Time Data"
+title: "Converting Date and Time Data"
+category: "data-types"
+description: "When you convert to date and time data types, SQL Server rejects all values it cannot recognize"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

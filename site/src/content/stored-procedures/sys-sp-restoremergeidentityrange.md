@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_restoremergeidentityrange'
-title: 'sp_restoremergeidentityrange'
-category: 'general'
-description: 'This stored procedure is used to update identity range assignments. It ensures that automatic identity range management functions properly after a Publisher is restored from a backup. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication. , with a default of . When specified, only identity ranges for that publica'
+name: "sys.sp_restoremergeidentityrange"
+title: "sp_restoremergeidentityrange"
+category: "general"
+description: "This stored procedure is used to update identity range assignments. It ensures that automatic identity range management functions properly after a Publisher is restored from a backup. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication. , with a default of . When specified, only identity ranges for that publica"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

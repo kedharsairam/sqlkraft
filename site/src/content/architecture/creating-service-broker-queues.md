@@ -3,16 +3,16 @@ title: "Creating Service Broker Queues"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   A queue holds incoming messages for a service. To simplify processing, applications typically
-  
-  create one queue per service instead of 
+
+  create one queue per service instead of
 tags:
   - "service-broker"
   - "creating-service-broker-queues"

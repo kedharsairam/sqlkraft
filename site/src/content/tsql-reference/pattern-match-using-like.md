@@ -1,8 +1,8 @@
 ---
-name: 'Pattern match using LIKE'
-title: 'Pattern match using LIKE'
-category: 'predicates'
-description: 'Here''s the result set.'
+name: "Pattern match using LIKE"
+title: "Pattern match using LIKE"
+category: "predicates"
+description: "Here's the result set."
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---
@@ -29,8 +29,8 @@ escape_character
 
 ASCII pattern matching is performed. If any one of the arguments are of Unicode data type, all
 
-
 ## arguments are converted to Unicode, and Unicode pattern matching is performed. When you
+
 use Unicode data (
 
 or

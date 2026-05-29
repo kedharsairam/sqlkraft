@@ -1,8 +1,8 @@
 ---
-name: 'Bit manipulation functions'
-title: 'Bit manipulation functions'
-category: 'data-types'
-description: 'SQL Server 2022 (16.x)'
+name: "Bit manipulation functions"
+title: "Bit manipulation functions"
+category: "data-types"
+description: "SQL Server 2022 (16.x)"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

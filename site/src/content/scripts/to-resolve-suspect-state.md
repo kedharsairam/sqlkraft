@@ -1,7 +1,7 @@
 ---
-name: 'To Resolve Suspect State'
-title: 'To Resolve Suspect State'
-description: 'Steps to Resolve Suspect State:'
+name: "To Resolve Suspect State"
+title: "To Resolve Suspect State"
+description: "Steps to Resolve Suspect State:"
 category: backup-restore
 tags: ["backup-restore"]
 pubDate: 2025-03-15
@@ -19,7 +19,7 @@ pubDate: 2025-03-15
 --5--if corruption found, check backup is available or not and then take action.
 
 --Method1:
---Without detaching the database we can rebuild the log file. 
+--Without detaching the database we can rebuild the log file.
 --First rename/delete the old log file and create a new one using command below.
 ALTER DATABASE databasename
 REBUILD LOG ON (NAME = logfilename, FILENAME='path\filename.LDF')

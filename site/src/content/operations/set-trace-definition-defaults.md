@@ -3,15 +3,15 @@ title: "Set Trace Definition Defaults"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   The trace definition default is the default trace template that is used for each provider or
-  
+
   server. You can set default trace templat
 tags:
   - "profiler"

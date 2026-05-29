@@ -3,23 +3,23 @@ title: "srv_paramlen"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Returns the data length of a remote stored procedure call parameter. This function has been
-  
+
   superseded by the
-  
+
   function.
-  
+
   srvproc
-  
+
   Is a pointer to the
 tags:
   - "clr-integration"

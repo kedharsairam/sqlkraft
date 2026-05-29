@@ -3,15 +3,15 @@ title: "Service Broker Configuration Notice Service"
 topic: "service-broker"
 description: |
   09/12/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   You can create a Broker Configuration Notice (BCN) service on an initiating server which
-  
+
   automatically binds conversations to a specif
 tags:
   - "service-broker"

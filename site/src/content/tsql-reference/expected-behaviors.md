@@ -1,8 +1,8 @@
 ---
-name: 'Expected behaviors'
-title: 'Expected behaviors'
-category: 'statements'
-description: 'The following sample demonstrates the INNER JOIN with filtering on multiple tables. Use when'
+name: "Expected behaviors"
+title: "Expected behaviors"
+category: "statements"
+description: "The following sample demonstrates the INNER JOIN with filtering on multiple tables. Use when"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -55,8 +55,8 @@ function
 
 2. Use
 
-
 ## syntax instead
+
 SQL
 
 SQL

@@ -3,17 +3,17 @@ title: "Create relationships"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This article describes how to create foreign key relationship
 tags:
   - "tables"

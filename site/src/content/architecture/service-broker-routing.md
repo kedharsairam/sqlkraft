@@ -3,19 +3,19 @@ title: "Service Broker Routing"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes the details of how Service Broker routes messages. For an overview, see
-  
+
   Routes
-  
+
   .
-  
+
   For most applications, a sim
 tags:
   - "service-broker"

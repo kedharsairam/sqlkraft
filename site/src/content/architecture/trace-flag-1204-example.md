@@ -1,7 +1,7 @@
 ---
-title: 'Trace flag 1204 example'
-topic: 'query-processing'
-description: 'Identifies the database lock.'
+title: "Trace flag 1204 example"
+topic: "query-processing"
+description: "Identifies the database lock."
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -50,8 +50,8 @@ depends upon the subresource that
 
 has deadlocked. For example,
 
-
 ## returns
+
 . For
 
 more information about

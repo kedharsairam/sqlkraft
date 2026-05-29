@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_getdefaultdatatypemapping'
-title: 'sp_getdefaultdatatypemapping'
-category: 'general'
-description: 'Returns information on the default mapping for the specified data type between SQL Server and a non-SQL Server database management system (DBMS). This stored procedure is executed at the Distributor on any database. Transact-SQL syntax conventions The name of the DBMS from which the data types are mapped. can be one of the following values:'
+name: "sys.sp_getdefaultdatatypemapping"
+title: "sp_getdefaultdatatypemapping"
+category: "general"
+description: "Returns information on the default mapping for the specified data type between SQL Server and a non-SQL Server database management system (DBMS). This stored procedure is executed at the Distributor on any database. Transact-SQL syntax conventions The name of the DBMS from which the data types are mapped. can be one of the following values:"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

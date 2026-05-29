@@ -3,19 +3,19 @@ title: "Save Trace Results to a File"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to save trace results to a file by using SQL Server Profiler.
-  
+
   1. On the
-  
+
   menu, select
-  
+
   , and then connect t
 tags:
   - "profiler"

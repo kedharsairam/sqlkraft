@@ -3,18 +3,18 @@ title: "Remove availability group"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   09/04/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article describes how to delete (drop) an Always On availability group by using SQL Server
-  
-  Management Studio, Transact-SQL, or PowerShell in SQL 
+
+  Management Studio, Transact-SQL, or PowerShell in SQL
 tags:
   - "high-availability"
   - "remove-availability-group"

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_delete_job'
-title: 'sp_delete_job'
-category: 'general'
-description: 'Deletes a job from the SQL Server Agent service. Transact-SQL syntax conventions The identification number of the job to be deleted. must be specified; both can''t be specified. The name of the job to be deleted. must be specified; both can''t be specified. Identified for informational purposes only. Not supported. Future compatibility is not'
+name: "sys.sp_delete_job"
+title: "sp_delete_job"
+category: "general"
+description: "Deletes a job from the SQL Server Agent service. Transact-SQL syntax conventions The identification number of the job to be deleted. must be specified; both can't be specified. The name of the job to be deleted. must be specified; both can't be specified. Identified for informational purposes only. Not supported. Future compatibility is not"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

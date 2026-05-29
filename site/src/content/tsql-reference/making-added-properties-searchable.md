@@ -1,8 +1,8 @@
 ---
-name: 'Making Added Properties Searchable'
-title: 'Making Added Properties Searchable'
-category: 'statements'
-description: 'Full-text search maps a search property to a full-text index by using its property set GUID and'
+name: "Making Added Properties Searchable"
+title: "Making Added Properties Searchable"
+category: "statements"
+description: "Full-text search maps a search property to a full-text index by using its property set GUID and"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

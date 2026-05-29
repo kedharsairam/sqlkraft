@@ -3,17 +3,17 @@ title: "Permissions"
 topic: "profiler"
 description: |
   SQL Server Profiler templates and
-  
+
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server Profiler shows how SQL Server resolves queries internally. This allows administrators
-  
+
   to
 tags:
   - "profiler"

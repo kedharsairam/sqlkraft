@@ -1,7 +1,7 @@
 ---
-title: 'Delete operation without optimized locking'
-topic: 'locking'
-description: 'ensures that no new names beginning with the letter'
+title: "Delete operation without optimized locking"
+topic: "locking"
+description: "ensures that no new names beginning with the letter"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

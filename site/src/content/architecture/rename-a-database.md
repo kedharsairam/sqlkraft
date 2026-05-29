@@ -3,17 +3,17 @@ title: "Rename a database"
 topic: "collation"
 description: |
   08/07/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to rename a user-defined database in SQL Server, Azure SQL
-  
+
   Database, or Azure SQL Manag
 tags:
   - "collation"

@@ -3,15 +3,15 @@ title: "Filter events in a trace"
 topic: "profiler"
 description: |
   06/05/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Filters limit the events collected in a trace. If a filter isn't set, all events of the selected event
-  
+
   classes are returned in the tra
 tags:
   - "profiler"

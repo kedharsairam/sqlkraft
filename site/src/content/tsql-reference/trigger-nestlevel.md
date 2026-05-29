@@ -1,8 +1,8 @@
 ---
-name: 'TRIGGER_NESTLEVEL'
-title: 'TRIGGER_NESTLEVEL'
-category: 'statements'
-description: ''
+name: "TRIGGER_NESTLEVEL"
+title: "TRIGGER_NESTLEVEL"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
-name: 'To Log Who Created a Job and Renamed a Job'
-title: 'To Log Who Created a Job and Renamed a Job'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To Log Who Created a Job and Renamed a Job"
+title: "To Log Who Created a Job and Renamed a Job"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["agent-job", "automation"]
 pubDate: 2025-03-15
@@ -40,7 +40,7 @@ BEGIN
     IF EXISTS (SELECT * FROM inserted)
     BEGIN
         -- Job created or updated
-    
+
         INSERT INTO dbo.JobChanges (JobName, OldJobName, ChangeType, ChangeTime, LoginName, JobOwner )
         SELECT name, NULL, CASE WHEN EXISTS (SELECT * FROM deleted) THEN 'Updated' ELSE 'Created' END, GETDATE(), @loginName, SUSER_SNAME(owner_sid)
         FROM inserted

@@ -1,8 +1,8 @@
 ---
-name: 'sys.fn_cdc_map_time_to_lsn'
-title: 'sys.fn_cdc_map_time_to_lsn'
-category: 'date-time'
-description: 'Returns the log sequence number (LSN) value from the system table for the specified time. You can use this function to systematically map datetime ranges into the LSN-based range needed by the change data cdc.fn_cdc_get_all_changes_<capture_instance> cdc.fn_cdc_get_net_changes_<capture_instance> to return data changes within that range. Transact-SQL syntax conventions Used to identify a distinct L'
+name: "sys.fn_cdc_map_time_to_lsn"
+title: "sys.fn_cdc_map_time_to_lsn"
+category: "date-time"
+description: "Returns the log sequence number (LSN) value from the system table for the specified time. You can use this function to systematically map datetime ranges into the LSN-based range needed by the change data cdc.fn_cdc_get_all_changes_<capture_instance> cdc.fn_cdc_get_net_changes_<capture_instance> to return data changes within that range. Transact-SQL syntax conventions Used to identify a distinct L"
 tags: ["date-time", "function"]
 pubDate: 2026-05-29
 syntax: |
@@ -20,7 +20,7 @@ syntax: |
 
 ## Description
 
-Returns the log sequence number (LSN) value from the system table for the specified time. You can use this function to systematically map datetime ranges into the LSN-based range needed by the change data cdc.fn_cdc_get_all_changes_<capture_instance> cdc.fn_cdc_get_net_changes_<capture_instance> to return data changes within that range. Transact-SQL syntax conventions Used to identify a distinct LSN value in within the
+Returns the log sequence number (LSN) value from the system table for the specified time. You can use this function to systematically map datetime ranges into the LSN-based range needed by the change data cdc.fn*cdc_get_all_changes*<capture*instance> cdc.fn_cdc_get_net_changes*<capture_instance> to return data changes within that range. Transact-SQL syntax conventions Used to identify a distinct LSN value in within the
 
 ## Syntax
 

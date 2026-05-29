@@ -1,10 +1,10 @@
 ---
-name: 'MATCH'
-title: 'MATCH'
-category: 'statements'
-description: ''
+name: "MATCH"
+title: "MATCH"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

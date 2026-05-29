@@ -3,15 +3,15 @@ title: "Canonical forms & pattern restrictions"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The XSD pattern facet allows for the restriction of the lexical space of simple types. When a
 tags:
   - "xml-data"

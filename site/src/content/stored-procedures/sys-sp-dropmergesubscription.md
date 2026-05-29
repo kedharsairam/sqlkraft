@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_dropmergesubscription'
-title: 'sp_dropmergesubscription'
-category: 'general'
-description: 'Drops a subscription to a merge publication and its associated Merge Agent. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions already exist and conform to the rules for The name of the subscription database.'
+name: "sys.sp_dropmergesubscription"
+title: "sp_dropmergesubscription"
+category: "general"
+description: "Drops a subscription to a merge publication and its associated Merge Agent. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions already exist and conform to the rules for The name of the subscription database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_helpindex'
-title: 'sp_helpindex'
-category: 'general'
-description: 'SQL database in Microsoft Fabric Reports information about the indexes on a table or view. Transact-SQL syntax conventions The qualified or nonqualified name of a user-defined table or view. , with no default. Quotation marks are required only if a qualified table or view name is specified. If a fully qualified name, including a database name, is provided, the database name must be the name of the'
+name: "sys.sp_helpindex"
+title: "sp_helpindex"
+category: "general"
+description: "SQL database in Microsoft Fabric Reports information about the indexes on a table or view. Transact-SQL syntax conventions The qualified or nonqualified name of a user-defined table or view. , with no default. Quotation marks are required only if a qualified table or view name is specified. If a fully qualified name, including a database name, is provided, the database name must be the name of the"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

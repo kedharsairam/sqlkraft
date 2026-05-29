@@ -3,17 +3,17 @@ title: "Install SQL Server Java Language Extension"
 topic: "linux-operations"
 description: |
   07/11/2025
-  
+
   Applies to:
-  
+
   SQL Server 2019 (15.x) - Linux and later versions
-  
+
   Learn how to install the
-  
+
   Java Language Extension
-  
+
   component for SQL Server on Linux. The Java
-  
+
   Language Extension is part o
 tags:
   - "linux-operations"

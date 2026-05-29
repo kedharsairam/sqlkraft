@@ -1,7 +1,7 @@
 ---
-title: 'Recompile execution plans'
-topic: 'query-processing'
-description: 'An ad hoc execution plan is inserted and isn''t referenced again before memory pressure'
+title: "Recompile execution plans"
+topic: "query-processing"
+description: "An ad hoc execution plan is inserted and isn't referenced again before memory pressure"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -42,8 +42,8 @@ will also cause plans
 
 to be removed from plan cache. You can find the list of these configuration settings in the
 
-
 ## Remarks section of the
+
 DBCC FREEPROCCACHE
 
 article. A configuration change like this will log

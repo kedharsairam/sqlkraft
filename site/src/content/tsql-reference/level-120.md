@@ -1,8 +1,8 @@
 ---
-name: 'level 120'
-title: 'level 120'
-category: 'statements'
-description: 'Database improvements in handling some data types and'
+name: "level 120"
+title: "level 120"
+category: "statements"
+description: "Database improvements in handling some data types and"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

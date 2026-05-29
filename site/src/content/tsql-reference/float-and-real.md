@@ -1,8 +1,8 @@
 ---
-name: 'float and real'
-title: 'float and real'
-category: 'data-types'
-description: '### double precision'
+name: "float and real"
+title: "float and real"
+category: "data-types"
+description: "### double precision"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

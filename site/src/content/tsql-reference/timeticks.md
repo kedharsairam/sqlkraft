@@ -1,8 +1,8 @@
 ---
-name: '@@TIMETICKS'
-title: '@@TIMETICKS'
-category: 'variables'
-description: '@@PACK_RECEIVED (Transact-SQL)'
+name: "@@TIMETICKS"
+title: "@@TIMETICKS"
+category: "variables"
+description: "@@PACK_RECEIVED (Transact-SQL)"
 tags: ["tsql", "variables"]
 pubDate: 2026-05-29
 ---

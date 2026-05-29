@@ -1,8 +1,8 @@
 ---
-name: 'Predicates'
-title: 'Predicates'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Predicates"
+title: "Predicates"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

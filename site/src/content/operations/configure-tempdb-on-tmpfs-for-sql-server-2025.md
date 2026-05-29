@@ -3,18 +3,18 @@ title: "Configure tempdb on tmpfs for SQL Server 2025"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server 2025 (17.x) - Linux
-  
+
   This article guides you to enable and run
-  
+
   database files on the
-  
+
   filesystem in SQL
-  
+
   Server 2025 (17.x).
-  
-  SQL Server on Linux and containers traditionally 
+
+  SQL Server on Linux and containers traditionally
 tags:
   - "linux-operations"
   - "configure-tempdb-on-tmpfs-for-sql-server-2025"

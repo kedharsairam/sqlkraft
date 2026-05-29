@@ -1,7 +1,7 @@
 ---
-title: 'Example A'
-topic: 'query-processing'
-description: 'statement is executed under a transaction. Because of the'
+title: "Example A"
+topic: "query-processing"
+description: "statement is executed under a transaction. Because of the"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

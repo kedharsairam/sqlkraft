@@ -1,8 +1,8 @@
 ---
-name: 'sys.crypt_properties'
-title: 'sys.crypt_properties'
-category: 'compatibility'
-description: 'The password that is required to decrypt the private key of the certificate or asymmetric key. This clause is only required if the private key isn''t protected by the database master key. Specifies the signed, binary large object (BLOB) of the module. This clause is useful if you want to ship a module without shipping the private key. When you use this clause, only the module, signature, and public'
+name: "sys.crypt_properties"
+title: "sys.crypt_properties"
+category: "compatibility"
+description: "The password that is required to decrypt the private key of the certificate or asymmetric key. This clause is only required if the private key isn't protected by the database master key. Specifies the signed, binary large object (BLOB) of the module. This clause is useful if you want to ship a module without shipping the private key. When you use this clause, only the module, signature, and public"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---
@@ -63,11 +63,9 @@ DROP SIGNATURE (Transact-SQL)
 
 ## Code Blocks
 
-
 ```sql
 EXECUTE AS
 ```
-
 
 ```sql
 sys.crypt_properties

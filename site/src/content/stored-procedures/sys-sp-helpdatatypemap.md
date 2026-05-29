@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_helpdatatypemap'
-title: 'sp_helpdatatypemap'
-category: 'general'
-description: 'Returns information on the defined data type mappings between SQL Server and non-SQL Server database management systems (DBMS). This stored procedure is executed at the Transact-SQL syntax conventions The name of the DBMS from which the data types are mapped. can be one of the following values. The source is a SQL Server database. The source is an Oracle database.'
+name: "sys.sp_helpdatatypemap"
+title: "sp_helpdatatypemap"
+category: "general"
+description: "Returns information on the defined data type mappings between SQL Server and non-SQL Server database management systems (DBMS). This stored procedure is executed at the Transact-SQL syntax conventions The name of the DBMS from which the data types are mapped. can be one of the following values. The source is a SQL Server database. The source is an Oracle database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

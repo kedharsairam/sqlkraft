@@ -1,8 +1,8 @@
 ---
-name: 'STSymDifference (geography Data Type)'
-title: 'STSymDifference (geography Data Type)'
-category: 'data-types'
-description: ''
+name: "STSymDifference (geography Data Type)"
+title: "STSymDifference (geography Data Type)"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

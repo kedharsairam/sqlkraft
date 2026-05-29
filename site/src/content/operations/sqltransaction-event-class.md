@@ -3,17 +3,17 @@ title: "SQLTransaction Event Class"
 topic: "event-classes"
 description: |
   SQLTransaction Event Class
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Use the SQLTransaction event class to monitor when transactions b
 tags:
   - "event-classes"

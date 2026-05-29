@@ -1,8 +1,8 @@
 ---
-name: 'Syntax options'
-title: 'Syntax options'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Syntax options"
+title: "Syntax options"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -27,12 +27,12 @@ Transact-SQL syntax conventions
 
 Simple CREATE TABLE syntax (common if not using options):
 
-
 ## syntaxsql
+
 Disk-based CREATE TABLE syntax:
 
-
 ## syntaxsql
+
 ７
 
 Note
@@ -49,8 +49,8 @@ For reference to Warehouse in Microsoft Fabric, visit
 
 Memory optimized CREATE TABLE syntax:
 
-
 ## syntaxsql
+
 ```sql
 CREATE
 TABLE

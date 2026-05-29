@@ -3,15 +3,15 @@ title: "Considerations for Replaying Traces"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server Profiler can't replay the following kinds of traces:
-  
+
   Traces that contain transactional replication and other transaction lo
 tags:
   - "profiler"

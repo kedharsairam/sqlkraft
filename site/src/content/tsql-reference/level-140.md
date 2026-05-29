@@ -1,8 +1,8 @@
 ---
-name: 'level 140'
-title: 'level 140'
-category: 'statements'
-description: 'consecutive executions. For more information,'
+name: "level 140"
+title: "level 140"
+category: "statements"
+description: "consecutive executions. For more information,"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

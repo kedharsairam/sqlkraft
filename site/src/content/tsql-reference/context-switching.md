@@ -1,8 +1,8 @@
 ---
-name: 'Context switching'
-title: 'Context switching'
-category: 'statements'
-description: 'data types can be specified that allow for'
+name: "Context switching"
+title: "Context switching"
+category: "statements"
+description: "data types can be specified that allow for"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -51,8 +51,8 @@ respectively, or the statement fails.
 
 Additionally,
 
-
 ## permissions must be granted on the principal. Unless the caller is the
+
 database owner or is a member of the
 
 fixed server role, the principal must exist even

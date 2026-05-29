@@ -1,7 +1,7 @@
 ---
-name: 'To Move User Database Files to Different Locati'
-title: 'To Move User Database Files to Different Locati'
-description: 'identify the database files location'
+name: "To Move User Database Files to Different Locati"
+title: "To Move User Database Files to Different Locati"
+description: "identify the database files location"
 category: database
 tags: ["database", "user"]
 pubDate: 2025-03-15

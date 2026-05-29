@@ -3,15 +3,15 @@ title: "Operate failover cluster instances"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article explains how to operate a SQL Server failover cluster instance (FCI) on Linux. If you
-  
+
   haven't created a SQL Server FCI on Linux, see
-  
+
   Configure failove
 tags:
   - "linux-operations"

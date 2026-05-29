@@ -3,19 +3,19 @@ title: "Import"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to import a trace template file (.tdf) by using SQL Server Profiler.
-  
+
   1. On the
-  
+
   menu, select
-  
+
   , and then se
 tags:
   - "profiler"

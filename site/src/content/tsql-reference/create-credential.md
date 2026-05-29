@@ -1,8 +1,8 @@
 ---
-name: 'CREATE CREDENTIAL'
-title: 'CREATE CREDENTIAL'
-category: 'statements'
-description: '#### CREATE DATABASE SCOPED CREDENTIAL'
+name: "CREATE CREDENTIAL"
+title: "CREATE CREDENTIAL"
+category: "statements"
+description: "#### CREATE DATABASE SCOPED CREDENTIAL"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'Graph functions'
-title: 'Graph functions'
-category: 'statements'
-description: 'SQL Server 2017 (14.x) and later versions'
+name: "Graph functions"
+title: "Graph functions"
+category: "statements"
+description: "SQL Server 2017 (14.x) and later versions"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -25,8 +25,8 @@ Use the functions described on the pages in this section to extract values from,
 
 values to, the pseudo-columns used in SQL Graph.
 
-
 ## Description
+
 EDGE_ID_FROM_PARTS
 
 Construct an

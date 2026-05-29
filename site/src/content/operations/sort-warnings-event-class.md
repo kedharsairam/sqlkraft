@@ -3,15 +3,15 @@ title: "Sort Warnings Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Sort Warnings event class indicates that sort operations do not fit into memory. This doe
 tags:
   - "event-classes"

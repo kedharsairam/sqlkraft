@@ -1,8 +1,8 @@
 ---
-name: 'ALTER AUTHORIZATION for databases'
-title: 'ALTER AUTHORIZATION for databases'
-category: 'statements'
-description: 'The new owner principal must be one of the following:'
+name: "ALTER AUTHORIZATION for databases"
+title: "ALTER AUTHORIZATION for databases"
+category: "statements"
+description: "The new owner principal must be one of the following:"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

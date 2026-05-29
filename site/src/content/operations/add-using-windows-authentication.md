@@ -3,11 +3,11 @@ title: "Add using Windows authentication"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   To set up a witness for a database, the database owner assigns a Database Engine instance to
-  
+
   the role of witness server. The witness server instance can run on the same compu
 tags:
   - "high-availability"

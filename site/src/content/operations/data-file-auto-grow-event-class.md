@@ -3,19 +3,19 @@ title: "Data File Auto Grow Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event class indicates that the data file grew automatically. This event
-  
+
   is not triggere
 tags:
   - "event-classes"

@@ -3,18 +3,18 @@ title: "Install SQL Server Agent"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article describes how to enable or install the SQL Server Agent on Linux.
-  
+
   The
-  
+
   SQL Server Agent
-  
-  runs scheduled SQL Server jobs. Starting with SQL Server 2017 
+
+  runs scheduled SQL Server jobs. Starting with SQL Server 2017
 tags:
   - "linux-operations"
   - "install-sql-server-agent"

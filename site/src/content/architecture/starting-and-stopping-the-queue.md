@@ -3,17 +3,17 @@ title: "Starting and Stopping the Queue"
 topic: "service-broker"
 description: |
   09/08/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Use the
-  
+
   statement to start and stop a queue. When a queue is started, the queue
-  
+
   is available to send and receive messages. When a que
 tags:
   - "service-broker"

@@ -1,8 +1,8 @@
 ---
-name: 'IsDescendantOf (Database Engine)'
-title: 'IsDescendantOf (Database Engine)'
-category: 'statements'
-description: '### CLR return type:SqlBoolean'
+name: "IsDescendantOf (Database Engine)"
+title: "IsDescendantOf (Database Engine)"
+category: "statements"
+description: "### CLR return type:SqlBoolean"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

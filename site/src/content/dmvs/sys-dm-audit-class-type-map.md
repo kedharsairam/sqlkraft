@@ -1,11 +1,11 @@
 ---
-name: 'sys.dm_audit_class_type_map'
-title: 'sys.dm_audit_class_type_map'
-category: 'security-audit'
-description: 'Returns a table that lists securable classes that can be mapped to the audit log. For more information about SQL Server Audit, see The class type of the entity that was audited. Maps to written to the audit log returned by The name of the class of the object that was audited. The securable class that maps to the map to a securable object. Can be joined with This view is visible to the public. func'
+name: "sys.dm_audit_class_type_map"
+title: "sys.dm_audit_class_type_map"
+category: "security-audit"
+description: "Returns a table that lists securable classes that can be mapped to the audit log. For more information about SQL Server Audit, see The class type of the entity that was audited. Maps to written to the audit log returned by The name of the class of the object that was audited. The securable class that maps to the map to a securable object. Can be joined with This view is visible to the public. func"
 tags: ["security-audit", "dmv"]
 pubDate: 2026-05-29
-syntax: 'sys.dm_audit_actions.'
+syntax: "sys.dm_audit_actions."
 ---
 
 ## Description
@@ -80,5 +80,4 @@ class_type
 class_desc
 ```
 
-
-*(... and 6 more examples)*
+_(... and 6 more examples)_

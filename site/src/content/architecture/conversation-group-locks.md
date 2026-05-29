@@ -3,15 +3,15 @@ title: "Conversation Group Locks"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker uses conversation group locks to guarantee that only one queue reader can
-  
+
   work with a related set of messages at any gi
 tags:
   - "service-broker"

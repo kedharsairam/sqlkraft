@@ -1,8 +1,8 @@
 ---
-name: 'APP_NAME'
-title: 'APP_NAME'
-category: 'statements'
-description: '### Connect to Database'
+name: "APP_NAME"
+title: "APP_NAME"
+category: "statements"
+description: "### Connect to Database"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

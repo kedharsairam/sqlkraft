@@ -1,8 +1,8 @@
 ---
-name: 'Included columns in indexes'
-title: 'Included columns in indexes'
-category: 'predicates'
-description: 'constraint can contain a computed column as long as it satisfies all'
+name: "Included columns in indexes"
+title: "Included columns in indexes"
+category: "predicates"
+description: "constraint can contain a computed column as long as it satisfies all"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

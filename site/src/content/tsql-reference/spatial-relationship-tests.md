@@ -1,10 +1,10 @@
 ---
-name: 'Spatial relationship tests'
-title: 'Spatial relationship tests'
-category: 'data-types'
-description: ''
+name: "Spatial relationship tests"
+title: "Spatial relationship tests"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

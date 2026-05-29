@@ -1,11 +1,11 @@
 ---
-name: 'sys.dm_db_log_space_usage'
-title: 'sys.dm_db_log_space_usage'
-category: 'log'
-description: 'SQL database in Microsoft Fabric Returns space usage information for the transaction log. In Azure SQL Database, the values are unique within a single database or an elastic pool, but not within a The occupied size of the log as a percent of the total The amount of space used since the last log backup SQL Server 2014 (12.x) and later versions, SQL Server 2019 (15.x) and earlier versions require SQ'
+name: "sys.dm_db_log_space_usage"
+title: "sys.dm_db_log_space_usage"
+category: "log"
+description: "SQL database in Microsoft Fabric Returns space usage information for the transaction log. In Azure SQL Database, the values are unique within a single database or an elastic pool, but not within a The occupied size of the log as a percent of the total The amount of space used since the last log backup SQL Server 2014 (12.x) and later versions, SQL Server 2019 (15.x) and earlier versions require SQ"
 tags: ["log", "dmv"]
 pubDate: 2026-05-29
-syntax: 'total_log_size_in_bytes'
+syntax: "total_log_size_in_bytes"
 ---
 
 ## Description

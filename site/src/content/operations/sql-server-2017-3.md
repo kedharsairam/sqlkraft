@@ -3,11 +3,11 @@ title: "SQL Server 2017"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server 2017 (14.x) on Linux
-  
+
   The following release notes apply to SQL Server 2017 (14.x) running on Linux. This article is
-  
+
   broken into sections for each release. For detailed support
 tags:
   - "linux-operations"

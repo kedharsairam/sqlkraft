@@ -1,7 +1,7 @@
 ---
-title: 'Customize transaction isolation level'
-topic: 'io-fundamentals'
-description: 'an application doesn''t trap the error, the application can proceed unaware that an individual'
+title: "Customize transaction isolation level"
+topic: "io-fundamentals"
+description: "an application doesn't trap the error, the application can proceed unaware that an individual"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

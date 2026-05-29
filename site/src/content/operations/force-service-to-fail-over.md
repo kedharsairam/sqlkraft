@@ -3,17 +3,17 @@ title: "Force service to fail over"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   In high-performance mode and high-safety mode without automatic failover, if the principal
-  
+
   server fails while the mirror server is available, the data
 tags:
   - "high-availability"

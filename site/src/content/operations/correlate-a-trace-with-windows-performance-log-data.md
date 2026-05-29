@@ -3,15 +3,15 @@ title: "Correlate a Trace with Windows Performance Log Data"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Using SQL Server Profiler, you can open a Microsoft Windows performance log, choose the
-  
+
   counters you want to correlate with a trace, a
 tags:
   - "profiler"

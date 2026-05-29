@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_help_fulltext_columns_cursor'
-title: 'sp_help_fulltext_columns_cursor'
-category: 'general'
-description: 'Uses a cursor to return the columns designated for full-text indexing. Transact-SQL syntax conventions is an OUTPUT parameter of type . The resulting cursor is a read-only, The one- or two-part table name for which full-text index information is requested. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applicatio'
+name: "sys.sp_help_fulltext_columns_cursor"
+title: "sp_help_fulltext_columns_cursor"
+category: "general"
+description: "Uses a cursor to return the columns designated for full-text indexing. Transact-SQL syntax conventions is an OUTPUT parameter of type . The resulting cursor is a read-only, The one- or two-part table name for which full-text index information is requested. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applicatio"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_add_jobschedule'
-title: 'sp_add_jobschedule'
-category: 'general'
-description: 'Creates a schedule for a SQL Server Agent job. Transact-SQL syntax conventions , most, but not all SQL Server Agent features are'
+name: "sys.sp_add_jobschedule"
+title: "sp_add_jobschedule"
+category: "general"
+description: "Creates a schedule for a SQL Server Agent job. Transact-SQL syntax conventions , most, but not all SQL Server Agent features are"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -3,15 +3,15 @@ title: "Configure SSIS"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   You run the
-  
+
   configuration script when you install SQL Server Integration Services (SSIS)
-  
+
   for Red Hat Enterprise Linux and Ubuntu. For more info about installing SS
 tags:
   - "linux-operations"

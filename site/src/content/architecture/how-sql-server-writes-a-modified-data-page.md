@@ -1,7 +1,7 @@
 ---
-title: 'How SQL Server writes a modified data page'
-topic: 'query-processing'
-description: 'Azure SQL Managed Instance'
+title: "How SQL Server writes a modified data page"
+topic: "query-processing"
+description: "Azure SQL Managed Instance"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

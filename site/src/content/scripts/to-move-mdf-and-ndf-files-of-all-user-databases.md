@@ -1,7 +1,7 @@
 ---
-name: 'To Move Mdf and Ndf Files of all User Databases'
-title: 'To Move Mdf and Ndf Files of all User Databases'
-description: 'SQL Server diagnostic script for database operations.'
+name: "To Move Mdf and Ndf Files of all User Databases"
+title: "To Move Mdf and Ndf Files of all User Databases"
+description: "SQL Server diagnostic script for database operations."
 category: database
 tags: ["database", "user"]
 pubDate: 2025-03-15
@@ -14,28 +14,28 @@ DECLARE @logpath NVARCHAR(260) = 'SQLLogs';
 DECLARE @Statements NVARCHAR(MAX);
 
 WITH DatabaseFilesCTE AS (
-    SELECT 
-        d.name AS DatabaseName, 
+    SELECT
+        d.name AS DatabaseName,
         f.name AS LogicalName,
         RIGHT(f.physical_name, CHARINDEX('\', REVERSE(f.physical_name)) - 1) AS FileName,
         f.type_desc AS TypeofFile,
-        CASE 
+        CASE
             WHEN f.type_desc = 'ROWS' THEN @datapath
             WHEN f.type_desc = 'LOG' THEN @logpath
             ELSE '' -- Handle other file types if needed
         END AS NewPath
-    FROM 
+    FROM
         sys.master_files f
-    INNER JOIN 
+    INNER JOIN
         sys.databases d ON d.database_id = f.database_id
-    WHERE 
+    WHERE
         d.name NOT IN ('master', 'model', 'msdb', 'tempdb')
         AND f.type_desc IN ('ROWS', 'LOG')
 )
-SELECT 
+SELECT
     @Statements = COALESCE(@Statements + CHAR(13) + CHAR(10), '') +
         'ALTER DATABASE [' + DatabaseName + '] MODIFY FILE (NAME = [' + LogicalName + '], FILENAME = ''' + NewPath + '\' + FileName + ''')'
-FROM 
+FROM
     DatabaseFilesCTE;
 
 PRINT @Statements;

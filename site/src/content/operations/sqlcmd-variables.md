@@ -3,17 +3,17 @@ title: "SQLCMD variables"
 topic: "ssms"
 description: |
   SQLCMD variables overview
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   SQLCMD variables are used in SQL projects to create dynamically re
 tags:
   - "ssms"

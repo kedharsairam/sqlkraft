@@ -3,22 +3,22 @@ title: "Filter server process IDs (SPIDs) in a trace"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to filter session identifiers (SPIDs) in a trace by using SQL Server
-  
+
   Profiler.
-  
+
   1. On the
-  
+
   menu, select
-  
-  , 
+
+  ,
 tags:
   - "profiler"
   - "filter-server-process-ids-spids-in-a-trace"

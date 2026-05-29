@@ -1,8 +1,8 @@
 ---
-name: 'Supported objects'
-title: 'Supported objects'
-category: 'statements'
-description: 'Starting with SQL Server 2019 (15.x),'
+name: "Supported objects"
+title: "Supported objects"
+category: "statements"
+description: "Starting with SQL Server 2019 (15.x),"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,11 +1,11 @@
 ---
-name: 'sys.dm_exec_sql_text'
-title: 'sys.dm_exec_sql_text'
-category: 'execution'
-description: 'Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Size of the unpars'
+name: "sys.dm_exec_sql_text"
+title: "sys.dm_exec_sql_text"
+category: "execution"
+description: "Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Size of the unpars"
 tags: ["execution", "dmv"]
 pubDate: 2026-05-29
-syntax: 'sys.dm_exec_sql_text(sql_handle | plan_handle)'
+syntax: "sys.dm_exec_sql_text(sql_handle | plan_handle)"
 ---
 
 ## Description
@@ -22,72 +22,49 @@ sys.dm_exec_sql_text(sql_handle | plan_handle)
 
 Azure SQL Database
 
-
 Azure SQL Managed Instance
-
 
 SQL database in Microsoft Fabric
 
-
 Returns the text of the SQL batch that is identified by the specified
-
 
 . This table-
 
-
 valued function replaces the system function
-
 
 Is a token that uniquely identifies a batch that has executed or is currently executing.
 
-
 can be obtained from the following dynamic management objects:
-
 
 sys.dm_exec_query_stats
 
-
 sys.dm_exec_requests
-
 
 sys.dm_exec_cursors
 
-
 sys.dm_exec_xml_handles
-
 
 sys.dm_exec_query_memory_grants
 
-
 sys.dm_exec_connections
 
-
 plan_handle
-
 
 Is a token that uniquely identifies a query execution plan for a batch that has executed and its
 
-
 plan resides in the plan cache, or is currently executing.
 
-
 plan_handle
 
-
 plan_handle
-
 
 can be obtained from the following dynamic management objects:
 
-
 sys.dm_exec_cached_plans (Transact-SQL)
-
 
 sys.dm_exec_query_stats (Transact-SQL)
 
-
 sys.dm_exec_requests (Transact-SQL)
-
 
 ## Remarks
 

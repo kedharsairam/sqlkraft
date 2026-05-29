@@ -1,7 +1,7 @@
 ---
-title: 'Use storage caches with SQL Server'
-topic: 'query-processing'
-description: 'Most storage device caching controllers perform write caching. You can''t always disable the write'
+title: "Use storage caches with SQL Server"
+topic: "query-processing"
+description: "Most storage device caching controllers perform write caching. You can't always disable the write"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -32,9 +32,9 @@ careful operator follows the OS recommendation to wait until all storage activit
 
 restarting the system, cached writes can still be present in the controller. When the
 
-+
+-
 
-+
+-
 
 key combination is pressed, or a hardware reset button is pressed, cached writes
 
@@ -68,8 +68,8 @@ alternate failure mode discussions, see:
 
 86903 SQL Server and caching disk controllers
 
-
 ## Description of logging and data storage algorithms that extend data reliability in SQL Server
+
 ```sql
 Ctrl
 ```

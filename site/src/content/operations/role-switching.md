@@ -3,19 +3,19 @@ title: "Role Switching"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Within the context of a database mirroring session, the principal and mirror roles are typically
-  
+
   interchangeable in a process known as
-  
+
   role switching
 tags:
   - "high-availability"

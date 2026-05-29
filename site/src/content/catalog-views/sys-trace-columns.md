@@ -1,11 +1,11 @@
 ---
-name: 'sys.trace_columns'
-title: 'sys.trace_columns'
-category: 'objects'
-description: 'Contains one row for each Extended Events action that is mapped to a SQL Trace column ID. This table is stored in the master database, in the sys schema. trace_column_id The ID of the SQL Trace column that is being mapped. The name of the Extended Events package where the mapped action The name of the Extended Events action that is mapped to the SQL You can use the following query to identify the '
+name: "sys.trace_columns"
+title: "sys.trace_columns"
+category: "objects"
+description: "Contains one row for each Extended Events action that is mapped to a SQL Trace column ID. This table is stored in the master database, in the sys schema. trace_column_id The ID of the SQL Trace column that is being mapped. The name of the Extended Events package where the mapped action The name of the Extended Events action that is mapped to the SQL You can use the following query to identify the "
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'SELECT * FROM sys.trace_columns'
+syntax: "SELECT * FROM sys.trace_columns"
 ---
 
 ## Description

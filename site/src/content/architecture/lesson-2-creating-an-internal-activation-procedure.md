@@ -3,16 +3,16 @@ title: "Lesson 2: Creating an Internal Activation Procedure"
 topic: "service-broker"
 description: |
   09/04/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   In this lesson, you learn to create a stored procedure to process messages from a Service
-  
-  Broker queue. You also learn how to specify 
+
+  Broker queue. You also learn how to specify
 tags:
   - "service-broker"
   - "lesson-2-creating-an-internal-activation-procedure"

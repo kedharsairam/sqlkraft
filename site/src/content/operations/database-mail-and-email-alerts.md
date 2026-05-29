@@ -3,23 +3,23 @@ title: "Database Mail and email alerts"
 topic: "linux-operations"
 description: |
   07/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article shows how to set up Database Mail and use it with SQL Server Agent (
-  
+
   ) on Linux.
-  
+
   SQL
-  
+
   SQL
-  
+
   Ｕ
-  
+
   Caution
 tags:
   - "linux-operations"

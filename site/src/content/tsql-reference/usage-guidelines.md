@@ -1,8 +1,8 @@
 ---
-name: 'Usage guidelines'
-title: 'Usage guidelines'
-category: 'statements'
-description: 'Specifies a column name in the common table expression. Duplicate names within a single CTE'
+name: "Usage guidelines"
+title: "Usage guidelines"
+category: "statements"
+description: "Specifies a column name in the common table expression. Duplicate names within a single CTE"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

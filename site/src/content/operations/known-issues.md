@@ -3,11 +3,11 @@ title: "Known issues"
 topic: "linux-operations"
 description: |
   SQL Server on Linux: Known issues
-  
+
   The following sections describe known issues with SQL Server on Linux.
-  
+
   The following table lists the most common issues with SQL Server on Linux.
-  
+
   The length of the
 tags:
   - "linux-operations"

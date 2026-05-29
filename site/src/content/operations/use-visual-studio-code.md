@@ -3,9 +3,9 @@ title: "Use Visual Studio Code"
 topic: "linux-operations"
 description: |
   Quickstart: Connect to and query a database
-  
+
   In this quickstart, you learn how to use the MSSQL extension for Visual Studio Code to connect to
-  
+
   a database, whether it's running locally, in a container
 tags:
   - "linux-operations"

@@ -3,13 +3,13 @@ title: "Red Hat Enterprise Linux (RHEL)"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This sample bash script installs SQL Server on Red Hat Enterprise Linux (RHEL) without
-  
+
   interactive input. It provides examples of installing the Database Engine, th
 tags:
   - "linux-operations"

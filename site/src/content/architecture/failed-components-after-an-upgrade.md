@@ -1,7 +1,7 @@
 ---
-title: 'Failed components after an upgrade'
-topic: 'query-processing'
-description: 'You might see the following behavior after the upgrade:'
+title: "Failed components after an upgrade"
+topic: "query-processing"
+description: "You might see the following behavior after the upgrade:"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

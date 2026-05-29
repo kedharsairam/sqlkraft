@@ -1,8 +1,8 @@
 ---
-name: 'Return result set'
-title: 'Return result set'
-category: 'statements'
-description: 'The vector used for search. It must be a variable or a column of'
+name: "Return result set"
+title: "Return result set"
+category: "statements"
+description: "The vector used for search. It must be a variable or a column of"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -71,8 +71,8 @@ This parameter is deprecated and maintained only for backward compatibility with
 
 version vector indexes. For latest version indexes, use
 
-
 ## syntax instead. New implementations should use the latest syntax.
+
 ### Ascending order only
 
 ### Post-filtering only

@@ -1,8 +1,8 @@
 ---
-name: 'definition but not in general subquery'
-title: 'definition but not in general subquery'
-category: 'queries'
-description: ''
+name: "definition but not in general subquery"
+title: "definition but not in general subquery"
+category: "queries"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

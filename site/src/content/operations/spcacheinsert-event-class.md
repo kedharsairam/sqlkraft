@@ -3,15 +3,15 @@ title: "SP:CacheInsert Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The SP:CacheInsert event class indicates that the stored procedure has been inserted into the
 tags:
   - "event-classes"

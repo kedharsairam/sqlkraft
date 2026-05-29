@@ -3,19 +3,19 @@ title: "Architecture - CLR Hosted Environment"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server integration with the .NET Framework common language runtime (CLR) enables
-  
+
   database programmers to use languages
 tags:
   - "clr-integration"

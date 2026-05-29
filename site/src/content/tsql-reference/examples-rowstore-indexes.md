@@ -1,8 +1,8 @@
 ---
-name: 'Examples: Rowstore indexes'
-title: 'Examples: Rowstore indexes'
-category: 'statements'
-description: 'This sample removes the archive compression, and only uses columnstore compression.'
+name: "Examples: Rowstore indexes"
+title: "Examples: Rowstore indexes"
+category: "statements"
+description: "This sample removes the archive compression, and only uses columnstore compression."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

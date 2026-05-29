@@ -3,19 +3,19 @@ title: "Operating Modes"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   09/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes the synchronous and asynchronous operating modes for database
-  
+
   mirroring sessions.
-  
+
   This section introduces a few terms that are c
 tags:
   - "high-availability"

@@ -3,11 +3,11 @@ title: "Driver & client support"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article describes considerations for client connectivity to Always On availability groups,
-  
+
   including prerequisites, restrictions, and recommendations for client configur
 tags:
   - "high-availability"

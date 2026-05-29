@@ -1,7 +1,7 @@
 ---
-name: 'To Grant or Revoke Access to View Masked Rows'
-title: 'To Grant or Revoke Access to View Masked Rows'
-description: 'to grant access'
+name: "To Grant or Revoke Access to View Masked Rows"
+title: "To Grant or Revoke Access to View Masked Rows"
+description: "to grant access"
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

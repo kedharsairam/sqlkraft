@@ -3,16 +3,16 @@ title: "Service Broker Programming Concepts"
 topic: "service-broker"
 description: |
   09/15/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker introduces concepts that are unique to developing a Service Broker application.
-  
-  Understanding these concepts helps you 
+
+  Understanding these concepts helps you
 tags:
   - "service-broker"
   - "service-broker-programming-concepts"

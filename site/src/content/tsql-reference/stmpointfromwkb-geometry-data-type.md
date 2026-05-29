@@ -1,8 +1,8 @@
 ---
-name: 'STMPointFromWKB (geometry Data Type)'
-title: 'STMPointFromWKB (geometry Data Type)'
-category: 'data-types'
-description: '### geometryMultiPoint'
+name: "STMPointFromWKB (geometry Data Type)"
+title: "STMPointFromWKB (geometry Data Type)"
+category: "data-types"
+description: "### geometryMultiPoint"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'Oracle'
-title: 'Oracle'
-category: 'operators'
-description: 'SQL) CONNECTION_OPTIONS'
+name: "Oracle"
+title: "Oracle"
+category: "operators"
+description: "SQL) CONNECTION_OPTIONS"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -245,8 +245,8 @@ DescribeAtPrepare (DAP)
 
 0 (Disabled)
 
-
 ## Description (n/a)
+
 None
 
 EditionName (EN)

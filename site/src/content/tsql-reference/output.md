@@ -1,8 +1,8 @@
 ---
-name: 'Output'
-title: 'Output'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Output"
+title: "Output"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -29,8 +29,8 @@ and logical IO is related to accessing data pages in memory (data cache).
 
 Transact-SQL syntax conventions
 
-
 ## syntaxsql
+
 The following table lists and describes the output items.
 
 Name of the table.

@@ -1,8 +1,8 @@
 ---
-name: 'Arguments'
-title: 'Arguments'
-category: 'statements'
-description: 'Specifies that statements can read rows that were modified by other transactions but not yet'
+name: "Arguments"
+title: "Arguments"
+category: "statements"
+description: "Specifies that statements can read rows that were modified by other transactions but not yet"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

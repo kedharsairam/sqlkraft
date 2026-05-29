@@ -3,15 +3,15 @@ title: "SqlPackage Import"
 topic: "sqlpackage"
 description: |
   SqlPackage Import parameters and properties
-  
+
   Article
-  
+
   •
-  
+
   11/21/2024
-  
+
   The SqlPackage Import action imports the schema and table data from a BACPAC file (.bacpac) into a new or empty
-  
+
   database in SQL Se
 tags:
   - "sqlpackage"

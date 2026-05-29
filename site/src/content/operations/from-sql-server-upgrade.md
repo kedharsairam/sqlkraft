@@ -3,9 +3,9 @@ title: "From SQL Server (upgrade)"
 topic: "migration"
 description: |
   In this guide, you learn how to upgrade your user databases from previous versions of SQL Server
-  
+
   to SQL Server 2025 (17.x) by using the SQL Server migration component in SQL Server
-  
+
   Management Studio
 tags:
   - "migration"

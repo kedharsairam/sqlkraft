@@ -3,22 +3,22 @@ title: "Set a Maximum Table Size for a Trace Table"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to set a maximum table size for trace tables by using SQL Server
-  
+
   Profiler.
-  
+
   1. On the
-  
+
   menu, select
-  
-  , and 
+
+  , and
 tags:
   - "profiler"
   - "set-a-maximum-table-size-for-a-trace-table"

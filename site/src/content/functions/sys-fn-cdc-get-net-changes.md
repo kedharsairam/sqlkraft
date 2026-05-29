@@ -1,16 +1,16 @@
 ---
-name: 'sys.fn_cdc_get_net_changes_'
-title: 'cdc.fn_cdc_get_net_changes_<capture_instance>'
-category: 'change-data-capture'
-description: '''D'' - delete operation ''M'' - either insert operation or update operation @update_flag_list> A bit flag that is named by appending _uflag to the column name. The flag takes on a non-NULL value only when row_filter_option and __CDC_OPERATION . It is set to 1 if the corresponding column was modified within the query window. function serves as a wrapper for the query function. The stored procedure is '
+name: "sys.fn_cdc_get_net_changes_"
+title: "cdc.fn_cdc_get_net_changes_<capture_instance>"
+category: "change-data-capture"
+description: "'D' - delete operation 'M' - either insert operation or update operation @update_flag_list> A bit flag that is named by appending _uflag to the column name. The flag takes on a non-NULL value only when row_filter_option and __CDC_OPERATION . It is set to 1 if the corresponding column was modified within the query window. function serves as a wrapper for the query function. The stored procedure is "
 tags: ["change-data-capture", "function"]
 pubDate: 2026-05-29
-syntax: 'cdc.fn_cdc_get_net_changes_<capture_instance>'
+syntax: "cdc.fn_cdc_get_net_changes_<capture_instance>"
 ---
 
 ## Description
 
-'D' - delete operation 'M' - either insert operation or update operation @update_flag_list> A bit flag that is named by appending _uflag to the column name. The flag takes on a non-NULL value only when row_filter_option and __CDC_OPERATION . It is set to 1 if the corresponding column was modified within the query window. function serves as a wrapper for the query function. The stored procedure is used to create the script for the wrapper. Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to systematically query for changes that occurred within an interval bounded by
+'D' - delete operation 'M' - either insert operation or update operation @update_flag_list> A bit flag that is named by appending \_uflag to the column name. The flag takes on a non-NULL value only when row_filter_option and \_\_CDC_OPERATION . It is set to 1 if the corresponding column was modified within the query window. function serves as a wrapper for the query function. The stored procedure is used to create the script for the wrapper. Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to systematically query for changes that occurred within an interval bounded by
 
 ## Syntax
 
@@ -30,13 +30,13 @@ Description
 
 @update_flag_list>
 
-A bit flag that is named by appending _uflag to the column name.
+A bit flag that is named by appending \_uflag to the column name.
 
 The flag takes on a non-NULL value only when
 
 row_filter_option
 
-and __CDC_OPERATION
+and \_\_CDC_OPERATION
 
 . It is set to 1 if the
 

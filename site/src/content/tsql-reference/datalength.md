@@ -1,8 +1,8 @@
 ---
-name: 'DATALENGTH'
-title: 'DATALENGTH'
-category: 'statements'
-description: ''
+name: "DATALENGTH"
+title: "DATALENGTH"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

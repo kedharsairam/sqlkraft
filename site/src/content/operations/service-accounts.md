@@ -3,17 +3,17 @@ title: "Service Accounts"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   When using Windows Authentication, if the server instances use different accounts, specify the
-  
+
   service accounts for SQL Server. These service accounts
 tags:
   - "high-availability"

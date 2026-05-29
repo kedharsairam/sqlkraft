@@ -3,17 +3,17 @@ title: "Trace Templates"
 topic: "profiler"
 description: |
   SQL Server Profiler Templates
-  
+
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   You can use SQL Server Profiler to create templates that define the event classes and data
-  
+
   columns to i
 tags:
   - "profiler"

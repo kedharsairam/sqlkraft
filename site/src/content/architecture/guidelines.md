@@ -3,18 +3,18 @@ title: "Guidelines"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   When you perform online index operations, the following guidelines apply:
-  
-  Clustered indexes 
+
+  Clustered indexes
 tags:
   - "filestream"
   - "guidelines"

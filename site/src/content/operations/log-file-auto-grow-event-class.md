@@ -3,19 +3,19 @@ title: "Log File Auto Grow Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event class indicates that the log file grew automatically. This event is
-  
+
   not triggered
 tags:
   - "event-classes"

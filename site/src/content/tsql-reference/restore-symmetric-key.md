@@ -1,8 +1,8 @@
 ---
-name: 'RESTORE SYMMETRIC KEY'
-title: 'RESTORE SYMMETRIC KEY'
-category: 'statements'
-description: '### Azure Blob storage URL'
+name: "RESTORE SYMMETRIC KEY"
+title: "RESTORE SYMMETRIC KEY"
+category: "statements"
+description: "### Azure Blob storage URL"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

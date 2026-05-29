@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addpullsubscription_agent'
-title: 'sp_addpullsubscription_agent'
-category: 'general'
-description: 'Adds a new scheduled agent job used to synchronize a pull subscription to a transactional publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions'
+name: "sys.sp_addpullsubscription_agent"
+title: "sp_addpullsubscription_agent"
+category: "general"
+description: "Adds a new scheduled agent job used to synchronize a pull subscription to a transactional publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

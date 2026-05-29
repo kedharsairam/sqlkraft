@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_delete_log_shipping_secondary_database'
-title: 'sp_delete_log_shipping_secondary_database'
-category: 'general'
-description: 'fixed server role can run this procedure. About log shipping (SQL Server) System stored procedures (Transact-SQL)'
+name: "sys.sp_delete_log_shipping_secondary_database"
+title: "sp_delete_log_shipping_secondary_database"
+category: "general"
+description: "fixed server role can run this procedure. About log shipping (SQL Server) System stored procedures (Transact-SQL)"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_delete_log_shipping_secondary_database'
+syntax: "sp_delete_log_shipping_secondary_database"
 ---
 
 ## Description

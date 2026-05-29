@@ -3,17 +3,17 @@ title: "Clustered index"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   You can create clustered indexes on tables by using SQL Server Management Studio or
-  
+
   Transact
 tags:
   - "filestream"
@@ -49,7 +49,7 @@ Clustered indexes are implemented in the following ways:
 
 and
 
-constraints**
+constraints\*\*
 
 When you create a
 

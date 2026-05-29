@@ -1,8 +1,8 @@
 ---
-name: 'Arithmetic operators'
-title: 'Arithmetic operators'
-category: 'operators'
-description: 'Azure SQL Managed Instance'
+name: "Arithmetic operators"
+title: "Arithmetic operators"
+category: "operators"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -45,7 +45,7 @@ Transact-SQL syntax conventions
 
 .
 
-+ (Add)
+- (Add)
 
 Addition
 
@@ -55,7 +55,7 @@ Addition
 
 Subtraction
 
-* (Multiply)
+- (Multiply)
 
 Multiplication
 
@@ -67,8 +67,8 @@ Division
 
 (Modulo)
 
-
 ## Returns the integer remainder of a division. For example,
+
 because the remainder
 
 of

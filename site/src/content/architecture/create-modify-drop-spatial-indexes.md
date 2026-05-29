@@ -3,20 +3,20 @@ title: "Create, Modify, & Drop Spatial Indexes"
 topic: "spatial-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   A spatial index can more efficiently perform certain operations on a column of the
-  
+
   or
-  
-  data 
+
+  data
 tags:
   - "spatial-data"
   - "create-modify-drop-spatial-indexes"

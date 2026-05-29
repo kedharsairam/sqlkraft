@@ -1,8 +1,8 @@
 ---
-name: 'Certificate copying'
-title: 'Certificate copying'
-category: 'statements'
-description: 'VERIFYSIGNEDBYASYMKEY'
+name: "Certificate copying"
+title: "Certificate copying"
+category: "statements"
+description: "VERIFYSIGNEDBYASYMKEY"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -31,8 +31,8 @@ Functions
 
 Encryption Hierarchy
 
-
 ## Permissions Hierarchy (Database Engine)
+
 CREATE CERTIFICATE (Transact-SQL)
 
 CREATE SYMMETRIC KEY (Transact-SQL)

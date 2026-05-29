@@ -3,13 +3,13 @@ title: "New to Linux resources"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article provides a learning path through an introduction to Linux concepts. Use the
-  
+
   sections in the article as a guided learning path to familiarize yourself w
 tags:
   - "linux-operations"

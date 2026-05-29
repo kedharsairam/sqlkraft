@@ -3,21 +3,21 @@ title: "SqlPackage for Azure Synapse Analytics"
 topic: "sqlpackage"
 description: |
   SqlPackage for Azure Synapse Analytics
-  
+
   Article
-  
+
   •
-  
+
   03/06/2024
-  
+
   This article covers SqlPackage support for
-  
+
   Azure Synapse Analytics
-  
+
   . It includes information on
-  
+
   the following topics:
-  
+
   integration wi
 tags:
   - "sqlpackage"

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_tables_ex'
-title: 'sp_tables_ex'
-category: 'general'
-description: 'Returns table information about the tables from the specified linked server. Transact-SQL syntax conventions The name of the linked server for which to return table information. The name of the table for which to return data type information.'
+name: "sys.sp_tables_ex"
+title: "sp_tables_ex"
+category: "general"
+description: "Returns table information about the tables from the specified linked server. Transact-SQL syntax conventions The name of the linked server for which to return table information. The name of the table for which to return data type information."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

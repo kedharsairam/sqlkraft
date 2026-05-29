@@ -1,10 +1,10 @@
 ---
-name: 'ADD SIGNATURE'
-title: 'ADD SIGNATURE'
-category: 'statements'
-description: ''
+name: "ADD SIGNATURE"
+title: "ADD SIGNATURE"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

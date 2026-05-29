@@ -1,7 +1,7 @@
 ---
-title: 'Transaction ID (TID) locking'
-topic: 'locking'
-description: 'In the database engine, locking is a mechanism that prevents multiple transactions from'
+title: "Transaction ID (TID) locking"
+topic: "locking"
+description: "In the database engine, locking is a mechanism that prevents multiple transactions from"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

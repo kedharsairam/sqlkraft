@@ -3,19 +3,19 @@ title: "Bitmap Warning Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event class can be used to monitor bitmap filter usage in queries. The
-  
+
   event subclass c
 tags:
   - "event-classes"

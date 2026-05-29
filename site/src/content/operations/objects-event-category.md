@@ -3,25 +3,25 @@ title: "Objects Event Category"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event category contains general objects events.
-  
+
   Description
-  
+
   Auto Stats Event
-  
+
   Class
-  
+
   I
 tags:
   - "event-classes"

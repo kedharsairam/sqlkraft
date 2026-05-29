@@ -3,29 +3,29 @@ title: "srv_paraminfo"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Returns information about a parameter. This function supersedes the following functions:
-  
+
   srv_paramtype
-  
+
   ,
-  
+
   srv_paramlen
-  
+
   ,
-  
+
   srv_parammaxlen
-  
+
   , and
-  
+
   sr
 tags:
   - "clr-integration"

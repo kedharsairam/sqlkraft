@@ -1,7 +1,7 @@
 ---
-name: 'To Audit DDL Changes into Table'
-title: 'To Audit DDL Changes into Table'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To Audit DDL Changes into Table"
+title: "To Audit DDL Changes into Table"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["audit", "automation", "table"]
 pubDate: 2025-03-15
@@ -71,7 +71,7 @@ BEGIN
         SET @event_type = 'Database Drop';
     ELSE
         SET @event_type = 'Database Create';
-    
+
   INSERT INTO ObjectAuditLogs.dbo.ObjectAuditLog (EventDateTime, EventType, ObjectName, LoginName, DatabaseName, TSQLCommand)
         VALUES (GETDATE(), @event_type, @database_name, @login_name, @database_name, @TSQLCommand);
 END;

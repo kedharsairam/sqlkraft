@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_replicationdboption'
-title: 'sp_replicationdboption'
-category: 'general'
-description: 'Sets a replication database option for the specified database. This stored procedure is executed at the Publisher or Subscriber on any database. Transact-SQL syntax conventions The database for which the replication database option is being set. The replication database option to enable or disable. Database can be used for merge publications. Database can be used for other types of publications.'
+name: "sys.sp_replicationdboption"
+title: "sp_replicationdboption"
+category: "general"
+description: "Sets a replication database option for the specified database. This stored procedure is executed at the Publisher or Subscriber on any database. Transact-SQL syntax conventions The database for which the replication database option is being set. The replication database option to enable or disable. Database can be used for merge publications. Database can be used for other types of publications."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

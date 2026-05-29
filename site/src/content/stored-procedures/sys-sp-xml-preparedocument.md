@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_xml_preparedocument'
-title: 'sp_xml_preparedocument'
-category: 'general'
-description: 'Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Size of the unpars'
+name: "sys.sp_xml_preparedocument"
+title: "sp_xml_preparedocument"
+category: "general"
+description: "Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Size of the unpars"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_xml_preparedocument'
+syntax: "sp_xml_preparedocument"
 ---
 
 ## Description

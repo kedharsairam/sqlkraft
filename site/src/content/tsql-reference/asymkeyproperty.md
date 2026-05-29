@@ -1,8 +1,8 @@
 ---
-name: 'ASYMKEYPROPERTY'
-title: 'ASYMKEYPROPERTY'
-category: 'statements'
-description: '### ''algorithm_desc'''
+name: "ASYMKEYPROPERTY"
+title: "ASYMKEYPROPERTY"
+category: "statements"
+description: "### 'algorithm_desc'"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

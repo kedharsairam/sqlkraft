@@ -1,8 +1,8 @@
 ---
-name: 'Date and time styles'
-title: 'Date and time styles'
-category: 'data-types'
-description: 'An integer expression that specifies how the'
+name: "Date and time styles"
+title: "Date and time styles"
+category: "data-types"
+description: "An integer expression that specifies how the"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -21,8 +21,8 @@ data_type
 
 determines the range.
 
-
 ## Returns
+
 expression
 
 , translated to

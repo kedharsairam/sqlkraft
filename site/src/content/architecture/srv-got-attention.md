@@ -3,21 +3,21 @@ title: "srv_got_attention"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Checks whether the current connection or task needs to be aborted and returns TRUE if the
-  
+
   connection is killed or the batch is aborted
-  
+
   srvproc
-  
+
   Point
 tags:
   - "clr-integration"

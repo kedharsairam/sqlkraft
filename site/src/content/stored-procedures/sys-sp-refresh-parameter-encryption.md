@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_refresh_parameter_encryption'
-title: 'sp_refresh_parameter_encryption'
-category: 'general'
-description: 'SQL Server 2016 (13.x) and later Updates the Always Encrypted metadata for the parameters of the specified non-schema- bound stored procedure, user-defined function, view, DML trigger, database-level DDL trigger, or server-level DDL trigger in the current database. Transact-SQL syntax conventions The name of the stored procedure, user-defined function, view, DML trigger, database-level DDL trigger'
+name: "sys.sp_refresh_parameter_encryption"
+title: "sp_refresh_parameter_encryption"
+category: "general"
+description: "SQL Server 2016 (13.x) and later Updates the Always Encrypted metadata for the parameters of the specified non-schema- bound stored procedure, user-defined function, view, DML trigger, database-level DDL trigger, or server-level DDL trigger in the current database. Transact-SQL syntax conventions The name of the stored procedure, user-defined function, view, DML trigger, database-level DDL trigger"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

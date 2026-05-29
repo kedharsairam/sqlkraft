@@ -1,8 +1,8 @@
 ---
-name: 'CREATE EXTERNAL FILE FORMAT (Transact-'
-title: 'CREATE EXTERNAL FILE FORMAT (Transact-'
-category: 'statements'
-description: 'SQL Server 2016 (13.x) and later versions'
+name: "CREATE EXTERNAL FILE FORMAT (Transact-"
+title: "CREATE EXTERNAL FILE FORMAT (Transact-"
+category: "statements"
+description: "SQL Server 2016 (13.x) and later versions"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

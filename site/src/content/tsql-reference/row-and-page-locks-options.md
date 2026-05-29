@@ -1,8 +1,8 @@
 ---
-name: 'Row and page locks options'
-title: 'Row and page locks options'
-category: 'operators'
-description: 'option is equivalent to'
+name: "Row and page locks options"
+title: "Row and page locks options"
+category: "operators"
+description: "option is equivalent to"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

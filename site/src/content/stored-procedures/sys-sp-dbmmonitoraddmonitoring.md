@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_dbmmonitoraddmonitoring'
-title: 'sp_dbmmonitoraddmonitoring'
-category: 'general'
-description: 'Creates a database mirroring monitor job that periodically updates the mirroring status for every mirrored database on the server instance. Transact-SQL syntax conventions Specifies the interval between updates in minutes. , with a default of This value can be from 1 to 120 minutes. If update period is set too low, the response time might increase for clients.'
+name: "sys.sp_dbmmonitoraddmonitoring"
+title: "sp_dbmmonitoraddmonitoring"
+category: "general"
+description: "Creates a database mirroring monitor job that periodically updates the mirroring status for every mirrored database on the server instance. Transact-SQL syntax conventions Specifies the interval between updates in minutes. , with a default of This value can be from 1 to 120 minutes. If update period is set too low, the response time might increase for clients."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,7 +1,7 @@
 ---
-name: 'To Get Alert if Database Owner is not SA'
-title: 'To Get Alert if Database Owner is not SA'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To Get Alert if Database Owner is not SA"
+title: "To Get Alert if Database Owner is not SA"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["automation", "database"]
 pubDate: 2025-03-15
@@ -14,7 +14,7 @@ DECLARE @NonSaDBs  TABLE (
 );
 
 INSERT INTO @NonSaDBs (DBName, DBOwner)
-select Name,suser_sname(owner_sid) AS DbOwner from sys.databases 
+select Name,suser_sname(owner_sid) AS DbOwner from sys.databases
 WHERE suser_sname(owner_sid) <> 'sa'
 
 Declare @subject Varchar(200)
@@ -24,7 +24,7 @@ IF EXISTS (SELECT 1 FROM @NonSaDBs)
 BEGIN
     DECLARE @DBList NVARCHAR(MAX) = '';
 
-    SELECT @DBList = @DBList + 
+    SELECT @DBList = @DBList +
                       '<tr><td>' + DBName + '</td><td>' + DBOwner + '</td></tr>'
     FROM @NonSaDBs;
 

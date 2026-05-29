@@ -1,7 +1,7 @@
 ---
-title: 'What is optimized locking?'
-topic: 'locking'
-description: 'SQL Server 2025 (17.x)'
+title: "What is optimized locking?"
+topic: "locking"
+description: "SQL Server 2025 (17.x)"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

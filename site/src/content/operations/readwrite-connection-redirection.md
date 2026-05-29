@@ -3,19 +3,19 @@ title: "Read/write connection redirection"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/15/2025
-  
+
   Applies to:
-  
+
   SQL Server 2019 (15.x) and later
-  
+
   SQL Server 2019 (15.x) introduces
-  
+
   secondary to primary replica read/write connection redirection
-  
+
   for Always On availability gro
 tags:
   - "high-availability"

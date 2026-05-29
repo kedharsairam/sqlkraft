@@ -3,13 +3,13 @@ title: "LocalDBGetVersionInfo"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Returns information for the specified SQL Server Express LocalDB version, such as whether it
-  
+
   exists and the full LocalDB version number (including build and relea
 tags:
   - "clr-integration"

@@ -3,15 +3,15 @@ title: "How to: Configure Initiating Services for Full Dialog Security (Transact
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server uses dialog security for any conversation to a service for which a remote service
-  
+
   binding exists in the database that hosts
 tags:
   - "service-broker"

@@ -1,7 +1,7 @@
 ---
-name: 'To Analyze Buffer Pool or Manage Buffer Pool'
-title: 'To Analyze Buffer Pool or Manage Buffer Pool'
-description: 'Step 1: Buffer Pool Utilization by Database'
+name: "To Analyze Buffer Pool or Manage Buffer Pool"
+title: "To Analyze Buffer Pool or Manage Buffer Pool"
+description: "Step 1: Buffer Pool Utilization by Database"
 category: architecture
 tags: ["architecture"]
 pubDate: 2025-03-15
@@ -10,9 +10,9 @@ pubDate: 2025-03-15
 ```sql
 -- Step 1: Buffer Pool Utilization by Database
 -- Adjust the size calculation if the page size is different from 8 KB (8192 bytes).
-SELECT 
-    DBName = CASE WHEN database_id = 32767 THEN 'RESOURCEDB' 
-                  ELSE DB_NAME(database_id) 
+SELECT
+    DBName = CASE WHEN database_id = 32767 THEN 'RESOURCEDB'
+                  ELSE DB_NAME(database_id)
              END,
     Size_MB = COUNT(1) * 8 / 1024.0  -- Assuming each page is 8 KB (8192 bytes), adjust if necessary.
 FROM sys.dm_os_buffer_descriptors
@@ -22,7 +22,7 @@ ORDER BY Size_MB DESC;
 -- Step 2: Buffer Pool Utilization by Object in a Database
 USE AdventureWorks2019;  -- Replace with your target database if necessary.
 GO
-SELECT 
+SELECT
     DBName = DB_NAME(obd.database_id),
     ObjName = o.name,
     Size_MB = COUNT(1) * 8 / 1024.0  -- Assuming each page is 8 KB (8192 bytes), adjust if necessary.
@@ -41,9 +41,9 @@ ORDER BY Size_MB DESC;
 -- Step 3: Clean and Dirty Pages Count in a Database
 USE AdventureWorks2019;  -- Replace with your target database if necessary.
 GO
-SELECT 
-    Page_Status = CASE WHEN is_modified = 1 THEN 'Dirty' 
-                       ELSE 'Clean' 
+SELECT
+    Page_Status = CASE WHEN is_modified = 1 THEN 'Dirty'
+                       ELSE 'Clean'
                   END,
     DBName = DB_NAME(database_id),
     Pages = COUNT(1)

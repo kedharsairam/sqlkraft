@@ -3,21 +3,21 @@ title: "Specify Events & Data Columns for a Trace File"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to specify event classes and data columns for traces by using SQL
-  
+
   Server Profiler.
-  
+
   1. On the
-  
+
   or
-  
+
   dialog b
 tags:
   - "profiler"

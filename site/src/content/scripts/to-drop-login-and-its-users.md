@@ -1,7 +1,7 @@
 ---
-name: 'To Drop Login and it’s Users'
-title: 'To Drop Login and it’s Users'
-description: 'SQL Server diagnostic script for security-audit operations.'
+name: "To Drop Login and it’s Users"
+title: "To Drop Login and it’s Users"
+description: "SQL Server diagnostic script for security-audit operations."
 category: security-audit
 tags: ["login", "security-audit", "user"]
 pubDate: 2025-03-15
@@ -33,7 +33,7 @@ WHERE d.state_desc = N'ONLINE';
 
 SET @cmd = @cmd + N';'
 
-DECLARE @Results TABLE 
+DECLARE @Results TABLE
 (
     database_name SYSNAME NOT NULL
     , server_principal_name SYSNAME NULL
@@ -98,7 +98,7 @@ BEGIN
 ';
 
 IF (
-    SELECT COUNT(1) 
+    SELECT COUNT(1)
     FROM @Results r
     WHERE r.server_principal_name IS NOT NULL
     ) > 0
@@ -120,7 +120,7 @@ BEGIN
     PRINT (N''Errors occurred dropping users; login has NOT been dropped'');
 END';
 
-IF @DebugOnly = 1 
+IF @DebugOnly = 1
 BEGIN
    PRINT @cmd
 END

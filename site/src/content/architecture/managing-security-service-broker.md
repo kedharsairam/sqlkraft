@@ -3,15 +3,15 @@ title: "Managing Security (Service Broker)"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker provides a flexible security framework for helping you secure your applications.
-  
+
   This topic explains considerations for
 tags:
   - "service-broker"

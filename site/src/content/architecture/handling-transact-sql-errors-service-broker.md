@@ -3,15 +3,15 @@ title: "Handling Transact-SQL Errors (Service Broker)"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Two general principles apply when handling Transact-SQL errors in a Service Broker application.
-  
+
   First, an application shouldn't perman
 tags:
   - "service-broker"

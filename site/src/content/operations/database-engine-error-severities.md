@@ -3,15 +3,15 @@ title: "Database Engine error severities"
 topic: "monitor"
 description: |
   08/26/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   When an error is raised by the SQL Server Database Engine, the severity of the error indicates
-  
+
   the type of problem encountered by SQL Server.
-  
+
   The following table
 tags:
   - "monitor"

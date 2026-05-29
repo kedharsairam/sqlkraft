@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_get_distributor'
-title: 'sp_get_distributor'
-category: 'general'
-description: 'Determines whether a Distributor is installed on a server. This stored procedure is executed at the computer where the Distributor is being looked for, on any database. Transact-SQL syntax conventions Name of the Distributor server is used primarily by the SQL Server Management Studio in snapshot, transactional, and merge replication.'
+name: "sys.sp_get_distributor"
+title: "sp_get_distributor"
+category: "general"
+description: "Determines whether a Distributor is installed on a server. This stored procedure is executed at the computer where the Distributor is being looked for, on any database. Transact-SQL syntax conventions Name of the Distributor server is used primarily by the SQL Server Management Studio in snapshot, transactional, and merge replication."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'distribution db installed'
+syntax: "distribution db installed"
 ---
 
 ## Description

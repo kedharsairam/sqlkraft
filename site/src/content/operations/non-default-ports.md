@@ -3,15 +3,15 @@ title: "Non-default ports"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   You can configure replication with SQL Server on Linux instances listening on any port configured
-  
+
   with the
-  
+
   mssql-conf setting. The port needs to be appended to the
 tags:
   - "linux-operations"

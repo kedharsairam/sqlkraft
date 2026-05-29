@@ -3,18 +3,18 @@ title: "Reorganize & rebuild"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL database in Microsoft Fabric
-  
-  This article helps you decide when and how to perform index 
+
+  This article helps you decide when and how to perform index
 tags:
   - "filestream"
   - "reorganize-rebuild"

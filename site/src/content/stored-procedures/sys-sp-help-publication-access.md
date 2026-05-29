@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_help_publication_access'
-title: 'sp_help_publication_access'
-category: 'general'
-description: 'Returns a list of all granted logins for a publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to access. is specified and SQL Server Authentication is used, the available logins that appear at the Publisher but not at the Distributor are returned. is specified and Windows Authentication is used, t'
+name: "sys.sp_help_publication_access"
+title: "sp_help_publication_access"
+category: "general"
+description: "Returns a list of all granted logins for a publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to access. is specified and SQL Server Authentication is used, the available logins that appear at the Publisher but not at the Distributor are returned. is specified and Windows Authentication is used, t"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

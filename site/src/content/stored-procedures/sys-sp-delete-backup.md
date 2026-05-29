@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_delete_backup'
-title: 'sp_delete_backup'
-category: 'general'
-description: 'SQL Server 2016 (13.x) and later versions Deletes all snapshots and the backup file that comprise a snapshot backup set from the specified database. This system stored procedure is the only recommended method for managing snapshot backup sets. For more information, see Transact-SQL syntax conventions The URL of the backup to be deleted, which deletes all snapshots comprising the specified backup s'
+name: "sys.sp_delete_backup"
+title: "sp_delete_backup"
+category: "general"
+description: "SQL Server 2016 (13.x) and later versions Deletes all snapshots and the backup file that comprise a snapshot backup set from the specified database. This system stored procedure is the only recommended method for managing snapshot backup sets. For more information, see Transact-SQL syntax conventions The URL of the backup to be deleted, which deletes all snapshots comprising the specified backup s"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

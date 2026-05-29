@@ -1,7 +1,7 @@
 ---
-title: 'File system configuration'
-topic: 'io-fundamentals'
-description: 'For more information, see:'
+title: "File system configuration"
+topic: "io-fundamentals"
+description: "For more information, see:"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -22,8 +22,8 @@ read-only files. For more information, see:
 
 -
 
-
 ## Description of support for SQL Server databases on compressed volumes
+
 -
 
 Decreased performance in SQL Server when you use EFS to encrypt database
@@ -64,8 +64,8 @@ MSSQLSERVER error 823
 
 -
 
-
 ## Description of support for network database files in SQL Server
+
 -
 
 Prerequisites, restrictions, and recommendations for Always On availability

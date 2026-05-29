@@ -3,11 +3,11 @@ title: "Customize Database Build & Deployment by Using Build & Deployment Contri
 topic: "ssb-diagnose"
 description: |
   09/09/2025
-  
+
   Visual Studio provides extensibility points that you can use to modify the behavior of the build
-  
+
   and deployment actions for database projects.
-  
+
   You can create an extension for the extensi
 tags:
   - "ssb-diagnose"

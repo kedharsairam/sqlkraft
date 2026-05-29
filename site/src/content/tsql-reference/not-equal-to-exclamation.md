@@ -1,8 +1,8 @@
 ---
-name: 'Not equal to - exclamation'
-title: 'Not equal to - exclamation'
-category: 'operators'
-description: 'Azure SQL Managed Instance'
+name: "Not equal to - exclamation"
+title: "Not equal to - exclamation"
+category: "operators"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

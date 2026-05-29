@@ -3,16 +3,16 @@ title: "Replay Requirements"
 topic: "profiler"
 description: |
   06/05/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   In order to replay trace data with SQL Server Profiler or the Distributed Replay Utility, a specific
-  
-  set of event classes and columns 
+
+  set of event classes and columns
 tags:
   - "profiler"
   - "replay-requirements"

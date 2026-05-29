@@ -3,15 +3,15 @@ title: "Configure MSDTC"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article describes how to configure the Microsoft Distributed Transaction Coordinator
-  
+
   (MSDTC) on Linux.
-  
+
   MSDTC on Linux is supported on SQL Server 2017 (14.x) C
 tags:
   - "linux-operations"
@@ -45,7 +45,7 @@ services.
 
 A process requires super user privileges to bind to well-known ports (port numbers less than
 
-1024) on Linux. To avoid starting SQL Server with root privileges for the RPC endpoint mapper
+1024. on Linux. To avoid starting SQL Server with root privileges for the RPC endpoint mapper
 
 process, system administrators must use
 

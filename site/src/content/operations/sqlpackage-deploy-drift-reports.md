@@ -3,19 +3,19 @@ title: "SqlPackage Deploy & Drift Reports"
 topic: "sqlpackage"
 description: |
   SqlPackage deploy report and drift report
-  
+
   07/30/2025
-  
+
   The SqlPackage
-  
+
   DeployReport
-  
+
   action creates an XML report of the changes that would be
-  
+
   made by a publish action. The SqlPackage
-  
+
   DriftReport
-  
+
   a
 tags:
   - "sqlpackage"

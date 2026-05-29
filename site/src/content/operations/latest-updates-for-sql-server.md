@@ -3,16 +3,16 @@ title: "Latest updates for SQL Server"
 topic: "upgrade"
 description: |
   This article lists various builds or updates that are available for different versions of SQL Server.
-  
+
   Original product version:
-  
+
   SQL Server
-  
+
   Original KB number:
-  
+
   321185
-  
-  A downloadable version of an 
+
+  A downloadable version of an
 tags:
   - "upgrade"
   - "latest-updates-for-sql-server"

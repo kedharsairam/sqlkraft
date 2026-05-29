@@ -1,7 +1,7 @@
 ---
-title: 'Trade-offs when using hash partitioning'
-topic: 'io-fundamentals'
-description: 'While hash partitioning can eliminate contention on inserts, there are several trade-offs to'
+title: "Trade-offs when using hash partitioning"
+topic: "io-fundamentals"
+description: "While hash partitioning can eliminate contention on inserts, there are several trade-offs to"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_add_log_shipping_secondary_database'
-title: 'sp_add_log_shipping_secondary_database'
-category: 'general'
-description: 'Sets up a secondary database for log shipping. Transact-SQL syntax conventions The name of the secondary database. The name of the primary instance of the SQL Server Database Engine in the log shipping'
+name: "sys.sp_add_log_shipping_secondary_database"
+title: "sp_add_log_shipping_secondary_database"
+category: "general"
+description: "Sets up a secondary database for log shipping. Transact-SQL syntax conventions The name of the secondary database. The name of the primary instance of the SQL Server Database Engine in the log shipping"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

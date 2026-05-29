@@ -1,7 +1,7 @@
 ---
-name: 'To Track Database Level Changes'
-title: 'To Track Database Level Changes'
-description: 'first create a table to collect the data in master or desired database'
+name: "To Track Database Level Changes"
+title: "To Track Database Level Changes"
+description: "first create a table to collect the data in master or desired database"
 category: automation
 tags: ["automation", "database"]
 pubDate: 2025-03-15
@@ -92,7 +92,7 @@ BEGIN
 End
 
 --to create clustered index, if needed
-CREATE CLUSTERED INDEX [CI_SQLskills_DBData] 
+CREATE CLUSTERED INDEX [CI_SQLskills_DBData]
   ON [dbo].[SQLskills_DBData] ([CaptureDate],[database_id]);
 GO
 
@@ -102,9 +102,9 @@ GO
 CREATE PROCEDURE [dbo].[usp_FindDBSettingChanges2]
 AS
 BEGIN
-;WITH f AS 
+;WITH f AS
 (
-  SELECT 
+  SELECT
     ROW_NUMBER() OVER (PARTITION BY database_id ORDER BY CaptureDate ASC) AS RowNumber,
     [name],
     [database_id],
@@ -173,11 +173,11 @@ BEGIN
     [two_digit_year_cutoff],
     [containment],
     [containment_desc],
-    [target_recovery_time_in_seconds], 
+    [target_recovery_time_in_seconds],
     [CaptureDate]
   FROM [dbo].[SQLskills_DBData]
 )
-SELECT 
+SELECT
     f.database_id,
     f.name,
     f.CaptureDate AS OriginalCaptureDate,
@@ -299,9 +299,9 @@ SELECT
     f.two_digit_year_cutoff AS Original_two_digit_year_cutoff, n.two_digit_year_cutoff AS Changed_two_digit_year_cutoff,
     f.containment AS Original_containment, n.containment AS Changed_containment,
     f.target_recovery_time_in_seconds AS Original_target_recovery_time_in_seconds, n.target_recovery_time_in_seconds AS Changed_target_recovery_time_in_seconds
-FROM f 
+FROM f
 INNER JOIN f n ON f.database_id = n.database_id AND f.RowNumber = n.RowNumber - 1
-WHERE 
+WHERE
 (
     f.owner_sid <> n.owner_sid OR
     f.create_date <> n.create_date OR

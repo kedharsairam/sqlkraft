@@ -1,8 +1,8 @@
 ---
-name: 'the effects of ALL and parentheses'
-title: 'the effects of ALL and parentheses'
-category: 'operators'
-description: 'The following examples use'
+name: "the effects of ALL and parentheses"
+title: "the effects of ALL and parentheses"
+category: "operators"
+description: "The following examples use"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -37,8 +37,8 @@ that isn't using
 
 is processed first because it's in parentheses, and
 
-
 ## returns five rows because the
+
 option isn't used and the duplicates are removed. These five
 
 rows are combined with the results of the first

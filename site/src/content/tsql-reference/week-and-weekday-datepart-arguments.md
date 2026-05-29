@@ -1,8 +1,8 @@
 ---
-name: 'Week and weekday datepart arguments'
-title: 'Week and weekday datepart arguments'
-category: 'operators'
-description: 'The return value depends on the language environment set by using'
+name: "Week and weekday datepart arguments"
+title: "Week and weekday datepart arguments"
+category: "operators"
+description: "The return value depends on the language environment set by using"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -37,8 +37,8 @@ This table lists all
 
 datepart
 
-
 ## arguments, with corresponding return values, for the statement
+
 . The
 
 date

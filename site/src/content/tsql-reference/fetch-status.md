@@ -1,8 +1,8 @@
 ---
-name: '@@FETCH_STATUS'
-title: '@@FETCH_STATUS'
-category: 'variables'
-description: ''
+name: "@@FETCH_STATUS"
+title: "@@FETCH_STATUS"
+category: "variables"
+description: ""
 tags: ["tsql", "variables"]
 pubDate: 2026-05-29
 ---

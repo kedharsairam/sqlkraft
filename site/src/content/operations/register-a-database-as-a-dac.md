@@ -3,15 +3,15 @@ title: "Register a database as a DAC"
 topic: "ssms"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The registration process creates a data-tier application (DAC) definition that defines the ob
 tags:
   - "ssms"

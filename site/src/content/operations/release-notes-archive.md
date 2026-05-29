@@ -3,15 +3,15 @@ title: "Release notes (archive)"
 topic: "sqlpackage"
 description: |
   This article lists the features and fixes delivered by the released versions of SqlPackage.
-  
+
   For the latest version information, see
-  
+
   Release notes for SqlPackage
-  
+
   .
-  
+
   The
-  
+
   column in each section is sc
 tags:
   - "sqlpackage"

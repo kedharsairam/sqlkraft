@@ -1,7 +1,7 @@
 ---
-title: 'New partition-aware seek operation'
-topic: 'io-fundamentals'
-description: 'In SQL Server, the internal representation of a partitioned table is changed so that the table'
+title: "New partition-aware seek operation"
+topic: "io-fundamentals"
+description: "In SQL Server, the internal representation of a partitioned table is changed so that the table"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

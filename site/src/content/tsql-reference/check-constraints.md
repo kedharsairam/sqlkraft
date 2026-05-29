@@ -1,8 +1,8 @@
 ---
-name: 'CHECK constraints'
-title: 'CHECK constraints'
-category: 'statements'
-description: 'Columns participating in a foreign key relationship must be defined with the same length'
+name: "CHECK constraints"
+title: "CHECK constraints"
+category: "statements"
+description: "Columns participating in a foreign key relationship must be defined with the same length"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -3,13 +3,13 @@ title: "Certificate rotation"
 topic: "azure-synapse"
 description: |
   08/28/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   On SQL Server enabled by Azure Arc, Azure extension for SQL Server can automatically rotate
-  
+
   certificates for Microsoft Entra ID for service managed certificates a
 tags:
   - "azure-synapse"

@@ -1,7 +1,7 @@
 ---
-title: 'Latch contention on page free space (PFS) pages'
-topic: 'io-fundamentals'
-description: 'The combination of a shallow B-Tree and random inserts across the index is prone to causing'
+title: "Latch contention on page free space (PFS) pages"
+topic: "io-fundamentals"
+description: "The combination of a shallow B-Tree and random inserts across the index is prone to causing"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

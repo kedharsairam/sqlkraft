@@ -1,8 +1,8 @@
 ---
-name: 'levels 100 and 110'
-title: 'levels 100 and 110'
-category: 'operators'
-description: 'value to a string value. This'
+name: "levels 100 and 110"
+title: "levels 100 and 110"
+category: "operators"
+description: "value to a string value. This"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -13,8 +13,8 @@ behavior is specific only to the
 
 type. See example B in the
 
-
 ## Examples
+
 section.
 
 Recursive references on the
@@ -25,8 +25,8 @@ clause create an infinite loop.
 
 Example C in the
 
-
 ## Examples
+
 section demonstrates this
 
 behavior.
@@ -207,8 +207,8 @@ is allowed in a recursive common table
 
 expression (CTE) query. However, the query
 
-
 ## returns incorrect results when there are multiple
+
 rows per grouping.
 
 isn't allowed in a recursive common table
@@ -265,8 +265,8 @@ definitions.
 
 Example D in the
 
-
 ## Examples
+
 section shows the
 
 difference between styles 0 and 121. It doesn't
@@ -321,7 +321,7 @@ update this data to match style 121.
 
 The
 
-+ (Addition)
+- (Addition)
 
 operator can be applied to an
 

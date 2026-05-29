@@ -3,15 +3,15 @@ title: "Service Broker Applications"
 topic: "service-broker"
 description: |
   09/10/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker applications are made up of one or more programs and the database objects
-  
+
   that those programs use. Applications communi
 tags:
   - "service-broker"

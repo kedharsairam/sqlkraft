@@ -3,25 +3,25 @@ title: "Audit Statement Permission Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   The
-  
+
   event class occurs whenever a statement permission (such as
-  
+
   CREATE TABLE) is used.
-  
+
   The
-  
+
   event class may be removed from a fu
 tags:
   - "event-classes"

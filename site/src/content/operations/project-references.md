@@ -3,17 +3,17 @@ title: "Project references"
 topic: "ssms"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   With project references in SQL database projects, you can create dependencies between your
-  
+
   S
 tags:
   - "ssms"

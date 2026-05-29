@@ -1,8 +1,8 @@
 ---
-name: 'RADIANS'
-title: 'RADIANS'
-category: 'statements'
-description: ''
+name: "RADIANS"
+title: "RADIANS"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

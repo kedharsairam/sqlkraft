@@ -1,11 +1,11 @@
 ---
-name: 'sys.fn_cdc_get_column_ordinal'
-title: 'sys.fn_cdc_get_column_ordinal'
-category: 'change-data-capture'
-description: 'Returns the column ordinal of the specified column as it appears in the associated with the specified capture instance. Transact-SQL syntax conventions Is the name of the capture instance in which the specified column is identified as a captured This function is used to identify the ordinal position of a captured column within the change data capture update mask. It is principally used in conjunct'
+name: "sys.fn_cdc_get_column_ordinal"
+title: "sys.fn_cdc_get_column_ordinal"
+category: "change-data-capture"
+description: "Returns the column ordinal of the specified column as it appears in the associated with the specified capture instance. Transact-SQL syntax conventions Is the name of the capture instance in which the specified column is identified as a captured This function is used to identify the ordinal position of a captured column within the change data capture update mask. It is principally used in conjunct"
 tags: ["change-data-capture", "function"]
 pubDate: 2026-05-29
-syntax: 'sys.fn_cdc_get_column_ordinal ( ''capture_instance'',''column_name'')'
+syntax: "sys.fn_cdc_get_column_ordinal ( 'capture_instance','column_name')"
 ---
 
 ## Description

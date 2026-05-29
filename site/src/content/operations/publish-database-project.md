@@ -3,9 +3,9 @@ title: "Publish database project"
 topic: "profiler"
 description: |
   Use the SQL Database Projects extension for Visual Studio Code to deploy database schema
-  
+
   changes directly from a SQL project.
-  
+
   A SQL project deployment takes the schema you define in the project, com
 tags:
   - "profiler"

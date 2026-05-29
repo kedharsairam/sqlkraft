@@ -1,7 +1,7 @@
 ---
-name: 'To Check Database ID or Database Name'
-title: 'To Check Database ID or Database Name'
-description: 'for id:'
+name: "To Check Database ID or Database Name"
+title: "To Check Database ID or Database Name"
+description: "for id:"
 category: database
 tags: ["database", "health-check"]
 pubDate: 2025-03-15

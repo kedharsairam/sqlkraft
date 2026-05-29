@@ -1,10 +1,10 @@
 ---
-name: 'ALTER EXTERNAL LIBRARY'
-title: 'ALTER EXTERNAL LIBRARY'
-category: 'statements'
-description: ''
+name: "ALTER EXTERNAL LIBRARY"
+title: "ALTER EXTERNAL LIBRARY"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

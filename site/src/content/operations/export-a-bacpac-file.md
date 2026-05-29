@@ -3,15 +3,15 @@ title: "Export a bacpac file"
 topic: "ssms"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Exporting a database creates an export file that includes the definitions of the objects in t
 tags:
   - "ssms"

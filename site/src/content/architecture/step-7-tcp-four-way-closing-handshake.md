@@ -1,7 +1,7 @@
 ---
-title: 'Step 7. TCP four-way closing handshake'
-topic: 'query-processing'
-description: 'Microsoft drivers use the four-way handshake to close connections. Many third-party'
+title: "Step 7. TCP four-way closing handshake"
+topic: "query-processing"
+description: "Microsoft drivers use the four-way handshake to close connections. Many third-party"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

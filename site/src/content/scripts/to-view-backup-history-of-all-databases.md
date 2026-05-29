@@ -1,7 +1,7 @@
 ---
-name: 'To View Backup History of All Databases'
-title: 'To View Backup History of All Databases'
-description: 'for specific database'
+name: "To View Backup History of All Databases"
+title: "To View Backup History of All Databases"
+description: "for specific database"
 category: database
 tags: ["backup", "database"]
 pubDate: 2025-03-15
@@ -13,18 +13,18 @@ USE msdb;
 GO
 
 SELECT
-    b.database_name, 
-    bm.physical_device_name, 
-    b.backup_start_date, 
+    b.database_name,
+    bm.physical_device_name,
+    b.backup_start_date,
     b.backup_finish_date
-FROM 
+FROM
     dbo.backupset b
-JOIN 
+JOIN
     dbo.backupmediafamily bm
     ON b.media_set_id = bm.media_set_id
-WHERE 
+WHERE
     b.database_name = 'YourDatabaseName'
-ORDER BY 
+ORDER BY
     b.backup_finish_date DESC;
 
 --for all databases
@@ -32,7 +32,7 @@ SELECT
     bs.database_name,
     bs.backup_start_date,
     bs.backup_finish_date,
-    bs.server_name, 
+    bs.server_name,
     bs.user_name,
     bs.type,
     bm.physical_device_name
@@ -41,20 +41,20 @@ INNER JOIN msdb.dbo.backupmediafamily AS bm on bs.media_set_id = bm.media_set_id
 
 --or
 
-SELECT 
-    database_name, 
-    backup_size/1024/1024 AS 'Backup Size in MB', 
-    backup_start_date, 
-    backup_finish_date, 
-    CASE type 
+SELECT
+    database_name,
+    backup_size/1024/1024 AS 'Backup Size in MB',
+    backup_start_date,
+    backup_finish_date,
+    CASE type
         WHEN 'D' THEN 'Full'
         WHEN 'I' THEN 'Differential'
         WHEN 'L' THEN 'Transaction Log'
     END AS 'Backup Type'
-FROM 
+FROM
     msdb.dbo.backupset
-WHERE 
+WHERE
     backup_start_date > DATEADD(mm, -1, GETDATE())
-ORDER BY 
+ORDER BY
     backup_start_date DESC;
 ```

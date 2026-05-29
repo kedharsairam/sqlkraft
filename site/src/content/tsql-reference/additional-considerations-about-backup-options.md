@@ -1,8 +1,8 @@
 ---
-name: 'Additional considerations about BACKUP options'
-title: 'Additional considerations about BACKUP options'
-category: 'statements'
-description: 'To restore a database and, optionally, recover it to bring it online, or to restore a file or'
+name: "Additional considerations about BACKUP options"
+title: "Additional considerations about BACKUP options"
+category: "statements"
+description: "To restore a database and, optionally, recover it to bring it online, or to restore a file or"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

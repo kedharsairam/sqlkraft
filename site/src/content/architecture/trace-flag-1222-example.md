@@ -1,7 +1,7 @@
 ---
-title: 'Trace flag 1222 example'
-topic: 'query-processing'
-description: 'The following example shows the output when trace flag 1222 is turned on. In this case, one'
+title: "Trace flag 1222 example"
+topic: "query-processing"
+description: "The following example shows the output when trace flag 1222 is turned on. In this case, one"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

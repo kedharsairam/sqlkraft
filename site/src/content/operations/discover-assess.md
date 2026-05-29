@@ -3,11 +3,11 @@ title: "Discover & assess"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   SQL Server enabled by Azure Arc automatically produces an assessment for migration to Azure.
-  
+
   This assessment plays a vital role in the success of your cloud migration and mod
 tags:
   - "azure-synapse"

@@ -3,15 +3,15 @@ title: "Replay to a Breakpoint"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to set breakpoints in a trace file or table that you want to replay by
-  
+
   using SQL Server Profiler. Setting b
 tags:
   - "profiler"

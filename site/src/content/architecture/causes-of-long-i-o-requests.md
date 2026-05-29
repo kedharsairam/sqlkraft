@@ -1,7 +1,7 @@
 ---
-title: 'Causes of long I/O requests'
-topic: 'io-fundamentals'
-description: 'All I/Os are issued in the calling threads unless the affinity I/O option is in use. The'
+title: "Causes of long I/O requests"
+topic: "io-fundamentals"
+description: "All I/Os are issued in the calling threads unless the affinity I/O option is in use. The"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

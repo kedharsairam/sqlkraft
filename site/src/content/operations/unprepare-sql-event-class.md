@@ -3,18 +3,17 @@ title: "Unprepare SQL Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Unprepare SQL event class indicates that the SqlClient, ODBC, OLE DB, or DB-Library has
-  
-  
+
 tags:
   - "event-classes"
   - "unprepare-sql-event-class"

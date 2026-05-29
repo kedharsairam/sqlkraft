@@ -3,17 +3,17 @@ title: "Example: Specifying the ELEMENT Directive"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This retrieves employee information and generates element-centric XML as shown in the
-  
+
   follow
 tags:
   - "xml-data"

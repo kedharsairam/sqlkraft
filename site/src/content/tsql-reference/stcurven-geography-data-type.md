@@ -1,8 +1,8 @@
 ---
-name: 'STCurveN (geography Data Type)'
-title: 'STCurveN (geography Data Type)'
-category: 'data-types'
-description: '### ArgumentOutOfRangeException'
+name: "STCurveN (geography Data Type)"
+title: "STCurveN (geography Data Type)"
+category: "data-types"
+description: "### ArgumentOutOfRangeException"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

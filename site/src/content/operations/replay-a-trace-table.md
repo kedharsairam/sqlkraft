@@ -3,15 +3,15 @@ title: "Replay a Trace Table"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Replay is the ability to open a saved trace and replay it again. SQL Server Profiler features a
-  
+
   multithreaded playback engine that can
 tags:
   - "profiler"

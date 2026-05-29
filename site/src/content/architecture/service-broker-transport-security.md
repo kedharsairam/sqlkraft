@@ -3,15 +3,15 @@ title: "Service Broker Transport Security"
 topic: "service-broker"
 description: |
   09/15/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker transport security allows database administrators to restrict network
-  
+
   connections to a database and can encrypt message
 tags:
   - "service-broker"

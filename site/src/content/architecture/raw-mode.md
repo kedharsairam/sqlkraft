@@ -3,17 +3,17 @@ title: "RAW Mode"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   RAW mode transforms each row in the query result set into an XML element that has the
-  
+
   generi
 tags:
   - "xml-data"

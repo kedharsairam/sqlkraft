@@ -3,15 +3,15 @@ title: "What does service broker do?"
 topic: "service-broker"
 description: |
   09/10/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker helps developers build asynchronous, loosely coupled applications in which
-  
+
   independent components work together to acco
 tags:
   - "service-broker"

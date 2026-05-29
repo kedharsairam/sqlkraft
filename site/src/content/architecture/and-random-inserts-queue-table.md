@@ -1,7 +1,7 @@
 ---
-title: 'and random inserts (queue table)'
-topic: 'query-processing'
-description: 'Use of the Hash partition mitigation strategy can lead to partition elimination'
+title: "and random inserts (queue table)"
+topic: "query-processing"
+description: "Use of the Hash partition mitigation strategy can lead to partition elimination"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

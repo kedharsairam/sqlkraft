@@ -1,11 +1,11 @@
 ---
-name: 'sys.dm_os_wait_stats'
-title: 'sys.dm_os_wait_stats'
-category: 'os'
-description: 'Analytics Platform System (PDW) Returns information about all the waits encountered by threads that executed. You can use this aggregated view to diagnose performance issues with SQL Server and also with specific queries sys.dm_exec_session_wait_stats provides similar information by session. Name of the wait type. For more information, see Number of waits on this wait type. This counter is increme'
+name: "sys.dm_os_wait_stats"
+title: "sys.dm_os_wait_stats"
+category: "os"
+description: "Analytics Platform System (PDW) Returns information about all the waits encountered by threads that executed. You can use this aggregated view to diagnose performance issues with SQL Server and also with specific queries sys.dm_exec_session_wait_stats provides similar information by session. Name of the wait type. For more information, see Number of waits on this wait type. This counter is increme"
 tags: ["os", "dmv"]
 pubDate: 2026-05-29
-syntax: 'sys.dm_pdw_nodes_os_wait_stats'
+syntax: "sys.dm_pdw_nodes_os_wait_stats"
 ---
 
 ## Description

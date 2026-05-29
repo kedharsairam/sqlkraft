@@ -3,20 +3,20 @@ title: "Add data files"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   01/22/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to add data or log files to a database in SQL Server by using SQL
-  
+
   Server Management Studio or Transact-SQL.
-  
-  Limitations and 
+
+  Limitations and
 tags:
   - "collation"
   - "add-data-files"

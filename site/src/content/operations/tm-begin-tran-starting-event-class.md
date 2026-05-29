@@ -3,17 +3,17 @@ title: "TM: Begin Tran Starting Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The TM: Begin Tran Starting event class indicates that a BEGIN TRANSACTION request is
-  
+
   starti
 tags:
   - "event-classes"

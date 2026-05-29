@@ -3,11 +3,11 @@ title: "Configure bulk import operations"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server 2022 (16.x) and later versions on Linux
-  
+
   Starting with SQL Server 2022 (16.x) Cumulative Update 24 (CU24) and SQL Server 2025 (17.x)
-  
+
   Cumulative Update 3 (CU3), you can use the
 tags:
   - "linux-operations"

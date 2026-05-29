@@ -1,8 +1,8 @@
 ---
-name: 'Vector functions'
-title: 'Vector functions'
-category: 'statements'
-description: 'SQL Server 2025 (17.x)'
+name: "Vector functions"
+title: "Vector functions"
+category: "statements"
+description: "SQL Server 2025 (17.x)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -41,8 +41,8 @@ data type
 
 .
 
-
 ## Description
+
 VECTOR_DISTANCE
 
 Calculates the distance between two vectors using a specified distance metric.
@@ -79,8 +79,8 @@ length is normalized following the rules of specified norm type.
 
 VECTORPROPERTY
 
-
 ## Returns specific properties of a given vector.
+
 Vector data type
 
 Vector search and vector indexes in the SQL Database Engine

@@ -3,21 +3,21 @@ title: "T-SQL Event Category"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event category contains general Transact-SQL events.
-  
+
   Description
-  
+
   Exec Prepared SQL Eve
 tags:
   - "event-classes"

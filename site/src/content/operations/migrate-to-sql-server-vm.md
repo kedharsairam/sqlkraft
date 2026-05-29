@@ -3,19 +3,19 @@ title: "Migrate to SQL Server VM"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article shows you how to perform a SQL Server migration in Azure Arc to
-  
+
   SQL Server on
-  
+
   Azure VMs
-  
+
   in the Azure portal for your
-  
+
   SQL Server instance enabled by Azure Arc
-  
+
 tags:
   - "azure-synapse"
   - "migrate-to-sql-server-vm"

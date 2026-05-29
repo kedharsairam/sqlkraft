@@ -1,8 +1,8 @@
 ---
-name: 'Implicit and explicit conversion'
-title: 'Implicit and explicit conversion'
-category: 'operators'
-description: 'Azure SQL Managed Instance'
+name: "Implicit and explicit conversion"
+title: "Implicit and explicit conversion"
+category: "operators"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -235,8 +235,8 @@ can be converted to the integer value
 
 statement
 
-
 ## returns the value
+
 . The
 
 operator becomes addition rather than concatenation when the

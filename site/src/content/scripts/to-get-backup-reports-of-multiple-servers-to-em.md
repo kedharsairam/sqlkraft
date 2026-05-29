@@ -1,7 +1,7 @@
 ---
-name: 'To Get Backup Reports of Multiple Servers to Em'
-title: 'To Get Backup Reports of Multiple Servers to Em'
-description: 'SQL Server diagnostic script for backup-restore operations.'
+name: "To Get Backup Reports of Multiple Servers to Em"
+title: "To Get Backup Reports of Multiple Servers to Em"
+description: "SQL Server diagnostic script for backup-restore operations."
 category: backup-restore
 tags: ["backup", "backup-restore"]
 pubDate: 2025-03-15
@@ -12,12 +12,12 @@ $ServerList = 'Serverlist.txt'
 $OutputFile = 'Output.htm'
 
 #If Smtp is having You can use the below code which is surronded by commenting.
-## ## ## ## ## ## ## ## ## ## ## ## ## 
-## $ServerList = 'Servers.csv'## 
-## $OutputFile = 'Output.htm'## 
-## $emlist="sqldbanow@gmail.com"    ## 
-## $MailServer="smtp.sqldbanow.com" ## 
-## ## ## ## ## ## ## ## ## ## ## ## ## 
+## ## ## ## ## ## ## ## ## ## ## ## ##
+## $ServerList = 'Servers.csv'##
+## $OutputFile = 'Output.htm'##
+## $emlist="sqldbanow@gmail.com"    ##
+## $MailServer="smtp.sqldbanow.com" ##
+## ## ## ## ## ## ## ## ## ## ## ## ##
 
 $HTML = '<style type="text/css">
 #Header {
@@ -59,7 +59,7 @@ Import-CSV $ServerList | ForEach-Object {
     $InstanceName = $_.InstanceName
     $AppName = $_.ApplicationName
     $HTML += "<TR bgColor='#ccff66'><TD colspan=5 align=center><strong>$ServerName - $InstanceName - $AppName</strong></TD></TR>"
-    $SQLServer = New-Object ('Microsoft.SqlServer.Management.Smo.Server') $ServerName 
+    $SQLServer = New-Object ('Microsoft.SqlServer.Management.Smo.Server') $ServerName
     Foreach ($Database in $SQLServer.Databases) {
         $DaysSince = ((Get-Date) - $Database.LastBackupDate).Days
         $DaysSinceDiff = ((Get-Date) - $Database.LastDifferentialBackupDate).Days
@@ -107,18 +107,18 @@ $HTML | Out-File $OutputFile
 #If Smtp is working then u can uncomment the below code and fill required detail and remove the code and tested it properly and use.
 
 #################################################################################################
-#Function sendEmail  
-#{ 
-#param($from,$to,$subject,$smtphost,$htmlFileName)  
+#Function sendEmail
+#{
+#param($from,$to,$subject,$smtphost,$htmlFileName)
 
-#$body = Get-Content $htmlFileName 
-#$body = New-Object System.Net.Mail.MailMessage $from, "$to", $subject, $body 
+#$body = Get-Content $htmlFileName
+#$body = New-Object System.Net.Mail.MailMessage $from, "$to", $subject, $body
 #$body.isBodyhtml = $true
 #$smtpServer = $MailServer
 #$smtp = new-object Net.Mail.SmtpClient($smtpServer)
 #$smtp.Send($body)
 
-#}  
+#}
 
 #$date = ( get-date ).ToString('MM/dd/yyyy')
 #$emlist

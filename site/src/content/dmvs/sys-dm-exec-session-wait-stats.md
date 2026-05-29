@@ -1,8 +1,8 @@
 ---
-name: 'sys.dm_exec_session_wait_stats'
-title: 'sys.dm_exec_session_wait_stats'
-category: 'execution'
-description: 'SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns information about all the waits encountered by threads that executed for each session. You can use this view to diagnose performance issues with the SQL Server session and also with specific queries and batches. This view returns the same information that is aggregated for Name of the wait type. For more information'
+name: "sys.dm_exec_session_wait_stats"
+title: "sys.dm_exec_session_wait_stats"
+category: "execution"
+description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns information about all the waits encountered by threads that executed for each session. You can use this view to diagnose performance issues with the SQL Server session and also with specific queries and batches. This view returns the same information that is aggregated for Name of the wait type. For more information"
 tags: ["execution", "dmv"]
 pubDate: 2026-05-29
 ---
@@ -17,26 +17,21 @@ SQL Server 2016 (13.x) and later versions Azure SQL Database Azure SQL Managed I
 
 ## Code Blocks
 
-
 ```sql
 session_id
 ```
-
 
 ```sql
 wait_type
 ```
 
-
 ```sql
 waiting_tasks_count
 ```
 
-
 ```sql
 wait_time_ms
 ```
-
 
 ```sql
 signal_wait_time_ms

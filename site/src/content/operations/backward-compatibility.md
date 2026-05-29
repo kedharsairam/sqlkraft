@@ -3,19 +3,19 @@ title: "Backward compatibility"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   02/26/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Backward compatibility is important to understand if you are upgrading, or if you have more
-  
+
   than one version of SQL Server
 tags:
   - "migration"

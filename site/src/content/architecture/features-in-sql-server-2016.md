@@ -1,7 +1,7 @@
 ---
-title: 'features in SQL Server 2016'
-topic: 'query-processing'
-description: ''
+title: "features in SQL Server 2016"
+topic: "query-processing"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -3,17 +3,17 @@ title: "Managing Routing"
 topic: "service-broker"
 description: |
   09/04/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker uses routes to determine where to deliver messages. This section describes
-  
+
   considerations for managing routing.
-  
+
   By def
 tags:
   - "service-broker"

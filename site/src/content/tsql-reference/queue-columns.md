@@ -1,8 +1,8 @@
 ---
-name: 'Queue Columns'
-title: 'Queue Columns'
-category: 'statements'
-description: 'When the WAITFOR clause is specified, the statement waits for the specified time out, or until a'
+name: "Queue Columns"
+title: "Queue Columns"
+category: "statements"
+description: "When the WAITFOR clause is specified, the statement waits for the specified time out, or until a"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -31,8 +31,8 @@ number of messages retrieved by each RECEIVE statement.
 
 The following table lists the columns in a queue:
 
-
 ## Description
+
 Status of the message. For messages returned by the
 
 RECEIVE command, the status is always

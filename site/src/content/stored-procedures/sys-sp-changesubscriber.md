@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_changesubscriber'
-title: 'sp_changesubscriber'
-category: 'general'
-description: 'Changes the options for a Subscriber. Any distribution task for the Subscribers to this Publisher is updated. This stored procedure writes to the database. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the Subscriber on which to change the options.'
+name: "sys.sp_changesubscriber"
+title: "sp_changesubscriber"
+category: "general"
+description: "Changes the options for a Subscriber. Any distribution task for the Subscribers to this Publisher is updated. This stored procedure writes to the database. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the Subscriber on which to change the options."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,8 +1,8 @@
 ---
-name: 'M. Use HAVING with SUM and AVG'
-title: 'M. Use HAVING with SUM and AVG'
-category: 'statements'
-description: 'The following example shows using'
+name: "M. Use HAVING with SUM and AVG"
+title: "M. Use HAVING with SUM and AVG"
+category: "statements"
+description: "The following example shows using"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

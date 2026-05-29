@@ -1,7 +1,7 @@
 ---
-title: 'Log truncation'
-topic: 'io-fundamentals'
-description: 'This cycle repeats endlessly, as long as the end of the logical log never reaches the beginning'
+title: "Log truncation"
+topic: "io-fundamentals"
+description: "This cycle repeats endlessly, as long as the end of the logical log never reaches the beginning"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -3,19 +3,19 @@ title: "Prerequisites, Restrictions, & Recommendations"
 topic: "high-availability"
 description: |
   Prerequisites, Restrictions, and
-  
+
   Article
-  
+
   •
-  
+
   03/26/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes the prerequisites and recommendations for setting up database mirroring.
-  
+
   For an introduction to
 tags:
   - "high-availability"

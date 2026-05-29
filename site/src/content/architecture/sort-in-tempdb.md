@@ -3,17 +3,17 @@ title: "SORT_IN_TEMPDB"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   When you create or rebuild an index, by setting the SORT_IN_TEMPDB option to ON you can
-  
+
   dire
 tags:
   - "filestream"

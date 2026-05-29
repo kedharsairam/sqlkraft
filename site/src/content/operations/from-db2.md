@@ -3,19 +3,19 @@ title: "From Db2"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   01/15/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   In this guide, you learn how to migrate your user databases from IBM Db2 to SQL Server by
-  
+
   using SQL Server Migration Assistant (SSMA) for Db2.
-  
+
   For ot
 tags:
   - "migration"

@@ -1,8 +1,8 @@
 ---
-name: 'Examples: Analytics Platform System (PDW)'
-title: 'Examples: Analytics Platform System (PDW)'
-category: 'statements'
-description: 'The following example drops the certificate'
+name: "Examples: Analytics Platform System (PDW)"
+title: "Examples: Analytics Platform System (PDW)"
+category: "statements"
+description: "The following example drops the certificate"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

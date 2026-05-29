@@ -1,7 +1,7 @@
 ---
-name: 'To View Details of Instance Services'
-title: 'To View Details of Instance Services'
-description: 'SQL Server diagnostic script for installation operations.'
+name: "To View Details of Instance Services"
+title: "To View Details of Instance Services"
+description: "SQL Server diagnostic script for installation operations."
 category: installation
 tags: ["installation"]
 pubDate: 2025-03-15

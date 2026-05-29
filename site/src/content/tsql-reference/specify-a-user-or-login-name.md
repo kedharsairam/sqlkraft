@@ -1,8 +1,8 @@
 ---
-name: 'Specify a user or login name'
-title: 'Specify a user or login name'
-category: 'operators'
-description: 'Doesn''t apply to dynamic queries inside the module.'
+name: "Specify a user or login name"
+title: "Specify a user or login name"
+category: "operators"
+description: "Doesn't apply to dynamic queries inside the module."
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

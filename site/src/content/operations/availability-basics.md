@@ -3,15 +3,15 @@ title: "Availability basics"
 topic: "linux-operations"
 description: |
   SQL Server availability basics for Linux
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   Starting with SQL Server 2017 (14.x), SQL Server is supported on both Linux and Windows. Like
-  
+
   Windows-based SQL Server dep
 tags:
   - "linux-operations"

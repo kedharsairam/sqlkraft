@@ -1,9 +1,9 @@
 ---
-name: '1469'
-title: 'Error 1469'
+name: "1469"
+title: "Error 1469"
 errorNumber: 1469
-severity: 'medium'
-category: 'connection'
+severity: "medium"
+category: "connection"
 description: 'Description operations are not allowed on a database that is participating in a database mirroring session or in an availability group. 1469 16 No Database "%.*ls" is an auto-close database on one of '
 tags: ["connection", "severity-medium"]
 pubDate: 2026-05-29
@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description operations are not allowed on a database that is participating in a database mirroring session or in an availability group. 1469 16 No Database "%.*ls" is an auto-close database on one of 
+Description operations are not allowed on a database that is participating in a database mirroring session or in an availability group. 1469 16 No Database "%.\*ls" is an auto-close database on one of
 
 ## Severity
 
@@ -19,5 +19,4 @@ MEDIUM (Level N/A)
 
 ## Troubleshooting
 
-*(Diagnostic content pending full extraction)*
-
+_(Diagnostic content pending full extraction)_

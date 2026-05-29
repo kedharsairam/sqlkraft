@@ -1,7 +1,7 @@
 ---
-name: 'To Deal with Wait Types'
-title: 'To Deal with Wait Types'
-description: 'most common wait types:'
+name: "To Deal with Wait Types"
+title: "To Deal with Wait Types"
+description: "most common wait types:"
 category: troubleshooting
 tags: ["troubleshooting", "wait-statistics"]
 pubDate: 2025-03-15
@@ -43,10 +43,10 @@ WITH [Waits] AS
         N'CLR_AUTO_EVENT', -- https://www.sqlskills.com/help/waits/CLR_AUTO_EVENT
         N'CLR_MANUAL_EVENT', -- https://www.sqlskills.com/help/waits/CLR_MANUAL_EVENT
         N'CLR_SEMAPHORE', -- https://www.sqlskills.com/help/waits/CLR_SEMAPHORE
- 
+
         -- Maybe comment this out if you have parallelism issues
         N'CXCONSUMER', -- https://www.sqlskills.com/help/waits/CXCONSUMER
- 
+
         -- Maybe comment these four out if you have mirroring issues
         N'DBMIRROR_DBM_EVENT', -- https://www.sqlskills.com/help/waits/DBMIRROR_DBM_EVENT
         N'DBMIRROR_EVENTS_QUEUE', -- https://www.sqlskills.com/help/waits/DBMIRROR_EVENTS_QUEUE
@@ -58,7 +58,7 @@ WITH [Waits] AS
         N'FSAGENT', -- https://www.sqlskills.com/help/waits/FSAGENT
         N'FT_IFTS_SCHEDULER_IDLE_WAIT', -- https://www.sqlskills.com/help/waits/FT_IFTS_SCHEDULER_IDLE_WAIT
         N'FT_IFTSHC_MUTEX', -- https://www.sqlskills.com/help/waits/FT_IFTSHC_MUTEX
-  
+
        -- Maybe comment these six out if you have AG issues
         N'HADR_CLUSAPI_CALL', -- https://www.sqlskills.com/help/waits/HADR_CLUSAPI_CALL
         N'HADR_FILESTREAM_IOMGR_IOCOMPLETION', -- https://www.sqlskills.com/help/waits/HADR_FILESTREAM_IOMGR_IOCOMPLETION
@@ -66,7 +66,7 @@ WITH [Waits] AS
         N'HADR_NOTIFICATION_DEQUEUE', -- https://www.sqlskills.com/help/waits/HADR_NOTIFICATION_DEQUEUE
         N'HADR_TIMER_TASK', -- https://www.sqlskills.com/help/waits/HADR_TIMER_TASK
         N'HADR_WORK_QUEUE', -- https://www.sqlskills.com/help/waits/HADR_WORK_QUEUE
- 
+
         N'KSOURCE_WAKEUP', -- https://www.sqlskills.com/help/waits/KSOURCE_WAKEUP
         N'LAZYWRITER_SLEEP', -- https://www.sqlskills.com/help/waits/LAZYWRITER_SLEEP
         N'LOGMGR_QUEUE', -- https://www.sqlskills.com/help/waits/LOGMGR_QUEUE

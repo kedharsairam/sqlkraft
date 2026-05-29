@@ -3,23 +3,23 @@ title: "Attention Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class indicates that an attention event, such as cancel, client-interrupt
-  
+
   requests, or brok
 tags:
   - "event-classes"

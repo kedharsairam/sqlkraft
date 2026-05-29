@@ -3,19 +3,19 @@ title: "Mirroring States"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   During a database mirroring session, the mirrored database is always in a specific state (the
-  
+
   mirroring state
-  
+
   ). The state of the database reflects t
 tags:
   - "high-availability"

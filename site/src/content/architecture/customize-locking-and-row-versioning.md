@@ -1,7 +1,7 @@
 ---
-title: 'Customize locking and row versioning'
-topic: 'locking'
-description: '### and resolve SQL Server blocking problems'
+title: "Customize locking and row versioning"
+topic: "locking"
+description: "### and resolve SQL Server blocking problems"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -3,9 +3,9 @@ title: "Use slash commands"
 topic: "profiler"
 description: |
   Quickstart: Use GitHub Copilot slash
-  
+
   GitHub Copilot slash commands provide a quick, discoverable way to interact with your SQL
-  
+
   Server databases directly from the GitHub Copilot chat in Visual Studio
 tags:
   - "profiler"

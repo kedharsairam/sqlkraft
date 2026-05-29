@@ -3,17 +3,17 @@ title: "Enumeration Facets"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   SQL Server rejects XML schemas with types that have pattern facets or enumerations that
-  
+
   viol
 tags:
   - "xml-data"

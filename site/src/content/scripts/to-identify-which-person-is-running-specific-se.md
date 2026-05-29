@@ -1,7 +1,7 @@
 ---
-name: 'To Identify which Person is Running Specific Se'
-title: 'To Identify which Person is Running Specific Se'
-description: 'SQL Server diagnostic script for general operations.'
+name: "To Identify which Person is Running Specific Se"
+title: "To Identify which Person is Running Specific Se"
+description: "SQL Server diagnostic script for general operations."
 category: general
 tags: ["general"]
 pubDate: 2025-03-15

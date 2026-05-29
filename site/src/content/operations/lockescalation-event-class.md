@@ -3,19 +3,19 @@ title: "Lock:Escalation Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event class indicates that a finer-grained lock has been
 tags:
   - "event-classes"

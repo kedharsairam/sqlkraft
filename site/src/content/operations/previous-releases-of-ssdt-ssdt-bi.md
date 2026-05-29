@@ -3,19 +3,19 @@ title: "Previous releases of SSDT & SSDT-BI"
 topic: "data-tools"
 description: |
   09/09/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL Server Data Tools (SSDT) provides project templates a
 tags:
   - "data-tools"

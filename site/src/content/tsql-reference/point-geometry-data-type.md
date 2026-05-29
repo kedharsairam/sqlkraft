@@ -1,8 +1,8 @@
 ---
-name: 'Point (geometry Data Type)'
-title: 'Point (geometry Data Type)'
-category: 'data-types'
-description: 'The following example uses'
+name: "Point (geometry Data Type)"
+title: "Point (geometry Data Type)"
+category: "data-types"
+description: "The following example uses"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

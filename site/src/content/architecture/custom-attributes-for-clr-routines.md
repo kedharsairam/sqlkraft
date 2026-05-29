@@ -3,19 +3,19 @@ title: "Custom attributes for CLR routines"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   The attributes listed can be applied to common language runtime (CLR) routines, user-defined
-  
+
   types, and user-defined aggre
 tags:
   - "clr-integration"

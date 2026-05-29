@@ -3,17 +3,17 @@ title: "Return data"
 topic: "spatial-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   SQL database in Microsoft Fabric
-  
+
   There are three ways of returning data from a procedure to a calling
 tags:
   - "spatial-data"

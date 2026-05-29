@@ -1,7 +1,7 @@
 ---
-name: 'To View List of Databases Participating in Log'
-title: 'To View List of Databases Participating in Log'
-description: 'the following commands will give the list of databases and info about jobs as well'
+name: "To View List of Databases Participating in Log"
+title: "To View List of Databases Participating in Log"
+description: "the following commands will give the list of databases and info about jobs as well"
 category: high-availability
 tags: ["database", "high-availability"]
 pubDate: 2025-03-15

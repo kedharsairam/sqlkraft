@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_describe_cursor_tables'
-title: 'sp_describe_cursor_tables'
-category: 'general'
-description: 'Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric A data type for variables or stored procedure OUTPUT parameters that contain a reference to a The operations that can reference variables and parameters having a @local_variable @local_variable The OPEN, FETCH, CLOSE, and DEALLOCATE cursor statements. Stored procedure output parameters. The CURSOR_STATUS function. syste'
+name: "sys.sp_describe_cursor_tables"
+title: "sp_describe_cursor_tables"
+category: "general"
+description: "Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric A data type for variables or stored procedure OUTPUT parameters that contain a reference to a The operations that can reference variables and parameters having a @local_variable @local_variable The OPEN, FETCH, CLOSE, and DEALLOCATE cursor statements. Stored procedure output parameters. The CURSOR_STATUS function. syste"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_describe_cursor_tables'
+syntax: "sp_describe_cursor_tables"
 ---
 
 ## Description
@@ -140,5 +140,4 @@ OPENROWSET
 dbid
 ```
 
-
-*(... and 12 more examples)*
+_(... and 12 more examples)_

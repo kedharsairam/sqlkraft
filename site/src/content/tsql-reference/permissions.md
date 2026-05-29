@@ -1,8 +1,8 @@
 ---
-name: 'Permissions'
-title: 'Permissions'
-category: 'statements'
-description: 'For more information, see'
+name: "Permissions"
+title: "Permissions"
+category: "statements"
+description: "For more information, see"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

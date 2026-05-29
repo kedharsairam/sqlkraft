@@ -1,8 +1,8 @@
 ---
-name: 'Asymmetric encryption and decryption'
-title: 'Asymmetric encryption and decryption'
-category: 'operators'
-description: 'Azure SQL Managed Instance'
+name: "Asymmetric encryption and decryption"
+title: "Asymmetric encryption and decryption"
+category: "operators"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

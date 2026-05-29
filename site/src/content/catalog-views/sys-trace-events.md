@@ -1,8 +1,8 @@
 ---
-name: 'sys.trace_events'
-title: 'sys.trace_events'
-category: 'compatibility'
-description: 'Contains one row for each Extended Events event that is mapped to a SQL Trace event class. This table is stored in the master database, in the sys schema. The ID of the SQL Trace event class that is being mapped. The name of the Extended Events package where the mapped event The name of the Extended Events event that is mapped to the SQL Trace You can use the following query to identify the Extend'
+name: "sys.trace_events"
+title: "sys.trace_events"
+category: "compatibility"
+description: "Contains one row for each Extended Events event that is mapped to a SQL Trace event class. This table is stored in the master database, in the sys schema. The ID of the SQL Trace event class that is being mapped. The name of the Extended Events package where the mapped event The name of the Extended Events event that is mapped to the SQL Trace You can use the following query to identify the Extend"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

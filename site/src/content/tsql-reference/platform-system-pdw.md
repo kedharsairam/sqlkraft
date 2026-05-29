@@ -1,8 +1,8 @@
 ---
-name: 'Platform System (PDW)'
-title: 'Platform System (PDW)'
-category: 'statements'
-description: 'SET ROWCOUNT stops processing after the specified number of rows. In the following'
+name: "Platform System (PDW)"
+title: "Platform System (PDW)"
+category: "statements"
+description: "SET ROWCOUNT stops processing after the specified number of rows. In the following"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

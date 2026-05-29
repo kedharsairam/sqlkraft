@@ -3,17 +3,17 @@ title: "DML Triggers"
 topic: "change-data-capture"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The DML trigger is a special type of stored procedure that automatically takes effect when a
-  
+
 tags:
   - "change-data-capture"
   - "dml-triggers"

@@ -1,8 +1,8 @@
 ---
-name: 'Queries'
-title: 'Queries'
-category: 'statements'
-description: '#### Can be used in these statements'
+name: "Queries"
+title: "Queries"
+category: "statements"
+description: "#### Can be used in these statements"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,16 +1,16 @@
 ---
-name: 'Backward Compatibility for Down-level Clients'
-title: 'Backward Compatibility for Down-level Clients'
-category: 'statements'
-description: 'Milliseconds can be preceded by either a colon (:) or a period (.). If a colon is used, the'
+name: "Backward Compatibility for Down-level Clients"
+title: "Backward Compatibility for Down-level Clients"
+category: "statements"
+description: "Milliseconds can be preceded by either a colon (:) or a period (.). If a colon is used, the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 SQL Server
 
-
 ## Description
+
 Milliseconds can be preceded by either a colon (:) or a period (.). If a colon is used, the
 
 number means thousandths-of-a-second. If a period is used, a single digit means
@@ -25,7 +25,7 @@ Notes
 
 hh:mm:ss
 
-hh:mm[:ss][.fractional
+hh:mm[:ss].fractional
 
 seconds]
 

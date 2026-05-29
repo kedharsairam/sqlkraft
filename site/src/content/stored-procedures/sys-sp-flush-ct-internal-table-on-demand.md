@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_flush_ct_internal_table_on_demand'
-title: 'sys.sp_flush_CT_internal_table_on_demand'
-category: 'general'
-description: 'SQL database in Microsoft Fabric This stored procedure allows you to manually clean the side table ( for a table in a database for which change tracking is enabled. If the isn''t passed, then this process cleans all side tables for all tables in the database where change Transact-SQL syntax conventions The change tracking-enabled table to be manually cleaned up. The backlogs are left for the automa'
+name: "sys.sp_flush_ct_internal_table_on_demand"
+title: "sys.sp_flush_CT_internal_table_on_demand"
+category: "general"
+description: "SQL database in Microsoft Fabric This stored procedure allows you to manually clean the side table ( for a table in a database for which change tracking is enabled. If the isn't passed, then this process cleans all side tables for all tables in the database where change Transact-SQL syntax conventions The change tracking-enabled table to be manually cleaned up. The backlogs are left for the automa"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'change_tracking_objectid'
+syntax: "change_tracking_objectid"
 ---
 
 ## Description

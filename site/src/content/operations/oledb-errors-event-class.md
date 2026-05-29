@@ -3,22 +3,22 @@ title: "OLEDB Errors Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The OLEDB Errors event class occurs in Microsoft SQL Server when a call to an OLE DB provider
-  
-  returns 
+
+  returns
 tags:
   - "event-classes"
   - "oledb-errors-event-class"

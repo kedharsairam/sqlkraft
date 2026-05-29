@@ -48,7 +48,7 @@ SQL Server
 
 XQuery supports the following operators:
 
-Numeric operators (+, -, *, div, mod)
+Numeric operators (+, -, \*, div, mod)
 
 Operators for value comparison (eq, ne, lt, gt, le, ge)
 

@@ -3,17 +3,17 @@ title: "Replication"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   11/18/2022
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Database mirroring can be used in conjunction with replication to improve availability for the
-  
+
   publication database. Database mirroring involves two c
 tags:
   - "high-availability"

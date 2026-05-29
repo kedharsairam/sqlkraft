@@ -1,10 +1,10 @@
 ---
-name: 'RAISERROR'
-title: 'RAISERROR'
-category: 'statements'
-description: ''
+name: "RAISERROR"
+title: "RAISERROR"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

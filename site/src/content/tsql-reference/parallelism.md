@@ -1,8 +1,8 @@
 ---
-name: 'Parallelism'
-title: 'Parallelism'
-category: 'statements'
-description: 'The whole operation is atomic. Either both the'
+name: "Parallelism"
+title: "Parallelism"
+category: "statements"
+description: "The whole operation is atomic. Either both the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -49,8 +49,8 @@ statements that contain a
 
 clause.
 
-
 ## returns the rows inserted only by the outer
+
 statement.
 
 ,

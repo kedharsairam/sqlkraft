@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_update_job'
-title: 'sp_update_job'
-category: 'general'
-description: 'Updates the attributes of an existing job created in the SQL Server Agent service. Transact-SQL syntax conventions The identification number of the job to be updated. must be specified, but both can''t be specified.'
+name: "sys.sp_update_job"
+title: "sp_update_job"
+category: "general"
+description: "Updates the attributes of an existing job created in the SQL Server Agent service. Transact-SQL syntax conventions The identification number of the job to be updated. must be specified, but both can't be specified."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

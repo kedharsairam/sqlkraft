@@ -3,11 +3,11 @@ title: "Troubleshoot failed add-file"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   In some Always On availability group deployments, file paths differ between the system that
-  
+
   hosts the primary replica and systems that host a secondary replica. If the file p
 tags:
   - "high-availability"

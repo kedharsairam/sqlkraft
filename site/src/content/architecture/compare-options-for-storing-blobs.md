@@ -3,19 +3,19 @@ title: "Compare Options for Storing Blobs"
 topic: "filestream"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Discusses and compares the options that are available for storing files and documents in SQL
-  
+
   Server.
-  
+
   A large percentage of enterprise data is unstruc
 tags:
   - "filestream"

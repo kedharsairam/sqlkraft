@@ -1,8 +1,8 @@
 ---
-name: 'System Statistical Functions'
-title: 'System Statistical Functions'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "System Statistical Functions"
+title: "System Statistical Functions"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

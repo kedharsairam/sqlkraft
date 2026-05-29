@@ -1,8 +1,8 @@
 ---
-name: 'Supported String Literal Formats for time'
-title: 'Supported String Literal Formats for time'
-category: 'data-types'
-description: '* Not supported in Informatica.'
+name: "Supported String Literal Formats for time"
+title: "Supported String Literal Formats for time"
+category: "data-types"
+description: "* Not supported in Informatica."
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -19,7 +19,7 @@ pubDate: 2026-05-29
 
 3-4
 
-*
+-
 
 (13,4)
 
@@ -27,7 +27,7 @@ pubDate: 2026-05-29
 
 3-4
 
-*
+-
 
 (14,5)
 
@@ -35,7 +35,7 @@ pubDate: 2026-05-29
 
 5-7
 
-*
+-
 
 (15,6)
 
@@ -43,7 +43,7 @@ pubDate: 2026-05-29
 
 5-7
 
-* +
+- -
 
 (16,7)
 
@@ -51,9 +51,9 @@ pubDate: 2026-05-29
 
 5-7
 
-* Not supported in Informatica.
+- Not supported in Informatica.
 
-+ Not supported in Microsoft Fabric.
+* Not supported in Microsoft Fabric.
 
 The following table shows the valid string literal formats for the
 
@@ -61,8 +61,8 @@ data type.
 
 SQL Server
 
-
 ## Description
+
 hh:mm[:ss]
 
 [:fractional

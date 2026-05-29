@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_changedynamicsnapshot_job'
-title: 'sp_changedynamicsnapshot_job'
-category: 'general'
-description: 'Modifies the agent job that generates the snapshot for a subscription to a publication with a parameterized row filter. This stored procedure is executed at the Publisher on the publication Transact-SQL syntax conventions'
+name: "sys.sp_changedynamicsnapshot_job"
+title: "sp_changedynamicsnapshot_job"
+category: "general"
+description: "Modifies the agent job that generates the snapshot for a subscription to a publication with a parameterized row filter. This stored procedure is executed at the Publisher on the publication Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

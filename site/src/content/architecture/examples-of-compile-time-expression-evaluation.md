@@ -1,7 +1,7 @@
 ---
-title: 'Examples of compile-time expression evaluation'
-topic: 'io-fundamentals'
-description: 'Specifically, the following built-in functions and special operators are evaluated at compile time'
+title: "Examples of compile-time expression evaluation"
+topic: "io-fundamentals"
+description: "Specifically, the following built-in functions and special operators are evaluated at compile time"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -26,7 +26,7 @@ if all their inputs are known:
 
 known:
 
-Arithmetic operators: +, -, *, /, unary -
+Arithmetic operators: +, -, \*, /, unary -
 
 Logical Operators:
 

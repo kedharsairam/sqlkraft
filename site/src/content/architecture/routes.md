@@ -3,15 +3,15 @@ title: "Routes"
 topic: "service-broker"
 description: |
   09/04/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker uses routes to determine where to deliver messages. When a service sends a
-  
+
   message on a conversation, SQL Server uses r
 tags:
   - "service-broker"

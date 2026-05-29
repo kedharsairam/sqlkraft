@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_syspolicy_delete_policy_execution_history'
-title: 'sp_syspolicy_delete_policy_execution_history'
-category: 'general'
-description: ', and to view execution history dates, you can use the following The following behavior applies if you specify To delete all policy execution history, specify To delete all policy execution history for a specific policy, specify a policy identifier for To delete policy execution history for all policies before a specific date, specify To archive policy execution history, you can open the Policy Hi'
+name: "sys.sp_syspolicy_delete_policy_execution_history"
+title: "sp_syspolicy_delete_policy_execution_history"
+category: "general"
+description: ", and to view execution history dates, you can use the following The following behavior applies if you specify To delete all policy execution history, specify To delete all policy execution history for a specific policy, specify a policy identifier for To delete policy execution history for all policies before a specific date, specify To archive policy execution history, you can open the Policy Hi"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_syspolicy_delete_policy_execution_history'
+syntax: "sp_syspolicy_delete_policy_execution_history"
 ---
 
 ## Description

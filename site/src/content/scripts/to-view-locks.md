@@ -1,7 +1,7 @@
 ---
-name: 'To View Locks'
-title: 'To View Locks'
-description: 'SQL Server diagnostic script for performance operations.'
+name: "To View Locks"
+title: "To View Locks"
+description: "SQL Server diagnostic script for performance operations."
 category: performance
 tags: ["performance"]
 pubDate: 2025-03-15

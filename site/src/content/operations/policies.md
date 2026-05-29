@@ -3,17 +3,17 @@ title: "Policies"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   09/27/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The Always On availability groups health model evaluates a set of predefined policy based
-  
+
   management (PBM) policies. You can use these for viewing the
 tags:
   - "high-availability"

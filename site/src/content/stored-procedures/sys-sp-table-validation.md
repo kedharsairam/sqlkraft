@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_table_validation'
-title: 'sp_table_validation'
-category: 'general'
-description: 'If the Distribution Agent is executing , specifies whether the Distribution Agent should shut down immediately upon completion of the validation. @shutdown_agent , with a default of , the replication agent doesn''t shut down. If , error 20578 is raised and the replication agent is signaled to shut down. This parameter is ignored when is executed directly by a user. The table name of the view used f'
+name: "sys.sp_table_validation"
+title: "sp_table_validation"
+category: "general"
+description: "If the Distribution Agent is executing , specifies whether the Distribution Agent should shut down immediately upon completion of the validation. @shutdown_agent , with a default of , the replication agent doesn't shut down. If , error 20578 is raised and the replication agent is signaled to shut down. This parameter is ignored when is executed directly by a user. The table name of the view used f"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

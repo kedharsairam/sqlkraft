@@ -3,13 +3,13 @@ title: "Use AD authentication"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This tutorial explains how to configure SQL Server on Linux to support Active Directory
-  
+
   authentication, also known as integrated authentication. For an overview, se
 tags:
   - "linux-operations"

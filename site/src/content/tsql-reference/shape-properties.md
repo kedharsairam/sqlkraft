@@ -1,8 +1,8 @@
 ---
-name: 'Shape properties'
-title: 'Shape properties'
-category: 'statements'
-description: 'Summarize this article for me'
+name: "Shape properties"
+title: "Shape properties"
+category: "statements"
+description: "Summarize this article for me"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -59,24 +59,24 @@ OGC Specifications, Simple Feature Access Part 2 - SQL Options
 
 These methods return measurements and properties that describe the geometric shape.
 
-
 ## Description
+
 STArea
 
-
 ## Returns the total surface area of a geometry instance in square units based on its spatial
+
 reference identifier (SRID).
 
 STLength
 
-
 ## Returns the total length of elements in a geometry instance or all elements in a geometry
+
 collection.
 
 STBoundary
 
-
 ## Returns the boundary of a geometry instance as a lower-dimensional geometry.
+
 ﾉ
 
 Expand table

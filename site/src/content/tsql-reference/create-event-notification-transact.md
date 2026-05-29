@@ -1,8 +1,8 @@
 ---
-name: 'CREATE EVENT NOTIFICATION (Transact-'
-title: 'CREATE EVENT NOTIFICATION (Transact-'
-category: 'statements'
-description: 'DROP ENDPOINT (Transact-SQL)'
+name: "CREATE EVENT NOTIFICATION (Transact-"
+title: "CREATE EVENT NOTIFICATION (Transact-"
+category: "statements"
+description: "DROP ENDPOINT (Transact-SQL)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

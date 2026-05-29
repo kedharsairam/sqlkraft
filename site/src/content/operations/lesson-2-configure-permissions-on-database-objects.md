@@ -3,17 +3,17 @@ title: "Lesson 2: Configure permissions on database objects"
 topic: "configuration"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL database in Microsoft Fabric
-  
+
   Granting a user access to a database involves three steps. F
 tags:
   - "configuration"

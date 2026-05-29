@@ -3,21 +3,21 @@ title: "Columns with a Name"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The following are the specific conditions in which rowset columns with a name are mapped,
-  
+
   case-sensiti
 tags:
   - "xml-data"

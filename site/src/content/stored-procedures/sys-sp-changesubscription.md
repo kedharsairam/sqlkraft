@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_changesubscription'
-title: 'sp_changesubscription'
-category: 'general'
-description: 'Changes the properties of a snapshot or transactional push subscription or a pull subscription involved in queued updating transactional replication. To change properties of all other types sp_change_subscription_properties executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to change. When configuring a Publisher with a remote Distrib'
+name: "sys.sp_changesubscription"
+title: "sp_changesubscription"
+category: "general"
+description: "Changes the properties of a snapshot or transactional push subscription or a pull subscription involved in queued updating transactional replication. To change properties of all other types sp_change_subscription_properties executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to change. When configuring a Publisher with a remote Distrib"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_changesubscription'
+syntax: "sp_changesubscription"
 ---
 
 ## Description

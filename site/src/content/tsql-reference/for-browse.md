@@ -1,8 +1,8 @@
 ---
-name: 'FOR BROWSE'
-title: 'FOR BROWSE'
-category: 'statements'
-description: 'Specifies that updates are allowed while viewing the data in a DB-Library browse mode cursor.'
+name: "FOR BROWSE"
+title: "FOR BROWSE"
+category: "statements"
+description: "Specifies that updates are allowed while viewing the data in a DB-Library browse mode cursor."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

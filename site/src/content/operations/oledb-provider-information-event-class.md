@@ -3,24 +3,24 @@ title: "OLEDB Provider Information Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class occurs when a distributed query is run and
-  
-  collects information corresponding to the 
+
+  collects information corresponding to the
 tags:
   - "event-classes"
   - "oledb-provider-information-event-class"

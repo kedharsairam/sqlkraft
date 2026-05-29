@@ -1,10 +1,10 @@
 ---
-name: '5586'
-title: 'Error 5586'
+name: "5586"
+title: "Error 5586"
 errorNumber: 5586
-severity: 'medium'
-category: 'io'
-description: 'Description 5586 10 No The FILESTREAM feature is already configured to the specified level. No change has been made. 5588 16 No Access to FILESTREAM data is not supported under snapshot isolation leve'
+severity: "medium"
+category: "io"
+description: "Description 5586 10 No The FILESTREAM feature is already configured to the specified level. No change has been made. 5588 16 No Access to FILESTREAM data is not supported under snapshot isolation leve"
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---
@@ -19,5 +19,4 @@ MEDIUM (Level N/A)
 
 ## Troubleshooting
 
-*(Diagnostic content pending full extraction)*
-
+_(Diagnostic content pending full extraction)_

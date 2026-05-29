@@ -3,29 +3,29 @@ title: "LOCALDB_ERROR_CALLER_IS_NOT_OWNER"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Product Name
-  
+
   SQL Server
-  
+
   Event ID
-  
+
   282
-  
+
   Event Source
-  
+
   SQL Server Local Database Runtime 12.0
-  
+
   Component
-  
+
   Local Database Runtime API
-  
+
   Message Text
-  
+
   API caller is n
 tags:
   - "clr-integration"

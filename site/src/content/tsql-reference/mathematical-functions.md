@@ -1,8 +1,8 @@
 ---
-name: 'Mathematical functions'
-title: 'Mathematical functions'
-category: 'statements'
-description: ''
+name: "Mathematical functions"
+title: "Mathematical functions"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -3,11 +3,11 @@ title: "Anonymous Usage Data"
 topic: "ssb-diagnose"
 description: |
   SQL Server Data Tools usage and
-  
+
   09/10/2025
-  
+
   The SQL Server Data Tools (SSDT) component is enabled through the Data workload in Visual
-  
+
   Studio. The Visual Studio Customer Experience Improvement Progra
 tags:
   - "ssb-diagnose"

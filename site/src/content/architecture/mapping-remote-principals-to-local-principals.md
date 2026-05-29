@@ -3,16 +3,16 @@ title: "Mapping Remote Principals to Local Principals"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker dialog security uses certificates to map remote operations to a local security
-  
-  principal. This topic describes some of 
+
+  principal. This topic describes some of
 tags:
   - "service-broker"
   - "mapping-remote-principals-to-local-principals"

@@ -3,10 +3,10 @@ title: "Use GitHub Copilot inline and chat suggestions"
 topic: "profiler"
 description: |
   Quickstart: Use chat and inline GitHub
-  
+
   GitHub Copilot provides both inline suggestions while typing in the code editor and an
-  
-  interactive chat experience. You can ask the chat participant questions 
+
+  interactive chat experience. You can ask the chat participant questions
 tags:
   - "profiler"
   - "use-github-copilot-inline-and-chat-suggestions"

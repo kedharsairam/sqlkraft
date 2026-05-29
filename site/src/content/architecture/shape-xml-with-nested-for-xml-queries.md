@@ -3,22 +3,22 @@ title: "Shape XML with Nested FOR XML Queries"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The following example queries the
-  
+
   table to retrieve the
-  
+
   and
-  
-  values of a specific product. 
+
+  values of a specific product.
 tags:
   - "xml-data"
   - "shape-xml-with-nested-for-xml-queries"

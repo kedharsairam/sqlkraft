@@ -1,7 +1,7 @@
 ---
-title: 'Query sys.dm_os_waiting_tasks ordered by wait duration'
-topic: 'query-processing'
-description: 'This section contains scripts that can be used to help diagnose and troubleshoot latch'
+title: "Query sys.dm_os_waiting_tasks ordered by wait duration"
+topic: "query-processing"
+description: "This section contains scripts that can be used to help diagnose and troubleshoot latch"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

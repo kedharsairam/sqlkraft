@@ -1,7 +1,7 @@
 ---
-title: 'System stored procedures and functions'
-topic: 'io-fundamentals'
-description: 'c2 audit option default trace enabled'
+title: "System stored procedures and functions"
+topic: "io-fundamentals"
+description: "c2 audit option default trace enabled"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -60,7 +60,7 @@ Microsoft.SqlServer. Management.Smo.Server
 
 class
 
-*
+-
 
 Microsoft.SqlServer. Management.Smo.Server
 

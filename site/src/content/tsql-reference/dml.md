@@ -1,8 +1,8 @@
 ---
-name: 'DML)'
-title: 'DML)'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "DML)"
+title: "DML)"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -25,7 +25,7 @@ pubDate: 2026-05-29
 
 ### xmlns
 
-### xmlns:*
+### xmlns:\*
 
 ### xml:base
 

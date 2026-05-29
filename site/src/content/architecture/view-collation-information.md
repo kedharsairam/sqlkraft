@@ -3,18 +3,17 @@ title: "View Collation Information"
 topic: "collation"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   You can view the collation of a server, database, or column in SQL Server Management Studio
-  
-  
+
 tags:
   - "collation"
   - "view-collation-information"

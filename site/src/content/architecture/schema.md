@@ -3,33 +3,33 @@ title: "Schema"
 topic: "filestream"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Describes the pre-defined and fixed schema of a FileTable.
-  
+
   Description
-  
+
   variable
-  
+
   A
-  
+
   that
-  
+
   identifies
-  
+
   the
-  
+
   position of
-  
+
   this item.
-  
+
   The position of t
 tags:
   - "filestream"

@@ -3,17 +3,17 @@ title: "SP:Starting Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The SP:Starting event class indicates that a stored procedure is beginning execution.
-  
+
   Descri
 tags:
   - "event-classes"

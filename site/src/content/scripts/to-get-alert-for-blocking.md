@@ -1,7 +1,7 @@
 ---
-name: 'To Get Alert for Blocking'
-title: 'To Get Alert for Blocking'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To Get Alert for Blocking"
+title: "To Get Alert for Blocking"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["automation", "blocking"]
 pubDate: 2025-03-15
@@ -63,7 +63,7 @@ programname nvarchar(120) NULL)
 
 Declare
 -- HTML Variables
-@Body nvarchar(max), 
+@Body nvarchar(max),
 @TableTail varchar(100),
 @TableHead varchar(max),
 
@@ -72,17 +72,17 @@ Declare
 @MailSubject varchar(100),
 @Subject varchar (100) -- Subject line
 
-/* Set some initial variables */ 
+/* Set some initial variables */
 
---Set @waittime = 1 -- In seconds the amount of time we want a task to wait prior to being eligible to be returned. 
+--Set @waittime = 1 -- In seconds the amount of time we want a task to wait prior to being eligible to be returned.
 Set @waittime = @waittime * 1000 -- Convert to miliseconds
 
 /* Check sys.configurations to see if DB Mail has been turned on */
 Select
-@IsDBMailEnabled = CONVERT(INT, ISNULL(value, value_in_use)) 
-From 
+@IsDBMailEnabled = CONVERT(INT, ISNULL(value, value_in_use))
+From
 sys.configurations
-Where 
+Where
 name LIKE 'Database Mail XPs';
 /* If DB Mail is not active, fail out of the process, otherwise proceed */
 --If @IsDBMailEnabled = 0
@@ -92,12 +92,12 @@ name LIKE 'Database Mail XPs';
 --Else
 -- Begin
 
-/* Gather all of our information where the wait time exceeds the parameter value we supplied */ 
-Insert Into #Blocking 
-(WaitInSeconds, BlockingSessionId, DatabaseName, BlockingUser, BlockingLocation, BlockingSQL, 
-BlockedSessionId, BlockedUser, BlockedLocation, BlockedSQL, [Blocked Individual Query], wait_type,programname) 
+/* Gather all of our information where the wait time exceeds the parameter value we supplied */
+Insert Into #Blocking
+(WaitInSeconds, BlockingSessionId, DatabaseName, BlockingUser, BlockingLocation, BlockingSQL,
+BlockedSessionId, BlockedUser, BlockedLocation, BlockedSQL, [Blocked Individual Query], wait_type,programname)
 Select
-Waits.wait_duration_ms / 1000 as WaitInSeconds, 
+Waits.wait_duration_ms / 1000 as WaitInSeconds,
 Blocking.session_id as BlockingSessionId,
 DB_NAME(Blocked.database_id) as DatabaseName,
 Sess.login_name as BlockingUser,
@@ -120,17 +120,17 @@ Join sys.dm_exec_requests Blocked ON (Blocking.session_id = Blocked.blocking_ses
 Join sys.dm_exec_sessions Sess ON (Blocking.session_id = sess.session_id)
 Left Outer Join sys.dm_tran_session_transactions st ON (Blocking.session_id = st.session_id)
 Left Outer Join sys.dm_exec_requests er ON (st.session_id = er.session_id)
-Join sys.dm_os_waiting_tasks Waits ON (Blocked.session_id = Waits.session_id) 
+Join sys.dm_os_waiting_tasks Waits ON (Blocked.session_id = Waits.session_id)
 Join sys.dm_exec_requests BlockedReq ON (Waits.session_id = BlockedReq.session_id)
 Join sys.dm_exec_sessions BlockedSess ON (Waits.session_id = BlockedSess.session_id)
 Cross Apply sys.dm_exec_sql_text(Blocking.most_recent_sql_handle) AS BlockingSQL
 Cross Apply sys.dm_exec_sql_text(Blocked.sql_handle) AS BlockedSQL
 Where
 Waits.wait_duration_ms / 1000 > 30  --Mentioned the time in seconds
-Order By 
+Order By
 WaitInSeconds Desc;
 
-/* If loaded any records in the previous step, proceed to generate the HTML and send an e-mail */ 
+/* If loaded any records in the previous step, proceed to generate the HTML and send an e-mail */
 If Exists (Select 1 From #Blocking)
 Begin
 
@@ -151,7 +151,7 @@ SET @TableHead = '<table>' +
 '<th style="width : 120; border: 1px solid #000000;" align=center>Database Name</th>' +
 '<th style="width : 100; border: 1px solid #000000;" align=center>Blocking User</th>' +
 '<th style="width : 100; border: 1px solid #000000;" align=center>Blocking Location</th>' +
-'<th style="min-width : 300; border: 1px solid #000000;" align=center>Blocking SQL</th>' + 
+'<th style="min-width : 300; border: 1px solid #000000;" align=center>Blocking SQL</th>' +
 '<th style="width : 50; border: 1px solid #000000;" align=center>Blocked Session Id</th>' +
 '<th style="width : 100; border: 1px solid #000000;" align=center>Blocked User</th>' +
 '<th style="width : 100; border: 1px solid #000000;" align=center>Blocked Location</th>' +
@@ -164,8 +164,8 @@ SET @TableHead = '<table>' +
 '<tbody style = "font-family:Verdana; font-size:12px">';
 
 /* HTML generation - Body section */
-Set @Body = 
-(Select 
+Set @Body =
+(Select
 Case When ABS(ROW_NUMBER() Over(Order By WaitInSeconds Desc)) % 2 = 1 Then 'odd' Else 'even' END AS [td],
 CONVERT(VARCHAR,DATEADD(ss,WaitInSeconds,0),108) AS [td],
 BlockingSessionId AS [td],
@@ -180,18 +180,18 @@ BlockedSQL AS [td],
 [Blocked Individual Query] AS [td],
 wait_type AS [td],
 programname AS [td]
-From 
-#Blocking 
+From
+#Blocking
 Order By
 WaitInSeconds Desc
 For xml raw('tr'), Elements);
 
 /* In this section we are going to replace set the height property for the row, and for the even rows, change the background color so it stands out
 Going to add a border the individual cells
-In case there are longer entries in the blocked, blocking and blocked individual SQL columns we are going to insert a line break after each comma, otherwise, in Outlook, 
+In case there are longer entries in the blocked, blocking and blocked individual SQL columns we are going to insert a line break after each comma, otherwise, in Outlook,
 the HTML table will become malformed and become (almost) unreadable
 Finally, we will assemble the head, body and tail into a single variable
-*/ 
+*/
 Set @Body = Replace(@Body, '<tr><td>odd</td>', '<tr style="height:20px;">');
 Set @Body = Replace(@Body, '<tr><td>even</td>', '<tr style="background-color:#D8EBFF; height:20px;">') ;
 
@@ -211,9 +211,9 @@ Exec msdb.dbo.sysmail_help_profileaccount_sp;
 /* Extact our mail profile */
 if ((@MailProfile is null) or (@MailProfile=''))
 begin
-Select 
+Select
 @MailProfile = @MailProfile
-From 
+From
 #dbmail_profile
 Where sequencenumber = 1;
 end

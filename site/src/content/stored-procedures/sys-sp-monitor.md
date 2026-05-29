@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_monitor'
-title: 'sp_monitor'
-category: 'general'
-description: 'Displays statistics about SQL Server. Transact-SQL syntax conventions Number of elapsed seconds since Number of seconds that the server computer''s CPU has done SQL Server work. Number of seconds that SQL Server spent doing input and output operations. Number of seconds that SQL Server was idle.'
+name: "sys.sp_monitor"
+title: "sp_monitor"
+category: "general"
+description: "Displays statistics about SQL Server. Transact-SQL syntax conventions Number of elapsed seconds since Number of seconds that the server computer's CPU has done SQL Server work. Number of seconds that SQL Server spent doing input and output operations. Number of seconds that SQL Server was idle."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -156,5 +156,4 @@ Idle microseconds  as of
 @@PACK_SENT
 ```
 
-
-*(... and 13 more examples)*
+_(... and 13 more examples)_

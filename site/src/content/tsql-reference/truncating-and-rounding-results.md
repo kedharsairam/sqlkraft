@@ -1,8 +1,8 @@
 ---
-name: 'Truncating and rounding results'
-title: 'Truncating and rounding results'
-category: 'operators'
-description: 'When you explicitly or implicitly cast the'
+name: "Truncating and rounding results"
+title: "Truncating and rounding results"
+category: "operators"
+description: "When you explicitly or implicitly cast the"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

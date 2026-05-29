@@ -3,15 +3,15 @@ title: "Migrate to Docker"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This tutorial demonstrates how to move and restore a SQL Server backup file into a SQL Server
-  
+
   2025 (17.x) Linux container image running on Docker.
-  
+
   A container runt
 tags:
   - "linux-operations"

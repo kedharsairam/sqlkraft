@@ -1,8 +1,8 @@
 ---
-name: 'REPLACE'
-title: 'REPLACE'
-category: 'statements'
-description: '### nvarchar(max), REPLACE'
+name: "REPLACE"
+title: "REPLACE"
+category: "statements"
+description: "### nvarchar(max), REPLACE"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

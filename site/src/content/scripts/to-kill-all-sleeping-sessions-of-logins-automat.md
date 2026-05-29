@@ -1,7 +1,7 @@
 ---
-name: 'To Kill all Sleeping Sessions of Logins Automat'
-title: 'To Kill all Sleeping Sessions of Logins Automat'
-description: 'Step 1: Set up an Extended Event session to capture session activity.'
+name: "To Kill all Sleeping Sessions of Logins Automat"
+title: "To Kill all Sleeping Sessions of Logins Automat"
+description: "Step 1: Set up an Extended Event session to capture session activity."
 category: automation
 tags: ["automation", "login", "session"]
 pubDate: 2025-03-15

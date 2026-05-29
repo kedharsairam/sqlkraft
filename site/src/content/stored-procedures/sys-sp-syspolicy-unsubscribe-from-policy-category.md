@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_syspolicy_unsubscribe_from_policy_category'
-title: 'sp_syspolicy_unsubscribe_from_policy_category'
-category: 'general'
-description: 'The following example deletes a subscription to the policy category for the specified Policy-Based Management stored procedures (Transact-SQL) sp_syspolicy_subscribe_to_policy_category (Transact-SQL)'
+name: "sys.sp_syspolicy_unsubscribe_from_policy_category"
+title: "sp_syspolicy_unsubscribe_from_policy_category"
+category: "general"
+description: "The following example deletes a subscription to the policy category for the specified Policy-Based Management stored procedures (Transact-SQL) sp_syspolicy_subscribe_to_policy_category (Transact-SQL)"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

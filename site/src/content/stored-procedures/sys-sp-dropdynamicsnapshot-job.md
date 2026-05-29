@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_dropdynamicsnapshot_job'
-title: 'sp_dropdynamicsnapshot_job'
-category: 'general'
-description: 'Removes a filtered data snapshot job for a publication with parameterized row filters. This stored procedure is executed at the Publisher on the publication database. When the job is deleted, all of the related data is deleted from the Transact-SQL syntax conventions The name of the publication from which the filtered data snapshot job is being removed. The name of the filtered data snapshot job b'
+name: "sys.sp_dropdynamicsnapshot_job"
+title: "sp_dropdynamicsnapshot_job"
+category: "general"
+description: "Removes a filtered data snapshot job for a publication with parameterized row filters. This stored procedure is executed at the Publisher on the publication database. When the job is deleted, all of the related data is deleted from the Transact-SQL syntax conventions The name of the publication from which the filtered data snapshot job is being removed. The name of the filtered data snapshot job b"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

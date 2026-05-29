@@ -1,7 +1,7 @@
 ---
-name: 'To Check Memory Usage for Plan Cache'
-title: 'To Check Memory Usage for Plan Cache'
-description: 'SQL Server diagnostic script for architecture operations.'
+name: "To Check Memory Usage for Plan Cache"
+title: "To Check Memory Usage for Plan Cache"
+description: "SQL Server diagnostic script for architecture operations."
 category: architecture
 tags: ["architecture", "cache", "health-check", "memory"]
 pubDate: 2025-03-15

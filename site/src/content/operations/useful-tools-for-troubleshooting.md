@@ -3,20 +3,20 @@ title: "Useful tools for troubleshooting"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article lists useful links to tools for troubleshooting and performance tuning for Always On
-  
+
   Availability Groups.
-  
-  Always On Availability Groups 
+
+  Always On Availability Groups
 tags:
   - "high-availability"
   - "useful-tools-for-troubleshooting"

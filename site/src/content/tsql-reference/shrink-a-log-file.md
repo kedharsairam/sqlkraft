@@ -1,8 +1,8 @@
 ---
-name: 'Shrink a log file'
-title: 'Shrink a log file'
-category: 'statements'
-description: 'Currently, LOB column types ('
+name: "Shrink a log file"
+title: "Shrink a log file"
+category: "statements"
+description: "Currently, LOB column types ("
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

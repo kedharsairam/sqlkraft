@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_create_plan_guide'
-title: 'sp_create_plan_guide'
-category: 'general'
-description: 'Creates a plan guide for associating query hints or actual query plans with queries in a database. For more information about plan guides, see Transact-SQL syntax conventions , with no default, and a maximum length of 124 characters. Plan guide names are scoped to the current database. and can''t start with the number sign ( A Transact-SQL statement against which to create a plan guide. . When the '
+name: "sys.sp_create_plan_guide"
+title: "sp_create_plan_guide"
+category: "general"
+description: "Creates a plan guide for associating query hints or actual query plans with queries in a database. For more information about plan guides, see Transact-SQL syntax conventions , with no default, and a maximum length of 124 characters. Plan guide names are scoped to the current database. and can't start with the number sign ( A Transact-SQL statement against which to create a plan guide. . When the "
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

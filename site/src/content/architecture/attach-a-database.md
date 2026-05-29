@@ -3,17 +3,17 @@ title: "Attach a Database"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   08/10/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article describes how to attach a database in SQL Server with SQL Server Management
-  
+
   Studio or Transact-SQL. You can use this feature to copy, mov
 tags:
   - "collation"

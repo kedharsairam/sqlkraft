@@ -3,24 +3,24 @@ title: "MultiPolygon"
 topic: "spatial-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL analytics endpoint in Microsoft Fabric
-  
+
   Warehouse in Microsoft Fabric
-  
+
   SQL
-  
+
   database in Microsoft Fabric
-  
+
   A
-  
-  instance is a 
+
+  instance is a
 tags:
   - "spatial-data"
   - "multipolygon"

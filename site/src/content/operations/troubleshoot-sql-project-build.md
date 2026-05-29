@@ -3,15 +3,15 @@ title: "Troubleshoot SQL project build"
 topic: "ssms"
 description: |
   Article
-  
+
   •
-  
+
   02/27/2025
-  
+
   The SQL project build output provides feedback on the database model construction and T-
-  
+
   SQL validation. The default command line output only shows errors and some status
-  
+
   inf
 tags:
   - "ssms"
