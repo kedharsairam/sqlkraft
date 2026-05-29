@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.9.0] — 2026-05-29
+
+### Added
+
+- **Unified spacing rhythm** — 6 new math-based CSS spacing variables in `BaseLayout.astro`: `--space-xs` (0.5rem), `--space-sm` (0.75rem), `--space-md` (1.5rem), `--space-lg` (2.5rem), `--space-xl` (4rem) — single-source-of-truth for all vertical gaps and margins across every page
+- **Component tokens** — `--card-padding: 1.75rem` and `--code-padding: 1.75rem` variables enforce consistent inner spacing on cards and code blocks
+
+### Changed
+
+- **Hero vertical void eliminated** — `.app-shell` padding-top tightened from `calc(var(--nav-height) + clamp(24px, 3vw, 48px))` to `calc(var(--nav-height) + var(--space-lg))` (= 2.5rem fixed); `.hero` padding-top removed entirely (was `clamp(48px, 6vw, 80px)`) — the "massive gap" between nav bottom and "SqlKraft." title is exactly 2.5rem at all viewports
+- **Homepage hero flow** — `.tagline` margin-top uses `--space-xs` (0.5rem), `.subtitle` uses `--space-sm` (0.75rem) top and `--space-lg` (2.5rem) bottom — clean mathematical progression: nav → 2.5rem → title → 0.5rem → tagline → 0.75rem → subtitle → 2.5rem → portal cards
+- **Card padding hardened to 1.75rem** — all 10 collection index item cards max padding increased from `22px` to `28px`; homepage portal cards standardized to uniform `clamp(18px, 2vw, 28px)`
+- **Code block padding** — `.body-content pre` max padding increased from `24px` to `28px` to match `--code-padding`
+- **Table spacing** — `.body-content table` bottom margin unified to `var(--space-md)` (was hardcoded `16px`)
+- **Footer spacing** — homepage footer margin-top uses `clamp(var(--space-xl), 6vw, 5rem)` for tighter floor gap
+
+### Fixed
+
+- **No functional changes** — all 6,591 pages rebuild clean, zero lint/build errors
+
 ## [0.8.0] — 2026-05-29
 
 ### Changed

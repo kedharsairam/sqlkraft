@@ -93,6 +93,17 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
     --fluid-gap-lg: clamp(24px, 3vw, 48px);
     --fluid-padding-h: clamp(16px, 3vw, 40px);
     --fluid-padding-v: clamp(24px, 3vw, 48px);
+
+    /* ── Unified spacing rhythm ── */
+    --space-xs: 0.5rem;   /* 8px — h1→tagline */
+    --space-sm: 0.75rem;  /* 12px — tagline→subtitle */
+    --space-md: 1.5rem;   /* 24px — section breaks */
+    --space-lg: 2.5rem;   /* 40px — nav→title, subtitle→grid */
+    --space-xl: 4rem;     /* 64px — section top/bottom */
+
+    /* ── Unified component tokens ── */
+    --card-padding: 1.75rem;     /* 28px — card inner padding on wide viewports */
+    --code-padding: 1.75rem;     /* 28px — code block inner padding */
   }
   * {
     margin: 0;
@@ -174,7 +185,7 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
   .app-shell {
     max-width: var(--content-max-width);
     margin: 0 auto;
-    padding: calc(var(--nav-height) + clamp(24px, 3vw, 48px)) var(--fluid-padding-h)
+    padding: calc(var(--nav-height) + var(--space-lg)) var(--fluid-padding-h)
       var(--fluid-padding-v);
   }
   a {
@@ -189,7 +200,7 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
   .body-content table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 16px;
+    margin-bottom: var(--space-md);
     font-size: clamp(12px, 1.2vw, 14px);
     display: block;
     overflow-x: auto;
@@ -210,9 +221,9 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
     }
   }
 
-  /* ── Fluid code blocks ── */
+  /* ── Fluid code blocks (1.75rem max padding) ── */
   .body-content pre {
-    padding: clamp(12px, 2vw, 24px) !important;
+    padding: clamp(12px, 2vw, 28px) !important;
     border-radius: clamp(6px, 1vw, 10px);
     font-size: clamp(0.85rem, 1.2vw, 0.95rem) !important;
     overflow-x: auto;
