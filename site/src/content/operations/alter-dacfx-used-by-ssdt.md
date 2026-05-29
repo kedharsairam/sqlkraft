@@ -1,6 +1,6 @@
 ---
 title: "Alter DacFx Used by SSDT"
-topic: "ssb-diagnose"
+topic: "data-tools"
 description: |
   09/10/2025
   
@@ -14,7 +14,7 @@ description: |
   
   stan
 tags:
-  - "ssb-diagnose"
+  - "data-tools"
   - "alter-dacfx-used-by-ssdt"
 pubDate: 2025-12-01
 ---

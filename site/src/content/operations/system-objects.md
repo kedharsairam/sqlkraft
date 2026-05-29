@@ -1,108 +1,98 @@
 ---
-title: "System objects"
-topic: "ssms"
+title: "System Objects"
+topic: "high-availability"
 description: |
-  SQL projects system objects
-  
-  10/16/2025
+  10/21/2025
   
   Applies to:
   
   SQL Server
   
-  Azure SQL Database
+  - Windows only
   
-  Azure SQL Managed Instance
+  This article serves as a reference page to all the various system objects that can be used when
   
-  SQL database in Microsoft Fabric Preview
+  working with availability groups (AGs).
   
-  SQL projects validate database object refere
+  Descripti
 tags:
-  - "ssms"
+  - "high-availability"
   - "system-objects"
 pubDate: 2025-12-01
 ---
 
-SQL projects system objects
-
-10/16/2025
+10/21/2025
 
 Applies to:
 
 SQL Server
 
-Azure SQL Database
+- Windows only
 
-Azure SQL Managed Instance
+This article serves as a reference page to all the various system objects that can be used when
 
-SQL database in Microsoft Fabric Preview
+working with availability groups (AGs).
 
-SQL projects validate database object references during the project build process. By default,
+Description
 
-SQL projects don't include system objects in the database model, which can lead to validation
+sys.availability_databases_cluster
 
-errors if your project contains references to system objects. To resolve these validation errors,
+Contains one row for each availability database on the
 
-you would include a database reference to the
+instance of SQL Server hosting an availability replica for any
 
-for the target platform of your
+availability group (AG) in the Windows Server Failover
 
-project.
+Clustering (WSFC) cluster, regardless of whether the local
 
-The
+copy database has been joined to the AG yet.
 
-database reference can be added as a
+sys.availability_group_listener_ip_addresses
 
-package reference
+Returns a row for every IP address that is associated with
 
-in
+any AG listener in the Windows Server Failover Clustering
 
-Microsoft.Build.Sql SDK-style SQL projects or as an
+(WSFC) cluster.
 
-artifact reference
+sys.availability_group_listeners
 
-in both SDK-style and
+For each AG, returns either zero rows indicating that no
 
-original SQL projects.
+network name is associated with the AG, or returns a row for
 
-The available system database packages are:
+each availability-group listener configuration in the
 
-SQL Server master system database
+Windows Server Failover Clustering (WSFC) cluster.
 
-SQL Server msdb system database
+sys.availability_groups
 
-Azure SQL Database master system database
+Returns a row for each AG for which the local instance of
 
-SQL database in Fabric system objects
+SQL Server hosts an availability replica. Each row contains a
 
-Azure Synapse Analytics master system database
+cached copy of the AG metadata.
 
-Azure Synapse Analytics serverless pools master system database
+sys.availability_groups_cluster
 
-The most direct method for adding a package reference to a SQL project is to use the .NET
+Returns a row for each AG in the Windows Server Failover
 
-command-line interface (CLI). The following example adds a package reference to the Azure
+Clustering (WSFC). Each row contains the AG metadata from
 
-SQL Database
+the WSFC cluster.
 
-system database to a SQL project:
+sys.availability_read_only_routing_lists
 
-Bash
+Returns a row for the read only routing list of each
 
-This command adds the following entry to the
+availability replica in an AG in the WSFC failover cluster.
 
-file (the package version will reflect
+sys.availability_replicas
 
-the latest version available at the time the command is run):
+Returns a row for each of the availability replicas that
 
-XML
+belong to any AG in the WSFC failover cluster.
 
-```cmd
-master.dacpac
-master.dacpac
-master
-.sqlproj
-dotnet add <path-to-sqlproj> package Microsoft.SqlServer.Dacpacs.Azure.Master
-...
-<ItemGroup>
-```
+ﾉ
+
+Expand table

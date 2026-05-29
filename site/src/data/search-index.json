@@ -25839,6 +25839,15 @@
     "collection": "operations"
   },
   {
+    "slug": "add-a-secondary-database",
+    "name": "add-a-secondary-database",
+    "title": "add-a-secondary-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "add-database-objects-using-item-templates",
     "name": "add-database-objects-using-item-templates",
     "title": "add-database-objects-using-item-templates",
@@ -25851,6 +25860,69 @@
     "slug": "add-database-reference-dialog-box",
     "name": "add-database-reference-dialog-box",
     "title": "add-database-reference-dialog-box",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "add-dependencies-resource",
+    "name": "add-dependencies-resource",
+    "title": "add-dependencies-resource",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "add-or-remove-nodes",
+    "name": "add-or-remove-nodes",
+    "title": "add-or-remove-nodes",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "add-or-replace-a-witness",
+    "name": "add-or-replace-a-witness",
+    "title": "add-or-replace-a-witness",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "add-replica-wizard",
+    "name": "add-replica-wizard",
+    "title": "add-replica-wizard",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "add-secondary-replica",
+    "name": "add-secondary-replica",
+    "title": "add-secondary-replica",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "add-using-windows-authentication",
+    "name": "add-using-windows-authentication",
+    "title": "add-using-windows-authentication",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "administration-maintenance",
+    "name": "administration-maintenance",
+    "title": "administration-maintenance",
     "category": "general",
     "tags": [],
     "description": "",
@@ -25875,9 +25947,36 @@
     "collection": "operations"
   },
   {
+    "slug": "allow-access-to-an-endpoint",
+    "name": "allow-access-to-an-endpoint",
+    "title": "allow-access-to-an-endpoint",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "alter-dacfx-used-by-ssdt",
     "name": "alter-dacfx-used-by-ssdt",
     "title": "alter-dacfx-used-by-ssdt",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "always-on-dashboard",
+    "name": "always-on-dashboard",
+    "title": "always-on-dashboard",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "analysis-services",
+    "name": "analysis-services",
+    "title": "analysis-services",
     "category": "general",
     "tags": [],
     "description": "",
@@ -26379,9 +26478,81 @@
     "collection": "operations"
   },
   {
+    "slug": "automatic-page-repair",
+    "name": "automatic-page-repair",
+    "title": "automatic-page-repair",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "automatic-seeding-for-secondary-replicas",
+    "name": "automatic-seeding-for-secondary-replicas",
+    "title": "automatic-seeding-for-secondary-replicas",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "availability-basics",
     "name": "availability-basics",
     "title": "availability-basics",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "availability-database-is-suspended",
+    "name": "availability-database-is-suspended",
+    "title": "availability-database-is-suspended",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "availability-group-is-not-ready-for-automatic-failover",
+    "name": "availability-group-is-not-ready-for-automatic-failover",
+    "title": "availability-group-is-not-ready-for-automatic-failover",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "availability-group-is-offline",
+    "name": "availability-group-is-offline",
+    "title": "availability-group-is-offline",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "availability-modes",
+    "name": "availability-modes",
+    "title": "availability-modes",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "availability-replica-does-not-have-a-healthy-role",
+    "name": "availability-replica-does-not-have-a-healthy-role",
+    "title": "availability-replica-does-not-have-a-healthy-role",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "availability-replica-is-not-joined",
+    "name": "availability-replica-is-not-joined",
+    "title": "availability-replica-is-not-joined",
     "category": "general",
     "tags": [],
     "description": "",
@@ -26415,6 +26586,15 @@
     "collection": "operations"
   },
   {
+    "slug": "azure-virtual-machines",
+    "name": "azure-virtual-machines",
+    "title": "azure-virtual-machines",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "back-up-to-url-with-managed-identity",
     "name": "back-up-to-url-with-managed-identity",
     "title": "back-up-to-url-with-managed-identity",
@@ -26433,9 +26613,45 @@
     "collection": "operations"
   },
   {
+    "slug": "backup-on-secondary-replica",
+    "name": "backup-on-secondary-replica",
+    "title": "backup-on-secondary-replica",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "backward-compatibility",
+    "name": "backward-compatibility",
+    "title": "backward-compatibility",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "banner-element",
     "name": "banner-element",
     "title": "banner-element",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "basic-availability-groups",
+    "name": "basic-availability-groups",
+    "title": "basic-availability-groups",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "before-you-install",
+    "name": "before-you-install",
+    "title": "before-you-install",
     "category": "general",
     "tags": [],
     "description": "",
@@ -26454,6 +26670,15 @@
     "slug": "blocked-process-report-event-class",
     "name": "blocked-process-report-event-class",
     "title": "blocked-process-report-event-class",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "breaking-changes",
+    "name": "breaking-changes",
+    "title": "breaking-changes",
     "category": "general",
     "tags": [],
     "description": "",
@@ -26586,6 +26811,114 @@
     "collection": "operations"
   },
   {
+    "slug": "change-edition",
+    "name": "change-edition",
+    "title": "change-edition",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "change-replica-availability",
+    "name": "change-replica-availability",
+    "title": "change-replica-availability",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "change-replica-failover-mode",
+    "name": "change-replica-failover-mode",
+    "title": "change-replica-failover-mode",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "change-roles-between-servers",
+    "name": "change-roles-between-servers",
+    "title": "change-roles-between-servers",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "change-session-timeout-period",
+    "name": "change-session-timeout-period",
+    "title": "change-session-timeout-period",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "change-the-database-compatibility-mode-use-the-query-store",
+    "name": "change-the-database-compatibility-mode-use-the-query-store",
+    "title": "change-the-database-compatibility-mode-use-the-query-store",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "change-the-database-compatibility-mode-with-query-tuning-assistant",
+    "name": "change-the-database-compatibility-mode-with-query-tuning-assistant",
+    "title": "change-the-database-compatibility-mode-with-query-tuning-assistant",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "change-the-hadr-cluster-context",
+    "name": "change-the-hadr-cluster-context",
+    "title": "change-the-hadr-cluster-context",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "change-the-ip-address",
+    "name": "change-the-ip-address",
+    "title": "change-the-ip-address",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "change-transaction-safety",
+    "name": "change-transaction-safety",
+    "title": "change-transaction-safety",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "choose-a-method",
+    "name": "choose-a-method",
+    "title": "choose-a-method",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "choose-servers-to-configure",
+    "name": "choose-servers-to-configure",
+    "title": "choose-servers-to-configure",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "clear-a-trace-window",
     "name": "clear-a-trace-window",
     "title": "clear-a-trace-window",
@@ -26613,6 +26946,15 @@
     "collection": "operations"
   },
   {
+    "slug": "client-connection-types",
+    "name": "client-connection-types",
+    "title": "client-connection-types",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "close-a-trace-window",
     "name": "close-a-trace-window",
     "title": "close-a-trace-window",
@@ -26625,6 +26967,24 @@
     "slug": "clr-event-category",
     "name": "clr-event-category",
     "title": "clr-event-category",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "cluster-dtc",
+    "name": "cluster-dtc",
+    "title": "cluster-dtc",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "clusterlog",
+    "name": "clusterlog",
+    "title": "clusterlog",
     "category": "general",
     "tags": [],
     "description": "",
@@ -26667,9 +27027,36 @@
     "collection": "operations"
   },
   {
+    "slug": "compatibility-certification",
+    "name": "compatibility-certification",
+    "title": "compatibility-certification",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "complete-the-upgrade",
+    "name": "complete-the-upgrade",
+    "title": "complete-the-upgrade",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "configure-a-kubernetes-cluster",
     "name": "configure-a-kubernetes-cluster",
     "title": "configure-a-kubernetes-cluster",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-accounts",
+    "name": "configure-accounts",
+    "title": "configure-accounts",
     "category": "general",
     "tags": [],
     "description": "",
@@ -26712,6 +27099,24 @@
     "collection": "operations"
   },
   {
+    "slug": "configure-automatic-seeding",
+    "name": "configure-automatic-seeding",
+    "title": "configure-automatic-seeding",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-backup-on-replicas",
+    "name": "configure-backup-on-replicas",
+    "title": "configure-backup-on-replicas",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "configure-bulk-import-operations",
     "name": "configure-bulk-import-operations",
     "title": "configure-bulk-import-operations",
@@ -26730,6 +27135,24 @@
     "collection": "operations"
   },
   {
+    "slug": "configure-distributed-availability-groups",
+    "name": "configure-distributed-availability-groups",
+    "title": "configure-distributed-availability-groups",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-distribution-in-ag",
+    "name": "configure-distribution-in-ag",
+    "title": "configure-distribution-in-ag",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "configure-failover",
     "name": "configure-failover",
     "title": "configure-failover",
@@ -26739,9 +27162,36 @@
     "collection": "operations"
   },
   {
+    "slug": "configure-failureconditionlevel",
+    "name": "configure-failureconditionlevel",
+    "title": "configure-failureconditionlevel",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "configure-firewall-rules-before-running-the-t-sql-debugger",
     "name": "configure-firewall-rules-before-running-the-t-sql-debugger",
     "title": "configure-firewall-rules-before-running-the-t-sql-debugger",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-flexible-failover-policy",
+    "name": "configure-flexible-failover-policy",
+    "title": "configure-flexible-failover-policy",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-for-distributed-transactions",
+    "name": "configure-for-distributed-transactions",
+    "title": "configure-for-distributed-transactions",
     "category": "general",
     "tags": [],
     "description": "",
@@ -26760,6 +27210,24 @@
     "slug": "configure-ha-add-on-2",
     "name": "configure-ha-add-on-2",
     "title": "configure-ha-add-on-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-healthchecktimeout",
+    "name": "configure-healthchecktimeout",
+    "title": "configure-healthchecktimeout",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-instance",
+    "name": "configure-instance",
+    "title": "configure-instance",
     "category": "general",
     "tags": [],
     "description": "",
@@ -26838,6 +27306,51 @@
     "collection": "operations"
   },
   {
+    "slug": "configure-publishing-distribution",
+    "name": "configure-publishing-distribution",
+    "title": "configure-publishing-distribution",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-quorum-nodeweight-settings",
+    "name": "configure-quorum-nodeweight-settings",
+    "title": "configure-quorum-nodeweight-settings",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-read-only-access-replica",
+    "name": "configure-read-only-access-replica",
+    "title": "configure-read-only-access-replica",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-read-only-routing",
+    "name": "configure-read-only-routing",
+    "title": "configure-read-only-routing",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-read-scale-availability-group",
+    "name": "configure-read-scale-availability-group",
+    "title": "configure-read-scale-availability-group",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "configure-replication",
     "name": "configure-replication",
     "title": "configure-replication",
@@ -26859,6 +27372,15 @@
     "slug": "configure-repositories-up-to-sql-server-2022",
     "name": "configure-repositories-up-to-sql-server-2022",
     "title": "configure-repositories-up-to-sql-server-2022",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "configure-snapshot-properties",
+    "name": "configure-snapshot-properties",
+    "title": "configure-snapshot-properties",
     "category": "general",
     "tags": [],
     "description": "",
@@ -26982,9 +27504,27 @@
     "collection": "operations"
   },
   {
+    "slug": "connect-clients",
+    "name": "connect-clients",
+    "title": "connect-clients",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "connect-to-an-existing-database-in-ssdt",
     "name": "connect-to-an-existing-database-in-ssdt",
     "title": "connect-to-an-existing-database-in-ssdt",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "connect-to-listener",
+    "name": "connect-to-listener",
+    "title": "connect-to-listener",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27027,6 +27567,24 @@
     "collection": "operations"
   },
   {
+    "slug": "contained-availability-groups",
+    "name": "contained-availability-groups",
+    "title": "contained-availability-groups",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "contained-databases",
+    "name": "contained-databases",
+    "title": "contained-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "container-security",
     "name": "container-security",
     "title": "container-security",
@@ -27063,6 +27621,24 @@
     "collection": "operations"
   },
   {
+    "slug": "create-a-cluster",
+    "name": "create-a-cluster",
+    "title": "create-a-cluster",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "create-a-publication",
+    "name": "create-a-publication",
+    "title": "create-a-publication",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "create-a-sql-server-agent-job",
     "name": "create-a-sql-server-agent-job",
     "title": "create-a-sql-server-agent-job",
@@ -27090,6 +27666,15 @@
     "collection": "operations"
   },
   {
+    "slug": "create-an-endpoint",
+    "name": "create-an-endpoint",
+    "title": "create-an-endpoint",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "create-and-configure-availability-groups",
     "name": "create-and-configure-availability-groups",
     "title": "create-and-configure-availability-groups",
@@ -27099,9 +27684,36 @@
     "collection": "operations"
   },
   {
+    "slug": "create-clustered-dtc",
+    "name": "create-clustered-dtc",
+    "title": "create-clustered-dtc",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "create-database-mirroring-endpoint-powershell",
+    "name": "create-database-mirroring-endpoint-powershell",
+    "title": "create-database-mirroring-endpoint-powershell",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "create-for-high-availability",
     "name": "create-for-high-availability",
     "title": "create-for-high-availability",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "create-listener",
+    "name": "create-listener",
+    "title": "create-listener",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27129,6 +27741,15 @@
     "slug": "creating-defining-sql-server-unit-tests",
     "name": "creating-defining-sql-server-unit-tests",
     "title": "creating-defining-sql-server-unit-tests",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "creation-configuration",
+    "name": "creation-configuration",
+    "title": "creation-configuration",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27261,6 +27882,33 @@
     "collection": "operations"
   },
   {
+    "slug": "data-quality-services",
+    "name": "data-quality-services",
+    "title": "data-quality-services",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "data-synchronization-state-of-availability-database-is-not-healthy",
+    "name": "data-synchronization-state-of-availability-database-is-not-healthy",
+    "title": "data-synchronization-state-of-availability-database-is-not-healthy",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "data-synchronization-state-of-some-availability-database-is-not-healthy",
+    "name": "data-synchronization-state-of-some-availability-database-is-not-healthy",
+    "title": "data-synchronization-state-of-some-availability-database-is-not-healthy",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "data-tier-application",
     "name": "data-tier-application",
     "title": "data-tier-application",
@@ -27324,6 +27972,15 @@
     "collection": "operations"
   },
   {
+    "slug": "database-health-detection",
+    "name": "database-health-detection",
+    "title": "database-health-detection",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "database-mail-and-email-alerts",
     "name": "database-mail-and-email-alerts",
     "title": "database-mail-and-email-alerts",
@@ -27333,9 +27990,36 @@
     "collection": "operations"
   },
   {
+    "slug": "database-mirroring",
+    "name": "database-mirroring",
+    "title": "database-mirroring",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "database-mirroring-connection-event-class",
     "name": "database-mirroring-connection-event-class",
     "title": "database-mirroring-connection-event-class",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "database-mirroring-monitor",
+    "name": "database-mirroring-monitor",
+    "title": "database-mirroring-monitor",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "database-mirroring-monitor-overview",
+    "name": "database-mirroring-monitor-overview",
+    "title": "database-mirroring-monitor-overview",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27372,6 +28056,15 @@
     "slug": "database-references",
     "name": "database-references",
     "title": "database-references",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "database-snapshots-2",
+    "name": "database-snapshots-2",
+    "title": "database-snapshots-2",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27417,6 +28110,24 @@
     "slug": "delete-a-data-tier-application",
     "name": "delete-a-data-tier-application",
     "title": "delete-a-data-tier-application",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "delete-a-publication",
+    "name": "delete-a-publication",
+    "title": "delete-a-publication",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "deliver-a-snapshot-through-ftp",
+    "name": "deliver-a-snapshot-through-ftp",
+    "title": "deliver-a-snapshot-through-ftp",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27513,6 +28224,15 @@
     "collection": "operations"
   },
   {
+    "slug": "deprecated-features",
+    "name": "deprecated-features",
+    "title": "deprecated-features",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "deprecation-announcement-event-class",
     "name": "deprecation-announcement-event-class",
     "title": "deprecation-announcement-event-class",
@@ -27585,6 +28305,51 @@
     "collection": "operations"
   },
   {
+    "slug": "diagnostics-log",
+    "name": "diagnostics-log",
+    "title": "diagnostics-log",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "dialog",
+    "name": "dialog",
+    "title": "dialog",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "dialog-2",
+    "name": "dialog-2",
+    "title": "dialog-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "disable-publishing-distribution",
+    "name": "disable-publishing-distribution",
+    "title": "disable-publishing-distribution",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "disaster-recovery-through-forced-quorum",
+    "name": "disaster-recovery-through-forced-quorum",
+    "title": "disaster-recovery-through-forced-quorum",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "disconnect-unregister-from-azure-arc",
     "name": "disconnect-unregister-from-azure-arc",
     "title": "disconnect-unregister-from-azure-arc",
@@ -27597,6 +28362,33 @@
     "slug": "discover-assess",
     "name": "discover-assess",
     "title": "discover-assess",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "distributed-availability-groups",
+    "name": "distributed-availability-groups",
+    "title": "distributed-availability-groups",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "distributed-transactions",
+    "name": "distributed-transactions",
+    "title": "distributed-transactions",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "distribution",
+    "name": "distribution",
+    "title": "distribution",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27621,9 +28413,36 @@
     "collection": "operations"
   },
   {
+    "slug": "domain-independent-availability-groups",
+    "name": "domain-independent-availability-groups",
+    "title": "domain-independent-availability-groups",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "driver-client-support",
+    "name": "driver-client-support",
+    "title": "driver-client-support",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "dtctransaction-event-class",
     "name": "dtctransaction-event-class",
     "title": "dtctransaction-event-class",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "dynamic-management-system-catalog-views",
+    "name": "dynamic-management-system-catalog-views",
+    "title": "dynamic-management-system-catalog-views",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27642,6 +28461,24 @@
     "slug": "educational-resources",
     "name": "educational-resources",
     "title": "educational-resources",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "enable-a-database-for-replication",
+    "name": "enable-a-database-for-replication",
+    "title": "enable-a-database-for-replication",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "enable-a-remote-publisher-at-a-distributor",
+    "name": "enable-a-remote-publisher-at-a-distributor",
+    "title": "enable-a-remote-publisher-at-a-distributor",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27684,6 +28521,42 @@
     "collection": "operations"
   },
   {
+    "slug": "encrypted-databases",
+    "name": "encrypted-databases",
+    "title": "encrypted-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "end-of-support-options",
+    "name": "end-of-support-options",
+    "title": "end-of-support-options",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "endpoints",
+    "name": "endpoints",
+    "title": "endpoints",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "enhanced-database-failover",
+    "name": "enhanced-database-failover",
+    "title": "enhanced-database-failover",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "environment-variables",
     "name": "environment-variables",
     "title": "environment-variables",
@@ -27711,6 +28584,42 @@
     "collection": "operations"
   },
   {
+    "slug": "establish-a-session",
+    "name": "establish-a-session",
+    "title": "establish-a-session",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "establish-session",
+    "name": "establish-session",
+    "title": "establish-session",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "estimate-interruption-during-role-switching",
+    "name": "estimate-interruption-during-role-switching",
+    "title": "estimate-interruption-during-role-switching",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "esu-frequently-asked-questions",
+    "name": "esu-frequently-asked-questions",
+    "title": "esu-frequently-asked-questions",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "etl-workflow",
     "name": "etl-workflow",
     "title": "etl-workflow",
@@ -27723,6 +28632,24 @@
     "slug": "eventlog-event-class",
     "name": "eventlog-event-class",
     "title": "eventlog-event-class",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "example-configure-with-certificates-t-sql",
+    "name": "example-configure-with-certificates-t-sql",
+    "title": "example-configure-with-certificates-t-sql",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "example-configure-with-windows-authentication-t-sql",
+    "name": "example-configure-with-windows-authentication-t-sql",
+    "title": "example-configure-with-windows-authentication-t-sql",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27801,6 +28728,15 @@
     "collection": "operations"
   },
   {
+    "slug": "extended-events",
+    "name": "extended-events",
+    "title": "extended-events",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "extended-features-and-tools",
     "name": "extended-features-and-tools",
     "title": "extended-features-and-tools",
@@ -27813,6 +28749,15 @@
     "slug": "extended-security-updates",
     "name": "extended-security-updates",
     "title": "extended-security-updates",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "extended-security-updates-esus",
+    "name": "extended-security-updates-esus",
+    "title": "extended-security-updates-esus",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27855,6 +28800,24 @@
     "collection": "operations"
   },
   {
+    "slug": "fabric-mirrored-databases",
+    "name": "fabric-mirrored-databases",
+    "title": "fabric-mirrored-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "fail-over-wizard",
+    "name": "fail-over-wizard",
+    "title": "fail-over-wizard",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "failover-cluster-concepts",
     "name": "failover-cluster-concepts",
     "title": "failover-cluster-concepts",
@@ -27864,9 +28827,63 @@
     "collection": "operations"
   },
   {
+    "slug": "failover-cluster-instances",
+    "name": "failover-cluster-instances",
+    "title": "failover-cluster-instances",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "failover-clustering-availability-groups",
+    "name": "failover-clustering-availability-groups",
+    "title": "failover-clustering-availability-groups",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "failover-failover-modes",
+    "name": "failover-failover-modes",
+    "title": "failover-failover-modes",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "failover-policy",
+    "name": "failover-policy",
+    "title": "failover-policy",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "failover-to-secondary",
+    "name": "failover-to-secondary",
+    "title": "failover-to-secondary",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "feature-support-and-considerations-for-ssis",
     "name": "feature-support-and-considerations-for-ssis",
     "title": "feature-support-and-considerations-for-ssis",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "filestream-filetable",
+    "name": "filestream-filetable",
+    "title": "filestream-filetable",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27918,9 +28935,108 @@
     "collection": "operations"
   },
   {
+    "slug": "for-inbound-connections",
+    "name": "for-inbound-connections",
+    "title": "for-inbound-connections",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "for-outbound-connections",
+    "name": "for-outbound-connections",
+    "title": "for-outbound-connections",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "force-a-cluster-to-start-without-a-quorum",
+    "name": "force-a-cluster-to-start-without-a-quorum",
+    "title": "force-a-cluster-to-start-without-a-quorum",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "force-service-to-fail-over",
+    "name": "force-service-to-fail-over",
+    "title": "force-service-to-fail-over",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "forced-manual-failover",
+    "name": "forced-manual-failover",
+    "title": "forced-manual-failover",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "framewindowvisible",
     "name": "framewindowvisible",
     "title": "framewindowvisible",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "from-access",
+    "name": "from-access",
+    "title": "from-access",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "from-db2",
+    "name": "from-db2",
+    "title": "from-db2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "from-mysql",
+    "name": "from-mysql",
+    "title": "from-mysql",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "from-oracle",
+    "name": "from-oracle",
+    "title": "from-oracle",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "from-sap-ase",
+    "name": "from-sap-ase",
+    "title": "from-sap-ase",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "from-sql-server-upgrade",
+    "name": "from-sql-server-upgrade",
+    "title": "from-sql-server-upgrade",
     "category": "general",
     "tags": [],
     "description": "",
@@ -27948,6 +29064,15 @@
     "slug": "ftcrawl-stopped-event-class",
     "name": "ftcrawl-stopped-event-class",
     "title": "ftcrawl-stopped-event-class",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "full-text-catalogs",
+    "name": "full-text-catalogs",
+    "title": "full-text-catalogs",
     "category": "general",
     "tags": [],
     "description": "",
@@ -28080,9 +29205,36 @@
     "collection": "operations"
   },
   {
+    "slug": "health-diagnostics-log",
+    "name": "health-diagnostics-log",
+    "title": "health-diagnostics-log",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "high-availability-disaster-recovery",
     "name": "high-availability-disaster-recovery",
     "title": "high-availability-disaster-recovery",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "history-page",
+    "name": "history-page",
+    "title": "history-page",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "how-to",
+    "name": "how-to",
+    "title": "how-to",
     "category": "general",
     "tags": [],
     "description": "",
@@ -28395,6 +29547,15 @@
     "collection": "operations"
   },
   {
+    "slug": "include-witness-server",
+    "name": "include-witness-server",
+    "title": "include-witness-server",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "install-and-connect-red-hat",
     "name": "install-and-connect-red-hat",
     "title": "install-and-connect-red-hat",
@@ -28416,6 +29577,15 @@
     "slug": "install-and-connect-wsl2",
     "name": "install-and-connect-wsl2",
     "title": "install-and-connect-wsl2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "install-client-tools",
+    "name": "install-client-tools",
+    "title": "install-client-tools",
     "category": "general",
     "tags": [],
     "description": "",
@@ -28503,6 +29673,33 @@
     "collection": "operations"
   },
   {
+    "slug": "installation",
+    "name": "installation",
+    "title": "installation",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "installation-wizard-setup",
+    "name": "installation-wizard-setup",
+    "title": "installation-wizard-setup",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "interoperability-coexistence",
+    "name": "interoperability-coexistence",
+    "title": "interoperability-coexistence",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "interpreting-sql-server-unit-test-results",
     "name": "interpreting-sql-server-unit-test-results",
     "title": "interpreting-sql-server-unit-test-results",
@@ -28539,9 +29736,27 @@
     "collection": "operations"
   },
   {
+    "slug": "join-a-secondary-database",
+    "name": "join-a-secondary-database",
+    "title": "join-a-secondary-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "join-an-active-directory-domain",
     "name": "join-an-active-directory-domain",
     "title": "join-an-active-directory-domain",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "join-secondary-replica",
+    "name": "join-secondary-replica",
+    "title": "join-secondary-replica",
     "category": "general",
     "tags": [],
     "description": "",
@@ -28569,6 +29784,24 @@
     "slug": "known-issues-2",
     "name": "known-issues-2",
     "title": "known-issues-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "latest-updates-for-sql-server",
+    "name": "latest-updates-for-sql-server",
+    "title": "latest-updates-for-sql-server",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "lease-cluster-health-check-timeouts",
+    "name": "lease-cluster-health-check-timeouts",
+    "title": "lease-cluster-health-check-timeouts",
     "category": "general",
     "tags": [],
     "description": "",
@@ -28641,6 +29874,15 @@
     "slug": "linux-faq",
     "name": "linux-faq",
     "title": "linux-faq",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "listener",
+    "name": "listener",
+    "title": "listener",
     "category": "general",
     "tags": [],
     "description": "",
@@ -28755,6 +29997,60 @@
     "collection": "operations"
   },
   {
+    "slug": "log-shipping",
+    "name": "log-shipping",
+    "title": "log-shipping",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "log-shipping-monitor-settings",
+    "name": "log-shipping-monitor-settings",
+    "title": "log-shipping-monitor-settings",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "log-shipping-replication",
+    "name": "log-shipping-replication",
+    "title": "log-shipping-replication",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "logins-jobs",
+    "name": "logins-jobs",
+    "title": "logins-jobs",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "logins-jobs-after-role-switching",
+    "name": "logins-jobs-after-role-switching",
+    "title": "logins-jobs-after-role-switching",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "maintain-publications",
+    "name": "maintain-publications",
+    "title": "maintain-publications",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "manage-always-on-availability-group",
     "name": "manage-always-on-availability-group",
     "title": "manage-always-on-availability-group",
@@ -28827,6 +30123,42 @@
     "collection": "operations"
   },
   {
+    "slug": "manually-fail-over-ssms",
+    "name": "manually-fail-over-ssms",
+    "title": "manually-fail-over-ssms",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "manually-fail-over-t-sql",
+    "name": "manually-fail-over-t-sql",
+    "title": "manually-fail-over-t-sql",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "manually-prepare-secondary-database",
+    "name": "manually-prepare-secondary-database",
+    "title": "manually-prepare-secondary-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "master-data-services",
+    "name": "master-data-services",
+    "title": "master-data-services",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "migrate-from-windows",
     "name": "migrate-from-windows",
     "title": "migrate-from-windows",
@@ -28872,9 +30204,45 @@
     "collection": "operations"
   },
   {
+    "slug": "migrating-from-log-shipping",
+    "name": "migrating-from-log-shipping",
+    "title": "migrating-from-log-shipping",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "migrating-to-windows-server-2012-2016",
+    "name": "migrating-to-windows-server-2012-2016",
+    "title": "migrating-to-windows-server-2012-2016",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "migration-dashboard",
     "name": "migration-dashboard",
     "title": "migration-dashboard",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "mirror-server-instance",
+    "name": "mirror-server-instance",
+    "title": "mirror-server-instance",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "mirroring-states",
+    "name": "mirroring-states",
+    "title": "mirroring-states",
     "category": "general",
     "tags": [],
     "description": "",
@@ -28902,6 +30270,24 @@
     "slug": "modify-a-filter",
     "name": "modify-a-filter",
     "title": "modify-a-filter",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "monitor-2",
+    "name": "monitor-2",
+    "title": "monitor-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "monitor-performance-for-availability-groups",
+    "name": "monitor-performance-for-availability-groups",
+    "title": "monitor-performance-for-availability-groups",
     "category": "general",
     "tags": [],
     "description": "",
@@ -28938,6 +30324,15 @@
     "slug": "move-resources",
     "name": "move-resources",
     "title": "move-resources",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "multi-subnet-clustering",
+    "name": "multi-subnet-clustering",
+    "title": "multi-subnet-clustering",
     "category": "general",
     "tags": [],
     "description": "",
@@ -29160,6 +30555,15 @@
     "collection": "operations"
   },
   {
+    "slug": "operating-modes",
+    "name": "operating-modes",
+    "title": "operating-modes",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "index",
     "name": "Operations Guide",
     "title": "Operations Guide",
@@ -29172,6 +30576,24 @@
     "slug": "organize-columns-displayed-in-a-trace",
     "name": "organize-columns-displayed-in-a-trace",
     "title": "organize-columns-displayed-in-a-trace",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "overview-2",
+    "name": "overview-2",
+    "title": "overview-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "overview-3",
+    "name": "overview-3",
+    "title": "overview-3",
     "category": "general",
     "tags": [],
     "description": "",
@@ -29226,6 +30648,33 @@
     "slug": "pause-a-trace",
     "name": "pause-a-trace",
     "title": "pause-a-trace",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "pause-or-resume",
+    "name": "pause-or-resume",
+    "title": "pause-or-resume",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "pausing-resuming",
+    "name": "pausing-resuming",
+    "title": "pausing-resuming",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "peer-to-peer-replicated-databases",
+    "name": "peer-to-peer-replicated-databases",
+    "title": "peer-to-peer-replicated-databases",
     "category": "general",
     "tags": [],
     "description": "",
@@ -29295,9 +30744,90 @@
     "collection": "operations"
   },
   {
+    "slug": "plan-test-the-upgrade-plan",
+    "name": "plan-test-the-upgrade-plan",
+    "title": "plan-test-the-upgrade-plan",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "planned-manual-failover",
+    "name": "planned-manual-failover",
+    "title": "planned-manual-failover",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "point-in-time-restore-preview",
     "name": "point-in-time-restore-preview",
     "title": "point-in-time-restore-preview",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "policies",
+    "name": "policies",
+    "title": "policies",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "policies-2",
+    "name": "policies-2",
+    "title": "policies-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "possible-cause-of-failures",
+    "name": "possible-cause-of-failures",
+    "title": "possible-cause-of-failures",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "possible-failures-during-sessions-between-replicas",
+    "name": "possible-failures-during-sessions-between-replicas",
+    "title": "possible-failures-during-sessions-between-replicas",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "power-pivot-for-sharepoint",
+    "name": "power-pivot-for-sharepoint",
+    "title": "power-pivot-for-sharepoint",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "powershell",
+    "name": "powershell",
+    "title": "powershell",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "powershell-cmdlets",
+    "name": "powershell-cmdlets",
+    "title": "powershell-cmdlets",
     "category": "general",
     "tags": [],
     "description": "",
@@ -29316,6 +30846,15 @@
     "slug": "preconnectstarting-event-class",
     "name": "preconnectstarting-event-class",
     "title": "preconnectstarting-event-class",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "prepare-a-database",
+    "name": "prepare-a-database",
+    "title": "prepare-a-database",
     "category": "general",
     "tags": [],
     "description": "",
@@ -29367,9 +30906,36 @@
     "collection": "operations"
   },
   {
+    "slug": "prerequisites-restrictions-recommendations",
+    "name": "prerequisites-restrictions-recommendations",
+    "title": "prerequisites-restrictions-recommendations",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "prerequisites-restrictions-recommendations-2",
+    "name": "prerequisites-restrictions-recommendations-2",
+    "title": "prerequisites-restrictions-recommendations-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "previous-releases-of-ssdt-ssdt-bi",
     "name": "previous-releases-of-ssdt-ssdt-bi",
     "title": "previous-releases-of-ssdt-ssdt-bi",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "principal-server-instance",
+    "name": "principal-server-instance",
+    "title": "principal-server-instance",
     "category": "general",
     "tags": [],
     "description": "",
@@ -29415,6 +30981,15 @@
     "slug": "provision-a-sql-server-vm-in-azure",
     "name": "provision-a-sql-server-vm-in-azure",
     "title": "provision-a-sql-server-vm-in-azure",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "publication-database",
+    "name": "publication-database",
+    "title": "publication-database",
     "category": "general",
     "tags": [],
     "description": "",
@@ -29493,6 +31068,69 @@
     "collection": "operations"
   },
   {
+    "slug": "query-tuning-assistant",
+    "name": "query-tuning-assistant",
+    "title": "query-tuning-assistant",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "quorum-how-a-witness-affects-database-availability",
+    "name": "quorum-how-a-witness-affects-database-availability",
+    "title": "quorum-how-a-witness-affects-database-availability",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "quorum-modes-voting",
+    "name": "quorum-modes-voting",
+    "title": "quorum-modes-voting",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "read-scale-only",
+    "name": "read-scale-only",
+    "title": "read-scale-only",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "readable-secondary",
+    "name": "readable-secondary",
+    "title": "readable-secondary",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "readwrite-connection-redirection",
+    "name": "readwrite-connection-redirection",
+    "title": "readwrite-connection-redirection",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "recover-from-a-failure",
+    "name": "recover-from-a-failure",
+    "title": "recover-from-a-failure",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "red-hat-enterprise-linux-rhel",
     "name": "red-hat-enterprise-linux-rhel",
     "title": "red-hat-enterprise-linux-rhel",
@@ -29505,6 +31143,15 @@
     "slug": "register-a-database-as-a-dac",
     "name": "register-a-database-as-a-dac",
     "title": "register-a-database-as-a-dac",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "register-mirrored-database",
+    "name": "register-mirrored-database",
+    "title": "register-mirrored-database",
     "category": "general",
     "tags": [],
     "description": "",
@@ -29541,6 +31188,114 @@
     "slug": "release-notes-archive",
     "name": "release-notes-archive",
     "title": "release-notes-archive",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "remove",
+    "name": "remove",
+    "title": "remove",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "remove-a-cluster",
+    "name": "remove-a-cluster",
+    "title": "remove-a-cluster",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "remove-a-secondary-database",
+    "name": "remove-a-secondary-database",
+    "title": "remove-a-secondary-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "remove-availability-group",
+    "name": "remove-availability-group",
+    "title": "remove-availability-group",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "remove-listener",
+    "name": "remove-listener",
+    "title": "remove-listener",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "remove-mirroring",
+    "name": "remove-mirroring",
+    "title": "remove-mirroring",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "remove-mirroring-2",
+    "name": "remove-mirroring-2",
+    "title": "remove-mirroring-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "remove-primary-database",
+    "name": "remove-primary-database",
+    "title": "remove-primary-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "remove-replica",
+    "name": "remove-replica",
+    "title": "remove-replica",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "remove-secondary-database",
+    "name": "remove-secondary-database",
+    "title": "remove-secondary-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "remove-the-witness",
+    "name": "remove-the-witness",
+    "title": "remove-the-witness",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "rename-a-failover-cluster",
+    "name": "rename-a-failover-cluster",
+    "title": "rename-a-failover-cluster",
     "category": "general",
     "tags": [],
     "description": "",
@@ -29628,6 +31383,42 @@
     "collection": "operations"
   },
   {
+    "slug": "replicated-databases",
+    "name": "replicated-databases",
+    "title": "replicated-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "replication",
+    "name": "replication",
+    "title": "replication",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "replication-ct-cdc",
+    "name": "replication-ct-cdc",
+    "title": "replication-ct-cdc",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "reporting-services",
+    "name": "reporting-services",
+    "title": "reporting-services",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "required-permissions",
     "name": "required-permissions",
     "title": "required-permissions",
@@ -29649,6 +31440,33 @@
     "slug": "restore-the-master-database",
     "name": "restore-the-master-database",
     "title": "restore-the-master-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "resume-availability-database",
+    "name": "resume-availability-database",
+    "title": "resume-availability-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "ring-buffers",
+    "name": "ring-buffers",
+    "title": "ring-buffers",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "role-switching",
+    "name": "role-switching",
+    "title": "role-switching",
     "category": "general",
     "tags": [],
     "description": "",
@@ -29853,6 +31671,24 @@
     "collection": "operations"
   },
   {
+    "slug": "secondary-database-is-not-joined",
+    "name": "secondary-database-is-not-joined",
+    "title": "secondary-database-is-not-joined",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "secondary-database-settings",
+    "name": "secondary-database-settings",
+    "title": "secondary-database-settings",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "security-and-permissions-guide",
     "name": "security-and-permissions-guide",
     "title": "security-and-permissions-guide",
@@ -29871,6 +31707,15 @@
     "collection": "operations"
   },
   {
+    "slug": "security-wizard",
+    "name": "security-wizard",
+    "title": "security-wizard",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "server-event-category",
     "name": "server-event-category",
     "title": "server-event-category",
@@ -29883,6 +31728,24 @@
     "slug": "server-memory-change-event-class",
     "name": "server-memory-change-event-class",
     "title": "server-memory-change-event-class",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "service-accounts",
+    "name": "service-accounts",
+    "title": "service-accounts",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "service-broker",
+    "name": "service-broker",
+    "title": "service-broker",
     "category": "general",
     "tags": [],
     "description": "",
@@ -29934,6 +31797,33 @@
     "collection": "operations"
   },
   {
+    "slug": "set-subscription-expiration-period",
+    "name": "set-subscription-expiration-period",
+    "title": "set-subscription-expiration-period",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "set-the-distribution-retention-period-for-transactional-publications",
+    "name": "set-the-distribution-retention-period-for-transactional-publications",
+    "title": "set-the-distribution-retention-period-for-transactional-publications",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "set-the-history-retention-period",
+    "name": "set-the-history-retention-period",
+    "title": "set-the-history-retention-period",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "set-trace-definition-defaults",
     "name": "set-trace-definition-defaults",
     "title": "set-trace-definition-defaults",
@@ -29952,9 +31842,36 @@
     "collection": "operations"
   },
   {
+    "slug": "set-up",
+    "name": "set-up",
+    "title": "set-up",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "set-up-encryption",
+    "name": "set-up-encryption",
+    "title": "set-up-encryption",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "set-up-microsoft-entra-authentication-azure-arc",
     "name": "set-up-microsoft-entra-authentication-azure-arc",
     "title": "set-up-microsoft-entra-authentication-azure-arc",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "set-warning-thresholds",
+    "name": "set-warning-thresholds",
+    "title": "set-warning-thresholds",
     "category": "general",
     "tags": [],
     "description": "",
@@ -30069,6 +31986,42 @@
     "collection": "operations"
   },
   {
+    "slug": "some-availability-replicas-are-disconnected",
+    "name": "some-availability-replicas-are-disconnected",
+    "title": "some-availability-replicas-are-disconnected",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "some-availability-replicas-are-not-synchronizing-data",
+    "name": "some-availability-replicas-are-not-synchronizing-data",
+    "title": "some-availability-replicas-are-not-synchronizing-data",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "some-availability-replicas-do-not-have-a-healthy-role",
+    "name": "some-availability-replicas-do-not-have-a-healthy-role",
+    "title": "some-availability-replicas-do-not-have-a-healthy-role",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "some-synchronous-replicas-are-not-synchronized",
+    "name": "some-synchronous-replicas-are-not-synchronized",
+    "title": "some-synchronous-replicas-are-not-synchronized",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "sort-warnings-event-class",
     "name": "sort-warnings-event-class",
     "title": "sort-warnings-event-class",
@@ -30159,9 +32112,36 @@
     "collection": "operations"
   },
   {
+    "slug": "specify-a-server-network-address",
+    "name": "specify-a-server-network-address",
+    "title": "specify-a-server-network-address",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "specify-events-data-columns-for-a-trace-file",
     "name": "specify-events-data-columns-for-a-trace-file",
     "title": "specify-events-data-columns-for-a-trace-file",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "specify-schema-options",
+    "name": "specify-schema-options",
+    "title": "specify-schema-options",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "specify-the-endpoint-url-when-adding-or-modifying-a-replica",
+    "name": "specify-the-endpoint-url-when-adding-or-modifying-a-replica",
+    "title": "specify-the-endpoint-url-when-adding-or-modifying-a-replica",
     "category": "general",
     "tags": [],
     "description": "",
@@ -30402,6 +32382,15 @@
     "collection": "operations"
   },
   {
+    "slug": "sql-server-analysis-services-ssas",
+    "name": "sql-server-analysis-services-ssas",
+    "title": "sql-server-analysis-services-ssas",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "sql-server-data-tools-overview",
     "name": "sql-server-data-tools-overview",
     "title": "sql-server-data-tools-overview",
@@ -30429,6 +32418,15 @@
     "collection": "operations"
   },
   {
+    "slug": "sql-server-error-log",
+    "name": "sql-server-error-log",
+    "title": "sql-server-error-log",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "sql-server-features",
     "name": "sql-server-features",
     "title": "sql-server-features",
@@ -30441,6 +32439,24 @@
     "slug": "sql-server-features-2",
     "name": "sql-server-features-2",
     "title": "sql-server-features-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "sql-server-management-studio",
+    "name": "sql-server-management-studio",
+    "title": "sql-server-management-studio",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "sql-server-management-tools",
+    "name": "sql-server-management-tools",
+    "title": "sql-server-management-tools",
     "category": "general",
     "tags": [],
     "description": "",
@@ -30654,9 +32670,27 @@
     "collection": "operations"
   },
   {
+    "slug": "start-data-movement",
+    "name": "start-data-movement",
+    "title": "start-data-movement",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "start-from-an-existing-database",
     "name": "start-from-an-existing-database",
     "title": "start-from-an-existing-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "status-page",
+    "name": "status-page",
+    "title": "status-page",
     "category": "general",
     "tags": [],
     "description": "",
@@ -30699,9 +32733,72 @@
     "collection": "operations"
   },
   {
+    "slug": "subscribers",
+    "name": "subscribers",
+    "title": "subscribers",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "supported-version-edition-upgrades-sql-server-2016",
+    "name": "supported-version-edition-upgrades-sql-server-2016",
+    "title": "supported-version-edition-upgrades-sql-server-2016",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "supported-version-edition-upgrades-sql-server-2017",
+    "name": "supported-version-edition-upgrades-sql-server-2017",
+    "title": "supported-version-edition-upgrades-sql-server-2017",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "supported-version-edition-upgrades-sql-server-2019",
+    "name": "supported-version-edition-upgrades-sql-server-2019",
+    "title": "supported-version-edition-upgrades-sql-server-2019",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "supported-version-edition-upgrades-sql-server-2022",
+    "name": "supported-version-edition-upgrades-sql-server-2022",
+    "title": "supported-version-edition-upgrades-sql-server-2022",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "supported-version-edition-upgrades-sql-server-2025",
+    "name": "supported-version-edition-upgrades-sql-server-2025",
+    "title": "supported-version-edition-upgrades-sql-server-2025",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "suse-linux-enterprise-server-sles",
     "name": "suse-linux-enterprise-server-sles",
     "title": "suse-linux-enterprise-server-sles",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "suspend-availability-database",
+    "name": "suspend-availability-database",
+    "title": "suspend-availability-database",
     "category": "general",
     "tags": [],
     "description": "",
@@ -30720,6 +32817,42 @@
     "slug": "system-objects",
     "name": "system-objects",
     "title": "system-objects",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "system-objects-2",
+    "name": "system-objects-2",
+    "title": "system-objects-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "t-sql",
+    "name": "t-sql",
+    "title": "t-sql",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "t-sql-2",
+    "name": "t-sql-2",
+    "title": "t-sql-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "t-sql-3",
+    "name": "t-sql-3",
+    "title": "t-sql-3",
     "category": "general",
     "tags": [],
     "description": "",
@@ -30774,6 +32907,24 @@
     "slug": "t-sql-videos",
     "name": "t-sql-videos",
     "title": "t-sql-videos",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "tables-stored-procedures",
+    "name": "tables-stored-procedures",
+    "title": "tables-stored-procedures",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "take-availability-group-offline",
+    "name": "take-availability-group-offline",
+    "title": "take-availability-group-offline",
     "category": "general",
     "tags": [],
     "description": "",
@@ -30906,6 +33057,15 @@
     "collection": "operations"
   },
   {
+    "slug": "transaction-log-backup-settings",
+    "name": "transaction-log-backup-settings",
+    "title": "transaction-log-backup-settings",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "transactionlog-event-class",
     "name": "transactionlog-event-class",
     "title": "transactionlog-event-class",
@@ -30933,9 +33093,36 @@
     "collection": "operations"
   },
   {
+    "slug": "transport-security",
+    "name": "transport-security",
+    "title": "transport-security",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "troubleshoot-ad-authentication",
     "name": "troubleshoot-ad-authentication",
     "title": "troubleshoot-ad-authentication",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "troubleshoot-availability-group-exceeded-rpo",
+    "name": "troubleshoot-availability-group-exceeded-rpo",
+    "title": "troubleshoot-availability-group-exceeded-rpo",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "troubleshoot-availability-group-exceeded-rto",
+    "name": "troubleshoot-availability-group-exceeded-rto",
+    "title": "troubleshoot-availability-group-exceeded-rto",
     "category": "general",
     "tags": [],
     "description": "",
@@ -30951,9 +33138,27 @@
     "collection": "operations"
   },
   {
+    "slug": "troubleshoot-changes-on-primary-not-reflected-on-secondary-replica",
+    "name": "troubleshoot-changes-on-primary-not-reflected-on-secondary-replica",
+    "title": "troubleshoot-changes-on-primary-not-reflected-on-secondary-replica",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "troubleshoot-common-issues",
     "name": "troubleshoot-common-issues",
     "title": "troubleshoot-common-issues",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "troubleshoot-configuration",
+    "name": "troubleshoot-configuration",
+    "title": "troubleshoot-configuration",
     "category": "general",
     "tags": [],
     "description": "",
@@ -30978,6 +33183,15 @@
     "collection": "operations"
   },
   {
+    "slug": "troubleshoot-database-mirroring-configuration",
+    "name": "troubleshoot-database-mirroring-configuration",
+    "title": "troubleshoot-database-mirroring-configuration",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "troubleshoot-deployment",
     "name": "troubleshoot-deployment",
     "title": "troubleshoot-deployment",
@@ -30996,6 +33210,24 @@
     "collection": "operations"
   },
   {
+    "slug": "troubleshoot-failed-add-file",
+    "name": "troubleshoot-failed-add-file",
+    "title": "troubleshoot-failed-add-file",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "troubleshoot-orphaned-users",
+    "name": "troubleshoot-orphaned-users",
+    "title": "troubleshoot-orphaned-users",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "troubleshoot-sql-project-build",
     "name": "troubleshoot-sql-project-build",
     "title": "troubleshoot-sql-project-build",
@@ -31005,9 +33237,27 @@
     "collection": "operations"
   },
   {
+    "slug": "troubleshooting",
+    "name": "troubleshooting",
+    "title": "troubleshooting",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "troubleshooting-guide",
     "name": "troubleshooting-guide",
     "title": "troubleshooting-guide",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "troubleshooting-monitoring-guide",
+    "name": "troubleshooting-monitoring-guide",
+    "title": "troubleshooting-monitoring-guide",
     "category": "general",
     "tags": [],
     "description": "",
@@ -31026,6 +33276,15 @@
     "slug": "troubleshooting-sqlpackage",
     "name": "troubleshooting-sqlpackage",
     "title": "troubleshooting-sqlpackage",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "tune-compression",
+    "name": "tune-compression",
+    "title": "tune-compression",
     "category": "general",
     "tags": [],
     "description": "",
@@ -31077,6 +33336,24 @@
     "collection": "operations"
   },
   {
+    "slug": "upgrade",
+    "name": "upgrade",
+    "title": "upgrade",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "upgrade-a-cluster",
+    "name": "upgrade-a-cluster",
+    "title": "upgrade-a-cluster",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "upgrade-an-older-test-project-containing-database-unit-tests",
     "name": "upgrade-an-older-test-project-containing-database-unit-tests",
     "title": "upgrade-an-older-test-project-containing-database-unit-tests",
@@ -31086,9 +33363,27 @@
     "collection": "operations"
   },
   {
+    "slug": "upgrade-sql-server-log-shipping",
+    "name": "upgrade-sql-server-log-shipping",
+    "title": "upgrade-sql-server-log-shipping",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "upgrade-sql-server-on-linux",
     "name": "upgrade-sql-server-on-linux",
     "title": "upgrade-sql-server-on-linux",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "upgrading-replica-instances",
+    "name": "upgrading-replica-instances",
+    "title": "upgrading-replica-instances",
     "category": "general",
     "tags": [],
     "description": "",
@@ -31143,6 +33438,15 @@
     "slug": "use-azure-blob-storage-with-sql-server-databases",
     "name": "use-azure-blob-storage-with-sql-server-databases",
     "title": "use-azure-blob-storage-with-sql-server-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "use-certificates-for-an-endpoint",
+    "name": "use-certificates-for-an-endpoint",
+    "title": "use-certificates-for-an-endpoint",
     "category": "general",
     "tags": [],
     "description": "",
@@ -31275,6 +33579,15 @@
     "collection": "operations"
   },
   {
+    "slug": "use-the-trustworthy-property",
+    "name": "use-the-trustworthy-property",
+    "title": "use-the-trustworthy-property",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "use-visual-studio-code",
     "name": "use-visual-studio-code",
     "title": "use-visual-studio-code",
@@ -31287,6 +33600,15 @@
     "slug": "use-windows-powershell",
     "name": "use-windows-powershell",
     "title": "use-windows-powershell",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "useful-tools-for-troubleshooting",
+    "name": "useful-tools-for-troubleshooting",
+    "title": "useful-tools-for-troubleshooting",
     "category": "general",
     "tags": [],
     "description": "",
@@ -31374,6 +33696,15 @@
     "collection": "operations"
   },
   {
+    "slug": "view-availability-group-properties",
+    "name": "view-availability-group-properties",
+    "title": "view-availability-group-properties",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "view-filter-information",
     "name": "view-filter-information",
     "title": "view-filter-information",
@@ -31383,9 +33714,81 @@
     "collection": "operations"
   },
   {
+    "slug": "view-health-with-policies",
+    "name": "view-health-with-policies",
+    "title": "view-health-with-policies",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
     "slug": "view-inventory",
     "name": "view-inventory",
     "title": "view-inventory",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "view-listener-properties",
+    "name": "view-listener-properties",
+    "title": "view-listener-properties",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "view-modify-properties",
+    "name": "view-modify-properties",
+    "title": "view-modify-properties",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "view-modify-properties-2",
+    "name": "view-modify-properties-2",
+    "title": "view-modify-properties-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "view-quorum-nodeweight-settings",
+    "name": "view-quorum-nodeweight-settings",
+    "title": "view-quorum-nodeweight-settings",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "view-replica-properties",
+    "name": "view-replica-properties",
+    "title": "view-replica-properties",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "view-report",
+    "name": "view-report",
+    "title": "view-report",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "view-states",
+    "name": "view-states",
+    "title": "view-states",
     "category": "general",
     "tags": [],
     "description": "",
@@ -31413,6 +33816,15 @@
     "slug": "vs2022-ssis-troubleshooting-guide",
     "name": "vs2022-ssis-troubleshooting-guide",
     "title": "vs2022-ssis-troubleshooting-guide",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "wait-types",
+    "name": "wait-types",
+    "title": "wait-types",
     "category": "general",
     "tags": [],
     "description": "",
@@ -31467,6 +33879,105 @@
     "slug": "walkthrough-using-a-custom-test-condition-to-verify-the-results-of-a-stored-procedure",
     "name": "walkthrough-using-a-custom-test-condition-to-verify-the-results-of-a-stored-procedure",
     "title": "walkthrough-using-a-custom-test-condition-to-verify-the-results-of-a-stored-procedure",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "warning-thresholds-on-performance",
+    "name": "warning-thresholds-on-performance",
+    "title": "warning-thresholds-on-performance",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "warnings-page",
+    "name": "warnings-page",
+    "title": "warnings-page",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "what-is-a-failover-cluster-instance",
+    "name": "what-is-a-failover-cluster-instance",
+    "title": "what-is-a-failover-cluster-instance",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "what-is-an-always-on-availability-group",
+    "name": "what-is-an-always-on-availability-group",
+    "title": "what-is-an-always-on-availability-group",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "windows-server-failover-cluster",
+    "name": "windows-server-failover-cluster",
+    "title": "windows-server-failover-cluster",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "with-microsoft-entra-authentication",
+    "name": "with-microsoft-entra-authentication",
+    "title": "with-microsoft-entra-authentication",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "witness",
+    "name": "witness",
+    "title": "witness",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "witness-server-instance",
+    "name": "witness-server-instance",
+    "title": "witness-server-instance",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "wizard",
+    "name": "wizard",
+    "title": "wizard",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "wizard-2",
+    "name": "wizard-2",
+    "title": "wizard-2",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "operations"
+  },
+  {
+    "slug": "wsfc-cluster-service-is-offline",
+    "name": "wsfc-cluster-service-is-offline",
+    "title": "wsfc-cluster-service-is-offline",
     "category": "general",
     "tags": [],
     "description": "",

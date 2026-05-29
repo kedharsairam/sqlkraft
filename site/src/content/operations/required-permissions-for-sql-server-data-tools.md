@@ -1,6 +1,6 @@
 ---
 title: "Required Permissions for SQL Server Data Tools"
-topic: "ssb-diagnose"
+topic: "data-tools"
 description: |
   Required permissions for SQL Server Data
   
@@ -10,7 +10,7 @@ description: |
   
   account that has certain permissions on that database. 
 tags:
-  - "ssb-diagnose"
+  - "data-tools"
   - "required-permissions-for-sql-server-data-tools"
 pubDate: 2025-12-01
 ---

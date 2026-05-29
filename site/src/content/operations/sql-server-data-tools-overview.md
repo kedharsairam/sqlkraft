@@ -1,6 +1,6 @@
 ---
 title: "SQL Server Data Tools Overview"
-topic: "ssb-diagnose"
+topic: "data-tools"
 description: |
   SQL Server Data Tools
   
@@ -10,7 +10,7 @@ description: |
   
   building SQL Server databases and Azure SQL databases. SSDT can be extended to Analys
 tags:
-  - "ssb-diagnose"
+  - "data-tools"
   - "sql-server-data-tools-overview"
 pubDate: 2025-12-01
 ---

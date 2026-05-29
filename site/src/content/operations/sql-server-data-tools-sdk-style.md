@@ -1,6 +1,6 @@
 ---
 title: "SQL Server Data Tools, SDK-style"
-topic: "ssb-diagnose"
+topic: "data-tools"
 description: |
   SQL Server Data Tools, SDK-style (preview)
   
@@ -10,7 +10,7 @@ description: |
   
   building SQL Server databases and Azure SQL databases. SDK-sty
 tags:
-  - "ssb-diagnose"
+  - "data-tools"
   - "sql-server-data-tools-sdk-style"
 pubDate: 2025-12-01
 ---

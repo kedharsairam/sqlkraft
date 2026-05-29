@@ -1,6 +1,6 @@
 ---
 title: "Disconnect & unregister from Azure Arc"
-topic: "azure-synapse"
+topic: "azure-arc"
 description: |
   Applies to:
   
@@ -10,7 +10,7 @@ description: |
   
   portal or a command shell. It applies to SQL Server instances enabled by Azure
 tags:
-  - "azure-synapse"
+  - "azure-arc"
   - "disconnect-unregister-from-azure-arc"
 pubDate: 2025-12-01
 ---

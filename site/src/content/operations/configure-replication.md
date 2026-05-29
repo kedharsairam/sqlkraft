@@ -1,104 +1,101 @@
 ---
 title: "Configure replication"
-topic: "linux-operations"
+topic: "high-availability"
 description: |
+  Article
+  
+  •
+  
+  01/08/2025
+  
   Applies to:
   
   SQL Server
   
-  on Linux
+  - Windows only
   
-  In this tutorial, configure SQL Server snapshot replication on Linux with two instances of SQL
+  Configuring SQL Server replication and Always On availability groups involves seven steps.
   
-  Server using Transact-SQL (T-SQL). The publisher and distributor are 
+  Each step is described in more detail in th
 tags:
-  - "linux-operations"
+  - "high-availability"
   - "configure-replication"
 pubDate: 2025-12-01
 ---
+
+Article
+
+•
+
+01/08/2025
 
 Applies to:
 
 SQL Server
 
-on Linux
+- Windows only
 
-In this tutorial, configure SQL Server snapshot replication on Linux with two instances of SQL
+Configuring SQL Server replication and Always On availability groups involves seven steps.
 
-Server using Transact-SQL (T-SQL). The publisher and distributor are on the same instance, and
+Each step is described in more detail in the following sections.
 
-the subscriber is on a separate instance.
+The distribution database can't be placed in an availability group with SQL Server 2012 and
 
-All replication configurations can be configured with
+SQL Server 2014. Placing the distribution database into an availability group is supported with
 
-replication stored procedures
+SQL 2016 and greater, except for distribution databases used in merge, bidirectional, or peer-
 
-.
+to-peer replication topologies. For more information, see
 
-To complete this tutorial, you need:
+Set up replication distribution
 
-Two instances of SQL Server with the latest version of SQL Server on Linux
-
-A tool to issue T-SQL queries to set up replication, such as
-
-sqlcmd
-
-or
-
-SQL Server
-
-Management Studio (SSMS)
-
-See
-
-Use SQL Server Management Studio on Windows to manage SQL Server on Linux
+database in Always On availability group
 
 .
 
-1. Enable SQL Server replication agents on Linux. On both host machines, run the following
+1. Configure distribution at the distributor. If stored procedures are being used for
 
-commands in the terminal.
+configuration, run
 
-Bash
+Use the
 
-Enable SQL Server replication agents on Linux
+@password
 
-＂
+parameter to identify the
 
-Create a sample database
+password that will be used when a remote publisher connects to the distributor. The
 
-＂
+password will also be needed at each remote publisher when the remote distributor is set
 
-Configure snapshot folder for SQL Server agents access
+up.
 
-＂
+SQL
 
-Configure the distributor
+2. Create the distribution database at the distributor. If stored procedures are being used for
 
-＂
+configuration, run
 
-Configure the publisher
+SQL
 
-＂
-
-Configure publication and articles
-
-＂
-
-Configure subscriber
-
-＂
-
-Run the replication jobs
-
-＂
-
-７
-
-Note
-
-SQL Server Replication is supported on Linux in SQL Server 2017 (14.x) (
-
-) and
-
-later versions.
+```cmd
+sp_adddistributor
+sp_adddistributiondb
+USE
+master
+;
+GO
+EXECUTE
+sys.sp_adddistributor
+@distributor =
+'MyDistributor'
+,
+@
+password
+=
+'**Strong password for distributor**'
+;
+USE
+master
+;
+GO
+```

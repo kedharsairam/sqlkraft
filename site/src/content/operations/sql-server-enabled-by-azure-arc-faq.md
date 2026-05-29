@@ -1,6 +1,6 @@
 ---
 title: "SQL Server enabled by Azure Arc FAQ"
-topic: "azure-synapse"
+topic: "azure-arc"
 description: |
   Yes, you can use the
   
@@ -10,7 +10,7 @@ description: |
   
   For example, if you have any standby instances, you m
 tags:
-  - "azure-synapse"
+  - "azure-arc"
   - "sql-server-enabled-by-azure-arc-faq"
 pubDate: 2025-12-01
 ---

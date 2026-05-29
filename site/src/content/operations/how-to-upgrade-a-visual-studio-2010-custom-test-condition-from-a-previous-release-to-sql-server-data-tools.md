@@ -1,6 +1,6 @@
 ---
 title: "How to: Upgrade a Visual Studio 2010 Custom Test Condition from a Previous Release to SQL Server Data Tools"
-topic: "ssb-diagnose"
+topic: "data-tools"
 description: |
   09/10/2025
   
@@ -16,7 +16,7 @@ description: |
   
   .
 tags:
-  - "ssb-diagnose"
+  - "data-tools"
   - "how-to-upgrade-a-visual-studio-2010-custom-test-condition-from-a-previous-release-to-sql-server-data-tools"
 pubDate: 2025-12-01
 ---

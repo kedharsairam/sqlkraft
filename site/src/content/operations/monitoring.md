@@ -1,132 +1,95 @@
 ---
 title: "Monitoring"
-topic: "monitor"
+topic: "high-availability"
 description: |
-  SQL Server monitoring partners
+  Article
   
-  09/08/2025
+  •
   
-  To monitor your SQL Server services, choose from a wide variety of industry-leading tools. This
+  02/01/2024
   
-  article highlights Microsoft partner companies with monitor
+  Applies to:
+  
+  SQL Server
+  
+  This section introduces Database Mirroring Monitor and the
+  
+  system stored
+  
+  procedures, explains how database mirroring monitoring works (including the
+  
 tags:
-  - "monitor"
+  - "high-availability"
   - "monitoring"
 pubDate: 2025-12-01
 ---
 
-SQL Server monitoring partners
+Article
 
-09/08/2025
+•
 
-To monitor your SQL Server services, choose from a wide variety of industry-leading tools. This
+02/01/2024
 
-article highlights Microsoft partner companies with monitoring solutions supporting SQL
+Applies to:
 
-Server.
+SQL Server
 
-Description
+This section introduces Database Mirroring Monitor and the
 
-SQL Diagnostic Manager is a powerful performance monitoring and
+system stored
 
-diagnostics solution that proactively alerts administrators to health,
+procedures, explains how database mirroring monitoring works (including the
 
-performance, and availability problems within SQL Server environments all
+, and summarizes the information that you can monitor about database
 
-from a central console.
+mirroring sessions. Additionally, this section introduces how to define warning thresholds for a
 
--
+set of predefined database mirroring events and how to set up alerts on any database
 
-System requirements
+mirroring event.
 
--
+You can monitor a mirrored database during a mirroring session to verify whether and how
 
-Website
+well data is flowing. To set up and manage monitoring for one or more of the mirrored
 
--
+databases on a server instance, you can use either Database Mirroring Monitor or the
 
-X
+system stored procedures.
 
--
+A database mirroring monitoring job,
 
-Video
+, operates in the
 
-SQL Monitor from Redgate is a SQL Server monitoring tool that helps
+background, independently of Database Mirroring Monitor. SQL Server Agent calls
 
-teams looking after SQL Server be more proactive. Not only does SQL
+at regular intervals, the default is once a minute, and the job calls a
 
-Monitor alert you to current issues, it gives you the information you need
+stored procedure that updates mirroring status. If you use SQL Server Management Studio to
 
-to stop them happening in the future. Ideally suited to large SQL Server
+start a mirroring session,
 
-estates, SQL Monitor makes sure you always have the answer to questions
+is created automatically. However, if
 
-about performance.
+you only use ALTER DATABASE
 
--
+<database_name>
 
-Website
+SET PARTNER to start mirroring, you must
 
--
+create the job by running a stored procedure.
 
-X
+Monitoring Mirroring Status
 
--
+Additional Sources of Information About a Mirrored Database
 
-LinkedIn
+To set up and manage monitoring for one or more of the mirrored databases on a server
 
-SentryOne solutions empower Microsoft data professionals to achieve
+instance, you can use either Database Mirroring Monitor or the
 
-breakthrough performance across physical, virtual, and cloud
+system stored
 
-environments. With SentryOne, data professionals can consolidate their
+procedures. You can monitor a mirrored database during a mirroring session to verify whether
 
-tool sets, reduce infrastructure costs, and increase database speed and
+and how well data is flowing.
 
-efficiency for peak performance across their Microsoft data platform
-
-environments, regardless of size or complexity.
-
--
-
-Website
-
--
-
-Datasheet
-
--
-
-LinkedIn
-
-Database Performance Analyzer provides visibility across application
-
-requests, SQL statements, database resources, host/OS, network,
-
-virtualization, and storage performance. DPA incorporates wait-time
-
-analysis so the focus isn't only on health, but on the speed at which the
-
-database responds to application requests. DPA provides full coverage of
-
-your databases, no matter how it's deployed. Physical, virtual, cloud, or
-
-DBaaS, we've got you covered in a single pane of glass.
-
--
-
-Website
-
--
-
-LinkedIn
-
--
-
-Video
-
-SQL Server high availability and disaster recovery partners
-
-ﾉ
-
-Expand table
+Specifically, monitoring a mirrored database enables you to:
