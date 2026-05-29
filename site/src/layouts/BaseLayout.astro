@@ -49,8 +49,45 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
           </svg>
           <span class="search-shortcut">Ctrl+K</span>
         </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Open navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
       </div>
     </nav>
+
+    <!-- ── Mobile navigation drawer ── -->
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer">
+      <div class="mobile-nav-drawer-inner">
+        <button class="mobile-search-trigger" id="mobile-search-trigger">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <span>Search references</span>
+          <kbd class="mobile-search-hint">Ctrl+K</kbd>
+        </button>
+        <div class="mobile-nav-links">
+          <a href="/sqlkraft/dmvs/" class="mobile-nav-link">DMVs</a>
+          <a href="/sqlkraft/wait-statistics/" class="mobile-nav-link">Waits</a>
+          <a href="/sqlkraft/errors/" class="mobile-nav-link">Errors</a>
+          <a href="/sqlkraft/catalog-views/" class="mobile-nav-link">Catalog</a>
+          <a href="/sqlkraft/functions/" class="mobile-nav-link">Functions</a>
+          <a href="/sqlkraft/stored-procedures/" class="mobile-nav-link">SPs</a>
+          <a href="/sqlkraft/tsql-reference/" class="mobile-nav-link">T-SQL</a>
+          <a href="/sqlkraft/architecture/" class="mobile-nav-link">Arch</a>
+          <a href="/sqlkraft/scripts/" class="mobile-nav-link">Scripts</a>
+          <a href="/sqlkraft/cookbook/" class="mobile-nav-link">Recipes</a>
+        </div>
+      </div>
+    </div>
     <main class="app-shell">
       <slot />
     </main>
@@ -80,6 +117,50 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
       }
     }
   });
+
+  // ── Mobile hamburger menu ──
+  const hamburger = document.getElementById("hamburger-btn");
+  const drawer = document.getElementById("mobile-nav-drawer");
+  if (hamburger && drawer) {
+    hamburger.addEventListener("click", () => {
+      const isOpen = drawer.classList.toggle("is-active");
+      hamburger.classList.toggle("is-active");
+      hamburger.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu",
+      );
+      document.body.style.overflow = isOpen ? "hidden" : "";
+    });
+
+    // Close drawer when a nav link is tapped
+    drawer.querySelectorAll(".mobile-nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        drawer.classList.remove("is-active");
+        hamburger.classList.remove("is-active");
+        hamburger.setAttribute("aria-label", "Open navigation menu");
+        document.body.style.overflow = "";
+      });
+    });
+
+    // Close drawer when search trigger is tapped
+    const searchTrigger = document.getElementById("mobile-search-trigger");
+    searchTrigger?.addEventListener("click", () => {
+      drawer.classList.remove("is-active");
+      hamburger.classList.remove("is-active");
+      hamburger.setAttribute("aria-label", "Open navigation menu");
+      document.body.style.overflow = "";
+      // Open the search overlay
+      const overlay = document.getElementById("search-overlay");
+      if (overlay) {
+        overlay.classList.remove("hidden");
+        const input = document.getElementById("search-input");
+        if (input) {
+          input.value = "";
+          input.focus();
+        }
+      }
+    });
+  }
 </script>
 
 <style is:global>
@@ -246,6 +327,144 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
   .body-content :not(pre) > code {
     font-size: clamp(0.8rem, 1.1vw, 0.9rem) !important;
     padding: clamp(1px, 0.3vw, 6px) clamp(3px, 0.5vw, 8px) !important;
+  }
+
+  /* ── Hamburger toggle button (hidden on desktop) ── */
+  .hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: 8px;
+  }
+  .hamburger-line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--text-secondary);
+    border-radius: 2px;
+    transition:
+      transform 0.2s ease-out,
+      opacity 0.2s ease-out;
+    transform-origin: center;
+  }
+  .hamburger-btn.is-active .hamburger-line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .hamburger-btn.is-active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-btn.is-active .hamburger-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  /* ── Mobile navigation drawer (full-screen overlay) ── */
+  .mobile-nav-drawer {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.97);
+    backdrop-filter: blur(16px);
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition:
+      opacity 0.2s ease-out,
+      transform 0.2s ease-out;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mobile-nav-drawer.is-active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .mobile-nav-drawer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: var(--fluid-padding-h);
+    max-width: 500px;
+  }
+
+  /* Mobile search trigger at top of drawer */
+  .mobile-search-trigger {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: var(--space-md);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-glass);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: var(--space-md);
+    transition:
+      border-color 0.2s,
+      color 0.2s;
+  }
+  .mobile-search-trigger:hover,
+  .mobile-search-trigger:active {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-primary);
+  }
+  .mobile-search-hint {
+    margin-left: auto;
+    font-size: 11px;
+    font-family: var(--font-mono);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-glass);
+    border-radius: 4px;
+    padding: 2px 6px;
+    line-height: 1;
+    color: var(--text-secondary);
+  }
+
+  /* Mobile nav links */
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .mobile-nav-link {
+    display: block;
+    padding: var(--space-sm) var(--space-md);
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.15s;
+  }
+  .mobile-nav-link:hover,
+  .mobile-nav-link:active {
+    background: rgba(255, 255, 255, 0.06);
+    text-decoration: none;
+  }
+
+  /* ── Responsive: switch to hamburger on narrow viewports ── */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .nav-search-btn {
+      display: none;
+    }
+    .hamburger-btn {
+      display: flex;
+    }
   }
 
   /* ── Fluid headings in body content ── */
