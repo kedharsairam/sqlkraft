@@ -1,73 +1,23 @@
 ---
 name: 'sys.dm_db_log_space_usage'
 title: 'sys.dm_db_log_space_usage'
-category: 'execution'
-description: 'The following query returns the databases with more than 100 VLFs in the log files. Large'
+category: 'log'
+description: 'SQL database in Microsoft Fabric Returns space usage information for the transaction log. In Azure SQL Database, the values are unique within a single database or an elastic pool, but not within a The occupied size of the log as a percent of the total The amount of space used since the last log backup SQL Server 2014 (12.x) and later versions, SQL Server 2019 (15.x) and earlier versions require SQ'
+tags: ["log", "dmv"]
 pubDate: 2026-05-29
+syntax: 'total_log_size_in_bytes'
 ---
 
-The following query returns the databases with more than 100 VLFs in the log files. Large
+## Description
 
-numbers of VLFs can affect the database startup, restore, and recovery time.
+SQL database in Microsoft Fabric Returns space usage information for the transaction log. In Azure SQL Database, the values are unique within a single database or an elastic pool, but not within a The occupied size of the log as a percent of the total The amount of space used since the last log backup SQL Server 2014 (12.x) and later versions, SQL Server 2019 (15.x) and earlier versions require SQL Server 2022 (16.x) and later versions, and Azure SQL Managed Instance require
 
-SQL
-
-The following query determines the last log backup start times for the databases in the
-
-instance.
-
-SQL
-
-System dynamic management views
-
-Database related dynamic management views (Transact-SQL)
-
-sys.dm_db_log_space_usage
-
-sys.dm_db_log_info
-
-Last updated on 01/29/2026
-
-## smallint
-
-## int
-
-## int
+## Syntax
 
 ```sql
-SELECT
-name
-AS
-'Database Name'
-,
-total_vlf_count
-AS
-'VLF count'
-FROM
-sys.databases
-AS
-s
-CROSS
-APPLY
-sys.dm_db_log_stats(s.database_id)
-WHERE
-total_vlf_count > 100;
+total_log_size_in_bytes
 ```
 
-```sql
-SELECT
-name
-AS
-'Database Name'
-,
-log_backup_time
-AS
-'last log backup start time'
-FROM
-sys.databases
-AS
-s
-CROSS
-APPLY
-sys.dm_db_log_stats(s.database_id);
-```
+## Permissions
+
+SQL Server Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Returns space usage information for the transaction log. Database ID. In Azure SQL Database, the values are unique within a single database or an elastic pool, but not within a logical server. The size of the log The occupied size of the log The occupied size of the log as a percent of the total log size The amount of space used since the last log backup SQL Server 2014 (12.x) and later versions, and SQL Database. SQL Server 2019 (15.x) and earlier versions require permission. SQL Server 2022 (16.x) and later versions, and Azure SQL Managed Instance require permission. On SQL Database , , and service objectives, and for databases in , the server admin account, the Microsoft Entra admin account, or membership in the server role is required. On all other SQL Database service objectives, ７ All transaction log files are combined. ﾉ

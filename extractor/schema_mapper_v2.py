@@ -52,6 +52,7 @@ SECTION_COLLECTION_MAP = {
     "system-catalog-views": "catalog-views",
     "system-functions": "functions",
     "architecture": "architecture",
+    "tsql-reference": "tsql-reference",
 }
 
 
@@ -719,6 +720,223 @@ def flush_architecture_entry(entry: dict, paragraphs: list, code_blocks: list, o
 
 
 # ──────────────────────────────────────────────────
+# T-SQL Reference Parser
+# ──────────────────────────────────────────────────
+
+TSQL_CATEGORY_KEYWORDS = {
+    "statements": [
+        "create", "alter", "drop", "grant", "deny", "revoke", "backup",
+        "restore", "truncate", "update statistics", "checkpoint", "dbcc",
+        "shutdown", "kill", "print", "raiserror", "readtext", "writetext",
+        "updatetext", "bulk insert", "return", "waitfor", "goto",
+        "execute", "exec", "open", "close", "deallocate", "prepare",
+        "reconfigure", "set", "use",
+    ],
+    "queries": [
+        "select", "insert", "update", "delete", "merge", "from", "where",
+        "join", "on", "group by", "having", "order by", "union",
+        "intersect", "except", "for xml", "for json", "pivot", "unpivot",
+        "offset fetch", "output clause", "into", "values", "with",
+        "option", "table value constructor", "subquery",
+    ],
+    "language-elements": [
+        "if", "else", "while", "begin", "end", "break", "continue",
+        "case", "declare", "goto", "label", "return", "throw",
+        "try", "catch", "waitfor", "raiseerror", "print", "nullif",
+        "coalesce", "iif", "choose",
+    ],
+    "data-types": [
+        "int", "bigint", "smallint", "tinyint", "decimal", "numeric",
+        "float", "real", "money", "smallmoney", "bit", "char", "varchar",
+        "nchar", "nvarchar", "text", "ntext", "binary", "varbinary",
+        "image", "cursor", "hierarchyid", "geography", "geometry",
+        "date", "time", "datetime", "datetime2", "datetimeoffset",
+        "smalldatetime", "sql_variant", "table", "rowversion",
+        "timestamp", "uniqueidentifier", "xml", "spatial",
+        "data type", "alias",
+    ],
+    "operators": [
+        "arithmetic", "+", "-", "*", "/", "%", "modulo", "concatenation",
+        "comparison", "=", "!=", "<>", ">", "<", ">=", "<=", "!<", "!>",
+        "logical", "and", "or", "not", "bitwise", "&", "|", "^", "~",
+        "operator", "unary",
+    ],
+    "hints": [
+        "nolock", "readuncommitted", "readcommitted", "repeatableread",
+        "serializable", "snapshot", "readonly", "index", "force seek",
+        "forcescan", "table hint", "query hint", "optimizer hints",
+        "join hint", "hash", "loop", "merge", "option",
+    ],
+    "predicates": [
+        "exists", "any", "all", "some", "in", "between", "like",
+        "is null", "is not null", "freetext", "contains", "full-text",
+        "comparison",
+    ],
+    "transactions": [
+        "begin transaction", "begin tran", "commit", "rollback",
+        "save transaction", "save tran", "transaction", "set transaction",
+        "set implicit_transactions",
+    ],
+    "variables": [
+        "declare @", "set @", "variable", "local variable",
+        "cursor variable", "table variable",
+    ],
+}
+
+
+def infer_tsql_category(name: str) -> str:
+    """Infer T-SQL Reference category from statement/object name."""
+    nl = name.lower().strip()
+    for cat, keywords in TSQL_CATEGORY_KEYWORDS.items():
+        for kw in keywords:
+            if nl.startswith(kw) or f" {kw} " in f" {nl} " or nl == kw:
+                return cat
+    # Fallback: check for common patterns
+    if nl.startswith("@") or "variable" in nl:
+        return "variables"
+    if any(t in nl for t in ["data type", "types", "datetime", "numeric", "string"]):
+        return "data-types"
+    if "hint" in nl or "table_hint" in nl:
+        return "hints"
+    return "statements"
+
+
+def process_tsql_reference_batch(batch_file: str, content_output_dir: str) -> list[dict]:
+    """Process T-SQL Reference section.
+
+    Each H1 heading (e.g., 'SELECT (Transact-SQL)', 'CREATE TABLE') is
+    treated as a separate reference entry. Sub-headings (Syntax, Arguments,
+    Returns, Remarks, Permissions, Examples) structure the body content.
+    """
+    with open(batch_file, "r", encoding="utf-8") as f:
+        pages = json.load(f)
+
+    records = []
+    current_entry = {}
+    current_paragraphs = []
+    current_code = []
+    syntax_captured = False
+    in_syntax_section = False
+    section_headings = {"syntax", "arguments", "returns", "remarks",
+                        "permissions", "examples", "description", "best practice"}
+
+    for page_data in pages:
+        headings = page_data.get("headings", [])
+        paragraphs = page_data.get("paragraphs", [])
+        code_blocks = page_data.get("code_blocks", [])
+
+        for h in headings:
+            text = clean_text(h["text"])
+            if h["level"] == 1 and not is_heading_noise(text) and len(text) > 3:
+                # Flush previous entry
+                if current_entry.get("name"):
+                    rec = _flush_tsql_entry(
+                        current_entry, current_paragraphs, current_code,
+                        syntax_captured, content_output_dir
+                    )
+                    if rec:
+                        records.append(rec)
+                    current_paragraphs = []
+                    current_code = []
+                    syntax_captured = False
+                    in_syntax_section = False
+
+                # Extract T-SQL statement name (strip " (Transact-SQL)" suffix)
+                entry_name = text.replace(" (Transact-SQL)", "").strip()
+                if not entry_name:
+                    continue
+
+                current_entry = {
+                    "name": entry_name,
+                    "title": entry_name,
+                    "category": infer_tsql_category(entry_name),
+                    "tags": ["tsql", infer_tsql_category(entry_name)],
+                    "description": "",
+                    "syntax": "",
+                }
+
+            elif h["level"] == 2 and current_entry.get("name"):
+                tl = text.lower().strip()
+                # Track syntax section for first code block capture
+                in_syntax_section = (tl == "syntax")
+                if not is_heading_noise(text) and tl not in section_headings:
+                    current_paragraphs.append({"text": f"## {text}", "font": "", "size": 0})
+
+            elif h["level"] >= 3 and current_entry.get("name"):
+                tl = text.lower().strip()
+                if tl not in section_headings:
+                    current_paragraphs.append({"text": f"{'#' * h['level']} {text}", "font": "", "size": 0})
+
+        # Capture first code block after Syntax heading as the syntax field
+        for cb in code_blocks:
+            if in_syntax_section and not syntax_captured and cb.strip():
+                current_entry["syntax"] = cb.strip()[:500]
+                syntax_captured = True
+                break
+
+        # Set description from first meaningful paragraph
+        if not current_entry.get("description"):
+            desc = extract_first_paragraph(paragraphs, min_len=20, max_len=200)
+            if desc:
+                current_entry["description"] = desc
+
+        current_paragraphs.extend(paragraphs)
+        current_code.extend(code_blocks)
+
+    # Flush last entry
+    if current_entry.get("name"):
+        rec = _flush_tsql_entry(
+            current_entry, current_paragraphs, current_code,
+            syntax_captured, content_output_dir
+        )
+        if rec:
+            records.append(rec)
+
+    return records
+
+
+def _flush_tsql_entry(
+    entry: dict, paragraphs: list, code_blocks: list,
+    syntax_captured: bool, output_dir: str
+) -> Optional[dict]:
+    """Write a T-SQL reference content file."""
+    name = entry.get("name", "").strip()
+    if not name:
+        return None
+
+    slug = generate_slug(name)
+    desc = entry.get("description", "") or extract_first_paragraph(paragraphs, min_len=20, max_len=200)
+
+    frontmatter_fields = {
+        "name": name,
+        "title": entry.get("title", name),
+        "category": entry.get("category", "statements"),
+        "description": desc[:200],
+        "tags": entry.get("tags", []),
+        "pubDate": datetime.now(),
+    }
+
+    if entry.get("syntax"):
+        frontmatter_fields["syntax"] = entry["syntax"]
+
+    fm = build_frontmatter(frontmatter_fields)
+    body = build_markdown_body(paragraphs, code_blocks)
+
+    filepath = write_content_file(output_dir, "tsql-reference", slug, fm, body)
+
+    return {
+        "slug": slug,
+        "name": name,
+        "title": entry.get("title", name),
+        "category": entry.get("category", "statements"),
+        "tags": entry.get("tags", []),
+        "description": desc[:150],
+        "filepath": filepath,
+        "collection": "tsql-reference",
+    }
+
+
+# ──────────────────────────────────────────────────
 # Generic entry flusher (for DMV, catalog-views, functions)
 # ──────────────────────────────────────────────────
 
@@ -728,6 +946,7 @@ VALID_NAME_PATTERNS = {
     "catalog-views": re.compile(r"^sys\.[a-z_0-9]{3,}$", re.IGNORECASE),
     "functions": re.compile(r"^sys\.fn_[a-z_0-9]{3,}$", re.IGNORECASE),
     "stored-procedures": re.compile(r"^sys\.sp_[a-z_0-9]{3,}$", re.IGNORECASE),
+    "tsql-reference": None,  # Accept any non-empty name
 }
 
 
@@ -828,6 +1047,7 @@ BATCH_PROCESSORS = {
     "system-catalog-views": process_catalog_views_batch,
     "system-functions": process_functions_batch,
     "architecture": process_architecture_batch,
+    "tsql-reference": process_tsql_reference_batch,
 }
 
 

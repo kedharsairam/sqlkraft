@@ -1,64 +1,75 @@
 ---
-name: 'sys.sp_flush_CT_internal_table_on_demand'
+name: 'sys.sp_flush_ct_internal_table_on_demand'
 title: 'sys.sp_flush_CT_internal_table_on_demand'
 category: 'general'
-description: 'Azure SQL Managed Instance'
+description: 'SQL database in Microsoft Fabric This stored procedure allows you to manually clean the side table ( for a table in a database for which change tracking is enabled. If the isn''t passed, then this process cleans all side tables for all tables in the database where change Transact-SQL syntax conventions The change tracking-enabled table to be manually cleaned up. The backlogs are left for the automa'
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: 'change_tracking_objectid'
 ---
 
-must be run in the context of the
+## Description
 
-system
+SQL database in Microsoft Fabric This stored procedure allows you to manually clean the side table ( for a table in a database for which change tracking is enabled. If the isn't passed, then this process cleans all side tables for all tables in the database where change Transact-SQL syntax conventions The change tracking-enabled table to be manually cleaned up. The backlogs are left for the automatic cleanup by change tracking. Can be null to clean up all side tables.
 
-database. Collection items can't be deleted from system collection sets.
-
-The collection set that contains the collection item is stopped and restarted during this
-
-operation.
-
-Requires membership in the
-
-(with EXECUTE permission) fixed database role to
-
-execute this procedure.
-
-The following example deletes a collection item named
-
-.
-
-SQL
-
-Data collection
-
-sp_syscollector_create_collection_item (Transact-SQL)
-
-Data collector stored procedures (Transact-SQL)
-
-syscollector_collection_items (Transact-SQL)
-
-Related content
+## Syntax
 
 ```sql
-sp_syscollector_delete_collection_item
+change_tracking_objectid
 ```
 
-```sql
-msdb
-```
+## Permissions
+
+SQL Here's the result set. Output This procedure must be run in a database that has change tracking enabled. When you run the stored procedure, one of the following scenarios happens: If the table doesn't exist or if change tracking isn't enabled, appropriate error messages are thrown. This stored procedure calls another internal stored procedure that cleans up contents from the change tracking side table that's based on the invalid cleanup version by using the dynamic management view. When it's running, it shows the information of total rows deleted (for every 5000 rows). This stored procedure is available in the following products: SQL Server 2016 (13.x) Service Pack 1 and later versions Azure SQL Database and Azure SQL Managed Instance Only a member of the server role or database role can execute this procedure.
+
+## Examples
+
+### Example 1
 
 ```sql
-MyCollectionItem1
+change_tracking_objectid
 ```
 
+### Example 2
+
 ```sql
-USE
-msdb;
-GO
-EXECUTE
-sp_syscollector_delete_collection_item @
-name
-=
-'MyCollectionItem1'
-;
+0
+```
+
+### Example 3
+
+```sql
+1
+```
+
+### Example 4
+
+```sql
+sys.sp_flush_
+CT
+_internal_table_on_demand
+[ @
+T
+able
+T
+o
+C
+lean = ]
+'TableToClean'
+[ , [ @
+D
+eleted
+R
+ow
+C
+ount = ]
+D
+eleted
+R
+ow
+C
+ount
+OUTPUT
+]
+[ ; ]
 ```

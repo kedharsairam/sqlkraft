@@ -38,6 +38,17 @@ const sorted = allArch.sort((a, b) => a.data.title.localeCompare(b.data.title));
         "transaction-log",
         "latch-contention",
         "spinlock-contention",
+        "collation",
+        "tables",
+        "change-data-capture",
+        "clr-integration",
+        "xml-data",
+        "json-data",
+        "spatial-data",
+        "sql-graph",
+        "filestream",
+        "service-broker",
+        "hierarchical-data",
       ].map((topic) => {
         const entries = sorted.filter((e) => e.data.topic === topic);
         if (entries.length === 0) return null;

@@ -2,99 +2,22 @@
 name: 'sys.partition_schemes'
 title: 'sys.partition_schemes'
 category: 'partitions'
-description: 'Azure SQL Managed Instance'
-tags: ["catalog-view", "partitions"]
+description: 'Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Contains a row for each Data Space that is a partition scheme, with sys.data_spaces (Transact-SQL) ID of partition function used in the scheme. For a list of columns that this view inherits, see sys.data_spaces (Transact-SQL) role. For more information, see Querying the SQL Server System Catalog FAQ'
+tags: ["partitions", "catalog-view"]
 pubDate: 2026-05-29
+syntax: 'sys.partition_schemes'
 ---
 
-Article
-
-•
-
-02/28/2023
-
-Applies to:
-
-SQL Server
-
-Azure SQL Managed Instance
-
-Contains one row for each message sent by Database Mail. Use
-
-when you
-
-want to see which messages were successfully sent.
-
-To see all messages processed by Database Mail, use
-
-sysmail_allitems (Transact-SQL)
-
-. To see
-
-only messages with the failed status, use
-
-sysmail_faileditems (Transact-SQL)
-
-. To see only unsent
-
-or retrying messages, use
-
-sysmail_unsentitems (Transact-SQL)
-
-. To see e-mail attachments, use
-
-sysmail_mailattachments (Transact-SQL)
-
-.
-
-
 ## Description
-Identifier of the mail item in the mail queue.
 
-The identifier of the profile used to send the message.
+Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Contains a row for each Data Space that is a partition scheme, with sys.data_spaces (Transact-SQL) ID of partition function used in the scheme. For a list of columns that this view inherits, see sys.data_spaces (Transact-SQL) role. For more information, see Querying the SQL Server System Catalog FAQ
 
-The e-mail addresses of the message recipients.
+## Syntax
 
-The e-mail addresses of those who receive copies of the
+```sql
+sys.partition_schemes
+```
 
-message.
+## Permissions
 
-The e-mail addresses of those who receive copies of the
-
-message but whose names do not appear in the message
-
-header.
-
-The subject line of the message.
-
-The body of the message.
-
-The body format of the message. The possible values are
-
-and
-
-.
-
-The
-
-parameter of the message.
-
-The
-
-parameter of the message.
-
-A semicolon-delimited list of file names attached to the e-
-
-mail message.
-
-The type of mail attachment.
-
-The query executed by the mail program.
-
-The database context within which the mail program
-
-executed the query.
-
-ﾉ
-
-Expand table
+Article • 05/23/2023 Applies to: SQL Server Azure SQL Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric Contains a row for each Data Space that is a partition scheme, with = PS. Description Inherits columns from sys.data_spaces (Transact-SQL) . ID of partition function used in the scheme. For a list of columns that this view inherits, see sys.data_spaces (Transact-SQL) Requires membership in the role. For more information, see Metadata Visibility Configuration . Catalog Views (Transact-SQL) Querying the SQL Server System Catalog FAQ ﾉ Expand table See Also Article • 11/18/2022 Applies to: SQL Server Contains a row for each data space destination of a partition scheme. Description ID of the partition-scheme that is partitioning to the data space. For partitioned tables, this can be joined to in . ID (1-based ordinal) of the destination-mapping, unique within the partition scheme. ID of the data space to which data for this scheme's destination is being mapped. Requires membership in the role. For more information, see Metadata Visibility Configuration . Catalog Views (Transact-SQL) Create Partitioned Tables and Indexes sys.partition_schemes ﾉ Expand table See Also Modify a partition scheme sys.partition_functions (Transact-SQL) sys.partition_schemes (Transact-SQL) Last updated on 11/18/2025

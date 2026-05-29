@@ -2,56 +2,78 @@
 name: 'sys.sp_cdc_enable_db'
 title: 'sys.sp_cdc_enable_db'
 category: 'general'
-description: 'Enables change data capture for the current database. This procedure must be executed for a'
+description: 'Enables change data capture for the current database. This procedure must be executed for a database before any tables can be enabled for change data capture (CDC) in that database. Change data capture records insert, update, and delete activity applied to enabled tables, making the details of the changes available in an easily consumed relational format. Column information that mirrors the column'
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: |
+  sys.sp_cdc_enable_db
+  [ ; ]
 ---
 
-creates the change data capture objects that have database wide scope,
+## Description
 
-including metadata tables and DDL triggers. It also creates the CDC schema and CDC database
+Enables change data capture for the current database. This procedure must be executed for a database before any tables can be enabled for change data capture (CDC) in that database. Change data capture records insert, update, and delete activity applied to enabled tables, making the details of the changes available in an easily consumed relational format. Column information that mirrors the column structure of a tracked source table is captured for the modified rows, along with the metadata needed to apply the changes to a target environment. Transact-SQL syntax conventions Change data capture can't be enabled on system databases or distribution databases. Change data capture isn't available in every edition of SQL Server. For a list of features that are supported by the editions of SQL Server, see
 
-user and sets the
+## Syntax
 
-column for the database entry in the
+```sql
+sys.sp_cdc_enable_db
+[ ; ]
+```
 
-sys.databases
+## Remarks
 
-catalog
+Applies to:
 
-view to
+Enables change data capture for the current database. This procedure must be executed for a
 
-.
+database before any tables can be enabled for change data capture (CDC) in that database.
 
-Requires membership in the
+Change data capture records insert, update, and delete activity applied to enabled tables,
 
-fixed server role for Change Data Capture on Azure SQL
+making the details of the changes available in an easily consumed relational format. Column
 
-Managed Instance or SQL Server. Requires membership in the
+information that mirrors the column structure of a tracked source table is captured for the
 
-for Change Data
+modified rows, along with the metadata needed to apply the changes to a target environment.
 
-Capture on Azure SQL Database.
+Transact-SQL syntax conventions
 
-The following example enables change data capture.
+(success) or
 
-SQL
+Change data capture can't be enabled on
 
-sys.sp_cdc_disable_db (Transact-SQL)
+system databases
 
-Related content
+or distribution databases.
+
+Change data capture isn't available in every edition of SQL Server. For a list of features
+
+that are supported by the editions of SQL Server, see
+
+SQL Server 2022
+
+## Examples
+
+### Example 1
 
 ```sql
 sys.sp_cdc_enable_db
 ```
 
+### Example 2
+
 ```sql
 is_cdc_enabled
 ```
 
+### Example 3
+
 ```sql
 1
 ```
+
+### Example 4
 
 ```sql
 USE

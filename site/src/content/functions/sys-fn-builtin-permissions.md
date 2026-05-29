@@ -2,142 +2,87 @@
 name: 'sys.fn_builtin_permissions'
 title: 'sys.fn_builtin_permissions'
 category: 'system'
-description: 'Azure SQL Managed Instance'
-tags: ["function"]
+description: 'SQL database in Microsoft Fabric Returns a description of the built in permissions hierarchy of the server. can only be called on SQL Server and Azure SQL Database, and it returns all permissions regardless of whether they are supported on the current platform. Most permissions apply to all platforms, but some do not. For example server level permissions cannot be granted on SQL Database. For info'
+tags: ["system", "function"]
 pubDate: 2026-05-29
+syntax: 'sys.fn_builtin_permissions'
 ---
 
-is a table-valued function that emits a copy of the predefined
+## Description
 
-permission hierarchy. This hierarchy includes covering permissions. The
+SQL database in Microsoft Fabric Returns a description of the built in permissions hierarchy of the server. can only be called on SQL Server and Azure SQL Database, and it returns all permissions regardless of whether they are supported on the current platform. Most permissions apply to all platforms, but some do not. For example server level permissions cannot be granted on SQL Database. For information about which platforms support each
 
-result set
-
-describes a directed, acyclic graph of the permissions hierarchy, of which the root is (class =
-
-, permission =
-
-).
-
-does not accept correlated parameters.
-
-will return an empty set when it is called with a class name that is
-
-not valid.
-
-The following image shows the permissions and their relationships to each other. Some of the
-
-higher level permissions (such as
-
-) are listed many times. In this article, the
-
-poster is far too small to read. You can download the full-sized
-
-in PDF format.
-
-Requires membership in the public role.
-
-## A. List all built in permissions
-
-## B. List permissions that can be set on a symmetric key
-
-## C. List classes on which there is a SELECT permission
-
-Use
-
-or an empty string to return all permissions.
-
-SQL
-
-Specify a class to return all possible permissions for that class.
-
-SQL
-
-SQL
-
-
-## Permissions Hierarchy (Database Engine)
-GRANT (Transact-SQL)
-
-CREATE SCHEMA (Transact-SQL)
-
-DROP SCHEMA (Transact-SQL)
-
-
-## Permissions (Database Engine)
-sys.fn_my_permissions (Transact-SQL)
-
-HAS_PERMS_BY_NAME (Transact-SQL)
-
-Last updated on 11/18/2025
-
-See also
+## Syntax
 
 ```sql
 sys.fn_builtin_permissions
 ```
 
+## Permissions
+
+When called with the name of one securable class, will return all permissions that apply to the class. is a string literal of type that requires quotation marks. Description class_desc Collation of the server Description of the securable class. permission_name Collation of the server Permission name. type Collation of the server Compact permission type code. See the table that follows. covering_permission_name Collation of the server If not NULL, this is the name of the permission on this class that implies the other permissions on this class. parent_class_desc Collation of the server If not NULL, this is the name of the parent class that contains the current class. parent_covering_permission_name Collation of the server If not NULL, this is the name of the permission on the parent class that implies all other permissions on that class. AADS ALTER ANY DATABASE EVENT SESSION : SQL Server 2014 (12.x) and later versions . DATABASE AAES ALTER ANY EVENT SESSION SERVER ﾉ Expand table ﾉ Expand table Use or an empty string to return all permissions. SQL Specify a class to return all possible permissions for that class. SQL SQL Permissions Hierarchy (Database Engine) GRANT (Transact-SQL) CREATE SCHEMA (Transact-SQL) DROP SCHEMA (Transact-SQL) Permissions (Database Engine) sys.fn_my_permissions (Transact-SQL) HAS_PERMS_BY_NAME (Transact-SQL) Last updated on 11/18/2025 See also
+
+## Examples
+
+### Example 1
+
+```sql
+sys.fn_builtin_permissions
+```
+
+### Example 2
+
 ```sql
 DEFAULT
 ```
+
+### Example 3
 
 ```sql
 SERVER
 ```
 
-```sql
-CONTROL SERVER
-```
-
-```sql
-sys.fn_builtin_permissions
-```
-
-```sql
-sys.fn_builtin_permissions
-```
+### Example 4
 
 ```sql
 CONTROL SERVER
 ```
 
-```sql
-DEFAULT
-```
+### Example 5
 
 ```sql
-SELECT
-*
-FROM
-sys.fn_builtin_permissions(
-DEFAULT
-);
-SELECT
-*
-FROM
-sys.fn_builtin_permissions(
-''
-);
+sys.fn_builtin_permissions
 ```
 
-```sql
-SELECT
-*
-FROM
-sys.fn_builtin_permissions(N
-'SYMMETRIC KEY'
-);
-```
+### Example 6
 
 ```sql
-SELECT
-*
-FROM
-sys.fn_builtin_permissions(
-DEFAULT
-)
-WHERE
-permission_name =
-'SELECT'
-;
+sys.fn_builtin_permissions
+```
+
+### Example 7
+
+```sql
+CONTROL SERVER
+```
+
+### Example 8
+
+```sql
+sys.fn_builtin_permissions
+```
+
+### Example 9
+
+```sql
+sys.fn_translate_permissions
+```
+
+### Example 10
+
+```sql
+SELECT * FROM sys.fn_builtin_permissions('CERTIFICATE');
+SELECT '0001' AS Input, * FROM sys.fn_translate_permissions('CERTIFICATE', 0001);
+SELECT '0010' AS Input, * FROM sys.fn_translate_permissions('CERTIFICATE', 0010);
+SELECT '0011' AS Input, * FROM sys.fn_translate_permissions('CERTIFICATE', 0011);
 ```

@@ -1,57 +1,28 @@
 ---
 name: 'sys.certificates'
 title: 'sys.certificates'
-category: 'objects'
-description: 'String representation of the login SID for this'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'Analytics Platform System (PDW) Returns a row for each certificate in the database. Name of the certificate. Is unique within the database. ID of the certificate. Is unique within the database. ID of the database principal that owns this certificate. How the private key is encrypted. NA = There is no private key for the certificate MK = Private key is encrypted by the master key PW = Private key i'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  SELECT
+  Cert_ID(
+  'ABerglundCert3'
+  );
+  GO
 ---
 
 ## Description
-String representation of the login SID for this
 
-certificate
+Analytics Platform System (PDW) Returns a row for each certificate in the database. Name of the certificate. Is unique within the database. ID of the certificate. Is unique within the database. ID of the database principal that owns this certificate. How the private key is encrypted. NA = There is no private key for the certificate MK = Private key is encrypted by the master key PW = Private key is encrypted by a user-defined
 
-Subject of this certificate.
+## Syntax
 
-Date and time when certificate expires.
-
-Date and time when certificate becomes valid.
-
-SHA-1 hash of the certificate. The SHA-1 hash is
-
-globally unique.
-
-System use only.
-
-The date and time the certificate's private key was last
-
-exported.
-
-The certificate's key length.
-
-Applies to:
-
-SQL Server 2016 (13.x) and later versions.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-Security Catalog Views (Transact-SQL)
-
-Catalog Views (Transact-SQL)
-
-Encryption Hierarchy
-
-CREATE CERTIFICATE (Transact-SQL)
-
-Last updated on 11/18/2025
-
-See also
+```sql
+SELECT
+Cert_ID(
+'ABerglundCert3'
+);
+GO
+```

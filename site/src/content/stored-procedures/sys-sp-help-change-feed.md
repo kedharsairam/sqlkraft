@@ -1,31 +1,26 @@
 ---
 name: 'sys.sp_help_change_feed'
-title: 'sys.sp_help_change_feed'
+title: 'sp_help_change_feed'
 category: 'general'
-description: 'SQL Server 2022 (16.x) and later versions'
+description: 'SQL Server 2022 (16.x) and later versions Mirrored databases in Microsoft SQL database in Microsoft Fabric Monitors the current configuration of the change feed. This system stored procedure is used for: SQL database in Microsoft Fabric Microsoft Fabric mirrored databases Change event streaming (preview) introduced in SQL Server 2025 (17.x) and Azure SQL Transact-SQL syntax conventions The unique '
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: 'destination_credential'
 ---
 
-To check the status of tables and metadata:
+## Description
 
-SQL
+SQL Server 2022 (16.x) and later versions Mirrored databases in Microsoft SQL database in Microsoft Fabric Monitors the current configuration of the change feed. This system stored procedure is used for: SQL database in Microsoft Fabric Microsoft Fabric mirrored databases Change event streaming (preview) introduced in SQL Server 2025 (17.x) and Azure SQL Transact-SQL syntax conventions The unique identifier of the table group.
 
-sys.sp_help_change_feed_table (Transact-SQL)
+## Syntax
 
-sys.sp_help_change_feed_table_groups (Transact-SQL)
+```sql
+destination_credential
+```
 
-sys.sp_help_change_feed_settings (Transact-SQL)
+## Examples
 
-sys.sp_change_feed_configure_parameters (Transact-SQL)
-
-sys.dm_change_feed_log_scan_sessions (Transact-SQL)
-
-sys.dm_change_feed_errors (Transact-SQL)
-
-Last updated on 11/18/2025
-
-Related content
+### Example 1
 
 ```sql
 EXECUTE

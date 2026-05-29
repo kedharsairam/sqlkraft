@@ -1,47 +1,12 @@
 ---
 name: 'sys.database_recovery_status'
-title: 'sys.database_recovery_status (Transact-'
-category: 'objects'
-description: 'NULL= Database is offline, or the database will not start.'
-tags: ["catalog-view", "objects"]
+title: 'sys.database_recovery_status'
+category: 'compatibility'
+description: 'Contains one row per database. If the database is not opened, the SQL Server Database Engine To see the row for a database other than , one of the following must apply: Have ALTER ANY DATABASE or VIEW ANY DATABASE server-level permissions. Have CREATE DATABASE permission in the ID of the database, unique within an instance of SQL Server. Used to relate all the database files of a database together'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---
 
 ## Description
-NULL= Database is offline, or the database will not start.
 
-Identifier of the starting recovery fork.
-
-NULL= Database is offline, or the database will not start.
-
-If
-
-is not equal (!=) to
-
-,
-
-is the log sequence
-
-number of the current fork point. Otherwise, the value is
-
-NULL.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-Catalog Views (Transact-SQL)
-
-Databases and Files Catalog Views (Transact-SQL)
-
-RESTORE HEADERONLY (Transact-SQL)
-
-Querying the SQL Server System Catalog FAQ
-
-See Also
+Contains one row per database. If the database is not opened, the SQL Server Database Engine To see the row for a database other than , one of the following must apply: Have ALTER ANY DATABASE or VIEW ANY DATABASE server-level permissions. Have CREATE DATABASE permission in the ID of the database, unique within an instance of SQL Server. Used to relate all the database files of a database together.

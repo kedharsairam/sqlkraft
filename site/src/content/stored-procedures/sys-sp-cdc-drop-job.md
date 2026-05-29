@@ -2,28 +2,44 @@
 name: 'sys.sp_cdc_drop_job'
 title: 'sys.sp_cdc_drop_job'
 category: 'general'
-description: 'Removes a change data capture cleanup or capture job for the current database from'
+description: 'Removes a change data capture cleanup or capture job for the current database from Transact-SQL syntax conventions'
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: |
+  sys.sp_cdc_drop_job [ [ @job_type = ]
+  N
+  'job_type'
+  ]
+  [ ; ]
 ---
 
-The following example removes the cleanup job for the
+## Description
 
-database.
+Removes a change data capture cleanup or capture job for the current database from Transact-SQL syntax conventions
 
-SQL
+## Syntax
 
-dbo.cdc_jobs (Transact-SQL)
+```sql
+sys.sp_cdc_drop_job [ [ @job_type = ]
+N
+'job_type'
+]
+[ ; ]
+```
 
-sys.sp_cdc_disable_db (Transact-SQL)
+## Permissions
 
-sys.sp_cdc_add_job (Transact-SQL)
+06/23/2025 Applies to: SQL Server Removes a change data capture cleanup or capture job for the current database from . Transact-SQL syntax conventions syntaxsql Type of job to remove. job_type is and can't be . Valid inputs are and . (success) or (failure). None. is called internally by sys.sp_cdc_disable_db . Requires membership in the fixed database role.
 
-Related content
+## Examples
+
+### Example 1
 
 ```sql
 AdventureWorks2022
 ```
+
+### Example 2
 
 ```sql
 USE

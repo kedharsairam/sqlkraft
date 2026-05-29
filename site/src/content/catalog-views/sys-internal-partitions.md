@@ -2,74 +2,18 @@
 name: 'sys.internal_partitions'
 title: 'sys.internal_partitions'
 category: 'partitions'
-description: '## A. View all of the internal rowsets for a table'
-tags: ["catalog-view", "partitions"]
+description: 'SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns one row for each rowset that tracks internal data for columnstore indexes on disk- based tables. These rowsets are internal to columnstore indexes and track deleted rows, rowgroup mappings, and delta store rowgroups. They track data for each table partition. Every table has at least one partition. The Database Engin'
+tags: ["partitions", "catalog-view"]
 pubDate: 2026-05-29
+syntax: 'COLUMN_STORE_DELETE_BITMAP'
 ---
 
-## A. View all of the internal rowsets for a table
+## Description
 
-Requires membership in the
+SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns one row for each rowset that tracks internal data for columnstore indexes on disk- based tables. These rowsets are internal to columnstore indexes and track deleted rows, rowgroup mappings, and delta store rowgroups. They track data for each table partition. Every table has at least one partition. The Database Engine re-creates the rowsets each time it
 
-role. For more information, see
-
-Metadata Visibility
-
-Configuration
-
-.
-
-The Database Engine re-creates new columnstore internal indexes each time it creates or
-
-rebuilds a columnstore index.
-
-This example returns all of the internal columnstore rowsets for a table. You can also use the
-
-column to join with other system views and functions and find more information
-
-about the specific rowset.
-
-SQL
-
-Object catalog views (Transact-SQL)
-
-System catalog views (Transact-SQL)
-
-Querying the SQL Server system catalog FAQ
-
-Last updated on 11/18/2025
-
-Related content
+## Syntax
 
 ```sql
-public
-```
-
-```sql
-hobt_id
-```
-
-```sql
-SELECT
-i.object_id,
-i.index_id,
-i.name,
-p.hobt_id,
-p.internal_object_type_id,
-p.internal_object_type_desc
-FROM
-sys.internal_partitions
-AS
-p
-INNER
-JOIN
-sys.indexes
-AS
-i
-ON
-i.object_id = p.object_id
-WHERE
-p.object_id = OBJECT_ID(
-'<table name>'
-);
+COLUMN_STORE_DELETE_BITMAP
 ```

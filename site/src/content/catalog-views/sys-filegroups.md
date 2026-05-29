@@ -2,89 +2,123 @@
 name: 'sys.filegroups'
 title: 'sys.filegroups'
 category: 'databases-files'
-description: 'Azure SQL Managed Instance'
-tags: ["catalog-view", "databases-files"]
+description: 'Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each data space that is a filegroup. For a list of columns that this view inherits, see Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. In SQL Server, the value SQL Server 2016 (13.x) and later versions. 1 = When a file in the filegroup meets the autogrow threshold'
+tags: ["databases-files", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  FILEGROUP
+  _
+  ID
+  (
+  'filegroup_name'
+  )
 ---
 
-Applies to:
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
-
-Analytics Platform System (PDW)
-
-SQL analytics endpoint in
-
-Microsoft Fabric
-
-Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
-
-Contains a row for each data space that is a filegroup.
-
-
 ## Description
---
 
-For a list of columns that this view inherits, see
+Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each data space that is a filegroup. For a list of columns that this view inherits, see Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. In SQL Server, the value SQL Server 2016 (13.x) and later versions. 1 = When a file in the filegroup meets the autogrow threshold,
 
-sys.data_spaces
+## Syntax
 
-(Transact-SQL)
+```sql
+FILEGROUP
+_
+ID
+(
+'filegroup_name'
+)
+```
 
-.
+## Permissions
 
-GUID for the filegroup.
+Applies to: SQL Server Azure SQL Database Azure SQL Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Contains a row for each data space that is a filegroup. Description -- For a list of columns that this view inherits, see sys.data_spaces (Transact-SQL) . GUID for the filegroup. NULL = PRIMARY filegroup Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. In SQL Server, the value is NULL. 1 = Filegroup is read-only. 0 = Filegroup is read/write. Applies to: SQL Server 2016 (13.x) and later versions. 1 = When a file in the filegroup meets the autogrow threshold, all files in the filegroup grow. 0 = When a file in the filegroup meets the autogrow threshold, only that file grows. This is the default. Requires membership in the role. For more information, see Metadata Visibility Configuration . Catalog Views (Transact-SQL) Data Spaces (Transact-SQL) ﾉ Expand table See Also sys.objects sys.key_constraints sys.filegroups sys.partition_schemes Querying the SQL Server System Catalog FAQ In-Memory OLTP overview and usage scenarios Last updated on 11/24/2025 sys.database_files (Transact-SQL) sys.filegroups (Transact-SQL) sys.master_files (Transact-SQL) System stored procedures (Transact-SQL) sys.filegroups (Transact-SQL) System stored procedures (Transact-SQL) Database files and filegroups
 
-NULL = PRIMARY filegroup
+## Examples
 
-Identified for informational purposes only. Not supported.
+### Example 1
 
-Future compatibility is not guaranteed. In SQL Server, the value
+```sql
+FILEGROUP_ID
+```
 
-is NULL.
+### Example 2
 
-1 = Filegroup is read-only.
+```sql
+PRIMARY
+```
 
-0 = Filegroup is read/write.
+### Example 3
 
-Applies to:
+```sql
+FILEGROUP
+_
+ID
+(
+'filegroup_name'
+)
+```
 
-SQL Server 2016 (13.x) and later versions.
+### Example 4
 
-1 = When a file in the filegroup meets the autogrow threshold,
+```sql
+SELECT
+FILEGROUP_ID(
+'PRIMARY'
+)
+AS
+[Filegroup
+ID
+];
+GO
+```
 
-all files in the filegroup grow.
+### Example 5
 
-0 = When a file in the filegroup meets the autogrow threshold,
+```sql
+Filegroup ID
+------------
+1
+(1 row(s) affected)
+```
 
-only that file grows. This is the default.
+### Example 6
 
-Requires membership in the
+```sql
+FILEGROUP_NAME
+```
 
-role. For more information, see
+### Example 7
 
-Metadata Visibility
+```sql
+1
+```
 
-Configuration
+### Example 8
 
-.
+```sql
+FILEGROUP
+_
+NAME
+( filegroup_id )
+```
 
-Catalog Views (Transact-SQL)
+### Example 9
 
-Data Spaces (Transact-SQL)
+```sql
+SELECT
+FILEGROUP_NAME(1)
+AS
+[Filegroup
+Name
+];
+GO
+```
 
-ﾉ
+### Example 10
 
-Expand table
+```sql
+IsDefault
+```
 
-See Also
 
-Last updated on 11/18/2025
+*(... and 4 more examples)*

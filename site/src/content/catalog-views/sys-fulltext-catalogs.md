@@ -2,21 +2,27 @@
 name: 'sys.fulltext_catalogs'
 title: 'sys.fulltext_catalogs'
 category: 'full-text'
-description: 'The visibility of the metadata in catalog views is limited to securables that a user either owns,'
-tags: ["catalog-view", "full-text"]
+description: 'Contains a row for each full-text catalog. ID of the full-text catalog. Is unique across the full-text catalogs Name of the catalog. Is unique within the database. Name of the catalog directory in the file system. The default full-text catalog. Accent-sensitivity setting of the catalog. False = Is not accent-sensitive. Filegroup where this catalog was created. File ID of the full-text file associa'
+tags: ["full-text", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  sp_help_fulltext_catalogs [ [ @fulltext_catalog_name = ]
+  N
+  'fulltext_catalog_name'
+  ]
+  [ ; ]
 ---
 
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
+## Description
 
-or on which the user was granted some permission.
+Contains a row for each full-text catalog. ID of the full-text catalog. Is unique across the full-text catalogs Name of the catalog. Is unique within the database. Name of the catalog directory in the file system. The default full-text catalog. Accent-sensitivity setting of the catalog. False = Is not accent-sensitive. Filegroup where this catalog was created. File ID of the full-text file associated with the catalog.
 
-Catalog Views (Transact-SQL)
+## Syntax
 
-CREATE FULLTEXT CATALOG (Transact-SQL)
-
-ALTER FULLTEXT CATALOG (Transact-SQL)
-
-DROP FULLTEXT CATALOG (Transact-SQL)
-
-See Also
+```sql
+sp_help_fulltext_catalogs [ [ @fulltext_catalog_name = ]
+N
+'fulltext_catalog_name'
+]
+[ ; ]
+```

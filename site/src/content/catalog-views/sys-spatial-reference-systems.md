@@ -1,56 +1,16 @@
 ---
 name: 'sys.spatial_reference_systems'
-title: 'sys.spatial_reference_systems (Transact-'
+title: 'sys.spatial_reference_systems'
 category: 'spatial'
-description: 'This section contains the following catalog views.'
-tags: ["catalog-view", "spatial"]
+description: 'SQL database in Microsoft Fabric Lists the spatial reference systems (SRIDs) supported by SQL Server. The SRID supported by SQL Server. authorized_spatial_reference_id The SRID given by the authority named in The WKT representation of the SRID. The name of the unit of measure. The length of the unit of measure in meters. The visibility of the metadata in catalog views is limited to securables that'
+tags: ["spatial", "catalog-view"]
 pubDate: 2026-05-29
 ---
 
-Article
+## Description
 
-•
+SQL database in Microsoft Fabric Lists the spatial reference systems (SRIDs) supported by SQL Server. The SRID supported by SQL Server. authorized_spatial_reference_id The SRID given by the authority named in The WKT representation of the SRID. The name of the unit of measure. The length of the unit of measure in meters. The visibility of the metadata in catalog views is limited to securables that a user either owns,
 
-02/28/2023
+## Permissions
 
-Applies to:
-
-SQL Server
-
-This section contains the following catalog views.
-
-sys.column_xml_schema_collection_usage
-
-sys.selective_xml_index_paths
-
-sys.xml_schema_model_groups
-
-sys.xml_schema_collections
-
-sys.xml_schema_namespaces
-
-sys.xml_schema_types
-
-sys.xml_schema_wildcard_namespaces
-
-sys.xml_schema_wildcards
-
-sys.parameter_xml_schema_collection_usages
-
-sys.xml_schema_attributes
-
-sys.xml_schema_component_placements
-
-sys.xml_schema_components
-
-sys.xml_schema_elements
-
-sys.xml_schema_facets
-
-sys.xml_indexes
-
-Catalog Views (Transact-SQL)
-
-System Views (Transact-SQL)
-
-See Also
+SQL) Applies to: SQL Server Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Lists the spatial reference systems (SRIDs) supported by SQL Server. Description spatial_reference_id The SRID supported by SQL Server. authority_name The authority of the SRID. authorized_spatial_reference_id The SRID given by the authority named in . well_known_text The WKT representation of the SRID. unit_of_measure The name of the unit of measure. unit_conversion_factor The length of the unit of measure in meters. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. Last updated on 11/18/2025 ﾉ Expand table

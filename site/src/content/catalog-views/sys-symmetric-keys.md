@@ -1,62 +1,220 @@
 ---
 name: 'sys.symmetric_keys'
 title: 'sys.symmetric_keys'
-category: 'objects'
-description: 'Visibility Configuration'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'Analytics Platform System (PDW) Returns one row for every symmetric key created with the CREATE SYMMETRIC KEY statement. Name of the key. Unique within the database. ID of the database principal who owns the key. ID of the key. Unique within the database. Description of the algorithm used with the key:'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  EXECUTE
+  sp_configure
+  'external rest endpoint enabled'
+  , 1;
+  RECONFIGURE
+  WITH
+  OVERRIDE;
+  GO
+  IF NOT EXISTS (
+  SELECT
+  *
+  FROM
+  sys.symmetric_keys
+  WHERE
+  [
+  name
+  ] =
+  '##MS_DatabaseMasterKey##'
+  )
+  BEGIN
+  CREATE
+  MASTER
+  KEY
+  ENCRYPTION
+  BY
+  PASSWORD
+  = N
+  '<password>'
+  ;
+  END
+  GO
+  CREATE
+  DATABASE
+  SCOPED CREDENTIAL [https://my-azure-openai-
+  endpoint.cognitiveservices.azure.com/]
+  WITH
+  IDENTITY
+  =
+  'HTTPEndpointHeaders'
+  , secret =
+  '{"api-
+  key":"YOUR_AZURE_OPENAI_KEY"}'
+  ;
+  GO
+  CREATE
+  EXTERNAL
+  MODEL
+  MyAzureOpenAIModel
+  WITH
+  (
+  LOCATION =
+  'https://my-azure-openai-
+  endpoint.cognitiveservices.azure.com/openai/deployments/text-embedding-ada-
+  002/embeddings?api-version=2023-05-15'
+  ,
+  API_FORMAT =
+  'Azure OpenAI'
+  ,
+  MODEL_TYPE = EMBEDDINGS,
+  MODEL
+  =
+  'text-embedding-ada-002'
+  ,
 ---
 
-Visibility Configuration
+## Description
 
-.
+Analytics Platform System (PDW) Returns one row for every symmetric key created with the CREATE SYMMETRIC KEY statement. Name of the key. Unique within the database. ID of the database principal who owns the key. ID of the key. Unique within the database. Description of the algorithm used with the key:
 
-The RC4 algorithm is deprecated. This feature will be removed in a future version of SQL
+## Syntax
 
-Server. Avoid using this feature in new development work, and plan to modify applications that
+```sql
+EXECUTE
+sp_configure
+'external rest endpoint enabled'
+, 1;
+RECONFIGURE
+WITH
+OVERRIDE;
+GO
+IF NOT EXISTS (
+SELECT
+*
+FROM
+sys.symmetric_keys
+WHERE
+[
+name
+] =
+'##MS_DatabaseMasterKey##'
+)
+BEGIN
+CREATE
+MASTER
+KEY
+ENCRYPTION
+BY
+PASSWORD
+= N
+'<password>'
+;
+END
+GO
+CREATE
+DATABASE
+SCOPED CREDENTIAL [https://my-azure-openai-
+endpoint.cognitiveservices.azure.com/]
+WITH
+IDENTITY
+=
+'HTTPEndpointHeaders'
+, secret =
+'{"api-
+key":"YOUR_AZURE_OPENAI_KEY"}'
+;
+GO
+CREATE
+EXTERNAL
+MODEL
+MyAzureOpenAIModel
+WITH
+(
+LOCATION =
+'https://my-azure-openai-
+endpoint.cognitiveservices.azure.com/openai/deployments/text-embedding-ada-
+002/embeddings?api-version=2023-05-15'
+,
+API_FORMAT =
+'Azure OpenAI'
+,
+MODEL_TYPE = EMBEDDINGS,
+MODEL
+=
+'text-embedding-ada-002'
+,
+```
 
-currently use this feature.
+## Examples
 
-DESX was incorrectly named. Symmetric keys created with ALGORITHM = DESX actually
+### Example 1
 
-use the TRIPLE DES cipher with a 192-bit key. The DESX algorithm is not provided. This
+```sql
+##MS_DatabaseMasterKey##
+```
 
-feature will be removed in a future version of SQL Server. Avoid using this feature in new
+### Example 2
 
-development work, and plan to modify applications that currently use this feature.
+```sql
+CREATE
+MASTER
+KEY
+ENCRYPTION
+BY
+PASSWORD
+=
+'<strong password>'
+;
+GO
+SELECT
+*
+FROM
+sys.symmetric_keys;
+GO
+```
 
-Symmetric keys created with ALGORITHM = TRIPLE_DES_3KEY use TRIPLE DES with a 192-
+### Example 3
 
-bit key.
+```sql
+ALTER
+```
 
-Symmetric keys created with ALGORITHM = TRIPLE_DES use TRIPLE DES with a 128-bit
+### Example 4
 
-key.
+```sql
+SamInventory42
+```
 
-Catalog Views (Transact-SQL)
+### Example 5
 
-Extensible Key Management (EKM)
+```sql
+HamidS
+```
 
-Security Catalog Views (Transact-SQL)
+### Example 6
 
-Encryption Hierarchy
+```sql
+HamidS
+```
 
-CREATE SYMMETRIC KEY (Transact-SQL)
+### Example 7
 
-Last updated on 11/18/2025
+```sql
+ALTER
+```
 
-７
+### Example 8
 
-Note
-
-The RC4 algorithm is only supported for backward compatibility. New material can only be
-
-encrypted using RC4 or RC4_128 when the database is in compatibility level 90 or 100.
-
-(Not recommended.) Use a newer algorithm such as one of the AES algorithms instead. In
-
-SQL Server 2012 (11.x) material encrypted using RC4 or RC4_128 can be decrypted in any
-
-compatibility level.
-
-See Also
+```sql
+USE
+AdventureWorks2022;
+REVOKE
+ALTER
+ON
+SYMMETRIC
+KEY
+::SamInventory42
+TO
+HamidS
+CASCADE
+;
+GO
+```

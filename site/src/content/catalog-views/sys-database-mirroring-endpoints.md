@@ -1,52 +1,182 @@
 ---
 name: 'sys.database_mirroring_endpoints'
 title: 'sys.database_mirroring_endpoints'
-category: 'objects'
-description: 'The visibility of the metadata in catalog views is limited to securables that a user either owns,'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'Returns one row for the database mirroring endpoint of an instance of SQL Server. Note: This value is relevant only for database mirroring. Description of mirroring role, one of: Note: This value is relevant only for database mirroring. The database mirroring endpoint supports both sessions between database mirroring partners and with witnesses and sessions between the primary replica of an Always'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  <witness_option>
+  ::=
+  WITNESS
+  { =
+  'witness_server'
+  |
+  OFF
+  }
 ---
 
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
+## Description
 
-or on which the user was granted some permission. For more information, see
+Returns one row for the database mirroring endpoint of an instance of SQL Server. Note: This value is relevant only for database mirroring. Description of mirroring role, one of: Note: This value is relevant only for database mirroring. The database mirroring endpoint supports both sessions between database mirroring partners and with witnesses and sessions between the primary replica of an Always On
 
-Metadata
+## Syntax
 
-Visibility Configuration
+```sql
+<witness_option>
+::=
+WITNESS
+{ =
+'witness_server'
+|
+OFF
+}
+```
 
-.
+## Arguments
 
-SQL Server 2022 (16.x) and later versions require VIEW SERVER SECURITY STATE permission on
+database_name
 
-the server.
 
-Specify the Endpoint URL When Adding or Modifying an Availability Replica (SQL Server)
+Is the name of the database to be modified.
 
-sys.availability_replicas (Transact-SQL)
 
-sys.database_mirroring (Transact-SQL)
+PARTNER <partner_option> Controls the database properties that define the failover partners
 
-sys.database_mirroring_witnesses (Transact-SQL)
 
-The Database Mirroring Endpoint (SQL Server)
+of a database mirroring session and their behavior. Some SET PARTNER options can be set on
 
-Querying the SQL Server System Catalog FAQ
 
-Last updated on 03/03/2026
+either partner; others are restricted to the principal server or to the mirror server. For more
 
-７
 
-Note
+information, see the individual PARTNER options that follow. A SET PARTNER clause affects
 
-The RC4 algorithm is only supported for backward compatibility. New material can only be
 
-encrypted using RC4 or RC4_128 when the database is in compatibility level 90 or 100.
+both copies of the database, regardless of the partner on which it is specified.
 
-(Not recommended.) Use a newer algorithm such as one of the AES algorithms instead. In
 
-SQL Server 2012 (11.x) and higher, material encrypted using RC4 or RC4_128 can be
+To execute a SET PARTNER statement, the STATE of the endpoints of both partners must be set
 
-decrypted in any compatibility level.
 
-Related content
+to STARTED. Note, also, that the ROLE of the database mirroring endpoint of each partner
+
+
+server instance must be set to either PARTNER or ALL. For information about how to specify an
+
+
+endpoint, see
+
+
+Create a Database Mirroring Endpoint for Windows Authentication
+
+
+. To learn the
+
+
+role and state of the database mirroring endpoint of a server instance, on that instance, use the
+
+
+following Transact-SQL statement:
+
+
+A SET PARTNER or SET WITNESS command can complete successfully when entered, but
+
+
+fail later.
+
+
+ALTER DATABASE database mirroring options are not available for a contained database.
+
+
+For more information, see
+
+
+Possible Failures During Database Mirroring
+
+
+WITNESS <witness_option> Controls the database properties that define a database mirroring
+
+
+witness. A SET WITNESS clause affects both copies of the database, but you can specify SET
+
+
+WITNESS only on the principal server. If a witness is set for a session, quorum is required to
+
+
+serve the database, regardless of the SAFETY setting; for more information, see
+
+
+Quorum: How a
+
+
+Witness Affects Database Availability - Database Mirroring
+
+
+We recommend that the witness and failover partners reside on separate computers. For
+
+
+information about the witness, see
+
+
+Database Mirroring Witness
+
+
+To execute a SET WITNESS statement, the STATE of the endpoints of both the principal and
+
+
+witness server instances must be set to STARTED. Note, also, that the ROLE of the database
+
+
+mirroring endpoint of a witness server instance must be set to either WITNESS or ALL. For
+
+
+information about specifying an endpoint, see
+
+
+The Database Mirroring Endpoint
+
+
+To learn the role and state of the database mirroring endpoint of a server instance, on that
+
+
+instance, use the following Transact-SQL statement:
+
+
+witness_server
+
+
+Specifies an instance of the Database Engine to act as the witness server for a
+
+
+database mirroring session. You can specify SET WITNESS statements only on the principal
+
+
+In a SET WITNESS
+
+
+witness_server
+
+
+statement, the syntax of
+
+
+witness_server
+
+
+is the same as the
+
+
+partner_server
+
+
+OFF Removes the witness from a database mirroring session. Setting the witness to OFF
+
+
+disables automatic failover. If the database is set to FULL SAFETY and the witness is set to OFF,
+
+
+Database properties cannot be set on the witness.
+
+
+Only one <witness_option> is permitted per SET WITNESS clause.

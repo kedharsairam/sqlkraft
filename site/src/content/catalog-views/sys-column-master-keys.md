@@ -1,36 +1,19 @@
 ---
 name: 'sys.column_master_keys'
 title: 'sys.column_master_keys'
-category: 'objects'
-description: 'The visibility of the metadata in catalog views is limited to securables that a user either owns,'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'SQL Server 2016 (13.x) and later Returns a row for each database master key added by using the statement. Each row represents a single column master key (CMK). Date the column master key was created. Date the column master key was last modified. Name of the provider for the column master key store that contains the CMK. Allowed values are: MSSQL_CERTIFICATE_STORE - If the column master key A user-'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: '''CurrentUser/Personal/''<thumbprint>'
 ---
 
-Requires the
+## Description
 
-permission.
+SQL Server 2016 (13.x) and later Returns a row for each database master key added by using the statement. Each row represents a single column master key (CMK). Date the column master key was created. Date the column master key was last modified. Name of the provider for the column master key store that contains the CMK. Allowed values are: MSSQL_CERTIFICATE_STORE - If the column master key A user-defined value, if the column master key store is
 
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
+## Syntax
 
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-CREATE COLUMN MASTER KEY (Transact-SQL)
-
-Security Catalog Views (Transact-SQL)
-
-sys.column_encryption_key_values (Transact-SQL)
-
-Always Encrypted
-
-Overview of Key Management for Always Encrypted
-
-Manage keys for Always Encrypted with secure enclaves
-
-See Also
+```sql
+'CurrentUser/Personal/'<thumbprint>
+```

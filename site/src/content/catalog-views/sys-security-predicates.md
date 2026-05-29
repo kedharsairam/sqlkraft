@@ -2,42 +2,18 @@
 name: 'sys.security_predicates'
 title: 'sys.security_predicates'
 category: 'security'
-description: 'permission have access to all objects in this'
-tags: ["catalog-view", "security"]
+description: 'SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns a row for each security predicate in the database. ID of the security policy that contains this predicate. Predicate ID within this security policy. ID of the object on which the security predicate is bound. Fully qualified name of the function that will be used as a security predicate, including the arguments. Note'
+tags: ["security", "catalog-view"]
 pubDate: 2026-05-29
+syntax: '[dbo].[fn_securitypredicate]([wing], [startTime], [endTime])'
 ---
 
 ## Description
-NULL
 
-AFTER INSERT
+SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns a row for each security predicate in the database. ID of the security policy that contains this predicate. Predicate ID within this security policy. ID of the object on which the security predicate is bound. Fully qualified name of the function that will be used as a security predicate, including the arguments. Note that the
 
-AFTER UPDATE
+## Syntax
 
-BEFORE UPDATE
-
-BEFORE DELETE
-
-Principals with the
-
-permission have access to all objects in this
-
-catalog view as well as anyone with
-
-on the object.
-
-Row-Level Security
-
-sys.security_policies (Transact-SQL)
-
-CREATE SECURITY POLICY (Transact-SQL)
-
-Security Catalog Views (Transact-SQL)
-
-Catalog Views (Transact-SQL)
-
-Principals (Database Engine)
-
-Last updated on 11/18/2025
-
-See Also
+```sql
+[dbo].[fn_securitypredicate]([wing], [startTime], [endTime])
+```

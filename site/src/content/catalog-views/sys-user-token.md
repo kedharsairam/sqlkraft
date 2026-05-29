@@ -2,59 +2,37 @@
 name: 'sys.user_token'
 title: 'sys.user_token'
 category: 'security'
-description: 'This section contains the following catalog views:'
-tags: ["catalog-view", "security"]
+description: 'SQL database in Microsoft Fabric Returns one row for every database principal that is part of the user token in SQL Server. ID of the principal. The value is unique within database. Security identifier of the principal if the principal is defined external to the database. For example, this can be a SQL Server login, Windows login, Windows Group login, or a login mapped to a certificate, otherwise,'
+tags: ["security", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  SQL USER
+  WINDOWS LOGIN
+  WINDOWS GROUP
+  ROLE
+  APPLICATION ROLE
+  DATABASE ROLE
+  USER MAPPED TO CERTIFICATE
+  USER MAPPED TO ASYMMETRIC KEY
+  CERTIFICATE
+  ASYMMETRIC KEY
 ---
 
-SQL)
+## Description
 
-Article
+SQL database in Microsoft Fabric Returns one row for every database principal that is part of the user token in SQL Server. ID of the principal. The value is unique within database. Security identifier of the principal if the principal is defined external to the database. For example, this can be a SQL Server login, Windows login, Windows Group login, or a login mapped to a certificate, otherwise, this
 
-•
+## Syntax
 
-02/28/2023
-
-Applies to:
-
-SQL Server
-
-This section contains the following catalog views:
-
-sys.conversation_endpoints
-
-sys.conversation_groups
-
-sys.conversation_priorities (Transact-SQL)
-
-sys.message_type_xml_schema_collection_usages (Transact-SQL)
-
-sys.remote_service_bindings
-
-sys.routes
-
-sys.service_contract_message_usages
-
-sys.service_contract_usages
-
-sys.service_contracts (Transact-SQL)
-
-sys.service_message_types
-
-sys.service_queue_usages
-
-sys.service_queues (Transact-SQL)
-
-sys.services
-
-sys.transmission_queue
-
-Catalog Views (Transact-SQL)
-
-System Views (Transact-SQL)
-
-sys.service_broker_endpoints (Transact-SQL)
-
-sys.service_queues (Transact-SQL)
-
-See Also
+```sql
+SQL USER
+WINDOWS LOGIN
+WINDOWS GROUP
+ROLE
+APPLICATION ROLE
+DATABASE ROLE
+USER MAPPED TO CERTIFICATE
+USER MAPPED TO ASYMMETRIC KEY
+CERTIFICATE
+ASYMMETRIC KEY
+```

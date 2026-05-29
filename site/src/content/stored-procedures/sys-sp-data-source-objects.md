@@ -1,94 +1,127 @@
 ---
 name: 'sys.sp_data_source_objects'
-title: 'sys.sp_data_source_objects'
+title: 'sp_data_source_objects'
 category: 'general'
-description: 'SQL Server 2019 (15.x)'
+description: 'Returns list of table objects that are available to be virtualized. Transact-SQL syntax conventions The name of the external data source to get the metadata from. The root of the name of the object or objects to search for. This call only returns external objects that begin with the value set for If an ODBC data source connects to a relational database management system (RDBMS) that can''t contain '
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: |
+  sys.sp_data_source_objects
+  [ @data_source = ]
+  N
+  'data_source'
+  [ , [ @object_root_name = ]
+  N
+  'object_root_name'
+  ]
+  [ , [ @max_search_depth = ] max_search_depth ]
+  [ , [ @search_options = ]
+  N
+  'search_options'
+  ]
+  [ ; ]
 ---
 
-If you
+## Description
 
-enable Query Store for secondary replicas
+Returns list of table objects that are available to be virtualized. Transact-SQL syntax conventions The name of the external data source to get the metadata from. The root of the name of the object or objects to search for. This call only returns external objects that begin with the value set for If an ODBC data source connects to a relational database management system (RDBMS) that can't contain a partial database name. In these
 
-,
-
-can only be
-
-executed against the primary replica. The procedure's scope applies to the entire replica set.
-
-Query Store for secondary replicas is supported starting in SQL Server 2025 (17.x) and later
-
-versions, and in Azure SQL Database. For complete platform support, see
-
-Query Store for
-
-secondary replicas
-
-.
-
-The following example returns information about the queries in the Query Store.
-
-SQL
-
-After you identify the
-
-plan_id
-
-that you want to clear the statistics, use the following example to
-
-delete the execution stats for a specific query plan. This example deletes the execution stats for
-
-plan number 3.
-
-SQL
-
-sp_query_store_force_plan (Transact-SQL)
-
-sp_query_store_remove_query (Transact-SQL)
-
-sp_query_store_unforce_plan (Transact-SQL)
-
-sp_query_store_remove_plan (Transact-SQL)
-
-sp_query_store_flush_db (Transact-SQL)
-
-Query Store catalog views (Transact-SQL)
-
-Monitor performance by using the Query Store
-
-Last updated on 11/18/2025
-
-Related content
+## Syntax
 
 ```sql
-sp_query_store_reset_exec_stats
+sys.sp_data_source_objects
+[ @data_source = ]
+N
+'data_source'
+[ , [ @object_root_name = ]
+N
+'object_root_name'
+]
+[ , [ @max_search_depth = ] max_search_depth ]
+[ , [ @search_options = ]
+N
+'search_options'
+]
+[ ; ]
 ```
 
+## Examples
+
+### Example 1
+
 ```sql
-SELECT
-txt.query_text_id,
-txt.query_sql_text,
-pl.plan_id,
-qry.*
-FROM
-sys.query_store_plan
+DATABASE
+"database"
+database
+NULL
+SCHEMA
+"database"."dbo"
+dbo
+NULL
+TABLE
+"database"."dbo"."customer"
+customer
+[database].[dbo].[customer]
+TABLE
+"database"."dbo"."item"
+item
+[database].[dbo].[item]
+TABLE
+"database"."dbo"."nation"
+nation
+[database].[dbo].[nation]
+```
+
+### Example 2
+
+```sql
+DECLARE
+@data_source
 AS
-pl
-INNER
-JOIN
-sys.query_store_query
+SYSNAME = N
+'ExternalDataSourceName'
+;
+DECLARE
+@object_root_name
 AS
-qry
-ON
-pl.query_id = qry.query_id
-INNER
-JOIN
-sys.query_store_query_text
+NVARCHAR
+(
+MAX
+) =
+NULL
+;
+DECLARE
+@max_search_depth
 AS
-txt
-ON
-qry.query_text_id = txt.query_text_id;
+INT
+= 3;
 EXECUTE
-sp_query_store_reset_exec_stats 3;
+sp_data_source_objects
+@data_source,
+@object_root_name,
+@max_search_depth;
+```
+
+### Example 3
+
+```sql
+DECLARE
+@data_source
+AS
+SYSNAME = N
+'ExternalDataSourceName'
+;
+DECLARE
+@object_root_name
+AS
+NVARCHAR
+(
+MAX
+) =
+NULL
+;
+EXECUTE
+sp_data_source_objects
+@data_source,
+@object_root_name;
 ```

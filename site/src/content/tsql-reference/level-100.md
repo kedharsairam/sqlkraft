@@ -1,0 +1,1039 @@
+---
+name: 'level 100'
+title: 'level 100'
+category: 'statements'
+description: 'same ordinal position in the select list) must be'
+tags: ["tsql", "statements"]
+pubDate: 2026-05-29
+---
+
+same ordinal position in the select list) must be
+
+of type
+
+.
+
+must be of type
+
+.
+
+After upgrading to 110, the distributed partitioned
+
+view will fail because of the data type mismatch. You
+
+can resolve this by changing the data type on the
+
+remote table to
+
+or setting the compatibility
+
+level of the local database to 100 or lower.
+
+function implements the following rules:
+
+1) Upper-case H or upper-case W is ignored
+
+when separating two consonants that have the
+
+same number in the
+
+code.
+
+2) If the first two characters of
+
+character_expression
+
+have the same number in
+
+the
+
+code, both characters are included.
+
+Else, if a set of side-by-side consonants have the
+
+same number in the
+
+code, all of them
+
+are excluded except the first.
+
+function implements the following rules:
+
+1) If upper-case H or upper-case W separate two
+
+consonants that have the same number in the
+
+code, the consonant to the right is ignored
+
+2) If a set of side-by-side consonants have the same
+
+number in the
+
+code, all of them are excluded
+
+except the first.
+
+The additional rules might cause the values
+
+computed by the
+
+function to be different
+
+than the values computed under earlier compatibility
+
+levels. After upgrading to compatibility level 110, you
+
+might need to rebuild the indexes, heaps, or
+
+constraints that use the
+
+function. For more
+
+information, see
+
+SOUNDEX
+
+.
+
+is available without an
+
+.
+
+is available with an optional
+
+. For more information, see
+
+STRING_AGG
+
+This section describes new behaviors introduced with compatibility level 100.
+
+The
+
+setting is
+
+always set to
+
+for multistatement
+
+table-valued functions when they are
+
+The QUOTED IDENTIFIER session setting is
+
+honored when multistatement table-valued
+
+functions are created.
+
+Medium
+
+ﾉ
+
+Expand table
+
+#### Compatibility level setting of 90
+
+#### Compatibility level setting of 100
+
+#### Possibility
+
+#### of impact
+
+#### datetime
+
+#### smalldatetime
+
+#### datetime
+
+#### smalldatetime
+
+created regardless of the session level
+
+setting.
+
+When you create or alter a partition
+
+function,
+
+and
+
+literals in the function are evaluated
+
+assuming US_English as the language
+
+setting.
+
+The current language setting is used to evaluate
+
+and
+
+literals in the
+
+partition function.
+
+Medium
+
+The
+
+clause is allowed (and
+
+ignored) in
+
+and
+
+statements.
+
+The
+
+clause isn't allowed in
+
+and
+
+statements.
+
+Medium
+
+Full-text predicates are allowed in the
+
+clause.
+
+Full-text predicates aren't allowed in the
+
+clause.
+
+Low
+
+,
+
+, and
+
+aren't supported. The system
+
+stoplist is automatically associated
+
+with new full-text indexes.
+
+,
+
+, and
+
+are
+
+supported.
+
+Low
+
+isn't enforced as a reserved
+
+keyword.
+
+is a fully reserved keyword. The
+
+statement is supported under both 100 and 90
+
+compatibility levels.
+
+Low
+
+Using the
+
+argument of the
+
+statement
+
+raises a syntax error.
+
+You can capture the results of an
+
+clause in
+
+a nested
+
+,
+
+,
+
+, or
+
+statement, and insert those results into a target
+
+table or view. This is done using the
+
+argument of the
+
+statement.
+
+Low
+
+Unless
+
+is specified,
+
+or
+
+performs
+
+both physical and logical consistency
+
+checks on a single table or indexed
+
+view and on all its nonclustered and
+
+XML indexes. Spatial indexes aren't
+
+supported.
+
+Unless
+
+is specified,
+
+or
+
+performs both physical and logical
+
+consistency checks on a single table and on all its
+
+nonclustered indexes. However, on XML indexes,
+
+spatial indexes, and indexed views, only physical
+
+consistency checks are performed by default.
+
+If
+
+is specified,
+
+logical checks are performed on indexed views,
+
+XML indexes, and spatial indexes, where present.
+
+By default, physical consistency checks are
+
+performed before the logical consistency checks. If
+
+is also specified, only the logical checks
+
+are performed.
+
+Low
+
+#### Compatibility level setting of 90
+
+#### Compatibility level setting of 100
+
+#### Possibility
+
+#### of impact
+
+#### anyType
+
+#### xsi:nil
+
+#### xsi:type
+
+#### xsi:nil
+
+#### xsi:type
+
+#### xsi:nil
+
+#### xsi:type
+
+#### xsi:nil
+
+#### xsi:type
+
+#### xsi:nil
+
+#### xsi:type
+
+#### datetime
+
+#### datetime
+
+When an
+
+clause is used with a
+
+data manipulation language (DML)
+
+statement and a run-time error occurs
+
+during statement execution, the entire
+
+transaction is terminated and rolled
+
+back.
+
+When an
+
+clause is used with a data
+
+manipulation language (DML) statement and a
+
+run-time error occurs during statement execution,
+
+the behavior depends on the
+
+setting. If
+
+is
+
+, a statement
+
+abort error generated by the DML statement using
+
+the
+
+clause will terminate the statement,
+
+but the execution of the batch continues and the
+
+transaction isn't rolled back. If
+
+is
+
+, all run-time errors generated by the DML
+
+statement using the
+
+clause will terminate
+
+the batch, and the transaction is rolled back.
+
+Low
+
+and
+
+aren't enforced as
+
+reserved keywords.
+
+and
+
+are reserved keywords within the
+
+clause.
+
+Low
+
+Strict validation is applied to elements
+
+of the XML
+
+type.
+
+Lax validation is applied to elements of the
+
+type. For more information, see
+
+Wildcard
+
+components and content validation
+
+.
+
+Low
+
+The special attributes
+
+and
+
+can't be queried or modified
+
+by data manipulation language
+
+statements.
+
+This means that
+
+fails
+
+while
+
+ignores the
+
+and
+
+attributes. However,
+
+
+## returns the
+and
+
+attributes for consistency with
+
+, even if
+
+.
+
+The special attributes
+
+and
+
+are
+
+stored as regular attributes and can be queried
+
+and modified.
+
+For example, executing the query
+
+
+## returns all attributes including
+and
+
+. To exclude these types in the
+
+query, replace
+
+with
+
+insert xsi namespace uri
+
+and not
+
+or
+
+.
+
+Low
+
+A user-defined function that converts
+
+an XML constant string value to a SQL
+
+Server
+
+type is marked as
+
+deterministic.
+
+A user-defined function that converts an XML
+
+constant string value to a SQL Server
+
+type is marked as non-deterministic.
+
+Low
+
+The XML union and list types aren't
+
+fully supported.
+
+The union and list types are fully supported
+
+including the following functionality:
+
+Union of list
+
+Union of union
+
+List of atomic types
+
+Low
+
+#### Compatibility level setting of 90
+
+#### Compatibility level setting of 100
+
+#### Possibility
+
+#### of impact
+
+List of union
+
+The
+
+options required for an
+
+xQuery method aren't validated when
+
+the method is contained in a view or
+
+inline table-valued function.
+
+The
+
+options required for an xQuery method
+
+are validated when the method is contained in a
+
+view or inline table-valued function. An error is
+
+raised if the
+
+options of the method are set
+
+incorrectly.
+
+Low
+
+XML attribute values that contain end-
+
+of-line characters (carriage return and
+
+line feed) aren't normalized according
+
+to the XML standard. That is, both
+
+characters are returned instead of a
+
+single line-feed character.
+
+XML attribute values that contain end-of-line
+
+characters (carriage return and line feed) are
+
+normalized according to the XML standard. That is,
+
+all line breaks in external parsed entities (including
+
+the document entity) are normalized on input by
+
+translating both the two-character sequence #xD
+
+#xA and any #xD that isn't followed by #xA to a
+
+single #xA character.
+
+Applications that use attributes to transport string
+
+values that contain end-of-line characters won't
+
+receive these characters back as they are
+
+submitted. To avoid the normalization process, use
+
+the XML numeric character entities to encode all
+
+end-of-line characters.
+
+Low
+
+The column properties
+
+and
+
+can be incorrectly
+
+named as a constraint. For example
+
+the statement
+
+executes, but the constraint name isn't
+
+preserved and isn't accessible to the
+
+user.
+
+The column properties
+
+and
+
+can't be named as a constraint. Error 156 is
+
+returned.
+
+Low
+
+Updating columns by using a two-way
+
+assignment such as
+
+can
+
+produce unexpected results because
+
+the live value of the variable can be
+
+used in other clauses such as the
+
+and
+
+clause during statement
+
+execution instead of the statement
+
+starting value. This can cause the
+
+meanings of the predicates to change
+
+unpredictably on a per-row basis.
+
+Updating columns by using a two-way assignment
+
+produces expected results because only the
+
+statement starting value of the column is accessed
+
+during statement execution.
+
+Low
+
+#### Compatibility level setting of 90
+
+#### Compatibility level setting of 100
+
+#### Possibility
+
+#### of impact
+
+#### char
+
+```sql
+SOUNDEX
+```
+
+```sql
+SOUNDEX
+```
+
+```sql
+SOUNDEX
+```
+
+```sql
+SOUNDEX
+```
+
+```sql
+SOUNDEX
+```
+
+```sql
+SOUNDEX
+```
+
+```sql
+SOUNDEX
+```
+
+```sql
+SOUNDEX
+```
+
+```sql
+CHECK
+```
+
+```sql
+SOUNDEX
+```
+
+```sql
+STRING_AGG
+```
+
+```sql
+<order_clause>
+```
+
+```sql
+STRING_AGG
+```
+
+```sql
+<order_clause>
+```
+
+```sql
+QUOTED_IDENTIFIER
+```
+
+```sql
+ON
+```
+
+```sql
+FOR BROWSE
+```
+
+```sql
+INSERT
+```
+
+```sql
+SELECT INTO
+```
+
+```sql
+FOR BROWSE
+```
+
+```sql
+INSERT
+```
+
+```sql
+SELECT INTO
+```
+
+```sql
+OUTPUT
+```
+
+```sql
+OUTPUT
+```
+
+```sql
+CREATE FULLTEXT STOPLIST
+```
+
+```sql
+ALTER
+FULLTEXT STOPLIST
+```
+
+```sql
+DROP FULLTEXT
+STOPLIST
+```
+
+```sql
+CREATE FULLTEXT STOPLIST
+```
+
+```sql
+ALTER FULLTEXT
+STOPLIST
+```
+
+```sql
+DROP FULLTEXT STOPLIST
+```
+
+```sql
+MERGE
+```
+
+```sql
+MERGE
+```
+
+```sql
+MERGE
+```
+
+```sql
+<dml_table_source>
+```
+
+```sql
+INSERT
+```
+
+```sql
+OUTPUT
+```
+
+```sql
+INSERT
+```
+
+```sql
+UPDATE
+```
+
+```sql
+DELETE
+```
+
+```sql
+MERGE
+```
+
+```sql
+<dml_table_source>
+```
+
+```sql
+INSERT
+```
+
+```sql
+NOINDEX
+```
+
+```sql
+DBCC
+CHECKDB
+```
+
+```sql
+DBCC CHECKTABLE
+```
+
+```sql
+NOINDEX
+```
+
+```sql
+DBCC CHECKDB
+```
+
+```sql
+DBCC
+CHECKTABLE
+```
+
+```sql
+WITH EXTENDED_LOGICAL_CHECKS
+```
+
+```sql
+NOINDEX
+```
+
+```sql
+OUTPUT
+```
+
+```sql
+OUTPUT
+```
+
+```sql
+SET XACT_ABORT
+```
+
+```sql
+SET XACT_ABORT
+```
+
+```sql
+OFF
+```
+
+```sql
+OUTPUT
+```
+
+```sql
+SET XACT_ABORT
+```
+
+```sql
+ON
+```
+
+```sql
+OUTPUT
+```
+
+```sql
+CUBE
+```
+
+```sql
+ROLLUP
+```
+
+```sql
+CUBE
+```
+
+```sql
+ROLLUP
+```
+
+```sql
+GROUP BY
+```
+
+```sql
+anyType
+```
+
+```sql
+/e/@xsi:nil
+```
+
+```sql
+/e/@*
+```
+
+```sql
+/e
+```
+
+```sql
+SELECT
+xmlCol
+```
+
+```sql
+xsi:nil = "false"
+```
+
+```sql
+SELECT
+x.query('a/b/@*')
+```
+
+```sql
+@*
+```
+
+```sql
+@*[namespace-uri(.) !=
+"
+```
+
+```sql
+"
+```
+
+```sql
+(local-
+name(.) = "type"
+```
+
+```sql
+local-name(.) ="nil"
+```
+
+```sql
+SET
+```
+
+```sql
+SET
+```
+
+```sql
+SET
+```
+
+```sql
+ROWGUIDCOL
+```
+
+```sql
+IDENTITY
+```
+
+```sql
+CREATE TABLE T (C1 int
+CONSTRAINT MyConstraint IDENTITY)
+```
+
+```sql
+ROWGUIDCOL
+```
+
+```sql
+IDENTITY
+```
+
+```sql
+UPDATE T1 SET @v
+= column_name = <expression>
+```
+
+```sql
+WHERE
+```
+
+```sql
+ON
+```

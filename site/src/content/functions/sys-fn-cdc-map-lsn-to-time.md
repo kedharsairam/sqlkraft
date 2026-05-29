@@ -2,80 +2,43 @@
 name: 'sys.fn_cdc_map_lsn_to_time'
 title: 'sys.fn_cdc_map_lsn_to_time'
 category: 'date-time'
-description: 'Returns the date and time value from the'
-tags: ["function"]
+description: 'Returns the date and time value from the system table for the specified log sequence number (LSN). You can use this function to systematically map LSN ranges to date ranges in a change table. Transact-SQL syntax conventions Is the LSN value to match against. This function can be used to determine the time that a change was committed based upon the value returned in the row of change data.'
+tags: ["date-time", "function"]
 pubDate: 2026-05-29
+syntax: 'sys.fn_cdc_map_lsn_to_time ( lsn_value )'
 ---
 
-Article
+## Description
 
-•
+Returns the date and time value from the system table for the specified log sequence number (LSN). You can use this function to systematically map LSN ranges to date ranges in a change table. Transact-SQL syntax conventions Is the LSN value to match against. This function can be used to determine the time that a change was committed based upon the value returned in the row of change data.
 
-08/10/2023
-
-Applies to:
-
-SQL Server
-
-
-## Returns the date and time value from the
-column in the
-
-cdc.lsn_time_mapping
-
-system table for the specified log sequence number (LSN). You can use this function to
-
-systematically map LSN ranges to date ranges in a change table.
-
-Transact-SQL syntax conventions
-
-lsn_value
-
-Is the LSN value to match against.
-
-lsn_value
-
-is
-
-.
-
-This function can be used to determine the time that a change was committed based upon the
-
-value returned in the row of change data.
-
-Requires membership in the
-
-role.
-
-The following example uses the function
-
-to determine the commit
-
-time associated with the last change processed in the specified LSN interval for the
-
-capture instance.
-
-cdc.lsn_time_mapping (Transact-SQL)
-
-sys.fn_cdc_map_time_to_lsn (Transact-SQL)
-
-cdc.fn_cdc_get_net_changes_<capture_instance> (Transact-SQL)
-
-cdc.fn_cdc_get_all_changes_<capture_instance> (Transact-SQL)
-
-See Also
+## Syntax
 
 ```sql
 sys.fn_cdc_map_lsn_to_time ( lsn_value )
 ```
 
+## Examples
+
+### Example 1
+
+```sql
+sys.fn_cdc_map_lsn_to_time ( lsn_value )
+```
+
+### Example 2
+
 ```sql
 sys.fn_cdc_map_lsn_to_time
 ```
 
+### Example 3
+
 ```sql
 HumanResources_Employee
 ```
+
+### Example 4
 
 ```sql
 USE AdventureWorks2022;

@@ -1,30 +1,22 @@
 ---
 name: 'sys.key_encryptions'
 title: 'sys.key_encryptions'
-category: 'objects'
-description: 'The visibility of the metadata in catalog views is limited to securables that a user either owns,'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'SQL database in Microsoft Fabric Returns a row for each symmetric key encryption specified by using the To protect the key material of the symmetric key, SQL Server and Azure SQL store the key material in encrypted form. Historically, this encryption utilized PKCS#1 v1.5 padding mode; starting with database compatibility level 170, the encryption uses OAEP-256 padding mode. SHA-1 hash of the certi'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  ENCRYPTION BY SYMMETRIC KEY
+  ENCRYPTION BY PASSWORD
 ---
 
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
+## Description
 
-or on which the user was granted some permission. For more information, see
+SQL database in Microsoft Fabric Returns a row for each symmetric key encryption specified by using the To protect the key material of the symmetric key, SQL Server and Azure SQL store the key material in encrypted form. Historically, this encryption utilized PKCS#1 v1.5 padding mode; starting with database compatibility level 170, the encryption uses OAEP-256 padding mode. SHA-1 hash of the certificate with which the key is encrypted, or the
 
-Metadata
+## Syntax
 
-Visibility Configuration
-
-.
-
-System catalog views
-
-Security Catalog Views
-
-Encryption hierarchy
-
-CREATE SYMMETRIC KEY
-
-Last updated on 11/18/2025
-
-Related content
+```sql
+ENCRYPTION BY SYMMETRIC KEY
+ENCRYPTION BY PASSWORD
+```

@@ -2,49 +2,27 @@
 name: 'sys.sp_cdc_scan'
 title: 'sys.sp_cdc_scan'
 category: 'general'
-description: 'Executes the change data capture log scan operation.'
+description: 'Executes the change data capture log scan operation. Transact-SQL syntax conventions Maximum number of transactions to process in each scan cycle. Maximum number of scan cycles to execute in order to extract all rows from the log. Indicates whether the stored procedure should end after executing a single scan cycle ( run continuously, pausing for the time specified by Number of seconds between log'
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: |
+  sys.sp_cdc_scan [ [ @maxtrans = ] max_trans ]
+  [ , [ @maxscans = ] max_scans ]
+  [ , [ @continuous = ] continuous ]
+  [ , [ @pollinginterval = ] polling_interval ]
+  [ ; ]
 ---
 
-(success) or
+## Description
 
-(failure).
+Executes the change data capture log scan operation. Transact-SQL syntax conventions Maximum number of transactions to process in each scan cycle. Maximum number of scan cycles to execute in order to extract all rows from the log. Indicates whether the stored procedure should end after executing a single scan cycle ( run continuously, pausing for the time specified by Number of seconds between log scan cycles.
 
-None.
-
-is called internally by
-
-if the SQL Server Agent
-
-capture job is being used by change data capture. The procedure can't be executed explicitly
-
-when a change data capture log scan operation is already active, or when the database is
-
-enabled for transactional replication. This stored procedure should be used by administrators
-
-who want to customize the behavior of the capture job that is automatically configured.
-
-Requires membership in the
-
-fixed database role.
-
-dbo.cdc_jobs (Transact-SQL)
-
-Related content
+## Syntax
 
 ```sql
-0
-```
-
-```sql
-1
-```
-
-```sql
-sys.sp_cdc_scan
-```
-
-```sql
-sys.sp_MScdc_capture_job
+sys.sp_cdc_scan [ [ @maxtrans = ] max_trans ]
+[ , [ @maxscans = ] max_scans ]
+[ , [ @continuous = ] continuous ]
+[ , [ @pollinginterval = ] polling_interval ]
+[ ; ]
 ```

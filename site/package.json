@@ -4,14 +4,17 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "predev": "node -e \"fs.copyFileSync('src/data/search-index.json','public/data/search-index.json')\"",
     "dev": "astro dev",
+    "prebuild": "node -e \"fs.copyFileSync('src/data/search-index.json','public/data/search-index.json')\"",
     "build": "astro build",
     "preview": "astro preview",
     "lint": "prettier --check \"src/**/*.{astro,ts}\"",
     "format": "prettier --write \"src/**/*.{astro,ts}\""
   },
   "dependencies": {
-    "astro": "^5.0.0"
+    "astro": "^5.0.0",
+    "fuse.js": "^7.3.0"
   },
   "devDependencies": {
     "prettier": "^3.5.0",

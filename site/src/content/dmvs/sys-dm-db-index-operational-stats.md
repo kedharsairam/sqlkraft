@@ -1,234 +1,137 @@
 ---
 name: 'sys.dm_db_index_operational_stats'
 title: 'sys.dm_db_index_operational_stats'
-category: 'execution'
-description: 'SQL Server 2016 (13.x) and later versions'
+category: 'index'
+description: 'SQL database in Microsoft Fabric Returns the lower level data access, locking, and latching statistics for each partition of a table Transact-SQL syntax conventions . Valid inputs are the ID number of a database, NULL, 0, or DEFAULT. The default is 0. NULL, 0, and DEFAULT are equivalent values in this Specify NULL to return information for all databases in the instance of SQL Server. If you , you '
+tags: ["index", "dmv"]
 pubDate: 2026-05-29
+syntax: |
+  sys.dm_db_index_operational_stats (
+  { database_id |
+  NULL
+  | 0 |
+  DEFAULT
+  }
+  , { object_id |
+  NULL
+  | 0 |
+  DEFAULT
+  }
+  , { index_id | 0 |
+  NULL
+  | -1 |
+  DEFAULT
+  }
+  , { partition_number |
+  NULL
+  | 0 |
+  DEFAULT
+  }
+  )
 ---
 
-SQL Server 2016 (13.x) and later versions
+## Description
 
-The following example shows how to query server broker queues for fragmentation.
+SQL database in Microsoft Fabric Returns the lower level data access, locking, and latching statistics for each partition of a table Transact-SQL syntax conventions . Valid inputs are the ID number of a database, NULL, 0, or DEFAULT. The default is 0. NULL, 0, and DEFAULT are equivalent values in this Specify NULL to return information for all databases in the instance of SQL Server. If you , you must also specify NULL for
 
-System dynamic management views
+## Syntax
 
-Index Related Dynamic Management Views and Functions (Transact-SQL)
+```sql
+sys.dm_db_index_operational_stats (
+{ database_id |
+NULL
+| 0 |
+DEFAULT
+}
+, { object_id |
+NULL
+| 0 |
+DEFAULT
+}
+, { index_id | 0 |
+NULL
+| -1 |
+DEFAULT
+}
+, { partition_number |
+NULL
+| 0 |
+DEFAULT
+}
+)
+```
 
-sys.dm_db_index_operational_stats (Transact-SQL)
-
-sys.dm_db_index_usage_stats (Transact-SQL)
-
-sys.dm_db_partition_stats (Transact-SQL)
-
-sys.allocation_units (Transact-SQL)
-
-Transact-SQL reference (Database Engine)
-
-Last updated on 03/19/2026
-
-## sys.dm_db_xtp_index_stats (Transact-SQL)
-
-SQL Server
+## Arguments
 
 Azure SQL Database
 
+
 Azure SQL Managed Instance
 
-Azure Synapse Analytics
 
-Analytics Platform System (PDW)
-
-SQL database in Microsoft
-
-Fabric
+SQL database in Microsoft Fabric
 
 
-## Returns counts of different types of index operations and the time each type of operation was
-last performed.
+Returns the lower level data access, locking, and latching statistics for each partition of a table
 
-In Azure SQL Database, dynamic management views cannot expose information that would
 
-impact database containment or expose information about other databases the user has access
+or index in a database.
 
-to. To avoid exposing this information, every row that contains data that doesn't belong to the
 
-connected tenant is filtered out.
+Transact-SQL syntax conventions
 
-ID of the database on which the table or view is defined.
 
-In Azure SQL Database, the values are unique within a single database
+database_id
 
-or an elastic pool, but not within a logical server.
 
-ID of the table or view on which the index is defined
+| NULL | 0 | DEFAULT
 
-ID of the index.
 
-Number of seeks by user queries.
+ID of the database.
 
-７
 
-The DMV
+database_id
 
-does not return information about memory-
 
-optimized indexes or spatial indexes. For information about memory-optimized index use,
+. Valid inputs are the ID number of a database,
 
-see
 
-.
+NULL, 0, or DEFAULT. The default is 0. NULL, 0, and DEFAULT are equivalent values in this
 
-７
 
-To call this view from Azure Synapse Analytics or Analytics Platform System (PDW), use
+Specify NULL to return information for all databases in the instance of SQL Server. If you
 
-. This syntax is not supported by serverless SQL
 
-pool in Azure Synapse Analytics.
+specify NULL for
 
-ﾉ
 
-Number of scans by user queries that did not use 'seek' predicate.
+database_id
 
-Number of bookmark lookups by user queries.
 
-Number of updates by user queries. This includes Insert, Delete, and
+, you must also specify NULL for
 
-Updates representing number of operations done not the actual rows
 
-affected. For example, if you delete 1000 rows in one statement, this
+partition_number
 
-count increments by 1
 
-Time of last user seek
+The built-in function
 
-Time of last user scan.
 
-Time of last user lookup.
+can be specified.
 
-Time of last user update.
 
-Number of seeks by system queries.
+| NULL | 0 | DEFAULT
 
-Number of scans by system queries.
 
-Number of lookups by system queries.
+Object ID of the table or view the index is on.
 
-Number of updates by system queries.
 
-Time of last system seek.
+Valid inputs are the ID number of a table and view, NULL, 0, or DEFAULT. The default is 0. NULL,
 
-Time of last system scan.
 
-Time of last system lookup.
+0, and DEFAULT are equivalent values in this context.
 
-Time of last system update.
 
-pdw_node_id
+## Permissions
 
-: Azure Synapse Analytics, Analytics Platform System (PDW)
-
-The identifier for the node that this distribution is on.
-
-Every individual seek, scan, lookup, or update on the specified index by one query execution is
-
-counted as a use of that index and increments the corresponding counter in this view.
-
-Information is reported both for operations caused by user-submitted queries, and for
-
-operations caused by internally generated queries, such as scans for gathering statistics.
-
-The
-
-column is a counter of maintenance on the index caused by insert, update,
-
-or delete operations on the underlying table or view. You can use this view to determine which
-
-## Basic
-
-## S0
-
-## S1
-
-## elastic pools
-
-```sql
-SET
-@idx = @idx + 1
-END
-COMMIT
-;
-GO
-SELECT
-page_count,
-compressed_page_count,
-forwarded_record_count,
-*
-FROM
-sys.dm_db_index_physical_stats(db_id(), object_id(
-'t3'
-),
-NULL
-,
-NULL
-,
-'SAMPLED'
-);
-SELECT
-page_count,
-compressed_page_count,
-forwarded_record_count,
-*
-FROM
-sys.dm_db_index_physical_stats(db_id(), object_id(
-'t3'
-),
-NULL
-,
-NULL
-,
-'DETAILED'
-);
-```
-
-```sql
---Using queue internal table name
-SELECT
-*
-FROM
-sys.dm_db_index_physical_stats(db_id(),
-object_id(
-'sys.queue_messages_549576996'
-),
-DEFAULT
-,
-DEFAULT
-,
-DEFAULT
-);
---Using queue name directly
-SELECT
-*
-FROM
-sys.dm_db_index_physical_stats(db_id(), object_id(
-'ExpenseQueue'
-),
-DEFAULT
-,
-DEFAULT
-,
-DEFAULT
-);
-```
-
-```sql
-sys.dm_db_index_usage_stats
-```
-
-```sql
-sys.dm_pdw_nodes_db_index_usage_stats
-```
-
-```sql
-user_updates
-```
+The values for each numeric column are set to zero whenever the metadata for the heap or B- tree is brought into the metadata cache. Statistics are accumulated until the cache object is removed from the metadata cache. An active heap or B-tree commonly has its metadata in the cache, and the cumulative counts reflects the activity since the Database Engine instance was last started. The metadata for a less active heap or B-tree might move in and out of the cache as it is used, particularly if the Database Engine instance is under memory pressure. As a result, index operational statistics might sometimes not be reflected in . This is not common. Statistics are removed from the cache and are no longer reported by this function if a table or index is dropped, or if a partition is truncated. Other DDL operations against the index might cause the value of the statistics to be reset to zero. You can use the Transact-SQL functions DB_ID and OBJECT_ID to specify a value for the database_id and object_id parameters. However, passing values that are not valid to these functions may cause unintended results. Always make sure that a valid ID is returned when you use or . For more information, see Return information for a specified table . Requires the following permissions: permission on the specified object within the database or permission to return information about all objects within the specified database, when a value for is not specified. or permission to return information about all databases, when a value for is not specified. Granting or allows all objects in the database to be returned, regardless of any permissions denied on specific objects. Denying or disallows all objects in the database to be returned, regardless of any permissions granted on specific objects. For more information, see Dynamic Management Views and Functions (Transact-SQL) .

@@ -2,52 +2,60 @@
 name: 'sys.fn_cdc_map_time_to_lsn'
 title: 'sys.fn_cdc_map_time_to_lsn'
 category: 'date-time'
-description: 'Returns the log sequence number (LSN) value from the'
-tags: ["function"]
+description: 'Returns the log sequence number (LSN) value from the system table for the specified time. You can use this function to systematically map datetime ranges into the LSN-based range needed by the change data cdc.fn_cdc_get_all_changes_<capture_instance> cdc.fn_cdc_get_net_changes_<capture_instance> to return data changes within that range. Transact-SQL syntax conventions Used to identify a distinct L'
+tags: ["date-time", "function"]
 pubDate: 2026-05-29
+syntax: |
+  sys.fn_cdc_map_time_to_lsn (
+  '<relational_operator>'
+  , tracking_time )
+  <relational_operator>
+  ::=
+  { largest less than
+  | largest less than or equal
+  | smallest greater than
+  | smallest greater than or equal
+  }
 ---
 
-Requires membership in the
+## Description
 
-role.
+Returns the log sequence number (LSN) value from the system table for the specified time. You can use this function to systematically map datetime ranges into the LSN-based range needed by the change data cdc.fn_cdc_get_all_changes_<capture_instance> cdc.fn_cdc_get_net_changes_<capture_instance> to return data changes within that range. Transact-SQL syntax conventions Used to identify a distinct LSN value in within the
 
-The following example uses the
+## Syntax
 
-function to determine whether
+```sql
+sys.fn_cdc_map_time_to_lsn (
+'<relational_operator>'
+, tracking_time )
+<relational_operator>
+::=
+{ largest less than
+| largest less than or equal
+| smallest greater than
+| smallest greater than or equal
+}
+```
 
-there are any rows in the
+## Permissions
 
-cdc.lsn_time_mapping
+To understand how the function can be used to map ranges to LSN ranges, consider the following scenario. Assume that a consumer wants to extract change data on a daily basis. That is, the consumer wants only changes for a given day up to and including midnight. The lower bound of the time range would be up to but not including midnight of the previous day. The upper bound would be up to and including midnight of the given day. The following example shows how the function can be used to systematically map this time-based range into the LSN-based range needed by the change data capture enumeration functions to return all changes within that range. SQL The relational operator is used to restrict changes to those that occurred after midnight on the previous day. If multiple entries with different LSN values share the value identified as the lower bound in the cdc.lsn_time_mapping table, the function will return the smallest LSN ensuring that all entries are included. For the upper bound, the relational operator is used to ensure that the range includes all entries for the day including those that have midnight as their value. If multiple entries with different LSN values share the value identified as the upper bound, the function will return the largest LSN ensuring that all entries are included.
 
-table with a
+## Examples
 
-value that is greater
-
-than or equal to midnight. This query can be used to determine, for example, whether the
-
-capture process has already processed the changes committed through midnight of the
-
-previous day, so that the extraction of change data for that day can proceed.
-
-SQL
-
-cdc.lsn_time_mapping (Transact-SQL)
-
-sys.fn_cdc_map_lsn_to_time (Transact-SQL)
-
-cdc.fn_cdc_get_net_changes_<capture_instance> (Transact-SQL)
-
-cdc.fn_cdc_get_all_changes_<capture_instance> (Transact-SQL)
-
-See also
+### Example 1
 
 ```sql
 sys.fn_cdc_map_time_to_lsn
 ```
 
+### Example 2
+
 ```sql
 tran_end_time
 ```
+
+### Example 3
 
 ```sql
 DECLARE

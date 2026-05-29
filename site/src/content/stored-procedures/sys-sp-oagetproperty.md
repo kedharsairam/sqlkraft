@@ -1,0 +1,42 @@
+---
+name: 'sys.sp_oagetproperty'
+title: 'sp_OAGetProperty'
+category: 'general'
+description: 'Gets a property value of an OLE object. Transact-SQL syntax conventions The object token of an OLE object that was previously created by using The property name of the OLE object to return. The returned property value. If specified, it must be a local variable of the appropriate data Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are en'
+tags: ["stored-procedure"]
+pubDate: 2026-05-29
+syntax: |
+  sp_
+  OAG
+  et
+  P
+  roperty objecttoken , propertyname
+  [ , propertyvalue
+  OUTPUT
+  ]
+  [ , index... ]
+  [ ; ]
+---
+
+## Description
+
+Gets a property value of an OLE object. Transact-SQL syntax conventions The object token of an OLE object that was previously created by using The property name of the OLE object to return. The returned property value. If specified, it must be a local variable of the appropriate data Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered out of order, an error
+
+## Syntax
+
+```sql
+sp_
+OAG
+et
+P
+roperty objecttoken , propertyname
+[ , propertyvalue
+OUTPUT
+]
+[ , index... ]
+[ ; ]
+```
+
+## Permissions
+
+columns. A two-dimensional array is returned to the client as a result set with as many columns as there are elements in the first dimension of the array and with as many rows as there are elements in the second dimension of the array. In other words, the array is returned as (columns, rows). When a property return value or method return value is an array, or returns a result set to the client. (Method output parameters can't be arrays.) These procedures scan all the data values in the array to determine the appropriate SQL Server data types and data lengths to use for each column in the result set. For a particular column, these procedures use the data type and length required to represent all data values in that column. When all data values in a column share the same data type, that data type is used for the whole column. When data values in a column are of different data types, the data type of the whole column is chosen based on the following chart. You can also use to get a property value. Requires membership in the fixed server role or execute permission directly on this stored procedure. The Ole Automation Procedures server configuration option must be enabled to use any system procedure related to OLE Automation. ﾉ Expand table

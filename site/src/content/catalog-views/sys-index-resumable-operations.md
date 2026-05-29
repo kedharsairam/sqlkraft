@@ -1,53 +1,37 @@
 ---
 name: 'sys.index_resumable_operations'
-title: 'sys.index_resumable_operations (Transact-'
+title: 'sys.index_resumable_operations'
 category: 'indexes'
-description: 'The visibility of the metadata in catalog views is limited to securables that a user either owns,'
-tags: ["catalog-view", "indexes"]
+description: 'SQL Server 2017 (14.x) and later versions SQL database in Microsoft Fabric is a system view that monitors and checks the current execution status for resumable Index rebuild or creation. : SQL Server (2017 and newer), and Azure SQL Database ID of the object to which this index belongs (not nullable). ID of the index (not nullable). is unique only within the object. Last MAX_DOP used (default = 0) '
+tags: ["indexes", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  SELECT
+  *
+  FROM
+  sys.index_resumable_operations
+  WHERE
+  STATE = 1;
 ---
 
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
+## Description
 
-or on which the user was granted some permission. For more information, see
+SQL Server 2017 (14.x) and later versions SQL database in Microsoft Fabric is a system view that monitors and checks the current execution status for resumable Index rebuild or creation. : SQL Server (2017 and newer), and Azure SQL Database ID of the object to which this index belongs (not nullable). ID of the index (not nullable). is unique only within the object. Last MAX_DOP used (default = 0) Partition number within the owning index or heap. For non-
 
-Metadata
+## Syntax
 
-Visibility Configuration
+```sql
+SELECT
+*
+FROM
+sys.index_resumable_operations
+WHERE
+STATE = 1;
+```
 
-.
+## Examples
 
-List all resumable index creation or rebuild operations that are in the PAUSE state.
-
-SQL
-
-ALTER INDEX
-
-CREATE INDEX
-
-Catalog views
-
-Object catalog views
-
-sys.indexes
-
-sys.index_columns
-
-sys.xml_indexes
-
-sys.objects
-
-sys.key_constraints
-
-sys.filegroups
-
-sys.partition_schemes
-
-Querying the SQL Server System Catalog FAQ
-
-Last updated on 11/18/2025
-
-See Also
+### Example 1
 
 ```sql
 SELECT

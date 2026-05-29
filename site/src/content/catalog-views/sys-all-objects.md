@@ -2,68 +2,22 @@
 name: 'sys.all_objects'
 title: 'sys.all_objects'
 category: 'objects'
-description: 'SQL_TABLE_VALUED_FUNCTION'
-tags: ["catalog-view", "objects"]
+description: 'Analytics Platform System (PDW) SQL database in Microsoft Fabric Shows the UNION of all schema-scoped user-defined objects and system objects. Object identification number. Is unique within a database. ID of the individual owner if different from the schema owner. By default, schema-contained objects are owned by the schema owner. However, another owner can be specified by using the ALTER AUTHORIZ'
+tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
+syntax: 'sys.extended_procedures'
 ---
 
 ## Description
-SQL_TABLE_VALUED_FUNCTION
 
-SQL_TRIGGER
+Analytics Platform System (PDW) SQL database in Microsoft Fabric Shows the UNION of all schema-scoped user-defined objects and system objects. Object identification number. Is unique within a database. ID of the individual owner if different from the schema owner. By default, schema-contained objects are owned by the schema owner. However, another owner can be specified by using the ALTER AUTHORIZATION statement to change ownership.
 
-TABLE_TYPE
+## Syntax
 
-USER_TABLE
+```sql
+sys.extended_procedures
+```
 
-UNIQUE_CONSTRAINT
+## Permissions
 
-VIEW
-
-EXTENDED_STORED_PROCEDURE
-
-create_date
-
-Date the object was created.
-
-modify_date
-
-Date the object was last modified by using an ALTER statement. If
-
-the object is a table or a view, modify_date also changes when an
-
-index on the table or view is created or modified.
-
-is_ms_shipped
-
-Object created by an internal SQL Server component.
-
-is_published
-
-Object is published.
-
-is_schema_published
-
-Only the schema of the object is published.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-Object Catalog Views (Transact-SQL)
-
-Catalog Views (Transact-SQL)
-
-sys.objects (Transact-SQL)
-
-sys.system_objects (Transact-SQL)
-
-Last updated on 11/18/2025
-
-See Also
+Article • 04/12/2024 Applies to: SQL Server Contains a row for each object that is an extended stored procedure, with = . Because extended stored procedures are installed into the database, they're only visible from that database context. Selecting from the view in any other database context returns an empty result set. Description Columns inherited from For a list of columns that this view inherits, see sys.objects . Name, including path, of the DLL for this extended stored procedure. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration . Object Catalog Views (Transact-SQL) System catalog views (Transact-SQL) ﾉ Expand table Related content System catalog views (Transact-SQL) sys.all_objects (Transact-SQL) sys.system_objects (Transact-SQL) sys.triggers (Transact-SQL) Object Catalog Views (Transact-SQL) Querying the SQL Server System Catalog FAQ sys.internal_tables (Transact-SQL) Related content This view provides visibility into the classification state of the database. It can be used for managing the database classifications, as well as for generating reports. Currently only classification of database columns is supported. The following example returns a table that lists the table name, column name, label, label ID, information type, information type ID, rank, and rank description for each classified column in the database. SQL Requires the permission. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration . ７ Note Label is a keyword for Azure Synapse Analytics.

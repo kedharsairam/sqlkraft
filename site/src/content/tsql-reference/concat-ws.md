@@ -1,0 +1,16 @@
+---
+name: 'CONCAT_WS'
+title: 'CONCAT_WS'
+category: 'statements'
+description: ''
+tags: ["tsql", "statements"]
+pubDate: 2026-05-29
+---
+
+### char
+
+### nchar
+
+### nvarchar
+
+### varchar

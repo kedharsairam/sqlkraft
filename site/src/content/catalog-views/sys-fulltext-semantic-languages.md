@@ -1,89 +1,29 @@
 ---
 name: 'sys.fulltext_semantic_languages'
-title: 'sys.fulltext_semantic_languages (Transact-'
+title: 'sys.fulltext_semantic_languages'
 category: 'full-text'
-description: 'Returns a row for each language whose statistics model is registered with the instance of SQL'
-tags: ["catalog-view", "full-text"]
+description: 'Returns a row for each language whose statistics model is registered with the instance of SQL Server. When a language model is registered, that language is enabled for semantic indexing. This catalog view is similar to sys.fulltext_languages (Transact-SQL) Microsoft Windows locale identifier (LCID) for the language. Is either the value of the alias in sys.syslanguages (Transact-SQL) , or the strin'
+tags: ["full-text", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  SELECT * FROM sys.fulltext_semantic_languages;
+  GO
 ---
 
-SQL)
-
-Article
-
-•
-
-02/28/2023
-
-Applies to:
-
-SQL Server
-
-
-## Returns a row for each language whose statistics model is registered with the instance of SQL
-Server. When a language model is registered, that language is enabled for semantic indexing.
-
-This catalog view is similar to
-
-sys.fulltext_languages (Transact-SQL)
-
-.
-
-
 ## Description
-lcid
 
-int
+Returns a row for each language whose statistics model is registered with the instance of SQL Server. When a language model is registered, that language is enabled for semantic indexing. This catalog view is similar to sys.fulltext_languages (Transact-SQL) Microsoft Windows locale identifier (LCID) for the language. Is either the value of the alias in sys.syslanguages (Transact-SQL) , or the string representation of the numeric LCID.
 
-Microsoft Windows locale identifier (LCID) for the language.
+## Syntax
 
-name
+```sql
+SELECT * FROM sys.fulltext_semantic_languages;
+GO
+```
 
-sysname
+## Examples
 
-Is either the value of the alias in
-
-sys.syslanguages (Transact-SQL)
-
-corresponding
-
-to the value of
-
-, or the string representation of the numeric LCID.
-
-For more information, see
-
-Install and Configure Semantic Search
-
-.
-
-For more information about the semantic language statistics database that is installed to
-
-support semantic indexing, query the catalog view
-
-sys.fulltext_semantic_language_statistics_database (Transact-SQL)
-
-.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns or
-
-on which the user has been granted some permission.
-
-ﾉ
-
-Expand table
-
-The following example shows how to query
-
-to get
-
-information about all the language models registered for semantic indexing on the current
-
-instance of SQL Server.
-
-Install and Configure Semantic Search
-
-See Also
+### Example 1
 
 ```sql
 SELECT * FROM sys.fulltext_semantic_languages;

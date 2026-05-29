@@ -2,36 +2,11 @@
 name: 'sys.xml_schema_elements'
 title: 'sys.xml_schema_elements'
 category: 'xml'
-description: '1 = Replacement with an instance of a restriction type is'
-tags: ["catalog-view", "xml"]
+description: 'Returns a row per XML schema component that is a Type, 1 = Default value is a fixed value. This value cannot be overridden 0 = Default value is not a fixed value for the element. (default). 1 = Element is abstract and cannot be used in an instance document. A member of the substitution group of the element must appear in the instance document. 0 = Element is not abstract. (default). 0 = Element is'
+tags: ["xml", "catalog-view"]
 pubDate: 2026-05-29
 ---
 
 ## Description
-1 = Replacement with an instance of a restriction type is
 
-disallowed.
-
-0 = Replacement in an instance of a restriction type is allowed.
-
-(default)
-
-Default value of the element. NULL if a default value is not
-
-supplied.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-Catalog Views (Transact-SQL)
-
-XML Schemas (XML Type System) Catalog Views (Transact-SQL)
-
-See Also
+Returns a row per XML schema component that is a Type, 1 = Default value is a fixed value. This value cannot be overridden 0 = Default value is not a fixed value for the element. (default). 1 = Element is abstract and cannot be used in an instance document. A member of the substitution group of the element must appear in the instance document. 0 = Element is not abstract. (default). 0 = Element is not nillable. (default)

@@ -2,96 +2,126 @@
 name: 'sys.fn_trace_gettable'
 title: 'sys.fn_trace_gettable'
 category: 'system'
-description: 'Returns the content of one or more trace files in tabular form.'
-tags: ["function"]
+description: 'Returns the content of one or more trace files in tabular form. Transact-SQL syntax conventions Specifies the initial trace file to be read. , with no default. Specifies the number of rollover files to be read. This number includes the initial file specified in is specified as reads all rollover files until it reaches the end of the trace. returns a table with all the columns valid for the specifi'
+tags: ["system", "function"]
 pubDate: 2026-05-29
-returnType: 'B. Using fn_trace_gettable to return a table with an IDENTITY'
+syntax: 'fn_trace_gettable ( ''filename'' , number_files )'
 ---
 
-## A. Using fn_trace_gettable to import rows from a trace file
+## Description
 
-## column that can be loaded into a SQL Server table
+Returns the content of one or more trace files in tabular form. Transact-SQL syntax conventions Specifies the initial trace file to be read. , with no default. Specifies the number of rollover files to be read. This number includes the initial file specified in is specified as reads all rollover files until it reaches the end of the trace. returns a table with all the columns valid for the specified trace. For more information, see sp_trace_setevent (Transact-SQL) Be aware that the fn_trace_gettable function will not load rollover files (when this option is specified by using the argument) where the original trace file name ends with an underscore and a numeric value. (This does not apply to the underscore and number that are This feature will be removed in a future version of SQL Server. Avoid using this feature in Invalid parameters. Returned when the user supplied incompatible parameters.
 
-automatically appended when a file rolls over.) As a workaround, you can rename the trace files
+## Syntax
 
-to remove the underscores in the original file name. For example, if the original file is named
+```sql
+fn_trace_gettable ( 'filename' , number_files )
+```
 
-and the rollover file is named
+## Permissions
 
-, you can rename the files to
+Description Note: The columns that are returned by the snapshots.fn_trace_gettable function correspond to the values in the name column in the sys.trace_columns system view. The only difference is that the GroupID column is not returned by the function. Requires SELECT permission for mdw_reader. Data Collection See Also
 
-and
+## Remarks
 
-.
+Applies to:
 
-This function can read a trace that is still active on the instance on which it is executed.
+Returns the content of one or more trace files in tabular form.
 
-Requires ALTER TRACE permission on the server.
+Transact-SQL syntax conventions
 
-The following example calls
+Specifies the initial trace file to be read.
 
-inside the
+, with no default.
 
-clause of a
+number_files
 
-statement.
+Specifies the number of rollover files to be read. This number includes the initial file specified in
 
-The following example calls the function as part of a
+number_files
 
-statement and returns a
+number_files
 
-table with an
+is specified as
 
-column that can be loaded into the table
+reads all rollover files until it reaches
 
-.
+the end of the trace.
 
-See Also
+returns a table with all the columns valid for the
 
-sp_trace_generateevent (Transact-SQL)
+specified trace. For more information, see
 
 sp_trace_setevent (Transact-SQL)
 
-sp_trace_setfilter (Transact-SQL)
+Be aware that the fn_trace_gettable function will not load rollover files (when this option is
 
-sp_trace_setstatus (Transact-SQL)
+specified by using the
 
-```sql
-fn_trace_gettable
-```
+number_files
 
-```sql
-FROM
-```
+argument) where the original trace file name ends with an
 
-```sql
-SELECT...INTO
-```
+underscore and a numeric value. (This does not apply to the underscore and number that are
 
-```sql
-SELECT...INTO
-```
+This feature will be removed in a future version of SQL Server. Avoid using this feature in
 
-```sql
-IDENTITY
-```
+new development work, and plan to modify applications that currently use this feature.
 
-```sql
-temp_trc
-```
+Use Extended Events instead.
 
-```sql
-USE AdventureWorks2022;
-GO
-SELECT * INTO temp_trc
-FROM fn_trace_gettable('c:\temp\mytrace.trc', default);
-GO
-```
+Description
 
-```sql
-USE AdventureWorks2022;
-GO
-SELECT IDENTITY(int, 1, 1) AS RowNumber, * INTO temp_trc
-FROM fn_trace_gettable('c:\temp\mytrace.trc', default);
-GO
-```
+Invalid parameters. Returned when the user supplied incompatible parameters.
+
+is a SQL Server stored procedure that performs many of the actions
+
+previously executed by
+
+extended stored procedures available in earlier versions of
+
+SQL Server. Use
+
+instead of:
+
+only creates a trace definition. This stored procedure can't be used to start or
+
+change a trace.
+
+Parameters of all SQL Trace stored procedures (
+
+) are strictly typed. If these
+
+parameters aren't called with the correct input parameter data types, as specified in the
+
+argument description, the stored procedure returns an error.
+
+, the SQL Server service account must have
+
+permission on the trace
+
+file folder. If the SQL Server service account isn't an administrator on the computer where the
+
+trace file is located, you must explicitly grant write permission to the SQL Server service
+
+For an example of using trace stored procedures, see
+
+Create a Trace
+
+has the following characteristics:
+
+It's a rollover trace. The default
+
+is 2 but can be overridden by the user using
+
+The default
+
+@maxfilesize
+
+, as with other traces, is 5 MB and can be changed.
+
+You can automatically load the trace file created with
+
+into a table by
+
+system function. For more information, see

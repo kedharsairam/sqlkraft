@@ -2,93 +2,42 @@
 name: 'sys.linked_logins'
 title: 'sys.linked_logins'
 category: 'security'
-description: 'Summarize this article for me'
-tags: ["catalog-view", "security"]
+description: 'Returns a row per linked-server-login mapping, for use by RPC and distributed queries from local server to the corresponding linked server. Server-principal to whom mapping applies. If 1, mapping indicates session should use its own credentials; otherwise, 0 indicates that session uses the name and password that Remote user name to use when connecting. Password is also stored, but not exposed in c'
+tags: ["security", "catalog-view"]
 pubDate: 2026-05-29
 ---
 
-ﾃ
-
-Summarize this article for me
-
-Applies to:
-
-SQL Server
-
-Azure SQL Managed Instance
-
-
-## Returns a row per linked-server-login mapping, for use by RPC and distributed queries from
-local server to the corresponding linked server.
-
-
 ## Description
-ID of the server in
 
-.
+Returns a row per linked-server-login mapping, for use by RPC and distributed queries from local server to the corresponding linked server. Server-principal to whom mapping applies. If 1, mapping indicates session should use its own credentials; otherwise, 0 indicates that session uses the name and password that Remote user name to use when connecting. Password is also stored, but not exposed in catalog view interfaces.
 
-Server-principal to whom mapping applies.
+## Permissions
 
-0 = wildcard or public.
+ﾃ Summarize this article for me Applies to: SQL Server Azure SQL Managed Instance Returns a row per linked-server-login mapping, for use by RPC and distributed queries from local server to the corresponding linked server. Description ID of the server in . Server-principal to whom mapping applies. 0 = wildcard or public. If 1, mapping indicates session should use its own credentials; otherwise, 0 indicates that session uses the name and password that are supplied. Remote user name to use when connecting. Password is also stored, but not exposed in catalog view interfaces. Date the linked login was last changed. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration . SQL Server 2022 (16.x) and later versions require VIEW SERVER SECURITY STATE permission on the server. Catalog Views (Transact-SQL) Linked Servers Catalog Views (Transact-SQL) Last updated on 03/03/2026 ﾉ Expand table Related content
 
-If 1, mapping indicates session should use its own credentials;
+## Code Blocks
 
-otherwise, 0 indicates that session uses the name and password that
-
-are supplied.
-
-Remote user name to use when connecting. Password is also stored,
-
-but not exposed in catalog view interfaces.
-
-Date the linked login was last changed.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-SQL Server 2022 (16.x) and later versions require VIEW SERVER SECURITY STATE permission on
-
-the server.
-
-Catalog Views (Transact-SQL)
-
-Linked Servers Catalog Views (Transact-SQL)
-
-Last updated on 03/03/2026
-
-ﾉ
-
-Expand table
-
-Related content
 
 ```sql
 server_id
 ```
 
+
 ```sql
 sys.servers
 ```
+
 
 ```sql
 local_principal_id
 ```
 
+
 ```sql
 uses_self_credential
 ```
 
-```sql
-remote_name
-```
 
 ```sql
-modify_date
+remote_name
 ```

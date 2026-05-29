@@ -1,43 +1,23 @@
 ---
 name: 'sys.endpoints'
 title: 'sys.endpoints'
-category: 'objects'
-description: 'Indicates whether the endpoint is for administrative use.'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'Returns one row per endpoint created in the system. There''s always exactly one SYSTEM Name of the endpoint. Unique within the server. Not nullable. ID of the endpoint. Unique within the server. An endpoint with an ID less than 65536 is a system endpoint. Not nullable. ID of the server principal that created and owns this endpoint. 5 = Virtual Interface Adapter (VIA) Description of the endpoint pro'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: 'sys.database_mirroring_endpoints'
 ---
 
 ## Description
-Indicates whether the endpoint is for administrative use.
 
-0 = Nonadministrative endpoint.
+Returns one row per endpoint created in the system. There's always exactly one SYSTEM Name of the endpoint. Unique within the server. Not nullable. ID of the endpoint. Unique within the server. An endpoint with an ID less than 65536 is a system endpoint. Not nullable. ID of the server principal that created and owns this endpoint. 5 = Virtual Interface Adapter (VIA) Description of the endpoint protocol. Nullable. One of the following
 
-1 = Endpoint is an administrative endpoint.
-
-Not nullable.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-Requires VIEW SERVER SECURITY STATE permission on the server.
-
-Endpoints Catalog Views (Transact-SQL)
-
-Catalog Views (Transact-SQL)
-
-Last updated on 03/03/2026
-
-
-## Permissions for SQL Server 2022 and later
-Related content
+## Syntax
 
 ```sql
-is_admin_endpoint
+sys.database_mirroring_endpoints
 ```
+
+## Permissions
+
+Values correspond to the endpoint payload types in sys.endpoints system catalog view. If any other integer value is provided, stored procedure returns . (success) or (failure). Description Public key of the certificate, in binary format If authentication type configured on the endpoint isn't certificate-based, stored procedure returns error. User must have permission on the endpoint to execute . ﾉ Expand table

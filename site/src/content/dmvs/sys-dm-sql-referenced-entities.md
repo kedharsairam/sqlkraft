@@ -2,67 +2,35 @@
 name: 'sys.dm_sql_referenced_entities'
 title: 'sys.dm_sql_referenced_entities'
 category: 'execution'
-description: 'Requires SELECT permission on sys.dm_sql_referenced_entities and VIEW DEFINITION'
+description: 'SQL database in Microsoft Fabric Returns one row for each user-defined entity that is referenced by name in the definition of the specified referencing entity in SQL Server. A dependency between two entities is created when one user-defined entity, called the , appears by name in a persisted SQL expression of another user-defined entity, called the procedure is the specified referencing entity, th'
+tags: ["execution", "dmv"]
 pubDate: 2026-05-29
+syntax: |
+  sys.dm_sql_referenced_entities (
+  ' [ schema_name. ] referencing_entity_name ' ,
+  ' <referencing_class> ' )
+  <referencing_class> ::=
+  {
+  OBJECT
+  | DATABASE_DDL_TRIGGER
+  | SERVER_DDL_TRIGGER
+  }
 ---
 
-Requires SELECT permission on sys.dm_sql_referenced_entities and VIEW DEFINITION
+## Description
 
-permission on the referencing entity. By default, SELECT permission is granted to public.
+SQL database in Microsoft Fabric Returns one row for each user-defined entity that is referenced by name in the definition of the specified referencing entity in SQL Server. A dependency between two entities is created when one user-defined entity, called the , appears by name in a persisted SQL expression of another user-defined entity, called the procedure is the specified referencing entity, this function returns all user-defined entities that
 
-Requires VIEW DEFINITION permission on the database or ALTER DATABASE DDL TRIGGER
-
-permission on the database when the referencing entity is a database-level DDL trigger.
-
-Requires VIEW ANY DEFINITION permission on the server when the referencing entity is a
-
-server-level DDL trigger.
-
-The following example returns the entities (tables and columns) that are referenced by the
-
-database-level DDL trigger
-
-.
-
-SQL
-
-The following example returns the entities that are referenced by the user-defined function
-
-.
-
-SQL
+## Syntax
 
 ```sql
-ddlDatabaseTriggerLog
-```
-
-```sql
-dbo.ufnGetContactInformation
-```
-
-```sql
-USE
-AdventureWorks2022;
-GO
-SELECT
-referenced_schema_name,
-referenced_entity_name,
-referenced_minor_name,
-referenced_minor_id,
-referenced_class_desc
-FROM
 sys.dm_sql_referenced_entities (
-'ddlDatabaseTriggerLog'
-,
-'DATABASE_DDL_TRIGGER'
-)
-;
-GO
-```
-
-```sql
-USE
-AdventureWorks2022;
-GO
-SELECT
+' [ schema_name. ] referencing_entity_name ' ,
+' <referencing_class> ' )
+<referencing_class> ::=
+{
+OBJECT
+| DATABASE_DDL_TRIGGER
+| SERVER_DDL_TRIGGER
+}
 ```

@@ -1,57 +1,58 @@
 ---
 name: 'sys.selective_xml_index_paths'
-title: 'sys.selective_xml_index_paths (Transact-'
+title: 'sys.selective_xml_index_paths'
 category: 'indexes'
-description: '1 = maximum length is inferred.'
-tags: ["catalog-view", "indexes"]
+description: 'Available beginning in SQL Server 2012 (11.x) Service Pack 1, each row in sys.selective_xml_index_paths represents one promoted path for particular selective xml index. If you create a selective xml index on xmlcol of table T using following statement, There will be two new rows in sys.selective_xml_index_paths corresponding to the index sxi1. Unique id of the selective xml index. Promoted path. F'
+tags: ["indexes", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  CREATE
+  SELECTIVE
+  XML
+  INDEX
+  sxi1
+  ON
+  T(xmlcol)
+  FOR
+  ( path1 =
+  '/a/b/c'
+  AS
+  XQUERY
+  'xs:string'
+  ,
+  path2 =
+  '/a/b/d'
+  AS
+  XQUERY
+  'xs:double'
+  )
 ---
 
 ## Description
-1 = maximum length is inferred.
 
-0 = node() hint not present.
+Available beginning in SQL Server 2012 (11.x) Service Pack 1, each row in sys.selective_xml_index_paths represents one promoted path for particular selective xml index. If you create a selective xml index on xmlcol of table T using following statement, There will be two new rows in sys.selective_xml_index_paths corresponding to the index sxi1. Unique id of the selective xml index. Promoted path. For example, '/a/b/c/d/e'.
 
-1 = node() optimization hint applied.
+## Syntax
 
-ID of the system type of the column.
-
-ID of the user type of the column.
-
-Max Length (in bytes) of the type.
-
--1 = Column data type is varchar(max),
-
-nvarchar(max), varbinary(max), or xml.
-
-Maximum precision of the type if it is numeric-based.
-
-Otherwise 0.
-
-Maximum scale of the type if it is numeric-based.
-
-Otherwise, 0.
-
-Name of the collation of the type if it is character-
-
-based. Otherwise, NULL.
-
-0 = SINGLETON hint not present.
-
-1 = SINGLETON optimization hint applied.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-Catalog Views (Transact-SQL)
-
-XML Schemas (XML Type System) Catalog Views (Transact-SQL)
-
-See Also
+```sql
+CREATE
+SELECTIVE
+XML
+INDEX
+sxi1
+ON
+T(xmlcol)
+FOR
+( path1 =
+'/a/b/c'
+AS
+XQUERY
+'xs:string'
+,
+path2 =
+'/a/b/d'
+AS
+XQUERY
+'xs:double'
+)
+```

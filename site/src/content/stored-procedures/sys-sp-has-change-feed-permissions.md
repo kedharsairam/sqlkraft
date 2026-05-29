@@ -1,75 +1,22 @@
 ---
 name: 'sys.sp_has_change_feed_permissions'
-title: 'sys.sp_has_change_feed_permissions'
+title: 'sp_has_change_feed_permissions'
 category: 'general'
-description: 'SQL Server 2022 (16.x) and later versions'
+description: 'SQL Server 2022 (16.x) and later versions Mirrored databases in Microsoft SQL database in Microsoft Fabric Internal procedure that checks for permissions when enabling change feed publishing. This system stored procedure is used for: SQL database in Microsoft Fabric Microsoft Fabric mirrored databases Transact-SQL syntax conventions can be one of the following values: This system stored procedure '
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: |
+  sys.sp_has_change_feed_permissions [ [ @destination_type = ] destination_type ]
+  [ ; ]
 ---
 
 ## Description
-Azure Synapse Link
 
-(default)
+SQL Server 2022 (16.x) and later versions Mirrored databases in Microsoft SQL database in Microsoft Fabric Internal procedure that checks for permissions when enabling change feed publishing. This system stored procedure is used for: SQL database in Microsoft Fabric Microsoft Fabric mirrored databases Transact-SQL syntax conventions can be one of the following values: This system stored procedure is used internally and isn't recommended for direct
 
-Fabric mirroring
-
-
-## Description
-Success
-
-Failure
-
-The
-
-destination_type
-
-is invalid
-
-Insufficient permissions
-
-Only
-
-role membership is required to execute this procedure.
-
-sys.sp_help_change_feed (Transact-SQL)
-
-sys.sp_help_change_feed_table (Transact-SQL)
-
-sys.sp_change_feed_configure_parameters (Transact-SQL)
-
-sys.dm_change_feed_log_scan_sessions (Transact-SQL)
-
-sys.dm_change_feed_errors (Transact-SQL)
-
-Last updated on 12/17/2025
-
-ﾉ
-
-Expand table
-
-Related content
+## Syntax
 
 ```sql
-0
-```
-
-```sql
-2
-```
-
-```sql
-0
-```
-
-```sql
-1
-```
-
-```sql
-22740
-```
-
-```sql
-22702
+sys.sp_has_change_feed_permissions [ [ @destination_type = ] destination_type ]
+[ ; ]
 ```

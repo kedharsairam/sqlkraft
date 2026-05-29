@@ -1,106 +1,72 @@
 ---
 name: 'sys.sp_persistent_version_cleanup'
-title: 'sys.sp_persistent_version_cleanup'
+title: 'sp_persistent_version_cleanup'
 category: 'general'
-description: 'SQL Server 2019 (15.x) and later versions'
+description: 'SQL Server 2019 (15.x) and later versions SQL database in Microsoft Fabric Manually starts persistent version store (PVS) cleanup process, a key element of accelerated database recovery (ADR). The cleaner removes obsolete row versions from the in-row and off- , and also removes uncommitted changes in PVS from aborted transactions. It isn''t typically necessary to start the PVS cleanup process manua'
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: 'sys.sp_persistent_version_cleanup'
 ---
 
-,
+## Description
 
-, or the
+SQL Server 2019 (15.x) and later versions SQL database in Microsoft Fabric Manually starts persistent version store (PVS) cleanup process, a key element of accelerated database recovery (ADR). The cleaner removes obsolete row versions from the in-row and off- , and also removes uncommitted changes in PVS from aborted transactions. It isn't typically necessary to start the PVS cleanup process manually using
 
-fixed database role in order to call the function
-
-successfully.
-
-(success), or
-
-(failure).
-
-Lock was successfully released.
-
-Indicates parameter validation or other call error.
-
-When an application calls
-
-multiple times for the same lock resource,
-
-must be called the same number of times to release the lock.
-
-When the server shuts down for any reason, the locks are released.
-
-Requires membership in the
-
-role.
-
-The following example releases the lock associated with the current transaction on the
-
-resource
-
-in the
-
-database.
-
-SQL
-
-ﾉ
-
-Expand table
+## Syntax
 
 ```sql
->= 0
+sys.sp_persistent_version_cleanup
 ```
 
-```sql
-< 0
-```
+## Examples
+
+### Example 1
 
 ```sql
-0
+sys.sp_persistent_version_cleanup
 ```
 
-```sql
--999
-```
+### Example 2
 
 ```sql
-sp_getapplock
+sys.sp_persistent_version_cleanup
 ```
 
-```sql
-sp_releaseapplock
-```
+### Example 3
 
 ```sql
-Form1
+sys.sp_persistent_version_cleanup
 ```
 
+### Example 4
+
 ```sql
-AdventureWorks2025
+SELECT
+*
+FROM
+sys.dm_exec_requests
+WHERE
+command
+LIKE
+'%PERSISTED_VERSION_CLEANER%'
+;
 ```
+
+### Example 5
+
+```sql
+EXECUTE
+sys.sp_persistent_version_cleanup [database_name];
+EXECUTE
+sys.sp_persistent_version_cleanup [WideWorldImporters];
+```
+
+### Example 6
 
 ```sql
 USE
-AdventureWorks2022;
+[WideWorldImporters];
 GO
 EXECUTE
-sp_getapplock
-@DbPrincipal =
-'dbo'
-,
-@
-Resource
-=
-'Form1'
-,
-@LockMode =
-'Shared'
-;
-EXECUTE
-sp_releaseapplock
-@DbPrincipal =
-'dbo'
-,
+sys.sp_persistent_version_cleanup;
 ```

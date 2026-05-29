@@ -2,127 +2,22 @@
 name: 'sys.fn_my_permissions'
 title: 'sys.fn_my_permissions'
 category: 'system'
-description: 'Azure SQL Managed Instance'
-tags: ["function"]
+description: 'Analytics Platform System (PDW) Returns a list of the permissions effectively granted to the principal on a securable. A related Transact-SQL syntax conventions The name of the securable. If the securable is the server or a database, this value should be set is a scalar expression of type The name of the class of securable for which permissions are listed. This argument must be one of the followin'
+tags: ["system", "function"]
 pubDate: 2026-05-29
+syntax: 'REMOTE SERVICE BINDING'
 ---
 
-the query fails.
-
-
 ## Description
-Name of the securable on which the listed permissions are effectively
 
-granted.
+Analytics Platform System (PDW) Returns a list of the permissions effectively granted to the principal on a securable. A related Transact-SQL syntax conventions The name of the securable. If the securable is the server or a database, this value should be set is a scalar expression of type The name of the class of securable for which permissions are listed. This argument must be one of the following values:
 
-Column name if the securable has columns, otherwise
-
-.
-
-Name of the permission.
-
-This table-valued function returns a list of the effective permissions held by the calling principal
-
-on a specified securable. An effective permission is any one of the following options:
-
-A permission granted directly to the principal, and not denied.
-
-A permission implied by a higher-level permission held by the principal and not denied.
-
-A permission granted to a role or group of which the principal is a member, and not
-
-denied.
-
-A permission held by a role or group of which the principal is a member, and not denied.
-
-The permission evaluation is always performed in the security context of the caller. To
-
-determine whether some other principal has an effective permission, the caller must have
-
-permission on that principal.
-
-For schema-level entities, one-, two-, or three-part non-null names are accepted. For database-
-
-level entities, a one-part name is accepted, with a null value meaning the
-
-current database
-
-. For
-
-the server itself, a null value (meaning the
-
-current server
-
-) is required.
-
-can't
-
-check permissions on a linked server.
-
-The following query returns a list of built-in securable classes:
-
-SQL
-
-If
-
-is supplied as the value of
-
-securable
-
-or
-
-securable_class
-
-, the value is interpreted as
-
-.
-
-ﾉ
-
-Expand table
+## Syntax
 
 ```sql
-entity_name
+REMOTE SERVICE BINDING
 ```
 
-```sql
-subentity_name
-```
+## Permissions
 
-```sql
-NULL
-```
-
-```sql
-permission_name
-```
-
-```sql
-IMPERSONATE
-```
-
-```sql
-fn_my_permissions
-```
-
-```sql
-DEFAULT
-```
-
-```sql
-NULL
-```
-
-```sql
-SELECT
-DISTINCT
-class_desc
-FROM
-fn_builtin_permissions(
-DEFAULT
-)
-ORDER
-BY
-class_desc;
-GO
-```
+The function isn't supported in Azure Synapse Analytics dedicated SQL pools. Requires membership in the role. The following example returns a list of the effective permissions of the caller on the server. SQL The following example returns a list of the effective permissions of the caller on the database. SQL The following example returns a list of the effective permissions of the caller on the view in the schema of the database. SQL

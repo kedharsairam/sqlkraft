@@ -1,56 +1,19 @@
 ---
 name: 'sys.resource_governor_workload_groups'
 title: 'sys.resource_governor_workload_groups'
-category: 'objects'
-description: 'SQL Server 2016 (13.x) and later versions'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'Returns the stored workload group configuration. Each row represents a workload group. Each workload group uses one resource pool. Unique ID of the workload group. Not nullable. Name of the workload group. Not nullable. Is the relative importance of a request in this workload group. Importance is one of the Importance is relative to other workload groups in the same resource pool. Maximum memory g'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: 'request_max_memory_grant_percent'
 ---
 
-Applies to:
+## Description
 
-SQL Server 2016 (13.x) and later versions
+Returns the stored workload group configuration. Each row represents a workload group. Each workload group uses one resource pool. Unique ID of the workload group. Not nullable. Name of the workload group. Not nullable. Is the relative importance of a request in this workload group. Importance is one of the Importance is relative to other workload groups in the same resource pool. Maximum memory grant for a single request, as
 
-Azure SQL Database
+## Syntax
 
-Azure
-
-SQL Managed Instance
-
-Azure Synapse Analytics
-
-SQL database in Microsoft Fabric
-
-This section contains the following catalog views.
-
-sys.database_query_store_options (Transact-SQL)
-
-sys.query_context_settings (Transact-SQL)
-
-sys.query_store_plan (Transact-SQL)
-
-sys.query_store_query (Transact-SQL)
-
-sys.query_store_query_text (Transact-SQL)
-
-sys.query_store_wait_stats (Transact-SQL)
-
-sys.query_store_runtime_stats (Transact-SQL)
-
-sys.query_store_runtime_stats_interval (Transact-SQL)
-
-sys.query_store_query_hints (Transact-SQL)
-
-sys.database_query_store_internal_state (Transact-SQL)
-
-Learn more about Query Store in the following articles:
-
-Query Store Stored Procedures (Transact-SQL)
-
-Monitoring Performance By Using the Query Store
-
-Query Store for secondary replicas
-
-Last updated on 11/18/2025
-
-Next steps
+```sql
+request_max_memory_grant_percent
+```

@@ -2,105 +2,144 @@
 name: 'sys.index_columns'
 title: 'sys.index_columns'
 category: 'objects'
-description: '= Column isn''t an included column.'
-tags: ["catalog-view", "objects"]
+description: 'Analytics Platform System (PDW) Contains one row per column that is part of an index or unordered table (heap). ID of the object the index is defined on. ID of the index in which the column is defined. = Row Identifier (RID) in a nonclustered index. Ordinal (1-based) within set of key-columns. 0 = Not a key column, or is an XML index, columnstore index, Note: An XML or spatial or JSON index can''t '
+tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
+syntax: 'data_clustering_ordinal'
 ---
 
 ## Description
-= Column isn't an included column.
 
-Columns implicitly added because they're part of the clustering
+Analytics Platform System (PDW) Contains one row per column that is part of an index or unordered table (heap). ID of the object the index is defined on. ID of the index in which the column is defined. = Row Identifier (RID) in a nonclustered index. Ordinal (1-based) within set of key-columns. 0 = Not a key column, or is an XML index, columnstore index, Note: An XML or spatial or JSON index can't be a key because
 
-key aren't listed in
-
-.
-
-Columns implicitly added because they're a partitioning column
-
-are returned as
-
-.
-
-: Azure Synapse Analytics, SQL Server 2022 (16.x),
-
-Azure SQL Database, and Azure SQL Managed Instance
-
-Ordinal (1-based) within set of order columns in an ordered
-
-columnstore index. For more on ordered columnstore indexes,
-
-see
-
-Performance tuning with ordered columnstore indexes
-
-.
-
-0 = Not a columnstore index & data clustering ordinal doesn't
-
-apply
-
-: SQL Server 2025 (17.x)
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-The following example returns all indexes and index columns for the table
-
-.
-
-SQL
-
-AUTD
-
-Here's the result set.
-
-Output
-
-Object Catalog Views (Transact-SQL)
-
-Catalog Views (Transact-SQL)
-
-sys.indexes (Transact-SQL)
-
-sys.objects (Transact-SQL)
-
-CREATE INDEX (Transact-SQL)
-
-sys.columns (Transact-SQL)
-
-Querying the SQL Server System Catalog FAQ
-
-Last updated on 11/18/2025
-
-Next steps
-
-```sql
-0
-```
-
-```sql
-sys.index_columns
-```
-
-```sql
-0
-```
+## Syntax
 
 ```sql
 data_clustering_ordinal
 ```
 
+## Arguments
+
+Applies to:
+
+
+Azure SQL Managed Instance
+
+
+Returns information about the index key. Returns NULL for XML indexes.
+
+
+Transact-SQL syntax conventions
+
+
+Is the object identification number of the table or indexed view.
+
+
+Is the index identification number.
+
+
+Is the index key column position.
+
+
+Is the name of the property for which information will be returned.
+
+
+is a character
+
+
+string and can be one of the following values.
+
+
+Description
+
+
+Column ID at the
+
+
+position of the index.
+
+
+This feature will be removed in a future version of SQL Server. Avoid using this feature in
+
+
+new development work, and plan to modify applications that currently use this feature.
+
+
+Instead, use
+
+
+Expand table
+
+
+sys.indexes (Transact-SQL)
+
+
+sys.index_columns (Transact-SQL)
+
+
+sys.stats (Transact-SQL)
+
+
+sys.stats_columns (Transact-SQL)
+
+
+Last updated on 11/18/2025
+
+
+DROP INDEX (Transact-SQL)
+
+
+EVENTDATA (Transact-SQL)
+
+
+sys.index_columns (Transact-SQL)
+
+
+sys.indexes (Transact-SQL)
+
+
+sys.spatial_index_tessellations (Transact-SQL)
+
+
+sys.spatial_indexes (Transact-SQL)
+
+
+Spatial Indexes Overview
+
+
+## Examples
+
+### Example 1
+
+```sql
+0
+```
+
+### Example 2
+
+```sql
+sys.index_columns
+```
+
+### Example 3
+
+```sql
+0
+```
+
+### Example 4
+
+```sql
+data_clustering_ordinal
+```
+
+### Example 5
+
 ```sql
 Production.BillOfMaterials
 ```
+
+### Example 6
 
 ```sql
 USE
@@ -133,22 +172,4 @@ WHERE
 i.object_id = OBJECT_ID(
 'Production.BillOfMaterials'
 );
-```
-
-```sql
-index_name                                                 column_name
-index_column_id key_ordinal is_included_column
----------------------------------------------------------- -----------------  ------
---------- ----------- -------------
-AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate ProductAssemblyID  1
-1           0
-AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate ComponentID        2
-2           0
-AK_BillOfMaterials_ProductAssemblyID_ComponentID_StartDate StartDate          3
-3           0
-PK_BillOfMaterials_BillOfMaterialsID                       BillOfMaterialsID  1
-1           0
-IX_BillOfMaterials_UnitMeasureCode                         UnitMeasureCode    1
-1           0
-(5 row(s) affected)
 ```
