@@ -1,0 +1,154 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Parallel query example — Architecture Guide — SqlKraft</title><meta name="description" content="Setting the max degree of parallelism option to 0 (default) enables SQL Server to use all"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Parallel query example</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Parallel query example</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Setting the max degree of parallelism option to 0 (default) enables SQL Server to use all</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Setting the max degree of parallelism option to 0 (default) enables SQL Server to use all</p>
+<p>available processors up to a maximum of 64 processors in a parallel plan execution. Although</p>
+<p>SQL Server sets a runtime target of 64 logical processors when MAXDOP option is set to 0, a</p>
+<p>different value can be manually set if needed. Setting MAXDOP to 0 for queries and indexes</p>
+<p>allows SQL Server to use all available processors up to a maximum of 64 processors for the</p>
+<p>given queries or indexes in a parallel plan execution. MAXDOP isn’t an enforced value for all</p>
+<p>parallel queries, but rather a tentative target for all queries eligible for parallelism. This means</p>
+<p>that if not enough worker threads are available at runtime, a query might execute with a lower</p>
+<p>degree of parallelism than the MAXDOP server configuration option.</p>
+<p>The following query counts the number of orders placed in a specific quarter, starting on April</p>
+<p>1, 2000, and in which at least one line item of the order was received by the customer later</p>
+<p>than the committed date. This query lists the count of such orders grouped by each order</p>
+<p>priority and sorted in ascending priority order.</p>
+<p>This example uses theoretical table and column names.</p>
+<p>SQL</p>
+<p>Assume the following indexes are defined on the</p>
+<p>and</p>
+<p>tables:</p>
+<p>SQL</p>
+<p></p>
+<p>Tip</p>
+<p>For more information, see</p>
+<p>for guidelines on configuring</p>
+<p>MAXDOP at the server, database, query, or hint level.</p>
+<p>Here is one possible parallel plan generated for the query previously shown:</p>
+<p>Output</p>
+<p>The illustration below shows a query plan executed with a degree of parallelism equal to 4 and</p>
+<p>involving a two-table join.</p>
+<p>The parallel plan contains three parallelism operators. Both the Index Seek operator of the</p>
+<p>index and the Index Scan operator of the</p>
+<p>index are</p>
+<p>performed in parallel. This produces several exclusive streams. This can be determined from the</p>
+<p>nearest Parallelism operators above the Index Scan and Index Seek operators, respectively.</p>
+<p>Both are repartitioning the type of exchange. That is, they are just reshuffling data among the</p>
+<p>streams and producing the same number of streams on their output as they have on their</p>
+<p>input. This number of streams is equal to the degree of parallelism.</p>
+<p>The parallelism operator above the</p>
+<p>Index Scan operator is repartitioning its</p>
+<p>input streams using the value of</p>
+<p>as a key. In this way, the same values of</p>
+<p>end up in the same output stream. At the same time, output streams maintain the</p>
+<p>order on the</p>
+<p>column to meet the input requirement of the Merge Join operator.</p>
+<p>The parallelism operator above the Index Seek operator is repartitioning its input streams using</p>
+<p>the value of</p>
+<p>. Because its input isn’t sorted on the</p>
+<p>column values and</p>
+<p>this is the join column in the</p>
+<p>operator, the Sort operator between the parallelism</p>
+<p>and Merge Join operators make sure that the input is sorted for the</p>
+<p>operator on</p>
+<p>the join columns. The</p>
+<p>operator, like the Merge Join operator, is performed in parallel.</p>
+<p>The topmost parallelism operator gathers results from several streams into a single stream.</p>
+<p>Partial aggregations performed by the Stream Aggregate operator below the parallelism</p>
+<p>operator are then accumulated into a single</p>
+<p>value for each different value of the</p>
+<p>in the Stream Aggregate operator above the parallelism operator. Because</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">lineitem</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">orders</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">o_orderpriority,</span></span>
+<span class="line"><span style="color:#E1E4E8">COUNT</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">*</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">Order_Count</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">orders</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">o_orderdate </span><span style="color:#F97583">>=</span></span>
+<span class="line"><span style="color:#9ECBFF">'2000/04/01'</span></span>
+<span class="line"><span style="color:#F97583">AND</span></span>
+<span class="line"><span style="color:#E1E4E8">o_orderdate </span><span style="color:#F97583">&#x3C;</span></span>
+<span class="line"><span style="color:#E1E4E8">DATEADD</span></span>
+<span class="line"><span style="color:#E1E4E8">(mm, </span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#9ECBFF">'2000/04/01'</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">AND</span></span>
+<span class="line"><span style="color:#F97583">EXISTS</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">lineitem</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">l_orderkey </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> o_orderkey</span></span>
+<span class="line"><span style="color:#F97583">AND</span></span>
+<span class="line"><span style="color:#E1E4E8">l_commitdate </span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8"> l_receiptdate</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">GROUP</span></span>
+<span class="line"><span style="color:#F97583">BY</span></span>
+<span class="line"><span style="color:#E1E4E8">o_orderpriority</span></span>
+<span class="line"><span style="color:#E1E4E8">ORDER</span></span>
+<span class="line"><span style="color:#F97583">BY</span></span>
+<span class="line"><span style="color:#E1E4E8">o_orderpriority</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">l_order_dates_idx</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">lineitem</span></span>
+<span class="line"><span style="color:#E1E4E8">(l_orderkey, l_receiptdate, l_commitdate, l_shipdate)</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">UNIQUE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">o_datkeyopr_idx</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">ORDERS</span></span>
+<span class="line"><span style="color:#E1E4E8">(o_orderdate, o_orderkey, o_custkey, o_orderpriority)</span></span>
+<span class="line"><span style="color:#E1E4E8">|</span><span style="color:#6A737D">--Stream Aggregate(GROUP BY:([ORDERS].[o_orderpriority])</span></span>
+<span class="line"><span style="color:#E1E4E8">DEFINE:([Expr1005]</span><span style="color:#F97583">=</span><span style="color:#79B8FF">COUNT</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">*</span><span style="color:#E1E4E8">)))</span></span>
+<span class="line"><span style="color:#E1E4E8">|</span><span style="color:#6A737D">--Parallelism(Gather Streams, ORDER BY:</span></span>
+<span class="line"><span style="color:#E1E4E8">([ORDERS].[o_orderpriority] </span><span style="color:#F97583">ASC</span><span style="color:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#E1E4E8">|</span><span style="color:#6A737D">--Stream Aggregate(GROUP BY:</span></span>
+<span class="line"><span style="color:#E1E4E8">([ORDERS].[o_orderpriority])</span></span>
+<span class="line"><span style="color:#E1E4E8">DEFINE:([Expr1005]</span><span style="color:#F97583">=</span><span style="color:#79B8FF">Count</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">*</span><span style="color:#E1E4E8">)))</span></span>
+<span class="line"><span style="color:#E1E4E8">|</span><span style="color:#6A737D">--Sort(ORDER BY:([ORDERS].[o_orderpriority] ASC))</span></span>
+<span class="line"><span style="color:#E1E4E8">|</span><span style="color:#6A737D">--Merge Join(Left Semi Join, MERGE:</span></span>
+<span class="line"><span style="color:#E1E4E8">([ORDERS].[o_orderkey])</span><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#E1E4E8">([LINEITEM].[l_orderkey]),</span></span>
+<span class="line"><span style="color:#E1E4E8">RESIDUAL:([ORDERS].[o_orderkey]</span><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#E1E4E8">[LINEITEM].[l_orderkey]))</span></span>
+<span class="line"><span style="color:#E1E4E8">|</span><span style="color:#6A737D">--Sort(ORDER BY:([ORDERS].[o_orderkey] ASC))</span></span>
+<span class="line"><span style="color:#E1E4E8">|    |</span><span style="color:#6A737D">--Parallelism(Repartition Streams,</span></span>
+<span class="line"><span style="color:#F97583">PARTITION</span><span style="color:#E1E4E8"> COLUMNS:</span></span>
+<span class="line"><span style="color:#E1E4E8">([ORDERS].[o_orderkey]))</span></span>
+<span class="line"><span style="color:#E1E4E8">|         |</span><span style="color:#6A737D">--Index Seek(OBJECT:</span></span>
+<span class="line"><span style="color:#E1E4E8">([tpcd1G].[dbo].[ORDERS].[O_DATKEYOPR_IDX]),</span></span>
+<span class="line"><span style="color:#E1E4E8">SEEK:([ORDERS].[o_orderdate] </span><span style="color:#F97583">>=</span></span>
+<span class="line"><span style="color:#E1E4E8">Apr  </span><span style="color:#79B8FF">1</span><span style="color:#79B8FF"> 2000</span><span style="color:#79B8FF"> 12</span><span style="color:#E1E4E8">:00AM </span><span style="color:#F97583">AND</span></span>
+<span class="line"><span style="color:#E1E4E8">[ORDERS].[o_orderdate] </span><span style="color:#F97583">&#x3C;</span></span>
+<span class="line"><span style="color:#E1E4E8">Jul  </span><span style="color:#79B8FF">1</span><span style="color:#79B8FF"> 2000</span><span style="color:#79B8FF"> 12</span><span style="color:#E1E4E8">:00AM) ORDERED)</span></span>
+<span class="line"><span style="color:#E1E4E8">|</span><span style="color:#6A737D">--Parallelism(Repartition Streams,</span></span>
+<span class="line"><span style="color:#F97583">PARTITION</span><span style="color:#E1E4E8"> COLUMNS:</span></span>
+<span class="line"><span style="color:#E1E4E8">([LINEITEM].[l_orderkey]),</span></span>
+<span class="line"><span style="color:#F97583">ORDER BY</span><span style="color:#E1E4E8">:([LINEITEM].[l_orderkey] </span><span style="color:#F97583">ASC</span><span style="color:#E1E4E8">))</span></span>
+<span class="line"><span style="color:#E1E4E8">|</span><span style="color:#6A737D">--Filter(WHERE:</span></span>
+<span class="line"><span style="color:#E1E4E8">([LINEITEM].[l_commitdate]</span><span style="color:#F97583">&#x3C;</span></span>
+<span class="line"><span style="color:#E1E4E8">[LINEITEM].[l_receiptdate]))</span></span>
+<span class="line"><span style="color:#E1E4E8">|</span><span style="color:#6A737D">--Index Scan(OBJECT:</span></span>
+<span class="line"><span style="color:#E1E4E8">([tpcd1G].[dbo].[LINEITEM].[L_ORDER_DATES_IDX]), ORDERED)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">o_datkey_ptr</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">l_order_dates_idx</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">l_order_dates_idx</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">L_ORDERKEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">L_ORDERKEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">L_ORDERKEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">O_ORDERKEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">O_ORDERKEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">Merge</span><span style="color:#F97583"> Join</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">Merge</span><span style="color:#F97583"> Join</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Sort</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SUM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">O_ORDERPRIORITY</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

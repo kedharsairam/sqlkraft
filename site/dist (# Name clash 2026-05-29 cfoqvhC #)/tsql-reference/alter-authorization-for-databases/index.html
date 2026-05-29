@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ALTER AUTHORIZATION for databases — T-SQL Reference — SqlKraft</title><meta name="description" content="The new owner principal must be one of the following:"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>ALTER AUTHORIZATION for databases</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>ALTER AUTHORIZATION for databases</h1> <span class="cat-badge" data-astro-cid-s2stm25t>statements</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#statements</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <h2 id="for-sql-server">For SQL Server</h2>
+<h2 id="for-azure-sql-database">For Azure SQL Database</h2>
+<p>The new owner principal must be one of the following:</p>
+<p>A SQL Server authentication login.</p>
+<p>A Windows authentication login representing a Windows user (not a group).</p>
+<p>A Windows user that authenticates through a Windows authentication login representing</p>
+<p>a Windows group.</p>
+<p>If you are not</p>
+<p>a member of the</p>
+<p>fixed server role, you must have at least TAKE OWNERSHIP</p>
+<p>permission on the database, and must have IMPERSONATE permission on the new owner login.</p>
+<p>The new owner principal must be one of the following:</p>
+<p>A SQL Server authentication login.</p>
+<p>A federated user (not a group) present in Microsoft Entra ID.</p>
+<p>A managed user (not a group) or an application present in Microsoft Entra ID.</p>
+<p>If the new owner is a Microsoft Entra user, it cannot exist as a user in the database where the</p>
+<p>new owner will become the new database owner (dbo). The Microsoft Entra user must first be</p>
+<p>removed from the database before executing the ALTER AUTHORIZATION statement changing</p>
+<p>the database ownership to the new user. For more information about configuring Microsoft</p>
+<p>Entra users with SQL Database, see</p>
+<p>Configure Microsoft Entra authentication</p>
+<p>.</p>
+<p>You must</p>
+<p>connect to the target database to change the owner of that database.</p>
+<p>The following types of accounts can change the owner of a database.</p>
+<p>The service-level principal login, which is the SQL administrator provisioned when the</p>
+<p>logical server in Azure</p>
+<p>was created.</p>
+<p>The Microsoft Entra administrator for the logical server..</p>
+<p>The current owner of the database.</p>
+<p>The following table summarizes the requirements:</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<h4 id="executor">Executor</h4>
+<h4 id="target">Target</h4>
+<h4 id="result">Result</h4>
+<h3 id="db_owner">db_owner</h3>
+<h3 id="db_owner-1">db_owner</h3>
+<p>SQL Server Authentication login</p>
+<p>SQL Server Authentication login</p>
+<p>Success</p>
+<p>SQL Server Authentication login</p>
+<p>Microsoft Entra user</p>
+<p>Fail</p>
+<p>Microsoft Entra user</p>
+<p>SQL Server Authentication login</p>
+<p>Success</p>
+<p>Microsoft Entra user</p>
+<p>Microsoft Entra user</p>
+<p>Success</p>
+<p>To verify a Microsoft Entra owner of the database, execute the following Transact-SQL</p>
+<p>command in a user database (in this example</p>
+<p>).</p>
+<p>SQL</p>
+<p>The output will be a GUID (such as XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX) which</p>
+<p>corresponds to the object ID of the Microsoft Entra user or service principal assigned as the</p>
+<p>database owner. You can verify this by</p>
+<p>checking the user’s object ID in Microsoft Entra ID</p>
+<p>.</p>
+<p>When a SQL Server authentication login user is the database owner, execute the following</p>
+<p>statement in the master database to verify the database owner:</p>
+<p>SQL</p>
+<p>Instead of using Microsoft Entra users as individual owners of the database, use a Microsoft</p>
+<p>Entra group as a member of the</p>
+<p>fixed database role. The following steps show how</p>
+<p>to configure a disabled login as the database owner, and make a Microsoft Entra group</p>
+<p>(</p>
+<p>) a member of the</p>
+<p>role.</p>
+<ol>
+<li>Login to SQL Server as Microsoft Entra admin, and change the owner of the database to a</li>
+</ol>
+<p>disabled SQL Server authentication login. For example, from the user database execute:</p>
+<p>SQL</p>
+<h3 id="db_owner-2">db_owner</h3>
+<h3 id="db_owner-3">db_owner</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">testdb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">mydbogroup</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">CAST</span></span>
+<span class="line"><span style="color:#E1E4E8">(owner_sid</span></span>
+<span class="line"><span style="color:#F97583">as</span></span>
+<span class="line"><span style="color:#F97583">uniqueidentifier</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">Owner_SID</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">databases</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#F97583">name</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">'testdb'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#79B8FF">d</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">name</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">d</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">owner_sid</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">sl</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">name</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">databases</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">d</span></span>
+<span class="line"><span style="color:#F97583">JOIN</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">sql_logins</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">sl</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">d</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">owner_sid</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> sl</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">sid</span><span style="color:#E1E4E8">;</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

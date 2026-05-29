@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Exchange Spill Event Class — Operations Guide — SqlKraft</title><meta name="description" content="Applies to:
+
+SQL Server
+
+Azure SQL Database
+
+Azure SQL Managed Instance
+
+SQL database in Microsoft Fabric
+
+The
+
+event class indicates that communication buffers in a parallel query plan
+
+have been tem
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-o76tdi4r]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-o76tdi4r] .sep[data-astro-cid-o76tdi4r]{color:var(--border-glass)}.ops-detail[data-astro-cid-o76tdi4r]{max-width:900px}.detail-header[data-astro-cid-o76tdi4r]{margin-bottom:24px}.meta-row[data-astro-cid-o76tdi4r]{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}.topic-badge[data-astro-cid-o76tdi4r]{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--accent);border:1px solid var(--accent);padding:2px 10px;border-radius:4px;font-family:var(--font-mono)}.tag-strip[data-astro-cid-o76tdi4r]{display:flex;flex-wrap:wrap;gap:4px}.tag-pill[data-astro-cid-o76tdi4r]{font-size:11px;color:var(--text-secondary);background:#ffffff0d;padding:2px 8px;border-radius:4px;font-family:var(--font-mono)}.detail-title[data-astro-cid-o76tdi4r]{font-size:24px;font-weight:700;color:var(--text-primary);line-height:1.3}.detail-desc[data-astro-cid-o76tdi4r]{font-size:14px;color:var(--text-secondary);margin-top:8px;line-height:1.6}.body-content[data-astro-cid-o76tdi4r]{font-size:14px;line-height:1.7;color:var(--text-primary)}.body-content[data-astro-cid-o76tdi4r] pre{background:#0d1117;border:1px solid var(--border-glass);border-radius:8px;padding:16px;overflow-x:auto;font-size:13px;line-height:1.5;margin:16px 0}.body-content[data-astro-cid-o76tdi4r] code{font-family:var(--font-mono);font-size:13px}.body-content[data-astro-cid-o76tdi4r] p{margin-bottom:16px}.body-content[data-astro-cid-o76tdi4r] h2{font-size:18px;font-weight:600;color:var(--text-primary);margin:24px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--border-glass)}.body-content[data-astro-cid-o76tdi4r] h3{font-size:16px;font-weight:600;color:var(--text-primary);margin:20px 0 10px}.body-content[data-astro-cid-o76tdi4r] ul,.body-content[data-astro-cid-o76tdi4r] ol{margin:8px 0 16px;padding-left:24px}.body-content[data-astro-cid-o76tdi4r] li{margin-bottom:4px}.detail-footer[data-astro-cid-o76tdi4r]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass)}.detail-footer[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]{color:var(--accent);text-decoration:none;font-size:13px}.detail-footer[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-o76tdi4r> <a href="/sqlkraft/" data-astro-cid-o76tdi4r>&larr; Home</a> <span class="sep" data-astro-cid-o76tdi4r>/</span> <a href="/sqlkraft/operations/" data-astro-cid-o76tdi4r>Operations</a> <span class="sep" data-astro-cid-o76tdi4r>/</span> <span data-astro-cid-o76tdi4r>Exchange Spill Event Class</span> </nav> <article class="ops-detail" data-astro-cid-o76tdi4r> <header class="detail-header" data-astro-cid-o76tdi4r> <div class="meta-row" data-astro-cid-o76tdi4r> <span class="topic-badge" data-astro-cid-o76tdi4r>event classes</span> <div class="tag-strip" data-astro-cid-o76tdi4r> <span class="tag-pill" data-astro-cid-o76tdi4r>#event-classes</span><span class="tag-pill" data-astro-cid-o76tdi4r>#exchange-spill-event-class</span> </div> </div> <h1 class="detail-title" data-astro-cid-o76tdi4r>Exchange Spill Event Class</h1> <p class="detail-desc" data-astro-cid-o76tdi4r>Applies to:
+
+SQL Server
+
+Azure SQL Database
+
+Azure SQL Managed Instance
+
+SQL database in Microsoft Fabric
+
+The
+
+event class indicates that communication buffers in a parallel query plan
+
+have been tem
+</p> </header> <div class="body-content" data-astro-cid-o76tdi4r> <p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Database</p>
+<p>Azure SQL Managed Instance</p>
+<p>SQL database in Microsoft Fabric</p>
+<p>The</p>
+<p>event class indicates that communication buffers in a parallel query plan</p>
+<p>have been temporarily written to the</p>
+<p>database. This occurs rarely and only when a</p>
+<p>query plan has multiple range scans.</p>
+<p>Normally, the Transact-SQL query that generates such range scans has many BETWEEN</p>
+<p>operators, each of which selects a range of rows from a table or an index. Alternatively, you can</p>
+<p>obtain multiple ranges using expressions such as (T.a > 10 AND T.a &#x3C; 20) OR (T.a > 100 AND</p>
+<p>T.a &#x3C; 120). Additionally, the query plans must require that these ranges be scanned in order</p>
+<p>either because there is an ORDER BY clause on T.a, or because an iterator within the plan</p>
+<p>requires that it consume the tuples in sorted order.</p>
+<p>When a query plan for such a query has multiple</p>
+<p>operators, the memory</p>
+<p>communication buffers used by the</p>
+<p>operators become full, and a situation can arise</p>
+<p>whereby the query’s execution progress stops. In this situation, one of the</p>
+<p>operators writes its output buffer to</p>
+<p>(an operation called an</p>
+<p>exchange spill</p>
+<p>) so that it</p>
+<p>can consume rows from some of its input buffers. Eventually, the spilled rows are returned to</p>
+<p>the consumer when the consumer is ready to consume them.</p>
+<p>Very rarely, multiple exchange spills can occur within the same execution plan, causing the</p>
+<p>query to execute slowly. If you notice more than five spills within the same query plan’s</p>
+<p>execution, contact your support professional.</p>
+<p>Exchange spills are sometimes transient and may disappear as data distribution changes.</p>
+<p>There are several ways to avoid exchange spill events:</p>
+<p>Omit the ORDER BY clause if you do not need the result set to be ordered.</p>
+<p>If ORDER BY is required, eliminate the column that participates in the multiple range</p>
+<p>scans (T.a in the example above) from the ORDER BY clause.</p>
+<p>Using an index hint, force the optimizer to use a different access path on the table in</p>
+<p>question.</p>
+<p>Rewrite the query to produce a different query execution plan.</p>
+<p>Force serial execution of the query by adding the MAXDOP = 1 option to the end of the</p>
+<p>query or index operation. For more information, see</p>
+<p>Configure the max degree of</p>
+<p>parallelism Server Configuration Option</p>
+<p>and</p>
+<p>Configure Parallel Index Operations</p>
+<p>.</p> </div> <footer class="detail-footer" data-astro-cid-o76tdi4r> <a href="/sqlkraft/operations/" data-astro-cid-o76tdi4r>&larr; Back to operations</a> </footer> </article>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

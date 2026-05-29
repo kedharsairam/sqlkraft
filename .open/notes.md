@@ -1,66 +1,32 @@
-# SqlKraft — Session Notes (v0.4.0)
+# SqlKraft Session Notes
 
-## Decisions
-- **Clean-slate restart**: All legacy projects moved to `_legacy_backup/`. No code reused from previous SqlKraft v1.0.0, Lumina, or MSSQL Scripts projects.
-- **Astro 5 static site**: No Tailwind, no kedhar-ui. Pure CSS with CSS custom properties. Black background (#000000), secondary bg (#0d1117), accent (#2f80ed).
-- **Extraction pipeline**: Python PyMuPDF streaming parser in `extractor/` directory. Never loads the 694 MB PDF into memory.
-- **Metadata-only search**: Fuse.js index restricted to `name`, `title`, `slug`, `category`, `tags`, and max 150-char description. Enforced in `generate-search-index.cjs`.
-- **Single collection for wait-stats**: All 50 types in one directory, differentiated by `category` (8 enum values) and `severity` (5 levels).
-- **`schema_mapper_v2.py` over modifying v1**: New mapper handles all content types with stricter name prefix filters. Single-quoted YAML avoids escape-interpretation bugs (`\u003c`).
-- **Architecture TOC sidebar client-side**: Astro static generation with JS that reads `#docBody` headings on `DOMContentLoaded` — avoids re-render complexity.
-- **Narrative mapper separate from schema_mapper_v2**: Narrative content (conceptual articles, not reference objects) uses dedicated `narrative_mapper.py` with TOC-driven heading-to-page matching
-- **Expanded architecture as sub-articles of existing collection**: 609 new articles added to `architecture/` collection under 11 new `topic` values — avoids splintering into collections
-- **XQuery integrated into tsql-reference**: reused existing `tsql-reference` collection with new `xquery` category value — no dedicated XQuery collection needed
-- **Operations collection scaffolded but empty**: 14-topic schema registered, placeholder file created, page route built — Range 2 content (p.14419-20029) deferred to v0.4.0
-- **Background PDF extraction for 3,623 pages**: extracted at ~77 pages/second using `page_extractor.py` streaming engine
-- **Unicode chars fixed in Python**: replaced extended Unicode with ASCII equivalents to avoid `'charmap' codec can't encode character` errors on Windows terminal
-
-## Gotchas
-- **YAML null vs undefined**: When YAML frontmatter has `description:` with no value, it parses as `null`, not `undefined`. Zod `.default()` doesn't handle null. Fixed with `z.preprocess((v) => (v ?? ""), z.string())` on all description and tags fields.
-- **YAML double-quote escape bug**: Double-quoted YAML processes escape sequences (`\u003c`, `\n`). Single-quoted YAML treats them as literal text. All frontmatter string values must use single-quoted YAML output.
-- **Prettier + Astro**: Prettier 3.8+ cannot infer parser for `.astro` files without `.prettierrc` containing `{ "plugins": ["prettier-plugin-astro"], "overrides": [{ "files": "*.astro", "options": { "parser": "astro" } }] }`.
-- **Function/SP content density**: 2,953 pages of system-functions section covers both `sys.fn_` (29 files) and `sys.sp_` (46 files). Low count due to dense multi-column reference page layout — heading detection misses many entries.
-- **Catalog views high dedup ratio**: 743 records → 248 files. Many entries span 2-3 batch files, producing duplicates that overwrite. Acceptable for v0.3.0.
-- **Unicode encoding on Windows**: Python's `print()` with non-ASCII characters fails in Windows PowerShell console. All narrative_mapper.py output strings must use ASCII-compatible characters only.
-- **TOC heading matching accuracy**: H3-level heading extraction from TOC requires exact `#heading` anchor matching. Pages with variant heading formats (e.g., parenthetical suffixes) may generate duplicate or untargeted entries. Acceptable for v0.3.0.
-- **YAML frontmatter block scalars**: Multi-line descriptions (e.g., error severity descriptions) need `|` literal block scalars in YAML to preserve newlines. Enforced in `build_frontmatter()` via `yaml.dump(..., default_style='|')` for description fields.
-- **`H2_TOPIC_MAP` completeness**: Not all H2 titles in the TOC map to architecture topics — some map to tsql-reference (XQuery) or errors (severities). Each extraction type needs explicit mapping config.
-
-## Next Steps
-1. **Populate operations collection** — Range 2 (p.14419-20029) has 1,124 TOC entries ready — SSMS, Profiler, SQLPackage, Linux ops, Event Classes, migration, monitoring, HA, configuration — ~173 articles
-2. **Populate scripts collection** — 0 files currently — extract diagnostic/library scripts from batch data or TOC entries
-3. **TOC gap analysis for remaining untapped ranges** — p.1-2042 (intro/business-continuity, ~2,042 pages) and p.20030-30180 (tsql-reference non-object pages, ~10,150 pages)
-4. **Extraction quality v3** — improve syntax-block boundary detection for stored-procedures with non-standard heading hierarchies, enhance return-column table extraction
-
-## Key Metrics
-- **Total content files**: 5,040 (architecture 916, catalog-views 275, dmvs 151, errors 1,129, functions 49, scripts 0, stored-procedures 699, tsql-reference 1,770, wait-statistics 50, operations 1)
-- **Build page count**: 5,050. Build time: ~75s, zero errors
-- **Search index**: 5,011 records across 10 collections (operations added)
-- **Content growth this session**: 4,340 → 5,040 files (+700). Architecture +609, errors +15, tsql-reference +75
-- **PDF coverage**: 16,304 pages indexed in batch JSON files (up from 12,681). Still untapped: ~12,192 pages
-
-## Relevant Files
-- `extractor/narrative_mapper.py` — v0.3.0 narrative extraction engine (460 lines). Handles error severities, XQuery, expanded architecture with TOC-driven heading matching
-- `extractor/operations_mapper.py` — v0.5.0 operations ingestion engine (290 lines). H2-to-topic mapping, keyword fallback heuristics, 983 articles from 12 H2 chapters
-- `extractor/batch_extract_operations.py` — One-shot batch extraction for all 11 untapped Range 2 sections
-- `extractor/schema_mapper_v2.py` — Multi-type mapper for reference objects (stored-procedures, catalog-views, etc.)
-- `site/src/content/config.ts` — Updated Zod enums (xquery, 11 new architecture topics, operations collection)
-- `site/src/pages/operations/index.astro` — Operations collection index page with 14-topic card grid (983+ articles)
-- `site/src/pages/operations/[id].astro` — New operations detail page with topic badge, code-block styling
-- `site/src/pages/architecture/index.astro` — Updated with 11 new topic sections
-- `site/src/pages/tsql-reference/index.astro` — Added xquery category label
-- `site/src/pages/index.astro` — Added operations portal card
-- `site/src/data/search-index.json` — 5,987 metadata-only records
-
-## v0.4.0 Session Updates
+## v0.4.0 Capstone — Phase 5 Final Sweep Complete
 
 ### What was done
-- **Operations bulk ingestion** — Stage 5 complete: 43 batch files, 983 articles across 9 topics
-- **Detail route created** — `operations/[id].astro` with breadcrumbs, topic badges, code block styling
-- **Build grew**: 5,050 → **6,034 pages** — zero errors
-- All committed as part of this session's work
+- **3 new PDF extractions** (1,636 pages): HA (p.866-2043), Upgrade (p.6442-6655), Migration (p.7155-7398)
+- **303 operations articles added**: high-availability (236), upgrade (26), migration (30), data-tools (8), azure-arc (3)
+- **Classification fixes**: SSDT entries re-mapped from ssb-diagnose→data-tools (8 articles), Azure Arc re-mapped from azure-synapse→azure-arc (3 articles)
+- **Search index**: 6,266 records (+279 from sweep)
+- **Build**: 6,321 pages, zero errors, 64.46s
+- **Committed**: `0abe4e1` v0.4.0 capstone pushed, CI green
 
-### New Gotchas
-- **Detail route missing**: After adding 983 content files, only the index page rendered. Had to create `[id].astro` to generate detail pages. Always check that a new collection has both an index AND a detail route.
-- **TOC page matching for operations**: Range 2 has 1,124 TOC entries but only 983 resolved to articles. Missing ~141 entries either had no page match, were depth-2 headers with no page content, or were filtered by SKIP_PAGE_TITLES.
-- **Topic coverage gap**: 5 of 14 operations topics (azure-arc, data-tools, upgrade, migration, high-availability) have 0 articles. These need different H2 matching or exist in non-Range-2 pages.
+### All 14 operations topics now populated
+- azure-arc: 3, azure-synapse: 53, configuration: 10, data-tools: 8, event-classes: 192, high-availability: 236, linux-operations: 129, migration: 30, monitor: 370, profiler: 85, sqlpackage: 14, ssb-diagnose: 80, ssms: 35, upgrade: 26
+
+### Total content: 6,310 files, 10 collections, 6,266 search index records
+
+### Key scripts
+- `extractor/sweep_mapper.py` — New! Post-processing mapper for page-range-based topic assignments and classification overrides
+- `extractor/operations_mapper.py` — v0.5.0 main operations ingestion engine (Range 2)
+- `extractor/narrative_mapper.py` — v0.4.0 narrative content engine
+
+### Known issues
+- Scripts collection remains empty (intentional — no scripts have been extracted yet)
+- p.1-865 first pages (intro/backup/restore) still untapped but not needed for current scope
+- p.9568-14418 (replication, tools, Analysis Services, SSRS, MDS, full-text search) still untapped
+
+### Build commands
+- `cd site && npm run build` — production build
+- `cd site && node rebuild-search-index.cjs` — search index regeneration
+- `cd extractor && python operations_mapper.py` — Range 2 operations extraction
+- `cd extractor && python sweep_mapper.py` — Phase 5 sweep (runs after operations_mapper.py)

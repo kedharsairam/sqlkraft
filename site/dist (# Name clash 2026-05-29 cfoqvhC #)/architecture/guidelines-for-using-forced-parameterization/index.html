@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Guidelines for using forced parameterization — Architecture Guide — SqlKraft</title><meta name="description" content="Fixed-point numeric literals that are parts of predicates that involve comparison operators"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Guidelines for using forced parameterization</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>io fundamentals</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#io-fundamentals</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Guidelines for using forced parameterization</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Fixed-point numeric literals that are parts of predicates that involve comparison operators</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Fixed-point numeric literals that are parts of predicates that involve comparison operators</p>
+<p>parameterize to numeric whose precision is 38 and whose scale is just large enough to</p>
+<p>support its size. Fixed-point numeric literals that aren’t parts of predicates that involve</p>
+<p>comparison operators parameterize to numeric whose precision and scale are just large</p>
+<p>enough to support its size.</p>
+<p>Floating point numeric literals parameterize to float(53).</p>
+<p>Non-Unicode string literals parameterize to varchar(8000) if the literal fits within 8,000</p>
+<p>characters, and to varchar(max) if it is larger than 8,000 characters.</p>
+<p>Unicode string literals parameterize to nvarchar(4000) if the literal fits within 4,000</p>
+<p>Unicode characters, and to nvarchar(max) if the literal is larger than 4,000 characters.</p>
+<p>Binary literals parameterize to varbinary(8000) if the literal fits within 8,000 bytes. If it is</p>
+<p>larger than 8,000 bytes, it is converted to varbinary(max).</p>
+<p>Money type literals parameterize to money.</p>
+<p>Consider the following when you set the</p>
+<p>option to FORCED:</p>
+<p>Forced parameterization, in effect, changes the literal constants in a query to parameters</p>
+<p>when compiling a query. Therefore, the Query Optimizer can choose suboptimal plans for</p>
+<p>queries. In particular, the Query Optimizer is less likely to match the query to an indexed</p>
+<p>view or an index on a computed column. It might also choose suboptimal plans for</p>
+<p>queries posed on partitioned tables and distributed partitioned views. Forced</p>
+<p>parameterization shouldn’t be used for environments that rely heavily on indexed views</p>
+<p>and indexes on computed columns. Generally, the</p>
+<p>option</p>
+<p>should only be used by experienced database professionals after determining that doing</p>
+<p>this doesn’t adversely affect performance.</p>
+<p>Distributed queries that reference more than one database are eligible for forced</p>
+<p>parameterization as long as the</p>
+<p>option is set to</p>
+<p>in the database</p>
+<p>whose context the query is running.</p>
+<p>Setting the</p>
+<p>option to</p>
+<p>flushes all query plans from the plan</p>
+<p>cache of a database, except those that currently are compiling, recompiling, or running.</p>
+<p>Plans for queries that are compiling or running during the setting change are</p>
+<p>parameterized the next time the query is executed.</p>
+<p>Setting the</p>
+<p>option is an online operation that it requires no database-</p>
+<p>level exclusive locks.</p>
+<p>The current setting of the</p>
+<p>option is preserved when reattaching or</p>
+<p>restoring a database.</p>
+<p>You can override the behavior of forced parameterization by specifying that simple</p>
+<p>parameterization be attempted on a single query, and any others that are syntactically</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span><span style="color:#F97583"> FORCED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FORCED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FORCED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

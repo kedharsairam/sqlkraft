@@ -1,0 +1,332 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Symptoms — Architecture Guide — SqlKraft</title><meta name="description" content="Periodic spikes in CPU were observed, which pushed the CPU utilization to nearly 100%. A"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Symptoms</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Symptoms</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Periodic spikes in CPU were observed, which pushed the CPU utilization to nearly 100%. A</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Periodic spikes in CPU were observed, which pushed the CPU utilization to nearly 100%. A</p>
+<p>divergence between throughput and CPU consumption was observed leading up to the</p>
+<p>problem. By the time that the large CPU spike occurred, a pattern of a large number of spins</p>
+<p>occurring during times of heavy CPU usage at particular intervals was established.</p>
+<p>This was an extreme case in which the contention was such that it created a spinlock convoy</p>
+<p>condition. A convoy occurs when threads can no longer make progress servicing the workload</p>
+<p>but instead spend all processing resources attempting to gain access to the lock. The</p>
+<p>performance monitor log illustrates this divergence between transaction log throughput and</p>
+<p>CPU consumption and, ultimately, the large spike in CPU utilization.</p>
+<p>After querying</p>
+<p>to determine the existence of significant contention</p>
+<p>on</p>
+<p>, an extended events script was used to measure the number of backoff</p>
+<p>events for the spinlock types of interest.</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<h3 id="script">Script</h3>
+<p>14,752,117</p>
+<p>942,869,471,526</p>
+<p>63,914</p>
+<p>67,900,620</p>
+<p>69,267,367</p>
+<p>473,760,338,765</p>
+<p>6,840</p>
+<p>2,167,281</p>
+<p>5,765,761</p>
+<p>260,885,816,584</p>
+<p>45,247</p>
+<p>3,739,208</p>
+<p>2,802,773</p>
+<p>9,767,503,682</p>
+<p>3,485</p>
+<p>350,997</p>
+<p>1,207,007</p>
+<p>3,692,845,572</p>
+<p>3,060</p>
+<p>109,746</p>
+<p>The most straightforward way to quantify the impact of the spins is to look at the number of</p>
+<p>backoff events exposed by</p>
+<p>over the same 1-minute interval for the</p>
+<p>spinlock type(s) with the highest number of spins. This method is best to detect significant</p>
+<p>contention because it indicates when threads are exhausting the spin limit while waiting to</p>
+<p>acquire the spinlock. The following script illustrates an advanced technique that utilizes</p>
+<p>extended events to measure related backoff events and identify the specific code paths where</p>
+<p>the contention lies.</p>
+<p>For more information about Extended Events in SQL Server, see</p>
+<p>Extended Events overview</p>
+<p>.</p>
+<p>SQL</p>
+<p>By analyzing the output, we can see the call stacks for the most common code paths for the</p>
+<p>spins. The script was run a couple of different times during the time when CPU</p>
+<p>utilization was high to check for consistency in the call stacks returned. The call stacks with the</p>
+<p>highest slot bucket count are common between the two outputs (35,668 and 8,506). These call</p>
+<p>stacks have a slot count that is two orders of magnitude greater than the next highest entry.</p>
+<p>This condition indicates a code path of interest.</p>
+<h3 id="output-1">Output 1</h3>
+<p>XML</p>
+<p>７</p>
+<p>Note</p>
+<p>It isn’t uncommon to see call stacks returned by the previous script. When the script ran</p>
+<p>for 1 minute, we observed that call stacks with a slot count of > 1,000 was problematic but</p>
+<p>the slot count of > 10,000 was more likely to be problematic since it’s a higher slot count.</p>
+<p>７</p>
+<p>Note</p>
+<p>The formatting of the following output has been cleaned for readability purposes.</p>
+<h3 id="output-2">Output 2</h3>
+<p>XML</p>
+<h3 id="fully-qualified-names">Fully Qualified Names:</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_os_spinlock_stats</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SOS_CACHESTORE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SOS_CACHESTORE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SOS_SUSPEND_QUEUE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">LOCK_HASH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">MUTEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SOS_SCHEDULER</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_os_spinlock_stats</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#6A737D">/*</span></span>
+<span class="line"><span style="color:#6A737D">This script is provided "AS IS" with no warranties, and confers no rights.</span></span>
+<span class="line"><span style="color:#6A737D">This script will monitor for backoff events over a given period of time and</span></span>
+<span class="line"><span style="color:#6A737D">capture the code paths (callstacks) for those.</span></span>
+<span class="line"><span style="color:#6A737D">--Find the spinlock types</span></span>
+<span class="line"><span style="color:#6A737D">select map_value, map_key, name from sys.dm_xe_map_values</span></span>
+<span class="line"><span style="color:#6A737D">where name = 'spinlock_types'</span></span>
+<span class="line"><span style="color:#6A737D">order by map_value asc</span></span>
+<span class="line"><span style="color:#6A737D">--Example: Get the type value for any given spinlock type</span></span>
+<span class="line"><span style="color:#6A737D">select map_value, map_key, name from sys.dm_xe_map_values</span></span>
+<span class="line"><span style="color:#6A737D">where map_value IN ('SOS_CACHESTORE', 'LOCK_HASH', 'MUTEX')</span></span>
+<span class="line"><span style="color:#6A737D">Examples:</span></span>
+<span class="line"><span style="color:#6A737D">61LOCK_HASH</span></span>
+<span class="line"><span style="color:#6A737D">144 SOS_CACHESTORE</span></span>
+<span class="line"><span style="color:#6A737D">08MUTEX</span></span>
+<span class="line"><span style="color:#6A737D">*/</span></span>
+<span class="line"><span style="color:#6A737D">--create the even session that will capture the callstacks to a bucketizer</span></span>
+<span class="line"><span style="color:#6A737D">--more information is available in this reference: http://msdn.microsoft.com/en-</span></span>
+<span class="line"><span style="color:#E1E4E8">us</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">library</span><span style="color:#F97583">/</span><span style="color:#79B8FF">bb630354</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">aspx</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SOS_CACHESTORE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">EVENT</span></span>
+<span class="line"><span style="color:#F97583">SESSION</span></span>
+<span class="line"><span style="color:#E1E4E8">spin_lock_backoff</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#F97583">SERVER</span></span>
+<span class="line"><span style="color:#F97583">ADD</span></span>
+<span class="line"><span style="color:#F97583">EVENT</span></span>
+<span class="line"><span style="color:#79B8FF">sqlos</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">spinlock_backoff</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#F97583">ACTION</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">package0</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">callstack</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#F97583">type</span></span>
+<span class="line"><span style="color:#F97583">=</span><span style="color:#79B8FF"> 61</span></span>
+<span class="line"><span style="color:#6A737D">--LOCK_HASH</span></span>
+<span class="line"><span style="color:#F97583">OR</span></span>
+<span class="line"><span style="color:#F97583">TYPE</span></span>
+<span class="line"><span style="color:#F97583">=</span><span style="color:#79B8FF"> 144</span></span>
+<span class="line"><span style="color:#6A737D">--SOS_CACHESTORE</span></span>
+<span class="line"><span style="color:#F97583">OR</span></span>
+<span class="line"><span style="color:#F97583">TYPE</span></span>
+<span class="line"><span style="color:#F97583">=</span><span style="color:#79B8FF"> 8</span></span>
+<span class="line"><span style="color:#6A737D">--MUTEX</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">ADD</span></span>
+<span class="line"><span style="color:#F97583">TARGET</span><span style="color:#79B8FF"> package0</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">asynchronous_bucketizer</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#F97583">SET</span></span>
+<span class="line"><span style="color:#E1E4E8">filtering_event_name </span><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">'sqlos.spinlock_backoff'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">source_type </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 1</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">source</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">'package0.callstack'</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">MAX_MEMORY </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 50</span><span style="color:#E1E4E8"> MB,</span></span>
+<span class="line"><span style="color:#E1E4E8">MEMORY_PARTITION_MODE </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> PER_NODE</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#6A737D">--Ensure the session was created</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_xe_sessions</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#F97583">name</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">'spin_lock_backoff'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#6A737D">--Run this section to measure the contention</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span></span>
+<span class="line"><span style="color:#F97583">EVENT</span></span>
+<span class="line"><span style="color:#F97583">SESSION</span></span>
+<span class="line"><span style="color:#E1E4E8">spin_lock_backoff</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#F97583">SERVER</span></span>
+<span class="line"><span style="color:#F97583">STATE</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">START</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#6A737D">--wait to measure the number of backoffs over a 1 minute period</span></span>
+<span class="line"><span style="color:#F97583">WAITFOR</span><span style="color:#F97583"> DELAY</span><span style="color:#9ECBFF"> '00:01:00'</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#6A737D">--To view the data</span></span>
+<span class="line"><span style="color:#6A737D">--1. Ensure the sqlservr.pdb is in the same directory as the sqlservr.exe</span></span>
+<span class="line"><span style="color:#6A737D">--2. Enable this trace flag to turn on symbol resolution</span></span>
+<span class="line"><span style="color:#E1E4E8">DBCC TRACEON (</span><span style="color:#79B8FF">3656</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">-</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#6A737D">--Get the callstacks from the bucketizer target</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">event_session_address,</span></span>
+<span class="line"><span style="color:#E1E4E8">target_name,</span></span>
+<span class="line"><span style="color:#E1E4E8">execution_count,</span></span>
+<span class="line"><span style="color:#E1E4E8">cast</span></span>
+<span class="line"><span style="color:#E1E4E8">(target_data</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#F97583">XML</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_xe_session_targets</span><span style="color:#E1E4E8"> xst</span></span>
+<span class="line"><span style="color:#E1E4E8">INNER</span></span>
+<span class="line"><span style="color:#F97583">JOIN</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_xe_sessions</span><span style="color:#E1E4E8"> xs</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">xst</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">event_session_address</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> xs</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">address</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#79B8FF">xs</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">name</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'spin_lock_backoff'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#6A737D">--clean up the session</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span></span>
+<span class="line"><span style="color:#F97583">EVENT</span></span>
+<span class="line"><span style="color:#F97583">SESSION</span></span>
+<span class="line"><span style="color:#E1E4E8">spin_lock_backoff</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#F97583">SERVER</span></span>
+<span class="line"><span style="color:#F97583">STATE</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">STOP</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">DROP</span></span>
+<span class="line"><span style="color:#F97583">EVENT</span></span>
+<span class="line"><span style="color:#F97583">SESSION</span></span>
+<span class="line"><span style="color:#E1E4E8">spin_lock_backoff</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#F97583">SERVER</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">BucketizerTarget</span></span>
+<span class="line"><span style="color:#E1E4E8">truncated</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"0"</span></span>
+<span class="line"><span style="color:#E1E4E8">buckets</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"256"</span></span>
+<span class="line"><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">Slot</span></span>
+<span class="line"><span style="color:#E1E4E8">count</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"35668"</span></span>
+<span class="line"><span style="color:#E1E4E8">trunc</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"0"</span></span>
+<span class="line"><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#F97583">&#x3C;value></span></span>
+<span class="line"><span style="color:#E1E4E8">XeSosPkg::spinlock_backoff::Publish</span></span>
+<span class="line"><span style="color:#E1E4E8">SpinlockBase::Sleep</span></span>
+<span class="line"><span style="color:#E1E4E8">SpinlockBase::Backoff</span></span>
+<span class="line"><span style="color:#E1E4E8">Spinlock</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#79B8FF">144</span><span style="color:#E1E4E8">,</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">,</span><span style="color:#79B8FF">0</span><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#E1E4E8">::SpinToAcquireOptimistic</span></span>
+<span class="line"><span style="color:#E1E4E8">SOS_CacheStore::GetUserData</span></span>
+<span class="line"><span style="color:#E1E4E8">OpenSystemTableRowset</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDScanBase::Rowset</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDScan::StartSearch</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDCatalogOwner::GetOwnerAliasIdFromSid</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDCatalogOwner::LookupPrimaryIdInCatalog</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDCacheEntryFactory::GetProxiedCacheEntryByAltKey</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDCatalogOwner::GetProxyOwnerBySID</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDProxyDatabase::GetOwnerBySID</span></span>
+<span class="line"><span style="color:#E1E4E8">ISECTmpEntryStore::</span><span style="color:#F97583">Get</span></span>
+<span class="line"><span style="color:#E1E4E8">ISECTmpEntryStore::</span><span style="color:#F97583">Get</span></span>
+<span class="line"><span style="color:#E1E4E8">NTGroupInfo::</span><span style="color:#9ECBFF">`vector deleting destructor'</span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;/value></span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;/Slot></span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;Slot</span></span>
+<span class="line"><span style="color:#9ECBFF">count</span></span>
+<span class="line"><span style="color:#9ECBFF">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"752"</span></span>
+<span class="line"><span style="color:#9ECBFF">trunc</span></span>
+<span class="line"><span style="color:#9ECBFF">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"0"</span></span>
+<span class="line"><span style="color:#9ECBFF">></span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;value></span></span>
+<span class="line"><span style="color:#9ECBFF">XeSosPkg::spinlock_backoff::Publish</span></span>
+<span class="line"><span style="color:#9ECBFF">SpinlockBase::Sleep</span></span>
+<span class="line"><span style="color:#9ECBFF">SpinlockBase::Backoff</span></span>
+<span class="line"><span style="color:#9ECBFF">Spinlock</span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;144,1,0></span></span>
+<span class="line"><span style="color:#9ECBFF">::SpinToAcquireOptimistic</span></span>
+<span class="line"><span style="color:#9ECBFF">SOS_CacheStore::GetUserData</span></span>
+<span class="line"><span style="color:#9ECBFF">OpenSystemTableRowset</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDScanBase::Rowset</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDScan::StartSearch</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDCatalogOwner::GetOwnerAliasIdFromSid</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDCatalogOwner::LookupPrimaryIdInCatalog</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDCacheEntryFactory::GetProxiedCacheEntryByAltKey</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDCatalogOwner::GetProxyOwnerBySID</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CMEDProxyDatabase::GetOwnerBySID</span></span>
+<span class="line"><span style="color:#E1E4E8">ISECTmpEntryStore::</span><span style="color:#F97583">Get</span></span>
+<span class="line"><span style="color:#E1E4E8">ISECTmpEntryStore::</span><span style="color:#F97583">Get</span></span>
+<span class="line"><span style="color:#E1E4E8">ISECTmpEntryStore::</span><span style="color:#F97583">Get</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;/value></span></span>
+<span class="line"><span style="color:#F97583">&#x3C;/</span><span style="color:#E1E4E8">Slot</span><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">BucketizerTarget</span></span>
+<span class="line"><span style="color:#E1E4E8">truncated</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"0"</span></span>
+<span class="line"><span style="color:#E1E4E8">buckets</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"256"</span></span>
+<span class="line"><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">Slot</span></span>
+<span class="line"><span style="color:#E1E4E8">count</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"8506"</span></span>
+<span class="line"><span style="color:#E1E4E8">trunc</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"0"</span></span>
+<span class="line"><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#F97583">&#x3C;value></span></span>
+<span class="line"><span style="color:#E1E4E8">XeSosPkg::spinlock_backoff::Publish</span></span>
+<span class="line"><span style="color:#E1E4E8">SpinlockBase::Sleep</span><span style="color:#F97583">+</span><span style="color:#E1E4E8">c7 [ @ </span><span style="color:#79B8FF">0</span><span style="color:#F97583">+</span><span style="color:#E1E4E8">0x0 SpinlockBase::Backoff</span></span>
+<span class="line"><span style="color:#E1E4E8">Spinlock</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#79B8FF">144</span><span style="color:#E1E4E8">,</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">,</span><span style="color:#79B8FF">0</span><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#E1E4E8">::SpinToAcquireOptimistic</span></span>
+<span class="line"><span style="color:#E1E4E8">SOS_CacheStore::GetUserData</span></span>
+<span class="line"><span style="color:#E1E4E8">OpenSystemTableRowset</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDScanBase::Rowset</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDScan::StartSearch</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDCatalogOwner::GetOwnerAliasIdFromSid</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDCatalogOwner::LookupPrimaryIdInCatalog</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDCacheEntryFactory::GetProxiedCacheEntryByAltKey</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDCatalogOwner::GetProxyOwnerBySID</span></span>
+<span class="line"><span style="color:#E1E4E8">CMEDProxyDatabase::GetOwnerBySID</span></span>
+<span class="line"><span style="color:#E1E4E8">ISECTmpEntryStore::</span><span style="color:#F97583">Get</span></span>
+<span class="line"><span style="color:#E1E4E8">ISECTmpEntryStore::</span><span style="color:#F97583">Get</span></span>
+<span class="line"><span style="color:#E1E4E8">NTGroupInfo::</span><span style="color:#9ECBFF">`vector deleting destructor'</span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;/value></span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;/Slot></span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;Slot</span></span>
+<span class="line"><span style="color:#9ECBFF">count</span></span>
+<span class="line"><span style="color:#9ECBFF">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"190"</span></span>
+<span class="line"><span style="color:#9ECBFF">trunc</span></span>
+<span class="line"><span style="color:#9ECBFF">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"0"</span></span>
+<span class="line"><span style="color:#9ECBFF">></span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;value></span></span>
+<span class="line"><span style="color:#9ECBFF">XeSosPkg::spinlock_backoff::Publish</span></span>
+<span class="line"><span style="color:#9ECBFF">SpinlockBase::Sleep</span></span>
+<span class="line"><span style="color:#9ECBFF">SpinlockBase::Backoff</span></span>
+<span class="line"><span style="color:#9ECBFF">Spinlock</span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;144,1,0></span></span>
+<span class="line"><span style="color:#9ECBFF">::SpinToAcquireOptimistic</span></span>
+<span class="line"><span style="color:#9ECBFF">SOS_CacheStore::GetUserData</span></span>
+<span class="line"><span style="color:#9ECBFF">OpenSystemTableRowset</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDScanBase::Rowset</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDScan::StartSearch</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDCatalogOwner::GetOwnerAliasIdFromSid</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDCatalogOwner::LookupPrimaryIdInCatalog</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDCacheEntryFactory::GetProxiedCacheEntryByAltKey</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDCatalogOwner::GetProxyOwnerBySID</span></span>
+<span class="line"><span style="color:#9ECBFF">CMEDProxyDatabase::GetOwnerBySID</span></span>
+<span class="line"><span style="color:#9ECBFF">ISECTmpEntryStore::Get</span></span>
+<span class="line"><span style="color:#9ECBFF">ISECTmpEntryStore::Get</span></span>
+<span class="line"><span style="color:#9ECBFF">ISECTmpEntryStore::Get</span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;/value></span></span>
+<span class="line"><span style="color:#9ECBFF">&#x3C;/Slot></span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

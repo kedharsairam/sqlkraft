@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Database Mirroring Monitor Overview — Operations Guide — SqlKraft</title><meta name="description" content="Article
+
+•
+
+11/18/2022
+
+Applies to:
+
+SQL Server
+
+If you have the correct permissions, you can use Database Mirroring Monitor to monitor any
+
+subset of the mirrored databases on a server instance. Moni
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-o76tdi4r]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-o76tdi4r] .sep[data-astro-cid-o76tdi4r]{color:var(--border-glass)}.ops-detail[data-astro-cid-o76tdi4r]{max-width:900px}.detail-header[data-astro-cid-o76tdi4r]{margin-bottom:24px}.meta-row[data-astro-cid-o76tdi4r]{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}.topic-badge[data-astro-cid-o76tdi4r]{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--accent);border:1px solid var(--accent);padding:2px 10px;border-radius:4px;font-family:var(--font-mono)}.tag-strip[data-astro-cid-o76tdi4r]{display:flex;flex-wrap:wrap;gap:4px}.tag-pill[data-astro-cid-o76tdi4r]{font-size:11px;color:var(--text-secondary);background:#ffffff0d;padding:2px 8px;border-radius:4px;font-family:var(--font-mono)}.detail-title[data-astro-cid-o76tdi4r]{font-size:24px;font-weight:700;color:var(--text-primary);line-height:1.3}.detail-desc[data-astro-cid-o76tdi4r]{font-size:14px;color:var(--text-secondary);margin-top:8px;line-height:1.6}.body-content[data-astro-cid-o76tdi4r]{font-size:14px;line-height:1.7;color:var(--text-primary)}.body-content[data-astro-cid-o76tdi4r] pre{background:#0d1117;border:1px solid var(--border-glass);border-radius:8px;padding:16px;overflow-x:auto;font-size:13px;line-height:1.5;margin:16px 0}.body-content[data-astro-cid-o76tdi4r] code{font-family:var(--font-mono);font-size:13px}.body-content[data-astro-cid-o76tdi4r] p{margin-bottom:16px}.body-content[data-astro-cid-o76tdi4r] h2{font-size:18px;font-weight:600;color:var(--text-primary);margin:24px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--border-glass)}.body-content[data-astro-cid-o76tdi4r] h3{font-size:16px;font-weight:600;color:var(--text-primary);margin:20px 0 10px}.body-content[data-astro-cid-o76tdi4r] ul,.body-content[data-astro-cid-o76tdi4r] ol{margin:8px 0 16px;padding-left:24px}.body-content[data-astro-cid-o76tdi4r] li{margin-bottom:4px}.detail-footer[data-astro-cid-o76tdi4r]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass)}.detail-footer[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]{color:var(--accent);text-decoration:none;font-size:13px}.detail-footer[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-o76tdi4r> <a href="/sqlkraft/" data-astro-cid-o76tdi4r>&larr; Home</a> <span class="sep" data-astro-cid-o76tdi4r>/</span> <a href="/sqlkraft/operations/" data-astro-cid-o76tdi4r>Operations</a> <span class="sep" data-astro-cid-o76tdi4r>/</span> <span data-astro-cid-o76tdi4r>Database Mirroring Monitor Overview</span> </nav> <article class="ops-detail" data-astro-cid-o76tdi4r> <header class="detail-header" data-astro-cid-o76tdi4r> <div class="meta-row" data-astro-cid-o76tdi4r> <span class="topic-badge" data-astro-cid-o76tdi4r>high availability</span> <div class="tag-strip" data-astro-cid-o76tdi4r> <span class="tag-pill" data-astro-cid-o76tdi4r>#high-availability</span><span class="tag-pill" data-astro-cid-o76tdi4r>#database-mirroring-monitor-overview</span> </div> </div> <h1 class="detail-title" data-astro-cid-o76tdi4r>Database Mirroring Monitor Overview</h1> <p class="detail-desc" data-astro-cid-o76tdi4r>Article
+
+•
+
+11/18/2022
+
+Applies to:
+
+SQL Server
+
+If you have the correct permissions, you can use Database Mirroring Monitor to monitor any
+
+subset of the mirrored databases on a server instance. Moni
+</p> </header> <div class="body-content" data-astro-cid-o76tdi4r> <p>Article</p>
+<p>•</p>
+<p>11/18/2022</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<p>If you have the correct permissions, you can use Database Mirroring Monitor to monitor any</p>
+<p>subset of the mirrored databases on a server instance. Monitoring enables you to verify</p>
+<p>whether and how well data is flowing in the database mirroring session. Database Mirroring</p>
+<p>Monitor is also useful for troubleshooting the cause of reduced data flow.</p>
+<p>You can register any of your mirrored databases for monitoring on each of the failover partners</p>
+<p>individually. When you register a database, Database Mirroring Monitor caches the following</p>
+<p>information about the database:</p>
+<p>Database name</p>
+<p>The names of the two partner server instances</p>
+<p>The last known roles of each partner (principal or mirror)</p>
+<p>To monitor database mirroring, you must be a member of either the</p>
+<p>fixed server role</p>
+<p>or the</p>
+<p>fixed database role in the</p>
+<p>database on the server instance. If you</p>
+<p>are a member of</p>
+<p>or</p>
+<p>on only one of the partner server instances, the</p>
+<p>monitor can connect only to that partner; the monitor cannot retrieve information from the</p>
+<p>other partner.</p>
+<p>If you are a member of just</p>
+<p>on a server instance, you will have limited</p>
+<p>permissions on that server instance. You will only be able to view the most recent status row. If</p>
+<p>you connect to a server instance using</p>
+<p>permissions, Database Mirroring Monitor</p>
+<p>informs you that you have limited permissions.</p>
+<p>）</p>
+<p>Important</p>
+<p>The</p>
+<p>fixed database role is created in the</p>
+<p>database when the first</p>
+<p>database is registered in Database Mirroring Monitor. The new</p>
+<p>role has no</p>
+<p>members until a system administrator assigns users to the role.</p> </div> <footer class="detail-footer" data-astro-cid-o76tdi4r> <a href="/sqlkraft/operations/" data-astro-cid-o76tdi4r>&larr; Back to operations</a> </footer> </article>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

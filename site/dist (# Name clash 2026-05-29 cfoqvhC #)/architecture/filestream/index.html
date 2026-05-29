@@ -1,0 +1,60 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>FILESTREAM — Architecture Guide — SqlKraft</title><meta name="description" content="09/03/2025
+
+Applies to:
+
+SQL Server
+
+- Windows only
+
+FILESTREAM enables SQL Server-based applications to store unstructured data, such as
+
+documents and images, on the file system. Applications can us
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>FILESTREAM</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>filestream</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#filestream</span><span class="tag-pill" data-astro-cid-hditk3lm>#filestream</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>FILESTREAM</h1> <p class="doc-lede" data-astro-cid-hditk3lm>09/03/2025
+
+Applies to:
+
+SQL Server
+
+- Windows only
+
+FILESTREAM enables SQL Server-based applications to store unstructured data, such as
+
+documents and images, on the file system. Applications can us
+</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>09/03/2025</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<ul>
+<li>Windows only</li>
+</ul>
+<p>FILESTREAM enables SQL Server-based applications to store unstructured data, such as</p>
+<p>documents and images, on the file system. Applications can use the rich streaming APIs and</p>
+<p>performance of the file system and at the same time maintain transactional consistency</p>
+<p>between the unstructured data and corresponding structured data.</p>
+<p>FILESTREAM integrates the SQL Server Database Engine with an NTFS or ReFS file systems by</p>
+<p>storing</p>
+<p>binary large object (BLOB) data as files on the file system. Transact-SQL</p>
+<p>statements can insert, update, query, search, and back up FILESTREAM data. Win32 file system</p>
+<p>interfaces provide streaming access to the data.</p>
+<p>FILESTREAM uses the NT system cache for caching file data. Caching files in the system cache</p>
+<p>helps reduce any impact that FILESTREAM data might have on Database Engine performance.</p>
+<p>The SQL Server buffer pool isn’t used; therefore, this memory is available for query processing.</p>
+<p>FILESTREAM isn’t automatically enabled when you install or upgrade SQL Server. You must</p>
+<p>enable FILESTREAM by using SQL Server Configuration Manager and SQL Server Management</p>
+<p>Studio. To use FILESTREAM, you must create or modify a database to contain a special type of</p>
+<p>filegroup. Then, create or modify a table so that it contains a</p>
+<p>column with the</p>
+<p>FILESTREAM attribute. After you complete these tasks, you can use Transact-SQL and Win32 to</p>
+<p>manage the FILESTREAM data.</p>
+<p>In SQL Server, BLOBs can be standard</p>
+<p>data that stores the data in tables, or</p>
+<p>FILESTREAM</p>
+<p>objects that store the data in the file system. The size and use of</p>
+<p>the data determines whether you should use database storage or file system storage. If the</p>
+<p>following conditions are true, you should consider using FILESTREAM:</p>
+<p>Objects that are being stored are, on average, larger than 1 MB.</p>
+<p>Fast read access is important.</p>
+<p>You’re developing applications that use a middle tier for application logic.</p>
+<p>For smaller objects, storing</p>
+<p>BLOBs in the database often provides better</p>
+<p>streaming performance.</p> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

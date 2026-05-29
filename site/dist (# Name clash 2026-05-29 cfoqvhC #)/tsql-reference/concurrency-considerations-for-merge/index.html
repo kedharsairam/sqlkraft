@@ -1,0 +1,303 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Concurrency considerations for MERGE — T-SQL Reference — SqlKraft</title><meta name="description" content="optimizer doesn't need to perform extra validation processing to locate and update"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Concurrency considerations for MERGE</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Concurrency considerations for MERGE</h1> <span class="cat-badge" data-astro-cid-s2stm25t>queries</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#queries</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>optimizer doesn’t need to perform extra validation processing to locate and update</p>
+<p>duplicate rows and additional sort operations aren’t necessary.</p>
+<p>Avoid tables with any form of columnstore index as the target of</p>
+<p>statements. As</p>
+<p>with any UPDATEs, you might find performance better with columnstore indexes by</p>
+<p>updating a staged rowstore table, then performing a batched</p>
+<p>and</p>
+<p>, instead</p>
+<p>of an</p>
+<p>or</p>
+<p>.</p>
+<p>In terms of locking,</p>
+<p>is different from discrete, consecutive</p>
+<p>,</p>
+<p>, and</p>
+<p>statements.</p>
+<p>still executes</p>
+<p>,</p>
+<p>, and</p>
+<p>operations, however using</p>
+<p>different locking mechanisms. It might be more efficient to write discrete</p>
+<p>,</p>
+<p>, and</p>
+<p>statements for some application needs. At scale,</p>
+<p>might introduce complicated</p>
+<p>concurrency issues or require advanced troubleshooting. As such, plan to thoroughly test any</p>
+<p>statement before deploying to production.</p>
+<p>statements are a suitable replacement for discrete</p>
+<p>,</p>
+<p>, and</p>
+<p>operations in (but not limited to) the following scenarios:</p>
+<p>ETL operations involving large row counts be executed during a time when other</p>
+<p>concurrent operations aren’t* expected. When heavy concurrency is expected, separate</p>
+<p>,</p>
+<p>, and</p>
+<p>logic might perform better, with less blocking, than a</p>
+<p>statement.</p>
+<p>Complex operations involving small row counts and transactions unlikely to execute for</p>
+<p>extended duration.</p>
+<p>Complex operations involving user tables where indexes can be designed to ensure</p>
+<p>optimal execution plans, avoiding table scans and lookups in favor of index scans or -</p>
+<p>ideally - index seeks.</p>
+<p>Other considerations for concurrency:</p>
+<p>In some scenarios where unique keys are expected to be both inserted and updated by</p>
+<p>the</p>
+<p>, specifying the</p>
+<p>will prevent against unique key violations.</p>
+<p>is</p>
+<p>a synonym for the</p>
+<p>transaction isolation level, which doesn’t allow for other</p>
+<p>concurrent transactions to modify data that this transaction has read.</p>
+<p>is the</p>
+<p>safest isolation level but provides for the least concurrency with other transactions that</p>
+<p>retains locks on ranges of data to prevent phantom rows from being inserted or updated</p>
+<p>while reads are in progress. For more information on</p>
+<p>, see</p>
+<p>Table Hints</p>
+<p>and</p>
+<p>SET</p>
+<p>TRANSACTION ISOLATION LEVEL (Transact-SQL)</p>
+<p>.</p>
+<h2 id="join-best-practices">JOIN best practices</h2>
+<h2 id="parameterization-best-practices">Parameterization best practices</h2>
+<p>To improve the performance of the</p>
+<p>statement and ensure correct results are obtained,</p>
+<p>we recommend the following join guidelines:</p>
+<p>Specify only search conditions in the</p>
+<p>clause that determine</p>
+<p>the criteria for matching data in the source and target tables. That is, specify only columns</p>
+<p>from the target table that are compared to the corresponding columns of the source</p>
+<p>table.</p>
+<p>Don’t include comparisons to other values such as a constant.</p>
+<p>To filter out rows from the source or target tables, use one of the following methods.</p>
+<p>Specify the search condition for row filtering in the appropriate</p>
+<p>clause. For example,</p>
+<p>Define a view on the source or target that returns the filtered rows and reference the view</p>
+<p>as the source or target table. If the view is defined on the target table, any actions against</p>
+<p>it must satisfy the conditions for updating views. For more information about updating</p>
+<p>data by using a view, see</p>
+<p>Modify Data Through a View</p>
+<p>.</p>
+<p>Use the</p>
+<p>clause to filter out rows from the source or</p>
+<p>target tables. This method is similar to specifying additional search criteria in the</p>
+<p>clause and might produce incorrect results. We recommend that you avoid using this</p>
+<p>method or test thoroughly before implementing it.</p>
+<p>The join operation in the</p>
+<p>statement is optimized in the same way as a join in a</p>
+<p>statement. That is, when SQL Server processes join, the query optimizer chooses the most</p>
+<p>efficient method (out of several possibilities) of processing the join. When the source and</p>
+<p>target are of similar size and the index guidelines described previously are applied to the</p>
+<p>source and target tables, a merge join operator is the most efficient query plan. This is because</p>
+<p>both tables are scanned once and there’s no need to sort the data. When the source is smaller</p>
+<p>than the target table, a nested loops operator is preferable.</p>
+<p>You can force the use of a specific join by specifying the</p>
+<p>clause in the</p>
+<p>statement. We recommend that you don’t use the hash join as a query hint for</p>
+<p>statements because this join type doesn’t use indexes.</p>
+<p>If a</p>
+<p>,</p>
+<p>,</p>
+<p>, or</p>
+<p>statement is executed without parameters, the SQL</p>
+<p>Server query optimizer might choose to parameterize the statement internally. This means that</p>
+<p>any literal values that are contained in the query are substituted with parameters. For example,</p>
+<p>the statement</p>
+<p>, might be implemented</p>
+<h2 id="top-clause-best-practices">TOP clause best practices</h2>
+<p>internally as</p>
+<p>. This process, which is called</p>
+<p>simple parameterization</p>
+<p>, increases the ability of the relational engine to match new SQL</p>
+<p>statements with existing, previously compiled execution plans. Query performance might be</p>
+<p>improved because the frequency of query compilations and recompilations is reduced. The</p>
+<p>query optimizer doesn’t apply the simple parameterization process to</p>
+<p>statements.</p>
+<p>Therefore,</p>
+<p>statements that contain literal values might not perform and individual</p>
+<p>,</p>
+<p>, or</p>
+<p>statements because a new plan is compiled each time the</p>
+<p>statement is executed.</p>
+<p>To improve query performance, we recommend the following parameterization guidelines:</p>
+<p>Parameterize all literal values in the</p>
+<p>clause and in the</p>
+<p>clauses of the</p>
+<p>statement. For example, you can incorporate the</p>
+<p>statement</p>
+<p>into a stored procedure replacing the literal values with appropriate input parameters.</p>
+<p>If you can’t parameterize the statement, create a plan guide of type</p>
+<p>and specify</p>
+<p>the</p>
+<p>query hint in the plan guide. For more information, see</p>
+<p>Specify Query Parameterization Behavior by Using Plan Guides</p>
+<p>.</p>
+<p>If</p>
+<p>statements are executed frequently on the database, consider setting the</p>
+<p>option on the database to</p>
+<p>. Use caution when setting this</p>
+<p>option. The</p>
+<p>option is a database-level setting and affects how all</p>
+<p>queries against the database are processed. For more information, see</p>
+<p>Forced</p>
+<p>Parameterization</p>
+<p>.</p>
+<p>As a newer and easier alternative to plan guides, consider a similar strategy with Query</p>
+<p>Store hints. For more information, see</p>
+<p>Query Store hints</p>
+<p>.</p>
+<p>In the</p>
+<p>statement, the</p>
+<p>clause specifies the number or percentage of rows that are</p>
+<p>affected after the source table and the target table are joined, and after rows that don’t qualify</p>
+<p>for an insert, update, or delete action are removed. The</p>
+<p>clause further reduces the number</p>
+<p>of joined rows to the specified value and the insert, update, or delete actions are applied to the</p>
+<p>remaining joined rows in an unordered fashion. That is, there’s no order in which the rows are</p>
+<p>distributed among the actions defined in the</p>
+<p>clauses. For example, specifying</p>
+<p>affects 10 rows; of these rows, 7 might be updated and 3 inserted, or 1 might be deleted, 5</p>
+<p>updated, and 4 inserted and so on.</p>
+<p>It’s common to use the</p>
+<p>clause to perform data manipulation language (DML) operations</p>
+<p>on a large table in batches. When using the</p>
+<p>clause in the</p>
+<p>statement for this</p>
+<p>purpose, it’s important to understand the following implications.</p>
+<p>I/O performance might be affected.</p>
+<h2 id="bulk-load-best-practices">Bulk load best practices</h2>
+<p>The</p>
+<p>statement performs a full table scan of both the source and target tables.</p>
+<p>Dividing the operation into batches reduces the number of write operations performed</p>
+<p>per batch; however, each batch performs a full table scan of the source and target tables.</p>
+<p>The resulting read activity might affect the performance of the query and other</p>
+<p>concurrent activity on the tables.</p>
+<p>Incorrect results can occur.</p>
+<p>It’s important to ensure that all successive batches target new rows or undesired behavior</p>
+<p>such as incorrectly inserting duplicate rows into the target table can occur. This can</p>
+<p>happen when the source table includes a row that wasn’t in a target batch but was in the</p>
+<p>overall target table. To ensure correct results:</p>
+<p>Use the</p>
+<p>clause to determine which source rows affect existing target rows and</p>
+<p>which are genuinely new.</p>
+<p>Use an additional condition in the</p>
+<p>clause to determine if the target row</p>
+<p>was already updated by a previous batch.</p>
+<p>Use an additional condition in the</p>
+<p>clause and</p>
+<p>logic to verify the</p>
+<p>same row can’t be updated twice.</p>
+<p>Because the</p>
+<p>clause is only applied after these clauses are applied, each execution either</p>
+<p>inserts one genuinely unmatched row or updates one existing row.</p>
+<p>The</p>
+<p>statement can be used to efficiently bulk load data from a source data file into a</p>
+<p>target table by specifying the</p>
+<p>clause as the table source. By doing so, the</p>
+<p>entire file is processed in a single batch.</p>
+<p>To improve the performance of the bulk merge process, we recommend the following</p>
+<p>guidelines:</p>
+<p>Create a clustered index on the join columns in the target table.</p>
+<p>Disable other non-unique, nonclustered indexes on the target table during the bulk load</p>
+<p>, enable them afterwards. This is common and useful for nightly bulk data</p>
+<p>operations.</p>
+<p>Use the</p>
+<p>and</p>
+<p>hints in the</p>
+<p>clause, to specify how the</p>
+<p>source data file is sorted.</p>
+<p>By default, the bulk operation assumes the data file is unordered. Therefore, it’s important</p>
+<p>that the source data is sorted according to the clustered index on the target table and</p>
+<p>that the</p>
+<p>hint is used to indicate the order so that the query optimizer can generate</p>
+<h3 id="merge-stmt">merge stmt</h3>
+<h2 id="measure-and-diagnose-merge-performance">Measure and diagnose MERGE performance</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">HOLDLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">HOLDLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SERIALIZABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SERIALIZABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">HOLDLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span><span style="color:#F97583"> &#x3C;</span><span style="color:#E1E4E8">merge_search_condition</span><span style="color:#F97583">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHEN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHEN</span><span style="color:#F97583"> NOT</span><span style="color:#F97583"> MATCHED</span><span style="color:#F97583"> AND</span><span style="color:#79B8FF"> S</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">EmployeeName</span><span style="color:#F97583"> LIKE</span><span style="color:#9ECBFF"> 'S%'</span><span style="color:#F97583"> THEN</span><span style="color:#F97583"> INSERT</span><span style="color:#E1E4E8">....</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITH</span><span style="color:#F97583"> &#x3C;</span><span style="color:#E1E4E8">common </span><span style="color:#F97583">table</span><span style="color:#E1E4E8"> expression</span><span style="color:#F97583">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OPTION</span><span style="color:#E1E4E8"> (</span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">query_hint</span><span style="color:#F97583">></span><span style="color:#E1E4E8">)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span><span style="color:#79B8FF"> dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">MyTable</span><span style="color:#E1E4E8"> (Col1, Col2) </span><span style="color:#F97583">VALUES</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">10</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span><span style="color:#79B8FF"> dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">MyTable</span><span style="color:#E1E4E8"> (Col1, Col2) </span><span style="color:#F97583">VALUES</span><span style="color:#E1E4E8"> (@p1, @p2)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span><span style="color:#F97583"> &#x3C;</span><span style="color:#E1E4E8">merge_search_condition</span><span style="color:#F97583">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHEN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TEMPLATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span><span style="color:#F97583"> FORCED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FORCED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TOP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TOP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHEN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TOP</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">10</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TOP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TOP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHEN</span><span style="color:#F97583"> MATCHED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHEN</span><span style="color:#F97583"> MATCHED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TOP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">OPENROWSET</span><span style="color:#E1E4E8">(BULK...)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MERGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">ORDER</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UNIQUE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">OPENROWSET</span><span style="color:#E1E4E8">(BULK...)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">ORDER</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

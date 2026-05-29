@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Deploy a dacpac — Operations Guide — SqlKraft</title><meta name="description" content="Applies to:
+
+SQL Server
+
+Azure SQL Database
+
+Azure SQL Managed Instance
+
+SQL database in Microsoft Fabric
+
+Deploying, or publishing, a registered data-tier application (DAC) from a DAC package to an
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-o76tdi4r]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-o76tdi4r] .sep[data-astro-cid-o76tdi4r]{color:var(--border-glass)}.ops-detail[data-astro-cid-o76tdi4r]{max-width:900px}.detail-header[data-astro-cid-o76tdi4r]{margin-bottom:24px}.meta-row[data-astro-cid-o76tdi4r]{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}.topic-badge[data-astro-cid-o76tdi4r]{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--accent);border:1px solid var(--accent);padding:2px 10px;border-radius:4px;font-family:var(--font-mono)}.tag-strip[data-astro-cid-o76tdi4r]{display:flex;flex-wrap:wrap;gap:4px}.tag-pill[data-astro-cid-o76tdi4r]{font-size:11px;color:var(--text-secondary);background:#ffffff0d;padding:2px 8px;border-radius:4px;font-family:var(--font-mono)}.detail-title[data-astro-cid-o76tdi4r]{font-size:24px;font-weight:700;color:var(--text-primary);line-height:1.3}.detail-desc[data-astro-cid-o76tdi4r]{font-size:14px;color:var(--text-secondary);margin-top:8px;line-height:1.6}.body-content[data-astro-cid-o76tdi4r]{font-size:14px;line-height:1.7;color:var(--text-primary)}.body-content[data-astro-cid-o76tdi4r] pre{background:#0d1117;border:1px solid var(--border-glass);border-radius:8px;padding:16px;overflow-x:auto;font-size:13px;line-height:1.5;margin:16px 0}.body-content[data-astro-cid-o76tdi4r] code{font-family:var(--font-mono);font-size:13px}.body-content[data-astro-cid-o76tdi4r] p{margin-bottom:16px}.body-content[data-astro-cid-o76tdi4r] h2{font-size:18px;font-weight:600;color:var(--text-primary);margin:24px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--border-glass)}.body-content[data-astro-cid-o76tdi4r] h3{font-size:16px;font-weight:600;color:var(--text-primary);margin:20px 0 10px}.body-content[data-astro-cid-o76tdi4r] ul,.body-content[data-astro-cid-o76tdi4r] ol{margin:8px 0 16px;padding-left:24px}.body-content[data-astro-cid-o76tdi4r] li{margin-bottom:4px}.detail-footer[data-astro-cid-o76tdi4r]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass)}.detail-footer[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]{color:var(--accent);text-decoration:none;font-size:13px}.detail-footer[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-o76tdi4r> <a href="/sqlkraft/" data-astro-cid-o76tdi4r>&larr; Home</a> <span class="sep" data-astro-cid-o76tdi4r>/</span> <a href="/sqlkraft/operations/" data-astro-cid-o76tdi4r>Operations</a> <span class="sep" data-astro-cid-o76tdi4r>/</span> <span data-astro-cid-o76tdi4r>Deploy a dacpac</span> </nav> <article class="ops-detail" data-astro-cid-o76tdi4r> <header class="detail-header" data-astro-cid-o76tdi4r> <div class="meta-row" data-astro-cid-o76tdi4r> <span class="topic-badge" data-astro-cid-o76tdi4r>ssms</span> <div class="tag-strip" data-astro-cid-o76tdi4r> <span class="tag-pill" data-astro-cid-o76tdi4r>#ssms</span><span class="tag-pill" data-astro-cid-o76tdi4r>#deploy-a-dacpac</span> </div> </div> <h1 class="detail-title" data-astro-cid-o76tdi4r>Deploy a dacpac</h1> <p class="detail-desc" data-astro-cid-o76tdi4r>Applies to:
+
+SQL Server
+
+Azure SQL Database
+
+Azure SQL Managed Instance
+
+SQL database in Microsoft Fabric
+
+Deploying, or publishing, a registered data-tier application (DAC) from a DAC package to an
+</p> </header> <div class="body-content" data-astro-cid-o76tdi4r> <p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Database</p>
+<p>Azure SQL Managed Instance</p>
+<p>SQL database in Microsoft Fabric</p>
+<p>Deploying, or publishing, a registered data-tier application (DAC) from a DAC package to an</p>
+<p>existing instance of the database engine or Azure SQL Database is available in a wizard from</p>
+<p>SQL Server Management Studio or Visual Studio SQL Server Data Tools. The publish action</p>
+<p>incrementally updates a database schema to match the schema of a source</p>
+<p>file. If the</p>
+<p>database doesn’t exist on the server, the publish operation creates it.</p>
+<p>The deployment process registers a DAC instance by storing the DAC definition in the</p>
+<p>system database (</p>
+<p>in SQL Database); creates a database, then populates that database</p>
+<p>with all the database objects defined in the DAC.</p>
+<p>You can deploy the same DAC package to a single instance of the Database Engine multiple</p>
+<p>times, but you must run the deployments one at a time. The DAC instance name specified for</p>
+<p>each deployment must be unique within the instance of the Database Engine.</p>
+<p>By default, the database created during the deployment has all of the default settings from the</p>
+<p>CREATE DATABASE statement, except:</p>
+<p>The database collation and compatibility level are set to the values defined in the DAC</p>
+<p>package. A DAC package built from a database project in the SQL Server Developer Tools</p>
+<p>uses the values set in the database project. A package extracted from an existing</p>
+<p>database uses the values from the original database.</p>
+<p>You can adjust some of the database settings, such as database name and file paths, in</p>
+<p>the</p>
+<p>page. You can’t set the file paths when deploying to SQL</p>
+<p>Database.</p>
+<p>Some database options, such as TRUSTWORTHY, DB_CHAINING, and</p>
+<p>HONOR_BROKER_PRIORITY, can’t be adjusted as part of the deployment process. Physical</p>
+<p>properties, such as the number of filegroups, or the numbers and sizes of files can’t be altered</p>
+<p>as part of the deployment process. After the deployment completes, you can use the ALTER</p>
+<p>DATABASE statement, SQL Server Management Studio, or SQL Server PowerShell to tailor the</p>
+<p>database.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">.dacpac</span></span>
+<span class="line"><span style="color:#E1E4E8">msdb</span></span>
+<span class="line"><span style="color:#E1E4E8">master</span></span></code></pre> </div> <footer class="detail-footer" data-astro-cid-o76tdi4r> <a href="/sqlkraft/operations/" data-astro-cid-o76tdi4r>&larr; Back to operations</a> </footer> </article>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

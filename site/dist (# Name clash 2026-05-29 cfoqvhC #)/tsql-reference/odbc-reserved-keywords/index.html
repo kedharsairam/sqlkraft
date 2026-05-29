@@ -1,0 +1,267 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>ODBC Reserved Keywords — T-SQL Reference — SqlKraft</title><meta name="description" content="The following table lists reserved keywords that are exclusive to"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>ODBC Reserved Keywords</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>ODBC Reserved Keywords</h1> <span class="cat-badge" data-astro-cid-s2stm25t>statements</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#statements</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>EXEC</p>
+<p>PRECISION</p>
+<p>WITH</p>
+<p>EXECUTE</p>
+<p>PRIMARY</p>
+<p>WITHIN GROUP</p>
+<p>EXISTS</p>
+<p>PRINT</p>
+<p>WRITETEXT</p>
+<p>EXIT</p>
+<p>PROC</p>
+<p>The following table lists reserved keywords that are exclusive to</p>
+<p>.</p>
+<p>Additionally, the ISO standard defines a list of reserved keywords. Avoid using ISO reserved</p>
+<p>keywords for object names and identifiers. The ODBC reserved keyword list, shown in the</p>
+<p>following table, is the same as the ISO reserved keyword list.</p>
+<p>Transact-SQL reserved keywords can be used as identifiers or names of databases or database</p>
+<p>objects, such as tables, columns, views, and so on. Use either quoted identifiers or delimited</p>
+<p>identifiers. Using reserved keywords as the names of variables and stored procedure</p>
+<p>parameters is not restricted.</p>
+<p>７</p>
+<p>Note</p>
+<p>The ISO standards reserved keywords list sometimes can be more restrictive than SQL</p>
+<p>Server and at other times less restrictive. For example, the ISO reserved keywords list</p>
+<p>contains</p>
+<p>. SQL Server does not have to distinguish this as a reserved keyword.</p>
+<h3 id="absolute">ABSOLUTE</h3>
+<h3 id="exec">EXEC</h3>
+<h3 id="overlaps">OVERLAPS</h3>
+<h3 id="action">ACTION</h3>
+<h3 id="execute">EXECUTE</h3>
+<h3 id="pad">PAD</h3>
+<h3 id="ada">ADA</h3>
+<h3 id="exists">EXISTS</h3>
+<h3 id="partial">PARTIAL</h3>
+<h3 id="add">ADD</h3>
+<h3 id="external">EXTERNAL</h3>
+<h3 id="pascal">PASCAL</h3>
+<h3 id="all">ALL</h3>
+<h3 id="extract">EXTRACT</h3>
+<h3 id="position">POSITION</h3>
+<h3 id="allocate">ALLOCATE</h3>
+<h3 id="false">FALSE</h3>
+<h3 id="precision">PRECISION</h3>
+<h3 id="alter">ALTER</h3>
+<h3 id="fetch">FETCH</h3>
+<p>The following words are reserved for use in ODBC function calls. These words do not constrain</p>
+<p>the minimum SQL grammar; however, to ensure compatibility with drivers that support the</p>
+<p>core SQL grammar, applications should avoid using these keywords.</p>
+<p>This is the current list of ODBC reserved keywords.</p>
+<h3 id="prepare">PREPARE</h3>
+<h3 id="and">AND</h3>
+<h3 id="first">FIRST</h3>
+<h3 id="preserve">PRESERVE</h3>
+<h3 id="any">ANY</h3>
+<h3 id="float">FLOAT</h3>
+<h3 id="primary">PRIMARY</h3>
+<h3 id="are">ARE</h3>
+<h3 id="for">FOR</h3>
+<h3 id="prior">PRIOR</h3>
+<h3 id="as">AS</h3>
+<h3 id="foreign">FOREIGN</h3>
+<h3 id="privileges">PRIVILEGES</h3>
+<h3 id="asc">ASC</h3>
+<h3 id="fortran">FORTRAN</h3>
+<h3 id="procedure">PROCEDURE</h3>
+<h3 id="assertion">ASSERTION</h3>
+<h3 id="found">FOUND</h3>
+<h3 id="public">PUBLIC</h3>
+<h3 id="at">AT</h3>
+<h3 id="from">FROM</h3>
+<h3 id="read">READ</h3>
+<h3 id="authorization">AUTHORIZATION</h3>
+<h3 id="full">FULL</h3>
+<h3 id="real">REAL</h3>
+<h3 id="avg">AVG</h3>
+<h3 id="get">GET</h3>
+<h3 id="references">REFERENCES</h3>
+<h3 id="begin">BEGIN</h3>
+<h3 id="global">GLOBAL</h3>
+<h3 id="relative">RELATIVE</h3>
+<h3 id="between">BETWEEN</h3>
+<h3 id="go">GO</h3>
+<h3 id="restrict">RESTRICT</h3>
+<h3 id="bit">BIT</h3>
+<h3 id="goto">GOTO</h3>
+<h3 id="revoke">REVOKE</h3>
+<h3 id="bit_length">BIT_LENGTH</h3>
+<h3 id="grant">GRANT</h3>
+<h3 id="right">RIGHT</h3>
+<h3 id="both">BOTH</h3>
+<h3 id="group">GROUP</h3>
+<h3 id="rollback">ROLLBACK</h3>
+<h3 id="by">BY</h3>
+<h3 id="having">HAVING</h3>
+<h3 id="rows">ROWS</h3>
+<h3 id="cascade">CASCADE</h3>
+<h3 id="hour">HOUR</h3>
+<h3 id="schema">SCHEMA</h3>
+<h3 id="cascaded">CASCADED</h3>
+<h3 id="identity">IDENTITY</h3>
+<h3 id="scroll">SCROLL</h3>
+<h3 id="case">CASE</h3>
+<h3 id="immediate">IMMEDIATE</h3>
+<h3 id="second">SECOND</h3>
+<h3 id="cast">CAST</h3>
+<h3 id="in">IN</h3>
+<h3 id="section">SECTION</h3>
+<h3 id="catalog">CATALOG</h3>
+<h3 id="include">INCLUDE</h3>
+<h3 id="select">SELECT</h3>
+<h3 id="char">CHAR</h3>
+<h3 id="index">INDEX</h3>
+<h3 id="session">SESSION</h3>
+<h3 id="char_length">CHAR_LENGTH</h3>
+<h3 id="indicator">INDICATOR</h3>
+<h3 id="session_user">SESSION_USER</h3>
+<h3 id="character">CHARACTER</h3>
+<h3 id="initially">INITIALLY</h3>
+<h3 id="set">SET</h3>
+<h3 id="character_length">CHARACTER_LENGTH</h3>
+<h3 id="inner">INNER</h3>
+<h3 id="size">SIZE</h3>
+<h3 id="check">CHECK</h3>
+<h3 id="input">INPUT</h3>
+<h3 id="smallint">SMALLINT</h3>
+<h3 id="close">CLOSE</h3>
+<h3 id="insensitive">INSENSITIVE</h3>
+<h3 id="some">SOME</h3>
+<h3 id="coalesce">COALESCE</h3>
+<h3 id="insert">INSERT</h3>
+<h3 id="space">SPACE</h3>
+<h3 id="collate">COLLATE</h3>
+<h3 id="int">INT</h3>
+<h3 id="collation">COLLATION</h3>
+<h3 id="integer">INTEGER</h3>
+<h3 id="column">COLUMN</h3>
+<h3 id="intersect">INTERSECT</h3>
+<p>SQL</p>
+<p>SQLCA</p>
+<h3 id="commit">COMMIT</h3>
+<h3 id="interval">INTERVAL</h3>
+<h3 id="connect">CONNECT</h3>
+<h3 id="into">INTO</h3>
+<h3 id="connection">CONNECTION</h3>
+<h3 id="is">IS</h3>
+<h3 id="constraint">CONSTRAINT</h3>
+<h3 id="isolation">ISOLATION</h3>
+<h3 id="substring">SUBSTRING</h3>
+<h3 id="constraints">CONSTRAINTS</h3>
+<h3 id="join">JOIN</h3>
+<h3 id="sum">SUM</h3>
+<h3 id="continue">CONTINUE</h3>
+<h3 id="key">KEY</h3>
+<h3 id="system_user">SYSTEM_USER</h3>
+<h3 id="convert">CONVERT</h3>
+<h3 id="language">LANGUAGE</h3>
+<h3 id="table">TABLE</h3>
+<p>SQLCODE</p>
+<p>SQLERROR</p>
+<p>SQLSTATE</p>
+<p>SQLWARNING</p>
+<h3 id="corresponding">CORRESPONDING</h3>
+<h3 id="last">LAST</h3>
+<h3 id="temporary">TEMPORARY</h3>
+<h3 id="count">COUNT</h3>
+<h3 id="leading">LEADING</h3>
+<h3 id="then">THEN</h3>
+<h3 id="create">CREATE</h3>
+<h3 id="left">LEFT</h3>
+<h3 id="time">TIME</h3>
+<h3 id="cross">CROSS</h3>
+<h3 id="level">LEVEL</h3>
+<h3 id="timestamp">TIMESTAMP</h3>
+<h3 id="current">CURRENT</h3>
+<h3 id="like">LIKE</h3>
+<h3 id="timezone_hour">TIMEZONE_HOUR</h3>
+<h3 id="current_date">CURRENT_DATE</h3>
+<h3 id="local">LOCAL</h3>
+<h3 id="timezone_minute">TIMEZONE_MINUTE</h3>
+<h3 id="current_time">CURRENT_TIME</h3>
+<h3 id="lower">LOWER</h3>
+<h3 id="to">TO</h3>
+<h3 id="current_timestamp">CURRENT_TIMESTAMP</h3>
+<h3 id="match">MATCH</h3>
+<h3 id="trailing">TRAILING</h3>
+<h3 id="current_user">CURRENT_USER</h3>
+<h3 id="max">MAX</h3>
+<h3 id="transaction">TRANSACTION</h3>
+<h3 id="cursor">CURSOR</h3>
+<h3 id="min">MIN</h3>
+<h3 id="translate">TRANSLATE</h3>
+<h3 id="date">DATE</h3>
+<h3 id="minute">MINUTE</h3>
+<h3 id="translation">TRANSLATION</h3>
+<h3 id="day">DAY</h3>
+<h3 id="module">MODULE</h3>
+<h3 id="trim">TRIM</h3>
+<h3 id="deallocate">DEALLOCATE</h3>
+<h3 id="month">MONTH</h3>
+<h3 id="true">TRUE</h3>
+<h3 id="dec">DEC</h3>
+<h3 id="names">NAMES</h3>
+<h3 id="union">UNION</h3>
+<h3 id="decimal">DECIMAL</h3>
+<h3 id="national">NATIONAL</h3>
+<h3 id="unique">UNIQUE</h3>
+<h3 id="declare">DECLARE</h3>
+<h3 id="natural">NATURAL</h3>
+<h3 id="unknown">UNKNOWN</h3>
+<h3 id="default">DEFAULT</h3>
+<h3 id="nchar">NCHAR</h3>
+<h3 id="update">UPDATE</h3>
+<h3 id="deferrable">DEFERRABLE</h3>
+<h3 id="next">NEXT</h3>
+<h3 id="upper">UPPER</h3>
+<h3 id="deferred">DEFERRED</h3>
+<h3 id="no">NO</h3>
+<h3 id="usage">USAGE</h3>
+<h3 id="delete">DELETE</h3>
+<h3 id="none">NONE</h3>
+<h3 id="user">USER</h3>
+<h3 id="desc">DESC</h3>
+<h3 id="not">NOT</h3>
+<h3 id="using">USING</h3>
+<h3 id="describe">DESCRIBE</h3>
+<h3 id="null">NULL</h3>
+<h3 id="value">VALUE</h3>
+<h3 id="descriptor">DESCRIPTOR</h3>
+<h3 id="nullif">NULLIF</h3>
+<h3 id="values">VALUES</h3>
+<h3 id="diagnostics">DIAGNOSTICS</h3>
+<h3 id="numeric">NUMERIC</h3>
+<h3 id="varchar">VARCHAR</h3>
+<h3 id="disconnect">DISCONNECT</h3>
+<h3 id="octet_length">OCTET_LENGTH</h3>
+<h3 id="varying">VARYING</h3>
+<h3 id="distinct">DISTINCT</h3>
+<h3 id="of">OF</h3>
+<h3 id="view">VIEW</h3>
+<h3 id="domain">DOMAIN</h3>
+<h3 id="on">ON</h3>
+<h3 id="when">WHEN</h3>
+<h3 id="double">DOUBLE</h3>
+<h3 id="only">ONLY</h3>
+<h3 id="whenever">WHENEVER</h3>
+<h3 id="drop">DROP</h3>
+<h3 id="open">OPEN</h3>
+<h3 id="where">WHERE</h3>
+<h3 id="else">ELSE</h3>
+<h3 id="option">OPTION</h3>
+<h3 id="with">WITH</h3>
+<h3 id="end">END</h3>
+<h3 id="or">OR</h3>
+<h3 id="work">WORK</h3>
+<h3 id="end-exec">END-EXEC</h3>
+<h3 id="order">ORDER</h3>
+<h3 id="write">WRITE</h3>
+<h3 id="escape">ESCAPE</h3>
+<h3 id="outer">OUTER</h3>
+<h3 id="year">YEAR</h3>
+<h3 id="except">EXCEPT</h3>
+<h3 id="output">OUTPUT</h3>
+<h3 id="zone">ZONE</h3>
+<h3 id="exception">EXCEPTION</h3> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Date and time styles — T-SQL Reference — SqlKraft</title><meta name="description" content="An integer expression that specifies how the"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Date and time styles</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Date and time styles</h1> <span class="cat-badge" data-astro-cid-s2stm25t>data-types</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#data-types</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>An integer expression that specifies how the</p>
+<p>function will translate</p>
+<p>expression</p>
+<p>. For a</p>
+<p>style value of NULL, NULL is returned.</p>
+<p>data_type</p>
+<p>determines the range.</p>
+<h2 id="returns">Returns</h2>
+<p>expression</p>
+<p>, translated to</p>
+<p>data_type</p>
+<p>.</p>
+<p>For a date or time data type</p>
+<p>expression</p>
+<p>,</p>
+<p>style</p>
+<p>can have one of the values shown in the following</p>
+<p>table. Other values are processed as 0. Beginning with SQL Server 2012 (11.x), the only styles</p>
+<p>supported, when converting from date and time types to</p>
+<p>, are 0 or 1. All other</p>
+<p>conversion styles return error 9809.</p>
+<ul>
+<li></li>
+</ul>
+<p>or</p>
+<p>Default for</p>
+<p>and</p>
+<p>(or</p>
+<p>)</p>
+<p>U.S.</p>
+<p>1 =</p>
+<p>101 =</p>
+<p>ANSI</p>
+<p>2 =</p>
+<p>102 =</p>
+<p>British/French</p>
+<p>3 =</p>
+<p>103 =</p>
+<p>German</p>
+<p>4 =</p>
+<p>104 =</p>
+<p>Italian</p>
+<p>5 =</p>
+<p>105 =</p>
+<ul>
+<li></li>
+</ul>
+<p>6 =</p>
+<p>106 =</p>
+<p>７</p>
+<p>Note</p>
+<p>SQL Server supports the date format, in Arabic style, with the Kuwaiti algorithm.</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p>1</p>
+<p>3</p>
+<p>1,</p>
+<p>2</p>
+<p>1</p>
+<h4 id="without">Without</h4>
+<h4 id="century-yy">century (yy)</h4>
+<h4 id="with">With</h4>
+<h4 id="century">century</h4>
+<h4 id="yyyy">(yyyy)</h4>
+<h4 id="standard">Standard</h4>
+<h4 id="inputoutput">Input/output</h4>
+<h4 id="7">7</h4>
+<h4 id="107">107</h4>
+<h4 id="8">8</h4>
+<h4 id="24">24</h4>
+<h4 id="108">108</h4>
+<h4 id="9">9</h4>
+<h4 id="109">109</h4>
+<h4 id="10">10</h4>
+<h4 id="110">110</h4>
+<h4 id="11">11</h4>
+<h4 id="111">111</h4>
+<h4 id="12">12</h4>
+<h4 id="112">112</h4>
+<h4 id="13">13</h4>
+<h4 id="113">113</h4>
+<h4 id="14">14</h4>
+<h4 id="114">114</h4>
+<h4 id="20">20</h4>
+<h4 id="120">120</h4>
+<h4 id="21">21</h4>
+<h4 id="25">25</h4>
+<h4 id="121">121</h4>
+<h4 id="time">time</h4>
+<h4 id="date">date</h4>
+<h4 id="datetime2">datetime2</h4>
+<h4 id="datetimeoffset">datetimeoffset</h4>
+<h4 id="22">22</h4>
+<h4 id="23">23</h4>
+<h4 id="126">126</h4>
+<h4 id="127">127</h4>
+<h4 id="130">130</h4>
+<h4 id="131">131</h4>
+<ul>
+<li></li>
+</ul>
+<p>7 =</p>
+<p>107 =</p>
+<p>or</p>
+<ul>
+<li></li>
+<li></li>
+</ul>
+<p>or</p>
+<p>Default + milliseconds</p>
+<p>(or</p>
+<p>)</p>
+<p>USA</p>
+<p>10 = mm-dd-yy</p>
+<p>110 =</p>
+<p>JAPAN</p>
+<p>11 = yy/mm/dd</p>
+<p>111 =</p>
+<p>ISO</p>
+<p>12 = yymmdd</p>
+<p>112 =</p>
+<ul>
+<li></li>
+</ul>
+<p>or</p>
+<p>Europe default + milliseconds</p>
+<p>(24-hour)</p>
+<ul>
+<li></li>
+</ul>
+<p>(24-hour)</p>
+<ul>
+<li></li>
+</ul>
+<p>or</p>
+<p>ODBC canonical</p>
+<p>(24-</p>
+<p>hour)</p>
+<ul>
+<li></li>
+</ul>
+<p>or</p>
+<p>or</p>
+<p>ODBC canonical (with milliseconds) default</p>
+<p>for</p>
+<p>,</p>
+<p>,</p>
+<p>, and</p>
+<p>(24-hour)</p>
+<ul>
+<li></li>
+</ul>
+<p>U.S.</p>
+<p>(or</p>
+<p>)</p>
+<ul>
+<li></li>
+</ul>
+<p>ISO8601</p>
+<ul>
+<li></li>
+</ul>
+<p>ISO8601</p>
+<p>(no spaces)</p>
+<ul>
+<li></li>
+</ul>
+<p>ISO8601 with time zone Z</p>
+<p>(no</p>
+<p>spaces)</p>
+<ul>
+<li></li>
+</ul>
+<p>Hijri</p>
+<ul>
+<li></li>
+</ul>
+<p>Hijri</p>
+<p>1</p>
+<p>3</p>
+<p>1</p>
+<p>1,</p>
+<p>2</p>
+<p>1,</p>
+<p>2</p>
+<p>2</p>
+<p>2</p>
+<p>4</p>
+<p>6</p>
+<p>8, 9</p>
+<p>6</p>
+<p>1,</p>
+<p>2</p>
+<p>5</p>
+<p>7</p>
+<p>2</p>
+<p>5</p>
+<h3 id="0">0</h3>
+<h3 id="100">100</h3>
+<h3 id="9-1">9</h3>
+<h3 id="109-1">109</h3>
+<h3 id="13-1">13</h3>
+<h3 id="113-1">113</h3>
+<h3 id="20-1">20</h3>
+<h3 id="120-1">120</h3>
+<h3 id="23-1">23</h3>
+<h3 id="21-1">21</h3>
+<h3 id="25-1">25</h3>
+<h3 id="121-1">121</h3>
+<h3 id="datetime">datetime</h3>
+<h3 id="datetime-1">datetime</h3>
+<h3 id="smalldatetime">smalldatetime</h3>
+<h3 id="datetime-2">datetime</h3>
+<h3 id="smalldatetime-1">smalldatetime</h3>
+<h3 id="datetime-3">datetime</h3>
+<h3 id="smalldatetime-2">smalldatetime</h3>
+<h3 id="datetime-4">datetime</h3>
+<h3 id="datetime-5">datetime</h3>
+<h3 id="smalldatetime-3">smalldatetime</h3>
+<h3 id="datetime-6">datetime</h3>
+<h3 id="smalldatetime-4">smalldatetime</h3>
+<h3 id="char">char</h3>
+<h3 id="varchar">varchar</h3>
+<p>These style values return nondeterministic results. Includes all (</p>
+<p>) (without century) styles</p>
+<p>and a subset of (</p>
+<p>) (with century) styles.</p>
+<p>The default values (</p>
+<p>or</p>
+<p>,</p>
+<p>or</p>
+<p>,</p>
+<p>or</p>
+<p>,</p>
+<p>or</p>
+<p>,</p>
+<p>, and</p>
+<p>or</p>
+<p>or</p>
+<p>) always</p>
+<p>return the century (</p>
+<p>).</p>
+<p>Input when you convert to</p>
+<p>; output when you convert to character data.</p>
+<p>Designed for XML use. For conversion from</p>
+<p>or</p>
+<p>to character data, see</p>
+<p>the previous table for the output format.</p>
+<p>Hijri is a calendar system with several variations. SQL Server uses the Kuwaiti algorithm.</p>
+<p>For a milliseconds (</p>
+<p>) value of 0, the millisecond decimal fraction value won’t display. For</p>
+<p>example, the value</p>
+<p>displays as</p>
+<p>.</p>
+<p>In this style,</p>
+<p>represents a multi-token Hijri Unicode representation of the full month</p>
+<p>name. This value doesn’t render correctly on a default US installation of SSMS.</p>
+<p>Only supported when casting from character data to</p>
+<p>or</p>
+<p>. When</p>
+<p>casting character data representing only date or only time components to the</p>
+<p>or</p>
+<p>data types, the unspecified time component is set to</p>
+<p>, and the</p>
+<p>unspecified date component is set to</p>
+<p>.</p>
+<p>Use the optional time zone indicator</p>
+<p>to make it easier to map XML</p>
+<p>values that</p>
+<p>have time zone information to SQL Server</p>
+<p>values that have no time zone.</p>
+<p>indicates</p>
+<p>time zone at UTC-0. The</p>
+<p>offset, in the</p>
+<p>or</p>
+<p>direction, indicates other time zones. For</p>
+<p>example:</p>
+<p>.</p>
+<p>When converting</p>
+<p>to character data, the styles that include seconds or</p>
+<p>milliseconds show zeros in these positions. When converting from</p>
+<p>or</p>
+<p>values, use an appropriate</p>
+<p>or</p>
+<p>data type length to truncate unwanted date parts.</p>
+<p>1</p>
+<p>2</p>
+<p>）</p>
+<p>Important</p>
+<p>By default, SQL Server interprets two-digit years based on a cutoff year of 2049. That</p>
+<p>means that SQL Server interprets the two-digit year 49 as 2049 and the two-digit year 50</p>
+<p>as 1950. Many client applications, including those based on Automation objects, use a</p>
+<p>cutoff year of 2030. SQL Server provides the two digit year cutoff configuration option to</p>
+<p>change the cutoff year used by SQL Server. This allows for the consistent treatment of</p>
+<p>dates. We recommend specifying four-digit years.</p>
+<p>3</p>
+<p>4</p>
+<p>5</p>
+<p>6</p>
+<p>7</p>
+<p>8</p>
+<p>9</p>
+<h3 id="datetimeoffset-1">datetimeoffset</h3>
+<h3 id="float">float</h3>
+<h3 id="real">real</h3>
+<h4 id="value">Value</h4>
+<h4 id="output">Output</h4>
+<h4 id="0-1">0</h4>
+<h4 id="1">1</h4>
+<h4 id="2">2</h4>
+<h4 id="3">3</h4>
+<h4 id="126-128">126, 128,</h4>
+<h4 id="129">129</h4>
+<h3 id="money">money</h3>
+<h3 id="smallmoney">smallmoney</h3>
+<h4 id="value-1">Value</h4>
+<h4 id="output-1">Output</h4>
+<h4 id="0-2">0</h4>
+<h4 id="1-1">1</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CONVERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">mon dd yyyy hh:miAM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">mm</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">dd</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">yy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">mm</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">dd</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">yyyy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">yy</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">mm</span><span style="color:#E1E4E8">.dd</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">yyyy</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">mm</span><span style="color:#E1E4E8">.dd</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">dd</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">mm</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">yy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">dd</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">mm</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">yyyy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">dd</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">mm</span><span style="color:#E1E4E8">.yy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">dd</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">mm</span><span style="color:#E1E4E8">.yyyy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">dd</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">mm</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">yy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">dd</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">mm</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">yyyy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">dd mon yy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">dd mon yyyy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Mon dd, yy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Mon dd, yyyy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">hh:mi:ss</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">mon dd yyyy</span></span>
+<span class="line"><span style="color:#E1E4E8">hh:mi:ss:mmmAM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">mm</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">dd</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">yyyy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">yyyy</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">mm</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">dd</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">yyyymmdd</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">dd mon yyyy</span></span>
+<span class="line"><span style="color:#E1E4E8">hh:mi:ss:mmm</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">hh:mi:ss:mmm</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">yyyy</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">mm</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">dd hh:mi:ss</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">yyyy</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">mm</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">dd hh:mi:</span><span style="color:#79B8FF">ss</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">mmm</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">mm</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">dd</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">yy hh:mi:ss AM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">yyyy</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">mm</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">dd</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">yyyy</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">mm</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">ddThh:mi:</span><span style="color:#79B8FF">ss</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">mmm</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">yyyy</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">MM</span><span style="color:#F97583">-</span></span>
+<span class="line"><span style="color:#E1E4E8">ddThh:mm:</span><span style="color:#79B8FF">ss</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">fffZ</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">dd mon yyyy</span></span>
+<span class="line"><span style="color:#E1E4E8">hh:mi:ss:mmmAM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">dd</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">mm</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">yyyy</span></span>
+<span class="line"><span style="color:#E1E4E8">hh:mi:ss:mmmAM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">yy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">yyyy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">yyyy</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">mmm</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">2022</span><span style="color:#F97583">-</span><span style="color:#79B8FF">11</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">07T18:</span><span style="color:#79B8FF">26</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">20</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">000</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">2022</span><span style="color:#F97583">-</span><span style="color:#79B8FF">11</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">07T18:</span><span style="color:#79B8FF">26</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">20</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">mon</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">00</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">00</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">00</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">000</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">1900</span><span style="color:#F97583">-</span><span style="color:#79B8FF">01</span><span style="color:#F97583">-</span><span style="color:#79B8FF">01</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Z</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Z</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">HH:MM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">+</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">-</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">2022</span><span style="color:#F97583">-</span><span style="color:#79B8FF">12</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">12T23:</span><span style="color:#79B8FF">45</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">12</span><span style="color:#F97583">-</span><span style="color:#79B8FF">08</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">00</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Start transactions — Architecture Guide — SqlKraft</title><meta name="description" content="Using API functions and Transact-SQL statements, you can start transactions as explicit,"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Start transactions</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>io fundamentals</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#io-fundamentals</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Start transactions</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Using API functions and Transact-SQL statements, you can start transactions as explicit,</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Using API functions and Transact-SQL statements, you can start transactions as explicit,</p>
+<p>autocommit, or implicit transactions.</p>
+<p>An explicit transaction is one in which you explicitly define both the start and end of the</p>
+<p>transaction through an API function or by issuing the Transact-SQL</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>, or</p>
+<p>Transact-SQL statements.</p>
+<p>When the transaction ends, the connection returns to the transaction mode it was in before the</p>
+<p>explicit transaction was started, which might be the implicit or autocommit mode.</p>
+<p>You can use all Transact-SQL statements in an explicit transaction, except for the following</p>
+<p>statements:</p>
+<p>Full-text system stored procedures</p>
+<p>to set database options or any system procedure that modifies the</p>
+<p>database inside explicit or implicit transactions.</p>
+<p>７</p>
+<p>Note</p>
+<p>can be used inside an explicit transaction. However,</p>
+<p>commits independently of the enclosing transaction and can’t be rolled back.</p>
+<h3 id="implicit-transactions">Implicit Transactions</h3>
+<h3 id="batch-scoped-transactions">Batch-scoped Transactions</h3>
+<p>Autocommit mode is the default transaction management mode of the Database Engine. Every</p>
+<p>Transact-SQL statement is committed or rolled back when it completes. If a statement completes</p>
+<p>successfully, it’s committed; if it encounters any error, it’s rolled back. A connection to an instance</p>
+<p>of the Database Engine operates in autocommit mode whenever this default mode hasn’t been</p>
+<p>overridden by either explicit or implicit transactions. Autocommit mode is also the default mode</p>
+<p>for SqlClient, ADO, OLE DB, and ODBC.</p>
+<p>When a connection is operating in implicit transaction mode, the instance of the Database Engine</p>
+<p>automatically starts a new transaction after the current transaction is committed or rolled back.</p>
+<p>You do nothing to delineate the start of a transaction; you only commit or roll back each</p>
+<p>transaction. Implicit transaction mode generates a continuous chain of transactions. Set implicit</p>
+<p>transaction mode on through either an API function or the Transact-SQL</p>
+<p>statement. This mode is also known as Autocommit OFF, see</p>
+<p>setAutoCommit Method (SQLServerConnection)</p>
+<p>.</p>
+<p>After implicit transaction mode is enabled for a connection, the instance of the Database Engine</p>
+<p>automatically starts a transaction when it first executes any of these statements:</p>
+<p>Applicable only to multiple active result sets (MARS), a Transact-SQL explicit or implicit</p>
+<p>transaction that starts under a MARS session becomes a batch-scoped transaction. A batch-</p>
+<p>scoped transaction that isn’t committed or rolled back when a batch completes is automatically</p>
+<p>rolled back by the Database Engine.</p>
+<h3 id="distributed-transactions">Distributed transactions</h3>
+<h3 id="prepare-phase">Prepare phase</h3>
+<h3 id="commit-phase">Commit phase</h3>
+<p>Distributed transactions span two or more servers known as resource managers. The</p>
+<p>management of the transaction must be coordinated between the resource managers by a server</p>
+<p>component called a transaction manager. Each instance of the Database Engine can operate as a</p>
+<p>resource manager in distributed transactions coordinated by transaction managers, such as</p>
+<p>Microsoft Distributed Transaction Coordinator (MS DTC), or other transaction managers that</p>
+<p>support the Open Group XA specification for distributed transaction processing. For more</p>
+<p>information, see the MS DTC documentation.</p>
+<p>A transaction within a single instance of the Database Engine that spans two or more databases is</p>
+<p>a distributed transaction. The instance manages the distributed transaction internally; to the user,</p>
+<p>it operates as a local transaction.</p>
+<p>In the application, a distributed transaction is managed much the same as a local transaction. At</p>
+<p>the end of the transaction, the application requests the transaction to be either committed or</p>
+<p>rolled back. A distributed commit must be managed differently by the transaction manager to</p>
+<p>minimize the risk that a network failure can result in some resource managers successfully</p>
+<p>committing while others roll back the transaction. This is achieved by managing the commit</p>
+<p>process in two phases (the prepare phase and the commit phase), which is known as a two-phase</p>
+<p>commit.</p>
+<p>When the transaction manager receives a commit request, it sends a prepare command to</p>
+<p>all of the resource managers involved in the transaction. Each resource manager then does</p>
+<p>everything required to make the transaction durable, and all transaction log buffers for the</p>
+<p>transaction are flushed to disk. As each resource manager completes the prepare phase, it</p>
+<h2 id="returns-success-or-failure-of-the-phase-to-the-transaction-manager-sql-server-2014-12x">returns success or failure of the phase to the transaction manager. SQL Server 2014 (12.x)</h2>
+<p>introduced delayed transaction durability. Delayed durable transactions commit before the</p>
+<p>transaction log buffers on each resource manager are flushed to disk. For more information</p>
+<p>on delayed transaction durability, see the article</p>
+<p>Control Transaction Durability</p>
+<p>.</p>
+<p>If the transaction manager receives successful prepares from all of the resource managers, it</p>
+<p>sends commit commands to each resource manager. The resource managers can then</p>
+<p>complete the commit. If all of the resource managers report a successful commit, the</p>
+<p>transaction manager then sends a success notification to the application. If any resource</p>
+<h3 id="commit">Commit</h3>
+<h3 id="roll-back">Roll back</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BEGIN</span><span style="color:#F97583"> TRANSACTION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">COMMIT</span></span>
+<span class="line"><span style="color:#F97583">TRANSACTION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">COMMIT WORK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ROLLBACK</span><span style="color:#F97583"> TRANSACTION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ROLLBACK WORK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> DATABASE</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> DATABASE</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> FULLTEXT</span><span style="color:#F97583"> CATALOG</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> FULLTEXT</span><span style="color:#F97583"> CATALOG</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> FULLTEXT</span><span style="color:#F97583"> CATALOG</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> FULLTEXT</span><span style="color:#F97583"> INDEX</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> FULLTEXT</span><span style="color:#F97583"> INDEX</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> FULLTEXT</span><span style="color:#F97583"> INDEX</span></span>
+<span class="line"><span style="color:#F97583">BACKUP</span></span>
+<span class="line"><span style="color:#F97583">RESTORE</span></span>
+<span class="line"><span style="color:#F97583">RECONFIGURE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_dboption</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">master</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span><span style="color:#F97583"> STATISTICS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span><span style="color:#F97583"> STATISTICS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span></span>
+<span class="line"><span style="color:#F97583">IMPLICIT_TRANSACTIONS</span><span style="color:#F97583"> ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> TABLE</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">DELETE</span></span>
+<span class="line"><span style="color:#E1E4E8">DENY</span></span>
+<span class="line"><span style="color:#F97583">DROP</span></span>
+<span class="line"><span style="color:#F97583">FETCH</span></span>
+<span class="line"><span style="color:#F97583">GRANT</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">OPEN</span></span>
+<span class="line"><span style="color:#F97583">REVOKE</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">TRUNCATE</span></span>
+<span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

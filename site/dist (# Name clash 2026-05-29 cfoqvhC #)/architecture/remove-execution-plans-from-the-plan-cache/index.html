@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Remove execution plans from the plan cache — Architecture Guide — SqlKraft</title><meta name="description" content="Notice there are now two entries in the"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Remove execution plans from the plan cache</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Remove execution plans from the plan cache</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Notice there are now two entries in the</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Notice there are now two entries in the</p>
+<p>DMV output:</p>
+<p>The</p>
+<p>column shows the value</p>
+<p>in the first record, which is the plan executed</p>
+<p>once with</p>
+<p>.</p>
+<p>The</p>
+<p>column shows the value</p>
+<p>in the second record, which is the plan</p>
+<p>executed with</p>
+<p>, because it was executed twice.</p>
+<p>The different</p>
+<p>refers to a different execution plan entry in the plan</p>
+<p>cache. However, the</p>
+<p>value is the same for both entries because they refer to</p>
+<p>the same batch.</p>
+<p>The execution with</p>
+<p>set to OFF has a new</p>
+<p>, and it’s available</p>
+<p>for reuse for calls that have the same set of SET options. The new plan handle is</p>
+<p>necessary because the execution context was reinitialized due to changed SET options.</p>
+<p>But that doesn’t trigger a recompile: both entries refer to the same plan and query, as</p>
+<p>evidenced by the same</p>
+<p>and</p>
+<p>values.</p>
+<p>What this effectively means is that we have two plan entries in the cache corresponding to the</p>
+<p>same batch, and it underscores the importance of making sure that the plan cache affecting</p>
+<p>SET options are the same, when the same queries are executed repeatedly, to optimize for plan</p>
+<p>reuse and keep plan cache size to its required minimum.</p>
+<p>Execution plans remain in the plan cache as long as there is enough memory to store them.</p>
+<p>When memory pressure exists, the SQL Server Database Engine uses a cost-based approach to</p>
+<p>determine which execution plans to remove from the plan cache. To make a cost-based</p>
+<p>decision, the SQL Server Database Engine increases and decreases a current cost variable for</p>
+<p>each execution plan according to the following factors.</p>
+<p></p>
+<p>Tip</p>
+<p>A common pitfall is that different clients can have different default values for the SET</p>
+<p>options. For example, a connection made through SQL Server Management Studio</p>
+<p>automatically sets</p>
+<p>to ON, while SQLCMD sets</p>
+<p>to</p>
+<p>OFF. Executing the same queries from these two clients will result in multiple plans (as</p>
+<p>described in the example above).</p>
+<p>When a user process inserts an execution plan into the cache, the user process sets the current</p>
+<p>cost equal to the original query compile cost; for ad hoc execution plans, the user process sets</p>
+<p>the current cost to zero. Thereafter, each time a user process references an execution plan, it</p>
+<p>resets the current cost to the original compile cost; for ad hoc execution plans the user process</p>
+<p>increases the current cost. For all plans, the maximum value for the current cost is the original</p>
+<p>compile cost.</p>
+<p>When memory pressure exists, the SQL Server Database Engine responds by removing</p>
+<p>execution plans from the plan cache. To determine which plans to remove, the SQL Server</p>
+<p>Database Engine repeatedly examines the state of each execution plan and removes plans</p>
+<p>when their current cost is zero. An execution plan with zero current cost isn’t removed</p>
+<p>automatically when memory pressure exists; it is removed only when the SQL Server Database</p>
+<p>Engine examines the plan and the current cost is zero. When examining an execution plan, the</p>
+<p>SQL Server Database Engine pushes the current cost toward zero by decreasing the current</p>
+<p>cost if a query isn’t currently using the plan.</p>
+<p>The SQL Server Database Engine repeatedly examines the execution plans until enough have</p>
+<p>been removed to satisfy memory requirements. While memory pressure exists, an execution</p>
+<p>plan might have its cost increased and decreased more than once. When memory pressure no</p>
+<p>longer exists, the SQL Server Database Engine stops decreasing the current cost of unused</p>
+<p>execution plans and all execution plans remain in the plan cache, even if their cost is zero.</p>
+<p>The SQL Server Database Engine uses the resource monitor and user worker threads to free</p>
+<p>memory from the plan cache in response to memory pressure. The resource monitor and user</p>
+<p>worker threads can examine plans run concurrently to decrease the current cost for each</p>
+<p>unused execution plan. The resource monitor removes execution plans from the plan cache</p>
+<p>when global memory pressure exists. It frees memory to enforce policies for system memory,</p>
+<p>process memory, resource pool memory, and maximum size for all caches.</p>
+<p>The maximum size for all caches is a function of the buffer pool size and can’t exceed the</p>
+<p>maximum server memory. For more information on configuring the maximum server memory,</p>
+<p>see the</p>
+<p>setting in</p>
+<p>.</p>
+<p>The user worker threads remove execution plans from the plan cache when single cache</p>
+<p>memory pressure exists. They enforce policies for maximum single cache size and maximum</p>
+<p>single cache entries.</p>
+<p>The following examples illustrate which execution plans get removed from the plan cache:</p>
+<p>An execution plan is frequently referenced so that its cost never goes to zero. The plan</p>
+<p>remains in the plan cache and isn’t removed unless there is memory pressure and the</p>
+<p>current cost is zero.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_exec_cached_plans</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">usecounts</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">1</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> ANSI_DEFAULTS</span><span style="color:#F97583"> OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">usecounts</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">2</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> ANSI_DEFAULTS</span><span style="color:#F97583"> ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">memory_object_address</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">sql_handle</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ANSI_DEFAULTS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">plan_handle</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">query_plan_hash</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">query_hash</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">000000</span></span>
+<span class="line"><span style="color:#E1E4E8">0x0300130095555D02C864C10061AB000001000000000000000000000000000000000000000000000000</span></span>
+<span class="line"><span style="color:#79B8FF">000000</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">QUOTED_IDENTIFIER</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">QUOTED_IDENTIFIER</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">max </span><span style="color:#F97583">server</span><span style="color:#E1E4E8"> memory</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

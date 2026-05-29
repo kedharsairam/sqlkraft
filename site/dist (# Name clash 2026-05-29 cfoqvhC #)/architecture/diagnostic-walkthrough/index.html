@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Diagnostic walkthrough — Architecture Guide — SqlKraft</title><meta name="description" content="sys.dm_os_spinlock_stats"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Diagnostic walkthrough</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Diagnostic walkthrough</h1> <p class="doc-lede" data-astro-cid-hditk3lm>sys.dm_os_spinlock_stats</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Query the</p>
+<p>sys.dm_os_spinlock_stats</p>
+<p>DMV to look for a high number of spins and</p>
+<p>backoff events over periods of time.</p>
+<p>Starting with SQL Server 2025 (17.x) Preview, query the</p>
+<p>sys.dm_os_wait_stats</p>
+<p>and</p>
+<p>sys.dm_exec_session_wait_stats</p>
+<p>DMVs using the</p>
+<p>wait type. Requires</p>
+<p>trace flag 8134</p>
+<p>. For more information, see</p>
+<p>SPINLOCK_EXT</p>
+<p>.</p>
+<p>SQL Server</p>
+<p>Used to track call stacks for spinlocks that are experiencing a high number of spins.</p>
+<p>In some cases, memory dumps of the SQL Server process and the Windows</p>
+<p>Debugging tools. In general, this level of analysis is done when the Microsoft Support</p>
+<p>teams are engaged.</p>
+<p>The general technical process for diagnosing SQL Server Spinlock contention is:</p>
+<ol>
+<li></li>
+</ol>
+<p>: Determine that there’s contention that might be spinlock related.</p>
+<ol start="2">
+<li></li>
+</ol>
+<p>: Capture statistics from</p>
+<p>to find the spinlock type</p>
+<p>experiencing the most contention.</p>
+<ol start="3">
+<li></li>
+</ol>
+<p>: Obtain debug symbols for sqlservr.exe (sqlservr.pdb) and place the symbols in the</p>
+<p>same directory as the SQL Server service .exe file (sqlservr.exe) for the instance of SQL</p>
+<p>Server.\ In order to see the call stacks for the backoff events, you must have symbols for</p>
+<p>the particular version of SQL Server that you’re running. Symbols for SQL Server are</p>
+<p>available on the Microsoft Symbol Server. For more information about how to download</p>
+<p>symbols from the Microsoft Symbol Server, see</p>
+<p>Debugging with symbols</p>
+<p>.</p>
+<ol start="4">
+<li></li>
+</ol>
+<p>: Use SQL Server Extended Events to trace the backoff events for the spinlock types</p>
+<p>of interest. The events to capture are</p>
+<p>and</p>
+<p>.</p>
+<p>Extended Events provide the ability to track the backoff events and capture the call stack for</p>
+<p>those operation(s) most prevalently trying to obtain the spinlock. By analyzing the call stack, it’s</p>
+<p>possible to determine what type of operation is contributing to contention for any particular</p>
+<p>spinlock.</p>
+<p>The following walkthrough shows how to use the tools and techniques to diagnose a spinlock</p>
+<p>contention problem in a real world scenario. This walkthrough is based on a customer</p>
+<p>engagement running a benchmark test to simulate approximately 6,500 concurrent users on an</p>
+<p>8 socket, 64 physical core server with 1 TB of memory.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SPINLOCK_EXT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_os_spinlock_stats</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">spinlock_backoff</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">spinlock_backoff_warning</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

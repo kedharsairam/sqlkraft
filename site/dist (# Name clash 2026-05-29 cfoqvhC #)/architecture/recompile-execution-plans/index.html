@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Recompile execution plans — Architecture Guide — SqlKraft</title><meta name="description" content="An ad hoc execution plan is inserted and isn't referenced again before memory pressure"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Recompile execution plans</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Recompile execution plans</h1> <p class="doc-lede" data-astro-cid-hditk3lm>An ad hoc execution plan is inserted and isn&#39;t referenced again before memory pressure</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>An ad hoc execution plan is inserted and isn’t referenced again before memory pressure</p>
+<p>exists. Since ad hoc plans are initialized with a current cost of zero, when the SQL Server</p>
+<p>Database Engine examines the execution plan, it will see the zero current cost and</p>
+<p>remove the plan from the plan cache. The ad hoc execution plan remains in the plan</p>
+<p>cache with a zero current cost when memory pressure doesn’t exist.</p>
+<p>To manually remove a single plan or all plans from the cache, use</p>
+<p>DBCC FREEPROCCACHE</p>
+<p>.</p>
+<p>DBCC FREESYSTEMCACHE</p>
+<p>can also be used to clear any cache, including plan cache. Starting</p>
+<p>with SQL Server 2016 (13.x), the</p>
+<p>to clear the procedure (plan) cache for the database in scope.</p>
+<p>A change in some configuration settings via</p>
+<p>sp_configure</p>
+<p>and</p>
+<p>reconfigure</p>
+<p>will also cause plans</p>
+<p>to be removed from plan cache. You can find the list of these configuration settings in the</p>
+<h2 id="remarks-section-of-the">Remarks section of the</h2>
+<p>DBCC FREEPROCCACHE</p>
+<p>article. A configuration change like this will log</p>
+<p>the following informational message in the error log:</p>
+<p>Certain changes in a database can cause an execution plan to be either inefficient or invalid,</p>
+<p>based on the new state of the database. SQL Server detects the changes that invalidate an</p>
+<p>execution plan and marks the plan as not valid. A new plan must then be recompiled for the</p>
+<p>next connection that executes the query. The conditions that invalidate a plan include the</p>
+<p>following:</p>
+<p>Changes made to a table or view referenced by the query (</p>
+<p>and</p>
+<p>).</p>
+<p>Changes made to a single procedure, which would drop all plans for that procedure from</p>
+<p>the cache (</p>
+<p>).</p>
+<p>Changes to any indexes used by the execution plan.</p>
+<p>Updates on statistics used by the execution plan, generated either explicitly from a</p>
+<p>statement, such as</p>
+<p>, or generated automatically.</p>
+<p>Dropping an index used by the execution plan.</p>
+<p>An explicit call to</p>
+<p>.</p>
+<p>Large numbers of changes to keys (generated by</p>
+<p>or</p>
+<p>statements from</p>
+<p>other users that modify a table referenced by the query).</p>
+<p>For tables with triggers, if the number of rows in the inserted or deleted tables grows</p>
+<p>significantly.</p>
+<p>Executing a stored procedure using the</p>
+<p>option.</p>
+<p>Most recompilations are required either for statement correctness or to obtain potentially</p>
+<p>faster query execution plans.</p>
+<p>In SQL Server versions prior to 2005, whenever a statement within a batch causes</p>
+<p>recompilation, the entire batch, whether submitted through a stored procedure, trigger, ad hoc</p>
+<p>batch, or prepared statement, was recompiled. Starting with SQL Server 2005 (9.x), only the</p>
+<p>statement inside the batch that triggers recompilation is recompiled. Also, there are additional</p>
+<p>types of recompilations in SQL Server 2005 (9.x) and later because of its expanded feature set.</p>
+<p>Statement-level recompilation benefits performance because, in most cases, a small number of</p>
+<p>statements causes recompilations and their associated penalties, in terms of CPU time and</p>
+<p>locks. These penalties are therefore avoided for the other statements in the batch that don’t</p>
+<p>have to be recompiled.</p>
+<p>The</p>
+<p>extended event (XEvent) reports statement-level recompilations.</p>
+<p>This XEvent occurs when a statement-level recompilation is required by any kind of batch. This</p>
+<p>includes stored procedures, triggers, ad hoc batches and queries. Batches can be submitted</p>
+<p>through several interfaces, including</p>
+<p>, dynamic SQL, Prepare methods or Execute</p>
+<p>methods.</p>
+<p>The</p>
+<p>column of</p>
+<p>XEvent contains an integer code that</p>
+<p>indicates the reason for the recompilation. The following table contains the possible reasons:</p>
+<p>Schema changed</p>
+<p>Statistics changed</p>
+<p>Deferred compile</p>
+<p>SET option changed</p>
+<p>Temporary table changed</p>
+<p>Remote rowset changed</p>
+<p>permission changed</p>
+<p>Query notification environment changed</p>
+<p>Partitioned view changed</p>
+<p>Cursor options changed</p>
+<h3 id="sprecompile">SP:Recompile</h3>
+<h3 id="here">here</h3>
+<p>requested</p>
+<p>Parameterized plan flushed</p>
+<p>Plan affecting database version changed</p>
+<p>Query Store plan forcing policy changed</p>
+<p>Query Store plan forcing failed</p>
+<p>Query Store missing the plan</p>
+<p>７</p>
+<p>Note</p>
+<p>In SQL Server versions where XEvents aren’t available, then the SQL Server Profiler</p>
+<p>trace event can be used for the same purpose of reporting statement-level</p>
+<p>recompilations.</p>
+<p>The trace event</p>
+<p>also reports statement-level recompilations, and this</p>
+<p>trace event can also be used to track and debug recompilations.</p>
+<p>Whereas</p>
+<p>generates only for stored procedures and triggers,</p>
+<p>generates for stored procedures, triggers, ad hoc batches, batches that</p>
+<p>are executed by using</p>
+<p>, prepared queries, and dynamic SQL. The</p>
+<p>EventSubClass</p>
+<p>column of</p>
+<p>and</p>
+<p>contains an integer code</p>
+<p>that indicates the reason for the recompilation. The codes are described</p>
+<p>.</p>
+<p>７</p>
+<p>Note</p>
+<p>When the</p>
+<p>database option is set to</p>
+<p>, queries are recompiled</p>
+<p>when they target tables or indexed views whose statistics have been updated or whose</p>
+<p>cardinalities have changed significantly since the last execution.</p>
+<p>This behavior applies to standard user-defined tables, temporary tables, and the inserted</p>
+<p>and deleted tables created by DML triggers. If query performance is affected by excessive</p>
+<p>recompilations, consider changing this setting to</p>
+<p>. When the</p>
+<p>database option is set to</p>
+<p>, no recompilations occur based on statistics or cardinality</p>
+<p>changes, with the exception of the inserted and deleted tables that are created by DML</p>
+<p>triggers. Because these tables are created in</p>
+<p>, the recompilation of</p>
+<p>queries that access them depends on the setting of</p>
+<p>in</p>
+<p>.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span><span style="color:#F97583"> SCOPED</span><span style="color:#F97583"> CONFIGURATION</span><span style="color:#F97583"> CLEAR</span><span style="color:#E1E4E8"> PROCEDURE_CACHE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SQL</span><span style="color:#F97583"> Server</span><span style="color:#E1E4E8"> has encountered %d occurrence(s) of cachestore flush </span><span style="color:#F97583">for</span><span style="color:#E1E4E8"> the </span><span style="color:#9ECBFF">'%s'</span></span>
+<span class="line"><span style="color:#E1E4E8">cachestore (part of plan cache) due </span><span style="color:#F97583">to</span><span style="color:#E1E4E8"> some </span><span style="color:#F97583">database</span><span style="color:#E1E4E8"> maintenance </span><span style="color:#F97583">or</span><span style="color:#F97583"> reconfigure</span></span>
+<span class="line"><span style="color:#E1E4E8">operations.</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> VIEW</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> PROCEDURE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span><span style="color:#F97583"> STATISTICS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_recompile</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITH</span><span style="color:#F97583"> RECOMPILE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sql_statement_recompile</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_executesql</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">recompile_cause</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sql_statement_recompile</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#E1E4E8"> BROWSE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OPTION</span><span style="color:#E1E4E8"> (</span><span style="color:#F97583">RECOMPILE</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SQL</span><span style="color:#E1E4E8">:StmtRecompile</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SP:</span><span style="color:#F97583">Recompile</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SQL</span><span style="color:#E1E4E8">:StmtRecompile</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_executesql</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SP:</span><span style="color:#F97583">Recompile</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SQL</span><span style="color:#E1E4E8">:StmtRecompile</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">AUTO_UPDATE_STATISTICS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">AUTO_UPDATE_STATISTICS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSTEAD</span><span style="color:#E1E4E8"> OF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tempdb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">AUTO_UPDATE_STATISTICS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tempdb</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

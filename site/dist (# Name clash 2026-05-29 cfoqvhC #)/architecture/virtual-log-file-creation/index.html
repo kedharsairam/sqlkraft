@@ -1,0 +1,42 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Virtual log file creation — Architecture Guide — SqlKraft</title><meta name="description" content="The SQL Server Database Engine divides each physical log file internally into several virtual log"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Virtual log file creation</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>io fundamentals</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#io-fundamentals</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Virtual log file creation</h1> <p class="doc-lede" data-astro-cid-hditk3lm>The SQL Server Database Engine divides each physical log file internally into several virtual log</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>The SQL Server Database Engine divides each physical log file internally into several virtual log</p>
+<p>files (VLFs). Virtual log files have no fixed size, and there’s no fixed number of virtual log files</p>
+<p>for a physical log file. The Database Engine chooses the size of the virtual log files dynamically</p>
+<p>while it’s creating or extending log files. The Database Engine tries to maintain a few virtual</p>
+<p>files. The size of the virtual files after a log file has been extended is the sum of the size of the</p>
+<p>existing log and the size of the new file increment. The size or number of virtual log files can’t</p>
+<p>be configured or set by administrators.</p>
+<p>Virtual log file (VLF) creation follows this method:</p>
+<p>In SQL Server 2014 (12.x) and later versions, if the next growth is less than 1/8 of the</p>
+<p>current log physical size, then create 1 VLF that covers the growth size.</p>
+<p>If the next growth is more than 1/8 of the current log size, use the pre-2014 method,</p>
+<p>namely:</p>
+<p>If growth is less than 64 MB, create 4 VLFs that cover the growth size (for example, for</p>
+<p>1-MB growth, create 4 VLFs of size 256 KB).</p>
+<p>In Azure SQL Database, and starting with SQL Server 2022 (16.x) (all editions), the</p>
+<p>logic is slightly different. If the growth is less than or equal to 64 MB, the Database</p>
+<p>Engine creates only one VLF to cover the growth size.</p>
+<p>If growth is from 64 MB up to 1 GB, create 8 VLFs that cover the growth size (for</p>
+<p>example, for 512-MB growth, create 8 VLFs of size 64 MB).</p>
+<p>If growth is larger than 1 GB, create 16 VLFs that cover the growth size for example, for</p>
+<p>8-GB growth, create 16 VLFs of size 512 MB).</p>
+<p>If the log files grow to a large size in many small increments, they end up with many virtual log</p>
+<p>files.</p>
+<p>Conversely, if the log files are set</p>
+<p>to a large size with few or just one increment, they contain few very large virtual log files. For</p>
+<p>more information on properly estimating the</p>
+<p>and</p>
+<p>setting of a</p>
+<p>transaction log, see the</p>
+<p>Recommendations</p>
+<p>section of</p>
+<p>Manage the size of the transaction log</p>
+<p>file</p>
+<p>.</p>
+<p>We recommend that you create your log files close to the final size required, using the</p>
+<p>increments needed to achieve optimal VLF distribution, and have a relatively large</p>
+<p>growth_increment</p>
+<p>value.</p>
+<p>See the following tips to determine the optimal VLF distribution for the current transaction log</p>
+<p>size:</p>
+<h3 id="fixing-vlfs-script">Fixing-VLFs script</h3> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

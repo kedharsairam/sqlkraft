@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Benefits of Programming with Service Broker — Architecture Guide — SqlKraft</title><meta name="description" content="08/29/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+Queuing and asynchronous messaging are needed for many database applications today.
+
+Service Broker provides a queue-based durable mess
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Benefits of Programming with Service Broker</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>service broker</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#service-broker</span><span class="tag-pill" data-astro-cid-hditk3lm>#benefits-of-programming-with-service-broker</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Benefits of Programming with Service Broker</h1> <p class="doc-lede" data-astro-cid-hditk3lm>08/29/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+Queuing and asynchronous messaging are needed for many database applications today.
+
+Service Broker provides a queue-based durable mess
+</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>08/29/2025</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Managed Instance</p>
+<p>Queuing and asynchronous messaging are needed for many database applications today.</p>
+<p>Service Broker provides a queue-based durable messaging framework to address these needs.</p>
+<p>Using the Transact-SQL API provided by Service Broker, you can easily develop services to</p>
+<p>handle application requirements for queuing or asynchronous communications.</p>
+<p>Some of the benefits of programming with Service Broker are:</p>
+<p>You can write the programs used in a single distributed</p>
+<p>application in multiple languages. Each program provides the functionality of each</p>
+<p>distributed application component.</p>
+<p>You can express security requirements via certificates, so application</p>
+<p>components don’t need to share the same security context. Service Broker uses SQL</p>
+<p>Server security features to help you secure your applications.</p>
+<p>Message processing occurs within SQL Server transactions to</p>
+<p>ensure data integrity. Service Broker supports remote transactional messaging over a</p>
+<p>standard connection to the database.</p>
+<p>Service Broker provides strong guarantees regarding the delivery</p>
+<p>and processing of a related set of messages exactly once and in order, so there’s no</p>
+<p>additional coding required to provide this functionality.</p>
+<p>All of the data needed for a conversation, or a set of related</p>
+<p>communications between two or more services, is persisted in SQL Server. Service Broker</p>
+<p>supports clustering and database mirroring. A conversation can be maintained through</p>
+<p>system restarts, server failover, network outages, and so on without failing or losing data.</p>
+<p>Service Broker routing delivers messages based on the name of the</p>
+<p>service, rather than on the network address of the computer where the service runs. This</p>
+<p>allows you to install an application on multiple computers without changing application</p>
+<p>code.</p>
+<p>Service Broker uses Transact-SQL to create objects.</p>
+<p>Applications that use Service Broker are most often implemented in Transact-SQL or</p>
+<p>Microsoft .NET Framework-compatible languages. You don’t have to learn a new</p>
+<p>language to create Service Broker applications.</p> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Service Broker Dialog Security — Architecture Guide — SqlKraft</title><meta name="description" content="09/03/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+Dialog security provides encryption, remote authentication, and remote authorization for a
+
+specific conversation. When a conversation 
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Service Broker Dialog Security</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>service broker</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#service-broker</span><span class="tag-pill" data-astro-cid-hditk3lm>#service-broker-dialog-security</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Service Broker Dialog Security</h1> <p class="doc-lede" data-astro-cid-hditk3lm>09/03/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+Dialog security provides encryption, remote authentication, and remote authorization for a
+
+specific conversation. When a conversation 
+</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>09/03/2025</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Managed Instance</p>
+<p>Dialog security provides encryption, remote authentication, and remote authorization for a</p>
+<p>specific conversation. When a conversation uses dialog security, Service Broker encrypts all</p>
+<p>messages sent outside a SQL Server instance. Service Broker conversations use dialog security</p>
+<p>by default.</p>
+<p>Service Broker dialog security lets your application use authentication, authorization, or</p>
+<p>encryption for an individual dialog conversation (or dialog). By default, all dialog conversations</p>
+<p>use dialog security. When you begin a dialog, you can explicitly allow a dialog to proceed</p>
+<p>without dialog security by including the</p>
+<p>clause on the</p>
+<p>statement. However, if a remote service binding exists for the service that the</p>
+<p>conversation targets, the dialog uses security even when</p>
+<p>.</p>
+<p>For a dialog that uses security, Service Broker encrypts all messages sent outside a SQL Server</p>
+<p>instance. Messages that remain within a SQL Server instance are never encrypted. In dialog</p>
+<p>security, only the database that hosts the initiating service and the database that hosts the</p>
+<p>target service need to have access to the certificates used for security. That is, an instance that</p>
+<p>performs message forwarding isn’t required to have the capability to decrypt the messages</p>
+<p>that the instance forward.</p>
+<p>Service Broker provides two types of dialog security, full security and anonymous security. For</p>
+<p>conversations that use dialog security, Service Broker provides remote authorization to map</p>
+<p>the remote side of the conversation to a local user.</p>
+<p>Messages are encrypted on the network when the conversation uses either full security or</p>
+<p>anonymous security. However, the effective rights in the target database and the strategy used</p>
+<p>for message encryption differ slightly between the two approaches.</p>
+<p>Whether the conversation uses full security or anonymous security, the message body is</p>
+<p>encrypted with a symmetric session key that is generated for the specific conversation. Only</p>
+<p>the keys are encrypted with private key encryption using the certificate supplied for Dialog</p>
+<p>Security. Service Broker also performs a message integrity check to help detect message</p>
+<p>corruption or tampering.</p>
+<p>SQL Server creates a session key for a conversation that uses dialog security. To protect the</p>
+<p>session key while it’s stored in the database, Service Broker encrypts the session key with the</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ENCRYPTION</span><span style="color:#F97583"> =</span><span style="color:#F97583"> OFF</span></span>
+<span class="line"><span style="color:#F97583">BEGIN</span><span style="color:#E1E4E8"> DIALOG</span></span>
+<span class="line"><span style="color:#F97583">CONVERSATION</span></span>
+<span class="line"><span style="color:#F97583">ENCRYPTION</span><span style="color:#F97583"> =</span><span style="color:#F97583"> OFF</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

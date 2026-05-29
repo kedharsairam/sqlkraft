@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Differences between compatibility levels — T-SQL Reference — SqlKraft</title><meta name="description" content="resulting in different converted values. To restore previous conversion behavior, set the"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Differences between compatibility levels</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Differences between compatibility levels</h1> <span class="cat-badge" data-astro-cid-s2stm25t>predicates</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#predicates</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>resulting in different converted values. To restore previous conversion behavior, set the</p>
+<p>database compatibility level to 120 or lower.</p>
+<h2 id="examples-of-breaking-changes">Examples of breaking changes</h2>
+<p>by compatibility level are:</p>
+<p>Changed column names in system objects. In SQL Server 2012 (11.x) the column</p>
+<p>in</p>
+<p>was renamed to</p>
+<p>. Regardless of the</p>
+<p>compatibility level, the query</p>
+<p>will</p>
+<p>produce error 207 (Invalid column name).</p>
+<p>Removed system objects. In SQL Server 2012 (11.x) the</p>
+<p>was removed.</p>
+<p>Regardless of the compatibility level, the statement</p>
+<p>produces error 2812 (</p>
+<p>).</p>
+<p>For more information on breaking changes, see:</p>
+<p>Breaking changes to Database Engine features in SQL Server 2019</p>
+<p>Breaking changes to Database Engine features in SQL Server 2017</p>
+<p>Breaking changes to Database Engine features in SQL Server 2016</p>
+<p>For all installations of SQL Server, the default compatibility level is associated with the version</p>
+<p>of the Database Engine, as seen in</p>
+<p>this table</p>
+<p>. For new development work, always plan to certify</p>
+<p>applications on the latest database compatibility level.</p>
+<p>New Transact-SQL syntax isn’t gated by database compatibility level, except when they can</p>
+<p>break existing applications by creating a conflict with user Transact-SQL code. These exceptions</p>
+<p>are documented in the next sections of this article that outline the differences between specific</p>
+<p>compatibility levels.</p>
+<p>Database compatibility level also provides backward compatibility with earlier versions of SQL</p>
+<p>Server, because databases attached or restored from any earlier version of SQL Server retain</p>
+<p>their existing compatibility level (if same or higher than the minimum allowed compatibility</p>
+<p>level). This was discussed in the</p>
+<p>Using compatibility level for backward compatibility</p>
+<p>section of</p>
+<p>this article.</p>
+<p>Starting with database compatibility level 130, any new fixes and features affecting query plans</p>
+<p>have been added only to the latest compatibility level available, also called the default</p>
+<p>compatibility level. This has been done in order to minimize the risk during upgrades that arise</p>
+<p>from performance degradation due to query plan changes, potentially introduced by new</p>
+<p>query optimization behaviors.</p>
+<h3 id="query-optimizer-fixes-released-for-previous-sql-server-versions-under-trace-flag-4199">Query Optimizer fixes released for previous SQL Server versions under trace flag 4199</h3>
+<h3 id="become-automatically-enabled-in-the-default-compatibility-level-of-a-newer-sql-server">become automatically enabled in the default compatibility level of a newer SQL Server</h3>
+<h3 id="version">version</h3>
+<h4 id="database-engine-de">Database Engine (DE)</h4>
+<h4 id="version-1">version</h4>
+<h4 id="database">Database</h4>
+<h4 id="compatibility">Compatibility</h4>
+<h4 id="level">Level</h4>
+<h4 id="tf">TF</h4>
+<h4 id="4199">4199</h4>
+<h4 id="qo-changes-from-all">QO changes from all</h4>
+<h4 id="previous-database">previous Database</h4>
+<h4 id="compatibility-levels">Compatibility Levels</h4>
+<h4 id="qo-changes">QO changes</h4>
+<h4 id="for-de">for (DE)</h4>
+<h4 id="version-post">version post-</h4>
+<h4 id="rtm">RTM</h4>
+<h4 id="disabled">Disabled</h4>
+<h4 id="enabled">Enabled</h4>
+<p>The fundamental plan-affecting changes added only to the default compatibility level of a new</p>
+<p>version of the Database Engine are:</p>
+<ol>
+<li></li>
+</ol>
+<p>.</p>
+<p>Applies to:</p>
+<p>SQL Server (Starting with version SQL Server 2016 (13.x)), Azure SQL Database.</p>
+<p>For example, when SQL Server 2016 (13.x) was released, all the Query Optimizer fixes</p>
+<p>released for previous SQL Server versions (and respective compatibility levels 100 through</p>
+<ol start="120">
+<li>became automatically enabled for databases that use the SQL Server 2016 (13.x)</li>
+</ol>
+<p>default compatibility level (130). Only post-RTM Query Optimizer fixes need to be</p>
+<p>explicitly enabled.</p>
+<p>To enable Query Optimizer fixes, you can use the following methods:</p>
+<p>At the server level, with</p>
+<p>trace flag 4199</p>
+<p>.</p>
+<p>At the database level, with the</p>
+<p>option in</p>
+<p>ALTER DATABASE</p>
+<p>SCOPED CONFIGURATION (Transact-SQL)</p>
+<p>.</p>
+<p>At the query level, with the</p>
+<p>query hint</p>
+<p>by modifying the query.</p>
+<p>At the query level, with the</p>
+<p>without</p>
+<p>code changes, using the</p>
+<p>Query Store hints</p>
+<p>feature.</p>
+<p>Later, when SQL Server 2017 (14.x) was released, all the Query Optimizer fixes released</p>
+<p>after SQL Server 2016 (13.x) RTM became automatically enabled for databases using the</p>
+<p>SQL Server 2017 (14.x) default compatibility level (140). This is a cumulative behavior that</p>
+<p>includes all previous versions fixes as well. Again, only post-RTM Query Optimizer fixes</p>
+<p>need to be explicitly enabled.</p>
+<p>The following table summarizes this behavior:</p>
+<p>13 (SQL Server 2016</p>
+<p>(13.x))</p>
+<p>100 to 120</p>
+<p>130</p>
+<p>Off</p>
+<p>On</p>
+<p>Off</p>
+<p>On</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<h4 id="database-engine-de-1">Database Engine (DE)</h4>
+<h4 id="version-2">version</h4>
+<h4 id="database-1">Database</h4>
+<h4 id="compatibility-1">Compatibility</h4>
+<h4 id="level-1">Level</h4>
+<h4 id="tf-1">TF</h4>
+<h4 id="4199-1">4199</h4>
+<h4 id="qo-changes-from-all-1">QO changes from all</h4>
+<h4 id="previous-database-1">previous Database</h4>
+<h4 id="compatibility-levels-1">Compatibility Levels</h4>
+<h4 id="qo-changes-1">QO changes</h4>
+<h4 id="for-de-1">for (DE)</h4>
+<h4 id="version-post--1">version post-</h4>
+<h4 id="rtm-1">RTM</h4>
+<h4 id="disabled-1">Disabled</h4>
+<h4 id="enabled-1">Enabled</h4>
+<h4 id="enabled-2">Enabled</h4>
+<h4 id="disabled-2">Disabled</h4>
+<h4 id="enabled-3">Enabled</h4>
+<h4 id="enabled-4">Enabled</h4>
+<h4 id="disabled-3">Disabled</h4>
+<h4 id="enabled-5">Enabled</h4>
+<h4 id="enabled-6">Enabled</h4>
+<h4 id="disabled-4">Disabled</h4>
+<h4 id="enabled-7">Enabled</h4>
+<h4 id="enabled-8">Enabled</h4>
+<h3 id="changes-to-the">Changes to the</h3>
+<h3 id="cardinality-estimator">cardinality estimator</h3>
+<h3 id="released-on-sql-server-azure-sql-database-and">released on SQL Server, Azure SQL Database, and</h3>
+<h3 id="new-database-engine-version">new Database Engine version</h3>
+<p>14 (SQL Server 2017</p>
+<p>(14.x))</p>
+<p>100 to 120</p>
+<p>130</p>
+<p>140</p>
+<p>Off</p>
+<p>On</p>
+<p>Off</p>
+<p>On</p>
+<p>Off</p>
+<p>On</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>15 (SQL Server 2019</p>
+<p>(15.x)) and (Azure SQL</p>
+<p>Database)</p>
+<p>100 to 120</p>
+<p>130 to 140</p>
+<p>150</p>
+<p>Off</p>
+<p>On</p>
+<p>Off</p>
+<p>On</p>
+<p>Off</p>
+<p>On</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>16 (SQL Server 2022</p>
+<p>(16.x)) and (Azure SQL</p>
+<p>Database)</p>
+<p>100 to 120</p>
+<p>130 to 150</p>
+<p>160</p>
+<p>Off</p>
+<p>On</p>
+<p>Off</p>
+<p>On</p>
+<p>Off</p>
+<p>On</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>17 (SQL Server 2025</p>
+<p>(17.x), Azure SQL</p>
+<p>Database and SQL</p>
+<p>database in Microsoft</p>
+<p>Fabric)</p>
+<p>100 to 120</p>
+<p>130 to 160</p>
+<p>170</p>
+<p>Off</p>
+<p>On</p>
+<p>Off</p>
+<p>On</p>
+<p>Off</p>
+<p>On</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Disabled</p>
+<p>Enabled</p>
+<p>Query Optimizer fixes that address wrong results or access violation errors aren’t</p>
+<p>protected by trace flag 4199. Those fixes aren’t considered optional.</p>
+<ol start="2">
+<li></li>
+</ol>
+<p>SQL database in Microsoft Fabric are enabled only in the default compatibility level of a</p>
+<p>, but not on previous compatibility levels.</p>
+<p>For example, when SQL Server 2016 (13.x) was released, changes to the cardinality</p>
+<p>estimation process were available only for databases using SQL Server 2016 (13.x) default</p>
+<p>compatibility level (130). Previous compatibility levels retained the cardinality estimation</p>
+<p>behavior that was available before SQL Server 2016 (13.x).</p>
+<p>Later, when SQL Server 2017 (14.x) was released, newer changes to the cardinality</p>
+<p>estimation process were available only for databases using SQL Server 2017 (14.x) default</p>
+<h4 id="database-engine-version">Database Engine version</h4>
+<h4 id="database-compatibility-level">Database Compatibility Level</h4>
+<h4 id="new-version-ce-changes">New version CE changes</h4>
+<h4 id="compatibility-level-setting-of-160-or">Compatibility level setting of 160 or</h4>
+<h4 id="lower">lower</h4>
+<h4 id="compatibility-level-setting-of-170">Compatibility level setting of 170</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">single_pages_kb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_os_sys_info</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">pages_kb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#E1E4E8"> single_pages_kb </span><span style="color:#F97583">FROM</span><span style="color:#79B8FF"> sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_os_sys_info</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_dboption</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">EXEC</span><span style="color:#E1E4E8"> sp_dboption</span></span>
+<span class="line"><span style="color:#9ECBFF">'AdventureWorks2022'</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">'autoshrink'</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">'FALSE'</span><span style="color:#E1E4E8">;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Could </span><span style="color:#F97583">not</span><span style="color:#E1E4E8"> find</span></span>
+<span class="line"><span style="color:#E1E4E8">stored </span><span style="color:#F97583">procedure</span><span style="color:#9ECBFF"> 'sp_dboption'</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">QUERY_OPTIMIZER_HOTFIXES</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">USE</span><span style="color:#E1E4E8"> HINT </span><span style="color:#9ECBFF">'ENABLE_QUERY_OPTIMIZER_HOTFIXES'</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">USE</span><span style="color:#E1E4E8"> HINT </span><span style="color:#9ECBFF">'ENABLE_QUERY_OPTIMIZER_HOTFIXES'</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

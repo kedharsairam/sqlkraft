@@ -1,0 +1,59 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Creating Service Broker Message Types — Architecture Guide — SqlKraft</title><meta name="description" content="08/29/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+A message type defines the name of a specific kind of message and the validation that Service
+
+Broker performs on that kind of message.
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Creating Service Broker Message Types</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>service broker</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#service-broker</span><span class="tag-pill" data-astro-cid-hditk3lm>#creating-service-broker-message-types</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Creating Service Broker Message Types</h1> <p class="doc-lede" data-astro-cid-hditk3lm>08/29/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+A message type defines the name of a specific kind of message and the validation that Service
+
+Broker performs on that kind of message.
+</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>08/29/2025</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Managed Instance</p>
+<p>A message type defines the name of a specific kind of message and the validation that Service</p>
+<p>Broker performs on that kind of message. To determine the message types that your</p>
+<p>application will use, you first plan out the tasks that your application must perform, and the</p>
+<p>data that is necessary to perform each task.</p>
+<p>The most common approach for an application is to structure the messages so that each</p>
+<p>message includes the information required for one step of the task. When each message</p>
+<p>contains the information for one step of the task, the application can easily receive the</p>
+<p>message, complete the step, and send a response within a single transaction. Therefore, for</p>
+<p>many applications, the easiest way to determine the message types and the content for the</p>
+<p>message is to determine the transaction boundaries for the tasks performed by the application.</p>
+<p>Each distinct step is a transaction, and each transaction corresponds to a message type</p>
+<p>exchanged between the services. Status information, results, or output are also message types.</p>
+<p>The Service Broker communications protocols are designed to work with this messaging style.</p>
+<p>The Dialog Protocol fragments large messages for transit and guarantees that large messages</p>
+<p>don’t prevent small messages from being transmitted.</p>
+<p>The validation specified for the message depends on the content of the message. A common</p>
+<p>practice is to use the most restrictive validation available during testing, and then to choose</p>
+<p>less-restrictive validation to improve performance when the application is deployed. For</p>
+<p>example, it’s possible to exchange a typed XML document as the body of a message that</p>
+<p>specifies a validation of</p>
+<p>. In this case, your application validates the message when</p>
+<p>processing the XML.</p>
+<p>The network format for a message includes the name of the message type. Therefore, message</p>
+<p>type names are often chosen to avoid collation issues and naming conflicts. For more</p>
+<p>information on naming, see</p>
+<p>Naming Service Broker Objects</p>
+<p>.</p>
+<p>An application typically doesn’t define new message types to indicate success or failure.</p>
+<p>Instead, use the</p>
+<p>statement to indicate that the conversation is complete and</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NONE</span></span>
+<span class="line"><span style="color:#F97583">END</span><span style="color:#F97583"> CONVERSATION</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

@@ -1,0 +1,66 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sys.sp_executesql — System Stored Procedure — SqlKraft</title><meta name="description" content="A placeholder for the values of extra parameters. Values can only be constants or variables. Values can't be more complex expressions such as functions, or expressions built by using (success) or non-zero (failure). Returns the result sets from all the SQL statements built into the SQL string. parameters must be entered in the specific order as described in the section earlier in this article. If "><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-jslvljwt]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-jslvljwt] .sep[data-astro-cid-jslvljwt]{color:var(--border-glass)}.detail-header[data-astro-cid-jslvljwt]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-jslvljwt]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-jslvljwt]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-jslvljwt]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-jslvljwt]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.body-content[data-astro-cid-jslvljwt]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-jslvljwt] h2[data-astro-cid-jslvljwt]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-jslvljwt] h3[data-astro-cid-jslvljwt]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-jslvljwt] p[data-astro-cid-jslvljwt]{margin-bottom:14px}.body-content[data-astro-cid-jslvljwt] ul[data-astro-cid-jslvljwt],.body-content[data-astro-cid-jslvljwt] ol[data-astro-cid-jslvljwt]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-jslvljwt] li[data-astro-cid-jslvljwt]{margin-bottom:6px}.body-content[data-astro-cid-jslvljwt] pre[data-astro-cid-jslvljwt]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-jslvljwt] code[data-astro-cid-jslvljwt]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-jslvljwt] [data-astro-cid-jslvljwt]:not(pre)>code[data-astro-cid-jslvljwt]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-jslvljwt] table[data-astro-cid-jslvljwt]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-jslvljwt] th[data-astro-cid-jslvljwt]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-jslvljwt] td[data-astro-cid-jslvljwt]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-jslvljwt]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-jslvljwt> <a href="/sqlkraft/" data-astro-cid-jslvljwt>&larr; Home</a> <span class="sep" data-astro-cid-jslvljwt>/</span> <a href="/sqlkraft/stored-procedures/" data-astro-cid-jslvljwt>Stored Procedures</a> <span class="sep" data-astro-cid-jslvljwt>/</span> <span data-astro-cid-jslvljwt>sys.sp_executesql</span> </nav> <div class="detail-header" data-astro-cid-jslvljwt> <h1 class="detail-title" data-astro-cid-jslvljwt>sys.sp_executesql</h1> <span class="cat-badge" data-astro-cid-jslvljwt>general</span> </div> <div class="tag-strip" data-astro-cid-jslvljwt> <span class="tag-pill" data-astro-cid-jslvljwt>#stored-procedure</span> </div> <div class="body-content" data-astro-cid-jslvljwt> <h2 id="description">Description</h2>
+<p>A placeholder for the values of extra parameters. Values can only be constants or variables. Values can’t be more complex expressions such as functions, or expressions built by using (success) or non-zero (failure). Returns the result sets from all the SQL statements built into the SQL string. parameters must be entered in the specific order as described in the section earlier in this article. If the parameters are entered out of order, an error message has the same behavior as regarding batches, the scope of names, and database context. The Transact-SQL statement or batch in the isn’t compiled until the statement is executed. The contents of compiled and executed as an execution plan separate from the execution plan of the batch batch can’t reference variables declared in the batch that calls supports the setting of parameter values separately from the Transact-SQL</p>
+<h2 id="syntax">Syntax</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">AdventureWorks2025</span></span></code></pre>
+<h2 id="arguments">Arguments</h2>
+<p>Applies to:</p>
+<p>Azure SQL Database</p>
+<p>Azure SQL Managed Instance</p>
+<p>Azure Synapse Analytics</p>
+<p>Analytics Platform System (PDW)</p>
+<p>SQL analytics endpoint in</p>
+<p>Microsoft Fabric</p>
+<p>Warehouse in Microsoft Fabric</p>
+<p>SQL database in Microsoft Fabric</p>
+<p>Executes a Transact-SQL statement or batch that can be reused many times, or one that is built</p>
+<p>dynamically. The Transact-SQL statement or batch can contain embedded parameters.</p>
+<p>Transact-SQL syntax conventions</p>
+<p>Syntax for SQL Server, Azure SQL Database, Azure SQL Managed Instance, Azure Synapse</p>
+<p>Analytics, and Analytics Platform System (PDW).</p>
+<p>The code samples in this article use the</p>
+<p>database, which you can download from the</p>
+<p>Microsoft SQL Server Samples and Community</p>
+<p>Runtime-compiled Transact-SQL statements can expose applications to malicious attacks.</p>
+<p>You should parameterize your queries when using</p>
+<p>. For more information,</p>
+<p>SQL injection</p>
+<p>Arguments for extended stored procedures must be entered in the specific order as</p>
+<p>described in the</p>
+<p>section. If the parameters are entered out of order, an error</p>
+<p>message occurs.</p>
+<h2 id="remarks">Remarks</h2>
+<p>A placeholder for the values of extra parameters. Values can only be constants or variables.</p>
+<p>Values can’t be more complex expressions such as functions, or expressions built by using</p>
+<p>(success) or non-zero (failure).</p>
+<p>Returns the result sets from all the SQL statements built into the SQL string.</p>
+<p>parameters must be entered in the specific order as described in the</p>
+<p>section earlier in this article. If the parameters are entered out of order, an error message</p>
+<p>has the same behavior as</p>
+<p>regarding batches, the scope of names, and</p>
+<p>database context. The Transact-SQL statement or batch in the</p>
+<p>isn’t compiled until the</p>
+<p>statement is executed. The contents of</p>
+<p>compiled and executed as an execution plan separate from the execution plan of the batch</p>
+<p>that called</p>
+<p>batch can’t reference variables declared in the</p>
+<p>batch that calls</p>
+<p>. Local cursors or variables in the</p>
+<p>batch aren’t</p>
+<p>visible to the batch that calls</p>
+<p>. Changes in database context last only to the end</p>
+<p>can be used instead of stored procedures to execute a Transact-SQL statement</p>
+<p>many times when the change in parameter values to the statement is the only variation.</p>
+<p>Because the Transact-SQL statement itself remains constant and only the parameter values</p>
+<p>change, the SQL Server query optimizer is likely to reuse the execution plan it generates for the</p>
+<p>first execution. In this scenario, performance is equivalent to that of a stored procedure.</p>
+<p>To improve performance, use fully qualified object names in the statement string.</p>
+<p>supports the setting of parameter values separately from the Transact-SQL</p>
+<p>string, as shown in the following example.</p>
+<p>Output parameters can also be used with</p>
+<p>. The following example retrieves a job</p>
+<p>title from the</p>
+<p>table in the</p>
+<p>sample database, and</p>
+<p>returns it in the output parameter</p> </div> <nav class="detail-footer" data-astro-cid-jslvljwt> <a href="/sqlkraft/stored-procedures/" data-astro-cid-jslvljwt>&larr; Back to all stored procedures</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

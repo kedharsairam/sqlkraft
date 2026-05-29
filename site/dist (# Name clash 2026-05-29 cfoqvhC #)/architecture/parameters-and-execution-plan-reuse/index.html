@@ -1,0 +1,101 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Parameters and execution plan reuse — Architecture Guide — SqlKraft</title><meta name="description" content="The use of parameters, including parameter markers in ADO, OLE DB, and ODBC applications,"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Parameters and execution plan reuse</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Parameters and execution plan reuse</h1> <p class="doc-lede" data-astro-cid-hditk3lm>The use of parameters, including parameter markers in ADO, OLE DB, and ODBC applications,</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>The use of parameters, including parameter markers in ADO, OLE DB, and ODBC applications,</p>
+<p>can increase the reuse of execution plans.</p>
+<p>The only difference between the following two</p>
+<p>statements is the values that are</p>
+<p>compared in the</p>
+<p>clause:</p>
+<p>SQL</p>
+<p>SQL</p>
+<p>The only difference between the execution plans for these queries is the value stored for the</p>
+<p>comparison against the</p>
+<p>column. While the goal is for SQL Server to</p>
+<p>always recognize that the statements generate essentially the same plan and reuse the plans,</p>
+<p>SQL Server sometimes doesn’t detect this in complex Transact-SQL statements.</p>
+<p>Separating constants from the Transact-SQL statement by using parameters helps the relational</p>
+<p>engine recognize duplicate plans. You can use parameters in the following ways:</p>
+<p>In Transact-SQL , use</p>
+<p>:</p>
+<p>SQL</p>
+<p>In SQL Server prior to 2005, queries continue to recompile based on cardinality changes to</p>
+<p>the DML trigger inserted and deleted tables, even when this setting is</p>
+<p>.</p>
+<p>２</p>
+<p>Warning</p>
+<p>Using parameters or parameter markers to hold values that are typed by end users is</p>
+<p>more secure than concatenating the values into a string that is then executed by using</p>
+<p>either a data access API method, the</p>
+<p>statement, or the</p>
+<p>stored</p>
+<p>procedure.</p>
+<p>This method is recommended for Transact-SQL scripts, stored procedures, or triggers that</p>
+<p>generate SQL statements dynamically.</p>
+<p>ADO, OLE DB, and ODBC use parameter markers. Parameter markers are question marks</p>
+<p>(?) that replace a constant in a SQL statement and are bound to a program variable. For</p>
+<p>example, you would do the following in an ODBC application:</p>
+<p>Use</p>
+<p>to bind an integer variable to the first parameter marker in a</p>
+<p>SQL statement.</p>
+<p>Put the integer value in the variable.</p>
+<p>Execute the statement, specifying the parameter marker (?):</p>
+<p>VB</p>
+<p>The SQL Server Native Client OLE DB Provider and the SQL Server Native Client ODBC</p>
+<p>driver included with SQL Server use</p>
+<p>to send statements to SQL Server</p>
+<p>when parameter markers are used in applications.</p>
+<p>To design stored procedures, which use parameters by design.</p>
+<p>If you don’t explicitly build parameters into the design of your applications, you can also rely</p>
+<p>on the SQL Server Query Optimizer to automatically parameterize certain queries by using the</p>
+<p>default behavior of simple parameterization. Alternatively, you can force the Query Optimizer</p>
+<p>to consider parameterizing all queries in the database by setting the</p>
+<p>option</p>
+<p>of the</p>
+<p>statement to</p>
+<p>.</p>
+<p>When forced parameterization is enabled, simple parameterization can still occur. For example,</p>
+<p>the following query can’t be parameterized according to the rules of forced parameterization:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHERE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">ProductSubcategoryID</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_executesql</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">EXECUTE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_executesql</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">AdventureWorks2022</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.Product</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">ProductSubcategoryID </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 1</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">AdventureWorks2022</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.Product</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">ProductSubcategoryID </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 4</span><span style="color:#E1E4E8">;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SQLBindParameter</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_executesql</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FORCED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DECLARE</span></span>
+<span class="line"><span style="color:#E1E4E8">@MyIntParm</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">SET</span></span>
+<span class="line"><span style="color:#E1E4E8">@MyIntParm </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 1</span></span>
+<span class="line"><span style="color:#F97583">EXEC</span><span style="color:#E1E4E8"> sp_executesql</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'SELECT *</span></span>
+<span class="line"><span style="color:#9ECBFF">FROM AdventureWorks2022.Production.Product</span></span>
+<span class="line"><span style="color:#9ECBFF">WHERE ProductSubcategoryID = @Parm'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'@Parm INT'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">@MyIntParm</span></span>
+<span class="line"><span style="color:#E1E4E8">SQLExecDirect(hstmt,</span></span>
+<span class="line"><span style="color:#9ECBFF">"SELECT *</span></span>
+<span class="line"><span style="color:#9ECBFF">FROM AdventureWorks2022.Production.Product</span></span>
+<span class="line"><span style="color:#9ECBFF">WHERE ProductSubcategoryID = ?"</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">SQL_NTS);</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

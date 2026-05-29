@@ -1,0 +1,480 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Date and time functions — T-SQL Reference — SqlKraft</title><meta name="description" content="The following tables list the Transact-SQL date and time functions. For more information about determinism, see"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Date and time functions</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Date and time functions</h1> <span class="cat-badge" data-astro-cid-s2stm25t>data-types</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#data-types</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <h2 id="functions-that-return-system-date-and-time-values">Functions that return system date and time values</h2>
+<h3 id="higher-precision-system-date-and-time-functions">Higher-precision system date and time functions</h3>
+<h3 id="lower-precision-system-date-and-time-functions">Lower-precision system date and time functions</h3>
+<p>The following tables list the Transact-SQL date and time functions. For more information about determinism, see</p>
+<p>Deterministic and Nondeterministic Functions</p>
+<p>.</p>
+<p>Transact-SQL derives all system date and time values from the operating system of the computer on which the</p>
+<p>instance of SQL Server runs.</p>
+<p>Since SQL Server 2008 (10.0.x), the Database Engine derives the date and time values through use of the</p>
+<p>Windows API. The accuracy depends on the computer hardware and version of</p>
+<p>Windows on which the instance of SQL Server runs. This API has a precision fixed at 100 nanoseconds. Use the</p>
+<p>Windows API to determine the accuracy.</p>
+<p>Function</p>
+<h2 id="syntax">Syntax</h2>
+<p>Return value</p>
+<p>Return data</p>
+<p>type</p>
+<p>Determinism</p>
+<p>SYSDATETIME</p>
+<p>The</p>
+<p>function returns a</p>
+<p>datetime2(7)</p>
+<p>value containing the date</p>
+<p>and time of the computer on which the</p>
+<p>instance of SQL Server runs. The</p>
+<p>returned value doesn’t include the time</p>
+<p>zone offset.</p>
+<p>datetime2(7)</p>
+<p>Nondeterministic</p>
+<p>SYSDATETIMEOFFSET</p>
+<p>The</p>
+<p>function returns</p>
+<p>a</p>
+<p>datetimeoffset(7)</p>
+<p>value containing</p>
+<p>the date and time of the computer on</p>
+<p>which the instance of SQL Server runs.</p>
+<p>The returned value includes the time</p>
+<p>zone offset.</p>
+<p>datetimeoffset(7)</p>
+<p>Nondeterministic</p>
+<p>SYSUTCDATETIME</p>
+<p>The</p>
+<p>function returns a</p>
+<p>datetime2(7)</p>
+<p>value containing the date</p>
+<p>and time of the computer on which the</p>
+<p>instance of SQL Server is running.</p>
+<h2 id="returns-the-date-and">returns the date and</h2>
+<p>time values as UTC time (Coordinated</p>
+<p>Universal Time).</p>
+<p>datetime2(7)</p>
+<p>Nondeterministic</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<h2 id="functions-that-return-date-and-time-parts">Functions that return date and time parts</h2>
+<p>Function</p>
+<h2 id="syntax-1">Syntax</h2>
+<p>Return value</p>
+<p>Return</p>
+<p>data type</p>
+<p>Determinism</p>
+<p>CURRENT_TIMESTAMP</p>
+<p>The</p>
+<p>function returns a</p>
+<p>datetime</p>
+<p>value containing the date and time</p>
+<p>of the computer on which the instance of SQL</p>
+<p>Server runs. The returned value doesn’t</p>
+<p>include the time zone offset.</p>
+<p>datetime</p>
+<p>Nondeterministic</p>
+<p>GETDATE</p>
+<p>The</p>
+<p>function returns a</p>
+<p>datetime</p>
+<p>value</p>
+<p>containing the date and time of the computer</p>
+<p>on which the instance of SQL Server runs. The</p>
+<p>returned value doesn’t include the time zone</p>
+<p>offset.</p>
+<p>datetime</p>
+<p>Nondeterministic</p>
+<p>GETUTCDATE</p>
+<p>The</p>
+<p>function returns a</p>
+<p>datetime</p>
+<p>value containing the date and time of the</p>
+<p>computer on which the instance of SQL Server</p>
+<p>runs. The</p>
+<p>function returns the</p>
+<p>date and time values as UTC time</p>
+<p>(Coordinated Universal Time).</p>
+<p>datetime</p>
+<p>Nondeterministic</p>
+<p>CURRENT_DATE</p>
+<p>The</p>
+<p>function returns a</p>
+<p>date</p>
+<p>value containing only the date of the</p>
+<p>computer on which the instance of the</p>
+<p>Database Engine runs. The returned value</p>
+<p>doesn’t include the time and the time zone</p>
+<p>offset.</p>
+<p>date</p>
+<p>Nondeterministic</p>
+<p>Function</p>
+<h2 id="syntax-2">Syntax</h2>
+<p>Return value</p>
+<p>Return data</p>
+<p>type</p>
+<p>Determinism</p>
+<p>DATE_BUCKET</p>
+<p>The</p>
+<p>function returns a value</p>
+<p>corresponding to the start of each date-time</p>
+<p>bucket from the timestamp defined by the</p>
+<p>origin</p>
+<p>parameter, or the default origin value of</p>
+<p>if the origin</p>
+<p>parameter isn’t specified.</p>
+<p>The return type</p>
+<p>depends on the</p>
+<p>argument</p>
+<p>supplied for</p>
+<p>date</p>
+<p>.</p>
+<p>Nondeterministic</p>
+<p>DATENAME</p>
+<p>The</p>
+<p>function returns a character string</p>
+<p>representing the specified</p>
+<p>datepart</p>
+<p>of the</p>
+<p>specified date.</p>
+<p>nvarchar</p>
+<p>Nondeterministic</p>
+<p>DATEPART</p>
+<p>The</p>
+<p>function returns an integer</p>
+<p>representing the specified</p>
+<p>datepart</p>
+<p>of the</p>
+<p>specified</p>
+<p>date</p>
+<p>.</p>
+<p>int</p>
+<p>Nondeterministic</p>
+<p>DATETRUNC</p>
+<p>The</p>
+<p>function returns an input</p>
+<p>date</p>
+<p>truncated to a specified</p>
+<p>datepart</p>
+<p>.</p>
+<p>The return type</p>
+<p>depends on the</p>
+<p>argument</p>
+<p>supplied for</p>
+<p>date</p>
+<p>.</p>
+<p>Nondeterministic</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<h2 id="functions-that-return-date-and-time-values-from-their-parts">Functions that return date and time values from their parts</h2>
+<p>Function</p>
+<h2 id="syntax-3">Syntax</h2>
+<p>Return value</p>
+<p>Return data</p>
+<p>type</p>
+<p>Determinism</p>
+<p>DAY</p>
+<p>The</p>
+<p>function returns an integer</p>
+<p>representing the day part of the specified</p>
+<p>date</p>
+<p>.</p>
+<p>int</p>
+<p>Deterministic</p>
+<p>MONTH</p>
+<p>The</p>
+<p>function returns an integer</p>
+<p>representing the month part of a specified</p>
+<p>date</p>
+<p>.</p>
+<p>int</p>
+<p>Deterministic</p>
+<p>YEAR</p>
+<p>The</p>
+<p>function returns an integer</p>
+<p>representing the year part of a specified</p>
+<p>date</p>
+<p>.</p>
+<p>int</p>
+<p>Deterministic</p>
+<p>Function</p>
+<h2 id="syntax-4">Syntax</h2>
+<p>Return value</p>
+<p>Return data type</p>
+<p>Determinism</p>
+<p>DATEFROMPARTS</p>
+<p>The</p>
+<p>function returns a</p>
+<p>date</p>
+<p>value for the specified</p>
+<p>year, month, and day.</p>
+<p>date</p>
+<p>Deterministic</p>
+<p>DATETIME2FROMPARTS</p>
+<p>The</p>
+<p>function returns a</p>
+<p>datetime2</p>
+<p>value for the</p>
+<p>specified date and time,</p>
+<p>with the specified</p>
+<p>precision.</p>
+<p>datetime2(</p>
+<p>precision</p>
+<p>)</p>
+<p>Deterministic</p>
+<p>DATETIMEFROMPARTS</p>
+<p>The</p>
+<p>function returns a</p>
+<p>datetime</p>
+<p>value for the</p>
+<p>specified date and time.</p>
+<p>datetime</p>
+<p>Deterministic</p>
+<p>DATETIMEOFFSETFROMPARTS</p>
+<p>The</p>
+<p>function returns a</p>
+<p>datetimeoffset</p>
+<p>value for</p>
+<p>the specified date and</p>
+<p>time, with the specified</p>
+<p>offsets and precision.</p>
+<p>datetimeoffset(</p>
+<p>precision</p>
+<p>)</p>
+<p>Deterministic</p>
+<p>SMALLDATETIMEFROMPARTS</p>
+<p>The</p>
+<p>function returns a</p>
+<p>smalldatetime</p>
+<p>value for</p>
+<p>the specified date and</p>
+<p>time.</p>
+<p>smalldatetime</p>
+<p>Deterministic</p>
+<p>TIMEFROMPARTS</p>
+<p>The</p>
+<p>function returns a</p>
+<p>time</p>
+<p>value for the specified</p>
+<p>time(</p>
+<p>precision</p>
+<p>)</p>
+<p>Deterministic</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<h2 id="functions-that-return-date-and-time-difference-values">Functions that return date and time difference values</h2>
+<h2 id="functions-that-modify-date-and-time-values">Functions that modify date and time values</h2>
+<h4 id="datetimeoffset">datetimeoffset</h4>
+<h4 id="at-time-zone">AT TIME ZONE</h4>
+<p>Function</p>
+<h2 id="syntax-5">Syntax</h2>
+<p>Return value</p>
+<p>Return data type</p>
+<p>Determinism</p>
+<p>time, with the specified</p>
+<p>precision.</p>
+<p>Function</p>
+<h2 id="syntax-6">Syntax</h2>
+<p>Return value</p>
+<p>Return</p>
+<p>data type</p>
+<p>Determinism</p>
+<p>DATEDIFF</p>
+<p>The</p>
+<p>function returns the number of</p>
+<p>date or time</p>
+<p>datepart</p>
+<p>boundaries, crossed</p>
+<p>between two specified dates.</p>
+<p>int</p>
+<p>Deterministic</p>
+<p>DATEDIFF_BIG</p>
+<p>The</p>
+<p>function returns the number of</p>
+<p>date or time</p>
+<p>datepart</p>
+<p>boundaries, crossed</p>
+<p>between two specified dates.</p>
+<p>bigint</p>
+<p>Deterministic</p>
+<p>Function</p>
+<h2 id="syntax-7">Syntax</h2>
+<p>Return value</p>
+<p>Return data type</p>
+<p>Determinism</p>
+<p>DATEADD</p>
+<p>The</p>
+<p>function returns a</p>
+<p>new</p>
+<p>datetime</p>
+<p>value by adding an</p>
+<p>interval to the specified</p>
+<p>datepart</p>
+<p>of the specified</p>
+<p>date</p>
+<p>.</p>
+<p>The data type of the</p>
+<p>date</p>
+<p>argument</p>
+<p>Deterministic</p>
+<p>EOMONTH</p>
+<p>The</p>
+<p>function returns the</p>
+<p>last day of the month containing</p>
+<p>the specified date, with an</p>
+<p>optional offset.</p>
+<p>Return type is the type</p>
+<p>of the</p>
+<p>start_date</p>
+<p>argument, or</p>
+<p>alternately, the</p>
+<p>date</p>
+<p>data type.</p>
+<p>Deterministic</p>
+<p>SWITCHOFFSET</p>
+<p>The</p>
+<p>function returns</p>
+<p>changes the time zone offset of a</p>
+<p>datetimeoffset</p>
+<p>value, and</p>
+<p>preserves the UTC value.</p>
+<p>datetimeoffset</p>
+<p>with the</p>
+<p>fractional precision of</p>
+<p>the</p>
+<p>DATETIMEOFFSET</p>
+<p>argument</p>
+<p>Deterministic</p>
+<p>TODATETIMEOFFSET</p>
+<p>The</p>
+<p>function</p>
+<p>transforms a</p>
+<p>datetime2</p>
+<p>value into</p>
+<p>a datetimeoffset value.</p>
+<p>interprets the</p>
+<p>datetime2</p>
+<p>value in local time, for</p>
+<p>the specified</p>
+<p>time_zone</p>
+<p>.</p>
+<p>datetimeoffset</p>
+<p>with the</p>
+<p>fractional precision of</p>
+<p>the</p>
+<p>datetime</p>
+<p>argument</p>
+<p>Deterministic</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p></p>
+<p>Tip</p>
+<p>For more information and recommendations about manipulating time zone information in SQL Server with</p>
+<p>the</p>
+<p>data type, see</p>
+<p>.</p>
+<h2 id="functions-that-set-or-return-session-format-functions">Functions that set or return session format functions</h2>
+<h2 id="functions-that-validate-date-and-time-values">Functions that validate date and time values</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">GetSystemTimeAsFileTime()</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">GetSystemTimeAdjustment()</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">SYSDATETIME</span><span style="color:#E1E4E8">()</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SYSDATETIME</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SYSDATETIMEOFFSET</span></span>
+<span class="line"><span style="color:#E1E4E8">()</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SYSDATETIMEOFFSET</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SYSUTCDATETIME</span></span>
+<span class="line"><span style="color:#E1E4E8">()</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SYSUTCDATETIME</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SYSUTCDATETIME</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CURRENT_TIMESTAMP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CURRENT_TIMESTAMP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">GETDATE</span><span style="color:#E1E4E8">()</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">GETDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">GETUTCDATE</span><span style="color:#E1E4E8">()</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">GETUTCDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">GETUTCDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CURRENT_DATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CURRENT_DATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">DATE_BUCKET</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">datepart</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;number></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;date></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">origin</span><span style="color:#F97583">></span><span style="color:#E1E4E8">)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATE_BUCKET</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">1900</span><span style="color:#F97583">-</span><span style="color:#79B8FF">01</span><span style="color:#F97583">-</span><span style="color:#79B8FF">01</span><span style="color:#79B8FF"> 00</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">00</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">00</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">000</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">DATENAME</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">datepart</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;date></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATENAME</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">DATEPART</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">datepart</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;date></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATEPART</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">DATETRUNC</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">datepart</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;date></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATETRUNC</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">DAY</span><span style="color:#E1E4E8"> ( </span><span style="color:#F97583">&#x3C;date></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DAY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">MONTH</span><span style="color:#E1E4E8"> ( </span><span style="color:#F97583">&#x3C;date></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MONTH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">YEAR</span><span style="color:#E1E4E8"> ( </span><span style="color:#F97583">&#x3C;date></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">YEAR</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">DATEFROMPARTS</span><span style="color:#E1E4E8"> ( </span><span style="color:#F97583">&#x3C;year></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;month></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;day></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATEFROMPARTS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">DATETIME2FROMPARTS</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;year></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;month></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;day></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;hour></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;minute></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;seconds></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">fractions</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;precision></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATETIME2FROMPARTS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">DATETIMEFROMPARTS</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;year></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;month></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;day></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;hour></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;minute></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;seconds></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">milliseconds</span><span style="color:#F97583">></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATETIMEFROMPARTS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATETIMEOFFSETFROMPARTS</span></span>
+<span class="line"><span style="color:#E1E4E8">( </span><span style="color:#F97583">&#x3C;year></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;month></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;day></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;hour></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;minute></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;seconds></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">fractions</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">hour_offset</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">minute_offset</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;precision></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATETIMEOFFSETFROMPARTS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SMALLDATETIMEFROMPARTS</span></span>
+<span class="line"><span style="color:#E1E4E8">( </span><span style="color:#F97583">&#x3C;year></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;month></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;day></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;hour></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;minute></span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SMALLDATETIMEFROMPARTS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">TIMEFROMPARTS</span><span style="color:#E1E4E8"> ( </span><span style="color:#F97583">&#x3C;hour></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;minute></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;seconds></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">fractions</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;precision></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TIMEFROMPARTS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">DATEDIFF</span><span style="color:#E1E4E8"> ( </span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">datepart</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">startdate</span><span style="color:#F97583">></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">enddate</span><span style="color:#F97583">></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATEDIFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATEDIFF_BIG (</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">datepart</span><span style="color:#F97583">></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">startdate</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">enddate</span><span style="color:#F97583">></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATEDIFF_BIG</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">DATEADD</span><span style="color:#E1E4E8"> (</span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">datepart</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;number></span><span style="color:#E1E4E8">, </span><span style="color:#F97583">&#x3C;date></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DATEADD</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">EOMONTH</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;start_date></span><span style="color:#E1E4E8"> [ ,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">month_to_add</span><span style="color:#F97583">></span><span style="color:#E1E4E8"> ] )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">EOMONTH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SWITCHOFFSET</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">&#x3C;DATETIMEOFFSET></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">time_zone</span><span style="color:#F97583">></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SWITCHOFFSET</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TODATETIMEOFFSET</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">expression</span><span style="color:#F97583">></span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">time_zone</span><span style="color:#F97583">></span><span style="color:#E1E4E8"> )</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TODATETIMEOFFSET</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TODATETIMEOFFSET</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Lock escalation without optimized locking — Architecture Guide — SqlKraft</title><meta name="description" content="Lock escalation behaves differently depending on whether"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Lock escalation without optimized locking</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>locking</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#locking</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Lock escalation without optimized locking</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Lock escalation behaves differently depending on whether</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Lock escalation behaves differently depending on whether</p>
+<p>optimized locking</p>
+<p>is enabled.</p>
+<p>As the Database Engine acquires low-level locks, it also places intent locks on the objects that</p>
+<p>contain the lower-level objects:</p>
+<p>When locking rows or index key ranges, the Database Engine places an intent lock on the</p>
+<p>pages that contain the rows or keys.</p>
+<p>When locking pages, the Database Engine places an intent lock on the higher level objects</p>
+<p>that contain the pages. In addition to intent lock on the object, intent page locks are</p>
+<p>requested on the following objects:</p>
+<p>Leaf-level pages of nonclustered indexes</p>
+<p>Data pages of clustered indexes</p>
+<p>Heap data pages</p>
+<p>The Database Engine might do both row and page locking for the same statement to minimize</p>
+<p>the number of locks and reduce the likelihood that lock escalation is necessary. For example, the</p>
+<p>Database Engine could place page locks on a nonclustered index (if enough contiguous keys in</p>
+<p>the index node are selected to satisfy the query) and row locks on the clustered index or heap.</p>
+<p>To escalate locks, the Database Engine attempts to change the intent lock on the table to the</p>
+<p>corresponding full lock, for example, changing an intent exclusive (</p>
+<p>) lock to an exclusive (</p>
+<p>)</p>
+<p>lock, or an intent shared (</p>
+<p>) lock to a shared (</p>
+<p>) lock. If the lock escalation attempt succeeds</p>
+<p>and the full table lock is acquired, then all HoBT, page (</p>
+<p>), or row-level (</p>
+<p>,</p>
+<p>) locks held</p>
+<p>by the transaction on the heap or index are released. If the full lock can’t be acquired, no lock</p>
+<p>escalation happens at that time and the Database Engine continues to acquire row, key, or page</p>
+<p>locks.</p>
+<p>The Database Engine doesn’t escalate row or key-range locks to page locks, but escalates them</p>
+<p>directly to table locks. Similarly, page locks are always escalated to table locks. Locking of</p>
+<p>partitioned tables can escalate to the HoBT level for the associated partition instead of to the</p>
+<p>table lock. A HoBT-level lock doesn’t necessarily lock the aligned HoBTs for the partition.</p>
+<p>７</p>
+<p>Note</p>
+<p>HoBT-level locks usually increase concurrency, but introduce the potential for deadlocks</p>
+<p>when transactions that are locking different partitions each want to expand their exclusive</p>
+<p>If a lock escalation attempt fails because of conflicting locks held by concurrent transactions, the</p>
+<p>Database Engine retries the lock escalation for each additional 1,250 locks acquired by the</p>
+<p>transaction.</p>
+<p>Each escalation event operates primarily at the level of a single Transact-SQL statement. When</p>
+<p>the event starts, the Database Engine attempts to escalate all the locks owned by the current</p>
+<p>transaction in any of the tables that have been referenced by the active statement provided it</p>
+<p>meets the escalation threshold requirements. If the escalation event starts before the statement</p>
+<p>has accessed a table, no attempt is made to escalate the locks on that table. If lock escalation</p>
+<p>succeeds, any locks acquired by the transaction in a previous statement and still held at the time</p>
+<p>the event starts are escalated if the table is referenced by the current statement and is included in</p>
+<p>the escalation event.</p>
+<p>For example, assume that a session performs these operations:</p>
+<p>Begins a transaction.</p>
+<p>Updates</p>
+<p>. This generates exclusive row locks in</p>
+<p>that are held until the</p>
+<p>transaction completes.</p>
+<p>Updates</p>
+<p>. This generates exclusive row locks in</p>
+<p>that are held until the</p>
+<p>transaction completes.</p>
+<p>Performs a</p>
+<p>that joins</p>
+<p>with</p>
+<p>. The query execution plan calls for the</p>
+<p>rows to be retrieved from</p>
+<p>before the rows are retrieved from</p>
+<p>.</p>
+<p>The</p>
+<p>statement triggers lock escalation while it’s retrieving rows from</p>
+<p>and</p>
+<p>before it has accessed</p>
+<p>.</p>
+<p>If lock escalation succeeds, only the locks held by the session on</p>
+<p>are escalated. This</p>
+<p>includes both the shared locks from the</p>
+<p>statement and the exclusive locks from the</p>
+<p>previous</p>
+<p>statement. While only the locks the session acquired in</p>
+<p>for the</p>
+<p>statement are counted to determine if lock escalation should be done, once escalation is</p>
+<p>successful all locks held by the session in</p>
+<p>are escalated to an exclusive lock on the table,</p>
+<p>and all other lower-granularity locks, including intent locks, on</p>
+<p>are released.</p>
+<p>No attempt is made to escalate locks on</p>
+<p>because there was no active reference to</p>
+<p>in the</p>
+<p>statement. Similarly no attempt is made to escalate the locks on</p>
+<p>, which</p>
+<p>aren’t escalated because it hadn’t yet been accessed when the escalation occurred.</p>
+<p>locks to the other partitions. In rare instances,</p>
+<p>locking granularity might perform</p>
+<p>better.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">IX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">X</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">IS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">S</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PAGE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">RID</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">KEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableA</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableA</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableB</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableB</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableA</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableC</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableA</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableC</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableA</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableC</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableA</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableA</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableA</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableA</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableB</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableB</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TableC</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TABLE</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

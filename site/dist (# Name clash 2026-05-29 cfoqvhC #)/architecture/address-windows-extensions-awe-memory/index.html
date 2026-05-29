@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Address Windows Extensions (AWE) memory — Architecture Guide — SqlKraft</title><meta name="description" content="grow. To resolve this problem, add physical memory, or tune the queries to use a different and"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Address Windows Extensions (AWE) memory</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>memory management</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#memory-management</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Address Windows Extensions (AWE) memory</h1> <p class="doc-lede" data-astro-cid-hditk3lm>grow. To resolve this problem, add physical memory, or tune the queries to use a different and</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>grow. To resolve this problem, add physical memory, or tune the queries to use a different and</p>
+<p>faster query plan.</p>
+<p>All SQL Server editions support conventional memory on 64-bit platform. The SQL Server</p>
+<p>process can access virtual address space up to operating system maximum on x64 architecture.</p>
+<p>With IA64 architecture, the limit was 7 TB (IA64 not supported in SQL Server 2012 (11.x) and</p>
+<p>later versions).</p>
+<p>For more information, see</p>
+<p>Memory Limits for Windows</p>
+<p>.</p>
+<p>By using</p>
+<p>Address Windowing Extensions</p>
+<p>(AWE) and the</p>
+<p>Lock pages in memory</p>
+<p>(LPIM) privilege</p>
+<p>required by AWE, you can keep most of SQL Server process memory</p>
+<p>locked</p>
+<p>in physical RAM</p>
+<p>under low virtual memory conditions. This happens in both 32-bit and 64-bit AWE allocations.</p>
+<p>The locking of memory occurs because AWE memory doesn’t go through the Virtual Memory</p>
+<p>Manager in Windows, which controls paging of memory. The AWE memory allocation API</p>
+<p>requires the</p>
+<p>Lock pages in memory</p>
+<p>(SeLockMemoryPrivilege) privilege; see</p>
+<p>AllocateUserPhysicalPages notes</p>
+<p>. Therefore, the main benefit of using the AWE API is to keep</p>
+<p>most of the memory resident in RAM if there’s memory pressure on the system. For</p>
+<p>information on how to allow SQL Server to use AWE, see</p>
+<p>Enable the Lock pages in memory</p>
+<p>option (Windows)</p>
+<p>.</p>
+<p>If LPIM is granted, we strongly recommend that you set</p>
+<p>to a specific</p>
+<p>value, rather than leaving the default of 2,147,483,647 megabytes (MB). For more information,</p>
+<p>see</p>
+<p>Server memory configuration options: Set options manually</p>
+<p>and</p>
+<p>Lock pages in memory</p>
+<p>(LPIM)</p>
+<p>.</p>
+<p>If LPIM isn’t enabled, SQL Server switches to using conventional memory and in cases of OS</p>
+<p>memory exhaustion, and the</p>
+<p>MSSQLSERVER_17890</p>
+<p>error might be reported in the error log.</p>
+<p>The error resembles the following example:</p>
+<p>７</p>
+<p>Note</p>
+<p>Starting with SQL Server 2025 (17.x), SQL Server Standard edition supports up to 256 GB.</p>
+<p>In SQL Server 2022 (16.x) and earlier versions, SQL Server Standard edition supports up to</p>
+<p>128 GB.</p>
+<h3 id="single-page-allocator-spa">Single-Page Allocator (SPA)</h3>
+<h3 id="multi-page-allocator-mpa">Multi-Page Allocator (MPA)</h3>
+<h3 id="clr-allocator">CLR Allocator</h3>
+<h3 id="thread-stacks">thread stacks</h3>
+<h3 id="direct-windows-allocations-dwa">Direct Windows allocations (DWA)</h3>
+<h3 id="any-size-page-allocator">“Any size” Page Allocator</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">max </span><span style="color:#F97583">server</span><span style="color:#E1E4E8"> memory (MB)</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

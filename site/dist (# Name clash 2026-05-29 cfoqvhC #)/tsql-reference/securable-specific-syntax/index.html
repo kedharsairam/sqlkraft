@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Securable-specific Syntax — T-SQL Reference — SqlKraft</title><meta name="description" content="The full syntax of the REVOKE statement is complex. The syntax diagram above was simplified"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Securable-specific Syntax</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Securable-specific Syntax</h1> <span class="cat-badge" data-astro-cid-s2stm25t>statements</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#statements</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>The full syntax of the REVOKE statement is complex. The syntax diagram above was simplified</p>
+<p>to draw attention to its structure. Complete syntax for revoking permissions on specific</p>
+<p>securables is described in the topics listed in</p>
+<p>Securable-specific Syntax</p>
+<p>later in this topic.</p>
+<p>The REVOKE statement can be used to remove granted permissions, and the DENY statement</p>
+<p>can be used to prevent a principal from gaining a specific permission through a GRANT.</p>
+<p>Granting a permission removes DENY or REVOKE of that permission on the specified securable.</p>
+<p>If the same permission is denied at a higher scope that contains the securable, the DENY takes</p>
+<p>precedence. However, revoking the granted permission at a higher scope does not take</p>
+<p>precedence.</p>
+<p>The sp_helprotect system stored procedure reports permissions on a database-level securable</p>
+<p>The REVOKE statement will fail if CASCADE is not specified when you are revoking a permission</p>
+<p>from a principal that was granted that permission with GRANT OPTION specified.</p>
+<p>Principals with CONTROL permission on a securable can revoke permission on that securable.</p>
+<p>Object owners can revoke permissions on the objects they own.</p>
+<p>Grantees of CONTROL SERVER permission, such as members of the sysadmin fixed server role,</p>
+<p>can revoke any permission on any securable in the server. Grantees of CONTROL permission on</p>
+<p>a database, such as members of the db_owner fixed database role, can revoke any permission</p>
+<p>on any securable in the database. Grantees of CONTROL permission on a schema can revoke</p>
+<p>any permission on any object within the schema.</p>
+<p>The following table lists the securables and the topics that describe the securable-specific</p>
+<h2 id="syntax">syntax.</h2>
+<p>Ｕ</p>
+<p>Caution</p>
+<p>A table-level DENY does not take precedence over a column-level GRANT. This</p>
+<p>inconsistency in the permissions hierarchy has been preserved for backward compatibility.</p>
+<p>It will be removed in a future release.</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<h4 id="securable">Securable</h4>
+<h4 id="topic">Topic</h4>
+<p>Application Role</p>
+<p>REVOKE Database Principal Permissions (Transact-SQL)</p>
+<p>Assembly</p>
+<p>REVOKE Assembly Permissions (Transact-SQL)</p>
+<p>Asymmetric Key</p>
+<p>REVOKE Asymmetric Key Permissions (Transact-SQL)</p>
+<p>Availability Group</p>
+<p>REVOKE Availability Group Permissions (Transact-SQL)</p>
+<p>Certificate</p>
+<p>REVOKE Certificate Permissions (Transact-SQL)</p>
+<p>Contract</p>
+<p>REVOKE Service Broker Permissions (Transact-SQL)</p>
+<p>Database</p>
+<p>REVOKE Database Permissions (Transact-SQL)</p>
+<p>Endpoint</p>
+<p>REVOKE Endpoint Permissions (Transact-SQL)</p>
+<p>Database Scoped Credential</p>
+<p>REVOKE Database Scoped Credential (Transact-SQL)</p>
+<p>Full-text Catalog</p>
+<p>REVOKE Full-Text Permissions (Transact-SQL)</p>
+<p>Full-Text Stoplist</p>
+<p>REVOKE Full-Text Permissions (Transact-SQL)</p>
+<p>Function</p>
+<p>REVOKE Object Permissions (Transact-SQL)</p>
+<p>Login</p>
+<p>REVOKE Server Principal Permissions (Transact-SQL)</p>
+<p>Message Type</p>
+<p>REVOKE Service Broker Permissions (Transact-SQL)</p>
+<p>Object</p>
+<p>REVOKE Object Permissions (Transact-SQL)</p>
+<p>Queue</p>
+<p>REVOKE Object Permissions (Transact-SQL)</p>
+<p>Remote Service Binding</p>
+<p>REVOKE Service Broker Permissions (Transact-SQL)</p>
+<p>Role</p>
+<p>REVOKE Database Principal Permissions (Transact-SQL)</p>
+<p>Route</p>
+<p>REVOKE Service Broker Permissions (Transact-SQL)</p>
+<p>Schema</p>
+<p>REVOKE Schema Permissions (Transact-SQL)</p>
+<p>Search Property List</p>
+<p>REVOKE Search Property List Permissions (Transact-SQL)</p>
+<p>Server</p>
+<p>REVOKE Server Permissions (Transact-SQL)</p>
+<p>Service</p>
+<p>REVOKE Service Broker Permissions (Transact-SQL)</p>
+<p>Stored Procedure</p>
+<p>REVOKE Object Permissions (Transact-SQL)</p>
+<p>Symmetric Key</p>
+<p>REVOKE Symmetric Key Permissions (Transact-SQL)</p>
+<p>Synonym</p>
+<p>REVOKE Object Permissions (Transact-SQL)</p>
+<h4 id="securable-1">Securable</h4>
+<h4 id="topic-1">Topic</h4> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

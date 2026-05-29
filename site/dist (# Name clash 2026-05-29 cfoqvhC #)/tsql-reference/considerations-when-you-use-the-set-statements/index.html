@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Considerations When You Use the SET Statements — T-SQL Reference — SqlKraft</title><meta name="description" content="SET TRANSACTION ISOLATION LEVEL"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Considerations When You Use the SET Statements</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Considerations When You Use the SET Statements</h1> <span class="cat-badge" data-astro-cid-s2stm25t>statements</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#statements</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>SET TRANSACTION ISOLATION LEVEL</p>
+<p>SET XACT_ABORT</p>
+<p>All SET statements run at execute or run time, except these statements, which run at parse</p>
+<p>time:</p>
+<p>SET FIPS_FLAGGER</p>
+<p>SET OFFSETS</p>
+<p>SET PARSEONLY</p>
+<p>and SET QUOTED_IDENTIFIER</p>
+<p>If a SET statement runs in a stored procedure or trigger, the value of the SET option gets</p>
+<p>restored after the stored procedure or trigger returns control. Also, if you specify a SET</p>
+<p>statement in a dynamic SQL string that runs by using either</p>
+<p>or EXECUTE,</p>
+<p>the value of the SET option gets restored after control returns from the batch that you</p>
+<p>specified in the dynamic SQL string.</p>
+<p>Stored procedures execute with the SET settings specified at execute time except for SET</p>
+<p>ANSI_NULLS and SET QUOTED_IDENTIFIER. Stored procedures specifying SET</p>
+<p>ANSI_NULLS or SET QUOTED_IDENTIFIER use the setting specified at stored procedure</p>
+<p>creation time. If used inside a stored procedure, any SET setting is ignored.</p>
+<p>The</p>
+<p>setting of</p>
+<p>allows for server-wide settings and works across</p>
+<p>multiple databases. This setting also behaves like an explicit SET statement, except that it</p>
+<p>occurs at login time.</p>
+<p>Database settings set by using ALTER DATABASE are valid only at the database level and</p>
+<p>take effect only if explicitly set. Database settings override instance option settings that</p>
+<p>are set by using</p>
+<p>.</p>
+<p>If a SET statement uses ON and OFF, you can specify either one for multiple SET options.</p>
+<p>For example,</p>
+<p>sets both QUOTED_IDENTIFIER and</p>
+<p>ANSI_NULLS to ON.</p>
+<p>７</p>
+<p>Note</p>
+<p>This doesn’t apply to the statistics related SET options.</p>
+<h3 id="sp_configure-user-options">sp_configure user options</h3>
+<h3 id="db1dbosp1">db1.dbo.sp1</h3>
+<h3 id="db2dbosp2">db2.dbo.sp2</h3>
+<h3 id="sp1">sp1</h3>
+<h3 id="db1">db1</h3>
+<h3 id="sp2">sp2</h3>
+<h3 id="db2">db2</h3>
+<p>SET statement settings override identical database option settings that are set by using</p>
+<p>ALTER DATABASE. For example, the value specified in a SET ANSI_NULLS statement will</p>
+<p>override the database setting for ANSI_NULLs. Additionally, some connection settings get</p>
+<p>automatically set ON when a user connects to a database based on the values that go</p>
+<p>into effect by the previous use of the</p>
+<p>setting, or the values</p>
+<p>that apply to all ODBC and OLE/DB connections.</p>
+<p>ALTER, CREATE and DROP DATABASE statements don’t honor the SET LOCK_TIMEOUT</p>
+<p>setting.</p>
+<p>When a global or shortcut SET statement sets several settings, issuing the shortcut SET</p>
+<p>statement resets the previous settings for all those options that the shortcut SET</p>
+<p>statement affects. If a SET option that gets affected by a shortcut SET statement gets set</p>
+<p>after the shortcut SET statement gets issued, the individual SET statement overrides the</p>
+<p>comparable shortcut settings. An example of a shortcut SET statement would be SET</p>
+<p>ANSI_DEFAULTS.</p>
+<p>When batches are used, the database context is determined by the batch that is</p>
+<p>established by using the USE statement. Unplanned queries and all other statements that</p>
+<p>run outside the stored procedure and that are in batches inherit the option settings of the</p>
+<p>database and connection established by the USE statement.</p>
+<p>Multiple Active Result Set (MARS) requests share a global state that contains the most</p>
+<p>recent session SET option settings. When each request executes, it can modify the SET</p>
+<p>options. The changes are specific to the request context in which they’re set, and don’t</p>
+<p>affect other concurrent MARS requests. However, after the request execution is</p>
+<p>completed, the new SET options are copied to the global session state. New requests that</p>
+<p>execute under the same session after this change will use these new SET option settings.</p>
+<p>When a stored procedure runs from a batch or from another stored procedure, it’s run</p>
+<p>under the option values set up in the database that has the stored procedure. For</p>
+<p>example, when stored procedure</p>
+<p>calls stored procedure</p>
+<p>, stored</p>
+<p>procedure</p>
+<p>executes under the current compatibility level setting of database</p>
+<p>, and</p>
+<p>stored procedure</p>
+<p>executes under the current compatibility level setting of database</p>
+<p>.</p>
+<p>When a Transact-SQL statement concerns objects that are in multiple databases, the</p>
+<p>current database context and the current connection context applies to that statement. In</p>
+<p>this case, if Transact-SQL statement is in a batch, the current connection context is the</p>
+<p>database defined by the USE statement; if the Transact-SQL statement is in a stored</p>
+<p>procedure, the connection context is the database that contains the stored procedure.</p>
+<p>When you’re creating and manipulating indexes on computed columns or indexed views,</p>
+<p>you must set these SET options to ON: ARITHABORT, CONCAT_NULL_YIELDS_NULL,</p>
+<p>QUOTED_IDENTIFIER, ANSI_NULLS, ANSI_PADDING, and ANSI_WARNINGS. Set the option</p>
+<p>NUMERIC_ROUNDABORT to OFF.</p>
+<p>If you don’t set any one of these options to the required values, INSERT, UPDATE, DELETE,</p>
+<p>DBCC CHECKDB, and DBCC CHECKTABLE actions on indexed views or tables with indexes</p>
+<p>on computed columns will fail. SQL Server will raise an error listing all the options that are</p>
+<p>incorrectly set. Also, SQL Server will process SELECT statements on these tables or</p>
+<p>indexed views as if the indexes on computed columns or on the views don’t exist.</p>
+<p>When SET RESULT_SET_CACHING is ON, it enables the result caching feature for the</p>
+<p>current client session. Result_set_caching cannot be turned ON for a session if it is turned</p>
+<p>OFF at the database level. When SET RESULT_SET_CACHING is OFF, the result set caching</p>
+<p>feature is disabled for the current client session. Changing this setting requires</p>
+<p>membership in the public role. Applies to: Azure Synapse Analytics Gen2</p>
+<p>Last updated on 11/18/2025</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> QUOTED_IDENTIFIER</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">ANSI_NULLS</span><span style="color:#F97583"> ON</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

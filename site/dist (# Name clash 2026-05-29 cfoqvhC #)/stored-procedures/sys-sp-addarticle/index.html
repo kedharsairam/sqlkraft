@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sys.sp_addarticle — System Stored Procedure — SqlKraft</title><meta name="description" content="Creates an article and adds it to a publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-jslvljwt]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-jslvljwt] .sep[data-astro-cid-jslvljwt]{color:var(--border-glass)}.detail-header[data-astro-cid-jslvljwt]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-jslvljwt]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-jslvljwt]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-jslvljwt]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-jslvljwt]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.body-content[data-astro-cid-jslvljwt]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-jslvljwt] h2[data-astro-cid-jslvljwt]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-jslvljwt] h3[data-astro-cid-jslvljwt]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-jslvljwt] p[data-astro-cid-jslvljwt]{margin-bottom:14px}.body-content[data-astro-cid-jslvljwt] ul[data-astro-cid-jslvljwt],.body-content[data-astro-cid-jslvljwt] ol[data-astro-cid-jslvljwt]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-jslvljwt] li[data-astro-cid-jslvljwt]{margin-bottom:6px}.body-content[data-astro-cid-jslvljwt] pre[data-astro-cid-jslvljwt]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-jslvljwt] code[data-astro-cid-jslvljwt]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-jslvljwt] [data-astro-cid-jslvljwt]:not(pre)>code[data-astro-cid-jslvljwt]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-jslvljwt] table[data-astro-cid-jslvljwt]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-jslvljwt] th[data-astro-cid-jslvljwt]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-jslvljwt] td[data-astro-cid-jslvljwt]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-jslvljwt]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-jslvljwt> <a href="/sqlkraft/" data-astro-cid-jslvljwt>&larr; Home</a> <span class="sep" data-astro-cid-jslvljwt>/</span> <a href="/sqlkraft/stored-procedures/" data-astro-cid-jslvljwt>Stored Procedures</a> <span class="sep" data-astro-cid-jslvljwt>/</span> <span data-astro-cid-jslvljwt>sys.sp_addarticle</span> </nav> <div class="detail-header" data-astro-cid-jslvljwt> <h1 class="detail-title" data-astro-cid-jslvljwt>sys.sp_addarticle</h1> <span class="cat-badge" data-astro-cid-jslvljwt>general</span> </div> <div class="tag-strip" data-astro-cid-jslvljwt> <span class="tag-pill" data-astro-cid-jslvljwt>#stored-procedure</span> </div> <div class="body-content" data-astro-cid-jslvljwt> <h2 id="description">Description</h2>
+<p>Creates an article and adds it to a publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions</p>
+<h2 id="syntax">Syntax</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addarticle</span></span>
+<span class="line"><span style="color:#E1E4E8">[ @publication = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'publication'</span></span>
+<span class="line"><span style="color:#E1E4E8">, [ @article = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'article'</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @source_table = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'source_table'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @destination_table = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'destination_table'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @vertical_partition = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'vertical_partition'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @type = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'type'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @filter = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'filter'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @sync_object = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'sync_object'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @ins_cmd = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'ins_cmd'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @del_cmd = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'del_cmd'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @upd_cmd = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'upd_cmd'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @creation_script = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'creation_script'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @description = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'description'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @pre_creation_cmd = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'pre_creation_cmd'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @filter_clause = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'filter_clause'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @schema_option = ] schema_option ]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @destination_owner = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'destination_owner'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @status = ] </span><span style="color:#F97583">status</span><span style="color:#E1E4E8"> ]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @source_owner = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'source_owner'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @sync_object_owner = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'sync_object_owner'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @filter_owner = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'filter_owner'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @source_object = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'source_object'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @artid = ] artid</span></span>
+<span class="line"><span style="color:#F97583">OUTPUT</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @auto_identity_range = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'auto_identity_range'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @pub_identity_range = ] pub_identity_range ]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @identity_range = ] identity_range ]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @threshold = ] threshold ]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @use_default_datatypes = ] use_default_datatypes ]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @identityrangemanagementoption = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'identityrangemanagementoption'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @publisher = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'publisher'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @fire_triggers_on_snapshot = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'fire_triggers_on_snapshot'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ ; ]</span></span></code></pre>
+<h2 id="permissions">Permissions</h2>
+<p>Only members of the fixed server role or fixed database role can execute . Define an Article sp_articlecolumn (Transact-SQL) sp_articlefilter (Transact-SQL) sp_articleview (Transact-SQL) Related content Description then add the table as an article again using sp_addarticle. Replication will then add the column to the table. 21567 16 No The call format VCALL cannot be used for the specified article. VCALL format can be used only for articles in publications that allow updating subscriptions. If you do not require updating subscriptions, specify a different call format. If you do require updating subscriptions, you must drop the publication and re-create it to specify that updating subscriptions are allowed. 21569 16 No The article %s in the publication %s does not have a valid conflict table entry in the system table sysarticleupdates. This entry is required for publications that allow queued updating subscriptions. Check for errors in the last run of the Snapshot Agent. 21570 16 No Cannot create the logical record relationship. Table ‘%s’ does not have a foreign key referencing table ‘%s’. A logical record relationship requires a foreign key relationship between the parent and child tables. 21571 16 No Cannot create the logical record relationship in publication ‘%s’. The use_partition_groups option for the publication must be set to “true” in order to use logical records. Use sp_changemergepublication to set the option to “true”. 21572 16 No Cannot add a logical record relationship because the foreign key constraint ‘%s’ on table ‘%s’ is disabled. To create the logical record relationship, first enable the foreign key constraint. 21573 16 No Cannot add a logical record relationship because the foreign key constraint ‘%s’ on table ‘%s’ is defined with the NOT FOR REPLICATION option. To add the logical record relationship, first drop the foreign key constraint, and then re-create it without the NOT FOR REPLICATION option. 21574 16 No Cannot add a logical record relationship because the article ‘%s’ is published in publication ‘%s’, which has a compatibility level lower than 90RTM. Use sp_changemergepublication to set the publication_compatibility_level to 90RTM. 21575 16 No The value specified for the property filter_type is not valid. Valid values are 1 (join filter only), 2 (logical record relation only), and 3 (join filter and logical record relation). 21576 16 No Cannot add a logical record relationship between tables ‘%s’ and ‘%s’ because the foreign key column ‘%s’ in table ‘%s’ allows NULL values. Alter the column to disallow NULL values. 21578 16 No In order to use partition_options of 2 (non overlapping partitions with multiple subscriptions per partition) or 3 (non overlapping partitions one subscription per partition) the publication ‘%s’ must be enabled to use</p> </div> <nav class="detail-footer" data-astro-cid-jslvljwt> <a href="/sqlkraft/stored-procedures/" data-astro-cid-jslvljwt>&larr; Back to all stored procedures</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

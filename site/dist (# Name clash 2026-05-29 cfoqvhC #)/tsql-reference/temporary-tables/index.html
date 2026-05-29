@@ -1,0 +1,205 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Temporary tables — T-SQL Reference — SqlKraft</title><meta name="description" content="The Database Engine doesn't enforce an order in which DEFAULT, IDENTITY, ROWGUIDCOL, or"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Temporary tables</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Temporary tables</h1> <span class="cat-badge" data-astro-cid-s2stm25t>statements</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#statements</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>The Database Engine doesn’t enforce an order in which DEFAULT, IDENTITY, ROWGUIDCOL, or</p>
+<p>column constraints are specified in a column definition.</p>
+<p>When a table is created, the QUOTED IDENTIFIER option is always stored as ON in the</p>
+<p>metadata for the table, even if the option is set to OFF when the table is created.</p>
+<p>In SQL database in Microsoft Fabric, some table features can be created but aren’t</p>
+<p>mirrored</p>
+<p>into the Fabric OneLake</p>
+<p>. For more information, see</p>
+<p>Limitations for Fabric SQL database</p>
+<p>mirroring</p>
+<p>.</p>
+<p>You can create local and global temporary tables. Local temporary tables are visible only in the</p>
+<p>current session, and global temporary tables are visible to all sessions. Temporary tables can’t</p>
+<p>be partitioned.</p>
+<p>Prefix local temporary table names with single number sign (</p>
+<p>), and prefix global</p>
+<p>temporary table names with a double number sign (</p>
+<p>).</p>
+<p>Transact-SQL statements reference the temporary table by using the value specified for</p>
+<p>table_name</p>
+<p>in the</p>
+<p>statement, for example:</p>
+<p>SQL</p>
+<p>If more than one temporary table is created inside a single stored procedure or batch, they</p>
+<p>must have different names.</p>
+<p>If you include a</p>
+<p>schema_name</p>
+<p>when you create or access a temporary table, it’s ignored. All</p>
+<p>temporary tables are created in the</p>
+<p>schema.</p>
+<p>If a local temporary table is created in a stored procedure or a SQL module that can be</p>
+<p>executed at the same time by several sessions, the Database Engine must be able to distinguish</p>
+<p>the tables created by the different sessions. The Database Engine does this by internally</p>
+<p>appending a unique suffix to each local temporary table name. The full name of a temporary</p>
+<p>table as stored in the</p>
+<p>table in</p>
+<p>is made up of the table name specified in</p>
+<p>the</p>
+<p>statement and the system-generated unique suffix. To allow for the suffix,</p>
+<p>table_name</p>
+<p>specified for a local temporary name can’t exceed 116 characters.</p>
+<h3 id="on">ON</h3>
+<h3 id="off">OFF</h3>
+<p>Temporary tables are automatically dropped when they go out of scope, unless explicitly</p>
+<p>dropped earlier by using</p>
+<p>:</p>
+<p>A local temporary table created in a stored procedure is dropped automatically when the</p>
+<p>stored procedure is finished. The table can be referenced by any nested stored</p>
+<p>procedures executed by the stored procedure that created the table. The table can’t be</p>
+<p>referenced by the process that called the stored procedure that created the table.</p>
+<p>All other local temporary tables are dropped automatically at the end of the current</p>
+<p>session.</p>
+<p>If the</p>
+<p>database-scoped configuration is set to</p>
+<p>(default), then global temporary tables are automatically dropped when the session that</p>
+<p>created the table ends and all other tasks have stopped referencing them. The association</p>
+<p>between a task and a table is maintained only for the life of a single Transact-SQL</p>
+<p>statement. This means that a global temporary table is dropped at the completion of the</p>
+<p>last Transact-SQL statement that was actively referencing the table when the creating</p>
+<p>session ended.</p>
+<p>If the</p>
+<p>database-scoped configuration is set to</p>
+<p>,</p>
+<p>then global temporary tables are only dropped using</p>
+<p>, or when the Database</p>
+<p>Engine instance restarts. For more information, see</p>
+<p>GLOBAL_TEMPORARY_TABLE_AUTO_DROP</p>
+<p>.</p>
+<p>A local temporary table created within a stored procedure or trigger can have the same name</p>
+<p>as a temporary table that was created before the stored procedure or trigger is called.</p>
+<p>However, if a query references a temporary table and two temporary tables with the same</p>
+<p>name exist at that time, it isn’t defined which table the query is resolved against. Nested stored</p>
+<p>procedures can also create temporary tables with the same name as a temporary table that was</p>
+<p>created by the calling stored procedure. However, for modifications to resolve to the table that</p>
+<p>was created in the nested procedure, the table must have the same structure, with the same</p>
+<p>column names, as the table created in the calling procedure. This is shown in the following</p>
+<p>example.</p>
+<p>SQL</p>
+<p>Here’s the result set.</p>
+<p>Output</p>
+<p>When you create local or global temporary tables, the</p>
+<h2 id="syntax-supports-constraint">syntax supports constraint</h2>
+<p>definitions except for</p>
+<p>constraints. If a</p>
+<p>constraint is specified in a</p>
+<p>temporary table, the statement returns a warning message that states the constraint was</p>
+<p>skipped. The table is still created without the</p>
+<p>constraint. Temporary tables can’t be</p>
+<p>referenced in</p>
+<p>constraints.</p>
+<p>If a temporary table is created with a named constraint and the temporary table is created</p>
+<p>within the scope of a user-defined transaction, only one user at a time can execute the</p>
+<h2 id="database-scoped-global-temporary-tables-in-azure-sql">Database scoped global temporary tables in Azure SQL</h2>
+<h2 id="database">Database</h2>
+<h2 id="permissions-for-temporary-objects">Permissions for temporary objects</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">#table_name</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">##table_name</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">dbo</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">objects</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tempdb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">#MyTempTable</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">col1</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">PRIMARY</span></span>
+<span class="line"><span style="color:#F97583">KEY</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">#MyTempTable</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">);</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">GLOBAL_TEMPORARY_TABLE_AUTO_DROP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">GLOBAL_TEMPORARY_TABLE_AUTO_DROP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">PROCEDURE</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Test2</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">#t</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">x</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">PRIMARY</span></span>
+<span class="line"><span style="color:#F97583">KEY</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">#t</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">x</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">Test2Col</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">#t;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOREIGN KEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOREIGN KEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOREIGN KEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOREIGN KEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">PROCEDURE</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Test1</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">#t</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">x</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">PRIMARY</span></span>
+<span class="line"><span style="color:#F97583">KEY</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">#t</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">x</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">Test1Col</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">#t;</span></span>
+<span class="line"><span style="color:#F97583">EXECUTE</span></span>
+<span class="line"><span style="color:#E1E4E8">Test2;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">#t</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">x</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">PRIMARY</span></span>
+<span class="line"><span style="color:#F97583">KEY</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">#t</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">99</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">EXECUTE</span></span>
+<span class="line"><span style="color:#E1E4E8">Test1;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">1</span><span style="color:#F97583"> row</span><span style="color:#E1E4E8">(s) affected)</span></span>
+<span class="line"><span style="color:#E1E4E8">Test1Col</span></span>
+<span class="line"><span style="color:#6A737D">-----------</span></span>
+<span class="line"><span style="color:#79B8FF">1</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">1</span><span style="color:#F97583"> row</span><span style="color:#E1E4E8">(s) affected)</span></span>
+<span class="line"><span style="color:#E1E4E8">Test2Col</span></span>
+<span class="line"><span style="color:#6A737D">-----------</span></span>
+<span class="line"><span style="color:#79B8FF">2</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 
