@@ -132,7 +132,7 @@ const sevColor = SEVERITY_COLORS[severity] || "#6272a4";
   }
   .wait-name {
     font-family: var(--font-mono);
-    color: var(--accent);
+    color: var(--text-primary);
   }
   .badge-strip {
     display: flex;
@@ -165,11 +165,63 @@ const sevColor = SEVERITY_COLORS[severity] || "#6272a4";
     font-family: var(--font-mono);
   }
 
+  /* ── Diagnostic section panels ── */
+  .body-content h2 {
+    margin: clamp(24px, 3.5vw, 40px) 0 clamp(10px, 1.2vw, 16px);
+    padding: clamp(8px, 1vw, 14px) clamp(12px, 1.5vw, 20px);
+    border-left: 3px solid var(--border-glass);
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 0 clamp(4px, 0.5vw, 8px) clamp(4px, 0.5vw, 8px) 0;
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  /* Overview section — cool left border */
+  .body-content h2#overview {
+    border-left-color: #58a6ff;
+  }
+  /* Troubleshooting / Diagnostics — warm left border */
+  .body-content h2#troubleshooting,
+  .body-content h2#diagnostic-mechanics {
+    border-left-color: #d29922;
+  }
+  /* See Also — muted left border, transparent bg */
+  .body-content h2#see-also {
+    border-left-color: var(--border-glass);
+    background: transparent;
+  }
+
+  /* ── Compact border-muted tables (Key Metrics) ── */
+  .body-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: clamp(12px, 1.5vw, 20px);
+    border: 1px solid var(--border-glass);
+    border-radius: clamp(4px, 0.5vw, 8px);
+    overflow: hidden;
+  }
+  .body-content th {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text-primary);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-glass);
+  }
+  .body-content td {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--border-glass);
+    vertical-align: top;
+  }
+  .body-content tr:last-child td {
+    border-bottom: none;
+  }
+
   .scripts-callout {
     padding: clamp(10px, 1.5vw, 18px);
-    border: 1px solid var(--accent);
+    border: 1px solid var(--border-glass);
     border-radius: clamp(6px, 0.8vw, 10px);
-    background: rgba(47, 128, 237, 0.06);
+    background: rgba(255, 255, 255, 0.03);
     margin-bottom: clamp(16px, 2.5vw, 28px);
     font-size: clamp(12px, 1.2vw, 14px);
     color: var(--text-secondary);
@@ -187,11 +239,12 @@ const sevColor = SEVERITY_COLORS[severity] || "#6272a4";
   .script-link {
     font-family: var(--font-mono);
     font-size: clamp(11px, 1vw, 13px);
-    color: var(--accent);
+    color: var(--text-secondary);
     text-decoration: none;
     padding: clamp(1px, 0.2vw, 3px) clamp(6px, 0.7vw, 10px);
-    border: 1px solid rgba(47, 128, 237, 0.3);
+    border: 1px solid var(--border-glass);
     border-radius: 4px;
+    transition: border-color 0.2s;
   }
   .script-link:hover {
     background: rgba(255, 255, 255, 0.06);
