@@ -1,0 +1,91 @@
+---
+title: "SQL Server 2025"
+topic: "linux-operations"
+description: |
+  Applies to:
+  
+  SQL Server
+  
+  on Linux
+  
+  This article provides details of features supported by the various editions of SQL Server 2025
+  
+  (17.x) on Linux.
+  
+  For editions and supported features of SQL Server o
+tags:
+  - "linux-operations"
+  - "sql-server-2025-2"
+pubDate: 2025-12-01
+---
+
+Applies to:
+
+SQL Server
+
+on Linux
+
+This article provides details of features supported by the various editions of SQL Server 2025
+
+(17.x) on Linux.
+
+For editions and supported features of SQL Server on Windows, see
+
+Editions and supported
+
+features of SQL Server 2025
+
+.
+
+For more information on what's new in SQL Server 2025 (17.x), see:
+
+What's new for SQL Server 2025 on Linux
+
+What's new in SQL Server 2025
+
+Installation requirements vary based on your application needs. The different editions of SQL
+
+Server accommodate the unique performance, runtime, and price requirements of organizations
+
+and individuals. The SQL Server components that you install also depend on your specific
+
+requirements. The following sections help you understand how to make the best choice among
+
+the editions and components available in SQL Server.
+
+For the latest release notes and what's new information, see
+
+Release notes for SQL Server 2025
+
+on Linux
+
+.
+
+For a list of SQL Server features not available on Linux, see
+
+Unsupported features and services
+
+.
+
+The following table describes the editions of SQL Server on Linux and containers.
+
+The premier offering, SQL Server Enterprise edition is built
+
+for organizations demanding uncompromising performance,
+
+security, and scalability. This edition is both an AI-powered
+
+database and a mission-critical engine designed to power
+
+SQL Server editions
+
+ﾉ
+
+Expand table
+
+1
+
+```cmd
+MSSQL_PID
+Enterprise
+```
