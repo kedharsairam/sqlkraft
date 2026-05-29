@@ -1,8 +1,8 @@
 ---
-title: sys.dm_exec_query_plan
-name: sys.dm_exec_query_plan
-category: execution
-description:
+name: 'sys.dm_exec_query_plan'
+title: 'sys.dm_exec_query_plan'
+category: 'execution'
+description: 'dynamic management view. The plan handles are'
 pubDate: 2026-05-29
 ---
 
@@ -40,8 +40,6 @@ sys.dm_exec_query_plan (Transact-SQL)
 
 Last updated on 11/18/2025
 
-## Applies to:
-
 ## sys.dm_exec_query_stats
 
 SQL Server
@@ -52,8 +50,8 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-## Returns aggregate performance statistics for cached triggers. The view contains one row per
 
+## Returns aggregate performance statistics for cached triggers. The view contains one row per
 trigger, and the lifetime of the row is as long as the trigger remains cached. When a trigger is
 
 removed from the cache, the corresponding row is eliminated from this view. At that time, a
@@ -76,8 +74,8 @@ TA = Assembly (CLR) trigger
 
 TR = SQL trigger
 
-Description of the object type:
 
+## Description of the object type:
 CLR_TRIGGER
 
 SQL_TRIGGER

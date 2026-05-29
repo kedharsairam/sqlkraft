@@ -1,8 +1,8 @@
 ---
-title: sys.dm_tran_database_transactions
-name: sys.dm_tran_database_transactions
-category: execution
-description:
+name: 'sys.dm_tran_database_transactions'
+title: 'sys.dm_tran_database_transactions'
+category: 'execution'
+description: 'The following example returns information that associates a'
 pubDate: 2026-05-29
 ---
 
@@ -29,8 +29,6 @@ Transaction Related Dynamic Management Views and Functions (Transact-SQL)
 SQL Server, Locks object
 
 Last updated on 11/18/2025
-
-## Applies to:
 
 SQL Server
 

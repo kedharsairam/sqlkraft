@@ -1,8 +1,8 @@
 ---
-title: sys.dm_io_cluster_shared_drives
-name: sys.dm_io_cluster_shared_drives
-category: execution
-description:
+name: 'sys.dm_io_cluster_shared_drives'
+title: 'sys.dm_io_cluster_shared_drives'
+category: 'execution'
+description: 'The user must have VIEW SERVER STATE permission for the SQL Server instance.'
 pubDate: 2026-05-29
 ---
 
@@ -18,7 +18,7 @@ This is the result set:
 
 DriveName
 
----
+---------
 
 m
 
@@ -36,10 +36,6 @@ This view will be deprecated in a future release. We recommend that you use
 
 instead.
 
-## Applies to:
-
-## Note
-
 ## sys.dm_pdw_nodes_io_pending_io_requests
 
 SQL Server
@@ -56,8 +52,8 @@ SQL database in Microsoft
 
 Fabric
 
-## Returns a row for each pending I/O request in SQL Server.
 
+## Returns a row for each pending I/O request in SQL Server.
 Memory address of the IO request. Is not nullable.
 
 Type of pending I/O request. Is not nullable.

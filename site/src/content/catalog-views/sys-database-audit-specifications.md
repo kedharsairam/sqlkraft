@@ -1,0 +1,134 @@
+---
+name: 'sys.database_audit_specifications'
+title: 'sys.database_audit_specifications (Transact-'
+category: 'objects'
+description: 'This article contains information about the database audit specifications in a SQL Server audit'
+tags: ["catalog-view", "objects"]
+pubDate: 2026-05-29
+---
+
+SQL)
+
+Article
+
+•
+
+04/15/2024
+
+Applies to:
+
+SQL Server
+
+This article contains information about the database audit specifications in a SQL Server audit
+
+on a server instance. For more information, see
+
+SQL Server Audit (Database Engine)
+
+.
+
+
+## Description
+Name
+
+Name of the auditing specification.
+
+database_specification_id
+
+ID of the database specification.
+
+create_date
+
+Date the audit specification was created.
+
+modify_date
+
+Date the audit specification was last modified.
+
+audit_guid
+
+GUID for the audit that contains this specification. Used
+
+during enumeration of member database audit
+
+specifications during database attach/startup.
+
+is_state_enabled
+
+Audit specification state:
+
+0 - DISABLED
+
+1 - ENABLED
+
+If a database is in ready-only mode, the SQL Server Audit feature can't add Database Audit
+
+Specifications.
+
+Principals with the
+
+or
+
+
+## permissions, the dbo
+role, and members of the db_owners fixed database role have access to this catalog view. In
+
+addition, the principal must not be denied
+
+permission.
+
+The visibility of the metadata in catalog views is limited to securables that a user either owns,
+
+or on which the user was granted some permission. For more information, see
+
+Metadata
+
+ﾉ
+
+Expand table
+
+Visibility Configuration
+
+.
+
+CREATE SERVER AUDIT (Transact-SQL)
+
+ALTER SERVER AUDIT (Transact-SQL)
+
+DROP SERVER AUDIT (Transact-SQL)
+
+CREATE SERVER AUDIT SPECIFICATION (Transact-SQL)
+
+ALTER SERVER AUDIT SPECIFICATION (Transact-SQL)
+
+DROP SERVER AUDIT SPECIFICATION (Transact-SQL)
+
+CREATE DATABASE AUDIT SPECIFICATION (Transact-SQL)
+
+ALTER DATABASE AUDIT SPECIFICATION (Transact-SQL)
+
+DROP DATABASE AUDIT SPECIFICATION (Transact-SQL)
+
+ALTER AUTHORIZATION (Transact-SQL)
+
+sys.fn_get_audit_file (Transact-SQL)
+
+sys.server_audits (Transact-SQL)
+
+sys.server_file_audits (Transact-SQL)
+
+sys.server_audit_specifications (Transact-SQL)
+
+sys.server_audit_specification_details (Transact-SQL)
+
+sys.database_audit_specification_details (Transact-SQL)
+
+sys.dm_server_audit_status (Transact-SQL)
+
+sys.dm_audit_actions (Transact-SQL)
+
+sys.dm_audit_class_type_map (Transact-SQL)
+
+Create a Server Audit and Server Audit Specification
+
+See also

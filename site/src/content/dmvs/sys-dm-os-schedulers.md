@@ -1,8 +1,8 @@
 ---
-title: sys.dm_os_schedulers
-name: sys.dm_os_schedulers
-category: execution
-description:
+name: 'sys.dm_os_schedulers'
+title: 'sys.dm_os_schedulers'
+category: 'execution'
+description: 'ID of the parent scheduler. This is a handle to the scheduler'
 pubDate: 2026-05-29
 ---
 

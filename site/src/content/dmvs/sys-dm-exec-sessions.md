@@ -1,8 +1,8 @@
 ---
-title: sys.dm_exec_sessions
-name: sys.dm_exec_sessions
-category: execution
-description:
+name: 'sys.dm_exec_sessions'
+title: 'sys.dm_exec_sessions'
+category: 'execution'
+description: 'On SQL Database, if the user is the database owner, the user will see all executing sessions on'
 pubDate: 2026-05-29
 ---
 
@@ -54,11 +54,7 @@ DBCC INPUTBUFFER (Transact-SQL)
 
 Last updated on 11/18/2025
 
-## Applies to:
-
 ## varbinary(64)
-
-## Note
 
 ## sys.syscacheobjects
 
@@ -72,14 +68,14 @@ SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-## Returns one row per plan attribute for the plan specified by the plan handle. You can use this
 
+## Returns one row per plan attribute for the plan specified by the plan handle. You can use this
 table-valued function to get details about a particular plan, such as the cache key values or the
 
 number of current simultaneous executions of the plan.
 
-syntaxsql
 
+## syntaxsql
 plan_handle
 
 Uniquely identifies a query plan for a batch that has executed and whose plan resides in the
@@ -102,8 +98,8 @@ Name of the attribute associated with this plan. The table immediately
 
 below this one lists the possible attributes, their data types, and their
 
-descriptions.
 
+## descriptions.
 value
 
 Value of the attribute that is associated with this plan.
@@ -115,8 +111,6 @@ Some of the information returned through this function maps to the
 backward compatibility view.
 
 ﾉ
-
-## attribute
 
 is_cache_key
 

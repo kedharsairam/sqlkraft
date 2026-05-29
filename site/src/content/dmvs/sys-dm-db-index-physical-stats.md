@@ -1,8 +1,8 @@
 ---
-title: sys.dm_db_index_physical_stats
-name: sys.dm_db_index_physical_stats
-category: execution
-description:
+name: 'sys.dm_db_index_physical_stats'
+title: 'sys.dm_db_index_physical_stats'
+category: 'execution'
+description: 'representation of the global dictionary. This provides an inverse'
 pubDate: 2026-05-29
 ---
 
@@ -78,8 +78,6 @@ Columnstore indexes: Overview
 
 Last updated on 11/18/2025
 
-## Applies to:
-
 SQL Server 2016 (13.x) and later versions
 
 Azure SQL Database
@@ -90,8 +88,8 @@ SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-## Returns current row-level I/O, locking, and access method activity for compressed rowgroups
 
+## Returns current row-level I/O, locking, and access method activity for compressed rowgroups
 in a columnstore index. Use
 
 to track the
@@ -165,10 +163,6 @@ Identified for informational purposes only. Not
 supported. Future compatibility is not guaranteed.
 
 ﾉ
-
-## Note
-
-## SQL
 
 ## Server and Azure SQL index architecture and design guide
 
@@ -264,16 +258,16 @@ allows all objects in the database to be returned,
 
 regardless of any
 
-permissions denied on specific objects.
 
+## permissions denied on specific objects.
 Denying
 
 disallows all objects in the database to be
 
 returned, regardless of any
 
-permissions granted on specific objects. Also, when the
 
+## permissions granted on specific objects. Also, when the
 database wildcard
 
 is specified, the database is omitted.
@@ -303,8 +297,6 @@ sys.allocation_units (Transact-SQL)
 sys.indexes (Transact-SQL)
 
 Last updated on 12/17/2025
-
-## Applies to:
 
 SQL Server 2016 (13.x) and later versions
 
@@ -368,8 +360,8 @@ is the only state that applies to in-
 
 memory tables.
 
-Description of the row group state:
 
+## Description of the row group state:
 -
 
 - A row group that is being built.
@@ -488,8 +480,8 @@ to have less than the maximum number of rows.
 
 -
 
-Description of
 
+## Description of
 .
 
 -
@@ -712,8 +704,8 @@ Clock time for when this rowgroup was closed.
 
 table.
 
-## Returns one row for each rowgroup in the current database.
 
+## Returns one row for each rowgroup in the current database.
 ```sql
 VIEW SERVER STATE
 ```

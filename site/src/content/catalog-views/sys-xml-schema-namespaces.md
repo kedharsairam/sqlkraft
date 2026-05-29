@@ -1,0 +1,64 @@
+---
+name: 'sys.xml_schema_namespaces'
+title: 'sys.xml_schema_namespaces (Transact-'
+category: 'xml'
+description: 'Returns a row per XSD-defined XML namespace. The following tuples are unique:'
+tags: ["catalog-view", "xml"]
+pubDate: 2026-05-29
+---
+
+SQL)
+
+Article
+
+•
+
+02/28/2023
+
+Applies to:
+
+SQL Server
+
+
+## Returns a row per XSD-defined XML namespace. The following tuples are unique:
+,
+
+, and
+
+, and
+
+.
+
+
+## Description
+ID of the XML schema collection that contains this namespace.
+
+Name of XML namespace. Blank
+
+indicates no target
+
+namespace.
+
+1-based ordinal that uniquely identifies the XML namespace in
+
+the database.
+
+The visibility of the metadata in catalog views is limited to securables that a user either owns,
+
+or on which the user was granted some permission. For more information, see
+
+Metadata
+
+Visibility Configuration
+
+.
+
+Catalog Views (Transact-SQL)
+
+XML Schemas (XML Type System) Catalog Views (Transact-SQL)
+
+ﾉ
+
+Expand table
+
+See Also

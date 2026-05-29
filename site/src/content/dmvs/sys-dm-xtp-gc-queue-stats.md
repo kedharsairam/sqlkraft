@@ -1,8 +1,8 @@
 ---
-title: sys.dm_xtp_gc_queue_stats
-name: sys.dm_xtp_gc_queue_stats
-category: execution
-description:
+name: 'sys.dm_xtp_gc_queue_stats'
+title: 'sys.dm_xtp_gc_queue_stats'
+category: 'execution'
+description: 'Azure SQL Managed Instance'
 pubDate: 2026-05-29
 ---
 
@@ -70,8 +70,6 @@ direct documentation. In the area of memory-optimized tables, undocumented DMVs 
 
 the following:
 
-## Applies to:
-
 Article
 
 •
@@ -84,12 +82,12 @@ Azure SQL Database
 
 Azure SQL Managed Instance
 
-## Returns statistics about the In-Memory OLTP checkpoint operations in the current database. If
 
+## Returns statistics about the In-Memory OLTP checkpoint operations in the current database. If
 the database has no In-Memory OLTP objects,
 
-returns an
 
+## returns an
 empty result set.
 
 For more information, see
@@ -299,12 +297,6 @@ In-Memory OLTP Overview and Usage Scenarios
 Optimize performance by using in-memory technologies in Azure SQL Database
 
 Optimize performance by using in-memory technologies in Azure SQL Managed Instance
-
-## Applies to:
-
-## SQL Server 2016 (13.x)
-
-## Note
 
 ## CHECKPOINT (Transact-SQL)
 
@@ -549,8 +541,6 @@ operational correctness of the database with memory-
 optimized table. For example, to recover from a durable
 
 checkpoint to go back in time.
-
-## SQL Server
 
 ## 2014 (12.x)
 

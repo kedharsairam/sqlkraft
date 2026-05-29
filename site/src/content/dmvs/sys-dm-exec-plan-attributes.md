@@ -1,8 +1,8 @@
 ---
-title: sys.dm_exec_plan_attributes
-name: sys.dm_exec_plan_attributes
-category: execution
-description:
+name: 'sys.dm_exec_plan_attributes'
+title: 'sys.dm_exec_plan_attributes'
+category: 'execution'
+description: 'The following example returns the'
 pubDate: 2026-05-29
 ---
 
@@ -66,10 +66,10 @@ SQL Server 2016 (13.x) and later
 
 Azure SQL Managed Instance
 
+
 ## Returns errors that occur on PolyBase compute nodes.
 
-Description
-
+## Description
 error_id
 
 Unique numeric id
@@ -86,8 +86,8 @@ source
 
 Source thread or process
 
-description
 
+## description
 type
 
 Type of error.
@@ -172,8 +172,8 @@ Holds additional information about the performance and status of all PolyBase no
 
 row per node.
 
-Description
 
+## Description
 compute_node_id
 
 Unique numeric
@@ -262,8 +262,8 @@ milliseconds), it will cause materialization
 
 Expand table
 
-Description
 
+## Description
 failure due to overflow.The maximum value in
 
 milliseconds is equivalent to 24.8 days.
@@ -338,8 +338,8 @@ Use this DMV to see the list of all nodes in the scale-out cluster with their ro
 
 address.
 
-Description
 
+## Description
 compute_node_id
 
 Unique numeric id associated with
@@ -402,8 +402,8 @@ Microsoft Fabric
 
 SQL database in Microsoft Fabric
 
-## Returns information about the connections established to this instance of the database engine
 
+## Returns information about the connections established to this instance of the database engine
 and the details of each connection. Returns server wide connection information for SQL Server
 
 and Azure SQL Managed Instance. Returns connection information for the current database in
@@ -416,8 +416,8 @@ elastic pools
 
 in Azure SQL Database.
 
-Description
 
+## Description
 session_id
 
 Identifies the session associated with this connection. Is
@@ -484,8 +484,8 @@ or Microsoft Fabric use
 
 Expand table
 
-Description
 
+## Description
 endpoint_id
 
 An identifier that describes what type of connection it is.
@@ -592,8 +592,8 @@ if it were a connection using the TCP transport. Is nullable.
 
 ## elastic pools
 
-Description
 
+## Description
 In Azure SQL Database, this column always returns NULL.
 
 connection_id
@@ -662,8 +662,8 @@ server role is required.
 
 Requires VIEW SERVER PERFORMANCE STATE permission on the server.
 
-## Permissions for SQL Server 2022 and later
 
+## Permissions for SQL Server 2022 and later
 sys.dm_exec_sessions
 
 .

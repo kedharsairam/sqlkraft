@@ -1,8 +1,8 @@
 ---
-title: sys.dm_db_missing_index_group_stats_query
-name: sys.dm_db_missing_index_group_stats_query
-category: execution
-description:
+name: 'sys.dm_db_missing_index_group_stats_query'
+title: 'sys.dm_db_missing_index_group_stats_query'
+category: 'execution'
+description: 'One missing index group may have several queries that needed the same index. For more'
 pubDate: 2026-05-29
 ---
 
@@ -86,8 +86,6 @@ sys.dm_os_sys_info (Transact-SQL)
 
 Last updated on 11/18/2025
 
-## Applies to:
-
 SQL Server 2019 (15.x) and later versions
 
 Azure SQL Database
@@ -98,8 +96,8 @@ SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-## Returns information about queries that needed a missing index from groups of missing
 
+## Returns information about queries that needed a missing index from groups of missing
 indexes, excluding spatial indexes. More than one query might be returned per missing index
 
 group. One missing index group might have several queries that needed the same index.
@@ -208,8 +206,8 @@ sys.query_store_query_text
 
 .
 
-## Returns
 
+## Returns
 if Query Store wasn't enabled when the query
 
 was compiled.

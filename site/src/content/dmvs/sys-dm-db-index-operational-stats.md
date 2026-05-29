@@ -1,8 +1,8 @@
 ---
-title: sys.dm_db_index_operational_stats
-name: sys.dm_db_index_operational_stats
-category: execution
-description:
+name: 'sys.dm_db_index_operational_stats'
+title: 'sys.dm_db_index_operational_stats'
+category: 'execution'
+description: 'SQL Server 2016 (13.x) and later versions'
 pubDate: 2026-05-29
 ---
 
@@ -26,13 +26,7 @@ Transact-SQL reference (Database Engine)
 
 Last updated on 03/19/2026
 
-## Applies to:
-
-## Note
-
 ## sys.dm_db_xtp_index_stats (Transact-SQL)
-
-## Note
 
 SQL Server
 
@@ -48,8 +42,8 @@ SQL database in Microsoft
 
 Fabric
 
-## Returns counts of different types of index operations and the time each type of operation was
 
+## Returns counts of different types of index operations and the time each type of operation was
 last performed.
 
 In Azure SQL Database, dynamic management views cannot expose information that would

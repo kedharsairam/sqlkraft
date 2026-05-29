@@ -1,14 +1,10 @@
 ---
-title: sys.dm_os_memory_clerks
-name: sys.dm_os_memory_clerks
-category: execution
-description:
+name: 'sys.dm_os_memory_clerks'
+title: 'sys.dm_os_memory_clerks'
+category: 'execution'
+description: '## sys.dm_pdw_nodes_os_hosts'
 pubDate: 2026-05-29
 ---
-
-## Applies to:
-
-## Note
 
 ## sys.dm_pdw_nodes_os_hosts
 
@@ -28,8 +24,8 @@ Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
-## Returns all the hosts currently registered in an instance of SQL Server. This view also returns the
 
+## Returns all the hosts currently registered in an instance of SQL Server. This view also returns the
 resources that are used by these hosts.
 
 Internal memory address of the host object.
@@ -178,8 +174,6 @@ SQL Server Operating System Related Dynamic Management Views (Transact-SQL)
 
 ﾉ
 
-## Applies to:
-
 ## Basic
 
 ## S0
@@ -187,8 +181,6 @@ SQL Server Operating System Related Dynamic Management Views (Transact-SQL)
 ## S1
 
 ## elastic pools
-
-## Note
 
 ## sys.dm_pdw_nodes_os_latch_stats
 
@@ -206,8 +198,8 @@ SQL database in Microsoft
 
 Fabric
 
-## Returns information about all latch waits organized by class.
 
+## Returns information about all latch waits organized by class.
 latch_class
 
 Name of the latch class.

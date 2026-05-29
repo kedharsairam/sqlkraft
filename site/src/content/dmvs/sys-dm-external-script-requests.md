@@ -1,8 +1,8 @@
 ---
-title: sys.dm_external_script_requests
-name: sys.dm_external_script_requests
-category: execution
-description:
+name: 'sys.dm_external_script_requests'
+title: 'sys.dm_external_script_requests'
+category: 'execution'
+description: 'Registration of these functions is performed when the feature is installed, and registered'
 pubDate: 2026-05-29
 ---
 
@@ -30,10 +30,6 @@ sys.dm_external_script_requests
 
 sp_execute_external_script (Transact-SQL)
 
-## Applies to:
-
-## Note
-
 ## Machine
 
 ## Learning Services (R, Python) in SQL Server 2017 and later
@@ -43,8 +39,6 @@ sp_execute_external_script (Transact-SQL)
 ## 2016
 
 ## Machine Learning Services in Azure SQL Managed Instance
-
-## Note
 
 ```sql
 SELECT

@@ -1,8 +1,8 @@
 ---
-title: sys.dm_db_stats_properties
-name: sys.dm_db_stats_properties
-category: execution
-description:
+name: 'sys.dm_db_stats_properties'
+title: 'sys.dm_db_stats_properties'
+category: 'execution'
+description: 'The following example selects from table'
 pubDate: 2026-05-29
 ---
 
@@ -30,8 +30,6 @@ sys.dm_db_stats_properties (Transact-SQL)
 
 Last updated on 11/18/2025
 
-## Applies to:
-
 ## int
 
 ## int
@@ -44,8 +42,8 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-## Returns properties of statistics for the specified database object (table or indexed view) in the
 
+## Returns properties of statistics for the specified database object (table or indexed view) in the
 current SQL Server database. For partitioned tables, see the similar
 
 sys.dm_db_incremental_stats_properties
@@ -104,8 +102,8 @@ Date and time the statistics object was last updated. For more
 
 information, see the
 
-## Remarks
 
+## Remarks
 section in this page.
 
 rows
@@ -178,8 +176,8 @@ no persisted sample percentage is set for this statistic.
 
 SQL Server 2016 (13.x) SP1 CU4
 
-returns an empty rowset under any of the following conditions:
 
+## returns an empty rowset under any of the following conditions:
 or
 
 is NULL.

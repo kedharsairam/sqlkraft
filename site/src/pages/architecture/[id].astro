@@ -1,0 +1,298 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("architecture");
+  return entries.map((entry) => ({
+    params: { id: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const { title, topic, description, tags } = entry.data;
+---
+
+<BaseLayout title={`${title} — Architecture Guide`} description={description}>
+  <nav class="breadcrumb">
+    <a href="/sqlkraft/">&larr; Home</a>
+    <span class="sep">/</span>
+    <a href="/sqlkraft/architecture/">Architecture</a>
+    <span class="sep">/</span>
+    <span>{title}</span>
+  </nav>
+
+  <div class="detail-layout">
+    <!-- Sidebar TOC -->
+    <aside class="toc-sidebar">
+      <h3 class="toc-title">In this guide</h3>
+      <ul class="toc-list" id="tocList">
+        <li>Loading...</li>
+      </ul>
+      <div class="topic-section">
+        <span class="topic-label">Topic</span>
+        <span class="topic-value">{topic.replace(/-/g, " ")}</span>
+      </div>
+      <div class="tag-strip-vertical">
+        {tags.map((tag) => <span class="tag-pill">#{tag}</span>)}
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="doc-content">
+      <h1 class="doc-title">{title}</h1>
+      {description && <p class="doc-lede">{description}</p>}
+
+      <div class="body-content" id="docBody">
+        <Content />
+      </div>
+
+      <nav class="detail-footer">
+        <a href="/sqlkraft/architecture/">&larr; Back to architecture</a>
+      </nav>
+    </main>
+  </div>
+</BaseLayout>
+
+<script>
+  // Build client-side TOC from doc body headings
+  document.addEventListener("DOMContentLoaded", () => {
+    const body = document.getElementById("docBody");
+    const tocList = document.getElementById("tocList");
+    if (!body || !tocList) return;
+
+    const headings = body.querySelectorAll("h2, h3");
+    if (headings.length === 0) {
+      tocList.innerHTML = "<li class='toc-empty'>No sections</li>";
+      return;
+    }
+
+    tocList.innerHTML = "";
+    headings.forEach((h, i) => {
+      const id = `section-${i}`;
+      h.id = id;
+      const li = document.createElement("li");
+      li.className = `toc-item toc-level-${h.tagName.toLowerCase()}`;
+      const a = document.createElement("a");
+      a.href = `#${id}`;
+      a.textContent = h.textContent.slice(0, 60);
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+  });
+</script>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+  }
+  .breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb .sep {
+    color: var(--border-glass);
+  }
+
+  .detail-layout {
+    display: flex;
+    gap: 32px;
+  }
+  .toc-sidebar {
+    width: 240px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+  }
+  .toc-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+  }
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px;
+  }
+  .toc-item {
+    margin-bottom: 4px;
+  }
+  .toc-item a {
+    font-size: 12px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    line-height: 1.6;
+    display: block;
+    padding: 2px 0;
+  }
+  .toc-item a:hover {
+    color: var(--accent);
+  }
+  .toc-level-h3 {
+    padding-left: 12px;
+  }
+  .toc-level-h3 a {
+    font-size: 11px;
+  }
+  .toc-empty {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+  .topic-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-glass);
+  }
+  .topic-label {
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+  }
+  .topic-value {
+    font-size: 12px;
+    color: var(--text-primary);
+    text-transform: capitalize;
+  }
+  .tag-strip-vertical {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .tag-pill {
+    font-size: 10px;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+  }
+
+  .doc-content {
+    flex: 1;
+    min-width: 0;
+  }
+  .doc-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+  }
+  .doc-lede {
+    font-size: 15px;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-glass);
+  }
+
+  .body-content {
+    line-height: 1.8;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+  .body-content h2 {
+    font-size: 20px;
+    color: var(--text-primary);
+    margin: 32px 0 12px;
+    font-weight: 600;
+    scroll-margin-top: 80px;
+  }
+  .body-content h3 {
+    font-size: 16px;
+    color: var(--text-primary);
+    margin: 24px 0 10px;
+    font-weight: 600;
+    scroll-margin-top: 80px;
+  }
+  .body-content p {
+    margin-bottom: 14px;
+  }
+  .body-content ul,
+  .body-content ol {
+    margin-bottom: 14px;
+    padding-left: 20px;
+  }
+  .body-content li {
+    margin-bottom: 6px;
+  }
+  .body-content pre {
+    background: #0d1117;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 16px;
+  }
+  .body-content code {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: #e6edf3;
+  }
+  .body-content :not(pre) > code {
+    color: var(--accent);
+    background: rgba(47, 128, 237, 0.1);
+    padding: 1px 6px;
+    border-radius: 3px;
+  }
+  .body-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+  .body-content th {
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 2px solid var(--border-glass);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  .body-content td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border-glass);
+  }
+
+  .detail-footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-glass);
+    font-size: 13px;
+  }
+  .detail-footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .detail-footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 900px) {
+    .detail-layout {
+      flex-direction: column;
+    }
+    .toc-sidebar {
+      width: 100%;
+      position: static;
+    }
+  }
+</style>

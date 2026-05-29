@@ -1,0 +1,216 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("errors");
+  return entries.map((entry) => ({
+    params: { id: `error-${entry.data.name}` },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const { name, title, errorNumber, severity, category, description, tags } = entry.data;
+
+const SEVERITY_COLORS = {
+  critical: "#e74c3c",
+  high: "#ff6b6b",
+  medium: "#f39c12",
+  low: "#3498db",
+  info: "#6272a4",
+};
+const sevColor = SEVERITY_COLORS[severity] || "#6272a4";
+---
+
+<BaseLayout title={title} description={description}>
+  <nav class="breadcrumb">
+    <a href="/sqlkraft/">&larr; Home</a>
+    <span class="sep">/</span>
+    <a href="/sqlkraft/errors/">Errors</a>
+    <span class="sep">/</span>
+    <span>{title}</span>
+  </nav>
+
+  <div class="detail-header">
+    <h1 class="detail-title">
+      <span class="error-num">#{name}</span>
+      <span class="title-text">{title}</span>
+    </h1>
+    <div class="badge-strip">
+      <span
+        class="badge sev-badge"
+        style={`background: ${sevColor}20; color: ${sevColor}; border-color: ${sevColor}40;`}
+      >
+        {severity.toUpperCase()}
+      </span>
+      <span class="badge cat-pill">{category}</span>
+    </div>
+  </div>
+
+  <div class="tag-strip">
+    {tags.map((tag) => <span class="tag-pill">#{tag}</span>)}
+  </div>
+
+  <div class="body-content">
+    <Content />
+  </div>
+
+  <nav class="detail-footer">
+    <a href="/sqlkraft/errors/">&larr; Back to all errors</a>
+  </nav>
+</BaseLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+  }
+  .breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb .sep {
+    color: var(--border-glass);
+  }
+  .detail-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+  }
+  .detail-title {
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .error-num {
+    font-family: var(--font-mono);
+    color: var(--accent);
+  }
+  .title-text {
+    color: var(--text-primary);
+  }
+  .badge-strip {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+  }
+  .sev-badge {
+    border: 1px solid;
+  }
+  .cat-pill {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-secondary);
+  }
+  .tag-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+  .tag-pill {
+    font-size: 12px;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+  }
+  .body-content {
+    line-height: 1.8;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+  .body-content h2 {
+    font-size: 20px;
+    color: var(--text-primary);
+    margin: 32px 0 12px;
+    font-weight: 600;
+  }
+  .body-content h3 {
+    font-size: 16px;
+    color: var(--text-primary);
+    margin: 24px 0 10px;
+    font-weight: 600;
+  }
+  .body-content p {
+    margin-bottom: 14px;
+  }
+  .body-content ul,
+  .body-content ol {
+    margin-bottom: 14px;
+    padding-left: 20px;
+  }
+  .body-content li {
+    margin-bottom: 6px;
+  }
+  .body-content pre {
+    background: #0d1117;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 16px;
+  }
+  .body-content code {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: #e6edf3;
+  }
+  .body-content :not(pre) > code {
+    color: var(--accent);
+    background: rgba(47, 128, 237, 0.1);
+    padding: 1px 6px;
+    border-radius: 3px;
+  }
+  .body-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+  .body-content th {
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 2px solid var(--border-glass);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  .body-content td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border-glass);
+  }
+  .detail-footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-glass);
+    font-size: 13px;
+  }
+  .detail-footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .detail-footer a:hover {
+    text-decoration: underline;
+  }
+</style>

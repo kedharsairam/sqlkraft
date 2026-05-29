@@ -1,9 +1,8 @@
 ---
-title: sys.dm_db_file_space_usage
-name: sys.dm_db_file_space_usage
-category: execution
-description: Returns space usage information for database files including data and log file allocation.
-tags: [space-usage, storage, files]
+name: 'sys.dm_db_file_space_usage'
+title: 'sys.dm_db_file_space_usage'
+category: 'execution'
+description: 'permission on the database, or membership in the'
 pubDate: 2026-05-29
 ---
 
@@ -34,8 +33,6 @@ sys.dm_db_log_info (Transact-SQL)
 sys.dm_db_log_stats (Transact-SQL)
 
 Last updated on 11/18/2025
-
-## Applies to:
 
 ## int
 

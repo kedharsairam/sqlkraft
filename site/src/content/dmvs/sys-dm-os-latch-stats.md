@@ -1,12 +1,10 @@
 ---
-title: sys.dm_os_latch_stats
-name: sys.dm_os_latch_stats
-category: execution
-description:
+name: 'sys.dm_os_latch_stats'
+title: 'sys.dm_os_latch_stats'
+category: 'execution'
+description: 'permission on the database, or membership in the'
 pubDate: 2026-05-29
 ---
-
-## Note
 
 either the
 
@@ -53,8 +51,6 @@ particular class can exist at any point in time in an instance of SQL Server.
 These statistics are not persisted if SQL Server is restarted. All data is cumulative since the
 
 last time the statistics were reset, or since SQL Server was started.
-
-## Note
 
 The following table contains brief descriptions of the various latch classes.
 
@@ -650,10 +646,6 @@ UTILITY_LOCK_INFORMATION
 
 Internal use only.
 
-## Note
-
-## SQL
-
 ## Server and Azure SQL index architecture and design guide
 
 VERSIONING_TRANSACTION
@@ -698,10 +690,6 @@ indexes or indexes on memory-optimized tables. For more information, see the
 
 .
 
-## Applies to:
-
-## Note
-
 ## sys.dm_pdw_nodes_os_loaded_modules
 
 Article
@@ -714,8 +702,8 @@ SQL Server
 
 Analytics Platform System (PDW)
 
-## Returns a row for each module loaded into the server address space.
 
+## Returns a row for each module loaded into the server address space.
 Address of the module in the process.
 
 Version of the file. Appears in the following format:
@@ -740,8 +728,8 @@ Language of version information of the module.
 
 Name of company that created the module.
 
-Description of the module.
 
+## Description of the module.
 Name of module. Includes the full path of the module.
 
 : Analytics Platform System (PDW)

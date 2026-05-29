@@ -1,0 +1,153 @@
+---
+name: 'sys.columns'
+title: 'sys.columns'
+category: 'objects'
+description: '## Get column details for a table'
+tags: ["catalog-view", "objects"]
+pubDate: 2026-05-29
+---
+
+## Get column details for a table
+
+
+## Description
+: SQL Server 2022 (16.x) and later
+
+versions, and SQL Database
+
+Indicates how many dimensions the vector has.
+
+: SQL Server 2025 (17.x) and later
+
+versions, and SQL Database
+
+Indicates the data type used to store vector
+
+dimensions values.
+
+= 32-bit (single-precision) float
+
+= 16-bit (half-precision) float
+
+: SQL Server 2025 (17.x) and later
+
+versions, and SQL Database
+
+Contains the textual description of the data type
+
+used to store vector dimensions values.
+
+: SQL Server 2025 (17.x) and later
+
+versions, and SQL Database
+
+For more information, see
+
+Half-precision floating-point format
+
+.
+
+The visibility of the metadata in catalog views is limited to securables that a user either owns,
+
+or on which the user was granted some permission. For more information, see
+
+Metadata
+
+visibility configuration
+
+.
+
+To get metadata for columns in a table, use the following code:
+
+SQL
+
+1
+
+1
+
+Object catalog views (Transact-SQL)
+
+System catalog views (Transact-SQL)
+
+Querying the SQL Server System Catalog FAQ
+
+sys.all_columns (Transact-SQL)
+
+sys.system_columns (Transact-SQL)
+
+sys.types (Transact-SQL)
+
+Last updated on 11/28/2025
+
+Related content
+
+```sql
+vector_dimensions
+```
+
+```sql
+vector_base_type
+```
+
+```sql
+0
+```
+
+```sql
+1
+```
+
+```sql
+vector_base_type_desc
+```
+
+```sql
+CREATE
+TABLE
+dbo.[
+sample
+]
+(
+id
+INT
+NOT
+NULL
+,
+col1 VARBINARY (10)
+NULL
+);
+```
+
+```sql
+SELECT
+c.[
+name
+]
+AS
+column_name,
+t.[
+name
+]
+AS
+[type_name],
+c.[max_length],
+c.[
+precision
+],
+c.[scale]
+FROM
+sys.columns
+AS
+c
+INNER
+JOIN
+sys.types
+AS
+t
+ON
+c.user_type_id = t.user_type_id
+WHERE
+object_id = object_id(
+'dbo.sample'
+);
+```

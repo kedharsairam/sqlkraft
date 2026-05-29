@@ -1,8 +1,8 @@
 ---
-title: sys.dm_db_missing_index_columns
-name: sys.dm_db_missing_index_columns
-category: execution
-description:
+name: 'sys.dm_db_missing_index_columns'
+title: 'sys.dm_db_missing_index_columns'
+category: 'execution'
+description: 'Requires VIEW SERVER PERFORMANCE STATE permission on the server, for SQL Server 2022'
 pubDate: 2026-05-29
 ---
 
@@ -40,8 +40,6 @@ Monitor performance by using the Query Store
 
 Last updated on 11/18/2025
 
-## Applies to:
-
 Article
 
 •
@@ -66,13 +64,7 @@ Dynamic Management Views and Functions (Transact-SQL)
 
 System Views (Transact-SQL)
 
-## Applies to:
-
-## Note
-
 ## sys.dm_pdw_nodes_io_cluster_shared_drives
-
-## Note
 
 Article
 

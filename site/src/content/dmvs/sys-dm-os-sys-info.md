@@ -1,8 +1,8 @@
 ---
-title: sys.dm_os_sys_info
-name: sys.dm_os_sys_info
-category: execution
-description:
+name: 'sys.dm_os_sys_info'
+title: 'sys.dm_os_sys_info'
+category: 'execution'
+description: 'base value is the performance counter'
 pubDate: 2026-05-29
 ---
 
@@ -72,15 +72,11 @@ sys.dm_os_sys_info (Transact-SQL)
 
 Last updated on 11/18/2025
 
-## Applies to:
-
 ## total_virtual_address_space_reserved_kb
 
 ## virtual_memory_in_bytes
 
 ## sys.dm_os_sys_info
-
-## Note
 
 ## sys.dm_pdw_nodes_os_process_memory
 

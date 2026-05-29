@@ -1,8 +1,8 @@
 ---
-title: sys.dm_exec_sql_text
-name: sys.dm_exec_sql_text
-category: execution
-description:
+name: 'sys.dm_exec_sql_text'
+title: 'sys.dm_exec_sql_text'
+category: 'execution'
+description: 'In SQL Database, dynamic management views cannot expose information that would impact'
 pubDate: 2026-05-29
 ---
 
@@ -68,8 +68,6 @@ sys.dm_exec_cached_plans (Transact-SQL)
 
 Last updated on 11/18/2025
 
-## Applies to:
-
 ## sp_xml_preparedocument
 
 Article
@@ -82,8 +80,8 @@ SQL Server
 
 Azure SQL Managed Instance
 
-## Returns information about active handles that have been opened by
 
+## Returns information about active handles that have been opened by
 .
 
 session_id
@@ -123,8 +121,6 @@ Handle to the text of the SQL code where
 the handle has been defined.
 
 ﾉ
-
-## sql_handles
 
 ## sp_xml_preparedocument
 

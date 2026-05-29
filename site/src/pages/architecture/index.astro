@@ -1,0 +1,172 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+const allArch = await getCollection("architecture");
+const sorted = allArch.sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<BaseLayout
+  title="Database Engine Architecture"
+  description="Deep technical guides on SQL Server internals — query processing, memory management, locking, I/O, and more."
+>
+  <nav class="breadcrumb">
+    <a href="/sqlkraft/">&larr; Home</a>
+    <span class="sep">/</span>
+    <span>Architecture & Internals</span>
+  </nav>
+
+  <header class="page-header">
+    <h1>Architecture &amp; Internals ({sorted.length})</h1>
+    <p class="page-desc">
+      In-depth technical narratives covering SQL Server's internal architecture — query processing,
+      index structures, memory management, locking and deadlocking, thread and task scheduling, I/O
+      fundamentals, and transaction log architecture.
+    </p>
+  </header>
+
+  <div class="topic-sections">
+    {
+      [
+        "query-processing",
+        "index-architecture",
+        "memory-management",
+        "locking",
+        "deadlocks",
+        "thread-task",
+        "io-fundamentals",
+        "transaction-log",
+        "latch-contention",
+        "spinlock-contention",
+      ].map((topic) => {
+        const entries = sorted.filter((e) => e.data.topic === topic);
+        if (entries.length === 0) return null;
+        return (
+          <div class="topic-block">
+            <h2 class="topic-title">
+              {topic.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
+            </h2>
+            <div class="arch-card-grid">
+              {entries.map((entry) => {
+                const { title, description, tags } = entry.data;
+                return (
+                  <a href={`/sqlkraft/architecture/${entry.slug}/`} class="arch-card">
+                    <div class="card-title">{title}</div>
+                    <p class="card-desc">
+                      {description ? description.slice(0, 150) : "No description available."}
+                    </p>
+                    <div class="card-tags">
+                      {tags.slice(0, 2).map((tag) => (
+                        <span class="card-tag">#{tag}</span>
+                      ))}
+                    </div>
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+  }
+  .breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb .sep {
+    color: var(--border-glass);
+  }
+  .page-header {
+    margin-bottom: 24px;
+  }
+  .page-header h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .page-desc {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-top: 8px;
+    max-width: 700px;
+    line-height: 1.6;
+  }
+  .topic-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .topic-block {
+  }
+  .topic-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border-glass);
+  }
+  .arch-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 12px;
+  }
+  .arch-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    border: 1px solid var(--border-glass);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.2s;
+  }
+  .arch-card:hover {
+    border-color: var(--accent);
+    text-decoration: none;
+  }
+  .card-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  .card-desc {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: auto;
+  }
+  .card-tag {
+    font-size: 11px;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+  }
+</style>
