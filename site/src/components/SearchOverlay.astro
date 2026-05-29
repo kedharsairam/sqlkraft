@@ -43,6 +43,11 @@
 
     if (!overlay || !input || !results) return;
 
+    // ── Mac detection: update placeholder ──
+    if (navigator.platform.includes("Mac")) {
+      input.placeholder = "Search references...  (⌘K)";
+    }
+
     // ── Keyboard navigation state ──
     let activeIndex = -1;
     let resultItems = [];
