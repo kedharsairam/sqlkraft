@@ -19,18 +19,28 @@ const sorted = allOps.sort((a, b) => a.data.title.localeCompare(b.data.title));
   <header class="page-header">
     <h1>Operations &amp; Administration ({sorted.length})</h1>
     <p class="page-desc">
-      Practical operational guides covering SQL Server administration, monitoring,
-      performance tuning, migration, high availability, and configuration management.
+      Practical operational guides covering SQL Server administration, monitoring, performance
+      tuning, migration, high availability, and configuration management.
     </p>
   </header>
 
   <div class="topic-sections">
     {
       [
-        "ssms", "profiler", "sqlpackage", "linux-operations",
-        "azure-synapse", "azure-arc", "event-classes", "ssb-diagnose",
-        "data-tools", "upgrade", "migration", "monitor",
-        "high-availability", "configuration",
+        "ssms",
+        "profiler",
+        "sqlpackage",
+        "linux-operations",
+        "azure-synapse",
+        "azure-arc",
+        "event-classes",
+        "ssb-diagnose",
+        "data-tools",
+        "upgrade",
+        "migration",
+        "monitor",
+        "high-availability",
+        "configuration",
       ].map((topic) => {
         const entries = sorted.filter((e) => e.data.topic === topic);
         if (entries.length === 0) return null;
