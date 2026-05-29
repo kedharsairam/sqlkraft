@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.15.0] — 2026-05-30
+
+### Added
+
+- **Cross-Collection Troubleshooting Cookbook** — New `cookbook` content collection with 3 initial scenario-based diagnostic guides:
+  - *High CPU Diagnostic Path* — Cross-references `sys.dm_os_schedulers`, `sys.dm_exec_query_stats`, `SOS_SCHEDULER_YIELD` waits, and CPU diagnostic scripts
+  - *Memory Pressure Triage* — Cross-references `sys.dm_os_process_memory`, `RESOURCE_SEMAPHORE` waits, `PAGEIOLATCH_SH` waits, and buffer pool analysis scripts
+  - *Locking & Blocking Outages* — Cross-references `sys.dm_tran_locks`, `LCK_M_*` wait types, blocking identification scripts, and deadlock graph capture
+- **`src/pages/cookbook/index.astro`** — Category-grouped index page with severity badges, jump-nav pill bar, and the same `minmax(clamp(240px, 18vw, 320px), 1fr)` card grid used across all collections
+- **`src/pages/cookbook/[id].astro`** — Dynamic detail route rendering recipe content with breadcrumbs, tags, and severity badge
+- **`src/layouts/RecipeLayout.astro`** — Cross-reference card grid with type-labeled icons (V=DMV, W=Wait, S=Script, E=Error) linking back to existing detail pages
+- **`relatedContent` schema field** — New structured frontmatter field (`{ dmvs?: [], waits?: [], scripts?: [], errors?: [] }`) enabling per-recipe cross-collection linking
+- **"Recipes" nav link** — Added to the global navigation bar between Scripts and Search
+- **Search index integration** — `cookbook` collection added to `rebuild-search-index.cjs`; search index now includes 3 recipe records (6,539 total)
+
 ## [0.14.0] — 2026-05-30
 
 ### Added

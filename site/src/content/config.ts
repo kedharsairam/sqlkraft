@@ -319,6 +319,30 @@ const operationsCollection = defineCollection({
 });
 
 // ──────────────────────────────────────────
+// Cookbook / Common Tasks (cross-collection scenarios)
+// ──────────────────────────────────────────
+const cookbookCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    name: z.string(),
+    title: z.string(),
+    category: z.enum(["performance", "blocking", "memory", "io", "availability", "general"]),
+    severity: z.enum(["critical", "high", "medium", "low", "info"]).optional(),
+    description: z.preprocess((v) => v ?? "", z.string()),
+    tags: z.preprocess((v) => v ?? [], z.array(z.string())),
+    relatedContent: z
+      .object({
+        dmvs: z.array(z.string()).optional(),
+        waits: z.array(z.string()).optional(),
+        scripts: z.array(z.string()).optional(),
+        errors: z.array(z.string()).optional(),
+      })
+      .optional(),
+    pubDate: z.date(),
+  }),
+});
+
+// ──────────────────────────────────────────
 // Registry
 // ──────────────────────────────────────────
 export const collections = {
@@ -332,4 +356,5 @@ export const collections = {
   architecture: architectureCollection,
   scripts: scriptsCollection,
   operations: operationsCollection,
+  cookbook: cookbookCollection,
 };

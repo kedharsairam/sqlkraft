@@ -24,6 +24,7 @@ const COLLECTION_SCHEMAS = {
   "architecture":    { nameField: "title", catField: "topic" },
   "scripts":         { nameField: "title", catField: "category" },
   "operations":      { nameField: "title", catField: "topic" },
+  "cookbook":        { nameField: "name",  catField: "category" },
 };
 
 function parseFrontmatter(content) {
