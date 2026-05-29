@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.7.0] — 2026-05-29
+
+### Added
+
+- **Fluid CSS variable system** — 6 new CSS custom properties in BaseLayout: `--content-max-width`, `--fluid-gap-sm`, `--fluid-gap-md`, `--fluid-gap-lg`, `--fluid-padding-h`, `--fluid-padding-v` — all using `clamp()` for viewport-adaptive sizing across all page types.
+- **Global fluid override layer** — `is:global` rules in BaseLayout with `!important` on 15+ body-content selectors (`h2`, `h3`, `p`, `li`, `pre`, `code`, `table`, `th`, `td`) enforce fluid font-size, padding, and responsive table overflow across all 6,591 pages without editing individual page components.
+
+### Changed
+
+- **Homepage hero** — `h1` font-size: `clamp(2.25rem, 5vw, 4.5rem)` with `letter-spacing: -0.02em`; tagline `clamp(1rem, 2.5vw, 1.5rem)`; subtitle `clamp(0.875rem, 1.5vw, 1rem)` with `max-width: min(65ch, 90vw)`; portal cards `flex: 0 0 clamp(250px, 30vw, 360px)`, gap `clamp(1rem, 2vw, 1.75rem)`; footer `margin-top: clamp(48px, 6vw, 80px)`
+- **Nav bar** — inner container uses `--content-max-width` and `--fluid-padding-h`; link font-size `clamp(11px, 1.3vw, 14px)`
+- **App shell** — fluid padding and margins throughout
+- **Global responsive tables** — `overflow-x: auto` with `-webkit-overflow-scrolling: touch` on all `.body-content table` elements
+- **Global code blocks** — fluid padding `clamp(12px, 2vw, 24px)`, fluid font-size `clamp(0.85rem, 1.2vw, 0.95rem)`
+- **All collection index pages** — breadcrumbs, page headers, card grids, item cards converted to `clamp()` values for padding, font-size, gap, border-radius across all 10 content collections
+- **All collection detail pages** — breadcrumbs, detail titles, badges, tag strips, footers converted to `clamp()` values; redundant scoped `.body-content` CSS blocks removed (replaced by BaseLayout global `!important` fluid layer)
+- **Responsive card grids** — `grid-template-columns: minmax(clamp(250px, 35vw, 380px), 1fr)` for adaptive column sizing on all viewport widths
+- **Build time** — improved to ~62s (from ~71s) for all 6,591 pages
+
+### Removed
+
+- **Redundant scoped `.body-content` CSS** — stripped from all 10 collection detail pages (`[id].astro`) since BaseLayout global `!important` fluid rules now handle all body typography
+
 ## [0.6.0] — 2026-05-29
 
 ### Added

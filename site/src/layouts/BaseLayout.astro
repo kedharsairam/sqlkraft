@@ -85,6 +85,14 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
     --font-mono: "SF Mono", "Cascadia Code", Consolas, monospace;
     --max-width: 1040px;
     --nav-height: 56px;
+
+    /* ── Fluid spacing & layout tokens ── */
+    --content-max-width: min(var(--max-width), 92vw);
+    --fluid-gap-sm: clamp(8px, 1vw, 16px);
+    --fluid-gap-md: clamp(16px, 2vw, 28px);
+    --fluid-gap-lg: clamp(24px, 3vw, 48px);
+    --fluid-padding-h: clamp(16px, 3vw, 32px);
+    --fluid-padding-v: clamp(24px, 3vw, 48px);
   }
   * {
     margin: 0;
@@ -109,9 +117,9 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
     z-index: 100;
   }
   .nav-inner {
-    max-width: var(--max-width);
+    max-width: var(--content-max-width);
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 var(--fluid-padding-h);
     height: 100%;
     display: flex;
     align-items: center;
@@ -125,14 +133,15 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
   }
   .nav-links {
     display: flex;
-    gap: 16px;
+    gap: clamp(8px, 1.5vw, 16px);
   }
   .nav-links a {
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 14px;
+    font-size: clamp(11px, 1.3vw, 14px);
     font-weight: 500;
     transition: color 0.2s;
+    white-space: nowrap;
   }
   .nav-links a:hover {
     color: var(--text-primary);
@@ -163,9 +172,9 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
     opacity: 0.6;
   }
   .app-shell {
-    max-width: var(--max-width);
+    max-width: var(--content-max-width);
     margin: 0 auto;
-    padding: calc(var(--nav-height) + 32px) 24px 48px;
+    padding: calc(var(--nav-height) + clamp(24px, 3vw, 48px)) var(--fluid-padding-h) var(--fluid-padding-v);
   }
   a {
     color: var(--accent);
@@ -173,5 +182,55 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
   }
   a:hover {
     text-decoration: underline;
+  }
+
+  /* ── Responsive tables (scrollable on narrow viewports) ── */
+  .body-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    font-size: clamp(12px, 1.2vw, 14px);
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+  }
+  .body-content th,
+  .body-content td {
+    padding: clamp(6px, 1vw, 12px) clamp(8px, 1.2vw, 14px);
+  }
+  @media (max-width: 540px) {
+    .body-content table {
+      font-size: 12px;
+    }
+    .body-content th,
+    .body-content td {
+      padding: 6px 10px;
+    }
+  }
+
+  /* ── Fluid code blocks ── */
+  .body-content pre {
+    padding: clamp(12px, 2vw, 24px) !important;
+    border-radius: clamp(6px, 1vw, 10px);
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem) !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .body-content :not(pre) > code {
+    font-size: clamp(0.8rem, 1.1vw, 0.9rem) !important;
+    padding: clamp(1px, 0.3vw, 6px) clamp(3px, 0.5vw, 8px) !important;
+  }
+
+  /* ── Fluid headings in body content ── */
+  .body-content h2 {
+    font-size: clamp(1.1rem, 2vw, 1.4rem) !important;
+  }
+  .body-content h3 {
+    font-size: clamp(0.95rem, 1.5vw, 1.15rem) !important;
+  }
+  .body-content p,
+  .body-content li {
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem) !important;
   }
 </style>
