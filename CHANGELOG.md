@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.6.0] — 2026-05-29
+
+### Added
+
+- **`--color-muted` CSS variable** defined in BaseLayout (`#9ca3af`) — WCAG AAA-compliant against `--bg-secondary`, used for card body text.
+
+### Changed
+
+- **Hero section** — top padding increased from `64px` to `72px`, subtitle `margin-bottom` set to `3.5rem` for improved vertical rhythm.
+- **Subtitle paragraph** — `max-width` changed from `640px` to `65ch`, `margin: 18px auto 3.5rem`, `line-height: 1.7`, horizontal padding added for narrow viewports.
+- **Portal card grid** — migrated from `display: grid` to `display: flex` with `flex-wrap: wrap` and `justify-content: center`, so the 10th (asymmetrical trailing) card is naturally centered; card width fixed to `300px`.
+- **Grid gap** — increased from `16px` to `1.75rem` (28px) for better breathing room.
+- **Card padding** — increased from `24px` to `28px 24px 26px`; hover `translateY` deepened from `-2px` to `-3px`.
+- **Card paragraph** — `color` changed from `var(--text-secondary)` to `var(--color-muted)` (#9ca3af, passes WCAG AAA); `line-height` bumped from `1.5` to `1.6`.
+- **Card heading** — `margin-bottom` increased from `8px` to `10px`.
+- **Footer** — top margin increased from `64px` to `72px`.
+- **Responsive breakpoint** — added `@media (max-width: 680px)` with smaller hero fonts and full-width cards.
+
+### Removed
+
+- **Grid `grid-template-columns` layout** — replaced by flexbox for last-row centering.
+
 ## [0.5.0] — 2026-05-29
 
 ### Added
