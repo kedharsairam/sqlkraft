@@ -63,46 +63,54 @@ const scriptsData = sorted.map((s) => ({
         placeholder="Search scripts by name, keyword, or category..."
         autocomplete="off"
       />
-      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-        <circle cx="11" cy="11" r="8" />
-        <path d="M21 21l-4.35-4.35" />
+      <svg
+        class="search-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="M21 21l-4.35-4.35"></path>
       </svg>
     </div>
     <div class="category-pills" id="category-pills">
       <button class="pill active" data-category="all">All</button>
-      {categories.map((cat) => (
-        <button class="pill" data-category={cat}>
-          {CATEGORY_LABELS[cat] || cat}
-        </button>
-      ))}
+      {
+        categories.map((cat) => (
+          <button class="pill" data-category={cat}>
+            {CATEGORY_LABELS[cat] || cat}
+          </button>
+        ))
+      }
     </div>
   </div>
 
   <!-- Card Grid -->
   <div class="card-grid" id="card-grid">
-    {scriptsData.map((s) => (
-      <a
-        href={`/sqlkraft/scripts/${s.slug}/`}
-        class="item-card"
-        data-slug={s.slug}
-        data-category={s.category}
-        data-name={s.name.toLowerCase()}
-        data-description={s.description.toLowerCase()}
-        data-tags={(s.tags || []).join(" ").toLowerCase()}
-      >
-        <div class="card-title">{s.name}</div>
-        <span class="cat-badge">{CATEGORY_LABELS[s.category] || s.category}</span>
-        <p class="card-desc">
-          {s.description || "No description available."}
-        </p>
-        <div class="card-tags">
-          {s.tags.slice(0, 4).map((tag) => (
-            <span class="card-tag">#{tag}</span>
-          ))}
-          {s.tags.length > 4 && <span class="card-tag-more">+{s.tags.length - 4} more</span>}
-        </div>
-      </a>
-    ))}
+    {
+      scriptsData.map((s) => (
+        <a
+          href={`/sqlkraft/scripts/${s.slug}/`}
+          class="item-card"
+          data-slug={s.slug}
+          data-category={s.category}
+          data-name={s.name.toLowerCase()}
+          data-description={s.description.toLowerCase()}
+          data-tags={(s.tags || []).join(" ").toLowerCase()}
+        >
+          <div class="card-title">{s.name}</div>
+          <span class="cat-badge">{CATEGORY_LABELS[s.category] || s.category}</span>
+          <p class="card-desc">{s.description || "No description available."}</p>
+          <div class="card-tags">
+            {s.tags.slice(0, 4).map((tag) => (
+              <span class="card-tag">#{tag}</span>
+            ))}
+            {s.tags.length > 4 && <span class="card-tag-more">+{s.tags.length - 4} more</span>}
+          </div>
+        </a>
+      ))
+    }
   </div>
 
   <!-- Empty state -->
@@ -139,10 +147,7 @@ const scriptsData = sorted.map((s) => ({
         const tags = card.dataset.tags || "";
         const catLower = cat.toLowerCase();
         textMatch =
-          name.includes(q) ||
-          desc.includes(q) ||
-          tags.includes(q) ||
-          catLower.includes(q);
+          name.includes(q) || desc.includes(q) || tags.includes(q) || catLower.includes(q);
       }
 
       const show = catMatch && textMatch;
