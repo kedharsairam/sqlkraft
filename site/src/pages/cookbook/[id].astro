@@ -36,11 +36,7 @@ const sev = severity || "medium";
     {tags.map((tag) => <span class="tag-pill">#{tag}</span>)}
   </div>
 
-  <RecipeLayout
-    title={title}
-    description={description}
-    relatedContent={relatedContent}
-  >
+  <RecipeLayout title={title} description={description} relatedContent={relatedContent}>
     <div class="body-content">
       <Content />
     </div>
