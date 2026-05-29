@@ -39,16 +39,14 @@ const SEVERITY_COLORS = {
   <header class="page-header">
     <h1>Wait Statistics</h1>
     <p class="page-desc">
-      {sorted.length} wait types organized across 8 diagnostic categories. Each wait type includes severity
+      Wait types organized across 8 diagnostic categories. Each wait type includes severity
       classification, root cause analysis, and related troubleshooting scripts.
     </p>
   </header>
 
   <!-- Category filter tabs -->
   <div class="category-strip">
-    <button class="cat-pill active" data-cat="all" onclick="filterWaits('all')"
-      >All ({sorted.length})</button
-    >
+    <button class="cat-pill active" data-cat="all" onclick="filterWaits('all')">All</button>
     {
       CATEGORIES.map((cat) => (
         <button
@@ -57,7 +55,7 @@ const SEVERITY_COLORS = {
           style={`--cat-color: ${cat.color}`}
           onclick={`filterWaits('${cat.id}')`}
         >
-          {cat.label} ({sorted.filter((w) => w.data.category === cat.id).length})
+          {cat.label}
         </button>
       ))
     }
@@ -177,13 +175,13 @@ const SEVERITY_COLORS = {
     font-family: inherit;
   }
   .cat-pill:hover {
-    border-color: var(--cat-color, var(--accent));
-    color: var(--cat-color, var(--text-primary));
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
   }
   .cat-pill.active {
-    background: var(--cat-color, var(--accent));
-    color: #fff;
-    border-color: var(--cat-color, var(--accent));
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+    border-color: var(--text-secondary);
   }
 
   .card-grid {

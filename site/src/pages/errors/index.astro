@@ -25,7 +25,7 @@ const SEVERITY_COLORS = {
   </nav>
 
   <header class="page-header">
-    <h1>Database Engine Errors ({sorted.length})</h1>
+    <h1>Database Engine Errors</h1>
     <p class="page-desc">
       SQL Server diagnostic error codes organized by severity level and category. Each error
       includes error number, severity classification, and description.
@@ -49,9 +49,7 @@ const SEVERITY_COLORS = {
               </span>
             </div>
             <span class="cat-badge">{category}</span>
-            <p class="card-desc">
-              {description ? description.slice(0, 150) : "No description available."}
-            </p>
+            <p class="card-desc">{description || "No description available."}</p>
             <div class="card-tags">
               {tags.slice(0, 3).map((tag) => (
                 <span class="card-tag">#{tag}</span>

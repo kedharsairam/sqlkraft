@@ -17,7 +17,7 @@ const sorted = allOps.sort((a, b) => a.data.title.localeCompare(b.data.title));
   </nav>
 
   <header class="page-header">
-    <h1>Operations &amp; Administration ({sorted.length})</h1>
+    <h1>Operations &amp; Administration</h1>
     <p class="page-desc">
       Practical operational guides covering SQL Server administration, monitoring, performance
       tuning, migration, high availability, and configuration management.
@@ -55,9 +55,7 @@ const sorted = allOps.sort((a, b) => a.data.title.localeCompare(b.data.title));
                 return (
                   <a href={`/sqlkraft/operations/${entry.slug}/`} class="ops-card">
                     <div class="card-title">{title}</div>
-                    <p class="card-desc">
-                      {description ? description.slice(0, 150) : "No description available."}
-                    </p>
+                    <p class="card-desc">{description || "No description available."}</p>
                     <div class="card-tags">
                       {tags.slice(0, 2).map((tag) => (
                         <span class="card-tag">#{tag}</span>

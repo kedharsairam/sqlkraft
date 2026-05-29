@@ -17,7 +17,7 @@ const sorted = allArch.sort((a, b) => a.data.title.localeCompare(b.data.title));
   </nav>
 
   <header class="page-header">
-    <h1>Architecture &amp; Internals ({sorted.length})</h1>
+    <h1>Architecture &amp; Internals</h1>
     <p class="page-desc">
       In-depth technical narratives covering SQL Server's internal architecture — query processing,
       index structures, memory management, locking and deadlocking, thread and task scheduling, I/O
@@ -63,9 +63,7 @@ const sorted = allArch.sort((a, b) => a.data.title.localeCompare(b.data.title));
                 return (
                   <a href={`/sqlkraft/architecture/${entry.slug}/`} class="arch-card">
                     <div class="card-title">{title}</div>
-                    <p class="card-desc">
-                      {description ? description.slice(0, 150) : "No description available."}
-                    </p>
+                    <p class="card-desc">{description || "No description available."}</p>
                     <div class="card-tags">
                       {tags.slice(0, 2).map((tag) => (
                         <span class="card-tag">#{tag}</span>
