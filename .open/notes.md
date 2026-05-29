@@ -1,4 +1,4 @@
-# SqlKraft — Session Notes (v0.3.0)
+# SqlKraft — Session Notes (v0.4.0)
 
 ## Decisions
 - **Clean-slate restart**: All legacy projects moved to `_legacy_backup/`. No code reused from previous SqlKraft v1.0.0, Lumina, or MSSQL Scripts projects.
@@ -41,10 +41,26 @@
 
 ## Relevant Files
 - `extractor/narrative_mapper.py` — v0.3.0 narrative extraction engine (460 lines). Handles error severities, XQuery, expanded architecture with TOC-driven heading matching
+- `extractor/operations_mapper.py` — v0.5.0 operations ingestion engine (290 lines). H2-to-topic mapping, keyword fallback heuristics, 983 articles from 12 H2 chapters
+- `extractor/batch_extract_operations.py` — One-shot batch extraction for all 11 untapped Range 2 sections
 - `extractor/schema_mapper_v2.py` — Multi-type mapper for reference objects (stored-procedures, catalog-views, etc.)
 - `site/src/content/config.ts` — Updated Zod enums (xquery, 11 new architecture topics, operations collection)
-- `site/src/pages/operations/index.astro` — New operations collection index page with 14-topic card grid
+- `site/src/pages/operations/index.astro` — Operations collection index page with 14-topic card grid (983+ articles)
+- `site/src/pages/operations/[id].astro` — New operations detail page with topic badge, code-block styling
 - `site/src/pages/architecture/index.astro` — Updated with 11 new topic sections
 - `site/src/pages/tsql-reference/index.astro` — Added xquery category label
 - `site/src/pages/index.astro` — Added operations portal card
-- `site/src/data/search-index.json` — 5,011 metadata-only records
+- `site/src/data/search-index.json` — 5,987 metadata-only records
+
+## v0.4.0 Session Updates
+
+### What was done
+- **Operations bulk ingestion** — Stage 5 complete: 43 batch files, 983 articles across 9 topics
+- **Detail route created** — `operations/[id].astro` with breadcrumbs, topic badges, code block styling
+- **Build grew**: 5,050 → **6,034 pages** — zero errors
+- All committed as part of this session's work
+
+### New Gotchas
+- **Detail route missing**: After adding 983 content files, only the index page rendered. Had to create `[id].astro` to generate detail pages. Always check that a new collection has both an index AND a detail route.
+- **TOC page matching for operations**: Range 2 has 1,124 TOC entries but only 983 resolved to articles. Missing ~141 entries either had no page match, were depth-2 headers with no page content, or were filtered by SKIP_PAGE_TITLES.
+- **Topic coverage gap**: 5 of 14 operations topics (azure-arc, data-tools, upgrade, migration, high-availability) have 0 articles. These need different H2 matching or exist in non-Range-2 pages.

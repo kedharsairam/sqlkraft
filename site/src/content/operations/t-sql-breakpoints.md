@@ -1,0 +1,90 @@
+---
+title: "T-SQL Breakpoints"
+topic: "ssb-diagnose"
+description: |
+  09/10/2025
+  
+  Applies to:
+  
+  SQL Server
+  
+  Breakpoints specify that the Transact-SQL debugger pause execution on a specific Transact-
+  
+  SQL statement, and you can then view the state of the code elements at 
+tags:
+  - "ssb-diagnose"
+  - "t-sql-breakpoints"
+pubDate: 2025-12-01
+---
+
+09/10/2025
+
+Applies to:
+
+SQL Server
+
+Breakpoints specify that the Transact-SQL debugger pause execution on a specific Transact-
+
+SQL statement, and you can then view the state of the code elements at that point.
+
+When running the Transact-SQL debugger, you can toggle a breakpoint on specific statements.
+
+When execution reaches a statement with a breakpoint, the debugger pauses execution so you
+
+can view debugging information, such as the values present in variables and parameters.
+
+You can manage breakpoints individually in the Query Editor window, or collectively by using
+
+the
+
+window. You can edit breakpoints to specify items such as specific conditions
+
+under which execution should pause, or the actions to be taken if the breakpoint is executed.
+
+Describes how to specify the Transact-SQL statement on which you want the
+
+debugger to pause.
+
+Toggle a breakpoint
+
+Describes how to temporarily deactivate a breakpoint, reactivate a breakpoint,
+
+and how to delete a breakpoint.
+
+Enable, disable, and
+
+delete breakpoints
+
+Describes how to specify a condition, which defines whether a breakpoint
+
+breaks based on the evaluation of a specified Transact-SQL expression.
+
+Specify a breakpoint
+
+condition
+
+Describes how to specify a hit count. A break occurs only when the statement
+
+containing the breakpoint executes a specified number of times.
+
+Specify a hit count
+
+Describes how to specify a filter, which causes a breakpoint to break for only
+
+specified processes or threads.
+
+Specify a breakpoint
+
+filter
+
+Describes how to specify an action, which is a custom operation that is
+
+performed when the breakpoint statement is executed.
+
+Specify a breakpoint
+
+action
+
+ﾉ
+
+Expand table

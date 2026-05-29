@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.4.0] — 2026-05-29
+
+### Added
+
+- **Operations bulk ingestion (Stage 5)** — Populated the operations collection with 983 articles from Range 2 (p.14419-20029), transforming the placeholder scaffold into the largest collection by content count
+- **PDF extraction (3,811 pages in 72s)** — Batch extraction of 11 untapped sections across Range 2: SSB Diagnose (401p), SSMS (187p), SqlPackage (165p), Profiler (346p), Linux (1,223p), Azure Synapse (503p), Azure Arc/docs (85p), Event Classes (193p), Configuration tools (258p), misc docs (378p). 43 batch JSON files, 28,299 headings, 10,520 code blocks
+- **`batch_extract_operations.py`** — Automated extraction script for all 11 sections with one-shot execution, eliminating manual per-section calls
+- **`operations_mapper.py`** — New extraction engine (290 lines) with `H2_OPS_TOPIC_MAP` for H2-to-topic resolution and keyword-based fallback heuristics. Handles 12 H2 chapters mapping to 9 of 14 operations topics
+- **Operations content**: 983 articles across 9 topics — ssb-diagnose (88), ssms (36), sqlpackage (14), profiler (86), linux-operations (131), azure-synapse (56), event-classes (192), monitor (371), configuration (9)
+- **Operations detail route** — New `operations/[id].astro` page with breadcrumb nav, topic badge, tag strip, code-block styling, and back navigation
+- **Operations index page** — Card-grid layout with 14-topic sections, now dynamically renders all 983 articles with proper count and category grouping
+- **Search index rebuilt** — 5,987 records across 10 collections (operations: 979 unique entries)
+- **Zero-error build** — 6,034 pages, zero errors, zero schema validation failures
+
 ## [0.3.0] — 2026-05-29
 
 ### Added
