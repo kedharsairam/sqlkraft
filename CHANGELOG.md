@@ -5,6 +5,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.8.0] — 2026-05-29
+
+### Changed
+
+- **Global container limit** — `--max-width` expanded from `1040px` to `1500px`; `--content-max-width` viewport ratio from `92vw` to `95vw`; horizontal fluid padding increased from `32px` max to `40px` max — site now dynamically commands 1500px of horizontal estate on 1920x1080 monitors, reducing dead margin space by ~460px total
+- **Homepage portal cards** — flex-basis expanded from `clamp(250px, 30vw, 360px)` to `clamp(300px, 25vw, 440px)` — cards now fill 3 wide columns on 1080p viewports instead of 2 narrow ones
+- **All 10 collection index card grids** — min column width expanded from `clamp(250px, 35vw, 380px)` to `clamp(300px, 30vw, 480px)` — cards stretch proportionally with the wider canvas, reducing unnecessary vertical stacking
+- **Nav bar** — automatically rebalances edge-to-edge with the wider `--content-max-width` variable
+- **Build**: 6,591 pages in 57s, zero errors
+
+## [0.7.1] — 2026-05-29
+
+### Fixed
+
+- **Prettier formatting** — 4 fluid-stage source files (`BaseLayout.astro`, `dmvs/index.astro`, `scripts/index.astro`, `wait-statistics/index.astro`) auto-formatted to pass CI lint gate
+
 ## [0.7.0] — 2026-05-29
 
 ### Added
