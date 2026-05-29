@@ -1,8 +1,8 @@
 ---
-title: sys.dm_os_server_diagnostics_log_configurations
-name: sys.dm_os_server_diagnostics_log_configurations
-category: execution
-description:
+name: 'sys.dm_os_server_diagnostics_log_configurations'
+title: 'sys.dm_os_server_diagnostics_log_configurations'
+category: 'execution'
+description: 'Azure SQL Managed Instance'
 pubDate: 2026-05-29
 ---
 
@@ -14,8 +14,8 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-## Returns one row with the current configuration for the SQL Server failover cluster diagnostic
 
+## Returns one row with the current configuration for the SQL Server failover cluster diagnostic
 log. These property settings determine whether the diagnostic logging is on or off, and the
 
 location, number, and size of the log files.
@@ -75,8 +75,6 @@ View and Read Failover Cluster Instance Diagnostics Log
 Last updated on 11/18/2025
 
 ﾉ
-
-## Applies to:
 
 ## sys.dm_os_stacks
 

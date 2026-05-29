@@ -1,8 +1,8 @@
 ---
-title: sys.dm_os_workers
-name: sys.dm_os_workers
-category: execution
-description:
+name: 'sys.dm_os_workers'
+title: 'sys.dm_os_workers'
+category: 'execution'
+description: 'Memory address of the scheduler. For more'
 pubDate: 2026-05-29
 ---
 
@@ -100,8 +100,6 @@ Thread and Task Architecture Guide
 
 Last updated on 11/18/2025
 
-## Applies to:
-
 Article
 
 •
@@ -135,10 +133,6 @@ sys.dm_tran_locks (Transact-SQL)
 sys.dm_tran_top_version_generators (Transact-SQL)
 
 sys.dm_tran_version_store (Transact-SQL)
-
-## Applies to:
-
-## Note
 
 ## sys.dm_pdw_nodes_tran_active_snapshot_database_transactions
 

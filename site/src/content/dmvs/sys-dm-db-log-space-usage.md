@@ -1,8 +1,8 @@
 ---
-title: sys.dm_db_log_space_usage
-name: sys.dm_db_log_space_usage
-category: execution
-description:
+name: 'sys.dm_db_log_space_usage'
+title: 'sys.dm_db_log_space_usage'
+category: 'execution'
+description: 'The following query returns the databases with more than 100 VLFs in the log files. Large'
 pubDate: 2026-05-29
 ---
 
@@ -28,15 +28,11 @@ sys.dm_db_log_info
 
 Last updated on 01/29/2026
 
-## Applies to:
-
 ## smallint
 
 ## int
 
 ## int
-
-## Note
 
 ```sql
 SELECT

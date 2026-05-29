@@ -1,0 +1,23 @@
+---
+name: '1102'
+title: 'Error 1102'
+errorNumber: 1102
+severity: 'medium'
+category: 'io'
+description: 'Description Create the necessary space by dropping objects in the filegroup, adding additional files to the filegroup, or setting autogrowth on for existing files in the filegroup. 1102 22 Yes IAM pag'
+tags: ["io", "severity-medium"]
+pubDate: 2026-05-29
+---
+
+## Description
+
+Description Create the necessary space by dropping objects in the filegroup, adding additional files to the filegroup, or setting autogrowth on for existing files in the filegroup. 1102 22 Yes IAM pag
+
+## Severity
+
+MEDIUM (Level N/A)
+
+## Troubleshooting
+
+*(Diagnostic content pending full extraction)*
+

@@ -1,8 +1,8 @@
 ---
-title: sys.dm_exec_cached_plans
-name: sys.dm_exec_cached_plans
-category: execution
-description:
+name: 'sys.dm_exec_cached_plans'
+title: 'sys.dm_exec_cached_plans'
+category: 'execution'
+description: 'Azure SQL Managed Instance'
 pubDate: 2026-05-29
 ---
 
@@ -16,12 +16,12 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-## Returns a row for each Transact-SQL execution plan, common language runtime (CLR)
 
+## Returns a row for each Transact-SQL execution plan, common language runtime (CLR)
 execution plan, and cursor associated with a plan.
 
-syntaxsql
 
+## syntaxsql
 Is a token that uniquely identifies a query execution plan for a batch that has executed and its
 
 plan resides in the plan cache.
@@ -48,8 +48,8 @@ sys.dm_exec_trigger_stats (Transact-SQL)
 
 Expand table
 
-Description
 
+## Description
 Number of times the execution context or cursor has been
 
 used.
@@ -78,8 +78,8 @@ permission on the server.
 
 Requires VIEW SERVER PERFORMANCE STATE permission on the server.
 
-## Permissions for SQL Server 2022 and later
 
+## Permissions for SQL Server 2022 and later
 ﾉ
 
 Expand table
@@ -116,8 +116,8 @@ SQL database in Microsoft
 
 Fabric
 
-## Returns a row for each query plan that is cached by SQL Server for faster query execution. You
 
+## Returns a row for each query plan that is cached by SQL Server for faster query execution. You
 can use this dynamic management view to find cached query plans, cached query text, the
 
 amount of memory taken by cached plans, and the reuse count of the cached plans.
@@ -136,8 +136,8 @@ are filtered; the column value is set to
 
 .
 
-Description
 
+## Description
 ID of the hash bucket in which the entry is cached. The value
 
 indicates a range from 0 through the hash table size for the
@@ -184,8 +184,8 @@ pool in Azure Synapse Analytics.
 
 Expand table
 
-Description
 
+## Description
 Number of bytes consumed by the cache object.
 
 Memory address of the cached entry. This value can be used
@@ -200,7 +200,7 @@ of the cached plan and with
 
 sys.dm_os_memory_cache_entries
 
-\_entries to obtain the cost of
+_entries to obtain the cost of
 
 caching the entry.
 

@@ -1,8 +1,8 @@
 ---
-title: sys.dm_exec_procedure_stats
-name: sys.dm_exec_procedure_stats
-category: execution
-description:
+name: 'sys.dm_exec_procedure_stats'
+title: 'sys.dm_exec_procedure_stats'
+category: 'execution'
+description: 'sys.dm_exec_procedure_stats (Transact-SQL)'
 pubDate: 2026-05-29
 ---
 
@@ -48,8 +48,6 @@ Requires VIEW SERVER PERFORMANCE STATE permission on the server.
 
 ﾉ
 
-## sql_handle
-
 ## CROSS
 
 ## APPLY
@@ -61,8 +59,6 @@ Requires VIEW SERVER PERFORMANCE STATE permission on the server.
 ## sys.dm_exec_sql_text
 
 ## CROSS APPLY
-
-## Note
 
 ## dbid
 

@@ -1,8 +1,8 @@
 ---
-title: sys.dm_db_session_space_usage
-name: sys.dm_db_session_space_usage
-category: execution
-description:
+name: 'sys.dm_db_session_space_usage'
+title: 'sys.dm_db_session_space_usage'
+category: 'execution'
+description: 'Number of pages reserved or allocated for user'
 pubDate: 2026-05-29
 ---
 
@@ -124,8 +124,6 @@ Last updated on 11/18/2025
 
 ﾉ
 
-## Applies to:
-
 SQL Server 2017 (14.x) and later versions
 
 Azure SQL Database
@@ -136,8 +134,8 @@ SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-## Returns detailed information about automatic tuning recommendations. For more information,
 
+## Returns detailed information about automatic tuning recommendations. For more information,
 see
 
 Automatic tuning

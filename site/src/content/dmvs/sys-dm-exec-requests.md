@@ -1,8 +1,8 @@
 ---
-title: sys.dm_exec_requests
-name: sys.dm_exec_requests
-category: execution
-description:
+name: 'sys.dm_exec_requests'
+title: 'sys.dm_exec_requests'
+category: 'execution'
+description: 'If this option isn''t enabled, these columns return null values. For more information about how'
 pubDate: 2026-05-29
 ---
 

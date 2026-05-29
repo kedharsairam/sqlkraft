@@ -1,12 +1,10 @@
 ---
-title: sys.dm_os_threads
-name: sys.dm_os_threads
-category: execution
-description:
+name: 'sys.dm_os_threads'
+title: 'sys.dm_os_threads'
+category: 'execution'
+description: 'On SQL Server and SQL Managed Instance, requires'
 pubDate: 2026-05-29
 ---
-
-## Note
 
 On SQL Server and SQL Managed Instance, requires
 
@@ -78,7 +76,7 @@ For conciseness, the following query uses an asterisk (
 
 statement. You
 
-should avoid using the asterisk (\*), especially against catalog views, dynamic management
+should avoid using the asterisk (*), especially against catalog views, dynamic management
 
 views, and system table-valued functions. Future upgrades and releases of Microsoft SQL
 
@@ -94,13 +92,7 @@ SQL Server Operating System Related Dynamic Management Views (Transact-SQL)
 
 Last updated on 11/18/2025
 
-## Applies to:
-
-## Note
-
 ## VirtualQuery
-
-## Note
 
 ## sys.dm_pdw_nodes_os_virtual_address_dump
 
@@ -118,8 +110,8 @@ Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
-## Returns information about a range of pages in the virtual address space of the calling process.
 
+## Returns information about a range of pages in the virtual address space of the calling process.
 Pointer to the base address of the region of pages. Is
 
 not nullable.

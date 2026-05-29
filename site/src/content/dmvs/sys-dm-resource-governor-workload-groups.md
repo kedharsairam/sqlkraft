@@ -1,8 +1,8 @@
 ---
-title: sys.dm_resource_governor_workload_groups
-name: sys.dm_resource_governor_workload_groups
-category: execution
-description:
+name: 'sys.dm_resource_governor_workload_groups'
+title: 'sys.dm_resource_governor_workload_groups'
+category: 'execution'
+description: 'Identified for informational purposes only. Not'
 pubDate: 2026-05-29
 ---
 
@@ -54,10 +54,6 @@ ALTER resource governor (Transact-SQL)
 
 Last updated on 11/18/2025
 
-## Applies to:
-
-## Note
-
 ## sys.dm_pdw_nodes_resource_governor_workload_groups
 
 Article
@@ -76,8 +72,8 @@ Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
-## Returns workload group statistics and the current in-memory configuration of the workload
 
+## Returns workload group statistics and the current in-memory configuration of the workload
 group. This view can be joined with
 
 sys.dm_resource_governor_resource_pools
@@ -268,12 +264,12 @@ However, unlike
 
 which
 
-returns an
 
+## returns an
 value,
 
-returns a
 
+## returns a
 value. Starting with SQL Server
 
 2019 (15.x), the parameter

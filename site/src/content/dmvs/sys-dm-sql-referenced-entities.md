@@ -1,8 +1,8 @@
 ---
-title: sys.dm_sql_referenced_entities
-name: sys.dm_sql_referenced_entities
-category: execution
-description:
+name: 'sys.dm_sql_referenced_entities'
+title: 'sys.dm_sql_referenced_entities'
+category: 'execution'
+description: 'Requires SELECT permission on sys.dm_sql_referenced_entities and VIEW DEFINITION'
 pubDate: 2026-05-29
 ---
 

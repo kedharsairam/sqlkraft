@@ -1,8 +1,8 @@
 ---
-title: sys.dm_resource_governor_resource_pools
-name: sys.dm_resource_governor_resource_pools
-category: execution
-description:
+name: 'sys.dm_resource_governor_resource_pools'
+title: 'sys.dm_resource_governor_resource_pools'
+category: 'execution'
+description: 'is successfully executed, the following'
 pubDate: 2026-05-29
 ---
 
@@ -62,8 +62,6 @@ ALTER RESOURCE GOVERNOR (Transact-SQL)
 
 CREATE WORKLOAD GROUP
 
-## Applies to:
-
 Article
 
 •
@@ -98,16 +96,14 @@ Transparent Data Encryption (TDE)
 
 SQL Server Audit (Database Engine)
 
-## Applies to:
-
 SQL Server
 
 Azure SQL Database
 
 Azure SQL Managed Instance
 
-## Returns a row for every audit action that can be reported in the audit log and every audit
 
+## Returns a row for every audit action that can be reported in the audit log and every audit
 action group that can be configured as part of SQL Server Audit. For more information about
 
 SQL Server Audit, see
@@ -262,16 +258,14 @@ Create a Server Audit and Server Audit Specification
 
 Last updated on 12/17/2025
 
-## Applies to:
-
 SQL Server
 
 Azure SQL Database
 
 Azure SQL Managed Instance
 
-## Returns a table that lists securable classes that can be mapped to the
 
+## Returns a table that lists securable classes that can be mapped to the
 column in the
 
 audit log. For more information about SQL Server Audit, see
@@ -373,8 +367,6 @@ sys.dm_audit_class_type_map
 Create a Server Audit and Server Audit Specification
 
 Last updated on 12/17/2025
-
-## Applies to:
 
 ```sql
 ALTER RESOURCE GOVERNOR RESET STATISTICS

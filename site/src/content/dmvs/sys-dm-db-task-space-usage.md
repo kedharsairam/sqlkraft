@@ -1,8 +1,8 @@
 ---
-title: sys.dm_db_task_space_usage
-name: sys.dm_db_task_space_usage
-category: execution
-description:
+name: 'sys.dm_db_task_space_usage'
+title: 'sys.dm_db_task_space_usage'
+category: 'execution'
+description: 'The following query returns the total number of free pages and total free space in megabytes'
 pubDate: 2026-05-29
 ---
 
@@ -32,8 +32,6 @@ sys.dm_db_session_space_usage (Transact-SQL)
 
 Last updated on 11/18/2025
 
-## Applies to:
-
 ## Basic
 
 ## S0
@@ -50,8 +48,8 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-## Returns a row for each full-text or semantic index in each table that has an associated full-text
 
+## Returns a row for each full-text or semantic index in each table that has an associated full-text
 or semantic index.
 
 int

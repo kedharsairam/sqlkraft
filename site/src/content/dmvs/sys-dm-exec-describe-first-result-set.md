@@ -1,8 +1,8 @@
 ---
-title: sys.dm_exec_describe_first_result_set
-name: sys.dm_exec_describe_first_result_set
-category: execution
-description:
+name: 'sys.dm_exec_describe_first_result_set'
+title: 'sys.dm_exec_describe_first_result_set'
+category: 'execution'
+description: 'The following example creates a stored procedure named TestProc2 that returns two result'
 pubDate: 2026-05-29
 ---
 
@@ -10,8 +10,8 @@ The following example creates a stored procedure named TestProc2 that returns tw
 
 sets. Then the example demonstrates that
 
-returns
 
+## returns
 information about the first result set in the procedure, with and without the browse
 
 information.
@@ -48,8 +48,8 @@ Column Name
 
 Data Type
 
-Description
 
+## Description
 Range
 
 execution_id

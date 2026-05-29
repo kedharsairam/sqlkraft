@@ -1,0 +1,186 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("functions");
+  return entries.map((entry) => ({
+    params: { id: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const { name, title, category, description, tags, returnType } = entry.data;
+---
+
+<BaseLayout title={`${name} — System Function`} description={description}>
+  <nav class="breadcrumb">
+    <a href="/sqlkraft/">&larr; Home</a>
+    <span class="sep">/</span>
+    <a href="/sqlkraft/functions/">System Functions</a>
+    <span class="sep">/</span>
+    <span>{name}</span>
+  </nav>
+
+  <div class="detail-header">
+    <h1 class="detail-title">{name}</h1>
+    <span class="cat-badge">{category}</span>
+    {returnType && <span class="return-badge">{returnType}</span>}
+  </div>
+
+  <div class="tag-strip">
+    {tags.map((tag) => <span class="tag-pill">#{tag}</span>)}
+  </div>
+
+  <div class="body-content">
+    <Content />
+  </div>
+
+  <nav class="detail-footer">
+    <a href="/sqlkraft/functions/">&larr; Back to all functions</a>
+  </nav>
+</BaseLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+  }
+  .breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb .sep {
+    color: var(--border-glass);
+  }
+  .detail-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .detail-title {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    color: var(--accent);
+  }
+  .cat-badge {
+    font-size: 11px;
+    font-weight: 500;
+    background: rgba(47, 128, 237, 0.12);
+    color: var(--accent);
+    padding: 3px 10px;
+    border-radius: 4px;
+    text-transform: capitalize;
+  }
+  .return-badge {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    background: rgba(46, 204, 113, 0.15);
+    color: #2ecc71;
+    padding: 3px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .tag-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+  }
+  .tag-pill {
+    font-size: 12px;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-family: var(--font-mono);
+  }
+  .body-content {
+    line-height: 1.8;
+    font-size: 14px;
+    color: var(--text-secondary);
+  }
+  .body-content h2 {
+    font-size: 20px;
+    color: var(--text-primary);
+    margin: 32px 0 12px;
+    font-weight: 600;
+  }
+  .body-content h3 {
+    font-size: 16px;
+    color: var(--text-primary);
+    margin: 24px 0 10px;
+    font-weight: 600;
+  }
+  .body-content p {
+    margin-bottom: 14px;
+  }
+  .body-content ul,
+  .body-content ol {
+    margin-bottom: 14px;
+    padding-left: 20px;
+  }
+  .body-content li {
+    margin-bottom: 6px;
+  }
+  .body-content pre {
+    background: #0d1117;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 16px;
+  }
+  .body-content code {
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: #e6edf3;
+  }
+  .body-content :not(pre) > code {
+    color: var(--accent);
+    background: rgba(47, 128, 237, 0.1);
+    padding: 1px 6px;
+    border-radius: 3px;
+  }
+  .body-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+    font-size: 13px;
+  }
+  .body-content th {
+    text-align: left;
+    padding: 8px 12px;
+    border-bottom: 2px solid var(--border-glass);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  .body-content td {
+    padding: 8px 12px;
+    border-bottom: 1px solid var(--border-glass);
+  }
+  .detail-footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-glass);
+    font-size: 13px;
+  }
+  .detail-footer a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .detail-footer a:hover {
+    text-decoration: underline;
+  }
+</style>

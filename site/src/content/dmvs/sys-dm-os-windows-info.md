@@ -1,8 +1,8 @@
 ---
-title: sys.dm_os_windows_info
-name: sys.dm_os_windows_info
-category: execution
-description:
+name: 'sys.dm_os_windows_info'
+title: 'sys.dm_os_windows_info'
+category: 'execution'
+description: 'SQL Server 2017 (14.x) and later'
 pubDate: 2026-05-29
 ---
 
@@ -14,16 +14,16 @@ Article
 
 SQL Server 2017 (14.x) and later
 
-## Returns one row that displays operating system version information.
 
+## Returns one row that displays operating system version information.
 The type of operating system. Can be
 
 or
 
 .
 
-Description of the operating system.
 
+## Description of the operating system.
 Microsoft Windows operating system release (version number).
 
 For a list of values and descriptions, see
@@ -42,8 +42,8 @@ On Linux, this column returns an empty string.
 
 Windows Stock Keeping Unit (SKU) ID. For a list of SKU IDs and
 
-descriptions, see
 
+## descriptions, see
 GetProductInfo function
 
 . Is nullable.

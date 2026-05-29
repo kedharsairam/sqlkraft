@@ -1,8 +1,8 @@
 ---
-title: sys.dm_sql_referencing_entities
-name: sys.dm_sql_referencing_entities
-category: execution
-description:
+name: 'sys.dm_sql_referencing_entities'
+title: 'sys.dm_sql_referencing_entities'
+category: 'execution'
+description: 'Transact-SQL database-level DDL trigger'
 pubDate: 2026-05-29
 ---
 
@@ -54,13 +54,13 @@ No
 
 Yes
 
-- A table is tracked as a referencing entity only when it references a Transact-SQL module,
+* A table is tracked as a referencing entity only when it references a Transact-SQL module,
 
 user-defined type, or XML schema collection in the definition of a computed column, CHECK
 
 constraint, or DEFAULT constraint.
 
-\*\* Numbered stored procedures with an integer value greater than 1 are not tracked as either a
+** Numbered stored procedures with an integer value greater than 1 are not tracked as either a
 
 referencing or referenced entity.
 

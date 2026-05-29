@@ -1,8 +1,8 @@
 ---
-title: sys.dm_os_buffer_descriptors
-name: sys.dm_os_buffer_descriptors
-category: execution
-description:
+name: 'sys.dm_os_buffer_descriptors'
+title: 'sys.dm_os_buffer_descriptors'
+category: 'execution'
+description: 'Nonuniform Memory Access node for the buffer. Is nullable.'
 pubDate: 2026-05-29
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: sys.dm_exec_describe_first_result_set_for_object
-name: sys.dm_exec_describe_first_result_set_for_object
-category: execution
-description:
+name: 'sys.dm_exec_describe_first_result_set_for_object'
+title: 'sys.dm_exec_describe_first_result_set_for_object'
+category: 'execution'
+description: 'The following example evaluates a batch that contains two Transact-SQL statements. The result'
 pubDate: 2026-05-29
 ---
 
@@ -21,8 +21,6 @@ sp_describe_undeclared_parameters
 sys.dm_exec_describe_first_result_set_for_object
 
 Last updated on 12/12/2025
-
-## Applies to:
 
 ## sys.dm_exec_describe_first_result_set_for_object
 
@@ -150,8 +148,8 @@ the value set by
 
 Precision of the column if numeric-based. Otherwise
 
-returns 0.
 
+## returns 0.
 Scale of column if numeric-based. Otherwise returns
 
 0.
@@ -220,20 +218,20 @@ NULL if the type returned is not associated with an
 
 XML schema collection.
 
-## Returns 1 if the returned data type is XML and that
 
+## Returns 1 if the returned data type is XML and that
 type is guaranteed to be a complete XML document
 
 (including a root node), as opposed to an XML
 
 fragment). Otherwise returns 0.
 
-## Returns 1 if the column is of a case-sensitive string
 
+## Returns 1 if the column is of a case-sensitive string
 type and 0 if it is not.
 
-## Returns 1 if the column is of a fixed-length CLR type
 
+## Returns 1 if the column is of a fixed-length CLR type
 and 0 if it is not.
 
 Name of the originating server returned by the
@@ -242,8 +240,8 @@ column in this result (if it originates from a remote
 
 server). The name is given as it appears in sys.servers.
 
-## Returns NULL if the column originates on the local
 
+## Returns NULL if the column originates on the local
 server, or if it cannot be determined which server it
 
 originates on. Is only populated if browsing
@@ -282,14 +280,14 @@ cannot be determined. Is only populated if browsing
 
 information is requested.
 
-## Returns 1 if the column is an identity column and 0 if
 
+## Returns 1 if the column is an identity column and 0 if
 not. Returns NULL if it cannot be determined that the
 
 column is an identity column.
 
-## Returns 1 if the column is part of a unique index
 
+## Returns 1 if the column is part of a unique index
 (including unique and primary constraint) and 0 if
 
 not. Returns NULL if it cannot be determined that the
@@ -298,20 +296,20 @@ column is part of a unique index. Only populated if
 
 browsing information is requested.
 
+
 ## Returns 1 if the column is updateable and 0 if not.
 
 ## Returns NULL if it cannot be determined that the
-
 column is updateable.
 
-## Returns 1 if the column is a computed column and 0
 
+## Returns 1 if the column is a computed column and 0
 if not. Returns NULL if it cannot be determined that
 
 the column is a computed column.
 
-## Returns 1 if the column is a sparse column and 0 if
 
+## Returns 1 if the column is a sparse column and 0 if
 not. Returns NULL if it cannot be determined that the
 
 column is a part of a sparse column set.
@@ -364,8 +362,8 @@ Contains an integer representing the error being
 
 returned. Maps to error_type_desc. See the list under
 
-remarks.
 
+## remarks.
 Contains a short uppercase string representing the
 
 error being returned. Maps to error_type. See the list
@@ -394,8 +392,8 @@ All errors that are not otherwise described.
 
 2
 
-SYNTAX
 
+## SYNTAX
 A syntax error occurred in the batch.
 
 3

@@ -1,8 +1,8 @@
 ---
-title: sys.dm_resource_governor_external_resource_pool_affinity
-name: sys.dm_resource_governor_external_resource_pool_affinity
-category: execution
-description:
+name: 'sys.dm_resource_governor_external_resource_pool_affinity'
+title: 'sys.dm_resource_governor_external_resource_pool_affinity'
+category: 'execution'
+description: 'The number of external processes running at the moment of the'
 pubDate: 2026-05-29
 ---
 
@@ -20,10 +20,6 @@ permission on the server.
 
 sys.dm_resource_governor_external_resource_pool_affinity (Transact-SQL)
 
-## Applies to:
-
-## Note
-
 SQL Server
 
 Azure SQL Database
@@ -38,8 +34,8 @@ SQL database in Microsoft
 
 Fabric
 
-## Returns information about the current resource pool state, the current configuration of
 
+## Returns information about the current resource pool state, the current configuration of
 resource pools, and resource pool statistics.
 
 The ID of the resource pool. Not nullable.
