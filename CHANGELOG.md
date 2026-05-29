@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.16.0] — 2026-05-30
+
+### Added
+
+- **Adaptive mobile navigation drawer** — Full-screen overlay menu with hamburger toggle for viewports ≤ 768px:
+  - Hamburger button with CSS-only animated X transition (3-line → rotate cross via `.is-active`)
+  - Dark semi-transparent overlay (`rgba(0,0,0,0.97)`) with `backdrop-filter: blur(16px)` matching the premium aesthetic
+  - Smooth `opacity` + `translateY` entrance/exit transitions (`0.2s ease-out`)
+  - Search trigger with `Ctrl+K` hint badge at the top of the drawer — tapping opens the search overlay
+  - All 11 nav links rendered with 17px type, `var(--space-sm)` vertical padding, and `border-radius: 6px` touch targets
+  - Body scroll locked (`overflow: hidden`) while drawer is open
+  - Drawer closes automatically when any nav link or search trigger is tapped
+  - Desktop nav links and search button hidden via `display: none` at the breakpoint; hamburger shown
+
 ## [0.15.0] — 2026-05-30
 
 ### Added
