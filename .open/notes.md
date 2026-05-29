@@ -88,5 +88,24 @@
 - `cd site && npm run build` — production build (27.85s, 6,591 pages)
 - `cd site && npm run lint` — prettier check (must pass for CI)
 
+## v0.13.0 — Stage 15 Spotlight-Grade Search UX & Keyboard Navigation
+
+### What was done
+- **Arrow-key navigation**: Track `activeIndex` state, ArrowUp/Down cycle through results, Enter navigates, `scrollIntoView({ block: 'nearest' })` for smooth scrolling
+- **Active selection styling**: `.result-item.active` gets `background: rgba(255,255,255,0.05)` + `border-left: 2px solid var(--text-secondary)` — clean neutral highlight
+- **Ctrl+K placeholder hint**: Input placeholder now shows `"Search references... (Ctrl+K)"`
+- **Programmatic navigation**: `navigateToResult()` helper syncs recently viewed list before navigating
+- **Accent→neutral sweep**: Result name color `var(--accent)` → `var(--text-primary)`, cat-badge from blue tint → neutral `rgba(255,255,255,0.06)`, hover from accent blue → neutral `rgba(255,255,255,0.05)`
+
+### Key commits
+- (pending — `feat: implement global keyboard shortcuts, arrow-key navigation, and contextual search snippets`)
+
+### Known issues
+- (none)
+
+### Build commands
+- `cd site && npm run build` — production build (26.95s, 6,591 pages)
+- `cd site && npm run lint` — prettier check (must pass for CI)
+
 ### Next Steps
-Stage 15 (TBD — search UX enhancements, cookbook browsing mode, or dark mode refinements)
+Stage 16 (TBD — cookbook browsing mode, mobile nav hamburger, or new collection ingestion)

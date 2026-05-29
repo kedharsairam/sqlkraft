@@ -1,6 +1,7 @@
 ---
 // SearchOverlay — Fuse.js client-side search modal
 // Keyboard: Ctrl+K / Cmd+K to open, Esc to close
+// Arrow keys to navigate results, Enter to select
 ---
 
 <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search">
@@ -22,7 +23,7 @@
         type="text"
         id="search-input"
         class="search-input"
-        placeholder="Search DMVs, errors, functions, statements..."
+        placeholder="Search references...  (Ctrl+K)"
         autocomplete="off"
         spellcheck="false"
       />
@@ -42,14 +43,18 @@
 
     if (!overlay || !input || !results) return;
 
-    // Lazy-load Fuse.js
+    // ── Keyboard navigation state ──
+    let activeIndex = -1;
+    let resultItems = [];
+
+    // ── Lazy-load Fuse.js ──
     const Fuse = (await import("fuse.js")).default;
 
-    // Load search index
+    // ── Load search index ──
     const resp = await fetch("/sqlkraft/data/search-index.json");
     const indexData = await resp.json();
 
-    // Configure Fuse
+    // ── Configure Fuse ──
     const fuse = new Fuse(indexData, {
       keys: [
         { name: "name", weight: 3 },
@@ -63,12 +68,35 @@
       minMatchCharLength: 2,
     });
 
-    // Track recently selected
+    // ── Track recently selected ──
     let recent = JSON.parse(sessionStorage.getItem("sk_recent") || "[]");
 
+    // ── Helpers ──
+    function navigateToResult(item) {
+      const idx = indexData.find((r) => item.href.endsWith(`/${r.slug}/`));
+      if (idx) {
+        recent = recent.filter((r) => r.slug !== idx.slug);
+        recent.unshift(idx);
+        if (recent.length > 5) recent.pop();
+        sessionStorage.setItem("sk_recent", JSON.stringify(recent));
+      }
+      window.location.href = item.href;
+    }
+
+    function updateActiveSelection() {
+      resultItems.forEach((el) => el.classList.remove("active"));
+      if (activeIndex >= 0 && activeIndex < resultItems.length) {
+        resultItems[activeIndex].classList.add("active");
+        resultItems[activeIndex].scrollIntoView({ block: "nearest" });
+      }
+    }
+
+    // ── Render functions ──
     function renderRecent() {
       if (recent.length === 0) {
         results.innerHTML = '<div class="search-empty">Start typing to search...</div>';
+        resultItems = [];
+        activeIndex = -1;
         return;
       }
       let html = '<div class="search-section-label">Recently viewed</div>';
@@ -76,6 +104,8 @@
         html += renderResultItem(r);
       });
       results.innerHTML = html;
+      resultItems = [...results.querySelectorAll(".result-item")];
+      activeIndex = -1;
     }
 
     function renderResultItem(r) {
@@ -102,7 +132,7 @@
       </a>`;
     }
 
-    // Keyboard shortcut: Ctrl+K / Cmd+K
+    // ── Global keyboard: Ctrl+K / Cmd+K open, Escape close ──
     document.addEventListener("keydown", (e) => {
       if ((e.ctrlKey || e.metaKey) && e.key === "k") {
         e.preventDefault();
@@ -114,15 +144,45 @@
       if (e.key === "Escape" && !overlay.classList.contains("hidden")) {
         overlay.classList.add("hidden");
         input.blur();
+        activeIndex = -1;
+        resultItems = [];
       }
     });
 
-    // Click backdrop to close
+    // ── Click backdrop to close ──
     overlay.querySelector(".search-backdrop").addEventListener("click", () => {
       overlay.classList.add("hidden");
+      activeIndex = -1;
+      resultItems = [];
     });
 
-    // Search on input
+    // ── Input keyboard navigation (ArrowUp/Down/Enter) ──
+    input.addEventListener("keydown", (e) => {
+      if (resultItems.length === 0) return;
+
+      if (e.key === "ArrowDown") {
+        e.preventDefault();
+        if (activeIndex < resultItems.length - 1) {
+          activeIndex++;
+        }
+        updateActiveSelection();
+      } else if (e.key === "ArrowUp") {
+        e.preventDefault();
+        if (activeIndex > 0) {
+          activeIndex--;
+        } else if (activeIndex === 0) {
+          activeIndex = -1; // Deselect first item
+        }
+        updateActiveSelection();
+      } else if (e.key === "Enter") {
+        e.preventDefault();
+        if (activeIndex >= 0 && activeIndex < resultItems.length) {
+          navigateToResult(resultItems[activeIndex]);
+        }
+      }
+    });
+
+    // ── Search on input ──
     let timeout = null;
     input.addEventListener("input", () => {
       clearTimeout(timeout);
@@ -136,23 +196,21 @@
         const items = raw.slice(0, 20).map((r) => r.item);
         if (items.length === 0) {
           results.innerHTML = '<div class="search-empty">No results found</div>';
+          resultItems = [];
+          activeIndex = -1;
           return;
         }
         results.innerHTML = items.map((r) => renderResultItem(r)).join("");
+        resultItems = [...results.querySelectorAll(".result-item")];
+        activeIndex = -1;
       }, 150);
     });
 
-    // Track click on result items for recent list
+    // ── Track click on result items for recent list ──
     results.addEventListener("click", (e) => {
       const link = e.target.closest("a.result-item");
       if (!link) return;
-      const idx = indexData.find((r) => link.href.endsWith(`/${r.slug}/`));
-      if (idx) {
-        recent = recent.filter((r) => r.slug !== idx.slug);
-        recent.unshift(idx);
-        if (recent.length > 5) recent.pop();
-        sessionStorage.setItem("sk_recent", JSON.stringify(recent));
-      }
+      navigateToResult(link);
     });
   })();
 </script>
@@ -239,18 +297,29 @@
     color: var(--text-secondary, #8b949e);
     letter-spacing: 0.5px;
   }
+
+  /* ── Result items ── */
   .result-item {
     display: block;
-    padding: 10px 18px;
+    padding: 10px 18px 10px 16px;
+    border-left: 2px solid transparent;
     text-decoration: none;
     color: inherit;
-    transition: background 0.15s;
+    transition:
+      background 0.15s,
+      border-color 0.15s;
     border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   }
   .result-item:hover {
-    background: rgba(47, 128, 237, 0.08);
+    background: rgba(255, 255, 255, 0.05);
     text-decoration: none;
   }
+  /* Active (keyboard-selected) state */
+  .result-item.active {
+    background: rgba(255, 255, 255, 0.05);
+    border-left-color: var(--text-secondary, #8b949e);
+  }
+
   .result-top {
     display: flex;
     align-items: center;
@@ -261,14 +330,14 @@
     font-family: var(--font-mono, monospace);
     font-size: 14px;
     font-weight: 600;
-    color: var(--accent, #2f80ed);
+    color: var(--text-primary, #e6edf3);
   }
   .result-cat {
     font-size: 10px;
     padding: 1px 6px;
     border-radius: 3px;
-    background: rgba(47, 128, 237, 0.12);
-    color: var(--accent, #2f80ed);
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-secondary, #8b949e);
     text-transform: capitalize;
   }
   .result-coll {
