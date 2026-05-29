@@ -1,0 +1,316 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Trace flag 1204 and trace flag 1222 — Architecture Guide — SqlKraft</title><meta name="description" content="### Deadlock extended event"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Trace flag 1204 and trace flag 1222</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Trace flag 1204 and trace flag 1222</h1> <p class="doc-lede" data-astro-cid-hditk3lm>### Deadlock extended event</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <h3 id="deadlock-extended-event">Deadlock extended event</h3>
+<p>When deadlocks occur and trace flag 1204 or trace flag 1222 is enabled, deadlock details are</p>
+<p>reported in the SQL Server error log. Trace flag 1204 reports deadlock information formatted</p>
+<p>by each node involved in the deadlock. Trace flag 1222 formats deadlock information, first by</p>
+<p>processes and then by resources. It’s possible to enable both trace flags to obtain two</p>
+<p>representations of the same deadlock event.</p>
+<p>In addition to defining the properties of trace flags 1204 and 1222, the following table also</p>
+<p>shows the similarities and differences.</p>
+<p>Output</p>
+<p>format</p>
+<p>Output is captured in the SQL Server</p>
+<p>error log.</p>
+<p>Focused on the</p>
+<p>nodes involved</p>
+<p>in the deadlock.</p>
+<p>Each node has a</p>
+<p>dedicated</p>
+<p>section, and the</p>
+<p>final section</p>
+<p>describes the</p>
+<p>deadlock victim.</p>
+<h2 id="returns-information-in-an">Returns information in an</h2>
+<p>XML-like format that doesn’t</p>
+<p>conform to an XML Schema</p>
+<p>Definition (XSD) schema. The</p>
+<p>format has three major</p>
+<p>sections. The first section</p>
+<p>declares the deadlock victim.</p>
+<p>The second section describes</p>
+<p>each process involved in the</p>
+<p>deadlock. The third section</p>
+<p>describes the resources that</p>
+<p>are synonymous with nodes in</p>
+<p>trace flag 1204.</p>
+<p>Identifying</p>
+<p>attributes</p>
+<p>Identifies the</p>
+<p>session ID thread in cases of parallel</p>
+<p>processes. The entry</p>
+<p>,</p>
+<p>where</p>
+<p>is replaced by the SPID</p>
+<p>value, represents the main thread. The</p>
+<p>entry</p>
+<p>, where</p>
+<p>is</p>
+<p>replaced by the SPID value and</p>
+<p>is</p>
+<p>greater than 0, represents the</p>
+<p>execution context for the same SPID.</p>
+<p>Represents</p>
+<p>the entry number</p>
+<p>in the deadlock</p>
+<p>chain.</p>
+<p>The lock</p>
+<p>owner can be</p>
+<p>part of these</p>
+<p>lists:</p>
+<p>Represents</p>
+<p>the physical memory address</p>
+<p>of the task (see</p>
+<p>sys.dm_os_tasks</p>
+<p>) that was</p>
+<p>selected as a deadlock victim.</p>
+<p>The value might be zero in the</p>
+<p>case of an unresolved</p>
+<p>deadlock.</p>
+<p>Represents</p>
+<p>）</p>
+<p>Important</p>
+<p>Avoid using trace flags 1204 and 1222 on workload-intensive systems that are</p>
+<p>experiencing deadlocks. Using these trace flags might introduce performance issues.</p>
+<p>Instead, use the</p>
+<p>to capture the necessary information.</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p>(</p>
+<p>for trace flag 1222).</p>
+<p>Identifies the batch from which code</p>
+<p>execution is requesting or holding a</p>
+<p>lock. When Multiple Active Result Sets</p>
+<p>(MARS) is disabled, the BatchID value</p>
+<p>is 0. When MARS is enabled, the value</p>
+<p>for active batches is 1 to</p>
+<p>n</p>
+<p>. If there are</p>
+<p>no active batches in the session,</p>
+<p>BatchID is 0.</p>
+<p>Specifies the type of lock for a</p>
+<p>particular resource that is requested,</p>
+<p>granted, or waited on by a thread.</p>
+<p>Mode can be Intent Shared (</p>
+<p>),</p>
+<p>Shared (</p>
+<p>), Update (</p>
+<p>), Intent</p>
+<p>Exclusive (</p>
+<p>), Shared with Intent</p>
+<p>Exclusive (</p>
+<p>), and Exclusive (</p>
+<p>).</p>
+<p>(</p>
+<p>for trace flag 1222). Lists</p>
+<p>the line number in the current batch of</p>
+<p>statements that was being executed</p>
+<p>when the deadlock occurred.</p>
+<p>(</p>
+<p>for trace flag</p>
+<p>1222). Lists all the statements in the</p>
+<p>current batch.</p>
+<p>Enumerates the</p>
+<p>current owners</p>
+<p>of the resource.</p>
+<p>Enumerates the</p>
+<p>current owners</p>
+<p>that are trying to</p>
+<p>convert their</p>
+<p>locks to a higher</p>
+<p>level.</p>
+<p>Enumerates</p>
+<p>current new lock</p>
+<p>requests for the</p>
+<p>resource.</p>
+<p>Describes the</p>
+<p>type of</p>
+<p>statement</p>
+<p>(</p>
+<p>,</p>
+<p>,</p>
+<p>, or</p>
+<p>) on which</p>
+<p>the threads have</p>
+<h2 id="permissions">permissions.</h2>
+<p>Specifies</p>
+<p>the participating</p>
+<p>thread that the</p>
+<p>Database Engine</p>
+<p>chooses as the</p>
+<p>victim to break</p>
+<p>the deadlock</p>
+<p>cycle. The chosen</p>
+<p>thread and all of</p>
+<p>its execution</p>
+<p>contexts are</p>
+<p>terminated.</p>
+<p>Represents the</p>
+<p>two or more</p>
+<p>the Transact-SQL call stack</p>
+<p>that is being executed at the</p>
+<p>time the deadlock occurs.</p>
+<p>Represents deadlock</p>
+<p>priority.</p>
+<p>Log space used by</p>
+<p>the task.</p>
+<p>The ID of the</p>
+<p>transaction that has control of</p>
+<p>the request.</p>
+<p>State of the task. For</p>
+<p>more information, see</p>
+<p>sys.dm_os_tasks</p>
+<p>.</p>
+<p>The resource</p>
+<p>needed by the task.</p>
+<p>Time in milliseconds</p>
+<p>waiting for the resource.</p>
+<p>The scheduler</p>
+<p>associated with this task. See</p>
+<p>sys.dm_os_schedulers</p>
+<p>.</p>
+<p>The name of the</p>
+<p>workstation.</p>
+<p>The current</p>
+<p>transaction isolation level.</p>
+<p>The ID of the</p>
+<p>transaction that has control of</p>
+<p>the request.</p>
+<p>The ID of the</p>
+<p>database.</p>
+<p>The last</p>
+<p>time a client process started</p>
+<p>batch execution.</p>
+<p>The last</p>
+<p>execution</p>
+<p>contexts from</p>
+<p>the same SPID</p>
+<p>that are involved</p>
+<p>in the deadlock</p>
+<p>cycle.</p>
+<p>time a client process</p>
+<p>completed batch execution.</p>
+<p>and</p>
+<p>The set options</p>
+<p>on this session. These values</p>
+<p>are bitmasks representing the</p>
+<p>options usually controlled by</p>
+<p>statements such as</p>
+<p>and</p>
+<p>.</p>
+<p>For more information, see</p>
+<p>@@OPTIONS</p>
+<p>.</p>
+<p>Represents the HoBT (heap or</p>
+<p>B-tree) ID.</p>
+<p>Resource</p>
+<p>attributes</p>
+<p>identifies the single row within a</p>
+<p>table on which a lock is held or</p>
+<p>requested. RID is represented as RID:</p>
+<p>. For</p>
+<p>example,</p>
+<p>.</p>
+<p>identifies the table on which a</p>
+<p>lock is held or requested.</p>
+<p>is</p>
+<p>represented as</p>
+<p>. For example,</p>
+<p>.</p>
+<p>Identifies the key range within an</p>
+<p>index on which a lock is held or</p>
+<p>requested. KEY is represented as KEY:</p>
+<p>(</p>
+<p>index key hash value</p>
+<p>).</p>
+<p>For example,</p>
+<p>.</p>
+<p>Identifies the page resource on</p>
+<p>which a lock is held or requested.</p>
+<p>is represented as</p>
+<p>. For example,</p>
+<p>.</p>
+<p>Identifies the extent structure.</p>
+<p>is represented as</p>
+<p>. For example,</p>
+<p>.</p>
+<p>None exclusive</p>
+<p>to this trace flag.</p>
+<p>None exclusive to this trace</p>
+<p>flag.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SPID:</span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">x</span><span style="color:#F97583">></span><span style="color:#E1E4E8"> ECID:</span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">x</span><span style="color:#F97583">></span><span style="color:#E1E4E8">.</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SPID:</span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">x</span><span style="color:#F97583">></span><span style="color:#E1E4E8"> ECID:</span><span style="color:#79B8FF">0</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">x</span><span style="color:#F97583">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SPID:</span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">x</span><span style="color:#F97583">></span><span style="color:#E1E4E8"> ECID:</span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">y</span><span style="color:#F97583">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">x</span><span style="color:#F97583">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">y</span><span style="color:#F97583">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Node</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Lists</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">deadlock victim</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">executionstack</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">BatchID</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sbid</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Mode</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">IS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">S</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">U</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">IX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SIX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">X</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">Line</span><span style="color:#E1E4E8"> #</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">line</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Input Buf</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">inputbuf</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">Grant</span><span style="color:#E1E4E8"> List</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Convert List</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Wait List</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">Statement</span><span style="color:#F97583"> Type</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Victim </span><span style="color:#F97583">Resource</span></span>
+<span class="line"><span style="color:#F97583">Owner</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">Next</span><span style="color:#E1E4E8"> Branch</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">priority</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">logused</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">owner</span><span style="color:#E1E4E8"> id</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">status</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">waitresource</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">waittime</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">schedulerid</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">hostname</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">isolationlevel</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Xactid</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">currentdb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">lastbatchstarted</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">lastbatchcompleted</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">clientoption1</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">clientoption2</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span></span>
+<span class="line"><span style="color:#F97583">NOCOUNT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#E1E4E8"> XACTABORT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">associatedObjectId</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">RID</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">db_id:file_id:page_no:row_no</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">RID: </span><span style="color:#79B8FF">6</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">20789</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">0</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OBJECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OBJECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OBJECT</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">db_id:object_id</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TAB:</span></span>
+<span class="line"><span style="color:#79B8FF">6</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">2009058193</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">KEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">db_id:hobt_id</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">KEY</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#79B8FF">6</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">72057594057457664</span><span style="color:#E1E4E8"> (350007a4d329)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PAG</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PAG</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PAG:</span></span>
+<span class="line"><span style="color:#E1E4E8">db_id:file_id:page_no</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PAG: </span><span style="color:#79B8FF">6</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">20789</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">EXT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">EXT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">EXT:</span></span>
+<span class="line"><span style="color:#E1E4E8">db_id:file_id:extent_no</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">EXT: </span><span style="color:#79B8FF">6</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">9</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

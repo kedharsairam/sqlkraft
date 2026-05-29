@@ -1,0 +1,261 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Forced parameterization — Architecture Guide — SqlKraft</title><meta name="description" content="When processing complex Transact-SQL statements, the relational engine can have difficulty"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Forced parameterization</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>io fundamentals</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#io-fundamentals</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Forced parameterization</h1> <p class="doc-lede" data-astro-cid-hditk3lm>When processing complex Transact-SQL statements, the relational engine can have difficulty</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>SQL</p>
+<p>When processing complex Transact-SQL statements, the relational engine can have difficulty</p>
+<p>determining which expressions can be parameterized. To increase the ability of the relational</p>
+<p>engine to match complex Transact-SQL statements to existing, unused execution plans,</p>
+<p>explicitly specify the parameters using either</p>
+<p>or parameter markers.</p>
+<p>Under the default behavior of simple parameterization, SQL Server parameterizes a relatively</p>
+<p>small class of queries. However, you can specify that all queries in a database be</p>
+<p>parameterized, subject to certain limitations, by setting the</p>
+<p>option of the</p>
+<p>command to</p>
+<p>. Doing so can improve the performance of databases that</p>
+<p>experience high volumes of concurrent queries by reducing the frequency of query</p>
+<p>compilations.</p>
+<p>Alternatively, you can specify that a single query, and any others that are syntactically</p>
+<p>equivalent but differ only in their parameter values, be parameterized.</p>
+<p>You can override the default simple parameterization behavior of SQL Server by specifying that</p>
+<p>all</p>
+<p>,</p>
+<p>,</p>
+<p>, and</p>
+<p>statements in a database be parameterized, subject to</p>
+<p>７</p>
+<p>Note</p>
+<p>When the</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>, or</p>
+<p>arithmetic operators are used to perform implicit or explicit</p>
+<p>conversion of int, smallint, tinyint, or bigint constant values to the float, real, decimal or</p>
+<p>numeric data types, SQL Server applies specific rules to calculate the type and precision of</p>
+<p>the expression results. However, these rules differ, depending on whether the query is</p>
+<p>parameterized or not. Therefore, similar expressions in queries can, in some cases,</p>
+<p>produce differing results.</p>
+<p></p>
+<p>Tip</p>
+<p>When using an Object-Relational Mapping (ORM) solution such as Entity Framework (EF),</p>
+<p>application queries like manual LINQ query trees or certain raw SQL queries might not be</p>
+<p>parameterized, which impacts plan re-use and the ability to track queries in the Query</p>
+<p>Store. For more information, see</p>
+<p>and</p>
+<p>.</p>
+<p>certain limitations. Forced parameterization is enabled by setting the</p>
+<p>option</p>
+<p>to</p>
+<p>in the</p>
+<p>statement. Forced parameterization might improve the</p>
+<p>performance of certain databases by reducing the frequency of query compilations and</p>
+<p>recompilations. Databases that might benefit from forced parameterization are generally those</p>
+<p>that experience high volumes of concurrent queries from sources such as point-of-sale</p>
+<p>applications.</p>
+<p>When the</p>
+<p>option is set to</p>
+<p>, any literal value that appears in a</p>
+<p>,</p>
+<p>,</p>
+<p>, or</p>
+<p>statement, submitted in any form, is converted to a parameter</p>
+<p>during query compilation. The exceptions are literals that appear in the following query</p>
+<p>constructs:</p>
+<p>statements.</p>
+<p>Statements inside the bodies of stored procedures, triggers, or user-defined functions.</p>
+<p>SQL Server already reuses query plans for these routines.</p>
+<p>Prepared statements that have already been parameterized on the client-side application.</p>
+<p>Statements that contain XQuery method calls, where the method appears in a context</p>
+<p>where its arguments would typically be parameterized, such as a</p>
+<p>clause. If the</p>
+<p>method appears in a context where its arguments wouldn’t be parameterized, the rest of</p>
+<p>the statement is parameterized.</p>
+<p>Statements inside a Transact-SQL cursor. (</p>
+<p>statements inside API cursors are</p>
+<p>parameterized.)</p>
+<p>Deprecated query constructs.</p>
+<p>Any statement that is run in the context of</p>
+<p>or</p>
+<p>set to</p>
+<p>.</p>
+<p>Statements that contain more than 2,097 literals that are eligible for parameterization.</p>
+<p>Statements that reference variables, such as</p>
+<p>.</p>
+<p>Statements that contain the</p>
+<p>query hint.</p>
+<p>Statements that contain a</p>
+<p>clause.</p>
+<p>Statements that contain a</p>
+<p>clause.</p>
+<p>Additionally, the following query clauses aren’t parameterized. In these cases, only the clauses</p>
+<p>aren’t parameterized. Other clauses within the same query can be eligible for forced</p>
+<p>parameterization.</p>
+<p>The &#x3C;select_list> of any</p>
+<p>statement. This includes</p>
+<p>lists of subqueries and</p>
+<p>lists inside</p>
+<p>statements.</p>
+<p>Subquery</p>
+<p>statements that appear inside an</p>
+<p>statement.</p>
+<p>The</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>, or</p>
+<p>clauses of</p>
+<p>a query.</p>
+<h2 id="arguments-either-direct-or-as-subexpressions-to">Arguments, either direct or as subexpressions, to</h2>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>, or any</p>
+<p>operator.</p>
+<p>The pattern and escape_character arguments of a</p>
+<p>clause.</p>
+<p>The style argument of a</p>
+<p>clause.</p>
+<p>Integer constants inside an</p>
+<p>clause.</p>
+<p>Constants specified by using ODBC extension syntax.</p>
+<p>Constant-foldable expressions that are arguments of the</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>, and</p>
+<p>operators.</p>
+<p>When considering eligibility for forced parameterization, SQL Server considers an</p>
+<p>expression to be constant-foldable when either of the following conditions is true:</p>
+<p>No columns, variables, or subqueries appear in the expression.</p>
+<p>The expression contains a</p>
+<p>clause.</p>
+<h2 id="arguments-to-query-hint-clauses-these-include-the">Arguments to query hint clauses. These include the</h2>
+<p>number_of_rows</p>
+<p>argument of the</p>
+<p>query hint, the</p>
+<p>number_of_processors</p>
+<p>argument of the</p>
+<p>query hint, and the</p>
+<p>number</p>
+<p>argument of the</p>
+<p>query hint.</p>
+<p>Parameterization occurs at the level of individual Transact-SQL statements. In other words,</p>
+<p>individual statements in a batch are parameterized. After compiling, a parameterized query is</p>
+<p>executed in the context of the batch in which it was originally submitted. If an execution plan</p>
+<p>for a query is cached, you can determine whether the query was parameterized by referencing</p>
+<p>the sql column of the</p>
+<p>dynamic management view. If a query is</p>
+<p>parameterized, the names and data types of parameters come before the text of the submitted</p>
+<p>batch in this column, such as (@1 tinyint).</p>
+<p>When SQL Server parameterizes literals, the parameters are converted to the following data</p>
+<p>types:</p>
+<p>Integer literals whose size would otherwise fit within the int data type parameterize to int.</p>
+<p>Larger integer literals that are parts of predicates that involve any comparison operator</p>
+<p>(includes</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>, and</p>
+<p>) parameterize</p>
+<p>to numeric(38,0). Larger literals that aren’t parts of predicates that involve comparison</p>
+<p>operators parameterize to numeric whose precision is just large enough to support its</p>
+<p>size and whose scale is 0.</p>
+<p>７</p>
+<p>Note</p>
+<p>Parameter names are arbitrary. Users or applications should not rely on a particular</p>
+<p>naming order. Also, the following can change between versions of SQL Server and Service</p>
+<p>Pack upgrades: Parameter names, the choice of literals that are parameterized, and the</p>
+<p>spacing in the parameterized text.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_executesql</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FORCED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">AdventureWorks2022</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.Product</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">ProductSubcategoryID </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 4</span><span style="color:#E1E4E8">;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">+</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">-</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">*</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">/</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">%</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FORCED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FORCED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span><span style="color:#E1E4E8">...</span><span style="color:#F97583">EXECUTE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHERE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ANSI_PADDING</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ANSI_NULLS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHERE</span><span style="color:#79B8FF"> T</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">col2</span><span style="color:#F97583"> >=</span><span style="color:#E1E4E8"> @bb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">RECOMPILE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">COMPUTE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHERE</span><span style="color:#E1E4E8"> CURRENT OF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">IF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TOP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TABLESAMPLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">HAVING</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">GROUP BY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ORDER BY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OUTPUT</span><span style="color:#E1E4E8">...</span><span style="color:#F97583">INTO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#F97583"> XML</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">OPENROWSET</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">OPENQUERY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">OPENDATASOURCE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">OPENXML</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FULLTEXT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">LIKE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CONVERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">IDENTITY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">+</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">-</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">*</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">/</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">%</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FAST</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MAXDOP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">MAXRECURSION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">syscacheobjects</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">&#x3C;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">&#x3C;=</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">=</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">!=</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">>=</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">!</span><span style="color:#F97583">&#x3C;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">!</span><span style="color:#F97583">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">&#x3C;></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">ALL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">ANY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SOME</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BETWEEN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">IN</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

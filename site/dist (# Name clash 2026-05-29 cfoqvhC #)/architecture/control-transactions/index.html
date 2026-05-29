@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Control transactions — Architecture Guide — SqlKraft</title><meta name="description" content="that leave the data in a consistent state relative to the organization's business rules. The"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Control transactions</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>io fundamentals</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#io-fundamentals</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Control transactions</h1> <p class="doc-lede" data-astro-cid-hditk3lm>that leave the data in a consistent state relative to the organization&#39;s business rules. The</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>that leave the data in a consistent state relative to the organization’s business rules. The</p>
+<p>application performs these modifications in a single transaction so that the Database Engine can</p>
+<p>enforce the integrity of the transaction.</p>
+<p>It’s the responsibility of an enterprise database system, such as an instance of the Database</p>
+<p>Engine, to provide mechanisms ensuring the integrity of each transaction. The Database Engine</p>
+<p>provides:</p>
+<p>Locking facilities that preserve transaction isolation.</p>
+<p>Logging facilities to ensure transaction durability. For fully durable transactions the log</p>
+<p>record is hardened to disk before the transactions commits. Thus, even if the server</p>
+<p>hardware, operating system, or the instance of the Database Engine itself fails, the instance</p>
+<p>uses the transaction logs upon restart to automatically roll back any incomplete transactions</p>
+<p>to the point of the system failure. Delayed durable transactions commit before the</p>
+<p>transaction log record is hardened to disk. Such transactions might be lost if there’s a</p>
+<p>system failure before the log record is hardened to disk. For more information on delayed</p>
+<p>transaction durability, see the article</p>
+<p>Control Transaction Durability</p>
+<p>.</p>
+<p>Transaction management features that enforce transaction atomicity and consistency. After</p>
+<p>a transaction has started, it must be successfully completed (committed), or the Database</p>
+<p>Engine undoes all of the data modifications made by the transaction since the transaction</p>
+<p>started. This operation is referred to as rolling back a transaction because it returns the data</p>
+<p>to the state it was prior to those changes.</p>
+<p>Applications control transactions mainly by specifying when a transaction starts and ends. This</p>
+<p>can be specified by using either Transact-SQL statements or database application programming</p>
+<p>interface (API) functions. The system must also be able to correctly handle errors that terminate a</p>
+<p>transaction before it completes. For more information, see</p>
+<p>Transactions</p>
+<p>,</p>
+<p>Performing Transactions</p>
+<p>in ODBC</p>
+<p>, and</p>
+<p>Transactions in SQL Server Native Client</p>
+<p>.</p>
+<p>By default, transactions are managed at the connection level. When a transaction is started on a</p>
+<p>connection, all Transact-SQL statements executed on that connection are part of the transaction</p>
+<p>until the transaction ends. However, under a multiple active result set (MARS) session, a Transact-</p>
+<p>SQL explicit or implicit transaction becomes a batch-scoped transaction that is managed at the</p>
+<p>batch level. When the batch completes, if the batch-scoped transaction isn’t committed or rolled</p>
+<p>back, it’s automatically rolled back by the Database Engine. For more information, see</p>
+<p>Using</p>
+<p>Multiple Active Result Sets (MARS)</p>
+<p>.</p>
+<h3 id="explicit-transactions">Explicit transactions</h3>
+<h3 id="autocommit-transactions">Autocommit Transactions</h3> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Transact-SQL — Architecture Guide — SqlKraft</title><meta name="description" content="The use of the vardecimal storage format."><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Transact-SQL</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Transact-SQL</h1> <p class="doc-lede" data-astro-cid-hditk3lm>The use of the vardecimal storage format.</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>The use of the vardecimal storage format.</p>
+<p>Vardecimal storage format is</p>
+<p>deprecated. SQL Server 2019 (15.x)</p>
+<p>data compression, compresses</p>
+<p>decimal values, and other data types.</p>
+<p>We recommend that you use data</p>
+<p>compression instead of the vardecimal</p>
+<p>storage format.</p>
+<p>Vardecimal storage format</p>
+<p>Use of the</p>
+<p>procedure.</p>
+<p>Vardecimal storage format is</p>
+<p>deprecated. SQL Server 2019 (15.x)</p>
+<p>data compression, compresses</p>
+<p>decimal values as well as other data</p>
+<p>types. We recommend that you use</p>
+<p>data compression instead of the</p>
+<p>vardecimal storage format.</p>
+<p>Use of the</p>
+<p>procedure.</p>
+<p>Use data compression and the</p>
+<p>procedure instead.</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>WRITETEXT</p>
+<p>UPDATETEXT</p>
+<p>READTEXT</p>
+<p>None</p>
+<p>UPDATETEXT or WRITETEXT</p>
+<p>READTEXT</p>
+<p>TEXTPTR()</p>
+<p>TEXTVALID()</p>
+<p>None</p>
+<p>TEXTPTR</p>
+<p>TEXTVALID</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>function-calling sequence</p>
+<p>Replaced by</p>
+<p>.</p>
+<p>For example, replace</p>
+<p>’::’ function calling syntax</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>with</p>
+<p>.</p>
+<p>Three-part and four-part column</p>
+<p>references.</p>
+<p>Two-part names are the standard-compliant behavior.</p>
+<p>More than two-part column</p>
+<p>name</p>
+<p>A string enclosed in quotation marks</p>
+<p>used as a column alias for an</p>
+<p>expression in a</p>
+<p>list:</p>
+<p>’</p>
+<p>string_alias</p>
+<p>’ =</p>
+<p>expression</p>
+<p>expression</p>
+<p>[AS]</p>
+<p>column_alias</p>
+<p>expression</p>
+<p>[AS] [</p>
+<p>column_alias</p>
+<p>]</p>
+<p>expression</p>
+<p>[AS] ”</p>
+<p>column_alias</p>
+<p>”</p>
+<p>expression</p>
+<p>[AS] ’</p>
+<p>column_alias</p>
+<p>’</p>
+<p>column_alias</p>
+<p>=</p>
+<p>expression</p>
+<p>String literals as column</p>
+<p>aliases</p>
+<p>Numbered procedures</p>
+<p>None. Don’t use.</p>
+<p>ProcNums</p>
+<p>table_name.index_name</p>
+<h2 id="syntax-in">syntax in</h2>
+<h2 id="syntax-in-1">syntax in</h2>
+<p>.</p>
+<p>with two-part</p>
+<p>name</p>
+<p>Not ending Transact-SQL statements</p>
+<p>with a semicolon.</p>
+<p>End Transact-SQL statements with a semicolon (</p>
+<p>).</p>
+<p>None</p>
+<p>Use custom case-by-case solution with</p>
+<p>or derived table.</p>
+<p>as a column name in DML</p>
+<p>statements.</p>
+<p>Use $rowguid.</p>
+<p>IDENTITYCOL as a column name in</p>
+<p>DML statements.</p>
+<p>Use $identity.</p>
+<p>IDENTITYCOL</p>
+<p>Use of #, ## as temporary table and</p>
+<p>temporary stored procedure names.</p>
+<p>Use at least one additional character.</p>
+<p>’#’ and ’##’ as the name of</p>
+<p>temporary tables and stored</p>
+<p>procedures</p>
+<p>Use of @, or @@ as Transact-SQL</p>
+<p>identifiers.</p>
+<p>Don’t use @ or @@ or names that begin with @@ as</p>
+<p>identifiers.</p>
+<p>’@’ and names that start with</p>
+<p>’@@’ as Transact-SQL</p>
+<p>identifiers</p>
+<p>Use of</p>
+<p>keyword as default</p>
+<p>value.</p>
+<p>Don’t use the word</p>
+<p>as a default value.</p>
+<p>keyword as a default</p>
+<p>value</p>
+<p>Use of a space as a separator</p>
+<p>between table hints.</p>
+<p>Use a comma to separate table hints.</p>
+<p>Multiple table hints without</p>
+<p>comma</p>
+<p>The select list of an aggregate</p>
+<p>indexed view must contain</p>
+<p>COUNT_BIG (*) in 90 compatibility</p>
+<p>mode</p>
+<p>Use COUNT_BIG (*).</p>
+<p>Index view selects list without</p>
+<p>COUNT_BIG(*)</p>
+<p>The indirect application of table hints</p>
+<p>to an invocation of a multi-statement</p>
+<p>table-valued function (TVF) through a</p>
+<p>view.</p>
+<p>None.</p>
+<p>Indirect TVF hints</p>
+<h2 id="syntax">syntax:</h2>
+<p>and</p>
+<p>database option</p>
+<p>None.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">sql_dependencies</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">sql_expression_dependencies</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">sql_dependencies</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_db_vardecimal_storage_format</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_db_vardecimal_storage_format</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_estimated_rowsize_reduction_for_vardecimal</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_estimate_data_compression_savings</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_estimated_rowsize_reduction_for_vardecimal</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">::</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#F97583"> &#x3C;</span><span style="color:#E1E4E8">column_list</span><span style="color:#F97583">></span><span style="color:#F97583"> FROM</span><span style="color:#E1E4E8"> sys.</span><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">function_name</span><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#E1E4E8">()</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#F97583"> *</span><span style="color:#F97583"> FROM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">::fn_virtualfilestats(</span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">,</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#F97583"> *</span><span style="color:#F97583"> FROM</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">fn_virtualfilestats</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">,</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> INDEX</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">index_name</span><span style="color:#F97583">></span><span style="color:#F97583"> ON</span><span style="color:#F97583"> &#x3C;</span><span style="color:#E1E4E8">table_name</span><span style="color:#F97583">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">GROUP BY</span><span style="color:#E1E4E8"> ALL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UNION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">GROUP BY</span><span style="color:#E1E4E8"> ALL</span></span>
+<span class="line"><span style="color:#F97583">ROWGUIDCOL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ROWGUIDCOL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DEFAULT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DEFAULT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DEFAULT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#F97583"> READONLY</span></span>
+<span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#F97583"> READWRITE</span></span>
+<span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#F97583"> READ_ONLY</span></span>
+<span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#F97583"> READ_WRITE</span></span>
+<span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#F97583"> READONLY</span></span>
+<span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#F97583"> READWRITE</span></span>
+<span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> ANSI_NULLS</span><span style="color:#F97583"> OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ANSI_NULLS</span></span>
+<span class="line"><span style="color:#F97583">OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> ANSI_NULLS</span><span style="color:#F97583"> OFF</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

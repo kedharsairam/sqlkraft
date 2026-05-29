@@ -1,0 +1,105 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Last page/trailing page insert contention — Architecture Guide — SqlKraft</title><meta name="description" content="means some statistics such as"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Last page/trailing page insert contention</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>io fundamentals</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#io-fundamentals</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Last page/trailing page insert contention</h1> <p class="doc-lede" data-astro-cid-hditk3lm>means some statistics such as</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>means some statistics such as</p>
+<p>are rarely useful. The following command can</p>
+<p>be used to reset the wait statistics for this DMV:</p>
+<p>SQL</p>
+<p>The following scenarios have been observed to cause excessive latch contention.</p>
+<p>A common OLTP practice is to create a clustered index on an identity or date column. This</p>
+<p>helps maintain good physical organization of the index, which can greatly benefit performance</p>
+<p>of both reads and writes to the index. This schema design can inadvertently lead to latch</p>
+<p>contention however. This issue is most commonly seen with a large table, with small rows; and</p>
+<p>inserts into an index containing a sequentially increasing leading key column such as ascending</p>
+<p>integer or datetime key. In this scenario, the application rarely if ever performs updates or</p>
+<p>deletes, the exception being for archiving operations.</p>
+<p>In the following example, thread one and thread two both want to perform an insert of a</p>
+<p>record that will be stored on page 299. From a logical locking perspective, there’s no problem,</p>
+<p>as row level locks are used, and exclusive locks on both records on the same page can be held</p>
+<p>at the same time. However to ensure integrity of physical memory only one thread at a time</p>
+<p>can acquire an exclusive latch so access to the page is serialized to prevent lost updates in</p>
+<p>memory. In this case, thread 1 acquires the exclusive latch; and thread 2 waits, which registers a</p>
+<p>wait for this resource in the wait statistics. This is displayed through the</p>
+<p>value in the</p>
+<p>DMV.</p>
+<p>SQL Server latch contention scenarios</p>
+<p>This contention is commonly referred to as “Last Page Insert” contention because it occurs on</p>
+<p>the right-most edge of the B-tree as displayed in the following diagram:</p>
+<p>This type of latch contention can be explained as follows. When a new row is inserted into an</p>
+<p>index, SQL Server uses the following algorithm to execute the modification:</p>
+<ol>
+<li>
+<p>Traverse the B-tree to locate the correct page to hold the new record.</p>
+</li>
+<li>
+<p>Latch the page with</p>
+</li>
+</ol>
+<p>, preventing others from modifying it, and acquire</p>
+<p>shared latches (</p>
+<p>) on all the non-leaf pages.</p>
+<p>７</p>
+<p>Note</p>
+<p>In some cases, the SQL Engine requires</p>
+<p>latches to be acquired on non-leaf B-tree</p>
+<p>pages as well. For example, when a page-split occurs, any pages that are directly</p>
+<p>affected need to be exclusively latched (</p>
+<p>).</p>
+<ol start="3">
+<li>
+<p>Record a log entry that the row has been modified.</p>
+</li>
+<li>
+<p>Add the row to the page and mark the page as dirty.</p>
+</li>
+<li>
+<p>Unlatch all pages.</p>
+</li>
+</ol>
+<p>If the table index is based upon a sequentially increasing key, each new insert goes to the same</p>
+<p>page at the end of the B-tree, until that page is full. Under high-concurrency scenarios, this</p>
+<p>might cause contention on the rightmost edge of the B-tree and can occur on clustered and</p>
+<p>non-clustered indexes. Tables that are affected by this type of contention primarily accept</p>
+<p>queries, and pages for the problematic indexes are normally relatively dense (for</p>
+<p>example, a row size ~165 bytes (including row overhead) equals ~49 rows per page). In this</p>
+<p>insert-heavy example, we expect</p>
+<p>/</p>
+<p>waits to occur, and this is the</p>
+<p>typical observation. To examine Page Latch waits vs. Tree Page Latch waits, use the</p>
+<p>DMV.</p>
+<p>The following table summarizes the major factors observed with this type of latch contention:</p>
+<p>This type of latch contention occurs mainly on 16+ CPU core systems and most</p>
+<p>commonly on 32+ CPU core systems.</p>
+<p>Uses a sequentially increasing identity value as a leading column in an index on a table</p>
+<p>for transactional data.</p>
+<p>The index has an increasing primary key with a high rate of inserts.</p>
+<p>The index has at least one sequentially increasing column value.</p>
+<p>Typically small row size with many rows per page.</p>
+<p>Many threads contending for same resource with exclusive (</p>
+<p>) or shared (</p>
+<p>) latch</p>
+<p>waits associated with the same resource_description in the</p>
+<p>DMV as returned by the</p>
+<p>Query sys.dm_os_waiting_tasks Ordered by Wait Duration</p>
+<p>.</p>
+<p>Consider changing the order of the index columns as described in the Non-sequential</p>
+<p>index mitigation strategy if you can guarantee that inserts are distributed across the B-</p>
+<p>tree uniformly all of the time.</p>
+<p>If the Hash partition mitigation strategy is used, it removes the ability to use</p>
+<p>partitioning for any other purposes such as sliding window archiving.</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">max_wait_time_ms</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PAGELATCH_EX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">wait_type</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_os_waiting_tasks</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DBCC SQLPERF (</span><span style="color:#9ECBFF">'sys.dm_os_latch_stats'</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">CLEAR</span><span style="color:#E1E4E8">);</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PAGELATCH_EX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PAGELATCH_SH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">EX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PAGELATCH_EX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PAGELATCH_EX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PAGELATCH_SH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_db_index_operational_stats</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">EX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_os_waiting_tasks</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

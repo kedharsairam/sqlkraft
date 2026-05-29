@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Stop system-versioning — Architecture Guide — SqlKraft</title><meta name="description" content="Applies to:
+
+SQL Server 2016 (13.x) and later versions
+
+Azure SQL Database
+
+Azure
+
+SQL Managed Instance
+
+SQL database in Microsoft Fabric
+
+You might want to stop versioning on your temporal table eith
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Stop system-versioning</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>tables</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#tables</span><span class="tag-pill" data-astro-cid-hditk3lm>#stop-system-versioning</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Stop system-versioning</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Applies to:
+
+SQL Server 2016 (13.x) and later versions
+
+Azure SQL Database
+
+Azure
+
+SQL Managed Instance
+
+SQL database in Microsoft Fabric
+
+You might want to stop versioning on your temporal table eith
+</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Applies to:</p>
+<p>SQL Server 2016 (13.x) and later versions</p>
+<p>Azure SQL Database</p>
+<p>Azure</p>
+<p>SQL Managed Instance</p>
+<p>SQL database in Microsoft Fabric</p>
+<p>You might want to stop versioning on your temporal table either temporarily or permanently.</p>
+<p>You can do that by setting the</p>
+<p>clause to</p>
+<p>.</p>
+<p>Stop system-versioning if you want to perform specific maintenance operations on a temporal</p>
+<p>table or don’t need a versioned table anymore. Because of this operation, you get two</p>
+<p>independent tables:</p>
+<p>Current table with a period definition</p>
+<p>History table as a regular table</p>
+<p>The history table stops capturing the updates during</p>
+<p>.</p>
+<p>No data loss happens on the temporal table when you set</p>
+<p>or drop</p>
+<p>the</p>
+<p>period.</p>
+<p>When you set</p>
+<p>and don’t remove drop the</p>
+<p>period, the</p>
+<p>system continues to update the period columns for every insert and update operation. Deletes</p>
+<p>on the current table are permanent.</p>
+<p>You must drop the</p>
+<p>period to delete the period columns. To remove the period</p>
+<p>columns, use</p>
+<p>. For more information, see</p>
+<p>Change the</p>
+<p>schema of a system-versioned temporal table</p>
+<p>.</p>
+<p>When you set</p>
+<p>, all users with sufficient permissions can modify the</p>
+<p>schema and content of the history table, or even permanently delete the history table.</p>
+<p>You can’t set</p>
+<p>if you have other objects created with</p>
+<p>using temporal query extensions, such as referencing</p>
+<p>. This restriction prevents</p>
+<p>these objects from failing if you set</p>
+<p>.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SYSTEM_VERSIONING</span></span>
+<span class="line"><span style="color:#F97583">OFF</span></span>
+<span class="line"><span style="color:#F97583">SYSTEM_VERSIONING</span><span style="color:#F97583"> =</span><span style="color:#F97583"> OFF</span></span>
+<span class="line"><span style="color:#F97583">SYSTEM_VERSIONING</span><span style="color:#F97583"> =</span><span style="color:#F97583"> OFF</span></span>
+<span class="line"><span style="color:#F97583">SYSTEM_TIME</span></span>
+<span class="line"><span style="color:#F97583">SYSTEM_VERSIONING</span><span style="color:#F97583"> =</span><span style="color:#F97583"> OFF</span></span>
+<span class="line"><span style="color:#F97583">SYSTEM_TIME</span></span>
+<span class="line"><span style="color:#F97583">SYSTEM_TIME</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> TABLE</span><span style="color:#F97583"> &#x3C;table></span><span style="color:#F97583"> DROP</span><span style="color:#F97583"> &#x3C;</span><span style="color:#E1E4E8">column</span><span style="color:#F97583">></span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">SYSTEM_VERSIONING</span><span style="color:#F97583"> =</span><span style="color:#F97583"> OFF</span></span>
+<span class="line"><span style="color:#F97583">SYSTEM_VERSIONING</span><span style="color:#F97583"> =</span><span style="color:#F97583"> OFF</span></span>
+<span class="line"><span style="color:#F97583">SCHEMABINDING</span></span>
+<span class="line"><span style="color:#F97583">SYSTEM_TIME</span></span>
+<span class="line"><span style="color:#F97583">SYSTEM_VERSIONING</span><span style="color:#F97583"> =</span><span style="color:#F97583"> OFF</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

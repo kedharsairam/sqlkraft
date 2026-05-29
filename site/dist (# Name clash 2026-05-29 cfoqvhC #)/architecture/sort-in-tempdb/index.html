@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>SORT_IN_TEMPDB — Architecture Guide — SqlKraft</title><meta name="description" content="Applies to:
+
+SQL Server
+
+Azure SQL Database
+
+Azure SQL Managed Instance
+
+SQL database in Microsoft Fabric
+
+When you create or rebuild an index, by setting the SORT_IN_TEMPDB option to ON you can
+
+dire
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>SORT_IN_TEMPDB</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>filestream</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#filestream</span><span class="tag-pill" data-astro-cid-hditk3lm>#sort-in-tempdb</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>SORT_IN_TEMPDB</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Applies to:
+
+SQL Server
+
+Azure SQL Database
+
+Azure SQL Managed Instance
+
+SQL database in Microsoft Fabric
+
+When you create or rebuild an index, by setting the SORT_IN_TEMPDB option to ON you can
+
+dire
+</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Database</p>
+<p>Azure SQL Managed Instance</p>
+<p>SQL database in Microsoft Fabric</p>
+<p>When you create or rebuild an index, by setting the SORT_IN_TEMPDB option to ON you can</p>
+<p>direct the SQL Server Database Engine to use</p>
+<p>to store the intermediate sort results</p>
+<p>that are used to build the index. Although this option increases the amount of temporary disk</p>
+<p>space that is used to create an index, the option could reduce the time that is required to</p>
+<p>create or rebuild an index when</p>
+<p>is on a set of disks different from that of the user</p>
+<p>database. For more information about</p>
+<p>, see</p>
+<p>Configure the index create memory Server</p>
+<p>Configuration Option</p>
+<p>.</p>
+<p>As the Database Engine builds an index, it goes through the following phases:</p>
+<p>The Database Engine first scans the data pages of the base table to retrieve key values</p>
+<p>and builds an index leaf row for each data row. When the internal sort buffers have been</p>
+<p>filled with leaf index entries, the entries are sorted and written to disk as an intermediate</p>
+<p>sort run. The Database Engine then resumes the data page scan until the sort buffers are</p>
+<p>again filled. This pattern of scanning multiple data pages followed by sorting and writing</p>
+<p>a sort run continues until all the rows of the base table have been processed.</p>
+<p>In a clustered index, the leaf rows of the index are the data rows of the table; therefore,</p>
+<p>the intermediate sort runs contain all the data rows. In a nonclustered index, the leaf rows</p>
+<p>may contain nonkey columns, but are generally smaller than a clustered index. If the</p>
+<p>index keys are large, or there are several nonkey columns included in the index, a</p>
+<p>nonclustered sort run can be large. For more information about including nonkey</p>
+<p>columns, see</p>
+<p>Create Indexes with Included Columns</p>
+<p>.</p>
+<p>The Database Engine merges the sorted runs of index leaf rows into a single, sorted</p>
+<p>stream. The sort merge component of the Database Engine starts with the first page of</p>
+<p>each sort run, finds the lowest key in all the pages, and passes that leaf row to the index</p>
+<p>create component. The next lowest key is processed, and then the next, and so on. When</p>
+<p>the last leaf index row is extracted from a sort run page, the process shifts to the next</p>
+<p>page from that sort run. When all the pages in a sort run extent have been processed, the</p>
+<p>extent is freed. As each leaf index row is passed to the index create component, it is</p>
+<p>included in a leaf index page in the buffer. Each leaf page is written as it is filled. As leaf</p>
+<p>pages are written, the Database Engine also builds the upper levels of the index. Each</p>
+<p>upper level index page is written when it is filled.</p> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

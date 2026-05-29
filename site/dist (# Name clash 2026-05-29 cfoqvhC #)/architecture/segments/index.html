@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>segments — Architecture Guide — SqlKraft</title><meta name="description" content="When discussing columnstore indexes, we use the terms"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>segments</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>segments</h1> <p class="doc-lede" data-astro-cid-hditk3lm>When discussing columnstore indexes, we use the terms</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>When discussing columnstore indexes, we use the terms</p>
+<p>rowstore</p>
+<p>and</p>
+<p>columnstore</p>
+<p>to</p>
+<p>emphasize the format for the data storage. Columnstore indexes use both types of storage.</p>
+<p>A</p>
+<p>is data that is logically organized as a table with rows and columns, and</p>
+<p>physically stored in a column-wise data format.</p>
+<p>A columnstore index physically stores most of the data in columnstore format. In</p>
+<p>columnstore format, the data is compressed and uncompressed as columns. There’s no</p>
+<p>need to uncompress other values in each row that aren’t requested by the query. This</p>
+<p>makes it fast to scan an entire column of a large table.</p>
+<p>A</p>
+<p>is data that is logically organized as a table with rows and columns, and then</p>
+<p>physically stored in a row-wise data format. This has been the traditional way to store</p>
+<p>relational table data such as a clustered B+ tree index or a heap.</p>
+<p>A columnstore index also physically stores some rows in a rowstore format called a</p>
+<p>. The deltastore, also called delta rowgroups, is a holding place for rows that</p>
+<p>are too few in number to qualify for compression into the columnstore. Each delta</p>
+<p>rowgroup is implemented as a clustered B+ tree index, which is a rowstore.</p>
+<p>The columnstore index groups rows into manageable units. Each of these units is called a</p>
+<p>. For best performance, the number of rows in a rowgroup is large enough to</p>
+<p>improve the compression ratio and small enough to benefit from in memory operations.</p>
+<p>For example, the columnstore index performs these operations on rowgroups:</p>
+<h3 id="delta-rowgroups">delta rowgroups</h3>
+<h3 id="tuple-mover">tuple-mover</h3>
+<h3 id="column">column</h3>
+<h3 id="segments">segments</h3>
+<p>Compresses rowgroups into the columnstore. Compression is performed on each column</p>
+<p>segment within a rowgroup.</p>
+<p>Merges rowgroups during an</p>
+<p>operation, including removal</p>
+<p>of deleted data.</p>
+<p>Recreates all rowgroups during an</p>
+<p>operation.</p>
+<p>Reports on rowgroup health and fragmentation in the dynamic management views</p>
+<p>(DMVs).</p>
+<p>The deltastore is comprised of one or more rowgroups called</p>
+<p>. Each delta</p>
+<p>rowgroup is a clustered B+ tree index that stores small bulk loads and inserts until the</p>
+<p>rowgroup contains 1,048,576 rows, at which time a process called the</p>
+<p>automatically compresses a closed rowgroup into the columnstore.</p>
+<p>For more information about rowgroup statuses, see</p>
+<p>sys.dm_db_column_store_row_group_physical_stats</p>
+<p>.</p>
+<p>In SQL Server 2019 (15.x) and later versions, the tuple-mover is helped by a background merge</p>
+<p>task that automatically compresses smaller open delta rowgroups that have existed for some</p>
+<p>time as determined by an internal threshold, or merges compressed rowgroups from which a</p>
+<p>large number of rows has been deleted.</p>
+<p>Each column has some of its values in each rowgroup. These values are called</p>
+<p>. Each rowgroup contains one column segment for every column in the table. Each</p>
+<p>column has one column segment in each rowgroup.</p>
+<p></p>
+<p>Tip</p>
+<p>Having too many small rowgroups decreases the columnstore index quality. A reorganize</p>
+<p>operation merges smaller rowgroups, following an internal threshold policy that</p>
+<p>determines how to remove deleted rows and combine the compressed rowgroups. After a</p>
+<p>merge, the index quality is improved.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> INDEX</span><span style="color:#E1E4E8"> ... </span><span style="color:#F97583">REORGANIZE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> INDEX</span><span style="color:#E1E4E8"> ... </span><span style="color:#F97583">REBUILD</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

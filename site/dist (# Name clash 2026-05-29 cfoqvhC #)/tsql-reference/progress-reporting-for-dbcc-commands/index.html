@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Progress reporting for DBCC commands — T-SQL Reference — SqlKraft</title><meta name="description" content="Sometimes an internal database snapshot isn't required or can't be created. When this occurs,"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Progress reporting for DBCC commands</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Progress reporting for DBCC commands</h1> <span class="cat-badge" data-astro-cid-s2stm25t>statements</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#statements</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>Sometimes an internal database snapshot isn’t required or can’t be created. When this occurs,</p>
+<p>the DBCC command executes against the actual database. If the database is online, the DBCC</p>
+<p>command uses table-locking to ensure the consistency of the objects that it is checking. This</p>
+<p>behavior is the same as if the</p>
+<p>option were specified.</p>
+<p>An internal database snapshot isn’t created when a DBCC command is executed:</p>
+<p>Against the</p>
+<p>database, and the instance of SQL Server is running in single-user</p>
+<p>mode.</p>
+<p>Against a database other than</p>
+<p>, but the database has been put in single-user</p>
+<p>mode by using the</p>
+<p>statement.</p>
+<p>Against a read-only database.</p>
+<p>Against a database that has been set in emergency mode by using the</p>
+<p>statement.</p>
+<p>Against</p>
+<p>. In this case, a database snapshot can’t be created because of internal</p>
+<p>restrictions.</p>
+<p>Using the</p>
+<p>option. In this case, DBCC honors the request by not creating a</p>
+<p>database snapshot.</p>
+<p>The DBCC commands use table locks instead of the internal database snapshots when the</p>
+<p>command is executed against the following:</p>
+<p>A read-only filegroup</p>
+<p>A FAT file system</p>
+<p>A volume that doesn’t support</p>
+<p>named streams</p>
+<p>A volume that doesn’t support</p>
+<p>alternate streams</p>
+<p>７</p>
+<p>Note</p>
+<p>Trying to run</p>
+<p>, or the equivalent part of</p>
+<p>, by using the</p>
+<p>option requires a database exclusive (</p>
+<p>) lock. This database lock cannot be set on</p>
+<p>or</p>
+<p>and will probably fail on all other databases.</p>
+<p>７</p>
+<p>Note</p>
+<p>fails when it is run against</p>
+<p>if an internal database snapshot cannot</p>
+<p>be created.</p>
+<h4 id="execution">Execution</h4>
+<h4 id="phase">phase</h4>
+<h4 id="progress-reporting">Progress reporting</h4>
+<h4 id="granularity">granularity</h4>
+<p>The</p>
+<p>catalog view contains information about the progress and the</p>
+<p>current phase of execution of the</p>
+<p>,</p>
+<p>, and</p>
+<p>commands.</p>
+<p>The</p>
+<p>column indicates the percentage complete of the command, and the</p>
+<p>column reports the current phase of the execution of the command.</p>
+<p>The definition of a unit of progress depends on the current phase of execution of the DBCC</p>
+<p>command. Sometimes progress is reported at the granularity of a database page, in other</p>
+<p>phases it is reported at the granularity of a single database or allocation repair. The following</p>
+<p>table describes each phase of execution, and the granularity at which the command reports</p>
+<p>progress.</p>
+<h2 id="description">Description</h2>
+<p>The logical and physical consistency of the objects in the</p>
+<p>database is checked during this phase.</p>
+<p>Progress reported at the</p>
+<p>database page level.</p>
+<p>The progress reporting</p>
+<p>value is updated for each</p>
+<p>1000 database pages that</p>
+<p>are checked.</p>
+<p>Database repairs are performed during this phase if</p>
+<p>,</p>
+<p>, or</p>
+<p>is specified, and there are object errors that must be</p>
+<p>repaired.</p>
+<p>Progress reported at the</p>
+<p>individual repair level.</p>
+<p>The counter is updated for</p>
+<p>each repair that is</p>
+<p>completed.</p>
+<p>Allocation structures in the database are checked during</p>
+<p>this phase.</p>
+<p>Note:</p>
+<p>performs the same checks.</p>
+<p>Progress isn’t reported</p>
+<p>Database repairs are performed during this phase if</p>
+<p>,</p>
+<p>, or</p>
+<p>is specified, and there are allocation errors that must be</p>
+<p>repaired.</p>
+<p>Progress isn’t reported.</p>
+<p>Database system tables are checked during this phase.</p>
+<p>Progress reported at the</p>
+<p>database page level.</p>
+<p>The progress reporting</p>
+<p>value is updated for every</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<h4 id="execution-1">Execution</h4>
+<h4 id="phase-1">phase</h4>
+<h4 id="progress-reporting-1">Progress reporting</h4>
+<h4 id="granularity-1">granularity</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITH</span><span style="color:#F97583"> TABLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">master</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">master</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tempdb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITH</span><span style="color:#F97583"> TABLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DBCC CHECKALLOC</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DBCC CHECKDB</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#F97583">TABLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">X</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tempdb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">master</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DBCC CHECKDB</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">master</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_exec_requests</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DBCC CHECKDB</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CHECKFILEGROUP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CHECKTABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">percent_complete</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">command</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DBCC </span><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#F97583">CHECK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DBCC </span><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">REPAIR</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">REPAIR_FAST</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">REPAIR_REBUILD</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">REPAIR_ALLOW_DATA_LOSS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DBCC ALLOC</span></span>
+<span class="line"><span style="color:#F97583">CHECK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DBCC CHECKALLOC</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DBCC ALLOC</span></span>
+<span class="line"><span style="color:#E1E4E8">REPAIR</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">REPAIR_FAST</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">REPAIR_REBUILD</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">REPAIR_ALLOW_DATA_LOSS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DBCC SYS</span></span>
+<span class="line"><span style="color:#F97583">CHECK</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

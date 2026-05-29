@@ -1,0 +1,172 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Arguments — T-SQL Reference — SqlKraft</title><meta name="description" content="Specifies that statements can read rows that were modified by other transactions but not yet"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Arguments</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Arguments</h1> <span class="cat-badge" data-astro-cid-s2stm25t>statements</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#statements</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <h2 id="read-uncommitted">READ UNCOMMITTED</h2>
+<h2 id="read-committed">READ COMMITTED</h2>
+<p>Specifies that statements can read rows that were modified by other transactions but not yet</p>
+<p>committed.</p>
+<p>Transactions running at the</p>
+<p>level don’t issue shared locks to prevent other</p>
+<p>transactions from modifying data read by the current transaction.</p>
+<p>transactions are also not blocked by exclusive locks that would prevent the current transaction</p>
+<p>from reading rows that were modified but not committed by other transactions. When this</p>
+<p>option is set, it’s possible to read uncommitted modifications, which are called dirty reads.</p>
+<p>Values in the data can be changed and rows can appear or disappear in the data set before the</p>
+<p>end of the transaction. This option has the same effect as setting</p>
+<p>on all tables in all</p>
+<p>statements in a transaction. This is the least restrictive of the isolation levels.</p>
+<p>In SQL Server, you can also minimize locking contention while protecting transactions from</p>
+<p>dirty reads of uncommitted data modifications using either:</p>
+<p>The</p>
+<p>isolation level with the</p>
+<p>database option set</p>
+<p>to</p>
+<p>.</p>
+<p>The</p>
+<p>isolation level. For more information about snapshot isolation, see</p>
+<p>Snapshot Isolation in SQL Server</p>
+<p>.</p>
+<p>Specifies that statements can’t read data that was modified but not committed by other</p>
+<p>transactions. This prevents dirty reads. Data can be changed by other transactions between</p>
+<p>individual statements within the current transaction, resulting in nonrepeatable reads or</p>
+<p>phantom data. This option is the SQL Server default.</p>
+<p>The behavior of</p>
+<p>depends on the setting of the</p>
+<p>database option:</p>
+<p>If</p>
+<p>is set to</p>
+<p>(the default on SQL Server), the Database Engine</p>
+<p>uses shared locks to prevent other transactions from modifying rows while the current</p>
+<p>transaction is running a read operation. The shared locks also block the statement from</p>
+<p>reading rows modified by other transactions until the other transaction is completed. The</p>
+<p>shared lock type determines when it is released. Row locks are released before the next</p>
+<h3 id="transaction-locking-and-row">Transaction Locking and Row</h3>
+<h3 id="versioning-guide">Versioning Guide</h3>
+<h2 id="repeatable-read">REPEATABLE READ</h2>
+<p>row is processed. Page locks are released when the next page is read, and table locks are</p>
+<p>released when the statement finishes.</p>
+<p>If</p>
+<p>is set to</p>
+<p>, the Database Engine uses row versioning to</p>
+<p>present each statement with a transactionally consistent snapshot of the data as it existed</p>
+<p>at the start of the statement. Locks aren’t used to protect the data from updates by other</p>
+<p>transactions.</p>
+<p>is the default on Azure SQL Database and SQL database</p>
+<p>in Microsoft Fabric.</p>
+<p>Snapshot isolation supports FILESTREAM data. Under snapshot isolation mode, FILESTREAM</p>
+<p>data read by any statement in a transaction is the transactionally consistent version of the data</p>
+<p>that existed at the start of the transaction.</p>
+<p>When the</p>
+<p>database option is</p>
+<p>, you can use the</p>
+<p>table hint to request shared locking instead of row versioning for individual statements in</p>
+<p>transactions running at the</p>
+<p>isolation level.</p>
+<p>）</p>
+<p>Important</p>
+<p>Choosing a transaction isolation level doesn’t affect the locks acquired to protect data</p>
+<p>modifications. A transaction always gets an exclusive lock on any data it modifies, and</p>
+<p>holds that lock until the transaction completes, regardless of the isolation level set for that</p>
+<p>transaction. Additionally, an update made at the</p>
+<p>isolation level uses</p>
+<p>update locks on the data rows selected, whereas an update made at the</p>
+<p>isolation level uses row versions to select rows to update. For read operations, transaction</p>
+<p>isolation levels primarily define the level of protection from the effects of modifications</p>
+<p>made by other transactions. For more information, see</p>
+<p>.</p>
+<p>７</p>
+<p>Note</p>
+<p>When you set the</p>
+<p>option, only the connection executing the</p>
+<p>command is allowed in the database. There must be no other open</p>
+<p>connection in the database until</p>
+<p>is complete. The database doesn’t have</p>
+<p>to be in single-user mode.</p>
+<h2 id="snapshot">SNAPSHOT</h2>
+<p>Specifies that statements can’t read data that was modified but not yet committed by other</p>
+<p>transactions, and that no other transactions can modify data that was read by the current</p>
+<p>transaction until the current transaction completes.</p>
+<p>Shared locks are placed on all data read by each statement in the transaction and are held until</p>
+<p>the transaction completes. This prevents other transactions from modifying any rows that were</p>
+<p>read by the current transaction. Other transactions can insert new rows that match the search</p>
+<p>conditions of statements issued by the current transaction. If the current transaction then</p>
+<p>retries the statement, it retrieves the new rows, which results in phantom reads. Because shared</p>
+<p>locks are held to the end of a transaction instead of being released at the end of each</p>
+<p>statement, concurrency is lower than the default</p>
+<p>isolation level. Use this option</p>
+<p>only when necessary.</p>
+<p>Specifies that data read by any statement in a transaction is the transactionally consistent</p>
+<p>version of the data that existed at the start of the transaction. The transaction can only</p>
+<p>recognize data modifications that were committed before the start of the transaction. Data</p>
+<p>modifications made by other transactions after the start of the current transaction aren’t visible</p>
+<p>to statements executing in the current transaction. The effect is as if the statements in a</p>
+<p>transaction get a snapshot of the committed data as it existed at the start of the transaction.</p>
+<p>Except when a database is being recovered,</p>
+<p>transactions don’t request locks when</p>
+<p>reading data.</p>
+<p>transactions reading data don’t block other transactions from writing</p>
+<p>data. Transactions writing data don’t block</p>
+<p>transactions from reading data.</p>
+<p>During the roll-back phase of a database recovery,</p>
+<p>transactions request a lock if an</p>
+<p>attempt is made to read data that is locked by another transaction that is being rolled back.</p>
+<p>The</p>
+<p>transaction is blocked until that transaction is rolled back. The lock is released</p>
+<p>immediately after it is granted.</p>
+<p>The</p>
+<p>database option must be set to</p>
+<p>before you can start a</p>
+<p>transaction that uses the</p>
+<p>isolation level. If a transaction using the</p>
+<p>isolation</p>
+<p>level accesses data in multiple databases,</p>
+<p>must be set to</p>
+<p>in each</p>
+<p>database.</p>
+<p>A transaction can’t be set to</p>
+<p>isolation level that started with another isolation level;</p>
+<p>doing so causes the transaction to abort. If a transaction starts in the</p>
+<p>isolation level,</p>
+<p>you can change it to another isolation level and then back to</p>
+<p>. A transaction starts the</p>
+<p>first time it accesses data.</p>
+<h2 id="serializable">SERIALIZABLE</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ</span><span style="color:#F97583"> UNCOMMITTED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ</span><span style="color:#F97583"> UNCOMMITTED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NOLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ</span><span style="color:#F97583"> COMMITTED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ_COMMITTED_SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ</span><span style="color:#F97583"> COMMITTED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ_COMMITTED_SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ_COMMITTED_SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ_COMMITTED_SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ_COMMITTED_SNAPSHOT</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ_COMMITTED_SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READCOMMITTEDLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ</span><span style="color:#F97583"> COMMITTED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ</span><span style="color:#F97583"> COMMITTED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ_COMMITTED_SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READ</span><span style="color:#F97583"> COMMITTED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALLOW_SNAPSHOT_ISOLATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALLOW_SNAPSHOT_ISOLATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SNAPSHOT</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

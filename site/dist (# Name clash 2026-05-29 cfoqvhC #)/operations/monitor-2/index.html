@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Monitor — Operations Guide — SqlKraft</title><meta name="description" content="Article
+
+•
+
+11/18/2022
+
+Applies to:
+
+SQL Server
+
+After you have configured log shipping, you can monitor information about the status of all
+
+the log shipping servers. The history and status of log sh
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-o76tdi4r]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-o76tdi4r] .sep[data-astro-cid-o76tdi4r]{color:var(--border-glass)}.ops-detail[data-astro-cid-o76tdi4r]{max-width:900px}.detail-header[data-astro-cid-o76tdi4r]{margin-bottom:24px}.meta-row[data-astro-cid-o76tdi4r]{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}.topic-badge[data-astro-cid-o76tdi4r]{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--accent);border:1px solid var(--accent);padding:2px 10px;border-radius:4px;font-family:var(--font-mono)}.tag-strip[data-astro-cid-o76tdi4r]{display:flex;flex-wrap:wrap;gap:4px}.tag-pill[data-astro-cid-o76tdi4r]{font-size:11px;color:var(--text-secondary);background:#ffffff0d;padding:2px 8px;border-radius:4px;font-family:var(--font-mono)}.detail-title[data-astro-cid-o76tdi4r]{font-size:24px;font-weight:700;color:var(--text-primary);line-height:1.3}.detail-desc[data-astro-cid-o76tdi4r]{font-size:14px;color:var(--text-secondary);margin-top:8px;line-height:1.6}.body-content[data-astro-cid-o76tdi4r]{font-size:14px;line-height:1.7;color:var(--text-primary)}.body-content[data-astro-cid-o76tdi4r] pre{background:#0d1117;border:1px solid var(--border-glass);border-radius:8px;padding:16px;overflow-x:auto;font-size:13px;line-height:1.5;margin:16px 0}.body-content[data-astro-cid-o76tdi4r] code{font-family:var(--font-mono);font-size:13px}.body-content[data-astro-cid-o76tdi4r] p{margin-bottom:16px}.body-content[data-astro-cid-o76tdi4r] h2{font-size:18px;font-weight:600;color:var(--text-primary);margin:24px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--border-glass)}.body-content[data-astro-cid-o76tdi4r] h3{font-size:16px;font-weight:600;color:var(--text-primary);margin:20px 0 10px}.body-content[data-astro-cid-o76tdi4r] ul,.body-content[data-astro-cid-o76tdi4r] ol{margin:8px 0 16px;padding-left:24px}.body-content[data-astro-cid-o76tdi4r] li{margin-bottom:4px}.detail-footer[data-astro-cid-o76tdi4r]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass)}.detail-footer[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]{color:var(--accent);text-decoration:none;font-size:13px}.detail-footer[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-o76tdi4r> <a href="/sqlkraft/" data-astro-cid-o76tdi4r>&larr; Home</a> <span class="sep" data-astro-cid-o76tdi4r>/</span> <a href="/sqlkraft/operations/" data-astro-cid-o76tdi4r>Operations</a> <span class="sep" data-astro-cid-o76tdi4r>/</span> <span data-astro-cid-o76tdi4r>Monitor</span> </nav> <article class="ops-detail" data-astro-cid-o76tdi4r> <header class="detail-header" data-astro-cid-o76tdi4r> <div class="meta-row" data-astro-cid-o76tdi4r> <span class="topic-badge" data-astro-cid-o76tdi4r>high availability</span> <div class="tag-strip" data-astro-cid-o76tdi4r> <span class="tag-pill" data-astro-cid-o76tdi4r>#high-availability</span><span class="tag-pill" data-astro-cid-o76tdi4r>#monitor-2</span> </div> </div> <h1 class="detail-title" data-astro-cid-o76tdi4r>Monitor</h1> <p class="detail-desc" data-astro-cid-o76tdi4r>Article
+
+•
+
+11/18/2022
+
+Applies to:
+
+SQL Server
+
+After you have configured log shipping, you can monitor information about the status of all
+
+the log shipping servers. The history and status of log sh
+</p> </header> <div class="body-content" data-astro-cid-o76tdi4r> <p>Article</p>
+<p>•</p>
+<p>11/18/2022</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<p>After you have configured log shipping, you can monitor information about the status of all</p>
+<p>the log shipping servers. The history and status of log shipping operations are always saved</p>
+<p>locally by the log shipping jobs. The history and status of the backup operation are stored at</p>
+<p>the primary server, and the history and status of the copy and restore operations are stored at</p>
+<p>the secondary server. If you have implemented a remote monitor server, this information is also</p>
+<p>stored on the monitor server.</p>
+<p>You can configure alerts that will fire if log shipping operations fail to occur as scheduled.</p>
+<p>Errors are raised by an alert job that watches the status of the backup and restore operations.</p>
+<p>You can define alerts that notify an operator when these errors are raised. If a monitor server is</p>
+<p>configured, one alert job runs on the monitor server that raises errors for all operations in the</p>
+<p>log shipping configuration. If a monitor server is not specified, an alert job runs on the primary</p>
+<p>server instance, which monitors the backup operation. If a monitor server is not specified, an</p>
+<p>alert job also runs on each secondary server instance to monitor the local copy and restore</p>
+<p>operations.</p>
+<p>The monitoring history tables contain metadata that is stored on the monitor server. A copy of</p>
+<p>information specific to a given primary or secondary server is also stored locally.</p>
+<p>You can query these tables to monitor the status of a log shipping session. For example, to</p>
+<p>learn status of log shipping, check the status and history of the backup job, copy job, and</p>
+<p>restore job. You can view specific log shipping history and error details by querying the</p>
+<p>following monitoring tables.</p>
+<p>）</p>
+<p>Important</p>
+<p>To monitor a log shipping configuration, you must add the monitor server when you</p>
+<p>enable log shipping. If you add a monitor server later, you must remove the log shipping</p>
+<p>configuration and then replace it with a new configuration that includes a monitor server.</p>
+<p>For more information, see</p>
+<p>. Furthermore, after the</p>
+<p>monitor server has been configured, it cannot be changed without removing log shipping</p>
+<p>first.</p> </div> <footer class="detail-footer" data-astro-cid-o76tdi4r> <a href="/sqlkraft/operations/" data-astro-cid-o76tdi4r>&larr; Back to operations</a> </footer> </article>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

@@ -1,0 +1,123 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>FOR JSON — T-SQL Reference — SqlKraft</title><meta name="description" content="In Fabric Data Warehouse, the query must end with"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>FOR JSON</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>FOR JSON</h1> <span class="cat-badge" data-astro-cid-s2stm25t>queries</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#queries</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <h2 id="json">JSON</h2>
+<h2 id="auto">AUTO</h2>
+<h2 id="path">PATH</h2>
+<h2 id="include_null_values">INCLUDE_NULL_VALUES</h2>
+<p>SQL</p>
+<p>In Fabric Data Warehouse, the query must end with</p>
+<p>, so you can’t use it inside</p>
+<p>subqueries.</p>
+<p>Specify</p>
+<p>to return the results of a query formatted as JSON text. You also need to</p>
+<p>specify one of the following JSON modes:</p>
+<p>or</p>
+<p>. For more information about the</p>
+<p>clause, see</p>
+<p>Format query results as JSON with FOR JSON</p>
+<p>.</p>
+<p>Format the JSON output automatically based on the structure of the</p>
+<p>statement by</p>
+<p>specifying</p>
+<p>. For more info and examples, see</p>
+<p>Format JSON output automatically</p>
+<p>with AUTO mode</p>
+<p>.</p>
+<p>Get full control over the format of the JSON output by specifying</p>
+<p>.</p>
+<p>mode</p>
+<p>lets you create wrapper objects and nest complex properties. For more info and examples, see</p>
+<p>Format nested JSON output with PATH mode</p>
+<p>.</p>
+<h2 id="root-">ROOT [ (‘</h2>
+<h2 id="rootname">RootName</h2>
+<h2 id="">’) ]</h2>
+<h2 id="without_array_wrapper">WITHOUT_ARRAY_WRAPPER</h2>
+<p>Include</p>
+<p>values in the JSON output by specifying the</p>
+<p>option with the</p>
+<p>clause. If you don’t specify this option, the output doesn’t include JSON properties</p>
+<p>for</p>
+<p>values in the query results. For more info and examples, see</p>
+<p>Include Null Values in</p>
+<p>JSON - INCLUDE_NULL_VALUES Option</p>
+<p>.</p>
+<p>Add a single, top-level element to the JSON output by specifying the</p>
+<p>option with the</p>
+<p>clause. If you don’t specify the</p>
+<p>option, the JSON output doesn’t have a root element.</p>
+<p>For more info and examples, see</p>
+<p>Add a Root Node to JSON Output with the ROOT Option</p>
+<p>.</p>
+<p>Remove the square brackets that surround the JSON output by default by specifying the</p>
+<p>option with the</p>
+<p>clause. If you don’t specify this option, the</p>
+<p>JSON output is enclosed within square brackets. Use the</p>
+<p>option to</p>
+<p>generate a single JSON object as output. For more info, see</p>
+<p>Remove Square Brackets from</p>
+<p>JSON - WITHOUT_ARRAY_WRAPPER Option</p>
+<p>.</p>
+<p>For more info, see</p>
+<p>Format query results as JSON with FOR JSON</p>
+<p>.</p>
+<p>SELECT (Transact-SQL)</p>
+<p>Use FOR JSON output in the SQL Database Engine and in client apps</p>
+<p>Last updated on 02/04/2026</p>
+<p>Related content</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#F97583"> JSON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#F97583"> JSON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">AUTO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PATH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span></span>
+<span class="line"><span style="color:#F97583">JSON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#F97583"> JSON</span><span style="color:#F97583"> AUTO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#F97583"> JSON</span><span style="color:#F97583"> PATH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PATH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">USE</span></span>
+<span class="line"><span style="color:#E1E4E8">AdventureWorks2025;</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#79B8FF">p</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">BusinessEntityID</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">FirstName,</span></span>
+<span class="line"><span style="color:#E1E4E8">LastName,</span></span>
+<span class="line"><span style="color:#E1E4E8">PhoneNumber</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">Phone</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Person</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Person</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">p</span></span>
+<span class="line"><span style="color:#E1E4E8">INNER</span></span>
+<span class="line"><span style="color:#F97583">JOIN</span></span>
+<span class="line"><span style="color:#79B8FF">Person</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">PersonPhone</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">pph</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">p</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">BusinessEntityID</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> pph</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">BusinessEntityID</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">LastName</span></span>
+<span class="line"><span style="color:#F97583">LIKE</span></span>
+<span class="line"><span style="color:#9ECBFF">'G%'</span></span>
+<span class="line"><span style="color:#E1E4E8">ORDER</span></span>
+<span class="line"><span style="color:#F97583">BY</span></span>
+<span class="line"><span style="color:#E1E4E8">LastName, FirstName</span></span>
+<span class="line"><span style="color:#F97583">FOR</span></span>
+<span class="line"><span style="color:#F97583">XML</span></span>
+<span class="line"><span style="color:#F97583">AUTO</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">TYPE</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">XMLSCHEMA</span></span>
+<span class="line"><span style="color:#E1E4E8">, </span><span style="color:#F97583">ELEMENTS</span><span style="color:#F97583"> XSINIL</span><span style="color:#E1E4E8">;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INCLUDE_NULL_VALUES</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#F97583"> JSON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ROOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span></span>
+<span class="line"><span style="color:#F97583">JSON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ROOT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITHOUT_ARRAY_WRAPPER</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#F97583"> JSON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITHOUT_ARRAY_WRAPPER</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

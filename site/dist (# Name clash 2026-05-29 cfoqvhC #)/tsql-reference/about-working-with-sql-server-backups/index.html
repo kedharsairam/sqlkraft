@@ -1,0 +1,309 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About working with SQL Server backups — T-SQL Reference — SqlKraft</title><meta name="description" content="Backs up the tail of the log and leaves the database in a read-only and"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>About working with SQL Server backups</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>About working with SQL Server backups</h1> <span class="cat-badge" data-astro-cid-s2stm25t>queries</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#queries</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>STANDBY =</p>
+<p>standby_file_name</p>
+<p>Backs up the tail of the log and leaves the database in a read-only and</p>
+<p>state. The</p>
+<p>clause writes standby data (performing rollback, but with the option of further</p>
+<p>restores). Using the</p>
+<p>option is equivalent to</p>
+<p>followed</p>
+<p>by a</p>
+<p>.</p>
+<p>Using standby mode requires a standby file, specified by</p>
+<p>standby_file_name</p>
+<p>, whose</p>
+<p>location is stored in the log of the database. If the specified file already exists, the</p>
+<p>Database Engine overwrites it; if the file doesn’t exist, the Database Engine creates it. The</p>
+<p>standby file becomes part of the database.</p>
+<p>This file holds the rolled back changes, which must be reversed if</p>
+<p>operations</p>
+<p>are to be subsequently applied. There must be enough disk space for the standby file to</p>
+<p>grow so that it can contain all the distinct pages from the database that were modified by</p>
+<p>rolling back uncommitted transactions.</p>
+<p>Specifies that the transaction log shouldn’t be not truncated and causes the Database Engine</p>
+<p>to attempt the backup regardless of the state of the database. Thus, a backup taken with</p>
+<p>might have incomplete metadata. This option allows backing up the transaction</p>
+<p>log in situations where the database is damaged.</p>
+<p>The</p>
+<p>option of</p>
+<p>is equivalent to specifying both</p>
+<p>and</p>
+<p>.</p>
+<p>Without the</p>
+<p>option, the database must be in the</p>
+<p>state. If the database is in</p>
+<p>the SUSPENDED state, you might be able to create a backup by specifying</p>
+<p>. But if</p>
+<p>the database is in the</p>
+<p>or</p>
+<p>state,</p>
+<p>isn’t allowed even with</p>
+<p>.</p>
+<p>For information about database states, see</p>
+<p>Database states</p>
+<p>.</p>
+<p>This section introduces the following essential backup concepts:</p>
+<p>Backup Types</p>
+<p>Transaction Log Truncation</p>
+<p>Formatting Backup Media</p>
+<p>Working with Backup</p>
+<p>Devices and Media Sets</p>
+<p>Restoring SQL Server Backups</p>
+<p>７</p>
+<p>Note</p>
+<h4 id="scope-of">Scope of</h4>
+<h4 id="backup">backup</h4>
+<h4 id="backup-types">Backup types</h4>
+<h3 id="backup-overview-sql-server">Backup overview (SQL Server)</h3>
+<h2 id="backup-types-1">Backup types</h2>
+<p>The supported backup types depend on the recovery model of the database, as follows</p>
+<p>All recovery models support full and differential backups of data.</p>
+<p>Whole</p>
+<p>database</p>
+<p>Database backups</p>
+<p>cover the whole database.</p>
+<p>Optionally, each database backup can serve as the base of a series of one or more</p>
+<p>differential database backups</p>
+<p>.</p>
+<p>Partial</p>
+<p>database</p>
+<p>Partial backups</p>
+<p>cover read/-write filegroups and, possibly, one or more read-only</p>
+<p>files or filegroups.</p>
+<p>Optionally, each partial backup can serve as the base of a series of one or more</p>
+<p>differential partial backups</p>
+<p>.</p>
+<p>File or</p>
+<p>filegroup</p>
+<p>File backups</p>
+<p>cover one or more files or filegroups, and are relevant only for</p>
+<p>databases that contain multiple filegroups. Under the simple recovery model, file</p>
+<p>backups are essentially restricted to read-only secondary filegroups.</p>
+<p>Optionally, each file backup can serve as the base of a series of one or more</p>
+<p>differential file backups</p>
+<p>.</p>
+<p>Under the full recovery model or bulk-logged recovery model, conventional backups also</p>
+<p>include sequential</p>
+<p>transaction log backups</p>
+<p>(or</p>
+<p>log backups</p>
+<p>), which are required. Each log</p>
+<p>backup covers the portion of the transaction log that was active when the backup was</p>
+<p>created, and it includes all log records not backed up in a previous log backup.</p>
+<p>To minimize work-loss exposure, at the cost of administrative overhead, you should</p>
+<p>schedule frequent log backups. Scheduling differential backups between full backups can</p>
+<p>reduce restore time by reducing the number of log backups you have to restore after</p>
+<p>restoring the data.</p>
+<p>We recommend that you put log backups on a separate volume than the database</p>
+<p>backups.</p>
+<p>For an introduction to backup in SQL Server, see</p>
+<p>.</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p>７</p>
+<p>Note</p>
+<h2 id="transaction-log-truncation">Transaction log truncation</h2>
+<h3 id="view-or-change-the-recovery-model-of-a-database-sql-server">View or change the recovery model of a database (SQL Server)</h3>
+<h2 id="format-backup-media">Format backup media</h2>
+<h2 id="work-with-backup-devices-and-media-sets">Work with backup devices and media sets</h2>
+<h2 id="backup-devices-in-a-striped-media-set-a-stripe-set">Backup devices in a striped media set (a stripe set)</h2>
+<p>A</p>
+<p>copy-only backup</p>
+<p>is a special-purpose full backup or log backup that is independent of</p>
+<p>the normal sequence of conventional backups. To create a copy-only backup, specify the</p>
+<p>option in your</p>
+<p>statement. For more information, see</p>
+<p>Copy-only</p>
+<p>backups</p>
+<p>.</p>
+<p>To avoid filling up the transaction log of a database, routine backups are essential. Under the</p>
+<p>simple recovery model, log truncation occurs automatically after you back up the database,</p>
+<p>and under the full recovery model, after you back up the transaction log. However, sometimes</p>
+<p>the truncation process can be delayed. For information about factors that can delay log</p>
+<p>truncation, see</p>
+<p>The transaction log</p>
+<p>.</p>
+<p>Backup media is formatted by a</p>
+<p>statement if and only if any of the following is true:</p>
+<p>The</p>
+<p>option is specified.</p>
+<p>The media is empty.</p>
+<p>The operation is writing a continuation tape.</p>
+<p>A</p>
+<p>stripe set</p>
+<p>is a set of disk files on which data is divided into blocks and distributed in a fixed</p>
+<p>order. The number of backup devices used in a stripe set must stay the same (unless the media</p>
+<p>is reinitialized with</p>
+<p>).</p>
+<p>Before you can create the first log backup, you must create a full backup.</p>
+<p>７</p>
+<p>Note</p>
+<p>The</p>
+<p>and</p>
+<p>options have been discontinued. If</p>
+<p>you’re using the full or bulk-logged recovery model recovery and you must remove the</p>
+<p>log backup chain from a database, switch to the simple recovery model. For more</p>
+<p>information, see</p>
+<p>.</p>
+<h2 id="work-with-a-mirrored-media-set">Work with a mirrored media set</h2>
+<p>The following example writes a backup of the</p>
+<p>database to a new striped</p>
+<p>media set that uses three disk files.</p>
+<p>SQL</p>
+<p>After a backup device is defined as part of a stripe set, it can’t be used for a single-device</p>
+<p>backup unless FORMAT is specified. Similarly, a backup device that contains nonstriped</p>
+<p>backups can’t be used in a stripe set unless FORMAT is specified. To split a striped backup set,</p>
+<p>use FORMAT.</p>
+<p>If both</p>
+<p>or</p>
+<p>aren’t specified when a media header is written, the</p>
+<p>media header field corresponding to the blank item is empty.</p>
+<p>Typically, backups are unmirrored, and</p>
+<p>statements simply include a</p>
+<p>clause. However,</p>
+<p>a total of four mirrors is possible per media set. For a mirrored media set, the backup operation</p>
+<p>writes to multiple groups of backup devices. Each group of backup devices comprises a single</p>
+<p>mirror within the mirrored media set. Every mirror must use the same quantity and type of</p>
+<p>physical backup devices, which must all have the same properties.</p>
+<p>To back up to a mirrored media set, all of the mirrors must be present. To back up to a</p>
+<p>mirrored media set, specify the</p>
+<p>clause to specify the first mirror, and specify a</p>
+<p>clause for each additional mirror.</p>
+<p>For a mirrored media set, each</p>
+<p>clause must list the same number and type of</p>
+<p>devices as the</p>
+<p>clause. The following example writes to a mirrored media set that contains</p>
+<p>two mirrors and uses three devices per mirror:</p>
+<p>SQL</p>
+<h4 id="mirror">Mirror</h4>
+<h4 id="media-family-1">Media family 1</h4>
+<h4 id="media-family-2">Media family 2</h4>
+<h4 id="media-family-3">Media family 3</h4>
+<h2 id="restore-sql-server-backups">Restore SQL Server backups</h2>
+<p>Each backup device specified in the</p>
+<p>clause of a</p>
+<p>statement corresponds to a media</p>
+<p>family. For example, if the</p>
+<p>clause lists three devices,</p>
+<p>writes data to three media</p>
+<p>families. In a mirrored media set, every mirror must contain a copy of every media family. This</p>
+<p>is why the number of devices must be identical in every mirror.</p>
+<p>When multiple devices are listed for each mirror, the order of the devices determines which</p>
+<p>media family is written to a particular device. For example, in each of the device lists, the</p>
+<p>second device corresponds to the second media family. For the devices in the previous</p>
+<p>example, the correspondence between devices and media families is shown in the following</p>
+<p>table.</p>
+<p>0</p>
+<p>1</p>
+<p>A media family must always be backed up onto the same device within a specific mirror.</p>
+<p>Therefore, each time you use an existing media set, list the devices of each mirror in the same</p>
+<p>order as they were specified when the media set was created.</p>
+<p>For more information about mirrored media sets, see</p>
+<p>Mirrored Backup Media Sets (SQL Server)</p>
+<p>.</p>
+<p>For more information about media sets and media families in general, see</p>
+<p>Media sets, media</p>
+<p>families, and backup sets (SQL Server)</p>
+<p>.</p>
+<p>）</p>
+<p>Important</p>
+<p>This example is designed to allow you to test it on your local system. In practice, backing</p>
+<p>up to multiple devices on the same drive would hurt performance and would eliminate the</p>
+<p>redundancy for which mirrored media sets are designed.</p>
+<p>Media families in mirrored media sets</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<h3 id="restore">Restore</h3>
+<h4 id="skip">Skip</h4>
+<h4 id="option">option</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">STANDBY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">STANDBY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">STANDBY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BACKUP</span><span style="color:#F97583"> LOG</span><span style="color:#F97583"> WITH</span><span style="color:#F97583"> NORECOVERY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">RESTORE</span><span style="color:#F97583"> WITH</span><span style="color:#F97583"> STANDBY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">RESTORE</span><span style="color:#F97583"> LOG</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NO_TRUNCATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NO_TRUNCATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BACKUP</span><span style="color:#F97583"> LOG</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">COPY_ONLY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CONTINUE_AFTER_ERROR</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NO_TRUNCATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ONLINE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NO_TRUNCATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OFFLINE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">EMERGENCY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BACKUP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NO_TRUNCATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">COPY_ONLY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BACKUP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BACKUP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">FORMAT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">FORMAT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BACKUP</span><span style="color:#F97583"> LOG</span><span style="color:#F97583"> WITH</span><span style="color:#E1E4E8"> NO_LOG</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITH</span><span style="color:#E1E4E8"> TRUNCATE_ONLY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">AdventureWorks2025</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MEDIANAME</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MEDIADESCRIPTION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BACKUP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">MIRROR </span><span style="color:#F97583">TO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">MIRROR </span><span style="color:#F97583">TO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BACKUP</span></span>
+<span class="line"><span style="color:#F97583">DATABASE</span></span>
+<span class="line"><span style="color:#E1E4E8">AdventureWorks2022</span></span>
+<span class="line"><span style="color:#F97583">TO</span></span>
+<span class="line"><span style="color:#F97583">DISK</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'X:\SQLServerBackups\AdventureWorks1.bak'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">DISK</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'Y:\SQLServerBackups\AdventureWorks2.bak'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">DISK</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'Z:\SQLServerBackups\AdventureWorks3.bak'</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">FORMAT</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">MEDIANAME</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'AdventureWorksStripedSet0'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">MEDIADESCRIPTION</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'Striped media set for AdventureWorks2022 database'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BACKUP</span></span>
+<span class="line"><span style="color:#F97583">DATABASE</span></span>
+<span class="line"><span style="color:#E1E4E8">AdventureWorks2022</span></span>
+<span class="line"><span style="color:#F97583">TO</span></span>
+<span class="line"><span style="color:#F97583">DISK</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'X:\SQLServerBackups\AdventureWorks1a.bak'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">DISK</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'Y:\SQLServerBackups\AdventureWorks2a.bak'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">DISK</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'Z:\SQLServerBackups\AdventureWorks3a.bak'</span></span>
+<span class="line"><span style="color:#E1E4E8">MIRROR</span></span>
+<span class="line"><span style="color:#F97583">TO</span></span>
+<span class="line"><span style="color:#F97583">DISK</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'X:\SQLServerBackups\AdventureWorks1b.bak'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BACKUP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">BACKUP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Z:\</span><span style="color:#79B8FF">AdventureWorks1a</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">bak</span></span>
+<span class="line"><span style="color:#E1E4E8">Z:\</span><span style="color:#79B8FF">AdventureWorks2a</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">bak</span></span>
+<span class="line"><span style="color:#E1E4E8">Z:\</span><span style="color:#79B8FF">AdventureWorks3a</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">bak</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Z:\</span><span style="color:#79B8FF">AdventureWorks1b</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">bak</span></span>
+<span class="line"><span style="color:#E1E4E8">Z:\</span><span style="color:#79B8FF">AdventureWorks2b</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">bak</span></span>
+<span class="line"><span style="color:#E1E4E8">Z:\</span><span style="color:#79B8FF">AdventureWorks3b</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">bak</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DISK</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'Y:\SQLServerBackups\AdventureWorks2b.bak'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">DISK</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'Z:\SQLServerBackups\AdventureWorks3b.bak'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

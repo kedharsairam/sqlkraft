@@ -1,0 +1,63 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Supported version &amp; edition upgrades SQL Server 2019 — Operations Guide — SqlKraft</title><meta name="description" content="06/16/2025
+
+Applies to:
+
+SQL Server
+
+- Windows only
+
+You can upgrade from SQL Server 2012 (11.x), SQL Server 2014 (12.x), SQL Server 2016 (13.x),
+
+and SQL Server 2017 (14.x). This article lists the su
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-o76tdi4r]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-o76tdi4r] .sep[data-astro-cid-o76tdi4r]{color:var(--border-glass)}.ops-detail[data-astro-cid-o76tdi4r]{max-width:900px}.detail-header[data-astro-cid-o76tdi4r]{margin-bottom:24px}.meta-row[data-astro-cid-o76tdi4r]{display:flex;align-items:center;gap:12px;margin-bottom:12px;flex-wrap:wrap}.topic-badge[data-astro-cid-o76tdi4r]{display:inline-block;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--accent);border:1px solid var(--accent);padding:2px 10px;border-radius:4px;font-family:var(--font-mono)}.tag-strip[data-astro-cid-o76tdi4r]{display:flex;flex-wrap:wrap;gap:4px}.tag-pill[data-astro-cid-o76tdi4r]{font-size:11px;color:var(--text-secondary);background:#ffffff0d;padding:2px 8px;border-radius:4px;font-family:var(--font-mono)}.detail-title[data-astro-cid-o76tdi4r]{font-size:24px;font-weight:700;color:var(--text-primary);line-height:1.3}.detail-desc[data-astro-cid-o76tdi4r]{font-size:14px;color:var(--text-secondary);margin-top:8px;line-height:1.6}.body-content[data-astro-cid-o76tdi4r]{font-size:14px;line-height:1.7;color:var(--text-primary)}.body-content[data-astro-cid-o76tdi4r] pre{background:#0d1117;border:1px solid var(--border-glass);border-radius:8px;padding:16px;overflow-x:auto;font-size:13px;line-height:1.5;margin:16px 0}.body-content[data-astro-cid-o76tdi4r] code{font-family:var(--font-mono);font-size:13px}.body-content[data-astro-cid-o76tdi4r] p{margin-bottom:16px}.body-content[data-astro-cid-o76tdi4r] h2{font-size:18px;font-weight:600;color:var(--text-primary);margin:24px 0 12px;padding-bottom:6px;border-bottom:1px solid var(--border-glass)}.body-content[data-astro-cid-o76tdi4r] h3{font-size:16px;font-weight:600;color:var(--text-primary);margin:20px 0 10px}.body-content[data-astro-cid-o76tdi4r] ul,.body-content[data-astro-cid-o76tdi4r] ol{margin:8px 0 16px;padding-left:24px}.body-content[data-astro-cid-o76tdi4r] li{margin-bottom:4px}.detail-footer[data-astro-cid-o76tdi4r]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass)}.detail-footer[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]{color:var(--accent);text-decoration:none;font-size:13px}.detail-footer[data-astro-cid-o76tdi4r] a[data-astro-cid-o76tdi4r]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-o76tdi4r> <a href="/sqlkraft/" data-astro-cid-o76tdi4r>&larr; Home</a> <span class="sep" data-astro-cid-o76tdi4r>/</span> <a href="/sqlkraft/operations/" data-astro-cid-o76tdi4r>Operations</a> <span class="sep" data-astro-cid-o76tdi4r>/</span> <span data-astro-cid-o76tdi4r>Supported version &amp; edition upgrades SQL Server 2019</span> </nav> <article class="ops-detail" data-astro-cid-o76tdi4r> <header class="detail-header" data-astro-cid-o76tdi4r> <div class="meta-row" data-astro-cid-o76tdi4r> <span class="topic-badge" data-astro-cid-o76tdi4r>upgrade</span> <div class="tag-strip" data-astro-cid-o76tdi4r> <span class="tag-pill" data-astro-cid-o76tdi4r>#upgrade</span><span class="tag-pill" data-astro-cid-o76tdi4r>#supported-version-edition-upgrades-sql-server-2019</span> </div> </div> <h1 class="detail-title" data-astro-cid-o76tdi4r>Supported version &amp; edition upgrades SQL Server 2019</h1> <p class="detail-desc" data-astro-cid-o76tdi4r>06/16/2025
+
+Applies to:
+
+SQL Server
+
+- Windows only
+
+You can upgrade from SQL Server 2012 (11.x), SQL Server 2014 (12.x), SQL Server 2016 (13.x),
+
+and SQL Server 2017 (14.x). This article lists the su
+</p> </header> <div class="body-content" data-astro-cid-o76tdi4r> <p>06/16/2025</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<ul>
+<li>Windows only</li>
+</ul>
+<p>You can upgrade from SQL Server 2012 (11.x), SQL Server 2014 (12.x), SQL Server 2016 (13.x),</p>
+<p>and SQL Server 2017 (14.x). This article lists the supported upgrade paths from these SQL</p>
+<p>Server versions, and the supported edition upgrades for SQL Server 2019 (15.x).</p>
+<p>Before upgrading from one edition of SQL Server 2019 (15.x) to another, verify that the</p>
+<p>functionality you’re currently using is supported in the edition to which you’re moving.</p>
+<p>Verify supported</p>
+<p>hardware and software</p>
+<p>.</p>
+<p>Before upgrading SQL Server, enable Windows Authentication for SQL Server Agent and</p>
+<p>verify the default configuration, that the SQL Server Agent service account is a member of</p>
+<p>the SQL Server sysadmin group.</p>
+<p>To upgrade to SQL Server 2019 (15.x), you must be running a supported operating</p>
+<p>system. For more information, see</p>
+<p>Hardware and software requirements for SQL Server</p>
+<p>2019</p>
+<p>.</p>
+<p>Upgrade is blocked if there’s a pending restart.</p>
+<p>Upgrade is blocked if the Windows Installer service isn’t running.</p>
+<p>Cross-version instances of SQL Server 2019 (15.x) aren’t supported. Version numbers of</p>
+<p>the Database Engine components must be the same in an instance of SQL Server 2019</p>
+<p>(15.x).</p>
+<p>SQL Server 2019 (15.x) is only available for 64-bit platforms. Cross-platform upgrade isn’t</p>
+<p>supported. You can’t upgrade a 32-bit instance of SQL Server to native 64-bit using SQL</p>
+<p>Server Setup. However, you can back up or detach databases from a 32-bit instance of</p>
+<p>SQL Server, and then restore or attach them to a new instance of SQL Server (64-bit) if the</p>
+<p>databases aren’t published in replication. You must re-create any logins and other user</p>
+<p>objects in</p>
+<p>,</p>
+<p>, and</p>
+<p>system databases.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="cmd"><code><span class="line"><span style="color:#E1E4E8">master</span></span>
+<span class="line"><span style="color:#E1E4E8">msdb</span></span>
+<span class="line"><span style="color:#E1E4E8">model</span></span></code></pre> </div> <footer class="detail-footer" data-astro-cid-o76tdi4r> <a href="/sqlkraft/operations/" data-astro-cid-o76tdi4r>&larr; Back to operations</a> </footer> </article>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sys.fn_all_changes_ — System Function — SqlKraft</title><meta name="description" content="function serves as a wrapper for the query function. The stored procedure is used to generate the script to create the Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-5e2docdb]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-5e2docdb] a[data-astro-cid-5e2docdb]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-5e2docdb] a[data-astro-cid-5e2docdb]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-5e2docdb] .sep[data-astro-cid-5e2docdb]{color:var(--border-glass)}.detail-header[data-astro-cid-5e2docdb]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-5e2docdb]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-5e2docdb]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.return-badge[data-astro-cid-5e2docdb]{font-family:var(--font-mono);font-size:11px;background:#2ecc7126;color:#2ecc71;padding:3px 10px;border-radius:4px;white-space:nowrap}.tag-strip[data-astro-cid-5e2docdb]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-5e2docdb]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.body-content[data-astro-cid-5e2docdb]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-5e2docdb] h2[data-astro-cid-5e2docdb]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-5e2docdb] h3[data-astro-cid-5e2docdb]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-5e2docdb] p[data-astro-cid-5e2docdb]{margin-bottom:14px}.body-content[data-astro-cid-5e2docdb] ul[data-astro-cid-5e2docdb],.body-content[data-astro-cid-5e2docdb] ol[data-astro-cid-5e2docdb]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-5e2docdb] li[data-astro-cid-5e2docdb]{margin-bottom:6px}.body-content[data-astro-cid-5e2docdb] pre[data-astro-cid-5e2docdb]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-5e2docdb] code[data-astro-cid-5e2docdb]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-5e2docdb] [data-astro-cid-5e2docdb]:not(pre)>code[data-astro-cid-5e2docdb]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-5e2docdb] table[data-astro-cid-5e2docdb]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-5e2docdb] th[data-astro-cid-5e2docdb]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-5e2docdb] td[data-astro-cid-5e2docdb]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-5e2docdb]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-5e2docdb] a[data-astro-cid-5e2docdb]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-5e2docdb] a[data-astro-cid-5e2docdb]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-5e2docdb> <a href="/sqlkraft/" data-astro-cid-5e2docdb>&larr; Home</a> <span class="sep" data-astro-cid-5e2docdb>/</span> <a href="/sqlkraft/functions/" data-astro-cid-5e2docdb>System Functions</a> <span class="sep" data-astro-cid-5e2docdb>/</span> <span data-astro-cid-5e2docdb>sys.fn_all_changes_</span> </nav> <div class="detail-header" data-astro-cid-5e2docdb> <h1 class="detail-title" data-astro-cid-5e2docdb>sys.fn_all_changes_</h1> <span class="cat-badge" data-astro-cid-5e2docdb>system</span>  </div> <div class="tag-strip" data-astro-cid-5e2docdb> <span class="tag-pill" data-astro-cid-5e2docdb>#system</span><span class="tag-pill" data-astro-cid-5e2docdb>#function</span> </div> <div class="body-content" data-astro-cid-5e2docdb> <h2 id="description">Description</h2>
+<p>function serves as a wrapper for the query function. The stored procedure is used to generate the script to create the Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to systematically query for changes that occurred within an interval bounded by values instead of by LSN values. The wrapper functions perform all the required conversions between the provided values and the LSN values needed internally as arguments to the query functions. When the wrapper functions are used serially to process a stream of change data, they ensure that no data is lost or repeated provided that the scripts for all of the wrapper functions for a schema’s defined query functions. The template operation column, __CDC_OPERATION, which is a one- or two-character column that identifies</p>
+<h2 id="syntax">Syntax</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">sp_cdc_generate_wrapper_function</span></span></code></pre>
+<h2 id="remarks">Remarks</h2>
+<p>function serves as a wrapper for the</p>
+<p>query function. The</p>
+<p>stored procedure is used to generate the script to create the</p>
+<p>Wrapper functions are not created automatically. There are two things you must do to create</p>
+<p>wrapper functions:</p>
+<ol>
+<li>
+<p>Run the stored procedure to generate the script to create the wrapper.</p>
+</li>
+<li>
+<p>Execute the script to actually create the wrapper function.</p>
+</li>
+</ol>
+<p>Wrapper functions enable users to systematically query for changes that occurred within an</p>
+<p>interval bounded by</p>
+<p>values instead of by LSN values. The wrapper functions perform</p>
+<p>all the required conversions between the provided</p>
+<p>values and the LSN values needed</p>
+<p>internally as arguments to the query functions. When the wrapper functions are used serially to</p>
+<p>process a stream of change data, they ensure that no data is lost or repeated provided that the</p>
+<p>following convention is followed: the @end_time value of the interval associated with one call</p>
+<p>is supplied as the @start_time value for the interval associated with the subsequent call.</p>
+<p>By using the @closed_high_end_point parameter when you create the script, you can generate</p>
+<p>wrappers to support either a closed upper bound or an open upper bound on the specified</p>
+<p>query window. That is, you can decide whether entries that have a commit time equal to the</p>
+<p>upper bound of the extraction interval are to be included in the interval. By default, the upper</p>
+<p>bound is included.</p>
+<p>The result set that is returned by the</p>
+<p>wrapper function returns the __$start_lsn and</p>
+<p>__$seqval columns of the change table as columns __CDC_STARTLSN and __CDC_SEQVAL,</p>
+<p>respectively. It follows these with only those tracked columns that appeared in the</p>
+<p>@column_list</p>
+<p>parameter when the wrapper was generated. If</p>
+<p>@column_list</p>
+<p>is NULL, all tracked</p>
+<p>source columns are returned. The source columns are followed by an operation column,</p>
+<p>__CDC_OPERATION, which is a one- or two-character column that identifies the operation.</p>
+<p>Bit flags are then appended to the result set for each column that is identified in the</p>
+<p>@update_flag_list parameter. For the</p>
+<p>wrapper, the bit flags will always be NULL if</p>
+<p>__CDC_OPERATION is ‘D’, ‘I’, or ‘UO’. If __CDC_OPERATION is ‘UN’, the flag will be set to 1 or 0,</p>
+<p>depending on whether the update operation caused a change to the column.</p>
+<p>The change data capture configuration template ‘Instantiate CDC Wrapper TVFs for Schema’</p>
+<p>shows how to use the</p>
+<p>stored procedure to obtain CREATE</p>
+<p>scripts for all of the wrapper functions for a schema’s defined query functions. The template</p>
+<p>then creates those scripts. For more information about templates, see</p>
+<p>Template Explorer</p>
+<p>The wrapper functions</p>
+<p>are dependent on the system functions</p>
+<p>. Error 313 is expected if LSN range supplied is</p>
+<p>not appropriate when calling</p>
+<p>parameter is beyond the</p>
+<p>time of lowest LSN or highest LSN, then execution of these functions will return in error 313:</p>
+<p>. This error should be handled by the developer.</p>
+<p>sys.fn_net_changes_&#x3C;capture_instance></p>
+<p>sys.sp_cdc_generate_wrapper_function (Transact-SQL)</p>
+<p>cdc.fn_cdc_get_all_changes_&#x3C;capture_instance> (Transact-SQL)</p>
+<p>operation column, __CDC_OPERATION, which is a one- or two-character column that identifies</p>
+<p>the operation.</p>
+<p>Bit flags are then appended to the result set for each column that is identified in the parameter</p>
+<p>@update_flag_list. For the</p>
+<p>wrapper, the bit flags will always be NULL if the</p>
+<p>@row_filter_option that is used in the call to the wrapper function is ‘all’ or ‘all with merge’. If</p>
+<p>the @row_filter_option is set to ‘all with mask’, and __CDC_OPERATION is ‘D’ or ‘I’, the value of</p>
+<p>the flag will also be NULL. If __CDC_OPERATION is ‘UN’, the flag will be set to 1 or 0, depending</p>
+<p>on whether the</p>
+<p>update operation caused a change to the column.</p>
+<p>The change data capture configuration template ‘Instantiate CDC Wrapper TVFs for Schema’</p>
+<p>shows how to use the</p>
+<p>stored procedure to obtain CREATE</p>
+<p>scripts for all of the wrapper functions for a schema’s defined query functions. The template</p>
+<p>then creates those scripts. For more information about templates, see</p>
+<p>Template Explorer</p>
+<p>The wrapper functions</p>
+<p>are dependent on the system functions</p>
+<p>. Error 313 is expected if LSN range supplied is</p>
+<p>not appropriate when calling</p>
+<p>parameter is beyond the</p>
+<p>time of lowest LSN or highest LSN, then execution of these functions will return in error 313:</p>
+<p>. This error should be handled by the developer.</p>
+<p>sys.fn_all_changes_&#x3C;capture_instance></p>
+<p>sys.sp_cdc_generate_wrapper_function (Transact-SQL)</p>
+<p>cdc.fn_cdc_get_net_changes_&#x3C;capture_instance> (Transact-SQL)</p> </div> <nav class="detail-footer" data-astro-cid-5e2docdb> <a href="/sqlkraft/functions/" data-astro-cid-5e2docdb>&larr; Back to all functions</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

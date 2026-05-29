@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>FOR BROWSE — T-SQL Reference — SqlKraft</title><meta name="description" content="Specifies that updates are allowed while viewing the data in a DB-Library browse mode cursor."><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>FOR BROWSE</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>FOR BROWSE</h1> <span class="cat-badge" data-astro-cid-s2stm25t>statements</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#statements</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <h2 id="browse">BROWSE</h2>
+<p>Specifies that updates are allowed while viewing the data in a DB-Library browse mode cursor.</p>
+<p>You can browse a table in an application if the table includes a</p>
+<p>column, the table</p>
+<p>has a unique index, and the</p>
+<p>option is at the end of the</p>
+<p>statements sent to</p>
+<p>an instance of SQL Server.</p>
+<p>can’t appear in</p>
+<p>statements that the</p>
+<p>operator joins.</p>
+<p>The browse mode lets you scan the rows in your SQL Server table and update the data in your</p>
+<p>table one row at a time. To access a SQL Server table in your application in the browse mode,</p>
+<p>you must use one of the following two options:</p>
+<p>The</p>
+<p>statement that you use to access the data from your SQL Server table must</p>
+<p>end with the keywords</p>
+<p>. When you turn on the</p>
+<p>option to use</p>
+<p>browse mode, temporary tables are created.</p>
+<p>You must run the following Transact-SQL statement to turn on the browse mode by using</p>
+<p>the</p>
+<p>option:</p>
+<p>７</p>
+<p>Note</p>
+<p>You can’t use the</p>
+<p>in a</p>
+<p>statement that includes the</p>
+<p>option.</p>
+<p>７</p>
+<p>Note</p>
+<p>When the unique index key columns of a table are nullable, and the table is on the inner</p>
+<p>side of an outer join, browse mode doesn’t support the index.</p>
+<p>SQL</p>
+<p>When you turn on the</p>
+<p>option, all the</p>
+<p>statements behave as if the</p>
+<p>option is appended to the statements. However, the</p>
+<p>option</p>
+<p>doesn’t create the temporary tables that the</p>
+<p>option generally uses to send</p>
+<p>the results to your application.</p>
+<p>When you try to access the data from SQL Server tables in browse mode by using a</p>
+<p>query that involves an</p>
+<p>statement, and when a unique index is defined on the table</p>
+<p>that’s present on the inner side of an</p>
+<p>statement, the browse mode doesn’t support</p>
+<p>the unique index. The browse mode supports the unique index only when all unique index key</p>
+<p>columns can accept</p>
+<p>values. The browse mode doesn’t support the unique index if the</p>
+<p>following conditions are true:</p>
+<p>You try to access the data from SQL Server tables in browse mode by using a</p>
+<p>query that involves an</p>
+<p>statement.</p>
+<p>A unique index is defined on the table that’s present on the inner side of an</p>
+<p>statement.</p>
+<p>To reproduce this behavior in the browse mode, follow these steps:</p>
+<ol>
+<li>In SQL Server Management Studio, create a database named</li>
+</ol>
+<p>.</p>
+<ol start="2">
+<li>In the</li>
+</ol>
+<p>database, create a</p>
+<p>table and a</p>
+<p>table that both contain a</p>
+<p>single column named</p>
+<p>. Define a unique index on the</p>
+<p>column in the</p>
+<p>table,</p>
+<p>and set the column to accept</p>
+<p>values. To do this, run the following Transact-SQL</p>
+<p>statements in an appropriate query window:</p>
+<p>SQL</p>
+<ol start="3">
+<li>Insert several values in the</li>
+</ol>
+<p>table and the</p>
+<p>table. Make sure that you insert a</p>
+<p>value in the</p>
+<p>table. To do this, run the following Transact-SQL statements in</p>
+<p>the query window:</p>
+<p>SQL</p>
+<h3 id="results">Results</h3>
+<ol start="4">
+<li>Turn on the</li>
+</ol>
+<p>option. To do this, run the following Transact-SQL statements</p>
+<p>in the query window:</p>
+<p>SQL</p>
+<ol start="5">
+<li>Access the data in the</li>
+</ol>
+<p>table and the</p>
+<p>table by using an outer join statement</p>
+<p>in the</p>
+<p>query. Make sure that the</p>
+<p>table is on the inner side of the outer join</p>
+<p>statement. To do this, run the following Transact-SQL statements in the query window:</p>
+<p>SQL</p>
+<p>Notice the following output in the</p>
+<p>pane:</p>
+<p>Output</p>
+<p>After you run the</p>
+<p>query to access the tables in the browse mode, the result set of the</p>
+<p>query contains two</p>
+<p>values for the</p>
+<p>column in the</p>
+<p>table because of the</p>
+<p>definition of the</p>
+<p>statement. Therefore, in the result set, you can’t distinguish</p>
+<p>between the</p>
+<p>values that came from the table and the</p>
+<p>values that the</p>
+<p>statement introduced. You might receive incorrect results if the query must ignore the</p>
+<p>values from the result set.</p>
+<p>７</p>
+<p>Note</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#E1E4E8"> BROWSE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#E1E4E8"> BROWSE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UNION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#E1E4E8"> BROWSE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#E1E4E8"> BROWSE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NO_BROWSETABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#F97583">AUTO</span></span>
+<span class="line"><span style="color:#E1E4E8">|</span></span>
+<span class="line"><span style="color:#F97583">PATH</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"><span style="color:#E1E4E8">[</span></span>
+<span class="line"><span style="color:#E1E4E8">[ ,</span></span>
+<span class="line"><span style="color:#F97583">ROOT</span></span>
+<span class="line"><span style="color:#E1E4E8">[ (</span></span>
+<span class="line"><span style="color:#9ECBFF">'RootName'</span></span>
+<span class="line"><span style="color:#E1E4E8">) ] ]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ ,</span></span>
+<span class="line"><span style="color:#F97583">INCLUDE</span></span>
+<span class="line"><span style="color:#E1E4E8">_</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">_</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ ,</span></span>
+<span class="line"><span style="color:#F97583">WITHOUT</span></span>
+<span class="line"><span style="color:#E1E4E8">_</span></span>
+<span class="line"><span style="color:#F97583">ARRAY</span></span>
+<span class="line"><span style="color:#E1E4E8">_</span></span>
+<span class="line"><span style="color:#E1E4E8">WRAPPER</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">lock_hint</span><span style="color:#F97583">></span><span style="color:#E1E4E8"> HOLDLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span></span>
+<span class="line"><span style="color:#E1E4E8">BROWSE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NO_BROWSETABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#E1E4E8"> BROWSE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NO_BROWSETABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#E1E4E8"> BROWSE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OUTER</span><span style="color:#F97583"> JOIN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OUTER</span><span style="color:#F97583"> JOIN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OUTER</span><span style="color:#F97583"> JOIN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OUTER</span><span style="color:#F97583"> JOIN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SampleDB</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SampleDB</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tleft</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tright</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">c1</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">c1</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tleft</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tleft</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tright</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tleft</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span></span>
+<span class="line"><span style="color:#F97583">NO_BROWSETABLE</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">tleft (c1</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#F97583">UNIQUE</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">tright (c1</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NO_BROWSETABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tleft</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tright</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tleft</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">c1</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">tleft</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">RIGHT OUTER JOIN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">RIGHT </span><span style="color:#F97583">OUTER</span></span>
+<span class="line"><span style="color:#F97583">JOIN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">tleft</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">tleft</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">tright</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">tright</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">3</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">tright</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">SET</span></span>
+<span class="line"><span style="color:#F97583">NO_BROWSETABLE</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#79B8FF">tleft</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">c1</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">tleft</span></span>
+<span class="line"><span style="color:#E1E4E8">RIGHT</span></span>
+<span class="line"><span style="color:#F97583">OUTER</span></span>
+<span class="line"><span style="color:#F97583">JOIN</span></span>
+<span class="line"><span style="color:#E1E4E8">tright</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">tleft</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">c1</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> tright</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">c1</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#79B8FF">tright</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">c1</span><span style="color:#F97583"> &#x3C;></span><span style="color:#79B8FF"> 2</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">c1</span></span>
+<span class="line"><span style="color:#6A737D">---</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Replication transactions — Architecture Guide — SqlKraft</title><meta name="description" content="The active log must include every part of all uncommitted transactions. An application that"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Replication transactions</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>io fundamentals</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#io-fundamentals</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Replication transactions</h1> <p class="doc-lede" data-astro-cid-hditk3lm>The active log must include every part of all uncommitted transactions. An application that</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>The active log must include every part of all uncommitted transactions. An application that</p>
+<p>starts a transaction and doesn’t commit it or roll it back prevents the Database Engine from</p>
+<p>advancing the MinLSN. This situation can cause two types of problems:</p>
+<p>If the system is shut down after the transaction has performed many uncommitted</p>
+<p>modifications, the recovery phase of the subsequent restart can take much longer than</p>
+<p>the time specified in the</p>
+<p>option.</p>
+<p>The log might grow very large, because the log can’t be truncated past the MinLSN. This</p>
+<p>occurs even if the database is using the simple recovery model, in which the transaction</p>
+<p>log is truncated on each automatic checkpoint.</p>
+<p>Recovery of long-running transactions, and the problems described in this article, can be</p>
+<p>avoided by using</p>
+<p>Accelerated database recovery</p>
+<p>, a feature available starting with SQL Server</p>
+<p>2019 (15.x) and in Azure SQL Database.</p>
+<p>The Log Reader Agent monitors the transaction log of each database configured for</p>
+<p>transactional replication, and it copies the transactions marked for replication from the</p>
+<p>transaction log into the distribution database. The active log must contain all transactions that</p>
+<p>are marked for replication, but that haven’t yet been delivered to the distribution database. If</p>
+<p>these transactions aren’t replicated in a timely manner, they can prevent the truncation of the</p>
+<p>log. For more information, see</p>
+<p>Transactional Replication</p>
+<p>.</p>
+<p>The transaction log</p>
+<p>Manage the size of the transaction log file</p>
+<p>Transaction log backups (SQL Server)</p>
+<p>Database checkpoints (SQL Server)</p>
+<p>Server configuration: recovery interval (min)</p>
+<p>Accelerated database recovery</p>
+<p>sys.dm_db_log_info (Transact-SQL)</p>
+<p>sys.dm_db_log_space_usage (Transact-SQL)</p>
+<p>Understanding Logging and Recovery in SQL Server</p>
+<p>Last updated on 11/18/2025</p>
+<p>Related content</p> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

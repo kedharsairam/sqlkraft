@@ -1,0 +1,1204 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Features deprecated in a future version of SQL Server — Architecture Guide — SqlKraft</title><meta name="description" content="Compatibility Level as long as possible, to make the"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Features deprecated in a future version of SQL Server</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>io fundamentals</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#io-fundamentals</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Features deprecated in a future version of SQL Server</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Compatibility Level as long as possible, to make the</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Category</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>Feature</p>
+<p>ID</p>
+<p>Compatibility Level as long as possible, to make the</p>
+<p>upgrades easier. For more information about</p>
+<p>compatibility levels, see</p>
+<p>ALTER DATABASE (Transact-SQL)</p>
+<p>compatibility level</p>
+<p>.</p>
+<p>Database</p>
+<p>objects</p>
+<p>Ability to return result sets from triggers</p>
+<p>None</p>
+<p>Returning results from</p>
+<p>trigger</p>
+<p>12</p>
+<p>Encryption</p>
+<p>Encryption using RC4 or RC4_128 is</p>
+<p>deprecated and will be removed in the next</p>
+<p>version. Decrypting RC4 and RC4_128 isn’t</p>
+<p>deprecated.</p>
+<p>Use another encryption algorithm such as AES.</p>
+<p>Deprecated encryption</p>
+<p>algorithm</p>
+<p>253</p>
+<p>Hash</p>
+<p>algorithms</p>
+<p>Using the MD2, MD4, MD5, SHA, and SHA1 is</p>
+<p>deprecated.</p>
+<p>Use SHA2_256 or SHA2_512 instead. Older algorithms</p>
+<p>continue working, but they raise a deprecation event.</p>
+<p>Deprecated hash algorithm</p>
+<p>None</p>
+<p>Remote</p>
+<p>servers</p>
+<p>Replace remote servers by using linked servers.</p>
+<p>can only be used with the local option.</p>
+<p>70</p>
+<p>69</p>
+<p>71</p>
+<p>72</p>
+<p>73</p>
+<p>Remote</p>
+<p>servers</p>
+<p>@@remserver</p>
+<p>Replace remote servers by using linked servers.</p>
+<p>None</p>
+<p>None</p>
+<p>Remote</p>
+<p>servers</p>
+<p>Replace remote servers by using linked servers.</p>
+<p>110</p>
+<p>Table hints</p>
+<p>HOLDLOCK table hint without parenthesis.</p>
+<p>Use HOLDLOCK with parenthesis.</p>
+<p>HOLDLOCK table hint</p>
+<p>without parenthesis</p>
+<p>167</p>
+<p>The following SQL Server Database Engine features are supported in the next version of SQL Server, but will be deprecated in a later version. The</p>
+<p>specific version of SQL Server hasn’t been determined.</p>
+<p>Category</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>Compatibility</p>
+<p>levels</p>
+<p>.</p>
+<p>For more information, see</p>
+<p>ALTER DATABASE</p>
+<p>(Transact-SQL) compatibility level</p>
+<p>.</p>
+<p>sp_dbcmptlevel</p>
+<p>Compatibility</p>
+<p>levels</p>
+<p>Database compatibility level 110 and 120.</p>
+<p>Plan to upgrade the database and application</p>
+<p>for a future release. However, we continue to</p>
+<p>support applications certified on any supported</p>
+<p>database compatibility level as long as possible,</p>
+<p>to make the upgrades easier. For more</p>
+<p>information about compatibility levels, see</p>
+<p>ALTER DATABASE (Transact-SQL) compatibility</p>
+<p>level</p>
+<p>.</p>
+<p>Database compatibility l</p>
+<p>Database compatibility l</p>
+<p>XML</p>
+<p>Inline XDR Schema Generation</p>
+<p>The XMLDATA directive to the</p>
+<p>option is</p>
+<p>deprecated. Use XSD generation in the case of</p>
+<p>and</p>
+<p>modes. There’s no replacement</p>
+<p>for the XMLDATA directive in EXPLICT mode.</p>
+<p>XMLDATA</p>
+<p>XML</p>
+<p>For more information, see</p>
+<p>ALTER INDEX</p>
+<p>.</p>
+<p>sys.sp_db_selective_xml_</p>
+<p>Backup and</p>
+<p>restore</p>
+<p>BACKUP { DATABASE | LOG } TO TAPE</p>
+<p>BACKUP { DATABASE | LOG } TO</p>
+<p>device_that_is_a_tape</p>
+<p>BACKUP { DATABASE | LOG } TO DISK</p>
+<p>BACKUP DATABASE or LO</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p>Category</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>BACKUP { DATABASE | LOG } TO</p>
+<p>device_that_is_a_disk</p>
+<p>Backup and</p>
+<p>restore</p>
+<p>Backup and</p>
+<p>restore</p>
+<p>Collations</p>
+<p>Korean_Wansung_Unicode</p>
+<p>Lithuanian_Classic</p>
+<p>SQL_AltDiction_CP1253_CS_AS</p>
+<p>None. These collations exist in SQL Server 2005</p>
+<p>(9.x), but aren’t visible through</p>
+<p>fn_helpcollations.</p>
+<p>Korean_Wansung_Unico</p>
+<p>Lithuanian_Classic</p>
+<p>SQL_AltDiction_CP1253_</p>
+<p>Collations</p>
+<p>Hindi</p>
+<p>Macedonian</p>
+<p>These collations exist in SQL Server 2005 (9.x)</p>
+<p>and higher, but aren’t visible through</p>
+<p>fn_helpcollations. Use Macedonian_FYROM_90</p>
+<p>and Indic_General_90 instead.</p>
+<p>Hindi</p>
+<p>Macedonian</p>
+<p>Collations</p>
+<p>Azeri_Latin_90</p>
+<p>Azeri_Cyrilllic_90</p>
+<p>Azeri_Latin_100</p>
+<p>Azeri_Cyrilllic_100</p>
+<p>Azeri_Latin_90</p>
+<p>Azeri_Cyrilllic_90</p>
+<p>Configuration</p>
+<p>and</p>
+<p>database option</p>
+<p>and</p>
+<p>database option</p>
+<p>and</p>
+<p>database option</p>
+<p>None.</p>
+<p>,</p>
+<p>and</p>
+<p>CONCAT_NULLS_YIELDS_NULL are always set to</p>
+<p>.</p>
+<p>will be unavailable.</p>
+<p>Data types</p>
+<p>Data types</p>
+<p>timestamp</p>
+<h2 id="syntax-for">syntax for</h2>
+<p>rowversion</p>
+<p>data type</p>
+<p>rowversion</p>
+<p>data type syntax</p>
+<p>Data types</p>
+<p>Ability to insert null values into</p>
+<p>timestamp</p>
+<p>columns.</p>
+<p>Use a</p>
+<p>instead.</p>
+<p>into</p>
+<p>Data types</p>
+<p>‘text in row’ table option</p>
+<p>Use</p>
+<p>varchar(max)</p>
+<p>,</p>
+<p>nvarchar(max)</p>
+<p>, and</p>
+<p>varbinary(max)</p>
+<p>data types. For more</p>
+<p>information, see</p>
+<p>sp_tableoption</p>
+<p>.</p>
+<p>Text in row table option</p>
+<p>Data types</p>
+<p>Data types:</p>
+<p>text</p>
+<p>ntext</p>
+<p>image</p>
+<p>Use</p>
+<p>varchar(max)</p>
+<p>,</p>
+<p>nvarchar(max)</p>
+<p>, and</p>
+<p>varbinary(max)</p>
+<p>data types.</p>
+<p>Data types:</p>
+<p>text</p>
+<p>,</p>
+<p>ntext</p>
+<p>, o</p>
+<p>Database</p>
+<p>management</p>
+<p>statement with the</p>
+<p>option. To rebuild multiple log files,</p>
+<p>when one or more have a new location, use the</p>
+<p>option.</p>
+<p>sp_attach_single_file_db</p>
+<p>Database</p>
+<p>objects</p>
+<p>sp_bindefault</p>
+<p>keyword in</p>
+<p>and</p>
+<p>CREATE_DROP_DEFAULT</p>
+<p>Category</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>Database</p>
+<p>objects</p>
+<p>keyword in</p>
+<p>and</p>
+<p>CREATE_DROP_RULE</p>
+<p>Database</p>
+<p>objects</p>
+<p>Use</p>
+<p>.</p>
+<p>Database</p>
+<p>objects</p>
+<p>and</p>
+<p>Database</p>
+<p>objects</p>
+<p>in</p>
+<p>Database</p>
+<p>objects</p>
+<p>Use MARS or distributed transactions.</p>
+<p>Database</p>
+<p>options</p>
+<p>Use MARS or distributed transactions.</p>
+<p>Database</p>
+<p>options</p>
+<p>{</p>
+<p>|</p>
+<p>}</p>
+<p>Database</p>
+<p>options</p>
+<p>option of</p>
+<p>option of</p>
+<p>DBCC</p>
+<p>DBCC DBREINDEX</p>
+<p>option of</p>
+<p>.</p>
+<p>DBCC DBREINDEX</p>
+<p>DBCC</p>
+<p>DBCC INDEXDEFRAG</p>
+<p>option of</p>
+<p>DBCC INDEXDEFRAG</p>
+<p>DBCC</p>
+<p>DBCC SHOWCONTIG</p>
+<p>DBCC SHOWCONTIG</p>
+<p>DBCC</p>
+<p>DBCC PINTABLE</p>
+<p>DBCC UNPINTABLE</p>
+<p>Has no effect.</p>
+<p>DBCC [UN]PINTABLE</p>
+<p>Extended</p>
+<p>properties</p>
+<p>Level0type = ‘type’ and Level0type = ‘USER’ to add extended properties to</p>
+<p>level-1 or level-2 type objects.</p>
+<p>Use Level0type = ‘USER’ only to add an</p>
+<p>extended property directly to a user or role.</p>
+<p>Use Level0type = ’</p>
+<p>’ to add an extended</p>
+<p>property to level-1 types such as</p>
+<p>or</p>
+<p>VIEW, or level-2 types such as COLUMN or</p>
+<p>TRIGGER. For more information, see</p>
+<p>sp_addextendedproperty</p>
+<p>.</p>
+<p>EXTPROP_LEVEL0</p>
+<p>EXTPROP_LEVEL0USER</p>
+<p>Extended</p>
+<p>stored</p>
+<p>procedure</p>
+<p>programming</p>
+<p>srv_alloc</p>
+<p>srv_convert</p>
+<p>srv_describe</p>
+<p>srv_getbindtoken</p>
+<p>srv_got_attention</p>
+<p>srv_message_handler</p>
+<p>srv_paramdata</p>
+<p>srv_paraminfo</p>
+<p>srv_paramlen</p>
+<p>srv_parammaxlen</p>
+<p>srv_paramname</p>
+<p>srv_paramnumber</p>
+<p>srv_paramset</p>
+<p>Use CLR Integration instead.</p>
+<p>Category</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>srv_paramsetoutput</p>
+<p>srv_paramstatus</p>
+<p>srv_paramtype</p>
+<p>srv_pfield</p>
+<p>srv_pfieldex</p>
+<p>srv_rpcdb</p>
+<p>srv_rpcname</p>
+<p>srv_rpcnumber</p>
+<p>srv_rpcoptions</p>
+<p>srv_rpcowner</p>
+<p>srv_rpcparams</p>
+<p>srv_senddone</p>
+<p>srv_sendmsg</p>
+<p>srv_sendrow</p>
+<p>srv_setcoldata</p>
+<p>srv_setcollen</p>
+<p>srv_setutype</p>
+<p>srv_willconvert</p>
+<p>srv_wsendmsg</p>
+<p>Extended</p>
+<p>stored</p>
+<p>procedure</p>
+<p>programming</p>
+<p>Use CLR Integration instead.</p>
+<p>Extended</p>
+<p>stored</p>
+<p>procedures</p>
+<p>Use</p>
+<p>Use</p>
+<p>argument of</p>
+<p>Functions</p>
+<p>fn_get_sql</p>
+<p>fn_get_sql</p>
+<p>High</p>
+<p>availability</p>
+<p>database mirroring</p>
+<p>Always On availability groups</p>
+<p>If your edition of SQL Server doesn’t support</p>
+<p>Always On availability groups, use log shipping.</p>
+<p>DATABASE_MIRRORING</p>
+<p>Index options</p>
+<p>Index options</p>
+<p>,</p>
+<p>, or</p>
+<h2 id="syntax-without-parentheses">syntax without parentheses</h2>
+<p>around the options.</p>
+<p>Rewrite the statement to use the current syntax.</p>
+<p>INDEX_OPTION</p>
+<p>Instance</p>
+<p>options</p>
+<p>option ‘allow updates’</p>
+<p>System tables are no longer updatable. Setting</p>
+<p>has no effect.</p>
+<p>‘allow upd</p>
+<p>Instance</p>
+<p>options</p>
+<p>options:</p>
+<p>‘locks’</p>
+<p>‘open objects’</p>
+<p>Now automatically configured. Setting has no</p>
+<p>effect.</p>
+<p>‘locks’</p>
+<p>‘open obje</p>
+<p>‘set workin</p>
+<p>Category</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>‘set working set size’</p>
+<p>Instance</p>
+<p>options</p>
+<p>option ‘priority boost’</p>
+<p>System tables are no longer updatable. Setting</p>
+<p>has no effect. Use the Windows</p>
+<p>option instead.</p>
+<p>‘priority bo</p>
+<p>Instance</p>
+<p>options</p>
+<p>option ‘remote proc trans’</p>
+<p>System tables are no longer updatable. Setting</p>
+<p>has no effect.</p>
+<p>‘remote pr</p>
+<p>Linked</p>
+<p>servers</p>
+<p>Specifying the SQLOLEDB provider for linked servers.</p>
+<p>Microsoft OLE DB Driver for SQL Server</p>
+<p>SQLOLEDB for linked ser</p>
+<p>Locking</p>
+<p>Metadata</p>
+<p>FILE_ID</p>
+<p>INDEXKEY_PROPERTY</p>
+<p>FILE_IDEX</p>
+<p>FILE_ID</p>
+<p>INDEXKEY_PROPERTY</p>
+<p>Native XML</p>
+<p>Web Services</p>
+<p>The</p>
+<p>or</p>
+<p>statement with the</p>
+<p>option.</p>
+<p>sys.endpoint_webmethods</p>
+<p>sys.soap_endpoints</p>
+<p>Use Windows Communications Foundation</p>
+<p>(WCF) or ASP.NET instead.</p>
+<p>/</p>
+<p>sys.endpoint_webmetho</p>
+<p>EXT_soap_endpoints</p>
+<p>Removable</p>
+<p>databases</p>
+<p>Removable</p>
+<p>databases</p>
+<p>Security</p>
+<p>The</p>
+<h2 id="syntax">syntax</h2>
+<p>Replaced by the new</p>
+<p>and</p>
+<h2 id="syntax-1">syntax</h2>
+<p>Security</p>
+<p>Security</p>
+<p>Security</p>
+<p>Security</p>
+<p>Security</p>
+<p>Security</p>
+<p>Security</p>
+<p>or</p>
+<p>Security</p>
+<p>A master key must exist and password must be</p>
+<p>correct.</p>
+<p>Security</p>
+<p>Security</p>
+<p>Category</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>sp_revokelogin</p>
+<p>Security</p>
+<p>USER_ID</p>
+<p>DATABASE_PRINCIPAL_ID</p>
+<p>USER_ID</p>
+<p>Security</p>
+<p>These stored procedures return information</p>
+<p>that was correct in SQL Server 2000 (8.x). The</p>
+<p>output doesn’t reflect changes to the</p>
+<h2 id="permissions-hierarchy-implemented-in-sql">permissions hierarchy implemented in SQL</h2>
+<p>Server 2008 (10.0.x). For more information, see</p>
+<h2 id="permissions-of-fixed-server-roles">Permissions of Fixed Server Roles</h2>
+<p>.</p>
+<p>Security</p>
+<p>,</p>
+<p>, and</p>
+<p>specific permissions.</p>
+<p>ALL Permission</p>
+<p>Security</p>
+<h2 id="permissions-intrinsic-function">PERMISSIONS intrinsic function</h2>
+<p>Query</p>
+<p>instead.</p>
+<h2 id="permissions">PERMISSIONS</h2>
+<p>Security</p>
+<p>SETUSER</p>
+<p>SETUSER</p>
+<p>Security</p>
+<p>RC4 and</p>
+<p>encryption algorithms</p>
+<p>Use another algorithm such as AES.</p>
+<p>algorithm</p>
+<p>options</p>
+<p>sys.dm_exec_describe_first_result_set</p>
+<p>,</p>
+<p>sys.dm_exec_describe_first_result_set_for_object</p>
+<p>,</p>
+<p>sp_describe_first_result_set</p>
+<p>, and</p>
+<p>sp_describe_undeclared_parameters</p>
+<p>.</p>
+<p>Server</p>
+<p>Configuration</p>
+<p>Options</p>
+<p>c2 audit option</p>
+<p>default trace enabled option</p>
+<p>common criteria compliance enabled Server</p>
+<p>Configuration Option</p>
+<p>Extended Events overview</p>
+<p>‘c2 audit m</p>
+<p>‘default tra</p>
+<p>SMO classes</p>
+<p>class</p>
+<p>class</p>
+<p>class</p>
+<p>property</p>
+<p>class</p>
+<p>class</p>
+<p>class</p>
+<p>None</p>
+<p>None</p>
+<p>SQL Server</p>
+<p>Agent</p>
+<p>net send</p>
+<p>notification</p>
+<p>Pager notification</p>
+<p>E-mail notification</p>
+<p>E-mail notification</p>
+<p>None</p>
+<p>SQL Server</p>
+<p>Management</p>
+<p>Studio</p>
+<p>Solution Explorer integration in SQL Server Management Studio</p>
+<p>None</p>
+<p>System</p>
+<p>Stored</p>
+<p>Procedures</p>
+<p>None. Support for increased partitions is now</p>
+<p>available by default.</p>
+<p>System tables</p>
+<p>sysaltfiles</p>
+<p>syscacheobjects</p>
+<p>syscolumns</p>
+<p>syscomments</p>
+<p>sysconfigures</p>
+<p>sysconstraints</p>
+<p>syscurconfigs</p>
+<p>sysdatabases</p>
+<p>sysdepends</p>
+<p>Compatibility views. For more information, see</p>
+<p>System Compatibility Views</p>
+<p>.</p>
+<p>Important:</p>
+<p>The compatibility views don’t</p>
+<p>expose metadata for features that were</p>
+<p>introduced in SQL Server 2005 (9.x). We</p>
+<p>recommend that you upgrade your applications</p>
+<p>to use catalog views. For more information, see</p>
+<p>System catalog views</p>
+<p>.</p>
+<p>sysaltfiles</p>
+<p>syscacheobjects</p>
+<p>syscolumns</p>
+<p>syscomments</p>
+<p>sysconfigures</p>
+<p>sysconstraints</p>
+<p>syscurconfigs</p>
+<p>sysdatabases</p>
+<p>sysdepends</p>
+<p>Category</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>sysdevices</p>
+<p>sysfilegroups</p>
+<p>sysfiles</p>
+<p>sysforeignkeys</p>
+<p>sysfulltextcatalogs</p>
+<p>sysindexes</p>
+<p>sysindexkeys</p>
+<p>syslockinfo</p>
+<p>syslogins</p>
+<p>sysmembers</p>
+<p>sysmessages</p>
+<p>sysobjects</p>
+<p>sysoledbusers</p>
+<p>sysopentapes</p>
+<p>sysperfinfo</p>
+<p>syspermissions</p>
+<p>sysprocesses</p>
+<p>sysprotects</p>
+<p>sysreferences</p>
+<p>sysremotelogins</p>
+<p>sysservers</p>
+<p>systypes</p>
+<p>sysusers</p>
+<p>sysdevices</p>
+<p>sysfilegroups</p>
+<p>sysfiles</p>
+<p>sysforeignkeys</p>
+<p>sysfulltextcatalogs</p>
+<p>sysindexes</p>
+<p>sysindexkeys</p>
+<p>syslockinfo</p>
+<p>syslogins</p>
+<p>sysmembers</p>
+<p>sysmessages</p>
+<p>sysobjects</p>
+<p>sysoledbusers</p>
+<p>sysopentapes</p>
+<p>sysperfinfo</p>
+<p>syspermissions</p>
+<p>sysprocesses</p>
+<p>sysprotects</p>
+<p>sysreferences</p>
+<p>sysremotelogins</p>
+<p>sysservers</p>
+<p>systypes</p>
+<p>sysusers</p>
+<p>System tables</p>
+<p>None</p>
+<p>numbered_procedures</p>
+<p>numbered_procedure_pa</p>
+<p>System</p>
+<p>functions</p>
+<p>fn_virtualservernodes</p>
+<p>fn_servershareddrives</p>
+<p>fn_virtualservernodes</p>
+<p>fn_servershareddrives</p>
+<p>System views</p>
+<p>Table</p>
+<p>compression</p>
+<p>The use of the vardecimal storage format.</p>
+<p>Vardecimal storage format is deprecated. Data</p>
+<p>compression in this version compresses decimal</p>
+<p>values and other data types. We recommend</p>
+<p>that you use data compression instead of the</p>
+<p>vardecimal storage format.</p>
+<p>Vardecimal storage form</p>
+<p>Table</p>
+<p>compression</p>
+<p>Use of the</p>
+<p>procedure.</p>
+<p>Vardecimal storage format is deprecated. The</p>
+<p>SQL Server data compression feature</p>
+<p>compresses decimal values as well as other data</p>
+<p>types. We recommend that you use data</p>
+<p>compression instead of the vardecimal storage</p>
+<p>format.</p>
+<p>Table</p>
+<p>compression</p>
+<p>Use of the</p>
+<p>procedure.</p>
+<p>Use data compression and the</p>
+<p>Category</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>procedure instead.</p>
+<p>Table hints</p>
+<p>Specifying</p>
+<p>or</p>
+<p>in the</p>
+<p>clause of an</p>
+<p>or</p>
+<p>statement.</p>
+<p>Remove the</p>
+<p>or</p>
+<p>table</p>
+<p>hints from the</p>
+<p>clause.</p>
+<p>or</p>
+<p>Table hints</p>
+<p>Specifying table hints without using the</p>
+<p>keyword.</p>
+<p>Use</p>
+<p>.</p>
+<p>Table hint without</p>
+<p>Table hints</p>
+<p>INSERT_HINTS</p>
+<p>INSERT_HINTS</p>
+<p>Text pointers</p>
+<p>WRITETEXT</p>
+<p>UPDATETEXT</p>
+<p>READTEXT</p>
+<p>None</p>
+<p>UPDATETEXT or WRITET</p>
+<p>READTEXT</p>
+<p>Text pointers</p>
+<p>TEXTPTR()</p>
+<p>TEXTVALID()</p>
+<p>None</p>
+<p>TEXTPTR</p>
+<p>TEXTVALID</p>
+<p>Transact-SQL</p>
+<p>function-calling sequence</p>
+<p>Replaced by</p>
+<p>.</p>
+<p>For example, replace</p>
+<p>with</p>
+<p>.</p>
+<p>’::’ function calling syntax</p>
+<p>Transact-SQL</p>
+<p>Three-part and four-part column references.</p>
+<p>Two-part names is the standard-compliant</p>
+<p>behavior.</p>
+<p>More than two-part colu</p>
+<p>Transact-SQL</p>
+<p>A string enclosed in quotation marks used as a column alias for an</p>
+<p>expression in a</p>
+<p>list:</p>
+<p>’</p>
+<p>string_alias</p>
+<p>’ =</p>
+<p>expression</p>
+<p>expression</p>
+<p>[AS]</p>
+<p>column_alias</p>
+<p>expression</p>
+<p>[AS] [</p>
+<p>column_alias</p>
+<p>]</p>
+<p>expression</p>
+<p>[AS] ”</p>
+<p>column_alias</p>
+<p>”</p>
+<p>expression</p>
+<p>[AS] ’</p>
+<p>column_alias</p>
+<p>’</p>
+<p>column_alias</p>
+<p>=</p>
+<p>expression</p>
+<p>String literals as column</p>
+<p>Transact-SQL</p>
+<p>Numbered procedures</p>
+<p>None. Don’t use.</p>
+<p>ProcNums</p>
+<p>Transact-SQL</p>
+<p>table_name.index_name</p>
+<h2 id="syntax-in">syntax in</h2>
+<p>index_name</p>
+<p>table_name</p>
+<h2 id="syntax-in-1">syntax in</h2>
+<p>.</p>
+<p>with two-pa</p>
+<p>Transact-SQL</p>
+<p>Not ending Transact-SQL statements with a semicolon.</p>
+<p>End Transact-SQL statements with a semicolon</p>
+<p>(</p>
+<p>).</p>
+<p>None</p>
+<p>Transact-SQL</p>
+<p>Use custom case-by-case solution with</p>
+<p>or derived table.</p>
+<p>Transact-SQL</p>
+<p>as a column name in DML statements.</p>
+<p>Use $rowguid.</p>
+<p>Transact-SQL</p>
+<p>IDENTITYCOL as a column name in DML statements.</p>
+<p>Use $identity.</p>
+<p>IDENTITYCOL</p>
+<p>Transact-SQL</p>
+<p>Use of #, ## as temporary table and temporary stored procedure names.</p>
+<p>Use at least one additional character.</p>
+<p>’#’ and ’##’ as the name</p>
+<p>and stored procedures</p>
+<p>Transact-SQL</p>
+<p>Use of @ or @@ as Transact-SQL identifiers.</p>
+<p>Don’t use @ or @@ or names that begin with</p>
+<p>@@ as identifiers.</p>
+<p>’@’ and names that start</p>
+<p>SQL identifiers</p>
+<p>Transact-SQL</p>
+<p>Use of</p>
+<p>keyword as default value.</p>
+<p>Don’t use the word</p>
+<p>as a default value.</p>
+<p>keyword as a de</p>
+<p>Transact-SQL</p>
+<p>Use of a space as a separator between table hints.</p>
+<p>Use a comma to separate table hints.</p>
+<p>Multiple table hints with</p>
+<p>Transact-SQL</p>
+<p>The select list of an aggregate indexed view must contain COUNT_BIG (*) in</p>
+<p>90 compatibility mode</p>
+<p>Use COUNT_BIG (*).</p>
+<p>Index view select list wit</p>
+<p>Transact-SQL</p>
+<p>The indirect application of table hints to an invocation of a multi-statement</p>
+<p>table-valued function (TVF) through a view.</p>
+<p>None.</p>
+<p>Indirect TVF hints</p>
+<p>Transact-SQL</p>
+<h2 id="syntax-2">syntax:</h2>
+<p>Category</p>
+<p>Deprecated feature</p>
+<p>Replacement</p>
+<p>Feature name</p>
+<p>Other</p>
+<p>DB-Library</p>
+<p>Embedded SQL for C</p>
+<p>Although the Database Engine still supports</p>
+<p>connections from existing applications that use</p>
+<p>the DB-Library and Embedded SQL APIs, it</p>
+<p>doesn’t include the files or documentation</p>
+<p>required to do programming work on</p>
+<p>applications that use these APIs. A future</p>
+<p>version of the SQL Server Database Engine will</p>
+<p>drop support for connections from DB-Library</p>
+<p>or Embedded SQL applications. Don’t use DB-</p>
+<p>Library or Embedded SQL to develop new</p>
+<p>applications. Remove any dependencies on</p>
+<p>either DB-Library or Embedded SQL when you</p>
+<p>modify existing applications. Instead of these</p>
+<p>APIs, use the SQLClient namespace or an API</p>
+<p>such as ODBC. The current version doesn’t</p>
+<p>include the DB-Library DLL required to run</p>
+<p>these applications. To run DB-Library or</p>
+<p>Embedded SQL applications, you must have</p>
+<p>available the DB-Library DLL from SQL Server</p>
+<p>version 6.5, SQL Server 7.0, or SQL Server 2000</p>
+<p>(8.x).</p>
+<p>None</p>
+<p>Tools</p>
+<p>SQL Server Profiler for Trace Capture</p>
+<p>Use Extended Events Profiler embedded in SQL</p>
+<p>Server Management Studio.</p>
+<p>SQL Server Profiler</p>
+<p>Tools</p>
+<p>SQL Server Profiler for Trace Replay</p>
+<p>SQL Server Distributed Replay overview</p>
+<p>SQL Server Profiler</p>
+<p>Trace</p>
+<p>Management</p>
+<p>Objects</p>
+<p>Microsoft.SqlServer.Management.Trace namespace (contains the APIs for</p>
+<p>SQL Server Trace and Replay objects)</p>
+<p>Trace Configuration:</p>
+<p>Microsoft.SqlServer.Management.XEvent</p>
+<p>Trace Reading:</p>
+<p>Microsoft.SqlServer.XEvent.Linq</p>
+<p>Trace Replay: None</p>
+<p>SQL Trace</p>
+<p>stored</p>
+<p>procedures,</p>
+<p>functions,</p>
+<p>and catalog</p>
+<p>views</p>
+<p>fn_trace_geteventinfo</p>
+<p>fn_trace_getfilterinfo</p>
+<p>fn_trace_getinfo</p>
+<p>fn_trace_gettable</p>
+<p>sys.trace_categories</p>
+<p>sys.trace_columns</p>
+<p>sys.trace_subclass_values</p>
+<p>Extended Events overview</p>
+<p>fn_trace_geteventinfo</p>
+<p>fn_trace_getfilterinfo</p>
+<p>fn_trace_getinfo</p>
+<p>fn_trace_gettable</p>
+<p>Set options</p>
+<p>for</p>
+<p>,</p>
+<p>, and</p>
+<p>statements</p>
+<p>keyword</p>
+<p>７</p>
+<p>Note</p>
+<p>The cookie</p>
+<p>parameter for</p>
+<p>is currently documented as</p>
+<p>varbinary(8000)</p>
+<p>which is the correct maximum length. However</p>
+<p>the current implementation returns</p>
+<p>varbinary(50)</p>
+<p>. If developers have allocated</p>
+<p>varbinary(50)</p>
+<p>the application might require changes if the</p>
+<p>Discontinued Database Engine functionality in SQL Server</p>
+<p>Deprecated Database Engine features in SQL Server 2017 (14.x)</p>
+<p>Last updated on 11/18/2025</p>
+<p>cookie return size increases in a future release. Though not a deprecation issue this is mentioned in this topic because the application</p>
+<p>adjustments are similar. For more information, see</p>
+<p>sp_setapprole</p>
+<p>.</p>
+<p>Related content</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addremotelogin</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_addserver</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_dropremotelogin</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_helpremotelogin</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_remoteoption</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addserver</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addremotelogin</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_addserver</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_dropremotelogin</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_helpremotelogin</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_remoteoption</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> REMOTE_PROC_TRANSACTIONS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span></span>
+<span class="line"><span style="color:#F97583">REMOTE_PROC_TRANSACTIONS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_dbcmptlevel</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span><span style="color:#E1E4E8"> ... </span><span style="color:#F97583">SET</span><span style="color:#F97583"> COMPATIBILITY_LEVEL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#F97583"> XML</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">RAW</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">AUTO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">sp_db_selective_xml_index</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> INDEX</span><span style="color:#E1E4E8"> ... </span><span style="color:#F97583">DISABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addumpdevice </span><span style="color:#9ECBFF">'tape'</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_addumpdevice </span><span style="color:#9ECBFF">'disk'</span></span>
+<span class="line"><span style="color:#E1E4E8">ADDING </span><span style="color:#F97583">TAPE</span><span style="color:#E1E4E8"> DEVICE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_helpdevice</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">backup_devices</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_helpdevice</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> ANSI_NULLS</span><span style="color:#F97583"> OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ANSI_NULLS</span><span style="color:#F97583"> OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> ANSI_PADDING</span><span style="color:#F97583"> OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ANSI_PADDING</span><span style="color:#F97583"> OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> CONCAT_NULL_YIELDS_NULL</span><span style="color:#F97583"> OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CONCAT_NULL_YIELDS_NULL</span><span style="color:#F97583"> OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#E1E4E8"> OFFSETS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ANSI_NULLS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ANSI_PADDING</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#E1E4E8"> OFFSETS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> ANSI_NULLS</span><span style="color:#F97583"> OFF</span></span>
+<span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> ANSI_PADDING</span><span style="color:#F97583"> OFF</span></span>
+<span class="line"><span style="color:#F97583">SET</span><span style="color:#E1E4E8"> CONCAT_NULL_YIELDS_</span></span>
+<span class="line"><span style="color:#F97583">SET</span><span style="color:#E1E4E8"> OFFSETS</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span><span style="color:#F97583"> SET</span><span style="color:#E1E4E8"> ANSI</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span><span style="color:#F97583"> SET</span><span style="color:#E1E4E8"> ANSI</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span><span style="color:#F97583"> SET</span><span style="color:#E1E4E8"> CONC</span></span>
+<span class="line"><span style="color:#F97583">OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addtype</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_droptype</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> TYPE</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> TYPE</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_addtype</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_droptype</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TIMESTAMP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DEFAULT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span><span style="color:#F97583"> NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TIMEST</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_attach_db</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_attach_single_file_db</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> DATABASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span></span>
+<span class="line"><span style="color:#F97583">ATTACH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#F97583"> ATTACH_REBUILD_LOG</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_attach_db</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> DEFAULT</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> DEFAULT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_unbindefault</span></span>
+<span class="line"><span style="color:#F97583">DEFAULT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_bindefault</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_unbindefault</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#E1E4E8"> RULE</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> RULE</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_bindrule</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_unbindrule</span></span>
+<span class="line"><span style="color:#F97583">CHECK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_bindrule</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_unbindrule</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_change_users_login</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> USER</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_change_users_login</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_depends</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_sql_referencing_entities</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_sql_referenced_entities</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_depends</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_renamedb</span></span>
+<span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> NAME</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_renamedb</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_getbindtoken</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_getbindtoken</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_bindsession</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_bindsession</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_resetstatus</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span><span style="color:#F97583"> SET</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ONLINE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">EMERGENCY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_resetstatus</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TORN_PAGE_DETECTION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span>
+<span class="line"><span style="color:#F97583">PAGE_VERIFY</span><span style="color:#F97583"> TORN_PAGE_DETECTION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span><span style="color:#F97583"> WITH</span><span style="color:#E1E4E8"> TOR</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">REBUILD</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">REORGANIZE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_db_index_physical_stats</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SCHEMA</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TYPE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">XP_API</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addextendedproc</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_dropextendedproc</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_helpextendedproc</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addextendedproc</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_dropextendedproc</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_helpextendedproc</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">xp_grantlogin</span></span>
+<span class="line"><span style="color:#E1E4E8">xp_revokelogin</span></span>
+<span class="line"><span style="color:#E1E4E8">xp_loginConfig</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> LOGIN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> LOGIN</span><span style="color:#E1E4E8"> IsIntegratedSecurityOnly</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SERVERPROPERTY</span></span>
+<span class="line"><span style="color:#E1E4E8">xp_grantlogin</span></span>
+<span class="line"><span style="color:#E1E4E8">xp_revokelogin</span></span>
+<span class="line"><span style="color:#E1E4E8">xp_loginconfig</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_exec_sql_text</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_indexoption</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_indexoption</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">start</span><span style="color:#F97583"> /</span><span style="color:#E1E4E8">high</span></span>
+<span class="line"><span style="color:#E1E4E8">... </span><span style="color:#79B8FF">program</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">exe</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_lock</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_tran_locks</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_lock</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">index_columns</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> ENDPOINT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> ENDPOINT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FOR</span><span style="color:#F97583"> SOAP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> ENDPOINT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">soap_endpoints</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_certify_removable</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_create_removable</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_detach_db</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_certify_removable</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_create_removable</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_dbremove</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> DATABASE</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_dbremove</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> LOGIN</span><span style="color:#F97583"> WITH</span><span style="color:#F97583"> SET</span><span style="color:#F97583"> CREDENTIAL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> LOGIN</span><span style="color:#F97583"> ADD</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP</span></span>
+<span class="line"><span style="color:#F97583">CREDENTIAL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> LOGIN</span><span style="color:#F97583"> WITH</span><span style="color:#F97583"> SET</span><span style="color:#E1E4E8"> CR</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addapprole</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_dropapprole</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> APPLICATION</span><span style="color:#F97583"> ROLE</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> APPLICATION</span><span style="color:#F97583"> ROLE</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_addapprole</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_dropapprole</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addlogin</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_droplogin</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> LOGIN</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> LOGIN</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_addlogin</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_droplogin</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_adduser</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_dropuser</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span><span style="color:#E1E4E8"> USER</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> USER</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_adduser</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_dropuser</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_grantdbaccess</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_revokedbaccess</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span><span style="color:#E1E4E8"> USER</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> USER</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_grantdbaccess</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_revokedbaccess</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addrole</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_droprole</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> ROLE</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> ROLE</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_addrole</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_droprole</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_approlepassword</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_password</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> APPLICATION</span><span style="color:#F97583"> ROLE</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> LOGIN</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_approlepassword</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_password</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_changeobjectowner</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> SCHEMA</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#E1E4E8"> AUTHORIZATION</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_changeobjectowner</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_control_dbmasterkey_password</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_control_dbmasterkey_</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_defaultdb</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_defaultlanguage</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> LOGIN</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_defaultdb</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_defaultlanguage</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_denylogin</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_grantlogin</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> LOGIN</span><span style="color:#F97583"> DISABLE</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> LOGIN</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_denylogin</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_grantlogin</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_revokelogin</span></span>
+<span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> LOGIN</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_srvrolepermission</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_dbfixedrolepermission</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_srvrolepermission</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_dbfixedrolepermissio</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">GRANT</span><span style="color:#E1E4E8"> ALL</span></span>
+<span class="line"><span style="color:#E1E4E8">DENY ALL</span></span>
+<span class="line"><span style="color:#F97583">REVOKE</span><span style="color:#E1E4E8"> ALL</span></span>
+<span class="line"><span style="color:#F97583">GRANT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">DENY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">REVOKE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">fn_my_permissions</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">EXECUTE</span><span style="color:#F97583"> AS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DESX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DESX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> FMTONLY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#F97583"> FMTONLY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Microsoft</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SQLServer</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Management</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Smo</span><span style="color:#E1E4E8">.Information</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Microsoft</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SQLServer</span><span style="color:#E1E4E8">. </span><span style="color:#79B8FF">Management</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Smo</span><span style="color:#E1E4E8">.Settings</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Microsoft</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SQLServer</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Management</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Smo</span><span style="color:#E1E4E8">.DatabaseOptions</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Microsoft</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SqlServer</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Management</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Smo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">DatabaseDdlTrigger</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">NotForReplication</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Microsoft</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SqlServer</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Management</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Smo</span><span style="color:#E1E4E8">.</span><span style="color:#F97583">Server</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Microsoft</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SqlServer</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Management</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Smo</span><span style="color:#E1E4E8">.</span><span style="color:#F97583">Server</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Microsoft</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SqlServer</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Management</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Smo</span><span style="color:#E1E4E8">.</span><span style="color:#F97583">Database</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_db_increased_partitions</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_db_increased_partiti</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">numbered_procedures</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">numbered_procedure_parameters</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_os_cluster_nodes</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_io_cluster_shared_drives</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">sql_dependencies</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">sql_expression_dependencies</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">sql_dependencies</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_db_vardecimal_storage_format</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_db_vardecimal_storag</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_estimated_rowsize_reduction_for_vardecimal</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_estimate_data_compression_savings</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_estimated_rowsize_re</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NOLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READUNCOMMITTED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FROM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NOLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">READUNCOMMITTED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FROM</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">NOLOCK</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">READUNCOMMITT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITH</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">::</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#F97583"> &#x3C;</span><span style="color:#E1E4E8">column_list</span><span style="color:#F97583">></span><span style="color:#F97583"> FROM</span><span style="color:#E1E4E8"> sys.</span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">function_name</span><span style="color:#F97583">></span><span style="color:#E1E4E8">()</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#F97583"> *</span><span style="color:#F97583"> FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">::fn_virtualfilestats(</span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">,</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span><span style="color:#F97583"> *</span><span style="color:#F97583"> FROM</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">fn_virtualfilestats</span><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">2</span><span style="color:#E1E4E8">,</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP</span><span style="color:#F97583"> INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">GROUP BY</span><span style="color:#E1E4E8"> ALL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UNION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">GROUP BY</span><span style="color:#E1E4E8"> ALL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ROWGUIDCOL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ROWGUIDCOL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DEFAULT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DEFAULT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DEFAULT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span><span style="color:#F97583"> DATABASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#F97583"> READONLY</span></span>
+<span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#F97583"> READWRITE</span></span>
+<span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#F97583"> READ_ONLY</span></span>
+<span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#F97583"> READ_WRITE</span></span>
+<span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#E1E4E8"> READON</span></span>
+<span class="line"><span style="color:#F97583">MODIFY</span><span style="color:#F97583"> FILEGROUP</span><span style="color:#E1E4E8"> READWR</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_trace_create</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_trace_setevent</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_trace_setfilter</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_trace_setstatus</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">traces</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">trace_events</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">trace_event_bindings</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_trace_create</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_trace_setevent</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_trace_setfilter</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_trace_setstatus</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">traces</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">trace_events</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">trace_event_binding</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">trace_categories</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">trace_columns</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">trace_subclass_valu</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#E1E4E8"> ROWCOUNT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UPDATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DELETE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">TOP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SET</span><span style="color:#E1E4E8"> ROWCOUNT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OUTPUT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_setapprole</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

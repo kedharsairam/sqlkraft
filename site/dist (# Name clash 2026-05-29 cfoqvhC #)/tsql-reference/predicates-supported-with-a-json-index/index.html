@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Predicates supported with a JSON index — T-SQL Reference — SqlKraft</title><meta name="description" content="For a list of features supported by the editions of SQL Server on Windows, see:"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Predicates supported with a JSON index</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Predicates supported with a JSON index</h1> <span class="cat-badge" data-astro-cid-s2stm25t>queries</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#queries</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>For a list of features supported by the editions of SQL Server on Windows, see:</p>
+<p>Editions and supported features of SQL Server 2025 Preview</p>
+<p>Editions and supported features of SQL Server 2022</p>
+<p>Editions and supported features of SQL Server 2019</p>
+<p>Editions and supported features of SQL Server 2017</p>
+<p>Editions and supported features of SQL Server 2016</p>
+<p>Determines the level of data compression used by the index.</p>
+<p>No compression used on data by the index</p>
+<p>Row compression used on data by the index</p>
+<p>Page compression used on data by the index</p>
+<p>Every option can be specified only once per</p>
+<p>statement. Specifying a</p>
+<p>duplicate of any option raises an error.</p>
+<p>If you specify a filegroup for a JSON index, the index is placed on that filegroup, regardless of</p>
+<p>the partitioning scheme of the table.</p>
+<p>For more information about creating indexes, see the Remarks section in</p>
+<p>CREATE INDEX</p>
+<p>.</p>
+<p>Searching operations on JSON documents contained in a</p>
+<p>column in a table can be</p>
+<p>optimized if a JSON index exists on the</p>
+<p>column. The JSON index is used in queries with</p>
+<p>various JSON function-based expressions.</p>
+<h3 id="json">json</h3>
+<h3 id="json-1">json</h3>
+<h4 id="salesordernumber">SalesOrderNumber</h4>
+<h4 id="info">Info</h4>
+<h3 id="json-2">json</h3>
+<h2 id="json_path_exists-function">JSON_PATH_EXISTS function</h2>
+<h2 id="json_value-function">JSON_VALUE function</h2>
+<p>The following examples use the</p>
+<p>table in the</p>
+<p>database with a</p>
+<p>column called</p>
+<p>. The</p>
+<p>column is created as a</p>
+<p>type. A JSON</p>
+<p>index is also created on the</p>
+<p>column with default settings. The following code sample</p>
+<p>shows the</p>
+<p>statement:</p>
+<p>SQL</p>
+<p>For the sample search expressions, use the following JSON documents as data:</p>
+<p>Use the</p>
+<p>JSON_PATH_EXISTS</p>
+<p>function to test if a specified SQL/JSON path exists in a JSON</p>
+<p>document.</p>
+<p>This query demonstrates</p>
+<p>on a</p>
+<p>column that can be optimized using a</p>
+<p>JSON index:</p>
+<p>SQL</p>
+<p>JSON index is supported with</p>
+<p>predicate and the following operators:</p>
+<p>Comparison operators (</p>
+<p>)</p>
+<p>predicate (Not currently supported)</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<h3 id="json-3">json</h3>
+<h3 id="int">int</h3>
+<h3 id="int-1">int</h3>
+<h3 id="decimal">decimal</h3>
+<p>Use the</p>
+<p>JSON_VALUE</p>
+<p>to extract the JSON text / scalar value in a specified SQL/JSON path in a</p>
+<p>JSON document. The following queries show how a</p>
+<p>expression on a</p>
+<p>column</p>
+<p>can be optimized using a JSON index.</p>
+<p>Equality search for a JSON string in an object property:</p>
+<p>SQL</p>
+<p>Equality search for a JSON number in an object property after converting the value to an</p>
+<p>data type:</p>
+<p>SQL</p>
+<p>Range search for a JSON number in an object property after converting the value to an</p>
+<p>data type:</p>
+<p>SQL</p>
+<p>Range search for a JSON number in an object property after converting the value to a</p>
+<p>data type:</p>
+<p>SQL</p>
+<p>The JSON index is supported with a</p>
+<p>predicate, and the following operators:</p>
+<p>Comparison operators (</p>
+<p>)</p>
+<p>predicate (not currently supported)</p>
+<p>predicate (not currently supported)</p>
+<h3 id="json-4">json</h3>
+<h3 id="sysadmin">sysadmin</h3>
+<h3 id="db_ddladmin">db_ddladmin</h3>
+<h3 id="db_owner">db_owner</h3>
+<h3 id="json-5">json</h3>
+<h3 id="json-6">json</h3>
+<h3 id="json-7">json</h3>
+<h2 id="json_contains-function">JSON_CONTAINS function</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> JSON</span><span style="color:#F97583"> INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeader</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">AdventureWorks2022</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Info</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Info</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Info</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span><span style="color:#F97583"> JSON</span><span style="color:#F97583"> INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">437</span></span>
+<span class="line"><span style="color:#E1E4E8">{</span><span style="color:#9ECBFF">"Customer"</span><span style="color:#E1E4E8">:{</span><span style="color:#9ECBFF">"Name"</span><span style="color:#E1E4E8">:</span><span style="color:#9ECBFF">"Kelsey Raje"</span><span style="color:#E1E4E8">,</span><span style="color:#9ECBFF">"ID"</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">16517</span><span style="color:#E1E4E8">,</span><span style="color:#9ECBFF">"Type"</span><span style="color:#E1E4E8">:</span><span style="color:#9ECBFF">"IN"</span><span style="color:#E1E4E8">},</span><span style="color:#9ECBFF">"Order"</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">{</span><span style="color:#9ECBFF">"ID"</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">43710</span><span style="color:#E1E4E8">,</span><span style="color:#9ECBFF">"Number"</span><span style="color:#E1E4E8">:</span><span style="color:#9ECBFF">"SO43710"</span><span style="color:#E1E4E8">,</span><span style="color:#9ECBFF">"CreationDate"</span><span style="color:#E1E4E8">:</span><span style="color:#9ECBFF">"2011-06-</span></span>
+<span class="line"><span style="color:#9ECBFF">02T00:00:00"</span><span style="color:#E1E4E8">,</span><span style="color:#9ECBFF">"TotalDue"</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">3953</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">9884</span><span style="color:#E1E4E8">}}</span></span>
+<span class="line"><span style="color:#79B8FF">643</span></span>
+<span class="line"><span style="color:#E1E4E8">{</span><span style="color:#9ECBFF">"Customer"</span><span style="color:#E1E4E8">:{</span><span style="color:#9ECBFF">"Name"</span><span style="color:#E1E4E8">:</span><span style="color:#9ECBFF">"Aaron Campbell"</span><span style="color:#E1E4E8">,</span><span style="color:#9ECBFF">"ID"</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">16167</span><span style="color:#E1E4E8">,</span><span style="color:#9ECBFF">"Type"</span><span style="color:#E1E4E8">:</span><span style="color:#9ECBFF">"IN"</span><span style="color:#E1E4E8">},</span><span style="color:#9ECBFF">"Order"</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">{</span><span style="color:#9ECBFF">"ID"</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">64304</span><span style="color:#E1E4E8">,</span><span style="color:#9ECBFF">"Number"</span><span style="color:#E1E4E8">:</span><span style="color:#9ECBFF">"SO64304"</span><span style="color:#E1E4E8">,</span><span style="color:#9ECBFF">"CreationDate"</span><span style="color:#E1E4E8">:</span><span style="color:#9ECBFF">"2014-01-</span></span>
+<span class="line"><span style="color:#9ECBFF">16T00:00:00"</span><span style="color:#E1E4E8">,</span><span style="color:#9ECBFF">"TotalDue"</span><span style="color:#E1E4E8">:</span><span style="color:#79B8FF">36</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">0230</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">"IsProcessed"</span><span style="color:#E1E4E8">: true}}</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">JSON_PATH_EXISTS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">JSON_PATH_EXISTS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">=</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">IS</span><span style="color:#E1E4E8"> [NOT] </span><span style="color:#F97583">NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">JSON</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">sales_info_idx</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeader</span><span style="color:#E1E4E8"> (Info);</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">COUNT</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">*</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeader</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#79B8FF">JSON_PATH_EXISTS</span><span style="color:#E1E4E8">(Info,</span></span>
+<span class="line"><span style="color:#9ECBFF">'$.Order.IsProcessed'</span></span>
+<span class="line"><span style="color:#E1E4E8">) </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 1</span><span style="color:#E1E4E8">;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">JSON_VALUE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">JSON_VALUE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">=</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">LIKE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">IS</span><span style="color:#E1E4E8"> [NOT] </span><span style="color:#F97583">NULL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">COUNT</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">*</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeader</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#79B8FF">JSON_VALUE</span><span style="color:#E1E4E8">(Info,</span></span>
+<span class="line"><span style="color:#9ECBFF">'$.Customer.Type'</span></span>
+<span class="line"><span style="color:#E1E4E8">) </span><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">'IN'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeader</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#79B8FF">JSON_VALUE</span><span style="color:#E1E4E8">(Info,</span></span>
+<span class="line"><span style="color:#9ECBFF">'$.Customer.ID'</span></span>
+<span class="line"><span style="color:#E1E4E8">RETURNING</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#E1E4E8">) </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 16167</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeader</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#79B8FF">JSON_VALUE</span><span style="color:#E1E4E8">(Info,</span></span>
+<span class="line"><span style="color:#9ECBFF">'$.Customer.ID'</span></span>
+<span class="line"><span style="color:#E1E4E8">RETURNING</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">IN</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">16167</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">16517</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeader</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#79B8FF">JSON_VALUE</span><span style="color:#E1E4E8">(Info,</span></span>
+<span class="line"><span style="color:#9ECBFF">'$.Order.TotalDue RETURNING decimal(20, 4)) BETWEEN 1000</span></span>
+<span class="line"><span style="color:#9ECBFF">and 2000;</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

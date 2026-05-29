@@ -1,0 +1,765 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>database in Fabric — T-SQL Reference — SqlKraft</title><meta name="description" content="The following example creates a nonclustered composite index on the"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>database in Fabric</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>database in Fabric</h1> <span class="cat-badge" data-astro-cid-s2stm25t>predicates</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#predicates</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>SQL</p>
+<p>The following example creates a nonclustered composite index on the</p>
+<p>and</p>
+<p>columns of the</p>
+<p>table.</p>
+<p>SQL</p>
+<p>The following example creates a clustered index on the</p>
+<p>column of the</p>
+<p>table in the</p>
+<p>database.</p>
+<p>SQL</p>
+<p>The following example creates index IX_FF with two columns from the dbo.FactFinance table.</p>
+<p>The next statement rebuilds the index with one more column and keeps the existing name.</p>
+<p>SQL</p>
+<h2 id="e-create-a-unique-nonclustered-index">E. Create a unique nonclustered index</h2>
+<h2 id="f-use-the-ignore_dup_key-option">F. Use the IGNORE_DUP_KEY option</h2>
+<p>The following example creates a unique nonclustered index on the</p>
+<p>column of the</p>
+<p>table in the</p>
+<p>database. The index will enforce</p>
+<p>uniqueness on the data inserted into the</p>
+<p>column.</p>
+<p>SQL</p>
+<p>The following query tests the uniqueness constraint by attempting to insert a row with the</p>
+<p>same value as that in an existing row.</p>
+<p>SQL</p>
+<p>The resulting error message is:</p>
+<p>Output</p>
+<p>The following example demonstrates the effect of the</p>
+<p>option by inserting</p>
+<p>multiple rows into a temporary table first with the option set to</p>
+<p>and again with the option</p>
+<p>set to</p>
+<p>. A single row is inserted into the</p>
+<p>table that will intentionally cause a duplicate</p>
+<p>value when the second multiple-row</p>
+<p>statement is executed. A count of rows in the</p>
+<p>table returns the number of rows inserted.</p>
+<p>SQL</p>
+<p>Here are the results of the second</p>
+<p>statement.</p>
+<p>Output</p>
+<p>Notice that the rows inserted from the</p>
+<p>table that did not violate the</p>
+<p>uniqueness constraint were successfully inserted. A warning was issued and the duplicate row</p>
+<p>ignored, but the entire transaction was not rolled back.</p>
+<p>The same statements are executed again, but with</p>
+<p>set to</p>
+<p>.</p>
+<p>SQL</p>
+<p>Here are the results of the second</p>
+<p>statement.</p>
+<h2 id="g-using-drop_existing-to-drop-and-re-create-an-index">G. Using DROP_EXISTING to drop and re-create an index</h2>
+<h2 id="h-create-an-index-on-a-view">H. Create an index on a view</h2>
+<p>Output</p>
+<p>Notice that none of the rows from the</p>
+<p>table were inserted into the</p>
+<p>table even though only one row in the table violated the</p>
+<p>index constraint.</p>
+<p>The following example drops and re-creates an existing index on the</p>
+<p>column of the</p>
+<p>table in the</p>
+<p>database by using the</p>
+<p>option. The options</p>
+<p>and</p>
+<p>are also set.</p>
+<p>SQL</p>
+<p>The following example creates a view and an index on that view. Two queries are included that</p>
+<p>use the indexed view.</p>
+<p>SQL</p>
+<h3 id="query">Query</h3>
+<h3 id="display-actual-execution-plan">Display Actual Execution Plan</h3>
+<h2 id="i-create-an-index-with-included-non-key-columns">I. Create an index with included (non-key) columns</h2>
+<p>The following example creates a nonclustered index with one key column (</p>
+<p>) and</p>
+<p>four non-key columns (</p>
+<p>,</p>
+<p>,</p>
+<p>,</p>
+<p>). A query that is</p>
+<p>covered by the index follows. To display the index that is selected by the query optimizer, on</p>
+<p>the</p>
+<p>menu in SQL Server Management Studio, select</p>
+<p>before executing the query.</p>
+<p>SQL</p>
+<h2 id="j-create-a-partitioned-index">J. Create a partitioned index</h2>
+<h2 id="k-creating-a-filtered-index">K. Creating a filtered index</h2>
+<h2 id="l-create-a-compressed-index">L. Create a compressed index</h2>
+<p>The following example creates a nonclustered partitioned index on</p>
+<p>, an</p>
+<p>existing partition scheme in the</p>
+<p>database. This example assumes the</p>
+<p>partitioned index sample has been installed.</p>
+<p>SQL</p>
+<p>The following example creates a filtered index on the Production.BillOfMaterials table in the</p>
+<p>database. The filter predicate can include columns that are not key</p>
+<p>columns in the filtered index. The predicate in this example selects only the rows where</p>
+<p>EndDate is non-NULL.</p>
+<p>SQL</p>
+<p>The following example creates an index on a nonpartitioned table by using row compression.</p>
+<p>SQL</p>
+<p>The following example creates an index on a partitioned table by using row compression on all</p>
+<p>partitions of the index.</p>
+<h3 id="applies-to">Applies to</h3>
+<h3 id="xml">xml</h3>
+<h2 id="m-create-an-index-with-xml-compression">M. Create an index with XML compression</h2>
+<p>SQL</p>
+<p>The following example creates an index on a partitioned table by using page compression on</p>
+<p>partition</p>
+<p>of the index and row compression on partitions</p>
+<p>through</p>
+<p>of the index.</p>
+<p>SQL</p>
+<p>: SQL Server 2022 (16.x) and later versions, Azure SQL Database, SQL database in</p>
+<p>Microsoft Fabric, and Azure SQL Managed Instance.</p>
+<p>The following example creates an index on a nonpartitioned table by using XML compression.</p>
+<p>At least one column in the index must be the</p>
+<p>data type.</p>
+<p>SQL</p>
+<p>The following example creates an index on a partitioned table by using XML compression on all</p>
+<p>partitions of the index.</p>
+<p>SQL</p>
+<h3 id="applies-to-1">Applies to</h3>
+<h2 id="n-create-resume-pause-and-abort-resumable-index">N. Create, resume, pause, and abort resumable index</h2>
+<h2 id="operations">operations</h2>
+<h2 id="o-create-index-with-different-low-priority-lock-options">O. CREATE INDEX with different low priority lock options</h2>
+<p>: SQL Server 2019 (15.x) and later versions, Azure SQL Database, SQL database in</p>
+<p>Microsoft Fabric, and Azure SQL Managed Instance</p>
+<p>SQL</p>
+<p>The following examples use the</p>
+<p>option to specify different strategies for</p>
+<p>dealing with blocking.</p>
+<p>SQL</p>
+<p>SQL</p>
+<h3 id="applies-to-2">Applies to</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SalesQuota</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SalesYTD</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesPerson</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">VendorID</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">ProductVendor</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Purchasing</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_VendorID</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">ProductVendor (VendorID);</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_VendorID</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">ProductVendor</span><span style="color:#E1E4E8"> (VendorID</span></span>
+<span class="line"><span style="color:#F97583">DESC</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">Name</span></span>
+<span class="line"><span style="color:#F97583">ASC</span></span>
+<span class="line"><span style="color:#E1E4E8">, </span><span style="color:#F97583">Address</span></span>
+<span class="line"><span style="color:#F97583">DESC</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_VendorID</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">Purchasing..ProductVendor (VendorID);</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">NONCLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_SalesPerson_SalesQuota_SalesYTD</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesPerson</span></span>
+<span class="line"><span style="color:#E1E4E8">(SalesQuota, SalesYTD);</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_ProductVendor_VendorID</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">Purchasing..ProductVendor</span></span>
+<span class="line"><span style="color:#E1E4E8">(VendorID);</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_FF</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">FactFinance</span><span style="color:#E1E4E8"> (FinanceKey</span></span>
+<span class="line"><span style="color:#F97583">ASC</span></span>
+<span class="line"><span style="color:#E1E4E8">, DateKey</span></span>
+<span class="line"><span style="color:#F97583">ASC</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#6A737D">-- Rebuild and add the OrganizationKey</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_FF</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">FactFinance</span><span style="color:#E1E4E8"> (FinanceKey, DateKey, OrganizationKey</span></span>
+<span class="line"><span style="color:#F97583">DESC</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">DROP_EXISTING</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">Name</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">UnitMeasure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">AdventureWorks2025</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">Name</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">IGNORE_DUP_KEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">#Test</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">UNIQUE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">AK_UnitMeasure_Name</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">UnitMeasure</span><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#F97583">Name</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#6A737D">-- Verify the existing value.</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">Name</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">UnitMeasure</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#F97583">Name</span></span>
+<span class="line"><span style="color:#F97583">=</span><span style="color:#E1E4E8"> N</span></span>
+<span class="line"><span style="color:#9ECBFF">'Ounces'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">UnitMeasure</span><span style="color:#E1E4E8"> (UnitMeasureCode,</span></span>
+<span class="line"><span style="color:#F97583">Name</span></span>
+<span class="line"><span style="color:#E1E4E8">, ModifiedDate)</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#9ECBFF">'OC'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#9ECBFF">'Ounces'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">GETDATE</span></span>
+<span class="line"><span style="color:#E1E4E8">());</span></span>
+<span class="line"><span style="color:#F97583">Server</span><span style="color:#E1E4E8">: Msg </span><span style="color:#79B8FF">2601</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">Level</span><span style="color:#79B8FF"> 14</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">State</span><span style="color:#79B8FF"> 1</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">Line</span><span style="color:#79B8FF"> 1</span></span>
+<span class="line"><span style="color:#E1E4E8">Cannot </span><span style="color:#F97583">insert</span><span style="color:#E1E4E8"> duplicate </span><span style="color:#F97583">key</span><span style="color:#F97583"> row</span><span style="color:#F97583"> in</span><span style="color:#F97583"> object</span><span style="color:#9ECBFF"> 'UnitMeasure'</span><span style="color:#F97583"> with</span><span style="color:#F97583"> unique</span><span style="color:#F97583"> index</span></span>
+<span class="line"><span style="color:#9ECBFF">'AK_UnitMeasure_Name'</span><span style="color:#E1E4E8">. The </span><span style="color:#F97583">statement</span><span style="color:#E1E4E8"> has been terminated.</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#E1E4E8">(C1</span></span>
+<span class="line"><span style="color:#F97583">NVARCHAR</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">10</span><span style="color:#E1E4E8">), C2</span></span>
+<span class="line"><span style="color:#F97583">NVARCHAR</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">50</span><span style="color:#E1E4E8">), C3 </span><span style="color:#F97583">DATETIME</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">UNIQUE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">AK_Index</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#E1E4E8">(C2)</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">UnitMeasure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">IGNORE_DUP_KEY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">OFF</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">INSERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">IGNORE_DUP_KEY</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(N</span></span>
+<span class="line"><span style="color:#9ECBFF">'OC'</span></span>
+<span class="line"><span style="color:#E1E4E8">, N</span></span>
+<span class="line"><span style="color:#9ECBFF">'Ounces'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">GETDATE</span></span>
+<span class="line"><span style="color:#E1E4E8">());</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">UnitMeasure</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">COUNT</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">*</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">[</span></span>
+<span class="line"><span style="color:#F97583">Number</span></span>
+<span class="line"><span style="color:#E1E4E8">of</span></span>
+<span class="line"><span style="color:#F97583">rows</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">DROP</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">Server</span><span style="color:#E1E4E8">: Msg </span><span style="color:#79B8FF">3604</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">Level</span><span style="color:#79B8FF"> 16</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">State</span><span style="color:#79B8FF"> 1</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">Line</span><span style="color:#79B8FF"> 5</span><span style="color:#E1E4E8"> Duplicate </span><span style="color:#F97583">key</span><span style="color:#E1E4E8"> was ignored.</span></span>
+<span class="line"><span style="color:#F97583">Number</span><span style="color:#E1E4E8"> of </span><span style="color:#F97583">rows</span></span>
+<span class="line"><span style="color:#6A737D">--------------</span></span>
+<span class="line"><span style="color:#79B8FF">38</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#E1E4E8">(C1</span></span>
+<span class="line"><span style="color:#F97583">NVARCHAR</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">10</span><span style="color:#E1E4E8">), C2</span></span>
+<span class="line"><span style="color:#F97583">NVARCHAR</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">50</span><span style="color:#E1E4E8">), C3 </span><span style="color:#F97583">DATETIME</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">UNIQUE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">AK_Index</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#E1E4E8">(C2)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">IGNORE_DUP_KEY</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">OFF</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(N</span></span>
+<span class="line"><span style="color:#9ECBFF">'OC'</span></span>
+<span class="line"><span style="color:#E1E4E8">, N</span></span>
+<span class="line"><span style="color:#9ECBFF">'Ounces'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">GETDATE</span></span>
+<span class="line"><span style="color:#E1E4E8">());</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#F97583">INTO</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">UnitMeasure</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">COUNT</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">*</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">[</span></span>
+<span class="line"><span style="color:#F97583">Number</span></span>
+<span class="line"><span style="color:#E1E4E8">of</span></span>
+<span class="line"><span style="color:#F97583">rows</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">DROP</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">#</span></span>
+<span class="line"><span style="color:#E1E4E8">Test</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">UnitMeasure</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">UNIQUE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">ProductID</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">WorkOrder</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">AdventureWorks2025</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP_EXISTING</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">FILLFACTOR</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PAD_INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">Server</span><span style="color:#E1E4E8">: Msg </span><span style="color:#79B8FF">2601</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">Level</span><span style="color:#79B8FF"> 14</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">State</span><span style="color:#79B8FF"> 1</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">Line</span><span style="color:#79B8FF"> 5</span></span>
+<span class="line"><span style="color:#E1E4E8">Cannot </span><span style="color:#F97583">insert</span><span style="color:#E1E4E8"> duplicate </span><span style="color:#F97583">key</span><span style="color:#F97583"> row</span><span style="color:#F97583"> in</span><span style="color:#F97583"> object</span><span style="color:#9ECBFF"> '#Test'</span><span style="color:#F97583"> with</span><span style="color:#F97583"> unique</span><span style="color:#F97583"> index</span></span>
+<span class="line"><span style="color:#9ECBFF">'AK_Index'</span><span style="color:#E1E4E8">. The </span><span style="color:#F97583">statement</span><span style="color:#E1E4E8"> has been terminated.</span></span>
+<span class="line"><span style="color:#F97583">Number</span><span style="color:#E1E4E8"> of </span><span style="color:#F97583">rows</span></span>
+<span class="line"><span style="color:#6A737D">--------------</span></span>
+<span class="line"><span style="color:#79B8FF">1</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">NONCLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_WorkOrder_ProductID</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">WorkOrder</span><span style="color:#E1E4E8">(ProductID)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(FILLFACTOR </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 80</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">PAD_INDEX</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">DROP_EXISTING</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#6A737D">-- Set the options to support indexed views</span></span>
+<span class="line"><span style="color:#F97583">SET</span></span>
+<span class="line"><span style="color:#F97583">NUMERIC_ROUNDABORT</span></span>
+<span class="line"><span style="color:#F97583">OFF</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">SET</span></span>
+<span class="line"><span style="color:#F97583">ANSI_PADDING</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">ANSI_WARNINGS</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">CONCAT_NULL_YIELDS_NULL</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">ARITHABORT</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">QUOTED_IDENTIFIER</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">ANSI_NULLS</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#6A737D">-- Create view with schemabinding</span></span>
+<span class="line"><span style="color:#F97583">IF</span><span style="color:#79B8FF"> OBJECT_ID</span><span style="color:#E1E4E8"> (</span><span style="color:#9ECBFF">'Sales.vOrders'</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">'view'</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">IS NOT NULL</span></span>
+<span class="line"><span style="color:#F97583">DROP</span></span>
+<span class="line"><span style="color:#E1E4E8">VIEW</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">vOrders</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#E1E4E8">VIEW</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">vOrders</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#F97583">SCHEMABINDING</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">PostalCode</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">AddressLine1</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">AddressLine2</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">City</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">StateProvinceID</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">SUM</span></span>
+<span class="line"><span style="color:#E1E4E8">(UnitPrice </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> OrderQty </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">00</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8"> UnitPriceDiscount))</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">Revenue,</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDate, ProductID,</span></span>
+<span class="line"><span style="color:#E1E4E8">COUNT_BIG</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">*</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">COUNT</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderDetail</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">od, </span><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeader</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">o</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#79B8FF">od</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderID</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> o</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderID</span></span>
+<span class="line"><span style="color:#E1E4E8">GROUP</span></span>
+<span class="line"><span style="color:#F97583">BY</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDate, ProductID;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#6A737D">-- Create an index on the view</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">UNIQUE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IDX_V1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">vOrders</span><span style="color:#E1E4E8"> (OrderDate, ProductID);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#6A737D">-- This query can use the indexed view even though the view is</span></span>
+<span class="line"><span style="color:#6A737D">-- not specified in the FROM clause.</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">SUM</span></span>
+<span class="line"><span style="color:#E1E4E8">(UnitPrice </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> OrderQty </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">00</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8"> UnitPriceDiscount))</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">Rev,</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDate, ProductID</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderDetail</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">od</span></span>
+<span class="line"><span style="color:#F97583">JOIN</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeader</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">o</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">od</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderID</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> o</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderID</span></span>
+<span class="line"><span style="color:#F97583">AND</span></span>
+<span class="line"><span style="color:#E1E4E8">ProductID</span></span>
+<span class="line"><span style="color:#F97583">BETWEEN</span></span>
+<span class="line"><span style="color:#79B8FF">700</span></span>
+<span class="line"><span style="color:#F97583">AND</span></span>
+<span class="line"><span style="color:#79B8FF">800</span></span>
+<span class="line"><span style="color:#F97583">AND</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDate </span><span style="color:#F97583">>=</span></span>
+<span class="line"><span style="color:#E1E4E8">CONVERT</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">DATETIME</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#9ECBFF">'05/01/2002'</span></span>
+<span class="line"><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">101</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">GROUP</span></span>
+<span class="line"><span style="color:#F97583">BY</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDate, ProductID</span></span>
+<span class="line"><span style="color:#E1E4E8">ORDER</span></span>
+<span class="line"><span style="color:#F97583">BY</span></span>
+<span class="line"><span style="color:#E1E4E8">Rev</span></span>
+<span class="line"><span style="color:#F97583">DESC</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#6A737D">-- This query can use the above indexed view</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDate,</span></span>
+<span class="line"><span style="color:#E1E4E8">SUM</span></span>
+<span class="line"><span style="color:#E1E4E8">(UnitPrice </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> OrderQty </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> (</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">00</span><span style="color:#F97583"> -</span><span style="color:#E1E4E8"> UnitPriceDiscount))</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">Rev</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderDetail</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">od</span></span>
+<span class="line"><span style="color:#F97583">JOIN</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeader</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">o</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">od</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderID</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> o</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderID</span></span>
+<span class="line"><span style="color:#F97583">AND</span></span>
+<span class="line"><span style="color:#E1E4E8">DATEPART</span></span>
+<span class="line"><span style="color:#E1E4E8">(mm, OrderDate) </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 3</span></span>
+<span class="line"><span style="color:#F97583">AND</span></span>
+<span class="line"><span style="color:#E1E4E8">DATEPART</span></span>
+<span class="line"><span style="color:#E1E4E8">(yy, OrderDate) </span><span style="color:#F97583">=</span><span style="color:#79B8FF"> 2002</span></span>
+<span class="line"><span style="color:#E1E4E8">GROUP</span></span>
+<span class="line"><span style="color:#F97583">BY</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDate</span></span>
+<span class="line"><span style="color:#E1E4E8">ORDER</span></span>
+<span class="line"><span style="color:#F97583">BY</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDate</span></span>
+<span class="line"><span style="color:#F97583">ASC</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">NONCLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_Address_PostalCode</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">Person</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Address</span><span style="color:#E1E4E8"> (PostalCode)</span></span>
+<span class="line"><span style="color:#F97583">INCLUDE</span></span>
+<span class="line"><span style="color:#E1E4E8">(AddressLine1, AddressLine2, City, StateProvinceID);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">AddressLine1, AddressLine2, City, StateProvinceID, PostalCode</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TransactionsPS1</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">AdventureWorks2025</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">AdventureWorks2025</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Person</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Address</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">PostalCode</span></span>
+<span class="line"><span style="color:#F97583">BETWEEN</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'98000'</span></span>
+<span class="line"><span style="color:#F97583">and</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'99999'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">NONCLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_TransactionHistory_ReferenceOrderID</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">TransactionHistory</span><span style="color:#E1E4E8"> (ReferenceOrderID)</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">TransactionsPS1 (TransactionDate);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">NONCLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#9ECBFF">"FIBillOfMaterialsWithEndDate"</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">Production</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">BillOfMaterials</span><span style="color:#E1E4E8"> (ComponentID, StartDate)</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">EndDate</span></span>
+<span class="line"><span style="color:#F97583">IS</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">NONCLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_INDEX_1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">T1 (C2)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">DATA_COMPRESSION</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">ROW</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">1</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">2</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">4</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_PartTab2Col1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">PartitionTable1 (Col1)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">DATA_COMPRESSION</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">ROW</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_PartTab2Col1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">PartitionTable1 (Col1)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#F97583">DATA_COMPRESSION</span><span style="color:#F97583"> =</span><span style="color:#F97583"> PAGE</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">PARTITIONS</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">),</span></span>
+<span class="line"><span style="color:#F97583">DATA_COMPRESSION</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">ROW</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">PARTITIONS</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">2</span></span>
+<span class="line"><span style="color:#F97583">TO</span></span>
+<span class="line"><span style="color:#79B8FF">4</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">NONCLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_INDEX_1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">T1 (C2)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(XML_COMPRESSION </span><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IX_PartTab2Col1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">PartitionTable1 (Col1)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(XML_COMPRESSION </span><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WAIT_AT_LOW_PRIORITY</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#6A737D">-- Execute a resumable online index create statement with MAXDOP=1</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">test_idx1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">test_table (col1)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#F97583">ONLINE</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">, </span><span style="color:#F97583">MAXDOP</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> 1</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">RESUMABLE</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#6A737D">-- Executing the same command again (see above) after an index operation was paused,</span></span>
+<span class="line"><span style="color:#E1E4E8">resumes automatically the </span><span style="color:#F97583">index</span><span style="color:#F97583"> create</span><span style="color:#E1E4E8"> operation.</span></span>
+<span class="line"><span style="color:#6A737D">-- Execute a resumable online index creates operation with MAX_DURATION set to 240</span></span>
+<span class="line"><span style="color:#F97583">minutes</span><span style="color:#E1E4E8">. </span><span style="color:#F97583">After</span><span style="color:#E1E4E8"> the </span><span style="color:#F97583">time</span><span style="color:#E1E4E8"> expires, the resumable </span><span style="color:#F97583">index</span><span style="color:#F97583"> create</span><span style="color:#E1E4E8"> operation </span><span style="color:#F97583">is</span><span style="color:#E1E4E8"> paused.</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">test_idx2</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">test_table (col2)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#F97583">ONLINE</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">RESUMABLE</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#F97583">MAX_DURATION</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> 240</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#6A737D">-- Pause a running resumable online index creation</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">test_idx1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">test_table </span><span style="color:#F97583">PAUSE</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">test_idx2</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">test_table </span><span style="color:#F97583">PAUSE</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#6A737D">-- Resume a paused online index creation</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">test_idx1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">test_table</span></span>
+<span class="line"><span style="color:#F97583">RESUME</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">test_idx2</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">test_table</span></span>
+<span class="line"><span style="color:#F97583">RESUME</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#6A737D">-- Abort resumable index create operation which is running or paused</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">test_idx1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">test_table</span></span>
+<span class="line"><span style="color:#F97583">ABORT</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">ALTER</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">test_idx2</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">test_table</span></span>
+<span class="line"><span style="color:#F97583">ABORT</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#6A737D">--Kill this session after waiting 5 minutes</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">idx_1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">T2</span><span style="color:#E1E4E8"> (a)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#F97583">ONLINE</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">WAIT_AT_LOW_PRIORITY</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">MAX_DURATION</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> 5</span></span>
+<span class="line"><span style="color:#F97583">MINUTES</span></span>
+<span class="line"><span style="color:#E1E4E8">, </span><span style="color:#F97583">ABORT_AFTER_WAIT</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">SELF</span></span>
+<span class="line"><span style="color:#E1E4E8">)));</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#6A737D">--Kill blocker sessions</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">idx_1</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">T2</span><span style="color:#E1E4E8"> (a)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#F97583">ONLINE</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">WAIT_AT_LOW_PRIORITY</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

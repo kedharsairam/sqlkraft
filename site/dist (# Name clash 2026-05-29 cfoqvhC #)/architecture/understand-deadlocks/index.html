@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Understand deadlocks — Architecture Guide — SqlKraft</title><meta name="description" content="Azure SQL Managed Instance"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Understand deadlocks</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>locking</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#locking</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Understand deadlocks</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Azure SQL Managed Instance</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Database</p>
+<p>Azure SQL Managed Instance</p>
+<p>Azure Synapse Analytics</p>
+<p>Analytics Platform System (PDW)</p>
+<p>SQL database in Microsoft</p>
+<p>Fabric</p>
+<p>This article discusses deadlocks in the Database Engine in depth. Deadlocks are caused by</p>
+<p>competing, concurrent locks in the database, often in multi-step transactions. For more</p>
+<p>information about transactions and locks, see</p>
+<p>Transaction locking and row versioning guide</p>
+<p>.</p>
+<p>For more specific information on identification and prevention of deadlocks in Azure SQL</p>
+<p>Database and SQL database in Fabric, see</p>
+<p>Analyze and prevent deadlocks in Azure SQL</p>
+<p>Database and SQL database in Fabric</p>
+<p>.</p>
+<p>A deadlock occurs when two or more tasks permanently block each other by each task having</p>
+<p>a lock on a resource that the other tasks are trying to lock. For example:</p>
+<p>Transaction A acquires a shared lock on row 1.</p>
+<p>Transaction B acquires a shared lock on row 2.</p>
+<p>Transaction A now requests an exclusive lock on row 2, and is blocked until transaction B</p>
+<p>finishes and releases the shared lock it has on row 2.</p>
+<p>Transaction B now requests an exclusive lock on row 1, and is blocked until transaction A</p>
+<p>finishes and releases the shared lock it has on row 1.</p>
+<p>Transaction A can’t complete until transaction B completes, but transaction B is blocked by</p>
+<p>transaction A. This condition is also called a cyclic dependency: Transaction A has a</p>
+<p>dependency on transaction B, and transaction B closes the circle by having a dependency on</p>
+<p>transaction A.</p>
+<p>Both transactions in a deadlock wait forever, unless the deadlock is broken by an external</p>
+<p>process. The Database Engine deadlock monitor periodically checks for tasks that are in a</p>
+<p>deadlock. If the monitor detects a cyclic dependency, it chooses one of the tasks as a victim</p>
+<p>and terminates its transaction with an error. This allows the other task to complete its</p>
+<p>transaction. The application with the transaction that terminated with an error can retry the</p>
+<p>transaction, which usually completes after the other deadlocked transaction finishes.</p>
+<p>Deadlocking is often confused with normal blocking. When a transaction requests a lock on a</p>
+<p>resource locked by another transaction, the requesting transaction waits until the lock is</p>
+<p>released. By default, transactions in the Database Engine don’t time out, unless</p>
+<p>is</p>
+<p>set. The requesting transaction is blocked, not deadlocked, because the requesting transaction</p>
+<p>hasn’t done anything to block the transaction owning the lock. Eventually, the owning</p>
+<p>transaction completes and releases the lock, and then the requesting transaction is granted the</p>
+<p>lock and proceeds. Deadlocks are resolved almost immediately, whereas blocking can, in</p>
+<p>theory, persist indefinitely. Deadlocks are sometimes called a deadly embrace.</p>
+<p>A deadlock can occur on any system with multiple threads, not just on a relational database</p>
+<p>management system, and can occur for resources other than locks on database objects. For</p>
+<p>example, a thread in a multithreaded operating system might acquire one or more resources,</p>
+<p>such as blocks of memory. If the resource being acquired is currently owned by another thread,</p>
+<p>the first thread might have to wait for the owning thread to release the target resource. The</p>
+<p>waiting thread is said to have a dependency on the owning thread for that particular resource.</p>
+<p>In an instance of the Database Engine, sessions can deadlock when acquiring non-database</p>
+<p>resources, such as memory or threads.</p>
+<p>In the illustration, transaction T1 has a dependency on transaction T2 for the</p>
+<p>table lock</p>
+<p>resource. Similarly, transaction T2 has a dependency on transaction T1 for the</p>
+<p>table</p>
+<p>lock resource. Because these dependencies form a cycle, there’s a deadlock between</p>
+<p>transactions T1 and T2.</p>
+<p>Here’s a more general illustration of a deadlock:</p>
+<p>Task T1 has a lock on resource R1 (indicated by the arrow from R1 to T1), and has</p>
+<p>requested a lock on resource R2 (indicated by the arrow from T1 to R2).</p>
+<p>Task T2 has a lock on resource R2 (indicated by the arrow from R2 to T2), and has</p>
+<p>requested a lock on resource R1 (indicated by the arrow from T2 to R1).</p>
+<h3 id="locks">Locks</h3>
+<h3 id="worker-threads">Worker threads</h3>
+<h3 id="memory">Memory</h3>
+<h3 id="parallel-query-execution-related-resources">Parallel query execution-related resources</h3>
+<p>Because neither task can continue until a resource is available and neither resource can be</p>
+<p>released until a task continues, a deadlock state exists.</p>
+<p>Each user session might have one or more tasks running on its behalf where each task might</p>
+<p>acquire or wait to acquire resources. The following types of resources can cause blocking that</p>
+<p>could result in a deadlock.</p>
+<p>. Waiting to acquire locks on resources, such as objects, pages, rows, metadata, and</p>
+<p>applications can cause a deadlock. For example, transaction T1 has a shared (</p>
+<p>) lock on</p>
+<p>row r1 and is waiting to get an exclusive (</p>
+<p>) lock on r2. Transaction T2 has a shared (</p>
+<p>)</p>
+<p>lock on r2 and is waiting to get an exclusive (</p>
+<p>) lock on row r1. This results in a lock cycle</p>
+<p>in which T1 and T2 wait for each other to release the locked resources.</p>
+<p>. A queued task waiting for an available worker thread can cause a</p>
+<p>deadlock. If the queued task owns resources that are blocking all worker threads, a</p>
+<p>deadlock results. For example, session S1 starts a transaction and acquires a shared (</p>
+<p>)</p>
+<p>lock on row r1 and then goes to sleep. Active sessions running on all available worker</p>
+<p>threads are trying to acquire exclusive (</p>
+<p>) locks on row r1. Because session S1 can’t</p>
+<p>acquire a worker thread, it can’t commit the transaction and release the lock on row r1.</p>
+<p>This results in a deadlock.</p>
+<p>. When concurrent requests are waiting for memory grants that can’t be satisfied</p>
+<p>with the available memory, a deadlock can occur. For example, two concurrent queries,</p>
+<p>Q1 and Q2, execute as user-defined functions that acquire 10 MB and 20 MB of memory</p>
+<p>respectively. If each query needs 30 MB and the total available memory is 20 MB, then Q1</p>
+<p>and Q2 must wait for each other to release memory, which results in a deadlock.</p>
+<p>. Coordinator, producer, or consumer threads</p>
+<p>associated with an exchange port might block each other causing a deadlock usually</p>
+<p>when including at least one other process that isn’t a part of the parallel query. Also,</p>
+<p>when a parallel query starts execution, the Database Engine determines the degree of</p>
+<p>parallelism, and the number of required worker threads, based upon the current</p>
+<p>workload. If the system workload unexpectedly changes, for example, where new queries</p>
+<p>７</p>
+<p>Note</p>
+<p>The Database Engine automatically detects deadlock cycles. It chooses one of the</p>
+<p>transactions as a deadlock victim and terminates it with an error to break the deadlock.</p>
+<h3 id="multiple-active-result-sets-mars-resources">Multiple Active Result Sets (MARS) resources</h3>
+<h3 id="user-resource">User resource</h3>
+<h3 id="session-mutex">Session mutex</h3>
+<h3 id="transaction-mutex">Transaction mutex</h3>
+<p>start running on the server or the system runs out of worker threads, then a deadlock</p>
+<p>could occur.</p>
+<p>. These resources are used to control</p>
+<p>interleaving of multiple active requests under MARS. For more information, see</p>
+<p>Using</p>
+<p>Multiple Active Result Sets (MARS) in SQL Server Native Client</p>
+<p>.</p>
+<p>. When a thread is waiting for a resource that is potentially controlled by</p>
+<p>a user application, the resource is considered to be an external or user resource and is</p>
+<p>treated like a lock.</p>
+<p>. The tasks running in one session are interleaved, meaning that only</p>
+<p>one task can run under the session at a given time. Before the task can run, it must</p>
+<p>have exclusive access to the session mutex.</p>
+<p>. All tasks running in one transaction are interleaved, meaning that</p>
+<p>only one task can run under the transaction at a given time. Before the task can run, it</p>
+<p>must have exclusive access to the transaction mutex.</p>
+<p>In order for a task to run under MARS, it must acquire the session mutex. If the task is</p>
+<p>running under a transaction, it must then acquire the transaction mutex. This</p>
+<p>guarantees that only one task is active at one time in a given session and a given</p>
+<p>transaction. Once the required mutexes have been acquired, the task can execute.</p>
+<p>When the task finishes, or yields in the middle of the request, it first releases the</p>
+<p>transaction mutex, followed by the session mutex, in reverse order of acquisition.</p>
+<p>However, deadlocks can occur with these resources. In the following pseudocode, two</p>
+<p>tasks, user request U1 and user request U2, are running in the same session.</p>
+<p>Output</p>
+<p>The stored procedure executing from user request U1 has acquired the session mutex.</p>
+<p>If the stored procedure takes a long time to execute, it’s assumed by the Database</p>
+<p>Engine that the stored procedure is waiting for input from the user. User request U2 is</p>
+<p>waiting for the session mutex while the user is waiting for the result set from U2, and</p>
+<p>U1 is waiting for a user resource. This is deadlock state logically illustrated as:</p>
+<p>Deadlocks can also occur when a table is partitioned and the</p>
+<p>setting of</p>
+<p>is set to</p>
+<p>. When</p>
+<p>is set to</p>
+<p>, concurrency increases by allowing</p>
+<p>the Database Engine to lock table partitions at the HoBT level instead of at the table level.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">LOCK_TIMEOUT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Part</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Supplier</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">S</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">X</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">S</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">X</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">S</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">X</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">LOCK_ESCALATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ALTER</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">AUTO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">LOCK_ESCALATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">AUTO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">U1:    Rs1</span><span style="color:#F97583">=</span><span style="color:#79B8FF">Command1</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Execute</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"insert sometable EXEC usp_someproc"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">U2:    Rs2</span><span style="color:#F97583">=</span><span style="color:#79B8FF">Command2</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">Execute</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"select colA from sometable"</span><span style="color:#E1E4E8">);</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

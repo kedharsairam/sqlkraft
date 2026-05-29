@@ -1,0 +1,304 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>columnstore — T-SQL Reference — SqlKraft</title><meta name="description" content="This example creates a table as a heap, and then converts it to a clustered columnstore index"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>columnstore</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>columnstore</h1> <span class="cat-badge" data-astro-cid-s2stm25t>statements</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#statements</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <h2 id="a-convert-a-heap-to-a-clustered-columnstore-index">A. Convert a heap to a clustered columnstore index</h2>
+<h2 id="b-convert-a-clustered-index-to-a-clustered-columnstore-index">B. Convert a clustered index to a clustered columnstore index</h2>
+<h2 id="with-the-same-name">with the same name</h2>
+<p>This example creates a table as a heap, and then converts it to a clustered columnstore index</p>
+<p>named</p>
+<p>. The creation of the clustered columnstore index changes the storage for</p>
+<p>the entire table from rowstore to columnstore.</p>
+<p>SQL</p>
+<p>This example creates a table with clustered index, and then demonstrates the syntax of</p>
+<p>converting the clustered index to a clustered columnstore index. The creation of the clustered</p>
+<p>columnstore index changes the storage for the entire table from rowstore to columnstore.</p>
+<p>SQL</p>
+<h2 id="c-handle-nonclustered-indexes-when-converting-a-rowstore">C. Handle nonclustered indexes when converting a rowstore</h2>
+<h2 id="table-to-a-columnstore-index">table to a columnstore index</h2>
+<p>This example shows how to handle nonclustered indexes when you convert a rowstore table to</p>
+<p>a columnstore index. Beginning with SQL Server 2016 (13.x), no special action is required. SQL</p>
+<p>Server automatically defines and rebuilds the nonclustered indexes on the new, clustered</p>
+<p>columnstore index.</p>
+<p>If you want to drop the nonclustered indexes, use the DROP INDEX statement before creating</p>
+<p>the columnstore index. The DROP EXISTING option only drops the clustered index that is being</p>
+<p>converted. It doesn’t drop the nonclustered indexes.</p>
+<p>In SQL Server 2012 (11.x) and SQL Server 2014 (12.x), you can’t create a nonclustered index on</p>
+<p>a columnstore index.</p>
+<p>SQL</p>
+<p>Only for SQL Server 2012 (11.x) and SQL Server 2014 (12.x), you must drop the nonclustered</p>
+<p>indexes in order to create the columnstore index.</p>
+<p>SQL</p>
+<h2 id="d-convert-a-large-fact-table-from-rowstore-to-columnstore">D. Convert a large fact table from rowstore to columnstore</h2>
+<p>This example explains how to convert a large fact table from a rowstore table to a columnstore</p>
+<p>table.</p>
+<ol>
+<li>Create a small table to use in this example.</li>
+</ol>
+<p>SQL</p>
+<ol start="2">
+<li>Drop all nonclustered indexes from the rowstore table. You might want to</li>
+</ol>
+<p>script out the</p>
+<p>indexes to re-create them later</p>
+<p>.</p>
+<p>SQL</p>
+<ol start="3">
+<li>Convert the rowstore table to a columnstore table with a clustered columnstore index.</li>
+</ol>
+<p>First, look up the name of the existing clustered rowstore index. In Step 1, we set the</p>
+<p>name of the index to</p>
+<p>. If the index name wasn’t specified, it was given</p>
+<p>an automatically generated unique index name. You can retrieve the automatically</p>
+<p>generated name with the following sample query:</p>
+<p>SQL</p>
+<h2 id="e-convert-a-columnstore-table-to-a-rowstore-table-with-a">E. Convert a columnstore table to a rowstore table with a</h2>
+<h2 id="clustered-index">clustered index</h2>
+<h2 id="f-convert-a-columnstore-table-to-a-rowstore-heap">F. Convert a columnstore table to a rowstore heap</h2>
+<p>Option 1: Drop the existing clustered index</p>
+<p>, and convert</p>
+<p>to columnstore. Change the name of the new clustered columnstore index.</p>
+<p>SQL</p>
+<p>Option 2: Convert to columnstore, and reuse the existing rowstore clustered index name.</p>
+<p>SQL</p>
+<p>To convert a columnstore table to a rowstore table with a clustered index, use the</p>
+<p>statement with the</p>
+<p>option.</p>
+<p>SQL</p>
+<p>To convert a columnstore table to a rowstore heap, drop the clustered columnstore index. This</p>
+<p>isn’t typically recommended, but can some have narrow uses. For more information about</p>
+<p>heaps, see</p>
+<p>Heaps (tables without clustered indexes)</p>
+<p>.</p>
+<h2 id="g-defragment-by-reorganizing-the-columnstore-index">G. Defragment by reorganizing the columnstore index</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">cci_Simple</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SimpleTable</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">ProductKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">DueDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">ShipDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span><span style="color:#F97583"> COLUMNSTORE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">cci_Simple</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SimpleTable</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SimpleTable2</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">ProductKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">DueDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">ShipDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">cl_simple</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SimpleTable2</span><span style="color:#E1E4E8">(ProductKey);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span><span style="color:#F97583"> COLUMNSTORE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">cl_simple</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SimpleTable2</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">DROP_EXISTING</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#6A737D">--Create the table for use with this example.</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SimpleTable</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">ProductKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">DueDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">ShipDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#6A737D">--Create two nonclustered indexes for use with this example</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">nc1_simple</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SimpleTable</span><span style="color:#E1E4E8">(OrderDateKey);</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">nc2_simple</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SimpleTable</span><span style="color:#E1E4E8">(DueDateKey);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">DROP</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SimpleTable</span><span style="color:#E1E4E8">.nc1_simple;</span></span>
+<span class="line"><span style="color:#F97583">DROP</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SimpleTable</span><span style="color:#E1E4E8">.nc2_simple;</span></span>
+<span class="line"><span style="color:#6A737D">--Convert the rowstore table to a columnstore index.</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span><span style="color:#F97583"> COLUMNSTORE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">cci_simple</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">IDX_CL_MyFactTable</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SimpleTable</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#6A737D">--Create a rowstore table with a clustered index and a nonclustered index.</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">MyFactTable</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">ProductKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">OrderDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">DueDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">ShipDateKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">NOT</span></span>
+<span class="line"><span style="color:#F97583">NULL</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IDX_CL_MyFactTable </span><span style="color:#F97583">CLUSTERED</span><span style="color:#E1E4E8"> (ProductKey)</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#6A737D">--Add a nonclustered index.</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">my_index</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">MyFactTable</span><span style="color:#E1E4E8">(ProductKey, OrderDateKey);</span></span>
+<span class="line"><span style="color:#6A737D">--Drop all nonclustered indexes</span></span>
+<span class="line"><span style="color:#F97583">DROP</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">my_index</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">MyFactTable</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#79B8FF">i</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">object_id</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">i</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">name</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">t</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">object_id</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">t</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">name</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">indexes</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">i</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">IDX_CL_MyFactTable</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">MyFactTable</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DROP_EXISTING</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">INNER</span></span>
+<span class="line"><span style="color:#F97583">JOIN</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">tables</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">t</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">i</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">object_id</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> t</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">object_id</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#79B8FF">i</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">type_desc</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'CLUSTERED'</span></span>
+<span class="line"><span style="color:#F97583">AND</span></span>
+<span class="line"><span style="color:#79B8FF">t</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">name</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'MyFactTable'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#6A737D">--Drop the clustered rowstore index.</span></span>
+<span class="line"><span style="color:#F97583">DROP</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">[IDX_CL_MyFactTable]</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">MyFactTable</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#6A737D">--Create a new clustered columnstore index with the name MyCCI.</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span><span style="color:#F97583"> COLUMNSTORE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">IDX_CCL_MyFactTable</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">MyFactTable</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#6A737D">--Create the clustered columnstore index,</span></span>
+<span class="line"><span style="color:#6A737D">--replacing the existing rowstore clustered index of the same name</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span><span style="color:#F97583"> COLUMNSTORE</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">[IDX_CL_MyFactTable]</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">MyFactTable</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">DROP_EXISTING</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">CLUSTERED</span></span>
+<span class="line"><span style="color:#F97583">INDEX</span></span>
+<span class="line"><span style="color:#E1E4E8">[IDX_CL_MyFactTable]</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">dbo.[MyFactTable](ProductKey)</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">DROP_EXISTING</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

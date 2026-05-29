@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Contracts — Architecture Guide — SqlKraft</title><meta name="description" content="08/29/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+A contract defines which message types an application uses to accomplish a particular task. A
+
+contract is an agreement between two ser
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Contracts</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>service broker</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#service-broker</span><span class="tag-pill" data-astro-cid-hditk3lm>#contracts</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Contracts</h1> <p class="doc-lede" data-astro-cid-hditk3lm>08/29/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+A contract defines which message types an application uses to accomplish a particular task. A
+
+contract is an agreement between two ser
+</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>08/29/2025</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Managed Instance</p>
+<p>A contract defines which message types an application uses to accomplish a particular task. A</p>
+<p>contract is an agreement between two services about which messages each service sends to</p>
+<p>accomplish a particular task. Contract definitions persist in the database where the type is</p>
+<p>created.</p>
+<p>You create an identical contract in each database that participates in a conversation. For</p>
+<p>example, if a human resources application wants to verify an employee ID, the service that</p>
+<p>requests the verification must know which types of messages the other service expects. The</p>
+<p>requesting service also must know which types of messages it can expect to receive so that it’s</p>
+<p>prepared to process them.</p>
+<p>The contract specifies which message types can be used to accomplish the desired work. The</p>
+<p>contract also specifies which participant in the conversation can use each message type. Some</p>
+<p>message types can be sent by either participant; other message types are restricted to be sent</p>
+<p>only by the initiator or only by the target. A contract must contain a message type sent by the</p>
+<p>initiator or a message type sent by either participant; otherwise, there’s no way for the initiator</p>
+<p>to begin a conversation that uses the contract.</p>
+<p>Service Broker also includes a built-in contract named</p>
+<p>. The</p>
+<p>contract contains</p>
+<p>only the message type</p>
+<p>. If no contract is specified in the</p>
+<p>statement,</p>
+<p>Service Broker uses the</p>
+<p>contract.</p>
+<p>For example, a contract can have message types</p>
+<p>,</p>
+<p>, and</p>
+<p>. Only the initiating endpoint can use</p>
+<p>, and only the target</p>
+<p>endpoint can send</p>
+<p>Either participant in the conversation can send the</p>
+<p>message type. The</p>
+<p>message type lets the participant either see</p>
+<p>where the target is in its processing, or check with the initiator on the status of any parallel</p>
+<p>processing relating to this request.</p>
+<p>CREATE CONTRACT (Transact-SQL)</p>
+<p>DROP CONTRACT (Transact-SQL)</p>
+<p>Message Types</p>
+<p>Create Service Broker contracts</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">DEFAULT</span></span>
+<span class="line"><span style="color:#F97583">DEFAULT</span></span>
+<span class="line"><span style="color:#F97583">SENT</span><span style="color:#F97583"> BY</span><span style="color:#E1E4E8"> ANY</span></span>
+<span class="line"><span style="color:#F97583">BEGIN</span><span style="color:#E1E4E8"> DIALOG</span></span>
+<span class="line"><span style="color:#F97583">DEFAULT</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

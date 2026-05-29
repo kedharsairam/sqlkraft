@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Typical Uses of Service Broker — Architecture Guide — SqlKraft</title><meta name="description" content="09/11/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+Service Broker can be useful for any application that needs to perform processing
+
+asynchronously, or that needs to distribute processi
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Typical Uses of Service Broker</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>service broker</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#service-broker</span><span class="tag-pill" data-astro-cid-hditk3lm>#typical-uses-of-service-broker</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Typical Uses of Service Broker</h1> <p class="doc-lede" data-astro-cid-hditk3lm>09/11/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+Service Broker can be useful for any application that needs to perform processing
+
+asynchronously, or that needs to distribute processi
+</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>09/11/2025</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Managed Instance</p>
+<p>Service Broker can be useful for any application that needs to perform processing</p>
+<p>asynchronously, or that needs to distribute processing across a number of computers. Typical</p>
+<p>uses of Service Broker include:</p>
+<p>Asynchronous triggers</p>
+<p>Reliable query processing</p>
+<p>Reliable data collection</p>
+<p>Distributed server-side processing for client applications</p>
+<p>Data consolidation for client applications</p>
+<p>Large-scale batch processing</p>
+<p>Many applications that use triggers, such as online transaction processing (OLTP) systems, can</p>
+<p>benefit from Service Broker. A trigger queues a message that requests work from a Service</p>
+<p>Broker service. The trigger doesn’t actually perform the requested work. Instead, the trigger</p>
+<p>creates a message that contains information about the work to be done and sends this</p>
+<p>message to a service that performs the work. The trigger then returns.</p>
+<p>When the original transaction commits, Service Broker delivers the message to the destination</p>
+<p>service. The program that implements the service performs the work in a separate transaction.</p>
+<p>By performing this work in a separate transaction, the original transaction can commit</p>
+<p>immediately. The application avoids system slowdowns that result from keeping the original</p>
+<p>transaction open while performing the work.</p>
+<p>Some applications must reliably process queries without regard to computer failures, power</p>
+<p>outages, or similar problems. An application that needs reliable query processing can submit</p>
+<p>queries by sending messages to a Service Broker service. The application that implements the</p>
+<p>service reads the message, runs the query, and returns the results. All three of these operations</p>
+<p>take place in the same transaction. If a failure occurs before the transaction commits, the entire</p>
+<p>transaction rolls back and the message returns to the queue. When the computer recovers, the</p>
+<p>application restarts and processes the message again.</p> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

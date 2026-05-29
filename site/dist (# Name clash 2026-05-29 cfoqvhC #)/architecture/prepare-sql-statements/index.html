@@ -1,0 +1,43 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Prepare SQL statements — Architecture Guide — SqlKraft</title><meta name="description" content="equivalent but differ only in their parameter values. Conversely, you can specify that forced"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Prepare SQL statements</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Prepare SQL statements</h1> <p class="doc-lede" data-astro-cid-hditk3lm>equivalent but differ only in their parameter values. Conversely, you can specify that forced</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>equivalent but differ only in their parameter values. Conversely, you can specify that forced</p>
+<p>parameterization be attempted on only a set of syntactically equivalent queries, even if forced</p>
+<p>parameterization is disabled in the database.</p>
+<p>Plan guides</p>
+<p>are used for this purpose.</p>
+<p>The SQL Server relational engine introduces full support for preparing Transact-SQL statements</p>
+<p>before they are executed. If an application has to execute an Transact-SQL statement several</p>
+<p>times, it can use the database API to do the following:</p>
+<p>Prepare the statement once. This compiles the Transact-SQL statement into an execution</p>
+<p>plan.</p>
+<p>Execute the precompiled execution plan every time it has to execute the statement. This</p>
+<p>prevents having to recompile the Transact-SQL statement on each execution after the first</p>
+<p>time. Preparing and executing statements is controlled by API functions and methods. It</p>
+<p>isn’t part of the Transact-SQL language. The prepare/execute model of executing</p>
+<p>Transact-SQL statements is supported by the SQL Server Native Client OLE DB Provider</p>
+<p>and the SQL Server Native Client ODBC driver. On a prepare request, either the provider</p>
+<p>or the driver sends the statement to SQL Server with a request to prepare the statement.</p>
+<p>SQL Server compiles an execution plan and returns a handle for that plan to the provider</p>
+<p>or driver. On an execute request, either the provider or the driver sends the server a</p>
+<p>request to execute the plan that is associated with the handle.</p>
+<p>Prepared statements can’t be used to create temporary objects on SQL Server. Prepared</p>
+<p>statements can’t reference system stored procedures that create temporary objects, such as</p>
+<p>temporary tables. These procedures must be executed directly.</p>
+<p>Excess use of the prepare/execute model can degrade performance. If a statement is executed</p>
+<p>only once, a direct execution requires only one network round-trip to the server. Preparing and</p>
+<p>executing an Transact-SQL statement executed only one time requires an extra network round-</p>
+<p>trip; one trip to prepare the statement and one trip to execute it.</p>
+<p>７</p>
+<p>Note</p>
+<p>When the</p>
+<p>option is set to</p>
+<p>, the reporting of error messages can</p>
+<p>differ from when the</p>
+<p>option is set to</p>
+<p>: multiple error messages</p>
+<p>might be reported under forced parameterization, where fewer messages would be</p>
+<p>reported under simple parameterization, and the line numbers in which errors occur can</p>
+<p>be reported incorrectly.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">FORCED</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PARAMETERIZATION</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SIMPLE</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

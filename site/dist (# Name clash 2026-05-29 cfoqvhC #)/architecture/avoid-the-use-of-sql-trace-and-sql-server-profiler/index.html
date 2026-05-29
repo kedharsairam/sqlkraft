@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Avoid the use of SQL Trace and SQL Server Profiler — Architecture Guide — SqlKraft</title><meta name="description" content="The performance of index operations such as creating or rebuilding indexes can be improved"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Avoid the use of SQL Trace and SQL Server Profiler</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Avoid the use of SQL Trace and SQL Server Profiler</h1> <p class="doc-lede" data-astro-cid-hditk3lm>The performance of index operations such as creating or rebuilding indexes can be improved</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>The performance of index operations such as creating or rebuilding indexes can be improved</p>
+<p>on computers that have many CPUs by temporarily setting the recovery model of the database</p>
+<p>to either the bulk-logged or simple recovery model. These index operations can generate</p>
+<p>significant log activity and log contention can affect the best degree of parallelism (DOP)</p>
+<p>choice made by SQL Server.</p>
+<p>In addition to adjusting the</p>
+<p>server configuration option,</p>
+<p>consider adjusting the parallelism for index operations using the</p>
+<p>MAXDOP option</p>
+<p>. For more</p>
+<p>information, see</p>
+<p>Configure Parallel Index Operations</p>
+<p>. For more information and guidelines</p>
+<p>about adjusting the max degree of parallelism server configuration option, see</p>
+<p>Configure the</p>
+<p>max degree of parallelism server configuration option</p>
+<p>.</p>
+<p>SQL Server dynamically configures the</p>
+<p>server configuration option at</p>
+<p>startup. SQL Server uses the number of available CPUs and the system architecture to</p>
+<p>determine this server configuration during startup, using a documented</p>
+<p>formula</p>
+<p>.</p>
+<p>This option is an advanced option, and should be changed only by an experienced database</p>
+<p>professional.</p>
+<p>If you suspect that there is a performance problem, it is probably not the availability of worker</p>
+<p>threads. The cause is more likely something like I/O that is causing the worker threads to wait.</p>
+<p>It is best to find the root cause of a performance issue before you change the max worker</p>
+<p>threads setting. However, if you need to manually set the maximum number of worker threads,</p>
+<p>this configuration value must always be set to a value of at least seven times the number of</p>
+<p>CPUs that are present on the system. For more information, see</p>
+<p>Configure the max worker</p>
+<p>threads</p>
+<p>.</p>
+<p>We recommend that you don’t use SQL Trace and SQL Profiler in a production environment.</p>
+<p>The overhead for running these tools also increases as the number of CPUs increases. If you</p>
+<p>must use SQL Trace in a production environment, limit the number of trace events to a</p>
+<p>minimum. Carefully profile and test each trace event under load, and avoid using combinations</p>
+<p>of events that significantly affect performance.</p>
+<p>）</p>
+<p>Important</p>
+<h3 id="extended-events">Extended Events</h3>
+<h3 id="quick-start">Quick Start:</h3>
+<h3 id="extended-events-in-sql-server">Extended events in SQL Server</h3>
+<h3 id="ssms-xevent-profiler">SSMS XEvent Profiler</h3> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

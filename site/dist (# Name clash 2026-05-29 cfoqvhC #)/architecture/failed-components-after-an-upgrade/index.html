@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Failed components after an upgrade — Architecture Guide — SqlKraft</title><meta name="description" content="You might see the following behavior after the upgrade:"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Failed components after an upgrade</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>query processing</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#query-processing</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Failed components after an upgrade</h1> <p class="doc-lede" data-astro-cid-hditk3lm>You might see the following behavior after the upgrade:</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>You might see the following behavior after the upgrade:</p>
+<p>Replication continues to succeed but changes to the publication fail.</p>
+<p>Replication Monitor in SQL Server Management Studio (SSMS) fails.</p>
+<p>Agent status in the SSMS UI fails.</p>
+<p>A remote distributor uses a linked server for communication between the publisher and</p>
+<p>distributor. The secure default introduced in SQL Server 2025 (17.x) of the OLEDB 19 provider</p>
+<p>requires that</p>
+<p>.</p>
+<p>You can resolve this issue preemptively before you start the upgrade, or you can resolve the</p>
+<p>issue if replication components fail after an upgrade.</p>
+<p>If you know that your SQL Server instance is going to encounter this issue after an upgrade,</p>
+<p>you can preemptively mitigate the failure by configuring the SQL Server instance to use a</p>
+<p>public commercial certificate</p>
+<p>or a certificate from an</p>
+<p>internal certificate authority</p>
+<p>.</p>
+<p>This is the recommended option for maximum security.</p>
+<p>If your replication components fail after an upgrade, you can still configure the SQL Server</p>
+<p>instance to use a</p>
+<p>public commercial certificate</p>
+<p>or a certificate from an</p>
+<p>internal certificate</p>
+<p>authority</p>
+<p>.</p>
+<p>Alternatively, you can choose the less secure option to override the secure default of the</p>
+<p>OLEDB 19 provider and set</p>
+<p>so the distributor trusts the</p>
+<p>self-signed certificate.</p>
+<p>To override the new secure default, use the</p>
+<p>sp_changedistributor_property</p>
+<p>stored procedure to</p>
+<p>set the</p>
+<p>option to</p>
+<p>:</p>
+<p>SQL</p>
+<p>７</p>
+<p>Note</p>
+<h3 id="sp_changedistributor_property">sp_changedistributor_property</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">TrustServerCertificate</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">False</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">trust_distributor_certificate</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">yes</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">trust_distributor_certificate</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">yes</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">EXECUTE</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_changedistributor_property</span></span>
+<span class="line"><span style="color:#E1E4E8">@property </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> N</span></span>
+<span class="line"><span style="color:#9ECBFF">'trust_distributor_certificate'</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">@</span></span>
+<span class="line"><span style="color:#F97583">value</span></span>
+<span class="line"><span style="color:#F97583">=</span><span style="color:#E1E4E8"> N</span></span>
+<span class="line"><span style="color:#9ECBFF">'yes'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

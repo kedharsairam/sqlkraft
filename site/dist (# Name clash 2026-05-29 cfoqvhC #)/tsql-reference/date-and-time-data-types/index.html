@@ -1,0 +1,102 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Date and time data types — T-SQL Reference — SqlKraft</title><meta name="description" content="Summarize this article for me"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Date and time data types</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Date and time data types</h1> <span class="cat-badge" data-astro-cid-s2stm25t>data-types</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#data-types</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <h4 id="rowversion">rowversion</h4>
+<h4 id="timestamp">timestamp</h4>
+<h4 id="rowversion-1">rowversion</h4>
+<p>ﾃ</p>
+<p>Summarize this article for me</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Database</p>
+<p>Azure SQL Managed Instance</p>
+<p>Azure Synapse</p>
+<p>Analytics</p>
+<p>SQL database in Microsoft Fabric</p>
+<p>The sections in this article cover all Transact-SQL date and time data types and functions, including usage and</p>
+<h2 id="examples">examples.</h2>
+<p>The following table lists the Transact-SQL date and time data types.</p>
+<p>Data type</p>
+<p>Format</p>
+<p>Range</p>
+<p>Accuracy</p>
+<p>Storage</p>
+<p>size</p>
+<p>(bytes)</p>
+<p>User-defined</p>
+<p>fractional</p>
+<p>second</p>
+<p>precision</p>
+<p>Time</p>
+<p>zone</p>
+<p>offset</p>
+<p>time</p>
+<p>HH:mm:ss[.nnnnnnn]</p>
+<p>00:00:00.0000000</p>
+<p>through</p>
+<p>23:59:59.9999999</p>
+<p>100</p>
+<p>nanoseconds</p>
+<p>3 to 5</p>
+<p>Yes</p>
+<p>No</p>
+<p>date</p>
+<p>yyyy-MM-dd</p>
+<p>0001-01-01 through</p>
+<p>9999-12-31</p>
+<p>1 day</p>
+<p>3</p>
+<p>No</p>
+<p>No</p>
+<p>smalldatetime</p>
+<p>yyyy-MM-dd HH:mm:ss</p>
+<p>1900-01-01 through</p>
+<p>2079-06-06</p>
+<p>1 minute</p>
+<p>4</p>
+<p>No</p>
+<p>No</p>
+<p>datetime</p>
+<p>yyyy-MM-dd</p>
+<p>HH:mm:ss[.nnn]</p>
+<p>1753-01-01 through</p>
+<p>9999-12-31</p>
+<p>0.00333</p>
+<p>second</p>
+<p>8</p>
+<p>No</p>
+<p>No</p>
+<p>datetime2</p>
+<p>yyyy-MM-dd</p>
+<p>HH:mm:ss[.nnnnnnn]</p>
+<p>0001-01-01</p>
+<p>00:00:00.0000000</p>
+<p>through 9999-12-31</p>
+<p>23:59:59.9999999</p>
+<p>100</p>
+<p>nanoseconds</p>
+<p>6 to 8</p>
+<p>Yes</p>
+<p>No</p>
+<p>datetimeoffset</p>
+<p>yyyy-MM-dd</p>
+<p>HH:mm:ss[.nnnnnnn]</p>
+<p>[+|-]HH:mm</p>
+<p>0001-01-01</p>
+<p>00:00:00.0000000</p>
+<p>through 9999-12-31</p>
+<p>23:59:59.9999999 (in</p>
+<p>UTC)</p>
+<p>100</p>
+<p>nanoseconds</p>
+<p>8 to 10</p>
+<p>Yes</p>
+<p>Yes</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p>７</p>
+<p>Note</p>
+<p>The Transact-SQL</p>
+<p>data type isn’t a date or time data type.</p>
+<p>is a deprecated synonym</p>
+<p>for</p>
+<p>.</p> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

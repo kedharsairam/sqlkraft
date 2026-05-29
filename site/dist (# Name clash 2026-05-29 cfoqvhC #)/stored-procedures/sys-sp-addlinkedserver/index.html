@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sys.sp_addlinkedserver — System Stored Procedure — SqlKraft</title><meta name="description" content="be specified in the parameter. Optionally, the connection string can also supply a failover partner name. from a local login, or a login that isn't part of the role, you might receive the following error: To resolve this issue, add the parameter to your connection string. In the following is the User ID passed to the connection string: For more information, see Access to the remote server is denie"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-jslvljwt]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-jslvljwt] .sep[data-astro-cid-jslvljwt]{color:var(--border-glass)}.detail-header[data-astro-cid-jslvljwt]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-jslvljwt]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-jslvljwt]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-jslvljwt]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-jslvljwt]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.body-content[data-astro-cid-jslvljwt]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-jslvljwt] h2[data-astro-cid-jslvljwt]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-jslvljwt] h3[data-astro-cid-jslvljwt]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-jslvljwt] p[data-astro-cid-jslvljwt]{margin-bottom:14px}.body-content[data-astro-cid-jslvljwt] ul[data-astro-cid-jslvljwt],.body-content[data-astro-cid-jslvljwt] ol[data-astro-cid-jslvljwt]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-jslvljwt] li[data-astro-cid-jslvljwt]{margin-bottom:6px}.body-content[data-astro-cid-jslvljwt] pre[data-astro-cid-jslvljwt]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-jslvljwt] code[data-astro-cid-jslvljwt]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-jslvljwt] [data-astro-cid-jslvljwt]:not(pre)>code[data-astro-cid-jslvljwt]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-jslvljwt] table[data-astro-cid-jslvljwt]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-jslvljwt] th[data-astro-cid-jslvljwt]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-jslvljwt] td[data-astro-cid-jslvljwt]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-jslvljwt]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-jslvljwt> <a href="/sqlkraft/" data-astro-cid-jslvljwt>&larr; Home</a> <span class="sep" data-astro-cid-jslvljwt>/</span> <a href="/sqlkraft/stored-procedures/" data-astro-cid-jslvljwt>Stored Procedures</a> <span class="sep" data-astro-cid-jslvljwt>/</span> <span data-astro-cid-jslvljwt>sys.sp_addlinkedserver</span> </nav> <div class="detail-header" data-astro-cid-jslvljwt> <h1 class="detail-title" data-astro-cid-jslvljwt>sys.sp_addlinkedserver</h1> <span class="cat-badge" data-astro-cid-jslvljwt>general</span> </div> <div class="tag-strip" data-astro-cid-jslvljwt> <span class="tag-pill" data-astro-cid-jslvljwt>#stored-procedure</span> </div> <div class="body-content" data-astro-cid-jslvljwt> <h2 id="description">Description</h2>
+<p>be specified in the parameter. Optionally, the connection string can also supply a failover partner name. from a local login, or a login that isn’t part of the role, you might receive the following error: To resolve this issue, add the parameter to your connection string. In the following is the User ID passed to the connection string: For more information, see Access to the remote server is denied because no login-mapping The catalog to be used when a connection is made to the OLE DB provider. with a default of is passed as the property to initialize the OLE DB provider. When the linked server is defined against an instance of SQL Server, catalog refers to the default database to which the linked server is mapped. Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. source; there can be more than one row for a data source type. This table also shows the Removes an existing mapping between a login on the local server running SQL Server, and a Specifies that when a local transaction is active, executing a remote stored procedure starts a</p>
+<h2 id="syntax">Syntax</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addlinkedserver</span></span>
+<span class="line"><span style="color:#E1E4E8">[ @server = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'server'</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @srvproduct = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'srvproduct'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @provider = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'provider'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @datasrc = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'datasrc'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @location = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'location'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @provstr = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'provstr'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @catalog = ]</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'catalog'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @linkedstyle = ] linkedstyle ]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ ; ]</span></span></code></pre>
+<h2 id="arguments">Arguments</h2>
+<p>Applies to:</p>
+<p>Azure SQL Managed Instance</p>
+<p>Creates a linked server. A linked server provides access to distributed, heterogeneous queries</p>
+<p>against OLE DB data sources. After a linked server is created by using</p>
+<p>distributed queries can be run against this server. If the linked server is defined as an instance of</p>
+<p>SQL Server, remote stored procedures can be executed.</p>
+<p>Transact-SQL syntax conventions</p>
+<p>The name of the linked server to create.</p>
+<p>, with no default.</p>
+<p>The product name of the OLE DB data source to add as a linked server.</p>
+<p>@srvproduct</p>
+<p>nvarchar(128)</p>
+<p>, with a default of</p>
+<p>. If the value is</p>
+<p>don’t have to be specified.</p>
+<p>The unique programmatic identifier (PROGID) of the OLE DB provider that corresponds to this</p>
+<p>data source. The</p>
+<p>must be unique for the specified OLE DB provider installed on the</p>
+<p>current computer.</p>
+<p>nvarchar(128)</p>
+<p>, with a default of</p>
+<p>In SQL Server 2019 (15.x) and earlier versions, if</p>
+<p>is omitted,</p>
+<p>will redirect SQL Server to the latest version of SQL Server Native Client OLE</p>
+<p>Microsoft Entra ID</p>
+<p>was previously known as Azure Active Directory (Azure AD).</p>
+<h2 id="permissions">Permissions</h2>
+<p>database of the server (mssqlsystemresource). The resource database is read-only. A link to the object is exposed as a record in the sys schema of every database. Permission to execute or select a system object can be granted, denied, and revoked. Granting permission to execute or select an object doesn’t necessarily convey all the permissions required to use the object. Most objects perform operations for which extra permissions are required. For example, a user that is granted permission on can’t create a linked server unless the user is also a member of the fixed server role. Default name resolution resolves unqualified procedure names to the resource database. Therefore, the sys qualifier is only required when you’re specifying catalog views and dynamic management views. Granting permissions on triggers and on columns of system objects isn’t supported. Permissions on system objects are preserved during upgrades of SQL Server. You must be in the database to grant permissions, and the principal you grant the permissions to must be a user in the database. That is, if they’re server-level permissions, you can’t grant them to server principals, only database principals. System objects are visible in the sys.system_objects catalog view. The permissions on system objects are visible in the sys.database_permissions catalog view in the database. The following query returns information about permissions of system objects: SQL Requires CONTROL SERVER permission. completion of the transaction. When a subsequent COMMIT TRANSACTION or ROLLBACK TRANSACTION statement is issued for the connection, the controlling instance requests that MS DTC manage the completion of the distributed transaction across the computers involved. After a Transact-SQL distributed transaction has been started, remote stored procedure calls can be made to other instances of SQL Server that have been defined as remote servers. The remote servers are all enlisted in the Transact-SQL distributed transaction, and MS DTC ensures that the transaction is completed against each remote server. REMOTE_PROC_TRANSACTIONS is a connection-level setting that can be used to override the instance-level option. When REMOTE_PROC_TRANSACTIONS is OFF, remote stored procedure calls are not made part of a local transaction. The modifications made by the remote stored procedure are committed or rolled back at the time the stored procedure completes. Subsequent COMMIT TRANSACTION or ROLLBACK TRANSACTION statements issued by the connection that called the remote stored procedure have no effect on the processing done by the procedure. The REMOTE_PROC_TRANSACTIONS option is a compatibility option that affects only remote stored procedure calls made to instances of SQL Server defined as remote servers using . The option does not apply to distributed queries that execute a stored procedure on an instance defined as a linked server using . The setting of SET REMOTE_PROC_TRANSACTIONS is set at execute or run time and not at parse time. Requires membership in the role. BEGIN DISTRIBUTED TRANSACTION (Transact-SQL) SET Statements (Transact-SQL) See Also</p>
+<h2 id="remarks">Remarks</h2>
+<p>be specified in the</p>
+<p>parameter. Optionally, the connection string can</p>
+<p>also supply a failover partner name.</p>
+<p>from a local login, or a login that isn’t part of the</p>
+<p>role, you might receive the following error:</p>
+<p>To resolve this issue, add the</p>
+<p>parameter to your connection string. In the following</p>
+<p>is the User ID passed to the connection string:</p>
+<p>For more information, see</p>
+<p>Access to the remote server is denied because no login-mapping</p>
+<p>The catalog to be used when a connection is made to the OLE DB provider.</p>
+<p>with a default of</p>
+<p>is passed as the</p>
+<p>property to initialize the</p>
+<p>OLE DB provider. When the linked server is defined against an instance of SQL Server, catalog</p>
+<p>refers to the default database to which the linked server is mapped.</p>
+<p>Identified for informational purposes only. Not supported. Future compatibility is not guaranteed.</p>
+<p>(success) or</p>
+<p>The following table shows the ways that a linked server can be set up for data sources that can be</p>
+<p>accessed through OLE DB. A linked server can be set up more than one way for a particular data</p>
+<p>source; there can be more than one row for a data source type. This table also shows the</p>
+<p>parameter values to be used for setting up the linked server.</p>
+<p>data source</p>
+<p>@srvproduct</p>
+<p>Network name of SQL</p>
+<p>Server (for default</p>
+<p>instancename</p>
+<p>(for specific instance)</p>
+<p>Alias for the Oracle</p>
+<p>Full path of Jet database</p>
+<p>System DSN of ODBC</p>
+<p>data source</p>
+<p>File system</p>
+<p>Indexing Service catalog</p>
+<p>Spreadsheet</p>
+<p>Full path of Excel file</p>
+<p>Expand table</p>
+<p>Applies to:</p>
+<p>Removes an existing mapping between a login on the local server running SQL Server, and a</p>
+<p>login on the linked server.</p>
+<p>Transact-SQL syntax conventions</p>
+<p>The name of a linked server that the SQL Server login mapping applies to.</p>
+<p>@rmtsrvname</p>
+<p>, with no default.</p>
+<p>The SQL Server login on the local server that’s a mapping to the linked server</p>
+<p>@rmtsrvname</p>
+<p>@locallogin</p>
+<p>, with no default. A mapping for</p>
+<p>@locallogin</p>
+<p>@rmtsrvname</p>
+<p>already exist. If</p>
+<p>, the default mapping created by</p>
+<p>, which maps all</p>
+<p>logins on the local server to logins on the linked server, is deleted.</p>
+<p>(success) or</p>
+<p>Applies to:</p>
+<p>Specifies that when a local transaction is active, executing a remote stored procedure starts a</p>
+<p>Transact-SQL distributed transaction managed by Microsoft Distributed Transaction</p>
+<p>Coordinator (MS DTC).</p>
+<p>Transact-SQL syntax conventions</p>
+<p>When ON, a Transact-SQL distributed transaction is started when a remote stored procedure is</p>
+<p>executed from a local transaction. When OFF, calling remote stored procedures from a local</p>
+<p>transaction does not start a Transact-SQL distributed transaction.</p>
+<p>When REMOTE_PROC_TRANSACTIONS is ON, calling a remote stored procedure starts a</p>
+<p>distributed transaction and enlists the transaction with MS DTC. The instance of SQL Server</p>
+<p>making the remote stored procedure call is the transaction originator and controls the</p>
+<p>This feature will be removed in a future version of SQL Server. Avoid using this feature in</p>
+<p>new development work, and plan to modify applications that currently use this feature.</p>
+<p>This option is provided for backward compatibility for applications that use remote stored</p>
+<p>procedures. Instead of issuing remote stored procedure calls, use distributed queries that</p>
+<p>reference linked servers. These are defined by using</p>
+<h2 id="examples">Examples</h2>
+<h3 id="example-1">Example 1</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addlinkedserver</span></span></code></pre>
+<h3 id="example-2">Example 2</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addlinkedsrvlogin</span></span></code></pre>
+<h3 id="example-3">Example 3</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">true</span></span></code></pre>
+<h3 id="example-4">Example 4</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addlinkedsrvlogin</span></span></code></pre>
+<h3 id="example-5">Example 5</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_droplinkedsrvlogin</span></span></code></pre>
+<h3 id="example-6">Example 6</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addlinkedsrvlogin</span></span></code></pre>
+<h3 id="example-7">Example 7</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addlinkedsrvlogin</span></span></code></pre>
+<h3 id="example-8">Example 8</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_addlinkedsrvlogin</span></span></code></pre>
+<h3 id="example-9">Example 9</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">SEATTLESales</span></span></code></pre>
+<h3 id="example-10">Example 10</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">USE</span></span>
+<span class="line"><span style="color:#F97583">master</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">EXECUTE</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_addlinkedserver</span></span>
+<span class="line"><span style="color:#9ECBFF">'SEATTLESales'</span></span>
+<span class="line"><span style="color:#E1E4E8">, N</span></span>
+<span class="line"><span style="color:#9ECBFF">'SQL Server'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">EXECUTE</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_testlinkedserver SEATTLESales;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<p><em>(… and 6 more examples)</em></p> </div> <nav class="detail-footer" data-astro-cid-jslvljwt> <a href="/sqlkraft/stored-procedures/" data-astro-cid-jslvljwt>&larr; Back to all stored procedures</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

@@ -1,0 +1,89 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Querying Queues — Architecture Guide — SqlKraft</title><meta name="description" content="09/11/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+Sometimes it might be necessary to inspect the content of a queue as a whole. You might want
+
+to know how many messages the queue conta
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Querying Queues</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>service broker</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#service-broker</span><span class="tag-pill" data-astro-cid-hditk3lm>#querying-queues</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Querying Queues</h1> <p class="doc-lede" data-astro-cid-hditk3lm>09/11/2025
+
+Applies to:
+
+SQL Server
+
+Azure SQL Managed Instance
+
+Sometimes it might be necessary to inspect the content of a queue as a whole. You might want
+
+to know how many messages the queue conta
+</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>09/11/2025</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Managed Instance</p>
+<p>Sometimes it might be necessary to inspect the content of a queue as a whole. You might want</p>
+<p>to know how many messages the queue contains, or you might want to ensure that the</p>
+<p>application has processed all of the messages for a service that you’re about to take offline.</p>
+<p>You might need to find out why messages aren’t being processed by an application.</p>
+<p>To get this information, use the name of the queue as the source table of a</p>
+<p>statement.</p>
+<p>A</p>
+<p>statement on a queue has the same format as a</p>
+<p>statement on a view or a</p>
+<p>table.</p>
+<p>Following is an example</p>
+<p>statement to find out the number of messages in the queue</p>
+<p>:</p>
+<p>SQL</p>
+<p>The following</p>
+<p>statement lets the administrator learn whether the queue</p>
+<p>contains any messages for the service</p>
+<p>:</p>
+<p>SQL</p>
+<p>７</p>
+<p>Note</p>
+<p>Service Broker is designed to allow multiple queue readers to efficiently receive messages</p>
+<p>from a queue. However, a</p>
+<p>statement on a queue might cause blocking. When</p>
+<p>using a</p>
+<p>statement on a queue, specify the</p>
+<p>hint to avoid blocking</p>
+<p>applications that use the queue. For a description of the columns in a queue, see</p>
+<p>.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">NOLOCK</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">COUNT</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">*</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">ExpenseQueue</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">NOLOCK</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">IF</span><span style="color:#F97583"> EXISTS</span><span style="color:#E1E4E8"> (</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">dbo</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">ExpenseQueue</span></span>
+<span class="line"><span style="color:#F97583">WITH</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#F97583">NOLOCK</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#F97583">service_name</span><span style="color:#F97583"> =</span></span>
+<span class="line"><span style="color:#9ECBFF">'//Adventure-Works.com/AccountsPayable/Expenses'</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">PRINT</span></span>
+<span class="line"><span style="color:#9ECBFF">'The queue contains messages for '</span></span>
+<span class="line"><span style="color:#F97583">+</span></span>
+<span class="line"><span style="color:#9ECBFF">'//Adventure-</span></span>
+<span class="line"><span style="color:#9ECBFF">Works.com/AccountsPayable/Expenses'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#F97583">ELSE</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

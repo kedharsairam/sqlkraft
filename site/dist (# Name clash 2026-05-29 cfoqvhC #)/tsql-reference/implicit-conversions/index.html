@@ -1,0 +1,110 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Implicit conversions — T-SQL Reference — SqlKraft</title><meta name="description" content="Translates ASCII characters to binary bytes, or binary bytes to ASCII characters. Each character"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Implicit conversions</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Implicit conversions</h1> <span class="cat-badge" data-astro-cid-s2stm25t>statements</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#statements</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <h3 id="microsoft-download-center">Microsoft Download Center</h3>
+<p>(default)</p>
+<p>Translates ASCII characters to binary bytes, or binary bytes to ASCII characters. Each character</p>
+<p>or byte is converted 1:1.</p>
+<p>For a binary</p>
+<p>data_type</p>
+<p>, the characters 0x are added to the left of the result.</p>
+<p>,</p>
+<p>For a binary</p>
+<p>data_type</p>
+<p>, the expression must be a character expression. The</p>
+<p>expression</p>
+<p>must</p>
+<p>have an</p>
+<p>even</p>
+<p>number of hexadecimal digits (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F, a, b, c, d, e,</p>
+<p>f). If the</p>
+<p>style</p>
+<p>is set to 1, the expression must have 0x as the first two characters. If the</p>
+<p>expression contains an odd number of characters, or if any of the characters is invalid, an error</p>
+<p>is raised.</p>
+<p>If the length of the converted expression exceeds the length of the</p>
+<p>data_type</p>
+<p>, the result is</p>
+<p>right truncated.</p>
+<p>Fixed length</p>
+<p>data_type</p>
+<p>s larger than the converted result has zeros added to the right of the</p>
+<p>result.</p>
+<p>A</p>
+<p>data_type</p>
+<p>of type character requires a binary expression. Each binary character is converted</p>
+<p>into two hexadecimal characters. Suppose the length of the converted expression exceeds the</p>
+<p>length of the</p>
+<p>data_type</p>
+<p>. In that case, it’s truncated.</p>
+<p>For a fixed size character type</p>
+<p>data_type</p>
+<p>, if the length of the converted result is less than its</p>
+<p>length of the</p>
+<p>data_type</p>
+<p>, spaces are added to the right of the converted expression to maintain</p>
+<p>an even number of hexadecimal digits.</p>
+<p>The characters 0x aren’t added to the left of the converted result for</p>
+<p>style</p>
+<ol start="2">
+<li></li>
+</ol>
+<p>Implicit conversions don’t require specification of either the</p>
+<p>function or the</p>
+<p>function. Explicit conversions require specification of the</p>
+<p>function or the</p>
+<p>function. The following illustration shows all explicit and implicit data type conversions allowed</p>
+<p>for SQL Server system-supplied data types. These include</p>
+<p>, and</p>
+<p>sql_variant</p>
+<p>, and</p>
+<p>.</p>
+<p>There is no implicit conversion on assignment from the</p>
+<p>sql_variant</p>
+<p>data type, but there is</p>
+<p>implicit conversion to</p>
+<p>sql_variant</p>
+<p>.</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p></p>
+<p>Tip</p>
+<p>The</p>
+<p>has this chart available for download as a PNG file.</p>
+<p>The above chart illustrates all the explicit and implicit conversions that are allowed in SQL</p>
+<p>Server, but the resulting data type of the conversion depends on the operation being</p>
+<p>performed:</p>
+<p>For explicit conversions, the statement itself determines the resulting data type.</p>
+<p>For implicit conversions, assignment statements such as setting the value of a variable or</p>
+<p>inserting a value into a column will result in the data type that was defined by the variable</p>
+<p>declaration or column definition.</p>
+<p>For comparison operators or other expressions, the resulting data type will depend on the</p>
+<p>rules of</p>
+<p>data type precedence</p>
+<p>.</p>
+<h3 id="datetimeoffset">datetimeoffset</h3>
+<h3 id="char">char</h3>
+<h3 id="nchar">nchar</h3>
+<h3 id="nvarchar">nvarchar</h3>
+<h3 id="varchar">varchar</h3>
+<h3 id="binary">binary</h3>
+<h3 id="varbinary">varbinary</h3>
+<h3 id="nvarchar-1">nvarchar</h3>
+<h3 id="varbinary-1">varbinary</h3>
+<h3 id="varchar-1">varchar</h3>
+<h3 id="image">image</h3>
+<h3 id="varbinarymax">varbinary(max)</h3>
+<h3 id="text">text</h3>
+<h3 id="varcharmax">varchar(max)</h3>
+<h3 id="ntext">ntext</h3>
+<h3 id="nvarcharmax">nvarchar(max)</h3>
+<h3 id="varcharmax-1">varchar(max)</h3>
+<h3 id="varchar-2">varchar</h3>
+<h3 id="nvarchar-2">nvarchar</h3>
+<h3 id="varbinary-2">varbinary</h3>
+<h3 id="varchar-3">varchar</h3>
+<h3 id="xml">xml</h3>
+<h3 id="effects-of-data-type-precedence-in-conversions">effects of data type precedence in conversions</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CAST</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CONVERT</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CAST</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CONVERT</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

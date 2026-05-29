@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>EXPLICIT Mode — Architecture Guide — SqlKraft</title><meta name="description" content="Article
+
+•
+
+02/28/2023
+
+Applies to:
+
+SQL Server
+
+Azure SQL Database
+
+Azure SQL Managed Instance
+
+As described in the article,
+
+Constructing XML Using FOR XML
+
+, RAW and AUTO mode don't
+
+provide much c
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>EXPLICIT Mode</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>xml data</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#xml-data</span><span class="tag-pill" data-astro-cid-hditk3lm>#explicit-mode</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>EXPLICIT Mode</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Article
+
+•
+
+02/28/2023
+
+Applies to:
+
+SQL Server
+
+Azure SQL Database
+
+Azure SQL Managed Instance
+
+As described in the article,
+
+Constructing XML Using FOR XML
+
+, RAW and AUTO mode don&#39;t
+
+provide much c
+</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Article</p>
+<p>•</p>
+<p>02/28/2023</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<p>Azure SQL Database</p>
+<p>Azure SQL Managed Instance</p>
+<p>As described in the article,</p>
+<p>Constructing XML Using FOR XML</p>
+<p>, RAW and AUTO mode don’t</p>
+<p>provide much control over the shape of the XML generated from a query result. However,</p>
+<p>EXPLICIT mode provides the most flexibility in generating the XML you want from a query</p>
+<p>result.</p>
+<p>The EXPLICIT mode query must be written in a specific way so that the additional information</p>
+<p>about the required XML, such as expected nesting in the XML, is explicitly specified as part of</p>
+<p>the query. Depending on the XML you request, writing EXPLICIT mode queries can be</p>
+<p>cumbersome. You may find that</p>
+<p>Using PATH Mode</p>
+<p>with nesting is a simpler alternative to</p>
+<p>writing EXPLICIT mode queries.</p>
+<p>Because you describe the XML you want as part of the query in EXPLICIT mode, you must</p>
+<p>ensure that the generated XML is well formed and valid.</p>
+<p>The EXPLICIT mode transforms the rowset that results from the query execution into an XML</p>
+<p>document. In order for EXPLICIT mode to produce the XML document, the rowset must have a</p>
+<p>specific format. This requires that you write the SELECT query to produce the rowset, the</p>
+<p>, with a specific format so the processing logic can then produce the XML you</p>
+<p>want.</p>
+<p>First, the query must produce the following two metadata columns:</p>
+<p>The first column must provide the tag number, integer type, of the current element, and</p>
+<p>the column name must be</p>
+<p>. Your query must provide a unique tag number for each</p>
+<p>element that will be constructed from the rowset.</p>
+<p>The second column must provide a tag number of the parent element, and this column</p>
+<p>name must be</p>
+<p>. In this way, the Tag and the Parent column provide hierarchy</p>
+<p>information.</p>
+<p>These metadata column values, together with the information in the column names, are used</p>
+<p>to produce the XML you want. Your query must provide column names in a specific way. Also</p>
+<p>note that a 0 or NULL in the</p>
+<p>column indicates that the corresponding element has no</p>
+<p>parent. The element is added to the XML as a top-level element.</p> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

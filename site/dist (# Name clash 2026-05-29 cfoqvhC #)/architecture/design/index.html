@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Design — Architecture Guide — SqlKraft</title><meta name="description" content="07/23/2025
+
+Applies to:
+
+SQL Server
+
+This article describes the following factors you should consider when you design assemblies:
+
+Packaging assemblies
+
+Managing assembly security
+
+Restrictions on ass
+"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Design</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>clr integration</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#clr-integration</span><span class="tag-pill" data-astro-cid-hditk3lm>#design</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Design</h1> <p class="doc-lede" data-astro-cid-hditk3lm>07/23/2025
+
+Applies to:
+
+SQL Server
+
+This article describes the following factors you should consider when you design assemblies:
+
+Packaging assemblies
+
+Managing assembly security
+
+Restrictions on ass
+</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>07/23/2025</p>
+<p>Applies to:</p>
+<p>SQL Server</p>
+<p>This article describes the following factors you should consider when you design assemblies:</p>
+<p>Packaging assemblies</p>
+<p>Managing assembly security</p>
+<p>Restrictions on assemblies</p>
+<p>An assembly can contain functionality for more than one SQL Server routine or type in its</p>
+<p>classes and methods. Most of the time, it makes sense to package the functionality of routines</p>
+<p>that perform related functions within the same assembly, especially if these routines share</p>
+<p>classes whose methods call one another. For example, classes that perform data entry</p>
+<p>management tasks for common language runtime (CLR) triggers and CLR stored procedures</p>
+<p>can be packaged in the same assembly. This is because the methods for these classes are more</p>
+<p>likely to call each other than methods of less related tasks.</p>
+<p>When you’re packaging code into assembly, consider:</p>
+<p>CLR user-defined types and indexes that depend on CLR user-defined functions can cause</p>
+<p>persisted data to be in the database that depends on the assembly. Modifying the code</p>
+<p>of an assembly is frequently more complex when there’s persisted data that depends on</p>
+<p>the assembly in the database. Therefore, it’s better to separate code on which persisted</p>
+<p>data dependencies rely (such as user-defined types and indexes using user-defined</p>
+<p>functions) from code that doesn’t have these persisted data dependencies. For more</p>
+<p>information, see</p>
+<p>Implement assemblies</p>
+<p>and</p>
+<p>ALTER ASSEMBLY</p>
+<p>.</p>
+<p>If a piece of managed code requires higher permission, it’s better to separate that code</p>
+<p>into a separate assembly from code that doesn’t require higher permission.</p>
+<p>CLR uses Code Access Security (CAS) in the .NET Framework, which is no longer supported as a</p>
+<p>security boundary. A CLR assembly created with</p>
+<p>might be able to</p>
+<p>access external system resources, call unmanaged code, and acquire sysadmin privileges. In</p>
+<p>SQL Server 2017 (14.x) and later versions, the</p>
+<p>option,</p>
+<p>clr strict security</p>
+<p>, enhances</p>
+<p>the security of CLR assemblies.</p>
+<p>is enabled by default, and treats</p>
+<p>and</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">PERMISSION_SET</span><span style="color:#F97583"> =</span><span style="color:#F97583"> SAFE</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_configure</span></span>
+<span class="line"><span style="color:#E1E4E8">clr strict </span><span style="color:#F97583">security</span></span>
+<span class="line"><span style="color:#F97583">SAFE</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

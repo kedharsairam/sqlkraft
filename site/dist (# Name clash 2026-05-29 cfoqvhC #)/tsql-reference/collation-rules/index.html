@@ -1,0 +1,240 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Collation rules — T-SQL Reference — SqlKraft</title><meta name="description" content="Indicates that the value of an expression is the result of an operation between two strings"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-s2stm25t] .sep[data-astro-cid-s2stm25t]{color:var(--border-glass)}.detail-header[data-astro-cid-s2stm25t]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-s2stm25t]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-s2stm25t]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-s2stm25t]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-s2stm25t]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.syntax-block[data-astro-cid-s2stm25t]{margin-bottom:24px;border:1px solid var(--border-glass);border-radius:8px;overflow:hidden}.syntax-label[data-astro-cid-s2stm25t]{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);padding:8px 14px;background:#ffffff08;border-bottom:1px solid var(--border-glass)}.syntax-code[data-astro-cid-s2stm25t]{background:#0d1117;padding:14px;overflow-x:auto;font-family:var(--font-mono);font-size:13px;color:#e6edf3;line-height:1.6;margin:0}.body-content[data-astro-cid-s2stm25t]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-s2stm25t] h2[data-astro-cid-s2stm25t]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-s2stm25t] h3[data-astro-cid-s2stm25t]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-s2stm25t] p[data-astro-cid-s2stm25t]{margin-bottom:14px}.body-content[data-astro-cid-s2stm25t] ul[data-astro-cid-s2stm25t],.body-content[data-astro-cid-s2stm25t] ol[data-astro-cid-s2stm25t]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-s2stm25t] li[data-astro-cid-s2stm25t]{margin-bottom:6px}.body-content[data-astro-cid-s2stm25t] pre[data-astro-cid-s2stm25t]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-s2stm25t] code[data-astro-cid-s2stm25t]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-s2stm25t] [data-astro-cid-s2stm25t]:not(pre)>code[data-astro-cid-s2stm25t]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-s2stm25t] table[data-astro-cid-s2stm25t]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-s2stm25t] th[data-astro-cid-s2stm25t]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-s2stm25t] td[data-astro-cid-s2stm25t]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-s2stm25t]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-s2stm25t] a[data-astro-cid-s2stm25t]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-s2stm25t> <a href="/sqlkraft/" data-astro-cid-s2stm25t>&larr; Home</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>T-SQL Reference</a> <span class="sep" data-astro-cid-s2stm25t>/</span> <span data-astro-cid-s2stm25t>Collation rules</span> </nav> <div class="detail-header" data-astro-cid-s2stm25t> <h1 class="detail-title" data-astro-cid-s2stm25t>Collation rules</h1> <span class="cat-badge" data-astro-cid-s2stm25t>statements</span> </div> <div class="tag-strip" data-astro-cid-s2stm25t> <span class="tag-pill" data-astro-cid-s2stm25t>#tsql</span><span class="tag-pill" data-astro-cid-s2stm25t>#statements</span> </div> <div class="body-content" data-astro-cid-s2stm25t> <p>Indicates that the value of an expression is the result of an operation between two strings</p>
+<p>that have conflicting collations of the implicit collation label. The expression result is</p>
+<p>defined as not having a collation.</p>
+<p>The collation label of a simple expression that references only one character string object is the</p>
+<p>collation label of the referenced object.</p>
+<p>The collation label of a complex expression that references two operand expressions with the</p>
+<p>same collation label is the collation label of the operand expressions.</p>
+<p>The collation label of the final result of a complex expression that references two operand</p>
+<p>expressions with different collations is based on the following rules:</p>
+<p>Explicit takes precedence over implicit. Implicit takes precedence over Coercible-default:</p>
+<p>Explicit > Implicit > Coercible-default</p>
+<p>Combining two Explicit expressions that have been assigned different collations generates</p>
+<p>an error:</p>
+<p>Explicit X + Explicit Y = Error</p>
+<p>Combining two Implicit expressions that have different collations yields a result of No-</p>
+<p>collation:</p>
+<p>Implicit X + Implicit Y = No-collation</p>
+<p>Combining an expression with No-collation with an expression of any label, except</p>
+<p>Explicit collation (see the following rule), yields a result that has the No-collation label:</p>
+<p>No-collation + anything = No-collation</p>
+<p>Combining an expression with No-collation with an expression that has an Explicit</p>
+<p>collation, yields an expression with an Explicit label:</p>
+<p>No-collation + Explicit X = Explicit</p>
+<p>The following table summarizes the rules.</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<h4 id="operand-coercion">Operand coercion</h4>
+<h4 id="label">label</h4>
+<h4 id="explicit-x">Explicit X</h4>
+<h4 id="implicit-x">Implicit X</h4>
+<h4 id="coercible-default">Coercible-default</h4>
+<h4 id="no-collation">No-collation</h4>
+<h3 id="text">text</h3>
+<h3 id="text-1">text</h3>
+<h3 id="nvarchar">nvarchar</h3>
+<h3 id="varchar">varchar</h3>
+<h3 id="nvarchar-1">nvarchar</h3>
+<p>Generates Error</p>
+<p>Result is Explicit Y</p>
+<p>Result is Explicit Y</p>
+<p>Result is Explicit Y</p>
+<p>Result is Explicit</p>
+<p>X</p>
+<p>Result is No-</p>
+<p>collation</p>
+<p>Result is Implicit Y</p>
+<p>Result is No-</p>
+<p>collation</p>
+<p>Result is Explicit</p>
+<p>X</p>
+<p>Result is Implicit</p>
+<p>X</p>
+<p>Result is Coercible-</p>
+<p>default</p>
+<p>Result is No-</p>
+<p>collation</p>
+<p>Result is Explicit</p>
+<p>X</p>
+<p>Result is No-</p>
+<p>collation</p>
+<p>Result is No-collation</p>
+<p>Result is No-</p>
+<p>collation</p>
+<p>The following additional rules also apply to collation precedence:</p>
+<p>You can’t have multiple</p>
+<p>clauses on an expression that is already an explicit</p>
+<p>expression. For example, the following</p>
+<p>clause isn’t valid because a</p>
+<p>clause</p>
+<p>is specified for an expression that is already an explicit expression:</p>
+<p>Code page conversions for</p>
+<p>data types aren’t allowed. You can’t cast a</p>
+<p>expression</p>
+<p>from one collation to another if they have the different code pages. The assignment</p>
+<p>operator can’t assign values when the collation of the right text operand has a different</p>
+<p>code page than the left text operand.</p>
+<p>Collation precedence is determined after data type conversion. The operand from which the</p>
+<p>resulting collation is taken can be different from the operand that supplies the data type of the</p>
+<p>final result. For example, consider the following batch:</p>
+<p>SQL</p>
+<p>７</p>
+<p>Note</p>
+<p>The</p>
+<p>data type isn’t supported in Fabric Warehouse, but most examples in this</p>
+<p>article are applicable to both</p>
+<p>using UTF-8 and</p>
+<p>, and so remain applicable</p>
+<h2 id="examples-of-collation-rules">Examples of collation rules</h2>
+<h2 id="collation-conflict-and-error">Collation conflict and error</h2>
+<p>The Unicode data type of the simple expression</p>
+<p>has a higher data type precedence.</p>
+<p>Therefore, the resulting expression has the Unicode data type assigned to</p>
+<p>. However,</p>
+<p>the expression</p>
+<p>has a collation label of Implicit, and</p>
+<p>has a lower coercion label</p>
+<p>of Coercible-default. Therefore, the collation that is used is the</p>
+<p>collation of</p>
+<p>.</p>
+<p>The following examples show how the collation rules work. To run the examples, create the</p>
+<p>following test table.</p>
+<p>SQL</p>
+<p>The predicate in the following query has collation conflict and generates an error.</p>
+<p>SQL</p>
+<p>Here’s the result set.</p>
+<p>Output</p>
+<p>to Fabric Warehouse unless otherwise noted.</p>
+<h2 id="explicit-label-vs-implicit-label">Explicit label vs. Implicit label</h2>
+<h2 id="no-collation-labels">No-collation labels</h2>
+<h3 id="nvarchar-2">nvarchar</h3>
+<h3 id="varchar-1">varchar</h3>
+<p>The predicate in the following query is evaluated in collation</p>
+<p>because the right</p>
+<p>expression has the Explicit label. This takes precedence over the Implicit label of the left</p>
+<p>expression.</p>
+<p>SQL</p>
+<p>Here’s the result set.</p>
+<p>Output</p>
+<p>The</p>
+<p>expressions in the following queries have a No-collation label; therefore, they can’t</p>
+<p>appear in the select list or be operated on by collation-sensitive operators. However, the</p>
+<p>expressions can be operated on by collation-insensitive operators.</p>
+<p>SQL</p>
+<p>Here’s the result set.</p>
+<p>Output</p>
+<p>７</p>
+<p>Note</p>
+<p>Because of the difference between the behavior of</p>
+<p>and</p>
+<p>in a UTF-8</p>
+<p>collation, this example doesn’t apply in Fabric Warehouse.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">No-</span></span>
+<span class="line"><span style="color:#E1E4E8">collation</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">Explicit</span><span style="color:#E1E4E8"> Y</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Implicit Y</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Coercible</span><span style="color:#F97583">-default</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">No-</span><span style="color:#E1E4E8">collation</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">COLLATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHERE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">COLLATE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">WHERE</span><span style="color:#E1E4E8"> ColumnA </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> ( </span><span style="color:#9ECBFF">'abc'</span><span style="color:#F97583"> COLLATE</span><span style="color:#E1E4E8"> French_CI_AS) </span><span style="color:#F97583">COLLATE</span><span style="color:#E1E4E8"> French_CS_AS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">TestTab</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">PrimaryKey</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#F97583">PRIMARY</span></span>
+<span class="line"><span style="color:#F97583">KEY</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">CharCol</span></span>
+<span class="line"><span style="color:#F97583">CHAR</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">10</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">COLLATE</span></span>
+<span class="line"><span style="color:#E1E4E8">French_CI_AS</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">TestTab</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">CharCol</span></span>
+<span class="line"><span style="color:#F97583">LIKE</span></span>
+<span class="line"><span style="color:#E1E4E8">N</span></span>
+<span class="line"><span style="color:#9ECBFF">'abc'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#9ECBFF">N'abc'</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#9ECBFF">N'abc'</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CharCol</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#9ECBFF">N'abc'</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">French_CI_AS</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">CharCol</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">USE</span></span>
+<span class="line"><span style="color:#E1E4E8">tempdb;</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span>
+<span class="line"><span style="color:#F97583">CREATE</span></span>
+<span class="line"><span style="color:#F97583">TABLE</span></span>
+<span class="line"><span style="color:#E1E4E8">TestTab</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#E1E4E8">id</span></span>
+<span class="line"><span style="color:#F97583">INT</span></span>
+<span class="line"><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">GreekCol</span></span>
+<span class="line"><span style="color:#F97583">NVARCHAR</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">10</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">COLLATE</span></span>
+<span class="line"><span style="color:#E1E4E8">greek_ci_as,</span></span>
+<span class="line"><span style="color:#E1E4E8">LatinCol</span></span>
+<span class="line"><span style="color:#F97583">NVARCHAR</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">10</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">COLLATE</span></span>
+<span class="line"><span style="color:#E1E4E8">latin1_general_cs_as</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">INSERT</span></span>
+<span class="line"><span style="color:#E1E4E8">TestTab</span></span>
+<span class="line"><span style="color:#F97583">VALUES</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">1</span><span style="color:#E1E4E8">, N</span></span>
+<span class="line"><span style="color:#9ECBFF">'A'</span></span>
+<span class="line"><span style="color:#E1E4E8">, N</span></span>
+<span class="line"><span style="color:#9ECBFF">'a'</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#F97583">GO</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">TestTab</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">GreekCol </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> LatinCol;</span></span>
+<span class="line"><span style="color:#E1E4E8">Msg </span><span style="color:#79B8FF">448</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">Level</span><span style="color:#79B8FF"> 16</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">State</span><span style="color:#79B8FF"> 9</span><span style="color:#E1E4E8">, </span><span style="color:#F97583">Line</span><span style="color:#79B8FF"> 2</span></span>
+<span class="line"><span style="color:#E1E4E8">Cannot resolve collation conflict </span><span style="color:#F97583">between</span><span style="color:#9ECBFF"> 'Latin1_General_CS_AS'</span><span style="color:#F97583"> and</span><span style="color:#9ECBFF"> 'Greek_CI_AS'</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">greek_ci_as</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">CASE</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">in</span><span style="color:#E1E4E8"> equal </span><span style="color:#F97583">to</span><span style="color:#E1E4E8"> operation.</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#F97583">*</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">TestTab</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">GreekCol </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> LatinCol</span></span>
+<span class="line"><span style="color:#F97583">COLLATE</span></span>
+<span class="line"><span style="color:#E1E4E8">greek_ci_as;</span></span>
+<span class="line"><span style="color:#E1E4E8">id          GreekCol             LatinCol</span></span>
+<span class="line"><span style="color:#6A737D">----------- -------------------- --------------------</span></span>
+<span class="line"><span style="color:#79B8FF">1</span><span style="color:#E1E4E8"> A                    a</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span></span>
+<span class="line"><span style="color:#F97583">CASE</span></span>
+<span class="line"><span style="color:#F97583">WHEN</span></span>
+<span class="line"><span style="color:#E1E4E8">id</span></span>
+<span class="line"><span style="color:#F97583">></span><span style="color:#79B8FF"> 10</span></span>
+<span class="line"><span style="color:#F97583">THEN</span></span>
+<span class="line"><span style="color:#E1E4E8">GreekCol</span></span>
+<span class="line"><span style="color:#F97583">ELSE</span></span>
+<span class="line"><span style="color:#E1E4E8">LatinCol</span></span>
+<span class="line"><span style="color:#F97583">END</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#E1E4E8">TestTab;</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-s2stm25t> <a href="/sqlkraft/tsql-reference/" data-astro-cid-s2stm25t>&larr; Back to T-SQL Reference</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

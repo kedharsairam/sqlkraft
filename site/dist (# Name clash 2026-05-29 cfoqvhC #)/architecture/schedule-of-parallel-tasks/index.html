@@ -1,0 +1,248 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Schedule of parallel tasks — Architecture Guide — SqlKraft</title><meta name="description" content="### AdventureWorks2016_EXT sample"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Schedule of parallel tasks</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>thread task</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#thread-task</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Schedule of parallel tasks</h1> <p class="doc-lede" data-astro-cid-hditk3lm>### AdventureWorks2016_EXT sample</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <h3 id="adventureworks2016_ext-sample">AdventureWorks2016_EXT sample</h3>
+<h3 id="database">database</h3>
+<p>In this scenario and up to SQL Server 2014 (12.x), Worker 1 is allowed to basically monopolize</p>
+<p>the scheduler by having more overall quantum time.</p>
+<p>Starting with SQL Server 2016 (13.x), cooperative scheduling includes Large Deficit First (LDF)</p>
+<p>scheduling. With LDF scheduling, quantum usage patterns are monitored and one worker</p>
+<p>thread doesn’t monopolize a scheduler. In the same scenario, Worker 2 is allowed to consume</p>
+<p>repeated quantum’s before Worker 1 is allowed more quantum, therefore preventing Worker 1</p>
+<p>from monopolizing the scheduler in an unfriendly pattern.</p>
+<p>Imagine a SQL Server configured with MaxDOP 8, and CPU Affinity is configured for 24 CPUs</p>
+<p>(schedulers) across NUMA nodes 0 and 1. Schedulers 0 through 11 belong to NUMA node 0,</p>
+<p>schedulers 12 through 23 belong to NUMA node 1. An application sends the following query</p>
+<p>(request) to the Database Engine:</p>
+<p>SQL</p>
+<p>The execution plan shows a</p>
+<p>Hash Join</p>
+<p>between two tables, and each of the operators executed</p>
+<p>in parallel, as indicated by the yellow circle with two arrows. Each Parallelism operator is a</p>
+<p>different branch in the plan. Therefore, there are three branches in the following execution</p>
+<p>plan.</p>
+<p></p>
+<p>Tip</p>
+<p>The example query can be executed using the</p>
+<p>database. The tables</p>
+<p>and</p>
+<p>were</p>
+<p>enlarged 50 times and renamed to</p>
+<p>and</p>
+<p>.</p>
+<h3 id="showplan-logical-and-physical-operators">Showplan Logical and Physical Operators</h3>
+<h3 id="reference">Reference</h3>
+<p>While there are three branches in the execution plan, at any point during execution only two</p>
+<p>branches can execute concurrently in this execution plan:</p>
+<ol>
+<li>The branch where a</li>
+</ol>
+<p>Clustered Index Scan</p>
+<p>is used on the</p>
+<p>(build input of the join) executes alone.</p>
+<ol start="2">
+<li>Then, the branch where a</li>
+</ol>
+<p>Clustered Index Scan</p>
+<p>is used on the</p>
+<p>(probe input of the join) executes concurrently with the branch where the</p>
+<p>Bitmap</p>
+<p>was</p>
+<p>created and currently the</p>
+<p>Hash Match</p>
+<p>is executing.</p>
+<p>The Showplan XML shows that 16 worker threads were reserved and used on NUMA node 0:</p>
+<p>XML</p>
+<p>Thread reservation ensures the Database Engine has enough worker threads to carry out all the</p>
+<p>tasks that are needed for the request. Threads can be reserved across several NUMA nodes, or</p>
+<p>be reserved in just one NUMA node. Thread reservation is done at runtime before execution</p>
+<p>starts, and is dependent on scheduler load. The number of reserved worker threads is</p>
+<p>generically derived from the formula</p>
+<p>and excludes the</p>
+<p>parent worker thread. Each branch is limited to a number of worker threads that’s equal to</p>
+<p>MaxDOP. In this example there are two concurrent branches and MaxDOP is set to 8, therefore</p>
+<p>.</p>
+<p>７</p>
+<p>Note</p>
+<p>If you think of an execution plan as a tree, a</p>
+<p>branch</p>
+<p>is an area of the plan that groups one</p>
+<p>or more operators between Parallelism operators, also called Exchange Iterators. For more</p>
+<p>information about plan operators, see</p>
+<p>.</p>
+<p>For reference, observe the live execution plan from</p>
+<p>Live Query Statistics</p>
+<p>, where one branch has</p>
+<p>completed and two branches are executing concurrently.</p>
+<p>The SQL Server Database Engine assigns a worker thread to execute an active task (1:1), which</p>
+<p>can be observed during query execution by querying the</p>
+<p>sys.dm_os_tasks</p>
+<p>DMV, as seen in the</p>
+<p>following example:</p>
+<p>SQL</p>
+<p>Here’s the result set. Notice there are 17 active tasks for the branches that are currently</p>
+<p>executing: 16 child tasks corresponding to the reserved threads, plus the parent task, or</p>
+<p>coordinating task.</p>
+<p>NULL</p>
+<p>SUSPENDED</p>
+<p>3</p>
+<p>0x000001EFE6CB6160</p>
+<p></p>
+<p>Tip</p>
+<p>The column</p>
+<p>is always NULL for the parent task.</p>
+<p></p>
+<p>Tip</p>
+<p>On a very busy SQL Server Database Engine, it’s possible to see a number of active tasks</p>
+<p>that’s over the limit set by reserved threads. These tasks can belong to a branch that is not</p>
+<p>being used anymore and are in a transient state, waiting for cleanup.</p>
+<p>ﾉ</p>
+<p>Expand table</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EFE43F3468</p>
+<p>SUSPENDED</p>
+<p>0</p>
+<p>0x000001EF6DB70160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EEB243A4E8</p>
+<p>SUSPENDED</p>
+<p>0</p>
+<p>0x000001EF6DB7A160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EC86251468</p>
+<p>SUSPENDED</p>
+<p>5</p>
+<p>0x000001EEC05E8160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EFE3023468</p>
+<p>SUSPENDED</p>
+<p>5</p>
+<p>0x000001EF6B46A160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EFE3AF1468</p>
+<p>SUSPENDED</p>
+<p>6</p>
+<p>0x000001EF6BD38160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EFE4AFCCA8</p>
+<p>SUSPENDED</p>
+<p>6</p>
+<p>0x000001EF6ACB4160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EFDE043848</p>
+<p>SUSPENDED</p>
+<p>7</p>
+<p>0x000001EEA18C2160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EF69038108</p>
+<p>SUSPENDED</p>
+<p>7</p>
+<p>0x000001EF6AEBA160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EFCFDD8CA8</p>
+<p>SUSPENDED</p>
+<p>8</p>
+<p>0x000001EFCB6F0160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EFCFDD88C8</p>
+<p>SUSPENDED</p>
+<p>8</p>
+<p>0x000001EF6DC46160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EFBCC54108</p>
+<p>SUSPENDED</p>
+<p>9</p>
+<p>0x000001EFCB886160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EC86279468</p>
+<p>SUSPENDED</p>
+<p>9</p>
+<p>0x000001EF6DE08160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EFDE901848</p>
+<p>SUSPENDED</p>
+<p>10</p>
+<p>0x000001EFF56E0160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EF6DB32108</p>
+<p>SUSPENDED</p>
+<p>10</p>
+<p>0x000001EFCC3D0160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EC8628D468</p>
+<p>SUSPENDED</p>
+<p>11</p>
+<p>0x000001EFBFA4A160</p>
+<p>0x000001EF4758ACA8</p>
+<p>0x000001EFBD3A1C28</p>
+<p>SUSPENDED</p>
+<p>11</p>
+<p>0x000001EF6BD72160</p>
+<p>Observe that each of the 16 child tasks has a different worker thread assigned (seen in the</p>
+<p>column), but all the workers are assigned to the same pool of eight schedulers</p>
+<p>(0,5,6,7,8,9,10,11), and that the parent task is assigned to a scheduler outside this pool (3).</p>
+<p>）</p>
+<p>Important</p>
+<p>Once the first set of parallel tasks on a given branch is scheduled, the Database Engine will</p>
+<p>use that same pool of schedulers for any additional tasks on other branches. This means</p>
+<p>the same set of schedulers will be used for all the parallel tasks in the entire execution</p>
+<p>plan, only limited by MaxDOP.</p>
+<p>The SQL Server Database Engine will always try to assign schedulers from the same NUMA</p>
+<p>node for task execution, and assign them sequentially (in round-robin fashion) if</p>
+<h3 id="sysdm_os_waiting_tasks">sys.dm_os_waiting_tasks</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#79B8FF">h</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderID</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">h</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">OrderDate</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">h</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">DueDate</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">h</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">ShipDate</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeaderBulk</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">h</span></span>
+<span class="line"><span style="color:#E1E4E8">INNER</span></span>
+<span class="line"><span style="color:#F97583">JOIN</span></span>
+<span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderDetailBulk</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#E1E4E8">d</span></span>
+<span class="line"><span style="color:#F97583">ON</span></span>
+<span class="line"><span style="color:#79B8FF">h</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderID</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> d</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderID</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">(</span><span style="color:#79B8FF">h</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">OrderDate</span><span style="color:#F97583"> >=</span></span>
+<span class="line"><span style="color:#9ECBFF">'2014-3-28 00:00:00'</span></span>
+<span class="line"><span style="color:#E1E4E8">);</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeader</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderDetail</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeaderBulk</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderDetailBulk</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderHeaderBulk</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">Sales</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">SalesOrderDetailBulk</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">concurrent branches </span><span style="color:#F97583">*</span><span style="color:#E1E4E8"> runtime DOP</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">2</span><span style="color:#F97583"> *</span><span style="color:#79B8FF"> 8</span><span style="color:#F97583"> =</span><span style="color:#79B8FF"> 16</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">ThreadStat</span></span>
+<span class="line"><span style="color:#E1E4E8">Branches</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"2"</span></span>
+<span class="line"><span style="color:#E1E4E8">UsedThreads</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"16"</span></span>
+<span class="line"><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#F97583">&#x3C;</span><span style="color:#E1E4E8">ThreadReservation</span></span>
+<span class="line"><span style="color:#E1E4E8">NodeId</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"0"</span></span>
+<span class="line"><span style="color:#E1E4E8">ReservedThreads</span></span>
+<span class="line"><span style="color:#F97583">=</span></span>
+<span class="line"><span style="color:#9ECBFF">"16"</span></span>
+<span class="line"><span style="color:#F97583">/></span></span>
+<span class="line"><span style="color:#F97583">&#x3C;/</span><span style="color:#E1E4E8">ThreadStat</span><span style="color:#F97583">></span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">0x000001EF4758ACA8</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">parent_task_address, task_address,</span></span>
+<span class="line"><span style="color:#E1E4E8">task_state, scheduler_id, worker_address</span></span>
+<span class="line"><span style="color:#F97583">FROM</span></span>
+<span class="line"><span style="color:#79B8FF">sys</span><span style="color:#E1E4E8">.</span><span style="color:#79B8FF">dm_os_tasks</span></span>
+<span class="line"><span style="color:#F97583">WHERE</span></span>
+<span class="line"><span style="color:#E1E4E8">session_id </span><span style="color:#F97583">=</span><span style="color:#F97583"> &#x3C;</span><span style="color:#E1E4E8">insert_session_id</span><span style="color:#F97583">></span></span>
+<span class="line"><span style="color:#E1E4E8">ORDER</span></span>
+<span class="line"><span style="color:#F97583">BY</span></span>
+<span class="line"><span style="color:#E1E4E8">parent_task_address, scheduler_id;</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">parent_task_address</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">worker_address</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 

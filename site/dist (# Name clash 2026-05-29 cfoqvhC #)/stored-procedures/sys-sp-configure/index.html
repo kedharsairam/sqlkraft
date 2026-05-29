@@ -1,0 +1,222 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sys.sp_configure — System Stored Procedure — SqlKraft</title><meta name="description" content="Summarize this article for me Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Returns information about the current SET options. Transact-SQL syntax conventions The options can come from use of the command or from the value. Session values configured with the command override the Many tools, such as Management Studio, automatically configure set options. Each user ha"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<style>.breadcrumb[data-astro-cid-jslvljwt]{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--text-secondary);margin-bottom:24px}.breadcrumb[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]{color:var(--accent);text-decoration:none}.breadcrumb[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]:hover{text-decoration:underline}.breadcrumb[data-astro-cid-jslvljwt] .sep[data-astro-cid-jslvljwt]{color:var(--border-glass)}.detail-header[data-astro-cid-jslvljwt]{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap}.detail-title[data-astro-cid-jslvljwt]{font-size:24px;font-weight:700;font-family:var(--font-mono);color:var(--accent)}.cat-badge[data-astro-cid-jslvljwt]{font-size:11px;font-weight:500;background:#2f80ed1f;color:var(--accent);padding:3px 10px;border-radius:4px;text-transform:capitalize}.tag-strip[data-astro-cid-jslvljwt]{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:20px}.tag-pill[data-astro-cid-jslvljwt]{font-size:12px;color:var(--text-secondary);background:#ffffff0f;padding:3px 10px;border-radius:4px;font-family:var(--font-mono)}.body-content[data-astro-cid-jslvljwt]{line-height:1.8;font-size:14px;color:var(--text-secondary)}.body-content[data-astro-cid-jslvljwt] h2[data-astro-cid-jslvljwt]{font-size:20px;color:var(--text-primary);margin:32px 0 12px;font-weight:600}.body-content[data-astro-cid-jslvljwt] h3[data-astro-cid-jslvljwt]{font-size:16px;color:var(--text-primary);margin:24px 0 10px;font-weight:600}.body-content[data-astro-cid-jslvljwt] p[data-astro-cid-jslvljwt]{margin-bottom:14px}.body-content[data-astro-cid-jslvljwt] ul[data-astro-cid-jslvljwt],.body-content[data-astro-cid-jslvljwt] ol[data-astro-cid-jslvljwt]{margin-bottom:14px;padding-left:20px}.body-content[data-astro-cid-jslvljwt] li[data-astro-cid-jslvljwt]{margin-bottom:6px}.body-content[data-astro-cid-jslvljwt] pre[data-astro-cid-jslvljwt]{background:#0d1117;padding:16px;border-radius:8px;overflow-x:auto;margin-bottom:16px}.body-content[data-astro-cid-jslvljwt] code[data-astro-cid-jslvljwt]{font-family:var(--font-mono);font-size:13px;color:#e6edf3}.body-content[data-astro-cid-jslvljwt] [data-astro-cid-jslvljwt]:not(pre)>code[data-astro-cid-jslvljwt]{color:var(--accent);background:#2f80ed1a;padding:1px 6px;border-radius:3px}.body-content[data-astro-cid-jslvljwt] table[data-astro-cid-jslvljwt]{width:100%;border-collapse:collapse;margin-bottom:16px;font-size:13px}.body-content[data-astro-cid-jslvljwt] th[data-astro-cid-jslvljwt]{text-align:left;padding:8px 12px;border-bottom:2px solid var(--border-glass);color:var(--text-primary);font-weight:600}.body-content[data-astro-cid-jslvljwt] td[data-astro-cid-jslvljwt]{padding:8px 12px;border-bottom:1px solid var(--border-glass)}.detail-footer[data-astro-cid-jslvljwt]{margin-top:40px;padding-top:16px;border-top:1px solid var(--border-glass);font-size:13px}.detail-footer[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]{color:var(--accent);text-decoration:none}.detail-footer[data-astro-cid-jslvljwt] a[data-astro-cid-jslvljwt]:hover{text-decoration:underline}
+</style></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-jslvljwt> <a href="/sqlkraft/" data-astro-cid-jslvljwt>&larr; Home</a> <span class="sep" data-astro-cid-jslvljwt>/</span> <a href="/sqlkraft/stored-procedures/" data-astro-cid-jslvljwt>Stored Procedures</a> <span class="sep" data-astro-cid-jslvljwt>/</span> <span data-astro-cid-jslvljwt>sys.sp_configure</span> </nav> <div class="detail-header" data-astro-cid-jslvljwt> <h1 class="detail-title" data-astro-cid-jslvljwt>sys.sp_configure</h1> <span class="cat-badge" data-astro-cid-jslvljwt>general</span> </div> <div class="tag-strip" data-astro-cid-jslvljwt> <span class="tag-pill" data-astro-cid-jslvljwt>#stored-procedure</span> </div> <div class="body-content" data-astro-cid-jslvljwt> <h2 id="description">Description</h2>
+<p>Summarize this article for me Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Returns information about the current SET options. Transact-SQL syntax conventions The options can come from use of the command or from the value. Session values configured with the command override the Many tools, such as Management Studio, automatically configure set options. Each user has an function that represents the configuration. You can change the language and query-processing options for a specific user session by using can only detect the options that are set to ON or OFF. function returns a bitmap of the options, converted to a base 10 (decimal) integer. The bit settings are stored in the locations described in a table in the article the user options Server Configuration Option sp_configure (Transact-SQL) Azure SQL Managed Instance instead to specify the list of binary values that make up the file. sys.database_files CLR uses Code Access Security (CAS) in the .NET Framework, which is no longer supported as a Azure SQL Database</p>
+<h2 id="syntax">Syntax</h2>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span>
+<span class="line"><span style="color:#E1E4E8">[ [ @configname = ]</span></span>
+<span class="line"><span style="color:#9ECBFF">'configname'</span></span>
+<span class="line"><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ , [ @configvalue = ] configvalue ]</span></span>
+<span class="line"><span style="color:#E1E4E8">[ ; ]</span></span>
+<span class="line"><span style="color:#E1E4E8">sp_configure</span></span>
+<span class="line"><span style="color:#E1E4E8">[ ; ]</span></span></code></pre>
+<h2 id="permissions">Permissions</h2>
+<p>Disabling the setting only prevents direct recursions. To disable indirect recursion also, set the nested triggers server option to 0 by using . If any one of the triggers carries out a , regardless of the nesting level, no more triggers are run. You can nest triggers to a maximum of 32 levels. If a trigger changes a table on which there’s another trigger, the second trigger activates and can then call a third trigger, and so on. If any trigger in the chain sets off an infinite loop, the nesting level is exceeded and the trigger is canceled. When a Transact-SQL trigger launches managed code by referencing a CLR routine, type, or aggregate, this reference counts as one level against the 32-level nesting limit. Methods invoked from within managed code don’t count against this limit. To disable nested triggers, set the nested triggers option of to 0 (off). The default configuration supports nested triggers. If nested triggers are off, recursive triggers are also disabled, despite the setting that’s set by using . The first trigger nested inside an trigger fires even if the server configuration option is 0. But, under this setting, the later triggers don’t fire. Review your applications for nested triggers to determine if the applications follow your business rules when the server configuration option is set to 0. If not, make the appropriate modifications. SQL Server allows for Transact-SQL stored procedures, triggers, functions, and batches to refer to tables that don’t exist at compile time. This ability is called deferred name resolution. To create a DML trigger, it requires permission on the table or view on which the trigger is being created. ７ Note The previous behavior occurs only if the setting is enabled by using . There’s no defined order in which multiple triggers defined for a specific event are run. Each trigger should be self-contained. completion of the transaction. When a subsequent COMMIT TRANSACTION or ROLLBACK TRANSACTION statement is issued for the connection, the controlling instance requests that MS DTC manage the completion of the distributed transaction across the computers involved. After a Transact-SQL distributed transaction has been started, remote stored procedure calls can be made to other instances of SQL Server that have been defined as remote servers. The remote servers are all enlisted in the Transact-SQL distributed transaction, and MS DTC ensures that the transaction is completed against each remote server. REMOTE_PROC_TRANSACTIONS is a connection-level setting that can be used to override the instance-level option. When REMOTE_PROC_TRANSACTIONS is OFF, remote stored procedure calls are not made part of a local transaction. The modifications made by the remote stored procedure are committed or rolled back at the time the stored procedure completes. Subsequent COMMIT TRANSACTION or ROLLBACK TRANSACTION statements issued by the connection that called the remote stored procedure have no effect on the processing done by the procedure. The REMOTE_PROC_TRANSACTIONS option is a compatibility option that affects only remote stored procedure calls made to instances of SQL Server defined as remote servers using . The option does not apply to distributed queries that execute a stored procedure on an instance defined as a linked server using . The setting of SET REMOTE_PROC_TRANSACTIONS is set at execute or run time and not at parse time. Requires membership in the role. BEGIN DISTRIBUTED TRANSACTION (Transact-SQL) SET Statements (Transact-SQL) See Also</p>
+<h2 id="remarks">Remarks</h2>
+<p>Summarize this article for me</p>
+<p>Applies to:</p>
+<p>Azure SQL Database</p>
+<p>Azure SQL Managed Instance</p>
+<p>SQL database in Microsoft Fabric</p>
+<p>Returns information about the current SET options.</p>
+<p>Transact-SQL syntax conventions</p>
+<p>The options can come from use of the</p>
+<p>command or from the</p>
+<p>value. Session values configured with the</p>
+<p>command override the</p>
+<p>Many tools, such as Management Studio, automatically configure set options. Each user has an</p>
+<p>function that represents the configuration.</p>
+<p>You can change the language and query-processing options for a specific user session by using</p>
+<p>can only detect the options that are set to ON or OFF.</p>
+<p>function returns a bitmap of the options, converted to a base 10 (decimal)</p>
+<p>integer. The bit settings are stored in the locations described in a table in the article</p>
+<p>the user options Server Configuration Option</p>
+<p>To decode the</p>
+<p>value, convert the integer returned by</p>
+<p>to binary, and then</p>
+<p>look up the values on the table at</p>
+<p>Configure the user options Server Configuration Option</p>
+<p>example, if</p>
+<p>returns the value</p>
+<p>, use the Windows programmer calculator</p>
+<p>) to convert decimal</p>
+<p>to binary. The result is</p>
+<p>. The rightmost</p>
+<p>characters (binary 1, 2, and 4) are 0, indicating that the first three items in the table are off.</p>
+<p>Consulting the table, you see that those are</p>
+<p>sp_configure (Transact-SQL)</p>
+<p>Configure the user options Server Configuration Option</p>
+<p>Last updated on 02/10/2026</p>
+<p>Applies to:</p>
+<p>Azure SQL Managed Instance</p>
+<p>Updates the currently configured value (the</p>
+<p>column in the</p>
+<p>set) of a configuration option changed with the</p>
+<p>system stored procedure.</p>
+<p>Because some configuration options require a server stop and restart to update the currently</p>
+<p>running value, RECONFIGURE does not always update the currently running value (the</p>
+<p>column in the</p>
+<p>result set) for a changed configuration value.</p>
+<p>Transact-SQL syntax conventions</p>
+<p>RECONFIGURE</p>
+<p>Specifies that if the configuration setting does not require a server stop and restart, the</p>
+<p>currently running value should be updated. RECONFIGURE also checks the new configuration</p>
+<p>values for either values that are not valid (for example, a sort order value that does not exist in</p>
+<p>) or nonrecommended values. With those configuration options not requiring a</p>
+<p>server stop and restart, the currently running value and the currently configured values for the</p>
+<p>configuration option should be the same value after RECONFIGURE is specified.</p>
+<p>WITH OVERRIDE</p>
+<p>Disables the configuration value checking (for values that are not valid or for</p>
+<p>nonrecommended values) for the</p>
+<p>advanced configuration option.</p>
+<p>Almost any configuration option can be reconfigured by using the WITH OVERRIDE option,</p>
+<p>however some fatal errors are still prevented. For example, the</p>
+<p>configuration option cannot be configured with a value greater than the value specified in the</p>
+<p>configuration option.</p>
+<p>instead to specify the list of binary values that make up the file.</p>
+<p>specifies the name</p>
+<p>under which the file should be stored in the instance of SQL Server.</p>
+<p>specified if</p>
+<p>is specified, and is optional if</p>
+<p>client_file_specifier</p>
+<p>is specified. If</p>
+<p>isn’t specified, the file_name part of</p>
+<p>client_file_specifier</p>
+<p>CLR uses Code Access Security (CAS) in the .NET Framework, which is no longer supported as a</p>
+<p>security boundary. A CLR assembly created with</p>
+<p>might be able to</p>
+<p>access external system resources, call unmanaged code, and acquire sysadmin privileges. In</p>
+<p>SQL Server 2017 (14.x) and later versions, the</p>
+<p>clr strict security</p>
+<p>the security of CLR assemblies.</p>
+<p>is enabled by default, and treats</p>
+<p>assemblies as if they were marked</p>
+<p>can be disabled for backward compatibility, but isn’t recommended.</p>
+<p>We recommend that you sign all assemblies by a certificate or asymmetric key, with a</p>
+<p>corresponding login that has been granted</p>
+<p>permission in the</p>
+<p>database. SQL Server administrators can also add assemblies to a list of assemblies, which the</p>
+<p>Database Engine should trust. For more information, see</p>
+<p>sys.sp_add_trusted_assembly</p>
+<p>doesn’t disrupt currently running sessions that are running code in the</p>
+<p>assembly being modified. Current sessions complete execution by using the unaltered bits of</p>
+<p>the assembly.</p>
+<p>clause is specified,</p>
+<p>updates the assembly with respect to the latest</p>
+<p>copies of the modules provided. Because there might be CLR functions, stored procedures,</p>
+<p>triggers, data types, and user-defined aggregate functions in the instance of SQL Server that</p>
+<p>are already defined against the assembly, the</p>
+<p>statement rebinds them to the</p>
+<p>latest implementation of the assembly. To accomplish this rebinding, the methods that map to</p>
+<p>CLR functions, stored procedures, and triggers must still exist in the modified assembly with</p>
+<p>the same signatures. The classes that implement CLR user-defined types and user-defined</p>
+<p>aggregate functions must still satisfy the requirements for being a user-defined type or</p>
+<p>This option isn’t available in a contained database or Azure SQL Database.</p>
+<p>sp_configure</p>
+<p>sp_spaceused</p>
+<p>sys.databases</p>
+<p>sys.database_files</p>
+<p>sys.data_spaces</p>
+<p>sys.filegroups</p>
+<p>sys.master_files</p>
+<p>System Databases</p>
+<p>Last updated on 04/27/2026</p>
+<p>CLR uses Code Access Security (CAS) in the .NET Framework, which is no longer supported as a</p>
+<p>security boundary. A CLR assembly created with</p>
+<p>might be able to</p>
+<p>access external system resources, call unmanaged code, and acquire sysadmin privileges. In</p>
+<p>SQL Server 2017 (14.x) and later versions, the</p>
+<p>clr strict security</p>
+<p>the security of CLR assemblies.</p>
+<p>is enabled by default, and treats</p>
+<p>assemblies as if they were marked</p>
+<p>can be disabled for backward compatibility, but isn’t recommended.</p>
+<p>We recommend that you sign all assemblies by a certificate or asymmetric key, with a</p>
+<p>corresponding login that has been granted</p>
+<p>permission in the</p>
+<p>database. SQL Server administrators can also add assemblies to a list of assemblies, which the</p>
+<p>Database Engine should trust. For more information, see</p>
+<p>sys.sp_add_trusted_assembly</p>
+<p>uploads an assembly that was previously compiled as a .dll file from managed</p>
+<p>code for use inside an instance of SQL Server.</p>
+<p>When enabled, the</p>
+<p>option in the</p>
+<p>statements is ignored at run-time, but the</p>
+<p>options are preserved in metadata.</p>
+<p>Ignoring the option minimizes breaking existing code statements.</p>
+<p>SQL Server doesn’t allow registering different versions of an assembly with the same name,</p>
+<p>culture, and public key.</p>
+<p>When attempting to access the assembly specified in</p>
+<p>, SQL Server</p>
+<p>impersonates the security context of the current Windows login. If</p>
+<p>specifies a network location (UNC path), the impersonation of</p>
+<p>the current login isn’t carried forward to the network location because of delegation</p>
+<p>limitations. In this case, access is made using the security context of the SQL Server service</p>
+<p>account. For more information, see</p>
+<p>Credentials (Database Engine)</p>
+<p>Besides the root assembly specified by</p>
+<p>assembly_name</p>
+<p>, SQL Server tries to upload any</p>
+<p>assemblies that are referenced by the root assembly being uploaded. If a referenced assembly</p>
+<p>is already uploaded to the database because of an earlier</p>
+<p>statement, this</p>
+<p>assembly isn’t uploaded but is available to the root assembly. If a dependent assembly wasn’t</p>
+<p>previously uploaded, but SQL Server can’t locate its manifest file in the source directory,</p>
+<p>returns an error.</p>
+<p>Applies to:</p>
+<p>Azure SQL Database</p>
+<p>Azure SQL Managed Instance</p>
+<p>SQL database in Microsoft Fabric</p>
+<p>Overrides the currently configured</p>
+<p>value for the current connection.</p>
+<p>Transact-SQL syntax conventions</p>
+<p>Is a numeric or integer value specifying the highest estimated cost allowed for a given query to</p>
+<p>run. Values are rounded down to the nearest integer. Negative values are rounded up to 0. The</p>
+<p>query governor disallows execution of any query that has an estimated cost exceeding that</p>
+<p>value. Specifying 0 (the default) for this option turns off the query governor, and all queries of</p>
+<p>any cost are allowed to execute.</p>
+<p>Query cost is an abstract figure determined by the query optimizer based on estimated</p>
+<p>execution requirements such as cpu time, memory, and disk IO and refers to the estimated</p>
+<p>elapsed time, in seconds, that would be required to complete a query on a specific hardware</p>
+<p>configuration. This abstract figure does not equate to the time required to complete a query</p>
+<p>on the running instance, and should instead be treated as a relative measure.</p>
+<p>Using SET QUERY_GOVERNOR_COST_LIMIT applies to the current connection only and lasts the</p>
+<p>duration of the current connection. Use the</p>
+<p>Configure the query governor cost limit Server</p>
+<p>Configuration Option</p>
+<p>to change the server-wide query governor cost</p>
+<p>limit value. For more information about configuring this option, see</p>
+<p>sp_configure</p>
+<p>Configuration Options (SQL Server)</p>
+<h2 id="examples">Examples</h2>
+<h3 id="example-1">Example 1</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">@@</span></span>
+<span class="line"><span style="color:#E1E4E8">MAX</span></span>
+<span class="line"><span style="color:#E1E4E8">_</span></span>
+<span class="line"><span style="color:#E1E4E8">CONNECTIONS</span></span></code></pre>
+<h3 id="example-2">Example 2</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span>
+<span class="line"><span style="color:#E1E4E8">@@MAX_CONNECTIONS</span></span>
+<span class="line"><span style="color:#F97583">AS</span></span>
+<span class="line"><span style="color:#9ECBFF">'Max Connections'</span></span>
+<span class="line"><span style="color:#E1E4E8">;</span></span></code></pre>
+<h3 id="example-3">Example 3</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">Max Connections</span></span>
+<span class="line"><span style="color:#6A737D">---------------</span></span>
+<span class="line"><span style="color:#79B8FF">32767</span></span></code></pre>
+<h3 id="example-4">Example 4</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">@@CURSOR_ROWS</span></span></code></pre>
+<h3 id="example-5">Example 5</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">sp_configure</span></span></code></pre>
+<h3 id="example-6">Example 6</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">0</span></span></code></pre>
+<h3 id="example-7">Example 7</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SELECT</span></span></code></pre>
+<h3 id="example-8">Example 8</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#E1E4E8">@@CURSOR_ROWS</span></span></code></pre>
+<h3 id="example-9">Example 9</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#79B8FF">0</span></span></code></pre>
+<h3 id="example-10">Example 10</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">-</span><span style="color:#79B8FF">1</span></span></code></pre>
+<p><em>(… and 11 more examples)</em></p> </div> <nav class="detail-footer" data-astro-cid-jslvljwt> <a href="/sqlkraft/stored-procedures/" data-astro-cid-jslvljwt>&larr; Back to all stored procedures</a> </nav>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> 

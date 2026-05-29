@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Index basics — Architecture Guide — SqlKraft</title><meta name="description" content="Think about a regular book: at the end of the book, there's an index that helps to quickly locate"><link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="/sqlkraft/_astro/_id_.CVFNYiEy.css">
+<link rel="stylesheet" href="/sqlkraft/_astro/_id_.BE6bVuWf.css"></head> <body> <nav class="nav-bar"> <div class="nav-inner"> <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a> <div class="nav-links"> <a href="/sqlkraft/dmvs/">DMVs</a> <a href="/sqlkraft/wait-statistics/">Waits</a> <a href="/sqlkraft/errors/">Errors</a> <a href="/sqlkraft/catalog-views/">Catalog</a> <a href="/sqlkraft/functions/">Functions</a> <a href="/sqlkraft/stored-procedures/">SPs</a> <a href="/sqlkraft/tsql-reference/">T-SQL</a> <a href="/sqlkraft/architecture/">Arch</a> <a href="/sqlkraft/scripts/">Scripts</a> </div> <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)"> <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"> <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path> </svg> <span class="search-shortcut">Ctrl+K</span> </button> </div> </nav> <main class="app-shell">  <nav class="breadcrumb" data-astro-cid-hditk3lm> <a href="/sqlkraft/" data-astro-cid-hditk3lm>&larr; Home</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>Architecture</a> <span class="sep" data-astro-cid-hditk3lm>/</span> <span data-astro-cid-hditk3lm>Index basics</span> </nav> <div class="detail-layout" data-astro-cid-hditk3lm> <!-- Sidebar TOC --> <aside class="toc-sidebar" data-astro-cid-hditk3lm> <h3 class="toc-title" data-astro-cid-hditk3lm>In this guide</h3> <ul class="toc-list" id="tocList" data-astro-cid-hditk3lm> <li data-astro-cid-hditk3lm>Loading...</li> </ul> <div class="topic-section" data-astro-cid-hditk3lm> <span class="topic-label" data-astro-cid-hditk3lm>Topic</span> <span class="topic-value" data-astro-cid-hditk3lm>index architecture</span> </div> <div class="tag-strip-vertical" data-astro-cid-hditk3lm> <span class="tag-pill" data-astro-cid-hditk3lm>#index-architecture</span><span class="tag-pill" data-astro-cid-hditk3lm>#architecture</span> </div> </aside> <!-- Main content --> <main class="doc-content" data-astro-cid-hditk3lm> <h1 class="doc-title" data-astro-cid-hditk3lm>Index basics</h1> <p class="doc-lede" data-astro-cid-hditk3lm>Think about a regular book: at the end of the book, there&#39;s an index that helps to quickly locate</p> <div class="body-content" id="docBody" data-astro-cid-hditk3lm> <p>Think about a regular book: at the end of the book, there’s an index that helps to quickly locate</p>
+<p>information within the book. The index is a sorted list of keywords and next to each keyword is</p>
+<p>a set of page numbers pointing to the pages where each keyword can be found.</p>
+<p>A rowstore index is similar: it’s an ordered list of values and for each value there are pointers to</p>
+<p>the data</p>
+<p>pages</p>
+<p>where these values are located. The index itself is also stored on pages, referred</p>
+<p>to as</p>
+<p>index pages</p>
+<p>. In a regular book, if the index spans multiple pages and you have to find</p>
+<p>pointers to all the pages that contain the word</p>
+<p>for example, you would have to leaf</p>
+<p>through from the start of the index until you locate the index page that contains the keyword</p>
+<p>. From there, you follow the pointers to all the book pages. This could be optimized further</p>
+<p>if at the very beginning of the index, you create a single page that contains an alphabetical list</p>
+<p>of where each letter can be found. For example: “A through D - page 121”, “E through G - page</p>
+<p>122” and so on. This extra page would eliminate the step of leafing through the index to find</p>
+<p>the starting place. Such a page doesn’t exist in regular books, but it does exist in a rowstore</p>
+<p>index. This single page is referred to as the root page of the index. The root page is the starting</p>
+<p>page of the tree structure used by an index. Following the tree analogy, the end pages that</p>
+<p>contain pointers to the actual data are referred to as “leaf pages” of the tree.</p>
+<p>An index is an on-disk or in-memory structure associated with a table or view that speeds</p>
+<p>retrieval of rows from the table or view. A rowstore index contains keys built from the values in</p>
+<p>one or more columns in the table or view. For rowstore indexes, these keys are stored in a tree</p>
+<p>structure (B+ tree) that enables the Database Engine to find the rows associated with the key</p>
+<p>values quickly and efficiently.</p>
+<p>A rowstore index stores data logically organized as a table with rows and columns, and</p>
+<p>physically stored in a row-wise data format called</p>
+<p>rowstore</p>
+<p>. There’s an alternative way to store</p>
+<p>data column-wise, called</p>
+<p>columnstore</p>
+<p>.</p>
+<p>The design of the right indexes for a database and its workload is a complex balancing act</p>
+<p>between query speed, index update cost, and storage cost. Narrow disk-based rowstore</p>
+<p>indexes, or indexes with few columns in the index key, require less storage space and a smaller</p>
+<p>update overhead. Wide indexes, on the other hand, might improve more queries. You might</p>
+<p>have to experiment with several different designs before finding the most efficient set of</p>
+<p>indexes. As the application evolves, indexes might need to change to maintain optimal</p>
+<p>performance. Indexes can be added, modified, and removed without affecting the database</p>
+<p>schema or application design. Therefore, you shouldn’t hesitate to experiment with different</p>
+<p>indexes.</p>
+<p>The query optimizer in the Database Engine usually chooses the most effective indexes to</p>
+<p>execute a query. To see which indexes the query optimizer uses for a specific query, in SQL</p>
+<p>1</p>
+<h3 id="query">Query</h3>
+<h3 id="display-estimated-execution-plan">Display Estimated Execution Plan</h3>
+<h3 id="include-actual-execution-plan">Include Actual Execution Plan</h3>
+<h3 id="understand-the-characteristics-of-the-database-and-the-application">Understand the characteristics of the database and the application</h3>
+<h3 id="understand-the-characteristics-of-the-most-frequently-used-queries">Understand the characteristics of the most frequently used queries</h3>
+<h3 id="understand-the-data-distribution-in-the-columns-used-in-the-query-predicates">Understand the data distribution in the columns used in the query predicates</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SQL</span></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sql"><code><span class="line"><span style="color:#F97583">SQL</span></span></code></pre> </div> <nav class="detail-footer" data-astro-cid-hditk3lm> <a href="/sqlkraft/architecture/" data-astro-cid-hditk3lm>&larr; Back to architecture</a> </nav> </main> </div>  </main> <div id="search-overlay" class="search-overlay hidden" role="dialog" aria-label="Search" data-astro-cid-sak75ai5> <div class="search-backdrop" data-astro-cid-sak75ai5></div> <div class="search-panel" data-astro-cid-sak75ai5> <div class="search-input-wrap" data-astro-cid-sak75ai5> <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" data-astro-cid-sak75ai5> <circle cx="11" cy="11" r="8" data-astro-cid-sak75ai5></circle><path d="m21 21-4.35-4.35" data-astro-cid-sak75ai5></path> </svg> <input type="text" id="search-input" class="search-input" placeholder="Search DMVs, errors, functions, statements..." autocomplete="off" spellcheck="false" data-astro-cid-sak75ai5> <kbd class="search-hint" data-astro-cid-sak75ai5>ESC</kbd> </div> <div id="search-results" class="search-results" data-astro-cid-sak75ai5> <div class="search-empty" data-astro-cid-sak75ai5>Start typing to search...</div> </div> </div> </div> <script type="module" src="/sqlkraft/_astro/SearchOverlay.astro_astro_type_script_index_0_lang.Bk2bzw7n.js"></script>  <script type="module">document.getElementById("search-btn")?.addEventListener("click",()=>{const t=document.getElementById("search-overlay");if(t){t.classList.remove("hidden");const e=document.getElementById("search-input");e&&(e.value="",e.focus())}});</script> </body></html> <script type="module">document.addEventListener("DOMContentLoaded",()=>{const c=document.getElementById("docBody"),e=document.getElementById("tocList");if(!c||!e)return;const d=c.querySelectorAll("h2, h3");if(d.length===0){e.innerHTML="<li class='toc-empty'>No sections</li>";return}e.innerHTML="",d.forEach((t,l)=>{const i=`section-${l}`;t.id=i;const n=document.createElement("li");n.className=`toc-item toc-level-${t.tagName.toLowerCase()}`;const o=document.createElement("a");o.href=`#${i}`,o.textContent=t.textContent.slice(0,60),n.appendChild(o),e.appendChild(n)})});</script> 
