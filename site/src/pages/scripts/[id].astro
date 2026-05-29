@@ -33,7 +33,14 @@ const { name, title, category, description, tags } = entry.data;
     {tags.map((tag) => <span class="tag-pill">#{tag}</span>)}
   </div>
 
-  <div class="body-content">
+  <div class="body-content" id="body-content">
+    <button class="copy-btn" id="copy-btn" title="Copy SQL to clipboard">
+      <span class="copy-label" id="copy-label">Copy SQL</span>
+      <svg class="copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+        <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1" />
+      </svg>
+    </button>
     <Content />
   </div>
 
@@ -41,6 +48,32 @@ const { name, title, category, description, tags } = entry.data;
     <a href="/sqlkraft/scripts/">&larr; Back to all scripts</a>
   </nav>
 </BaseLayout>
+
+<script>
+  const copyBtn = document.getElementById("copy-btn");
+  const copyLabel = document.getElementById("copy-label");
+  const bodyContent = document.getElementById("body-content");
+
+  copyBtn.addEventListener("click", async () => {
+    const pre = bodyContent.querySelector("pre");
+    if (!pre) return;
+    try {
+      const text = pre.textContent || "";
+      await navigator.clipboard.writeText(text);
+      copyLabel.textContent = "Copied!";
+      copyBtn.classList.add("copied");
+      setTimeout(() => {
+        copyLabel.textContent = "Copy SQL";
+        copyBtn.classList.remove("copied");
+      }, 2000);
+    } catch {
+      copyLabel.textContent = "Copy failed";
+      setTimeout(() => {
+        copyLabel.textContent = "Copy SQL";
+      }, 2000);
+    }
+  });
+</script>
 
 <style>
   .breadcrumb {
@@ -97,11 +130,51 @@ const { name, title, category, description, tags } = entry.data;
     border-radius: 4px;
     font-family: var(--font-mono);
   }
+
+  /* ── Body Content (with copy button) ── */
   .body-content {
+    position: relative;
     line-height: 1.8;
     font-size: 14px;
     color: var(--text-secondary);
   }
+
+  /* Floating Copy Button */
+  .copy-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border: 1px solid var(--border-glass);
+    border-radius: 6px;
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-family: inherit;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.15s;
+  }
+  .copy-btn:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .copy-btn.copied {
+    border-color: #2ea043;
+    color: #2ea043;
+  }
+  .copy-label {
+    white-space: nowrap;
+  }
+  .copy-icon {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+  }
+
   .body-content h2 {
     font-size: 20px;
     color: var(--text-primary);
@@ -131,6 +204,7 @@ const { name, title, category, description, tags } = entry.data;
     border-radius: 8px;
     overflow-x: auto;
     margin-bottom: 16px;
+    margin-top: 32px;
   }
   .body-content code {
     font-family: var(--font-mono);

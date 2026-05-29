@@ -4,6 +4,35 @@ import { getCollection } from "astro:content";
 
 const allScripts = await getCollection("scripts");
 const sorted = allScripts.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+// Unique categories sorted
+const categories = [...new Set(sorted.map((s) => s.data.category))].sort();
+
+// Human-readable category labels
+const CATEGORY_LABELS = {
+  architecture: "Architecture",
+  automation: "Automation",
+  "backup-restore": "Backup & Restore",
+  database: "Database",
+  general: "General",
+  "high-availability": "High Availability",
+  "index-maintenance": "Index Maintenance",
+  installation: "Installation",
+  migration: "Migration",
+  performance: "Performance",
+  replication: "Replication",
+  "security-audit": "Security & Audit",
+  troubleshooting: "Troubleshooting",
+};
+
+// Serialize minimal card data for client-side filtering
+const scriptsData = sorted.map((s) => ({
+  slug: s.slug,
+  name: s.data.name,
+  category: s.data.category,
+  description: (s.data.description || "").slice(0, 150),
+  tags: s.data.tags || [],
+}));
 ---
 
 <BaseLayout
@@ -17,36 +46,140 @@ const sorted = allScripts.sort((a, b) => a.data.name.localeCompare(b.data.name))
   </nav>
 
   <header class="page-header">
-    <h1>TSQL Scripts & Snippets ({sorted.length})</h1>
+    <h1>TSQL Scripts & Snippets <span id="script-count">{sorted.length}</span></h1>
     <p class="page-desc">
       Reusable diagnostic and administrative scripts covering wait statistics analysis, DMV queries,
       index maintenance, blocking chains, memory pressure, and more.
     </p>
   </header>
 
-  <div class="card-grid">
-    {
-      sorted.map((entry) => {
-        const { name, description, category, tags } = entry.data;
-        return (
-          <a href={`/sqlkraft/scripts/${entry.slug}/`} class="item-card" id={entry.slug}>
-            <div class="card-title">{name}</div>
-            <span class="cat-badge">{category}</span>
-            <p class="card-desc">
-              {description ? description.slice(0, 150) : "No description available."}
-            </p>
-            <div class="card-tags">
-              {tags.slice(0, 3).map((tag) => (
-                <span class="card-tag">#{tag}</span>
-              ))}
-              {tags.length > 3 && <span class="card-tag-more">+{tags.length - 3} more</span>}
-            </div>
-          </a>
-        );
-      })
-    }
+  <!-- Search & Filter Bar -->
+  <div class="filter-bar">
+    <div class="search-wrap">
+      <input
+        type="text"
+        id="search-input"
+        class="search-input"
+        placeholder="Search scripts by name, keyword, or category..."
+        autocomplete="off"
+      />
+      <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8" />
+        <path d="M21 21l-4.35-4.35" />
+      </svg>
+    </div>
+    <div class="category-pills" id="category-pills">
+      <button class="pill active" data-category="all">All</button>
+      {categories.map((cat) => (
+        <button class="pill" data-category={cat}>
+          {CATEGORY_LABELS[cat] || cat}
+        </button>
+      ))}
+    </div>
+  </div>
+
+  <!-- Card Grid -->
+  <div class="card-grid" id="card-grid">
+    {scriptsData.map((s) => (
+      <a
+        href={`/sqlkraft/scripts/${s.slug}/`}
+        class="item-card"
+        data-slug={s.slug}
+        data-category={s.category}
+        data-name={s.name.toLowerCase()}
+        data-description={s.description.toLowerCase()}
+        data-tags={(s.tags || []).join(" ").toLowerCase()}
+      >
+        <div class="card-title">{s.name}</div>
+        <span class="cat-badge">{CATEGORY_LABELS[s.category] || s.category}</span>
+        <p class="card-desc">
+          {s.description || "No description available."}
+        </p>
+        <div class="card-tags">
+          {s.tags.slice(0, 4).map((tag) => (
+            <span class="card-tag">#{tag}</span>
+          ))}
+          {s.tags.length > 4 && <span class="card-tag-more">+{s.tags.length - 4} more</span>}
+        </div>
+      </a>
+    ))}
+  </div>
+
+  <!-- Empty state -->
+  <div class="empty-state" id="empty-state" style="display: none;">
+    <p>No scripts match your search criteria.</p>
+    <button class="reset-btn" id="reset-btn">Reset filters</button>
   </div>
 </BaseLayout>
+
+<script>
+  // Category pill toggle + Fuse.js search
+  const searchInput = document.getElementById("search-input");
+  const pills = document.querySelectorAll(".pill");
+  const cards = document.querySelectorAll(".item-card");
+  const countEl = document.getElementById("script-count");
+  const emptyState = document.getElementById("empty-state");
+  const resetBtn = document.getElementById("reset-btn");
+
+  let activeCategory = "all";
+  let searchQuery = "";
+
+  function filterCards() {
+    const q = searchQuery.toLowerCase().trim();
+    let visible = 0;
+
+    cards.forEach((card) => {
+      const cat = card.dataset.category;
+      const catMatch = activeCategory === "all" || cat === activeCategory;
+
+      let textMatch = true;
+      if (q) {
+        const name = card.dataset.name || "";
+        const desc = card.dataset.description || "";
+        const tags = card.dataset.tags || "";
+        const catLower = cat.toLowerCase();
+        textMatch =
+          name.includes(q) ||
+          desc.includes(q) ||
+          tags.includes(q) ||
+          catLower.includes(q);
+      }
+
+      const show = catMatch && textMatch;
+      card.style.display = show ? "" : "none";
+      if (show) visible++;
+    });
+
+    countEl.textContent = visible;
+    emptyState.style.display = visible === 0 ? "" : "none";
+  }
+
+  // Search input with debounce
+  searchInput.addEventListener("input", () => {
+    searchQuery = searchInput.value;
+    filterCards();
+  });
+
+  // Category pills
+  pills.forEach((pill) => {
+    pill.addEventListener("click", () => {
+      pills.forEach((p) => p.classList.remove("active"));
+      pill.classList.add("active");
+      activeCategory = pill.dataset.category;
+      filterCards();
+    });
+  });
+
+  // Reset button
+  resetBtn.addEventListener("click", () => {
+    searchInput.value = "";
+    searchQuery = "";
+    pills.forEach((p) => p.classList.remove("active"));
+    document.querySelector('[data-category="all"]').classList.add("active");
+    activeCategory = "all";
+    filterCards();
+  });
+</script>
 
 <style>
   .breadcrumb {
@@ -68,7 +201,7 @@ const sorted = allScripts.sort((a, b) => a.data.name.localeCompare(b.data.name))
     color: var(--border-glass);
   }
   .page-header {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
   .page-header h1 {
     font-size: 28px;
@@ -82,6 +215,74 @@ const sorted = allScripts.sort((a, b) => a.data.name.localeCompare(b.data.name))
     max-width: 700px;
     line-height: 1.6;
   }
+
+  /* ── Filter Bar ── */
+  .filter-bar {
+    margin-bottom: 20px;
+  }
+  .search-wrap {
+    position: relative;
+    margin-bottom: 12px;
+  }
+  .search-input {
+    width: 100%;
+    padding: 10px 14px 10px 40px;
+    border: 1px solid var(--border-glass);
+    border-radius: 8px;
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+  }
+  .search-input:focus {
+    border-color: var(--accent);
+  }
+  .search-input::placeholder {
+    color: var(--text-secondary);
+    opacity: 0.7;
+  }
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    color: var(--text-secondary);
+    opacity: 0.6;
+  }
+
+  /* ── Category Pills ── */
+  .category-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pill {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 14px;
+    border: 1px solid var(--border-glass);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+  }
+  .pill:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .pill.active {
+    background: rgba(47, 128, 237, 0.15);
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+
+  /* ── Card Grid ── */
   .card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
@@ -149,5 +350,28 @@ const sorted = allScripts.sort((a, b) => a.data.name.localeCompare(b.data.name))
     font-size: 11px;
     color: var(--text-secondary);
     opacity: 0.7;
+  }
+
+  /* ── Empty State ── */
+  .empty-state {
+    text-align: center;
+    padding: 48px 20px;
+    color: var(--text-secondary);
+  }
+  .empty-state p {
+    font-size: 15px;
+    margin-bottom: 12px;
+  }
+  .reset-btn {
+    font-size: 13px;
+    padding: 8px 20px;
+    border: 1px solid var(--border-glass);
+    border-radius: 6px;
+    background: transparent;
+    color: var(--accent);
+    cursor: pointer;
+  }
+  .reset-btn:hover {
+    background: rgba(47, 128, 237, 0.1);
   }
 </style>
