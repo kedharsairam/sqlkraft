@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.10.0] — 2026-05-29
+
+### Removed
+
+- **All user-facing item counts purged from UI** — bracketed `({sorted.length})` counters removed from all 10 collection index page titles and subheadings; `(entries.length)` removed from T-SQL Reference category navigation; `({cat.label})` and `All (N)` pill counters removed from Wait Statistics filter strip; dynamic Script count span `#script-count` and its JS update logic eliminated — counts are now tracked only in `README.md` Repository Scale Matrix
+- **Card description JS truncation eliminated** — `.slice(0, 150)` and `.slice(0, 120)` removed from all 10 collection index page card templates; full description text preserved in DOM with CSS `-webkit-line-clamp: 3` handling visual truncation at word boundaries via clean ellipsis
+
+### Changed
+
+- **Subpage design refactored to premium neutral palette** — bright blue `.card-title` accent colors changed to `var(--text-primary)` across DMVs, Catalog Views, Functions, Stored Procedures, T-SQL Reference, and Scripts pages; category and severity filter pills on Scripts and Wait Statistics pages redesigned with subtle neutral backgrounds and `var(--text-secondary)` border colors, removing all bright blue accent tones
+- **T-SQL Reference category navigation** — `.cat-nav-count` badges removed; hover border color changed from accent to neutral secondary; category heading row counts removed
+- **Card description truncation standardized** — T-SQL Reference card description clamp increased from 2 to 3 lines, matching all other collections; syntax preview slice increased from 100 to 200 characters
+
+### Added
+
+- **Repository Scale Matrix** — added to `README.md` documenting all 10 collections with record counts and descriptions for developer reference only
+
 ## [0.9.1] — 2026-05-29
 
 ### Fixed
