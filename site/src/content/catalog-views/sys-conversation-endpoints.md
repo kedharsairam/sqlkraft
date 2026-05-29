@@ -1,63 +1,12 @@
 ---
 name: 'sys.conversation_endpoints'
 title: 'sys.conversation_endpoints'
-category: 'objects'
-description: 'receive_sequence_frag'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'Each side of a Service Broker conversation is represented by a conversation endpoint. This catalog view contains a row per conversation endpoint in the database. Identifier for this conversation endpoint. Not Identifier for the conversation. This identifier is shared by both participants in the conversation. This together with the is_initiator column is unique within the database. Not NULLABLE. Wh'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---
 
 ## Description
-receive_sequence_frag
 
-Next message fragment number expected in
-
-message receive sequence. Not NULLABLE.
-
-system_sequence
-
-The sequence number of the last system message
-
-for this dialog. Not NULLABLE.
-
-first_out_of_order_sequence
-
-The sequence number of the first message in the
-
-out of order messages for this dialog. Not
-
-NULLABLE.
-
-last_out_of_order_sequence
-
-The sequence number of the last message in the
-
-out of order messages for this dialog. Not
-
-NULLABLE.
-
-last_out_of_order_frag
-
-Sequence number of the last message in the out of
-
-order fragments for this dialog. Not NULLABLE.
-
-is_system
-
-1 if this is a system dialog. Not NULLABLE.
-
-priority
-
-The conversation priority that is assigned to this
-
-conversation endpoint. Not NULLABLE.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
+Each side of a Service Broker conversation is represented by a conversation endpoint. This catalog view contains a row per conversation endpoint in the database. Identifier for this conversation endpoint. Not Identifier for the conversation. This identifier is shared by both participants in the conversation. This together with the is_initiator column is unique within the database. Not NULLABLE. Whether this endpoint is the initiator or the target

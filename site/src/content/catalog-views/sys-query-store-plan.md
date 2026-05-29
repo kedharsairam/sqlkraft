@@ -2,158 +2,56 @@
 name: 'sys.query_store_plan'
 title: 'sys.query_store_plan'
 category: 'query-store'
-description: '## A. Find the reason SQL Server couldn''t force a plan via QDS'
-tags: ["catalog-view", "query-store"]
+description: 'SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Contains information about each execution plan associated with a query. ID of the plan group. Cursor queries typically require multiple (populate and fetch) plans. Populate and fetch plans that are compiled together are in the same group. Version of the engine used to compile the plan Database compatibility level of the dat'
+tags: ["query-store", "catalog-view"]
 pubDate: 2026-05-29
+syntax: '<major>.<minor>.<build>.<revision>'
 ---
 
-## A. Find the reason SQL Server couldn't force a plan via QDS
+## Description
 
-Second, when objects that plan relies on, are no longer available:
+SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Contains information about each execution plan associated with a query. ID of the plan group. Cursor queries typically require multiple (populate and fetch) plans. Populate and fetch plans that are compiled together are in the same group. Version of the engine used to compile the plan Database compatibility level of the database
 
-Database (if database, where plan originated, doesn't exist anymore)
-
-Index (no longer there or disabled)
-
-Finally, problems with the plan itself:
-
-Not legal for query
-
-Query Optimizer exceeded number of allowed operations
-
-Incorrectly formed plan XML
-
-Requires the
-
-permission.
-
-Pay attention to the
-
-and
-
-columns:
-
-SQL
-
-Azure SQL Database and SQL Server 2019 and later build versions support plan forcing for
-
-static and fast forward cursors.
-
-## B. Query to view query plan results in Azure Synapse Analytics
-
-Use the following sample query to find the 100 most recent execution plans in the Query Store
-
-in Azure Synapse Analytics.
-
-SQL
-
-Monitor performance by using the Query Store
-
-sys.database_query_store_options (Transact-SQL)
-
-sys.query_context_settings (Transact-SQL)
-
-sys.query_store_query (Transact-SQL)
-
-sys.query_store_query_text (Transact-SQL)
-
-sys.query_store_runtime_stats (Transact-SQL)
-
-sys.query_store_wait_stats (Transact-SQL)
-
-sys.query_store_runtime_stats_interval (Transact-SQL)
-
-Related content
-
-System catalog views (Transact-SQL)
-
-Query Store stored procedures (Transact-SQL)
-
-Last updated on 11/18/2025
+## Syntax
 
 ```sql
-VIEW DATABASE STATE
+<major>.<minor>.<build>.<revision>
 ```
 
-```sql
-last_force_failure_reason_desc
-```
+## Examples
+
+### Example 1
 
 ```sql
-force_failure_count
+sp_query_store_reset_exec_stats
 ```
+
+### Example 2
 
 ```sql
 SELECT
-TOP 1000
-p.query_id,
-p.plan_id,
-p.last_force_failure_reason_desc,
-p.force_failure_count,
-p.last_compile_start_time,
-p.last_execution_time,
-q.last_bind_duration,
-q.query_parameterization_type_desc,
-q.context_settings_id,
-c.set_options,
-c.STATUS
-FROM
-sys.query_store_plan p
-INNER
-JOIN
-sys.query_store_query q
-ON
-p.query_id = q.query_id
-INNER
-JOIN
-sys.query_context_settings c
-ON
-c.context_settings_id = q.context_settings_id
-LEFT
-JOIN
-sys.query_store_query_text t
-ON
-q.query_text_id = t.query_text_id
-```
-
-```sql
-WHERE
-p.is_forced_plan = 1
-AND
-p.last_force_failure_reason != 0;
-```
-
-```sql
-SELECT
-TOP 100
-plan_id,
-query_id,
-plan_group_id,
-engine_version,
-compatibility_level,
-query_plan_hash,
-query_plan,
-is_online_index_plan,
-is_trivial_plan,
-is_parallel_plan,
-is_forced_plan,
-is_natively_compiled,
-force_failure_count,
-last_force_failure_reason,
-last_force_failure_reason_desc,
-count_compiles,
-initial_compile_start_time,
-last_compile_start_time,
-last_execution_time,
-avg_compile_duration,
-last_compile_duration,
-plan_forcing_type,
-plan_forcing_type_desc
+txt.query_text_id,
+txt.query_sql_text,
+pl.plan_id,
+qry.*
 FROM
 sys.query_store_plan
-ORDER
-BY
-last_execution_time
-DESC
-;
+AS
+pl
+INNER
+JOIN
+sys.query_store_query
+AS
+qry
+ON
+pl.query_id = qry.query_id
+INNER
+JOIN
+sys.query_store_query_text
+AS
+txt
+ON
+qry.query_text_id = txt.query_text_id;
+EXECUTE
+sp_query_store_reset_exec_stats 3;
 ```

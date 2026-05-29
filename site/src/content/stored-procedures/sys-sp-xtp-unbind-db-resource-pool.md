@@ -2,56 +2,18 @@
 name: 'sys.sp_xtp_unbind_db_resource_pool'
 title: 'sys.sp_xtp_unbind_db_resource_pool'
 category: 'general'
-description: 'This system procedure removes an existing binding between a database and a resource pool'
+description: 'This system procedure removes an existing binding between a database and a resource pool for purposes of tracking In-Memory OLTP memory usage. If there''s no pool currently bound to the specified database, success is returned. When the database is unbound, the previously allocated memory for memory-optimized objects stays allocated to the previous resource pool. You need to restart the database to '
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: 'sp_xtp_unbind_db_resource_pool'
 ---
 
-The following code unbinds the database
+## Description
 
-from the In-Memory OLTP resource pool
+This system procedure removes an existing binding between a database and a resource pool for purposes of tracking In-Memory OLTP memory usage. If there's no pool currently bound to the specified database, success is returned. When the database is unbound, the previously allocated memory for memory-optimized objects stays allocated to the previous resource pool. You need to restart the database to free up the allocated memory. Once a database is unbound
 
-it's bound to. If
-
-isn't currently bound to a In-Memory OLTP resource pool, a
-
-message is given. The database must be restarted for the unbinding to take effect.
-
-SQL
-
-The database specified by
-
-@database_name
-
-must have a binding to an In-Memory OLTP
-
-resource pool.
-
-Requires CONTROL SERVER permission.
-
-Bind a Database with Memory-Optimized Tables to a Resource Pool
-
-sys.sp_xtp_bind_db_resource_pool (Transact-SQL)
-
-Related content
+## Syntax
 
 ```sql
-Hekaton_DB
-```
-
-```sql
-Hekaton_DB
-```
-
-```sql
-Msg 41374, Level 16, State 1, Procedure sp_xtp_unbind_db_resource_pool_internal,
-Line 140.
-Database 'Hekaton_DB' does not have a binding to a resource pool.
-```
-
-```sql
-EXECUTE
-sys.sp_xtp_unbind_db_resource_pool N
-'Hekaton_DB'
-;
+sp_xtp_unbind_db_resource_pool
 ```

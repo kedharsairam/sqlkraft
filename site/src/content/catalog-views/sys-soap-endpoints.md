@@ -1,52 +1,29 @@
 ---
 name: 'sys.soap_endpoints'
 title: 'sys.soap_endpoints'
-category: 'objects'
-description: '0 = CHARACTER_SET = SQL option was specified.'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Returns one row for each endpoint in the server that carries a SOAP-type payload. For every row in this view, there''s a corresponding row with the same catalog view that carries the HTTP configuration metadata. For a list'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---
 
 ## Description
-STANDARD
 
-0 = CHARACTER_SET = SQL option was specified.
+This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Returns one row for each endpoint in the server that carries a SOAP-type payload. For every row in this view, there's a corresponding row with the same catalog view that carries the HTTP configuration metadata. For a list of columns that this view inherits, see
 
-1 = CHARACTER_SET = XML option was specified.
+## Code Blocks
 
-0 = SESSION = DISABLE option was specified.
-
-1 = SESSION = ENABLED option was specified.
-
-Value specified in SESSION_TIMEOUT = option.
-
-Kind of authentication allowed on this endpoint.
-
-Maximum allowable size of the SOAP header.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-SQL Server 2022 (16.x) and later versions require VIEW SERVER SECURITY STATE permission on
-
-the server.
-
-Endpoints Catalog Views (Transact-SQL)
-
-Catalog Views (Transact-SQL)
-
-Last updated on 03/03/2026
-
-Related content
 
 ```sql
-WINDOWS
-MIXED
+endpoint_id
+```
+
+
+```sql
+sys.http_endpoints
+```
+
+
+```sql
+https://tempuri.org
 ```

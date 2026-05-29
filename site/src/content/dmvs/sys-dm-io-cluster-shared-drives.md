@@ -1,119 +1,49 @@
 ---
 name: 'sys.dm_io_cluster_shared_drives'
 title: 'sys.dm_io_cluster_shared_drives'
-category: 'execution'
-description: 'The user must have VIEW SERVER STATE permission for the SQL Server instance.'
+category: 'io'
+description: 'Azure SQL Managed Instance Analytics Platform System This view returns the drive name of each of the shared drives if the current server instance is a clustered server. If the current server instance is not a clustered instance it returns an empty The name of the drive (the drive letter) that represents an individual disk taking part in the cluster shared disk array. Column is not nullable. The id'
+tags: ["io", "dmv"]
 pubDate: 2026-05-29
+syntax: 'SELECT * FROM sys.dm_io_cluster_shared_drives;'
 ---
 
-The user must have VIEW SERVER STATE permission for the SQL Server instance.
+## Description
 
-Requires VIEW SERVER PERFORMANCE STATE permission on the server.
+Azure SQL Managed Instance Analytics Platform System This view returns the drive name of each of the shared drives if the current server instance is a clustered server. If the current server instance is not a clustered instance it returns an empty The name of the drive (the drive letter) that represents an individual disk taking part in the cluster shared disk array. Column is not nullable. The identifier for the node that this distribution is on. When clustering is enabled, the failover cluster instance requires data and log files to be on shared disks so that they may be accessed after the instance fails over to another node. Each of the rows in this view represents a single shared disk which is used by this clustered SQL Server instance. Only disks listed by this view can be used to store data or log files for this instance of
 
-The following example uses sys.dm_io_cluster_shared_drives to determine the shared drives on
-
-a clustered server instance:
-
-This is the result set:
-
-DriveName
-
----------
-
-m
-
-n
-
-sys.dm_io_cluster_valid_path_names (Transact-SQL)
-
-sys.dm_os_cluster_nodes (Transact-SQL)
-
-sys.fn_servershareddrives (Transact-SQL)
-
-Dynamic Management Views and Functions (Transact-SQL)
-
-This view will be deprecated in a future release. We recommend that you use
-
-instead.
-
-## sys.dm_pdw_nodes_io_pending_io_requests
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
-
-Analytics Platform System (PDW)
-
-SQL database in Microsoft
-
-Fabric
-
-
-## Returns a row for each pending I/O request in SQL Server.
-Memory address of the IO request. Is not nullable.
-
-Type of pending I/O request. Is not nullable.
-
-Internal use only. Is not nullable.
-
-Indicates whether the I/O request is pending (1) or has
-
-been completed by the operating system (0). An I/O
-
-request can still be pending even when OS has
-
-completed the request, but SQL Server has not yet
-
-performed a context switch in which it would process
-
-the I/O request and remove it from this list. Is not
-
-nullable.
-
-0 = Pending SQL Server
-
-1 = Pending OS
-
-Internal function to call when the I/O request is
-
-completed. Is nullable.
-
-Internal use only. Is nullable.
-
-Scheduler on which this I/O request was issued. The
-
-I/O request will appear on the pending I/O list of the
-
-scheduler. For more information, see
-
-sys.dm_os_schedulers (Transact-SQL)
-
-. Is not nullable.
-
-７
-
-To call this from Azure Synapse Analytics or Analytics Platform System (PDW), use the
-
-name
-
-. This syntax is not supported by
-
-serverless SQL pool in Azure Synapse Analytics.
-
-ﾉ
-
-## Basic
-
-## S0
-
-## S1
-
-## elastic pools
+## Syntax
 
 ```sql
 SELECT * FROM sys.dm_io_cluster_shared_drives;
 ```
+
+## Remarks
+
+Azure SQL Managed Instance
+
+Analytics Platform System
+
+This view returns the drive name of each of the shared drives if the current server instance is a
+
+clustered server. If the current server instance is not a clustered instance it returns an empty
+
+The name of the drive (the drive letter) that represents an individual disk
+
+taking part in the cluster shared disk array. Column is not nullable.
+
+The identifier for the node that this distribution is on.
+
+When clustering is enabled, the failover cluster instance requires data and log files to be on
+
+shared disks so that they may be accessed after the instance fails over to another node. Each of
+
+the rows in this view represents a single shared disk which is used by this clustered SQL Server
+
+instance. Only disks listed by this view can be used to store data or log files for this instance of
+
+SQL Server. The disks listed in this view are those that are in the cluster resource group
+
+associated with the instance.
+
+To call this from Analytics Platform System (PDW), use the name

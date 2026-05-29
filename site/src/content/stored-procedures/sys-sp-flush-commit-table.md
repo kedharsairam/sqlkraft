@@ -2,39 +2,80 @@
 name: 'sys.sp_flush_commit_table'
 title: 'sys.sp_flush_commit_table'
 category: 'general'
-description: 'Flushes the in memory'
+description: 'to disk to help with change tracking cleanup. Transact-SQL syntax conventions Specifies the current change tracking version. The watermark change tracking version for'
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: |
+  sp_flush_commit_table
+  [ @flush_ts = ] flush_ts
+  [ , [ @cleanup_version = ] cleanup_version ]
+  [ ; ]
 ---
 
-Here's the result set.
+## Description
 
-Output
+to disk to help with change tracking cleanup. Transact-SQL syntax conventions Specifies the current change tracking version. The watermark change tracking version for
 
-This procedure must be run in a database that has change tracking enabled.
-
-Only a member of the
-
-server role or
-
-database role can execute this
-
-procedure.
-
-About Change Tracking (SQL Server)
-
-Troubleshoot change tracking auto cleanup issues
-
-Change Tracking Functions (Transact-SQL)
-
-Change Tracking tables (Transact-SQL)
-
-Change Tracking stored procedures (Transact-SQL)
-
-Related content
+## Syntax
 
 ```sql
-Started executing query at Line 1
-(10 rows affected)
-Total execution time: 00:00:00.076
+sp_flush_commit_table
+[ @flush_ts = ] flush_ts
+[ , [ @cleanup_version = ] cleanup_version ]
+[ ; ]
+```
+
+## Examples
+
+### Example 1
+
+```sql
+syscommittab
+```
+
+### Example 2
+
+```sql
+NULL
+```
+
+### Example 3
+
+```sql
+syscommittab
+```
+
+### Example 4
+
+```sql
+NULL
+```
+
+### Example 5
+
+```sql
+0
+```
+
+### Example 6
+
+```sql
+1
+```
+
+### Example 7
+
+```sql
+sp_flush_commit_table
+[ @flush_ts = ] flush_ts
+[ , [ @cleanup_version = ] cleanup_version ]
+[ ; ]
+```
+
+### Example 8
+
+```sql
+EXECUTE
+sys.sp_flush_commit_table 11;
+GO
 ```

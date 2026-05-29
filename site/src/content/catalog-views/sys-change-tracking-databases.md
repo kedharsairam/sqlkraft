@@ -2,9 +2,15 @@
 name: 'sys.change_tracking_databases'
 title: 'sys.change_tracking_databases'
 category: 'databases-files'
-description: ''
-tags: ["catalog-view", "databases-files"]
+description: 'SQL database in Microsoft Fabric Returns one row for each database that has change tracking enabled. ID of the database. This is unique within the instance of SQL Indicates whether change tracking data is automatically cleaned up after the configured retention period: If autocleanup is being used, the retention period specifies how long the change tracking data is kept in the database. Specifies t'
+tags: ["databases-files", "catalog-view"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+## Description
+
+SQL database in Microsoft Fabric Returns one row for each database that has change tracking enabled. ID of the database. This is unique within the instance of SQL Indicates whether change tracking data is automatically cleaned up after the configured retention period: If autocleanup is being used, the retention period specifies how long the change tracking data is kept in the database. Specifies the description of the retention period:
+
+## Permissions
+
+Applies to: SQL Server Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Returns one row for each database that has change tracking enabled. Description database_id ID of the database. This is unique within the instance of SQL Server. is_auto_cleanup_on Indicates whether change tracking data is automatically cleaned up after the configured retention period: 0 = Off 1 = On retention_period If autocleanup is being used, the retention period specifies how long the change tracking data is kept in the database. retention_period_units_desc Specifies the description of the retention period: Minutes Hours Days retention_period_units Unit of time for the retention period: 1 = Minutes 2 = Hours 3 = Days The same permission checks are made for sys.change_tracking_databases as are made for sys.databases. If the caller of sys.change_tracking_databases is not the owner of the database, the minimum permissions that are required to see the corresponding row are ALTER ANY ﾉ Expand table Always On Availability Groups Catalog Views (Transact-SQL) Azure SQL Database Catalog Views Change Tracking Catalog Views - sys.change_tracking_databases CLR Assembly Catalog Views (Transact-SQL) Data Collector Views (Transact-SQL) Data Spaces (Transact-SQL) Database Mail Views (Transact-SQL) Database Mirroring Witness Catalog Views - sys.database_mirroring_witnesses Databases and Files Catalog Views (Transact-SQL) Endpoints Catalog Views (Transact-SQL) Extended Events Catalog Views (Transact-SQL) Extended Properties Catalog Views - sys.extended_properties External Operations Catalog Views (Transact-SQL) FILESTREAM and FileTable Catalog Views (Transact-SQL) Full-Text Search and Semantic Search Catalog Views (Transact-SQL) Linked Servers Catalog Views (Transact-SQL) Messages (for errors) Catalog Views - sys.messages Object Catalog Views (Transact-SQL) Partition Function Catalog Views (Transact-SQL) Policy-Based Management Views (Transact-SQL) Resource Governor Catalog Views (Transact-SQL) Query Store catalog views (Transact-SQL) Scalar Types Catalog Views (Transact-SQL) Schemas Catalog Views - sys.schemas Security Catalog Views (Transact-SQL)

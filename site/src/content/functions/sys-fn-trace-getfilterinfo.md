@@ -2,73 +2,25 @@
 name: 'sys.fn_trace_getfilterinfo'
 title: 'sys.fn_trace_getfilterinfo'
 category: 'system'
-description: 'Returns information about the filters applied to a specified trace.'
-tags: ["function"]
+description: 'Returns information about the filters applied to a specified trace. Transact-SQL syntax conventions Returns the following information. For more information about the columns, see sp_trace_setfilter (Transact-SQL) The ID of the column on which the filter is applied. Specifies whether the AND or OR operator is applied. Specifies the type of comparison made: This feature will be removed in a future v'
+tags: ["system", "function"]
 pubDate: 2026-05-29
+syntax: 'fn_trace_getfilterinfo ( trace_id )'
 ---
 
 ## Description
-0 = Equal
 
-1 = Not equal
+Returns information about the filters applied to a specified trace. Transact-SQL syntax conventions Returns the following information. For more information about the columns, see sp_trace_setfilter (Transact-SQL) The ID of the column on which the filter is applied. Specifies whether the AND or OR operator is applied. Specifies the type of comparison made: This feature will be removed in a future version of SQL Server. Avoid using this feature in
 
-2 = Greater than
+## Syntax
 
-3 = Less than
+```sql
+fn_trace_getfilterinfo ( trace_id )
+```
 
-4 = Greater than or equal
+## Examples
 
-5 = Less than or equal
-
-6 = Like
-
-7 = Not like
-
-sql_variant
-
-Specifies the value on which the filter is applied.
-
-The user sets
-
-trace_id
-
-value to identify, modify, and control the trace. When passed the ID of a
-
-specific trace,
-
-
-## returns information about any filter on that trace. If the
-specified trace does not have a filter, this function returns an empty rowset. When passed an
-
-invalid ID, this function returns an empty rowset. For similar information about traces, see
-
-sys.fn_trace_getinfo (Transact-SQL)
-
-.
-
-Requires ALTER TRACE permission on the server.
-
-The following example returns information about all filters on trace number 2.
-
-See Also
-
-Create a Trace (Transact-SQL)
-
-sp_trace_setfilter (Transact-SQL)
-
-sp_trace_create (Transact-SQL)
-
-sp_trace_generateevent (Transact-SQL)
-
-sp_trace_setevent (Transact-SQL)
-
-sp_trace_setstatus (Transact-SQL)
-
-sys.fn_trace_geteventinfo (Transact-SQL)
-
-sys.fn_trace_getinfo (Transact-SQL)
-
-sys.fn_trace_gettable (Transact-SQL)
+### Example 1
 
 ```sql
 SELECT * FROM fn_trace_getfilterinfo(2) ;

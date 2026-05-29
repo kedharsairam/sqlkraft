@@ -1,54 +1,58 @@
 ---
 name: 'sys.fn_hadr_backup_is_preferred_replica'
 title: 'sys.fn_hadr_backup_is_preferred_replica'
-category: 'system'
-description: 'Used to determine if the current replica is the preferred backup replica.'
-tags: ["function"]
+category: 'backup-restore'
+description: 'Used to determine if the current replica is the preferred backup replica. Transact-SQL syntax conventions The name of the database to be backed up. is type sysname. Returns data type if the database on the current instance is on the preferred replica, For databases that aren''t part of an availability group, this function always returns If the specified database doesn''t exist, the function returns '
+tags: ["backup-restore", "function"]
 pubDate: 2026-05-29
+syntax: |
+  sys.fn_hadr_backup_is_preferred_replica (
+  'dbname'
+  )
 ---
 
-at the same data to determine which job should run, so only one of the scheduled jobs actually
+## Description
 
-proceeds to the backup stage. Sample code could be similar to the following.
+Used to determine if the current replica is the preferred backup replica. Transact-SQL syntax conventions The name of the database to be backed up. is type sysname. Returns data type if the database on the current instance is on the preferred replica, For databases that aren't part of an availability group, this function always returns If the specified database doesn't exist, the function returns a different value based on the version of SQL Server: Starting with SQL Server 2019 , and SQL Server 2022 , the function returns In earlier versions, the function returns Use this function in a backup script to determine if the current database is on the replica that is preferred for backups. You can run a script on every availability replica. Each of these jobs looks
 
-SQL
-
-The following example returns 1 if the current database is the preferred backup replica.
-
-SQL
-
-Configure backups on secondary replicas of an Always On availability group
-
-Always On Availability Groups Functions (Transact-SQL)
-
-What is an Always On availability group?
-
-CREATE AVAILABILITY GROUP (Transact-SQL)
-
-ALTER AVAILABILITY GROUP (Transact-SQL)
-
-Offload supported backups to secondary replicas of an availability group
-
-Always On Availability Groups Catalog Views (Transact-SQL)
-
-Related content
+## Syntax
 
 ```sql
-IF sys.fn_hadr_backup_is_preferred_replica(@dbname) <> 1
-BEGIN
--- If this is not the preferred replica, exit (probably without error).
-SELECT
-'This is not the preferred replica, exiting with success'
-;
-END
--- If this is the preferred replica, continue to do the backup.
-/* actual backup command goes here */
+sys.fn_hadr_backup_is_preferred_replica (
+'dbname'
+)
 ```
 
-```sql
-SELECT
-sys.fn_hadr_backup_is_preferred_replica(
-'TestDB'
-);
-GO
-```
+## Remarks
+
+Applies to:
+
+Used to determine if the current replica is the preferred backup replica.
+
+Transact-SQL syntax conventions
+
+The name of the database to be backed up.
+
+is type sysname.
+
+Returns data type
+
+if the database on the current instance is on the preferred replica,
+
+For databases that aren't part of an availability group, this function always returns
+
+If the specified database doesn't exist, the function returns a different value based on the
+
+version of SQL Server:
+
+Starting with SQL Server 2019
+
+, and SQL Server 2022
+
+, the function returns
+
+In earlier versions, the function returns
+
+Use this function in a backup script to determine if the current database is on the replica that is
+
+preferred for backups. You can run a script on every availability replica. Each of these jobs looks

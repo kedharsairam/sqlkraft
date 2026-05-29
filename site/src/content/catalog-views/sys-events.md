@@ -1,66 +1,85 @@
 ---
 name: 'sys.events'
 title: 'sys.events'
-category: 'objects'
-description: 'Azure SQL Managed Instance'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'The name of a predefined group of Transact-SQL or SQL Trace event types. An event notification can fire after execution of any event that belongs to an event group. For a list of DDL event groups, the Transact-SQL events they cover, and the scope at which they can be DDL Event Groups also acts as a macro, when the statement finishes, by adding the event types it covers to the Specifies the target '
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: 'CREATE EVENT NOTIFICATION'
 ---
 
-Applies to:
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
-
-Contains a row for each event for which a trigger or event notification fires. These events
-
-represent the event types that are specified when the trigger or event notification is created by
-
-using
-
-CREATE TRIGGER
-
-or
-
-CREATE EVENT NOTIFICATION
-
-.
-
-
 ## Description
-ID of the trigger or event notification. This value, together with
 
-, uniquely identifies the row.
+The name of a predefined group of Transact-SQL or SQL Trace event types. An event notification can fire after execution of any event that belongs to an event group. For a list of DDL event groups, the Transact-SQL events they cover, and the scope at which they can be DDL Event Groups also acts as a macro, when the statement finishes, by adding the event types it covers to the Specifies the target service that receives the event instance data. SQL Server opens one or more conversations to the target service for the event notification. This service must honor the same SQL Server Events message type and contract that is used to send the message. The conversations remain open until the event notification is dropped. Certain errors could cause the conversations to close earlier. Ending some or all conversations explicitly might
 
-Event that causes the trigger to fire.
+## Syntax
 
+```sql
+CREATE EVENT NOTIFICATION
+```
 
-## Description of the event that causes the trigger to fire.
-1 = Trigger event.
+## Permissions
 
-0 = Notification event.
+Applies to: SQL Server Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Contains a row per event for which a trigger fires. Description Not applicable Inherits the , , columns from sys.events . Trigger is marked to be the first to fire for this event. Trigger is marked to be the last to fire for this event. Event group on which the trigger is created, or null if not created on an event group. Description of the event group on which the trigger is created, or null if not created on an event group. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration . Catalog Views (Transact-SQL) Object Catalog Views (Transact-SQL) Last updated on 11/18/2025 ７ Note does not apply to event notifications. ﾉ Expand table See Also
 
-Event group on which the trigger or event notification is
+## Remarks
 
-created, or null if not created on an event group.
+The name of a predefined group of Transact-SQL or SQL Trace event types. An event
 
+notification can fire after execution of any event that belongs to an event group. For a list of
 
-## Description of the event group on which the trigger or event
-notification is created, or null if not created on an event group.
+DDL event groups, the Transact-SQL events they cover, and the scope at which they can be
 
-Object Catalog Views (Transact-SQL)
+defined, see
 
-Catalog Views (Transact-SQL)
+DDL Event Groups
 
-Last updated on 11/18/2025
+event_group
 
-ﾉ
+also acts as a macro, when the
 
-Expand table
+statement finishes, by
 
-See Also
+adding the event types it covers to the
+
+catalog view.
+
+Specifies the target service that receives the event instance data. SQL Server opens one or
+
+more conversations to the target service for the event notification. This service must honor the
+
+same SQL Server Events message type and contract that is used to send the message.
+
+The conversations remain open until the event notification is dropped. Certain errors could
+
+cause the conversations to close earlier. Ending some or all conversations explicitly might
+
+prevent the target service from receiving more messages.
+
+Specifies a service broker instance against which
+
+broker_service
+
+is resolved. The value for a
+
+specific service broker can be acquired by querying the
+
+column of the
+
+catalog view. Use
+
+to specify the service broker instance in
+
+the current database.
+
+is a case-insensitive string literal.
+
+Service Broker includes a message type and contract specifically for event notifications.
+
+Therefore, a Service Broker initiating service doesn't have to be created because one already
+
+exists that specifies the following contract name:
+
+The target service that receives event notifications must honor this preexisting contract.
+
+This option isn't available in a contained database.

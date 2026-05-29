@@ -1,37 +1,12 @@
 ---
 name: 'sys.all_sql_modules'
 title: 'sys.all_sql_modules'
-category: 'objects'
-description: '1 = is natively compiled'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'Analytics Platform System (PDW) SQL database in Microsoft Fabric The view returns a row for each natively compiled, scalar user-defined function. For more Scalar User-Defined Functions for In-Memory OLTP ID of the object of the containing object. Is unique within a SQL text that defines this module. Module was created with SET ANSI_NULLS ON. Module was created with SET QUOTED_IDENTIFIER ON. Module'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---
 
 ## Description
-1 = is natively compiled
 
-The default value is 0.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-Catalog Views (Transact-SQL)
-
-Object Catalog Views (Transact-SQL)
-
-sys.sql_modules (Transact-SQL)
-
-sys.system_sql_modules (Transact-SQL)
-
-In-Memory OLTP (In-Memory Optimization)
-
-Last updated on 11/18/2025
-
-See Also
+Analytics Platform System (PDW) SQL database in Microsoft Fabric The view returns a row for each natively compiled, scalar user-defined function. For more Scalar User-Defined Functions for In-Memory OLTP ID of the object of the containing object. Is unique within a SQL text that defines this module. Module was created with SET ANSI_NULLS ON. Module was created with SET QUOTED_IDENTIFIER ON. Module was created with the SCHEMABINDING option.

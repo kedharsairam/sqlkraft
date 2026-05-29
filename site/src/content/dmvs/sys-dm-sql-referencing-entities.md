@@ -2,82 +2,105 @@
 name: 'sys.dm_sql_referencing_entities'
 title: 'sys.dm_sql_referencing_entities'
 category: 'execution'
-description: 'Transact-SQL database-level DDL trigger'
+description: 'SQL database in Microsoft Fabric Returns one row for each entity in the current database that references another user-defined entity by name. A dependency between two entities is created when one entity, called the , appears by name in a persisted SQL expression of another entity, called the . For example, if a user-defined type (UDT) is specified as the referenced entity, this function returns ea'
+tags: ["execution", "dmv"]
 pubDate: 2026-05-29
+syntax: |
+  sys.dm_sql_referencing_entities (
+  ' schema_name.referenced_entity_name ' , ' <referenced_class> ' )
+  <referenced_class> ::=
+  {
+  OBJECT
+  | TYPE
+  | XML_SCHEMA_COLLECTION
+  | PARTITION_FUNCTION
+  }
 ---
 
-Transact-SQL database-level DDL trigger
+## Description
 
-Yes
+SQL database in Microsoft Fabric Returns one row for each entity in the current database that references another user-defined entity by name. A dependency between two entities is created when one entity, called the , appears by name in a persisted SQL expression of another entity, called the . For example, if a user-defined type (UDT) is specified as the referenced entity, this function returns each user-defined entity that reference that type by name in its
 
-No
+## Syntax
 
-Transact-SQL server-level DDL trigger
+```sql
+sys.dm_sql_referencing_entities (
+' schema_name.referenced_entity_name ' , ' <referenced_class> ' )
+<referenced_class> ::=
+{
+OBJECT
+| TYPE
+| XML_SCHEMA_COLLECTION
+| PARTITION_FUNCTION
+}
+```
 
-Yes
+## Arguments
 
-No
+Azure SQL Database
 
-Extended stored procedures
 
-No
+Azure SQL Managed Instance
 
-Yes
 
-Queue
+SQL database in Microsoft Fabric
 
-No
 
-Yes
+Returns one row for each entity in the current database that references another user-defined
 
-Synonym
 
-No
+entity by name. A dependency between two entities is created when one entity, called the
 
-Yes
 
-Type (alias and CLR user-defined type)
+referenced entity
 
-No
 
-Yes
+, appears by name in a persisted SQL expression of another entity, called the
 
-XML schema collection
 
-No
+referencing entity
 
-Yes
 
-Partition function
+. For example, if a user-defined type (UDT) is specified as the referenced
 
-No
 
-Yes
+entity, this function returns each user-defined entity that reference that type by name in its
 
-* A table is tracked as a referencing entity only when it references a Transact-SQL module,
 
-user-defined type, or XML schema collection in the definition of a computed column, CHECK
+definition. The function does not return entities in other databases that may reference the
 
-constraint, or DEFAULT constraint.
 
-** Numbered stored procedures with an integer value greater than 1 are not tracked as either a
+specified entity. This function must be executed in the context of the master database to return
 
-referencing or referenced entity.
 
-Requires CONTROL permission on the referenced object. When the referenced entity is a
+a server-level DDL trigger as a referencing entity.
 
-partition function, CONTROL permission on the database is required.
 
-Requires SELECT permission on sys.dm_sql_referencing_entities. By default, SELECT
+You can use this dynamic management function to report on the following types of entities in
 
-permission is granted to public.
 
-Requires no permissions on the referenced object. Partial results can be returned if the
+the current database that reference the specified entity:
 
-user has VIEW DEFINITION on only some of the referencing entities.
 
-Requires VIEW DEFINITION on the object when the referencing entity is an object.
+Schema-bound or non-schema-bound entities
 
-Requires VIEW DEFINITION on the database when the referencing entity is a database-
 
-level DDL trigger.
+Database-level DDL triggers
+
+
+Server-level DDL triggers
+
+
+: SQL Server ( SQL Server 2008 (10.0.x) and later), SQL Database.
+
+
+Transact-SQL syntax conventions
+
+
+sys.dm_sql_referenced_entities (Transact-SQL)
+
+
+sys.dm_sql_referencing_entities (Transact-SQL)
+
+
+Related content

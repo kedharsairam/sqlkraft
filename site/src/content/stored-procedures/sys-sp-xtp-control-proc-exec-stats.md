@@ -2,32 +2,38 @@
 name: 'sys.sp_xtp_control_proc_exec_stats'
 title: 'sys.sp_xtp_control_proc_exec_stats'
 category: 'general'
-description: 'Enables statistics collection for natively compiled stored procedures for the instance.'
+description: 'Enables statistics collection for natively compiled stored procedures for the instance. To enable statistics collection at the query level for natively compiled stored procedures, see sys.sp_xtp_control_query_exec_stats Determines whether procedure-level statistics collection is on ( @new_collection_value is set to zero when SQL Server or the database starts. for success. Nonzero for failure.'
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: |
+  sys.sp_xtp_control_proc_exec_stats
+  [ [ @new_collection_value = ] collection_value ]
+  , [ @old_collection_value = ] old_collection_value
+  OUTPUT
+  [ ; ]
 ---
 
-Requires membership in the fixed
+## Description
 
-role.
+Enables statistics collection for natively compiled stored procedures for the instance. To enable statistics collection at the query level for natively compiled stored procedures, see sys.sp_xtp_control_query_exec_stats Determines whether procedure-level statistics collection is on ( @new_collection_value is set to zero when SQL Server or the database starts. for success. Nonzero for failure.
 
-To set
+## Syntax
 
-@new_collection_value
+```sql
+sys.sp_xtp_control_proc_exec_stats
+[ [ @new_collection_value = ] collection_value ]
+, [ @old_collection_value = ] old_collection_value
+OUTPUT
+[ ; ]
+```
 
-and query for the value of
+## Permissions
 
-@new_collection_value
+06/23/2025 Applies to: SQL Server Enables statistics collection for natively compiled stored procedures for the instance. To enable statistics collection at the query level for natively compiled stored procedures, see sys.sp_xtp_control_query_exec_stats . syntaxsql Determines whether procedure-level statistics collection is on ( ) or off ( ). @new_collection_value is . @new_collection_value is set to zero when SQL Server or the database starts. Returns the current status. @old_collection_value is . for success. Nonzero for failure.
 
-:
+## Examples
 
-SQL
-
-System stored procedures (Transact-SQL)
-
-In-Memory OLTP overview and usage scenarios
-
-Related content
+### Example 1
 
 ```sql
 EXECUTE

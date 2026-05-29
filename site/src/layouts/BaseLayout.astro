@@ -1,4 +1,6 @@
 ---
+import SearchOverlay from "../components/SearchOverlay.astro";
+
 export interface Props {
   title?: string;
   description?: string;
@@ -29,16 +31,46 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
           <a href="/sqlkraft/catalog-views/">Catalog</a>
           <a href="/sqlkraft/functions/">Functions</a>
           <a href="/sqlkraft/stored-procedures/">SPs</a>
+          <a href="/sqlkraft/tsql-reference/">T-SQL</a>
           <a href="/sqlkraft/architecture/">Arch</a>
           <a href="/sqlkraft/scripts/">Scripts</a>
         </div>
+        <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <span class="search-shortcut">Ctrl+K</span>
+        </button>
       </div>
     </nav>
     <main class="app-shell">
       <slot />
     </main>
+    <SearchOverlay />
   </body>
 </html>
+
+<script>
+  // Wire up search button to open the overlay
+  document.getElementById("search-btn")?.addEventListener("click", () => {
+    const overlay = document.getElementById("search-overlay");
+    if (overlay) {
+      overlay.classList.remove("hidden");
+      const input = document.getElementById("search-input");
+      if (input) {
+        input.value = "";
+        input.focus();
+      }
+    }
+  });
+</script>
 
 <style is:global>
   :root {
@@ -103,6 +135,31 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
   }
   .nav-links a:hover {
     color: var(--text-primary);
+  }
+  .nav-search-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-glass);
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-family: inherit;
+    transition:
+      border-color 0.2s,
+      color 0.2s;
+    margin-left: 12px;
+  }
+  .nav-search-btn:hover {
+    border-color: var(--accent);
+    color: var(--text-primary);
+  }
+  .search-shortcut {
+    font-size: 11px;
+    font-family: var(--font-mono);
+    opacity: 0.6;
   }
   .app-shell {
     max-width: var(--max-width);

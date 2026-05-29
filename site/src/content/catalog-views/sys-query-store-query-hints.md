@@ -2,69 +2,25 @@
 name: 'sys.query_store_query_hints'
 title: 'sys.query_store_query_hints'
 category: 'query-store'
-description: '## View Query Store hints'
-tags: ["catalog-view", "query-store"]
+description: 'SQL Server 2022 (16.x) and later versions SQL database in Microsoft Fabric Unique identifier of a query hint. Unique identifier of a query in the Query Store. Determines the scope at which the hint is Error code returned when if applying hints Includes the error description of the error Number of times that the query hint application failed since the query hint was created or last Source of Query '
+tags: ["query-store", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  N'OPTION (...)
+  last_query_hint_failure_reason
 ---
 
-## View Query Store hints
+## Description
 
-SQL Server 2019 (15.x) and previous versions require
+SQL Server 2022 (16.x) and later versions SQL database in Microsoft Fabric Unique identifier of a query hint. Unique identifier of a query in the Query Store. Determines the scope at which the hint is Error code returned when if applying hints Includes the error description of the error Number of times that the query hint application failed since the query hint was created or last Source of Query Store hint: user source is zero
 
-permission on the
-
-server.
-
-SQL Server 2022 (16.x) and later versions require
-
-permission on
-
-the server.
-
-The following example returns existing Query Store hints for
-
-39:
-
-SQL
-
-Query Store hints
-
-sys.sp_query_store_set_hints
-
-sys.sp_query_store_clear_hints
-
-sys.query_store_query (Transact-SQL)
-
-Last updated on 11/18/2025
-
-Related content
+## Syntax
 
 ```sql
-VIEW SERVER STATE
+N'OPTION (...)
+last_query_hint_failure_reason
 ```
 
-```sql
-VIEW SERVER PERFORMANCE STATE
-```
+## Permissions
 
-```sql
-query_id
-```
-
-```sql
-SELECT
-query_hint_id,
-query_id,
-replica_group_id,
-query_hint_text,
-last_query_hint_failure_reason,
-last_query_hint_failure_reason_desc,
-query_hint_failure_count,
-source
-,
-source_desc
-FROM
-sys.query_store_query_hints
-WHERE
-query_id = 39;
-```
+Applies to: SQL Server 2022 (16.x) and later versions Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Returns query hints from Query Store hints . Description Unique identifier of a query hint. Unique identifier of a query in the Query Store. Foreign key to the column in sys.query_store_query . Determines the scope at which the hint is applied, as per the column in sys.query_store_replicas . Hint definition in form of Error code returned when if applying hints failed. Includes the of the error message. Includes the error description of the error message. Number of times that the query hint application failed since the query hint was created or last modified. Source of Query Store hint: user source is zero and system-generated is non-zero. Description of source of Query Store hint. Internal use only. Query Store hints are created by sys.sp_query_store_set_hints and removed by sys.sp_query_store_clear_hints . ﾉ Expand table

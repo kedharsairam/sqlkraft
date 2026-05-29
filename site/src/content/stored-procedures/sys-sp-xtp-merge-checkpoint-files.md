@@ -2,37 +2,27 @@
 name: 'sys.sp_xtp_merge_checkpoint_files'
 title: 'sys.sp_xtp_merge_checkpoint_files'
 category: 'general'
-description: 'Merges all data and delta files in the transaction range specified.'
+description: 'Merges all data and delta files in the transaction range specified. Creating and Managing Storage for Memory-Optimized Objects Transact-SQL syntax conventions The name of the database on which to invoke the merge. database doesn''t have in-memory tables, this procedure returns with user error. If the database is offline, it returns an error. lower bound of transactions for a data file as shown in s'
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: |
+  sys.sp_xtp_merge_checkpoint_files
+  [ @database_name = ] database_name
+  , [ @transaction_lower_bound = ] lower_bound_tid
+  , [ @transaction_upper_bound = ] upper_bound_tid
+  [ ; ]
 ---
 
-error is generated for an invalid transaction ID.
+## Description
 
-The
+Merges all data and delta files in the transaction range specified. Creating and Managing Storage for Memory-Optimized Objects Transact-SQL syntax conventions The name of the database on which to invoke the merge. database doesn't have in-memory tables, this procedure returns with user error. If the database is offline, it returns an error. lower bound of transactions for a data file as shown in sys.dm_db_xtp_checkpoint_files
 
-upper bound of transactions for a data file as shown in
+## Syntax
 
-sys.dm_db_xtp_checkpoint_files
-
-. An error is generated for an invalid transaction ID.
-
-None.
-
-None.
-
-Requires
-
-fixed server role and the
-
-fixed database role.
-
-Merges all data and delta files in the valid range to produce a single data and delta file. This
-
-procedure doesn't honor the merge policy.
-
-System stored procedures (Transact-SQL)
-
-In-Memory OLTP overview and usage scenarios
-
-Related content
+```sql
+sys.sp_xtp_merge_checkpoint_files
+[ @database_name = ] database_name
+, [ @transaction_lower_bound = ] lower_bound_tid
+, [ @transaction_upper_bound = ] upper_bound_tid
+[ ; ]
+```

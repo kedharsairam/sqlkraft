@@ -2,50 +2,25 @@
 name: 'sys.sp_cdc_get_captured_columns'
 title: 'sys.sp_cdc_get_captured_columns'
 category: 'general'
-description: 'Returns change data capture metadata information for the captured source columns tracked'
+description: 'Returns change data capture metadata information for the captured source columns tracked by the specified capture instance. Change data capture isn''t available in every edition of SQL Server. For a list of features that are supported by the editions of SQL Server, see supported features of SQL Server 2022 Transact-SQL syntax conventions The name of the capture instance associated with a source tab'
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: |
+  sys.sp_cdc_get_captured_columns
+  [ @capture_instance = ]
+  'capture_instance'
+  [ ; ]
 ---
 
-Requires membership in the
+## Description
 
-fixed database role. For all other users, requires SELECT
+Returns change data capture metadata information for the captured source columns tracked by the specified capture instance. Change data capture isn't available in every edition of SQL Server. For a list of features that are supported by the editions of SQL Server, see supported features of SQL Server 2022 Transact-SQL syntax conventions The name of the capture instance associated with a source table.
 
-permission on all captured columns in the source table and, if a gating role for the capture
-
-instance was defined, membership in that database role. When the caller doesn't have
-
-permission to view the source data, the function returns Error 22981 (
-
-).
-
-The following example returns information about the captured columns in the
-
-capture instance.
-
-SQL
-
-sys.sp_cdc_help_change_data_capture (Transact-SQL)
-
-Related content
+## Syntax
 
 ```sql
-Object doesn't exist or
-access is denied.
-```
-
-```sql
-HumanResources_Employee
-```
-
-```sql
-USE
-AdventureWorks2022;
-GO
-EXECUTE
-sys.sp_cdc_get_captured_columns @capture_instance =
-N
-'HumanResources_Employee'
-;
-GO
+sys.sp_cdc_get_captured_columns
+[ @capture_instance = ]
+'capture_instance'
+[ ; ]
 ```

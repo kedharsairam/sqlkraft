@@ -1,38 +1,19 @@
 ---
 name: 'sys.sp_generate_database_ledger_digest'
-title: 'sys.sp_generate_database_ledger_digest'
+title: 'sp_generate_database_ledger_digest'
 category: 'general'
-description: 'SQL Server 2022 (16.x)'
+description: 'Generates the ledger digest, which is the hash of the last block in If the last block is open (transactions are grouped to the block but no final block hash has been generated), this stored procedure closes the block and generates the hash. Future transactions will then be assigned to the next block. Transact-SQL syntax conventions The results are returned in a column called containing the followi'
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
+syntax: 'sys.database_ledger_blocks'
 ---
 
-Configuration
+## Description
 
-.
+Generates the ledger digest, which is the hash of the last block in If the last block is open (transactions are grouped to the block but no final block hash has been generated), this stored procedure closes the block and generates the hash. Future transactions will then be assigned to the next block. Transact-SQL syntax conventions The results are returned in a column called containing the following data:
 
-The following example shows a list of all fixed database roles.
-
-SQL
-
-Security stored procedures (Transact-SQL)
-
-sp_addrolemember (Transact-SQL)
-
-sp_dbfixedrolepermission (Transact-SQL)
-
-sp_droprolemember (Transact-SQL)
-
-sp_helprole (Transact-SQL)
-
-sp_helprolemember (Transact-SQL)
-
-System stored procedures (Transact-SQL)
-
-Related content
+## Syntax
 
 ```sql
-EXECUTE
-sp_helpdbfixedrole;
-GO
+sys.database_ledger_blocks
 ```

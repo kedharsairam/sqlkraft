@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.3.0] — 2026-05-29
+
+### Added
+
+- **Narrative gap analysis** — Comprehensive TOC blanket audit of 2,602 entries across Range 1 (p.1-5665, 23 H2 chapters) and Range 2 (p.14419-20029, 11 H2 chapters). Identified 21 untapped architecture topics (Tier 2–6 classification)
+- **Architectural Classification Matrix** — 6-tier mapping system: Tier 1 (existing architecture 10 topics), Tier 2 (11 new architecture topics, ~75 articles), Tier 3 (new `operations` collection, 14 topics, ~173 articles), Tier 4 (error severity reference expansion), Tier 5 (XQuery in tsql-reference), Tier 6 (append-only low priority)
+- **Schema extensions** — Added `xquery` to tsql-reference category enum; added 11 new topics to architecture enum (`collation`, `tables`, `change-data-capture`, `clr-integration`, `xml-data`, `json-data`, `spatial-data`, `sql-graph`, `filestream`, `service-broker`, `hierarchical-data`); registered new `operations` collection with 14-topic Zod schema
+- **PDF extraction (3,623 pages in 47s)** — `database-design` section (p.2043-4178, 2,136 pages, 22 batch files) and `extra-arch` section (p.4179-5665, 1,487 pages, 15 batch files)
+- **`narrative_mapper.py`** — New standalone extraction engine for narrative/conceptual content (460 lines). Handles three extraction types: error severities from `errors_p17659-17758.json` (15 files), XQuery from `xquery_*.json` (75 articles), expanded architecture from `database-design_*.json` + `extra-arch_*.json` (609 articles). Uses TOC-driven H2→H3 heading matching and `H2_TOPIC_MAP` dict for architecture topic routing
+- **Content expansion**: 4,340 → 5,040 files (+700). Architecture grew 307 → 916 (+609), errors grew 1,114 → 1,129 (+15), tsql-reference grew 1,695 → 1,770 (+75), stored-procedures grew 46 → 699 (+653 from earlier tsql-reference migration)
+- **Operations collection scaffolded** — 14-topic schema, placeholder `index.md`, page route created. Collection registered in config.ts and search index builder
+- **UI routing updates** — tsql-reference index.astro: added `xquery: "XQuery"` to CATEGORY_LABELS. Architecture index.astro: added 11 new topic sections with card ranges. Home page: added operations portal card. New operations index.astro: topic-sections card grid layout
+- **Search index rebuild** — 5,011 records across 10 collections (operations collection schema added)
+- **Zero-error build** — 5,050 pages, zero errors, zero schema validation failures. 1 expected warning suppressed: empty scripts collection
+
+### Fixed
+
+- **Unicode encoding in Windows terminal** — Replaced `→` (U+2192), `—` (U+2014), `─` (U+2500) with ASCII equivalents in Python scripts to prevent `'charmap' codec can't encode character` errors during console output
+
 ## [0.2.0] — 2026-05-29
 
 ### Added

@@ -1,30 +1,12 @@
 ---
 name: 'sys.system_sql_modules'
 title: 'sys.system_sql_modules'
-category: 'objects'
-description: 'The visibility of the metadata in catalog views is limited to securables that a user either owns,'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns one row per system object that contains a SQL language-defined module. System objects of type FN, IF, P, PC, TF, V have an associated SQL module. To identify the containing object, you can join this view to Object identification number of the containing object, unique SQL text that defines this module. 1 = Module was created '
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---
 
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
+## Description
 
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-sys.sql_modules (Transact-SQL)
-
-sys.all_sql_modules (Transact-SQL)
-
-Catalog Views (Transact-SQL)
-
-Object Catalog Views (Transact-SQL)
-
-Last updated on 11/18/2025
-
-See Also
+Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns one row per system object that contains a SQL language-defined module. System objects of type FN, IF, P, PC, TF, V have an associated SQL module. To identify the containing object, you can join this view to Object identification number of the containing object, unique SQL text that defines this module. 1 = Module was created with the SET ANSI_NULLS database

@@ -1,35 +1,12 @@
 ---
 name: 'sys.xml_schema_components'
-title: 'sys.xml_schema_components (Transact-'
+title: 'sys.xml_schema_components'
 category: 'xml'
-description: 'ID of the component from which this component is derived.'
-tags: ["catalog-view", "xml"]
+description: 'Returns a row per component of an XML schema. The pair ( compound foreign key to the containing namespace. For named components, the values for Unique ID of the XML schema component in the database. ID of the XML schema collection that contains the namespace ID of the XML namespace within the collection. 1 = This component has an explicit namespace qualifier. 0 = This is a locally scoped component'
+tags: ["xml", "catalog-view"]
 pubDate: 2026-05-29
 ---
 
 ## Description
-SUBSTITUTION
 
-ID of the component from which this component is derived.
-
-NULL if there is none.
-
-Unique ID of the scoping component. NULL if there is none
-
-(global scope).
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-Catalog Views (Transact-SQL)
-
-XML Schemas (XML Type System) Catalog Views (Transact-SQL)
-
-See Also
+Returns a row per component of an XML schema. The pair ( compound foreign key to the containing namespace. For named components, the values for Unique ID of the XML schema component in the database. ID of the XML schema collection that contains the namespace ID of the XML namespace within the collection. 1 = This component has an explicit namespace qualifier. 0 = This is a locally scoped component. In this case, the pair,

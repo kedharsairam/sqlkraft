@@ -28,6 +28,16 @@ const dmvsCollection = defineCollection({
       "service-broker",
       "full-text",
       "resource-governor",
+      "change-tracking",
+      "clr",
+      "columnstore",
+      "log",
+      "statistics",
+      "database",
+      "file",
+      "partition",
+      "query-performance",
+      "security-audit",
     ]),
     description: z.preprocess((v) => v ?? "", z.string()),
     tags: z.preprocess((v) => v ?? [], z.array(z.string())),
@@ -86,6 +96,7 @@ const catalogViewsCollection = defineCollection({
       "xml",
       "spatial",
       "external",
+      "compatibility",
     ]),
     description: z.preprocess((v) => v ?? "", z.string()),
     tags: z.preprocess((v) => v ?? [], z.array(z.string())),
@@ -118,6 +129,9 @@ const functionsCollection = defineCollection({
       "trigger",
       "json",
       "ai",
+      "availability-group",
+      "backup-restore",
+      "change-data-capture",
     ]),
     returnType: z.string().optional(),
     description: z.preprocess((v) => v ?? "", z.string()),
@@ -171,6 +185,7 @@ const tsqlReferenceCollection = defineCollection({
       "predicates",
       "transactions",
       "variables",
+      "xquery",
     ]),
     description: z.preprocess((v) => v ?? "", z.string()),
     syntax: z.string().optional(),
@@ -224,6 +239,17 @@ const architectureCollection = defineCollection({
       "transaction-log",
       "latch-contention",
       "spinlock-contention",
+      "collation",
+      "tables",
+      "change-data-capture",
+      "clr-integration",
+      "xml-data",
+      "json-data",
+      "spatial-data",
+      "sql-graph",
+      "filestream",
+      "service-broker",
+      "hierarchical-data",
     ]),
     description: z.preprocess((v) => v ?? "", z.string()),
     tags: z.preprocess((v) => v ?? [], z.array(z.string())),
@@ -256,6 +282,35 @@ const scriptsCollection = defineCollection({
 });
 
 // ──────────────────────────────────────────
+// Operations (admin / operational procedures)
+// ──────────────────────────────────────────
+const operationsCollection = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    topic: z.enum([
+      "ssms",
+      "profiler",
+      "sqlpackage",
+      "linux-operations",
+      "azure-synapse",
+      "azure-arc",
+      "event-classes",
+      "ssb-diagnose",
+      "data-tools",
+      "upgrade",
+      "migration",
+      "monitor",
+      "high-availability",
+      "configuration",
+    ]),
+    description: z.preprocess((v) => v ?? "", z.string()),
+    tags: z.preprocess((v) => v ?? [], z.array(z.string())),
+    pubDate: z.date(),
+  }),
+});
+
+// ──────────────────────────────────────────
 // Registry
 // ──────────────────────────────────────────
 export const collections = {
@@ -268,4 +323,5 @@ export const collections = {
   errors: errorsCollection,
   architecture: architectureCollection,
   scripts: scriptsCollection,
+  operations: operationsCollection,
 };

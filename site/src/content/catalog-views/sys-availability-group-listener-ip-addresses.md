@@ -1,74 +1,19 @@
 ---
 name: 'sys.availability_group_listener_ip_addresses'
 title: 'sys.availability_group_listener_ip_addresses'
-category: 'objects'
-description: 'IP resource ONLINE/OFFLINE state from the WSFC'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'Returns a row for every IP address that is associated with any Always On availability group listener in the Windows Server Failover Clustering (WSFC) cluster. Resource GUID from Windows Server Failover Clustering Configured virtual IP address of the availability group listener. Returns a single IPv4 or IPv6 address. Configured IP subnet mask for the IPv4 address, if any, that is configured for the'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: 'network_subnet_prefix_length'
 ---
 
-## Permissions
-
-
 ## Description
-IP resource ONLINE/OFFLINE state from the WSFC
 
-cluster, one of:
+Returns a row for every IP address that is associated with any Always On availability group listener in the Windows Server Failover Clustering (WSFC) cluster. Resource GUID from Windows Server Failover Clustering Configured virtual IP address of the availability group listener. Returns a single IPv4 or IPv6 address. Configured IP subnet mask for the IPv4 address, if any, that is configured for the availability group listener.
 
-1 = Online. IP resource is online.
-
-0 = Offline. IP resource is offline.
-
-2 = Online Pending. IP resource is offline but is being
-
-brought online.
-
-3 = Failed. IP resource was being brought online but
-
-failed.
-
-
-## Description of
-, one of:
-
-ONLINE
-
-OFFLINE
-
-ONLINE_PENDING
-
-FAILED
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-Requires VIEW SERVER PERFORMANCE STATE permission on the server.
-
-Querying the SQL Server System Catalog FAQ
-
-Catalog Views (Transact-SQL)
-
-
-## Permissions for SQL Server 2022 and later
-Related content
-
-Last updated on 03/03/2026
+## Syntax
 
 ```sql
-state
-```
-
-```sql
-state_desc
-```
-
-```sql
-state
+network_subnet_prefix_length
 ```

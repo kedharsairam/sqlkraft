@@ -2,96 +2,59 @@
 name: 'sys.external_file_formats'
 title: 'sys.external_file_formats'
 category: 'external'
-description: 'serialization/deserialization'
-tags: ["catalog-view", "external"]
+description: 'SQL Server 2016 (13.x) and later Azure SQL Database Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) Removes a PolyBase external file format. Transact-SQL syntax conventions The name of the external file format to drop. To view a list of external file formats use the sys.external_file_formats Requires ALTER ANY EXTERNAL FILE FORMAT.'
+tags: ["external", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  -- Drop an external file format
+  DROP
+  EXTERNAL
+  FILE
+  FORMAT
+  external_file_format_name
+  [;]
 ---
 
 ## Description
-serialization/deserialization
 
-method.
+SQL Server 2016 (13.x) and later Azure SQL Database Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) Removes a PolyBase external file format. Transact-SQL syntax conventions The name of the external file format to drop. To view a list of external file formats use the sys.external_file_formats Requires ALTER ANY EXTERNAL FILE FORMAT.
 
-row_terminator
+## Syntax
 
-For format_type =
+```sql
+-- Drop an external file format
+DROP
+EXTERNAL
+FILE
+FORMAT
+external_file_format_name
+[;]
+```
 
-DELIMITEDTEXT, this is the
+## Remarks
 
-character string that
+Applies to:
 
-terminates each row in the
+SQL Server 2016 (13.x) and later
 
-external Hadoop file.
+Azure SQL Database
 
-Always '\n'.
+Managed Instance
 
-encoding
+Azure Synapse Analytics
 
-For format_type =
+Analytics Platform System (PDW)
 
-DELIMITEDTEXT, this is the
+Removes a PolyBase external file format.
 
-encoding method for the
+Transact-SQL syntax conventions
 
-external Hadoop file.
+The name of the external file format to drop.
 
-Always 'UTF8'.
+To view a list of external file formats use the
 
-data_compression
+sys.external_file_formats
 
-The data compression
+system view.
 
-method for the external
-
-data.
-
-For format_type = DELIMITEDTEXT:
-
--
-
-'org.apache.hadoop.io.compress.DefaultCodec'
-
-- 'org.apache.hadoop.io.compress.GzipCodec'
-
-For format_type = RCFILE:
-
--
-
-'org.apache.hadoop.io.compress.DefaultCodec'
-
-For format_type = ORC:
-
--
-
-'org.apache.hadoop.io.compress.DefaultCodec'
-
--
-
-'org.apache.hadoop.io.compress.SnappyCodec'
-
-For format_type = PARQUET:
-
-- 'org.apache.hadoop.io.compress.GzipCodec'
-
--
-
-'org.apache.hadoop.io.compress.SnappyCodec'
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns or on
-
-which the user has been granted some permission. For more information, see
-
-Metadata Visibility
-
-Configuration
-
-.
-
-See Also
-
-sys.external_data_sources (Transact-SQL)
-
-sys.external_tables (Transact-SQL)
-
-CREATE EXTERNAL FILE FORMAT (Transact-SQL)
+Requires ALTER ANY EXTERNAL FILE FORMAT.

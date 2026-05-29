@@ -1,43 +1,22 @@
 ---
 name: 'sys.numbered_procedure_parameters'
 title: 'sys.numbered_procedure_parameters'
-category: 'objects'
-description: '-1 = Column data type is varchar(max), nvarchar(max), or'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'Contains one row for each parameter of a numbered procedure. When you create a numbered stored procedure, the base procedure is number 1. All subsequent procedures have numbers 2, contains the parameter definitions for all subsequent procedures, numbered 2 and greater. This view does not show parameters for the base stored procedure (number = 1). The base stored procedure is similar to a nonnumber'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  sys.numbered_procedures
+  sys.numbered_procedure_parameters
 ---
 
 ## Description
--1 = Column data type is varchar(max), nvarchar(max), or
 
-varbinary(max).
+Contains one row for each parameter of a numbered procedure. When you create a numbered stored procedure, the base procedure is number 1. All subsequent procedures have numbers 2, contains the parameter definitions for all subsequent procedures, numbered 2 and greater. This view does not show parameters for the base stored procedure (number = 1). The base stored procedure is similar to a nonnumbered
 
-Precision of the parameter if numeric-based; otherwise, 0.
+## Syntax
 
-Scale of the parameter if numeric-based; otherwise, 0.
-
-1 = Parameter is output or return; otherwise, 0
-
-1 = Parameter is a cursor-reference parameter.
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-Object Catalog Views (Transact-SQL)
-
-Catalog Views (Transact-SQL)
-
-７
-
-Note
-
-XML and CLR parameters are not supported for numbered procedures.
-
-See Also
+```sql
+sys.numbered_procedures
+sys.numbered_procedure_parameters
+```

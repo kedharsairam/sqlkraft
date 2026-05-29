@@ -1,57 +1,29 @@
 ---
 name: 'sys.endpoint_webmethods'
 title: 'sys.endpoint_webmethods'
-category: 'objects'
-description: 'Option that determines how results are formatted in the response.'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Returns a row for each SOAP method defined on a SOAP-enabled HTTP endpoint. The combination of the endpoint_id and namespace columns is unique. ID of the endpoint that the webmethod is defined on. Note: Transact-SQL ident'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---
 
 ## Description
-STANDARD
 
-DEFAULT
+This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Returns a row for each SOAP method defined on a SOAP-enabled HTTP endpoint. The combination of the endpoint_id and namespace columns is unique. ID of the endpoint that the webmethod is defined on. Note: Transact-SQL identifiers allow characters that aren't legal in
 
-result_format
-
-Option that determines how results are formatted in the response.
-
-1 = ALL_RESULTS
-
-2 = ROWSETS_ONLY
-
-3 = NONE
-
-result_format_desc
+## Code Blocks
 
 
-## Description of the option that determines how results are
-formatted in the response.
+```sql
+endpoint_id
+```
 
-ALL_RESULTS
 
-ROWSETS_ONLY
+```sql
+namespace
+```
 
-NONE
 
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-SQL Server 2022 (16.x) and later versions require VIEW SERVER SECURITY STATE permission on
-
-the server.
-
-Endpoints Catalog Views (Transact-SQL)
-
-Catalog Views (Transact-SQL)
-
-Last updated on 03/03/2026
-
-Related content
+```sql
+[``]
+```

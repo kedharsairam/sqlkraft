@@ -1,37 +1,68 @@
 ---
 name: 'sys.assemblies'
 title: 'sys.assemblies'
-category: 'objects'
-description: 'Indicates the source of the assembly.'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Returns a row for each assembly. Name of the assembly. Is unique within the database. ID of the principal that owns this assembly. Assembly identification number. Is unique within a database. Canonical string that encodes the simple name, version number, culture, public key, and architecture of the assembly. This value uniq'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  EXECUTE
+  sp_add_trusted_assembly
+  0x8893AD6D78D14EE43DF482E2EAD44123E3A0B684A8873C3F7BF3B5E8D8F09503F3E62370CE742BBC
+  96FE3394477214B84C7C1B0F7A04DCC788FA99C2C09DFCCC, N
+  'pointudt, version=0.0.0.0,
+  culture=neutral, publickeytoken=null, processorarchitecture=msil'
+  ;
 ---
 
 ## Description
-Indicates the source of the assembly.
 
-0 = System-defined assemblies (such as
+Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Returns a row for each assembly. Name of the assembly. Is unique within the database. ID of the principal that owns this assembly. Assembly identification number. Is unique within a database. Canonical string that encodes the simple name, version number, culture, public key, and architecture of the assembly. This value uniquely identifies the assembly on the common language
 
-Microsoft.SqlServer.Types for the
+## Syntax
 
-data type)
+```sql
+EXECUTE
+sp_add_trusted_assembly
+0x8893AD6D78D14EE43DF482E2EAD44123E3A0B684A8873C3F7BF3B5E8D8F09503F3E62370CE742BBC
+96FE3394477214B84C7C1B0F7A04DCC788FA99C2C09DFCCC, N
+'pointudt, version=0.0.0.0,
+culture=neutral, publickeytoken=null, processorarchitecture=msil'
+;
+```
 
-1 = User-defined assemblies
+## Permissions
 
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
+Article • 05/23/2023 Applies to: SQL Server Azure SQL Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric Returns a row for each assembly. Description Name of the assembly. Is unique within the database. ID of the principal that owns this assembly. Assembly identification number. Is unique within a database. Canonical string that encodes the simple name, version number, culture, public key, and architecture of the assembly. This value uniquely identifies the assembly on the common language runtime (CLR) side. Permission-set/security-level for assembly. 1 = Safe Access 2 = External Access 3 = Unsafe Access Description for permission-set/security-level for assembly. SAFE_ACCESS EXTERNAL_ACCESS UNSAFE_ACCESS 1 = Assembly is visible to register Transact-SQL entry points. 0 = Assembly is intended only for managed callers. That is, the assembly provides internal implementation for other assemblies in the database. Date the assembly was created or registered. Date the assembly was modified. ﾉ Expand table DROP ASSEMBLY (Transact-SQL) sys.assemblies sys.dm_clr_loaded_assemblies
 
-or on which the user was granted some permission. For more information, see
+## Examples
 
-Metadata
+### Example 1
 
-Visibility Configuration
+```sql
+clr_name
+```
 
-.
+### Example 2
 
-CLR Assembly Catalog Views (Transact-SQL)
+```sql
+sys.assemblies
+```
 
-Catalog Views (Transact-SQL)
+### Example 3
 
-ASSEMBLYPROPERTY (Transact-SQL)
+```sql
+pointudt
+```
 
-See Also
+### Example 4
+
+```sql
+EXECUTE
+sp_add_trusted_assembly
+0x8893AD6D78D14EE43DF482E2EAD44123E3A0B684A8873C3F7BF3B5E8D8F09503F3E62370CE742BBC
+96FE3394477214B84C7C1B0F7A04DCC788FA99C2C09DFCCC, N
+'pointudt, version=0.0.0.0,
+culture=neutral, publickeytoken=null, processorarchitecture=msil'
+;
+```

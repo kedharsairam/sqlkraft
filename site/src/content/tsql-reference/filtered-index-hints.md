@@ -1,0 +1,10 @@
+---
+name: 'Filtered index hints'
+title: 'Filtered index hints'
+category: 'hints'
+description: ''
+tags: ["tsql", "hints"]
+pubDate: 2026-05-29
+---
+
+*(Content pending extraction)*

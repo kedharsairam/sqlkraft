@@ -1,130 +1,56 @@
 ---
 name: 'sys.allocation_units'
 title: 'sys.allocation_units'
-category: 'objects'
-description: '## Determine space used by object and type of an allocation unit'
-tags: ["catalog-view", "objects"]
+category: 'compatibility'
+description: 'SQL database in Microsoft Fabric Contains a row for each allocation unit in the database. ID of the allocation unit. Is unique within a database. 1 = In-row data (all data types, except LOB data types) Description of the allocation unit type: ID of the storage container associated with the allocation unit. If type = 1 or 3 in a rowstore index container_id = If type = 1 or 3 in a columnstore index,'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  p.partition_number,
+  p.rows,
+  p.data_compression_desc
+  FROM
+  sys.partitions
+  AS
+  p
+  INNER
+  JOIN
+  sys.allocation_units
+  AS
+  au
+  ON
+  p.partition_id = au.container_id
+  ORDER
+  BY
+  SpaceUsed_MB
+  DESC
+  ;
 ---
 
-## Determine space used by object and type of an allocation unit
-
-
 ## Description
-used_pages
 
-Number of total pages actually in use.
+SQL database in Microsoft Fabric Contains a row for each allocation unit in the database. ID of the allocation unit. Is unique within a database. 1 = In-row data (all data types, except LOB data types) Description of the allocation unit type: ID of the storage container associated with the allocation unit. If type = 1 or 3 in a rowstore index container_id = If type = 1 or 3 in a columnstore index, container_id =
 
-data_pages
-
-Number of used pages that have:
-
-In-row data
-
-LOB data
-
-Row-overflow data
-
-Note that the value returned excludes internal index pages and
-
-allocation-management pages.
-
-Requires membership in the
-
-role. For more information, see
-
-Metadata Visibility
-
-Configuration
-
-.
-
-The following query returns all the user tables in a database and the amount of space used in
-
-each, by allocation unit type.
-
-SQL
-
-７
-
-Note
-
-When you drop or rebuild large indexes, drop large tables, or truncate large tables or
-
-partitions, the Database Engine defers the actual page deallocations, and their associated
-
-locks, until after the transaction commits. Deferred drop operations do not release
-
-allocated space immediately. Therefore, the values returned by sys.allocation_units
-
-immediately after dropping or truncating a large object may not reflect the actual disk
-
-space available.
-
-When
-
-is enabled, deferred drop is used regardless of
-
-object size.
-
-sys.partitions (Transact-SQL)
-
-Object Catalog Views (Transact-SQL)
-
-Catalog Views (Transact-SQL)
-
-Last updated on 11/18/2025
-
-See Also
+## Syntax
 
 ```sql
-SELECT
-t.object_id
-AS
-ObjectID,
-OBJECT_NAME(t.object_id)
-AS
-ObjectName,
-SUM
-(u.total_pages) * 8
-AS
-Total_Reserved_kb,
-SUM
-(u.used_pages) * 8
-AS
-Used_Space_kb,
-u.type_desc
-AS
-TypeDesc,
-MAX
-(p.rows)
-AS
-RowsCount
+p.partition_number,
+p.rows,
+p.data_compression_desc
 FROM
-sys.allocation_units
-AS
-u
-JOIN
 sys.partitions
 AS
 p
-ON
-u.container_id = p.hobt_id
+INNER
 JOIN
-sys.tables
+sys.allocation_units
 AS
-t
+au
 ON
-p.object_id = t.object_id
-GROUP
-BY
-t.object_id,
-OBJECT_NAME(t.object_id),
-u.type_desc
+p.partition_id = au.container_id
 ORDER
 BY
-Used_Space_kb
+SpaceUsed_MB
 DESC
-,
-ObjectName;
+;
 ```

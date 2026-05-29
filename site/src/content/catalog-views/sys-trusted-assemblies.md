@@ -1,34 +1,76 @@
 ---
 name: 'sys.trusted_assemblies'
-title: 'sys.trusted_assemblies'
-category: 'objects'
-description: 'This section contains the following catalog views.'
-tags: ["catalog-view", "objects"]
+title: 'sys.trusted_assemblies (T-SQL)'
+category: 'compatibility'
+description: 'Azure SQL Managed Instance Contains a row for each trusted assembly for the server. Transact-SQL syntax conventions SHA2_512 hash of the assembly content. Optional user-defined description of the assembly. We recommend using the canonical name that encodes the simple name, version number, culture, public key, and architecture of the assembly to trust. This value uniquely identifies the assembly on'
+tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  sys.assemblies.
+  create_date
 ---
 
-Article
+## Description
 
-•
+Azure SQL Managed Instance Contains a row for each trusted assembly for the server. Transact-SQL syntax conventions SHA2_512 hash of the assembly content. Optional user-defined description of the assembly. We recommend using the canonical name that encodes the simple name, version number, culture, public key, and architecture of the assembly to trust. This value uniquely identifies the assembly on the common language runtime (CLR) side and is the same as the Date the assembly was added to the list of trusted assemblies. Login name of the principal who added the assembly to the list. SQL Server 2019 (15.x) and previous versions require permission on the SQL Server 2022 (16.x) and later versions require sys.sp_add_trusted_assembly sys.sp_drop_trusted_assembly assemblies from sys.sp_add_trusted_assembly
 
-02/28/2023
+## Syntax
+
+```sql
+sys.assemblies.
+create_date
+```
+
+## Remarks
 
 Applies to:
 
-SQL Server
+Azure SQL Managed Instance
 
-This section contains the following catalog views.
+Contains a row for each trusted assembly for the server.
 
-sys.data_spaces
+Transact-SQL syntax conventions
 
-sys.destination_data_spaces
+Description
 
-sys.filegroups
+SHA2_512 hash of the assembly content.
 
-sys.partition_schemes
+Optional user-defined description of the assembly. We recommend
 
-System Views (Transact-SQL)
+using the canonical name that encodes the simple name, version
 
-Catalog Views (Transact-SQL)
+number, culture, public key, and architecture of the assembly to trust.
 
-See Also
+This value uniquely identifies the assembly on the common language
+
+runtime (CLR) side and is the same as the
+
+Date the assembly was added to the list of trusted assemblies.
+
+Login name of the principal who added the assembly to the list.
+
+SQL Server 2019 (15.x) and previous versions require
+
+permission on the
+
+SQL Server 2022 (16.x) and later versions require
+
+permission on
+
+the server.
+
+sys.sp_add_trusted_assembly
+
+to add, and
+
+sys.sp_drop_trusted_assembly
+
+assemblies from
+
+sys.sp_add_trusted_assembly
+
+sys.sp_drop_trusted_assembly
+
+Expand table
+
+Related content

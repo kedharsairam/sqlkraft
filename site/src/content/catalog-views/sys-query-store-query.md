@@ -2,81 +2,56 @@
 name: 'sys.query_store_query'
 title: 'sys.query_store_query'
 category: 'query-store'
-description: 'Azure Synapse Analytics always returns'
-tags: ["catalog-view", "query-store"]
+description: 'SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Contains information about the query and its associated overall aggregated runtime execution ID of the database object that the query is part of (stored procedure, trigger, CLR UDF/UDAgg, etc.). if the query isn''t executed as part of a database object (ad hoc query). See the ID of the statement batch the query is part of. P'
+tags: ["query-store", "catalog-view"]
 pubDate: 2026-05-29
+syntax: 'query_parameterization_type'
 ---
 
-Azure Synapse Analytics always returns
+## Description
 
-.
+SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Contains information about the query and its associated overall aggregated runtime execution ID of the database object that the query is part of (stored procedure, trigger, CLR UDF/UDAgg, etc.). if the query isn't executed as part of a database object (ad hoc query). See the ID of the statement batch the query is part of. Populated only if query references temporary
 
-Azure Synapse Analytics always returns
-
-.
-
-The
-
-column is populated only when the statement is compiled from a Transact‑SQL
-
-module. A module is any schema‑scoped object that has a row in
-
-sys.sql_modules
-
-.
-
-Because the query optimizer expands non-indexed views before it produces a plan, only the
-
-underlying tables remain, though indexed views do appear as tables.
-
-Requires the
-
-permission.
-
-sys.database_query_store_options (Transact-SQL)
-
-sys.query_context_settings (Transact-SQL)
-
-sys.query_store_plan (Transact-SQL)
-
-sys.query_store_query_text (Transact-SQL)
-
-sys.query_store_wait_stats (Transact-SQL)
-
-sys.query_store_runtime_stats (Transact-SQL)
-
-sys.query_store_runtime_stats_interval (Transact-SQL)
-
-sys.fn_stmt_sql_handle_from_sql_stmt (Transact-SQL)
-
-Query Store hints
-
-Monitor performance by using the Query Store
-
-System catalog views (Transact-SQL)
-
-Query Store stored procedures (Transact-SQL)
-
-Last updated on 11/18/2025
-
-3
-
-4
-
-Related content
+## Syntax
 
 ```sql
-NULL
+query_parameterization_type
 ```
 
-```sql
-None
-```
+## Examples
+
+### Example 1
 
 ```sql
-object_id
+sp_query_store_reset_exec_stats
 ```
 
+### Example 2
+
 ```sql
-VIEW DATABASE STATE
+SELECT
+txt.query_text_id,
+txt.query_sql_text,
+pl.plan_id,
+qry.*
+FROM
+sys.query_store_plan
+AS
+pl
+INNER
+JOIN
+sys.query_store_query
+AS
+qry
+ON
+pl.query_id = qry.query_id
+INNER
+JOIN
+sys.query_store_query_text
+AS
+txt
+ON
+qry.query_text_id = txt.query_text_id;
+EXECUTE
+sp_query_store_reset_exec_stats 3;
 ```

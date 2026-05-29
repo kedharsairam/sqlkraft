@@ -2,62 +2,34 @@
 name: 'sys.database_files'
 title: 'sys.database_files'
 category: 'databases-files'
-description: 'Requires membership in the'
-tags: ["catalog-view", "databases-files"]
+description: 'Analytics Platform System (PDW) Contains a row per file of a database as stored in the database itself. This is a per-database ID of the file within database. = Database was upgraded from an earlier version of SQL Server (Valid for SQL Server 2005 and earlier 3 = Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. Value can be zero or greater than zer'
+tags: ["databases-files", "catalog-view"]
 pubDate: 2026-05-29
+syntax: |
+  ROWS
+  LOG
+  FILESTREAM
+  FULLTEXT
+  data_space_id
 ---
 
-Requires membership in the
+## Description
 
-role. For more information, see
+Analytics Platform System (PDW) Contains a row per file of a database as stored in the database itself. This is a per-database ID of the file within database. = Database was upgraded from an earlier version of SQL Server (Valid for SQL Server 2005 and earlier 3 = Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. Value can be zero or greater than zero. A value of
 
-Metadata Visibility
+## Syntax
 
-Configuration
+```sql
+ROWS
+LOG
+FILESTREAM
+FULLTEXT
+data_space_id
+```
 
-.
+## Examples
 
-The following statement returns the name, file size, and the amount of empty space for each
-
-database file.
-
-SQL
-
-Find example queries using SQL Database, in
-
-Manage file space for databases in Azure SQL
-
-Database
-
-. You can:
-
-Query a single database for storage space information
-
-.
-
-Query an elastic pool for storage space information
-
-.
-
-Databases and Files Catalog Views (Transact-SQL)
-
-File States
-
-sys.databases (Transact-SQL)
-
-sys.master_files (Transact-SQL)
-
-Database Files and Filegroups
-
-sys.data_spaces (Transact-SQL)
-
-Manage file space for databases in Azure SQL Database
-
-Manage file space for databases in Azure SQL Managed Instance
-
-Last updated on 11/18/2025
-
-Related content
+### Example 1
 
 ```sql
 SELECT
@@ -80,4 +52,51 @@ AS
 EmptySpaceInMB
 FROM
 sys.database_files;
+```
+
+### Example 2
+
+```sql
+SELECT
+s.file_id,
+s.type_desc,
+s.name,
+FILEPROPERTYEX(s.name,
+'BlobTier'
+)
+AS
+BlobTier,
+FILEPROPERTYEX(s.name,
+'AccountType'
+)
+AS
+AccountType,
+FILEPROPERTYEX(s.name,
+'IsInferredTier'
+)
+AS
+IsInferredTier,
+FILEPROPERTYEX(s.name,
+'IsPageBlob'
+)
+AS
+IsPageBlob
+FROM
+sys.database_files
+AS
+s
+WHERE
+s.type_desc
+IN
+(
+'ROWS'
+,
+'LOG'
+);
+file_id  type_desc  name  BlobTier  AccountType  IsInferredTier  IsPageBlob
+------------------------------------------------------------------------------------
+--
+1     ROWS      data_0  P30  PremiumBlobStorage  0   1
+2     LOG       log     P30  PremiumBlobStorage  0   1
+(2 rows affected)
 ```

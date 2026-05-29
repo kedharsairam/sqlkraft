@@ -2,196 +2,145 @@
 name: 'sys.tables'
 title: 'sys.tables'
 category: 'objects'
-description: '## A. Return all user tables without a primary key'
-tags: ["catalog-view", "objects"]
+description: 'Azure SQL Database Azure SQL Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Catalog views return information that is used by the SQL Server Database Engine. We recommend that you use catalog views because they are the most general interface to the catalog metadata, an'
+tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
+syntax: 'filestream_data_space_id'
 ---
 
-## A. Return all user tables without a primary key
-
-## B. List temporal data related tables
-
-
 ## Description
-: SQL Server 2022 (16.x) and later
 
-versions, and Azure SQL Database
+Azure SQL Database Azure SQL Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Catalog views return information that is used by the SQL Server Database Engine. We recommend that you use catalog views because they are the most general interface to the catalog metadata, and provide the most efficient way to obtain, transform, and present customized forms of this information. All user-available catalog metadata is exposed through Some catalog views inherit rows from other catalog views. For example, the view inherits from the catalog view. The catalog view is referred to as the base view, and the view is called the derived view. The returns the columns that are specific to tables and also all the columns that the
 
-When
-
-
-## returns
-of
-
-the ledger view, otherwise returns
-
-.
-
-: SQL Server 2022 (16.x) and later
-
-versions, and Azure SQL Database
-
-Indicates a ledger table that was dropped.
-
-: SQL Server 2022 (16.x) and later
-
-versions, and Azure SQL Database
-
-The visibility of the metadata in catalog views is limited to securables that a user either owns,
-
-or on which the user was granted some permission. For more information, see
-
-Metadata
-
-Visibility Configuration
-
-.
-
-The following example returns all of the user tables that don't have a primary key.
-
-SQL
-
-The following example shows how related temporal data can be exposed.
-
-## C. List information about temporal history retention
-
-: SQL Server 2016 (13.x) and later versions, and Azure SQL Database.
-
-SQL
-
-The following example shows how information on temporal history retention can be exposed.
-
-: SQL Server 2017 (14.x) and later versions, and Azure SQL Database.
-
-SQL
-
-Object Catalog Views (Transact-SQL)
-
-System catalog views (Transact-SQL)
-
-DBCC CHECKDB (Transact-SQL)
-
-DBCC CHECKTABLE (Transact-SQL)
-
-Querying the SQL Server System Catalog FAQ
-
-Related content
-
-In-Memory OLTP overview and usage scenarios
-
-Last updated on 11/18/2025
+## Syntax
 
 ```sql
-HISTORY_TABLE
-UPDATABLE_LEDGER_TABLE
-APPEND_ONLY_LEDGER_TABLE
+filestream_data_space_id
 ```
 
-```sql
-ledger_view_id
-```
+## Remarks
+
+Applies to:
+
+Azure SQL Database
+
+Azure SQL Managed Instance
+
+Azure Synapse Analytics
+
+Analytics Platform System (PDW)
+
+SQL analytics endpoint in
+
+Microsoft Fabric
+
+Warehouse in Microsoft Fabric
+
+SQL database in Microsoft Fabric
+
+Catalog views return information that is used by the SQL Server Database Engine. We
+
+recommend that you use catalog views because they are the most general interface to the
+
+catalog metadata, and provide the most efficient way to obtain, transform, and present
+
+customized forms of this information. All user-available catalog metadata is exposed through
+
+catalog views.
+
+Some catalog views inherit rows from other catalog views. For example, the
+
+view inherits from the
+
+sys.objects
+
+catalog view. The
+
+catalog view is referred to as
+
+the base view, and the
+
+view is called the derived view. The
+
+catalog view
+
+returns the columns that are specific to tables and also all the columns that the
+
+catalog view returns. The
+
+catalog view returns rows for objects other than tables,
+
+such as stored procedures and views. After a table is created, the metadata for the table is
+
+returned in both views. Although the two catalog views return different levels of information
+
+about the table, there is only one entry in metadata for this table with one name and one
+
+. This can be summarized as follows:
+
+The base view contains a subset of columns and a superset of rows.
+
+The derived view contains a superset of columns and a subset of rows.
+
+The catalog views in SQL Server have been organized into the following categories:
+
+Catalog views do not contain information about replication, backup, database
+
+maintenance plan, or SQL Server Agent catalog data.
+
+In future releases of SQL Server, Microsoft may augment the definition of any system
+
+catalog view by adding columns to the end of the column list. We recommend against
+
+using the syntax
+
+in production code because the
+
+number of columns returned might change and break your application.
+
+## Examples
+
+### Example 1
 
 ```sql
-ledger_type IN (2, 3)
+SELECT tbl.name as table_name, c.name AS column_name, c.is_masked,
+c.masking_function
+FROM sys.masked_columns AS c
+JOIN sys.tables AS tbl
+ON c.object_id = tbl.object_id
+WHERE is_masked = 1;
 ```
 
-```sql
-object_id
-```
+### Example 2
 
 ```sql
-NULL
-```
-
-```sql
-is_dropped_ledger_table
-```
-
-```sql
-SELECT
-SCHEMA_NAME(schema_id)
-AS
-schema_name,
-name
-AS
-table_name
-FROM
-sys.tables
-WHERE
-OBJECTPROPERTY(object_id,
-'TableHasPrimaryKey'
-) = 0
+ON
+fkc.constraint_object_id = fk.object_id
+INNER
+JOIN
+sys.tables t_parent
+ON
+t_parent.object_id = fk.parent_object_id
+INNER
+JOIN
+sys.columns c_parent
+ON
+fkc.parent_column_id = c_parent.column_id
+AND
+c_parent.object_id = t_parent.object_id
+INNER
+JOIN
+sys.tables t_child
+ON
+t_child.object_id = fk.referenced_object_id
+INNER
+JOIN
+sys.columns c_child
+ON
+c_child.object_id = t_child.object_id
+AND
+fkc.referenced_column_id = c_child.column_id
 ORDER
 BY
-schema_name, table_name;
-GO
-```
-
-```sql
-SELECT
-T1.object_id,
-T1.name
-AS
-TemporalTableName,
-SCHEMA_NAME(T1.schema_id)
-AS
-TemporalTableSchema,
-T2.name
-AS
-HistoryTableName,
-SCHEMA_NAME(T2.schema_id)
-AS
-HistoryTableSchema,
-T1.temporal_type_desc
-FROM
-sys.tables T1
-LEFT
-JOIN
-sys.tables T2
-ON
-T1.history_table_id = T2.object_id
-ORDER
-BY
-T1.temporal_type
-DESC
-;
-```
-
-```sql
-SELECT
-DB.is_temporal_history_retention_enabled,
-SCHEMA_NAME(T1.schema_id)
-AS
-TemporalTableSchema,
-T1.name
-AS
-TemporalTableName,
-SCHEMA_NAME(T2.schema_id)
-AS
-HistoryTableSchema,
-T2.name
-AS
-HistoryTableName,
-T1.history_retention_period,
-T1.history_retention_period_unit_desc
-FROM
-sys.tables T1
-OUTER
-APPLY
-(
-SELECT
-is_temporal_history_retention_enabled
-FROM
-sys.databases
-WHERE
-name
-= DB_NAME()
-) DB
-LEFT
-JOIN
-sys.tables T2
-ON
-T1.history_table_id = T2.object_id
-WHERE
-T1.temporal_type = 2;
+t_parent.name, c_parent.name;
 ```

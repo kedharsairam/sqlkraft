@@ -2,183 +2,120 @@
 name: 'sys.dm_exec_sql_text'
 title: 'sys.dm_exec_sql_text'
 category: 'execution'
-description: 'In SQL Database, dynamic management views cannot expose information that would impact'
+description: 'Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Size of the unpars'
+tags: ["execution", "dmv"]
 pubDate: 2026-05-29
+syntax: 'sys.dm_exec_sql_text(sql_handle | plan_handle)'
 ---
 
-In SQL Database, dynamic management views cannot expose information that would impact
+## Description
 
-database containment or expose information about other databases the user has access to. To
+Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Size of the unparsed XML document in Size of the unparsed XML namespace document, in bytes. NULL if there is no namespace document. Number of OPENXML calls with this document handle. Number of rows returned by all previous OPENXML calls for this document handle. Milliseconds since the last OPENXML call. If OPENXML has not been called, returns milliseconds since the The lifetime of used to retrieve the SQL text that executed a call to BACKUP DATABASE Execution Related Dynamic Management Views and Functions (Transact-SQL)
 
-avoid exposing this information, every row that contains data that doesn't belong to the
+## Syntax
 
-connected tenant is filtered out.
+```sql
+sys.dm_exec_sql_text(sql_handle | plan_handle)
+```
 
-Statistics in the view are updated when a query is completed.
+## Arguments
 
-On SQL Server and SQL Managed Instance, requires
+Azure SQL Database
 
-permission.
-
-On SQL Database
-
-,
-
-, and
-
-service objectives, and for databases in
-
-, the
-
-server admin
-
-account, the
-
-Microsoft Entra admin
-
-account, or membership in the
-
-server role
-
-is required. On all other SQL Database service objectives,
-
-either the
-
-permission on the database, or membership in the
-
-server role is required.
-
-Requires VIEW SERVER PERFORMANCE STATE permission on the server.
-
-The following example returns information about the top five triggers identified by average
-
-elapsed time.
-
-SQL
-
-Execution Related Dynamic Management Views and Functions (Transact-SQL)
-
-sys.dm_exec_sql_text (Transact-SQL)
-
-sys.dm_exec_query_stats (Transact-SQL)
-
-sys.dm_exec_procedure_stats (Transact-SQL)
-
-sys.dm_exec_cached_plans (Transact-SQL)
-
-Last updated on 11/18/2025
-
-## sp_xml_preparedocument
-
-Article
-
-•
-
-12/16/2024
-
-SQL Server
 
 Azure SQL Managed Instance
 
 
-## Returns information about active handles that have been opened by
-.
+SQL database in Microsoft Fabric
 
-session_id
 
-| 0,
+Returns the text of the SQL batch that is identified by the specified
 
-ID of the session. If
 
-session_id
+. This table-
 
-is specified, this function returns information about XML handles
 
-in the specified session.
+valued function replaces the system function
 
-If 0 is specified, the function returns information about all XML handles for all sessions.
 
-Session ID of the session that holds this
+Is a token that uniquely identifies a batch that has executed or is currently executing.
 
-XML document handle.
 
-XML document handle ID returned by
+can be obtained from the following dynamic management objects:
 
-.
 
-Internal handle ID used for the associated
+sys.dm_exec_query_stats
 
-namespace document that has been passed
 
-as the third parameter to
+sys.dm_exec_requests
 
-. NULL if there is
 
-no namespace document.
+sys.dm_exec_cursors
 
-Handle to the text of the SQL code where
 
-the handle has been defined.
+sys.dm_exec_xml_handles
 
-ﾉ
 
-## sp_xml_preparedocument
+sys.dm_exec_query_memory_grants
 
-Number of characters into the currently
 
-executing batch or stored procedure at
+sys.dm_exec_connections
 
-which the
 
-call
+plan_handle
 
-occurs. Can be used together with the
 
-, the
+Is a token that uniquely identifies a query execution plan for a batch that has executed and its
 
-, and
 
-the
+plan resides in the plan cache, or is currently executing.
 
-dynamic
 
-management function to retrieve the
+plan_handle
 
-currently executing statement for the
 
-request.
+plan_handle
+
+
+can be obtained from the following dynamic management objects:
+
+
+sys.dm_exec_cached_plans (Transact-SQL)
+
+
+sys.dm_exec_query_stats (Transact-SQL)
+
+
+sys.dm_exec_requests (Transact-SQL)
+
+
+## Remarks
 
 Number of characters into the currently
 
 executing batch or stored procedure at
 
-which the
-
-call
-
 occurs. Can be used together with the
-
-, the
-
-, and
-
-the
-
-dynamic
 
 management function to retrieve the
 
 currently executing statement for the
 
-request.
+Number of characters into the currently
+
+executing batch or stored procedure at
+
+occurs. Can be used together with the
+
+management function to retrieve the
+
+currently executing statement for the
 
 Timestamp when
 
 was called.
 
 Size of the unparsed XML document in
-
-bytes.
 
 Size of the unparsed XML namespace
 
@@ -200,56 +137,121 @@ OPENXML has not been called, returns
 
 milliseconds since the
 
-t call.
-
 The lifetime of
 
 used to retrieve the SQL text that executed a call to
 
 outlives the cached plan used to execute the query. If the query text
 
-```sql
-VIEW SERVER STATE
-```
+Description
+
+BACKUP DATABASE
+
+The text of the request can be retrieved by using
+
+with the corresponding
+
+for the request. Internal system processes
+
+set the command based on the type of task they
+
+perform. Tasks can include the following values:
+
+LOCK MONITOR
+
+CHECKPOINTLAZY
+
+Not nullable.
+
+A token that uniquely identifies the batch or stored
+
+procedure that the query is part of. Nullable.
+
+Indicates, in bytes, beginning with 0, the starting
+
+position of the currently executing statement for the
+
+currently executing batch or persisted object. Can be
+
+used together with the
+
+dynamic management function to retrieve the
+
+currently executing statement for the request.
+
+Indicates, in bytes, starting with 0, the ending position
+
+of the currently executing statement for the currently
+
+executing batch or persisted object. Can be used
+
+together with the
+
+dynamic management function
+
+to retrieve the currently executing statement for the
+
+request. Nullable.
+
+A token that uniquely identifies a query execution plan
+
+for a batch that is currently executing. Nullable.
+
+ID of the database the request is executing against.
+
+Not nullable.
+
+In Azure SQL Database, the values are unique within a
+
+single database or an elastic pool, but not within a
+
+logical server.
+
+Execution Related Dynamic Management Views and Functions (Transact-SQL)
+
+sys.dm_exec_sql_text (Transact-SQL)
+
+sys.dm_exec_query_plan (Transact-SQL)
+
+sys.dm_exec_procedure_stats (Transact-SQL)
+
+sys.dm_exec_trigger_stats (Transact-SQL)
+
+sys.dm_exec_cached_plans (Transact-SQL)
+
+Last updated on 11/18/2025
+
+Related content
+
+## Examples
+
+### Example 1
 
 ```sql
-##MS_ServerStateReader##
+59
 ```
 
-```sql
-VIEW DATABASE STATE
-```
+### Example 2
 
 ```sql
-##MS_ServerStateReader##
-```
-
-```sql
+-- Identify current spid (session_id)
 SELECT
-TOP 5 d.object_id, d.database_id, DB_NAME(database_id)
-AS
-'database_name'
-,
-OBJECT_NAME(object_id, database_id)
-AS
-'trigger_name'
-, d.cached_time,
-d.last_execution_time, d.total_elapsed_time,
-d.total_elapsed_time/d.execution_count
-AS
-[avg_elapsed_time],
-d.last_elapsed_time, d.execution_count
+@@SPID;
+GO
+-- Create activity
+WAITFOR DELAY '00:02:00';
+SELECT
+t.*
 FROM
-sys.dm_exec_trigger_stats
+sys.dm_exec_requests
 AS
-d
-ORDER
-BY
-[total_worker_time]
-DESC
-;
-```
-
-```sql
-dm_exec_xml_handles (session_id | 0 )
+r
+CROSS
+APPLY
+sys.dm_exec_sql_text(r.sql_handle)
+AS
+t
+WHERE
+session_id = 59
+-- modify this value with your actual spid
 ```

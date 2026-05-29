@@ -1,46 +1,19 @@
 ---
 name: 'sys.query_store_plan_feedback'
-title: 'sys.query_store_plan_feedback (Transact-'
+title: 'sys.query_store_plan_feedback'
 category: 'query-store'
-description: 'This catalog view will return the same row data on all replicas, if'
-tags: ["catalog-view", "query-store"]
+description: 'SQL Server 2022 (16.x) and later versions SQL database in Microsoft Fabric Contains information about Query Store tuning via query feedback features, including cardinality estimation (CE) feedback degree of parallelism (DOP) feedback lock after qualification (LAQ) feedback Uniquely identifies the feedback change applied to a query. sys.query_store_plan (Transact-SQL) For CE feedback, displays quer'
+tags: ["query-store", "catalog-view"]
 pubDate: 2026-05-29
+syntax: '{"node_id": value}, {"node_id": value},….'
 ---
 
-This catalog view will return the same row data on all replicas, if
+## Description
 
-Query Store for secondary
+SQL Server 2022 (16.x) and later versions SQL database in Microsoft Fabric Contains information about Query Store tuning via query feedback features, including cardinality estimation (CE) feedback degree of parallelism (DOP) feedback lock after qualification (LAQ) feedback Uniquely identifies the feedback change applied to a query. sys.query_store_plan (Transact-SQL) For CE feedback, displays query hints in use.
 
-replicas
-
-is enabled.
-
-Requires the
-
-permission.
-
-Memory grant feedback
-
-Cardinality estimation (CE) feedback
-
-Degree of parallelism (DOP) feedback
-
-Intelligent query processing in SQL databases
-
-sys.database_query_store_internal_state (Transact-SQL)
-
-sys.query_store_plan (Transact-SQL)
-
-sys.query_store_query (Transact-SQL)
-
-Monitor performance by using the Query Store
-
-
-## Best practices for monitoring workloads with Query Store
-Last updated on 11/18/2025
-
-Related content
+## Syntax
 
 ```sql
-VIEW DATABASE STATE
+{"node_id": value}, {"node_id": value},….
 ```

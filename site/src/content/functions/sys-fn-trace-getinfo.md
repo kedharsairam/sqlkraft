@@ -2,77 +2,29 @@
 name: 'sys.fn_trace_getinfo'
 title: 'sys.fn_trace_getinfo'
 category: 'system'
-description: 'Returns information about a specified trace or all existing traces.'
-tags: ["function"]
+description: 'Returns information about a specified trace or all existing traces. Transact-SQL syntax conventions . Valid inputs are the ID number of a trace, NULL, 0, or DEFAULT. NULL, 0, and DEFAULT are equivalent values in this context. Specify NULL, 0, or DEFAULT to return information for all traces in the instance of SQL Server. 1= Trace options. For more information, see @options in This feature will be r'
+tags: ["system", "function"]
 pubDate: 2026-05-29
+syntax: 'sys.fn_trace_getinfo ( { trace_id | NULL | 0 | DEFAULT } )'
 ---
 
 ## Description
-(Transact-SQL)
 
-.
+Returns information about a specified trace or all existing traces. Transact-SQL syntax conventions . Valid inputs are the ID number of a trace, NULL, 0, or DEFAULT. NULL, 0, and DEFAULT are equivalent values in this context. Specify NULL, 0, or DEFAULT to return information for all traces in the instance of SQL Server. 1= Trace options. For more information, see @options in This feature will be removed in a future version of SQL Server. Avoid using this feature in
 
-2 = File name
+## Syntax
 
-3 = Max size
+```sql
+sys.fn_trace_getinfo ( { trace_id | NULL | 0 | DEFAULT } )
+```
 
-4 = Stop time
+## Permissions
 
-5 = Current trace status. 0 = stopped. 1 = running.
+Requires ALTER TRACE permission. sys.fn_trace_geteventinfo (Transact-SQL) sys.fn_trace_getinfo (Transact-SQL) sp_trace_generateevent (Transact-SQL) SQL Server Event Class Reference SQL Trace Related content
 
-value
+## Examples
 
-sql_variant
-
-Information about the property of the trace specified.
-
-When passed the ID of a specific trace, fn_trace_getinfo returns information about that trace.
-
-When passed an invalid ID, this function returns an empty rowset.
-
-fn_trace_getinfo appends a .trc extension to the name of any trace file included in its result set.
-
-For information on defining a trace, see
-
-sp_trace_create (Transact-SQL)
-
-. For similar information
-
-about trace filters, see
-
-sys.fn_trace_getfilterinfo (Transact-SQL)
-
-.
-
-For a complete example of using trace stored procedures, see
-
-Create a Trace (Transact-SQL)
-
-.
-
-Requires ALTER TRACE permission on the server.
-
-The following example returns information about all active traces.
-
-Create a Trace (Transact-SQL)
-
-sp_trace_create (Transact-SQL)
-
-See Also
-
-sp_trace_generateevent (Transact-SQL)
-
-sp_trace_setevent (Transact-SQL)
-
-sp_trace_setfilter (Transact-SQL)
-
-sp_trace_setstatus (Transact-SQL)
-
-sys.fn_trace_getfilterinfo (Transact-SQL)
-
-sys.fn_trace_geteventinfo (Transact-SQL)
-
-sys.fn_trace_gettable (Transact-SQL)
+### Example 1
 
 ```sql
 SELECT * FROM sys.fn_trace_getinfo(0) ;
