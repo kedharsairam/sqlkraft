@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.5.0] — 2026-05-29
+
+### Added
+
+- **Phase 2: TSQL Diagnostic Scripts** — Populated the `scripts` collection with 270 curated diagnostic and administrative scripts from a local library. 270 articles across 13 categories — architecture (20), automation (29), backup-restore (25), database (76), general (6), high-availability (21), index-maintenance (11), installation (8), migration (3), performance (11), replication (5), security-audit (42), troubleshooting (13)
+- **`scripts_ingester.py`** — Recursive Python ingestion engine that walks source directories, applies sanitization (IP/password/path scrubbing), maps folder names to Zod category enums, extracts descriptions from SQL comments, auto-derives tags, and generates proper YAML frontmatter with file-modification-based pubDate
+- **Origin story blackout** — README.md scrubbed of all PDF-extraction references, homepage index.astro hero/subtitle/footer rephrased as curated DBA reference hub, scripts portal card added to homepage
+- **Expanded scripts category enum** — 16 categories now supported in Zod schema: `high-availability`, `architecture`, `automation`, `backup-restore`, `configuration`, `database`, `general`, `index-maintenance`, `installation`, `migration`, `performance`, `replication`, `security-audit`, `monitoring`, `maintenance`, `troubleshooting`
+- **Search index rebuilt** — 6,536 records across 10 collections (scripts: 270 unique entries)
+- **Zero-error build** — 6,591 pages, zero errors, 148s build time
+
 ## [0.4.0] — 2026-05-29
 
 ### Added

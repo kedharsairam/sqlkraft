@@ -34002,6 +34002,2436 @@
     "collection": "operations"
   },
   {
+    "slug": "100-cpu-or-high-cpu-utilization",
+    "name": "100-cpu-or-high-cpu-utilization",
+    "title": "100-cpu-or-high-cpu-utilization",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "100-io-or-high-io",
+    "name": "100-io-or-high-io",
+    "title": "100-io-or-high-io",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "100-memory-or-high-memory-utilization",
+    "name": "100-memory-or-high-memory-utilization",
+    "title": "100-memory-or-high-memory-utilization",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "18456-error",
+    "name": "18456-error",
+    "title": "18456-error",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "data-file-full",
+    "name": "data-file-full",
+    "title": "data-file-full",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "important-list-of-tables-participating-in-repli",
+    "name": "important-list-of-tables-participating-in-repli",
+    "title": "important-list-of-tables-participating-in-repli",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "log-file-full",
+    "name": "log-file-full",
+    "title": "log-file-full",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "negative-spid",
+    "name": "negative-spid",
+    "title": "negative-spid",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "negative-tlog-file-size",
+    "name": "negative-tlog-file-size",
+    "title": "negative-tlog-file-size",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "overall-system-busy",
+    "name": "overall-system-busy",
+    "title": "overall-system-busy",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "sspi-handshake-error",
+    "name": "sspi-handshake-error",
+    "title": "sspi-handshake-error",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "tempdb-full",
+    "name": "tempdb-full",
+    "title": "tempdb-full",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-add-article-in-replication",
+    "name": "to-add-article-in-replication",
+    "title": "to-add-article-in-replication",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-add-column-in-table",
+    "name": "to-add-column-in-table",
+    "title": "to-add-column-in-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-add-constraint-to-column-in-table",
+    "name": "to-add-constraint-to-column-in-table",
+    "title": "to-add-constraint-to-column-in-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-add-delay-to-execute-command-or-query",
+    "name": "to-add-delay-to-execute-command-or-query",
+    "title": "to-add-delay-to-execute-command-or-query",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-add-login-to-specific-server-role",
+    "name": "to-add-login-to-specific-server-role",
+    "title": "to-add-login-to-specific-server-role",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-add-tde-enabled-databases-to-always-on-ag",
+    "name": "to-add-tde-enabled-databases-to-always-on-ag",
+    "title": "to-add-tde-enabled-databases-to-always-on-ag",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-analyze-buffer-pool-or-manage-buffer-pool",
+    "name": "to-analyze-buffer-pool-or-manage-buffer-pool",
+    "title": "to-analyze-buffer-pool-or-manage-buffer-pool",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-audit-ddl-changes-into-table",
+    "name": "to-audit-ddl-changes-into-table",
+    "title": "to-audit-ddl-changes-into-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-automate-database-snapshot",
+    "name": "to-automate-database-snapshot",
+    "title": "to-automate-database-snapshot",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-avoid-blocking-between-full-and-differential",
+    "name": "to-avoid-blocking-between-full-and-differential",
+    "title": "to-avoid-blocking-between-full-and-differential",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-backup-database",
+    "name": "to-backup-database",
+    "title": "to-backup-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-break-mirroring",
+    "name": "to-break-mirroring",
+    "title": "to-break-mirroring",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-change-connection-timeout-period",
+    "name": "to-change-connection-timeout-period",
+    "title": "to-change-connection-timeout-period",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-change-datatype-of-column-in-table",
+    "name": "to-change-datatype-of-column-in-table",
+    "title": "to-change-datatype-of-column-in-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-change-logshipping-secondary-database-restor",
+    "name": "to-change-logshipping-secondary-database-restor",
+    "title": "to-change-logshipping-secondary-database-restor",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-change-operating-mode-in-mirroring",
+    "name": "to-change-operating-mode-in-mirroring",
+    "title": "to-change-operating-mode-in-mirroring",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-change-password-of-login",
+    "name": "to-change-password-of-login",
+    "title": "to-change-password-of-login",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-change-recovery-model-of-database",
+    "name": "to-change-recovery-model-of-database",
+    "title": "to-change-recovery-model-of-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-change-schema-of-table",
+    "name": "to-change-schema-of-table",
+    "title": "to-change-schema-of-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-access-for-multiple-instances",
+    "name": "to-check-access-for-multiple-instances",
+    "title": "to-check-access-for-multiple-instances",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-auto-close-status-of-database",
+    "name": "to-check-auto-close-status-of-database",
+    "title": "to-check-auto-close-status-of-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-components-in-sql-server",
+    "name": "to-check-components-in-sql-server",
+    "title": "to-check-components-in-sql-server",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-database-id-or-database-name",
+    "name": "to-check-database-id-or-database-name",
+    "title": "to-check-database-id-or-database-name",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-error-log-for-errors",
+    "name": "to-check-error-log-for-errors",
+    "title": "to-check-error-log-for-errors",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-how-much-memory-each-database-is-consu",
+    "name": "to-check-how-much-memory-each-database-is-consu",
+    "title": "to-check-how-much-memory-each-database-is-consu",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-how-much-memory-sql-server-is-consumin",
+    "name": "to-check-how-much-memory-sql-server-is-consumin",
+    "title": "to-check-how-much-memory-sql-server-is-consumin",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-if-database-is-encrypted-or-progress",
+    "name": "to-check-if-database-is-encrypted-or-progress",
+    "title": "to-check-if-database-is-encrypted-or-progress",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-integrity-of-database",
+    "name": "to-check-integrity-of-database",
+    "title": "to-check-integrity-of-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-memory-usage-for-plan-cache",
+    "name": "to-check-memory-usage-for-plan-cache",
+    "title": "to-check-memory-usage-for-plan-cache",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-memory-usage-of-each-memory-clerk",
+    "name": "to-check-memory-usage-of-each-memory-clerk",
+    "title": "to-check-memory-usage-of-each-memory-clerk",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-monthly-growth-of-database",
+    "name": "to-check-monthly-growth-of-database",
+    "title": "to-check-monthly-growth-of-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-page-life-expectancy-buffer-cache-hit",
+    "name": "to-check-page-life-expectancy-buffer-cache-hit",
+    "title": "to-check-page-life-expectancy-buffer-cache-hit",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-recovery-model-of-database",
+    "name": "to-check-recovery-model-of-database",
+    "title": "to-check-recovery-model-of-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-resource-utilization",
+    "name": "to-check-resource-utilization",
+    "title": "to-check-resource-utilization",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-specific-database-is-participating-in",
+    "name": "to-check-specific-database-is-participating-in",
+    "title": "to-check-specific-database-is-participating-in",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-status-of-database-or-state-of-databas",
+    "name": "to-check-status-of-database-or-state-of-databas",
+    "title": "to-check-status-of-database-or-state-of-databas",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-status-of-mirroring",
+    "name": "to-check-status-of-mirroring",
+    "title": "to-check-status-of-mirroring",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-tempdb-configuration",
+    "name": "to-check-tempdb-configuration",
+    "title": "to-check-tempdb-configuration",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-the-backup-status-or-restore-status",
+    "name": "to-check-the-backup-status-or-restore-status",
+    "title": "to-check-the-backup-status-or-restore-status",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-version-number-of-resource-database",
+    "name": "to-check-version-number-of-resource-database",
+    "title": "to-check-version-number-of-resource-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-when-resource-database-was-updated",
+    "name": "to-check-when-resource-database-was-updated",
+    "title": "to-check-when-resource-database-was-updated",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-which-login-are-in-specific-server-rol",
+    "name": "to-check-which-login-are-in-specific-server-rol",
+    "title": "to-check-which-login-are-in-specific-server-rol",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-who-failover-always-on-ag",
+    "name": "to-check-who-failover-always-on-ag",
+    "title": "to-check-who-failover-always-on-ag",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-check-who-is-connected-through-dac",
+    "name": "to-check-who-is-connected-through-dac",
+    "title": "to-check-who-is-connected-through-dac",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-clear-cache-or-to-clear-buffer-pool",
+    "name": "to-clear-cache-or-to-clear-buffer-pool",
+    "title": "to-clear-cache-or-to-clear-buffer-pool",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-commit-or-rollback-transaction",
+    "name": "to-commit-or-rollback-transaction",
+    "title": "to-commit-or-rollback-transaction",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-configure-dagdistributed-availability-group",
+    "name": "to-configure-dagdistributed-availability-group",
+    "title": "to-configure-dagdistributed-availability-group",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-count-the-connections-per-login",
+    "name": "to-count-the-connections-per-login",
+    "title": "to-count-the-connections-per-login",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-application-role",
+    "name": "to-create-application-role",
+    "title": "to-create-application-role",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-clustered-index",
+    "name": "to-create-clustered-index",
+    "title": "to-create-clustered-index",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-column-store-index",
+    "name": "to-create-column-store-index",
+    "title": "to-create-column-store-index",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-contained-database",
+    "name": "to-create-contained-database",
+    "title": "to-create-contained-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-daily-job-monitor-to-check-status-of",
+    "name": "to-create-daily-job-monitor-to-check-status-of",
+    "title": "to-create-daily-job-monitor-to-check-status-of",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-database",
+    "name": "to-create-database",
+    "title": "to-create-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-database-snapshot",
+    "name": "to-create-database-snapshot",
+    "title": "to-create-database-snapshot",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-linked-server",
+    "name": "to-create-linked-server",
+    "title": "to-create-linked-server",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-login",
+    "name": "to-create-login",
+    "title": "to-create-login",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-non-clustered-index",
+    "name": "to-create-non-clustered-index",
+    "title": "to-create-non-clustered-index",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-table",
+    "name": "to-create-table",
+    "title": "to-create-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-temporary-table",
+    "name": "to-create-temporary-table",
+    "title": "to-create-temporary-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-create-user-for-login",
+    "name": "to-create-user-for-login",
+    "title": "to-create-user-for-login",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-deal-with-elastic-job-agent",
+    "name": "to-deal-with-elastic-job-agent",
+    "title": "to-deal-with-elastic-job-agent",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-deal-with-endpoints",
+    "name": "to-deal-with-endpoints",
+    "title": "to-deal-with-endpoints",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-deal-with-missing-indexes",
+    "name": "to-deal-with-missing-indexes",
+    "title": "to-deal-with-missing-indexes",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-deal-with-wait-types",
+    "name": "to-deal-with-wait-types",
+    "title": "to-deal-with-wait-types",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-decrypt-objectstored-procedures-functions",
+    "name": "to-decrypt-objectstored-procedures-functions",
+    "title": "to-decrypt-objectstored-procedures-functions",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-delete-duplicate-rows-in-table",
+    "name": "to-delete-duplicate-rows-in-table",
+    "title": "to-delete-duplicate-rows-in-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-delete-job-or-drop-job",
+    "name": "to-delete-job-or-drop-job",
+    "title": "to-delete-job-or-drop-job",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-deny-permission-or-revoke-permission-to-a-sp",
+    "name": "to-deny-permission-or-revoke-permission-to-a-sp",
+    "title": "to-deny-permission-or-revoke-permission-to-a-sp",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-disable-lock-escalation-on-an-object-or-tabl",
+    "name": "to-disable-lock-escalation-on-an-object-or-tabl",
+    "title": "to-disable-lock-escalation-on-an-object-or-tabl",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-drop-all-orphan-users-or-delete-all-orphan-u",
+    "name": "to-drop-all-orphan-users-or-delete-all-orphan-u",
+    "title": "to-drop-all-orphan-users-or-delete-all-orphan-u",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-drop-column-in-table",
+    "name": "to-drop-column-in-table",
+    "title": "to-drop-column-in-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-drop-database",
+    "name": "to-drop-database",
+    "title": "to-drop-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-drop-login",
+    "name": "to-drop-login",
+    "title": "to-drop-login",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-drop-login-and-its-users",
+    "name": "to-drop-login-and-its-users",
+    "title": "to-drop-login-and-its-users",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-drop-table",
+    "name": "to-drop-table",
+    "title": "to-drop-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-enable-cardinality-estimation-for-all-databa",
+    "name": "to-enable-cardinality-estimation-for-all-databa",
+    "title": "to-enable-cardinality-estimation-for-all-databa",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-enable-database-mail-xps",
+    "name": "to-enable-database-mail-xps",
+    "title": "to-enable-database-mail-xps",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-enable-dynamic-data-masking",
+    "name": "to-enable-dynamic-data-masking",
+    "title": "to-enable-dynamic-data-masking",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-encrypt-backup",
+    "name": "to-encrypt-backup",
+    "title": "to-encrypt-backup",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-encrypt-database-using-transparent-data-encr",
+    "name": "to-encrypt-database-using-transparent-data-encr",
+    "title": "to-encrypt-database-using-transparent-data-encr",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-extract-linked-server-password",
+    "name": "to-extract-linked-server-password",
+    "title": "to-extract-linked-server-password",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-failover-multiple-mirroring-databases-simult",
+    "name": "to-failover-multiple-mirroring-databases-simult",
+    "title": "to-failover-multiple-mirroring-databases-simult",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-find-details-about-database-files",
+    "name": "to-find-details-about-database-files",
+    "title": "to-find-details-about-database-files",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-find-how-many-pages-are-modified-since-last",
+    "name": "to-find-how-many-pages-are-modified-since-last",
+    "title": "to-find-how-many-pages-are-modified-since-last",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-find-missing-index-queries-in-plan-cache",
+    "name": "to-find-missing-index-queries-in-plan-cache",
+    "title": "to-find-missing-index-queries-in-plan-cache",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-find-orphan-users-in-database",
+    "name": "to-find-orphan-users-in-database",
+    "title": "to-find-orphan-users-in-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-find-out-logical-name-and-physical-name-of-d",
+    "name": "to-find-out-logical-name-and-physical-name-of-d",
+    "title": "to-find-out-logical-name-and-physical-name-of-d",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-find-out-the-list-of-profiles-in-database-ma",
+    "name": "to-find-out-the-list-of-profiles-in-database-ma",
+    "title": "to-find-out-the-list-of-profiles-in-database-ma",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-find-outdated-statistics",
+    "name": "to-find-outdated-statistics",
+    "title": "to-find-outdated-statistics",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-find-sid-of-logins-and-users",
+    "name": "to-find-sid-of-logins-and-users",
+    "title": "to-find-sid-of-logins-and-users",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-fix-fragmentation-in-indexing",
+    "name": "to-fix-fragmentation-in-indexing",
+    "title": "to-fix-fragmentation-in-indexing",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-fix-orphan-user-issue",
+    "name": "to-fix-orphan-user-issue",
+    "title": "to-fix-orphan-user-issue",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-generate-script-to-attach-and-detach-all-dat",
+    "name": "to-generate-script-to-attach-and-detach-all-dat",
+    "title": "to-generate-script-to-attach-and-detach-all-dat",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-generate-script-to-change-the-database-owner",
+    "name": "to-generate-script-to-change-the-database-owner",
+    "title": "to-generate-script-to-change-the-database-owner",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-generate-script-to-change-the-job-owner-to-s",
+    "name": "to-generate-script-to-change-the-job-owner-to-s",
+    "title": "to-generate-script-to-change-the-job-owner-to-s",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-generate-script-to-change-the-recovery-model",
+    "name": "to-generate-script-to-change-the-recovery-model",
+    "title": "to-generate-script-to-change-the-recovery-model",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-generate-script-to-drop-all-databases",
+    "name": "to-generate-script-to-drop-all-databases",
+    "title": "to-generate-script-to-drop-all-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-generate-script-to-enable-query-store-on-all",
+    "name": "to-generate-script-to-enable-query-store-on-all",
+    "title": "to-generate-script-to-enable-query-store-on-all",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-generate-script-to-failover-multiple-always",
+    "name": "to-generate-script-to-failover-multiple-always",
+    "title": "to-generate-script-to-failover-multiple-always",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-generate-script-to-move-all-user-databases-f",
+    "name": "to-generate-script-to-move-all-user-databases-f",
+    "title": "to-generate-script-to-move-all-user-databases-f",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-generate-script-to-move-tempdb-files",
+    "name": "to-generate-script-to-move-tempdb-files",
+    "title": "to-generate-script-to-move-tempdb-files",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-generate-script-to-take-multiple-databases-o",
+    "name": "to-generate-script-to-take-multiple-databases-o",
+    "title": "to-generate-script-to-take-multiple-databases-o",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-alert-for-blocking",
+    "name": "to-get-alert-for-blocking",
+    "title": "to-get-alert-for-blocking",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-alert-for-longer-running-queries",
+    "name": "to-get-alert-for-longer-running-queries",
+    "title": "to-get-alert-for-longer-running-queries",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-alert-if-database-owner-is-not-sa",
+    "name": "to-get-alert-if-database-owner-is-not-sa",
+    "title": "to-get-alert-if-database-owner-is-not-sa",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-alert-if-job-owner-is-not-sa",
+    "name": "to-get-alert-if-job-owner-is-not-sa",
+    "title": "to-get-alert-if-job-owner-is-not-sa",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-alert-when-data-file-is-full",
+    "name": "to-get-alert-when-data-file-is-full",
+    "title": "to-get-alert-when-data-file-is-full",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-alert-when-database-recovery-model-is-ch",
+    "name": "to-get-alert-when-database-recovery-model-is-ch",
+    "title": "to-get-alert-when-database-recovery-model-is-ch",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-alert-when-job-is-enabled-and-disabled",
+    "name": "to-get-alert-when-job-is-enabled-and-disabled",
+    "title": "to-get-alert-when-job-is-enabled-and-disabled",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-alert-when-log-file-is-full",
+    "name": "to-get-alert-when-log-file-is-full",
+    "title": "to-get-alert-when-log-file-is-full",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-alert-when-page-is-corrupted-page-or-sus",
+    "name": "to-get-alert-when-page-is-corrupted-page-or-sus",
+    "title": "to-get-alert-when-page-is-corrupted-page-or-sus",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-alert-whenever-instance-is-restarted",
+    "name": "to-get-alert-whenever-instance-is-restarted",
+    "title": "to-get-alert-whenever-instance-is-restarted",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-always-on-availability-group-listener-de",
+    "name": "to-get-always-on-availability-group-listener-de",
+    "title": "to-get-always-on-availability-group-listener-de",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-an-email-notification",
+    "name": "to-get-an-email-notification",
+    "title": "to-get-an-email-notification",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-backup-reports-of-multiple-servers-to-em",
+    "name": "to-get-backup-reports-of-multiple-servers-to-em",
+    "title": "to-get-backup-reports-of-multiple-servers-to-em",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-info-about-articles-in-replication",
+    "name": "to-get-info-about-articles-in-replication",
+    "title": "to-get-info-about-articles-in-replication",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-list-of-endpoints-while-performing-mirro",
+    "name": "to-get-list-of-endpoints-while-performing-mirro",
+    "title": "to-get-list-of-endpoints-while-performing-mirro",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-report-of-ddl-changes",
+    "name": "to-get-report-of-ddl-changes",
+    "title": "to-get-report-of-ddl-changes",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-role-and-status-of-machines-in-mirroring",
+    "name": "to-get-role-and-status-of-machines-in-mirroring",
+    "title": "to-get-role-and-status-of-machines-in-mirroring",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-get-the-information-of-backup-file",
+    "name": "to-get-the-information-of-backup-file",
+    "title": "to-get-the-information-of-backup-file",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-grant-or-revoke-access-to-view-masked-rows",
+    "name": "to-grant-or-revoke-access-to-view-masked-rows",
+    "title": "to-grant-or-revoke-access-to-view-masked-rows",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-grant-permission-to-a-specific-login",
+    "name": "to-grant-permission-to-a-specific-login",
+    "title": "to-grant-permission-to-a-specific-login",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-hide-table-or-unhide-table",
+    "name": "to-hide-table-or-unhide-table",
+    "title": "to-hide-table-or-unhide-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-blockings",
+    "name": "to-identify-blockings",
+    "title": "to-identify-blockings",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-deadlock",
+    "name": "to-identify-deadlock",
+    "title": "to-identify-deadlock",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-differential-base-lsn",
+    "name": "to-identify-differential-base-lsn",
+    "title": "to-identify-differential-base-lsn",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-duplicate-rows-in-table",
+    "name": "to-identify-duplicate-rows-in-table",
+    "title": "to-identify-duplicate-rows-in-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-recovery-model-of-all-databases",
+    "name": "to-identify-recovery-model-of-all-databases",
+    "title": "to-identify-recovery-model-of-all-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-the-actual-database-file-path-of-a",
+    "name": "to-identify-the-actual-database-file-path-of-a",
+    "title": "to-identify-the-actual-database-file-path-of-a",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-the-lead-blocker-or-blocking-chain",
+    "name": "to-identify-the-lead-blocker-or-blocking-chain",
+    "title": "to-identify-the-lead-blocker-or-blocking-chain",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-unused-indexes",
+    "name": "to-identify-unused-indexes",
+    "title": "to-identify-unused-indexes",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-what-query-is-executing-by-specific",
+    "name": "to-identify-what-query-is-executing-by-specific",
+    "title": "to-identify-what-query-is-executing-by-specific",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-when-was-password-got-changed",
+    "name": "to-identify-when-was-password-got-changed",
+    "title": "to-identify-when-was-password-got-changed",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-which-person-is-running-specific-se",
+    "name": "to-identify-which-person-is-running-specific-se",
+    "title": "to-identify-which-person-is-running-specific-se",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-who-are-part-of-ad-group",
+    "name": "to-identify-who-are-part-of-ad-group",
+    "title": "to-identify-who-are-part-of-ad-group",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-who-has-sysadmin-permissions",
+    "name": "to-identify-who-has-sysadmin-permissions",
+    "title": "to-identify-who-has-sysadmin-permissions",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-identify-who-is-connected-through-ssms-sql",
+    "name": "to-identify-who-is-connected-through-ssms-sql",
+    "title": "to-identify-who-is-connected-through-ssms-sql",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-increase-mtl-memtoleave-size",
+    "name": "to-increase-mtl-memtoleave-size",
+    "title": "to-increase-mtl-memtoleave-size",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-insert-data-in-table",
+    "name": "to-insert-data-in-table",
+    "title": "to-insert-data-in-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-insert-data-into-linked-server",
+    "name": "to-insert-data-into-linked-server",
+    "title": "to-insert-data-into-linked-server",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-kill-all-sessions-of-user-databases",
+    "name": "to-kill-all-sessions-of-user-databases",
+    "title": "to-kill-all-sessions-of-user-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-kill-all-sleeping-sessions",
+    "name": "to-kill-all-sleeping-sessions",
+    "title": "to-kill-all-sleeping-sessions",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-kill-all-sleeping-sessions-of-logins-automat",
+    "name": "to-kill-all-sleeping-sessions-of-logins-automat",
+    "title": "to-kill-all-sleeping-sessions-of-logins-automat",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-know-when-was-dbcc-checkdb-last-ran",
+    "name": "to-know-when-was-dbcc-checkdb-last-ran",
+    "title": "to-know-when-was-dbcc-checkdb-last-ran",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-log-who-created-a-job-and-renamed-a-job",
+    "name": "to-log-who-created-a-job-and-renamed-a-job",
+    "title": "to-log-who-created-a-job-and-renamed-a-job",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-move-master-database-files-to-different-loca",
+    "name": "to-move-master-database-files-to-different-loca",
+    "title": "to-move-master-database-files-to-different-loca",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-move-mdf-and-ndf-files-of-all-user-databases",
+    "name": "to-move-mdf-and-ndf-files-of-all-user-databases",
+    "title": "to-move-mdf-and-ndf-files-of-all-user-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-move-tempdb-to-different-location",
+    "name": "to-move-tempdb-to-different-location",
+    "title": "to-move-tempdb-to-different-location",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-move-user-database-files-to-different-locati",
+    "name": "to-move-user-database-files-to-different-locati",
+    "title": "to-move-user-database-files-to-different-locati",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-overwrite-the-existing-backup-file-while-tak",
+    "name": "to-overwrite-the-existing-backup-file-while-tak",
+    "title": "to-overwrite-the-existing-backup-file-while-tak",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-perform-automatic-database-refresh",
+    "name": "to-perform-automatic-database-refresh",
+    "title": "to-perform-automatic-database-refresh",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-perform-checksum-of-database",
+    "name": "to-perform-checksum-of-database",
+    "title": "to-perform-checksum-of-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-perform-failover-in-always-on-ag",
+    "name": "to-perform-failover-in-always-on-ag",
+    "title": "to-perform-failover-in-always-on-ag",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-perform-force-failover-in-always-on-ag",
+    "name": "to-perform-force-failover-in-always-on-ag",
+    "title": "to-perform-force-failover-in-always-on-ag",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-perform-force-failover-in-mirroring",
+    "name": "to-perform-force-failover-in-mirroring",
+    "title": "to-perform-force-failover-in-mirroring",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-perform-normal-failover-in-mirroring",
+    "name": "to-perform-normal-failover-in-mirroring",
+    "title": "to-perform-normal-failover-in-mirroring",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-perform-page-restore",
+    "name": "to-perform-page-restore",
+    "title": "to-perform-page-restore",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-perform-point-in-time-restore",
+    "name": "to-perform-point-in-time-restore",
+    "title": "to-perform-point-in-time-restore",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-perform-post-configuration-steps",
+    "name": "to-perform-post-configuration-steps",
+    "title": "to-perform-post-configuration-steps",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-put-database-in-emergency-state",
+    "name": "to-put-database-in-emergency-state",
+    "title": "to-put-database-in-emergency-state",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-put-database-in-offline-state-or-online-stat",
+    "name": "to-put-database-in-offline-state-or-online-stat",
+    "title": "to-put-database-in-offline-state-or-online-stat",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-put-the-database-in-single-user-or-multi-use",
+    "name": "to-put-the-database-in-single-user-or-multi-use",
+    "title": "to-put-the-database-in-single-user-or-multi-use",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-remove-mask-on-any-column",
+    "name": "to-remove-mask-on-any-column",
+    "title": "to-remove-mask-on-any-column",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-remove-restricted-user",
+    "name": "to-remove-restricted-user",
+    "title": "to-remove-restricted-user",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-rename-column-in-table",
+    "name": "to-rename-column-in-table",
+    "title": "to-rename-column-in-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-rename-logical-filename-of-a-database",
+    "name": "to-rename-logical-filename-of-a-database",
+    "title": "to-rename-logical-filename-of-a-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-rename-physical-filename-of-a-database",
+    "name": "to-rename-physical-filename-of-a-database",
+    "title": "to-rename-physical-filename-of-a-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-rename-table",
+    "name": "to-rename-table",
+    "title": "to-rename-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-replicate-data-from-table-a-to-table-b-in-da",
+    "name": "to-replicate-data-from-table-a-to-table-b-in-da",
+    "title": "to-replicate-data-from-table-a-to-table-b-in-da",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-reset-status-of-database",
+    "name": "to-reset-status-of-database",
+    "title": "to-reset-status-of-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-resolve-master-corruption",
+    "name": "to-resolve-master-corruption",
+    "title": "to-resolve-master-corruption",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-resolve-model-corruption",
+    "name": "to-resolve-model-corruption",
+    "title": "to-resolve-model-corruption",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-resolve-msdb-corruption",
+    "name": "to-resolve-msdb-corruption",
+    "title": "to-resolve-msdb-corruption",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-resolve-suspect-state",
+    "name": "to-resolve-suspect-state",
+    "title": "to-resolve-suspect-state",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-restore-backup-from-a-specific-backup-in-the",
+    "name": "to-restore-backup-from-a-specific-backup-in-the",
+    "title": "to-restore-backup-from-a-specific-backup-in-the",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-restore-database-or-point-of-failure",
+    "name": "to-restore-database-or-point-of-failure",
+    "title": "to-restore-database-or-point-of-failure",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-restore-encrypted-database-in-another-instan",
+    "name": "to-restore-encrypted-database-in-another-instan",
+    "title": "to-restore-encrypted-database-in-another-instan",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-resume-mirroring",
+    "name": "to-resume-mirroring",
+    "title": "to-resume-mirroring",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-run-checkpoint",
+    "name": "to-run-checkpoint",
+    "title": "to-run-checkpoint",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-run-entire-session-in-specific-isolation-lev",
+    "name": "to-run-entire-session-in-specific-isolation-lev",
+    "title": "to-run-entire-session-in-specific-isolation-lev",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-run-same-command-or-run-same-query-on-multip",
+    "name": "to-run-same-command-or-run-same-query-on-multip",
+    "title": "to-run-same-command-or-run-same-query-on-multip",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-run-specific-command-with-read-uncommitted",
+    "name": "to-run-specific-command-with-read-uncommitted",
+    "title": "to-run-specific-command-with-read-uncommitted",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-script-out-logins-roles-and-permissions-t",
+    "name": "to-script-out-logins-roles-and-permissions-t",
+    "title": "to-script-out-logins-roles-and-permissions-t",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-see-the-list-of-mails",
+    "name": "to-see-the-list-of-mails",
+    "title": "to-see-the-list-of-mails",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-select-data-from-linked-server",
+    "name": "to-select-data-from-linked-server",
+    "title": "to-select-data-from-linked-server",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-set-deadlock-priority-for-command-or-query",
+    "name": "to-set-deadlock-priority-for-command-or-query",
+    "title": "to-set-deadlock-priority-for-command-or-query",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-setup-blitz-stored-procedure",
+    "name": "to-setup-blitz-stored-procedure",
+    "title": "to-setup-blitz-stored-procedure",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-setup-whoisactive-stored-procedure",
+    "name": "to-setup-whoisactive-stored-procedure",
+    "title": "to-setup-whoisactive-stored-procedure",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-shrink-all-log-files",
+    "name": "to-shrink-all-log-files",
+    "title": "to-shrink-all-log-files",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-shrink-log-file",
+    "name": "to-shrink-log-file",
+    "title": "to-shrink-log-file",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-take-backup-to-azure",
+    "name": "to-take-backup-to-azure",
+    "title": "to-take-backup-to-azure",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-track-database-level-changes",
+    "name": "to-track-database-level-changes",
+    "title": "to-track-database-level-changes",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-track-table-drop",
+    "name": "to-track-table-drop",
+    "title": "to-track-table-drop",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-transfer-maintenance-plans-from-one-instance",
+    "name": "to-transfer-maintenance-plans-from-one-instance",
+    "title": "to-transfer-maintenance-plans-from-one-instance",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-truncate-table",
+    "name": "to-truncate-table",
+    "title": "to-truncate-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-turn-on-auto-close-status-of-database",
+    "name": "to-turn-on-auto-close-status-of-database",
+    "title": "to-turn-on-auto-close-status-of-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-update-meta-data-in-database",
+    "name": "to-update-meta-data-in-database",
+    "title": "to-update-meta-data-in-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-update-statistics-of-database",
+    "name": "to-update-statistics-of-database",
+    "title": "to-update-statistics-of-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-update-user-role-in-database",
+    "name": "to-update-user-role-in-database",
+    "title": "to-update-user-role-in-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-verify-service-accounts-have-connect-permiss",
+    "name": "to-verify-service-accounts-have-connect-permiss",
+    "title": "to-verify-service-accounts-have-connect-permiss",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-verify-the-backup-file",
+    "name": "to-verify-the-backup-file",
+    "title": "to-verify-the-backup-file",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-allocation-units-for-table-by-name",
+    "name": "to-view-allocation-units-for-table-by-name",
+    "title": "to-view-allocation-units-for-table-by-name",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-already-executed-queries-list",
+    "name": "to-view-already-executed-queries-list",
+    "title": "to-view-already-executed-queries-list",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-backup-history-of-all-databases",
+    "name": "to-view-backup-history-of-all-databases",
+    "title": "to-view-backup-history-of-all-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-backup-schedules-of-all-databases",
+    "name": "to-view-backup-schedules-of-all-databases",
+    "title": "to-view-backup-schedules-of-all-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-content-inside-a-page",
+    "name": "to-view-content-inside-a-page",
+    "title": "to-view-content-inside-a-page",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-cpu-utilization-history",
+    "name": "to-view-cpu-utilization-history",
+    "title": "to-view-cpu-utilization-history",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-current-running-queries-list",
+    "name": "to-view-current-running-queries-list",
+    "title": "to-view-current-running-queries-list",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-data-in-table",
+    "name": "to-view-data-in-table",
+    "title": "to-view-data-in-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-details-of-instance-services",
+    "name": "to-view-details-of-instance-services",
+    "title": "to-view-details-of-instance-services",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-error-log",
+    "name": "to-view-error-log",
+    "title": "to-view-error-log",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-execution-plan-for-specific-session",
+    "name": "to-view-execution-plan-for-specific-session",
+    "title": "to-view-execution-plan-for-specific-session",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-how-much-space-table-is-consuming",
+    "name": "to-view-how-much-space-table-is-consuming",
+    "title": "to-view-how-much-space-table-is-consuming",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-index-details",
+    "name": "to-view-index-details",
+    "title": "to-view-index-details",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-index-details-of-table",
+    "name": "to-view-index-details-of-table",
+    "title": "to-view-index-details-of-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-instance-level-settings",
+    "name": "to-view-instance-level-settings",
+    "title": "to-view-instance-level-settings",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-job-history",
+    "name": "to-view-job-history",
+    "title": "to-view-job-history",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-all-log-records",
+    "name": "to-view-list-of-all-log-records",
+    "title": "to-view-list-of-all-log-records",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-all-the-indexes-in-database",
+    "name": "to-view-list-of-all-the-indexes-in-database",
+    "title": "to-view-list-of-all-the-indexes-in-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-all-users-in-database",
+    "name": "to-view-list-of-all-users-in-database",
+    "title": "to-view-list-of-all-users-in-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-certificates-in-database",
+    "name": "to-view-list-of-certificates-in-database",
+    "title": "to-view-list-of-certificates-in-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-connections",
+    "name": "to-view-list-of-connections",
+    "title": "to-view-list-of-connections",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-corrupted-pages-or-suspect-page",
+    "name": "to-view-list-of-corrupted-pages-or-suspect-page",
+    "title": "to-view-list-of-corrupted-pages-or-suspect-page",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-database-encryption-keys",
+    "name": "to-view-list-of-database-encryption-keys",
+    "title": "to-view-list-of-database-encryption-keys",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-databases",
+    "name": "to-view-list-of-databases",
+    "title": "to-view-list-of-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-databases-participating-in-log",
+    "name": "to-view-list-of-databases-participating-in-log",
+    "title": "to-view-list-of-databases-participating-in-log",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-drives-participating-in-cluster",
+    "name": "to-view-list-of-drives-participating-in-cluster",
+    "title": "to-view-list-of-drives-participating-in-cluster",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-encrypted-databases",
+    "name": "to-view-list-of-encrypted-databases",
+    "title": "to-view-list-of-encrypted-databases",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-jobs-and-its-details",
+    "name": "to-view-list-of-jobs-and-its-details",
+    "title": "to-view-list-of-jobs-and-its-details",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-keys-in-database",
+    "name": "to-view-list-of-keys-in-database",
+    "title": "to-view-list-of-keys-in-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-logins-in-instance",
+    "name": "to-view-list-of-logins-in-instance",
+    "title": "to-view-list-of-logins-in-instance",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-memory-clerks",
+    "name": "to-view-list-of-memory-clerks",
+    "title": "to-view-list-of-memory-clerks",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-sessions",
+    "name": "to-view-list-of-sessions",
+    "title": "to-view-list-of-sessions",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-tables-in-database",
+    "name": "to-view-list-of-tables-in-database",
+    "title": "to-view-list-of-tables-in-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-tables-participating-in-replica",
+    "name": "to-view-list-of-tables-participating-in-replica",
+    "title": "to-view-list-of-tables-participating-in-replica",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-tasks-threads-and-schedulers",
+    "name": "to-view-list-of-tasks-threads-and-schedulers",
+    "title": "to-view-list-of-tasks-threads-and-schedulers",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-top-10-high-cpu-utilization-que",
+    "name": "to-view-list-of-top-10-high-cpu-utilization-que",
+    "title": "to-view-list-of-top-10-high-cpu-utilization-que",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-list-of-top-10-high-memory-utilization",
+    "name": "to-view-list-of-top-10-high-memory-utilization",
+    "title": "to-view-list-of-top-10-high-memory-utilization",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-locks",
+    "name": "to-view-locks",
+    "title": "to-view-locks",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-log-file-size-and-log-space-used-of-all",
+    "name": "to-view-log-file-size-and-log-space-used-of-all",
+    "title": "to-view-log-file-size-and-log-space-used-of-all",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-masking-function-of-column-in-table",
+    "name": "to-view-masking-function-of-column-in-table",
+    "title": "to-view-masking-function-of-column-in-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-size-of-database",
+    "name": "to-view-size-of-database",
+    "title": "to-view-size-of-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-size-of-log-in-database",
+    "name": "to-view-size-of-log-in-database",
+    "title": "to-view-size-of-log-in-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-size-of-table",
+    "name": "to-view-size-of-table",
+    "title": "to-view-size-of-table",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-sql-server-details-or-instance-details",
+    "name": "to-view-sql-server-details-or-instance-details",
+    "title": "to-view-sql-server-details-or-instance-details",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-table-page-information",
+    "name": "to-view-table-page-information",
+    "title": "to-view-table-page-information",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-table-partitions-by-name",
+    "name": "to-view-table-partitions-by-name",
+    "title": "to-view-table-partitions-by-name",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-tasks-transactions-spid-etc",
+    "name": "to-view-tasks-transactions-spid-etc",
+    "title": "to-view-tasks-transactions-spid-etc",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-the-complete-list-of-all-usernames-in-i",
+    "name": "to-view-the-complete-list-of-all-usernames-in-i",
+    "title": "to-view-the-complete-list-of-all-usernames-in-i",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-the-list-of-instances-installed-in-the",
+    "name": "to-view-the-list-of-instances-installed-in-the",
+    "title": "to-view-the-list-of-instances-installed-in-the",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-the-list-of-jobs",
+    "name": "to-view-the-list-of-jobs",
+    "title": "to-view-the-list-of-jobs",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-the-list-of-linked-servers",
+    "name": "to-view-the-list-of-linked-servers",
+    "title": "to-view-the-list-of-linked-servers",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-the-list-of-objects",
+    "name": "to-view-the-list-of-objects",
+    "title": "to-view-the-list-of-objects",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-the-list-of-stored-procedures",
+    "name": "to-view-the-list-of-stored-procedures",
+    "title": "to-view-the-list-of-stored-procedures",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-the-list-of-views",
+    "name": "to-view-the-list-of-views",
+    "title": "to-view-the-list-of-views",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-vlfs-in-database",
+    "name": "to-view-vlfs-in-database",
+    "title": "to-view-vlfs-in-database",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
+    "slug": "to-view-which-jobs-are-disabled",
+    "name": "to-view-which-jobs-are-disabled",
+    "title": "to-view-which-jobs-are-disabled",
+    "category": "general",
+    "tags": [],
+    "description": "",
+    "collection": "scripts"
+  },
+  {
     "slug": "sys-sp-add-agent-parameter",
     "name": "sys-sp-add-agent-parameter",
     "title": "sys-sp-add-agent-parameter",
