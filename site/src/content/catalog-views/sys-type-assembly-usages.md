@@ -1,8 +1,8 @@
 ---
-name: 'sys.type_assembly_usages'
-title: 'sys.type_assembly_usages'
-category: 'compatibility'
-description: 'Contains one row per type to assembly reference. To return the name of the type, join to the role. For more information, see Scalar Types Catalog Views (Transact-SQL)'
+name: "sys.type_assembly_usages"
+title: "sys.type_assembly_usages"
+category: "compatibility"
+description: "Contains one row per type to assembly reference. To return the name of the type, join to the role. For more information, see Scalar Types Catalog Views (Transact-SQL)"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

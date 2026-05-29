@@ -1,8 +1,8 @@
 ---
-name: 'CONNECTIONPROPERTY'
-title: 'CONNECTIONPROPERTY'
-category: 'statements'
-description: ''
+name: "CONNECTIONPROPERTY"
+title: "CONNECTIONPROPERTY"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

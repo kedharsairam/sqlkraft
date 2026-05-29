@@ -1,8 +1,8 @@
 ---
-name: 'Future Keywords'
-title: 'Future Keywords'
-category: 'statements'
-description: 'The following keywords could be reserved in future releases of SQL Server as new features are'
+name: "Future Keywords"
+title: "Future Keywords"
+category: "statements"
+description: "The following keywords could be reserved in future releases of SQL Server as new features are"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -33,8 +33,8 @@ AFTER
 
 IMMEDIATE
 
-
 ## RETURNS
+
 AGGREGATE
 
 INDICATOR

@@ -1,7 +1,7 @@
 ---
-name: 'To Generate Script to Change the Recovery Model'
-title: 'To Generate Script to Change the Recovery Model'
-description: 'modify the command accordingly'
+name: "To Generate Script to Change the Recovery Model"
+title: "To Generate Script to Change the Recovery Model"
+description: "modify the command accordingly"
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

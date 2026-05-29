@@ -3,9 +3,9 @@ title: "Licensing & billing"
 topic: "azure-synapse"
 description: |
   This article explains how to manage licensing and billing of SQL Server enabled by Azure Arc.
-  
+
   SQL Server enabled by Azure Arc directly supports only the core-based licensing methods. For
-  
+
   information
 tags:
   - "azure-synapse"

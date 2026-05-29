@@ -3,17 +3,17 @@ title: "OLE automation sample script"
 topic: "spatial-data"
 description: |
   Article
-  
+
   •
-  
+
   10/17/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article contains an example of a Transact-SQL statement batch that uses the OLE
-  
+
   Automation stored procedures to create and use a SQL-DMO SQLServe
 tags:
   - "spatial-data"

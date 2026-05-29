@@ -3,18 +3,17 @@ title: "Deploy a dacpac"
 topic: "ssms"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Deploying, or publishing, a registered data-tier application (DAC) from a DAC package to an
-  
-  
+
 tags:
   - "ssms"
   - "deploy-a-dacpac"

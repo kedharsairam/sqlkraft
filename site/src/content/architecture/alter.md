@@ -3,21 +3,21 @@ title: "Alter"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Assemblies that are registered in SQL Server can be updated from a more recent version using
-  
+
   the
-  
+
   statement. To update an assembly, use the
-  
+
   statement
 tags:
   - "clr-integration"

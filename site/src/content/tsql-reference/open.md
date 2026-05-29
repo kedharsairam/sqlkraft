@@ -1,10 +1,10 @@
 ---
-name: 'OPEN'
-title: 'OPEN'
-category: 'statements'
-description: ''
+name: "OPEN"
+title: "OPEN"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

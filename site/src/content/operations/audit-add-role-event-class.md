@@ -3,24 +3,24 @@ title: "Audit Add Role Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class occurs when a database role is added to or removed from a
-  
-  database. This event class 
+
+  database. This event class
 tags:
   - "event-classes"
   - "audit-add-role-event-class"

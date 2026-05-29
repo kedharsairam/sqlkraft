@@ -1,8 +1,8 @@
 ---
-name: 'Removing a FILESTREAM Container'
-title: 'Removing a FILESTREAM Container'
-category: 'statements'
-description: 'statement that modifies a table with any index in an offline filegroup'
+name: "Removing a FILESTREAM Container"
+title: "Removing a FILESTREAM Container"
+category: "statements"
+description: "statement that modifies a table with any index in an offline filegroup"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

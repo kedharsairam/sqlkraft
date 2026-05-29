@@ -3,15 +3,15 @@ title: "Pre/post deployment scripts"
 topic: "ssms"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Pre-deployment and post-deployment scripts are SQL scripts that are included in the project t
 tags:
   - "ssms"

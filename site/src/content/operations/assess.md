@@ -3,23 +3,23 @@ title: "Assess"
 topic: "azure-synapse"
 description: |
   SQL Server enabled by Azure Arc
-  
+
   Article
-  
+
   •
-  
+
   09/09/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The
-  
+
   best practices assessment
-  
+
   feature provides a mechanism to evaluate the configuration of
-  
+
   your SQL Server instanc
 tags:
   - "azure-synapse"

@@ -1,11 +1,11 @@
 ---
-name: 'sys.external_libraries'
-title: 'sys.external_libraries'
-category: 'external'
-description: 'Summarize this article for me SQL Server 2017 (14.x) and later versions Azure SQL Managed Instance catalog view supports the management of package libraries related to external runtimes such as R, Python, and Java. lists a row for each external library that is uploaded into the database. ID of the external library object. Name of the external library. Is unique within the database per ID of the pr'
+name: "sys.external_libraries"
+title: "sys.external_libraries"
+category: "external"
+description: "Summarize this article for me SQL Server 2017 (14.x) and later versions Azure SQL Managed Instance catalog view supports the management of package libraries related to external runtimes such as R, Python, and Java. lists a row for each external library that is uploaded into the database. ID of the external library object. Name of the external library. Is unique within the database per ID of the pr"
 tags: ["external", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'sys.external_libraries'
+syntax: "sys.external_libraries"
 ---
 
 ## Description

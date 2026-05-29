@@ -3,15 +3,15 @@ title: "Create for high availability"
 topic: "linux-operations"
 description: |
   10/20/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article presents supported deployment configurations for SQL Server Always On
-  
+
   availability groups on Linux servers. An availability group supports h
 tags:
   - "linux-operations"

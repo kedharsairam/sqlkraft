@@ -3,17 +3,17 @@ title: "Configure HealthCheckTimeout"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The HealthCheckTimeout setting is used to specify the length of time, in milliseconds, that the
-  
+
   SQL Server resource DLL should wait for information re
 tags:
   - "high-availability"

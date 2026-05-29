@@ -1,8 +1,8 @@
 ---
-name: 'level 170'
-title: 'level 170'
-category: 'statements'
-description: 'compatibility level (140). Database compatibility level 130 retained the SQL Server 2016'
+name: "level 170"
+title: "level 170"
+category: "statements"
+description: "compatibility level (140). Database compatibility level 130 retained the SQL Server 2016"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -3,25 +3,25 @@ title: "XML Schema Collections"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   10/17/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   As described in the
-  
+
   xml (Transact-SQL)
-  
+
   article, SQL Server provides native storage of XML data
-  
+
   throu
 tags:
   - "xml-data"

@@ -3,18 +3,18 @@ title: "Lesson 3: Creating the Initiator Conversation Objects"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   In this lesson, you learn to build all the objects that enable a database to initiate a conversation
-  
+
   with another database.
-  
-  Copy and 
+
+  Copy and
 tags:
   - "service-broker"
   - "lesson-3-creating-the-initiator-conversation-objects"

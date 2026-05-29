@@ -1,7 +1,7 @@
 ---
-title: 'Use hints with views'
-topic: 'query-processing'
-description: 'Hints that are placed on views in a query might conflict with other hints that are discovered'
+title: "Use hints with views"
+topic: "query-processing"
+description: "Hints that are placed on views in a query might conflict with other hints that are discovered"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

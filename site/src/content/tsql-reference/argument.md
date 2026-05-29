@@ -1,8 +1,8 @@
 ---
-name: 'Argument'
-title: 'Argument'
-category: 'statements'
-description: ') value as the number of minutes (signed). This statement'
+name: "Argument"
+title: "Argument"
+category: "statements"
+description: ") value as the number of minutes (signed). This statement"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -11,14 +11,14 @@ First Friday,
 
 1-7 days of year
 
-
 ## returns the
+
 (
 
 ) value as the number of minutes (signed). This statement
 
-
 ## returns a time zone offset of 310 minutes:
+
 SQL
 
 renders the tzoffset value as follows:
@@ -33,8 +33,8 @@ or
 
 ,
 
-
 ## returns the time offset in minutes. Exception: other date / time data types.
+
 Parameters of all other types result in an error.
 
 For a
@@ -45,8 +45,8 @@ date
 
 value,
 
-
 ## returns seconds as 00.
+
 If the
 
 date

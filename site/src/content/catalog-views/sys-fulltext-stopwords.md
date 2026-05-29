@@ -1,8 +1,8 @@
 ---
-name: 'sys.fulltext_stopwords'
-title: 'sys.fulltext_stopwords'
-category: 'full-text'
-description: 'Contains a row per stopword for all stoplists in the database. belongs. This ID is unique within the The term to be considered for a stop-word match. Is either the value of the alias in the value of the locale identifier ( ), or is the string representation of The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some per'
+name: "sys.fulltext_stopwords"
+title: "sys.fulltext_stopwords"
+category: "full-text"
+description: "Contains a row per stopword for all stoplists in the database. belongs. This ID is unique within the The term to be considered for a stop-word match. Is either the value of the alias in the value of the locale identifier ( ), or is the string representation of The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some per"
 tags: ["full-text", "catalog-view"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
-title: 'Advanced scanning'
-topic: 'query-processing'
-description: 'In SQL Server Enterprise edition, the advanced scan feature allows multiple tasks to share full'
+title: "Advanced scanning"
+topic: "query-processing"
+description: "In SQL Server Enterprise edition, the advanced scan feature allows multiple tasks to share full"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

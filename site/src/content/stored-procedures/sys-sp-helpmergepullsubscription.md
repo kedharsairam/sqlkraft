@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_helpmergepullsubscription'
-title: 'sp_helpmergepullsubscription'
-category: 'general'
-description: 'Returns information about pull subscriptions that exist at a Subscriber. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions information about all merge publications and subscriptions in the current database is returned. The name of the Publisher database.'
+name: "sys.sp_helpmergepullsubscription"
+title: "sp_helpmergepullsubscription"
+category: "general"
+description: "Returns information about pull subscriptions that exist at a Subscriber. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions information about all merge publications and subscriptions in the current database is returned. The name of the Publisher database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

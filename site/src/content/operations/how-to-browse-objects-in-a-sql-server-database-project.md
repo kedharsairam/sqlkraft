@@ -3,11 +3,11 @@ title: "How to: Browse Objects in a SQL Server Database Project"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   The SQL Server Object Explorer in Visual Studio now contains a dedicated Projects node, under
-  
+
   which all SQL Server database projects in your solution are grouped in a SQL Server
-  
+
   Manageme
 tags:
   - "ssb-diagnose"

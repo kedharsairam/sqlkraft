@@ -3,13 +3,13 @@ title: "Configure on RHEL, SLES, and Ubuntu"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article describes how to create a three-node cluster on Linux using Pacemaker, and add a
-  
+
   previously created availability group as a resource in the cluster. Fo
 tags:
   - "linux-operations"

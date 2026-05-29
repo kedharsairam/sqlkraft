@@ -3,13 +3,13 @@ title: "Specify a Hit Count"
 topic: "ssb-diagnose"
 description: |
   09/09/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   A breakpoint hit count is a counter that the Transact-SQL debugger increments each time the
-  
+
   breakpoint is reached. If the specified hit count is reached and any s
 tags:
   - "ssb-diagnose"

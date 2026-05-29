@@ -1,8 +1,8 @@
 ---
-name: 'Database User Permissions'
-title: 'Database User Permissions'
-category: 'statements'
-description: 'Database_user_mapped_to_Windows_User'
+name: "Database User Permissions"
+title: "Database User Permissions"
+category: "statements"
+description: "Database_user_mapped_to_Windows_User"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

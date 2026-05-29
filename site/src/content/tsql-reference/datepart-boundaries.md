@@ -1,16 +1,16 @@
 ---
-name: 'datepart boundaries'
-title: 'datepart boundaries'
-category: 'data-types'
-description: 'difference between the'
+name: "datepart boundaries"
+title: "datepart boundaries"
+category: "data-types"
+description: "difference between the"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
 
 Signed
 
-
 ## Returns the
+
 difference between the
 
 startdate
@@ -33,8 +33,8 @@ For a return value out of range for
 
 9,223,372,036,854,775,807),
 
-
 ## returns an error. Unlike , which returns an
+
 and
 
 therefore may overflow a
@@ -73,8 +73,8 @@ datepart
 
 ,
 
-
 ## returns 0.
+
 does use a time zone offset component of
 
 startdate

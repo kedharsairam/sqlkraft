@@ -3,17 +3,17 @@ title: "Derive a Template from a Running Trace"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to create a trace template from an existing trace while it's running by
-  
+
   using SQL Server Profiler.
-  
+
   1. If n
 tags:
   - "profiler"

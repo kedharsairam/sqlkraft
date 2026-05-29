@@ -3,23 +3,23 @@ title: "Progress Report Event Category"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event category contains the
-  
+
   event class.
-  
+
   Description
-  
+
   Progress Report: Online Index Op
 tags:
   - "event-classes"

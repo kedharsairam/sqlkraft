@@ -1,8 +1,8 @@
 ---
-name: 'Object identification and name resolution'
-title: 'Object identification and name resolution'
-category: 'operators'
-description: 'Azure SQL Managed Instance'
+name: "Object identification and name resolution"
+title: "Object identification and name resolution"
+category: "operators"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -31,42 +31,42 @@ Find out where you're running (instance and database) and who you're running as 
 
 diagnostics.
 
-
 ## Description
+
 SERVERPROPERTY
 
-
 ## Returns properties of the SQL Server instance such as edition, collation, or
+
 product level.
 
 DB_ID
 
-
 ## Returns the ID of a database.
+
 DB_NAME
 
-
 ## Returns the name of a database given the ID.
+
 DATABASEPROPERTYEX
 
-
 ## Returns database-level property values, such as collation and status.
+
 ORIGINAL_DB_NAME
 
-
 ## Returns the original database name before a restore sequence.
+
 APP_NAME
 
-
 ## Returns the application name for the current session.
+
 DATABASE_PRINCIPAL_ID
 
-
 ## Returns the principal ID for a database security principal.
+
 VERSION
 
-
 ## Returns the version string for Azure Synapse Analytics and Analytics Platform
+
 System (PDW).
 
 : Azure Synapse Analytics and Analytics Platform System (PDW) only

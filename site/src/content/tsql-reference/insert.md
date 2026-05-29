@@ -1,10 +1,10 @@
 ---
-name: 'INSERT'
-title: 'INSERT'
-category: 'queries'
-description: ''
+name: "INSERT"
+title: "INSERT"
+category: "queries"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

@@ -1,8 +1,8 @@
 ---
-name: 'Transaction control syntax'
-title: 'Transaction control syntax'
-category: 'transactions'
-description: 'Azure SQL Managed Instance'
+name: "Transaction control syntax"
+title: "Transaction control syntax"
+category: "transactions"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "transactions"]
 pubDate: 2026-05-29
 ---
@@ -29,8 +29,8 @@ modifications are erased.
 
 SQL Server operates in the following transaction modes:
 
-
 ## Description
+
 Each individual statement is a transaction.
 
 Each transaction is explicitly started with the

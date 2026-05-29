@@ -3,15 +3,15 @@ title: "Stopping and Starting Service Broker Applications"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Sometimes it might be necessary to temporarily stop a Service Broker application. For example,
-  
+
   you might stop a busy application to in
 tags:
   - "service-broker"

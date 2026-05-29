@@ -3,15 +3,15 @@ title: "Message Types"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Applications that use Service Broker communicate by sending messages to each other as part
-  
+
   of a conversation. The participants in a co
 tags:
   - "service-broker"

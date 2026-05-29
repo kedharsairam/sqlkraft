@@ -1,8 +1,8 @@
 ---
-name: 'datetimeoffset'
-title: 'datetimeoffset'
-category: 'data-types'
-description: '#### DATETIMEOFFSET [ ('
+name: "datetimeoffset"
+title: "datetimeoffset"
+category: "data-types"
+description: "#### DATETIMEOFFSET [ ("
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

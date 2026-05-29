@@ -1,8 +1,8 @@
 ---
-name: 'sys.change_tracking_databases'
-title: 'sys.change_tracking_databases'
-category: 'databases-files'
-description: 'SQL database in Microsoft Fabric Returns one row for each database that has change tracking enabled. ID of the database. This is unique within the instance of SQL Indicates whether change tracking data is automatically cleaned up after the configured retention period: If autocleanup is being used, the retention period specifies how long the change tracking data is kept in the database. Specifies t'
+name: "sys.change_tracking_databases"
+title: "sys.change_tracking_databases"
+category: "databases-files"
+description: "SQL database in Microsoft Fabric Returns one row for each database that has change tracking enabled. ID of the database. This is unique within the instance of SQL Indicates whether change tracking data is automatically cleaned up after the configured retention period: If autocleanup is being used, the retention period specifies how long the change tracking data is kept in the database. Specifies t"
 tags: ["databases-files", "catalog-view"]
 pubDate: 2026-05-29
 ---

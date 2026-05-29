@@ -1,8 +1,8 @@
 ---
-name: 'Cursor Functions'
-title: 'Cursor Functions'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "Cursor Functions"
+title: "Cursor Functions"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

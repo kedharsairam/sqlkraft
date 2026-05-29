@@ -1,7 +1,7 @@
 ---
-title: 'Expression evaluation'
-topic: 'io-fundamentals'
-description: 'Nonconstant expressions such as an expression whose result depends on the value of a'
+title: "Expression evaluation"
+topic: "io-fundamentals"
+description: "Nonconstant expressions such as an expression whose result depends on the value of a"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

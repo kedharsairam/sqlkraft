@@ -3,16 +3,16 @@ title: "Managing Queues and Messages"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   When a Service Broker application is in production, most day-to-day management occurs as a
-  
-  normal part of maintenance of the Database 
+
+  normal part of maintenance of the Database
 tags:
   - "service-broker"
   - "managing-queues-and-messages"

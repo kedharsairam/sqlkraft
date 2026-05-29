@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_cdc_add_job'
-title: 'sys.sp_cdc_add_job'
-category: 'general'
-description: 'Creates a change data capture cleanup or capture job in the current database. Transact-SQL syntax conventions Flag indicating whether the job should be started immediately after it''s added. Maximum number of transactions to process in each scan cycle. . If specified, the value must be a positive integer. is valid only for capture jobs.'
+name: "sys.sp_cdc_add_job"
+title: "sys.sp_cdc_add_job"
+category: "general"
+description: "Creates a change data capture cleanup or capture job in the current database. Transact-SQL syntax conventions Flag indicating whether the job should be started immediately after it's added. Maximum number of transactions to process in each scan cycle. . If specified, the value must be a positive integer. is valid only for capture jobs."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

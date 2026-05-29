@@ -3,15 +3,15 @@ title: "Managing Service Broker Identities"
 topic: "service-broker"
 description: |
   09/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Each database contains a unique identifier that is used for routing Service Broker messages to
-  
+
   that database. This topic describes Ser
 tags:
   - "service-broker"

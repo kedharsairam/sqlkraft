@@ -3,15 +3,15 @@ title: "Disk space example"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Whenever an index is created, rebuilt, or dropped, disk space for both the old (source) and n
 tags:
   - "filestream"
@@ -69,11 +69,11 @@ is used to indicate approximate calculations.
 
 1. Determine the size of the source structures.
 
-: 1 million * 200 bytes ~ 200 MB
+: 1 million \* 200 bytes ~ 200 MB
 
-: 1 million * 50 bytes / 80% ~ 63 MB
+: 1 million \* 50 bytes / 80% ~ 63 MB
 
-: 1 million * 80 bytes / 80% ~ 100 MB
+: 1 million \* 80 bytes / 80% ~ 100 MB
 
 Total size of existing structures: 363 MB
 

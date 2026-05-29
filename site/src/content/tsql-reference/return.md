@@ -1,8 +1,8 @@
 ---
-name: 'RETURN'
-title: 'RETURN'
-category: 'statements'
-description: ''
+name: "RETURN"
+title: "RETURN"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

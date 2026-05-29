@@ -1,8 +1,8 @@
 ---
-name: 'I. Use GROUP BY with an expression'
-title: 'I. Use GROUP BY with an expression'
-category: 'statements'
-description: 'clause, the query returns only one row containing the sum of all sales'
+name: "I. Use GROUP BY with an expression"
+title: "I. Use GROUP BY with an expression"
+category: "statements"
+description: "clause, the query returns only one row containing the sum of all sales"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

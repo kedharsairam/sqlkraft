@@ -3,21 +3,21 @@ title: "Known issues and errors"
 topic: "change-data-capture"
 description: |
   10/07/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article explains known limitations, issues, and errors with change data capture (CDC) for
-  
+
   SQL Server
-  
+
   and
-  
+
   .
-  
+
   For Azure SQL Datab
 tags:
   - "change-data-capture"

@@ -1,11 +1,11 @@
 ---
-name: 'sys.fn_pagerescracker'
-title: 'sys.fn_PageResCracker'
-category: 'system'
-description: 'SQL Server 2019 (15.x) Transact-SQL syntax conventions Is the 8-byte hexadecimal format of a database page resource. is used to convert the 8-byte hexadecimal representation of a database page to a rowset that contains the database ID, file ID and page ID of the page. You can obtain a valid page resource from the sys.dm_exec_requests (Transact-SQL) dynamic management view or the sys.sysprocesses s'
+name: "sys.fn_pagerescracker"
+title: "sys.fn_PageResCracker"
+category: "system"
+description: "SQL Server 2019 (15.x) Transact-SQL syntax conventions Is the 8-byte hexadecimal format of a database page resource. is used to convert the 8-byte hexadecimal representation of a database page to a rowset that contains the database ID, file ID and page ID of the page. You can obtain a valid page resource from the sys.dm_exec_requests (Transact-SQL) dynamic management view or the sys.sysprocesses s"
 tags: ["system", "function"]
 pubDate: 2026-05-29
-syntax: 'sys.fn_PageResCracker'
+syntax: "sys.fn_PageResCracker"
 ---
 
 ## Description

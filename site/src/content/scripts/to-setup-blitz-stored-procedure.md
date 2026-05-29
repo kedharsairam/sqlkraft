@@ -1,7 +1,7 @@
 ---
-name: 'To Setup Blitz Stored Procedure'
-title: 'To Setup Blitz Stored Procedure'
-description: 'Deploys Brent Ozar''s sp_Blitz — the industry-standard SQL Server health check stored procedure from the First Responder Kit.'
+name: "To Setup Blitz Stored Procedure"
+title: "To Setup Blitz Stored Procedure"
+description: "Deploys Brent Ozar's sp_Blitz — the industry-standard SQL Server health check stored procedure from the First Responder Kit."
 category: performance
 tags: ["performance", "monitoring", "health-check", "blitz"]
 pubDate: 2025-03-15

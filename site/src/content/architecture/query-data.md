@@ -3,17 +3,17 @@ title: "Query data"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   When you want to get latest (current) state of data in a temp
 tags:
   - "tables"

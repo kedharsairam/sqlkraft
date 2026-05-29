@@ -3,15 +3,15 @@ title: "Run SQL Server Profiler"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   You can run SQL Server Profiler in several different ways, to support gathering trace output in
-  
+
   various scenarios. You can start SQL S
 tags:
   - "profiler"

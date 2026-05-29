@@ -1,8 +1,8 @@
 ---
-name: 'Limitations and Recommendations'
-title: 'Limitations and Recommendations'
-category: 'operators'
-description: 'Removes the specified availability group and all of its replicas. If a server instance that hosts'
+name: "Limitations and Recommendations"
+title: "Limitations and Recommendations"
+category: "operators"
+description: "Removes the specified availability group and all of its replicas. If a server instance that hosts"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -35,8 +35,8 @@ Group (SQL Server)
 
 Transact-SQL syntax conventions
 
-
 ## syntaxsql
+
 group_name
 
 Specifies the name of the availability group to be dropped.

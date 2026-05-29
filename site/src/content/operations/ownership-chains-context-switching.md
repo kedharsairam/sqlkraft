@@ -3,19 +3,19 @@ title: "Ownership Chains & Context Switching"
 topic: "configuration"
 description: |
   Article
-  
+
   •
-  
+
   08/10/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This tutorial uses a scenario to illustrate SQL Server security concepts involving ownership
-  
+
   chains and user context switc
 tags:
   - "configuration"

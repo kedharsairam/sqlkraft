@@ -3,15 +3,15 @@ title: "Installation"
 topic: "high-availability"
 description: |
   08/26/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   To install a SQL Server failover cluster, you must create and configure a failover cluster instance
-  
+
   by running SQL Server Setup.
-  
+
   To install a failover cluster, y
 tags:
   - "high-availability"

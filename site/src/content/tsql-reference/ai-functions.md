@@ -1,8 +1,8 @@
 ---
-name: 'AI functions'
-title: 'AI functions'
-category: 'statements'
-description: 'SQL Server 2025 (17.x)'
+name: "AI functions"
+title: "AI functions"
+category: "statements"
+description: "SQL Server 2025 (17.x)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -23,8 +23,8 @@ The functions described in this article provide built-in support for AI and the 
 
 enabled applications.
 
-
 ## Description
+
 AI_GENERATE_EMBEDDINGS
 
 Create embeddings (vector arrays) from text expressions

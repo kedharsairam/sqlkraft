@@ -3,25 +3,25 @@ title: "Some availability replicas do not have a healthy role"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   : Availability Replicas Role State
-  
+
   : Some availability replicas do not have a healthy role.
-  
+
   :
-  
+
   Warning
-  
+
   : Availability group
-  
+
   This policy rolls up th
 tags:
   - "high-availability"

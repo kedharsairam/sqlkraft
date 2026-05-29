@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_data_source_objects'
-title: 'sp_data_source_objects'
-category: 'general'
-description: 'Returns list of table objects that are available to be virtualized. Transact-SQL syntax conventions The name of the external data source to get the metadata from. The root of the name of the object or objects to search for. This call only returns external objects that begin with the value set for If an ODBC data source connects to a relational database management system (RDBMS) that can''t contain '
+name: "sys.sp_data_source_objects"
+title: "sp_data_source_objects"
+category: "general"
+description: "Returns list of table objects that are available to be virtualized. Transact-SQL syntax conventions The name of the external data source to get the metadata from. The root of the name of the object or objects to search for. This call only returns external objects that begin with the value set for If an ODBC data source connects to a relational database management system (RDBMS) that can't contain "
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

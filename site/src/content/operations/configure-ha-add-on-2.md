@@ -3,13 +3,13 @@ title: "Configure (HA add-on)"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This guide provides instructions to create a two-node shared disk cluster for SQL Server on
-  
+
   SUSE Linux Enterprise Server (SLES). The clustering layer is based on SU
 tags:
   - "linux-operations"

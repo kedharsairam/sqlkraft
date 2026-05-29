@@ -3,19 +3,19 @@ title: "Configure Distribution in AG"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   12/17/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article explains how to set up a SQL Server replication distribution database in an Always
-  
+
   On availability group (AG).
-  
+
   SQL Server 2017 CU6 and S
 tags:
   - "migration"

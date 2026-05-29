@@ -3,17 +3,17 @@ title: "DDL Events"
 topic: "change-data-capture"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The following tables list the DDL events that can be used to fire a DDL trigger or event
-  
+
   not
 tags:
   - "change-data-capture"
@@ -35,7 +35,7 @@ The following tables list the DDL events that can be used to fire a DDL trigger 
 
 notification. Note that each event corresponds to a Transact-SQL statement or stored
 
-procedure, with the statement syntax modified to include an underscore character (_) between
+procedure, with the statement syntax modified to include an underscore character (\_) between
 
 keywords.
 

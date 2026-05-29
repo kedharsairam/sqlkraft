@@ -3,15 +3,15 @@ title: "Lesson 6: Receiving the Reply and Ending the Conversation"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   In this lesson, you learn to receive the reply message from the target service and end the
-  
+
   conversation. Open SQL Server Management St
 tags:
   - "service-broker"

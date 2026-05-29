@@ -1,15 +1,15 @@
 ---
-title: 'Memory, threads, and internal scheduling'
-topic: 'memory-management'
-description: 'Use these guides to understand how SQL Server stores, accesses, and maintains data on disk.'
+title: "Memory, threads, and internal scheduling"
+topic: "memory-management"
+description: "Use these guides to understand how SQL Server stores, accesses, and maintains data on disk."
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---
 
 Use these guides to understand how SQL Server stores, accesses, and maintains data on disk.
 
-
 ## Description
+
 Page and extent architecture
 
 guide
@@ -44,8 +44,8 @@ removes rows previously marked for deletion.
 
 Use these guides to understand how SQL Server compiles, optimizes, and executes queries.
 
-
 ## Description
+
 Query processing
 
 architecture guide
@@ -66,8 +66,8 @@ Use these guides to understand how SQL Server manages memory and CPU resources
 
 internally.
 
-
 ## Description
+
 Memory management
 
 architecture guide

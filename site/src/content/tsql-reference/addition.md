@@ -1,8 +1,8 @@
 ---
-name: '+ (Addition)'
-title: '+ (Addition)'
-category: 'operators'
-description: ''
+name: "+ (Addition)"
+title: "+ (Addition)"
+category: "operators"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'sys.fn_stmt_sql_handle_from_sql_stmt'
-title: 'sys.fn_stmt_sql_handle_from_sql_stmt'
-category: 'system'
-description: 'SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric for a Transact-SQL statement under the given parameterization type (simple or forced). You can refer to queries stored in the Query Store by using their Transact-SQL syntax conventions The text of the query in the Query Store that you want the handle of. The parameter type of the query.'
+name: "sys.fn_stmt_sql_handle_from_sql_stmt"
+title: "sys.fn_stmt_sql_handle_from_sql_stmt"
+category: "system"
+description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric for a Transact-SQL statement under the given parameterization type (simple or forced). You can refer to queries stored in the Query Store by using their Transact-SQL syntax conventions The text of the query in the Query Store that you want the handle of. The parameter type of the query."
 tags: ["system", "function"]
 pubDate: 2026-05-29
 syntax: |
@@ -96,5 +96,4 @@ FROM
 sys.databases;
 ```
 
-
-*(... and 1 more examples)*
+_(... and 1 more examples)_

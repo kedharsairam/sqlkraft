@@ -3,23 +3,23 @@ title: "Timestamp Data Type"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   In the
-  
+
   transformation,
-  
+
   type values are treated as
-  
+
   data, and is
-  
+
   always Base64 encoded. The
 tags:
   - "xml-data"

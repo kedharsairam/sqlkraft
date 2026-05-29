@@ -1,8 +1,8 @@
 ---
-name: 'Compare COALESCE and ISNULL'
-title: 'Compare COALESCE and ISNULL'
-category: 'language-elements'
-description: 'If all arguments are'
+name: "Compare COALESCE and ISNULL"
+title: "Compare COALESCE and ISNULL"
+category: "language-elements"
+description: "If all arguments are"
 tags: ["tsql", "language-elements"]
 pubDate: 2026-05-29
 ---
@@ -11,8 +11,8 @@ If all arguments are
 
 ,
 
-
 ## returns
+
 . At least one of the null values must be a
 
 typed

@@ -3,21 +3,21 @@ title: "Example: Retrieving Product Model Information as XML"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The following query returns product model information.
-  
+
   mode is specified in the
-  
+
   clause.
-  
+
   SQ
 tags:
   - "xml-data"

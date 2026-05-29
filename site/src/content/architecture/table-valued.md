@@ -3,17 +3,17 @@ title: "Table-valued"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   A table-valued function is a user-defined function that returns a table.
-  
+
   SQL Server extends the functionality of table-valued functions by allowing yo
 tags:
   - "clr-integration"

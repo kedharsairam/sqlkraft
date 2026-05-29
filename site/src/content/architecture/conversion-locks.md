@@ -1,12 +1,13 @@
 ---
-title: 'Conversion locks'
-topic: 'locking'
-description: 'Insert range, null resource lock; used to test ranges before inserting a new key'
+title: "Conversion locks"
+topic: "locking"
+description: "Insert range, null resource lock; used to test ranges before inserting a new key"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
 
 ## Description
+
 Insert range, null resource lock; used to test ranges before inserting a new key
 
 into an index.

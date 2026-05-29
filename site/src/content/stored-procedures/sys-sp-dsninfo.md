@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_dsninfo'
-title: 'sp_dsninfo'
-category: 'general'
-description: 'Returns ODBC or OLE DB data source information from the Distributor associated with the current server. This stored procedure is executed at the Distributor on any database. Transact-SQL syntax conventions The name of the ODBC DSN or OLE DB linked server. The type of information to return. If information types are returned. , and can be one of these values. Specifies the data source vendor name. S'
+name: "sys.sp_dsninfo"
+title: "sp_dsninfo"
+category: "general"
+description: "Returns ODBC or OLE DB data source information from the Distributor associated with the current server. This stored procedure is executed at the Distributor on any database. Transact-SQL syntax conventions The name of the ODBC DSN or OLE DB linked server. The type of information to return. If information types are returned. , and can be one of these values. Specifies the data source vendor name. S"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

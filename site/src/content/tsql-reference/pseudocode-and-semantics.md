@@ -1,8 +1,8 @@
 ---
-name: 'Pseudocode and semantics'
-title: 'Pseudocode and semantics'
-category: 'operators'
-description: 'CTE query definitions are considered anchor members unless they reference the CTE'
+name: "Pseudocode and semantics"
+title: "Pseudocode and semantics"
+category: "operators"
+description: "CTE query definitions are considered anchor members unless they reference the CTE"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -45,8 +45,8 @@ member. The following pseudocode shows the components of a simple recursive CTE 
 
 contains a single anchor member and single recursive member.
 
-
 ## syntaxsql
+
 ７
 
 Note

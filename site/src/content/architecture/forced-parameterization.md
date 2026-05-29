@@ -1,7 +1,7 @@
 ---
-title: 'Forced parameterization'
-topic: 'io-fundamentals'
-description: 'When processing complex Transact-SQL statements, the relational engine can have difficulty'
+title: "Forced parameterization"
+topic: "io-fundamentals"
+description: "When processing complex Transact-SQL statements, the relational engine can have difficulty"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -220,8 +220,8 @@ clauses of
 
 a query.
 
-
 ## Arguments, either direct or as subexpressions, to
+
 ,
 
 ,
@@ -268,8 +268,8 @@ The expression contains a
 
 clause.
 
-
 ## Arguments to query hint clauses. These include the
+
 number_of_rows
 
 argument of the

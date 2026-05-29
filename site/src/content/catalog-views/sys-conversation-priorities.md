@@ -1,8 +1,8 @@
 ---
-name: 'sys.conversation_priorities'
-title: 'sys.conversation_priorities'
-category: 'compatibility'
-description: 'Contains a row for each conversation priority created in the current database, as shown in the A number that uniquely identifies the conversation priority. Not Name of the conversation priority. Not NULLABLE. The identifier of the contract that is specified for the conversation priority. This can be joined on the service_contract_id column in sys.service_contracts. NULLABLE. The identifier of the '
+name: "sys.conversation_priorities"
+title: "sys.conversation_priorities"
+category: "compatibility"
+description: "Contains a row for each conversation priority created in the current database, as shown in the A number that uniquely identifies the conversation priority. Not Name of the conversation priority. Not NULLABLE. The identifier of the contract that is specified for the conversation priority. This can be joined on the service_contract_id column in sys.service_contracts. NULLABLE. The identifier of the "
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

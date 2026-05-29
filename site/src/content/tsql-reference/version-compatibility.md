@@ -1,13 +1,14 @@
 ---
-name: 'Version compatibility'
-title: 'Version compatibility'
-category: 'statements'
-description: 'Filter (geometry Data'
+name: "Version compatibility"
+title: "Version compatibility"
+category: "statements"
+description: "Filter (geometry Data"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 ## Description
+
 Filter (geometry Data
 
 Type)
@@ -18,14 +19,14 @@ intersects another instance.
 
 These methods provide information about SQL Server version compatibility.
 
-
 ## Description
+
 MinDbCompatibilityLevel (geometry
 
 Data Type)
 
-
 ## Returns the minimum database compatibility level that
+
 recognizes the geometry data type.
 
 OGC Methods on Geometry Instances

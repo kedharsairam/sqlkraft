@@ -3,25 +3,25 @@ title: "Audit Broker Conversation Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   03/31/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server creates an
-  
+
   event to report audit messages related to
-  
+
   Service Broker dialog security.
-  
+
   Desc
 tags:
   - "event-classes"

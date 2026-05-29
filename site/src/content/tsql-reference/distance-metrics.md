@@ -1,10 +1,10 @@
 ---
-name: 'Distance metrics'
-title: 'Distance metrics'
-category: 'statements'
-description: ''
+name: "Distance metrics"
+title: "Distance metrics"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

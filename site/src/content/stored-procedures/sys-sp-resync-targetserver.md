@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_resync_targetserver'
-title: 'sp_resync_targetserver'
-category: 'general'
-description: 'Resynchronizes all multiserver jobs in the specified target server. Transact-SQL syntax conventions The name of the server to resynchronize. , with no default. If specified, all target servers are resynchronized. Reports the result of deletes the current set of instructions for the target server and posts a new set for the target server to download. The new set consists of an instruction to delete'
+name: "sys.sp_resync_targetserver"
+title: "sp_resync_targetserver"
+category: "general"
+description: "Resynchronizes all multiserver jobs in the specified target server. Transact-SQL syntax conventions The name of the server to resynchronize. , with no default. If specified, all target servers are resynchronized. Reports the result of deletes the current set of instructions for the target server and posts a new set for the target server to download. The new set consists of an instruction to delete"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_post_msx_operation'
+syntax: "sp_post_msx_operation"
 ---
 
 ## Description

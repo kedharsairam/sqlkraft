@@ -1,8 +1,8 @@
 ---
-name: 'UNISTR'
-title: 'UNISTR'
-category: 'statements'
-description: '### Support for Unicode escape sequences'
+name: "UNISTR"
+title: "UNISTR"
+category: "statements"
+description: "### Support for Unicode escape sequences"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

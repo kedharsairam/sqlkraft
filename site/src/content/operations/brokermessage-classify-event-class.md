@@ -3,25 +3,25 @@ title: "Broker:Message Classify Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server generates a
-  
+
   event when Service Broker determines the
-  
+
   routing for a message.
-  
+
   Description
-  
+
   The name of the clie
 tags:
   - "event-classes"

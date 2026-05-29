@@ -3,19 +3,19 @@ title: "Delete a publication"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   09/27/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This topic describes how to delete a publication in SQL Server by using SQL Server
-  
+
   Management Studio, Transact-SQL, or Rep
 tags:
   - "migration"

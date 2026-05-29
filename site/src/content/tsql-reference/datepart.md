@@ -1,8 +1,8 @@
 ---
-name: 'DATEPART'
-title: 'DATEPART'
-category: 'data-types'
-description: ''
+name: "DATEPART"
+title: "DATEPART"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

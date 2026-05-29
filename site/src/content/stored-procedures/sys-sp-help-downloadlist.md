@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_help_downloadlist'
-title: 'sp_help_downloadlist'
-category: 'general'
-description: 'system table for the supplied job, or all rows if no job is Transact-SQL syntax conventions The job identification number for which to return information. must be specified, but both can''t be specified. must be specified, but both can''t be specified.'
+name: "sys.sp_help_downloadlist"
+title: "sp_help_downloadlist"
+category: "general"
+description: "system table for the supplied job, or all rows if no job is Transact-SQL syntax conventions The job identification number for which to return information. must be specified, but both can't be specified. must be specified, but both can't be specified."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,8 +1,8 @@
 ---
-name: 'sys.partition_range_values'
-title: 'sys.partition_range_values'
-category: 'partitions'
-description: 'Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each range boundary value of a partition function of type R. ID of the partition function for this range boundary value. ID (1-based ordinal) of the boundary value tuple, with left-most boundary ID of the parameter of the function to which this value corresponds. The values in this column correspond with those in t'
+name: "sys.partition_range_values"
+title: "sys.partition_range_values"
+category: "partitions"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each range boundary value of a partition function of type R. ID of the partition function for this range boundary value. ID (1-based ordinal) of the boundary value tuple, with left-most boundary ID of the parameter of the function to which this value corresponds. The values in this column correspond with those in t"
 tags: ["partitions", "catalog-view"]
 pubDate: 2026-05-29
 ---

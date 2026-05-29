@@ -3,17 +3,17 @@ title: "Use SSMS to manage"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article introduces
-  
+
   SQL Server Management Studio (SSMS)
-  
+
   and walks you through a few
-  
+
   common tasks. SSMS is a Windows application, so use SSMS when you have a W
 tags:
   - "linux-operations"

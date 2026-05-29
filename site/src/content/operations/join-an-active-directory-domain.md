@@ -3,13 +3,13 @@ title: "Join an Active Directory domain"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article provides general guidance on how to join a SQL Server Linux host machine to an
-  
+
   Active Directory domain. There are two methods: use a built-in SSSD pack
 tags:
   - "linux-operations"

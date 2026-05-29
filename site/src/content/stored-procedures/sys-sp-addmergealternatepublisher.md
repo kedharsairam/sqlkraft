@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addmergealternatepublisher'
-title: 'sp_addmergealternatepublisher'
-category: 'general'
-description: 'Adds the ability for a Subscriber to use an alternate synchronization partner. The publication properties must specify that Subscribers can synchronize with other Publishers. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions The name of the publication database.'
+name: "sys.sp_addmergealternatepublisher"
+title: "sp_addmergealternatepublisher"
+category: "general"
+description: "Adds the ability for a Subscriber to use an alternate synchronization partner. The publication properties must specify that Subscribers can synchronize with other Publishers. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions The name of the publication database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

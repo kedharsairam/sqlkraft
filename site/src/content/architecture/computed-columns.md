@@ -3,17 +3,17 @@ title: "Computed Columns"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   You can define indexes on computed columns as long as the following requirements are met:
-  
+
   Ow
 tags:
   - "filestream"

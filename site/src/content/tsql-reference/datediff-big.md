@@ -1,8 +1,8 @@
 ---
-name: 'DATEDIFF_BIG'
-title: 'DATEDIFF_BIG'
-category: 'data-types'
-description: ''
+name: "DATEDIFF_BIG"
+title: "DATEDIFF_BIG"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

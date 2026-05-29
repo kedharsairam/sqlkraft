@@ -3,9 +3,9 @@ title: "How to: Create a Test Project for SQL Server Database Unit Testing"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   Before you can start to write unit tests that evaluate database objects, you must first create a
-  
+
   test project. This project contains SQL Server unit tests, but it could contain other type
 tags:
   - "ssb-diagnose"

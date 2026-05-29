@@ -1,7 +1,7 @@
 ---
-title: 'Each partition can have multiple delta rowgroups'
-topic: 'io-fundamentals'
-description: 'state. A background process named the tuple-mover'
+title: "Each partition can have multiple delta rowgroups"
+topic: "io-fundamentals"
+description: "state. A background process named the tuple-mover"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

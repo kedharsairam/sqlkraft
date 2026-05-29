@@ -1,7 +1,7 @@
 ---
-name: 'To Perform Automatic Database Refresh'
-title: 'To Perform Automatic Database Refresh'
-description: 'Steps to Setup Automatic Database Refresh between Two Servers:'
+name: "To Perform Automatic Database Refresh"
+title: "To Perform Automatic Database Refresh"
+description: "Steps to Setup Automatic Database Refresh between Two Servers:"
 category: migration
 tags: ["database", "migration"]
 pubDate: 2025-03-15
@@ -32,47 +32,47 @@ IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 END
 
 DECLARE @jobId BINARY(16)
-EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'DB Refresh Back up of Adventurworks2019', 
-		@enabled=1, 
-		@notify_level_eventlog=0, 
-		@notify_level_email=0, 
-		@notify_level_netsend=0, 
-		@notify_level_page=0, 
-		@delete_level=0, 
-		@description=N'No description available.', 
-		@category_name=N'[Uncategorized (Local)]', 
+EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'DB Refresh Back up of Adventurworks2019',
+		@enabled=1,
+		@notify_level_eventlog=0,
+		@notify_level_email=0,
+		@notify_level_netsend=0,
+		@notify_level_page=0,
+		@delete_level=0,
+		@description=N'No description available.',
+		@category_name=N'[Uncategorized (Local)]',
 		@owner_login_name=N'MAC1\kedhar', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Backup with Copyonly]    Script Date: 8/28/2024 4:47:00 AM ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Backup with Copyonly', 
-		@step_id=1, 
-		@cmdexec_success_code=0, 
-		@on_success_action=4, 
-		@on_success_step_id=2, 
-		@on_fail_action=2, 
-		@on_fail_step_id=0, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'TSQL', 
-		@command=N'BACKUP DATABASE [AdventureWorks2019] TO  DISK = N''Adventureworks2019.bak'' WITH  COPY_ONLY, NOFORMAT, NOINIT,  
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Backup with Copyonly',
+		@step_id=1,
+		@cmdexec_success_code=0,
+		@on_success_action=4,
+		@on_success_step_id=2,
+		@on_fail_action=2,
+		@on_fail_step_id=0,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'TSQL',
+		@command=N'BACKUP DATABASE [AdventureWorks2019] TO  DISK = N''Adventureworks2019.bak'' WITH  COPY_ONLY, NOFORMAT, NOINIT,
 NAME = N''AdventureWorks2019-Full Database Backup'', SKIP, NOREWIND, NOUNLOAD, COMPRESSION,  STATS = 10
 GO
-', 
-		@database_name=N'master', 
+',
+		@database_name=N'master',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Move adventureworks2019.bak file to Destination Server.]    Script Date: 8/28/2024 4:47:00 AM ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Move adventureworks2019.bak file to Destination Server.', 
-		@step_id=2, 
-		@cmdexec_success_code=0, 
-		@on_success_action=1, 
-		@on_success_step_id=0, 
-		@on_fail_action=2, 
-		@on_fail_step_id=0, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'CmdExec', 
-		@command=N'Copy '*.bak' 'destination' /Y', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Move adventureworks2019.bak file to Destination Server.',
+		@step_id=2,
+		@cmdexec_success_code=0,
+		@on_success_action=1,
+		@on_success_step_id=0,
+		@on_fail_action=2,
+		@on_fail_step_id=0,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'CmdExec',
+		@command=N'Copy '*.bak' 'destination' /Y',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 EXEC @ReturnCode = msdb.dbo.sp_update_job @job_id = @jobId, @start_step_id = 1
@@ -103,28 +103,28 @@ IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 END
 
 DECLARE @jobId BINARY(16)
-EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'DB Refresh of Adventureworks2019', 
-		@enabled=1, 
-		@notify_level_eventlog=0, 
-		@notify_level_email=0, 
-		@notify_level_netsend=0, 
-		@notify_level_page=0, 
-		@delete_level=0, 
-		@description=N'No description available.', 
-		@category_name=N'[Uncategorized (Local)]', 
+EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'DB Refresh of Adventureworks2019',
+		@enabled=1,
+		@notify_level_eventlog=0,
+		@notify_level_email=0,
+		@notify_level_netsend=0,
+		@notify_level_page=0,
+		@delete_level=0,
+		@description=N'No description available.',
+		@category_name=N'[Uncategorized (Local)]',
 		@owner_login_name=N'MAC1\kedhar', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Back up of user permissions of destination Server database to Tempary table in tempdb]    Script Date: 8/28/2024 4:50:04 AM ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Back up of user permissions of destination Server database to Tempary table in tempdb', 
-		@step_id=1, 
-		@cmdexec_success_code=0, 
-		@on_success_action=4, 
-		@on_success_step_id=2, 
-		@on_fail_action=2, 
-		@on_fail_step_id=2, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'TSQL', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Back up of user permissions of destination Server database to Tempary table in tempdb',
+		@step_id=1,
+		@cmdexec_success_code=0,
+		@on_success_action=4,
+		@on_success_step_id=2,
+		@on_fail_action=2,
+		@on_fail_step_id=2,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'TSQL',
 		@command=N'-- Create the global temporary table to hold the output
 USE tempdb;
 GO
@@ -150,7 +150,7 @@ Use Adventureworks2019
 DECLARE @_specificLoginName VARCHAR(250);
 SET @_specificLoginName = '''';
 
-DECLARE 
+DECLARE
     @sql VARCHAR(2048),
     @sort INT;
 
@@ -189,7 +189,7 @@ SELECT  ''EXEC sp_addrolemember @rolename =''
     + SPACE(1) + QUOTENAME(USER_NAME(rm.role_principal_id), '''''''') + '', @membername ='' + SPACE(1) + QUOTENAME(USER_NAME(rm.member_principal_id), '''''''') AS [-- SQL STATEMENTS --],
         6 AS [-- RESULT ORDER HOLDER --]
 FROM    sys.database_role_members AS rm
-WHERE   USER_NAME(rm.member_principal_id) IN (  
+WHERE   USER_NAME(rm.member_principal_id) IN (
                                                 --get user names on the database
                                                 SELECT [name]
                                                 FROM sys.database_principals
@@ -206,8 +206,8 @@ UNION
 SELECT ''-- [-- OBJECT LEVEL PERMISSIONS --] --'' AS [-- SQL STATEMENTS --],
         8 AS [-- RESULT ORDER HOLDER --]
 UNION
-SELECT  CASE 
-            WHEN perm.state <> ''W'' THEN perm.state_desc 
+SELECT  CASE
+            WHEN perm.state <> ''W'' THEN perm.state_desc
             ELSE ''GRANT''
         END
         + SPACE(1) + perm.permission_name + SPACE(1) + ''ON '' + QUOTENAME(SCHEMA_NAME(obj.schema_id)) + ''.'' + QUOTENAME(obj.name) --select, execute, etc on specific objects
@@ -216,13 +216,13 @@ SELECT  CASE
                 ELSE ''('' + QUOTENAME(cl.name) + '')''
           END
         + SPACE(1) + ''TO'' + SPACE(1) + QUOTENAME(USER_NAME(usr.principal_id)) COLLATE database_default
-        + CASE 
+        + CASE
                 WHEN perm.state <> ''W'' THEN SPACE(0)
                 ELSE SPACE(1) + ''WITH GRANT OPTION''
           END
             AS [-- SQL STATEMENTS --],
         9 AS [-- RESULT ORDER HOLDER --]
-FROM    
+FROM
     sys.database_permissions AS perm
         INNER JOIN
     sys.objects AS obj
@@ -243,15 +243,15 @@ UNION
 SELECT ''-- [--DB LEVEL PERMISSIONS --] --'' AS [-- SQL STATEMENTS --],
         11 AS [-- RESULT ORDER HOLDER --]
 UNION
-SELECT  CASE 
+SELECT  CASE
             WHEN perm.state <> ''W'' THEN perm.state_desc --W=Grant With Grant Option
             ELSE ''GRANT''
         END
     + SPACE(1) + perm.permission_name --CONNECT, etc
     + SPACE(1) + ''TO'' + SPACE(1) + ''['' + USER_NAME(usr.principal_id) + '']'' COLLATE database_default --TO <user name>
-    + CASE 
-            WHEN perm.state <> ''W'' THEN SPACE(0) 
-            ELSE SPACE(1) + ''WITH GRANT OPTION'' 
+    + CASE
+            WHEN perm.state <> ''W'' THEN SPACE(0)
+            ELSE SPACE(1) + ''WITH GRANT OPTION''
       END
         AS [-- SQL STATEMENTS --],
         12 AS [-- RESULT ORDER HOLDER --]
@@ -265,7 +265,7 @@ WHERE   [perm].[major_id] = 0
 UNION
 SELECT '''' AS [-- SQL STATEMENTS --],
         13 AS [-- RESULT ORDER HOLDER --]
-UNION 
+UNION
 SELECT ''-- [--DB LEVEL SCHEMA PERMISSIONS --] --'' AS [-- SQL STATEMENTS --],
         14 AS [-- RESULT ORDER HOLDER --]
 UNION
@@ -300,7 +300,7 @@ WHILE @@FETCH_STATUS = 0
 BEGIN
     INSERT INTO tempdb..OutputTable (SQLStatement)
     VALUES (@sql);
-    
+
     FETCH NEXT FROM tmp INTO @sql, @sort;
 END;
 
@@ -315,21 +315,21 @@ ORDER BY ID;
 
 -- Drop the global temporary table
 --DROP TABLE tempdb..OutputTable;
-', 
-		@database_name=N'AdventureWorks2019', 
+',
+		@database_name=N'AdventureWorks2019',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Backup database user permissions of destination Server database to local floder for back up purpose]    Script Date: 8/28/2024 4:50:04 AM ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Backup database user permissions of destination Server database to local floder for back up purpose', 
-		@step_id=2, 
-		@cmdexec_success_code=0, 
-		@on_success_action=3, 
-		@on_success_step_id=0, 
-		@on_fail_action=2, 
-		@on_fail_step_id=0, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'TSQL', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Backup database user permissions of destination Server database to local floder for back up purpose',
+		@step_id=2,
+		@cmdexec_success_code=0,
+		@on_success_action=3,
+		@on_success_step_id=0,
+		@on_fail_action=2,
+		@on_fail_step_id=0,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'TSQL',
 		@command=N'Use AdventureWorks2019
 go
 
@@ -379,40 +379,40 @@ FROM    sys.database_permissions AS perm
 WHERE usr.name IN
                               ( Select name from sys.database_principals Where principal_id >=5 And type_desc in (''SQL_USER'',''WINDOWS_USER'',''WINDOWS_GROUP''))
 
-ORDER BY perm.permission_name ASC, perm.state_desc ASC;', 
-		@database_name=N'AdventureWorks2019', 
-		@output_file_name=N'$(ESCAPE_SQUOTE(JOBNAME))$(ESCAPE_SQUOTE(STEPID))$(ESCAPE_SQUOTE(DATE))_$(ESCAPE_SQUOTE(TIME)).txt', 
+ORDER BY perm.permission_name ASC, perm.state_desc ASC;',
+		@database_name=N'AdventureWorks2019',
+		@output_file_name=N'$(ESCAPE_SQUOTE(JOBNAME))$(ESCAPE_SQUOTE(STEPID))$(ESCAPE_SQUOTE(DATE))_$(ESCAPE_SQUOTE(TIME)).txt',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Back up of Adventureworks2019 from destination server for back up purpose]    Script Date: 8/28/2024 4:50:04 AM ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Back up of Adventureworks2019 from destination server for back up purpose', 
-		@step_id=3, 
-		@cmdexec_success_code=0, 
-		@on_success_action=3, 
-		@on_success_step_id=0, 
-		@on_fail_action=2, 
-		@on_fail_step_id=0, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'TSQL', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Back up of Adventureworks2019 from destination server for back up purpose',
+		@step_id=3,
+		@cmdexec_success_code=0,
+		@on_success_action=3,
+		@on_success_step_id=0,
+		@on_fail_action=2,
+		@on_fail_step_id=0,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'TSQL',
 		@command=N'BACKUP DATABASE [AdventureWorks2019] TO  DISK = N''Adventureworks2019.bak'' WITH  COPY_ONLY, NOFORMAT, INIT, Compression,
 NAME = N''AdventureWorks2019-Full Database Backup'', SKIP, NOREWIND, NOUNLOAD,  STATS = 10
 GO
-', 
-		@database_name=N'master', 
+',
+		@database_name=N'master',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Kill all the sessions on Adventureworks2019 Database]    Script Date: 8/28/2024 4:50:04 AM ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Kill all the sessions on Adventureworks2019 Database', 
-		@step_id=4, 
-		@cmdexec_success_code=0, 
-		@on_success_action=3, 
-		@on_success_step_id=0, 
-		@on_fail_action=2, 
-		@on_fail_step_id=0, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'TSQL', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Kill all the sessions on Adventureworks2019 Database',
+		@step_id=4,
+		@cmdexec_success_code=0,
+		@on_success_action=3,
+		@on_success_step_id=0,
+		@on_fail_action=2,
+		@on_fail_step_id=0,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'TSQL',
 		@command=N'--Kill all the sessions
 USE master
 Go
@@ -421,27 +421,27 @@ set @SQL=''''
 Select @SQL=LTRIM(RTRIM(@SQL))+ ''kill '' +convert(Varchar(10),spid)+'';''+CHAR(13)
 from master..sysprocesses where dbid=db_id(''AdventureWorks2019'') -- Enter database nam in db_id
 print @SQL
-exec sp_executesql @SQL', 
-		@database_name=N'master', 
+exec sp_executesql @SQL',
+		@database_name=N'master',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Take Single User Mode and Restore The adventureworks Database]    Script Date: 8/28/2024 4:50:04 AM ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Take Single User Mode and Restore The adventureworks Database', 
-		@step_id=5, 
-		@cmdexec_success_code=0, 
-		@on_success_action=3, 
-		@on_success_step_id=0, 
-		@on_fail_action=2, 
-		@on_fail_step_id=0, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'TSQL', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Take Single User Mode and Restore The adventureworks Database',
+		@step_id=5,
+		@cmdexec_success_code=0,
+		@on_success_action=3,
+		@on_success_step_id=0,
+		@on_fail_action=2,
+		@on_fail_step_id=0,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'TSQL',
 		@command=N'USE [master]
 GO
 ALTER DATABASE [AdventureWorks2019] SET SINGLE_USER WITH ROLLBACK IMMEDIATE
 GO
 USE [master]
-RESTORE DATABASE [AdventureWorks2019] FROM  DISK = N''Adventureworks2019.bak'' 
+RESTORE DATABASE [AdventureWorks2019] FROM  DISK = N''Adventureworks2019.bak''
 WITH  FILE = 1,  MOVE N''AdventureWorks2019'' TO N''AdventureWorks2019.mdf'',  MOVE N''AdventureWorks2019_log''
 TO N''AdventureWorks2019_log.ldf'',  NOUNLOAD,  REPLACE,  STATS = 5
 
@@ -449,21 +449,21 @@ GO
 
 ALTER DATABASE [AdventureWorks2019] SET MULTI_USER
 GO
-', 
-		@database_name=N'master', 
+',
+		@database_name=N'master',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Restore Adventureworks2019 Database permissions]    Script Date: 8/28/2024 4:50:04 AM ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Restore Adventureworks2019 Database permissions', 
-		@step_id=6, 
-		@cmdexec_success_code=0, 
-		@on_success_action=3, 
-		@on_success_step_id=0, 
-		@on_fail_action=2, 
-		@on_fail_step_id=0, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'TSQL', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Restore Adventureworks2019 Database permissions',
+		@step_id=6,
+		@cmdexec_success_code=0,
+		@on_success_action=3,
+		@on_success_step_id=0,
+		@on_fail_action=2,
+		@on_fail_step_id=0,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'TSQL',
 		@command=N'-- Declare variables
 DECLARE @sqlStatement VARCHAR(2048);
 
@@ -492,21 +492,21 @@ CLOSE curStatements;
 DEALLOCATE curStatements;
 
 DROP TABLE tempdb..OutputTable;
-', 
-		@database_name=N'master', 
+',
+		@database_name=N'master',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Fix Orphan users]    Script Date: 8/28/2024 4:50:04 AM ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Fix Orphan users', 
-		@step_id=7, 
-		@cmdexec_success_code=0, 
-		@on_success_action=3, 
-		@on_success_step_id=0, 
-		@on_fail_action=2, 
-		@on_fail_step_id=0, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'TSQL', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Fix Orphan users',
+		@step_id=7,
+		@cmdexec_success_code=0,
+		@on_success_action=3,
+		@on_success_step_id=0,
+		@on_fail_action=2,
+		@on_fail_step_id=0,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'TSQL',
 		@command=N'Use Adventureworks2019
 Go
 --exec sp_change_users_login ''report''
@@ -553,36 +553,36 @@ PRINT   ''Total fixed: '' + CAST(@Count as VarChar) + ''.  Users Fixed: '' + @Us
 SELECT (''Total fixed: '' + CAST(@Count as VarChar) + ''.  Users Fixed: '' + @UsersFixed)[Fixed]
 --EXEC sp_change_users_login ''report''--See all orphaned users still in the database.
 
-', 
-		@database_name=N'AdventureWorks2019', 
+',
+		@database_name=N'AdventureWorks2019',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Delete the Orphan User]    Script Date: 8/28/2024 4:50:04 AM ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Delete the Orphan User', 
-		@step_id=8, 
-		@cmdexec_success_code=0, 
-		@on_success_action=1, 
-		@on_success_step_id=0, 
-		@on_fail_action=2, 
-		@on_fail_step_id=0, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'TSQL', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Delete the Orphan User',
+		@step_id=8,
+		@cmdexec_success_code=0,
+		@on_success_action=1,
+		@on_success_step_id=0,
+		@on_fail_action=2,
+		@on_fail_step_id=0,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'TSQL',
 		@command=N'-- Generate DROP USER statements for orphaned users excluding specific users
 DECLARE @DropUserCommands NVARCHAR(MAX) = '''';
 
 SELECT @DropUserCommands += ''DROP USER '' + QUOTENAME(dp.name) + '';'' + CHAR(13)
 FROM sys.database_principals dp
 LEFT JOIN sys.server_principals sp ON dp.sid = sp.sid
-WHERE dp.type = ''S'' 
+WHERE dp.type = ''S''
   AND sp.sid IS NULL
   AND dp.name NOT IN (''guest'', ''INFORMATION_SCHEMA'', ''sys'');
 
 -- Print the generated DROP USER commands
 
 --PRINT @DropUserCommands;
-EXEC sp_executesql @DropUserCommands;', 
-		@database_name=N'master', 
+EXEC sp_executesql @DropUserCommands;',
+		@database_name=N'master',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 EXEC @ReturnCode = msdb.dbo.sp_update_job @job_id = @jobId, @start_step_id = 1

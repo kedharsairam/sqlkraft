@@ -1,7 +1,7 @@
 ---
-title: 'Compatibility levels'
-topic: 'query-processing'
-description: 'Replace remote servers by using linked servers.'
+title: "Compatibility levels"
+topic: "query-processing"
+description: "Replace remote servers by using linked servers."
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

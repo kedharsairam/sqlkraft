@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_describe_undeclared_parameters'
-title: 'sp_describe_undeclared_parameters'
-category: 'general'
-description: 'For internal use. Not nullable. always returns status of zero. The most common use is when an application is given a Transact-SQL statement that might contain parameters and must process them in some way. An example is a user interface (such ) where the user provides a query with ODBC parameter syntax. The application must dynamically discover the number of parameters and prompt the user for Anoth'
+name: "sys.sp_describe_undeclared_parameters"
+title: "sp_describe_undeclared_parameters"
+category: "general"
+description: "For internal use. Not nullable. always returns status of zero. The most common use is when an application is given a Transact-SQL statement that might contain parameters and must process them in some way. An example is a user interface (such ) where the user provides a query with ODBC parameter syntax. The application must dynamically discover the number of parameters and prompt the user for Anoth"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

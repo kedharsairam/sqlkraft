@@ -1,7 +1,7 @@
 ---
-name: 'To Check Components in SQL Server'
-title: 'To Check Components in SQL Server'
-description: 'it will check cpu, memory, io and so on...'
+name: "To Check Components in SQL Server"
+title: "To Check Components in SQL Server"
+description: "it will check cpu, memory, io and so on..."
 category: high-availability
 tags: ["health-check", "high-availability"]
 pubDate: 2025-03-15

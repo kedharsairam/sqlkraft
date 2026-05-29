@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_catalogs'
-title: 'sp_catalogs'
-category: 'general'
-description: 'Returns the list of catalogs in the specified linked server. This is equivalent to databases in SQL Transact-SQL syntax conventions'
+name: "sys.sp_catalogs"
+title: "sp_catalogs"
+category: "general"
+description: "Returns the list of catalogs in the specified linked server. This is equivalent to databases in SQL Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

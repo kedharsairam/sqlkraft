@@ -3,23 +3,23 @@ title: "Use in Applications"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   08/10/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes the options that are available to you for working with the
-  
+
   data type in
-  
+
   your a
 tags:
   - "xml-data"

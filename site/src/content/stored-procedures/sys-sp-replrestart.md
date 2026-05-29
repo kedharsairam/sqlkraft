@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_replrestart'
-title: 'sp_replrestart'
-category: 'general'
-description: 'Used by transactional replication during backup and restore so that the replicated data at the Distributor is synchronized with data at the Publisher. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions is used when the highest log sequence number (LSN) value at the Distributor doesn''t match the highest LSN value at the Publisher. fixed d'
+name: "sys.sp_replrestart"
+title: "sp_replrestart"
+category: "general"
+description: "Used by transactional replication during backup and restore so that the replicated data at the Distributor is synchronized with data at the Publisher. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions is used when the highest log sequence number (LSN) value at the Distributor doesn't match the highest LSN value at the Publisher. fixed d"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 ---
@@ -17,21 +17,17 @@ Used by transactional replication during backup and restore so that the replicat
 
 ## Code Blocks
 
-
 ```sql
 0
 ```
-
 
 ```sql
 1
 ```
 
-
 ```sql
 sp_replrestart
 ```
-
 
 ```sql
 sp_replrestart

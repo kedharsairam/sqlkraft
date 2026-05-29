@@ -1,7 +1,7 @@
 ---
-title: 'Parallel query processing'
-topic: 'query-processing'
-description: 'In this case, SQL Server doesn''t use the value 100 to optimize the query. It uses a general'
+title: "Parallel query processing"
+topic: "query-processing"
+description: "In this case, SQL Server doesn't use the value 100 to optimize the query. It uses a general"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -124,8 +124,8 @@ attribute in the
 
 element, which describes why parallelism wasn't used. Values for this attribute include:
 
-
 ## Description
+
 MaxDOPSetToOne
 
 Maximum degree of parallelism set
@@ -188,8 +188,8 @@ UDF that requires data access.
 
 Expand table
 
-
 ## Description
+
 TSQLUserDefinedFunctionsNotParallelizable
 
 Query is referencing a T-SQL User

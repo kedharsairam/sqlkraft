@@ -1,7 +1,7 @@
 ---
-name: 'To Check Who Failover Always on Ag'
-title: 'To Check Who Failover Always on Ag'
-description: 'SQL Server diagnostic script for high-availability operations.'
+name: "To Check Who Failover Always on Ag"
+title: "To Check Who Failover Always on Ag"
+description: "SQL Server diagnostic script for high-availability operations."
 category: high-availability
 tags: ["failover", "health-check", "high-availability"]
 pubDate: 2025-03-15
@@ -18,11 +18,11 @@ FROM (
     WHERE s.name = N'AlwaysOn_health'
 ) ft
 
-SELECT 
+SELECT
     XEData.value('(event/@timestamp)[1]','datetime2(3)') AS event_timestamp,
     XEData.value('(event/data[@name="availability_group_name"]/value)[1]', 'nvarchar(max)') AS availability_group_name,
     XEData.value('(event/data[@name="client_app_name"]/value)[1]', 'nvarchar(max)') AS client_app_name,
-    XEData.value('(event/data[@name="client_hostname"]/value)[1]', 'nvarchar(max)') AS client_hostname,    
+    XEData.value('(event/data[@name="client_hostname"]/value)[1]', 'nvarchar(max)') AS client_hostname,
     XEData.value('(event/data[@name="client_hostname"]/value)[1]', 'nvarchar(255)') AS client_hostname,
     XEData.value('(event/data[@name="nt_username"]/value)[1]', 'nvarchar(255)') AS nt_username,
     XEData.value('(event/data[@name="statement"]/value)[1]', 'nvarchar(max)') AS statement

@@ -1,7 +1,7 @@
 ---
-name: 'To Create Clustered Index'
-title: 'To Create Clustered Index'
-description: 'if table contains <=1000 rows, don''t create an index.'
+name: "To Create Clustered Index"
+title: "To Create Clustered Index"
+description: "if table contains <=1000 rows, don't create an index."
 category: index-maintenance
 tags: ["index-maintenance", "indexing"]
 pubDate: 2025-03-15

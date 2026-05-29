@@ -3,21 +3,21 @@ title: "Performance issues"
 topic: "ssms"
 description: |
   Article
-  
+
   •
-  
+
   11/22/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   When you analyze the T-SQL code in your database project, one or more
 tags:
   - "ssms"

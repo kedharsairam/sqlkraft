@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_articlefilter'
-title: 'sp_articlefilter'
-category: 'general'
-description: 'Filters data that is published based on a table article. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication that contains the article. The name of the filter stored procedure to be created from the . You must specify a unique name for the article filter.'
+name: "sys.sp_articlefilter"
+title: "sp_articlefilter"
+category: "general"
+description: "Filters data that is published based on a table article. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication that contains the article. The name of the filter stored procedure to be created from the . You must specify a unique name for the article filter."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -187,5 +187,4 @@ EXEC sp_addarticle
 EXEC sp_articlefilter
 ```
 
-
-*(... and 6 more examples)*
+_(... and 6 more examples)_

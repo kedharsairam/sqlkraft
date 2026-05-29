@@ -1,8 +1,8 @@
 ---
-name: 'database in Fabric'
-title: 'database in Fabric'
-category: 'predicates'
-description: 'The following example creates a nonclustered composite index on the'
+name: "database in Fabric"
+title: "database in Fabric"
+category: "predicates"
+description: "The following example creates a nonclustered composite index on the"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

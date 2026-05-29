@@ -1,7 +1,7 @@
 ---
-title: 'Locking overview'
-topic: 'locking'
-description: 'Optimized locking is enabled per database. Connect to your database, then use the following'
+title: "Locking overview"
+topic: "locking"
+description: "Optimized locking is enabled per database. Connect to your database, then use the following"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -14,8 +14,8 @@ query to check if optimized locking is enabled:
 
 SQL
 
-
 ## Description
+
 Optimized locking is disabled.
 
 Optimized locking is enabled.

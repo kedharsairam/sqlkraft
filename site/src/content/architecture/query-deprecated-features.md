@@ -1,7 +1,7 @@
 ---
-title: 'Query deprecated features'
-topic: 'query-processing'
-description: 'SQL Server 2019 (15.x)'
+title: "Query deprecated features"
+topic: "query-processing"
+description: "SQL Server 2019 (15.x)"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

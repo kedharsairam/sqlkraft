@@ -1,8 +1,8 @@
 ---
-name: 'sys.linked_logins'
-title: 'sys.linked_logins'
-category: 'security'
-description: 'Returns a row per linked-server-login mapping, for use by RPC and distributed queries from local server to the corresponding linked server. Server-principal to whom mapping applies. If 1, mapping indicates session should use its own credentials; otherwise, 0 indicates that session uses the name and password that Remote user name to use when connecting. Password is also stored, but not exposed in c'
+name: "sys.linked_logins"
+title: "sys.linked_logins"
+category: "security"
+description: "Returns a row per linked-server-login mapping, for use by RPC and distributed queries from local server to the corresponding linked server. Server-principal to whom mapping applies. If 1, mapping indicates session should use its own credentials; otherwise, 0 indicates that session uses the name and password that Remote user name to use when connecting. Password is also stored, but not exposed in c"
 tags: ["security", "catalog-view"]
 pubDate: 2026-05-29
 ---
@@ -17,26 +17,21 @@ Returns a row per linked-server-login mapping, for use by RPC and distributed qu
 
 ## Code Blocks
 
-
 ```sql
 server_id
 ```
-
 
 ```sql
 sys.servers
 ```
 
-
 ```sql
 local_principal_id
 ```
 
-
 ```sql
 uses_self_credential
 ```
-
 
 ```sql
 remote_name

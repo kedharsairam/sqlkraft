@@ -1,8 +1,8 @@
 ---
-name: 'STGeometryType (geometry Data Type)'
-title: 'STGeometryType (geometry Data Type)'
-category: 'data-types'
-description: '### Polygon, CurvePolygon'
+name: "STGeometryType (geometry Data Type)"
+title: "STGeometryType (geometry Data Type)"
+category: "data-types"
+description: "### Polygon, CurvePolygon"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

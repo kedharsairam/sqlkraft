@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_add_job'
-title: 'sp_add_job'
-category: 'general'
-description: 'Creates a new job executed by the SQL Server Agent service. Transact-SQL syntax conventions , most, but not all SQL Server Agent features are'
+name: "sys.sp_add_job"
+title: "sp_add_job"
+category: "general"
+description: "Creates a new job executed by the SQL Server Agent service. Transact-SQL syntax conventions , most, but not all SQL Server Agent features are"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

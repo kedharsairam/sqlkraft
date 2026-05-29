@@ -3,21 +3,21 @@ title: "Generate Siblings with a Nested AUTO Mode Query"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The following example shows how to generate siblings by using a nested AUTO mode query.
-  
+
   The only other
 tags:
   - "xml-data"

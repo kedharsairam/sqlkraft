@@ -1,7 +1,7 @@
 ---
-name: 'Important List of Tables Participating in Repli'
-title: 'Important List of Tables Participating in Repli'
-description: 'Transactional Replication:'
+name: "Important List of Tables Participating in Repli"
+title: "Important List of Tables Participating in Repli"
+description: "Transactional Replication:"
 category: replication
 tags: ["replication", "table"]
 pubDate: 2025-03-15

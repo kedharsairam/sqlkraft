@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_update_jobschedule'
-title: 'sp_update_jobschedule'
-category: 'general'
-description: 'Changes the schedule settings for the specified job in the SQL Server Agent service. is provided for backward compatibility only. Job schedules can now be managed independently of jobs. To update a schedule, use permissions on this procedure, but these permissions might be overridden during a SQL Server upgrade. Other users must be granted one of the following SQL Server Agent fixed database roles'
+name: "sys.sp_update_jobschedule"
+title: "sp_update_jobschedule"
+category: "general"
+description: "Changes the schedule settings for the specified job in the SQL Server Agent service. is provided for backward compatibility only. Job schedules can now be managed independently of jobs. To update a schedule, use permissions on this procedure, but these permissions might be overridden during a SQL Server upgrade. Other users must be granted one of the following SQL Server Agent fixed database roles"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_update_jobschedule'
+syntax: "sp_update_jobschedule"
 ---
 
 ## Description

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_update_agent_profile'
-title: 'sp_update_agent_profile'
-category: 'general'
-description: 'Updates the profile used by a replication agent. This stored procedure is executed at the Distributor on the distribution database. Transact-SQL syntax conventions , with no default, and can be one of these values.'
+name: "sys.sp_update_agent_profile"
+title: "sp_update_agent_profile"
+category: "general"
+description: "Updates the profile used by a replication agent. This stored procedure is executed at the Distributor on the distribution database. Transact-SQL syntax conventions , with no default, and can be one of these values."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

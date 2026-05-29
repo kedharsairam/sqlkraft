@@ -3,13 +3,13 @@ title: "Ubuntu"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This sample bash script installs SQL Server on Ubuntu without interactive input. It provides
-  
+
   examples of installing the Database Engine, the SQL Server command-line
 tags:
   - "linux-operations"

@@ -3,15 +3,15 @@ title: "Change tracking"
 topic: "change-data-capture"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This article describes the change tracking feature for SQL Server, which is a lightweight sol
 tags:
   - "change-data-capture"

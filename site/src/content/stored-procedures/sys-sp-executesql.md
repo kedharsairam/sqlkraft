@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_executesql'
-title: 'sp_executesql'
-category: 'general'
-description: 'A placeholder for the values of extra parameters. Values can only be constants or variables. Values can''t be more complex expressions such as functions, or expressions built by using (success) or non-zero (failure). Returns the result sets from all the SQL statements built into the SQL string. parameters must be entered in the specific order as described in the section earlier in this article. If '
+name: "sys.sp_executesql"
+title: "sp_executesql"
+category: "general"
+description: "A placeholder for the values of extra parameters. Values can only be constants or variables. Values can't be more complex expressions such as functions, or expressions built by using (success) or non-zero (failure). Returns the result sets from all the SQL statements built into the SQL string. parameters must be entered in the specific order as described in the section earlier in this article. If "
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'AdventureWorks2025'
+syntax: "AdventureWorks2025"
 ---
 
 ## Description
@@ -22,78 +22,53 @@ AdventureWorks2025
 
 Applies to:
 
-
 Azure SQL Database
-
 
 Azure SQL Managed Instance
 
-
 Azure Synapse Analytics
-
 
 Analytics Platform System (PDW)
 
-
 SQL analytics endpoint in
-
 
 Microsoft Fabric
 
-
 Warehouse in Microsoft Fabric
-
 
 SQL database in Microsoft Fabric
 
-
 Executes a Transact-SQL statement or batch that can be reused many times, or one that is built
-
 
 dynamically. The Transact-SQL statement or batch can contain embedded parameters.
 
-
 Transact-SQL syntax conventions
-
 
 Syntax for SQL Server, Azure SQL Database, Azure SQL Managed Instance, Azure Synapse
 
-
 Analytics, and Analytics Platform System (PDW).
-
 
 The code samples in this article use the
 
-
 database, which you can download from the
-
 
 Microsoft SQL Server Samples and Community
 
-
 Runtime-compiled Transact-SQL statements can expose applications to malicious attacks.
-
 
 You should parameterize your queries when using
 
-
 . For more information,
-
 
 SQL injection
 
-
 Arguments for extended stored procedures must be entered in the specific order as
-
 
 described in the
 
-
 section. If the parameters are entered out of order, an error
 
-
 message occurs.
-
 
 ## Remarks
 

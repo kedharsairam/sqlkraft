@@ -1,8 +1,8 @@
 ---
-name: 'sys.dm_exec_describe_first_result_set_for_object'
-title: 'sys.dm_exec_describe_first_result_set_for_object'
-category: 'execution'
-description: 'SQL database in Microsoft Fabric This dynamic management function takes an @object_id as a parameter and describes the first result metadata for the module with that ID. The @object_id specified can be the ID of a Transact-SQL stored procedure or a Transact-SQL trigger. If it is the ID of any other object (such as a view, table, function, or CLR procedure), an error will be specified in the error '
+name: "sys.dm_exec_describe_first_result_set_for_object"
+title: "sys.dm_exec_describe_first_result_set_for_object"
+category: "execution"
+description: "SQL database in Microsoft Fabric This dynamic management function takes an @object_id as a parameter and describes the first result metadata for the module with that ID. The @object_id specified can be the ID of a Transact-SQL stored procedure or a Transact-SQL trigger. If it is the ID of any other object (such as a view, table, function, or CLR procedure), an error will be specified in the error "
 tags: ["execution", "dmv"]
 pubDate: 2026-05-29
 syntax: |

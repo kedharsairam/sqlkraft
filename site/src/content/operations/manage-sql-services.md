@@ -3,15 +3,15 @@ title: "Manage SQL services"
 topic: "linux-operations"
 description: |
   07/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article describes how to start, stop, or restart the SQL Server Database Engine and SQL
-  
+
   Server Agent on Linux by using the command line, or Transact
 tags:
   - "linux-operations"

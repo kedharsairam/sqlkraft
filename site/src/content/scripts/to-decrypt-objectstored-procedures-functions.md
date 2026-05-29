@@ -1,7 +1,7 @@
 ---
-name: 'To Decrypt Object(Stored Procedures, Functions'
-title: 'To Decrypt Object(Stored Procedures, Functions'
-description: 'SQL Server diagnostic script for security-audit operations.'
+name: "To Decrypt Object(Stored Procedures, Functions"
+title: "To Decrypt Object(Stored Procedures, Functions"
+description: "SQL Server diagnostic script for security-audit operations."
 category: security-audit
 tags: ["security-audit"]
 pubDate: 2025-03-15

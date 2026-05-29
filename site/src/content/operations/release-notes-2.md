@@ -3,17 +3,17 @@ title: "Release notes"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article lists:
-  
+
   Features in preview
-  
+
   Features that have reached general availability (GA) within the last 12 months
-  
+
   Release dates
-  
+
   Azure extension for SQL Server version
 tags:
   - "azure-synapse"

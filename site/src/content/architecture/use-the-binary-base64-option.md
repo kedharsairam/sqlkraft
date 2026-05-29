@@ -3,22 +3,22 @@ title: "Use the BINARY BASE64 Option"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   10/17/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   If the BINARY BASE64 option is specified in the query, the binary data is returned in base64
-  
-  encoding 
+
+  encoding
 tags:
   - "xml-data"
   - "use-the-binary-base64-option"

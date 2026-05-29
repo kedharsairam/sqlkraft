@@ -1,8 +1,8 @@
 ---
-name: 'time Description'
-title: 'time Description'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "time Description"
+title: "time Description"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -31,8 +31,8 @@ Defines a time of a day. The time is without time zone awareness and is based on
 
 clock.
 
-
 ## Syntax
+
 [ (
 
 fractional second scale
@@ -129,9 +129,9 @@ mm is two digits, ranging from 0 to 59, that represent the minute.
 
 ss is two digits, ranging from 0 to 59, that represent the second.
 
-n* is zero to seven digits, ranging from 0 to 9999999, that represent the
+n\* is zero to seven digits, ranging from 0 to 9999999, that represent the
 
-fractional seconds. For Informatica, n* is zero to three digits, ranging from 0 to
+fractional seconds. For Informatica, n\* is zero to three digits, ranging from 0 to
 
 999.
 

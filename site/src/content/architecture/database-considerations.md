@@ -1,7 +1,7 @@
 ---
-title: 'Database considerations'
-topic: 'io-fundamentals'
-description: 'For example, an index might be useful for columns with many distinct data values, but'
+title: "Database considerations"
+topic: "io-fundamentals"
+description: "For example, an index might be useful for columns with many distinct data values, but"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

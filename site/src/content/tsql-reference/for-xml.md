@@ -1,8 +1,8 @@
 ---
-name: 'FOR XML'
-title: 'FOR XML'
-category: 'queries'
-description: 'Specifies that the results of a query are to be returned as an XML document. One of the'
+name: "FOR XML"
+title: "FOR XML"
+category: "queries"
+description: "Specifies that the results of a query are to be returned as an XML document. One of the"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
@@ -53,8 +53,8 @@ Use RAW mode with FOR XML
 
 .
 
-
 ## Returns query results in a simple, nested XML tree. Each table in the
+
 clause, for which at
 
 least one column is listed in the
@@ -81,8 +81,8 @@ Use EXPLICIT mode with FOR XML
 
 .
 
-
 ## Returns inline XDR schema, but doesn't add the root element to the result. If you specify
+
 , the XDR schema is appended to the document.
 
 If the columns that are included in the unique index don't accept
@@ -141,8 +141,8 @@ statement:
 
 SQL
 
-
 ## Returns inline XSD schema. You can optionally specify a target namespace URI when you
+
 specify this directive, which returns the specified namespace in the schema. For more
 
 information, see

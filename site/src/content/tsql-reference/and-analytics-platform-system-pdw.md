@@ -1,8 +1,8 @@
 ---
-name: 'and Analytics Platform System (PDW)'
-title: 'and Analytics Platform System (PDW)'
-category: 'operators'
-description: 'When the database compatibility level is 110 or higher. See'
+name: "and Analytics Platform System (PDW)"
+title: "and Analytics Platform System (PDW)"
+category: "operators"
+description: "When the database compatibility level is 110 or higher. See"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

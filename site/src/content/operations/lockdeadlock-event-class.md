@@ -3,18 +3,18 @@ title: "Lock:Deadlock Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
-  The Lock:Deadlock event class is produced when an attempt to 
+
+  The Lock:Deadlock event class is produced when an attempt to
 tags:
   - "event-classes"
   - "lockdeadlock-event-class"

@@ -1,7 +1,7 @@
 ---
-title: 'Best practices'
-topic: 'query-processing'
-description: 'object that appears in'
+title: "Best practices"
+topic: "query-processing"
+description: "object that appears in"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

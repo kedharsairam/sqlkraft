@@ -1,8 +1,8 @@
 ---
-name: 'sys.dm_db_index_operational_stats'
-title: 'sys.dm_db_index_operational_stats'
-category: 'index'
-description: 'SQL database in Microsoft Fabric Returns the lower level data access, locking, and latching statistics for each partition of a table Transact-SQL syntax conventions . Valid inputs are the ID number of a database, NULL, 0, or DEFAULT. The default is 0. NULL, 0, and DEFAULT are equivalent values in this Specify NULL to return information for all databases in the instance of SQL Server. If you , you '
+name: "sys.dm_db_index_operational_stats"
+title: "sys.dm_db_index_operational_stats"
+category: "index"
+description: "SQL database in Microsoft Fabric Returns the lower level data access, locking, and latching statistics for each partition of a table Transact-SQL syntax conventions . Valid inputs are the ID number of a database, NULL, 0, or DEFAULT. The default is 0. NULL, 0, and DEFAULT are equivalent values in this Specify NULL to return information for all databases in the instance of SQL Server. If you , you "
 tags: ["index", "dmv"]
 pubDate: 2026-05-29
 syntax: |
@@ -65,72 +65,49 @@ DEFAULT
 
 Azure SQL Database
 
-
 Azure SQL Managed Instance
-
 
 SQL database in Microsoft Fabric
 
-
 Returns the lower level data access, locking, and latching statistics for each partition of a table
-
 
 or index in a database.
 
-
 Transact-SQL syntax conventions
-
 
 database_id
 
-
 | NULL | 0 | DEFAULT
-
 
 ID of the database.
 
-
 database_id
-
 
 . Valid inputs are the ID number of a database,
 
-
 NULL, 0, or DEFAULT. The default is 0. NULL, 0, and DEFAULT are equivalent values in this
-
 
 Specify NULL to return information for all databases in the instance of SQL Server. If you
 
-
 specify NULL for
-
 
 database_id
 
-
 , you must also specify NULL for
-
 
 partition_number
 
-
 The built-in function
-
 
 can be specified.
 
-
 | NULL | 0 | DEFAULT
-
 
 Object ID of the table or view the index is on.
 
-
 Valid inputs are the ID number of a table and view, NULL, 0, or DEFAULT. The default is 0. NULL,
 
-
 0, and DEFAULT are equivalent values in this context.
-
 
 ## Permissions
 

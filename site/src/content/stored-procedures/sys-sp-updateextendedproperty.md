@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_updateextendedproperty'
-title: 'sp_updateextendedproperty'
-category: 'general'
-description: 'SQL database in Microsoft Fabric Updates the value of an existing extended property. Transact-SQL syntax conventions The name of the property to be updated. The value associated with the property. can''t be more than 7,500 bytes. The user or user-defined type.'
+name: "sys.sp_updateextendedproperty"
+title: "sp_updateextendedproperty"
+category: "general"
+description: "SQL database in Microsoft Fabric Updates the value of an existing extended property. Transact-SQL syntax conventions The name of the property to be updated. The value associated with the property. can't be more than 7,500 bytes. The user or user-defined type."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

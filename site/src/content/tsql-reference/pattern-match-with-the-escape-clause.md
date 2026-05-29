@@ -1,8 +1,8 @@
 ---
-name: 'Pattern match with the ESCAPE clause'
-title: 'Pattern match with the ESCAPE clause'
-category: 'queries'
-description: 'objects that don''t match the'
+name: "Pattern match with the ESCAPE clause"
+title: "Pattern match with the ESCAPE clause"
+category: "queries"
+description: "objects that don't match the"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

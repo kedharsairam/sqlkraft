@@ -1,10 +1,10 @@
 ---
-name: 'Using WITH NO REVERT'
-title: 'Using WITH NO REVERT'
-category: 'queries'
-description: ''
+name: "Using WITH NO REVERT"
+title: "Using WITH NO REVERT"
+category: "queries"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

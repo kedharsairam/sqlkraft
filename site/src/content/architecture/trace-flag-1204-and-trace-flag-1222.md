@@ -1,7 +1,7 @@
 ---
-title: 'Trace flag 1204 and trace flag 1222'
-topic: 'query-processing'
-description: '### Deadlock extended event'
+title: "Trace flag 1204 and trace flag 1222"
+topic: "query-processing"
+description: "### Deadlock extended event"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -48,8 +48,8 @@ describes the
 
 deadlock victim.
 
-
 ## Returns information in an
+
 XML-like format that doesn't
 
 conform to an XML Schema
@@ -270,8 +270,8 @@ statement
 
 the threads have
 
-
 ## permissions.
+
 Specifies
 
 the participating

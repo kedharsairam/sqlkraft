@@ -1,11 +1,11 @@
 ---
-name: 'sys.fn_cdc_decrement_lsn'
-title: 'sys.fn_cdc_decrement_lsn'
-category: 'change-data-capture'
-description: 'Returns the previous log sequence number (LSN) in the sequence based upon the specified Transact-SQL syntax conventions The LSN returned by the function is always less than the specified value, and no LSN values can'
+name: "sys.fn_cdc_decrement_lsn"
+title: "sys.fn_cdc_decrement_lsn"
+category: "change-data-capture"
+description: "Returns the previous log sequence number (LSN) in the sequence based upon the specified Transact-SQL syntax conventions The LSN returned by the function is always less than the specified value, and no LSN values can"
 tags: ["change-data-capture", "function"]
 pubDate: 2026-05-29
-syntax: 'sys.fn_cdc_decrement_lsn ( lsn_value )'
+syntax: "sys.fn_cdc_decrement_lsn ( lsn_value )"
 ---
 
 ## Description

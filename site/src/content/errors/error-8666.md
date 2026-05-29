@@ -1,10 +1,10 @@
 ---
-name: '8666'
-title: 'Error 8666'
+name: "8666"
+title: "Error 8666"
 errorNumber: 8666
-severity: 'medium'
-category: 'io'
-description: 'Description 8666 10 No Warning: The optimizer cannot use the index because the select list of the view contains a non-aggregate expression. 8667 10 No Warning: The optimizer cannot use the index becau'
+severity: "medium"
+category: "io"
+description: "Description 8666 10 No Warning: The optimizer cannot use the index because the select list of the view contains a non-aggregate expression. 8667 10 No Warning: The optimizer cannot use the index becau"
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---
@@ -19,5 +19,4 @@ MEDIUM (Level N/A)
 
 ## Troubleshooting
 
-*(Diagnostic content pending full extraction)*
-
+_(Diagnostic content pending full extraction)_

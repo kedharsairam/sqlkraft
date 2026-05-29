@@ -3,19 +3,19 @@ title: "Filter events based on the event end time"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to filter trace events based on the event ending time by using SQL
-  
+
   Server Profiler.
-  
+
   1. On the
-  
+
   menu, selec
 tags:
   - "profiler"

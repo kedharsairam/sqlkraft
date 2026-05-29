@@ -1,7 +1,7 @@
 ---
-title: 'Avoid the use of SQL Trace and SQL Server Profiler'
-topic: 'query-processing'
-description: 'The performance of index operations such as creating or rebuilding indexes can be improved'
+title: "Avoid the use of SQL Trace and SQL Server Profiler"
+topic: "query-processing"
+description: "The performance of index operations such as creating or rebuilding indexes can be improved"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

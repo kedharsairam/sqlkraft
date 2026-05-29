@@ -3,21 +3,21 @@ title: "Remote blob store (RBS)"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Always On availability groups can provide a high-availability and disaster recovery solution for
-  
+
   SQL Server
-  
+
   Remote Blob Store (RBS)
-  
+
   BLOB objects (bl
 tags:
   - "high-availability"

@@ -1,8 +1,8 @@
 ---
-name: 'sys.availability_read_only_routing_lists'
-title: 'sys.availability_read_only_routing_lists'
-category: 'compatibility'
-description: 'Returns a row for the read-only routing list of each availability replica in an Always On availability group in the WSFC failover cluster. Unique ID of the availability replica that owns the routing list. Priority order for routing (1 is first, 2 is second, and so forth). Unique ID of the availability replica to which a read-only The visibility of the metadata in catalog views is limited to secura'
+name: "sys.availability_read_only_routing_lists"
+title: "sys.availability_read_only_routing_lists"
+category: "compatibility"
+description: "Returns a row for the read-only routing list of each availability replica in an Always On availability group in the WSFC failover cluster. Unique ID of the availability replica that owns the routing list. Priority order for routing (1 is first, 2 is second, and so forth). Unique ID of the availability replica to which a read-only The visibility of the metadata in catalog views is limited to secura"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---
@@ -17,16 +17,13 @@ Returns a row for the read-only routing list of each availability replica in an 
 
 ## Code Blocks
 
-
 ```sql
 replica_id
 ```
 
-
 ```sql
 routing_priority
 ```
-
 
 ```sql
 read_only_replica_id

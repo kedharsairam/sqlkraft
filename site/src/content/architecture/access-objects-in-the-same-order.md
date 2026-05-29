@@ -1,7 +1,7 @@
 ---
-title: 'Access objects in the same order'
-topic: 'query-processing'
-description: 'was involved in the deadlock).'
+title: "Access objects in the same order"
+topic: "query-processing"
+description: "was involved in the deadlock)."
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

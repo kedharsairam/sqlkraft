@@ -1,11 +1,11 @@
 ---
-name: 'sys.dm_exec_plan_attributes'
-title: 'sys.dm_exec_plan_attributes'
-category: 'execution'
-description: 'SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns one row per plan attribute for the plan specified by the plan handle. You can use this table-valued function to get details about a particular plan, such as the cache key values or the number of current simultaneous executions of the plan. Uniquely identifies a query plan for a batch that has executed and whose plan'
+name: "sys.dm_exec_plan_attributes"
+title: "sys.dm_exec_plan_attributes"
+category: "execution"
+description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns one row per plan attribute for the plan specified by the plan handle. You can use this table-valued function to get details about a particular plan, such as the cache key values or the number of current simultaneous executions of the plan. Uniquely identifies a query plan for a batch that has executed and whose plan"
 tags: ["execution", "dmv"]
 pubDate: 2026-05-29
-syntax: 'sys.dm_exec_plan_attributes ( plan_handle )'
+syntax: "sys.dm_exec_plan_attributes ( plan_handle )"
 ---
 
 ## Description

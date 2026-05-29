@@ -3,19 +3,19 @@ title: "Replicated databases"
 topic: "upgrade"
 description: |
   Article
-  
+
   •
-  
+
   02/26/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   SQL Server supports upgrading replicated databases from previous versions of SQL Server; it
-  
+
   isn't required to stop activity at other n
 tags:
   - "upgrade"

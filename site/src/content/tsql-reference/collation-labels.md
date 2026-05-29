@@ -1,8 +1,8 @@
 ---
-name: 'Collation labels'
-title: 'Collation labels'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Collation labels"
+title: "Collation labels"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -3,17 +3,17 @@ title: "Hash Warning Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Hash Warning event class can be used to monitor when a hash recursion or cessation of
-  
+
   ha
 tags:
   - "event-classes"

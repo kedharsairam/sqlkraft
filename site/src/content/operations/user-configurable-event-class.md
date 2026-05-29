@@ -3,17 +3,17 @@ title: "User-Configurable Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Use the User-Configurable event category to monitor user-defined events. Create user-defined
-  
+
 tags:
   - "event-classes"
   - "user-configurable-event-class"

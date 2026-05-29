@@ -3,22 +3,21 @@ title: "Create"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to create a new trace template by using SQL Server Profiler.
-  
+
   1. On the
-  
+
   menu, point to
-  
+
   , and then select
-  
-  
+
 tags:
   - "profiler"
   - "create"

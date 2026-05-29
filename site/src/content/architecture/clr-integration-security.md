@@ -3,17 +3,17 @@ title: "CLR Integration Security"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The security model of the SQL Server integration with the .NET Framework common language
-  
+
   runtime (CLR) manages and secures access between different ty
 tags:
   - "clr-integration"

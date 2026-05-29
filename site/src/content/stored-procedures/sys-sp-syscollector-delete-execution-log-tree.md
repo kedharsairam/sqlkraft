@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_syscollector_delete_execution_log_tree'
-title: 'sp_syscollector_delete_execution_log_tree'
-category: 'general'
-description: 'Deletes all the log entries for the run of a single collection set. It also deletes the log entries from the SSIS tables for that run. Transact-SQL syntax conventions The unique identifier for the collection set log. The identifier for the collection set.'
+name: "sys.sp_syscollector_delete_execution_log_tree"
+title: "sp_syscollector_delete_execution_log_tree"
+category: "general"
+description: "Deletes all the log entries for the run of a single collection set. It also deletes the log entries from the SSIS tables for that run. Transact-SQL syntax conventions The unique identifier for the collection set log. The identifier for the collection set."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

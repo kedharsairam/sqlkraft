@@ -3,21 +3,21 @@ title: "Query options and data"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   03/17/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes the query options that you have to specify to query XML data. It also
-  
+
   describes
 tags:
   - "xml-data"

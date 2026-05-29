@@ -3,19 +3,19 @@ title: "Create clustered DTC"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   11/25/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   This article walks you through a complete configuration of a clustered DTC resource for a SQL
-  
+
   Server Always On availability group (AG)
 tags:
   - "high-availability"

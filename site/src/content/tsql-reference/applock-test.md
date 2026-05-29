@@ -1,8 +1,8 @@
 ---
-name: 'APPLOCK_TEST'
-title: 'APPLOCK_TEST'
-category: 'statements'
-description: ''
+name: "APPLOCK_TEST"
+title: "APPLOCK_TEST"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

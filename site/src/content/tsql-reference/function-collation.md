@@ -1,13 +1,14 @@
 ---
-name: 'Function collation'
-title: 'Function collation'
-category: 'statements'
-description: 'Perform logical operations.'
+name: "Function collation"
+title: "Function collation"
+category: "statements"
+description: "Perform logical operations."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 ## Description
+
 Logical Functions
 
 Perform logical operations.

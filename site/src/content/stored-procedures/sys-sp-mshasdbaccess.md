@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_mshasdbaccess'
-title: 'sp_MShasdbaccess'
-category: 'general'
-description: 'Lists the name and owner of all the databases to which the user has access. Transact-SQL syntax conventions Execute permission is granted to the sys.sysdatabases (Transact-SQL)'
+name: "sys.sp_mshasdbaccess"
+title: "sp_MShasdbaccess"
+category: "general"
+description: "Lists the name and owner of all the databases to which the user has access. Transact-SQL syntax conventions Execute permission is granted to the sys.sysdatabases (Transact-SQL)"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

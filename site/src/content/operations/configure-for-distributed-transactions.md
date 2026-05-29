@@ -3,17 +3,17 @@ title: "Configure for distributed transactions"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   09/16/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   SQL Server 2017 (14.x) and later versions support all distributed transactions including
-  
+
   databases in an availability group. This article explains how
 tags:
   - "high-availability"

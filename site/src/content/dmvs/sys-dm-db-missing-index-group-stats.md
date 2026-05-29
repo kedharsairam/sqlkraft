@@ -1,11 +1,11 @@
 ---
-name: 'sys.dm_db_missing_index_group_stats'
-title: 'sys.dm_db_missing_index_group_stats'
-category: 'index'
-description: 'Average percentage benefit that user queries could experience if this missing index group was implemented. The value means that the query cost would on average drop by this percentage if this missing index group was implemented. Number of seeks caused by system queries, such as auto stats queries, that the recommended index in the group could have been used for. For more information, see Auto Stat'
+name: "sys.dm_db_missing_index_group_stats"
+title: "sys.dm_db_missing_index_group_stats"
+category: "index"
+description: "Average percentage benefit that user queries could experience if this missing index group was implemented. The value means that the query cost would on average drop by this percentage if this missing index group was implemented. Number of seeks caused by system queries, such as auto stats queries, that the recommended index in the group could have been used for. For more information, see Auto Stat"
 tags: ["index", "dmv"]
 pubDate: 2026-05-29
-syntax: 'sys.dm_db_missing_index_group_stats'
+syntax: "sys.dm_db_missing_index_group_stats"
 ---
 
 ## Description

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_unprepare'
-title: 'sp_unprepare'
-category: 'general'
-description: 'Analytics Platform System (PDW) Discards the execution plan created by the in a tabular data stream (TDS) packet. The following example prepares, executes, and unprepares a basic statement. Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered out of order, an error'
+name: "sys.sp_unprepare"
+title: "sp_unprepare"
+category: "general"
+description: "Analytics Platform System (PDW) Discards the execution plan created by the in a tabular data stream (TDS) packet. The following example prepares, executes, and unprepares a basic statement. Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered out of order, an error"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

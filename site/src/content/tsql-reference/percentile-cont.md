@@ -1,8 +1,8 @@
 ---
-name: 'PERCENTILE_CONT'
-title: 'PERCENTILE_CONT'
-category: 'statements'
-description: ''
+name: "PERCENTILE_CONT"
+title: "PERCENTILE_CONT"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

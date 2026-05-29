@@ -3,19 +3,19 @@ title: "Failover to secondary"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Failing over to a log shipping secondary is useful if the primary server instance fails or requires
-  
+
   maintenance.
-  
+
   Typically, the primary and secondary
 tags:
   - "high-availability"

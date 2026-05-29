@@ -1,7 +1,7 @@
 ---
-title: 'Dynamic memory management'
-topic: 'memory-management'
-description: 'SQL Server 2005 (9.x), SQL Server 2008'
+title: "Dynamic memory management"
+topic: "memory-management"
+description: "SQL Server 2005 (9.x), SQL Server 2008"
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---

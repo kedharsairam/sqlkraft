@@ -1,11 +1,11 @@
 ---
-name: 'sys.database_scoped_configurations'
-title: 'sys.database_scoped_configurations'
-category: 'configuration'
-description: 'SQL Server 2016 (13.x) and later versions Azure SQL Database SQL Managed Instance Azure Synapse Analytics SQL analytics endpoint in Microsoft Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Contains one row per configuration. ID of the configuration option. The name of the configuration option. For information about the possible configurations, see ALTER DATABASE SCOPED CONFIGURATIO'
+name: "sys.database_scoped_configurations"
+title: "sys.database_scoped_configurations"
+category: "configuration"
+description: "SQL Server 2016 (13.x) and later versions Azure SQL Database SQL Managed Instance Azure Synapse Analytics SQL analytics endpoint in Microsoft Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Contains one row per configuration. ID of the configuration option. The name of the configuration option. For information about the possible configurations, see ALTER DATABASE SCOPED CONFIGURATIO"
 tags: ["configuration", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'ALTER DATABASE SCOPED CONFIGURATION'
+syntax: "ALTER DATABASE SCOPED CONFIGURATION"
 ---
 
 ## Description

@@ -3,25 +3,25 @@ title: "User-Configurable Event Category"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event category contains the
-  
+
   event classes.
-  
+
   Description
-  
+
   User-Configurable
-  
+
   Event Class
 tags:
   - "event-classes"

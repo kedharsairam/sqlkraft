@@ -3,17 +3,17 @@ title: "Complete the upgrade"
 topic: "upgrade"
 description: |
   06/04/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   After upgrading the Database Engine, complete the following tasks:
-  
+
   Perform a full backup of each database.
-  
+
   In SQL Server 2016 (13.x) and later ve
 tags:
   - "upgrade"

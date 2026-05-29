@@ -3,15 +3,15 @@ title: "SQL Assessment API"
 topic: "linux-operations"
 description: |
   SQL Assessment API
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   The SQL Assessment API provides a mechanism to evaluate the configuration of your SQL
-  
+
   Server for best practices. The API is de
 tags:
   - "linux-operations"

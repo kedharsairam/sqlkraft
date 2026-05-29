@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_delete_jobschedule'
-title: 'sp_delete_jobschedule'
-category: 'general'
-description: 'Deletes a schedule for a job in the SQL Server Agent service. is provided for backward compatibility only. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Job schedules can now be managed independently of jobs. To remove a schedule from a job, doesn''t support schedules'
+name: "sys.sp_delete_jobschedule"
+title: "sp_delete_jobschedule"
+category: "general"
+description: "Deletes a schedule for a job in the SQL Server Agent service. is provided for backward compatibility only. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Job schedules can now be managed independently of jobs. To remove a schedule from a job, doesn't support schedules"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_delete_jobschedule'
+syntax: "sp_delete_jobschedule"
 ---
 
 ## Description

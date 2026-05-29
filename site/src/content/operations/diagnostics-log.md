@@ -3,17 +3,17 @@ title: "Diagnostics Log"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   04/02/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   All critical errors and warning events for the SQL Server Resource DLL are written to the
-  
+
   Windows event log. A running log of the diagnostic informati
 tags:
   - "high-availability"

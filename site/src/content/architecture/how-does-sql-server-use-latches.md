@@ -1,7 +1,7 @@
 ---
-title: 'How does SQL Server use latches?'
-topic: 'latch-contention'
-description: 'latch. Latches are also used to protect access to internal memory structures other than buffer'
+title: "How does SQL Server use latches?"
+topic: "latch-contention"
+description: "latch. Latches are also used to protect access to internal memory structures other than buffer"
 tags: ["latch-contention", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_changearticlecolumndatatype'
-title: 'sp_changearticlecolumndatatype'
-category: 'general'
-description: 'Changes the article column data type mapping for an Oracle publication. This stored procedure is executed at the Distributor on any database. Transact-SQL syntax conventions The name of the Oracle publication. The data type mappings between supported Publisher types are provided by default. Use only when overriding these default settings.'
+name: "sys.sp_changearticlecolumndatatype"
+title: "sp_changearticlecolumndatatype"
+category: "general"
+description: "Changes the article column data type mapping for an Oracle publication. This stored procedure is executed at the Distributor on any database. Transact-SQL syntax conventions The name of the Oracle publication. The data type mappings between supported Publisher types are provided by default. Use only when overriding these default settings."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_changearticlecolumndatatype'
+syntax: "sp_changearticlecolumndatatype"
 ---
 
 ## Description

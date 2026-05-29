@@ -3,16 +3,16 @@ title: "Troubleshooting Activation Stored Procedures"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Activated stored procedures run on a background session. Therefore, the techniques for
-  
-  troubleshooting an activation stored procedure 
+
+  troubleshooting an activation stored procedure
 tags:
   - "service-broker"
   - "troubleshooting-activation-stored-procedures"

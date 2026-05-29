@@ -1,8 +1,8 @@
 ---
-name: 'Performance considerations'
-title: 'Performance considerations'
-category: 'statements'
-description: 'Beginning with SQL Server 2017 (14.x),'
+name: "Performance considerations"
+title: "Performance considerations"
+category: "statements"
+description: "Beginning with SQL Server 2017 (14.x),"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

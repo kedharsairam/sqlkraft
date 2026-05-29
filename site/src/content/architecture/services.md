@@ -3,15 +3,15 @@ title: "Services"
 topic: "service-broker"
 description: |
   09/15/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   A Service Broker service is a name for a specific business task or set of business tasks.
-  
+
   Conversations occur between services. Servic
 tags:
   - "service-broker"

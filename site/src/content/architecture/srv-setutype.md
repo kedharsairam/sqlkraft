@@ -3,19 +3,19 @@ title: "srv_setutype"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Sets the user-defined data type for a column in a row.
-  
+
   srvproc
-  
+
   Is a pointer to the SRV_PROC structure that is the handle for a particular client conn
 tags:
   - "clr-integration"

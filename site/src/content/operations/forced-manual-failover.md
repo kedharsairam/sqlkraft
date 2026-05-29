@@ -3,13 +3,13 @@ title: "Forced manual failover"
 topic: "high-availability"
 description: |
   10/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article describes how to perform a forced failover (with possible data loss) on an Always
-  
+
   On availability group by using SQL Server Management Studio, Transa
 tags:
   - "high-availability"

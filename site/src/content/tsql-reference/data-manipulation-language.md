@@ -1,8 +1,8 @@
 ---
-name: 'Data Manipulation Language'
-title: 'Data Manipulation Language'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Data Manipulation Language"
+title: "Data Manipulation Language"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

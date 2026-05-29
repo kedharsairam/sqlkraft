@@ -3,21 +3,21 @@ title: "Set Up on a Failover Cluster"
 topic: "filestream"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to enable FILESTREAM on a failover cluster. Before you try this
-  
+
   procedure, you should understand
-  
+
   failover clustering
-  
+
   and ha
 tags:
   - "filestream"

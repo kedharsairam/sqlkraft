@@ -1,8 +1,8 @@
 ---
-name: 'How DBCC SHRINKDATABASE works'
-title: 'How DBCC SHRINKDATABASE works'
-category: 'statements'
-description: 'size explicitly set by using a file size changing operation. Operations like'
+name: "How DBCC SHRINKDATABASE works"
+title: "How DBCC SHRINKDATABASE works"
+category: "statements"
+description: "size explicitly set by using a file size changing operation. Operations like"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

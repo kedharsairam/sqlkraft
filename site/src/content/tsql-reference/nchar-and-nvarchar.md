@@ -1,8 +1,8 @@
 ---
-name: 'nchar and nvarchar'
-title: 'nchar and nvarchar'
-category: 'data-types'
-description: '### national character varying'
+name: "nchar and nvarchar"
+title: "nchar and nvarchar"
+category: "data-types"
+description: "### national character varying"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

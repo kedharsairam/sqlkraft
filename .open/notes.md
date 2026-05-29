@@ -54,6 +54,41 @@
 - `cd site && npm run lint` — prettier check (must pass for CI)
 - `cd site && node rebuild-search-index.cjs` — search index regeneration
 
+## v0.10.0 — Stage 12 UX Cleanliness Sweep
+
+### What was done
+- **Metrics purge**: Removed `({sorted.length})` from all 10 collection index h1 titles; removed `(entries.length)` from tsql-reference category headings; removed pill counts from wait-statistics; removed `#script-count` JS counter from scripts page
+- **Subpage design refactoring**: Changed bright blue `.card-title` to neutral `var(--text-primary)` across dmvs, catalog-views, functions, stored-procedures, tsql-reference, scripts; filter pills on scripts and wait-statistics pages redesigned with subtle neutral palette (no bright blue accents); tsql-reference `.cat-nav-count` badges removed
+- **Card truncation fix**: Removed `.slice(0, 150)` from all 10 index page card descriptions, replaced with `||` fallback; standardized `-webkit-line-clamp: 3` across all collections (tsql-reference was 2 -> 3); syntax preview slice increased to 200 chars
+- **README.md**: Added Repository Scale Matrix table
+
+### Key commits
+- `e1f1bb94` — v0.10.0 changelog entry
+- `fad333b2` — design: purge user-facing metrics, fix card truncations, unify subpage design
+
+### Known issues
+- (none)
+
+## v0.11.0 — Stage 13 Category-Tailored Layouts
+
+### What was done
+- **Multi-column compact card grids**: All 10 index page card grids changed from `clamp(300px, 30vw, 480px)` to `clamp(240px, 18vw, 320px)` enabling 3–4 columns on 1080p; grid gap reduced from `clamp(10px, 1.5vw, 18px)` to `clamp(8px, 1vw, 14px)`
+- **Categorical section grouping**: dmvs (12 categories), catalog-views (4), stored-procedures (10), functions (7), errors (5 severities) — each with section jump nav pill bar, border-bottom heading, and `scroll-margin-top: 72px`
+- **Global link accent neutralization**: `a { color: var(--accent) }` → `var(--text-primary)` in BaseLayout; breadcrumb/detail-footer links → `var(--text-secondary)`; cat-badge accent → neutral; `:not(pre) > code` accent → `#e6edf3`; detail-title accent → `var(--text-primary)`
+- **Category badges removed from section-grouped pages**: Redundant since category is now the section heading
+- **Severity-colored error index cards**: Color-coded border/background badges per severity level
+- **Fixed orphaned template code**: Removed dead HTML/JSX remnants from errors, functions, dmvs, stored-procedures index pages causing build failures
+
+### Key commits
+- (pending — commit `v0.11.0: implement category-tailored layouts, multi-column section grids, and link accent unification`)
+
+### Known issues
+- (none)
+
+### Build commands
+- `cd site && npm run build` — production build (24.57s, 6,591 pages)
+- `cd site && npm run lint` — prettier check (must pass for CI)
+- `cd site && node rebuild-search-index.cjs` — search index regeneration
+
 ### Next Steps
-1. Verify deploy completes on GitHub
-2. Stage 11 (TBD — search enhancements, cookbook browsing, dark mode refinements, or new feature)
+Stage 14 (TBD — Phase 2 view architectures: Copy Script button CSS polish, wait-statistics detail panel styling, DMV/catalog detail compact property tables, search UX enhancements)

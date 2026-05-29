@@ -3,13 +3,13 @@ title: "Release notes"
 topic: "sqlpackage"
 description: |
   This article lists the features and fixes delivered by the released versions of SqlPackage.
-  
+
   The
-  
+
   column in each section is scoped as follows:
-  
+
   SqlPackage CLI
-  
+
   - command-line actions (publish, import,
 tags:
   - "sqlpackage"

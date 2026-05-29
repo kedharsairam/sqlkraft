@@ -3,18 +3,18 @@ title: "Failover & failover modes"
 topic: "high-availability"
 description: |
   06/16/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article describes failover and failover modes for SQL Server
-  
+
   Always On availability groups
-  
+
   .
-  
-  Within the context of an availability group, the primary role 
+
+  Within the context of an availability group, the primary role
 tags:
   - "high-availability"
   - "failover-failover-modes"

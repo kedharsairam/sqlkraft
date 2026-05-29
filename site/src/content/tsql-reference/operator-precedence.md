@@ -1,8 +1,8 @@
 ---
-name: 'Operator precedence'
-title: 'Operator precedence'
-category: 'operators'
-description: 'Azure SQL Managed Instance'
+name: "Operator precedence"
+title: "Operator precedence"
+category: "operators"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

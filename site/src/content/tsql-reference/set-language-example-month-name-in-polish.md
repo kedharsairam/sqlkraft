@@ -1,8 +1,8 @@
 ---
-name: 'SET LANGUAGE example: Month name in Polish'
-title: 'SET LANGUAGE example: Month name in Polish'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "SET LANGUAGE example: Month name in Polish"
+title: "SET LANGUAGE example: Month name in Polish"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

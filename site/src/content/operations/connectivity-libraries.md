@@ -3,21 +3,21 @@ title: "Connectivity libraries"
 topic: "linux-operations"
 description: |
   ﾃ
-  
+
   Summarize this article for me
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   Check out
-  
+
   SQL Data Developer
-  
+
   to quickly get started with programming languages such as C#,
-  
+
   Java, Node.js, PHP, and Python and bu
 tags:
   - "linux-operations"

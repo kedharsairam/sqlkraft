@@ -3,19 +3,19 @@ title: "The xs:QName Type"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   SQL Server doesn't support types derived from
-  
+
   by the use of an XML schema
-  
+
   restriction eleme
 tags:
   - "xml-data"

@@ -1,7 +1,7 @@
 ---
-title: 'Index sort order design guidelines'
-topic: 'index-architecture'
-description: 'For more information, see'
+title: "Index sort order design guidelines"
+topic: "index-architecture"
+description: "For more information, see"
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

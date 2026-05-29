@@ -1,7 +1,7 @@
 ---
-title: 'Locking hints'
-topic: 'locking'
-description: '### Avoid locking hints with optimized locking'
+title: "Locking hints"
+topic: "locking"
+description: "### Avoid locking hints with optimized locking"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

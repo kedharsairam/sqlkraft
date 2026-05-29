@@ -1,7 +1,7 @@
 ---
-name: 'To View List of all the Indexes in Database'
-title: 'To View List of all the Indexes in Database'
-description: 'SQL Server diagnostic script for index-maintenance operations.'
+name: "To View List of all the Indexes in Database"
+title: "To View List of all the Indexes in Database"
+description: "SQL Server diagnostic script for index-maintenance operations."
 category: index-maintenance
 tags: ["database", "index-maintenance", "indexing"]
 pubDate: 2025-03-15
@@ -11,7 +11,7 @@ pubDate: 2025-03-15
 Declare @DBName varchar(100)='DemoDB';
 Declare @sql varchar(max)='
 select
-schema_name(t.schema_id) + ''.'' + t.[name] as table_view, 
+schema_name(t.schema_id) + ''.'' + t.[name] as table_view,
  si.[name] as index_name,
     case when t.[type] = ''U'' then ''Table''
         when t.[type] = ''V'' then ''View''
@@ -25,7 +25,7 @@ schema_name(t.schema_id) + ''.'' + t.[name] as table_view,
         when si.[type] = 6 then ''Nonclustered columnstore index''
         when si.[type] = 7 then ''Nonclustered hash index''
         end as index_type
-    
+
 from sys.objects t
     inner join sys.indexes si
         on t.object_id = si.object_id

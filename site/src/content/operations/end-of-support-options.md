@@ -3,13 +3,13 @@ title: "End of support options"
 topic: "upgrade"
 description: |
   SQL Server end of support options
-  
+
   Applies to:
-  
+
   SQL Server 2014 (12.x)
-  
+
   This article explains your options for addressing SQL Server products that reach end of support.
-  
+
   Each version of SQL Server com
 tags:
   - "upgrade"

@@ -3,17 +3,17 @@ title: "Object:Deleted Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Object:Deleted event class indicates that an object has been deleted; for example, by
-  
+
   DR
 tags:
   - "event-classes"

@@ -3,20 +3,20 @@ title: "Options page"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   12/17/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Use this page to view or modify options for the selected database. For more information about
-  
+
   the options available on this page, see
-  
-  ALTER DATABASE 
+
+  ALTER DATABASE
 tags:
   - "collation"
   - "options-page"

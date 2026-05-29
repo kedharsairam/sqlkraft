@@ -3,18 +3,18 @@ title: "SQL:StmtStarting Event Class"
 topic: "event-classes"
 description: |
   SQL:StmtStarting Event Class
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
-  The SQL:StmtStarting event class indicates that a Transact-SQL 
+
+  The SQL:StmtStarting event class indicates that a Transact-SQL
 tags:
   - "event-classes"
   - "sqlstmtstarting-event-class"

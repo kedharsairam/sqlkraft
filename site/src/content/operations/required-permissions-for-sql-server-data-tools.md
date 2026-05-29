@@ -3,12 +3,12 @@ title: "Required Permissions for SQL Server Data Tools"
 topic: "data-tools"
 description: |
   Required permissions for SQL Server Data
-  
+
   09/09/2025
-  
+
   Before you can perform an action on a database in Visual Studio, you must sign in with an
-  
-  account that has certain permissions on that database. 
+
+  account that has certain permissions on that database.
 tags:
   - "data-tools"
   - "required-permissions-for-sql-server-data-tools"

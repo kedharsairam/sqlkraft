@@ -1,17 +1,17 @@
 ---
-name: 'To Deal with Elastic Job Agent'
-title: 'To Deal with Elastic Job Agent'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To Deal with Elastic Job Agent"
+title: "To Deal with Elastic Job Agent"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["agent-job", "automation"]
 pubDate: 2025-03-15
 ---
 
 ```sql
-CREATE MASTER KEY ENCRYPTION BY PASSWORD='[password]';  
- 
+CREATE MASTER KEY ENCRYPTION BY PASSWORD='[password]';
+
 CREATE DATABASE SCOPED CREDENTIAL JobRun WITH IDENTITY = 'sqladmin',
-    SECRET = 'P@ssWord';  
+    SECRET = 'P@ssWord';
 
 EXEC [jobs].sp_add_target_group N'ServerGroup';
 GO
@@ -47,7 +47,7 @@ CREATE TABLE [dbo].[Test]([TestId] [int] NOT NULL);',
 
 EXEC jobs.sp_start_job 'CreateTableTest';
 SELECT * FROM jobs.target_groups
-SELECT target_group_name, 
+SELECT target_group_name,
         membership_type,
         refresh_credential_name,
         server_name,

@@ -1,7 +1,7 @@
 ---
-title: 'Page and extent architecture guide'
-topic: 'query-processing'
-description: 'Azure SQL Managed Instance'
+title: "Page and extent architecture guide"
+topic: "query-processing"
+description: "Azure SQL Managed Instance"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

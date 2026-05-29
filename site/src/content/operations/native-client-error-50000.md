@@ -3,29 +3,29 @@ title: "Native client error 50,000"
 topic: "monitor"
 description: |
   Article
-  
+
   •
-  
+
   04/04/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   Analytics Platform System (PDW)
-  
+
   Product Name
-  
+
   SQL Server
-  
+
   Product Version
-  
+
   11
 tags:
   - "monitor"
@@ -75,7 +75,7 @@ Symbolic Name
 
 Message Text
 
-A network error occurred while attempting to read from the file '%.*ls'.
+A network error occurred while attempting to read from the file '%.\*ls'.
 
 An attempt was made to install (or update) SQL Server Native Client on a computer where SQL
 

@@ -3,24 +3,24 @@ title: "Audit Fulltext Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class occurs when SQL Server connects to and communicates with the
-  
-  full-text filter daemon 
+
+  full-text filter daemon
 tags:
   - "event-classes"
   - "audit-fulltext-event-class"

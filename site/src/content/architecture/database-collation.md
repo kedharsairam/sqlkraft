@@ -3,23 +3,23 @@ title: "Database Collation"
 topic: "collation"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to set or change the database
-  
+
   collation
-  
+
   by using
-  
+
   SQL Server
-  
+
   Management Studio (SSMS)
-  
+
   or Transact-SQL.
-  
+
   If no databa
 tags:
   - "collation"

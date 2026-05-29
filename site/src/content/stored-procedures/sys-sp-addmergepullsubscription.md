@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addmergepullsubscription'
-title: 'sp_addmergepullsubscription'
-category: 'general'
-description: 'Adds a pull subscription to a merge publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions , with a default of the local server name. The Publisher must be a valid server. The name of the Publisher database.'
+name: "sys.sp_addmergepullsubscription"
+title: "sp_addmergepullsubscription"
+category: "general"
+description: "Adds a pull subscription to a merge publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions , with a default of the local server name. The Publisher must be a valid server. The name of the Publisher database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

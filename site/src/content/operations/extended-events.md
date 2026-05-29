@@ -3,17 +3,17 @@ title: "Extended events"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   SQL Server defines Extended Events that are specific to availability groups. You can monitor
-  
+
   these Extended Events in a session to help with root-caus
 tags:
   - "high-availability"

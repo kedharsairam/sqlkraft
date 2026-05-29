@@ -3,23 +3,23 @@ title: "Audit Server Scope GDR Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class occurs when a GRANT, REVOKE, or DENY is issued for
-  
+
   permissions in the server scope, s
 tags:
   - "event-classes"

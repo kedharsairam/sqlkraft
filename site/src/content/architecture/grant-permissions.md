@@ -3,21 +3,21 @@ title: "Grant permissions"
 topic: "spatial-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL database in Microsoft
-  
+
   Fabric
-  
+
   This article describes how to gran
 tags:
   - "spatial-data"

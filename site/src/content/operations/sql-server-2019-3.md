@@ -3,11 +3,11 @@ title: "SQL Server 2019"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server 2019 (15.x) on Linux
-  
+
   The following release notes apply to SQL Server 2019 (15.x) running on Linux. This article is
-  
+
   broken into sections for each release. For detailed support
 tags:
   - "linux-operations"

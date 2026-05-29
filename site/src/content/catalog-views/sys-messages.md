@@ -1,8 +1,8 @@
 ---
-name: 'sys.messages'
-title: 'Messages (for errors) - sys.messages'
-category: 'compatibility'
-description: 'Contains information about all available SQL Server Agent proxy subsystems. The table is stored in the ID of the subsystem. Name of the subsystem. Message ID of the row in the catalog view that contains the subsystem description. Location of the subsystem DLL. Full path to the executable that uses the subsystem. Function that is called when the subsystem is initialized. Function that is called whe'
+name: "sys.messages"
+title: "Messages (for errors) - sys.messages"
+category: "compatibility"
+description: "Contains information about all available SQL Server Agent proxy subsystems. The table is stored in the ID of the subsystem. Name of the subsystem. Message ID of the row in the catalog view that contains the subsystem description. Location of the subsystem DLL. Full path to the executable that uses the subsystem. Function that is called when the subsystem is initialized. Function that is called whe"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |
@@ -91,63 +91,43 @@ message_id;
 
 Applies to:
 
-
 Azure SQL Database
-
 
 Azure SQL Managed Instance
 
-
 Azure Synapse Analytics
-
 
 Analytics Platform System (PDW)
 
-
 SQL analytics endpoint in
-
 
 Microsoft Fabric
 
-
 Warehouse in Microsoft Fabric
-
 
 SQL database in Microsoft Fabric
 
-
 Generates an error message and initiates error processing for the session.
-
 
 reference a user-defined message stored in the
 
-
 catalog view, or build a message
-
 
 dynamically. The message is returned as a server error message to the calling application or to
 
-
 an associated
-
 
 construct. New applications should use
 
-
 Transact-SQL syntax conventions
-
 
 Syntax for SQL Server, Azure SQL Database, and Azure SQL Managed Instance:
 
-
 Syntax for Azure Synapse Analytics and Parallel Data Warehouse:
-
 
 statement doesn't honor
 
-
 . New applications should use
-
 
 ## Permissions
 

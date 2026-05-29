@@ -1,8 +1,8 @@
 ---
-name: 'Index best practices'
-title: 'Index best practices'
-category: 'hints'
-description: 'triggers are defined on'
+name: "Index best practices"
+title: "Index best practices"
+category: "hints"
+description: "triggers are defined on"
 tags: ["tsql", "hints"]
 pubDate: 2026-05-29
 ---
@@ -47,8 +47,8 @@ permission on the source table and
 
 , or
 
-
 ## permissions on
+
 the target table. For more information, see the Permissions section in the
 
 SELECT (Transact-

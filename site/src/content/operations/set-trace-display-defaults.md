@@ -3,15 +3,15 @@ title: "Set Trace Display Defaults"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to set tool options, which specify the font types, size, and style that
-  
+
   SQL Server Profiler uses to display
 tags:
   - "profiler"

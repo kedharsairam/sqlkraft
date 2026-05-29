@@ -3,15 +3,15 @@ title: "Conversation Groups"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   A conversation group identifies a group of related conversations. A conversation group allows
-  
+
   an application to easily coordinate conv
 tags:
   - "service-broker"

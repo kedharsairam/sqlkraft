@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addlinkedsrvlogin'
-title: 'sp_addlinkedsrvlogin'
-category: 'general'
-description: 'Creates or updates a mapping between a login on the local instance of SQL Server and a security account on a remote server. Transact-SQL syntax conventions The name of a linked server that the login mapping applies to. Determines whether to connect to by impersonating local logins or explicitly submitting a login and password. specifies that logins use their own credentials to connect to arguments'
+name: "sys.sp_addlinkedsrvlogin"
+title: "sp_addlinkedsrvlogin"
+category: "general"
+description: "Creates or updates a mapping between a login on the local instance of SQL Server and a security account on a remote server. Transact-SQL syntax conventions The name of a linked server that the login mapping applies to. Determines whether to connect to by impersonating local logins or explicitly submitting a login and password. specifies that logins use their own credentials to connect to arguments"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

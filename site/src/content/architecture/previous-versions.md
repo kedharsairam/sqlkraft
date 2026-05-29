@@ -1,7 +1,7 @@
 ---
-title: 'Previous versions'
-topic: 'io-fundamentals'
-description: 'For current configuration options, see'
+title: "Previous versions"
+topic: "io-fundamentals"
+description: "For current configuration options, see"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

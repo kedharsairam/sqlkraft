@@ -3,17 +3,17 @@ title: "Allow access to an endpoint"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Using Windows Authentication for connecting the database mirroring endpoints of two
-  
+
   instances of SQL Server requires manual configuration of login acc
 tags:
   - "high-availability"
@@ -53,7 +53,7 @@ host computer account (
 
 DomainName
 
-**\**
+\*\*\*\*
 
 ComputerName$
 

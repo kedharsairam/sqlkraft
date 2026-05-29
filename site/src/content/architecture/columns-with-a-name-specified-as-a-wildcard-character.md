@@ -3,15 +3,15 @@ title: "Columns with a Name Specified as a Wildcard Character"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   If the column name specified is a wildcard character (*), the content of that column is inser
 tags:
   - "xml-data"
@@ -29,7 +29,7 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-If the column name specified is a wildcard character (*), the content of that column is inserted
+If the column name specified is a wildcard character (\*), the content of that column is inserted
 
 as if there's no column name specified. If this column is a non-
 
@@ -47,7 +47,7 @@ If the column is of
 
 type, the corresponding XML tree is inserted. For example, the following
 
-query specifies "*" for the column name that contains the XML returned by the XQuery against
+query specifies "\*" for the column name that contains the XML returned by the XQuery against
 
 the Instructions column.
 

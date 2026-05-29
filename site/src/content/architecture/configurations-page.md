@@ -3,27 +3,27 @@ title: "Configurations page"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   01/07/2025
-  
+
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   SQL database in Microsoft Fabric
-  
+
   Use the
-  
+
   pag
 tags:
   - "collation"

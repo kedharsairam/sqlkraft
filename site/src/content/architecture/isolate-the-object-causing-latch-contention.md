@@ -1,7 +1,7 @@
 ---
-title: 'Isolate the object causing latch contention'
-topic: 'io-fundamentals'
-description: 'Once we determined that latch contention was problematic, we then set out to determine what'
+title: "Isolate the object causing latch contention"
+topic: "io-fundamentals"
+description: "Once we determined that latch contention was problematic, we then set out to determine what"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

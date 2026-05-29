@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_mschange_snapshot_agent_properties'
-title: 'sp_MSchange_snapshot_agent_properties'
-category: 'general'
-description: 'Changes the properties of a Snapshot Agent job that runs at a SQL Server 2005 (9.x) or later version Distributor. This stored procedure is used to change properties when the Publisher runs on an instance of SQL Server 2000 (8.x). This stored procedure is executed at the Distributor on Transact-SQL syntax conventions'
+name: "sys.sp_mschange_snapshot_agent_properties"
+title: "sp_MSchange_snapshot_agent_properties"
+category: "general"
+description: "Changes the properties of a Snapshot Agent job that runs at a SQL Server 2005 (9.x) or later version Distributor. This stored procedure is used to change properties when the Publisher runs on an instance of SQL Server 2000 (8.x). This stored procedure is executed at the Distributor on Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

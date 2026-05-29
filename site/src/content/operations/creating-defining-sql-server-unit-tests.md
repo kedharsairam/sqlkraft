@@ -3,9 +3,9 @@ title: "Creating & Defining SQL Server Unit Tests"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   You can run SQL Server unit tests to verify whether changes to one or more database objects in
-  
+
   a schema have broken existing functionality in a database application. These tests complemen
 tags:
   - "ssb-diagnose"

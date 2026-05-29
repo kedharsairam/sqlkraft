@@ -3,21 +3,21 @@ title: "Access with T-SQL"
 topic: "filestream"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Describes how Transact-SQL data manipulation language (DML) commands work with
-  
+
   FileTables.
-  
+
   The following considerations apply to
-  
+
   Operations on FileT
 tags:
   - "filestream"

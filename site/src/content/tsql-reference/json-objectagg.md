@@ -1,8 +1,8 @@
 ---
-name: 'JSON_OBJECTAGG'
-title: 'JSON_OBJECTAGG'
-category: 'statements'
-description: 'SQL Server 2025 (17.x)'
+name: "JSON_OBJECTAGG"
+title: "JSON_OBJECTAGG"
+category: "statements"
+description: "SQL Server 2025 (17.x)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -21,8 +21,8 @@ SQL database in Microsoft Fabric
 
 The
 
-
 ## syntax constructs a JSON object from an aggregation of SQL data or columns.
+
 can also be used in a
 
 statement with
@@ -51,7 +51,7 @@ Always-up-to-date
 
 update policy
 
-**),
+\*\*),
 
 SQL database in Microsoft Fabric, and Fabric Data Warehouse.
 
@@ -59,8 +59,8 @@ in preview for SQL Server 2025 (17.x).
 
 Transact-SQL syntax conventions
 
-
 ## syntaxsql
+
 The key / value pair of the JSON object.
 
 Optional. Omits the entire property of an object if the value is
@@ -69,8 +69,8 @@ Optional. Omits the entire property of an object if the value is
 
 is default.
 
-
 ## Returns a valid JSON object string of
+
 nvarchar(max)
 
 type. If the
@@ -165,8 +165,8 @@ and
 
 column value. The third column
 
-
 ## returns the value of
+
 aggregate on
 
 B. Construct JSON object from result set
@@ -185,8 +185,8 @@ the
 
 column. The fourth column
 
-
 ## returns the value of
+
 aggregate on the
 
 and

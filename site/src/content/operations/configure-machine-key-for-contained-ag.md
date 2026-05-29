@@ -3,19 +3,19 @@ title: "Configure machine key for contained AG"
 topic: "linux-operations"
 description: |
   07/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article provides an example of how to prepare a machine key for SQL Server running on
-  
+
   Linux in a contained availability group (AG).
-  
+
   A
-  
+
   contained AG
 tags:
   - "linux-operations"

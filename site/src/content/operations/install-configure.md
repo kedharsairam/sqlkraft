@@ -3,23 +3,23 @@ title: "Install & configure"
 topic: "monitor"
 description: |
   Article
-  
+
   •
-  
+
   04/26/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Wide World Importers OLTP database installation and configuration instructions.
-  
+
   SQL Server 2016
-  
+
   (or higher) or
-  
+
   Azure SQL Databas
 tags:
   - "monitor"

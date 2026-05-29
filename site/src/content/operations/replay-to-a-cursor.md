@@ -3,15 +3,15 @@ title: "Replay to a Cursor"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to replay trace files or tables that pause when a cursor is reached by
-  
+
   using SQL Server Profiler. Pausing t
 tags:
   - "profiler"

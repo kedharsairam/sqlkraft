@@ -3,18 +3,18 @@ title: "View availability group properties"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to view the properties of an availability group for an Always On
-  
-  availability group by using SQL Server Management Studio or 
+
+  availability group by using SQL Server Management Studio or
 tags:
   - "high-availability"
   - "view-availability-group-properties"

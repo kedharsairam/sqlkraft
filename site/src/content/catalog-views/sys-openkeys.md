@@ -1,8 +1,8 @@
 ---
-name: 'sys.openkeys'
-title: 'sys.openkeys'
-category: 'compatibility'
-description: 'SQL database in Microsoft Fabric This catalog view returns information about encryption keys that are open in the current ID of the database that contains the key. Name of the database that contains the key. ID of the key. The ID is unique within the database. Name of the key. Unique within the database. GUID of the key. Unique within the database. Date and time when the key was opened. 1 if the k'
+name: "sys.openkeys"
+title: "sys.openkeys"
+category: "compatibility"
+description: "SQL database in Microsoft Fabric This catalog view returns information about encryption keys that are open in the current ID of the database that contains the key. Name of the database that contains the key. ID of the key. The ID is unique within the database. Name of the key. Unique within the database. GUID of the key. Unique within the database. Date and time when the key was opened. 1 if the k"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

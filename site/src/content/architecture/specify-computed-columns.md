@@ -3,18 +3,17 @@ title: "Specify Computed Columns"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   A computed column is a virtual column that isn't physically stored in the table, unless the
-  
-  
+
 tags:
   - "tables"
   - "specify-computed-columns"

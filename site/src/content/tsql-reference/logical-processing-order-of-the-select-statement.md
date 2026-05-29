@@ -1,8 +1,8 @@
 ---
-name: 'Logical processing order of the SELECT statement'
-title: 'Logical processing order of the SELECT statement'
-category: 'queries'
-description: 'Syntax for Azure Synapse Analytics, Analytics Platform System (PDW), and Microsoft Fabric:'
+name: "Logical processing order of the SELECT statement"
+title: "Logical processing order of the SELECT statement"
+category: "queries"
+description: "Syntax for Azure Synapse Analytics, Analytics Platform System (PDW), and Microsoft Fabric:"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
@@ -10,6 +10,7 @@ pubDate: 2026-05-29
 ## Syntax for Azure Synapse Analytics, Analytics Platform System (PDW), and Microsoft Fabric:
 
 ## syntaxsql
+
 The order of the clauses in the
 
 statement is significant. Any one of the optional clauses

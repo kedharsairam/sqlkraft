@@ -1,8 +1,8 @@
 ---
-name: 'Securable-specific Syntax'
-title: 'Securable-specific Syntax'
-category: 'statements'
-description: 'The full syntax of the REVOKE statement is complex. The syntax diagram above was simplified'
+name: "Securable-specific Syntax"
+title: "Securable-specific Syntax"
+category: "statements"
+description: "The full syntax of the REVOKE statement is complex. The syntax diagram above was simplified"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -51,8 +51,8 @@ any permission on any object within the schema.
 
 The following table lists the securables and the topics that describe the securable-specific
 
-
 ## syntax.
+
 Ｕ
 
 Caution

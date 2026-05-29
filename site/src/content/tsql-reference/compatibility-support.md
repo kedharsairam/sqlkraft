@@ -1,8 +1,8 @@
 ---
-name: 'Compatibility support'
-title: 'Compatibility support'
-category: 'statements'
-description: 'RESTORE LOG can include a file list to allow for creation of files during rollforward. This is used'
+name: "Compatibility support"
+title: "Compatibility support"
+category: "statements"
+description: "RESTORE LOG can include a file list to allow for creation of files during rollforward. This is used"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

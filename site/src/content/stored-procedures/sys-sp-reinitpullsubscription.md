@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_reinitpullsubscription'
-title: 'sp_reinitpullsubscription'
-category: 'general'
-description: 'Marks a transactional pull or anonymous subscription for reinitialization the next time the Distribution Agent runs. This stored procedure is executed at the Subscriber on the pull Transact-SQL syntax conventions The name of the Publisher database. subscriptions for reinitialization.'
+name: "sys.sp_reinitpullsubscription"
+title: "sp_reinitpullsubscription"
+category: "general"
+description: "Marks a transactional pull or anonymous subscription for reinitialization the next time the Distribution Agent runs. This stored procedure is executed at the Subscriber on the pull Transact-SQL syntax conventions The name of the Publisher database. subscriptions for reinitialization."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

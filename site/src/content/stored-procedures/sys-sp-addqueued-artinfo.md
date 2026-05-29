@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addqueued_artinfo'
-title: 'sp_addqueued_artinfo'
-category: 'general'
-description: 'table at the Subscriber that is used to track article subscription information (queued, updating, and immediate updating with queued updating as failover). This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions procedure should be used instead of generates a script that contains the'
+name: "sys.sp_addqueued_artinfo"
+title: "sp_addqueued_artinfo"
+category: "general"
+description: "table at the Subscriber that is used to track article subscription information (queued, updating, and immediate updating with queued updating as failover). This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions procedure should be used instead of generates a script that contains the"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

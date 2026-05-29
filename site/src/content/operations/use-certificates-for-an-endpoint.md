@@ -3,17 +3,17 @@ title: "Use certificates for an endpoint"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   To enable certificate authentication for database mirroring on a given server instance, the
-  
+
   system administrator must configure each server instance t
 tags:
   - "high-availability"

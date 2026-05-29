@@ -1,8 +1,8 @@
 ---
-name: 'sys.trigger_event_types'
-title: 'sys.trigger_event_types'
-category: 'compatibility'
-description: 'Returns a row for each event or event group on which a trigger can fire. Type of event or event group that causes a trigger to fire. Name of an event or event group. This can be specified in the FOR clause Type of event group that is the parent of the event or event group. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was gra'
+name: "sys.trigger_event_types"
+title: "sys.trigger_event_types"
+category: "compatibility"
+description: "Returns a row for each event or event group on which a trigger can fire. Type of event or event group that causes a trigger to fire. Name of an event or event group. This can be specified in the FOR clause Type of event group that is the parent of the event or event group. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was gra"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

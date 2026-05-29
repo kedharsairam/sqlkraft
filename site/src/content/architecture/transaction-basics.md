@@ -1,7 +1,7 @@
 ---
-title: 'Transaction basics'
-topic: 'io-fundamentals'
-description: 'Azure SQL Managed Instance'
+title: "Transaction basics"
+topic: "io-fundamentals"
+description: "Azure SQL Managed Instance"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

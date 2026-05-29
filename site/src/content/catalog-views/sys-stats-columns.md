@@ -1,11 +1,11 @@
 ---
-name: 'sys.stats_columns'
-title: 'sys.stats_columns'
-category: 'objects'
-description: 'Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each column that is part of ID of the object of which this column is part. ID of the statistics of which this column is part. If statistics correspond to an index, the 1-based ordinal within set of stats columns. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on'
+name: "sys.stats_columns"
+title: "sys.stats_columns"
+category: "objects"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each column that is part of ID of the object of which this column is part. ID of the statistics of which this column is part. If statistics correspond to an index, the 1-based ordinal within set of stats columns. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on"
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'HumanResources.Employee'
+syntax: "HumanResources.Employee"
 ---
 
 ## Description

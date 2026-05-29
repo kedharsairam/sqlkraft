@@ -1,11 +1,11 @@
 ---
-name: 'sys.dm_os_host_info'
-title: 'sys.dm_os_host_info'
-category: 'os'
-description: 'SQL Server 2017 (14.x) and later Returns one row that displays operating system version information. The type of operating system. Can be Description of the operating system. Microsoft Windows operating system release (version number). For a list of values and descriptions, see On Linux, this column returns an empty string. Service pack level of the Windows operating system. On Linux, this column '
+name: "sys.dm_os_host_info"
+title: "sys.dm_os_host_info"
+category: "os"
+description: "SQL Server 2017 (14.x) and later Returns one row that displays operating system version information. The type of operating system. Can be Description of the operating system. Microsoft Windows operating system release (version number). For a list of values and descriptions, see On Linux, this column returns an empty string. Service pack level of the Windows operating system. On Linux, this column "
 tags: ["os", "dmv"]
 pubDate: 2026-05-29
-syntax: 'host_service_pack_level'
+syntax: "host_service_pack_level"
 ---
 
 ## Description

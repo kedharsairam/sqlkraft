@@ -3,18 +3,18 @@ title: "Logins & Jobs after role switching"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   When deploying a high-availability or disaster-recovery solution for a SQL Server database, it is
-  
-  important to reproduce relevant information that is 
+
+  important to reproduce relevant information that is
 tags:
   - "high-availability"
   - "logins-jobs-after-role-switching"

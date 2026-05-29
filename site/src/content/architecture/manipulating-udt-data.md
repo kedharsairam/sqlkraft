@@ -3,27 +3,27 @@ title: "Manipulating UDT data"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Transact-SQL provides no specialized syntax for
-  
+
   ,
-  
+
   , or
-  
+
   statements when
-  
+
   modifying data in user-defined type (UDT) columns. The Transact-SQL
-  
+
   or
-  
+
   fun
 tags:
   - "clr-integration"

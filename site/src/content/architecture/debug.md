@@ -3,18 +3,18 @@ title: "Debug"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   SQL Server provides support for debugging Transact-SQL and common language runtime (CLR)
-  
-  objects in the database. The key aspects of debugging in SQL 
+
+  objects in the database. The key aspects of debugging in SQL
 tags:
   - "clr-integration"
   - "debug"

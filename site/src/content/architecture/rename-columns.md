@@ -3,17 +3,17 @@ title: "Rename Columns"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   You can rename a table column in SQL Server by using SQL Serv
 tags:
   - "tables"

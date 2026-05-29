@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_scriptdynamicupdproc'
-title: 'sp_scriptdynamicupdproc'
-category: 'general'
-description: 'statement that creates a dynamic update stored procedure. statement within the custom stored procedure is built dynamically based on the syntax that indicates which columns to change. Use this stored procedure if the number of indexes on the subscribing table is growing and the number of columns being changed is small. This stored procedure is run at the Publisher on the publication database. Tran'
+name: "sys.sp_scriptdynamicupdproc"
+title: "sp_scriptdynamicupdproc"
+category: "general"
+description: "statement that creates a dynamic update stored procedure. statement within the custom stored procedure is built dynamically based on the syntax that indicates which columns to change. Use this stored procedure if the number of indexes on the subscribing table is growing and the number of columns being changed is small. This stored procedure is run at the Publisher on the publication database. Tran"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_scriptdynamicupdproc'
+syntax: "sp_scriptdynamicupdproc"
 ---
 
 ## Description

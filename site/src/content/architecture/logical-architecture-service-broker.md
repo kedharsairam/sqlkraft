@@ -3,15 +3,15 @@ title: "Logical Architecture [Service Broker]"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker applications consist of Service Broker database objects and one or more
-  
+
   applications that use those objects. This secti
 tags:
   - "service-broker"

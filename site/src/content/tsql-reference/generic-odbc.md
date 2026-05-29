@@ -1,8 +1,8 @@
 ---
-name: 'Generic ODBC'
-title: 'Generic ODBC'
-category: 'statements'
-description: 'Make sure to configure the driver to sample all the necessary data.'
+name: "Generic ODBC"
+title: "Generic ODBC"
+category: "statements"
+description: "Make sure to configure the driver to sample all the necessary data."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -13,8 +13,8 @@ Default
 
 Required
 
-
 ## Description
+
 Make sure to configure the driver to sample all the necessary data.
 
 Documents that aren't sampled don't get included in the schema
@@ -95,8 +95,8 @@ Possible
 
 values
 
-
 ## Description
+
 ,
 
 Indicates whether or not the driver supports the SQLRowCount
@@ -135,8 +135,8 @@ Possible
 
 values
 
-
 ## Description
+
 ,
 
 Contains information specifying how to push down the

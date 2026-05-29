@@ -3,15 +3,15 @@ title: "TransactionLog Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Use the TransactionLog event class to monitor activity in the transaction logs in an instance
 tags:
   - "event-classes"

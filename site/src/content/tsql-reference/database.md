@@ -1,8 +1,8 @@
 ---
-name: 'database'
-title: 'database'
-category: 'statements'
-description: 'command isn''t supported for the statistics object on a'
+name: "database"
+title: "database"
+category: "statements"
+description: "command isn't supported for the statistics object on a"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_upgrade_log_shipping'
-title: 'sp_upgrade_log_shipping'
-category: 'general'
-description: 'stored procedure is invoked automatically for upgrading metadata that is specific to log shipping. Transact-SQL syntax conventions This stored procedure is invoked automatically during SQL Server upgrade for upgrading metadata for log shipping. You don''t need to execute this procedure explicitly, unless a problem occurs with the metadata during upgrade. database on the primary, secondary, or fixed'
+name: "sys.sp_upgrade_log_shipping"
+title: "sp_upgrade_log_shipping"
+category: "general"
+description: "stored procedure is invoked automatically for upgrading metadata that is specific to log shipping. Transact-SQL syntax conventions This stored procedure is invoked automatically during SQL Server upgrade for upgrading metadata for log shipping. You don't need to execute this procedure explicitly, unless a problem occurs with the metadata during upgrade. database on the primary, secondary, or fixed"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_upgrade_log_shipping'
+syntax: "sp_upgrade_log_shipping"
 ---
 
 ## Description

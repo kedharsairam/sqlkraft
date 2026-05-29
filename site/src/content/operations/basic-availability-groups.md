@@ -3,13 +3,13 @@ title: "Basic availability groups"
 topic: "high-availability"
 description: |
   10/24/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Always On basic availability groups provide a high availability solution for SQL Server 2016
-  
+
   (13.x) and later versions on Standard edition. A basic availability g
 tags:
   - "high-availability"

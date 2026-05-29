@@ -1,8 +1,8 @@
 ---
-name: 'ODBC Reserved Keywords'
-title: 'ODBC Reserved Keywords'
-category: 'statements'
-description: 'The following table lists reserved keywords that are exclusive to'
+name: "ODBC Reserved Keywords"
+title: "ODBC Reserved Keywords"
+category: "statements"
+description: "The following table lists reserved keywords that are exclusive to"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

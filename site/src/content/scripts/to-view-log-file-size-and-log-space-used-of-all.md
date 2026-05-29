@@ -1,7 +1,7 @@
 ---
-name: 'To View Log File Size and Log Space Used of all'
-title: 'To View Log File Size and Log Space Used of all'
-description: 'SQL Server diagnostic script for database operations.'
+name: "To View Log File Size and Log Space Used of all"
+title: "To View Log File Size and Log Space Used of all"
+description: "SQL Server diagnostic script for database operations."
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

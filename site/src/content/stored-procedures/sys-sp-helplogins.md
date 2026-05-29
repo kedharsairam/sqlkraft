@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_helplogins'
-title: 'sp_helplogins'
-category: 'general'
-description: 'Provides information about logins and the users associated with them in each database. Transact-SQL syntax conventions isn''t specified, information about all logins is The first report contains information about each login specified, as shown in the following'
+name: "sys.sp_helplogins"
+title: "sp_helplogins"
+category: "general"
+description: "Provides information about logins and the users associated with them in each database. Transact-SQL syntax conventions isn't specified, information about all logins is The first report contains information about each login specified, as shown in the following"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

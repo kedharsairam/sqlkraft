@@ -1,7 +1,7 @@
 ---
-name: 'To Create Non Clustered Index'
-title: 'To Create Non Clustered Index'
-description: 'Creates NonClustered Index on the table.'
+name: "To Create Non Clustered Index"
+title: "To Create Non Clustered Index"
+description: "Creates NonClustered Index on the table."
 category: index-maintenance
 tags: ["index-maintenance", "indexing"]
 pubDate: 2025-03-15

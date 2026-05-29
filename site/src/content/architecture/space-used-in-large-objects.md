@@ -1,7 +1,7 @@
 ---
-title: 'Space used in large objects'
-topic: 'query-processing'
-description: 'If the size is large, the entire old row version is stored in a separate internal table.'
+title: "Space used in large objects"
+topic: "query-processing"
+description: "If the size is large, the entire old row version is stored in a separate internal table."
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

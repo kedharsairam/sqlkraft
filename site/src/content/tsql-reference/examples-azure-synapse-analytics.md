@@ -1,8 +1,8 @@
 ---
-name: 'Examples: Azure Synapse Analytics'
-title: 'Examples: Azure Synapse Analytics'
-category: 'statements'
-description: ': SQL Server 2019 (15.x).'
+name: "Examples: Azure Synapse Analytics"
+title: "Examples: Azure Synapse Analytics"
+category: "statements"
+description: ": SQL Server 2019 (15.x)."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

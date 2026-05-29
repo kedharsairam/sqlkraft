@@ -1,8 +1,8 @@
 ---
-name: '/ (Division)'
-title: '/ (Division)'
-category: 'operators'
-description: ''
+name: "/ (Division)"
+title: "/ (Division)"
+category: "operators"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

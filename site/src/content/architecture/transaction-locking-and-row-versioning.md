@@ -1,7 +1,7 @@
 ---
-title: 'Transaction locking and row versioning'
-topic: 'locking'
-description: '### Optimized locking'
+title: "Transaction locking and row versioning"
+topic: "locking"
+description: "### Optimized locking"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'Compare GROUPING_ID() to GROUPING()'
-title: 'Compare GROUPING_ID() to GROUPING()'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Compare GROUPING_ID() to GROUPING()"
+title: "Compare GROUPING_ID() to GROUPING()"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -37,8 +37,8 @@ is specified.
 
 Transact-SQL syntax conventions
 
-
 ## syntaxsql
+
 A
 
 column_expression

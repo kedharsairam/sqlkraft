@@ -3,21 +3,21 @@ title: "Overview"
 topic: "migration"
 description: |
   SQL Server Replication
-  
+
   Article
-  
+
   •
-  
+
   09/29/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Replication is a set of technologies for copying and distributing data and database objects
-  
+
   from o
 tags:
   - "migration"

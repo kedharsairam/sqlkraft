@@ -3,18 +3,17 @@ title: "Sequence Properties"
 topic: "service-broker"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Creates a sequence object and specifies its properties. A sequence is a user-defined schema
-  
-  
+
 tags:
   - "service-broker"
   - "sequence-properties"

@@ -1,8 +1,8 @@
 ---
-name: 'FREETEXT'
-title: 'FREETEXT'
-category: 'predicates'
-description: '### Query with Full-Text Search'
+name: "FREETEXT"
+title: "FREETEXT"
+category: "predicates"
+description: "### Query with Full-Text Search"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

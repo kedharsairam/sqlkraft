@@ -1,8 +1,8 @@
 ---
-name: 'DROP DEFAULT'
-title: 'DROP DEFAULT'
-category: 'statements'
-description: ''
+name: "DROP DEFAULT"
+title: "DROP DEFAULT"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

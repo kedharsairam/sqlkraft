@@ -1,8 +1,8 @@
 ---
-name: 'Progress reporting for DBCC commands'
-title: 'Progress reporting for DBCC commands'
-category: 'statements'
-description: 'Sometimes an internal database snapshot isn''t required or can''t be created. When this occurs,'
+name: "Progress reporting for DBCC commands"
+title: "Progress reporting for DBCC commands"
+category: "statements"
+description: "Sometimes an internal database snapshot isn't required or can't be created. When this occurs,"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -131,8 +131,8 @@ table describes each phase of execution, and the granularity at which the comman
 
 progress.
 
-
 ## Description
+
 The logical and physical consistency of the objects in the
 
 database is checked during this phase.

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_adddynamicsnapshot_job'
-title: 'sp_adddynamicsnapshot_job'
-category: 'general'
-description: 'Creates an agent job that generates a filtered data snapshot for a publication with parameterized row filters. This stored procedure is executed at the Publisher on the publication database. This stored procedure is used by an administrator to manually create filtered data snapshot jobs for Subscribers. Create a Snapshot for a Merge Publication with Parameterized Transact-SQL syntax conventions In'
+name: "sys.sp_adddynamicsnapshot_job"
+title: "sp_adddynamicsnapshot_job"
+category: "general"
+description: "Creates an agent job that generates a filtered data snapshot for a publication with parameterized row filters. This stored procedure is executed at the Publisher on the publication database. This stored procedure is used by an administrator to manually create filtered data snapshot jobs for Subscribers. Create a Snapshot for a Merge Publication with Parameterized Transact-SQL syntax conventions In"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

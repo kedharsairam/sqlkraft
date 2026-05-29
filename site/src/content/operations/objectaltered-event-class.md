@@ -3,17 +3,17 @@ title: "Object:Altered Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Object:Altered event class indicates that an object has been altered; for example, by an
-  
+
 tags:
   - "event-classes"
   - "objectaltered-event-class"

@@ -1,7 +1,7 @@
 ---
-title: 'Analyze current wait buffer latches'
-topic: 'memory-management'
-description: 'A similar command can be run to clear the'
+title: "Analyze current wait buffer latches"
+topic: "memory-management"
+description: "A similar command can be run to clear the"
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -98,8 +98,8 @@ SQL
 
 The statistics exposed by this query are described as follows:
 
-
 ## Description
+
 ID of the session associated with the task.
 
 The type of wait that SQL Server has recorded in the engine, which is
@@ -134,8 +134,8 @@ SQL
 
 The statistics exposed by this query are described as follows:
 
-
 ## Description
+
 The type of latch that SQL Server has recorded in the engine, which is
 
 preventing a current request from being executed.

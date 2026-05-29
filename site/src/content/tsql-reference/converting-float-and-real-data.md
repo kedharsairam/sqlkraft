@@ -1,8 +1,8 @@
 ---
-name: 'Converting float and real data'
-title: 'Converting float and real data'
-category: 'data-types'
-description: '- 3.40E + 38 to -1.18E - 38, 0 and 1.18E - 38 to 3.40E + 38'
+name: "Converting float and real data"
+title: "Converting float and real data"
+category: "data-types"
+description: "- 3.40E + 38 to -1.18E - 38, 0 and 1.18E - 38 to 3.40E + 38"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

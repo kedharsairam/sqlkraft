@@ -1,7 +1,7 @@
 ---
-title: 'Locking in the Database Engine'
-topic: 'locking'
-description: 'For more information about the specific types of locking or row versioning controlled by each'
+title: "Locking in the Database Engine"
+topic: "locking"
+description: "For more information about the specific types of locking or row versioning controlled by each"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

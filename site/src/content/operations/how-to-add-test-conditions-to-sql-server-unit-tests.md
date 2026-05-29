@@ -3,14 +3,14 @@ title: "How to: Add Test Conditions to SQL Server Unit Tests"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   You can add test conditions to a SQL Server unit test by using the
-  
+
   SQL Server Unit Test
-  
+
   . When you save the test class, the test conditions are automatically saved in your test
-  
-  project 
+
+  project
 tags:
   - "ssb-diagnose"
   - "how-to-add-test-conditions-to-sql-server-unit-tests"

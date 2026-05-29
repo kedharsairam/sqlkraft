@@ -3,18 +3,18 @@ title: "Example: Retrieving Employee Information"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This example retrieves an employee ID and employee name for each employee. In the
-  
-  database, 
+
+  database,
 tags:
   - "xml-data"
   - "example-retrieving-employee-information"

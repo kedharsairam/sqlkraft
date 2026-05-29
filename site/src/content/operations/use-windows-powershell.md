@@ -3,21 +3,21 @@ title: "Use Windows PowerShell"
 topic: "linux-operations"
 description: |
   SQL Server on Linux
-  
+
   07/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article introduces
-  
+
   SQL Server PowerShell
-  
+
   and walks you through a couple of examples on
-  
+
   how to use it with SQL Server on Linux
 tags:
   - "linux-operations"
@@ -65,7 +65,7 @@ for SQL Server on Linux.
 
 Let's start by launching PowerShell on Windows. Use
 
-+
+-
 
 , on your Windows computer, and
 

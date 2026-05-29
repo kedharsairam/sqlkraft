@@ -3,17 +3,17 @@ title: "Wait types"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   When troubleshooting Always On Availability Groups latency, wait statistics can be monitored
-  
+
   for accumulation using the availability groups-specific w
 tags:
   - "high-availability"

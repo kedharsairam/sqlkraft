@@ -1,8 +1,8 @@
 ---
-name: '& (Bitwise AND)'
-title: '& (Bitwise AND)'
-category: 'operators'
-description: ''
+name: "& (Bitwise AND)"
+title: "& (Bitwise AND)"
+category: "operators"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

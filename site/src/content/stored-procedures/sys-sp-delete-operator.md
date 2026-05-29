@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_delete_operator'
-title: 'sp_delete_operator'
-category: 'general'
-description: 'Removes an operator. Transact-SQL syntax conventions The name of the operator to delete. , with no default. The name of an operator to whom the specified operator''s alerts can be reassigned. @reassign_to_operator , with a default of'
+name: "sys.sp_delete_operator"
+title: "sp_delete_operator"
+category: "general"
+description: "Removes an operator. Transact-SQL syntax conventions The name of the operator to delete. , with no default. The name of an operator to whom the specified operator's alerts can be reassigned. @reassign_to_operator , with a default of"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

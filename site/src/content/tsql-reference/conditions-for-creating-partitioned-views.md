@@ -1,8 +1,8 @@
 ---
-name: 'Conditions for creating partitioned views'
-title: 'Conditions for creating partitioned views'
-category: 'statements'
-description: 'When you design a partitioning scheme, it must be clear what data belongs to each partition.'
+name: "Conditions for creating partitioned views"
+title: "Conditions for creating partitioned views"
+category: "statements"
+description: "When you design a partitioning scheme, it must be clear what data belongs to each partition."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -35,8 +35,8 @@ SQL
 
 Generally, a view is said to be a partitioned view if it is of the following form:
 
-
 ## syntaxsql
+
 1. The select
 
 ７
@@ -81,8 +81,8 @@ defined on table
 
 must be of the following form:
 
-
 ## syntaxsql
+
 The constraints must be in such a way that any specified value of
 
 can satisfy,
@@ -115,8 +115,8 @@ option to validate them.
 
 The following examples show valid sets of constraints:
 
-
 ## syntaxsql
+
 The same column cannot be used multiple times in the select list.
 
 2. Partitioning column

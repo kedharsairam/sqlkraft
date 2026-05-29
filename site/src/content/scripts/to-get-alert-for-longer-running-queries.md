@@ -1,7 +1,7 @@
 ---
-name: 'To Get Alert for Longer Running Queries'
-title: 'To Get Alert for Longer Running Queries'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To Get Alert for Longer Running Queries"
+title: "To Get Alert for Longer Running Queries"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["automation"]
 pubDate: 2025-03-15
@@ -23,7 +23,7 @@ SET @longrunningthreshold = 1
     FROM sys.sysprocesses qs
     CROSS APPLY sys.dm_exec_sql_text(sql_handle) st
 )
--- step 2: generate html table 
+-- step 2: generate html table
 SELECT @xml = CAST((
     SELECT session_id AS 'td',
            '',
@@ -33,7 +33,7 @@ SELECT @xml = CAST((
            '',
            [session_query] AS 'td'
     FROM cte
-    WHERE session_duration >= @longrunningthreshold 
+    WHERE session_duration >= @longrunningthreshold
     FOR XML PATH('tr'), ELEMENTS
 ) AS NVARCHAR(max))
 

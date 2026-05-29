@@ -3,17 +3,17 @@ title: "SP:CacheRemove Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The SP:CacheRemove event class indicates that the stored procedure has been removed from
-  
+
   the
 tags:
   - "event-classes"

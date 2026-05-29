@@ -1,8 +1,8 @@
 ---
-name: 'InstanceOf (geography Data Type)'
-title: 'InstanceOf (geography Data Type)'
-category: 'predicates'
-description: '### GeometryCollection'
+name: "InstanceOf (geography Data Type)"
+title: "InstanceOf (geography Data Type)"
+category: "predicates"
+description: "### GeometryCollection"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
-name: 'To View list of Databases'
-title: 'To View list of Databases'
-description: 'SQL Server diagnostic script for database operations.'
+name: "To View list of Databases"
+title: "To View list of Databases"
+description: "SQL Server diagnostic script for database operations."
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

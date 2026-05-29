@@ -3,20 +3,20 @@ title: "Change the HADR cluster context"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   09/27/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   This topic describes how to switch the HADR cluster context of an instance of SQL Server by
-  
-  using Transact-SQL in SQL Server 2012 SP1 
+
+  using Transact-SQL in SQL Server 2012 SP1
 tags:
   - "high-availability"
   - "change-the-hadr-cluster-context"

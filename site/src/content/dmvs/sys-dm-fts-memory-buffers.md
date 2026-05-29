@@ -1,8 +1,8 @@
 ---
-name: 'sys.dm_fts_memory_buffers'
-title: 'sys.dm_fts_memory_buffers'
-category: 'full-text'
-description: 'SQL database in Microsoft Fabric Returns information about memory buffers belonging to a specific memory pool that are used as part of a full-text crawl or a full-text crawl range. ID of the allocated memory pool. Address of the allocated memory buffer. Name of the shared memory buffer for which this allocation was Current state of memory buffer. Number of rows that this buffer is currently handli'
+name: "sys.dm_fts_memory_buffers"
+title: "sys.dm_fts_memory_buffers"
+category: "full-text"
+description: "SQL database in Microsoft Fabric Returns information about memory buffers belonging to a specific memory pool that are used as part of a full-text crawl or a full-text crawl range. ID of the allocated memory pool. Address of the allocated memory buffer. Name of the shared memory buffer for which this allocation was Current state of memory buffer. Number of rows that this buffer is currently handli"
 tags: ["full-text", "dmv"]
 pubDate: 2026-05-29
 syntax: |

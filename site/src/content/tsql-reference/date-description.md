@@ -1,8 +1,8 @@
 ---
-name: 'date description'
-title: 'date description'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "date description"
+title: "date description"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -31,8 +31,8 @@ Defines a date in SQL Server. The
 
 data type was introduced in SQL Server 2008 (10.0.x).
 
-
 ## Syntax
+
 Usage
 
 Default string literal format

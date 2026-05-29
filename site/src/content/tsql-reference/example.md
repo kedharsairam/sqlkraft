@@ -1,8 +1,8 @@
 ---
-name: 'Example'
-title: 'Example'
-category: 'statements'
-description: 'ALTER permission on the table or view is required to run DROP INDEX. This permission is'
+name: "Example"
+title: "Example"
+category: "statements"
+description: "ALTER permission on the table or view is required to run DROP INDEX. This permission is"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

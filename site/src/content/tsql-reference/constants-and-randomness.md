@@ -1,13 +1,14 @@
 ---
-name: 'Constants and randomness'
-title: 'Constants and randomness'
-category: 'operators'
-description: 'Converts radians to degrees.'
+name: "Constants and randomness"
+title: "Constants and randomness"
+category: "operators"
+description: "Converts radians to degrees."
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
 
 ## Description
+
 DEGREES
 
 Converts radians to degrees.
@@ -24,8 +25,8 @@ financial compounding, scoring models, machine-learning feature engineering, sci
 
 analysis, and any transformation involving nonlinear growth or decay.
 
-
 ## Description
+
 EXP
 
 Exponential value of the expression (e raised to the expression).
@@ -58,18 +59,18 @@ Monte Carlo analysis, randomized selection, or creating reproducible test scenar
 
 seeded.
 
-
 ## Description
+
 PI
 
-
 ## Returns the constant
+
 (pi).
 
 RAND
 
-
 ## Returns a pseudo-random float between 0 and 1.
+
 ﾉ
 
 Expand table

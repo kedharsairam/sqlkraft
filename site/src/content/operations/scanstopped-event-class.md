@@ -3,19 +3,19 @@ title: "Scan:Stopped Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Scan:Stopped event class occurs when a table or index scan stops.
-  
+
   Description
-  
+
   Applicati
 tags:
   - "event-classes"

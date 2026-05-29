@@ -3,19 +3,19 @@ title: "XML schema collections"
 topic: "ssms"
 description: |
   ﾃ
-  
+
   Summarize this article for me
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   SQL database projects support automatic generation of XML s
 tags:
   - "ssms"

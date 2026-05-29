@@ -3,13 +3,13 @@ title: "Upgrading replica instances"
 topic: "high-availability"
 description: |
   08/15/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   When upgrading a SQL Server instance that hosts an Always On availability group (AG) to a
-  
+
   new SQL Server version, to a new SQL Server service pack or cumulative u
 tags:
   - "high-availability"

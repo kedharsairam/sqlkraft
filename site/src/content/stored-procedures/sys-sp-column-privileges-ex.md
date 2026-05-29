@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_column_privileges_ex'
-title: 'sp_column_privileges_ex'
-category: 'general'
-description: 'Returns column privileges for the specified table on the specified linked server. Transact-SQL syntax conventions The name of the linked server for which to return information. The name of the table that contains the specified column.'
+name: "sys.sp_column_privileges_ex"
+title: "sp_column_privileges_ex"
+category: "general"
+description: "Returns column privileges for the specified table on the specified linked server. Transact-SQL syntax conventions The name of the linked server for which to return information. The name of the table that contains the specified column."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

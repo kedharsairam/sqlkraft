@@ -1,8 +1,8 @@
 ---
-name: 'REGEXP_MATCHES'
-title: 'REGEXP_MATCHES'
-category: 'statements'
-description: '### Always-up-to-date'
+name: "REGEXP_MATCHES"
+title: "REGEXP_MATCHES"
+category: "statements"
+description: "### Always-up-to-date"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

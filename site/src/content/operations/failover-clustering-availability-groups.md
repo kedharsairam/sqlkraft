@@ -3,16 +3,16 @@ title: "Failover clustering & availability groups"
 topic: "high-availability"
 description: |
   08/26/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   Always On availability groups, the high availability and disaster recovery solution introduced in
-  
-  SQL Server 2012 (11.x), requires Windows Server 
+
+  SQL Server 2012 (11.x), requires Windows Server
 tags:
   - "high-availability"
   - "failover-clustering-availability-groups"

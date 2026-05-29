@@ -3,17 +3,17 @@ title: "Detach a Database"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   04/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article describes how to detach a database in SQL Server with SQL Server Management
-  
+
   Studio or Transact-SQL. The detached files aren't deleted and
 tags:
   - "collation"

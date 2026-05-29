@@ -1,8 +1,8 @@
 ---
-name: 'Hints'
-title: 'Hints'
-category: 'hints'
-description: 'Azure SQL Managed Instance'
+name: "Hints"
+title: "Hints"
+category: "hints"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "hints"]
 pubDate: 2026-05-29
 ---

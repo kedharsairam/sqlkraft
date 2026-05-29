@@ -3,17 +3,17 @@ title: "Primary keys"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Primary keys and foreign keys are two types of constraints th
 tags:
   - "tables"

@@ -3,17 +3,17 @@ title: "Mixed type & simple content"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   SQL Server doesn't support restricting a mixed type to a simple content.
-  
+
   In the following XM
 tags:
   - "xml-data"

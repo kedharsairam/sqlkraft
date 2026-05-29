@@ -3,19 +3,19 @@ title: "Example: Querying XMLType Columns"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The following query includes columns of
-  
+
   type. The query retrieves product model ID,
-  
+
   name, a
 tags:
   - "xml-data"

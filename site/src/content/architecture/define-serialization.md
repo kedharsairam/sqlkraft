@@ -3,23 +3,23 @@ title: "Define serialization"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   When casting the
-  
+
   data type explicitly or implicitly to a SQL string or binary type, the
-  
+
   content of th
 tags:
   - "xml-data"

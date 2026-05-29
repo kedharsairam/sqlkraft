@@ -3,25 +3,25 @@ title: "Audit Login Change Password Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class occurs whenever a user changes their Microsoft
-  
+
   SQL Server login password.
-  
+
   Descriptio
 tags:
   - "event-classes"

@@ -1,8 +1,8 @@
 ---
-name: 'Example: Cross-domain Query Using sql:variable()'
-title: 'Example: Cross-domain Query Using sql:variable()'
-category: 'variables'
-description: 'Azure SQL Managed Instance'
+name: "Example: Cross-domain Query Using sql:variable()"
+title: "Example: Cross-domain Query Using sql:variable()"
+category: "variables"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "variables"]
 pubDate: 2026-05-29
 ---

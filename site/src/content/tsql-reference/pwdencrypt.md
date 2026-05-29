@@ -1,8 +1,8 @@
 ---
-name: 'PWDENCRYPT'
-title: 'PWDENCRYPT'
-category: 'statements'
-description: ''
+name: "PWDENCRYPT"
+title: "PWDENCRYPT"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

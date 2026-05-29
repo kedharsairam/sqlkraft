@@ -1,8 +1,8 @@
 ---
-name: 'TODATETIMEOFFSET'
-title: 'TODATETIMEOFFSET'
-category: 'data-types'
-description: ''
+name: "TODATETIMEOFFSET"
+title: "TODATETIMEOFFSET"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

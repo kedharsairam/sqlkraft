@@ -3,15 +3,15 @@ title: "Missing Column Statistics Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Missing Column Statistics event class indicates that column statistics that could have be
 tags:
   - "event-classes"

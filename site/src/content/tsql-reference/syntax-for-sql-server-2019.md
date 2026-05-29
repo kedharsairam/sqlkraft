@@ -1,8 +1,8 @@
 ---
-name: 'Syntax for SQL Server 2019'
-title: 'Syntax for SQL Server 2019'
-category: 'statements'
-description: 'SQL Server 2017 (14.x) and later versions'
+name: "Syntax for SQL Server 2019"
+title: "Syntax for SQL Server 2019"
+category: "statements"
+description: "SQL Server 2017 (14.x) and later versions"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -21,8 +21,8 @@ artifacts needed for any new external language runtimes and OS platforms support
 
 Server.
 
-
 ## syntaxsql
+
 ７
 
 Note

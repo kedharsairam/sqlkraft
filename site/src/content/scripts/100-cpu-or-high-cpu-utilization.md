@@ -1,7 +1,7 @@
 ---
-name: '100_ CPU or High CPU Utilization'
-title: '100_ CPU or High CPU Utilization'
-description: 'first add these counters in performance monitor'
+name: "100_ CPU or High CPU Utilization"
+title: "100_ CPU or High CPU Utilization"
+description: "first add these counters in performance monitor"
 category: troubleshooting
 tags: ["cpu", "troubleshooting"]
 pubDate: 2025-03-15
@@ -64,7 +64,7 @@ CROSS APPLY [sys].[dm_exec_sql_text]([qs].[sql_handle]) AS qt
 GROUP BY [qs].[query_hash]
 HAVING  SUM([qs].[execution_count]) > 100
 ORDER BY SUM([qs].[total_worker_time]) DESC;
---Observe this query where we are grouping queries with similar Query Hash, which 
+--Observe this query where we are grouping queries with similar Query Hash, which
 --would tell us how many queries are similar natured and are doing repeated execution.
 --They all will have same Query Hash. (What is Query Hash?)
 

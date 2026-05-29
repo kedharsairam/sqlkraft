@@ -1,8 +1,8 @@
 ---
-name: 'sys.fulltext_index_catalog_usages'
-title: 'sys.fulltext_index_catalog_usages'
-category: 'indexes'
-description: 'Returns a row for each full-text catalog to full-text index reference. ID of the full-text indexed table. Is unique within the database. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission.'
+name: "sys.fulltext_index_catalog_usages"
+title: "sys.fulltext_index_catalog_usages"
+category: "indexes"
+description: "Returns a row for each full-text catalog to full-text index reference. ID of the full-text indexed table. Is unique within the database. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission."
 tags: ["indexes", "catalog-view"]
 pubDate: 2026-05-29
 ---

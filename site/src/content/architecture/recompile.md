@@ -3,17 +3,17 @@ title: "Recompile"
 topic: "spatial-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL database in Microsoft Fabric
-  
+
   This article describes how to recompile a stored procedure i
 tags:
   - "spatial-data"

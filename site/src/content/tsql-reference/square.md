@@ -1,8 +1,8 @@
 ---
-name: 'SQUARE'
-title: 'SQUARE'
-category: 'statements'
-description: ''
+name: "SQUARE"
+title: "SQUARE"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

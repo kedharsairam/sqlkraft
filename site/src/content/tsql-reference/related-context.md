@@ -1,8 +1,8 @@
 ---
-name: 'Related context'
-title: 'Related context'
-category: 'statements'
-description: '@@TRANCOUNT (Transact-SQL)'
+name: "Related context"
+title: "Related context"
+category: "statements"
+description: "@@TRANCOUNT (Transact-SQL)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

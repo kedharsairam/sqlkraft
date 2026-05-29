@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_server_info'
-title: 'sp_server_info'
-category: 'general'
-description: 'Returns a list of attribute names and matching values for SQL Server, the database gateway, or the underlying data source. Used in ODBC only. Transact-SQL syntax conventions The integer ID of the attribute. Current setting of the attribute.'
+name: "sys.sp_server_info"
+title: "sp_server_info"
+category: "general"
+description: "Returns a list of attribute names and matching values for SQL Server, the database gateway, or the underlying data source. Used in ODBC only. Transact-SQL syntax conventions The integer ID of the attribute. Current setting of the attribute."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

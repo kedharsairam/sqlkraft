@@ -1,8 +1,8 @@
 ---
-name: 'SIN'
-title: 'SIN'
-category: 'statements'
-description: ''
+name: "SIN"
+title: "SIN"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

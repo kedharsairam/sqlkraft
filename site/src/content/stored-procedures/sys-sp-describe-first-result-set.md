@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_describe_first_result_set'
-title: 'sp_describe_first_result_set'
-category: 'general'
-description: 'Position of this column in ORDER BY list Returns NULL if the column does not appear in the ORDER BY list or if the ORDER BY list cannot be uniquely Length of the ORDER BY list. Returns NULL if there is no ORDER BY list or if the ORDER BY list cannot be uniquely determined. Note that this value will be the same for all rows returned by sp_describe_first_result_set. If the ordinal_in_order_by_list i'
+name: "sys.sp_describe_first_result_set"
+title: "sp_describe_first_result_set"
+category: "general"
+description: "Position of this column in ORDER BY list Returns NULL if the column does not appear in the ORDER BY list or if the ORDER BY list cannot be uniquely Length of the ORDER BY list. Returns NULL if there is no ORDER BY list or if the ORDER BY list cannot be uniquely determined. Note that this value will be the same for all rows returned by sp_describe_first_result_set. If the ordinal_in_order_by_list i"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

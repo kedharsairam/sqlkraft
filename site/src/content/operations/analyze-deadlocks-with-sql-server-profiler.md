@@ -3,15 +3,15 @@ title: "Analyze Deadlocks with SQL Server Profiler"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Use SQL Server Profiler to identify the cause of a deadlock. A deadlock occurs when there's a
-  
+
   cyclic dependency between two or more th
 tags:
   - "profiler"

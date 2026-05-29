@@ -1,8 +1,8 @@
 ---
-name: 'calculations'
-title: 'calculations'
-category: 'statements'
-description: 'This example returns only the rows for'
+name: "calculations"
+title: "calculations"
+category: "statements"
+description: "This example returns only the rows for"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

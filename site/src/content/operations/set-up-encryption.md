@@ -3,17 +3,17 @@ title: "Set up encryption"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   To enable automatic decryption of the database master key of a mirror database, you must
-  
+
   provide the password used to encrypt the master key to the mi
 tags:
   - "high-availability"

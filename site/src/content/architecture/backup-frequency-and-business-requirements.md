@@ -1,7 +1,7 @@
 ---
-title: 'Backup frequency and business requirements'
-topic: 'query-processing'
-description: 'scans the buffer cache for buffers with pages from a specified database and writes all dirty'
+title: "Backup frequency and business requirements"
+topic: "query-processing"
+description: "scans the buffer cache for buffers with pages from a specified database and writes all dirty"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

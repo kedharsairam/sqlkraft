@@ -3,18 +3,17 @@ title: "Showplan All Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Showplan All event class occurs when Microsoft SQL Server executes a SQL statement. The
-  
-  
+
 tags:
   - "event-classes"
   - "showplan-all-event-class"

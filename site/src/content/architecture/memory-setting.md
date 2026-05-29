@@ -1,7 +1,7 @@
 ---
-title: 'memory setting'
-topic: 'memory-management'
-description: 'The following table indicates whether a specific type of memory allocation is controlled by the'
+title: "memory setting"
+topic: "memory-management"
+description: "The following table indicates whether a specific type of memory allocation is controlled by the"
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---

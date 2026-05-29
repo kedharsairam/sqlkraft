@@ -3,29 +3,29 @@ title: "LOCALDB_ERROR_SHARED_NAME_TAKEN"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Product Name
-  
+
   SQL Server
-  
+
   Event ID
-  
+
   281
-  
+
   Event Source
-  
+
   SQL Server Local Database Runtime 12.0
-  
+
   Component
-  
+
   Local Database Runtime API
-  
+
   Message Text
-  
+
   The specified s
 tags:
   - "clr-integration"

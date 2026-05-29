@@ -3,33 +3,33 @@ title: "LOCALDB_ERROR_INSTANCE_BUSY"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Product
-  
+
   Name
-  
+
   SQL Server
-  
+
   Event ID
-  
+
   274
-  
+
   Event Source
-  
+
   SQL Server Local Database Runtime 12.0
-  
+
   Component
-  
+
   Local Database Runtime API
-  
+
   Message
-  
+
   Text
-  
+
   Requested ope
 tags:
   - "clr-integration"

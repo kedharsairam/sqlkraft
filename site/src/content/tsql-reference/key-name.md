@@ -1,8 +1,8 @@
 ---
-name: 'KEY_NAME'
-title: 'KEY_NAME'
-category: 'statements'
-description: '### uniqueidentifier'
+name: "KEY_NAME"
+title: "KEY_NAME"
+category: "statements"
+description: "### uniqueidentifier"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,13 +1,14 @@
 ---
-name: 'Windows collations'
-title: 'Windows collations'
-category: 'statements'
-description: 'Collation uses the Latin1 General dictionary sorting rules and maps to'
+name: "Windows collations"
+title: "Windows collations"
+category: "statements"
+description: "Collation uses the Latin1 General dictionary sorting rules and maps to"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 ## Description
+
 Collation uses the Latin1 General dictionary sorting rules and maps to
 
 code page

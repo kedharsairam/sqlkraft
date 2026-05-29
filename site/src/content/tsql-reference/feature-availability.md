@@ -1,8 +1,8 @@
 ---
-name: 'Feature availability'
-title: 'Feature availability'
-category: 'statements'
-description: 'The following example declares vectors using the new'
+name: "Feature availability"
+title: "Feature availability"
+category: "statements"
+description: "The following example declares vectors using the new"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

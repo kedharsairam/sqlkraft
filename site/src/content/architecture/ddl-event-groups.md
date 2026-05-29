@@ -3,17 +3,17 @@ title: "DDL Event Groups"
 topic: "change-data-capture"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The following tables list the DDL event groups that can be used to run a DDL trigger or an
-  
+
   e
 tags:
   - "change-data-capture"

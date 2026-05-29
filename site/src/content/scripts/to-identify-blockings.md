@@ -1,7 +1,7 @@
 ---
-name: 'To Identify Blockings'
-title: 'To Identify Blockings'
-description: 'SQL Server diagnostic script for performance operations.'
+name: "To Identify Blockings"
+title: "To Identify Blockings"
+description: "SQL Server diagnostic script for performance operations."
 category: performance
 tags: ["blocking", "performance"]
 pubDate: 2025-03-15

@@ -3,19 +3,19 @@ title: "Troubleshoot AD Authentication"
 topic: "linux-operations"
 description: |
   Article
-  
+
   •
-  
+
   05/02/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article helps you troubleshoot Active Directory Domain Services authentication issues with
-  
+
   SQL Server on Linux and containers. It includ
 tags:
   - "linux-operations"

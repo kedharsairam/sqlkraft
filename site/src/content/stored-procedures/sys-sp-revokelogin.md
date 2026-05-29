@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_revokelogin'
-title: 'sp_revokelogin'
-category: 'general'
-description: 'Removes the login entries from SQL Server for a Windows user or group created by using Transact-SQL syntax conventions The name of the Windows user or group. , with no default. can be any existing Windows user name or group in the form This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use'
+name: "sys.sp_revokelogin"
+title: "sp_revokelogin"
+category: "general"
+description: "Removes the login entries from SQL Server for a Windows user or group created by using Transact-SQL syntax conventions The name of the Windows user or group. , with no default. can be any existing Windows user name or group in the form This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: '<ComputerName>\<User>'
@@ -100,5 +100,4 @@ ADVWORKS\john
 ADVWORKS\john
 ```
 
-
-*(... and 30 more examples)*
+_(... and 30 more examples)_

@@ -1,8 +1,8 @@
 ---
-name: 'ASSEMBLYPROPERTY'
-title: 'ASSEMBLYPROPERTY'
-category: 'statements'
-description: '#### VersionRevision'
+name: "ASSEMBLYPROPERTY"
+title: "ASSEMBLYPROPERTY"
+category: "statements"
+description: "#### VersionRevision"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

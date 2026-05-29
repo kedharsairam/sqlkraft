@@ -3,21 +3,21 @@ title: "Specify parameters"
 topic: "spatial-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL database in Microsoft
-  
+
   Fabric
-  
+
   By specifying procedure parameters
 tags:
   - "spatial-data"

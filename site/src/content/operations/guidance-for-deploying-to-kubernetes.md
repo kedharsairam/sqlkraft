@@ -3,13 +3,13 @@ title: "Guidance for deploying to Kubernetes"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article contains best practices and guidance for running SQL Server containers on
-  
+
   Kubernetes with StatefulSets. We recommend deploying one SQL Server container
 tags:
   - "linux-operations"

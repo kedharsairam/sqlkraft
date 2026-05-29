@@ -1,7 +1,7 @@
 ---
-title: 'Transact-SQL'
-topic: 'query-processing'
-description: 'The use of the vardecimal storage format.'
+title: "Transact-SQL"
+topic: "query-processing"
+description: "The use of the vardecimal storage format."
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -202,10 +202,10 @@ ProcNums
 
 table_name.index_name
 
-
 ## syntax in
 
 ## syntax in
+
 .
 
 with two-part
@@ -294,15 +294,15 @@ The select list of an aggregate
 
 indexed view must contain
 
-COUNT_BIG (*) in 90 compatibility
+COUNT_BIG (\*) in 90 compatibility
 
 mode
 
-Use COUNT_BIG (*).
+Use COUNT_BIG (\*).
 
 Index view selects list without
 
-COUNT_BIG(*)
+COUNT_BIG(\*)
 
 The indirect application of table hints
 
@@ -316,8 +316,8 @@ None.
 
 Indirect TVF hints
 
-
 ## syntax:
+
 and
 
 database option

@@ -1,10 +1,10 @@
 ---
-name: 'DROP CERTIFICATE'
-title: 'DROP CERTIFICATE'
-category: 'statements'
-description: ''
+name: "DROP CERTIFICATE"
+title: "DROP CERTIFICATE"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

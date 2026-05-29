@@ -1,7 +1,7 @@
 ---
-title: 'Start transactions'
-topic: 'io-fundamentals'
-description: 'Using API functions and Transact-SQL statements, you can start transactions as explicit,'
+title: "Start transactions"
+topic: "io-fundamentals"
+description: "Using API functions and Transact-SQL statements, you can start transactions as explicit,"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -138,8 +138,8 @@ everything required to make the transaction durable, and all transaction log buf
 
 transaction are flushed to disk. As each resource manager completes the prepare phase, it
 
-
 ## returns success or failure of the phase to the transaction manager. SQL Server 2014 (12.x)
+
 introduced delayed transaction durability. Delayed durable transactions commit before the
 
 transaction log buffers on each resource manager are flushed to disk. For more information

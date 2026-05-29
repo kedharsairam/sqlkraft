@@ -1,8 +1,8 @@
 ---
-name: 'STPointN (geometry Data Type)'
-title: 'STPointN (geometry Data Type)'
-category: 'data-types'
-description: '### ArgumentOutOfRangeException'
+name: "STPointN (geometry Data Type)"
+title: "STPointN (geometry Data Type)"
+category: "data-types"
+description: "### ArgumentOutOfRangeException"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

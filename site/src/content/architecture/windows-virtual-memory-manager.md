@@ -1,7 +1,7 @@
 ---
-title: 'Windows Virtual Memory Manager'
-topic: 'memory-management'
-description: 'Azure SQL Managed Instance'
+title: "Windows Virtual Memory Manager"
+topic: "memory-management"
+description: "Azure SQL Managed Instance"
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---

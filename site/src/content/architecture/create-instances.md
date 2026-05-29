@@ -3,21 +3,21 @@ title: "Create Instances"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   08/08/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to generate XML instances.
-  
+
   In SQL Server, you can generate XML instances in
 tags:
   - "xml-data"

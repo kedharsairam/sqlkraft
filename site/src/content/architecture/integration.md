@@ -3,19 +3,19 @@ title: "Integration"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   The common language runtime (CLR) is the heart of the .NET Framework and provides the
-  
+
   execution environment for all .NET F
 tags:
   - "clr-integration"

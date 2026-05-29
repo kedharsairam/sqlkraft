@@ -1,7 +1,7 @@
 ---
-name: 'To Change Logshipping Secondary Database Restor'
-title: 'To Change Logshipping Secondary Database Restor'
-description: 'Execute the below script on the secondary server'
+name: "To Change Logshipping Secondary Database Restor"
+title: "To Change Logshipping Secondary Database Restor"
+description: "Execute the below script on the secondary server"
 category: high-availability
 tags: ["database", "high-availability"]
 pubDate: 2025-03-15
@@ -14,10 +14,10 @@ set @databaseName = 'databasename' -- Secondary Database Name
 -- 0 = Restore log with NORECOVERY.
 -- 1 = Restore log with STANDBY.
 select secondary_database,
-case restore_mode 
+case restore_mode
 when 0 then 'No Recovery'
 when 1 then 'Stand by' end AS 'restore_mode'
-from msdb.dbo.log_shipping_secondary_databases 
+from msdb.dbo.log_shipping_secondary_databases
 where secondary_database = @databaseName
 
 --Execute the below script on the secondary server

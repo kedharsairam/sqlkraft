@@ -3,32 +3,32 @@ title: "LOCALDB_ERROR_AUTO_INSTANCE_CREATE_FAILED"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Product
-  
+
   Name
-  
+
   SQL Server
-  
+
   Event ID
-  
+
   280
-  
+
   Event Source
-  
+
   SQL Server Local Database Runtime 12.0
-  
+
   Component
-  
+
   Local Database Runtime API
-  
+
   Message Text
-  
-  Cannot create 
+
+  Cannot create
 tags:
   - "clr-integration"
   - "localdb-error-auto-instance-create-failed"

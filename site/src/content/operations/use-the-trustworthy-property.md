@@ -3,13 +3,13 @@ title: "Use the Trustworthy Property"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   When a database is backed up, the TRUSTWORTHY database property is set to OFF. Therefore,
-  
+
   on a new mirror database TRUSTWORTHY is always OFF. If the database needs to be
-  
+
   tru
 tags:
   - "high-availability"

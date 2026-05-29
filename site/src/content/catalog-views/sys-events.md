@@ -1,11 +1,11 @@
 ---
-name: 'sys.events'
-title: 'sys.events'
-category: 'compatibility'
-description: 'The name of a predefined group of Transact-SQL or SQL Trace event types. An event notification can fire after execution of any event that belongs to an event group. For a list of DDL event groups, the Transact-SQL events they cover, and the scope at which they can be DDL Event Groups also acts as a macro, when the statement finishes, by adding the event types it covers to the Specifies the target '
+name: "sys.events"
+title: "sys.events"
+category: "compatibility"
+description: "The name of a predefined group of Transact-SQL or SQL Trace event types. An event notification can fire after execution of any event that belongs to an event group. For a list of DDL event groups, the Transact-SQL events they cover, and the scope at which they can be DDL Event Groups also acts as a macro, when the statement finishes, by adding the event types it covers to the Specifies the target "
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'CREATE EVENT NOTIFICATION'
+syntax: "CREATE EVENT NOTIFICATION"
 ---
 
 ## Description

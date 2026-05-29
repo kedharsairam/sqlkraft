@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_replflush'
-title: 'sp_replflush'
-category: 'general'
-description: 'Azure SQL Managed Instance Flushes the article cache. This stored procedure is executed at the Publisher on the publication Transact-SQL syntax conventions is used in transactional replication. Article definitions are stored in the cache for efficiency. is used by other replication stored procedures whenever an article definition is modified or dropped. You shouldn''t have to execute this procedure'
+name: "sys.sp_replflush"
+title: "sp_replflush"
+category: "general"
+description: "Azure SQL Managed Instance Flushes the article cache. This stored procedure is executed at the Publisher on the publication Transact-SQL syntax conventions is used in transactional replication. Article definitions are stored in the cache for efficiency. is used by other replication stored procedures whenever an article definition is modified or dropped. You shouldn't have to execute this procedure"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 ---
@@ -43,27 +43,22 @@ professional.
 
 ## Code Blocks
 
-
 ```sql
 0
 ```
-
 
 ```sql
 1
 ```
 
-
 ```sql
 sp_replflush
 ```
-
 
 ```sql
 sp_replflush
 [ ; ]
 ```
-
 
 ```sql
 sp_replcmds

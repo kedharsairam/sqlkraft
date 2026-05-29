@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_add_targetservergroup'
-title: 'sp_add_targetservergroup'
-category: 'general'
-description: 'Adds the specified server group. Transact-SQL syntax conventions The name of the server group to create. Target server groups provide an easy way to target a job at a collection of target servers. For'
+name: "sys.sp_add_targetservergroup"
+title: "sp_add_targetservergroup"
+category: "general"
+description: "Adds the specified server group. Transact-SQL syntax conventions The name of the server group to create. Target server groups provide an easy way to target a job at a collection of target servers. For"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

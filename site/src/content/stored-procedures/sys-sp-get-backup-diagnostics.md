@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_get_backup_diagnostics'
-title: 'managed_backup.sp_get_backup_diagnostics'
-category: 'general'
-description: 'The following example returns all the analytical events logged for the past 30 minutes'
+name: "sys.sp_get_backup_diagnostics"
+title: "managed_backup.sp_get_backup_diagnostics"
+category: "general"
+description: "The following example returns all the analytical events logged for the past 30 minutes"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

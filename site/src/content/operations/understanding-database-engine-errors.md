@@ -3,21 +3,21 @@ title: "Understanding Database Engine errors"
 topic: "monitor"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL analytics endpoint in
-  
+
   Microsoft Fabric
-  
+
   Warehouse in Microsoft F
 tags:
   - "monitor"

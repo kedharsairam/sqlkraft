@@ -3,17 +3,17 @@ title: "Frequently asked questions"
 topic: "migration"
 description: |
   ﾃ
-  
+
   Summarize this article for me
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   The following questions and answers provide guidance on a variety of tasks faced by
-  
+
   administrators of replicated
 tags:
   - "migration"

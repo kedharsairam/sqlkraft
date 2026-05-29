@@ -3,22 +3,22 @@ title: "Service Broker"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   10/08/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic contains information about configuring Service Broker to work with Always On
-  
+
   availability groups in SQL Server.
-  
+
   1.
-  
-  For more information, 
+
+  For more information,
 tags:
   - "high-availability"
   - "service-broker"

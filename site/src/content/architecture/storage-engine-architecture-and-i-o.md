@@ -1,7 +1,7 @@
 ---
-title: 'Storage engine architecture and I/O'
-topic: 'io-fundamentals'
-description: 'SQL Server internals and architecture'
+title: "Storage engine architecture and I/O"
+topic: "io-fundamentals"
+description: "SQL Server internals and architecture"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -44,8 +44,8 @@ Use these guides to understand how SQL Server manages concurrent access to data 
 
 internal structures, and how to diagnose contention-related issues.
 
-
 ## Description
+
 Transaction locking and row
 
 versioning guide

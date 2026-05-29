@@ -3,24 +3,24 @@ title: "Audit Object Derived Permission Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class records when a CREATE, ALTER, or DROP
-  
-  command is issued for a specified object. This 
+
+  command is issued for a specified object. This
 tags:
   - "event-classes"
   - "audit-object-derived-permission-event-class"

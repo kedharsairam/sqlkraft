@@ -3,22 +3,22 @@ title: "Get started with security features"
 topic: "linux-operations"
 description: |
   SQL Server on Linux
-  
+
   Article
-  
+
   •
-  
+
   11/21/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   If you're a Linux user who is new to SQL Server, the following tasks walk you through some of
-  
-  the security tasks. These 
+
+  the security tasks. These
 tags:
   - "linux-operations"
   - "get-started-with-security-features"

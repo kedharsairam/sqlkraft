@@ -1,8 +1,8 @@
 ---
-name: 'smalldatetime'
-title: 'smalldatetime'
-category: 'data-types'
-description: '#### Default string literal'
+name: "smalldatetime"
+title: "smalldatetime"
+category: "data-types"
+description: "#### Default string literal"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

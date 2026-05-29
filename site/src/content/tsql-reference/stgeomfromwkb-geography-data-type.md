@@ -1,8 +1,8 @@
 ---
-name: 'STGeomFromWKB (geography Data Type)'
-title: 'STGeomFromWKB (geography Data Type)'
-category: 'data-types'
-description: ''
+name: "STGeomFromWKB (geography Data Type)"
+title: "STGeomFromWKB (geography Data Type)"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

@@ -3,15 +3,15 @@ title: "Connect to listener"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article teaches you how to connect to an
-  
+
   Always On availability group listener
-  
+
   for SQL
-  
+
   Server. An availability group listener is a virtual network name that clients us
 tags:
   - "high-availability"

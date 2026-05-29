@@ -3,17 +3,17 @@ title: "XQuery Static Type Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The XQuery Static Type event class occurs when SQL Server executes an XQuery expression.
-  
+
   Thi
 tags:
   - "event-classes"

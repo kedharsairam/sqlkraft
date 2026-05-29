@@ -3,23 +3,23 @@ title: "Availability group is not ready for automatic failover"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   : Availability Group Automatic Failover Readiness
-  
+
   : Availability group is not ready for automatic failover.
-  
+
   :
-  
+
   : Availability group
-  
+
   This policy chec
 tags:
   - "high-availability"

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_deletepeerrequesthistory'
-title: 'sp_deletepeerrequesthistory'
-category: 'general'
-description: 'Deletes history related to a publication status request, which includes the request history ) as well as the response history ( executed on the publication database at a Publisher participating in a Peer-to-Peer replication topology. For more information, see Peer-to-Peer - Transactional Replication Transact-SQL syntax conventions Name of the publication for which the status request was made. Spec'
+name: "sys.sp_deletepeerrequesthistory"
+title: "sp_deletepeerrequesthistory"
+category: "general"
+description: "Deletes history related to a publication status request, which includes the request history ) as well as the response history ( executed on the publication database at a Publisher participating in a Peer-to-Peer replication topology. For more information, see Peer-to-Peer - Transactional Replication Transact-SQL syntax conventions Name of the publication for which the status request was made. Spec"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

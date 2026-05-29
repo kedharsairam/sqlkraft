@@ -3,19 +3,19 @@ title: "srv_rpcnumber"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Returns the number component for the current remote stored procedure call.
-  
+
   srvproc
-  
+
   Is a pointer to the SRV_PROC structure that is the handle for a pa
 tags:
   - "clr-integration"

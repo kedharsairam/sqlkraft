@@ -1,10 +1,10 @@
 ---
-name: 'Resolve errors'
-title: 'Resolve errors'
-category: 'statements'
-description: ''
+name: "Resolve errors"
+title: "Resolve errors"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

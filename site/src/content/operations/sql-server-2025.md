@@ -3,11 +3,11 @@ title: "SQL Server 2025"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server 2025 (17.x) on Linux
-  
+
   This article describes the major features and services available for SQL Server 2025 (17.x)
-  
+
   running on Linux. For package downloads and known issues, see
 tags:
   - "linux-operations"

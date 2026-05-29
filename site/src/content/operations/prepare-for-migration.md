@@ -3,19 +3,19 @@ title: "Prepare for migration"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article helps you prepare your environment for a
-  
+
   SQL Server VM migration
-  
+
   of your SQL
-  
+
   Server instance enabled by Azure Arc to
-  
+
   SQL Server on Azure VMs
-  
+
   in the Azure por
 tags:
   - "azure-synapse"

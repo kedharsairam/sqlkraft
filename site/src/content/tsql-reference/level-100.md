@@ -1,8 +1,8 @@
 ---
-name: 'level 100'
-title: 'level 100'
-category: 'statements'
-description: 'same ordinal position in the select list) must be'
+name: "level 100"
+title: "level 100"
+category: "statements"
+description: "same ordinal position in the select list) must be"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -31,7 +31,7 @@ level of the local database to 100 or lower.
 
 function implements the following rules:
 
-1) Upper-case H or upper-case W is ignored
+1. Upper-case H or upper-case W is ignored
 
 when separating two consonants that have the
 
@@ -39,7 +39,7 @@ same number in the
 
 code.
 
-2) If the first two characters of
+2. If the first two characters of
 
 character_expression
 
@@ -59,13 +59,13 @@ are excluded except the first.
 
 function implements the following rules:
 
-1) If upper-case H or upper-case W separate two
+1. If upper-case H or upper-case W separate two
 
 consonants that have the same number in the
 
 code, the consonant to the right is ignored
 
-2) If a set of side-by-side consonants have the same
+2. If a set of side-by-side consonants have the same
 
 number in the
 
@@ -455,8 +455,8 @@ and
 
 attributes. However,
 
-
 ## returns the
+
 and
 
 attributes for consistency with
@@ -477,8 +477,8 @@ and modified.
 
 For example, executing the query
 
-
 ## returns all attributes including
+
 and
 
 . To exclude these types in the

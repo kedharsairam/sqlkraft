@@ -3,25 +3,25 @@ title: "srv_alloc"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Allocates memory dynamically.
-  
+
   size
-  
+
   Specifies the number of bytes to allocate.
-  
+
   A pointer to the newly allocated space. If
-  
+
   size
-  
+
   bytes cannot be allo
 tags:
   - "clr-integration"

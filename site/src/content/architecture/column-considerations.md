@@ -1,7 +1,7 @@
 ---
-title: 'Column considerations'
-topic: 'io-fundamentals'
-description: 'Covering indexes can improve query performance because all the data needed to meet'
+title: "Column considerations"
+topic: "io-fundamentals"
+description: "Covering indexes can improve query performance because all the data needed to meet"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

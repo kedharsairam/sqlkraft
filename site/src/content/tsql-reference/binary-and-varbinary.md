@@ -1,8 +1,8 @@
 ---
-name: 'binary and varbinary'
-title: 'binary and varbinary'
-category: 'data-types'
-description: ''
+name: "binary and varbinary"
+title: "binary and varbinary"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

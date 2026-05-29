@@ -3,17 +3,17 @@ title: "Create CLR Triggers"
 topic: "change-data-capture"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   You can create a database object inside SQL Server that is programmed in an assembly created
-  
+
   in the .NET Framework common language runtime (CLR). Data
 tags:
   - "change-data-capture"

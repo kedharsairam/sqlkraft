@@ -1,7 +1,7 @@
 ---
-title: 'Database options'
-topic: 'io-fundamentals'
-description: 'option. To rebuild multiple log'
+title: "Database options"
+topic: "io-fundamentals"
+description: "option. To rebuild multiple log"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

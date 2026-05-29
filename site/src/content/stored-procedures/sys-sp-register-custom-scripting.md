@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_register_custom_scripting'
-title: 'sp_register_custom_scripting'
-category: 'general'
-description: 'Replication allows user-defined custom stored procedures to replace one or more of the default procedures used in transactional replication. When a schema change is made to a replicated table, these stored procedures are re-created. registers a stored procedure or Transact-SQL script file that is executed when a schema change occurs to script out the definition for a new user-defined custom stored'
+name: "sys.sp_register_custom_scripting"
+title: "sp_register_custom_scripting"
+category: "general"
+description: "Replication allows user-defined custom stored procedures to replace one or more of the default procedures used in transactional replication. When a schema change is made to a replicated table, these stored procedures are re-created. registers a stored procedure or Transact-SQL script file that is executed when a schema change occurs to script out the definition for a new user-defined custom stored"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_register_custom_scripting'
+syntax: "sp_register_custom_scripting"
 ---
 
 ## Description

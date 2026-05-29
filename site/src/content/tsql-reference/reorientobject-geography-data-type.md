@@ -1,8 +1,8 @@
 ---
-name: 'ReorientObject (geography Data Type)'
-title: 'ReorientObject (geography Data Type)'
-category: 'data-types'
-description: '### GeometryCollection'
+name: "ReorientObject (geography Data Type)"
+title: "ReorientObject (geography Data Type)"
+category: "data-types"
+description: "### GeometryCollection"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

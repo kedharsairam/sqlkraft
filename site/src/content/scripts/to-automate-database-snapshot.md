@@ -1,7 +1,7 @@
 ---
-name: 'To Automate Database Snapshot'
-title: 'To Automate Database Snapshot'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To Automate Database Snapshot"
+title: "To Automate Database Snapshot"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["automation", "database"]
 pubDate: 2025-03-15

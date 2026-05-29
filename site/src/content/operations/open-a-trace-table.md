@@ -3,21 +3,21 @@ title: "Open a Trace Table"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to open an existing trace table by using SQL Server Profiler.
-  
+
   1. On the
-  
+
   menu, point to
-  
+
   , and then select
-  
+
 tags:
   - "profiler"
   - "open-a-trace-table"

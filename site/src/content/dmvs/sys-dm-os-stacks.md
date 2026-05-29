@@ -1,11 +1,11 @@
 ---
-name: 'sys.dm_os_stacks'
-title: 'sys.dm_os_stacks'
-category: 'os'
-description: 'SQL database in Microsoft Fabric This dynamic management view is used internally by SQL Server to do the following: Keep track of debug data such as outstanding allocations. Assume or validate logic that is used by SQL Server components in places where the component assumes that a certain call has been made. Unique address for this stack allocation. Is not nullable. Each line represents a function'
+name: "sys.dm_os_stacks"
+title: "sys.dm_os_stacks"
+category: "os"
+description: "SQL database in Microsoft Fabric This dynamic management view is used internally by SQL Server to do the following: Keep track of debug data such as outstanding allocations. Assume or validate logic that is used by SQL Server components in places where the component assumes that a certain call has been made. Unique address for this stack allocation. Is not nullable. Each line represents a function"
 tags: ["os", "dmv"]
 pubDate: 2026-05-29
-syntax: '##MS_ServerStateReader##'
+syntax: "##MS_ServerStateReader##"
 ---
 
 ## Description

@@ -3,15 +3,15 @@ title: "Benefits of Programming with Service Broker"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Queuing and asynchronous messaging are needed for many database applications today.
-  
+
   Service Broker provides a queue-based durable mess
 tags:
   - "service-broker"

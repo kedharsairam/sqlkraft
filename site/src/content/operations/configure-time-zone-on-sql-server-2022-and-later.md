@@ -3,15 +3,15 @@ title: "Configure time zone on SQL Server 2022 and later"
 topic: "linux-operations"
 description: |
   07/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article describes how to configure the time zone for SQL Server 2022 (16.x) and later
-  
+
   versions on Linux. You can also configure the time zone on Lin
 tags:
   - "linux-operations"

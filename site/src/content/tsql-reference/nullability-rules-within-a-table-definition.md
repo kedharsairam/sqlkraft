@@ -1,8 +1,8 @@
 ---
-name: 'Nullability rules within a table definition'
-title: 'Nullability rules within a table definition'
-category: 'data-types'
-description: 'A column-level CHECK constraint can reference only the constrained column, and a table-'
+name: "Nullability rules within a table definition"
+title: "Nullability rules within a table definition"
+category: "data-types"
+description: "A column-level CHECK constraint can reference only the constrained column, and a table-"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

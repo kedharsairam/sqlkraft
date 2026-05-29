@@ -3,23 +3,23 @@ title: "System object reference"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article lists system objects that Azure extension for SQL Server deploys and manages. They
-  
+
   include:
-  
+
   Files
-  
+
   Registry keys
-  
+
   Windows services
-  
+
   Tables
-  
+
   Description
-  
+
   CLI and
 tags:
   - "azure-synapse"

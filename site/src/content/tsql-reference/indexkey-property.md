@@ -1,8 +1,8 @@
 ---
-name: 'INDEXKEY_PROPERTY'
-title: 'INDEXKEY_PROPERTY'
-category: 'hints'
-description: '### sys.index_columns (Transact-SQL)'
+name: "INDEXKEY_PROPERTY"
+title: "INDEXKEY_PROPERTY"
+category: "hints"
+description: "### sys.index_columns (Transact-SQL)"
 tags: ["tsql", "hints"]
 pubDate: 2026-05-29
 ---

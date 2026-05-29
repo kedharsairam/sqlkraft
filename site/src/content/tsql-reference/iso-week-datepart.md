@@ -1,8 +1,8 @@
 ---
-name: 'iso_week datepart'
-title: 'iso_week datepart'
-category: 'statements'
-description: 'ISO 8601 includes the ISO week-date system, a numbering system for weeks. Each week is'
+name: "iso_week datepart"
+title: "iso_week datepart"
+category: "statements"
+description: "ISO 8601 includes the ISO week-date system, a numbering system for weeks. Each week is"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

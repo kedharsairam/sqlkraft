@@ -1,8 +1,8 @@
 ---
-name: 'Boolean Data Type'
-title: 'Boolean Data Type'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "Boolean Data Type"
+title: "Boolean Data Type"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -41,7 +41,7 @@ Greater than
 
 Less than
 
->= (Greater Than or Equal To)
+> = (Greater Than or Equal To)
 
 Greater than or equal to
 
@@ -103,8 +103,8 @@ qualify for the search conditions and in control-of-flow language statements suc
 
 WHILE, for example:
 
-
 ## syntaxsql
+
 Expressions (Transact-SQL)
 
 Operators (Transact-SQL)

@@ -1,7 +1,7 @@
 ---
-name: 'To Put the Database in Single User or Multi Use'
-title: 'To Put the Database in Single User or Multi Use'
-description: 'for single user'
+name: "To Put the Database in Single User or Multi Use"
+title: "To Put the Database in Single User or Multi Use"
+description: "for single user"
 category: database
 tags: ["database", "user"]
 pubDate: 2025-03-15

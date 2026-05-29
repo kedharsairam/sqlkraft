@@ -1,7 +1,7 @@
 ---
-title: 'Indicators of latch contention'
-topic: 'io-fundamentals'
-description: '3. Alleviate the contention using one of the techniques described in'
+title: "Indicators of latch contention"
+topic: "io-fundamentals"
+description: "3. Alleviate the contention using one of the techniques described in"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

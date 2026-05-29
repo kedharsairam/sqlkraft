@@ -1,13 +1,14 @@
 ---
-name: 'Code example conventions'
-title: 'Code example conventions'
-category: 'statements'
-description: 'Schema name is omitted.'
+name: "Code example conventions"
+title: "Code example conventions"
+category: "statements"
+description: "Schema name is omitted."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 ## Description
+
 Four-part name.
 
 Schema name is omitted.

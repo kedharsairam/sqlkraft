@@ -1,7 +1,7 @@
 ---
-title: 'Execution plan caching and reuse'
-topic: 'query-processing'
-description: '### Extended Stored Procedures'
+title: "Execution plan caching and reuse"
+topic: "query-processing"
+description: "### Extended Stored Procedures"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

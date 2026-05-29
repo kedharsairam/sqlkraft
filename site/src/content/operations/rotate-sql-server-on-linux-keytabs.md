@@ -3,15 +3,15 @@ title: "Rotate SQL Server on Linux keytabs"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   Based on your organization's security best practices, you might be required to rotate the
-  
+
   password regularly for the Windows Active Directory account provided as
-  
+
   i
 tags:
   - "linux-operations"

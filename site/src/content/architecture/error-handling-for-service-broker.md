@@ -3,15 +3,15 @@ title: "Error Handling for Service Broker"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Error handling in an application that uses Service Broker has two distinct aspects. First, the
-  
+
   application must handle errors raised b
 tags:
   - "service-broker"

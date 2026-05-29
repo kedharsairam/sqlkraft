@@ -1,8 +1,8 @@
 ---
-name: 'Unsupported or error-prone scenarios'
-title: 'Unsupported or error-prone scenarios'
-category: 'operators'
-description: 'SQL Server supports both'
+name: "Unsupported or error-prone scenarios"
+title: "Unsupported or error-prone scenarios"
+category: "operators"
+description: "SQL Server supports both"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

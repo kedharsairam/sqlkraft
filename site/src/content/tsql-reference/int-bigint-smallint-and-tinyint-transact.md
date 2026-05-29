@@ -1,8 +1,8 @@
 ---
-name: 'int, bigint, smallint, and tinyint (Transact-'
-title: 'int, bigint, smallint, and tinyint (Transact-'
-category: 'data-types'
-description: '#### Range expression'
+name: "int, bigint, smallint, and tinyint (Transact-"
+title: "int, bigint, smallint, and tinyint (Transact-"
+category: "data-types"
+description: "#### Range expression"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

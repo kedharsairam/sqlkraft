@@ -1,8 +1,8 @@
 ---
-name: 'replace value of (XML DML)'
-title: 'replace value of (XML DML)'
-category: 'statements'
-description: 'Note the following from the previous query:'
+name: "replace value of (XML DML)"
+title: "replace value of (XML DML)"
+category: "statements"
+description: "Note the following from the previous query:"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

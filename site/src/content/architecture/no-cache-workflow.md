@@ -1,7 +1,7 @@
 ---
-title: 'No cache workflow'
-topic: 'query-processing'
-description: 'Azure SQL Managed Instance'
+title: "No cache workflow"
+topic: "query-processing"
+description: "Azure SQL Managed Instance"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -40,8 +40,8 @@ To optimize the authentication process, SQL Server uses a security cache.
 
 When the security cache is invalid, SQL Server follows a no cache workflow to validate
 
-
 ## permissions. This section describes the no cache workflow.
+
 
 
 To demonstrate, consider the following query:

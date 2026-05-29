@@ -1,8 +1,8 @@
 ---
-name: 'Examples for nonclustered columnstore indexes'
-title: 'Examples for nonclustered columnstore indexes'
-category: 'statements'
-description: 'There are two ways to maintain the clustered columnstore index, and both methods achieved'
+name: "Examples for nonclustered columnstore indexes"
+title: "Examples for nonclustered columnstore indexes"
+category: "statements"
+description: "There are two ways to maintain the clustered columnstore index, and both methods achieved"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

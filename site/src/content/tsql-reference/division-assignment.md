@@ -1,8 +1,8 @@
 ---
-name: '/= (Division assignment)'
-title: '/= (Division assignment)'
-category: 'operators'
-description: ''
+name: "/= (Division assignment)"
+title: "/= (Division assignment)"
+category: "operators"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

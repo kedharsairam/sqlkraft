@@ -3,17 +3,17 @@ title: "Plan & test the upgrade plan"
 topic: "upgrade"
 description: |
   06/16/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   To perform a successful SQL Server upgrade, regardless of approach, appropriate planning is
-  
+
   required.
-  
+
   Before upgrading the Database Engine, revie
 tags:
   - "upgrade"

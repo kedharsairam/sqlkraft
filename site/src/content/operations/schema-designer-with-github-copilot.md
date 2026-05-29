@@ -3,10 +3,10 @@ title: "Schema designer with GitHub Copilot"
 topic: "profiler"
 description: |
   The Schema Designer in the MSSQL extension for Visual Studio Code includes GitHub Copilot
-  
+
   integration, so you can design, modify, and validate database schemas using natural language.
-  
-  Describe what 
+
+  Describe what
 tags:
   - "profiler"
   - "schema-designer-with-github-copilot"

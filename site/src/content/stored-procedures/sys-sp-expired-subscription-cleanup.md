@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_expired_subscription_cleanup'
-title: 'sp_expired_subscription_cleanup'
-category: 'general'
-description: 'Checks the status of all the subscriptions of every publication and drops subscriptions that are expired. This stored procedure is executed at the Publisher on any database, or at the Distributor on the distribution database for a non-SQL Server Publisher. Transact-SQL syntax conventions The name of a non-SQL Server publisher. , with a default of shouldn''t specify this parameter for a SQL Server P'
+name: "sys.sp_expired_subscription_cleanup"
+title: "sp_expired_subscription_cleanup"
+category: "general"
+description: "Checks the status of all the subscriptions of every publication and drops subscriptions that are expired. This stored procedure is executed at the Publisher on any database, or at the Distributor on the distribution database for a non-SQL Server Publisher. Transact-SQL syntax conventions The name of a non-SQL Server publisher. , with a default of shouldn't specify this parameter for a SQL Server P"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_expired_subscription_cleanup'
+syntax: "sp_expired_subscription_cleanup"
 ---
 
 ## Description

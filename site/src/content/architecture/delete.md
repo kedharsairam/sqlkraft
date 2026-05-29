@@ -3,17 +3,17 @@ title: "Delete"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This topic describes how to delete (drop) an index in SQL Server by using SQL Server
-  
+
   Managem
 tags:
   - "filestream"

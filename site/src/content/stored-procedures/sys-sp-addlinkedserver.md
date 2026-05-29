@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addlinkedserver'
-title: 'sp_addlinkedserver'
-category: 'general'
-description: 'be specified in the parameter. Optionally, the connection string can also supply a failover partner name. from a local login, or a login that isn''t part of the role, you might receive the following error: To resolve this issue, add the parameter to your connection string. In the following is the User ID passed to the connection string: For more information, see Access to the remote server is denie'
+name: "sys.sp_addlinkedserver"
+title: "sp_addlinkedserver"
+category: "general"
+description: "be specified in the parameter. Optionally, the connection string can also supply a failover partner name. from a local login, or a login that isn't part of the role, you might receive the following error: To resolve this issue, add the parameter to your connection string. In the following is the User ID passed to the connection string: For more information, see Access to the remote server is denie"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -81,81 +81,55 @@ N
 
 Applies to:
 
-
 Azure SQL Managed Instance
-
 
 Creates a linked server. A linked server provides access to distributed, heterogeneous queries
 
-
 against OLE DB data sources. After a linked server is created by using
-
 
 distributed queries can be run against this server. If the linked server is defined as an instance of
 
-
 SQL Server, remote stored procedures can be executed.
-
 
 Transact-SQL syntax conventions
 
-
 The name of the linked server to create.
-
 
 , with no default.
 
-
 The product name of the OLE DB data source to add as a linked server.
-
 
 @srvproduct
 
-
 nvarchar(128)
 
-
 , with a default of
-
 
 . If the value is
 
-
 don't have to be specified.
-
 
 The unique programmatic identifier (PROGID) of the OLE DB provider that corresponds to this
 
-
 data source. The
-
 
 must be unique for the specified OLE DB provider installed on the
 
-
 current computer.
-
 
 nvarchar(128)
 
-
 , with a default of
-
 
 In SQL Server 2019 (15.x) and earlier versions, if
 
-
 is omitted,
-
 
 will redirect SQL Server to the latest version of SQL Server Native Client OLE
 
-
 Microsoft Entra ID
 
-
 was previously known as Azure Active Directory (Azure AD).
-
 
 ## Permissions
 
@@ -380,5 +354,4 @@ sp_testlinkedserver SEATTLESales;
 GO
 ```
 
-
-*(... and 6 more examples)*
+_(... and 6 more examples)_

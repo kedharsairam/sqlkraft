@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_helpdynamicsnapshot_job'
-title: 'sp_helpdynamicsnapshot_job'
-category: 'general'
-description: 'Returns information on agent jobs that generate filtered data snapshots. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions information on all filtered data snapshot jobs that match the specified The name of a filtered data snapshot job. , which returns all dynamic jobs for a publication with the specified . If a job name wasn''t explicit'
+name: "sys.sp_helpdynamicsnapshot_job"
+title: "sp_helpdynamicsnapshot_job"
+category: "general"
+description: "Returns information on agent jobs that generate filtered data snapshots. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions information on all filtered data snapshot jobs that match the specified The name of a filtered data snapshot job. , which returns all dynamic jobs for a publication with the specified . If a job name wasn't explicit"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

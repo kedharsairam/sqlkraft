@@ -1,8 +1,8 @@
 ---
-name: 'sys.database_ledger_digest_locations'
-title: 'sys.database_ledger_digest_locations'
-category: 'compatibility'
-description: 'Captures the current and the historical ledger digest storage endpoints for the ledger feature. For more information on database ledger, see The location of storage digests. For example, a path for a The block ID for the last digest uploaded. Indicates whether this is the current path or a path used in the Configure automatic database digests'
+name: "sys.database_ledger_digest_locations"
+title: "sys.database_ledger_digest_locations"
+category: "compatibility"
+description: "Captures the current and the historical ledger digest storage endpoints for the ledger feature. For more information on database ledger, see The location of storage digests. For example, a path for a The block ID for the last digest uploaded. Indicates whether this is the current path or a path used in the Configure automatic database digests"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

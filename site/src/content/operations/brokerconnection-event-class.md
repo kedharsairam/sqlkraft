@@ -3,26 +3,26 @@ title: "Broker:Connection Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server generates a
-  
+
   event to report the status of a transport connection
-  
+
   managed by Service Broker.
-  
+
   Description
-  
-  The 
+
+  The
 tags:
   - "event-classes"
   - "brokerconnection-event-class"

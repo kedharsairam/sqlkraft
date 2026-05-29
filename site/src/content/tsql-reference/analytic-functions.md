@@ -1,8 +1,8 @@
 ---
-name: 'Analytic functions'
-title: 'Analytic functions'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Analytic functions"
+title: "Analytic functions"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

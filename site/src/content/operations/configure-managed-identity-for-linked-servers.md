@@ -3,13 +3,13 @@ title: "Configure managed identity for linked servers"
 topic: "azure-synapse"
 description: |
   :
-  
+
   Applies to:
-  
+
   SQL Server 2025 (17.x)
-  
+
   SQL Server 2025 introduces managed identity support for linked servers, enabling secure,
-  
+
   credential-free authentication between SQL Server instances. This capa
 tags:
   - "azure-synapse"

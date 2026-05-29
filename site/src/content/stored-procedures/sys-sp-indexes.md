@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_indexes'
-title: 'sp_indexes'
-category: 'general'
-description: 'Returns index information for the specified remote table. Transact-SQL syntax conventions The name of a linked server running SQL Server for which table information is being requested. The name of the remote table for which to provide index information. , all tables in the specified database are returned. Server environment, this value corresponds to the table owner.'
+name: "sys.sp_indexes"
+title: "sp_indexes"
+category: "general"
+description: "Returns index information for the specified remote table. Transact-SQL syntax conventions The name of a linked server running SQL Server for which table information is being requested. The name of the remote table for which to provide index information. , all tables in the specified database are returned. Server environment, this value corresponds to the table owner."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

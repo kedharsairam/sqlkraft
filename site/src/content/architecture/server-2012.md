@@ -1,7 +1,7 @@
 ---
-title: 'Server 2012'
-topic: 'query-processing'
-description: 'Large columnstore index queries'
+title: "Server 2012"
+topic: "query-processing"
+description: "Large columnstore index queries"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

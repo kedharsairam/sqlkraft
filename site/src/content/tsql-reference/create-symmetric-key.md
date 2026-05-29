@@ -1,8 +1,8 @@
 ---
-name: 'CREATE SYMMETRIC KEY'
-title: 'CREATE SYMMETRIC KEY'
-category: 'statements'
-description: ''
+name: "CREATE SYMMETRIC KEY"
+title: "CREATE SYMMETRIC KEY"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

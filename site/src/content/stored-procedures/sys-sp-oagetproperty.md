@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_oagetproperty'
-title: 'sp_OAGetProperty'
-category: 'general'
-description: 'Gets a property value of an OLE object. Transact-SQL syntax conventions The object token of an OLE object that was previously created by using The property name of the OLE object to return. The returned property value. If specified, it must be a local variable of the appropriate data Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are en'
+name: "sys.sp_oagetproperty"
+title: "sp_OAGetProperty"
+category: "general"
+description: "Gets a property value of an OLE object. Transact-SQL syntax conventions The object token of an OLE object that was previously created by using The property name of the OLE object to return. The returned property value. If specified, it must be a local variable of the appropriate data Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are en"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -3,15 +3,15 @@ title: "Upgrade SQL Server log shipping"
 topic: "high-availability"
 description: |
   ﾃ
-  
+
   Summarize this article for me
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   To preserve your log shipping disaster recovery solution, upgrade, or apply servicing updates in
-  
+
   the appropriate order. Servicing updates in
 tags:
   - "high-availability"

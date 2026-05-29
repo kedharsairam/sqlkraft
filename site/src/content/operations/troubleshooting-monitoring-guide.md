@@ -3,13 +3,13 @@ title: "Troubleshooting & monitoring guide"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   This guide helps you get started on monitoring availability groups and troubleshooting some
-  
+
   of the common issues in availability groups. It provides original content, and a la
 tags:
   - "high-availability"

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_articleview'
-title: 'sp_articleview'
-category: 'general'
-description: 'Creates the view that defines the published article when a table is filtered vertically or horizontally. This view is used as the filtered source of the schema and data for the destination tables. Only unsubscribed articles can be modified by this stored procedure. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the public'
+name: "sys.sp_articleview"
+title: "sp_articleview"
+category: "general"
+description: "Creates the view that defines the published article when a table is filtered vertically or horizontally. This view is used as the filtered source of the schema and data for the destination tables. Only unsubscribed articles can be modified by this stored procedure. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the public"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

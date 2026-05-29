@@ -3,11 +3,11 @@ title: "Troubleshoot configuration"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article provides information to help you troubleshoot typical problems with configuring
-  
+
   server instances for Always On availability groups. Typical configuration problem
 tags:
   - "high-availability"

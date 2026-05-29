@@ -3,17 +3,17 @@ title: "Security Wizard"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The Configure Database Mirroring Security Wizard can be used to initially configure security
-  
+
   settings at all or some server instances involved in mirr
 tags:
   - "high-availability"

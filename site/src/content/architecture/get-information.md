@@ -3,18 +3,17 @@ title: "Get Information"
 topic: "change-data-capture"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The catalog views listed in this section can be used to get information about DDL Triggers.
-  
-  
+
 tags:
   - "change-data-capture"
   - "get-information"

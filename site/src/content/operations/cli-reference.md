@@ -3,9 +3,9 @@ title: "CLI reference"
 topic: "sqlpackage"
 description: |
   SqlPackage CLI reference
-  
+
   SqlPackage is a command-line utility for database portability and deployments in Windows, Linux, and
-  
+
   macOS environments. The SqlPackage command-line interface (CLI) parses e
 tags:
   - "sqlpackage"

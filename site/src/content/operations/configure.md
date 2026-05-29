@@ -3,17 +3,17 @@ title: "Configure"
 topic: "high-availability"
 description: |
   ﾃ
-  
+
   Summarize this article for me
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article describes how to configure log shipping in SQL Server by using SQL Server
-  
+
   Management Studio or Transact-SQL.
-  
+
   The primary datab
 tags:
   - "high-availability"

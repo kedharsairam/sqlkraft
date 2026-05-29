@@ -1,8 +1,8 @@
 ---
-name: 'RECONFIGURE'
-title: 'RECONFIGURE'
-category: 'statements'
-description: '### recovery interval'
+name: "RECONFIGURE"
+title: "RECONFIGURE"
+category: "statements"
+description: "### recovery interval"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

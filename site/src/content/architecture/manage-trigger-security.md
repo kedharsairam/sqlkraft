@@ -3,17 +3,17 @@ title: "Manage Trigger Security"
 topic: "change-data-capture"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   By default, both DML and DDL triggers execute under the context of the user that calls the
-  
+
   t
 tags:
   - "change-data-capture"

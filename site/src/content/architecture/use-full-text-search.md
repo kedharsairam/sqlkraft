@@ -3,21 +3,21 @@ title: "Use Full-Text Search"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   You can create a full-text index on XML columns that indexes the content of the XML values,
-  
+
   but ignore
 tags:
   - "xml-data"

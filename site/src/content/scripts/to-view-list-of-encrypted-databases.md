@@ -1,7 +1,7 @@
 ---
-name: 'To View List of Encrypted Databases'
-title: 'To View List of Encrypted Databases'
-description: 'SQL Server diagnostic script for security-audit operations.'
+name: "To View List of Encrypted Databases"
+title: "To View List of Encrypted Databases"
+description: "SQL Server diagnostic script for security-audit operations."
 category: security-audit
 tags: ["database", "encryption", "security-audit"]
 pubDate: 2025-03-15

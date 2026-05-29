@@ -3,18 +3,18 @@ title: "Remove a cluster"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Use this procedure to uninstall an Always On SQL Server failover cluster instance.
-  
-  Consider the following important points before you uninstall a SQL 
+
+  Consider the following important points before you uninstall a SQL
 tags:
   - "high-availability"
   - "remove-a-cluster"

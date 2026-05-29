@@ -3,19 +3,19 @@ title: "Database Project Settings"
 topic: "ssb-diagnose"
 description: |
   SQL projects properties
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   In addition to the contents of the individual
-  
+
   files, SQL database p
 tags:
   - "ssb-diagnose"

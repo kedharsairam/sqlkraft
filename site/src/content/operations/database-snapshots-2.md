@@ -3,17 +3,17 @@ title: "Database Snapshots"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   You can take advantage of a mirror database that you are maintaining for availability purposes
-  
+
   to offload reporting. To use a mirror database for repo
 tags:
   - "high-availability"

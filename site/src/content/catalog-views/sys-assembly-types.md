@@ -1,8 +1,8 @@
 ---
-name: 'sys.assembly_types'
-title: 'sys.assembly_types'
-category: 'compatibility'
-description: 'Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Contains a row for each user-defined type that is defined by a CLR assembly. The following appear in the list of inherited columns (see ID of the assembly from which this type was created. Name of the class within the assembly that defines this Sorting the bytes of this type is equivalent to sorting using comparison operato'
+name: "sys.assembly_types"
+title: "sys.assembly_types"
+category: "compatibility"
+description: "Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Contains a row for each user-defined type that is defined by a CLR assembly. The following appear in the list of inherited columns (see ID of the assembly from which this type was created. Name of the class within the assembly that defines this Sorting the bytes of this type is equivalent to sorting using comparison operato"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

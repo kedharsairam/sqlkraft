@@ -1,8 +1,8 @@
 ---
-name: 'Service Broker Remote Service Bindings'
-title: 'Service Broker Remote Service Bindings'
-category: 'statements'
-description: 'A Service Broker message type is a database-level securable that is contained by the database'
+name: "Service Broker Remote Service Bindings"
+title: "Service Broker Remote Service Bindings"
+category: "statements"
+description: "A Service Broker message type is a database-level securable that is contained by the database"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -55,8 +55,8 @@ A Service Broker remote service binding is a database-level securable that is co
 
 database that is its parent in the permissions hierarchy. The most specific and limited
 
-
 ## permissions that can be revoked on a Service Broker remote service binding are listed in the
+
 following table, together with the more general permissions that include them by implication.
 
 CONTROL

@@ -1,19 +1,19 @@
 ---
-name: 'SSPI Handshake Error'
-title: 'SSPI Handshake Error'
-description: 'There can be 2 variants in SSPI errors:'
+name: "SSPI Handshake Error"
+title: "SSPI Handshake Error"
+description: "There can be 2 variants in SSPI errors:"
 category: troubleshooting
 tags: ["troubleshooting"]
 pubDate: 2025-03-15
 ---
 
 ```sql
---There can be 2 variants in SSPI errors: 
+--There can be 2 variants in SSPI errors:
 --"Cannot generate SSPI context" and "SSPI Handshake Failed".
 
 --1) SSPI handshake failed: We get this when the user is not authenticated.
 
---From the client machine to verify if domain connectivity is good we can run 
+--From the client machine to verify if domain connectivity is good we can run
 nltest /SC_QUERY:YourDomainName
 
 --Go to event viewer and under SYSTEM, filter for NETLOGON events and see if there are any connection failures.
@@ -32,7 +32,7 @@ nltest /SC_QUERY:YourDomainName
 
 --This may lead to authentication problems. Make sure that this computer is connected to the network. If the problem persists, please contact your domain administrator.}
 
---2) Cannot generate SSPI context:  We generally get this error when the client is trying a Kerberos authentication and that fails but it does not fall back to NTLM. 
+--2) Cannot generate SSPI context:  We generally get this error when the client is trying a Kerberos authentication and that fails but it does not fall back to NTLM.
 
 --Listing SPNs:-
 setspn -l KDSSG\SQLService

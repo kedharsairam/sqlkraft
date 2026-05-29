@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_help_spatial_geography_index_xml'
-title: 'sp_help_spatial_geography_index_xml'
-category: 'general'
-description: 'Returns the name and value for a specified set of properties about a You can choose to return a core set of properties or all properties of the index. Results are returned in an XML fragment that displays the name and value of the properties Transact-SQL syntax conventions Spatial index stored procedures - arguments and properties User must be assigned a role to access the procedure. Requires READ'
+name: "sys.sp_help_spatial_geography_index_xml"
+title: "sp_help_spatial_geography_index_xml"
+category: "general"
+description: "Returns the name and value for a specified set of properties about a You can choose to return a core set of properties or all properties of the index. Results are returned in an XML fragment that displays the name and value of the properties Transact-SQL syntax conventions Spatial index stored procedures - arguments and properties User must be assigned a role to access the procedure. Requires READ"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -3,17 +3,17 @@ title: "Fabric mirrored databases"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   You can mirror databases from SQL Server (2016-2025), Azure S
 tags:
   - "high-availability"

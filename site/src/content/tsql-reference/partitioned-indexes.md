@@ -1,8 +1,8 @@
 ---
-name: 'Partitioned indexes'
-title: 'Partitioned indexes'
-category: 'statements'
-description: 'sorting and a temporary copy of the original table or existing clustered index data. For more'
+name: "Partitioned indexes"
+title: "Partitioned indexes"
+category: "statements"
+description: "sorting and a temporary copy of the original table or existing clustered index data. For more"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

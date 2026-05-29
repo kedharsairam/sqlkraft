@@ -3,16 +3,16 @@ title: "Lesson 1: Creating the Target Database"
 topic: "service-broker"
 description: |
   09/04/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   In this lesson, you learn to create the target database and all the Service Broker target objects
-  
-  that don't have dependencies on the 
+
+  that don't have dependencies on the
 tags:
   - "service-broker"
   - "lesson-1-creating-the-target-database"

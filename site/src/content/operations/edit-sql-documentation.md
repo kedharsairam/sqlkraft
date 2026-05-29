@@ -3,19 +3,19 @@ title: "Edit SQL Documentation!"
 topic: "monitor"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure Synapse Analytics
-  
+
   Analytics
-  
+
   Platform System (PDW)
-  
+
   Anyone can contribute to SQL Server documentation. This includes correcting typos,
-  
+
   suggesting b
 tags:
   - "monitor"

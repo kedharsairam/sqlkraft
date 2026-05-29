@@ -3,19 +3,19 @@ title: "Memory-optimized temporal tables"
 topic: "tables"
 description: |
   09/07/2025
-  
+
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later
-  
+
   Azure SQL Managed Instance
-  
+
   System-versioned temporal tables for
-  
+
   memory-optimized tables
-  
+
   provide a cost-effective
-  
+
   solution for scenarios w
 tags:
   - "tables"

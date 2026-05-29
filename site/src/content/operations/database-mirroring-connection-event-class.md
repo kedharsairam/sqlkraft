@@ -3,25 +3,25 @@ title: "Database Mirroring Connection Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   SQL Server generates a
-  
+
   event to report the status of a
-  
+
   transport connection managed by Database Mirroring.
-  
+
   Description
-  
+
   The name
 tags:
   - "event-classes"

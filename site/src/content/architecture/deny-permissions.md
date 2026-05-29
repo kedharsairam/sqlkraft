@@ -3,15 +3,15 @@ title: "Deny Permissions"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Permission can be denied to either create a new XML schema collection or use an existing one.
 tags:
   - "xml-data"

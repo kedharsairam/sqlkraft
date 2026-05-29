@@ -3,17 +3,17 @@ title: "Remove primary database"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   09/04/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to remove both the primary database and the corresponding
-  
+
   secondary database(s) from an Always On availability group by using
 tags:
   - "high-availability"

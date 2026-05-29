@@ -1,11 +1,11 @@
 ---
-name: 'sys.database_event_session_fields'
-title: 'sys.database_event_session_fields (Azure SQL Database)'
-category: 'compatibility'
-description: 'SQL Server 2016 (13.x) and later versions Azure SQL Database Azure SQL Managed SQL database in Microsoft Fabric dynamic management view (DMV) returns a row for each customizable column that was explicitly set on in a database-scoped event session. Azure SQL Database and SQL database in Fabric support only database-scoped sessions Azure SQL Managed Instance supports both database-scoped sessions an'
+name: "sys.database_event_session_fields"
+title: "sys.database_event_session_fields (Azure SQL Database)"
+category: "compatibility"
+description: "SQL Server 2016 (13.x) and later versions Azure SQL Database Azure SQL Managed SQL database in Microsoft Fabric dynamic management view (DMV) returns a row for each customizable column that was explicitly set on in a database-scoped event session. Azure SQL Database and SQL database in Fabric support only database-scoped sessions Azure SQL Managed Instance supports both database-scoped sessions an"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'sys.database_event_session_fields'
+syntax: "sys.database_event_session_fields"
 ---
 
 ## Description

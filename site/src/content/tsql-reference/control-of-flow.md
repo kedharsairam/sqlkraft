@@ -1,8 +1,8 @@
 ---
-name: 'Control-of-Flow'
-title: 'Control-of-Flow'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Control-of-Flow"
+title: "Control-of-Flow"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

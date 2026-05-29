@@ -3,17 +3,17 @@ title: "Lesson 1: Converting a Table to a Hierarchical Structure"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Customers who have tables using self joins to express hierarchical relationships can convert
-  
+
 tags:
   - "tables"
   - "lesson-1-converting-a-table-to-a-hierarchical-structure"

@@ -3,19 +3,19 @@ title: "Deprecation Announcement Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event class occurs when you use a feature that will be
-  
+
   removed from a future version of
 tags:
   - "event-classes"

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_send_dbmail'
-title: 'sp_send_dbmail'
-category: 'general'
-description: 'Sends an e-mail message to the specified recipients. The message might include a query result set, file attachments, or both. When mail is successfully placed in the Database Mail queue, of the message. This stored procedure is in the Transact-SQL syntax conventions'
+name: "sys.sp_send_dbmail"
+title: "sp_send_dbmail"
+category: "general"
+description: "Sends an e-mail message to the specified recipients. The message might include a query result set, file attachments, or both. When mail is successfully placed in the Database Mail queue, of the message. This stored procedure is in the Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

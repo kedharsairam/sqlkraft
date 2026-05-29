@@ -3,15 +3,15 @@ title: "Event-Based Activation"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server provides a queue activation event to notify external applications when a queue has
-  
+
   messages to process. This topic describe
 tags:
   - "service-broker"

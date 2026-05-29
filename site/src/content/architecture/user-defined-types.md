@@ -3,17 +3,17 @@ title: "User-defined types"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   SQL Server gives you the ability to create database objects that are programmed against an
-  
+
   assembly created in the .NET Framework common language runt
 tags:
   - "clr-integration"

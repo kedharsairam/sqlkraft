@@ -3,15 +3,15 @@ title: "Lesson 5: Receiving a Request and Sending a Reply"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   In this lesson, you learn how to receive a request message from the target queue and send a
-  
+
   reply message to the initiator service. Ru
 tags:
   - "service-broker"

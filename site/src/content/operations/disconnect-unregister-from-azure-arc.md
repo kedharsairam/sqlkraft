@@ -3,11 +3,11 @@ title: "Disconnect & unregister from Azure Arc"
 topic: "azure-arc"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   This article describes how to disconnect SQL Server instances from Azure Arc by using the Azure
-  
+
   portal or a command shell. It applies to SQL Server instances enabled by Azure
 tags:
   - "azure-arc"

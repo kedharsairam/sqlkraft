@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_helpuser'
-title: 'sp_helpuser'
-category: 'general'
-description: 'Reports information about database-level principals in the current database. Transact-SQL syntax conventions The name of database user or database role in the current database. must exist in the current database. If returns information about all database principals. The following table shows the result set when no user account, SQL Server, or Windows user is doesn''t return information about secura'
+name: "sys.sp_helpuser"
+title: "sp_helpuser"
+category: "general"
+description: "Reports information about database-level principals in the current database. Transact-SQL syntax conventions The name of database user or database role in the current database. must exist in the current database. If returns information about all database principals. The following table shows the result set when no user account, SQL Server, or Windows user is doesn't return information about secura"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -90,5 +90,4 @@ ALTER ANY USER
 Albert
 ```
 
-
-*(... and 1 more examples)*
+_(... and 1 more examples)_

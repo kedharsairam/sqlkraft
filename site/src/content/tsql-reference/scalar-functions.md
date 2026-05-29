@@ -1,8 +1,8 @@
 ---
-name: 'Scalar functions'
-title: 'Scalar functions'
-category: 'statements'
-description: 'Configuration functions are scalar functions that return information about current'
+name: "Scalar functions"
+title: "Scalar functions"
+category: "statements"
+description: "Configuration functions are scalar functions that return information about current"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -41,8 +41,8 @@ Operate on a single value and then return a single value. Scalar functions can b
 
 an expression is valid.
 
-
 ## Description
+
 Configuration Functions
 
 Return information about the current configuration.

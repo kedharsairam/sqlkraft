@@ -3,19 +3,19 @@ title: "Configure Publishing & Distribution"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   09/27/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This topic describes how to configure publishing and distribution in SQL Server by using SQL
-  
+
   Server Management Studio, Tra
 tags:
   - "migration"

@@ -3,13 +3,13 @@ title: "Storing data files in Azure"
 topic: "collation"
 description: |
   SQL Server data files in Microsoft Azure
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   SQL Server Data Files in Microsoft Azure enables native support for SQL Server database files
-  
+
   stored as blobs. It allows you to crea
 tags:
   - "collation"

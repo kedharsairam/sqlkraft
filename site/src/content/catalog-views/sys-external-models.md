@@ -1,8 +1,8 @@
 ---
-name: 'sys.external_models'
-title: 'sys.external_models'
-category: 'external'
-description: 'Contains a row for each external model in the current database. ID of the model, unique within an instance of SQL Server ID of the database principal that owns the external model Server name or file path of the model ID of the database scoped credential object JSON to be appended to the outgoing payload Time the model was updated (if updated), and defaults to The visibility of the metadata in cata'
+name: "sys.external_models"
+title: "sys.external_models"
+category: "external"
+description: "Contains a row for each external model in the current database. ID of the model, unique within an instance of SQL Server ID of the database principal that owns the external model Server name or file path of the model ID of the database scoped credential object JSON to be appended to the outgoing payload Time the model was updated (if updated), and defaults to The visibility of the metadata in cata"
 tags: ["external", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

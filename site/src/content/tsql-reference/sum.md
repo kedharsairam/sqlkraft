@@ -1,8 +1,8 @@
 ---
-name: 'SUM'
-title: 'SUM'
-category: 'statements'
-description: ''
+name: "SUM"
+title: "SUM"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

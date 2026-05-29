@@ -1,7 +1,7 @@
 ---
-title: 'Idle or pooled connection being closed'
-topic: 'io-fundamentals'
-description: 'The connection is closed 10 seconds after the previous keep-alive exchange (see'
+title: "Idle or pooled connection being closed"
+topic: "io-fundamentals"
+description: "The connection is closed 10 seconds after the previous keep-alive exchange (see"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

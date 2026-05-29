@@ -1,8 +1,8 @@
 ---
-name: 'year, month, and day datepart Arguments'
-title: 'year, month, and day datepart Arguments'
-category: 'operators'
-description: 'return value depends on the'
+name: "year, month, and day datepart Arguments"
+title: "year, month, and day datepart Arguments"
+category: "operators"
+description: "return value depends on the"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

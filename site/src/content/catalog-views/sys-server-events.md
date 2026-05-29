@@ -1,8 +1,8 @@
 ---
-name: 'sys.server_events'
-title: 'sys.server_events'
-category: 'compatibility'
-description: 'Contains one row for each event for which a server-level event-notification or server-level DDL uniquely identify the server event. ID of the server-level event notification or server-level DDL Type of the event that causes the event notification or DDL Description of the event that causes the DDL trigger or event Event group on which the trigger or event notification is created, or null if not cr'
+name: "sys.server_events"
+title: "sys.server_events"
+category: "compatibility"
+description: "Contains one row for each event for which a server-level event-notification or server-level DDL uniquely identify the server event. ID of the server-level event notification or server-level DDL Type of the event that causes the event notification or DDL Description of the event that causes the DDL trigger or event Event group on which the trigger or event notification is created, or null if not cr"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

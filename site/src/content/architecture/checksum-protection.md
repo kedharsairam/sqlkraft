@@ -1,7 +1,7 @@
 ---
-title: 'Checksum protection'
-topic: 'io-fundamentals'
-description: 'and the command that triggered the read continues. If the retry attempts fail, the command'
+title: "Checksum protection"
+topic: "io-fundamentals"
+description: "and the command that triggered the read continues. If the retry attempts fail, the command"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

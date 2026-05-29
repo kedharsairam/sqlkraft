@@ -1,8 +1,8 @@
 ---
-name: 'Version availability'
-title: 'Version availability'
-category: 'statements'
-description: 'Syntax for Azure Synapse Analytics and Analytics Platform System (PDW):'
+name: "Version availability"
+title: "Version availability"
+category: "statements"
+description: "Syntax for Azure Synapse Analytics and Analytics Platform System (PDW):"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -10,6 +10,7 @@ pubDate: 2026-05-29
 ## Syntax for Azure Synapse Analytics and Analytics Platform System (PDW):
 
 ## syntaxsql
+
 Some of the options aren't available in all database engine versions. The following table shows
 
 the versions when the options are introduced in clustered columnstore and nonclustered

@@ -1,7 +1,7 @@
 ---
-title: 'Override degrees of parallelism'
-topic: 'query-processing'
-description: '### Database Engine Configuration - MaxDOP page'
+title: "Override degrees of parallelism"
+topic: "query-processing"
+description: "### Database Engine Configuration - MaxDOP page"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
-name: 'To Check Access for Multiple Instances'
-title: 'To Check Access for Multiple Instances'
-description: 'SQL Server diagnostic script for security-audit operations.'
+name: "To Check Access for Multiple Instances"
+title: "To Check Access for Multiple Instances"
+description: "SQL Server diagnostic script for security-audit operations."
 category: security-audit
 tags: ["health-check", "security-audit"]
 pubDate: 2025-03-15

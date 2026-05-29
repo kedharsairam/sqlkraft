@@ -3,21 +3,21 @@ title: "Collation & data types"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   In the .NET Framework, the
-  
+
   object handles collations. The .NET Framework string
-  
+
   application programming interfaces (APIs) use the
-  
+
   property associate
 tags:
   - "clr-integration"

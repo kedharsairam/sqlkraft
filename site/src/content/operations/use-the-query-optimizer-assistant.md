@@ -3,9 +3,9 @@ title: "Use the query optimizer assistant"
 topic: "profiler"
 description: |
   Quickstart: Query optimizer assistant
-  
+
   GitHub Copilot helps developers optimize queries and analyze performance bottlenecks
-  
+
   without needing expertise in database internals, especially developers with
 tags:
   - "profiler"

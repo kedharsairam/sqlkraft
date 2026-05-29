@@ -1,8 +1,8 @@
 ---
-name: 'Transaction isolation levels'
-title: 'Transaction isolation levels'
-category: 'transactions'
-description: 'Azure SQL Managed Instance'
+name: "Transaction isolation levels"
+title: "Transaction isolation levels"
+category: "transactions"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "transactions"]
 pubDate: 2026-05-29
 ---

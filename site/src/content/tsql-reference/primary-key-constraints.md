@@ -1,8 +1,8 @@
 ---
-name: 'PRIMARY KEY constraints'
-title: 'PRIMARY KEY constraints'
-category: 'statements'
-description: 'statement that creates the temp table. For example, if a stored procedure creates a temporary'
+name: "PRIMARY KEY constraints"
+title: "PRIMARY KEY constraints"
+category: "statements"
+description: "statement that creates the temp table. For example, if a stored procedure creates a temporary"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -31,8 +31,8 @@ user sessions within the same database. User sessions from other databases can't
 
 temporary tables. Otherwise, global temporary tables for Azure SQL Database follow the same
 
-
 ## syntax and semantics that SQL Server uses.
+
 Similarly, global temporary stored procedures are also scoped to the database level in Azure
 
 SQL Database.

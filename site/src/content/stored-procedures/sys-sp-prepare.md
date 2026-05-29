@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_prepare'
-title: 'sp_prepare (Transact-SQL)'
-category: 'general'
-description: 'Analytics Platform System (PDW) Prepares a parameterized Transact-SQL statement and returns a statement in a tabular data stream (TDS) packet. Transact-SQL syntax conventions is a required parameter with an Identifies parameterized statements. is a required OUTPUT parameter that calls for an definition of variables is substituted for parameter markers in the statement. Input a value if the stateme'
+name: "sys.sp_prepare"
+title: "sp_prepare (Transact-SQL)"
+category: "general"
+description: "Analytics Platform System (PDW) Prepares a parameterized Transact-SQL statement and returns a statement in a tabular data stream (TDS) packet. Transact-SQL syntax conventions is a required parameter with an Identifies parameterized statements. is a required OUTPUT parameter that calls for an definition of variables is substituted for parameter markers in the statement. Input a value if the stateme"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

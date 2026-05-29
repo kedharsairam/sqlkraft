@@ -3,13 +3,13 @@ title: "Deploy AGs with DH2i DxOperator"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This tutorial explains how to configure SQL Server Always On availability groups (AGs) for SQL
-  
+
   Server Linux based containers deployed to an Azure Kubernetes Service
 tags:
   - "linux-operations"

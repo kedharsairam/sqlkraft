@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_add_log_shipping_secondary_primary'
-title: 'sp_add_log_shipping_secondary_primary'
-category: 'general'
-description: 'Sets up the primary information, adds local and remote monitor links, and creates copy and restore jobs on the secondary server for the specified primary database. Transact-SQL syntax conventions The name of the primary instance of the SQL Server Database Engine in the log shipping'
+name: "sys.sp_add_log_shipping_secondary_primary"
+title: "sp_add_log_shipping_secondary_primary"
+category: "general"
+description: "Sets up the primary information, adds local and remote monitor links, and creates copy and restore jobs on the secondary server for the specified primary database. Transact-SQL syntax conventions The name of the primary instance of the SQL Server Database Engine in the log shipping"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

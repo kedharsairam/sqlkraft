@@ -3,7 +3,7 @@ name: "xquery-xquery-extension-functions-sqlcolumn"
 title: "XQuery - XQuery Extension Functions - sql:column()"
 category: "xquery"
 description: "XQuery Language Reference: XQuery Extension Functions - sql:column()"
-syntax: "sql:column(\"columnName\")"
+syntax: 'sql:column("columnName")'
 tags:
   - "xquery"
   - "xquery-extension-functions-sqlcolumn"

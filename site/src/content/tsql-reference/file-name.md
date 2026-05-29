@@ -1,8 +1,8 @@
 ---
-name: 'FILE_NAME'
-title: 'FILE_NAME'
-category: 'statements'
-description: ''
+name: "FILE_NAME"
+title: "FILE_NAME"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

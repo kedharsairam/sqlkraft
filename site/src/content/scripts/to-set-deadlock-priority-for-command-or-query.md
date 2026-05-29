@@ -1,6 +1,6 @@
 ---
-name: 'To Set Deadlock Priority for Command or Query'
-title: 'To Set Deadlock Priority for Command or Query'
+name: "To Set Deadlock Priority for Command or Query"
+title: "To Set Deadlock Priority for Command or Query"
 description: 'add this line in the beginning of the command \ query'
 category: performance
 tags: ["deadlock", "performance"]

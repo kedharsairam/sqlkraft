@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_updatestats'
-title: 'sp_updatestats'
-category: 'general'
-description: 'Azure SQL Database SQL database in Microsoft Fabric against all user-defined and internal tables in the current database. For more information about UPDATE STATISTICS . For more information about statistics, see Transact-SQL syntax conventions UPDATE STATISTICS isn''t specified, updates statistics by using the default sampling. The with a default value of , by specifying the keyword, on all user- d'
+name: "sys.sp_updatestats"
+title: "sp_updatestats"
+category: "general"
+description: "Azure SQL Database SQL database in Microsoft Fabric against all user-defined and internal tables in the current database. For more information about UPDATE STATISTICS . For more information about statistics, see Transact-SQL syntax conventions UPDATE STATISTICS isn't specified, updates statistics by using the default sampling. The with a default value of , by specifying the keyword, on all user- d"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

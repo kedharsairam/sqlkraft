@@ -1,7 +1,7 @@
 ---
-title: 'Configure the hash index bucket count'
-topic: 'index-architecture'
-description: 'The interplay of the hash index and the buckets is summarized in the following image.'
+title: "Configure the hash index bucket count"
+topic: "index-architecture"
+description: "The interplay of the hash index and the buckets is summarized in the following image."
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -10,8 +10,8 @@ The interplay of the hash index and the buckets is summarized in the following i
 
 The hash index bucket count is specified at index create time, and can be changed using the
 
-
 ## syntax.
+
 In most cases, the bucket count should be between 1 and 2 times the number of distinct values
 
 in the index key. You might not always be able to predict how many values a particular index

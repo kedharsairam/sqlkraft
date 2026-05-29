@@ -3,23 +3,23 @@ title: "Export and import a BACPAC from Windows"
 topic: "linux-operations"
 description: |
   07/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article shows how to use
-  
+
   SQL Server Management Studio
-  
+
   (SSMS) and
-  
+
   SqlPackage
-  
+
   to
-  
+
   export and import a database on SQL Server on Linux. SSMS and Sql
 tags:
   - "linux-operations"

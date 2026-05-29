@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_query_store_clear_message_queues'
-title: 'sp_query_store_clear_message_queues'
-category: 'general'
-description: 'Clears all queued (non-persisted) Query Store messages pending for the replica against which Query Store for secondary replicas is supported starting in SQL Server 2025 (17.x) and later versions, and in Azure SQL Database. For complete platform support, see Transact-SQL syntax conventions Requires the ALTER permission on the database. The following example clears all queued (non-persisted) Query S'
+name: "sys.sp_query_store_clear_message_queues"
+title: "sp_query_store_clear_message_queues"
+category: "general"
+description: "Clears all queued (non-persisted) Query Store messages pending for the replica against which Query Store for secondary replicas is supported starting in SQL Server 2025 (17.x) and later versions, and in Azure SQL Database. For complete platform support, see Transact-SQL syntax conventions Requires the ALTER permission on the database. The following example clears all queued (non-persisted) Query S"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_query_store_clear_message_queues'
+syntax: "sp_query_store_clear_message_queues"
 ---
 
 ## Description

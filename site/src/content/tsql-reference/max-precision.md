@@ -1,8 +1,8 @@
 ---
-name: '@@MAX_PRECISION'
-title: '@@MAX_PRECISION'
-category: 'variables'
-description: ''
+name: "@@MAX_PRECISION"
+title: "@@MAX_PRECISION"
+category: "variables"
+description: ""
 tags: ["tsql", "variables"]
 pubDate: 2026-05-29
 ---

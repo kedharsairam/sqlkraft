@@ -3,23 +3,23 @@ title: "Verify a dacpac file"
 topic: "ssms"
 description: |
   Article
-  
+
   •
-  
+
   03/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The process of converting an
-  
+
   existing SQL project to an SDK-style pr
 tags:
   - "ssms"

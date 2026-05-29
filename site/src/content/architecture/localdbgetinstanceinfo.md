@@ -3,13 +3,13 @@ title: "LocalDBGetInstanceInfo"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Returns information for the specified SQL Server Express LocalDB instance, such as whether it
-  
+
   exists, the LocalDB version it uses, whether it's running, and so on
 tags:
   - "clr-integration"

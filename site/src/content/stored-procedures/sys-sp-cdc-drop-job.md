@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_cdc_drop_job'
-title: 'sys.sp_cdc_drop_job'
-category: 'general'
-description: 'Removes a change data capture cleanup or capture job for the current database from Transact-SQL syntax conventions'
+name: "sys.sp_cdc_drop_job"
+title: "sys.sp_cdc_drop_job"
+category: "general"
+description: "Removes a change data capture cleanup or capture job for the current database from Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

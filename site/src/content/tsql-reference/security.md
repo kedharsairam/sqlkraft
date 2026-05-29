@@ -1,8 +1,8 @@
 ---
-name: 'Security'
-title: 'Security'
-category: 'statements'
-description: ''
+name: "Security"
+title: "Security"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

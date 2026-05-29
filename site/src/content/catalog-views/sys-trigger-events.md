@@ -1,8 +1,8 @@
 ---
-name: 'sys.trigger_events'
-title: 'sys.trigger_events'
-category: 'compatibility'
-description: 'SQL database in Microsoft Fabric Contains a row per event for which a trigger fires. Trigger is marked to be the first to fire for this event. Trigger is marked to be the last to fire for this event. Event group on which the trigger is created, or null if not created on an event group. Description of the event group on which the trigger is created, or null if not created on an event group. The vis'
+name: "sys.trigger_events"
+title: "sys.trigger_events"
+category: "compatibility"
+description: "SQL database in Microsoft Fabric Contains a row per event for which a trigger fires. Trigger is marked to be the first to fire for this event. Trigger is marked to be the last to fire for this event. Event group on which the trigger is created, or null if not created on an event group. Description of the event group on which the trigger is created, or null if not created on an event group. The vis"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

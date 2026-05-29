@@ -1,8 +1,8 @@
 ---
-name: 'SIGN'
-title: 'SIGN'
-category: 'statements'
-description: '#### Specified expression'
+name: "SIGN"
+title: "SIGN"
+category: "statements"
+description: "#### Specified expression"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

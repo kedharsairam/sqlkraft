@@ -3,27 +3,27 @@ title: "OLEDB Event Category"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event category contains general OLEDB events.
-  
+
   Description
-  
+
   OLEDB Call Event Class
-  
+
   Indicates that
 tags:
   - "event-classes"

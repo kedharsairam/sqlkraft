@@ -3,17 +3,17 @@ title: "Configure read-only access replica"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   09/04/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   By default both read-write and read-intent access are allowed to the primary replica and no
-  
+
   connections are allowed to secondary replicas of an Always
 tags:
   - "high-availability"

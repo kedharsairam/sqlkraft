@@ -1,7 +1,7 @@
 ---
-name: 'To Get Alert if Job Owner is not SA'
-title: 'To Get Alert if Job Owner is not SA'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To Get Alert if Job Owner is not SA"
+title: "To Get Alert if Job Owner is not SA"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["agent-job", "automation"]
 pubDate: 2025-03-15
@@ -25,7 +25,7 @@ IF EXISTS (SELECT 1 FROM @NonSaJobs)
 BEGIN
     DECLARE @JobList NVARCHAR(MAX) = '';
 
-    SELECT @JobList = @JobList + 
+    SELECT @JobList = @JobList +
                       '<tr><td>' + JobName + '</td><td>' + JobOwner + '</td></tr>'
     FROM @NonSaJobs;
 

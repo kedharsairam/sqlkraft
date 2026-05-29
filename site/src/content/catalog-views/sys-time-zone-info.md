@@ -1,11 +1,11 @@
 ---
-name: 'sys.time_zone_info'
-title: 'sys.time_zone_info'
-category: 'compatibility'
-description: 'SQL Server 2016 (13.x) and later versions SQL analytics endpoint in Microsoft returns information about supported time zones. Name of the time zone in Windows standard format. For example, Current offset to UTC. For example, True if currently observing daylight saving time. All time zones installed on the computer are stored in the following registry hive: permissions can access this system catalo'
+name: "sys.time_zone_info"
+title: "sys.time_zone_info"
+category: "compatibility"
+description: "SQL Server 2016 (13.x) and later versions SQL analytics endpoint in Microsoft returns information about supported time zones. Name of the time zone in Windows standard format. For example, Current offset to UTC. For example, True if currently observing daylight saving time. All time zones installed on the computer are stored in the following registry hive: permissions can access this system catalo"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'Cen. Australia Standard Time'
+syntax: "Cen. Australia Standard Time"
 ---
 
 ## Description

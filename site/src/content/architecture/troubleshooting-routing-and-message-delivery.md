@@ -3,17 +3,17 @@ title: "Troubleshooting Routing and Message Delivery"
 topic: "service-broker"
 description: |
   09/15/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This section provides suggestions to correct common problems related to routing and
-  
+
   message delivery.
-  
+
   If messages aren't successfully
 tags:
   - "service-broker"

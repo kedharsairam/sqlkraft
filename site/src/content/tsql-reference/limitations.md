@@ -1,8 +1,8 @@
 ---
-name: 'Limitations'
-title: 'Limitations'
-category: 'statements'
-description: 'To drop a database published for transactional replication, or published or subscribed to merge'
+name: "Limitations"
+title: "Limitations"
+category: "statements"
+description: "To drop a database published for transactional replication, or published or subscribed to merge"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

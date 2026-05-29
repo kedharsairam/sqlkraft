@@ -3,17 +3,17 @@ title: "EventLog Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The EventLogevent class indicates that events have been logged in the Microsoft Windows
-  
+
   even
 tags:
   - "event-classes"

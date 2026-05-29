@@ -3,17 +3,17 @@ title: "SP:StmtCompleted Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The SP:StmtCompleted event class indicates that a Transact-SQL statement within a stored
-  
+
   pro
 tags:
   - "event-classes"

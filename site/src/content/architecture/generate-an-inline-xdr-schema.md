@@ -3,19 +3,19 @@ title: "Generate an Inline XDR Schema"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   directive in FOR XML returns an inline XDR schema together with the query
-  
+
   result. Howev
 tags:
   - "xml-data"

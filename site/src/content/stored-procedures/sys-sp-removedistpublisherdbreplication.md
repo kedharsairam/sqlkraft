@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_removedistpublisherdbreplication'
-title: 'sp_removedistpublisherdbreplication'
-category: 'general'
-description: 'Azure SQL Managed Instance Removes publishing metadata belonging to a specific publication at the Distributor. This stored procedure is executed at the Distributor on the distribution database. Transact-SQL syntax conventions The name of the Publisher server. , with no default. The name of the publication database. , with no default. is used by transactional and snapshot replication.'
+name: "sys.sp_removedistpublisherdbreplication"
+title: "sp_removedistpublisherdbreplication"
+category: "general"
+description: "Azure SQL Managed Instance Removes publishing metadata belonging to a specific publication at the Distributor. This stored procedure is executed at the Distributor on the distribution database. Transact-SQL syntax conventions The name of the Publisher server. , with no default. The name of the publication database. , with no default. is used by transactional and snapshot replication."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_removedistpublisherdbreplication'
+syntax: "sp_removedistpublisherdbreplication"
 ---
 
 ## Description

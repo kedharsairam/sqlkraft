@@ -1,8 +1,8 @@
 ---
-name: 'Enhanced representation formats'
-title: 'Enhanced representation formats'
-category: 'statements'
-description: 'Summarize this article for me'
+name: "Enhanced representation formats"
+title: "Enhanced representation formats"
+category: "statements"
+description: "Summarize this article for me"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -53,30 +53,30 @@ These methods provide alternative formats for representing geometry data, includ
 
 for Z (elevation) and M (measure) values.
 
-
 ## Description
+
 AsBinaryZM (geometry
 
 DataType)
 
-
 ## Returns the OGC Well-Known Binary (WKB) representation augmented with Z
+
 (elevation) and M (measure) values.
 
 AsTextZM (geometry
 
 Data Type)
 
-
 ## Returns the OGC Well-Known Text (WKT) representation augmented with Z
+
 (elevation) and M (measure) values.
 
 AsGml (geometry Data
 
 Type)
 
-
 ## Returns the Geography Markup Language (GML) representation of a
+
 geometry instance.
 
 ﾉ

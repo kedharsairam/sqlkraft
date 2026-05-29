@@ -1,13 +1,14 @@
 ---
-name: 'Validation statements'
-title: 'Validation statements'
-category: 'statements'
-description: '1000 database pages that'
+name: "Validation statements"
+title: "Validation statements"
+category: "statements"
+description: "1000 database pages that"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 ## Description
+
 1000 database pages that
 
 are checked.

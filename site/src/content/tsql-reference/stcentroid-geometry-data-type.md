@@ -1,8 +1,8 @@
 ---
-name: 'STCentroid (geometry Data Type)'
-title: 'STCentroid (geometry Data Type)'
-category: 'data-types'
-description: '### Polygon, CurvePolygon'
+name: "STCentroid (geometry Data Type)"
+title: "STCentroid (geometry Data Type)"
+category: "data-types"
+description: "### Polygon, CurvePolygon"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

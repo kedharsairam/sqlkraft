@@ -1,7 +1,7 @@
 ---
-name: 'To Shrink all Log Files'
-title: 'To Shrink all Log Files'
-description: 'SQL Server diagnostic script for database operations.'
+name: "To Shrink all Log Files"
+title: "To Shrink all Log Files"
+description: "SQL Server diagnostic script for database operations."
 category: database
 tags: ["database"]
 pubDate: 2025-03-15
@@ -19,14 +19,14 @@ DECLARE @ParmDefinition NVARCHAR(1000);
 DECLARE @SizeAfter INT;
 
 DECLARE db_cursor CURSOR FOR
-SELECT 
+SELECT
     F.NAME AS [LOG_NAME],
     DB.NAME AS [DB_NAME],
     DB.RECOVERY_MODEL_DESC AS [RECOVERY_MODEL_DESC]
-FROM 
+FROM
     MASTER.SYS.MASTER_FILES F
     INNER JOIN MASTER.SYS.DATABASES DB ON DB.DATABASE_ID = F.DATABASE_ID
-WHERE 
+WHERE
     F.FILE_ID = 2
     AND DB.NAME <> 'master'
     AND DB.NAME <> 'model'

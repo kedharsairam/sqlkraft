@@ -3,17 +3,17 @@ title: "Set Options"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This topic describes how to modify the properties of an index in SQL Server by using SQL
-  
+
   Ser
 tags:
   - "filestream"

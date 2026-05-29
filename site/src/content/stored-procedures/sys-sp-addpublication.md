@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addpublication'
-title: 'sp_addpublication'
-category: 'general'
-description: 'Creates a snapshot or transactional publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions'
+name: "sys.sp_addpublication"
+title: "sp_addpublication"
+category: "general"
+description: "Creates a snapshot or transactional publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

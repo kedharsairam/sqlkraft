@@ -1,7 +1,7 @@
 ---
-title: 'Lock compatibility'
-topic: 'locking'
-description: ') locks allow multiple threads to bulk load data concurrently into the same table'
+title: "Lock compatibility"
+topic: "locking"
+description: ") locks allow multiple threads to bulk load data concurrently into the same table"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -206,8 +206,8 @@ until the row-level lock is removed.
 
 
 
-
 ## Description
+
 No conflict
 
 Illegal

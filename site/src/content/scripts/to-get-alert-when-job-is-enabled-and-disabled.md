@@ -1,7 +1,7 @@
 ---
-name: 'To Get Alert When Job is Enabled and Disabled'
-title: 'To Get Alert When Job is Enabled and Disabled'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To Get Alert When Job is Enabled and Disabled"
+title: "To Get Alert When Job is Enabled and Disabled"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["agent-job", "automation"]
 pubDate: 2025-03-15
@@ -17,10 +17,10 @@ CREATE TRIGGER [dbo].[JobStatusAlert]
 AS
 BEGIN
     SET NOCOUNT ON;
-    
+
     -- Check if job is enabled/disabled
     DECLARE @MailBody VARCHAR(300)
-    
+
     -- Check if job status is changed (enabled/disabled)
     IF (SELECT TOP 1 CASE WHEN d.enabled = i.enabled THEN 0 ELSE 1 END
         FROM deleted d INNER JOIN inserted i
@@ -45,7 +45,7 @@ BEGIN
         WHERE text LIKE '%exec msdb.dbo.sp_help_job%'
         AND text NOT LIKE '%SELECT c.session_id'
         ORDER BY last_read DESC;
-        
+
         -- Send mail to DBA Team
         EXEC msdb.dbo.sp_send_dbmail
             @recipients='bajeyudu@SQLDBANOW.com', -- Change mail address accordingly

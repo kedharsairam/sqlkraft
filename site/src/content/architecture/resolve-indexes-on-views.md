@@ -1,7 +1,7 @@
 ---
-title: 'Resolve indexes on views'
-topic: 'index-architecture'
-description: 'is defined as shown in the following:'
+title: "Resolve indexes on views"
+topic: "index-architecture"
+description: "is defined as shown in the following:"
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

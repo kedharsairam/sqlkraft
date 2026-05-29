@@ -3,17 +3,17 @@ title: "AUTO Mode Heuristics in Shaping Returned XML"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   AUTO mode determines the shape of returned XML based on the query. In determining how
-  
+
   elemen
 tags:
   - "xml-data"

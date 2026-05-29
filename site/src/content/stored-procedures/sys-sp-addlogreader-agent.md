@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addlogreader_agent'
-title: 'sp_addlogreader_agent'
-category: 'general'
-description: 'Adds a Log Reader agent for a given database. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The login for the Windows account under which the agent runs. . This Windows account is always used for agent connections to the Distributor. On Azure SQL Managed Instance, use a SQL Server account. When configuring a Publisher with a remote '
+name: "sys.sp_addlogreader_agent"
+title: "sp_addlogreader_agent"
+category: "general"
+description: "Adds a Log Reader agent for a given database. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The login for the Windows account under which the agent runs. . This Windows account is always used for agent connections to the Distributor. On Azure SQL Managed Instance, use a SQL Server account. When configuring a Publisher with a remote "
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

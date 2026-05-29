@@ -1,8 +1,8 @@
 ---
-name: 'Syntax for disk-based tables'
-title: 'Syntax for disk-based tables'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Syntax for disk-based tables"
+title: "Syntax for disk-based tables"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -37,12 +37,12 @@ the following links to take you directly to the appropriate syntax block for you
 
 the appropriate syntax examples:
 
-
 ## Syntax
 
 ## Examples
 
 ## Syntax
+
 Altering Memory-Optimized Tables
 
 For more information about the syntax conventions, see

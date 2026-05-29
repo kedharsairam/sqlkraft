@@ -3,25 +3,25 @@ title: "WSFC cluster service is offline"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   11/18/2022
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   : WSFC Cluster State
-  
+
   : WSFC cluster service is offline.
-  
+
   :
-  
+
   : Instance of SQL Server
-  
+
   This policy checks the state of the Windows Serv
 tags:
   - "high-availability"

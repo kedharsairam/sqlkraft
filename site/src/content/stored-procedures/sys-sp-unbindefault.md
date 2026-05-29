@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_unbindefault'
-title: 'sp_unbindefault'
-category: 'general'
-description: 'Azure SQL Managed Instance Removes one or more user-defined defaults from the current database. Transact-SQL syntax conventions : SQL Server ( SQL Server 2016 (13.x) through current version Conditionally drops the default only if it already exists. Is the name of the schema to which the default belongs. Is the name of an existing default. To see a list of defaults that exist, execute must comply w'
+name: "sys.sp_unbindefault"
+title: "sp_unbindefault"
+category: "general"
+description: "Azure SQL Managed Instance Removes one or more user-defined defaults from the current database. Transact-SQL syntax conventions : SQL Server ( SQL Server 2016 (13.x) through current version Conditionally drops the default only if it already exists. Is the name of the schema to which the default belongs. Is the name of an existing default. To see a list of defaults that exist, execute must comply w"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

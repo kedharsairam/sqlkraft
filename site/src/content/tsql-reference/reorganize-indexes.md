@@ -1,8 +1,8 @@
 ---
-name: 'Reorganize indexes'
-title: 'Reorganize indexes'
-category: 'statements'
-description: 'On multiprocessor computers, just like other queries do,'
+name: "Reorganize indexes"
+title: "Reorganize indexes"
+category: "statements"
+description: "On multiprocessor computers, just like other queries do,"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'boundaries'
-title: 'boundaries'
-category: 'statements'
-description: 'difference between the'
+name: "boundaries"
+title: "boundaries"
+category: "statements"
+description: "difference between the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -25,8 +25,8 @@ datepart
 
 For example,
 
-
 ## returns
+
 , hinting that
 
 2036 must be a leap year. This case means that if we start at
@@ -49,8 +49,8 @@ For a return value out of range for
 
 (-2,147,483,648 to +2,147,483,647),
 
-
 ## returns an
+
 error. For
 
 , the maximum difference between
@@ -87,8 +87,8 @@ datepart
 
 ,
 
-
 ## returns
+
 .
 
 uses the time zone offset component of

@@ -3,16 +3,16 @@ title: "Service Broker Communication Protocols"
 topic: "service-broker"
 description: |
   09/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Service Broker uses a broker-specific protocol to communicate with remote brokers. The broker
-  
-  manages connections separately from the 
+
+  manages connections separately from the
 tags:
   - "service-broker"
   - "service-broker-communication-protocols"

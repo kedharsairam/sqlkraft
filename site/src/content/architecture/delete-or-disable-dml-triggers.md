@@ -3,15 +3,15 @@ title: "Delete or Disable DML Triggers"
 topic: "change-data-capture"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This topic describes how to delete or disable a DML trigger in SQL Server by using SQL Server
 tags:
   - "change-data-capture"

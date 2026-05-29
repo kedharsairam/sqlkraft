@@ -3,15 +3,15 @@ title: "Managing Service Broker Applications"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   For a Service Broker application that's in production, most day-to-day management occurs as a
-  
+
   normal part of database maintenance. Thi
 tags:
   - "service-broker"

@@ -3,15 +3,15 @@ title: "New Installation (Service Broker)"
 topic: "service-broker"
 description: |
   09/10/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   To install a Service Broker service, the developer gives the administrator a set of installation
-  
+
   scripts. These scripts typically incl
 tags:
   - "service-broker"

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_change_subscription_properties'
-title: 'sp_change_subscription_properties'
-category: 'general'
-description: 'Updates information for pull subscriptions. This stored procedure is executed at the Subscriber Transact-SQL syntax conventions The name of the Publisher database.'
+name: "sys.sp_change_subscription_properties"
+title: "sp_change_subscription_properties"
+category: "general"
+description: "Updates information for pull subscriptions. This stored procedure is executed at the Subscriber Transact-SQL syntax conventions The name of the Publisher database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

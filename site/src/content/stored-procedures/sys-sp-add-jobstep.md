@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_add_jobstep'
-title: 'sp_add_jobstep'
-category: 'general'
-description: 'Adds a step (operation) to a SQL Server Agent job. Transact-SQL syntax conventions , most, but not all SQL Server Agent job types are'
+name: "sys.sp_add_jobstep"
+title: "sp_add_jobstep"
+category: "general"
+description: "Adds a step (operation) to a SQL Server Agent job. Transact-SQL syntax conventions , most, but not all SQL Server Agent job types are"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

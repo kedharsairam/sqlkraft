@@ -1,11 +1,11 @@
 ---
-name: 'sys.dm_fts_population_ranges'
-title: 'sys.dm_fts_population_ranges'
-category: 'io'
-description: 'SQL database in Microsoft Fabric Returns information about the specific ranges related to a full-text index population currently Address of memory buffers allocated for activity related to this subrange of a full-text index population. Address of memory buffers representing the parent object of all ranges of population related to a full-text index. If the value is 1, this subrange is responsible f'
+name: "sys.dm_fts_population_ranges"
+title: "sys.dm_fts_population_ranges"
+category: "io"
+description: "SQL database in Microsoft Fabric Returns information about the specific ranges related to a full-text index population currently Address of memory buffers allocated for activity related to this subrange of a full-text index population. Address of memory buffers representing the parent object of all ranges of population related to a full-text index. If the value is 1, this subrange is responsible f"
 tags: ["io", "dmv"]
 pubDate: 2026-05-29
-syntax: '##MS_ServerStateReader##'
+syntax: "##MS_ServerStateReader##"
 ---
 
 ## Description

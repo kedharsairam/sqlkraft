@@ -3,21 +3,21 @@ title: "VS2019 SSIS troubleshooting guide"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure Synapse Analytics
-  
+
   Visit the
-  
+
   SQL Server Integration Services (SSIS) Blog
-  
+
   for the latest information, tips, news, and
-  
+
   announcements abo
 tags:
   - "ssb-diagnose"

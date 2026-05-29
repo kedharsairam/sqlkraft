@@ -3,15 +3,15 @@ title: "Using hierarchyid data type"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This tutorial is intended for users who are experienced with Transact-SQL, but are new to the
 tags:
   - "tables"

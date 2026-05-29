@@ -3,21 +3,21 @@ title: "Stored Procedures Event Category"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The
-  
+
   event category contains general stored procedure events.
-  
+
   Description
-  
+
   RPC:Completed Eve
 tags:
   - "event-classes"

@@ -1,7 +1,7 @@
 ---
-name: 'To Perform Page Restore'
-title: 'To Perform Page Restore'
-description: 'to get the info about indexes on a table and so on'
+name: "To Perform Page Restore"
+title: "To Perform Page Restore"
+description: "to get the info about indexes on a table and so on"
 category: backup-restore
 tags: ["backup-restore", "restore"]
 pubDate: 2025-03-15

@@ -3,17 +3,17 @@ title: "How to: Allow Service Broker Network Access by Using Windows Authenticat
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   To allow another instance to send messages using Windows Authentication for transport
-  
+
   security, you create a user in the
-  
+
   database for
 tags:
   - "service-broker"

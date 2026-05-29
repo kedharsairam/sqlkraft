@@ -1,7 +1,7 @@
 ---
-title: 'Monitor lock escalation'
-topic: 'locking'
-description: 'This query acquires and holds an'
+title: "Monitor lock escalation"
+topic: "locking"
+description: "This query acquires and holds an"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

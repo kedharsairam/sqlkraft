@@ -58387,11 +58387,7 @@
     "name": "ASYNC_IO_COMPLETION",
     "title": "Async I/O Completion Wait",
     "category": "io",
-    "tags": [
-      "io",
-      "async",
-      "checkpoint"
-    ],
+    "tags": ["io", "async", "checkpoint"],
     "description": "Occurs when a task waits for asynchronous I/O operations to complete. Covers a broad range of I/O operations including checkpoint writes, lazy writer,",
     "collection": "wait-statistics"
   },
@@ -58400,11 +58396,7 @@
     "name": "ASYNC_NETWORK_IO",
     "title": "Async Network I/O Wait",
     "category": "latency",
-    "tags": [
-      "network",
-      "client",
-      "result-set"
-    ],
+    "tags": ["network", "client", "result-set"],
     "description": "Occurs when the task is waiting for the network to send data to the client. High values often indicate the client application is not consuming results",
     "collection": "wait-statistics"
   },
@@ -58413,11 +58405,7 @@
     "name": "BACKUPIO",
     "title": "Backup I/O Wait",
     "category": "io",
-    "tags": [
-      "io",
-      "backup",
-      "compression"
-    ],
+    "tags": ["io", "backup", "compression"],
     "description": "Occurs when a backup task waits for I/O on the backup device. High values indicate slow backup target (tape, network share, slow disk) or compression ",
     "collection": "wait-statistics"
   },
@@ -58426,11 +58414,7 @@
     "name": "BROKER_RECEIVE_WAIT",
     "title": "Broker Receive Wait",
     "category": "baseline",
-    "tags": [
-      "service-broker",
-      "receive",
-      "message"
-    ],
+    "tags": ["service-broker", "receive", "message"],
     "description": "Occurs when a Service Broker conversation endpoint waits for messages to arrive. Normal part of Service Broker asynchronous messaging.",
     "collection": "wait-statistics"
   },
@@ -58439,11 +58423,7 @@
     "name": "BROKER_TRANSMITTER",
     "title": "Broker Transmitter Wait",
     "category": "baseline",
-    "tags": [
-      "service-broker",
-      "transmit",
-      "network"
-    ],
+    "tags": ["service-broker", "transmit", "network"],
     "description": "Occurs when the Service Broker transmitter is waiting to send messages across the network. Normal at low levels; high values indicate network issues b",
     "collection": "wait-statistics"
   },
@@ -58452,12 +58432,7 @@
     "name": "CMEMTHREAD",
     "title": "Class CMEMTHREAD Wait",
     "category": "memory",
-    "tags": [
-      "memory",
-      "thread",
-      "allocation",
-      "compile"
-    ],
+    "tags": ["memory", "thread", "allocation", "compile"],
     "description": "Occurs when waiting on a thread-safe memory allocation object. High values indicate memory object contention, often from frequent ad-hoc query compila",
     "collection": "wait-statistics"
   },
@@ -58466,11 +58441,7 @@
     "name": "CXCONSUMER",
     "title": "Class CXCONSUMER Wait",
     "category": "top-consumer",
-    "tags": [
-      "parallelism",
-      "cpu",
-      "consumer"
-    ],
+    "tags": ["parallelism", "cpu", "consumer"],
     "description": "Occurs when a parallel thread consumer waits for a producer thread to send rows. Related to CXPACKET but from the consumer side — indicates producer-c",
     "collection": "wait-statistics"
   },
@@ -58479,11 +58450,7 @@
     "name": "CXPACKET",
     "title": "Class CXPACKET Wait",
     "category": "top-consumer",
-    "tags": [
-      "parallelism",
-      "cpu",
-      "skew"
-    ],
+    "tags": ["parallelism", "cpu", "skew"],
     "description": "Occurs when waiting for parallel query execution to complete. Caused by skewed parallelism, exchange buffers filling up, or uneven row distribution ac",
     "collection": "wait-statistics"
   },
@@ -58492,11 +58459,7 @@
     "name": "DTC_ABORT_REQUEST",
     "title": "DTC Abort Request Wait",
     "category": "blocking",
-    "tags": [
-      "dtc",
-      "abort",
-      "distributed"
-    ],
+    "tags": ["dtc", "abort", "distributed"],
     "description": "Occurs when waiting for a DTC abort operation. Indicates distributed transactions that are failing to abort cleanly, often leading to lingering transa",
     "collection": "wait-statistics"
   },
@@ -58505,11 +58468,7 @@
     "name": "DTCWAIT",
     "title": "DTC Wait",
     "category": "blocking",
-    "tags": [
-      "dtc",
-      "distributed",
-      "transaction"
-    ],
+    "tags": ["dtc", "distributed", "transaction"],
     "description": "Occurs when waiting for a Distributed Transaction Coordinator (DTC) operation. High values indicate distributed transaction latency or cross-database ",
     "collection": "wait-statistics"
   },
@@ -58518,10 +58477,7 @@
     "name": "EXECSYNC",
     "title": "Class EXECSYNC Wait",
     "category": "baseline",
-    "tags": [
-      "parallelism",
-      "synchronization"
-    ],
+    "tags": ["parallelism", "synchronization"],
     "description": "Occurs during parallel query synchronization phases such as exchange iterator completion and batching. Normal part of parallel execution and rarely ac",
     "collection": "wait-statistics"
   },
@@ -58530,11 +58486,7 @@
     "name": "FCB_REPLICA",
     "title": "FCB Replica Wait",
     "category": "baseline",
-    "tags": [
-      "fcb",
-      "replica",
-      "startup"
-    ],
+    "tags": ["fcb", "replica", "startup"],
     "description": "Occurs when waiting for a File Control Block replica operation — part of the database startup and recovery process. Rarely performance-relevant.",
     "collection": "wait-statistics"
   },
@@ -58543,11 +58495,7 @@
     "name": "HADR_AG_MUTEX",
     "title": "HADR AG Mutex Wait",
     "category": "latency",
-    "tags": [
-      "ag",
-      "mutex",
-      "failover"
-    ],
+    "tags": ["ag", "mutex", "failover"],
     "description": "Occurs when waiting to access availability group internal state. Indicates AG metadata contention, often during failover or replica state transitions.",
     "collection": "wait-statistics"
   },
@@ -58556,11 +58504,7 @@
     "name": "HADR_DB_OP_START",
     "title": "HADR DB OP Start Wait",
     "category": "latency",
-    "tags": [
-      "ag",
-      "database",
-      "operation"
-    ],
+    "tags": ["ag", "database", "operation"],
     "description": "Occurs when waiting for a database-level operation to start in the availability group context. Typically seen during database joins or role transition",
     "collection": "wait-statistics"
   },
@@ -58569,12 +58513,7 @@
     "name": "HADR_SYNC_COMMIT",
     "title": "HADR Sync Commit Wait",
     "category": "latency",
-    "tags": [
-      "ag",
-      "synchronous",
-      "commit",
-      "latency"
-    ],
+    "tags": ["ag", "synchronous", "commit", "latency"],
     "description": "Occurs on the primary replica when waiting for a secondary replica to acknowledge a transaction commit. High values indicate network latency between A",
     "collection": "wait-statistics"
   },
@@ -58583,11 +58522,7 @@
     "name": "HADR_TRANSPORT_SESSION",
     "title": "HADR Transport Session Wait",
     "category": "latency",
-    "tags": [
-      "ag",
-      "transport",
-      "network"
-    ],
+    "tags": ["ag", "transport", "network"],
     "description": "Occurs when waiting for the AG transport session to become available. Indicates network connectivity issues or AG communication bottlenecks between re",
     "collection": "wait-statistics"
   },
@@ -58596,11 +58531,7 @@
     "name": "HADR_WORK_QUEUE",
     "title": "HADR Work Queue Wait",
     "category": "latency",
-    "tags": [
-      "ag",
-      "work-queue",
-      "redo"
-    ],
+    "tags": ["ag", "work-queue", "redo"],
     "description": "Occurs when AG work items are queued waiting for worker threads. Indicates the AG worker pool is saturated — often during large redo operations or fai",
     "collection": "wait-statistics"
   },
@@ -58609,12 +58540,7 @@
     "name": "INSTANCE_LOG_RATE_GOVERNOR",
     "title": "Instance Log Rate Governor Wait",
     "category": "triage",
-    "tags": [
-      "log",
-      "governor",
-      "throttle",
-      "azure"
-    ],
+    "tags": ["log", "governor", "throttle", "azure"],
     "description": "Occurs when the instance-level log rate governor throttles log generation. Azure SQL DB only. Indicates the log generation rate exceeds the service ti",
     "collection": "wait-statistics"
   },
@@ -58623,11 +58549,7 @@
     "name": "IO_COMPLETION",
     "title": "I/O Completion Wait",
     "category": "io",
-    "tags": [
-      "io",
-      "sync",
-      "backup"
-    ],
+    "tags": ["io", "sync", "backup"],
     "description": "Occurs when waiting for synchronous I/O operations to finish. Often related to network I/O, backup/restore, or bulk insert operations.",
     "collection": "wait-statistics"
   },
@@ -58636,11 +58558,7 @@
     "name": "LATCH_EX",
     "title": "Exclusive Latch Wait",
     "category": "memory",
-    "tags": [
-      "latch",
-      "memory",
-      "contention"
-    ],
+    "tags": ["latch", "memory", "contention"],
     "description": "Occurs when waiting for an exclusive latch on an in-memory structure. Unlike PAGEIOLATCH, this is pure memory contention — no disk I/O involved. Typic",
     "collection": "wait-statistics"
   },
@@ -58649,11 +58567,7 @@
     "name": "LATCH_SH",
     "title": "Shared Latch Wait",
     "category": "memory",
-    "tags": [
-      "latch",
-      "shared",
-      "memory"
-    ],
+    "tags": ["latch", "shared", "memory"],
     "description": "Occurs when waiting for a shared latch on an in-memory structure. Normal at low levels; high values indicate contention on frequently accessed interna",
     "collection": "wait-statistics"
   },
@@ -58662,10 +58576,7 @@
     "name": "LCK_M_IS",
     "title": "Intent Shared Lock Wait",
     "category": "blocking",
-    "tags": [
-      "lock",
-      "intent-shared"
-    ],
+    "tags": ["lock", "intent-shared"],
     "description": "Occurs when waiting for an intent shared (IS) lock. Typical in hierarchy locking scenarios where a table-level IS lock is blocked by an existing X or ",
     "collection": "wait-statistics"
   },
@@ -58674,10 +58585,7 @@
     "name": "LCK_M_IU",
     "title": "Intent Update Lock Wait",
     "category": "blocking",
-    "tags": [
-      "lock",
-      "intent-update"
-    ],
+    "tags": ["lock", "intent-update"],
     "description": "Occurs when waiting for an intent update (IU) lock. Common during index operations where the intent update at the table level is blocked by concurrent",
     "collection": "wait-statistics"
   },
@@ -58686,11 +58594,7 @@
     "name": "LCK_M_IX",
     "title": "Intent Exclusive Lock Wait",
     "category": "blocking",
-    "tags": [
-      "lock",
-      "intent-exclusive",
-      "dml"
-    ],
+    "tags": ["lock", "intent-exclusive", "dml"],
     "description": "Occurs when waiting for an intent exclusive (IX) lock. Frequently observed during DML operations (INSERT/UPDATE/DELETE) on pages blocked by other tran",
     "collection": "wait-statistics"
   },
@@ -58699,11 +58603,7 @@
     "name": "LCK_M_S",
     "title": "Shared Lock Wait",
     "category": "blocking",
-    "tags": [
-      "lock",
-      "shared",
-      "read-blocked"
-    ],
+    "tags": ["lock", "shared", "read-blocked"],
     "description": "Occurs when a task waits to acquire a shared (S) lock on a resource. Typical of read operations blocked by write operations. High duration indicates b",
     "collection": "wait-statistics"
   },
@@ -58712,11 +58612,7 @@
     "name": "LCK_M_SCH_M",
     "title": "Schema Modification Lock Wait",
     "category": "blocking",
-    "tags": [
-      "lock",
-      "schema-modification",
-      "ddl"
-    ],
+    "tags": ["lock", "schema-modification", "ddl"],
     "description": "Occurs when waiting for a schema modification (Sch-M) lock. Blocks nearly everything. Typically from DDL operations (ALTER TABLE, CREATE INDEX) runnin",
     "collection": "wait-statistics"
   },
@@ -58725,11 +58621,7 @@
     "name": "LCK_M_SCH_S",
     "title": "Schema Stability Lock Wait",
     "category": "blocking",
-    "tags": [
-      "lock",
-      "schema",
-      "compile"
-    ],
+    "tags": ["lock", "schema", "compile"],
     "description": "Occurs when waiting for a schema stability (Sch-S) lock. Normally very short; used when compiling queries to ensure the schema doesn't change during c",
     "collection": "wait-statistics"
   },
@@ -58738,10 +58630,7 @@
     "name": "LCK_M_U",
     "title": "Update Lock Wait",
     "category": "blocking",
-    "tags": [
-      "lock",
-      "update"
-    ],
+    "tags": ["lock", "update"],
     "description": "Occurs when a task waits to acquire an update (U) lock. Update locks are used during the initial phase of a modification to prevent concurrent modific",
     "collection": "wait-statistics"
   },
@@ -58750,11 +58639,7 @@
     "name": "LCK_M_X",
     "title": "Exclusive Lock Wait",
     "category": "blocking",
-    "tags": [
-      "lock",
-      "exclusive",
-      "write-write"
-    ],
+    "tags": ["lock", "exclusive", "write-write"],
     "description": "Occurs when a task waits to acquire an exclusive (X) lock. High durations indicate write-write contention, often from long-running DDL or DML in seria",
     "collection": "wait-statistics"
   },
@@ -58763,11 +58648,7 @@
     "name": "LOGMGR_FLUSH",
     "title": "Log Manager Flush Wait",
     "category": "io",
-    "tags": [
-      "io",
-      "log",
-      "flush"
-    ],
+    "tags": ["io", "log", "flush"],
     "description": "Occurs when the log manager is flushing dirty pages to make log buffer space available. Related to WRITELOG but at the internal log manager level.",
     "collection": "wait-statistics"
   },
@@ -58776,12 +58657,7 @@
     "name": "LOGMGR_LOGFILE",
     "title": "Log Manager Log File Wait",
     "category": "io",
-    "tags": [
-      "io",
-      "log",
-      "vlf",
-      "backup"
-    ],
+    "tags": ["io", "log", "vlf", "backup"],
     "description": "Occurs when waiting for log file space — either waiting for log growth to complete or waiting for VLFs to be truncated. High values indicate oversized",
     "collection": "wait-statistics"
   },
@@ -58790,11 +58666,7 @@
     "name": "MEMORY_ALLOCATION_EXT",
     "title": "Memory Allocation EXT Wait",
     "category": "memory",
-    "tags": [
-      "memory",
-      "allocation",
-      "os"
-    ],
+    "tags": ["memory", "allocation", "os"],
     "description": "Occurs when allocating memory from the extended memory manager. Can indicate large page allocations or memory pressure at the OS level.",
     "collection": "wait-statistics"
   },
@@ -58803,11 +58675,7 @@
     "name": "OLEDB",
     "title": "OLE DB Wait",
     "category": "latency",
-    "tags": [
-      "network",
-      "linked-server",
-      "remote"
-    ],
+    "tags": ["network", "linked-server", "remote"],
     "description": "Occurs when SQL Server is waiting on OLE DB calls to a linked server or remote data source. High values indicate slow remote queries, network latency ",
     "collection": "wait-statistics"
   },
@@ -58816,12 +58684,7 @@
     "name": "PAGEIOLATCH_EX",
     "title": "Page I/O Latch (Exclusive) Wait",
     "category": "io",
-    "tags": [
-      "io",
-      "buffer-pool",
-      "disk-write",
-      "page"
-    ],
+    "tags": ["io", "buffer-pool", "disk-write", "page"],
     "description": "Occurs when a task waits for a data page to be written from the buffer pool to disk (exclusive latch). High durations indicate write latency on the st",
     "collection": "wait-statistics"
   },
@@ -58830,12 +58693,7 @@
     "name": "PAGEIOLATCH_SH",
     "title": "Page I/O Latch (Shared) Wait",
     "category": "io",
-    "tags": [
-      "io",
-      "buffer-pool",
-      "disk-read",
-      "page"
-    ],
+    "tags": ["io", "buffer-pool", "disk-read", "page"],
     "description": "Occurs when a task waits for a data page to be read from disk into the buffer pool (shared latch). High durations indicate disk I/O subsystem latency ",
     "collection": "wait-statistics"
   },
@@ -58844,12 +58702,7 @@
     "name": "PAGEIOLATCH_UP",
     "title": "Page I/O Latch (Update) Wait",
     "category": "io",
-    "tags": [
-      "io",
-      "buffer-pool",
-      "update",
-      "page"
-    ],
+    "tags": ["io", "buffer-pool", "update", "page"],
     "description": "Occurs when a task waits for a data page I/O operation with an update latch. Less common than SH/EX variants; indicates pages being read for update op",
     "collection": "wait-statistics"
   },
@@ -58858,12 +58711,7 @@
     "name": "PAGELATCH_EX",
     "title": "Page Latch (Exclusive) Wait",
     "category": "memory",
-    "tags": [
-      "latch",
-      "page",
-      "contention",
-      "allocation"
-    ],
+    "tags": ["latch", "page", "contention", "allocation"],
     "description": "Occurs when waiting for an exclusive latch on a buffer pool page already in memory — no I/O is involved. Classic symptom of page-level contention, oft",
     "collection": "wait-statistics"
   },
@@ -58872,11 +58720,7 @@
     "name": "PAGELATCH_SH",
     "title": "Page Latch (Shared) Wait",
     "category": "memory",
-    "tags": [
-      "latch",
-      "page",
-      "shared"
-    ],
+    "tags": ["latch", "page", "shared"],
     "description": "Occurs when waiting for a shared latch on a buffer pool page already in memory. Usually transient; high values indicate contention on frequently read ",
     "collection": "wait-statistics"
   },
@@ -58885,12 +58729,7 @@
     "name": "PAGELATCH_UP",
     "title": "Page Latch (Update) Wait",
     "category": "blocking",
-    "tags": [
-      "latch",
-      "page",
-      "update",
-      "last-page"
-    ],
+    "tags": ["latch", "page", "update", "last-page"],
     "description": "Occurs when waiting for an update latch on a buffer pool page in memory. The classic 'last-page insert contention' signal on index leaf pages — common",
     "collection": "wait-statistics"
   },
@@ -58899,11 +58738,7 @@
     "name": "PREEMPTIVE_OS_GETPROCADDRESS",
     "title": "Preemptive OS GetProcAddress Wait",
     "category": "baseline",
-    "tags": [
-      "os",
-      "preemptive",
-      "api"
-    ],
+    "tags": ["os", "preemptive", "api"],
     "description": "Occurs during preemptive OS operations where SQL Server calls Windows API GetProcAddress to resolve DLL function addresses. Typically a startup or con",
     "collection": "wait-statistics"
   },
@@ -58912,12 +58747,7 @@
     "name": "PREEMPTIVE_OS_WRITEFILE",
     "title": "Preemptive OS WriteFile Wait",
     "category": "io",
-    "tags": [
-      "os",
-      "preemptive",
-      "write",
-      "filestream"
-    ],
+    "tags": ["os", "preemptive", "write", "filestream"],
     "description": "Occurs during preemptive OS write operations. Related to FileStream/FileTable operations or custom assembly I/O using Win32 WriteFile API.",
     "collection": "wait-statistics"
   },
@@ -58926,12 +58756,7 @@
     "name": "RESOURCE_SEMAPHORE",
     "title": "Resource Semaphore Wait",
     "category": "triage",
-    "tags": [
-      "memory",
-      "grant",
-      "query-memory",
-      "pressure"
-    ],
+    "tags": ["memory", "grant", "query-memory", "pressure"],
     "description": "Occurs when a query cannot start execution because it is waiting for memory grant. High values indicate the server is out of query memory — queries ar",
     "collection": "wait-statistics"
   },
@@ -58940,11 +58765,7 @@
     "name": "RESOURCE_SEMAPHORE_QUERY_COMPILE",
     "title": "Query Compile Resource Semaphore Wait",
     "category": "triage",
-    "tags": [
-      "memory",
-      "compile",
-      "plan-cache"
-    ],
+    "tags": ["memory", "compile", "plan-cache"],
     "description": "Occurs when waiting for memory to compile queries. High values indicate the compile memory lock is contended, often from a high rate of ad-hoc query c",
     "collection": "wait-statistics"
   },
@@ -58953,11 +58774,7 @@
     "name": "SLEEP_TASK",
     "title": "Sleep Task Wait",
     "category": "baseline",
-    "tags": [
-      "sleep",
-      "idle",
-      "waitfor"
-    ],
+    "tags": ["sleep", "idle", "waitfor"],
     "description": "Occurs when a task voluntarily sleeps while waiting for an event such as WAITFOR, query timeout, or connection sleep. High counts are normal — this is",
     "collection": "wait-statistics"
   },
@@ -58966,11 +58783,7 @@
     "name": "SOS_SCHEDULER_YIELD",
     "title": "Class SOS_SCHEDULER_YIELD Wait",
     "category": "scheduling",
-    "tags": [
-      "scheduler",
-      "cpu",
-      "yield"
-    ],
+    "tags": ["scheduler", "cpu", "yield"],
     "description": "Occurs when a task voluntarily yields the scheduler for other tasks to execute. High counts indicate CPU pressure or inefficient query plans that refu",
     "collection": "wait-statistics"
   },
@@ -58979,11 +58792,7 @@
     "name": "SQLTRACE_WAIT_ENTRIES",
     "title": "SQL Trace Wait Entries",
     "category": "baseline",
-    "tags": [
-      "trace",
-      "xevent",
-      "profiler"
-    ],
+    "tags": ["trace", "xevent", "profiler"],
     "description": "Occurs when waiting for SQL Trace buffer flushes. Extended Events is the modern replacement. High values indicate trace bottlenecks that may be mitiga",
     "collection": "wait-statistics"
   },
@@ -58992,11 +58801,7 @@
     "name": "THREADPOOL",
     "title": "Class THREADPOOL Wait",
     "category": "triage",
-    "tags": [
-      "threads",
-      "worker",
-      "pool-exhaustion"
-    ],
+    "tags": ["threads", "worker", "pool-exhaustion"],
     "description": "Occurs when a task is waiting for an available worker thread. Indicates all worker threads are busy — typically from blocker chains, excessive paralle",
     "collection": "wait-statistics"
   },
@@ -59005,11 +58810,7 @@
     "name": "TRACEWRITE",
     "title": "Trace Write Wait",
     "category": "baseline",
-    "tags": [
-      "trace",
-      "write",
-      "profiler"
-    ],
+    "tags": ["trace", "write", "profiler"],
     "description": "Occurs when the SQL Trace writer thread waits for the trace buffer to flush. Similar to SQLTRACE_WAIT_ENTRIES — consider migrating to Extended Events.",
     "collection": "wait-statistics"
   },
@@ -59018,12 +58819,7 @@
     "name": "WRITELOG",
     "title": "Write Log Wait",
     "category": "io",
-    "tags": [
-      "io",
-      "log",
-      "transaction",
-      "flush"
-    ],
+    "tags": ["io", "log", "transaction", "flush"],
     "description": "Occurs when waiting for the transaction log to be flushed to disk. One of the most important I/O signals. High WRITELOG indicates log drive latency, e",
     "collection": "wait-statistics"
   }

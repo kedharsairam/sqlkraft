@@ -3,11 +3,11 @@ title: "Walkthrough: Extend Database Project Build to Generate Model Statistics"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   You can create a build contributor to perform custom actions when you build a database
-  
+
   project. In this walkthrough, you create a build contributor named ModelStatistics that outputs
-  
+
   sta
 tags:
   - "ssb-diagnose"

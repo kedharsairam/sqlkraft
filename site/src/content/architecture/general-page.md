@@ -3,17 +3,17 @@ title: "General page"
 topic: "collation"
 description: |
   10/21/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Use this page to view or modify properties for the selected database.
-  
+
   Displays the date that the database was last backed up.
-  
+
   Display
 tags:
   - "collation"

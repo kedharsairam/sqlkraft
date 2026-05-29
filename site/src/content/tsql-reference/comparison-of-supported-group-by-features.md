@@ -1,8 +1,8 @@
 ---
-name: 'Comparison of supported GROUP BY features'
-title: 'Comparison of supported GROUP BY features'
-category: 'queries'
-description: ', the maximum number of'
+name: "Comparison of supported GROUP BY features"
+title: "Comparison of supported GROUP BY features"
+category: "queries"
+description: ", the maximum number of"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
@@ -27,13 +27,13 @@ clause has more than 4,096 groups.
 
 The following example generates 4,097 (2
 
-+ 1) grouping sets and then fails.
+- 1. grouping sets and then fails.
 
 SQL
 
 The following example generates 4,097 (2
 
-+ 1) groups and then fails. Both
+- 1. groups and then fails. Both
 
 and
 

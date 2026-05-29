@@ -1,8 +1,8 @@
 ---
-name: 'Complex PIVOT example'
-title: 'Complex PIVOT example'
-category: 'queries'
-description: 'The following code displays the same result, pivoted so that the'
+name: "Complex PIVOT example"
+title: "Complex PIVOT example"
+category: "queries"
+description: "The following code displays the same result, pivoted so that the"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

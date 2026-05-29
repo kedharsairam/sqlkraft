@@ -1,7 +1,7 @@
 ---
-title: 'Control transactions'
-topic: 'io-fundamentals'
-description: 'that leave the data in a consistent state relative to the organization''s business rules. The'
+title: "Control transactions"
+topic: "io-fundamentals"
+description: "that leave the data in a consistent state relative to the organization's business rules. The"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

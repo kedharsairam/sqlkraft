@@ -3,13 +3,13 @@ title: "Enable Microsoft Entra manually for containers"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This tutorial walks you through manually enabling Microsoft Entra ID authentication for SQL
-  
+
   Server running in containers. Because Azure Arc doesn't currently suppor
 tags:
   - "linux-operations"

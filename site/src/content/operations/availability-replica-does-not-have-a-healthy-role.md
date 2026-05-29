@@ -3,23 +3,23 @@ title: "Availability replica does not have a healthy role"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   : Availability Replica Role State
-  
+
   : Availability replica does not have a healthy role.
-  
+
   :
-  
+
   : Availability replica
-  
+
   This policy checks the state of the
 tags:
   - "high-availability"

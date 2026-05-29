@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_prepexec'
-title: 'sp_prepexec'
-category: 'general'
-description: 'Prepares and executes a parameterized Transact-SQL statement. Transact-SQL syntax conventions is a required parameter with an Identifies parameterized statements. The definition of variables is substituted for parameter markers in the statement. is a required parameter that calls for an value if the statement isn''t parameterized. Arguments for extended stored procedures must be entered in the spec'
+name: "sys.sp_prepexec"
+title: "sp_prepexec"
+category: "general"
+description: "Prepares and executes a parameterized Transact-SQL statement. Transact-SQL syntax conventions is a required parameter with an Identifies parameterized statements. The definition of variables is substituted for parameter markers in the statement. is a required parameter that calls for an value if the statement isn't parameterized. Arguments for extended stored procedures must be entered in the spec"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

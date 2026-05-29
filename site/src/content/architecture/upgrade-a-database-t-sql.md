@@ -3,18 +3,18 @@ title: "Upgrade a Database (T-SQL)"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to use detach and attach operations to upgrade a database in SQL
-  
-  Server. After being attached to SQL Server, the database is 
+
+  Server. After being attached to SQL Server, the database is
 tags:
   - "collation"
   - "upgrade-a-database-t-sql"

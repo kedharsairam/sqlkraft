@@ -3,23 +3,23 @@ title: "From MySQL"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   01/15/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   In this guide, you learn how to migrate your MySQL databases to SQL Server.
-  
+
   For other migration guides, see
-  
+
   Azure Database Migration Guides
-  
+
   .
-  
+
   Befor
 tags:
   - "migration"

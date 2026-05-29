@@ -3,15 +3,15 @@ title: "LocalDBGetInstances"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Returns all SQL Server Express LocalDB instances with the given version.
-  
+
   C++
-  
+
   [Output] When this function returns, contains the names of both named and default Lo
 tags:
   - "clr-integration"

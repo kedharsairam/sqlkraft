@@ -3,32 +3,32 @@ title: "LOCALDB_ERROR_UNKNOWN_LANGUAGE_ID"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Product
-  
+
   Name
-  
+
   SQL Server
-  
+
   Event ID
-  
+
   270
-  
+
   Event Source
-  
+
   SQL Server Local Database Runtime 12.0
-  
+
   Component
-  
+
   Local Database Runtime API
-  
+
   Message Text
-  
-  Error getting 
+
+  Error getting
 tags:
   - "clr-integration"
   - "localdb-error-unknown-language-id"

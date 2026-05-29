@@ -3,17 +3,17 @@ title: "Configure Quorum NodeWeight Settings"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to configure NodeWeight settings for a member node in a Windows
-  
+
   Server Failover Clustering (WSFC) cluster. NodeWeight setting
 tags:
   - "high-availability"

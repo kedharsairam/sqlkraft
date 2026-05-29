@@ -3,25 +3,25 @@ title: "Broker Event Category"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event category contains general Service Broker events.
-  
+
   Description
-  
+
   Broker:Activation Event Class
-  
+
   An event generated
 tags:
   - "event-classes"

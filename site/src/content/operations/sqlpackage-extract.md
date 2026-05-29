@@ -3,15 +3,15 @@ title: "SqlPackage Extract"
 topic: "sqlpackage"
 description: |
   SqlPackage Extract parameters and properties
-  
+
   Article
-  
+
   •
-  
+
   04/15/2025
-  
+
   The SqlPackage Extract action creates a schema of a connected database in a DACPAC file (.dacpac). By default, data isn't
-  
+
   include
 tags:
   - "sqlpackage"

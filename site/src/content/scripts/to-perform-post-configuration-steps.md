@@ -1,7 +1,7 @@
 ---
-name: 'To Perform Post Configuration Steps'
-title: 'To Perform Post Configuration Steps'
-description: 'Configure min and max memory'
+name: "To Perform Post Configuration Steps"
+title: "To Perform Post Configuration Steps"
+description: "Configure min and max memory"
 category: installation
 tags: ["installation"]
 pubDate: 2025-03-15
@@ -11,7 +11,7 @@ pubDate: 2025-03-15
 --------------------------------------------------
 -- Configure min and max memory
 --------------------------------------------------
-EXEC sys.sp_configure N'show advanced options', N'1'  
+EXEC sys.sp_configure N'show advanced options', N'1'
 RECONFIGURE WITH OVERRIDE
 GO
 DECLARE @ServerMemory int = (SELECT (total_physical_memory_kb/1024) AS total_physical_memory_mb FROM sys.dm_os_sys_memory)
@@ -22,7 +22,7 @@ EXEC sys.sp_configure N'min server memory (MB)', @setminMemory
 GO
 RECONFIGURE WITH OVERRIDE
 GO
-EXEC sys.sp_configure N'show advanced options', N'0'  
+EXEC sys.sp_configure N'show advanced options', N'0'
 RECONFIGURE WITH OVERRIDE
 GO
 PRINT 'Max Memory Changed Successfully';
@@ -41,10 +41,10 @@ EXEC(@sql);
 --------------------------------------------------
 -- Enable backup compression at server level
 --------------------------------------------------
-IF EXISTS(SELECT * FROM sys.configurations WHERE name = 'backup compression default' AND value = 0)   
+IF EXISTS(SELECT * FROM sys.configurations WHERE name = 'backup compression default' AND value = 0)
 BEGIN
-    EXEC sp_configure 'backup compression default', 1;  
-    RECONFIGURE;  
+    EXEC sp_configure 'backup compression default', 1;
+    RECONFIGURE;
 END
 
 --------------------------------------------------
@@ -84,16 +84,16 @@ GRANT EXECUTE TO db_executor
 --------------------------------------------------
 USE [msdb]
 GO
-EXEC msdb.dbo.sp_add_operator @name=N'Maintenance_SQLOperator', 
-    @enabled=1, 
-    @weekday_pager_start_time=90000, 
-    @weekday_pager_end_time=180000, 
-    @saturday_pager_start_time=90000, 
-    @saturday_pager_end_time=180000, 
-    @sunday_pager_start_time=90000, 
-    @sunday_pager_end_time=180000, 
-    @pager_days=0, 
-    @email_address=N'{{email}}', 
+EXEC msdb.dbo.sp_add_operator @name=N'Maintenance_SQLOperator',
+    @enabled=1,
+    @weekday_pager_start_time=90000,
+    @weekday_pager_end_time=180000,
+    @saturday_pager_start_time=90000,
+    @saturday_pager_end_time=180000,
+    @sunday_pager_start_time=90000,
+    @sunday_pager_end_time=180000,
+    @pager_days=0,
+    @email_address=N'{{email}}',
     @category_name=N'[Uncategorized]'
 GO
 
@@ -110,7 +110,7 @@ GO
 --------------------------------------------------
 USE [master]
 GO
-EXEC sp_configure 'show advanced option', '1';  
+EXEC sp_configure 'show advanced option', '1';
 RECONFIGURE WITH OVERRIDE
 EXEC sp_configure N'cost threshold for parallelism', N'50'
 GO
@@ -135,7 +135,7 @@ USE [msdb]
 GO
 EXECUTE msdb.dbo.sysmail_add_profile_sp
     @profile_name = 'Automated database mail',
-    @description = 'Profile used for administrative mail.' ;       
+    @description = 'Profile used for administrative mail.' ;
 EXECUTE msdb.dbo.sysmail_add_account_sp
     @account_name = 'SQL Server production mail',
     @description = 'Mail account for administrative mail.',
@@ -193,34 +193,34 @@ BEGIN
     IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 END
 DECLARE @jobId BINARY(16)
-EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'Blocked_Process_Report_Response', 
-    @enabled=1, 
-    @notify_level_eventlog=0, 
-    @notify_level_email=0, 
-    @notify_level_netsend=0, 
-    @notify_level_page=0, 
-    @delete_level=0, 
-    @description=N'No description available.', 
-    @category_name=N'[Misc]', 
+EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'Blocked_Process_Report_Response',
+    @enabled=1,
+    @notify_level_eventlog=0,
+    @notify_level_email=0,
+    @notify_level_netsend=0,
+    @notify_level_page=0,
+    @delete_level=0,
+    @description=N'No description available.',
+    @category_name=N'[Misc]',
     @owner_login_name=N'sa', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Send Error Text', 
-    @step_id=1, 
-    @cmdexec_success_code=0, 
-    @on_success_action=1, 
-    @on_success_step_id=0, 
-    @on_fail_action=2, 
-    @on_fail_step_id=0, 
-    @retry_attempts=0, 
-    @retry_interval=0, 
-    @os_run_priority=0, @subsystem=N'TSQL', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Send Error Text',
+    @step_id=1,
+    @cmdexec_success_code=0,
+    @on_success_action=1,
+    @on_success_step_id=0,
+    @on_fail_action=2,
+    @on_fail_step_id=0,
+    @retry_attempts=0,
+    @retry_interval=0,
+    @os_run_priority=0, @subsystem=N'TSQL',
     @command=N'EXEC msdb.dbo.sp_send_dbmail
     @profile_name = ''Automated database mail'',
     @recipients = ''{{email}}'',
     @body = N''$(ESCAPE_SQUOTE(WMI(TextData)))'' ,
     @subject =  ''Blocked Process Report from $(ESCAPE_SQUOTE(WMI(ServerName)))'';
-', 
-    @database_name=N'master', 
+',
+    @database_name=N'master',
     @flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 EXEC @ReturnCode = msdb.dbo.sp_update_job @job_id = @jobId, @start_step_id = 1
@@ -243,12 +243,12 @@ IF(CAST(SERVERPROPERTY('InstanceName') as nvarchar(100)) <> 'MSSQLSERVER')
 BEGIN
     SET @WMI_NAMESPACE_PATH = REPLACE(@WMI_NAMESPACE_PATH, 'MSSQLSERVER', CAST(SERVERPROPERTY('InstanceName') as nvarchar(100)))
 END
-EXEC msdb.dbo.sp_add_alert @name=N'Blocked_Process_Report', 
-    @enabled=1, 
-    @delay_between_responses=600, 
-    @include_event_description_in=1, 
+EXEC msdb.dbo.sp_add_alert @name=N'Blocked_Process_Report',
+    @enabled=1,
+    @delay_between_responses=600,
+    @include_event_description_in=1,
     @wmi_namespace=@WMI_NAMESPACE_PATH,
-    @wmi_query=N'SELECT * FROM BLOCKED_PROCESS_REPORT', 
+    @wmi_query=N'SELECT * FROM BLOCKED_PROCESS_REPORT',
     @job_id=@Response_Job_ID
 GO
 
@@ -268,35 +268,35 @@ EXEC @ReturnCode = msdb.dbo.sp_add_category @class=N'JOB', @type=N'LOCAL', @name
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 END
 DECLARE @jobId BINARY(16)
-EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'Monitor_AUTO_GROW_Events_Response', 
-		@enabled=1, 
-		@notify_level_eventlog=0, 
-		@notify_level_email=0, 
-		@notify_level_netsend=0, 
-		@notify_level_page=0, 
-		@delete_level=0, 
-		@description=N'No description available.', 
-		@category_name=N'[Misc]', 
+EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'Monitor_AUTO_GROW_Events_Response',
+		@enabled=1,
+		@notify_level_eventlog=0,
+		@notify_level_email=0,
+		@notify_level_netsend=0,
+		@notify_level_page=0,
+		@delete_level=0,
+		@description=N'No description available.',
+		@category_name=N'[Misc]',
 		@owner_login_name=N'sa', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Notify]    Script Date: 11/11/2010 11:33:38 ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Notify', 
-		@step_id=1, 
-		@cmdexec_success_code=0, 
-		@on_success_action=1, 
-		@on_success_step_id=0, 
-		@on_fail_action=2, 
-		@on_fail_step_id=0, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'TSQL', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Notify',
+		@step_id=1,
+		@cmdexec_success_code=0,
+		@on_success_action=1,
+		@on_success_step_id=0,
+		@on_fail_action=2,
+		@on_fail_step_id=0,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'TSQL',
 		@command=N'EXEC msdb.dbo.sp_send_dbmail
     @profile_name = ''Automated database mail'',
     @recipients = ''{{email}}'',
     @body = N''The file $(ESCAPE_SQUOTE(WMI(FileName))) in database $(ESCAPE_SQUOTE(WMI(DatabaseName))) auto grew.'' ,
     @subject =  N''Auto grow event occured on $(ESCAPE_SQUOTE(WMI(ComputerName)))\$(ESCAPE_SQUOTE(WMI(SQLInstance)))'';
-', 
-		@database_name=N'master', 
+',
+		@database_name=N'master',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 EXEC @ReturnCode = msdb.dbo.sp_update_job @job_id = @jobId, @start_step_id = 1
@@ -320,15 +320,15 @@ IF(CAST(SERVERPROPERTY('InstanceName') as nvarchar(100)) <> 'MSSQLSERVER')
 BEGIN
 	SET @WMI_NAMESPACE_PATH = REPLACE(@WMI_NAMESPACE_PATH, 'MSSQLSERVER', CAST(SERVERPROPERTY('InstanceName') as nvarchar(100)))
 END
-EXEC msdb.dbo.sp_add_alert @name=N'Monitor_AUTO_GROW_Events', 
-		@message_id=0, 
-		@severity=0, 
-		@enabled=1, 
-		@delay_between_responses=0, 
-		@include_event_description_in=0, 
-		@category_name=N'[Uncategorized]', 
-		@wmi_namespace=@WMI_NAMESPACE_PATH, 
-		@wmi_query=N'SELECT * FROM DATA_FILE_AUTO_GROW', 
+EXEC msdb.dbo.sp_add_alert @name=N'Monitor_AUTO_GROW_Events',
+		@message_id=0,
+		@severity=0,
+		@enabled=1,
+		@delay_between_responses=0,
+		@include_event_description_in=0,
+		@category_name=N'[Uncategorized]',
+		@wmi_namespace=@WMI_NAMESPACE_PATH,
+		@wmi_query=N'SELECT * FROM DATA_FILE_AUTO_GROW',
 		@job_id=@Response_Job_ID
 GO
 
@@ -340,8 +340,8 @@ GO
 SET NOCOUNT ON
 GO
 PRINT '-- Instance name: '+ @@servername + ' ;
-/* Version: ' + @@version + ' */' 
--- Variables 
+/* Version: ' + @@version + ' */'
+-- Variables
 DECLARE @BITS Bigint                      -- Affinty Mask
 ,@NUMPROCS Smallint                       -- Number of cores addressed by instance
 ,@tempdb_files_count Int                  -- Number of exisiting datafiles
@@ -350,8 +350,8 @@ DECLARE @BITS Bigint                      -- Affinty Mask
 ,@SQL Nvarchar(max)
 ,@new_tempdbdev_size_MB Int               -- Size of the new files,in Megabytes
 ,@new_tempdbdev_Growth_MB Int             -- New files growth rate,in Megabytes
-,@new_files_Location Nvarchar(4000)       -- New files path 
--- Initialize variables 
+,@new_files_Location Nvarchar(4000)       -- New files path
+-- Initialize variables
 Select  @X = 1, @BITS = 1
 SELECT
 @new_tempdbdev_size_MB = 4096              -- Four Gbytes , it's easy to increase that after file creation but harder to shrink.
@@ -367,7 +367,7 @@ INSERT #SVer EXEC master.dbo.xp_msver processorCount
 SELECT @NUMPROCS=  Internal_Value FROM #SVer
 Print '-- TOTAL numbers of CPU cores on server :' + cast(@NUMPROCS as varchar(5))
 SET @NUMPROCS  = 0
--- Get number of Cores addressed by instance. 
+-- Get number of Cores addressed by instance.
 WHILE @X <= (SELECT Internal_Value FROM #SVer ) AND @x <=32
 BEGIN
     SELECT @NUMPROCS =
@@ -400,11 +400,11 @@ SELECT @NUMPROCS = @NUMPROCS /2
 -- IF cores > 32 then files should be 1/4 of cores number
 If @NUMPROCS >32
 SELECT @NUMPROCS = @NUMPROCS /4
--- Get number of exisiting TEMPDB datafiles and the location of the primary datafile. 
+-- Get number of exisiting TEMPDB datafiles and the location of the primary datafile.
 SELECT @tempdb_files_count=COUNT(*) ,@tempdbdev_location=(SELECT REVERSE(SUBSTRING(REVERSE(physical_name), CHARINDEX('\',REVERSE(physical_name)) , LEN(physical_name) )) FROM tempdb.sys.database_files  WHERE name = 'tempdev')
 FROM tempdb.sys.database_files
-WHERE type_desc= 'Rows' AND state_desc= 'Online' 
-Print '-- Current Number of Tempdb datafiles :' + cast(@tempdb_files_count as varchar(5)) 
+WHERE type_desc= 'Rows' AND state_desc= 'Online'
+Print '-- Current Number of Tempdb datafiles :' + cast(@tempdb_files_count as varchar(5))
 -- Determine if we already have enough datafiles
 If @tempdb_files_count >= @NUMPROCS
 Begin
@@ -468,35 +468,35 @@ EXEC @ReturnCode = msdb.dbo.sp_add_category @class=N'JOB', @type=N'LOCAL', @name
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 END
 DECLARE @jobId BINARY(16)
-EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'Capture_Deadlock_Response', 
-		@enabled=1, 
-		@notify_level_eventlog=0, 
-		@notify_level_email=0, 
-		@notify_level_netsend=0, 
-		@notify_level_page=0, 
-		@delete_level=0, 
-		@description=N'No description available.', 
-		@category_name=N'[Misc]', 
+EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'Capture_Deadlock_Response',
+		@enabled=1,
+		@notify_level_eventlog=0,
+		@notify_level_email=0,
+		@notify_level_netsend=0,
+		@notify_level_page=0,
+		@delete_level=0,
+		@description=N'No description available.',
+		@category_name=N'[Misc]',
 		@owner_login_name=N'sa', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 /****** Object:  Step [Send Error Text]    Script Date: 09/03/2010 09:34:00 ******/
-EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Send Deadlock graph', 
-		@step_id=1, 
-		@cmdexec_success_code=0, 
-		@on_success_action=1, 
-		@on_success_step_id=0, 
-		@on_fail_action=2, 
-		@on_fail_step_id=0, 
-		@retry_attempts=0, 
-		@retry_interval=0, 
-		@os_run_priority=0, @subsystem=N'TSQL', 
+EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Send Deadlock graph',
+		@step_id=1,
+		@cmdexec_success_code=0,
+		@on_success_action=1,
+		@on_success_step_id=0,
+		@on_fail_action=2,
+		@on_fail_step_id=0,
+		@retry_attempts=0,
+		@retry_interval=0,
+		@os_run_priority=0, @subsystem=N'TSQL',
 		@command=N'EXEC msdb.dbo.sp_send_dbmail
     @profile_name = ''Automated database mail'',
     @recipients = ''{{email}}'',
     @body = N''$(ESCAPE_SQUOTE(WMI(TextData)))'' ,
     @subject =  ''Deadlock graph from $(ESCAPE_SQUOTE(WMI(ServerName)))'';
-', 
-		@database_name=N'master', 
+',
+		@database_name=N'master',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 EXEC @ReturnCode = msdb.dbo.sp_update_job @job_id = @jobId, @start_step_id = 1
@@ -519,12 +519,12 @@ IF(CAST(SERVERPROPERTY('InstanceName') as nvarchar(100)) <> 'MSSQLSERVER')
 BEGIN
 	SET @WMI_NAMESPACE_PATH = REPLACE(@WMI_NAMESPACE_PATH, 'MSSQLSERVER', CAST(SERVERPROPERTY('InstanceName') as nvarchar(100)))
 END
-EXEC msdb.dbo.sp_add_alert @name=N'Capture_Deadlock', 
-		@enabled=1, 
-		@delay_between_responses=600, 
-		@include_event_description_in=1, 
+EXEC msdb.dbo.sp_add_alert @name=N'Capture_Deadlock',
+		@enabled=1,
+		@delay_between_responses=600,
+		@include_event_description_in=1,
 		@wmi_namespace=@WMI_NAMESPACE_PATH,
-		@wmi_query=N'SELECT * FROM DEADLOCK_GRAPH', 
+		@wmi_query=N'SELECT * FROM DEADLOCK_GRAPH',
 		@job_id=@Response_Job_ID
 GO
 
@@ -533,7 +533,7 @@ GO
 --------------------------------------------------
 
 --------------------------------------------------
---EnableContainedDatabases: 
+--EnableContainedDatabases:
 --------------------------------------------------
 USE master;
 GO
@@ -547,19 +547,19 @@ GO
 --------------------------------------------------
 USE [msdb]
 GO
-EXEC msdb.dbo.sp_add_alert @name=N'Error_825_Alert', 
-		@message_id=825, 
-		@severity=0, 
-		@enabled=1, 
-		@delay_between_responses=0, 
-		@include_event_description_in=1, 
+EXEC msdb.dbo.sp_add_alert @name=N'Error_825_Alert',
+		@message_id=825,
+		@severity=0,
+		@enabled=1,
+		@delay_between_responses=0,
+		@include_event_description_in=1,
 		@job_id=N'00000000-0000-0000-0000-000000000000'
 GO
 EXEC msdb.dbo.sp_add_notification @alert_name=N'Error_825_Alert', @operator_name=N'Maintenance_SQLOperator', @notification_method = 1
 GO
 
 --------------------------------------------------
---Locked pages in memory: 
+--Locked pages in memory:
 --------------------------------------------------
 USE master;
 GO

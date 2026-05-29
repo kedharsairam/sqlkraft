@@ -3,17 +3,17 @@ title: "Deploy"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Deployment is the process by which you distribute a finished application or module to be
-  
+
   installed and run on another computer. Using Visual Studio, y
 tags:
   - "clr-integration"

@@ -3,18 +3,17 @@ title: "Delete a data-tier application"
 topic: "ssms"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   You can delete a registered data-tier application by using the Delete Data-tier Application
-  
-  
+
 tags:
   - "ssms"
   - "delete-a-data-tier-application"

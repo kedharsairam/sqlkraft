@@ -3,10 +3,10 @@ title: "Schema compare"
 topic: "profiler"
 description: |
   This article provides an overview of the Schema Compare feature for the MSSQL extension in
-  
+
   Visual Studio Code. Schema Compare compares two database definitions, and applies the
-  
-  differences from the 
+
+  differences from the
 tags:
   - "profiler"
   - "schema-compare"

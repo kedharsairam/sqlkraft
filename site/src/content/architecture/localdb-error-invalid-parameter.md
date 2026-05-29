@@ -3,32 +3,32 @@ title: "LOCALDB_ERROR_INVALID_PARAMETER"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Product
-  
+
   Name
-  
+
   SQL Server
-  
+
   Event ID
-  
+
   257
-  
+
   Event Source
-  
+
   SQL Server Local Database Runtime 12.0
-  
+
   Component
-  
+
   Local Database Runtime API
-  
+
   Message Text
-  
-  The parameter 
+
+  The parameter
 tags:
   - "clr-integration"
   - "localdb-error-invalid-parameter"

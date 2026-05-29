@@ -3,17 +3,17 @@ title: "Optimize with in-memory OLTP"
 topic: "json-data"
 description: |
   Applies to:
-  
+
   SQL Server 2017 (14.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   SQL Server and Azure SQL Database let you work with text form
 tags:
   - "json-data"

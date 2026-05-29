@@ -1,7 +1,7 @@
 ---
-name: 'To Fix Fragmentation in Indexing'
-title: 'To Fix Fragmentation in Indexing'
-description: 'use the following rules only with small tables'
+name: "To Fix Fragmentation in Indexing"
+title: "To Fix Fragmentation in Indexing"
+description: "use the following rules only with small tables"
 category: index-maintenance
 tags: ["index-maintenance", "indexing"]
 pubDate: 2025-03-15
@@ -22,11 +22,11 @@ pubDate: 2025-03-15
 	--to allocate more worker threads to rebuilding, use "maxdop = no.ofworkerthreads"
 ALTER INDEX [indexname]
 ON [tablename] REBUILD
-WITH (ONLINE = ON, 
-			FILLFACTOR = 70, 
-			pad_index = on, 
-			sort_in_tempdb = on, 
-			resumable = on, 
+WITH (ONLINE = ON,
+			FILLFACTOR = 70,
+			pad_index = on,
+			sort_in_tempdb = on,
+			resumable = on,
 			maxdop = 12);
 GO
 

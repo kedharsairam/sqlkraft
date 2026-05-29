@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_changesubscriber_schedule'
-title: 'sp_changesubscriber_schedule'
-category: 'general'
-description: 'Changes the Distribution Agent or Merge Agent schedule for a subscriber. This stored procedure is executed at the Publisher on any database. Transact-SQL syntax conventions , with no default. The name of the Subscriber must be unique in the database, must not already exist, and can''t be'
+name: "sys.sp_changesubscriber_schedule"
+title: "sp_changesubscriber_schedule"
+category: "general"
+description: "Changes the Distribution Agent or Merge Agent schedule for a subscriber. This stored procedure is executed at the Publisher on any database. Transact-SQL syntax conventions , with no default. The name of the Subscriber must be unique in the database, must not already exist, and can't be"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

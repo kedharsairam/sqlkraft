@@ -3,17 +3,17 @@ title: "Start data movement"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic contains information about how to start data synchronization after you add a
-  
+
   database to an Always On availability group. For each new prim
 tags:
   - "high-availability"

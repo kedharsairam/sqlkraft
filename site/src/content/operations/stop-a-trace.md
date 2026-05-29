@@ -3,15 +3,15 @@ title: "Stop a Trace"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to stop a trace that is running by using SQL Server Profiler.
-  
+
   Stopping a trace stops data from being captur
 tags:
   - "profiler"

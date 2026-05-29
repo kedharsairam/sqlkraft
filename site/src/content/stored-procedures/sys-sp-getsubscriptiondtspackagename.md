@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_getsubscriptiondtspackagename'
-title: 'sp_getsubscriptiondtspackagename'
-category: 'general'
-description: 'Returns the name of the Data Transformation Services (DTS) package used to transform data before they are sent to a Subscriber. This stored procedure is executed at the Publisher on any Transact-SQL syntax conventions'
+name: "sys.sp_getsubscriptiondtspackagename"
+title: "sp_getsubscriptiondtspackagename"
+category: "general"
+description: "Returns the name of the Data Transformation Services (DTS) package used to transform data before they are sent to a Subscriber. This stored procedure is executed at the Publisher on any Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -3,18 +3,17 @@ title: "Author custom code analysis rules"
 topic: "ssms"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This walkthrough demonstrates the steps used to create a SQL Server code analysis rule. The
-  
-  
+
 tags:
   - "ssms"
   - "author-custom-code-analysis-rules"

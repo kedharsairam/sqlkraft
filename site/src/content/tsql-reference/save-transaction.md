@@ -1,8 +1,8 @@
 ---
-name: 'SAVE TRANSACTION'
-title: 'SAVE TRANSACTION'
-category: 'transactions'
-description: ''
+name: "SAVE TRANSACTION"
+title: "SAVE TRANSACTION"
+category: "transactions"
+description: ""
 tags: ["tsql", "transactions"]
 pubDate: 2026-05-29
 ---

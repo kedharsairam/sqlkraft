@@ -3,18 +3,18 @@ title: "Log Shipping"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   11/18/2022
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   A given database can be mirrored or log shipped; it can also be simultaneously mirrored and
-  
-  log shipped. To choose what approach to use, consider the 
+
+  log shipped. To choose what approach to use, consider the
 tags:
   - "high-availability"
   - "log-shipping"

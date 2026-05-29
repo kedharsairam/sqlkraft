@@ -1,8 +1,8 @@
 ---
-name: 'sys.xml_schema_wildcards'
-title: 'sys.xml_schema_wildcards'
-category: 'xml'
-description: 'Returns a row per XML schema component that is an Attribute-Wildcard ( Indicates how contents are processed. S = Strict validation (must validate) L = Lax validation (validate if possible) Description of how contents are processed: sys.xml_schema_wildcard_namespaces 1 = Namespaces are the only ones disallowed. The visibility of the metadata in catalog views is limited to securables that a user eit'
+name: "sys.xml_schema_wildcards"
+title: "sys.xml_schema_wildcards"
+category: "xml"
+description: "Returns a row per XML schema component that is an Attribute-Wildcard ( Indicates how contents are processed. S = Strict validation (must validate) L = Lax validation (validate if possible) Description of how contents are processed: sys.xml_schema_wildcard_namespaces 1 = Namespaces are the only ones disallowed. The visibility of the metadata in catalog views is limited to securables that a user eit"
 tags: ["xml", "catalog-view"]
 pubDate: 2026-05-29
 ---

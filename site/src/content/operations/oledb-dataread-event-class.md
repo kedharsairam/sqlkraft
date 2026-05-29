@@ -3,21 +3,21 @@ title: "OLEDB DataRead Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The OLEDB DataRead event class occurs when SQL Server calls an OLE DB provider for
-  
+
   distributed queries
 tags:
   - "event-classes"

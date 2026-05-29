@@ -1,20 +1,20 @@
 ---
-name: 'To View Job History'
-title: 'To View Job History'
-description: 'SQL Server diagnostic script for automation operations.'
+name: "To View Job History"
+title: "To View Job History"
+description: "SQL Server diagnostic script for automation operations."
 category: automation
 tags: ["agent-job", "automation"]
 pubDate: 2025-03-15
 ---
 
 ```sql
-SELECT 
+SELECT
     j.name AS 'JobName',
     js.step_name AS 'StepName',
     msdb.dbo.agent_datetime(h.run_date, h.run_time) AS 'RunDateTime',
     h.run_duration,
     ((h.run_duration/10000*3600 + (h.run_duration/100)%100*60 + h.run_duration%100 + 31) / 60) AS 'RunDurationMinutes',
-    CASE 
+    CASE
         WHEN h.run_status = 0 THEN 'Failed'
         WHEN h.run_status = 1 THEN 'Succeeded'
         WHEN h.run_status = 2 THEN 'Retry'

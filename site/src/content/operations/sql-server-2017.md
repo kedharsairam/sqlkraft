@@ -3,14 +3,14 @@ title: "SQL Server 2017"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server 2017 (14.x) on Linux
-  
+
   This article describes the major features and services available for SQL Server 2017 (14.x) running
-  
+
   on Linux.
-  
-  In addition to these capabilities in this 
+
+  In addition to these capabilities in this
 tags:
   - "linux-operations"
   - "sql-server-2017"

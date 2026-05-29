@@ -1,8 +1,8 @@
 ---
-name: 'The model database and creating new databases'
-title: 'The model database and creating new databases'
-category: 'operators'
-description: 'Every database has at least two files, a'
+name: "The model database and creating new databases"
+title: "The model database and creating new databases"
+category: "operators"
+description: "Every database has at least two files, a"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

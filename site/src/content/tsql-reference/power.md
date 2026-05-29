@@ -1,8 +1,8 @@
 ---
-name: 'POWER'
-title: 'POWER'
-category: 'statements'
-description: ''
+name: "POWER"
+title: "POWER"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

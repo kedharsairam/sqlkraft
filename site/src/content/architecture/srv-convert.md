@@ -3,23 +3,23 @@ title: "srv_convert"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Changes data from one data type to another.
-  
+
   ）
-  
+
   Important
-  
+
   This feature will be removed in a future version of SQL Server. Avoid using this feature in
-  
+
 tags:
   - "clr-integration"
   - "srv-convert"

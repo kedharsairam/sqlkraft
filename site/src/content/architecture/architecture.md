@@ -3,19 +3,19 @@ title: "Architecture"
 topic: "sql-graph"
 description: |
   SQL Graph Architecture
-  
+
   Applies to:
-  
+
   SQL Server 2017 (14.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Learn about the architecture of SQL G
 tags:
   - "sql-graph"

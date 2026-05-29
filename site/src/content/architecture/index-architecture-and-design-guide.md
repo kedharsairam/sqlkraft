@@ -1,7 +1,7 @@
 ---
-title: 'Index architecture and design guide'
-topic: 'index-architecture'
-description: 'Azure SQL Managed Instance'
+title: "Index architecture and design guide"
+topic: "index-architecture"
+description: "Azure SQL Managed Instance"
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -3,15 +3,15 @@ title: "Creating Service Broker Message Types"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   A message type defines the name of a specific kind of message and the validation that Service
-  
+
   Broker performs on that kind of message.
 tags:
   - "service-broker"

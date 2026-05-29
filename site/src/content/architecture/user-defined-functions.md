@@ -3,17 +3,17 @@ title: "User-defined functions"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   User-defined functions are routines that can take parameters, perform calculations or other
-  
+
   actions, and return a result. You can write user-defined f
 tags:
   - "clr-integration"

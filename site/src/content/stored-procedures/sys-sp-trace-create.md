@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_trace_create'
-title: 'sp_trace_create'
-category: 'general'
-description: 'Invalid parameters. Returned when the user supplied incompatible parameters. is a SQL Server stored procedure that performs many of the actions previously executed by extended stored procedures available in earlier versions of SQL Server. Use only creates a trace definition. This stored procedure can''t be used to start or change a trace. Parameters of all SQL Trace stored procedures ( ) are strict'
+name: "sys.sp_trace_create"
+title: "sp_trace_create"
+category: "general"
+description: "Invalid parameters. Returned when the user supplied incompatible parameters. is a SQL Server stored procedure that performs many of the actions previously executed by extended stored procedures available in earlier versions of SQL Server. Use only creates a trace definition. This stored procedure can't be used to start or change a trace. Parameters of all SQL Trace stored procedures ( ) are strict"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

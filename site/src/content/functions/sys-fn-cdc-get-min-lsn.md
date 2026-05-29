@@ -1,11 +1,11 @@
 ---
-name: 'sys.fn_cdc_get_min_lsn'
-title: 'sys.fn_cdc_get_min_lsn'
-category: 'change-data-capture'
-description: 'Returns the start_lsn column value for the specified capture instance from the cdc.change_tables system table. This value represents the low endpoint of the validity interval for the capture instance. Transact-SQL syntax conventions capture_instance_name Is the name of the capture instance. capture_instance_name Returns 0x00000000000000000000 when the capture instance does not exist or when the ca'
+name: "sys.fn_cdc_get_min_lsn"
+title: "sys.fn_cdc_get_min_lsn"
+category: "change-data-capture"
+description: "Returns the start_lsn column value for the specified capture instance from the cdc.change_tables system table. This value represents the low endpoint of the validity interval for the capture instance. Transact-SQL syntax conventions capture_instance_name Is the name of the capture instance. capture_instance_name Returns 0x00000000000000000000 when the capture instance does not exist or when the ca"
 tags: ["change-data-capture", "function"]
 pubDate: 2026-05-29
-syntax: 'sys.fn_cdc_get_min_lsn ( ''capture_instance_name'' )'
+syntax: "sys.fn_cdc_get_min_lsn ( 'capture_instance_name' )"
 ---
 
 ## Description

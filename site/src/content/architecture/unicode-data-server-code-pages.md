@@ -3,19 +3,19 @@ title: "Unicode data & server code pages"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   08/29/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The Extended Stored Procedure API is enabled for Unicode data; however, it isn't enabled for
-  
+
   Unicode metadata. The
-  
+
   Unicode directive doesn't have any
 tags:
   - "clr-integration"

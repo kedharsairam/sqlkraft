@@ -1,8 +1,8 @@
 ---
-name: 'Spatial Types - geometry'
-title: 'Spatial Types - geometry'
-category: 'data-types'
-description: ''
+name: "Spatial Types - geometry"
+title: "Spatial Types - geometry"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

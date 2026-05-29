@@ -1,8 +1,8 @@
 ---
-name: 'Compatibility levels and database engine upgrades'
-title: 'Compatibility levels and database engine upgrades'
-category: 'operators'
-description: 'performance differences of your most important queries between two different compatibility'
+name: "Compatibility levels and database engine upgrades"
+title: "Compatibility levels and database engine upgrades"
+category: "operators"
+description: "performance differences of your most important queries between two different compatibility"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

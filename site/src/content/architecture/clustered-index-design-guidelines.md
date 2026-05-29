@@ -1,7 +1,7 @@
 ---
-title: 'Clustered index design guidelines'
-topic: 'index-architecture'
-description: 'If a disk-based rowstore index is created with key columns that match those in the'
+title: "Clustered index design guidelines"
+topic: "index-architecture"
+description: "If a disk-based rowstore index is created with key columns that match those in the"
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -70,8 +70,8 @@ With a few exceptions, every table should have a clustered index. The desirable 
 
 the clustered index are:
 
-
 ## Description
+
 The clustered index key is a part of any nonclustered index on the same base table. A
 
 narrow key, or a key where the total length of key columns is small, reduces the storage,

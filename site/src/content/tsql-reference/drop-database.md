@@ -1,8 +1,8 @@
 ---
-name: 'DROP DATABASE'
-title: 'DROP DATABASE'
-category: 'statements'
-description: ''
+name: "DROP DATABASE"
+title: "DROP DATABASE"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

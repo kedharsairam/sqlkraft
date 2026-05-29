@@ -1,8 +1,8 @@
 ---
-name: 'SYSDATETIME'
-title: 'SYSDATETIME'
-category: 'data-types'
-description: ''
+name: "SYSDATETIME"
+title: "SYSDATETIME"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

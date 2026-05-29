@@ -1,7 +1,7 @@
 ---
-title: 'Disk I/O'
-topic: 'io-fundamentals'
-description: 'SQL Server I/O fundamentals'
+title: "Disk I/O"
+topic: "io-fundamentals"
+description: "SQL Server I/O fundamentals"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
-name: 'To Identify Differential Base LSN'
-title: 'To Identify Differential Base LSN'
-description: 'SQL Server diagnostic script for backup-restore operations.'
+name: "To Identify Differential Base LSN"
+title: "To Identify Differential Base LSN"
+description: "SQL Server diagnostic script for backup-restore operations."
 category: backup-restore
 tags: ["backup-restore"]
 pubDate: 2025-03-15

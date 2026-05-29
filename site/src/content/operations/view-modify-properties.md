@@ -3,19 +3,19 @@ title: "View & Modify properties"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   12/17/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This topic describes how to view and modify Distributor and Publisher properties in SQL Server
-  
+
   by using SQL Server Managem
 tags:
   - "migration"

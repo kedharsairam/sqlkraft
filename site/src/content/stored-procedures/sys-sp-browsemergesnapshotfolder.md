@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_browsemergesnapshotfolder'
-title: 'sp_browsemergesnapshotfolder'
-category: 'general'
-description: 'Returns the complete path for the latest snapshot generated for a merge publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication. , with no default. Full path to the snapshot directory.'
+name: "sys.sp_browsemergesnapshotfolder"
+title: "sp_browsemergesnapshotfolder"
+category: "general"
+description: "Returns the complete path for the latest snapshot generated for a merge publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication. , with no default. Full path to the snapshot directory."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

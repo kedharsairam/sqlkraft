@@ -3,19 +3,19 @@ title: "srv_senddone"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Sends a result completion message to the client.
-  
+
   srvproc
-  
+
   Is a pointer to the SRV_PROC structure that is the handle for a particular client connection
 tags:
   - "clr-integration"

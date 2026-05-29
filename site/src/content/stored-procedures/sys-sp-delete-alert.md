@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_delete_alert'
-title: 'sp_delete_alert'
-category: 'general'
-description: 'Transact-SQL syntax conventions Removing an alert also removes any notifications associated with the alert. permissions on this procedure, but these permissions might be overridden during a SQL Server upgrade.'
+name: "sys.sp_delete_alert"
+title: "sp_delete_alert"
+category: "general"
+description: "Transact-SQL syntax conventions Removing an alert also removes any notifications associated with the alert. permissions on this procedure, but these permissions might be overridden during a SQL Server upgrade."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

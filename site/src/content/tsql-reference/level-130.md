@@ -1,8 +1,8 @@
 ---
-name: 'level 130'
-title: 'level 130'
-category: 'statements'
-description: 'the memory grant size of a cached plan if an'
+name: "level 130"
+title: "level 130"
+category: "statements"
+description: "the memory grant size of a cached plan if an"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

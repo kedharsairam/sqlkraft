@@ -1,8 +1,8 @@
 ---
-name: 'money and smallmoney styles'
-title: 'money and smallmoney styles'
-category: 'data-types'
-description: 'When converting character data to'
+name: "money and smallmoney styles"
+title: "money and smallmoney styles"
+category: "data-types"
+description: "When converting character data to"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

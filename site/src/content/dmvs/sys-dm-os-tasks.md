@@ -1,8 +1,8 @@
 ---
-name: 'sys.dm_os_tasks'
-title: 'sys.dm_os_tasks'
-category: 'os'
-description: 'Analytics Platform System (PDW) Returns one row for each task that is active in the instance of SQL Server. A task is the basic unit of execution in SQL Server. Examples of tasks include a query, a login, a logout, and system tasks like ghost cleanup activity, checkpoint activity, log writer, parallel redo activity. For more information about tasks, see the Thread and Task Architecture Guide State'
+name: "sys.dm_os_tasks"
+title: "sys.dm_os_tasks"
+category: "os"
+description: "Analytics Platform System (PDW) Returns one row for each task that is active in the instance of SQL Server. A task is the basic unit of execution in SQL Server. Examples of tasks include a query, a login, a logout, and system tasks like ghost cleanup activity, checkpoint activity, log writer, parallel redo activity. For more information about tasks, see the Thread and Task Architecture Guide State"
 tags: ["os", "dmv"]
 pubDate: 2026-05-29
 syntax: |

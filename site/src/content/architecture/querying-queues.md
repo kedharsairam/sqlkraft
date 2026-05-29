@@ -3,15 +3,15 @@ title: "Querying Queues"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Sometimes it might be necessary to inspect the content of a queue as a whole. You might want
-  
+
   to know how many messages the queue conta
 tags:
   - "service-broker"

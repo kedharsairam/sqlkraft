@@ -1,7 +1,7 @@
 ---
-name: 'To View list of Logins in Instance'
-title: 'To View list of Logins in Instance'
-description: 'SQL Server diagnostic script for security-audit operations.'
+name: "To View list of Logins in Instance"
+title: "To View list of Logins in Instance"
+description: "SQL Server diagnostic script for security-audit operations."
 category: security-audit
 tags: ["login", "security-audit"]
 pubDate: 2025-03-15

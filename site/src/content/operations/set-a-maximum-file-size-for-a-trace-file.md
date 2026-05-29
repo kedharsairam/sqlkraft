@@ -3,20 +3,20 @@ title: "Set a Maximum File Size for a Trace File"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Use the following procedure to set the maximum file size for a trace file.
-  
+
   1. On the
-  
+
   menu, select
-  
-  , and then connect to an instance 
+
+  , and then connect to an instance
 tags:
   - "profiler"
   - "set-a-maximum-file-size-for-a-trace-file"

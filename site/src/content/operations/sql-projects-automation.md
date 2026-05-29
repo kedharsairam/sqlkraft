@@ -3,17 +3,17 @@ title: "SQL projects automation"
 topic: "ssms"
 description: |
   SQL projects automation
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   This article provides an overview of automation options for SQL projects across different
-  
+
   software de
 tags:
   - "ssms"

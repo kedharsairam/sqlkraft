@@ -3,18 +3,18 @@ title: "Column Sets"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed
-  
+
   Instance
-  
+
   SQL database in Microsoft Fabric
-  
-  Tables that use sparse columns can designate a column set to 
+
+  Tables that use sparse columns can designate a column set to
 tags:
   - "tables"
   - "column-sets"

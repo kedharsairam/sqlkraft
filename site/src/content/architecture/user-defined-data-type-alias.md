@@ -3,17 +3,17 @@ title: "User defined data type alias"
 topic: "collation"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This topic describes how to create a new user-defined data type alias in SQL Server by using
-  
+
 tags:
   - "collation"
   - "user-defined-data-type-alias"

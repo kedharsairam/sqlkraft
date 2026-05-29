@@ -1,7 +1,7 @@
 ---
-title: 'Operating system task scheduling'
-topic: 'thread-task'
-description: 'Azure SQL Managed Instance'
+title: "Operating system task scheduling"
+topic: "thread-task"
+description: "Azure SQL Managed Instance"
 tags: ["thread-task", "architecture"]
 pubDate: 2026-05-29
 ---

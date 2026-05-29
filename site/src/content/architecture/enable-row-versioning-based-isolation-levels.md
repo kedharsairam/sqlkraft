@@ -1,7 +1,7 @@
 ---
-title: 'Enable row versioning-based isolation levels'
-topic: 'io-fundamentals'
-description: 'Database administrators control the database-level settings for row versioning by using the'
+title: "Enable row versioning-based isolation levels"
+topic: "io-fundamentals"
+description: "Database administrators control the database-level settings for row versioning by using the"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

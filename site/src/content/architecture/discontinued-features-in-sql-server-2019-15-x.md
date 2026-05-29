@@ -1,7 +1,7 @@
 ---
-title: 'Discontinued features in SQL Server 2019 (15.x)'
-topic: 'query-processing'
-description: '(Python package in SQL Server Machine Learning Services)'
+title: "Discontinued features in SQL Server 2019 (15.x)"
+topic: "query-processing"
+description: "(Python package in SQL Server Machine Learning Services)"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

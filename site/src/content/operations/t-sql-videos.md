@@ -3,19 +3,19 @@ title: "T-SQL videos"
 topic: "monitor"
 description: |
   Article
-  
+
   •
-  
+
   11/22/2024
-  
+
   This page provides video content for learning about Transact-SQL (T-SQL).
-  
+
   In this
-  
+
   video series
-  
+
   , you learn the basics of Transact-SQL. You see how to add, edit, delete, and
-  
+
 tags:
   - "monitor"
   - "t-sql-videos"

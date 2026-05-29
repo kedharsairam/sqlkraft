@@ -3,15 +3,15 @@ title: "Delete a database"
 topic: "collation"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to delete a user-defined database in SQL Server by using SQL Server
-  
+
   Management Studio or Transact-S
 tags:
   - "collation"

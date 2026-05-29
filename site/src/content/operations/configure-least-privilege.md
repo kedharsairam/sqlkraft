@@ -3,11 +3,11 @@ title: "Configure least privilege"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   The information security principle of least privilege asserts that accounts and applications only
-  
+
   have access to the data and operations they require. With SQL Server enabled
 tags:
   - "azure-synapse"

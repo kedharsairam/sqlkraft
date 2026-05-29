@@ -1,7 +1,7 @@
 ---
-name: 'To View Execution Plan for Specific Session'
-title: 'To View Execution Plan for Specific Session'
-description: 'SQL Server diagnostic script for architecture operations.'
+name: "To View Execution Plan for Specific Session"
+title: "To View Execution Plan for Specific Session"
+description: "SQL Server diagnostic script for architecture operations."
 category: architecture
 tags: ["architecture", "session"]
 pubDate: 2025-03-15

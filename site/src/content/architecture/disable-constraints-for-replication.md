@@ -3,21 +3,21 @@ title: "Disable constraints for replication"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL database in Microsoft Fabric
-  
+
   You
 tags:
   - "tables"

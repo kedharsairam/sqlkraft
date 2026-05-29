@@ -1,8 +1,8 @@
 ---
-name: 'sys.periods'
-title: 'sys.periods'
-category: 'compatibility'
-description: 'SQL Server 2016 (13.x) and later versions Returns a row for each table for which periods have been defined. The numeric value representing the type of period: The text description of the type of column: The id of the table containing the period_type column The id of the column that defines the lower period boundary The id of the column that defines the upper period boundary The visibility of the m'
+name: "sys.periods"
+title: "sys.periods"
+category: "compatibility"
+description: "SQL Server 2016 (13.x) and later versions Returns a row for each table for which periods have been defined. The numeric value representing the type of period: The text description of the type of column: The id of the table containing the period_type column The id of the column that defines the lower period boundary The id of the column that defines the upper period boundary The visibility of the m"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

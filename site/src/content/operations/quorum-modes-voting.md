@@ -3,17 +3,17 @@ title: "Quorum Modes & Voting"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Both SQL Server Always On availability groups and Always On Failover Cluster Instances (FCI)
-  
+
   take advantage of Windows Server Failover Clustering (WSF
 tags:
   - "high-availability"

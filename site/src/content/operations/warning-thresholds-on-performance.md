@@ -3,17 +3,17 @@ title: "Warning thresholds on performance"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   11/25/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic contains information about the SQL Server events for which warning thresholds can
-  
+
   be configured and managed for database mirroring. You can
 tags:
   - "high-availability"

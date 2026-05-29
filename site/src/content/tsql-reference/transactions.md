@@ -1,8 +1,8 @@
 ---
-name: 'Transactions'
-title: 'Transactions'
-category: 'transactions'
-description: ''
+name: "Transactions"
+title: "Transactions"
+category: "transactions"
+description: ""
 tags: ["tsql", "transactions"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
-name: 'To Identify Unused Indexes'
-title: 'To Identify Unused Indexes'
-description: 'Unused Index Script'
+name: "To Identify Unused Indexes"
+title: "To Identify Unused Indexes"
+description: "Unused Index Script"
 category: index-maintenance
 tags: ["index-maintenance", "indexing"]
 pubDate: 2025-03-15
@@ -22,7 +22,7 @@ o.name AS ObjectName
 + ' ON ' + QUOTENAME(s.name) + '.'
 + QUOTENAME(OBJECT_NAME(dm_ius.OBJECT_ID)) AS 'drop statement'
 FROM sys.dm_db_index_usage_stats dm_ius
-INNER JOIN sys.indexes i ON i.index_id = dm_ius.index_id 
+INNER JOIN sys.indexes i ON i.index_id = dm_ius.index_id
 AND dm_ius.OBJECT_ID = i.OBJECT_ID
 INNER JOIN sys.objects o ON dm_ius.OBJECT_ID = o.OBJECT_ID
 INNER JOIN sys.schemas s ON o.schema_id = s.schema_id

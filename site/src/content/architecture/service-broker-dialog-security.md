@@ -3,16 +3,16 @@ title: "Service Broker Dialog Security"
 topic: "service-broker"
 description: |
   09/03/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Dialog security provides encryption, remote authentication, and remote authorization for a
-  
-  specific conversation. When a conversation 
+
+  specific conversation. When a conversation
 tags:
   - "service-broker"
   - "service-broker-dialog-security"

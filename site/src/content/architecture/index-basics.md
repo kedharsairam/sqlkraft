@@ -1,7 +1,7 @@
 ---
-title: 'Index basics'
-topic: 'index-architecture'
-description: 'Think about a regular book: at the end of the book, there''s an index that helps to quickly locate'
+title: "Index basics"
+topic: "index-architecture"
+description: "Think about a regular book: at the end of the book, there's an index that helps to quickly locate"
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

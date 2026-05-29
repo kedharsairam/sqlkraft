@@ -3,17 +3,17 @@ title: "Troubleshoot: Changes on primary not reflected on secondary replica"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The client application completes an update on the primary replica successfully, but querying
-  
+
   the secondary replica shows that the change is not reflec
 tags:
   - "high-availability"

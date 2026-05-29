@@ -3,21 +3,21 @@ title: "Create, Construct, & Query geometry Instances"
 topic: "spatial-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL analytics endpoint in Microsoft Fabric
-  
+
   Warehouse in Microsoft Fabric
-  
+
   SQL
-  
+
   database in Microsoft Fabric
-  
+
   The planar spatia
 tags:
   - "spatial-data"

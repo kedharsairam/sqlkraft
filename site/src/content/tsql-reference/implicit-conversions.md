@@ -1,8 +1,8 @@
 ---
-name: 'Implicit conversions'
-title: 'Implicit conversions'
-category: 'statements'
-description: 'Translates ASCII characters to binary bytes, or binary bytes to ASCII characters. Each character'
+name: "Implicit conversions"
+title: "Implicit conversions"
+category: "statements"
+description: "Translates ASCII characters to binary bytes, or binary bytes to ASCII characters. Each character"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -3,15 +3,15 @@ title: "Of a clustered index"
 topic: "collation"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   You can use the following steps to estimate the amount of space that is required to store dat
 tags:
   - "collation"
@@ -39,7 +39,7 @@ in a clustered index:
 
 3. Total the calculated values.
 
-1. Specify the number of rows that are present in the table:
+4. Specify the number of rows that are present in the table:
 
 = number of rows in the table
 
@@ -73,15 +73,15 @@ make sure that every row has a unique key value.
 
 =
 
-+ 1
+- 1
 
 =
 
-+ 1
+- 1
 
 =
 
-+ 4
+- 4
 
 These modifications assume that all values are nonunique.
 

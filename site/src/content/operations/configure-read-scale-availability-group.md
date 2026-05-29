@@ -3,18 +3,18 @@ title: "Configure read-scale availability group"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   You can configure a SQL Server Always On availability group for read-scale workloads on
-  
-  Windows. There are two types of architecture for availability 
+
+  Windows. There are two types of architecture for availability
 tags:
   - "high-availability"
   - "configure-read-scale-availability-group"

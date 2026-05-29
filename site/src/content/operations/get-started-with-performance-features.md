@@ -3,13 +3,13 @@ title: "Get started with performance features"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   If you're a Linux user who is new to SQL Server, the following tasks walk you through some of the
-  
+
   performance features. These aren't unique or specific to Linux, bu
 tags:
   - "linux-operations"

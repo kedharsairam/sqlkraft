@@ -1,8 +1,8 @@
 ---
-name: 'See other language references'
-title: 'See other language references'
-category: 'statements'
-description: 'To find the system tables, views, functions, and procedures, see these links, which are in the'
+name: "See other language references"
+title: "See other language references"
+category: "statements"
+description: "To find the system tables, views, functions, and procedures, see these links, which are in the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -63,8 +63,8 @@ supported. In this case, other
 
 sections are inserted into the appropriate argument
 
-
 ## descriptions in the body of the article.
+
 For more information, see
 
 SQL Server docs navigation guide

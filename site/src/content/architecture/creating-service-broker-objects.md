@@ -3,16 +3,16 @@ title: "Creating Service Broker Objects"
 topic: "service-broker"
 description: |
   08/29/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   An application uses Service Broker by executing Transact-SQL statements that operate on
-  
-  Service Broker objects defined in a database. 
+
+  Service Broker objects defined in a database.
 tags:
   - "service-broker"
   - "creating-service-broker-objects"

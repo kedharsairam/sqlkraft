@@ -1,7 +1,7 @@
 ---
-title: 'Parameter sensitivity'
-topic: 'query-processing'
-description: 'Preparing a statement is more effective if parameter markers are used. For example, assume'
+title: "Parameter sensitivity"
+topic: "query-processing"
+description: "Preparing a statement is more effective if parameter markers are used. For example, assume"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

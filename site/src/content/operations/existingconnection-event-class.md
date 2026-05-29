@@ -3,15 +3,15 @@ title: "ExistingConnection Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The ExistingConnection event class indicates the properties of existing user connections when
 tags:
   - "event-classes"

@@ -3,19 +3,19 @@ title: "Spatial Indexes Overview"
 topic: "spatial-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   SQL Server supports spatial data and spatial indexes. A
-  
+
   spatial index
-  
+
   is a type of extended
 tags:
   - "spatial-data"

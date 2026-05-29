@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_changesubstatus'
-title: 'sp_changesubstatus'
-category: 'general'
-description: 'Changes the status of an existing Subscriber. This stored procedure is executed at the Publisher Transact-SQL syntax conventions'
+name: "sys.sp_changesubstatus"
+title: "sp_changesubstatus"
+category: "general"
+description: "Changes the status of an existing Subscriber. This stored procedure is executed at the Publisher Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -157,18 +157,13 @@ N
 
 Applies to:
 
-
 Azure SQL Managed Instance
-
 
 Changes the status of an existing Subscriber. This stored procedure is executed at the Publisher
 
-
 on the publication database.
 
-
 Transact-SQL syntax conventions
-
 
 ## Permissions
 

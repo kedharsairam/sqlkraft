@@ -1,7 +1,7 @@
 ---
-title: 'Intent locks'
-topic: 'locking'
-description: 'Data modification statements, such as'
+title: "Intent locks"
+topic: "locking"
+description: "Data modification statements, such as"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -80,8 +80,8 @@ Intent locks include intent shared (
 
 ).
 
-
 ## Description
+
 Protects requested or acquired shared locks on some (but not all) resources lower in the
 
 hierarchy.

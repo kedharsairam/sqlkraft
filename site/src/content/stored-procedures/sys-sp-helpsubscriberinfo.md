@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_helpsubscriberinfo'
-title: 'sp_helpsubscriberinfo'
-category: 'general'
-description: 'Displays information about a Subscriber. This stored procedure is executed at the Publisher on Transact-SQL syntax conventions , and defaults to the name of the current shouldn''t be specified, except when it''s an Oracle Publisher.'
+name: "sys.sp_helpsubscriberinfo"
+title: "sp_helpsubscriberinfo"
+category: "general"
+description: "Displays information about a Subscriber. This stored procedure is executed at the Publisher on Transact-SQL syntax conventions , and defaults to the name of the current shouldn't be specified, except when it's an Oracle Publisher."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

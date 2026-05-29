@@ -3,17 +3,17 @@ title: "Configure persistent memory (PMEM)"
 topic: "linux-operations"
 description: |
   SQL Server on Linux
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This article describes how to configure the persistent memory (PMEM) for SQL Server 2019
-  
+
   (15.x) and later versions on Linux.
-  
+
   SQL Server 2019 (
 tags:
   - "linux-operations"

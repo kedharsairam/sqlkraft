@@ -3,15 +3,15 @@ title: "XML Output File Format"
 topic: "ssb-diagnose"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   The
-  
+
   utility delivers its output as an XML file when you run it with the
-  
+
   switch.
-  
+
   The XML output file lists header information and the errors that it found in the Service Bro
 tags:
   - "ssb-diagnose"

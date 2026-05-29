@@ -3,14 +3,14 @@ title: "Configure distributed availability groups"
 topic: "high-availability"
 description: |
   05/27/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   To create a distributed availability group, you must create two availability groups each with its
-  
-  own listener. You then combine these availability groups into a 
+
+  own listener. You then combine these availability groups into a
 tags:
   - "high-availability"
   - "configure-distributed-availability-groups"

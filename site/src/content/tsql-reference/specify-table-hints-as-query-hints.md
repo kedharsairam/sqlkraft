@@ -1,8 +1,8 @@
 ---
-name: 'Specify table hints as query hints'
-title: 'Specify table hints as query hints'
-category: 'data-types'
-description: 'Query hints can''t be specified in an'
+name: "Specify table hints as query hints"
+title: "Specify table hints as query hints"
+category: "data-types"
+description: "Query hints can't be specified in an"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

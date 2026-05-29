@@ -3,17 +3,17 @@ title: "Package references"
 topic: "ssms"
 description: |
   SQL projects package references
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Package references in SQL projects allow you to reference da
 tags:
   - "ssms"

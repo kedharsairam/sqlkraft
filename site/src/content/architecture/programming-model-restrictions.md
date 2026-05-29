@@ -3,15 +3,15 @@ title: "Programming model restrictions"
 topic: "clr-integration"
 description: |
   07/23/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   When you build a managed stored procedure or other managed database object, SQL Server
-  
+
   performs certain code checks that need to be co
 tags:
   - "clr-integration"

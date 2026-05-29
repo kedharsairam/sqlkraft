@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addmergefilter'
-title: 'sp_addmergefilter'
-category: 'general'
-description: 'Adds a new merge filter to create a partition based on a join with another table. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication in which the merge filter is being added. The name of the article on which the merge filter is being added.'
+name: "sys.sp_addmergefilter"
+title: "sp_addmergefilter"
+category: "general"
+description: "Adds a new merge filter to create a partition based on a join with another table. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication in which the merge filter is being added. The name of the article on which the merge filter is being added."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

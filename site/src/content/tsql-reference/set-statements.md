@@ -1,8 +1,8 @@
 ---
-name: 'SET Statements'
-title: 'SET Statements'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "SET Statements"
+title: "SET Statements"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

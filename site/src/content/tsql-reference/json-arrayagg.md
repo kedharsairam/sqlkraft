@@ -1,8 +1,8 @@
 ---
-name: 'JSON_ARRAYAGG'
-title: 'JSON_ARRAYAGG'
-category: 'statements'
-description: 'SQL Server 2025 (17.x)'
+name: "JSON_ARRAYAGG"
+title: "JSON_ARRAYAGG"
+category: "statements"
+description: "SQL Server 2025 (17.x)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -47,7 +47,7 @@ Always-up-to-date
 
 update policy
 
-**),
+\*\*),
 
 SQL database in Microsoft Fabric, and Fabric Data Warehouse.
 
@@ -55,8 +55,8 @@ in preview for SQL Server 2025 (17.x).
 
 Transact-SQL syntax conventions
 
-
 ## syntaxsql
+
 The value expression can be a column or expression in a query or constants/literals.
 
 Optional.
@@ -87,8 +87,8 @@ is default.
 
 Optional. The order of elements in the resulting JSON array can be specified to order the input rows to the aggregate.
 
-
 ## Returns a valid JSON array string of
+
 nvarchar(max)
 
 type. If the
@@ -187,14 +187,14 @@ and
 
 column value. The third column
 
-
 ## returns the value of SUM
+
 aggregate on the
 
 column. The fourth column
 
-
 ## returns the value of JSON_ARRAYAGG aggregate on the
+
 column.
 
 SQL

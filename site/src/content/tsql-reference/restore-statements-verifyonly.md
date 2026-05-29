@@ -1,10 +1,10 @@
 ---
-name: 'RESTORE Statements - VERIFYONLY'
-title: 'RESTORE Statements - VERIFYONLY'
-category: 'statements'
-description: ''
+name: "RESTORE Statements - VERIFYONLY"
+title: "RESTORE Statements - VERIFYONLY"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

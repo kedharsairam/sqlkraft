@@ -3,17 +3,17 @@ title: "Change edition"
 topic: "upgrade"
 description: |
   08/22/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   SQL Server Setup supports edition upgrade among various editions of SQL Server. For
-  
+
   information about supported edition upgrade paths, see
-  
+
   Suppor
 tags:
   - "upgrade"

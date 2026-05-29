@@ -3,19 +3,19 @@ title: "Updating UDT columns with DataAdapters"
 topic: "clr-integration"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   You can retrieve and modify user-defined types (UDTs) by using a
-  
+
   and a
-  
+
   .
-  
+
   The code examples in this article use
-  
+
   , which is available as a NuGet
-  
+
   package. To add this depend
 tags:
   - "clr-integration"

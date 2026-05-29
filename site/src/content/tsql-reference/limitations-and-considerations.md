@@ -1,8 +1,8 @@
 ---
-name: 'Limitations and considerations'
-title: 'Limitations and considerations'
-category: 'operators'
-description: 'To resolve this error, remove the'
+name: "Limitations and considerations"
+title: "Limitations and considerations"
+category: "operators"
+description: "To resolve this error, remove the"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -17,8 +17,8 @@ parameter from
 
 and use the
 
-
 ## syntax instead. For detailed information, see
+
 Error using legacy syntax
 
 .

@@ -3,19 +3,19 @@ title: "Change the database compatibility mode & use the Query Store"
 topic: "upgrade"
 description: |
   06/04/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   In SQL Server 2016 (13.x) and later, some changes are only enabled once the
-  
+
   database
-  
+
   compatibility level
-  
+
   has been changed. This was done for sev
 tags:
   - "upgrade"

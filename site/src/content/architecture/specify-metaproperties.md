@@ -3,21 +3,21 @@ title: "Specify Metaproperties"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Metaproperty attributes in an XML document are attributes that describe the properties of an
-  
+
   XML item,
 tags:
   - "xml-data"

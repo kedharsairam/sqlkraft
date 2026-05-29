@@ -3,19 +3,19 @@ title: "FILESTREAM & FileTable"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   10/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Windows only
-  
+
   This article contains information about the using the FILESTREAM and FileTable features with
-  
+
   Always On availability groups in SQL Serv
 tags:
   - "high-availability"

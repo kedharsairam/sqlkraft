@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_change_feed_reseed_db_init'
-title: 'sp_change_feed_reseed_db_init'
-category: 'general'
-description: 'Mirrored databases in Microsoft Fabric SQL database in Microsoft Fabric This system stored procedure is used for Microsoft Fabric mirrored databases Transact-SQL syntax conventions Identified for informational purposes only. Not supported. Future compatibility is not Identified for informational purposes only. Not supported. Future compatibility is not This system stored procedure is used internal'
+name: "sys.sp_change_feed_reseed_db_init"
+title: "sp_change_feed_reseed_db_init"
+category: "general"
+description: "Mirrored databases in Microsoft Fabric SQL database in Microsoft Fabric This system stored procedure is used for Microsoft Fabric mirrored databases Transact-SQL syntax conventions Identified for informational purposes only. Not supported. Future compatibility is not Identified for informational purposes only. Not supported. Future compatibility is not This system stored procedure is used internal"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

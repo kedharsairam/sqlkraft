@@ -1,8 +1,8 @@
 ---
-name: 'INDEXPROPERTY'
-title: 'INDEXPROPERTY'
-category: 'hints'
-description: ''
+name: "INDEXPROPERTY"
+title: "INDEXPROPERTY"
+category: "hints"
+description: ""
 tags: ["tsql", "hints"]
 pubDate: 2026-05-29
 ---

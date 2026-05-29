@@ -1,7 +1,7 @@
 ---
-name: 'To Increase MTL (MemToLeave) Size'
-title: 'To Increase MTL (MemToLeave) Size'
-description: 'go to configuration manager and add the following startup parameter'
+name: "To Increase MTL (MemToLeave) Size"
+title: "To Increase MTL (MemToLeave) Size"
+description: "go to configuration manager and add the following startup parameter"
 category: architecture
 tags: ["architecture"]
 pubDate: 2025-03-15

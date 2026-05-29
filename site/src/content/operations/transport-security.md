@@ -3,12 +3,12 @@ title: "Transport security"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Transport security involves authentication and, optionally, encryption of messages exchanged
-  
-  between the databases. For database mirroring and Always On availability groups, 
+
+  between the databases. For database mirroring and Always On availability groups,
 tags:
   - "high-availability"
   - "transport-security"

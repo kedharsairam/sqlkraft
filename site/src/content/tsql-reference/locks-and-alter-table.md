@@ -1,8 +1,8 @@
 ---
-name: 'Locks and ALTER TABLE'
-title: 'Locks and ALTER TABLE'
-category: 'statements'
-description: 'You can change the length, precision, or scale of a column by specifying a new size for the'
+name: "Locks and ALTER TABLE"
+title: "Locks and ALTER TABLE"
+category: "statements"
+description: "You can change the length, precision, or scale of a column by specifying a new size for the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -107,8 +107,8 @@ queries that access these rows. This behavior is automatic. No additional syntax
 
 implement the online operation beyond the
 
-
 ## syntax. A runtime constant is an
+
 expression that produces the same value at runtime for each row in the table despite its
 
 determinism. For example, the constant expression

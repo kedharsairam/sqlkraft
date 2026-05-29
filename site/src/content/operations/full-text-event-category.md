@@ -3,27 +3,27 @@ title: "Full Text Event Category"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event category contains general full-text events.
-  
+
   Description
-  
+
   FT:Crawl Aborted Event Class
-  
+
   Indi
 tags:
   - "event-classes"

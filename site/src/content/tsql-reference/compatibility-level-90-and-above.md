@@ -1,8 +1,8 @@
 ---
-name: 'Compatibility level 90 and above'
-title: 'Compatibility level 90 and above'
-category: 'operators'
-description: 'In the preceding code example, the final example has a mismatch between format'
+name: "Compatibility level 90 and above"
+title: "Compatibility level 90 and above"
+category: "operators"
+description: "In the preceding code example, the final example has a mismatch between format"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'D. Create tables with SELECT INTO'
-title: 'D. Create tables with SELECT INTO'
-category: 'statements'
-description: 'The following example uses'
+name: "D. Create tables with SELECT INTO"
+title: "D. Create tables with SELECT INTO"
+category: "statements"
+description: "The following example uses"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

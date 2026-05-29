@@ -3,19 +3,19 @@ title: "Health diagnostics log"
 topic: "high-availability"
 description: |
   SQL Server resource DLL health diagnostic
-  
+
   Article
-  
+
   •
-  
+
   11/25/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   To monitor the health of the primary availability replica, the SQL Server resource DLL run by the
-  
+
   Windows S
 tags:
   - "high-availability"
@@ -77,7 +77,7 @@ are known as SQLDIAG logs and are saved in the XEL (extended events) file format
 
 in the SQL Server Log directory have the following format:
 
-<HOSTNAME>_<INSTANCENAME>_SQLDIAG_X_XXXXXXXXX.xel. By looking at the SQLDIAG
+<HOSTNAME>\_<INSTANCENAME>\_SQLDIAG_X_XXXXXXXXX.xel. By looking at the SQLDIAG
 
 logs, you may be able to determine the root cause of availability group resource failure or
 

@@ -3,17 +3,17 @@ title: "Store documents"
 topic: "json-data"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The SQL Database Engine provides native JSON functions that e
 tags:
   - "json-data"

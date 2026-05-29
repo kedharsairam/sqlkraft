@@ -1,8 +1,8 @@
 ---
-name: 'sys.xml_schema_attributes'
-title: 'sys.xml_schema_attributes'
-category: 'xml'
-description: 'Returns a row per XML schema component that is an attribute, 1 = The default value is a fixed value. This value cannot be overridden 0 = The default value is not a fixed value for the attribute. (default) 1 = The attribute must be explicitly namespace qualified. 0 = The attribute may be implicitly namespace qualified. (default) Default value of the attribute. Is NULL if a default value is not The '
+name: "sys.xml_schema_attributes"
+title: "sys.xml_schema_attributes"
+category: "xml"
+description: "Returns a row per XML schema component that is an attribute, 1 = The default value is a fixed value. This value cannot be overridden 0 = The default value is not a fixed value for the attribute. (default) 1 = The attribute must be explicitly namespace qualified. 0 = The attribute may be implicitly namespace qualified. (default) Default value of the attribute. Is NULL if a default value is not The "
 tags: ["xml", "catalog-view"]
 pubDate: 2026-05-29
 ---

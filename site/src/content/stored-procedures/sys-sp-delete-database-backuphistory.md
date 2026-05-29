@@ -1,11 +1,11 @@
 ---
-name: 'sys.sp_delete_database_backuphistory'
-title: 'sp_delete_database_backuphistory'
-category: 'general'
-description: 'Deletes information about the specified database from the backup and restore history tables. Transact-SQL syntax conventions Specifies the name of the database involved in backup and restore operations. , with no default. must be run from the This stored procedure affects the following tables:'
+name: "sys.sp_delete_database_backuphistory"
+title: "sp_delete_database_backuphistory"
+category: "general"
+description: "Deletes information about the specified database from the backup and restore history tables. Transact-SQL syntax conventions Specifies the name of the database involved in backup and restore operations. , with no default. must be run from the This stored procedure affects the following tables:"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
-syntax: 'sp_delete_database_backuphistory'
+syntax: "sp_delete_database_backuphistory"
 ---
 
 ## Description

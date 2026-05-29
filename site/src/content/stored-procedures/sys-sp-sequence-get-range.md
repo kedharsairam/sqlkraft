@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_sequence_get_range'
-title: 'sp_sequence_get_range'
-category: 'general'
-description: 'SQL database in Microsoft Fabric Returns a range of sequence values from a sequence object. The sequence object generates and issues the number of values requested and provides the application with metadata related For a more information about sequence numbers, see Transact-SQL syntax conventions The name of the sequence object. The schema is optional. The number of values to fetch from the sequen'
+name: "sys.sp_sequence_get_range"
+title: "sp_sequence_get_range"
+category: "general"
+description: "SQL database in Microsoft Fabric Returns a range of sequence values from a sequence object. The sequence object generates and issues the number of values requested and provides the application with metadata related For a more information about sequence numbers, see Transact-SQL syntax conventions The name of the sequence object. The schema is optional. The number of values to fetch from the sequen"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

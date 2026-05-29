@@ -1,10 +1,10 @@
 ---
-name: '2292'
-title: 'Error 2292'
+name: "2292"
+title: "Error 2292"
 errorNumber: 2292
-severity: 'medium'
-category: 'io'
-description: 'Description 2292 16 No %sWhen a type with simple content restricts a type with mixed content, it must have an embedded simple type definition. Location: ''%ls''. 2293 16 No %sChoice cannot be empty unle'
+severity: "medium"
+category: "io"
+description: "Description 2292 16 No %sWhen a type with simple content restricts a type with mixed content, it must have an embedded simple type definition. Location: '%ls'. 2293 16 No %sChoice cannot be empty unle"
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---
@@ -19,5 +19,4 @@ MEDIUM (Level N/A)
 
 ## Troubleshooting
 
-*(Diagnostic content pending full extraction)*
-
+_(Diagnostic content pending full extraction)_

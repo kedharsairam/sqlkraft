@@ -1,8 +1,8 @@
 ---
-name: 'Supported data types'
-title: 'Supported data types'
-category: 'data-types'
-description: 'When working with parquet files,'
+name: "Supported data types"
+title: "Supported data types"
+category: "data-types"
+description: "When working with parquet files,"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

@@ -3,21 +3,21 @@ title: "Examples: Using AUTO Mode"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   08/10/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The following examples illustrate the use of AUTO mode. Many of these queries are specified
-  
+
   against bi
 tags:
   - "xml-data"

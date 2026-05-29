@@ -1,8 +1,8 @@
 ---
-name: 'sys.dm_os_hosts'
-title: 'sys.dm_os_hosts'
-category: 'os'
-description: 'Analytics Platform System (PDW) Returns all the hosts currently registered in an instance of SQL Server. This view also returns the resources that are used by these hosts. Internal memory address of the host object. Type of hosted component. For example, SOSHOST_CLIENTID_SERVERSNI= SQL Server Native SOSHOST_CLIENTID_SQLOLEDB = SQL Server Native SOSHOST_CLIENTID_MSDART = Microsoft Data Access Total'
+name: "sys.dm_os_hosts"
+title: "sys.dm_os_hosts"
+category: "os"
+description: "Analytics Platform System (PDW) Returns all the hosts currently registered in an instance of SQL Server. This view also returns the resources that are used by these hosts. Internal memory address of the host object. Type of hosted component. For example, SOSHOST_CLIENTID_SERVERSNI= SQL Server Native SOSHOST_CLIENTID_SQLOLEDB = SQL Server Native SOSHOST_CLIENTID_MSDART = Microsoft Data Access Total"
 tags: ["os", "dmv"]
 pubDate: 2026-05-29
 syntax: |

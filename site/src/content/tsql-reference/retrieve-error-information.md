@@ -1,8 +1,8 @@
 ---
-name: 'Retrieve error information'
-title: 'Retrieve error information'
-category: 'statements'
-description: 'If the stored procedure contains a'
+name: "Retrieve error information"
+title: "Retrieve error information"
+category: "statements"
+description: "If the stored procedure contains a"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -55,32 +55,32 @@ information about the error that caused the
 
 block to be executed:
 
-
 ## Description
+
 ERROR_NUMBER
 
-
 ## Returns the number of the error.
+
 ERROR_SEVERITY
 
-
 ## Returns the severity.
+
 ERROR_STATE
 
-
 ## Returns the error state number.
+
 ERROR_PROCEDURE
 
-
 ## Returns the name of the stored procedure or trigger where the error occurred.
+
 ERROR_LINE
 
-
 ## Returns the line number inside the routine that caused the error.
+
 ERROR_MESSAGE
 
-
 ## Returns the complete text of the error message. The text includes the values
+
 supplied for any substitutable parameters, such as lengths, object names, or times.
 
 These functions return

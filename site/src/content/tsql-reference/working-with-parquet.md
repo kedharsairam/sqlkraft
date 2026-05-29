@@ -1,8 +1,8 @@
 ---
-name: 'Working with parquet'
-title: 'Working with parquet'
-category: 'queries'
-description: 'In Azure Synapse Analytics dedicated SQL pools, and Analytics Platform System, PolyBase'
+name: "Working with parquet"
+title: "Working with parquet"
+category: "queries"
+description: "In Azure Synapse Analytics dedicated SQL pools, and Analytics Platform System, PolyBase"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
@@ -29,8 +29,8 @@ manually deleted on ADLS. For more limitations and best practices, see
 
 Filter optimization
 
-
 ## best practices
+
 .
 
 In Azure Synapse Analytics dedicated SQL pools, and Analytics Platform System, when

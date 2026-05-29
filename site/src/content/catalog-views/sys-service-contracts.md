@@ -1,8 +1,8 @@
 ---
-name: 'sys.service_contracts'
-title: 'sys.service_contracts'
-category: 'compatibility'
-description: 'This catalog view contains a row for each contract in the database. Name of the contract, unique within the database. Not NULLABLE. Identifier of the contract. Not NULLABLE. Identifier for the database principal that owns this contract. NULLABLE. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For m'
+name: "sys.service_contracts"
+title: "sys.service_contracts"
+category: "compatibility"
+description: "This catalog view contains a row for each contract in the database. Name of the contract, unique within the database. Not NULLABLE. Identifier of the contract. Not NULLABLE. Identifier for the database principal that owns this contract. NULLABLE. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For m"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

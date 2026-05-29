@@ -3,19 +3,19 @@ title: "Deploy to AKS with Helm charts"
 topic: "linux-operations"
 description: |
   Quickstart: Deploy a SQL Server Linux
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This quickstart takes you through the steps to deploy SQL Server on Linux containers to
-  
+
   Azure
-  
+
   Kubernetes Service
-  
+
   (AKS) with
 tags:
   - "linux-operations"

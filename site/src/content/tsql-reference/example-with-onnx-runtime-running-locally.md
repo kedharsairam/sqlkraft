@@ -1,8 +1,8 @@
 ---
-name: 'Example with ONNX Runtime running locally'
-title: 'Example with ONNX Runtime running locally'
-category: 'queries'
-description: 'This example creates an external model of the'
+name: "Example with ONNX Runtime running locally"
+title: "Example with ONNX Runtime running locally"
+category: "queries"
+description: "This example creates an external model of the"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

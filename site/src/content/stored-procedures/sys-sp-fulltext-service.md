@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_fulltext_service'
-title: 'sp_fulltext_service'
-category: 'general'
-description: 'Changes the server properties of full-text search for SQL Server. Transact-SQL syntax conventions The property to be changed or reset. , with no default. For a list of properties, their descriptions, and the values that can be set, see the table under the This argument returns the following properties: deprecation status, if applicable. action isn''t fully supported in SQL Server 2022 (16.x) and la'
+name: "sys.sp_fulltext_service"
+title: "sp_fulltext_service"
+category: "general"
+description: "Changes the server properties of full-text search for SQL Server. Transact-SQL syntax conventions The property to be changed or reset. , with no default. For a list of properties, their descriptions, and the values that can be set, see the table under the This argument returns the following properties: deprecation status, if applicable. action isn't fully supported in SQL Server 2022 (16.x) and la"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -35,66 +35,45 @@ N
 
 Applies to:
 
-
 Azure SQL Database
-
 
 Azure SQL Managed Instance
 
-
 Returns information related to the properties of the Full-Text Engine. These properties can be
-
 
 set and retrieved by using
 
-
 Transact-SQL syntax conventions
-
 
 Is an expression containing the name of the full-text service-level property. The table lists the
 
-
 properties and provides descriptions of the information returned.
 
-
 Returns 0. Supported for backward compatibility only.
 
-
 Returns 0. Supported for backward compatibility only.
-
 
 The full-text component is installed with the current instance of SQL Server.
 
-
 0 = Full-text is not installed.
-
 
 1 = Full-text is installed.
 
-
 The following properties will be removed in a future release of Microsoft SQL Server:
-
 
 . Avoid using these properties in new
 
-
 development work, and plan to modify applications that currently use any of them.
-
 
 Expand table
 
-
 Note that to set signature verification back to its default value, 1, you can use the following
-
 
 FULLTEXTCATALOGPROPERTY (Transact-SQL)
 
-
 Metadata Functions (Transact-SQL)
 
-
 sp_fulltext_service (Transact-SQL)
-
 
 ## Permissions
 

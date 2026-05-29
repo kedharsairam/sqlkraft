@@ -1,7 +1,7 @@
 ---
-title: 'Space used by the persistent version store (PVS)'
-topic: 'io-fundamentals'
-description: 'Each database row might use up to 14 bytes at the end of the row for row versioning'
+title: "Space used by the persistent version store (PVS)"
+topic: "io-fundamentals"
+description: "Each database row might use up to 14 bytes at the end of the row for row versioning"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -3,15 +3,15 @@ title: "Register Purview"
 topic: "azure-synapse"
 description: |
   Article
-  
+
   •
-  
+
   03/21/2024
-  
+
   This article shows how to register an Azure Arc-enabled SQL Server instance. It also
-  
+
   shows how to authenticate and interact with Azure Arc-enabled SQL Server in Microsoft
-  
+
   Pur
 tags:
   - "azure-synapse"

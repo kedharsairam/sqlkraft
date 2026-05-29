@@ -3,18 +3,18 @@ title: "Manually prepare secondary database"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   09/04/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic describes how to prepare a database for an Always On availability group in SQL
-  
-  Server by using SQL Server Management Studio, Transact-SQL, 
+
+  Server by using SQL Server Management Studio, Transact-SQL,
 tags:
   - "high-availability"
   - "manually-prepare-secondary-database"

@@ -3,19 +3,19 @@ title: "In-Process Specific Extensions"
 topic: "clr-integration"
 description: |
   SQL Server in-process specific extensions
-  
+
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   There are four main functional extensions to ADO.NET that are specifically for in-process use.
-  
+
   The followin
 tags:
   - "clr-integration"

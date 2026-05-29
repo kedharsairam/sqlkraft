@@ -3,12 +3,12 @@ title: "Managed identity overview"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server 2025 (17.x)
-  
+
   SQL Server 2025 (17.x) includes managed identity support for SQL Server on Windows. Use a
-  
-  managed identity to interact with resources in Azure by using Microsoft 
+
+  managed identity to interact with resources in Azure by using Microsoft
 tags:
   - "azure-synapse"
   - "managed-identity-overview"

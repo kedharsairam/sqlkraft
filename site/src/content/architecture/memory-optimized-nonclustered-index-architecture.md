@@ -1,7 +1,7 @@
 ---
-title: 'Memory-optimized nonclustered index architecture'
-topic: 'index-architecture'
-description: 'read the older version of the row, and so avoid the performance slowdown associated with a'
+title: "Memory-optimized nonclustered index architecture"
+topic: "index-architecture"
+description: "read the older version of the row, and so avoid the performance slowdown associated with a"
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

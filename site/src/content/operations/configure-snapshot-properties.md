@@ -3,19 +3,19 @@ title: "Configure snapshot properties"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   09/27/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   Snapshot properties can be defined and modified programmatically using replication stored
-  
+
   procedures, where the stored pro
 tags:
   - "migration"

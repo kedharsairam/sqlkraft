@@ -1,16 +1,16 @@
 ---
-name: 'Special Cases and Conditions'
-title: 'Special Cases and Conditions'
-category: 'operators'
-description: 'If the target entity is not a database and the entity is being transferred to a new owner, all'
+name: "Special Cases and Conditions"
+title: "Special Cases and Conditions"
+category: "operators"
+description: "If the target entity is not a database and the entity is being transferred to a new owner, all"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
 
 If the target entity is not a database and the entity is being transferred to a new owner, all
 
-
 ## permissions on the target will be dropped.
+
 Also, note the following:
 
 The following table lists special cases, exceptions, and conditions that apply to altering

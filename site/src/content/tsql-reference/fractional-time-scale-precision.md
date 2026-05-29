@@ -1,8 +1,8 @@
 ---
-name: 'Fractional time scale precision'
-title: 'Fractional time scale precision'
-category: 'data-types'
-description: 'Accepts any expression, column, or user-defined variable that can resolve to any valid T-SQL'
+name: "Fractional time scale precision"
+title: "Fractional time scale precision"
+category: "data-types"
+description: "Accepts any expression, column, or user-defined variable that can resolve to any valid T-SQL"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -29,8 +29,8 @@ The returned data type for
 
 is dynamic.
 
-
 ## returns a truncated date of the
+
 same data type (and, if applicable, the same fractional time scale) as the input date. For
 
 example, if

@@ -3,24 +3,24 @@ title: "Audit Database Object Management Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The
-  
+
   event class occurs when a CREATE, ALTER, or DROP
-  
-  statement is executed on database objects, such 
+
+  statement is executed on database objects, such
 tags:
   - "event-classes"
   - "audit-database-object-management-event-class"

@@ -3,17 +3,17 @@ title: "Nullability & three-value logic comparisons"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   If you're familiar with the SQL Server data types, you find similar semantics and precision in the
-  
+
   namespace in the .NET Framework. There are some dif
 tags:
   - "clr-integration"

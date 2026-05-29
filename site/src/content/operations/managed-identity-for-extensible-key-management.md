@@ -3,17 +3,17 @@ title: "Managed identity for Extensible Key Management"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   SQL Server 2025 (17.x)
-  
+
   This article shows you how to use managed identities for Extensible Key Management (EKM)
-  
+
   with Azure Key Vault (AKV) on
-  
+
   SQL Server enabled by Azure Arc
-  
+
   .
-  
+
   Starti
 tags:
   - "azure-synapse"

@@ -1,8 +1,8 @@
 ---
-name: 'datetime'
-title: 'datetime'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "datetime"
+title: "datetime"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -89,7 +89,7 @@ Not applicable
 
 1753-01-01 (January 1, 1753) through 9999-12-31 (December 31,
 
-9999)
+9999.
 
 00:00:00 through 23:59:59.997
 
@@ -131,8 +131,8 @@ to
 
 minute.
 
-
 ## Description
+
 ﾉ
 
 Expand table

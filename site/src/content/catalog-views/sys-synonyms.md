@@ -1,8 +1,8 @@
 ---
-name: 'sys.synonyms'
-title: 'sys.synonyms'
-category: 'compatibility'
-description: 'Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each synonym object that is For a list of columns that this view inherits, see Fully quoted name of the object to which the user of The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Object Cat'
+name: "sys.synonyms"
+title: "sys.synonyms"
+category: "compatibility"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each synonym object that is For a list of columns that this view inherits, see Fully quoted name of the object to which the user of The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Object Cat"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

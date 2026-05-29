@@ -1,8 +1,8 @@
 ---
-name: 'Examples: Microsoft Fabric Data Warehouse'
-title: 'Examples: Microsoft Fabric Data Warehouse'
-category: 'statements'
-description: 'The following example prevents the pushdown of the'
+name: "Examples: Microsoft Fabric Data Warehouse"
+title: "Examples: Microsoft Fabric Data Warehouse"
+category: "statements"
+description: "The following example prevents the pushdown of the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -29,8 +29,8 @@ FOR TIMESTAMP query hint
 
 Use the
 
-
 ## syntax in the
+
 clause to query data as it existed in the past, in Fabric
 
 Data Warehouse. The following sample query returns data as it appeared on March 13, 2024 at

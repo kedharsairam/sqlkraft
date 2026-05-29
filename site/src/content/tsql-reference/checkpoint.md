@@ -1,8 +1,8 @@
 ---
-name: 'CHECKPOINT'
-title: 'CHECKPOINT'
-category: 'statements'
-description: '### Database checkpoints (SQL Server)'
+name: "CHECKPOINT"
+title: "CHECKPOINT"
+category: "statements"
+description: "### Database checkpoints (SQL Server)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
-title: 'Changes to memory management starting with'
-topic: 'memory-management'
-description: 'In older versions of SQL Server, memory allocation was done using five different mechanisms:'
+title: "Changes to memory management starting with"
+topic: "memory-management"
+description: "In older versions of SQL Server, memory allocation was done using five different mechanisms:"
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---

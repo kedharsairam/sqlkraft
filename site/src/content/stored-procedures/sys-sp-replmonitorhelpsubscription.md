@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_replmonitorhelpsubscription'
-title: 'sp_replmonitorhelpsubscription'
-category: 'general'
-description: 'Returns current status information for subscriptions belonging to one or more publications at the Publisher and returns one row for each returned subscription. This stored procedure, which is used to monitor replication, is executed at the Distributor on the distribution database. Transact-SQL syntax conventions The name of the Publisher the status of which is being monitored. , information is ret'
+name: "sys.sp_replmonitorhelpsubscription"
+title: "sp_replmonitorhelpsubscription"
+category: "general"
+description: "Returns current status information for subscriptions belonging to one or more publications at the Publisher and returns one row for each returned subscription. This stored procedure, which is used to monitor replication, is executed at the Distributor on the distribution database. Transact-SQL syntax conventions The name of the Publisher the status of which is being monitored. , information is ret"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

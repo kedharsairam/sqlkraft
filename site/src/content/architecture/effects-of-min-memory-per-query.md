@@ -1,7 +1,7 @@
 ---
-title: 'Effects of min memory per query'
-topic: 'query-processing'
-description: '### Server configuration: min memory'
+title: "Effects of min memory per query"
+topic: "query-processing"
+description: "### Server configuration: min memory"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -28,11 +28,11 @@ how objects are created:
 
 Lock (as maintained by the Lock Manager): 64 bytes + 32 bytes per owner
 
-User connection: Approximately (3 *
+User connection: Approximately (3 \*
 
 network_packet_size
 
-+ 94 KB)
+- 94 KB)
 
 The
 
@@ -46,11 +46,11 @@ and is controlled by the network packet size configuration option.
 
 When multiple active result sets (MARS) are enabled, the user connection is approximately (3 +
 
-3 *
+3 \*
 
 num_logical_connections
 
-) * network_packet_size + 94 KB.
+) \* network_packet_size + 94 KB.
 
 The
 

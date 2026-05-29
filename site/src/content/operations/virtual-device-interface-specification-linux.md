@@ -3,21 +3,21 @@ title: "Virtual Device Interface specification (Linux)"
 topic: "linux-operations"
 description: |
   SQL Server on Linux VDI client SDK
-  
+
   Article
-  
+
   •
-  
+
   01/21/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article covers the interfaces provided by the SQL Server on Linux virtual device interface
-  
+
   (VDI) cli
 tags:
   - "linux-operations"

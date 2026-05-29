@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addsubscriber'
-title: 'sp_addsubscriber'
-category: 'general'
-description: 'Adds a new Subscriber to a Publisher, enabling it to receive publications. This stored procedure is executed at the Publisher on the publication database for snapshot and transactional publications; and for merge publications using a remote Distributor, this stored procedure is Transact-SQL syntax conventions This stored procedure has been deprecated. You''re no longer required to explicitly regist'
+name: "sys.sp_addsubscriber"
+title: "sp_addsubscriber"
+category: "general"
+description: "Adds a new Subscriber to a Publisher, enabling it to receive publications. This stored procedure is executed at the Publisher on the publication database for snapshot and transactional publications; and for merge publications using a remote Distributor, this stored procedure is Transact-SQL syntax conventions This stored procedure has been deprecated. You're no longer required to explicitly regist"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

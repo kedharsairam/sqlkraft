@@ -1,7 +1,7 @@
 ---
-name: 'To Move Master Database Files to Different Loca'
-title: 'To Move Master Database Files to Different Loca'
-description: 'identify where the master database files are located'
+name: "To Move Master Database Files to Different Loca"
+title: "To Move Master Database Files to Different Loca"
+description: "identify where the master database files are located"
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

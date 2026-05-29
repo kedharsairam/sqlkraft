@@ -1,7 +1,7 @@
 ---
-name: 'To Generate Script to Take Multiple Databases O'
-title: 'To Generate Script to Take Multiple Databases O'
-description: 'SQL Server diagnostic script for database operations.'
+name: "To Generate Script to Take Multiple Databases O"
+title: "To Generate Script to Take Multiple Databases O"
+description: "SQL Server diagnostic script for database operations."
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

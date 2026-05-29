@@ -1,8 +1,8 @@
 ---
-name: 'Extended methods on geography instances'
-title: 'Extended methods on geography instances'
-category: 'queries'
-description: '### Extended methods'
+name: "Extended methods on geography instances"
+title: "Extended methods on geography instances"
+category: "queries"
+description: "### Extended methods"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

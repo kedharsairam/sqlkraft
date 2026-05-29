@@ -3,17 +3,17 @@ title: "Modify data"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Data in a system-versioned temporal table is modified using r
 tags:
   - "tables"

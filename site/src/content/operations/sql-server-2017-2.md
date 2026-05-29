@@ -3,15 +3,15 @@ title: "SQL Server 2017"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   - Linux
-  
+
   This article provides details of features supported by the various editions of SQL Server 2017
-  
+
   (14.x) on Linux.
-  
+
   For editions and supported features of SQL Server on
 tags:
   - "linux-operations"

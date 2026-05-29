@@ -1,8 +1,8 @@
 ---
-name: 'Summary of support for WITH options'
-title: 'Summary of support for WITH options'
-category: 'queries'
-description: 'contains the backup from a single, successful backup operation. RESTORE, RESTORE'
+name: "Summary of support for WITH options"
+title: "Summary of support for WITH options"
+category: "queries"
+description: "contains the backup from a single, successful backup operation. RESTORE, RESTORE"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
@@ -79,8 +79,8 @@ HEADERONLY
 
 By default, all backup sets in the media set are processed. The RESTORE HEADERONLY results set
 
-
 ## returns information about each backup set, including its
+
 Position
 
 in the media set. To return

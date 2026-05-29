@@ -1,8 +1,8 @@
 ---
-name: 'SET DATEFORMAT'
-title: 'SET DATEFORMAT'
-category: 'statements'
-description: ''
+name: "SET DATEFORMAT"
+title: "SET DATEFORMAT"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

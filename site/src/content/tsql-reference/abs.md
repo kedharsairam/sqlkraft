@@ -1,8 +1,8 @@
 ---
-name: 'ABS'
-title: 'ABS'
-category: 'statements'
-description: ''
+name: "ABS"
+title: "ABS"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

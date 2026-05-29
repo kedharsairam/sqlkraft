@@ -1,8 +1,8 @@
 ---
-name: 'Vector data type'
-title: 'Vector data type'
-category: 'data-types'
-description: 'Summarize this article for me'
+name: "Vector data type"
+title: "Vector data type"
+category: "data-types"
+description: "Summarize this article for me"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

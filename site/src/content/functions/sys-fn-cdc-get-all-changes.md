@@ -1,11 +1,11 @@
 ---
-name: 'sys.fn_cdc_get_all_changes_'
-title: 'cdc.fn_cdc_get_all_changes_<capture_instance>'
-category: 'change-data-capture'
-description: 'function serves as a wrapper for the query function. The stored procedure is used to generate the script to create the Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to'
+name: "sys.fn_cdc_get_all_changes_"
+title: "cdc.fn_cdc_get_all_changes_<capture_instance>"
+category: "change-data-capture"
+description: "function serves as a wrapper for the query function. The stored procedure is used to generate the script to create the Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to"
 tags: ["change-data-capture", "function"]
 pubDate: 2026-05-29
-syntax: 'cdc.fn_cdc_get_all_changes_<capture_instance>'
+syntax: "cdc.fn_cdc_get_all_changes_<capture_instance>"
 ---
 
 ## Description
@@ -22,84 +22,57 @@ cdc.fn_cdc_get_all_changes_<capture_instance>
 
 Before you can enable a table for change data capture, the database must be enabled. To
 
-
 determine whether the database is enabled for change data capture, query the
 
-
 column in the
-
 
 sys.databases
 
-
 catalog view. To enable the database, use the
-
 
 sys.sp_cdc_enable_db
 
-
 stored procedure.
-
 
 When change data capture is enabled for a table, a change table and one or two query
 
-
 functions are generated. The change table serves as a repository for the source table changes
-
 
 extracted from the transaction log by the capture process. The query functions are used to
 
-
 extract data from the change table. The names of these functions are derived from the
-
 
 @capture_instance
 
-
 parameter in the following ways:
-
 
 All changes function:
 
-
 Net changes function:
-
 
 also creates the capture and cleanup jobs for the database if the
 
-
 source table is the first table in the database to be enabled for change data capture and no
-
 
 transactional publications exist for the database. It sets the
 
-
 column in the
-
 
 catalog view to
 
-
 SQL Server Agent doesn't have to be running when CDC is enabled for a table. However, the
-
 
 capture process doesn't process the transaction log and write entries to the change table
 
-
 unless SQL Server Agent is running.
-
 
 Requires membership in the
 
-
 fixed database role.
-
 
 The following example enables change data capture for the
 
-
 Only the required parameters are specified.
-
 
 ## Remarks
 
@@ -147,9 +120,9 @@ bound is included.
 
 The result set that is returned by the
 
-wrapper function returns the __$start_lsn and
+wrapper function returns the \_\_$start_lsn and
 
-__$seqval columns of the change table as columns __CDC_STARTLSN and __CDC_SEQVAL,
+**$seqval columns of the change table as columns **CDC_STARTLSN and \_\_CDC_SEQVAL,
 
 respectively. It follows these with only those tracked columns that appeared in the
 
@@ -163,7 +136,7 @@ is NULL, all tracked
 
 source columns are returned. The source columns are followed by an operation column,
 
-__CDC_OPERATION, which is a one- or two-character column that identifies the operation.
+\_\_CDC_OPERATION, which is a one- or two-character column that identifies the operation.
 
 Bit flags are then appended to the result set for each column that is identified in the
 
@@ -171,7 +144,7 @@ Bit flags are then appended to the result set for each column that is identified
 
 wrapper, the bit flags will always be NULL if
 
-__CDC_OPERATION is 'D', 'I', or 'UO'. If __CDC_OPERATION is 'UN', the flag will be set to 1 or 0,
+**CDC_OPERATION is 'D', 'I', or 'UO'. If **CDC_OPERATION is 'UN', the flag will be set to 1 or 0,
 
 depending on whether the update operation caused a change to the column.
 

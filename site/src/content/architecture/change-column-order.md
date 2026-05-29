@@ -3,21 +3,21 @@ title: "Change Column Order"
 topic: "tables"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL database in Microsoft
-  
+
   Fabric
-  
+
   You can change the order of
 tags:
   - "tables"

@@ -1,11 +1,11 @@
 ---
-name: 'sys.stats'
-title: 'sys.stats'
-category: 'compatibility'
-description: 'filtered index, the number of rows might be less than the number of rows in the table. Total number of rows sampled for statistics calculations. Number of steps in the histogram. For more information, see DBCC SHOW_STATISTICS (Transact-SQL) unfiltered_rows Total number of rows in the table before applying the filter expression (for filtered statistics). If statistics are not filtered, unfiltered_r'
+name: "sys.stats"
+title: "sys.stats"
+category: "compatibility"
+description: "filtered index, the number of rows might be less than the number of rows in the table. Total number of rows sampled for statistics calculations. Number of steps in the histogram. For more information, see DBCC SHOW_STATISTICS (Transact-SQL) unfiltered_rows Total number of rows in the table before applying the filter expression (for filtered statistics). If statistics are not filtered, unfiltered_r"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'HumanResources.Employee'
+syntax: "HumanResources.Employee"
 ---
 
 ## Description

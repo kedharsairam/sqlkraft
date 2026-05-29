@@ -1,7 +1,7 @@
 ---
-name: 'To Insert Data into Linked Server'
-title: 'To Insert Data into Linked Server'
-description: 'SQL Server diagnostic script for security-audit operations.'
+name: "To Insert Data into Linked Server"
+title: "To Insert Data into Linked Server"
+description: "SQL Server diagnostic script for security-audit operations."
 category: security-audit
 tags: ["security-audit"]
 pubDate: 2025-03-15

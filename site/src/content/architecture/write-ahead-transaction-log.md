@@ -1,7 +1,7 @@
 ---
-title: 'Write-ahead transaction log'
-topic: 'io-fundamentals'
-description: 'The second diagram shows how the log appears after being truncated. Virtual log 1 and virtual'
+title: "Write-ahead transaction log"
+topic: "io-fundamentals"
+description: "The second diagram shows how the log appears after being truncated. Virtual log 1 and virtual"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

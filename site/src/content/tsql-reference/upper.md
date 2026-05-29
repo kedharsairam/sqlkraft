@@ -1,8 +1,8 @@
 ---
-name: 'UPPER'
-title: 'UPPER'
-category: 'statements'
-description: ''
+name: "UPPER"
+title: "UPPER"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

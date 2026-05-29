@@ -1,8 +1,8 @@
 ---
-name: 'STMPolyFromText (geometry Data Type)'
-title: 'STMPolyFromText (geometry Data Type)'
-category: 'data-types'
-description: '### geometryMultiPolygon'
+name: "STMPolyFromText (geometry Data Type)"
+title: "STMPolyFromText (geometry Data Type)"
+category: "data-types"
+description: "### geometryMultiPolygon"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

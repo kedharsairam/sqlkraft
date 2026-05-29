@@ -3,23 +3,23 @@ title: "Basic Syntax"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   10/17/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   The FOR XML mode can be RAW, AUTO, EXPLICIT, or PATH. It determines the shape of the
-  
+
   resulting XML.
-  
+
   F
 tags:
   - "xml-data"

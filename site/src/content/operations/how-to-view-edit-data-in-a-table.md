@@ -3,19 +3,19 @@ title: "How to: View & Edit Data in a Table"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   You can view, edit, and delete data in an existing table by using a visual Data Editor.
-  
+
   1. Right-click the
-  
+
   table in
-  
+
   SQL Server Object Explorer
-  
+
   , and select
-  
+
   .
-  
+
   2. The Data Editor launc
 tags:
   - "ssb-diagnose"

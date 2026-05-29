@@ -3,18 +3,17 @@ title: "Execution Warnings Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Execution Warnings event class indicates memory grant warnings that occurred during the
-  
-  
+
 tags:
   - "event-classes"
   - "execution-warnings-event-class"

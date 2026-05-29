@@ -1,8 +1,8 @@
 ---
-name: 'datetime2 description'
-title: 'datetime2 description'
-category: 'data-types'
-description: 'Azure SQL Managed Instance'
+name: "datetime2 description"
+title: "datetime2 description"
+category: "data-types"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -35,8 +35,8 @@ type that has a larger date range, a
 
 larger default fractional precision, and optional user-specified precision.
 
-
 ## Syntax
+
 [ (
 
 fractional seconds precision

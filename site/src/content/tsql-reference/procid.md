@@ -1,8 +1,8 @@
 ---
-name: '@@PROCID'
-title: '@@PROCID'
-category: 'variables'
-description: ''
+name: "@@PROCID"
+title: "@@PROCID"
+category: "variables"
+description: ""
 tags: ["tsql", "variables"]
 pubDate: 2026-05-29
 ---

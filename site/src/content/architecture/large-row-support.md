@@ -1,7 +1,7 @@
 ---
-title: 'Large row support'
-topic: 'query-processing'
-description: 'As rows on a page are deleted or updated over time, free space might appear among'
+title: "Large row support"
+topic: "query-processing"
+description: "As rows on a page are deleted or updated over time, free space might appear among"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

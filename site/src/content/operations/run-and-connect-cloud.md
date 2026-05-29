@@ -3,15 +3,15 @@ title: "Run and connect - Cloud"
 topic: "linux-operations"
 description: |
   Quickstart: Run SQL Server in the cloud
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   In this quickstart, you install SQL Server on Red Hat Enterprise Linux (RHEL), SUSE Linux
-  
+
   Enterprise Server (SLES), or Ubun
 tags:
   - "linux-operations"

@@ -1,8 +1,8 @@
 ---
-name: 'STLineFromWKB (geography Data Type)'
-title: 'STLineFromWKB (geography Data Type)'
-category: 'data-types'
-description: '### LineString geography'
+name: "STLineFromWKB (geography Data Type)"
+title: "STLineFromWKB (geography Data Type)"
+category: "data-types"
+description: "### LineString geography"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

@@ -3,18 +3,17 @@ title: "Overview"
 topic: "collation"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   A database in SQL Server is made up of a collection of tables that stores a specific set of
-  
-  
+
 tags:
   - "collation"
   - "overview"

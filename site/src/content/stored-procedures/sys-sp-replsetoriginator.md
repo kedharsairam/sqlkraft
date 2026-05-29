@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_replsetoriginator'
-title: 'sp_replsetoriginator'
-category: 'general'
-description: 'Used to invoke loopback detection and handling in bidirectional transactional replication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the server where the transaction is being applied. The name of the database where the transaction is being applied. Identified for informational purposes only. Not supported. Future com'
+name: "sys.sp_replsetoriginator"
+title: "sp_replsetoriginator"
+category: "general"
+description: "Used to invoke loopback detection and handling in bidirectional transactional replication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the server where the transaction is being applied. The name of the database where the transaction is being applied. Identified for informational purposes only. Not supported. Future com"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

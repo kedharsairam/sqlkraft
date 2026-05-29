@@ -1,8 +1,8 @@
 ---
-name: 'Multipart names'
-title: 'Multipart names'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Multipart names"
+title: "Multipart names"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

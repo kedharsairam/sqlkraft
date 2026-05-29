@@ -3,19 +3,19 @@ title: "Preprocess a schema to merge included schemas"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The W3C XSD
-  
+
   element provides support for schema modularity in which an XML
-  
+
   schema can be pa
 tags:
   - "xml-data"

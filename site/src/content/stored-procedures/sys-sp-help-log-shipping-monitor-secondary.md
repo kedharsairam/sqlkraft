@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_help_log_shipping_monitor_secondary'
-title: 'sp_help_log_shipping_monitor_secondary'
-category: 'general'
-description: 'Returns information regarding a secondary database from the monitor tables. Transact-SQL syntax conventions The name of the secondary server. The name of the secondary database.'
+name: "sys.sp_help_log_shipping_monitor_secondary"
+title: "sp_help_log_shipping_monitor_secondary"
+category: "general"
+description: "Returns information regarding a secondary database from the monitor tables. Transact-SQL syntax conventions The name of the secondary server. The name of the secondary database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

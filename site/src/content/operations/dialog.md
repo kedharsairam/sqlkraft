@@ -3,19 +3,19 @@ title: "Dialog"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic contains information about how to use the
-  
+
   dialog box of
-  
+
   SQL Server Management Studio to create an Always On availability group on instance
 tags:
   - "high-availability"

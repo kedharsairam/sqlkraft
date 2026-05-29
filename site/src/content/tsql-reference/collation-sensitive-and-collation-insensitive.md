@@ -1,8 +1,8 @@
 ---
-name: 'Collation sensitive and collation insensitive'
-title: 'Collation sensitive and collation insensitive'
-category: 'operators'
-description: 'Here''s the result set.'
+name: "Collation sensitive and collation insensitive"
+title: "Collation sensitive and collation insensitive"
+category: "operators"
+description: "Here's the result set."
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'sys.trusted_assemblies'
-title: 'sys.trusted_assemblies (T-SQL)'
-category: 'compatibility'
-description: 'Azure SQL Managed Instance Contains a row for each trusted assembly for the server. Transact-SQL syntax conventions SHA2_512 hash of the assembly content. Optional user-defined description of the assembly. We recommend using the canonical name that encodes the simple name, version number, culture, public key, and architecture of the assembly to trust. This value uniquely identifies the assembly on'
+name: "sys.trusted_assemblies"
+title: "sys.trusted_assemblies (T-SQL)"
+category: "compatibility"
+description: "Azure SQL Managed Instance Contains a row for each trusted assembly for the server. Transact-SQL syntax conventions SHA2_512 hash of the assembly content. Optional user-defined description of the assembly. We recommend using the canonical name that encodes the simple name, version number, culture, public key, and architecture of the assembly to trust. This value uniquely identifies the assembly on"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,8 +1,8 @@
 ---
-name: 'Use NOEXPAND'
-title: 'Use NOEXPAND'
-category: 'statements'
-description: 'Isolation level hints:'
+name: "Use NOEXPAND"
+title: "Use NOEXPAND"
+category: "statements"
+description: "Isolation level hints:"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

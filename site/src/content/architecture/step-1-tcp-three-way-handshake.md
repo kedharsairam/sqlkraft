@@ -1,7 +1,7 @@
 ---
-title: 'Step 1. TCP three-way handshake'
-topic: 'query-processing'
-description: 'The client IP address is'
+title: "Step 1. TCP three-way handshake"
+topic: "query-processing"
+description: "The client IP address is"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

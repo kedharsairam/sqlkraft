@@ -3,21 +3,21 @@ title: "LocalDBStopTracing"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Disables tracing of API calls for all the SQL Server Express LocalDB instances owned by the
-  
+
   current Windows user.
-  
+
   C++
-  
+
   : The function succeeded.
-  
+
   Description
-  
+
   LO
 tags:
   - "clr-integration"

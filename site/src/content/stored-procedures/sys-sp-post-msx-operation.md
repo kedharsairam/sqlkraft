@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_post_msx_operation'
-title: 'sp_post_msx_operation'
-category: 'general'
-description: 'Inserts operations (rows) into the system table for target servers to download Transact-SQL syntax conventions The type of operation for the posted operation.'
+name: "sys.sp_post_msx_operation"
+title: "sp_post_msx_operation"
+category: "general"
+description: "Inserts operations (rows) into the system table for target servers to download Transact-SQL syntax conventions The type of operation for the posted operation."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

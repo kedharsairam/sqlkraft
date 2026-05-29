@@ -1,7 +1,7 @@
 ---
-name: 'To Check Auto Close status of Database'
-title: 'To Check Auto Close status of Database'
-description: 'for single database'
+name: "To Check Auto Close status of Database"
+title: "To Check Auto Close status of Database"
+description: "for single database"
 category: database
 tags: ["database", "health-check"]
 pubDate: 2025-03-15

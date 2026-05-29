@@ -1,8 +1,8 @@
 ---
-name: 'CERTENCODED'
-title: 'CERTENCODED'
-category: 'statements'
-description: '### CREATE CERTIFICATE ... WITH BINARY'
+name: "CERTENCODED"
+title: "CERTENCODED"
+category: "statements"
+description: "### CREATE CERTIFICATE ... WITH BINARY"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

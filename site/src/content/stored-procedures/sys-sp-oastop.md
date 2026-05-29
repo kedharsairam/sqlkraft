@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_oastop'
-title: 'sp_OAStop'
-category: 'general'
-description: 'Stops the server-wide OLE Automation stored procedure execution environment. Transact-SQL syntax conventions (success) or a nonzero number (failure) that is the integer value of the HRESULT returned by For more information about HRESULT return codes, see OLE automation return codes and error A single execution environment is shared by all clients that use OLE Automation stored procedures. If one c'
+name: "sys.sp_oastop"
+title: "sp_OAStop"
+category: "general"
+description: "Stops the server-wide OLE Automation stored procedure execution environment. Transact-SQL syntax conventions (success) or a nonzero number (failure) that is the integer value of the HRESULT returned by For more information about HRESULT return codes, see OLE automation return codes and error A single execution environment is shared by all clients that use OLE Automation stored procedures. If one c"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

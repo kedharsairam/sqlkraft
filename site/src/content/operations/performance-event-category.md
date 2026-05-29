@@ -3,21 +3,21 @@ title: "Performance Event Category"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Use the
-  
+
   event category to monitor
-  
+
   event classes and event classes that
-  
+
   are produced from t
 tags:
   - "event-classes"

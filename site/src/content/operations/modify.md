@@ -3,15 +3,15 @@ title: "Modify"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   You can modify templates that are saved in a file on the local computer on which SQL Server
-  
+
   Profiler is running. You can also modify t
 tags:
   - "profiler"

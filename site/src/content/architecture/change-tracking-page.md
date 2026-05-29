@@ -3,17 +3,17 @@ title: "Change Tracking page"
 topic: "collation"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   Use this page to view or modify change tracking settings for the selected database. For more
-  
+
 tags:
   - "collation"
   - "change-tracking-page"

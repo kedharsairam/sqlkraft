@@ -1,8 +1,8 @@
 ---
-name: 'STMLineFromText (geography Data Type)'
-title: 'STMLineFromText (geography Data Type)'
-category: 'data-types'
-description: '### geographyMultiLineString'
+name: "STMLineFromText (geography Data Type)"
+title: "STMLineFromText (geography Data Type)"
+category: "data-types"
+description: "### geographyMultiLineString"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

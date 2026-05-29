@@ -3,11 +3,11 @@ title: "Azure SQL Managed Instance >"
 topic: "azure-synapse"
 description: |
   Applies to:
-  
+
   Azure SQL Managed Instance
-  
+
   This article provides an overview of Azure SQL Managed Instance, a fully managed platform as
-  
+
   a service (PaaS) database engine that handles most database manag
 tags:
   - "azure-synapse"

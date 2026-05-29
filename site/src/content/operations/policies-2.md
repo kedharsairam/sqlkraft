@@ -3,17 +3,17 @@ title: "Policies"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The Always On availability groups system policies are used by the Always On Dashboard to
-  
+
   provide information on the availability group health to the u
 tags:
   - "high-availability"

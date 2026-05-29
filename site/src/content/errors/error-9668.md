@@ -1,10 +1,10 @@
 ---
-name: '9668'
-title: 'Error 9668'
+name: "9668"
+title: "Error 9668"
 errorNumber: 9668
-severity: 'medium'
-category: 'io'
-description: 'Description 9668 10 No Service Queues analyzed: %d. 9669 10 No Conversation Endpoints analyzed: %d. 9670 10 No Remote Service Bindings analyzed: %d. 9671 16 No Messages with conversation ID ''%ls'' have'
+severity: "medium"
+category: "io"
+description: "Description 9668 10 No Service Queues analyzed: %d. 9669 10 No Conversation Endpoints analyzed: %d. 9670 10 No Remote Service Bindings analyzed: %d. 9671 16 No Messages with conversation ID '%ls' have"
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---
@@ -19,5 +19,4 @@ MEDIUM (Level N/A)
 
 ## Troubleshooting
 
-*(Diagnostic content pending full extraction)*
-
+_(Diagnostic content pending full extraction)_

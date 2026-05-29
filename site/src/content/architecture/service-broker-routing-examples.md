@@ -3,19 +3,19 @@ title: "Service Broker Routing Examples"
 topic: "service-broker"
 description: |
   09/11/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This section presents examples of the Service Broker routing process. Each example contains sample routing
-  
+
   tables for
-  
+
   and
-  
+
   , and desc
 tags:
   - "service-broker"

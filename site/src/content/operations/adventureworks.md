@@ -3,19 +3,19 @@ title: "AdventureWorks"
 topic: "monitor"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   This article provides direct links for downloading
-  
+
   sample databases and
-  
+
   instructions for re
 tags:
   - "monitor"

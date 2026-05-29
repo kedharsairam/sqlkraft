@@ -1,8 +1,8 @@
 ---
-name: 'Relational operators'
-title: 'Relational operators'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "Relational operators"
+title: "Relational operators"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

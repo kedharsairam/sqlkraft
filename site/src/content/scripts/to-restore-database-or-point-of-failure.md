@@ -1,7 +1,7 @@
 ---
-name: 'To Restore Database or Point of Failure'
-title: 'To Restore Database or Point of Failure'
-description: 'for full backup'
+name: "To Restore Database or Point of Failure"
+title: "To Restore Database or Point of Failure"
+description: "for full backup"
 category: backup-restore
 tags: ["backup-restore", "database", "restore"]
 pubDate: 2025-03-15

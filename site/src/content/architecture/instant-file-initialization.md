@@ -3,17 +3,17 @@ title: "Instant file initialization"
 topic: "collation"
 description: |
   07/16/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   In this article, you learn about instant file initialization (IFI) and how to enable it to speed up
-  
+
   the growth for
 tags:
   - "collation"

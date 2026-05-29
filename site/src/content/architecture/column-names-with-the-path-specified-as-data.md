@@ -3,19 +3,19 @@ title: "Column Names with the Path Specified as data()"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   If the path specified as column name is
-  
+
   , the value is treated as an atomic value in the
-  
+
   ge
 tags:
   - "xml-data"

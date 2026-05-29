@@ -3,9 +3,9 @@ title: "Use the localization format helper"
 topic: "profiler"
 description: |
   Quickstart: Localization and formatting
-  
+
   GitHub Copilot helps developers build globally aware applications by addressing localization
-  
+
   and formatting needs directly within SQL and ORM-based workflows.
 tags:
   - "profiler"

@@ -3,17 +3,17 @@ title: "Plan Guide Successful Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   07/25/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The Plan Guide Successful event class indicates that SQL Server successfully produced an
-  
+
   execution plan for a query or batch that contained a plan gui
 tags:
   - "event-classes"

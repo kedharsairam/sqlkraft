@@ -1,8 +1,8 @@
 ---
-name: 'Basic syntax example'
-title: 'Basic syntax example'
-category: 'statements'
-description: 'You can''t change the compression setting of a single partition if the table has nonaligned'
+name: "Basic syntax example"
+title: "Basic syntax example"
+category: "statements"
+description: "You can't change the compression setting of a single partition if the table has nonaligned"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -13,22 +13,22 @@ indexes.
 
 The
 
-
 ## syntax
+
 rebuilds the specified partition of the index with the specified compression option. If the
 
 clause is omitted, the existing compression option is used.
 
 The
 
-
 ## syntax rebuilds all partitions of
+
 the index using the existing compression options.
 
 The
 
-
 ## syntax rebuilds all
+
 partitions of the index. You can choose different compression for different partitions
 
 using the

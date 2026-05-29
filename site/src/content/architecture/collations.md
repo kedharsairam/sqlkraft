@@ -1,7 +1,7 @@
 ---
-title: 'Collations'
-topic: 'io-fundamentals'
-description: '. For more information, see'
+title: "Collations"
+topic: "io-fundamentals"
+description: ". For more information, see"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -110,8 +110,8 @@ sp_droptype
 
 timestamp
 
-
 ## syntax for
+
 rowversion
 
 data type

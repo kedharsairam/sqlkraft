@@ -3,15 +3,15 @@ title: "Extract a Script from a Trace"
 topic: "profiler"
 description: |
   06/06/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to extract Transact-SQL events from a trace file or table and save
-  
+
   them as a Transact-SQL script file by us
 tags:
   - "profiler"

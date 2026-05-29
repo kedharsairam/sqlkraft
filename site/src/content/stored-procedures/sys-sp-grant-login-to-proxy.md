@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_grant_login_to_proxy'
-title: 'sp_grant_login_to_proxy'
-category: 'general'
-description: 'Grants a security principal access to a proxy. Transact-SQL syntax conventions The login name to grant access to. must be specified, or the stored The fixed server role to grant access to. must be specified, or the stored'
+name: "sys.sp_grant_login_to_proxy"
+title: "sp_grant_login_to_proxy"
+category: "general"
+description: "Grants a security principal access to a proxy. Transact-SQL syntax conventions The login name to grant access to. must be specified, or the stored The fixed server role to grant access to. must be specified, or the stored"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

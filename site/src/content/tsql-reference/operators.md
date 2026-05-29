@@ -1,8 +1,8 @@
 ---
-name: 'Operators'
-title: 'Operators'
-category: 'operators'
-description: 'Azure SQL Managed Instance'
+name: "Operators"
+title: "Operators"
+category: "operators"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -59,7 +59,7 @@ String operators
 
 Unary operators:
 
-+ (positive)
+- (positive)
 
 ,
 

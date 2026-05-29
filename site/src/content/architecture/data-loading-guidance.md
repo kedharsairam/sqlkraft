@@ -3,21 +3,21 @@ title: "Data loading guidance"
 topic: "filestream"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   Azure Synapse Analytics
-  
+
   Analytics Platform System (PDW)
-  
+
   SQL database in Microsoft
-  
+
   Fabric
-  
+
   Options and recommendations for lo
 tags:
   - "filestream"

@@ -1,7 +1,7 @@
 ---
-name: 'To Know When was DBCC Checkdb Last ran'
-title: 'To Know When was DBCC Checkdb Last ran'
-description: 'SQL Server diagnostic script for database operations.'
+name: "To Know When was DBCC Checkdb Last ran"
+title: "To Know When was DBCC Checkdb Last ran"
+description: "SQL Server diagnostic script for database operations."
 category: database
 tags: ["database", "health-check"]
 pubDate: 2025-03-15

@@ -1,8 +1,8 @@
 ---
 name: '"Applies to" references'
 title: '"Applies to" references'
-category: 'statements'
-description: 'Most code examples in the Transact-SQL reference were tested on servers that are running a'
+category: "statements"
+description: "Most code examples in the Transact-SQL reference were tested on servers that are running a"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -37,8 +37,8 @@ Server 2012 (11.x). Use the
 
 statement in any SQL Server product; however the
 
-
 ## syntax can't be used with older versions. Extra
+
 sections are inserted
 
 into the appropriate argument descriptions in the body of the article.

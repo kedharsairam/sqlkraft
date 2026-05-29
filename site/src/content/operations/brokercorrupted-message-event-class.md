@@ -3,25 +3,25 @@ title: "Broker:Corrupted Message Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server creates a
-  
+
   event when Service Broker receives a
-  
+
   corrupted message.
-  
+
   Description
-  
+
   The name of the client applica
 tags:
   - "event-classes"

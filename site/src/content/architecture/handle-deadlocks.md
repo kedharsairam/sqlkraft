@@ -1,7 +1,7 @@
 ---
-title: 'Handle deadlocks'
-topic: 'locking'
-description: 'SQL Profiler has an event that presents a graphical depiction of the tasks and resources'
+title: "Handle deadlocks"
+topic: "locking"
+description: "SQL Profiler has an event that presents a graphical depiction of the tasks and resources"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

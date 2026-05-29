@@ -3,25 +3,25 @@ title: "Issue Element"
 topic: "ssb-diagnose"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Reports an issue that was found by the
-  
+
   utility. The
-  
+
   XML output file
-  
+
   has one Issue element per issue reported.
-  
+
   Description
-  
+
   Identifies which categor
 tags:
   - "ssb-diagnose"

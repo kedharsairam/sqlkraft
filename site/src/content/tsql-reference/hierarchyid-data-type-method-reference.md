@@ -1,8 +1,8 @@
 ---
-name: 'hierarchyid data type method reference'
-title: 'hierarchyid data type method reference'
-category: 'data-types'
-description: '### Extremely compact'
+name: "hierarchyid data type method reference"
+title: "hierarchyid data type method reference"
+category: "data-types"
+description: "### Extremely compact"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

@@ -1,8 +1,8 @@
 ---
-name: 'GROUPING_ID() equivalents'
-title: 'GROUPING_ID() equivalents'
-category: 'statements'
-description: 'interprets that string as a base-2 number and returns the'
+name: "GROUPING_ID() equivalents"
+title: "GROUPING_ID() equivalents"
+category: "statements"
+description: "interprets that string as a base-2 number and returns the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -27,8 +27,8 @@ argument must be an element of the
 
 list.
 
-
 ## returns an
+
 integer bitmap whose lowest
 
 n

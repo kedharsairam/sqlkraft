@@ -1,11 +1,11 @@
 ---
-name: 'sys.databases'
-title: 'sys.databases'
-category: 'databases-files'
-description: 'Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway. Transact-SQL syntax conventions Name of the database. In the Database Engine, this column represents the database name as stored in the Size of database, in kilobytes. For the Database Engine, this field always returns Database names that are returned can be used as parameters in the s'
+name: "sys.databases"
+title: "sys.databases"
+category: "databases-files"
+description: "Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway. Transact-SQL syntax conventions Name of the database. In the Database Engine, this column represents the database name as stored in the Size of database, in kilobytes. For the Database Engine, this field always returns Database names that are returned can be used as parameters in the s"
 tags: ["databases-files", "catalog-view"]
 pubDate: 2026-05-29
-syntax: 'sys.dm_database_copies'
+syntax: "sys.dm_database_copies"
 ---
 
 ## Description
@@ -22,75 +22,51 @@ sys.dm_database_copies
 
 If the caller of
 
-
 does not own a specific non-
-
 
 server-level permissions at minimum are required to see the
 
-
 corresponding
-
 
 row. For the
 
-
 at minimum. The database to which the caller connects will always appear in
-
 
 This example returns the database ID of the current database.
 
-
 This example returns the database ID of the
-
 
 This example uses
 
-
 to return the database ID of the
-
 
 database in the
 
-
 system function
-
 
 . The function takes a database ID as the
 
-
 By default, the public role has the
-
 
 permission, which allows all logins to
 
-
 see database information. To prevent a login from detecting a database,
-
 
 permission from public, or
 
-
 permission for
-
 
 individual logins.
 
-
 DB_NAME (Transact-SQL)
-
 
 Metadata Functions (Transact-SQL)
 
-
 sys.databases (Transact-SQL)
-
 
 sys.dm_db_index_operational_stats (Transact-SQL)
 
-
 Last updated on 11/18/2025
-
 
 ## Remarks
 

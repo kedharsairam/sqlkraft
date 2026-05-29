@@ -3,13 +3,13 @@ title: "SUSE Linux Enterprise Server (SLES)"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   This sample bash script installs SQL Server 2022 (16.x) on SUSE Linux Enterprise Server (SLES)
-  
+
   without interactive input. It provides examples of installing the Dat
 tags:
   - "linux-operations"

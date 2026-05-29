@@ -1,10 +1,10 @@
 ---
-name: 'Slash Star (Block Comment)'
-title: 'Slash Star (Block Comment)'
-category: 'statements'
-description: ''
+name: "Slash Star (Block Comment)"
+title: "Slash Star (Block Comment)"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

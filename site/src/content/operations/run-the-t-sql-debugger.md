@@ -3,14 +3,14 @@ title: "Run the T-SQL Debugger"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   You can start the Transact-SQL debugger after you open a Database Engine Query Editor
-  
-  window. You can set options to customize how the debugger runs and run your 
+
+  window. You can set options to customize how the debugger runs and run your
 tags:
   - "ssb-diagnose"
   - "run-the-t-sql-debugger"

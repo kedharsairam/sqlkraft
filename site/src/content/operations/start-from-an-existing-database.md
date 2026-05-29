@@ -3,19 +3,19 @@ title: "Start from an existing database"
 topic: "ssms"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL
-  
+
   database in Microsoft Fabric
-  
+
   SQL projects contain declarative (
-  
+
   statement) files for all the objects in a database, such
 tags:
   - "ssms"

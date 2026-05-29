@@ -1,8 +1,8 @@
 ---
-name: 'O. Use the UNION query hint'
-title: 'O. Use the UNION query hint'
-category: 'statements'
-description: 'The following example shows how the'
+name: "O. Use the UNION query hint"
+title: "O. Use the UNION query hint"
+category: "statements"
+description: "The following example shows how the"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

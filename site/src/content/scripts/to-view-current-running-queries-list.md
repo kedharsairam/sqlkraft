@@ -1,7 +1,7 @@
 ---
-name: 'To View Current Running Queries List'
-title: 'To View Current Running Queries List'
-description: 'SQL Server diagnostic script for architecture operations.'
+name: "To View Current Running Queries List"
+title: "To View Current Running Queries List"
+description: "SQL Server diagnostic script for architecture operations."
 category: architecture
 tags: ["architecture"]
 pubDate: 2025-03-15

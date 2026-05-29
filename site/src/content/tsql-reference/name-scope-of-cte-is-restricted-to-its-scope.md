@@ -1,10 +1,10 @@
 ---
-name: 'Name scope of CTE is restricted to its scope'
-title: 'Name scope of CTE is restricted to its scope'
-category: 'statements'
-description: ''
+name: "Name scope of CTE is restricted to its scope"
+title: "Name scope of CTE is restricted to its scope"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-*(Content pending extraction)*
+_(Content pending extraction)_

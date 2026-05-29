@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_change_log_shipping_primary_database'
-title: 'sp_change_log_shipping_primary_database'
-category: 'general'
-description: 'Changes the primary database settings. Transact-SQL syntax conventions The name of the database on the primary server. The path to the backup folder on the primary server.'
+name: "sys.sp_change_log_shipping_primary_database"
+title: "sp_change_log_shipping_primary_database"
+category: "general"
+description: "Changes the primary database settings. Transact-SQL syntax conventions The name of the database on the primary server. The path to the backup folder on the primary server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

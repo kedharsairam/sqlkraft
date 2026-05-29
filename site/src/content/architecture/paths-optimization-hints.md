@@ -3,21 +3,21 @@ title: "Paths & optimization hints"
 topic: "xml-data"
 description: |
   Article
-  
+
   •
-  
+
   03/03/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to specify node paths to index and optimization hints for indexing
-  
+
   when you
 tags:
   - "xml-data"

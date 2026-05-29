@@ -1,7 +1,7 @@
 ---
-title: 'Memory-optimized hash index architecture'
-topic: 'index-architecture'
-description: '### Configure the hash index bucket'
+title: "Memory-optimized hash index architecture"
+topic: "index-architecture"
+description: "### Configure the hash index bucket"
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

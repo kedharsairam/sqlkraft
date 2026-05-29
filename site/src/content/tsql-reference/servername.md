@@ -1,8 +1,8 @@
 ---
-name: '@@SERVERNAME'
-title: '@@SERVERNAME'
-category: 'variables'
-description: '#### Server information'
+name: "@@SERVERNAME"
+title: "@@SERVERNAME"
+category: "variables"
+description: "#### Server information"
 tags: ["tsql", "variables"]
 pubDate: 2026-05-29
 ---

@@ -3,15 +3,15 @@ title: "CreateVersionedSOSHostObject"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/07/2024
-  
+
   Creates a versioned object for the root hosting interface.
-  
+
   This article describes a native code API that is used by SQL Server and may also be called by
-  
+
   other Microsoft produ
 tags:
   - "event-classes"

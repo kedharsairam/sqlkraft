@@ -3,17 +3,17 @@ title: "Client connection types"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   11/25/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   In an Always On availability group, you can configure one or more availability replicas to allow
-  
+
   read-only connections when running under the secondar
 tags:
   - "high-availability"

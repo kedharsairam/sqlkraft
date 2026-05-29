@@ -3,17 +3,17 @@ title: "SQL:BatchStarting Event Class"
 topic: "event-classes"
 description: |
   SQL:BatchStarting Event Class
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The SQL:BatchStarting event class indicates that a Transact-SQ
 tags:
   - "event-classes"

@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_addmergesubscription'
-title: 'sp_addmergesubscription'
-category: 'general'
-description: 'Creates a push or pull merge subscription. This stored procedure is executed at the Publisher Transact-SQL syntax conventions'
+name: "sys.sp_addmergesubscription"
+title: "sp_addmergesubscription"
+category: "general"
+description: "Creates a push or pull merge subscription. This stored procedure is executed at the Publisher Transact-SQL syntax conventions"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

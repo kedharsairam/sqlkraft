@@ -3,17 +3,17 @@ title: "Troubleshooting"
 topic: "high-availability"
 description: |
   10/21/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This article provides information about the following issues:
-  
+
   Basic troubleshooting steps
-  
+
   Recover from a failover cluster failure
-  
+
   Resolve the most common failov
 tags:
   - "high-availability"

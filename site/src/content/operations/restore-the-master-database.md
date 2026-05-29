@@ -3,15 +3,15 @@ title: "Restore the master database"
 topic: "linux-operations"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   on Linux
-  
+
   Under certain circumstances, you might need to restore the
-  
+
   database on an instance of
-  
+
   SQL Server in single-user mode on Linux. Scenarios include migrating to a new
 tags:
   - "linux-operations"

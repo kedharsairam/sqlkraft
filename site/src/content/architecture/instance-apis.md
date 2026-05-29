@@ -3,15 +3,15 @@ title: "Instance APIs"
 topic: "clr-integration"
 description: |
   SQL Server Express LocalDB instance APIs
-  
+
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   In the traditional, service-based SQL Server world, individual SQL Server instances installed on a
-  
+
   single computer are p
 tags:
   - "clr-integration"

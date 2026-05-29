@@ -3,32 +3,32 @@ title: "LOCALDB_ERROR_TOO_MANY_SHARED_INSTANCES"
 topic: "clr-integration"
 description: |
   07/14/2025
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Product
-  
+
   Name
-  
+
   SQL Server
-  
+
   Event ID
-  
+
   287
-  
+
   Event Source
-  
+
   SQL Server Local Database Runtime 12.0
-  
+
   Component
-  
+
   Local Database Runtime API
-  
+
   Message Text
-  
-  There are too 
+
+  There are too
 tags:
   - "clr-integration"
   - "localdb-error-too-many-shared-instances"

@@ -1,8 +1,8 @@
 ---
-name: '@@NESTLEVEL'
-title: '@@NESTLEVEL'
-category: 'variables'
-description: ''
+name: "@@NESTLEVEL"
+title: "@@NESTLEVEL"
+category: "variables"
+description: ""
 tags: ["tsql", "variables"]
 pubDate: 2026-05-29
 ---

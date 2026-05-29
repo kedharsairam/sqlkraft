@@ -1,8 +1,8 @@
 ---
-name: 'Date-time constants'
-title: 'Date-time constants'
-category: 'data-types'
-description: 'Binary constants have the prefix'
+name: "Date-time constants"
+title: "Date-time constants"
+category: "data-types"
+description: "Binary constants have the prefix"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -41,8 +41,8 @@ constants:
 
 text
 
-
 ## Examples of datetime constants are:
+
 text
 
 ７

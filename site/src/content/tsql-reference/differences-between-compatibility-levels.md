@@ -1,8 +1,8 @@
 ---
-name: 'Differences between compatibility levels'
-title: 'Differences between compatibility levels'
-category: 'predicates'
-description: 'resulting in different converted values. To restore previous conversion behavior, set the'
+name: "Differences between compatibility levels"
+title: "Differences between compatibility levels"
+category: "predicates"
+description: "resulting in different converted values. To restore previous conversion behavior, set the"
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---
@@ -11,8 +11,8 @@ resulting in different converted values. To restore previous conversion behavior
 
 database compatibility level to 120 or lower.
 
-
 ## Examples of breaking changes
+
 by compatibility level are:
 
 Changed column names in system objects. In SQL Server 2012 (11.x) the column
@@ -143,7 +143,7 @@ For example, when SQL Server 2016 (13.x) was released, all the Query Optimizer f
 
 released for previous SQL Server versions (and respective compatibility levels 100 through
 
-120) became automatically enabled for databases that use the SQL Server 2016 (13.x)
+120. became automatically enabled for databases that use the SQL Server 2016 (13.x)
 
 default compatibility level (130). Only post-RTM Query Optimizer fixes need to be
 

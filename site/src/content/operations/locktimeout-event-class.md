@@ -3,17 +3,17 @@ title: "Lock:Timeout Event Class"
 topic: "event-classes"
 description: |
   Applies to:
-  
+
   SQL Server 2016 (13.x) and later versions
-  
+
   Azure SQL Database
-  
+
   Azure
-  
+
   SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   The Lock:Timeout event class indicates that a request for a l
 tags:
   - "event-classes"

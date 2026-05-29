@@ -1,13 +1,14 @@
 ---
-name: 'Histogram'
-title: 'Histogram'
-category: 'statements'
-description: '(4, 4, 6), (4, 5, 6), (4, 5, 7). Using the prefix (A, B) the same column values have these distinct'
+name: "Histogram"
+title: "Histogram"
+category: "statements"
+description: "(4, 4, 6), (4, 5, 6), (4, 5, 7). Using the prefix (A, B) the same column values have these distinct"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 ## Description
+
 (4, 4, 6), (4, 5, 6), (4, 5, 7). Using the prefix (A, B) the same column values have these distinct
 
 value lists: (3, 5), (4, 4), and (4, 5)
@@ -28,8 +29,8 @@ The following table describes the columns returned in the result set when the
 
 option is specified.
 
-
 ## Description
+
 Upper bound column value for a histogram step. The column value is also called a
 
 key value.
@@ -62,8 +63,8 @@ When
 
 is 0,
 
-
 ## returns 1 for the histogram step.
+
 Statistics update date is stored in the
 
 statistics blob object

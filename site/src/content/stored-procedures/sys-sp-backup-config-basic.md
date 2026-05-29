@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_backup_config_basic'
-title: 'managed_backup.sp_backup_config_basic'
-category: 'general'
-description: 'SQL Server 2016 (13.x) and later versions Configures the SQL Server managed backup to Microsoft Azure basic settings for a specific database or for an instance of SQL Server. Transact-SQL syntax conventions Enable or disable SQL Server managed backup to Microsoft Azure for the specified database. Required parameter when configuring SQL Server managed backup to Microsoft Azure for the first instanc'
+name: "sys.sp_backup_config_basic"
+title: "managed_backup.sp_backup_config_basic"
+category: "general"
+description: "SQL Server 2016 (13.x) and later versions Configures the SQL Server managed backup to Microsoft Azure basic settings for a specific database or for an instance of SQL Server. Transact-SQL syntax conventions Enable or disable SQL Server managed backup to Microsoft Azure for the specified database. Required parameter when configuring SQL Server managed backup to Microsoft Azure for the first instanc"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

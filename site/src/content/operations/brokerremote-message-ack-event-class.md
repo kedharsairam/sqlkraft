@@ -3,25 +3,25 @@ title: "Broker:Remote Message Ack Event Class"
 topic: "event-classes"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   SQL Server generates a
-  
+
   event when Service Broker sends or
-  
+
   receives a message acknowledgement.
-  
+
   Description
-  
+
   The name of t
 tags:
   - "event-classes"

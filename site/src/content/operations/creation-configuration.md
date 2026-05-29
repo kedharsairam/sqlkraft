@@ -3,13 +3,13 @@ title: "Creation & configuration"
 topic: "high-availability"
 description: |
   02/05/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   The topics in this section explain how to deploy a Always On availability groups
-  
+
   implementation on instances of SQL Server 2012 (11.x) that reside on different Wi
 tags:
   - "high-availability"

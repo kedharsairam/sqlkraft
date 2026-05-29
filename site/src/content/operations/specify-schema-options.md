@@ -3,19 +3,19 @@ title: "Specify schema options"
 topic: "migration"
 description: |
   Article
-  
+
   •
-  
+
   09/27/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Managed Instance
-  
+
   This topic describes how to specify schema options in SQL Server by using SQL Server
-  
+
   Management Studio or Transact-SQL. Wh
 tags:
   - "migration"

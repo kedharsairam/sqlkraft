@@ -1,8 +1,8 @@
 ---
-name: 'LEFT'
-title: 'LEFT'
-category: 'statements'
-description: ''
+name: "LEFT"
+title: "LEFT"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

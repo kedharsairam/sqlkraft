@@ -3,23 +3,23 @@ title: "srv_sendmsg"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   02/28/2023
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Sends a message to the client.
-  
+
   ）
-  
+
   Important
-  
+
   This feature will be removed in a future version of SQL Server. Avoid using this feature in
-  
+
   new developm
 tags:
   - "clr-integration"

@@ -1,8 +1,8 @@
 ---
-name: 'Result Sets'
-title: 'Result Sets'
-category: 'statements'
-description: 'For descriptions of the RESTORE LABELONLY arguments, see'
+name: "Result Sets"
+title: "Result Sets"
+category: "statements"
+description: "For descriptions of the RESTORE LABELONLY arguments, see"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -17,8 +17,8 @@ SQL)
 
 The result set from RESTORE LABELONLY consists of a single row with this information.
 
-
 ## Description
+
 Name of the media.
 
 Unique identification number of the media set.

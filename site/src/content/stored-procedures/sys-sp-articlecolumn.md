@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_articlecolumn'
-title: 'sp_articlecolumn'
-category: 'general'
-description: 'Used to specify columns included in an article to vertically filter data in a published table. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication that contains this article. The name of the column to be added or dropped.'
+name: "sys.sp_articlecolumn"
+title: "sp_articlecolumn"
+category: "general"
+description: "Used to specify columns included in an article to vertically filter data in a published table. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication that contains this article. The name of the column to be added or dropped."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

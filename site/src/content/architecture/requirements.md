@@ -3,17 +3,17 @@ title: "Requirements"
 topic: "clr-integration"
 description: |
   Article
-  
+
   •
-  
+
   12/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   A type in a common language runtime (CLR) assembly can be registered as a user-defined
-  
+
   aggregate function, as long as it implements the required aggre
 tags:
   - "clr-integration"

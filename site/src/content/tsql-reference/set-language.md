@@ -1,8 +1,8 @@
 ---
-name: 'SET LANGUAGE'
-title: 'SET LANGUAGE'
-category: 'statements'
-description: ''
+name: "SET LANGUAGE"
+title: "SET LANGUAGE"
+category: "statements"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

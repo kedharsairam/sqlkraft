@@ -3,17 +3,17 @@ title: "View Always On failover cluster"
 topic: "azure-synapse"
 description: |
   Article
-  
+
   •
-  
+
   07/30/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure portal provides information about SQL Server failover cluster instances when they are
-  
+
   enabled by Azure Arc. The Azure SQL extension agent must b
 tags:
   - "azure-synapse"

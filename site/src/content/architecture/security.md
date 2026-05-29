@@ -1,7 +1,7 @@
 ---
-title: 'Security'
-topic: 'query-processing'
-description: 'Specifying the SQLOLEDB provider for linked servers.'
+title: "Security"
+topic: "query-processing"
+description: "Specifying the SQLOLEDB provider for linked servers."
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -104,14 +104,14 @@ Feature name
 
 The
 
-
 ## syntax
+
 Replaced by the new
 
 and
 
-
 ## syntax
+
 ﾉ
 
 Expand table

@@ -1,8 +1,8 @@
 ---
-name: 'DATE_BUCKET'
-title: 'DATE_BUCKET'
-category: 'data-types'
-description: ''
+name: "DATE_BUCKET"
+title: "DATE_BUCKET"
+category: "data-types"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

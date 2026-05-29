@@ -3,21 +3,21 @@ title: "Troubleshoot Database Mirroring Configuration"
 topic: "high-availability"
 description: |
   Article
-  
+
   •
-  
+
   02/01/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   This topic provides information to help you troubleshoot problems in setting up a database
-  
+
   mirroring session.
-  
+
   Error Message 1418
-  
+
   This SQL Server mes
 tags:
   - "high-availability"

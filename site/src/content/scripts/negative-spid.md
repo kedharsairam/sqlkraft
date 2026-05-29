@@ -1,7 +1,7 @@
 ---
-name: 'Negative SPID'
-title: 'Negative SPID'
-description: 'it can be -2 or -3 or -4.'
+name: "Negative SPID"
+title: "Negative SPID"
+description: "it can be -2 or -3 or -4."
 category: troubleshooting
 tags: ["troubleshooting"]
 pubDate: 2025-03-15

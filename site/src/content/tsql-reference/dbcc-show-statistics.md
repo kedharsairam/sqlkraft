@@ -1,8 +1,8 @@
 ---
-name: 'DBCC SHOW_STATISTICS'
-title: 'DBCC SHOW_STATISTICS'
-category: 'statements'
-description: 'Azure SQL Managed Instance'
+name: "DBCC SHOW_STATISTICS"
+title: "DBCC SHOW_STATISTICS"
+category: "statements"
+description: "Azure SQL Managed Instance"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

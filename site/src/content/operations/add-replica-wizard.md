@@ -3,16 +3,16 @@ title: "Add replica - wizard"
 topic: "high-availability"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Use the
-  
+
   to help you add a new secondary replica to
-  
+
   an existing Always On availability group.
-  
-  If you have never added any availability replica to an availability group, see 
+
+  If you have never added any availability replica to an availability group, see
 tags:
   - "high-availability"
   - "add-replica-wizard"

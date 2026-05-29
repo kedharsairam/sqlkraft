@@ -3,17 +3,17 @@ title: "Use results in application code"
 topic: "xml-data"
 description: |
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   SQL database in Microsoft Fabric
-  
+
   By using FOR XML clauses with SQL queries, you can retrieve and cast query results as XML
-  
+
   da
 tags:
   - "xml-data"

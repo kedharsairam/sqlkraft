@@ -3,21 +3,21 @@ title: "View databases"
 topic: "collation"
 description: |
   Article
-  
+
   •
-  
+
   09/29/2024
-  
+
   Applies to:
-  
+
   SQL Server
-  
+
   Azure SQL Database
-  
+
   Azure SQL Managed Instance
-  
+
   This article describes how to view a list of databases on an instance of SQL Server by using SQL
-  
+
   Serve
 tags:
   - "collation"

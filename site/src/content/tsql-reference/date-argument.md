@@ -1,8 +1,8 @@
 ---
-name: 'date Argument'
-title: 'date Argument'
-category: 'data-types'
-description: 'The return value depends on the language environment set by using'
+name: "date Argument"
+title: "date Argument"
+category: "data-types"
+description: "The return value depends on the language environment set by using"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -61,8 +61,8 @@ date
 
 argument has no time zone offset,
 
-
 ## returns 0.
+
 When
 
 date
@@ -73,8 +73,8 @@ smalldatetime
 
 ,
 
-
 ## returns seconds as 00.
+
 If the data type of the
 
 date
@@ -111,8 +111,8 @@ date
 
 , and
 
-
 ## returns
+
 .
 
 SQL

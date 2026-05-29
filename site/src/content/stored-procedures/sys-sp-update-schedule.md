@@ -1,8 +1,8 @@
 ---
-name: 'sys.sp_update_schedule'
-title: 'sp_update_schedule'
-category: 'general'
-description: 'Changes the settings for a SQL Server Agent schedule. Transact-SQL syntax conventions The identifier of the schedule to modify. The name of the schedule to modify.'
+name: "sys.sp_update_schedule"
+title: "sp_update_schedule"
+category: "general"
+description: "Changes the settings for a SQL Server Agent schedule. Transact-SQL syntax conventions The identifier of the schedule to modify. The name of the schedule to modify."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

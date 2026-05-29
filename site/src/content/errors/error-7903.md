@@ -1,10 +1,10 @@
 ---
-name: '7903'
-title: 'Error 7903'
+name: "7903"
+title: "Error 7903"
 errorNumber: 7903
-severity: 'medium'
-category: 'corruption'
-description: '7. Then find the file identified in the error message (for example NO_USER_FILE_SHOULD_BE_HERE.txt), and make a copy of this file to a temporary directory as a backup. 8. Once you ensure you have a co'
+severity: "medium"
+category: "corruption"
+description: "7. Then find the file identified in the error message (for example NO_USER_FILE_SHOULD_BE_HERE.txt), and make a copy of this file to a temporary directory as a backup. 8. Once you ensure you have a co"
 tags: ["corruption", "severity-medium"]
 pubDate: 2026-05-29
 ---
@@ -19,5 +19,4 @@ MEDIUM (Level N/A)
 
 ## Troubleshooting
 
-*(Diagnostic content pending full extraction)*
-
+_(Diagnostic content pending full extraction)_
