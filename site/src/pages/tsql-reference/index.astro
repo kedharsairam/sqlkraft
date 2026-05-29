@@ -38,7 +38,7 @@ const CATEGORY_LABELS = {
   </nav>
 
   <header class="page-header">
-    <h1>T-SQL Reference ({sorted.length})</h1>
+    <h1>T-SQL Reference</h1>
     <p class="page-desc">
       SQL Server Transact-SQL language reference covering statements, queries, data types,
       operators, functions, hints, predicates, transactions, and language elements.
@@ -52,7 +52,6 @@ const CATEGORY_LABELS = {
         .map(([cat, entries]) => (
           <a href={`#cat-${cat}`} class="cat-nav-item">
             <span class="cat-nav-label">{CATEGORY_LABELS[cat] || cat}</span>
-            <span class="cat-nav-count">{entries.length}</span>
           </a>
         ))
     }
@@ -63,19 +62,15 @@ const CATEGORY_LABELS = {
       .sort((a, b) => b[1].length - a[1].length)
       .map(([cat, entries]) => (
         <section id={`cat-${cat}`} class="category-section">
-          <h2 class="category-heading">
-            {CATEGORY_LABELS[cat] || cat} ({entries.length})
-          </h2>
+          <h2 class="category-heading">{CATEGORY_LABELS[cat] || cat}</h2>
           <div class="card-grid">
             {entries.map((entry) => {
               const { name, description, syntax, tags } = entry.data;
               return (
                 <a href={`/sqlkraft/tsql-reference/${entry.slug}/`} class="item-card">
                   <div class="card-title">{name}</div>
-                  {syntax && <div class="card-syntax">{syntax.slice(0, 100)}...</div>}
-                  <p class="card-desc">
-                    {description ? description.slice(0, 120) : "No description available."}
-                  </p>
+                  {syntax && <div class="card-syntax">{syntax.slice(0, 200)}</div>}
+                  <p class="card-desc">{description || "No description available."}</p>
                   <div class="card-tags">
                     {tags.slice(0, 3).map((tag) => (
                       <span class="card-tag">#{tag}</span>
@@ -145,7 +140,7 @@ const CATEGORY_LABELS = {
     transition: border-color 0.2s;
   }
   .cat-nav-item:hover {
-    border-color: var(--accent);
+    border-color: var(--text-secondary);
     text-decoration: none;
   }
   .cat-nav-label {
@@ -153,14 +148,6 @@ const CATEGORY_LABELS = {
     font-weight: 500;
     color: var(--text-primary);
   }
-  .cat-nav-count {
-    font-size: clamp(10px, 1vw, 12px);
-    color: var(--text-secondary);
-    background: rgba(255, 255, 255, 0.08);
-    padding: 1px 7px;
-    border-radius: 4px;
-  }
-
   .category-section {
     margin-bottom: 36px;
     scroll-margin-top: 72px;
@@ -202,7 +189,7 @@ const CATEGORY_LABELS = {
     font-family: var(--font-mono);
     font-size: clamp(12px, 1.3vw, 15px);
     font-weight: 600;
-    color: var(--accent);
+    color: var(--text-primary);
   }
   .card-syntax {
     font-family: var(--font-mono);
@@ -220,7 +207,7 @@ const CATEGORY_LABELS = {
     color: var(--text-secondary);
     line-height: 1.5;
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }

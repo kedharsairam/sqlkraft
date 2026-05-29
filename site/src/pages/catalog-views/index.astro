@@ -17,7 +17,7 @@ const sorted = allViews.sort((a, b) => a.data.name.localeCompare(b.data.name));
   </nav>
 
   <header class="page-header">
-    <h1>System Catalog Views ({sorted.length})</h1>
+    <h1>System Catalog Views</h1>
     <p class="page-desc">
       SQL Server system catalog views provide metadata about databases, tables, indexes, columns,
       security principals, permissions, and server configuration.
@@ -32,9 +32,7 @@ const sorted = allViews.sort((a, b) => a.data.name.localeCompare(b.data.name));
           <a href={`/sqlkraft/catalog-views/${entry.slug}/`} class="item-card">
             <div class="card-title">{name}</div>
             <span class="cat-badge">{category}</span>
-            <p class="card-desc">
-              {description ? description.slice(0, 150) : "No description available."}
-            </p>
+            <p class="card-desc">{description || "No description available."}</p>
             <div class="card-tags">
               {tags.slice(0, 3).map((tag) => (
                 <span class="card-tag">#{tag}</span>
@@ -110,7 +108,7 @@ const sorted = allViews.sort((a, b) => a.data.name.localeCompare(b.data.name));
     font-family: var(--font-mono);
     font-size: clamp(12px, 1.3vw, 15px);
     font-weight: 600;
-    color: var(--accent);
+    color: var(--text-primary);
   }
   .cat-badge {
     font-size: clamp(10px, 1vw, 12px);

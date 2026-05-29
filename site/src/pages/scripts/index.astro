@@ -46,7 +46,7 @@ const scriptsData = sorted.map((s) => ({
   </nav>
 
   <header class="page-header">
-    <h1>TSQL Scripts & Snippets <span id="script-count">{sorted.length}</span></h1>
+    <h1>TSQL Scripts & Snippets</h1>
     <p class="page-desc">
       Reusable diagnostic and administrative scripts covering wait statistics analysis, DMV queries,
       index maintenance, blocking chains, memory pressure, and more.
@@ -125,7 +125,6 @@ const scriptsData = sorted.map((s) => ({
   const searchInput = document.getElementById("search-input");
   const pills = document.querySelectorAll(".pill");
   const cards = document.querySelectorAll(".item-card");
-  const countEl = document.getElementById("script-count");
   const emptyState = document.getElementById("empty-state");
   const resetBtn = document.getElementById("reset-btn");
 
@@ -155,7 +154,6 @@ const scriptsData = sorted.map((s) => ({
       if (show) visible++;
     });
 
-    countEl.textContent = visible;
     emptyState.style.display = visible === 0 ? "" : "none";
   }
 
@@ -279,13 +277,13 @@ const scriptsData = sorted.map((s) => ({
     white-space: nowrap;
   }
   .pill:hover {
-    border-color: var(--accent);
-    color: var(--accent);
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
   }
   .pill.active {
-    background: rgba(47, 128, 237, 0.15);
-    border-color: var(--accent);
-    color: var(--accent);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
   }
 
   /* ── Card Grid ── */
@@ -317,7 +315,7 @@ const scriptsData = sorted.map((s) => ({
     font-family: var(--font-mono);
     font-size: clamp(12px, 1.3vw, 15px);
     font-weight: 600;
-    color: var(--accent);
+    color: var(--text-primary);
   }
   .cat-badge {
     font-size: clamp(10px, 1vw, 12px);

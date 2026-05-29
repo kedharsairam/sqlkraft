@@ -17,7 +17,7 @@ const sorted = allFns.sort((a, b) => a.data.name.localeCompare(b.data.name));
   </nav>
 
   <header class="page-header">
-    <h1>System Functions ({sorted.length})</h1>
+    <h1>System Functions</h1>
     <p class="page-desc">
       SQL Server built-in system functions organized by category — aggregate, analytic, conversion,
       cryptographic, date/time, mathematical, metadata, ranking, security, string, and more.
@@ -35,9 +35,7 @@ const sorted = allFns.sort((a, b) => a.data.name.localeCompare(b.data.name));
               {returnType && <span class="return-badge">{returnType}</span>}
             </div>
             <span class="cat-badge">{category}</span>
-            <p class="card-desc">
-              {description ? description.slice(0, 150) : "No description available."}
-            </p>
+            <p class="card-desc">{description || "No description available."}</p>
             <div class="card-tags">
               {tags.slice(0, 3).map((tag) => (
                 <span class="card-tag">#{tag}</span>
@@ -119,7 +117,7 @@ const sorted = allFns.sort((a, b) => a.data.name.localeCompare(b.data.name));
     font-family: var(--font-mono);
     font-size: clamp(12px, 1.3vw, 15px);
     font-weight: 600;
-    color: var(--accent);
+    color: var(--text-primary);
   }
   .return-badge {
     font-family: var(--font-mono);
