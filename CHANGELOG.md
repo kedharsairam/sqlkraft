@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.12.0] — 2026-05-29
+
+### Added
+
+- **Wait Statistics diagnostic section panels** — Individual wait statistic detail pages now render `## Overview` with cool left-border accent (`#58a6ff`), `## Troubleshooting`/`## Diagnostic Mechanics` with warm left-border accent (`#d29922`), and `## See Also` with muted border — each section gets panel background and 3px left-border rail for visual scanning
+- **Compact border-muted property tables** — All `.body-content` tables across DMV, Catalog View, Script, and Wait Statistics detail pages refactored with `border: 1px solid var(--border-glass)`, `padding: 0.5rem 1rem` cell padding, `rgba(255,255,255,0.02)` header background, rounded corners via `overflow: hidden`, and last-row border removal
+
+### Changed
+
+- **Script Copy widget redesigned** — Copy button repositioned to `top: clamp(20px, 3vw, 36px)` to align with code block margin; converted to terminal-adjacent `rgba(13,17,23,0.85)` background with `backdrop-filter: blur(4px)`; hover state now includes `transform: translateY(-1px)` lift and `box-shadow: 0 2px 8px rgba(0,0,0,0.3)`; border uses `rgba(255,255,255,0.1)` for premium neutral shell integration
+- **Detail title accent → primary** — `.detail-title` color changed from `var(--accent)` to `var(--text-primary)` on DMV, Catalog View, and Script detail pages (Wait Statistics was already `var(--text-primary)`)
+- **Cat-badge accent → secondary** — `.cat-badge` color changed from `var(--accent)` to `var(--text-secondary)` on DMV, Catalog View, and Script detail pages for neutral palette consistency
+- **Wait Statistics related-scripts callout neutralized** — Border changed from `1px solid var(--accent)` to `1px solid var(--border-glass)`, background from blue tint `rgba(47,128,237,0.06)` to neutral `rgba(255,255,255,0.03)`; script link pills also neutralized with `var(--text-secondary)` color and `var(--border-glass)` border
+
 ## [0.11.0] — 2026-05-29
 
 ### Added

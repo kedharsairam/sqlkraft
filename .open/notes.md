@@ -69,26 +69,24 @@
 ### Known issues
 - (none)
 
-## v0.11.0 — Stage 13 Category-Tailored Layouts
+## v0.12.0 — Stage 14 Detail View Architectures & Polish
 
 ### What was done
-- **Multi-column compact card grids**: All 10 index page card grids changed from `clamp(300px, 30vw, 480px)` to `clamp(240px, 18vw, 320px)` enabling 3–4 columns on 1080p; grid gap reduced from `clamp(10px, 1.5vw, 18px)` to `clamp(8px, 1vw, 14px)`
-- **Categorical section grouping**: dmvs (12 categories), catalog-views (4), stored-procedures (10), functions (7), errors (5 severities) — each with section jump nav pill bar, border-bottom heading, and `scroll-margin-top: 72px`
-- **Global link accent neutralization**: `a { color: var(--accent) }` → `var(--text-primary)` in BaseLayout; breadcrumb/detail-footer links → `var(--text-secondary)`; cat-badge accent → neutral; `:not(pre) > code` accent → `#e6edf3`; detail-title accent → `var(--text-primary)`
-- **Category badges removed from section-grouped pages**: Redundant since category is now the section heading
-- **Severity-colored error index cards**: Color-coded border/background badges per severity level
-- **Fixed orphaned template code**: Removed dead HTML/JSX remnants from errors, functions, dmvs, stored-procedures index pages causing build failures
+- **Compact border-muted property tables**: All `.body-content` tables across DMV, Catalog View, Script, and Wait Statistics detail pages refactored with `border: 1px solid var(--border-glass)`, `padding: 0.5rem 1rem`, header bg `rgba(255,255,255,0.02)`, rounded corners, last-row border removal
+- **Wait Statistics diagnostic section panels**: `## Overview` with cool blue left-border, `## Troubleshooting`/`## Diagnostic Mechanics` with warm amber left-border, `## See Also` muted — each h2 gets 3px border-left rail panel treatment
+- **Script Copy widget polished**: Terminal-adjacent dark semi-transparent bg (`rgba(13,17,23,0.85)`), `backdrop-filter: blur(4px)`, hover `translateY(-1px)` lift + box-shadow, aligned with pre margin-top via `top: clamp(20px, 3vw, 36px)`
+- **Detail title & badge accent → neutral**: `.detail-title` → `var(--text-primary)`, `.cat-badge` → `var(--text-secondary)` on DMV/Catalog/Scripts detail pages (v0.11.0 scope extension)
+- **Wait Statistics callout neutralized**: Replaced blue accent border with `var(--border-glass)`, script links use neutral palette
 
 ### Key commits
-- (pending — commit `v0.11.0: implement category-tailored layouts, multi-column section grids, and link accent unification`)
+- (pending — `v0.12.0: finalize custom detail-view architectures and script copy utility`)
 
 ### Known issues
 - (none)
 
 ### Build commands
-- `cd site && npm run build` — production build (24.57s, 6,591 pages)
+- `cd site && npm run build` — production build (27.85s, 6,591 pages)
 - `cd site && npm run lint` — prettier check (must pass for CI)
-- `cd site && node rebuild-search-index.cjs` — search index regeneration
 
 ### Next Steps
-Stage 14 (TBD — Phase 2 view architectures: Copy Script button CSS polish, wait-statistics detail panel styling, DMV/catalog detail compact property tables, search UX enhancements)
+Stage 15 (TBD — search UX enhancements, cookbook browsing mode, or dark mode refinements)

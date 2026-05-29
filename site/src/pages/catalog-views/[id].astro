@@ -72,13 +72,13 @@ const { name, title, category, description, tags } = entry.data;
     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     font-weight: 700;
     font-family: var(--font-mono);
-    color: var(--accent);
+    color: var(--text-primary);
   }
   .cat-badge {
     font-size: clamp(10px, 1vw, 12px);
     font-weight: 500;
     background: rgba(255, 255, 255, 0.06);
-    color: var(--accent);
+    color: var(--text-secondary);
     padding: clamp(2px, 0.3vw, 5px) clamp(6px, 0.8vw, 12px);
     border-radius: 4px;
     text-transform: capitalize;
@@ -88,6 +88,32 @@ const { name, title, category, description, tags } = entry.data;
     flex-wrap: wrap;
     gap: clamp(4px, 0.6vw, 8px);
     margin-bottom: clamp(12px, 2vw, 24px);
+  }
+
+  /* ── Compact border-muted property tables ── */
+  .body-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: clamp(12px, 1.5vw, 20px);
+    border: 1px solid var(--border-glass);
+    border-radius: clamp(4px, 0.5vw, 8px);
+    overflow: hidden;
+  }
+  .body-content th {
+    text-align: left;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text-primary);
+    font-weight: 600;
+    border-bottom: 1px solid var(--border-glass);
+  }
+  .body-content td {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--border-glass);
+    vertical-align: top;
+  }
+  .body-content tr:last-child td {
+    border-bottom: none;
   }
   .tag-pill {
     font-size: clamp(11px, 1vw, 13px);
