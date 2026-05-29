@@ -8,11 +8,11 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 >
   <section class="hero">
     <h1>SqlKraft.</h1>
-    <p class="tagline">Enterprise SQL Server Reference Engine</p>
+    <p class="tagline">Enterprise SQL Server Reference Hub</p>
     <p class="subtitle">
-      Comprehensive reference documentation extracted from official SQL Server 2017 documentation.
-      DMVs, wait statistics, T-SQL, catalog views, system functions, stored procedures, and
-      architecture.
+      Curated, high-performance static encyclopedia for the DBA community. DMVs, wait statistics,
+      T-SQL reference, catalog views, system functions, stored procedures, architecture, operations,
+      and diagnostic scripts.
     </p>
   </section>
 
@@ -71,10 +71,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
         configuration.
       </p>
     </a>
+    <a href="/sqlkraft/scripts/" class="portal-card">
+      <h2>TSQL Diagnostic Scripts</h2>
+      <p>
+        270+ curated diagnostic and administrative scripts — indexing, performance, security,
+        backup-restore, high-availability, and more.
+      </p>
+    </a>
   </section>
 
   <footer class="footer">
-    <p>SqlKraft v0.2.0 — Built from SQL Server 2017 official documentation (30,465 pages).</p>
+    <p>SqlKraft v0.5.0 — Curated enterprise DBA reference.</p>
     <p>Open source. MIT licensed. <a href="https://github.com/kedharsairam/sqlkraft">GitHub</a></p>
   </footer>
 </BaseLayout>
