@@ -1,6 +1,6 @@
 ---
 title: "Install SSDT"
-topic: "ssb-diagnose"
+topic: "data-tools"
 description: |
   Applies to:
   
@@ -18,7 +18,7 @@ description: |
   
   is a set of development tooling for bu
 tags:
-  - "ssb-diagnose"
+  - "data-tools"
   - "install-ssdt"
 pubDate: 2025-12-01
 ---

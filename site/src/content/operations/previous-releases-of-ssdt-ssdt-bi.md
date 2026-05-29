@@ -1,6 +1,6 @@
 ---
 title: "Previous releases of SSDT & SSDT-BI"
-topic: "ssb-diagnose"
+topic: "data-tools"
 description: |
   09/09/2025
   
@@ -18,7 +18,7 @@ description: |
   
   SQL Server Data Tools (SSDT) provides project templates a
 tags:
-  - "ssb-diagnose"
+  - "data-tools"
   - "previous-releases-of-ssdt-ssdt-bi"
 pubDate: 2025-12-01
 ---

@@ -1,92 +1,99 @@
 ---
 title: "Configure"
-topic: "linux-operations"
+topic: "high-availability"
 description: |
-  07/03/2025
+  ﾃ
+  
+  Summarize this article for me
   
   Applies to:
   
   SQL Server
   
-  - Linux
+  This article describes how to configure log shipping in SQL Server by using SQL Server
   
-  SQL Server 2019 (15.x) introduces SQL Server Replication for instances of SQL Server on Linux.
+  Management Studio or Transact-SQL.
   
-  For detailed information about replication, see
-  
-  SQL Serve
+  The primary datab
 tags:
-  - "linux-operations"
+  - "high-availability"
   - "configure"
 pubDate: 2025-12-01
 ---
 
-07/03/2025
+ﾃ
+
+Summarize this article for me
 
 Applies to:
 
 SQL Server
 
-- Linux
+This article describes how to configure log shipping in SQL Server by using SQL Server
 
-SQL Server 2019 (15.x) introduces SQL Server Replication for instances of SQL Server on Linux.
+Management Studio or Transact-SQL.
 
-For detailed information about replication, see
+The primary database must use the full or bulk-logged recovery model; switching the
 
-SQL Server Replication
+database to simple recovery will cause log shipping to stop functioning.
+
+Before you configure log shipping, you must create a share to make the transaction log
+
+backups available to the secondary server. This is a share of the directory where the
+
+transaction log backups will be generated. For example, if you back up your transaction
+
+logs to the directory
+
+, you could create the
+
+share
+
+of that directory.
+
+The log shipping stored procedures require membership in the
+
+fixed server role.
+
+７
+
+Note
+
+SQL Server 2008 (10.0.x) Enterprise and later versions support backup compression. When
+
+creating a log shipping configuration, you can control the backup compression behavior
+
+of log backups. For more information, see
 
 .
 
-Configure replication on Linux with either SQL Server Management Studio (SSMS) or Transact-
+）
 
-SQL stored procedures.
+Important
 
-To use SSMS, follow the instructions in this article.
+SQL Server 2025 (17.x) uses
 
-Use SSMS on a Windows operating system to connect to instances of SQL Server. For
+as the default version for linked
 
-background and instructions, see
+servers, which has a default
 
-Use SQL Server Management Studio on Windows to
+value of
 
-manage SQL Server on Linux
+. Changes to the linked
 
-.
+server configuration might be required when adding a SQL Server 2025 (17.x)
 
-For an example with stored procedures, follow the
+instance as a replica or monitor.
 
-Configure Replication with T-SQL
+Log shipping monitoring can break if the monitor is a remote SQL Server 2025 (17.x)
 
-tutorial.
+instance when other SQL Server instances in the log shipping topology use a
 
-Before configuring publishers, distributors, and subscribers, you need to complete a couple
-
-configuration steps for the SQL Server instance.
-
-1. Enable SQL Server Agent to use replication agents. On all Linux servers, run the following
-
-commands in the terminal.
-
-Bash
-
-2. Configure the SQL Server instance for replication. To configure the SQL Server instance for
-
-replication, run
-
-on all instances participating in
-
-replication.
-
-SQL
+previous version.
 
 ```cmd
-sys.sp_MSrepl_createdatatypemappings
-sudo /opt/mssql/bin/mssql-conf
-set
-sqlagent.enabled
-true
-sudo systemctl restart mssql-server
-USE
-msdb;
-GO
+C:\data\tlogs\
+\\<primaryserver>\tlogs
+Encrypt
+Mandatory
 ```

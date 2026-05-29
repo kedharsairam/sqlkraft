@@ -1,6 +1,6 @@
 ---
 title: "Connect to an existing database in SSDT"
-topic: "ssb-diagnose"
+topic: "data-tools"
 description: |
   09/09/2025
   
@@ -10,7 +10,7 @@ description: |
   
   S
 tags:
-  - "ssb-diagnose"
+  - "data-tools"
   - "connect-to-an-existing-database-in-ssdt"
 pubDate: 2025-12-01
 ---

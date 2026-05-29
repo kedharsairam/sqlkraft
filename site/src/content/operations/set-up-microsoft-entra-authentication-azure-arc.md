@@ -1,6 +1,6 @@
 ---
 title: "Set up Microsoft Entra authentication | Azure Arc"
-topic: "azure-synapse"
+topic: "azure-arc"
 description: |
   Applies to:
   
@@ -10,7 +10,7 @@ description: |
   
   with app registration, and demonstrates how to use different Micros
 tags:
-  - "azure-synapse"
+  - "azure-arc"
   - "set-up-microsoft-entra-authentication-azure-arc"
 pubDate: 2025-12-01
 ---

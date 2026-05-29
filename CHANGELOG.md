@@ -19,6 +19,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - **Search index rebuilt** — 5,987 records across 10 collections (operations: 979 unique entries)
 - **Zero-error build** — 6,034 pages, zero errors, zero schema validation failures
 
+### Added (Phase 5 - Final Sweep)
+
+- **5 missing operations topics populated** — `high-availability` (236 articles), `upgrade` (26), `migration` (30), `data-tools` (8), `azure-arc` (3). All 14 operations topics now have content
+- **PDF extraction (1,636 pages)** — Three new sections: HA/Always On/FCI/Mirroring/Log Shipping (p.866-2043, 1,178p), Upgrade (p.6442-6655, 214p), Migration (p.7155-7398, 244p). 8,807 headings, 2,294 code blocks
+- **`sweep_mapper.py`** — Post-processing mapper that handles page-range-based topic assignments for content outside Range 2, plus topic overrides for misclassified entries (SSDT→data-tools, Arc→azure-arc)
+- **Classification fixes** — SSDT entries under SSB Diagnose H2 (p.14702-15077) correctly re-mapped from `ssb-diagnose` to `data-tools` (8 articles). Azure Arc entries under Azure Synapse H2 (p.17071-17573) re-mapped from `azure-synapse` to `azure-arc` (3 articles)
+- **Search index rebuilt** — 6,266 records across 10 collections (operations: 1,258 unique entries, +279 from sweep)
+- **Zero-error build** — 6,321 pages, zero errors, 64.46s build time
+
 ## [0.3.0] — 2026-05-29
 
 ### Added

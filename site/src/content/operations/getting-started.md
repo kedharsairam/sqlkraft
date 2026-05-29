@@ -1,77 +1,76 @@
 ---
-title: "Getting Started"
-topic: "profiler"
+title: "Getting started"
+topic: "high-availability"
 description: |
-  This article describes the following ways to get started with the SQL Database Projects
+  10/10/2025
   
-  extension in Visual Studio Code:
+  Applies to:
   
-  1.
+  SQL Server
   
-  Create a new database project
+  This topic introduces the steps for configuring instances of SQL Server to support Always On
   
-  by going to the
-  
-  view or by searching for
-  
+  availability groups and for creating, managing, and monitoring an ava
 tags:
-  - "profiler"
+  - "high-availability"
   - "getting-started"
 pubDate: 2025-12-01
 ---
 
-This article describes the following ways to get started with the SQL Database Projects
+10/10/2025
 
-extension in Visual Studio Code:
+Applies to:
 
-1.
+SQL Server
 
-Create a new database project
+This topic introduces the steps for configuring instances of SQL Server to support Always On
 
-by going to the
+availability groups and for creating, managing, and monitoring an availability group.
 
-view or by searching for
+Before you create your first availability group, read the following topics:
 
-in the command palette.
+Overview of Always On Availability Groups (SQL Server)
 
-2. You can open
+Prerequisites, Restrictions, and Recommendations for Always On Availability Groups (SQL
 
-existing database projects
+Server)
 
-using
+You must enable
 
-in the
+the Always On availability groups feature on every instance
 
-command palette.
+of SQL Server that participates in an availability group.
 
-3.
+Prerequisites:
 
-Start from an existing database
+The host computer must be a Windows
 
-by using
+Server Failover Clustering (WSFC) node unless it's a
 
-from the command palette or by selecting
+read-
 
-in the
+scale availability group
 
-view.
+or on
 
-After you create or open a SQL project, you're ready to start developing with SQL projects.
-
-Some actions you might take are:
-
-Edit a table or other database objects.
-
-Build and publish the project.
-
-Use schema compare to visualize changes.
-
-Update the project from changes made to a database.
-
-For in-depth information about SQL projects concepts and more tutorials, see
-
-SQL database
-
-projects
+Linux
 
 .
+
+For information about the other prerequisites, see "SQL
+
+Server Instance Prerequisites and Restrictions" in
+
+Prerequisites, Restrictions, and Recommendations for
+
+Always On Availability Groups (SQL Server)
+
+.
+
+Enable and disable Always On Availability
+
+Groups
+
+ﾉ
+
+Expand table
