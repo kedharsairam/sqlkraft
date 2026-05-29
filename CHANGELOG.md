@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.14.0] — 2026-05-30
+
+### Added
+
+- **Mac-aware keyboard shortcut detection** — Badge and `aria-label` dynamically switch to `⌘K` on macOS (`navigator.platform.includes("Mac")`); SearchOverlay placeholder updates to `(⌘K)` as well
+
+### Changed
+
+- **Search shortcut badge polished** — `.search-shortcut` now styled as a proper badge with `background: rgba(255,255,255,0.1)`, `border: 1px solid var(--border-glass)`, `border-radius: 4px`, and `padding: 2px 6px` for a crisp, minimalist look
+- **Nav search button hover neutralized** — `.nav-search-btn:hover` border color changed from `var(--accent)` (blue) to `var(--text-primary)` (white) completing the site-wide accent→neutral sweep
+
 ## [0.13.0] — 2026-05-29
 
 ### Added

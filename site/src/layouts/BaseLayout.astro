@@ -58,6 +58,15 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
 </html>
 
 <script>
+  // ── Mac detection: show ⌘K instead of Ctrl+K ──
+  const isMac = navigator.platform.includes("Mac");
+  if (isMac) {
+    const badge = document.querySelector(".search-shortcut");
+    if (badge) badge.textContent = "⌘K";
+    const btn = document.getElementById("search-btn");
+    if (btn) btn.setAttribute("aria-label", "Search (⌘K)");
+  }
+
   // Wire up search button to open the overlay
   document.getElementById("search-btn")?.addEventListener("click", () => {
     const overlay = document.getElementById("search-overlay");
@@ -174,13 +183,18 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
     margin-left: 12px;
   }
   .nav-search-btn:hover {
-    border-color: var(--accent);
+    border-color: var(--text-primary);
     color: var(--text-primary);
   }
   .search-shortcut {
     font-size: 11px;
     font-family: var(--font-mono);
-    opacity: 0.6;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-glass);
+    border-radius: 4px;
+    padding: 2px 6px;
+    line-height: 1;
+    color: var(--text-secondary);
   }
   .app-shell {
     max-width: var(--content-max-width);
