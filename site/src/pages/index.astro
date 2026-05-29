@@ -1,0 +1,142 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="SqlKraft"
+  description="Enterprise SQL Server reference hub — DMVs, wait statistics, T-SQL reference, system catalog views, and architecture documentation."
+>
+  <section class="hero">
+    <h1>SqlKraft.</h1>
+    <p class="tagline">Enterprise SQL Server Reference Engine</p>
+    <p class="subtitle">
+      Comprehensive reference documentation extracted from official SQL Server 2017 documentation.
+      DMVs, wait statistics, T-SQL, catalog views, system functions, stored procedures, and
+      architecture.
+    </p>
+  </section>
+
+  <section class="portal-grid">
+    <a href="/sqlkraft/dmvs/" class="portal-card">
+      <h2>Dynamic Management Views</h2>
+      <p>160+ DMVs across execution, I/O, memory, indexing, transactions, and OS internals.</p>
+    </a>
+    <a href="/sqlkraft/wait-statistics/" class="portal-card">
+      <h2>Wait Statistics</h2>
+      <p>
+        50+ wait types categorized by severity — baseline, triage, top-consumer, blocking, and more.
+      </p>
+    </a>
+    <a href="/sqlkraft/catalog-views/" class="portal-card">
+      <h2>System Catalog Views</h2>
+      <p>
+        150+ catalog views — databases, objects, security, indexes, partitions, and configuration.
+      </p>
+    </a>
+    <a href="/sqlkraft/functions/" class="portal-card">
+      <h2>System Functions</h2>
+      <p>
+        All built-in functions — aggregate, analytic, conversion, string, date/time, system, and
+        JSON.
+      </p>
+    </a>
+    <a href="/sqlkraft/tsql-reference/" class="portal-card">
+      <h2>T-SQL Reference</h2>
+      <p>
+        Complete language reference — statements, queries, data types, operators, hints, and
+        predicates.
+      </p>
+    </a>
+    <a href="/sqlkraft/errors/" class="portal-card">
+      <h2>Error Codes</h2>
+      <p>Database Engine error codes with severity, message text, and troubleshooting guidance.</p>
+    </a>
+    <a href="/sqlkraft/architecture/" class="portal-card">
+      <h2>Architecture</h2>
+      <p>
+        Engine internals — query processing, memory management, locking, threading, and I/O
+        fundamentals.
+      </p>
+    </a>
+    <a href="/sqlkraft/stored-procedures/" class="portal-card">
+      <h2>System Stored Procedures</h2>
+      <p>
+        System stored procedures for administration, configuration, maintenance, and automation.
+      </p>
+    </a>
+  </section>
+
+  <footer class="footer">
+    <p>SqlKraft v0.1.0 — Built from SQL Server 2017 official documentation (30,465 pages).</p>
+    <p>Open source. MIT licensed. <a href="https://github.com/kedharsairam/sqlkraft">GitHub</a></p>
+  </footer>
+</BaseLayout>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: 64px 0 48px;
+  }
+  .hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: -1px;
+  }
+  .tagline {
+    font-size: 20px;
+    color: var(--text-primary);
+    margin-top: 8px;
+    font-weight: 500;
+  }
+  .subtitle {
+    font-size: 15px;
+    color: var(--text-secondary);
+    max-width: 640px;
+    margin: 16px auto 0;
+    line-height: 1.6;
+  }
+  .portal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 48px;
+  }
+  .portal-card {
+    display: block;
+    padding: 24px;
+    border: 1px solid var(--border-glass);
+    border-radius: 12px;
+    background: var(--bg-secondary);
+    transition:
+      border-color 0.2s,
+      transform 0.2s;
+    text-decoration: none;
+    color: inherit;
+  }
+  .portal-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  .portal-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text-primary);
+  }
+  .portal-card p {
+    font-size: 13px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+  }
+  .footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border-glass);
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 13px;
+    line-height: 1.8;
+  }
+</style>

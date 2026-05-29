@@ -1,0 +1,875 @@
+[
+  {
+    "slug": "sys-dm-db-task-space-usage",
+    "name": "sys.dm_db_task_space_usage",
+    "title": "sys.dm_db_task_space_usage",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-task-space-usage",
+    "name": "sys.dm_db_task_space_usage",
+    "title": "sys.dm_db_task_space_usage",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-task-space-usage",
+    "name": "sys.dm_db_task_space_usage",
+    "title": "sys.dm_db_task_space_usage",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-file-space-usage",
+    "name": "sys.dm_db_file_space_usage",
+    "title": "sys.dm_db_file_space_usage",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-log-space-usage",
+    "name": "sys.dm_db_log_space_usage",
+    "title": "sys.dm_db_log_space_usage",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-log-space-usage",
+    "name": "sys.dm_db_log_space_usage",
+    "title": "sys.dm_db_log_space_usage",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-log-space-usage",
+    "name": "sys.dm_db_log_space_usage",
+    "title": "sys.dm_db_log_space_usage",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-log-space-usage",
+    "name": "sys.dm_db_log_space_usage",
+    "title": "sys.dm_db_log_space_usage",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-session-space-usage",
+    "name": "sys.dm_db_session_space_usage",
+    "title": "sys.dm_db_session_space_usage",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-cached-plans",
+    "name": "sys.dm_exec_cached_plans",
+    "title": "sys.dm_exec_cached_plans",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-plan-attributes",
+    "name": "sys.dm_exec_plan_attributes",
+    "title": "sys.dm_exec_plan_attributes",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-plan-attributes",
+    "name": "sys.dm_exec_plan_attributes",
+    "title": "sys.dm_exec_plan_attributes",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-plan-attributes",
+    "name": "sys.dm_exec_plan_attributes",
+    "title": "sys.dm_exec_plan_attributes",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-cached-plans",
+    "name": "sys.dm_exec_cached_plans",
+    "title": "sys.dm_exec_cached_plans",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-plan-attributes",
+    "name": "sys.dm_exec_plan_attributes",
+    "title": "sys.dm_exec_plan_attributes",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-plan-attributes",
+    "name": "sys.dm_exec_plan_attributes",
+    "title": "sys.dm_exec_plan_attributes",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-plan-attributes",
+    "name": "sys.dm_exec_plan_attributes",
+    "title": "sys.dm_exec_plan_attributes",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object",
+    "name": "sys.dm_exec_describe_first_result_set_for_object",
+    "title": "sys.dm_exec_describe_first_result_set_for_object",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object",
+    "name": "sys.dm_exec_describe_first_result_set_for_object",
+    "title": "sys.dm_exec_describe_first_result_set_for_object",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object",
+    "name": "sys.dm_exec_describe_first_result_set_for_object",
+    "title": "sys.dm_exec_describe_first_result_set_for_object",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object",
+    "name": "sys.dm_exec_describe_first_result_set_for_object",
+    "title": "sys.dm_exec_describe_first_result_set_for_object",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object",
+    "name": "sys.dm_exec_describe_first_result_set_for_object",
+    "title": "sys.dm_exec_describe_first_result_set_for_object",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set",
+    "name": "sys.dm_exec_describe_first_result_set",
+    "title": "sys.dm_exec_describe_first_result_set",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set",
+    "name": "sys.dm_exec_describe_first_result_set",
+    "title": "sys.dm_exec_describe_first_result_set",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object-function-and",
+    "name": "sys.dm_exec_describe_first_result_set_for_object function and",
+    "title": "sys.dm_exec_describe_first_result_set_for_object function and",
+    "category": "execution",
+    "tags": ["execution", "io"],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set",
+    "name": "sys.dm_exec_describe_first_result_set",
+    "title": "sys.dm_exec_describe_first_result_set",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-sessions",
+    "name": "sys.dm_exec_sessions",
+    "title": "sys.dm_exec_sessions",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-sessions",
+    "name": "sys.dm_exec_sessions",
+    "title": "sys.dm_exec_sessions",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-workers",
+    "name": "sys.dm_os_workers",
+    "title": "sys.dm_os_workers",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object",
+    "name": "sys.dm_exec_describe_first_result_set_for_object",
+    "title": "sys.dm_exec_describe_first_result_set_for_object",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object",
+    "name": "sys.dm_exec_describe_first_result_set_for_object",
+    "title": "sys.dm_exec_describe_first_result_set_for_object",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object",
+    "name": "sys.dm_exec_describe_first_result_set_for_object",
+    "title": "sys.dm_exec_describe_first_result_set_for_object",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object",
+    "name": "sys.dm_exec_describe_first_result_set_for_object",
+    "title": "sys.dm_exec_describe_first_result_set_for_object",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object",
+    "name": "sys.dm_exec_describe_first_result_set_for_object",
+    "title": "sys.dm_exec_describe_first_result_set_for_object",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set",
+    "name": "sys.dm_exec_describe_first_result_set",
+    "title": "sys.dm_exec_describe_first_result_set",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set",
+    "name": "sys.dm_exec_describe_first_result_set",
+    "title": "sys.dm_exec_describe_first_result_set",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set-for-object-function-and",
+    "name": "sys.dm_exec_describe_first_result_set_for_object function and",
+    "title": "sys.dm_exec_describe_first_result_set_for_object function and",
+    "category": "execution",
+    "tags": ["execution", "io"],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-describe-first-result-set",
+    "name": "sys.dm_exec_describe_first_result_set",
+    "title": "sys.dm_exec_describe_first_result_set",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-sessions",
+    "name": "sys.dm_exec_sessions",
+    "title": "sys.dm_exec_sessions",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-sessions",
+    "name": "sys.dm_exec_sessions",
+    "title": "sys.dm_exec_sessions",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-sessions",
+    "name": "sys.dm_exec_sessions",
+    "title": "sys.dm_exec_sessions",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-workers",
+    "name": "sys.dm_os_workers",
+    "title": "sys.dm_os_workers",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-memory-clerks",
+    "name": "sys.dm_os_memory_clerks",
+    "title": "sys.dm_os_memory_clerks",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-requests",
+    "name": "sys.dm_exec_requests",
+    "title": "sys.dm_exec_requests",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-sql-text",
+    "name": "sys.dm_exec_sql_text",
+    "title": "sys.dm_exec_sql_text",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-sql-text",
+    "name": "sys.dm_exec_sql_text",
+    "title": "sys.dm_exec_sql_text",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-query-plan",
+    "name": "sys.dm_exec_query_plan",
+    "title": "sys.dm_exec_query_plan",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-query-plan",
+    "name": "sys.dm_exec_query_plan",
+    "title": "sys.dm_exec_query_plan",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-external-script-requests",
+    "name": "sys.dm_external_script_requests",
+    "title": "sys.dm_external_script_requests",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-external-script-requests",
+    "name": "sys.dm_external_script_requests",
+    "title": "sys.dm_external_script_requests",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-memory-clerks",
+    "name": "sys.dm_os_memory_clerks",
+    "title": "sys.dm_os_memory_clerks",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-requests",
+    "name": "sys.dm_exec_requests",
+    "title": "sys.dm_exec_requests",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-procedure-stats",
+    "name": "sys.dm_exec_procedure_stats",
+    "title": "sys.dm_exec_procedure_stats",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-sql-text",
+    "name": "sys.dm_exec_sql_text",
+    "title": "sys.dm_exec_sql_text",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-sql-text",
+    "name": "sys.dm_exec_sql_text",
+    "title": "sys.dm_exec_sql_text",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-sql-text",
+    "name": "sys.dm_exec_sql_text",
+    "title": "sys.dm_exec_sql_text",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-query-plan",
+    "name": "sys.dm_exec_query_plan",
+    "title": "sys.dm_exec_query_plan",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-query-plan",
+    "name": "sys.dm_exec_query_plan",
+    "title": "sys.dm_exec_query_plan",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-exec-sql-text",
+    "name": "sys.dm_exec_sql_text",
+    "title": "sys.dm_exec_sql_text",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-external-script-requests",
+    "name": "sys.dm_external_script_requests",
+    "title": "sys.dm_external_script_requests",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-external-script-requests",
+    "name": "sys.dm_external_script_requests",
+    "title": "sys.dm_external_script_requests",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-index-physical-stats",
+    "name": "sys.dm_db_index_physical_stats",
+    "title": "sys.dm_db_index_physical_stats",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-index-operational-stats",
+    "name": "sys.dm_db_index_operational_stats",
+    "title": "sys.dm_db_index_operational_stats",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-sys-info",
+    "name": "sys.dm_os_sys_info",
+    "title": "sys.dm_os_sys_info",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-sys-info",
+    "name": "sys.dm_os_sys_info",
+    "title": "sys.dm_os_sys_info",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-missing-index-columns",
+    "name": "sys.dm_db_missing_index_columns",
+    "title": "sys.dm_db_missing_index_columns",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-missing-index-group-stats-query",
+    "name": "sys.dm_db_missing_index_group_stats_query",
+    "title": "sys.dm_db_missing_index_group_stats_query",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-missing-index-group-stats-query",
+    "name": "sys.dm_db_missing_index_group_stats_query",
+    "title": "sys.dm_db_missing_index_group_stats_query",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-missing-index-group-stats-query",
+    "name": "sys.dm_db_missing_index_group_stats_query",
+    "title": "sys.dm_db_missing_index_group_stats_query",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-missing-index-group-stats-query",
+    "name": "sys.dm_db_missing_index_group_stats_query",
+    "title": "sys.dm_db_missing_index_group_stats_query",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-missing-index-group-stats-query",
+    "name": "sys.dm_db_missing_index_group_stats_query",
+    "title": "sys.dm_db_missing_index_group_stats_query",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-missing-index-columns",
+    "name": "sys.dm_db_missing_index_columns",
+    "title": "sys.dm_db_missing_index_columns",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-missing-index-columns",
+    "name": "sys.dm_db_missing_index_columns",
+    "title": "sys.dm_db_missing_index_columns",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-io-cluster-shared-drives",
+    "name": "sys.dm_io_cluster_shared_drives",
+    "title": "sys.dm_io_cluster_shared_drives",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-xtp-gc-queue-stats",
+    "name": "sys.dm_xtp_gc_queue_stats",
+    "title": "sys.dm_xtp_gc_queue_stats",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-xtp-gc-queue-stats",
+    "name": "sys.dm_xtp_gc_queue_stats",
+    "title": "sys.dm_xtp_gc_queue_stats",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-xtp-gc-queue-stats",
+    "name": "sys.dm_xtp_gc_queue_stats",
+    "title": "sys.dm_xtp_gc_queue_stats",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-db-stats-properties",
+    "name": "sys.dm_db_stats_properties",
+    "title": "sys.dm_db_stats_properties",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-sql-referenced-entities",
+    "name": "sys.dm_sql_referenced_entities",
+    "title": "sys.dm_sql_referenced_entities",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-sql-referenced-entities",
+    "name": "sys.dm_sql_referenced_entities",
+    "title": "sys.dm_sql_referenced_entities",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-sql-referenced-entities",
+    "name": "sys.dm_sql_referenced_entities",
+    "title": "sys.dm_sql_referenced_entities",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-sql-referencing-entities",
+    "name": "sys.dm_sql_referencing_entities",
+    "title": "sys.dm_sql_referencing_entities",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-sql-referencing-entities",
+    "name": "sys.dm_sql_referencing_entities",
+    "title": "sys.dm_sql_referencing_entities",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-resource-governor-external-resource-pool-affinity",
+    "name": "sys.dm_resource_governor_external_resource_pool_affinity",
+    "title": "sys.dm_resource_governor_external_resource_pool_affinity",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-resource-governor-workload-groups",
+    "name": "sys.dm_resource_governor_workload_groups",
+    "title": "sys.dm_resource_governor_workload_groups",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-resource-governor-resource-pools",
+    "name": "sys.dm_resource_governor_resource_pools",
+    "title": "sys.dm_resource_governor_resource_pools",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-buffer-descriptors",
+    "name": "sys.dm_os_buffer_descriptors",
+    "title": "sys.dm_os_buffer_descriptors",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-windows-info",
+    "name": "sys.dm_os_windows_info",
+    "title": "sys.dm_os_windows_info",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-memory-clerks",
+    "name": "sys.dm_os_memory_clerks",
+    "title": "sys.dm_os_memory_clerks",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-latch-stats",
+    "name": "sys.dm_os_latch_stats",
+    "title": "sys.dm_os_latch_stats",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-sys-info",
+    "name": "sys.dm_os_sys_info",
+    "title": "sys.dm_os_sys_info",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-workers",
+    "name": "sys.dm_os_workers",
+    "title": "sys.dm_os_workers",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-server-diagnostics-log-configurations",
+    "name": "sys.dm_os_server_diagnostics_log_configurations",
+    "title": "sys.dm_os_server_diagnostics_log_configurations",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-schedulers",
+    "name": "sys.dm_os_schedulers",
+    "title": "sys.dm_os_schedulers",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-threads",
+    "name": "sys.dm_os_threads",
+    "title": "sys.dm_os_threads",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-os-workers",
+    "name": "sys.dm_os_workers",
+    "title": "sys.dm_os_workers",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  },
+  {
+    "slug": "sys-dm-tran-database-transactions",
+    "name": "sys.dm_tran_database_transactions",
+    "title": "sys.dm_tran_database_transactions",
+    "category": "execution",
+    "tags": [],
+    "description": "",
+    "collection": "dmvs"
+  }
+]
