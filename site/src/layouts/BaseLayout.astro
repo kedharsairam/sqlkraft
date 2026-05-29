@@ -95,15 +95,15 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
     --fluid-padding-v: clamp(24px, 3vw, 48px);
 
     /* ── Unified spacing rhythm ── */
-    --space-xs: 0.5rem;   /* 8px — h1→tagline */
-    --space-sm: 0.75rem;  /* 12px — tagline→subtitle */
-    --space-md: 1.5rem;   /* 24px — section breaks */
-    --space-lg: 2.5rem;   /* 40px — nav→title, subtitle→grid */
-    --space-xl: 4rem;     /* 64px — section top/bottom */
+    --space-xs: 0.5rem; /* 8px — h1→tagline */
+    --space-sm: 0.75rem; /* 12px — tagline→subtitle */
+    --space-md: 1.5rem; /* 24px — section breaks */
+    --space-lg: 2.5rem; /* 40px — nav→title, subtitle→grid */
+    --space-xl: 4rem; /* 64px — section top/bottom */
 
     /* ── Unified component tokens ── */
-    --card-padding: 1.75rem;     /* 28px — card inner padding on wide viewports */
-    --code-padding: 1.75rem;     /* 28px — code block inner padding */
+    --card-padding: 1.75rem; /* 28px — card inner padding on wide viewports */
+    --code-padding: 1.75rem; /* 28px — code block inner padding */
   }
   * {
     margin: 0;
@@ -185,8 +185,7 @@ const { title = "SqlKraft", description = "SQL Server Reference Hub" } = Astro.p
   .app-shell {
     max-width: var(--content-max-width);
     margin: 0 auto;
-    padding: calc(var(--nav-height) + var(--space-lg)) var(--fluid-padding-h)
-      var(--fluid-padding-v);
+    padding: calc(var(--nav-height) + var(--space-lg)) var(--fluid-padding-h) var(--fluid-padding-v);
   }
   a {
     color: var(--accent);
