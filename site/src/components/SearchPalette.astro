@@ -362,7 +362,7 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
 
       /* ── Click any result to navigate ── */
       results.addEventListener("click", function (e) {
-        var link = e.target.closest("a.item-card");
+        var link = e.target.closest("a.palette-result");
         if (link) {
           var href = link.getAttribute("href");
           if (href) window.location.href = href;

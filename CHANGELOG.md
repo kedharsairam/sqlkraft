@@ -5,6 +5,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.48.0] — 2026-05-31 — **Emergency Search Layout Clean-Up and Card Overflow Fix**
+
+### Fixed
+
+- **Search palette card block regression (critical)** — Search results were rendering as full `.item-card` blocks inheriting `min-height: 160px`, glass borders, and massive padding from Card.astro's global CSS. Each result appeared as a floating card block instead of a compact list row.
+  - Rewrote `__renderCard()` in CardPalette.astro to output `<a class="palette-result">` instead of `<a class="item-card palette-card">`
+  - Removed `import Card from "./Card.astro"` — palette no longer inherits card CSS globals
+  - Results are now tight 44px horizontal rows: title left + badge right, no description block
+  - Hover: subtle `rgba(255, 255, 255, 0.05)` background — no border glow, no transform, no shadow
+  - Active (keyboard): `rgba(47, 128, 237, 0.08)` accent tint
+  - Removed `.card-tag`, `.card-tag-badge`, `.palette-card`, `.palette-card-desc` CSS classes
+  - Added `.palette-result`, `.palette-badge`, `.palette-badge--*` self-contained classes
+  - Updated click handler in SearchPalette.astro from `a.item-card` to `a.palette-result`
+
+- **Card description container overflow** — Added `text-overflow: ellipsis` and `word-break: break-word` to `.card-desc` in Card.astro. Long unbroken string fragments (raw SQL arrays, concatenated tokens) no longer extend past the card's physical padding boundaries.
+
+### Changed
+
+- `site/package.json` — version updated to `0.48.0-beta`
+- `site/src/components/CardPalette.astro` — Major rewrite (v7): compact 44px row layout, self-contained CSS, no Card.astro dependency
+- `site/src/components/Card.astro` — Added `text-overflow: ellipsis; word-break: break-word;` to `.card-desc`
+- `site/src/components/SearchPalette.astro` — Updated click delegation selector to `a.palette-result`
+
+### Build
+
+- 5,241 pages, 0 errors
+
+---
+
 ## [0.47.0] — 2026-05-31 — **Wait Stats Card Blueprint Lock, Spotlight macOS-native Redesign, Automated Sanitization Engine**
 
 ### Added
