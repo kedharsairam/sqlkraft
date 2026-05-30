@@ -98,8 +98,6 @@ unique for every batch.
 
 The query below provides information about memory usage for the sql manager cache:
 
-SQL
-
 There is a 1:N relation between a sql handle and plan handles. Such a condition occurs when
 
 the cache key for the compiled plans is different. This might occur due to change in SET
@@ -108,11 +106,7 @@ options between two executions of the same batch.
 
 Consider the following stored procedure:
 
-SQL
-
 Verify what can be found in the plan cache using the query below:
-
-SQL
 
 ７
 
@@ -132,8 +126,6 @@ Now execute the stored procedure with a different parameter, but no other change
 
 execution context:
 
-SQL
-
 Verify again what can be found in the plan cache. Here's the result set.
 
 Output
@@ -146,35 +138,23 @@ because the execution context data structures were reused. Now change the
 
 option and execute the stored procedure using the same parameter.
 
-SQL
-
 Verify again what can be found in the plan cache. Here's the result set.
 
 Output
 
-```sql
-sys.dm_exec_requests
-```
+`sys.dm_exec_requests`
 
-```sql
-statement_start_offset
-```
+`statement_start_offset`
 
-```sql
-statement_end_offset
-```
+`statement_end_offset`
 
-```sql
-sys.dm_exec_query_stats
-```
+`sys.dm_exec_query_stats`
 
 ```sql
 SELECT
 *
-FROM
-sys.dm_os_memory_objects
-WHERE
-type
+FROM sys.dm_os_memory_objects
+WHERE type
 =
 'MEMOBJ_SQLMGR'
 ;
@@ -182,9 +162,7 @@ USE
 WideWorldImporters;
 GO
 CREATE
-PROCEDURE
-usp_SalesByCustomer @CID
-int
+PROCEDURE usp_SalesByCustomer @CID int
 AS
 SELECT
 *
@@ -202,60 +180,43 @@ GO
 ```
 
 ```sql
-SELECT
-cp.memory_object_address, cp.objtype, refcounts, usecounts,
+SELECT cp.memory_object_address, cp.objtype, refcounts, usecounts,
 qs.query_plan_hash, qs.query_hash,
 qs.plan_handle, qs.sql_handle
-FROM
-sys.dm_exec_cached_plans
-AS
-cp
+FROM sys.dm_exec_cached_plans
+AS cp
 CROSS
-APPLY
-sys.dm_exec_sql_text (cp.plan_handle)
+APPLY sys.dm_exec_sql_text (cp.plan_handle)
 CROSS
-APPLY
-sys.dm_exec_query_plan (cp.plan_handle)
+APPLY sys.dm_exec_query_plan (cp.plan_handle)
 INNER
-JOIN
-sys.dm_exec_query_stats
-AS
-qs
-ON
-qs.plan_handle = cp.plan_handle
-WHERE
-text
+JOIN sys.dm_exec_query_stats
+AS qs
+ON qs.plan_handle = cp.plan_handle
+WHERE text
 LIKE
 '%usp_SalesByCustomer%'
-GO
-memory_object_address    objtype   refcounts   usecounts   query_plan_hash
-query_hash
+GO memory_object_address    objtype   refcounts   usecounts   query_plan_hash query_hash
 ---------------------   -------  ---------  ---------  ------------------ ----------
 --------
 0x000001CC6C534060        Proc      2           1           0x3B4303441A1D7E6D
-0xA05D5197DA1EAC2D
-plan_handle
+0xA05D5197DA1EAC2D plan_handle
 ------------------------------------------------------------------------------------
 ------
 0x0500130095555D02D022F111CD01000001000000000000000000000000000000000000000000000000
-000000
-sql_handle
+000000 sql_handle
 ------------------------------------------------------------------------------------
 ------
 0x0300130095555D02C864C10061AB000001000000000000000000000000000000000000000000000000
 000000
 EXEC usp_SalesByCustomer 8
-GO
-memory_object_address    objtype   refcounts   usecounts   query_plan_hash
-query_hash
+GO memory_object_address    objtype   refcounts   usecounts   query_plan_hash query_hash
 ---------------------   -------  ---------  ---------  ------------------ ----------
 --------
 0x000001CC6C534060        Proc      2           2           0x3B4303441A1D7E6D
 ```
 
-```sql
-usecounts
-```
+`usecounts`
 
 ```sql
 SET
@@ -263,13 +224,11 @@ ANSI_DEFAULTS
 ```
 
 ```sql
-0xA05D5197DA1EAC2D
-plan_handle
+0xA05D5197DA1EAC2D plan_handle
 ------------------------------------------------------------------------------------
 ------
 0x0500130095555D02D022F111CD01000001000000000000000000000000000000000000000000000000
-000000
-sql_handle
+000000 sql_handle
 ------------------------------------------------------------------------------------
 ------
 0x0300130095555D02C864C10061AB000001000000000000000000000000000000000000000000000000
@@ -279,23 +238,19 @@ ANSI_DEFAULTS
 OFF
 GO
 EXEC usp_SalesByCustomer 8
-GO
-memory_object_address    objtype   refcounts   usecounts   query_plan_hash
-query_hash
+GO memory_object_address    objtype   refcounts   usecounts   query_plan_hash query_hash
 ---------------------   -------  ---------  ---------  ------------------ ----------
 --------
 0x000001CD01DEC060        Proc      2           1           0x3B4303441A1D7E6D
 0xA05D5197DA1EAC2D
 0x000001CC6C534060        Proc      2           2           0x3B4303441A1D7E6D
-0xA05D5197DA1EAC2D
-plan_handle
+0xA05D5197DA1EAC2D plan_handle
 ------------------------------------------------------------------------------------
 ------
 0x0500130095555D02B031F111CD01000001000000000000000000000000000000000000000000000000
 000000
 0x0500130095555D02D022F111CD01000001000000000000000000000000000000000000000000000000
-000000
-sql_handle
+000000 sql_handle
 ------------------------------------------------------------------------------------
 ------
 0x0300130095555D02C864C10061AB000001000000000000000000000000000000000000000000000000

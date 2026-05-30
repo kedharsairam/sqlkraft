@@ -118,13 +118,9 @@ and a separate plan for the view.
 
 For example, consider the following view:
 
-SQL
-
 Based on this view, both of these Transact-SQL statements perform the same operations on the
 
 base tables and produce the same results:
-
-SQL
 
 The SQL Server Management Studio Showplan feature shows that the relational engine builds
 
@@ -132,13 +128,9 @@ the same execution plan for both of these
 
 statements.
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-MyProc2
-```
+`MyProc2`
 
 ```sql
 @d2
@@ -149,45 +141,25 @@ OrderDate
 > @d2
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 CREATE PROCEDURE
@@ -209,17 +181,13 @@ GROUP BY
 ORDER BY
 ```
 
-```sql
-UNION
-```
+`UNION`
 
 ```sql
 ORDER BY
 ```
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 WHERE
@@ -228,9 +196,7 @@ END
 ;
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 USE
@@ -240,18 +206,14 @@ CREATE
 VIEW
 EmployeeName
 AS
-SELECT
-h.BusinessEntityID, p.LastName, p.FirstName
+SELECT h.BusinessEntityID, p.LastName, p.FirstName
 FROM
 HumanResources.Employee
-AS
-h
+AS h
 JOIN
 Person.Person
-AS
-p
-ON
-h.BusinessEntityID = p.BusinessEntityID;
+AS p
+ON h.BusinessEntityID = p.BusinessEntityID;
 GO
 /* SELECT referencing the EmployeeName view. */
 SELECT
@@ -260,14 +222,12 @@ AS
 EmployeeLastName, SalesOrderID, OrderDate
 FROM
 AdventureWorks2022.Sales.SalesOrderHeader
-AS
-soh
+AS soh
 JOIN
 AdventureWorks2022.dbo.EmployeeName
 AS
 EmpN
-ON
-(soh.SalesPersonID = EmpN.BusinessEntityID)
+ON (soh.SalesPersonID = EmpN.BusinessEntityID)
 WHERE
 OrderDate >
 '20020531'
@@ -279,20 +239,15 @@ AS
 EmployeeLastName, SalesOrderID, OrderDate
 FROM
 AdventureWorks2022.HumanResources.Employee
-AS
-e
+AS e
 JOIN
 AdventureWorks2022.Sales.SalesOrderHeader
-AS
-soh
-ON
-soh.SalesPersonID = e.BusinessEntityID
+AS soh
+ON soh.SalesPersonID = e.BusinessEntityID
 JOIN
 AdventureWorks2022.Person.Person
-AS
-p
-ON
-e.BusinessEntityID =p.BusinessEntityID
+AS p
+ON e.BusinessEntityID =p.BusinessEntityID
 WHERE
 OrderDate >
 '20020531'

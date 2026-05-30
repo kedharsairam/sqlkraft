@@ -80,22 +80,16 @@ statistics.
 
 ### Reduced index storage costs
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
 ```sql
 PRIMARY KEY
 ```
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
 ```sql
 PRIMARY KEY
 ```
 
-```sql
-UNIQUE
-```
+`UNIQUE`

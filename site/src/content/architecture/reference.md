@@ -95,43 +95,15 @@ The following query returns built-in components that can be referenced from a us
 
 XML schema collection:
 
-SQL
-
 ```sql
-xml = http://www.w3.org/XML/1998/namespace
-xs = http://www.w3.org/2001/XMLSchema
-xsi = http://www.w3.org/2001/XMLSchema-instance
-fn = http://www.w3.org/2004/07/xpath-functions
-sqltypes = https://schemas.microsoft.com/sqlserver/2004/sqltypes
-xdt = http://www.w3.org/2004/07/xpath-datatypes
-(no prefix) = urn:schemas-microsoft-com:xml-sql
-(no prefix) = https://schemas.microsoft.com/sqlserver/2004/SOAP
+xml = http://www.w3.org/XML/1998/namespace xs = http://www.w3.org/2001/XMLSchema xsi = http://www.w3.org/2001/XMLSchema-instance fn = http://www.w3.org/2004/07/xpath-functions sqltypes = https://schemas.microsoft.com/sqlserver/2004/sqltypes xdt = http://www.w3.org/2004/07/xpath-datatypes (no prefix) = urn:schemas-microsoft-com:xml-sql (no prefix) = https://schemas.microsoft.com/sqlserver/2004/SOAP
 SELECT
-C.name, N.name, C.symbol_space_desc
-from
-sys.xml_schema_components C
-join
-sys.xml_schema_namespaces N
-on
-((C.xml_namespace_id = N.xml_namespace_id)
-AND
-(C.xml_collection_id =
-N.xml_collection_id))
-join
-sys.xml_schema_collections SC
-on
-SC.xml_collection_id = C.xml_collection_id
-where
-((C.xml_collection_id = 1)
-AND
-(C.name
-is
-not
-null
+C.name, N.name, C.symbol_space_desc from sys.xml_schema_components C join sys.xml_schema_namespaces N on ((C.xml_namespace_id = N.xml_namespace_id)
+AND (C.xml_collection_id =
+N.xml_collection_id)) join sys.xml_schema_collections SC on
+SC.xml_collection_id = C.xml_collection_id where ((C.xml_collection_id = 1)
+AND (C.name is not null
 )
-AND
-(C.scoping_xml_component_id
-is
-null
+AND (C.scoping_xml_component_id is null
 )
 ```

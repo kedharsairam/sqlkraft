@@ -93,8 +93,6 @@ operator.
 TO
 AND
 OR
-CONSTRAINT
-constraint_name
-CONNECTION
-(cause1[, clause2...])
+CONSTRAINT constraint_name
+CONNECTION (cause1[, clause2...])
 ```

@@ -164,18 +164,10 @@ SQL Server retries any read that fails with a checksum, torn page, or other I/O 
 
 If the read is successful in any one of the retry attempts, a message is written to the error log
 
-```sql
-RESOURCE_MEMPHYSICAL_HIGH
-```
+`RESOURCE_MEMPHYSICAL_HIGH`
 
-```sql
-RESOURCE_MEMPHYSICAL_LOW
-```
+`RESOURCE_MEMPHYSICAL_LOW`
 
-```sql
-RESOURCE_MEMPHYSICAL_STEADY
-```
+`RESOURCE_MEMPHYSICAL_STEADY`
 
-```sql
-RESOURCE_MEMVIRTUAL_LOW
-```
+`RESOURCE_MEMVIRTUAL_LOW`

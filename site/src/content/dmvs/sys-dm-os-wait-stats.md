@@ -14,9 +14,7 @@ Analytics Platform System (PDW) Returns information about all the waits encounte
 
 ## Syntax
 
-```sql
-sys.dm_pdw_nodes_os_wait_stats
-```
+`sys.dm_pdw_nodes_os_wait_stats`
 
 ## Permissions
 

@@ -45,8 +45,6 @@ The following query retrieves the product model ID, name, and list of products i
 
 model.
 
-SQL
-
 The nested SELECT retrieves a list of product IDs. It specifies "data()" as the column name for
 
 product IDs. Because PATH mode specifies an empty string for the row element name, there's
@@ -88,8 +86,7 @@ Production.Product.ProductModelID =
 Production.ProductModel.ProductModelID
 FOR
 XML
-PATH
-(
+PATH (
 ''
 ))
 AS
@@ -100,8 +97,7 @@ WHERE
 ProductModelID = 7
 FOR
 XML
-PATH
-(
+PATH (
 'ProductModelData'
 );
 <ProductModelData

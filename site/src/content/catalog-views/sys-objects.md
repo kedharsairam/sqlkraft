@@ -26,10 +26,8 @@ Azure SQL Database Azure SQL Managed Instance Azure Synapse Analytics Analytics 
 ```sql
 SELECT
 *
-FROM
-sys.objects
-WHERE
-type
+FROM sys.objects
+WHERE type
 =
 'IT'
 ;
@@ -317,15 +315,11 @@ The following table lists the columns in a queue.
 
 ### Example 1
 
-```sql
-VacationHours
-```
+`VacationHours`
 
 ### Example 2
 
-```sql
-HumanResources.Employee
-```
+`HumanResources.Employee`
 
 ### Example 3
 
@@ -341,47 +335,34 @@ AND d.parent_column_id = c.column_id
 
 ### Example 4
 
-```sql
-sys.objects
-```
+`sys.objects`
 
 ### Example 5
 
 ```sql
 SELECT
 *
-FROM
-master.INFORMATION_SCHEMA.SCHEMATA;
+FROM master.INFORMATION_SCHEMA.SCHEMATA;
 ```
 
 ### Example 6
 
-```sql
-sys.objects
-```
+`sys.objects`
 
 ### Example 7
 
-```sql
-sys.sql_modules
-```
+`sys.sql_modules`
 
 ### Example 8
 
-```sql
-CONTROL
-```
+`CONTROL`
 
 ### Example 9
 
-```sql
-ALTER
-```
+`ALTER`
 
 ### Example 10
 
-```sql
-dbo.uspMyProc
-```
+`dbo.uspMyProc`
 
 _(... and 2 more examples)_

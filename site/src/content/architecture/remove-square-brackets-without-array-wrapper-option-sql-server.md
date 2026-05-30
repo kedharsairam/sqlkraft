@@ -35,8 +35,6 @@ SQL Managed Instance
 
 Azure Synapse Analytics (serverless SQL pool only)
 
-SQL
-
 analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
@@ -65,8 +63,6 @@ clause with and without the
 
 option.
 
-SQL
-
 with the
 
 option
@@ -87,15 +83,9 @@ WITHOUT_ARRAY_WRAPPER
 WITHOUT_ARRAY_WRAPPER
 WITHOUT_ARRAY_WRAPPER
 SELECT
-2015
-as
-year
-, 12
-as
-month
-, 15
-as
-day
+2015 as year
+, 12 as month
+, 15 as day
 FOR
 JSON
 PATH

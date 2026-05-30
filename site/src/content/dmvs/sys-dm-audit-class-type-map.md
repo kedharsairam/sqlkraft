@@ -14,70 +14,48 @@ Returns a table that lists securable classes that can be mapped to the audit log
 
 ## Syntax
 
-```sql
-sys.dm_audit_actions.
-```
+`sys.dm_audit_actions.`
 
 ## Examples
 
 ### Example 1
 
-```sql
-class_type
-```
+`class_type`
 
 ### Example 2
 
-```sql
-class_type
-```
+`class_type`
 
 ### Example 3
 
-```sql
-class_type
-```
+`class_type`
 
 ### Example 4
 
-```sql
-get_audit_file()
-```
+`get_audit_file()`
 
 ### Example 5
 
-```sql
-class_type_desc
-```
+`class_type_desc`
 
 ### Example 6
 
-```sql
-securable_class_desc
-```
+`securable_class_desc`
 
 ### Example 7
 
-```sql
-class_type
-```
+`class_type`
 
 ### Example 8
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 9
 
-```sql
-class_type
-```
+`class_type`
 
 ### Example 10
 
-```sql
-class_desc
-```
+`class_desc`
 
 _(... and 6 more examples)_

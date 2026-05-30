@@ -64,13 +64,9 @@ type, the query expression is executed to retrieve the local name part of the QN
 
 value from the instance.
 
-SQL
-
 ```sql
-AdventureWorks2022
-fn:local-name-from-QName($arg as xs:QName?) as xs:NCName?
+AdventureWorks2022 fn:local-name-from-QName($arg as xs:QName?) as xs:NCName?
 DROP
 TABLE
-T
-go
+T go
 ```

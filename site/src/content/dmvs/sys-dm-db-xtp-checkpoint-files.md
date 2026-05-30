@@ -14,6 +14,4 @@ Displays information about In-Memory OLTP checkpoint files, including file size,
 
 ## Syntax
 
-```sql
-sys.dm_db_xtp_checkpoint_files
-```
+`sys.dm_db_xtp_checkpoint_files`

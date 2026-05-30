@@ -14,6 +14,4 @@ SQL Server 2025 (17.x) Preview Contains the SQL/JSON paths for a JSON index. If 
 
 ## Syntax
 
-```sql
-Latin1_General_100_BIN2_UTF8
-```
+`Latin1_General_100_BIN2_UTF8`

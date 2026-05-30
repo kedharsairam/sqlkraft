@@ -74,25 +74,15 @@ completes. However, row versions created by each statement in the transaction ar
 
 maintained until the transaction completes.
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 READ COMMITTED

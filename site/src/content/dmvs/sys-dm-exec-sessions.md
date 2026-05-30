@@ -14,9 +14,7 @@ Azure SQL Database Azure SQL Managed Instance Associates up to 128 bytes of bina
 
 ## Syntax
 
-```sql
-sys.dm_exec_connections
-```
+`sys.dm_exec_connections`
 
 ## Remarks
 
@@ -62,9 +60,7 @@ columns in the following system
 
 ### Example 2
 
-```sql
-CONTEXT_INFO
-```
+`CONTEXT_INFO`
 
 ### Example 3
 

@@ -13,10 +13,6 @@ SQL Server 2017 (14.x) and later Lists a row for each file that makes up an exte
 
 ## Code Blocks
 
-```sql
-WINDOWS
-```
+`WINDOWS`
 
-```sql
-LINUX
-```
+`LINUX`

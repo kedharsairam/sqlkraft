@@ -20,8 +20,6 @@ used to maintain
 
 transactions aren't acquired.
 
-SQL
-
 The only lock acquired that references
 
 is a schema stability (
@@ -62,33 +60,21 @@ table that users access heavily can cause bottlenecks because users must wait fo
 
 lock to be released before accessing the table.
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-NOLOCK
-```
+`NOLOCK`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-HumanResources.Employee
-```
+`HumanResources.Employee`
 
 ```sql
 Sch-S
 ```
 
-```sql
-LOCK_ESCALATION
-```
+`LOCK_ESCALATION`
 
 ```sql
 ALTER TABLE
@@ -113,19 +99,15 @@ SELECT
 JobTitle
 FROM
 HumanResources.Employee
-WITH
-(NOLOCK);
+WITH (NOLOCK);
 GO
 -- Get information about the locks held by
 -- the transaction.
-SELECT
-resource_type,
+SELECT resource_type,
 resource_subtype,
 request_mode
-FROM
-sys.dm_tran_locks
-WHERE
-request_session_id = @@SPID;
+FROM sys.dm_tran_locks
+WHERE request_session_id = @@SPID;
 -- End the transaction.
 ROLLBACK
 ;

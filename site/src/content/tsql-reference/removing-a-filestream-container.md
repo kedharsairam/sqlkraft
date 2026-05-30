@@ -79,38 +79,20 @@ Database File Initialization
 
 .
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-READONLY
-```
+`READONLY`
 
-```sql
-READONLY
-```
+`READONLY`
 
-```sql
-READ_ONLY
-```
+`READ_ONLY`
 
-```sql
-READWRITE
-```
+`READWRITE`
 
-```sql
-READWRITE
-```
+`READWRITE`
 
-```sql
-READWRITE
-```
+`READWRITE`
 
-```sql
-READ_WRITE
-```
+`READ_WRITE`

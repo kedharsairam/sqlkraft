@@ -111,8 +111,6 @@ to overwrite the types in the column names (
 
 ).
 
-SQL
-
 ```sql
 SalesOrderIDList
 <Customer>

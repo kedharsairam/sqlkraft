@@ -98,30 +98,16 @@ few columns as possible.
 
 ### able
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-UPDATE
-```
+`UPDATE`

@@ -14,6 +14,4 @@ Deletes or reassigns jobs that belong to the specified login. Transact-SQL synta
 
 ## Syntax
 
-```sql
-sp_manage_jobs_by_login
-```
+`sp_manage_jobs_by_login`

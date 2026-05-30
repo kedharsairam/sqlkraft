@@ -110,6 +110,5 @@ Requirements and Limitations for XML Schema Collections on the Server
 Last updated on 11/18/2025
 
 ```sql
-xs:float
-xs:double
+xs:float xs:double
 ```

@@ -14,6 +14,4 @@ Reports the database-level memory consumers in the In-Memory OLTP database engin
 
 ## Syntax
 
-```sql
-memory_consumer_type_desc
-```
+`memory_consumer_type_desc`

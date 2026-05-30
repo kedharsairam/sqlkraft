@@ -7,8 +7,6 @@ tags: ["tsql", "variables"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 To declare more than one local variable, use a comma after the first local variable definition,
 
 and then specify the next local variable name and data type.
@@ -25,8 +23,6 @@ statement creates three local variables named
 
 :
 
-SQL
-
 In another example, the following
 
 statement creates a Boolean variable called
@@ -38,8 +34,6 @@ with a value of
 (
 
 ):
-
-SQL
 
 The scope of a variable is the range of Transact-SQL statements that can reference the variable.
 
@@ -53,11 +47,7 @@ keyword) and referenced in
 
 another:
 
-SQL
-
-```sql
-DECLARE
-```
+`DECLARE`
 
 ```sql
 @LastName
@@ -71,13 +61,9 @@ DECLARE
 @StateProvince
 ```
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-DECLARE
-```
+`DECLARE`
 
 ```sql
 @IsActive
@@ -87,13 +73,9 @@ DECLARE
 0
 ```
 
-```sql
-false
-```
+`false`
 
-```sql
-GO
-```
+`GO`
 
 ```sql
 DECLARE
@@ -104,16 +86,13 @@ INT
 DECLARE
 @LastName
 AS
-NVARCHAR
-(30),
+NVARCHAR (30),
 @FirstName
 AS
-NVARCHAR
-(20),
+NVARCHAR (20),
 @StateProvince
 AS
-NCHAR
-(2);
+NCHAR (2);
 DECLARE
 @IsActive
 AS

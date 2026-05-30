@@ -84,18 +84,12 @@ Important source and server information
 ```cmd
 \\SERVERNAME\SHARENAME
 /etc/samba/smb.conf
-SQLData
-mssql
+SQLData mssql
 [SQLData]
 path
-=/var/smb/SQLData
-read only = no
-browseable
+=/var/smb/SQLData read only = no browseable
 =
-yes
-guest ok = no
-writeable
+yes guest ok = no writeable
 =
-yes
-valid users = SQLSambaUser
+yes valid users = SQLSambaUser
 ```

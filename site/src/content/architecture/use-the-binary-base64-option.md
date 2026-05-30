@@ -77,28 +77,21 @@ know where to put this value in the XML hierarchy.
 
 For example, consider the following table with its one row.
 
-SQL
-
 The following query produces an error, which is caused by the casting to a binary large object
 
 (BLOB):
-
-SQL
 
 ```sql
 dbobject
 CREATE
 TABLE
-MyTable (Col1
-int
+MyTable (Col1 int
 PRIMARY
 KEY
-, Col2
-binary
+, Col2 binary
 )
 INSERT
 INTO
 MyTable
-VALUES
-(1, 0x7);
+VALUES (1, 0x7);
 ```

@@ -10,8 +10,6 @@ You can change the meaning of the query by adding parentheses to force evaluatio
 
 first. The following query finds only products under models 20 and 21 that are red.
 
-SQL
-
 Using parentheses, even when they aren't required, can improve the readability of queries, and
 
 reduce the chance of making a subtle mistake because of operator precedence. There is no
@@ -19,8 +17,6 @@ reduce the chance of making a subtle mistake because of operator precedence. The
 significant performance penalty in using parentheses. The following example is more readable
 
 than the original example, although they are syntactically the same.
-
-SQL
 
 A
 
@@ -256,29 +252,20 @@ efficient execution plan for the state of the database every time the statement 
 
 ### Live Query Statistics
 
-```sql
-OR
-```
+`OR`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 SELECT
 ProductID, ProductModelID
 FROM
 Production.Product
-WHERE
-(ProductModelID = 20
+WHERE (ProductModelID = 20
 OR
 ProductModelID = 21)
 AND
@@ -292,8 +279,7 @@ FROM
 Production.Product
 WHERE
 ProductModelID = 20
-OR
-(ProductModelID = 21
+OR (ProductModelID = 21
 AND
 Color =
 'Red'
@@ -301,9 +287,7 @@ Color =
 GO
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 ORDER BY
@@ -313,109 +297,57 @@ ORDER BY
 GROUP BY
 ```
 
-```sql
-FROM
-```
+`FROM`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-FROM
-```
+`FROM`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-HAVING
-```
+`HAVING`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-TableC
-```
+`TableC`
 
-```sql
-TableC
-```
+`TableC`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableC
-```
+`TableC`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-TableC
-```
+`TableC`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableC
-```
+`TableC`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableB
-```
+`TableB`
 
 ```sql
 ORDER BY
@@ -429,14 +361,8 @@ GROUP BY
 ORDER BY
 ```
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-HAVING
-```
+`HAVING`
 
-```sql
-SELECT
-```
+`SELECT`

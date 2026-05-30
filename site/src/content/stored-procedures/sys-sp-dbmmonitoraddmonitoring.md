@@ -45,9 +45,7 @@ If update period is set too low, the response time might increase for clients.
 
 ### Example 1
 
-```sql
-sp_dbmmonitoraddmonitoring
-```
+`sp_dbmmonitoraddmonitoring`
 
 ### Example 2
 
@@ -57,9 +55,7 @@ ALTER DATABASE
 
 ### Example 3
 
-```sql
-sp_dbmmonitoraddmonitoring
-```
+`sp_dbmmonitoraddmonitoring`
 
 ### Example 4
 
@@ -69,13 +65,10 @@ sp_dbmmonitoraddmonitoring
 
 ### Example 5
 
-```sql
-sp_dbmmonitoraddmonitoring
-```
+`sp_dbmmonitoraddmonitoring`
 
 ### Example 6
 
 ```sql
-EXECUTE
-sp_dbmmonitoraddmonitoring 3;
+EXECUTE sp_dbmmonitoraddmonitoring 3;
 ```

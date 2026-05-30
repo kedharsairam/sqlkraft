@@ -14,59 +14,41 @@ Contains information about Query Store plans that have been forced on secondary 
 
 ## Syntax
 
-```sql
-plan_forcing_location_id
-```
+`plan_forcing_location_id`
 
 ## Examples
 
 ### Example 1
 
-```sql
-plan_forcing_location_id
-```
+`plan_forcing_location_id`
 
 ### Example 2
 
-```sql
-query_id
-```
+`query_id`
 
 ### Example 3
 
-```sql
-query_id
-```
+`query_id`
 
 ### Example 4
 
-```sql
-plan_id
-```
+`plan_id`
 
 ### Example 5
 
-```sql
-plan_id
-```
+`plan_id`
 
 ### Example 6
 
-```sql
-replica_group_id
-```
+`replica_group_id`
 
 ### Example 7
 
-```sql
-force_plan_scope
-```
+`force_plan_scope`
 
 ### Example 8
 
-```sql
-replica_group_id
-```
+`replica_group_id`
 
 ### Example 9
 
@@ -76,8 +58,6 @@ VIEW DATABASE STATE
 
 ### Example 10
 
-```sql
-sys.query_store_plan_forcing_locations
-```
+`sys.query_store_plan_forcing_locations`
 
 _(... and 1 more examples)_

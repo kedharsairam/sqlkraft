@@ -39,8 +39,6 @@ column in the ProductModel table into table T and delete one or more nodes from 
 
 document.
 
-SQL
-
 Compare Typed XML to Untyped XML
 
 Create Instances of XML Data
@@ -57,13 +55,11 @@ Last updated on 11/18/2025
 -- delete the second feature
 UPDATE
 T
-SET
-x.modify(
+SET x.modify(
 'delete /Root/ProductDescription/Features/*[2]'
 )
 -- verify the deletion
-SELECT
-x.query(
+SELECT x.query(
 ' //ProductDescription/Features'
 )
 FROM
@@ -87,8 +83,7 @@ PRIMARY
 KEY
 ,
 Instructions
-XML
-(Production.ManuInstructionsSchemaCollection))
+XML (Production.ManuInstructionsSchemaCollection))
 GO
 INSERT
 T

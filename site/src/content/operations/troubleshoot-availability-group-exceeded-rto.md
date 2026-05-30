@@ -92,6 +92,5 @@ to find out which session is blocking the REDO thread, and then you can take cor
 ```cmd
 Sch-S
 Sch-S
-Sch-M
-sqlserver.lock_redo_blocked
+Sch-M sqlserver.lock_redo_blocked
 ```

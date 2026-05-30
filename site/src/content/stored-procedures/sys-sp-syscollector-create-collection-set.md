@@ -89,15 +89,11 @@ OUTPUT
 
 ### Example 1
 
-```sql
-sp_syscollector_create_collection_set
-```
+`sp_syscollector_create_collection_set`
 
 ### Example 2
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 3
 
@@ -108,9 +104,7 @@ msdb
 ### Example 4
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_syscollector_start_collection_set @collection_set_id = 1;
+EXECUTE sp_syscollector_start_collection_set @collection_set_id = 1;
 ```

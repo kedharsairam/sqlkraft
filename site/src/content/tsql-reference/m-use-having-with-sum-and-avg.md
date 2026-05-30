@@ -13,8 +13,6 @@ clause in the
 
 clause.
 
-SQL
-
 The following example shows using
 
 ,
@@ -33,8 +31,6 @@ results by
 
 .
 
-SQL
-
 The following example groups the
 
 table by product ID and includes only
@@ -47,43 +43,27 @@ order quantities are less than
 
 .
 
-SQL
+`LIKE`
 
-```sql
-LIKE
-```
-
-```sql
-HAVING
-```
+`HAVING`
 
 ```sql
 GROUP BY
 ```
 
-```sql
-HAVING
-```
+`HAVING`
 
-```sql
-WHERE
-```
+`WHERE`
 
 ```sql
 ORDER BY
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-ProductID
-```
+`ProductID`
 
-```sql
-SalesOrderDetail
-```
+`SalesOrderDetail`
 
 ```sql
 $1000000.00
@@ -132,8 +112,7 @@ GROUP
 BY
 ProductID
 HAVING
-AVG
-(OrderQty) > 5
+AVG (OrderQty) > 5
 ORDER
 BY
 ProductID;

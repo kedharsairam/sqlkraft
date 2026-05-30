@@ -55,10 +55,8 @@ in
 sequence. NaN is not supported.
 
 ```sql
-ROOT
-fn:number() as xs:double?
+ROOT fn:number() as xs:double?
 fn:number($arg as node()?) as xs:double?
-declare @x xml
-set @x='<ROOT>111</ROOT>'
+declare @x xml set @x='<ROOT>111</ROOT>'
 select @x.query('/ROOT[number()=111]')
 ```

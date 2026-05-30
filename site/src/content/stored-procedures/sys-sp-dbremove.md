@@ -39,13 +39,10 @@ N
 
 ### Example 1
 
-```sql
-sales
-```
+`sales`
 
 ### Example 2
 
 ```sql
-EXECUTE
-sp_dbremove sales;
+EXECUTE sp_dbremove sales;
 ```

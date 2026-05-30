@@ -107,15 +107,9 @@ data type. By default, the value for this variable is
 
 .
 
-### bit
+`AdventureWorks2025`
 
-```sql
-AdventureWorks2025
-```
-
-```sql
-AdventureWorksDW2025
-```
+`AdventureWorksDW2025`
 
 ```sql
 @@
@@ -133,26 +127,18 @@ AdventureWorksDW2025
 @@
 ```
 
-```sql
-DECLARE
-```
+`DECLARE`
 
 ```sql
 @
 ```
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-DECLARE
-```
+`DECLARE`
 
 ```sql
 @mycounter
 ```
 
-```sql
-NULL
-```
+`NULL`

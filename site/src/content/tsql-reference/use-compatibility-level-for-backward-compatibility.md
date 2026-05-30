@@ -101,9 +101,7 @@ data types. Under database compatibility level
 
 ### not protected
 
-```sql
-FASTFIRSTROW
-```
+`FASTFIRSTROW`
 
 ```sql
 OPTION (FAST n )

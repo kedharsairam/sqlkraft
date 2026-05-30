@@ -174,66 +174,34 @@ to become a CPU-based PMO. Starting with SQL Server 2014 (12.x) SP2 and SQL Serv
 
 Related content
 
-```sql
-CMemThread
-```
+`CMemThread`
 
-```sql
-CMemThread
-```
+`CMemThread`
 
-```sql
-NONE
-```
+`NONE`
 
-```sql
-TORN_PAGE_DETECTION
-```
+`TORN_PAGE_DETECTION`
 
-```sql
-CHECKSUM
-```
+`CHECKSUM`
 
-```sql
-TORN_PAGE_DETECTION
-```
+`TORN_PAGE_DETECTION`
 
-```sql
-CHECKSUM
-```
+`CHECKSUM`
 
-```sql
-CMemThread
-```
+`CMemThread`
 
-```sql
-CMemThread
-```
+`CMemThread`
 
-```sql
-CMemThread
-```
+`CMemThread`
 
-```sql
-CMemThread
-```
+`CMemThread`
 
-```sql
-CMEMTHREAD
-```
+`CMEMTHREAD`
 
-```sql
-contention_factor
-```
+`contention_factor`
 
-```sql
-partition_type
-```
+`partition_type`
 
-```sql
-exclusive_allocations_count
-```
+`exclusive_allocations_count`
 
-```sql
-waiting_tasks_count
-```
+`waiting_tasks_count`

@@ -26,12 +26,9 @@ SQL Server 2022 (16.x) and later versions Mirrored databases in Microsoft SQL da
 
 ```sql
 sys.sp_
-MS
-change_feed_ddl_event [ @
-E
-vent
-D
-ata = ]
+MS change_feed_ddl_event [ @
+E vent
+D ata = ]
 N
 'EventData'
 [ ; ]

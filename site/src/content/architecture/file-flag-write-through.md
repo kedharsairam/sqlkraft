@@ -90,26 +90,14 @@ Don't rely on an external UPS alone. Faults unrelated to power, such as firmware
 
 hardware failure, can still lead to cache loss.
 
-```sql
-COMMIT
-```
+`COMMIT`
 
-```sql
-CreateFile
-```
+`CreateFile`
 
-```sql
-dwFlagsAndAttributes
-```
+`dwFlagsAndAttributes`
 
-```sql
-FILE_FLAG_WRITE_THROUGH
-```
+`FILE_FLAG_WRITE_THROUGH`
 
-```sql
-FILE_FLAG_WRITE_THROUGH
-```
+`FILE_FLAG_WRITE_THROUGH`
 
-```sql
-FILE_FLAG_WRITE_THROUGH
-```
+`FILE_FLAG_WRITE_THROUGH`

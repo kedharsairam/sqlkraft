@@ -14,6 +14,4 @@ Returns the stored workload group configuration. Each row represents a workload 
 
 ## Syntax
 
-```sql
-request_max_memory_grant_percent
-```
+`request_max_memory_grant_percent`

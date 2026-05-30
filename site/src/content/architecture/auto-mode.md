@@ -93,8 +93,6 @@ specified, the column is added as an attribute.
 
 For example, execute this query:
 
-SQL
-
 This is the partial result:
 
 XML

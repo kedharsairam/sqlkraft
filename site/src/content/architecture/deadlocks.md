@@ -76,18 +76,12 @@ Last updated on 04/22/2026
 
 Related content
 
-```sql
-database_transaction_state
-```
+`database_transaction_state`
 
-```sql
-database_transaction_begin_lsn
-```
+`database_transaction_begin_lsn`
 
 ```sql
 DBCC OPENTRAN
 ```
 
-```sql
-KILL
-```
+`KILL`

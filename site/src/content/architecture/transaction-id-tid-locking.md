@@ -66,8 +66,6 @@ Consider the following example that shows locks for the current session while a 
 
 transaction is active:
 
-SQL
-
 ```sql
 X
 ```
@@ -86,25 +84,18 @@ SELECT
 DATABASEPROPERTYEX(DB_NAME(),
 'IsOptimizedLockingOn'
 )
-AS
-is_optimized_locking_enabled;
+AS is_optimized_locking_enabled;
 CREATE
-TABLE
-t0
-(
-a
-int
+TABLE t0 (
+a int
 PRIMARY
 KEY
 ,
-b
-int
+b int
 NULL
 );
 INSERT
-INTO
-t0
-VALUES
-(1,10),(2,20),(3,30);
+INTO t0
+VALUES (1,10),(2,20),(3,30);
 GO
 ```

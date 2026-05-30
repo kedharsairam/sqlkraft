@@ -21,8 +21,6 @@ statement against the data
 
 source.
 
-SQL
-
 : SQL Server 2019 (15.x).
 
 The following example passes a command string to an external data source pointing to
@@ -32,8 +30,6 @@ compute pool in SQL Server Big Data Cluster. The example creates a data source
 against a data pool in SQL Server Big Data Cluster and executes a
 
 statement against the data source.
-
-SQL
 
 The code samples in this article use the
 
@@ -55,45 +51,25 @@ Execute a stored procedure:
 
 ## C: Procedures with parameters
 
-SQL
-
 Call a stored procedure with name determined at runtime:
-
-SQL
 
 Call a stored procedure from within a stored procedure:
 
-SQL
-
 Execute a SQL string:
-
-SQL
 
 Execute a nested string:
 
-SQL
-
 Execute a string variable:
-
-SQL
 
 The following example creates a procedure with parameters and demonstrates three ways to
 
 execute the procedure:
 
-SQL
-
 Execute using positional parameters:
-
-SQL
 
 Execute using named parameters in order:
 
-SQL
-
 Execute using named parameters out of order:
-
-SQL
 
 @@NESTLEVEL (Transact-SQL)
 
@@ -127,29 +103,17 @@ Scalar User-Defined Functions for In-Memory OLTP
 
 Last updated on 11/18/2025
 
-```sql
-SqlDataPool
-```
+`SqlDataPool`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SqlStoragePool
-```
+`SqlStoragePool`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-AdventureWorksDW2025
-```
+`AdventureWorksDW2025`
 
 ```sql
 CREATE
@@ -157,12 +121,10 @@ EXTERNAL
 DATA
 SOURCE
 SqlDataPool
-WITH
-(LOCATION =
+WITH (LOCATION =
 'sqldatapool://controller-svc/default'
 );
-EXECUTE
-(
+EXECUTE (
 'SELECT @@SERVERNAME'
 )
 AT
@@ -176,12 +138,10 @@ EXTERNAL
 DATA
 SOURCE
 SqlStoragePool
-WITH
-(LOCATION =
+WITH (LOCATION =
 'sqlhdfs://controller-svc/default'
 );
-EXECUTE
-(
+EXECUTE (
 'SELECT @@SERVERNAME'
 )
 AT
@@ -190,45 +150,36 @@ GO
 ```
 
 ```sql
-EXECUTE
-proc1;
-EXECUTE
-(
+EXECUTE proc1;
+EXECUTE (
 'EXECUTE '
 + @
 var
 );
-CREATE
-sp_first
+CREATE sp_first
 AS
-EXECUTE
-sp_second;
-EXECUTE
-sp_third;
+EXECUTE sp_second;
+EXECUTE sp_third;
 ```
 
 ```sql
-EXECUTE
-(
+EXECUTE (
 'SELECT * FROM sys.types'
 );
-EXECUTE
-(
+EXECUTE (
 'EXECUTE (''SELECT * FROM sys.types'')'
 );
 DECLARE
 @stringVar
 AS
-NVARCHAR
-(100);
+NVARCHAR (100);
 SET
 @stringVar = N
 'SELECT name FROM'
 +
 ' sys.sql_logins'
 ;
-EXECUTE
-(@stringVar);
+EXECUTE (@stringVar);
 ```
 
 ```sql
@@ -237,11 +188,9 @@ PROCEDURE
 ProcWithParameters (
 @
 name
-NVARCHAR
-(50),
+NVARCHAR (50),
 @color
-NVARCHAR
-(15)
+NVARCHAR (15)
 )
 AS
 SELECT

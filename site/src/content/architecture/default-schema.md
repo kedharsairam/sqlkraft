@@ -55,8 +55,6 @@ OPENJSON (Transact-SQL)
 
 .
 
-SQL
-
 name
 
 John
@@ -68,8 +66,6 @@ Doe
 age
 
 45
-
-SQL
 
 ﾉ
 

@@ -32,8 +32,6 @@ SQL Server
 
 Activity logs for SQL Server enabled by Azure Arc provide insight into events related to
 
-SQL
-
 Server enabled by Azure Arc
 
 and

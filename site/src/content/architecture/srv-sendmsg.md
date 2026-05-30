@@ -54,26 +54,20 @@ int srv_sendmsg (
 SRV_PROC *
 srvproc
 ,
-int
-msgtype
+int msgtype
 ,
-DBINT
-msgnum
+DBINT msgnum
 ,
-DBTINYINT
-class
+DBTINYINT class
 ,
-DBTINYINT
-state
+DBTINYINT state
 ,
 DBCHAR *
 rpcname
 ,
-int
-rpcnamelen
+int rpcnamelen
 ,
-DBUSMALLINT
-linenum
+DBUSMALLINT linenum
 ,
 DBCHAR *
 message

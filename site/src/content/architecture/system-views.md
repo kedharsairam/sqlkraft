@@ -91,35 +91,21 @@ Expand table
 Expand table
 
 ```sql
-sys.numbered_procedures
-sys.numbered_procedure_parameters
+sys.numbered_procedures sys.numbered_procedure_parameters
 ```
 
 ```sql
-sp_trace_create
-sp_trace_setevent
-sp_trace_setfilter
-sp_trace_setstatus
+sp_trace_create sp_trace_setevent sp_trace_setfilter sp_trace_setstatus
 ```
 
 ```sql
-sys.traces
-sys.trace_events
-sys.trace_event_bindings
+sys.traces sys.trace_events sys.trace_event_bindings
 ```
 
 ```sql
-sp_trace_create
-sp_trace_setevent
-sp_trace_setfilter
-sp_trace_setstatus
+sp_trace_create sp_trace_setevent sp_trace_setfilter sp_trace_setstatus
 ```
 
 ```sql
-sys.traces
-sys.trace_events
-sys.trace_event_bindings
-sys.trace_categories
-sys.trace_columns
-sys.trace_subclass_values
+sys.traces sys.trace_events sys.trace_event_bindings sys.trace_categories sys.trace_columns sys.trace_subclass_values
 ```

@@ -71,15 +71,9 @@ TYPE_ID
 
 ## Returns the ID of a data type.
 
-
-
 Expand table
 
-
-
 Expand table
-
-
 
 Expand table
 

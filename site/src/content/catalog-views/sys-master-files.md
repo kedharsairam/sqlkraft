@@ -33,33 +33,23 @@ Description Azure Blob Storage, a credential is configured with the access crede
 
 ### Example 1
 
-```sql
-SpaceUsed
-```
+`SpaceUsed`
 
 ### Example 2
 
-```sql
-sys.master_files
-```
+`sys.master_files`
 
 ### Example 3
 
-```sql
-sys.database_files
-```
+`sys.database_files`
 
 ### Example 4
 
-```sql
-IsPrimaryFile
-```
+`IsPrimaryFile`
 
 ### Example 5
 
-```sql
-AdventureWorks_Data
-```
+`AdventureWorks_Data`
 
 ### Example 6
 
@@ -83,8 +73,7 @@ Primary File
 ### Example 7
 
 ```sql
-SELECT
-s.file_id,
+SELECT s.file_id,
 s.type_desc,
 s.name,
 FILEPROPERTYEX(s.name,
@@ -107,14 +96,10 @@ FILEPROPERTYEX(s.name,
 )
 AS
 IsPageBlob
-FROM
-sys.database_files
-AS
-s
-WHERE
-s.type_desc
-IN
-(
+FROM sys.database_files
+AS s
+WHERE s.type_desc
+IN (
 'ROWS'
 ,
 'LOG'
@@ -123,6 +108,5 @@ file_id  type_desc  name  BlobTier  AccountType  IsInferredTier  IsPageBlob
 ------------------------------------------------------------------------------------
 --
 1     ROWS      data_0  P30  PremiumBlobStorage  0   1
-2     LOG       log     P30  PremiumBlobStorage  0   1
-(2 rows affected)
+2     LOG       log     P30  PremiumBlobStorage  0   1 (2 rows affected)
 ```

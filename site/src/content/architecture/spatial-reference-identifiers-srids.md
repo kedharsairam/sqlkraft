@@ -37,8 +37,6 @@ SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
 
-SQL
-
 database in Microsoft Fabric
 
 Each spatial instance has a spatial reference identifier (SRID). The SRID corresponds to a spatial
@@ -95,8 +93,5 @@ Producers (OGP) Surveying and Positioning Committee.
 
 ```sql
 NULL
-NULL
-geometry1
-geometry2
-geometry1.STIntersects(geometry2) = 1
+NULL geometry1 geometry2 geometry1.STIntersects(geometry2) = 1
 ```

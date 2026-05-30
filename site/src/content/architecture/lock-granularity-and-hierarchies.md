@@ -178,62 +178,32 @@ X
 READ COMMITTED
 ```
 
-```sql
-RID
-```
+`RID`
 
-```sql
-KEY
-```
+`KEY`
 
-```sql
-PAGE
-```
+`PAGE`
 
-```sql
-EXTENT
-```
+`EXTENT`
 
-```sql
-HoBT
-```
+`HoBT`
 
-```sql
-TABLE
-```
+`TABLE`
 
-```sql
-FILE
-```
+`FILE`
 
-```sql
-APPLICATION
-```
+`APPLICATION`
 
-```sql
-METADATA
-```
+`METADATA`
 
-```sql
-ALLOCATION_UNIT
-```
+`ALLOCATION_UNIT`
 
-```sql
-DATABASE
-```
+`DATABASE`
 
-```sql
-XACT
-```
+`XACT`
 
-```sql
-HoBT
-```
+`HoBT`
 
-```sql
-TABLE
-```
+`TABLE`
 
-```sql
-LOCK_ESCALATION
-```
+`LOCK_ESCALATION`

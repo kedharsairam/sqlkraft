@@ -51,42 +51,30 @@ N
 
 ### Example 1
 
-```sql
-sp_delete_job
-```
+`sp_delete_job`
 
 ### Example 2
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
 ### Example 3
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 4
 
-```sql
-sp_delete_job
-```
+`sp_delete_job`
 
 ### Example 5
 
-```sql
-NightlyBackups
-```
+`NightlyBackups`
 
 ### Example 6
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_delete_job @job_name = N
+EXECUTE sp_delete_job @job_name = N
 'NightlyBackups'
 ;
 GO
@@ -95,11 +83,9 @@ GO
 ### Example 7
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_help_job
+EXECUTE dbo.sp_help_job
 @job_name = N
 'NightlyBackups'
 ,

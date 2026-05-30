@@ -72,48 +72,29 @@ We recommend that table-level locking hints be used to change the default lockin
 
 only when necessary. Forcing a locking level can adversely affect concurrency.
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 READ UNCOMMITTED
 ```
 
-```sql
-NOLOCK
-```
+`NOLOCK`
+
+`SELECT`
 
 ```sql
-SELECT
-```
-
-```sql
-dateformat                   mdy
-datefirst                    7
+dateformat                   mdy datefirst                    7
 ...                          ...
-Isolation level              repeatable read
-(14 row(s) affected)
-DBCC execution completed. If DBCC printed error messages, contact your system
-administrator.
+Isolation level              repeatable read (14 row(s) affected)
+DBCC execution completed. If DBCC printed error messages, contact your system administrator.
 ```

@@ -14,6 +14,4 @@ Generates the ledger digest, which is the hash of the last block in If the last 
 
 ## Syntax
 
-```sql
-sys.database_ledger_blocks
-```
+`sys.database_ledger_blocks`

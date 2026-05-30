@@ -15,11 +15,7 @@ example, note that more than 20 rows meet the criteria of
 
 after applying SET ROWCOUNT, you can see that not all rows were returned.
 
-SQL
-
 To return all rows, set ROWCOUNT to 0.
-
-SQL
 
 SET Statements (Transact-SQL)
 

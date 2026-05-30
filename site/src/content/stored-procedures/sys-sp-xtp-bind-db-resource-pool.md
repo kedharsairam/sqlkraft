@@ -14,6 +14,4 @@ Binds the specified In-Memory OLTP database to the specified resource pool. Both
 
 ## Syntax
 
-```sql
-sys.sp_xtp_bind_db_resource_pool
-```
+`sys.sp_xtp_bind_db_resource_pool`

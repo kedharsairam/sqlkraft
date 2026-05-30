@@ -53,8 +53,6 @@ an
 
 element.
 
-SQL
-
 The schema can be fixed by moving the occurrence constraint to a unique location. For
 
 example, the constraint can be moved to the containing sequence particle:
@@ -86,16 +84,14 @@ AS
 '
 ;
 GO
-<sequence
-minOccurs
+<sequence minOccurs
 =
 "1"
 maxOccurs
 =
 "4"
 >
-<element
-name
+<element name
 =
 "a"
 type

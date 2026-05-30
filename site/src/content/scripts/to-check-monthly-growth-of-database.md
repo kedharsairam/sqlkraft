@@ -33,12 +33,10 @@ pubDate: 2025-03-15
 -- Press Ctrl + Shift + M to change the script parameters.
 --********************************************************************************************************
 
--- Create a temporary table to hold the report for all databases in the server
-create TABLE
+-- Create a temporary table to hold the report for all databases in the server create TABLE
 #DbBkpGrowth (DBName sysname, Year int, month int, BkpSizeGB int, DeltaNormal int, CmpBkpSizeGB int, DeltaCmp int);
 
---SECTION 1 BEGIN
-exec sp_MSforeachdb
+--SECTION 1 BEGIN exec sp_MSforeachdb
 'WITH BackupsSize AS(
 SELECT TOP 1000
 [database_name]
@@ -47,8 +45,7 @@ SELECT TOP 1000
 , [Month] = DATEPART(month,[backup_start_date])
 , [Backup Size GB] = CONVERT(DECIMAL(10,2),ROUND(AVG([backup_size]/1024/1024/1024),4))
 , [Compressed Backup Size GB] = CONVERT(DECIMAL(10,2),ROUND(AVG([compressed_backup_size]/1024/1024/1024),4))
-FROM
-msdb.dbo.backupset
+FROM msdb.dbo.backupset
 WHERE
 [database_name] = N''?''
 AND [type] = ''D''

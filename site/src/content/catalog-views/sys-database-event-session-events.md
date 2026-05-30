@@ -14,9 +14,7 @@ SQL Server 2016 (13.x) and later versions Azure SQL Database Managed Instance SQ
 
 ## Syntax
 
-```sql
-sys.database_event_session_events
-```
+`sys.database_event_session_events`
 
 ## Remarks
 

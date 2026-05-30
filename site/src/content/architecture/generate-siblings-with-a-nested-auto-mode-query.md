@@ -87,8 +87,6 @@ sibling children of
 
 :
 
-SQL
-
 ```sql
 SalesOrderID
 SalesPersonID
@@ -103,14 +101,10 @@ SELECT
 <SalesPerson>
 <SalesOrderHeader>
 <SalesOrder>
-SELECT
+SELECT (
+SELECT top 2 SalesOrderID, SalesPersonID, CustomerID,
 (
-SELECT
-top 2 SalesOrderID, SalesPersonID, CustomerID,
-(
-select
-top 3 SalesOrderID, ProductID, OrderQty, UnitPrice
-from
+select top 3 SalesOrderID, ProductID, OrderQty, UnitPrice from
 Sales.SalesOrderDetail
 WHERE
 SalesOrderDetail.SalesOrderID =
@@ -124,18 +118,14 @@ TYPE
 FROM
 Sales.SalesOrderHeader
 WHERE
-SalesOrderHeader.SalesOrderID = SalesOrder.SalesOrderID
-for
-xml
-auto
+SalesOrderHeader.SalesOrderID = SalesOrder.SalesOrderID for xml auto
 ,
 type
 ),
 (
 SELECT
 *
-FROM
-(
+FROM (
 SELECT
 SalesPersonID, EmployeeID
 FROM

@@ -14,6 +14,4 @@ SQL database in Microsoft Fabric Displays or changes the automatic statistics up
 
 ## Syntax
 
-```sql
-AUTO_UPDATE_STATISTICS
-```
+`AUTO_UPDATE_STATISTICS`

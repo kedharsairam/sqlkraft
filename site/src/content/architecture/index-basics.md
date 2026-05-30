@@ -108,10 +108,6 @@ execute a query. To see which indexes the query optimizer uses for a specific qu
 
 ### Understand the data distribution in the columns used in the query predicates
 
-```sql
-SQL
-```
+`SQL`
 
-```sql
-SQL
-```
+`SQL`

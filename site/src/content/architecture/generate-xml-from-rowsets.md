@@ -63,8 +63,6 @@ The following SQL view definition creates an XML view over a relational column, 
 
 authors retrieved from an XML column:
 
-SQL
-
 The V view contains a single row with a single columnxmlVal of XML type
 
 It can be queried
@@ -74,8 +72,6 @@ like a regular
 data type instance. For example, the following query returns the author
 
 whose first name is "David":
-
-SQL
 
 SQL view definitions are similar to XML views that are created by using annotated schemas.
 
@@ -89,8 +85,7 @@ CREATE
 VIEW
 V (xmlVal)
 AS
-SELECT
-pk, xCol.query(
+SELECT pk, xCol.query(
 '/book/author'
 )
 FROM
@@ -101,8 +96,7 @@ AUTO
 ,
 TYPE
 ;
-SELECT
-xmlVal.query(
+SELECT xmlVal.query(
 '//author[first-name = "David"]'
 )
 FROM

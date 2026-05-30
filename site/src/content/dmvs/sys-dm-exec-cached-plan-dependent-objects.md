@@ -18,7 +18,5 @@ Execution Related Dynamic Management Views and Functions (Transact-SQL) Dynamic 
 ## Syntax
 
 ```sql
-dm_exec_cached_plan_dependent_objects
-dm_os_memory_objects
-memory_object_address
+dm_exec_cached_plan_dependent_objects dm_os_memory_objects memory_object_address
 ```

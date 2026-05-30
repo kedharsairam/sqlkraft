@@ -27,8 +27,6 @@ SqlPackage
 
 command line utility,
 
-SQL
-
 (SSDT) in Visual Studio, and the
 
 SQL Database Projects extension

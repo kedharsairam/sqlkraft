@@ -31,20 +31,13 @@ SQL Server 2019 (15.x) and later versions SQL database in Microsoft Fabric Retur
 
 ```sql
 sys.dm_db_page_info (
-D
-atabase
-I
-d ,
-F
-ile
-I
-d ,
-P
-age
-I
-d ,
-M
-ode )
+D atabase
+I d ,
+F ile
+I d ,
+P age
+I d ,
+M ode )
 ```
 
 ## Examples
@@ -57,29 +50,20 @@ VIEW SERVER STATE
 
 ### Example 2
 
-```sql
-sys.fn_PageResCracker
-```
+`sys.fn_PageResCracker`
 
 ### Example 3
 
 ```sql
-SELECT
-page_info.*
-FROM
-sys.dm_exec_requests
-AS
-d
+SELECT page_info.*
+FROM sys.dm_exec_requests
+AS d
 CROSS
-APPLY
-sys.fn_PageResCracker (d.page_resource)
-AS
-r
+APPLY sys.fn_PageResCracker (d.page_resource)
+AS r
 CROSS
-APPLY
-sys.dm_db_page_info(r.db_id, r.file_id, r.page_id,
+APPLY sys.dm_db_page_info(r.db_id, r.file_id, r.page_id,
 'DETAILED'
 )
-AS
-page_info
+AS page_info
 ```

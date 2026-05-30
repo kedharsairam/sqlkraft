@@ -14,9 +14,7 @@ Generates a script that contains the calls to be applied at Subscribers for upda
 
 ## Syntax
 
-```sql
-MSsubsciption_articles
-```
+`MSsubsciption_articles`
 
 ## Arguments
 

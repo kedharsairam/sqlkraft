@@ -14,9 +14,7 @@ SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Flush
 
 ## Syntax
 
-```sql
-sys.sp_query_store_flush_db
-```
+`sys.sp_query_store_flush_db`
 
 ## Examples
 
@@ -34,9 +32,7 @@ sys.sp_query_store_flush_db
 
 ### Example 3
 
-```sql
-sys.sp_query_store_flush_db
-```
+`sys.sp_query_store_flush_db`
 
 ### Example 4
 
@@ -48,6 +44,5 @@ sp_query_store_flush_db
 ### Example 5
 
 ```sql
-EXECUTE
-sp_query_store_flush_db;
+EXECUTE sp_query_store_flush_db;
 ```

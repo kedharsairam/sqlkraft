@@ -17,22 +17,12 @@ SQL Server 2016 (13.x) and later versions Azure SQL Database Azure SQL Managed I
 
 ## Code Blocks
 
-```sql
-session_id
-```
+`session_id`
 
-```sql
-wait_type
-```
+`wait_type`
 
-```sql
-waiting_tasks_count
-```
+`waiting_tasks_count`
 
-```sql
-wait_time_ms
-```
+`wait_time_ms`
 
-```sql
-signal_wait_time_ms
-```
+`signal_wait_time_ms`

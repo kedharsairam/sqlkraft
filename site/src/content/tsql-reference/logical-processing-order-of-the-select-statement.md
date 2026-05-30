@@ -43,29 +43,15 @@ statements that involve remote tables.
 
 ### sysadmin
 
-### varchar
+`SELECT`
 
-### int
+`SELECT`
 
-```sql
-SELECT
-```
+`OPENDATASOURCE`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-OPENDATASOURCE
-```
-
-```sql
-SELECT
-```
-
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 SELECT
@@ -75,8 +61,7 @@ ALL
 DISTINCT
 ]
 [
-TOP
-( expression ) [
+TOP ( expression ) [
 PERCENT
 ] [
 WITH
@@ -84,8 +69,7 @@ TIES
 ] ]
 <select_list>
 [
-INTO
-new_table ]
+INTO new_table ]
 [
 FROM
 {
@@ -113,8 +97,7 @@ SELECT
 <select_criteria>
 ::=
 [
-TOP
-( top_expression ) ]
+TOP ( top_expression ) ]
 [
 ALL
 |
@@ -143,8 +126,7 @@ BY
 <order_by_expression>
 ]
 [
-OPTION
-(
+OPTION (
 <query_option>
 [ , ...n ] ) ]
 ```

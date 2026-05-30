@@ -35,8 +35,6 @@ SQL Server 2017
 
 and
 
-SQL
-
 Server 2019
 
 .

@@ -17,8 +17,7 @@ SQL Server 2016 (13.x) and later versions Holds information about nodes used wit
 ## Syntax
 
 ```sql
-EXECUTE
-sys.dm_exec_compute_nodes;
+EXECUTE sys.dm_exec_compute_nodes;
 ```
 
 ## Examples
@@ -26,13 +25,11 @@ sys.dm_exec_compute_nodes;
 ### Example 1
 
 ```sql
-EXECUTE
-sys.dm_exec_compute_nodes;
+EXECUTE sys.dm_exec_compute_nodes;
 ```
 
 ### Example 2
 
 ```sql
-EXECUTE
-sp_polybase_leave_group;
+EXECUTE sp_polybase_leave_group;
 ```

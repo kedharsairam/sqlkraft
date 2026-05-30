@@ -57,9 +57,7 @@ Changes are visible to vector search queries after the transaction commits.
 
 ## Monitoring vector index maintenance
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
 ```sql
 Msg 42266, Level 16, State 1

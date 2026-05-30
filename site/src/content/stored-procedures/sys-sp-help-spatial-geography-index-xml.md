@@ -75,9 +75,7 @@ values aren't included in the return set.
 
 ### Example 1
 
-```sql
-sp_help_spatial_geography_index_xml
-```
+`sp_help_spatial_geography_index_xml`
 
 ### Example 2
 
@@ -100,8 +98,7 @@ DECLARE
 AS
 XML
 ;
-EXECUTE
-sp_help_spatial_geography_index_xml
+EXECUTE sp_help_spatial_geography_index_xml
 'geography_col'
 ,
 'SIndx_SpatialTable_geography_col2'

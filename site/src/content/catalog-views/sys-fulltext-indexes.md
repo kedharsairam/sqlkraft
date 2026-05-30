@@ -14,9 +14,7 @@ Contains a row per full-text index of a tabular object. ID of the object to whic
 
 ## Syntax
 
-```sql
-change_tracking_state
-```
+`change_tracking_state`
 
 ## Examples
 
@@ -26,14 +24,11 @@ change_tracking_state
 USE
 AdventureWorks2025;
 GO
-SELECT
-object_id,
+SELECT object_id,
 property_list_id,
 stoplist_id
-FROM
-sys.fulltext_indexes
-WHERE
-object_id = object_id(
+FROM sys.fulltext_indexes
+WHERE object_id = object_id(
 'HumanResources.JobCandidate'
 );
 ```
@@ -49,15 +44,11 @@ GO
 
 ### Example 3
 
-```sql
-JobCandidateProperties
-```
+`JobCandidateProperties`
 
 ### Example 4
 
-```sql
-AdventureWorks2022
-```
+`AdventureWorks2022`
 
 ### Example 5
 

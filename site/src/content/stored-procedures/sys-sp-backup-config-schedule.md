@@ -30,11 +30,9 @@ managed_backup.sp_backup_config_basic (Transact-SQL) managed_backup.sp_backup_co
 ## Syntax
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-managed_backup.sp_backup_config_advanced
+EXECUTE managed_backup.sp_backup_config_advanced
 @encryption_algorithm =
 'AES_128'
 ,

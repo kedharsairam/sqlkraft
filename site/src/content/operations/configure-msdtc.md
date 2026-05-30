@@ -82,6 +82,5 @@ Server on Linux with the mssql-conf tool
 Expand table
 
 ```cmd
-network.rpcport
-distributedtransaction.servertcpport
+network.rpcport distributedtransaction.servertcpport
 ```

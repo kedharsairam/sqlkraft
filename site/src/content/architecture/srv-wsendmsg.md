@@ -62,13 +62,10 @@ Use CLR integration instead.
 ```sql
 int srv_wsendmsg(SRV_PROC *
 srvproc
-, int
-msgnum
-, int
-severity
+, int msgnum
+, int severity
 , WCHAR *
 message
-, int
-msglen
+, int msglen
 );
 ```

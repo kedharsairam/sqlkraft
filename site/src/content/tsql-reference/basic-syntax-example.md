@@ -71,8 +71,6 @@ Resumable index operations are available in SQL Server 2017 (14.x) and later ver
 
 Azure SQL Database, and Azure SQL Managed Instance.
 
-SQL
-
 ```sql
 ALTER INDEX <index> ... REBUILD PARTITION ... WITH DATA_COMPRESSION = ...
 ```
@@ -93,46 +91,32 @@ ALTER INDEX <index> ... REBUILD PARTITION = ALL (WITH ...)
 DATA_COMPRESSION = ... ON PARTITIONS ( ...)
 ```
 
-```sql
-PAGE
-```
+`PAGE`
 
-```sql
-ROW
-```
+`ROW`
 
-```sql
-ALTER
-```
+`ALTER`
 
-```sql
-PRIMARY
-```
+`PRIMARY`
 
-```sql
-FILESTREAM
-```
+`FILESTREAM`
 
 ```sql
 ALTER
-INDEX
-index1
-ON
-table1
+INDEX index1
+ON table1
 REBUILD
 ;
 ALTER
 INDEX
 ALL
-ON
-table1
+ON table1
 REBUILD
 ;
 ALTER
 INDEX
 ALL
-ON
-dbo.table1
+ON dbo.table1
 REBUILD
 ;
 ```

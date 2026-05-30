@@ -14,9 +14,7 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns a row f
 
 ## Syntax
 
-```sql
-sys.database_permissions
-```
+`sys.database_permissions`
 
 ## Permissions
 

@@ -53,8 +53,6 @@ assigned XML,
 
 Consider this query:
 
-SQL
-
 This is the result. The summary description is entitized in the result.
 
 XML
@@ -77,23 +75,18 @@ USE
 AdventureWorks2022;
 GO
 SELECT
-1
-as
+1 as
 Tag,
-0
-as
+0 as
 Parent
 ,
-ProductModelID
-as
+ProductModelID as
 [ProductModel!1!ProdModelID],
-Name
-as
+Name as
 [ProductModel!1!
 Name
 ],
-NULL
-as
+NULL as
 [Summary!2!SummaryDescription!
 ELEMENT
 ]
@@ -104,11 +97,9 @@ ProductModelID=19
 UNION
 ALL
 SELECT
-2
-as
+2 as
 Tag,
-1
-as
+1 as
 Parent
 ,
 ProductModelID,

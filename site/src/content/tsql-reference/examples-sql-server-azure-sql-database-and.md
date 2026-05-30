@@ -67,25 +67,19 @@ SQL database in Fabric
 
 ## B. Specify the HISTOGRAM option
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 DBCC SHOW_STATISTICS
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 DBCC SHOW_STATISTICS
 ```
 
-```sql
-Shell
-```
+`Shell`
 
 ```sql
 DBCC SHOW_STATISTICS

@@ -59,9 +59,7 @@ The name of an operator to whom the specified operator's alerts can be reassigne
 
 ### Example 1
 
-```sql
-sp_delete_operator
-```
+`sp_delete_operator`
 
 ### Example 2
 
@@ -72,11 +70,9 @@ François Ajenstat
 ### Example 3
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_delete_operator @
+EXECUTE sp_delete_operator @
 name
 =
 'François Ajenstat'
@@ -87,11 +83,9 @@ GO
 ### Example 4
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_add_operator
+EXECUTE dbo.sp_add_operator
 @
 name
 = N

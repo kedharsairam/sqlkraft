@@ -39,15 +39,11 @@ drops the database.
 
 Before you delete objects, make sure you are in the correct database:
 
-SQL
-
 Use the
 
 statement to remove execute permission for
 
 on the stored procedure:
-
-SQL
 
 1. Use the
 
@@ -57,8 +53,6 @@ to access the
 
 database:
 
-SQL
-
 2. Use the
 
 statement to remove permission for
@@ -66,8 +60,6 @@ statement to remove permission for
 to access this instance of SQL
 
 Server 2005 (9.x):
-
-SQL
 
 ７
 

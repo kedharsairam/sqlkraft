@@ -122,9 +122,7 @@ optimized locking, see
 
 Expand table
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 READ COMMITTED
@@ -134,13 +132,9 @@ READ COMMITTED
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 READ_COMMITTED_SNAPSHOT
@@ -166,6 +160,4 @@ SET TRANSACTION
 ISOLATION LEVEL
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`

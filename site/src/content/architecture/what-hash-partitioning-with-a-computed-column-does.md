@@ -8,8 +8,6 @@ pubDate: 2026-05-29
 
 The following sample script can be customized for purposes of your implementation:
 
-SQL
-
 This script can be used to hash partition a table that is experiencing problems caused by
 
 Last
@@ -48,8 +46,7 @@ AS
 RANGE
 LEFT
 FOR
-VALUES
-(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
+VALUES (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15);
 CREATE
 PARTITION
 SCHEME [ps_hash16]
@@ -57,8 +54,7 @@ AS
 PARTITION
 [pf_hash16]
 ALL
-TO
-([ALL_DATA]);
+TO ([ALL_DATA]);
 -- Add the computed column to the existing table (this is an OFFLINE operation)
 -- Consider using bulk loading techniques to speed it up
 ALTER
@@ -66,14 +62,11 @@ TABLE
 [dbo].[latch_contention_table]
 ADD
 [HashValue]
-AS
-(
-CONVERT
-(
+AS (
+CONVERT (
 TINYINT
 ,
-ABS
-(BINARY_CHECKSUM([hash_col]) % (16)),
+ABS (BINARY_CHECKSUM([hash_col]) % (16)),
 (0))) PERSISTED
 NOT
 NULL
@@ -88,6 +81,5 @@ ON
 [dbo].[latch_contention_table]([T_ID]
 ASC
 , [HashValue])
-ON
-ps_hash16 (HashValue);
+ON ps_hash16 (HashValue);
 ```

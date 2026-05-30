@@ -32,8 +32,6 @@ or
 
 authentication), or
 
-SQL
-
 authentication.
 
 This article also describes Multiple Active Result Sets (MARS) connections. MARS is a feature of

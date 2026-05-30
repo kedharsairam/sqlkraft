@@ -168,13 +168,9 @@ remains in the plan cache and isn't removed unless there is memory pressure and 
 
 current cost is zero.
 
-```sql
-sys.dm_exec_cached_plans
-```
+`sys.dm_exec_cached_plans`
 
-```sql
-usecounts
-```
+`usecounts`
 
 ```sql
 1
@@ -184,9 +180,7 @@ usecounts
 SET ANSI_DEFAULTS OFF
 ```
 
-```sql
-usecounts
-```
+`usecounts`
 
 ```sql
 2
@@ -196,29 +190,17 @@ usecounts
 SET ANSI_DEFAULTS ON
 ```
 
-```sql
-memory_object_address
-```
+`memory_object_address`
 
-```sql
-sql_handle
-```
+`sql_handle`
 
-```sql
-ANSI_DEFAULTS
-```
+`ANSI_DEFAULTS`
 
-```sql
-plan_handle
-```
+`plan_handle`
 
-```sql
-query_plan_hash
-```
+`query_plan_hash`
 
-```sql
-query_hash
-```
+`query_hash`
 
 ```sql
 000000
@@ -226,18 +208,12 @@ query_hash
 000000
 ```
 
-```sql
-QUOTED_IDENTIFIER
-```
+`QUOTED_IDENTIFIER`
 
-```sql
-QUOTED_IDENTIFIER
-```
+`QUOTED_IDENTIFIER`
 
 ```sql
 max server memory
 ```
 
-```sql
-sp_configure
-```
+`sp_configure`

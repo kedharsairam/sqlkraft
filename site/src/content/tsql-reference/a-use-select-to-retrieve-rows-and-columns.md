@@ -47,8 +47,6 @@ table in the
 
 database.
 
-SQL
-
 This example returns all rows (no
 
 clause is specified), and only a subset of the columns
@@ -67,55 +65,31 @@ database.
 
 Additionally, a column heading is added.
 
-SQL
+`AdventureWorks2025`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorksDW2025`
 
-```sql
-AdventureWorksDW2025
-```
-
-```sql
-WHERE
-```
+`WHERE`
 
 ```sql
 *
 ```
 
-```sql
-Product
-```
+`Product`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-Name
-```
+`Name`
 
-```sql
-ProductNumber
-```
+`ProductNumber`
 
-```sql
-ListPrice
-```
+`ListPrice`
 
-```sql
-Product
-```
+`Product`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ```sql
 USE
@@ -134,12 +108,10 @@ ASC
 USE
 AdventureWorks2025;
 GO
-SELECT
-p.*
+SELECT p.*
 FROM
 Production.Product
-AS
-p
+AS p
 ORDER
 BY
 Name

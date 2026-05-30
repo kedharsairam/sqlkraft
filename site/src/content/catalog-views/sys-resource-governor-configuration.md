@@ -14,29 +14,21 @@ Returns the stored resource governor configuration. The object ID of the classif
 
 ## Syntax
 
-```sql
-classifier_function_id
-```
+`classifier_function_id`
 
 ## Examples
 
 ### Example 1
 
-```sql
-classifier_function_id
-```
+`classifier_function_id`
 
 ### Example 2
 
-```sql
-is_enabled
-```
+`is_enabled`
 
 ### Example 3
 
-```sql
-max_outstanding_io_per_volume
-```
+`max_outstanding_io_per_volume`
 
 ### Example 4
 

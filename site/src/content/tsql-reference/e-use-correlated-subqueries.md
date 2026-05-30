@@ -7,8 +7,6 @@ tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 A correlated subquery is a query that depends on the outer query for its values. This query can
 
 be executed repeatedly, one time for each row that the outer query selects.
@@ -31,8 +29,6 @@ and
 
 tables.
 
-SQL
-
 The next example uses
 
 and retrieves one instance of the first name and family name of each
@@ -48,8 +44,6 @@ employee identification numbers match in the
 and
 
 tables.
-
-SQL
 
 The previous subquery in this statement can't be evaluated independently of the outer query. It
 
@@ -69,27 +63,15 @@ finds the product models for which the maximum list price is more than twice the
 
 the model.
 
-SQL
+`EXISTS`
 
-```sql
-EXISTS
-```
+`IN`
 
-```sql
-IN
-```
+`ProductModelID`
 
-```sql
-ProductModelID
-```
+`Product`
 
-```sql
-Product
-```
-
-```sql
-ProductModel
-```
+`ProductModel`
 
 ```sql
 USE
@@ -97,8 +79,7 @@ AdventureWorks2025;
 GO
 IF OBJECT_ID('dbo.NewProducts', 'U') IS NOT NULL
 DROP
-TABLE
-dbo.NewProducts;
+TABLE dbo.NewProducts;
 GO
 ALTER
 DATABASE
@@ -109,8 +90,7 @@ BULK_LOGGED;
 GO
 SELECT
 *
-INTO
-dbo.NewProducts
+INTO dbo.NewProducts
 FROM
 Production.Product
 WHERE
@@ -137,21 +117,16 @@ DISTINCT
 Name
 FROM
 Production.Product
-AS
-p
+AS p
 WHERE
-EXISTS
-(
+EXISTS (
 SELECT
 *
 FROM
 Production.ProductModel
-AS
-pm
-WHERE
-p.ProductModelID = pm.ProductModelID
-AND
-pm.Name
+AS pm
+WHERE p.ProductModelID = pm.ProductModelID
+AND pm.Name
 LIKE
 'Long-Sleeve Logo Jersey%'
 );
@@ -159,37 +134,23 @@ GO
 -- OR
 ```
 
-```sql
-IN
-```
+`IN`
 
-```sql
-SalesPerson
-```
+`SalesPerson`
 
 ```sql
 5000.00
 ```
 
-```sql
-Employee
-```
+`Employee`
 
-```sql
-SalesPerson
-```
+`SalesPerson`
 
-```sql
-Employee.EmployeeID
-```
+`Employee.EmployeeID`
 
-```sql
-Employee
-```
+`Employee`
 
-```sql
-HAVING
-```
+`HAVING`
 
 ```sql
 USE
@@ -202,16 +163,13 @@ FROM
 Production.Product
 WHERE
 ProductModelID
-IN
-(
+IN (
 SELECT
 ProductModelID
 FROM
 Production.ProductModel
-AS
-pm
-WHERE
-p.ProductModelID = pm.ProductModelID
+AS pm
+WHERE p.ProductModelID = pm.ProductModelID
 AND
 Name
 LIKE
@@ -222,44 +180,34 @@ USE
 AdventureWorks2025;
 GO
 SELECT
-DISTINCT
-p.LastName,
+DISTINCT p.LastName,
 p.FirstName
 FROM
 Person.Person
-AS
-p
+AS p
 INNER
 JOIN
 HumanResources.Employee
-AS
-e
-ON
-e.BusinessEntityID = p.BusinessEntityID
+AS e
+ON e.BusinessEntityID = p.BusinessEntityID
 WHERE
 5000.00
-IN
-(
+IN (
 SELECT
 Bonus
 FROM
 Sales.SalesPerson
-AS
-sp
-WHERE
-e.BusinessEntityID = sp.BusinessEntityID
+AS sp
+WHERE e.BusinessEntityID = sp.BusinessEntityID
 );
 GO
 USE
 AdventureWorks2025;
 GO
-SELECT
-p1.ProductModelID
+SELECT p1.ProductModelID
 FROM
 Production.Product
-AS
-p1
+AS p1
 GROUP
-BY
-p1.ProductModelID
+BY p1.ProductModelID
 ```

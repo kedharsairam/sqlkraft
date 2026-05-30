@@ -98,6 +98,5 @@ Bash
 ```cmd
 CLUSTER_TYPE = NONE
 /etc/hostname
-/etc/hostname
-sudo vi /etc/hostname
+/etc/hostname sudo vi /etc/hostname
 ```

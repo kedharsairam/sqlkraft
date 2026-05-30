@@ -14,13 +14,9 @@ DMV with the
 
 following command:
 
-SQL
-
 A similar command can be run to clear the
 
 DMV:
-
-SQL
 
 : This was illustrated in
 
@@ -94,8 +90,6 @@ DMVs. The results can be used to determine
 
 the current wait type for sessions executing on the server.
 
-SQL
-
 The statistics exposed by this query are described as follows:
 
 ## Description
@@ -129,8 +123,6 @@ the format:
 Expand table
 
 The following query returns information for all non-buffer latches:
-
-SQL
 
 The statistics exposed by this query are described as follows:
 
@@ -166,34 +158,24 @@ find the last database engine startup time. On a system that has been running a 
 
 Expand table
 
-```sql
-sys.dm_os_wait_stats
-```
+`sys.dm_os_wait_stats`
 
-```sql
-sys.dm_os_latch_stats
-```
+`sys.dm_os_latch_stats`
 
-```sql
-sys.dm_os_wait_stats
-```
+`sys.dm_os_wait_stats`
 
 ```sql
 DBCC SQLPERF
 ```
 
-```sql
-sys.dm_os_wait_stats
-```
+`sys.dm_os_wait_stats`
 
 ```sql
 DBCC SQLPERF ('sys.dm_os_wait_stats', 'CLEAR');
 DBCC SQLPERF ('sys.dm_os_latch_stats', 'CLEAR');
 ```
 
-```sql
-wait_type
-```
+`wait_type`
 
 ```sql
 PAGELATCH_*
@@ -203,130 +185,80 @@ PAGELATCH_*
 PAGEIOLATCH_*
 ```
 
-```sql
-sys.dm_os_wait_stats
-```
+`sys.dm_os_wait_stats`
+
+`sys.dm_os_wait_stats`
+
+`sys.dm_exec_sessions`
+
+`sys.dm_exec_requests`
 
 ```sql
-sys.dm_os_wait_stats
-```
-
-```sql
-sys.dm_exec_sessions
-```
-
-```sql
-sys.dm_exec_requests
-```
-
-```sql
-SELECT
-wt.session_id,
+SELECT wt.session_id,
 wt.wait_type,
 er.last_wait_type
-AS
-last_wait_type,
+AS last_wait_type,
 wt.wait_duration_ms,
 wt.blocking_session_id,
 wt.blocking_exec_context_id,
 resource_description
-FROM
-sys.dm_os_waiting_tasks
-AS
-wt
+FROM sys.dm_os_waiting_tasks
+AS wt
 INNER
-JOIN
-sys.dm_exec_sessions
-AS
-es
-ON
-wt.session_id = es.session_id
+JOIN sys.dm_exec_sessions
+AS es
+ON wt.session_id = es.session_id
 INNER
-JOIN
-sys.dm_exec_requests
-AS
-er
-ON
-wt.session_id = er.session_id
-WHERE
-es.is_user_process = 1
-AND
-wt.wait_type <>
+JOIN sys.dm_exec_requests
+AS er
+ON wt.session_id = er.session_id
+WHERE es.is_user_process = 1
+AND wt.wait_type <>
 'SLEEP_TASK'
 ORDER
-BY
-wt.wait_duration_ms
+BY wt.wait_duration_ms
 DESC
 ;
 ```
 
-```sql
-session_id
-```
+`session_id`
 
-```sql
-wait_type
-```
+`wait_type`
 
-```sql
-last_wait_type
-```
+`last_wait_type`
 
-```sql
-wait_duration_ms
-```
+`wait_duration_ms`
 
-```sql
-blocking_session_id
-```
+`blocking_session_id`
 
-```sql
-blocking_exec_context_id
-```
+`blocking_exec_context_id`
 
-```sql
-resource_description
-```
+`resource_description`
 
-```sql
-resource_description
-```
+`resource_description`
 
 ```sql
 <database_id>:<file_id>:<page_id>
 ```
 
-```sql
-latch_class
-```
+`latch_class`
 
-```sql
-waiting_requests_count
-```
+`waiting_requests_count`
 
-```sql
-wait_time_ms
-```
+`wait_time_ms`
 
-```sql
-max_wait_time_ms
-```
+`max_wait_time_ms`
 
-```sql
-sqlserver_start_time
-```
+`sqlserver_start_time`
 
 ```sql
 SELECT
 *
-FROM
-sys.dm_os_latch_stats
-WHERE
-latch_class <>
+FROM sys.dm_os_latch_stats
+WHERE latch_class <>
 'BUFFER'
 ORDER
-BY
-wait_time_ms
+BY wait_time_ms
 DESC
 ;
 ```

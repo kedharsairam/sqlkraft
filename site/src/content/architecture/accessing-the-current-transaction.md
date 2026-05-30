@@ -103,9 +103,7 @@ Connection.Open
 Enlist
 Transaction
 ROLLBACK TRANSACTION
-ROLLBACK TRANSACTION
-using
-(TransactionScope transactionScope =
+ROLLBACK TRANSACTION using (TransactionScope transactionScope =
 new
 TransactionScope(TransactionScopeOptions.Required)) { }
 ```

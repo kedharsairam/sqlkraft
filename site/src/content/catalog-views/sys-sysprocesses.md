@@ -73,9 +73,7 @@ columns in the following system
 
 ### Example 2
 
-```sql
-CONTEXT_INFO
-```
+`CONTEXT_INFO`
 
 ### Example 3
 

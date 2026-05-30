@@ -37,9 +37,7 @@ N
 
 ### Example 1
 
-```sql
-sp_unbindrule
-```
+`sp_unbindrule`
 
 ### Example 2
 
@@ -55,15 +53,11 @@ DROP RULE
 
 ### Example 4
 
-```sql
-CHECK
-```
+`CHECK`
 
 ### Example 5
 
-```sql
-CHECK
-```
+`CHECK`
 
 ### Example 6
 
@@ -73,15 +67,11 @@ DROP RULE
 
 ### Example 7
 
-```sql
-ALTER
-```
+`ALTER`
 
 ### Example 8
 
-```sql
-VendorID_rule
-```
+`VendorID_rule`
 
 ### Example 9
 
@@ -95,9 +85,7 @@ RULE VendorID_rule;
 
 ```sql
 CREATE RULE
-DROP RULE
-sp_bindrule
-sp_unbindrule
+DROP RULE sp_bindrule sp_unbindrule
 CHECK
 ```
 

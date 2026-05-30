@@ -35,8 +35,6 @@ SQL Managed Instance
 
 Azure Synapse Analytics (serverless SQL pool only)
 
-SQL
-
 analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
@@ -67,20 +65,15 @@ and
 
 .
 
-SQL
-
 ```sql
 OPENJSON
 WITH
 OPENJSON
-AS JSON
-col5
-array_element
+AS JSON col5 array_element
 DECLARE
 @
 json
-NVARCHAR
-(
+NVARCHAR (
 MAX
 ) =
 N
@@ -102,35 +95,23 @@ json
 , N
 'lax $.someObject.someArray'
 )
-WITH
-( k1
-int
+WITH ( k1 int
 ,
-k2
-varchar
-(100),
-col3
-varchar
-(6) N
+k2 varchar (100),
+col3 varchar (6) N
 '$.k3'
 ,
-col4
-varchar
-(10) N
+col4 varchar (10) N
 'lax $.k4.data'
 ,
-col5
-nvarchar
-(
+col5 nvarchar (
 MAX
 ) N
 'lax $.k4'
 AS
 JSON
 ,
-array_element
-nvarchar
-(
+array_element nvarchar (
 MAX
 ) N
 '$'

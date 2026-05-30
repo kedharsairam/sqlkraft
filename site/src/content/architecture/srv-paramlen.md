@@ -72,7 +72,6 @@ int srv_paramlen (
 SRV_PROC *
 srvproc
 ,
-int
-n
+int n
 );
 ```

@@ -142,13 +142,9 @@ ran the following query to remove several hundred thousand old rows from an audi
 
 and then you found that it caused a lock escalation that blocked other users:
 
-SQL
-
 By removing these rows a few hundred at a time, you can dramatically reduce the number
 
 of locks that accumulate per transaction and prevent lock escalation. For example:
-
-SQL
 
 Reduce a query lock footprint by making the query as efficient as possible. Large scans or
 
@@ -258,21 +254,13 @@ create a Transact-SQL job that contains the following code, and schedule the new
 
 start several minutes before the batch job's start time:
 
-SQL
-
 ### MSSQLSERVER_1204
 
-```sql
-IX
-```
+`IX`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 S
@@ -282,29 +270,17 @@ S
 X
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-IX
-```
+`IX`
 
 ```sql
 X
@@ -318,33 +294,21 @@ X
 READ COMMITTED
 ```
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 READ UNCOMMITTED
 ```
 
-```sql
-PAGLOCK
-```
+`PAGLOCK`
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
-```sql
-LOCK_ESCALATION
-```
+`LOCK_ESCALATION`
 
 ```sql
 DELETE
@@ -354,8 +318,7 @@ WHERE
 LogDate <
 '2024-09-26'
 DECLARE
-@DeletedRows
-int
+@DeletedRows int
 ;
 WHILE @DeletedRows IS NULL OR @DeletedRows > 0
 BEGIN
@@ -376,9 +339,7 @@ END
 REPEATABLE READ
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 READ COMMITTED
@@ -388,17 +349,11 @@ READ COMMITTED
 READ COMMITTED
 ```
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-IX
-```
+`IX`
 
 ```sql
 S
@@ -408,17 +363,13 @@ S
 X
 ```
 
-```sql
-mytable
-```
+`mytable`
 
 ```sql
 BEGIN
 TRAN;
 SELECT
 *
-FROM
-mytable
-WITH
-(UPDLOCK, HOLDLOCK)
+FROM mytable
+WITH (UPDLOCK, HOLDLOCK)
 ```

@@ -31,13 +31,9 @@ The syntax for inserting into a Node table is the same as for a regular table.
 
 ## syntaxsql
 
-```sql
-node
-```
+`node`
 
-```sql
-edge
-```
+`edge`
 
 ```sql
 [
@@ -47,8 +43,7 @@ WITH
 INSERT
 {
 [
-TOP
-( expression ) [
+TOP ( expression ) [
 PERCENT
 ] ]
 [
@@ -58,8 +53,7 @@ INTO
 <object>
 | rowset_function_limited
 [
-WITH
-(
+WITH (
 <Table_Hint_Limited>
 [ ...n ] ) ]
 }
@@ -71,8 +65,7 @@ WITH
 <OUTPUT Clause>
 ]
 {
-VALUES
-( {
+VALUES ( {
 DEFAULT
 |
 NULL
@@ -101,8 +94,7 @@ node_table_name  | edge_table_name
 ::=
 SELECT
 <select_list>
-FROM
-(
+FROM (
 <dml_statement_with_output_clause>
 )
 [
@@ -113,8 +105,7 @@ WHERE
 <on_or_where_search_condition>
 ]
 [
-OPTION
-(
+OPTION (
 <query_hint>
 [ ,...n ] ) ]
 ```

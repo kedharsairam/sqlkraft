@@ -78,35 +78,21 @@ only alters the initial lock acquisition. Lock hints don't
 
 prevent lock escalation.
 
-```sql
-IX
-```
+`IX`
+
+`mytable`
+
+`TABLOCK`
+
+`mytable`
 
 ```sql
-mytable
+Error: 1204, Severity: 19, State: 1 The SQL Server cannot obtain a LOCK resource at this time. Rerun your statement when there are fewer active users or ask the system administrator to check the SQL Server lock and memory configuration.
 ```
 
-```sql
-TABLOCK
-```
+`LOCK_ESCALATION`
 
-```sql
-mytable
-```
-
-```sql
-Error: 1204, Severity: 19, State: 1 The SQL Server cannot obtain a LOCK
-resource at this time. Rerun your statement when there are fewer active users or ask
-the system administrator to check the SQL Server lock and memory configuration.
-```
-
-```sql
-LOCK_ESCALATION
-```
-
-```sql
-LOCK_ESCALATION
-```
+`LOCK_ESCALATION`
 
 ```sql
 WHERE
@@ -116,6 +102,4 @@ COMMIT
 TRAN;
 ```
 
-```sql
-ROWLOCK
-```
+`ROWLOCK`

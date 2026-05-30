@@ -14,28 +14,21 @@ Adds a log file to a database when recovery can't complete on a database due to 
 
 ## Syntax
 
-```sql
-sp_add_log_file_recover_suspect_db
-```
+`sp_add_log_file_recover_suspect_db`
 
 ## Examples
 
 ### Example 1
 
-```sql
-db1
-```
+`db1`
 
 ### Example 2
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_add_log_file_recover_suspect_db
-db1,
+EXECUTE sp_add_log_file_recover_suspect_db db1,
 logfile2,
 'C:\Program Files\Microsoft SQL
 Server\MSSQL16.MSSQLSERVER\MSSQL\Data\db1_logfile2.ldf'

@@ -14,6 +14,4 @@ SQL Server 2022 (16.x) and later versions Mirrored databases in Microsoft SQL da
 
 ## Syntax
 
-```sql
-batch_processing_phase
-```
+`batch_processing_phase`

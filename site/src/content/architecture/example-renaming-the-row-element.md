@@ -43,8 +43,6 @@ as shown in this query. The query returns a
 
 element for each row in the rowset.
 
-SQL
-
 This is the result. Because the
 
 directive is added in the query, the result is element-
@@ -70,8 +68,7 @@ WHERE
 ProductModelID = 122
 FOR
 XML
-RAW
-(
+RAW (
 'ProductModel'
 ), ELEMENTS;
 GO

@@ -260,9 +260,7 @@ Expand table
 
 ### nvarchar(max)
 
-```sql
-ManagerID
-```
+`ManagerID`
 
 ```sql
 A

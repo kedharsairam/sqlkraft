@@ -49,8 +49,6 @@ Using Shared Access Signatures (SAS)
 
 .
 
-SQL
-
 Applies to
 
 : SQL Server 2025 (17.x) and later versions.
@@ -97,8 +95,6 @@ CREATE MASTER KEY
 
 custom login and password.
 
-SQL
-
 The target server name is
 
 , port
@@ -113,21 +109,15 @@ used is
 
 :
 
-SQL
-
 Following the previous example here are two code samples. The first snippet has
 
 and
 
 set.
 
-SQL
-
 The following snippet doesn't have
 
 enabled.
-
-SQL
 
 Related content
 
@@ -159,21 +149,13 @@ SHARED ACCESS SIGNATURE
 srt=o&sp=r
 ```
 
-```sql
-Encryption
-```
+`Encryption`
 
-```sql
-CONNECTION_OPTIONS
-```
+`CONNECTION_OPTIONS`
 
-```sql
-TrustServerCertificate
-```
+`TrustServerCertificate`
 
-```sql
-Encryption
-```
+`Encryption`
 
 ```sql
 --Create a database scoped credential using SAS Token
@@ -192,10 +174,8 @@ GO
 CREATE
 EXTERNAL
 DATA
-SOURCE
-data_lake_gen2_dfs
-WITH
-(
+SOURCE data_lake_gen2_dfs
+WITH (
 LOCATION =
 'adls://<container>@<storage_account>.dfs.core.windows.net'
 ,
@@ -207,9 +187,7 @@ CREDENTIAL = datalakegen2
 /
 ```
 
-```sql
-LOCATION
-```
+`LOCATION`
 
 ```sql
 CREATE
@@ -229,8 +207,7 @@ EXTERNAL
 DATA
 SOURCE
 MyAzureInvoices
-WITH
-(
+WITH (
 LOCATION =
 'abs://<container>@<storage_account_name>.blob.core.windows.net/'
 ,
@@ -242,9 +219,7 @@ CREDENTIAL = AccessAzureInvoices,
 Encrypt=Yes;TrustServerCertificate=No;
 ```
 
-```sql
-WINSQL2022
-```
+`WINSQL2022`
 
 ```sql
 58137
@@ -254,25 +229,15 @@ WINSQL2022
 Encrypt=Strict
 ```
 
-```sql
-HostnameinCertificate
-```
+`HostnameinCertificate`
 
-```sql
-WINSQL2022
-```
+`WINSQL2022`
 
-```sql
-Encryption
-```
+`Encryption`
 
-```sql
-TrustServerCertificate
-```
+`TrustServerCertificate`
 
-```sql
-Encryption
-```
+`Encryption`
 
 ```sql
 CREATE
@@ -291,8 +256,7 @@ EXTERNAL
 DATA
 SOURCE
 SQLServerInstance2
-WITH
-(
+WITH (
 LOCATION =
 'sqlserver://WINSQL2022:58137'
 ,
@@ -308,8 +272,7 @@ EXTERNAL
 DATA
 SOURCE
 SQLServerInstance2
-WITH
-(
+WITH (
 LOCATION =
 'sqlserver://WINSQL2022:58137'
 ,
@@ -322,8 +285,7 @@ EXTERNAL
 DATA
 SOURCE
 SQLServerInstance2
-WITH
-(
+WITH (
 LOCATION =
 'sqlserver://WINSQL2022:58137'
 ,

@@ -13,22 +13,12 @@ Returns the stored resource pool configuration. Each row represents a resource p
 
 ## Code Blocks
 
-```sql
-pool_id
-```
+`pool_id`
 
-```sql
-name
-```
+`name`
 
-```sql
-min_cpu_percent
-```
+`min_cpu_percent`
 
-```sql
-max_cpu_percent
-```
+`max_cpu_percent`
 
-```sql
-min_memory_percent
-```
+`min_memory_percent`

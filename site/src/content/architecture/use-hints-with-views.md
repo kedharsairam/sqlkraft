@@ -12,11 +12,7 @@ when the view is expanded to access its base tables. When this occurs, the query
 
 error. For example, consider the following view that contains a table hint in its definition:
 
-SQL
-
 Now suppose you enter this query:
-
-SQL
 
 The query fails, because the hint
 
@@ -98,119 +94,61 @@ within the view is determined by the position of the view in the ordered constru
 
 the following query selects from three tables and a view:
 
-SQL
+`SERIALIZABLE`
 
-```sql
-SERIALIZABLE
-```
+`Person.AddrState`
 
-```sql
-Person.AddrState
-```
+`Person.Address`
 
-```sql
-Person.Address
-```
+`Person.StateProvince`
 
-```sql
-Person.StateProvince
-```
+`NOLOCK`
 
-```sql
-NOLOCK
-```
+`Person.Address`
 
-```sql
-Person.Address
-```
+`SERIALIZABLE`
 
-```sql
-SERIALIZABLE
-```
+`NOLOCK`
 
-```sql
-NOLOCK
-```
+`PAGLOCK`
 
-```sql
-PAGLOCK
-```
+`NOLOCK`
 
-```sql
-NOLOCK
-```
+`ROWLOCK`
 
-```sql
-ROWLOCK
-```
+`TABLOCK`
 
-```sql
-TABLOCK
-```
+`TABLOCKX`
 
-```sql
-TABLOCKX
-```
+`HOLDLOCK`
 
-```sql
-HOLDLOCK
-```
+`NOLOCK`
 
-```sql
-NOLOCK
-```
+`READCOMMITTED`
 
-```sql
-READCOMMITTED
-```
+`REPEATABLEREAD`
 
-```sql
-REPEATABLEREAD
-```
+`SERIALIZABLE`
 
-```sql
-SERIALIZABLE
-```
+`HOLDLOCK`
 
-```sql
-HOLDLOCK
-```
+`v1`
 
-```sql
-v1
-```
+`v1`
 
-```sql
-v1
-```
+`v2`
 
-```sql
-v2
-```
+`v2`
 
-```sql
-v2
-```
+`NOLOCK`
 
-```sql
-NOLOCK
-```
+`HOLDLOCK`
 
-```sql
-HOLDLOCK
-```
+`v1`
 
-```sql
-v1
-```
+`NOLOCK`
 
-```sql
-NOLOCK
-```
-
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
 ```sql
 FORCE ORDER
@@ -226,21 +164,17 @@ Person.AddrState
 WITH
 SCHEMABINDING
 AS
-SELECT
-a.AddressID, a.AddressLine1,
+SELECT a.AddressID, a.AddressLine1,
 s.StateProvinceCode, s.CountryRegionCode
 FROM
 Person.Address a
-WITH
-(NOLOCK), Person.StateProvince s
-WHERE
-a.StateProvinceID = s.StateProvinceID;
+WITH (NOLOCK), Person.StateProvince s
+WHERE a.StateProvinceID = s.StateProvinceID;
 SELECT
 AddressID, AddressLine1, StateProvinceCode, CountryRegionCode
 FROM
 Person.AddrState
-WITH
-(
+WITH (
 SERIALIZABLE
 )
 WHERE

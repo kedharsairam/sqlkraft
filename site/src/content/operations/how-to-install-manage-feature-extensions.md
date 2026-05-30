@@ -75,8 +75,6 @@ Dir>\Common7\IDE\Extensions\Microsoft\SQLDB\TestConditions
 <Visual Studio Install
 Dir>\Common7\IDE\Extensions\Microsoft\SQLDB\DAC\120\Extensions
 <Visual Studio Install Dir>
-C:\Program Files
-(x86)\Microsoft Visual Studio 11.0
-C:\Program Files
-(x86)\Microsoft Visual Studio 12.0
+C:\Program Files (x86)\Microsoft Visual Studio 11.0
+C:\Program Files (x86)\Microsoft Visual Studio 12.0
 ```

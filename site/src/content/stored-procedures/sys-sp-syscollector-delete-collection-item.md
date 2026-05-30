@@ -63,30 +63,22 @@ must have a value if
 
 ### Example 1
 
-```sql
-sp_syscollector_delete_collection_item
-```
+`sp_syscollector_delete_collection_item`
 
 ### Example 2
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 3
 
-```sql
-MyCollectionItem1
-```
+`MyCollectionItem1`
 
 ### Example 4
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_syscollector_delete_collection_item @
+EXECUTE sp_syscollector_delete_collection_item @
 name
 =
 'MyCollectionItem1'

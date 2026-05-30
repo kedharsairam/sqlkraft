@@ -282,130 +282,68 @@ space requirements.
 
 ### NonSnapshot Version Transactions
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-sys.dm_db_file_space_usage
-```
+`sys.dm_db_file_space_usage`
 
-```sql
-sys.dm_db_session_space_usage
-```
+`sys.dm_db_session_space_usage`
 
-```sql
-sys.dm_db_task_space_usage
-```
+`sys.dm_db_task_space_usage`
 
-```sql
-sys.dm_tran_top_version_generators
-```
+`sys.dm_tran_top_version_generators`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-sys.dm_tran_version_store
-```
+`sys.dm_tran_version_store`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-sys.dm_tran_version_store_space_usage
-```
+`sys.dm_tran_version_store_space_usage`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-sys.dm_tran_top_version_generators
-```
+`sys.dm_tran_top_version_generators`
 
-```sql
-sys.dm_tran_version_store
-```
+`sys.dm_tran_version_store`
 
-```sql
-sys.dm_tran_active_snapshot_database_transactions
-```
+`sys.dm_tran_active_snapshot_database_transactions`
 
-```sql
-sys.dm_tran_transactions_snapshot
-```
+`sys.dm_tran_transactions_snapshot`
 
-```sql
-sys.dm_tran_current_transaction
-```
+`sys.dm_tran_current_transaction`
 
-```sql
-sys.dm_tran_current_snapshot
-```
+`sys.dm_tran_current_snapshot`
 
-```sql
-sys.dm_tran_current_snapshot
-```
+`sys.dm_tran_current_snapshot`
 
-```sql
-sys.dm_tran_transactions_snapshot
-```
+`sys.dm_tran_transactions_snapshot`
 
-```sql
-sys.dm_tran_persistent_version_store_stats
-```
+`sys.dm_tran_persistent_version_store_stats`
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 SQLServer:Transactions
 ```
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-sys.dm_tran_version_store_space_usage
-```
+`sys.dm_tran_version_store_space_usage`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`

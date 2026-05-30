@@ -100,11 +100,7 @@ updated by a DML statement such as
 
 . For example:
 
-SQL
-
-```sql
-locking_stats2
-```
+`locking_stats2`
 
 ```sql
 READ COMMITTED
@@ -123,38 +119,20 @@ COMMITTED
 U
 ```
 
-```sql
-UPDLOCK
-```
+`UPDLOCK`
 
-```sql
-READCOMMITTEDLOCK
-```
+`READCOMMITTEDLOCK`
 
-```sql
-XLOCK
-```
+`XLOCK`
 
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
-```sql
-UPDLOCK
-```
+`UPDLOCK`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`

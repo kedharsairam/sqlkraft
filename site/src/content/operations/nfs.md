@@ -82,9 +82,7 @@ which one.
 Important NFS server information
 
 ```cmd
-rw
-sync
-no_root_squash
+rw sync no_root_squash
 777
 /etc/exports
 ```

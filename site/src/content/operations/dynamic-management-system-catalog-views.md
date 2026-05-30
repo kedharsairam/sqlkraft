@@ -59,8 +59,6 @@ The following Transact-SQL (T-SQL) query retrieves the status of all the nodes i
 
 Windows Server Failover Clustering (WSFC) cluster.
 
-SQL
-
 This result set reports the status of each member node of the current WSFC cluster. If the
 
 quorum is defined as
@@ -84,12 +82,7 @@ DMVs for the availability replicas and availability databases by right-clicking 
 table header and selecting the DMV you wish to display or hide.
 
 ```cmd
-use
-master
-go
-select
+use master go select
 *
-from
-sys.dm_hadr_cluster_members
-go
+from sys.dm_hadr_cluster_members go
 ```

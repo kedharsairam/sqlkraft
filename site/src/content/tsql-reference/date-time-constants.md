@@ -53,28 +53,6 @@ Binary constants greater than 8000 bytes are typed as
 
 data.
 
-### int
-
-### int
-
-### int
-
-### decimal
-
-### decimal
-
-### float
-
-### real
-
-### float
-
-### real
-
-### money
-
-### money
-
 ```sql
 0x
 ```

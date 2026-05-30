@@ -14,9 +14,7 @@ Drops one or all parameters from a profile in the table. This stored procedure i
 
 ## Syntax
 
-```sql
-sp_drop_agent_parameter
-```
+`sp_drop_agent_parameter`
 
 ## Permissions
 

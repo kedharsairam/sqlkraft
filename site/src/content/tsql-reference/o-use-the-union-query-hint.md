@@ -13,13 +13,9 @@ clause is used with a
 
 clause.
 
-SQL
-
 The following example uses the
 
 query hint.
-
-SQL
 
 ```sql
 OPTION (GROUP)
@@ -37,25 +33,19 @@ MERGE UNION
 USE
 AdventureWorks2025;
 GO
-SELECT
-pp.FirstName,
+SELECT pp.FirstName,
 pp.LastName,
 e.NationalIDNumber
 FROM
 HumanResources.Employee
-AS
-e
-WITH
-(
-INDEX
-(AK_Employee_NationalIDNumber))
+AS e
+WITH (
+INDEX (AK_Employee_NationalIDNumber))
 INNER
 JOIN
 Person.Person
-AS
-pp
-ON
-e.BusinessEntityID = pp.BusinessEntityID
+AS pp
+ON e.BusinessEntityID = pp.BusinessEntityID
 WHERE
 LastName =
 'Johnson'
@@ -65,25 +55,20 @@ GO
 USE
 AdventureWorks2025;
 GO
-SELECT
-pp.LastName,
+SELECT pp.LastName,
 pp.FirstName,
 e.JobTitle
 FROM
 HumanResources.Employee
-AS
-e
-WITH
-(
+AS e
+WITH (
 INDEX
 = 0)
 INNER
 JOIN
 Person.Person
-AS
-pp
-ON
-e.BusinessEntityID = pp.BusinessEntityID
+AS pp
+ON e.BusinessEntityID = pp.BusinessEntityID
 WHERE
 LastName =
 'Johnson'
@@ -97,8 +82,7 @@ AdventureWorks2025;
 GO
 SELECT
 ProductID, OrderQty,
-SUM
-(LineTotal)
+SUM (LineTotal)
 AS
 Total
 FROM
@@ -111,8 +95,7 @@ ProductID, OrderQty
 ORDER
 BY
 ProductID, OrderQty
-OPTION
-(
+OPTION (
 HASH
 GROUP
 ,

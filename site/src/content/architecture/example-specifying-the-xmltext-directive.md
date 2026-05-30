@@ -55,8 +55,6 @@ column that stores the unconsumed part
 
 of the XML document.
 
-SQL
-
 This query retrieves columns from the
 
 table. For the
@@ -74,8 +72,6 @@ is set to
 as part of providing a universal table column
 
 name.
-
-SQL
 
 In the resulting XML document:
 
@@ -114,33 +110,24 @@ Overflow
 Person
 Overflow
 XMLTEXT
-Overflow
-xmltext
+Overflow xmltext
 <overflow>
 <Parent>
 PersonID
 <xmltext>
 PersonID
 <xmltext>
-USE
-tempdb;
+USE tempdb;
 GO
 CREATE
 TABLE
-Person(PersonID
-varchar
-(5), PersonName
-varchar
-(20),
-Overflow
-nvarchar
-(200));
+Person(PersonID varchar (5), PersonName varchar (20),
+Overflow nvarchar (200));
 GO
 INSERT
 INTO
 Person
-VALUES
-(
+VALUES (
 'P1'
 ,
 'Joe'
@@ -162,25 +149,19 @@ VALUES
 '<SomeTag attr3="data" PersonID="P">content</SomeTag>'
 );
 SELECT
-1
-as
+1 as
 Tag,
-NULL
-as
-parent
+NULL as parent
 ,
-PersonID
-as
+PersonID as
 [
 Parent
 !1!PersonID],
-PersonName
-as
+PersonName as
 [
 Parent
 !1!PersonName],
-Overflow
-as
+Overflow as
 [
 Parent
 !1!!XMLTEXT]

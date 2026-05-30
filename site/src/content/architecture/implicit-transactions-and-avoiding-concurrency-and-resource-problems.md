@@ -82,26 +82,14 @@ user.
 READ COMMITTED
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-COMMIT
-```
+`COMMIT`
 
-```sql
-ROLLBACK
-```
+`ROLLBACK`

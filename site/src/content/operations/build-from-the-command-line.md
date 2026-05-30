@@ -70,8 +70,5 @@ required to build the SQL project.
 Bash
 
 ```cmd
-.dacpac
-dotnet build
-dotnet build AdventureWorks/AdventureWorks.sqlproj
-msbuild AdventureWorks/AdventureWorks.sqlproj
+.dacpac dotnet build dotnet build AdventureWorks/AdventureWorks.sqlproj msbuild AdventureWorks/AdventureWorks.sqlproj
 ```

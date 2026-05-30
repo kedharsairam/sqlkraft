@@ -94,10 +94,6 @@ The buffer manager supports the following features:
 
 ### flag 834
 
-```sql
-committed_target_kb
-```
+`committed_target_kb`
 
-```sql
-committed_kb
-```
+`committed_kb`

@@ -14,41 +14,29 @@ This procedure is scoped to an Active Geo-Replication relationship between a pri
 
 ## Syntax
 
-```sql
-sys.sp_wait_for_database_copy_sync
-```
+`sys.sp_wait_for_database_copy_sync`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sys.sp_wait_for_database_copy_sync
-```
+`sys.sp_wait_for_database_copy_sync`
 
 ### Example 2
 
-```sql
-sp_wait_for_database_copy_sync
-```
+`sp_wait_for_database_copy_sync`
 
 ### Example 3
 
-```sql
-sp_wait_for_database_copy_sync
-```
+`sp_wait_for_database_copy_sync`
 
 ### Example 4
 
-```sql
-AdventureWorks
-```
+`AdventureWorks`
 
 ### Example 5
 
-```sql
-serverSecondary
-```
+`serverSecondary`
 
 ### Example 6
 
@@ -56,8 +44,7 @@ serverSecondary
 USE
 AdventureWorks;
 GO
-EXECUTE
-sys.sp_wait_for_database_copy_sync
+EXECUTE sys.sp_wait_for_database_copy_sync
 @target_server = N
 'serverSecondary'
 ,

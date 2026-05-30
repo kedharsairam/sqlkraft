@@ -119,51 +119,36 @@ OUTPUT
 
 ### Example 1
 
-```sql
-sp_add_log_shipping_secondary_primary
-```
+`sp_add_log_shipping_secondary_primary`
 
 ### Example 2
 
-```sql
-master
-```
+`master`
 
 ### Example 3
 
-```sql
-log_shipping_secondary
-```
+`log_shipping_secondary`
 
 ### Example 4
 
-```sql
-log_shipping_secondary
-```
+`log_shipping_secondary`
 
 ### Example 5
 
-```sql
-log_shipping_secondary
-```
+`log_shipping_secondary`
 
 ### Example 6
 
-```sql
-sp_add_log_shipping_secondary_primary
-```
+`sp_add_log_shipping_secondary_primary`
 
 ### Example 7
 
-```sql
-AdventureWorks2022
-```
+`AdventureWorks2022`
 
 ### Example 8
 
 ```sql
-EXECUTE
-master.dbo.sp_add_log_shipping_secondary_primary
+EXECUTE master.dbo.sp_add_log_shipping_secondary_primary
 @primary_server = N
 'TRIBECA'
 ,

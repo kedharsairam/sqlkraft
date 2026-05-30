@@ -41,8 +41,6 @@ database where you receive the reply message and
 
 end the conversation.
 
-SQL
-
 Copy and paste the following code into a Query Editor window, then run it to receive the
 
 reply message and end the conversation. The
@@ -61,8 +59,6 @@ statement displays the text of the reply message
 
 so you can confirm it's the same as what was sent in the last step.
 
-SQL
-
 ```sql
 RECEIVE
 END CONVERSATION
@@ -73,8 +69,7 @@ GO
 DECLARE
 @RecvReplyMsg
 AS
-NVARCHAR
-(100);
+NVARCHAR (100);
 DECLARE
 @RecvReplyDlgHandle
 AS

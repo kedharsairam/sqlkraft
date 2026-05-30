@@ -17,15 +17,11 @@ The following example finds the average price and the sum of year-to-date sales,
 
 product ID and special offer ID.
 
-SQL
-
 The following example puts the results into groups after retrieving only the rows with list prices
 
 greater than
 
 .
-
-SQL
 
 The following example groups by an expression. You can group by an expression if the
 
@@ -46,12 +42,10 @@ GO
 SELECT
 ProductID,
 SpecialOfferID,
-AVG
-(UnitPrice)
+AVG (UnitPrice)
 AS
 [Average Price],
-SUM
-(LineTotal)
+SUM (LineTotal)
 AS
 SubTotal
 FROM
@@ -72,8 +66,7 @@ AdventureWorks2025;
 GO
 SELECT
 ProductModelID,
-AVG
-(ListPrice)
+AVG (ListPrice)
 AS
 [Average
 List

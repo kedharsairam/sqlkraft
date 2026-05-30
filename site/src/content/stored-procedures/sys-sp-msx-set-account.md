@@ -35,26 +35,19 @@ N
 
 ### Example 1
 
-```sql
-sp_msx_set_account
-```
+`sp_msx_set_account`
 
 ### Example 2
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
 ### Example 3
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_msx_get_account;
-GO
-msx_connection msx_credential_id msx_credential_name  msx_login_name
+EXECUTE dbo.sp_msx_get_account;
+GO msx_connection msx_credential_id msx_credential_name  msx_login_name
 -------------- ----------------- -------------------- ----------------------------
 -
 1              65538             MsxAccount
@@ -63,23 +56,17 @@ AdventureWorks2022\MsxAccount
 
 ### Example 4
 
-```sql
-sp_msx_set_account
-```
+`sp_msx_set_account`
 
 ### Example 5
 
-```sql
-MsxAccount
-```
+`MsxAccount`
 
 ### Example 6
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_msx_set_account @credential_name = MsxAccount;
+EXECUTE dbo.sp_msx_set_account @credential_name = MsxAccount;
 GO
 ```

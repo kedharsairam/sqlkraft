@@ -55,9 +55,7 @@ Only members of the fixed server role or fixed database role can execute . View 
 
 ### Example 1
 
-```sql
-sp_changemergepublication
-```
+`sp_changemergepublication`
 
 ### Example 2
 
@@ -68,16 +66,7 @@ sp_changemergepublication
 ### Example 3
 
 ```sql
-alt_snapshot_folder
-compress_snapshot
-dynamic_filters
-ftp_address
-ftp_login
-ftp_password
-ftp_port
-ftp_subdirectory
-post_snapshot_script
-publication_compatibility_level
+alt_snapshot_folder compress_snapshot dynamic_filters ftp_address ftp_login ftp_password ftp_port ftp_subdirectory post_snapshot_script publication_compatibility_level
 ```
 
 ### Example 4
@@ -89,10 +78,7 @@ publication_compatibility_level
 ### Example 5
 
 ```sql
-pre_snapshot_script
-snapshot_in_defaultfolder
-sync_mode
-use_partition_groups
+pre_snapshot_script snapshot_in_defaultfolder sync_mode use_partition_groups
 ```
 
 ### Example 6
@@ -104,23 +90,19 @@ use_partition_groups
 ### Example 7
 
 ```sql
-dynamic_filters
-validate_subscriber_info
+dynamic_filters validate_subscriber_info
 ```
 
 ### Example 8
 
-```sql
-publish_to_active_directory
-```
+`publish_to_active_directory`
 
 ### Example 9
 
 ```sql
 DECLARE
 @publication
-AS
-sysname;
+AS sysname;
 SET
 @publication = N
 'AdvWorksSalesOrdersMerge'

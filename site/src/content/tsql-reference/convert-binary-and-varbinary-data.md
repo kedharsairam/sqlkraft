@@ -89,51 +89,7 @@ data type of unequal
 
 length, SQL Server pads or truncates the data on the right. These string data types are:
 
-
-
 Expand table
-
-### char
-
-### varchar
-
-### nchar
-
-### nvarchar
-
-### binary
-
-### varbinary
-
-### text
-
-### ntext
-
-### image
-
-### binary
-
-### varbinary
-
-### binary
-
-### varbinary
-
-### binary
-
-### int
-
-### smallint
-
-### tinyint
-
-### binary
-
-### varbinary
-
-### binary
-
-### binary
 
 When other data types are converted to
 
@@ -179,8 +135,6 @@ is stored as a binary
 
 :
 
-SQL
-
 However, the following
 
 statement shows that if the
@@ -191,15 +145,9 @@ the entire value, the leading digits are silently truncated so that the same num
 
 :
 
-SQL
-
 The following batch shows that this silent truncation can affect arithmetic operations without
 
 raising an error:
-
-SQL
-
-### binary
 
 The final result is
 
@@ -227,9 +175,7 @@ the same between versions of SQL Server.
 
 Related content
 
-```sql
-CAST
-```
+`CAST`
 
 ```sql
 123456
@@ -239,9 +185,7 @@ CAST
 0x0001e240
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 0xe240
@@ -249,21 +193,16 @@ SELECT
 
 ```sql
 SELECT
-CAST
-( 123456
+CAST ( 123456
 AS
-BINARY
-(4) );
+BINARY (4) );
 SELECT
-CAST
-( 123456
+CAST ( 123456
 AS
-BINARY
-(2) );
+BINARY (2) );
 DECLARE
 @BinaryVariable2
-BINARY
-(2);
+BINARY (2);
 SET
 @BinaryVariable2 = 123456;
 ```
@@ -280,8 +219,7 @@ SET
 SET
 @BinaryVariable2 = @BinaryVariable2 + 1;
 SELECT
-CAST
-( @BinaryVariable2
+CAST ( @BinaryVariable2
 AS
 INT
 );

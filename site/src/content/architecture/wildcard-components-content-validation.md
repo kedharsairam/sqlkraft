@@ -105,15 +105,12 @@ of the
 
 type.
 
-SQL
-
 ```sql
 <xsd:any>
 <xsd:anyAttribute>
 <xsd:any>
 <xsd:anyAttribute>
-processContents
-e
+processContents e
 CREATE
 XML
 SCHEMA

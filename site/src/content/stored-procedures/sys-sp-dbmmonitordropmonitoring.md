@@ -33,6 +33,5 @@ sp_dbmmonitordropmonitoring
 ### Example 2
 
 ```sql
-EXECUTE
-sp_dbmmonitordropmonitoring;
+EXECUTE sp_dbmmonitordropmonitoring;
 ```

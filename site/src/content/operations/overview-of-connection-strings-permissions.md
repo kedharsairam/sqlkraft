@@ -94,9 +94,7 @@ authentication. If you use Windows authentication, the same credentials are used
 connection strings.
 
 ```cmd
-app.config
-app.config
-ExecutionContext
-app.config
+app.config app.config
+ExecutionContext app.config
 PrivilegedContext
 ```

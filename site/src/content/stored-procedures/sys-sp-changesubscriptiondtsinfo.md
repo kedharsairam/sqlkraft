@@ -14,6 +14,4 @@ Changes the Data Transformation Services (DTS) package properties of a subscript
 
 ## Syntax
 
-```sql
-sp_helppullsubscription
-```
+`sp_helppullsubscription`

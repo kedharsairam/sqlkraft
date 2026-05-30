@@ -27,12 +27,9 @@ Provides information about logins and the users associated with them in each dat
 
 ```sql
 sp_helplogins [ [ @
-L
-ogin
-N
-ame
-P
-attern = ]
+L ogin
+N ame
+P attern = ]
 N
 'LoginNamePattern'
 ]
@@ -43,39 +40,28 @@ N
 
 ### Example 1
 
-```sql
-sp_helplogins
-```
+`sp_helplogins`
 
 ### Example 2
 
-```sql
-sp_helplogins
-```
+`sp_helplogins`
 
 ### Example 3
 
-```sql
-sp_helplogins
-```
+`sp_helplogins`
 
 ### Example 4
 
-```sql
-sp_helplogins
-```
+`sp_helplogins`
 
 ### Example 5
 
-```sql
-John
-```
+`John`
 
 ### Example 6
 
 ```sql
-EXECUTE
-sp_helplogins
+EXECUTE sp_helplogins
 'John'
 ;
 GO

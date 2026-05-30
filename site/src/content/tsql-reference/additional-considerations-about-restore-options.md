@@ -75,8 +75,6 @@ Online restores can involve
 
 .
 
-
-
 Expand table
 
 #### Discontinued keyword

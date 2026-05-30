@@ -137,8 +137,6 @@ Engine. The following table shows the reserved keywords that are introduced by e
 
 compatibility levels.
 
-
-
 Expand table
 
 #### Compatibility level
@@ -151,13 +149,9 @@ Expand table
 
 ### ""
 
-```sql
-UNION
-```
+`UNION`
 
-```sql
-UNION
-```
+`UNION`
 
 ```sql
 {fn CURDATE()}
@@ -167,42 +161,26 @@ UNION
 {fn CONVERT()}
 ```
 
-```sql
-SQL_TIMESTAMP
-```
+`SQL_TIMESTAMP`
 
-```sql
-SQL_DATE
-```
+`SQL_DATE`
 
-```sql
-SQL_TIME
-```
+`SQL_TIME`
 
-```sql
-SQL_TYPE_TIME
-```
+`SQL_TYPE_TIME`
 
-```sql
-SQL_TYPE_TIMESTAMP
-```
+`SQL_TYPE_TIMESTAMP`
 
-```sql
-DATEPART
-```
+`DATEPART`
 
 ```sql
 SELECT DATEPART (year, '2007/05-
 30')
 ```
 
-```sql
-DATEPART
-```
+`DATEPART`
 
-```sql
-REPLACE
-```
+`REPLACE`
 
 ```sql
 SELECT '<'
@@ -218,9 +196,7 @@ SELECT '<'
 'ABC'
 ```
 
-```sql
-RTRIM
-```
+`RTRIM`
 
 ```sql
 SELECT

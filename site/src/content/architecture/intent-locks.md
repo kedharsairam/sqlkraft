@@ -98,25 +98,15 @@ is a superset of
 
 Expand table
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 S
@@ -134,26 +124,14 @@ S
 X
 ```
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-SIX
-```
+`SIX`
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-IS
-```
+`IS`

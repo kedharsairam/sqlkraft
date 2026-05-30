@@ -13,8 +13,7 @@ pubDate: 2025-03-15
 --Creates Clustered Index on the table.
 CREATE CLUSTERED INDEX clustername ON tablename(columnname)
 
---if we want to create composite clustered index use the following command
-create clustered index clustername on tablename(columnname1, columnname2)
+--if we want to create composite clustered index use the following command create clustered index clustername on tablename(columnname1, columnname2)
 
 --Conditions for clustered index:
 	--all rows together the value should not exceed 900 bytes.

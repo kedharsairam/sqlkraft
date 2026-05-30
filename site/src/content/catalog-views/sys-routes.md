@@ -26,15 +26,12 @@ Article • 02/28/2023 Applies to: SQL Server Azure SQL Managed Instance This ca
 
 ### Example 1
 
-```sql
-ExpenseRoute
-```
+`ExpenseRoute`
 
 ### Example 2
 
 ```sql
 DROP
-ROUTE
-route_name
+ROUTE route_name
 [ ; ]
 ```

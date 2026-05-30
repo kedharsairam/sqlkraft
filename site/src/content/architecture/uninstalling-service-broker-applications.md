@@ -83,6 +83,4 @@ the service that you're uninstalling. Drop the routes for this service in the
 
 database of
 
-```sql
-msdb
-```
+`msdb`

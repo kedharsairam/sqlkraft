@@ -64,8 +64,7 @@ int srv_setcoldata (
 SRV_PROC *
 srvproc
 ,
-int
-column
+int column
 ,
 void *
 data

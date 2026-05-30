@@ -87,8 +87,7 @@ DROP DATABASE
 
 ```sql
 SQL Server has encountered %d occurrence(s) of cachestore flush for the '%s'
-cachestore (part of plan cache) due to some database maintenance or reconfigure
-operations.
+cachestore (part of plan cache) due to some database maintenance or reconfigure operations.
 ```
 
 ```sql

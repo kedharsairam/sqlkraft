@@ -41,8 +41,6 @@ type, the content of that data type instance is inserted. Otherwise, the column 
 
 is inserted as a text node.
 
-SQL
-
 Produce this XML. By default, for each row in the rowset, a
 
 element is generated in the
@@ -52,8 +50,6 @@ resulting XML. This is the same as RAW mode.
 The following query returns a three-column rowset. The third column without a name has XML
 
 data. The PATH mode inserts an instance of the xml type.
-
-SQL
 
 This is the partial result:
 

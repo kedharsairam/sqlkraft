@@ -96,8 +96,7 @@ with potential data loss, see
 .
 
 ```cmd
-pcs
-crm
+pcs crm
 CLUSTER_TYPE = EXTERNAL
 FAILOVER_MODE
 EXTERNAL

@@ -34,6 +34,4 @@ Last updated on 11/24/2025
 
 Related content
 
-```sql
-READCOMMITTEDLOCK
-```
+`READCOMMITTEDLOCK`

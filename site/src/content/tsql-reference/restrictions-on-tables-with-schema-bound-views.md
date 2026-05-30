@@ -111,25 +111,17 @@ same as the restrictions currently applied when modifying tables with a simple i
 
 a column. However, you can't remove or change a column that participates in any schema-bound
 
-```sql
-GETUTCDATETIME()
-```
+`GETUTCDATETIME()`
 
-```sql
-NEWID()
-```
+`NEWID()`
 
-```sql
-NEWSEQUENTIALID()
-```
+`NEWSEQUENTIALID()`
 
 ```sql
 NOT NULL
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 max degree of parallelism
@@ -139,25 +131,15 @@ max degree of parallelism
 ALTER TABLE ADD
 ```
 
-```sql
-CONSTRAINT
-```
+`CONSTRAINT`
 
-```sql
-DROP
-```
+`DROP`
 
-```sql
-CONSTRAINT
-```
+`CONSTRAINT`
 
-```sql
-MAXDOP
-```
+`MAXDOP`
 
-```sql
-SWITCH
-```
+`SWITCH`
 
 ```sql
 ALTER TABLE

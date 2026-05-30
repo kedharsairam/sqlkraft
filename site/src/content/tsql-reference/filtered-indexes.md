@@ -77,15 +77,11 @@ memory consumption during these operations. We recommend only using aligned
 
 indexes when the number of partitions exceeds 1,000.
 
-
-
 Expand table
 
 #### option
 
 #### Required
-
-#### value
 
 #### Default
 
@@ -107,33 +103,19 @@ CREATE STATISTICS
 UPDATE STATISTICS
 ```
 
-```sql
-FULLSCAN
-```
+`FULLSCAN`
 
-```sql
-SET
-```
+`SET`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-SET
-```
+`SET`
 
 ```sql
 ANSI_NULLS

@@ -59,8 +59,6 @@ shows whether broker message delivery is
 
 activated, as shown in the following sample:
 
-SQL
-
 You can deactivate Broker message delivery to prevent messages from being delivered to the
 
 wrong database. For more information about Service Broker message delivery, see
@@ -88,14 +86,8 @@ catalog view for the messages. Common error messages include:
 Expand table
 
 ```sql
-is_broker_enabled
-sys.databases
-transmission_status
-sys.transmission_queue
-SELECT
-is_broker_enabled
-FROM
-sys.databases
-WHERE
-database_id = DB_ID();
+is_broker_enabled sys.databases transmission_status sys.transmission_queue
+SELECT is_broker_enabled
+FROM sys.databases
+WHERE database_id = DB_ID();
 ```

@@ -14,9 +14,7 @@ Drops an anonymous agent for replication monitoring at the distributor from the 
 
 ## Syntax
 
-```sql
-sp_helppullsubscription
-```
+`sp_helppullsubscription`
 
 ## Permissions
 

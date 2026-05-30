@@ -77,21 +77,15 @@ values aren't included in the XML return set.
 
 ### Example 1
 
-```sql
-sp_help_spatial_geometry_index_xml
-```
+`sp_help_spatial_geometry_index_xml`
 
 ### Example 2
 
-```sql
-SIndx_SpatialTable_geometry_col2
-```
+`SIndx_SpatialTable_geometry_col2`
 
 ### Example 3
 
-```sql
-geometry_col
-```
+`geometry_col`
 
 ### Example 4
 
@@ -104,8 +98,7 @@ geometry_col
 ```sql
 DECLARE
 @qs
-AS
-geometry =
+AS geometry =
 'POLYGON((-90.0 -180.0, -90.0 180.0, 90.0 180.0, 90.0
 -180.0, -90.0 -180.0))'
 ;
@@ -114,8 +107,7 @@ DECLARE
 AS
 XML
 ;
-EXECUTE
-sp_help_spatial_geometry_index_xml
+EXECUTE sp_help_spatial_geometry_index_xml
 'geometry_col'
 ,
 'SIndx_SpatialTable_geometry_col2'

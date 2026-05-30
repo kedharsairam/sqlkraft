@@ -90,51 +90,44 @@ unambiguously, the schema will be rejected, because of the potential for ambigui
 <root><e1/><e1/></root>
 <xsd:element>
 <e1/>
-<xsd:element
-name
+<xsd:element name
 =
 "root"
 >
 <xsd:complexType>
 <xsd:choice>
-<xsd:element
-name
+<xsd:element name
 =
 "e1"
 />
-<xsd:any
-namespace
+<xsd:any namespace
 =
 "##any"
 />
 </xsd:choice>
 </xsd:complexType>
 </xsd:element>
-<xsd:element
-name
+<xsd:element name
 =
 "root"
 >
 <xsd:complexType>
 <xsd:sequence>
-<xsd:element
-name
+<xsd:element name
 =
 "e1"
 maxOccurs
 =
 "2"
 />
-<xsd:element
-name
+<xsd:element name
 =
 "e2"
 minOccurs
 =
 "0"
 />
-<xsd:element
-name
+<xsd:element name
 =
 "e1"
 />

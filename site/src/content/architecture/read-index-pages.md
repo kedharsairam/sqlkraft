@@ -74,10 +74,6 @@ Clustered and nonclustered indexes
 
 .
 
-```sql
-ABC
-```
+`ABC`
 
-```sql
-DEF
-```
+`DEF`

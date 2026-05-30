@@ -117,17 +117,9 @@ value to a
 
 value.
 
-SQL
-
 Here's the result set.
 
-### date
-
-### datetime
-
 ### time(n)
-
-### datetime
 
 ### smalldatetime
 
@@ -157,8 +149,6 @@ value to a
 
 value.
 
-SQL
-
 Here's the result set.
 
 Output
@@ -177,8 +167,6 @@ value.
 
 Show rounding up of the minute value:
 
-SQL
-
 Here's the result set.
 
 Output
@@ -196,8 +184,6 @@ Output
 ### time(n)
 
 Show rounding up of the hour value:
-
-SQL
 
 Here's the result set.
 
@@ -219,8 +205,6 @@ value to a
 
 type.
 
-SQL
-
 Here's the result set.
 
 Output
@@ -241,23 +225,13 @@ value to a
 
 value.
 
-### time
-
 #### Input string
 
 #### literal
 
 #### Conversion Rule
 
-#### datetime
-
-#### time
-
-#### datetime
-
 ## Converting String Literals to time(n)
-
-SQL
 
 Here's the result set.
 
@@ -319,8 +293,6 @@ TIMEZONE
 
 Not allowed.
 
-
-
 Expand table
 
 #### Input string
@@ -329,47 +301,27 @@ Expand table
 
 #### Conversion Rule
 
-### date
-
-### time
-
 #### Data type
 
 #### Output
 
-#### time
-
-#### date
-
 #### smalldatetime
-
-#### datetime
-
-#### datetime2
-
-#### datetimeoffset
 
 ### time(7)
 
-```sql
-time(4)
-```
+`time(4)`
 
-```sql
-time(3)
-```
+`time(3)`
 
 ```sql
 DECLARE
 @timeFrom
-TIME
-(4) =
+TIME (4) =
 '12:34:54.1237'
 ;
 DECLARE
 @timeTo
-TIME
-(3) = @timeFrom;
+TIME (3) = @timeFrom;
 SELECT
 @timeTo
 AS
@@ -380,21 +332,13 @@ AS
 ;
 ```
 
-```sql
-time(4)
-```
+`time(4)`
 
-```sql
-datetime
-```
+`datetime`
 
-```sql
-time(4)
-```
+`time(4)`
 
-```sql
-smalldatetime
-```
+`smalldatetime`
 
 ```sql
 time(3)      time(4)
@@ -403,8 +347,7 @@ time(3)      time(4)
 DECLARE
 @
 time
-TIME
-(4) =
+TIME (4) =
 '12:15:04.1237'
 ;
 DECLARE
@@ -426,8 +369,7 @@ AS
 DECLARE
 @
 time
-TIME
-(4) =
+TIME (4) =
 '12:15:59.9999'
 ;
 DECLARE
@@ -445,21 +387,13 @@ AS
 ;
 ```
 
-```sql
-time(4)
-```
+`time(4)`
 
-```sql
-datetimeoffset(3)
-```
+`datetimeoffset(3)`
 
-```sql
-time(4)
-```
+`time(4)`
 
-```sql
-datetime2(2)
-```
+`datetime2(2)`
 
 ```sql
 @time            @smalldatetime
@@ -468,8 +402,7 @@ datetime2(2)
 DECLARE
 @
 time
-TIME
-(4) =
+TIME (4) =
 '12:59:59.9999'
 ;
 DECLARE
@@ -491,8 +424,7 @@ AS
 DECLARE
 @
 time
-TIME
-(4) =
+TIME (4) =
 '12:15:04.1237'
 ;
 DECLARE
@@ -517,8 +449,7 @@ AS
 DECLARE
 @
 time
-TIME
-(4) =
+TIME (4) =
 '12:15:04.1237'
 ;
 DECLARE

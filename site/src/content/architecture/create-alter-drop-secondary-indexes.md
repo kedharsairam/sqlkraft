@@ -57,8 +57,6 @@ INDEX (Transact-SQL)
 
 .
 
-SQL
-
 The ALTER statement isn't supported for secondary selective XML indexes. To change a
 
 secondary selective XML index, drop the existing index and recreate it.
@@ -87,16 +85,13 @@ it.
 'pathabc'
 CREATE
 XML
-INDEX
-filt_sxi_index_c
+INDEX filt_sxi_index_c
 ON
 Tbl(xmlcol)
 USING
 XML
-INDEX
-sxi_index
-FOR
-(
+INDEX sxi_index
+FOR (
 pathabc
 );
 ```

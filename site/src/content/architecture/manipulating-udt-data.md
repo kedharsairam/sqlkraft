@@ -81,13 +81,9 @@ type, and the third statement uses the
 
 function:
 
-SQL
-
 The following
 
 statement selects the binary value of the UDT.
-
-SQL
 
 To see the output displayed in a readable format, call the
 
@@ -96,8 +92,6 @@ method of the
 UDT,
 
 which converts the value to its string representation.
-
-SQL
 
 ```sql
 INSERT
@@ -117,36 +111,26 @@ SELECT
 ToString
 Point
 INSERT
-INTO
-dbo.Points (PointValue)
-VALUES
-(
-CONVERT
-(Point,
+INTO dbo.Points (PointValue)
+VALUES (
+CONVERT (Point,
 '3,4'
 ));
 INSERT
-INTO
-dbo.Points (PointValue)
-VALUES
-(
-CONVERT
-(Point,
+INTO dbo.Points (PointValue)
+VALUES (
+CONVERT (Point,
 '1,5'
 ));
 INSERT
-INTO
-dbo.Points (PointValue)
-VALUES
-(
-CAST
-(
+INTO dbo.Points (PointValue)
+VALUES (
+CAST (
 '1,99'
 AS
 Point));
 SELECT
 ID
 , PointValue
-FROM
-dbo.Points;
+FROM dbo.Points;
 ```

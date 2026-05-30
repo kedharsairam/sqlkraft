@@ -81,22 +81,13 @@ element. Otherwise, it returns the <
 > element.
 
 ```sql
-expression1
-expression2
-expression3
-expression1
-expression1
-expression1
+expression1 expression2 expression3 expression1 expression1 expression1
 FirstName
-LastName
-if (<expression1>)
-then
+LastName if (<expression1>) then
 <expression2>
 else
 <expression3>
-declare @x xml
-declare @v varchar(20)
-set @v='FirstName'
+declare @x xml declare @v varchar(20) set @v='FirstName'
 set @x='
 <ROOT rootID="2">
 ```

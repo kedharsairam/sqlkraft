@@ -42,14 +42,8 @@ for the AI-powered visual
 schema design experience.
 
 ```cmd
-Write a SQL script to create a new schema named `blog` for a blog application. The
-schema should include three tables: `Posts`, `Comments`, and `Users`. Each table
-must have appropriate primary keys, and the necessary foreign key relationships and
-constraints should be defined.
-Add a new column named `LastModified` of type `datetime` to the `Posts` table in
-the `blog` schema. Generate the updated SQL script reflecting this change,
+Write a SQL script to create a new schema named `blog` for a blog application. The schema should include three tables: `Posts`, `Comments`, and `Users`. Each table must have appropriate primary keys, and the necessary foreign key relationships and constraints should be defined.
+Add a new column named `LastModified` of type `datetime` to the `Posts` table in the `blog` schema. Generate the updated SQL script reflecting this change,
 including the full definition of the modified schema.
-It isn't needed to create the schema, but it would be great if you could use the
-script generated and run it to validate the accuracy of the generated code. The
-following section continues using this new schema called `blog`.
+It isn't needed to create the schema, but it would be great if you could use the script generated and run it to validate the accuracy of the generated code. The following section continues using this new schema called `blog`.
 ```

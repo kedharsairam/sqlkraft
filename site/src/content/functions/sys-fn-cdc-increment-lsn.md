@@ -14,9 +14,7 @@ Returns the next log sequence number (LSN) in the sequence based upon the specif
 
 ## Syntax
 
-```sql
-sys.fn_cdc_increment_lsn
-```
+`sys.fn_cdc_increment_lsn`
 
 ## Remarks
 
@@ -50,9 +48,7 @@ is used to obtain this value.
 
 ### Example 1
 
-```sql
-sys.fn_cdc_increment_lsn
-```
+`sys.fn_cdc_increment_lsn`
 
 ### Example 2
 
@@ -67,13 +63,7 @@ USE
 AdventureWorks2022;
 GO
 DECLARE
-@from_lsn
-binary
-(10), @to_lsn
-binary
-(10), @save_to_lsn
-binary
-(10);
+@from_lsn binary (10), @to_lsn binary (10), @save_to_lsn binary (10);
 SET
 @save_to_lsn = <previous_upper_bound_value>;
 SET
@@ -82,8 +72,7 @@ SET
 @to_lsn = sys.fn_cdc_get_max_lsn();
 SELECT
 *
-from
-cdc.fn_cdc_get_all_changes_HumanResources_Employee( @from_lsn,
+from cdc.fn_cdc_get_all_changes_HumanResources_Employee( @from_lsn,
 @to_lsn,
 'all'
 );
@@ -104,13 +93,10 @@ cdc.fn_cdc_get_net_changes_<capture_instance>
 
 ### Example 6
 
-```sql
-lsn_value
-```
+`lsn_value`
 
 ### Example 7
 
 ```sql
-Msg 313, Level 16, State 3, Line 1 An insufficient number of arguments were
-supplied for the procedure or function
+Msg 313, Level 16, State 3, Line 1 An insufficient number of arguments were supplied for the procedure or function
 ```

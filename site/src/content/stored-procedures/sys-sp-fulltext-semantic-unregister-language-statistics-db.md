@@ -14,28 +14,21 @@ When a Semantic Language Statistics database is unregistered, all the metadata a
 
 ## Syntax
 
-```sql
-sp_fulltext_semantic_unregister_language_statistics_db
-```
+`sp_fulltext_semantic_unregister_language_statistics_db`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sp_fulltext_semantic_unregister_language_statistics_db
-```
+`sp_fulltext_semantic_unregister_language_statistics_db`
 
 ### Example 2
 
-```sql
-sp_fulltext_semantic_unregister_language_statistics_db
-```
+`sp_fulltext_semantic_unregister_language_statistics_db`
 
 ### Example 3
 
 ```sql
-EXECUTE
-sp_fulltext_semantic_unregister_language_statistics_db;
+EXECUTE sp_fulltext_semantic_unregister_language_statistics_db;
 GO
 ```

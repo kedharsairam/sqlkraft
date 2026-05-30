@@ -14,6 +14,4 @@ SQL Server 2016 (13.x) and later versions Returns information about the workload
 
 ## Syntax
 
-```sql
-sys.dm_exec_external_work
-```
+`sys.dm_exec_external_work`

@@ -59,10 +59,6 @@ Commas are ignored anywhere in a string literal that is cast to the
 
 data type.
 
-### float
-
-### money
-
 ```sql
 ,
 ```

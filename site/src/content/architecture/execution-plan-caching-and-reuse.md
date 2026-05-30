@@ -38,8 +38,6 @@ or prepared queries.
 
 The query below provides information about memory usage for these two cache stores:
 
-SQL
-
 SQL Server execution plans have the following main components:
 
 (or Query Plan)
@@ -164,8 +162,6 @@ table is fully qualified to execute, it means that the
 
 second statement isn't matched with an existing plan, but the third is matched:
 
-SQL
-
 Changing any of the following SET options for a given execution will affect the ability to reuse
 
 plans, because the Database Engine performs
@@ -207,38 +203,24 @@ literals larger than 8 KB in size. These plans only exist while the query is bei
 ```sql
 SELECT
 *
-FROM
-sys.dm_os_memory_clerks
-WHERE
-name
+FROM sys.dm_os_memory_clerks
+WHERE name
 LIKE
 '%plans%'
 ;
 ```
 
-```sql
-sp_executeSql
-```
+`sp_executeSql`
 
-```sql
-xp_cmdshell
-```
+`xp_cmdshell`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-Person
-```
+`Person`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-Person
-```
+`Person`
 
 ```sql
 USE

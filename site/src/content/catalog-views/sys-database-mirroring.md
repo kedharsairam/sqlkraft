@@ -13,14 +13,8 @@ Returns one row for each database in the instance of SQL Server. If the database
 
 ## Code Blocks
 
-```sql
-database_id
-```
+`database_id`
 
-```sql
-mirroring_guid
-```
+`mirroring_guid`
 
-```sql
-mirroring_state
-```
+`mirroring_state`

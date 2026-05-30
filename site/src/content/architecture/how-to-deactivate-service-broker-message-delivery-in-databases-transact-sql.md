@@ -39,8 +39,6 @@ Alter the database to set the
 
 option.
 
-SQL
-
 ７
 
 Note
@@ -66,12 +64,10 @@ database, which you can download from the
 home page.
 
 ```sql
-is_broker_enabled
-sys.databases
+is_broker_enabled sys.databases
 DISABLE_BROKER
 AdventureWorks2022
-USE
-master
+USE master
 ;
 GO
 ALTER

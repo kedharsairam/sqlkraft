@@ -48,7 +48,6 @@ Contained Databases
 Last updated on 02/05/2026
 
 ```cmd
-contained
-database authentication
+contained database authentication
 1
 ```

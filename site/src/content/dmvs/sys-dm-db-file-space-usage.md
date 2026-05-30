@@ -14,36 +14,27 @@ Analytics Platform System (PDW) Returns space usage information for each data fi
 
 ## Syntax
 
-```sql
-allocated_extent_page_count
-```
+`allocated_extent_page_count`
 
 ## Examples
 
 ### Example 1
 
-```sql
-tempdb
-```
+`tempdb`
 
 ### Example 2
 
-```sql
-sys.dm_db_file_space_usage.database_id
-```
+`sys.dm_db_file_space_usage.database_id`
 
 ### Example 3
 
 ```sql
-file_id
-sys.dm_io_virtual_file_stats.database_id
+file_id sys.dm_io_virtual_file_stats.database_id
 ```
 
 ### Example 4
 
-```sql
-file_id
-```
+`file_id`
 
 ### Example 5
 

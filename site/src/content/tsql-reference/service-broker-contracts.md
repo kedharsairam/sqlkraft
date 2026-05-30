@@ -71,8 +71,6 @@ A cascaded revocation of a permission granted WITH GRANT OPTION will revoke both
 
 GRANT and DENY of that permission.
 
-
-
 Expand table
 
 #### Service Broker contract

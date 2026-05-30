@@ -108,7 +108,5 @@ Connect to SQL Server
 ＂
 
 ```cmd
-kubectl
-oc
-configmap
+kubectl oc configmap
 ```

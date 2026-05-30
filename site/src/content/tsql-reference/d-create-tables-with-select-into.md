@@ -11,35 +11,25 @@ The following example uses
 
 to prevent the retrieval of duplicate titles.
 
-SQL
-
 The following first example creates a temporary table named
 
 in
 
 .
 
-SQL
-
 This second example creates the permanent table
 
 .
 
-```sql
-DISTINCT
-```
+`DISTINCT`
 
 ```sql
 #Bicycles
 ```
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-NewProducts
-```
+`NewProducts`
 
 ```sql
 USE
@@ -56,15 +46,12 @@ AS
 ProductName
 FROM
 Production.Product
-AS
-p
+AS p
 INNER
 JOIN
 Sales.SalesOrderDetail
-AS
-sod
-ON
-p.ProductID = sod.ProductID
+AS sod
+ON p.ProductID = sod.ProductID
 ORDER
 BY
 ProductName
@@ -89,8 +76,7 @@ GO
 ```
 
 ```sql
-USE
-tempdb;
+USE tempdb;
 GO
 IF OBJECT_ID(N'#Bicycles', N'U') IS NOT NULL
 DROP

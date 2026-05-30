@@ -14,6 +14,4 @@ SQL database in Microsoft Fabric Returns aggregate performance statistics for ca
 
 ## Syntax
 
-```sql
-sys.dm_exec_query_stats
-```
+`sys.dm_exec_query_stats`

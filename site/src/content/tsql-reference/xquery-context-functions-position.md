@@ -52,12 +52,10 @@ adds a <
 
 ```sql
 AdventureWorks2022
-Features
-there-is-more/
+Features there-is-more/
 fn:position() as xs:integer
 SELECT CatalogDescription.query('
-declare namespace
-pd="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
+declare namespace pd="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelDescription";
 <Product>
 { /pd:ProductDescription/@ProductModelID }

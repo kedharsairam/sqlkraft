@@ -14,6 +14,4 @@ This feature will be removed in a future version of SQL Server. Avoid using this
 
 ## Syntax
 
-```sql
-is_clear_port_enabled
-```
+`is_clear_port_enabled`

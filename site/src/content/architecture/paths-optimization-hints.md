@@ -116,7 +116,5 @@ data type, which is the return type that you expect from the
 method.
 
 ```sql
-value()
-value()
-value()
+value() value() value()
 ```

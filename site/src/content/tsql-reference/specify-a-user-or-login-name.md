@@ -85,13 +85,9 @@ If the SQL Server (MSSQLSERVER) service is running as a local account (local ser
 
 local user account), it will not have privileges to obtain the group memberships of a
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
-```sql
-CALLER
-```
+`CALLER`
 
 ```sql
 EXECUTE AS
@@ -109,13 +105,9 @@ EXECUTE AS
 EXECUTE AS
 ```
 
-```sql
-sys.database_principals
-```
+`sys.database_principals`
 
-```sql
-sys.server_principals
-```
+`sys.server_principals`
 
 ```sql
 EXECUTE AS

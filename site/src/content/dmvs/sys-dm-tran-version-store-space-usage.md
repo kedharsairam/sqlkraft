@@ -31,14 +31,12 @@ SQL Server 2016 (13.x) SP2 and later versions SQL database in Microsoft Fabric R
 
 ```sql
 SELECT
-DB_NAME(database_id)
-as
+DB_NAME(database_id) as
 'Database Name'
 ,
 reserved_page_count,
 reserved_space_kb
-FROM
-sys.dm_tran_version_store_space_usage;
+FROM sys.dm_tran_version_store_space_usage;
 Database Name            reserved_page_count reserved_space_kb
 ------------------------ -------------------- -----------
 msdb                      0                    0

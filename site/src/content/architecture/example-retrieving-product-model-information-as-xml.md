@@ -41,8 +41,6 @@ mode is specified in the
 
 clause.
 
-SQL
-
 This is the partial result:
 
 XML
@@ -50,8 +48,6 @@ XML
 You can retrieve element-centric XML by specifying the
 
 directive.
-
-SQL
 
 This is the result:
 
@@ -71,8 +67,7 @@ FROM
 Production.ProductModel
 WHERE
 ProductModelID
-IN
-(122, 119)
+IN (122, 119)
 FOR
 XML
 RAW
@@ -104,8 +99,7 @@ FROM
 Production.ProductModel
 WHERE
 ProductModelID
-IN
-(122, 119)
+IN (122, 119)
 FOR
 XML
 RAW

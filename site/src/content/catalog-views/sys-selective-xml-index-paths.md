@@ -38,12 +38,10 @@ Available beginning in SQL Server 2012 (11.x) Service Pack 1, each row in sys.se
 CREATE
 SELECTIVE
 XML
-INDEX
-sxi1
+INDEX sxi1
 ON
 T(xmlcol)
-FOR
-( path1 =
+FOR ( path1 =
 '/a/b/c'
 AS
 XQUERY

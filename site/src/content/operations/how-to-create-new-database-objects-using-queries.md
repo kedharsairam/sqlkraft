@@ -46,8 +46,6 @@ SQL Editor
 
 menu from the
 
-SQL
-
 menu to connect to a database and launch the Transact-SQL
 
 Editor.
@@ -59,8 +57,6 @@ database node and select
 .
 
 2. In the script pane, paste in this code:
-
-SQL
 
 3. Select the
 
@@ -97,8 +93,7 @@ NULL
 ,
 [Perishable]
 BIT
-DEFAULT
-((1))
+DEFAULT ((1))
 NULL
 ,
 PRIMARY
@@ -109,8 +104,7 @@ Id
 ASC
 ),
 FOREIGN
-KEY
-([
+KEY ([
 Id
 ])
 REFERENCES

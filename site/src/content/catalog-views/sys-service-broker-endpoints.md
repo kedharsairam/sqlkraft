@@ -14,9 +14,7 @@ When a route specifies next_hop_address , the network address is determined base
 
 ## Syntax
 
-```sql
-is_message_forwarding_enabled
-```
+`is_message_forwarding_enabled`
 
 ## Remarks
 

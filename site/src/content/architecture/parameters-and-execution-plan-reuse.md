@@ -18,10 +18,6 @@ compared in the
 
 clause:
 
-SQL
-
-SQL
-
 The only difference between the execution plans for these queries is the value stored for the
 
 comparison against the
@@ -39,8 +35,6 @@ engine recognize duplicate plans. You can use parameters in the following ways:
 In Transact-SQL , use
 
 :
-
-SQL
 
 In SQL Server prior to 2005, queries continue to recompile based on cardinality changes to
 
@@ -116,33 +110,19 @@ When forced parameterization is enabled, simple parameterization can still occur
 
 the following query can't be parameterized according to the rules of forced parameterization:
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-ProductSubcategoryID
-```
+`ProductSubcategoryID`
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
 ```sql
 SELECT
@@ -159,25 +139,17 @@ WHERE
 ProductSubcategoryID = 4;
 ```
 
-```sql
-SQLBindParameter
-```
+`SQLBindParameter`
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
 ```sql
 ALTER DATABASE
 ```
 
-```sql
-FORCED
-```
+`FORCED`
 
 ```sql
 DECLARE

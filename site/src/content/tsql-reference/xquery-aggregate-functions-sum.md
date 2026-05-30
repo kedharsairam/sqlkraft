@@ -67,6 +67,5 @@ columns in the
 database.
 
 ```sql
-AdventureWorks2022
-fn:sum($arg as xdt:anyAtomicType*) as xdt:anyAtomicType
+AdventureWorks2022 fn:sum($arg as xdt:anyAtomicType*) as xdt:anyAtomicType
 ```

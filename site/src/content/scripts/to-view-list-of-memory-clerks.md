@@ -10,7 +10,5 @@ pubDate: 2025-03-15
 ```sql
 select * from sys.dm_os_memory_clerks
 
---to view only unique but not duplicates, use the following command
-select distinct(type) from sys.dm_os_memory_clerks
-order by type
+--to view only unique but not duplicates, use the following command select distinct(type) from sys.dm_os_memory_clerks order by type
 ```

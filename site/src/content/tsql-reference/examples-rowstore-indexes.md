@@ -13,15 +13,11 @@ pubDate: 2026-05-29
 
 This sample removes the archive compression, and only uses columnstore compression.
 
-SQL
-
 The following example rebuilds a single index on the
 
 table in the
 
 database.
-
-SQL
 
 The following example specifies the keyword
 
@@ -32,8 +28,6 @@ table
 in the
 
 database. Three options are specified.
-
-SQL
 
 The following example adds the ONLINE option including the low priority lock option, and
 
@@ -49,8 +43,6 @@ Managed Instance
 
 ## E. Disable an index
 
-SQL
-
 The following example reorganizes a single clustered index in the
 
 database. Because the index contains a LOB data type in the leaf level, the statement also
@@ -59,15 +51,11 @@ compacts all pages that contain the large object data. Specifying the
 
 option isn't required because the default value is ON.
 
-SQL
-
 The following example sets several options on the index
 
 in the
 
 database.
-
-SQL
 
 The following example disables a nonclustered index on the
 
@@ -80,8 +68,6 @@ database.
 ## G. Enable constraints
 
 ## H. Rebuild a partitioned index
-
-SQL
 
 The following example disables a
 
@@ -96,8 +82,6 @@ database. The
 constraint on the underlying table is
 
 automatically disabled and warning message is displayed.
-
-SQL
 
 The result set returns this warning message.
 
@@ -117,13 +101,9 @@ constraint is enabled by rebuilding the
 
 index.
 
-SQL
-
 The
 
 constraint is then enabled.
-
-SQL
 
 ### Applies to
 
@@ -155,19 +135,13 @@ to complete index rebuild, the rebuild operation statement itself is aborted, du
 
 Managed Instance
 
-SQL
-
 The following example rebuilds an index on a nonpartitioned rowstore table.
-
-SQL
 
 : SQL Server 2022 (16.x) and later versions, Azure SQL Database, and Azure SQL
 
 Managed Instance.
 
 The following example rebuilds an index on a nonpartitioned rowstore table.
-
-SQL
 
 ### Applies to
 
@@ -193,25 +167,17 @@ command again after an index operation was paused, automatically resumes the ind
 
 operation.
 
-SQL
-
 Execute an online index rebuild as resumable operation with
 
 set to 240 minutes.
 
-SQL
-
 Pause a running resumable online index rebuild.
-
-SQL
 
 Resume an online index rebuild for an index rebuild that was executed as resumable operation
 
 specifying a new value for
 
 set to 4.
-
-SQL
 
 Resume an online index rebuild operation for an index online rebuild that was executed as
 
@@ -223,11 +189,7 @@ to 2, set the execution time for the index being running as resumable to
 
 blockers.
 
-SQL
-
 Abort resumable index rebuild operation that is running or paused.
-
-SQL
 
 Index architecture and design guide
 
@@ -257,49 +219,34 @@ Last updated on 02/05/2026
 
 Related content
 
-```sql
-Employee
-```
+`Employee`
+
+`AdventureWorks2025`
+
+`ALL`
+
+`Production.Product`
+
+`AdventureWorks2025`
 
 ```sql
-AdventureWorks2025
-```
-
-```sql
-ALL
-```
-
-```sql
-Production.Product
-```
-
-```sql
-AdventureWorks2025
-```
-
-```sql
-WITH
-(DROP_EXISTING =
+WITH (DROP_EXISTING =
 ON
 );
 --Compress the table further by using archival compression.
 ALTER
-INDEX
-cci_SimpleTable
+INDEX cci_SimpleTable
 ON
 SimpleTable
 REBUILD
-WITH
-(DATA_COMPRESSION = COLUMNSTORE_ARCHIVE);
+WITH (DATA_COMPRESSION = COLUMNSTORE_ARCHIVE);
 GO
 ALTER
-INDEX
-cci_SimpleTable
+INDEX cci_SimpleTable
 ON
 SimpleTable
 REBUILD
-WITH
-(DATA_COMPRESSION = COLUMNSTORE);
+WITH (DATA_COMPRESSION = COLUMNSTORE);
 GO
 ```
 
@@ -320,38 +267,27 @@ ALL
 ON
 Production.Product
 REBUILD
-WITH
-(FILLFACTOR = 80, SORT_IN_TEMPDB =
+WITH (FILLFACTOR = 80, SORT_IN_TEMPDB =
 ON
 , STATISTICS_NORECOMPUTE =
 ON
 );
 ```
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ```sql
 WITH (LOB_COMPACTION =
 ON)
 ```
 
-```sql
-AK_SalesOrderHeader_SalesOrderNumber
-```
+`AK_SalesOrderHeader_SalesOrderNumber`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-Employee
-```
+`Employee`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ```sql
 ALTER
@@ -360,8 +296,7 @@ ALL
 ON
 Production.Product
 REBUILD
-WITH
-(
+WITH (
 FILLFACTOR = 80,
 SORT_IN_TEMPDB =
 ON
@@ -371,8 +306,7 @@ ON
 ,
 ONLINE
 =
-ON
-( WAIT_AT_LOW_PRIORITY ( MAX_DURATION = 4
+ON ( WAIT_AT_LOW_PRIORITY ( MAX_DURATION = 4
 MINUTES
 , ABORT_AFTER_WAIT
 = BLOCKERS ) ),
@@ -387,8 +321,7 @@ INDEX
 PK_ProductPhoto_ProductPhotoID
 ON
 Production.ProductPhoto REORGANIZE
-WITH
-(LOB_COMPACTION =
+WITH (LOB_COMPACTION =
 ON
 );
 ```
@@ -399,8 +332,7 @@ INDEX
 AK_SalesOrderHeader_SalesOrderNumber
 ON
 Sales.SalesOrderHeader
-SET
-(
+SET (
 STATISTICS_NORECOMPUTE =
 ON
 ,
@@ -421,9 +353,7 @@ PRIMARY KEY
 PRIMARY KEY
 ```
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ```sql
 FOREIGN KEY
@@ -493,13 +423,9 @@ GO
 5
 ```
 
-```sql
-IX_TransactionHistory_TransactionDate
-```
+`IX_TransactionHistory_TransactionDate`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ```sql
 ONLINE=ON
@@ -513,9 +439,7 @@ ABORT_AFTER_WAIT = SELF
 -- Verify the partitioned indexes.
 SELECT
 *
-FROM
-sys.dm_db_index_physical_stats
-(DB_ID(),OBJECT_ID(N
+FROM sys.dm_db_index_physical_stats (DB_ID(),OBJECT_ID(N
 'Production.TransactionHistory'
 ),
 NULL
@@ -534,13 +458,10 @@ Production.TransactionHistory
 REBUILD
 Partition
 = 5
-WITH
-(
+WITH (
 ONLINE
 =
-ON
-(WAIT_AT_LOW_PRIORITY (MAX_DURATION = 10
-minutes
+ON (WAIT_AT_LOW_PRIORITY (MAX_DURATION = 10 minutes
 ,
 ABORT_AFTER_WAIT =
 SELF
@@ -555,8 +476,7 @@ IX_INDEX1
 ON
 T1
 REBUILD
-WITH
-(DATA_COMPRESSION = PAGE);
+WITH (DATA_COMPRESSION = PAGE);
 GO
 ```
 
@@ -564,13 +484,9 @@ GO
 MAXDOP = 1
 ```
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-MAXDOP
-```
+`MAXDOP`
 
 ```sql
 ALTER
@@ -579,8 +495,7 @@ IX_INDEX1
 ON
 T1
 REBUILD
-WITH
-(XML_COMPRESSION =
+WITH (XML_COMPRESSION =
 ON
 );
 GO
@@ -588,13 +503,9 @@ GO
 
 ```sql
 ALTER
-INDEX
-test_idx
-on
-test_table
+INDEX test_idx on test_table
 REBUILD
-WITH
-(
+WITH (
 ONLINE
 =
 ON
@@ -604,13 +515,9 @@ RESUMABLE
 ON
 );
 ALTER
-INDEX
-test_idx
-on
-test_table
+INDEX test_idx on test_table
 REBUILD
-WITH
-(
+WITH (
 ONLINE
 =
 ON
@@ -621,41 +528,25 @@ ON
 ,
 MAX_DURATION = 240);
 ALTER
-INDEX
-test_idx
-on
-test_table PAUSE;
+INDEX test_idx on test_table PAUSE;
 ALTER
-INDEX
-test_idx
-on
-test_table
+INDEX test_idx on test_table
 RESUME
-WITH
-(MAXDOP = 4);
+WITH (MAXDOP = 4);
 ```
 
-```sql
-MAXDOP
-```
+`MAXDOP`
 
 ```sql
 ALTER
-INDEX
-test_idx
-on
-test_table
+INDEX test_idx on test_table
 RESUME
-WITH
-(MAXDOP = 2, MAX_DURATION = 240
+WITH (MAXDOP = 2, MAX_DURATION = 240
 MINUTES
 ,
 WAIT_AT_LOW_PRIORITY (MAX_DURATION = 10, ABORT_AFTER_WAIT = BLOCKERS));
 ALTER
-INDEX
-test_idx
-on
-test_table
+INDEX test_idx on test_table
 ABORT
 ;
 ```

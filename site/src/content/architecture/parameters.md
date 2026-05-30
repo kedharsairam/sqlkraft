@@ -60,8 +60,7 @@ The following stored procedure shows the use of an input parameter, an output pa
 and a return code:
 
 ```sql
--- Create a procedure that takes one input parameter and returns one output
-parameter and a return code.
+-- Create a procedure that takes one input parameter and returns one output parameter and a return code.
 CREATE PROCEDURE SampleProcedure @EmployeeIDParm INT,
 @MaxTotal INT OUTPUT
 AS
@@ -80,8 +79,7 @@ SELECT @MaxTotal = MAX(TotalDue)
 FROM Sales.SalesOrderHeader;
 IF (@@ERROR <> 0)
 SET @ErrorSave = @@ERROR
--- Returns 0 if neither SELECT statement had an error; otherwise, returns the last
-error.
+-- Returns 0 if neither SELECT statement had an error; otherwise, returns the last error.
 RETURN @ErrorSave
 GO
 ```

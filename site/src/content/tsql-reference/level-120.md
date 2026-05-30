@@ -99,8 +99,6 @@ value to a
 
 string value.
 
-
-
 Expand table
 
 #### Compatibility level setting of
@@ -109,18 +107,8 @@ Expand table
 
 #### Compatibility level setting of 120
 
-#### date
+`STRING_SPLIT`
 
-#### date
+`STRING_SPLIT`
 
-```sql
-STRING_SPLIT
-```
-
-```sql
-STRING_SPLIT
-```
-
-```sql
-STRING_SPLIT
-```
+`STRING_SPLIT`

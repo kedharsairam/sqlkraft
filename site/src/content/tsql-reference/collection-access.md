@@ -77,11 +77,7 @@ STNumGeometries
 
 ## Returns the number of geometries in a geometry collection.
 
-
-
 Expand table
-
-
 
 Expand table
 

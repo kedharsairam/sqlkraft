@@ -97,8 +97,6 @@ methods, you can
 
 accomplish this as shown in the following:
 
-SQL
-
 In this example,
 
 yields a rowset of references to
@@ -118,23 +116,10 @@ SQL Server 2000 provides the capability for generating a rowset from an XML inst
 XML instance map to columns in the rowset.
 
 ```sql
-value()
-nodes()
-nodes()
-value()
-nodes()
-query()
-value()
-nodes()
-exist()
-count(*)
-nodes()
-value()
-nodes('//author')
+value() nodes() nodes() value() nodes() query() value() nodes() exist() count(*) nodes() value() nodes('//author')
 <author>
 value()
-SELECT
-nref.value(
+SELECT nref.value(
 '(first-name/text())[1]'
 ,
 'nvarchar(50)'
@@ -147,14 +132,12 @@ nref.value(
 FROM
 T
 CROSS
-APPLY
-xCol.nodes(
+APPLY xCol.nodes(
 '//author'
 )
 AS
 R(nref)
-WHERE
-nref.exist(
+WHERE nref.exist(
 'first-name[. != "David"]'
 ) = 1;
 ```

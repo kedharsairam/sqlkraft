@@ -14,9 +14,7 @@ When a symmetric key is created, the symmetric key must be encrypted by using at
 
 ## Syntax
 
-```sql
-is_honor_broker_priority_on
-```
+`is_honor_broker_priority_on`
 
 ## Remarks
 

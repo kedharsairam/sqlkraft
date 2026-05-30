@@ -82,7 +82,5 @@ Routes
 Service Broker Routing
 
 ```sql
-msdb
-msdb
-msdb
+msdb msdb msdb
 ```

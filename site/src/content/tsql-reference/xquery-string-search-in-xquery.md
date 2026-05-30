@@ -37,23 +37,18 @@ XML Data (SQL Server)
 XQuery Language Reference (SQL Server)
 
 ```sql
-where
-for
+where for
 SELECT CatalogDescription.query('
-declare namespace
-p1="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
+declare namespace p1="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelDescription";
 for $f in /p1:ProductDescription/p1:Features/*
-where contains(string($f), "maintenance")
-return
+where contains(string($f), "maintenance") return
 $f ') as Result
 FROM Production.ProductModel
 WHERE ProductModelID=19
-<p1:Maintenance
-xmlns:p1="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
+<p1:Maintenance xmlns:p1="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelWarrAndMain">
 <p1:NoOfYears>10</p1:NoOfYears>
-<p1:Description>maintenance contact available through your
-dealer or any AdventureWorks retail store.</p1:Description>
+<p1:Description>maintenance contact available through your dealer or any AdventureWorks retail store.</p1:Description>
 </p1:Maintenance>
 ```

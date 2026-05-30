@@ -14,9 +14,7 @@ Deletes information about the specified database from the backup and restore his
 
 ## Syntax
 
-```sql
-sp_delete_database_backuphistory
-```
+`sp_delete_database_backuphistory`
 
 ## Remarks
 

@@ -8,17 +8,14 @@ pubDate: 2025-03-15
 ---
 
 ```sql
---to identify the drop transaction
-select [Current LSN], [Operation], [Transaction ID], [Parent Transaction ID],
+--to identify the drop transaction select [Current LSN], [Operation], [Transaction ID], [Parent Transaction ID],
 	[Begin Time], [Transaction Name], [Transaction SID]
-from fn_dblog(null, null)
-where [Operation] = 'LOP_BEGIN_XACT' and [Transaction Name]='DROPOBJ'
+from fn_dblog(null, null) where [Operation] = 'LOP_BEGIN_XACT' and [Transaction Name]='DROPOBJ'
 
 --If log file was truncated, then we can use fn_dump_dblog to retrieve LSN information from Log Backup.
 SELECT [Current LSN], [Operation], [Transaction ID], [Parent Transaction ID],
 	[Begin Time], [Transaction Name], [Transaction SID]
-FROM fn_dump_dblog
-(
+FROM fn_dump_dblog (
 DEFAULT, DEFAULT, DEFAULT, DEFAULT,
 'PIT_Tlog3.trn',
 DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT,
@@ -28,8 +25,7 @@ DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT,
 DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT,
 DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT,
 DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT, DEFAULT
-)
-where OPERATION='LOP_BEGIN_XACT' and [Transaction Name]='DROPOBJ'
+) where OPERATION='LOP_BEGIN_XACT' and [Transaction Name]='DROPOBJ'
 GO
 
 --To find person who dropped the table use:

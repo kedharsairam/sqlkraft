@@ -89,8 +89,6 @@ Warning
 
 #### Required
 
-#### value
-
 #### Default
 
 #### server value
@@ -103,14 +101,8 @@ Warning
 
 #### Library value
 
-```sql
-FILESTREAM_ON
-```
+`FILESTREAM_ON`
 
-```sql
-IGNORE_DUP_KEY
-```
+`IGNORE_DUP_KEY`
 
-```sql
-ON
-```
+`ON`

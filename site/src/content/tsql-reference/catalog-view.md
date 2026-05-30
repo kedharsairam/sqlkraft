@@ -49,8 +49,6 @@ ALTER SETTINGS server-level permission
 
 .
 
-SQL
-
 Views created with
 
 that reference an external model (such as a
@@ -71,35 +69,20 @@ catalog view. You
 
 must have access to a model to view its metadata.
 
-SQL
+`Latin1_General_100_CI_AS_KS_WS_SC`
+
+`Latin1_General_100_BIN2`
+
+`sp_configure`
+
+`SCHEMABINDING`
+
+`SELECT`
+
+`AI_GENERATE_EMBEDDINGS`
 
 ```sql
-Latin1_General_100_CI_AS_KS_WS_SC
-```
-
-```sql
-Latin1_General_100_BIN2
-```
-
-```sql
-sp_configure
-```
-
-```sql
-SCHEMABINDING
-```
-
-```sql
-SELECT
-```
-
-```sql
-AI_GENERATE_EMBEDDINGS
-```
-
-```sql
-EXECUTE
-sp_configure
+EXECUTE sp_configure
 'allow server scoped db credentials'
 , 1;
 RECONFIGURE

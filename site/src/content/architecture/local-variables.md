@@ -84,14 +84,10 @@ plans. Here's an example of a query that uses a local variable.
 
 ### Remote Query
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
 ```sql
 OPTION (RECOMPILE)
 ```
 
-```sql
-RECOMPILE
-```
+`RECOMPILE`

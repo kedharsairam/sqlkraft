@@ -93,30 +93,18 @@ Bit manipulation functions
 
 #### Function category
 
-```sql
-HAVING
-```
+`HAVING`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 GROUP BY
 ```
 
-```sql
-OVER
-```
+`OVER`
 
-```sql
-OVER
-```
+`OVER`
 
-```sql
-GROUPING
-```
+`GROUPING`
 
-```sql
-GROUPING_ID
-```
+`GROUPING_ID`

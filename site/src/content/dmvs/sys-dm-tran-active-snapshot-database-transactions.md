@@ -14,9 +14,7 @@ Unique identification number assigned for the transaction. The transaction ID is
 
 ## Syntax
 
-```sql
-sys.dm_tran_active_snapshot_database_transactions
-```
+`sys.dm_tran_active_snapshot_database_transactions`
 
 ## Examples
 

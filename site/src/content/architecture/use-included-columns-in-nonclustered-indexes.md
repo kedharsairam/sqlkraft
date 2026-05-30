@@ -52,37 +52,17 @@ clause of the
 
 statement.
 
-### text
-
-### ntext
-
-### image
-
-### image
-
-### ntext
-
-### text
-
 ```sql
 index_id > 1
 ```
 
-```sql
-IN_ROW_DATA
-```
+`IN_ROW_DATA`
 
-```sql
-LOB_DATA
-```
+`LOB_DATA`
 
-```sql
-ROW_OVERFLOW_DATA
-```
+`ROW_OVERFLOW_DATA`
 
-```sql
-INCLUDE
-```
+`INCLUDE`
 
 ```sql
 CREATE INDEX

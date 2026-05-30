@@ -64,6 +64,4 @@ nonclustered index is the appropriate index type, not to calculate the bucket co
 ALTER TABLE...ALTER INDEX REBUILD
 ```
 
-```sql
-BUCKET_COUNT
-```
+`BUCKET_COUNT`

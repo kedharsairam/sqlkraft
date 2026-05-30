@@ -35,8 +35,6 @@ SQL Managed Instance
 
 Azure Synapse Analytics (serverless SQL pool only)
 
-SQL
-
 analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
@@ -127,10 +125,7 @@ OPENJSON
 WITH
 OPENJSON
 WITH
-OPENJSON
-name
-value
-type
+OPENJSON name value type
 OPENJSON
 OPENJSON
 WITH

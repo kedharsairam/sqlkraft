@@ -70,9 +70,5 @@ Expand table
 Note
 
 ```cmd
-mssql.conf
-passwordpolicy.passwordminimumlength
-passwordpolicy.passwordhistorylength
-passwordpolicy.passwordminimumage
-passwordpolicy.passwordmaximumage
+mssql.conf passwordpolicy.passwordminimumlength passwordpolicy.passwordhistorylength passwordpolicy.passwordminimumage passwordpolicy.passwordmaximumage
 ```

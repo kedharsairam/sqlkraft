@@ -113,21 +113,7 @@ to
 
 , which represents the minute.
 
-
-
 Expand table
-
-#### Property
-
-#### Value
-
-### datetime2
-
-### datetime2
-
-### varbinary
-
-### varbinary
 
 is a two-digit number, ranging from
 
@@ -259,23 +245,9 @@ sys.columns
 
 2
 
-### datetime2
-
-### datetime2
-
 #### ISO 8601
 
 #### ODBC
-
-### datetime2
-
-### time
-
-### date
-
-### datetime2
-
-### datetimeoffset
 
 #### data type
 
@@ -303,8 +275,6 @@ sys.columns
 
 #### level
 
-#### time
-
 ```sql
 DECLARE @MyDatetime2 datetime2(7);
 CREATE TABLE Table1 (Column1 datetime2(7));
@@ -330,9 +300,7 @@ yyyy-MM-dd HH:mm:ss[.nnnnnnn]
 23:59:59.9999999
 ```
 
-```sql
-yyyy
-```
+`yyyy`
 
 ```sql
 0001
@@ -342,9 +310,7 @@ yyyy
 9999
 ```
 
-```sql
-MM
-```
+`MM`
 
 ```sql
 01
@@ -354,9 +320,7 @@ MM
 12
 ```
 
-```sql
-dd
-```
+`dd`
 
 ```sql
 01
@@ -366,9 +330,7 @@ dd
 31
 ```
 
-```sql
-HH
-```
+`HH`
 
 ```sql
 00
@@ -378,9 +340,7 @@ HH
 23
 ```
 
-```sql
-mm
-```
+`mm`
 
 ```sql
 00
@@ -390,9 +350,7 @@ mm
 59
 ```
 
-```sql
-ss
-```
+`ss`
 
 ```sql
 00

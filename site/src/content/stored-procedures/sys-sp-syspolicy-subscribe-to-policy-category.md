@@ -14,9 +14,7 @@ Adds a policy category subscription for the specified database. Transact-SQL syn
 
 ## Syntax
 
-```sql
-msdb.dbo.syspolicy_policy_categories
-```
+`msdb.dbo.syspolicy_policy_categories`
 
 ## Permissions
 
@@ -26,9 +24,7 @@ msdb.dbo.syspolicy_policy_categories
 
 ### Example 1
 
-```sql
-Finance
-```
+`Finance`
 
 ### Example 2
 
@@ -36,8 +32,7 @@ Finance
 USE
 <database_name>;
 GO
-EXECUTE
-sys.sp_syspolicy_subscribe_to_policy_category
+EXECUTE sys.sp_syspolicy_subscribe_to_policy_category
 @policy_category = N
 'Finance'
 ;

@@ -91,6 +91,5 @@ CLI
 
 ```cmd
 sqlcmd
-MSSQL_PID
-sqlcmd
+MSSQL_PID sqlcmd
 ```

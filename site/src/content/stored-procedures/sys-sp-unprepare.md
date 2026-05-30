@@ -25,15 +25,11 @@ sp_unprepare handle
 
 ### Example 1
 
-```sql
-sp_prepare
-```
+`sp_prepare`
 
 ### Example 2
 
-```sql
-sp_unprepare
-```
+`sp_unprepare`
 
 ### Example 3
 
@@ -43,9 +39,7 @@ ID = 15
 
 ### Example 4
 
-```sql
-sp_prepare
-```
+`sp_prepare`
 
 ### Example 5
 
@@ -62,8 +56,7 @@ DECLARE
 AS
 INT
 ;
-EXECUTE
-sp_prepare
+EXECUTE sp_prepare
 @P1
 OUTPUT
 , N
@@ -78,12 +71,10 @@ N
 ### Example 7
 
 ```sql
-EXECUTE
-sp_execute @P1, N
+EXECUTE sp_execute @P1, N
 'tempdb'
 , N
 'ONLINE'
 ;
-EXECUTE
-sp_unprepare @P1;
+EXECUTE sp_unprepare @P1;
 ```

@@ -20,13 +20,9 @@ folding. A constant is a Transact-SQL literal, such as
 
 . For example, take this query:
 
-SQL
-
 Here, 30 \* 12 is a constant expression. SQL Server can evaluate this during compilation and
 
 rewrite the query internally as:
-
-SQL
 
 SQL Server uses constant folding with the following types of expressions:
 
@@ -112,13 +108,9 @@ then SQL Server does not fold the expression.
 1 > 2 AND 3 > 4
 ```
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
 ```sql
 SELECT
@@ -127,8 +119,7 @@ FROM
 Orders
 WHERE
 OrderDate <
-DATEADD
-(
+DATEADD (
 day
 , 30 * 12,
 '2020-01-01'
@@ -139,8 +130,7 @@ FROM
 Orders
 WHERE
 OrderDate <
-DATEADD
-(
+DATEADD (
 day
 , 360,
 '2020-01-01'

@@ -51,13 +51,11 @@ Service on the machine. To verify, run the following DMV on the head node:
 ### Example 1
 
 ```sql
-EXECUTE
-sys.dm_exec_compute_nodes;
+EXECUTE sys.dm_exec_compute_nodes;
 ```
 
 ### Example 2
 
 ```sql
-EXECUTE
-sp_polybase_leave_group;
+EXECUTE sp_polybase_leave_group;
 ```

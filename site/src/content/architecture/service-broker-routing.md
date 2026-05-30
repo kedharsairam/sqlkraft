@@ -108,7 +108,6 @@ communication protocols
 .
 
 ```sql
-sys.routes
-msdb.sys.routes
+sys.routes msdb.sys.routes
 'LOCAL'
 ```

@@ -14,6 +14,4 @@ One missing index group may have several queries that needed the same index. For
 
 ## Syntax
 
-```sql
-sys.dm_db_missing_index_group_stats
-```
+`sys.dm_db_missing_index_group_stats`

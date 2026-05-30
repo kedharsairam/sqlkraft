@@ -14,6 +14,4 @@ SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Retur
 
 ## Syntax
 
-```sql
-sys.dm_db_column_store_row_group_operational_stats
-```
+`sys.dm_db_column_store_row_group_operational_stats`

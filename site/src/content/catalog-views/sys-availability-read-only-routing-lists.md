@@ -17,14 +17,8 @@ Returns a row for the read-only routing list of each availability replica in an 
 
 ## Code Blocks
 
-```sql
-replica_id
-```
+`replica_id`
 
-```sql
-routing_priority
-```
+`routing_priority`
 
-```sql
-read_only_replica_id
-```
+`read_only_replica_id`

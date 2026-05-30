@@ -29,8 +29,6 @@ in this following statement is run, the database context is
 
 .
 
-SQL
-
 You can use the
 
 clause to switch the execution context of a
@@ -83,17 +81,11 @@ fails because
 
 doesn't exist as a principal in the database.
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
-```sql
-master
-```
+`master`
 
 ```sql
 AS { LOGIN | USER } = '<name>'
@@ -108,45 +100,31 @@ EXECUTE ('string') AS
 AS { LOGIN | USER } = '<name>'
 ```
 
-```sql
-sys.database_principals
-```
+`sys.database_principals`
 
-```sql
-sys.server_principals
-```
+`sys.server_principals`
 
-```sql
-IMPERSONATE
-```
+`IMPERSONATE`
 
 ```sql
 CompanyDomain\SQLUsers
 ```
 
-```sql
-Sales
-```
+`Sales`
 
 ```sql
 CompanyDomain\SqlUser1
 ```
 
-```sql
-SQLUsers
-```
+`SQLUsers`
 
-```sql
-Sales
-```
+`Sales`
 
 ```sql
 CompanyDomain\SqlUser1
 ```
 
-```sql
-SQLUsers
-```
+`SQLUsers`
 
 ```sql
 EXECUTE @string_variable AS USER = 'CompanyDomain\SqlUser1'
@@ -157,11 +135,9 @@ CompanyDomain\SqlUser1
 ```
 
 ```sql
-USE
-master
+USE master
 ;
-EXECUTE
-(
+EXECUTE (
 'USE AdventureWorks2022; SELECT BusinessEntityID, JobTitle FROM
 HumanResources.Employee;'
 );

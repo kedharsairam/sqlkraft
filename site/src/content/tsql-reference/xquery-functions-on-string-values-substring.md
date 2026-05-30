@@ -70,9 +70,7 @@ obeys:
 
 ```sql
 $sourceString
-$p
-fn:round($startingLoc) <= $p < fn:round($startingLoc) + fn:round($length)
-fn:substring($sourceString as xs:string?,
+$p fn:round($startingLoc) <= $p < fn:round($startingLoc) + fn:round($length) fn:substring($sourceString as xs:string?,
 $startingLoc as xs:decimal?) as xs:string?
 fn:substring($sourceString as xs:string?,
 $startingLoc as xs:decimal?,

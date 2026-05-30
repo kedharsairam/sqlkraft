@@ -14,6 +14,4 @@ Attaches a database that's only one data file to the current server. can't be us
 
 ## Syntax
 
-```sql
-sp_attach_single_file_db
-```
+`sp_attach_single_file_db`

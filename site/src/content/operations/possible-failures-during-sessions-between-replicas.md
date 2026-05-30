@@ -98,6 +98,5 @@ data disk failure is unlikely to be detected unless the database is restarted be
 data disk failure.
 
 ```cmd
-sqlservr.exe
-sqlservr.exe
+sqlservr.exe sqlservr.exe
 ```

@@ -73,15 +73,12 @@ declaration to associate the prefix
 , product description, with the namespace URI. This prefix
 
 ```sql
-10
-query()
-(namespace
+10 query() (namespace
 AWMI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelManuInstructions";
 declare namespace
 /AWMI:root/AWMI:Location[@LocationID="10"]
-CatalogDescription
-declare namespace
+CatalogDescription declare namespace
 PD
 SELECT Instructions.query('declare namespace
 AWMI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-

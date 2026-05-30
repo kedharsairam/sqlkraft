@@ -90,26 +90,14 @@ database engine reconstruct the entire old row version if needed.
 
 ### off-row
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-OFF
-```
+`OFF`

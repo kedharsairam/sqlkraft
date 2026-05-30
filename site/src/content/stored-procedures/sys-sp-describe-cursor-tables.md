@@ -14,9 +14,7 @@ Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric A
 
 ## Syntax
 
-```sql
-sp_describe_cursor_tables
-```
+`sp_describe_cursor_tables`
 
 ## Remarks
 
@@ -82,62 +80,42 @@ Last updated on 11/18/2025
 
 ### Example 1
 
-```sql
-sp_describe_cursor_tables
-```
+`sp_describe_cursor_tables`
 
 ### Example 2
 
-```sql
-lock_type
-```
+`lock_type`
 
 ### Example 3
 
-```sql
-server_name
-```
+`server_name`
 
 ### Example 4
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 5
 
-```sql
-OPENQUERY
-```
+`OPENQUERY`
 
 ### Example 6
 
-```sql
-OPENROWSET
-```
+`OPENROWSET`
 
 ### Example 7
 
-```sql
-objectid
-```
+`objectid`
 
 ### Example 8
 
-```sql
-OPENQUERY
-```
+`OPENQUERY`
 
 ### Example 9
 
-```sql
-OPENROWSET
-```
+`OPENROWSET`
 
 ### Example 10
 
-```sql
-dbid
-```
+`dbid`
 
 _(... and 12 more examples)_

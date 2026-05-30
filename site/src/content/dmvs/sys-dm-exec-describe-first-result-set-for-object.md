@@ -17,8 +17,7 @@ SQL database in Microsoft Fabric This dynamic management function takes an @obje
 ## Syntax
 
 ```sql
-sys.dm_exec_describe_first_result_set_for_object
-( @object_id , @include_browse_information )
+sys.dm_exec_describe_first_result_set_for_object ( @object_id , @include_browse_information )
 ```
 
 ## Permissions

@@ -37,8 +37,6 @@ SQL Managed Instance
 
 Azure Synapse Analytics (serverless SQL pool only)
 
-SQL
-
 database in Microsoft Fabric
 
 Use JSON path expressions to reference the properties of JSON objects.
@@ -115,25 +113,14 @@ The following query explicitly specifies
 
 mode in the path expression.
 
-SQL
-
 ```sql
-lax
-strict
-lax
-strict
-lax
-lax
-$.name
-name
-strict
-lax
+lax strict lax strict lax lax
+$.name name strict lax
 DECLARE
 @
 json
 AS
-NVARCHAR
-(
+NVARCHAR (
 MAX
 );
 SET

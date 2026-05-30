@@ -39,8 +39,6 @@ Broker endpoints.
 
 Drop all Service Broker endpoints.
 
-SQL
-
 How to: Activate Service Broker networking (Transact-SQL)
 
 How to: Pause Service Broker networking (Transact-SQL)
@@ -53,8 +51,7 @@ CREATE ENDPOINT (Transact-SQL)
 
 ```sql
 STARTED
-USE
-master
+USE master
 ;
 GO
 DROP

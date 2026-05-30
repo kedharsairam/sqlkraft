@@ -37,8 +37,6 @@ Copy and paste the following code into a Query Editor window, then run it to swi
 
 context to the AdventureWorks2008R2 database.
 
-SQL
-
 Copy and paste the following code into a Query Editor window, then run it to start a
 
 conversation and send a request message to the
@@ -60,8 +58,6 @@ statement to send the request message on that conversation. The last
 statement
 
 displays the text of the message that was sent.
-
-SQL
 
 ７
 

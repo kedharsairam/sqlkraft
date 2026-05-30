@@ -121,8 +121,7 @@ for tables, views, and filtered statistics only.
 
 ```sql
 VIEW DEFINITION
-SELECT
-sys.sql_expression_dependencies
+SELECT sys.sql_expression_dependencies
 SELECT
 SELECT
 VIEW DEFINITION

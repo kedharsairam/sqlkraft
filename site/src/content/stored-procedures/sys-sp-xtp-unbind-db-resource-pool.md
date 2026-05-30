@@ -14,6 +14,4 @@ This system procedure removes an existing binding between a database and a resou
 
 ## Syntax
 
-```sql
-sp_xtp_unbind_db_resource_pool
-```
+`sp_xtp_unbind_db_resource_pool`

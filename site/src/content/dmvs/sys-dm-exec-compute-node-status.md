@@ -13,14 +13,8 @@ SQL Server 2016 (13.x) and later Holds additional information about the performa
 
 ## Code Blocks
 
-```sql
-int
-```
+`int`
 
-```sql
-nvarchar(255)
-```
+`nvarchar(255)`
 
-```sql
-bigint
-```
+`bigint`

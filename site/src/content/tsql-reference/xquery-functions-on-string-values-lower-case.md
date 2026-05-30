@@ -44,8 +44,6 @@ is empty, a zero length string is returned.
 
 The following example changes the input string 'abcDEF!@4' to lower case.
 
-
-
 Expand table
 
 ```sql

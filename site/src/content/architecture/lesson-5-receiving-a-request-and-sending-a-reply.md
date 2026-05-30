@@ -43,8 +43,6 @@ reply message back to the
 
 .
 
-SQL
-
 Copy and paste the following code into a Query Editor window. Then, run it to receive the
 
 reply message from the
@@ -73,8 +71,6 @@ conversation. The final
 
 statement displays the text of the reply message.
 
-SQL
-
 ```sql
 RECEIVE
 SELECT
@@ -92,10 +88,8 @@ UNIQUEIDENTIFIER;
 DECLARE
 @RecvReqMsg
 AS
-NVARCHAR
-(100);
+NVARCHAR (100);
 DECLARE
 @RecvReqMsgName
-AS
-sysname;
+AS sysname;
 ```

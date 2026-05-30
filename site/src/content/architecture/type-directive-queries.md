@@ -77,8 +77,6 @@ directive is specified in
 
 type.
 
-SQL
-
 This is the partial result:
 
 XML

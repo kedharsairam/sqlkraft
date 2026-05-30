@@ -14,6 +14,4 @@ Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Conta
 
 ## Syntax
 
-```sql
-sys.sql_expression_dependencies
-```
+`sys.sql_expression_dependencies`

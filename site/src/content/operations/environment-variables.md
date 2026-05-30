@@ -117,6 +117,5 @@ Expand table
 mssql-conf setup
 ACCEPT_EULA
 ACCEPT_EULA
-MSSQL_SA_PASSWORD
-sa
+MSSQL_SA_PASSWORD sa
 ```

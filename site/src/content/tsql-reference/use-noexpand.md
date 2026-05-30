@@ -57,8 +57,6 @@ Create filtered indexes
 
 .
 
-SQL
-
 The query optimizer doesn't consider an index hint if the
 
 options don't have the required
@@ -183,78 +181,44 @@ used.
 
 1
 
-```sql
-PAGLOCK
-```
+`PAGLOCK`
 
-```sql
-NOLOCK
-```
+`NOLOCK`
 
-```sql
-READCOMMITTEDLOCK
-```
+`READCOMMITTEDLOCK`
 
-```sql
-ROWLOCK
-```
+`ROWLOCK`
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
-```sql
-TABLOCKX
-```
+`TABLOCKX`
 
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
-```sql
-NOLOCK
-```
+`NOLOCK`
 
-```sql
-READCOMMITTED
-```
+`READCOMMITTED`
 
-```sql
-REPEATABLEREAD
-```
+`REPEATABLEREAD`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-FIBillOfMaterialsWithComponentID
-```
+`FIBillOfMaterialsWithComponentID`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SET
-```
+`SET`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
 ```sql
 IF EXISTS (
-SELECT
-name
-FROM
-sys.indexes
-WHERE
-name
+SELECT name
+FROM sys.indexes
+WHERE name
 = N
 'FIBillOfMaterialsWithComponentID'
-AND
-object_id = OBJECT_ID(N
+AND object_id = OBJECT_ID(N
 'Production.BillOfMaterials'
 ))
 DROP
@@ -271,76 +235,44 @@ ON
 Production.BillOfMaterials(ComponentID, StartDate, EndDate)
 WHERE
 ComponentID
-IN
-(533, 324, 753);
+IN (533, 324, 753);
 GO
 SELECT
 StartDate, ComponentID
 FROM
 Production.BillOfMaterials
-WITH
-(
-INDEX
-(FIBillOfMaterialsWithComponentID))
+WITH (
+INDEX (FIBillOfMaterialsWithComponentID))
 WHERE
 ComponentID
-IN
-(533, 324, 753, 855, 924);
+IN (533, 324, 753, 855, 924);
 GO
 ```
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-SET
-```
+`SET`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-ARITHABORT
-```
+`ARITHABORT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-ANSI_WARNINGS
-```
+`ANSI_WARNINGS`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-NUMERIC_ROUNDABORT
-```
+`NUMERIC_ROUNDABORT`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-FROM
-```
+`FROM`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`

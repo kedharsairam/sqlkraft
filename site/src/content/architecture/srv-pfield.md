@@ -72,8 +72,7 @@ DBCHAR * srv_pfield (
 SRV_PROC *
 srvproc
 ,
-int
-field
+int field
 ,
 int *
 len

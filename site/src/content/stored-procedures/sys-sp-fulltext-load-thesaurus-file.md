@@ -14,6 +14,4 @@ Causes the server instance to parse and load the data from the thesaurus file th
 
 ## Syntax
 
-```sql
-sp_fulltext_load_thesaurus_file
-```
+`sp_fulltext_load_thesaurus_file`

@@ -42,9 +42,7 @@ new development work, and plan to modify applications that currently use this fe
 
 ### Example 1
 
-```sql
-sp_revokelogin
-```
+`sp_revokelogin`
 
 ### Example 2
 
@@ -60,9 +58,7 @@ ADVWORKS\Admins
 
 ### Example 4
 
-```sql
-sp_revokelogin
-```
+`sp_revokelogin`
 
 ### Example 5
 

@@ -40,25 +40,18 @@ Sets locking option values for user-defined clustered and nonclustered indexes o
 ```sql
 sp_indexoption
 [ @
-I
-ndex
-N
-ame
-P
-attern = ]
+I ndex
+N ame
+P attern = ]
 N
 'IndexNamePattern'
 , [ @
-O
-ption
-N
-ame = ]
+O ption
+N ame = ]
 'OptionName'
 , [ @
-O
-ption
-V
-alue = ]
+O ption
+V alue = ]
 'OptionValue'
 [ ; ]
 ```

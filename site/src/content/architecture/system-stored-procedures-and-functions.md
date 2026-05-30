@@ -142,22 +142,12 @@ Expand table
 
 Expand table
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_db_increased_partitions
-```
+`sp_db_increased_partitions`
 
-```sql
-sp_db_increased_partitions
-```
+`sp_db_increased_partitions`
 
-```sql
-sys.dm_os_cluster_nodes
-```
+`sys.dm_os_cluster_nodes`

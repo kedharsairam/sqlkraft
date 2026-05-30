@@ -10,8 +10,7 @@ pubDate: 2025-03-15
 ```sql
 --Generate the Attach and Detach Script
 WITH CTE AS (
-    SELECT
-        dbid,
+    SELECT dbid,
         DB_NAME(dbid) db_name,
         fileid,
         filename
@@ -20,8 +19,7 @@ WITH CTE AS (
         AND DATABASEPROPERTYEX(DB_NAME(dbid), 'Status') = 'ONLINE'
 )
 
-SELECT
-    db_name AS DBName,
+SELECT db_name AS DBName,
     'exec sp_detach_db @dbname = N''' + db_name + ''';' AS DetachScript,
     'exec sp_attach_db @dbname = N''' + db_name + '''' + (
         SELECT

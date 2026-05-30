@@ -31,39 +31,28 @@ N
 
 ### Example 1
 
-```sql
-secondary_database
-```
+`secondary_database`
 
 ### Example 2
 
-```sql
-sp_help_log_shipping_primary_secondary
-```
+`sp_help_log_shipping_primary_secondary`
 
 ### Example 3
 
-```sql
-master
-```
+`master`
 
 ### Example 4
 
-```sql
-sp_help_log_shipping_primary_secondary
-```
+`sp_help_log_shipping_primary_secondary`
 
 ### Example 5
 
-```sql
-AdventureWorks2022
-```
+`AdventureWorks2022`
 
 ### Example 6
 
 ```sql
-EXECUTE
-master.dbo.sp_help_log_shipping_primary_secondary @primary_database =
+EXECUTE master.dbo.sp_help_log_shipping_primary_secondary @primary_database =
 N
 'AdventureWorks'
 ;

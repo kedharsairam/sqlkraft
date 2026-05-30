@@ -55,8 +55,6 @@ mark in front, but without an XML declaration. If the target type is too small, 
 
 For example:
 
-SQL
-
 This is the result:
 
 Console
@@ -69,8 +67,6 @@ error is raised.
 
 For example:
 
-SQL
-
 This is the result:
 
 Console
@@ -81,31 +77,23 @@ corresponds to the database's collation code page without a byte order mark or X
 
 ```sql
 select
-CAST
-(
-CAST
-(N
+CAST (
+CAST (N
 '<Δ/>'
 as
 XML
-)
-as
+) as
 VARBINARY(
 MAX
 ))
-0xFFFE3C0094032F003E00
-select
-CAST
-(
-CAST
-(N
+0xFFFE3C0094032F003E00 select
+CAST (
+CAST (N
 '<Δ/>'
 as
 XML
-)
-as
-NVARCHAR
-(
+) as
+NVARCHAR (
 MAX
 ))
 <Δ/>

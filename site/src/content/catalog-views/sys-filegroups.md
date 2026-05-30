@@ -23,8 +23,7 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row 
 ```sql
 FILEGROUP
 _
-ID
-(
+ID (
 'filegroup_name'
 )
 ```
@@ -37,23 +36,18 @@ Applies to: SQL Server Azure SQL Database Azure SQL Managed Instance Azure Synap
 
 ### Example 1
 
-```sql
-FILEGROUP_ID
-```
+`FILEGROUP_ID`
 
 ### Example 2
 
-```sql
-PRIMARY
-```
+`PRIMARY`
 
 ### Example 3
 
 ```sql
 FILEGROUP
 _
-ID
-(
+ID (
 'filegroup_name'
 )
 ```
@@ -77,15 +71,12 @@ GO
 ```sql
 Filegroup ID
 ------------
-1
-(1 row(s) affected)
+1 (1 row(s) affected)
 ```
 
 ### Example 6
 
-```sql
-FILEGROUP_NAME
-```
+`FILEGROUP_NAME`
 
 ### Example 7
 
@@ -98,8 +89,7 @@ FILEGROUP_NAME
 ```sql
 FILEGROUP
 _
-NAME
-( filegroup_id )
+NAME ( filegroup_id )
 ```
 
 ### Example 9
@@ -116,8 +106,6 @@ GO
 
 ### Example 10
 
-```sql
-IsDefault
-```
+`IsDefault`
 
 _(... and 4 more examples)_

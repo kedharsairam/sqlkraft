@@ -39,8 +39,6 @@ SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
 
-SQL
-
 database in Microsoft Fabric
 
 A
@@ -63,8 +61,6 @@ instance
 
 must be accepted instances. The following example shows accepted instances.
 
-SQL
-
 The following example throws a
 
 because the
@@ -75,8 +71,6 @@ the
 
 instance is not accepted.
 
-SQL
-
 A
 
 instance is valid when all instances that comprise the
@@ -84,8 +78,6 @@ instance is valid when all instances that comprise the
 instance are valid. The following shows three valid
 
 instances and one instance that is not valid.
-
-SQL
 
 ```sql
 System.FormatException

@@ -37,13 +37,9 @@ Copy and paste the following code into a Query Editor window, then run it to swi
 
 context to the AdventureWorks2008R2 database.
 
-SQL
-
 Copy and paste the following code into a Query Editor window, then run it to drop the
 
 objects that were used to support the conversation.
-
-SQL
 
 ７
 
@@ -65,10 +61,8 @@ GO
 IF EXISTS (
 SELECT
 *
-FROM
-sys.services
-WHERE
-name
+FROM sys.services
+WHERE name
 = N
 '//AWDB/1DBSample/TargetService'
 )
@@ -77,10 +71,8 @@ SERVICE [//AWDB/1DBSample/TargetService];
 IF EXISTS (
 SELECT
 *
-FROM
-sys.service_queues
-WHERE
-name
+FROM sys.service_queues
+WHERE name
 = N
 'TargetQueue1DB'
 )

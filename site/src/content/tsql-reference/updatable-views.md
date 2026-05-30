@@ -157,17 +157,11 @@ An aggregate function:
 CREATE VIEW
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 SET QUOTED_IDENTIFIER
@@ -185,62 +179,34 @@ SET QUOTED_IDENTIFIER
 SET ANSI_NULLS
 ```
 
-```sql
-AFTER
-```
+`AFTER`
 
 ```sql
 INSTEAD OF
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-AVG
-```
+`AVG`
 
-```sql
-COUNT
-```
+`COUNT`
 
-```sql
-SUM
-```
+`SUM`
 
-```sql
-MIN
-```
+`MIN`
 
-```sql
-MAX
-```
+`MAX`
 
-```sql
-GROUPING
-```
+`GROUPING`
 
-```sql
-STDEV
-```
+`STDEV`
 
-```sql
-STDEVP
-```
+`STDEVP`
 
-```sql
-VAR
-```
+`VAR`
 
-```sql
-VARP
-```
+`VARP`

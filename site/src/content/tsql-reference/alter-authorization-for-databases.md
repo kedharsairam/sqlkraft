@@ -69,8 +69,6 @@ The current owner of the database.
 
 The following table summarizes the requirements:
 
-
-
 Expand table
 
 #### Executor
@@ -113,8 +111,6 @@ command in a user database (in this example
 
 ).
 
-SQL
-
 The output will be a GUID (such as XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX) which
 
 corresponds to the object ID of the Microsoft Entra user or service principal assigned as the
@@ -128,8 +124,6 @@ checking the user's object ID in Microsoft Entra ID
 When a SQL Server authentication login user is the database owner, execute the following
 
 statement in the master database to verify the database owner:
-
-SQL
 
 Instead of using Microsoft Entra users as individual owners of the database, use a Microsoft
 
@@ -149,45 +143,28 @@ role.
 
 disabled SQL Server authentication login. For example, from the user database execute:
 
-SQL
-
 ### db_owner
 
 ### db_owner
 
-```sql
-testdb
-```
+`testdb`
 
-```sql
-mydbogroup
-```
+`mydbogroup`
 
 ```sql
 SELECT
-CAST
-(owner_sid
-as
-uniqueidentifier)
+CAST (owner_sid as uniqueidentifier)
 AS
 Owner_SID
-FROM
-sys.databases
-WHERE
-name
+FROM sys.databases
+WHERE name
 =
 'testdb'
 ;
-SELECT
-d.name, d.owner_sid, sl.name
-FROM
-sys.databases
-AS
-d
-JOIN
-sys.sql_logins
-AS
-sl
-ON
-d.owner_sid = sl.sid;
+SELECT d.name, d.owner_sid, sl.name
+FROM sys.databases
+AS d
+JOIN sys.sql_logins
+AS sl
+ON d.owner_sid = sl.sid;
 ```

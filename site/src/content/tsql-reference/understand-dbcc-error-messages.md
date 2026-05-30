@@ -89,8 +89,6 @@ section of
 
 .
 
-
-
 Expand table
 
 ```sql
@@ -101,9 +99,7 @@ DBCC CHECKTABLE
 SQLDUMP<nnnn>.txt
 ```
 
-```sql
-LOG
-```
+`LOG`
 
 ```sql
 DBCC

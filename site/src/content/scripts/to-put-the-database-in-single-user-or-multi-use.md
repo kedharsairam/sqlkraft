@@ -8,9 +8,7 @@ pubDate: 2025-03-15
 ---
 
 ```sql
---for single user
-alter database databasename set single_user
+--for single user alter database databasename set single_user
 
---for multi user
-alter database databasename set multi_user
+--for multi user alter database databasename set multi_user
 ```

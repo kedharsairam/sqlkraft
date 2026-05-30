@@ -82,8 +82,6 @@ modifying different rows don't block each other.
 
 For example:
 
-SQL
-
 ﾉ
 
 Expand table
@@ -148,8 +146,6 @@ In the following example, the predicate is re-evaluated because another transact
 
 changed the row:
 
-SQL
-
 ﾉ
 
 Expand table
@@ -158,29 +154,19 @@ Expand table
 X
 ```
 
-```sql
-XACT
-```
+`XACT`
 
-```sql
-IX
-```
+`IX`
 
 ```sql
 X
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 U
@@ -202,20 +188,14 @@ X
 BEGIN
 TRANSACTION
 ;
-UPDATE
-t0
-SET
-b = b + 10;
+UPDATE t0
+SET b = b + 10;
 SELECT
 *
-FROM
-sys.dm_tran_locks
-WHERE
-request_session_id = @@SPID
-AND
-resource_type
-IN
-(
+FROM sys.dm_tran_locks
+WHERE request_session_id = @@SPID
+AND resource_type
+IN (
 'PAGE'
 ,
 'RID'
@@ -231,8 +211,7 @@ GO
 DROP
 TABLE
 IF
-EXISTS
-t0;
+EXISTS t0;
 ```
 
 ```sql
@@ -250,38 +229,28 @@ SET b = b + 10
 WHERE a = 2;
 COMMIT TRANSACTION;
 COMMIT TRANSACTION;
-/* Confirm that optimized locking and read committed snapshot isolation (RCSI) are
-both enabled on this database. */
-SELECT
-database_id,
+/* Confirm that optimized locking and read committed snapshot isolation (RCSI) are both enabled on this database. */
+SELECT database_id,
 name
 ,
 is_accelerated_database_recovery_on,
 is_optimized_locking_on,
 is_read_committed_snapshot_on
-FROM
-sys.databases
-WHERE
-name
+FROM sys.databases
+WHERE name
 = DB_NAME();
 CREATE
-TABLE
-t1
-(
-a
-int
+TABLE t1 (
+a int
 NOT
 NULL
 ,
-b
-int
+b int
 NULL
 );
 INSERT
-INTO
-t1
-VALUES
-(1,10),(2,20),(3,30);
+INTO t1
+VALUES (1,10),(2,20),(3,30);
 GO
 ```
 
@@ -305,34 +274,24 @@ U
 X
 ```
 
-```sql
-lock_after_qual_stmt_abort
-```
+`lock_after_qual_stmt_abort`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 BEGIN TRANSACTION;
 UPDATE t3
 CREATE
-TABLE
-t3
-(
-a
-int
+TABLE t3 (
+a int
 NOT
 NULL
 ,
-b
-int
+b int
 NULL
 );
 INSERT
-INTO
-t3
-VALUES
-(1,10),(2,20),(3,30);
+INTO t3
+VALUES (1,10),(2,20),(3,30);
 GO
 ```

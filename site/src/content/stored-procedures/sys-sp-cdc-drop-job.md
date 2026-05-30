@@ -35,9 +35,7 @@ N
 
 ### Example 1
 
-```sql
-AdventureWorks2022
-```
+`AdventureWorks2022`
 
 ### Example 2
 
@@ -45,8 +43,7 @@ AdventureWorks2022
 USE
 AdventureWorks2022;
 GO
-EXECUTE
-sys.sp_cdc_drop_job @job_type = N
+EXECUTE sys.sp_cdc_drop_job @job_type = N
 'cleanup'
 ;
 ```

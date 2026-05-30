@@ -121,20 +121,6 @@ determinism. For example, the constant expression
 
 ### varbinary(max)
 
-### xml
-
-### text
-
-### ntext
-
-### image
-
-### hierarchyid
-
-### geometry
-
-### geography
-
 ```sql
 ALTER COLUMN
 ```
@@ -167,17 +153,11 @@ NOT NULL
 ALTER TABLE
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 ALTER TABLE ... SWITCH PARTITION

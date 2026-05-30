@@ -14,6 +14,4 @@ Returns a row for each availability group where the local instance of SQL Server
 
 ## Syntax
 
-```sql
-failure_condition_level
-```
+`failure_condition_level`

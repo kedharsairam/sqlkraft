@@ -91,8 +91,6 @@ A set is a collection of expressions, for example <grouping set>; and a list is 
 
 collection of sets, for example <composite element list>.
 
-
-
 Expand table
 
 Unless specified otherwise, all Transact-SQL references to the name of a database object can be
@@ -157,15 +155,9 @@ Displayed in code
 
 #### Object reference format
 
-### int
-
 ### varchar(255)
 
-### bit
-
-```sql
-UPPERCASE
-```
+`UPPERCASE`
 
 ```sql
 |

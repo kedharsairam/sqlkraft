@@ -101,8 +101,6 @@ to display the Query Editor.
 
 11. In Query Editor, enter the following Transact-SQL code:
 
-SQL
-
 ７
 
 Note

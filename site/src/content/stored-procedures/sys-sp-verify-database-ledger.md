@@ -14,6 +14,4 @@ Verifies the database ledger and the table ledgers. For each row in the 1. Recom
 
 ## Syntax
 
-```sql
-sys.database_ledger
-```
+`sys.database_ledger`

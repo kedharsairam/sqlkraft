@@ -16,8 +16,6 @@ the
 
 contention:
 
-SQL
-
 ７
 
 Note
@@ -44,144 +42,91 @@ and index name
 
 names have been changed to anonymize the workload.
 
-```sql
-PAGELATCH_EX
-```
+`PAGELATCH_EX`
 
 ```sql
 <DatabaseID,FileID,PageID>
 ```
 
-```sql
-DatabaseID
-```
+`DatabaseID`
+
+`DatabaseID`
+
+`DB_NAME()`
+
+`LATCHTEST`
+
+`CIX_LATCHTEST`
 
 ```sql
-DatabaseID
-```
-
-```sql
-DB_NAME()
-```
-
-```sql
-LATCHTEST
-```
-
-```sql
-CIX_LATCHTEST
-```
-
-```sql
-SELECT
-wt.session_id,
+SELECT wt.session_id,
 wt.wait_type,
 wt.wait_duration_ms,
 s.name
-AS
-schema_name,
+AS schema_name,
 o.name
-AS
-object_name,
+AS object_name,
 i.name
-AS
-index_name
-FROM
-sys.dm_os_buffer_descriptors
-AS
-bd
+AS index_name
+FROM sys.dm_os_buffer_descriptors
+AS bd
 INNER
-JOIN
-(
+JOIN (
 SELECT
 *,
 --resource_description
-CHARINDEX
-(
+CHARINDEX (
 ':'
 , resource_description)
-AS
-file_index,
-CHARINDEX
-(
+AS file_index,
+CHARINDEX (
 ':'
 , resource_description,
-CHARINDEX
-(
+CHARINDEX (
 ':'
 ,
 resource_description) + 1)
-AS
-page_index,
+AS page_index,
 resource_description
-AS
-rd
-FROM
-sys.dm_os_waiting_tasks
-AS
-wt
-WHERE
-wait_type
+AS rd
+FROM sys.dm_os_waiting_tasks
+AS wt
+WHERE wait_type
 LIKE
 'PAGELATCH%'
 )
-AS
-wt
-ON
-bd.database_id =
-SUBSTRING
-(wt.rd, 0, wt.file_index)
-AND
-bd.file_id =
-SUBSTRING
-(wt.rd, wt.file_index + 1, 1)
+AS wt
+ON bd.database_id =
+SUBSTRING (wt.rd, 0, wt.file_index)
+AND bd.file_id =
+SUBSTRING (wt.rd, wt.file_index + 1, 1)
 --wt.page_index)
-AND
-bd.page_id =
-SUBSTRING
-(wt.rd, wt.page_index + 1,
-LEN
-(wt.rd))
+AND bd.page_id =
+SUBSTRING (wt.rd, wt.page_index + 1,
+LEN (wt.rd))
 INNER
-JOIN
-sys.allocation_units
-AS
-au
-ON
-bd.allocation_unit_id = au.allocation_unit_id
+JOIN sys.allocation_units
+AS au
+ON bd.allocation_unit_id = au.allocation_unit_id
 INNER
-JOIN
-sys.partitions
-AS
-p
-ON
-au.container_id = p.partition_id
+JOIN sys.partitions
+AS p
+ON au.container_id = p.partition_id
 INNER
-JOIN
-sys.indexes
-AS
-i
-ON
-p.index_id = i.index_id
-AND
-p.object_id = i.object_id
+JOIN sys.indexes
+AS i
+ON p.index_id = i.index_id
+AND p.object_id = i.object_id
 INNER
-JOIN
-sys.objects
-AS
-o
-ON
-i.object_id = o.object_id
+JOIN sys.objects
+AS o
+ON i.object_id = o.object_id
 INNER
-JOIN
-sys.schemas
-AS
-s
-ON
-o.schema_id = s.schema_id
+JOIN sys.schemas
+AS s
+ON o.schema_id = s.schema_id
 ORDER
-BY
-wt.wait_duration_ms
+BY wt.wait_duration_ms
 DESC
 ;
 ```

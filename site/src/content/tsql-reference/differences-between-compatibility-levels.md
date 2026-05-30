@@ -223,8 +223,6 @@ Disabled
 
 Enabled
 
-
-
 Expand table
 
 #### Database Engine (DE)
@@ -491,25 +489,17 @@ estimation process were available only for databases using SQL Server 2017 (14.x
 
 #### Compatibility level setting of 170
 
-```sql
-single_pages_kb
-```
+`single_pages_kb`
 
-```sql
-sys.dm_os_sys_info
-```
+`sys.dm_os_sys_info`
 
-```sql
-pages_kb
-```
+`pages_kb`
 
 ```sql
 SELECT single_pages_kb FROM sys.dm_os_sys_info
 ```
 
-```sql
-sp_dboption
-```
+`sp_dboption`
 
 ```sql
 EXEC sp_dboption
@@ -517,13 +507,10 @@ EXEC sp_dboption
 ```
 
 ```sql
-Could not find
-stored procedure 'sp_dboption'
+Could not find stored procedure 'sp_dboption'
 ```
 
-```sql
-QUERY_OPTIMIZER_HOTFIXES
-```
+`QUERY_OPTIMIZER_HOTFIXES`
 
 ```sql
 USE HINT 'ENABLE_QUERY_OPTIMIZER_HOTFIXES'

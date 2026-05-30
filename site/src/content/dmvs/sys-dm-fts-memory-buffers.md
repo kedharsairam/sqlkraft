@@ -17,8 +17,7 @@ SQL database in Microsoft Fabric Returns information about memory buffers belong
 ## Syntax
 
 ```sql
-dm_fts_memory_buffers.pool_id
-dm_fts_memory_pools.pool_id
+dm_fts_memory_buffers.pool_id dm_fts_memory_pools.pool_id
 ```
 
 ## Permissions

@@ -33,8 +33,6 @@ to or from Unicode supported data types. For example, the following
 
 conversion doesn't return a hexadecimal value of 41. It returns a hexadecimal value of 4100:
 
-SQL
-
 For more information, see
 
 Collation and Unicode Support
@@ -123,73 +121,15 @@ can be seen
 
 later in this section.
 
-### xml
-
-### xml
-
-### xml
-
-### text
-
-### image
-
-### text
-
-### image
-
-### binary
-
-### varbinary
-
-### int
-
-### binary
-
-### char
-
-### nchar
-
-### nvarchar
-
-### varbinary
-
-### varchar
-
-### binary
-
-### char
-
-### nchar
-
-### nvarchar
-
-### varbinary
-
-### varchar
-
 #### From data type
 
 #### To data type
 
 #### Result
 
-#### int
+`HH`
 
-#### smallint
-
-#### tinyint
-
-#### char
-
-#### varchar
-
-```sql
-HH
-```
-
-```sql
-MM
-```
+`MM`
 
 ```sql
 -08:00
@@ -197,13 +137,9 @@ MM
 
 ```sql
 SELECT
-CAST
-(
-CAST
-(0x41
-AS
-nvarchar
+CAST (
+CAST (0x41
+AS nvarchar
 )
-AS
-varbinary);
+AS varbinary);
 ```

@@ -122,10 +122,6 @@ You cannot reference these metaproperties in any XPath navigation.
 Expand table
 
 ```sql
-urn:schemas-microsoft-com:xml-metaprop
-xmltext
-xmltext
-xmltext
-urn:schemas-
+urn:schemas-microsoft-com:xml-metaprop xmltext xmltext xmltext urn:schemas-
 microsoft-com:xml-metaprop
 ```

@@ -25,15 +25,12 @@ syntax: |
 ## Syntax
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_syscollector_set_warehouse_instance_name N
+EXECUTE sp_syscollector_set_warehouse_instance_name N
 'RemoteSERVER'
 ;
--- the
-default instance is assumed on the remote server
+-- the default instance is assumed on the remote server
 GO
 ```
 
@@ -41,21 +38,16 @@ GO
 
 ### Example 1
 
-```sql
-RemoteSERVER
-```
+`RemoteSERVER`
 
 ### Example 2
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_syscollector_set_warehouse_instance_name N
+EXECUTE sp_syscollector_set_warehouse_instance_name N
 'RemoteSERVER'
 ;
--- the
-default instance is assumed on the remote server
+-- the default instance is assumed on the remote server
 GO
 ```

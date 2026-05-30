@@ -95,6 +95,5 @@ Important
 ### pooling
 
 ```sql
-lightweight
-pooling
+lightweight pooling
 ```

@@ -136,8 +136,6 @@ and the XML Showplan output, consider the following query on the partitioned tab
 
 . This query updates data in two partitions.
 
-SQL
-
 The following illustration shows the properties of the
 
 operator in the
@@ -182,9 +180,7 @@ T.a <
 b = 2
 ```
 
-```sql
-SET
-```
+`SET`
 
 ```sql
 SET SHOWPLAN_XML
@@ -194,101 +190,56 @@ SET SHOWPLAN_XML
 SET STATISTICS XML
 ```
 
-```sql
-scans
-```
+`scans`
 
-```sql
-seeks
-```
+`seeks`
 
-```sql
-inserts
-```
+`inserts`
 
-```sql
-updates
-```
+`updates`
 
-```sql
-merges
-```
+`merges`
 
-```sql
-deletes
-```
+`deletes`
 
-```sql
-Partitioned
-```
+`Partitioned`
 
-```sql
-seek
-```
+`seek`
 
-```sql
-scan
-```
+`scan`
 
-```sql
-insert
-```
+`insert`
 
-```sql
-update
-```
+`update`
 
-```sql
-merge
-```
+`merge`
 
-```sql
-delete
-```
+`delete`
 
-```sql
-SeekPredicateNew
-```
+`SeekPredicateNew`
 
-```sql
-SeekKeys
-```
+`SeekKeys`
 
-```sql
-PartitionID
-```
+`PartitionID`
 
-```sql
-PartitionID
-```
+`PartitionID`
 
-```sql
-SeekKeys
-```
+`SeekKeys`
 
-```sql
-PartitionID
-```
+`PartitionID`
 
-```sql
-fact_sales
-```
+`fact_sales`
 
 ```sql
 Clustered Index Seek
 ```
 
-```sql
-fact_sales
-```
+`fact_sales`
 
 ```sql
-UPDATE
-fact_sales
-SET
-quantity = quantity - 2
-WHERE
-date_id
+UPDATE fact_sales
+SET quantity = quantity - 2
+WHERE date_id
 BETWEEN
 20080802
 AND

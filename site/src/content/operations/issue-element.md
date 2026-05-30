@@ -86,8 +86,7 @@ ComputerName\InstanceName.
 Expand table
 
 ```cmd
-<Issue
-type="..."
+<Issue type="..."
 code="..."
 server="..."
 database="..."

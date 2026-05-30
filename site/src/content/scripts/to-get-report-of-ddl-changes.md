@@ -26,8 +26,7 @@ N'<tr style="text-align: left;">
 CAST((
     SELECT
         Currents.TableName AS 'td'
-    FROM
-        (SELECT table_name AS TableName
+    FROM (SELECT table_name AS TableName
          FROM information_schema.tables
          WHERE table_type = 'BASE TABLE') AS Currents
     LEFT JOIN
@@ -50,8 +49,7 @@ N'<tr style="text-align: left;">
 CAST((
     SELECT
         COUNT(*) AS 'td'
-    FROM
-        information_schema.tables
+    FROM information_schema.tables
     FOR XML PATH('tr'), TYPE
 ) AS NVARCHAR(MAX) ) +
 N'</table>';
@@ -69,8 +67,7 @@ CAST((
         Snapshots.TableName, ''
     FROM
         TableStructureSnapshot AS Snapshots
-    LEFT JOIN
-        information_schema.tables AS Currents
+    LEFT JOIN information_schema.tables AS Currents
     ON
         Snapshots.TableName = Currents.table_name
     WHERE
@@ -92,21 +89,17 @@ CREATE TABLE #ComparisonResults (
 
 -- Insert comparison results into the temporary table
 INSERT INTO #ComparisonResults (TableName, ColumnName, DataType, IsNullable)
-SELECT
-    curr.TableName,
+SELECT curr.TableName,
     curr.ColumnName,
     curr.DataType,
     curr.IsNullable
-FROM
-    (SELECT table_name AS TableName, column_name AS ColumnName, data_type AS DataType, is_nullable AS IsNullable
+FROM (SELECT table_name AS TableName, column_name AS ColumnName, data_type AS DataType, is_nullable AS IsNullable
      FROM information_schema.columns) AS curr
 FULL OUTER JOIN
     TableStructureSnapshot AS snap
-ON
-    curr.TableName = snap.TableName
+ON curr.TableName = snap.TableName
     AND curr.ColumnName = snap.ColumnName
-WHERE
-    curr.TableName IS NULL
+WHERE curr.TableName IS NULL
     OR snap.TableName IS NULL
     OR curr.ColumnName IS NULL
     OR snap.ColumnName IS NULL
@@ -148,30 +141,22 @@ N'<tr style="text-align: left;">
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">NewDataType</th>
 </tr>' +
 CAST((
-    SELECT
-      tss.TableName AS 'TD',
+    SELECT tss.TableName AS 'TD',
       tss.ColumnName AS 'TD',
       tss.OldDataType AS 'TD',
       tss.NewDataType AS 'TD'
-    FROM
-        (SELECT
-            tss.TableName,
+    FROM (SELECT tss.TableName,
             tss.ColumnName,
             tss.DataType AS OldDataType,
             ic.DATA_TYPE AS NewDataType
         FROM
             TableStructureSnapshot tss
-        JOIN
-            information_schema.columns ic
-        ON
-            tss.TableName = ic.TABLE_NAME
+        JOIN information_schema.columns ic
+        ON tss.TableName = ic.TABLE_NAME
             AND tss.ColumnName = ic.COLUMN_NAME
-        JOIN
-            information_schema.tables it
-        ON
-            it.TABLE_NAME = tss.TableName
-        WHERE
-            tss.DataType <> ic.DATA_TYPE
+        JOIN information_schema.tables it
+        ON it.TABLE_NAME = tss.TableName
+        WHERE tss.DataType <> ic.DATA_TYPE
             AND it.TABLE_TYPE = 'BASE TABLE'
         ) AS tss
     FOR XML PATH('tr'), TYPE
@@ -189,30 +174,22 @@ N'<tr style="text-align: left;">
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">NewMaxLength</th>
 </tr>' +
 CAST((
-    SELECT
-      tss.TableName AS 'TD',
+    SELECT tss.TableName AS 'TD',
       tss.ColumnName AS 'TD',
       tss.OldMaxLength AS 'TD',
       tss.NewMaxLength AS 'TD'
-    FROM
-        (SELECT
-            tss.TableName,
+    FROM (SELECT tss.TableName,
             tss.ColumnName,
             tss.CHARACTER_MAXIMUM_LENGTH AS OldMaxLength,
             ic.CHARACTER_MAXIMUM_LENGTH AS NewMaxLength
         FROM
             TableStructureSnapshot tss
-        JOIN
-            information_schema.columns ic
-        ON
-            tss.TableName = ic.TABLE_NAME
+        JOIN information_schema.columns ic
+        ON tss.TableName = ic.TABLE_NAME
             AND tss.ColumnName = ic.COLUMN_NAME
-        JOIN
-            information_schema.tables it
-        ON
-            it.TABLE_NAME = tss.TableName
-        WHERE
-            tss.CHARACTER_MAXIMUM_LENGTH <> ic.CHARACTER_MAXIMUM_LENGTH
+        JOIN information_schema.tables it
+        ON it.TABLE_NAME = tss.TableName
+        WHERE tss.CHARACTER_MAXIMUM_LENGTH <> ic.CHARACTER_MAXIMUM_LENGTH
             AND it.TABLE_TYPE = 'BASE TABLE'
         ) AS tss
     FOR XML PATH('tr'), TYPE

@@ -83,8 +83,6 @@ type.
 
 The following example returns a JSON object with one key and null value.
 
-SQL
-
 Here's the result set.
 
 JSON
@@ -107,8 +105,6 @@ A. Return JSON object with one key
 
 The following example constructs a JSON object with three properties from a result set.
 
-SQL
-
 Here's the result set.
 
 JSON
@@ -121,15 +117,11 @@ object where the key is the column name and value is the
 
 .
 
-SQL
-
 The following example returns a JSON object as
 
 json
 
 type.
-
-SQL
 
 Result
 
@@ -175,8 +167,6 @@ C. Return result with two columns
 
 D. Return a JSON object as JSON type
 
-
-
 Expand table
 
 E. Return aggregated result with four columns
@@ -192,8 +182,6 @@ aggregate on the
 and
 
 columns.
-
-SQL
 
 Here's the result set.
 
@@ -253,39 +241,25 @@ JSON_ARRAYAGG (Transact-SQL)
 
 Last updated on 11/18/2025
 
-
-
 Expand table
 
 Related content
 
-```sql
-JSON_OBJECTAGG
-```
+`JSON_OBJECTAGG`
 
-```sql
-JSON_OBJECTAGG
-```
+`JSON_OBJECTAGG`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 GROUP BY GROUPING SETS
 ```
 
-```sql
-JSON_OBJECTAGG
-```
+`JSON_OBJECTAGG`
 
-```sql
-JSON_ARRAYAGG
-```
+`JSON_ARRAYAGG`
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 NULL ON NULL
@@ -298,11 +272,8 @@ RETURNING json
 ```sql
 JSON
 _
-OBJECTAGG
-( json_key_value [ json_null_clause ] [
-RETURNING
-json ] )
-json_key_value
+OBJECTAGG ( json_key_value [ json_null_clause ] [
+RETURNING json ] ) json_key_value
 ::=
 <json_name>
 :
@@ -327,13 +298,9 @@ NULL
 );
 ```
 
-```sql
-object_id
-```
+`object_id`
 
-```sql
-column_id
-```
+`column_id`
 
 ```sql
 {"bitpos":12,"cid":6,"colguid":13,"hbcolid":3,"maxinrowlen":8,"nullbit":11,"offset":10,"ordkey":7,"ordlock":14,"rcmodified":4,"rscolid":2,"rsid":1,"
@@ -355,38 +322,24 @@ column_id
 {"fileid":2,"filename":4,"name":3,"status":1}
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SUM
-```
+`SUM`
 
-```sql
-JSON_OBJECTAGG
-```
+`JSON_OBJECTAGG`
 
 ```sql
 GROUP BY
 GROUPING SETS
 ```
 
-```sql
-id
-```
+`id`
 
-```sql
-type
-```
+`type`
 
-```sql
-total_amount
-```
+`total_amount`
 
-```sql
-SUM
-```
+`SUM`
 
 ```sql
 {
@@ -399,10 +352,8 @@ null
 ```sql
 SELECT
 JSON_OBJECTAGG(c1:c2)
-FROM
-(
-VALUES
-(
+FROM (
+VALUES (
 'key1'
 ,
 'c'
@@ -416,8 +367,7 @@ VALUES
 'a'
 )
 )
-AS
-t(c1, c2);
+AS t(c1, c2);
 {
 "key1"
 :
@@ -437,15 +387,11 @@ t(c1, c2);
 SELECT
 TOP (5) c.object_id,
 JSON_OBJECTAGG(c.name:c.column_id)
-AS
-columns
-FROM
-sys.columns
-AS
-c
+AS columns
+FROM sys.columns
+AS c
 GROUP
-BY
-c.object_id;
+BY c.object_id;
 ```
 
 ```sql
@@ -461,25 +407,15 @@ JSON
 :1}
 ```
 
-```sql
-amount
-```
+`amount`
 
-```sql
-json_total_name_amount
-```
+`json_total_name_amount`
 
-```sql
-JSON_OBJECTAGG
-```
+`JSON_OBJECTAGG`
 
-```sql
-name
-```
+`name`
 
-```sql
-amount
-```
+`amount`
 
 ```sql
 {"k1":2}
@@ -514,17 +450,13 @@ NULL
 {"k1":2,"k3":4,"k2":3,"j2":9,"j1":7}
 ```
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 {"k2":3,"k3":4,"k1":2}
 ```
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 {"j2":9,"j1":7}
@@ -533,14 +465,11 @@ NULL
 ```sql
 WITH
 T
-AS
-(
+AS (
 SELECT
 *
-FROM
-(
-VALUES
-(1,
+FROM (
+VALUES (1,
 'k1'
 ,
 'a'
@@ -562,35 +491,29 @@ VALUES
 'd'
 , 9)
 )
-AS
-b(
+AS b(
 id
 ,
 name
 ,
 type
 , amount))
-SELECT
-id
+SELECT id
 ,
 type
 ,
-SUM
-(amount)
-AS
-total_amount,
+SUM (amount)
+AS total_amount,
 JSON_OBJECTAGG(
 name
 :amount)
-AS
-json_total_name_amount
+AS json_total_name_amount
 FROM
 T
 GROUP
 BY
 GROUPING
-SETS
-((
+SETS ((
 id
 ), (
 type

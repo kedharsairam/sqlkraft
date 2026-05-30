@@ -49,19 +49,15 @@ or if a rule or default is bound to it.
 
 ### Example 1
 
-```sql
-birthday
-```
+`birthday`
 
 ### Example 2
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_droptype
+EXECUTE sp_droptype
 'birthday'
 ;
 GO

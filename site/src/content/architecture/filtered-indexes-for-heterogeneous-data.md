@@ -6,8 +6,6 @@ tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 The filtered index
 
 is valid for the following query.
@@ -17,8 +15,6 @@ Display the
 Estimated Execution Plan
 
 to determine if the query optimizer used the filtered index.
-
-SQL
 
 For more information about how to create filtered indexes and how to define the filtered index
 
@@ -66,47 +62,25 @@ performance of queries for accessories by creating a filtered index on the acces
 
 subcategories as shown in the following example.
 
-SQL
+`FIBillOfMaterialsWithEndDate`
 
-```sql
-FIBillOfMaterialsWithEndDate
-```
+`Production.Product`
 
-```sql
-Production.Product
-```
+`ProductSubcategoryID`
 
-```sql
-ProductSubcategoryID
-```
+`Production.Product`
 
-```sql
-Production.Product
-```
+`Color`
 
-```sql
-Color
-```
+`ReorderPoint`
 
-```sql
-ReorderPoint
-```
+`ListPrice`
 
-```sql
-ListPrice
-```
+`Weight`
 
-```sql
-Weight
-```
+`Class`
 
-```sql
-Class
-```
-
-```sql
-Style
-```
+`Style`
 
 ```sql
 CREATE
@@ -147,8 +121,7 @@ INDEX
 FIProductAccessories
 ON
 Production.Product (ProductSubcategoryID, ListPrice)
-INCLUDE
-(
+INCLUDE (
 Name
 )
 WHERE

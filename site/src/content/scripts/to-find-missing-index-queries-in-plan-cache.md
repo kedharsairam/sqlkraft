@@ -8,8 +8,7 @@ pubDate: 2025-03-15
 ---
 
 ```sql
-WITH XMLNAMESPACES
-   (DEFAULT 'http://schemas.microsoft.com/sqlserver/2004/07/showplan')
+WITH XMLNAMESPACES (DEFAULT 'http://schemas.microsoft.com/sqlserver/2004/07/showplan')
 
 SELECT query_plan,
        n.value('(@StatementText)[1]', 'VARCHAR(4000)') AS sql_text,
@@ -41,8 +40,7 @@ SELECT query_plan,
            FOR  XML PATH('')
        ) AS include_columns
 INTO #MissingIndexInfo
-FROM
-(
+FROM (
    SELECT query_plan
    FROM (
            SELECT DISTINCT plan_handle

@@ -61,6 +61,5 @@ basis and should eventually complete successfully.
 
 ```cmd
 Microsoft.AzureArcData
-Database cannot be opened due to inaccessible files or insufficient memory or
-disk space
+Database cannot be opened due to inaccessible files or insufficient memory or disk space
 ```

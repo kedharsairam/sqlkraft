@@ -13,13 +13,9 @@ This feature will be removed in a future version of SQL Server. Avoid using this
 
 ## Code Blocks
 
-```sql
-endpoint_id
-```
+`endpoint_id`
 
-```sql
-sys.http_endpoints
-```
+`sys.http_endpoints`
 
 ```sql
 https://tempuri.org

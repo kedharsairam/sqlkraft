@@ -27,21 +27,15 @@ fn_ check_object_signatures (
 
 ### Example 1
 
-```sql
-master
-```
+`master`
 
 ### Example 2
 
-```sql
-is_signed
-```
+`is_signed`
 
 ### Example 3
 
-```sql
-is_signature_valid
-```
+`is_signature_valid`
 
 ### Example 4
 
@@ -49,8 +43,7 @@ is_signature_valid
 USE master;
 -- Declare a variable to hold the thumbprint.
 DECLARE @thumbprint varbinary(20) ;
--- Populate the thumbprint variable with the master database schema signing
-certificate.
+-- Populate the thumbprint variable with the master database schema signing certificate.
 SELECT @thumbprint = thumbprint
 FROM sys.certificates
 WHERE name LIKE '%SchemaSigningCertificate%' ;

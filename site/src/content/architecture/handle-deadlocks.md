@@ -64,6 +64,5 @@ deadlocks and take remedial action (for example, automatically resubmitting the 
 
 ```sql
 Your transaction (process ID #...) was deadlocked on {lock | communication buffer |
-thread} resources with another process and has been chosen as the deadlock victim. Rerun
-your transaction.
+thread} resources with another process and has been chosen as the deadlock victim. Rerun your transaction.
 ```

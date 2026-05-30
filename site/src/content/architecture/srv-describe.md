@@ -52,26 +52,20 @@ int srv_describe (
 SRV_PROC *
 srvproc
 ,
-int
-colnumber
+int colnumber
 ,
 DBCHAR *
 column_name
 ,
-int
-namelen
+int namelen
 ,
-DBINT
-desttype
+DBINT desttype
 ,
-DBINT
-destlen
+DBINT destlen
 ,
-DBINT
-srctype
+DBINT srctype
 ,
-DBINT
-srclen
+DBINT srclen
 ,
 void *
 ```

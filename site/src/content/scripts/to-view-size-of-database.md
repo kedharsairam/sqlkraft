@@ -18,10 +18,8 @@ SELECT
     CAST(SUM(CASE WHEN type_desc = 'LOG' THEN size END) * 8. / 1024 / 1024 AS DECIMAL(8,2)) AS [Log Size in GB],
     CAST(SUM(CASE WHEN type_desc = 'ROWS' THEN size END) * 8. / 1024 / 1024 AS DECIMAL(8,2)) AS [Data Size in GB],
     CAST(SUM(CASE WHEN type_desc = 'ROWS' THEN (size - CAST(FILEPROPERTY(name, 'SpaceUsed') AS int)) END) * 8. / 1024 / 1024 AS DECIMAL(8,2)) AS [Available Space in GB]
-FROM
-    sys.master_files
-GROUP BY
-    database_id
+FROM sys.master_files
+GROUP BY database_id
 ORDER BY
     [Database Name];
 
@@ -32,8 +30,7 @@ SELECT
     Physical_Name AS [File Location],
     (size * 8.0 / 1024 / 1024) AS [Size in GBs],
     type_desc AS [File Type]
-FROM
-    sys.master_files
+FROM sys.master_files
 ORDER BY
     [Database Name], [File Type];
 ```

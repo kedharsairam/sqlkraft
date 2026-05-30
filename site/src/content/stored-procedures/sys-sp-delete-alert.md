@@ -40,11 +40,9 @@ Test Alert
 ### Example 2
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_delete_alert @
+EXECUTE dbo.sp_delete_alert @
 name
 = N
 'Test Alert'

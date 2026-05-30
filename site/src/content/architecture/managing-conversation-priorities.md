@@ -49,15 +49,11 @@ statements in a database by using
 
 the following statement:
 
-SQL
-
 An administrator can turn off conversation priorities for
 
 statements by using the
 
 following statement:
-
-SQL
 
 Conversation priorities are specified by using the
 

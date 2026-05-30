@@ -182,42 +182,28 @@ srv_wsendmsg
 
 Use CLR Integration instead.
 
-```sql
-REBUILD
-```
+`REBUILD`
 
 ```sql
 ALTER INDEX
 ```
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
 ```sql
 ALTER INDEX
 ```
 
-```sql
-sys.dm_db_index_physical_stats
-```
+`sys.dm_db_index_physical_stats`
+
+`SCHEMA`
+
+`TABLE`
+
+`TYPE`
 
 ```sql
-SCHEMA
-```
-
-```sql
-TABLE
-```
-
-```sql
-TYPE
-```
-
-```sql
-xp_grantlogin
-xp_revokelogin
-xp_loginConfig
+xp_grantlogin xp_revokelogin xp_loginConfig
 ```
 
 ```sql
@@ -229,23 +215,15 @@ DROP LOGIN IsIntegratedSecurityOnly
 ```
 
 ```sql
-SERVERPROPERTY
-xp_grantlogin
-xp_revokelogin
+SERVERPROPERTY xp_grantlogin xp_revokelogin
+```
+
+`XP_API`
+
+```sql
+sp_addextendedproc sp_dropextendedproc sp_helpextendedproc
 ```
 
 ```sql
-XP_API
-```
-
-```sql
-sp_addextendedproc
-sp_dropextendedproc
-sp_helpextendedproc
-```
-
-```sql
-sp_addextendedproc
-sp_dropextendedproc
-sp_helpextendedproc
+sp_addextendedproc sp_dropextendedproc sp_helpextendedproc
 ```

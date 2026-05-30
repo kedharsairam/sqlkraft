@@ -59,15 +59,9 @@ STSrid
 
 These methods access specific points and curves within a geometry instance.
 
-
-
 Expand table
 
-
-
 Expand table
-
-
 
 Expand table
 

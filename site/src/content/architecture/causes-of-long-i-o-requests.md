@@ -65,7 +65,6 @@ Performance Monitor counters show long disk latencies, long disk queues, or no d
 time.
 
 ```sql
-SQL Server has encountered ## occurrence(s) of I/O requests taking longer than 15
-seconds to complete on file [##] in database [##] (#). The OS file handle is 0x00000.
+SQL Server has encountered ## occurrence(s) of I/O requests taking longer than 15 seconds to complete on file [##] in database [##] (#). The OS file handle is 0x00000.
 The offset of the latest long I/O is: 0x00000.
 ```

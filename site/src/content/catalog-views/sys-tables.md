@@ -14,9 +14,7 @@ Azure SQL Database Azure SQL Managed Instance Azure Synapse Analytics Analytics 
 
 ## Syntax
 
-```sql
-filestream_data_space_id
-```
+`filestream_data_space_id`
 
 ## Remarks
 
@@ -114,33 +112,21 @@ WHERE is_masked = 1;
 ### Example 2
 
 ```sql
-ON
-fkc.constraint_object_id = fk.object_id
+ON fkc.constraint_object_id = fk.object_id
 INNER
-JOIN
-sys.tables t_parent
-ON
-t_parent.object_id = fk.parent_object_id
+JOIN sys.tables t_parent
+ON t_parent.object_id = fk.parent_object_id
 INNER
-JOIN
-sys.columns c_parent
-ON
-fkc.parent_column_id = c_parent.column_id
-AND
-c_parent.object_id = t_parent.object_id
+JOIN sys.columns c_parent
+ON fkc.parent_column_id = c_parent.column_id
+AND c_parent.object_id = t_parent.object_id
 INNER
-JOIN
-sys.tables t_child
-ON
-t_child.object_id = fk.referenced_object_id
+JOIN sys.tables t_child
+ON t_child.object_id = fk.referenced_object_id
 INNER
-JOIN
-sys.columns c_child
-ON
-c_child.object_id = t_child.object_id
-AND
-fkc.referenced_column_id = c_child.column_id
+JOIN sys.columns c_child
+ON c_child.object_id = t_child.object_id
+AND fkc.referenced_column_id = c_child.column_id
 ORDER
-BY
-t_parent.name, c_parent.name;
+BY t_parent.name, c_parent.name;
 ```

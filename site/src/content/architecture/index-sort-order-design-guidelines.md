@@ -62,8 +62,6 @@ the
 
 column to be sorted in ascending order (small to large).
 
-SQL
-
 The following
 
 execution plan
@@ -100,29 +98,19 @@ CREATE TABLE
 ALTER TABLE
 ```
 
-```sql
-ASC
-```
+`ASC`
 
-```sql
-DESC
-```
+`DESC`
 
 ```sql
 ORDER BY
 ```
 
-```sql
-RejectedQty
-```
+`RejectedQty`
 
-```sql
-Purchasing.PurchaseOrderDetail
-```
+`Purchasing.PurchaseOrderDetail`
 
-```sql
-ProductID
-```
+`ProductID`
 
 ```sql
 ORDER BY

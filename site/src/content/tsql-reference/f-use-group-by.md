@@ -11,61 +11,47 @@ This example uses two correlated subqueries to find the names of employees who s
 
 particular product.
 
-SQL
-
 The following example finds the total of each sales order in the database.
-
-SQL
 
 ```sql
 HAVING
-MAX
-(p1.ListPrice) >= (
+MAX (p1.ListPrice) >= (
 SELECT
-AVG
-(p2.ListPrice) * 2
+AVG (p2.ListPrice) * 2
 FROM
 Production.Product
-AS
-p2
-WHERE
-p1.ProductModelID = p2.ProductModelID
+AS p2
+WHERE p1.ProductModelID = p2.ProductModelID
 );
 GO
 USE
 AdventureWorks2025;
 GO
 SELECT
-DISTINCT
-pp.LastName,
+DISTINCT pp.LastName,
 pp.FirstName
 FROM
 Person.Person pp
 INNER
 JOIN
 HumanResources.Employee e
-ON
-e.BusinessEntityID = pp.BusinessEntityID
-WHERE
-pp.BusinessEntityID
-IN
-(
+ON e.BusinessEntityID = pp.BusinessEntityID
+WHERE pp.BusinessEntityID
+IN (
 SELECT
 SalesPersonID
 FROM
 Sales.SalesOrderHeader
 WHERE
 SalesOrderID
-IN
-(
+IN (
 SELECT
 SalesOrderID
 FROM
 Sales.SalesOrderDetail
 WHERE
 ProductID
-IN
-(
+IN (
 SELECT
 ProductID
 FROM
@@ -85,8 +71,7 @@ AdventureWorks2025;
 GO
 SELECT
 SalesOrderID,
-SUM
-(LineTotal)
+SUM (LineTotal)
 AS
 SubTotal
 FROM

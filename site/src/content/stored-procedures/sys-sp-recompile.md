@@ -71,9 +71,7 @@ looks for an object in the current database only.
 
 ### Example 1
 
-```sql
-sp_recompile
-```
+`sp_recompile`
 
 ### Example 2
 
@@ -89,9 +87,7 @@ WITH RECOMPILE
 
 ### Example 4
 
-```sql
-Sales.Customer
-```
+`Sales.Customer`
 
 ### Example 5
 
@@ -99,8 +95,7 @@ Sales.Customer
 USE
 AdventureWorks2022;
 GO
-EXECUTE
-sp_recompile N
+EXECUTE sp_recompile N
 'Sales.Customer'
 ;
 GO

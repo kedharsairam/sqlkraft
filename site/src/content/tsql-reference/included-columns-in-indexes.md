@@ -59,15 +59,11 @@ appears to result in an arithmetic error when the row is inserted, the
 
 statement works.
 
-SQL
-
 However, if you create an index on computed column
 
 , the same
 
 statement fails.
-
-SQL
 
 For more information, see
 
@@ -95,9 +91,7 @@ SQL Server index architecture and design guide
 
 .
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
 ```sql
 PRIMARY KEY
@@ -107,52 +101,39 @@ PRIMARY KEY
 c
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 c
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 CREATE
-TABLE
-t1 (a
+TABLE t1 (a
 INT
 , b
 INT
 , c
-AS
-a/b);
+AS a/b);
 INSERT
-INTO
-t1
-VALUES
-(1, 0);
+INTO t1
+VALUES (1, 0);
 CREATE
-TABLE
-t1 (a
+TABLE t1 (a
 INT
 , b
 INT
 , c
-AS
-a/b);
+AS a/b);
 CREATE
 UNIQUE
 CLUSTERED
 INDEX
 Idx1
-ON
-t1(c);
+ON t1(c);
 INSERT
-INTO
-t1
-VALUES
-(1, 0);
+INTO t1
+VALUES (1, 0);
 ```

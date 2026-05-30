@@ -14,6 +14,4 @@ returns binary data for internal use by the .NET class. Extended Events UI in th
 
 ## Syntax
 
-```sql
-sys.fn_MSxe_read_event_stream
-```
+`sys.fn_MSxe_read_event_stream`

@@ -63,8 +63,6 @@ column of
 
 type.
 
-SQL
-
 Because the query doesn't specify the
 
 directive, the column values are returned as
@@ -135,16 +133,14 @@ LastName
 "Achong"
 >
 <PhoneNumber>
-<act:number
-xmlns:act
+<act:number xmlns:act
 =
 "https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ContactTypes"
 >
 425-555-1112
 </act:number>
-<act:number
-xmlns:act
+<act:number xmlns:act
 =
 "https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 ```

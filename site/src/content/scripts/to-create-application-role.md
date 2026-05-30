@@ -8,8 +8,7 @@ pubDate: 2025-03-15
 ---
 
 ```sql
-create application role applicationrolename
-with password = '[password]',
+create application role applicationrolename with password = '[password]',
 default_schema = schemaname;
 go
 ```

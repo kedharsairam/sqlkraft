@@ -55,38 +55,27 @@ SQL database in Microsoft Fabric Places a lock on an application resource. Trans
 ```sql
 sys.sp_getapplock
 [ [ @
-R
-esource = ]
+R esource = ]
 N
 'Resource'
 ]
 , [ @
-L
-ock
-M
-ode = ]
+L ock
+M ode = ]
 'LockMode'
 [ , [ @
-L
-ock
-O
-wner = ]
+L ock
+O wner = ]
 'LockOwner'
 ]
 [ , [ @
-L
-ock
-T
-imeout = ]
-L
-ock
-T
-imeout ]
+L ock
+T imeout = ]
+L ock
+T imeout ]
 [ , [ @
-D
-b
-P
-rincipal = ]
+D b
+P rincipal = ]
 N
 'DbPrincipal'
 ]
@@ -97,39 +86,27 @@ N
 
 ### Example 1
 
-```sql
-sp_getapplock
-```
+`sp_getapplock`
 
 ### Example 2
 
-```sql
-sys.dm_tran_locks
-```
+`sys.dm_tran_locks`
 
 ### Example 3
 
-```sql
-sp_lock
-```
+`sp_lock`
 
 ### Example 4
 
-```sql
-Form1
-```
+`Form1`
 
 ### Example 5
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ### Example 6
 
-```sql
-dbo
-```
+`dbo`
 
 ### Example 7
 
@@ -195,8 +172,7 @@ GO
 BEGIN
 TRANSACTION
 ;
-EXECUTE
-sp_getapplock
+EXECUTE sp_getapplock
 @DbPrincipal =
 'dbo'
 ,

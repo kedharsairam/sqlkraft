@@ -16,8 +16,6 @@ failure.
 
 For more information on FUA support by Linux distribution and its effect on SQL Server, see
 
-SQL
-
 Server On Linux: Forced Unit Access (FUA) Internals
 
 .

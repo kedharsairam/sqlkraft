@@ -14,9 +14,7 @@ Returns the names of shared drives used by the clustered server. Transact-SQL sy
 
 ## Syntax
 
-```sql
-fn_servershareddrives
-```
+`fn_servershareddrives`
 
 ## Permissions
 
@@ -26,9 +24,7 @@ Article • 02/28/2023 Applies to: SQL Server Returns the names of shared drives
 
 ### Example 1
 
-```sql
-fn_servershareddrives
-```
+`fn_servershareddrives`
 
 ### Example 2
 

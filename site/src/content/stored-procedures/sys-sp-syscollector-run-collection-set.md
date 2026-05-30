@@ -14,6 +14,4 @@ Starts a collection set if the collector is already enabled, and the collection 
 
 ## Syntax
 
-```sql
-sp_syscollector_run_collection_set
-```
+`sp_syscollector_run_collection_set`

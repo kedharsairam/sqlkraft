@@ -72,11 +72,8 @@ result is True. Otherwise, it is False. For example, (1, 2, 3) = (3, 4) is True,
 
 appears in both sequences.
 
-
-
 Expand table
 
 ```sql
-declare @x xml
-set @x=''
+declare @x xml set @x=''
 ```

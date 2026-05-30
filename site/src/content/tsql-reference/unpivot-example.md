@@ -51,8 +51,6 @@ value_column
 
 , respectively, in the Transact-SQL definition. Here's the query.
 
-SQL
-
 When aggregate functions are used with
 
 , the presence of any null values in the
@@ -123,63 +121,36 @@ Last updated on 02/25/2026
 
 Related content
 
-```sql
-UNPIVOT
-```
+`UNPIVOT`
 
-```sql
-PIVOT
-```
+`PIVOT`
 
-```sql
-pvt
-```
+`pvt`
 
-```sql
-Emp1
-```
+`Emp1`
 
-```sql
-Emp2
-```
+`Emp2`
 
-```sql
-Emp3
-```
+`Emp3`
 
-```sql
-Emp4
-```
+`Emp4`
 
-```sql
-Emp5
-```
+`Emp5`
 
-```sql
-Emp1
-```
+`Emp1`
 
-```sql
-Emp2
-```
+`Emp2`
 
-```sql
-Employee
-```
+`Employee`
 
-```sql
-Orders
-```
+`Orders`
 
-```sql
-PIVOT
-```
+`PIVOT`
 
 ```sql
 -- Create the table and insert values as portrayed in the previous example.
 CREATE
-TABLE
-pvt (
+TABLE pvt (
 VendorID
 INT
 ,
@@ -200,102 +171,63 @@ INT
 );
 GO
 INSERT
-INTO
-pvt
-VALUES
-(1, 4, 3, 5, 4, 4);
+INTO pvt
+VALUES (1, 4, 3, 5, 4, 4);
 INSERT
-INTO
-pvt
-VALUES
-(2, 4, 1, 5, 5, 5);
+INTO pvt
+VALUES (2, 4, 1, 5, 5, 5);
 INSERT
-INTO
-pvt
-VALUES
-(3, 4, 3, 5, 4, 4);
+INTO pvt
+VALUES (3, 4, 3, 5, 4, 4);
 INSERT
-INTO
-pvt
-VALUES
-(4, 4, 2, 5, 5, 4);
+INTO pvt
+VALUES (4, 4, 2, 5, 5, 4);
 INSERT
-INTO
-pvt
-VALUES
-(5, 5, 1, 5, 5, 5);
+INTO pvt
+VALUES (5, 5, 1, 5, 5, 5);
 GO
 -- Unpivot the table.
 SELECT
 VendorID, Employee, Orders
-FROM
-(
+FROM (
 SELECT
 VendorID, Emp1, Emp2, Emp3, Emp4, Emp5
-FROM
-pvt
+FROM pvt
 ```
 
-```sql
-UNPIVOT
-```
+`UNPIVOT`
 
-```sql
-PIVOT
-```
+`PIVOT`
 
-```sql
-PIVOT
-```
+`PIVOT`
 
-```sql
-UNPIVOT
-```
+`UNPIVOT`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-UNPIVOT
-```
+`UNPIVOT`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-PIVOT
-```
+`PIVOT`
 
-```sql
-Sales.vSalesPersonSalesByFiscalYears
-```
+`Sales.vSalesPersonSalesByFiscalYears`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-PIVOT
-```
+`PIVOT`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ```sql
 ) p
-UNPIVOT
-(
+UNPIVOT (
 Orders
 FOR
 Employee
-IN
-(Emp1, Emp2, Emp3, Emp4, Emp5)
+IN (Emp1, Emp2, Emp3, Emp4, Emp5)
 )
-AS
-unpvt;
+AS unpvt;
 GO
 VendorID    Employee    Orders
 ----------- ----------- ------

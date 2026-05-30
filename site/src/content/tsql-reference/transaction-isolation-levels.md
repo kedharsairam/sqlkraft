@@ -87,26 +87,20 @@ No
 
 No
 
-
-
 Expand table
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
 ```sql
 READ
 COMMITTED
 ```
 
-```sql
-sp_help
-```
+`sp_help`
 
 ```sql
 READ UNCOMMITTED
@@ -124,6 +118,4 @@ REPEATABLE READ
 SNAPSHOT ISOLATION
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`

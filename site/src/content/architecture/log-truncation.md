@@ -102,14 +102,8 @@ For more information about transaction log size management, see
 
 .
 
-```sql
-FILEGROWTH
-```
+`FILEGROWTH`
 
-```sql
-FILEGROWTH
-```
+`FILEGROWTH`
 
-```sql
-FILEGROWTH
-```
+`FILEGROWTH`

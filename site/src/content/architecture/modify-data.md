@@ -69,8 +69,6 @@ columns
 
 because the system generates values for these columns automatically.
 
-SQL
-
 If you do specify the
 
 columns in the column list in your
@@ -80,8 +78,6 @@ statement, then you
 need to specify
 
 as their value.
-
-SQL
 
 ```sql
 PERIOD
@@ -103,8 +99,7 @@ INTO
 [ManagerID],
 [ParentDeptID]
 )
-VALUES
-(10,
+VALUES (10,
 'Marketing'
 , 101, 1);
 INSERT

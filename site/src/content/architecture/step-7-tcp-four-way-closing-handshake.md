@@ -42,25 +42,15 @@ Connect to the Database Engine
 
 Configure SQL Server to listen on a specific TCP port
 
-```sql
-FIN
-```
+`FIN`
 
-```sql
-ACK
-```
+`ACK`
 
-```sql
-FIN
-```
+`FIN`
 
-```sql
-ACK
-```
+`ACK`
 
-```sql
-FIN
-```
+`FIN`
 
 ```sql
 (0x71000001), SPID = 96, PacketID = 1, Flags=...AP..., SrcPort=1433, Ds

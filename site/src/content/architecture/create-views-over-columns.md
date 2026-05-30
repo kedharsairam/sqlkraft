@@ -47,11 +47,7 @@ data
 
 type.
 
-SQL
-
 Execute the following query against the view:
-
-SQL
 
 This is the result:
 
@@ -70,8 +66,7 @@ based on an
 data type method. However, it can be cast to an XML schema collection
 
 ```sql
-xml
-value()
+xml value()
 -- Create the table.
 CREATE
 TABLE
@@ -89,8 +84,7 @@ GO
 INSERT
 INTO
 T
-VALUES
-(1,
+VALUES (1,
 '<ProductDescription ProductID="1" ProductName="SomeName"
 />'
 );

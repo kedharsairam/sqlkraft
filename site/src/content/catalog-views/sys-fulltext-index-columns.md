@@ -31,14 +31,11 @@ Contains a row for each column that is part of a full-text index. ID of the obje
 USE
 AdventureWorks2025;
 GO
-SELECT
-object_id,
+SELECT object_id,
 property_list_id,
 stoplist_id
-FROM
-sys.fulltext_indexes
-WHERE
-object_id = object_id(
+FROM sys.fulltext_indexes
+WHERE object_id = object_id(
 'HumanResources.JobCandidate'
 );
 ```
@@ -55,14 +52,11 @@ Article • 02/28/2023 Applies to: SQL Server Azure SQL Database Azure SQL Manag
 USE
 AdventureWorks2025;
 GO
-SELECT
-object_id,
+SELECT object_id,
 property_list_id,
 stoplist_id
-FROM
-sys.fulltext_indexes
-WHERE
-object_id = object_id(
+FROM sys.fulltext_indexes
+WHERE object_id = object_id(
 'HumanResources.JobCandidate'
 );
 ```

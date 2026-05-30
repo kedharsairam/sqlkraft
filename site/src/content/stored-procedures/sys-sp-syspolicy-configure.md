@@ -14,6 +14,4 @@ Configures settings for Policy-Based Management, such as whether Policy-Based Ma
 
 ## Syntax
 
-```sql
-HistoryRetentionInDays
-```
+`HistoryRetentionInDays`

@@ -130,8 +130,6 @@ exclusive (
 
 ) locks. We leave the transaction open.
 
-SQL
-
 Now, in
 
 , run the following batch. This code doesn't explicitly begin a transaction.
@@ -151,8 +149,6 @@ in the
 table. The query joins to other tables, including the
 
 table.
-
-SQL
 
 To complete this update,
 
@@ -178,35 +174,21 @@ statement. This statement executes as a part of
 
 the previously open transaction.
 
-SQL
+`SERIALIZABLE`
 
-```sql
-SERIALIZABLE
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
-
-```sql
-ON
-```
+`ON`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-AdventureWorksLT2019
-```
+`AdventureWorksLT2019`
 
 ```sql
 READ COMMITTED
@@ -216,53 +198,35 @@ READ COMMITTED
 READ COMMITTED
 ```
 
-```sql
-AdventureWorksLT2019
-```
+`AdventureWorksLT2019`
 
-```sql
-SalesLT.Product
-```
+`SalesLT.Product`
 
-```sql
-SalesLT.Product
-```
+`SalesLT.Product`
 
 ```sql
 X
 ```
 
-```sql
-SalesLT.ProductDescription
-```
+`SalesLT.ProductDescription`
 
 ```sql
 U
 ```
 
-```sql
-SalesLT.ProductDescription
-```
+`SalesLT.ProductDescription`
 
-```sql
-SalesLT.Product
-```
+`SalesLT.Product`
 
 ```sql
 S
 ```
 
-```sql
-SalesLT.Product
-```
+`SalesLT.Product`
 
-```sql
-SalesLT.Product
-```
+`SalesLT.Product`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 BEGIN
@@ -282,31 +246,23 @@ SET
 Description = Description
 FROM
 SalesLT.ProductDescription
-AS
-pd
+AS pd
 INNER
 JOIN
 SalesLT.ProductModelProductDescription
-AS
-pmpd
-ON
-pd.ProductDescriptionID = pmpd.ProductDescriptionID
+AS pmpd
+ON pd.ProductDescriptionID = pmpd.ProductDescriptionID
 INNER
 JOIN
 SalesLT.ProductModel
-AS
-pm
-ON
-pmpd.ProductModelID = pm.ProductModelID
+AS pm
+ON pmpd.ProductModelID = pm.ProductModelID
 INNER
 JOIN
 SalesLT.Product
-AS
-p
-ON
-pm.ProductModelID = p.ProductModelID
-WHERE
-p.Color =
+AS p
+ON pm.ProductModelID = p.ProductModelID
+WHERE p.Color =
 'Silver'
 ;
 UPDATE

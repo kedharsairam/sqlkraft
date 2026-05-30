@@ -14,8 +14,6 @@ can still
 
 benefit from optimized locking.
 
-SQL
-
 In the previous query example, only table
 
 uses the
@@ -40,95 +38,61 @@ enabled on any user database that has accelerated database recovery enabled.
 
 AUTD
 
-```sql
-t6
-```
+`t6`
 
-```sql
-t5
-```
+`t5`
 
-```sql
-t5
-```
+`t5`
 
 ```sql
 REPEATABLE READ
 ```
 
-```sql
-t5
-```
+`t5`
 
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
 ```sql
 CREATE
-TABLE
-t5
-(
-a
-int
+TABLE t5 (
+a int
 NOT
 NULL
 ,
-b
-int
+b int
 NOT
 NULL
 );
 CREATE
-TABLE
-t6
-(
-a
-int
+TABLE t6 (
+a int
 NOT
 NULL
 ,
-b
-int
+b int
 NOT
 NULL
 );
 GO
 INSERT
-INTO
-t5
-VALUES
-(1,10),(2,20),(3,30);
+INTO t5
+VALUES (1,10),(2,20),(3,30);
 INSERT
-INTO
-t6
-VALUES
-(1,10),(2,20),(3,30);
+INTO t6
+VALUES (1,10),(2,20),(3,30);
 GO
-UPDATE
-t5
-SET
-t5.b = t6.b
-FROM
-t5
+UPDATE t5
+SET t5.b = t6.b
+FROM t5
 INNER
-JOIN
-t6
-WITH
-(UPDLOCK)
-ON
-t5.a = t6.a;
-UPDATE
-t5
-SET
-t5.b = t6.b
-FROM
-t5
-WITH
-(REPEATABLEREAD)
+JOIN t6
+WITH (UPDLOCK)
+ON t5.a = t6.a;
+UPDATE t5
+SET t5.b = t6.b
+FROM t5
+WITH (REPEATABLEREAD)
 INNER
-JOIN
-t6
-ON
-t5.a = t6.a;
+JOIN t6
+ON t5.a = t6.a;
 ```

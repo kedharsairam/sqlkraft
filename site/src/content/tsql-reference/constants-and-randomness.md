@@ -71,21 +71,11 @@ RAND
 
 ## Returns a pseudo-random float between 0 and 1.
 
-
+Expand table
 
 Expand table
 
-
-
 Expand table
-
-
-
-Expand table
-
-### float
-
-### float
 
 ```sql
 π

@@ -124,8 +124,7 @@ Expand table
 ```sql
 ONLINE
 OFFLINE
-SUSPECT
-state_desc
+SUSPECT state_desc
 ONLINE
 OFFLINE
 RESTORING

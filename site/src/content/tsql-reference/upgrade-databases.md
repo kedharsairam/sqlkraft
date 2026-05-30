@@ -99,22 +99,6 @@ If a database upgrade detects a user assembly with conflicting name, it automati
 
 that assembly and put the database into suspect mode.
 
-### hierarchyid
-
-### hierarchyid
-
-### hierarchyid
-
-### hierarchyid
-
-### hierarchyid
-
-### hierarchyid
-
-### hierarchyid
-
-### hierarchyid
-
 ```sql
 /
 /1/

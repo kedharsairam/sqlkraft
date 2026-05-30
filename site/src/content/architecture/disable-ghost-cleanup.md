@@ -50,8 +50,6 @@ database. It retries lock acquisition on the database the next time it runs.
 
 The following query returns an approximate number of ghosted rows in a database.
 
-SQL
-
 In high-load systems with many deletes, the ghost cleanup process might reduce performance
 
 if it replaces many of the frequently accessed pages in the buffer pool with other pages that
@@ -104,15 +102,11 @@ Related content
 
 ```sql
 SELECT
-SUM
-(ghost_record_count)
-AS
-total_ghost_records,
+SUM (ghost_record_count)
+AS total_ghost_records,
 DB_NAME(database_id)
-AS
-database_name
-FROM
-sys.dm_db_index_physical_stats(
+AS database_name
+FROM sys.dm_db_index_physical_stats(
 NULL
 ,
 NULL
@@ -124,11 +118,9 @@ NULL
 'SAMPLED'
 )
 GROUP
-BY
-database_id
+BY database_id
 ORDER
-BY
-total_ghost_records
+BY total_ghost_records
 DESC
 ;
 ```

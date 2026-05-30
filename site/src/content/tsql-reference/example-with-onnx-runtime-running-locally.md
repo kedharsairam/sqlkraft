@@ -15,8 +15,6 @@ type using the OpenAI
 
 and HTTP header based credentials for authentication.
 
-SQL
-
 ONNX Runtime
 
 is an open-source inference engine that allows you to run machine learning
@@ -81,11 +79,7 @@ Run the following Transact-SQL (T-SQL) command to enable SQL Server 2025 (17.x) 
 
 features in the database you would like use for this example:
 
-SQL
-
 Enable external AI runtimes by running the following T-SQL query:
-
-SQL
 
 Ｕ
 
@@ -193,8 +187,6 @@ Runtime directory:
 
 Run the following query to register your ONNX model as an external model object:
 
-SQL
-
 should point to the directory containing
 
 and
@@ -217,8 +209,6 @@ Use the
 
 function to test the model by running the following query:
 
-SQL
-
 This command launches the
 
 , load the required DLLs, and processes the input
@@ -229,19 +219,13 @@ The result from the previous query is an array of embeddings:
 
 Run the following query to enable system logging for troubleshooting.
 
-SQL
-
 Next, use this query see the captured system logs:
-
-SQL
 
 #### PowerShell
 
 ## Clean up
 
 To remove the external model object, run the following T-SQL statement:
-
-SQL
 
 To remove the directory permissions, run the following PowerShell commands:
 
@@ -277,13 +261,9 @@ Learn more
 
 Last updated on 04/07/2026
 
-```sql
-EMBEDDINGS
-```
+`EMBEDDINGS`
 
-```sql
-API_FORMAT
-```
+`API_FORMAT`
 
 ```sql
 CREATE
@@ -291,8 +271,7 @@ EXTERNAL
 MODEL
 MyOllamaModel
 AUTHORIZATION AI_User
-WITH
-(
+WITH (
 LOCATION =
 'https://localhost:11435/api/embed'
 ,
@@ -325,8 +304,7 @@ EXTERNAL
 MODEL
 MyAzureOpenAIModel
 AUTHORIZATION CRM_User
-WITH
-(
+WITH (
 LOCATION =
 'https://api.openai.com/v1/embeddings'
 ,
@@ -342,9 +320,7 @@ CREDENTIAL = [https://openai.com]
 );
 ```
 
-```sql
-AI_GENERATE_EMBEDDINGS
-```
+`AI_GENERATE_EMBEDDINGS`
 
 ```sql
 ALTER
@@ -357,8 +333,7 @@ ON
 ```
 
 ```sql
-EXECUTE
-sp_configure
+EXECUTE sp_configure
 'external AI runtimes enabled'
 , 1;
 RECONFIGURE
@@ -370,9 +345,7 @@ OVERRIDE;
 C:\onnx_runtime
 ```
 
-```sql
-onnxruntime.dll
-```
+`onnxruntime.dll`
 
 ```sql
 C:\onnx_runtime
@@ -382,9 +355,7 @@ C:\onnx_runtime
 C:\onnx_runtime
 ```
 
-```sql
-model
-```
+`model`
 
 ```sql
 C:\onnx_runtime\
@@ -404,37 +375,23 @@ mkdir onnx_runtime
 ```
 
 ```sql
-cd C:\onnx_runtime
-mkdir model
+cd C:\onnx_runtime mkdir model
 ```
 
-```sql
-LOCATION
-```
+`LOCATION`
+
+`model.onnx`
+
+`tokenizer.json`
+
+`LOCAL_RUNTIME_PATH`
+
+`onnxruntime.dll`
+
+`tokenizer_cpp.dll`
 
 ```sql
-model.onnx
-```
-
-```sql
-tokenizer.json
-```
-
-```sql
-LOCAL_RUNTIME_PATH
-```
-
-```sql
-onnxruntime.dll
-```
-
-```sql
-tokenizer_cpp.dll
-```
-
-```sql
-cd C:\onnx_runtime\model
-git clone https://huggingface.co/nsense/all-MiniLM-L6-v2-onnx
+cd C:\onnx_runtime\model git clone https://huggingface.co/nsense/all-MiniLM-L6-v2-onnx
 ```
 
 ```sql
@@ -469,10 +426,8 @@ $Acl
 ```sql
 CREATE
 EXTERNAL
-MODEL
-myLocalOnnxModel
-WITH
-(
+MODEL myLocalOnnxModel
+WITH (
 LOCATION =
 'C:\onnx_runtime\model\all-MiniLM-L6-v2-onnx'
 ,
@@ -493,21 +448,16 @@ LOCAL_RUNTIME_PATH =
 );
 ```
 
-```sql
-ai_generate_embeddings
-```
+`ai_generate_embeddings`
 
-```sql
-AIRuntimeHost
-```
+`AIRuntimeHost`
 
 ```sql
 SELECT
 AI_GENERATE_EMBEDDINGS(N
 'Test Text'
 USE
-MODEL
-myLocalOnnxModel);
+MODEL myLocalOnnxModel);
 [0.320098,0.568766,0.154386,0.205526,-0.027379,-0.149689,-0.022946,-0.385856,-0.039
 183...]
 ```
@@ -515,21 +465,16 @@ myLocalOnnxModel);
 ```sql
 CREATE
 EVENT
-SESSION
-newevt
+SESSION newevt
 ON
 SERVER
 ADD
-EVENT
-ai_generate_embeddings_airuntime_trace
-(
-ACTION
-(sqlserver.sql_text, sqlserver.session_id)
+EVENT ai_generate_embeddings_airuntime_trace (
+ACTION (sqlserver.sql_text, sqlserver.session_id)
 )
 ADD
 TARGET package0.ring_buffer
-WITH
-(
+WITH (
 MAX_MEMORY = 4096 KB,
 EVENT_RETENTION_MODE = ALLOW_SINGLE_EVENT_LOSS,
 MAX_DISPATCH_LATENCY = 30
@@ -544,8 +489,7 @@ OFF
 GO
 ALTER
 EVENT
-SESSION
-newevt
+SESSION newevt
 ON
 SERVER
 STATE =
@@ -559,14 +503,12 @@ C:/onnx_runtime
 ```
 
 ```sql
-SELECT
-event_data.value(
+SELECT event_data.value(
 '(@name)[1]'
 ,
 'varchar(100)'
 )
-AS
-event_name,
+AS event_name,
 event_data.value(
 '(@timestamp)[1]'
 ,
@@ -581,69 +523,52 @@ event_data.value(
 ,
 'nvarchar(200)'
 )
-AS
-model_name,
+AS model_name,
 event_data.value(
 '(data[@name = "phase_name"]/value)[1]'
 ,
 'nvarchar(100)'
 )
-AS
-phase,
+AS phase,
 event_data.value(
 '(data[@name = "message"]/value)[1]'
 ,
 'nvarchar(max)'
 )
-AS
-message,
+AS message,
 event_data.value(
 '(data[@name = "request_id"]/value)[1]'
 ,
 'nvarchar(max)'
 )
-AS
-session_id,
+AS session_id,
 event_data.value(
 '(data[@name = "error_code"]/value)[1]'
 ,
 'bigint'
 )
-AS
-error_code
-FROM
-(
+AS error_code
+FROM (
 SELECT
-CAST
-(target_data
+CAST (target_data
 AS
 XML
 )
-AS
-target_data
-FROM
-sys.dm_xe_sessions
-AS
-s
+AS target_data
+FROM sys.dm_xe_sessions
+AS s
 INNER
-JOIN
-sys.dm_xe_session_targets
-AS
-t
-ON
-s.address = t.event_session_address
-WHERE
-s.name =
+JOIN sys.dm_xe_session_targets
+AS t
+ON s.address = t.event_session_address
+WHERE s.name =
 'newevt'
-AND
-t.target_name =
+AND t.target_name =
 'ring_buffer'
 )
-AS
-data
+AS data
 CROSS
-APPLY
-target_data.nodes(
+APPLY target_data.nodes(
 '//RingBufferTarget/event'
 )
 AS
@@ -653,8 +578,7 @@ XEvent(event_data);
 ```sql
 DROP
 EXTERNAL
-MODEL
-myLocalOnnxModel;
+MODEL myLocalOnnxModel;
 $Acl.RemoveAccessRule($AccessRule)
 Set-Acl
 -Path

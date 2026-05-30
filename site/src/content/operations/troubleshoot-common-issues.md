@@ -69,6 +69,5 @@ You can provide feedback about your migration experience
 
 ```cmd
 To enable migration and monitoring capabilities,
-please update your Azure Arc agent extension "WindowsAgentSQLServer" to the latest
-version.
+please update your Azure Arc agent extension "WindowsAgentSQLServer" to the latest version.
 ```

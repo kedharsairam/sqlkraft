@@ -14,6 +14,4 @@ SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Enabl
 
 ## Syntax
 
-```sql
-sp_query_store_force_plan
-```
+`sp_query_store_force_plan`

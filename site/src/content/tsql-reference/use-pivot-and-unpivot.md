@@ -149,13 +149,9 @@ output_column
 
 function is COUNT and the subgroup is empty, zero (0) is returned.
 
-```sql
-TVF(left_table_source.row)
-```
+`TVF(left_table_source.row)`
 
-```sql
-TVF
-```
+`TVF`
 
 ```sql
 pivot_column = CONVERT(<data type of pivot_column>, 'output_column')

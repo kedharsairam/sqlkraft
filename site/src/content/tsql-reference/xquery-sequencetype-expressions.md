@@ -105,12 +105,10 @@ XQuery operator.
 ```sql
 instance of
 Occurrence indicator
-Expression
-instance of
+Expression instance of
 Expression
 SequenceType
-Expression
-sequence of
+Expression sequence of
 Expression
 Type
 Expression

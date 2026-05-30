@@ -14,9 +14,7 @@ The one-part or two-part name of a schema-scoped securable to be moved into the 
 
 ## Syntax
 
-```sql
-uses_quoted_identifier
-```
+`uses_quoted_identifier`
 
 ## Permissions
 
@@ -98,21 +96,16 @@ move these object types. Instead, drop and re-create the object in its new schem
 
 ### Example 1
 
-```sql
-sys.sql_modules
-```
+`sys.sql_modules`
 
 ### Example 2
 
-```sql
-sp_rename
-```
+`sp_rename`
 
 ### Example 3
 
 ```sql
-SELECT
-sm.object_id,
+SELECT sm.object_id,
 ss.[
 name
 ]
@@ -123,34 +116,24 @@ schema
 o.[
 name
 ]
-AS
-object_name,
+AS object_name,
 o.[
 type
 ],
 o.[type_desc],
 sm.[definition]
-FROM
-sys.sql_modules
-AS
-sm
+FROM sys.sql_modules
+AS sm
 INNER
-JOIN
-sys.objects
-AS
-o
-ON
-sm.object_id = o.object_id
+JOIN sys.objects
+AS o
+ON sm.object_id = o.object_id
 INNER
-JOIN
-sys.schemas
-AS
-ss
-ON
-o.schema_id = ss.schema_id
+JOIN sys.schemas
+AS ss
+ON o.schema_id = ss.schema_id
 ORDER
-BY
-o.[
+BY o.[
 type
 ], ss.[
 name
@@ -161,50 +144,36 @@ name
 
 ### Example 4
 
-```sql
-sys.objects
-```
+`sys.objects`
 
 ### Example 5
 
-```sql
-sys.sql_modules
-```
+`sys.sql_modules`
 
 ### Example 6
 
-```sql
-CONTROL
-```
+`CONTROL`
 
 ### Example 7
 
-```sql
-ALTER
-```
+`ALTER`
 
 ### Example 8
 
-```sql
-dbo.uspMyProc
-```
+`dbo.uspMyProc`
 
 ### Example 9
 
-```sql
-dbo.uspMyProc
-```
+`dbo.uspMyProc`
 
 ### Example 10
 
 ```sql
 DROP
-PROCEDURE
-dbo.uspMyProc;
+PROCEDURE dbo.uspMyProc;
 GO
 DROP
-PROCEDURE
-dbo.uspGetSalesbyMonth,
+PROCEDURE dbo.uspGetSalesbyMonth,
 dbo.uspUpdateSalesQuotes,
 dbo.uspGetSalesByYear;
 ```

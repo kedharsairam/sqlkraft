@@ -14,9 +14,7 @@ Closes the current SQL Server Agent error log file and cycles the SQL Server Age
 
 ## Syntax
 
-```sql
-sp_cycle_agent_errorlog
-```
+`sp_cycle_agent_errorlog`
 
 ## Remarks
 
@@ -46,17 +44,13 @@ This stored procedure must be run from the
 
 ### Example 1
 
-```sql
-sp_cycle_agent_errorlog
-```
+`sp_cycle_agent_errorlog`
 
 ### Example 2
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_cycle_agent_errorlog;
+EXECUTE dbo.sp_cycle_agent_errorlog;
 GO
 ```

@@ -14,9 +14,7 @@ Analytics Platform System (PDW) Returns one row for every SQL Server authenticat
 
 ## Syntax
 
-```sql
-sys.server_principals
-```
+`sys.server_principals`
 
 ## Permissions
 

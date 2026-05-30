@@ -8,9 +8,7 @@ pubDate: 2025-03-15
 ---
 
 ```sql
-create database databasesnapshotname
-on ( name = logicalfilenameofsourcedatabasemdffile,
-filename = 'path(snapshotpath)\filename(snapshotphysicalfilename).ss')
-as snapshot of sourcedatabasename;
+create database databasesnapshotname on ( name = logicalfilenameofsourcedatabasemdffile,
+filename = 'path(snapshotpath)\filename(snapshotphysicalfilename).ss') as snapshot of sourcedatabasename;
 go
 ```

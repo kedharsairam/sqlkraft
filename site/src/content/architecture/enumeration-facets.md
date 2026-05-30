@@ -41,8 +41,6 @@ mixed-case value. It would also be rejected because this value violates the patt
 
 limits values to only lowercase letters.
 
-SQL
-
 Requirements and Limitations for XML Schema Collections on the Server
 
 Last updated on 11/18/2025

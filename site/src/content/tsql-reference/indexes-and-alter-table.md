@@ -91,12 +91,6 @@ tables.
 
 isn't valid for columnstore indexes.
 
-### ntext
-
-### ntext
-
-### ntext
-
 ```sql
 ALTER TABLE
 ```

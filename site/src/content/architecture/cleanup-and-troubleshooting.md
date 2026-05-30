@@ -79,24 +79,14 @@ in the column
 
 cleanup is failing due to table level cleanup errors.
 
-SQL
-
 ```sql
-syscommittab
-change_tracking
-change_tracking_12345
-syscommittab
-dbo.MSChange_tracking_history
-CHANGETABLE
-cleanup errors
-comments
+syscommittab change_tracking change_tracking_12345 syscommittab dbo.MSChange_tracking_history
+CHANGETABLE cleanup errors comments
 SELECT
 TOP 1000 *
-FROM
-dbo.MSChange_tracking_history
+FROM dbo.MSChange_tracking_history
 ORDER
-BY
-start_time
+BY start_time
 DESC
 ;
 ```

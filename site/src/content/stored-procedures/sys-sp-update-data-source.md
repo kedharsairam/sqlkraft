@@ -14,6 +14,4 @@ Updates an existing row or inserts a new row in the management data warehouse ta
 
 ## Syntax
 
-```sql
-core.source_info_internal
-```
+`core.source_info_internal`

@@ -14,9 +14,7 @@ Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Conta
 
 ## Syntax
 
-```sql
-sys.partition_schemes
-```
+`sys.partition_schemes`
 
 ## Permissions
 

@@ -64,10 +64,8 @@ N
 'nullable'
 ]
 [ , [ @
-ODBCV
-er = ]
-ODBCV
-er ]
+ODBCV er = ]
+ODBCV er ]
 [ ; ]
 ```
 
@@ -75,33 +73,23 @@ er ]
 
 ### Example 1
 
-```sql
-sp_special_columns
-```
+`sp_special_columns`
 
 ### Example 2
 
-```sql
-SQLSpecialColumns
-```
+`SQLSpecialColumns`
 
 ### Example 3
 
-```sql
-SCOPE
-```
+`SCOPE`
 
 ### Example 4
 
-```sql
-SELECT
-```
+`SELECT`
 
 ### Example 5
 
-```sql
-HumanResources.Department
-```
+`HumanResources.Department`
 
 ### Example 6
 
@@ -109,8 +97,7 @@ HumanResources.Department
 USE
 AdventureWorks2022;
 GO
-EXECUTE
-sp_special_columns
+EXECUTE sp_special_columns
 @table_name =
 'Department'
 ,

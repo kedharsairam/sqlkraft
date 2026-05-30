@@ -14,29 +14,22 @@ The Semantic Language Statistics database contains language-related statistics t
 
 ## Syntax
 
-```sql
-sp_fulltext_semantic_register_language_statistics_db
-```
+`sp_fulltext_semantic_register_language_statistics_db`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sp_fulltext_semantic_register_language_statistics_db
-```
+`sp_fulltext_semantic_register_language_statistics_db`
 
 ### Example 2
 
-```sql
-sp_fulltext_semantic_register_language_statistics_db
-```
+`sp_fulltext_semantic_register_language_statistics_db`
 
 ### Example 3
 
 ```sql
-EXECUTE
-sp_fulltext_semantic_register_language_statistics_db @dbname =
+EXECUTE sp_fulltext_semantic_register_language_statistics_db @dbname =
 'semanticsDb'
 ;
 GO

@@ -105,27 +105,19 @@ N
 
 ### Example 1
 
-```sql
-sp_add_alert
-```
+`sp_add_alert`
 
 ### Example 2
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 3
 
-```sql
-sys.messages
-```
+`sys.messages`
 
 ### Example 4
 
-```sql
-RAISERROR
-```
+`RAISERROR`
 
 ### Example 5
 
@@ -135,32 +127,22 @@ WITH LOG
 
 ### Example 6
 
-```sql
-sys.messages
-```
+`sys.messages`
 
 ### Example 7
 
-```sql
-sp_altermessage
-```
+`sp_altermessage`
 
 ### Example 8
 
-```sql
-xp_logevent
-```
+`xp_logevent`
 
 ### Example 9
 
-```sql
-xp_logevent
-```
+`xp_logevent`
 
 ### Example 10
 
-```sql
-master
-```
+`master`
 
 _(... and 9 more examples)_

@@ -50,8 +50,7 @@ required buffer size in characters, including any trailing nulls.
 ```sql
 msoledbsql.h
 HRESULT
-LocalDBStartInstance
-(
+LocalDBStartInstance (
 PCWSTR pInstanceName ,
 DWORD dwFlags ,
 LPWSTR wszSqlConnection ,

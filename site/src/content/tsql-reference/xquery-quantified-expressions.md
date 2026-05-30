@@ -63,15 +63,12 @@ For example, the following query checks every <Location> element to see whether 
 LocationID attribute.
 
 ```sql
-satisfies
-( some | every ) <variable> in <Expression> (,...) satisfies <Expression>
+satisfies ( some | every ) <variable> in <Expression> (,...) satisfies <Expression>
 SELECT Instructions.query('
 declare namespace
 AWMI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelManuInstructions";
-if (every $WC in //AWMI:root/AWMI:Location
-satisfies $WC/@LocationID)
-then
+if (every $WC in //AWMI:root/AWMI:Location satisfies $WC/@LocationID) then
 <Result>All work centers have workcenterLocation ID</Result>
 else
 <Result>Not all work centers have workcenterLocation ID</Result>

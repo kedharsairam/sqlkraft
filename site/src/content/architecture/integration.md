@@ -118,13 +118,9 @@ For more information about using the new .NET with SQL Server Language Extension
 .
 
 ```sql
-PERMISSION_SET = SAFE
-sp_configure
-clr strict security
+PERMISSION_SET = SAFE sp_configure clr strict security
 SAFE
 EXTERNAL_ACCESS
-UNSAFE
-clr strict security
-UNSAFE ASSEMBLY
-master
+UNSAFE clr strict security
+UNSAFE ASSEMBLY master
 ```

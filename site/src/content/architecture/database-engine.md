@@ -6,8 +6,6 @@ tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 Starting with SQL Server 2005 (9.x), the Database Engine offers an implementation of an existing
 
 transaction isolation level,
@@ -188,133 +186,79 @@ store.
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-inserted
-```
+`inserted`
 
-```sql
-deleted
-```
+`deleted`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-ONLINE
-```
+`ONLINE`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 BEGIN
 TRANSACTION
 ;
-SELECT
-col1
+SELECT col1
 FROM
 TestTable
-WITH
-(TABLOCKX, HOLDLOCK);
+WITH (TABLOCKX, HOLDLOCK);
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 BEGIN TRANSACTION
@@ -324,14 +268,8 @@ BEGIN TRANSACTION
 BEGIN TRANSACTION
 ```
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`

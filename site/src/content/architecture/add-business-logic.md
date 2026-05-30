@@ -76,14 +76,10 @@ the transformed XML in the result. Following is a skeleton function that is writ
 C#
 
 ```sql
-TransformXml()
-public
-static
+TransformXml() public static
 SqlXml
-TransformXml
-(SqlXml XmlData,
-string
-xslPath) {
+TransformXml (SqlXml XmlData,
+string xslPath) {
 // Load XSL transformation
 XslCompiledTransform xform =
 new

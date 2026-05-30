@@ -14,6 +14,4 @@ These statistics are useful for understanding and tuning the bucket counts for .
 
 ## Syntax
 
-```sql
-sys.dm_db_xtp_hash_index_stats
-```
+`sys.dm_db_xtp_hash_index_stats`

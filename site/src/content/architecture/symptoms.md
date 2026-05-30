@@ -102,8 +102,6 @@ Extended Events overview
 
 .
 
-SQL
-
 By analyzing the output, we can see the call stacks for the most common code paths for the
 
 spins. The script was run a couple of different times during the time when CPU
@@ -142,50 +140,29 @@ XML
 
 ### Fully Qualified Names:
 
-```sql
-sys.dm_os_spinlock_stats
-```
+`sys.dm_os_spinlock_stats`
 
-```sql
-SOS_CACHESTORE
-```
+`SOS_CACHESTORE`
 
-```sql
-SOS_CACHESTORE
-```
+`SOS_CACHESTORE`
 
-```sql
-SOS_SUSPEND_QUEUE
-```
+`SOS_SUSPEND_QUEUE`
 
-```sql
-LOCK_HASH
-```
+`LOCK_HASH`
 
-```sql
-MUTEX
-```
+`MUTEX`
 
-```sql
-SOS_SCHEDULER
-```
+`SOS_SCHEDULER`
 
-```sql
-sys.dm_os_spinlock_stats
-```
+`sys.dm_os_spinlock_stats`
 
 ```sql
 /*
 This script is provided "AS IS" with no warranties, and confers no rights.
-This script will monitor for backoff events over a given period of time and
-capture the code paths (callstacks) for those.
---Find the spinlock types
-select map_value, map_key, name from sys.dm_xe_map_values
-where name = 'spinlock_types'
+This script will monitor for backoff events over a given period of time and capture the code paths (callstacks) for those.
+--Find the spinlock types select map_value, map_key, name from sys.dm_xe_map_values where name = 'spinlock_types'
 order by map_value asc
---Example: Get the type value for any given spinlock type
-select map_value, map_key, name from sys.dm_xe_map_values
-where map_value IN ('SOS_CACHESTORE', 'LOCK_HASH', 'MUTEX')
+--Example: Get the type value for any given spinlock type select map_value, map_key, name from sys.dm_xe_map_values where map_value IN ('SOS_CACHESTORE', 'LOCK_HASH', 'MUTEX')
 Examples:
 61LOCK_HASH
 144 SOS_CACHESTORE
@@ -196,24 +173,18 @@ Examples:
 us/library/bb630354.aspx
 ```
 
-```sql
-SOS_CACHESTORE
-```
+`SOS_CACHESTORE`
 
 ```sql
 CREATE
 EVENT
-SESSION
-spin_lock_backoff
+SESSION spin_lock_backoff
 ON
 SERVER
 ADD
-EVENT
-sqlos.spinlock_backoff (
-ACTION
-(package0.callstack)
-WHERE
-type
+EVENT sqlos.spinlock_backoff (
+ACTION (package0.callstack)
+WHERE type
 = 61
 --LOCK_HASH
 OR
@@ -227,8 +198,7 @@ TYPE
 )
 ADD
 TARGET package0.asynchronous_bucketizer (
-SET
-filtering_event_name =
+SET filtering_event_name =
 'sqlos.spinlock_backoff'
 ,
 source_type = 1,
@@ -236,26 +206,22 @@ source
 =
 'package0.callstack'
 )
-WITH
-(
+WITH (
 MAX_MEMORY = 50 MB,
 MEMORY_PARTITION_MODE = PER_NODE
 );
 --Ensure the session was created
 SELECT
 *
-FROM
-sys.dm_xe_sessions
-WHERE
-name
+FROM sys.dm_xe_sessions
+WHERE name
 =
 'spin_lock_backoff'
 ;
 --Run this section to measure the contention
 ALTER
 EVENT
-SESSION
-spin_lock_backoff
+SESSION spin_lock_backoff
 ON
 SERVER
 STATE =
@@ -268,31 +234,24 @@ WAITFOR DELAY '00:01:00';
 --2. Enable this trace flag to turn on symbol resolution
 DBCC TRACEON (3656, -1);
 --Get the callstacks from the bucketizer target
-SELECT
-event_session_address,
+SELECT event_session_address,
 target_name,
 execution_count,
-cast
-(target_data
+cast (target_data
 AS
 XML
 )
-FROM
-sys.dm_xe_session_targets xst
+FROM sys.dm_xe_session_targets xst
 INNER
-JOIN
-sys.dm_xe_sessions xs
-ON
-(xst.event_session_address = xs.address)
-WHERE
-xs.name =
+JOIN sys.dm_xe_sessions xs
+ON (xst.event_session_address = xs.address)
+WHERE xs.name =
 'spin_lock_backoff'
 ;
 --clean up the session
 ALTER
 EVENT
-SESSION
-spin_lock_backoff
+SESSION spin_lock_backoff
 ON
 SERVER
 STATE =
@@ -300,24 +259,21 @@ STOP
 ;
 DROP
 EVENT
-SESSION
-spin_lock_backoff
+SESSION spin_lock_backoff
 ON
 SERVER
 ;
 ```
 
 ```sql
-<BucketizerTarget
-truncated
+<BucketizerTarget truncated
 =
 "0"
 buckets
 =
 "256"
 >
-<Slot
-count
+<Slot count
 =
 "35668"
 trunc
@@ -345,8 +301,7 @@ ISECTmpEntryStore::Get
 NTGroupInfo::`vector deleting destructor'
 </value>
 </Slot>
-<Slot
-count
+<Slot count
 =
 "752"
 trunc
@@ -377,16 +332,14 @@ ISECTmpEntryStore::Get
 ISECTmpEntryStore::Get
 </value>
 </Slot>
-<BucketizerTarget
-truncated
+<BucketizerTarget truncated
 =
 "0"
 buckets
 =
 "256"
 >
-<Slot
-count
+<Slot count
 =
 "8506"
 trunc
@@ -413,8 +366,7 @@ ISECTmpEntryStore::Get
 NTGroupInfo::`vector deleting destructor'
 </value>
 </Slot>
-<Slot
-count
+<Slot count
 =
 "190"
 trunc

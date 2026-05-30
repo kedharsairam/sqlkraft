@@ -68,11 +68,9 @@ must have a value; both can't be
 ### Example 1
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_syscollector_delete_collector_type @collector_type_uid =
+EXECUTE sp_syscollector_delete_collector_type @collector_type_uid =
 '302E93D1-
 3424-4be7-AA8E-84813ECF2419'
 ;

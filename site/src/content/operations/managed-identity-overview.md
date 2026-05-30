@@ -92,8 +92,7 @@ enable a SQL Server to make outbound connections. Outbound
 connections need a primary managed identity assigned to the SQL Server.
 
 ```cmd
-inbound
-outbound
+inbound outbound
 Inbound connections
 Outbound connections
 ```

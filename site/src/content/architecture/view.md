@@ -65,8 +65,6 @@ catalog view for non-NULL values.
 
 4. You can also use this query to get details about the database snapshot and its files
 
-SQL
-
 ７
 
 Note
@@ -75,11 +73,9 @@ To create, revert to, or delete a database snapshot, you must use Transact-SQL.
 
 ```sql
 source_database_id
-SELECT
-db_name(db.source_database_id) source_database,
+SELECT db_name(db.source_database_id) source_database,
 db.name
-AS
-snapshot_db_name,
+AS snapshot_db_name,
 db.database_id,
 db.source_database_id,
 db.create_date,

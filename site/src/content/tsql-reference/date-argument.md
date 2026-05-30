@@ -115,8 +115,6 @@ date
 
 .
 
-SQL
-
 If
 
 date
@@ -139,10 +137,6 @@ data type. The example fails because the date part year is invalid for the
 
 data type:
 
-### datetime2
-
-### datetime
-
 ### smalldatetime
 
 #### datepart
@@ -163,63 +157,48 @@ data type:
 
 #### weekday, dw
 
-```sql
-DATEADD
-```
+`DATEADD`
 
-```sql
-DATENAME
-```
+`DATENAME`
 
-```sql
-DATENAME
-```
+`DATENAME`
 
-```sql
-DATENAME
-```
+`DATENAME`
 
 ```sql
 1900,
 January, 1, 1, Monday
 ```
 
-```sql
-DATENAME
-```
+`DATENAME`
 
 ```sql
 SELECT
-DATENAME
-(
+DATENAME (
 year
 ,
 '12:10:30.123'
 )
 ,
-DATENAME
-(
+DATENAME (
 month
 ,
 '12:10:30.123'
 )
 ,
-DATENAME
-(
+DATENAME (
 day
 ,
 '12:10:30.123'
 )
 ,
-DATENAME
-(
+DATENAME (
 dayofyear
 ,
 '12:10:30.123'
 )
 ,
-DATENAME
-(
+DATENAME (
 weekday
 ,
 '12:10:30.123'

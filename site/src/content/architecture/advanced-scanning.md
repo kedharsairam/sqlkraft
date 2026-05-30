@@ -86,42 +86,24 @@ Write pages in the Database Engine
 
 Related content
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 ORDER BY
 ```
 
-```sql
-UserA
-```
+`UserA`
 
-```sql
-UserB
-```
+`UserB`
 
-```sql
-UserC
-```
+`UserC`
 
-```sql
-UserA
-```
+`UserA`
 
-```sql
-UserB
-```
+`UserB`
 
-```sql
-UserC
-```
+`UserC`
 
-```sql
-UserB
-```
+`UserB`
 
-```sql
-UserC
-```
+`UserC`

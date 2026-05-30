@@ -79,8 +79,6 @@ previous versions. For information about this permission, see
 
 .
 
-
-
 Expand table
 
 #### Statement

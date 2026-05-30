@@ -157,9 +157,7 @@ Related content
 
 ### Example 1
 
-```sql
-sp_grantlogin
-```
+`sp_grantlogin`
 
 ### Example 2
 

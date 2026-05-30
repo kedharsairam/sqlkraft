@@ -43,8 +43,6 @@ column of the
 
 type.
 
-SQL
-
 The following is the result. The table stores manufacturing instructions for only some product
 
 models. The manufacturing steps are returned as subelements of the
@@ -60,8 +58,6 @@ following
 statement, the manufacturing steps are wrapped in the element that has the
 
 specified name.
-
-SQL
 
 ```sql
 Instructions
@@ -84,8 +80,7 @@ FROM
 Production.ProductModel
 FOR
 XML
-RAW
-(
+RAW (
 'ProductModelData'
 )
 GO

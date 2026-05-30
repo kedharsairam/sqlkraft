@@ -73,8 +73,6 @@ When the unique index key columns of a table are nullable, and the table is on t
 
 side of an outer join, browse mode doesn't support the index.
 
-SQL
-
 When you turn on the
 
 option, all the
@@ -147,8 +145,6 @@ values. To do this, run the following Transact-SQL
 
 statements in an appropriate query window:
 
-SQL
-
 3. Insert several values in the
 
 table and the
@@ -161,8 +157,6 @@ table. To do this, run the following Transact-SQL statements in
 
 the query window:
 
-SQL
-
 ### Results
 
 4. Turn on the
@@ -170,8 +164,6 @@ SQL
 option. To do this, run the following Transact-SQL statements
 
 in the query window:
-
-SQL
 
 5. Access the data in the
 
@@ -186,8 +178,6 @@ query. Make sure that the
 table is on the inner side of the outer join
 
 statement. To do this, run the following Transact-SQL statements in the query window:
-
-SQL
 
 Notice the following output in the
 
@@ -229,25 +219,17 @@ Note
 FOR BROWSE
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 FOR BROWSE
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-UNION
-```
+`UNION`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 FOR BROWSE
@@ -257,9 +239,7 @@ FOR BROWSE
 FOR BROWSE
 ```
 
-```sql
-NO_BROWSETABLE
-```
+`NO_BROWSETABLE`
 
 ```sql
 {
@@ -295,38 +275,28 @@ WRAPPER
 <lock_hint> HOLDLOCK
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 FOR
 BROWSE
 ```
 
-```sql
-NO_BROWSETABLE
-```
+`NO_BROWSETABLE`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 FOR BROWSE
 ```
 
-```sql
-NO_BROWSETABLE
-```
+`NO_BROWSETABLE`
 
 ```sql
 FOR BROWSE
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 OUTER JOIN
@@ -336,13 +306,9 @@ OUTER JOIN
 OUTER JOIN
 ```
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 OUTER JOIN
@@ -352,53 +318,29 @@ OUTER JOIN
 OUTER JOIN
 ```
 
-```sql
-SampleDB
-```
+`SampleDB`
 
-```sql
-SampleDB
-```
+`SampleDB`
 
-```sql
-tleft
-```
+`tleft`
 
-```sql
-tright
-```
+`tright`
 
-```sql
-c1
-```
+`c1`
 
-```sql
-c1
-```
+`c1`
 
-```sql
-tleft
-```
+`tleft`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-tleft
-```
+`tleft`
 
-```sql
-tright
-```
+`tright`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-tleft
-```
+`tleft`
 
 ```sql
 SET
@@ -406,129 +348,86 @@ NO_BROWSETABLE
 ON
 ;
 CREATE
-TABLE
-tleft (c1
+TABLE tleft (c1
 INT
 NULL
 UNIQUE
 );
 GO
 CREATE
-TABLE
-tright (c1
+TABLE tright (c1
 INT
 NULL
 );
 GO
 ```
 
-```sql
-NO_BROWSETABLE
-```
+`NO_BROWSETABLE`
 
-```sql
-tleft
-```
+`tleft`
 
-```sql
-tright
-```
+`tright`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-tleft
-```
+`tleft`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-c1
-```
+`c1`
 
-```sql
-tleft
-```
+`tleft`
 
 ```sql
 RIGHT OUTER JOIN
 ```
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 RIGHT OUTER
 JOIN
 ```
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 INSERT
-INTO
-tleft
-VALUES
-(2);
+INTO tleft
+VALUES (2);
 INSERT
-INTO
-tleft
-VALUES
-(
+INTO tleft
+VALUES (
 NULL
 );
 INSERT
-INTO
-tright
-VALUES
-(1);
+INTO tright
+VALUES (1);
 INSERT
-INTO
-tright
-VALUES
-(3);
+INTO tright
+VALUES (3);
 INSERT
-INTO
-tright
-VALUES
-(
+INTO tright
+VALUES (
 NULL
 );
 SET
 NO_BROWSETABLE
 ON
 ;
-SELECT
-tleft.c1
-FROM
-tleft
+SELECT tleft.c1
+FROM tleft
 RIGHT
 OUTER
-JOIN
-tright
-ON
-tleft.c1 = tright.c1
-WHERE
-tright.c1 <> 2;
+JOIN tright
+ON tleft.c1 = tright.c1
+WHERE tright.c1 <> 2;
 c1
 ---
 NULL

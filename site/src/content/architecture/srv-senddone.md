@@ -60,13 +60,10 @@ int srv_senddone (
 SRV_PROC *
 srvproc
 ,
-DBUSMALLINT
-status
+DBUSMALLINT status
 ,
-DBUSMALLINT
-info
+DBUSMALLINT info
 ,
-DBINT
-count
+DBINT count
 );
 ```

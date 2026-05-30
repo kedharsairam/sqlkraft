@@ -26,8 +26,6 @@ lock
 
 at partition ID 0.
 
-SQL
-
 Session 1:
 
 A
@@ -47,8 +45,6 @@ lock is acquired only on the partition assigned to the
 transaction. For this example, it's assumed that the
 
 lock is acquired on partition ID 6.
-
-SQL
 
 Session 2:
 
@@ -78,9 +74,7 @@ lock hasn't yet reached, other transactions can continue to
 
 acquire locks.
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 X
@@ -98,33 +92,19 @@ S
 X
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IS
-```
+`IS`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-TABLOCKX
-```
+`TABLOCKX`
 
 ```sql
 X
@@ -138,9 +118,7 @@ X
 X
 ```
 
-```sql
-IS
-```
+`IS`
 
 ```sql
 X
@@ -149,14 +127,11 @@ X
 ```sql
 FROM
 TestTable
-WITH
-(TABLOCK, HOLDLOCK);
-SELECT
-col1
+WITH (TABLOCK, HOLDLOCK);
+SELECT col1
 FROM
 TestTable
-WITH
-(TABLOCKX);
+WITH (TABLOCKX);
 ```
 
 ```sql
@@ -165,10 +140,8 @@ BEGIN
 TRANSACTION
 ;
 -- This SELECT statement will acquire an IS lock on the table.
-SELECT
-col1
+SELECT col1
 FROM
 TestTable
-WITH
-(HOLDLOCK);
+WITH (HOLDLOCK);
 ```

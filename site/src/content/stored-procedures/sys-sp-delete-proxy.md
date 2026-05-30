@@ -55,9 +55,7 @@ The name of the proxy to remove.
 
 ### Example 1
 
-```sql
-sp_delete_proxy
-```
+`sp_delete_proxy`
 
 ### Example 2
 
@@ -68,11 +66,9 @@ Catalog application proxy
 ### Example 3
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_delete_proxy
+EXECUTE dbo.sp_delete_proxy
 @proxy_name = N
 'Catalog application proxy'
 ;

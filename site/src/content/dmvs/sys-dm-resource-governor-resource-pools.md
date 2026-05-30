@@ -14,9 +14,7 @@ Analytics Platform System (PDW) Returns information about the current resource p
 
 ## Syntax
 
-```sql
-statistics_start_time
-```
+`statistics_start_time`
 
 ## Permissions
 

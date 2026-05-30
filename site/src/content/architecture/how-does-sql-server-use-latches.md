@@ -404,8 +404,6 @@ indexes, the Database Engine implements a B+ tree. This does not apply to column
 
 indexes or indexes on memory-optimized tables. For more information, see the
 
-SQL
-
 .
 
 
@@ -418,98 +416,50 @@ SQL
 
 ### IO latch:
 
-```sql
-PAGELATCH
-```
+`PAGELATCH`
 
-```sql
-PAGEIOLATCH
-```
+`PAGEIOLATCH`
 
-```sql
-LATCH
-```
+`LATCH`
 
-```sql
-LATCH_EX
-```
+`LATCH_EX`
 
-```sql
-LATCH_SH
-```
+`LATCH_SH`
 
-```sql
-KP
-```
+`KP`
 
-```sql
-SH
-```
+`SH`
 
-```sql
-UP
-```
+`UP`
 
-```sql
-SH
-```
+`SH`
 
-```sql
-EX
-```
+`EX`
 
-```sql
-EX
-```
+`EX`
 
-```sql
-DT
-```
+`DT`
 
-```sql
-SH
-```
+`SH`
 
-```sql
-KP
-```
+`KP`
 
-```sql
-SH
-```
+`SH`
 
-```sql
-UP
-```
+`UP`
 
-```sql
-EX
-```
+`EX`
 
-```sql
-DT
-```
+`DT`
 
-```sql
-SH
-```
+`SH`
 
-```sql
-SH
-```
+`SH`
 
-```sql
-SH
-```
+`SH`
 
-```sql
-EX
-```
+`EX`
 
-```sql
-EX
-```
+`EX`
 
-```sql
-EX
-```
+`EX`

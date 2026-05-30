@@ -51,8 +51,6 @@ marked. In the following conceptual example,
 
 is the name of the mark.
 
-SQL
-
 When you mark an inner transaction, you receive the following warning message if you try to
 
 mark a transaction that is already marked:
@@ -75,29 +73,22 @@ BEGIN TRANSACTION <new_name> WITH MARK
 <new_name>
 ```
 
-```sql
-M2
-```
+`M2`
 
 ```sql
 BEGIN
 TRAN T1;
-UPDATE
-table1 ...;
+UPDATE table1 ...;
 BEGIN
 TRAN M2
 WITH
 MARK;
-UPDATE
-table2 ...;
-SELECT
-column1
-FROM
-table1;
+UPDATE table2 ...;
+SELECT column1
+FROM table1;
 COMMIT
 TRAN M2;
-UPDATE
-table3 ...;
+UPDATE table3 ...;
 COMMIT
 TRAN T1;
 Server: Msg 3920, Level 16, State 1, Line 3

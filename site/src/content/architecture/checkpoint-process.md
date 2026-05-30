@@ -90,6 +90,4 @@ Last updated on 11/18/2025
 
 Related content
 
-```sql
-CHECKPOINT
-```
+`CHECKPOINT`

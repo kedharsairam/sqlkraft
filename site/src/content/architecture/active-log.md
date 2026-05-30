@@ -80,9 +80,7 @@ unthrottled checkpoints.
 
 ### recovery interval
 
-```sql
-CHECKPOINT
-```
+`CHECKPOINT`
 
 ```sql
 -k

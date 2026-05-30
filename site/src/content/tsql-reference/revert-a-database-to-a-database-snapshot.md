@@ -71,6 +71,4 @@ impossible. Furthermore, even when possible, reverting in the event of corruptio
 
 correct the problem.
 
-```sql
-STOPAT
-```
+`STOPAT`

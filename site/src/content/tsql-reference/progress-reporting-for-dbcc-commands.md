@@ -201,8 +201,6 @@ The progress reporting
 
 value is updated for every
 
-
-
 Expand table
 
 #### Execution
@@ -217,13 +215,9 @@ Expand table
 WITH TABLOCK
 ```
 
-```sql
-master
-```
+`master`
 
-```sql
-master
-```
+`master`
 
 ```sql
 ALTER DATABASE
@@ -233,9 +227,7 @@ ALTER DATABASE
 ALTER DATABASE
 ```
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 WITH TABLOCK
@@ -258,45 +250,29 @@ TABLOCK
 X
 ```
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-master
-```
+`master`
 
 ```sql
 DBCC CHECKDB
 ```
 
-```sql
-master
-```
+`master`
 
-```sql
-sys.dm_exec_requests
-```
+`sys.dm_exec_requests`
 
 ```sql
 DBCC CHECKDB
 ```
 
-```sql
-CHECKFILEGROUP
-```
+`CHECKFILEGROUP`
 
-```sql
-CHECKTABLE
-```
+`CHECKTABLE`
 
-```sql
-percent_complete
-```
+`percent_complete`
 
-```sql
-command
-```
+`command`
 
 ```sql
 DBCC TABLE
@@ -308,17 +284,11 @@ DBCC TABLE
 REPAIR
 ```
 
-```sql
-REPAIR_FAST
-```
+`REPAIR_FAST`
 
-```sql
-REPAIR_REBUILD
-```
+`REPAIR_REBUILD`
 
-```sql
-REPAIR_ALLOW_DATA_LOSS
-```
+`REPAIR_ALLOW_DATA_LOSS`
 
 ```sql
 DBCC ALLOC
@@ -334,17 +304,11 @@ DBCC ALLOC
 REPAIR
 ```
 
-```sql
-REPAIR_FAST
-```
+`REPAIR_FAST`
 
-```sql
-REPAIR_REBUILD
-```
+`REPAIR_REBUILD`
 
-```sql
-REPAIR_ALLOW_DATA_LOSS
-```
+`REPAIR_ALLOW_DATA_LOSS`
 
 ```sql
 DBCC SYS

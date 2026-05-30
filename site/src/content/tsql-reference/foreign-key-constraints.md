@@ -73,8 +73,6 @@ Note
 
 For memory-optimized tables, the nullable key column is allowed.
 
-### timestamp
-
 FOREIGN KEY constraints can reference another column in the same table. This is referred
 
 to as a self-reference.
@@ -148,5 +146,3 @@ CLR user-defined types
 .
 
 #### Value returned
-
-### timestamp

@@ -41,39 +41,28 @@ sp_add_log_shipping_primary_secondary
 
 ### Example 1
 
-```sql
-sp_add_log_shipping_primary_secondary
-```
+`sp_add_log_shipping_primary_secondary`
 
 ### Example 2
 
-```sql
-master
-```
+`master`
 
 ### Example 3
 
-```sql
-sp_add_log_shipping_primary_secondary
-```
+`sp_add_log_shipping_primary_secondary`
 
 ### Example 4
 
-```sql
-LogShipAdventureWorks
-```
+`LogShipAdventureWorks`
 
 ### Example 5
 
-```sql
-FLATIRON
-```
+`FLATIRON`
 
 ### Example 6
 
 ```sql
-EXECUTE
-master.dbo.sp_add_log_shipping_primary_secondary
+EXECUTE master.dbo.sp_add_log_shipping_primary_secondary
 @primary_database = N
 'AdventureWorks'
 ,

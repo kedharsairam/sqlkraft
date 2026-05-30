@@ -99,13 +99,9 @@ group of autonomous instances of SQL Server servers, called federated database s
 GROUP BY
 ```
 
-```sql
-HAVING
-```
+`HAVING`
 
-```sql
-DISTINCT
-```
+`DISTINCT`
 
 ```sql
 WITH
@@ -124,17 +120,11 @@ INSTEAD OF
 INSTEAD OF
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 INSTEAD OF

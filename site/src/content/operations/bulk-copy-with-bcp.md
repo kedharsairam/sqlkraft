@@ -88,7 +88,5 @@ to load into the sample table from a text file on disk.
 Start by creating a sample database with a simple table that is used in the rest of this tutorial.
 
 ```cmd
-bcp in
-bcp out
-localhost
+bcp in bcp out localhost
 ```

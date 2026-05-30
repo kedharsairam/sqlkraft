@@ -14,9 +14,7 @@ function serves as a wrapper for the query function. The stored procedure is use
 
 ## Syntax
 
-```sql
-sys.sp_cdc_generate_wrapper_function
-```
+`sys.sp_cdc_generate_wrapper_function`
 
 ## Remarks
 

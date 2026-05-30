@@ -90,6 +90,5 @@ specifies that historical data older than one month needs to be removed or moved
 from the history table.
 
 ```sql
-ValidTo < DATEADD (DAYS, -30, SYSUTCDATETIME
-())
+ValidTo < DATEADD (DAYS, -30, SYSUTCDATETIME ())
 ```

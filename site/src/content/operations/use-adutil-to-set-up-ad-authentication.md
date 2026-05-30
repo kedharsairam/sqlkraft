@@ -93,6 +93,5 @@ Connect to SQL Server using Active Directory authentication
 
 ```cmd
 sql1
-10.0.0.10
-sql1.contoso.com
+10.0.0.10 sql1.contoso.com
 ```

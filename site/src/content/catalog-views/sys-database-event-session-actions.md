@@ -14,9 +14,7 @@ SQL Server 2016 (13.x) and later versions Azure SQL Database Azure SQL Managed S
 
 ## Syntax
 
-```sql
-sys.database_event_session_actions
-```
+`sys.database_event_session_actions`
 
 ## Remarks
 

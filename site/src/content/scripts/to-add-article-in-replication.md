@@ -11,13 +11,9 @@ pubDate: 2025-03-15
 --1. first add the table to the publication and then disable the settings
 --settings to be diabled: 'allow_anonymous' and 'immediate_sync'
 
---to get the properties of a replication
-use databasename
-go
-sp_helppublication 'replicationname'
+--to get the properties of a replication use databasename go sp_helppublication 'replicationname'
 
---2. to disable the settings
-exec sp_changepublication
+--2. to disable the settings exec sp_changepublication
 @publication = 'replicationname',
 @property = 'allow_anonymous',
 @value = 'false'

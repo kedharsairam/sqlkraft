@@ -14,17 +14,13 @@ warehouse database. The procedure must be executed in the context of the managem
 
 ## Syntax
 
-```sql
-core.supported_collector_types
-```
+`core.supported_collector_types`
 
 ## Examples
 
 ### Example 1
 
-```sql
-core.supported_collector_types
-```
+`core.supported_collector_types`
 
 ### Example 2
 
@@ -40,9 +36,7 @@ core.supported_collector_types
 
 ### Example 4
 
-```sql
-core.supported_collector_types
-```
+`core.supported_collector_types`
 
 ### Example 5
 

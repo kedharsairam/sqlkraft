@@ -111,34 +111,18 @@ and the order of the updates is not guaranteed.
 SET ROWCOUNT
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-CHECK
-```
+`CHECK`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-NEWID()
-```
+`NEWID()`
 
-```sql
-NEWID()
-```
+`NEWID()`

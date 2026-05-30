@@ -55,8 +55,6 @@ sp_invoke_external_rest_endpoint
 
 Last updated on 11/18/2025
 
-
-
 Expand table
 
 Related content

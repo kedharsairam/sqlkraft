@@ -45,8 +45,6 @@ statement with
 
 the following syntax:
 
-SQL
-
 doesn't disrupt currently running processes that are using the assembly; the
 
 processes continue executing with the unaltered assembly.
@@ -78,8 +76,6 @@ The following statement changes the permission set of the
 assembly to
 
 .
-
-SQL
 
 If the permission set of an assembly is being changed from
 

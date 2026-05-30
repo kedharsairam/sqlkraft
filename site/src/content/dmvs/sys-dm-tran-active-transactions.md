@@ -14,6 +14,4 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric dynamic managem
 
 ## Syntax
 
-```sql
-sys.dm_tran_active_transactions
-```
+`sys.dm_tran_active_transactions`

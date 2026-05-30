@@ -54,8 +54,6 @@ Use the tools described previously when executing the queries in this example to
 
 partitioning information for both compile-time and run-time plans.
 
-SQL
-
 ７
 
 Note
@@ -95,8 +93,7 @@ Last updated on 11/18/2025
 Related content
 
 ```sql
-USE
-master
+USE master
 ;
 GO
 IF DB_ID (N'db_sales_test') IS NOT NULL
@@ -104,15 +101,12 @@ IF DB_ID (N'db_sales_test') IS NOT NULL
 
 ```sql
 DROP
-DATABASE
-db_sales_test;
+DATABASE db_sales_test;
 GO
 CREATE
-DATABASE
-db_sales_test;
+DATABASE db_sales_test;
 GO
-USE
-db_sales_test;
+USE db_sales_test;
 GO
 CREATE
 PARTITION
@@ -124,8 +118,7 @@ AS
 RANGE
 RIGHT
 FOR
-VALUES
-(20080801, 20080901, 20081001, 20081101, 20081201, 20090101);
+VALUES (20080801, 20080901, 20081001, 20081101, 20081201, 20090101);
 GO
 CREATE
 PARTITION
@@ -134,34 +127,21 @@ AS
 PARTITION
 [pf_range_fact]
 ALL
-TO
-([PRIMARY]);
+TO ([PRIMARY]);
 GO
 CREATE
-TABLE
-fact_sales(date_id
-int
-, product_id
-int
-, store_id
-int
+TABLE fact_sales(date_id int
+, product_id int
+, store_id int
 ,
-quantity
-int
-, unit_price
-numeric
-(7,2), other_data
-char
-(1000))
-ON
-ps_fact_sales(date_id);
+quantity int
+, unit_price numeric (7,2), other_data char (1000))
+ON ps_fact_sales(date_id);
 GO
 CREATE
 CLUSTERED
-INDEX
-ci
-ON
-fact_sales(date_id);
+INDEX ci
+ON fact_sales(date_id);
 GO
 PRINT 'Loading...';
 SET
@@ -169,20 +149,16 @@ NOCOUNT
 ON
 ;
 DECLARE
-@i
-int
+@i int
 ;
 SET
 @i = 1;
 WHILE (@i<1000000)
 BEGIN
 INSERT
-INTO
-fact_sales
-VALUES
-(20080800 + (@i%30) + 1, @i%10000, @i%200,
-RAND
-() -
+INTO fact_sales
+VALUES (20080800 + (@i%30) + 1, @i%10000, @i%200,
+RAND () -
 25, (@i%3) + 1,
 ''
 );
@@ -192,20 +168,16 @@ END
 ;
 GO
 DECLARE
-@i
-int
+@i int
 ;
 SET
 @i = 1;
 WHILE (@i<10000)
 BEGIN
 INSERT
-INTO
-fact_sales
-VALUES
-(20080900 + (@i%30) + 1, @i%10000, @i%200,
-RAND
-() -
+INTO fact_sales
+VALUES (20080900 + (@i%30) + 1, @i%10000, @i%200,
+RAND () -
 25, (@i%3) + 1,
 ''
 );
@@ -222,23 +194,17 @@ XML
 ON
 ;
 GO
-SELECT
-date_id,
-SUM
-(quantity*unit_price)
-AS
-total_price
-FROM
-fact_sales
-WHERE
-date_id
+SELECT date_id,
+SUM (quantity*unit_price)
+AS total_price
+FROM fact_sales
+WHERE date_id
 BETWEEN
 20080802
 AND
 20080902
 GROUP
-BY
-date_id ;
+BY date_id ;
 GO
 SET
 STATISTICS
@@ -253,16 +219,11 @@ XML
 ON
 ;
 GO
-SELECT
-date_id,
-SUM
-(quantity*unit_price)
-AS
-total_price
-FROM
-fact_sales
-WHERE
-date_id
+SELECT date_id,
+SUM (quantity*unit_price)
+AS total_price
+FROM fact_sales
+WHERE date_id
 BETWEEN
 20080801
 AND
@@ -271,8 +232,7 @@ AND
 
 ```sql
 GROUP
-BY
-date_id;
+BY date_id;
 GO
 SET
 STATISTICS

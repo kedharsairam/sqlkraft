@@ -14,13 +14,9 @@ sample database. There are two ways the application can do this.
 
 Using the first way, the application can execute a separate query for each product requested:
 
-SQL
-
 Using the second way, the application does the following:
 
 1. Prepares a statement that contains a parameter marker (?):
-
-SQL
 
 2. Binds a program variable to the parameter marker.
 
@@ -58,9 +54,7 @@ SQL Server.
 
 ### average density
 
-```sql
-AdventureWorks
-```
+`AdventureWorks`
 
 ```sql
 SELECT

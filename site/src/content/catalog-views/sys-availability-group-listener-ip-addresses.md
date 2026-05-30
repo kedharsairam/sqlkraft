@@ -14,6 +14,4 @@ Returns a row for every IP address that is associated with any Always On availab
 
 ## Syntax
 
-```sql
-network_subnet_prefix_length
-```
+`network_subnet_prefix_length`

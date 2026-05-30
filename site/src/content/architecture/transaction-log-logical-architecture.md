@@ -130,6 +130,4 @@ Logical operation logged
 0x1
 ```
 
-```sql
-vlf_create_lsn
-```
+`vlf_create_lsn`

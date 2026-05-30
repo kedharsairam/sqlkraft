@@ -79,9 +79,7 @@ Only members of the fixed server role or fixed database role can execute . Windo
 
 ### Example 1
 
-```sql
-sp_addlogreader_agent
-```
+`sp_addlogreader_agent`
 
 ### Example 2
 
@@ -93,21 +91,17 @@ sp_addlogreader_agent
 -- the topic "Programming Replication Using System Stored Procedures".
 DECLARE
 @publicationDB
-AS
-sysname;
+AS sysname;
 DECLARE
 @publication
-AS
-sysname;
+AS sysname;
 DECLARE
 @login
-AS
-sysname;
+AS sysname;
 DECLARE
 @
 password
-AS
-sysname;
+AS sysname;
 SET
 @publicationDB = N
 'AdventureWorks'

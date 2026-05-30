@@ -19,8 +19,6 @@ SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
 
-SQL
-
 database in Microsoft Fabric
 
 Hints are options or strategies specified for enforcement by the SQL Server query processor on
@@ -61,21 +59,13 @@ be used only as
 
 a last resort by experienced developers and database administrators.
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 <join_hint>

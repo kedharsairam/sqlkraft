@@ -91,6 +91,4 @@ To rename a database in Azure Synapse Analytics or Parallel Data Warehouse, use 
 
 statement.
 
-```sql
-ALTER
-```
+`ALTER`

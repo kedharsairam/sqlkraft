@@ -74,8 +74,7 @@ In this case, the following are valid expressions that use a predicate value of 
 different node levels:
 
 ```sql
-declare @x xml
-set @x = '
+declare @x xml set @x = '
 <People>
 <Person>
 <Name>John</Name>

@@ -14,9 +14,7 @@ Partitions a merge publication vertically. This stored procedure is executed at 
 
 ## Syntax
 
-```sql
-sp_mergearticlecolumn
-```
+`sp_mergearticlecolumn`
 
 ## Permissions
 
@@ -26,42 +24,32 @@ Only members of the fixed server role or fixed database role can execute . Defin
 
 ### Example 1
 
-```sql
-sp_mergearticlecolumn
-```
+`sp_mergearticlecolumn`
 
 ### Example 2
 
 ```sql
 DECLARE
 @publication
-AS
-sysname;
+AS sysname;
 DECLARE
 @table1
-AS
-sysname;
+AS sysname;
 DECLARE
 @table2
-AS
-sysname;
+AS sysname;
 DECLARE
 @table3
-AS
-sysname;
+AS sysname;
 DECLARE
 @salesschema
-AS
-sysname;
+AS sysname;
 DECLARE
 @hrschema
-AS
-sysname;
+AS sysname;
 DECLARE
 @filterclause
-AS
-nvarchar
-(1000);
+AS nvarchar (1000);
 SET
 @publication = N
 'AdvWorksSalesOrdersMerge'

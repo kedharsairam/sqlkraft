@@ -31,13 +31,9 @@ strings to
 
 explicit dimension count.
 
-SQL
-
 Implicit Conversion is supported only when the target
 
 type is fully declared.
-
-SQL
 
 The following examples highlight common errors and limitations when working with half-
 
@@ -73,8 +69,6 @@ blocked
 
 .
 
-SQL
-
 The following error is returned:
 
 Output
@@ -82,8 +76,6 @@ Output
 Conversion between vectors with mismatched dimensions isn't allowed and raises a dimension
 
 mismatch error.
-
-SQL
 
 The following error is returned:
 
@@ -93,23 +85,17 @@ If a vector is declared without a dimension count, assigning a value to it raise
 
 This example works:
 
-SQL
-
 ## Out-of-range values
 
 ## Mixed base types in functions
 
 However, if the dimension count isn't specified, it raises an error:
 
-SQL
-
 Out-of-range values for
 
 (for example, above 65504.0) raise an error during
 
 assignment.
-
-SQL
 
 The following error is returned:
 
@@ -118,8 +104,6 @@ Output
 Mixed base types in functions like
 
 aren't supported and raises a type error.
-
-SQL
 
 The following error is returned:
 
@@ -137,8 +121,6 @@ Output
 
 isn't supported on Arm64 architectures, and using it raises a runtime error
 
-SQL
-
 The following error is returned:
 
 Output
@@ -146,8 +128,6 @@ Output
 Single instruction, multiple data (SIMD)-based operations, such as AVX2 or SSE4.2, might
 
 produce overflow errors if values exceed representable ranges.
-
-SQL
 
 The behavior depends on the
 
@@ -213,17 +193,14 @@ AS
 VECTOR(3, float16);
 SET
 @v =
-CAST
-(@j
+CAST (@j
 AS
 VECTOR(3, float16));
--- Explicit conversion from JSON to
-float16
+-- Explicit conversion from JSON to float16
 DECLARE
 @v1
 AS
-VARCHAR
-(50) =
+VARCHAR (50) =
 '[1.0, 2.0, 3.0]'
 ;
 DECLARE
@@ -232,17 +209,14 @@ AS
 VECTOR(3, float16);
 SET
 @v2 =
-CAST
-(@v1
+CAST (@v1
 AS
 VECTOR(3, float16));
--- Explicit conversion from VARCHAR to
-float16
+-- Explicit conversion from VARCHAR to float16
 DECLARE
 @v1
 AS
-NVARCHAR
-(50) = N
+NVARCHAR (50) = N
 '[1.0, 2.0, 3.0]'
 ;
 DECLARE
@@ -251,18 +225,15 @@ AS
 VECTOR(3, float16);
 SET
 @v2 =
-CAST
-(@v1
+CAST (@v1
 AS
 VECTOR(3, float16));
--- Explicit conversion from NVARCHAR to
-float16
+-- Explicit conversion from NVARCHAR to float16
 -- Implicit conversion from VARCHAR to float16
 DECLARE
 @v1
 AS
-VARCHAR
-(50) =
+VARCHAR (50) =
 '[1.0, 2.0, 3.0]'
 ;
 DECLARE
@@ -275,8 +246,7 @@ SET
 DECLARE
 @v1
 AS
-NVARCHAR
-(50) = N
+NVARCHAR (50) = N
 '[1.0, 2.0, 3.0]'
 ;
 DECLARE
@@ -292,21 +262,13 @@ AS
 VECTOR(3, float16) = JSON_ARRAY(1.0, 2.0, 3.0);
 ```
 
-```sql
-VECTOR(float32)
-```
+`VECTOR(float32)`
 
-```sql
-VECTOR(float16)
-```
+`VECTOR(float16)`
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
 ```sql
 DECLARE
@@ -321,12 +283,10 @@ VECTOR(3, float32) =
 ;
 SET
 @v1 =
-CAST
-(@v2
+CAST (@v2
 AS
 VECTOR(3, float16));
--- Explicit conversion from float32 to
-float16
+-- Explicit conversion from float32 to float16
 Error: Msg 42238, Level 16, State 1, Line 61
 Conversion of vector from data type float32 to float16 is not allowed.
 ```
@@ -350,13 +310,9 @@ Error: Msg 42204, Level 16, State 1, Line 10
 The vector dimensions 4 and 3 do not match
 ```
 
-```sql
-float16
-```
+`float16`
 
-```sql
-VECTOR_DISTANCE
-```
+`VECTOR_DISTANCE`
 
 ```sql
 DECLARE
@@ -419,13 +375,9 @@ VECTOR_DISTANCE(
 VECTOR_DISTANCE does not support different base types
 ```
 
-```sql
-float16
-```
+`float16`
 
-```sql
-ARITHABORT
-```
+`ARITHABORT`
 
 ```sql
 ARITHABORT ON
@@ -435,29 +387,17 @@ ARITHABORT ON
 ARITHABORT OFF
 ```
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-float32
-```
+`float32`
 
-```sql
-float16
-```
+`float16`
 
-```sql
-sys.columns
-```
+`sys.columns`
 
-```sql
-float16
-```
+`float16`
 
-```sql
-float16
-```
+`float16`
 
 ```sql
 DECLARE
@@ -494,10 +434,6 @@ VECTOR_NORM(@v,
 );
 ```
 
-```sql
-float32
-```
+`float32`
 
-```sql
-VECTOR(float16)
-```
+`VECTOR(float16)`

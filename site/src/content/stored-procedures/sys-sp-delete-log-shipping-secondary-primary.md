@@ -14,9 +14,7 @@ removes the information about the specified primary server from the secondary se
 
 ## Syntax
 
-```sql
-sp_delete_log_shipping_secondary_primary
-```
+`sp_delete_log_shipping_secondary_primary`
 
 ## Permissions
 

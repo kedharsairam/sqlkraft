@@ -19,8 +19,5 @@ catalog view contains the current running traces on the system. This view is int
 ## Syntax
 
 ```sql
-sp_trace_create
-sp_trace_setevent
-sp_trace_setfilter
-sp_trace_setstatus
+sp_trace_create sp_trace_setevent sp_trace_setfilter sp_trace_setstatus
 ```

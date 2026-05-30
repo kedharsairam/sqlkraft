@@ -14,6 +14,4 @@ Removes replication settings if restoring a database to the non-originating serv
 
 ## Syntax
 
-```sql
-sp_restoredbreplication
-```
+`sp_restoredbreplication`

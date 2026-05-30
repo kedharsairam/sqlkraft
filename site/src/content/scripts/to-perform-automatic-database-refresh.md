@@ -131,8 +131,7 @@ GO
 IF OBJECT_ID(''tempdb..OutputTable'', ''U'') IS NOT NULL
     DROP TABLE tempdb..OutputTable;
 GO
-CREATE TABLE tempdb..OutputTable
-(
+CREATE TABLE tempdb..OutputTable (
     ID INT IDENTITY(1, 1),
     SQLStatement VARCHAR(2048)
 );
@@ -193,8 +192,7 @@ WHERE   USER_NAME(rm.member_principal_id) IN (
                                                 --get user names on the database
                                                 SELECT [name]
                                                 FROM sys.database_principals
-                                                WHERE [principal_id] > 4 -- 0 to 4 are system users/schemas
-                                                and [type] IN (''G'', ''S'', ''U'') -- S = SQL user, U = Windows user, G = Windows group
+                                                WHERE [principal_id] > 4 -- 0 to 4 are system users/schemas and [type] IN (''G'', ''S'', ''U'') -- S = SQL user, U = Windows user, G = Windows group
                                               )
 UNION
 SELECT '''' AS [-- SQL STATEMENTS --],
@@ -222,16 +220,12 @@ SELECT  CASE
           END
             AS [-- SQL STATEMENTS --],
         9 AS [-- RESULT ORDER HOLDER --]
-FROM
-    sys.database_permissions AS perm
-        INNER JOIN
-    sys.objects AS obj
+FROM sys.database_permissions AS perm
+        INNER JOIN sys.objects AS obj
             ON perm.major_id = obj.[object_id]
-        INNER JOIN
-    sys.database_principals AS usr
+        INNER JOIN sys.database_principals AS usr
             ON perm.grantee_principal_id = usr.principal_id
-        LEFT JOIN
-    sys.columns AS cl
+        LEFT JOIN sys.columns AS cl
             ON cl.column_id = perm.minor_id AND cl.[object_id] = perm.major_id
 UNION
 SELECT '''' AS [-- SQL STATEMENTS --],
@@ -256,8 +250,7 @@ SELECT  CASE
         AS [-- SQL STATEMENTS --],
         12 AS [-- RESULT ORDER HOLDER --]
 FROM    sys.database_permissions AS perm
-    INNER JOIN
-    sys.database_principals AS usr
+    INNER JOIN sys.database_principals AS usr
     ON perm.grantee_principal_id = usr.principal_id
 WHERE   [perm].[major_id] = 0
     AND [usr].[principal_id] > 4 -- 0 to 4 are system users/schemas
@@ -330,8 +323,7 @@ EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Backup d
 		@retry_attempts=0,
 		@retry_interval=0,
 		@os_run_priority=0, @subsystem=N'TSQL',
-		@command=N'Use AdventureWorks2019
-go
+		@command=N'Use AdventureWorks2019 go
 
 SET NOCOUNT ON
 
@@ -341,8 +333,7 @@ SELECT  ''USE'' + SPACE(1) + QUOTENAME(DB_NAME()) AS ''--Database Context''
 SELECT  ''EXEC sp_addrolemember @rolename =''
                + SPACE(1) + QUOTENAME(USER_NAME(rm.role_principal_id), '''''''') + '', @membername ='' + SPACE(1) + QUOTENAME(USER_NAME(rm.member_principal_id), '''''''') AS ''--Role Memberships''
 FROM    sys.database_role_members AS rm
-WHERE USER_NAME(rm.member_principal_id) IN
-                              ( Select name from sys.database_principals Where principal_id >=5 And type_desc in (''SQL_USER'',''WINDOWS_USER'',''WINDOWS_GROUP''))
+WHERE USER_NAME(rm.member_principal_id) IN ( Select name from sys.database_principals Where principal_id >=5 And type_desc in (''SQL_USER'',''WINDOWS_USER'',''WINDOWS_GROUP''))
 ORDER BY rm.role_principal_id ASC;
 
 --Generates Database Level GRANTS:
@@ -351,12 +342,9 @@ SELECT  CASE WHEN perm.state <> ''W'' THEN perm.state_desc ELSE ''GRANT'' END
                + SPACE(1) + ''TO'' + SPACE(1) + QUOTENAME(usr.name) COLLATE database_default
                + CASE WHEN perm.state <> ''W'' THEN SPACE(0) ELSE SPACE(1) + ''WITH GRANT OPTION'' END AS ''--Database Level Permissions''
 FROM    sys.database_permissions AS perm
-               INNER JOIN
-               sys.database_principals AS usr
+               INNER JOIN sys.database_principals AS usr
                ON perm.grantee_principal_id = usr.principal_id
-WHERE usr.name IN
-                              ( Select name from sys.database_principals Where principal_id >=5 And type_desc in (''SQL_USER'',''WINDOWS_USER'',''WINDOWS_GROUP''))
-and perm.class_desc <> ''OBJECT_OR_COLUMN''
+WHERE usr.name IN ( Select name from sys.database_principals Where principal_id >=5 And type_desc in (''SQL_USER'',''WINDOWS_USER'',''WINDOWS_GROUP'')) and perm.class_desc <> ''OBJECT_OR_COLUMN''
 
 ORDER BY perm.permission_name ASC, perm.state_desc ASC;
 
@@ -367,17 +355,13 @@ SELECT  CASE WHEN perm.state <> ''W'' THEN perm.state_desc ELSE ''GRANT'' END
                + SPACE(1) + ''TO'' + SPACE(1) + QUOTENAME(usr.name) COLLATE database_default
                + CASE WHEN perm.state <> ''W'' THEN SPACE(0) ELSE SPACE(1) + ''WITH GRANT OPTION'' END AS ''--Object Level Permissions''
 FROM    sys.database_permissions AS perm
-               INNER JOIN
-               sys.objects AS obj
+               INNER JOIN sys.objects AS obj
                ON perm.major_id = obj.[object_id]
-               INNER JOIN
-               sys.database_principals AS usr
+               INNER JOIN sys.database_principals AS usr
                ON perm.grantee_principal_id = usr.principal_id
-               LEFT JOIN
-               sys.columns AS cl
+               LEFT JOIN sys.columns AS cl
                ON cl.column_id = perm.minor_id AND cl.[object_id] = perm.major_id
-WHERE usr.name IN
-                              ( Select name from sys.database_principals Where principal_id >=5 And type_desc in (''SQL_USER'',''WINDOWS_USER'',''WINDOWS_GROUP''))
+WHERE usr.name IN ( Select name from sys.database_principals Where principal_id >=5 And type_desc in (''SQL_USER'',''WINDOWS_USER'',''WINDOWS_GROUP''))
 
 ORDER BY perm.permission_name ASC, perm.state_desc ASC;',
 		@database_name=N'AdventureWorks2019',
@@ -416,12 +400,8 @@ EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'Kill all
 		@command=N'--Kill all the sessions
 USE master
 Go
-DECLARE @SQL NVARCHAR(3000)
-set @SQL=''''
-Select @SQL=LTRIM(RTRIM(@SQL))+ ''kill '' +convert(Varchar(10),spid)+'';''+CHAR(13)
-from master..sysprocesses where dbid=db_id(''AdventureWorks2019'') -- Enter database nam in db_id
-print @SQL
-exec sp_executesql @SQL',
+DECLARE @SQL NVARCHAR(3000) set @SQL=''''
+Select @SQL=LTRIM(RTRIM(@SQL))+ ''kill '' +convert(Varchar(10),spid)+'';''+CHAR(13) from master..sysprocesses where dbid=db_id(''AdventureWorks2019'') -- Enter database nam in db_id print @SQL exec sp_executesql @SQL',
 		@database_name=N'master',
 		@flags=0
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
@@ -512,8 +492,7 @@ Go
 --exec sp_change_users_login ''report''
 
 EXEC sp_change_users_login ''report''--See all orphaned users in the database.
-DECLARE @OrphanedUsers TABLE
-(
+DECLARE @OrphanedUsers TABLE (
   IndexKey Int IDENTITY(1,1) PRIMARY KEY,
   UserName SysName,--nVarChar(128)
   UserSID  VarBinary(85)

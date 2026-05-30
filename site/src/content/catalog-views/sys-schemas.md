@@ -35,34 +35,23 @@ Article • 07/19/2024 Applies to: SQL Server Azure SQL Managed Instance Azure S
 
 ### Example 1
 
-```sql
-CountBy1
-```
+`CountBy1`
 
 ### Example 2
 
 ```sql
-SELECT
-sch.name +
+SELECT sch.name +
 '.'
 + seq.name
 AS
 [
-Sequence
-schema
-and
-name
+Sequence schema and name
 ]
-FROM
-sys.sequences
-AS
-seq
-JOIN
-sys.schemas
-AS
-sch
-ON
-seq.schema_id = sch.schema_id ;
+FROM sys.sequences
+AS seq
+JOIN sys.schemas
+AS sch
+ON seq.schema_id = sch.schema_id ;
 GO
 ```
 

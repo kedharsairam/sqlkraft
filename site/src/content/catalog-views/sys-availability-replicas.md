@@ -14,6 +14,4 @@ Returns a row for each of the availability replicas that belong to any Always On
 
 ## Syntax
 
-```sql
-sys.availability_replicas
-```
+`sys.availability_replicas`

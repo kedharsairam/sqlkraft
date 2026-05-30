@@ -64,9 +64,7 @@ execution plan for the batch calling the stored procedure or firing the trigger.
 @CustomerIDParameter
 ```
 
-```sql
-GetCustomer
-```
+`GetCustomer`
 
 ```sql
 CREATE

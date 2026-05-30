@@ -146,7 +146,6 @@ Expand table
 ```cmd
 Website.SearchForCustomers
 Application.SystemParameters
-Application.People
-nvarchar(max)
+Application.People nvarchar(max)
 ISJSON
 ```

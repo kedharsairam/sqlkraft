@@ -209,30 +209,20 @@ ALTER DATABASE
 SET COMPATIBILITY_LEVEL
 ```
 
-```sql
-sp_dbcmptlevel
-```
+`sp_dbcmptlevel`
 
 ```sql
-sp_addtype
-sp_droptype
+sp_addtype sp_droptype
 CREATE TYPE
-DROP TYPE
-sp_addtype
+DROP TYPE sp_addtype
 ```
 
-```sql
-TIMESTAMP
-```
+`TIMESTAMP`
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
 ```sql
 INSERT NULL
 ```
 
-```sql
-TIMESTAMP
-```
+`TIMESTAMP`

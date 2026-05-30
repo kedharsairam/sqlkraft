@@ -47,11 +47,7 @@ Warehouse
 
 . For example:
 
-SQL
-
 The following code example produces a two-column table that has four rows.
-
-SQL
 
 Here's the result set.
 
@@ -63,17 +59,13 @@ for
 
 #### Output
 
-```sql
-PIVOT
-```
+`PIVOT`
 
 ```sql
 GROUP BY
 ```
 
-```sql
-PIVOT
-```
+`PIVOT`
 
 ```sql
 GROUP BY
@@ -83,48 +75,31 @@ GROUP BY
 GROUP BY
 ```
 
-```sql
-UNPIVOT
-```
+`UNPIVOT`
 
-```sql
-UNPIVOT
-```
+`UNPIVOT`
 
-```sql
-UNPIVOT
-```
+`UNPIVOT`
 
 ```sql
 3
 ```
 
-```sql
-DaysToManufacture
-```
+`DaysToManufacture`
 
 ```sql
 CREATE
-TABLE
-myTable
+TABLE myTable
 AS
-SELECT
-value
+SELECT value
 ,
-CAST
-(columnNames
-as
-VARCHAR
-(128) ) columnNames
-FROM
-myTableToUnpivot
-UNPIVOT
-(
+CAST (columnNames as
+VARCHAR (128) ) columnNames
+FROM myTableToUnpivot
+UNPIVOT (
 value
-FOR
-columnNames
-IN
-( col1, col2 )) unpvt;
+FOR columnNames
+IN ( col1, col2 )) unpvt;
 ```
 
 ```sql
@@ -133,8 +108,7 @@ AdventureWorks2022;
 GO
 SELECT
 DaysToManufacture,
-AVG
-(StandardCost)
+AVG (StandardCost)
 AS
 AverageCost
 FROM

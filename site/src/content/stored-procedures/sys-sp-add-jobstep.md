@@ -146,11 +146,9 @@ Weekly Sales Data Backup
 ### Example 2
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_add_jobstep
+EXECUTE sp_add_jobstep
 @job_name = N
 'Weekly Sales Data Backup'
 ,

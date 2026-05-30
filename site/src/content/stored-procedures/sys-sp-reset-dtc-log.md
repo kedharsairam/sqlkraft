@@ -45,6 +45,5 @@ sp_reset_dtc_log
 ### Example 4
 
 ```sql
-EXECUTE
-sp_reset_dtc_log;
+EXECUTE sp_reset_dtc_log;
 ```

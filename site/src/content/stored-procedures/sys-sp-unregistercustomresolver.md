@@ -14,9 +14,7 @@ Unregisters a previously registered business logic module. Business logic can be
 
 ## Syntax
 
-```sql
-sp_unregistercustomresolver
-```
+`sp_unregistercustomresolver`
 
 ## Permissions
 

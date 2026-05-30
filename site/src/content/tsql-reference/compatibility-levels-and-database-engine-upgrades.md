@@ -31,13 +31,9 @@ sys.databases
 
 .
 
-SQL
-
 To determine the version of the Database Engine that you're connected to, execute the
 
 following query.
-
-SQL
 
 Database compatibility level is a valuable tool to help with database modernization by allowing
 
@@ -81,13 +77,7 @@ Compatibility certification
 
 ### protected
 
-### datetime
-
-### datetime2
-
-```sql
-compatibility_level
-```
+`compatibility_level`
 
 ```sql
 SELECT
@@ -95,8 +85,7 @@ SELECT
 name
 ],
 compatibility_level
-FROM
-sys.databases;
+FROM sys.databases;
 SELECT
 SERVERPROPERTY(
 'ProductVersion'

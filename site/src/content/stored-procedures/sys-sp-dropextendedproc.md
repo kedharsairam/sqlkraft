@@ -29,55 +29,39 @@ N
 
 ### Example 1
 
-```sql
-sp_dropextendedproc
-```
+`sp_dropextendedproc`
 
 ### Example 2
 
-```sql
-master
-```
+`master`
 
 ### Example 3
 
-```sql
-sp_dropextendedproc
-```
+`sp_dropextendedproc`
 
 ### Example 4
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
 ### Example 5
 
-```sql
-sp_dropextendedproc
-```
+`sp_dropextendedproc`
 
 ### Example 6
 
-```sql
-sp_dropextendedproc
-```
+`sp_dropextendedproc`
 
 ### Example 7
 
-```sql
-xp_hello
-```
+`xp_hello`
 
 ### Example 8
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_dropextendedproc
+EXECUTE sp_dropextendedproc
 'xp_hello'
 ;
 ```
@@ -85,17 +69,14 @@ sp_dropextendedproc
 ### Example 9
 
 ```sql
-EXECUTE
-sp_helpextendedproc xp_cmdshell;
+EXECUTE sp_helpextendedproc xp_cmdshell;
 GO
 ```
 
 ### Example 10
 
 ```sql
-sp_addextendedproc
-sp_dropextendedproc
-sp_helpextendedproc
+sp_addextendedproc sp_dropextendedproc sp_helpextendedproc
 ```
 
 _(... and 18 more examples)_

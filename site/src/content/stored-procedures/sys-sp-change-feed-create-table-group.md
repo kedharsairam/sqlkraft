@@ -23,8 +23,7 @@ SQL Server 2022 (16.x) and later versions Mirrored databases in Microsoft SQL da
 ## Syntax
 
 ```sql
-EXECUTE
-sys.sp_change_feed_create_table_group
+EXECUTE sys.sp_change_feed_create_table_group
 @table_group_id
 , @table_group_name
 , @workspace_id

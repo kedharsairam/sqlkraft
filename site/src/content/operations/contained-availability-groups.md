@@ -94,8 +94,5 @@ This concept differs from contained databases, which use a different mechanism f
 accounts, by storing the user information within the database itself. Contained databases only
 
 ```cmd
-master
-msdb
-master
-msdb
+master msdb master msdb
 ```

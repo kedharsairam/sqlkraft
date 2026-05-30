@@ -75,12 +75,6 @@ Unicode constants greater than 8000 bytes are typed as
 
 data.
 
-### bit
-
-### datetime
-
-### datetime
-
 ```sql
 N
 ```

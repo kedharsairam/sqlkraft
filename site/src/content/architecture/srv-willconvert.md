@@ -59,10 +59,8 @@ Use CLR integration instead.
 
 ```sql
 BOOL srv_willconvert (
-int
-srctype
+int srctype
 ,
-int
-desttype
+int desttype
 );
 ```

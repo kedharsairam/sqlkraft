@@ -30,8 +30,7 @@ Applies to: SQL Server Azure SQL Database Azure SQL Managed Instance SQL databas
 ### Example 1
 
 ```sql
-EXECUTE
-sp_helpsort;
+EXECUTE sp_helpsort;
 Server default collation
 ------------------------
 Latin1-General , case-sensitive , accent-sensitive , kanatype-insensitive , width-

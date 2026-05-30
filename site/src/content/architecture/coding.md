@@ -90,15 +90,13 @@ aren't supported for
 execution.
 
 ```sql
-Point
-struct
+Point struct
 Structure
 Point
 Microsoft.SqlServer.Server
 System.Data.SqlTypes
 Point
-System.Text
-using
+System.Text using
 System;
 using
 System.Data.SqlTypes;

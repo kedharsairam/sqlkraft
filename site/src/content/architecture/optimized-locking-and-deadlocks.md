@@ -76,8 +76,6 @@ session, which is enabled and active by default in SQL Server and Azure SQL Mana
 
 Consider the following query:
 
-SQL
-
 You can view the XML in the
 
 column inside SSMS, by selecting the cell that
@@ -116,8 +114,6 @@ locking enabled.
 
 First, create an example table and add data.
 
-SQL
-
 
 
 The following T-SQL batches, executed in sequence in two separate sessions, create a
@@ -126,19 +122,11 @@ deadlock.
 
 In session 1:
 
-SQL
-
 In session 2:
-
-SQL
 
 In session 1:
 
-SQL
-
 In session 2:
-
-SQL
 
 In this case, each session holds an exclusive (
 
@@ -182,93 +170,63 @@ Last updated on 11/18/2025
 
 Related content
 
-```sql
-SalesLT.ProductDescription
-```
+`SalesLT.ProductDescription`
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ring_buffer
-```
+`ring_buffer`
 
-```sql
-system_health
-```
+`system_health`
 
 ```sql
 FROM
 SalesLT.ProductDescription
-AS
-pd
+AS pd
 INNER
 JOIN
 SalesLT.ProductModelProductDescription
-AS
-pmpd
-ON
-pd.ProductDescriptionID = pmpd.ProductDescriptionID
+AS pmpd
+ON pd.ProductDescriptionID = pmpd.ProductDescriptionID
 INNER
 JOIN
 SalesLT.ProductModel
-AS
-pm
-ON
-pmpd.ProductModelID = pm.ProductModelID
+AS pm
+ON pmpd.ProductModelID = pm.ProductModelID
 INNER
 JOIN
 SalesLT.Product
-AS
-p
-ON
-pm.ProductModelID = p.ProductModelID
-WHERE
-p.Color =
+AS p
+ON pm.ProductModelID = p.ProductModelID
+WHERE p.Color =
 'Red'
 ;
 Msg 1205, Level 13, State 51, Line 7
-Transaction (Process ID 51) was deadlocked on lock resources with another process
-and has been chosen as the deadlock victim. Rerun the transaction.
-WITH
-cteDeadLocks ([Deadlock_XML])
-AS
-(
+Transaction (Process ID 51) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.
+WITH cteDeadLocks ([Deadlock_XML])
+AS (
 SELECT
-CAST
-(target_data
+CAST (target_data
 AS
 XML
 )
 AS
 [Deadlock_XML]
-FROM
-sys.dm_xe_sessions
-AS
-xs
+FROM sys.dm_xe_sessions
+AS xs
 INNER
-JOIN
-sys.dm_xe_session_targets
-AS
-xst
-ON
-xs.[address] = xst.event_session_address
-WHERE
-xs.[
+JOIN sys.dm_xe_session_targets
+AS xst
+ON xs.[address] = xst.event_session_address
+WHERE xs.[
 name
 ] =
 'system_health'
-AND
-xst.target_name =
+AND xst.target_name =
 'ring_buffer'
 )
-SELECT
-x.Graph.query(
+SELECT x.Graph.query(
 '(event/data/value/deadlock)[1]'
 )
 AS
@@ -279,15 +237,12 @@ list/process/@lastbatchstarted)[1]'
 ,
 'datetime2(3)'
 )
-AS
-when_occurred,
+AS when_occurred,
 DB_Name(x.Graph.value(
 '(event/data/value/deadlock/process-
 ```
 
-```sql
-Deadlock_XML
-```
+`Deadlock_XML`
 
 ```sql
 .xdl
@@ -297,9 +252,7 @@ Deadlock_XML
 .xdl
 ```
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
 ```sql
 U
@@ -316,42 +269,33 @@ list/process/@currentdb)[1]'
 ))
 AS
 DB
---Current database of the first listed
-process
-FROM
-(
+--Current database of the first listed process
+FROM (
 SELECT
 Graph.query(
 '.'
 )
 AS
 Graph
-FROM
-cteDeadLocks
-AS
-c
+FROM cteDeadLocks
+AS c
 CROSS
-APPLY
-c.
+APPLY c.
 [Deadlock_XML].nodes(
 'RingBufferTarget/event[@name="xml_deadlock_report"]'
 )
 AS
 Deadlock_Report(Graph))
-AS
-x
+AS x
 ORDER
-BY
-when_occurred
+BY when_occurred
 DESC
 ;
 ```
 
 ```sql
 CREATE
-TABLE
-t2
-(
+TABLE t2 (
 a
 INT
 PRIMARY
@@ -364,10 +308,8 @@ INT
 NULL
 );
 INSERT
-INTO
-t2
-VALUES
-(1, 10),
+INTO t2
+VALUES (1, 10),
 (2, 20),
 (3, 30);
 ```
@@ -390,49 +332,33 @@ S
 
 ```sql
 BEGIN
-TRANSACTION
-xactA;
-UPDATE
-t2
-SET
-b = b + 10
-WHERE
-a = 1;
+TRANSACTION xactA;
+UPDATE t2
+SET b = b + 10
+WHERE a = 1;
 BEGIN
-TRANSACTION
-xactB;
-UPDATE
-t2
-SET
-b = b + 10
-WHERE
-a = 2;
-UPDATE
-t2
-SET
-b = b + 100
-WHERE
-a = 2;
-UPDATE
-t2
-SET
-b = b + 20
-WHERE
-a = 1;
+TRANSACTION xactB;
+UPDATE t2
+SET b = b + 10
+WHERE a = 2;
+UPDATE t2
+SET b = b + 100
+WHERE a = 2;
+UPDATE t2
+SET b = b + 20
+WHERE a = 1;
 ```
 
 ```sql
 <deadlock>
 <victim-list>
-<victimProcess
-id
+<victimProcess id
 =
 "process12994344c58"
 />
 </victim-list>
 <process-list>
-<process
-id
+<process id
 =
 "process12994344c58"
 taskpriority
@@ -538,8 +464,7 @@ SET b = b + 20
 WHERE a = 1;
 </inputbuf>
 </process>
-<process
-id
+<process id
 =
 "process1299c969828"
 taskpriority
@@ -647,8 +572,7 @@ WHERE a = 2;
 </process>
 </process-list>
 <resource-list>
-<xactlock
-xdesIdLow
+<xactlock xdesIdLow
 =
 "2476"
 xdesIdHigh
@@ -665,8 +589,7 @@ mode
 "X"
 >
 <UnderlyingResource>
-<keylock
-hobtid
+<keylock hobtid
 =
 "72057594049593344"
 dbid
@@ -682,8 +605,7 @@ indexname
 />
 </UnderlyingResource>
 <owner-list>
-<owner
-id
+<owner id
 =
 "process1299c969828"
 mode
@@ -692,8 +614,7 @@ mode
 />
 </owner-list>
 <waiter-list>
-<waiter
-id
+<waiter id
 =
 "process12994344c58"
 mode
@@ -708,8 +629,7 @@ requestType
 ```
 
 ```sql
-<xactlock
-xdesIdLow
+<xactlock xdesIdLow
 =
 "2477"
 xdesIdHigh
@@ -726,8 +646,7 @@ mode
 "X"
 >
 <UnderlyingResource>
-<keylock
-hobtid
+<keylock hobtid
 =
 "72057594049593344"
 dbid
@@ -743,8 +662,7 @@ indexname
 />
 </UnderlyingResource>
 <owner-list>
-<owner
-id
+<owner id
 =
 "process12994344c58"
 mode
@@ -753,8 +671,7 @@ mode
 />
 </owner-list>
 <waiter-list>
-<waiter
-id
+<waiter id
 =
 "process1299c969828"
 mode

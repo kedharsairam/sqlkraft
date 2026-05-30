@@ -40,25 +40,18 @@ SQL database in Microsoft Fabric Sets option values for user-defined tables. can
 ```sql
 sp_tableoption
 [ @
-T
-able
-N
-ame
-P
-attern = ]
+T able
+N ame
+P attern = ]
 N
 'TableNamePattern'
 , [ @
-O
-ption
-N
-ame = ]
+O ption
+N ame = ]
 'OptionName'
 , [ @
-O
-ption
-V
-alue = ]
+O ption
+V alue = ]
 'OptionValue'
 [ ; ]
 ```

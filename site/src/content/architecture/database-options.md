@@ -87,8 +87,7 @@ Expand table
 Expand table
 
 ```sql
-sp_attach_db
-sp_attach_single_file_db
+sp_attach_db sp_attach_single_file_db
 CREATE DATABASE
 ```
 
@@ -101,17 +100,8 @@ FOR ATTACH_REBUILD_LOG
 ```
 
 ```sql
-sp_attach_db
-sp_attach_single_file_db
-sp_certify_removable
-sp_create_removable
-sp_detach_db
-sp_certify_removable
-sp_create_removable
-sp_dbremove
-DROP DATABASE
-sp_dbremove
-sp_renamedb
+sp_attach_db sp_attach_single_file_db sp_certify_removable sp_create_removable sp_detach_db sp_certify_removable sp_create_removable sp_dbremove
+DROP DATABASE sp_dbremove sp_renamedb
 MODIFY NAME
 ```
 
@@ -121,13 +111,10 @@ ALTER DATABASE
 
 ```sql
 CREATE DEFAULT
-DROP DEFAULT
-sp_bindefault
+DROP DEFAULT sp_bindefault
 ```
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
 ```sql
 CREATE TABLE
@@ -138,8 +125,7 @@ ALTER TABLE
 ```
 
 ```sql
-sp_bindefault
-sp_unbindefault
+sp_bindefault sp_unbindefault
 CREATE RULE
 DROP RULE
 ```
@@ -158,9 +144,7 @@ ALTER TABLE
 ```
 
 ```sql
-sp_bindrule
-sp_unbindrule
-sp_change_users_login
+sp_bindrule sp_unbindrule sp_change_users_login
 ```
 
 ```sql
@@ -168,42 +152,27 @@ ALTER USER
 ```
 
 ```sql
-sp_change_users_login
-sp_depends
-sys.dm_sql_referencing_entities
+sp_change_users_login sp_depends sys.dm_sql_referencing_entities
 ```
 
 ```sql
-sys.dm_sql_referenced_entities
-sp_depends
-sp_getbindtoken
+sys.dm_sql_referenced_entities sp_depends sp_getbindtoken
 ```
 
-```sql
-sp_getbindtoken
-```
+`sp_getbindtoken`
+
+`sp_bindsession`
 
 ```sql
-sp_bindsession
-```
-
-```sql
-sp_bindsession
-sp_resetstatus
+sp_bindsession sp_resetstatus
 ALTER DATABASE SET
 ```
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-EMERGENCY
-```
+`EMERGENCY`
 
-```sql
-TORN_PAGE_DETECTION
-```
+`TORN_PAGE_DETECTION`
 
 ```sql
 ALTER

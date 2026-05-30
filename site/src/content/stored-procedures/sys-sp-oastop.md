@@ -18,8 +18,7 @@ Stops the server-wide OLE Automation stored procedure execution environment. Tra
 ## Syntax
 
 ```sql
-EXECUTE
-sp_OAStop;
+EXECUTE sp_OAStop;
 GO
 ```
 
@@ -32,7 +31,6 @@ GO
 ### Example 1
 
 ```sql
-EXECUTE
-sp_OAStop;
+EXECUTE sp_OAStop;
 GO
 ```

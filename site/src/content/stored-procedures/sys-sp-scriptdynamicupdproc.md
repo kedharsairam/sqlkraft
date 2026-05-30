@@ -14,9 +14,7 @@ statement that creates a dynamic update stored procedure. statement within the c
 
 ## Syntax
 
-```sql
-sp_scriptdynamicupdproc
-```
+`sp_scriptdynamicupdproc`
 
 ## Remarks
 
@@ -64,15 +62,11 @@ includes only the columns that have changed, which provides an optimal
 
 ### Example 1
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ### Example 2
 
-```sql
-sp_scriptdynamicupdproc
-```
+`sp_scriptdynamicupdproc`
 
 ### Example 3
 
@@ -82,81 +76,61 @@ sp_scriptdynamicupdproc
 
 ### Example 4
 
-```sql
-authors
-```
+`authors`
 
 ### Example 5
 
-```sql
-pubs
-```
+`pubs`
 
 ### Example 6
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ### Example 7
 
 ```sql
-'MCALL
-sp_mupd_authors'
+'MCALL sp_mupd_authors'
 ```
 
 ### Example 8
 
 ```sql
-EXECUTE
-sp_scriptdynamicupdproc @artid =
+EXECUTE sp_scriptdynamicupdproc @artid =
 '1'
 ;
 CREATE
 PROCEDURE
 [sp_mupd_authors] (@c1
-VARCHAR
-(11),
+VARCHAR (11),
 @c2
-VARCHAR
-(40),
+VARCHAR (40),
 @c3
-VARCHAR
-(20),
+VARCHAR (20),
 @c4
-CHAR
-(12),
+CHAR (12),
 @c5
-VARCHAR
-(40),
+VARCHAR (40),
 @c6
-VARCHAR
-(20),
+VARCHAR (20),
 @c7
-CHAR
-(2),
+CHAR (2),
 @c8
-CHAR
-(5),
+CHAR (5),
 @c9
 BIT
 ,
 @pkc1
-VARCHAR
-(11),
+VARCHAR (11),
 @
 bitmap
-BINARY
-(2))
+BINARY (2))
 AS
 DECLARE
 @stmt
 AS
-NVARCHAR
-(4000), @spacer
+NVARCHAR (4000), @spacer
 AS
-NVARCHAR
-(1);
+NVARCHAR (1);
 SELECT
 @spacer = N
 ''

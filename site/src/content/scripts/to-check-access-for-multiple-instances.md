@@ -17,8 +17,7 @@ Param([String] $InputFile)
 Function Test-SQLConn ($Server)
 {
 $connectionString = "Data Source=[datasource];Integrated Security=true;Initial Catalog=[database];Connect Timeout=3;"
-$sqlConn = new-object ("Data.SqlClient.SqlConnection") $connectionString
-trap
+$sqlConn = new-object ("Data.SqlClient.SqlConnection") $connectionString trap
 {
 Write-output "$instance Cannot connect.";
 continue

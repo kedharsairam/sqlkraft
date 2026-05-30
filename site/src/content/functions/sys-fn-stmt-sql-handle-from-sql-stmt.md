@@ -22,8 +22,7 @@ SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric for a
 ## Syntax
 
 ```sql
-sys.fn_stmt_sql_handle_from_sql_stmt
-(
+sys.fn_stmt_sql_handle_from_sql_stmt (
 N
 'query_sql_text'
 , [ query_param_type ]
@@ -35,27 +34,19 @@ N
 
 ### Example 1
 
-```sql
-sys.fn_stmt_sql_handle_from_sql_stmt
-```
+`sys.fn_stmt_sql_handle_from_sql_stmt`
 
 ### Example 2
 
-```sql
-statement_sql_handle
-```
+`statement_sql_handle`
 
 ### Example 3
 
-```sql
-query_sql_text
-```
+`query_sql_text`
 
 ### Example 4
 
-```sql
-query_parameterization_type
-```
+`query_parameterization_type`
 
 ### Example 5
 
@@ -71,29 +62,22 @@ query_parameterization_type
 
 ### Example 7
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
 ### Example 8
 
-```sql
-DELETE
-```
+`DELETE`
 
 ### Example 9
 
-```sql
-sys.fn_stmt_sql_handle_from_sql_stmt
-```
+`sys.fn_stmt_sql_handle_from_sql_stmt`
 
 ### Example 10
 
 ```sql
 SELECT
 *
-FROM
-sys.databases;
+FROM sys.databases;
 ```
 
 _(... and 1 more examples)_

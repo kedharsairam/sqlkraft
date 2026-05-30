@@ -91,8 +91,6 @@ column is added and is then
 
 specified in the ORDER BY clause.
 
-SQL
-
 ```sql
 [Summary!2!ProductModelID!HIDE]
 [ProductModel!1!ProdModelID]
@@ -117,32 +115,23 @@ USE
 AdventureWorks2022;
 GO
 SELECT
-1
-as
+1 as
 Tag,
-0
-as
+0 as
 Parent
 ,
-ProductModelID
-as
+ProductModelID as
 [ProductModel!1!ProdModelID],
-Name
-as
+Name as
 [ProductModel!1!
 Name
 ],
-NULL
-as
+NULL as
 [Summary!2!ProductModelID!hide],
-NULL
-as
+NULL as
 [Summary!2!SummaryDescription]
 FROM
 Production.ProductModel
 WHERE
-CatalogDescription
-is
-not
-null
+CatalogDescription is not null
 ```

@@ -6,8 +6,6 @@ tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 The Database Engine uses deferred name resolution, where object names are resolved at
 
 execution time, not at compilation time. In the following example, the first two
@@ -19,8 +17,6 @@ table after
 the third
 
 statement generates a run-time error by referring to a table that doesn't exist.
-
-SQL
 
 The Database Engine uses the following mechanisms to ensure the integrity of transactions and
 
@@ -46,17 +42,11 @@ versions to view data as it existed at the start of the transaction or statement
 
 ### Uncommitted dependency (dirty read)
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-TestBatch
-```
+`TestBatch`
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 CREATE
@@ -66,28 +56,24 @@ INT
 PRIMARY
 KEY
 , ColB
-CHAR
-(3));
+CHAR (3));
 GO
 INSERT
 INTO
 TestBatch
-VALUES
-(1,
+VALUES (1,
 'aaa'
 );
 INSERT
 INTO
 TestBatch
-VALUES
-(2,
+VALUES (2,
 'bbb'
 );
 INSERT
 INTO
 TestBatch
-VALUES
-(1,
+VALUES (1,
 'ccc'
 );
 -- Duplicate key error.
@@ -105,28 +91,24 @@ INT
 PRIMARY
 KEY
 , ColB
-CHAR
-(3));
+CHAR (3));
 GO
 INSERT
 INTO
 TestBatch
-VALUES
-(1,
+VALUES (1,
 'aaa'
 );
 INSERT
 INTO
 TestBatch
-VALUES
-(2,
+VALUES (2,
 'bbb'
 );
 INSERT
 INTO
 TestBch
-VALUES
-(3,
+VALUES (3,
 'ccc'
 );
 -- Table name error.

@@ -62,21 +62,15 @@ when determining whether columns have changed for all rows of a returned result 
 
 ### Example 1
 
-```sql
-sys.fn_cdc_is_bit_set
-```
+`sys.fn_cdc_is_bit_set`
 
 ### Example 2
 
-```sql
-cdc.fn_cdc_get_all_changes_HR_Department
-```
+`cdc.fn_cdc_get_all_changes_HR_Department`
 
 ### Example 3
 
-```sql
-IsGroupNmUpdated
-```
+`IsGroupNmUpdated`
 
 ### Example 4
 

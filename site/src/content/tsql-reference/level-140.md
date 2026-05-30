@@ -121,8 +121,6 @@ consecutive executions. This is enabled via
 
 which will update
 
-
-
 Expand table
 
 #### Compatibility level setting of 130 or lower

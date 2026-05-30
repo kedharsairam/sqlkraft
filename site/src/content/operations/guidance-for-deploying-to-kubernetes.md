@@ -86,7 +86,6 @@ instead.
 ```cmd
 replicas
 1
-1
-replicas
+1 replicas
 2
 ```

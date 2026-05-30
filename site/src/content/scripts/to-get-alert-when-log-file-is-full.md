@@ -23,15 +23,13 @@ WITH NOFORMAT, NOINIT,  NAME = N'test-Full Database Backup', SKIP, NOREWIND, NOU
 GO
 
 use test
-GO
-create table test(id int,name varchar(100),location varchar(100))
+GO create table test(id int,name varchar(100),location varchar(100))
 
 insert into test values(1,'harsha','india')
 GO 2000
 
 -- Query to get detailed information about database files
-SELECT
-    db.name AS [Database Name],
+SELECT db.name AS [Database Name],
     mf.name AS [File Name],
     mf.physical_name AS [Physical File Name],
     mf.type_desc AS [File Type],
@@ -42,13 +40,10 @@ SELECT
         ELSE CAST(mf.growth * 8 / 1024 AS NVARCHAR(20)) + ' MB'
     END AS [Autogrowth],
     mf.max_size AS [Max Size]
-FROM
-    sys.master_files mf
-JOIN
-    sys.databases db ON mf.database_id = db.database_id
+FROM sys.master_files mf
+JOIN sys.databases db ON mf.database_id = db.database_id
 	 WHERE db.name = 'TEST'
-ORDER BY
-    db.name, mf.type_desc;
+ORDER BY db.name, mf.type_desc;
 
  DECLARE
        @dbname VARCHAR(100) = NULL,

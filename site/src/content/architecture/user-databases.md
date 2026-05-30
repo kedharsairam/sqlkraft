@@ -110,6 +110,5 @@ information, see
 .
 
 ```sql
-FILENAME
-sys.dm_db_persisted_sku_features
+FILENAME sys.dm_db_persisted_sku_features
 ```

@@ -81,15 +81,11 @@ using
 System.IO;
 using
 System.Collections;
-public
-class
+public class
 XsdSchemaNormalizer
 {
-private
-static
-bool
-NormalizeXmlSchema
-( String url, TextWriter writer )
+private static bool
+NormalizeXmlSchema ( String url, TextWriter writer )
 {
 try
 {
@@ -99,8 +95,7 @@ XmlTextReader( url );
 XmlSchema sch = XmlSchema.Read( txtRead,
 null
 );
-// Compiling Schema
-sch.Compile(
+// Compiling Schema sch.Compile(
 null
 );
 ```

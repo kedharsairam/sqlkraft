@@ -74,6 +74,4 @@ locking critical resources until they respond, which might not happen for severa
 
 even hours.
 
-```sql
-SELECT
-```
+`SELECT`

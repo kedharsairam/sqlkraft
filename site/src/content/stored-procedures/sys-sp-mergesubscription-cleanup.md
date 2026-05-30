@@ -14,6 +14,4 @@ Removes metadata, such as triggers and entries, in after the specified merge pus
 
 ## Syntax
 
-```sql
-sysmergesubscriptions
-```
+`sysmergesubscriptions`

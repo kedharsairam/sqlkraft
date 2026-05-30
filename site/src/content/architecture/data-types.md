@@ -37,8 +37,6 @@ SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
 
-SQL
-
 database in Microsoft Fabric
 
 There are two types of spatial data. The

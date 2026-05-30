@@ -125,8 +125,6 @@ Cardinality Estimation Model 130, which is visible from a
 
 Query plan.
 
-
-
 Expand table
 
 #### Compatibility level setting of 120 or lower
@@ -271,72 +269,42 @@ SQL Server and Azure SQL
 
 #### Compatibility level setting of 120
 
-#### date
+`sp_execute_external_script`
 
-```sql
-sp_execute_external_script
-```
+`sp_execute_external_script`
 
-```sql
-sp_execute_external_script
-```
+`INSERT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-INSERT
-```
+`SELECT`
 
-```sql
-SELECT
-```
+`INSERT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-INSERT
-```
-
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 CardinalityEstimationModelVersion="120"
 ```
 
-```sql
-LAG
-```
+`LAG`
 
-```sql
-LEAD
-```
+`LEAD`
 
 ```sql
 MAXDOP 1
 ```
 
-```sql
-LAG
-```
+`LAG`
 
-```sql
-LEAD
-```
+`LEAD`
 
 ```sql
 MAXDOP 1
 ```
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-ON
-```
+`ON`

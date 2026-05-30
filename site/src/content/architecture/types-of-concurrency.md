@@ -6,8 +6,6 @@ tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 Missing an updated row or seeing an updated row multiple times
 
 Transactions that are running at the
@@ -60,21 +58,15 @@ isolation level.
 READ UNCOMMITTED
 ```
 
-```sql
-NOLOCK
-```
+`NOLOCK`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
 ```sql
 READ UNCOMMITTED
@@ -87,8 +79,7 @@ READ COMMITTED
 ```sql
 SELECT
 ID
-FROM
-dbo.employee
+FROM dbo.employee
 WHERE
 ID
 > 5
@@ -98,12 +89,10 @@ ID
 --The INSERT statement from the second transaction occurs here.
 SELECT
 ID
-FROM
-dbo.employee
+FROM dbo.employee
 WHERE
 ID
-> 5
-and
+> 5 and
 ID
 < 10;
 COMMIT
@@ -112,14 +101,12 @@ COMMIT
 BEGIN
 TRAN;
 INSERT
-INTO
-dbo.employee (
+INTO dbo.employee (
 Id
 ,
 Name
 )
-VALUES
-(6 ,
+VALUES (6 ,
 'New'
 );
 COMMIT

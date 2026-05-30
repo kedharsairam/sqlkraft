@@ -118,8 +118,6 @@ target of the
 
 session:
 
-SQL
-
 Here's the result set.
 
 
@@ -134,45 +132,25 @@ XML
 SET DEADLOCK_PRIORITY
 ```
 
-```sql
-DEADLOCK_PRIORITY
-```
+`DEADLOCK_PRIORITY`
 
-```sql
-LOW
-```
+`LOW`
 
-```sql
-NORMAL
-```
+`NORMAL`
 
-```sql
-HIGH
-```
+`HIGH`
 
-```sql
-NORMAL
-```
+`NORMAL`
 
-```sql
-xml_deadlock_report
-```
+`xml_deadlock_report`
 
-```sql
-xml_deadlock_report
-```
+`xml_deadlock_report`
 
-```sql
-xml_deadlock_report
-```
+`xml_deadlock_report`
 
-```sql
-xml_deadlock_report
-```
+`xml_deadlock_report`
 
-```sql
-system_health
-```
+`system_health`
 
 ```sql
 victim-list
@@ -186,66 +164,43 @@ process-list
 resource-list
 ```
 
-```sql
-event_file
-```
+`event_file`
+
+`system_health`
+
+`xml_deadlock_report`
+
+`ring_buffer`
+
+`system_health`
 
 ```sql
-system_health
-```
-
-```sql
-xml_deadlock_report
-```
-
-```sql
-ring_buffer
-```
-
-```sql
-system_health
-```
-
-```sql
-SELECT
-xdr.value(
+SELECT xdr.value(
 '@timestamp'
 ,
 'datetime'
 )
-AS
-deadlock_time,
+AS deadlock_time,
 xdr.query(
 '.'
 )
-AS
-event_data
-FROM
-(
+AS event_data
+FROM (
 SELECT
-CAST
-([target_data]
+CAST ([target_data]
 AS
 XML
 )
-AS
-target_data
-FROM
-sys.dm_xe_session_targets
-AS
-xt
+AS target_data
+FROM sys.dm_xe_session_targets
+AS xt
 INNER
-JOIN
-sys.dm_xe_sessions
-AS
-xs
-ON
-xs.address = xt.event_session_address
-WHERE
-xs.name = N
+JOIN sys.dm_xe_sessions
+AS xs
+ON xs.address = xt.event_session_address
+WHERE xs.name = N
 'system_health'
-AND
-xt.target_name = N
+AND xt.target_name = N
 'ring_buffer'
 )
 AS
@@ -258,19 +213,15 @@ Target_Data.nodes(
 AS
 XEventData(xdr)
 ORDER
-BY
-deadlock_time
+BY deadlock_time
 DESC
 ;
 ```
 
-```sql
-event_data
-```
+`event_data`
 
 ```sql
-<event
-name
+<event name
 =
 "xml_deadlock_report"
 package
@@ -281,13 +232,11 @@ timestamp
 "2022-02-
 18T08:26:24.698Z"
 >
-<data
-name
+<data name
 =
 "xml_report"
 >
-<type
-name
+<type name
 =
 "xml"
 package
@@ -297,15 +246,13 @@ package
 <value>
 <deadlock>
 <victim-list>
-<victimProcess
-id
+<victimProcess id
 =
 "process27b9b0b9848"
 />
 </victim-list>
 <process-list>
-<process
-id
+<process id
 =
 "process27b9b0b9848"
 taskpriority
@@ -402,8 +349,7 @@ clientoption2
 "128056"
 >
 <executionStack>
-<frame
-procname
+<frame procname
 =
 "AdventureWorks2022.dbo.p1"
 line
@@ -422,8 +368,7 @@ sqlhandle
 >
 SELECT c2, c3 FROM t1 WHERE c2 BETWEEN @p1 AND @p1+
 </frame>
-<frame
-procname
+<frame procname
 =
 "adhoc"
 line
@@ -451,8 +396,7 @@ EXEC p1 4
 END
 </inputbuf>
 </process>
-<process
-id
+<process id
 =
 "process27b9ee33c28"
 taskpriority
@@ -552,8 +496,7 @@ clientoption2
 "128056"
 >
 <executionStack>
-<frame
-procname
+<frame procname
 =
 "AdventureWorks2022.dbo.p2"
 line
@@ -572,8 +515,7 @@ sqlhandle
 >
 UPDATE t1 SET c2 = c2+1 WHERE c1 = @p
 </frame>
-<frame
-procname
+<frame procname
 =
 "adhoc"
 line
@@ -603,8 +545,7 @@ END
 </process>
 </process-list>
 <resource-list>
-<keylock
-hobtid
+<keylock hobtid
 =
 "72057594214350848"
 dbid
@@ -627,8 +568,7 @@ associatedObjectId
 "72057594214350848"
 >
 <owner-list>
-<owner
-id
+<owner id
 =
 "process27b9ee33c28"
 mode
@@ -637,8 +577,7 @@ mode
 />
 </owner-list>
 <waiter-list>
-<waiter
-id
+<waiter id
 =
 "process27b9b0b9848"
 mode
@@ -650,8 +589,7 @@ requestType
 />
 </waiter-list>
 </keylock>
-<keylock
-hobtid
+<keylock hobtid
 =
 "72057594214416384"
 dbid
@@ -674,8 +612,7 @@ associatedObjectId
 "72057594214416384"
 >
 <owner-list>
-<owner
-id
+<owner id
 =
 "process27b9b0b9848"
 mode
@@ -684,8 +621,7 @@ mode
 />
 </owner-list>
 <waiter-list>
-<waiter
-id
+<waiter id
 =
 "process27b9ee33c28"
 mode

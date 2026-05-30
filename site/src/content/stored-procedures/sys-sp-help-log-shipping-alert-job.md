@@ -14,9 +14,7 @@ This stored procedure returns the job ID of the alert job from the log shipping 
 
 ## Syntax
 
-```sql
-sp_help_log_shipping_alert_job
-```
+`sp_help_log_shipping_alert_job`
 
 ## Permissions
 

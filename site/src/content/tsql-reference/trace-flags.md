@@ -83,8 +83,6 @@ Warning
 
 : Trace flag 102 isn't meant to be enabled continuously in a production environment, but
 
-
-
 Expand table
 
 #### Trace
@@ -164,8 +162,6 @@ Warning
 : Trace flag 139 isn't meant to be enabled continuously in a production environment, and
 
 should be used for the sole purpose of performing database validation checks described in
-
-SQL
 
 Server and Azure SQL Database improvements in handling some data types and uncommon
 
@@ -5456,41 +5452,24 @@ dbcc-traceon-trace-flags-transact-sql#tf1118
 ```
 
 ```sql
-SELECT
-x
-FROM
-correlated
-WHERE
-f1 = 0
-AND
-f2 = 1
-OPTION
-(QUERYTRACEON 4199, QUERYTRACEON 4137);
+SELECT x
+FROM correlated
+WHERE f1 = 0
+AND f2 = 1
+OPTION (QUERYTRACEON 4199, QUERYTRACEON 4137);
 ```
 
-```sql
-DBCC
-```
+`DBCC`
 
-```sql
-GetXpVersion()
-```
+`GetXpVersion()`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-IDENTITY_CACHE
-```
+`IDENTITY_CACHE`
 
-```sql
-VERBOSE_TRUNCATION_WARNINGS
-```
+`VERBOSE_TRUNCATION_WARNINGS`
 
-```sql
-ALLOW_PAGE_LOCKS
-```
+`ALLOW_PAGE_LOCKS`
 
 ```sql
 ALTER INDEX...REORGANIZE
@@ -5500,21 +5479,13 @@ ALTER INDEX...REORGANIZE
 ALTER INDEX...REBUILD
 ```
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
-```sql
-sp_tableoption
-```
+`sp_tableoption`
 
-```sql
-AUTOGROW_SINGLE_FILE
-```
+`AUTOGROW_SINGLE_FILE`
 
-```sql
-AUTOGROW_ALL_FILES
-```
+`AUTOGROW_ALL_FILES`
 
 ```sql
 ALTER DATABASE
@@ -5524,69 +5495,43 @@ ALTER DATABASE
 ALTER DATABASE
 ```
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-LOCK_ESCALATION
-```
+`LOCK_ESCALATION`
 
 ```sql
 ALTER PARTITION FUNCTION
 ```
 
-```sql
-SYNCHRONIZED
-```
+`SYNCHRONIZED`
 
-```sql
-SYNCHRONIZED
-```
+`SYNCHRONIZED`
 
 ```sql
 USE HINT 'FORCE_DEFAULT_CARDINALITY_ESTIMATION'
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 USE HINT 'DISABLE_OPTIMIZED_NESTED_LOOP'
 ```
 
-```sql
-REQUEST_MAX_CPU_TIME_SEC
-```
+`REQUEST_MAX_CPU_TIME_SEC`
 
-```sql
-ParameterRuntimeValue
-```
+`ParameterRuntimeValue`
 
-```sql
-sys.dm_exec_query_statistics_xml
-```
+`sys.dm_exec_query_statistics_xml`
 
-```sql
-sys.dm_exec_query_statistics_xml
-```
+`sys.dm_exec_query_statistics_xml`
 
-```sql
-FORCE_SHOWPLAN_RUNTIME_PARAMETER_COLLECTION
-```
+`FORCE_SHOWPLAN_RUNTIME_PARAMETER_COLLECTION`
 
-```sql
-sys.dm_exec_query_plan_stats
-```
+`sys.dm_exec_query_plan_stats`
 
 ```sql
 INSERT INTO ... SELECT
@@ -5621,13 +5566,9 @@ CHECKDB
 DBCC CHECKDB
 ```
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
 ```sql
 DBCC CHECKDB
@@ -5641,9 +5582,7 @@ DBCC CHECKDB
 DBCC CHECKDB
 ```
 
-```sql
-PHYSICAL_ONLY
-```
+`PHYSICAL_ONLY`
 
 ```sql
 DBCC CHECKDB
@@ -5657,17 +5596,11 @@ DBCC CHECKDB
 DBCC CHECKDB
 ```
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 DBCC CHECKDB
@@ -5677,9 +5610,7 @@ DBCC CHECKDB
 DBCC CHECKDB
 ```
 
-```sql
-PHYSICAL_ONLY
-```
+`PHYSICAL_ONLY`
 
 ```sql
 DBCC CHECKDB
@@ -5689,9 +5620,7 @@ DBCC CHECKDB
 DBCC CHECKDB
 ```
 
-```sql
-DATA_PURITY
-```
+`DATA_PURITY`
 
 ```sql
 DBCC CHECKDB WITH DATA_PURITY
@@ -5724,41 +5653,23 @@ SQLDmpr0024.P26900.66D498FA.T20240117034050.{eec59a9e-
 d615-4ac4-a46a-f650fee23787}.dmp
 ```
 
-```sql
-CHECKSUM
-```
+`CHECKSUM`
 
-```sql
-BACKUP
-```
+`BACKUP`
 
-```sql
-DUMP
-```
+`DUMP`
 
-```sql
-BACKUP
-```
+`BACKUP`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-master
-```
+`master`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-model
-```
+`model`
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 '******'
@@ -5768,9 +5679,7 @@ tempdb
 SPID = -2
 ```
 
-```sql
-OPTION(RECOMPILE)
-```
+`OPTION(RECOMPILE)`
 
 ```sql
 WITH RECOMPILE
@@ -5780,9 +5689,7 @@ WITH RECOMPILE
 OPTIMIZE FOR <value>
 ```
 
-```sql
-PARAMETER_SNIFFING
-```
+`PARAMETER_SNIFFING`
 
 ```sql
 OPTIMIZE FOR UNKNOWN
@@ -5800,21 +5707,15 @@ USE HINT 'DISABLE_PARAMETER_SNIFFING'
 USE HINT 'ASSUME_MIN_SELECTIVITY_FOR_FILTER_ESTIMATES'
 ```
 
-```sql
-TOP
-```
+`TOP`
 
 ```sql
 OPTION (FAST <n>)
 ```
 
-```sql
-IN
-```
+`IN`
 
-```sql
-EXISTS
-```
+`EXISTS`
 
 ```sql
 USE HINT 'DISABLE_OPTIMIZER_ROWGOAL'
@@ -5824,17 +5725,13 @@ USE HINT 'DISABLE_OPTIMIZER_ROWGOAL'
 USE HINT 'ENABLE_HIST_AMENDMENT_FOR_ASC_KEYS'
 ```
 
-```sql
-QUERY_OPTIMIZER_HOTFIXES
-```
+`QUERY_OPTIMIZER_HOTFIXES`
 
 ```sql
 USE HINT 'ENABLE_QUERY_OPTIMIZER_HOTFIXES'
 ```
 
-```sql
-QUERYTRACEON
-```
+`QUERYTRACEON`
 
 ```sql
 CREATE CREDENTAIL WITH IDENTITY = 'Managed Identity'
@@ -5848,61 +5745,35 @@ CREATE CREDENTIAL
 ALTER DATABASE <database_name> SET ENCRYPTION ON
 ```
 
-```sql
-NUMBER
-```
+`NUMBER`
 
 ```sql
 SHUTDOWN WITH NOWAIT
 ```
 
-```sql
-SPINLOCK_EXT
-```
+`SPINLOCK_EXT`
 
-```sql
-SOS_BLOCKALLOCPARTIALLIST
-```
+`SOS_BLOCKALLOCPARTIALLIST`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-safe_cleanup_version()
-```
+`safe_cleanup_version()`
 
-```sql
-sys.sp_flush_commit_table_on_demand
-```
+`sys.sp_flush_commit_table_on_demand`
 
 ```sql
 m_versionStatus.IsVisible ()
@@ -5912,29 +5783,19 @@ m_versionStatus.IsVisible ()
 FORCE ORDER
 ```
 
-```sql
-FORCESEEK
-```
+`FORCESEEK`
 
-```sql
-FORCESEEK
-```
+`FORCESEEK`
 
 ```sql
 FORCE ORDER
 ```
 
-```sql
-KTM_RECOVERY_MANAGER
-```
+`KTM_RECOVERY_MANAGER`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 USE HINT
@@ -5949,13 +5810,9 @@ BULK INSERT
 BULK INSERT
 ```
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 USE HINT 'ASSUME_MIN_SELECTIVITY_FOR_FILTER_ESTIMATES'
@@ -5965,9 +5822,7 @@ USE HINT 'ASSUME_MIN_SELECTIVITY_FOR_FILTER_ESTIMATES'
 USE HINT 'ASSUME_JOIN_PREDICATE_DEPENDS_ON_FILTERS'
 ```
 
-```sql
-LEGACY_CARDINALITY_ESTIMATION
-```
+`LEGACY_CARDINALITY_ESTIMATION`
 
 ```sql
 USE HINT 'FORCE_LEGACY_CARDINALITY_ESTIMATION'
@@ -5977,33 +5832,21 @@ USE HINT 'FORCE_LEGACY_CARDINALITY_ESTIMATION'
 DBCC SHOW_STATISTICS
 ```
 
-```sql
-INSERT...SELECT
-```
+`INSERT...SELECT`
 
-```sql
-PREMPTIVE_OS_FINDFILE
-```
+`PREMPTIVE_OS_FINDFILE`
 
-```sql
-PREEMPTIVE_OS_CREATEDIRECTORY
-```
+`PREEMPTIVE_OS_CREATEDIRECTORY`
 
 ```sql
 query wait (s)
 ```
 
-```sql
-REQUEST_MEMORY_GRANT_TIMEOUT_SEC
-```
+`REQUEST_MEMORY_GRANT_TIMEOUT_SEC`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 ALTER INDEX ... REORGANIZE
@@ -6021,9 +5864,7 @@ WITH SID = <sid>, TYPE = [E|X]
 CREATE USER
 ```
 
-```sql
-external_policy_permission_checked
-```
+`external_policy_permission_checked`
 
 ```sql
 SSBDT: Dialog timer delete during registration
@@ -6033,18 +5874,10 @@ SSBDT: Dialog timer delete during registration
 SSBDT: Dialog timer delete during dispatch
 ```
 
-```sql
-sp_lock
-```
+`sp_lock`
 
-```sql
-sp_server_diagnostics
-```
+`sp_server_diagnostics`
 
-```sql
-sp_server_diagnostics
-```
+`sp_server_diagnostics`
 
-```sql
-Encrypt
-```
+`Encrypt`

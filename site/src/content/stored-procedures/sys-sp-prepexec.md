@@ -38,8 +38,7 @@ Out
 AS
 INT
 ;
-EXECUTE
-sp_prepexec
+EXECUTE sp_prepexec
 @
 Out
 OUTPUT
@@ -57,8 +56,7 @@ WHERE name=@P1 AND state_desc = @P2'
 @P2 =
 'ONLINE'
 ;
-EXECUTE
-sp_unprepare @
+EXECUTE sp_unprepare @
 Out
 ;
 ```

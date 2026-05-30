@@ -39,38 +39,26 @@ instance of the Database Engine. Parts of the code are used as examples in the r
 
 articles for the OLE Automation system stored procedures.
 
-SQL
-
 ```sql
 USE
 AdventureWorks2022;
 GO
 DECLARE
 @
-Object
-int
+Object int
 ;
 DECLARE
-@HR
-int
+@HR int
 ;
 DECLARE
-@Property
-nvarchar
-(255);
+@Property nvarchar (255);
 DECLARE
 @
-Return
-nvarchar
-(255);
+Return nvarchar (255);
 DECLARE
 @
-Source
-nvarchar
-(255), @
-Desc
-nvarchar
-(255);
+Source nvarchar (255), @
+Desc nvarchar (255);
 -- Create a SQLServer object.
 SET
 NOCOUNT
@@ -95,8 +83,7 @@ OUT
 ;
 SELECT
 HR =
-convert
-(varbinary(4),@HR),
+convert (varbinary(4),@HR),
 Source
 =@
 Source

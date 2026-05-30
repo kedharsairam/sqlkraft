@@ -14,9 +14,7 @@ Deletes a policy category in Policy-Based Management. Transact-SQL syntax conven
 
 ## Syntax
 
-```sql
-sp_syspolicy_delete_policy_category
-```
+`sp_syspolicy_delete_policy_category`
 
 ## Remarks
 

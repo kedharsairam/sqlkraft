@@ -37,8 +37,6 @@ SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
 
-SQL
-
 database in Microsoft Fabric
 
 A common query used with spatial data is the nearest neighbor query. Nearest neighbor
@@ -78,22 +76,18 @@ ORDER BY
 STDistance()
 TOP
 SELECT
-TOP
-( number )
+TOP ( number )
 [
 WITH
 TIES
 ]
 [ * | expression ]
 [, ...]
-FROM
-spatial_table_reference, ...
+FROM spatial_table_reference, ...
 [
-WITH
-(
+WITH (
 [
-INDEX
-( index_ref ) ]
+INDEX ( index_ref ) ]
 [ ,
 SPATIAL
 _
@@ -108,10 +102,8 @@ CELLS
 [ ,... ]
 )
 ]
-WHERE
-column_ref.
-STD
-istance ( @spatial_ object )
+WHERE column_ref.
+STD istance ( @spatial_ object )
 {
 [
 IS
@@ -131,9 +123,7 @@ AND
 { other_predicate } ]
 }
 ORDER
-BY
-column_ref.
-STD
-istance ( @spatial_ object ) [ ,...n ]
+BY column_ref.
+STD istance ( @spatial_ object ) [ ,...n ]
 [ ; ]
 ```

@@ -45,8 +45,6 @@ element for the resulting XML, as shown in this query. The argument specified fo
 
 directive provides the root element name.
 
-SQL
-
 This is the result:
 
 XML
@@ -69,8 +67,7 @@ FROM
 Production.ProductModel
 WHERE
 ProductModelID
-IN
-(122, 119, 115)
+IN (122, 119, 115)
 FOR
 XML
 RAW

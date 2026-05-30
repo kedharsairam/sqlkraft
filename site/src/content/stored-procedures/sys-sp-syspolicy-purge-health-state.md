@@ -14,9 +14,7 @@ Deletes the policy health states in Policy-Based Management. Policy health state
 
 ## Syntax
 
-```sql
-msdb.dbo.syspolicy_system_health_state
-```
+`msdb.dbo.syspolicy_system_health_state`
 
 ## Remarks
 
@@ -53,8 +51,7 @@ system database.
 ### Example 1
 
 ```sql
-EXECUTE
-msdb.dbo.sp_syspolicy_purge_health_state
+EXECUTE msdb.dbo.sp_syspolicy_purge_health_state
 @target_tree_root_with_id =
 'Server/Database[@ID=7]'
 ;

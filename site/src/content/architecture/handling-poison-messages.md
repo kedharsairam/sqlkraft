@@ -93,6 +93,4 @@ Should you remove a message after any failure? If the application handles a high
 
 of messages where each message has a limited useful life, it might be most efficient to
 
-```sql
-OFF
-```
+`OFF`

@@ -14,9 +14,7 @@ SQL database in Microsoft Fabric Returns a description of the built in permissio
 
 ## Syntax
 
-```sql
-sys.fn_builtin_permissions
-```
+`sys.fn_builtin_permissions`
 
 ## Permissions
 
@@ -26,21 +24,15 @@ When called with the name of one securable class, will return all permissions th
 
 ### Example 1
 
-```sql
-sys.fn_builtin_permissions
-```
+`sys.fn_builtin_permissions`
 
 ### Example 2
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
 ### Example 3
 
-```sql
-SERVER
-```
+`SERVER`
 
 ### Example 4
 
@@ -50,15 +42,11 @@ CONTROL SERVER
 
 ### Example 5
 
-```sql
-sys.fn_builtin_permissions
-```
+`sys.fn_builtin_permissions`
 
 ### Example 6
 
-```sql
-sys.fn_builtin_permissions
-```
+`sys.fn_builtin_permissions`
 
 ### Example 7
 
@@ -68,15 +56,11 @@ CONTROL SERVER
 
 ### Example 8
 
-```sql
-sys.fn_builtin_permissions
-```
+`sys.fn_builtin_permissions`
 
 ### Example 9
 
-```sql
-sys.fn_translate_permissions
-```
+`sys.fn_translate_permissions`
 
 ### Example 10
 

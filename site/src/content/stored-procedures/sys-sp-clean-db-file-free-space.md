@@ -14,9 +14,7 @@ Azure SQL Managed Instance Removes residual information on data pages. cleans al
 
 ## Syntax
 
-```sql
-sp_clean_db_file_free_space
-```
+`sp_clean_db_file_free_space`
 
 ## Remarks
 
@@ -56,43 +54,31 @@ increasing the duration of the cleanup process.
 
 ### Example 1
 
-```sql
-sp_clean_db_file_free_space
-```
+`sp_clean_db_file_free_space`
 
 ### Example 2
 
-```sql
-sp_clean_db_file_free_space
-```
+`sp_clean_db_file_free_space`
 
 ### Example 3
 
-```sql
-sp_clean_db_file_free_space
-```
+`sp_clean_db_file_free_space`
 
 ### Example 4
 
-```sql
-sp_clean_db_file_free_space
-```
+`sp_clean_db_file_free_space`
 
 ### Example 5
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ### Example 6
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_clean_db_file_free_space
+EXECUTE sp_clean_db_file_free_space
 @dbname = N
 'AdventureWorks2022'
 ,

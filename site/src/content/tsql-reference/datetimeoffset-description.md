@@ -117,25 +117,9 @@ to
 
 .
 
-
-
 Expand table
 
-#### Property
-
-#### Value
-
-#### Character length
-
 #### Precision, scale
-
-#### Storage size
-
-#### Accuracy
-
-#### Default value
-
-#### Calendar
 
 #### User-defined fractional second
 
@@ -145,8 +129,6 @@ Expand table
 
 #### preservation
 
-#### Daylight saving aware
-
 #### Specified scale
 
 #### Result (precision, scale)
@@ -154,8 +136,6 @@ Expand table
 #### Column length (bytes)
 
 #### Fractional seconds precision
-
-#### datetimeoffset
 
 #### datetimeoffset(0)
 
@@ -172,8 +152,6 @@ Expand table
 #### datetimeoffset(6)
 
 #### datetimeoffset(7)
-
-### datetimeoffset
 
 ```sql
 DECLARE @MyDatetimeoffset DATETIMEOFFSET(7);
@@ -204,9 +182,7 @@ CREATE TABLE Table1 (Column1 DATETIMEOFFSET(7));
 +14:00
 ```
 
-```sql
-yyyy
-```
+`yyyy`
 
 ```sql
 0001
@@ -216,9 +192,7 @@ yyyy
 9999
 ```
 
-```sql
-MM
-```
+`MM`
 
 ```sql
 01
@@ -228,9 +202,7 @@ MM
 12
 ```
 
-```sql
-dd
-```
+`dd`
 
 ```sql
 01
@@ -240,9 +212,7 @@ dd
 31
 ```
 
-```sql
-HH
-```
+`HH`
 
 ```sql
 00
@@ -252,9 +222,7 @@ HH
 23
 ```
 
-```sql
-mm
-```
+`mm`
 
 ```sql
 00
@@ -264,9 +232,7 @@ mm
 59
 ```
 
-```sql
-ss
-```
+`ss`
 
 ```sql
 00
@@ -284,9 +250,7 @@ ss
 9999999
 ```
 
-```sql
-hh
-```
+`hh`
 
 ```sql
 -14
@@ -296,9 +260,7 @@ hh
 +14
 ```
 
-```sql
-mm
-```
+`mm`
 
 ```sql
 00

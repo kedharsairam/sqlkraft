@@ -106,56 +106,37 @@ and
 
 .
 
-```sql
-XACT
-```
+`XACT`
 
 ```sql
 S
 ```
 
-```sql
-LCK_M_S_XACT_READ
-```
+`LCK_M_S_XACT_READ`
 
 ```sql
-XACT
-wait_resource
+XACT wait_resource
 ```
 
-```sql
-LCK_M_S_XACT_MODIFY
-```
+`LCK_M_S_XACT_MODIFY`
 
 ```sql
-XACT
-wait_resource
+XACT wait_resource
 ```
 
-```sql
-LCK_M_S_XACT
-```
+`LCK_M_S_XACT`
 
 ```sql
-XACT
-wait_resource
+XACT wait_resource
 ```
 
-```sql
-XACT
-```
+`XACT`
 
-```sql
-resource_description
-```
+`resource_description`
 
-```sql
-XACT
-```
+`XACT`
 
-```sql
-wait_resource
-```
+`wait_resource`
 
 ```sql
 <resource-list>
@@ -165,18 +146,12 @@ wait_resource
 <xactlock>
 ```
 
-```sql
-lock_after_qual_stmt_abort
-```
+`lock_after_qual_stmt_abort`
 
-```sql
-locking_stats
-```
+`locking_stats`
 
 ```sql
 REPEATABLE READ
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`

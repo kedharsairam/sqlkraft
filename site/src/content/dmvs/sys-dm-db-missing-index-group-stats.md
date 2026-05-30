@@ -14,9 +14,7 @@ Average percentage benefit that user queries could experience if this missing in
 
 ## Syntax
 
-```sql
-sys.dm_db_missing_index_group_stats
-```
+`sys.dm_db_missing_index_group_stats`
 
 ## Remarks
 

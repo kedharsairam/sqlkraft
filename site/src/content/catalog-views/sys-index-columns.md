@@ -14,9 +14,7 @@ Analytics Platform System (PDW) Contains one row per column that is part of an i
 
 ## Syntax
 
-```sql
-data_clustering_ordinal
-```
+`data_clustering_ordinal`
 
 ## Arguments
 
@@ -88,9 +86,7 @@ Spatial Indexes Overview
 
 ### Example 2
 
-```sql
-sys.index_columns
-```
+`sys.index_columns`
 
 ### Example 3
 
@@ -100,15 +96,11 @@ sys.index_columns
 
 ### Example 4
 
-```sql
-data_clustering_ordinal
-```
+`data_clustering_ordinal`
 
 ### Example 5
 
-```sql
-Production.BillOfMaterials
-```
+`Production.BillOfMaterials`
 
 ### Example 6
 
@@ -116,31 +108,21 @@ Production.BillOfMaterials
 USE
 AdventureWorks2022;
 GO
-SELECT
-i.name
-AS
-index_name
+SELECT i.name
+AS index_name
 ,COL_NAME(ic.object_id,ic.column_id)
-AS
-column_name
+AS column_name
 ,ic.index_column_id
 ,ic.key_ordinal
 ,ic.is_included_column
-FROM
-sys.indexes
-AS
-i
+FROM sys.indexes
+AS i
 INNER
-JOIN
-sys.index_columns
-AS
-ic
-ON
-i.object_id = ic.object_id
-AND
-i.index_id = ic.index_id
-WHERE
-i.object_id = OBJECT_ID(
+JOIN sys.index_columns
+AS ic
+ON i.object_id = ic.object_id
+AND i.index_id = ic.index_id
+WHERE i.object_id = OBJECT_ID(
 'Production.BillOfMaterials'
 );
 ```

@@ -13,10 +13,6 @@ SQL Server 2016 (13.x) and later versions Holds information about all of the DMS
 
 ## Code Blocks
 
-```sql
-int
-```
+`int`
 
-```sql
-nvarchar(32)
-```
+`nvarchar(32)`

@@ -77,8 +77,6 @@ value() method
 
 .
 
-SQL
-
 In the following example, the
 
 query result is returned as an
@@ -88,8 +86,6 @@ type, because the
 directive is specified in the
 
 clause.
-
-SQL
 
 ```sql
 @x
@@ -107,8 +103,7 @@ SELECT @x
 --<row ProductModelID="122" Name="All-Purpose Bike Stand" />
 --<row ProductModelID="119" Name="Bike Wash" />
 DECLARE
-@i
-int
+@i int
 ;
 SET
 @i = (
@@ -126,8 +121,7 @@ Name
 FROM
 Production.ProductModel
 WHERE
-ProductModelID=119
-or
+ProductModelID=119 or
 ProductModelID=122
 FOR
 XML

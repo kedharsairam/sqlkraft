@@ -62,10 +62,8 @@ N
 'column_name'
 ]
 [ , [ @
-ODBCV
-er = ]
-ODBCV
-er ]
+ODBCV er = ]
+ODBCV er ]
 [ ; ]
 ```
 
@@ -73,62 +71,42 @@ er ]
 
 ### Example 1
 
-```sql
-SS_DATA_TYPE
-```
+`SS_DATA_TYPE`
 
 ### Example 2
 
-```sql
-sp_columns_ex
-```
+`sp_columns_ex`
 
 ### Example 3
 
-```sql
-COLUMNS
-```
+`COLUMNS`
 
 ### Example 4
 
-```sql
-IDBSchemaRowset
-```
+`IDBSchemaRowset`
 
 ### Example 5
 
-```sql
-sp_columns_ex
-```
+`sp_columns_ex`
 
 ### Example 6
 
-```sql
-COLUMNS
-```
+`COLUMNS`
 
 ### Example 7
 
-```sql
-IDBSchemaRowset
-```
+`IDBSchemaRowset`
 
 ### Example 8
 
-```sql
-sp_columns_ex
-```
+`sp_columns_ex`
 
 ### Example 9
 
-```sql
-SELECT
-```
+`SELECT`
 
 ### Example 10
 
-```sql
-JobTitle
-```
+`JobTitle`
 
 _(... and 4 more examples)_

@@ -14,6 +14,4 @@ Returns one row for each object that is an internal table. Internal tables are a
 
 ## Syntax
 
-```sql
-xml_index_nodes_2021582240_32001
-```
+`xml_index_nodes_2021582240_32001`

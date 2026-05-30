@@ -83,8 +83,6 @@ type name in the table
 
 :
 
-SQL
-
 ```sql
 SELECT
 JOIN
@@ -92,13 +90,9 @@ AuditedMessageTypes
 IF @messageTypeName = 'https://schemas.microsoft.com/SQL/ServiceBroker/EndDialog'
 BEGIN
 INSERT
-INTO
-dbo.AuditRecord
-SELECT
-q.message_type_name,
+INTO dbo.AuditRecord
+SELECT q.message_type_name,
 q.message_body
-FROM
-dbo.ApplicationQueue
-AS
-q
+FROM dbo.ApplicationQueue
+AS q
 ```

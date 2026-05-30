@@ -74,8 +74,6 @@ option to
 
 :
 
-SQL
-
 ７
 
 Note
@@ -90,17 +88,12 @@ TrustServerCertificate=False
 trust_distributor_certificate=yes
 ```
 
-```sql
-trust_distributor_certificate
-```
+`trust_distributor_certificate`
+
+`yes`
 
 ```sql
-yes
-```
-
-```sql
-EXECUTE
-sp_changedistributor_property
+EXECUTE sp_changedistributor_property
 @property = N
 'trust_distributor_certificate'
 ,

@@ -14,6 +14,4 @@ Marks source files used in the merge operation with the log sequence number (LSN
 
 ## Syntax
 
-```sql
-sys.sp_xtp_checkpoint_force_garbage_collection
-```
+`sys.sp_xtp_checkpoint_force_garbage_collection`

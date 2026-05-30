@@ -62,5 +62,3 @@ CREATE INDEX
 (Transact-SQL)
 
 .
-
-### geometry

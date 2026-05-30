@@ -125,8 +125,6 @@ statement to return the deleted row to
 
 the calling application.
 
-SQL
-
 This example removes a row from a table used as a queue and returns the deleted values to
 
 the processing application in a single action. Other semantics might also be implemented, such
@@ -151,135 +149,75 @@ column in order to implement the desired ordering
 
 semantics.
 
-SQL
-
 ```sql
 OUTPUT INTO
 ```
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 INSTEAD OF
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-INSERTED
-```
+`INSERTED`
 
-```sql
-DELETED
-```
+`DELETED`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-INTO
-```
+`INTO`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-INTO
-```
+`INTO`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
 ```sql
 .WRITE
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-TEXTPTR()
-```
+`TEXTPTR()`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-DatabaseLogID
-```
+`DatabaseLogID`
 
 ```sql
 USE
@@ -287,33 +225,26 @@ AdventureWorks2022;
 GO
 DELETE
 TOP(1) dbo.DatabaseLog
-WITH
-(READPAST)
+WITH (READPAST)
 OUTPUT
 DELETED.*
 WHERE
 DatabaseLogID = 7;
 GO
-USE
-tempdb;
+USE tempdb;
 GO
 CREATE
-TABLE
-dbo.table1
-(
+TABLE dbo.table1 (
 id
 INT
 ,
 employee
-VARCHAR
-(32)
+VARCHAR (32)
 );
 GO
 INSERT
-INTO
-dbo.table1
-VALUES
-(1,
+INTO dbo.table1
+VALUES (1,
 'Fred'
 ),
 (2,
@@ -328,17 +259,14 @@ VALUES
 GO
 DECLARE
 @MyTableVar
-TABLE
-(
+TABLE (
 id
 INT
 ,
 employee
-VARCHAR
-(32)
+VARCHAR (32)
 );
-PRINT 'table1, before
-delete
+PRINT 'table1, before delete
 ';
 SELECT *
 FROM dbo.table1;

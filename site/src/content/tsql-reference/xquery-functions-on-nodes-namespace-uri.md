@@ -63,7 +63,5 @@ The following query is specified against an untyped XML instance. The query expr
 , retrieves the namespace URI part of the specified node.
 
 ```sql
-namespace-uri(/ROOT[1])
-fn:namespace-uri() as xs:string
-fn:namespace-uri($arg as node()?) as xs:string
+namespace-uri(/ROOT[1]) fn:namespace-uri() as xs:string fn:namespace-uri($arg as node()?) as xs:string
 ```

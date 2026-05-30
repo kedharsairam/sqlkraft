@@ -39,8 +39,6 @@ an availability group. You can view the availability group Extended Events using
 
 query:
 
-SQL
-
 The
 
 Extended Events session is created automatically when you create the
@@ -96,14 +94,11 @@ the session and configure the session to start automatically by configuring the 
 properties.
 
 ```cmd
-alwayson_health
-alwayson_health
+alwayson_health alwayson_health
 SELECT
 *
-FROM
-sys.dm_xe_objects
-WHERE
-name
+FROM sys.dm_xe_objects
+WHERE name
 LIKE
 '%hadr%'
 ;

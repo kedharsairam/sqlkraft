@@ -87,7 +87,5 @@ Note
 
 ```sql
 SORT_IN_TEMPDB
-ON
-tempdb
-tempdb
+ON tempdb tempdb
 ```

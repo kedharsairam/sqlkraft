@@ -15,8 +15,6 @@ equivalent integer.
 
 For example, consider the following statement:
 
-SQL
-
 This table shows the
 
 input and output values.
@@ -61,8 +59,6 @@ is equivalent to
 
 .
 
-
-
 Expand table
 
 th
@@ -71,57 +67,42 @@ th
 
 ## Statement B
 
-```sql
-GROUPING_ID
-```
+`GROUPING_ID`
 
-```sql
-GROUPING_ID()
-```
+`GROUPING_ID()`
 
 ```sql
 a
 100
-4
-b
+4 b
 010
-2
-c
+2 c
 001
-1
-ab
+1 ab
 110
-6
-ac
+6 ac
 101
-5
-bc
+5 bc
 011
-3
-abc
+3 abc
 111
 7
 ```
 
-```sql
-GROUPING_ID
-```
+`GROUPING_ID`
 
 ```sql
 GROUP BY
 ```
 
-```sql
-GROUPING_ID()
-```
+`GROUPING_ID()`
 
 ```sql
 GROUPING (<column_expression>)
 ```
 
 ```sql
-GROUPING_ID
-(<column_expression>)
+GROUPING_ID (<column_expression>)
 ```
 
 ```sql
@@ -129,12 +110,9 @@ GROUPING_ID
 ```
 
 ```sql
-SELECT
-a, b, c,
-SUM
-(d),
-GROUPING_ID
-(a, b, c)
+SELECT a, b, c,
+SUM (d),
+GROUPING_ID (a, b, c)
 FROM
 T
 GROUP

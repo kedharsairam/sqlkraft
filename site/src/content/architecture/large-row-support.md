@@ -40,41 +40,11 @@ controls this
 
 behavior.
 
-### varchar
-
-### nvarchar
-
-### varbinary
-
 ### varchar(7000)
 
 ### varchar(2000)
 
 ### varchar(7000)
-
-### varchar
-
-### nvarchar
-
-### varbinary
-
-### varchar
-
-### nvarchar
-
-### varbinary
-
-### varchar
-
-### nvarchar
-
-### varbinary
-
-### char
-
-### nchar
-
-### int
 
 ### varchar(max)
 
@@ -210,38 +180,22 @@ are exempt from the 8,060-
 
 byte row limit.
 
-### varchar
-
-### varchar
-
 ### Uniform
 
 ### Mixed
 
-```sql
-LOB_DATA
-```
+`LOB_DATA`
 
 ```sql
 large value types out of row
 ```
 
-```sql
-ROW_OVERFLOW_DATA
-```
+`ROW_OVERFLOW_DATA`
 
-```sql
-ROW_OVERFLOW_DATA
-```
+`ROW_OVERFLOW_DATA`
 
-```sql
-IN_ROW_DATA
-```
+`IN_ROW_DATA`
 
-```sql
-ROW_OVERFLOW_DATA
-```
+`ROW_OVERFLOW_DATA`
 
-```sql
-IN_ROW_DATA
-```
+`IN_ROW_DATA`

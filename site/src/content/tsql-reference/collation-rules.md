@@ -55,8 +55,6 @@ No-collation + Explicit X = Explicit
 
 The following table summarizes the rules.
 
-
-
 Expand table
 
 #### Operand coercion
@@ -70,16 +68,6 @@ Expand table
 #### Coercible-default
 
 #### No-collation
-
-### text
-
-### text
-
-### nvarchar
-
-### varchar
-
-### nvarchar
 
 Generates Error
 
@@ -165,8 +153,6 @@ resulting collation is taken can be different from the operand that supplies the
 
 final result. For example, consider the following batch:
 
-SQL
-
 ７
 
 Note
@@ -209,11 +195,7 @@ The following examples show how the collation rules work. To run the examples, c
 
 following test table.
 
-SQL
-
 The predicate in the following query has collation conflict and generates an error.
-
-SQL
 
 Here's the result set.
 
@@ -225,10 +207,6 @@ to Fabric Warehouse unless otherwise noted.
 
 ## No-collation labels
 
-### nvarchar
-
-### varchar
-
 The predicate in the following query is evaluated in collation
 
 because the right
@@ -236,8 +214,6 @@ because the right
 expression has the Explicit label. This takes precedence over the Implicit label of the left
 
 expression.
-
-SQL
 
 Here's the result set.
 
@@ -250,8 +226,6 @@ expressions in the following queries have a No-collation label; therefore, they 
 appear in the select list or be operated on by collation-sensitive operators. However, the
 
 expressions can be operated on by collation-insensitive operators.
-
-SQL
 
 Here's the result set.
 
@@ -290,17 +264,11 @@ Coercible-default
 No-collation
 ```
 
-```sql
-COLLATE
-```
+`COLLATE`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-COLLATE
-```
+`COLLATE`
 
 ```sql
 WHERE ColumnA = ( 'abc' COLLATE French_CI_AS) COLLATE French_CS_AS
@@ -309,16 +277,14 @@ WHERE ColumnA = ( 'abc' COLLATE French_CI_AS) COLLATE French_CS_AS
 ```sql
 CREATE
 TABLE
-TestTab
-(
+TestTab (
 PrimaryKey
 INT
 PRIMARY
 KEY
 ,
 CharCol
-CHAR
-(10)
+CHAR (10)
 COLLATE
 French_CI_AS
 );
@@ -342,48 +308,35 @@ N'abc'
 N'abc'
 ```
 
-```sql
-CharCol
-```
+`CharCol`
 
 ```sql
 N'abc'
 ```
 
-```sql
-French_CI_AS
-```
+`French_CI_AS`
+
+`CharCol`
 
 ```sql
-CharCol
-```
-
-```sql
-USE
-tempdb;
+USE tempdb;
 GO
 CREATE
 TABLE
-TestTab
-(
+TestTab (
 id
 INT
 ,
 GreekCol
-NVARCHAR
-(10)
-COLLATE
-greek_ci_as,
+NVARCHAR (10)
+COLLATE greek_ci_as,
 LatinCol
-NVARCHAR
-(10)
-COLLATE
-latin1_general_cs_as
+NVARCHAR (10)
+COLLATE latin1_general_cs_as
 );
 INSERT
 TestTab
-VALUES
-(1, N
+VALUES (1, N
 'A'
 , N
 'a'
@@ -402,13 +355,9 @@ Msg 448, Level 16, State 9, Line 2
 Cannot resolve collation conflict between 'Latin1_General_CS_AS' and 'Greek_CI_AS'
 ```
 
-```sql
-greek_ci_as
-```
+`greek_ci_as`
 
-```sql
-CASE
-```
+`CASE`
 
 ```sql
 in equal to operation.
@@ -421,19 +370,16 @@ FROM
 TestTab
 WHERE
 GreekCol = LatinCol
-COLLATE
-greek_ci_as;
+COLLATE greek_ci_as;
 id          GreekCol             LatinCol
 ----------- -------------------- --------------------
 1 A                    a
 ```
 
 ```sql
-SELECT
-(
+SELECT (
 CASE
-WHEN
-id
+WHEN id
 > 10
 THEN
 GreekCol

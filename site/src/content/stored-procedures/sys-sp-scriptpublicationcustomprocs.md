@@ -14,6 +14,4 @@ procedures for all table articles in a publication in which the autogenerate cus
 
 ## Syntax
 
-```sql
-sp_scriptpublicationcustomprocs
-```
+`sp_scriptpublicationcustomprocs`

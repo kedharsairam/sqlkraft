@@ -98,6 +98,4 @@ SQL Server I/O Basics, Chapter 2
 
 Last updated on 04/29/2026
 
-```sql
-tempdb
-```
+`tempdb`

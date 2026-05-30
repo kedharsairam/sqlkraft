@@ -101,10 +101,6 @@ construct, the stored procedure is
 
 called and information about the error is returned.
 
-SQL
-
-
-
 Expand table
 
 The
@@ -181,8 +177,6 @@ the same
 
 statement is executed inside a stored procedure.
 
-SQL
-
 The error isn't caught and control passes out of the
 
 construct to the next higher
@@ -199,94 +193,51 @@ block. The error is handled by the
 
 construct.
 
-SQL
+`TRY...CATCH`
 
-```sql
-TRY...CATCH
-```
+`CATCH`
 
-```sql
-CATCH
-```
+`CATCH`
 
-```sql
-CATCH
-```
+`EXECUTE`
 
-```sql
-EXECUTE
-```
+`GOTO`
 
-```sql
-GOTO
-```
+`TRY`
 
-```sql
-TRY
-```
+`CATCH`
 
-```sql
-CATCH
-```
+`GOTO`
 
-```sql
-GOTO
-```
+`TRY`
 
-```sql
-TRY
-```
+`CATCH`
 
-```sql
-CATCH
-```
+`TRY`
 
-```sql
-TRY
-```
+`CATCH`
 
-```sql
-CATCH
-```
+`TRY...CATCH`
 
-```sql
-TRY...CATCH
-```
+`CATCH`
 
-```sql
-CATCH
-```
+`CATCH`
 
-```sql
-CATCH
-```
+`NULL`
 
-```sql
-NULL
-```
+`CATCH`
 
-```sql
-CATCH
-```
+`CATCH`
 
-```sql
-CATCH
-```
+`CATCH`
 
-```sql
-CATCH
-```
-
-```sql
-TRY...CATCH
-```
+`TRY...CATCH`
 
 ```sql
 -- Verify that the stored procedure does not already exist.
 IF OBJECT_ID('usp_GetErrorInfo', 'P') IS NOT NULL
 DROP
-PROCEDURE
-usp_GetErrorInfo;
+PROCEDURE usp_GetErrorInfo;
 GO
 ```
 
@@ -294,35 +245,22 @@ GO
 ERROR_*
 ```
 
-```sql
-CATCH
-```
+`CATCH`
 
-```sql
-TRY...CATCH
-```
+`TRY...CATCH`
 
-```sql
-TRY...CATCH
-```
+`TRY...CATCH`
 
-```sql
-KILL
-```
+`KILL`
 
-```sql
-CATCH
-```
+`CATCH`
 
-```sql
-TRY...CATCH
-```
+`TRY...CATCH`
 
 ```sql
 -- Create procedure to retrieve error information.
 CREATE
-PROCEDURE
-usp_GetErrorInfo
+PROCEDURE usp_GetErrorInfo
 AS
 SELECT
 ERROR_NUMBER()
@@ -354,59 +292,34 @@ TRY
 BEGIN
 CATCH
 -- Execute error retrieval routine.
-EXECUTE
-usp_GetErrorInfo;
+EXECUTE usp_GetErrorInfo;
 END
 CATCH;
 ```
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
-```sql
-TRY
-```
+`TRY`
 
-```sql
-TRY...CATCH
-```
+`TRY...CATCH`
 
-```sql
-CATCH
-```
+`CATCH`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-TRY...CATCH
-```
+`TRY...CATCH`
 
-```sql
-CATCH
-```
+`CATCH`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-TRY...CATCH
-```
+`TRY...CATCH`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-TRY
-```
+`TRY`
 
-```sql
-TRY...CATCH
-```
+`TRY...CATCH`
 
 ```sql
 BEGIN
@@ -433,14 +346,12 @@ CATCH
 -- Verify that the stored procedure does not exist.
 IF OBJECT_ID(N'usp_ExampleProc', N'P') IS NOT NULL
 DROP
-PROCEDURE
-usp_ExampleProc;
+PROCEDURE usp_ExampleProc;
 GO
 -- Create a stored procedure that will cause an
 -- object resolution error.
 CREATE
-PROCEDURE
-usp_ExampleProc
+PROCEDURE usp_ExampleProc
 AS
 SELECT
 *
@@ -449,8 +360,7 @@ NonexistentTable;
 GO
 BEGIN
 TRY
-EXECUTE
-usp_ExampleProc;
+EXECUTE usp_ExampleProc;
 END
 TRY
 ```

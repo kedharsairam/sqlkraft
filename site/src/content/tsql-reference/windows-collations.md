@@ -49,8 +49,6 @@ To list the Windows collations supported by your instance of SQL Server, execute
 
 query.
 
-SQL
-
 Collation and Unicode support
 
 ALTER TABLE (Transact-SQL)
@@ -71,9 +69,7 @@ Last updated on 11/18/2025
 
 Related content
 
-```sql
-Latin1_General_100_CI_AS
-```
+`Latin1_General_100_CI_AS`
 
 ```sql
 1252
@@ -83,17 +79,11 @@ Latin1_General_100_CI_AS
 _100
 ```
 
-```sql
-CI
-```
+`CI`
 
-```sql
-AS
-```
+`AS`
 
-```sql
-Estonian_CS_AS
-```
+`Estonian_CS_AS`
 
 ```sql
 1257
@@ -103,17 +93,11 @@ Estonian_CS_AS
 _80
 ```
 
-```sql
-CS
-```
+`CS`
 
-```sql
-AS
-```
+`AS`
 
-```sql
-Japanese_Bushu_Kakusu_140_BIN2
-```
+`Japanese_Bushu_Kakusu_140_BIN2`
 
 ```sql
 932
@@ -126,8 +110,7 @@ _140
 ```sql
 SELECT
 *
-FROM
-sys.fn_helpcollations()
+FROM sys.fn_helpcollations()
 WHERE
 [
 name

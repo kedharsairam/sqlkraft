@@ -34,8 +34,6 @@ at the end of the procedure commits the
 
 statements.
 
-SQL
-
 Committing inner transactions is ignored by the Database Engine when an outer transaction is
 
 active. The transaction is either committed or rolled back based on the commit or roll back at the
@@ -118,29 +116,19 @@ Note
 
 ### savepoint
 
-```sql
-TransProc
-```
+`TransProc`
 
-```sql
-TransProc
-```
+`TransProc`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-TransProc
-```
+`TransProc`
 
 ```sql
 COMMIT TRANSACTION
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 SET
@@ -155,16 +143,14 @@ OFF
 GO
 CREATE
 TABLE
-TestTrans
-(
+TestTrans (
 ColA
 INT
 PRIMARY
 KEY
 ,
 ColB
-CHAR
-(3)
+CHAR (3)
 NOT
 NULL
 );
@@ -176,8 +162,7 @@ TransProc
 INT
 ,
 @CharCol
-CHAR
-(3)
+CHAR (3)
 AS
 BEGIN
 TRANSACTION
@@ -185,13 +170,11 @@ InProc;
 INSERT
 INTO
 TestTrans
-VALUES
-(@PriKey, @CharCol);
+VALUES (@PriKey, @CharCol);
 INSERT
 INTO
 TestTrans
-VALUES
-(@PriKey + 1, @CharCol);
+VALUES (@PriKey + 1, @CharCol);
 COMMIT
 TRANSACTION
 InProc;
@@ -203,8 +186,7 @@ OutOfProc;
 GO
 EXEC TransProc 1, 'aaa';
 GO
-/* Roll back the outer transaction, this will
-roll back TransProc's inner transaction. */
+/* Roll back the outer transaction, this will roll back TransProc's inner transaction. */
 ROLLBACK
 TRANSACTION
 OutOfProc;
@@ -226,26 +208,19 @@ BEGIN TRANSACTION
 BEGIN TRANSACTION
 ```
 
-```sql
-COMMIT
-```
+`COMMIT`
 
 ```sql
-COMMIT TRANSACTION
-transaction_name
+COMMIT TRANSACTION transaction_name
 ```
 
-```sql
-transaction_name
-```
+`transaction_name`
 
 ```sql
 ROLLBACK TRANSACTION
 ```
 
-```sql
-transaction_name
-```
+`transaction_name`
 
 ```sql
 @@TRANCOUNT
@@ -307,11 +282,8 @@ TransProc 3,
 ;
 GO
 /*
-The following SELECT statement shows only rows 3 and 4 are
-still in the table. This indicates that the commit
-of the inner transaction from the first EXECUTE statement of
-TransProc was overridden by the subsequent roll back of the
-outer transaction.
+The following SELECT statement shows only rows 3 and 4 are still in the table. This indicates that the commit of the inner transaction from the first EXECUTE statement of
+TransProc was overridden by the subsequent roll back of the outer transaction.
 */
 SELECT
 *

@@ -1,0 +1,438 @@
+/**
+ * sanitize-content.js — Automated Markdown Sanitization Engine
+ *
+ * Scans all content collections for common ingestion corruption artifacts
+ * and repairs them programmatically:
+ *
+ *   1. Strip dangling metadata headings (#### syntaxsql, ### nvarchar, etc.)
+ *   2. Convert single-word code blocks to inline code
+ *   3. Join fragmented sentences (broken across lines)
+ *   4. Collapse excessive blank lines
+ *   5. Delete completely empty stub files (headings only, no real content)
+ *
+ * Usage:  node scripts/sanitize-content.js [--dry-run] [--collections=tsql-reference,architecture]
+ *
+ * Default: runs on ALL content collections, writes changes in-place.
+ * --dry-run:  report only, no writes.
+ * --collections: comma-separated list of collection dirs to process.
+ */
+
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+/* ── Config ── */
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const CONTENT_ROOT = path.resolve(__dirname, "..", "src", "content");
+
+const args = process.argv.slice(2);
+const DRY_RUN = args.includes("--dry-run");
+const COLLECTIONS_FILTER = args
+  .find((a) => a.startsWith("--collections="))
+  ?.split("=")[1]
+  ?.split(",")
+  .map((s) => s.trim())
+  .filter(Boolean);
+
+/* ── Datatype names to strip as standalone headings ── */
+const DATATYPE_NAMES = new Set([
+  "int",
+  "bigint",
+  "smallint",
+  "tinyint",
+  "bit",
+  "decimal",
+  "numeric",
+  "money",
+  "smallmoney",
+  "float",
+  "real",
+  "datetime",
+  "datetime2",
+  "datetimeoffset",
+  "date",
+  "time",
+  "char",
+  "varchar",
+  "nchar",
+  "nvarchar",
+  "text",
+  "ntext",
+  "binary",
+  "varbinary",
+  "image",
+  "xml",
+  "json",
+  "sql_variant",
+  "sql-variant",
+  "hierarchyid",
+  "geography",
+  "geometry",
+  "uniqueidentifier",
+  "rowversion",
+  "timestamp",
+  "cursor",
+  "table",
+  "sysname",
+  "xml",
+]);
+
+/* ── Heading levels to strip as standalone ingestion artifact headings ── */
+const METADATA_HEADING_RE = /^#{3,4}\s+(syntaxsql|syntax|nvarchar|int|bigint|smallint|tinyint|varchar|char|nchar|decimal|numeric|float|real|datetime|datetime2|date|time|datetimeoffset|money|smallmoney|bit|binary|varbinary|image|text|ntext|xml|sql_variant|hierarchyid|geography|geometry|uniqueidentifier|rowversion|timestamp|cursor|table|sysname)\s*$/i;
+
+/* ── Lines that are just the word "sql" or "SQL" ── */
+const SQL_BLOCK_WORD_RE = /^sql$/i;
+
+/* ── Lines that are just a single word/punctuation fragment inside a code block ── */
+const STRAY_CODE_BLOCK_WORD_RE = /^[A-Za-z][A-Za-z0-9_.#()[\]]{0,30}$/;
+
+/* ── Stats tracking ── */
+const stats = {
+  files_scanned: 0,
+  dangling_headings_removed: 0,
+  stray_code_blocks_fixed: 0,
+  fragmented_sentences_joined: 0,
+  blank_lines_collapsed: 0,
+  empty_stubs_deleted: 0,
+  files_modified: 0,
+  errors: [],
+};
+
+/* ════════════════════════════════════════════════════════════════
+   SANITIZATION PASSES
+   ════════════════════════════════════════════════════════════════ */
+
+/**
+ * Pass 1 — Strip dangling metadata headings.
+ * Removes lines like `#### syntaxsql`, `### nvarchar`, `### int`
+ * when they appear as standalone headings.
+ * Also strips `#### Property`, `#### Value`, `#### Usage` if they
+ * appear as isolated stubs (no content after them).
+ */
+function stripDanglingHeadings(lines) {
+  const result = [];
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+
+    // Strip #### syntaxsql / ### datatype headings
+    if (METADATA_HEADING_RE.test(line.trim())) {
+      stats.dangling_headings_removed++;
+      continue; // skip this line
+    }
+
+    // Strip headings that match common ingestion property labels
+    // when they have no content after them (empty stub headings)
+    const stubHeadingRe = /^#{3,4}\s+(Property|Value|Usage|Date range|Time range|Time zone offset range|Element ranges|Character length|Storage size|Accuracy|Default value|Calendar|User-defined fractional second precision|Time zone offset aware and preservation|Daylight saving aware|Default string literal formats|Default string literal formats \(used|for down-level client\))\s*$/i;
+    if (stubHeadingRe.test(line.trim())) {
+      // Check if next line is also a heading or blank
+      const nextLine = i + 1 < lines.length ? lines[i + 1].trim() : "";
+      const nextNextLine = i + 2 < lines.length ? lines[i + 2].trim() : "";
+      if (
+        nextLine === "" ||
+        nextLine.startsWith("#") ||
+        nextLine.startsWith("```") ||
+        nextNextLine === "" ||
+        nextNextLine.startsWith("#")
+      ) {
+        stats.dangling_headings_removed++;
+        continue;
+      }
+    }
+
+    result.push(line);
+  }
+  return result;
+}
+
+/**
+ * Pass 2 — Fix stray single-word code blocks.
+ * Converts ```sql\nWORD\n``` to inline `WORD` where WORD is a
+ * single identifier, token, or short phrase.
+ */
+function fixStrayCodeBlocks(content) {
+  // Match ```sql ... ``` blocks that contain only a single short line
+  return content.replace(
+    /```sql\s*\n\s*([A-Za-z][A-Za-z0-9_.#()[\]]{1,60})\s*\n\s*```/g,
+    (match, word) => {
+      stats.stray_code_blocks_fixed++;
+      return "`" + word.trim() + "`";
+    }
+  );
+}
+
+/**
+ * Pass 3 — Remove trailing "SQL" lines that are just remnants.
+ * Some files have "SQL" on its own line after a paragraph.
+ */
+function stripStraySqlWords(content) {
+  return content.replace(/^\s*SQL\s*$/gm, (match) => {
+    stats.stray_code_blocks_fixed++;
+    return "";
+  });
+}
+
+/**
+ * Pass 4 — Join fragmented sentences.
+ * Heuristic: if a line ends without terminal punctuation and the
+ * next line starts with a lowercase letter or open paren, they
+ * are part of the same sentence.
+ */
+function joinFragmentedSentences(lines) {
+  const result = [];
+  let i = 0;
+
+  while (i < lines.length) {
+    let current = lines[i];
+
+    // Skip joining inside code blocks or frontmatter
+    if (
+      current.trimStart().startsWith("```") ||
+      current.trimStart().startsWith("---")
+    ) {
+      result.push(current);
+      i++;
+      continue;
+    }
+
+    // Look ahead: if this line doesn't end with sentence-ending
+    // punctuation and the next line continues the sentence...
+    while (i + 1 < lines.length) {
+      const next = lines[i + 1];
+
+      // Don't join into code blocks or headings
+      if (
+        next.trimStart().startsWith("```") ||
+        next.trimStart().startsWith("#") ||
+        next.trimStart().startsWith("---") ||
+        next.trimStart().startsWith(">") ||
+        next.trimStart().startsWith("- ") ||
+        next.trimStart().startsWith("* ") ||
+        next.trimStart().match(/^\d+\.\s/) ||
+        next.trimStart().startsWith("|")
+      ) {
+        break;
+      }
+
+      const trimmed = current.trimEnd();
+      const nextTrimmed = next.trimStart();
+
+      // If current line ends with terminal punctuation, stop
+      if (/[.!?:;]\s*$/.test(trimmed)) break;
+
+      // If next line is blank, stop
+      if (nextTrimmed === "") break;
+
+      // If next line starts uppercase in a way that suggests a new sentence
+      if (/^[A-Z][a-z]+\s/.test(nextTrimmed) && trimmed.length > 40) break;
+
+      // Join: strip trailing spaces from current, add space, append next
+      // But first: if the current line ends with a word and next starts
+      // with a word, remove the line break
+      if (
+        /[a-zA-Z0-9)]$/.test(trimmed) &&
+        /^[a-z(]/.test(nextTrimmed)
+      ) {
+        current = trimmed + " " + nextTrimmed;
+        stats.fragmented_sentences_joined++;
+        i++;
+        continue;
+      }
+
+      break;
+    }
+
+    result.push(current);
+    i++;
+  }
+
+  return result;
+}
+
+/**
+ * Pass 5 — Collapse excessive blank lines.
+ */
+function collapseBlankLines(lines) {
+  const result = [];
+  let prevBlank = false;
+
+  for (const line of lines) {
+    const isBlank = line.trim() === "";
+    if (isBlank && prevBlank) {
+      stats.blank_lines_collapsed++;
+      continue;
+    }
+    result.push(line);
+    prevBlank = isBlank;
+  }
+
+  return result;
+}
+
+/**
+ * Pass 6 — Check if file is an empty stub (only frontmatter + headings/no content).
+ * Returns true if the file should be deleted.
+ */
+function isEmptyStub(bodyLines) {
+  const textLines = bodyLines.filter(
+    (l) => l.trim() !== "" && !l.trimStart().startsWith("#")
+  );
+  const codeLines = bodyLines.filter((l) => l.trimStart().startsWith("```"));
+  const headingLines = bodyLines.filter((l) => l.trimStart().startsWith("#"));
+
+  // If no text lines and no code blocks, but has headings — it's a stub
+  if (textLines.length === 0 && codeLines.length === 0 && headingLines.length > 0) {
+    return true;
+  }
+
+  // If only very short text fragments
+  if (textLines.join("").trim().length < 30 && codeLines.length === 0) {
+    return true;
+  }
+
+  return false;
+}
+
+/* ════════════════════════════════════════════════════════════════
+   MAIN PROCESSOR
+   ════════════════════════════════════════════════════════════════ */
+
+function processFile(filePath) {
+  const relativePath = path.relative(CONTENT_ROOT, filePath);
+  let content;
+
+  try {
+    content = fs.readFileSync(filePath, "utf-8");
+  } catch (err) {
+    stats.errors.push(`Cannot read ${relativePath}: ${err.message}`);
+    return;
+  }
+
+  stats.files_scanned++;
+
+  // Separate frontmatter and body
+  const frontmatterMatch = content.match(/^---\n[\s\S]*?\n---\n/);
+  if (!frontmatterMatch) {
+    // No frontmatter — skip
+    return;
+  }
+
+  const frontmatter = frontmatterMatch[0];
+  let body = content.slice(frontmatter.length);
+
+  // ── Apply passes ──
+
+  // 2. Fix stray code blocks
+  body = fixStrayCodeBlocks(body);
+
+  // 3. Strip stray "SQL" words
+  body = stripStraySqlWords(body);
+
+  // Convert body back to lines for line-based passes
+  let bodyLines = body.split("\n");
+
+  // 1. Strip dangling headings
+  const linesAfterP1 = stripDanglingHeadings(bodyLines);
+
+  // 4. Join fragmented sentences
+  const linesAfterP4 = joinFragmentedSentences(linesAfterP1);
+
+  // 5. Collapse blank lines
+  const finalLines = collapseBlankLines(linesAfterP4);
+
+  const newBody = finalLines.join("\n").trimEnd() + "\n";
+  const newContent = frontmatter + newBody;
+
+  // 6. Check for empty stub
+  if (isEmptyStub(finalLines)) {
+    if (DRY_RUN) {
+      console.log(`  [STUB]   ${relativePath} — would delete (empty stub)`);
+    } else {
+      try {
+        fs.unlinkSync(filePath);
+        stats.empty_stubs_deleted++;
+        console.log(`  [DELETE] ${relativePath} — deleted empty stub`);
+      } catch (err) {
+        stats.errors.push(`Cannot delete ${relativePath}: ${err.message}`);
+      }
+    }
+    return;
+  }
+
+  // Write if changed
+  if (newContent !== content) {
+    if (DRY_RUN) {
+      console.log(`  [MODIFY] ${relativePath} — would sanitize`);
+    } else {
+      try {
+        fs.writeFileSync(filePath, newContent, "utf-8");
+        stats.files_modified++;
+        console.log(`  [OK]     ${relativePath} — sanitized`);
+      } catch (err) {
+        stats.errors.push(`Cannot write ${relativePath}: ${err.message}`);
+      }
+    }
+  }
+}
+
+function processCollection(collectionDir) {
+  const dirPath = path.join(CONTENT_ROOT, collectionDir);
+  if (!fs.existsSync(dirPath)) {
+    console.warn(`  [SKIP]   Collection "${collectionDir}" does not exist`);
+    return;
+  }
+
+  const files = fs.readdirSync(dirPath).filter((f) => f.endsWith(".md"));
+  console.log(`\n📂 ${collectionDir} (${files.length} files)`);
+
+  for (const file of files) {
+    processFile(path.join(dirPath, file));
+  }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   ENTRY POINT
+   ════════════════════════════════════════════════════════════════ */
+
+function main() {
+  console.log("╔══════════════════════════════════════════════╗");
+  console.log("║   SQLKRAFT — Content Sanitization Engine    ║");
+  console.log(`║   ${DRY_RUN ? "DRY RUN — no changes written" : "LIVE — writing changes"}       ║`);
+  console.log("╚══════════════════════════════════════════════╝\n");
+
+  // Get all collection directories
+  const allCollections = fs.readdirSync(CONTENT_ROOT).filter((d) => {
+    const dirPath = path.join(CONTENT_ROOT, d);
+    return fs.statSync(dirPath).isDirectory() && !d.startsWith("trash") && !d.startsWith(".");
+  });
+
+  const collections = COLLECTIONS_FILTER
+    ? allCollections.filter((c) => COLLECTIONS_FILTER.includes(c))
+    : allCollections;
+
+  for (const collection of collections) {
+    processCollection(collection);
+  }
+
+  // ── Summary ──
+  console.log("\n╔══════════════════════════════════════════════╗");
+  console.log("║                  SUMMARY                    ║");
+  console.log("╚══════════════════════════════════════════════╝");
+  console.log(`  Files scanned:              ${stats.files_scanned}`);
+  console.log(`  Files modified:             ${stats.files_modified}`);
+  console.log(`  Empty stubs deleted:        ${stats.empty_stubs_deleted}`);
+  console.log(`  Dangling headings removed:  ${stats.dangling_headings_removed}`);
+  console.log(`  Stray code blocks fixed:    ${stats.stray_code_blocks_fixed}`);
+  console.log(`  Fragmented sentences joined:${stats.fragmented_sentences_joined}`);
+  console.log(`  Blank lines collapsed:      ${stats.blank_lines_collapsed}`);
+
+  if (stats.errors.length > 0) {
+    console.log(`\n  ⚠️  Errors: ${stats.errors.length}`);
+    for (const err of stats.errors.slice(0, 5)) {
+      console.log(`      ${err}`);
+    }
+  }
+
+  console.log(`\n  ${DRY_RUN ? "Run without --dry-run to apply changes" : "Done."}`);
+}
+
+main();

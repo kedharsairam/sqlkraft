@@ -59,8 +59,7 @@ Expand table
 msoledbsql.h
 S_OK
 HRESULT
-LocalDBDeleteInstance
-(
+LocalDBDeleteInstance (
 PCWSTR pInstanceName ,
 DWORD dwFlags
 );

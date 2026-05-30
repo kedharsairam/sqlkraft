@@ -53,9 +53,7 @@ new development work, and plan to modify applications that currently use this fe
 
 ### Example 1
 
-```sql
-sp_droplogin
-```
+`sp_droplogin`
 
 ### Example 2
 
@@ -71,9 +69,7 @@ DROP LOGIN
 
 ### Example 4
 
-```sql
-Victoria
-```
+`Victoria`
 
 ### Example 5
 

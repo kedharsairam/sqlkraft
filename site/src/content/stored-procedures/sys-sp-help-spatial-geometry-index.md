@@ -41,9 +41,7 @@ N
 
 ### Example 1
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 2
 
@@ -62,21 +60,15 @@ N
 
 ### Example 3
 
-```sql
-sp_help_spatial_geometry_index
-```
+`sp_help_spatial_geometry_index`
 
 ### Example 4
 
-```sql
-SIndx_SpatialTable_geometry_col2
-```
+`SIndx_SpatialTable_geometry_col2`
 
 ### Example 5
 
-```sql
-geometry_col
-```
+`geometry_col`
 
 ### Example 6
 
@@ -89,13 +81,11 @@ geometry_col
 ```sql
 DECLARE
 @qs
-AS
-geometry =
+AS geometry =
 'POLYGON((-90.0 -180.0, -90.0 180.0, 90.0 180.0, 90.0
 -180.0, -90.0 -180.0))'
 ;
-EXECUTE
-sp_help_spatial_geometry_index
+EXECUTE sp_help_spatial_geometry_index
 'geometry_col'
 ,
 'SIndx_SpatialTable_geometry_col2'

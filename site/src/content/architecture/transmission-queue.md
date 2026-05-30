@@ -67,6 +67,4 @@ Conversation architecture
 
 Service Broker communication protocols
 
-```sql
-OFF
-```
+`OFF`

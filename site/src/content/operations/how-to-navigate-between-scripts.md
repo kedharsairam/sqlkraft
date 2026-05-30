@@ -39,8 +39,6 @@ and double-click
 
 in this line of code and select
 
-SQL
-
 3.
 
 is automatically opened, showing the location where the

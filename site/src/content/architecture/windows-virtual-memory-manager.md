@@ -88,10 +88,6 @@ to
 
 SQL Server memory architecture
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`

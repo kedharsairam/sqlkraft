@@ -14,9 +14,7 @@ Analytics Platform System (PDW) Returns a virtual table for the objects that are
 
 ## Syntax
 
-```sql
-sys.dm_tran_top_version_generators
-```
+`sys.dm_tran_top_version_generators`
 
 ## Examples
 

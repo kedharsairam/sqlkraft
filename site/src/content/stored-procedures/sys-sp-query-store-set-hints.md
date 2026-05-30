@@ -17,6 +17,5 @@ SQL Server 2022 (16.x) and later versions SQL database in Microsoft Fabric Trans
 ## Syntax
 
 ```sql
-@query_hints = N'OPTION (MAXDOP = 1, USE HINTS
-(''ENABLE_QUERY_OPTIMIZER_HOTFIXES'',''QUERY_OPTIMIZER_COMPATIBILITY_LEVEL_150''))'
+@query_hints = N'OPTION (MAXDOP = 1, USE HINTS (''ENABLE_QUERY_OPTIMIZER_HOTFIXES'',''QUERY_OPTIMIZER_COMPATIBILITY_LEVEL_150''))'
 ```

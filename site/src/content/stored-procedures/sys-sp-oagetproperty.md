@@ -26,10 +26,8 @@ Gets a property value of an OLE object. Transact-SQL syntax conventions The obje
 
 ```sql
 sp_
-OAG
-et
-P
-roperty objecttoken , propertyname
+OAG et
+P roperty objecttoken , propertyname
 [ , propertyvalue
 OUTPUT
 ]

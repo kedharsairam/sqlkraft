@@ -35,8 +35,6 @@ Database Engine. Select a database in which you can create an example stored pro
 
 2. Paste the following code in the Query Editor.
 
-SQL
-
 3. Press
 
 to run the Transact-SQL code.
@@ -59,8 +57,7 @@ INT
 , [
 Name
 ]
-NVARCHAR
-(128))
+NVARCHAR (128))
 CREATE
 PROCEDURE
 [dbo].[AddProduct]
@@ -70,8 +67,7 @@ INT
 ,
 @
 name
-NVARCHAR
-(128)
+NVARCHAR (128)
 AS
 BEGIN
 INSERT
@@ -81,8 +77,7 @@ Id
 ], [
 Name
 ])
-VALUES
-(@
+VALUES (@
 id
 , @
 name
@@ -112,8 +107,7 @@ Id
 ], [
 Name
 ])
-VALUES
-(@
+VALUES (@
 id
 , @
 name

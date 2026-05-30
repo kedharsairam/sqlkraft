@@ -53,22 +53,18 @@ int srv_convert (
 SRV_PROC *
 srvproc
 ,
-int
-srctype
+int srctype
 ,
 void *
 src
 ,
-DBINT
-srclen
+DBINT srclen
 ,
-int
-desttype
+int desttype
 ,
 void *
 dest
 ,
-DBINT
-destlen
+DBINT destlen
 );
 ```

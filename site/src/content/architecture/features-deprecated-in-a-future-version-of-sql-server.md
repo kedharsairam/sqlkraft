@@ -1743,23 +1743,13 @@ sp_setapprole
 Related content
 
 ```sql
-sp_addremotelogin
-sp_addserver
-sp_dropremotelogin
-sp_helpremotelogin
-sp_remoteoption
+sp_addremotelogin sp_addserver sp_dropremotelogin sp_helpremotelogin sp_remoteoption
 ```
 
-```sql
-sp_addserver
-```
+`sp_addserver`
 
 ```sql
-sp_addremotelogin
-sp_addserver
-sp_dropremotelogin
-sp_helpremotelogin
-sp_remoteoption
+sp_addremotelogin sp_addserver sp_dropremotelogin sp_helpremotelogin sp_remoteoption
 ```
 
 ```sql
@@ -1780,13 +1770,9 @@ ALTER DATABASE ... SET COMPATIBILITY_LEVEL
 FOR XML
 ```
 
-```sql
-RAW
-```
+`RAW`
 
-```sql
-AUTO
-```
+`AUTO`
 
 ```sql
 sys.sp_db_selective_xml_index
@@ -1800,9 +1786,7 @@ ADDING TAPE DEVICE
 ```
 
 ```sql
-sp_helpdevice
-sys.backup_devices
-sp_helpdevice
+sp_helpdevice sys.backup_devices sp_helpdevice
 ```
 
 ```sql
@@ -1833,17 +1817,11 @@ CONCAT_NULL_YIELDS_NULL OFF
 SET OFFSETS
 ```
 
-```sql
-ANSI_NULLS
-```
+`ANSI_NULLS`
 
-```sql
-ANSI_PADDING
-```
+`ANSI_PADDING`
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 SET OFFSETS
@@ -1861,33 +1839,23 @@ OFF
 ```
 
 ```sql
-sp_addtype
-sp_droptype
+sp_addtype sp_droptype
 CREATE TYPE
-DROP TYPE
-sp_addtype
-sp_droptype
+DROP TYPE sp_addtype sp_droptype
 ```
 
-```sql
-TIMESTAMP
-```
+`TIMESTAMP`
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
 ```sql
 INSERT NULL
 ```
 
-```sql
-TIMEST
-```
+`TIMEST`
 
 ```sql
-sp_attach_db
-sp_attach_single_file_db
+sp_attach_db sp_attach_single_file_db
 CREATE DATABASE
 ```
 
@@ -1900,9 +1868,7 @@ ATTACH
 FOR ATTACH_REBUILD_LOG
 ```
 
-```sql
-sp_attach_db
-```
+`sp_attach_db`
 
 ```sql
 CREATE DEFAULT
@@ -1924,15 +1890,12 @@ TABLE
 ```
 
 ```sql
-sp_bindefault
-sp_unbindefault
+sp_bindefault sp_unbindefault
 ```
 
 ```sql
 CREATE RULE
-DROP RULE
-sp_bindrule
-sp_unbindrule
+DROP RULE sp_bindrule sp_unbindrule
 CHECK
 ```
 
@@ -1946,30 +1909,23 @@ TABLE
 ```
 
 ```sql
-sp_bindrule
-sp_unbindrule
+sp_bindrule sp_unbindrule
 ```
 
-```sql
-sp_change_users_login
-```
+`sp_change_users_login`
 
 ```sql
 ALTER USER
 ```
 
+`sp_change_users_login`
+
 ```sql
-sp_change_users_login
+sp_depends sys.dm_sql_referencing_entities
 ```
 
 ```sql
-sp_depends
-sys.dm_sql_referencing_entities
-```
-
-```sql
-sys.dm_sql_referenced_entities
-sp_depends
+sys.dm_sql_referenced_entities sp_depends
 ```
 
 ```sql
@@ -1978,46 +1934,29 @@ MODIFY NAME
 ```
 
 ```sql
-ALTER DATABASE
-sp_renamedb
+ALTER DATABASE sp_renamedb
 ```
 
-```sql
-sp_getbindtoken
-```
+`sp_getbindtoken`
 
-```sql
-sp_getbindtoken
-```
+`sp_getbindtoken`
 
-```sql
-sp_bindsession
-```
+`sp_bindsession`
 
-```sql
-sp_bindsession
-```
+`sp_bindsession`
 
 ```sql
 sp_resetstatus
 ALTER DATABASE SET
 ```
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-EMERGENCY
-```
+`EMERGENCY`
 
-```sql
-sp_resetstatus
-```
+`sp_resetstatus`
 
-```sql
-TORN_PAGE_DETECTION
-```
+`TORN_PAGE_DETECTION`
 
 ```sql
 ALTER DATABASE
@@ -2029,58 +1968,38 @@ ALTER DATABASE
 ALTER DATABASE WITH TOR
 ```
 
-```sql
-REBUILD
-```
+`REBUILD`
 
 ```sql
 ALTER INDEX
 ```
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
 ```sql
 ALTER INDEX
 ```
 
+`sys.dm_db_index_physical_stats`
+
+`SCHEMA`
+
+`TABLE`
+
+`TYPE`
+
+`XP_API`
+
 ```sql
-sys.dm_db_index_physical_stats
+sp_addextendedproc sp_dropextendedproc sp_helpextendedproc
 ```
 
 ```sql
-SCHEMA
+sp_addextendedproc sp_dropextendedproc sp_helpextendedproc
 ```
 
 ```sql
-TABLE
-```
-
-```sql
-TYPE
-```
-
-```sql
-XP_API
-```
-
-```sql
-sp_addextendedproc
-sp_dropextendedproc
-sp_helpextendedproc
-```
-
-```sql
-sp_addextendedproc
-sp_dropextendedproc
-sp_helpextendedproc
-```
-
-```sql
-xp_grantlogin
-xp_revokelogin
-xp_loginConfig
+xp_grantlogin xp_revokelogin xp_loginConfig
 ```
 
 ```sql
@@ -2092,20 +2011,14 @@ DROP LOGIN IsIntegratedSecurityOnly
 ```
 
 ```sql
-SERVERPROPERTY
-xp_grantlogin
-xp_revokelogin
-xp_loginconfig
+SERVERPROPERTY xp_grantlogin xp_revokelogin xp_loginconfig
 ```
 
-```sql
-sys.dm_exec_sql_text
-```
+`sys.dm_exec_sql_text`
 
 ```sql
 sp_indexoption
-ALTER INDEX
-sp_indexoption
+ALTER INDEX sp_indexoption
 ```
 
 ```sql
@@ -2120,60 +2033,36 @@ ALTER TABLE
 CREATE INDEX
 ```
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
 ```sql
 start /high
 ... program.exe
 ```
 
-```sql
-sp_configure
-```
+`sp_configure`
+
+`sp_configure`
+
+`sp_configure`
 
 ```sql
-sp_configure
+sp_lock sys.dm_tran_locks sp_lock
 ```
 
-```sql
-sp_configure
-```
-
-```sql
-sp_lock
-sys.dm_tran_locks
-sp_lock
-```
-
-```sql
-sys.index_columns
-```
+`sys.index_columns`
 
 ```sql
 CREATE ENDPOINT
@@ -2187,30 +2076,21 @@ ALTER ENDPOINT
 FOR SOAP
 ```
 
-```sql
-CREATE
-```
+`CREATE`
 
 ```sql
 ALTER ENDPOINT
 ```
 
-```sql
-sys.soap_endpoints
-```
+`sys.soap_endpoints`
 
 ```sql
-sp_certify_removable
-sp_create_removable
-sp_detach_db
-sp_certify_removable
-sp_create_removable
+sp_certify_removable sp_create_removable sp_detach_db sp_certify_removable sp_create_removable
 ```
 
 ```sql
 sp_dbremove
-DROP DATABASE
-sp_dbremove
+DROP DATABASE sp_dbremove
 ```
 
 ```sql
@@ -2231,57 +2111,39 @@ ALTER LOGIN WITH SET CR
 ```
 
 ```sql
-sp_addapprole
-sp_dropapprole
+sp_addapprole sp_dropapprole
 CREATE APPLICATION ROLE
-DROP APPLICATION ROLE
-sp_addapprole
-sp_dropapprole
+DROP APPLICATION ROLE sp_addapprole sp_dropapprole
 ```
 
 ```sql
-sp_addlogin
-sp_droplogin
+sp_addlogin sp_droplogin
 CREATE LOGIN
-DROP LOGIN
-sp_addlogin
-sp_droplogin
+DROP LOGIN sp_addlogin sp_droplogin
 ```
 
 ```sql
-sp_adduser
-sp_dropuser
+sp_adduser sp_dropuser
 CREATE USER
-DROP USER
-sp_adduser
-sp_dropuser
+DROP USER sp_adduser sp_dropuser
 ```
 
 ```sql
-sp_grantdbaccess
-sp_revokedbaccess
+sp_grantdbaccess sp_revokedbaccess
 CREATE USER
-DROP USER
-sp_grantdbaccess
-sp_revokedbaccess
+DROP USER sp_grantdbaccess sp_revokedbaccess
 ```
 
 ```sql
-sp_addrole
-sp_droprole
+sp_addrole sp_droprole
 CREATE ROLE
-DROP ROLE
-sp_addrole
-sp_droprole
+DROP ROLE sp_addrole sp_droprole
 ```
 
 ```sql
-sp_approlepassword
-sp_password
+sp_approlepassword sp_password
 ALTER APPLICATION ROLE
-ALTER LOGIN
-sp_approlepassword
-sp_password
+ALTER LOGIN sp_approlepassword sp_password
 ```
 
 ```sql
@@ -2290,33 +2152,22 @@ ALTER SCHEMA
 ```
 
 ```sql
-ALTER AUTHORIZATION
-sp_changeobjectowner
+ALTER AUTHORIZATION sp_changeobjectowner
+```
+
+`sp_control_dbmasterkey_password`
+
+`sp_control_dbmasterkey_`
+
+```sql
+sp_defaultdb sp_defaultlanguage
+ALTER LOGIN sp_defaultdb sp_defaultlanguage
 ```
 
 ```sql
-sp_control_dbmasterkey_password
-```
-
-```sql
-sp_control_dbmasterkey_
-```
-
-```sql
-sp_defaultdb
-sp_defaultlanguage
-ALTER LOGIN
-sp_defaultdb
-sp_defaultlanguage
-```
-
-```sql
-sp_denylogin
-sp_grantlogin
+sp_denylogin sp_grantlogin
 ALTER LOGIN DISABLE
-CREATE LOGIN
-sp_denylogin
-sp_grantlogin
+CREATE LOGIN sp_denylogin sp_grantlogin
 ```
 
 ```sql
@@ -2325,13 +2176,11 @@ DROP LOGIN
 ```
 
 ```sql
-sp_srvrolepermission
-sp_dbfixedrolepermission
+sp_srvrolepermission sp_dbfixedrolepermission
 ```
 
 ```sql
-sp_srvrolepermission
-sp_dbfixedrolepermissio
+sp_srvrolepermission sp_dbfixedrolepermissio
 ```
 
 ```sql
@@ -2341,33 +2190,21 @@ REVOKE ALL
 GRANT
 ```
 
-```sql
-DENY
-```
+`DENY`
 
-```sql
-REVOKE
-```
+`REVOKE`
 
-```sql
-sys.fn_my_permissions
-```
+`sys.fn_my_permissions`
 
 ```sql
 EXECUTE AS
 ```
 
-```sql
-DESX
-```
+`DESX`
 
-```sql
-DESX
-```
+`DESX`
 
-```sql
-SET
-```
+`SET`
 
 ```sql
 SET FMTONLY
@@ -2377,134 +2214,79 @@ SET FMTONLY
 SET FMTONLY
 ```
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-Microsoft.SQLServer.Management.Smo.Information
-```
+`Microsoft.SQLServer.Management.Smo.Information`
 
 ```sql
 Microsoft.SQLServer. Management.Smo.Settings
 ```
 
-```sql
-Microsoft.SQLServer.Management.Smo.DatabaseOptions
-```
+`Microsoft.SQLServer.Management.Smo.DatabaseOptions`
 
 ```sql
 Microsoft.SqlServer.Management.Smo.DatabaseDdlTrigger.NotForReplication
 ```
 
+`Microsoft.SqlServer.Management.Smo.Server`
+
+`Microsoft.SqlServer.Management.Smo.Server`
+
+`Microsoft.SqlServer.Management.Smo.Database`
+
+`sp_db_increased_partitions`
+
+`sp_db_increased_partiti`
+
 ```sql
-Microsoft.SqlServer.Management.Smo.Server
+sys.numbered_procedures sys.numbered_procedure_parameters
 ```
 
 ```sql
-Microsoft.SqlServer.Management.Smo.Server
+sys.dm_os_cluster_nodes sys.dm_io_cluster_shared_drives
 ```
 
 ```sql
-Microsoft.SqlServer.Management.Smo.Database
+sys.sql_dependencies sys.sql_expression_dependencies sys.sql_dependencies
 ```
 
-```sql
-sp_db_increased_partitions
-```
+`sp_db_vardecimal_storage_format`
+
+`sp_db_vardecimal_storag`
+
+`sp_estimated_rowsize_reduction_for_vardecimal`
 
 ```sql
-sp_db_increased_partiti
+sp_estimate_data_compression_savings sp_estimated_rowsize_re
 ```
 
-```sql
-sys.numbered_procedures
-sys.numbered_procedure_parameters
-```
+`NOLOCK`
 
-```sql
-sys.dm_os_cluster_nodes
-sys.dm_io_cluster_shared_drives
-```
+`READUNCOMMITTED`
 
-```sql
-sys.sql_dependencies
-sys.sql_expression_dependencies
-sys.sql_dependencies
-```
+`FROM`
 
-```sql
-sp_db_vardecimal_storage_format
-```
+`UPDATE`
 
-```sql
-sp_db_vardecimal_storag
-```
+`DELETE`
 
-```sql
-sp_estimated_rowsize_reduction_for_vardecimal
-```
+`NOLOCK`
 
-```sql
-sp_estimate_data_compression_savings
-sp_estimated_rowsize_re
-```
+`READUNCOMMITTED`
 
-```sql
-NOLOCK
-```
+`FROM`
 
-```sql
-READUNCOMMITTED
-```
+`NOLOCK`
 
-```sql
-FROM
-```
+`READUNCOMMITT`
 
-```sql
-UPDATE
-```
+`WITH`
 
-```sql
-DELETE
-```
+`WITH`
 
-```sql
-NOLOCK
-```
-
-```sql
-READUNCOMMITTED
-```
-
-```sql
-FROM
-```
-
-```sql
-NOLOCK
-```
-
-```sql
-READUNCOMMITT
-```
-
-```sql
-WITH
-```
-
-```sql
-WITH
-```
-
-```sql
-WITH
-```
+`WITH`
 
 ```sql
 ::
@@ -2521,21 +2303,16 @@ SELECT * FROM
 ```
 
 ```sql
-SELECT * FROM
-sys.fn_virtualfilestats(2,1)
+SELECT * FROM sys.fn_virtualfilestats(2,1)
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 DROP INDEX
 ```
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 DROP
@@ -2554,33 +2331,21 @@ DROP INDEX
 GROUP BY ALL
 ```
 
-```sql
-UNION
-```
+`UNION`
 
 ```sql
 GROUP BY ALL
 ```
 
-```sql
-ROWGUIDCOL
-```
+`ROWGUIDCOL`
 
-```sql
-ROWGUIDCOL
-```
+`ROWGUIDCOL`
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
 ```sql
 ALTER DATABASE
@@ -2596,62 +2361,37 @@ MODIFY FILEGROUP READWR
 ```
 
 ```sql
-sp_trace_create
-sp_trace_setevent
-sp_trace_setfilter
-sp_trace_setstatus
+sp_trace_create sp_trace_setevent sp_trace_setfilter sp_trace_setstatus
 ```
 
 ```sql
-sys.traces
-sys.trace_events
-sys.trace_event_bindings
+sys.traces sys.trace_events sys.trace_event_bindings
 ```
 
 ```sql
-sp_trace_create
-sp_trace_setevent
-sp_trace_setfilter
-sp_trace_setstatus
+sp_trace_create sp_trace_setevent sp_trace_setfilter sp_trace_setstatus
 ```
 
 ```sql
-sys.traces
-sys.trace_events
-sys.trace_event_binding
-sys.trace_categories
-sys.trace_columns
-sys.trace_subclass_valu
+sys.traces sys.trace_events sys.trace_event_binding sys.trace_categories sys.trace_columns sys.trace_subclass_valu
 ```
 
 ```sql
 SET ROWCOUNT
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-TOP
-```
+`TOP`
 
 ```sql
 SET ROWCOUNT
 ```
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-sp_setapprole
-```
+`sp_setapprole`

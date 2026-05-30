@@ -113,8 +113,6 @@ This section describes new behaviors introduced with compatibility level 110. Th
 
 applies to compatibility levels above 110.
 
-
-
 Expand table
 
 #### Compatibility level setting of 100 or lower
@@ -129,45 +127,11 @@ Expand table
 
 #### substring
 
-#### time
-
-#### datetime2
-
-#### date
-
-#### time
-
-#### time
-
-#### datetime2
-
-#### date
-
-#### time
-
-#### datetime2
-
-#### datetimeoffset
-
-#### datetime
-
-#### smalldatetime
-
-#### date
-
-#### time
-
-#### datetime2
-
-#### datetimeoffset
-
-#### datetime
-
 #### smalldatetime
 
 #### smalldatetime
 
-#### datetime
+#### smalldatetime
 
 #### smalldatetime
 
@@ -375,13 +339,9 @@ as
 
 tables (in the same ordinal position in the select list)
 
-```sql
-EXCEPT
-```
+`EXCEPT`
 
-```sql
-EXCEPT
-```
+`EXCEPT`
 
 ```sql
 OUTPUT INTO
@@ -392,33 +352,23 @@ IDENTITY_INSERT
 SETTING = OFF
 ```
 
-```sql
-IDENTITY_INSERT
-```
+`IDENTITY_INSERT`
 
-```sql
-OFF
-```
+`OFF`
 
 ```sql
 $action
 ```
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-MERGE
-```
+`MERGE`
 
 ```sql
 $action
 ```
 
-```sql
-MERGE
-```
+`MERGE`
 
 ```sql
 SELECT INTO
@@ -428,29 +378,17 @@ SELECT INTO
 SELECT INTO
 ```
 
-```sql
-PIVOT
-```
+`PIVOT`
 
-```sql
-PIVOT
-```
+`PIVOT`
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
 ```sql
 SELECT INTO

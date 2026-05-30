@@ -14,9 +14,7 @@ SQL analytics endpoint in Microsoft Fabric Changes the name of a user-created ob
 
 ## Syntax
 
-```sql
-sp_rename
-```
+`sp_rename`
 
 ## Permissions
 
@@ -40,8 +38,7 @@ Salary Money
 NOT
 NULL
 )
-WITH
-(SYSTEM_VERSIONING =
+WITH (SYSTEM_VERSIONING =
 ON
 , LEDGER =
 ON
@@ -70,8 +67,7 @@ Salary Money
 NOT
 NULL
 )
-WITH
-(SYSTEM_VERSIONING =
+WITH (SYSTEM_VERSIONING =
 ON
 , LEDGER =
 ON
@@ -82,8 +78,7 @@ TABLE
 [Employees]
 ADD
 Lastname
-NVARCHAR
-(256)
+NVARCHAR (256)
 NULL
 ;
 EXEC sp_rename 'dbo.Employees.Lastname', 'Firstname', 'COLUMN';
@@ -93,41 +88,31 @@ TABLE
 DROP
 COLUMN
 Firstname;
-SELECT
-t.[principal_name]
+SELECT t.[principal_name]
 , t.[commit_time]
 , h.[column_name]
 AS
 [column_name]
 , h.[operation_type_desc]
-FROM
-sys.ledger_column_history h
-JOIN
-sys.database_ledger_transactions t
-ON
-h.transaction_id = t.transaction_id
+FROM sys.ledger_column_history h
+JOIN sys.database_ledger_transactions t
+ON h.transaction_id = t.transaction_id
 ORDER
-BY
-t.[commit_time];
+BY t.[commit_time];
 ```
 
 ### Example 3
 
-```sql
-sys.sql_modules
-```
+`sys.sql_modules`
 
 ### Example 4
 
-```sql
-sp_rename
-```
+`sp_rename`
 
 ### Example 5
 
 ```sql
-SELECT
-sm.object_id,
+SELECT sm.object_id,
 ss.[
 name
 ]
@@ -138,34 +123,24 @@ schema
 o.[
 name
 ]
-AS
-object_name,
+AS object_name,
 o.[
 type
 ],
 o.[type_desc],
 sm.[definition]
-FROM
-sys.sql_modules
-AS
-sm
+FROM sys.sql_modules
+AS sm
 INNER
-JOIN
-sys.objects
-AS
-o
-ON
-sm.object_id = o.object_id
+JOIN sys.objects
+AS o
+ON sm.object_id = o.object_id
 INNER
-JOIN
-sys.schemas
-AS
-ss
-ON
-o.schema_id = ss.schema_id
+JOIN sys.schemas
+AS ss
+ON o.schema_id = ss.schema_id
 ORDER
-BY
-o.[
+BY o.[
 type
 ], ss.[
 name

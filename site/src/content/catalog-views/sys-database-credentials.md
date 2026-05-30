@@ -17,6 +17,4 @@ Applies to: SQL Server 2016 (13.x) and later versions Azure SQL Database Azure S
 
 ## Code Blocks
 
-```sql
-CONTROL
-```
+`CONTROL`

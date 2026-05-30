@@ -79,45 +79,29 @@ CREATE TABLE
 PRIMARY KEY
 ```
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
 ```sql
 PRIMARY KEY
 ```
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
 ```sql
 PRIMARY KEY
 ```
 
-```sql
-CLUSTERED
-```
+`CLUSTERED`
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
-```sql
-NONCLUSTERED
-```
+`NONCLUSTERED`
 
-```sql
-CLUSTERED
-```
+`CLUSTERED`
 
-```sql
-CLUSTERED
-```
+`CLUSTERED`
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
 ```sql
 PRIMARY KEY
@@ -127,14 +111,8 @@ PRIMARY KEY
 PRIMARY KEY
 ```
 
-```sql
-NONCLUSTERED
-```
+`NONCLUSTERED`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-FALSE
-```
+`FALSE`

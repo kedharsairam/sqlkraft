@@ -98,7 +98,5 @@ contain the following XML (reformatted for readability):
 ```sql
 CREATE MESSAGE TYPE
 BEGIN DIALOG
-CONVERSATION
-https://schemas.microsoft.com/SQL/ServiceBroker/Error
-https://schemas.microsoft.com/SQL/ServiceBroker
+CONVERSATION https://schemas.microsoft.com/SQL/ServiceBroker/Error https://schemas.microsoft.com/SQL/ServiceBroker
 ```

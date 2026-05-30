@@ -26,15 +26,11 @@ sp_syscollector_set_cache_window [ [ @cache_window = ] cache_window ]
 ### Example 1
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_syscollector_disable_collector;
+EXECUTE dbo.sp_syscollector_disable_collector;
 GO
-EXECUTE
-dbo.sp_syscollector_set_cache_window 3;
+EXECUTE dbo.sp_syscollector_set_cache_window 3;
 GO
-EXECUTE
-dbo.sp_syscollector_enable_collector;
+EXECUTE dbo.sp_syscollector_enable_collector;
 ```

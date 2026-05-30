@@ -45,15 +45,11 @@ To understand how the function can be used to map ranges to LSN ranges, consider
 
 ### Example 1
 
-```sql
-sys.fn_cdc_map_time_to_lsn
-```
+`sys.fn_cdc_map_time_to_lsn`
 
 ### Example 2
 
-```sql
-tran_end_time
-```
+`tran_end_time`
 
 ### Example 3
 
@@ -61,8 +57,7 @@ tran_end_time
 DECLARE
 @extraction_time DATETIME,
 @lsn
-BINARY
-(10);
+BINARY (10);
 SET
 @extraction_time =
 '2007-01-01 12:00:00.000'
@@ -75,8 +70,7 @@ SELECT
 IF @lsn IS NOT NULL
 BEGIN
 <
-some
-action
+some action
 >
 END
 ```

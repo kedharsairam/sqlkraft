@@ -70,8 +70,6 @@ is defined against another instance of SQL Server, the
 
 following statement references a table on that server:
 
-SQL
-
 The linked server name can also be specified in an
 
 statement to open a rowset
@@ -91,8 +89,6 @@ functions
 are specified with the information needed to connect to the linked server. The rowset can
 
 then be referenced the same way a table is referenced in Transact-SQL statements:
-
-SQL
 
 SQL Server uses OLE DB to communicate between the relational engine and the storage
 
@@ -136,21 +132,13 @@ CREATE TABLE
 ALTER TABLE
 ```
 
-```sql
-sp_addlinkedserver
-```
+`sp_addlinkedserver`
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`
 
-```sql
-DeptSQLSrvr
-```
+`DeptSQLSrvr`
 
-```sql
-OPENQUERY
-```
+`OPENQUERY`
 
 ```sql
 SELECT
@@ -159,25 +147,15 @@ FROM
 DeptSQLSrvr.AdventureWorks2022.HumanResources.Employee;
 ```
 
-```sql
-OPENROWSET
-```
+`OPENROWSET`
 
-```sql
-OPENDATASOURCE
-```
+`OPENDATASOURCE`
 
-```sql
-sysadmin
-```
+`sysadmin`
 
-```sql
-DisallowAdhocAccess
-```
+`DisallowAdhocAccess`
 
-```sql
-sysadmin
-```
+`sysadmin`
 
 ```sql
 SELECT

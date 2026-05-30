@@ -14,9 +14,7 @@ Returns one row per endpoint created in the system. There's always exactly one S
 
 ## Syntax
 
-```sql
-sys.database_mirroring_endpoints
-```
+`sys.database_mirroring_endpoints`
 
 ## Permissions
 

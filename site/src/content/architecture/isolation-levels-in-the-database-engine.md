@@ -334,9 +334,7 @@ Expand table
 
 ### ODBC
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
 ```sql
 READ UNCOMMITTED
@@ -362,40 +360,27 @@ REPEATABLE
 READ
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 Read
 Committed
-Snapshot
-(RCSI)
+Snapshot (RCSI)
 ```
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 READ COMMITTED
@@ -405,13 +390,9 @@ READ COMMITTED
 Sch-S
 ```
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-OFF
-```
+`OFF`
 
 ```sql
 READ COMMITTED
@@ -421,33 +402,21 @@ READ COMMITTED
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 Sch-S
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 BEGIN TRANSACTION
@@ -488,11 +457,7 @@ PARTITION SCHEME
 ```
 
 ```sql
-Snapshot isolation transaction failed in database '%.*ls' because the
-object accessed by the statement has been modified by a DDL statement in another
-concurrent transaction since the start of this transaction. It is not allowed because
-the metadata is not versioned. A concurrent update to metadata could lead to
-inconsistency if mixed with snapshot isolation.
+Snapshot isolation transaction failed in database '%.*ls' because the object accessed by the statement has been modified by a DDL statement in another concurrent transaction since the start of this transaction. It is not allowed because the metadata is not versioned. A concurrent update to metadata could lead to inconsistency if mixed with snapshot isolation.
 ```
 
 ```sql
@@ -507,10 +472,6 @@ READ COMMITTED
 REPEATABLE READ
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`

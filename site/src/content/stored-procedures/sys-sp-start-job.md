@@ -66,11 +66,9 @@ Weekly Sales Data Backup
 ### Example 2
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_start_job N
+EXECUTE dbo.sp_start_job N
 'Weekly Sales Data Backup'
 ;
 GO

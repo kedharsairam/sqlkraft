@@ -25,8 +25,7 @@ Related content
 SET
 @OrderAmt += 12 - (@OrderAmt % 12)
 END
-RETURN
-(@OrderAmt);
+RETURN (@OrderAmt);
 END
 ;
 GO
@@ -46,10 +45,8 @@ AS
 ModifiedOrder;
 -- Create a synonym dbo.CorrectOrder for the dbo.OrderDozen function.
 CREATE
-SYNONYM
-dbo.CorrectOrder
-FOR
-dbo.OrderDozen;
+SYNONYM dbo.CorrectOrder
+FOR dbo.OrderDozen;
 GO
 -- Using the dbo.CorrectOrder synonym.
 DECLARE

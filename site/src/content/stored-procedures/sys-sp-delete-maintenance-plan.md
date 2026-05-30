@@ -14,9 +14,7 @@ Deletes the specified maintenance plan. This feature will be removed in a future
 
 ## Syntax
 
-```sql
-sp_delete_maintenance_plan
-```
+`sp_delete_maintenance_plan`
 
 ## Remarks
 

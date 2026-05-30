@@ -90,8 +90,7 @@ Expand table
 ```sql
 System.Data.SqlClient.SqlConnection
 SET
-SET
-using(SqlConnection connection = new SqlConnection("context connection=true"))
+SET using(SqlConnection connection = new SqlConnection("context connection=true"))
 {
 connection.Open();
 // Use the connection

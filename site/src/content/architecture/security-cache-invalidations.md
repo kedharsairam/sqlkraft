@@ -56,17 +56,11 @@ database
 
 Expand table
 
-```sql
-ObjectPerm
-```
+`ObjectPerm`
 
-```sql
-ObjPerm
-```
+`ObjPerm`
 
-```sql
-master
-```
+`master`
 
 ```sql
 CREATE/ALTER/DROP

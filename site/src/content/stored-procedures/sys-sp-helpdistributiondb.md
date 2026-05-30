@@ -14,6 +14,4 @@ Returns properties of the specified distribution database. This stored procedure
 
 ## Syntax
 
-```sql
-history_cleanup_agent
-```
+`history_cleanup_agent`

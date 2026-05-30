@@ -89,11 +89,7 @@ revisit other components of the designer in later procedures.
 
 . Specifically, replace
 
-SQL
-
 with
-
-SQL
 
 ```cmd
 Trade

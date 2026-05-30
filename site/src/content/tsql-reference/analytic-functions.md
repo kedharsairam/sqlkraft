@@ -21,8 +21,6 @@ Analytics Platform System (PDW)
 
 Azure SQL Edge
 
-SQL
-
 analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric

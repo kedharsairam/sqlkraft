@@ -64,8 +64,6 @@ For a specific product model, the following query retrieves manufacturing steps 
 
 work center location in a sequence of work center locations in the manufacturing process.
 
-SQL
-
 ```sql
 SELECT
 Instructions.query(
@@ -80,8 +78,7 @@ ProductModelName = "{ sql:column("Production.ProductModel.Name")
 <Location>
 { (//AWMI:root/AWMI:Location)[2]/@* }
 <Steps>
-{ for $s in (//AWMI:root/AWMI:Location)[2]//AWMI:step
-return
+{ for $s in (//AWMI:root/AWMI:Location)[2]//AWMI:step return
 <Step>
 { string($s) }
 </Step>
@@ -90,8 +87,7 @@ return
 </Location>
 </ManuStep>
 '
-)
-as
+) as
 Result
 FROM
 Production.ProductModel

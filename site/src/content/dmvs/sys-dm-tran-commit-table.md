@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Displays one row for each transaction that is co
 
 ## Syntax
 
-```sql
-sys.dm_tran_commit_table
-```
+`sys.dm_tran_commit_table`

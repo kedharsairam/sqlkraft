@@ -14,9 +14,7 @@ Azure SQL Managed Instance Drops a distribution database. Drops the physical fil
 
 ## Syntax
 
-```sql
-sp_dropdistributiondb
-```
+`sp_dropdistributiondb`
 
 ## Permissions
 

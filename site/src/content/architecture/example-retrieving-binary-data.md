@@ -41,8 +41,6 @@ option is specified in the query to return the binary data in base64-encoded
 
 format.
 
-SQL
-
 Expect the following result:
 
 XML

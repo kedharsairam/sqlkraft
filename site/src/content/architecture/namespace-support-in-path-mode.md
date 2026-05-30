@@ -37,8 +37,6 @@ the following query demonstrates the WITH NAMESPACES syntax to declare a namespa
 
 that can then be used in the subsequent SELECT statement:
 
-SQL
-
 These samples illustrate the use of PATH mode in generating XML from a SELECT query. Many
 
 of these queries are specified against the bicycle manufacturing instructions XML documents
@@ -51,14 +49,11 @@ Last updated on 11/18/2025
 
 ```sql
 WITH
-XMLNAMESPACES
-(
+XMLNAMESPACES (
 'a'
-as
-a)
+as a)
 SELECT
-1
-as
+1 as
 'a:b'
 FOR
 XML

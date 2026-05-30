@@ -33,22 +33,18 @@ Displays statistics about SQL Server. Transact-SQL syntax conventions Number of 
 ## Syntax
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_monitor;
+EXECUTE sp_monitor;
 last_run                   current_run                seconds
 -----------------------    -----------------------    ---------
-2024-05-01 15:27:51.287    2024-08-21 17:20:34.097    9683563
-cpu_busy           io_busy         idle
+2024-05-01 15:27:51.287    2024-08-21 17:20:34.097    9683563 cpu_busy           io_busy         idle
 ---------------    -------------   --------------------
 14452(14451)-0%    2555(2554)-0%   4371742(4371629)-45%
 packets_received       packets_sent    packet_errors
 ----------------       ------------    -------------
-18032(17993)           64572(64533)    0(0)
-total_read     total_write   total_errors    connections
+18032(17993)           64572(64533)    0(0) total_read     total_write   total_errors    connections
 -----------    -----------   -------------   --------------
 1593(1593)     4687(4687)    0(0)            155625(155557)
 ```
@@ -94,8 +90,7 @@ CONNECTIONS
 
 ```sql
 SELECT
-GETDATE
-()
+GETDATE ()
 AS
 'Today''s Date and Time'
 ,
@@ -115,9 +110,7 @@ Today's Date and Time  Login Attempts
 
 ### Example 7
 
-```sql
-float
-```
+`float`
 
 ### Example 8
 
@@ -131,16 +124,13 @@ IDLE
 ```sql
 SELECT
 @@IDLE *
-CAST
-(@@TIMETICKS
-AS
-float
+CAST (@@TIMETICKS
+AS float
 )
 AS
 'Idle microseconds'
 ,
-GETDATE
-()
+GETDATE ()
 AS
 'as of'
 ;

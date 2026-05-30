@@ -30,18 +30,12 @@ SQL database in Microsoft Fabric Contains a row for each sequence object in a da
 
 ```sql
 start_value
--9223372036854775808
-increment
-1
-minimum_value
--9223372036854775808
-maximum_value
-9223372036854775807
-is_cycling
-0
-is_cached
-1
-current_value
+-9223372036854775808 increment
+1 minimum_value
+-9223372036854775808 maximum_value
+9223372036854775807 is_cycling
+0 is_cached
+1 current_value
 -9223372036854775808
 ```
 
@@ -49,34 +43,23 @@ current_value
 
 ### Example 1
 
-```sql
-CountBy1
-```
+`CountBy1`
 
 ### Example 2
 
 ```sql
-SELECT
-sch.name +
+SELECT sch.name +
 '.'
 + seq.name
 AS
 [
-Sequence
-schema
-and
-name
+Sequence schema and name
 ]
-FROM
-sys.sequences
-AS
-seq
-JOIN
-sys.schemas
-AS
-sch
-ON
-seq.schema_id = sch.schema_id ;
+FROM sys.sequences
+AS seq
+JOIN sys.schemas
+AS sch
+ON seq.schema_id = sch.schema_id ;
 GO
 ```
 

@@ -83,8 +83,6 @@ is assigned
 
 to it.
 
-SQL
-
 This is the result:
 
 XML
@@ -102,12 +100,10 @@ the same level. The following query will return an error:
 /
 row
 @PmId, Name
-PmId
-row
+PmId row
 ProductModelID
 SELECT
-ProductModelID
-as
+ProductModelID as
 "@PmId"
 ,
 Name

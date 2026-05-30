@@ -13,8 +13,6 @@ them. In the following example, the nested scope created for execution of
 
 doesn't have access to the variable declared in the higher scope and returns an error.
 
-SQL
-
 This query produces the following error:
 
 Output
@@ -43,8 +41,6 @@ clause of a
 
 statement:
 
-SQL
-
 You can also assign a value to a variable by referencing it in a select list. If you reference a
 
 variable in a select list, assign it a scalar value or ensure the
@@ -52,8 +48,6 @@ variable in a select list, assign it a scalar value or ensure the
 statement returns only one
 
 row. For example:
-
-SQL
 
 If a
 
@@ -69,8 +63,6 @@ value of the last row returned, which is
 
 :
 
-SQL
-
 ２
 
 Warning
@@ -83,33 +75,19 @@ doesn't guarantee the order of evaluation of the expressions. Effects are only v
 
 there are references among the assignments.
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-SET
-```
+`SET`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SET
-```
+`SET`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 DECLARE
@@ -119,8 +97,7 @@ INT
 ;
 SET
 @MyVariable = 1;
-EXECUTE
-sp_executesql N
+EXECUTE sp_executesql N
 'SELECT @MyVariable'
 ;
 Msg 137, Level 15, State 2, Line 1
@@ -135,12 +112,10 @@ GO
 DECLARE
 @FirstNameVariable
 AS
-NVARCHAR
-(50),
+NVARCHAR (50),
 @PostalCodeVariable
 AS
-NVARCHAR
-(15);
+NVARCHAR (15);
 -- Set their values.
 SET
 @FirstNameVariable = N
@@ -158,21 +133,15 @@ JobTitle,
 City,
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 @EmpIDVariable
 ```
 
-```sql
-BusinessEntityID
-```
+`BusinessEntityID`
 
 ```sql
 1
@@ -198,15 +167,12 @@ INT
 ;
 SELECT
 @EmpIDVariable =
-MAX
-(BusinessEntityID)
+MAX (BusinessEntityID)
 FROM
 HumanResources.Employee;
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 USE

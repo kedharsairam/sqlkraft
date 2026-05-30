@@ -14,9 +14,7 @@ SQL database in Microsoft Fabric Removes the internal representation of the XML 
 
 ## Syntax
 
-```sql
-sp_xml_removedocument
-```
+`sp_xml_removedocument`
 
 ## Permissions
 
@@ -27,8 +25,7 @@ Applies to: SQL Server Azure SQL Database Azure SQL Managed Instance SQL databas
 ### Example 1
 
 ```sql
-EXECUTE
-sp_xml_removedocument @hdoc;
+EXECUTE sp_xml_removedocument @hdoc;
 ```
 
 ### Example 2

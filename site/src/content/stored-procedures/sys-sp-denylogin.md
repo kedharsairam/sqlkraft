@@ -57,15 +57,11 @@ new development work, and plan to modify applications that currently use this fe
 
 ### Example 1
 
-```sql
-sp_denylogin
-```
+`sp_denylogin`
 
 ### Example 2
 
-```sql
-sp_denylogin
-```
+`sp_denylogin`
 
 ### Example 3
 
@@ -76,8 +72,7 @@ CORPORATE\GeorgeV
 ### Example 4
 
 ```sql
-EXECUTE
-sp_denylogin
+EXECUTE sp_denylogin
 'CORPORATE\GeorgeV'
 ;
 ```

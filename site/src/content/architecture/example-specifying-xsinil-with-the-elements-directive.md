@@ -39,8 +39,6 @@ directive to generate element-centric XML from the
 
 query result.
 
-SQL
-
 This is the partial result.
 
 XML
@@ -60,8 +58,6 @@ directive with
 you can generate the
 
 element even for NULL color values in the result set.
-
-SQL
 
 ```sql
 ELEMENTS

@@ -14,9 +14,7 @@ SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Conta
 
 ## Syntax
 
-```sql
-is_part_of_encrypted_module
-```
+`is_part_of_encrypted_module`
 
 ## Permissions
 

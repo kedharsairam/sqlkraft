@@ -98,9 +98,7 @@ underscore is chosen as the escape character. Following are the escape rules tha
 encoding:
 
 ```sql
-hex(0D)
-hex(09)
-hex(0A)
+hex(0D) hex(09) hex(0A)
 :
 _
 ```

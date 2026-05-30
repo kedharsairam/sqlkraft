@@ -283,74 +283,53 @@ reference linked servers. These are defined by using
 
 ### Example 1
 
-```sql
-sp_addlinkedserver
-```
+`sp_addlinkedserver`
 
 ### Example 2
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`
 
 ### Example 3
 
-```sql
-true
-```
+`true`
 
 ### Example 4
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`
 
 ### Example 5
 
-```sql
-sp_droplinkedsrvlogin
-```
+`sp_droplinkedsrvlogin`
 
 ### Example 6
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`
 
 ### Example 7
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`
 
 ### Example 8
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`
 
 ### Example 9
 
-```sql
-SEATTLESales
-```
+`SEATTLESales`
 
 ### Example 10
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_addlinkedserver
+EXECUTE sp_addlinkedserver
 'SEATTLESales'
 , N
 'SQL Server'
 ;
 GO
-EXECUTE
-sp_testlinkedserver SEATTLESales;
+EXECUTE sp_testlinkedserver SEATTLESales;
 GO
 ```
 

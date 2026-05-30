@@ -47,12 +47,9 @@ SQL Server 2025 (17.x) Preview Contains a row per json index. Indicates that arr
 DROP
 TABLE
 IF
-EXISTS
-dbo.Customers;
+EXISTS dbo.Customers;
 CREATE
-TABLE
-dbo.Customers
-(
+TABLE dbo.Customers (
 customer_id
 INT
 IDENTITY
@@ -68,9 +65,7 @@ CREATE
 JSON
 INDEX
 CustomersJsonIndex
-ON
-dbo.Customers (customer_info);
+ON dbo.Customers (customer_info);
 INSERT
-INTO
-dbo.Customers (customer_info)
+INTO dbo.Customers (customer_info)
 ```

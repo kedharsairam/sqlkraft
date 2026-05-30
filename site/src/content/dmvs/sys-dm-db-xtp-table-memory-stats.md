@@ -30,15 +30,11 @@ Returns memory usage statistics for each In-Memory OLTP table (user and system) 
 -- finding memory for objects
 SELECT
 OBJECT_NAME(object_id), *
-FROM
-sys.dm_db_xtp_table_memory_stats;
+FROM sys.dm_db_xtp_table_memory_stats;
 SELECT
-SUM
-( memory_allocated_for_indexes_kb + memory_allocated_for_table_kb)
-AS
-memoryallocated_objects_in_kb
-FROM
-sys.dm_db_xtp_table_memory_stats;
+SUM ( memory_allocated_for_indexes_kb + memory_allocated_for_table_kb)
+AS memoryallocated_objects_in_kb
+FROM sys.dm_db_xtp_table_memory_stats;
 ```
 
 ## Permissions

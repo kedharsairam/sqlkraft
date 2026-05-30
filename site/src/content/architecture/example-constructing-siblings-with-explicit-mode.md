@@ -63,8 +63,6 @@ tag value of 1 identifying the
 
 element.
 
-SQL
-
 ```sql
 <SalesPerson>
 <OrderDetail>
@@ -134,51 +132,38 @@ USE
 AdventureWorks2022;
 GO
 SELECT
-1
-as
+1 as
 Tag,
-0
-as
+0 as
 Parent
 ,
-SalesOrderID
-as
+SalesOrderID as
 [OrderHeader!1!SalesOrderID],
-OrderDate
-as
+OrderDate as
 [OrderHeader!1!OrderDate],
-CustomerID
-as
+CustomerID as
 [OrderHeader!1!CustomerID],
-NULL
-as
+NULL as
 [SalesPerson!2!SalesPersonID],
-NULL
-as
+NULL as
 [OrderDetail!3!SalesOrderID],
-NULL
-as
+NULL as
 [OrderDetail!3!LineTotal],
-NULL
-as
+NULL as
 [OrderDetail!3!ProductID],
-NULL
-as
+NULL as
 [OrderDetail!3!OrderQty]
 FROM
 Sales.SalesOrderHeader
 WHERE
-SalesOrderID=43659
-or
+SalesOrderID=43659 or
 SalesOrderID=43661
 UNION
 ALL
 SELECT
-2
-as
+2 as
 Tag,
-1
-as
+1 as
 Parent
 ,
 SalesOrderID,

@@ -47,22 +47,18 @@ networking
 
 megabytes, for forwarded messages.
 
-SQL
-
 How to: Activate Service Broker networking (Transact-SQL)
 
 How to: Deactivate Service Broker Message Forwarding (Transact-SQL)
 
 ```sql
-USE
-master
+USE master
 ;
 GO
 ALTER
 ENDPOINT BrokerEndpoint
 FOR
-SERVICE_BROKER
-(
+SERVICE_BROKER (
 MESSAGE_FORWARDING = ENABLED,
 MESSAGE_FORWARD_SIZE = 10
 );

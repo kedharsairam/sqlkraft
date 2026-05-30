@@ -117,8 +117,6 @@ Informatica (connected through the SQL Server PDW Informatica Connector) only
 
 supports 16 significant digits, regardless of the precision and scale specified.
 
-
-
 Expand table
 
 ```sql
@@ -137,9 +135,7 @@ Expand table
 SET ARITHABORT
 ```
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 5E-18

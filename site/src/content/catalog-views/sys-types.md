@@ -25,12 +25,9 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row 
 
 ```sql
 INNER
-JOIN
-sys.types t
-ON
-c.user_type_id = t.user_type_id
-WHERE
-object_id = object_id(
+JOIN sys.types t
+ON c.user_type_id = t.user_type_id
+WHERE object_id = object_id(
 'dbo.sample'
 );
 ```

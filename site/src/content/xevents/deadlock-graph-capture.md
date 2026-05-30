@@ -27,12 +27,10 @@ The system_health session automatically captures `xml_deadlock_report` events in
 ```sql
 -- Extract deadlock graphs from the system_health ring buffer
 -- Returns the most recent deadlock events with parsed process/resource details
-SELECT
-    deadlock.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
+SELECT deadlock.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
     deadlock.query('event/data/value/deadlock') AS deadlock_graph_xml,
     deadlock.value('(event/data[@name="database_name"]/value)[1]', 'nvarchar(256)') AS database_name
-FROM
-(
+FROM (
     SELECT CAST(target_data AS XML) AS session_target
     FROM sys.dm_xe_session_targets
     WHERE event_session_address = (
@@ -48,13 +46,10 @@ ORDER BY deadlock_time DESC;
 
 ```sql
 -- Extract individual processes involved in each deadlock
-WITH DeadlockEvents AS
-(
-    SELECT
-        d.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
+WITH DeadlockEvents AS (
+    SELECT d.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
         d.query('event/data/value/deadlock') AS graph
-    FROM
-    (
+    FROM (
         SELECT CAST(target_data AS XML) AS target_data
         FROM sys.dm_xe_session_targets
         WHERE event_session_address = (
@@ -64,8 +59,7 @@ WITH DeadlockEvents AS
     ) AS sh
     CROSS APPLY sh.target_data.nodes('/RingBufferTarget/event[@name="xml_deadlock_report"]') AS d(event)
 )
-SELECT
-    deadlock_time,
+SELECT deadlock_time,
     p.value('@id', 'varchar(50)') AS process_id,
     p.value('@spid', 'int') AS spid,
     p.value('@ecid', 'int') AS ecid,
@@ -90,30 +84,25 @@ For environments with frequent deadlocks, create a dedicated XEvent session with
 -- Create a dedicated deadlock capture session with file target
 CREATE EVENT SESSION [deadlock_capture]
 ON SERVER
-ADD EVENT sqlserver.xml_deadlock_report
-(
-    ACTION
-    (
+ADD EVENT sqlserver.xml_deadlock_report (
+    ACTION (
         sqlserver.database_name,
         sqlserver.client_app_name,
         sqlserver.client_hostname,
         sqlserver.username,
         sqlserver.session_id
     )
-    WHERE
-    (
+    WHERE (
         [sqlserver].[database_name] = N'YourDatabaseName'
         OR [sqlserver].[database_name] IS NULL
     )
 )
-ADD TARGET package0.event_file
-(
+ADD TARGET package0.event_file (
     SET filename = N'D:\XELogs\deadlock_capture.xel',
         max_file_size = 50,
         max_rollover_files = 5
 )
-WITH
-(
+WITH (
     MAX_MEMORY = 2048 KB,
     EVENT_RETENTION_MODE = ALLOW_SINGLE_EVENT_LOSS,
     MAX_DISPATCH_LATENCY = 15 SECONDS,
@@ -133,20 +122,16 @@ GO
 
 ```sql
 -- Read deadlock events from the file target and parse deadlock graphs
-WITH xevents AS
-(
-    SELECT
-        event_data AS deadlock_event
-    FROM sys.fn_xe_file_target_read_file
-    (
+WITH xevents AS (
+    SELECT event_data AS deadlock_event
+    FROM sys.fn_xe_file_target_read_file (
         N'D:\XELogs\deadlock_capture*.xel',
         N'D:\XELogs\deadlock_capture*.xem',
         NULL,
         NULL
     )
 )
-SELECT
-    event_data.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
+SELECT event_data.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
     event_data.value('(event/action[@name="database_name"]/value)[1]', 'nvarchar(256)') AS database_name,
     event_data.value('(event/action[@name="client_app_name"]/value)[1]', 'nvarchar(256)') AS application_name,
     event_data.query('event/data/value/deadlock') AS deadlock_graph

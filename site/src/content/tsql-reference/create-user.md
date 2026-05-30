@@ -83,8 +83,6 @@ Microsoft Fabric.
 
 ### Users that cannot authenticate
 
-#### syntaxsql
-
 ```sql
 CREATE USER
 [Contoso\Fritz];

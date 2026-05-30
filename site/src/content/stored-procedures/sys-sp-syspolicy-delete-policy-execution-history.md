@@ -14,9 +14,7 @@ syntax: "sp_syspolicy_delete_policy_execution_history"
 
 ## Syntax
 
-```sql
-sp_syspolicy_delete_policy_execution_history
-```
+`sp_syspolicy_delete_policy_execution_history`
 
 ## Permissions
 
@@ -33,8 +31,7 @@ You must run in the context of the system database. To obtain values for @policy
 ### Example 2
 
 ```sql
-EXECUTE
-msdb.dbo.sp_syspolicy_delete_policy_execution_history
+EXECUTE msdb.dbo.sp_syspolicy_delete_policy_execution_history
 @policy_id = 7,
 @oldest_date =
 '2019-02-16 16:00:00.000'

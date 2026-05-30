@@ -300,17 +300,11 @@ is set to
 
 the Database Engine to lock table partitions at the HoBT level instead of at the table level.
 
-```sql
-LOCK_TIMEOUT
-```
+`LOCK_TIMEOUT`
 
-```sql
-Part
-```
+`Part`
 
-```sql
-Supplier
-```
+`Supplier`
 
 ```sql
 S
@@ -336,26 +330,18 @@ S
 X
 ```
 
-```sql
-LOCK_ESCALATION
-```
+`LOCK_ESCALATION`
 
 ```sql
 ALTER
 TABLE
 ```
 
-```sql
-AUTO
-```
+`AUTO`
 
-```sql
-LOCK_ESCALATION
-```
+`LOCK_ESCALATION`
 
-```sql
-AUTO
-```
+`AUTO`
 
 ```sql
 U1:    Rs1=Command1.Execute("insert sometable EXEC usp_someproc");

@@ -31,58 +31,41 @@ N
 
 ### Example 1
 
-```sql
-sp_helprotect
-```
+`sp_helprotect`
 
 ### Example 2
 
-```sql
-sp_helprolemember
-```
+`sp_helprolemember`
 
 ### Example 3
 
 ```sql
-EXECUTE
-sp_helprole;
+EXECUTE sp_helprole;
 ```
 
 ### Example 4
 
-```sql
-MemberName
-```
+`MemberName`
 
 ### Example 5
 
-```sql
-sp_helprolemember
-```
+`sp_helprolemember`
 
 ### Example 6
 
-```sql
-User1
-```
+`User1`
 
 ### Example 7
 
-```sql
-Role1
-```
+`Role1`
 
 ### Example 8
 
-```sql
-Role1
-```
+`Role1`
 
 ### Example 9
 
-```sql
-Role2
-```
+`Role2`
 
 ### Example 10
 

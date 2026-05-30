@@ -99,8 +99,6 @@ the query can be used to search for any ISBN and not just the one whose ISBN is 
 
 2.
 
-SQL
-
 sql:column()
 
 can be used in a similar manner and provides additional benefits. Indexes over
@@ -118,17 +116,14 @@ See Also
 ```sql
 DECLARE
 @isbn
-VARCHAR
-(20)
+VARCHAR (20)
 SET
 @isbn =
 '0-7356-1588-2'
-SELECT
-xCol
+SELECT xCol
 FROM
 T
-WHERE
-xCol.exist (
+WHERE xCol.exist (
 '/book/@ISBN[. = sql:variable("@isbn")]'
 ) = 1
 ```

@@ -14,9 +14,7 @@ Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric A
 
 ## Syntax
 
-```sql
-sp_describe_cursor_columns
-```
+`sp_describe_cursor_columns`
 
 ## Remarks
 

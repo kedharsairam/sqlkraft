@@ -17,6 +17,5 @@ Returns a list of all components (filters, word-breakers, and protocol handlers)
 ## Syntax
 
 ```sql
-full-text catalog
-name
+full-text catalog name
 ```

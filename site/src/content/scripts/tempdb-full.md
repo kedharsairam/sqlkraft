@@ -18,22 +18,18 @@ pubDate: 2025-03-15
 --4) If tempdb is full, rather than taking any action identify the cause of the increase in size
 
 select * from sys.sysprocesses where dbid=2
---(OR)
-select * from sys.dm_exec_requests where database_id=2
+--(OR) select * from sys.dm_exec_requests where database_id=2
 
-DBCC INPUTBUFFER(SPID)
-kill spid. Approval MANDATORY.
+DBCC INPUTBUFFER(SPID) kill spid. Approval MANDATORY.
 
 --5) Restart the instance.
 
 -------------Temporary Remedy to move TEMPDB files to a new drive where there is more space available.
 --6) Moving Tempdb files from one drive to another where there is ample space. This also requires restart of instance as the new files added will be in affect only after restarting the instance.
-alter database Tempdb modify file(name='Tempdev',filename='Physical Path')
-alter database Tempdb modify file(name='Templog',filename='Physical Path')
+alter database Tempdb modify file(name='Tempdev',filename='Physical Path') alter database Tempdb modify file(name='Templog',filename='Physical Path')
 
 --TEMPDB Log File Full:
---1) Verify the size of log file currently
-dbcc sqlperf(logspace)
+--1) Verify the size of log file currently dbcc sqlperf(logspace)
 
 --2) Perform Shrink operation on the log file of tempdb for any free space.
 
@@ -49,8 +45,7 @@ select name,log_reuse_wait_desc from sys.databases
 
 select * from sys.sysprocesses where dbid=2
 
---7) Strictly in SQL Server 2005 and lower versions
-backup log Tempdb to disk=N'Tempdb.trn' WITH TRUNCATE_ONLY
+--7) Strictly in SQL Server 2005 and lower versions backup log Tempdb to disk=N'Tempdb.trn' WITH TRUNCATE_ONLY
 
 --8) Restart the instance
 ```

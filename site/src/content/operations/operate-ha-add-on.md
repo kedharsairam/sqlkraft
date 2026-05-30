@@ -72,7 +72,5 @@ will remove the constraint
 so it's possible to move the resource again, or have the resource automatically fail over.
 
 ```cmd
-resource move
-move
-clear
+resource move move clear
 ```

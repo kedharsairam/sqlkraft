@@ -55,8 +55,6 @@ table is presented as parent_object_id of the internal in-memory history table
 
 This example shows how to query and join these tables.
 
-SQL
-
 ７
 
 Note
@@ -87,16 +85,13 @@ HistoryTableSchema,
 OBJECT_NAME(T1.history_table_id)
 AS
 HistoryTableName
-FROM
-sys.internal_tables IT
+FROM sys.internal_tables IT
 INNER
-JOIN
-sys.tables T1
+JOIN sys.tables T1
 ON
 IT.parent_object_id = T1.object_id
 INNER
-JOIN
-sys.tables T2
+JOIN sys.tables T2
 ON
 T1.history_table_id = T2.object_id
 WHERE

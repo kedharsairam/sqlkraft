@@ -18,7 +18,6 @@ SQL database in Microsoft Fabric Returns information about each full-text indexi
 ## Syntax
 
 ```sql
-SELECT database_id, table_id, COUNT(*) AS batch_count FROM
-sys.dm_fts_outstanding_batches GROUP BY database_id, table_id ;
+SELECT database_id, table_id, COUNT(*) AS batch_count FROM sys.dm_fts_outstanding_batches GROUP BY database_id, table_id ;
 GO
 ```

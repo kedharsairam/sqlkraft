@@ -45,8 +45,6 @@ packages, and Reporting Services (RS) reports. With SSDT, you can design and dep
 
 objects with the same project concept as other application development tools. The
 
-SQL
-
 capability extends to CI/CD pipelines, enabling you to automate the build and
 
 deployment of your database projects with the

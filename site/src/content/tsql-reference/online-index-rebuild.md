@@ -85,13 +85,9 @@ tables. You can't apply these options to clustered indexes on views or noncluste
 ALTER TABLE
 ```
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-OFFLINE
-```
+`OFFLINE`
 
 ```sql
 ALTER TABLE <table> REBUILD PARTITION
@@ -101,9 +97,7 @@ ALTER TABLE <table> REBUILD PARTITION
 ALTER TABLE <table> REBUILD WITH
 ```
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 <drop_clustered_constraint_option>

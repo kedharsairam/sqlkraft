@@ -94,27 +94,17 @@ system with 16 CPUs.
 
 These Transact-SQL statements create test objects that are used in the examples that follow.
 
-SQL
-
-```sql
-NL
-```
+`NL`
 
 ```sql
 Sch-S
 ```
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IU
-```
+`IU`
 
-```sql
-IX
-```
+`IX`
 
 ```sql
 S
@@ -124,33 +114,21 @@ S
 X
 ```
 
-```sql
-NL
-```
+`NL`
 
 ```sql
 Sch-S
 ```
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IU
-```
+`IU`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-resource_lock_partition
-```
+`resource_lock_partition`
 
-```sql
-sys.dm_tran_locks
-```
+`sys.dm_tran_locks`
 
 ```sql
 -- Create a test table.

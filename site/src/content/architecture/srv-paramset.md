@@ -68,13 +68,11 @@ int srv_paramset (
 SRV_PROC *
 srvproc
 ,
-int
-n
+int n
 ,
 void *
 data
 ,
-int
-len
+int len
 );
 ```

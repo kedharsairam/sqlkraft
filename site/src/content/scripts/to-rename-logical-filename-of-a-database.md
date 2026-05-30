@@ -8,9 +8,5 @@ pubDate: 2025-03-15
 ---
 
 ```sql
-use databasename
-alter database databasename
-modify file (name = databasename, newname = newdatabasename)
-alter database databasename
-modify file (name = databaselogname, newname = newdatabaselogname)
+use databasename alter database databasename modify file (name = databasename, newname = newdatabasename) alter database databasename modify file (name = databaselogname, newname = newdatabaselogname)
 ```

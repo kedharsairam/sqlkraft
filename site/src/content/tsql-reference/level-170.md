@@ -99,8 +99,6 @@ instead of
 
 .
 
-
-
 Expand table
 
 1
@@ -112,8 +110,6 @@ Expand table
 1
 
 1
-
-
 
 Expand table
 
@@ -127,10 +123,6 @@ Expand table
 
 #### Compatibility level setting of 160
 
-```sql
-CERTIFICATE_OAEP_256
-```
+`CERTIFICATE_OAEP_256`
 
-```sql
-CERTIFICATE
-```
+`CERTIFICATE`

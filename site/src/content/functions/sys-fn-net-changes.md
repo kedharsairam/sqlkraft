@@ -14,9 +14,7 @@ syntax: "sys.sp_cdc_generate_wrapper_function"
 
 ## Syntax
 
-```sql
-sys.sp_cdc_generate_wrapper_function
-```
+`sys.sp_cdc_generate_wrapper_function`
 
 ## Remarks
 

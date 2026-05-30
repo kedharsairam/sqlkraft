@@ -49,8 +49,7 @@ whose catalog descriptions do not include the <
 > element.
 
 ```sql
-Specifications
-fn:not($arg as item()*) as xs:boolean
+Specifications fn:not($arg as item()*) as xs:boolean
 WITH XMLNAMESPACES ('https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelDescription' AS pd)
 SELECT ProductModelID, CatalogDescription.query('

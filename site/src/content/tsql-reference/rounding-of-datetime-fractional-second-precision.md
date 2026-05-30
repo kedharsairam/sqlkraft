@@ -33,15 +33,9 @@ seconds, as shown in the
 
 following example.
 
-SQL
-
 Here's the result set.
 
-
-
 Expand table
-
-
 
 Expand table
 
@@ -49,15 +43,7 @@ Expand table
 
 #### System stored value
 
-### datetime
-
-### datetime
-
-### date
-
-```sql
-ts
-```
+`ts`
 
 ```sql
 <constant_value>
@@ -76,8 +62,7 @@ d
 ```
 
 ```sql
-yyyy-MM-dd
-t
+yyyy-MM-dd t
 ```
 
 ```sql
@@ -118,26 +103,21 @@ SELECT
 AS
 [
 User
--specified
-value
+-specified value
 ],
-CAST
-(
+CAST (
 '01/01/2024 23:59:59.999'
 AS
 DATETIME)
 AS
 [
-System
-stored
-value
+System stored value
 ]
 UNION
 SELECT
 '01/01/2024 23:59:59.998'
 ,
-CAST
-(
+CAST (
 '01/01/2024 23:59:59.998'
 AS
 DATETIME)
@@ -145,8 +125,7 @@ UNION
 SELECT
 '01/01/2024 23:59:59.997'
 ,
-CAST
-(
+CAST (
 '01/01/2024 23:59:59.997'
 AS
 DATETIME)
@@ -154,8 +133,7 @@ UNION
 SELECT
 '01/01/2024 23:59:59.996'
 ,
-CAST
-(
+CAST (
 '01/01/2024 23:59:59.996'
 AS
 DATETIME)
@@ -163,8 +141,7 @@ UNION
 SELECT
 '01/01/2024 23:59:59.995'
 ,
-CAST
-(
+CAST (
 '01/01/2024 23:59:59.995'
 AS
 DATETIME)
@@ -172,8 +149,7 @@ UNION
 SELECT
 '01/01/2024 23:59:59.994'
 ,
-CAST
-(
+CAST (
 '01/01/2024 23:59:59.994'
 AS
 DATETIME)
@@ -181,8 +157,7 @@ UNION
 SELECT
 '01/01/2024 23:59:59.993'
 ,
-CAST
-(
+CAST (
 '01/01/2024 23:59:59.993'
 AS
 DATETIME)
@@ -190,8 +165,7 @@ UNION
 SELECT
 '01/01/2024 23:59:59.992'
 ,
-CAST
-(
+CAST (
 '01/01/2024 23:59:59.992'
 AS
 DATETIME)
@@ -199,8 +173,7 @@ UNION
 SELECT
 '01/01/2024 23:59:59.991'
 ,
-CAST
-(
+CAST (
 '01/01/2024 23:59:59.991'
 AS
 DATETIME)
@@ -208,8 +181,7 @@ UNION
 SELECT
 '01/01/2024 23:59:59.990'
 ,
-CAST
-(
+CAST (
 '01/01/2024 23:59:59.990'
 AS
 DATETIME);

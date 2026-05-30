@@ -28,8 +28,6 @@ columns in the query predicate are both key columns in
 
 the index, and name is stored in the leaf level of the index as an included column.
 
-SQL
-
 It's a best practice to add a small number of columns in a filtered index definition, only as
 
 necessary for the query optimizer to choose the filtered index for the query execution plan. The
@@ -72,11 +70,7 @@ as a key or included
 
 column in the filtered index definition.
 
-SQL
-
-```sql
-FIProductAccessories
-```
+`FIProductAccessories`
 
 ```sql
 ProductSubcategoryID = 33
@@ -90,33 +84,19 @@ ProductSubcategoryID >= 27
 ProductSubcategoryID <= 36
 ```
 
-```sql
-ProductSubcategoryID
-```
+`ProductSubcategoryID`
 
-```sql
-ListPrice
-```
+`ListPrice`
 
-```sql
-FIBillOfMaterialsWithEndDate
-```
+`FIBillOfMaterialsWithEndDate`
 
-```sql
-FIBillOfMaterialsWithEndDate
-```
+`FIBillOfMaterialsWithEndDate`
 
-```sql
-EndDate
-```
+`EndDate`
 
-```sql
-FIBillOfMaterialsWithEndDate
-```
+`FIBillOfMaterialsWithEndDate`
 
-```sql
-EndDate
-```
+`EndDate`
 
 ```sql
 SELECT

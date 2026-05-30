@@ -57,15 +57,11 @@ new development work, and plan to modify applications that currently use this fe
 
 ### Example 1
 
-```sql
-sp_revokedbaccess
-```
+`sp_revokedbaccess`
 
 ### Example 2
 
-```sql
-sp_revokedbaccess
-```
+`sp_revokedbaccess`
 
 ### Example 3
 
@@ -76,8 +72,7 @@ Edmonds\LolanSo
 ### Example 4
 
 ```sql
-EXECUTE
-sp_revokedbaccess
+EXECUTE sp_revokedbaccess
 'Edmonds\LolanSo'
 ;
 GO

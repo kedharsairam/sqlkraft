@@ -19,8 +19,7 @@ pubDate: 2025-03-15
 --8) CXPACKET 		- Parallelism Issue, threads waiting for depending tasks.
 
 --to view what are the wait types are in sql server right now, use the following script:
-WITH [Waits] AS
-    (SELECT
+WITH [Waits] AS (SELECT
         [wait_type],
         [wait_time_ms] / 1000.0 AS [WaitS],
         ([wait_time_ms] - [signal_wait_time_ms]) / 1000.0 AS [ResourceS],

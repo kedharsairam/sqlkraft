@@ -37,13 +37,9 @@ the
 
 database.
 
-SQL
-
 Copy and paste the following code into a Query Editor window, then run it to drop the objects
 
 that were used to support the conversation.
-
-SQL
 
 ７
 
@@ -66,10 +62,8 @@ GO
 IF EXISTS (
 SELECT
 *
-FROM
-sys.objects
-WHERE
-name
+FROM sys.objects
+WHERE name
 = N
 'TargetActiveProc'
 )
@@ -79,10 +73,8 @@ TargetActiveProc;
 IF EXISTS (
 SELECT
 *
-FROM
-sys.services
-WHERE
-name
+FROM sys.services
+WHERE name
 = N
 '//AWDB/InternalAct/TargetService'
 )

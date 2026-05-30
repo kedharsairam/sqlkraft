@@ -38,10 +38,8 @@ For comprehensive coverage, capture both events in the same session.
 -- Capture all wait events exceeding 100 ms — ring buffer for live diagnostics
 CREATE EVENT SESSION [wait_stats_live]
 ON SERVER
-ADD EVENT sqlos.wait_info
-(
-    ACTION
-    (
+ADD EVENT sqlos.wait_info (
+    ACTION (
         sqlserver.session_id,
         sqlserver.database_name,
         sqlserver.sql_text,
@@ -49,36 +47,30 @@ ADD EVENT sqlos.wait_info
         sqlserver.client_hostname,
         sqlserver.plan_handle
     )
-    WHERE
-    (
+    WHERE (
         [opcode] = N'End'                     -- Only capture completed waits
         AND [wait_duration_ms] >= 100          -- Ignore sub-100ms waits
         AND [wait_type] <> N'WAITFOR'          -- Exclude intentional WAITFOR
         AND [wait_type] <> N'BROKER_RECEIVE_WAITFOR'  -- Exclude Service Broker idle
     )
 ),
-ADD EVENT sqlos.wait_info_external
-(
-    ACTION
-    (
+ADD EVENT sqlos.wait_info_external (
+    ACTION (
         sqlserver.session_id,
         sqlserver.database_name,
         sqlserver.sql_text,
         sqlserver.client_app_name,
         sqlserver.client_hostname
     )
-    WHERE
-    (
+    WHERE (
         [opcode] = N'End'
         AND [wait_duration_ms] >= 100
     )
 )
-ADD TARGET package0.ring_buffer
-(
+ADD TARGET package0.ring_buffer (
     SET max_events_limit = 10000
 )
-WITH
-(
+WITH (
     MAX_MEMORY = 16384 KB,
     EVENT_RETENTION_MODE = ALLOW_SINGLE_EVENT_LOSS,
     MAX_DISPATCH_LATENCY = 10 SECONDS,
@@ -99,11 +91,9 @@ GO
 -- Persistent wait statistics warehouse for trend analysis
 CREATE EVENT SESSION [wait_stats_warehouse]
 ON SERVER
-ADD EVENT sqlos.wait_info
-(
+ADD EVENT sqlos.wait_info (
     ACTION (sqlserver.session_id, sqlserver.database_name, sqlserver.sql_text)
-    WHERE
-    (
+    WHERE (
         [opcode] = N'End'
         AND [wait_duration_ms] >= 50
         AND [wait_type] <> N'WAITFOR'
@@ -112,19 +102,16 @@ ADD EVENT sqlos.wait_info
         AND [wait_type] <> N'SLEEP_TASK'
     )
 ),
-ADD EVENT sqlos.wait_info_external
-(
+ADD EVENT sqlos.wait_info_external (
     ACTION (sqlserver.session_id, sqlserver.sql_text)
     WHERE ([opcode] = N'End' AND [wait_duration_ms] >= 50)
 )
-ADD TARGET package0.event_file
-(
+ADD TARGET package0.event_file (
     SET filename = N'D:\XELogs\wait_stats_warehouse.xel',
         max_file_size = 256,
         max_rollover_files = 30
 )
-WITH
-(
+WITH (
     MAX_MEMORY = 16384 KB,
     EVENT_RETENTION_MODE = ALLOW_MULTIPLE_EVENT_LOSS,
     MAX_DISPATCH_LATENCY = 30 SECONDS,
@@ -143,15 +130,13 @@ GO
 
 ```sql
 -- Top wait types by total duration from the live ring buffer
-SELECT TOP 25
-    event_data.value('(event/data[@name="wait_type"]/text)[1]', 'nvarchar(256)') AS wait_type,
+SELECT TOP 25 event_data.value('(event/data[@name="wait_type"]/text)[1]', 'nvarchar(256)') AS wait_type,
     event_data.value('(event/data[@name="wait_duration_ms"]/value)[1]', 'bigint') AS wait_duration_ms,
     event_data.value('(event/action[@name="session_id"]/value)[1]', 'int') AS session_id,
     event_data.value('(event/action[@name="database_name"]/value)[1]', 'nvarchar(256)') AS database_name,
     event_data.value('(event/action[@name="sql_text"]/value)[1]', 'nvarchar(max)') AS sql_text,
     event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_time
-FROM
-(
+FROM (
     SELECT CAST(target_data AS XML) AS ring_buffer
     FROM sys.dm_xe_session_targets
     WHERE event_session_address = (
@@ -167,18 +152,14 @@ ORDER BY wait_duration_ms DESC;
 
 ```sql
 -- Top wait types by frequency and total duration from the file archive
-WITH WaitData AS
-(
-    SELECT
-        event_data.value('(event/data[@name="wait_type"]/text)[1]', 'nvarchar(256)') AS wait_type,
+WITH WaitData AS (
+    SELECT event_data.value('(event/data[@name="wait_type"]/text)[1]', 'nvarchar(256)') AS wait_type,
         event_data.value('(event/data[@name="wait_duration_ms"]/value)[1]', 'bigint') AS wait_duration_ms,
         event_data.value('(event/data[@name="opcode"]/text)[1]', 'nvarchar(50)') AS opcode,
         CAST(event_data.value('(event/@timestamp)[1]', 'datetime2') AS DATETIME2) AS event_time
-    FROM
-    (
+    FROM (
         SELECT event_data
-        FROM sys.fn_xe_file_target_read_file
-        (
+        FROM sys.fn_xe_file_target_read_file (
             N'D:\XELogs\wait_stats_warehouse*.xel',
             N'D:\XELogs\wait_stats_warehouse*.xem',
             NULL,
@@ -188,8 +169,7 @@ WITH WaitData AS
     CROSS APPLY ft.event_data.nodes('/event') AS e(event_data)
     WHERE event_data.value('local-name(.)', 'varchar(50)') = 'event'
 )
-SELECT
-    wait_type,
+SELECT wait_type,
     COUNT(*) AS wait_count,
     SUM(wait_duration_ms) AS total_wait_ms,
     AVG(wait_duration_ms) AS avg_wait_ms,
@@ -208,19 +188,16 @@ ORDER BY total_wait_ms DESC;
 
 ```sql
 -- Break down waits into 5-minute buckets for trend visualization
-WITH WaitBuckets AS
-(
+WITH WaitBuckets AS (
     SELECT
         DATEADD(MINUTE, DATEDIFF(MINUTE, 0, event_time) / 5 * 5, 0) AS bucket_time,
         event_data.value('(event/data[@name="wait_type"]/text)[1]', 'nvarchar(256)') AS wait_type,
         event_data.value('(event/data[@name="wait_duration_ms"]/value)[1]', 'bigint') AS wait_duration_ms
-    FROM
-    (
+    FROM (
         SELECT
             CAST(event_data AS XML) AS event_xml,
             event_data
-        FROM sys.fn_xe_file_target_read_file
-        (
+        FROM sys.fn_xe_file_target_read_file (
             N'D:\XELogs\wait_stats_warehouse*.xel',
             N'D:\XELogs\wait_stats_warehouse*.xem',
             NULL,
@@ -229,8 +206,7 @@ WITH WaitBuckets AS
     ) AS ft
     CROSS APPLY ft.event_xml.nodes('/event') AS e(event_data)
 )
-SELECT
-    bucket_time,
+SELECT bucket_time,
     wait_type,
     COUNT(*) AS wait_count,
     SUM(wait_duration_ms) AS total_wait_ms
@@ -246,22 +222,18 @@ When combined with `sqlserver.blocked_process_report`, the wait_info session can
 
 ```sql
 -- Identify lock waits with blocking session details
-SELECT
-    w.event_time,
+SELECT w.event_time,
     w.session_id AS blocked_session_id,
     w.wait_type,
     w.wait_duration_ms,
     w.sql_text AS blocked_sql_text
-FROM
-(
-    SELECT
-        event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_time,
+FROM (
+    SELECT event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_time,
         event_data.value('(event/action[@name="session_id"]/value)[1]', 'int') AS session_id,
         event_data.value('(event/data[@name="wait_type"]/text)[1]', 'nvarchar(256)') AS wait_type,
         event_data.value('(event/data[@name="wait_duration_ms"]/value)[1]', 'bigint') AS wait_duration_ms,
         event_data.value('(event/action[@name="sql_text"]/value)[1]', 'nvarchar(max)') AS sql_text
-    FROM
-    (
+    FROM (
         SELECT CAST(target_data AS XML) AS ring_buffer
         FROM sys.dm_xe_session_targets
         WHERE event_session_address = (

@@ -75,10 +75,7 @@ of a context-dependent predicate. Specifically, it can only be used inside brack
 ).
 
 ```sql
-xs:string
-xs:anyURI
-fn:string()
+xs:string xs:anyURI fn:string()
 [ ]
-fn:string() as xs:string
-fn:string($arg as item()?) as xs:string
+fn:string() as xs:string fn:string($arg as item()?) as xs:string
 ```

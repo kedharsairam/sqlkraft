@@ -23,11 +23,9 @@ syntax: |
 ## Syntax
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_syscollector_set_warehouse_database_name N
+EXECUTE sp_syscollector_set_warehouse_database_name N
 'RemoteMDW'
 ;
 GO
@@ -37,18 +35,14 @@ GO
 
 ### Example 1
 
-```sql
-RemoteMDW
-```
+`RemoteMDW`
 
 ### Example 2
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_syscollector_set_warehouse_database_name N
+EXECUTE sp_syscollector_set_warehouse_database_name N
 'RemoteMDW'
 ;
 GO

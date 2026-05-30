@@ -35,8 +35,6 @@ in the
 
 statement. As a result, the following example returns an error:
 
-SQL
-
 A solution is to first assign the result of the
 
 method to a variable of
@@ -44,8 +42,6 @@ method to a variable of
 type and then
 
 specify the variable in the query.
-
-SQL
 
 The
 
@@ -63,8 +59,6 @@ clause. A solution is to call a user-defined function that uses XML
 
 methods inside of it.
 
-### xml
-
 ### node()
 
 ### value()
@@ -75,13 +69,9 @@ methods inside of it.
 
 ### XACT_ABORT
 
-```sql
-PRINT
-```
+`PRINT`
 
-```sql
-PRINT
-```
+`PRINT`
 
 ```sql
 GROUP BY
@@ -103,15 +93,13 @@ PRINT @x.value(
 ,
 'varchar(20)'
 )
--- will not work because this is treated
-as a subquery (select top 1 col from table)
+-- will not work because this is treated as a subquery (select top 1 col from table)
 DECLARE
 @x
 XML
 DECLARE
 @c
-VARCHAR
-(
+VARCHAR (
 max
 )
 SET

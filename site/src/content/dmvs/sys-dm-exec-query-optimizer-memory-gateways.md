@@ -14,6 +14,4 @@ Requires VIEW SERVER PERFORMANCE STATE permission on the server. SQL Server uses
 
 ## Syntax
 
-```sql
-sys.dm_exec_query_optimizer_memory_gateways
-```
+`sys.dm_exec_query_optimizer_memory_gateways`

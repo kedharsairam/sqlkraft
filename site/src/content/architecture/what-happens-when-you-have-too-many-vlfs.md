@@ -94,29 +94,21 @@ size, see this
 
 on GitHub.
 
-```sql
-SIZE
-```
+`SIZE`
 
 ```sql
 ALTER DATABASE
 ```
 
-```sql
-FILEGROWTH
-```
+`FILEGROWTH`
 
 ```sql
 ALTER DATABASE
 ```
 
-```sql
-FILEGROWTH
-```
+`FILEGROWTH`
 
-```sql
-SIZE
-```
+`SIZE`
 
 ```sql
 ALTER DATABASE
@@ -125,6 +117,5 @@ ALTER DATABASE
 ```sql
 2022-05-08 14:42:38.65 spid22s Starting up database 'lot_of_vlfs'.
 2022-05-08 14:46:04.76 spid22s Analysis of database 'lot_of_vlfs' (16) is 0%
-complete (approximately 0 seconds remain). Phase 1 of 3. This is an informational
-message only. No user action is required.
+complete (approximately 0 seconds remain). Phase 1 of 3. This is an informational message only. No user action is required.
 ```

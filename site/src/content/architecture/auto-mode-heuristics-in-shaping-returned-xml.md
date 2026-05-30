@@ -53,8 +53,6 @@ The following example illustrates the AUTO mode heuristics that determine the sh
 
 resulting XML:
 
-SQL
-
 To determine where a new
 
 element starts, all column values of T1, except

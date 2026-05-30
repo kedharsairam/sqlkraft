@@ -37,8 +37,6 @@ SQL Managed Instance
 
 Azure Synapse Analytics (serverless SQL pool only)
 
-SQL
-
 database in Microsoft Fabric
 
 The following examples demonstrate some of the ways to use the
@@ -67,15 +65,11 @@ clause is of type
 
 variable, as shown in the following example.
 
-SQL
-
 You can create user-defined functions that format result sets as JSON and return this JSON
 
 output. The following example creates a user-defined function that fetches some sales order
 
 detail rows and formats them as a JSON array.
-
-SQL
 
 ```sql
 FOR JSON
@@ -83,8 +77,7 @@ FOR JSON
 FOR JSON
 DECLARE
 @x
-NVARCHAR
-(
+NVARCHAR (
 MAX
 ) =
 (
@@ -98,18 +91,15 @@ AUTO
 )
 CREATE
 FUNCTION
-GetSalesOrderDetails(@salesOrderId
-int
+GetSalesOrderDetails(@salesOrderId int
 )
 RETURNS
-NVARCHAR
-(
+NVARCHAR (
 MAX
 )
 AS
 BEGIN
-RETURN
-(
+RETURN (
 SELECT
 UnitPrice, OrderQty
 FROM

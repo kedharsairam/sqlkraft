@@ -41,8 +41,7 @@ Changes the properties of a Merge Agent job that runs at a SQL Server 2005 (9.x)
 
 ```sql
 sp_
-MS
-change_merge_agent_properties
+MS change_merge_agent_properties
 [ @publisher = ]
 N
 'publisher'

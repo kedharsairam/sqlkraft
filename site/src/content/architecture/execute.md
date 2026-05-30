@@ -63,8 +63,6 @@ always use the exact case of system procedure names in procedure calls. For exam
 
 code fails if executed in the context of a database that has a case-sensitive collation:
 
-SQL
-
 To display the exact system procedure names, query the
 
 sys.system_objects

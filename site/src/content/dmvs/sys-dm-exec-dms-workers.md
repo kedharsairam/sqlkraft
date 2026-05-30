@@ -13,10 +13,6 @@ SQL Server 2016 (13.x) and later versions Holds information about all workers co
 
 ## Code Blocks
 
-```sql
-nvarchar(32)
-```
+`nvarchar(32)`
 
-```sql
-int
-```
+`int`

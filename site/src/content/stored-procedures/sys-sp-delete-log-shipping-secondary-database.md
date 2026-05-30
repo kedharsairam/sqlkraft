@@ -14,9 +14,7 @@ fixed server role can run this procedure. About log shipping (SQL Server) System
 
 ## Syntax
 
-```sql
-sp_delete_log_shipping_secondary_database
-```
+`sp_delete_log_shipping_secondary_database`
 
 ## Permissions
 

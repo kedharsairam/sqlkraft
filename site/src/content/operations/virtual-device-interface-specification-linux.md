@@ -111,8 +111,6 @@ instead.
 
 ```cmd
 HRESULT
-DWORD
-libsqlvdi.so
-/opt/mssql/lib/libsqlvdi.so
-mssql
+DWORD libsqlvdi.so
+/opt/mssql/lib/libsqlvdi.so mssql
 ```

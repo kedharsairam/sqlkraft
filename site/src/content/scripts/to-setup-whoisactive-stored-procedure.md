@@ -21,8 +21,7 @@ IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.ROUTINES WHERE ROUTINE_NAME = 's
 GO
 
 /*********************************************************************************************
-Who Is Active? v12.00 (2021-11-10)
-(C) 2007-2021, Adam Machanic
+Who Is Active? v12.00 (2021-11-10) (C) 2007-2021, Adam Machanic
 
 Feedback: https://github.com/amachanic/sp_whoisactive/issues
 Releases: https://github.com/amachanic/sp_whoisactive/releases
@@ -31,8 +30,7 @@ Docs: http://whoisactive.com
 License: https://github.com/amachanic/sp_whoisactive/blob/master/LICENSE
 *********************************************************************************************/
 
-ALTER PROC dbo.sp_WhoIsActive
-(
+ALTER PROC dbo.sp_WhoIsActive (
     --Filters - Both inclusive and exclusive
     --Set either filter to '' to disable
     --Valid filter types are: session, program, database, login, and host

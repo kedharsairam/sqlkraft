@@ -73,8 +73,6 @@ file
 
 as CLOB, and the integer column is supplied the value 10.
 
-SQL
-
 ```sql
 C:\MyFile\xmlfile.xml
 INSERT
@@ -82,8 +80,7 @@ INTO
 T
 SELECT
 10, xCol
-FROM
-(
+FROM (
 SELECT
 *
 FROM
@@ -91,8 +88,7 @@ OPENROWSET (
 BULK
 'C:\MyFile\xmlfile.xml'
 , SINGLE_BLOB)
-AS
-xCol)
+AS xCol)
 AS
 R(xCol);
 ```

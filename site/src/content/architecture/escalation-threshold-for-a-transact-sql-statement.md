@@ -87,18 +87,10 @@ TABLE SET LOCK_ESCALATION
 ALTER TABLE SET LOCK_ESCALATION
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-TableC
-```
+`TableC`

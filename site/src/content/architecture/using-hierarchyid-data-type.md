@@ -75,6 +75,4 @@ hierarchyid (Transact-SQL)
 
 Last updated on 11/18/2025
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`

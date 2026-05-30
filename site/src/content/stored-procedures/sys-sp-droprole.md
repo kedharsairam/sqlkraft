@@ -55,15 +55,11 @@ might not be supported in a future release.
 
 ### Example 1
 
-```sql
-sp_droprolemember
-```
+`sp_droprolemember`
 
 ### Example 2
 
-```sql
-sp_droprole
-```
+`sp_droprole`
 
 ### Example 3
 
@@ -74,27 +70,20 @@ AUTHORIZATION
 
 ### Example 4
 
-```sql
-sp_droprole
-```
+`sp_droprole`
 
 ### Example 5
 
-```sql
-CONTROL
-```
+`CONTROL`
 
 ### Example 6
 
-```sql
-Sales
-```
+`Sales`
 
 ### Example 7
 
 ```sql
-EXECUTE
-sp_droprole
+EXECUTE sp_droprole
 'Sales'
 ;
 GO

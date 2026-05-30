@@ -6,8 +6,6 @@ tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 Consider the following limitations when working with row versioning-based isolation levels:
 
 can't be enabled in
@@ -90,101 +88,55 @@ For example, a database administrator executes the following
 
 statement.
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-msdb
-```
+`msdb`
 
-```sql
-master
-```
+`master`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-OFFLINE
-```
+`OFFLINE`
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-AUTO_CLOSE
-```
+`AUTO_CLOSE`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 ALTER INDEX
@@ -200,19 +152,12 @@ SNAPSHOT
 BEGIN
 TRANSACTION
 ;
-SELECT
-t1.col5, t2.col5
+SELECT t1.col5, t2.col5
 FROM
-Table1
-as
-t1
-WITH
-(READCOMMITTED)
+Table1 as t1
+WITH (READCOMMITTED)
 INNER
 JOIN
-SecondDB.dbo.Table2
-as
-t2
-ON
-t1.col1 = t2.col2;
+SecondDB.dbo.Table2 as t2
+ON t1.col1 = t2.col2;
 ```

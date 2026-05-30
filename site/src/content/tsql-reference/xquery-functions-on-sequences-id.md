@@ -63,8 +63,5 @@ function finds the <
 ID type attribute value matches the input IDREF value. In other words, for a specific employee,
 
 ```sql
-AdventureWorks2022
-employee
-employee
-fn:id($arg as xs:IDREF*) as element()*
+AdventureWorks2022 employee employee fn:id($arg as xs:IDREF*) as element()*
 ```

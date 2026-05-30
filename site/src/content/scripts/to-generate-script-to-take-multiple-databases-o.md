@@ -8,6 +8,5 @@ pubDate: 2025-03-15
 ---
 
 ```sql
-select 'alter database ' +name+ ' set offline with rollback immediate' from sys.databases
-where name not in ('master','model','msdb','tempdb','distribution')
+select 'alter database ' +name+ ' set offline with rollback immediate' from sys.databases where name not in ('master','model','msdb','tempdb','distribution')
 ```

@@ -14,9 +14,7 @@ Used to start the Snapshot Agent job that generates the initial snapshot for a p
 
 ## Syntax
 
-```sql
-sp_startpublication_snapshot
-```
+`sp_startpublication_snapshot`
 
 ## Permissions
 

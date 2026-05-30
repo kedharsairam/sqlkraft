@@ -66,9 +66,7 @@ size and angle.
 
 ```sql
 expression1,``expression2
-Picture
-expression1 and expression2
-expression1 or expression2
+Picture expression1 and expression2 expression1 or expression2
 SELECT CatalogDescription.query('
 declare namespace
 PD="https://schemas.microsoft.com/sqlserver/2004/07/adventure-

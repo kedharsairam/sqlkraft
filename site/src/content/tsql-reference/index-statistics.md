@@ -89,13 +89,9 @@ add it to the statistics on the columnstore index. This metadata is obtained dyn
 
 query compilation time for a regular database, but is provided by the statistics object for a
 
-```sql
-xml_compression
-```
+`xml_compression`
 
-```sql
-sys.partitions
-```
+`sys.partitions`
 
 ```sql
 DBCC SHOW_STATISTICS

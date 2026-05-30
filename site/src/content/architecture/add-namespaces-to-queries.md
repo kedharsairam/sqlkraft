@@ -63,8 +63,6 @@ WITH XMLNAMESPACES lets you include XML namespaces in FOR XML queries. For examp
 
 consider the following FOR XML query:
 
-SQL
-
 This is the result:
 
 XML
@@ -87,12 +85,8 @@ prefix is then used in specifying the element and attribute names to be construc
 
 the FOR XML query.
 
-SQL
-
 ```sql
-ns1
-uri
-ns1
+ns1 uri ns1
 SELECT
 ProductID,
 Name
@@ -101,8 +95,7 @@ FROM
 Production.Product
 WHERE
 ProductID
-IN
-(316, 317)
+IN (316, 317)
 FOR
 XML
 RAW

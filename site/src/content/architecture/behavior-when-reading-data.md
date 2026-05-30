@@ -92,9 +92,7 @@ pool without getting written to the version store. If the need for the versioned
 
 lived, the row gets dropped from the buffer pool and doesn't incur I/O overhead.
 
-```sql
-OFF
-```
+`OFF`
 
 ```sql
 S
@@ -104,9 +102,7 @@ S
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 Sch-S
@@ -132,10 +128,6 @@ Sch-S
 Sch-M
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`

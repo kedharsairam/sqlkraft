@@ -51,8 +51,6 @@ example doesn't remove the duplicates between the two sets of five rows. The fin
 
 10 rows.
 
-SQL
-
 CREATE TRIGGER (Transact-SQL)
 
 CREATE VIEW (Transact-SQL)
@@ -83,53 +81,31 @@ Last updated on 02/02/2026
 
 Related content
 
-```sql
-UNION
-```
+`UNION`
 
 ```sql
 UNION ALL
 ```
 
-```sql
-UNION
-```
+`UNION`
 
-```sql
-ALL
-```
+`ALL`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-ALL
-```
+`ALL`
 
-```sql
-UNION
-```
+`UNION`
 
-```sql
-UNION
-```
+`UNION`
 
-```sql
-ALL
-```
+`ALL`
 
-```sql
-UNION
-```
+`UNION`
 
-```sql
-ALL
-```
+`ALL`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 UNION ALL
@@ -149,77 +125,59 @@ AdventureWorks2025;
 GO
 IF OBJECT_ID('dbo.EmployeeOne', 'U') IS NOT NULL
 DROP
-TABLE
-dbo.EmployeeOne;
+TABLE dbo.EmployeeOne;
 GO
 IF OBJECT_ID('dbo.EmployeeTwo', 'U') IS NOT NULL
 DROP
-TABLE
-dbo.EmployeeTwo;
+TABLE dbo.EmployeeTwo;
 GO
 IF OBJECT_ID('dbo.EmployeeThree', 'U') IS NOT NULL
 DROP
-TABLE
-dbo.EmployeeThree;
+TABLE dbo.EmployeeThree;
 GO
-SELECT
-pp.LastName, pp.FirstName, e.JobTitle
-INTO
-dbo.EmployeeOne
+SELECT pp.LastName, pp.FirstName, e.JobTitle
+INTO dbo.EmployeeOne
 FROM
 Person.Person
-AS
-pp
+AS pp
 INNER
 JOIN
 HumanResources.Employee
-AS
-e
-ON
-e.BusinessEntityID = pp.BusinessEntityID
+AS e
+ON e.BusinessEntityID = pp.BusinessEntityID
 WHERE
 LastName =
 'Johnson'
 ;
 GO
-SELECT
-pp.LastName, pp.FirstName, e.JobTitle
-INTO
-dbo.EmployeeTwo
+SELECT pp.LastName, pp.FirstName, e.JobTitle
+INTO dbo.EmployeeTwo
 FROM
 Person.Person
-AS
-pp
+AS pp
 INNER
 JOIN
 HumanResources.Employee
-AS
-e
+AS e
 ```
 
 ```sql
-ON
-e.BusinessEntityID = pp.BusinessEntityID
+ON e.BusinessEntityID = pp.BusinessEntityID
 WHERE
 LastName =
 'Johnson'
 ;
 GO
-SELECT
-pp.LastName, pp.FirstName, e.JobTitle
-INTO
-dbo.EmployeeThree
+SELECT pp.LastName, pp.FirstName, e.JobTitle
+INTO dbo.EmployeeThree
 FROM
 Person.Person
-AS
-pp
+AS pp
 INNER
 JOIN
 HumanResources.Employee
-AS
-e
-ON
-e.BusinessEntityID = pp.BusinessEntityID
+AS e
+ON e.BusinessEntityID = pp.BusinessEntityID
 WHERE
 LastName =
 'Johnson'
@@ -228,52 +186,42 @@ GO
 -- Union ALL
 SELECT
 LastName, FirstName, JobTitle
-FROM
-dbo.EmployeeOne
+FROM dbo.EmployeeOne
 UNION
 ALL
 SELECT
 LastName, FirstName, JobTitle
-FROM
-dbo.EmployeeTwo
+FROM dbo.EmployeeTwo
 UNION
 ALL
 SELECT
 LastName, FirstName, JobTitle
-FROM
-dbo.EmployeeThree;
+FROM dbo.EmployeeThree;
 GO
 SELECT
 LastName, FirstName, JobTitle
-FROM
-dbo.EmployeeOne
+FROM dbo.EmployeeOne
 UNION
 SELECT
 LastName, FirstName, JobTitle
-FROM
-dbo.EmployeeTwo
+FROM dbo.EmployeeTwo
 UNION
 SELECT
 LastName, FirstName, JobTitle
-FROM
-dbo.EmployeeThree;
+FROM dbo.EmployeeThree;
 GO
 SELECT
 LastName, FirstName, JobTitle
-FROM
-dbo.EmployeeOne
+FROM dbo.EmployeeOne
 UNION
-ALL
-(
+ALL (
 SELECT
 LastName, FirstName, JobTitle
-FROM
-dbo.EmployeeTwo
+FROM dbo.EmployeeTwo
 UNION
 SELECT
 LastName, FirstName, JobTitle
-FROM
-dbo.EmployeeThree
+FROM dbo.EmployeeThree
 ```
 
 ```sql

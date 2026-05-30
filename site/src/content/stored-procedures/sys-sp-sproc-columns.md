@@ -65,18 +65,12 @@ N
 'column_name'
 ]
 [ , [ @
-ODBCV
-er = ]
-ODBCV
-er ]
+ODBCV er = ]
+ODBCV er ]
 [ , [ @f
-U
-se
-P
-attern = ] f
-U
-se
-P
-attern ]
+U se
+P attern = ] f
+U se
+P attern ]
 [ ; ]
 ```

@@ -42,10 +42,6 @@ accomplished with the
 
 technique described
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-IDENTITY
-```
+`IDENTITY`

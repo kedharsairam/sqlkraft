@@ -94,17 +94,11 @@ might execute with LAQ, and some might execute without LAQ. For example, LAQ mig
 
 disabled for a query plan, but enabled for the database, and vice versa.
 
-```sql
-plan_id
-```
+`plan_id`
 
-```sql
-feature_id
-```
+`feature_id`
 
-```sql
-feature_desc
-```
+`feature_desc`
 
 ```sql
 LAQ Feedback

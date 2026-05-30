@@ -116,13 +116,10 @@ The following table lists the error types and their descriptions
 ### Example 2
 
 ```sql
-EXECUTE
-sp_describe_first_result_set @tsql = N
-'SELECT object_id, name, type_desc FROM
-sys.indexes'
+EXECUTE sp_describe_first_result_set @tsql = N
+'SELECT object_id, name, type_desc FROM sys.indexes'
 ;
-EXECUTE
-sp_describe_first_result_set @tsql = N
+EXECUTE sp_describe_first_result_set @tsql = N
 '
 SELECT object_id, name, type_desc
 FROM sys.indexes
@@ -136,9 +133,7 @@ WHERE object_id = @id1'
 
 ```sql
 CREATE
-TABLE
-dbo.t
-(
+TABLE dbo.t (
 a
 INT
 PRIMARY
@@ -149,18 +144,13 @@ INT
 );
 GO
 CREATE
-VIEW
-dbo.v
+VIEW dbo.v
 AS
-SELECT
-b1
-AS
-b2
-FROM
-dbo.t;
+SELECT b1
+AS b2
+FROM dbo.t;
 GO
-EXECUTE
-sp_describe_first_result_set N
+EXECUTE sp_describe_first_result_set N
 'SELECT b2 AS b3 FROM dbo.v'
 ,
 NULL

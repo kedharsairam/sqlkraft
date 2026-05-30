@@ -39,8 +39,6 @@ the
 
 database.
 
-SQL
-
 Copy and paste the following code into a Query Editor window, then run it to create a stored
 
 procedure. When it runs, the stored procedure keeps receiving messages as long as there are

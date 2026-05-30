@@ -57,8 +57,6 @@ is added as the attribute of the
 
 element.
 
-SQL
-
 This is the partial result.
 
 XML
@@ -87,25 +85,20 @@ EmpID
 </Name>
 </Employee>
 SELECT
-1
-as
+1 as
 Tag,
-NULL
-as
+NULL as
 Parent
 ,
-E.BusinessEntityID
-as
+E.BusinessEntityID as
 [Employee!1!EmpID],
-NULL
-as
+NULL as
 [
 Name
 !2!FName!
 ELEMENT
 ],
-NULL
-as
+NULL as
 [
 Name
 !2!LName!
@@ -125,11 +118,9 @@ E.BusinessEntityID = P.BusinessEntityID
 UNION
 ALL
 SELECT
-2
-as
+2 as
 Tag,
-1
-as
+1 as
 Parent
 ,
 E.BusinessEntityID,

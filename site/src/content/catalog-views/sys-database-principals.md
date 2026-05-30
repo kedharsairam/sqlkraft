@@ -35,9 +35,7 @@ The following query lists the permissions explicitly granted or denied to databa
 
 ### Example 1
 
-```sql
-weekly_receipts
-```
+`weekly_receipts`
 
 ### Example 2
 
@@ -47,17 +45,14 @@ weekly_receipts
 
 ### Example 3
 
-```sql
-Sales
-```
+`Sales`
 
 ### Example 4
 
 ```sql
 CREATE
 APPLICATION
-ROLE
-weekly_receipts
+ROLE weekly_receipts
 WITH
 PASSWORD
 =

@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns a miscellaneous set of useful informatio
 
 ## Syntax
 
-```sql
-physical_memory_in_bytes
-```
+`physical_memory_in_bytes`

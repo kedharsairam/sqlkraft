@@ -73,24 +73,19 @@ functions together, as shown in the following example. By default, the
 
 function returns the relative path of the file under the root path for the database.
 
-SQL
-
 ﾉ
 
 Expand table
 
 ```sql
 GetFileNamespacePath
-USE
-database_name;
+USE database_name;
 DECLARE
 @root
-NVARCHAR
-(100);
+NVARCHAR (100);
 DECLARE
 @fullpath
-NVARCHAR
-(1000);
+NVARCHAR (1000);
 SELECT
 @root = FileTableRootPath();
 SELECT

@@ -83,14 +83,8 @@ Last updated on 11/18/2025
 
 Related content
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-FALSE
-```
+`FALSE`
 
-```sql
-UNKNOWN
-```
+`UNKNOWN`

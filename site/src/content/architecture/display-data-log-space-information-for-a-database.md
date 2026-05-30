@@ -86,5 +86,3 @@ sp_spaceused
 system stored procedure to report disk space information for the
 
 entire database, including tables and indexes.
-
-SQL

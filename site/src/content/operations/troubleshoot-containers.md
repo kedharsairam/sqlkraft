@@ -76,12 +76,8 @@ instead.
 SQL Server container startup errors
 
 ```cmd
-docker
-docker
-sudo
-failed to create endpoint CONTAINER_NAME on network bridge.
+docker docker sudo failed to create endpoint CONTAINER_NAME on network bridge.
 Error starting proxy: listen tcp 0.0.0.0:1433 bind: address already in use.
 Cannot connect to the Docker daemon. Is the docker daemon running on this host?
-sudo systemctl status docker
-sudo systemctl start docker
+sudo systemctl status docker sudo systemctl start docker
 ```

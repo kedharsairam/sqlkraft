@@ -14,6 +14,4 @@ Generates scripts to create wrapper functions for the change data capture query 
 
 ## Syntax
 
-```sql
-sys.sp_cdc_generate_wrapper_function
-```
+`sys.sp_cdc_generate_wrapper_function`

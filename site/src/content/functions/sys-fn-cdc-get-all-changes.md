@@ -158,9 +158,7 @@ stored procedure to obtain CREATE
 
 ### Example 1
 
-```sql
-fn_cdc_get_net_changes
-```
+`fn_cdc_get_net_changes`
 
 ### Example 2
 
@@ -176,43 +174,30 @@ cdc.fn_cdc_get_net_changes_<capture_instance>
 
 ### Example 4
 
-```sql
-lsn_value
-```
+`lsn_value`
 
 ### Example 5
 
 ```sql
-Msg 313, Level 16, State 3, Line 1 An insufficient number of arguments were supplied for
-the procedure or function
+Msg 313, Level 16, State 3, Line 1 An insufficient number of arguments were supplied for the procedure or function
 ```
 
 ### Example 6
 
-```sql
-cdc.fn_cdc_get_net_changes_HR_Department
-```
+`cdc.fn_cdc_get_net_changes_HR_Department`
 
 ### Example 7
 
-```sql
-HumanResources.Department
-```
+`HumanResources.Department`
 
 ### Example 8
 
-```sql
-GETDATE
-```
+`GETDATE`
 
 ### Example 9
 
-```sql
-GETDATE
-```
+`GETDATE`
 
 ### Example 10
 
-```sql
-cdc.fn_cdc_get_net_changes_HR_Department
-```
+`cdc.fn_cdc_get_net_changes_HR_Department`

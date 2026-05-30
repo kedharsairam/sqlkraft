@@ -52,14 +52,10 @@ Each <
 
 > child element is the first manufacturing step at the work center location.
 
-SQL
-
 ```sql
 ManuInstr
 Location
-Location
-step
-step
+Location step step
 SELECT
 Instructions.query(
 '
@@ -71,8 +67,7 @@ works/ProductModelManuInstructions";
 ProductModelName = "{ sql:column("Production.ProductModel.Name")
 }" >
 {
-for $wc in //AWMI:root/AWMI:Location
-return
+for $wc in //AWMI:root/AWMI:Location return
 <Location>
 {$wc/@* }
 <step1> { string( ($wc//AWMI:step)[1] ) } </step1>
@@ -80,8 +75,7 @@ return
 }
 </ManuInstr>
 '
-)
-as
+) as
 Result
 FROM
 Production.ProductModel

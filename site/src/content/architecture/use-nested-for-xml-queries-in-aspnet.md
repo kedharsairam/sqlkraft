@@ -45,22 +45,16 @@ Mode Query
 
 element-centric XML in SQL Server.
 
-SQL
-
 This is the .aspx application. It executes the stored procedure and returns XML in the browser:
 
 ```sql
 CREATE
 PROC GetSalesOrderInfo
 AS
-SELECT
+SELECT (
+SELECT top 2 SalesOrderID, SalesPersonID, CustomerID,
 (
-SELECT
-top 2 SalesOrderID, SalesPersonID, CustomerID,
-(
-select
-top 3 SalesOrderID, ProductID, OrderQty, UnitPrice
-from
+select top 3 SalesOrderID, ProductID, OrderQty, UnitPrice from
 Sales.SalesOrderDetail
 WHERE
 SalesOrderDetail.SalesOrderID = SalesOrderHeader.SalesOrderID
@@ -73,18 +67,14 @@ TYPE
 FROM
 Sales.SalesOrderHeader
 WHERE
-SalesOrderHeader.SalesOrderID = SalesOrder.SalesOrderID
-for
-xml
-auto
+SalesOrderHeader.SalesOrderID = SalesOrder.SalesOrderID for xml auto
 ,
 type
 ),
 (
 SELECT
 *
-FROM
-(
+FROM (
 SELECT
 SalesPersonID, EmployeeID
 FROM
@@ -101,16 +91,14 @@ AUTO
 ,
 TYPE
 , ELEMENTS)
-FROM
-(
+FROM (
 SELECT
 SalesOrderHeader.SalesOrderID, SalesOrderHeader.SalesPersonID
 FROM
 Sales.SalesOrderHeader, Sales.SalesPerson
 WHERE
 SalesOrderHeader.SalesPersonID = SalesPerson.SalesPersonID
-)
-as
+) as
 SalesOrder
 ORDER
 BY
@@ -126,8 +114,7 @@ GO
 <%@import Namespace=
 "System.Xml"
 %>
-<%@import
-namespace
+<%@import namespace
 =
 "Microsoft.Data.SqlClient"
 %><%

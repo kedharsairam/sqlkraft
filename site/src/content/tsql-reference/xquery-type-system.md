@@ -83,16 +83,13 @@ attribute returned is of
 type.
 
 ```sql
-Instructions
-instance of
-LotSize
-xs:decimal
+Instructions instance of
+LotSize xs:decimal
 SELECT Instructions.query('
 DECLARE namespace
 AWMI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelManuInstructions";
-data(/AWMI:root[1]/AWMI:Location[@LocationID=10][1]/@LotSize)[1] instance of
-xs:decimal
+data(/AWMI:root[1]/AWMI:Location[@LocationID=10][1]/@LotSize)[1] instance of xs:decimal
 ') AS Result
 FROM Production.ProductModel
 WHERE ProductModelID=7

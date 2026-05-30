@@ -82,34 +82,18 @@ enabled) have ample space to support the version store. There are two types of v
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-READ_COMMITTED
-```
+`READ_COMMITTED`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-tempdb
-```
+`tempdb`

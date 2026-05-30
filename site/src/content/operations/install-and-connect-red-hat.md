@@ -104,6 +104,5 @@ for creating the SQL Server VM.
 ```cmd
 sqlcmd
 -
--image RHEL
-az vm create
+-image RHEL az vm create
 ```

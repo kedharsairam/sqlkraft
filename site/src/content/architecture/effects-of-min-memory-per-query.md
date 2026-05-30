@@ -98,9 +98,7 @@ max server memory (MB)
 min memory per query
 ```
 
-```sql
-RESOURCE_SEMAPHORE
-```
+`RESOURCE_SEMAPHORE`
 
 ```sql
 min memory per query

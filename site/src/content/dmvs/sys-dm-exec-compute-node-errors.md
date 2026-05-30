@@ -13,18 +13,10 @@ SQL Server 2016 (13.x) and later Returns errors that occur on PolyBase compute n
 
 ## Code Blocks
 
-```sql
-nvarchar(36)
-```
+`nvarchar(36)`
 
-```sql
-nvarchar(255)
-```
+`nvarchar(255)`
 
-```sql
-datetime
-```
+`datetime`
 
-```sql
-int
-```
+`int`

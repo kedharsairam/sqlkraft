@@ -65,8 +65,6 @@ LOB field. However, you can edit a format file and specify the length or maximum
 
 manually.
 
-
-
 Expand table
 
 ### nvarchar(1024)
@@ -101,8 +99,6 @@ part of the query specifies which files will be
 
 read.
 
-SQL
-
 The following example shows how
 
 can be used in the
@@ -116,8 +112,6 @@ part of the query and filters files in the
 clause.
 
 Your results will be the same as the prior example.
-
-SQL
 
 ### nvarchar(1024)
 
@@ -149,8 +143,6 @@ part of the query specifies which files will be
 
 read.
 
-SQL
-
 The following example shows how
 
 can be used in the
@@ -161,86 +153,48 @@ to be read.
 
 ### varbinary(max)
 
-```sql
-OPENROWSET(BULK...)
-```
+`OPENROWSET(BULK...)`
+
+`SQLCHAR`
+
+`SQLNCHAR`
+
+`SQLBINARY`
+
+`SQLCHAR`
+
+`SQLVARYCHAR`
+
+`SQLNCHAR`
+
+`SQLNVARCHAR`
+
+`SQLBINARY`
+
+`SQLVARYBIN`
+
+`OPENROWSET`
+
+`filepath`
+
+`filename`
+
+`OPENROWSET`
+
+`filename()`
+
+`WHERE`
+
+`OPENROWSET`
+
+`WHERE`
 
 ```sql
-SQLCHAR
-```
-
-```sql
-SQLNCHAR
-```
-
-```sql
-SQLBINARY
-```
-
-```sql
-SQLCHAR
-```
-
-```sql
-SQLVARYCHAR
-```
-
-```sql
-SQLNCHAR
-```
-
-```sql
-SQLNVARCHAR
-```
-
-```sql
-SQLBINARY
-```
-
-```sql
-SQLVARYBIN
-```
-
-```sql
-OPENROWSET
-```
-
-```sql
-filepath
-```
-
-```sql
-filename
-```
-
-```sql
-OPENROWSET
-```
-
-```sql
-filename()
-```
-
-```sql
-WHERE
-```
-
-```sql
-OPENROWSET
-```
-
-```sql
-WHERE
-```
-
-```sql
-SELECT
-nyc.filename()
+SELECT nyc.filename()
 AS
 [filename]
 ,
-COUNT_BIG
-(*)
+COUNT_BIG (*)
 AS
 [
 rows
@@ -258,15 +212,12 @@ FORMAT
 'PARQUET'
 ) nyc
 GROUP
-BY
-nyc.filename();
-SELECT
-r.filename()
+BY nyc.filename();
+SELECT r.filename()
 AS
 [filename]
 ,
-COUNT_BIG
-(*)
+COUNT_BIG (*)
 AS
 [
 rows
@@ -284,35 +235,22 @@ FORMAT
 'CSV'
 ,
 FIRSTROW = 2)
-WITH
-(C1
-varchar
-(200) )
+WITH (C1 varchar (200) )
 AS
 [r]
 ```
 
-```sql
-filepath
-```
+`filepath`
+
+`OPENROWSET`
+
+`filepath()`
+
+`WHERE`
 
 ```sql
-OPENROWSET
-```
-
-```sql
-filepath()
-```
-
-```sql
-WHERE
-```
-
-```sql
-WHERE
-r.filename()
-IN
-(
+WHERE r.filename()
+IN (
 'yellow_tripdata_2017-10.csv'
 ,
 'yellow_tripdata_2017-11.csv'
@@ -320,21 +258,17 @@ IN
 'yellow_tripdata_2017-12.csv'
 )
 GROUP
-BY
-r.filename()
+BY r.filename()
 ORDER
 BY
 [filename];
 ```
 
 ```sql
-SELECT
-r.filepath()
-AS
-filepath
+SELECT r.filepath()
+AS filepath
 ,
-COUNT_BIG
-(*)
+COUNT_BIG (*)
 AS
 [
 rows
@@ -353,17 +287,14 @@ FORMAT
 ,
 FIRSTROW = 2
 )
-WITH
-(
+WITH (
 vendor_id
 INT
 )
 AS
 [r]
 GROUP
-BY
-r.filepath()
+BY r.filepath()
 ORDER
-BY
-filepath;
+BY filepath;
 ```

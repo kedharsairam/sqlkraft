@@ -14,9 +14,7 @@ Checks the status of all the subscriptions of every publication and drops subscr
 
 ## Syntax
 
-```sql
-sp_expired_subscription_cleanup
-```
+`sp_expired_subscription_cleanup`
 
 ## Permissions
 

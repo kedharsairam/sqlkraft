@@ -78,6 +78,5 @@ key
 of its associated service principal name in the Key Distribution Center (KDC).
 
 ```cmd
-krb5.conf
-krb5.ini
+krb5.conf krb5.ini
 ```

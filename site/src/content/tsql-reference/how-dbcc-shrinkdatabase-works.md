@@ -195,13 +195,9 @@ DBCC SHRINKFILE
 ALTER DATABASE
 ```
 
-```sql
-NOTRUNCATE
-```
+`NOTRUNCATE`
 
-```sql
-TRUNCATEONLY
-```
+`TRUNCATEONLY`
 
 ```sql
 DBCC
@@ -212,17 +208,13 @@ SHRINKDATABASE
 DBCC SHRINKDATABASE
 ```
 
-```sql
-NOTRUNCATE
-```
+`NOTRUNCATE`
 
 ```sql
 DBCC SHRINKDATABASE
 ```
 
-```sql
-TRUNCATEONLY
-```
+`TRUNCATEONLY`
 
 ```sql
 DBCC
@@ -237,21 +229,15 @@ DBCC SHRINKFILE
 DBCC SHRINKDATABASE
 ```
 
-```sql
-mydb
-```
+`mydb`
 
 ```sql
 DBCC SHRINKDATABASE
 ```
 
-```sql
-mydb
-```
+`mydb`
 
-```sql
-mydb
-```
+`mydb`
 
 ```sql
 DBCC SHRINKDATABASE

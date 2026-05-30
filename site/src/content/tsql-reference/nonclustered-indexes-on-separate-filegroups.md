@@ -123,17 +123,13 @@ DBCC CHECKFILEGROUP
 DBCC CHECKFILEGROUP
 ```
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
 ```sql
 DBCC CHECKFILEGROUP
 ```
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
 ```sql
 DBCC CHECKFILEGROUP
@@ -151,10 +147,6 @@ DBCC CHECKFILEGROUP
 DBCC CHECKFILEGROUP
 ```
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`

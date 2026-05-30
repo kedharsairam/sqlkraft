@@ -43,18 +43,14 @@ sp_add_category
 
 ### Example 1
 
-```sql
-AdminJobs
-```
+`AdminJobs`
 
 ### Example 2
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_add_category
+EXECUTE dbo.sp_add_category
 @
 class
 = N

@@ -14,15 +14,12 @@ SQL Server 2022 (16.x) and later versions Mirrored databases in Microsoft SQL da
 
 ## Syntax
 
-```sql
-destination_credential
-```
+`destination_credential`
 
 ## Examples
 
 ### Example 1
 
 ```sql
-EXECUTE
-sp_help_change_feed;
+EXECUTE sp_help_change_feed;
 ```

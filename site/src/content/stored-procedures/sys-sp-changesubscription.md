@@ -14,9 +14,7 @@ Changes the properties of a snapshot or transactional push subscription or a pul
 
 ## Syntax
 
-```sql
-sp_changesubscription
-```
+`sp_changesubscription`
 
 ## Permissions
 

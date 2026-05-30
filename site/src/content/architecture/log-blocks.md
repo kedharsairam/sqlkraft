@@ -61,12 +61,9 @@ This step is also possible in SQL Server Management Studio, using the database
 properties page.
 
 ```sql
-ALTER DATABASE <database name> MODIFY FILE (NAME='Logical file name of transaction
-log', SIZE = <required size>);
+ALTER DATABASE <database name> MODIFY FILE (NAME='Logical file name of transaction log', SIZE = <required size>);
 ```
 
 ```sql
-Database %ls has more than %d virtual log files which is excessive. Too many virtual
-log files can cause long startup and backup times. Consider shrinking the log and
-using a different growth increment to reduce the number of virtual log files.
+Database %ls has more than %d virtual log files which is excessive. Too many virtual log files can cause long startup and backup times. Consider shrinking the log and using a different growth increment to reduce the number of virtual log files.
 ```

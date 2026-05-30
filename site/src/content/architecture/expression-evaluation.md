@@ -30,8 +30,6 @@ methods of CLR user-defined types were not foldable.
 
 Consider the following query:
 
-SQL
-
 If the
 
 database option isn't set to
@@ -76,13 +74,9 @@ set size (cardinality) estimator that is part of the optimizer during optimizati
 
 1
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
-```sql
-FORCED
-```
+`FORCED`
 
 ```sql
 117.00 + 1000.00
@@ -97,28 +91,21 @@ TotalDue > 117.00 +
 1000.00
 ```
 
-```sql
-dbo.f
-```
+`dbo.f`
 
-```sql
-dbo.f(100)
-```
+`dbo.f(100)`
 
 ```sql
 SELECT
 *
 FROM
 Sales.SalesOrderHeader
-AS
-s
+AS s
 INNER
 JOIN
 Sales.SalesOrderDetail
-AS
-d
-ON
-s.SalesOrderID = d.SalesOrderID
+AS d
+ON s.SalesOrderID = d.SalesOrderID
 WHERE
 TotalDue > 117.00 + 1000.00;
 ```

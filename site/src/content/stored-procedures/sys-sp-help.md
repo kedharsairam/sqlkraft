@@ -81,27 +81,19 @@ sp_help <table>
 
 ### Example 2
 
-```sql
-sp_helpconstraint
-```
+`sp_helpconstraint`
 
 ### Example 3
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ### Example 4
 
-```sql
-AdventureWorksDW2025
-```
+`AdventureWorksDW2025`
 
 ### Example 5
 
-```sql
-Product.Product
-```
+`Product.Product`
 
 ### Example 6
 
@@ -109,8 +101,7 @@ Product.Product
 USE
 AdventureWorks2022;
 GO
-EXECUTE
-sp_helpconstraint
+EXECUTE sp_helpconstraint
 'Production.Product'
 ;
 ```

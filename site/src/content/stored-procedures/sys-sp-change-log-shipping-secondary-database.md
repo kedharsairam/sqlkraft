@@ -14,29 +14,22 @@ fixed server role can run this procedure. This example illustrates using databas
 
 ## Syntax
 
-```sql
-sp_change_log_shipping_secondary_database
-```
+`sp_change_log_shipping_secondary_database`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sp_change_log_shipping_secondary_database
-```
+`sp_change_log_shipping_secondary_database`
 
 ### Example 2
 
-```sql
-LogShipAdventureWorks
-```
+`LogShipAdventureWorks`
 
 ### Example 3
 
 ```sql
-EXECUTE
-master.dbo.sp_change_log_shipping_secondary_database
+EXECUTE master.dbo.sp_change_log_shipping_secondary_database
 @secondary_database =
 'LogShipAdventureWorks'
 ,

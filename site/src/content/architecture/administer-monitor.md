@@ -88,16 +88,5 @@ parameter specifies the maximum number of scan cycles that are attempted to
 drain the log before either returning (continuous = 0) or executing a waitfor (continuous = 1).
 
 ```sql
-sp_MScdc_capture_job
-maxtrans
-maxscans
-continuous
-pollinginterval
-msdb.dbo.cdc_jobs
-sp_cdc_scan
-sp_replcmds
-sp_cdc_scan
-maxtrans
-maxtrans
-maxscans
+sp_MScdc_capture_job maxtrans maxscans continuous pollinginterval msdb.dbo.cdc_jobs sp_cdc_scan sp_replcmds sp_cdc_scan maxtrans maxtrans maxscans
 ```

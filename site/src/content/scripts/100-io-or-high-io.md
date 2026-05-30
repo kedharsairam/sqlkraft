@@ -14,6 +14,5 @@ pubDate: 2025-03-15
 --Avg Disk Transfer
 --Avg Disk Queue Length
 
---use the following command to analyse IO related metrics
-select * from sys.dm_io_virtual_file_stats
+--use the following command to analyse IO related metrics select * from sys.dm_io_virtual_file_stats
 ```

@@ -14,6 +14,4 @@ Contains statistics collected since the last database restart. In-Memory OLTP (I
 
 ## Syntax
 
-```sql
-sys.dm_db_index_usage_stats
-```
+`sys.dm_db_index_usage_stats`

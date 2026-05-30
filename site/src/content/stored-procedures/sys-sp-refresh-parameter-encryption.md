@@ -65,9 +65,7 @@ The encryption metadata for parameters of a module can become outdated, if: Encr
 
 ### Example 1
 
-```sql
-sp_refresh_parameter_encryption
-```
+`sp_refresh_parameter_encryption`
 
 ### Example 2
 
@@ -78,51 +76,42 @@ TABLE
 (
 [PatientID]
 INT
-IDENTITY
-(1, 1)
+IDENTITY (1, 1)
 NOT
 NULL
 ,
 [SSN]
-CHAR
-(11),
+CHAR (11),
 [FirstName]
-NVARCHAR
-(50)
+NVARCHAR (50)
 NULL
 ,
 [LastName]
-NVARCHAR
-(50)
+NVARCHAR (50)
 NOT
 NULL
 ,
 [MiddleName]
-NVARCHAR
-(50)
+NVARCHAR (50)
 NULL
 ,
 [StreetAddress]
-NVARCHAR
-(50)
+NVARCHAR (50)
 NOT
 NULL
 ,
 [City]
-NVARCHAR
-(50)
+NVARCHAR (50)
 NOT
 NULL
 ,
 [ZipCode]
-CHAR
-(5)
+CHAR (5)
 NOT
 NULL
 ,
 [State]
-CHAR
-(2)
+CHAR (2)
 NOT
 NULL
 ,
@@ -143,8 +132,7 @@ CREATE
 PROCEDURE
 [find_patient]
 @SSN
-CHAR
-(11)
+CHAR (11)
 AS
 BEGIN
 SELECT
@@ -160,8 +148,7 @@ COLUMN
 MASTER
 KEY
 [CMK1]
-WITH
-(
+WITH (
 KEY_STORE_PROVIDER_NAME = N
 'MSSQL_CERTIFICATE_STORE'
 ,
@@ -175,8 +162,7 @@ ENCRYPTION
 KEY
 [CEK1]
 WITH
-VALUES
-(
+VALUES (
 COLUMN_MASTER_KEY = [CMK1],
 ALGORITHM =
 'RSA_OAEP'
@@ -185,9 +171,7 @@ ALGORITHM =
 
 ### Example 3
 
-```sql
-sp_refresh_parameter_encryption
-```
+`sp_refresh_parameter_encryption`
 
 ### Example 4
 
@@ -223,12 +207,10 @@ TABLE
 [Patients]
 ADD
 [SSN]
-CHAR
-(11)
+CHAR (11)
 COLLATE
 Latin1_General_BIN2  ENCRYPTED
-WITH
-(
+WITH (
 COLUMN_ENCRYPTION_KEY = [CEK1],
 ENCRYPTION_TYPE =
 DETERMINISTIC
@@ -240,7 +222,6 @@ NOT
 NULL
 ;
 GO
-EXECUTE
-sp_refresh_parameter_encryption [find_patient];
+EXECUTE sp_refresh_parameter_encryption [find_patient];
 GO
 ```

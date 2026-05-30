@@ -41,11 +41,7 @@ enable the primary managed identity
 
 Create access credentials to Azure OpenAI using a managed identity:
 
-SQL
-
 Create the external model:
-
-SQL
 
 ）
 
@@ -81,11 +77,7 @@ parameter at the endpoint to 725.
 
 Create access credentials to Azure OpenAI using a key:
 
-SQL
-
 Create the external model:
-
-SQL
 
 This example creates an external model of the
 
@@ -93,19 +85,14 @@ type using Ollama hosted locally for
 
 development purposes.
 
-SQL
-
 ## Create an EXTERNAL MODEL with OpenAI
 
-```sql
-EMBEDDINGS
-```
+`EMBEDDINGS`
 
 ```sql
 SELECT
 *
-FROM
-sys.external_models;
+FROM sys.external_models;
 ```
 
 ```sql
@@ -126,8 +113,7 @@ EXTERNAL
 MODEL
 MyAzureOpenAIModel
 AUTHORIZATION CRM_User
-WITH
-(
+WITH (
 LOCATION =
 'https://my-azure-openai-
 endpoint.cognitiveservices.azure.com/openai/deployments/text-embedding-ada-
@@ -139,17 +125,11 @@ API_FORMAT =
 MODEL_TYPE = EMBEDDINGS,
 ```
 
-```sql
-EMBEDDINGS
-```
+`EMBEDDINGS`
 
-```sql
-PARAMETERS
-```
+`PARAMETERS`
 
-```sql
-EMBEDDINGS
-```
+`EMBEDDINGS`
 
 ```sql
 MODEL
@@ -179,8 +159,7 @@ EXTERNAL
 MODEL
 MyAzureOpenAIModel
 AUTHORIZATION CRM_User
-WITH
-(
+WITH (
 LOCATION =
 'https://my-azure-openai-
 endpoint.cognitiveservices.azure.com/openai/deployments/text-embedding-3-

@@ -60,8 +60,6 @@ Use SQL Server Objects
 
 The value of these counters is also available by executing the following statement:
 
-SQL
-
 The following SQL Server Database Engine features aren't supported in a future version of SQL Server. Don't use these features in new
 
 development work, and modify applications that currently use these features as soon as possible. The
@@ -164,58 +162,34 @@ level 100
 
 Expand table
 
-```sql
-sys.dm_os_performance_counters
-```
+`sys.dm_os_performance_counters`
 
-```sql
-RESTORE
-```
+`RESTORE`
 
-```sql
-DATABASE
-```
+`DATABASE`
 
-```sql
-LOG
-```
+`LOG`
 
-```sql
-WITH
-```
+`WITH`
 
-```sql
-PASSWORD
-```
+`PASSWORD`
 
-```sql
-BACKUP
-```
+`BACKUP`
 
-```sql
-DATABASE
-```
+`DATABASE`
 
-```sql
-LOG
-```
+`LOG`
 
 ```sql
 WITH
 PASSWORD
 ```
 
-```sql
-BACKUP
-```
+`BACKUP`
 
-```sql
-DATABASE
-```
+`DATABASE`
 
-```sql
-LOG
-```
+`LOG`
 
 ```sql
 WITH
@@ -240,10 +214,8 @@ WITH MEDIAPASSWORD
 ```sql
 SELECT
 *
-FROM
-sys.dm_os_performance_counters
-WHERE
-object_name
+FROM sys.dm_os_performance_counters
+WHERE object_name
 LIKE
 '%SQL%Deprecated Features%'
 ;

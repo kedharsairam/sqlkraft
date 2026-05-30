@@ -14,9 +14,7 @@ Azure SQL Managed Instance Removes publishing metadata belonging to a specific p
 
 ## Syntax
 
-```sql
-sp_removedistpublisherdbreplication
-```
+`sp_removedistpublisherdbreplication`
 
 ## Permissions
 

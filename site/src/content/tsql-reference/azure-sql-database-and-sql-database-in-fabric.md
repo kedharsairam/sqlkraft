@@ -89,10 +89,6 @@ section.
 
 SQL Server 2025 Preview feature
 
-#### syntaxsql
-
 ### vector
 
-```sql
-PREVIEW_FEATURES
-```
+`PREVIEW_FEATURES`

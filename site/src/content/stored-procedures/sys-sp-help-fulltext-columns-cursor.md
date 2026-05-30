@@ -54,8 +54,7 @@ DECLARE
 AS
 CURSOR
 ;
-EXECUTE
-sp_help_fulltext_columns_cursor @mycursor
+EXECUTE sp_help_fulltext_columns_cursor @mycursor
 OUTPUT
 ;
 FETCH NEXT FROM @mycursor;

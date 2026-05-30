@@ -14,6 +14,4 @@ Returns statistics about the In-Memory OLTP checkpoint operations in the current
 
 ## Syntax
 
-```sql
-sys.dm_db_xtp_checkpoint_stats
-```
+`sys.dm_db_xtp_checkpoint_stats`

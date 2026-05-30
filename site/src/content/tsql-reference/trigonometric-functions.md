@@ -67,11 +67,7 @@ ROUND
 
 Rounds a numeric value to the specified precision and length.
 
-
-
 Expand table
-
-
 
 Expand table
 

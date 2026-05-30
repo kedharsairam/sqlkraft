@@ -127,8 +127,6 @@ sys.dm_sql_referencing_entities
 
 #### Rule
 
-#### timestamp
-
 ### AllowsNull
 
 The nullability of a column determines whether that column can allow a null value (
@@ -219,8 +217,6 @@ function with the
 
 property.
 
-
-
 Expand table
 
 ７
@@ -239,17 +235,11 @@ ALTER TABLE
 ALTER INDEX ... REBUILD
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 SET XACT_ABORT
@@ -283,33 +273,19 @@ ALLOW_ROW_LOCKS = OFF
 ALLOW_PAGE_LOCK = OFF
 ```
 
-```sql
-sp_help
-```
+`sp_help`
 
-```sql
-sp_helpconstraint
-```
+`sp_helpconstraint`
 
-```sql
-sp_rename
-```
+`sp_rename`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 CREATE TABLE
@@ -319,13 +295,9 @@ CREATE TABLE
 ALTER TABLE
 ```
 
-```sql
-sp_help
-```
+`sp_help`
 
-```sql
-SET
-```
+`SET`
 
 ```sql
 ANSI_NULL_DFLT_ON = ON
@@ -347,14 +319,8 @@ ANSI_NULL_DEFAULT_ON = ON
 ANSI_NULL_DEFAULT_OFF = ON
 ```
 
-```sql
-ANSI_NULL_DEFAULT
-```
+`ANSI_NULL_DEFAULT`
 
-```sql
-sys.databases
-```
+`sys.databases`
 
-```sql
-COLUMNPROPERTY
-```
+`COLUMNPROPERTY`

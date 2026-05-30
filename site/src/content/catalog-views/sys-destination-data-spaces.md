@@ -14,9 +14,7 @@ Contains a row for each data space destination of a partition scheme. ID of the 
 
 ## Syntax
 
-```sql
-sys.partition_schemes
-```
+`sys.partition_schemes`
 
 ## Permissions
 

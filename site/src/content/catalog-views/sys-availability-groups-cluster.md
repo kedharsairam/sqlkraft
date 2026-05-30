@@ -14,6 +14,4 @@ Returns a row for each Always On availability group in Windows Server Failover C
 
 ## Syntax
 
-```sql
-failure_condition_level
-```
+`failure_condition_level`

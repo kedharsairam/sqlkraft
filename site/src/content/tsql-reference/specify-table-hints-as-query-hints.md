@@ -129,106 +129,60 @@ Example K
 
 .
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 TABLE HINT
 ```
 
-```sql
-INDEX
-```
+`INDEX`
 
-```sql
-FORCESCAN
-```
+`FORCESCAN`
 
-```sql
-FORCESEEK
-```
+`FORCESEEK`
 
 ```sql
 TABLE HINT
 ```
 
-```sql
-INDEX
-```
+`INDEX`
 
-```sql
-FORCESCAN
-```
+`FORCESCAN`
 
-```sql
-FORCESEEK
-```
+`FORCESEEK`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INDEX
-```
+`INDEX`
 
-```sql
-FORCESCAN
-```
+`FORCESCAN`
 
-```sql
-FORCESEEK
-```
+`FORCESEEK`
 
-```sql
-INDEX
-```
+`INDEX`
 
-```sql
-FORCESCAN
-```
+`FORCESCAN`
 
-```sql
-FORCESEEK
-```
+`FORCESEEK`
 
-```sql
-INDEX
-```
+`INDEX`
 
-```sql
-FORCESCAN
-```
+`FORCESCAN`
 
-```sql
-FORCESEEK
-```
+`FORCESEEK`
 
-```sql
-WITH
-```
+`WITH`
 
 ```sql
 TABLE HINT
 ```
 
-```sql
-OPTION
-```
+`OPTION`
 
-```sql
-NOLOCK
-```
+`NOLOCK`
 
-```sql
-OPTION
-```
+`OPTION`
 
-```sql
-NOLOCK
-```
+`NOLOCK`

@@ -84,8 +84,7 @@ int srv_paraminfo (
 SRV_PROC *
 srvproc
 ,
-int
-n
+int n
 ,
 BYTE *
 pbType

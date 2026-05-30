@@ -14,9 +14,7 @@ The identifier for the node that this distribution is on. On SQL Server and SQL 
 
 ## Syntax
 
-```sql
-sys.dm_tran_session_transactions
-```
+`sys.dm_tran_session_transactions`
 
 ## Remarks
 

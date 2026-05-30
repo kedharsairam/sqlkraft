@@ -8,11 +8,8 @@ pubDate: 2025-03-15
 ---
 
 ```sql
---for a specific database
-select databasepropertyex ('databasename', 'status')
+--for a specific database select databasepropertyex ('databasename', 'status')
 
---for all databases
-select name, state_desc from sys.databases
---or
-sp_helpdb
+--for all databases select name, state_desc from sys.databases
+--or sp_helpdb
 ```

@@ -14,9 +14,7 @@ SQL Server 2025 (17.x) Azure SQL Database Contains information about queue lengt
 
 ## Syntax
 
-```sql
-pending_message_count
-```
+`pending_message_count`
 
 ## Remarks
 

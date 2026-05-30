@@ -20,7 +20,6 @@ SQL Server 2016 (13.x) and later - Windows only Generates a predicted value for 
 
 ```sql
 sp_rx
-P
-redict ( @model , @input )
+P redict ( @model , @input )
 [ ; ]
 ```

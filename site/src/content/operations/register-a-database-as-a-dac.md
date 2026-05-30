@@ -108,7 +108,5 @@ Register DAC Page
 SQL Server Management Studio
 
 ```cmd
-msdb
-master
-sys.sql_expression_dependencies
+msdb master sys.sql_expression_dependencies
 ```

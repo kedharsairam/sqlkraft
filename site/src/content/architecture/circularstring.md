@@ -39,8 +39,6 @@ SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
 
-SQL
-
 database in Microsoft Fabric
 
 A
@@ -65,8 +63,6 @@ n, where n > 1. The following
 
 instances are accepted.
 
-SQL
-
 shows that
 
 instance might be accepted, but not valid. The following
@@ -74,8 +70,6 @@ instance might be accepted, but not valid. The following
 CircularString instance declaration is not accepted. This declaration throws a
 
 .
-
-SQL
 
 ```sql
 @g3

@@ -34,9 +34,7 @@ Using MARS in OLE DB
 
 Trace the network authentication process to the Database Engine
 
-```sql
-Delta
-```
+`Delta`
 
 ```sql
 367 9.3072631  10.10.10.22 10.10.10.104 TDS:Response, Version = 7.300000,
@@ -55,24 +53,17 @@ DstPort=1433, PayloadLen=0, Seq=157672649
 ACK+FIN
 ```
 
-```sql
-ACK
-```
+`ACK`
 
 ```sql
 Frame Offset     Delta      Source IP   Dest IP     Description
 ----- ---------- ---------- ----------- ----------- --------------------------
 ---------------------------------------
-1314 16.3641802  0.0000000 10.10.10.45 10.10.10.51 TCP:[Keep
-alive]Flags=...A...., SrcPort=51708, DstPort=1433, Payl
-1317 16.3677083  0.0035281 10.10.10.51 10.10.10.45 TCP:[Keep alive
-ack]Flags=...A...., SrcPort=1433, DstPort=51708,
-1327 16.4269375  0.0592292 10.10.10.51 10.10.10.45 TCP:[Keep
-alive]Flags=...A...., SrcPort=1433, DstPort=51708, Payl
-1328 16.4269637  0.0000262 10.10.10.45 10.10.10.51 TCP:[Keep alive
-ack]Flags=...A...., SrcPort=51708, DstPort=1433,
-1881 26.7918499 10.3648862 10.10.10.45 10.10.10.51 TCP:[Keep alive
-ack]Flags=...A...F, SrcPort=51708, DstPort=1433,
+1314 16.3641802  0.0000000 10.10.10.45 10.10.10.51 TCP:[Keep alive]Flags=...A...., SrcPort=51708, DstPort=1433, Payl
+1317 16.3677083  0.0035281 10.10.10.51 10.10.10.45 TCP:[Keep alive ack]Flags=...A...., SrcPort=1433, DstPort=51708,
+1327 16.4269375  0.0592292 10.10.10.51 10.10.10.45 TCP:[Keep alive]Flags=...A...., SrcPort=1433, DstPort=51708, Payl
+1328 16.4269637  0.0000262 10.10.10.45 10.10.10.51 TCP:[Keep alive ack]Flags=...A...., SrcPort=51708, DstPort=1433,
+1881 26.7918499 10.3648862 10.10.10.45 10.10.10.51 TCP:[Keep alive ack]Flags=...A...F, SrcPort=51708, DstPort=1433,
 1886 26.7929474  0.0010975 10.10.10.51 10.10.10.45 TCP:Flags=...A....,
 SrcPort=1433, DstPort=51708, PayloadLen=0, Se
 1888 26.7929474  0.0000000 10.10.10.51 10.10.10.45 TCP:Flags=...A...F,

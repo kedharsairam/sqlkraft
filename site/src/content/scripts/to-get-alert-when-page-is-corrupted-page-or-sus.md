@@ -22,9 +22,7 @@ select sp.database_id "Database ID",
        end as "Event Desc",
        sp.error_count "Error Count",
        sp.last_update_date "Last Updated"
-from msdb.dbo.suspect_pages sp
-inner join sys.databases d on d.database_id=sp.database_id
-inner join sys.master_files mf on mf.database_id=sp.database_id and mf.file_id=sp.file_id
+from msdb.dbo.suspect_pages sp inner join sys.databases d on d.database_id=sp.database_id inner join sys.master_files mf on mf.database_id=sp.database_id and mf.file_id=sp.file_id
 ========================================
 select DB_NAME(database_id) AS DBNAME, * from msdb.dbo.suspect_pages
 
@@ -57,16 +55,11 @@ set @tableHTML =
             when sp.event_type = 7 then 'Deallocated by DBCC'
        end,       '',
        td = sp.error_count,       '',
-       td = sp.last_update_date
-from msdb.dbo.suspect_pages sp
-inner join sys.databases d on d.database_id=sp.database_id
-inner join sys.master_files mf on mf.database_id=sp.database_id and mf.file_id=sp.file_id
-              for xml path('tr'), TYPE
+       td = sp.last_update_date from msdb.dbo.suspect_pages sp inner join sys.databases d on d.database_id=sp.database_id inner join sys.master_files mf on mf.database_id=sp.database_id and mf.file_id=sp.file_id for xml path('tr'), TYPE
     ) as nvarchar(max) ) +
     N'</table>' ;
 
-IF @count > 0
-  exec msdb.dbo.sp_send_dbmail
+IF @count > 0 exec msdb.dbo.sp_send_dbmail
     @profile_name ='DBATEAM',
     @recipients=N'xxxxx@gmail.com',
     @body= @tableHTML,

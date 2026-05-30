@@ -99,6 +99,4 @@ Database detach and attach (SQL Server)
 
 Expand table
 
-```sql
-FILENAME
-```
+`FILENAME`

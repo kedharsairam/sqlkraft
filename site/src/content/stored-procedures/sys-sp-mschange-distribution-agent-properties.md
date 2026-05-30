@@ -14,6 +14,4 @@ fixed server role at the Distributor can execute sp_addpushsubscription_agent (T
 
 ## Syntax
 
-```sql
-sp_MSchange_distribution_agent_properties
-```
+`sp_MSchange_distribution_agent_properties`

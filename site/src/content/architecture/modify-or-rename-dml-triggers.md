@@ -83,6 +83,4 @@ permission on the table or view on which the trigger is
 
 defined.
 
-```sql
-ALTER
-```
+`ALTER`

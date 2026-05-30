@@ -53,8 +53,6 @@ statement to find out the number of messages in the queue
 
 :
 
-SQL
-
 The following
 
 statement lets the administrator learn whether the queue
@@ -62,8 +60,6 @@ statement lets the administrator learn whether the queue
 contains any messages for the service
 
 :
-
-SQL
 
 ７
 
@@ -95,21 +91,15 @@ SELECT
 SELECT
 NOLOCK
 SELECT
-COUNT
-(*)
-FROM
-dbo.ExpenseQueue
-WITH
-(NOLOCK);
+COUNT (*)
+FROM dbo.ExpenseQueue
+WITH (NOLOCK);
 IF EXISTS (
 SELECT
 *
-FROM
-dbo.ExpenseQueue
-WITH
-(NOLOCK)
-WHERE
-service_name =
+FROM dbo.ExpenseQueue
+WITH (NOLOCK)
+WHERE service_name =
 '//Adventure-Works.com/AccountsPayable/Expenses'
 )
 PRINT

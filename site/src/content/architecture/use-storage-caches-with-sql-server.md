@@ -70,14 +70,8 @@ alternate failure mode discussions, see:
 
 ## Description of logging and data storage algorithms that extend data reliability in SQL Server
 
-```sql
-Ctrl
-```
+`Ctrl`
 
-```sql
-Alt
-```
+`Alt`
 
-```sql
-Del
-```
+`Del`

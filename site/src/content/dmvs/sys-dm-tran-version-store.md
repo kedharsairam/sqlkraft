@@ -14,6 +14,4 @@ SQL database in Microsoft Fabric Returns a virtual table that displays all versi
 
 ## Syntax
 
-```sql
-sys.dm_tran_version_store
-```
+`sys.dm_tran_version_store`

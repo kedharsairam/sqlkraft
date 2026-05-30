@@ -69,8 +69,6 @@ SQL Server object identifier of the service that the
 
 conversation is to.
 
-
-
 Expand table
 
 #### Column name
@@ -79,19 +77,13 @@ Expand table
 
 #### nvarchar(128)
 
-#### int
-
 #### nvarchar(128)
-
-#### int
 
 #### nchar(2)
 
 #### varbinary(MAX)
 
-```sql
-status
-```
+`status`
 
 ```sql
 0
@@ -113,30 +105,16 @@ status
 3
 ```
 
-```sql
-priority
-```
+`priority`
 
-```sql
-queuing_order
-```
+`queuing_order`
 
-```sql
-conversation_group_id
-```
+`conversation_group_id`
 
-```sql
-conversation_handle
-```
+`conversation_handle`
 
-```sql
-message_sequence_number
-```
+`message_sequence_number`
 
-```sql
-service_name
-```
+`service_name`
 
-```sql
-service_id
-```
+`service_id`

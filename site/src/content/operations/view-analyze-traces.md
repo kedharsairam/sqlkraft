@@ -93,20 +93,16 @@ events had
 
 excessive wait time, execute the following:
 
-SQL
-
 ```cmd
 .log
 .log
-.log
-trace.txt
+.log trace.txt
 SELECT
 TextData,
 Duration
 ,
 CPU
-FROM
-trace_table_name
+FROM trace_table_name
 WHERE
 EventClass = 12
 ```

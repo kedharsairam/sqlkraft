@@ -14,6 +14,4 @@ SQL Server 2017 (14.x) and later versions SQL database in Microsoft Fabric Retur
 
 ## Syntax
 
-```sql
-execute_action_start_time
-```
+`execute_action_start_time`

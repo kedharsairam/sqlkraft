@@ -39,8 +39,6 @@ SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
 
-SQL
-
 database in Microsoft Fabric
 
 A
@@ -57,23 +55,17 @@ instance with SRID 23 and two points:
 
 one point with the coordinates (2, 3), one point with the coordinates (7, 8), and a Z value of 9.5.
 
-SQL
-
 The following example expresses the
 
 instance using
 
 .
 
-SQL
-
 The following example uses the method
 
 to retrieve a description of the first
 
 point in the collection.
-
-SQL
 
 ```sql
 geometry MultiPoint

@@ -59,36 +59,16 @@ The search condition must evaluate to a Boolean expression and can't reference a
 
 table.
 
-
-
 Expand table
 
-### text
+`NULL`
 
-### ntext
+`CURRENT_TIMESTAMP`
 
-### image
+`CURRENT_USER`
 
-```sql
-NULL
-```
+`SESSION_USER`
 
-```sql
-CURRENT_TIMESTAMP
-```
+`SYSTEM_USER`
 
-```sql
-CURRENT_USER
-```
-
-```sql
-SESSION_USER
-```
-
-```sql
-SYSTEM_USER
-```
-
-```sql
-USER
-```
+`USER`

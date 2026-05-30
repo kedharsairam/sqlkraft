@@ -67,8 +67,6 @@ example is
 
 omit the schema name, the default schema for the database user is used.
 
-SQL
-
 There are two options for indexing a UDT column:
 
 In this case, if the UDT is binary-ordered, you can create an index
@@ -94,17 +92,13 @@ CREATE TABLE
 Points
 ID
 PointValue
-Point
-dbo
+Point dbo
 CREATE INDEX
 CREATE
-TABLE
-dbo.Points
-(
+TABLE dbo.Points (
 ID
 INT
-IDENTITY
-(1, 1) PRIMARY
+IDENTITY (1, 1) PRIMARY
 KEY
 ,
 PointValue Point

@@ -102,8 +102,5 @@ applications.
 ```cmd
 sqlpackage
 C:\Program Files\Microsoft SQL
-Server\170\DAC\bin
-windows-latest
-ubuntu-22.04
-ubuntu-24.04
+Server\170\DAC\bin windows-latest ubuntu-22.04 ubuntu-24.04
 ```

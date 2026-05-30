@@ -29,8 +29,6 @@ The following example generates 4,097 (2
 
 - 1. grouping sets and then fails.
 
-SQL
-
 The following example generates 4,097 (2
 
 - 1. groups and then fails. Both
@@ -43,15 +41,11 @@ grouping set produce a grand total row and duplicate grouping sets aren't
 
 eliminated.
 
-SQL
-
 This example uses the backward compatible syntax. It generates 8,192 (2
 
 ) grouping sets
 
 and then fails.
-
-SQL
 
 For backward compatible
 
@@ -109,8 +103,6 @@ Supported for
 
 13
 
-
-
 Expand table
 
 1
@@ -121,13 +113,9 @@ Expand table
 GROUP BY
 ```
 
-```sql
-ROLLUP
-```
+`ROLLUP`
 
-```sql
-CUBE
-```
+`CUBE`
 
 ```sql
 GROUPING SETS
@@ -149,13 +137,9 @@ CUBE ()
 GROUP BY
 ```
 
-```sql
-CUBE
-```
+`CUBE`
 
-```sql
-ROLLUP
-```
+`ROLLUP`
 
 ```sql
 GROUP
@@ -166,21 +150,15 @@ BY
 GROUP BY
 ```
 
-```sql
-CUBE
-```
+`CUBE`
 
-```sql
-ROLLUP
-```
+`ROLLUP`
 
 ```sql
 GROUP BY
 ```
 
-```sql
-DISTINCT
-```
+`DISTINCT`
 
 ```sql
 WITH CUBE
@@ -204,9 +182,7 @@ ROLLUP
 GROUPING SETS
 ```
 
-```sql
-CUBE
-```
+`CUBE`
 
 ```sql
 GROUP BY GROUPING SETS( CUBE(a1, ..., a12), b)

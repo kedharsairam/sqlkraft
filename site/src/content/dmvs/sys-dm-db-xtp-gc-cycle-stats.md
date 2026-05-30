@@ -13,18 +13,10 @@ Outputs the current state of committed transactions that deleted one or more row
 
 ## Code Blocks
 
-```sql
-cycle_id
-```
+`cycle_id`
 
-```sql
-ticks_at_cycle_start
-```
+`ticks_at_cycle_start`
 
-```sql
-ticks_at_cycle_end
-```
+`ticks_at_cycle_end`
 
-```sql
-base_generation
-```
+`base_generation`

@@ -7,17 +7,11 @@ tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-### xml
-
 ### insert
 
 ### delete
 
 ### replace value of
-
-### xml
-
-### xml
 
 ### modify()
 
@@ -29,27 +23,15 @@ pubDate: 2026-05-29
 
 ### xml:base
 
-### xml
-
 ### xsi:nil
 
 ### xsi:type
 
-### xml
-
 ### xml:base
-
-### xml
 
 ### xsi:nil
 
-### xml
-
-### xml
-
 ### xs:type
-
-### xml
 
 Article
 

@@ -78,7 +78,6 @@ Use CLR integration instead.
 Important
 
 ```sql
-void * srv_alloc ( DBINT
-size
+void * srv_alloc ( DBINT size
 );
 ```

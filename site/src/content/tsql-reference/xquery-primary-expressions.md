@@ -56,8 +56,6 @@ and
 
 characters have special meaning.
 
-
-
 Expand table
 
 ７

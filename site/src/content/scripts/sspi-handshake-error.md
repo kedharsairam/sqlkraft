@@ -13,8 +13,7 @@ pubDate: 2025-03-15
 
 --1) SSPI handshake failed: We get this when the user is not authenticated.
 
---From the client machine to verify if domain connectivity is good we can run
-nltest /SC_QUERY:YourDomainName
+--From the client machine to verify if domain connectivity is good we can run nltest /SC_QUERY:YourDomainName
 
 --Go to event viewer and under SYSTEM, filter for NETLOGON events and see if there are any connection failures.
 

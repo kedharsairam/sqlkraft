@@ -43,8 +43,6 @@ Alter an endpoint to set the state to
 
 .
 
-SQL
-
 How to: Activate Service Broker networking (Transact-SQL)
 
 How to: Deactivate Service Broker networking (Transact-SQL)
@@ -73,8 +71,7 @@ and security, see
 STARTED
 STARTED
 STARTED
-USE
-master
+USE master
 ;
 GO
 ALTER

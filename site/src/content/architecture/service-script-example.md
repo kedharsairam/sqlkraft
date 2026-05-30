@@ -43,8 +43,6 @@ the service itself. This script should be run only in a database that implements
 
 service.
 
-SQL
-
 ７
 
 Note

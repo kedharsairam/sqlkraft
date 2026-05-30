@@ -82,6 +82,4 @@ for your data, see
 
 .
 
-```sql
-BUCKET_COUNT
-```
+`BUCKET_COUNT`

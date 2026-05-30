@@ -86,6 +86,4 @@ Memory-Optimized Tables
 
 .
 
-```sql
-UNIQUE
-```
+`UNIQUE`

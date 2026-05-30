@@ -53,8 +53,6 @@ as an instance of
 .
 
 ```sql
-xdt:untypedAtomic
-fn:data ($arg as item()*) as xdt:untyped
-A
-tomic*
+xdt:untypedAtomic fn:data ($arg as item()*) as xdt:untyped
+A tomic*
 ```

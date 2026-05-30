@@ -37,8 +37,6 @@ type column, the column
 
 content is inserted as a text node, as shown in the following example:
 
-SQL
-
 This is the result:
 
 XML
@@ -50,8 +48,6 @@ type, the corresponding XML tree is inserted. For example, the following
 query specifies "\*" for the column name that contains the XML returned by the XQuery against
 
 the Instructions column.
-
-SQL
 
 ```sql
 USE
@@ -103,8 +99,7 @@ MI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelManuInstructions"
 /MI:root/MI:Location
 '
-)
-as
+) as
 "*"
 FROM
 Production.ProductModel

@@ -35,8 +35,7 @@ The system_health session writes to an in-memory **ring_buffer** target. Each ev
 
 ```sql
 -- Read the system_health ring buffer and parse into a relational rowset
-SELECT
-    x.event_data.value('(event/@name)[1]', 'varchar(50)') AS event_name,
+SELECT x.event_data.value('(event/@name)[1]', 'varchar(50)') AS event_name,
     x.event_data.value('(event/@package)[1]', 'varchar(50)') AS event_package,
     x.event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_timestamp,
     x.event_data.value('(event/data[@name="category"]/text)[1]', 'int') AS error_category,
@@ -44,8 +43,7 @@ SELECT
     x.event_data.value('(event/data[@name="severity"]/value)[1]', 'int') AS error_severity,
     x.event_data.value('(event/data[@name="message"]/value)[1]', 'nvarchar(4000)') AS error_message,
     CAST(x.event_data.query('.').value('.', 'nvarchar(max)') AS XML) AS raw_event_xml
-FROM
-(
+FROM (
     SELECT CAST(st.target_data AS XML) AS session_target_data
     FROM sys.dm_xe_session_targets AS st
     INNER JOIN sys.dm_xe_sessions AS s
@@ -61,13 +59,11 @@ ORDER BY x.event_data.value('(event/@timestamp)[1]', 'datetime2') DESC;
 
 ```sql
 -- Retrieve the most recent critical errors (severity ≥ 17) from system_health
-SELECT TOP 50
-    x.event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_time,
+SELECT TOP 50 x.event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_time,
     x.event_data.value('(event/data[@name="error_number"]/value)[1]', 'int') AS error_number,
     x.event_data.value('(event/data[@name="severity"]/value)[1]', 'int') AS severity,
     x.event_data.value('(event/data[@name="message"]/value)[1]', 'nvarchar(4000)') AS error_message
-FROM
-(
+FROM (
     SELECT CAST(target_data AS XML) AS session_target_data
     FROM sys.dm_xe_session_targets
     WHERE event_session_address = (
@@ -84,13 +80,11 @@ ORDER BY event_time DESC;
 
 ```sql
 -- Find scheduler monitor detections — indicates non-yielding Scheduler or long-running tasks
-SELECT
-    x.event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_time,
+SELECT x.event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_time,
     x.event_data.value('(event/data[@name="scheduler_address"]/value)[1]', 'varchar(50)') AS scheduler_address,
     x.event_data.value('(event/data[@name="non_yielding_waits"]/value)[1]', 'int') AS non_yielding_waits,
     x.event_data.value('(event/data[@name="non_yielding_yields"]/value)[1]', 'int') AS non_yielding_yields
-FROM
-(
+FROM (
     SELECT CAST(target_data AS XML) AS target_data
     FROM sys.dm_xe_session_targets
     WHERE event_session_address = (
@@ -106,8 +100,7 @@ ORDER BY event_time DESC;
 
 ```sql
 -- Verify the system_health session is running and review its configuration
-SELECT
-    s.name,
+SELECT s.name,
     s.[status],
     s.total_regular_buffers,
     s.regular_buffer_size,
@@ -135,14 +128,12 @@ ADD EVENT sqlserver.xml_deadlock_report,
 ADD EVENT sqlserver.scheduler_monitor_system_health_ring_buffer_recorded,
 ADD EVENT sqlserver.memory_broker_ring_buffer_recorded,
 ADD EVENT sqlserver.connectivity_ring_buffer_recorded
-ADD TARGET package0.event_file
-(
+ADD TARGET package0.event_file (
     SET filename = N'C:\XELog\persistent_system_health.xel',
         max_file_size = 100,
         max_rollover_files = 10
 )
-WITH
-(
+WITH (
     MAX_MEMORY = 4096 KB,
     EVENT_RETENTION_MODE = ALLOW_SINGLE_EVENT_LOSS,
     MAX_DISPATCH_LATENCY = 30 SECONDS,

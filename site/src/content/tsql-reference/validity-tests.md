@@ -77,11 +77,7 @@ The author created this article with assistance from AI.
 
 Learn more
 
-
-
 Expand table
-
-
 
 Expand table
 

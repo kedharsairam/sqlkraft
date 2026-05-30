@@ -47,8 +47,6 @@ statement retrieves the data from the
 
 table.
 
-SQL
-
 Here's the result set.
 
 XML
@@ -68,54 +66,41 @@ CREATE
 TABLE
 T (
 c1
-INT
-identity
+INT identity
 PRIMARY
 KEY
 ,
 c2
-VARCHAR
-(100)
+VARCHAR (100)
 );
 GO
 INSERT
 T (c2)
-VALUES
-(
+VALUES (
 'Special character 0xD for carriage return '
 +
-CONVERT
-(
-VARCHAR
-(10), 0xD) +
+CONVERT (
+VARCHAR (10), 0xD) +
 '
 after carriage return'
 );
 INSERT
 T (c2)
-VALUES
-(
+VALUES (
 'Special character 0x9 for tab '
 +
-CONVERT
-(
-VARCHAR
-(10), 0x9) +
-' after
-tab'
+CONVERT (
+VARCHAR (10), 0x9) +
+' after tab'
 );
 INSERT
 T (c2)
-VALUES
-(
+VALUES (
 'Special character 0xA for line feed '
 +
-CONVERT
-(
-VARCHAR
-(10), 0xA) +
-' after
-line feed'
+CONVERT (
+VARCHAR (10), 0xA) +
+' after line feed'
 );
 GO
 SELECT
@@ -127,30 +112,25 @@ XML
 AUTO
 ;
 GO
-<T
-c1
+<T c1
 =
 "1"
 c2
 =
-"Special character 0xD for carriage return
-after carriage return"
+"Special character 0xD for carriage return after carriage return"
 />
-<T
-c1
+<T c1
 =
 "2"
 c2
 =
 "Special character 0x9 for tab     after tab"
 />
-<T
-c1
+<T c1
 =
 "3"
 c2
 =
-"Special character 0xA for line feed
-after line feed"
+"Special character 0xA for line feed after line feed"
 />
 ```

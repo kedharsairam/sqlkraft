@@ -32,7 +32,6 @@ N
 ### Example 1
 
 ```sql
-EXECUTE
-sp_helpdbfixedrole;
+EXECUTE sp_helpdbfixedrole;
 GO
 ```

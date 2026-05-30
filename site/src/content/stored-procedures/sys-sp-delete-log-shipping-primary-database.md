@@ -14,70 +14,48 @@ This stored procedure removes log shipping of primary database including backup 
 
 ## Syntax
 
-```sql
-sp_delete_log_shipping_primary_secondary
-```
+`sp_delete_log_shipping_primary_secondary`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sp_delete_log_shipping_primary_database
-```
+`sp_delete_log_shipping_primary_database`
 
 ### Example 2
 
-```sql
-master
-```
+`master`
 
 ### Example 3
 
-```sql
-log_shipping_monitor_primary
-```
+`log_shipping_monitor_primary`
 
 ### Example 4
 
-```sql
-log_shipping_monitor_history_detail
-```
+`log_shipping_monitor_history_detail`
 
 ### Example 5
 
-```sql
-log_shipping_monitor_error_detail
-```
+`log_shipping_monitor_error_detail`
 
 ### Example 6
 
-```sql
-log_shipping_monitor_primary
-```
+`log_shipping_monitor_primary`
 
 ### Example 7
 
-```sql
-log_shipping_monitor_history_detail
-```
+`log_shipping_monitor_history_detail`
 
 ### Example 8
 
-```sql
-log_shipping_monitor_error_detail
-```
+`log_shipping_monitor_error_detail`
 
 ### Example 9
 
-```sql
-log_shipping_primary_databases
-```
+`log_shipping_primary_databases`
 
 ### Example 10
 
-```sql
-sp_delete_log_shipping_alert_job
-```
+`sp_delete_log_shipping_alert_job`
 
 _(... and 3 more examples)_

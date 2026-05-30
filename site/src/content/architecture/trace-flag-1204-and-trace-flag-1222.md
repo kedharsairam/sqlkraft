@@ -506,37 +506,23 @@ SPID:<x> ECID:<y>
 <y>
 ```
 
-```sql
-Node
-```
+`Node`
 
-```sql
-Lists
-```
+`Lists`
 
 ```sql
 deadlock victim
 ```
 
-```sql
-executionstack
-```
+`executionstack`
 
-```sql
-BatchID
-```
+`BatchID`
 
-```sql
-sbid
-```
+`sbid`
 
-```sql
-Mode
-```
+`Mode`
 
-```sql
-IS
-```
+`IS`
 
 ```sql
 S
@@ -546,13 +532,9 @@ S
 U
 ```
 
-```sql
-IX
-```
+`IX`
 
-```sql
-SIX
-```
+`SIX`
 
 ```sql
 X
@@ -562,17 +544,13 @@ X
 Line #
 ```
 
-```sql
-line
-```
+`line`
 
 ```sql
 Input Buf
 ```
 
-```sql
-inputbuf
-```
+`inputbuf`
 
 ```sql
 Grant List
@@ -590,21 +568,13 @@ Wait List
 Statement Type
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 Victim Resource
@@ -615,69 +585,39 @@ Owner
 Next Branch
 ```
 
-```sql
-priority
-```
+`priority`
 
-```sql
-logused
-```
+`logused`
 
 ```sql
 owner id
 ```
 
-```sql
-status
-```
+`status`
 
-```sql
-waitresource
-```
+`waitresource`
 
-```sql
-waittime
-```
+`waittime`
 
-```sql
-schedulerid
-```
+`schedulerid`
 
-```sql
-hostname
-```
+`hostname`
 
-```sql
-isolationlevel
-```
+`isolationlevel`
 
-```sql
-Xactid
-```
+`Xactid`
 
-```sql
-currentdb
-```
+`currentdb`
 
-```sql
-lastbatchstarted
-```
+`lastbatchstarted`
 
-```sql
-lastbatchcompleted
-```
+`lastbatchcompleted`
 
-```sql
-clientoption1
-```
+`clientoption1`
 
-```sql
-clientoption2
-```
+`clientoption2`
 
-```sql
-SET
-```
+`SET`
 
 ```sql
 SET
@@ -688,13 +628,9 @@ NOCOUNT
 SET XACTABORT
 ```
 
-```sql
-associatedObjectId
-```
+`associatedObjectId`
 
-```sql
-RID
-```
+`RID`
 
 ```sql
 db_id:file_id:page_no:row_no
@@ -704,13 +640,9 @@ db_id:file_id:page_no:row_no
 RID: 6:1:20789:0
 ```
 
-```sql
-OBJECT
-```
+`OBJECT`
 
-```sql
-OBJECT
-```
+`OBJECT`
 
 ```sql
 OBJECT:
@@ -722,9 +654,7 @@ TAB:
 6:2009058193
 ```
 
-```sql
-KEY
-```
+`KEY`
 
 ```sql
 db_id:hobt_id
@@ -735,13 +665,9 @@ KEY:
 6:72057594057457664 (350007a4d329)
 ```
 
-```sql
-PAG
-```
+`PAG`
 
-```sql
-PAG
-```
+`PAG`
 
 ```sql
 PAG:
@@ -752,13 +678,9 @@ db_id:file_id:page_no
 PAG: 6:1:20789
 ```
 
-```sql
-EXT
-```
+`EXT`
 
-```sql
-EXT
-```
+`EXT`
 
 ```sql
 EXT:

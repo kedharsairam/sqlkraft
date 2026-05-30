@@ -7,42 +7,6 @@ tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
 
-### datetime
-
-### time
-
-### date
-
-### datetime2
-
-### datetimeoffset
-
-### time
-
-### datetime2
-
-### datetimeoffset
-
-### datetimeoffset
-
-#### Property
-
-#### Value
-
-#### Usage
-
-#### Default string literal formats (used
-
-#### for down-level client)
-
-#### Date range
-
-#### Time range
-
-#### Time zone offset range
-
-#### Element ranges
-
 Applies to:
 
 SQL Server
@@ -133,23 +97,7 @@ minute.
 
 ## Description
 
-
-
 Expand table
-
-#### Property
-
-#### Value
-
-#### Character length
-
-#### Storage size
-
-#### Accuracy
-
-#### Default value
-
-#### Calendar
 
 #### User-defined fractional second
 
@@ -159,24 +107,14 @@ Expand table
 
 #### preservation
 
-#### Daylight saving aware
-
-### datetime
-
-### datetime
-
-```sql
-DATETIME
-```
+`DATETIME`
 
 ```sql
 DECLARE @MyDatetime DATETIME;
 CREATE TABLE Table1 (Column1 DATETIME);
 ```
 
-```sql
-yyyy
-```
+`yyyy`
 
 ```sql
 1753
@@ -186,9 +124,7 @@ yyyy
 9999
 ```
 
-```sql
-MM
-```
+`MM`
 
 ```sql
 01
@@ -198,9 +134,7 @@ MM
 12
 ```
 
-```sql
-dd
-```
+`dd`
 
 ```sql
 01
@@ -210,9 +144,7 @@ dd
 31
 ```
 
-```sql
-HH
-```
+`HH`
 
 ```sql
 00
@@ -222,9 +154,7 @@ HH
 23
 ```
 
-```sql
-mm
-```
+`mm`
 
 ```sql
 00

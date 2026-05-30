@@ -14,29 +14,21 @@ Returns the names and values for a specified set of properties about a The resul
 
 ## Syntax
 
-```sql
-sp_help_spatial_geography_index
-```
+`sp_help_spatial_geography_index`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sp_help_spatial_geography_index
-```
+`sp_help_spatial_geography_index`
 
 ### Example 2
 
-```sql
-SIndx_SpatialTable_geography_col2
-```
+`SIndx_SpatialTable_geography_col2`
 
 ### Example 3
 
-```sql
-geography_col
-```
+`geography_col`
 
 ### Example 4
 
@@ -69,8 +61,7 @@ GEOGRAPHY =
 'POLYGON((-90.0 -180, -90 180.0, 90 180.0, 90 -180, -90
 -180.0))'
 ;
-EXECUTE
-sp_help_spatial_geography_index
+EXECUTE sp_help_spatial_geography_index
 'geography_col'
 ,
 'SIndx_SpatialTable_geography_col2'

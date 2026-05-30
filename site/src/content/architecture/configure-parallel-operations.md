@@ -95,6 +95,4 @@ information, see
 
 .
 
-```sql
-MAXDOP
-```
+`MAXDOP`

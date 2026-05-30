@@ -89,11 +89,8 @@ currently exists in a database, the change data capture can't be
 
 enabled for the database until the schema and/or user is dropped or renamed.
 
-SQL
-
 ```sql
-sysadmin
-sys.databases
+sysadmin sys.databases
 -- ====
 -- Enable Database for CDC
 -- ====

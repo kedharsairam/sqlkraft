@@ -70,8 +70,5 @@ MSBuild Command-Line Reference
 .
 
 ```cmd
-msbuild.binlog
-dotnet build -bl
-dotnet build -flp:v=diag
-dotnet build -bl -flp:v=diag
+msbuild.binlog dotnet build -bl dotnet build -flp:v=diag dotnet build -bl -flp:v=diag
 ```

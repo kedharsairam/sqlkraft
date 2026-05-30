@@ -86,7 +86,5 @@ objects in
 system databases.
 
 ```cmd
-master
-msdb
-model
+master msdb model
 ```

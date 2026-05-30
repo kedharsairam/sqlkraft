@@ -21,8 +21,7 @@ Indicates whether the corresponding stored procedure is encrypted. 0 = not encry
 ## Syntax
 
 ```sql
-sys.dm_exec_text_query_plan
-(
+sys.dm_exec_text_query_plan (
 plan_handle
 , { statement_start_offset | 0 | DEFAULT }
 , { statement_end_offset | -1 | DEFAULT }

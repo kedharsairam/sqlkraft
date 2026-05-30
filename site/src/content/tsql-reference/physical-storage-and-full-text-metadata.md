@@ -75,11 +75,7 @@ FILEGROUP_ID
 
 ## Returns a filegroup's ID.
 
-
-
 Expand table
-
-
 
 Expand table
 

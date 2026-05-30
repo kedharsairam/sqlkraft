@@ -8,8 +8,7 @@ pubDate: 2025-03-15
 ---
 
 ```sql
---for a specific database
-dbcc loginfo
+--for a specific database dbcc loginfo
 
 --for all databases
 SELECT [name], s.database_id,

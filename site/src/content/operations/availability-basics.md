@@ -92,8 +92,5 @@ if you know the
 SQL Server availability options for Linux
 
 ```cmd
-bash
-su
-su
-root
+bash su su root
 ```

@@ -58,12 +58,6 @@ Holds LOB data pages, used by data types such as
 
 ROW_OVERFLOW_DATA
 
-### varchar
-
-### nvarchar
-
-### varbinary
-
 Holds LOB data pages used by variable length data types such as
 
 ,
@@ -124,22 +118,12 @@ change. Compatibility isn't guaranteed. This view isn't available in Azure SQL D
 
 ### DCM pages
 
-```sql
-IN_ROW_DATA
-```
+`IN_ROW_DATA`
 
-```sql
-LOB_DATA
-```
+`LOB_DATA`
 
-```sql
-ROW_OVERFLOW_DATA
-```
+`ROW_OVERFLOW_DATA`
 
-```sql
-sys.system_internals_allocation_units
-```
+`sys.system_internals_allocation_units`
 
-```sql
-sys.system_internals_allocation_units
-```
+`sys.system_internals_allocation_units`

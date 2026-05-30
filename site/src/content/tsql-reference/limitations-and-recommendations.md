@@ -96,7 +96,6 @@ state, and changes are not allowed on the databases.
 ```sql
 DROP
 AVAILABILITY
-GROUP
-group_name
+GROUP group_name
 [ ; ]
 ```

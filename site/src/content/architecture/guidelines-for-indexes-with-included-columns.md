@@ -88,10 +88,6 @@ columns is 1,023. This is the maximum number of table columns minus 1.
 
 ### Index Seek
 
-```sql
-INCLUDE
-```
+`INCLUDE`
 
-```sql
-INCLUDE
-```
+`INCLUDE`

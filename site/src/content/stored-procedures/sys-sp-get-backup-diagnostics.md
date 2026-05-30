@@ -36,11 +36,9 @@ The following example returns all the analytical events logged for the past 30 m
 ## Syntax
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-managed_backup.sp_get_backup_diagnostics
+EXECUTE managed_backup.sp_get_backup_diagnostics
 @xevent_channel =
 'Admin'
 ,
@@ -50,11 +48,9 @@ managed_backup.sp_get_backup_diagnostics
 @end_time =
 '2022-06-10'
 ;
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-managed_backup.sp_get_backup_diagnostics @xevent_channel =
+EXECUTE managed_backup.sp_get_backup_diagnostics @xevent_channel =
 'Analytic'
 ;
 ```

@@ -13,8 +13,7 @@ DECLARE @NonSaDBs  TABLE (
     DBOwner NVARCHAR(128)
 );
 
-INSERT INTO @NonSaDBs (DBName, DBOwner)
-select Name,suser_sname(owner_sid) AS DbOwner from sys.databases
+INSERT INTO @NonSaDBs (DBName, DBOwner) select Name,suser_sname(owner_sid) AS DbOwner from sys.databases
 WHERE suser_sname(owner_sid) <> 'sa'
 
 Declare @subject Varchar(200)

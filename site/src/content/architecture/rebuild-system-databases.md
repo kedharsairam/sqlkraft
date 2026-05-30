@@ -103,26 +103,15 @@ restore the system databases to their current settings.
 
 1. Record all server-wide configuration values.
 
-SQL
-
 2. Record all hotfixes applied to the instance of SQL Server and the current collation. You
 
 must reapply these hotfixes after rebuilding the system databases.
 
-SQL
-
 ```sql
-master
-model
-msdb
-tempdb
-master
-msdb
-model
+master model msdb tempdb master msdb model
 SELECT
 *
-FROM
-sys.configurations;
+FROM sys.configurations;
 SELECT
 SERVERPROPERTY(
 'ProductVersion '

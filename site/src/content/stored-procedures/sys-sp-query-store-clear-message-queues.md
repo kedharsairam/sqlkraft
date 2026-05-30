@@ -14,17 +14,13 @@ Clears all queued (non-persisted) Query Store messages pending for the replica a
 
 ## Syntax
 
-```sql
-sp_query_store_clear_message_queues
-```
+`sp_query_store_clear_message_queues`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sp_query_store_clear_message_queues
-```
+`sp_query_store_clear_message_queues`
 
 ### Example 2
 
@@ -48,6 +44,5 @@ sp_query_store_clear_message_queues
 ### Example 5
 
 ```sql
-EXECUTE
-sp_query_store_clear_message_queues;
+EXECUTE sp_query_store_clear_message_queues;
 ```

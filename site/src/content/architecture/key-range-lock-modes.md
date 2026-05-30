@@ -100,25 +100,15 @@ update scan.
 
 Expand table
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 BETWEEN 'AAA' AND 'CZZ'
@@ -131,9 +121,7 @@ RangeS-
 S
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
 ```sql
 RangeS
@@ -142,6 +130,4 @@ RangeS-
 U
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`

@@ -79,35 +79,21 @@ UNION ALL
 UNION ALL
 ```
 
-```sql
-MAXRECURSION
-```
+`MAXRECURSION`
+
+`OPTION`
+
+`INSERT`
+
+`UPDATE`
+
+`DELETE`
+
+`SELECT`
 
 ```sql
-OPTION
-```
-
-```sql
-INSERT
-```
-
-```sql
-UPDATE
-```
-
-```sql
-DELETE
-```
-
-```sql
-SELECT
-```
-
-```sql
-WITH
-cte_name ( column_name [ ,...n ] )
-AS
-(
+WITH cte_name ( column_name [ ,...n ] )
+AS (
 CTE
 _query_definition
 -- Anchor member is defined.

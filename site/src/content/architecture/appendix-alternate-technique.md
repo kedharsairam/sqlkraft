@@ -70,8 +70,4 @@ performance.
 
 Expand table
 
-### char
-
-```sql
-TransactionID
-```
+`TransactionID`

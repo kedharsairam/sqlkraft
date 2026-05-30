@@ -14,9 +14,7 @@ Azure SQL Database Azure SQL Managed Instance Azure Synapse Analytics Analytics 
 
 ## Syntax
 
-```sql
-sys.dm_db_persisted_sku_features
-```
+`sys.dm_db_persisted_sku_features`
 
 ## Remarks
 

@@ -264,8 +264,7 @@ ALTER DATABASE SCOPED CONFIGURATION CLEAR PROCEDURE_CACHE
 
 ```sql
 SQL Server has encountered %d occurrence(s) of cachestore flush for the '%s'
-cachestore (part of plan cache) due to some database maintenance or reconfigure
-operations.
+cachestore (part of plan cache) due to some database maintenance or reconfigure operations.
 ```
 
 ```sql
@@ -284,37 +283,23 @@ ALTER PROCEDURE
 UPDATE STATISTICS
 ```
 
-```sql
-sp_recompile
-```
+`sp_recompile`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 WITH RECOMPILE
 ```
 
-```sql
-sql_statement_recompile
-```
+`sql_statement_recompile`
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
-```sql
-recompile_cause
-```
+`recompile_cause`
 
-```sql
-sql_statement_recompile
-```
+`sql_statement_recompile`
 
 ```sql
 FOR BROWSE
@@ -336,9 +321,7 @@ SP:Recompile
 SQL:StmtRecompile
 ```
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
 ```sql
 SP:Recompile
@@ -348,38 +331,22 @@ SP:Recompile
 SQL:StmtRecompile
 ```
 
-```sql
-AUTO_UPDATE_STATISTICS
-```
+`AUTO_UPDATE_STATISTICS`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-AUTO_UPDATE_STATISTICS
-```
+`AUTO_UPDATE_STATISTICS`
 
-```sql
-OFF
-```
+`OFF`
 
 ```sql
 INSTEAD OF
 ```
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-AUTO_UPDATE_STATISTICS
-```
+`AUTO_UPDATE_STATISTICS`
 
-```sql
-tempdb
-```
+`tempdb`

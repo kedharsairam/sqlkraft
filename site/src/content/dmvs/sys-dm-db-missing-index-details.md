@@ -14,6 +14,4 @@ SQL database in Microsoft Fabric Returns detailed information about missing inde
 
 ## Syntax
 
-```sql
-sys.dm_db_missing_index_details
-```
+`sys.dm_db_missing_index_details`

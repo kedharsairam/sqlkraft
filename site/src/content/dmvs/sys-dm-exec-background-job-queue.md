@@ -14,9 +14,7 @@ Analytics Platform System (PDW) Returns a row for each query processor job that 
 
 ## Syntax
 
-```sql
-sys.dm_pdw_nodes_exec_background_job_queue
-```
+`sys.dm_pdw_nodes_exec_background_job_queue`
 
 ## Examples
 
@@ -29,17 +27,13 @@ AS
 [
 Database
 ],
-COUNT
-(*)
+COUNT (*)
 AS
 [Active Async Jobs]
-FROM
-sys.dm_exec_background_job_queue
-WHERE
-in_progress = 1
+FROM sys.dm_exec_background_job_queue
+WHERE in_progress = 1
 GROUP
-BY
-database_id;
+BY database_id;
 GO
 ```
 

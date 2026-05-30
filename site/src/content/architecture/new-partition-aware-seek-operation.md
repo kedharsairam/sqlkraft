@@ -54,8 +54,6 @@ accessed and a second-level index seek operation within that operator to return 
 
 these partitions that meet a different condition. For example, consider the following query.
 
-SQL
-
 For this example, assume that table T, defined as
 
 , is partitioned on column a, and
@@ -63,8 +61,6 @@ For this example, assume that table T, defined as
 has a clustered index on column b. The partition boundaries for table T are defined by the
 
 following partition function:
-
-SQL
 
 To solve the query, the query processor performs a first-level seek operation to find every
 
@@ -80,17 +76,11 @@ Server Enterprise, Developer, and Evaluation editions. Starting with SQL Server 
 
 SP1, partitioned tables and indexes are also supported in SQL Server Standard edition.
 
-```sql
-PartitionID
-```
+`PartitionID`
 
-```sql
-PartitionID
-```
+`PartitionID`
 
-```sql
-ID
-```
+`ID`
 
 ```sql
 T(a, b, c)
@@ -104,13 +94,9 @@ T(PartitionID, a, b, c)
 (PartitionID, b)
 ```
 
-```sql
-PartitionID
-```
+`PartitionID`
 
-```sql
-PartitionID
-```
+`PartitionID`
 
 ```sql
 T(a, b, c)
@@ -125,20 +111,15 @@ SELECT
 *
 FROM
 T
-WHERE
-a < 10
-and
-b = 2;
+WHERE a < 10 and b = 2;
 CREATE
 PARTITION
-FUNCTION
-myRangePF1 (
+FUNCTION myRangePF1 (
 int
 )
 AS
 RANGE
 LEFT
 FOR
-VALUES
-(3, 7, 10);
+VALUES (3, 7, 10);
 ```

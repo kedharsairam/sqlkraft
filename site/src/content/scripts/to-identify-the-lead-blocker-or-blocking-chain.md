@@ -16,8 +16,7 @@ INTO #T
 FROM sys.sysprocesses R CROSS APPLY sys.dm_exec_sql_text(R.SQL_HANDLE) T
 GO
 WITH BLOCKERS (SPID, BLOCKED, LEVEL, BATCH)
-AS
-(
+AS (
 SELECT SPID,
 BLOCKED,
 CAST (REPLICATE ('0', 4-LEN (CAST (SPID AS VARCHAR))) + CAST (SPID AS VARCHAR) AS VARCHAR (1000)) AS LEVEL,
@@ -53,8 +52,7 @@ FROM     sys.sysprocesses spr
 GO
 
 WITH BlockingTree (spid, blocking_spid, [level], batch)
-AS
-(
+AS (
     SELECT   blc.spid
             ,blc.blocked
             ,CAST (REPLICATE ('0', 4-LEN (CAST (blc.spid AS VARCHAR))) + CAST (blc.spid AS VARCHAR) AS VARCHAR (1000)) AS [level]
@@ -70,8 +68,7 @@ AS
     FROM     #Blocks AS blc
 		INNER JOIN BlockingTree bt
 			ON	blc.blocked = bt.SPID
-    WHERE   blc.blocked > 0 AND
-			blc.blocked <> blc.SPID
+    WHERE   blc.blocked > 0 AND blc.blocked <> blc.SPID
 )
 SELECT	N'' + ISNULL(REPLICATE (N'|         ', LEN (LEVEL)/4 - 2),'')
         + CASE WHEN (LEN(LEVEL)/4 - 1) = 0 THEN '' ELSE '|------  ' END
@@ -94,11 +91,9 @@ FROM BlockingTree bt
 		ON	spr.spid = bt.spid
 	CROSS APPLY sys.dm_exec_sql_text(spr.SQL_HANDLE) st
 	LEFT JOIN sys.dm_exec_cursors(0) cur
-		ON	cur.session_id = spr.spid AND
-			cur.fetch_status != 0
+		ON	cur.session_id = spr.spid AND cur.fetch_status != 0
 	JOIN sys.syslockinfo sli
-		ON	sli.req_spid = spr.spid AND
-			sli.rsc_type = 5 AND
+		ON	sli.req_spid = spr.spid AND sli.rsc_type = 5 AND
 			OBJECT_NAME(sli.rsc_objid, sli.rsc_dbid) IS NOT NULL
 ORDER BY LEVEL ASC
 ```

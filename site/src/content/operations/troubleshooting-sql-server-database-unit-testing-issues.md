@@ -74,9 +74,5 @@ as follows:
 XML
 
 ```cmd
-app.config
-app.config
-app.config
-app.config
-app.config
+app.config app.config app.config app.config app.config
 ```

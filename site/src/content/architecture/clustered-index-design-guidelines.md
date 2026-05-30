@@ -14,8 +14,6 @@ operator in the query plan is eliminated, making query plan more
 
 efficient.
 
-SQL
-
 After the query is executed again, the following execution plan shows that the
 
 operator is
@@ -53,16 +51,6 @@ can refer either to a clustered index or to a heap. A heap is an
 unsorted
 
 data structure on disk that contains all rows and all columns of a table.
-
-### int
-
-### bigint
-
-### uniqueidentifier
-
-### int
-
-### bigint
 
 ### ever-increasing
 
@@ -202,14 +190,11 @@ NONCLUSTERED
 INDEX
 IX_PurchaseOrderDetail_RejectedQty
 ON
-Purchasing.PurchaseOrderDetail
-(RejectedQty
+Purchasing.PurchaseOrderDetail (RejectedQty
 DESC
 , ProductID
 ASC
 , DueDate, OrderQty);
 ```
 
-```sql
-IDENTITY
-```
+`IDENTITY`

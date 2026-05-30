@@ -14,6 +14,4 @@ Returns information for the registered word-breakers, filter, and protocol handl
 
 ## Syntax
 
-```sql
-sp_help_fulltext_system_components
-```
+`sp_help_fulltext_system_components`

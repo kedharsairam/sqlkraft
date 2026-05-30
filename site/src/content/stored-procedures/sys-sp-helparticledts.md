@@ -14,6 +14,4 @@ Used to get information on the correct custom task names to use when creating a 
 
 ## Syntax
 
-```sql
-pre_script_ignore_error_task_name
-```
+`pre_script_ignore_error_task_name`

@@ -20,8 +20,7 @@ Lists the name and owner of all the databases to which the user has access. Tran
 
 ```sql
 sp_
-MS
-hasdbaccess
+MS hasdbaccess
 [ ; ]
 ```
 

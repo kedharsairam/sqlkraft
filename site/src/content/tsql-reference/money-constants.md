@@ -51,16 +51,6 @@ optional currency symbol as a prefix.
 
 constants aren't enclosed in quotation marks.
 
-### money
-
-### uniqueidentifier
-
-### int
-
-### decimal
-
-### money
-
 ```sql
 1894
 2

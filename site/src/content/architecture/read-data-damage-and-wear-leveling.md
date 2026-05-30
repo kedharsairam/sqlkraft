@@ -78,6 +78,4 @@ CHECKDB
 0xFF
 ```
 
-```sql
-DBCC
-```
+`DBCC`

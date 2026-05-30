@@ -8,8 +8,7 @@ pubDate: 2025-03-15
 ---
 
 ```sql
-DECLARE @intstances TABLE
-( Value nvarchar(100),
+DECLARE @intstances TABLE ( Value nvarchar(100),
 InstanceNames nvarchar(100),
 Data nvarchar(100))
 Insert into @intstances

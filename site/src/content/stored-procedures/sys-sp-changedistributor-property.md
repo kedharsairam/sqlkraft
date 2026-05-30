@@ -17,8 +17,7 @@ SQL Server 2025 (17.x) and later versions. Specifies whether to trust the certif
 ## Syntax
 
 ```sql
-encrypt_distributor_connection
-mandatory
+encrypt_distributor_connection mandatory
 ```
 
 ## Permissions

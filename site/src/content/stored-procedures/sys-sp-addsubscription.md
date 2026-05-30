@@ -227,21 +227,15 @@ The implemented security mode. @security_mode is , with a default of . specifies
 
 ### Example 1
 
-```sql
-Automatic
-```
+`Automatic`
 
 ### Example 2
 
-```sql
-sp_addsubscription
-```
+`sp_addsubscription`
 
 ### Example 3
 
-```sql
-sp_addsubscription
-```
+`sp_addsubscription`
 
 ### Example 4
 
@@ -253,16 +247,13 @@ sp_addsubscription
 -- "Programming Replication Using System Stored Procedures".
 DECLARE
 @publication
-AS
-sysname;
+AS sysname;
 DECLARE
 @subscriber
-AS
-sysname;
+AS sysname;
 DECLARE
 @subscriptionDB
-AS
-sysname;
+AS sysname;
 SET
 @publication = N
 'AdvWorksProductTran'

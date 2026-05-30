@@ -15,8 +15,6 @@ database roles.
 
 The following example shows a DROP INDEX statement.
 
-SQL
-
 Selective XML Indexes (SXI)
 
 Create, Alter, and Drop Selective XML Indexes
@@ -27,8 +25,6 @@ See Also
 
 ```sql
 DROP
-INDEX
-sxi_index
-ON
-tbl;
+INDEX sxi_index
+ON tbl;
 ```

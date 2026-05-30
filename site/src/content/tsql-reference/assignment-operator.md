@@ -35,8 +35,6 @@ to a value
 
 returned by an expression.
 
-SQL
-
 The assignment operator can also be used to establish the relationship between a column
 
 heading and the expression that defines the values for the column. The following example
@@ -59,8 +57,6 @@ table is listed in the
 
 column heading.
 
-SQL
-
 Operators (Transact-SQL)
 
 Compound Operators (Transact-SQL)
@@ -79,29 +75,17 @@ See Also
 @MyCounter
 ```
 
-```sql
-FirstColumnHeading
-```
+`FirstColumnHeading`
 
-```sql
-SecondColumnHeading
-```
+`SecondColumnHeading`
 
-```sql
-xyz
-```
+`xyz`
 
-```sql
-FirstColumnHeading
-```
+`FirstColumnHeading`
 
-```sql
-Product
-```
+`Product`
 
-```sql
-SecondColumnHeading
-```
+`SecondColumnHeading`
 
 ```sql
 DECLARE

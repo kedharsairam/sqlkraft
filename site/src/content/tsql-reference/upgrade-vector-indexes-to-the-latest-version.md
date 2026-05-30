@@ -53,8 +53,6 @@ versions.
 
 Use the following query to identify vector indexes that require migration:
 
-SQL
-
 ）
 
 Important
@@ -91,8 +89,6 @@ Vector indexes created using an earlier format can't be upgraded in place. To en
 
 DiskANN capabilities, drop and recreate the index.
 
-SQL
-
 How to interpret the results
 
 ２
@@ -109,11 +105,7 @@ Drop the existing index
 
 ## Step 3: Verify the index version
 
-SQL
-
 After recreation, verify the index is using the latest version:
-
-SQL
 
 The
 
@@ -150,18 +142,14 @@ use the latest DiskANN format. No additional options or flags are required.
 ### Manual TOP_N tuning
 
 ```sql
-SELECT
-i.name
-AS
-index_name,
+SELECT i.name
+AS index_name,
 t.name
-AS
-table_name,
+AS table_name,
 JSON_VALUE(v.build_parameters,
 '$.Version'
 )
-AS
-index_version,
+AS index_version,
 ```
 
 ```sql
@@ -183,66 +171,44 @@ THEN
 ELSE
 'Unknown format'
 END
-AS
-migration_status
-FROM
-sys.vector_indexes
-AS
-v
+AS migration_status
+FROM sys.vector_indexes
+AS v
 INNER
-JOIN
-sys.indexes
-AS
-i
-ON
-v.object_id = i.object_id
-AND
-v.index_id = i.index_id
+JOIN sys.indexes
+AS i
+ON v.object_id = i.object_id
+AND v.index_id = i.index_id
 INNER
-JOIN
-sys.tables
-AS
-t
-ON
-v.object_id = t.object_id
+JOIN sys.tables
+AS t
+ON v.object_id = t.object_id
 ORDER
-BY
-t.name, i.name;
+BY t.name, i.name;
 ```
 
-```sql
-index_version
-```
+`index_version`
 
 ```sql
 3
 ```
 
-```sql
-TOP_N
-```
+`TOP_N`
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
 ```sql
 DROP
-INDEX
-vec_idx
-ON
-dbo.wikipedia_articles;
+INDEX vec_idx
+ON dbo.wikipedia_articles;
 ```
 
 ```sql
 CREATE
 VECTOR
-INDEX
-vec_idx
-ON
-dbo.wikipedia_articles (title_vector)
-WITH
-(
+INDEX vec_idx
+ON dbo.wikipedia_articles (title_vector)
+WITH (
 TYPE
 =
 'DISKANN'
@@ -257,40 +223,26 @@ CREATE VECTOR INDEX
 ```
 
 ```sql
-SELECT
-i.name
-AS
-index_name,
+SELECT i.name
+AS index_name,
 t.name
-AS
-table_name,
+AS table_name,
 JSON_VALUE(v.build_parameters,
 '$.Version'
 )
-AS
-index_version
-FROM
-sys.vector_indexes
-AS
-v
+AS index_version
+FROM sys.vector_indexes
+AS v
 INNER
-JOIN
-sys.indexes
-AS
-i
-ON
-v.object_id = i.object_id
-AND
-v.index_id = i.index_id
+JOIN sys.indexes
+AS i
+ON v.object_id = i.object_id
+AND v.index_id = i.index_id
 INNER
-JOIN
-sys.tables
-AS
-t
-ON
-v.object_id = t.object_id
-WHERE
-i.name =
+JOIN sys.tables
+AS t
+ON v.object_id = t.object_id
+WHERE i.name =
 'vec_idx'
 ;
 ```

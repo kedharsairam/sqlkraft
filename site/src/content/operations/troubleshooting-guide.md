@@ -72,11 +72,7 @@ command as in the following example:
 Tip
 
 ```cmd
-localhost
-localhost
-ifconfig
-ip addr
-sudo ifconfig eth0 | grep
+localhost localhost ifconfig ip addr sudo ifconfig eth0 | grep
 'inet addr'
 sudo ip addr show eth0 | grep
 "inet"

@@ -61,8 +61,6 @@ After the full-text index has been created on the XML column, the following quer
 
 an XML value contains the word "custom" in the title of a book:
 
-SQL
-
 The
 
 method uses the full-text index to subset the XML values that contain the word
@@ -92,12 +90,7 @@ are satisfied.
 However, the query doesn't match the word "customizable" in the title in that the full-text
 
 ```sql
-contains()
-exist()
-contains()
-contains()
-contains()
-contains()
+contains() exist() contains() contains() contains() contains()
 SELECT
 *
 FROM
@@ -106,8 +99,7 @@ WHERE
 CONTAINS(xCol,
 'custom'
 )
-AND
-xCol.exist(
+AND xCol.exist(
 '/book/title/text()[contains(.,"custom")]'
 ) = 1;
 ```

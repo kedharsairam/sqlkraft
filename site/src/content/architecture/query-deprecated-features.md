@@ -60,8 +60,6 @@ Use SQL Server Objects
 
 The values of these counters are also available by executing the following statement:
 
-SQL
-
 Breaking changes to Database Engine features in SQL Server 2019
 
 Discontinued Database Engine functionality in SQL Server
@@ -70,21 +68,15 @@ Last updated on 11/18/2025
 
 Related content
 
-```sql
-deprecation_announcement
-```
+`deprecation_announcement`
 
-```sql
-deprecation_final_support
-```
+`deprecation_final_support`
 
 ```sql
 SELECT
 *
-FROM
-sys.dm_os_performance_counters
-WHERE
-object_name
+FROM sys.dm_os_performance_counters
+WHERE object_name
 LIKE
 '%SQL%Deprecated Features%'
 ;

@@ -72,8 +72,5 @@ Native
 UserDefined
 Microsoft.Data.SqlClient
 Microsoft.Data.SqlClient.SqlDataReader
-SqlClient
-dotnet
-add
-package Microsoft.Data.SqlClient
+SqlClient dotnet add package Microsoft.Data.SqlClient
 ```

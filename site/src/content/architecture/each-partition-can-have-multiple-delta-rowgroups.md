@@ -76,18 +76,10 @@ Switching out and truncating partitions that aren't needed anymore is an efficie
 
 to delete data without introducing fragmentation in the columnstore.
 
-```sql
-OPEN
-```
+`OPEN`
 
-```sql
-CLOSED
-```
+`CLOSED`
 
-```sql
-TOMBSTONE
-```
+`TOMBSTONE`
 
-```sql
-COMPRESSED
-```
+`COMPRESSED`

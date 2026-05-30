@@ -85,12 +85,8 @@ Expand table
 
 ```cmd
 *.<region>.arcdataservices.com
-Edition
-string
-ContainerResourceId
-string
-CreateTime
-string
-VCore
-string
+Edition string
+ContainerResourceId string
+CreateTime string
+VCore string
 ```

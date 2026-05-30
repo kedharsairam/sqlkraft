@@ -14,9 +14,7 @@ A placeholder for the values of extra parameters. Values can only be constants o
 
 ## Syntax
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ## Arguments
 

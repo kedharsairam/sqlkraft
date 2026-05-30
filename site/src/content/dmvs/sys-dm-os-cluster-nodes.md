@@ -32,59 +32,44 @@ FROM sys.dm_os_cluster_nodes;
 
 ### Example 2
 
-```sql
-fn_virtualservernodes
-```
+`fn_virtualservernodes`
 
 ### Example 3
 
-```sql
-fn_virtualservernodes()
-```
+`fn_virtualservernodes()`
 
 ### Example 4
 
 ```sql
-sys.numbered_procedures
-sys.numbered_procedure_parameters
+sys.numbered_procedures sys.numbered_procedure_parameters
 ```
 
 ### Example 5
 
 ```sql
-sys.dm_os_cluster_nodes
-sys.dm_io_cluster_shared_drives
+sys.dm_os_cluster_nodes sys.dm_io_cluster_shared_drives
 ```
 
 ### Example 6
 
 ```sql
-sys.sql_dependencies
-sys.sql_expression_dependencies
-sys.sql_dependencies
+sys.sql_dependencies sys.sql_expression_dependencies sys.sql_dependencies
 ```
 
 ### Example 7
 
-```sql
-sp_db_vardecimal_storage_format
-```
+`sp_db_vardecimal_storage_format`
 
 ### Example 8
 
-```sql
-sp_db_vardecimal_storag
-```
+`sp_db_vardecimal_storag`
 
 ### Example 9
 
-```sql
-sp_estimated_rowsize_reduction_for_vardecimal
-```
+`sp_estimated_rowsize_reduction_for_vardecimal`
 
 ### Example 10
 
 ```sql
-sp_estimate_data_compression_savings
-sp_estimated_rowsize_re
+sp_estimate_data_compression_savings sp_estimated_rowsize_re
 ```

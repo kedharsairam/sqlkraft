@@ -67,15 +67,9 @@ IsNull (geometry Data Type)
 
 These methods perform spatial operations with enhanced capabilities.
 
-
-
 Expand table
 
-
-
 Expand table
-
-
 
 Expand table
 

@@ -55,17 +55,14 @@ OUTPUT
 
 ### Example 1
 
-```sql
-sp_helparticle
-```
+`sp_helparticle`
 
 ### Example 2
 
 ```sql
 DECLARE
 @publication
-AS
-sysname;
+AS sysname;
 SET
 @publication = N
 'AdvWorksProductTran'

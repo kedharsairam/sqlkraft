@@ -108,85 +108,51 @@ locks, are blocked by the
 
 locks.
 
-```sql
-IX
-```
+`IX`
 
-```sql
-SIX
-```
+`SIX`
 
-```sql
-IS
-```
+`IS`
 
-```sql
-SIX
-```
+`SIX`
 
-```sql
-SIX
-```
+`SIX`
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IU
-```
+`IU`
 
-```sql
-IU
-```
+`IU`
 
-```sql
-IU
-```
+`IU`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-SIU
-```
+`SIU`
 
 ```sql
 S
 ```
 
-```sql
-IU
-```
+`IU`
 
-```sql
-PAGLOCK
-```
+`PAGLOCK`
 
-```sql
-PAGLOCK
-```
+`PAGLOCK`
 
 ```sql
 S
 ```
 
-```sql
-IU
-```
+`IU`
 
-```sql
-UIX
-```
+`UIX`
 
 ```sql
 U
 ```
 
-```sql
-IX
-```
+`IX`
 
 ```sql
 Sch-M

@@ -69,8 +69,6 @@ statement, as shown in the
 
 following example:
 
-SQL
-
 You can use a
 
 to create a variable of
@@ -79,15 +77,11 @@ type, as the following example
 
 shows.
 
-SQL
-
 Create a typed
 
 variable by specifying an XML schema collection, as shown in the following
 
 example.
-
-SQL
 
 To pass an
 
@@ -97,37 +91,24 @@ statement, as
 
 shown in the following example.
 
-SQL
-
 ```sql
 xml
 CREATE TABLE
-DECLARE statement
-xml
-xml
-xml
+DECLARE statement xml xml xml
 CREATE PROCEDURE
 CREATE
 TABLE
-T1(Col1
-int
-primary
-key
-, Col2
-xml
+T1(Col1 int primary key
+, Col2 xml
 );
 DECLARE
-@x
-xml
+@x xml
 ;
 DECLARE
-@x
-xml
-(Sales.StoreSurveySchemaCollection)
+@x xml (Sales.StoreSurveySchemaCollection)
 CREATE
 PROCEDURE
-SampleProc(@XmlDoc
-xml
+SampleProc(@XmlDoc xml
 )
 AS
 ...

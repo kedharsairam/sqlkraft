@@ -124,27 +124,13 @@ activity.
 Expand table
 
 ```sql
-tempdb
-tempdb
-ALTER DATABASE
-tempdb
-tempdev
-templog
+tempdb tempdb
+ALTER DATABASE tempdb tempdev templog
 DBCC SHRINKDATABASE
-DBCC SHRINKFILE
-tempdb
-tempdb
-tempdb
-model
-tempdb
+DBCC SHRINKFILE tempdb tempdb tempdb model tempdb
 ALTER DATABASE
 MODIFY FILE
 DBCC
 SHRINKFILE
-DBCC SHRINKDATABASE
-tempdb
-tempdb
-tempdb
-tempdb
-tempdb
+DBCC SHRINKDATABASE tempdb tempdb tempdb tempdb tempdb
 ```

@@ -76,9 +76,7 @@ environment variable is deprecated. Use
 instead.
 
 ```cmd
-mssql
-dockerfile
-cd
+mssql dockerfile cd
 <path to dockerfile>
 docker build -t 2017-latest-non-root .
 SA_PASSWORD

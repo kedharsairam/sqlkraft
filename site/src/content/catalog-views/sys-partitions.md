@@ -14,6 +14,4 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row 
 
 ## Syntax
 
-```sql
-filestream_filegroup_id
-```
+`filestream_filegroup_id`

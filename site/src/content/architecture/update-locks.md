@@ -96,17 +96,13 @@ the shared (
 
 Expand table
 
-```sql
-XACT
-```
+`XACT`
 
 ```sql
 S
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 U
@@ -116,29 +112,17 @@ U
 X
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-SIX
-```
+`SIX`
 
 ```sql
 Sch-M
@@ -148,21 +132,13 @@ Sch-M
 Sch-S
 ```
 
-```sql
-BU
-```
+`BU`
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
 ```sql
 S

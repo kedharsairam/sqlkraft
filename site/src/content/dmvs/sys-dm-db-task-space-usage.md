@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns page allocation and deallocation activit
 
 ## Syntax
 
-```sql
-sys.dm_pdw_nodes_db_task_space_usage
-```
+`sys.dm_pdw_nodes_db_task_space_usage`

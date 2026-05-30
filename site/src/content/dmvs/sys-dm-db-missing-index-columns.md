@@ -14,32 +14,22 @@ SQL database in Microsoft Fabric Returns information about database table column
 
 ## Syntax
 
-```sql
-sys.dm_db_missing_index_columns
-```
+`sys.dm_db_missing_index_columns`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sys.dm_db_missing_index_columns
-```
+`sys.dm_db_missing_index_columns`
 
 ### Example 2
 
-```sql
-sqlserver_start_time
-```
+`sqlserver_start_time`
 
 ### Example 3
 
-```sql
-Address
-```
+`Address`
 
 ### Example 4
 
-```sql
-sys.dm_db_missing_index_columns
-```
+`sys.dm_db_missing_index_columns`

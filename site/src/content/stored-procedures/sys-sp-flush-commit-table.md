@@ -29,27 +29,19 @@ sp_flush_commit_table
 
 ### Example 1
 
-```sql
-syscommittab
-```
+`syscommittab`
 
 ### Example 2
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 3
 
-```sql
-syscommittab
-```
+`syscommittab`
 
 ### Example 4
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 5
 
@@ -75,7 +67,6 @@ sp_flush_commit_table
 ### Example 8
 
 ```sql
-EXECUTE
-sys.sp_flush_commit_table 11;
+EXECUTE sys.sp_flush_commit_table 11;
 GO
 ```

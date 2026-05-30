@@ -14,9 +14,7 @@ Resynchronizes all multiserver jobs in the specified target server. Transact-SQL
 
 ## Syntax
 
-```sql
-sp_post_msx_operation
-```
+`sp_post_msx_operation`
 
 ## Remarks
 
@@ -48,18 +46,14 @@ multiserver jobs, followed by an insert for each job currently targeted at the s
 
 ### Example 1
 
-```sql
-SEATTLE1
-```
+`SEATTLE1`
 
 ### Example 2
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_resync_targetserver N
+EXECUTE dbo.sp_resync_targetserver N
 'SEATTLE1'
 ;
 GO

@@ -41,21 +41,15 @@ options
 
 ### Example 1
 
-```sql
-sp_cursorprepexec
-```
+`sp_cursorprepexec`
 
 ### Example 2
 
-```sql
-Person
-```
+`Person`
 
 ### Example 3
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ### Example 4
 
@@ -80,8 +74,7 @@ INT
 @rowcnt
 INT
 ;
-EXECUTE
-sp_cursorprepexec
+EXECUTE sp_cursorprepexec
 @prep_handle
 OUTPUT
 ,
@@ -102,8 +95,7 @@ OUTPUT
 ,
 'Kirby'
 ;
-EXECUTE
-sp_cursorfetch @
+EXECUTE sp_cursorfetch @
 cursor
 ;
 ```

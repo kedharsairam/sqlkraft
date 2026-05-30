@@ -22,10 +22,7 @@ GO
 USE [databasename]
 CREATE USER [username] WITH PASSWORD=N'[password]'
 
---to check the database containment type
-select containment, name from sys.databases where name = 'databasename'
+--to check the database containment type select containment, name from sys.databases where name = 'databasename'
 
---to check which users are listed as contained users
-select name, type_desc, authentication_type_desc
-from sys.database_principals where authentication_type = 2
+--to check which users are listed as contained users select name, type_desc, authentication_type_desc from sys.database_principals where authentication_type = 2
 ```

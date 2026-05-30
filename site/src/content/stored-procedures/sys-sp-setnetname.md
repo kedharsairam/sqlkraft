@@ -37,31 +37,24 @@ N
 
 ### Example 1
 
-```sql
-sp_setnetname
-```
+`sp_setnetname`
 
 ### Example 2
 
-```sql
-sqlserv2
-```
+`sqlserv2`
 
 ### Example 3
 
 ```sql
-EXECUTE
-sp_addlinkedserver
+EXECUTE sp_addlinkedserver
 'sqlserv2'
 ;
 GO
-EXECUTE
-sp_addserver
+EXECUTE sp_addserver
 'rpcserv2'
 ;
 GO
-EXECUTE
-sp_setnetname
+EXECUTE sp_setnetname
 'rpcserv2'
 ,
 'sqlserv2'
@@ -70,23 +63,18 @@ sp_setnetname
 
 ### Example 4
 
-```sql
-sp_setnetname
-```
+`sp_setnetname`
 
 ### Example 5
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_addserver
+EXECUTE sp_addserver
 'Win_1'
 ;
-EXECUTE
-sp_setnetname
+EXECUTE sp_setnetname
 'Win_1'
 ,
 'Win-1'

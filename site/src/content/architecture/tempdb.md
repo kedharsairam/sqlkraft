@@ -114,9 +114,7 @@ online index operations, Multiple Active Result Sets (MARS), and
 triggers.
 
 ```sql
-tempdb
-tempdb
-tempdb
+tempdb tempdb tempdb
 SORT_IN_TEMPDB
 GROUP BY
 ORDER BY

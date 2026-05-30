@@ -14,23 +14,17 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row 
 
 ## Syntax
 
-```sql
-HumanResources.Employee
-```
+`HumanResources.Employee`
 
 ## Examples
 
 ### Example 1
 
-```sql
-VacationHours
-```
+`VacationHours`
 
 ### Example 2
 
-```sql
-HumanResources.Employee
-```
+`HumanResources.Employee`
 
 ### Example 3
 

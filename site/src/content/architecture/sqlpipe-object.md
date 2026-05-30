@@ -141,10 +141,7 @@ SqlPipe
 SqlPipe
 Response
 SqlPipe
-Send
-void Send(string message)
-void Send(SqlDataReader reader)
-void Send(SqlDataRecord record)
+Send void Send(string message) void Send(SqlDataReader reader) void Send(SqlDataRecord record)
 Send
 SqlPipe
 Procedure1

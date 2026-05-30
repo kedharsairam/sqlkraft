@@ -25,10 +25,8 @@ Sets a property of an OLE object to a new value. Transact-SQL syntax conventions
 
 ```sql
 sp_
-OAS
-et
-P
-roperty objecttoken
+OAS et
+P roperty objecttoken
 , propertyname
 , newvalue
 [ , index... ]

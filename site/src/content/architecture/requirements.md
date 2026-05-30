@@ -101,9 +101,6 @@ Init
 Accumulate
 Merge
 Terminate
-Init
-public
-void
-Init
-();
+Init public void
+Init ();
 ```

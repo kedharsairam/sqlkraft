@@ -57,8 +57,6 @@ XML
 
 This is the nested FOR XML query:
 
-SQL
-
 ```sql
 Production.Product
 ListPrice
@@ -66,8 +64,7 @@ StandardCost
 <Price>
 <Price>
 PriceType
-<xsd:schema
-xmlns:schema
+<xsd:schema xmlns:schema
 =
 "urn:schemas-microsoft-com:sql:SqlRowSet2"
 xmlns:xsd
@@ -83,16 +80,14 @@ elementFormDefault
 =
 "qualified"
 >
-<xsd:import
-namespace
+<xsd:import namespace
 =
 "https://schemas.microsoft.com/sqlserver/2004/sqltypes"
 schemaLocation
 =
 "https://schemas.microsoft.com/sqlserver/2004/sqltypes/sqltypes.xsd"
 />
-<xsd:element
-name
+<xsd:element name
 =
 "Production.Product"
 type
@@ -100,16 +95,14 @@ type
 "xsd:anyType"
 />
 </xsd:schema>
-<Production.Product
-xmlns
+<Production.Product xmlns
 =
 "urn:schemas-microsoft-com:sql:SqlRowSet2"
 ProductID
 =
 "520"
 >
-<Price
-xmlns
+<Price xmlns
 =
 ""
 PriceType
@@ -118,8 +111,7 @@ PriceType
 >
 133.34
 </Price>
-<Price
-xmlns
+<Price xmlns
 =
 ""
 PriceType
@@ -139,14 +131,9 @@ SELECT
 'ListPrice'
 as
 PriceType,
-CAST
-(
-CAST
-(ListPrice
-as
-NVARCHAR
-(40))
-as
+CAST (
+CAST (ListPrice as
+NVARCHAR (40)) as
 XML
 )
 FROM
@@ -164,14 +151,9 @@ SELECT
 'StandardCost'
 as
 PriceType,
-CAST
-(
-CAST
-(StandardCost
-as
-NVARCHAR
-(40))
-as
+CAST (
+CAST (StandardCost as
+NVARCHAR (40)) as
 XML
 )
 FROM

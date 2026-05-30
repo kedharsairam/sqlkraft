@@ -41,8 +41,6 @@ The following T-SQL code snippet shows how to release the trigger for a command 
 
 doesn't change any rows. This code should be present at the beginning of each DML trigger:
 
-SQL
-
 DDL triggers, like standard triggers, launch stored procedures in response to an event. But,
 
 unlike standard triggers, they don't run in response to
@@ -109,53 +107,29 @@ and
 PRIMARY KEY
 ```
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
-```sql
-COMMIT
-```
+`COMMIT`
 
-```sql
-ROLLBACK
-```
+`ROLLBACK`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-CREATE
-```
+`CREATE`
 
-```sql
-ALTER
-```
+`ALTER`
 
-```sql
-DROP
-```
+`DROP`
 
-```sql
-GRANT
-```
+`GRANT`
 
-```sql
-DENY
-```
+`DENY`
 
-```sql
-REVOKE
-```
+`REVOKE`
 
 ```sql
 UPDATE
@@ -171,10 +145,6 @@ RETURN;
 CREATE TYPE
 ```
 
-```sql
-sp_addtype
-```
+`sp_addtype`
 
-```sql
-sp_rename
-```
+`sp_rename`

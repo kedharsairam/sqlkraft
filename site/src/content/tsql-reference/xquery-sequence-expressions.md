@@ -56,16 +56,11 @@ The following query returns an error, because you are constructing a sequence of
 values and nodes. This is a heterogeneous sequence and is not supported.
 
 ```sql
-declare @x xml
-set @x=''
-select @x.query('(1,2,3,4,5)')
-go
+declare @x xml set @x=''
+select @x.query('(1,2,3,4,5)') go
 -- result 1 2 3 4 5
--- sequence of 2 nodes
-declare @x xml
-set @x=''
-select @x.query('(<a/>, <b/>)')
-go
+-- sequence of 2 nodes declare @x xml set @x=''
+select @x.query('(<a/>, <b/>)') go
 -- result
 <a />
 <b />

@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns information about the wait queue of task
 
 ## Syntax
 
-```sql
-blocking_task_address
-```
+`blocking_task_address`
