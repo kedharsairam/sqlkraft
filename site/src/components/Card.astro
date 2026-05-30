@@ -34,6 +34,9 @@ const { href, "data-cat": dataCat } = Astro.props;
 const hasTitle = Astro.slots.has("title");
 const extraAttrs: Record<string, string> = {};
 if (dataCat !== undefined) extraAttrs["data-cat"] = dataCat;
+
+// Derive unique transition name from the href slug for view transition morphing
+const transitionName = href.replace(/\/+$/, "").split("/").pop() || "";
 ---
 
 <a href={href} class="item-card" {...extraAttrs}>
@@ -41,7 +44,7 @@ if (dataCat !== undefined) extraAttrs["data-cat"] = dataCat;
     hasTitle ? (
       <>
         <div class="card-header">
-          <span class="card-title">
+          <span class="card-title" transition:name={transitionName}>
             <slot name="title" />
           </span>
           {Astro.slots.has("meta") && <slot name="meta" />}
@@ -80,12 +83,16 @@ if (dataCat !== undefined) extraAttrs["data-cat"] = dataCat;
     color: inherit;
     min-width: 0;
     transition:
-      border-color 0.2s,
-      transform 0.2s;
+      border-color 0.25s cubic-bezier(0.25, 1, 0.5, 1),
+      transform 0.35s cubic-bezier(0.25, 1, 0.5, 1),
+      background 0.25s cubic-bezier(0.25, 1, 0.5, 1),
+      box-shadow 0.25s cubic-bezier(0.25, 1, 0.5, 1);
   }
   .item-card:hover {
     border-color: var(--accent);
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    background: rgba(13, 17, 23, 0.8);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     text-decoration: none;
   }
 

@@ -35,7 +35,7 @@ const { title, topic, description, tags } = entry.data;
           {tags.slice(0, 4).map((tag) => <span class="tag-pill">#{tag}</span>)}
         </div>
       </div>
-      <h1 class="detail-title">{title}</h1>
+      <h1 class="detail-title" transition:name={entry.slug}>{title}</h1>
       {description && <p class="detail-desc">{description}</p>}
     </header>
 

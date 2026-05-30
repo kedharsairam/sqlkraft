@@ -5,6 +5,34 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.43.0] — 2026-05-30
+
+### Added
+
+- **Stage 46: Fluid Spatial View Transitions & Component Polish** — Comprehensive interaction upgrade for seamless page navigation:
+
+  1. **Morphing View Transitions** — Astro View Transitions engine globally active. Added `transition:name` attributes to Card.astro's `.card-title` (derived from href slug) and matching attributes on all 12 detail page templates (`transition:name={entry.slug}`). Card titles now visually scale and morph into detail page headers on navigation, eliminating jarring page jumps.
+
+  2. **Elastic Micro-Interactions** — `.item-card` hover states upgraded with `cubic-bezier(0.25, 1, 0.5, 1)` timing curve for border-color, transform, background, and box-shadow transitions. Hover now shifts `translateY(-3px)` with subtle shadow depth and background darkening for a crisp, instantaneous feel.
+
+  3. **Repository Cleanup** — Removed manual page-fade-in CSS animation (conflicted with View Transitions). Removed `transition:animate="fade"` from main shell. Scrubbed all design-language references ("macOS Spotlight", "glassmorphism", Stage numbering) from comments across BaseLayout.astro, SearchPalette.astro, CardPalette.astro, and RelatedLinks.astro.
+
+- **Version bump**: 0.36.0 → 0.43.0 (package.json)
+
+### Changed
+
+- `src/components/Card.astro` — added `transition:name` prop on title, elastic cubic-bezier hover transitions
+- `src/layouts/BaseLayout.astro` — removed manual page-fade animation, removed `transition:animate="fade"`, cleaned design language comments
+- All 12 `src/pages/*/[id].astro` — added `transition:name={entry.slug}` on detail page titles
+- `src/components/SearchPalette.astro` — scrubbed design language references
+- `src/components/CardPalette.astro` — scrubbed design language references
+- `src/components/RelatedLinks.astro` — scrubbed design language references
+
+### Build
+
+- 5,246 pages, 0 errors, ~29s
+- Prettier lint passes
+
 ## [0.41.0] — 2026-05-30
 
 ### Added

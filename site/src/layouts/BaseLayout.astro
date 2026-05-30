@@ -102,13 +102,13 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
         </div>
       </div>
     </div>
-    <main class="app-shell" transition:animate="fade">
+    <main class="app-shell">
       <slot />
     </main>
     <nav id="toc-sidebar" class="toc-sidebar" aria-label="Table of contents"></nav>
     <SearchPalette />
     <div id="link-preview-card"></div>
-    <!-- ── Stage 24: Keyboard Shortcut Overlay ── -->
+    <!-- ── Keyboard Shortcut Overlay ── -->
     <div id="shortcut-overlay" class="shortcut-overlay hidden">
       <div class="shortcut-backdrop"></div>
       <div class="shortcut-panel">
@@ -209,7 +209,7 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
   }
 
   // ─────────────────────────────────────────────────
-  //  Stage 23: Link Preview Hover Cards
+  //  Link Preview Hover Cards
   // ─────────────────────────────────────────────────
   (function () {
     "use strict";
@@ -370,7 +370,7 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
   })();
 
   // ─────────────────────────────────────────────────
-  //  Stage 24: Keyboard Shortcut Overlay (press ?)
+  //  Keyboard Shortcut Overlay (press ?)
   // ─────────────────────────────────────────────────
   (function () {
     "use strict";
@@ -947,9 +947,7 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
     }
   }
 
-  /* ──────────────────────────────────────────────────────
-     Stage 22: Code Block Line Numbers (CSS Counter Gutter)
-     ────────────────────────────────────────────────────── */
+  /* ── Code Block Line Numbers (CSS Counter Gutter) ── */
 
   /* Reset line counter on each code block */
   pre.astro-code {
@@ -1005,9 +1003,7 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
     user-select: none;
   }
 
-  /* ──────────────────────────────────────────────────────
-     Stage 23: Link Preview Hover Card (glassmorphism)
-     ────────────────────────────────────────────────────── */
+  /* ── Link Preview Hover Card ── */
 
   /* Card container — always in DOM, invisible by default */
   #link-preview-card {
@@ -1067,9 +1063,7 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
     letter-spacing: 0.06em;
   }
 
-  /* ──────────────────────────────────────────────────────
-     Stage 24: Keyboard Shortcut Overlay
-     ────────────────────────────────────────────────────── */
+  /* ── Keyboard Shortcut Overlay ── */
 
   /* Fixed overlay with dark backdrop */
   .shortcut-overlay {
@@ -1091,7 +1085,7 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
     -webkit-backdrop-filter: blur(6px);
   }
 
-  /* Panel — matches Spotlight aesthetic */
+  /* Panel styling */
   .shortcut-panel {
     position: relative;
     width: 400px;
@@ -1194,21 +1188,6 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
   }
   .shortcut-footer .keycap-sm {
     margin: 0 2px;
-  }
-
-  /* ── Page fade-in transition (View Transitions fallback) ── */
-  .app-shell {
-    animation: page-fade-in 0.4s ease-out;
-  }
-  @keyframes page-fade-in {
-    from {
-      opacity: 0;
-      transform: translateY(4px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
 
   /* ── Prose Content — unified typographic engine ── */

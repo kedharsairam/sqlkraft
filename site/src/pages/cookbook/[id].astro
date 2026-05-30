@@ -28,7 +28,7 @@ const sev = severity || "medium";
   </nav>
 
   <div class="detail-header">
-    <h1 class="detail-title">{name}</h1>
+    <h1 class="detail-title" transition:name={entry.slug}>{name}</h1>
     <span class="cat-badge">{category}</span>
     <span class={`sev-badge sev-${sev}`}>{sev}</span>
   </div>

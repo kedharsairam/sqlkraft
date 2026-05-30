@@ -48,7 +48,7 @@ const sevColor = SEVERITY_COLORS[severity] || "#6272a4";
 
   <!-- Header strip -->
   <div class="detail-header">
-    <h1 class="detail-title">
+    <h1 class="detail-title" transition:name={entry.slug}>
       <span class="wait-name">{name}</span>
     </h1>
     <div class="badge-strip">

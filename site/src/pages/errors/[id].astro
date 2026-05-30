@@ -34,7 +34,7 @@ const sevColor = SEVERITY_COLORS[severity] || "#6272a4";
   </nav>
 
   <div class="detail-header">
-    <h1 class="detail-title">
+    <h1 class="detail-title" transition:name={entry.slug}>
       <span class="error-num">#{name}</span>
       <span class="title-text">{title}</span>
     </h1>

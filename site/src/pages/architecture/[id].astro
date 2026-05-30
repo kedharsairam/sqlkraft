@@ -42,7 +42,7 @@ const { title, topic, description, tags } = entry.data;
 
     <!-- Main content -->
     <main class="doc-content">
-      <h1 class="doc-title">{title}</h1>
+      <h1 class="doc-title" transition:name={entry.slug}>{title}</h1>
       {description && <p class="doc-lede">{description}</p>}
 
       <div class="body-content prose-content" id="docBody">

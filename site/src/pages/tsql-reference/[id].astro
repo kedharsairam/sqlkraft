@@ -25,7 +25,7 @@ const { name, title, category, description, tags, syntax } = entry.data;
   </nav>
 
   <div class="detail-header">
-    <h1 class="detail-title">{name}</h1>
+    <h1 class="detail-title" transition:name={entry.slug}>{name}</h1>
     <span class="cat-badge">{category}</span>
   </div>
 
