@@ -1,4 +1,9 @@
 # SqlKraft Session Notes
+## Project Status: **Stable / Production Ready**
+
+This repository has completed its architectural refactoring cycle. The core engine — data layer, component architecture, search infrastructure, view transitions, and build pipeline — is finalized. Future work targets content expansion and minor polish only.
+
+---
 
 ## v0.43.0 — Stage 46: Fluid Spatial View Transitions & Component Polish
 
