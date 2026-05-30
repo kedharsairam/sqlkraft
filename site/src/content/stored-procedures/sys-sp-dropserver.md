@@ -77,15 +77,11 @@ server logins for a server when you remove the server, use the
 
 ### Example 1
 
-```sql
-sp_dropserver
-```
+`sp_dropserver`
 
 ### Example 2
 
-```sql
-sp_dropserver
-```
+`sp_dropserver`
 
 ### Example 3
 
@@ -95,15 +91,12 @@ ALTER ANY LINKED SERVER
 
 ### Example 4
 
-```sql
-ACCOUNTS
-```
+`ACCOUNTS`
 
 ### Example 5
 
 ```sql
-EXECUTE
-sp_dropserver
+EXECUTE sp_dropserver
 'ACCOUNTS'
 ,
 'droplogins'

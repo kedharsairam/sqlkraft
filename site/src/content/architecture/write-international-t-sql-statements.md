@@ -158,6 +158,5 @@ data to
 ```sql
 DATENAME(MONTH,GETDATE())
 May
-Mai
-mai
+Mai mai
 ```

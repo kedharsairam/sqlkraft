@@ -39,8 +39,6 @@ context to the
 
 database where you initiate the conversation.
 
-SQL
-
 Copy and paste the following code into a Query Editor window. Then, run it to start a
 
 conversation and send a request message to the
@@ -67,8 +65,6 @@ The last
 
 statement displays the text of the message that was sent.
 
-SQL
-
 ```sql
 InitiatorDB
 TargetDB
@@ -88,8 +84,7 @@ UNIQUEIDENTIFIER;
 DECLARE
 @RequestMsg
 AS
-NVARCHAR
-(100);
+NVARCHAR (100);
 BEGIN
 TRANSACTION
 ;

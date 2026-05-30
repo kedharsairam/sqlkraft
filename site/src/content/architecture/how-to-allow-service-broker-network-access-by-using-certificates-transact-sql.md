@@ -76,7 +76,6 @@ Only dump the certificate used for transport security. Don't dump or distribute 
 private key associated with the certificate.
 
 ```sql
-master
-master
+master master
 CONNECT
 ```

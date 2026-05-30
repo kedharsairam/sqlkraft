@@ -9,13 +9,9 @@ pubDate: 2026-05-29
 
 ## Operators and collation
 
-SQL
-
 Here's the result set.
 
 Output
-
-SQL
 
 Here's the result set.
 
@@ -48,12 +44,6 @@ has the higher precedence. The
 statement is also collation sensitive, and all string
 
 operands and the final result is assigned the collation of the operand with the highest
-
-### char
-
-### varchar
-
-### text
 
 ## Functions and collation
 
@@ -135,39 +125,25 @@ Last updated on 11/18/2025
 
 Related content
 
-```sql
-MAX
-```
+`MAX`
 
-```sql
-MIN
-```
+`MIN`
 
-```sql
-BETWEEN
-```
+`BETWEEN`
 
-```sql
-LIKE
-```
+`LIKE`
 
-```sql
-IN
-```
+`IN`
 
-```sql
-UNION
-```
+`UNION`
 
 ```sql
 Msg 451, Level 16, State 1, Line 1
 Cannot resolve collation conflict for column 1 in SELECT statement.
 SELECT
-PATINDEX
-((
+PATINDEX ((
 CASE
-WHEN
-id
+WHEN id
 > 10
 THEN
 GreekCol
@@ -181,11 +157,9 @@ FROM
 TestTab;
 Msg 446, Level 16, State 9, Server LEIH2, Line 1
 Cannot resolve collation conflict for patindex operation.
-SELECT
-(
+SELECT (
 CASE
-WHEN
-id
+WHEN id
 > 10
 THEN
 GreekCol
@@ -201,49 +175,31 @@ TestTab;
 a
 ```
 
-```sql
-UNION
-```
+`UNION`
 
 ```sql
 UNION ALL
 ```
 
-```sql
-CASE
-```
+`CASE`
 
 ```sql
 UNION ALL
 ```
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-COLLATE
-```
+`COLLATE`
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
 ```sql
 CHARINDEX

@@ -89,8 +89,6 @@ case for filtered statistics for which the predicate doesn't return any rows, or
 
 tables.
 
-
-
 Expand table
 
 A histogram measures the frequency of occurrence for each distinct value in a data set. The
@@ -145,58 +143,30 @@ compute AVG_RANGE_ROWS and doesn't store the sampled values.
 
 #### Density calculated on
 
-```sql
-HISTOGRAM
-```
+`HISTOGRAM`
 
-```sql
-RANGE_HI_KEY
-```
+`RANGE_HI_KEY`
 
-```sql
-RANGE_ROWS
-```
+`RANGE_ROWS`
 
-```sql
-EQ_ROWS
-```
+`EQ_ROWS`
 
-```sql
-DISTINCT_RANGE_ROWS
-```
+`DISTINCT_RANGE_ROWS`
 
-```sql
-AVG_RANGE_ROWS
-```
+`AVG_RANGE_ROWS`
 
-```sql
-DISTINCT_RANGE_ROWS
-```
+`DISTINCT_RANGE_ROWS`
 
-```sql
-AVG_RANGE_ROWS
-```
+`AVG_RANGE_ROWS`
 
-```sql
-RANGE_ROWS
-```
+`RANGE_ROWS`
 
-```sql
-DISTINCT_RANGE_ROWS
-```
+`DISTINCT_RANGE_ROWS`
 
-```sql
-DISTINCT_RANGE_ROWS
-```
+`DISTINCT_RANGE_ROWS`
 
-```sql
-AVG_RANGE_ROWS
-```
+`AVG_RANGE_ROWS`
 
-```sql
-updated
-```
+`updated`
 
-```sql
-NULL
-```
+`NULL`

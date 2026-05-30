@@ -13,22 +13,14 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Shows the union
 
 ## Code Blocks
 
-```sql
-object_id
-```
+`object_id`
 
-```sql
-name
-```
+`name`
 
-```sql
-parameter_id
-```
+`parameter_id`
 
 ```sql
 parameter_id = 0
 ```
 
-```sql
-system_type_id
-```
+`system_type_id`

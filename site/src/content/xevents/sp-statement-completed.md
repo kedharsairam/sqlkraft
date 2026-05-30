@@ -31,10 +31,8 @@ This event is the XEvent replacement for SQL Server Profiler's `SP:StmtCompleted
 -- Filter by database to minimize volume
 CREATE EVENT SESSION [query_performance_trace]
 ON SERVER
-ADD EVENT sqlserver.sp_statement_completed
-(
-    ACTION
-    (
+ADD EVENT sqlserver.sp_statement_completed (
+    ACTION (
         sqlserver.database_name,
         sqlserver.client_app_name,
         sqlserver.client_hostname,
@@ -42,15 +40,13 @@ ADD EVENT sqlserver.sp_statement_completed
         sqlserver.session_id,
         sqlserver.plan_handle
     )
-    WHERE
-    (
+    WHERE (
         [sqlserver].[database_name] = N'YourDatabaseName'
         AND [duration] >= 1000000           -- 1 second minimum
     )
 )
 ADD TARGET package0.ring_buffer
-WITH
-(
+WITH (
     MAX_MEMORY = 8192 KB,
     EVENT_RETENTION_MODE = ALLOW_SINGLE_EVENT_LOSS,
     MAX_DISPATCH_LATENCY = 10 SECONDS,
@@ -71,10 +67,8 @@ GO
 -- Full-featured session with file target for long-term performance warehouse
 CREATE EVENT SESSION [query_performance_warehouse]
 ON SERVER
-ADD EVENT sqlserver.sp_statement_completed
-(
-    ACTION
-    (
+ADD EVENT sqlserver.sp_statement_completed (
+    ACTION (
         sqlserver.database_name,
         sqlserver.client_app_name,
         sqlserver.client_hostname,
@@ -84,21 +78,18 @@ ADD EVENT sqlserver.sp_statement_completed
         sqlserver.sql_text,
         sqlserver.tsql_stack
     )
-    WHERE
-    (
+    WHERE (
         [duration] >= 500000                -- 500 ms threshold
         OR [cpu_time] >= 500000             -- 500 ms CPU threshold
         OR [logical_reads] >= 10000         -- 10,000+ logical reads
     )
 )
-ADD TARGET package0.event_file
-(
+ADD TARGET package0.event_file (
     SET filename = N'D:\XELogs\query_perf_warehouse.xel',
         max_file_size = 256,
         max_rollover_files = 20
 )
-WITH
-(
+WITH (
     MAX_MEMORY = 16384 KB,
     EVENT_RETENTION_MODE = ALLOW_SINGLE_EVENT_LOSS,
     MAX_DISPATCH_LATENCY = 5 SECONDS,
@@ -119,8 +110,7 @@ Poll the ring buffer during active diagnostics to identify current bottlenecks:
 
 ```sql
 -- Read the most recent slow statements from the ring buffer
-SELECT TOP 100
-    event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_time,
+SELECT TOP 100 event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_time,
     event_data.value('(event/action[@name="database_name"]/value)[1]', 'nvarchar(256)') AS database_name,
     event_data.value('(event/action[@name="session_id"]/value)[1]', 'int') AS session_id,
     event_data.value('(event/data[@name="object_name"]/value)[1]', 'nvarchar(256)') AS object_name,
@@ -131,8 +121,7 @@ SELECT TOP 100
     event_data.value('(event/data[@name="writes"]/value)[1]', 'bigint') AS writes,
     event_data.value('(event/data[@name="row_count"]/value)[1]', 'bigint') AS row_count,
     event_data.value('(event/data[@name="nest_level"]/value)[1]', 'int') AS nest_level
-FROM
-(
+FROM (
     SELECT CAST(target_data AS XML) AS ring_buffer
     FROM sys.dm_xe_session_targets
     WHERE event_session_address = (
@@ -149,8 +138,7 @@ ORDER BY duration_us DESC;
 ```sql
 -- Query historical performance data from the file target
 -- Group by procedure to identify the most expensive stored procedures
-SELECT
-    object_name,
+SELECT object_name,
     COUNT(*) AS execution_count,
     AVG(duration_us / 1000.0) AS avg_duration_ms,
     MAX(duration_us / 1000.0) AS max_duration_ms,
@@ -159,20 +147,16 @@ SELECT
     AVG(writes * 1.0) AS avg_writes,
     AVG(row_count * 1.0) AS avg_row_count,
     SUM(row_count) AS total_rows_affected
-FROM
-(
-    SELECT
-        event_data.value('(event/data[@name="object_name"]/value)[1]', 'nvarchar(256)') AS object_name,
+FROM (
+    SELECT event_data.value('(event/data[@name="object_name"]/value)[1]', 'nvarchar(256)') AS object_name,
         event_data.value('(event/data[@name="duration"]/value)[1]', 'bigint') AS duration_us,
         event_data.value('(event/data[@name="cpu_time"]/value)[1]', 'bigint') AS cpu_us,
         event_data.value('(event/data[@name="logical_reads"]/value)[1]', 'bigint') AS logical_reads,
         event_data.value('(event/data[@name="writes"]/value)[1]', 'bigint') AS writes,
         event_data.value('(event/data[@name="row_count"]/value)[1]', 'bigint') AS row_count
-    FROM
-    (
+    FROM (
         SELECT event_data
-        FROM sys.fn_xe_file_target_read_file
-        (
+        FROM sys.fn_xe_file_target_read_file (
             N'D:\XELogs\query_perf_warehouse*.xel',
             N'D:\XELogs\query_perf_warehouse*.xem',
             NULL,
@@ -193,24 +177,20 @@ When the `plan_handle` action is included, you can join `sp_statement_completed`
 
 ```sql
 -- Correlate XEvent data with actual execution plans
-SELECT
-    x.event_time,
+SELECT x.event_time,
     x.object_name,
     x.statement_text,
     x.duration_us / 1000.0 AS duration_ms,
     x.logical_reads,
     qp.query_plan
-FROM
-(
-    SELECT
-        event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_time,
+FROM (
+    SELECT event_data.value('(event/@timestamp)[1]', 'datetime2') AS event_time,
         event_data.value('(event/data[@name="object_name"]/value)[1]', 'nvarchar(256)') AS object_name,
         event_data.value('(event/data[@name="statement"]/value)[1]', 'nvarchar(max)') AS statement_text,
         event_data.value('(event/data[@name="duration"]/value)[1]', 'bigint') AS duration_us,
         event_data.value('(event/data[@name="logical_reads"]/value)[1]', 'bigint') AS logical_reads,
         event_data.value('(event/action[@name="plan_handle"]/value)[1]', 'varbinary(64)') AS plan_handle
-    FROM
-    (
+    FROM (
         SELECT CAST(target_data AS XML) AS ring_buffer
         FROM sys.dm_xe_session_targets
         WHERE event_session_address = (

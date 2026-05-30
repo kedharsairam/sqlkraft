@@ -71,6 +71,4 @@ metadata, and allows stored procedures to return custom result sets to the clien
 
 Expand table
 
-```sql
-SqlDataRecord
-```
+`SqlDataRecord`

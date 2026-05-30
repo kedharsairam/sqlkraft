@@ -73,39 +73,27 @@ Only members of the fixed server role, members of the fixed database role, or th
 
 ### Example 1
 
-```sql
-sp_reinitsubscription
-```
+`sp_reinitsubscription`
 
 ### Example 2
 
-```sql
-MessageInterval
-```
+`MessageInterval`
 
 ### Example 3
 
-```sql
-sp_reinitsubscription
-```
+`sp_reinitsubscription`
 
 ### Example 4
 
-```sql
-all
-```
+`all`
 
 ### Example 5
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 6
 
-```sql
-drop
-```
+`drop`
 
 ### Example 7
 
@@ -117,6 +105,5 @@ drop
 -- "Programming Replication Using System Stored Procedures".
 DECLARE
 @subscriptionDB
-AS
-sysname;
+AS sysname;
 ```

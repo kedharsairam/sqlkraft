@@ -37,8 +37,6 @@ SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
 
-SQL
-
 database in Microsoft Fabric
 
 In SQL Server spatial data, a
@@ -110,8 +108,6 @@ with
 an SRID of
 
 .
-
-SQL
 
 ```sql
 (3, 4)

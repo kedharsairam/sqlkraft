@@ -40,6 +40,5 @@ select count(*) from sys.dm_exec_sessions where session_id>50
 --9) Find out the total wait types in SQL Server.
 
 --10) Find out the waiting tasks in SQL Server.
-select * from sys.dm_os_waiting_tasks where session_id>50
-order by wait_duration_ms desc
+select * from sys.dm_os_waiting_tasks where session_id>50 order by wait_duration_ms desc
 ```

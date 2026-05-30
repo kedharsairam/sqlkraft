@@ -54,8 +54,6 @@ and
 
 columns in the rowset.
 
-SQL
-
 This is the partial result:
 
 ```sql
@@ -68,32 +66,24 @@ USE
 AdventureWorks2022;
 GO
 SELECT
-1
-as
+1 as
 Tag,
-NULL
-as
+NULL as
 Parent
 ,
-E.BusinessEntityID
-as
+E.BusinessEntityID as
 [Employee!1!EmpID],
-BEA.AddressID
-as
+BEA.AddressID as
 [Employee!1!AddressID],
-NULL
-as
+NULL as
 [Address!2!AddressID],
-NULL
-as
+NULL as
 [Address!2!AddressLine1!
 ELEMENT
 ],
-NULL
-as
+NULL as
 [Address!2!AddressLine2!ELEMENTXSINIL],
-NULL
-as
+NULL as
 [Address!2!City!ELEMENTXSINIL]
 FROM
 HumanResources.Employee
@@ -109,11 +99,9 @@ E.BusinessEntityID = BEA.BusinessEntityID
 UNION
 ALL
 SELECT
-2
-as
+2 as
 Tag,
-1
-as
+1 as
 Parent
 ,
 E.BusinessEntityID,

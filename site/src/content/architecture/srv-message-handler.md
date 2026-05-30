@@ -54,23 +54,18 @@ int srv_message_handler (
 SRV_PROC *
 srvproc
 ,
-int
-errornum
+int errornum
 ,
-BYTE
-severity
+BYTE severity
 ,
-BYTE
-state
+BYTE state
 ,
-int
-oserrnum
+int oserrnum
 ,
 char *
 errtext
 ,
-int
-errtextlen
+int errtextlen
 ,
 char *
 oserrtext

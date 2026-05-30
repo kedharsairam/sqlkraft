@@ -66,16 +66,13 @@ int srv_paramsetoutput (
 SRV_PROC *
 srvproc
 ,
-int
-n
+int n
 ,
 BYTE *
 pbData
 ,
-ULONG
-cbLen
+ULONG cbLen
 ,
-BOOL
-fNull
+BOOL fNull
 );
 ```

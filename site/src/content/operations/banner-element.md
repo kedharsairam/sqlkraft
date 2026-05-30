@@ -70,8 +70,7 @@ Expand table
 Expand table
 
 ```cmd
-<Banner
-title
+<Banner title
 =
 "..."
 product

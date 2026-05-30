@@ -5,6 +5,45 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.47.0] — 2026-05-31 — **Wait Stats Card Blueprint Lock, Spotlight macOS-native Redesign, Automated Sanitization Engine**
+
+### Added
+
+- **Wait Statistics Card Blueprint locked globally** — Card.astro now enforces `min-height: 160px` on every `.item-card` across all 11 collection index pages. `.card-desc` uses `flex: 1` to fill available space, pushing tags to the bottom of every card. All cards now render at identical height regardless of description length, matching the Wait Statistics dashboard gold standard.
+
+- **Automated Markdown Sanitization Engine** — Created `scripts/sanitize-content.js`, a build-time pipeline script that scans all 5,233 markdown content files for structural defects and auto-corrects them:
+  - **Dangling headings** — Orphaned `##` / `###` lines immediately before `---` with no body text are merged into the preceding heading
+  - **Stray code block artifacts** — Isolated bare `sql` / `tsql` / `text` lines that aren't part of proper fenced code blocks are removed
+  - **Fragmented sentences** — Single-word lines (3 chars or fewer) that break natural prose are consolidated into the preceding paragraph
+  - **Blank line normalization** — Excessive blank lines (3+ consecutive) collapsed to 2 max
+  - Integrated as the first step of the `prebuild` and `predev` hooks in `package.json`
+  - **Live run results**: 1,598 files modified, 5 empty stub files deleted, 471 dangling headings fixed, 5,454 stray code blocks removed, 5,181 fragmented sentences consolidated, 719 excessive blank line runs normalized
+
+- **Native macOS Spotlight search palette (v6)** — Complete redesign of SearchPalette.astro and CardPalette.astro to match native macOS Spotlight behavior:
+  - **Zero text-underlines** across all palette links via `text-decoration: none !important`
+  - **12px unified vertical padding** on every palette result item for consistent breathing room
+  - **Crisp monochromatic typography** — System font stack, tighter tracking, muted color palette
+  - **Hidden scrollbar container** — `scrollbar-width: thin` for Firefox, native macOS-style auto-hiding scrollbar in Chrome
+  - **Visual separation between result sets** — Category groups separated by `border-top`, individual items separated by `rgba(255,255,255,0.03)` bottom borders, last item border removed
+
+### Changed
+
+- `site/package.json` — version updated to `0.47.0-beta`; added `"sanitize": "node scripts/sanitize-content.js"` script; `prebuild` and `predev` now run sanitizer first
+- `site/src/components/Card.astro` — Added `min-height: 160px` to `.item-card`; added `flex: 1` to `.card-desc` for uniform card height enforcement
+- `site/src/components/SearchPalette.astro` — Added zero text-decoration rules, hidden scrollbar CSS, visual separation between result sets
+- `site/src/components/CardPalette.astro` — Changed `.palette-item` padding from `0` to `12px 0` for unified vertical rhythm; added `.palette-item` border-bottom separation; added `text-decoration: none !important` to `.palette-card`
+
+### Removed
+
+- **5 empty content stubs deleted**: `alter-table.md`, `datetimeoffset.md`, `reconfigure.md`, `type.md`, and one additional zero-body file detected and purged by the sanitization engine
+- **Stage 53 half-measures wiped** — Previous search palette row redesign and 2-line card description clamp replaced by the full macOS-native redesign
+
+### Build
+
+- 5,246 pages, 0 errors
+
+---
+
 ## [0.46.0] — 2026-05-30 — **macOS Spotlight Search Rows, Compact Cards, Content Cleanup**
 
 ### Added

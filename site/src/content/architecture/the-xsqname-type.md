@@ -51,8 +51,6 @@ they specify the
 
 type as a member type of the union:
 
-SQL
-
 Both statements fail with an error.
 
 Requirements and Limitations for XML Schema Collections on the Server
@@ -60,8 +58,7 @@ Requirements and Limitations for XML Schema Collections on the Server
 Last updated on 11/18/2025
 
 ```sql
-CREATE XML SCHEMA COLLECTION
-xs:QName
+CREATE XML SCHEMA COLLECTION xs:QName
 CREATE
 XML
 SCHEMA

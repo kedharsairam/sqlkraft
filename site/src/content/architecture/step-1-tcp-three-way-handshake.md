@@ -70,9 +70,7 @@ packet, so the trace was taken on the client.
 10.10.10.120
 ```
 
-```sql
-SYN
-```
+`SYN`
 
 ```sql
 S
@@ -86,33 +84,21 @@ S
 1433
 ```
 
-```sql
-SYN
-```
+`SYN`
 
-```sql
-ACK
-```
+`ACK`
 
-```sql
-ACK
-```
+`ACK`
 
-```sql
-SYN
-```
+`SYN`
 
-```sql
-telnet
-```
+`telnet`
 
 ```sql
 [Bad CheckSum]
 ```
 
-```sql
-SYN
-```
+`SYN`
 
 ```sql
 Frame Time Offset Source IP    Dest IP      Description

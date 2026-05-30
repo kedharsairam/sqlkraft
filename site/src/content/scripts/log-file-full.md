@@ -48,8 +48,7 @@ select name,log_reuse_wait_desc from sys.databases
 --5) Identify what all transactions are running on the database.
 
 select * from sys.sysprocesses where dbid=<int>
-select * from sys.dm_exec_requests where database_id=<int> and session_id>50
-(or)
+select * from sys.dm_exec_requests where database_id=<int> and session_id>50 (or)
 DBCC OPENTRAN
 
 DBCC INPUTBUFFER(spid)

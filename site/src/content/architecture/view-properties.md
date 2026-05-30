@@ -89,20 +89,15 @@ example returns all foreign keys and their properties for the table
 
 in the sample database.
 
-SQL
-
 ```sql
 HumanResources.Employee
 USE
 AdventureWorks2022;
 GO
-SELECT
-f.name
-AS
-foreign_key_name,
+SELECT f.name
+AS foreign_key_name,
 OBJECT_NAME(f.parent_object_id)
-AS
-table_name,
+AS table_name,
 COL_NAME(fc.parent_object_id, fc.parent_column_id)
 AS
 ```

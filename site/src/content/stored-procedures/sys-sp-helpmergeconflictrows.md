@@ -14,6 +14,4 @@ Returns the rows in the specified conflict table. This stored procedure is run o
 
 ## Syntax
 
-```sql
-MSmerge_conflict_Customers
-```
+`MSmerge_conflict_Customers`

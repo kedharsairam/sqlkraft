@@ -45,24 +45,19 @@ that database that reference target services in the
 
 .
 
-SQL
-
 ```sql
 ENABLE_BROKER
 TRUSTWORTHY
 InitiatorDB
 TargetDB
-USE
-master
+USE master
 ;
 GO
 IF EXISTS (
 SELECT
 *
-FROM
-sys.databases
-WHERE
-name
+FROM sys.databases
+WHERE name
 = N
 'TargetDB'
 )
@@ -77,10 +72,8 @@ GO
 IF EXISTS (
 SELECT
 *
-FROM
-sys.databases
-WHERE
-name
+FROM sys.databases
+WHERE name
 = N
 'InitiatorDB'
 )

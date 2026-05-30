@@ -17,22 +17,12 @@ SQL) Applies to: SQL Server 2016 (13.x) and later versions Azure SQL Database Az
 
 ## Code Blocks
 
-```sql
-name
-```
+`name`
 
-```sql
-credential_id
-```
+`credential_id`
 
-```sql
-principal_id
-```
+`principal_id`
 
-```sql
-credential_identity
-```
+`credential_identity`
 
-```sql
-create_date
-```
+`create_date`

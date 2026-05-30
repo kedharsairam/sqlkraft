@@ -80,9 +80,5 @@ For example, to receive prompts in Chinese, run the following command:
 Expand table
 
 ```cmd
-ssis-conf
-ssis-conf
-set-edition
-telemetry
-setup
+ssis-conf ssis-conf set-edition telemetry setup
 ```

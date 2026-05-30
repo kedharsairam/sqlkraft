@@ -14,8 +14,6 @@ Output
 
 Rebuild your indexes to use version 2 components.
 
-SQL
-
 To upgrade individual indexes without rebuilding the entire catalog, drop and recreate the
 
 indexes.
@@ -23,8 +21,6 @@ indexes.
 If you need to use version 1 for application compatibility, first set
 
 to avoid an unintended upgrade on rebuild.
-
-SQL
 
 ）
 
@@ -65,8 +61,7 @@ FULLTEXT_INDEX_VERSION = 1
 ```
 
 ```sql
-Warning: No appropriate filter was found during full-text index population for table
-or indexed view '[db].[dbo].[table_name]' (table or indexed view ID '901578250',
+Warning: No appropriate filter was found during full-text index population for table or indexed view '[db].[dbo].[table_name]' (table or indexed view ID '901578250',
 database ID '5'), full-text key value '1'. Some columns of the row were not indexed.
 ```
 
@@ -74,8 +69,7 @@ database ID '5'), full-text key value '1'. Some columns of the row were not inde
 -- Verify value = 2
 SELECT
 *
-FROM
-sys.database_scoped_configurations
+FROM sys.database_scoped_configurations
 WHERE
 [
 name
@@ -111,6 +105,4 @@ SET
 FULLTEXT_INDEX_VERSION = 1;
 ```
 
-```sql
-Binn
-```
+`Binn`

@@ -49,14 +49,10 @@ N
 'encrypt'
 ]
 [ , [ @f
-C
-reate
-C
-ookie = ] f
-C
-reate
-C
-ookie ]
+C reate
+C ookie = ] f
+C reate
+C ookie ]
 [ , [ @cookie = ] cookie
 OUTPUT
 ]

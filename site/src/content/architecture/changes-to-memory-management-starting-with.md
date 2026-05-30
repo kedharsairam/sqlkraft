@@ -99,13 +99,10 @@ max server memory (MB)
 ```
 
 ```sql
-min server
-memory (MB)
+min server memory (MB)
 ```
 
-```sql
-sp_OA
-```
+`sp_OA`
 
 ```sql
 max server memory (MB)
@@ -116,8 +113,7 @@ min server memory (MB)
 ```
 
 ```sql
-A significant part of SQL Server process memory has been paged out. This may result
-in a performance degradation. Duration: #### seconds. Working set (KB): ####,
+A significant part of SQL Server process memory has been paged out. This may result in a performance degradation. Duration: #### seconds. Working set (KB): ####,
 committed (KB): ####, memory utilization: ##%.
 ```
 

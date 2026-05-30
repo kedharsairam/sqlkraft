@@ -14,6 +14,4 @@ Resets the snapshot delivery process for a pull subscription so that snapshot de
 
 ## Syntax
 
-```sql
-MSsnapshotdeliveryprogress
-```
+`MSsnapshotdeliveryprogress`

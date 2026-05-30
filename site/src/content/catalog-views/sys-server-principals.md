@@ -139,36 +139,24 @@ ON pe.grantee_principal_id = pr.principal_id;
 
 ### Example 2
 
-```sql
-master
-```
+`master`
 
 ### Example 3
 
-```sql
-sys.server_principals
-```
+`sys.server_principals`
 
 ### Example 4
 
-```sql
-sys.sql_logins
-```
+`sys.sql_logins`
 
 ### Example 5
 
 ```sql
-SELECT
-pr.principal_id, pr.name, pr.type_desc,
+SELECT pr.principal_id, pr.name, pr.type_desc,
 pe.state_desc, pe.permission_name
-FROM
-sys.server_principals
-AS
-pr
-JOIN
-sys.server_permissions
-AS
-pe
-ON
-pe.grantee_principal_id = pr.principal_id;
+FROM sys.server_principals
+AS pr
+JOIN sys.server_permissions
+AS pe
+ON pe.grantee_principal_id = pr.principal_id;
 ```

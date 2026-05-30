@@ -95,8 +95,6 @@ into a character string of
 
 :
 
-SQL
-
 Use
 
 instead of
@@ -108,10 +106,6 @@ instead of
 to take advantage of the style functionality in
 
 .
-
-### xml
-
-### bigint
 
 The following illustration shows all explicit and implicit data type conversions that are allowed
 
@@ -153,20 +147,6 @@ declaration or column definition.
 
 
 
-### varchar
-
-### int
-
-### int
-
-### varchar
-
-### int
-
-### int
-
-### varchar
-
 For comparison operators or other expressions, the resulting data type depends on the
 
 rules of
@@ -183,8 +163,6 @@ type value
 
 to the variable, then selects a concatenation of the variable with a string.
 
-SQL
-
 The
 
 value of
@@ -200,8 +178,6 @@ statement returns the value
 The following example shows a similar script with an
 
 variable instead:
-
-SQL
 
 In this case, the
 
@@ -225,8 +201,6 @@ to an integer. If the expression provides a string that can be converted, the st
 
 succeeds, as in the following example:
 
-SQL
-
 In this case, the string
 
 can be converted to the integer value
@@ -242,20 +216,6 @@ statement
 operator becomes addition rather than concatenation when the
 
 data types provided are integers.
-
-### nchar
-
-### image
-
-### nchar
-
-### binary
-
-### binary
-
-### nchar
-
-### nvarchar
 
 ## Convert data types by using OLE Automation stored
 
@@ -331,85 +291,31 @@ them.
 
 The following table describes SQL Server to Visual Basic data type conversions.
 
-
-
 Expand table
 
 #### Visual Basic data type
 
-#### char
-
-#### varchar
-
-#### text
-
-#### nvarchar
-
-#### ntext
-
 #### String
 
-#### decimal
-
-#### numeric
-
 #### String
-
-#### bit
 
 #### Boolean
 
-#### binary
-
-#### varbinary
-
-#### image
-
-#### int
-
 #### Long
-
-#### smallint
 
 #### Integer
 
-#### tinyint
-
 #### Byte
-
-#### float
 
 #### Double
 
-#### real
-
 #### Single
-
-#### money
-
-#### smallmoney
 
 #### Currency
 
-#### datetime
-
 #### smalldatetime
 
-#### Date
-
 #### Variant
-
-### binary
-
-### varbinary
-
-### image
-
-### binary
-
-### varbinary
-
-### image
 
 #### Visual Basic data type
 
@@ -423,35 +329,15 @@ Expand table
 
 #### Object
 
-#### int
-
 #### Double
 
 #### Single
 
-#### float
-
 #### Currency
 
-#### money
-
-#### Date
-
-#### datetime
-
 #### String
 
-#### varchar
-
-#### nvarchar
-
 #### String
-
-#### text
-
-#### ntext
-
-#### varbinary
 
 SQL Server data type
 
@@ -533,13 +419,9 @@ One-dimensional
 
 array with 8,000 bytes or less
 
-
-
 Expand table
 
 #### Visual Basic data type
-
-#### image
 
 SQL Server data type
 
@@ -559,33 +441,23 @@ Last updated on 11/18/2025
 
 Related content
 
-```sql
-GETDATE()
-```
+`GETDATE()`
 
 ```sql
 0
 ```
 
-```sql
-SYSDATETIME()
-```
+`SYSDATETIME()`
 
 ```sql
 21
 ```
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-CAST
-```
+`CAST`
 
 ```sql
 $157.27
@@ -595,25 +467,15 @@ $157.27
 '157.27'
 ```
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
 ```sql
 CAST ( $157.27 AS VARCHAR(10) )
@@ -623,18 +485,13 @@ CAST ( $157.27 AS VARCHAR(10) )
 1
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
-1 is a
-string.
+1 is a string.
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 Msg 245, Level 16, State 1, Line 3
@@ -654,9 +511,7 @@ is not a string.' to data type int.
 1
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 2
@@ -670,8 +525,7 @@ SELECT
 DECLARE
 @
 string
-VARCHAR
-(10);
+VARCHAR (10);
 SET
 @
 string
@@ -705,26 +559,16 @@ SELECT
 '1'
 ```
 
-```sql
-Byte()
-```
+`Byte()`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-Byte()
-```
+`Byte()`
 
 ```sql
 Byte( 0 to length 1)
 ```
 
-```sql
-Byte()
-```
+`Byte()`
 
-```sql
-Byte()
-```
+`Byte()`

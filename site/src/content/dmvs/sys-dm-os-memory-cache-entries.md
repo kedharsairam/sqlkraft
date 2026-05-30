@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns information about all entries in caches 
 
 ## Syntax
 
-```sql
-context_switches_count
-```
+`context_switches_count`

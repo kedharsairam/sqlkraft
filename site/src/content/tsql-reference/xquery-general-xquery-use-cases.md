@@ -26,8 +26,6 @@ XML
 
 Here's the query:
 
-SQL
-
 Note the following considerations from the previous query:
 
 The

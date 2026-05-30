@@ -88,9 +88,7 @@ DLL on the local computer to connect to
 LocalDB instances.
 
 ```sql
-msoledbsql.h
-msoledbsql.h
-sqlncli.h
+msoledbsql.h msoledbsql.h sqlncli.h
 System.Version
 <major>.<minor>[.<build>[.<revision>]]
 <major>

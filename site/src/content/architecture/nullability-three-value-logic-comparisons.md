@@ -135,11 +135,7 @@ SqlBoolean data type
 System.Data.SqlTypes
 NULL
 NULL
-NULL
-x
-y
-x
-y
+NULL x y x y
 NULL
 UNKNOWN
 System.Data.SqlTypes
@@ -162,8 +158,6 @@ SqlBoolean
 |
 NULL
 SqlTypes
-IsNull
-true
-false
+IsNull true false
 SqlDecimal
 ```

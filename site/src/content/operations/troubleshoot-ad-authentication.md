@@ -76,9 +76,6 @@ commands from the SQL Server host machine.
 Bash
 
 ```cmd
-mssql.conf
-kinit
-mssql.keytab
-validate-ad-config
+mssql.conf kinit mssql.keytab validate-ad-config
 /opt/mssql/bin/mssql-conf validate-ad-config --help
 ```

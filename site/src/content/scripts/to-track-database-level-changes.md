@@ -102,8 +102,7 @@ GO
 CREATE PROCEDURE [dbo].[usp_FindDBSettingChanges2]
 AS
 BEGIN
-;WITH f AS
-(
+;WITH f AS (
   SELECT
     ROW_NUMBER() OVER (PARTITION BY database_id ORDER BY CaptureDate ASC) AS RowNumber,
     [name],
@@ -177,8 +176,7 @@ BEGIN
     [CaptureDate]
   FROM [dbo].[SQLskills_DBData]
 )
-SELECT
-    f.database_id,
+SELECT f.database_id,
     f.name,
     f.CaptureDate AS OriginalCaptureDate,
     n.CaptureDate AS ChangedCaptureDate,
@@ -301,65 +299,8 @@ SELECT
     f.target_recovery_time_in_seconds AS Original_target_recovery_time_in_seconds, n.target_recovery_time_in_seconds AS Changed_target_recovery_time_in_seconds
 FROM f
 INNER JOIN f n ON f.database_id = n.database_id AND f.RowNumber = n.RowNumber - 1
-WHERE
-(
-    f.owner_sid <> n.owner_sid OR
-    f.create_date <> n.create_date OR
-    f.compatibility_level <> n.compatibility_level OR
-    f.collation_name <> n.collation_name OR
-    f.user_access <> n.user_access OR
-    f.is_read_only <> n.is_read_only OR
-    f.is_auto_close_on <> n.is_auto_close_on OR
-    f.is_auto_shrink_on <> n.is_auto_shrink_on OR
-    f.state <> n.state OR
-    f.is_in_standby <> n.is_in_standby OR
-    f.is_cleanly_shutdown <> n.is_cleanly_shutdown OR
-    f.is_supplemental_logging_enabled <> n.is_supplemental_logging_enabled OR
-    f.snapshot_isolation_state <> n.snapshot_isolation_state OR
-    f.is_read_committed_snapshot_on <> n.is_read_committed_snapshot_on OR
-    f.recovery_model <> n.recovery_model OR
-    f.page_verify_option <> n.page_verify_option OR
-    f.is_auto_create_stats_on <> n.is_auto_create_stats_on OR
-    f.is_auto_update_stats_on <> n.is_auto_update_stats_on OR
-    f.is_auto_update_stats_async_on <> n.is_auto_update_stats_async_on OR
-    f.is_ansi_null_default_on <> n.is_ansi_null_default_on OR
-    f.is_ansi_nulls_on <> n.is_ansi_nulls_on OR
-    f.is_ansi_padding_on <> n.is_ansi_padding_on OR
-    f.is_ansi_warnings_on <> n.is_ansi_warnings_on OR
-    f.is_arithabort_on <> n.is_arithabort_on OR
-    f.is_concat_null_yields_null_on <> n.is_concat_null_yields_null_on OR
-    f.is_numeric_roundabort_on <> n.is_numeric_roundabort_on OR
-    f.is_quoted_identifier_on <> n.is_quoted_identifier_on OR
-    f.is_recursive_triggers_on <> n.is_recursive_triggers_on OR
-    f.is_cursor_close_on_commit_on <> n.is_cursor_close_on_commit_on OR
-    f.is_local_cursor_default <> n.is_local_cursor_default OR
-    f.is_fulltext_enabled <> n.is_fulltext_enabled OR
-    f.is_trustworthy_on <> n.is_trustworthy_on OR
-    f.is_db_chaining_on <> n.is_db_chaining_on OR
-    f.is_parameterization_forced <> n.is_parameterization_forced OR
-    f.is_master_key_encrypted_by_server <> n.is_master_key_encrypted_by_server OR
-    f.is_published <> n.is_published OR
-    f.is_subscribed <> n.is_subscribed OR
-    f.is_merge_published <> n.is_merge_published OR
-    f.is_distributor <> n.is_distributor OR
-    f.is_sync_with_backup <> n.is_sync_with_backup OR
-    f.service_broker_guid <> n.service_broker_guid OR
-    f.is_broker_enabled <> n.is_broker_enabled OR
-    f.is_date_correlation_on <> n.is_date_correlation_on OR
-    f.is_cdc_enabled <> n.is_cdc_enabled OR
-    f.is_encrypted <> n.is_encrypted OR
-    f.is_honor_broker_priority_on <> n.is_honor_broker_priority_on OR
-    f.replica_id <> n.replica_id OR
-    f.group_database_id <> n.group_database_id OR
-    f.default_language_lcid <> n.default_language_lcid OR
-    f.default_language_name <> n.default_language_name OR
-    f.default_fulltext_language_lcid <> n.default_fulltext_language_lcid OR
-    f.default_fulltext_language_name <> n.default_fulltext_language_name OR
-    f.is_nested_triggers_on <> n.is_nested_triggers_on OR
-    f.is_transform_noise_words_on <> n.is_transform_noise_words_on OR
-    f.two_digit_year_cutoff <> n.two_digit_year_cutoff OR
-    f.containment <> n.containment OR
-    f.target_recovery_time_in_seconds <> n.target_recovery_time_in_seconds
+WHERE (
+    f.owner_sid <> n.owner_sid OR f.create_date <> n.create_date OR f.compatibility_level <> n.compatibility_level OR f.collation_name <> n.collation_name OR f.user_access <> n.user_access OR f.is_read_only <> n.is_read_only OR f.is_auto_close_on <> n.is_auto_close_on OR f.is_auto_shrink_on <> n.is_auto_shrink_on OR f.state <> n.state OR f.is_in_standby <> n.is_in_standby OR f.is_cleanly_shutdown <> n.is_cleanly_shutdown OR f.is_supplemental_logging_enabled <> n.is_supplemental_logging_enabled OR f.snapshot_isolation_state <> n.snapshot_isolation_state OR f.is_read_committed_snapshot_on <> n.is_read_committed_snapshot_on OR f.recovery_model <> n.recovery_model OR f.page_verify_option <> n.page_verify_option OR f.is_auto_create_stats_on <> n.is_auto_create_stats_on OR f.is_auto_update_stats_on <> n.is_auto_update_stats_on OR f.is_auto_update_stats_async_on <> n.is_auto_update_stats_async_on OR f.is_ansi_null_default_on <> n.is_ansi_null_default_on OR f.is_ansi_nulls_on <> n.is_ansi_nulls_on OR f.is_ansi_padding_on <> n.is_ansi_padding_on OR f.is_ansi_warnings_on <> n.is_ansi_warnings_on OR f.is_arithabort_on <> n.is_arithabort_on OR f.is_concat_null_yields_null_on <> n.is_concat_null_yields_null_on OR f.is_numeric_roundabort_on <> n.is_numeric_roundabort_on OR f.is_quoted_identifier_on <> n.is_quoted_identifier_on OR f.is_recursive_triggers_on <> n.is_recursive_triggers_on OR f.is_cursor_close_on_commit_on <> n.is_cursor_close_on_commit_on OR f.is_local_cursor_default <> n.is_local_cursor_default OR f.is_fulltext_enabled <> n.is_fulltext_enabled OR f.is_trustworthy_on <> n.is_trustworthy_on OR f.is_db_chaining_on <> n.is_db_chaining_on OR f.is_parameterization_forced <> n.is_parameterization_forced OR f.is_master_key_encrypted_by_server <> n.is_master_key_encrypted_by_server OR f.is_published <> n.is_published OR f.is_subscribed <> n.is_subscribed OR f.is_merge_published <> n.is_merge_published OR f.is_distributor <> n.is_distributor OR f.is_sync_with_backup <> n.is_sync_with_backup OR f.service_broker_guid <> n.service_broker_guid OR f.is_broker_enabled <> n.is_broker_enabled OR f.is_date_correlation_on <> n.is_date_correlation_on OR f.is_cdc_enabled <> n.is_cdc_enabled OR f.is_encrypted <> n.is_encrypted OR f.is_honor_broker_priority_on <> n.is_honor_broker_priority_on OR f.replica_id <> n.replica_id OR f.group_database_id <> n.group_database_id OR f.default_language_lcid <> n.default_language_lcid OR f.default_language_name <> n.default_language_name OR f.default_fulltext_language_lcid <> n.default_fulltext_language_lcid OR f.default_fulltext_language_name <> n.default_fulltext_language_name OR f.is_nested_triggers_on <> n.is_nested_triggers_on OR f.is_transform_noise_words_on <> n.is_transform_noise_words_on OR f.two_digit_year_cutoff <> n.two_digit_year_cutoff OR f.containment <> n.containment OR f.target_recovery_time_in_seconds <> n.target_recovery_time_in_seconds
 );
 End
 

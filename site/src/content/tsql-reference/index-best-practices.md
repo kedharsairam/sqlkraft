@@ -139,69 +139,37 @@ even if the trigger is only declared for
 
 statements.
 
-```sql
-INSTEAD
-```
+`INSTEAD`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-INSTEAD
-```
+`INSTEAD`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-INSTEAD
-```
+`INSTEAD`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 @@ROWCOUNT
@@ -211,26 +179,16 @@ DELETE
 @@ROWCOUNT
 ```
 
-```sql
-AFTER
-```
+`AFTER`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
 ```sql
 @@ROWCOUNT
 ```
 
-```sql
-AFTER
-```
+`AFTER`
 
-```sql
-INSERT
-```
+`INSERT`

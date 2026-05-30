@@ -97,8 +97,7 @@ try
 try
 {
 impersonatedUser = clientId.Impersonate();
-if
-(impersonatedUser !=
+if (impersonatedUser !=
 null
 )
 ```

@@ -109,6 +109,4 @@ Delta Lake 1.2
 
 using the higher versions of Delta with delete vectors, v2 checkpoints, and other features,
 
-```sql
-OPENROWSET
-```
+`OPENROWSET`

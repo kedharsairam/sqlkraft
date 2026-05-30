@@ -25,8 +25,7 @@ Prepares and executes a parameterized stored procedure call specified using a re
 sp_prepexecrpc handle
 OUTPUT
 ,
-RPCC
-all
+RPCC all
 [ , bound_param ] [ , ...n ]
 [ ; ]
 ```

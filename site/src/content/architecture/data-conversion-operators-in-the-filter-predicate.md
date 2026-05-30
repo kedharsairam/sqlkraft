@@ -32,8 +32,6 @@ should be a key or
 
 included column in the filtered index definition.
 
-SQL
-
 A column in the filtered index expression should be a key or included column in the filtered
 
 index definition if the column is in the query result set. For example,
@@ -45,8 +43,6 @@ column in the query results. Therefore,
 should be a key or included column in
 
 the filtered index definition.
-
-SQL
 
 The clustered index key of the table doesn't need to be a key or included column in the filtered
 
@@ -66,49 +62,27 @@ or
 
 ) on the right side of the comparison operator.
 
-### int
+`FIBillOfMaterialsWithEndDate`
 
-### varbinary
-
-```sql
-FIBillOfMaterialsWithEndDate
-```
-
-```sql
-EndDate
-```
+`EndDate`
 
 ```sql
 EndDate > '20040101'
 ```
 
-```sql
-EndDate
-```
+`EndDate`
 
-```sql
-EndDate
-```
+`EndDate`
 
-```sql
-FIBillOfMaterialsWithEndDate
-```
+`FIBillOfMaterialsWithEndDate`
 
-```sql
-EndDate
-```
+`EndDate`
 
-```sql
-EndDate
-```
+`EndDate`
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
 ```sql
 FROM

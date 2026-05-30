@@ -14,6 +14,4 @@ Creates a collection item in a user-defined collection set. A collection item de
 
 ## Syntax
 
-```sql
-syscollector_collector_types
-```
+`syscollector_collector_types`

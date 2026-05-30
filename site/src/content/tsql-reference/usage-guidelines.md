@@ -285,93 +285,57 @@ results after recursion completes.
 
 1
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 UNION ALL
 ```
 
-```sql
-UNION
-```
+`UNION`
 
-```sql
-EXCEPT
-```
+`EXCEPT`
 
-```sql
-INTERSECT
-```
+`INTERSECT`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 CREATE VIEW
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 UNION ALL
 ```
 
-```sql
-UNION
-```
+`UNION`
 
-```sql
-INTERSECT
-```
+`INTERSECT`
 
-```sql
-EXCEPT
-```
+`EXCEPT`
 
-```sql
-WITH
-```
+`WITH`
 
-```sql
-WITH
-```
+`WITH`
 
-```sql
-WITH
-```
+`WITH`
 
 ```sql
 ORDER BY
 ```
 
-```sql
-TOP
-```
+`TOP`
 
 ```sql
 OFFSET/FETCH
@@ -386,37 +350,25 @@ OPTION
 FOR BROWSE
 ```
 
-```sql
-OPTION
-```
+`OPTION`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 UNION ALL
 ```
 
-```sql
-UNION
-```
+`UNION`
 
-```sql
-INTERSECT
-```
+`INTERSECT`
 
-```sql
-EXCEPT
-```
+`EXCEPT`
 
 ```sql
 UNION ALL
 ```
 
-```sql
-FROM
-```
+`FROM`
 
 ```sql
 SELECT DISTINCT
@@ -430,9 +382,7 @@ TOP
 LEFT
 ```
 
-```sql
-RIGHT
-```
+`RIGHT`
 
 ```sql
 OUTER JOIN

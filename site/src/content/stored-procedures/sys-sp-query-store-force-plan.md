@@ -41,15 +41,11 @@ sp_query_store_force_plan
 
 ### Example 2
 
-```sql
-sp_query_store_force_plan
-```
+`sp_query_store_force_plan`
 
 ### Example 3
 
-```sql
-sp_query_store_unforce_plan
-```
+`sp_query_store_unforce_plan`
 
 ### Example 4
 
@@ -65,73 +61,49 @@ sp_query_store_unforce_plan
 
 ### Example 6
 
-```sql
-sys.sp_query_store_force_plan
-```
+`sys.sp_query_store_force_plan`
 
 ### Example 7
 
-```sql
-ALTER
-```
+`ALTER`
 
 ### Example 8
 
 ```sql
-SELECT
-txt.query_text_id,
+SELECT txt.query_text_id,
 txt.query_sql_text,
 pl.plan_id,
 qry.*
-FROM
-sys.query_store_plan
-AS
-pl
+FROM sys.query_store_plan
+AS pl
 INNER
-JOIN
-sys.query_store_query
-AS
-qry
+JOIN sys.query_store_query
+AS qry
 ```
 
 ### Example 9
 
 ```sql
-ON
-pl.query_id = qry.query_id
+ON pl.query_id = qry.query_id
 INNER
-JOIN
-sys.query_store_query_text
-AS
-txt
-ON
-qry.query_text_id = txt.query_text_id;
-EXECUTE
-sp_query_store_force_plan
+JOIN sys.query_store_query_text
+AS txt
+ON qry.query_text_id = txt.query_text_id;
+EXECUTE sp_query_store_force_plan
 @query_id = 3,
 @plan_id = 3;
-SELECT
-query_plan
-FROM
-sys.query_store_plan
-AS
-qsp
+SELECT query_plan
+FROM sys.query_store_plan
+AS qsp
 INNER
-JOIN
-sys.query_store_plan_forcing_locations
-AS
-pfl
-ON
-pfl.query_id = qsp.query_id
+JOIN sys.query_store_plan_forcing_locations
+AS pfl
+ON pfl.query_id = qsp.query_id
 INNER
-JOIN
-sys.query_store_replicas
-AS
-qsr
-ON
-qsr.replica_group_id = qsp.replica_group_id
-WHERE
-qsr.replica_name =
+JOIN sys.query_store_replicas
+AS qsr
+ON qsr.replica_group_id = qsp.replica_group_id
+WHERE qsr.replica_name =
 'yourSecondaryReplicaName'
 ;
 ```

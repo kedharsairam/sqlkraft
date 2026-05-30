@@ -45,9 +45,7 @@ N
 
 ### Example 1
 
-```sql
-Cat_Desc
-```
+`Cat_Desc`
 
 ### Example 2
 
@@ -60,8 +58,7 @@ DECLARE
 AS
 CURSOR
 ;
-EXECUTE
-sp_help_fulltext_tables_cursor @mycursor
+EXECUTE sp_help_fulltext_tables_cursor @mycursor
 OUTPUT
 ,
 'Cat_Desc'

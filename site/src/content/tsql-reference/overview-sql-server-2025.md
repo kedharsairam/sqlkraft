@@ -89,6 +89,4 @@ appropriate version. This content applies to SQL Server 2025 (17.x) and later ve
 BULK INSERT
 ```
 
-```sql
-OPENROWSET
-```
+`OPENROWSET`

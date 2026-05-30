@@ -65,15 +65,11 @@ Creates an XML schema collection that defines the <
 type.
 
 ```sql
-xs:boolean("1")
-if
+xs:boolean("1") if
 ROOT
-ROOT
-fn:true() as xs:boolean
+ROOT fn:true() as xs:boolean
 DECLARE @x XML
 SET @x= '<ROOT><elem attr="aaa">bbb</elem></ROOT>'
-select @x.value(' if ( (/ROOT/elem/@attr)[1] eq "aaa" ) then fn:true() else
-fn:false() ', 'bit')
-go
+select @x.value(' if ( (/ROOT/elem/@attr)[1] eq "aaa" ) then fn:true() else fn:false() ', 'bit') go
 -- result = 1
 ```

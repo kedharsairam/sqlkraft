@@ -7,8 +7,6 @@ tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 Unary operators can be applied only to expressions that evaluate to any one of the data types
 
 of the numeric data type category. Is an operator that has only one numeric operand:
@@ -93,22 +91,15 @@ Comparison Operators
 +
 ```
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-FALSE
-```
+`FALSE`
 
-```sql
-UNKNOWN
-```
+`UNKNOWN`
 
 ```sql
 SELECT
-MAX
-(UnitPrice)
+MAX (UnitPrice)
 FROM
 Products;
 ```

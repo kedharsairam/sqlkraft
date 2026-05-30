@@ -14,9 +14,7 @@ Checks each distribution database for replication agents that are running but ha
 
 ## Syntax
 
-```sql
-sp_replication_agent_checkup
-```
+`sp_replication_agent_checkup`
 
 ## Permissions
 

@@ -63,8 +63,6 @@ To enable the use of PolyBase in the sample database, make sure it is installed,
 
 following stored procedure in the database:
 
-SQL
-
 This will create an external table
 
 that references a public data
@@ -79,8 +77,6 @@ secure from general public access, you will need to undertake additional configu
 
 The following query returns the data from that external data set:
 
-SQL
-
 ```cmd
 dbo.CityPopulationStatistics
 EXECUTE
@@ -88,6 +84,5 @@ EXECUTE
 SELECT
 CityID, StateProvinceCode, CityName,
 YearNumber, LatestRecordedPopulation
-FROM
-dbo.CityPopulationStatistics;
+FROM dbo.CityPopulationStatistics;
 ```

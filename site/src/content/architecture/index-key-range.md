@@ -116,8 +116,6 @@ When using the original table definition, excessive latch contention was observe
 
 the clustered index pk_table1:
 
-SQL
-
 Reordering the key columns of the index with
 
 as the leading column in the primary key
@@ -150,47 +148,27 @@ Important
 
 ### Using a hash value as the leading column in primary key
 
-```sql
-PAGELATCH_UP
-```
+`PAGELATCH_UP`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-ATM_ID
-```
+`ATM_ID`
 
-```sql
-Checkout_ID
-```
+`Checkout_ID`
 
-```sql
-UserID
-```
+`UserID`
 
-```sql
-UserID
-```
+`UserID`
 
-```sql
-TransactionID
-```
+`TransactionID`
 
 ```sql
 CREATE
-TABLE
-table1
-(
+TABLE table1 (
 TransactionID
 BIGINT
 NOT
@@ -208,11 +186,9 @@ NULL
 );
 GO
 ALTER
-TABLE
-table1
+TABLE table1
 ADD
-CONSTRAINT
-pk_table1 PRIMARY
+CONSTRAINT pk_table1 PRIMARY
 KEY
 CLUSTERED (TransactionID, UserID);
 GO

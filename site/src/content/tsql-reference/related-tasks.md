@@ -27,8 +27,6 @@ in the
 
 schema.
 
-SQL
-
 Server audit specifications:
 
 CREATE SERVER AUDIT SPECIFICATION (Transact-SQL)
@@ -77,33 +75,19 @@ sys.dm_audit_actions (Transact-SQL)
 
 Related content
 
-```sql
-DataModification_Security_Audit
-```
+`DataModification_Security_Audit`
 
-```sql
-Audit_Data_Modification_On_All_Sales_Tables
-```
+`Audit_Data_Modification_On_All_Sales_Tables`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-SalesUK
-```
+`SalesUK`
 
-```sql
-Sales
-```
+`Sales`
 
 ```sql
 WITH (STATE = ON);
@@ -111,8 +95,7 @@ GO
 ```
 
 ```sql
-USE
-master
+USE master
 ;
 GO
 -- Create the server audit.
@@ -122,8 +105,7 @@ SERVER
 AUDIT
 DataModification_Security_Audit
 TO
-FILE
-(FILEPATH =
+FILE (FILEPATH =
 'D:\SQLAudit\'); -- make sure this path exists
 GO
 -- Enable the server audit.

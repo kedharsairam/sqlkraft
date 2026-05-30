@@ -14,44 +14,30 @@ SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Conta
 
 ## Syntax
 
-```sql
-query_parameterization_type
-```
+`query_parameterization_type`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sp_query_store_reset_exec_stats
-```
+`sp_query_store_reset_exec_stats`
 
 ### Example 2
 
 ```sql
-SELECT
-txt.query_text_id,
+SELECT txt.query_text_id,
 txt.query_sql_text,
 pl.plan_id,
 qry.*
-FROM
-sys.query_store_plan
-AS
-pl
+FROM sys.query_store_plan
+AS pl
 INNER
-JOIN
-sys.query_store_query
-AS
-qry
-ON
-pl.query_id = qry.query_id
+JOIN sys.query_store_query
+AS qry
+ON pl.query_id = qry.query_id
 INNER
-JOIN
-sys.query_store_query_text
-AS
-txt
-ON
-qry.query_text_id = txt.query_text_id;
-EXECUTE
-sp_query_store_reset_exec_stats 3;
+JOIN sys.query_store_query_text
+AS txt
+ON qry.query_text_id = txt.query_text_id;
+EXECUTE sp_query_store_reset_exec_stats 3;
 ```

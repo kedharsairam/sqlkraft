@@ -96,13 +96,9 @@ pages with different kinds of protection.
 ALTER DATABASE SET
 ```
 
-```sql
-page_verify_option
-```
+`page_verify_option`
 
-```sql
-IsTornPageDetectionEnabled
-```
+`IsTornPageDetectionEnabled`
 
 ```sql
 01

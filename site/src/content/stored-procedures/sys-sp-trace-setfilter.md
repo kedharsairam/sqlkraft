@@ -35,15 +35,11 @@ sp_trace_setfilter
 
 ### Example 1
 
-```sql
-sp_trace_setfilter
-```
+`sp_trace_setfilter`
 
 ### Example 2
 
-```sql
-sp_trace_setfilter
-```
+`sp_trace_setfilter`
 
 ### Example 3
 
@@ -53,9 +49,7 @@ xp_trace_set*filter
 
 ### Example 4
 
-```sql
-sp_trace_setfilter
-```
+`sp_trace_setfilter`
 
 ### Example 5
 
@@ -83,9 +77,7 @@ N'MS%'
 
 ### Example 9
 
-```sql
-AppName
-```
+`AppName`
 
 ### Example 10
 

@@ -14,6 +14,4 @@ Configures conflict detection for a publication that is involved in a peer-to-pe
 
 ## Syntax
 
-```sql
-sp_configure_peerconflictdetection
-```
+`sp_configure_peerconflictdetection`

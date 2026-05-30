@@ -41,8 +41,6 @@ Iterative filtering behavior
 
 .
 
-SQL
-
 ７
 
 Note
@@ -75,28 +73,19 @@ table hint. For more information, see
 
 ### traditional index
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
-```sql
-ALLOW_STALE_VECTOR_INDEX
-```
+`ALLOW_STALE_VECTOR_INDEX`
 
-```sql
-FORCE_ANN_ONLY
-```
+`FORCE_ANN_ONLY`
 
 ```sql
 -- Create vector index for similarity search
 CREATE
 VECTOR
-INDEX
-idx_embeddings_vector
-ON
-product_embeddings(embedding)
-WITH
-(METRIC =
+INDEX idx_embeddings_vector
+ON product_embeddings(embedding)
+WITH (METRIC =
 'cosine'
 );
 ```

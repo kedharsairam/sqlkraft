@@ -86,9 +86,6 @@ For example, the following message is a request for a route to the service
 XML
 
 ```sql
-DELAYED
-https://schemas.microsoft.com/SQL/ServiceBroker/BrokerConfigurationNotice
-https://schemas.microsoft.com/SQL/ServiceBroker/BrokerConfigurationNotice/MissingRoute
-https://Adventure-
+DELAYED https://schemas.microsoft.com/SQL/ServiceBroker/BrokerConfigurationNotice https://schemas.microsoft.com/SQL/ServiceBroker/BrokerConfigurationNotice/MissingRoute https://Adventure-
 Works.com/Elsewhere
 ```

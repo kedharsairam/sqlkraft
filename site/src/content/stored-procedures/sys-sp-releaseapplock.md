@@ -40,23 +40,18 @@ SQL database in Microsoft Fabric Releases a lock on an application resource. Tra
 ```sql
 sp_releaseapplock
 [ [ @
-R
-esource = ]
+R esource = ]
 N
 'Resource'
 ]
 [ , [ @
-L
-ock
-O
-wner = ]
+L ock
+O wner = ]
 'LockOwner'
 ]
 [ , [ @
-D
-b
-P
-rincipal = ]
+D b
+P rincipal = ]
 N
 'DbPrincipal'
 ]

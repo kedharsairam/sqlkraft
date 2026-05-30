@@ -42,11 +42,9 @@ To list the SQL Server collations supported by your server, execute the followin
 SELECT
 Name
 , Description
-FROM
-fn_helpcollations()
+FROM fn_helpcollations()
 WHERE
-Name
-like
+Name like
 'L%'
 AND
 Description
@@ -61,8 +59,7 @@ Latin1_General_100_BIN Latin1-General-100, binary sort
 Latvian_BIN            Latvian, binary sort
 Latvian_100_BIN        Latvian-100, binary sort
 Lithuanian_BIN         Lithuanian, binary sort
-Lithuanian_100_BIN     Lithuanian-100, binary sort
-(7 row(s) affected)
+Lithuanian_100_BIN     Lithuanian-100, binary sort (7 row(s) affected)
 ```
 
 ## Remarks
@@ -107,11 +104,9 @@ fn_helpcollations ()
 SELECT
 Name
 , Description
-FROM
-fn_helpcollations()
+FROM fn_helpcollations()
 WHERE
-Name
-like
+Name like
 'L%'
 AND
 Description
@@ -126,17 +121,14 @@ Latin1_General_100_BIN Latin1-General-100, binary sort
 Latvian_BIN            Latvian, binary sort
 Latvian_100_BIN        Latvian-100, binary sort
 Lithuanian_BIN         Lithuanian, binary sort
-Lithuanian_100_BIN     Lithuanian-100, binary sort
-(7 row(s) affected)
+Lithuanian_100_BIN     Lithuanian-100, binary sort (7 row(s) affected)
 ```
 
 ### Example 4
 
 ```sql
-SELECT
-name
+SELECT name
 ,
 description
-FROM
-fn_helpcollations();
+FROM fn_helpcollations();
 ```

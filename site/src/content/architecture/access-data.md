@@ -51,8 +51,6 @@ The following example shows how to insert
 
 Database Engine doesn't create a file in the file system.
 
-SQL
-
 The following example shows how to use
 
 to create a zero-length record. This is useful
@@ -60,8 +58,6 @@ to create a zero-length record. This is useful
 for when you want to obtain a file handle, but will be manipulating the file by using Win32
 
 APIs.
-
-SQL
 
 ７
 
@@ -82,14 +78,12 @@ INSERT
 INSERT
 INTO
 Archive.dbo.Records
-VALUES
-(NEWID(), 1,
+VALUES (NEWID(), 1,
 NULL
 );
 GO
 INSERT
 INTO
 Archive.dbo.Records
-VALUES
-(NEWID(), 2,
+VALUES (NEWID(), 2,
 ```

@@ -46,8 +46,6 @@ When the security cache is invalid, SQL Server follows a no cache workflow to va
 
 To demonstrate, consider the following query:
 
-SQL
-
 When the security cache is invalid, the service completes the steps described in the following
 
 workflow before it resolves the query.
@@ -123,18 +121,14 @@ the next section.
 db_owner.
 
 ```sql
-SELECT
-t1.Column1,
+SELECT t1.Column1,
 t2.Column1
 FROM
 Schema1.Table1
-AS
-t1
+AS t1
 INNER
 JOIN
 Schema2.Table2
-AS
-t2
-ON
-t1.Column1 = t2.Column2;
+AS t2
+ON t1.Column1 = t2.Column2;
 ```

@@ -17,8 +17,7 @@ SQL Server 2022 (16.x) and later versions Mirrored databases in Microsoft SQL da
 ## Syntax
 
 ```sql
-EXECUTE
-sys.sp_help_change_feed_table;
+EXECUTE sys.sp_help_change_feed_table;
 ```
 
 ## Examples
@@ -26,6 +25,5 @@ sys.sp_help_change_feed_table;
 ### Example 1
 
 ```sql
-EXECUTE
-sp_help_change_feed;
+EXECUTE sp_help_change_feed;
 ```

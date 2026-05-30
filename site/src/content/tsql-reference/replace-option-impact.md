@@ -77,13 +77,9 @@ a database by a different database.
 
 SQL Server Big Data Clusters
 
-```sql
-sp_updatestats
-```
+`sp_updatestats`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
 ```sql
 RESTORE DATABASE

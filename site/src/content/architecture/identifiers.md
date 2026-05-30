@@ -65,8 +65,6 @@ and
 
 :
 
-SQL
-
 This table has an unnamed constraint. The primary key constraint has no user-specified
 
 identifier, so the system assigns it a generated name like
@@ -106,15 +104,13 @@ Description
 PK__TableX__D7CB9CCCEEF0806C
 CREATE
 TABLE
-TableX
-(
+TableX (
 KeyCol
 INT
 PRIMARY
 KEY
 ,
 Description
-NVARCHAR
-(80)
+NVARCHAR (80)
 );
 ```

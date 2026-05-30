@@ -35,8 +35,6 @@ SQL Managed Instance
 
 Azure Synapse Analytics (serverless SQL pool only)
 
-SQL
-
 analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
@@ -82,8 +80,7 @@ FOR JSON
 ROOT
 ROOT
 FOR JSON
-ROOT
-root
+ROOT root
 {
 <<json properties>>
 }

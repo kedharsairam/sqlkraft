@@ -51,8 +51,6 @@ in the
 
 statement, for example:
 
-SQL
-
 If more than one temporary table is created inside a single stored procedure or batch, they
 
 must have different names.
@@ -161,8 +159,6 @@ column names, as the table created in the calling procedure. This is shown in th
 
 example.
 
-SQL
-
 Here's the result set.
 
 Output
@@ -209,17 +205,11 @@ within the scope of a user-defined transaction, only one user at a time can exec
 CREATE TABLE
 ```
 
-```sql
-dbo
-```
+`dbo`
 
-```sql
-sys.objects
-```
+`sys.objects`
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 CREATE TABLE
@@ -228,8 +218,7 @@ CREATE TABLE
 ```sql
 CREATE
 TABLE
-#MyTempTable
-(
+#MyTempTable (
 col1
 INT
 PRIMARY
@@ -238,21 +227,16 @@ KEY
 INSERT
 INTO
 #MyTempTable
-VALUES
-(1);
+VALUES (1);
 ```
 
 ```sql
 DROP TABLE
 ```
 
-```sql
-GLOBAL_TEMPORARY_TABLE_AUTO_DROP
-```
+`GLOBAL_TEMPORARY_TABLE_AUTO_DROP`
 
-```sql
-GLOBAL_TEMPORARY_TABLE_AUTO_DROP
-```
+`GLOBAL_TEMPORARY_TABLE_AUTO_DROP`
 
 ```sql
 DROP TABLE
@@ -260,13 +244,11 @@ DROP TABLE
 
 ```sql
 CREATE
-PROCEDURE
-dbo.Test2
+PROCEDURE dbo.Test2
 AS
 CREATE
 TABLE
-#t
-(
+#t (
 x
 INT
 PRIMARY
@@ -275,10 +257,8 @@ KEY
 INSERT
 INTO
 #t
-VALUES
-(2);
-SELECT
-x
+VALUES (2);
+SELECT x
 AS
 Test2Col
 FROM
@@ -308,13 +288,11 @@ FOREIGN KEY
 
 ```sql
 CREATE
-PROCEDURE
-dbo.Test1
+PROCEDURE dbo.Test1
 AS
 CREATE
 TABLE
-#t
-(
+#t (
 x
 INT
 PRIMARY
@@ -323,10 +301,8 @@ KEY
 INSERT
 INTO
 #t
-VALUES
-(1);
-SELECT
-x
+VALUES (1);
+SELECT x
 AS
 Test1Col
 FROM
@@ -336,8 +312,7 @@ Test2;
 GO
 CREATE
 TABLE
-#t
-(
+#t (
 x
 INT
 PRIMARY
@@ -346,17 +321,14 @@ KEY
 INSERT
 INTO
 #t
-VALUES
-(99);
+VALUES (99);
 GO
 EXECUTE
 Test1;
-GO
-(1 row(s) affected)
+GO (1 row(s) affected)
 Test1Col
 -----------
-1
-(1 row(s) affected)
+1 (1 row(s) affected)
 Test2Col
 -----------
 2

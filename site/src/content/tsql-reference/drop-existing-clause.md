@@ -120,37 +120,26 @@ WITH (DROP_EXISTING, ONLINE = ON)
 ```
 
 ```sql
-WITH
-(<option_name> = <ON | OFF>)
+WITH (<option_name> = <ON | OFF>)
 ```
 
-```sql
-DROP_EXISTING
-```
+`DROP_EXISTING`
 
 ```sql
 PRIMARY KEY
 ```
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
 ```sql
 PRIMARY KEY
 ```
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
-```sql
-DROP_EXISTING
-```
+`DROP_EXISTING`
 
-```sql
-DROP_EXISTING
-```
+`DROP_EXISTING`
 
 ```sql
 DROP INDEX
@@ -160,18 +149,10 @@ DROP INDEX
 CREATE INDEX
 ```
 
-```sql
-DROP_EXISTING
-```
+`DROP_EXISTING`
 
-```sql
-DROP_EXISTING
-```
+`DROP_EXISTING`
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-OFF
-```
+`OFF`

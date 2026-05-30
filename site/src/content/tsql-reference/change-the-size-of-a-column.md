@@ -101,19 +101,9 @@ If there are any execution plans in the procedure cache that reference the table
 
 marks them to be recompiled on their next execution.
 
-### varchar
+`SWITCH`
 
-### nvarchar
-
-### varbinary
-
-```sql
-SWITCH
-```
-
-```sql
-SWITCH
-```
+`SWITCH`
 
 ```sql
 ALTER ANY CONNECTION
@@ -123,25 +113,15 @@ ALTER ANY CONNECTION
 ALTER TABLE ADD CONSTRAINT
 ```
 
-```sql
-ON
-```
+`ON`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-RESUMABLE
-```
+`RESUMABLE`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
 ```sql
 RESUMABLE = ON

@@ -14,9 +14,7 @@ SQL analytics endpoint in Microsoft Fabric SQL database in Microsoft Fabric Retu
 
 ## Syntax
 
-```sql
-sys.dm_exec_connections
-```
+`sys.dm_exec_connections`
 
 ## Permissions
 

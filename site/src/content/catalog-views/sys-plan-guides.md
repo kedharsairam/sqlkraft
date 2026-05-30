@@ -14,6 +14,4 @@ SQL database in Microsoft Fabric Contains a row for each plan guide in the datab
 
 ## Syntax
 
-```sql
-sys.fn_validate_plan_guide
-```
+`sys.fn_validate_plan_guide`

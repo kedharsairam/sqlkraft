@@ -32,8 +32,6 @@ page latch contention.
 
 A script similar to the following can be used to pad rows to occupy an entire page:
 
-SQL
-
 This technique is explained for completeness; in practice SQLCAT has only used this on a small
 
 table with 10,000 rows in a single performance engagement. This technique has a limited
@@ -68,26 +66,19 @@ byte counts in a high performance system.
 
 Important
 
-```sql
-EX
-```
+`EX`
 
-```sql
-EX
-```
+`EX`
 
 ```sql
 ALTER
-TABLE
-mytable
+TABLE mytable
 ADD
 Padding
-CHAR
-(5000)
+CHAR (5000)
 DEFAULT
 NOT
-NULL
-(
+NULL (
 'X'
 );
 ```

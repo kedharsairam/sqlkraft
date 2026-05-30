@@ -87,6 +87,4 @@ indexes, the Database Engine implements a B+ tree. This does not apply to column
 
 indexes or indexes on memory-optimized tables. For more information, see the
 
-SQL
-
 .

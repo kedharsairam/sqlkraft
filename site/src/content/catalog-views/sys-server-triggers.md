@@ -32,19 +32,15 @@ Contains the set of all server-level DDL triggers with object_type of TR or TA. 
 ## Syntax
 
 ```sql
-SELECT
-name
+SELECT name
 , is_disabled, create_date, modify_date
-FROM
-sys.server_triggers
-WHERE
-type_desc =
+FROM sys.server_triggers
+WHERE type_desc =
 'LOGON'
 ;
 DISABLE TRIGGER trigger_name ON ALL SERVER;
 DROP
-TRIGGER
-trigger_name
+TRIGGER trigger_name
 ON
 ALL
 SERVER

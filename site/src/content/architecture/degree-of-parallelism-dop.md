@@ -182,14 +182,8 @@ Evaluation editions.
 
 ### MAXDOP
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`

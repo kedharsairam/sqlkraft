@@ -34,15 +34,11 @@ priority and sorted in ascending priority order.
 
 This example uses theoretical table and column names.
 
-SQL
-
 Assume the following indexes are defined on the
 
 and
 
 tables:
-
-SQL
 
 
 
@@ -122,66 +118,45 @@ value for each different value of the
 
 in the Stream Aggregate operator above the parallelism operator. Because
 
-```sql
-lineitem
-```
+`lineitem`
+
+`orders`
 
 ```sql
-orders
-```
-
-```sql
-SELECT
-o_orderpriority,
-COUNT
-(*)
+SELECT o_orderpriority,
+COUNT (*)
 AS
 Order_Count
-FROM
-orders
-WHERE
-o_orderdate >=
+FROM orders
+WHERE o_orderdate >=
 '2000/04/01'
-AND
-o_orderdate <
-DATEADD
-(mm, 3,
+AND o_orderdate <
+DATEADD (mm, 3,
 '2000/04/01'
 )
 AND
-EXISTS
-(
+EXISTS (
 SELECT
 *
-FROM
-lineitem
-WHERE
-l_orderkey = o_orderkey
-AND
-l_commitdate < l_receiptdate
+FROM lineitem
+WHERE l_orderkey = o_orderkey
+AND l_commitdate < l_receiptdate
 )
 GROUP
-BY
-o_orderpriority
+BY o_orderpriority
 ORDER
-BY
-o_orderpriority
+BY o_orderpriority
 ```
 
 ```sql
 CREATE
-INDEX
-l_order_dates_idx
-ON
-lineitem
-(l_orderkey, l_receiptdate, l_commitdate, l_shipdate)
+INDEX l_order_dates_idx
+ON lineitem (l_orderkey, l_receiptdate, l_commitdate, l_shipdate)
 CREATE
 UNIQUE
-INDEX
-o_datkeyopr_idx
+INDEX o_datkeyopr_idx
 ON
-ORDERS
-(o_orderdate, o_orderkey, o_custkey, o_orderpriority)
+ORDERS (o_orderdate, o_orderkey, o_custkey, o_orderpriority)
 |--Stream Aggregate(GROUP BY:([ORDERS].[o_orderpriority])
 DEFINE:([Expr1005]=COUNT(*)))
 |--Parallelism(Gather Streams, ORDER BY:
@@ -216,37 +191,21 @@ ORDER BY:([LINEITEM].[l_orderkey] ASC))
 ([tpcd1G].[dbo].[LINEITEM].[L_ORDER_DATES_IDX]), ORDERED)
 ```
 
-```sql
-o_datkey_ptr
-```
+`o_datkey_ptr`
 
-```sql
-l_order_dates_idx
-```
+`l_order_dates_idx`
 
-```sql
-l_order_dates_idx
-```
+`l_order_dates_idx`
 
-```sql
-L_ORDERKEY
-```
+`L_ORDERKEY`
 
-```sql
-L_ORDERKEY
-```
+`L_ORDERKEY`
 
-```sql
-L_ORDERKEY
-```
+`L_ORDERKEY`
 
-```sql
-O_ORDERKEY
-```
+`O_ORDERKEY`
 
-```sql
-O_ORDERKEY
-```
+`O_ORDERKEY`
 
 ```sql
 Merge Join
@@ -256,14 +215,8 @@ Merge Join
 Merge Join
 ```
 
-```sql
-Sort
-```
+`Sort`
 
-```sql
-SUM
-```
+`SUM`
 
-```sql
-O_ORDERPRIORITY
-```
+`O_ORDERPRIORITY`

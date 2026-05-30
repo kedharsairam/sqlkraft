@@ -87,8 +87,6 @@ SAVE TRANSACTION
 
 COMMIT WORK
 
-
-
 Expand table
 
 SET IMPLICIT_TRANSACTIONS (Transact-SQL)
@@ -103,18 +101,10 @@ Related content
 BEGIN TRANSACTION
 ```
 
-```sql
-COMMIT
-```
+`COMMIT`
 
-```sql
-ROLLBACK
-```
+`ROLLBACK`
 
-```sql
-COMMIT
-```
+`COMMIT`
 
-```sql
-ROLLBACK
-```
+`ROLLBACK`

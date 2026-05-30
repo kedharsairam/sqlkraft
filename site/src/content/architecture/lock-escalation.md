@@ -6,8 +6,6 @@ tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 The
 
 mode key-range lock is placed on the index row corresponding to the name
@@ -47,8 +45,6 @@ held for the duration of the transaction. Placing an exclusive TID lock on the i
 until the end of the transaction is sufficient to maintain serializability. For example, given this
 
 statement:
-
-SQL
 
 With optimized locking, a
 
@@ -94,13 +90,9 @@ locks, reducing system overhead while increasing the probability of concurrency 
 RangeI-N
 ```
 
-```sql
-David
-```
+`David`
 
-```sql
-Dan
-```
+`Dan`
 
 ```sql
 X
@@ -110,41 +102,27 @@ X
 RangeI-N
 ```
 
-```sql
-Dan
-```
+`Dan`
 
-```sql
-Dan
-```
+`Dan`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 RangeI-N
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
 ```sql
 RangeI-N
 ```
 
-```sql
-David
-```
+`David`
 
-```sql
-Dan
-```
+`Dan`
 
 ```sql
 X
@@ -154,28 +132,20 @@ X
 RangeI-N
 ```
 
-```sql
-Dan
-```
+`Dan`
+
+`Dan`
 
 ```sql
-Dan
-```
-
-```sql
-INSERT
-mytable
-VALUES
-(
+INSERT mytable
+VALUES (
 'Dan'
 );
 ```
 
 ```sql
-INSERT
-mytable
-VALUES
-(
+INSERT mytable
+VALUES (
 'Dan'
 );
 ```

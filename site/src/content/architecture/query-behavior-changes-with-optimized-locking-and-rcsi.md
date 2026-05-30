@@ -60,8 +60,6 @@ based on column
 
 that was updated during transaction T1.
 
-SQL
-
 ﾉ
 
 Expand table
@@ -118,41 +116,25 @@ Important
 
 ### use stricter isolation levels
 
-```sql
-UPDLOCK
-```
+`UPDLOCK`
 
-```sql
-READCOMMITTEDLOCK
-```
+`READCOMMITTEDLOCK`
 
-```sql
-XLOCK
-```
+`XLOCK`
 
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-t4
-```
+`t4`
 
 ```sql
 b
@@ -165,23 +147,17 @@ UPDATE t4
 
 ```sql
 CREATE
-TABLE
-t4
-(
-a
-int
+TABLE t4 (
+a int
 NOT
 NULL
 ,
-b
-int
+b int
 NULL
 );
 INSERT
-INTO
-t4
-VALUES
-(1,1);
+INTO t4
+VALUES (1,1);
 GO
 ```
 
@@ -196,9 +172,7 @@ COMMIT TRANSACTION;
 COMMIT TRANSACTION;
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 b
@@ -208,9 +182,7 @@ b
 3
 ```
 
-```sql
-t4
-```
+`t4`
 
 ```sql
 b
@@ -224,13 +196,10 @@ b
 b = 2
 ```
 
-```sql
-t4
-```
+`t4`
 
 ```sql
 a | b
-1 | 3
-a | b
+1 | 3 a | b
 1 | 2
 ```

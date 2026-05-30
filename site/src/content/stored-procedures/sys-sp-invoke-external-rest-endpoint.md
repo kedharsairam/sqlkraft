@@ -14,6 +14,4 @@ SQL database in Microsoft Fabric stored procedure invokes an HTTPS REST endpoint
 
 ## Syntax
 
-```sql
-sp_invoke_external_rest_endpoint
-```
+`sp_invoke_external_rest_endpoint`

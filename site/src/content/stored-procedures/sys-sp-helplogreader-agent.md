@@ -14,6 +14,4 @@ Returns properties of the Log Reader Agent job for the publication database. Thi
 
 ## Syntax
 
-```sql
-publisher_security_mode
-```
+`publisher_security_mode`

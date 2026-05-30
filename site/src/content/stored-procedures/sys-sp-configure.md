@@ -426,9 +426,7 @@ Max Connections
 
 ### Example 5
 
-```sql
-sp_configure
-```
+`sp_configure`
 
 ### Example 6
 
@@ -438,9 +436,7 @@ sp_configure
 
 ### Example 7
 
-```sql
-SELECT
-```
+`SELECT`
 
 ### Example 8
 

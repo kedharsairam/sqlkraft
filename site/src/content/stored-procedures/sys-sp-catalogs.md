@@ -29,21 +29,15 @@ N
 
 ### Example 1
 
-```sql
-CATALOG_NAME
-```
+`CATALOG_NAME`
 
 ### Example 2
 
-```sql
-DESCRIPTION
-```
+`DESCRIPTION`
 
 ### Example 3
 
-```sql
-SELECT
-```
+`SELECT`
 
 ### Example 4
 
@@ -63,9 +57,7 @@ Linked Server #3
 
 ### Example 6
 
-```sql
-sp_catalogs
-```
+`sp_catalogs`
 
 ### Example 7
 
@@ -76,12 +68,10 @@ OLE DB ODBC Linked Server #3
 ### Example 8
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_catalogs
+EXECUTE sp_catalogs
 'OLE DB ODBC Linked Server #3'
 ;
 ```

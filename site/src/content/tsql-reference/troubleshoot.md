@@ -45,8 +45,6 @@ the file has adequate free space:
 
 Run the following query.
 
-SQL
-
 Run the
 
 DBCC SQLPERF
@@ -62,13 +60,11 @@ DBCC SHRINKFILE
 ```
 
 ```sql
-SELECT
-name
+SELECT name
 ,
 size
 / 128.0 -
-CAST
-(FILEPROPERTY(
+CAST (FILEPROPERTY(
 name
 ,
 'SpaceUsed'
@@ -78,6 +74,5 @@ INT
 ) / 128.0
 AS
 AvailableSpaceInMB
-FROM
-sys.database_files;
+FROM sys.database_files;
 ```

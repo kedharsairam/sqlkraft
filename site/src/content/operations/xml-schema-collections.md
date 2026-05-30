@@ -74,8 +74,7 @@ The following example shows how to configure an XSD file in a SQL project:
 ```cmd
 CREATE XML SCHEMA COLLECTION
 Build
-.sqlproj
-dbo
+.sqlproj dbo
 <?xml version="1.0" encoding="utf-8"?>
 <Project
 DefaultTargets

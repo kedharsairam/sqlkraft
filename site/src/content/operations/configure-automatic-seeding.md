@@ -87,8 +87,6 @@ and
 
 to match your environment and run the script on both servers:
 
-SQL
-
 ```cmd
 SEEDING_MODE=AUTOMATIC
 <endpoint_name>

@@ -17,14 +17,8 @@ SQL) ﾃ Summarize this article for me Applies to: SQL Server Returns one row fo
 
 ## Code Blocks
 
-```sql
-group_id
-```
+`group_id`
 
-```sql
-group_database_id
-```
+`group_database_id`
 
-```sql
-database_name
-```
+`database_name`

@@ -80,6 +80,5 @@ the row and column describes the data type of the result set column.
 Expand table
 
 ```sql
-sp_OAGetProperty
-sp_OAMethod
+sp_OAGetProperty sp_OAMethod
 ```

@@ -65,8 +65,6 @@ element and NULL as
 
 because it's the top-level element.
 
-SQL
-
 This is the second query. It retrieves values for the
 
 element. It assigns
@@ -84,8 +82,6 @@ as
 tag value identifying
 
 as the parent.
-
-SQL
 
 ```sql
 AdventureWorks2025
@@ -118,23 +114,19 @@ LName
 </Employee>
 ...
 SELECT
-1
-as
+1 as
 Tag,
-NULL
-as
+NULL as
 Parent
 ,
 E.BusinessEntityID
 AS
 [Employee!1!EmpID],
-NULL
-as
+NULL as
 [
 Name
 !2!FName],
-NULL
-as
+NULL as
 [
 Name
 !2!LName]
@@ -150,11 +142,9 @@ P
 ON
 E.BusinessEntityID = P.BusinessEntityID;
 SELECT
-2
-as
+2 as
 Tag,
-1
-as
+1 as
 Parent
 ,
 E.BusinessEntityID,

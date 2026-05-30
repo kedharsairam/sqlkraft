@@ -78,6 +78,5 @@ Note
 Access to Red Hat HA add-on and documentation requires a subscription.
 
 ```cmd
-sys.dm_os_cluster_nodes
-sys.dm_os_cluster_properties
+sys.dm_os_cluster_nodes sys.dm_os_cluster_properties
 ```

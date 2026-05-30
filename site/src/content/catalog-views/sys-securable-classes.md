@@ -25,11 +25,9 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns a list 
 ```sql
 SELECT
 *
-FROM
-sys.securable_classes
+FROM sys.securable_classes
 ORDER
-BY
-class
+BY class
 ;
 ```
 
@@ -40,10 +38,8 @@ class
 ```sql
 SELECT
 *
-FROM
-sys.securable_classes
+FROM sys.securable_classes
 ORDER
-BY
-class
+BY class
 ;
 ```

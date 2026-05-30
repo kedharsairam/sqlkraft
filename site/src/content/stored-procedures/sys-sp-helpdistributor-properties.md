@@ -14,9 +14,7 @@ Returns Distributor properties. This stored procedure is executed at the Distrib
 
 ## Syntax
 
-```sql
-sp_helpdistributor_properties
-```
+`sp_helpdistributor_properties`
 
 ## Permissions
 

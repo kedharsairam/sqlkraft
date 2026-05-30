@@ -8,9 +8,7 @@ pubDate: 2025-03-15
 ---
 
 ```sql
---use this on principal and mirror
-select * from sys.database_mirroring
+--use this on principal and mirror select * from sys.database_mirroring
 
---use this on witness
-select * from sys.database_mirroring_witnesses
+--use this on witness select * from sys.database_mirroring_witnesses
 ```

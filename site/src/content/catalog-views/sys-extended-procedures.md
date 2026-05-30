@@ -14,9 +14,7 @@ Contains a row for each object that is an extended stored procedure, with . Beca
 
 ## Syntax
 
-```sql
-sys.extended_procedures
-```
+`sys.extended_procedures`
 
 ## Permissions
 

@@ -14,9 +14,7 @@ Repairs policy automation in Policy-Based Management. For example, you can use t
 
 ## Syntax
 
-```sql
-sp_syspolicy_repair_policy_automation
-```
+`sp_syspolicy_repair_policy_automation`
 
 ## Permissions
 
@@ -27,7 +25,6 @@ sp_syspolicy_repair_policy_automation
 ### Example 1
 
 ```sql
-EXECUTE
-msdb.dbo.sp_syspolicy_repair_policy_automation;
+EXECUTE msdb.dbo.sp_syspolicy_repair_policy_automation;
 GO
 ```

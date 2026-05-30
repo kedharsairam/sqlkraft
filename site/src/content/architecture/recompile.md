@@ -92,6 +92,5 @@ performance can be improved by using the RECOMPILE query hint inside those queri
 Since only the queries using the query hint will be recompiled instead of the complete
 
 ```sql
-WITH RECOMPILE
-sp_recompile
+WITH RECOMPILE sp_recompile
 ```

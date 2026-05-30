@@ -75,8 +75,6 @@ to the service Ordering. This procedure
 
 assumes that the user, the services, and the queue already exist.
 
-SQL
-
 ７
 
 Note

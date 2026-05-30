@@ -14,6 +14,4 @@ inserts references into the merge tracking tables, for any rows in a source tabl
 
 ## Syntax
 
-```sql
-sp_addtabletocontents
-```
+`sp_addtabletocontents`

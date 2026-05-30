@@ -64,6 +64,5 @@ Migration (Service Broker)
 Back up and restore of SQL Server databases
 
 ```sql
-msdb
-master
+msdb master
 ```

@@ -14,9 +14,7 @@ Returns a row for each database master key password added by using the stored pr
 
 ## Syntax
 
-```sql
-sp_control_dbmasterkey_password
-```
+`sp_control_dbmasterkey_password`
 
 ## Permissions
 

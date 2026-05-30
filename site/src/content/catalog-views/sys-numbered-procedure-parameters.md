@@ -17,6 +17,5 @@ Contains one row for each parameter of a numbered procedure. When you create a n
 ## Syntax
 
 ```sql
-sys.numbered_procedures
-sys.numbered_procedure_parameters
+sys.numbered_procedures sys.numbered_procedure_parameters
 ```

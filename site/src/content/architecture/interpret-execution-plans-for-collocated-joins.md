@@ -38,8 +38,6 @@ operator with a
 
 predicate on partition ID. The following example shows the Showplan information provided:
 
-SQL
-
 Join collocation can occur when two tables are partitioned using the same or equivalent
 
 partitioning function and the partitioning columns from both sides of the join are specified in
@@ -70,25 +68,17 @@ and the
 
 join operators.
 
-```sql
-SHOWPLAN_ALL
-```
+`SHOWPLAN_ALL`
 
-```sql
-SHOWPLAN_TEXT
-```
+`SHOWPLAN_TEXT`
 
 ```sql
 STATISTICS PROFILE
 ```
 
-```sql
-SEEK
-```
+`SEEK`
 
-```sql
-SEEK
-```
+`SEEK`
 
 ```sql
 Clustered Index Seek
@@ -102,9 +92,7 @@ date_id BETWEEN 20080802 AND 20080902
 Table Scan
 ```
 
-```sql
-SEEK
-```
+`SEEK`
 
 ```sql
 Nested Loops

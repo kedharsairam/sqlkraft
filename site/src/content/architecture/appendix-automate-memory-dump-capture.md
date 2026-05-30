@@ -72,46 +72,31 @@ The following SQL script can be used to automate the process of capturing memory
 
 help analyze spinlock contention:
 
-SQL
-
-```sql
-SOS_CACHESTORE
-```
+`SOS_CACHESTORE`
 
 ```sql
 /*
 This script is provided "AS IS" with no warranties, and confers no rights.
-Use:    This procedure will monitor for spinlocks with a high number of backoff
-events
-over a defined time period which would indicate that there is likely
+Use:    This procedure will monitor for spinlocks with a high number of backoff events over a defined time period which would indicate that there is likely
 ```
 
 ```sql
-significant
-spin lock contention.
+significant spin lock contention.
 Modify the variables noted below before running.
 Requires:
-xp_cmdshell to be enabled
-sp_configure 'xp_cmd', 1
-go
-reconfigure
-go
+xp_cmdshell to be enabled sp_configure 'xp_cmd', 1 go reconfigure go
 **********************************************************************************
 ***********************/
-USE
-tempdb;
+USE tempdb;
 GO
 IF object_id('sp_xevent_dump_on_backoffs') IS NOT NULL
 DROP
-PROCEDURE
-sp_xevent_dump_on_backoffs;
+PROCEDURE sp_xevent_dump_on_backoffs;
 GO
 CREATE
-PROCEDURE
-sp_xevent_dump_on_backoffs (
+PROCEDURE sp_xevent_dump_on_backoffs (
 @sqldumper_path
-NVARCHAR
-(
+NVARCHAR (
 max
 ) =
 '"c:\Program Files\Microsoft SQL
@@ -120,8 +105,7 @@ Server\100\Shared\SqlDumper.exe"'
 @dump_threshold
 INT
 = 500,
---capture mini dump when the slot count for the top
-bucket exceeds this
+--capture mini dump when the slot count for the top bucket exceeds this
 @total_delay_time_seconds
 INT
 = 60,
@@ -130,8 +114,7 @@ INT
 INT
 = 0,
 @output_path
-NVARCHAR
-(
+NVARCHAR (
 MAX
 ) =
 'c:\',
@@ -139,15 +122,11 @@ MAX
 )
 AS
 /*
---Find the spinlock types
-select map_value, map_key, name from sys.dm_xe_map_values
-where name = '
+--Find the spinlock types select map_value, map_key, name from sys.dm_xe_map_values where name = '
 spinlock_types
 '
 order by map_value asc
---Example: Get the type value for any given spinlock type
-select map_value, map_key, name from sys.dm_xe_map_values
-where map_value IN ('
+--Example: Get the type value for any given spinlock type select map_value, map_key, name from sys.dm_xe_map_values where map_value IN ('
 SOS_CACHESTORE
 ', '
 LOCK_HASH
@@ -199,8 +178,7 @@ DECLARE @slot_count BIGINT;
 DECLARE @xp_cmdshell NVARCHAR(MAX) = NULL;
 --start polling for the backoffs
 PRINT '
-Polling
-for
+Polling for
 :
 ' + convert(VARCHAR(32), @total_delay_time_seconds) + '
 seconds
@@ -247,16 +225,14 @@ convert(NVARCHAR(max), @PID) + '
 '''
 EXEC sp_executesql @xp_cmdshell
 PRINT '
-loop
-count
+loop count
 :
 ' + convert(VARCHAR(128), @loop_count)
 ```
 
 ```sql
 PRINT '
-slot
-count
+slot count
 :
 ' + convert(VARCHAR(128), @slot_count)
 SET @dump_captured_flag = 1
@@ -285,8 +261,7 @@ GO
 --Example: This will run continuously until a dump is created.
 DECLARE @sqldumper_path NVARCHAR(MAX) = '"c:\Program Files\Microsoft SQL
 Server\100\Shared\SqlDumper.exe"';
-DECLARE @dump_threshold INT = 300; --capture mini dump when the slot count for the
-top bucket exceeds this
+DECLARE @dump_threshold INT = 300; --capture mini dump when the slot count for the top bucket exceeds this
 DECLARE @total_delay_time_seconds INT = 60; --poll for 60 seconds
 DECLARE @PID INT = 0;
 DECLARE @flag TINYINT = 0;
@@ -312,8 +287,7 @@ ID
 SELECT @PID = convert(INT, (REPLACE(REPLACE(TEXT, '
 Server
 Process
-ID
-is
+ID is
 ', ''),
 '
 .
@@ -322,8 +296,7 @@ FROM @error_log
 WHERE TEXT LIKE ('
 Server
 Process
-ID
-is
+ID is
 %
 ');
 ```

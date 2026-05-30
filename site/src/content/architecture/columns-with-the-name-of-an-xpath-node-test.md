@@ -71,8 +71,6 @@ The following query shows the use of the node tests as column names. It adds tex
 
 comments in the resulting XML.
 
-SQL
-
 ﾉ
 
 Expand table
@@ -103,28 +101,22 @@ as
 as
 "EmpName/text()"
 ,
-FirstName
-as
+FirstName as
 "EmpName/First"
 ,
-MiddleName
-as
+MiddleName as
 "EmpName/Middle"
 ,
-LastName
-as
+LastName as
 "EmpName/Last"
 ,
-AddressLine1
-as
+AddressLine1 as
 "Address/AddrLine1"
 ,
-AddressLine2
-as
+AddressLine2 as
 "Address/AddrLIne2"
 ,
-City
-as
+City as
 "Address/City"
 FROM
 HumanResources.Employee

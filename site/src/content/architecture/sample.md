@@ -88,10 +88,7 @@ City
 Friends
 Likes
 LivesIn
-LocatedIn
-restaurant
-city
-person
+LocatedIn restaurant city person
 LivesIn
 LocatedIn
 Likes

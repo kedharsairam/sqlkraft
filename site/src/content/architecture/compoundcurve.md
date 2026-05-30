@@ -39,8 +39,6 @@ SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
 
-SQL
-
 database in Microsoft Fabric
 
 A
@@ -119,6 +117,4 @@ instance are accepted circular arc
 
 segment instances. For more information on accepted circular arc segment instances, see
 
-```sql
-System.FormatException
-```
+`System.FormatException`

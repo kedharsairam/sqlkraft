@@ -119,23 +119,13 @@ Expand table
 Expand table
 
 ```sql
-sp_addremotelogin
-sp_addserver
-sp_dropremotelogin
-sp_helpremotelogin
-sp_remoteoption
+sp_addremotelogin sp_addserver sp_dropremotelogin sp_helpremotelogin sp_remoteoption
 ```
 
-```sql
-sp_addserver
-```
+`sp_addserver`
 
 ```sql
-sp_addremotelogin
-sp_addserver
-sp_dropremotelogin
-sp_helpremotelogin
-sp_remoteoption
+sp_addremotelogin sp_addserver sp_dropremotelogin sp_helpremotelogin sp_remoteoption
 ```
 
 ```sql
@@ -152,21 +142,13 @@ REMOTE_PROC_TRANSACTIONS
 SET ROWCOUNT
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-TOP
-```
+`TOP`
 
 ```sql
 SET ROWCOUNT
@@ -175,8 +157,5 @@ SET ROWCOUNT
 ```sql
 sp_addumpdevice 'tape'
 sp_addumpdevice 'disk'
-ADDING TAPE DEVICE
-sp_helpdevice
-sys.backup_devices
-sp_helpdevice
+ADDING TAPE DEVICE sp_helpdevice sys.backup_devices sp_helpdevice
 ```

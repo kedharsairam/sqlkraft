@@ -53,46 +53,31 @@ Unicode
 
 pattern matching.
 
-SQL
-
 ### COLLATE (Transact-
 
-```sql
-LIKE
-```
+`LIKE`
 
-```sql
-LIKE
-```
+`LIKE`
 
-```sql
-LIKE
-```
+`LIKE`
 
-```sql
-LIKE
-```
+`LIKE`
 
-```sql
-LIKE
-```
+`LIKE`
 
 ```sql
 -- Uses AdventureWorks
 CREATE
 PROCEDURE
 FindEmployee @EmpLName
-VARCHAR
-(20)
+VARCHAR (20)
 AS
 SELECT
 @EmpLName =
-RTRIM
-(@EmpLName) +
+RTRIM (@EmpLName) +
 '%'
 ;
-SELECT
-p.FirstName,
+SELECT p.FirstName,
 p.LastName,
 a.City
 FROM
@@ -100,10 +85,8 @@ Person.Person p
 INNER
 JOIN
 Person.Address a
-ON
-p.BusinessEntityID = a.AddressID
-WHERE
-p.LastName
+ON p.BusinessEntityID = a.AddressID
+WHERE p.LastName
 LIKE
 @EmpLName;
 GO
@@ -112,18 +95,14 @@ GO
 FirstName      LastName            City
 ----------     -------------------- ---------------
 Angela         Barbariol            Snohomish
-David          Barber               Snohomish
-(2 row(s) affected)
+David          Barber               Snohomish (2 row(s) affected)
 ```
 
 ```sql
 -- ASCII pattern matching with char column
 CREATE
-TABLE
-t (col1
-CHAR
-(30));
+TABLE t (col1
+CHAR (30));
 INSERT
-INTO
-t
+INTO t
 ```

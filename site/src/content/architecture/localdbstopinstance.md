@@ -47,8 +47,7 @@ option Transact-SQL command.
 msoledbsql.h
 WITH NOWAIT
 HRESULT
-LocalDBStopInstance
-(
+LocalDBStopInstance (
 PCWSTR pInstanceName ,
 DWORD dwFlags ,
 ULONG ulTimeout

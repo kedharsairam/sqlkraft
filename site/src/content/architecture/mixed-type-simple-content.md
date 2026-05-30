@@ -47,14 +47,10 @@ declaration, isn't supported. Therefore, the following XML
 
 schema collection creation fails:
 
-SQL
-
 Requirements and Limitations for XML Schema Collections on the Server
 
 ```sql
-myComplexTypeA
-minOccurs
-myComplexTypeB
+myComplexTypeA minOccurs myComplexTypeB
 CREATE
 XML
 SCHEMA

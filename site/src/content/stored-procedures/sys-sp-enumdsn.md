@@ -25,10 +25,6 @@ Returns a list of all defined ODBC and OLE DB data source names for a server run
 Data Source Name
 ```
 
-```sql
-Description
-```
+`Description`
 
-```sql
-Type
-```
+`Type`

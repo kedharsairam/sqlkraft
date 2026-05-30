@@ -11,8 +11,6 @@ pubDate: 2026-05-29
 
 ## rowstore table
 
-SQL
-
 There are two ways to maintain the clustered columnstore index, and both methods achieved
 
 the same results:
@@ -45,11 +43,7 @@ Start by determining the clustered columnstore index name in
 
 .
 
-SQL
-
 Remove fragmentation by performing a REORGANIZE on the columnstore index.
-
-SQL
 
 This example creates a nonclustered columnstore index on a rowstore table. Only one
 
@@ -69,13 +63,9 @@ simple table and a rowstore clustered index, and then demonstrates the syntax of
 
 nonclustered columnstore index.
 
-SQL
-
 The following example demonstrates the syntax of creating a nonclustered columnstore index
 
 on the DEFAULT filegroup, specifying the maximum degrees of parallelism (MAXDOP) as 2.
-
-SQL
 
 The following example creates a filtered, nonclustered columnstore index on the
 
@@ -90,8 +80,6 @@ this example selects only the rows where
 is non-NULL.
 
 ## D. Change the data in a nonclustered columnstore index
-
-SQL
 
 Applies to: SQL Server 2012 (11.x) through SQL Server 2014 (12.x).
 
@@ -108,8 +96,6 @@ Disable or drop the columnstore index. You can then update the data in the table
 disable the columnstore index, you can rebuild the columnstore index when you finish
 
 updating the data. For example:
-
-SQL
 
 Load data into a staging table that doesn't have a columnstore index. Build a columnstore
 
@@ -129,9 +115,7 @@ back into the (now empty) partition of the main table.
 ALTER INDEX...REORGANIZE
 ```
 
-```sql
-REBUILD
-```
+`REBUILD`
 
 ```sql
 CREATE CLUSTERED COLUMNSTORE INDEX
@@ -141,71 +125,49 @@ CREATE CLUSTERED COLUMNSTORE INDEX
 DROP_EXISTING=ON
 ```
 
-```sql
-REBUILD
-```
+`REBUILD`
 
-```sql
-MyFactTable
-```
+`MyFactTable`
 
 ```sql
 DROP
 INDEX
 [IDX_CL_MyFactTable]
-ON
-dbo.[MyFactTable];
+ON dbo.[MyFactTable];
 ```
 
 ```sql
-SELECT
-i.object_id,
+SELECT i.object_id,
 i.name,
 t.object_id,
 t.name
-FROM
-sys.indexes
-AS
-i
+FROM sys.indexes
+AS i
 INNER
-JOIN
-sys.tables
-AS
-t
-ON
-i.object_id = t.object_id
-WHERE
-i.type_desc =
+JOIN sys.tables
+AS t
+ON i.object_id = t.object_id
+WHERE i.type_desc =
 'CLUSTERED COLUMNSTORE'
-AND
-t.name =
+AND t.name =
 'MyFactTable'
 ;
 --Rebuild the entire index by using ALTER INDEX and the REBUILD option.
 ALTER
 INDEX
 IDX_CL_MyFactTable
-ON
-dbo.[MyFactTable] REORGANIZE;
+ON dbo.[MyFactTable] REORGANIZE;
 ```
 
-```sql
-Production.BillOfMaterials
-```
+`Production.BillOfMaterials`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-EndDate
-```
+`EndDate`
 
 ```sql
 CREATE
-TABLE
-dbo.SimpleTable
-(
+TABLE dbo.SimpleTable (
 ProductKey
 INT
 NOT
@@ -229,29 +191,23 @@ NULL
 GO
 CREATE
 CLUSTERED
-INDEX
-cl_simple
-ON
-dbo.SimpleTable(ProductKey);
+INDEX cl_simple
+ON dbo.SimpleTable(ProductKey);
 GO
 CREATE
 NONCLUSTERED COLUMNSTORE
-INDEX
-csindx_simple
-ON
-dbo.SimpleTable(OrderDateKey, DueDateKey, ShipDateKey);
+INDEX csindx_simple
+ON dbo.SimpleTable(OrderDateKey, DueDateKey, ShipDateKey);
 GO
 ```
 
 ```sql
 CREATE
 NONCLUSTERED COLUMNSTORE
-INDEX
-csindx_simple
+INDEX csindx_simple
 ON
 SimpleTable(OrderDateKey, DueDateKey, ShipDateKey)
-WITH
-(DROP_EXISTING =
+WITH (DROP_EXISTING =
 ON
 ,
 MAXDOP = 2)
@@ -263,16 +219,12 @@ GO
 
 ```sql
 IF EXISTS (
-SELECT
-name
-FROM
-sys.indexes
-WHERE
-name
+SELECT name
+FROM sys.indexes
+WHERE name
 = N
 'FIBillOfMaterialsWithEndDate'
-AND
-object_id = OBJECT_ID(N
+AND object_id = OBJECT_ID(N
 'Production.BillOfMaterials'
 ))
 DROP
@@ -297,18 +249,14 @@ NULL
 
 ```sql
 ALTER
-INDEX
-mycolumnstoreindex
-ON
-dbo.mytable
+INDEX mycolumnstoreindex
+ON dbo.mytable
 DISABLE
 ;
 -- update the data in mytable as necessary
 ALTER
-INDEX
-mycolumnstoreindex
-ON
-dbo.mytable
+INDEX mycolumnstoreindex
+ON dbo.mytable
 REBUILD
 ;
 ```

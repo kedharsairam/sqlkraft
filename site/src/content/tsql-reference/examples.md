@@ -9,8 +9,6 @@ pubDate: 2026-05-29
 
 To view the current setting for this setting, run the following query.
 
-SQL
-
 The following code example causes a foreign key violation error in a transaction that has other
 
 Transact-SQL statements. In the first set of statements, the error is generated, but the other
@@ -24,8 +22,6 @@ is set to
 . This causes the statement error to terminate the
 
 batch and the transaction is rolled back.
-
-SQL
 
 THROW (Transact-SQL)
 
@@ -47,15 +43,12 @@ See Also
 SET XACT_ABORT
 ```
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 DECLARE
 @XACT_ABORT
-VARCHAR
-(3) =
+VARCHAR (3) =
 'OFF'
 ;
 IF ( (16384 & @@OPTIONS) = 16384 )
@@ -72,18 +65,14 @@ XACT_ABORT;
 ```sql
 IF OBJECT_ID(N't2', N'U') IS NOT NULL
 DROP
-TABLE
-t2;
+TABLE t2;
 GO
 IF OBJECT_ID(N't1', N'U') IS NOT NULL
 DROP
-TABLE
-t1;
+TABLE t1;
 GO
 CREATE
-TABLE
-t1
-(a
+TABLE t1 (a
 INT
 NOT
 NULL
@@ -91,35 +80,24 @@ PRIMARY
 KEY
 );
 CREATE
-TABLE
-t2
-(a
+TABLE t2 (a
 INT
 NOT
 NULL
-REFERENCES
-t1(a));
+REFERENCES t1(a));
 GO
 INSERT
-INTO
-t1
-VALUES
-(1);
+INTO t1
+VALUES (1);
 INSERT
-INTO
-t1
-VALUES
-(3);
+INTO t1
+VALUES (3);
 INSERT
-INTO
-t1
-VALUES
-(4);
+INTO t1
+VALUES (4);
 INSERT
-INTO
-t1
-VALUES
-(6);
+INTO t1
+VALUES (6);
 GO
 SET
 XACT_ABORT
@@ -130,21 +108,15 @@ BEGIN
 TRANSACTION
 ;
 INSERT
-INTO
-t2
-VALUES
-(1);
+INTO t2
+VALUES (1);
 INSERT
-INTO
-t2
-VALUES
-(2);
+INTO t2
+VALUES (2);
 -- Foreign key error.
 INSERT
-INTO
-t2
-VALUES
-(3);
+INTO t2
+VALUES (3);
 COMMIT
 TRANSACTION
 ;
@@ -158,21 +130,15 @@ BEGIN
 TRANSACTION
 ;
 INSERT
-INTO
-t2
-VALUES
-(4);
+INTO t2
+VALUES (4);
 INSERT
-INTO
-t2
-VALUES
-(5);
+INTO t2
+VALUES (5);
 -- Foreign key error.
 INSERT
-INTO
-t2
-VALUES
-(6);
+INTO t2
+VALUES (6);
 COMMIT
 TRANSACTION
 ;
@@ -188,7 +154,6 @@ GO
 -- all of the second transaction to roll back.
 SELECT
 *
-FROM
-t2;
+FROM t2;
 GO
 ```

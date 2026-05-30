@@ -8,8 +8,6 @@ pubDate: 2026-05-29
 
 The following example creates a table with columns of different data types.
 
-SQL
-
 In the following filtered index definition, column
 
 is implicitly converted to an integer data
@@ -18,15 +16,11 @@ type for comparing it to the constant 1. This generates error message 10611 beca
 
 conversion occurs on the left-hand side of the operator in the filtered predicate.
 
-SQL
-
 The solution is to convert the constant on the right-hand side to be of the same type as
 
 column
 
 , as seen in the following example:
-
-SQL
 
 Moving the data conversion from the left side to the right side of a comparison operator might
 
@@ -80,15 +74,11 @@ b
 b
 ```
 
-```sql
-CONVERT
-```
+`CONVERT`
 
 ```sql
 CREATE
-TABLE
-dbo.TestTable
-(
+TABLE dbo.TestTable (
 a
 INT
 ,
@@ -98,17 +88,12 @@ CREATE
 NONCLUSTERED
 INDEX
 TestTabIndex
-ON
-dbo.TestTable (a, b)
-WHERE
-b = 1;
+ON dbo.TestTable (a, b)
+WHERE b = 1;
 CREATE
 INDEX
 TestTabIndex
-ON
-dbo.TestTable (a, b)
-WHERE
-b =
-CONVERT
-(VARBINARY(4), 1);
+ON dbo.TestTable (a, b)
+WHERE b =
+CONVERT (VARBINARY(4), 1);
 ```

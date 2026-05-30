@@ -78,9 +78,7 @@ SQL Server will automatically shut down after the restore is complete. This beha
 design.
 
 ```cmd
-master
-master
+master master
 -m
-CHECKPOINT
-systemctl stop mssql-server
+CHECKPOINT systemctl stop mssql-server
 ```

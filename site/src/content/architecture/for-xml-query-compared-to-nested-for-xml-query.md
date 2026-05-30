@@ -79,8 +79,6 @@ database. There's no nested
 
 in the query.
 
-SQL
-
 Here's the partial result:
 
 XML

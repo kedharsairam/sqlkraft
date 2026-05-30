@@ -53,8 +53,6 @@ created by user
 
 :
 
-SQL
-
 What this trigger means is that as soon as a user that has permission to execute a
 
 statement, such as a member of the

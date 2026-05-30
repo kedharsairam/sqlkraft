@@ -140,9 +140,7 @@ Network Name resource:
 DTC Network Name resource:
 
 ```cmd
-FailoverClusters
-contoso.lab
-sqlbackups
+FailoverClusters contoso.lab sqlbackups
 SQLNODE1
 SQLNODE2
 ```

@@ -71,26 +71,14 @@ table.
 
 ## D. Add a column to an index
 
-```sql
-ALTER
-```
+`ALTER`
 
-```sql
-db_ddladmin
-```
+`db_ddladmin`
 
-```sql
-PRIMARY
-```
+`PRIMARY`
 
-```sql
-FILESTREAM
-```
+`FILESTREAM`
 
-```sql
-VendorID
-```
+`VendorID`
 
-```sql
-Purchasing.ProductVendor
-```
+`Purchasing.ProductVendor`

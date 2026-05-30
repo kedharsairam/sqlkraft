@@ -125,122 +125,66 @@ statement that invoked the trigger.
 
 ## Deferred name resolution
 
-```sql
-LOGON
-```
+`LOGON`
 
 ```sql
 CREATE TRIGGER FOR UPDATE
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-RECURSIVE_TRIGGERS
-```
+`RECURSIVE_TRIGGERS`
 
 ```sql
 ALTER DATABASE
 ```
 
-```sql
-T1
-```
+`T1`
 
-```sql
-TR1
-```
+`TR1`
 
-```sql
-T2
-```
+`T2`
 
-```sql
-T2
-```
+`T2`
 
-```sql
-T1
-```
+`T1`
 
-```sql
-T1
-```
+`T1`
 
-```sql
-TR1
-```
+`TR1`
 
-```sql
-T1
-```
+`T1`
 
-```sql
-T1
-```
+`T1`
 
-```sql
-TR1
-```
+`TR1`
 
-```sql
-TR1
-```
+`TR1`
 
-```sql
-TR2
-```
+`TR2`
 
-```sql
-T1
-```
+`T1`
 
-```sql
-TR1
-```
+`TR1`
 
-```sql
-T1
-```
+`T1`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-TR1
-```
+`TR1`
 
-```sql
-TR2
-```
+`TR2`
 
-```sql
-TR1
-```
+`TR1`
 
-```sql
-TR1
-```
+`TR1`
 
-```sql
-TR2
-```
+`TR2`
 
-```sql
-UPDATE
-```
+`UPDATE`

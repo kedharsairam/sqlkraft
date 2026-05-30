@@ -25,6 +25,5 @@ NEW
 CONNECTING
 CONNECTED
 LOGGED_IN
-CLOSED
-connect_time
+CLOSED connect_time
 ```

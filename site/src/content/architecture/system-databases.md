@@ -100,12 +100,7 @@ database. The
 database can't be moved.
 
 ```sql
-model
-msdb
-tempdb
-master
-master
-Resource
-master
+model msdb tempdb master master
+Resource master
 Resource
 ```

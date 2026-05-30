@@ -19,8 +19,7 @@ Returns information about the document-level content of a full-text index associ
 ## Syntax
 
 ```sql
-sys.dm_fts_index_keywords_by_document
-(
+sys.dm_fts_index_keywords_by_document (
 DB_ID('database_name'),     OBJECT_ID('table_name')
 )
 ```

@@ -39,27 +39,19 @@ N
 
 ### Example 1
 
-```sql
-sp_syspolicy_rename_policy
-```
+`sp_syspolicy_rename_policy`
 
 ### Example 2
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 3
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 4
 
-```sql
-msdb.dbo.syspolicy_policies
-```
+`msdb.dbo.syspolicy_policies`
 
 ### Example 5
 
@@ -76,8 +68,7 @@ Test Policy 2
 ### Example 7
 
 ```sql
-EXECUTE
-msdb.dbo.sp_syspolicy_rename_policy
+EXECUTE msdb.dbo.sp_syspolicy_rename_policy
 @
 name
 = N

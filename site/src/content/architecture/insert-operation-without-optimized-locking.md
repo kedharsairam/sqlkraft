@@ -40,8 +40,6 @@ incrementally, and not held for the duration of the transaction. For example, gi
 
 statement:
 
-SQL
-
 A TID lock is placed on all the modified rows for the duration of the transaction. A lock is
 
 acquired on the TID of the index rows corresponding to the value
@@ -76,59 +74,33 @@ value until the end of the transaction is sufficient to maintain serializability
 
 this INSERT statement:
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
+
+`SNAPSHOT`
+
+`ROWLOCK`
+
+`PAGLOCK`
+
+`TABLOCK`
+
+`PAGLOCK`
+
+`TABLOCK`
+
+`ROWLOCK`
+
+`Bob`
+
+`Bob`
+
+`READ_COMMITTED_SNAPSHOT`
+
+`SNAPSHOT`
 
 ```sql
-SNAPSHOT
-```
-
-```sql
-ROWLOCK
-```
-
-```sql
-PAGLOCK
-```
-
-```sql
-TABLOCK
-```
-
-```sql
-PAGLOCK
-```
-
-```sql
-TABLOCK
-```
-
-```sql
-ROWLOCK
-```
-
-```sql
-Bob
-```
-
-```sql
-Bob
-```
-
-```sql
-READ_COMMITTED_SNAPSHOT
-```
-
-```sql
-SNAPSHOT
-```
-
-```sql
-DELETE
-mytable
-WHERE
-name
+DELETE mytable
+WHERE name
 =
 'Bob'
 ;

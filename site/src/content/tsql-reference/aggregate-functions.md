@@ -119,30 +119,18 @@ Last updated on 03/23/2026
 COUNT(*)
 ```
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 GROUP BY
 ```
 
-```sql
-STRING_AGG
-```
+`STRING_AGG`
 
-```sql
-GROUPING
-```
+`GROUPING`
 
-```sql
-GROUPING_ID
-```
+`GROUPING_ID`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-HAVING
-```
+`HAVING`

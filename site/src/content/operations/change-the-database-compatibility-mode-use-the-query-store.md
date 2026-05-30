@@ -110,9 +110,6 @@ latest compatibility level. Therefore, as part of the upgrade process, it's impo
 that 4199 isn't enabled once the upgrade process completes.
 
 ```cmd
-tempdb
-model
-msdb
-Resource
-master
+tempdb model msdb
+Resource master
 ```

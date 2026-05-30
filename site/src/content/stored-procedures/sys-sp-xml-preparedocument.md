@@ -14,9 +14,7 @@ Number of characters into the currently executing batch or stored procedure at o
 
 ## Syntax
 
-```sql
-sp_xml_preparedocument
-```
+`sp_xml_preparedocument`
 
 ## Remarks
 

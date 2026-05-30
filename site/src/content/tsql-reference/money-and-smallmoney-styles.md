@@ -73,10 +73,6 @@ decimal point
 
 Example: 3,510.92.
 
-
-
 Expand table
-
-
 
 Expand table

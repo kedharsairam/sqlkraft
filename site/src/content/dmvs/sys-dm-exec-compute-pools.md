@@ -13,17 +13,11 @@ Name of the compute pool. Is not nullable. Returns Unique identifier for the poo
 
 ## Code Blocks
 
-```sql
-sysname
-```
+`sysname`
 
-```sql
-default
-```
+`default`
 
-```sql
-int
-```
+`int`
 
 ```sql
 VIEW SERVER STATE

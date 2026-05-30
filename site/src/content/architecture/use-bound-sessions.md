@@ -86,22 +86,14 @@ to succeed.
 
 ### Distributed bound session
 
-```sql
-sp_bindsession
-```
+`sp_bindsession`
 
 ```sql
 @@TRANCOUNT
 ```
 
-```sql
-ROLLBACK
-```
+`ROLLBACK`
 
-```sql
-sp_getbindtoken
-```
+`sp_getbindtoken`
 
-```sql
-srv_getbindtoken
-```
+`srv_getbindtoken`

@@ -96,12 +96,7 @@ new development work, and plan to modify applications that currently use this fe
 Use CLR Integration instead.
 
 ```sql
-#define
-srv_pfield
-SRV_SPROC_CODEPAGE
-srv_describe
-srv_describe
-srv_pfield
-SRV_SPROC_CODEPAGE
-srv_sendmsg
+#define srv_pfield
+SRV_SPROC_CODEPAGE srv_describe srv_describe srv_pfield
+SRV_SPROC_CODEPAGE srv_sendmsg
 ```

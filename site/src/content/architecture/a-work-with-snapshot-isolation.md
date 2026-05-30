@@ -56,8 +56,6 @@ is terminated.
 
 On session 1:
 
-SQL
-
 ７
 
 Note
@@ -72,35 +70,21 @@ number of read-only snapshot transactions.
 
 On session 2:
 
-SQL
-
 On session 1:
 
-SQL
-
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 USE

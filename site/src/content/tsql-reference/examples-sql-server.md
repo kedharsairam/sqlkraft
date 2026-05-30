@@ -45,11 +45,7 @@ stored procedure with
 
 as its parameter value.
 
-SQL
-
 The variable can be explicitly named in the execution:
-
-SQL
 
 If the following is the first statement in a batch or a
 
@@ -58,8 +54,6 @@ sqlcmd
 script,
 
 isn't required.
-
-SQL
 
 The following example executes the
 
@@ -79,8 +73,6 @@ value.
 
 ## D. Use EXECUTE with a remote stored procedure
 
-SQL
-
 The following example shows how
 
 handles dynamically built strings that contain
@@ -93,8 +85,6 @@ in the
 
 database, and then uses that list to rebuild all indexes on the tables.
 
-SQL
-
 The following example executes the
 
 stored procedure on the remote
@@ -105,15 +95,11 @@ and stores the return status that indicates success or failure in
 
 .
 
-SQL
-
 ## E. Use EXECUTE with a stored procedure variable
 
 ## F. Use EXECUTE with DEFAULT
 
 The following example creates a variable that represents a stored procedure name.
-
-SQL
 
 The following example creates a stored procedure with default values for the first and third
 
@@ -125,13 +111,9 @@ various ways the
 
 keyword can be used.
 
-SQL
-
 The
 
 stored procedure can be executed in many combinations.
-
-SQL
 
 ## G. Use EXECUTE with AT
 
@@ -147,17 +129,11 @@ that points to another instance of SQL Server and executes a DDL statement
 
 ) against that linked server.
 
-SQL
-
 The following example executes the
 
 stored procedure and forces a new
 
 query plan to be compiled, used, and discarded after the module is executed.
-
-SQL
-
-### tinyint
 
 ## I. Use EXECUTE with a user-defined function
 
@@ -179,15 +155,11 @@ a
 
 data type.
 
-SQL
-
 The following example executes several
 
 statements at the remote Oracle server. The
 
 example begins by adding the Oracle server as a linked server and creating linked server login.
-
-SQL
 
 ### Applies to
 
@@ -217,8 +189,6 @@ schema, or
 
 the statement fails.
 
-SQL
-
 The following example passes a command string to a remote server by using a question mark
 
 (
@@ -241,8 +211,6 @@ parameter
 
 ), which is provided after the statement.
 
-SQL
-
 : SQL Server 2012 (11.x) and later versions, and Azure SQL Database.
 
 ### Applies to
@@ -257,8 +225,6 @@ returned seven columns. The following example demonstrates using the
 
 ## syntax to change the names and data types of the returning result set.
 
-SQL
-
 : SQL Server 2012 (11.x) and later versions, and Azure SQL Database.
 
 When executing a statement that returns more than one result set, define each expected result
@@ -272,8 +238,6 @@ sets. Then the procedure is executed using the
 clause, and specifying two
 
 result set definitions.
-
-SQL
 
 ### Applies to
 
@@ -309,8 +273,6 @@ The following example passes a command string to an external data source pointin
 
 Server instance.
 
-SQL
-
 : SQL Server 2019 (15.x).
 
 The following example passes a command string to an external data source pointing to a
@@ -320,8 +282,6 @@ compute pool in SQL Server Big Data Cluster. The example creates a data source
 against a compute pool in SQL Server Big Data Cluster and executes a
 
 statement against the data source.
-
-SQL
 
 ### Applies to
 
@@ -335,49 +295,33 @@ SQL
 
 ## query storage pool in SQL Server Big Data Cluster
 
-```sql
-IMPERSONATE
-```
+`IMPERSONATE`
 
 ```sql
 EXECUTE AS CALLER
 ```
 
-```sql
-IMPERSONATE
-```
+`IMPERSONATE`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-AdventureWorksDW2025
-```
+`AdventureWorksDW2025`
 
-```sql
-uspGetEmployeeManagers
-```
+`uspGetEmployeeManagers`
 
 ```sql
 @EmployeeID
 ```
 
-```sql
-uspGetEmployeeManagers
-```
+`uspGetEmployeeManagers`
 
 ```sql
 Employee ID 6
 ```
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
-```sql
-spGetWhereUsedProductID
-```
+`spGetWhereUsedProductID`
 
 ```sql
 819
@@ -388,40 +332,26 @@ spGetWhereUsedProductID
 ```
 
 ```sql
-EXECUTE
-dbo.uspGetEmployeeManagers 6;
+EXECUTE dbo.uspGetEmployeeManagers 6;
 GO
-EXECUTE
-dbo.uspGetEmployeeManagers @EmployeeID = 6;
+EXECUTE dbo.uspGetEmployeeManagers @EmployeeID = 6;
 GO
-EXECUTE
-dbo.uspGetEmployeeManagers 6;
+EXECUTE dbo.uspGetEmployeeManagers 6;
 GO
 --Or
-EXECUTE
-dbo.uspGetEmployeeManagers @EmployeeID = 6;
+EXECUTE dbo.uspGetEmployeeManagers @EmployeeID = 6;
 GO
 ```
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
-```sql
-tables_cursor
-```
+`tables_cursor`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-uspGetEmployeeManagers
-```
+`uspGetEmployeeManagers`
 
-```sql
-SQLSERVER1
-```
+`SQLSERVER1`
 
 ```sql
 @retstat
@@ -434,49 +364,36 @@ AS
 DATETIME;
 SET
 @CheckDate =
-GETDATE
-();
-EXECUTE
-dbo.uspGetWhereUsedProductID 819, @CheckDate;
+GETDATE ();
+EXECUTE dbo.uspGetWhereUsedProductID 819, @CheckDate;
 GO
 ```
 
 ```sql
-DECLARE
-tables_cursor
+DECLARE tables_cursor
 CURSOR
 FOR
-SELECT
-s.name, t.name
-FROM
-sys.objects
-AS
-t
+SELECT s.name, t.name
+FROM sys.objects
+AS t
 INNER
-JOIN
-sys.schemas
-AS
-s
-ON
-s.schema_id = t.schema_id
-WHERE
-t.type =
+JOIN sys.schemas
+AS s
+ON s.schema_id = t.schema_id
+WHERE t.type =
 'U'
 ;
 OPEN tables_cursor;
 DECLARE
 @schemaname
-AS
-sysname;
+AS sysname;
 DECLARE
 @tablename
-AS
-sysname;
+AS sysname;
 FETCH NEXT FROM tables_cursor INTO @schemaname, @tablename;
 WHILE (@@FETCH_STATUS <> -1)
 BEGIN
-EXECUTE
-(
+EXECUTE (
 'ALTER INDEX ALL ON '
 +
 @schemaname +
@@ -491,17 +408,12 @@ PRINT
 'The indexes on all tables have been rebuilt.'
 ;
 CLOSE tables_cursor;
-DEALLOCATE
-tables_cursor;
+DEALLOCATE tables_cursor;
 ```
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
-```sql
-Proc_Test_Defaults
-```
+`Proc_Test_Defaults`
 
 ```sql
 DECLARE
@@ -518,8 +430,7 @@ EXECUTE
 DECLARE
 @proc_name
 AS
-VARCHAR
-(30);
+VARCHAR (30);
 SET
 @proc_name =
 'sys.sp_who'
@@ -531,22 +442,18 @@ EXECUTE
 ```sql
 IF OBJECT_ID(N'dbo.ProcTestDefaults', N'P') IS NOT NULL
 DROP
-PROCEDURE
-dbo.ProcTestDefaults;
+PROCEDURE dbo.ProcTestDefaults;
 GO
 -- Create the stored procedure.
 CREATE
-PROCEDURE
-dbo.ProcTestDefaults (
+PROCEDURE dbo.ProcTestDefaults (
 @p1
 SMALLINT
 = 42,
 @p2
-CHAR
-(1),
+CHAR (1),
 @p3
-VARCHAR
-(8) =
+VARCHAR (8) =
 'CAR'
 )
 AS
@@ -558,50 +465,40 @@ SELECT
 @p1, @p2, @p3;
 GO
 -- Specifying a value only for one parameter (@p2).
-EXECUTE
-dbo.ProcTestDefaults @p2 =
+EXECUTE dbo.ProcTestDefaults @p2 =
 'A'
 ;
 ```
 
-```sql
-SeattleSales
-```
+`SeattleSales`
 
 ```sql
 CREATE TABLE
 ```
 
-```sql
-Proc_Test_Defaults
-```
+`Proc_Test_Defaults`
 
 ```sql
 -- Specifying a value for the first two parameters.
-EXECUTE
-dbo.ProcTestDefaults 68,
+EXECUTE dbo.ProcTestDefaults 68,
 'B'
 ;
 -- Specifying a value for all three parameters.
-EXECUTE
-dbo.ProcTestDefaults 68,
+EXECUTE dbo.ProcTestDefaults 68,
 'C'
 ,
 'House'
 ;
 -- Using the DEFAULT keyword for the first parameter.
-EXECUTE
-dbo.ProcTestDefaults
+EXECUTE dbo.ProcTestDefaults
 @p1 =
 DEFAULT
 ,
 @p2 =
 'D'
 ;
--- Specifying the parameters in an order different from the order defined in the
-procedure.
-EXECUTE
-dbo.ProcTestDefaults
+-- Specifying the parameters in an order different from the order defined in the procedure.
+EXECUTE dbo.ProcTestDefaults
 DEFAULT
 ,
 @p3 =
@@ -611,16 +508,14 @@ DEFAULT
 'E'
 ;
 -- Using the DEFAULT keyword for the first and third parameters.
-EXECUTE
-dbo.ProcTestDefaults
+EXECUTE dbo.ProcTestDefaults
 DEFAULT
 ,
 'H'
 ,
 DEFAULT
 ;
-EXECUTE
-dbo.ProcTestDefaults
+EXECUTE dbo.ProcTestDefaults
 DEFAULT
 ,
 'I'
@@ -630,17 +525,14 @@ DEFAULT
 ```
 
 ```sql
-EXECUTE
-sp_addlinkedserver
+EXECUTE sp_addlinkedserver
 'SeattleSales'
 ,
 'SQL Server'
 ;
 GO
-EXECUTE
-(
-'CREATE TABLE AdventureWorks2022.dbo.SalesTbl
-(SalesID INT, SalesName VARCHAR(10)); '
+EXECUTE (
+'CREATE TABLE AdventureWorks2022.dbo.SalesTbl (SalesID INT, SalesName VARCHAR(10)); '
 )
 AT
 SeattleSales;
@@ -648,17 +540,14 @@ GO
 ```
 
 ```sql
-EXECUTE
-dbo.Proc_Test_Defaults @p2 =
+EXECUTE dbo.Proc_Test_Defaults @p2 =
 'A'
 WITH
 RECOMPILE;
 GO
 ```
 
-```sql
-ufnGetSalesOrderStatusText
-```
+`ufnGetSalesOrderStatusText`
 
 ```sql
 @returnstatus
@@ -668,16 +557,13 @@ ufnGetSalesOrderStatusText
 @Status
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 DECLARE
 @returnstatus
 AS
-NVARCHAR
-(15);
+NVARCHAR (15);
 SET
 @returnstatus =
 NULL
@@ -693,8 +579,7 @@ GO
 
 ```sql
 -- Setup the linked server.
-EXECUTE
-sp_addlinkedserver
+EXECUTE sp_addlinkedserver
 @
 server
 =
@@ -709,8 +594,7 @@ server
 @datasrc =
 'ORACLE10'
 ;
-EXECUTE
-sp_addlinkedsrvlogin
+EXECUTE sp_addlinkedsrvlogin
 @rmtsrvname =
 'ORACLE'
 ,
@@ -726,8 +610,7 @@ NULL
 @rmtpassword =
 'tiger'
 ;
-EXECUTE
-sp_serveroption
+EXECUTE sp_serveroption
 'ORACLE'
 ,
 'rpc out'
@@ -736,16 +619,14 @@ true
 ;
 GO
 -- Execute several statements on the linked Oracle server.
-EXECUTE
-(
+EXECUTE (
 'SELECT * FROM scott.emp'
 )
 AT
 ORACLE
 ;
 GO
-EXECUTE
-(
+EXECUTE (
 'SELECT * FROM scott.emp WHERE MGR = ?'
 , 7902)
 AT
@@ -759,41 +640,25 @@ AS
 USER
 ```
 
-```sql
-User1
-```
+`User1`
 
-```sql
-User1
-```
+`User1`
 
-```sql
-User1
-```
+`User1`
 
-```sql
-Sales
-```
+`Sales`
 
 ```sql
 ?
 ```
 
-```sql
-SeattleSales
-```
+`SeattleSales`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-ProductID
-```
+`ProductID`
 
 ```sql
 952
@@ -807,8 +672,7 @@ INT
 ;
 SET
 @v = 7902;
-EXECUTE
-(
+EXECUTE (
 'SELECT * FROM scott.emp WHERE MGR = ?'
 , @v)
 AT
@@ -818,8 +682,7 @@ GO
 ```
 
 ```sql
-EXECUTE
-(
+EXECUTE (
 'CREATE TABLE Sales.SalesTable (SalesID INT, SalesName VARCHAR(10));'
 )
 AS
@@ -832,16 +695,14 @@ GO
 
 ```sql
 -- Setup the linked server.
-EXECUTE
-sp_addlinkedserver
+EXECUTE sp_addlinkedserver
 'SeattleSales'
 ,
 'SQL Server'
 ;
 GO
 -- Execute the SELECT statement.
-EXECUTE
-(
+EXECUTE (
 'SELECT ProductID, Name
 FROM AdventureWorks2022.Production.Product
 WHERE ProductID = ? '
@@ -859,21 +720,17 @@ EXECUTE dbo.uspGetEmployeeManagers 6;
 WITH RESULT SET
 ```
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ```sql
 WITH RESULT SETS
 ```
 
 ```sql
-EXECUTE
-uspGetEmployeeManagers 16
+EXECUTE uspGetEmployeeManagers 16
 WITH
 RESULT
-SETS
-((
+SETS ((
 [Reporting
 Level
 ]
@@ -882,8 +739,7 @@ NOT
 NULL
 ,
 [
-ID
-of
+ID of
 Employee]
 INT
 NOT
@@ -893,8 +749,7 @@ NULL
 First
 Name
 ]
-NVARCHAR
-(50)
+NVARCHAR (50)
 NOT
 NULL
 ,
@@ -902,17 +757,14 @@ NULL
 Last
 Name
 ]
-NVARCHAR
-(50)
+NVARCHAR (50)
 NOT
 NULL
 ,
 [Employee
-ID
-of
+ID of
 Manager]
-NVARCHAR
-(
+NVARCHAR (
 MAX
 )
 NOT
@@ -922,8 +774,7 @@ NULL
 First
 Name
 ]
-NVARCHAR
-(50)
+NVARCHAR (50)
 NOT
 NULL
 ,
@@ -931,8 +782,7 @@ NULL
 Last
 Name
 ]
-NVARCHAR
-(50)
+NVARCHAR (50)
 NOT
 NULL
 ));
@@ -944,8 +794,7 @@ CREATE
 PROCEDURE
 Production.ProductList
 @ProdName
-NVARCHAR
-(50)
+NVARCHAR (50)
 AS
 -- First result set
 SELECT
@@ -963,8 +812,7 @@ LIKE
 SELECT
 Name
 ,
-COUNT
-(S.ProductID)
+COUNT (S.ProductID)
 AS
 NumberOfOrders
 FROM
@@ -990,13 +838,9 @@ GO
 -- Execute the procedure
 ```
 
-```sql
-SqlComputePool
-```
+`SqlComputePool`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 EXECUTE
@@ -1004,10 +848,8 @@ Production.ProductList
 '%tire%'
 WITH
 RESULT
-SETS
-(
--- first result set definition starts here
-(ProductID
+SETS (
+-- first result set definition starts here (ProductID
 INT
 , [
 Name
@@ -1016,8 +858,7 @@ NAME
 , ListPrice MONEY)
 -- comma separates result set definitions
 ,
--- second result set definition starts here
-([
+-- second result set definition starts here ([
 Name
 ]
 NAME
@@ -1028,8 +869,7 @@ INT
 ```
 
 ```sql
-EXECUTE
-(
+EXECUTE (
 'SELECT @@SERVERNAME'
 )
 AT
@@ -1043,12 +883,10 @@ EXTERNAL
 DATA
 SOURCE
 SqlComputePool
-WITH
-(LOCATION =
+WITH (LOCATION =
 'sqlcomputepool://controller-svc/default'
 );
-EXECUTE
-(
+EXECUTE (
 'SELECT @@SERVERNAME'
 )
 AT

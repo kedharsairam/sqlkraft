@@ -51,31 +51,19 @@ What's new in columnstore indexes
 
 .
 
-
-
 Expand table
 
 AUTD
 
-```sql
-COMPRESSION_DELAY
-```
+`COMPRESSION_DELAY`
 
-```sql
-DATA_COMPRESSION
-```
+`DATA_COMPRESSION`
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-ORDER
-```
+`ORDER`
 
 ```sql
 |
@@ -98,8 +86,7 @@ ARCHIVE
 }
 [
 ON
-PARTITIONS
-( { partition_number_expression | range } [ , ...n ] ) ]
+PARTITIONS ( { partition_number_expression | range } [ , ...n ] ) ]
 <on_option>
 ::=
 partition_scheme_name ( column_name )
@@ -109,8 +96,7 @@ partition_scheme_name ( column_name )
 <filter_expression>
 ::=
 column_name
-IN
-( constant [ , ...n ]
+IN ( constant [ , ...n ]
 | column_name {
 IS
 |
@@ -124,17 +110,14 @@ NOT
 CREATE
 CLUSTERED
 COLUMNSTORE
-INDEX
-index_name
+INDEX index_name
 ON
 { database_name.schema_name.table_name | schema_name.table_name | table_name
 }
 [
-ORDER
-( column [ , ...n ] ) ]
+ORDER ( column [ , ...n ] ) ]
 [
-WITH
-(
+WITH (
 DROP
 _
 EXISTING

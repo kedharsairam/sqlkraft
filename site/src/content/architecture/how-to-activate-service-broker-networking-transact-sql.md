@@ -49,15 +49,12 @@ Transport Security
 
 Create a Service Broker endpoint, specifying the port number and the authentication level.
 
-SQL
-
 How to: Pause Service Broker networking (Transact-SQL)
 
 How to: Resume Service Broker networking (Transact-SQL)
 
 ```sql
-USE
-master
+USE master
 ;
 GO
 CREATE

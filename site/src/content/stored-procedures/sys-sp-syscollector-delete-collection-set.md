@@ -63,34 +63,24 @@ must have a
 
 ### Example 1
 
-```sql
-sp_syscollector_delete_collection_set
-```
+`sp_syscollector_delete_collection_set`
 
 ### Example 2
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 3
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 4
 
-```sql
-syscollector_collection_set
-```
+`syscollector_collection_set`
 
 ### Example 5
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_syscollector_delete_collection_set @collection_set_id = 4;
+EXECUTE dbo.sp_syscollector_delete_collection_set @collection_set_id = 4;
 ```

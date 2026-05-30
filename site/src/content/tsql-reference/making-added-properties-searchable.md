@@ -45,15 +45,11 @@ table_name
 
 ) is repopulated:
 
-SQL
-
 To start a full population, use the following
 
 ALTER FULLTEXT INDEX (Transact-SQL)
 
 statement:
-
-SQL
 
 ７
 
@@ -77,15 +73,11 @@ Note
 
 ### To run a population on a full-text index
 
-```sql
-System.Author
-```
+`System.Author`
 
 ```sql
-SELECT
-column_name
-FROM
-table_name
+SELECT column_name
+FROM table_name
 WHERE
 CONTAINS( PROPERTY( column_name,
 'new_search_property'
@@ -93,14 +85,12 @@ CONTAINS( PROPERTY( column_name,
 'contains_search_condition'
 );
 GO
-USE
-database_name;
+USE database_name;
 GO
 ALTER
 FULLTEXT
 INDEX
-ON
-table_name
+ON table_name
 START
 FULL
 POPULATION;

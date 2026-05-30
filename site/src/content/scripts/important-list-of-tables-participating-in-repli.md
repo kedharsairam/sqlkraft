@@ -10,13 +10,9 @@ pubDate: 2025-03-15
 ```sql
 --Transactional Replication:
 	--Publishing Database:
-	select * from syspublications
-	select * from sysarticles
-	select * from syssubscriptions
+	select * from syspublications select * from sysarticles select * from syssubscriptions
 	--Distribution Database:
-	select * from MSRepl_Transactions
-	select * from MSRepl_Commands
-	select * from MSRepl_Errors
+	select * from MSRepl_Transactions select * from MSRepl_Commands select * from MSRepl_Errors
 
 --Merge Replication:
 MSmerge_contents

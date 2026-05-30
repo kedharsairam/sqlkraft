@@ -150,62 +150,32 @@ Important
 
 ### Shared Global Allocation Map (SGAM)
 
-```sql
-ROW_OVERFLOW_DATA
-```
+`ROW_OVERFLOW_DATA`
 
-```sql
-IN_ROW_DATA
-```
+`IN_ROW_DATA`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-alloc_unit_type_desc
-```
+`alloc_unit_type_desc`
 
-```sql
-ROW_OVERFLOW_DATA
-```
+`ROW_OVERFLOW_DATA`
 
-```sql
-page_count
-```
+`page_count`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-master
-```
+`master`
 
-```sql
-msdb
-```
+`msdb`
 
-```sql
-model
-```
+`model`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-MIXED_PAGE_ALLOCATION
-```
+`MIXED_PAGE_ALLOCATION`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-sys.dm_db_database_page_allocations
-```
+`sys.dm_db_database_page_allocations`

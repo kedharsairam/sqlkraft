@@ -14,23 +14,17 @@ Returns a list of failover clustered instance nodes on which an instance of SQL 
 
 ## Syntax
 
-```sql
-fn_virtualservernodes
-```
+`fn_virtualservernodes`
 
 ## Examples
 
 ### Example 1
 
-```sql
-fn_virtualservernodes
-```
+`fn_virtualservernodes`
 
 ### Example 2
 
-```sql
-fn_virtualservernodes()
-```
+`fn_virtualservernodes()`
 
 ### Example 3
 

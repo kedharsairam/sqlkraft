@@ -184,57 +184,33 @@ Expand table
 
 Expand table
 
-```sql
-sys.dm_os_performance_counters
-```
+`sys.dm_os_performance_counters`
 
-```sql
-RESTORE
-```
+`RESTORE`
 
-```sql
-DATABASE
-```
+`DATABASE`
 
-```sql
-LOG
-```
+`LOG`
 
-```sql
-WITH
-```
+`WITH`
 
-```sql
-PASSWORD
-```
+`PASSWORD`
 
-```sql
-BACKUP
-```
+`BACKUP`
 
-```sql
-DATABASE
-```
+`DATABASE`
 
-```sql
-LOG
-```
+`LOG`
 
 ```sql
 WITH PASSWORD
 ```
 
-```sql
-BACKUP
-```
+`BACKUP`
 
-```sql
-DATABASE
-```
+`DATABASE`
 
-```sql
-LOG
-```
+`LOG`
 
 ```sql
 WITH MEDIAPASSWORD

@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns a single row that displays the state inf
 
 ## Syntax
 
-```sql
-sys.dm_tran_current_transaction
-```
+`sys.dm_tran_current_transaction`

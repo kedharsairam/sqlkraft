@@ -31,8 +31,6 @@ implicitly created as a database principal in the
 
 database.
 
-SQL
-
 Use the
 
 stand-alone statement inside a module to set the execution context
@@ -42,8 +40,6 @@ to the caller of the module.
 Assume the following stored procedure is called by
 
 .
-
-SQL
 
 Windows domain account that is specified in the
 
@@ -55,21 +51,15 @@ execution of the module to fail.
 CompanyDomain\SQLUsers
 ```
 
-```sql
-Sales
-```
+`Sales`
 
 ```sql
 CompanyDomain\SqlUser1
 ```
 
-```sql
-SQLUsers
-```
+`SQLUsers`
 
-```sql
-Sales
-```
+`Sales`
 
 ```sql
 CREATE PROCEDURE
@@ -79,17 +69,13 @@ CREATE PROCEDURE
 CompanyDomain\SqlUser1
 ```
 
-```sql
-Sales
-```
+`Sales`
 
 ```sql
 EXECUTE AS CALLER
 ```
 
-```sql
-SqlUser2
-```
+`SqlUser2`
 
 ```sql
 EXECUTE AS
@@ -100,8 +86,7 @@ USE
 Sales;
 GO
 CREATE
-PROCEDURE
-dbo.usp_Demo
+PROCEDURE dbo.usp_Demo
 WITH
 EXECUTE
 AS
@@ -114,8 +99,7 @@ GO
 
 ```sql
 CREATE
-PROCEDURE
-dbo.usp_Demo
+PROCEDURE dbo.usp_Demo
 WITH
 EXECUTE
 AS
@@ -129,7 +113,6 @@ AS
 CALLER;
 SELECT
 USER_NAME();
--- Shows execution context is set to SqlUser2, the caller of
-the module.
+-- Shows execution context is set to SqlUser2, the caller of the module.
 REVERT;
 ```

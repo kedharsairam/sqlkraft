@@ -39,9 +39,7 @@ C++
 
 ```sql
 struct
-LocalDBInstanceInfo
-typedef
-struct
+LocalDBInstanceInfo typedef struct
 _
 LocalDBInstanceInfo
 {

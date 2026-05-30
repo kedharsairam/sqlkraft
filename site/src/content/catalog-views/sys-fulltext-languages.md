@@ -13,10 +13,6 @@ This catalog view contains one row per language whose word breakers are register
 
 ## Code Blocks
 
-```sql
-name
-```
+`name`
 
-```sql
-lcid
-```
+`lcid`

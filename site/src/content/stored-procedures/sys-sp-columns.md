@@ -54,9 +54,7 @@ N
 'column_name'
 ]
 [ , [ @
-ODBCV
-er = ]
-ODBCV
-er ]
+ODBCV er = ]
+ODBCV er ]
 [ ; ]
 ```

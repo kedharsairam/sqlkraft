@@ -7,8 +7,6 @@ tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 JSON function support was first introduced in SQL Server 2016 (13.x). The native
 
 type was
@@ -77,23 +75,16 @@ method is currently in preview and only available in SQL Server 2025 (17.x).
 
 ### json
 
-```sql
-modify
-```
+`modify`
 
-```sql
-modify
-```
+`modify`
 
-```sql
-modify
-```
+`modify`
 
 ```sql
 CREATE
 TABLE
-Orders
-(
+Orders (
 order_id
 INT
 ,
@@ -101,13 +92,10 @@ order_details
 JSON
 NOT
 NULL
-CHECK
-(JSON_PATH_EXISTS(order_details,
+CHECK (JSON_PATH_EXISTS(order_details,
 '$.basket'
 ) = 1)
 );
 ```
 
-```sql
-modify
-```
+`modify`

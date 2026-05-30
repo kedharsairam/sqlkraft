@@ -83,13 +83,10 @@ to enable the database for snapshot replication.
 
 You can enable a database for replication with the following Transact-SQL code:
 
-SQL
-
 To disable publishing, set the @value = 'false'.
 
 ```cmd
-USE
-master
+USE master
 EXEC sp_replicationdboption @dbname =
 'AdventureWorks2022'
 ,

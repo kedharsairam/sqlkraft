@@ -125,19 +125,13 @@ capitalization is ignored.
 
 Here are some guidelines for using alphabetical date formats:
 
-
-
 Expand table
-
-
 
 Expand table
 
 ### two digit year cutoff
 
 #### Alphabetical
-
-### datetime
 
 ## ISO 8601 format
 
@@ -203,8 +197,6 @@ is specified in the 24-hour format. The
 
 indicates the start of the time part of the
 
-
-
 Expand table
 
 #### ISO 8601
@@ -255,25 +247,17 @@ specifiers:
 
 = time only
 
-
-
 Expand table
-
-
 
 Expand table
 
 #### ODBC
 
-### datetime
-
 #### User-specified value
 
 #### System stored value
 
-```sql
-ss
-```
+`ss`
 
 ```sql
 00
@@ -319,9 +303,7 @@ n*
 'string_literaL'
 ```
 
-```sql
-us_english
-```
+`us_english`
 
 ```sql
 N'string_literaL'
@@ -347,13 +329,9 @@ N'string_literaL'
 <number separator number separator number [time] [time]>
 ```
 
-```sql
-us_english
-```
+`us_english`
 
-```sql
-mdy
-```
+`mdy`
 
 ```sql
 SET DATEFORMAT
@@ -363,27 +341,17 @@ SET DATEFORMAT
 12/10/08
 ```
 
-```sql
-DATEFORMAT
-```
+`DATEFORMAT`
 
 ```sql
-[0]4/15/[19]96
-mdy
-[0]4-15-[19]96
-mdy
-[0]4.15.[19]96
-mdy
-[0]4/[19]96/15
-myd
-15/[0]4/[19]96
-dmy
-15/[19]96/[0]4
-dym
-[19]96/15/[0]4
-ydm
-[19]96/[0]4/15
-ymd
+[0]4/15/[19]96 mdy
+[0]4-15-[19]96 mdy
+[0]4.15.[19]96 mdy
+[0]4/[19]96/15 myd
+15/[0]4/[19]96 dmy
+15/[19]96/[0]4 dym
+[19]96/15/[0]4 ydm
+[19]96/[0]4/15 ymd
 ```
 
 ```sql
@@ -394,13 +362,9 @@ ymd
 4 PM
 ```
 
-```sql
-April
-```
+`April`
 
-```sql
-Apr
-```
+`Apr`
 
 ```sql
 '

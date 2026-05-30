@@ -14,9 +14,7 @@ Disables change data capture (CDC) for the current database. Change data capture
 
 ## Syntax
 
-```sql
-sys.sp_cdc_disable_db
-```
+`sys.sp_cdc_disable_db`
 
 ## Remarks
 
@@ -58,9 +56,7 @@ before running
 
 ### Example 1
 
-```sql
-AdventureWorks2022
-```
+`AdventureWorks2022`
 
 ### Example 2
 
@@ -68,13 +64,10 @@ AdventureWorks2022
 USE
 AdventureWorks2022;
 GO
-EXECUTE
-sys.sp_cdc_disable_db;
+EXECUTE sys.sp_cdc_disable_db;
 GO
 ```
 
 ### Example 3
 
-```sql
-sp_tableoption
-```
+`sp_tableoption`

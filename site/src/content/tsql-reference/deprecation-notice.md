@@ -82,13 +82,11 @@ CONTROL SERVER
 ```
 
 ```sql
-The specified schema name "<user@domain>" either does
-not exist or you do not have permission to use it.
+The specified schema name "<user@domain>" either does not exist or you do not have permission to use it.
 ```
 
 ```sql
-CREATE SCHEMA
-failed due to previous errors.
+CREATE SCHEMA failed due to previous errors.
 ```
 
 ```sql

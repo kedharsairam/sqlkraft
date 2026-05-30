@@ -14,9 +14,7 @@ Changes the password for a Distributor. This stored procedure is executed at the
 
 ## Syntax
 
-```sql
-sp_changedistributor_password
-```
+`sp_changedistributor_password`
 
 ## Permissions
 
@@ -26,9 +24,7 @@ SQL Only members of the fixed server role can execute . View and modify replicat
 
 ### Example 1
 
-```sql
-distributor_admin
-```
+`distributor_admin`
 
 ### Example 2
 
@@ -44,9 +40,7 @@ distributor_admin
 
 ### Example 4
 
-```sql
-sp_changedistributor_password
-```
+`sp_changedistributor_password`
 
 ### Example 5
 

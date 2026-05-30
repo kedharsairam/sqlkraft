@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns page and row-count information for every
 
 ## Syntax
 
-```sql
-in_row_data_page_count
-```
+`in_row_data_page_count`

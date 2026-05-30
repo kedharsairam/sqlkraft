@@ -89,10 +89,6 @@ UPDATE STATISTICS
 
 TRUNCATE TABLE
 
-```sql
-BeginTransaction
-```
+`BeginTransaction`
 
-```sql
-SELECT
-```
+`SELECT`

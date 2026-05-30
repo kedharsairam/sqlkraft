@@ -66,6 +66,4 @@ buffer latch contention. You might wish to engage Microsoft Product Support Serv
 
 this type of advanced troubleshooting.
 
-```sql
-PAGEIOLATCH
-```
+`PAGEIOLATCH`

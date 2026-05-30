@@ -58,8 +58,7 @@ Changes the properties of a Snapshot Agent job that runs at a SQL Server 2005 (9
 
 ```sql
 sp_
-MS
-change_snapshot_agent_properties
+MS change_snapshot_agent_properties
 [ @publisher = ]
 N
 'publisher'

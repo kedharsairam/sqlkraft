@@ -47,8 +47,7 @@ C++
 msoledbsql.h
 0
 HRESULT
-LocalDBShareInstance
-(
+LocalDBShareInstance (
 PSID pOwnerSID ,
 PCWSTR pInstancePrivateName ,
 PCWSTR pInstanceSharedName ,

@@ -14,6 +14,4 @@ SQL database in Microsoft Fabric Returns size and fragmentation information for 
 
 ## Syntax
 
-```sql
-IN_ROW_DATA
-```
+`IN_ROW_DATA`

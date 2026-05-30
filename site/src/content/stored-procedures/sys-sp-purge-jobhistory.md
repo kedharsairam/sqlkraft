@@ -41,15 +41,11 @@ N
 
 ### Example 1
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 2
 
-```sql
-sp_purge_jobhistory
-```
+`sp_purge_jobhistory`
 
 ### Example 3
 
@@ -65,24 +61,16 @@ sp_purge_jobhistory
 
 ### Example 5
 
-```sql
-sp_purge_jobhistory
-```
+`sp_purge_jobhistory`
 
 ### Example 6
 
-```sql
-sp_purge_jobhistory
-```
+`sp_purge_jobhistory`
 
 ### Example 7
 
-```sql
-sp_purge_jobhistory
-```
+`sp_purge_jobhistory`
 
 ### Example 8
 
-```sql
-msdb
-```
+`msdb`

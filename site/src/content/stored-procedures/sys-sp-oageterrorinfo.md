@@ -36,12 +36,9 @@ Help context ID in the Help source file. Each call to an OLE Automation stored p
 
 ```sql
 sp_
-OAG
-et
-E
-rror
-I
-nfo [ objecttoken ]
+OAG et
+E rror
+I nfo [ objecttoken ]
 [ , source
 OUTPUT
 ]

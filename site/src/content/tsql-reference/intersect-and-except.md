@@ -13,13 +13,7 @@ be duplicated. In this example, the name
 
 is used in both outer and inner scope.
 
-SQL
-
-SQL
-
-```sql
-cte1
-```
+`cte1`
 
 ```sql
 )
@@ -36,64 +30,47 @@ OUTER_CTE;
 
 ```sql
 ;
-WITH
-cte1
-AS
-(
-WITH
-inner_cte1_1
-AS
-(
+WITH cte1
+AS (
+WITH inner_cte1_1
+AS (
 SELECT
 *
 FROM
 NestedCTE_t1
-WHERE
-c1 = 1
+WHERE c1 = 1
 ),
 inner_cte1_2
-AS
-(
+AS (
 SELECT
 *
-FROM
-inner_cte1_1
-WHERE
-c2 = 1
+FROM inner_cte1_1
+WHERE c2 = 1
 )
 SELECT
 *
-FROM
-inner_cte1_2
+FROM inner_cte1_2
 ),
 cte2
-AS
-(
-WITH
-cte1
-AS
-(
+AS (
+WITH cte1
+AS (
 SELECT
 *
 FROM
 NestedCTE_t1
-WHERE
-c3 = 1
+WHERE c3 = 1
 ),
 inner_cte2_2
-AS
-(
+AS (
 SELECT
 *
-FROM
-cte1
-WHERE
-c4 = 1
+FROM cte1
+WHERE c4 = 1
 )
 SELECT
 *
-FROM
-inner_cte2_2
+FROM inner_cte2_2
 )
 ```
 

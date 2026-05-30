@@ -19,8 +19,5 @@ Analytics Platform System (PDW) Returns a row for each module loaded into the se
 ## Syntax
 
 ```sql
-sys.dm_os_function_symbolic_name
-sys.dm_os_memory_allocations
-sys.dm_os_sublatches
-sys.dm_os_worker_local_storage
+sys.dm_os_function_symbolic_name sys.dm_os_memory_allocations sys.dm_os_sublatches sys.dm_os_worker_local_storage
 ```

@@ -14,9 +14,7 @@ Captures the cryptographically chained blocks, each of which represents a block 
 
 ## Syntax
 
-```sql
-sys.database_ledger_blocks
-```
+`sys.database_ledger_blocks`
 
 ## Permissions
 

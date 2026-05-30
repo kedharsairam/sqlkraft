@@ -69,7 +69,13 @@ import Card from "./Card.astro";
 </script>
 
 <style is:global>
-  /* ── Result list reset (shared with SearchPalette) ── */
+  /* ════════════════════════════════════════════════
+     SEARCH PALETTE CARDS — native macOS Spotlight
+     Zero underlines, 12px vertical padding,
+     crisp monochromatic typography, hidden scrollbar.
+     ════════════════════════════════════════════════ */
+
+  /* ── Result list reset ── */
   .palette-list {
     margin: 0;
     padding: 0;
@@ -98,15 +104,18 @@ import Card from "./Card.astro";
     margin-top: 0;
   }
 
-  /* ── Result item wrapper — entry animation only ── */
+  /* ── Result item wrapper — macOS 12px unified vertical padding ── */
   .palette-item {
     margin: 0 6px;
-    padding: 0;
+    padding: 12px 0;
     list-style: none;
     opacity: 0;
     animation: palette-result-enter 0.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    /* Visual separation between items within same result set */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
   }
   .palette-item:last-child {
+    border-bottom: none;
     margin-bottom: 4px;
   }
 
@@ -135,6 +144,8 @@ import Card from "./Card.astro";
       background 0.12s ease,
       border-color 0.12s ease,
       box-shadow 0.12s ease;
+    /* Enforce zero text-decoration on palette cards */
+    text-decoration: none !important;
   }
   .palette-card:hover {
     border-color: var(--accent);

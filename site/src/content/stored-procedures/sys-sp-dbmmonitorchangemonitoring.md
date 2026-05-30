@@ -36,20 +36,17 @@ sp_dbmmonitorchangemonitoring
 ### Example 2
 
 ```sql
-EXECUTE
-sp_dbmmonitorchangemonitoring 1, 5;
+EXECUTE sp_dbmmonitorchangemonitoring 1, 5;
 ```
 
 ### Example 3
 
 ```sql
-EXECUTE
-sp_dbmmonitordropmonitoring;
+EXECUTE sp_dbmmonitordropmonitoring;
 ```
 
 ### Example 4
 
 ```sql
-EXECUTE
-sp_dbmmonitorhelpalert AdventureWorks2022;
+EXECUTE sp_dbmmonitorhelpalert AdventureWorks2022;
 ```

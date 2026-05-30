@@ -79,11 +79,7 @@ ALTER ANY REMOTE
 
 SERVICE BINDING
 
-
-
 Expand table
-
-
 
 Expand table
 

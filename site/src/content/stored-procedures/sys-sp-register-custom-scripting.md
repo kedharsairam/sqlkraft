@@ -14,9 +14,7 @@ Replication allows user-defined custom stored procedures to replace one or more 
 
 ## Syntax
 
-```sql
-sp_register_custom_scripting
-```
+`sp_register_custom_scripting`
 
 ## Permissions
 

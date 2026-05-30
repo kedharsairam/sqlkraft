@@ -39,9 +39,7 @@ N
 
 ### Example 1
 
-```sql
-sp_describe_parameter_encryption
-```
+`sp_describe_parameter_encryption`
 
 ### Example 2
 
@@ -58,9 +56,7 @@ DEFINITION
 
 ### Example 4
 
-```sql
-ENCRYPTED_VALUE
-```
+`ENCRYPTED_VALUE`
 
 ### Example 5
 
@@ -70,8 +66,7 @@ COLUMN
 MASTER
 KEY
 [CMK1]
-WITH
-(
+WITH (
 KEY_STORE_PROVIDER_NAME = N
 'MSSQL_CERTIFICATE_STORE'
 ,
@@ -85,8 +80,7 @@ ENCRYPTION
 KEY
 [CEK1]
 WITH
-VALUES
-(
+VALUES (
 COLUMN_MASTER_KEY = [CMK1],
 ALGORITHM =
 'RSA_OAEP'
@@ -96,13 +90,11 @@ ENCRYPTED_VALUE = 0x016E00000163007500720072<...>
 );
 GO
 CREATE
-TABLE
-t1 (
+TABLE t1 (
 c1
 INT
 ENCRYPTED
-WITH
-(
+WITH (
 COLUMN_ENCRYPTION_KEY = [CEK1],
 ENCRYPTION_TYPE = Randomized,
 ALGORITHM =
@@ -111,8 +103,7 @@ ALGORITHM =
 NULL
 ,
 );
-EXECUTE
-sp_describe_parameter_encryption
+EXECUTE sp_describe_parameter_encryption
 N
 'INSERT INTO t1 VALUES(@c1)'
 ,

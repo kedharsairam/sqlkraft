@@ -96,8 +96,6 @@ is enabled by default, and treats
 and
 
 ```sql
-PERMISSION_SET = SAFE
-sp_configure
-clr strict security
+PERMISSION_SET = SAFE sp_configure clr strict security
 SAFE
 ```

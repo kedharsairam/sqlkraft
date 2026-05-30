@@ -110,12 +110,6 @@ and
 
 .
 
-### ntext
-
-### text
-
-### image
-
 ### varchar(max)
 
 ### nvarchar(max)

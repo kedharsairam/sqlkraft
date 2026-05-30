@@ -31,9 +31,7 @@ N
 
 ### Example 1
 
-```sql
-Italian
-```
+`Italian`
 
 ### Example 2
 
@@ -91,6 +89,4 @@ Language Name
 
 ### Example 8
 
-```sql
-us_english
-```
+`us_english`

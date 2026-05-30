@@ -25,8 +25,7 @@ SQL Server 2016 (13.x) and later versions Requests SQL Server managed backup to 
 ## Syntax
 
 ```sql
-EXECUTE
-managed_backup.sp_backup_on_demand
+EXECUTE managed_backup.sp_backup_on_demand
 [ @database_name = ]
 'database name'
 , [ @type = ] {

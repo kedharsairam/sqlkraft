@@ -39,8 +39,6 @@ returned results. These elements will have no value.
 
 The ELEMENTS XSINIL phrase is shown in the following Transact-SQL SELECT example.
 
-SQL
-
 The following shows the result. If XSINIL isn't specified, the
 
 element will be absent.
@@ -54,20 +52,16 @@ Last updated on 11/18/2025
 ```sql
 <Middle>
 SELECT
-EmployeeID
-as
+EmployeeID as
 "@EmpID"
 ,
-FirstName
-as
+FirstName as
 "EmpName/First"
 ,
-MiddleName
-as
+MiddleName as
 "EmpName/Middle"
 ,
-LastName
-as
+LastName as
 "EmpName/Last"
 FROM
 HumanResources.Employee E, Person.Contact C
@@ -79,8 +73,7 @@ FOR
 XML
 PATH
 , ELEMENTS XSINIL;
-<row
-xmlns:xsi
+<row xmlns:xsi
 =
 "http://www.w3.org/2001/XMLSchema-instance"
 EmpID
@@ -91,8 +84,7 @@ EmpID
 <First>
 Gustavo
 </First>
-<Middle
-xsi:nil
+<Middle xsi:nil
 =
 "true"
 />

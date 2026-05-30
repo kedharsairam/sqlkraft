@@ -47,8 +47,6 @@ documents that are stored in the Instructions column of the ProductModel table.
 
 This query specifies a FOR XML PATH mode.
 
-SQL
-
 The following result is element-centric XML where each column value in the resulting rowset is
 
 wrapped in an element. Because the
@@ -74,8 +72,6 @@ option specified. It
 returns element-centric XML with a default
 
 element for each row in the result set.
-
-SQL
 
 ```sql
 SELECT

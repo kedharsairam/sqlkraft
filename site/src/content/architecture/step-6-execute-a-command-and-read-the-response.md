@@ -32,9 +32,7 @@ if more than a few rows are returned.
 
 Output
 
-```sql
-ACK
-```
+`ACK`
 
 ```sql
 Login Failed
@@ -62,15 +60,13 @@ Application Data {TLS:328, SSLVersionSelector:327, TDS:326, TCP:325, IPv4:3
 Frame Time Offset Source IP    Dest IP      Description
 ----- ----------- ------------ ------------ ----------------------------------
 -----------------------------------------------------------------
-6137  116.5962248 10.10.10.120 10.10.10.10  TDS:Response, Version = 7.1
-(0x71000001), SPID = 96, PacketID = 1, Flags=...AP..., SrcPort=1433, Ds
+6137  116.5962248 10.10.10.120 10.10.10.10  TDS:Response, Version = 7.1 (0x71000001), SPID = 96, PacketID = 1, Flags=...AP..., SrcPort=1433, Ds
 ```
 
 ```sql
 Frame Time Offset Source IP    Dest IP      Description
 ----- ----------- ------------ ------------ ----------------------------------
 -----------------------------------------------------------------
-6138  116.5991538 10.10.10.10  10.10.10.120 TDS:SQLBatch, Version = 7.1
-(0x71000001), SPID = 0, PacketID = 1, Flags=...AP..., SrcPort=60123, Ds
+6138  116.5991538 10.10.10.10  10.10.10.120 TDS:SQLBatch, Version = 7.1 (0x71000001), SPID = 0, PacketID = 1, Flags=...AP..., SrcPort=60123, Ds
 6139  116.5991538 10.10.10.120 10.10.10.10  TDS:Response, Version = 7.1
 ```

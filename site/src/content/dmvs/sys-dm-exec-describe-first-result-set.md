@@ -14,9 +14,7 @@ SQL database in Microsoft Fabric This dynamic management function takes a Transa
 
 ## Syntax
 
-```sql
-sys.dm_exec_describe_first_result_set
-```
+`sys.dm_exec_describe_first_result_set`
 
 ## Permissions
 

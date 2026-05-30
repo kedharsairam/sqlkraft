@@ -14,38 +14,28 @@ Reduces the size of the backup and restore history tables by deleting the entrie
 
 ## Syntax
 
-```sql
-sp_delete_backuphistory
-```
+`sp_delete_backuphistory`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sp_delete_backuphistory
-```
+`sp_delete_backuphistory`
 
 ### Example 2
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 3
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
 ### Example 4
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_delete_backuphistory @oldest_date =
+EXECUTE sp_delete_backuphistory @oldest_date =
 '2023-01-14'
 ;
 GO
@@ -53,24 +43,18 @@ GO
 
 ### Example 5
 
-```sql
-sp_delete_backuphistory
-```
+`sp_delete_backuphistory`
 
 ### Example 6
 
-```sql
-Test
-```
+`Test`
 
 ### Example 7
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-managed_backup.sp_backup_config_schedule
+EXECUTE managed_backup.sp_backup_config_schedule
 @database_name =
 'Test'
 ,
@@ -94,23 +78,17 @@ GO
 
 ### Example 8
 
-```sql
-sp_delete_backuphistory
-```
+`sp_delete_backuphistory`
 
 ### Example 9
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-managed_backup.sp_backup_master_switch @new_state = 0;
+EXECUTE managed_backup.sp_backup_master_switch @new_state = 0;
 GO
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-managed_backup.sp_backup_master_switch @new_state = 1;
+EXECUTE managed_backup.sp_backup_master_switch @new_state = 1;
 GO
 ```

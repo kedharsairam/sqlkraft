@@ -35,33 +35,23 @@ N
 
 ### Example 1
 
-```sql
-category_name
-```
+`category_name`
 
 ### Example 2
 
-```sql
-sp_help_operator
-```
+`sp_help_operator`
 
 ### Example 3
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 4
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
 ### Example 5
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 6
 
@@ -72,11 +62,9 @@ François Ajenstat
 ### Example 7
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_help_operator @operator_name = N
+EXECUTE dbo.sp_help_operator @operator_name = N
 'François Ajenstat'
 ;
 GO

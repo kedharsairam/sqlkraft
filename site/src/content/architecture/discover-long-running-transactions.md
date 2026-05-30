@@ -86,9 +86,7 @@ In Azure SQL Database, idle transactions (transactions that haven't written to t
 
 log for six hours) are automatically terminated to free up resources.
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 recovery interval
@@ -98,10 +96,6 @@ recovery interval
 ALTER DATABASE ... SET TARGET_RECOVERY_TIME
 ```
 
-```sql
-sys.dm_tran_database_transactions
-```
+`sys.dm_tran_database_transactions`
 
-```sql
-database_transaction_begin_time
-```
+`database_transaction_begin_time`

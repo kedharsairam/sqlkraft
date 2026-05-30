@@ -63,8 +63,6 @@ database.
 
 To disable Service Broker, run the following Transact-SQL script:
 
-SQL
-
 ７
 
 Note
@@ -88,17 +86,14 @@ Broker on the target SQL managed instance, enable it on the source SQL Server da
 before you migrate to SQL managed instance.
 
 ```sql
-is_broker_enabled
-sys.databases
-USE
-master
+is_broker_enabled sys.databases
+USE master
 ;
 GO
 ALTER
 DATABASE
 [<
-database
-name
+database name
 >]
 SET
 DISABLE_BROKER;

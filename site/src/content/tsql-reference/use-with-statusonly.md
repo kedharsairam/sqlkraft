@@ -101,17 +101,11 @@ Related Databases Consistently
 
 ### Azure Synapse Analytics:
 
-```sql
-KILL
-```
+`KILL`
 
-```sql
-KILL
-```
+`KILL`
 
-```sql
-KILL
-```
+`KILL`
 
 ```sql
 AWAITING COMMAND
@@ -125,58 +119,32 @@ SIGNAL HANDLER
 @@SPID
 ```
 
-```sql
-session_id
-```
+`session_id`
 
-```sql
-sys.dm_tran_locks
-```
+`sys.dm_tran_locks`
 
-```sql
-sys.dm_exec_sessions
-```
+`sys.dm_exec_sessions`
 
-```sql
-sys.dm_exec_requests
-```
+`sys.dm_exec_requests`
 
-```sql
-SPID
-```
+`SPID`
 
-```sql
-sp_who
-```
+`sp_who`
 
-```sql
-cmd
-```
+`cmd`
 
-```sql
-sp_who
-```
+`sp_who`
 
 ```sql
 KILLED/ROLLBACK
 ```
 
-```sql
-blocking_session_id
-```
+`blocking_session_id`
 
-```sql
-sys.dm_exec_requests
-```
+`sys.dm_exec_requests`
 
-```sql
-blk
-```
+`blk`
 
-```sql
-sp_who
-```
+`sp_who`
 
-```sql
-KILL
-```
+`KILL`

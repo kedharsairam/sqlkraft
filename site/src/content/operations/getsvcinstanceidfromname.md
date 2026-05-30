@@ -64,8 +64,7 @@ if the call succeeded; otherwise,
 .
 
 ```cmd
-true
-false
+true false
 GetSvcInstanceIDFromName(
 LPCWSTR     sInstanceName,
 SQL_SVCS    Service,

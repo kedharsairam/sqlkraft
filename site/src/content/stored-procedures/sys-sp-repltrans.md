@@ -30,8 +30,7 @@ Returns a result set of all the transactions in the publication database transac
 ## Syntax
 
 ```sql
-EXECUTE
-sp_repldone
+EXECUTE sp_repldone
 @xactid =
 NULL
 ,
@@ -55,33 +54,23 @@ reset
 
 ### Example 1
 
-```sql
-sp_repltrans
-```
+`sp_repltrans`
 
 ### Example 2
 
-```sql
-sp_replcmds
-```
+`sp_replcmds`
 
 ### Example 3
 
-```sql
-sp_repldone
-```
+`sp_repldone`
 
 ### Example 4
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 5
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 6
 
@@ -92,8 +81,7 @@ NULL
 ### Example 7
 
 ```sql
-EXECUTE
-sp_repldone
+EXECUTE sp_repldone
 @xactid =
 NULL
 ,

@@ -59,8 +59,7 @@ MAX_LOCALDB_VERSION_LENGTH + 1 ] ;
 typedef
 TLocalDBVersion* PTLocalDBVersion;
 HRESULT
-LocalDBGetVersions
-(
+LocalDBGetVersions (
 PTLocalDBVersion pVersion ,
 LPDWORD lpdwNumberOfVersions);
 ```

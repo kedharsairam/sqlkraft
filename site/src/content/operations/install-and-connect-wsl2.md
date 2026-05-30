@@ -84,7 +84,5 @@ administrator mode, and follow the instructions in the next section.
 SQL Server on WSL is for development use only
 
 ```cmd
-systemd
-systemctl
-systemd
+systemd systemctl systemd
 ```

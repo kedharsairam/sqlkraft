@@ -97,12 +97,10 @@ DS =
 Const
 DB =
 "AdventureWorks2022"
-Set
-objConn = CreateObject(
+Set objConn = CreateObject(
 "ADODB.Connection"
 )
-Set
-objRs = CreateObject(
+Set objRs = CreateObject(
 "ADODB.Recordset"
 )
 CommandText =

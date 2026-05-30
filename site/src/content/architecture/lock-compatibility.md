@@ -272,37 +272,25 @@ Expand table
 
 ### 'CAL'
 
-```sql
-BU
-```
+`BU`
 
-```sql
-BU
-```
+`BU`
 
 ```sql
 BULK INSERT
 ```
 
-```sql
-OPENROWSET(BULK)
-```
+`OPENROWSET(BULK)`
 
-```sql
-SqlBulkCopy
-```
+`SqlBulkCopy`
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
 ```sql
 table lock on bulk load
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
 ```sql
 X
@@ -320,21 +308,15 @@ S
 U
 ```
 
-```sql
-BU
-```
+`BU`
 
 ```sql
 INSERT INTO...SELECT
 ```
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
-```sql
-IX
-```
+`IX`
 
 ```sql
 IS
@@ -345,9 +327,7 @@ SIX
 X
 ```
 
-```sql
-IS
-```
+`IS`
 
 ```sql
 S
@@ -357,33 +337,21 @@ S
 U
 ```
 
-```sql
-IX
-```
+`IX`
 
-```sql
-SIX
-```
+`SIX`
 
 ```sql
 X
 ```
 
-```sql
-IX
-```
+`IX`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-IX
-```
+`IX`
 
 ```sql
 X
@@ -401,9 +369,7 @@ I
 C
 ```
 
-```sql
-NL
-```
+`NL`
 
 ```sql
 SCH-S
@@ -425,33 +391,19 @@ U
 X
 ```
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IU
-```
+`IU`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-SIU
-```
+`SIU`
 
-```sql
-SIX
-```
+`SIX`
 
-```sql
-UIX
-```
+`UIX`
 
-```sql
-BU
-```
+`BU`
 
 ```sql
 RS-S

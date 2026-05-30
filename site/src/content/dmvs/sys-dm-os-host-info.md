@@ -14,9 +14,7 @@ SQL Server 2017 (14.x) and later Returns one row that displays operating system 
 
 ## Syntax
 
-```sql
-host_service_pack_level
-```
+`host_service_pack_level`
 
 ## Permissions
 

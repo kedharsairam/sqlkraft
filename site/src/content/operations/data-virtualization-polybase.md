@@ -59,7 +59,6 @@ driver could cause.
 
 ```cmd
 curl https://packages.microsoft.com/keys/microsoft.asc | sudo gpg --dearmor -
-o /usr/share/keyrings/microsoft-prod.gpg
-curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -
+o /usr/share/keyrings/microsoft-prod.gpg curl https://packages.microsoft.com/config/ubuntu/$(lsb_release -
 rs)/prod.list | sudo tee /etc/apt/sources.list.d/mssql-release.list
 ```

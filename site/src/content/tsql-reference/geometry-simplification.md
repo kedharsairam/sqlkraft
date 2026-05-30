@@ -71,11 +71,7 @@ These methods create simplified versions of geometry instances, useful for perfo
 
 optimization and visualization at different scales.
 
-
-
 Expand table
-
-
 
 Expand table
 

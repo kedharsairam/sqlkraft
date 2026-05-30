@@ -14,29 +14,21 @@ Returns the parameterized form of a query. The results returned mimic the parame
 
 ## Syntax
 
-```sql
-sp_get_query_template
-```
+`sp_get_query_template`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sp_get_query_template
-```
+`sp_get_query_template`
 
 ### Example 2
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 3
 
-```sql
-sp_get_query_template
-```
+`sp_get_query_template`
 
 ### Example 4
 
@@ -47,19 +39,16 @@ GO
 DECLARE
 @my_templatetext
 AS
-NVARCHAR
-(
+NVARCHAR (
 MAX
 );
 DECLARE
 @my_parameters
 AS
-NVARCHAR
-(
+NVARCHAR (
 MAX
 );
-EXECUTE
-sp_get_query_template N
+EXECUTE sp_get_query_template N
 'SELECT pi.ProductID, SUM(pi.Quantity) AS Total
 FROM Production.ProductModel pm
 INNER JOIN Production.ProductInventory pi

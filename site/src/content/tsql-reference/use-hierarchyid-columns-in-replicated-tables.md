@@ -81,18 +81,6 @@ Replication replicates the data as bytes and doesn't perform any validation to a
 
 integrity of the hierarchy.
 
-### hierarchyid
-
-### hierarchyid
-
-### hierarchyid
-
-### hierarchyid
-
-### hierarchyid
-
-### hierarchyid
-
 The hierarchy of the changes that were made at the source (Subscriber or Publisher) isn't
 
 maintained when they replicate to the destination.
@@ -145,6 +133,4 @@ Last updated on 11/18/2025
 
 Related content
 
-```sql
-IDENTITY
-```
+`IDENTITY`

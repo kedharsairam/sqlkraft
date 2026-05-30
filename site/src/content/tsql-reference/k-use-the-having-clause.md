@@ -7,13 +7,9 @@ tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 The following example finds the average price of each type of product and orders the results
 
 by average price.
-
-SQL
 
 The first example that follows shows a
 
@@ -29,38 +25,27 @@ clause without aggregate
 
 functions.
 
-SQL
+`HAVING`
 
-```sql
-HAVING
-```
+`SalesOrderDetail`
 
-```sql
-SalesOrderDetail
-```
-
-```sql
-HAVING
-```
+`HAVING`
 
 ```sql
 USE
 AdventureWorks2025;
 GO
 SELECT
-AVG
-(OrderQty)
+AVG (OrderQty)
 AS
 [Average Quantity],
 NonDiscountSales = (OrderQty * UnitPrice)
 FROM
 Sales.SalesOrderDetail
 GROUP
-BY
-(OrderQty * UnitPrice)
+BY (OrderQty * UnitPrice)
 ORDER
-BY
-(OrderQty * UnitPrice)
+BY (OrderQty * UnitPrice)
 DESC
 ;
 GO
@@ -72,8 +57,7 @@ AdventureWorks2025;
 GO
 SELECT
 ProductID,
-AVG
-(UnitPrice)
+AVG (UnitPrice)
 AS
 [Average Price]
 FROM
@@ -85,8 +69,7 @@ BY
 ProductID
 ORDER
 BY
-AVG
-(UnitPrice);
+AVG (UnitPrice);
 GO
 ```
 
@@ -102,6 +85,5 @@ GROUP
 BY
 ProductID
 HAVING
-AVG
-(OrderQty) > 5
+AVG (OrderQty) > 5
 ```

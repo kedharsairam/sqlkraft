@@ -14,9 +14,7 @@ Summarize this article for me SQL Server 2017 (14.x) and later versions Azure SQ
 
 ## Syntax
 
-```sql
-sys.external_libraries
-```
+`sys.external_libraries`
 
 ## Remarks
 

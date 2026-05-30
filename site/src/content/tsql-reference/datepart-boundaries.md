@@ -195,60 +195,34 @@ datepart
 
 .
 
-### datetime2
-
-### datetime
-
 ### smalldatetime
 
 ### nanosecond
 
-### bigint
+`DATEDIFF_BIG`
 
-```sql
-DATEDIFF_BIG
-```
+`DATEDIFF_BIG`
 
-```sql
-DATEDIFF_BIG
-```
+`DATEDIFF_BIG`
 
-```sql
-DATEDIFF_BIG
-```
+`DATEDIFF_BIG`
 
-```sql
-DATEDIFF_BIG
-```
+`DATEDIFF_BIG`
 
-```sql
-DATEDIFF_BIG
-```
-
-```sql
-DATEDIFF_BIG
-```
+`DATEDIFF_BIG`
 
 ```sql
 1900-01-01
 ```
 
-```sql
-DATEDIFF_BIG
-```
+`DATEDIFF_BIG`
 
 ```sql
 00:00:00
 ```
 
-```sql
-DATEDIFF_BIG
-```
+`DATEDIFF_BIG`
 
-```sql
-DATEDIFF_BIG
-```
+`DATEDIFF_BIG`
 
-```sql
-DATEDIFF_BIG
-```
+`DATEDIFF_BIG`

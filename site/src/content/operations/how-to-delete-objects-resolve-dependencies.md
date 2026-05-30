@@ -112,7 +112,6 @@ pane to locate all other dependencies and manually fix them.
 ```cmd
 ALTER
 Customer
-Customer
-sp_rename
+Customer sp_rename
 Customers
 ```

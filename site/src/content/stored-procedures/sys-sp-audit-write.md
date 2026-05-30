@@ -14,6 +14,4 @@ Adds a user-defined audit event to Transact-SQL syntax conventions A parameter d
 
 ## Syntax
 
-```sql
-USER_DEFINED_AUDIT_GROUP
-```
+`USER_DEFINED_AUDIT_GROUP`

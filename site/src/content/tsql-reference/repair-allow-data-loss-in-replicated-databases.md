@@ -91,9 +91,7 @@ user database or distribution database:
 
 replication topology, and then try to synchronize all nodes. For more information, see
 
-```sql
-REPAIR_ALLOW_DATA_LOSS
-```
+`REPAIR_ALLOW_DATA_LOSS`
 
 ```sql
 DBCC CHECKDB
@@ -103,30 +101,18 @@ DBCC CHECKDB
 DBCC CHECKDB
 ```
 
-```sql
-REPAIR_ALLOW_DATA_LOSS
-```
+`REPAIR_ALLOW_DATA_LOSS`
 
-```sql
-CHECKDB
-```
+`CHECKDB`
 
-```sql
-CHECKDB
-```
+`CHECKDB`
 
-```sql
-CHECKDB
-```
+`CHECKDB`
 
-```sql
-CHECKDB
-```
+`CHECKDB`
 
 ```sql
 DBCC CHECKDB
 ```
 
-```sql
-REPAIR_ALLOW_DATA_LOSS
-```
+`REPAIR_ALLOW_DATA_LOSS`

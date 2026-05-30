@@ -26,15 +26,11 @@ Article • 02/28/2023 Applies to: SQL Server Translates the permissions bitmask
 
 ### Example 1
 
-```sql
-sys.fn_builtin_permissions
-```
+`sys.fn_builtin_permissions`
 
 ### Example 2
 
-```sql
-sys.fn_translate_permissions
-```
+`sys.fn_translate_permissions`
 
 ### Example 3
 

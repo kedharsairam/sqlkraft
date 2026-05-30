@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns a virtual table that displays all active
 
 ## Syntax
 
-```sql
-sys.dm_tran_current_snapshot
-```
+`sys.dm_tran_current_snapshot`

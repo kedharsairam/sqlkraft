@@ -67,8 +67,6 @@ CONTROL
 
 VIEW DEFINITION
 
-
-
 Expand table
 
 #### Database role permission

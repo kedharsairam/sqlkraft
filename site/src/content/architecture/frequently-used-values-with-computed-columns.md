@@ -69,26 +69,16 @@ illustrated in the following example.
 
 Create the user-defined function for a book ISBN number:
 
-SQL
-
 Add a computed column to the table for the ISBN:
-
-SQL
 
 ```sql
 CREATE
-FUNCTION
-udf_get_book_ISBN (@xData
-xml
+FUNCTION udf_get_book_ISBN (@xData xml
 )
-RETURNS
-varchar
-(20)
+RETURNS varchar (20)
 BEGIN
 DECLARE
-@ISBN
-varchar
-(20)
+@ISBN varchar (20)
 SELECT
 @ISBN = @xData.value(
 '/book[1]/@ISBN'

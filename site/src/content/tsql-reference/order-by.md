@@ -19,19 +19,11 @@ statements where you
 
 rename a column in the output.
 
-SQL
+`UNION`
 
-```sql
-UNION
-```
+`UNION`
 
-```sql
-UNION
-```
-
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 USE
@@ -39,21 +31,18 @@ AdventureWorks2025;
 GO
 IF OBJECT_ID('dbo.Gloves', 'U') IS NOT NULL
 DROP
-TABLE
-dbo.Gloves;
+TABLE dbo.Gloves;
 GO
 -- Create Gloves table.
 SELECT
 ProductModelID,
 Name
-INTO
-dbo.Gloves
+INTO dbo.Gloves
 FROM
 Production.ProductModel
 WHERE
 ProductModelID
-IN
-(3, 4);
+IN (3, 4);
 GO
 /* INCORRECT */
 USE
@@ -67,8 +56,7 @@ Production.ProductModel
 WHERE
 ProductModelID
 NOT
-IN
-(3, 4)
+IN (3, 4)
 ORDER
 BY
 Name
@@ -76,8 +64,7 @@ UNION
 SELECT
 ProductModelID,
 Name
-FROM
-dbo.Gloves;
+FROM dbo.Gloves;
 GO
 /* CORRECT */
 USE
@@ -91,12 +78,10 @@ Production.ProductModel
 WHERE
 ProductModelID
 NOT
-IN
-(3, 4)
+IN (3, 4)
 UNION
 SELECT
 ProductModelID,
 Name
-FROM
-dbo.Gloves
+FROM dbo.Gloves
 ```

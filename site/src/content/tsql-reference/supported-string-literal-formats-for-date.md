@@ -117,8 +117,6 @@ format isn't supported for
 
 .
 
-SQL
-
 ## String literal formats for month-year-day
 
 ## String literal formats for day-month-year
@@ -126,16 +124,6 @@ SQL
 ## String literal formats for day-year-month
 
 ## String literal formats for year-month-day
-
-SQL
-
-SQL
-
-SQL
-
-SQL
-
-### date
 
 ## Alphabetical list of formats
 
@@ -165,8 +153,6 @@ always interpreted as
 
 interpreted as the year.
 
-### date
-
 ## W3C XML date format
 
 ```sql
@@ -177,9 +163,7 @@ interpreted as the year.
 [m]m
 ```
 
-```sql
-dd
-```
+`dd`
 
 ```sql
 [yy]yy
@@ -205,9 +189,7 @@ dd
 9999
 ```
 
-```sql
-yyyy
-```
+`yyyy`
 
 ```sql
 1582
@@ -237,9 +219,7 @@ yyyy
 1950
 ```
 
-```sql
-ydm
-```
+`ydm`
 
 ```sql
 [m]m/dd/[yy]yy
@@ -253,15 +233,11 @@ ydm
 ```
 
 ```sql
-dd/[m]m/[yy]yy
-dd-[m]m-[yy]yy
-dd.[m]m.[yy]yy
+dd/[m]m/[yy]yy dd-[m]m-[yy]yy dd.[m]m.[yy]yy
 ```
 
 ```sql
-dd/[yy]yy/[m]m
-dd-[yy]yy-[m]m
-dd.[yy]yy.[m]m
+dd/[yy]yy/[m]m dd-[yy]yy-[m]m dd.[yy]yy.[m]m
 ```
 
 ```sql
@@ -293,28 +269,19 @@ DATEFORMAT ymd;
 [yy]yy/[m]m/dd
 [yy]yy-[m]m-dd
 [yy]yy-[m]m-dd
-[dd] mon[,] yyyy
-dd mon[,][yy]yy
-dd [yy]yy mon
-[dd] yyyy mon
-mon [dd][,] yyyy
-mon dd[,] [yy]
+[dd] mon[,] yyyy dd mon[,][yy]yy dd [yy]yy mon
+[dd] yyyy mon mon [dd][,] yyyy mon dd[,] [yy]
 mon yyyy [dd]
 yyyy mon [dd]
-yyyy [dd] mon
-mon
+yyyy [dd] mon mon
 ```
 
 ```sql
-yyyy-MM-dd
-yyyyMMdd
+yyyy-MM-dd yyyyMMdd
 ```
 
 ```sql
-[yy]yyMMdd
-yyyy[MMdd]
+[yy]yyMMdd yyyy[MMdd]
 ```
 
-```sql
-ymd
-```
+`ymd`

@@ -89,6 +89,4 @@ sp_help
 
 .
 
-```sql
-sp_help
-```
+`sp_help`

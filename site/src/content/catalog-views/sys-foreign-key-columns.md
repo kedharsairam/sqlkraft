@@ -36,8 +36,7 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row 
 ## Syntax
 
 ```sql
-SELECT
-fk.name
+SELECT fk.name
 AS
 ForeignKeyName
 , t_parent.name
@@ -52,11 +51,9 @@ ReferencedTableName
 , c_child.name
 AS
 ReferencedColumnName
-FROM
-sys.foreign_keys fk
+FROM sys.foreign_keys fk
 INNER
-JOIN
-sys.foreign_key_columns fkc
+JOIN sys.foreign_key_columns fkc
 ```
 
 ## Examples
@@ -64,8 +61,7 @@ sys.foreign_key_columns fkc
 ### Example 1
 
 ```sql
-SELECT
-fk.name
+SELECT fk.name
 AS
 ForeignKeyName
 , t_parent.name
@@ -80,9 +76,7 @@ ReferencedTableName
 , c_child.name
 AS
 ReferencedColumnName
-FROM
-sys.foreign_keys fk
+FROM sys.foreign_keys fk
 INNER
-JOIN
-sys.foreign_key_columns fkc
+JOIN sys.foreign_key_columns fkc
 ```

@@ -91,14 +91,6 @@ statements cannot explicitly use the keyword
 
 .
 
-### timestamp
-
-### smallmoney
-
-### money
-
-### money
-
 ```sql
 T1, ..., Tn
 ```
@@ -107,26 +99,14 @@ T1, ..., Tn
 UNION ALL
 ```
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
-```sql
-DEFAULT
-```
+`DEFAULT`

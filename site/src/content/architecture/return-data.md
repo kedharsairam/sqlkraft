@@ -85,8 +85,6 @@ rows that also appear in the
 
 view.
 
-SQL
-
 ```sql
 AdventureWorks2025
 AdventureWorksDW2025
@@ -98,8 +96,7 @@ SELECT
 SELECT
 LastName
 SalesYTD
-SalesPerson
-vEmployee
+SalesPerson vEmployee
 USE
 AdventureWorks2022;
 GO
@@ -121,6 +118,5 @@ LastName,
 SalesYTD
 FROM
 Sales.SalesPerson
-AS
-sp
+AS sp
 ```

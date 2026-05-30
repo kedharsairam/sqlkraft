@@ -46,18 +46,15 @@ N
 ### Example 1
 
 ```sql
-Catalog application
-proxy
+Catalog application proxy
 ```
 
 ### Example 2
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_revoke_proxy_from_subsystem
+EXECUTE dbo.sp_revoke_proxy_from_subsystem
 @proxy_name =
 'Catalog application proxy'
 ,

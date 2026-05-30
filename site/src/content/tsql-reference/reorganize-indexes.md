@@ -110,21 +110,14 @@ ALTER INDEX ALL
 ```
 
 ```sql
-ALTER INDEX <index
-name>
+ALTER INDEX <index name>
 ```
 
-```sql
-ALL
-```
+`ALL`
 
-```sql
-ALL
-```
+`ALL`
 
-```sql
-ALL
-```
+`ALL`
 
 ```sql
 ALTER INDEX REORGANIZE

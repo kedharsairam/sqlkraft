@@ -67,6 +67,4 @@ connection. Query execution time on the server is the same for context and regul
 
 connections.
 
-```sql
-SqlClient
-```
+`SqlClient`

@@ -64,7 +64,6 @@ int srv_paramstatus (
 SRV_PROC *
 srvproc
 ,
-int
-n
+int n
 );
 ```

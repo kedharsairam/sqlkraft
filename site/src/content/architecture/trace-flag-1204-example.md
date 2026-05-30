@@ -74,13 +74,9 @@ nonclustered index. The index key in Node 2 is being updated when the deadlock o
 
 Output
 
-```sql
-DB
-```
+`DB`
 
-```sql
-DB
-```
+`DB`
 
 ```sql
 DB: db_id
@@ -91,13 +87,9 @@ DB: db_id[BULK-OP-DB]
 DB: db_id[BULK-OP-LOG]
 ```
 
-```sql
-APP
-```
+`APP`
 
-```sql
-APP
-```
+`APP`
 
 ```sql
 APP: lock_resource
@@ -107,29 +99,19 @@ APP: lock_resource
 APP: Formf370f478
 ```
 
-```sql
-METADATA
-```
+`METADATA`
 
-```sql
-METADATA
-```
+`METADATA`
 
-```sql
-METADATA.USER_TYPE
-```
+`METADATA.USER_TYPE`
 
 ```sql
 user_type_id = *integer_value*
 ```
 
-```sql
-METADATA
-```
+`METADATA`
 
-```sql
-HOBT
-```
+`HOBT`
 
 ```sql
 Deadlock encountered .... Printing deadlock information

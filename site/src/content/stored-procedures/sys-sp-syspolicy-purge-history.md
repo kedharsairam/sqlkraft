@@ -14,9 +14,7 @@ Removes the policy evaluation history according to the history retention interva
 
 ## Syntax
 
-```sql
-sp_syspolicy_purge_history
-```
+`sp_syspolicy_purge_history`
 
 ## Permissions
 
@@ -27,7 +25,6 @@ sp_syspolicy_purge_history
 ### Example 1
 
 ```sql
-EXECUTE
-msdb.dbo.sp_syspolicy_purge_history;
+EXECUTE msdb.dbo.sp_syspolicy_purge_history;
 GO
 ```

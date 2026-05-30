@@ -125,8 +125,6 @@ functions are created.
 
 Medium
 
-
-
 Expand table
 
 #### Compatibility level setting of 90
@@ -137,11 +135,7 @@ Expand table
 
 #### of impact
 
-#### datetime
-
 #### smalldatetime
-
-#### datetime
 
 #### smalldatetime
 
@@ -344,10 +338,6 @@ Low
 #### xsi:nil
 
 #### xsi:type
-
-#### datetime
-
-#### datetime
 
 When an
 
@@ -677,79 +667,47 @@ Low
 
 #### of impact
 
-#### char
+`SOUNDEX`
 
-```sql
-SOUNDEX
-```
+`SOUNDEX`
 
-```sql
-SOUNDEX
-```
+`SOUNDEX`
 
-```sql
-SOUNDEX
-```
+`SOUNDEX`
 
-```sql
-SOUNDEX
-```
+`SOUNDEX`
 
-```sql
-SOUNDEX
-```
+`SOUNDEX`
 
-```sql
-SOUNDEX
-```
+`SOUNDEX`
 
-```sql
-SOUNDEX
-```
+`SOUNDEX`
 
-```sql
-SOUNDEX
-```
+`CHECK`
 
-```sql
-CHECK
-```
+`SOUNDEX`
 
-```sql
-SOUNDEX
-```
-
-```sql
-STRING_AGG
-```
+`STRING_AGG`
 
 ```sql
 <order_clause>
 ```
 
-```sql
-STRING_AGG
-```
+`STRING_AGG`
 
 ```sql
 <order_clause>
 ```
 
-```sql
-QUOTED_IDENTIFIER
-```
+`QUOTED_IDENTIFIER`
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 FOR BROWSE
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 SELECT INTO
@@ -759,21 +717,15 @@ SELECT INTO
 FOR BROWSE
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 SELECT INTO
 ```
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
 ```sql
 CREATE FULLTEXT STOPLIST
@@ -802,57 +754,35 @@ STOPLIST
 DROP FULLTEXT STOPLIST
 ```
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
 ```sql
 <dml_table_source>
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`
 
 ```sql
 <dml_table_source>
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-NOINDEX
-```
+`NOINDEX`
 
 ```sql
 DBCC
@@ -863,9 +793,7 @@ CHECKDB
 DBCC CHECKTABLE
 ```
 
-```sql
-NOINDEX
-```
+`NOINDEX`
 
 ```sql
 DBCC CHECKDB
@@ -880,17 +808,11 @@ CHECKTABLE
 WITH EXTENDED_LOGICAL_CHECKS
 ```
 
-```sql
-NOINDEX
-```
+`NOINDEX`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
 ```sql
 SET XACT_ABORT
@@ -900,49 +822,31 @@ SET XACT_ABORT
 SET XACT_ABORT
 ```
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
 ```sql
 SET XACT_ABORT
 ```
 
-```sql
-ON
-```
+`ON`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-CUBE
-```
+`CUBE`
 
-```sql
-ROLLUP
-```
+`ROLLUP`
 
-```sql
-CUBE
-```
+`CUBE`
 
-```sql
-ROLLUP
-```
+`ROLLUP`
 
 ```sql
 GROUP BY
 ```
 
-```sql
-anyType
-```
+`anyType`
 
 ```sql
 /e/@xsi:nil
@@ -957,8 +861,7 @@ anyType
 ```
 
 ```sql
-SELECT
-xmlCol
+SELECT xmlCol
 ```
 
 ```sql
@@ -966,8 +869,7 @@ xsi:nil = "false"
 ```
 
 ```sql
-SELECT
-x.query('a/b/@*')
+SELECT x.query('a/b/@*')
 ```
 
 ```sql
@@ -992,48 +894,30 @@ name(.) = "type"
 local-name(.) ="nil"
 ```
 
-```sql
-SET
-```
+`SET`
 
-```sql
-SET
-```
+`SET`
 
-```sql
-SET
-```
+`SET`
 
-```sql
-ROWGUIDCOL
-```
+`ROWGUIDCOL`
 
-```sql
-IDENTITY
-```
+`IDENTITY`
 
 ```sql
 CREATE TABLE T (C1 int
 CONSTRAINT MyConstraint IDENTITY)
 ```
 
-```sql
-ROWGUIDCOL
-```
+`ROWGUIDCOL`
 
-```sql
-IDENTITY
-```
+`IDENTITY`
 
 ```sql
 UPDATE T1 SET @v
 = column_name = <expression>
 ```
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-ON
-```
+`ON`

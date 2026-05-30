@@ -31,9 +31,7 @@ sys.sp_xtp_force_gc
 
 ### Example 1
 
-```sql
-sys.sp_xtp_force_gc
-```
+`sys.sp_xtp_force_gc`
 
 ### Example 2
 
@@ -55,27 +53,20 @@ sys.sp_xtp_force_gc
 
 ### Example 5
 
-```sql
-sys.sp_xtp_force_gc
-```
+`sys.sp_xtp_force_gc`
 
 ### Example 6
 
-```sql
-sys.dm_xtp_system_memory_consumers
-```
+`sys.dm_xtp_system_memory_consumers`
 
 ### Example 7
 
-```sql
-sys.sp_xtp_checkpoint_force_garbage_collection
-```
+`sys.sp_xtp_checkpoint_force_garbage_collection`
 
 ### Example 8
 
 ```sql
-EXECUTE
-sys.sp_xtp_force_gc N
+EXECUTE sys.sp_xtp_force_gc N
 'tempdb'
 ;
 GO
@@ -84,23 +75,18 @@ GO
 ### Example 9
 
 ```sql
-EXECUTE
-sys.sp_xtp_force_gc;
+EXECUTE sys.sp_xtp_force_gc;
 GO
-EXECUTE
-sys.sp_xtp_force_gc N
+EXECUTE sys.sp_xtp_force_gc N
 'tempdb'
 ;
 GO
-EXECUTE
-sys.sp_xtp_force_gc N
+EXECUTE sys.sp_xtp_force_gc N
 'tempdb'
 ;
 GO
-EXECUTE
-sys.sp_xtp_force_gc;
+EXECUTE sys.sp_xtp_force_gc;
 GO
-EXECUTE
-sys.sp_xtp_force_gc;
+EXECUTE sys.sp_xtp_force_gc;
 GO
 ```

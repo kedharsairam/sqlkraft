@@ -35,21 +35,16 @@ OUTPUT
 
 ### Example 1
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
 ### Example 2
 
-```sql
-sp_add_maintenance_plan
-```
+`sp_add_maintenance_plan`
 
 ### Example 3
 
 ```sql
-EXECUTE
-sp_delete_maintenance_plan
+EXECUTE sp_delete_maintenance_plan
 'FAD6F2AB-3571-11D3-9D4A-00C04FB925FC'
 ;
 ```

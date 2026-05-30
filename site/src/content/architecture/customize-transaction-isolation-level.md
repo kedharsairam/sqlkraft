@@ -26,8 +26,6 @@ setting, execute the
 
 function:
 
-SQL
-
 is the default isolation level for the Database Engine. If an application must
 
 operate at a different isolation level, it can use the following methods to set the isolation level:
@@ -98,8 +96,6 @@ The following example sets the
 
 isolation level:
 
-SQL
-
 The isolation level can be overridden for individual query or DML statements, if necessary, by
 
 specifying a table-level hint. Specifying a table-level hint doesn't affect other statements in the
@@ -112,13 +108,9 @@ statement as
 
 shown in the following example. The result set might vary from the result set on your system.
 
-SQL
-
 Here's the result set.
 
-```sql
-LOCK_TIMEOUT
-```
+`LOCK_TIMEOUT`
 
 ```sql
 @@LOCK_TIMEOUT
@@ -128,21 +120,13 @@ LOCK_TIMEOUT
 READ COMMITTED
 ```
 
-```sql
-Microsoft.Data.SqlClient
-```
+`Microsoft.Data.SqlClient`
 
-```sql
-System.Data.SqlClient
-```
+`System.Data.SqlClient`
 
-```sql
-IsolationLevel
-```
+`IsolationLevel`
 
-```sql
-SqlConnection.BeginTransaction
-```
+`SqlConnection.BeginTransaction`
 
 ```sql
 Autocommit Isolation Levels
@@ -152,17 +136,11 @@ Autocommit Isolation Levels
 ITransactionLocal::StartTransaction
 ```
 
-```sql
-isoLevel
-```
+`isoLevel`
 
-```sql
-DBPROPSET_SESSION
-```
+`DBPROPSET_SESSION`
 
-```sql
-DBPROP_SESS_AUTOCOMMITISOLEVELS
-```
+`DBPROP_SESS_AUTOCOMMITISOLEVELS`
 
 ```sql
 SELECT
@@ -170,17 +148,11 @@ SELECT
 GO
 ```
 
-```sql
-SQL_COPT_SS_TXN_ISOLATION
-```
+`SQL_COPT_SS_TXN_ISOLATION`
 
-```sql
-SQLSetConnectAttr
-```
+`SQLSetConnectAttr`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
 ```sql
 DBCC USEROPTIONS
@@ -222,6 +194,5 @@ DBCC USEROPTIONS;
 GO
 Set Option                   Value
 ---------------------------- -------------------------------------------
-textsize                     2147483647
-language                     us_english
+textsize                     2147483647 language                     us_english
 ```

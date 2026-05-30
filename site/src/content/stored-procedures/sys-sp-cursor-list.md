@@ -91,51 +91,35 @@ Last updated on 11/18/2025
 
 ### Example 1
 
-```sql
-sp_cursor_list
-```
+`sp_cursor_list`
 
 ### Example 2
 
-```sql
-sp_cursor_list
-```
+`sp_cursor_list`
 
 ### Example 3
 
-```sql
-SQLSetCursorName
-```
+`SQLSetCursorName`
 
 ### Example 4
 
-```sql
-sp_describe_cursor_columns
-```
+`sp_describe_cursor_columns`
 
 ### Example 5
 
-```sql
-sp_describe_cursor_tables
-```
+`sp_describe_cursor_tables`
 
 ### Example 6
 
-```sql
-sp_describe_cursor
-```
+`sp_describe_cursor`
 
 ### Example 7
 
-```sql
-sp_cursor_list
-```
+`sp_cursor_list`
 
 ### Example 8
 
-```sql
-sp_cursor_list
-```
+`sp_cursor_list`
 
 ### Example 9
 
@@ -144,8 +128,7 @@ USE
 AdventureWorks2022;
 GO
 -- Declare and open a keyset-driven cursor.
-DECLARE
-abc
+DECLARE abc
 CURSOR
 KEYSET
 FOR
@@ -167,8 +150,7 @@ AS
 CURSOR
 ;
 -- Execute sp_cursor_list into the cursor variable.
-EXECUTE
-master.dbo.sp_cursor_list
+EXECUTE master.dbo.sp_cursor_list
 @cursor_return = @Report
 OUTPUT
 ,
@@ -195,7 +177,6 @@ DEALLOCATE
 GO
 -- Close and deallocate the original cursor.
 CLOSE abc;
-DEALLOCATE
-abc;
+DEALLOCATE abc;
 GO
 ```

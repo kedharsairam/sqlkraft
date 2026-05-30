@@ -17,8 +17,7 @@ Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Conta
 ## Syntax
 
 ```sql
-sys.numbered_procedures
-sys.numbered_procedure_parameters
+sys.numbered_procedures sys.numbered_procedure_parameters
 ```
 
 ## Permissions

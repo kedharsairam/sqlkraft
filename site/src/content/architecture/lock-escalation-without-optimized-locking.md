@@ -192,126 +192,68 @@ locking granularity might perform
 
 better.
 
-```sql
-IX
-```
+`IX`
 
 ```sql
 X
 ```
 
-```sql
-IS
-```
+`IS`
 
 ```sql
 S
 ```
 
-```sql
-PAGE
-```
+`PAGE`
 
-```sql
-RID
-```
+`RID`
 
-```sql
-KEY
-```
+`KEY`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableC
-```
+`TableC`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableC
-```
+`TableC`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableC
-```
+`TableC`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-TableC
-```
+`TableC`
 
-```sql
-TABLE
-```
+`TABLE`

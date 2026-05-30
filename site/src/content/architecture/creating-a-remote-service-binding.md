@@ -76,15 +76,10 @@ The behavior is comparable to
 .
 
 ```sql
-SQL/ServiceBroker/BrokerConfiguration
-https://schemas.microsoft.com/SQL/ServiceBroker/BrokerConfigurationNotice/MissingRemoteSe
-rviceBinding
-https://Adventure-Works.com/Elsewhere
-<MissingRemoteServiceBinding
-xmlns
+SQL/ServiceBroker/BrokerConfiguration https://schemas.microsoft.com/SQL/ServiceBroker/BrokerConfigurationNotice/MissingRemoteSe rviceBinding https://Adventure-Works.com/Elsewhere
+<MissingRemoteServiceBinding xmlns
 =
-"https://schemas.microsoft.com/SQL/ServiceBroker/BrokerConfigurationNotice/M
-issingRemoteServiceBinding"
+"https://schemas.microsoft.com/SQL/ServiceBroker/BrokerConfigurationNotice/M issingRemoteServiceBinding"
 >
 <SERVICE_NAME>
 https://Adventure-Works.com/Elsewhere

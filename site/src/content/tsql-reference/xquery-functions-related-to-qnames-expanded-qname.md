@@ -74,6 +74,5 @@ supported. A solution is provided in an example later in this topic.
 
 ```sql
 <e> expanded-QName(...) </e>
-expanded-QName()
-fn:expanded-QName($paramURI as xs:string?, $paramLocal as xs:string?) as xs:QName?
+expanded-QName() fn:expanded-QName($paramURI as xs:string?, $paramLocal as xs:string?) as xs:QName?
 ```

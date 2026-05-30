@@ -105,19 +105,15 @@ Expand table
 2
 
 ```sql
-max server memory
-(MB)
+max server memory (MB)
 ```
 
 ```sql
 max server memory (MB)
 ```
 
-```sql
-QueryMemoryResourceNotification
-```
+`QueryMemoryResourceNotification`
 
 ```sql
-max server
-memory (MB)
+max server memory (MB)
 ```

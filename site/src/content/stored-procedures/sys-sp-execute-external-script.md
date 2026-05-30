@@ -14,9 +14,7 @@ SQL Server 2016 (13.x) and later stored procedure executes a script provided as 
 
 ## Syntax
 
-```sql
-sp_execute_external_script
-```
+`sp_execute_external_script`
 
 ## Arguments
 

@@ -53,15 +53,11 @@ with
 
 . For example:
 
-SQL
-
 listens on port 1500 on Linux. To configure a publisher for the distributor, run
 
 with
 
 . For example:
-
-SQL
 
 ７
 
@@ -75,6 +71,5 @@ Creating SQL Server replication on Linux with nondefault port will only work wit
 network.tcpport
 @@SERVERNAME
 Server1
-Server1
-sp_adddistributor
+Server1 sp_adddistributor
 ```

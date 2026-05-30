@@ -14,6 +14,4 @@ SQL database in Microsoft Fabric Provides columnstore index information on a per
 
 ## Syntax
 
-```sql
-sys.column_store_row_groups
-```
+`sys.column_store_row_groups`

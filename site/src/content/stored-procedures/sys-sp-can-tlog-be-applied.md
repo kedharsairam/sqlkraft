@@ -14,6 +14,4 @@ Verifies whether a transaction log backup can be applied to a SQL Server databas
 
 ## Syntax
 
-```sql
-sp_can_tlog_be_applied
-```
+`sp_can_tlog_be_applied`

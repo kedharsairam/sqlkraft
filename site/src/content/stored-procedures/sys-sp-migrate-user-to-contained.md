@@ -14,9 +14,7 @@ Converts a database user that is mapped to a SQL Server login, to a contained da
 
 ## Syntax
 
-```sql
-sp_migrate_user_to_contained
-```
+`sp_migrate_user_to_contained`
 
 ## Arguments
 

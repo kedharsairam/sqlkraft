@@ -61,11 +61,7 @@ full-text stoplist are listed in the following table, together with the more gen
 
 that include them by implication.
 
-
-
 Expand table
-
-
 
 Expand table
 

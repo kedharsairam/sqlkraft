@@ -41,8 +41,6 @@ database, and switch context to the
 
 database.
 
-SQL
-
 Copy and paste the following code into a Query Editor window. Then, run it to create the
 
 message types for the conversation. Because Service Broker objects are often referenced across
@@ -62,8 +60,7 @@ home page.
 ```sql
 AdventureWorks2022
 AdventureWorks2022
-USE
-master
+USE master
 ;
 GO
 ALTER

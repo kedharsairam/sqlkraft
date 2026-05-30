@@ -61,48 +61,32 @@ N
 
 ### Example 1
 
-```sql
-sp_addlinkedserver
-```
+`sp_addlinkedserver`
 
 ### Example 2
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`
 
 ### Example 3
 
-```sql
-true
-```
+`true`
 
 ### Example 4
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`
 
 ### Example 5
 
-```sql
-sp_droplinkedsrvlogin
-```
+`sp_droplinkedsrvlogin`
 
 ### Example 6
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`
 
 ### Example 7
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`
 
 ### Example 8
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`

@@ -153,45 +153,31 @@ for messages related to that . When an error is returned from , the e-mail is no
 
 ### Example 1
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 2
 
-```sql
-sp_send_dbmail
-```
+`sp_send_dbmail`
 
 ### Example 3
 
-```sql
-sp_send_dbmail
-```
+`sp_send_dbmail`
 
 ### Example 4
 
-```sql
-sysmail_delete_profile_sp
-```
+`sysmail_delete_profile_sp`
 
 ### Example 5
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 6
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 7
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
 ### Example 8
 
@@ -202,8 +188,7 @@ AdventureWorks Administrator
 ### Example 9
 
 ```sql
-EXECUTE
-msdb.dbo.sysmail_delete_profile_sp @profile_name =
+EXECUTE msdb.dbo.sysmail_delete_profile_sp @profile_name =
 'AdventureWorks
 Administrator'
 ;

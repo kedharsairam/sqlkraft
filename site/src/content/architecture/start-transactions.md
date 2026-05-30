@@ -198,13 +198,9 @@ RESTORE
 RECONFIGURE
 ```
 
-```sql
-sp_dboption
-```
+`sp_dboption`
 
-```sql
-master
-```
+`master`
 
 ```sql
 UPDATE STATISTICS

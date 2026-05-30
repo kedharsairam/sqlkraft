@@ -14,6 +14,4 @@ Maps an existing database user to a SQL Server login. Transact-SQL syntax conven
 
 ## Syntax
 
-```sql
-sys.database_principals
-```
+`sys.database_principals`

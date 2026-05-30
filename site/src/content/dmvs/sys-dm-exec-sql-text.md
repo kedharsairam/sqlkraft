@@ -217,18 +217,12 @@ SELECT
 GO
 -- Create activity
 WAITFOR DELAY '00:02:00';
-SELECT
-t.*
-FROM
-sys.dm_exec_requests
-AS
-r
+SELECT t.*
+FROM sys.dm_exec_requests
+AS r
 CROSS
-APPLY
-sys.dm_exec_sql_text(r.sql_handle)
-AS
-t
-WHERE
-session_id = 59
+APPLY sys.dm_exec_sql_text(r.sql_handle)
+AS t
+WHERE session_id = 59
 -- modify this value with your actual spid
 ```

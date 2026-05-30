@@ -99,13 +99,9 @@ example I. Use analytical functions in a recursive CTE that follows.
 
 1
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-MAXRECURSION
-```
+`MAXRECURSION`
 
 ```sql
 0
@@ -115,34 +111,20 @@ MAXRECURSION
 32767
 ```
 
-```sql
-OPTION
-```
+`OPTION`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-MAXRECURSION
-```
+`MAXRECURSION`
 
 ```sql
 WITH STACK
 ```
 
-```sql
-ROW_NUMBER
-```
+`ROW_NUMBER`

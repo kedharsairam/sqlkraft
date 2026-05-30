@@ -69,6 +69,5 @@ Expand table
 
 ```cmd
 Microsoft.Build.Sql
-Microsoft.SqlServer.DacFx
-dotnet tool install -g microsoft.sqlpackage --version 162.5.57
+Microsoft.SqlServer.DacFx dotnet tool install -g microsoft.sqlpackage --version 162.5.57
 ```

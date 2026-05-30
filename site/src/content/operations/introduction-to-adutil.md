@@ -92,9 +92,6 @@ to enable Active Directory authentication, as explained in
 .
 
 ```cmd
-useLdaps
-true
-adutil.json
-mssql
+useLdaps true adutil.json mssql
 /var/opt/mssql/.adutil/adutil.json
 ```

@@ -87,15 +87,7 @@ nonclustered index. (Before SQL Database and SQL Server 2016 (13.x) the limit wa
 
 1
 
-### varchar
-
-### varchar
-
-### varchar
-
-```sql
-SET
-```
+`SET`
 
 ```sql
 ANSI_PADDING
@@ -130,46 +122,24 @@ ON
 OFF
 ```
 
-```sql
-ANSI_WARNINGS
-```
+`ANSI_WARNINGS`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-ARITHABORT
-```
+`ARITHABORT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-ARITHABORT
-```
+`ARITHABORT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-SET
-```
+`SET`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`

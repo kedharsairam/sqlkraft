@@ -103,7 +103,6 @@ for the conversation.
 RECEIVE
 RECEIVE
 RECEIVE
-SEND
-status
+SEND status
 3
 ```

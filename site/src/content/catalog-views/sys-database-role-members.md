@@ -49,15 +49,11 @@ ADD MEMBER
 
 ### Example 2
 
-```sql
-principal_id
-```
+`principal_id`
 
 ### Example 3
 
-```sql
-db_securityadmin
-```
+`db_securityadmin`
 
 ### Example 4
 

@@ -76,8 +76,6 @@ XQuery Language Reference (SQL Server)
 
 Last updated on 12/11/2025
 
-
-
 Expand table
 
 ```sql

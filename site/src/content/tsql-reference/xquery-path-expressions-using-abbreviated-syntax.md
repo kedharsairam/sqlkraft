@@ -28,8 +28,6 @@ node test, separated by double colon, and followed by zero or more step qualifie
 
 For example:
 
-SQL
-
 XQuery supports the following abbreviations for use in path expressions:
 
 The
@@ -76,24 +74,18 @@ nodes.
 
 The following query retrieves all the telephone numbers for a specific customer contact:
 
-SQL
-
 ```sql
-child
-child::
+child child::
 /child::ProductDescription/child::Summary
-/ProductDescription/Summary
-attribute
+/ProductDescription/Summary attribute
 /child::ProductDescription[attribute::ProductModelID=10]
 /ProductDescription[@ProductModelID=10]
 /descendant-or-self::node()/
 /descendant-or-
 self::node()/child::act:telephoneNumber
-//act:telephoneNumber
-child::ProductDescription[attribute::ProductModelID=19]
+//act:telephoneNumber child::ProductDescription[attribute::ProductModelID=19]
 SELECT
 AdditionalContactInfo.query(
 '
-declare namespace
-act="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
+declare namespace act="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 ```

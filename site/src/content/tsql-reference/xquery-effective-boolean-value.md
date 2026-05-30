@@ -65,8 +65,7 @@ nonempty sequence.
 value is false
 DECLARE @x XML
 SET @x = '<b/>'
-SELECT @x.query('if (/a[1]) then "true" else "false"')
-go
+SELECT @x.query('if (/a[1]) then "true" else "false"') go
 DECLARE @x XML
 SET @x = '<a/>'
 ```

@@ -89,8 +89,6 @@ shows the
 
 statement:
 
-SQL
-
 For the sample search expressions, use the following JSON documents as data:
 
 Use the
@@ -109,8 +107,6 @@ column that can be optimized using a
 
 JSON index:
 
-SQL
-
 JSON index is supported with
 
 predicate and the following operators:
@@ -121,17 +117,9 @@ Comparison operators (
 
 predicate (Not currently supported)
 
-
-
 Expand table
 
 ### json
-
-### int
-
-### int
-
-### decimal
 
 Use the
 
@@ -149,25 +137,17 @@ can be optimized using a JSON index.
 
 Equality search for a JSON string in an object property:
 
-SQL
-
 Equality search for a JSON number in an object property after converting the value to an
 
 data type:
-
-SQL
 
 Range search for a JSON number in an object property after converting the value to an
 
 data type:
 
-SQL
-
 Range search for a JSON number in an object property after converting the value to a
 
 data type:
-
-SQL
 
 The JSON index is supported with a
 
@@ -201,25 +181,15 @@ predicate (not currently supported)
 CREATE JSON INDEX
 ```
 
-```sql
-Sales.SalesOrderHeader
-```
+`Sales.SalesOrderHeader`
 
-```sql
-AdventureWorks2022
-```
+`AdventureWorks2022`
 
-```sql
-Info
-```
+`Info`
 
-```sql
-Info
-```
+`Info`
 
-```sql
-Info
-```
+`Info`
 
 ```sql
 CREATE JSON INDEX
@@ -236,13 +206,9 @@ CREATE JSON INDEX
 16T00:00:00","TotalDue":36.0230, "IsProcessed": true}}
 ```
 
-```sql
-JSON_PATH_EXISTS
-```
+`JSON_PATH_EXISTS`
 
-```sql
-JSON_PATH_EXISTS
-```
+`JSON_PATH_EXISTS`
 
 ```sql
 =
@@ -255,16 +221,14 @@ IS [NOT] NULL
 ```sql
 CREATE
 JSON
-INDEX
-sales_info_idx
+INDEX sales_info_idx
 ON
 Sales.SalesOrderHeader (Info);
 ```
 
 ```sql
 SELECT
-COUNT
-(*)
+COUNT (*)
 FROM
 Sales.SalesOrderHeader
 WHERE
@@ -273,21 +237,15 @@ JSON_PATH_EXISTS(Info,
 ) = 1;
 ```
 
-```sql
-JSON_VALUE
-```
+`JSON_VALUE`
 
-```sql
-JSON_VALUE
-```
+`JSON_VALUE`
 
 ```sql
 =
 ```
 
-```sql
-LIKE
-```
+`LIKE`
 
 ```sql
 IS [NOT] NULL
@@ -295,8 +253,7 @@ IS [NOT] NULL
 
 ```sql
 SELECT
-COUNT
-(*)
+COUNT (*)
 FROM
 Sales.SalesOrderHeader
 WHERE
@@ -325,14 +282,12 @@ JSON_VALUE(Info,
 RETURNING
 INT
 )
-IN
-(16167, 16517);
+IN (16167, 16517);
 SELECT
 *
 FROM
 Sales.SalesOrderHeader
 WHERE
 JSON_VALUE(Info,
-'$.Order.TotalDue RETURNING decimal(20, 4)) BETWEEN 1000
-and 2000;
+'$.Order.TotalDue RETURNING decimal(20, 4)) BETWEEN 1000 and 2000;
 ```

@@ -73,9 +73,6 @@ This feature is currently in preview.
 
 ```cmd
 ADMINISTER BULK
-OPERATIONS
-mssql-conf
-mssql
-mkdir
+OPERATIONS mssql-conf mssql mkdir
 -p /tmp/bulkload/sales/
 ```

@@ -29,14 +29,11 @@ sp_cycle_errorlog
 
 ### Example 1
 
-```sql
-sp_cycle_errorlog
-```
+`sp_cycle_errorlog`
 
 ### Example 2
 
 ```sql
-EXECUTE
-sp_cycle_errorlog;
+EXECUTE sp_cycle_errorlog;
 GO
 ```

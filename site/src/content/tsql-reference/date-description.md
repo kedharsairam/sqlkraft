@@ -111,27 +111,9 @@ Accuracy
 
 One day
 
-
-
 Expand table
 
-#### Property
-
-#### Value
-
-#### time
-
-#### datetime2
-
-#### datetimeoffset
-
-### date
-
-### date
-
-```sql
-DATE
-```
+`DATE`
 
 ```sql
 DECLARE @MyDate DATE
@@ -158,9 +140,7 @@ yyyy-MM-dd
 9999-12-31
 ```
 
-```sql
-yyyy
-```
+`yyyy`
 
 ```sql
 0001
@@ -170,9 +150,7 @@ yyyy
 9999
 ```
 
-```sql
-yyyy
-```
+`yyyy`
 
 ```sql
 1582
@@ -182,9 +160,7 @@ yyyy
 9999
 ```
 
-```sql
-MM
-```
+`MM`
 
 ```sql
 01
@@ -194,9 +170,7 @@ MM
 12
 ```
 
-```sql
-dd
-```
+`dd`
 
 ```sql
 01

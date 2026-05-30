@@ -17,6 +17,5 @@ SQL database in Microsoft Fabric Returns information on the full-text catalogs t
 ## Syntax
 
 ```sql
-dm_fts_active_catalogs.database_id
-dm_fts_index_population.database_id
+dm_fts_active_catalogs.database_id dm_fts_index_population.database_id
 ```

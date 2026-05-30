@@ -22,8 +22,7 @@ Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Retur
 ## Syntax
 
 ```sql
-EXECUTE
-sp_add_trusted_assembly
+EXECUTE sp_add_trusted_assembly
 0x8893AD6D78D14EE43DF482E2EAD44123E3A0B684A8873C3F7BF3B5E8D8F09503F3E62370CE742BBC
 96FE3394477214B84C7C1B0F7A04DCC788FA99C2C09DFCCC, N
 'pointudt, version=0.0.0.0,
@@ -39,27 +38,20 @@ Article • 05/23/2023 Applies to: SQL Server Azure SQL Managed Instance Azure S
 
 ### Example 1
 
-```sql
-clr_name
-```
+`clr_name`
 
 ### Example 2
 
-```sql
-sys.assemblies
-```
+`sys.assemblies`
 
 ### Example 3
 
-```sql
-pointudt
-```
+`pointudt`
 
 ### Example 4
 
 ```sql
-EXECUTE
-sp_add_trusted_assembly
+EXECUTE sp_add_trusted_assembly
 0x8893AD6D78D14EE43DF482E2EAD44123E3A0B684A8873C3F7BF3B5E8D8F09503F3E62370CE742BBC
 96FE3394477214B84C7C1B0F7A04DCC788FA99C2C09DFCCC, N
 'pointudt, version=0.0.0.0,

@@ -21,8 +21,7 @@ Contains a row for each external model in the current database. ID of the model,
 ```sql
 SELECT
 *
-FROM
-sys.external_models;
+FROM sys.external_models;
 ```
 
 ## Permissions

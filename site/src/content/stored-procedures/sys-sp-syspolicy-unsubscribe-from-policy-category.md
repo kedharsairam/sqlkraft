@@ -27,8 +27,7 @@ The following example deletes a subscription to the policy category for the spec
 USE
 <database_name>;
 GO
-EXECUTE
-sys.sp_syspolicy_unsubscribe_from_policy_category
+EXECUTE sys.sp_syspolicy_unsubscribe_from_policy_category
 @policy_category = N
 'Finance'
 ;
@@ -39,9 +38,7 @@ GO
 
 ### Example 1
 
-```sql
-Finance
-```
+`Finance`
 
 ### Example 2
 
@@ -49,8 +46,7 @@ Finance
 USE
 <database_name>;
 GO
-EXECUTE
-sys.sp_syspolicy_unsubscribe_from_policy_category
+EXECUTE sys.sp_syspolicy_unsubscribe_from_policy_category
 @policy_category = N
 'Finance'
 ;

@@ -97,8 +97,6 @@ commits. For more information, see
 
 .
 
-### time
-
 The
 
 option can be specified in two contexts:
@@ -295,33 +293,21 @@ other operations using normal priority locks to proceed in the meantime. Omittin
 CREATE INDEX WITH DROP_EXISTING
 ```
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-OFF
-```
+`OFF`
 
 ```sql
 CREATE INDEX WITH DROP_EXISTING
 ```
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-WAIT_AT_LOW_PRIORITY
-```
+`WAIT_AT_LOW_PRIORITY`
 
 ```sql
 Sch-M
@@ -331,49 +317,29 @@ Sch-M
 RESUMABLE = ON
 ```
 
-```sql
-RESUMABLE
-```
+`RESUMABLE`
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-RESUMABLE
-```
+`RESUMABLE`
 
 ```sql
 RESUMABLE = ON
 ```
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-RESUMABLE
-```
+`RESUMABLE`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-WAIT_AT_LOW_PRIORITY
-```
+`WAIT_AT_LOW_PRIORITY`
 
 ```sql
 ALTER INDEX PAUSE
@@ -391,17 +357,13 @@ CREATE INDEX
 ALTER INDEX RESUME
 ```
 
-```sql
-ABORT
-```
+`ABORT`
 
 ```sql
 Sch-M
 ```
 
-```sql
-MAXDOP
-```
+`MAXDOP`
 
 ```sql
 SORT_IN_TEMPDB = ON
@@ -411,13 +373,9 @@ SORT_IN_TEMPDB = ON
 RESUMABLE = ON
 ```
 
-```sql
-timestamp
-```
+`timestamp`
 
-```sql
-rowversion
-```
+`rowversion`
 
 ```sql
 ALTER INDEX REBUILD ALL
@@ -427,9 +385,7 @@ ALTER INDEX REBUILD ALL
 ALTER TABLE REBUILD
 ```
 
-```sql
-WAIT_AT_LOW_PRIORITY
-```
+`WAIT_AT_LOW_PRIORITY`
 
 ```sql
 S
@@ -439,9 +395,7 @@ S
 Sch-M
 ```
 
-```sql
-WAIT_AT_LOW_PRIORITY
-```
+`WAIT_AT_LOW_PRIORITY`
 
 ```sql
 S
@@ -456,6 +410,4 @@ MAX_DURATION = n
 [minutes]
 ```
 
-```sql
-WAIT_AT_LOW_PRIORITY
-```
+`WAIT_AT_LOW_PRIORITY`

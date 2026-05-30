@@ -76,10 +76,7 @@ development purposes. For more information, see
 .
 
 ```cmd
-docker stop
-docker start
-docker rm
-sqlcmd
+docker stop docker start docker rm sqlcmd
 /usr/src/app/
 do
 -my-sql-commands.sh & /opt/mssql/bin/sqlservr

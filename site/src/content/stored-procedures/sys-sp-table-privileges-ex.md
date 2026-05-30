@@ -58,13 +58,9 @@ N
 'table_catalog'
 ]
 [ , [ @f
-U
-se
-P
-attern = ] f
-U
-se
-P
-attern ]
+U se
+P attern = ] f
+U se
+P attern ]
 [ ; ]
 ```

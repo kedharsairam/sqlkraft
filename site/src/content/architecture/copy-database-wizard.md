@@ -80,8 +80,5 @@ Considering a migration to Azure SQL? Review the following tools instead of the 
 Database Wizard:
 
 ```sql
-master
-model
-msdb
-tempdb
+master model msdb tempdb
 ```

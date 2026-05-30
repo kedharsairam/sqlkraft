@@ -14,23 +14,17 @@ warehouse database. The procedure must be executed in the context of the managem
 
 ## Syntax
 
-```sql
-core.supported_collector_types
-```
+`core.supported_collector_types`
 
 ## Examples
 
 ### Example 1
 
-```sql
-core.supported_collector_types
-```
+`core.supported_collector_types`
 
 ### Example 2
 
-```sql
-core.supported_collector_types
-```
+`core.supported_collector_types`
 
 ### Example 3
 
@@ -54,9 +48,7 @@ core.sp_remove_collector_type [ @collector_type_uid = ]
 
 ### Example 6
 
-```sql
-core.sp_remove_collector_type
-```
+`core.sp_remove_collector_type`
 
 ### Example 7
 
@@ -72,12 +64,9 @@ DECLARE
 @collector_type_uid UNIQUEIDENTIFIER;
 SELECT
 @collector_type_uid = (
-SELECT
-collector_type_uid
-FROM
-msdb.dbo.syscollector_collector_types
-WHERE
-name
+SELECT collector_type_uid
+FROM msdb.dbo.syscollector_collector_types
+WHERE name
 = N
 'Generic T-SQL Query Collector Type'
 );

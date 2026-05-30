@@ -9,26 +9,6 @@ pubDate: 2026-05-29
 
 #### Type
 
-#### binary
-
-#### varbinary
-
-#### binary
-
-#### char
-
-#### varchar
-
-#### nchar
-
-#### nvarchar
-
-#### ntext
-
-#### text
-
-#### image
-
 Applies to:
 
 SQL Server
@@ -124,8 +104,6 @@ Numeric types
 String Functions
 
 Last updated on 11/18/2025
-
-
 
 Expand table
 

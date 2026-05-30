@@ -67,10 +67,8 @@ TABLE
 { database_name.schema_name.table_name | schema_name.table_name | table_name }
 [
 AS
-F
-ile
-T
-able ]
+F ile
+T able ]
 ( {
 <column_definition>
 |
@@ -89,8 +87,7 @@ PERIOD
 FOR
 SYSTEM
 _
-TIME
-( system_start_time_column_name
+TIME ( system_start_time_column_name
 ```
 
 ```sql
@@ -120,8 +117,7 @@ ON
 "default"
 } ]
 [
-WITH
-(
+WITH (
 <table_option>
 [ ,... n ] ) ]
 [ ; ]
@@ -133,24 +129,20 @@ column_name
 FILESTREAM
 ]
 [
-COLLATE
-collation_name ]
+COLLATE collation_name ]
 [
 SPARSE
 ]
 [
 MASKED
-WITH
-(
+WITH (
 FUNCTION
 =
 'mask_function'
 ) ]
 [ [
-CONSTRAINT
-constraint_name ]
-DEFAULT
-constant_expression ]
+CONSTRAINT constraint_name ]
+DEFAULT constant_expression ]
 [
 IDENTITY
 [ ( seed , increment ) ] ]
@@ -182,8 +174,7 @@ END
 HIDDEN
 ] ]
 [ [
-CONSTRAINT
-constraint_name ] {
+CONSTRAINT constraint_name ] {
 NULL
 |
 NOT
@@ -194,8 +185,7 @@ ROWGUIDCOL
 ]
 [
 ENCRYPTED
-WITH
-(
+WITH (
 COLUMN
 _
 ENCRYPTION
@@ -232,8 +222,7 @@ DOCUMENT
 <column_constraint>
 ::=
 [
-CONSTRAINT
-constraint_name ]
+CONSTRAINT constraint_name ]
 {
 {
 PRIMARY
@@ -254,8 +243,7 @@ WITH
 FILLFACTOR
 = fillfactor
 |
-WITH
-(
+WITH (
 <index_option>
 [ ,... n ] )
 ]
@@ -319,15 +307,13 @@ REPLICATION
 }
 <column_index>
 ::=
-INDEX
-index_name [
+INDEX index_name [
 CLUSTERED
 |
 NONCLUSTERED
 ]
 [
-WITH
-(
+WITH (
 <index_option>
 [ ,... n ] ) ]
 [
@@ -347,8 +333,7 @@ ON
 <computed_column_definition>
 ::=
 column_name
-AS
-computed_column_expression
+AS computed_column_expression
 [
 PERSISTED
 [
@@ -357,8 +342,7 @@ NULL
 ] ]
 [
 [
-CONSTRAINT
-constraint_name ]
+CONSTRAINT constraint_name ]
 {
 PRIMARY
 KEY
@@ -375,8 +359,7 @@ WITH
 FILLFACTOR
 = fillfactor
 |
-WITH
-(
+WITH (
 <index_option>
 [ ,... n ] )
 ]
@@ -390,8 +373,7 @@ ON
 FOREIGN
 KEY
 ]
-REFERENCES
-referenced_table_name [ ( ref_column ) ]
+REFERENCES referenced_table_name [ ( ref_column ) ]
 [
 ON
 DELETE
@@ -437,8 +419,7 @@ COLUMNS
 <table_constraint>
 ::=
 [
-CONSTRAINT
-constraint_name ]
+CONSTRAINT constraint_name ]
 {
 {
 PRIMARY
@@ -461,8 +442,7 @@ WITH
 FILLFACTOR
 = fillfactor
 |
-WITH
-(
+WITH (
 <index_option>
 [ ,... n ] )
 ]
@@ -474,13 +454,11 @@ ON
 } ]
 |
 FOREIGN
-KEY
-( column_name [ ,... n ] )
+KEY ( column_name [ ,... n ] )
 ```
 
 ```sql
-REFERENCES
-referenced_table_name [ ( ref_column [ ,... n ] ) ]
+REFERENCES referenced_table_name [ ( ref_column [ ,... n ] ) ]
 [
 ON
 DELETE
@@ -528,8 +506,7 @@ REPLICATION
 ::=
 {
 {
-INDEX
-index_name [
+INDEX index_name [
 UNIQUE
 ] [
 CLUSTERED
@@ -542,31 +519,25 @@ ASC
 DESC
 ] [ ,... n ] )
 |
-INDEX
-index_name
+INDEX index_name
 CLUSTERED
 COLUMNSTORE
 [
-ORDER
-(column_name [ , ...n ] ) ]
+ORDER (column_name [ , ...n ] ) ]
 |
-INDEX
-index_name [
+INDEX index_name [
 NONCLUSTERED
 ]
-COLUMNSTORE
-( column_name [ ,... n ] )
+COLUMNSTORE ( column_name [ ,... n ] )
 }
 [
-INCLUDE
-( column_name [ ,... n ] ) ]
+INCLUDE ( column_name [ ,... n ] ) ]
 [
 WHERE
 <filter_predicate>
 ]
 [
-WITH
-(
+WITH (
 <index_option>
 [ ,... n ] ) ]
 [
@@ -600,8 +571,7 @@ PAGE
 }
 [
 ON
-PARTITIONS
-( {
+PARTITIONS ( {
 <partition_number_expression>
 |
 <range>
@@ -618,8 +588,7 @@ OFF
 }
 [
 ON
-PARTITIONS
-( {
+PARTITIONS ( {
 <partition_number_expression>
 |
 <range>
@@ -726,8 +695,7 @@ ON
 <table_stretch_options>
 [ ,... n] ) ]
 |
-OFF
-(
+OFF (
 MIGRATION
 _
 STATE
@@ -952,8 +920,7 @@ COMPRESSION
 _
 DELAY
 = { 0 | delay [
-M
-inutes ] }
+M inutes ] }
 |
 DATA
 _
@@ -973,8 +940,7 @@ ARCHIVE
 }
 [
 ON
-PARTITIONS
-( { partition_number_expression |
+PARTITIONS ( { partition_number_expression |
 <range>
 }
 [ ,... n ] ) ]
@@ -989,8 +955,7 @@ OFF
 }
 [
 ON
-PARTITIONS
-( {
+PARTITIONS ( {
 <partition_number_expression>
 |
 <range>
@@ -1022,13 +987,11 @@ PERIOD
 FOR
 SYSTEM
 _
-TIME
-( system_start_time_column_name
+TIME ( system_start_time_column_name
 , system_end_time_column_name ) ]
 )
 [
-WITH
-(
+WITH (
 <table_option>
 [ ,... n ] ) ]
 [ ; ]
@@ -1037,8 +1000,7 @@ WITH
 column_name
 <data_type>
 [
-COLLATE
-collation_name ]
+COLLATE collation_name ]
 [
 GENERATED
 ALWAYS
@@ -1058,10 +1020,8 @@ NOT
 NULL
 ]
 [ [
-CONSTRAINT
-constraint_name ]
-DEFAULT
-memory_optimized_constant_expression ]
+CONSTRAINT constraint_name ]
+DEFAULT memory_optimized_constant_expression ]
 | [
 IDENTITY
 [ ( 1, 1 ) ] ]
@@ -1077,8 +1037,7 @@ IDENTITY
 <column_constraint>
 ::=
 [
-CONSTRAINT
-constraint_name ]
+CONSTRAINT constraint_name ]
 {
 {
 PRIMARY
@@ -1091,8 +1050,7 @@ NONCLUSTERED
 |
 NONCLUSTERED
 HASH
-WITH
-(
+WITH (
 BUCKET
 _
 COUNT
@@ -1108,14 +1066,12 @@ KEY
 REFERENCES
 [ schema_name. ] referenced_table_name [ ( ref_column ) ]
 |
-CHECK
-( logical_expression )
+CHECK ( logical_expression )
 }
 <table_constraint>
 ::=
 [
-CONSTRAINT
-constraint_name ]
+CONSTRAINT constraint_name ]
 {
 {
 PRIMARY
@@ -1124,18 +1080,15 @@ KEY
 UNIQUE
 }
 {
-NONCLUSTERED
-( column_name [
+NONCLUSTERED ( column_name [
 ASC
 |
 DESC
 ] [ ,... n ])
 |
 NONCLUSTERED
-HASH
-( column_name [ ,... n ] )
-WITH
-(
+HASH ( column_name [ ,... n ] )
+WITH (
 BUCKET
 _
 COUNT
@@ -1144,8 +1097,6 @@ bucket_count )
 }
 |
 FOREIGN
-KEY
-( column_name [ ,... n ] )
-REFERENCES
-referenced_table_name [ ( ref_column [ ,... n ] ) ]
+KEY ( column_name [ ,... n ] )
+REFERENCES referenced_table_name [ ( ref_column [ ,... n ] ) ]
 ```

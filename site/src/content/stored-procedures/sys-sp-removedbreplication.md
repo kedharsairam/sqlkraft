@@ -14,9 +14,7 @@ This stored procedure removes all replication objects on the publication databas
 
 ## Syntax
 
-```sql
-sp_removedbreplication
-```
+`sp_removedbreplication`
 
 ## Permissions
 

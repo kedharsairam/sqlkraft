@@ -74,25 +74,15 @@ XML
 Partitioned="1"
 ```
 
-```sql
-RelOp
-```
+`RelOp`
 
-```sql
-SeekPredicateNew
-```
+`SeekPredicateNew`
 
-```sql
-SeekKeys
-```
+`SeekKeys`
 
-```sql
-SeekKeys
-```
+`SeekKeys`
 
-```sql
-SeekKeys
-```
+`SeekKeys`
 
 ```sql
 Actual Partition Count
@@ -110,17 +100,11 @@ Actual Partition Count
 Partitions Accessed
 ```
 
-```sql
-RuntimePartitionSummary
-```
+`RuntimePartitionSummary`
 
-```sql
-RelOp
-```
+`RelOp`
 
-```sql
-RuntimePartitionSummary
-```
+`RuntimePartitionSummary`
 
 ```sql
 <RunTimePartitionSummary>

@@ -55,8 +55,7 @@ MAX_LOCALDB_INSTANCE_NAME_LENGTH + 1 ] ;
 typedef
 TLocalDBInstanceName* PTLocalDBInstanceName;
 HRESULT
-LocalDBGetInstances
-(
+LocalDBGetInstances (
 PTLocalDBInstanceName pInstanceNames ,
 LPDWORD lpdwNumberOfInstances
 );

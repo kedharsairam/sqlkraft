@@ -93,19 +93,7 @@ Note
 
 Informatica information is provided for PDW customers using the Informatica Connector.
 
-
-
 Expand table
-
-#### Property
-
-#### Value
-
-#### date
-
-#### datetime2
-
-#### datetimeoffset
 
 #### Specified scale
 
@@ -118,8 +106,6 @@ Expand table
 #### seconds
 
 #### precision
-
-#### time
 
 #### time(0)
 
@@ -207,8 +193,6 @@ No
 
 0-2
 
-
-
 Expand table
 
 #### Specified scale
@@ -234,5 +218,3 @@ Expand table
 #### time(6)
 
 #### time(7)
-
-### time

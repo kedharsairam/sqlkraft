@@ -14,9 +14,7 @@ Specifies whether successful policy evaluations are logged in the Policy History
 
 ## Syntax
 
-```sql
-sp_syspolicy_set_log_on_success
-```
+`sp_syspolicy_set_log_on_success`
 
 ## Remarks
 
@@ -53,8 +51,7 @@ system database.
 ### Example 1
 
 ```sql
-EXECUTE
-msdb.dbo.sp_syspolicy_set_log_on_success @
+EXECUTE msdb.dbo.sp_syspolicy_set_log_on_success @
 value
 = 1;
 GO

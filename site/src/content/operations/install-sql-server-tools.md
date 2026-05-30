@@ -94,9 +94,5 @@ modern alternative across Linux, macOS, and Windows, see
 Red Hat Enterprise Linux
 
 ```cmd
-sqlcmd
-sqlcmd
-sqlcmd
-x64
-arm64
+sqlcmd sqlcmd sqlcmd x64 arm64
 ```

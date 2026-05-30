@@ -14,8 +14,7 @@ DECLARE @logpath NVARCHAR(260) = 'SQLLogs';
 DECLARE @Statements NVARCHAR(MAX);
 
 WITH DatabaseFilesCTE AS (
-    SELECT
-        d.name AS DatabaseName,
+    SELECT d.name AS DatabaseName,
         f.name AS LogicalName,
         RIGHT(f.physical_name, CHARINDEX('\', REVERSE(f.physical_name)) - 1) AS FileName,
         f.type_desc AS TypeofFile,
@@ -24,12 +23,9 @@ WITH DatabaseFilesCTE AS (
             WHEN f.type_desc = 'LOG' THEN @logpath
             ELSE '' -- Handle other file types if needed
         END AS NewPath
-    FROM
-        sys.master_files f
-    INNER JOIN
-        sys.databases d ON d.database_id = f.database_id
-    WHERE
-        d.name NOT IN ('master', 'model', 'msdb', 'tempdb')
+    FROM sys.master_files f
+    INNER JOIN sys.databases d ON d.database_id = f.database_id
+    WHERE d.name NOT IN ('master', 'model', 'msdb', 'tempdb')
         AND f.type_desc IN ('ROWS', 'LOG')
 )
 SELECT

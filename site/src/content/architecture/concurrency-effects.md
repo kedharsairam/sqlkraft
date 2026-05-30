@@ -114,17 +114,11 @@ statements in the first transaction might return different results because the
 
 statement in the second transaction changes the data used by both.
 
-SQL
-
 ### Missing and double reads caused by row updates
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 --Transaction 1

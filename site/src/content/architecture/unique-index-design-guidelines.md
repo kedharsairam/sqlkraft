@@ -98,53 +98,31 @@ of the index is clear.
 
 ### Reduced index update costs
 
-```sql
-NationalIDNumber
-```
+`NationalIDNumber`
 
-```sql
-HumanResources.Employee
-```
+`HumanResources.Employee`
 
-```sql
-EmployeeID
-```
+`EmployeeID`
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
-```sql
-NationalIDNumber
-```
+`NationalIDNumber`
 
-```sql
-LastName
-```
+`LastName`
 
-```sql
-FirstName
-```
+`FirstName`
 
-```sql
-MiddleName
-```
+`MiddleName`
 
 ```sql
 PRIMARY KEY
 ```
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
 ```sql
 PRIMARY KEY

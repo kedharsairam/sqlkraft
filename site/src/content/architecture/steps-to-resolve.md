@@ -8,11 +8,7 @@ pubDate: 2026-05-29
 
 1. If the MSTVF is single statement only, convert to an inline table valued function.
 
-SQL
-
 The inline format example is displayed next.
-
-SQL
 
 2. If more complex, consider using intermediate results stored in Memory-Optimized tables
 
@@ -34,17 +30,14 @@ Related content
 
 ```sql
 CREATE
-FUNCTION
-dbo.tfnGetRecentAddress (@
+FUNCTION dbo.tfnGetRecentAddress (@
 ID
 INT
 )
 RETURNS
 @tblAddress
-TABLE
-([Address]
-VARCHAR
-(60)
+TABLE ([Address]
+VARCHAR (60)
 NOT
 NULL
 )
@@ -68,17 +61,14 @@ DESC
 RETURN;
 END
 CREATE
-FUNCTION
-dbo.tfnGetRecentAddress_inline
-(@
+FUNCTION dbo.tfnGetRecentAddress_inline (@
 ID
 INT
 )
 RETURNS
 TABLE
 AS
-RETURN
-(
+RETURN (
 SELECT
 TOP 1 [AddressLine1]
 AS

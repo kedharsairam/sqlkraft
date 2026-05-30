@@ -47,8 +47,6 @@ data
 
 types, respectively.
 
-SQL
-
 Here's the result set. Because the
 
 type in the example doesn't have a
@@ -93,13 +91,9 @@ Last updated on 11/18/2025
 
 Related content
 
-```sql
-FFE5
-```
+`FFE5`
 
-```sql
-FFE6
-```
+`FFE6`
 
 ```sql
 '
@@ -114,16 +108,13 @@ DECLARE
 @mymoney_sm SMALLMONEY = 3148.29,
 @mymoney MONEY = 3148.29;
 SELECT
-CAST
-(@mymoney_sm
+CAST (@mymoney_sm
 AS
-VARCHAR
-(20))
+VARCHAR (20))
 AS
 'SM_MONEY VARCHAR(20)'
 ,
-CAST
-(@mymoney
+CAST (@mymoney
 AS
 DECIMAL
 )

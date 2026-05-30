@@ -109,37 +109,17 @@ is eligible
 
 ### varbinary(max)
 
-### text
-
-### ntext
-
-### image
-
-### xml
-
 ### nvarchar(max)
 
 ### varchar(max)
 
 ### varbinary(max)
 
-### text
+`INSERT`
 
-### ntext
+`OUTPUT`
 
-### image
-
-```sql
-INSERT
-```
-
-```sql
-OUTPUT
-```
-
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 FOREIGN KEY
@@ -157,9 +137,7 @@ FOREIGN KEY
 OUTPUT INTO
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 <dml_table_source>
@@ -169,66 +147,40 @@ INSERT
 @@ROWCOUNT
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 @@IDENTITY
 ```
 
-```sql
-SCOPE_IDENTITY
-```
+`SCOPE_IDENTITY`
 
-```sql
-IDENT_CURRENT
-```
+`IDENT_CURRENT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 <dml_table_source>
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-TEXTPTR()
-```
+`TEXTPTR()`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-INSERT...SELECT
-```
+`INSERT...SELECT`
 
 ```sql
 WITH (TABLOCK)
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-OUTPUT...INTO
-```
+`OUTPUT...INTO`
 
-```sql
-INSERT...SELECT
-```
+`INSERT...SELECT`

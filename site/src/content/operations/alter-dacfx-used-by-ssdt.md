@@ -97,6 +97,5 @@ Microsoft.SqlServer.Types.dll
 Common7\IDE\Extensions\Microsoft\SQLDB\DAC
 C:\Program Files\Microsoft Visual
 Studio\2022\Community\Common7\IDE\Extensions\Microsoft\SQLDB\DAC
-Microsoft.SqlServer.Dac.dll
-lib/net462
+Microsoft.SqlServer.Dac.dll lib/net462
 ```

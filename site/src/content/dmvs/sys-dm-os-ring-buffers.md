@@ -14,9 +14,7 @@ Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric E
 
 ## Syntax
 
-```sql
-sys.dm_os_ring_buffers
-```
+`sys.dm_os_ring_buffers`
 
 ## Remarks
 

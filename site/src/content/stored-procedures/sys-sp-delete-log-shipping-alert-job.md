@@ -14,9 +14,7 @@ Removes an alert job from the log shipping monitor server if the job exists and 
 
 ## Syntax
 
-```sql
-sp_delete_log_shipping_alert_job
-```
+`sp_delete_log_shipping_alert_job`
 
 ## Permissions
 
@@ -26,18 +24,14 @@ SQL) 06/23/2025 Applies to: SQL Server Removes an alert job from the log shippin
 
 ### Example 1
 
-```sql
-sp_delete_log_shipping_alert_job
-```
+`sp_delete_log_shipping_alert_job`
 
 ### Example 2
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_delete_log_shipping_alert_job;
+EXECUTE sp_delete_log_shipping_alert_job;
 GO
 ```

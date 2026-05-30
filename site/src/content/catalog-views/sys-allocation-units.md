@@ -37,17 +37,12 @@ SQL database in Microsoft Fabric Contains a row for each allocation unit in the 
 p.partition_number,
 p.rows,
 p.data_compression_desc
-FROM
-sys.partitions
-AS
-p
+FROM sys.partitions
+AS p
 INNER
-JOIN
-sys.allocation_units
-AS
-au
-ON
-p.partition_id = au.container_id
+JOIN sys.allocation_units
+AS au
+ON p.partition_id = au.container_id
 ORDER
 BY
 SpaceUsed_MB

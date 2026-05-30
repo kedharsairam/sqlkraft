@@ -80,8 +80,7 @@ loads them directly from the Global Assembly Cache (GAC).
 The libraries/namespaces supported by CLR integration in SQL Server are:
 
 ```sql
-ALTER ASSEMBLY
-mscorlib.dll
+ALTER ASSEMBLY mscorlib.dll
 CustomMarshalers.dll
 Microsoft.VisualBasic.dll
 Microsoft.VisualC.dll

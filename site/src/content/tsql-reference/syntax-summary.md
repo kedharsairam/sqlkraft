@@ -11,8 +11,6 @@ CREATE USER can't be used to create a guest user because the guest user already 
 
 every database. You can enable the guest user by granting it CONNECT permission, as shown:
 
-SQL
-
 Information about database users is visible in the
 
 sys.database_principals
@@ -29,8 +27,6 @@ database-level Microsoft Entra principals to be mapped to server-level Microsoft
 
 To create a Microsoft Entra user from a Microsoft Entra login use the following syntax:
 
-SQL
-
 When creating the user in the Azure SQL database, the
 
 login_name
@@ -46,8 +42,6 @@ create a Microsoft Entra user without a login in the
 database. For example, this
 
 command will create a contained user:
-
-SQL
 
 The following list shows possible syntax for users based on logins. The default schema options
 
@@ -109,9 +103,7 @@ Database Engine.
 FROM EXTERNAL PROVIDER
 ```
 
-```sql
-master
-```
+`master`
 
 ```sql
 CREATE USER [Domain1\WindowsUserBarry]
@@ -123,8 +115,7 @@ CREATE USER [Domain1\WindowsGroupManagers] FROM LOGIN [Domain1\WindowsGroupManag
 CREATE USER SQLAUTHLOGIN
 GRANT
 CONNECT
-TO
-guest;
+TO guest;
 GO
 CREATE
 USER
@@ -150,17 +141,11 @@ CREATE USER [Domain1\WindowsGroupManagers]
 CREATE USER Barry WITH PASSWORD = 'sdjklalie8rew8337!$d'
 ```
 
-```sql
-master
-```
+`master`
 
-```sql
-master
-```
+`master`
 
-```sql
-master
-```
+`master`
 
 ```sql
 CREATE USER [Domain1\WindowsUserBarry]

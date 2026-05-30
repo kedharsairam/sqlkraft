@@ -67,8 +67,6 @@ Reorganizing different indexes while rebuilding nonoverlapping indexes on the sa
 
 table.
 
-
-
 Expand table
 
 ２
@@ -86,8 +84,6 @@ is set to
 .
 
 ### Applies to
-
-### time
 
 ## Resumable index operations
 
@@ -387,18 +383,14 @@ statement to have the
 
 permission.
 
-```sql
-ALL
-```
+`ALL`
 
 ```sql
 ALLOW_ROW_LOCKS =
 ON
 ```
 
-```sql
-OFF
-```
+`OFF`
 
 ```sql
 ALLOW_PAGE_LOCKS =
@@ -422,81 +414,47 @@ U
 X
 ```
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IU
-```
+`IU`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-ALLOW_PAGE_LOCKS
-```
+`ALLOW_PAGE_LOCKS`
 
-```sql
-OFF
-```
+`OFF`
 
 ```sql
 RESUMABLE = ON
 ```
 
-```sql
-RESUMABLE
-```
+`RESUMABLE`
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-RESUMABLE
-```
+`RESUMABLE`
 
 ```sql
 RESUMABLE = ON
 ```
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-RESUMABLE
-```
+`RESUMABLE`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-WAIT_AT_LOW_PRIORITY
-```
+`WAIT_AT_LOW_PRIORITY`
 
 ```sql
 ALTER INDEX PAUSE
@@ -514,25 +472,15 @@ ALTER INDEX REBUILD
 ALTER INDEX RESUME
 ```
 
-```sql
-ABORT
-```
+`ABORT`
 
-```sql
-MAXDOP
-```
+`MAXDOP`
 
-```sql
-MAXDOP
-```
+`MAXDOP`
 
-```sql
-MAXDOP
-```
+`MAXDOP`
 
-```sql
-MAXDOP
-```
+`MAXDOP`
 
 ```sql
 Sch-M
@@ -546,13 +494,9 @@ SORT_IN_TEMPDB = ON
 RESUMABLE = ON
 ```
 
-```sql
-timestamp
-```
+`timestamp`
 
-```sql
-rowversion
-```
+`rowversion`
 
 ```sql
 ALTER INDEX REBUILD ALL
@@ -562,9 +506,7 @@ ALTER INDEX REBUILD ALL
 ALTER TABLE REBUILD
 ```
 
-```sql
-WAIT_AT_LOW_PRIORITY
-```
+`WAIT_AT_LOW_PRIORITY`
 
 ```sql
 S
@@ -574,9 +516,7 @@ S
 Sch-M
 ```
 
-```sql
-WAIT_AT_LOW_PRIORITY
-```
+`WAIT_AT_LOW_PRIORITY`
 
 ```sql
 S
@@ -591,82 +531,45 @@ MAX_DURATION = n
 [minutes]
 ```
 
-```sql
-WAIT_AT_LOW_PRIORITY
-```
+`WAIT_AT_LOW_PRIORITY`
+
+`WAIT_AT_LOW_PRIORITY`
 
 ```sql
-WAIT_AT_LOW_PRIORITY
+WAIT_AT_LOW_PRIORITY (MAX_DURATION = 0 minutes, ABORT_AFTER_WAIT = NONE)
 ```
 
-```sql
-WAIT_AT_LOW_PRIORITY (MAX_DURATION = 0
-minutes, ABORT_AFTER_WAIT = NONE)
-```
+`MAX_DURATION`
 
-```sql
-MAX_DURATION
-```
+`MINUTES`
 
-```sql
-MINUTES
-```
+`MAX_DURATION`
 
-```sql
-MAX_DURATION
-```
+`ABORT_AFTER_WAIT`
 
-```sql
-ABORT_AFTER_WAIT
-```
+`MAX_DURATION`
 
-```sql
-MAX_DURATION
-```
+`MINUTES`
 
-```sql
-MINUTES
-```
+`ABORT_AFTER_WAIT`
 
-```sql
-ABORT_AFTER_WAIT
-```
+`NONE`
 
-```sql
-NONE
-```
+`SELF`
 
-```sql
-SELF
-```
+`BLOCKERS`
 
-```sql
-BLOCKERS
-```
+`NONE`
 
-```sql
-NONE
-```
+`SELF`
 
-```sql
-SELF
-```
+`SELF`
 
-```sql
-SELF
-```
+`MAX_DURATION`
 
-```sql
-MAX_DURATION
-```
+`BLOCKERS`
 
-```sql
-BLOCKERS
-```
-
-```sql
-BLOCKERS
-```
+`BLOCKERS`
 
 ```sql
 CREATE

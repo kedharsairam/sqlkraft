@@ -29,18 +29,14 @@ Contains a row per vector index. Type of vector index (DiskANN only for now) Met
 ### Example 2
 
 ```sql
-SELECT
-object_id,
+SELECT object_id,
 index_id,
 vector_index_type,
 distance_metric,
 build_parameters
-FROM
-sys.vector_indexes
-AS
-vi
-WHERE
-object_id = OBJECT_ID(
+FROM sys.vector_indexes
+AS vi
+WHERE object_id = OBJECT_ID(
 '[dbo].[wikipedia_articles_embeddings]'
 )
 ```

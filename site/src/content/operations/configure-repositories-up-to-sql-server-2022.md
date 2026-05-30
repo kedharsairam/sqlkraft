@@ -76,7 +76,5 @@ Use the steps in the following sections to configure repositories on your Linux 
 Expand table
 
 ```cmd
-mssql-server-2022
-mssql-server-2019
-mssql-server-2017
+mssql-server-2022 mssql-server-2019 mssql-server-2017
 ```

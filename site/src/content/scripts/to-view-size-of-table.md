@@ -8,10 +8,8 @@ pubDate: 2025-03-15
 ---
 
 ```sql
-Use DB_Name;  --Change your database here
-go
-SELECT
- s.name + '.' + t.Name AS [Table Name],
+Use DB_Name;  --Change your database here go
+SELECT s.name + '.' + t.Name AS [Table Name],
  part.rows AS [Total Rows In Table - Modified],
  CAST((SUM( DISTINCT au.Total_pages) * 8 ) / 1024.000 / 1024.000 AS NUMERIC(18, 3))
  AS [Table's Total Space In GB]

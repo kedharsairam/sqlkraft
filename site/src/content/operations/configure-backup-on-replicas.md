@@ -96,6 +96,5 @@ exception of
 Expand table
 
 ```cmd
-Readable Secondary
-no
+Readable Secondary no
 ```

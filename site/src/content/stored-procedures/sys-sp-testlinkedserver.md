@@ -29,25 +29,20 @@ sp_testlinkedserver [ @servername ] = servername
 
 ### Example 1
 
-```sql
-SEATTLESales
-```
+`SEATTLESales`
 
 ### Example 2
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_addlinkedserver
+EXECUTE sp_addlinkedserver
 'SEATTLESales'
 , N
 'SQL Server'
 ;
 GO
-EXECUTE
-sp_testlinkedserver SEATTLESales;
+EXECUTE sp_testlinkedserver SEATTLESales;
 GO
 ```

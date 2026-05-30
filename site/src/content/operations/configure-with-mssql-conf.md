@@ -119,7 +119,5 @@ Expand table
 
 ```cmd
 .mdf
-.ldf
-master
-master
+.ldf master master
 ```

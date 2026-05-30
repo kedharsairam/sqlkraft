@@ -94,12 +94,5 @@ expected unless you manually re-create the metadata for those triggers in the
 database.
 
 ```sql
-master
-msdb
-master
-msdb
-master
-master
-msdb
-master
+master msdb master msdb master master msdb master
 ```

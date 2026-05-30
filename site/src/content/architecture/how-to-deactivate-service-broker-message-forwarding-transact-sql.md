@@ -35,15 +35,12 @@ on a Service Broker endpoint.
 
 Alter the endpoint to deactivate message forwarding.
 
-SQL
-
 How to: Activate Service Broker networking (Transact-SQL)
 
 How to: Activate Service Broker message forwarding (Transact-SQL)
 
 ```sql
-USE
-master
+USE master
 ;
 GO
 ALTER

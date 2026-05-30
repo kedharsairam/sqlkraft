@@ -14,6 +14,4 @@ Reports the number rows affected by operations on each of the In-Memory OLTP obj
 
 ## Syntax
 
-```sql
-sys.dm_db_xtp_object_stats
-```
+`sys.dm_db_xtp_object_stats`

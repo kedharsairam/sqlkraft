@@ -69,23 +69,16 @@ password will also be needed at each remote publisher when the remote distributo
 
 up.
 
-SQL
-
 2. Create the distribution database at the distributor. If stored procedures are being used for
 
 configuration, run
 
-SQL
-
 ```cmd
-sp_adddistributor
-sp_adddistributiondb
-USE
-master
+sp_adddistributor sp_adddistributiondb
+USE master
 ;
 GO
-EXECUTE
-sys.sp_adddistributor
+EXECUTE sys.sp_adddistributor
 @distributor =
 'MyDistributor'
 ,
@@ -94,8 +87,7 @@ password
 =
 '**Strong password for distributor**'
 ;
-USE
-master
+USE master
 ;
 GO
 ```

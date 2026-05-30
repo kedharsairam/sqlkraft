@@ -67,8 +67,6 @@ how the
 
 is used when granted to a role or Windows group.
 
-SQL
-
 Ｕ
 
 Caution
@@ -89,61 +87,39 @@ compatibility. It will be removed in a future release.
 
 #### Securable
 
-```sql
-DENY
-```
+`DENY`
 
-```sql
-REVOKE
-```
+`REVOKE`
 
-```sql
-DENY
-```
+`DENY`
 
-```sql
-sp_helprotect
-```
+`sp_helprotect`
 
 ```sql
 CREATE USER
 ```
 
-```sql
-GRANT
-```
+`GRANT`
 
-```sql
-DENY
-```
+`DENY`
 
 ```sql
 GRANT ... WITH GRANT OPTION
 ```
 
-```sql
-AS
-```
+`AS`
 
-```sql
-GRANT
-```
+`GRANT`
 
-```sql
-AS
-```
+`AS`
 
 ```sql
 WITH GRANT OPTION
 ```
 
-```sql
-DENY
-```
+`DENY`
 
-```sql
-GRANT
-```
+`GRANT`
 
 ```sql
 -- Execute the following as a database owner

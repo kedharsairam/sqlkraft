@@ -17,8 +17,7 @@ SQL Server 2022 (16.x) and later versions SQL database in Microsoft Fabric Uniqu
 ## Syntax
 
 ```sql
-N'OPTION (...)
-last_query_hint_failure_reason
+N'OPTION (...) last_query_hint_failure_reason
 ```
 
 ## Permissions

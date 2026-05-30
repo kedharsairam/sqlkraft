@@ -17,8 +17,7 @@ Returns replication statistics about latency, throughput, and transaction count 
 ## Syntax
 
 ```sql
-Replicated
-transactions
+Replicated transactions
 ```
 
 ## Permissions

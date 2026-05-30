@@ -26,10 +26,8 @@ Returns information about the data types supported by the current environment. T
 sp_datatype_info
 [ [ @data_type = ] data_type ]
 [ , [ @
-ODBCV
-er = ]
-ODBCV
-er ]
+ODBCV er = ]
+ODBCV er ]
 [ ; ]
 ```
 
@@ -37,21 +35,15 @@ er ]
 
 ### Example 1
 
-```sql
-sp_datatype_info
-```
+`sp_datatype_info`
 
 ### Example 2
 
-```sql
-SQLGetTypeInfo
-```
+`SQLGetTypeInfo`
 
 ### Example 3
 
-```sql
-DATA_TYPE
-```
+`DATA_TYPE`
 
 ### Example 4
 
@@ -62,11 +54,9 @@ DATA_TYPE
 ### Example 5
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_datatype_info -9;
+EXECUTE sp_datatype_info -9;
 GO
 ```

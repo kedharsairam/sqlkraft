@@ -24,10 +24,7 @@ Summarize this article for me Returns a row for each server-wide configuration o
 ```sql
 select
 *
-from
-sys.configurations
-where
-value
+from sys.configurations where value
 != value_in_use
 ```
 

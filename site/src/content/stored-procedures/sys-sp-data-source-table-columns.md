@@ -53,27 +53,19 @@ N
 
 ### Example 1
 
-```sql
-sp_data_source_table_columns
-```
+`sp_data_source_table_columns`
 
 ### Example 2
 
-```sql
-sp_data_source_table_columns
-```
+`sp_data_source_table_columns`
 
 ### Example 3
 
-```sql
-server
-```
+`server`
 
 ### Example 4
 
-```sql
-schema
-```
+`schema`
 
 ### Example 5
 
@@ -87,12 +79,10 @@ SYSNAME = N
 DECLARE
 @table_location
 AS
-NVARCHAR
-(400) = N
+NVARCHAR (400) = N
 '[database].[schema].[table]'
 ;
-EXECUTE
-sp_data_source_table_columns
+EXECUTE sp_data_source_table_columns
 @data_source,
 @table_location;
 ```

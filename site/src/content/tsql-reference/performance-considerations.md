@@ -106,9 +106,7 @@ BULK INSERT
 BULK INSERT
 ```
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
 ```sql
 BULK INSERT

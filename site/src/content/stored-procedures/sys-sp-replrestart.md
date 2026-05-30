@@ -25,9 +25,7 @@ Used by transactional replication during backup and restore so that the replicat
 1
 ```
 
-```sql
-sp_replrestart
-```
+`sp_replrestart`
 
 ```sql
 sp_replrestart

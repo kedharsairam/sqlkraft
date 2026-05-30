@@ -78,8 +78,7 @@ Analytics Platform System (PDW) Returns one row for every symmetric key created 
 ## Syntax
 
 ```sql
-EXECUTE
-sp_configure
+EXECUTE sp_configure
 'external rest endpoint enabled'
 , 1;
 RECONFIGURE
@@ -89,8 +88,7 @@ GO
 IF NOT EXISTS (
 SELECT
 *
-FROM
-sys.symmetric_keys
+FROM sys.symmetric_keys
 WHERE
 [
 name
@@ -126,8 +124,7 @@ CREATE
 EXTERNAL
 MODEL
 MyAzureOpenAIModel
-WITH
-(
+WITH (
 LOCATION =
 'https://my-azure-openai-
 endpoint.cognitiveservices.azure.com/openai/deployments/text-embedding-ada-
@@ -166,40 +163,29 @@ PASSWORD
 GO
 SELECT
 *
-FROM
-sys.symmetric_keys;
+FROM sys.symmetric_keys;
 GO
 ```
 
 ### Example 3
 
-```sql
-ALTER
-```
+`ALTER`
 
 ### Example 4
 
-```sql
-SamInventory42
-```
+`SamInventory42`
 
 ### Example 5
 
-```sql
-HamidS
-```
+`HamidS`
 
 ### Example 6
 
-```sql
-HamidS
-```
+`HamidS`
 
 ### Example 7
 
-```sql
-ALTER
-```
+`ALTER`
 
 ### Example 8
 

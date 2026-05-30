@@ -14,9 +14,7 @@ SQL database in Microsoft Fabric Returns space usage information for the transac
 
 ## Syntax
 
-```sql
-total_log_size_in_bytes
-```
+`total_log_size_in_bytes`
 
 ## Permissions
 

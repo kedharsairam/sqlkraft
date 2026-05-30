@@ -9,8 +9,7 @@ pubDate: 2025-03-15
 
 ```sql
 -- Unused Index Script
-SELECT TOP 25
-o.name AS ObjectName
+SELECT TOP 25 o.name AS ObjectName
 , i.name AS IndexName
 , i.index_id AS IndexID
 , dm_ius.user_seeks AS UserSeek

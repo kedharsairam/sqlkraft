@@ -30,8 +30,6 @@ The following script can be modified to determine the depth of the B-tree for th
 
 the affected table.
 
-SQL
-
 PFS stands for Page Free Space, SQL Server allocates one PFS page for every 8088 pages
 
 (starting with
@@ -50,33 +48,22 @@ be updated in several scenarios, including when any allocations or deallocations
 
 the use of an update (UP) latch is required to protect the PFS page, latch contention on PFS
 
-```sql
-SH
-```
+`SH`
 
-```sql
-EX
-```
+`EX`
 
-```sql
-ACCESS_METHODS_HOBT_VIRTUAL_ROOT
-```
+`ACCESS_METHODS_HOBT_VIRTUAL_ROOT`
 
-```sql
-sys.dm_os_latch_stats
-```
+`sys.dm_os_latch_stats`
 
-```sql
-PageID
-```
+`PageID`
 
 ```sql
 1
 ```
 
 ```sql
-SELECT
-o.name
+SELECT o.name
 AS
 [
 table
@@ -92,12 +79,9 @@ indexProperty(object_id(o.name), i.name,
 indexProperty(object_id(o.name), i.name,
 'isClustered'
 )
-AS
-depth
+AS depth
 ,
---clustered
-index depth reported doesn't count leaf level
-i.[
+--clustered index depth reported doesn't count leaf level i.[
 rows
 ]
 AS
@@ -107,8 +91,7 @@ rows
 i.origFillFactor
 AS
 [fillFactor],
-CASE
-(indexProperty(object_id(o.name), i.name,
+CASE (indexProperty(object_id(o.name), i.name,
 'isClustered'
 ))
 WHEN
@@ -122,35 +105,23 @@ THEN
 ELSE
 'statistic'
 END
-AS
-type
-FROM
-sysIndexes
-AS
-i
+AS type
+FROM sysIndexes
+AS i
 INNER
-JOIN
-sysObjects
-AS
-o
-ON
-o.id = i.id
-WHERE
-o.type =
+JOIN sysObjects
+AS o
+ON o.id = i.id
+WHERE o.type =
 'u'
-AND
-indexProperty(object_id(o.name), i.name,
+AND indexProperty(object_id(o.name), i.name,
 'isHypothetical'
 ) = 0
---filter
-out hypothetical indexes
-AND
-indexProperty(object_id(o.name), i.name,
+--filter out hypothetical indexes
+AND indexProperty(object_id(o.name), i.name,
 'isStatistics'
 ) = 0
---filter
-out statistics
+--filter out statistics
 ORDER
-BY
-o.name;
+BY o.name;
 ```

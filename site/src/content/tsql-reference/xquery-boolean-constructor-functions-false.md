@@ -39,6 +39,5 @@ true Function (XQuery)
 Boolean Constructor Functions (XQuery)
 
 ```sql
-xs:boolean("0")
-fn:false() as xs:boolean
+xs:boolean("0") fn:false() as xs:boolean
 ```

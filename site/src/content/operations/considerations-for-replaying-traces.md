@@ -109,6 +109,5 @@ UPDATETEXT (Transact-SQL)
 BULK INSERT
 READTEXT
 WRITETEXT
-UPDATETEXT
-sp_getbindtoken
+UPDATETEXT sp_getbindtoken
 ```

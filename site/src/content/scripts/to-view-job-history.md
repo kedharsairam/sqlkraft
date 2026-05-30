@@ -8,8 +8,7 @@ pubDate: 2025-03-15
 ---
 
 ```sql
-SELECT
-    j.name AS 'JobName',
+SELECT j.name AS 'JobName',
     js.step_name AS 'StepName',
     msdb.dbo.agent_datetime(h.run_date, h.run_time) AS 'RunDateTime',
     h.run_duration,

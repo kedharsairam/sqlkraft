@@ -14,9 +14,7 @@ Deletes a schedule for a job in the SQL Server Agent service. is provided for ba
 
 ## Syntax
 
-```sql
-sp_delete_jobschedule
-```
+`sp_delete_jobschedule`
 
 ## Permissions
 

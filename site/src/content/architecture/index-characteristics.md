@@ -124,21 +124,13 @@ Columnstore or rowstore
 <=
 ```
 
-```sql
-BETWEEN
-```
+`BETWEEN`
 
-```sql
-LastName
-```
+`LastName`
 
-```sql
-FirstName
-```
+`FirstName`
 
-```sql
-WHERE
-```
+`WHERE`
 
 ```sql
 WHERE LastName = 'Smith'

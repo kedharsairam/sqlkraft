@@ -14,9 +14,7 @@ Analytics Platform System (PDW) Returns the information about the current query-
 
 ## Syntax
 
-```sql
-sys.dm_pdw_nodes_exec_query_resource_semaphores
-```
+`sys.dm_pdw_nodes_exec_query_resource_semaphores`
 
 ## Examples
 
@@ -28,15 +26,11 @@ ORDER BY
 
 ### Example 2
 
-```sql
-sys.dm_exec_query_resource_semaphores
-```
+`sys.dm_exec_query_resource_semaphores`
 
 ### Example 3
 
-```sql
-sys.dm_os_memory_clerks
-```
+`sys.dm_os_memory_clerks`
 
 ### Example 4
 
@@ -47,9 +41,7 @@ type
 
 ### Example 5
 
-```sql
-sys.dm_exec_query_memory_grants
-```
+`sys.dm_exec_query_memory_grants`
 
 ### Example 6
 
@@ -57,10 +49,8 @@ sys.dm_exec_query_memory_grants
 --Find all queries waiting in the memory queue
 SELECT
 *
-FROM
-sys.dm_exec_query_memory_grants
-WHERE
-grant_time
+FROM sys.dm_exec_query_memory_grants
+WHERE grant_time
 IS
 NULL
 ;
@@ -70,16 +60,13 @@ NULL
 
 ```sql
 -- retrieve every query plan from the plan cache
-USE
-master
+USE master
 ;
 GO
 SELECT
 *
-FROM
-sys.dm_exec_cached_plans cp
+FROM sys.dm_exec_cached_plans cp
 CROSS
-APPLY
-sys.dm_exec_query_plan(cp.plan_handle);
+APPLY sys.dm_exec_query_plan(cp.plan_handle);
 GO
 ```

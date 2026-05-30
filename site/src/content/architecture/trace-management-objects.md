@@ -219,13 +219,9 @@ SET OFFSETS
 ANSI_NULLS
 ```
 
-```sql
-ANSI_PADDING
-```
+`ANSI_PADDING`
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 SET OFFSETS
@@ -249,82 +245,44 @@ SET FMTONLY
 SET FMTONLY
 ```
 
-```sql
-NOLOCK
-```
+`NOLOCK`
 
-```sql
-READUNCOMMITTED
-```
+`READUNCOMMITTED`
 
-```sql
-FROM
-```
+`FROM`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-NOLOCK
-```
+`NOLOCK`
 
-```sql
-READUNCOMMITTED
-```
+`READUNCOMMITTED`
 
-```sql
-FROM
-```
+`FROM`
 
-```sql
-NOLOCK
-```
+`NOLOCK`
 
-```sql
-READUNCOMMITTED
-```
+`READUNCOMMITTED`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-WITH
-```
+`WITH`
 
-```sql
-WITH
-```
+`WITH`
 
-```sql
-WITH
-```
+`WITH`
 
 ```sql
 FOR XML
 ```
 
-```sql
-RAW
-```
+`RAW`
 
-```sql
-AUTO
-```
+`AUTO`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-sp_setapprole
-```
+`sp_setapprole`

@@ -47,9 +47,7 @@ Article • 02/28/2023 Applies to: SQL Server Azure SQL Managed Instance Azure S
 
 ### Example 1
 
-```sql
-sys.credentials
-```
+`sys.credentials`
 
 ### Example 2
 
@@ -68,6 +66,5 @@ SERVER
 
 ```sql
 DROP
-CREDENTIAL
-credential_name
+CREDENTIAL credential_name
 ```

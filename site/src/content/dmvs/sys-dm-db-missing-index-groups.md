@@ -14,9 +14,7 @@ Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric T
 
 ## Syntax
 
-```sql
-sys.dm_db_missing_index_groups
-```
+`sys.dm_db_missing_index_groups`
 
 ## Remarks
 

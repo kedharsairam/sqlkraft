@@ -82,38 +82,20 @@ username, database roles, SID, default language, default schema, ID, roles, and
 
 Expand table
 
-```sql
-t1.Column1
-```
+`t1.Column1`
 
-```sql
-t2.Column1
-```
+`t2.Column1`
 
-```sql
-table1
-```
+`table1`
 
-```sql
-table2
-```
+`table2`
 
-```sql
-Schema1
-```
+`Schema1`
 
-```sql
-Schema2
-```
+`Schema2`
 
-```sql
-SecContextToken
-```
+`SecContextToken`
 
-```sql
-LoginToken
-```
+`LoginToken`
 
-```sql
-UserToken
-```
+`UserToken`

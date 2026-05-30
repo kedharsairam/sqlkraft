@@ -79,12 +79,10 @@ GRANT
 VIEW
 SERVER
 STATE
-TO
-login_test;
+TO login_test;
 GO
 CREATE
-TRIGGER
-connection_limit_trigger
+TRIGGER connection_limit_trigger
 ON
 ALL
 SERVER
@@ -99,17 +97,12 @@ BEGIN
 IF
 ORIGINAL_LOGIN() =
 'login_test'
-AND
-(
+AND (
 SELECT
-COUNT
-(*)
-FROM
-sys.dm_exec_sessions
-WHERE
-is_user_process = 1
-AND
-original_login_name =
+COUNT (*)
+FROM sys.dm_exec_sessions
+WHERE is_user_process = 1
+AND original_login_name =
 'login_test'
 ) > 3
 ROLLBACK

@@ -95,38 +95,18 @@ combined size of the indexed columns (not counting included columns), plus any a
 
 partitioning columns cannot exceed 1800 bytes in a non-unique clustered index.
 
-### image
-
-### ntext
-
-### text
-
 ### varchar(max)
 
 ### nvarchar(max)
 
 ### varbinary(max)
 
-### xml
+`ROW_OVERFLOW_DATA`
 
-### xml
+`IN_ROW_DATA`
 
-```sql
-ROW_OVERFLOW_DATA
-```
+`PERSISTED`
 
-```sql
-IN_ROW_DATA
-```
+`PERSISTED`
 
-```sql
-PERSISTED
-```
-
-```sql
-PERSISTED
-```
-
-```sql
-SET
-```
+`SET`

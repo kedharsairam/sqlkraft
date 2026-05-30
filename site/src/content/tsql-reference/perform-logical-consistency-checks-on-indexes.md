@@ -83,9 +83,7 @@ on every table in the database, use
 DBCC CHECKTABLE
 ```
 
-```sql
-NOINDEX
-```
+`NOINDEX`
 
 ```sql
 DBCC CHECKTABLE

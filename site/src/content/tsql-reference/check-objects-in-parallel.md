@@ -109,9 +109,7 @@ routine will report a consistency error.
 
 ### supported features of SQL Server 2022
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
 ```sql
 DBCC CHECKTABLE
@@ -129,9 +127,7 @@ DBCC CHECKTABLE
 DBCC CHECKTABLE
 ```
 
-```sql
-REPAIR_ALLOW_DATA_LOSS
-```
+`REPAIR_ALLOW_DATA_LOSS`
 
 ```sql
 DBCC CHECKTABLE
@@ -141,13 +137,9 @@ DBCC CHECKTABLE
 DBCC CHECKTABLE
 ```
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 DBCC CHECKTABLE

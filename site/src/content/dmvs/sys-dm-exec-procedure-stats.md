@@ -14,9 +14,7 @@ sys.dm_exec_procedure_stats (Transact-SQL) sys.dm_exec_trigger_stats (Transact-S
 
 ## Syntax
 
-```sql
-query_cache_removal_statistics
-```
+`query_cache_removal_statistics`
 
 ## Remarks
 

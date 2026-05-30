@@ -14,6 +14,4 @@ SQL database in Microsoft Fabric If the Windows Server failover cluster (WSFC) n
 
 ## Syntax
 
-```sql
-sys.dm_hadr_cluster_members
-```
+`sys.dm_hadr_cluster_members`

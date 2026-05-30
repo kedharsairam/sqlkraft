@@ -96,6 +96,5 @@ sys.fn_xe_file_target_read_file (Transact-SQL)
 ```cmd
 MACHINE_SQLINSTANCE_SQLDIAG_0_xxxxxxxxxxxxxxxxx.xel
 NODE1_MSSQLSERVER_SQLDIAG_0_133177967257760000.xel
-NODE1_SQL2019INST_SQLDIAG_0_133177967257760000.xel
-sys.fn_xe_file_target_read_file
+NODE1_SQL2019INST_SQLDIAG_0_133177967257760000.xel sys.fn_xe_file_target_read_file
 ```

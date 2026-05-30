@@ -45,8 +45,7 @@ sp_syscollector_disable_collector
 ### Example 4
 
 ```sql
-EXECUTE
-dbo.sp_syscollector_disable_collector;
+EXECUTE dbo.sp_syscollector_disable_collector;
 ```
 
 ### Example 5
@@ -58,34 +57,26 @@ D:\tempdata
 ### Example 6
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_syscollector_disable_collector;
+EXECUTE dbo.sp_syscollector_disable_collector;
 GO
-EXECUTE
-dbo.sp_syscollector_set_cache_directory @cache_directory = N
+EXECUTE dbo.sp_syscollector_set_cache_directory @cache_directory = N
 'D:\tempdata'
 ;
 GO
-EXECUTE
-dbo.sp_syscollector_enable_collector;
+EXECUTE dbo.sp_syscollector_enable_collector;
 GO
 ```
 
 ### Example 7
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_syscollector_disable_collector;
+EXECUTE dbo.sp_syscollector_disable_collector;
 GO
-EXECUTE
-dbo.sp_syscollector_set_cache_window 3;
+EXECUTE dbo.sp_syscollector_set_cache_window 3;
 GO
-EXECUTE
-dbo.sp_syscollector_enable_collector;
+EXECUTE dbo.sp_syscollector_enable_collector;
 ```

@@ -129,9 +129,7 @@ Expand table
 Expand table
 
 ```sql
-xp_grantlogin
-xp_revokelogin
-xp_loginConfig
+xp_grantlogin xp_revokelogin xp_loginConfig
 ```
 
 ```sql
@@ -143,15 +141,12 @@ DROP LOGIN IsIntegratedSecurityOnly
 ```
 
 ```sql
-SERVERPROPERTY
-xp_grantlogin
-xp_revokelogin
+SERVERPROPERTY xp_grantlogin xp_revokelogin
 ```
 
 ```sql
 sp_indexoption
-ALTER INDEX
-sp_indexoption
+ALTER INDEX sp_indexoption
 CREATE TABLE
 ```
 
@@ -163,42 +158,22 @@ ALTER TABLE
 CREATE INDEX
 ```
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`
 
-```sql
-sp_configure
-```
+`sp_configure`

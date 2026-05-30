@@ -47,13 +47,10 @@ The following query details the memory consumption, split per main system-versio
 
 internal history staging table.
 
-SQL
-
 ```sql
 WITH
 InMemoryTemporalTables
-AS
-(
+AS (
 SELECT
 SCHEMA_NAME(T1.schema_id)
 AS
@@ -70,11 +67,9 @@ TemporalTableName,
 IT.Name
 AS
 InternalHistoryStagingName
-FROM
-sys.internal_tables IT
+FROM sys.internal_tables IT
 INNER
-JOIN
-sys.tables T1
+JOIN sys.tables T1
 ON
 IT.parent_object_id = T1.object_id
 WHERE
@@ -96,8 +91,7 @@ ELSE
 END
 ConsumedBy,
 C.*
-FROM
-sys.dm_db_xtp_memory_consumers C
+FROM sys.dm_db_xtp_memory_consumers C
 INNER
 JOIN
 InMemoryTemporalTables T

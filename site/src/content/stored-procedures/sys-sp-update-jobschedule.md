@@ -14,9 +14,7 @@ Changes the schedule settings for the specified job in the SQL Server Agent serv
 
 ## Syntax
 
-```sql
-sp_update_jobschedule
-```
+`sp_update_jobschedule`
 
 ## Permissions
 

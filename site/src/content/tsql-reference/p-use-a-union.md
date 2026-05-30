@@ -17,23 +17,13 @@ and
 
 tables.
 
-SQL
+`ProductModelID`
 
-```sql
-ProductModelID
-```
+`Name`
 
-```sql
-Name
-```
+`ProductModel`
 
-```sql
-ProductModel
-```
-
-```sql
-Gloves
-```
+`Gloves`
 
 ```sql
 USE
@@ -47,8 +37,7 @@ VacationHours,
 SickLeaveHours
 FROM
 HumanResources.Employee
-AS
-e1
+AS e1
 UNION
 SELECT
 BusinessEntityID,
@@ -58,10 +47,8 @@ VacationHours,
 SickLeaveHours
 FROM
 HumanResources.Employee
-AS
-e2
-OPTION
-(
+AS e2
+OPTION (
 MERGE
 UNION
 );
@@ -74,21 +61,18 @@ AdventureWorks2025;
 GO
 IF OBJECT_ID('dbo.Gloves', 'U') IS NOT NULL
 DROP
-TABLE
-dbo.Gloves;
+TABLE dbo.Gloves;
 GO
 -- Create Gloves table.
 SELECT
 ProductModelID,
 Name
-INTO
-dbo.Gloves
+INTO dbo.Gloves
 FROM
 Production.ProductModel
 WHERE
 ProductModelID
-IN
-(3, 4);
+IN (3, 4);
 GO
 -- Here is the simple union.
 USE
@@ -102,7 +86,6 @@ Production.ProductModel
 WHERE
 ProductModelID
 NOT
-IN
-(3, 4)
+IN (3, 4)
 UNION
 ```

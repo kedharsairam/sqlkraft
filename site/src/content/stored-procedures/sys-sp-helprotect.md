@@ -55,21 +55,16 @@ N
 
 ### Example 1
 
-```sql
-sp_helprotect
-```
+`sp_helprotect`
 
 ### Example 2
 
-```sql
-sp_helprolemember
-```
+`sp_helprolemember`
 
 ### Example 3
 
 ```sql
-EXECUTE
-sp_helprole;
+EXECUTE sp_helprole;
 ```
 
 ### Example 4
@@ -81,8 +76,7 @@ CREATE TABLE
 ### Example 5
 
 ```sql
-EXECUTE
-sp_helprotect @
+EXECUTE sp_helprotect @
 name
 =
 'CREATE TABLE'

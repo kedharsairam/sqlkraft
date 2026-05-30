@@ -37,8 +37,6 @@ the
 
 database.
 
-SQL
-
 Copy and paste the following code into a Query Editor window, then run it to start a
 
 conversation and send a request message to the
@@ -62,8 +60,6 @@ send the request message on that conversation. The last
 statement displays the text of
 
 the message that was sent.
-
-SQL
 
 ７
 

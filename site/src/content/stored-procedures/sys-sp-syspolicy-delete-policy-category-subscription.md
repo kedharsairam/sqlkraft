@@ -32,23 +32,16 @@ syntax: |
 ## Syntax
 
 ```sql
-SELECT
-a.policy_category_subscription_id,
+SELECT a.policy_category_subscription_id,
 a.target_object,
 b.name
-AS
-category_name
-FROM
-msdb.dbo.syspolicy_policy_category_subscriptions
-AS
-a
+AS category_name
+FROM msdb.dbo.syspolicy_policy_category_subscriptions
+AS a
 INNER
-JOIN
-msdb.dbo.syspolicy_policy_categories
-AS
-b
-ON
-a.policy_category_id = b.policy_category_id;
+JOIN msdb.dbo.syspolicy_policy_categories
+AS b
+ON a.policy_category_id = b.policy_category_id;
 ```
 
 ## Examples
@@ -56,30 +49,22 @@ a.policy_category_id = b.policy_category_id;
 ### Example 1
 
 ```sql
-SELECT
-a.policy_category_subscription_id,
+SELECT a.policy_category_subscription_id,
 a.target_object,
 b.name
-AS
-category_name
-FROM
-msdb.dbo.syspolicy_policy_category_subscriptions
-AS
-a
+AS category_name
+FROM msdb.dbo.syspolicy_policy_category_subscriptions
+AS a
 INNER
-JOIN
-msdb.dbo.syspolicy_policy_categories
-AS
-b
-ON
-a.policy_category_id = b.policy_category_id;
+JOIN msdb.dbo.syspolicy_policy_categories
+AS b
+ON a.policy_category_id = b.policy_category_id;
 ```
 
 ### Example 2
 
 ```sql
-EXECUTE
-msdb.dbo.sp_syspolicy_delete_policy_category_subscription
+EXECUTE msdb.dbo.sp_syspolicy_delete_policy_category_subscription
 @policy_category_subscription_id = 1;
 GO
 ```

@@ -88,7 +88,6 @@ For storage, kernel, CPU, and network recommendations, see
 .
 
 ```cmd
-mssql-conf
-cgroup
+mssql-conf cgroup
 MSSQL_MEMORY_LIMIT_MB
 ```

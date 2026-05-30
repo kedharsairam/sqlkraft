@@ -72,7 +72,5 @@ is valid for the duration
 of the session.
 
 ```sql
-sp_xml_preparedocument
-sp_xml_removedocument
-sp_xml_preparedocument
+sp_xml_preparedocument sp_xml_removedocument sp_xml_preparedocument
 ```

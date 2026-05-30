@@ -97,8 +97,6 @@ up to 2 GB. Without an index, these binary large objects are shredded at run tim
 
 query. This shredding can be time-consuming. For example, consider the following query:
 
-SQL
-
 ７
 
 Note

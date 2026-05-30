@@ -39,8 +39,6 @@ SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
 
-SQL
-
 database in Microsoft Fabric
 
 A
@@ -84,8 +82,6 @@ instance to be
 accepted. The instance must be formed of at least two points or it must be empty. The
 
 following LineString instances are accepted.
-
-SQL
 
 shows that a
 

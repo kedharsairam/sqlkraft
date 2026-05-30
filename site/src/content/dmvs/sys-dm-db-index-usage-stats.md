@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns counts of different types of index opera
 
 ## Syntax
 
-```sql
-sys.dm_db_index_usage_stats
-```
+`sys.dm_db_index_usage_stats`

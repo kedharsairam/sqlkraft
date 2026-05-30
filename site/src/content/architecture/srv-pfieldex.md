@@ -68,8 +68,7 @@ Expand table
 ```sql
 void *srv_pfieldex(SRV_PROC *
 srvproc
-, int
-field
+, int field
 , int *
 len
 );

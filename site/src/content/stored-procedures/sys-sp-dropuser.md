@@ -61,52 +61,37 @@ new development work, and plan to modify applications that currently use this fe
 
 ### Example 1
 
-```sql
-sp_helpuser
-```
+`sp_helpuser`
 
 ### Example 2
 
-```sql
-sp_dropuser
-```
+`sp_dropuser`
 
 ### Example 3
 
-```sql
-INFORMATION_SCHEMA
-```
+`INFORMATION_SCHEMA`
 
 ### Example 4
 
-```sql
-master
-```
+`master`
 
 ### Example 5
 
-```sql
-tempdb
-```
+`tempdb`
 
 ### Example 6
 
 ```sql
-EXECUTE
-sp_dropuser 'guest'
+EXECUTE sp_dropuser 'guest'
 ```
 
 ### Example 7
 
-```sql
-CONNECT
-```
+`CONNECT`
 
 ### Example 8
 
-```sql
-sp_dropuser
-```
+`sp_dropuser`
 
 ### Example 9
 
@@ -116,8 +101,6 @@ ALTER ANY USER
 
 ### Example 10
 
-```sql
-Albert
-```
+`Albert`
 
 _(... and 1 more examples)_

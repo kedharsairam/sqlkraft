@@ -31,33 +31,23 @@ NULL
 
 ### Example 1
 
-```sql
-SELECT
-```
+`SELECT`
 
 ### Example 2
 
-```sql
-sp_bindsession
-```
+`sp_bindsession`
 
 ### Example 3
 
-```sql
-sp_getbindtoken
-```
+`sp_getbindtoken`
 
 ### Example 4
 
-```sql
-sp_bindsession
-```
+`sp_bindsession`
 
 ### Example 5
 
-```sql
-sp_bindsession
-```
+`sp_bindsession`
 
 ### Example 6
 
@@ -78,13 +68,11 @@ PKb'gN5<9aGEedk_16>8U=5---/5G=--
 DECLARE
 @bind_token
 AS
-VARCHAR
-(255);
+VARCHAR (255);
 BEGIN
 TRANSACTION
 ;
-EXECUTE
-sp_getbindtoken @bind_token
+EXECUTE sp_getbindtoken @bind_token
 OUTPUT
 ;
 ```

@@ -77,10 +77,6 @@ ISOLATION LEVEL
 SET REMOTE_PROC_TRANSACTIONS ON
 ```
 
-```sql
-SqlContext
-```
+`SqlContext`
 
-```sql
-sp_bindsession
-```
+`sp_bindsession`

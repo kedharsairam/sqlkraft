@@ -22,8 +22,7 @@ Resets the status of a suspect database. Transact-SQL syntax conventions The nam
 
 ```sql
 sp_resetstatus [ @
-DBN
-ame = ]
+DBN ame = ]
 N
 'DBName'
 [ ; ]
@@ -61,15 +60,12 @@ new development work, and plan to modify applications that currently use this fe
 
 ### Example 1
 
-```sql
-AdventureWorks2022
-```
+`AdventureWorks2022`
 
 ### Example 2
 
 ```sql
-EXECUTE
-sp_resetstatus
+EXECUTE sp_resetstatus
 'AdventureWorks2022'
 ;
 ```

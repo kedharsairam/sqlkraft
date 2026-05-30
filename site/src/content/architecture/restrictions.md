@@ -90,11 +90,8 @@ executed against a context connection.
 ```sql
 SqlBulkCopy
 SqlNotificationRequest
-SqlCommand.Cancel
-context
-connection=true
+SqlCommand.Cancel context connection=true
 SqlConnection.DataSource
-SqlConnection
-context connection=true
+SqlConnection context connection=true
 SqlCommand.CommandTimeout
 ```

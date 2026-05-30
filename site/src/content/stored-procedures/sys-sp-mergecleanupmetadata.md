@@ -14,6 +14,4 @@ Should only be used in replication topologies that include servers running versi
 
 ## Syntax
 
-```sql
-sp_mergecleanupmetadata
-```
+`sp_mergecleanupmetadata`

@@ -106,9 +106,5 @@ Beginning with version 161, the version number of SqlPackage matches the DacFx v
 number it's associated with (for example, 162.0.52).
 
 ```cmd
-dotnet
-tool
-sqlpackage
-dotnet tool install
-dotnet tool install -g microsoft.sqlpackage
+dotnet tool sqlpackage dotnet tool install dotnet tool install -g microsoft.sqlpackage
 ```

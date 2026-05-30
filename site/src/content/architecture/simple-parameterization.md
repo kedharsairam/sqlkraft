@@ -6,8 +6,6 @@ tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 However, it can be parameterized according to simple parameterization rules. When forced
 
 parameterization is tried but fails, simple parameterization is still subsequently tried.
@@ -28,8 +26,6 @@ process was referred to as auto-parameterization.
 
 Consider this statement:
 
-SQL
-
 The value 1 at the end of the statement can be specified as a parameter. The relational engine
 
 builds the execution plan for this batch as if a parameter had been specified in place of the
@@ -39,8 +35,6 @@ value 1. Because of this simple parameterization, SQL Server recognizes that the
 statements generate essentially the same execution plan and reuses the first plan for the
 
 second statement:
-
-SQL
 
 ２
 
@@ -71,13 +65,9 @@ WHERE
 AddressID = 1 + 2;
 ```
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
 ```sql
 SELECT

@@ -61,19 +61,11 @@ Number of pages read from the data cache.
 
 Number of pages read from disk.
 
-
-
 Expand table
 
 #### Output item
 
 #### Meaning
-
-### text
-
-### ntext
-
-### image
 
 ### varchar(max)
 
@@ -81,9 +73,7 @@ Expand table
 
 ### varbinary(max)
 
-```sql
-Table
-```
+`Table`
 
 ```sql
 Scan count
@@ -104,8 +94,7 @@ logical reads
 ```
 
 ```sql
-physical
-reads
+physical reads
 ```
 
 ```sql

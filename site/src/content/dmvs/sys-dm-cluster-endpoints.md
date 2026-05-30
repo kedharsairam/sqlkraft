@@ -13,13 +13,9 @@ Name of the service exposed externally in a SQL big data cluster. Unique identif
 
 ## Code Blocks
 
-```sql
-sysname
-```
+`sysname`
 
-```sql
-nvarchar(4000)
-```
+`nvarchar(4000)`
 
 ```sql
 VIEW SERVER STATE

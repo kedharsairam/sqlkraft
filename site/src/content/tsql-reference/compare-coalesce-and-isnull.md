@@ -29,8 +29,6 @@ is rewritten by the query optimizer as the following
 
 expression:
 
-SQL
-
 As such, the input values (
 
 expression1
@@ -75,8 +73,6 @@ function. As an alternative, you can rewrite the query to
 
 push the subquery into a subselect as shown in the following example:
 
-SQL
-
 The
 
 function and the
@@ -84,8 +80,6 @@ function and the
 expression have a similar purpose but can behave
 
 differently.
-
-### int
 
 1. Because
 
@@ -135,8 +129,6 @@ defined function (UDF) deterministic, so that it can be indexed as shown in the 
 
 example:
 
-SQL
-
 4. Validations for
 
 and
@@ -159,45 +151,29 @@ takes a variable number of
 
 parameters.
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-COALESCE
-```
+`COALESCE`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-COALESCE
-```
+`COALESCE`
 
-```sql
-CASE
-```
+`CASE`
 
 ```sql
 COALESCE(<expression1>, ...n)
 ```
 
-```sql
-CASE
-```
+`CASE`
 
 ```sql
 COALESCE((subquery), 1)
 ```
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 READ COMMITTED
@@ -207,21 +183,13 @@ READ COMMITTED
 SNAPSHOT ISOLATION
 ```
 
-```sql
-COALESCE
-```
+`COALESCE`
 
-```sql
-ISNULL
-```
+`ISNULL`
 
-```sql
-ISNULL
-```
+`ISNULL`
 
-```sql
-COALESCE
-```
+`COALESCE`
 
 ```sql
 CASE
@@ -232,71 +200,46 @@ ELSE expressionN
 END
 SELECT
 CASE
-WHEN
-x
+WHEN x
 IS
 NOT
 NULL
-THEN
-x
+THEN x
 ELSE
 1
 END
-FROM
-(
-SELECT
-(
+FROM (
+SELECT (
 SELECT
 Nullable
 FROM
 Demo
 WHERE
 SomeCol = 1)
-AS
-x)
+AS x)
 AS
 T;
 ```
 
-```sql
-ISNULL
-```
+`ISNULL`
 
-```sql
-COALESCE
-```
+`COALESCE`
 
-```sql
-ISNULL
-```
+`ISNULL`
 
-```sql
-COALESCE
-```
+`COALESCE`
 
-```sql
-CASE
-```
+`CASE`
 
-```sql
-ISNULL
-```
+`ISNULL`
 
-```sql
-COALESCE
-```
+`COALESCE`
 
-```sql
-ISNULL
-```
+`ISNULL`
 
-```sql
-COALESCE
-```
+`COALESCE`
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 ISNULL(NULL, 1)
@@ -306,78 +249,57 @@ ISNULL(NULL, 1)
 COALESCE(NULL, 1)
 ```
 
-```sql
-ISNULL
-```
+`ISNULL`
+
+`COALESCE`
+
+`NULL`
+
+`ISNULL`
+
+`COALESCE`
+
+`ISNULL`
+
+`COALESCE`
 
 ```sql
-COALESCE
-```
-
-```sql
-NULL
-```
-
-```sql
-ISNULL
-```
-
-```sql
-COALESCE
-```
-
-```sql
-ISNULL
-```
-
-```sql
-COALESCE
-```
-
-```sql
-USE
-tempdb;
+USE tempdb;
 GO
 -- This statement fails because the PRIMARY KEY cannot accept NULL values
 -- and the nullability of the COALESCE expression for col2
 -- evaluates to NULL.
 CREATE
 TABLE
-#Demo
-(
+#Demo (
 col1
 INT
 NULL
 ,
 col2
 AS
-COALESCE
-(col1, 0) PRIMARY
+COALESCE (col1, 0) PRIMARY
 KEY
 ,
 col3
 AS
-ISNULL
-(col1, 0)
+ISNULL (col1, 0)
 );
 -- This statement succeeds because the nullability of the
 -- ISNULL function evaluates AS NOT NULL.
 CREATE
 TABLE
-#Demo
-(
+#Demo (
 col1
 INT
 NULL
 ,
 col2
 AS
-COALESCE
-(col1, 0),
+COALESCE (col1, 0),
 col3
 AS
-ISNULL
-(col1, 0) PRIMARY
+ISNULL (col1, 0) PRIMARY
 KEY
 );
 ```

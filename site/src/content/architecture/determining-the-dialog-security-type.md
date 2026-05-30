@@ -109,8 +109,7 @@ Expand table
 
 ```sql
 BEGIN
-DIALOG CONVERSATION
-sys.remote_service_bindings
+DIALOG CONVERSATION sys.remote_service_bindings
 BEGIN
 DIALOG CONVERSATION
 ANONYMOUS = ON

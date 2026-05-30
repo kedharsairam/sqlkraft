@@ -86,8 +86,7 @@ executed during deployment, without applying changes. The provided T-SQL script 
 
 
 ```cmd
-.dacpac
-dotnet build
+.dacpac dotnet build
 .dacpac
 .dacpac
 Script

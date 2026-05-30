@@ -111,18 +111,14 @@ N
 
 ### Example 1
 
-```sql
-NightlyBackups
-```
+`NightlyBackups`
 
 ### Example 2
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_update_job
+EXECUTE dbo.sp_update_job
 @job_name = N
 'NightlyBackups'
 ,

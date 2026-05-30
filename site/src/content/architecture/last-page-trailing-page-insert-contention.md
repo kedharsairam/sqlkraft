@@ -12,8 +12,6 @@ are rarely useful. The following command can
 
 be used to reset the wait statistics for this DMV:
 
-SQL
-
 The following scenarios have been observed to cause excessive latch contention.
 
 A common OLTP practice is to create a clustered index on an identity or date column. This
@@ -154,66 +152,36 @@ partitioning for any other purposes such as sliding window archiving.
 
 Expand table
 
-```sql
-max_wait_time_ms
-```
+`max_wait_time_ms`
 
-```sql
-PAGELATCH_EX
-```
+`PAGELATCH_EX`
 
-```sql
-wait_type
-```
+`wait_type`
 
-```sql
-sys.dm_os_waiting_tasks
-```
+`sys.dm_os_waiting_tasks`
 
 ```sql
 DBCC SQLPERF ('sys.dm_os_latch_stats', CLEAR);
 ```
 
-```sql
-PAGELATCH_EX
-```
+`PAGELATCH_EX`
 
-```sql
-PAGELATCH_SH
-```
+`PAGELATCH_SH`
 
-```sql
-EX
-```
+`EX`
 
-```sql
-PAGELATCH_EX
-```
+`PAGELATCH_EX`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-PAGELATCH_EX
-```
+`PAGELATCH_EX`
 
-```sql
-PAGELATCH_SH
-```
+`PAGELATCH_SH`
 
-```sql
-sys.dm_db_index_operational_stats
-```
+`sys.dm_db_index_operational_stats`
 
-```sql
-EX
-```
+`EX`
 
-```sql
-SH
-```
+`SH`
 
-```sql
-sys.dm_os_waiting_tasks
-```
+`sys.dm_os_waiting_tasks`

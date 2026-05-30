@@ -195,6 +195,4 @@ RangeI-N
 RangeI-U
 ```
 
-```sql
-Null
-```
+`Null`

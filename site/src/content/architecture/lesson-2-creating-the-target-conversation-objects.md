@@ -39,8 +39,6 @@ context to the
 
 database.
 
-SQL
-
 Copy and paste the following code into a Query Editor window, then run it to create the
 
 message types for the conversation. The message type names and properties that you
@@ -50,8 +48,6 @@ specify must be identical to the ones that you create in the
 in the next
 
 lesson.
-
-SQL
 
 ```sql
 TargetDB

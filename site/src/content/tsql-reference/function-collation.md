@@ -95,6 +95,4 @@ see
 
 Deterministic and nondeterministic functions
 
-```sql
-FORMAT
-```
+`FORMAT`

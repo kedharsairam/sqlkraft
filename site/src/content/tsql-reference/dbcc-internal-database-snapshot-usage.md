@@ -61,8 +61,6 @@ snapshot and brings it to a transactionally consistent state. The DBCC command t
 
 checks against this snapshot. After the DBCC command is completed, this snapshot is dropped.
 
-
-
 Expand table
 
 ```sql

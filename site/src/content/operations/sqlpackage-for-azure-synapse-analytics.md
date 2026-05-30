@@ -111,8 +111,6 @@ in the container.
 
 ```cmd
 .bacpac
-.dacpac
-servername/databasename/timestamp/
-databasename
-yourserver.sql.azuresynapse.net
+.dacpac servername/databasename/timestamp/
+databasename yourserver.sql.azuresynapse.net
 ```

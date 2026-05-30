@@ -80,7 +80,5 @@ aren't published in replication. You must recreate any logins and other user obj
 system databases.
 
 ```cmd
-master
-msdb
-model
+master msdb model
 ```

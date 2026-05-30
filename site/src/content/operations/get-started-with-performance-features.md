@@ -41,11 +41,7 @@ table by executing the following
 
 Transact-SQL commands:
 
-SQL
-
 2. Execute the following query that uses the columnstore index to scan the table:
-
-SQL
 
 ７
 
@@ -71,20 +67,16 @@ Sales.SalesOrderDetail(UnitPrice, OrderQty, ProductID);
 GO
 SELECT
 ProductID,
-SUM
-(UnitPrice)
+SUM (UnitPrice)
 AS
 SumUnitPrice,
-AVG
-(UnitPrice)
+AVG (UnitPrice)
 AS
 AvgUnitPrice,
-SUM
-(OrderQty)
+SUM (OrderQty)
 AS
 SumOrderQty,
-AVG
-(OrderQty)
+AVG (OrderQty)
 AS
 AvgOrderQty
 FROM

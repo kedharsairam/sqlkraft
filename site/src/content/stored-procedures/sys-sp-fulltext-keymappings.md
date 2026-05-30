@@ -22,8 +22,7 @@ Returns mappings between document identifiers (DocIds) and full-text key values.
 
 ```sql
 sp_fulltext_keymappings { table_id | table_id , doc
-I
-d | table_id ,
+I d | table_id ,
 NULL
 , key }
 [ ; ]

@@ -79,8 +79,7 @@ expand that instance.
 
 ```sql
 CREATE DATABASE
-CREATE DATABASE
-master
+CREATE DATABASE master
 CREATE ANY DATABASE
 ALTER ANY DATABASE
 ```

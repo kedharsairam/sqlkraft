@@ -88,6 +88,5 @@ doesn't contain the user databases in the availability group.
 ```cmd
 master
 CLUSTER_TYPE = EXTERNAL
-CLUSTER_TYPE = EXTERNAL
-master
+CLUSTER_TYPE = EXTERNAL master
 ```

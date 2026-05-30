@@ -101,11 +101,7 @@ can have one of the values
 
 shown in the following table. Style values not listed in the table will return an error.
 
-
-
 Expand table
-
-#### Value
 
 #### Output
 
@@ -114,10 +110,6 @@ Expand table
 #### 1
 
 #### 2
-
-### bigint
-
-### xml
 
 ```sql
 xml:space

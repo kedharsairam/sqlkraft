@@ -133,8 +133,6 @@ Cardinality estimation starts with the default set of
 
 model assumptions about the underlying data
 
-
-
 Expand table
 
 #### Compatibility level setting of 150 or lower
@@ -145,22 +143,12 @@ Expand table
 
 #### Compatibility level setting of 150
 
-```sql
-REGEXP_LIKE
-```
+`REGEXP_LIKE`
 
-```sql
-REGEXP_MATCHES
-```
+`REGEXP_MATCHES`
 
-```sql
-REGEXP_SPLIT_TO_TABLE
-```
+`REGEXP_SPLIT_TO_TABLE`
 
-```sql
-AI_GENERATE_CHUNKS
-```
+`AI_GENERATE_CHUNKS`
 
-```sql
-tempdb
-```
+`tempdb`

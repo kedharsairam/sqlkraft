@@ -95,8 +95,5 @@ trust_distributor_certificate=no
 ```sql
 Msg 30010, Level 16, State 2, Line 8
 An error has occurred during the full-text query. Common causes include: word-
-breaking errors or timeout, FDHOST permissions/ACL issues, service account missing
-privileges, malfunctioning IFilters, communication channel issues with FDHost and
-sqlservr.exe, etc. If recently performed in-place upgrade to SQL2025, For help
-please see https://aka.ms/sqlfulltext.
+breaking errors or timeout, FDHOST permissions/ACL issues, service account missing privileges, malfunctioning IFilters, communication channel issues with FDHost and sqlservr.exe, etc. If recently performed in-place upgrade to SQL2025, For help please see https://aka.ms/sqlfulltext.
 ```

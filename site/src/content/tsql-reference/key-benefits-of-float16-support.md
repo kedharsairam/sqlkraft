@@ -85,46 +85,28 @@ for general use and higher precision tasks
 
 ### half-precision
 
-```sql
-float32
-```
+`float32`
 
-```sql
-float16
-```
+`float16`
 
-```sql
-float16
-```
+`float16`
 
-```sql
-float16
-```
+`float16`
 
-```sql
-float32
-```
+`float32`
 
 ```sql
 1998 × 2
 ```
 
-```sql
-float16
-```
+`float16`
 
-```sql
-float32
-```
+`float32`
 
 ```sql
 text-embedding-large
 ```
 
-```sql
-float16
-```
+`float16`
 
-```sql
-float32
-```
+`float32`

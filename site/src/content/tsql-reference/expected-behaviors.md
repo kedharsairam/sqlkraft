@@ -11,8 +11,6 @@ The following sample demonstrates the INNER JOIN with filtering on multiple tabl
 
 embeddings are stored in a separate table from the main entity data.
 
-SQL
-
 : The alias
 
 from
@@ -57,10 +55,6 @@ function
 
 ## syntax instead
 
-SQL
-
-SQL
-
 The latest version introduces significant improvements over earlier vector index versions:
 
 Relational predicates were applied after
@@ -74,8 +68,6 @@ only)
 Relational predicates are applied during the
 
 vector search process (iterative filtering)
-
-
 
 Expand table
 
@@ -169,8 +161,6 @@ columns
 
 Descending order (DESC) is not supported.
 
-SQL
-
 ✓
 
 ### Invalid ORDER BY patterns:
@@ -178,8 +168,6 @@ SQL
 ## Behavior without a vector index
 
 ## Query behavior without TOP WITH APPROXIMATE
-
-SQL
 
 can execute queries even when no vector index exists on the target column.
 
@@ -223,10 +211,6 @@ that calculates and returns distances for all rows
 
 neighbors) search, which is an exact nearest neighbor search
 
-SQL
-
-SQL
-
 Using
 
 without a
@@ -247,10 +231,6 @@ function to be present.
 
 ## TRUNCATE TABLE restrictions
 
-SQL
-
-SQL
-
 Tables with vector indexes cannot be truncated using
 
 . To remove all data from
@@ -264,8 +244,6 @@ a vector-indexed table:
 3. Repopulate the table with at least 100 rows
 
 4. Recreate the vector index
-
-SQL
 
 ### Syntax:
 
@@ -285,13 +263,9 @@ neighbor (ANN) index, even when the optimizer might otherwise choose a different
 
 strategy.
 
-SQL
-
 The following example forces the use of the approximate nearest neighbor index for the vector
 
 search query:
-
-SQL
 
 ```sql
 e
@@ -301,68 +275,52 @@ e
 TABLE = wikipedia_articles_embeddings AS e
 ```
 
-```sql
-TOP_N
-```
+`TOP_N`
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
 ```sql
 -- Assuming a schema with separate tables for articles and embeddings
 DECLARE
 @qv VECTOR(1536) = AI_GENERATE_EMBEDDINGS(N
-'artificial intelligence and
-machine learning'
+'artificial intelligence and machine learning'
 USE
 MODEL
 Ada2Embeddings);
 SELECT
 TOP (10)
 WITH
-APPROXIMATE
-a.id,
+APPROXIMATE a.id,
 a.title,
 a.category,
 vs.distance
-FROM
-wikipedia_articles a
+FROM wikipedia_articles a
 INNER
 JOIN
 VECTOR_SEARCH(
 TABLE
 = wikipedia_articles_embeddings
-AS
-e,
+AS e,
 COLUMN
 = content_vector,
 SIMILAR_TO = @qv,
 METRIC =
 'cosine'
 )
-AS
-vs
-ON
-a.id = e.article_id
-WHERE
-e.approved = 1
--- Iterative filter on embedding
-table
-AND
-a.category
-IN
-(
+AS vs
+ON a.id = e.article_id
+WHERE e.approved = 1
+-- Iterative filter on embedding table
+AND a.category
+IN (
 'Technology'
 ,
 'Science'
 )
 -- Filter on main table
-AND
-a.views > 50000
+AND a.views > 50000
 ORDER
-BY
-vs.distance;
+BY vs.distance;
 ```
 
 ```sql
@@ -370,13 +328,9 @@ Msg 42274, Level 16, State 1
 Vector search with version 3 index does not support explicit TOP_N parameter.
 ```
 
-```sql
-TOP_N
-```
+`TOP_N`
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
 ```sql
 SELECT TOP (N) WITH APPROXIMATE
@@ -384,15 +338,13 @@ SELECT TOP (N) WITH APPROXIMATE
 
 ```sql
 SELECT
-TOP (10)
-t.id,
+TOP (10) t.id,
 r.distance
 FROM
 VECTOR_SEARCH(
 TABLE
 = dbo.wikipedia_articles
-AS
-t,
+AS t,
 COLUMN
 = title_vector,
 SIMILAR_TO = @qv,
@@ -402,21 +354,18 @@ METRIC =
 TOP_N = 10
 -- This parameter causes the error with latest version indexes
 )
-AS
-r;
+AS r;
 SELECT
 TOP (10)
 WITH
 APPROXIMATE
--- Specify TOP and WITH APPROXIMATE here
-t.id,
+-- Specify TOP and WITH APPROXIMATE here t.id,
 r.distance
 FROM
 VECTOR_SEARCH(
 TABLE
 = dbo.wikipedia_articles
-AS
-t,
+AS t,
 COLUMN
 = title_vector,
 SIMILAR_TO = @qv,
@@ -424,11 +373,9 @@ METRIC =
 'cosine'
 -- No TOP_N parameter
 )
-AS
-r
+AS r
 ORDER
-BY
-r.distance;
+BY r.distance;
 ```
 
 ```sql
@@ -439,8 +386,7 @@ SELECT TOP (N) WITH APPROXIMATE
 SELECT
 TOP (10)
 WITH
-APPROXIMATE
-t.id,
+APPROXIMATE t.id,
 t.title,
 r.distance
 FROM
@@ -453,34 +399,25 @@ SIMILAR_TO = @query_vector,
 METRIC =
 'cosine'
 )
-AS
-r
+AS r
 INNER
-JOIN
-products t
-ON
-t.id = r.id
+JOIN products t
+ON t.id = r.id
 ORDER
-BY
-r.distance;
+BY r.distance;
 --
 ```
 
-```sql
-Valid
-```
+`Valid`
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
 ```sql
 -- Missing ORDER BY
 SELECT
 TOP (10)
 WITH
-APPROXIMATE
-r.distance
+APPROXIMATE r.distance
 FROM
 VECTOR_SEARCH(
 TABLE
@@ -491,8 +428,7 @@ SIMILAR_TO = @query_vector,
 METRIC =
 'cosine'
 )
-AS
-r;
+AS r;
 --
 ```
 
@@ -502,8 +438,7 @@ Error Msg 42248: APPROXIMATE cannot be used in a query without ORDER BY
 SELECT
 TOP (10)
 WITH
-APPROXIMATE
-t.title,
+APPROXIMATE t.title,
 r.distance
 FROM
 VECTOR_SEARCH(
@@ -515,16 +450,12 @@ SIMILAR_TO = @query_vector,
 METRIC =
 'cosine'
 )
-AS
-r
+AS r
 INNER
-JOIN
-products t
-ON
-t.id = r.id
+JOIN products t
+ON t.id = r.id
 ORDER
-BY
-r.distance, t.title;
+BY r.distance, t.title;
 --
 ```
 
@@ -535,8 +466,7 @@ Error Msg 42271: TOP WITH APPROXIMATE and VECTOR_SEARCH requires ORDER BY
 SELECT
 TOP (10)
 WITH
-APPROXIMATE
-r.distance
+APPROXIMATE r.distance
 FROM
 VECTOR_SEARCH(
 TABLE
@@ -547,11 +477,9 @@ SIMILAR_TO = @query_vector,
 METRIC =
 'cosine'
 )
-AS
-r
+AS r
 ORDER
-BY
-r.distance
+BY r.distance
 DESC
 ;
 --
@@ -562,17 +490,13 @@ Error Msg 42271: TOP WITH APPROXIMATE and VECTOR_SEARCH requires ORDER BY
 -- on distance column ascending, and no other columns
 ```
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
 ```sql
 SELECT TOP (N) WITH APPROXIMATE
 ```
 
-```sql
-TOP
-```
+`TOP`
 
 ```sql
 ORDER BY
@@ -582,65 +506,53 @@ ORDER BY
 SELECT TOP (N) WITH APPROXIMATE
 ```
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
 ```sql
 WITH APPROXIMATE
 ```
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
 ```sql
 -- Returns all rows with calculated distances
-SELECT
-t.id,
+SELECT t.id,
 t.title,
 r.distance
 FROM
 VECTOR_SEARCH(
 TABLE
 = dbo.wikipedia_articles
-AS
-t,
+AS t,
 COLUMN
 = title_vector,
 SIMILAR_TO = @qv,
 METRIC =
 'cosine'
 )
-AS
-r
+AS r
 ORDER
-BY
-t.id;
+BY t.id;
 -- Not ordering by distance
 -- Returns exact top 10 nearest neighbors using kNN
 SELECT
-TOP (10)
-t.id,
+TOP (10) t.id,
 t.title,
 r.distance
 FROM
 VECTOR_SEARCH(
 TABLE
 = dbo.wikipedia_articles
-AS
-t,
+AS t,
 COLUMN
 = title_vector,
 SIMILAR_TO = @qv,
 METRIC =
 'cosine'
 )
-AS
-r
+AS r
 ORDER
-BY
-r.distance;
+BY r.distance;
 -- No WITH APPROXIMATE = exact kNN
 ```
 
@@ -653,19 +565,15 @@ TRUNCATE TABLE
 SELECT
 TOP (10)
 WITH
-APPROXIMATE
-id
+APPROXIMATE id
 ,
 title,
 VECTOR_DISTANCE(
 'cosine'
 , title_vector, @qv)
-AS
-distance
-FROM
-dbo.wikipedia_articles
-WHERE
-title_vector
+AS distance
+FROM dbo.wikipedia_articles
+WHERE title_vector
 IS
 NOT
 NULL
@@ -678,62 +586,48 @@ VECTOR_DISTANCE(
 SELECT
 TOP (10)
 WITH
-APPROXIMATE
-t.id,
+APPROXIMATE t.id,
 t.title,
 r.distance
 FROM
 VECTOR_SEARCH(
 TABLE
 = dbo.wikipedia_articles
-AS
-t,
+AS t,
 COLUMN
 = title_vector,
 SIMILAR_TO = @qv,
 METRIC =
 'cosine'
 )
-AS
-r
+AS r
 ORDER
-BY
-r.distance;
+BY r.distance;
 ```
 
 ```sql
 -- Step 1: Drop the vector index
 DROP
-INDEX
-idx_vector
-ON
-wikipedia_articles;
+INDEX idx_vector
+ON wikipedia_articles;
 -- Step 2: Truncate the table
 ```
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
-```sql
-FORCE_ANN_ONLY
-```
+`FORCE_ANN_ONLY`
 
 ```sql
 TRUNCATE
-TABLE
-wikipedia_articles;
+TABLE wikipedia_articles;
 -- Step 3: Repopulate with data (at least 100 rows)
 -- ... insert operations ...
 -- Step 4: Recreate the vector index
 CREATE
 VECTOR
-INDEX
-idx_vector
-ON
-wikipedia_articles(title_vector)
-WITH
-(METRIC =
+INDEX idx_vector
+ON wikipedia_articles(title_vector)
+WITH (METRIC =
 'cosine'
 );
 ```
@@ -745,28 +639,24 @@ COLUMN     = column_name,
 SIMILAR_TO = vector_value,
 METRIC     = 'metric_name'
 ) AS alias
-WITH
-(FORCE_ANN_ONLY)
+WITH (FORCE_ANN_ONLY)
 DECLARE
 @qembedding VECTOR(1536) = AI_GENERATE_EMBEDDINGS(N
-'artificial
-intelligence'
+'artificial intelligence'
 USE
 MODEL
 Ada2Embeddings);
 SELECT
 TOP 50
 WITH
-APPROXIMATE
-t.id,
+APPROXIMATE t.id,
 t.title,
 r.distance
 FROM
 VECTOR_SEARCH(
 TABLE
 = dbo.wikipedia_articles
-AS
-t,
+AS t,
 COLUMN
 = title_vector,
 SIMILAR_TO = @qembedding,

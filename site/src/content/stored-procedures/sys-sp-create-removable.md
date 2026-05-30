@@ -107,15 +107,12 @@ N
 
 ### Example 1
 
-```sql
-inventory
-```
+`inventory`
 
 ### Example 2
 
 ```sql
-EXECUTE
-sp_create_removable
+EXECUTE sp_create_removable
 'inventory'
 ,
 'invsys'

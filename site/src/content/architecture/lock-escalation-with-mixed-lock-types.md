@@ -88,53 +88,29 @@ Exclusive (
 
 ) locks on the updated data rows.
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-TableC
-```
+`TableC`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableC
-```
+`TableC`
 
-```sql
-locks
-```
+`locks`
 
-```sql
-locks
-```
+`locks`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 X

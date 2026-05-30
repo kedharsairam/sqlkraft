@@ -49,10 +49,6 @@ Last updated on 05/08/2026
 
 Related content
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-NULL
-```
+`NULL`

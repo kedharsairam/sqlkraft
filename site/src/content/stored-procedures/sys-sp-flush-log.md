@@ -17,6 +17,5 @@ SQL Server 2016 (13.x) and later versions Flushes to disk the transaction log of
 ## Syntax
 
 ```sql
-EXECUTE
-sys.sp_flush_log;
+EXECUTE sys.sp_flush_log;
 ```

@@ -104,8 +104,7 @@ FROM	 [msdb].[dbo].[sysjobs] AS [jobs] WITh(NOLOCK)
 				 ON [jobschedule].[schedule_id] = [schedule].[schedule_id]
 		 INNER JOIN [msdb].[dbo].[syscategories] [categories] WITh(NOLOCK)
 				 ON [jobs].[category_id] = [categories].[category_id]
-		 LEFT OUTER JOIN
-					(	SELECT	 [job_id], [AvgDuration] = (SUM((([run_duration] / 10000 * 3600) +
+		 LEFT OUTER JOIN (	SELECT	 [job_id], [AvgDuration] = (SUM((([run_duration] / 10000 * 3600) +
 																(([run_duration] % 10000) / 100 * 60) +
 																 ([run_duration] % 10000) % 100)) * 1.0) / COUNT([job_id])
 						FROM	 [msdb].[dbo].[sysjobhistory] WITh(NOLOCK)

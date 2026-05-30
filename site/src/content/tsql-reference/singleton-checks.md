@@ -45,8 +45,6 @@ and, being an
 
 attribute, is a singleton.
 
-SQL
-
 ７
 
 Note
@@ -103,19 +101,13 @@ determine whether only one
 
 node will occur at run time:
 
-SQL
-
 Following is a solution that you could consider:
-
-SQL
 
 However, this solution doesn't solve the error, because multiple
 
 nodes might occur in
 
 each XML instance. The following rewrite works:
-
-SQL
 
 This query returns the value of the first
 
@@ -145,8 +137,7 @@ XQuery [xmldb_test.xmlcol.query()]: Attribute may not appear outside of an eleme
 ```
 
 ```sql
-SELECT
-nref.value(
+SELECT nref.value(
 '@genre'
 ,
 'VARCHAR(max)'
@@ -154,8 +145,7 @@ nref.value(
 FROM
 T
 CROSS
-APPLY
-xCol.nodes(
+APPLY xCol.nodes(
 '//book'
 )
 AS
@@ -208,24 +198,21 @@ R(nref)
 ```
 
 ```sql
-SELECT
-xCol.value(
+SELECT xCol.value(
 '//author/last-name'
 ,
 'NVARCHAR(50)'
 ) LastName
 FROM
 T
-SELECT
-xCol.value(
+SELECT xCol.value(
 '//author/last-name[1]'
 ,
 'NVARCHAR(50)'
 ) LastName
 FROM
 T
-SELECT
-xCol.value(
+SELECT xCol.value(
 '(//author/last-name/text())[1]'
 ,
 'NVARCHAR(50)'

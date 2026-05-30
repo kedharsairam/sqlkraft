@@ -78,14 +78,8 @@ columns defined in the index and that require only rows with a non-NULL value fo
 
 .
 
-```sql
-Production.BillOfMaterials
-```
+`Production.BillOfMaterials`
 
-```sql
-EndDate
-```
+`EndDate`
 
-```sql
-EndDate
-```
+`EndDate`

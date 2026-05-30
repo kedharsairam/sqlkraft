@@ -31,8 +31,6 @@ Azure SQL Database
 
 Azure SQL Managed Instance
 
-SQL
-
 database in Microsoft Fabric
 
 SQL projects contain declarative (

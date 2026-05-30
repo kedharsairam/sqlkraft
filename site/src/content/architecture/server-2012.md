@@ -98,14 +98,8 @@ Expand table
 
 ### Server memory configuration options
 
-```sql
-memory_to_reserve
-```
+`memory_to_reserve`
 
-```sql
-memory_to_reserve
-```
+`memory_to_reserve`
 
-```sql
-memory_to_reserve
-```
+`memory_to_reserve`

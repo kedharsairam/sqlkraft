@@ -57,8 +57,6 @@ statement to report application errors that
 
 are severe enough to require ending the conversation. For example:
 
-SQL
-
 The
 
 statement:
@@ -80,15 +78,13 @@ and end its side of the conversation.
 ```sql
 WITH ERROR
 END CONVERSATION
-END CONVERSATION WITH ERROR
-https://schemas.microsoft.com/SQL/ServiceBroker/Error
+END CONVERSATION WITH ERROR https://schemas.microsoft.com/SQL/ServiceBroker/Error
 Error
 END
 CONVERSATION @ConversationHandle
 WITH
 ERROR
 = 1234 DESCRIPTION =
-'The account specified in the invoice does not
-exist, verify the account number.'
+'The account specified in the invoice does not exist, verify the account number.'
 ;
 ```

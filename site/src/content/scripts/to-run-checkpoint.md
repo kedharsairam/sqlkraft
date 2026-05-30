@@ -9,8 +9,7 @@ pubDate: 2025-03-15
 
 ```sql
 checkpoint
---or
-checkpoint durationinseconds
+--or checkpoint durationinseconds
 --this means how long we want to run it.
 
 --Checkpoint types: automatic, manual, internal, indirect

@@ -14,6 +14,4 @@ Returns a row for each Service Broker message that an instance of SQL Server is 
 
 ## Syntax
 
-```sql
-adjacent_broker_address
-```
+`adjacent_broker_address`

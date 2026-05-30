@@ -47,11 +47,7 @@ service is ready to receive messages, the administrator makes the queue availabl
 
 following statement:
 
-SQL
-
 The following statement makes the queue unavailable for receive:
-
-SQL
 
 When a queue is unavailable for receive, an application can't process the messages in the
 

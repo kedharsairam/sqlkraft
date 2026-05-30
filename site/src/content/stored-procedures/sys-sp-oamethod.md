@@ -26,8 +26,7 @@ Calls a method of an OLE object. Transact-SQL syntax conventions The object toke
 
 ```sql
 sp_
-OAM
-ethod objecttoken , methodname
+OAM ethod objecttoken , methodname
 [ , returnvalue
 OUTPUT
 ]

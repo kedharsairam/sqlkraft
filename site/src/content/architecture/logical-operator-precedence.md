@@ -72,8 +72,6 @@ has precedence over
 
 .
 
-SQL
-
 ７
 
 Note
@@ -84,29 +82,17 @@ of data are read and aggregated.
 
 SQL statement processing
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-NOT
-```
+`NOT`
 
-```sql
-AND
-```
+`AND`
 
-```sql
-OR
-```
+`OR`
 
-```sql
-AND
-```
+`AND`
 
-```sql
-OR
-```
+`OR`
 
 ```sql
 SELECT

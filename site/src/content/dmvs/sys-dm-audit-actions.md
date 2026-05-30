@@ -14,6 +14,4 @@ Returns a row for every audit action that can be reported in the audit log and e
 
 ## Syntax
 
-```sql
-covering_parent_action_name
-```
+`covering_parent_action_name`

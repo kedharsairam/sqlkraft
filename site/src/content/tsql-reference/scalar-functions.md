@@ -73,12 +73,6 @@ JSON Functions
 
 Validate, query, or change JSON data.
 
-
-
 Expand table
 
 #### Function category
-
-#### char
-
-#### varchar

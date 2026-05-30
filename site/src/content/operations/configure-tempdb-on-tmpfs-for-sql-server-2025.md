@@ -120,9 +120,5 @@ user and group to allow SQL Server access:
 Expand table
 
 ```cmd
-tempdb
-tempdb
-tempdb
-tempdb
-tempdb
+tempdb tempdb tempdb tempdb tempdb
 ```

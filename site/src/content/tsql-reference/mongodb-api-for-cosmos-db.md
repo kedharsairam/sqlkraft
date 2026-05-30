@@ -127,30 +127,16 @@ generate a temporary schema definition. When this option is set to 0,
 
 the driver samples every document in the database.
 
-
-
 Expand table
 
-```sql
-DefaultStringColumnLength
-```
+`DefaultStringColumnLength`
 
-```sql
-STRING
-```
+`STRING`
 
-```sql
-noCursorTimeout
-```
+`noCursorTimeout`
 
-```sql
-FALSE
-```
+`FALSE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-SamplingLimit
-```
+`SamplingLimit`

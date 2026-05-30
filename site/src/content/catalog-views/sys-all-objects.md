@@ -14,9 +14,7 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Shows the UNION
 
 ## Syntax
 
-```sql
-sys.extended_procedures
-```
+`sys.extended_procedures`
 
 ## Permissions
 

@@ -94,8 +94,6 @@ the same conversation group aren't guaranteed to route to the same database. If 
 application requires that messages on related conversations route to the same database, the
 
 ```sql
-BEGIN DIALOG
-service_broker_guid
-sys.databases
+BEGIN DIALOG service_broker_guid sys.databases
 BEGIN DIALOG CONVERSATION
 ```

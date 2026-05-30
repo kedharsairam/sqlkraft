@@ -95,21 +95,13 @@ definitions form the base result set of the CTE structure, they're referred to a
 
 members.
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 CREATE VIEW
@@ -119,14 +111,8 @@ CREATE VIEW
 UNION ALL
 ```
 
-```sql
-UNION
-```
+`UNION`
 
-```sql
-EXCEPT
-```
+`EXCEPT`
 
-```sql
-INTERSECT
-```
+`INTERSECT`

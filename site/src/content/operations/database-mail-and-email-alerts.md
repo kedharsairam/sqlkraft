@@ -39,21 +39,15 @@ This article shows how to set up Database Mail and use it with SQL Server Agent 
 
 ) on Linux.
 
-SQL
-
-SQL
-
 Ｕ
 
 Caution
 
 ```cmd
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_configure
+EXECUTE sp_configure
 'show advanced options'
 , 1;
 GO
@@ -61,15 +55,13 @@ RECONFIGURE
 WITH
 OVERRIDE;
 GO
-EXECUTE
-sp_configure
+EXECUTE sp_configure
 'Database Mail XPs'
 , 1;
 GO
 RECONFIGURE;
 GO
-EXECUTE
-msdb.dbo.sysmail_add_account_sp
+EXECUTE msdb.dbo.sysmail_add_account_sp
 @account_name =
 'SQLAlerts'
 ,

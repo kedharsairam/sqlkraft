@@ -19,8 +19,6 @@ can use multiple
 
 calls.
 
-SQL
-
 Here's the result set.
 
 JSON
@@ -36,8 +34,6 @@ function. First you can take the value of an existing property and insert it as 
 pair. Then you can delete the old key by setting the value of the old property to
 
 .
-
-SQL
 
 Here's the result set.
 
@@ -59,8 +55,6 @@ new key:value pair. Then you can delete the old key by setting the value of the 
 
 ## E. Modify a JSON object
 
-SQL
-
 Here's the result set.
 
 JSON
@@ -74,8 +68,6 @@ argument as plain text even if it contains properly formatted
 JSON text. As a result, the JSON output of the function is surrounded with double quotes and
 
 all special characters are escaped, as shown in the following example.
-
-SQL
 
 Here's the result set.
 
@@ -97,15 +89,11 @@ is properly formatted JSON, so it doesn't escape
 
 the value.
 
-SQL
-
 Here's the result set.
 
 JSON
 
 The following example updates the value of a property in a table column that contains JSON.
-
-SQL
 
 JSON Path Expressions
 
@@ -115,13 +103,9 @@ Last updated on 11/18/2025
 
 Related content
 
-```sql
-JSON_MODIFY
-```
+`JSON_MODIFY`
 
-```sql
-JSON_MODIFY
-```
+`JSON_MODIFY`
 
 ```sql
 -- Delete name
@@ -204,8 +188,7 @@ PRINT @info;
 ```sql
 DECLARE
 @info
-NVARCHAR
-(100) =
+NVARCHAR (100) =
 '{"name":"John","skills":["C#","SQL"]}'
 ;
 PRINT @info;
@@ -227,25 +210,15 @@ SET
 PRINT @info;
 ```
 
-```sql
-JSON_MODIFY
-```
+`JSON_MODIFY`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-JSON_MODIFY
-```
+`JSON_MODIFY`
 
-```sql
-JSON_MODIFY
-```
+`JSON_MODIFY`
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 {
@@ -281,8 +254,7 @@ NULL
 ```sql
 DECLARE
 @product
-NVARCHAR
-(100) =
+NVARCHAR (100) =
 '{"price":49.99}'
 ;
 PRINT @product;
@@ -291,13 +263,11 @@ SET
 @product = JSON_MODIFY(JSON_MODIFY(@product,
 '$.Price'
 ,
-CAST
-(JSON_VALUE(@product,
+CAST (JSON_VALUE(@product,
 '$.price'
 )
 AS
-NUMERIC
-(4, 2))),
+NUMERIC (4, 2))),
 '$.price'
 ,
 NULL
@@ -312,15 +282,12 @@ PRINT @product;
 }
 ```
 
-```sql
-JSON_MODIFY
-```
+`JSON_MODIFY`
 
 ```sql
 DECLARE
 @stats
-NVARCHAR
-(100) =
+NVARCHAR (100) =
 '{"click_count": 173}'
 ;
 PRINT @stats;
@@ -329,8 +296,7 @@ SET
 @stats = JSON_MODIFY(@stats,
 '$.click_count'
 ,
-CAST
-(JSON_VALUE(@stats,
+CAST (JSON_VALUE(@stats,
 '$.click_count'
 )
 AS
@@ -349,8 +315,7 @@ PRINT @stats;
 ```sql
 DECLARE
 @info
-NVARCHAR
-(100) =
+NVARCHAR (100) =
 '{"name":"John","skills":["C#","SQL"]}'
 ;
 PRINT @info;
@@ -384,23 +349,16 @@ PRINT @info;
 }
 ```
 
-```sql
-JSON_QUERY
-```
+`JSON_QUERY`
 
-```sql
-JSON_MODIFY
-```
+`JSON_MODIFY`
 
-```sql
-JSON_QUERY
-```
+`JSON_QUERY`
 
 ```sql
 DECLARE
 @info
-NVARCHAR
-(100) =
+NVARCHAR (100) =
 '{"name":"John","skills":["C#","SQL"]}'
 ;
 PRINT @info;
@@ -442,8 +400,7 @@ PRINT @info;
 ```sql
 UPDATE
 Employee
-SET
-jsonCol = JSON_MODIFY(jsonCol,
+SET jsonCol = JSON_MODIFY(jsonCol,
 '$.info.address.town'
 ,
 'London'

@@ -92,20 +92,15 @@ method of the
 
 data type.
 
-SQL
-
 In the following example, the query is specified against the Instructions column of
 
 type in
 
 ProductModel table in the AdventureWorks database.
 
-SQL
-
 ```sql
 DECLARE
-@x
-xml
+@x xml
 SET
 @x =
 '<ROOT><a>111</a></ROOT>'

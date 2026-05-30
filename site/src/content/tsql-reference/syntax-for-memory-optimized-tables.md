@@ -19,8 +19,6 @@ ALTER TABLE index_option (Transact-SQL)
 
 ALTER TABLE table_constraint (Transact-SQL)
 
-### timestamp
-
 ```sql
 |
 ONLINE
@@ -41,8 +39,7 @@ AT
 _
 LOW
 _
-PRIORITY
-(
+PRIORITY (
 MAX
 _
 DURATION
@@ -73,8 +70,7 @@ TABLE
 table_name }
 {
 ALTER
-COLUMN
-column_name
+COLUMN column_name
 {
 [ type_schema_name. ] type_name
 [ (
@@ -83,8 +79,7 @@ precision [ , scale ]
 }
 ) ]
 [
-COLLATE
-collation_name ]
+COLLATE collation_name ]
 [
 NULL
 |
@@ -94,16 +89,14 @@ NULL
 }
 |
 ALTER
-INDEX
-index_name
+INDEX index_name
 {
 [ type_schema_name. ] type_name
 REBUILD
 [ [
 NONCLUSTERED
 ]
-WITH
-(
+WITH (
 BUCKET
 _
 COUNT
@@ -191,14 +184,11 @@ SWITCH
 [ [
 PARTITION
 ] source_partition_number_expression ]
-TO
-target_table
+TO target_table
 [
-PARTITION
-target_partition_number_expression ]
+PARTITION target_partition_number_expression ]
 [
-WITH
-(
+WITH (
 <low_priority_lock_wait>
 ) ]
 }
@@ -207,8 +197,7 @@ WITH
 < table_constraint >
 ::=
 [
-CONSTRAINT
-constraint_name ]
+CONSTRAINT constraint_name ]
 {
 {
 PRIMARY
@@ -217,18 +206,15 @@ KEY
 UNIQUE
 }
 {
-NONCLUSTERED
-(column [
+NONCLUSTERED (column [
 ASC
 |
 DESC
 ] [ ,... n ])
 |
 NONCLUSTERED
-HASH
-(column [ ,... n ] )
-WITH
-(
+HASH (column [ ,... n ] )
+WITH (
 BUCKET
 _
 COUNT
@@ -236,32 +222,26 @@ COUNT
 }
 |
 FOREIGN
-KEY
-( column [ ,...n ] )
-REFERENCES
-referenced_table_name [ ( ref_column [ ,...n ] ) ]
+KEY ( column [ ,...n ] )
+REFERENCES referenced_table_name [ ( ref_column [ ,...n ] ) ]
 |
-CHECK
-( logical_expression )
+CHECK ( logical_expression )
 }
 <column_index>
 ::=
-INDEX
-index_name
+INDEX index_name
 { [
 NONCLUSTERED
 ] | [
 NONCLUSTERED
 ]
 HASH
-WITH
-(
+WITH (
 BUCKET
 _
 COUNT
 = bucket_count) }
 <table_index>
 ::=
-INDEX
-index_name
+INDEX index_name
 ```

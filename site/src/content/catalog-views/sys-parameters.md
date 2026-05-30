@@ -52,40 +52,31 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row 
 ## Syntax
 
 ```sql
-SELECT
-name
+SELECT name
 ,
 TYPE_NAME(user_type_id)
-FROM
-sys.parameters
-WHERE
-object_id = OBJECT_ID(
+FROM sys.parameters
+WHERE object_id = OBJECT_ID(
 'dbo.to_upper'
 );
 GO
-SELECT
-dbo.to_upper(
+SELECT dbo.to_upper(
 'abcdefgh'
 );
 -- Fails because of truncation
 GO
-EXECUTE
-sys.sp_refreshsqlmodule
+EXECUTE sys.sp_refreshsqlmodule
 'dbo.to_upper'
 ;
-SELECT
-name
+SELECT name
 ,
 TYPE_NAME(user_type_id)
-FROM
-sys.parameters
-WHERE
-object_id = OBJECT_ID(
+FROM sys.parameters
+WHERE object_id = OBJECT_ID(
 'dbo.to_upper'
 );
 GO
-SELECT
-dbo.to_upper(
+SELECT dbo.to_upper(
 'abcdefgh'
 );
 GO

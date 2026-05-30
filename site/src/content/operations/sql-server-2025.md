@@ -84,6 +84,5 @@ Quickstart: Install SQL Server and create a database on Ubuntu
 ```cmd
 ADMINISTER BULK OPERATIONS
 BULK INSERT
-OPENROWSET(BULK...)
-mssql-conf
+OPENROWSET(BULK...) mssql-conf
 ```

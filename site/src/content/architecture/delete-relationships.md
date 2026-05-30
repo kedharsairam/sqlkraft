@@ -77,13 +77,10 @@ dialog box, select
 
 .
 
-SQL
-
 ```sql
 USE
 AdventureWorks2022;
 GO
 ALTER
-TABLE
-dbo.DocExe
+TABLE dbo.DocExe
 ```

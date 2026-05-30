@@ -6,8 +6,6 @@ tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 In this case, SQL Server doesn't use the value 100 to optimize the query. It uses a general
 
 estimate.

@@ -91,8 +91,6 @@ clause in
 
 the expression.
 
-
-
 Expand table
 
 #### Collation
@@ -101,9 +99,7 @@ Expand table
 
 #### Types of objects
 
-```sql
-LIKE
-```
+`LIKE`
 
 ```sql
 Coercible-
@@ -114,9 +110,7 @@ default
 Implicit X
 ```
 
-```sql
-COLLATE
-```
+`COLLATE`
 
 ```sql
 CREATE TABLE
@@ -130,6 +124,4 @@ CREATE VIEW
 Explicit X
 ```
 
-```sql
-COLLATE
-```
+`COLLATE`

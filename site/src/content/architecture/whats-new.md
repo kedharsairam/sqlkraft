@@ -57,16 +57,6 @@ update policy
 
 to the column for the corresponding version of SQL Server.
 
-SQL
-
-SQL
-
-SQL
-
-SQL
-
-SQL
-
 Batch mode
 
 execution for

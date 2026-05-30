@@ -150,26 +150,14 @@ uncommon operations
 
 Related content
 
-```sql
-sample_ms
-```
+`sample_ms`
 
-```sql
-sys.dm_io_virtual_file_stats
-```
+`sys.dm_io_virtual_file_stats`
 
-```sql
-timestamp
-```
+`timestamp`
 
-```sql
-sys.fn_virtualfilestats
-```
+`sys.fn_virtualfilestats`
 
-```sql
-DATEDIFF
-```
+`DATEDIFF`
 
-```sql
-ROUND
-```
+`ROUND`

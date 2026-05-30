@@ -60,7 +60,6 @@ Expand table
 ### Example 1
 
 ```sql
-EXECUTE
-sp_validatelogins;
+EXECUTE sp_validatelogins;
 GO
 ```

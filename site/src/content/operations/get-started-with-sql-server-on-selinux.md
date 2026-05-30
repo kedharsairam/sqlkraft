@@ -85,8 +85,5 @@ SQL Server and SELinux
 
 ```cmd
 mssql-server-
-selinux
-enforcing
-sestatus
-sestatus
+selinux enforcing sestatus sestatus
 ```

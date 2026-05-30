@@ -112,78 +112,40 @@ and
 
 operations are minimally logged if the database recovery model isn't set to FULL.
 
-```sql
-total_inrow_version_payload_size_in_bytes
-```
+`total_inrow_version_payload_size_in_bytes`
 
-```sql
-persistent_version_store_size_kb
-```
+`persistent_version_store_size_kb`
 
-```sql
-nvarchar(max)
-```
+`nvarchar(max)`
 
-```sql
-varchar(max)
-```
+`varchar(max)`
 
-```sql
-varbinary(max)
-```
+`varbinary(max)`
 
-```sql
-ntext
-```
+`ntext`
 
-```sql
-text
-```
+`text`
 
-```sql
-image
-```
+`image`
 
-```sql
-ntext
-```
+`ntext`
 
-```sql
-text
-```
+`text`
 
-```sql
-image
-```
+`image`
 
-```sql
-ntext
-```
+`ntext`
 
-```sql
-text
-```
+`text`
 
-```sql
-image
-```
+`image`
 
-```sql
-ntext
-```
+`ntext`
 
-```sql
-text
-```
+`text`
 
-```sql
-image
-```
+`image`
 
-```sql
-WRITETEXT
-```
+`WRITETEXT`
 
-```sql
-UPDATETEXT
-```
+`UPDATETEXT`

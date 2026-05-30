@@ -77,41 +77,23 @@ version vector indexes. For latest version indexes, use
 
 ### Post-filtering only
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
-```sql
-TABLE
-```
+`TABLE`
 
-```sql
-distance
-```
+`distance`
 
-```sql
-COLUMN
-```
+`COLUMN`
 
-```sql
-SIMILAR_TO
-```
+`SIMILAR_TO`
 
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
-```sql
-TABLE
-```
+`TABLE`
 
-```sql
-TABLE
-```
+`TABLE`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 SELECT TOP (N) WITH APPROXIMATE

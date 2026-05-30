@@ -14,9 +14,7 @@ Changes the article column data type mapping for an Oracle publication. This sto
 
 ## Syntax
 
-```sql
-sp_changearticlecolumndatatype
-```
+`sp_changearticlecolumndatatype`
 
 ## Permissions
 

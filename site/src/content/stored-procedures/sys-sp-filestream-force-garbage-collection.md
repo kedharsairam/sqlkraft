@@ -14,6 +14,4 @@ Forces the FILESTREAM garbage collector (GC) to run, deleting any unneeded FILES
 
 ## Syntax
 
-```sql
-sp_filestream_force_garbage_collection
-```
+`sp_filestream_force_garbage_collection`

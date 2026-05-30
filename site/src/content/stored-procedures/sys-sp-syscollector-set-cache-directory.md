@@ -14,9 +14,7 @@ Specifies the directory where collected data is stored before it's uploaded to t
 
 ## Syntax
 
-```sql
-sp_syscollector_set_cache_directory
-```
+`sp_syscollector_set_cache_directory`
 
 ## Permissions
 
@@ -33,18 +31,14 @@ D:\tempdata
 ### Example 2
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_syscollector_disable_collector;
+EXECUTE dbo.sp_syscollector_disable_collector;
 GO
-EXECUTE
-dbo.sp_syscollector_set_cache_directory @cache_directory = N
+EXECUTE dbo.sp_syscollector_set_cache_directory @cache_directory = N
 'D:\tempdata'
 ;
 GO
-EXECUTE
-dbo.sp_syscollector_enable_collector;
+EXECUTE dbo.sp_syscollector_enable_collector;
 GO
 ```

@@ -14,9 +14,7 @@ Lists databases that either reside in an instance of the SQL Server or are acces
 
 ## Syntax
 
-```sql
-sys.dm_database_copies
-```
+`sys.dm_database_copies`
 
 ## Arguments
 
@@ -421,8 +419,7 @@ Out
 AS
 INT
 ;
-EXECUTE
-sp_prepexec
+EXECUTE sp_prepexec
 @
 Out
 OUTPUT
@@ -440,8 +437,7 @@ WHERE name=@P1 AND state_desc = @P2'
 @P2 =
 'ONLINE'
 ;
-EXECUTE
-sp_unprepare @
+EXECUTE sp_unprepare @
 Out
 ;
 ```

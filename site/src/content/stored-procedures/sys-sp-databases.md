@@ -21,12 +21,10 @@ Lists databases that either reside in an instance of the SQL Server or are acces
 ## Syntax
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_databases;
+EXECUTE sp_databases;
 ```
 
 ## Remarks
@@ -65,9 +63,7 @@ Expand table
 
 ### Example 1
 
-```sql
-sp_databases
-```
+`sp_databases`
 
 ### Example 2
 
@@ -95,17 +91,13 @@ VIEW ANY DEFINITION
 
 ### Example 6
 
-```sql
-sp_databases
-```
+`sp_databases`
 
 ### Example 7
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_databases;
+EXECUTE sp_databases;
 ```

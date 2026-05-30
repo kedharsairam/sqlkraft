@@ -132,9 +132,7 @@ Expand table
 
 Expand table
 
-```sql
-sys.index_columns
-```
+`sys.index_columns`
 
 ```sql
 CREATE ENDPOINT
@@ -148,22 +146,15 @@ ALTER ENDPOINT
 FOR SOAP
 ```
 
-```sql
-sys.soap_endpoints
-```
+`sys.soap_endpoints`
+
+`CREATE`
 
 ```sql
-CREATE
+ALTER ENDPOINT sys.endpoint_webmethods
 ```
 
-```sql
-ALTER ENDPOINT
-sys.endpoint_webmethods
-```
-
-```sql
-sys.soap_endpoints
-```
+`sys.soap_endpoints`
 
 ```sql
 ALTER LOGIN WITH SET

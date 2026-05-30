@@ -14,9 +14,7 @@ Invalidates the specified in-row text pointer, or all in-row text pointers, in t
 
 ## Syntax
 
-```sql
-sp_invalidate_textptr
-```
+`sp_invalidate_textptr`
 
 ## Remarks
 

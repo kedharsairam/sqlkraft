@@ -73,112 +73,69 @@ Use another algorithm such as AES.
 algorithm
 
 ```sql
-sp_addapprole
-sp_dropapprole
+sp_addapprole sp_dropapprole
 CREATE APPLICATION ROLE
-DROP APPLICATION ROLE
-sp_addapprole
+DROP APPLICATION ROLE sp_addapprole
 ```
 
 ```sql
-sp_addlogin
-sp_droplogin
+sp_addlogin sp_droplogin
 CREATE LOGIN
-DROP LOGIN
-sp_addlogin
+DROP LOGIN sp_addlogin
 ```
 
 ```sql
-sp_adduser
-sp_dropuser
+sp_adduser sp_dropuser
 CREATE USER
-DROP USER
-sp_adduser
-sp_dropuser
-sp_grantdbaccess
-sp_revokedbaccess
+DROP USER sp_adduser sp_dropuser sp_grantdbaccess sp_revokedbaccess
 CREATE USER
-DROP USER
-sp_grantdbaccess
-sp_revokedbaccess
-sp_addrole
-sp_droprole
+DROP USER sp_grantdbaccess sp_revokedbaccess sp_addrole sp_droprole
 CREATE ROLE
-DROP ROLE
-sp_addrole
+DROP ROLE sp_addrole
 ```
 
 ```sql
-sp_approlepassword
-sp_password
+sp_approlepassword sp_password
 ALTER APPLICATION ROLE
-ALTER LOGIN
-sp_approlepassword
-sp_password
-sp_changedbowner
-ALTER AUTHORIZATION
-sp_changedbowner
-sp_changeobjectowner
+ALTER LOGIN sp_approlepassword sp_password sp_changedbowner
+ALTER AUTHORIZATION sp_changedbowner sp_changeobjectowner
 ALTER SCHEMA
 ```
 
 ```sql
-ALTER AUTHORIZATION
-sp_changeobjectowner
-sp_control_dbmasterkey_password
+ALTER AUTHORIZATION sp_changeobjectowner sp_control_dbmasterkey_password
 ```
 
 ```sql
-sp_control_dbmasterkey_password
-sp_defaultdb
-sp_defaultlanguage
-ALTER LOGIN
-sp_defaultdb
-sp_defaultlanguage
-sp_denylogin
-sp_grantlogin
-sp_revokelogin
+sp_control_dbmasterkey_password sp_defaultdb sp_defaultlanguage
+ALTER LOGIN sp_defaultdb sp_defaultlanguage sp_denylogin sp_grantlogin sp_revokelogin
 ALTER LOGIN DISABLE
 CREATE LOGIN
-DROP LOGIN
-sp_denylogin
-sp_grantlogin
+DROP LOGIN sp_denylogin sp_grantlogin
 ```
 
 ```sql
-sp_srvrolepermission
-sp_dbfixedrolepermission
+sp_srvrolepermission sp_dbfixedrolepermission
 ```
 
 ```sql
-sp_srvrolepermission
-sp_dbfixedrolepermission
+sp_srvrolepermission sp_dbfixedrolepermission
 GRANT ALL
 DENY ALL
 REVOKE ALL
 GRANT
 ```
 
-```sql
-DENY
-```
+`DENY`
 
-```sql
-REVOKE
-```
+`REVOKE`
 
-```sql
-sys.fn_my_permissions
-```
+`sys.fn_my_permissions`
 
 ```sql
 EXECUTE AS
 ```
 
-```sql
-DESX
-```
+`DESX`
 
-```sql
-DESX
-```
+`DESX`

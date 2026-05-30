@@ -77,8 +77,6 @@ Rebuilding immediately truncates the full-text index, removing all existing data
 
 must be repopulated. While the population progresses, full-text queries on the base table
 
-
-
 Expand table
 
 ### Search Document Properties with Search Property Lists
@@ -107,19 +105,13 @@ with a search property list
 
 :
 
-SQL
-
 2. A full population is run on the full-text index:
-
-SQL
 
 3. The full-text index is later associated a different search property list,
 
 , using the
 
 following statement:
-
-SQL
 
 This statement causes a full population, the default behavior. However, before beginning
 
@@ -147,27 +139,19 @@ populations, see
 
 ## the index with any search property list
 
-```sql
-table_1
-```
+`table_1`
 
-```sql
-spl_1
-```
+`spl_1`
 
-```sql
-spl_2
-```
+`spl_2`
 
 ```sql
 CREATE
 FULLTEXT
 INDEX
-ON
-table_1 (column_name)
+ON table_1 (column_name)
 KEY
-INDEX
-unique_key_index
+INDEX unique_key_index
 WITH
 SEARCH
 PROPERTY
@@ -181,19 +165,16 @@ POPULATION;
 ALTER
 FULLTEXT
 INDEX
-ON
-table_1
+ON table_1
 START
 FULL
 POPULATION;
 ALTER
 FULLTEXT
 INDEX
-ON
-table_1
+ON table_1
 SET
 SEARCH
 PROPERTY
-LIST
-spl_2;
+LIST spl_2;
 ```

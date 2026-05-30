@@ -8,15 +8,9 @@ pubDate: 2026-05-29
 
 On session 1:
 
-SQL
-
 On session 2:
 
-SQL
-
 On session 1:
-
-SQL
 
 Database administrators control the database-level settings for row versioning by using the
 
@@ -50,8 +44,6 @@ The following Transact-SQL statement enables
 
 :
 
-SQL
-
 When the
 
 database option is set to
@@ -83,8 +75,6 @@ option to
 The following Transact-SQL statement enables
 
 :
-
-SQL
 
 The following table lists and describes the states of the
 
@@ -144,29 +134,19 @@ TRANSACTION
 GO
 ```
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
 ```sql
 ALTER DATABASE
 ```
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
 ```sql
 ALTER DATABASE
@@ -176,61 +156,35 @@ ALTER DATABASE
 ALTER DATABASE
 ```
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-PENDING_ON
-```
+`PENDING_ON`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-PENDING_OFF
-```
+`PENDING_OFF`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
 ```sql
 ALTER DATABASE
 ```
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
 ```sql
 ALTER

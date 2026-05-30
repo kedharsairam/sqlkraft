@@ -97,8 +97,7 @@ Microsoft.CSharp.targets
 <Import
 Project
 =
-"$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SSDT\Microso
-ft.Data.Tools.Schema.Sql.UnitTesting.targets"
+"$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SSDT\Microso ft.Data.Tools.Schema.Sql.UnitTesting.targets"
 Condition
 =
 "'$(VisualStudioVersion)' == ''"
@@ -106,8 +105,7 @@ Condition
 <Import
 Project
 =
-"$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVer
-sion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets"
+"$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVer sion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets"
 Condition
 =
 "'$(VisualStudioVersion)' != ''"

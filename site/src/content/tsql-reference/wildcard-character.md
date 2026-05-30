@@ -21,8 +21,6 @@ database, because they all start with the letters
 
 .
 
-SQL
-
 To see all objects that aren't dynamic management views, use
 
 . If you have a
@@ -55,100 +53,76 @@ LIKE '5%'
 5
 ```
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-dm
-```
+`dm`
 
 ```sql
 NOT LIKE 'dm%'
 ```
 
-```sql
-LIKE
-```
+`LIKE`
 
 ```sql
 NOT LIKE
 ```
 
 ```sql
-VALUES
-(
+VALUES (
 'Robert King'
 );
 SELECT
 *
-FROM
-t
-WHERE
-col1
+FROM t
+WHERE col1
 LIKE
 '% King'
 ;
 -- returns 1 row
 -- Unicode pattern matching with nchar column
 CREATE
-TABLE
-t (col1
-NCHAR
-(30));
+TABLE t (col1
+NCHAR (30));
 INSERT
-INTO
-t
-VALUES
-(
+INTO t
+VALUES (
 'Robert King'
 );
 SELECT
 *
-FROM
-t
-WHERE
-col1
+FROM t
+WHERE col1
 LIKE
 '% King'
 ;
 -- no rows returned
 -- Unicode pattern matching with nchar column and RTRIM
 CREATE
-TABLE
-t (col1
-NCHAR
-(30));
+TABLE t (col1
+NCHAR (30));
 INSERT
-INTO
-t
-VALUES
-(
+INTO t
+VALUES (
 'Robert King'
 );
 SELECT
 *
-FROM
-t
+FROM t
 WHERE
-RTRIM
-(col1)
+RTRIM (col1)
 LIKE
 '% King'
 ;
 -- returns 1 row
 ```
 
-```sql
-LIKE
-```
+`LIKE`
 
 ```sql
 -- Uses AdventureWorks
 SELECT
 Name
-FROM
-sys.system_views
+FROM sys.system_views
 WHERE
 Name
 LIKE

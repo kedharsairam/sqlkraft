@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns a row for each query plan that is cached
 
 ## Syntax
 
-```sql
-sys.dm_pdw_nodes_exec_cached_plans
-```
+`sys.dm_pdw_nodes_exec_cached_plans`

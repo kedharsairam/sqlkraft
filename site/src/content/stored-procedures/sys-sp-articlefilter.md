@@ -69,45 +69,31 @@ Only members of the fixed server role or fixed database role can execute . Defin
 
 ### Example 1
 
-```sql
-sp_articlefilter
-```
+`sp_articlefilter`
 
 ### Example 2
 
-```sql
-sp_articlefilter
-```
+`sp_articlefilter`
 
 ### Example 3
 
-```sql
-filter
-```
+`filter`
 
 ### Example 4
 
-```sql
-filter_clause
-```
+`filter_clause`
 
 ### Example 5
 
-```sql
-sp_articlefilter
-```
+`sp_articlefilter`
 
 ### Example 6
 
-```sql
-type
-```
+`type`
 
 ### Example 7
 
-```sql
-sysarticles
-```
+`sysarticles`
 
 ### Example 8
 
@@ -126,27 +112,20 @@ sysarticles
 ```sql
 DECLARE
 @publication
-AS
-sysname;
+AS sysname;
 DECLARE
 @
 table
-AS
-sysname;
+AS sysname;
 DECLARE
 @filterclause
-AS
-nvarchar
-(500);
+AS nvarchar (500);
 DECLARE
 @filtername
-AS
-nvarchar
-(386);
+AS nvarchar (386);
 DECLARE
 @schemaowner
-AS
-sysname;
+AS sysname;
 SET
 @publication = N
 'AdvWorksProductTran'

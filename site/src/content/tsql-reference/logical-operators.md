@@ -85,76 +85,40 @@ Operator precedence (Transact-SQL)
 
 Last updated on 01/30/2026
 
-
-
 Expand table
 
 Related content
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-FALSE
-```
+`FALSE`
 
-```sql
-UNKNOWN
-```
+`UNKNOWN`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`
 
-```sql
-TRUE
-```
+`TRUE`

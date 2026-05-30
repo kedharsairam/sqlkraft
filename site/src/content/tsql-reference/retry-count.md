@@ -19,11 +19,7 @@ database permission.
 
 For example:
 
-SQL
-
 Or:
-
-SQL
 
 To use an external model in an AI function, a principal must be granted the ability to
 
@@ -31,13 +27,9 @@ it.
 
 For example:
 
-SQL
-
 If the embeddings call encounters HTTP status codes indicating temporary issues, you can
 
 configure the request to automatically retry. To specify the number of retries, add the following
-
-#### text
 
 #### JSON
 
@@ -49,9 +41,7 @@ configure the request to automatically retry. To specify the number of retries, 
 
 ## Retry count with other parameters
 
-```sql
-LOCAL_RUNTIME_PATH
-```
+`LOCAL_RUNTIME_PATH`
 
 ```sql
 ALTER ANY EXTERNAL MODEL
@@ -61,9 +51,7 @@ ALTER ANY EXTERNAL MODEL
 CREATE EXTERNAL MODEL
 ```
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
 ```sql
 '{ "dimensions": 1536 }'

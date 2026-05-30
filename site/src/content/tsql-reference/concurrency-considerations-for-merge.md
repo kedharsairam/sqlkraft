@@ -437,145 +437,77 @@ hint is used to indicate the order so that the query optimizer can generate
 
 ## Measure and diagnose MERGE performance
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-HOLDLOCK
-```
+`HOLDLOCK`
 
-```sql
-MERGE
-```
+`MERGE`
 
 ```sql
 ON <merge_search_condition>
 ```
 
-```sql
-WHEN
-```
+`WHEN`
 
 ```sql
 WHEN NOT MATCHED AND S.EmployeeName LIKE 'S%' THEN INSERT....
@@ -585,45 +517,27 @@ WHEN NOT MATCHED AND S.EmployeeName LIKE 'S%' THEN INSERT....
 WITH <common table expression>
 ```
 
-```sql
-ON
-```
+`ON`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 OPTION (<query_hint>)
 ```
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 INSERT dbo.MyTable (Col1, Col2) VALUES (1, 10)
@@ -633,109 +547,63 @@ INSERT dbo.MyTable (Col1, Col2) VALUES (1, 10)
 INSERT dbo.MyTable (Col1, Col2) VALUES (@p1, @p2)
 ```
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`
 
 ```sql
 ON <merge_search_condition>
 ```
 
-```sql
-WHEN
-```
+`WHEN`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-TEMPLATE
-```
+`TEMPLATE`
 
 ```sql
 PARAMETERIZATION FORCED
 ```
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
-```sql
-FORCED
-```
+`FORCED`
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-TOP
-```
+`TOP`
 
-```sql
-TOP
-```
+`TOP`
 
-```sql
-WHEN
-```
+`WHEN`
 
 ```sql
 TOP (10)
 ```
 
-```sql
-TOP
-```
+`TOP`
 
-```sql
-TOP
-```
+`TOP`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 WHEN MATCHED
@@ -745,38 +613,20 @@ WHEN MATCHED
 WHEN MATCHED
 ```
 
-```sql
-SET
-```
+`SET`
 
-```sql
-TOP
-```
+`TOP`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-OPENROWSET(BULK...)
-```
+`OPENROWSET(BULK...)`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-ORDER
-```
+`ORDER`
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
-```sql
-OPENROWSET(BULK...)
-```
+`OPENROWSET(BULK...)`
 
-```sql
-ORDER
-```
+`ORDER`

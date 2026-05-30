@@ -49,8 +49,6 @@ use Service Broker transport security when the transport security configuration 
 
 both databases.
 
-SQL
-
 ７
 
 Note
@@ -69,8 +67,7 @@ available on the network to use the machine account.
 master
 CONNECT
 LocalSystem
-USE
-master
+USE master
 ;
 GO
 CREATE

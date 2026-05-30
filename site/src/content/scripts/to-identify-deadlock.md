@@ -8,8 +8,7 @@ pubDate: 2025-03-15
 ---
 
 ```sql
---old method
-dbcc traceon(1204, -1)
+--old method dbcc traceon(1204, -1)
 --"1204" will record the deadlock in error log, when happened
 --"-1" will apply this trace flag globally
 

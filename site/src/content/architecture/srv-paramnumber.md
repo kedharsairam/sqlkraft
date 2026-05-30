@@ -71,7 +71,6 @@ srvproc
 DBCHAR *
 name
 ,
-int
-namelen
+int namelen
 );
 ```

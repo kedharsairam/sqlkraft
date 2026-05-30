@@ -73,8 +73,6 @@ The following examples demonstrate passing parameter values to the procedure
 
 and also how to use a variable to pass the value of a function.
 
-SQL
-
 ７
 
 Note
@@ -89,8 +87,7 @@ more information, see
 
 ```sql
 OUTPUT
-@@spid
-uspGetWhereUsedProductID
+@@spid uspGetWhereUsedProductID
 AdventureWorks
 USE
 AdventureWorks2022;
@@ -100,8 +97,7 @@ EXEC dbo.uspGetWhereUsedProductID 819, '20050225';
 GO
 -- Passing values as variables.
 DECLARE
-@ProductID
-int
+@ProductID int
 , @CheckDate datetime;
 SET
 @ProductID = 819;

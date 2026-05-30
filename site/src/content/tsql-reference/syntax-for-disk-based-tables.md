@@ -63,8 +63,6 @@ varies in different versions of the
 
 .
 
-#### syntaxsql
-
 ```sql
 ALTER TABLE
 ```
@@ -84,8 +82,7 @@ TABLE
 table_name }
 {
 ALTER
-COLUMN
-column_name
+COLUMN column_name
 {
 [ type_schema_name. ] type_name
 [ (
@@ -99,8 +96,7 @@ precision [ , scale ]
 }
 ) ]
 [
-COLLATE
-collation_name ]
+COLLATE collation_name ]
 [
 NULL
 |
@@ -134,16 +130,14 @@ DROP
 }
 MASKED
 [
-WITH
-(
+WITH (
 FUNCTION
 =
 ' mask_function '
 ) ]
 }
 [
-WITH
-(
+WITH (
 ONLINE
 =
 ON
@@ -180,10 +174,8 @@ HIDDEN
 NOT
 NULL
 ] [
-CONSTRAINT
-constraint_name ]
-DEFAULT
-constant_expression [
+CONSTRAINT constraint_name ]
+DEFAULT constant_expression [
 WITH
 VALUES
 ] ,
@@ -199,10 +191,8 @@ HIDDEN
 NOT
 NULL
 ][
-CONSTRAINT
-constraint_name ]
-DEFAULT
-constant_expression [
+CONSTRAINT constraint_name ]
+DEFAULT constant_expression [
 WITH
 VALUES
 ] ,
@@ -220,10 +210,8 @@ HIDDEN
 NOT
 NULL
 [
-CONSTRAINT
-constraint_name ]
-DEFAULT
-constant_expression [
+CONSTRAINT constraint_name ]
+DEFAULT constant_expression [
 WITH
 VALUES
 ],
@@ -240,10 +228,8 @@ HIDDEN
 ]
 NULL
 [
-CONSTRAINT
-constraint_name ]
-DEFAULT
-constant_expression [
+CONSTRAINT constraint_name ]
+DEFAULT constant_expression [
 WITH
 VALUES
 ],
@@ -261,10 +247,8 @@ HIDDEN
 NOT
 NULL
 [
-CONSTRAINT
-constraint_name ]
-DEFAULT
-constant_expression [
+CONSTRAINT constraint_name ]
+DEFAULT constant_expression [
 WITH
 VALUES
 ],
@@ -281,10 +265,8 @@ HIDDEN
 ]
 NULL
 [
-CONSTRAINT
-constraint_name ]
-DEFAULT
-constant_expression [
+CONSTRAINT constraint_name ]
+DEFAULT constant_expression [
 WITH
 VALUES
 ]
@@ -293,8 +275,7 @@ PERIOD
 FOR
 SYSTEM
 _
-TIME
-( system_start_time_column_name,
+TIME ( system_start_time_column_name,
 system_end_time_column_name )
 |
 DROP
@@ -308,8 +289,7 @@ EXISTS
 {
 constraint_name
 [
-WITH
-(
+WITH (
 <drop_clustered_constraint_option>
 [ ,...n ] )
 ]
@@ -366,8 +346,7 @@ CHANGE
 _
 TRACKING
 [
-WITH
-(
+WITH (
 TRACK
 _
 COLUMNS
@@ -381,21 +360,16 @@ OFF
 |
 SWITCH
 [
-PARTITION
-source_partition_number_expression ]
-TO
-target_table
+PARTITION source_partition_number_expression ]
+TO target_table
 [
-PARTITION
-target_partition_number_expression ]
+PARTITION target_partition_number_expression ]
 [
-WITH
-(
+WITH (
 <low_priority_lock_wait>
 ) ]
 |
-SET
-(
+SET (
 [
 FILESTREAM
 _
@@ -509,16 +483,14 @@ PARTITION
 ALL
 ]
 [
-WITH
-(
+WITH (
 <rebuild_option>
 [ ,...n ] ) ]
 | [
 PARTITION
 = partition_number
 [
-WITH
-(
+WITH (
 <single_partition_rebuild_option>
 [ ,...n ] ) ]
 ```
@@ -570,8 +542,7 @@ TO
 <table_option>
 ::=
 {
-SET
-(
+SET (
 LOCK
 _
 ESCALATION
@@ -596,8 +567,7 @@ _
 NAMESPACE
 ]
 [
-SET
-(
+SET (
 FILETABLE
 _
 DIRECTORY
@@ -606,8 +576,7 @@ DIRECTORY
 <stretch_configuration>
 ::=
 {
-SET
-(
+SET (
 REMOTE
 _
 DATA
@@ -615,8 +584,7 @@ _
 ARCHIVE
 {
 =
-ON
-(
+ON (
 <table_stretch_options>
 )
 | =
@@ -626,8 +594,7 @@ WITHOUT
 _
 DATA
 _
-RECOVERY
-(
+RECOVERY (
 MIGRATION
 _
 STATE

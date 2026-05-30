@@ -32,8 +32,6 @@ schedulers 12 through 23 belong to NUMA node 1. An application sends the followi
 
 (request) to the Database Engine:
 
-SQL
-
 The execution plan shows a
 
 Hash Join
@@ -153,8 +151,6 @@ sys.dm_os_tasks
 DMV, as seen in the
 
 following example:
-
-SQL
 
 Here's the result set. Notice there are 17 active tasks for the branches that are currently
 
@@ -377,51 +373,34 @@ node for task execution, and assign them sequentially (in round-robin fashion) i
 ### sys.dm_os_waiting_tasks
 
 ```sql
-SELECT
-h.SalesOrderID,
+SELECT h.SalesOrderID,
 h.OrderDate,
 h.DueDate,
 h.ShipDate
 FROM
 Sales.SalesOrderHeaderBulk
-AS
-h
+AS h
 INNER
 JOIN
 Sales.SalesOrderDetailBulk
-AS
-d
-ON
-h.SalesOrderID = d.SalesOrderID
-WHERE
-(h.OrderDate >=
+AS d
+ON h.SalesOrderID = d.SalesOrderID
+WHERE (h.OrderDate >=
 '2014-3-28 00:00:00'
 );
 ```
 
-```sql
-Sales.SalesOrderHeader
-```
+`Sales.SalesOrderHeader`
 
-```sql
-Sales.SalesOrderDetail
-```
+`Sales.SalesOrderDetail`
 
-```sql
-Sales.SalesOrderHeaderBulk
-```
+`Sales.SalesOrderHeaderBulk`
 
-```sql
-Sales.SalesOrderDetailBulk
-```
+`Sales.SalesOrderDetailBulk`
 
-```sql
-Sales.SalesOrderHeaderBulk
-```
+`Sales.SalesOrderHeaderBulk`
 
-```sql
-Sales.SalesOrderDetailBulk
-```
+`Sales.SalesOrderDetailBulk`
 
 ```sql
 concurrent branches * runtime DOP
@@ -456,22 +435,14 @@ ReservedThreads
 ```
 
 ```sql
-SELECT
-parent_task_address, task_address,
+SELECT parent_task_address, task_address,
 task_state, scheduler_id, worker_address
-FROM
-sys.dm_os_tasks
-WHERE
-session_id = <insert_session_id>
+FROM sys.dm_os_tasks
+WHERE session_id = <insert_session_id>
 ORDER
-BY
-parent_task_address, scheduler_id;
+BY parent_task_address, scheduler_id;
 ```
 
-```sql
-parent_task_address
-```
+`parent_task_address`
 
-```sql
-worker_address
-```
+`worker_address`

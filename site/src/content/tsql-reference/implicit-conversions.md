@@ -131,8 +131,6 @@ sql_variant
 
 .
 
-
-
 Expand table
 
 
@@ -165,64 +163,20 @@ data type precedence
 
 .
 
-### datetimeoffset
-
-### char
-
-### nchar
-
-### nvarchar
-
-### varchar
-
-### binary
-
-### varbinary
-
-### nvarchar
-
-### varbinary
-
-### varchar
-
-### image
-
 ### varbinary(max)
 
-### text
-
 ### varchar(max)
-
-### ntext
 
 ### nvarchar(max)
 
 ### varchar(max)
 
-### varchar
-
-### nvarchar
-
-### varbinary
-
-### varchar
-
-### xml
-
 ### effects of data type precedence in conversions
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`

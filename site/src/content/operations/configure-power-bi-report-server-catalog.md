@@ -108,6 +108,5 @@ Expand table
 ```cmd
 CORPNET.CONTOSO.COM
 WIN19
-WIN22
-rhel8test
+WIN22 rhel8test
 ```

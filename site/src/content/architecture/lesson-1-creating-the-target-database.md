@@ -59,20 +59,15 @@ transport security
 
 .
 
-SQL
-
 ```sql
-USE
-master
+USE master
 ;
 GO
 IF EXISTS (
 SELECT
 *
-FROM
-master.sys.endpoints
-WHERE
-name
+FROM master.sys.endpoints
+WHERE name
 = N
 'InstTargetEndpoint'
 )

@@ -67,11 +67,7 @@ that support interoperability with APIs, libraries, and mathematical formulas th
 
 specific angular measurement unit.
 
-
-
 Expand table
-
-
 
 Expand table
 

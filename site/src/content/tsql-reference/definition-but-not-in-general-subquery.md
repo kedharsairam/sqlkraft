@@ -8,138 +8,106 @@ pubDate: 2026-05-29
 ---
 
 ```sql
-VALUES
-(1, 1, 1);
+VALUES (1, 1, 1);
 INSERT
 INTO
 NestedCTE_t1
-VALUES
-(2, 2, 2);
+VALUES (2, 2, 2);
 INSERT
 INTO
 NestedCTE_t1
-VALUES
-(3, 3, 3);
+VALUES (3, 3, 3);
 GO
-WITH
-outermost_cte_1
-AS
-(
-WITH
-outer_cte_1
-AS
-(
-WITH
-inner_cte1_1
-AS
-(
+WITH outermost_cte_1
+AS (
+WITH outer_cte_1
+AS (
+WITH inner_cte1_1
+AS (
 SELECT
 *
 FROM
 NestedCTE_t1
-WHERE
-c1 = 1
+WHERE c1 = 1
 ),
 inner_cte1_2
-AS
-(
+AS (
 SELECT
 *
-FROM
-inner_cte1_1
+FROM inner_cte1_1
 UNION
 SELECT
 *
-FROM
-inner_cte1_1
+FROM inner_cte1_1
 )
 SELECT
 *
-FROM
-inner_cte1_1
+FROM inner_cte1_1
 UNION
 ALL
 SELECT
 *
-FROM
-inner_cte1_2
+FROM inner_cte1_2
 ),
 outer_cte_2
-AS
-(
-WITH
-inner_cte2_1
-AS
-(
+AS (
+WITH inner_cte2_1
+AS (
 SELECT
 *
 FROM
 NestedCTE_t1
-WHERE
-c2 = 1
+WHERE c2 = 1
 EXCEPT
 SELECT
 *
-FROM
-outer_cte_1
+FROM outer_cte_1
 ),
 inner_cte2_2
-AS
-(
+AS (
 SELECT
 *
 FROM
 NestedCTE_t1
-WHERE
-c3 = 1
+WHERE c3 = 1
 UNION
 SELECT
 *
-FROM
-inner_cte2_1
+FROM inner_cte2_1
 )
 SELECT
 *
-FROM
-inner_cte2_1
+FROM inner_cte2_1
 UNION
 ALL
 SELECT
 *
-FROM
-outer_cte_1
+FROM outer_cte_1
 )
 SELECT
 *
-FROM
-outer_cte_1
+FROM outer_cte_1
 INTERSECT
 SELECT
 *
-FROM
-outer_cte_2
+FROM outer_cte_2
 ),
 outermost_cte_2
-AS
-(
+AS (
 SELECT
 *
-FROM
-outermost_cte_1
+FROM outermost_cte_1
 UNION
 SELECT
 *
-FROM
-outermost_cte_1
+FROM outermost_cte_1
 )
 SELECT
 *
-FROM
-outermost_cte_1
+FROM outermost_cte_1
 UNION
 ALL
 SELECT
 *
-FROM
-outermost_cte_2;
+FROM outermost_cte_2;
 ```

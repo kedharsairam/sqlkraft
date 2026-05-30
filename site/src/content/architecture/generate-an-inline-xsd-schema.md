@@ -70,8 +70,7 @@ For example:
 XML
 
 ```sql
-<xsd:schema
-targetNamespace
+<xsd:schema targetNamespace
 =
 "urn:schemas-microsoft-com:sql:SqlRowSet1"
 xmlns:schema
@@ -87,8 +86,7 @@ elementFormDefault
 =
 "qualified"
 >
-<xsd:import
-namespace
+<xsd:import namespace
 =
 "https://schemas.microsoft.com/sqlserver/2004/sqltypes"
 schemaLocation
@@ -96,14 +94,12 @@ schemaLocation
 "https://schemas.microsoft.com/sqlserver/2004/sqltypes/sqltypes.xsd
 "
 />
-<xsd:element
-name
+<xsd:element name
 =
 "Production.ProductModel"
 >
 <xsd:complexType>
-<xsd:attribute
-name
+<xsd:attribute name
 =
 "ProductModelID"
 type
@@ -113,21 +109,18 @@ use
 =
 "required"
 />
-<xsd:attribute
-name
+<xsd:attribute name
 =
 "Name"
 use
 =
 "required"
 >
-<xsd:simpleType
-sqltypes:sqlTypeAlias
+<xsd:simpleType sqltypes:sqlTypeAlias
 =
 "[AdventureWorks2022].[dbo].[Name]"
 >
-<xsd:restriction
-base
+<xsd:restriction base
 =
 "sqltypes:nvarchar"
 sqltypes:localeId
@@ -140,8 +133,7 @@ sqltypes:sqlSortId
 =
 "52"
 >
-<xsd:maxLength
-value
+<xsd:maxLength value
 =
 "50"
 />

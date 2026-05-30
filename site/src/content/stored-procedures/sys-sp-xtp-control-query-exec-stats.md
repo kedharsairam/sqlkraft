@@ -47,10 +47,8 @@ DECLARE
 AS
 BIT
 ;
-EXECUTE
-sys.sp_xtp_control_query_exec_stats @new_collection_value = 1;
-EXECUTE
-sys.sp_xtp_control_query_exec_stats
+EXECUTE sys.sp_xtp_control_query_exec_stats @new_collection_value = 1;
+EXECUTE sys.sp_xtp_control_query_exec_stats
 @old_collection_value = @c
 OUTPUT
 ;
@@ -59,13 +57,11 @@ SELECT
 AS
 'collection status'
 ;
-EXECUTE
-sys.sp_xtp_control_query_exec_stats
+EXECUTE sys.sp_xtp_control_query_exec_stats
 @new_collection_value = 1,
 @database_id = 5,
 @xtp_object_id = 41576255;
-EXECUTE
-sys.sp_xtp_control_query_exec_stats
+EXECUTE sys.sp_xtp_control_query_exec_stats
 @database_id = 5,
 @xtp_object_id = 41576255,
 @old_collection_value = @c

@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns information about all queries that have 
 
 ## Syntax
 
-```sql
-sys.dm_pdw_nodes_exec_query_memory_grants
-```
+`sys.dm_pdw_nodes_exec_query_memory_grants`

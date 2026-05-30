@@ -14,6 +14,4 @@ Displays information on parameterized row filter properties for a publication, i
 
 ## Syntax
 
-```sql
-can_use_partition_groups
-```
+`can_use_partition_groups`

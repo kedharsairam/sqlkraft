@@ -14,9 +14,7 @@ SQL database in Microsoft Fabric This stored procedure allows you to manually cl
 
 ## Syntax
 
-```sql
-change_tracking_objectid
-```
+`change_tracking_objectid`
 
 ## Permissions
 
@@ -26,9 +24,7 @@ SQL Here's the result set. Output This procedure must be run in a database that 
 
 ### Example 1
 
-```sql
-change_tracking_objectid
-```
+`change_tracking_objectid`
 
 ### Example 2
 
@@ -49,26 +45,17 @@ sys.sp_flush_
 CT
 _internal_table_on_demand
 [ @
-T
-able
-T
-o
-C
-lean = ]
+T able
+T o
+C lean = ]
 'TableToClean'
 [ , [ @
-D
-eleted
-R
-ow
-C
-ount = ]
-D
-eleted
-R
-ow
-C
-ount
+D eleted
+R ow
+C ount = ]
+D eleted
+R ow
+C ount
 OUTPUT
 ]
 [ ; ]

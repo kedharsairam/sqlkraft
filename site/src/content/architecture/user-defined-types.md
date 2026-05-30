@@ -102,6 +102,5 @@ enabled by using the
 system stored procedure.
 
 ```sql
-CREATE ASSEMBLY
-sp_configure
+CREATE ASSEMBLY sp_configure
 ```

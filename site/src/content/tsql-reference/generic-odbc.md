@@ -125,8 +125,6 @@ example:
 
 .
 
-
-
 Expand table
 
 Key
@@ -173,30 +171,22 @@ PolyBase Frequently asked questions
 
 Related content
 
-```sql
-SamplingStrategy
-```
+`SamplingStrategy`
 
-```sql
-SSL
-```
+`SSL`
 
 ```sql
 0
 ```
 
-```sql
-CONNECTION_OPTIONS
-```
+`CONNECTION_OPTIONS`
 
 ```sql
 PolyBaseOdbcSupportsRowCount
 TRUE
 ```
 
-```sql
-FALSE
-```
+`FALSE`
 
 ```sql
 CONNECTION_OPTIONS='PolyBaseOdbcSupportsRowCount=TRUE'
@@ -207,13 +197,9 @@ PolyBaseOdbcSupportsMetadataIdAttributes
 TRUE
 ```
 
-```sql
-FALSE
-```
+`FALSE`
 
-```sql
-METADATA_ID
-```
+`METADATA_ID`
 
 ```sql
 CONNECTION_OPTIONS='PolyBaseOdbcSupportsMetadataIdAttributes=TRUE'
@@ -224,9 +210,7 @@ PolyBaseOdbcSupportsBindOffset
 TRUE
 ```
 
-```sql
-FALSE
-```
+`FALSE`
 
 ```sql
 CONNECTION_OPTIONS='PolyBaseOdbcSupportsBindOffset=TRUE'
@@ -237,29 +221,19 @@ PolyBaseQoTopPushdownSyntax
 TOP
 ```
 
-```sql
-LIMIT
-```
+`LIMIT`
 
-```sql
-TOP
-```
+`TOP`
 
-```sql
-TOP
-```
+`TOP`
 
-```sql
-TOP
-```
+`TOP`
 
 ```sql
 top {0}
 ```
 
-```sql
-LIMIT
-```
+`LIMIT`
 
 ```sql
 limit {0}

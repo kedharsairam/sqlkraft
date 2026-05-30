@@ -10,21 +10,17 @@ pubDate: 2025-03-15
 ```sql
 --Method 1_Auto Fix:
 --if login exists
---this will work only when both loginname and username are same
-exec sp_change_users_login 'auto_fix', 'username'
+--this will work only when both loginname and username are same exec sp_change_users_login 'auto_fix', 'username'
 
 --or
 
---if login doesn't exist
-exec sp_change_users_login 'auto_fix', 'username', null, 'password'
+--if login doesn't exist exec sp_change_users_login 'auto_fix', 'username', null, 'password'
 
 --Method 2_Update_one:
---if login exists
-exec sp_change_users_login 'update_one', 'username', 'loginname'
+--if login exists exec sp_change_users_login 'update_one', 'username', 'loginname'
 
 --Method 3_Create login with User SID:
---if login doesn't exist
-create login loginname with password = '[password]',
+--if login doesn't exist create login loginname with password = '[password]',
 sid = user_sid
 
 --Method 4_sp_help_revlogin:

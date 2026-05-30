@@ -205,8 +205,6 @@ For an introduction to backup in SQL Server, see
 
 .
 
-
-
 Expand table
 
 ７
@@ -307,8 +305,6 @@ database to a new striped
 
 media set that uses three disk files.
 
-SQL
-
 After a backup device is defined as part of a stripe set, it can't be used for a single-device
 
 backup unless FORMAT is specified. Similarly, a backup device that contains nonstriped
@@ -356,8 +352,6 @@ devices as the
 clause. The following example writes to a mirrored media set that contains
 
 two mirrors and uses three devices per mirror:
-
-SQL
 
 #### Mirror
 
@@ -431,8 +425,6 @@ redundancy for which mirrored media sets are designed.
 
 Media families in mirrored media sets
 
-
-
 Expand table
 
 ### Restore
@@ -441,17 +433,11 @@ Expand table
 
 #### option
 
-```sql
-STANDBY
-```
+`STANDBY`
 
-```sql
-STANDBY
-```
+`STANDBY`
 
-```sql
-STANDBY
-```
+`STANDBY`
 
 ```sql
 BACKUP LOG WITH NORECOVERY
@@ -465,73 +451,41 @@ RESTORE WITH STANDBY
 RESTORE LOG
 ```
 
-```sql
-NO_TRUNCATE
-```
+`NO_TRUNCATE`
 
-```sql
-NO_TRUNCATE
-```
+`NO_TRUNCATE`
 
 ```sql
 BACKUP LOG
 ```
 
-```sql
-COPY_ONLY
-```
+`COPY_ONLY`
 
-```sql
-CONTINUE_AFTER_ERROR
-```
+`CONTINUE_AFTER_ERROR`
 
-```sql
-NO_TRUNCATE
-```
+`NO_TRUNCATE`
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-NO_TRUNCATE
-```
+`NO_TRUNCATE`
 
-```sql
-OFFLINE
-```
+`OFFLINE`
 
-```sql
-EMERGENCY
-```
+`EMERGENCY`
 
-```sql
-BACKUP
-```
+`BACKUP`
 
-```sql
-NO_TRUNCATE
-```
+`NO_TRUNCATE`
 
-```sql
-COPY_ONLY
-```
+`COPY_ONLY`
 
-```sql
-BACKUP
-```
+`BACKUP`
 
-```sql
-BACKUP
-```
+`BACKUP`
 
-```sql
-FORMAT
-```
+`FORMAT`
 
-```sql
-FORMAT
-```
+`FORMAT`
 
 ```sql
 BACKUP LOG WITH NO_LOG
@@ -541,29 +495,17 @@ BACKUP LOG WITH NO_LOG
 WITH TRUNCATE_ONLY
 ```
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-MEDIANAME
-```
+`MEDIANAME`
 
-```sql
-MEDIADESCRIPTION
-```
+`MEDIADESCRIPTION`
 
-```sql
-BACKUP
-```
+`BACKUP`
 
-```sql
-TO
-```
+`TO`
 
-```sql
-TO
-```
+`TO`
 
 ```sql
 MIRROR TO
@@ -573,9 +515,7 @@ MIRROR TO
 MIRROR TO
 ```
 
-```sql
-TO
-```
+`TO`
 
 ```sql
 BACKUP
@@ -622,21 +562,13 @@ DISK =
 ,
 ```
 
-```sql
-TO
-```
+`TO`
 
-```sql
-BACKUP
-```
+`BACKUP`
 
-```sql
-TO
-```
+`TO`
 
-```sql
-BACKUP
-```
+`BACKUP`
 
 ```sql
 Z:\AdventureWorks1a.bak

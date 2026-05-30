@@ -14,9 +14,7 @@ SQL Server 2019 (15.x) Transact-SQL syntax conventions Is the 8-byte hexadecimal
 
 ## Syntax
 
-```sql
-sys.fn_PageResCracker
-```
+`sys.fn_PageResCracker`
 
 ## Remarks
 
@@ -72,29 +70,20 @@ VIEW SERVER STATE
 
 ### Example 2
 
-```sql
-sys.fn_PageResCracker
-```
+`sys.fn_PageResCracker`
 
 ### Example 3
 
 ```sql
-SELECT
-page_info.*
-FROM
-sys.dm_exec_requests
-AS
-d
+SELECT page_info.*
+FROM sys.dm_exec_requests
+AS d
 CROSS
-APPLY
-sys.fn_PageResCracker (d.page_resource)
-AS
-r
+APPLY sys.fn_PageResCracker (d.page_resource)
+AS r
 CROSS
-APPLY
-sys.dm_db_page_info(r.db_id, r.file_id, r.page_id,
+APPLY sys.dm_db_page_info(r.db_id, r.file_id, r.page_id,
 'DETAILED'
 )
-AS
-page_info
+AS page_info
 ```

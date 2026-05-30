@@ -14,9 +14,7 @@ SQL database in Microsoft Fabric Returns one row for each table in the current d
 
 ## Syntax
 
-```sql
-sys.change_tracking_tables
-```
+`sys.change_tracking_tables`
 
 ## Permissions
 

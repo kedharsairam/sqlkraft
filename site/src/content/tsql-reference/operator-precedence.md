@@ -125,10 +125,6 @@ statement, the subtraction operator is evaluated before the addition
 
 operator.
 
-SQL
-
-
-
 Expand table
 
 Use parentheses to override the defined precedence of the operators in an expression.
@@ -147,8 +143,6 @@ first. The expression result is
 
 .
 
-SQL
-
 In the expression used in the following
 
 statement, the parentheses cause the addition to
@@ -156,8 +150,6 @@ statement, the parentheses cause the addition to
 be evaluated first. The expression result is
 
 .
-
-SQL
 
 If an expression has nested parentheses, the most deeply nested expression is evaluated first.
 
@@ -185,8 +177,6 @@ yield an expression result of
 
 .
 
-SQL
-
 Logical operators (Transact-SQL)
 
 Related content
@@ -201,9 +191,7 @@ Last updated on 01/30/2026
 ~
 ```
 
-```sql
-NOT
-```
+`NOT`
 
 ```sql
 *
@@ -241,25 +229,19 @@ NOT
 &
 ```
 
-```sql
-AND
-```
+`AND`
 
 ```sql
 ^
 ```
 
-```sql
-OR
-```
+`OR`
 
 ```sql
 |
 ```
 
-```sql
-OR
-```
+`OR`
 
 ```sql
 <<
@@ -305,49 +287,29 @@ OR
 !<
 ```
 
-```sql
-NOT
-```
+`NOT`
 
-```sql
-AND
-```
+`AND`
 
-```sql
-ALL
-```
+`ALL`
 
-```sql
-ANY
-```
+`ANY`
 
-```sql
-BETWEEN
-```
+`BETWEEN`
 
-```sql
-IN
-```
+`IN`
 
-```sql
-LIKE
-```
+`LIKE`
 
-```sql
-OR
-```
+`OR`
 
-```sql
-SOME
-```
+`SOME`
 
 ```sql
 =
 ```
 
-```sql
-SET
-```
+`SET`
 
 ```sql
 DECLARE
@@ -362,17 +324,13 @@ SELECT
 @MyNumber;
 ```
 
-```sql
-SET
-```
+`SET`
 
 ```sql
 13
 ```
 
-```sql
-SET
-```
+`SET`
 
 ```sql
 18

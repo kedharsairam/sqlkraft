@@ -14,9 +14,7 @@ This stored procedure checks to see if an alert job has been created on this ser
 
 ## Syntax
 
-```sql
-sp_add_log_shipping_alert_job
-```
+`sp_add_log_shipping_alert_job`
 
 ## Remarks
 
@@ -46,17 +44,13 @@ database on the monitor server.
 
 ### Example 1
 
-```sql
-sp_add_log_shipping_alert_job
-```
+`sp_add_log_shipping_alert_job`
 
 ### Example 2
 
 ```sql
-USE
-master
+USE master
 ;
 GO
-EXECUTE
-sp_add_log_shipping_alert_job;
+EXECUTE sp_add_log_shipping_alert_job;
 ```

@@ -7,8 +7,6 @@ tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 At least one of the three
 
 clauses must be specified, but they can be specified in any
@@ -125,57 +123,35 @@ statements.
 
 ### deleted
 
-```sql
-MATCHED
-```
+`MATCHED`
 
-```sql
-MATCHED
-```
+`MATCHED`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-IGNORE_DUP_KEY
-```
+`IGNORE_DUP_KEY`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
 ```sql
 ;
 ```
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
 ```sql
 100
 ```
 
-```sql
-MERGE
-```
+`MERGE`
 
 ```sql
 90
@@ -189,68 +165,40 @@ MERGE
 90
 ```
 
-```sql
-MERGE
-```
+`MERGE`
+
+`AFTER`
+
+`INSTEAD`
+
+`MERGE`
+
+`INSTEAD`
+
+`MERGE`
 
 ```sql
-AFTER
-```
-
-```sql
-INSTEAD
-```
-
-```sql
-MERGE
-```
-
-```sql
-INSTEAD
-```
-
-```sql
-MERGE
-```
-
-```sql
-INSERT
-tbl_A (
+INSERT tbl_A (
 col
 , col2)
-SELECT
-col
+SELECT col
 , col2
-FROM
-tbl_B
+FROM tbl_B
 WHERE
 NOT
-EXISTS
-(
-SELECT
-col
-FROM
-tbl_A A2
+EXISTS (
+SELECT col
+FROM tbl_A A2
 WHERE
 A2.col = tbl_B.col);
 ```
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-MERGE
-```
+`MERGE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`

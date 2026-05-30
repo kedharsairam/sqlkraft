@@ -58,14 +58,10 @@ N
 'table_type'
 ]
 [ , [ @f
-U
-se
-P
-attern = ] f
-U
-se
-P
-attern ]
+U se
+P attern = ] f
+U se
+P attern ]
 [ ; ]
 ```
 

@@ -76,9 +76,5 @@ Bash
 Red Hat Enterprise Linux
 
 ```cmd
-PATH
-sudo curl -o /etc/yum.repos.d/mssql-server.repo
-https://packages.microsoft.com/config/rhel/8/mssql-server-2022.repo
-sudo yum install -y mssql-server-is
-sudo /opt/ssis/bin/ssis-conf setup
+PATH sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/8/mssql-server-2022.repo sudo yum install -y mssql-server-is sudo /opt/ssis/bin/ssis-conf setup
 ```

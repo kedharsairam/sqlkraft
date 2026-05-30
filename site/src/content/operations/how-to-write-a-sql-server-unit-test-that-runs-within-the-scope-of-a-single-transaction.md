@@ -59,8 +59,6 @@ example. The example uses a database table that is named OrderDetails and that c
 
 50 rows of data:
 
-SQL
-
 ```cmd
 BEGIN TRANSACTION
 ROLLBACK TRANSACTION

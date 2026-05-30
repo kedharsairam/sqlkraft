@@ -51,8 +51,6 @@ and
 
 :
 
-SQL
-
 You can fully integrate JSON functionality with existing in-memory OLTP technologies. For
 
 example, you can do the following things:
@@ -76,12 +74,10 @@ Product
 Tags
 Data
 CREATE
-SCHEMA
-xtp;
+SCHEMA xtp;
 GO
 CREATE
-TABLE
-xtp.Product (
+TABLE xtp.Product (
 ProductID
 INT
 PRIMARY
@@ -89,8 +85,7 @@ KEY
 NONCLUSTERED,
 --standard column
 Name
-NVARCHAR
-(400)
+NVARCHAR (400)
 NOT
 NULL
 ,
@@ -100,16 +95,13 @@ FLOAT
 ,
 --standard column
 Tags
-NVARCHAR
-(400),
+NVARCHAR (400),
 --JSON stored in string column
 Data
-NVARCHAR
-(4000)
+NVARCHAR (4000)
 --JSON stored in string column
 )
-WITH
-(MEMORY_OPTIMIZED =
+WITH (MEMORY_OPTIMIZED =
 ON
 );
 GO

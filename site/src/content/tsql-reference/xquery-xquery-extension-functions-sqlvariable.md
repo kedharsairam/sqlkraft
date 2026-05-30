@@ -79,6 +79,5 @@ is used to bind
 this value in the XML.
 
 ```sql
-ProductID
-sql:variable("variableName") as xdt:anyAtomicType?
+ProductID sql:variable("variableName") as xdt:anyAtomicType?
 ```

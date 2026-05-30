@@ -49,8 +49,6 @@ This script displays the location of the physical database files that the FILEST
 
 database uses.
 
-SQL
-
 3. Copy the following Transact-SQL script into the Query Editor, and then select
 
 .
@@ -58,8 +56,6 @@ SQL
 This code takes the
 
 database offline.
-
-SQL
 
 4. Create the folder
 
@@ -74,8 +70,6 @@ step 2 into it.
 This script sets the
 
 database online.
-
-SQL
 
 ７
 
@@ -97,12 +91,9 @@ USE
 Archive
 ]
 GO
-SELECT
-type_desc,
+SELECT type_desc,
 name
-, physical_name
-from
-sys.database_files;
+, physical_name from sys.database_files;
 USE
 [
 master

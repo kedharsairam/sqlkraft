@@ -139,8 +139,6 @@ memory grant size that results in concurrency
 
 issues might have improved concurrency on
 
-
-
 Expand table
 
 #### Compatibility level setting of 140 or lower
@@ -161,10 +159,6 @@ Expand table
 
 #### mode memory grant feedback
 
-```sql
-MAXDOP
-```
+`MAXDOP`
 
-```sql
-DOP_FEEDBACK
-```
+`DOP_FEEDBACK`

@@ -114,8 +114,6 @@ option to
 
 as shown in the following code example:
 
-SQL
-
 When the database is enabled for
 
 , all queries running under the
@@ -131,8 +129,6 @@ database option to
 as
 
 shown in the following code example:
-
-SQL
 
 When using cross-database queries, a transaction running under
 
@@ -166,8 +162,6 @@ isolation, it fails to execute
 
 successfully.
 
-SQL
-
 The following code example shows the same
 
 statement that has been modified to
@@ -180,229 +174,123 @@ Because of this change, the
 
 statement executes successfully.
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-PENDING_ON
-```
+`PENDING_ON`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-PENDING_OFF
-```
+`PENDING_OFF`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-PENDING_OFF
-```
+`PENDING_OFF`
 
-```sql
-OFF
-```
+`OFF`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-sys.databases
-```
+`sys.databases`
 
-```sql
-master
-```
+`master`
 
-```sql
-msdb
-```
+`msdb`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-master
-```
+`master`
 
-```sql
-msdb
-```
+`msdb`
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-master
-```
+`master`
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-msdb
-```
+`msdb`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-ALLOW_SNAPSHOT_ISOLATION
-```
+`ALLOW_SNAPSHOT_ISOLATION`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 ALTER
@@ -428,17 +316,11 @@ SNAPSHOT
 BEGIN
 TRANSACTION
 ;
-SELECT
-t1.col5, t2.col5
+SELECT t1.col5, t2.col5
 FROM
-Table1
-as
-t1
+Table1 as t1
 INNER
 JOIN
-SecondDB.dbo.Table2
-as
-t2
-ON
-t1.col1 = t2.col2;
+SecondDB.dbo.Table2 as t2
+ON t1.col1 = t2.col2;
 ```

@@ -97,6 +97,5 @@ network, you must ensure that the new instance has a Service Broker endpoint. Yo
 
 ```sql
 CREATE DATABASE
-ALTER DATABASE
-msdb
+ALTER DATABASE msdb
 ```

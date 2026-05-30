@@ -65,6 +65,5 @@ Expand table
 msoledbsql.h
 S_OK
 HRESULT
-LocalDBStartTracing
-();
+LocalDBStartTracing ();
 ```

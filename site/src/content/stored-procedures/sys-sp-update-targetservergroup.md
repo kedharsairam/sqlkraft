@@ -59,15 +59,11 @@ fixed server role.
 
 ### Example 1
 
-```sql
-sp_update_targetservergroup
-```
+`sp_update_targetservergroup`
 
 ### Example 2
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 3
 
@@ -85,11 +81,9 @@ Local Servers Processing Customer Orders
 ### Example 5
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_update_targetservergroup
+EXECUTE dbo.sp_update_targetservergroup
 @
 name
 = N

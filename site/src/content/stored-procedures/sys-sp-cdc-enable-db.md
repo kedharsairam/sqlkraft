@@ -57,15 +57,11 @@ SQL Server 2022
 
 ### Example 1
 
-```sql
-sys.sp_cdc_enable_db
-```
+`sys.sp_cdc_enable_db`
 
 ### Example 2
 
-```sql
-is_cdc_enabled
-```
+`is_cdc_enabled`
 
 ### Example 3
 
@@ -79,7 +75,6 @@ is_cdc_enabled
 USE
 AdventureWorks2022;
 GO
-EXECUTE
-sys.sp_cdc_enable_db;
+EXECUTE sys.sp_cdc_enable_db;
 GO
 ```

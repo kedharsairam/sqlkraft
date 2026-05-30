@@ -21,15 +21,11 @@ merges the
 
 rowgroups.
 
-SQL
-
 Use the TABLOCK option to insert rows in parallel. Starting with SQL Server 2016 (13.x), the
 
 operation can run in parallel when
 
 is used.
-
-SQL
 
 Run this command to see the
 
@@ -37,21 +33,15 @@ delta rowgroups. The number of rowgroups depends on
 
 the degree of parallelism.
 
-SQL
-
 Run this command to force all
 
 and
 
 rowgroups into the columnstore.
 
-SQL
-
 Run this command again and you see that smaller rowgroups are merged into one compressed
 
 rowgroup.
-
-SQL
 
 ## B. Compress CLOSED delta rowgroups into the columnstore
 
@@ -79,13 +69,9 @@ This sample runs
 
 on all partitions.
 
-SQL
-
 This sample runs
 
 on a specific partition.
-
-SQL
 
 Applies to:
 
@@ -129,8 +115,6 @@ and
 
 delta rowgroups into the columnstore index.
 
-SQL
-
 ### Doesn't apply to
 
 ## D. Defragment a columnstore index online
@@ -144,8 +128,6 @@ and
 delta rowgroups into the columnstore index for a
 
 specific partition.
-
-SQL
 
 : SQL Server 2012 (11.x) and SQL Server 2014 (12.x).
 
@@ -168,8 +150,6 @@ The following example performs a
 to defragment the index by physically removing
 
 rows that have been logically deleted from the table, and merging rowgroups.
-
-SQL
 
 Applies to: SQL Server, Azure SQL Database, and Azure SQL Managed Instance
 
@@ -207,8 +187,6 @@ database with a clustered columnstore index, and inserts data from the
 
 first four columns.
 
-SQL
-
 The results show one
 
 rowgroup, which means SQL Server waits for more rows to be
@@ -216,8 +194,6 @@ rowgroup, which means SQL Server waits for more rows to be
 added before it closes the rowgroup and moves the data to the columnstore. This next
 
 statement rebuilds the clustered columnstore index, which forces all rows into the columnstore.
-
-SQL
 
 The results of the
 
@@ -275,8 +251,6 @@ with
 
 .
 
-SQL
-
 : SQL Server 2012 (11.x)
 
 You can choose to reduce the size of a clustered columnstore index even further by using the
@@ -299,17 +273,13 @@ First, prepare the example by creating a table with a clustered columnstore inde
 
 compress the table further by using archival compression.
 
-SQL
-
 ### Applies to
 
 ```sql
 ALTER INDEX REORGANIZE
 ```
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
 ```sql
 -- Create a database
@@ -327,11 +297,9 @@ NOT
 NULL
 ,
 AccountDescription
-NVARCHAR
-(50),
+NVARCHAR (50),
 AccountType
-NVARCHAR
-(50),
+NVARCHAR (50),
 AccountCodeAlternateKey
 INT
 );
@@ -343,16 +311,14 @@ INT
 ;
 DECLARE
 @AccountDescription
-VARCHAR
-(50);
+VARCHAR (50);
 DECLARE
 @AccountKey
 INT
 ;
 DECLARE
 @AccountType
-VARCHAR
-(50);
+VARCHAR (50);
 DECLARE
 @AccountCode
 INT
@@ -363,17 +329,14 @@ loop
 = 0
 BEGIN
 TRANSACTION
-WHILE
-(@
+WHILE (@
 loop
 < 300000)
 BEGIN
 SELECT
 @AccountKey =
-CAST
-(
-RAND
-() * 10000000
+CAST (
+RAND () * 10000000
 AS
 INT
 );
@@ -381,32 +344,24 @@ SELECT
 @AccountDescription =
 'accountdesc '
 +
-CONVERT
-(
-VARCHAR
-(20), @AccountKey);
+CONVERT (
+VARCHAR (20), @AccountKey);
 SELECT
 @AccountType =
 'AccountType '
 +
-CONVERT
-(
-VARCHAR
-(20), @AccountKey);
+CONVERT (
+VARCHAR (20), @AccountKey);
 SELECT
 @AccountCode =
-CAST
-(
-RAND
-() * 10000000
+CAST (
+RAND () * 10000000
 AS
 INT
 );
 INSERT
-INTO
-staging
-VALUES
-(
+INTO staging
+VALUES (
 @AccountKey,
 @AccountDescription,
 @AccountType,
@@ -424,251 +379,164 @@ loop
 INSERT INTO
 ```
 
-```sql
-TABLOCK
-```
+`TABLOCK`
 
-```sql
-OPEN
-```
+`OPEN`
 
-```sql
-CLOSED
-```
+`CLOSED`
 
-```sql
-OPEN
-```
+`OPEN`
 
 ```sql
 END
 COMMIT
 -- Create a table for the clustered columnstore index
 CREATE
-TABLE
-cci_target (
+TABLE cci_target (
 AccountKey
 INT
 NOT
 NULL
 ,
 AccountDescription
-NVARCHAR
-(50),
+NVARCHAR (50),
 AccountType
-NVARCHAR
-(50),
+NVARCHAR (50),
 AccountCodeAlternateKey
 INT
 );
 -- Convert the table to a clustered columnstore index named inxcci_cci_target;
 CREATE
 CLUSTERED COLUMNSTORE
-INDEX
-idxcci_cci_target
-ON
-cci_target;
+INDEX idxcci_cci_target
+ON cci_target;
 INSERT
-INTO
-cci_target
-WITH
-(TABLOCK)
+INTO cci_target
+WITH (TABLOCK)
 SELECT
 TOP 300000 *
-FROM
-staging;
+FROM staging;
 SELECT
 *
-FROM
-sys.dm_db_column_store_row_group_physical_stats
-WHERE
-object_id  = object_id(
+FROM sys.dm_db_column_store_row_group_physical_stats
+WHERE object_id  = object_id(
 'cci_target'
 );
 ALTER
-INDEX
-idxcci_cci_target
-ON
-cci_target REORGANIZE
-WITH
-(COMPRESS_ALL_ROW_GROUPS
+INDEX idxcci_cci_target
+ON cci_target REORGANIZE
+WITH (COMPRESS_ALL_ROW_GROUPS
 =
 ON
 );
 ALTER
-INDEX
-idxcci_cci_target
-ON
-cci_target REORGANIZE
-WITH
-(COMPRESS_ALL_ROW_GROUPS
+INDEX idxcci_cci_target
+ON cci_target REORGANIZE
+WITH (COMPRESS_ALL_ROW_GROUPS
 =
 ON
 );
 ```
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
-```sql
-CLOSED
-```
+`CLOSED`
 
-```sql
-CLOSED
-```
+`CLOSED`
 
-```sql
-AdventureWorksDW2025
-```
+`AdventureWorksDW2025`
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
 ```sql
 REORGANIZE WITH (COMPRESS_ALL_ROW_GROUPS = ON)
 ```
 
-```sql
-OPEN
-```
+`OPEN`
 
-```sql
-CLOSED
-```
+`CLOSED`
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
-```sql
-OPEN
-```
+`OPEN`
 
-```sql
-CLOSED
-```
+`CLOSED`
 
-```sql
-AdventureWorksDW2025
-```
+`AdventureWorksDW2025`
 
-```sql
-OPEN
-```
+`OPEN`
 
-```sql
-CLOSED
-```
+`CLOSED`
 
 ```sql
 ALTER
-INDEX
-cci_FactInternetSales2
+INDEX cci_FactInternetSales2
 ON
 FactInternetSales2 REORGANIZE;
 -- REORGANIZE a specific partition
 ALTER
-INDEX
-cci_FactInternetSales2
+INDEX cci_FactInternetSales2
 ON
 FactInternetSales2 REORGANIZE
 PARTITION
 = 0;
 ```
 
-```sql
-OPEN
-```
+`OPEN`
 
-```sql
-CLOSED
-```
+`CLOSED`
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
 ```sql
 ALTER
-INDEX
-cci_FactInternetSales2
+INDEX cci_FactInternetSales2
 ON
 FactInternetSales2 REORGANIZE
-WITH
-(COMPRESS_ALL_ROW_GROUPS =
+WITH (COMPRESS_ALL_ROW_GROUPS =
 ON
 );
 ALTER
-INDEX
-cci_FactInternetSales2
+INDEX cci_FactInternetSales2
 ON
 FactInternetSales2 REORGANIZE
 PARTITION
 = 0
-WITH
-(COMPRESS_ALL_ROW_GROUPS =
+WITH (COMPRESS_ALL_ROW_GROUPS =
 ON
 );
 ```
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
-```sql
-COMPRESS_ALL_ROW_GROUPS
-```
+`COMPRESS_ALL_ROW_GROUPS`
 
-```sql
-OPEN
-```
+`OPEN`
 
-```sql
-CLOSED
-```
+`CLOSED`
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
 ```sql
 ALTER
-INDEX
-cci_FactInternetSales2
+INDEX cci_FactInternetSales2
 ON
 FactInternetSales2 REORGANIZE;
 ```
 
-```sql
-FactInternetSales2
-```
+`FactInternetSales2`
 
-```sql
-AdventureWorksDW2025
-```
+`AdventureWorksDW2025`
 
-```sql
-OPEN
-```
+`OPEN`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-COMPRESSED
-```
+`COMPRESSED`
 
 ```sql
 ALTER INDEX REORGANIZE
@@ -678,18 +546,13 @@ ALTER INDEX REORGANIZE
 ALTER INDEX REBUILD
 ```
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
-```sql
-CLOSED
-```
+`CLOSED`
 
 ```sql
 CREATE
-TABLE
-dbo.FactInternetSales2 (
+TABLE dbo.FactInternetSales2 (
 ProductKey [
 int
 ]
@@ -716,60 +579,43 @@ NULL
 );
 CREATE
 CLUSTERED COLUMNSTORE
-INDEX
-cci_FactInternetSales2
-ON
-dbo.FactInternetSales2;
+INDEX cci_FactInternetSales2
+ON dbo.FactInternetSales2;
 INSERT
-INTO
-dbo.FactInternetSales2
+INTO dbo.FactInternetSales2
 SELECT
 ProductKey, OrderDateKey, DueDateKey, ShipDateKey
-FROM
-dbo.FactInternetSales;
+FROM dbo.FactInternetSales;
 SELECT
 *
-FROM
-sys.column_store_row_groups;
+FROM sys.column_store_row_groups;
 ALTER
-INDEX
-cci_FactInternetSales2
+INDEX cci_FactInternetSales2
 ON
 FactInternetSales2
 REBUILD
 ;
 SELECT
 *
-FROM
-sys.column_store_row_groups;
+FROM sys.column_store_row_groups;
 ```
 
 ```sql
 ALTER INDEX REBUILD
 ```
 
-```sql
-REBUILD
-```
+`REBUILD`
 
-```sql
-REORGANIZE
-```
+`REORGANIZE`
 
-```sql
-COLUMNSTORE_ARCHIVE
-```
+`COLUMNSTORE_ARCHIVE`
 
-```sql
-COLUMNSTORE
-```
+`COLUMNSTORE`
 
 ```sql
 ALTER
-INDEX
-cci_fact3
-ON
-fact3
+INDEX cci_fact3
+ON fact3
 REBUILD
 PARTITION
 = 12;
@@ -806,14 +652,12 @@ NULL
 );
 CREATE
 CLUSTERED
-INDEX
-cci_SimpleTable
+INDEX cci_SimpleTable
 ON
 SimpleTable (ProductKey);
 CREATE
 CLUSTERED COLUMNSTORE
-INDEX
-cci_SimpleTable
+INDEX cci_SimpleTable
 ON
 SimpleTable
 ```

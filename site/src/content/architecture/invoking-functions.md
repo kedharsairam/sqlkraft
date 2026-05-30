@@ -68,8 +68,7 @@ SELECT
 EXECUTE
 CREATE AGGREGATE
 CREATE
-AGGREGATE
-using
+AGGREGATE using
 System;
 using
 System.Data;
@@ -86,6 +85,5 @@ Serializable
 ]
 [
 SqlUserDefinedAggregate(
-Format.UserDefined, //use clr serialization to serialize the intermediate
-result
+Format.UserDefined, //use clr serialization to serialize the intermediate result
 ```

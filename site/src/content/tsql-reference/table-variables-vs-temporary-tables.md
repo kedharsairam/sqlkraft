@@ -103,36 +103,20 @@ introduction of
 
 .
 
-### table
-
-```sql
-INTO
-```
+`INTO`
 
 ```sql
 SELECT ... INTO
 ```
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
-```sql
-tempdb
-```
+`tempdb`

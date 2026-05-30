@@ -71,8 +71,6 @@ LOGIN
 
 statement. For example:
 
-SQL
-
 Logins can connect to SQL Server and have access (with limited permissions) to the
 
 database. To connect to a user-database, a login needs a corresponding identity at the
@@ -111,8 +109,6 @@ as possible.
 
 ```cmd
 AdventureWorks2022
-AdventureWorksDW2022
-master
-master
+AdventureWorksDW2022 master master
 AdventureWorks2022
 ```

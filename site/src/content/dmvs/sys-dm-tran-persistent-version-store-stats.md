@@ -14,6 +14,4 @@ SQL Server 2019 (15.x) and later versions SQL database in Microsoft Fabric Retur
 
 ## Syntax
 
-```sql
-persistent_version_store_size_kb
-```
+`persistent_version_store_size_kb`

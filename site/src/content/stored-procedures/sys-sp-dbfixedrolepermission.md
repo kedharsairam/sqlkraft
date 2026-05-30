@@ -14,17 +14,14 @@ Displays the permissions of a fixed database role. information in SQL Server 200
 
 ## Syntax
 
-```sql
-sp_dbfixedrolepermission
-```
+`sp_dbfixedrolepermission`
 
 ## Examples
 
 ### Example 1
 
 ```sql
-EXECUTE
-sp_dbfixedrolepermission;
+EXECUTE sp_dbfixedrolepermission;
 GO
 ```
 
@@ -38,15 +35,13 @@ DROP LOGIN
 ### Example 3
 
 ```sql
-sp_srvrolepermission
-sp_dbfixedrolepermission
+sp_srvrolepermission sp_dbfixedrolepermission
 ```
 
 ### Example 4
 
 ```sql
-sp_srvrolepermission
-sp_dbfixedrolepermissio
+sp_srvrolepermission sp_dbfixedrolepermissio
 ```
 
 ### Example 5
@@ -60,21 +55,15 @@ GRANT
 
 ### Example 6
 
-```sql
-DENY
-```
+`DENY`
 
 ### Example 7
 
-```sql
-REVOKE
-```
+`REVOKE`
 
 ### Example 8
 
-```sql
-sys.fn_my_permissions
-```
+`sys.fn_my_permissions`
 
 ### Example 9
 
@@ -84,8 +73,6 @@ EXECUTE AS
 
 ### Example 10
 
-```sql
-DESX
-```
+`DESX`
 
 _(... and 15 more examples)_

@@ -86,9 +86,7 @@ excessive entries in the TokenAndPermUserStore cache - SQL Server
 
 This section lists best practices to optimize security workflow.
 
-```sql
-DROP
-```
+`DROP`
 
 ```sql
 GRANT/DENY/REVOKE
@@ -99,9 +97,7 @@ CREATE/ALTER/DROP
 LOGIN
 ```
 
-```sql
-SERVICE
-```
+`SERVICE`
 
 ```sql
 MASTER KEY

@@ -94,6 +94,5 @@ Instead, use
 object catalog view.
 
 ```sql
-sp_helptext
-sys.sql_modules
+sp_helptext sys.sql_modules
 ```

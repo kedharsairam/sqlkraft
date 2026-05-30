@@ -111,35 +111,21 @@ folder of the corresponding database.
 
 ### Direct recursion
 
-```sql
-OBJECT_ID
-```
+`OBJECT_ID`
 
-```sql
-OBJECT_NAME
-```
+`OBJECT_NAME`
 
-```sql
-OBJECTPROPERTY
-```
+`OBJECTPROPERTY`
 
-```sql
-OBJECTPROPERTYEX
-```
+`OBJECTPROPERTYEX`
 
-```sql
-LOGON
-```
+`LOGON`
 
-```sql
-PRINT
-```
+`PRINT`
 
 ```sql
 -
 f
 ```
 
-```sql
-CREATE_TYPE
-```
+`CREATE_TYPE`

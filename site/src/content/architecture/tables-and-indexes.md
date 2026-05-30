@@ -68,6 +68,4 @@ query performance on partitioned objects.
 
 Note
 
-```sql
-sp_addlinkedsrvlogin
-```
+`sp_addlinkedsrvlogin`

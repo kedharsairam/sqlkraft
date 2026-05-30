@@ -28,15 +28,11 @@ sys.fn_cdc_map_lsn_to_time ( lsn_value )
 
 ### Example 2
 
-```sql
-sys.fn_cdc_map_lsn_to_time
-```
+`sys.fn_cdc_map_lsn_to_time`
 
 ### Example 3
 
-```sql
-HumanResources_Employee
-```
+`HumanResources_Employee`
 
 ### Example 4
 

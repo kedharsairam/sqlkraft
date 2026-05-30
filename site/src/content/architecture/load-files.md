@@ -114,8 +114,5 @@ prompt or in a batch file or script.
 Expand table
 
 ```sql
-move
-copy
-xcopy
-robocopy
+move copy xcopy robocopy
 ```

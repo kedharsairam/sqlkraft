@@ -6,8 +6,6 @@ tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 When processing complex Transact-SQL statements, the relational engine can have difficulty
 
 determining which expressions can be parameterized. To increase the ability of the relational
@@ -360,37 +358,23 @@ Pack upgrades: Parameter names, the choice of literals that are parameterized, a
 
 spacing in the parameterized text.
 
-```sql
-sp_executesql
-```
+`sp_executesql`
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
 ```sql
 ALTER DATABASE
 ```
 
-```sql
-FORCED
-```
+`FORCED`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 SELECT
@@ -421,117 +405,67 @@ ProductSubcategoryID = 4;
 %
 ```
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
-```sql
-FORCED
-```
+`FORCED`
 
 ```sql
 ALTER DATABASE
 ```
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
-```sql
-FORCED
-```
+`FORCED`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-INSERT...EXECUTE
-```
+`INSERT...EXECUTE`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-ANSI_PADDING
-```
+`ANSI_PADDING`
 
-```sql
-ANSI_NULLS
-```
+`ANSI_NULLS`
 
-```sql
-OFF
-```
+`OFF`
 
 ```sql
 WHERE T.col2 >= @bb
 ```
 
-```sql
-RECOMPILE
-```
+`RECOMPILE`
 
-```sql
-COMPUTE
-```
+`COMPUTE`
 
 ```sql
 WHERE CURRENT OF
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-IF
-```
+`IF`
 
-```sql
-TOP
-```
+`TOP`
 
-```sql
-TABLESAMPLE
-```
+`TABLESAMPLE`
 
-```sql
-HAVING
-```
+`HAVING`
 
 ```sql
 GROUP BY
@@ -541,45 +475,27 @@ GROUP BY
 ORDER BY
 ```
 
-```sql
-OUTPUT...INTO
-```
+`OUTPUT...INTO`
 
 ```sql
 FOR XML
 ```
 
-```sql
-OPENROWSET
-```
+`OPENROWSET`
 
-```sql
-OPENQUERY
-```
+`OPENQUERY`
 
-```sql
-OPENDATASOURCE
-```
+`OPENDATASOURCE`
 
-```sql
-OPENXML
-```
+`OPENXML`
 
-```sql
-FULLTEXT
-```
+`FULLTEXT`
 
-```sql
-LIKE
-```
+`LIKE`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-IDENTITY
-```
+`IDENTITY`
 
 ```sql
 +
@@ -601,25 +517,15 @@ IDENTITY
 %
 ```
 
-```sql
-CASE
-```
+`CASE`
 
-```sql
-FAST
-```
+`FAST`
 
-```sql
-MAXDOP
-```
+`MAXDOP`
 
-```sql
-MAXRECURSION
-```
+`MAXRECURSION`
 
-```sql
-sys.syscacheobjects
-```
+`sys.syscacheobjects`
 
 ```sql
 <
@@ -657,22 +563,12 @@ sys.syscacheobjects
 <>
 ```
 
-```sql
-ALL
-```
+`ALL`
 
-```sql
-ANY
-```
+`ANY`
 
-```sql
-SOME
-```
+`SOME`
 
-```sql
-BETWEEN
-```
+`BETWEEN`
 
-```sql
-IN
-```
+`IN`

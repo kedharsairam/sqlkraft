@@ -65,9 +65,7 @@ following query returns the <
 > element:
 
 ```sql
-ROOT
-fn:string-length() as xs:integer
-fn:string-length($arg as xs:string?) as xs:integer
+ROOT fn:string-length() as xs:integer fn:string-length($arg as xs:string?) as xs:integer
 DECLARE @x xml;
 SET @x='<ROOT>Hello</ROOT>';
 SELECT @x.query('/ROOT[string-length()=5]');

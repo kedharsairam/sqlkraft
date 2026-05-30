@@ -50,13 +50,9 @@ N
 'table_qualifier'
 ]
 [ , [ @f
-U
-se
-P
-attern = ] f
-U
-se
-P
-attern ]
+U se
+P attern = ] f
+U se
+P attern ]
 [ ; ]
 ```

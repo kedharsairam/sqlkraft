@@ -72,7 +72,6 @@ void * srv_paramdata (
 SRV_PROC *
 srvproc
 ,
-int
-n
+int n
 );
 ```

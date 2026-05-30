@@ -11,12 +11,10 @@ pubDate: 2025-03-15
 USE <DBName>
 go
 DECLARE @objid INT,@objtype NVARCHAR(50),@objtypicalstm NVARCHAR(4000),@objencrypted BIT
-DECLARE @objschemaname nvarchar(255), @objname nvarchar(255)
-set @objschemaname='<Schema_name>'
+DECLARE @objschemaname nvarchar(255), @objname nvarchar(255) set @objschemaname='<Schema_name>'
 set @objname='<object_name>'
 SELECT TOP 1 @objid=o,@objname = n,@objtype = t,@objtypicalstm=s,@objencrypted = (SELECT ([encrypted]) FROM syscomments WHERE [id] = x.o and colid = 1)
-FROM
-(
+FROM (
 SELECT object_id o, name n,
 CASE WHEN [type] = 'P' THEN N'PROCEDURE'
 WHEN [type] = 'V' THEN 'VIEW'
@@ -34,10 +32,8 @@ AND name = @objname AND (SCHEMA_NAME([schema_id]) = COALESCE(@objschemaname,'dbo
 SET NOCOUNT ON
 IF @objencrypted <> 0
 BEGIN
-IF EXISTS
-(
-SELECT * FROM sys.dm_exec_connections ec JOIN sys.endpoints e
-on (ec.[endpoint_id]=e.[endpoint_id])
+IF EXISTS (
+SELECT * FROM sys.dm_exec_connections ec JOIN sys.endpoints e on (ec.[endpoint_id]=e.[endpoint_id])
 WHERE e.[name]='Dedicated Admin Connection'
 AND ec.[session_id] = @@SPID
 )

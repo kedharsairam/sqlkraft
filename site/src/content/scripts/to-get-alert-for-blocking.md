@@ -25,9 +25,7 @@ CREATE proc [dbo].[BlockingMonitor]
 @Recipients varchar(2000), -- Recipient(s) of this email (; separated in case of multiple recipients).
 @IsDBMailEnabled bit=1,
 @MailProfile varchar(100) -- Mail profile name which exists on the target database server
-)
-as
-begin
+) as begin
 
 SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
 SET NOCOUNT ON
@@ -80,10 +78,8 @@ Set @waittime = @waittime * 1000 -- Convert to miliseconds
 /* Check sys.configurations to see if DB Mail has been turned on */
 Select
 @IsDBMailEnabled = CONVERT(INT, ISNULL(value, value_in_use))
-From
-sys.configurations
-Where
-name LIKE 'Database Mail XPs';
+From sys.configurations
+Where name LIKE 'Database Mail XPs';
 /* If DB Mail is not active, fail out of the process, otherwise proceed */
 --If @IsDBMailEnabled = 0
 -- Begin
@@ -93,8 +89,7 @@ name LIKE 'Database Mail XPs';
 -- Begin
 
 /* Gather all of our information where the wait time exceeds the parameter value we supplied */
-Insert Into #Blocking
-(WaitInSeconds, BlockingSessionId, DatabaseName, BlockingUser, BlockingLocation, BlockingSQL,
+Insert Into #Blocking (WaitInSeconds, BlockingSessionId, DatabaseName, BlockingUser, BlockingLocation, BlockingSQL,
 BlockedSessionId, BlockedUser, BlockedLocation, BlockedSQL, [Blocked Individual Query], wait_type,programname)
 Select
 Waits.wait_duration_ms / 1000 as WaitInSeconds,
@@ -107,15 +102,12 @@ Blocked.session_id as BlockedSessionId,
 BlockedSess.login_name as BlockedUser,
 BlockedSess.host_name as BlockedLocation,
 BlockedSQL.text as BlockedSQL,
-SUBSTRING (BlockedSQL.text, -- String
-(BlockedReq.statement_start_offset/2) + 1, -- Starting point
-((CASE -- Length
+SUBSTRING (BlockedSQL.text, -- String (BlockedReq.statement_start_offset/2) + 1, -- Starting point ((CASE -- Length
 WHEN BlockedReq.statement_end_offset = -1 THEN LEN(CONVERT(NVARCHAR(MAX), BlockedSQL.text)) * 2
 ELSE BlockedReq.statement_end_offset
 END - BlockedReq.statement_start_offset)/2) + 1) as [Blocked Individual Query],
 Waits.wait_type,Sess.program_name
-From
-sys.dm_exec_connections Blocking
+From sys.dm_exec_connections Blocking
 Join sys.dm_exec_requests Blocked ON (Blocking.session_id = Blocked.blocking_session_id)
 Join sys.dm_exec_sessions Sess ON (Blocking.session_id = sess.session_id)
 Left Outer Join sys.dm_tran_session_transactions st ON (Blocking.session_id = st.session_id)
@@ -209,15 +201,13 @@ Select @MailSubject = CONVERT(VARCHAR(50),@@servername) + ' Blocked Processes Al
 Insert Into #dbmail_profile
 Exec msdb.dbo.sysmail_help_profileaccount_sp;
 /* Extact our mail profile */
-if ((@MailProfile is null) or (@MailProfile=''))
-begin
+if ((@MailProfile is null) or (@MailProfile='')) begin
 Select
 @MailProfile = @MailProfile
 From
 #dbmail_profile
 Where sequencenumber = 1;
-end
-print @Body
+end print @Body
 /* Send the e-mail */
 EXEC msdb.dbo.sp_send_dbmail
 @profile_name = @MailProfile,

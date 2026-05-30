@@ -119,13 +119,9 @@ Configure Parallel Index Operations
 DROP INDEX
 ```
 
-```sql
-MAXDOP
-```
+`MAXDOP`
 
-```sql
-ONLINE
-```
+`ONLINE`
 
 ```sql
 MOVE TO
@@ -143,9 +139,7 @@ ONLINE = ON
 DROP INDEX
 ```
 
-```sql
-ONLINE
-```
+`ONLINE`
 
 ```sql
 ONLINE = ON
@@ -155,29 +149,17 @@ ONLINE = ON
 MOVE TO
 ```
 
-```sql
-sys.indexes
-```
+`sys.indexes`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-name
-```
+`name`
 
-```sql
-sys.indexes
-```
+`sys.indexes`
 
-```sql
-sys.tables
-```
+`sys.tables`
 
-```sql
-object_id
-```
+`object_id`
 
 ```sql
 DROP
@@ -188,6 +170,4 @@ INDEX
 DROP INDEX
 ```
 
-```sql
-MAXDOP
-```
+`MAXDOP`

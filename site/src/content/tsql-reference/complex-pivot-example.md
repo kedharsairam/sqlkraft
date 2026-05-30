@@ -19,8 +19,6 @@ results are
 
 .
 
-SQL
-
 Here's the result set.
 
 A common scenario where
@@ -37,8 +35,6 @@ number of purchase orders placed by certain employees. The following query provi
 
 report, ordered by vendor.
 
-SQL
-
 #### Output
 
 Here's a partial result set.
@@ -46,8 +42,6 @@ Here's a partial result set.
 The results returned by this subselect statement are pivoted on the
 
 column.
-
-SQL
 
 The unique values returned by the
 
@@ -85,29 +79,19 @@ for each employee.
 
 Important
 
-```sql
-DaysToManufacture
-```
+`DaysToManufacture`
 
 ```sql
 [3]
 ```
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-PIVOT
-```
+`PIVOT`
 
-```sql
-PurchaseOrderHeader
-```
+`PurchaseOrderHeader`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ```sql
 -- Pivot table with one row and five columns
@@ -116,8 +100,7 @@ SELECT
 AS
 CostSortedByProductionDays,
 [0], [1], [2], [3], [4]
-FROM
-(
+FROM (
 SELECT
 DaysToManufacture,
 StandardCost
@@ -126,14 +109,11 @@ Production.Product
 )
 AS
 SourceTable
-PIVOT
-(
-AVG
-(StandardCost)
+PIVOT (
+AVG (StandardCost)
 FOR
 DaysToManufacture
-IN
-([0], [1], [2], [3], [4])
+IN ([0], [1], [2], [3], [4])
 )
 AS
 PivotTable;
@@ -164,17 +144,11 @@ AS
 Emp4,
 ```
 
-```sql
-EmployeeID
-```
+`EmployeeID`
 
-```sql
-EmployeeID
-```
+`EmployeeID`
 
-```sql
-EmployeeID
-```
+`EmployeeID`
 
 ```sql
 250
@@ -196,48 +170,34 @@ EmployeeID
 260
 ```
 
-```sql
-PurchaseOrderID
-```
+`PurchaseOrderID`
 
-```sql
-COUNT
-```
+`COUNT`
 
-```sql
-PurchaseOrderID
-```
+`PurchaseOrderID`
 
-```sql
-COUNT
-```
+`COUNT`
 
 ```sql
 [260]
 AS
 Emp5
-FROM
-(
+FROM (
 SELECT
 PurchaseOrderID,
 EmployeeID, VendorID
 FROM
 Purchasing.PurchaseOrderHeader
 ) p
-PIVOT
-(
-COUNT
-(PurchaseOrderID)
+PIVOT (
+COUNT (PurchaseOrderID)
 FOR
 EmployeeID
-IN
-([250], [251], [256], [257], [260])
+IN ([250], [251], [256], [257], [260])
 )
-AS
-pvt
+AS pvt
 ORDER
-BY
-pvt.VendorID;
+BY pvt.VendorID;
 VendorID    Emp1        Emp2        Emp3        Emp4        Emp5
 ----------- ----------- ----------- ----------- ----------- -----------
 1492        2           5           4           4           4

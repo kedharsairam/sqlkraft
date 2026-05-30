@@ -80,14 +80,8 @@ The log becomes 70 percent full.
 ALTER DATABASE
 ```
 
-```sql
-SHUTDOWN
-```
+`SHUTDOWN`
 
-```sql
-AUTO_CLOSE
-```
+`AUTO_CLOSE`
 
-```sql
-ON
-```
+`ON`

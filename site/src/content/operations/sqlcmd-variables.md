@@ -64,7 +64,6 @@ SQL project file sample and syntax
 ```cmd
 .sqlproj
 <ItemGroup>
-EnvironmentName
-testing
+EnvironmentName testing
 DefaultValue
 ```

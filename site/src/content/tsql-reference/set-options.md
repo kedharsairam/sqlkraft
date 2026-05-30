@@ -101,21 +101,15 @@ indexes, the Database Engine implements a B+ tree. This does not apply to column
 
 indexes or indexes on memory-optimized tables. For more information, see the
 
-SQL
-
 .
 
 #### Option
 
 #### Applies to
 
-```sql
-is_disabled
-```
+`is_disabled`
 
-```sql
-sys.indexes
-```
+`sys.indexes`
 
 ```sql
 ALTER INDEX REBUILD
@@ -125,37 +119,21 @@ ALTER INDEX REBUILD
 CREATE INDEX WITH DROP_EXISTING
 ```
 
-```sql
-ONLINE
-```
+`ONLINE`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-ALLOW_ROW_LOCKS
-```
+`ALLOW_ROW_LOCKS`
 
-```sql
-ALLOW_PAGE_LOCKS
-```
+`ALLOW_PAGE_LOCKS`
 
-```sql
-OPTIMIZE_FOR_SEQUENTIAL_KEY
-```
+`OPTIMIZE_FOR_SEQUENTIAL_KEY`
 
-```sql
-IGNORE_DUP_KEY
-```
+`IGNORE_DUP_KEY`
 
-```sql
-STATISTICS_NORECOMPUTE
-```
+`STATISTICS_NORECOMPUTE`
 
-```sql
-sys.indexes
-```
+`sys.indexes`
 
 ```sql
 ALLOW_ROW_LOCKS = ON

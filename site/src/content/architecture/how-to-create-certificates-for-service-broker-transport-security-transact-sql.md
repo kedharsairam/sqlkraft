@@ -63,8 +63,6 @@ Create a certificate in the
 
 database.
 
-SQL
-
 CREATE CERTIFICATE (Transact-SQL)
 
 CREATE ENDPOINT (Transact-SQL)
@@ -77,10 +75,8 @@ CREATE CERTIFICATE
 CREATE
 CERTIFICATE
 CREATE ENDPOINT
-ALTER ENDPOINT
-master
-USE
-master
+ALTER ENDPOINT master
+USE master
 ;
 GO
 -- Create a certificate owned by dbo.

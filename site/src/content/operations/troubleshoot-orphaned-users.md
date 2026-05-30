@@ -108,9 +108,6 @@ section. For more information, see
 .
 
 ```cmd
-master
-master
-master
-sp_change_users_login
+master master master sp_change_users_login
 ALTER USER ... WITH LOGIN
 ```

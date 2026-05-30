@@ -100,13 +100,5 @@ The scope of an OLE Automation object is a batch. All references to the object m
 contained in a single batch, stored procedure, or trigger.
 
 ```sql
-sp_OACreate
-sp_OAGetProperty
-sp_OASetProperty
-sp_OAMethod
-sp_OAGetErrorInfo
-sp_OADestroy
-sp_OACreate
-sp_OAGetProperty
-sp_OAMethod
+sp_OACreate sp_OAGetProperty sp_OASetProperty sp_OAMethod sp_OAGetErrorInfo sp_OADestroy sp_OACreate sp_OAGetProperty sp_OAMethod
 ```

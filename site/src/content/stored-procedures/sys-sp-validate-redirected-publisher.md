@@ -14,6 +14,4 @@ Verifies that the current host for the publishing database is capable of support
 
 ## Syntax
 
-```sql
-sp_get_redirected_publisher
-```
+`sp_get_redirected_publisher`

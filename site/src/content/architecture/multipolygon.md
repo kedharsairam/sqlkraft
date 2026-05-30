@@ -39,8 +39,6 @@ SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
 
-SQL
-
 database in Microsoft Fabric
 
 A
@@ -100,5 +98,3 @@ Polygon
 The following examples show accepted
 
 instances.
-
-SQL

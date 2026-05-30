@@ -74,18 +74,10 @@ recommendations and best practices documented here are based on real-world
 
 experience during the development and deployment of real-world OLTP systems.
 
-```sql
-PAGELATCH_EX
-```
+`PAGELATCH_EX`
 
-```sql
-PAGELATCH_SH
-```
+`PAGELATCH_SH`
 
-```sql
-PAGEIOLATCH_EX
-```
+`PAGEIOLATCH_EX`
 
-```sql
-PAGEIOLATCH_SH
-```
+`PAGEIOLATCH_SH`

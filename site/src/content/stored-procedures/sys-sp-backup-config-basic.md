@@ -26,8 +26,7 @@ SQL Server 2016 (13.x) and later versions Configures the SQL Server managed back
 ## Syntax
 
 ```sql
-EXECUTE
-managed_backup.sp_backup_config_basic
+EXECUTE managed_backup.sp_backup_config_basic
 [ @enable_backup = ] { 0 | 1 }
 , [ @database_name = ]
 'database_name'

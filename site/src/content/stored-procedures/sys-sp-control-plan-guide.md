@@ -14,6 +14,4 @@ system stored procedure is used to drop, enable, or disable a plan Transact-SQL 
 
 ## Syntax
 
-```sql
-sp_control_plan_guide
-```
+`sp_control_plan_guide`

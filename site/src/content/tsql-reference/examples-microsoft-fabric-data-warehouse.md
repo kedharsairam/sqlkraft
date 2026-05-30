@@ -19,8 +19,6 @@ the external Hadoop table. All rows are returned to PDW where the
 
 clause is applied.
 
-SQL
-
 For more information, see
 
 FOR TIMESTAMP query hint
@@ -37,8 +35,6 @@ Data Warehouse. The following sample query returns data as it appeared on March 
 
 7:39:35.28 PM UTC. The time zone is always in UTC.
 
-SQL
-
 The following example shows a
 
 statement with a label in the
@@ -50,8 +46,6 @@ information, see
 Query labels in Fabric Data Warehouse
 
 .
-
-SQL
 
 Query hints (Transact-SQL)
 
@@ -67,29 +61,17 @@ Last updated on 11/18/2025
 
 Related content
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-TIMESTAMP
-```
+`TIMESTAMP`
 
-```sql
-OPTION
-```
+`OPTION`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-OPTION
-```
+`OPTION`
 
 ```sql
 SELECT
@@ -99,8 +81,7 @@ External_Table_AS A
 WHERE
 ID
 < 1000000
-OPTION
-(
+OPTION (
 FORCE
 EXTERNALPUSHDOWN);
 SELECT
@@ -110,8 +91,7 @@ External_Table_AS A
 WHERE
 ID
 < 10
-OPTION
-(
+OPTION (
 DISABLE
 EXTERNALPUSHDOWN);
 ```
@@ -119,8 +99,7 @@ EXTERNALPUSHDOWN);
 ```sql
 SELECT
 OrderDateKey,
-SUM
-(SalesAmount)
+SUM (SalesAmount)
 AS
 TotalSales
 FROM
@@ -131,8 +110,7 @@ OrderDateKey
 ORDER
 BY
 OrderDateKey
-OPTION
-(
+OPTION (
 FOR
 TIMESTAMP
 AS
@@ -148,8 +126,7 @@ SELECT
 *
 FROM
 FactResellerSales
-OPTION
-(LABEL =
+OPTION (LABEL =
 'q17'
 );
 ```

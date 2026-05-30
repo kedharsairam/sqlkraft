@@ -31,57 +31,39 @@ N
 
 ### Example 1
 
-```sql
-sp_dbmmonitorupdate
-```
+`sp_dbmmonitorupdate`
 
 ### Example 2
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 3
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 4
 
-```sql
-NULL
-```
+`NULL`
 
 ### Example 5
 
-```sql
-sp_dbmmonitorupdate
-```
+`sp_dbmmonitorupdate`
 
 ### Example 6
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 7
 
-```sql
-sp_dbmmonitorupdate
-```
+`sp_dbmmonitorupdate`
 
 ### Example 8
 
-```sql
-AdventureWorks2022
-```
+`AdventureWorks2022`
 
 ### Example 9
 
 ```sql
-USE
-msdb;
-EXECUTE
-sp_dbmmonitorupdate AdventureWorks2022;
+USE msdb;
+EXECUTE sp_dbmmonitorupdate AdventureWorks2022;
 ```

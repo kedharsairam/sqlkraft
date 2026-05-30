@@ -46,8 +46,6 @@ estimation.
 
 Consider this stored procedure:
 
-SQL
-
 During optimization of the
 
 statement in the procedure, the Query Optimizer tries to
@@ -72,51 +70,29 @@ replaces
 
 in the query and the expression is evaluated in a SET statement instead of in the query.
 
-SQL
+`UPPER`
 
-```sql
-UPPER
-```
+`LOWER`
 
-```sql
-LOWER
-```
-
-```sql
-RTRIM
-```
+`RTRIM`
 
 ```sql
 DATEPART( YY only )
 ```
 
-```sql
-GETDATE
-```
+`GETDATE`
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-AND
-```
+`AND`
 
-```sql
-OR
-```
+`OR`
 
-```sql
-NOT
-```
+`NOT`
 
-```sql
-LIKE
-```
+`LIKE`
 
 ```sql
 IS NULL
@@ -126,9 +102,7 @@ IS NULL
 IS NOT NULL
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 OrderDate > @d+1
@@ -159,8 +133,7 @@ PROCEDURE
 MyProc( @d datetime )
 AS
 SELECT
-COUNT
-(*)
+COUNT (*)
 FROM
 Sales.SalesOrderHeader
 WHERE
@@ -178,8 +151,7 @@ DECLARE
 SET
 @d2 = @d+1
 SELECT
-COUNT
-(*)
+COUNT (*)
 FROM
 Sales.SalesOrderHeader
 ```

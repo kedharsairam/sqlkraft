@@ -13,10 +13,6 @@ This catalog view provides a list of the external language extension files in th
 
 ## Code Blocks
 
-```sql
-WINDOWS
-```
+`WINDOWS`
 
-```sql
-LINUX
-```
+`LINUX`

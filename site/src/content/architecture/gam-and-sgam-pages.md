@@ -102,6 +102,4 @@ DBCC PAGE
 0
 ```
 
-```sql
-sys.dm_db_database_page_allocations
-```
+`sys.dm_db_database_page_allocations`

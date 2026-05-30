@@ -7,8 +7,6 @@ tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 The following example creates a nonclustered composite index on the
 
 and
@@ -16,8 +14,6 @@ and
 columns of the
 
 table.
-
-SQL
 
 The following example creates a clustered index on the
 
@@ -27,13 +23,9 @@ table in the
 
 database.
 
-SQL
-
 The following example creates index IX_FF with two columns from the dbo.FactFinance table.
 
 The next statement rebuilds the index with one more column and keeps the existing name.
-
-SQL
 
 ## E. Create a unique nonclustered index
 
@@ -51,13 +43,9 @@ uniqueness on the data inserted into the
 
 column.
 
-SQL
-
 The following query tests the uniqueness constraint by attempting to insert a row with the
 
 same value as that in an existing row.
-
-SQL
 
 The resulting error message is:
 
@@ -83,8 +71,6 @@ statement is executed. A count of rows in the
 
 table returns the number of rows inserted.
 
-SQL
-
 Here are the results of the second
 
 statement.
@@ -104,8 +90,6 @@ The same statements are executed again, but with
 set to
 
 .
-
-SQL
 
 Here are the results of the second
 
@@ -139,13 +123,9 @@ and
 
 are also set.
 
-SQL
-
 The following example creates a view and an index on that view. Two queries are included that
 
 use the indexed view.
-
-SQL
 
 ### Query
 
@@ -175,8 +155,6 @@ menu in SQL Server Management Studio, select
 
 before executing the query.
 
-SQL
-
 ## J. Create a partitioned index
 
 ## K. Creating a filtered index
@@ -193,8 +171,6 @@ database. This example assumes the
 
 partitioned index sample has been installed.
 
-SQL
-
 The following example creates a filtered index on the Production.BillOfMaterials table in the
 
 database. The filter predicate can include columns that are not key
@@ -203,11 +179,7 @@ columns in the filtered index. The predicate in this example selects only the ro
 
 EndDate is non-NULL.
 
-SQL
-
 The following example creates an index on a nonpartitioned table by using row compression.
-
-SQL
 
 The following example creates an index on a partitioned table by using row compression on all
 
@@ -215,11 +187,7 @@ partitions of the index.
 
 ### Applies to
 
-### xml
-
 ## M. Create an index with XML compression
-
-SQL
 
 The following example creates an index on a partitioned table by using page compression on
 
@@ -231,8 +199,6 @@ through
 
 of the index.
 
-SQL
-
 : SQL Server 2022 (16.x) and later versions, Azure SQL Database, SQL database in
 
 Microsoft Fabric, and Azure SQL Managed Instance.
@@ -243,13 +209,9 @@ At least one column in the index must be the
 
 data type.
 
-SQL
-
 The following example creates an index on a partitioned table by using XML compression on all
 
 partitions of the index.
-
-SQL
 
 ### Applies to
 
@@ -263,43 +225,25 @@ SQL
 
 Microsoft Fabric, and Azure SQL Managed Instance
 
-SQL
-
 The following examples use the
 
 option to specify different strategies for
 
 dealing with blocking.
 
-SQL
-
-SQL
-
 ### Applies to
 
-```sql
-SalesQuota
-```
+`SalesQuota`
 
-```sql
-SalesYTD
-```
+`SalesYTD`
 
-```sql
-Sales.SalesPerson
-```
+`Sales.SalesPerson`
 
-```sql
-VendorID
-```
+`VendorID`
 
-```sql
-ProductVendor
-```
+`ProductVendor`
 
-```sql
-Purchasing
-```
+`Purchasing`
 
 ```sql
 CREATE
@@ -310,8 +254,7 @@ ProductVendor (VendorID);
 CREATE
 INDEX
 IX_VendorID
-ON
-dbo.ProductVendor (VendorID
+ON dbo.ProductVendor (VendorID
 DESC
 ,
 Name
@@ -332,8 +275,7 @@ NONCLUSTERED
 INDEX
 IX_SalesPerson_SalesQuota_SalesYTD
 ON
-Sales.SalesPerson
-(SalesQuota, SalesYTD);
+Sales.SalesPerson (SalesQuota, SalesYTD);
 ```
 
 ```sql
@@ -342,16 +284,14 @@ CLUSTERED
 INDEX
 IX_ProductVendor_VendorID
 ON
-Purchasing..ProductVendor
-(VendorID);
+Purchasing..ProductVendor (VendorID);
 ```
 
 ```sql
 CREATE
 INDEX
 IX_FF
-ON
-dbo.FactFinance (FinanceKey
+ON dbo.FactFinance (FinanceKey
 ASC
 , DateKey
 ASC
@@ -360,51 +300,33 @@ ASC
 CREATE
 INDEX
 IX_FF
-ON
-dbo.FactFinance (FinanceKey, DateKey, OrganizationKey
+ON dbo.FactFinance (FinanceKey, DateKey, OrganizationKey
 DESC
 )
-WITH
-(DROP_EXISTING =
+WITH (DROP_EXISTING =
 ON
 );
 ```
 
-```sql
-Name
-```
+`Name`
 
-```sql
-Production.UnitMeasure
-```
+`Production.UnitMeasure`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-Name
-```
+`Name`
 
-```sql
-IGNORE_DUP_KEY
-```
+`IGNORE_DUP_KEY`
 
-```sql
-ON
-```
+`ON`
 
-```sql
-OFF
-```
+`OFF`
 
 ```sql
 #Test
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 CREATE
@@ -431,14 +353,12 @@ INTO
 Production.UnitMeasure (UnitMeasureCode,
 Name
 , ModifiedDate)
-VALUES
-(
+VALUES (
 'OC'
 ,
 'Ounces'
 ,
-GETDATE
-());
+GETDATE ());
 Server: Msg 2601, Level 14, State 1, Line 1
 Cannot insert duplicate key row in object 'UnitMeasure' with unique index
 'AK_UnitMeasure_Name'. The statement has been terminated.
@@ -448,12 +368,9 @@ Cannot insert duplicate key row in object 'UnitMeasure' with unique index
 CREATE
 TABLE
 #
-Test
-(C1
-NVARCHAR
-(10), C2
-NVARCHAR
-(50), C3 DATETIME);
+Test (C1
+NVARCHAR (10), C2
+NVARCHAR (50), C3 DATETIME);
 GO
 CREATE
 UNIQUE
@@ -461,33 +378,21 @@ INDEX
 AK_Index
 ON
 #
-Test
-(C2)
+Test (C2)
 ```
 
-```sql
-INSERT
-```
+`INSERT`
+
+`Production.UnitMeasure`
+
+`IGNORE_DUP_KEY`
+
+`OFF`
+
+`INSERT`
 
 ```sql
-Production.UnitMeasure
-```
-
-```sql
-IGNORE_DUP_KEY
-```
-
-```sql
-OFF
-```
-
-```sql
-INSERT
-```
-
-```sql
-WITH
-(IGNORE_DUP_KEY =
+WITH (IGNORE_DUP_KEY =
 ON
 );
 GO
@@ -495,14 +400,12 @@ INSERT
 INTO
 #
 Test
-VALUES
-(N
+VALUES (N
 'OC'
 , N
 'Ounces'
 ,
-GETDATE
-());
+GETDATE ());
 INSERT
 INTO
 #
@@ -513,13 +416,10 @@ FROM
 Production.UnitMeasure;
 GO
 SELECT
-COUNT
-(*)
+COUNT (*)
 AS
 [
-Number
-of
-rows
+Number of rows
 ]
 FROM
 #
@@ -539,12 +439,9 @@ Number of rows
 CREATE
 TABLE
 #
-Test
-(C1
-NVARCHAR
-(10), C2
-NVARCHAR
-(50), C3 DATETIME);
+Test (C1
+NVARCHAR (10), C2
+NVARCHAR (50), C3 DATETIME);
 GO
 CREATE
 UNIQUE
@@ -552,10 +449,8 @@ INDEX
 AK_Index
 ON
 #
-Test
-(C2)
-WITH
-(IGNORE_DUP_KEY =
+Test (C2)
+WITH (IGNORE_DUP_KEY =
 OFF
 );
 GO
@@ -563,14 +458,12 @@ INSERT
 INTO
 #
 Test
-VALUES
-(N
+VALUES (N
 'OC'
 , N
 'Ounces'
 ,
-GETDATE
-());
+GETDATE ());
 INSERT
 INTO
 #
@@ -581,13 +474,10 @@ FROM
 Production.UnitMeasure;
 GO
 SELECT
-COUNT
-(*)
+COUNT (*)
 AS
 [
-Number
-of
-rows
+Number of rows
 ]
 FROM
 #
@@ -602,37 +492,21 @@ Test
 GO
 ```
 
-```sql
-Production.UnitMeasure
-```
+`Production.UnitMeasure`
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
-```sql
-ProductID
-```
+`ProductID`
 
-```sql
-Production.WorkOrder
-```
+`Production.WorkOrder`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-DROP_EXISTING
-```
+`DROP_EXISTING`
 
-```sql
-FILLFACTOR
-```
+`FILLFACTOR`
 
-```sql
-PAD_INDEX
-```
+`PAD_INDEX`
 
 ```sql
 Server: Msg 2601, Level 14, State 1, Line 5
@@ -650,8 +524,7 @@ INDEX
 IX_WorkOrder_ProductID
 ON
 Production.WorkOrder(ProductID)
-WITH
-(FILLFACTOR = 80,
+WITH (FILLFACTOR = 80,
 PAD_INDEX =
 ON
 ,
@@ -686,46 +559,31 @@ WITH
 SCHEMABINDING
 ```
 
-```sql
-PostalCode
-```
+`PostalCode`
 
-```sql
-AddressLine1
-```
+`AddressLine1`
 
-```sql
-AddressLine2
-```
+`AddressLine2`
 
-```sql
-City
-```
+`City`
 
-```sql
-StateProvinceID
-```
+`StateProvinceID`
 
 ```sql
 AS
 SELECT
-SUM
-(UnitPrice * OrderQty * (1.00 - UnitPriceDiscount))
+SUM (UnitPrice * OrderQty * (1.00 - UnitPriceDiscount))
 AS
 Revenue,
 OrderDate, ProductID,
-COUNT_BIG
-(*)
+COUNT_BIG (*)
 AS
 COUNT
 FROM
 Sales.SalesOrderDetail
-AS
-od, Sales.SalesOrderHeader
-AS
-o
-WHERE
-od.SalesOrderID = o.SalesOrderID
+AS od, Sales.SalesOrderHeader
+AS o
+WHERE od.SalesOrderID = o.SalesOrderID
 GROUP
 BY
 OrderDate, ProductID;
@@ -742,21 +600,17 @@ GO
 -- This query can use the indexed view even though the view is
 -- not specified in the FROM clause.
 SELECT
-SUM
-(UnitPrice * OrderQty * (1.00 - UnitPriceDiscount))
+SUM (UnitPrice * OrderQty * (1.00 - UnitPriceDiscount))
 AS
 Rev,
 OrderDate, ProductID
 FROM
 Sales.SalesOrderDetail
-AS
-od
+AS od
 JOIN
 Sales.SalesOrderHeader
-AS
-o
-ON
-od.SalesOrderID = o.SalesOrderID
+AS o
+ON od.SalesOrderID = o.SalesOrderID
 AND
 ProductID
 BETWEEN
@@ -765,8 +619,7 @@ AND
 800
 AND
 OrderDate >=
-CONVERT
-(DATETIME,
+CONVERT (DATETIME,
 '05/01/2002'
 , 101)
 GROUP
@@ -781,26 +634,20 @@ GO
 -- This query can use the above indexed view
 SELECT
 OrderDate,
-SUM
-(UnitPrice * OrderQty * (1.00 - UnitPriceDiscount))
+SUM (UnitPrice * OrderQty * (1.00 - UnitPriceDiscount))
 AS
 Rev
 FROM
 Sales.SalesOrderDetail
-AS
-od
+AS od
 JOIN
 Sales.SalesOrderHeader
-AS
-o
-ON
-od.SalesOrderID = o.SalesOrderID
+AS o
+ON od.SalesOrderID = o.SalesOrderID
 AND
-DATEPART
-(mm, OrderDate) = 3
+DATEPART (mm, OrderDate) = 3
 AND
-DATEPART
-(yy, OrderDate) = 2002
+DATEPART (yy, OrderDate) = 2002
 GROUP
 BY
 OrderDate
@@ -819,24 +666,17 @@ INDEX
 IX_Address_PostalCode
 ON
 Person.Address (PostalCode)
-INCLUDE
-(AddressLine1, AddressLine2, City, StateProvinceID);
+INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID);
 GO
 SELECT
 AddressLine1, AddressLine2, City, StateProvinceID, PostalCode
 ```
 
-```sql
-TransactionsPS1
-```
+`TransactionsPS1`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ```sql
 FROM
@@ -887,8 +727,7 @@ INDEX
 IX_INDEX_1
 ON
 T1 (C2)
-WITH
-(DATA_COMPRESSION =
+WITH (DATA_COMPRESSION =
 ROW
 );
 GO
@@ -913,8 +752,7 @@ INDEX
 IX_PartTab2Col1
 ON
 PartitionTable1 (Col1)
-WITH
-(DATA_COMPRESSION =
+WITH (DATA_COMPRESSION =
 ROW
 );
 GO
@@ -924,17 +762,14 @@ INDEX
 IX_PartTab2Col1
 ON
 PartitionTable1 (Col1)
-WITH
-(
+WITH (
 DATA_COMPRESSION = PAGE
 ON
-PARTITIONS
-(1),
+PARTITIONS (1),
 DATA_COMPRESSION =
 ROW
 ON
-PARTITIONS
-(2
+PARTITIONS (2
 TO
 4)
 );
@@ -948,8 +783,7 @@ INDEX
 IX_INDEX_1
 ON
 T1 (C2)
-WITH
-(XML_COMPRESSION =
+WITH (XML_COMPRESSION =
 ON
 );
 GO
@@ -959,26 +793,20 @@ INDEX
 IX_PartTab2Col1
 ON
 PartitionTable1 (Col1)
-WITH
-(XML_COMPRESSION =
+WITH (XML_COMPRESSION =
 ON
 );
 GO
 ```
 
-```sql
-WAIT_AT_LOW_PRIORITY
-```
+`WAIT_AT_LOW_PRIORITY`
 
 ```sql
 -- Execute a resumable online index create statement with MAXDOP=1
 CREATE
-INDEX
-test_idx1
-ON
-test_table (col1)
-WITH
-(
+INDEX test_idx1
+ON test_table (col1)
+WITH (
 ONLINE
 =
 ON
@@ -989,15 +817,11 @@ ON
 );
 -- Executing the same command again (see above) after an index operation was paused,
 resumes automatically the index create operation.
--- Execute a resumable online index creates operation with MAX_DURATION set to 240
-minutes. After the time expires, the resumable index create operation is paused.
+-- Execute a resumable online index creates operation with MAX_DURATION set to 240 minutes. After the time expires, the resumable index create operation is paused.
 CREATE
-INDEX
-test_idx2
-ON
-test_table (col2)
-WITH
-(
+INDEX test_idx2
+ON test_table (col2)
+WITH (
 ONLINE
 =
 ON
@@ -1009,43 +833,31 @@ ON
 MAX_DURATION = 240);
 -- Pause a running resumable online index creation
 ALTER
-INDEX
-test_idx1
-ON
-test_table PAUSE;
+INDEX test_idx1
+ON test_table PAUSE;
 ALTER
-INDEX
-test_idx2
-ON
-test_table PAUSE;
+INDEX test_idx2
+ON test_table PAUSE;
 -- Resume a paused online index creation
 ALTER
-INDEX
-test_idx1
-ON
-test_table
+INDEX test_idx1
+ON test_table
 RESUME
 ;
 ALTER
-INDEX
-test_idx2
-ON
-test_table
+INDEX test_idx2
+ON test_table
 RESUME
 ;
 -- Abort resumable index create operation which is running or paused
 ALTER
-INDEX
-test_idx1
-ON
-test_table
+INDEX test_idx1
+ON test_table
 ABORT
 ;
 ALTER
-INDEX
-test_idx2
-ON
-test_table
+INDEX test_idx2
+ON test_table
 ABORT
 ;
 ```
@@ -1054,17 +866,12 @@ ABORT
 --Kill this session after waiting 5 minutes
 CREATE
 CLUSTERED
-INDEX
-idx_1
-ON
-dbo.T2 (a)
-WITH
-(
+INDEX idx_1
+ON dbo.T2 (a)
+WITH (
 ONLINE
 =
-ON
-(WAIT_AT_LOW_PRIORITY
-(MAX_DURATION = 5
+ON (WAIT_AT_LOW_PRIORITY (MAX_DURATION = 5
 MINUTES
 , ABORT_AFTER_WAIT =
 SELF
@@ -1073,14 +880,10 @@ GO
 --Kill blocker sessions
 CREATE
 CLUSTERED
-INDEX
-idx_1
-ON
-dbo.T2 (a)
-WITH
-(
+INDEX idx_1
+ON dbo.T2 (a)
+WITH (
 ONLINE
 =
-ON
-(WAIT_AT_LOW_PRIORITY
+ON (WAIT_AT_LOW_PRIORITY
 ```

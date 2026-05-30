@@ -39,8 +39,6 @@ that Service Broker is enabled in the AdventureWorks2008R2 database, and switch
 
 context to the database.
 
-SQL
-
 Copy and paste the following code into a Query Editor window, then run it to create the
 
 message types for the conversation. Because Service Broker objects are often referenced
@@ -63,8 +61,7 @@ home page.
 
 ```sql
 AdventureWorks2022
-USE
-master
+USE master
 ;
 GO
 ALTER

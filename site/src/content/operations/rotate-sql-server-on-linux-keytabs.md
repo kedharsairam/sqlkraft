@@ -112,9 +112,5 @@ create accounts and SPNs in our domain called
 .
 
 ```cmd
-network.privilegedadaccount
-mssql.conf
-mssql.conf
-network.privilegedadaccount
-sqluser
+network.privilegedadaccount mssql.conf mssql.conf network.privilegedadaccount sqluser
 ```

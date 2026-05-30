@@ -13,6 +13,4 @@ SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Retur
 
 ## Code Blocks
 
-```sql
-object_id
-```
+`object_id`

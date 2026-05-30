@@ -41,8 +41,6 @@ column to determine the state of the
 
 database option:
 
-SQL
-
 Open a SQL Server Profiler trace and review the Broker Remote Message Ack events. A value of
 
 1 in the
@@ -65,12 +63,9 @@ HONOR_BROKER_PRIORITY
 StarvationElevation
 HonorBrokerPriority
 HONOR_BROKER_PRIORITY
-SELECT
-name
-AS
-database_name,
-CASE
-is_broker_priority_honored
+SELECT name
+AS database_name,
+CASE is_broker_priority_honored
 WHEN
 0
 THEN
@@ -82,11 +77,8 @@ THEN
 N
 'ON'
 END
-AS
-is_broker_priority_honored
-FROM
-sys.databases
+AS is_broker_priority_honored
+FROM sys.databases
 ORDER
-BY
-database_name;
+BY database_name;
 ```

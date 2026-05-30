@@ -14,6 +14,4 @@ SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Retur
 
 ## Syntax
 
-```sql
-COLUMN_STORE_DELETE_BITMAP
-```
+`COLUMN_STORE_DELETE_BITMAP`

@@ -76,50 +76,30 @@ different
 
 Expand table
 
-```sql
-TokenPerm
-```
+`TokenPerm`
 
-```sql
-TokenAudit
-```
+`TokenAudit`
 
-```sql
-TokenAccessResult
-```
+`TokenAccessResult`
 
-```sql
-ObjectPerm
-```
+`ObjectPerm`
 
-```sql
-TokenAndPermUserStore
-```
+`TokenAndPermUserStore`
 
-```sql
-SecContextToken
-```
+`SecContextToken`
 
-```sql
-LoginToken
-```
+`LoginToken`
 
-```sql
-UserToken
-```
+`UserToken`
 
-```sql
-TokenPerm
-```
+`TokenPerm`
 
 ```sql
 TokenAudit
 SecCtxtACRUserStore
 ```
 
-```sql
-ACRUserStore
-```
+`ACRUserStore`
 
 ```sql
 <unique id>
@@ -133,10 +113,6 @@ ACRUserStore
 <user id>
 ```
 
-```sql
-SecCtxtACRUserStore
-```
+`SecCtxtACRUserStore`
 
-```sql
-ACRUserStore
-```
+`ACRUserStore`

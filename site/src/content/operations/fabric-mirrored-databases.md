@@ -88,7 +88,5 @@ schema, and several tables within the
 schema in your source database. Do not alter
 
 ```cmd
-changefeed
-changefeed
-changefeed
+changefeed changefeed changefeed
 ```

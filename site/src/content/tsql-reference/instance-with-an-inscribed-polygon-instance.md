@@ -13,8 +13,6 @@ to compute the symmetric difference of two
 
 instances.
 
-SQL
-
 The following example returns a
 
 that represents the symmetric difference
@@ -25,8 +23,6 @@ and a
 
 .
 
-SQL
-
 The following example returns a
 
 instance with an interior
@@ -35,41 +31,25 @@ ring that
 
 represents the symmetric difference between the two instances compared.
 
-SQL
-
 OGC Methods on Geometry Instances
 
 Last updated on 11/18/2025
 
 See Also
 
-```sql
-STSymDifference()
-```
+`STSymDifference()`
 
-```sql
-Polygon
-```
+`Polygon`
 
-```sql
-GeometryCollection
-```
+`GeometryCollection`
 
-```sql
-CurvePolygon
-```
+`CurvePolygon`
 
-```sql
-Polygon
-```
+`Polygon`
 
-```sql
-CurvePolygon
-```
+`CurvePolygon`
 
-```sql
-Polygon
-```
+`Polygon`
 
 ```sql
 DECLARE

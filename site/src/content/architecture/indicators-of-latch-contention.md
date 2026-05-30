@@ -188,13 +188,9 @@ by the number of waiting tasks (returned as
 
 ### Calculate Waits Over a Time Period
 
-```sql
-sys.dm_os_wait_stats
-```
+`sys.dm_os_wait_stats`
 
-```sql
-wait_type
-```
+`wait_type`
 
 ```sql
 PAGELATCH_*
@@ -204,58 +200,32 @@ PAGELATCH_*
 LATCH*
 ```
 
-```sql
-sys.dm_os_wait_stats
-```
+`sys.dm_os_wait_stats`
 
-```sql
-sys.dm_os_latch_stats
-```
+`sys.dm_os_latch_stats`
 
-```sql
-sys.dm_os_wait_stats
-```
+`sys.dm_os_wait_stats`
 
-```sql
-sys.dm_os_latch_stats
-```
+`sys.dm_os_latch_stats`
 
-```sql
-sys.dm_os_wait_stats
-```
+`sys.dm_os_wait_stats`
 
-```sql
-sys.dm_os_latch_stats
-```
+`sys.dm_os_latch_stats`
 
-```sql
-sys.dm_os_waiting_tasks
-```
+`sys.dm_os_waiting_tasks`
 
-```sql
-PAGELATCH_EX
-```
+`PAGELATCH_EX`
 
-```sql
-PAGELATCH_SH
-```
+`PAGELATCH_SH`
 
-```sql
-sys.dm_os_wait_stats
-```
+`sys.dm_os_wait_stats`
 
-```sql
-sys.dm_os_wait_stats
-```
+`sys.dm_os_wait_stats`
 
 ```sql
 wt_:type
 ```
 
-```sql
-wait_time_ms
-```
+`wait_time_ms`
 
-```sql
-waiting_tasks_count
-```
+`waiting_tasks_count`

@@ -8,8 +8,7 @@ pubDate: 2025-03-15
 ---
 
 ```sql
---add this line in the beginning of the all the commands
-set transaction isolation level isolationlevelname
+--add this line in the beginning of the all the commands set transaction isolation level isolationlevelname
 --ex: set transaction isolation level read committed
 --Isolation levels:
 							--pesimistic:

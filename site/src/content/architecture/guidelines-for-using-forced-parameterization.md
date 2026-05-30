@@ -94,34 +94,20 @@ You can override the behavior of forced parameterization by specifying that simp
 
 parameterization be attempted on a single query, and any others that are syntactically
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
 ```sql
 PARAMETERIZATION FORCED
 ```
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
-```sql
-FORCED
-```
+`FORCED`
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
-```sql
-FORCED
-```
+`FORCED`
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`

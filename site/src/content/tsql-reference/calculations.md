@@ -17,8 +17,6 @@ days to manufacture that's less than
 
 .
 
-SQL
-
 The following examples return all rows from the
 
 table. The first example returns total
@@ -27,15 +25,9 @@ sales and the discounts for each product. In the second example, the total reven
 
 for each product.
 
-SQL
-
 This query calculates the revenue for each product in each sales order.
 
-SQL
-
-```sql
-Product
-```
+`Product`
 
 ```sql
 R
@@ -45,9 +37,7 @@ R
 4
 ```
 
-```sql
-Product
-```
+`Product`
 
 ```sql
 FROM
@@ -87,23 +77,19 @@ GO
 USE
 AdventureWorks2025;
 GO
-SELECT
-p.Name
+SELECT p.Name
 AS
 ProductName,
 NonDiscountSales = (OrderQty * UnitPrice),
 Discounts = ((OrderQty * UnitPrice) * UnitPriceDiscount)
 FROM
 Production.Product
-AS
-p
+AS p
 INNER
 JOIN
 Sales.SalesOrderDetail
-AS
-sod
-ON
-p.ProductID = sod.ProductID
+AS sod
+ON p.ProductID = sod.ProductID
 ORDER
 BY
 ProductName

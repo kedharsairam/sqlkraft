@@ -1,9 +1,16 @@
 ---
-// SearchPalette — global search overlay (v5)
+// SearchPalette — global search overlay (v6 — native macOS Spotlight)
 // Pure Vanilla JS. No third-party dependencies.
 // Keyboard: Cmd+K / Ctrl+K to open, Esc to close
 // ArrowUp/Down to navigate, Enter to select
 // Uses CardPalette.astro for result cards
+//
+// DESIGN: native macOS Spotlight aesthetic
+// - Zero text-underlines inside search layout
+// - 12px unified vertical padding
+// - Crisp monochromatic typography
+// - Hidden native browser scrollbar container
+// - Explicit visual separation between distinct result sets
 
 import CardPalette from "./CardPalette.astro";
 
@@ -377,6 +384,10 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
 </script>
 
 <style>
+  /* ═══════════════════════════════════════════════════════════
+     SEARCH PALETTE — native macOS Spotlight aesthetic v2
+     ═══════════════════════════════════════════════════════════ */
+
   /* ── Overlay backdrop ── */
   .palette-overlay {
     position: fixed;
@@ -486,7 +497,7 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
     letter-spacing: 0.02em;
   }
 
-  /* ── Results container ── */
+  /* ── Results container — macOS native Spotlight ── */
   .palette-results {
     overflow-y: auto;
     overflow-x: hidden;
@@ -494,6 +505,9 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
     padding: 4px 0;
     scroll-behavior: smooth;
     border-radius: 16px;
+    /* Hidden scrollbar — native macOS toggles visibility on scroll only */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.08) transparent;
   }
   .palette-results::-webkit-scrollbar {
     width: 6px;
@@ -505,4 +519,18 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
     background: rgba(255, 255, 255, 0.08);
     border-radius: 3px;
   }
-</style>
+
+  /* ── Zero text-underlines across entire palette ── */
+  .palette-results a,
+  .palette-list a,
+  .palette-item a,
+  .palette-card {
+    text-decoration: none !important;
+  }
+
+  /* ── Visual separation between distinct result sets ── */
+  .palette-list {
+    /* Separation between category groups */
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    padding-top: 2px;
+  }</style>

@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns I/O statistics for data and log files. T
 
 ## Syntax
 
-```sql
-sys.dm_pdw_nodes_io_virtual_file_stats
-```
+`sys.dm_pdw_nodes_io_virtual_file_stats`

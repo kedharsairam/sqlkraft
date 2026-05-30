@@ -34,10 +34,8 @@ sys.sp_cdc_cleanup_change_table [ @capture_instance = ]
 , [ @threshold = ]
 'delete threshold'
 , [ @f
-C
-leanup
-F
-ailed = ]
+C leanup
+F ailed = ]
 'cleanup failed'
 OUTPUT
 [ ; ]

@@ -28,18 +28,10 @@ Index Seek
 
 Insert
 
-```sql
-Partitioned
-```
+`Partitioned`
 
-```sql
-True
-```
+`True`
 
-```sql
-False
-```
+`False`
 
-```sql
-Partitioned
-```
+`Partitioned`

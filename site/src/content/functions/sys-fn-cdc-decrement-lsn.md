@@ -28,9 +28,7 @@ sys.fn_cdc_decrement_lsn ( lsn_value )
 
 ### Example 2
 
-```sql
-sys.fn_cdc_decrement_lsn
-```
+`sys.fn_cdc_decrement_lsn`
 
 ### Example 3
 
@@ -39,11 +37,7 @@ Use
 AdventureWorks2022;
 GO
 DECLARE
-@from_lsn
-binary
-(10), @to_lsn
-binary
-(10);
+@from_lsn binary (10), @to_lsn binary (10);
 SET
 @from_lsn = sys.fn_cdc_get_min_lsn(
 'HumanResources_Employee'
@@ -52,8 +46,7 @@ SET
 @to_lsn = sys.fn_cdc_decrement_lsn(sys.fn_cdc_get_max_lsn());
 SELECT
 *
-FROM
-cdc.fn_cdc_get_all_changes_HumanResources_Employee( @from_lsn,
+FROM cdc.fn_cdc_get_all_changes_HumanResources_Employee( @from_lsn,
 @to_lsn,
 'all'
 );
@@ -74,13 +67,10 @@ cdc.fn_cdc_get_net_changes_<capture_instance>
 
 ### Example 6
 
-```sql
-lsn_value
-```
+`lsn_value`
 
 ### Example 7
 
 ```sql
-Msg 313, Level 16, State 3, Line 1 An insufficient number of arguments were
-supplied for the procedure or function
+Msg 313, Level 16, State 3, Line 1 An insufficient number of arguments were supplied for the procedure or function
 ```

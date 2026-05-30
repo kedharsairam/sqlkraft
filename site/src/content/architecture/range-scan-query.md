@@ -14,8 +14,6 @@ scan query by other transactions; otherwise, these become phantom inserts. For e
 
 following query uses the table and index in the previous illustration:
 
-SQL
-
 Key-range locks are placed on the index entries corresponding to the range of rows where the
 
 name is between the values
@@ -44,17 +42,11 @@ key-range lock on the index entry
 
 
 
-```sql
-Adam
-```
+`Adam`
 
-```sql
-Dale
-```
+`Dale`
 
-```sql
-Adam
-```
+`Adam`
 
 ```sql
 RangeS-S
@@ -64,25 +56,18 @@ RangeS-S
 A
 ```
 
-```sql
-Adam
-```
+`Adam`
 
-```sql
-Abigail
-```
+`Abigail`
 
 ```sql
 RangeS-S
 ```
 
 ```sql
-SELECT
-name
-FROM
-mytable
-WHERE
-name
+SELECT name
+FROM mytable
+WHERE name
 BETWEEN
 'A'
 AND

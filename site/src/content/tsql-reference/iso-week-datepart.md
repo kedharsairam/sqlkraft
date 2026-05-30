@@ -85,8 +85,6 @@ Saturday
 
 Yes
 
-
-
 Expand table
 
 #### First day of
@@ -106,9 +104,3 @@ Expand table
 ### tzoffset
 
 ### tz
-
-### datetimeoffset
-
-### datetime2
-
-### date

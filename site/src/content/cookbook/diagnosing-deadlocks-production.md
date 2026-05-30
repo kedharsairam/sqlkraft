@@ -50,11 +50,9 @@ Trace flag 1222 writes full deadlock graphs to the SQL Server error log.
 ### From system_health Ring Buffer (Quickest)
 
 ```sql
-SELECT
-    deadlock.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
+SELECT deadlock.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
     deadlock.query('event/data/value/deadlock') AS deadlock_graph_xml
-FROM
-(
+FROM (
     SELECT CAST(target_data AS XML) AS session_target
     FROM sys.dm_xe_session_targets
     WHERE event_session_address = (SELECT [address] FROM sys.dm_xe_sessions WHERE name = 'system_health')
@@ -71,8 +69,7 @@ This returns the deadlock graph XML directly — no file I/O, no configuration.
 For environments with frequent deadlocks, create a persistent session as detailed in the [Deadlock Graph Capture](/sqlkraft/xevents/deadlock-graph-capture/) reference. Query the file target with:
 
 ```sql
-SELECT
-    event_data.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
+SELECT event_data.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
     event_data.query('event/data/value/deadlock') AS deadlock_graph
 FROM sys.fn_xe_file_target_read_file(N'D:\XELogs\deadlock_capture*.xel', NULL, NULL, NULL)
 ORDER BY deadlock_time DESC;
@@ -92,13 +89,10 @@ The deadlock graph XML contains three critical sections. Parse it at the process
 
 ```sql
 -- Parse all processes from the most recent deadlock
-WITH DeadlockEvents AS
-(
-    SELECT
-        d.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
+WITH DeadlockEvents AS (
+    SELECT d.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
         d.query('event/data/value/deadlock') AS graph
-    FROM
-    (
+    FROM (
         SELECT CAST(target_data AS XML) AS target_data
         FROM sys.dm_xe_session_targets
         WHERE event_session_address = (SELECT [address] FROM sys.dm_xe_sessions WHERE name = 'system_health')
@@ -106,8 +100,7 @@ WITH DeadlockEvents AS
     ) AS sh
     CROSS APPLY sh.target_data.nodes('/RingBufferTarget/event[@name="xml_deadlock_report"]') AS d(event)
 )
-SELECT
-    deadlock_time,
+SELECT deadlock_time,
     p.value('@id', 'varchar(50)') AS process_id,
     p.value('@spid', 'int') AS spid,
     p.value('@lockmode', 'varchar(20)') AS lock_mode_held,

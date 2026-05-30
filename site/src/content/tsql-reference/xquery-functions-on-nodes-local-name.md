@@ -55,10 +55,7 @@ This article provides XQuery examples against XML instances that are stored in v
 type columns in the AdventureWorks database.
 
 ```sql
-xs:string
-xs:NCName
-fn:local-name()
+xs:string xs:NCName fn:local-name()
 [ ]
-fn:local-name() as xs:string
-fn:local-name($arg as node()?) as xs:string
+fn:local-name() as xs:string fn:local-name($arg as node()?) as xs:string
 ```

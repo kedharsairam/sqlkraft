@@ -114,16 +114,13 @@ is supported.
 ```sql
 CREATE
 EXTERNAL
-LIBRARY
-library_name
+LIBRARY library_name
 [
-AUTHORIZATION
-owner_name ]
+AUTHORIZATION owner_name ]
 FROM
 <file_spec>
 [ ,...2 ]
-WITH
-(
+WITH (
 LANGUAGE
 =
 <language>
@@ -165,41 +162,23 @@ LINUX
 }
 ```
 
-```sql
-dbo
-```
+`dbo`
 
-```sql
-RUser1
-```
+`RUser1`
 
-```sql
-RUser2
-```
+`RUser2`
 
-```sql
-RUser1
-```
+`RUser1`
 
-```sql
-dbo
-```
+`dbo`
 
-```sql
-RUser1
-```
+`RUser1`
 
-```sql
-libPath
-```
+`libPath`
 
-```sql
-libPath
-```
+`libPath`
 
-```sql
-RUser1
-```
+`RUser1`
 
 ```sql
 <language>

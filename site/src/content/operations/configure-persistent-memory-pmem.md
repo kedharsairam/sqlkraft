@@ -84,9 +84,5 @@ the host extension application (which is the code that allows SQLPAL interact wi
 Windows or Linux OS).
 
 ```cmd
-ndctl
-ndctl
-ndctl
-fsdax
-mmap()
+ndctl ndctl ndctl fsdax mmap()
 ```

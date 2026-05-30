@@ -80,12 +80,9 @@ the node comparison is
 
 query returns the customer ID.
 
-SQL
-
 ```sql
 WITH
-XMLNAMESPACES
-(
+XMLNAMESPACES (
 'https://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactInfo'
 AS
 ACI,
@@ -104,9 +101,6 @@ AdditionalContactInfo.value(
 ,
 'bit'
 )=
-cast
-(1
-as
-bit
+cast (1 as bit
 )
 ```

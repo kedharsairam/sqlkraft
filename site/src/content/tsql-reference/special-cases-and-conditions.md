@@ -77,8 +77,6 @@ view. The only reliable way to find the owner of a type is to use the TYPEPROPER
 
 function.
 
-
-
 Expand table
 
 ### Requirements for the new owner:

@@ -31,8 +31,6 @@ A partitioned view on
 
 is defined in the following way:
 
-SQL
-
 Generally, a view is said to be a partitioned view if it is of the following form:
 
 ## syntaxsql
@@ -123,45 +121,25 @@ The same column cannot be used multiple times in the select list.
 
 The partitioning column is a part of the PRIMARY KEY of the table.
 
-### timestamp
-
 ### user options
 
-```sql
-Customers
-```
+`Customers`
 
-```sql
-Customers_33
-```
+`Customers_33`
 
-```sql
-Server1
-```
+`Server1`
 
-```sql
-Customers_66
-```
+`Customers_66`
 
-```sql
-Server2
-```
+`Server2`
 
-```sql
-Customers_99
-```
+`Customers_99`
 
-```sql
-Server3
-```
+`Server3`
 
-```sql
-Server1
-```
+`Server1`
 
-```sql
-list
-```
+`list`
 
 ```sql
 --Partitioned view as defined on Server1
@@ -206,17 +184,14 @@ ALL
 SELECT
 <select_listn>
 FROM
-T
-n;
+T n;
 ```
 
 ```sql
 select list
 ```
 
-```sql
-UNION
-```
+`UNION`
 
 ```sql
 <col>
@@ -239,13 +214,9 @@ C1, ..., Cn
 <col>
 ```
 
-```sql
-C1
-```
+`C1`
 
-```sql
-T1
-```
+`T1`
 
 ```sql
 <col>
@@ -299,8 +270,7 @@ AND
 < value2 >
 |
 < col >
-IN
-( value_list )
+IN ( value_list )
 |
 < col >
 { > | >= }

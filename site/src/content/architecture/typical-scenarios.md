@@ -72,14 +72,8 @@ can result in similar symptoms.
 
 Important
 
-```sql
-sys.dm_os_spinlock_stats
-```
+`sys.dm_os_spinlock_stats`
 
-```sql
-SOS_SCHEDULER_YIELD
-```
+`SOS_SCHEDULER_YIELD`
 
-```sql
-sys.dm_os_wait_stats
-```
+`sys.dm_os_wait_stats`

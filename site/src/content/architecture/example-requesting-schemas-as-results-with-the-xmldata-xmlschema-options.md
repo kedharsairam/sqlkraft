@@ -34,8 +34,6 @@ SQL database in Microsoft Fabric
 
 The following query returns the XML-DATA schema that describes the document structure.
 
-SQL
-
 This is the result:
 
 XML
@@ -74,15 +72,13 @@ FROM
 Production.ProductModel
 WHERE
 ProductModelID
-IN
-(122, 119)
+IN (122, 119)
 FOR
 XML
 RAW
 , XMLDATA;
 GO
-<Schema
-name
+<Schema name
 =
 "Schema1"
 xmlns
@@ -92,8 +88,7 @@ xmlns:dt
 =
 "urn:schemas-microsoft-com:datatypes"
 >
-<ElementType
-name
+<ElementType name
 =
 "row"
 content
@@ -103,36 +98,31 @@ model
 =
 "closed"
 >
-<AttributeType
-name
+<AttributeType name
 =
 "ProductModelID"
 dt:type
 =
 "i4"
 />
-<AttributeType
-name
+<AttributeType name
 =
 "Name"
 dt:type
 =
 "string"
 />
-<attribute
-type
+<attribute type
 =
 "ProductModelID"
 />
-<attribute
-type
+<attribute type
 =
 "Name"
 />
 </ElementType>
 </Schema>
-<row
-xmlns
+<row xmlns
 =
 "x-schema:#Schema1"
 ProductModelID
@@ -142,8 +132,7 @@ Name
 =
 "All-Purpose Bike Stand"
 />
-<row
-xmlns
+<row xmlns
 =
 "x-schema:#Schema1"
 ProductModelID

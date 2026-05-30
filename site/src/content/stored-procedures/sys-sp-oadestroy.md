@@ -20,8 +20,7 @@ Destroys a created OLE object. Transact-SQL syntax conventions The object token 
 
 ```sql
 sp_
-OAD
-estroy objecttoken
+OAD estroy objecttoken
 [ ; ]
 ```
 
@@ -57,15 +56,11 @@ message occurs.
 
 ### Example 1
 
-```sql
-sp_OADestroy
-```
+`sp_OADestroy`
 
 ### Example 2
 
-```sql
-SQLServer
-```
+`SQLServer`
 
 ### Example 3
 
@@ -77,8 +72,7 @@ object
 ;
 IF @hr <> 0
 BEGIN
-EXECUTE
-sp_OAGetErrorInfo @
+EXECUTE sp_OAGetErrorInfo @
 object
 ;
 RETURN;

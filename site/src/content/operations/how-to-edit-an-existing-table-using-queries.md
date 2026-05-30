@@ -73,8 +73,6 @@ database node and select
 
 2. In the script pane, paste in the following code.
 
-SQL
-
 3. Select the
 
 button to run this query. The following in the
@@ -89,10 +87,8 @@ Address
 NULL
 Trade
 INSERT
-INTO
-dbo.Suppliers
-VALUES
-(1,
+INTO dbo.Suppliers
+VALUES (1,
 'NorthWind Traders'
 ,
 'Seattle, WA'
@@ -103,17 +99,13 @@ VALUES
 'Tacoma, WA'
 );
 GO
-INSERT
-dbo.Customer
-VALUES
-(1,
+INSERT dbo.Customer
+VALUES (1,
 'Fourth Coffee'
 );
 GO
-INSERT
-dbo.Products
-VALUES
-(1,
+INSERT dbo.Products
+VALUES (1,
 'Apples'
 , 0, 1, 1),
 (2,

@@ -17,22 +17,12 @@ Returns a row per linked-server-login mapping, for use by RPC and distributed qu
 
 ## Code Blocks
 
-```sql
-server_id
-```
+`server_id`
 
-```sql
-sys.servers
-```
+`sys.servers`
 
-```sql
-local_principal_id
-```
+`local_principal_id`
 
-```sql
-uses_self_credential
-```
+`uses_self_credential`
 
-```sql
-remote_name
-```
+`remote_name`

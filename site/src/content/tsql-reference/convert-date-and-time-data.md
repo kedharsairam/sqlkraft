@@ -55,11 +55,7 @@ CAST and CONVERT
 
 ### smalldatetime
 
-### date
-
 ### smalldatetime
-
-### date
 
 ### time(
 
@@ -89,8 +85,6 @@ value to a
 
 value.
 
-SQL
-
 Here's the result set.
 
 Output
@@ -107,21 +101,13 @@ value to a
 
 value.
 
-SQL
-
 Here's the result set.
 
 Output
 
-### datetime
-
 ### smalldatetime
 
-### datetime
-
 ### smalldatetime
-
-### datetime
 
 ### datetimeoffset(
 
@@ -167,8 +153,6 @@ value to a
 
 value.
 
-SQL
-
 Here's the result set.
 
 Output
@@ -188,8 +172,6 @@ value. The fractional seconds are set to
 value to a
 
 value.
-
-SQL
 
 Here's the result set.
 
@@ -215,33 +197,21 @@ value.
 
 #### Output
 
-```sql
-dd
-```
+`dd`
 
-```sql
-HH
-```
+`HH`
 
-```sql
-mm
-```
+`mm`
 
-```sql
-ss
-```
+`ss`
 
 ```sql
 1900-01-01 00:00:00
 ```
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
 ```sql
 0
@@ -283,8 +253,7 @@ DECLARE
 @
 time
 AS
-TIME
-(4) = @smalldatetime;
+TIME (4) = @smalldatetime;
 SELECT
 @smalldatetime
 AS

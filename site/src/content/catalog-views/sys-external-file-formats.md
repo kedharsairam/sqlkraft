@@ -26,8 +26,7 @@ SQL Server 2016 (13.x) and later Azure SQL Database Managed Instance Azure Synap
 DROP
 EXTERNAL
 FILE
-FORMAT
-external_file_format_name
+FORMAT external_file_format_name
 [;]
 ```
 

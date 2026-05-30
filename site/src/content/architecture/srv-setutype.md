@@ -66,10 +66,8 @@ int srv_setutype (
 SRV_PROC *
 srvproc
 ,
-int
-column
+int column
 ,
-DBINT
-user_type
+DBINT user_type
 );
 ```

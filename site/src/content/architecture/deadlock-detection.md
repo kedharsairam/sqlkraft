@@ -78,10 +78,6 @@ executed for the thread, rolls back the transaction of the deadlock victim, and 
 
 held by the transaction. This allows the transactions of the other threads to become unblocked
 
-```sql
-LOCK_ESCALATION
-```
+`LOCK_ESCALATION`
 
-```sql
-TABLE
-```
+`TABLE`

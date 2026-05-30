@@ -14,29 +14,22 @@ Drops a database device or backup device from a SQL Server Database Engine insta
 
 ## Syntax
 
-```sql
-master.dbo.sysdevices
-```
+`master.dbo.sysdevices`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sp_dropdevice
-```
+`sp_dropdevice`
 
 ### Example 2
 
-```sql
-tapedump1
-```
+`tapedump1`
 
 ### Example 3
 
 ```sql
-EXECUTE
-sp_dropdevice
+EXECUTE sp_dropdevice
 'tapedump1'
 ;
 ```

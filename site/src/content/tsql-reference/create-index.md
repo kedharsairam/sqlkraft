@@ -49,15 +49,9 @@ SQL Server index design guide
 
 1. Create a nonclustered index on a table or view
 
-SQL
-
 2. Create a clustered index on a table and use a 3-part name for the table
 
-SQL
-
 3. Create a nonclustered index with a unique constraint and specify the sort order
-
-SQL
 
 ７
 
@@ -69,30 +63,22 @@ indexes, the Database Engine implements a B+ tree. This does not apply to column
 
 indexes or indexes on memory-optimized tables. For more information, see the
 
-SQL
-
 .
 
 ### Key scenario:
 
 ```sql
 CREATE
-INDEX
-index1
-ON
-schema1.table1 (column1);
+INDEX index1
+ON schema1.table1 (column1);
 CREATE
 CLUSTERED
-INDEX
-index1
-ON
-database1.schema1.table1 (column1);
+INDEX index1
+ON database1.schema1.table1 (column1);
 CREATE
 UNIQUE
-INDEX
-index1
-ON
-schema1.table1 (column1
+INDEX index1
+ON schema1.table1 (column1
 DESC
 , column2
 ASC

@@ -124,14 +124,10 @@ buffer pool
 
 database file I/O.
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 ORDER BY
 ```
 
-```sql
-SELECT
-```
+`SELECT`

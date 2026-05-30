@@ -24,12 +24,9 @@ SQL Server 2016 (13.x) and later Returns one row for each type of external scrip
 ## Syntax
 
 ```sql
-SELECT
-counter_name, counter_value
-FROM
-sys.dm_external_script_execution_stats
-WHERE
-language
+SELECT counter_name, counter_value
+FROM sys.dm_external_script_execution_stats
+WHERE language
 =
 'R'
 ;

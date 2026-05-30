@@ -14,6 +14,4 @@ Reports the active transactions in the In-Memory OLTP database engine. In-Memory
 
 ## Syntax
 
-```sql
-sys.dm_tran_active_transactions
-```
+`sys.dm_tran_active_transactions`

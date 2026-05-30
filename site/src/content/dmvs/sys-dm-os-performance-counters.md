@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns a row per performance counter maintained
 
 ## Syntax
 
-```sql
-sys.dm_pdw_nodes_os_performance_counters
-```
+`sys.dm_pdw_nodes_os_performance_counters`

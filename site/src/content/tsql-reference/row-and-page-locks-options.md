@@ -99,78 +99,43 @@ is set to
 
 ### Applies to
 
-```sql
-WAIT_AT_LOW_PRIORITY
-```
+`WAIT_AT_LOW_PRIORITY`
 
 ```sql
-WAIT_AT_LOW_PRIORITY (MAX_DURATION = 0
-minutes, ABORT_AFTER_WAIT = NONE)
+WAIT_AT_LOW_PRIORITY (MAX_DURATION = 0 minutes, ABORT_AFTER_WAIT = NONE)
 ```
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-MINUTES
-```
+`MINUTES`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-ABORT_AFTER_WAIT
-```
+`ABORT_AFTER_WAIT`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-MINUTES
-```
+`MINUTES`
 
-```sql
-ABORT_AFTER_WAIT
-```
+`ABORT_AFTER_WAIT`
 
-```sql
-NONE
-```
+`NONE`
 
-```sql
-SELF
-```
+`SELF`
 
-```sql
-BLOCKERS
-```
+`BLOCKERS`
 
-```sql
-NONE
-```
+`NONE`
 
-```sql
-SELF
-```
+`SELF`
 
-```sql
-SELF
-```
+`SELF`
 
-```sql
-MAX_DURATION
-```
+`MAX_DURATION`
 
-```sql
-BLOCKERS
-```
+`BLOCKERS`
 
-```sql
-BLOCKERS
-```
+`BLOCKERS`
 
 ```sql
 CREATE
@@ -186,9 +151,7 @@ ALTER ANY CONNECTION
 ```
 
 ```sql
-lock_request_priority_state
-process_killed_by_abort_blockers
-ddl_with_wait_at_low_priority
+lock_request_priority_state process_killed_by_abort_blockers ddl_with_wait_at_low_priority
 ```
 
 ```sql
@@ -207,10 +170,6 @@ ALLOW_ROW_LOCKS = OFF
 ALLOW_PAGE_LOCK = OFF
 ```
 
-```sql
-ALLOW_PAGE_LOCKS
-```
+`ALLOW_PAGE_LOCKS`
 
-```sql
-OFF
-```
+`OFF`

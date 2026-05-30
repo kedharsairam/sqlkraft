@@ -14,9 +14,7 @@ Specifies whether poison message handling is enabled for the queue. The default 
 
 ## Syntax
 
-```sql
-sys.transmission_queue
-```
+`sys.transmission_queue`
 
 ## Remarks
 

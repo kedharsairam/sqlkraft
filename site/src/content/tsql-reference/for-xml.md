@@ -139,8 +139,6 @@ can also apply when you use
 
 statement:
 
-SQL
-
 ## Returns inline XSD schema. You can optionally specify a target namespace URI when you
 
 specify this directive, which returns the specified namespace in the schema. For more
@@ -198,10 +196,6 @@ mode. This feature will be
 removed in a future version of SQL Server. Avoid using this feature in new development
 
 work, and plan to modify applications that currently use this feature.
-
-### xml
-
-### xml
 
 ## ABSENT
 
@@ -309,49 +303,29 @@ option specifies that the inline XSD schema is included in the XML data returned
 
 option specifies that the XML result is element-centric.
 
-```sql
-RAW
-```
+`RAW`
 
-```sql
-AUTO
-```
+`AUTO`
 
-```sql
-EXPLICIT
-```
+`EXPLICIT`
 
 ```sql
 <row />
 ```
 
-```sql
-ElementName
-```
+`ElementName`
 
-```sql
-FROM
-```
+`FROM`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-XMLDATA
-```
+`XMLDATA`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 RIGHT OUTER JOIN
@@ -369,69 +343,44 @@ AS XMLDATA
 FOR JSON PATH
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-RAW
-```
+`RAW`
 
-```sql
-AUTO
-```
+`AUTO`
 
-```sql
-PATH
-```
+`PATH`
 
 ```sql
 xsi:nil
 ```
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-ELEMENTS
-```
+`ELEMENTS`
 
-```sql
-RAW
-```
+`RAW`
 
-```sql
-AUTO
-```
+`AUTO`
 
-```sql
-XMLDATA
-```
+`XMLDATA`
 
-```sql
-EXPLICIT
-```
+`EXPLICIT`
 
 ```sql
 SELECT
-CAST
+CAST (
 (
-(
-SELECT
-column1,
+SELECT column1,
 column2
-FROM
-my_table
+FROM my_table
 FOR
 XML
-PATH
-(
+PATH (
 ''
 ))
 AS
-VARCHAR
-(
+VARCHAR (
 MAX
 )
 )
@@ -439,13 +388,9 @@ AS
 XMLDATA;
 ```
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-ELEMENTS
-```
+`ELEMENTS`
 
 ```sql
 <row>
@@ -460,25 +405,15 @@ FOR
 XML PATH (''))
 ```
 
-```sql
-PATH
-```
+`PATH`
 
-```sql
-EXPLICIT
-```
+`EXPLICIT`
 
-```sql
-RAW
-```
+`RAW`
 
-```sql
-EXPLICIT
-```
+`EXPLICIT`
 
-```sql
-AUTO
-```
+`AUTO`
 
 ```sql
 <root>
@@ -488,22 +423,12 @@ AUTO
 FOR XML AUTO
 ```
 
-```sql
-TYPE
-```
+`TYPE`
 
-```sql
-XMLSCHEMA
-```
+`XMLSCHEMA`
 
-```sql
-TYPE
-```
+`TYPE`
 
-```sql
-XMLSCHEMA
-```
+`XMLSCHEMA`
 
-```sql
-ELEMENTS
-```
+`ELEMENTS`

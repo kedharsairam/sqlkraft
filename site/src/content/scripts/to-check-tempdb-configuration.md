@@ -118,29 +118,23 @@ Set @new_files_Location= Isnull(@new_files_Location,@tempdbdev_location)
 -- Determine if the new location exists or not
 Declare @file_results table(file_exists int,file_is_a_directory int,parent_directory_exists int)
 
-insert into @file_results(file_exists, file_is_a_directory, parent_directory_exists)
-exec master.dbo.xp_fileexist @new_files_Location
+insert into @file_results(file_exists, file_is_a_directory, parent_directory_exists) exec master.dbo.xp_fileexist @new_files_Location
 
 if (select file_is_a_directory from @file_results ) = 0
-Begin
-print '-- New files Directory Does NOT exist , please specify a correct folder!'
-Return
-end
+Begin print '-- New files Directory Does NOT exist , please specify a correct folder!'
+Return end
 
 -- Determine if we have enough free space on the destination drive
 
-Declare @FreeSpace Table (Drive char(1),MB_Free Bigint)
-insert into @FreeSpace exec master..xp_fixeddrives
+Declare @FreeSpace Table (Drive char(1),MB_Free Bigint) insert into @FreeSpace exec master..xp_fixeddrives
 
 if (select MB_Free from @FreeSpace where drive = LEFT(@new_files_Location,1) ) < @NUMPROCS * @new_tempdbdev_size_MB
-Begin
-print '-- WARNING: Not enough free space on ' + Upper(LEFT(@new_files_Location,1)) + ':\ to accomodate the new files. Around '+ cast(@NUMPROCS * @new_tempdbdev_size_MB as varchar(10))+ ' Mbytes are needed; Please add more space or choose a new location!'
+Begin print '-- WARNING: Not enough free space on ' + Upper(LEFT(@new_files_Location,1)) + ':\ to accomodate the new files. Around '+ cast(@NUMPROCS * @new_tempdbdev_size_MB as varchar(10))+ ' Mbytes are needed; Please add more space or choose a new location!'
 
 end
 
 -- Determine if any of the exisiting datafiles have different size than proposed ones.
-If exists
-(
+If exists (
     SELECT (CONVERT (bigint, size) * 8)/1024 FROM tempdb.sys.database_files
     WHERE type_desc= 'Rows'
     and  (CONVERT (bigint, size) * 8)/1024  <> @new_tempdbdev_size_MB

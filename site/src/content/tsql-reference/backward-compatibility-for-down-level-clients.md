@@ -69,15 +69,9 @@ types. The following table shows the type mapping between an up-level instance o
 
 and down-level clients.
 
-
-
 Expand table
 
-
-
 Expand table
-
-
 
 Expand table
 
@@ -106,15 +100,5 @@ Expand table
 #### Down-
 
 #### level
-
-#### time
-
-#### date
-
-#### datetime2
-
-#### datetimeoffset
-
-### time
 
 ### time(n)

@@ -87,37 +87,23 @@ statement and inserting those results into a target table, keep the following in
 
 in mind:
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 WHERE CURRENT OF
 ```
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
 ```sql
 OUTPUT INTO
@@ -127,30 +113,16 @@ OUTPUT INTO
 OUTPUT INTO
 ```
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-OUTPUT
-```
+`OUTPUT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-MERGE
-```
+`MERGE`

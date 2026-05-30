@@ -107,57 +107,31 @@ are annotated with certain HostProtectionAttributes fails.
 CREATE ASSEMBLY
 ```
 
-```sql
-Microsoft.VisualBasic.dll
-```
+`Microsoft.VisualBasic.dll`
 
-```sql
-mscorlib.dll
-```
+`mscorlib.dll`
 
-```sql
-System.Data.dll
-```
+`System.Data.dll`
 
-```sql
-System.dll
-```
+`System.dll`
 
-```sql
-System.Xml.dll
-```
+`System.Xml.dll`
 
-```sql
-Microsoft.VisualC.dll
-```
+`Microsoft.VisualC.dll`
 
-```sql
-CustomMarshallers.dll
-```
+`CustomMarshallers.dll`
 
-```sql
-System.Security.dll
-```
+`System.Security.dll`
 
-```sql
-System.Web.Services.dll
-```
+`System.Web.Services.dll`
 
-```sql
-System.Data.SqlXml.dll
-```
+`System.Data.SqlXml.dll`
 
-```sql
-System.Core.dll
-```
+`System.Core.dll`
 
-```sql
-System.Xml.Linq.dll
-```
+`System.Xml.Linq.dll`
 
-```sql
-SAFE
-```
+`SAFE`
 
 ```sql
 EXTERNAL ACCESS
@@ -167,10 +141,6 @@ EXTERNAL ACCESS
 CREATE ASSEMBLY
 ```
 
-```sql
-SAFE
-```
+`SAFE`
 
-```sql
-EXTERNAL_ACCESS
-```
+`EXTERNAL_ACCESS`

@@ -24,8 +24,6 @@ later point within the same transaction has to return the same result. No other 
 
 allowed to insert that nonexistent row. For example, given this query:
 
-SQL
-
 A key-range lock is placed on the index entry corresponding to the name range from
 
 to
@@ -55,8 +53,6 @@ value until the end of the transaction is sufficient to maintain serializability
 this
 
 statement:
-
-SQL
 
 An exclusive (
 
@@ -92,95 +88,62 @@ is the number of rows that satisfy the
 
 query.
 
-```sql
-Dale
-```
+`Dale`
 
 ```sql
 C
 ```
 
-```sql
-Carlos
-```
+`Carlos`
 
-```sql
-Clive
-```
+`Clive`
 
-```sql
-Ben
-```
+`Ben`
 
-```sql
-Bing
-```
+`Bing`
 
-```sql
-Bill
-```
+`Bill`
 
 ```sql
 RangeS-S
 ```
 
-```sql
-Bing
-```
+`Bing`
 
-```sql
-Bill
-```
+`Bill`
 
-```sql
-Ben
-```
+`Ben`
 
-```sql
-Bing
-```
+`Bing`
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 X
 ```
 
-```sql
-Bob
-```
+`Bob`
 
-```sql
-Bob
-```
+`Bob`
 
-```sql
-Bob
-```
+`Bob`
 
 ```sql
 RangeS-S
 ```
 
 ```sql
-SELECT
-name
-FROM
-mytable
-WHERE
-name
+SELECT name
+FROM mytable
+WHERE name
 =
 'Bill'
 ;
 ```
 
 ```sql
-DELETE
-mytable
-WHERE
-name
+DELETE mytable
+WHERE name
 =
 'Bob'
 ;

@@ -76,6 +76,4 @@ every second. Runtime information includes for example the actual number of rows
 
 flowing through the operators.
 
-```sql
-SELECT
-```
+`SELECT`

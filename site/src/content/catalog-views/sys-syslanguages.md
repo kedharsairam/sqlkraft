@@ -32,16 +32,14 @@ SET LANGUAGE Polish;
 --SELECT alias FROM sys.syslanguages ORDER BY alias;
 DECLARE
 @yourInputDate
-NVARCHAR
-(32) =
+NVARCHAR (32) =
 '28 listopad 2018'
 ;
 SET
 LANGUAGE
 Polish;
 SELECT
-CONVERT
-(
+CONVERT (
 DATE
 , @yourInputDate)
 AS
@@ -50,8 +48,7 @@ SET
 LANGUAGE
 Croatian;
 SELECT
-CONVERT
-(
+CONVERT (
 DATE
 , @yourInputDate)
 AS

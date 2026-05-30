@@ -10,8 +10,6 @@ And
 
 is defined as shown in the following:
 
-SQL
-
 The join order in the query plan is
 
 ,
@@ -64,41 +62,23 @@ Join operations
 
 Aggregate functions
 
-```sql
-View1
-```
+`View1`
 
-```sql
-Table1
-```
+`Table1`
 
-```sql
-Table2
-```
+`Table2`
 
-```sql
-TableA
-```
+`TableA`
 
-```sql
-TableB
-```
+`TableB`
 
-```sql
-Table3
-```
+`Table3`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-ON
-```
+`ON`
 
 ```sql
 ANSI_NULLS
@@ -109,9 +89,7 @@ CONCAT_NULL_YIELDS_NULL
 QUOTED_IDENTIFIER
 ```
 
-```sql
-NUMERIC_ROUNDABORT
-```
+`NUMERIC_ROUNDABORT`
 
 ```sql
 SELECT

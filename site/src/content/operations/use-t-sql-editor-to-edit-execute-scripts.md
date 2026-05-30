@@ -39,8 +39,6 @@ the
 
 dialog box in the
 
-SQL
-
 >
 
 menu option to

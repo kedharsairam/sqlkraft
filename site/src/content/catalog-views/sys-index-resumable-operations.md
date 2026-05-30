@@ -23,8 +23,7 @@ SQL Server 2017 (14.x) and later versions SQL database in Microsoft Fabric is a 
 ```sql
 SELECT
 *
-FROM
-sys.index_resumable_operations
+FROM sys.index_resumable_operations
 WHERE
 STATE = 1;
 ```
@@ -36,8 +35,7 @@ STATE = 1;
 ```sql
 SELECT
 *
-FROM
-sys.index_resumable_operations
+FROM sys.index_resumable_operations
 WHERE
 STATE = 1;
 ```

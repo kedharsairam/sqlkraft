@@ -82,18 +82,10 @@ reported under simple parameterization, and the line numbers in which errors occ
 
 be reported incorrectly.
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
-```sql
-FORCED
-```
+`FORCED`
 
-```sql
-PARAMETERIZATION
-```
+`PARAMETERIZATION`
 
-```sql
-SIMPLE
-```
+`SIMPLE`

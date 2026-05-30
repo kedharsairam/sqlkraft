@@ -14,47 +14,33 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns informa
 
 ## Syntax
 
-```sql
-sys.dm_pdw_nodes_tran_locks
-```
+`sys.dm_pdw_nodes_tran_locks`
 
 ## Examples
 
 ### Example 1
 
-```sql
-sp_getapplock
-```
+`sp_getapplock`
 
 ### Example 2
 
-```sql
-sys.dm_tran_locks
-```
+`sys.dm_tran_locks`
 
 ### Example 3
 
-```sql
-sp_lock
-```
+`sp_lock`
 
 ### Example 4
 
-```sql
-Form1
-```
+`Form1`
 
 ### Example 5
 
-```sql
-AdventureWorks2025
-```
+`AdventureWorks2025`
 
 ### Example 6
 
-```sql
-dbo
-```
+`dbo`
 
 ### Example 7
 

@@ -341,61 +341,37 @@ CREATE TABLE
 INSTEAD OF
 ```
 
-```sql
-AFTER
-```
+`AFTER`
 
 ```sql
 INSTEAD OF
 ```
 
-```sql
-AFTER
-```
+`AFTER`
 
-```sql
-AFTER
-```
+`AFTER`
 
-```sql
-sp_settriggerorder
-```
+`sp_settriggerorder`
 
-```sql
-AFTER
-```
+`AFTER`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-AFTER
-```
+`AFTER`
 
 ```sql
 ALTER TRIGGER
 ```
 
-```sql
-sp_settriggerorder
-```
+`sp_settriggerorder`
 
-```sql
-AFTER
-```
+`AFTER`
 
-```sql
-AFTER
-```
+`AFTER`
 
 ```sql
 INSTEAD OF
@@ -413,30 +389,22 @@ INSTEAD OF
 INSTEAD OF
 ```
 
-```sql
-AFTER
-```
+`AFTER`
 
 ```sql
 INSTEAD OF
 INSERT
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 INSTEAD OF
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 AFTER INSERT
@@ -454,77 +422,47 @@ INSTEAD OF
 INSTEAD OF UPDATE
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 INSTEAD OF
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 INSTEAD OF
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-AFTER
-```
+`AFTER`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE()
-```
+`UPDATE()`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-COLUMNS_UPDATED
-```
+`COLUMNS_UPDATED`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 CREATE TRIGGER
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 CREATE TRIGGER
@@ -538,21 +476,13 @@ INSTEAD OF DELETE
 INSTEAD OF UPDATE
 ```
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 SET NOCOUNT
@@ -562,21 +492,15 @@ SET NOCOUNT
 TRUNCATE TABLE
 ```
 
-```sql
-DELETE
-```
+`DELETE`
 
 ```sql
 TRUNCATE TABLE
 ```
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-WRITETEXT
-```
+`WRITETEXT`
 
 ```sql
 ALTER DATABASE

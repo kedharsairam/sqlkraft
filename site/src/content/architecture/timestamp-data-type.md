@@ -49,8 +49,6 @@ always Base64 encoded. The XML Schema Definition (XSD) or XML-Data Reduced (XDR)
 
 schema, if requested, reflects this type.
 
-SQL
-
 Here's the result set.
 
 XML
@@ -60,12 +58,10 @@ FOR XML support for various SQL Server data types
 ```sql
 FOR XML
 DROP
-TABLE
-t;
+TABLE t;
 GO
 CREATE
-TABLE
-t (
+TABLE t (
 c1
 INT
 ,
@@ -73,24 +69,20 @@ c2
 TIMESTAMP
 );
 GO
-INSERT
-t
-VALUES
-(1,
+INSERT t
+VALUES (1,
 NULL
 );
 GO
 SELECT
 *
-FROM
-t
+FROM t
 FOR
 XML
 AUTO
 , XMLDATA;
 GO
-<Schema
-name
+<Schema name
 =
 "Schema1"
 xmlns
@@ -100,8 +92,7 @@ xmlns:dt
 =
 "urn:schemas-microsoft-com:datatypes"
 >
-<ElementType
-name
+<ElementType name
 =
 "t"
 content
@@ -111,36 +102,31 @@ model
 =
 "closed"
 >
-<AttributeType
-name
+<AttributeType name
 =
 "c1"
 dt:type
 =
 "i4"
 />
-<AttributeType
-name
+<AttributeType name
 =
 "c2"
 dt:type
 =
 "bin.base64"
 />
-<attribute
-type
+<attribute type
 =
 "c1"
 />
-<attribute
-type
+<attribute type
 =
 "c2"
 />
 </ElementType>
 </Schema>
-<t
-xmlns
+<t xmlns
 =
 "x-schema:#Schema1"
 c1

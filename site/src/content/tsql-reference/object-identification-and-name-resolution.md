@@ -75,8 +75,6 @@ Resolve IDs to names across objects and schemas, and parse multipart identifiers
 
 functions provide core support for introspection and dynamic SQL.
 
-
-
 Expand table
 
 1

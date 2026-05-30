@@ -23,8 +23,6 @@ The following release notes apply to SQL Server 2022 (16.x) running on Linux. Th
 
 broken into sections for each release. For detailed supportability and known issues, see
 
-SQL
-
 Server on Linux: Known issues
 
 . Each release links to a support article describing the changes, in

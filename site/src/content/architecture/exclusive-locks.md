@@ -170,17 +170,13 @@ X
 U
 ```
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 REPEATABLE READ
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
 ```sql
 S
@@ -226,21 +222,14 @@ READ COMMITTED
 S
 ```
 
-```sql
-UPDLOCK
-```
+`UPDLOCK`
+
+`UPDLOCK`
+
+`SNAPSHOT`
 
 ```sql
-UPDLOCK
-```
-
-```sql
-SNAPSHOT
-```
-
-```sql
-Msg 3960, Level 16, State 2 Snapshot isolation transaction aborted
-due to update conflict
+Msg 3960, Level 16, State 2 Snapshot isolation transaction aborted due to update conflict
 ```
 
 ```sql
@@ -251,9 +240,7 @@ X
 X
 ```
 
-```sql
-NOLOCK
-```
+`NOLOCK`
 
 ```sql
 READ UNCOMMITTED

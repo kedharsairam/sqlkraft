@@ -70,6 +70,4 @@ For SQL Server to SQL Server migrations, if this issue existed in the source SQL
 
 migrating to a newer version of SQL Server as-is doesn't address this scenario.
 
-```sql
-SELECT
-```
+`SELECT`

@@ -150,16 +150,10 @@ sysperfinfo
 
 Expand table
 
-```sql
-sys.dm_io_cluster_shared_drives
-```
+`sys.dm_io_cluster_shared_drives`
+
+`sys.dm_exec_sql_text`
 
 ```sql
-sys.dm_exec_sql_text
-```
-
-```sql
-sp_lock
-sys.dm_tran_locks
-sp_lock
+sp_lock sys.dm_tran_locks sp_lock
 ```

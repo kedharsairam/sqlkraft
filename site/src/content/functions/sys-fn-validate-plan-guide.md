@@ -14,6 +14,4 @@ Verifies the validity of the specified plan guide. The returns the first error m
 
 ## Syntax
 
-```sql
-sys.fn_validate_plan_guide
-```
+`sys.fn_validate_plan_guide`

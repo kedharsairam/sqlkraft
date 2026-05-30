@@ -90,7 +90,5 @@ and deletes the entry for the secondary
 ID and the copy and restore jobs.
 
 ```cmd
-sp_delete_log_shipping_primary_database
-sp_delete_log_shipping_secondary_primary
-sp_delete_log_shipping_secondary_database
+sp_delete_log_shipping_primary_database sp_delete_log_shipping_secondary_primary sp_delete_log_shipping_secondary_database
 ```

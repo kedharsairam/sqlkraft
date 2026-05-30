@@ -42,18 +42,10 @@ specific manager, the query optimizer might use the nonclustered index
 
 as its first key column. Because the
 
-```sql
-HumanResources.Employee
-```
+`HumanResources.Employee`
 
-```sql
-IX_Employee_ManagerID
-```
+`IX_Employee_ManagerID`
 
-```sql
-ManagerID
-```
+`ManagerID`
 
-```sql
-ManagerID
-```
+`ManagerID`

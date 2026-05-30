@@ -62,6 +62,5 @@ C:\ProgramData\GuestConfig\extension_logs\Microsoft.AzureData.WindowsAgent.SqlSe
 unifiedagent.log
 1.1.24724.69
 ExtensionLog_0.log
-C:\ProgramData\GuestConfig\extension_logs\Microsoft.Azure.Monitor.AzureMonitorWindowsAgen
-t\Extension.1.log
+C:\ProgramData\GuestConfig\extension_logs\Microsoft.Azure.Monitor.AzureMonitorWindowsAgen t\Extension.1.log
 ```

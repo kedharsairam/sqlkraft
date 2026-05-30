@@ -45,13 +45,9 @@ be well formed. Also, if you're changing the type of the column from string to t
 
 documents in the column are validated against the specified XSD schemas.
 
-SQL
-
 You can change an
 
 type column from untyped XML to typed XML. For example:
-
-SQL
 
 In the previous example, all the instances stored in the column are validated and typed against
 
@@ -81,21 +77,15 @@ database.
 ALTER TABLE
 CREATE
 TABLE
-T (Col1
-int
-primary
-key
-, Col2
-nvarchar
-(
+T (Col1 int primary key
+, Col2 nvarchar (
 max
 ));
 GO
 INSERT
 INTO
 T
-VALUES
-(1,
+VALUES (1,
 '<Root><Product ProductID="1"/></Root>'
 );
 GO
@@ -104,24 +94,17 @@ TABLE
 T
 ALTER
 COLUMN
-Col2
-xml
+Col2 xml
 ;
 CREATE
 TABLE
-T (Col1
-int
-primary
-key
-, Col2
-xml
+T (Col1 int primary key
+, Col2 xml
 );
 GO
 INSERT
 INTO
-T
-values
-(1,
+T values (1,
 '<p1:ProductDescription ProductModelID="1"
 xmlns:p1="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelDescription">
@@ -134,9 +117,7 @@ TABLE
 T
 ALTER
 COLUMN
-Col2
-xml
-(Production.ProductDescriptionSchemaCollection);
+Col2 xml (Production.ProductDescriptionSchemaCollection);
 AdventureWorks2025
 Production.ProductDescriptionSchemaCollection
 AdventureWorks2025

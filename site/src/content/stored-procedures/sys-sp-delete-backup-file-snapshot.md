@@ -14,6 +14,4 @@ SQL Server 2016 (13.x) and later versions Deletes a specified backup snapshot fr
 
 ## Syntax
 
-```sql
-sys.fn_db_backup_file_snapshots
-```
+`sys.fn_db_backup_file_snapshots`

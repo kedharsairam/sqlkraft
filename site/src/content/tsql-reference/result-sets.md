@@ -55,8 +55,6 @@ Microsoft Azure storage is a service, the implementation is similar to disk and 
 
 allow for a consistent and seamless restore experience for all the three devices.
 
-
-
 Expand table
 
 #### Column name
@@ -65,19 +63,11 @@ Expand table
 
 #### SoftwareVendorId
 
-#### int
-
 #### MediaDate
-
-#### datetime
 
 #### Mirror_Count
 
-#### int
-
 #### IsCompressed
-
-#### bit
 
 ```sql
 }

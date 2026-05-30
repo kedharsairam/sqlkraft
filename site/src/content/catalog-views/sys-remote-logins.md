@@ -17,22 +17,12 @@ Returns a row per remote-login mapping. This catalog view is used to map incomin
 
 ## Code Blocks
 
-```sql
-server_id
-```
+`server_id`
 
-```sql
-sys.servers
-```
+`sys.servers`
 
-```sql
-remote_name
-```
+`remote_name`
 
-```sql
-local_principal_id
-```
+`local_principal_id`
 
-```sql
-modify_date
-```
+`modify_date`

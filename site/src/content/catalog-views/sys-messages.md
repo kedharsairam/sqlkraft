@@ -50,8 +50,7 @@ Contains information about all available SQL Server Agent proxy subsystems. The 
 ## Syntax
 
 ```sql
-SELECT
-message_id
+SELECT message_id
 AS
 Error
 ,
@@ -61,8 +60,7 @@ Severity,
 [
 Event
 Logged] =
-CASE
-is_event_logged
+CASE is_event_logged
 WHEN
 0
 THEN
@@ -76,15 +74,11 @@ text
 ]
 AS
 [Description]
-FROM
-sys.messages
-WHERE
-language_id = 1040
-/* replace 1040 with the desired language ID, such as 1033
-for US English */
+FROM sys.messages
+WHERE language_id = 1040
+/* replace 1040 with the desired language ID, such as 1033 for US English */
 ORDER
-BY
-message_id;
+BY message_id;
 ```
 
 ## Arguments
@@ -269,9 +263,7 @@ Errors and Events Reference (Database Engine)
 
 ### Example 1
 
-```sql
-sys.messages
-```
+`sys.messages`
 
 ### Example 2
 
@@ -282,8 +274,7 @@ sys.messages
 ### Example 3
 
 ```sql
-SELECT
-message_id,
+SELECT message_id,
 language_id,
 severity,
 is_event_logged,

@@ -121,47 +121,21 @@ To update a partitioned view, the user must have
 
 ### smalldatetime
 
-### datetime
+`UPDATE`
 
-### datetime
+`DEFAULT`
 
-### uniqueidentifier
+`SET`
 
-### uniqueidentifier
+`DEFAULT`
 
-### uniqueidentifier
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DEFAULT
-```
+`INSERT`
 
-```sql
-SET
-```
-
-```sql
-DEFAULT
-```
-
-```sql
-INSERT
-```
-
-```sql
-UPDATE
-```
-
-```sql
-INSERT
-```
-
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 ON UPDATE CASCADE/SET NULL/SET
@@ -172,21 +146,13 @@ DEFAULT
 ON DELETE CASCADE/SET NULL/SET DEFAULT
 ```
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-bcp
-```
+`bcp`
 
 ```sql
 BULK INSERT
@@ -200,30 +166,16 @@ INSERT ... SELECT * FROM OPENROWSET(BULK...)
 XACT_ABORT SET
 ```
 
-```sql
-ON
-```
+`ON`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-DELETE
-```
+`DELETE`

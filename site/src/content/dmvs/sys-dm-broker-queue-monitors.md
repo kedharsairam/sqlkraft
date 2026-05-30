@@ -21,8 +21,7 @@ Returns a row for each queue monitor in the instance. A queue monitor manages ac
 ```sql
 INACTIVE
 NOTIFIED
-RECEIVES_OCCURRING
-last_empty_rowset_time
+RECEIVES_OCCURRING last_empty_rowset_time
 ```
 
 ## Permissions

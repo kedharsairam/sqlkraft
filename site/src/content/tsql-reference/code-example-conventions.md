@@ -37,13 +37,9 @@ When used inline in an article, data types are rendered in lowercase and bold. F
 
 When used in Transact-SQL code blocks, data types are rendered in uppercase. For example:
 
-SQL
-
 Unless stated otherwise, the examples provided in the Transact-SQL reference were tested by
 
 using SQL Server Management Studio and its default settings for the following options:
-
-
 
 Expand table
 
@@ -97,8 +93,7 @@ INT
 DECLARE
 @varchar_example
 AS
-VARCHAR
-(255);
+VARCHAR (255);
 DECLARE
 @bit_example
 AS

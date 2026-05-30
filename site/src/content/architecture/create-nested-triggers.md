@@ -85,14 +85,11 @@ Note
 
 ```sql
 PurchaseOrderDetail
-PurchaseOrderDetail
-delcascadetrig
-delcascadetrig
+PurchaseOrderDetail delcascadetrig delcascadetrig
 PurchaseOrderID
 PurchaseOrderHeader
 PurchaseOrderDetail
-PurchaseOrderDetail
-del_save
+PurchaseOrderDetail del_save
 CREATE TRIGGER Purchasing.savedel
 ON Purchasing.PurchaseOrderDetail
 FOR DELETE

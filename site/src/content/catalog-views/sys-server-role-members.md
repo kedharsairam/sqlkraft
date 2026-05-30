@@ -21,8 +21,7 @@ Returns one row for each member of each fixed and user-defined server role. Serv
 ## Syntax
 
 ```sql
-SELECT
-roles.principal_id
+SELECT roles.principal_id
 AS RolePrincipalID
 ,
 roles.name

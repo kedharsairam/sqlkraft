@@ -103,14 +103,11 @@ Expand table
 USE
 AdventureWorks2025;
 GO
-SELECT
-object_id,
+SELECT object_id,
 property_list_id,
 stoplist_id
-FROM
-sys.fulltext_indexes
-WHERE
-object_id = object_id(
+FROM sys.fulltext_indexes
+WHERE object_id = object_id(
 'HumanResources.JobCandidate'
 );
 ```

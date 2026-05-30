@@ -21,10 +21,8 @@ Contains information about Query Store replicas, when Query Store for readable s
 ## Syntax
 
 ```sql
-ON
-qsr.replica_group_id = qsp.replica_group_id
-WHERE
-qsr.replica_name =
+ON qsr.replica_group_id = qsp.replica_group_id
+WHERE qsr.replica_name =
 'yourSecondaryReplicaName'
 ;
 ```

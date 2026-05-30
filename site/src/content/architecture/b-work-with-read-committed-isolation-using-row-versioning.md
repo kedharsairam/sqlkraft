@@ -8,11 +8,7 @@ pubDate: 2026-05-29
 
 On session 2:
 
-SQL
-
 On session 1:
-
-SQL
 
 In this example, a
 
@@ -44,12 +40,8 @@ couldn't.
 
 On session 1:
 
-SQL
-
 On session 2:
 
-SQL
-
 ```sql
 READ COMMITTED
 ```
@@ -58,21 +50,15 @@ READ COMMITTED
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 READ COMMITTED
@@ -119,9 +105,7 @@ TRANSACTION
 GO
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 USE

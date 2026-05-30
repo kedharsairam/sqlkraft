@@ -27,8 +27,7 @@ setup.exe /QS /ACTION=REBUILDDATABASE /INSTANCENAME="MSSQLSERVER" /SQLSYSADMINAC
 --'[path]' means 'single user mode' and '[path]' is 'master only mode'
 net stop "SQL Server (MSSQLSERVER)"
 net start "SQL Server (MSSQLSERVER)" /m /t3608
---2. Restore master database WITH REPLACE option
-restore database master from disk=N'Master.bak' WITH REPLACE
+--2. Restore master database WITH REPLACE option restore database master from disk=N'Master.bak' WITH REPLACE
 
 --Rebuilding master also rebuilds Model, MSDB. So restore model and msdb backups too.
 
@@ -43,27 +42,21 @@ net stop "SQL Server (MSSQLSERVER)"
 net start "SQL Server (MSSQLSERVER)" /m /t3608
 --4. Now instance starts but master has incorrect path references to all the other databases. So a restore would not work. So first we will have to check and change all path references using below commands.
 
-select * from sys.sysdatabases
-select * from sys.sysaltfiles
+select * from sys.sysdatabases select * from sys.sysaltfiles
 
 --Changing incorrect path references using below commands.
 
-alter database [mssqlsystemresource] modify file (name='Data',filename='mssqlsystemresource.mdf')
-alter database [mssqlsystemresource] modify file (name='Log',filename='mssqlsystemresource.ldf')
+alter database [mssqlsystemresource] modify file (name='Data',filename='mssqlsystemresource.mdf') alter database [mssqlsystemresource] modify file (name='Log',filename='mssqlsystemresource.ldf')
 
-alter database [model] modify file (name='modeldev',filename='model.mdf')
-alter database [model] modify file (name='modellog',filename='modellog.ldf')
+alter database [model] modify file (name='modeldev',filename='model.mdf') alter database [model] modify file (name='modellog',filename='modellog.ldf')
 
-alter database [msdb] modify file (name='MSDBData',filename='MSDBData.mdf')
-alter database [msdb] modify file (name='MSDBLog',filename='MSDBLog.ldf')
+alter database [msdb] modify file (name='MSDBData',filename='MSDBData.mdf') alter database [msdb] modify file (name='MSDBLog',filename='MSDBLog.ldf')
 
-alter database [tempdb] modify file (name='tempdev',filename='tempdb.mdf')
-alter database [tempdb] modify file (name='templog',filename='templog.ldf')
+alter database [tempdb] modify file (name='tempdev',filename='tempdb.mdf') alter database [tempdb] modify file (name='templog',filename='templog.ldf')
 
 --Create login as its a new master and there will be no logins in the instance.
 
-CREATE LOGIN [instance_name] FROM WINDOWS
-sp_addsrvrolemember 'KDSSG\KDSSGDBATeam','sysadmin'
+CREATE LOGIN [instance_name] FROM WINDOWS sp_addsrvrolemember 'KDSSG\KDSSGDBATeam','sysadmin'
 
 --1. After all references are changes, restart the instance once with /m /t3608 for all changes to take affect.
 --'[path]' means 'single user mode' and '[path]' is 'master only mode'

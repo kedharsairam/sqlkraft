@@ -15,8 +15,6 @@ pubDate: 2026-05-29
 
 ## INCLUDE_NULL_VALUES
 
-SQL
-
 In Fabric Data Warehouse, the query must end with
 
 , so you can't use it inside
@@ -145,22 +143,16 @@ FOR JSON
 FOR JSON
 ```
 
-```sql
-AUTO
-```
+`AUTO`
 
-```sql
-PATH
-```
+`PATH`
 
 ```sql
 FOR
 JSON
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 FOR JSON AUTO
@@ -170,15 +162,12 @@ FOR JSON AUTO
 FOR JSON PATH
 ```
 
-```sql
-PATH
-```
+`PATH`
 
 ```sql
 USE
 AdventureWorks2025;
-SELECT
-p.BusinessEntityID,
+SELECT p.BusinessEntityID,
 FirstName,
 LastName,
 PhoneNumber
@@ -186,15 +175,12 @@ AS
 Phone
 FROM
 Person.Person
-AS
-p
+AS p
 INNER
 JOIN
 Person.PersonPhone
-AS
-pph
-ON
-p.BusinessEntityID = pph.BusinessEntityID
+AS pph
+ON p.BusinessEntityID = pph.BusinessEntityID
 WHERE
 LastName
 LIKE
@@ -212,43 +198,29 @@ XMLSCHEMA
 , ELEMENTS XSINIL;
 ```
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-INCLUDE_NULL_VALUES
-```
+`INCLUDE_NULL_VALUES`
 
 ```sql
 FOR JSON
 ```
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-ROOT
-```
+`ROOT`
 
 ```sql
 FOR
 JSON
 ```
 
-```sql
-ROOT
-```
+`ROOT`
 
-```sql
-WITHOUT_ARRAY_WRAPPER
-```
+`WITHOUT_ARRAY_WRAPPER`
 
 ```sql
 FOR JSON
 ```
 
-```sql
-WITHOUT_ARRAY_WRAPPER
-```
+`WITHOUT_ARRAY_WRAPPER`

@@ -19,8 +19,6 @@ First Friday,
 
 ## returns a time zone offset of 310 minutes:
 
-SQL
-
 renders the tzoffset value as follows:
 
 For datetimeoffset and datetime2, tzoffset returns the time offset in minutes, where the
@@ -85,37 +83,17 @@ date
 
 .
 
-SQL
-
-### time
-
-### time
-
-### datetime2
-
-### datetime
-
 ### smalldatetime
 
-```sql
-DATEPART
-```
+`DATEPART`
 
-```sql
-DATEPART
-```
+`DATEPART`
 
-```sql
-DATEPART
-```
+`DATEPART`
 
-```sql
-DATEPART
-```
+`DATEPART`
 
-```sql
-DATEPART
-```
+`DATEPART`
 
 ```sql
 1900, 1, 1, 1,
@@ -124,23 +102,20 @@ DATEPART
 
 ```sql
 SELECT
-DATEPART
-(tzoffset,
+DATEPART (tzoffset,
 '2007-05-10  00:00:01.1234567 +05:10'
 );
 ```
 
 ```sql
 SELECT
-DATEPART
-(
+DATEPART (
 year
 ,
 '12:10:30.123'
 )
 ,
-DATEPART
-(
+DATEPART (
 month
 ,
 '12:10:30.123'

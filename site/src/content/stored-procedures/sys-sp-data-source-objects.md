@@ -84,8 +84,7 @@ SYSNAME = N
 DECLARE
 @object_root_name
 AS
-NVARCHAR
-(
+NVARCHAR (
 MAX
 ) =
 NULL
@@ -95,8 +94,7 @@ DECLARE
 AS
 INT
 = 3;
-EXECUTE
-sp_data_source_objects
+EXECUTE sp_data_source_objects
 @data_source,
 @object_root_name,
 @max_search_depth;
@@ -114,14 +112,12 @@ SYSNAME = N
 DECLARE
 @object_root_name
 AS
-NVARCHAR
-(
+NVARCHAR (
 MAX
 ) =
 NULL
 ;
-EXECUTE
-sp_data_source_objects
+EXECUTE sp_data_source_objects
 @data_source,
 @object_root_name;
 ```

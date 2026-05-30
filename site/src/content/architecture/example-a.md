@@ -26,8 +26,6 @@ transaction. For this example, it's assumed that the
 
 lock is acquired on partition ID 7.
 
-SQL
-
 Session 2:
 
 A transaction is started, and the
@@ -52,31 +50,17 @@ lock being
 
 held on partition ID 7 by the transaction in session 1, there's no blocking between transactions.
 
-SQL
+`SELECT`
 
-```sql
-SELECT
-```
+`HOLDLOCK`
 
-```sql
-HOLDLOCK
-```
+`IS`
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IS
-```
+`IS`
 
-```sql
-IS
-```
-
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 S
@@ -94,21 +78,17 @@ S
 S
 ```
 
-```sql
-IS
-```
+`IS`
 
 ```sql
 (
-col1
-int
+col1 int
 );
 GO
 -- Create a clustered index on the table.
 CREATE
 CLUSTERED
-INDEX
-ci_TestTable
+INDEX ci_TestTable
 ON
 TestTable (col1);
 GO
@@ -116,8 +96,7 @@ GO
 INSERT
 INTO
 TestTable
-VALUES
-(1);
+VALUES (1);
 GO
 ```
 
@@ -127,15 +106,12 @@ BEGIN
 TRANSACTION
 ;
 -- This SELECT statement will acquire an IS lock on the table.
-SELECT
-col1
+SELECT col1
 FROM
 TestTable
-WITH
-(HOLDLOCK);
+WITH (HOLDLOCK);
 BEGIN
 TRANSACTION
 ;
-SELECT
-col1
+SELECT col1
 ```

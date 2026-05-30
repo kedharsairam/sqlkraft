@@ -21,8 +21,7 @@ SQL Server 2019 (15.x) and later - Windows only Returns performance counters for
 ```sql
 SELECT
 *
-FROM
-sys.dm_column_encryption_enclave;
+FROM sys.dm_column_encryption_enclave;
 ```
 
 ## Examples
@@ -38,6 +37,5 @@ VIEW SERVER STATE
 ```sql
 SELECT
 *
-FROM
-sys.dm_column_encryption_enclave;
+FROM sys.dm_column_encryption_enclave;
 ```

@@ -6,8 +6,6 @@ tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL
-
 Any snapshot transaction that's active when the
 
 statement is executed receives
@@ -72,9 +70,7 @@ being blocked and what is blocking it. For more information and examples, see
 ALTER INDEX
 ```
 
-```sql
-HumanResources.Employee
-```
+`HumanResources.Employee`
 
 ```sql
 ALTER INDEX
@@ -84,17 +80,12 @@ ALTER INDEX
 READ COMMITTED
 ```
 
-```sql
-LOCK_TIMEOUT
-```
+`LOCK_TIMEOUT`
+
+`LOCK_TIMEOUT`
 
 ```sql
-LOCK_TIMEOUT
-```
-
-```sql
-Lock request time-out
-period exceeded
+Lock request time-out period exceeded
 ```
 
 ```sql
@@ -115,10 +106,6 @@ GO
 BULK INSERT
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-sys.dm_os_waiting_tasks
-```
+`sys.dm_os_waiting_tasks`

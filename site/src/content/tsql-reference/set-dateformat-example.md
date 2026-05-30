@@ -81,8 +81,6 @@ The following Transact-SQL code example uses the same date character string with
 
 different DATEFORMAT settings. A run of the code produces the output shown in the comment:
 
-SQL
-
 ### ymd
 
 ## CONVERT offers explicit codes for
@@ -106,8 +104,7 @@ SL_Croatian
 ```sql
 DECLARE
 @yourDateString
-NVARCHAR
-(10) =
+NVARCHAR (10) =
 '12-09-2018'
 ;
 PRINT @yourDateString + '  = the input.';

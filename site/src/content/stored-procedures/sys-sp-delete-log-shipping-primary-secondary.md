@@ -43,45 +43,32 @@ N
 
 ### Example 1
 
-```sql
-sp_delete_log_shipping_primary_secondary
-```
+`sp_delete_log_shipping_primary_secondary`
 
 ### Example 2
 
-```sql
-master
-```
+`master`
 
 ### Example 3
 
-```sql
-log_shipping_primary_secondaries
-```
+`log_shipping_primary_secondaries`
 
 ### Example 4
 
-```sql
-sp_delete_log_shipping_primary_secondary
-```
+`sp_delete_log_shipping_primary_secondary`
 
 ### Example 5
 
-```sql
-LogShipAdventureWorks
-```
+`LogShipAdventureWorks`
 
 ### Example 6
 
-```sql
-FLATIRON
-```
+`FLATIRON`
 
 ### Example 7
 
 ```sql
-EXECUTE
-master.dbo.sp_delete_log_shipping_primary_secondary
+EXECUTE master.dbo.sp_delete_log_shipping_primary_secondary
 @primary_database = N
 'AdventureWorks'
 ,

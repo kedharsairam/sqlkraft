@@ -46,8 +46,7 @@ order is used.
 ```sql
 msoledbsql.h
 HRESULT
-LocalDBFormatMessage
-(
+LocalDBFormatMessage (
 HRESULT hrLocalDB ,
 DWORD dwFlags ,
 DWORD dwLanguageId ,

@@ -14,6 +14,4 @@ Returns the current size of the requested object and estimates the object size f
 
 ## Syntax
 
-```sql
-sys.sp_estimate_data_compression_savings
-```
+`sys.sp_estimate_data_compression_savings`

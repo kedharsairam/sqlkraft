@@ -96,6 +96,5 @@ Connect to SQL Server using Active Directory authentication
 ＂
 
 ```cmd
-mssql.conf
-krb5.conf
+mssql.conf krb5.conf
 ```

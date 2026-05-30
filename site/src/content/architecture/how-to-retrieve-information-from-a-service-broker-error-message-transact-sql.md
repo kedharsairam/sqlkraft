@@ -81,8 +81,6 @@ programs that ran
 
 .
 
-SQL
-
 ```sql
 https://schemas.microsoft.com/SQL/ServiceBroker/Error
 CAST
@@ -100,8 +98,7 @@ INT
 OUTPUT
 ,
 @description
-NVARCHAR
-(3000)
+NVARCHAR (3000)
 OUTPUT
 )
 ```

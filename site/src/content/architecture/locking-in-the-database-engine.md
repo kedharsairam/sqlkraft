@@ -142,198 +142,102 @@ or
 SET TRANSACTION ISOLATION LEVEL
 ```
 
-```sql
-IsolationLevel
-```
+`IsolationLevel`
 
-```sql
-Connection
-```
+`Connection`
 
-```sql
-adXactReadUncommitted
-```
+`adXactReadUncommitted`
 
-```sql
-adXactReadCommitted
-```
+`adXactReadCommitted`
 
-```sql
-adXactRepeatableRead
-```
+`adXactRepeatableRead`
 
-```sql
-adXactReadSerializable
-```
+`adXactReadSerializable`
 
-```sql
-Microsoft.Data.SqlClient
-```
+`Microsoft.Data.SqlClient`
 
-```sql
-System.Data.SqlClient
-```
+`System.Data.SqlClient`
 
-```sql
-SqlConnection.BeginTransaction
-```
+`SqlConnection.BeginTransaction`
 
-```sql
-IsolationLevel
-```
+`IsolationLevel`
 
-```sql
-Unspecified
-```
+`Unspecified`
 
-```sql
-Chaos
-```
+`Chaos`
 
-```sql
-ReadUncommitted
-```
+`ReadUncommitted`
 
-```sql
-ReadCommitted
-```
+`ReadCommitted`
 
-```sql
-RepeatableRead
-```
+`RepeatableRead`
 
-```sql
-Serializable
-```
+`Serializable`
 
-```sql
-Snapshot
-```
+`Snapshot`
 
 ```sql
 ITransactionLocal::StartTransaction
 ```
 
-```sql
-isoLevel
-```
+`isoLevel`
 
-```sql
-ISOLATIONLEVEL_READUNCOMMITTED
-```
+`ISOLATIONLEVEL_READUNCOMMITTED`
 
-```sql
-ISOLATIONLEVEL_READCOMMITTED
-```
+`ISOLATIONLEVEL_READCOMMITTED`
 
-```sql
-ISOLATIONLEVEL_REPEATABLEREAD
-```
+`ISOLATIONLEVEL_REPEATABLEREAD`
 
-```sql
-ISOLATIONLEVEL_SNAPSHOT
-```
+`ISOLATIONLEVEL_SNAPSHOT`
 
-```sql
-ISOLATIONLEVEL_SERIALIZABLE
-```
+`ISOLATIONLEVEL_SERIALIZABLE`
 
-```sql
-DBPROPSET_SESSION
-```
+`DBPROPSET_SESSION`
 
-```sql
-DBPROP_SESS_AUTOCOMMITISOLEVELS
-```
+`DBPROP_SESS_AUTOCOMMITISOLEVELS`
 
-```sql
-DBPROPVAL_TI_CHAOS
-```
+`DBPROPVAL_TI_CHAOS`
 
-```sql
-DBPROPVAL_TI_READUNCOMMITTED
-```
+`DBPROPVAL_TI_READUNCOMMITTED`
 
-```sql
-DBPROPVAL_TI_BROWSE
-```
+`DBPROPVAL_TI_BROWSE`
 
-```sql
-DBPROPVAL_TI_CURSORSTABILITY
-```
+`DBPROPVAL_TI_CURSORSTABILITY`
 
-```sql
-DBPROPVAL_TI_READCOMMITTED
-```
+`DBPROPVAL_TI_READCOMMITTED`
 
-```sql
-DBPROPVAL_TI_REPEATABLEREAD
-```
+`DBPROPVAL_TI_REPEATABLEREAD`
 
-```sql
-DBPROPVAL_TI_SERIALIZABLE
-```
+`DBPROPVAL_TI_SERIALIZABLE`
 
-```sql
-DBPROPVAL_TI_ISOLATED
-```
+`DBPROPVAL_TI_ISOLATED`
 
-```sql
-DBPROPVAL_TI_SNAPSHOT
-```
+`DBPROPVAL_TI_SNAPSHOT`
 
-```sql
-SQLSetConnectAttr
-```
+`SQLSetConnectAttr`
 
-```sql
-Attribute
-```
+`Attribute`
 
-```sql
-SQL_ATTR_TXN_ISOLATION
-```
+`SQL_ATTR_TXN_ISOLATION`
 
-```sql
-ValuePtr
-```
+`ValuePtr`
 
-```sql
-SQL_TXN_READ_UNCOMMITTED
-```
+`SQL_TXN_READ_UNCOMMITTED`
 
-```sql
-SQL_TXN_READ_COMMITTED
-```
+`SQL_TXN_READ_COMMITTED`
 
-```sql
-SQL_TXN_REPEATABLE_READ
-```
+`SQL_TXN_REPEATABLE_READ`
 
-```sql
-SQL_TXN_SERIALIZABLE
-```
+`SQL_TXN_SERIALIZABLE`
 
-```sql
-SQLSetConnectAttr
-```
+`SQLSetConnectAttr`
 
-```sql
-SQL_COPT_SS_TXN_ISOLATION
-```
+`SQL_COPT_SS_TXN_ISOLATION`
 
-```sql
-ValuePtr
-```
+`ValuePtr`
 
-```sql
-SQL_TXN_SS_SNAPSHOT
-```
+`SQL_TXN_SS_SNAPSHOT`
 
-```sql
-SQL_COPT_SS_TXN_ISOLATION
-```
+`SQL_COPT_SS_TXN_ISOLATION`
 
-```sql
-SQL_ATTR_TXN_ISOLATION
-```
+`SQL_ATTR_TXN_ISOLATION`

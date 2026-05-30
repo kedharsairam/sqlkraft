@@ -43,8 +43,6 @@ step 4 in Lesson 2. Then, run the code to create an initiator user and pull in t
 
 certificate.
 
-SQL
-
 Copy and paste the following code into a Query Editor window. Change the string
 
 to the name of the computer that is running your initiator instance.

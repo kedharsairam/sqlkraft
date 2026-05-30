@@ -14,6 +14,4 @@ that allows all secondary replicas to be validated, rather than just the current
 
 ## Syntax
 
-```sql
-sp_validate_replica_hosts_as_publishers
-```
+`sp_validate_replica_hosts_as_publishers`

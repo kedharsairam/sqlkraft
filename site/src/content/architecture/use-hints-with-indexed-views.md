@@ -198,110 +198,64 @@ won't produce a syntax error in 80 compatibility mode, they are ignored.
 GROUP BY
 ```
 
-```sql
-SET
-```
+`SET`
 
-```sql
-FROM
-```
+`FROM`
 
-```sql
-FROM
-```
+`FROM`
 
 ```sql
 EXPAND VIEWS
 ```
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-FROM
-```
+`FROM`
 
-```sql
-EXPAND
-```
+`EXPAND`
 
-```sql
-READCOMMITTED
-```
+`READCOMMITTED`
 
-```sql
-READCOMMITTEDLOCK
-```
+`READCOMMITTEDLOCK`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
 ```sql
 EXPAND VIEWS
 ```
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-INDEX()
-```
+`INDEX()`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
 ```sql
 EXPAND VIEWS
 ```
 
-```sql
-INDEX
-```
+`INDEX`
 
-```sql
-PAGLOCK
-```
+`PAGLOCK`
 
-```sql
-ROWLOCK
-```
+`ROWLOCK`
 
-```sql
-TABLOCKX
-```
+`TABLOCKX`
 
-```sql
-UPDLOCK
-```
+`UPDLOCK`
 
-```sql
-XLOCK
-```
+`XLOCK`
 
 ```sql
 INDEX (index_val[ ,...n] )
 ```
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`
 
-```sql
-NOEXPAND
-```
+`NOEXPAND`

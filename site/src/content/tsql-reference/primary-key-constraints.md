@@ -81,13 +81,9 @@ A table can contain only one PRIMARY KEY constraint.
 ##
 ```
 
-```sql
-tempdb
-```
+`tempdb`
 
-```sql
-tempdb
-```
+`tempdb`
 
 ```sql
 #

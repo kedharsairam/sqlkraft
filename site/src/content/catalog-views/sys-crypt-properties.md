@@ -67,6 +67,4 @@ DROP SIGNATURE (Transact-SQL)
 EXECUTE AS
 ```
 
-```sql
-sys.crypt_properties
-```
+`sys.crypt_properties`

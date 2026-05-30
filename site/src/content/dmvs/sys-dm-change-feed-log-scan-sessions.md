@@ -17,22 +17,12 @@ Only role membership is required to query this function. sys.dm_change_feed_log_
 
 ## Code Blocks
 
-```sql
-session_id
-```
+`session_id`
 
-```sql
-start_time
-```
+`start_time`
 
-```sql
-end_time
-```
+`end_time`
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-duration
-```
+`duration`

@@ -41,8 +41,6 @@ attributes must be nameless.
 
 The following query wraps the product model summary description in a CDATA section.
 
-SQL
-
 This is the result:
 
 XML
@@ -56,18 +54,14 @@ USE
 AdventureWorks2022;
 GO
 SELECT
-1
-as
+1 as
 Tag,
-0
-as
+0 as
 Parent
 ,
-ProductModelID
-as
+ProductModelID as
 [ProductModel!1!ProdModelID],
-Name
-as
+Name as
 [ProductModel!1!
 Name
 ],

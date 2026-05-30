@@ -37,8 +37,7 @@ ENCRYPTION BY SERVER CERTIFICATE Certificatename;
 --Turn ON Encryption for User Database
 ALTER DATABASE Databasename SET ENCRYPTION ON
 
---Backup User Database (Make sure to take Both Full and Log Backups)
-backup database databasename to disk = N'path\filename.bak'
+--Backup User Database (Make sure to take Both Full and Log Backups) backup database databasename to disk = N'path\filename.bak'
 backup log databasename to disk = N'path\filename.trn'
 
 --Restore Database Encryption Certificate in all Replicas

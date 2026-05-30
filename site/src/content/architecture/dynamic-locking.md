@@ -12,8 +12,6 @@ extended event, such as in the following
 
 example:
 
-SQL
-
 Using low-level locks, such as row locks, increases concurrency by decreasing the probability that
 
 two transactions request locks on the same piece of data at the same time. Using low-level locks
@@ -32,9 +30,7 @@ Database Engine automatically determines what locks are most appropriate when th
 
 ### Memory
 
-```sql
-lock_escalation
-```
+`lock_escalation`
 
 ```sql
 -- Session creates a histogram of the number of lock escalations per database
@@ -45,20 +41,13 @@ SESSION
 ON
 SERVER
 ADD
-EVENT
-sqlserver.lock_escalation
-(
-SET
-collect_database_name=1,collect_statement=1
-ACTION
-(sqlserver.database_id,sqlserver.database_name,sqlserver.query_hash_signed,sqlse
-rver.query_plan_hash_signed,sqlserver.sql_text,sqlserver.username)
+EVENT sqlserver.lock_escalation (
+SET collect_database_name=1,collect_statement=1
+ACTION (sqlserver.database_id,sqlserver.database_name,sqlserver.query_hash_signed,sqlse rver.query_plan_hash_signed,sqlserver.sql_text,sqlserver.username)
 )
 ADD
-TARGET package0.histogram
-(
-SET
-source
+TARGET package0.histogram (
+SET source
 =N
 'sqlserver.database_id'
 )

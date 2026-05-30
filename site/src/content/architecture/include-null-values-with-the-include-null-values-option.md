@@ -35,8 +35,6 @@ SQL Managed Instance
 
 Azure Synapse Analytics (serverless SQL pool only)
 
-SQL
-
 analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
@@ -69,8 +67,6 @@ clause with the
 
 option.
 
-SQL
-
 JSON
 
 ﾉ
@@ -90,11 +86,9 @@ INCLUDE_NULL_VALUES
 null }
 FOR JSON
 INCLUDE_NULL_VALUES
-SELECT
-name
+SELECT name
 , surname
-FROM
-emp
+FROM emp
 FOR
 JSON
 AUTO

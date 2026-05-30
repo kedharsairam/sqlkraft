@@ -55,9 +55,7 @@ new development work, and plan to modify applications that currently use this fe
 
 ### Example 1
 
-```sql
-sp_dropapprole
-```
+`sp_dropapprole`
 
 ### Example 2
 
@@ -67,15 +65,12 @@ ALTER ANY APPLICATION ROLE
 
 ### Example 3
 
-```sql
-SalesApp
-```
+`SalesApp`
 
 ### Example 4
 
 ```sql
-EXECUTE
-sp_dropapprole
+EXECUTE sp_dropapprole
 'SalesApp'
 ;
 ```

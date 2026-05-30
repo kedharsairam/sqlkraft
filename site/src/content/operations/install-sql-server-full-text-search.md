@@ -92,9 +92,5 @@ package.
 Red Hat Enterprise Linux
 
 ```cmd
-mssql-server-fts
-mssql-server-fts
-mssql-server-fts
-mssql-server-fts
-sudo yum install -y mssql-server-fts
+mssql-server-fts mssql-server-fts mssql-server-fts mssql-server-fts sudo yum install -y mssql-server-fts
 ```

@@ -14,9 +14,7 @@ Enables or disables Policy-Based Management. Transact-SQL syntax conventions Det
 
 ## Syntax
 
-```sql
-sp_syspolicy_set_config_enabled
-```
+`sp_syspolicy_set_config_enabled`
 
 ## Permissions
 
@@ -27,8 +25,7 @@ SQL) 06/23/2025 Applies to: SQL Server Enables or disables Policy-Based Manageme
 ### Example 1
 
 ```sql
-EXECUTE
-msdb.dbo.sp_syspolicy_set_config_enabled @
+EXECUTE msdb.dbo.sp_syspolicy_set_config_enabled @
 value
 = 1;
 GO

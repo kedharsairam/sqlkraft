@@ -92,10 +92,8 @@ Service Broker Endpoints
 Service Broker Message Forwarding
 
 ```sql
-msdb
-msdb
+msdb msdb
 MESSAGE_FORWARDING_SIZE
 MESSAGE_FORWARDING_SIZE
-MESSAGE_FORWARDING_SIZE
-sys.dm_broker_forwarded_messages
+MESSAGE_FORWARDING_SIZE sys.dm_broker_forwarded_messages
 ```

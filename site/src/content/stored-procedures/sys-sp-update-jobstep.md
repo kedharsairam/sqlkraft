@@ -133,21 +133,15 @@ N
 
 ### Example 1
 
-```sql
-sp_update_jobstep
-```
+`sp_update_jobstep`
 
 ### Example 2
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
 ### Example 3
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 4
 
@@ -165,11 +159,9 @@ Sales Data Backup
 ### Example 6
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-dbo.sp_update_jobstep
+EXECUTE dbo.sp_update_jobstep
 @job_name = N
 'Weekly Sales Data Backup'
 ,

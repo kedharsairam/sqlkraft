@@ -47,8 +47,7 @@ Expand table
 msoledbsql.h
 S_OK
 HRESULT
-LocalDBCreateInstance
-(
+LocalDBCreateInstance (
 PCWSTR wszVersion ,
 PCWSTR pInstanceName ,
 DWORD dwFlags

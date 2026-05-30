@@ -36,15 +36,13 @@ OUTPUT
 ### Example 1
 
 ```sql
-EXECUTE
-sys.sp_xtp_control_proc_exec_stats @new_collection_value = 1;
+EXECUTE sys.sp_xtp_control_proc_exec_stats @new_collection_value = 1;
 DECLARE
 @c
 AS
 BIT
 ;
-EXECUTE
-sys.sp_xtp_control_proc_exec_stats
+EXECUTE sys.sp_xtp_control_proc_exec_stats
 @old_collection_value = @c
 OUTPUT
 ;

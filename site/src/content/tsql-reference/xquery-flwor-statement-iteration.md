@@ -82,22 +82,9 @@ location and returns the string value of the <
 
 > nodes:
 
-SQL
-
 ```sql
-for
-let
-where
-order
-by
-return
-FOR
-let
-as
-where
-order by
-return
-return
+for let where order by return
+FOR let as where order by return return
 Step
 Step
 DECLARE

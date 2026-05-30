@@ -14,6 +14,4 @@ Returns information about the conflict detection settings for a publication that
 
 ## Syntax
 
-```sql
-sp_help_peerconflictdetection
-```
+`sp_help_peerconflictdetection`

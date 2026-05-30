@@ -60,8 +60,6 @@ A hash index is nonunique by default, but can be declared as unique.
 
 The following example creates a unique hash index:
 
-SQL
-
 In a memory-optimized table, when a row is affected by an
 
 statement, the table creates
@@ -80,32 +78,21 @@ columns in the hash index key. The hash index requires the
 
 entire key to seek into the index.
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
 ```sql
 ALTER
 TABLE
 MyTable_memop
 ADD
-INDEX
-ix_hash_Column2
+INDEX ix_hash_Column2
 UNIQUE
-HASH
-(Column2)
-WITH
-(BUCKET_COUNT = 64);
+HASH (Column2)
+WITH (BUCKET_COUNT = 64);
 ```

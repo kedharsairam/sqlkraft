@@ -14,9 +14,7 @@ table. This stored procedure is executed at the Transact-SQL syntax conventions 
 
 ## Syntax
 
-```sql
-sp_drop_agent_profile
-```
+`sp_drop_agent_profile`
 
 ## Permissions
 

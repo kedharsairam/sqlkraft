@@ -89,7 +89,5 @@ DATABASE statement, SQL Server Management Studio, or SQL Server PowerShell to ta
 database.
 
 ```cmd
-.dacpac
-msdb
-master
+.dacpac msdb master
 ```

@@ -33,8 +33,7 @@ WHERE d.state_desc = N'ONLINE';
 
 SET @cmd = @cmd + N';'
 
-DECLARE @Results TABLE
-(
+DECLARE @Results TABLE (
     database_name SYSNAME NOT NULL
     , server_principal_name SYSNAME NULL
     , database_principal_name SYSNAME NULL

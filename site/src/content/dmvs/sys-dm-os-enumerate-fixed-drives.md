@@ -14,6 +14,4 @@ Starting with SQL Server 2017 (14.x) CU 1, volumes mounted to drive letters like
 
 ## Syntax
 
-```sql
-sys.dm_os_enumerate_fixed_drives
-```
+`sys.dm_os_enumerate_fixed_drives`

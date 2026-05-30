@@ -14,9 +14,7 @@ stored procedure is invoked automatically for upgrading metadata that is specifi
 
 ## Syntax
 
-```sql
-sp_upgrade_log_shipping
-```
+`sp_upgrade_log_shipping`
 
 ## Permissions
 

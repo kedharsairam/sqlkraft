@@ -38,23 +38,17 @@ Sets or clears a stored procedure for automatic execution. A stored procedure th
 ```sql
 sys.sp_procoption
 [ @
-P
-roc
-N
-ame = ]
+P roc
+N ame = ]
 N
 'ProcName'
 , [ @
-O
-ption
-N
-ame = ]
+O ption
+N ame = ]
 'OptionName'
 , [ @
-O
-ption
-V
-alue = ]
+O ption
+V alue = ]
 'OptionValue'
 [ ; ]
 ```

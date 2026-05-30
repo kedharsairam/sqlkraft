@@ -44,31 +44,23 @@ NONCLUSTERED HASH
 
 ### Example 3
 
-```sql
-sys.hash_indexes
-```
+`sys.hash_indexes`
 
 ### Example 4
 
-```sql
-Production.Product
-```
+`Production.Product`
 
 ### Example 5
 
 ```sql
-SELECT
-i.name
-AS
-index_name,
+SELECT i.name
+AS index_name,
 i.type_desc,
 is_unique,
 ds.type_desc
-AS
-filegroup_or_partition_scheme,
+AS filegroup_or_partition_scheme,
 ds.name
-AS
-filegroup_or_partition_scheme_name,
+AS filegroup_or_partition_scheme_name,
 ignore_dup_key,
 is_primary_key,
 is_unique_constraint,
@@ -77,23 +69,15 @@ is_padded,
 is_disabled,
 allow_row_locks,
 allow_page_locks
-FROM
-sys.indexes
-AS
-i
+FROM sys.indexes
+AS i
 INNER
-JOIN
-sys.data_spaces
-AS
-ds
-ON
-i.data_space_id = ds.data_space_id
-WHERE
-is_hypothetical = 0
-AND
-i.index_id <> 0
-AND
-i.object_id = OBJECT_ID(
+JOIN sys.data_spaces
+AS ds
+ON i.data_space_id = ds.data_space_id
+WHERE is_hypothetical = 0
+AND i.index_id <> 0
+AND i.object_id = OBJECT_ID(
 'Production.Product'
 );
 GO

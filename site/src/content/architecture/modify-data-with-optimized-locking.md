@@ -86,9 +86,7 @@ Update conflicts must be handled and retried by the application.
 
 ### Query behavior changes with optimized locking and RCSI
 
-```sql
-READ_COMMITTED_SNAPSHOT
-```
+`READ_COMMITTED_SNAPSHOT`
 
 ```sql
 READ COMMITTED
@@ -98,9 +96,7 @@ READ COMMITTED
 REPEATABLE READ
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
 ```sql
 READ COMMITTED
@@ -114,23 +110,15 @@ U
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 READ
 COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`

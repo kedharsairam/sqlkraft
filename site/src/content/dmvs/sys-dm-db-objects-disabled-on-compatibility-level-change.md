@@ -25,8 +25,7 @@ sys.dm_db_objects_disabled_on_compatibility_level_change ( compatibility_level )
 ```sql
 // ErrorNumber: 8674
 // ErrorSeverity: EX_USER
-// ErrorFormat: The query processor is unable to produce a plan because the table or
-view '%.*ls' is disabled.
+// ErrorFormat: The query processor is unable to produce a plan because the table or view '%.*ls' is disabled.
 // ErrorCause: The table has a disabled heap.
 // ErrorCorrectiveAction: Rebuild the disabled heap to enable it.
 // ErrorInserts: table or view name
@@ -39,7 +38,6 @@ view '%.*ls' is disabled.
 ```sql
 SELECT
 *
-FROM
-sys.dm_db_objects_disabled_on_compatibility_level_change(120);
+FROM sys.dm_db_objects_disabled_on_compatibility_level_change(120);
 GO
 ```

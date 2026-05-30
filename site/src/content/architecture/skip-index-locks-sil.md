@@ -91,58 +91,34 @@ COMMIT TRANSACTION;
 X
 ```
 
-```sql
-IX
-```
+`IX`
 
 ```sql
 REPEATABLE READ
 ```
 
-```sql
-SERIALIZABLE
-```
+`SERIALIZABLE`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-IX
-```
+`IX`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-IX
-```
+`IX`
 
 ```sql
 X
 ```
 
-```sql
-DELETE
-```
+`DELETE`
 
-```sql
-UPDATE
-```
+`UPDATE`
 
-```sql
-varchar(max)
-```
+`varchar(max)`
 
-```sql
-nvarchar(max)
-```
+`nvarchar(max)`
 
-```sql
-varbinary(max)
-```
+`varbinary(max)`
 
-```sql
-json
-```
+`json`

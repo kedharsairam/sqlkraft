@@ -22,8 +22,6 @@ the query, but the index key itself is small and efficient.
 
 For example, assume that you want to design an index to cover the following query.
 
-SQL
-
 To cover the query, each column must be defined in the index. Although you could define all
 
 columns as key columns, the key size would be 334 bytes. Because the only column used as
@@ -37,8 +35,6 @@ would define
 as the key column and include all other columns as nonkey columns.
 
 The following statement creates an index with included columns to cover the query.
-
-SQL
 
 To validate that the index covers the query, create the index, then
 
@@ -62,19 +58,11 @@ might be covering for more queries, its performance benefit is decreased because
 
 ### varbinary(max)
 
-### xml
+`PostalCode`
 
-```sql
-PostalCode
-```
+`PostalCode`
 
-```sql
-PostalCode
-```
-
-```sql
-IX_Address_PostalCode
-```
+`IX_Address_PostalCode`
 
 ```sql
 SELECT
@@ -99,6 +87,5 @@ INDEX
 IX_Address_PostalCode
 ON
 Person.Address (PostalCode)
-INCLUDE
-(AddressLine1, AddressLine2, City, StateProvinceID);
+INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID);
 ```

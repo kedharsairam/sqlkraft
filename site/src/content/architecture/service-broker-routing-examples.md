@@ -108,32 +108,20 @@ home page.
 Expand table
 
 ```sql
-AdventureWorks2008R2
-msdb
-sys.routes
-NULL
-remote_service_name
-NULL
-broker_instance
-msdb
-AdventureWorks2008R2
-master
+AdventureWorks2008R2 msdb sys.routes
+NULL remote_service_name
+NULL broker_instance msdb
+AdventureWorks2008R2 master
 AutoCreatedLocal
-AdventureWorks2008R2
-msdb
-name
+AdventureWorks2008R2 msdb name
 AutoCreatedLocal
-AutoCreatedLocal
-remote_service_name
+AutoCreatedLocal remote_service_name
 NULL
+NULL broker_instance
 NULL
-broker_instance
-NULL
-NULL
-address
+NULL address
 LOCAL
-LOCAL
-mirror_address
+LOCAL mirror_address
 NULL
 NULL
 AdventureWorks2008R2

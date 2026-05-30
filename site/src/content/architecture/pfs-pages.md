@@ -100,8 +100,6 @@ row is always determined by the index key values. If a page in a BTree index doe
 
 ### varbinary(max)
 
-### xml
-
 ### json
 
 ```sql

@@ -14,9 +14,7 @@ Specifies the number of days to keep policy evaluation history for Policy-Based 
 
 ## Syntax
 
-```sql
-sp_syspolicy_set_config_history_retention
-```
+`sp_syspolicy_set_config_history_retention`
 
 ## Remarks
 
@@ -43,12 +41,9 @@ To view the current value for history retention, run the following query:
 ### Example 1
 
 ```sql
-SELECT
-current_value
-FROM
-msdb.dbo.syspolicy_configuration
-WHERE
-name
+SELECT current_value
+FROM msdb.dbo.syspolicy_configuration
+WHERE name
 =
 'HistoryRetentionInDays'
 ;
@@ -57,8 +52,7 @@ name
 ### Example 2
 
 ```sql
-EXECUTE
-msdb.dbo.sp_syspolicy_set_config_history_retention @
+EXECUTE msdb.dbo.sp_syspolicy_set_config_history_retention @
 value
 = 28;
 GO

@@ -68,10 +68,8 @@ int srv_setcollen (
 SRV_PROC *
 srvproc
 ,
-int
-column
+int column
 ,
-int
-len
+int len
 );
 ```

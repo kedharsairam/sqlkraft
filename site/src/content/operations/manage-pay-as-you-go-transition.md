@@ -77,7 +77,6 @@ SQL Server subscription
 
 ```cmd
 licenseType
-Paid
-billingPlan
+Paid billingPlan
 Paid
 ```

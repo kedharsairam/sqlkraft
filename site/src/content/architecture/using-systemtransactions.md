@@ -141,13 +141,10 @@ System.Transactions.TransactionScope
 Complete
 TransactionScope
 Dispose
-Complete
-using
+Complete using
 Dispose
-TransactionScope
-using
-TransactionScope
-using
+TransactionScope using
+TransactionScope using
 Try
 Dispose
 Finally

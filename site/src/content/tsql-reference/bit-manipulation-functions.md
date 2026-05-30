@@ -7,10 +7,6 @@ tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
 
-### int
-
-### smallint
-
 Applies to:
 
 SQL Server 2022 (16.x)
@@ -91,14 +87,6 @@ You can use the following images to visualize how SQL Server's bit manipulation 
 
 interpret bit and byte expression values and bit offsets.
 
-### tinyint
-
-### smallint
-
-### int
-
-### bigint
-
 ### binary(
 
 ### n
@@ -111,20 +99,6 @@ interpret bit and byte expression values and bit offsets.
 
 ### )
 
-### varchar
-
-### nvarchar
-
-### image
-
-### ntext
-
-### text
-
-### xml
-
-### table
-
 ```sql
 1
 ```
@@ -133,21 +107,13 @@ interpret bit and byte expression values and bit offsets.
 0
 ```
 
-```sql
-on
-```
+`on`
 
-```sql
-off
-```
+`off`
 
-```sql
-true
-```
+`true`
 
-```sql
-false
-```
+`false`
 
 ```sql
 0

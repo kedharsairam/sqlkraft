@@ -14,9 +14,7 @@ Returns information on all valid shared disks, including clustered shared volume
 
 ## Syntax
 
-```sql
-is_cluster_shared_volume
-```
+`is_cluster_shared_volume`
 
 ## Permissions
 
@@ -26,21 +24,15 @@ Article • 02/28/2023 Applies to: SQL Server Returns the names of shared drives
 
 ### Example 1
 
-```sql
-path_name
-```
+`path_name`
 
 ### Example 2
 
-```sql
-cluster_owner_node
-```
+`cluster_owner_node`
 
 ### Example 3
 
-```sql
-is_cluster_shared_volume
-```
+`is_cluster_shared_volume`
 
 ### Example 4
 

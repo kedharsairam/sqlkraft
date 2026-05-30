@@ -89,8 +89,6 @@ not equals (<>) operators. When SET ANSI_NULLS is OFF, these operators treat NUL
 
 known value, equivalent to any other NULL, and only return TRUE or FALSE (never UNKNOWN).
 
-
-
 Expand table
 
 ### Boolean
@@ -117,49 +115,33 @@ See Also
 -- Uses AdventureWorks
 DECLARE
 @
-M
-y
-P
-roduct
+M y
+P roduct
 INT
 ;
 SET
 @
-M
-y
-P
-roduct = 750;
-IF
-(@
-M
-y
-P
-roduct
+M y
+P roduct = 750;
+IF (@
+M y
+P roduct
 <>
 0)
 SELECT
-P
-roduct
+P roduct
 ID
 ,
-N
-ame,
-P
-roduct
-N
-umber
+N ame,
+P roduct
+N umber
 FROM
-P
-roduction.
-P
-roduct
+P roduction.
+P roduct
 WHERE
-P
-roduct
+P roduct
 ID
 = @
-M
-y
-P
-roduct;
+M y
+P roduct;
 ```

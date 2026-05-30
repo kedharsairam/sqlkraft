@@ -102,18 +102,10 @@ engagement running a benchmark test to simulate approximately 6,500 concurrent u
 
 8 socket, 64 physical core server with 1 TB of memory.
 
-```sql
-SPINLOCK_EXT
-```
+`SPINLOCK_EXT`
 
-```sql
-sys.dm_os_spinlock_stats
-```
+`sys.dm_os_spinlock_stats`
 
-```sql
-spinlock_backoff
-```
+`spinlock_backoff`
 
-```sql
-spinlock_backoff_warning
-```
+`spinlock_backoff_warning`

@@ -62,8 +62,7 @@ The prefix and the namespace binding are initialized for the following:
 A set of predefined namespaces.
 
 ```sql
-declare @x xml
-set @x=''
+declare @x xml set @x=''
 select @x.query('<a>  {"Hello"}  </a>,
 <b> {"Hello2"}  </b>')
 <a>Hello</a><b>Hello2</b>

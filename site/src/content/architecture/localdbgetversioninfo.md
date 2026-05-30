@@ -41,10 +41,7 @@ C++
 
 ```sql
 struct
-LocalDBVersionInfo
-msoledbsql.h
-typedef
-struct
+LocalDBVersionInfo msoledbsql.h typedef struct
 _
 LocalDBVersionInfo
 {
@@ -62,8 +59,7 @@ DWORD  dwBuild;
 DWORD  dwRevision;
 } LocalDBVersionInfo;
 HRESULT
-LocalDBGetVersionInfo
-(
+LocalDBGetVersionInfo (
 PCWSTR wszVersionName ,
 PLocalDBVersionInfo pVersionInfo ,
 DWORD dwVersionInfoSize);

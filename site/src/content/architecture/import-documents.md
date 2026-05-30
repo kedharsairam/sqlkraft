@@ -77,8 +77,6 @@ function that reads the contents of a JSON file and
 
 returns it to the user as a single value:
 
-SQL
-
 reads the content of the file and returns it in
 
 .
@@ -101,7 +99,5 @@ FROM
 OPENROWSET(
 BULK
 'C:\JSON\Books\book.json'
-, SINGLE_CLOB)
-as
-j;
+, SINGLE_CLOB) as j;
 ```

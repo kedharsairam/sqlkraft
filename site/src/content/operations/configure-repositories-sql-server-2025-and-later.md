@@ -86,9 +86,5 @@ more information, see the
 Expand table
 
 ```cmd
-mssql-server
-mssql-server-2025
-mssql-server-2022
-mssql-server-2019
-mssql-server-2017
+mssql-server mssql-server-2025 mssql-server-2022 mssql-server-2019 mssql-server-2017
 ```

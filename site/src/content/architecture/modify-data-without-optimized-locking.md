@@ -88,13 +88,9 @@ consistent view of the data at a statement level, row versions generated or acce
 
 type of transaction are maintained until the transaction completes.
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 READ COMMITTED
@@ -125,25 +121,15 @@ U
 READ COMMITTED
 ```
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
-```sql
-SNAPSHOT
-```
+`SNAPSHOT`
 
 ```sql
 READ COMMITTED

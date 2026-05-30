@@ -107,8 +107,6 @@ these operations give feedback stating that this isn't valid MTF media, and they
 
 the backup operation.
 
-
-
 Expand table
 
 1
@@ -121,21 +119,13 @@ Expand table
 
 ### larger than 65536 (64 KB)
 
-```sql
-NOINIT
-```
+`NOINIT`
 
-```sql
-INIT
-```
+`INIT`
 
-```sql
-NOSKIP
-```
+`NOSKIP`
 
-```sql
-SKIP
-```
+`SKIP`
 
 ```sql
 NOINIT
@@ -143,22 +133,12 @@ INIT
 NOSKIP
 ```
 
-```sql
-MEDIANAME
-```
+`MEDIANAME`
 
-```sql
-MEDIANAME
-```
+`MEDIANAME`
 
-```sql
-MEDIANAME
-```
+`MEDIANAME`
 
-```sql
-MEDIADESCRIPTION
-```
+`MEDIADESCRIPTION`
 
-```sql
-SKIP
-```
+`SKIP`

@@ -56,8 +56,6 @@ from 6600000 through 9999999).
 
 Consider the execution plan built for this query executed on Server1:
 
-SQL
-
 The execution plan for this query extracts the rows with
 
 key values from 3200000
@@ -72,31 +70,17 @@ Transact-SQL statements in which the key values aren't known when the plan must 
 
 example, consider this stored procedure:
 
-SQL
+`WHERE`
 
-```sql
-WHERE
-```
+`Customers`
 
-```sql
-Customers
-```
+`CustomerID`
 
-```sql
-CustomerID
-```
+`CustomerID`
 
-```sql
-CustomerID
-```
+`CustomerID`
 
-```sql
-CustomerID
-```
-
-```sql
-CustomerID
-```
+`CustomerID`
 
 ```sql
 SELECT

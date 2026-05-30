@@ -94,17 +94,11 @@ nonclustered and create a different clustered index instead.
 index_id = 1
 ```
 
-```sql
-IN_ROW_DATA
-```
+`IN_ROW_DATA`
 
-```sql
-LOB_DATA
-```
+`LOB_DATA`
 
-```sql
-ROW_OVERFLOW_DATA
-```
+`ROW_OVERFLOW_DATA`
 
 ```sql
 PRIMARY KEY

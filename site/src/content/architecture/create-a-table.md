@@ -71,8 +71,6 @@ used to store the
 
 in the file system.
 
-SQL
-
 ７
 
 Note
@@ -92,8 +90,7 @@ FILESTREAM
 Chart
 CREATE
 TABLE
-Archive.dbo.Records
-(
+Archive.dbo.Records (
 [
 Id
 ] [uniqueidentifier] ROWGUIDCOL

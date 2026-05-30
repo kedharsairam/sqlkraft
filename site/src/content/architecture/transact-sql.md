@@ -325,30 +325,18 @@ database option
 None.
 
 ```sql
-sys.sql_dependencies
-sys.sql_expression_dependencies
-sys.sql_dependencies
+sys.sql_dependencies sys.sql_expression_dependencies sys.sql_dependencies
 ```
 
-```sql
-sp_db_vardecimal_storage_format
-```
+`sp_db_vardecimal_storage_format`
 
-```sql
-sp_db_vardecimal_storage_format
-```
+`sp_db_vardecimal_storage_format`
 
-```sql
-sp_estimated_rowsize_reduction_for_vardecimal
-```
+`sp_estimated_rowsize_reduction_for_vardecimal`
 
-```sql
-sp_estimate_data_compression_savings
-```
+`sp_estimate_data_compression_savings`
 
-```sql
-sp_estimated_rowsize_reduction_for_vardecimal
-```
+`sp_estimated_rowsize_reduction_for_vardecimal`
 
 ```sql
 ::
@@ -368,13 +356,10 @@ SELECT * FROM
 ```
 
 ```sql
-SELECT * FROM
-sys.fn_virtualfilestats(2,1)
+SELECT * FROM sys.fn_virtualfilestats(2,1)
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 DROP INDEX
@@ -397,30 +382,20 @@ DROP INDEX
 GROUP BY ALL
 ```
 
-```sql
-UNION
-```
+`UNION`
 
 ```sql
 GROUP BY ALL
 ROWGUIDCOL
 ```
 
-```sql
-ROWGUIDCOL
-```
+`ROWGUIDCOL`
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
-```sql
-DEFAULT
-```
+`DEFAULT`
 
 ```sql
 ALTER DATABASE

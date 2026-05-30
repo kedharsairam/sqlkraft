@@ -11,8 +11,6 @@ You can also specify the
 
 option more than once, for example:
 
-SQL
-
 When creating the query plan for the
 
 statement, the query optimizer might
@@ -55,9 +53,7 @@ Creating a clustered index on a table (heap) or dropping and re-creating an exis
 
 index requires additional workspace to be available in the database to accommodate data
 
-```sql
-XML_COMPRESSION
-```
+`XML_COMPRESSION`
 
 ```sql
 CREATE INDEX
@@ -77,44 +73,36 @@ CREATE INDEX
 
 ```sql
 REBUILD
-WITH
-(
+WITH (
 DATA_COMPRESSION =
 NONE
 ON
-PARTITIONS
-(1),
+PARTITIONS (1),
 DATA_COMPRESSION =
 ROW
 ON
-PARTITIONS
-(2, 4, 6
+PARTITIONS (2, 4, 6
 TO
 8),
 DATA_COMPRESSION = PAGE
 ON
-PARTITIONS
-(3, 5)
+PARTITIONS (3, 5)
 );
 REBUILD
-WITH
-(
+WITH (
 XML_COMPRESSION =
 OFF
 ON
-PARTITIONS
-(1),
+PARTITIONS (1),
 XML_COMPRESSION =
 ON
 ON
-PARTITIONS
-(2, 4, 6
+PARTITIONS (2, 4, 6
 TO
 8),
 XML_COMPRESSION =
 OFF
 ON
-PARTITIONS
-(3, 5)
+PARTITIONS (3, 5)
 );
 ```

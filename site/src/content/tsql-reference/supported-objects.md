@@ -191,17 +191,11 @@ DBCC CLONEDATABASE
 DBCC CLONEDATABASE
 ```
 
-```sql
-model
-```
+`model`
 
-```sql
-TRUSTWORTHY
-```
+`TRUSTWORTHY`
 
-```sql
-DB_CHAINING
-```
+`DB_CHAINING`
 
 ```sql
 DBCC CLONEDATABASE

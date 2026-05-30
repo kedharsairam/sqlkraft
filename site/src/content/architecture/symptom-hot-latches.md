@@ -14,6 +14,4 @@ where we typically define high as an
 
 average of more than 1 ms. In this case, we consistently observed waits exceeding 20 ms.
 
-```sql
-PAGELATCH_EX
-```
+`PAGELATCH_EX`

@@ -140,22 +140,14 @@ B
 C
 ```
 
-```sql
-WHERE
-```
+`WHERE`
 
-```sql
-JOIN
-```
+`JOIN`
 
 ```sql
 GROUP BY
 ```
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-UPDATE
-```
+`UPDATE`

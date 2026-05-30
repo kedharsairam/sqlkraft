@@ -71,8 +71,6 @@ property set to
 
 shouldn't be modified.
 
-SQL
-
 It's important to be aware of a situation where you have different collations between the
 
 database and the columns of a table configured for change data capture. CDC uses interim
@@ -96,25 +94,16 @@ Consider one of the following approaches to ensure captured change data is consi
 base tables:
 
 ```sql
-CDC
-schema
-cdc user
-cdc user
-is_ms_shipped
+CDC schema cdc user cdc user is_ms_shipped
 1
-SELECT
-name
-AS
-object_name
+SELECT name
+AS object_name
 ,SCHEMA_NAME(schema_id)
-AS
-schema_name
+AS schema_name
 ,type_desc
 ,is_ms_shipped
-FROM
-sys.objects
-WHERE
-is_ms_shipped= 1
+FROM sys.objects
+WHERE is_ms_shipped= 1
 AND
 SCHEMA_NAME(schema_id) =
 'cdc'

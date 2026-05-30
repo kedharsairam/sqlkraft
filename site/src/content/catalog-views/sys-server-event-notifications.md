@@ -14,9 +14,7 @@ Returns a row for each server-level event notification object. Server event noti
 
 ## Syntax
 
-```sql
-sys.server_event_notifications
-```
+`sys.server_event_notifications`
 
 ## Permissions
 

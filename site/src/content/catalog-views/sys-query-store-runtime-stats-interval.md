@@ -34,22 +34,14 @@ SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Conta
 
 ```sql
 LEFT
-JOIN
-sys.query_store_runtime_stats qsrs
-ON
-qspl.plan_id = qsrs.plan_id
+JOIN sys.query_store_runtime_stats qsrs
+ON qspl.plan_id = qsrs.plan_id
 LEFT
-JOIN
-sys.query_store_runtime_stats_interval qsrsi
-ON
-qsrs.runtime_stats_interval_id = qsrsi.runtime_stats_interval_id
-WHERE
-qspl.plan_type = 1
-or
-qspl.plan_type = 2
+JOIN sys.query_store_runtime_stats_interval qsrsi
+ON qsrs.runtime_stats_interval_id = qsrsi.runtime_stats_interval_id
+WHERE qspl.plan_type = 1 or qspl.plan_type = 2
 ORDER
-BY
-qspl.query_id, qsrs.last_execution_time;
+BY qspl.query_id, qsrs.last_execution_time;
 GO
 ```
 

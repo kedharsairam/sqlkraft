@@ -121,26 +121,14 @@ Execute a stored procedure
 BEGIN DISTRIBUTED TRANSACTION
 ```
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
-```sql
-sp_
-```
+`sp_`
 
-```sql
-xp_
-```
+`xp_`
 
-```sql
-master
-```
+`master`
 
-```sql
-master.dbo
-```
+`master.dbo`

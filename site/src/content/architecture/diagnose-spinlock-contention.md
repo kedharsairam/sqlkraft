@@ -66,6 +66,4 @@ Expand table
 
 ### Step 4
 
-```sql
-LOCK_HASH
-```
+`LOCK_HASH`

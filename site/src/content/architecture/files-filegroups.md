@@ -92,6 +92,5 @@ Expand table
 .ndf
 .ldf
 Sales
-Orders
-logical_file_name
+Orders logical_file_name
 ```

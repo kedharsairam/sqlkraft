@@ -14,9 +14,7 @@ Transaction sequence number (XSN) of a snapshot transaction. Snapshot ID for eac
 
 ## Syntax
 
-```sql
-transaction_sequence_num
-```
+`transaction_sequence_num`
 
 ## Remarks
 

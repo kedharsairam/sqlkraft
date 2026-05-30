@@ -84,8 +84,6 @@ sp_adddistributor
 
 stored procedure:
 
-SQL
-
 Secure defaults pertain to the underlying OLEDB provider 19, which enhances security. The
 
 option to override the default is less secure than configuring your instance to use a
@@ -104,9 +102,7 @@ default.
 
 ### sp_changedistributor_property
 
-```sql
-sp_adddistributor
-```
+`sp_adddistributor`
 
 ```sql
 TrustServerCertificate=False
@@ -116,9 +112,7 @@ TrustServerCertificate=False
 TrustServerCertificate=True
 ```
 
-```sql
-trust_distributor_certificate
-```
+`trust_distributor_certificate`
 
 ```sql
 trust_distributor_certificate=no
@@ -129,8 +123,7 @@ OLE DB provider "MSOLEDBSQL19" for linked server "repl_distributor" returned mes
 "Client unable to establish connection".
 Msg -2146893019, Level 16, State 1, Line 21
 SSL Provider: The certificate chain was issued by an authority that is not trusted.
-EXECUTE
-sys.sp_adddistributor @trust_distributor_certificate =
+EXECUTE sys.sp_adddistributor @trust_distributor_certificate =
 'yes'
 ;
 ```

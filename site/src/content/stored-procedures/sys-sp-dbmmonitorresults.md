@@ -35,45 +35,31 @@ N
 
 ### Example 1
 
-```sql
-local_time
-```
+`local_time`
 
 ### Example 2
 
-```sql
-sp_dbmmonitorresults
-```
+`sp_dbmmonitorresults`
 
 ### Example 3
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 4
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 5
 
-```sql
-sp_dbmmonitorupdate
-```
+`sp_dbmmonitorupdate`
 
 ### Example 6
 
-```sql
-msdb
-```
+`msdb`
 
 ### Example 7
 
 ```sql
-USE
-msdb;
-EXECUTE
-sp_dbmmonitorresults AdventureWorks2022, 2, 0;
+USE msdb;
+EXECUTE sp_dbmmonitorresults AdventureWorks2022, 2, 0;
 ```

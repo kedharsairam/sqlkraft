@@ -112,15 +112,10 @@ SQL Server 2022
 Expand table
 
 ```cmd
-/etc/hostname
-sa
-sa
+/etc/hostname sa sa
 ALTER
 LOGIN
 Failed to verify the Authenticode signature of
-'C:\binn\msoledbsql.dll'. Signature verification of SQL Server DLLs
-will be skipped. Genuine copies of SQL Server are signed. Failure to
-verify the Authenticode signature might indicate that this isn't an
-authentic release of SQL Server. Install a genuine copy of SQL
+'C:\binn\msoledbsql.dll'. Signature verification of SQL Server DLLs will be skipped. Genuine copies of SQL Server are signed. Failure to verify the Authenticode signature might indicate that this isn't an authentic release of SQL Server. Install a genuine copy of SQL
 Server or contact customer support.
 ```

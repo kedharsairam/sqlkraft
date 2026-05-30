@@ -8,8 +8,7 @@ pubDate: 2025-03-15
 ---
 
 ```sql
---add this stored procedure as a new step in a job and setup
-exec msdb.dbo.sp_send_dbmail
+--add this stored procedure as a new step in a job and setup exec msdb.dbo.sp_send_dbmail
 @profile_name = 'profilename'
 @recipients = 'youremail'
 @subject = 'notification for job success or failure'

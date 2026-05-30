@@ -37,8 +37,6 @@ SQL Managed Instance
 
 Azure Synapse Analytics (serverless SQL pool only)
 
-SQL
-
 database in Microsoft Fabric
 
 Find answers here to some common questions about the built-in JSON support in the SQL
@@ -71,57 +69,37 @@ that return JSON text. You can also create JSON manually by using the JSON_QUERY
 
 The following example demonstrates these techniques.
 
-SQL
-
 ```sql
-SELECT
-col1, col2, col3,
+SELECT col1, col2, col3,
 (
-SELECT
-col11, col12, col13
-FROM
-t11
-WHERE
-t11.FK = t1.PK
+SELECT col11, col12, col13
+FROM t11
+WHERE t11.FK = t1.PK
 FOR
 JSON
 PATH
-)
-as
-t11,
+) as t11,
 (
-SELECT
-col21, col22, col23
-FROM
-t21
-WHERE
-t21.FK = t1.PK
+SELECT col21, col22, col23
+FROM t21
+WHERE t21.FK = t1.PK
 FOR
 JSON
 PATH
-)
-as
-t21,
+) as t21,
 (
-SELECT
-col31, col32, col33
-FROM
-t31
-WHERE
-t31.FK = t1.PK
+SELECT col31, col32, col33
+FROM t31
+WHERE t31.FK = t1.PK
 FOR
 JSON
 PATH
-)
-as
-t31,
+) as t31,
 JSON_QUERY(
 '{"'
 +col4+
 '":"'
 +col5+
 '"}'
-)
-as
-t41
+) as t41
 ```

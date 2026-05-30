@@ -108,8 +108,7 @@ clause of
 .
 
 ```sql
-service_broker_guid
-sys.databases
+service_broker_guid sys.databases
 BROKER_INSTANCE
 CREATE ROUTE
 BEGIN DIALOG CONVERSATION

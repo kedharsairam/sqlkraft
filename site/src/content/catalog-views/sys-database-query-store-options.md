@@ -17,6 +17,5 @@ SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Retur
 ## Syntax
 
 ```sql
-READ_CAPTURE_SECONDARY
-desired_state_desc
+READ_CAPTURE_SECONDARY desired_state_desc
 ```

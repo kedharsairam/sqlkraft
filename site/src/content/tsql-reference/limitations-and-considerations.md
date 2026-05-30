@@ -85,30 +85,19 @@ Vector indexes can't be deployed with DacPac or BACPAC. Vector indexes require a
 
 ## Minimum data requirements
 
-```sql
-TOP_N
-```
+`TOP_N`
+
+`VECTOR_SEARCH`
 
 ```sql
-VECTOR_SEARCH
+SELECT TOP (N) WITH APPROXIMATE
 ```
 
-```sql
-SELECT TOP
-(N) WITH APPROXIMATE
-```
+`ALLOW_STALE_VECTOR_INDEX`
 
-```sql
-ALLOW_STALE_VECTOR_INDEX
-```
+`TOP_N`
 
-```sql
-TOP_N
-```
-
-```sql
-VECTOR_SEARCH
-```
+`VECTOR_SEARCH`
 
 ```sql
 TRUNCATE TABLE

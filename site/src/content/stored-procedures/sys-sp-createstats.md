@@ -14,6 +14,4 @@ SQL database in Microsoft Fabric statement to create single-column statistics on
 
 ## Syntax
 
-```sql
-AUTO_CREATE_STATISTICS
-```
+`AUTO_CREATE_STATISTICS`

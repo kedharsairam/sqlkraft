@@ -95,8 +95,6 @@ JSON data in SQL Server
 
 Last updated on 11/18/2025
 
-
-
 Expand table
 
 Related content

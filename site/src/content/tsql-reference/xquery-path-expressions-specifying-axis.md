@@ -86,15 +86,9 @@ attribute of the
 
 <Location> element node child of the <root> element.
 
-
-
 Expand table
 
 ```sql
-child::ProductDescription/child::Summary
-child
-child::root/child::Location/attribute::LocationID
-child
-attribute
+child::ProductDescription/child::Summary child child::root/child::Location/attribute::LocationID child attribute
 LocationID
 ```

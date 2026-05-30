@@ -42,8 +42,7 @@ Changes the properties of a Log Reader Agent job that runs at a SQL Server 2005 
 
 ```sql
 sp_
-MS
-change_logreader_agent_properties
+MS change_logreader_agent_properties
 [ @publisher = ]
 N
 'publisher'

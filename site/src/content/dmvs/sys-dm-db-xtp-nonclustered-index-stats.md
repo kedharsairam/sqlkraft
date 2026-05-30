@@ -14,6 +14,4 @@ system dynamic management view includes statistics about operations on noncluste
 
 ## Syntax
 
-```sql
-sys.dm_db_xtp_nonclustered_index_stats
-```
+`sys.dm_db_xtp_nonclustered_index_stats`

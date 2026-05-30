@@ -47,8 +47,6 @@ column of the ProductModel table in the AdventureWorks2022 sample database.
 
 This query retrieves customer, order, and order detail information for a specific customer.
 
-SQL
-
 Because the query identifies,
 
 ,
@@ -117,8 +115,7 @@ ON
 Product.ProductID = Detail.ProductID
 WHERE
 Cust.CustomerID
-IN
-(29672, 29734)
+IN (29672, 29734)
 ORDER
 BY
 OrderHeader.CustomerID,

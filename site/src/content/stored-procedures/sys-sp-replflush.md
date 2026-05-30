@@ -51,15 +51,11 @@ professional.
 1
 ```
 
-```sql
-sp_replflush
-```
+`sp_replflush`
 
 ```sql
 sp_replflush
 [ ; ]
 ```
 
-```sql
-sp_replcmds
-```
+`sp_replcmds`

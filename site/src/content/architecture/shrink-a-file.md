@@ -85,6 +85,4 @@ Shrink operations in progress can block other queries on the database, and can b
 
 queries already in progress. Introduced in SQL Server 2022 (16.x), shrink file operations have a
 
-```sql
-model
-```
+`model`

@@ -82,6 +82,5 @@ waiting for a disconnected receiver to be reconnected or a network send to be
 acknowledged.
 
 ```sql
-sys.transmission_queue
-transmission_status
+sys.transmission_queue transmission_status
 ```

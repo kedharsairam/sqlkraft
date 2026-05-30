@@ -118,14 +118,8 @@ ALTER TABLE
 PRIMARY KEY
 ```
 
-```sql
-UNIQUE
-```
+`UNIQUE`
 
-```sql
-sp_indexoption
-```
+`sp_indexoption`
 
-```sql
-INDEXPROPERTY
-```
+`INDEXPROPERTY`

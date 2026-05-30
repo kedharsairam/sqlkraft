@@ -34,9 +34,7 @@ Servers Processing Customer Orders
 
 ### Example 3
 
-```sql
-EXECUTE
-```
+`EXECUTE`
 
 ### Example 4
 
@@ -56,11 +54,9 @@ N
 ### Example 6
 
 ```sql
-USE
-msdb;
+USE msdb;
 GO
-EXECUTE
-sp_delete_targetservergroup @
+EXECUTE sp_delete_targetservergroup @
 name
 = N
 'Servers Processing Customer Orders'

@@ -14,9 +14,7 @@ SQL Server 2016 (13.x) and later versions Returns Azure snapshots associated wit
 
 ## Syntax
 
-```sql
-sys.sp_delete_backup_file_snapshot
-```
+`sys.sp_delete_backup_file_snapshot`
 
 ## Permissions
 

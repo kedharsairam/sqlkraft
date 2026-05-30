@@ -57,20 +57,15 @@ transport security
 
 .
 
-SQL
-
 ```sql
-USE
-master
+USE master
 ;
 GO
 IF EXISTS (
 SELECT
 *
-FROM
-sys.endpoints
-WHERE
-name
+FROM sys.endpoints
+WHERE name
 = N
 'InstInitiatorEndpoint'
 )
@@ -81,13 +76,11 @@ CREATE
 ENDPOINT InstInitiatorEndpoint
 STATE = STARTED
 AS
-TCP
-(
+TCP (
 LISTENER_PORT = 4022
 )
 FOR
-SERVICE_BROKER
-(
+SERVICE_BROKER (
 AUTHENTICATION
 = WINDOWS
 ```

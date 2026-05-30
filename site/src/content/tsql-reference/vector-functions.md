@@ -101,8 +101,6 @@ or
 
 .
 
-
-
 Expand table
 
 Related content

@@ -36,13 +36,9 @@ attributes. In this case,
 
 is implicitly applied to the attribute nodes.
 
-SQL
-
 Although not required, you can also explicitly specify the
 
 function:
-
-SQL
 
 Another example of implicit atomization is when you use arithmetic operators. The
 
@@ -75,9 +71,7 @@ attribute is assigned to
 .
 
 ```sql
-LaborHours
-data()
-data()
+LaborHours data() data()
 +
 data()
 LaborHours

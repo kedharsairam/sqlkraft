@@ -61,14 +61,10 @@ Multiple files can be executed as part of a pre-deployment or post-deployment sc
 
 a SQLCMD script that calls each file in order.
 
-SQL
-
 SQL project file sample and syntax
 
 ```cmd
-.dacpac
-prep-db.sql
-populate-app-settings.sql
+.dacpac prep-db.sql populate-app-settings.sql
 ...
 <ItemGroup>
 <PreDeploy

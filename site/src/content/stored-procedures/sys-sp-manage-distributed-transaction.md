@@ -14,6 +14,4 @@ commits, aborts, or forgets a specified transaction. Transact-SQL syntax convent
 
 ## Syntax
 
-```sql
-sp_manage_distributed_transaction
-```
+`sp_manage_distributed_transaction`

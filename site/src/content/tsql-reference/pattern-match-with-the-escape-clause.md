@@ -79,15 +79,11 @@ specified, the Database Engine returns any rows with the string
 
 .
 
-
-
 Expand table
 
 ### char(0)
 
-```sql
-LIKE
-```
+`LIKE`
 
 ```sql
 LIKE '[^d][^m]%'
@@ -101,9 +97,7 @@ d
 m
 ```
 
-```sql
-LIKE
-```
+`LIKE`
 
 ```sql
 [ ]
@@ -164,13 +158,9 @@ LIKE 'abc[def]'
 abcd
 ```
 
-```sql
-abce
-```
+`abce`
 
-```sql
-abcf
-```
+`abcf`
 
 ```sql
 WHERE comment LIKE '%30!%%' ESCAPE '!'

@@ -96,30 +96,16 @@ in SQL Server help.
 
 Expand table
 
-```sql
-SELECT
-```
+`SELECT`
 
-```sql
-EX
-```
+`EX`
 
-```sql
-SH
-```
+`SH`
 
-```sql
-PAGELATCH_EX
-```
+`PAGELATCH_EX`
 
-```sql
-PAGELATCH_SH
-```
+`PAGELATCH_SH`
 
-```sql
-ACCESS_METHODS_HOBT_VIRTUAL_ROOT
-```
+`ACCESS_METHODS_HOBT_VIRTUAL_ROOT`
 
-```sql
-PAGELATCH_UP
-```
+`PAGELATCH_UP`

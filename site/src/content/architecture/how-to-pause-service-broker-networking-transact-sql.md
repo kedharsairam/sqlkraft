@@ -51,8 +51,6 @@ Alter all Service Broker endpoints to set the state to
 
 .
 
-SQL
-
 How to: Deactivate Service Broker networking (Transact-SQL)
 
 How to: Resume Service Broker networking (Transact-SQL)
@@ -68,8 +66,7 @@ STARTED
 STOPPED
 ALTER DATABASE
 STOPPED
-USE
-master
+USE master
 ;
 GO
 ALTER

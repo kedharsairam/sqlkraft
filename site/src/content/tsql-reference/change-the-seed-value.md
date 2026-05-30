@@ -87,8 +87,6 @@ table. All subsequent rows contain the current identity value plus the increment
 
 current identity value is the last identity value generated for the table or view.
 
-
-
 Expand table
 
 ### sysadmin
@@ -99,9 +97,7 @@ Expand table
 
 ### db_owner
 
-```sql
-new_reseed_value
-```
+`new_reseed_value`
 
 ```sql
 DBCC CHECKIDENT
@@ -120,19 +116,14 @@ DBCC CHECKIDENT (<table_name>, RESEED,
 DBCC CHECKIDENT (<table_name>, RESEED,<new_reseed_value>)
 ```
 
-```sql
-new_reseed_value
-```
+`new_reseed_value`
 
 ```sql
-DBCC CHECKIDENT
-(<table_name>, RESEED)
+DBCC CHECKIDENT (<table_name>, RESEED)
 ```
 
 ```sql
 DBCC CHECKIDENT (<table_name>, RESEED, <new_reseed_value>)
 ```
 
-```sql
-new_reseed_value
-```
+`new_reseed_value`

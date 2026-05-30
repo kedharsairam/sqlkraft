@@ -44,26 +44,17 @@ Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains one ro
 UNION
 SELECT
 'XML SCHEMA COLLECTION'
-AS
-entity_type,
-COALESCE
-(USER_NAME(xsc.principal_id), USER_NAME(s.principal_id))
-AS
-owner_name,
+AS entity_type,
+COALESCE (USER_NAME(xsc.principal_id), USER_NAME(s.principal_id))
+AS owner_name,
 xsc.name
-FROM
-sys.xml_schema_collections
-AS
-xsc
+FROM sys.xml_schema_collections
+AS xsc
 INNER
-JOIN
-sys.schemas
-AS
-s
-ON
-s.schema_id = xsc.schema_id
-WHERE
-s.name =
+JOIN sys.schemas
+AS s
+ON s.schema_id = xsc.schema_id
+WHERE s.name =
 '<schema_name>'
 ;
 GO

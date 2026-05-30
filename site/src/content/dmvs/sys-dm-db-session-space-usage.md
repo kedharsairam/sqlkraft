@@ -14,6 +14,4 @@ Analytics Platform System (PDW) Returns the number of pages allocated and deallo
 
 ## Syntax
 
-```sql
-sys.dm_pdw_nodes_db_session_space_usage
-```
+`sys.dm_pdw_nodes_db_session_space_usage`

@@ -85,12 +85,6 @@ names of the databases, their database IDs, and the dates when the databases wer
 
 created.
 
-SQL
-
 ```sql
-sys.databases
-master
-tempdb
-master
-sys.databases
+sys.databases master tempdb master sys.databases
 ```

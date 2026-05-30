@@ -82,10 +82,6 @@ need for SQL Server to execute code paths that are required to resolve names. We
 CMEDCatalogOwner::GetProxyOwnerBySID & CMEDProxyDatabase::GetOwnerBySID)
 ```
 
-```sql
-sysadmin
-```
+`sysadmin`
 
-```sql
-sysadmin
-```
+`sysadmin`

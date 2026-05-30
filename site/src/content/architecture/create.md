@@ -73,6 +73,4 @@ For information about other significant considerations, see
 
 .
 
-```sql
-MEMORY_OPTIMIZED_DATA
-```
+`MEMORY_OPTIMIZED_DATA`

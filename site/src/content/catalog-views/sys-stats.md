@@ -14,9 +14,7 @@ filtered index, the number of rows might be less than the number of rows in the 
 
 ## Syntax
 
-```sql
-HumanResources.Employee
-```
+`HumanResources.Employee`
 
 ## Permissions
 
@@ -108,9 +106,7 @@ new empty tables.
 
 ### Example 1
 
-```sql
-HumanResources.Employee
-```
+`HumanResources.Employee`
 
 ### Example 2
 
@@ -118,38 +114,24 @@ HumanResources.Employee
 USE
 AdventureWorks2022;
 GO
-SELECT
-s.name
-AS
-statistics_name,
+SELECT s.name
+AS statistics_name,
 c.name
-AS
-column_name,
+AS column_name,
 sc.stats_column_id
-FROM
-sys.stats
-AS
-s
+FROM sys.stats
+AS s
 INNER
-JOIN
-sys.stats_columns
-AS
-sc
-ON
-s.object_id = sc.object_id
-AND
-s.stats_id = sc.stats_id
+JOIN sys.stats_columns
+AS sc
+ON s.object_id = sc.object_id
+AND s.stats_id = sc.stats_id
 INNER
-JOIN
-sys.columns
-AS
-c
-ON
-sc.object_id = c.object_id
-AND
-c.column_id = sc.column_id
-WHERE
-s.object_id = OBJECT_ID(
+JOIN sys.columns
+AS c
+ON sc.object_id = c.object_id
+AND c.column_id = sc.column_id
+WHERE s.object_id = OBJECT_ID(
 'HumanResources.Employee'
 );
 ```

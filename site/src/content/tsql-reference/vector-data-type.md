@@ -13,10 +13,6 @@ pubDate: 2026-05-29
 
 ### vector
 
-### varchar
-
-### nvarchar
-
 ### json
 
 ### Half-precision float support in vector data type
@@ -77,8 +73,6 @@ PREVIEW_FEATURES = { ON | OFF }
 
 .
 
-SQL
-
 For limitations, review
 
 Limitations
@@ -117,11 +111,7 @@ policy.
 
 ### vector
 
-#### syntaxsql
-
 ### half-precision
-
-#### syntaxsql
 
 ### vector
 
@@ -132,17 +122,11 @@ policy.
 30]'
 ```
 
-```sql
-float16
-```
+`float16`
 
-```sql
-PREVIEW_FEATURES
-```
+`PREVIEW_FEATURES`
 
-```sql
-float16
-```
+`float16`
 
 ```sql
 ALTER

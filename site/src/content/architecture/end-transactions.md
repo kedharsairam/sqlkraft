@@ -132,8 +132,6 @@ third batch are executed because of a compile error. It appears that the first t
 
 statements are rolled back when they're never executed.
 
-SQL
-
 In the following example, the third
 
 statement generates a run-time duplicate primary key
@@ -150,13 +148,9 @@ Compile and run-time errors in autocommit mode
 
 ### Row versioning
 
-```sql
-COMMIT
-```
+`COMMIT`
 
-```sql
-ROLLBACK
-```
+`ROLLBACK`
 
 ```sql
 SET XACT_ABORT ON
@@ -170,45 +164,25 @@ SET XACT_ABORT ON
 SET XACT_ABORT
 ```
 
-```sql
-COMMIT
-```
+`COMMIT`
 
-```sql
-ROLLBACK
-```
+`ROLLBACK`
 
-```sql
-TRY...CATCH
-```
+`TRY...CATCH`
 
-```sql
-THROW
-```
+`THROW`
 
-```sql
-CATCH
-```
+`CATCH`
 
-```sql
-TRY...CATCH
-```
+`TRY...CATCH`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-INSERT
-```
+`INSERT`
 
-```sql
-INSERT
-```
+`INSERT`
 
 ```sql
 CREATE
@@ -218,21 +192,18 @@ INT
 PRIMARY
 KEY
 , ColB
-CHAR
-(3));
+CHAR (3));
 GO
 INSERT
 INTO
 TestBatch
-VALUES
-(1,
+VALUES (1,
 'aaa'
 );
 INSERT
 INTO
 TestBatch
-VALUES
-(2,
+VALUES (2,
 'bbb'
 );
 INSERT

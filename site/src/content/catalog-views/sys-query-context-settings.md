@@ -13,22 +13,12 @@ SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Conta
 
 ## Code Blocks
 
-```sql
-context_settings_id
-```
+`context_settings_id`
 
-```sql
-set_options
-```
+`set_options`
 
-```sql
-language_id
-```
+`language_id`
 
-```sql
-date_format
-```
+`date_format`
 
-```sql
-date_first
-```
+`date_first`

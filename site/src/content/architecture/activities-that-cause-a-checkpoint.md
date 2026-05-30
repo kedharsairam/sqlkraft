@@ -70,14 +70,8 @@ database for the connection.
 
 ### recovery interval
 
-```sql
-COMMIT
-```
+`COMMIT`
 
-```sql
-ROLLBACK
-```
+`ROLLBACK`
 
-```sql
-CHECKPOINT
-```
+`CHECKPOINT`
