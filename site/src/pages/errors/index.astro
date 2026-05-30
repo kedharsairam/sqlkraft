@@ -64,7 +64,7 @@ const severities = SEVERITY_ORDER.filter((s) => grouped[s]);
             const { name, description, tags } = entry.data;
             const color = SEVERITY_COLORS[sev] || "#6272a4";
             return (
-              <Card href={`/sqlkraft/errors/error-${name}/`}>
+              <Card href={`/sqlkraft/errors/error-${name}/`} notransition>
                 <span slot="title">#{name}</span>
                 <span
                   slot="meta"

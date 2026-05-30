@@ -28,15 +28,20 @@
 export interface Props {
   href: string;
   "data-cat"?: string;
+  notransition?: boolean;
 }
 
-const { href, "data-cat": dataCat } = Astro.props;
+const { href, "data-cat": dataCat, notransition } = Astro.props;
 const hasTitle = Astro.slots.has("title");
 const extraAttrs: Record<string, string> = {};
 if (dataCat !== undefined) extraAttrs["data-cat"] = dataCat;
 
 // Derive unique transition name from the href slug for view transition morphing
+// Skip on pages with very high card counts (notransition) to prevent
+// browser-thread freeze from excessive named elements during View Transitions
 const transitionName = href.replace(/\/+$/, "").split("/").pop() || "";
+const titleAttrs: Record<string, string> = {};
+if (!notransition) titleAttrs["transition:name"] = transitionName;
 ---
 
 <a href={href} class="item-card" {...extraAttrs}>
@@ -44,7 +49,7 @@ const transitionName = href.replace(/\/+$/, "").split("/").pop() || "";
     hasTitle ? (
       <>
         <div class="card-header">
-          <span class="card-title" transition:name={transitionName}>
+          <span class="card-title" {...titleAttrs}>
             <slot name="title" />
           </span>
           {Astro.slots.has("meta") && <slot name="meta" />}

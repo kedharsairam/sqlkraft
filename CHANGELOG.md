@@ -5,6 +5,24 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.43.1] — 2026-05-30 — **Emergency Runtime Fix**
+
+### Fixed
+
+- **DMV card dimensions (broken layout)** — Removed `white-space: nowrap` from `.card-title` rule in BaseLayout.astro's global text containment block. `.card-title` no longer forced to single-line overflow; Card.astro's own `overflow-wrap: break-word; word-break: break-word; hyphens: auto` rules now apply correctly, allowing long DMV names to wrap naturally.
+
+- **Errors page browser-thread freeze** — Added `notransition` prop to Card.astro. When set, `transition:name` attribute is omitted from card titles, preventing Astro's View Transitions engine from processing 1,129 named elements (the root cause of the main-thread hang on navigation). Applied `notransition` to all Card usages in `errors/index.astro`. All other collection pages retain View Transition morphing.
+
+### Changed
+
+- `site/src/components/Card.astro` — added `notransition?: boolean` prop; conditionally sets `transition:name` via `{...titleAttrs}` spread (only when `!notransition`)
+- `site/src/layouts/BaseLayout.astro` — removed `.card-title` from `white-space: nowrap` overflow rule
+- `site/src/pages/errors/index.astro` — added `notransition` to `<Card>` invocation
+
+### Build
+
+- 5,246 pages, 0 errors, ~33s
+
 ## [0.43.0] — 2026-05-30 — **Stable / Production Ready**
 
 The architectural refactoring cycle is complete. All core systems — data layer, component architecture, search infrastructure, view transitions, build pipeline — are finalized.
