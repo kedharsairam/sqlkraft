@@ -138,7 +138,10 @@ if (!notransition) titleAttrs["transition:name"] = transitionName;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
-    word-break: break-word;
+    word-break: break-all;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+    width: 100%;
     /* Stretch description to fill card height, pushing tags to bottom */
     flex: 1;
   }

@@ -1,28 +1,24 @@
 # SqlKraft — Session Notes
 
-## v0.48.0-Beta — Emergency Search Layout Clean-Up and Card Overflow Fix
+## v0.49.0-Beta — High-Fidelity Search Category Labeling and Card Text Wrapping Geometry
 
 ### What was done
 
-1. **Strip card styling from Spotlight palette** (CardPalette.astro v7)
-   - Removed `import Card from "./Card.astro"` — palette no longer inherits card CSS globals
-   - Rewrote `__renderCard()` to output `<a class="palette-result">` instead of `<a class="item-card palette-card">`
-   - Removed description block from palette results (compact 44px rows don't need it)
-   - Results are tight horizontal rows: title (left) + badge (right)
-   - Hover: subtle `rgba(255, 255, 255, 0.05)` background — no border, no transform, no shadow
-   - Active (keyboard): `rgba(47, 128, 237, 0.08)` accent tint
-   - Removed `.card-tag`, `.card-tag-badge`, `.palette-card`, `.palette-card-desc` CSS classes
-   - Added `.palette-result`, `.palette-badge`, `.palette-badge--*` self-contained CSS classes
-   - Updated SearchPalette.astro click handler selector from `a.item-card` to `a.palette-result`
+1. **Apple-grade search category headers** (CardPalette.astro)
+   - font-size: 11px (was 10px), font-weight: 600 (was 700)
+   - letter-spacing: 0.05em (was 0.1em)
+   - color: rgba(255,255,255,0.4) (was 0.25)
+   - Removed border-bottom separator
+   - Padding tightened to 8px 20px 4px — minimal vertical footprint
 
-2. **Fix Card.astro overflow** (.card-desc)
-   - Added `text-overflow: ellipsis` and `word-break: break-word` to `.card-desc`
-   - Long unbroken string fragments no longer extend past card padding
+2. **Card description padding boundaries sealed** (Card.astro)
+   - Added `word-break: break-all` (was break-word)
+   - Added `overflow-wrap: anywhere`
+   - Added `box-sizing: border-box; width: 100%;`
+   - Long unbroken strings now wrap before touching the card's right padding
 
-3. **Version bumped**: 0.47.0-Beta → 0.48.0-Beta
+3. **SearchPalette.astro stale CSS cleaned**
+   - Replaced `.palette-card` reference with `.palette-result`
 
 ### Build results
-- 5,241 pages, 0 errors, ~22s
-
-### Next steps
-- None planned — this is an emergency regression fix
+- 5,241 pages, 0 errors, ~25s
