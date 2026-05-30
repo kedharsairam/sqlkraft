@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.44.0] — 2026-05-30 — **Ultra-Snappy Navigation & Prefetch Optimization**
+
+### Added
+
+- **Aggressive link prefetching** — Configured Astro 5's built-in prefetch engine in `astro.config.mjs`: `prefetchAll: true` with `defaultStrategy: 'hover'`. Every internal link (nav links, index cards, detail page links) prefetches its destination on hover, eliminating network fetch latency on click. No separate integration package needed — native to Astro 5.
+
+- **Tightened View Transition timing** — Added global CSS overrides for all `::view-transition-group(*)`, `::view-transition-old(*)`, and `::view-transition-new(*)` pseudo-elements in BaseLayout.astro:
+  - Old page (fade out): 100ms
+  - New page (fade in): 120ms
+  - Entire group lifecycle: 120ms
+  - Timing curve: `cubic-bezier(0.16, 1, 0.3, 1)` — high-velocity deceleration for snappy feel
+
+- **notransition pages instant swap** — The CSS overrides apply globally, including to the errors page (with `notransition` cards). The default crossfade fallback now completes in 120ms instead of the browser's default ~700ms, ensuring instant document swap on high-card-count pages.
+
+### Changed
+
+- `site/astro.config.mjs` — added `prefetch: { prefetchAll: true, defaultStrategy: "hover" }`
+- `site/src/layouts/BaseLayout.astro` — added view transition CSS pseudo-element overrides
+
+### Build
+
+- 5,246 pages, 0 errors, ~70s
+
 ## [0.43.1] — 2026-05-30 — **Emergency Runtime Fix**
 
 ### Fixed
