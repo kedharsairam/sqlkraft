@@ -5,6 +5,28 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.49.0] — 2026-05-31 — **High-Fidelity Search Category Labeling and Card Text Wrapping Geometry**
+
+### Changed
+
+- **Search category headers restyled to Apple-grade spec** — `.palette-cat-header` updated: font-size 11px (was 10px), font-weight 600 (was 700), letter-spacing 0.05em (was 0.1em), color `rgba(255,255,255,0.4)` (was 0.25). Removed `border-bottom` separator. Padding tightened to `8px 20px 4px` for minimal vertical footprint. Headers now act as integrated section anchors rather than heavy dividers.
+- **Card description internal padding boundaries sealed** — `.card-desc` in Card.astro updated with `word-break: break-all`, `overflow-wrap: anywhere`, `box-sizing: border-box`, and `width: 100%` to ensure long unbroken string blocks (comma-separated SQL keywords, raw tokens) respect the card's right-hand padding. Text now wraps naturally before touching the inner border edge.
+- **SearchPalette.astro stale CSS cleaned** — Replaced `.palette-card` reference in text-decoration rule with `.palette-result` (class removed in v0.48.0).
+
+### Added
+
+- `box-sizing: border-box; width: 100%;` on `.card-desc` — explicit sizing guarantee for padding boundary enforcement.
+
+### Fixed
+
+- Category headers no longer render a `border-bottom` separator line that added unnecessary visual weight above each result group.
+
+### Build
+
+- 5,241 pages, 0 errors
+
+---
+
 ## [0.48.0] — 2026-05-31 — **Emergency Search Layout Clean-Up and Card Overflow Fix**
 
 ### Fixed
