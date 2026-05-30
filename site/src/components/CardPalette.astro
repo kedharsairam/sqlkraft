@@ -50,21 +50,20 @@ import Card from "./Card.astro";
       '<a href="' +
       esc(url) +
       '" class="item-card palette-card">' +
-      '<div class="card-title">' +
+      '<div class="palette-result-row">' +
+      '<span class="palette-result-title">' +
       esc(title) +
-      "</div>";
-    if (desc) {
-      html += '<p class="card-desc palette-card-desc">' + esc(desc.substring(0, 140)) + "</p>";
-    }
-    html +=
-      '<div class="card-tags">' +
+      '</span>' +
       '<span class="card-tag card-tag-badge card-tag-badge--' +
       cat +
       '">' +
       esc(badge) +
       "</span>" +
-      "</div>" +
-      "</a>";
+      "</div>";
+    if (desc) {
+      html += '<p class="card-desc palette-card-desc">' + esc(desc.substring(0, 140)) + "</p>";
+    }
+    html += "</a>";
     return html;
   };
 </script>
@@ -129,9 +128,9 @@ import Card from "./Card.astro";
      ════════════════════════════════════════════════ */
 
   .palette-card {
-    padding: 8px 14px;
+    padding: 12px;
     gap: 4px;
-    border-radius: 8px;
+    border-radius: 10px;
     transition:
       background 0.12s ease,
       border-color 0.12s ease,
@@ -153,9 +152,22 @@ import Card from "./Card.astro";
     transform: none;
   }
 
-  /* Compact title in palette */
-  .palette-card .card-title {
-    font-size: 12px;
+  /* ── macOS-style result row: title + badge side by side ── */
+  .palette-result-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+  }
+  .palette-result-title {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary, #e6edf3);
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   /* Compact description — single line clamp */
