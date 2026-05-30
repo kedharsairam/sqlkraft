@@ -1,5 +1,40 @@
 # SqlKraft Session Notes
-## Project Status: **Stable / Production Ready**
+## Project Status: **Stable / Production Ready** (with active maintenance)
+
+---
+
+## v0.43.1 — Stage 48: Emergency Runtime Fixes
+
+### What was fixed
+
+Two runtime defects reported after Stage 47 deployment:
+
+#### 1. DMV Index Page — Broken Card Dimensions
+
+**Root cause**: BaseLayout.astro's global text containment rule (`white-space: nowrap`) on `.card-title` overrode Card.astro's `overflow-wrap: break-word; word-break: break-word; hyphens: auto`. Long DMV names like `sys.dm_exec_query_statistics_xml` could not wrap and overflowed their card container, distorting the grid layout.
+
+**Fix**: Removed `.card-title` from the `white-space: nowrap` rule in BaseLayout.astro (lines 1232-1241). Card titles now inherit Card.astro's wrapping behavior.
+
+#### 2. Errors Index Page — Browser Thread Freeze on Navigation
+
+**Root cause**: Astro's View Transitions engine had to process 1,129 `transition:name` elements on the errors index page during navigation. Each named element triggers CSS pseudo-element creation and animation setup. With 1,129 elements, the browser's style/layout calculation cost caused a main-thread hang.
+
+**Fix**: Added `notransition?: boolean` prop to Card.astro. When `true`, `transition:name` is omitted from the card title via `{...titleAttrs}` spread pattern. Applied `notransition` to errors/index.astro's `<Card>` invocations. Other collection pages (with small card counts) retain `transition:name` for View Transition morphing.
+
+### Key Decisions
+- **`notransition` prop** — Keeps morphing active for all other collection pages. Only the errors page (1,129 cards) disables it.
+- **Attribute spread pattern** — `{...titleAttrs}` is reliable with directives like `transition:name`. Passing `undefined` directly to `transition:name={undefined}` has uncertain behavior with Astro directives.
+- **`.card-title` removal vs. CSS override** — Removing `.card-title` from the nowrap rule is cleaner than adding specificity hacks or `!important` to Card.astro's wrapping rules.
+
+### Files Modified
+- `site/src/components/Card.astro` — added `notransition` prop, conditional `transition:name` via spread
+- `site/src/layouts/BaseLayout.astro` — removed `.card-title` from white-space:nowrap rule
+- `site/src/pages/errors/index.astro` — added `notransition` to Card usage
+
+### Build
+- 5,246 pages, 0 errors, ~33s
+
+---
 
 This repository has completed its architectural refactoring cycle. The core engine — data layer, component architecture, search infrastructure, view transitions, and build pipeline — is finalized. Future work targets content expansion and minor polish only.
 
