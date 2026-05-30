@@ -1,39 +1,28 @@
 # SqlKraft — Session Notes
 
-## v0.47.0-Beta — Wait Stats Card Blueprint Lock, Spotlight macOS-native Redesign, Automated Sanitization Engine
+## v0.48.0-Beta — Emergency Search Layout Clean-Up and Card Overflow Fix
 
 ### What was done
 
-1. **Automated Markdown Sanitization Engine** (`site/scripts/sanitize-content.js`)
-   - Scans all 5,233 content files for structural defects
-   - Fixes: dangling headings, stray code block artifacts, fragmented sentences, blank line normalization
-   - Deletes empty stubs (body < 5 meaningful chars)
-   - Live run: 1,598 files modified, 4 empty stubs deleted (alter-table, datetimeoffset, reconfigure, type)
-   - Integrated into prebuild and predev pipelines (runs first)
-   - Note: Previous audit-content.js only moved files to trash; this one actually heals content in place
+1. **Strip card styling from Spotlight palette** (CardPalette.astro v7)
+   - Removed `import Card from "./Card.astro"` — palette no longer inherits card CSS globals
+   - Rewrote `__renderCard()` to output `<a class="palette-result">` instead of `<a class="item-card palette-card">`
+   - Removed description block from palette results (compact 44px rows don't need it)
+   - Results are tight horizontal rows: title (left) + badge (right)
+   - Hover: subtle `rgba(255, 255, 255, 0.05)` background — no border, no transform, no shadow
+   - Active (keyboard): `rgba(47, 128, 237, 0.08)` accent tint
+   - Removed `.card-tag`, `.card-tag-badge`, `.palette-card`, `.palette-card-desc` CSS classes
+   - Added `.palette-result`, `.palette-badge`, `.palette-badge--*` self-contained CSS classes
+   - Updated SearchPalette.astro click handler selector from `a.item-card` to `a.palette-result`
 
-2. **Wait Statistics Card Blueprint Locked Globally** (`Card.astro`)
-   - `.item-card` now has `min-height: 160px`
-   - `.card-desc` uses `flex: 1` to fill available space
-   - Tags pushed to bottom via `margin-top: auto` (already in place)
-   - All 11 collection index pages now enforce uniform card height
+2. **Fix Card.astro overflow** (.card-desc)
+   - Added `text-overflow: ellipsis` and `word-break: break-word` to `.card-desc`
+   - Long unbroken string fragments no longer extend past card padding
 
-3. **Native macOS Spotlight Search Palette (v6)** (`SearchPalette.astro`, `CardPalette.astro`)
-   - Zero text-underlines across all palette links
-   - 12px unified vertical padding on result items
-   - Crisp monochromatic typography
-   - Hidden scrollbar container
-   - Visual separation between distinct result sets via border-top/border-bottom
-
-4. **Version bumped**: 0.46.0-Beta → 0.47.0-Beta
+3. **Version bumped**: 0.47.0-Beta → 0.48.0-Beta
 
 ### Build results
-- 5,241 pages (5 fewer: 4 deleted stubs + the extra one)
-- 0 errors, ~51s (includes sanitize + audit + palette gen + build)
-- Prettier lint: not run (need to check)
+- 5,241 pages, 0 errors, ~22s
 
 ### Next steps
-- None planned — this is a complete release
-
-### Known issues
-- The `npm run lint` uses prettier which may flag formatting issues in the 1,598 modified content files
+- None planned — this is an emergency regression fix
