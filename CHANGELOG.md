@@ -5,6 +5,47 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.46.0] — 2026-05-30 — **macOS Spotlight Search Rows, Compact Cards, Content Cleanup**
+
+### Added
+
+- **Native macOS Spotlight search results** — Redesigned search palette result rows with clear typographic contrast: title in 14px medium weight on the left, uppercase category badge (ARCH, DMV, T-SQL, etc.) on the right in a single flex row. All link underlines removed. 12px padding, `rounded-lg` (10px) hover states. Layout matches macOS Spotlight behavior exactly.
+
+- **Compact card descriptions** — Changed `.card-desc` line clamp from 3 lines to 2 lines across all index pages. Ensures uniform card height and compact dashboard tokens matching the Wait Statistics gold standard.
+
+### Fixed
+
+- **`@@SERVERNAME` metadata corruption** — Replaced dangling `#### syntaxsql` / `### nvarchar` ingestion artifacts with proper structured markdown: syntax block, return type, remarks, and example.
+
+- **`access-objects-in-the-same-order` broken text** — Consolidated fragmented paragraphs with excessive line breaks, removed dangling single-word `sql` code blocks. Converted raw text to proper subheadings and bullet lists.
+
+### Changed
+
+- `site/src/components/CardPalette.astro` — `__renderCard()` HTML structure changed to `.palette-result-row` (flex row: title + badge). CSS: `.palette-card` padding 12px, border-radius 10px, added `.palette-result-row` / `.palette-result-title` styles. Removed `.palette-card .card-title`.
+- `site/src/components/Card.astro` — `.card-desc` `-webkit-line-clamp` changed from 3 to 2.
+- `site/src/content/tsql-reference/servername.md` — Full rewrite with syntax/doc/example.
+- `site/src/content/architecture/access-objects-in-the-same-order.md` — Consolidated paragraphs, fixed bullet list structure.
+- `site/package.json` — version updated to `0.46.0-beta`.
+
+### Build
+
+- 5,246 pages, 0 errors, ~33s
+
+---
+
+## [0.45.1] — 2026-05-30 — **Absolute Grid Completion**
+
+### Changed
+
+- **7/7 sectioned pages unified** — Converted remaining 3 index pages (stored-procedures, cookbook, errors) to the Wait Statistics blueprint: single `.card-grid` + `.category-strip` filter pills with JS `filterCards()`. All 11 collection index pages now use the identical grid layout.
+- Error page (1,129 cards) retains `notransition` prop — no View Transition naming to prevent browser freeze.
+
+### Build
+
+- 5,246 pages, 0 errors
+
+---
+
 ## [0.44.0] — 2026-05-30 — **Ultra-Snappy Navigation & Prefetch Optimization**
 
 ### Added

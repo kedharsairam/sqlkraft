@@ -2,23 +2,32 @@
 name: "@@SERVERNAME"
 title: "@@SERVERNAME"
 category: "variables"
-description: "#### Server information"
+description: "Returns the name of the SQL Server instance the client is connected to."
 tags: ["tsql", "variables"]
 pubDate: 2026-05-29
 ---
 
-#### syntaxsql
+Returns the name of the SQL Server instance the client is connected to.
 
-### nvarchar
+## Syntax
 
-#### Instance
+```sql
+@@SERVERNAME
+```
 
-#### Server information
+## Return Type
 
-#### Default instance
+**nvarchar(128)**
 
-#### Named instance
+## Remarks
 
-#### Failover cluster instance - default instance
+- For the default instance, **@@SERVERNAME** returns the computer name.
+- For a named instance, **@@SERVERNAME** returns the computer name and instance name in the format `computername\instancename`.
+- For a failover cluster instance, **@@SERVERNAME** returns the virtual server name.
+- Connecting through an alias or via `localhost` may return different values than expected.
 
-#### Failover cluster instance - named instance
+## Example
+
+```sql
+SELECT @@SERVERNAME AS [Server Name];
+```

@@ -1,6 +1,6 @@
 {
   "name": "sqlkraft",
-  "version": "0.43.0",
+  "version": "0.46.0-beta",
   "private": true,
   "type": "module",
   "scripts": {
