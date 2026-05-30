@@ -1,0 +1,58 @@
+---
+export interface Props {
+  title: string;
+  description: string;
+  /** Override the canonical URL (defaults to current page URL) */
+  canonicalUrl?: string;
+  /** URL to an OpenGraph image (defaults to site favicon) */
+  ogImage?: string;
+  /** OpenGraph type: website or article */
+  ogType?: "website" | "article";
+}
+
+const {
+  title,
+  description,
+  canonicalUrl,
+  ogImage = "/sqlkraft/favicon.svg",
+  ogType = "website",
+} = Astro.props;
+
+// Compute canonical URL from Astro.url if not explicitly provided.
+// Astro.url during build resolves to the full site URL based on `site` config.
+let canonical: string;
+if (canonicalUrl) {
+  canonical = canonicalUrl;
+} else {
+  const url = Astro.url;
+  // Strip trailing slash for consistency (except for root)
+  canonical = url.pathname === "/" ? url.origin : url.origin + url.pathname.replace(/\/$/, "");
+}
+
+// Ensure absolute URL for OG image
+const imageUrl = ogImage.startsWith("http") ? ogImage : `https://kedharsairam.github.io${ogImage}`;
+
+// Truncate description to ~160 chars for meta tags
+const trimmedDesc = description.length > 160 ? description.substring(0, 157) + "..." : description;
+---
+
+<!-- Primary meta -->
+<title>{title}</title>
+<meta name="description" content={trimmedDesc} />
+<link rel="canonical" href={canonical} />
+
+<!-- OpenGraph -->
+<meta property="og:title" content={title} />
+<meta property="og:description" content={trimmedDesc} />
+<meta property="og:url" content={canonical} />
+<meta property="og:type" content={ogType} />
+<meta property="og:site_name" content="SqlKraft" />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={trimmedDesc} />
+<meta name="twitter:image" content={imageUrl} />

@@ -1,0 +1,220 @@
+---
+// CardPalette — Runtime card renderer for search palette
+//
+// Provides window.__renderCard() which generates HTML matching the
+// .item-card / .card-title / .card-desc / .card-tags / .card-tag
+// structure used by Card.astro so search results look identical to site tiles.
+//
+// Imports Card.astro to load its unified global card CSS on every page.
+// Provides .palette-card modifier and .card-tag-badge--* colors.
+// Must be included before SearchPalette.astro.
+---
+
+import Card from "./Card.astro";
+
+<!-- Runtime render function — generates a .item-card from palette index item -->
+<script is:inline>
+  window.__renderCard = function (item, baseUrl) {
+    var esc = function (s) {
+      if (!s) return "";
+      return s
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    };
+    var title = item.t || "";
+    var url = (baseUrl || "") + item.u;
+    var cat = item.c || "other";
+    var desc = item.d && item.d.length > 3 ? item.d : "";
+    var labels = {
+      dmvs: "DMVs",
+      "wait-statistics": "Waits",
+      scripts: "Scripts",
+      cookbook: "Recipes",
+      "catalog-views": "Catalog",
+      "stored-procedures": "SPs",
+      functions: "Functions",
+      "tsql-reference": "T-SQL",
+      errors: "Errors",
+      architecture: "Arch",
+      operations: "Ops",
+      xevents: "XEvents",
+    };
+    var badge =
+      labels[cat] ||
+      cat.replace(/-/g, " ").replace(/\b\w/g, function (c) {
+        return c.toUpperCase();
+      });
+
+    var html =
+      '<a href="' +
+      esc(url) +
+      '" class="item-card palette-card">' +
+      '<div class="card-title">' +
+      esc(title) +
+      "</div>";
+    if (desc) {
+      html += '<p class="card-desc palette-card-desc">' + esc(desc.substring(0, 140)) + "</p>";
+    }
+    html +=
+      '<div class="card-tags">' +
+      '<span class="card-tag card-tag-badge card-tag-badge--' +
+      cat +
+      '">' +
+      esc(badge) +
+      "</span>" +
+      "</div>" +
+      "</a>";
+    return html;
+  };
+</script>
+
+<style is:global>
+  /* ── Result list reset (shared with SearchPalette) ── */
+  .palette-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* ── Category header — sticky macOS Spotlight style ── */
+  .palette-cat-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 6px 20px 5px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgba(255, 255, 255, 0.25);
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    background: rgba(22, 22, 22, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  }
+  .palette-cat-header:first-child {
+    margin-top: 0;
+  }
+
+  /* ── Result item wrapper — entry animation only ── */
+  .palette-item {
+    margin: 0 6px;
+    padding: 0;
+    list-style: none;
+    opacity: 0;
+    animation: palette-result-enter 0.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+  .palette-item:last-child {
+    margin-bottom: 4px;
+  }
+
+  @keyframes palette-result-enter {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ════════════════════════════════════════════════
+     PALETTE CARD MODIFIER — compact for search list
+     Base .item-card / .card-title / .card-desc / .card-tags / .card-tag
+     are now defined in Card.astro (imported above).
+     ════════════════════════════════════════════════ */
+
+  .palette-card {
+    padding: 8px 14px;
+    gap: 4px;
+    border-radius: 8px;
+    /* no translateY hover inside compact palette */
+  }
+  .palette-card:hover {
+    border-color: var(--accent);
+    transform: none;
+  }
+
+  /* Active (keyboard selection) — accent border + subtle glow */
+  .palette-card.active {
+    border-color: var(--accent);
+    background: rgba(47, 128, 237, 0.06);
+    box-shadow: inset 0 0 0 1px rgba(47, 128, 237, 0.12);
+  }
+  .palette-card.active:hover {
+    transform: none;
+  }
+
+  /* Compact title in palette */
+  .palette-card .card-title {
+    font-size: 12px;
+  }
+
+  /* Compact description — single line clamp */
+  .palette-card-desc {
+    font-size: 11px;
+    line-height: 1.4;
+    -webkit-line-clamp: 1;
+  }
+
+  /* Colored badge tags per collection */
+  .card-tag-badge {
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+    font-size: 10px;
+  }
+  .card-tag-badge--dmvs {
+    color: #58a6ff;
+    background: rgba(88, 166, 255, 0.12);
+  }
+  .card-tag-badge--wait-statistics {
+    color: #d29922;
+    background: rgba(210, 153, 34, 0.12);
+  }
+  .card-tag-badge--scripts {
+    color: #3fb950;
+    background: rgba(63, 185, 80, 0.12);
+  }
+  .card-tag-badge--cookbook {
+    color: #bc8cff;
+    background: rgba(188, 140, 255, 0.12);
+  }
+  .card-tag-badge--catalog-views {
+    color: #79c0ff;
+    background: rgba(121, 192, 255, 0.12);
+  }
+  .card-tag-badge--stored-procedures {
+    color: #f778ba;
+    background: rgba(247, 120, 186, 0.12);
+  }
+  .card-tag-badge--functions {
+    color: #56d4dd;
+    background: rgba(86, 212, 221, 0.12);
+  }
+  .card-tag-badge--tsql-reference {
+    color: #ffa657;
+    background: rgba(255, 166, 87, 0.12);
+  }
+  .card-tag-badge--errors {
+    color: #f85149;
+    background: rgba(248, 81, 73, 0.12);
+  }
+  .card-tag-badge--architecture {
+    color: #8b949e;
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .card-tag-badge--operations {
+    color: #8b949e;
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .card-tag-badge--xevents {
+    color: #79c0ff;
+    background: rgba(121, 192, 255, 0.12);
+  }
+</style>

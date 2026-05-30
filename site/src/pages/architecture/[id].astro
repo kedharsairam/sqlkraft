@@ -1,0 +1,232 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const entries = await getCollection("architecture");
+  return entries.map((entry) => ({
+    params: { id: entry.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const { title, topic, description, tags } = entry.data;
+---
+
+<BaseLayout title={`${title} — Architecture Guide`} description={description}>
+  <nav class="breadcrumb">
+    <a href="/sqlkraft/">&larr; Home</a>
+    <span class="sep">/</span>
+    <a href="/sqlkraft/architecture/">Architecture</a>
+    <span class="sep">/</span>
+    <span>{title}</span>
+  </nav>
+
+  <div class="detail-layout">
+    <!-- Sidebar TOC -->
+    <aside class="toc-sidebar">
+      <h3 class="toc-title">In this guide</h3>
+      <ul class="toc-list" id="tocList">
+        <li>Loading...</li>
+      </ul>
+      <div class="topic-section">
+        <span class="topic-label">Topic</span>
+        <span class="topic-value">{topic.replace(/-/g, " ")}</span>
+      </div>
+      <div class="tag-strip-vertical">
+        {tags.map((tag) => <span class="tag-pill">#{tag}</span>)}
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="doc-content">
+      <h1 class="doc-title">{title}</h1>
+      {description && <p class="doc-lede">{description}</p>}
+
+      <div class="body-content prose-content" id="docBody">
+        <Content />
+      </div>
+
+      <nav class="detail-footer">
+        <a href="/sqlkraft/architecture/">&larr; Back to architecture</a>
+      </nav>
+    </main>
+  </div>
+</BaseLayout>
+
+<script>
+  // Build client-side TOC from doc body headings
+  document.addEventListener("DOMContentLoaded", () => {
+    const body = document.getElementById("docBody");
+    const tocList = document.getElementById("tocList");
+    if (!body || !tocList) return;
+
+    const headings = body.querySelectorAll("h2, h3");
+    if (headings.length === 0) {
+      tocList.innerHTML = "<li class='toc-empty'>No sections</li>";
+      return;
+    }
+
+    tocList.innerHTML = "";
+    headings.forEach((h, i) => {
+      const id = `section-${i}`;
+      h.id = id;
+      const li = document.createElement("li");
+      li.className = `toc-item toc-level-${h.tagName.toLowerCase()}`;
+      const a = document.createElement("a");
+      a.href = `#${id}`;
+      a.textContent = h.textContent.slice(0, 60);
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+  });
+</script>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: clamp(4px, 0.8vw, 10px);
+    font-size: clamp(11px, 1.2vw, 14px);
+    color: var(--text-secondary);
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+  }
+  .breadcrumb a {
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb .sep {
+    color: var(--border-glass);
+  }
+
+  .detail-layout {
+    display: flex;
+    gap: clamp(16px, 3vw, 40px);
+  }
+  .toc-sidebar {
+    width: clamp(180px, 18vw, 260px);
+    flex-shrink: 0;
+    position: sticky;
+    top: 80px;
+    align-self: flex-start;
+  }
+  .toc-title {
+    font-size: clamp(11px, 1.2vw, 14px);
+    font-weight: 600;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: clamp(8px, 1vw, 14px);
+  }
+  .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 clamp(12px, 2vw, 24px);
+  }
+  .toc-item {
+    margin-bottom: clamp(2px, 0.3vw, 5px);
+  }
+  .toc-item a {
+    font-size: clamp(11px, 1vw, 13px);
+    color: var(--text-secondary);
+    text-decoration: none;
+    line-height: 1.6;
+    display: block;
+    padding: clamp(1px, 0.2vw, 3px) 0;
+  }
+  .toc-item a:hover {
+    color: var(--accent);
+  }
+  .toc-level-h3 {
+    padding-left: clamp(8px, 1vw, 14px);
+  }
+  .toc-level-h3 a {
+    font-size: clamp(10px, 0.9vw, 12px);
+  }
+  .toc-empty {
+    font-size: clamp(11px, 1vw, 13px);
+    color: var(--text-secondary);
+    font-style: italic;
+  }
+  .topic-section {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(2px, 0.3vw, 5px);
+    margin-bottom: clamp(10px, 1.5vw, 20px);
+    padding-top: clamp(10px, 1.5vw, 20px);
+    border-top: 1px solid var(--border-glass);
+  }
+  .topic-label {
+    font-size: clamp(9px, 0.9vw, 12px);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+  }
+  .topic-value {
+    font-size: clamp(11px, 1vw, 13px);
+    color: var(--text-primary);
+    text-transform: capitalize;
+  }
+  .tag-strip-vertical {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(2px, 0.3vw, 5px);
+  }
+  .tag-pill {
+    font-size: clamp(9px, 0.9vw, 12px);
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.06);
+    padding: clamp(1px, 0.2vw, 3px) clamp(6px, 0.7vw, 10px);
+    border-radius: 4px;
+    font-family: var(--font-mono);
+  }
+
+  .doc-content {
+    flex: 1;
+    min-width: 0;
+  }
+  .doc-title {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: clamp(8px, 1vw, 14px);
+  }
+  .doc-lede {
+    font-size: clamp(13px, 1.4vw, 16px);
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+    padding-bottom: clamp(10px, 1.5vw, 20px);
+    border-bottom: 1px solid var(--border-glass);
+  }
+
+  .detail-footer {
+    margin-top: clamp(24px, 4vw, 48px);
+    padding-top: clamp(12px, 1.5vw, 20px);
+    border-top: 1px solid var(--border-glass);
+    font-size: clamp(12px, 1.2vw, 14px);
+  }
+  .detail-footer a {
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
+  .detail-footer a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 900px) {
+    .detail-layout {
+      flex-direction: column;
+    }
+    .toc-sidebar {
+      width: 100%;
+      position: static;
+    }
+  }
+</style>

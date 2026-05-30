@@ -1,0 +1,221 @@
+---
+// RecipeLayout — Cross-collection troubleshooting scenario detail layout
+// Uses the global card grid and spacing tokens from BaseLayout.
+// Renders a cross-reference grid of DMVs, waits, and scripts under the recipe content.
+
+import BaseLayout from "./BaseLayout.astro";
+
+export interface Props {
+  title: string;
+  description: string;
+  relatedContent?: {
+    dmvs?: string[];
+    waits?: string[];
+    scripts?: string[];
+    errors?: string[];
+    xevents?: string[];
+  };
+}
+
+const { title, description, relatedContent } = Astro.props;
+---
+
+<div class="recipe-wrapper">
+  <slot />
+</div>
+
+{
+  relatedContent &&
+    (relatedContent.dmvs ||
+      relatedContent.waits ||
+      relatedContent.scripts ||
+      relatedContent.errors ||
+      relatedContent.xevents) && (
+      <section class="xref-section">
+        <h2 class="xref-heading">Cross-References</h2>
+        <div class="xref-grid">
+          {relatedContent.dmvs?.map((slug) => {
+            const label = slug.replace(/-/g, " ");
+            return (
+              <a href={`/sqlkraft/dmvs/${slug}/`} class="xref-card">
+                <span class="xref-icon">V</span>
+                <span class="xref-label">{label}</span>
+                <span class="xref-collection">DMV</span>
+              </a>
+            );
+          })}
+          {relatedContent.waits?.map((slug) => {
+            const label = slug.replace(/_/g, " ");
+            return (
+              <a href={`/sqlkraft/wait-statistics/${slug.toLowerCase()}/`} class="xref-card">
+                <span class="xref-icon">W</span>
+                <span class="xref-label">{label}</span>
+                <span class="xref-collection">Wait</span>
+              </a>
+            );
+          })}
+          {relatedContent.scripts?.map((slug) => {
+            const label = slug.replace(/-/g, " ");
+            return (
+              <a href={`/sqlkraft/scripts/${slug}/`} class="xref-card">
+                <span class="xref-icon">S</span>
+                <span class="xref-label">{label}</span>
+                <span class="xref-collection">Script</span>
+              </a>
+            );
+          })}
+          {relatedContent.errors?.map((slug) => {
+            const label = slug.replace(/-/g, " ");
+            return (
+              <a href={`/sqlkraft/errors/${slug}/`} class="xref-card">
+                <span class="xref-icon">E</span>
+                <span class="xref-label">{label}</span>
+                <span class="xref-collection">Error</span>
+              </a>
+            );
+          })}
+          {relatedContent.xevents?.map((slug) => {
+            const label = slug.replace(/-/g, " ");
+            return (
+              <a href={`/sqlkraft/xevents/${slug}/`} class="xref-card">
+                <span class="xref-icon">X</span>
+                <span class="xref-label">{label}</span>
+                <span class="xref-collection">XEvent</span>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    )
+}
+
+<style>
+  .recipe-wrapper {
+    margin-bottom: clamp(24px, 3vw, 40px);
+  }
+  .recipe-wrapper :global(h2) {
+    font-size: clamp(1.1rem, 2vw, 1.4rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: clamp(20px, 3vw, 36px) 0 clamp(8px, 1vw, 14px);
+    padding-bottom: clamp(4px, 0.5vw, 8px);
+    border-bottom: 1px solid var(--border-glass);
+  }
+  .recipe-wrapper :global(h3) {
+    font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: clamp(16px, 2.5vw, 28px) 0 clamp(6px, 0.8vw, 12px);
+  }
+  .recipe-wrapper :global(p) {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: clamp(10px, 1.2vw, 16px);
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+  }
+  .recipe-wrapper :global(ul) {
+    margin-bottom: clamp(10px, 1.2vw, 16px);
+    padding-left: clamp(16px, 2vw, 24px);
+    color: var(--text-secondary);
+    line-height: 1.8;
+  }
+  .recipe-wrapper :global(li) {
+    margin-bottom: clamp(4px, 0.5vw, 8px);
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem);
+  }
+  .recipe-wrapper :global(a) {
+    color: var(--text-primary);
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.2);
+    transition: text-decoration-color 0.2s;
+  }
+  .recipe-wrapper :global(a:hover) {
+    text-decoration-color: var(--text-primary);
+  }
+  .recipe-wrapper :global(pre) {
+    background: #0d1117;
+    padding: clamp(12px, 2vw, 28px) !important;
+    border-radius: clamp(6px, 1vw, 10px);
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem) !important;
+    overflow-x: auto;
+    margin-bottom: clamp(12px, 1.5vw, 20px);
+  }
+  .recipe-wrapper :global(code) {
+    font-family: var(--font-mono);
+    color: #e6edf3;
+  }
+  .recipe-wrapper :global(:not(pre) > code) {
+    color: #e6edf3;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 3px;
+    padding: clamp(1px, 0.3vw, 6px) clamp(3px, 0.5vw, 8px);
+    font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+  }
+
+  /* ── Cross-Reference Section ── */
+  .xref-section {
+    margin-top: clamp(28px, 4vw, 48px);
+    padding-top: clamp(16px, 2vw, 28px);
+    border-top: 1px solid var(--border-glass);
+  }
+  .xref-heading {
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: clamp(12px, 1.5vw, 20px);
+  }
+  .xref-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(200px, 16vw, 280px), 1fr));
+    gap: clamp(8px, 1vw, 14px);
+  }
+  .xref-card {
+    display: flex;
+    align-items: center;
+    gap: clamp(6px, 0.8vw, 10px);
+    padding: clamp(8px, 1vw, 14px) clamp(10px, 1.2vw, 16px);
+    border: 1px solid var(--border-glass);
+    border-radius: 6px;
+    text-decoration: none;
+    transition:
+      border-color 0.2s,
+      background 0.2s;
+    background: rgba(255, 255, 255, 0.02);
+  }
+  .xref-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.04);
+    text-decoration: none;
+  }
+  .xref-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    flex-shrink: 0;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
+  }
+  .xref-label {
+    font-size: clamp(11px, 1.1vw, 13px);
+    font-weight: 500;
+    color: var(--text-primary);
+    flex: 1;
+    text-transform: capitalize;
+  }
+  .xref-collection {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.06);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: var(--font-mono);
+    flex-shrink: 0;
+  }
+</style>

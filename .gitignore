@@ -1,0 +1,27 @@
+node_modules/
+dist/
+site/dist/
+# Windows filesystem name-clash collision artifacts
+site/dist (# */
+.astro/
+*.log
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# Extraction output (tracked via git-lfs or separate)
+extractor/output/*.json
+extractor/output/*.md
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo

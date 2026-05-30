@@ -1,0 +1,101 @@
+---
+name: "sys.sp_dropextendedproc"
+title: "sp_dropextendedproc"
+category: "general"
+description: "Drops an extended stored procedure. Transact-SQL syntax conventions The name of the extended stored procedure to drop. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature."
+tags: ["stored-procedure"]
+pubDate: 2026-05-29
+syntax: |
+  sp_dropextendedproc [ @functname = ]
+  N
+  'functname'
+  [ ; ]
+---
+
+## Description
+
+Drops an extended stored procedure. Transact-SQL syntax conventions The name of the extended stored procedure to drop. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
+
+## Syntax
+
+```sql
+sp_dropextendedproc [ @functname = ]
+N
+'functname'
+[ ; ]
+```
+
+## Examples
+
+### Example 1
+
+```sql
+sp_dropextendedproc
+```
+
+### Example 2
+
+```sql
+master
+```
+
+### Example 3
+
+```sql
+sp_dropextendedproc
+```
+
+### Example 4
+
+```sql
+EXECUTE
+```
+
+### Example 5
+
+```sql
+sp_dropextendedproc
+```
+
+### Example 6
+
+```sql
+sp_dropextendedproc
+```
+
+### Example 7
+
+```sql
+xp_hello
+```
+
+### Example 8
+
+```sql
+USE
+master
+;
+GO
+EXECUTE
+sp_dropextendedproc
+'xp_hello'
+;
+```
+
+### Example 9
+
+```sql
+EXECUTE
+sp_helpextendedproc xp_cmdshell;
+GO
+```
+
+### Example 10
+
+```sql
+sp_addextendedproc
+sp_dropextendedproc
+sp_helpextendedproc
+```
+
+_(... and 18 more examples)_

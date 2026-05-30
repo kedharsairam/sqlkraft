@@ -1,0 +1,1264 @@
+---
+import SEO from "../components/SEO.astro";
+import SearchPalette from "../components/SearchPalette.astro";
+import { ViewTransitions } from "astro:transitions";
+
+export interface Props {
+  title?: string;
+  description?: string;
+  /** Override OG image URL */
+  image?: string;
+  /** Override canonical URL */
+  canonical?: string;
+}
+
+const {
+  title = "SqlKraft",
+  description = "SQL Server Reference Hub",
+  image,
+  canonical,
+} = Astro.props;
+
+// Format title with site suffix (skip suffix for homepage)
+const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <SEO title={pageTitle} description={description} canonicalUrl={canonical} ogImage={image} />
+    <link rel="icon" type="image/svg+xml" href="/sqlkraft/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <ViewTransitions />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-inner">
+        <a href="/sqlkraft/" class="nav-brand">SqlKraft.</a>
+        <div class="nav-links">
+          <a href="/sqlkraft/dmvs/">DMVs</a>
+          <a href="/sqlkraft/wait-statistics/">Waits</a>
+          <a href="/sqlkraft/errors/">Errors</a>
+          <a href="/sqlkraft/catalog-views/">Catalog</a>
+          <a href="/sqlkraft/functions/">Functions</a>
+          <a href="/sqlkraft/stored-procedures/">SPs</a>
+          <a href="/sqlkraft/tsql-reference/">T-SQL</a>
+          <a href="/sqlkraft/architecture/">Arch</a>
+          <a href="/sqlkraft/scripts/">Scripts</a>
+          <a href="/sqlkraft/cookbook/">Recipes</a>
+        </div>
+        <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <span class="search-shortcut">Ctrl+K</span>
+        </button>
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Open navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ── Mobile navigation drawer ── -->
+    <div id="mobile-nav-drawer" class="mobile-nav-drawer">
+      <div class="mobile-nav-drawer-inner">
+        <button class="mobile-search-trigger" id="mobile-search-trigger">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <span>Search references</span>
+          <kbd class="mobile-search-hint">Ctrl+K</kbd>
+        </button>
+        <div class="mobile-nav-links">
+          <a href="/sqlkraft/dmvs/" class="mobile-nav-link">DMVs</a>
+          <a href="/sqlkraft/wait-statistics/" class="mobile-nav-link">Waits</a>
+          <a href="/sqlkraft/errors/" class="mobile-nav-link">Errors</a>
+          <a href="/sqlkraft/catalog-views/" class="mobile-nav-link">Catalog</a>
+          <a href="/sqlkraft/functions/" class="mobile-nav-link">Functions</a>
+          <a href="/sqlkraft/stored-procedures/" class="mobile-nav-link">SPs</a>
+          <a href="/sqlkraft/tsql-reference/" class="mobile-nav-link">T-SQL</a>
+          <a href="/sqlkraft/architecture/" class="mobile-nav-link">Arch</a>
+          <a href="/sqlkraft/scripts/" class="mobile-nav-link">Scripts</a>
+          <a href="/sqlkraft/cookbook/" class="mobile-nav-link">Recipes</a>
+        </div>
+      </div>
+    </div>
+    <main class="app-shell" transition:animate="fade">
+      <slot />
+    </main>
+    <nav id="toc-sidebar" class="toc-sidebar" aria-label="Table of contents"></nav>
+    <SearchPalette />
+    <div id="link-preview-card"></div>
+    <!-- ── Stage 24: Keyboard Shortcut Overlay ── -->
+    <div id="shortcut-overlay" class="shortcut-overlay hidden">
+      <div class="shortcut-backdrop"></div>
+      <div class="shortcut-panel">
+        <div class="shortcut-header">
+          <svg
+            class="shortcut-icon"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="2" y="4" width="20" height="16" rx="2" ry="2"></rect>
+            <path
+              d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M8 12h.01M12 12h.01M16 12h.01M6 16h.01M10 16h.01M14 16h.01M18 16h.01"
+            ></path>
+          </svg>
+          <span>Keyboard Shortcuts</span>
+        </div>
+        <div class="shortcut-grid">
+          <div class="shortcut-row">
+            <span class="shortcut-action">Search Palette</span>
+            <span class="shortcut-keys"
+              ><kbd class="keycap mod-key"></kbd><kbd class="keycap">K</kbd></span
+            >
+          </div>
+          <div class="shortcut-row">
+            <span class="shortcut-action">Navigate Search</span>
+            <span class="shortcut-keys"><kbd class="keycap">↑</kbd><kbd class="keycap">↓</kbd></span
+            >
+          </div>
+          <div class="shortcut-row">
+            <span class="shortcut-action">Open Result</span>
+            <span class="shortcut-keys"><kbd class="keycap keycap-wide">Enter</kbd></span>
+          </div>
+          <div class="shortcut-row">
+            <span class="shortcut-action">Close Overlays</span>
+            <span class="shortcut-keys"><kbd class="keycap keycap-wide">Esc</kbd></span>
+          </div>
+          <div class="shortcut-row">
+            <span class="shortcut-action">Show Shortcuts</span>
+            <span class="shortcut-keys"><kbd class="keycap">?</kbd></span>
+          </div>
+        </div>
+        <div class="shortcut-footer">
+          Press <kbd class="keycap keycap-sm">?</kbd> to toggle this menu
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  // ── Mac detection: show ⌘K instead of Ctrl+K ──
+  const isMac = navigator.platform.includes("Mac");
+  if (isMac) {
+    const badge = document.querySelector(".search-shortcut");
+    if (badge) badge.textContent = "⌘K";
+    const btn = document.getElementById("search-btn");
+    if (btn) btn.setAttribute("aria-label", "Search (⌘K)");
+  }
+
+  // ── Mobile hamburger menu ──
+  const hamburger = document.getElementById("hamburger-btn");
+  const drawer = document.getElementById("mobile-nav-drawer");
+  if (hamburger && drawer) {
+    hamburger.addEventListener("click", () => {
+      const isOpen = drawer.classList.toggle("is-active");
+      hamburger.classList.toggle("is-active");
+      hamburger.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation menu" : "Open navigation menu",
+      );
+      document.body.style.overflow = isOpen ? "hidden" : "";
+    });
+
+    // Close drawer when a nav link is tapped
+    drawer.querySelectorAll(".mobile-nav-link").forEach((link) => {
+      link.addEventListener("click", () => {
+        drawer.classList.remove("is-active");
+        hamburger.classList.remove("is-active");
+        hamburger.setAttribute("aria-label", "Open navigation menu");
+        document.body.style.overflow = "";
+      });
+    });
+
+    // Close drawer when search trigger is tapped
+    const searchTrigger = document.getElementById("mobile-search-trigger");
+    searchTrigger?.addEventListener("click", () => {
+      drawer.classList.remove("is-active");
+      hamburger.classList.remove("is-active");
+      hamburger.setAttribute("aria-label", "Open navigation menu");
+      document.body.style.overflow = "";
+      // Open the palette
+      if (window.__openPalette) window.__openPalette();
+    });
+  }
+
+  // ─────────────────────────────────────────────────
+  //  Stage 23: Link Preview Hover Cards
+  // ─────────────────────────────────────────────────
+  (function () {
+    "use strict";
+
+    // Only on content pages
+    const hoverBody = document.querySelector(".body-content");
+    if (!hoverBody) return;
+
+    // Derive base URL from palette overlay attribute
+    const hoverBaseUrl =
+      document.querySelector("#palette-overlay")?.getAttribute("data-base-url") || "/sqlkraft";
+
+    // ── Palette index (shared with search palette) ──
+    let hoverIdx = null;
+
+    function hoverInit() {
+      if (
+        window.__paletteIndex &&
+        Array.isArray(window.__paletteIndex) &&
+        window.__paletteIndex.length > 0
+      ) {
+        hoverIdx = window.__paletteIndex;
+        return true;
+      }
+      return false;
+    }
+
+    // Try synchronous init; fallback fetch if not ready yet
+    if (!hoverInit()) {
+      fetch(hoverBaseUrl + "/data/palette-index.json")
+        .then((r) => r.json())
+        .then((data) => {
+          hoverIdx = data;
+          window.__paletteIndex = data;
+        })
+        .catch(() => {});
+    }
+
+    // ── Lookup palette entry by href ──
+    function lookupEntry(href) {
+      if (!hoverIdx || !hoverIdx.length) return null;
+      let path = href;
+      if (path.startsWith(hoverBaseUrl)) path = path.slice(hoverBaseUrl.length);
+      // Normalise slashes for comparison
+      path = path.replace(/^\/+|\/+$/g, "") || "/";
+
+      for (const entry of hoverIdx) {
+        let entryPath = (entry.u || "").replace(/^\/+|\/+$/g, "") || "/";
+        if (path === entryPath) return entry;
+      }
+      return null;
+    }
+
+    // ── HTML escaper ──
+    function escHtml(s) {
+      if (!s) return "";
+      return s
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    // ── Hover card DOM ──
+    const hoverCard = document.getElementById("link-preview-card");
+    if (!hoverCard) return;
+
+    let hoverTimer = null;
+    let hoverCurrentLink = null;
+
+    // ── Show card with edge-aware positioning ──
+    function showCard(entry, rect) {
+      if (!hoverCard || !entry) return;
+
+      // Populate content first (card is opacity: 0)
+      hoverCard.innerHTML =
+        '<div class="lpc-title">' +
+        escHtml(entry.t) +
+        '</div><div class="lpc-desc">' +
+        escHtml(entry.d || "") +
+        '</div><div class="lpc-meta">' +
+        escHtml(entry.c || "") +
+        "</div>";
+
+      // Measure height after content is set (force layout via offsetHeight)
+      const cardH = hoverCard.offsetHeight || 120;
+      const cardW = 320;
+
+      // Preferred: right of the link, top-aligned
+      let left = rect.right + 8;
+      let top = rect.top;
+
+      // Flip to left of the link if there's not enough room on the right
+      if (left + cardW > window.innerWidth - 12) {
+        left = Math.max(12, rect.left - cardW - 8);
+      }
+      // Prevent bottom edge overflow
+      if (top + cardH > window.innerHeight - 12) {
+        top = Math.max(12, window.innerHeight - cardH - 12);
+      }
+      // Clamp top
+      if (top < 12) top = 12;
+      // Clamp left
+      if (left < 12) left = 12;
+
+      hoverCard.style.left = left + "px";
+      hoverCard.style.top = top + "px";
+
+      // Force layout so position is applied before transition starts
+      void hoverCard.offsetHeight;
+
+      // Trigger entrance transition
+      hoverCard.classList.add("visible");
+    }
+
+    // ── Hide card ──
+    function hideCard() {
+      if (!hoverCard) return;
+      hoverCard.classList.remove("visible");
+    }
+
+    // ── Attach mouseenter/mouseleave to each internal link ──
+    const hoverLinks = hoverBody.querySelectorAll("a");
+    hoverLinks.forEach(function (link) {
+      const href = link.getAttribute("href");
+      // Only internal absolute links
+      if (
+        !href ||
+        href.startsWith("http") ||
+        href.startsWith("#") ||
+        href.startsWith("mailto:") ||
+        href.startsWith("javascript:")
+      )
+        return;
+      if (!href.startsWith("/")) return;
+
+      link.addEventListener("mouseenter", function () {
+        hoverCurrentLink = link;
+        clearTimeout(hoverTimer);
+        hoverTimer = setTimeout(function () {
+          if (link !== hoverCurrentLink) return;
+          const entry = lookupEntry(href);
+          if (!entry) return;
+          const rect = link.getBoundingClientRect();
+          showCard(entry, rect);
+        }, 400);
+      });
+
+      link.addEventListener("mouseleave", function () {
+        clearTimeout(hoverTimer);
+        hideCard();
+        hoverCurrentLink = null;
+      });
+    });
+
+    // ── Hide on any scroll (covers page scroll, code block scroll, etc.) ──
+    document.addEventListener("scroll", hideCard, { passive: true });
+  })();
+
+  // ─────────────────────────────────────────────────
+  //  Stage 24: Keyboard Shortcut Overlay (press ?)
+  // ─────────────────────────────────────────────────
+  (function () {
+    "use strict";
+
+    const shortOverlay = document.getElementById("shortcut-overlay");
+    if (!shortOverlay) return;
+
+    // Set platform-specific modifier key (⌘ vs Ctrl)
+    const shortIsMac = navigator.platform.includes("Mac");
+    const modKeyEl = shortOverlay.querySelector(".mod-key");
+    if (modKeyEl) modKeyEl.textContent = shortIsMac ? "⌘" : "Ctrl";
+
+    function openShortcuts() {
+      shortOverlay.classList.remove("hidden");
+    }
+
+    function closeShortcuts() {
+      shortOverlay.classList.add("hidden");
+    }
+
+    // Global listener: ? to toggle, Escape to close
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "?") {
+        // Ignore if user is actively typing in an input/textarea
+        const tag = (document.activeElement && document.activeElement.tagName) || "";
+        if (tag === "INPUT" || tag === "TEXTAREA" || document.activeElement.isContentEditable)
+          return;
+        e.preventDefault();
+        if (shortOverlay.classList.contains("hidden")) {
+          openShortcuts();
+        } else {
+          closeShortcuts();
+        }
+      }
+      if (e.key === "Escape" && !shortOverlay.classList.contains("hidden")) {
+        e.preventDefault();
+        closeShortcuts();
+      }
+    });
+
+    // Click backdrop to close
+    const shortBackdrop = shortOverlay.querySelector(".shortcut-backdrop");
+    if (shortBackdrop) shortBackdrop.addEventListener("click", closeShortcuts);
+  })();
+
+  // ─────────────────────────────────────────────────
+  //  Universal Copy-to-Clipboard + Sticky TOC
+  // ─────────────────────────────────────────────────
+  (function () {
+    "use strict";
+
+    const body = document.querySelector(".body-content");
+    if (!body) return; // Only run on content pages
+
+    /* ── 1. Copy-to-Clipboard for every <pre> block ── */
+    const pres = body.querySelectorAll("pre");
+    pres.forEach((pre) => {
+      // Position the pre relatively so the button can be absolutely positioned
+      pre.style.position = "relative";
+      pre.classList.add("copy-code-wrap");
+
+      const btn = document.createElement("button");
+      btn.className = "code-copy-btn";
+      btn.innerHTML =
+        '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path></svg><span>Copy</span>';
+      btn.setAttribute("aria-label", "Copy code to clipboard");
+
+      btn.addEventListener("click", async (e) => {
+        e.stopPropagation();
+        // Get the raw code text — use textContent to strip HTML
+        const text = pre.textContent || "";
+        try {
+          await navigator.clipboard.writeText(text);
+          btn.innerHTML =
+            '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg><span>Copied!</span>';
+          btn.classList.add("copied");
+          setTimeout(() => {
+            btn.innerHTML =
+              '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path></svg><span>Copy</span>';
+            btn.classList.remove("copied");
+          }, 2000);
+        } catch {
+          btn.innerHTML = "<span>Failed</span>";
+          setTimeout(() => {
+            btn.innerHTML =
+              '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"></path></svg><span>Copy</span>';
+          }, 2000);
+        }
+      });
+
+      pre.appendChild(btn);
+    });
+
+    /* ── 2. Sticky Table of Contents ── */
+    const toc = document.getElementById("toc-sidebar");
+    if (!toc) return;
+
+    const headings = body.querySelectorAll("h2, h3");
+    if (headings.length < 2) {
+      // Not enough headings to justify a TOC — leave hidden
+      return;
+    }
+
+    // Ensure all headings have an id for fragment linking
+    headings.forEach((h, i) => {
+      if (!h.id) {
+        h.id = "section-" + i;
+      }
+    });
+
+    // Build TOC HTML
+    let tocHTML = "<div class='toc-label'>On this page</div><ul class='toc-list'>";
+    headings.forEach((h) => {
+      const tag = h.tagName.toLowerCase(); // "h2" or "h3"
+      const indent = tag === "h3" ? " style='--toc-indent:1'" : "";
+      const text = h.textContent || "";
+      tocHTML += `<li class="toc-item toc-${tag}"${indent}><a href="#${h.id}" class="toc-link">${text}</a></li>`;
+    });
+    tocHTML += "</ul>";
+    toc.innerHTML = tocHTML;
+    toc.classList.add("visible");
+
+    // Scroll tracking via IntersectionObserver
+    const tocLinks = toc.querySelectorAll(".toc-link");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            tocLinks.forEach((link) => {
+              link.classList.toggle("active", link.getAttribute("href") === "#" + id);
+            });
+          }
+        }
+      },
+      { rootMargin: "-80px 0px -70% 0px" },
+    );
+
+    headings.forEach((h) => observer.observe(h));
+  })();
+</script>
+
+<style is:global>
+  :root {
+    --bg-primary: #000000;
+    --bg-secondary: #0d1117;
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --accent: #2f80ed;
+    --border-glass: rgba(255, 255, 255, 0.08);
+    --color-muted: #9ca3af;
+    --font-sans: "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-mono: "SF Mono", "Cascadia Code", Consolas, monospace;
+    --max-width: 1500px;
+    --nav-height: 56px;
+
+    /* ── Fluid spacing & layout tokens ── */
+    --content-max-width: min(var(--max-width), 95vw);
+    --fluid-gap-sm: clamp(8px, 1vw, 16px);
+    --fluid-gap-md: clamp(16px, 2vw, 28px);
+    --fluid-gap-lg: clamp(24px, 3vw, 48px);
+    --fluid-padding-h: clamp(16px, 3vw, 40px);
+    --fluid-padding-v: clamp(24px, 3vw, 48px);
+
+    /* ── Unified spacing rhythm ── */
+    --space-xs: 0.5rem; /* 8px — h1→tagline */
+    --space-sm: 0.75rem; /* 12px — tagline→subtitle */
+    --space-md: 1.5rem; /* 24px — section breaks */
+    --space-lg: 2.5rem; /* 40px — nav→title, subtitle→grid */
+    --space-xl: 4rem; /* 64px — section top/bottom */
+
+    /* ── Unified component tokens ── */
+    --card-padding: 1.75rem; /* 28px — card inner padding on wide viewports */
+    --code-padding: 1.75rem; /* 28px — code block inner padding */
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: var(--font-sans);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+  .nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--nav-height);
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-glass);
+    z-index: 100;
+  }
+  .nav-inner {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    padding: 0 var(--fluid-padding-h);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .nav-links {
+    display: flex;
+    gap: clamp(8px, 1.5vw, 16px);
+  }
+  .nav-links a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: clamp(11px, 1.3vw, 14px);
+    font-weight: 500;
+    transition: color 0.2s;
+    white-space: nowrap;
+  }
+  .nav-links a:hover {
+    color: var(--text-primary);
+  }
+  .nav-search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-glass);
+    border-radius: 6px;
+    padding: 5px 10px;
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-family: inherit;
+    transition:
+      border-color 0.2s,
+      color 0.2s;
+    margin-left: 12px;
+  }
+  .nav-search-btn:hover {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+  }
+  .search-shortcut {
+    font-size: 11px;
+    font-family: var(--font-mono);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-glass);
+    border-radius: 4px;
+    padding: 2px 6px;
+    line-height: 1;
+    color: var(--text-secondary);
+  }
+  .app-shell {
+    max-width: var(--content-max-width);
+    margin: 0 auto;
+    padding: calc(var(--nav-height) + var(--space-lg)) var(--fluid-padding-h) var(--fluid-padding-v);
+  }
+  a {
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* ── Responsive tables with clean borders ── */
+  .prose-content table,
+  .body-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--space-md);
+    font-size: clamp(12px, 1.2vw, 14px);
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    border: 1px solid var(--border-glass);
+    border-radius: clamp(6px, 0.8vw, 10px);
+  }
+  .prose-content th,
+  .prose-content td,
+  .body-content th,
+  .body-content td {
+    padding: 0.6rem 1.1rem;
+    border-bottom: 1px solid var(--border-glass);
+    vertical-align: top;
+  }
+  .prose-content th,
+  .body-content th {
+    text-align: left;
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  .prose-content tr:last-child td,
+  .body-content tr:last-child td {
+    border-bottom: none;
+  }
+  @media (max-width: 540px) {
+    .prose-content table,
+    .body-content table {
+      font-size: 12px;
+    }
+    .prose-content th,
+    .prose-content td,
+    .body-content th,
+    .body-content td {
+      padding: 6px 10px;
+    }
+  }
+
+  /* ── Fluid code blocks (1.75rem max padding) ── */
+  .body-content pre {
+    padding: clamp(12px, 2vw, 28px) !important;
+    border-radius: clamp(6px, 1vw, 10px);
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem) !important;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .body-content :not(pre) > code {
+    font-size: clamp(0.8rem, 1.1vw, 0.9rem) !important;
+    padding: clamp(1px, 0.3vw, 6px) clamp(3px, 0.5vw, 8px) !important;
+  }
+
+  /* ── Hamburger toggle button (hidden on desktop) ── */
+  .hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    margin-left: 8px;
+  }
+  .hamburger-line {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--text-secondary);
+    border-radius: 2px;
+    transition:
+      transform 0.2s ease-out,
+      opacity 0.2s ease-out;
+    transform-origin: center;
+  }
+  .hamburger-btn.is-active .hamburger-line:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .hamburger-btn.is-active .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger-btn.is-active .hamburger-line:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+
+  /* ── Mobile navigation drawer (full-screen overlay) ── */
+  .mobile-nav-drawer {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.97);
+    backdrop-filter: blur(16px);
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition:
+      opacity 0.2s ease-out,
+      transform 0.2s ease-out;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .mobile-nav-drawer.is-active {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+  .mobile-nav-drawer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: var(--fluid-padding-h);
+    max-width: 500px;
+  }
+
+  /* Mobile search trigger at top of drawer */
+  .mobile-search-trigger {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: var(--space-md);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--border-glass);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: var(--space-md);
+    transition:
+      border-color 0.2s,
+      color 0.2s;
+  }
+  .mobile-search-trigger:hover,
+  .mobile-search-trigger:active {
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-primary);
+  }
+  .mobile-search-hint {
+    margin-left: auto;
+    font-size: 11px;
+    font-family: var(--font-mono);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--border-glass);
+    border-radius: 4px;
+    padding: 2px 6px;
+    line-height: 1;
+    color: var(--text-secondary);
+  }
+
+  /* Mobile nav links */
+  .mobile-nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .mobile-nav-link {
+    display: block;
+    padding: var(--space-sm) var(--space-md);
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-primary);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.15s;
+  }
+  .mobile-nav-link:hover,
+  .mobile-nav-link:active {
+    background: rgba(255, 255, 255, 0.06);
+    text-decoration: none;
+  }
+
+  /* ── Responsive: switch to hamburger on narrow viewports ── */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .nav-search-btn {
+      display: none;
+    }
+    .hamburger-btn {
+      display: flex;
+    }
+  }
+
+  /* ── Sticky Table of Contents (right rail) ── */
+  .toc-sidebar {
+    position: fixed;
+    top: calc(var(--nav-height) + 32px);
+    right: max(12px, calc((100vw - 1500px) / 2 - 220px));
+    width: 200px;
+    max-height: calc(100vh - var(--nav-height) - 64px);
+    overflow-y: auto;
+    display: none;
+    z-index: 50;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.08) transparent;
+  }
+  .toc-sidebar.visible {
+    display: block;
+  }
+  .toc-label {
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: rgba(255, 255, 255, 0.25);
+    margin-bottom: 12px;
+  }
+  .toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .toc-item {
+    margin: 0;
+    padding: 0;
+  }
+  .toc-link {
+    display: block;
+    padding: 4px 0 4px 12px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.06);
+    transition:
+      color 0.15s,
+      border-color 0.15s;
+    word-break: break-word;
+  }
+  .toc-link:hover {
+    color: rgba(255, 255, 255, 0.6);
+    border-left-color: rgba(255, 255, 255, 0.2);
+  }
+  .toc-link.active {
+    color: var(--text-primary, #e6edf3);
+    border-left-color: var(--accent, #2f80ed);
+  }
+  .toc-h3 .toc-link {
+    padding-left: 24px;
+    font-size: 11px;
+  }
+
+  /* ── Code Copy Button — subtly visible, full on hover ── */
+  .code-copy-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    background: rgba(13, 17, 23, 0.75);
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 11px;
+    font-family: var(--font-sans, -apple-system, sans-serif);
+    cursor: pointer;
+    z-index: 5;
+    opacity: 0.25;
+    transition:
+      opacity 0.25s ease,
+      color 0.2s,
+      border-color 0.2s,
+      background 0.2s;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    pointer-events: auto;
+    line-height: 1;
+  }
+  .copy-code-wrap:hover .code-copy-btn,
+  .code-copy-btn:hover {
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(13, 17, 23, 0.9);
+  }
+  .code-copy-btn.copied {
+    border-color: rgba(46, 160, 67, 0.5);
+    color: #3fb950;
+    opacity: 1;
+    background: rgba(13, 17, 23, 0.9);
+  }
+
+  /* ── Responsive: hide TOC on narrow viewports ── */
+  @media (max-width: 1200px) {
+    .toc-sidebar {
+      display: none !important;
+    }
+  }
+
+  /* ──────────────────────────────────────────────────────
+     Stage 22: Code Block Line Numbers (CSS Counter Gutter)
+     ────────────────────────────────────────────────────── */
+
+  /* Reset line counter on each code block */
+  pre.astro-code {
+    counter-reset: line;
+  }
+
+  /* Make code a column flex container so each .line is a flex row */
+  pre.astro-code code {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Each line is a flex row — line number (sticky) | code content */
+  pre.astro-code .line {
+    display: flex;
+    min-height: 1.4em;
+  }
+
+  /* Line number: sticky left gutter — does NOT participate in selection */
+  pre.astro-code .line::before {
+    counter-increment: line;
+    content: counter(line);
+
+    /* Sticky — locks to left edge during horizontal scroll */
+    position: sticky;
+    left: 0;
+    z-index: 2;
+
+    /* Fixed-width gutter cell */
+    flex: 0 0 auto;
+    min-width: 3.4ch;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 0.75em 0 0.5em;
+    margin-right: 0.75em;
+
+    /* Gutter background matching theme */
+    background: rgba(0, 0, 0, 0.15);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+
+    /* Muted monospace typography */
+    color: rgba(255, 255, 255, 0.25);
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    font-variant-numeric: tabular-nums;
+    line-height: inherit;
+
+    /* CRITICAL: prevent selection so only code text is copied */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* ──────────────────────────────────────────────────────
+     Stage 23: Link Preview Hover Card (glassmorphism)
+     ────────────────────────────────────────────────────── */
+
+  /* Card container — always in DOM, invisible by default */
+  #link-preview-card {
+    position: fixed;
+    z-index: 9998; /* below palette (9999) but above everything else */
+    width: 320px;
+    max-width: min(90vw, 320px);
+    padding: 14px 16px;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    pointer-events: none; /* never block clicks on the link underneath */
+    opacity: 0;
+    transform: translateY(4px);
+    transition:
+      opacity 150ms ease,
+      transform 150ms ease;
+    font-family: var(--font-sans, -apple-system, sans-serif);
+  }
+
+  /* Visible state — entrance animation */
+  #link-preview-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Title line */
+  .lpc-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary, #e6edf3);
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
+
+  /* Description line (may wrap) */
+  .lpc-desc {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.4;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  /* Category / meta label */
+  .lpc-meta {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* ──────────────────────────────────────────────────────
+     Stage 24: Keyboard Shortcut Overlay
+     ────────────────────────────────────────────────────── */
+
+  /* Fixed overlay with dark backdrop */
+  .shortcut-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9997; /* below hover card (9998) and palette (9999) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shortcut-overlay.hidden {
+    display: none;
+  }
+  .shortcut-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  /* Panel — matches Spotlight aesthetic */
+  .shortcut-panel {
+    position: relative;
+    width: 400px;
+    max-width: 92vw;
+    background: rgba(15, 15, 15, 0.85);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    box-shadow:
+      0 24px 80px rgba(0, 0, 0, 0.6),
+      0 0 0 1px rgba(255, 255, 255, 0.03);
+    animation: shortcut-enter 0.15s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+  }
+
+  @keyframes shortcut-enter {
+    from {
+      opacity: 0;
+      transform: scale(0.96) translateY(-8px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  /* Header row */
+  .shortcut-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-primary, #e6edf3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .shortcut-icon {
+    color: rgba(255, 255, 255, 0.3);
+    flex-shrink: 0;
+  }
+
+  /* Shortcut rows (CSS Grid-like via flex) */
+  .shortcut-grid {
+    padding: 8px 0;
+  }
+  .shortcut-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9px 20px;
+  }
+  .shortcut-action {
+    font-size: 14px;
+    color: var(--text-primary, #e6edf3);
+  }
+  .shortcut-keys {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+
+  /* Keycaps — raised physical depth */
+  .keycap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 28px;
+    height: 26px;
+    padding: 0 6px;
+    font-size: 12px;
+    font-family: var(--font-mono, monospace);
+    color: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.18);
+    border-radius: 5px;
+    line-height: 1;
+    box-sizing: border-box;
+  }
+  .keycap-wide {
+    min-width: 44px;
+  }
+  .keycap-sm {
+    min-width: 22px;
+    height: 20px;
+    font-size: 10px;
+    padding: 0 4px;
+    display: inline-flex;
+  }
+
+  /* Footer hint */
+  .shortcut-footer {
+    padding: 12px 20px;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.04);
+  }
+  .shortcut-footer .keycap-sm {
+    margin: 0 2px;
+  }
+
+  /* ── Page fade-in transition (View Transitions fallback) ── */
+  .app-shell {
+    animation: page-fade-in 0.4s ease-out;
+  }
+  @keyframes page-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* ── Prose Content — unified typographic engine ── */
+  .prose-content,
+  .body-content {
+    line-height: 1.7;
+    letter-spacing: 0.005em;
+    font-family: var(--font-sans);
+    color: var(--text-secondary);
+  }
+  .prose-content h2,
+  .body-content h2 {
+    font-size: clamp(1.1rem, 2vw, 1.4rem) !important;
+    letter-spacing: -0.01em;
+    line-height: 1.35;
+  }
+  .prose-content h3,
+  .body-content h3 {
+    font-size: clamp(0.95rem, 1.5vw, 1.15rem) !important;
+    letter-spacing: -0.005em;
+    line-height: 1.4;
+  }
+  .prose-content p,
+  .prose-content li,
+  .body-content p,
+  .body-content li {
+    font-size: clamp(0.85rem, 1.2vw, 0.95rem) !important;
+    line-height: 1.7;
+  }
+  .prose-content a,
+  .body-content a {
+    color: var(--accent);
+    transition: color 0.15s;
+  }
+  .prose-content a:hover,
+  .body-content a:hover {
+    color: #58a6ff;
+    text-decoration: underline;
+  }
+
+  /* ── Global text containment (overflow ellipsis) ── */
+  .card-title,
+  .section-heading,
+  .xref-label,
+  .xref-heading,
+  .page-header h1,
+  .collection-header h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+</style>

@@ -1,0 +1,223 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../components/Card.astro";
+import { getCollection } from "astro:content";
+
+const allWaits = await getCollection("wait-statistics");
+const sorted = allWaits.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+// All 8 sub-categories
+const CATEGORIES = [
+  { id: "baseline", label: "Baseline", color: "#6272a4" },
+  { id: "triage", label: "Triage", color: "#e74c3c" },
+  { id: "top-consumer", label: "Top Consumer", color: "#ff6b6b" },
+  { id: "latency", label: "Latency", color: "#f39c12" },
+  { id: "blocking", label: "Blocking", color: "#e74c3c" },
+  { id: "memory", label: "Memory", color: "#9b59b6" },
+  { id: "scheduling", label: "Scheduling", color: "#3498db" },
+  { id: "io", label: "I/O", color: "#2ecc71" },
+];
+
+const SEVERITY_COLORS = {
+  critical: "#e74c3c",
+  high: "#ff6b6b",
+  medium: "#f39c12",
+  low: "#3498db",
+  info: "#6272a4",
+};
+---
+
+<BaseLayout
+  title="Wait Statistics"
+  description="50+ wait types categorized by severity and sub-category — baseline, triage, top-consumer, latency, blocking, memory, scheduling, and I/O."
+>
+  <nav class="breadcrumb">
+    <a href="/sqlkraft/">&larr; Home</a>
+    <span class="sep">/</span>
+    <span>Wait Statistics</span>
+  </nav>
+
+  <header class="page-header">
+    <h1>Wait Statistics</h1>
+    <p class="page-desc">
+      Wait types organized across 8 diagnostic categories. Each wait type includes severity
+      classification, root cause analysis, and related troubleshooting scripts.
+    </p>
+  </header>
+
+  <!-- Category filter tabs -->
+  <div class="category-strip">
+    <button class="cat-pill active" data-cat="all" onclick="filterWaits('all')">All</button>
+    {
+      CATEGORIES.map((cat) => (
+        <button
+          class="cat-pill"
+          data-cat={cat.id}
+          style={`--cat-color: ${cat.color}`}
+          onclick={`filterWaits('${cat.id}')`}
+        >
+          {cat.label}
+        </button>
+      ))
+    }
+  </div>
+
+  <!-- Card grid -->
+  <div class="card-grid" id="waitGrid">
+    {
+      sorted.map((entry) => {
+        const { name, title, category, severity, description, tags, relatedScripts } = entry.data;
+        const color = SEVERITY_COLORS[severity] || "#6272a4";
+        return (
+          <Card href={`/sqlkraft/wait-statistics/${entry.slug}/`} data-cat={category}>
+            <div class="card-header">
+              <span class="wait-name">{name}</span>
+              <span
+                class="severity-badge"
+                style={`background: ${color}20; color: ${color}; border-color: ${color}40;`}
+              >
+                {severity}
+              </span>
+            </div>
+            <span
+              class="cat-badge"
+              style={`background: ${CATEGORIES.find((c) => c.id === category)?.color || "#6272a4"}20; color: ${CATEGORIES.find((c) => c.id === category)?.color || "#6272a4"};`}
+            >
+              {CATEGORIES.find((c) => c.id === category)?.label || category}
+            </span>
+            <p class="card-desc">{description.slice(0, 150)}</p>
+            {relatedScripts && relatedScripts.length > 0 && (
+              <span class="script-link">Diagnostic script available &rarr;</span>
+            )}
+            <div class="card-tags">
+              {tags.slice(0, 3).map((tag) => (
+                <span class="card-tag">#{tag}</span>
+              ))}
+              {tags.length > 3 && <span class="card-tag-more">+{tags.length - 3} more</span>}
+            </div>
+          </Card>
+        );
+      })
+    }
+  </div>
+</BaseLayout>
+
+<script>
+  function filterWaits(category) {
+    // Update active pill
+    document.querySelectorAll(".cat-pill").forEach((p) => p.classList.remove("active"));
+    document.querySelector(`[data-cat="${category}"]`)?.classList.add("active");
+
+    // Filter cards
+    document.querySelectorAll(".item-card").forEach((card) => {
+      if (category === "all") {
+        card.style.display = "";
+      } else {
+        card.style.display = card.dataset.cat === category ? "" : "none";
+      }
+    });
+  }
+</script>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: clamp(4px, 0.8vw, 10px);
+    font-size: clamp(11px, 1.2vw, 14px);
+    color: var(--text-secondary);
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+  }
+  .breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb .sep {
+    color: var(--border-glass);
+  }
+  .page-header {
+    margin-bottom: clamp(12px, 2.5vw, 28px);
+  }
+  .page-header h1 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .page-desc {
+    font-size: clamp(0.8rem, 1.3vw, 0.95rem);
+    color: var(--text-secondary);
+    margin-top: clamp(6px, 0.8vw, 10px);
+    max-width: min(700px, 90vw);
+    line-height: 1.6;
+  }
+
+  .category-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(6px, 0.8vw, 10px);
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+  }
+  .cat-pill {
+    padding: clamp(4px, 0.6vw, 8px) clamp(10px, 1.3vw, 16px);
+    border-radius: 20px;
+    border: 1px solid var(--border-glass);
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: clamp(11px, 1.2vw, 14px);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+  .cat-pill:hover {
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+  }
+  .cat-pill.active {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+    border-color: var(--text-secondary);
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(240px, 18vw, 320px), 1fr));
+    gap: clamp(8px, 1vw, 14px);
+  }
+
+  .wait-name {
+    font-family: var(--font-mono);
+    font-size: clamp(12px, 1.3vw, 15px);
+    font-weight: 600;
+    color: var(--text-primary);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    min-width: 0;
+  }
+  .severity-badge {
+    font-size: clamp(9px, 1vw, 11px);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: clamp(1px, 0.2vw, 3px) clamp(5px, 0.7vw, 9px);
+    border-radius: 4px;
+    border: 1px solid;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+  .cat-badge {
+    font-size: clamp(10px, 1vw, 12px);
+    font-weight: 500;
+    padding: clamp(1px, 0.2vw, 3px) clamp(6px, 0.8vw, 11px);
+    border-radius: 4px;
+    align-self: flex-start;
+  }
+
+  .script-link {
+    font-size: clamp(11px, 1.1vw, 13px);
+    color: var(--accent);
+    font-weight: 500;
+  }
+</style>

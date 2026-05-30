@@ -1,0 +1,210 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../components/Card.astro";
+import { getCollection } from "astro:content";
+
+const allRecipes = await getCollection("cookbook");
+const sorted = allRecipes.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+// Group by category
+const grouped = {};
+for (const entry of sorted) {
+  const cat = entry.data.category || "general";
+  if (!grouped[cat]) grouped[cat] = [];
+  grouped[cat].push(entry);
+}
+const categories = Object.keys(grouped).sort();
+
+// Human-readable labels
+const CATEGORY_LABELS = {
+  performance: "Performance Triage",
+  blocking: "Blocking & Concurrency",
+  memory: "Memory Management",
+  io: "I/O & Storage",
+  availability: "High Availability",
+  general: "General Troubleshooting",
+};
+
+const SEVERITY_ORDER = { critical: 0, high: 1, medium: 2, low: 3, info: 4 };
+function severityScore(s) {
+  return SEVERITY_ORDER[s] ?? 99;
+}
+---
+
+<BaseLayout
+  title="Troubleshooting Cookbook"
+  description="Cross-collection diagnostic guides linking DMVs, wait statistics, scripts, and error codes into unified troubleshooting scenarios."
+>
+  <nav class="breadcrumb">
+    <a href="/sqlkraft/">&larr; Home</a>
+    <span class="sep">/</span>
+    <span>Cookbook</span>
+  </nav>
+
+  <header class="page-header">
+    <h1>Troubleshooting Cookbook</h1>
+    <p class="page-desc">
+      Scenario-based diagnostic guides that cross-reference DMVs, wait statistics, T-SQL scripts,
+      and error codes into unified troubleshooting workflows. Each recipe walks through a common
+      database emergency from symptom identification through resolution.
+    </p>
+  </header>
+
+  <!-- Category jump nav -->
+  <nav class="section-jump">
+    {
+      categories.map((cat) => (
+        <a href={`#cat-${cat}`} class="jump-link">
+          {CATEGORY_LABELS[cat] || cat}
+        </a>
+      ))
+    }
+  </nav>
+
+  <!-- Sectioned card grids -->
+  {
+    categories.map((cat) => (
+      <section id={`cat-${cat}`} class="category-section">
+        <h2 class="section-heading">{CATEGORY_LABELS[cat] || cat}</h2>
+        <div class="card-grid">
+          {grouped[cat]
+            .sort((a, b) => severityScore(a.data.severity) - severityScore(b.data.severity))
+            .map((entry) => {
+              const { name, description, severity, tags } = entry.data;
+              const sev = severity || "medium";
+              return (
+                <Card href={`/sqlkraft/cookbook/${entry.slug}/`}>
+                  <span slot="title">{name}</span>
+                  <span slot="meta" class={`sev-badge sev-${sev}`}>
+                    {sev}
+                  </span>
+                  <p slot="description">{description || "No description available."}</p>
+                  <div slot="tags">
+                    {tags.slice(0, 3).map((tag) => (
+                      <span class="card-tag">#{tag}</span>
+                    ))}
+                    {tags.length > 3 && <span class="card-tag-more">+{tags.length - 3} more</span>}
+                  </div>
+                </Card>
+              );
+            })}
+        </div>
+      </section>
+    ))
+  }
+</BaseLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: clamp(4px, 0.8vw, 10px);
+    font-size: clamp(11px, 1.2vw, 14px);
+    color: var(--text-secondary);
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+  }
+  .breadcrumb a {
+    color: var(--text-secondary);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb .sep {
+    color: var(--border-glass);
+  }
+  .page-header {
+    margin-bottom: clamp(12px, 2.5vw, 28px);
+  }
+  .page-header h1 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: var(--space-xs);
+  }
+  .page-desc {
+    font-size: clamp(0.85rem, 1.3vw, 1rem);
+    color: var(--text-secondary);
+    line-height: 1.7;
+    max-width: 800px;
+  }
+
+  /* ── Section jump nav ── */
+  .section-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(4px, 0.6vw, 8px);
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+  }
+  .jump-link {
+    font-size: clamp(11px, 1vw, 13px);
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.06);
+    padding: clamp(3px, 0.4vw, 6px) clamp(8px, 1vw, 14px);
+    border-radius: 14px;
+    text-decoration: none;
+    transition:
+      background 0.2s,
+      color 0.2s;
+    text-transform: capitalize;
+  }
+  .jump-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+
+  /* ── Category sections ── */
+  .category-section {
+    scroll-margin-top: 72px;
+  }
+  .section-heading {
+    font-size: clamp(1.1rem, 1.8vw, 1.3rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+    padding-bottom: clamp(4px, 0.5vw, 8px);
+    border-bottom: 1px solid var(--border-glass);
+    text-transform: capitalize;
+  }
+
+  /* ── Card grid ── */
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(240px, 18vw, 320px), 1fr));
+    gap: clamp(8px, 1vw, 14px);
+    margin-bottom: clamp(20px, 3vw, 40px);
+  }
+
+  /* ── Severity badges ── */
+  .sev-badge {
+    font-size: clamp(9px, 0.9vw, 11px);
+    font-weight: 600;
+    padding: 2px 7px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    flex-shrink: 0;
+  }
+  .sev-critical {
+    color: #f85149;
+    background: rgba(248, 81, 73, 0.12);
+  }
+  .sev-high {
+    color: #d29922;
+    background: rgba(210, 153, 34, 0.12);
+  }
+  .sev-medium {
+    color: #8b949e;
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .sev-low {
+    color: #8b949e;
+    background: rgba(255, 255, 255, 0.04);
+    opacity: 0.7;
+  }
+  .sev-info {
+    color: #58a6ff;
+    background: rgba(88, 166, 255, 0.08);
+  }
+</style>

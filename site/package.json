@@ -1,0 +1,23 @@
+{
+  "name": "sqlkraft",
+  "version": "0.36.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/generate-palette-index.js && node -e \"fs.copyFileSync('src/data/search-index.json','public/data/search-index.json');fs.copyFileSync('src/data/palette-index.json','public/data/palette-index.json')\"",
+    "dev": "astro dev",
+    "prebuild": "node ../scripts/audit-content.js && node scripts/generate-palette-index.js && node -e \"fs.copyFileSync('src/data/search-index.json','public/data/search-index.json');fs.copyFileSync('src/data/palette-index.json','public/data/palette-index.json')\"",
+    "build": "astro build",
+    "preview": "astro preview",
+    "lint": "prettier --check \"src/**/*.{astro,ts}\"",
+    "format": "prettier --write \"src/**/*.{astro,ts}\""
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.3",
+    "astro": "^5.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.5.0",
+    "prettier-plugin-astro": "^0.14.0"
+  }
+}
