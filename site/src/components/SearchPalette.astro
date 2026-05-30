@@ -1,0 +1,507 @@
+---
+// SearchPalette — High-Fidelity macOS Spotlight (v5)
+// Pure Vanilla JS. No third-party dependencies.
+// Keyboard: Cmd+K / Ctrl+K to open, Esc to close
+// ArrowUp/Down to navigate, Enter to select
+// Design: macOS Spotlight aesthetic — uses CardPalette.astro for result cards
+
+import CardPalette from "./CardPalette.astro";
+
+const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "");
+---
+
+<CardPalette />
+<div
+  id="palette-overlay"
+  class="palette-overlay hidden"
+  role="dialog"
+  aria-label="Command palette"
+  data-base-url={BASE_PATH}
+>
+  <div class="palette-backdrop"></div>
+  <div class="palette-panel">
+    <div class="palette-input-wrap">
+      <svg
+        class="palette-search-icon"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+      >
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.35-4.35"></path>
+      </svg>
+      <input
+        type="text"
+        id="palette-input"
+        class="palette-input"
+        placeholder="Search DMVs, Waits, Scripts..."
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <kbd class="palette-hint">ESC</kbd>
+    </div>
+    <div id="palette-results" class="palette-results" style="display:none"></div>
+  </div>
+</div>
+
+<script is:inline data-astro-rerun>
+  (function () {
+    "use strict";
+
+    /* ── Clean up any previous document-level listener from prior navigation ── */
+    if (window.__searchPaletteCleanup) {
+      window.__searchPaletteCleanup();
+    }
+
+    /* ── Wait for DOM before querying elements ── */
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", initSearchPalette);
+    } else {
+      initSearchPalette();
+    }
+
+    function initSearchPalette() {
+      /* ── DOM refs ── */
+      var overlay = document.getElementById("palette-overlay");
+      var input = document.getElementById("palette-input");
+      var results = document.getElementById("palette-results");
+      if (!overlay || !input || !results) return;
+
+      /* ── Base URL injected from Astro frontmatter ── */
+      var baseUrl = overlay.getAttribute("data-base-url") || "";
+
+      /* ── Mac detection ── */
+      if (navigator.platform.includes("Mac")) {
+        input.placeholder = "Search DMVs, Waits, Scripts...  (\u2318K)";
+      }
+
+      /* ── State ── */
+      var index = [];
+      var activeIdx = -1;
+      var resultItems = [];
+
+      /* ── Load palette index ── */
+      fetch(baseUrl + "/data/palette-index.json")
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (data) {
+          index = data;
+          window.__paletteIndex = data;
+        })
+        .catch(function () {});
+
+      /* ── Fuzzy match scorer ── */
+      function fuzzyScore(query, text) {
+        var q = query.toLowerCase();
+        var t = text.toLowerCase();
+        if (!q || !t) return -1;
+
+        var qi = 0;
+        var score = 0;
+        var prevIdx = -10;
+        var firstIdx = -1;
+
+        for (var ti = 0; ti < t.length && qi < q.length; ti++) {
+          if (t[ti] === q[qi]) {
+            if (ti === prevIdx + 1) score += 8;
+            else score += 2;
+
+            var before = ti === 0 ? " " : t[ti - 1];
+            if (
+              before === " " ||
+              before === "_" ||
+              before === "." ||
+              before === "-" ||
+              before === "/"
+            ) {
+              score += 5;
+            }
+
+            if (qi === 0) firstIdx = ti;
+            prevIdx = ti;
+            qi++;
+          }
+        }
+
+        if (qi < q.length) return -1;
+
+        if (firstIdx === 0) score += 15;
+        else if (firstIdx <= 2) score += 10;
+        else score += Math.max(0, 8 - firstIdx);
+
+        return score;
+      }
+
+      /* ── Search across index ── */
+      function search(query, items) {
+        if (query.length < 2) return [];
+        var hits = [];
+        for (var si = 0; si < items.length; si++) {
+          var item = items[si];
+          var tScore = fuzzyScore(query, item.t);
+          var dScore = fuzzyScore(query, item.d);
+          var cScore = fuzzyScore(query, item.c);
+          var best = Math.max(tScore, dScore * 0.5, cScore * 0.4);
+          if (best > 0) {
+            hits.push({ item: item, score: best });
+          }
+        }
+        hits.sort(function (a, b) {
+          return b.score - a.score;
+        });
+        return hits.slice(0, 28);
+      }
+
+      /* ── Render results as macOS Spotlight-style <ul>/<li> using __renderCard ── */
+      function render(hits) {
+        if (hits.length === 0) {
+          results.style.display = "none";
+          resultItems = [];
+          activeIdx = -1;
+          return;
+        }
+
+        results.style.display = "";
+
+        var groups = {};
+        for (var ri = 0; ri < hits.length; ri++) {
+          var h = hits[ri];
+          var cat = h.item.c || "other";
+          if (!groups[cat]) groups[cat] = [];
+          groups[cat].push(h);
+        }
+
+        var catOrder = [
+          "dmvs",
+          "wait-statistics",
+          "scripts",
+          "cookbook",
+          "catalog-views",
+          "stored-procedures",
+          "functions",
+          "tsql-reference",
+          "errors",
+          "architecture",
+          "operations",
+        ];
+
+        /* ── Simple badge label (matching CardPalette labels) ── */
+        function badgeLabel(cat) {
+          var labels = {
+            dmvs: "DMVs",
+            "wait-statistics": "Waits",
+            scripts: "Scripts",
+            cookbook: "Recipes",
+            "catalog-views": "Catalog",
+            "stored-procedures": "SPs",
+            functions: "Functions",
+            "tsql-reference": "T-SQL",
+            errors: "Errors",
+            architecture: "Arch",
+            operations: "Ops",
+            xevents: "XEvents",
+          };
+          return (
+            labels[cat] ||
+            cat.replace(/-/g, " ").replace(/\b\w/g, function (c) {
+              return c.toUpperCase();
+            })
+          );
+        }
+
+        var html = '<ul class="palette-list">';
+
+        function appendGroup(key, group) {
+          html += '<li class="palette-cat-header" role="separator">' + badgeLabel(key) + "</li>";
+          for (var gj = 0; gj < group.length; gj++) {
+            var gItem = group[gj];
+            html +=
+              '<li class="palette-item" style="animation-delay:' +
+              gj * 20 +
+              'ms">' +
+              window.__renderCard(gItem.item, baseUrl) +
+              "</li>";
+          }
+        }
+
+        for (var ck = 0; ck < catOrder.length; ck++) {
+          var key = catOrder[ck];
+          if (groups[key]) {
+            appendGroup(key, groups[key]);
+            delete groups[key];
+          }
+        }
+        for (var catKey in groups) {
+          if (groups.hasOwnProperty(catKey)) {
+            appendGroup(catKey, groups[catKey]);
+          }
+        }
+
+        html += "</ul>";
+        results.innerHTML = html;
+        resultItems = [].slice.call(results.querySelectorAll(".palette-item"));
+        activeIdx = -1;
+      }
+
+      /* ── Keyboard selection highlight ── */
+      function updateActive() {
+        for (var ui = 0; ui < resultItems.length; ui++) {
+          resultItems[ui].classList.remove("active");
+          var link = resultItems[ui].querySelector("a");
+          if (link) link.classList.remove("active");
+        }
+        if (activeIdx >= 0 && activeIdx < resultItems.length) {
+          resultItems[activeIdx].classList.add("active");
+          var activeLink = resultItems[activeIdx].querySelector("a");
+          if (activeLink) activeLink.classList.add("active");
+          resultItems[activeIdx].scrollIntoView({ block: "nearest" });
+        }
+      }
+
+      /* ── Open palette ── */
+      function openPalette() {
+        overlay.classList.remove("hidden");
+        input.value = "";
+        results.style.display = "none";
+        resultItems = [];
+        activeIdx = -1;
+        requestAnimationFrame(function () {
+          input.focus();
+        });
+      }
+
+      /* ── Close palette ── */
+      function closePalette() {
+        overlay.classList.add("hidden");
+        input.blur();
+        activeIdx = -1;
+        resultItems = [];
+      }
+
+      /* ── Keydown handler (named for cleanup) ── */
+      function keydownHandler(e) {
+        if ((e.ctrlKey || e.metaKey) && (e.key === "k" || e.key === "K")) {
+          e.preventDefault();
+          if (overlay.classList.contains("hidden")) {
+            openPalette();
+          } else {
+            closePalette();
+          }
+        }
+        if (e.key === "Escape" && !overlay.classList.contains("hidden")) {
+          e.preventDefault();
+          closePalette();
+        }
+      }
+
+      document.addEventListener("keydown", keydownHandler);
+
+      /* ── Register cleanup for next navigation ── */
+      window.__searchPaletteCleanup = function () {
+        document.removeEventListener("keydown", keydownHandler);
+      };
+
+      /* ── Click backdrop to close ── */
+      var backdrop = overlay.querySelector(".palette-backdrop");
+      if (backdrop) backdrop.addEventListener("click", closePalette);
+
+      /* ── Input keyboard: ArrowUp/Down/Enter ── */
+      input.addEventListener("keydown", function (e) {
+        if (resultItems.length === 0) return;
+
+        if (e.key === "ArrowDown") {
+          e.preventDefault();
+          if (activeIdx < resultItems.length - 1) activeIdx++;
+          updateActive();
+        } else if (e.key === "ArrowUp") {
+          e.preventDefault();
+          if (activeIdx > 0) {
+            activeIdx--;
+          } else if (activeIdx === 0) {
+            activeIdx = -1;
+          }
+          updateActive();
+        } else if (e.key === "Enter") {
+          e.preventDefault();
+          if (activeIdx >= 0 && activeIdx < resultItems.length) {
+            var enterLink = resultItems[activeIdx].querySelector("a");
+            if (enterLink && enterLink.getAttribute("href"))
+              window.location.href = enterLink.getAttribute("href");
+          }
+        }
+      });
+
+      /* ── Real-time search on input ── */
+      var searchTimer = null;
+      input.addEventListener("input", function () {
+        clearTimeout(searchTimer);
+        searchTimer = setTimeout(function () {
+          var q = input.value.trim();
+          if (q.length < 2 || index.length === 0) {
+            results.style.display = "none";
+            resultItems = [];
+            activeIdx = -1;
+            return;
+          }
+          var hits = search(q, index);
+          render(hits);
+        }, 120);
+      });
+
+      /* ── Click any result to navigate ── */
+      results.addEventListener("click", function (e) {
+        var link = e.target.closest("a.item-card");
+        if (link) {
+          var href = link.getAttribute("href");
+          if (href) window.location.href = href;
+        }
+      });
+
+      /* ── Wire up navbar search button ── */
+      var searchBtn = document.getElementById("search-btn");
+      if (searchBtn) {
+        searchBtn.addEventListener("click", function () {
+          openPalette();
+        });
+      }
+
+      /* ── Expose openPalette for external triggers ── */
+      window.__openPalette = openPalette;
+    }
+  })();
+</script>
+
+<style>
+  /* ── Overlay (glassmorphism backdrop) ── */
+  .palette-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 12vh;
+  }
+  .palette-overlay.hidden {
+    display: none;
+  }
+
+  .palette-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  /* ── Panel — macOS Spotlight glass ── */
+  .palette-panel {
+    position: relative;
+    width: 680px;
+    max-width: 92vw;
+    max-height: 65vh;
+    background: rgba(22, 22, 22, 0.82);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow:
+      0 20px 60px rgba(0, 0, 0, 0.5),
+      0 0 0 1px rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    animation: palette-enter 0.25s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  }
+
+  @keyframes palette-enter {
+    from {
+      opacity: 0;
+      transform: scale(0.95) translateY(-12px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  /* ── Input row — clean, no chrome ── */
+  .palette-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .palette-search-icon {
+    color: rgba(255, 255, 255, 0.25);
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+  }
+  .palette-input {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: var(--text-primary, #e6edf3);
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+    caret-color: var(--accent, #2f80ed);
+  }
+  .palette-input::placeholder {
+    color: rgba(255, 255, 255, 0.2);
+  }
+  .palette-input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+  /* ── Input focus glow ring ── */
+  .palette-input-wrap:focus-within {
+    box-shadow:
+      inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+      0 0 20px rgba(47, 128, 237, 0.06);
+    border-radius: 0;
+    transition: box-shadow 0.25s ease;
+  }
+  .palette-hint {
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.06);
+    color: rgba(255, 255, 255, 0.3);
+    font-family: var(--font-mono, monospace);
+    flex-shrink: 0;
+    line-height: 1.4;
+  }
+
+  /* ── Results container ── */
+  .palette-results {
+    overflow-y: auto;
+    overflow-x: hidden;
+    flex: 1;
+    padding: 4px 0;
+    scroll-behavior: smooth;
+    border-radius: 16px;
+  }
+  .palette-results::-webkit-scrollbar {
+    width: 6px;
+  }
+  .palette-results::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .palette-results::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
+  }
+</style>

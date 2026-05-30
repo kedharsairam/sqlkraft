@@ -1,0 +1,146 @@
+---
+// Card — Unified card shell component
+//
+// Single source of truth for card-level CSS across all collection
+// index pages and the search palette.
+//
+// USAGE (named slots — standard cards):
+//   <Card href="/sqlkraft/dmvs/sys-dm-exec-requests/">
+//     <span slot="title">{name}</span>
+//     <span slot="meta" class="return-badge">{returnType}</span>
+//     <p slot="description">{description}</p>
+//     <div slot="tags">
+//       <span class="card-tag">#tag1</span>
+//       <span class="card-tag">#tag2</span>
+//     </div>
+//   </Card>
+//
+// USAGE (default slot — complex cards with extra elements):
+//   <Card href="/sqlkraft/wait-statistics/async_network_io/">
+//     <div class="card-header">
+//       <span class="card-title">{name}</span>
+//       <span class="card-meta">{severity}</span>
+//     </div>
+//     ... custom content ...
+//     <div class="card-tags">...</div>
+//   </Card>
+
+export interface Props {
+  href: string;
+  "data-cat"?: string;
+}
+
+const { href, "data-cat": dataCat } = Astro.props;
+const hasTitle = Astro.slots.has("title");
+const extraAttrs: Record<string, string> = {};
+if (dataCat !== undefined) extraAttrs["data-cat"] = dataCat;
+---
+
+<a href={href} class="item-card" {...extraAttrs}>
+  {
+    hasTitle ? (
+      <>
+        <div class="card-header">
+          <span class="card-title">
+            <slot name="title" />
+          </span>
+          {Astro.slots.has("meta") && <slot name="meta" />}
+        </div>
+        {Astro.slots.has("description") && (
+          <p class="card-desc">
+            <slot name="description" />
+          </p>
+        )}
+        {Astro.slots.has("tags") && (
+          <div class="card-tags">
+            <slot name="tags" />
+          </div>
+        )}
+      </>
+    ) : (
+      <slot />
+    )
+  }
+</a>
+
+<style is:global>
+  /* ════════════════════════════════════════════════
+     UNIFIED CARD SHELL — single source of truth
+     ════════════════════════════════════════════════ */
+
+  .item-card {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(4px, 0.6vw, 8px);
+    padding: clamp(12px, 1.5vw, 22px);
+    border: 1px solid var(--border-glass);
+    border-radius: clamp(6px, 0.8vw, 10px);
+    background: var(--bg-secondary);
+    text-decoration: none;
+    color: inherit;
+    min-width: 0;
+    transition:
+      border-color 0.2s,
+      transform 0.2s;
+  }
+  .item-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: clamp(4px, 0.8vw, 10px);
+    min-width: 0;
+  }
+
+  .card-title {
+    font-family: var(--font-mono);
+    font-size: clamp(11px, 1.2vw, 14px);
+    font-weight: 600;
+    color: var(--text-primary);
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    min-width: 0;
+  }
+
+  .card-meta {
+    flex-shrink: 0;
+  }
+
+  .card-desc {
+    font-size: clamp(11px, 1.1vw, 13px);
+    color: var(--text-secondary);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(3px, 0.4vw, 6px);
+    margin-top: auto;
+  }
+
+  .card-tag {
+    font-size: clamp(10px, 1vw, 12px);
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.05);
+    padding: clamp(1px, 0.2vw, 3px) clamp(5px, 0.7vw, 9px);
+    border-radius: 4px;
+    font-family: var(--font-mono);
+  }
+
+  .card-tag-more {
+    font-size: clamp(10px, 1vw, 12px);
+    color: var(--text-secondary);
+    opacity: 0.7;
+  }
+</style>

@@ -1,0 +1,409 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="SqlKraft"
+  description="Enterprise SQL Server reference hub — DMVs, wait statistics, T-SQL reference, system catalog views, and architecture documentation."
+>
+  <!-- ──────────────── Background canvas ──────────────── -->
+  <div class="bg-canvas" aria-hidden="true"></div>
+
+  <!-- ──────────────── Hero ──────────────── -->
+  <section class="hero">
+    <h1>SqlKraft.</h1>
+    <p class="tagline">Enterprise SQL Server Reference Hub</p>
+    <p class="subtitle">Curated high-performance static encyclopedia for the DBA community.</p>
+  </section>
+
+  <!-- ──────────────── Directory Matrix ──────────────── -->
+  <section class="matrix-grid">
+    <a href="/sqlkraft/dmvs/" class="matrix-card">
+      <div class="matrix-card-header">
+        <svg class="matrix-icon" viewBox="0 0 20 20" fill="none">
+          <rect x="2" y="3" width="16" height="14" rx="2" stroke="currentColor" stroke-width="1.3"
+          ></rect>
+          <path
+            d="M6 7h8M6 10h8M6 13h5"
+            stroke="currentColor"
+            stroke-width="1.2"
+            stroke-linecap="round"></path>
+        </svg>
+        <div class="matrix-title-row">
+          <h3 class="matrix-title">DMV Directory</h3>
+        </div>
+      </div>
+      <p class="matrix-desc">
+        Dynamic management views across execution, I/O, memory, indexing, transactions, and OS
+        internals.
+      </p>
+      <div class="matrix-graph" aria-hidden="true">
+        <svg viewBox="0 0 140 48" fill="none">
+          <rect x="0" y="0" width="140" height="10" rx="2" fill="rgba(255,255,255,0.07)"></rect>
+          <rect x="0" y="14" width="110" height="3" rx="1.5" fill="rgba(255,255,255,0.04)"></rect>
+          <rect x="0" y="21" width="130" height="3" rx="1.5" fill="rgba(255,255,255,0.03)"></rect>
+          <rect x="0" y="28" width="90" height="3" rx="1.5" fill="rgba(255,255,255,0.03)"></rect>
+          <rect x="0" y="35" width="120" height="3" rx="1.5" fill="rgba(255,255,255,0.03)"></rect>
+          <rect x="0" y="42" width="70" height="3" rx="1.5" fill="rgba(255,255,255,0.03)"></rect>
+        </svg>
+      </div>
+    </a>
+
+    <a href="/sqlkraft/wait-statistics/" class="matrix-card">
+      <div class="matrix-card-header">
+        <svg class="matrix-icon" viewBox="0 0 20 20" fill="none">
+          <polyline
+            points="1,15 4,14 7,12 10,8 13,9 16,11 19,12"
+            stroke="currentColor"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"></polyline>
+        </svg>
+        <div class="matrix-title-row">
+          <h3 class="matrix-title">Wait Statistics</h3>
+        </div>
+      </div>
+      <p class="matrix-desc">
+        Wait types categorized by severity — baseline, triage, top-consumer, blocking, and
+        high-signal.
+      </p>
+      <div class="matrix-graph" aria-hidden="true">
+        <svg viewBox="0 0 140 48" fill="none">
+          <path
+            d="M0 44 Q10 42 20 40 Q30 38 35 18 Q38 28 50 32 Q65 38 80 34 Q95 30 105 32 Q120 36 140 38"
+            stroke="rgba(255,255,255,0.25)"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            fill="none"></path>
+          <path
+            d="M0 44 Q10 42 20 40 Q30 38 35 18 Q38 28 50 32"
+            stroke="rgba(255,255,255,0.6)"
+            stroke-width="2"
+            stroke-linecap="round"
+            fill="none"></path>
+        </svg>
+      </div>
+    </a>
+
+    <a href="/sqlkraft/scripts/" class="matrix-card">
+      <div class="matrix-card-header">
+        <svg class="matrix-icon" viewBox="0 0 20 20" fill="none">
+          <path
+            d="M5 15l4-4-4-4M11 16h4"
+            stroke="currentColor"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <div class="matrix-title-row">
+          <h3 class="matrix-title">T-SQL Scripts</h3>
+        </div>
+      </div>
+      <p class="matrix-desc">
+        Curated diagnostic and administrative scripts — indexing, performance, security,
+        backup-restore, and HA.
+      </p>
+      <div class="matrix-graph" aria-hidden="true">
+        <svg viewBox="0 0 140 48" fill="none">
+          <rect
+            x="0"
+            y="2"
+            width="140"
+            height="44"
+            rx="4"
+            stroke="rgba(255,255,255,0.06)"
+            stroke-width="1"
+            fill="rgba(255,255,255,0.02)"></rect>
+          <rect x="16" y="12" width="50" height="2.5" rx="1.25" fill="rgba(255,255,255,0.14)"
+          ></rect>
+          <rect x="16" y="19" width="80" height="2.5" rx="1.25" fill="rgba(255,255,255,0.09)"
+          ></rect>
+          <rect x="16" y="26" width="40" height="2.5" rx="1.25" fill="rgba(255,255,255,0.07)"
+          ></rect>
+          <rect x="16" y="33" width="65" height="2.5" rx="1.25" fill="rgba(255,255,255,0.07)"
+          ></rect>
+          <circle cx="8" cy="12" r="2.5" fill="rgba(255,255,255,0.1)"></circle>
+          <circle cx="8" cy="26" r="2.5" fill="rgba(255,255,255,0.1)"></circle>
+          <circle cx="8" cy="33" r="2.5" fill="rgba(255,255,255,0.1)"></circle>
+        </svg>
+      </div>
+    </a>
+
+    <a href="/sqlkraft/cookbook/" class="matrix-card">
+      <div class="matrix-card-header">
+        <svg class="matrix-icon" viewBox="0 0 20 20" fill="none">
+          <rect x="3" y="2" width="14" height="16" rx="2" stroke="currentColor" stroke-width="1.3"
+          ></rect>
+          <path
+            d="M7 8l2 2 4-4"
+            stroke="currentColor"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <div class="matrix-title-row">
+          <h3 class="matrix-title">Troubleshooting Cookbook</h3>
+        </div>
+      </div>
+      <p class="matrix-desc">
+        Scenario-based troubleshooting guides linking DMVs, waits, scripts, and errors into
+        diagnostic paths.
+      </p>
+      <div class="matrix-graph" aria-hidden="true">
+        <svg viewBox="0 0 140 48" fill="none">
+          <rect x="0" y="0" width="38" height="20" rx="3" fill="rgba(255,100,100,0.12)"></rect>
+          <text x="5" y="14" fill="rgba(255,255,255,0.3)" font-size="8" font-family="system-ui"
+            >CPU</text
+          >
+          <rect x="46" y="0" width="42" height="20" rx="3" fill="rgba(255,180,50,0.1)"></rect>
+          <text x="51" y="14" fill="rgba(255,255,255,0.3)" font-size="8" font-family="system-ui"
+            >MEM</text
+          >
+          <rect x="96" y="0" width="44" height="20" rx="3" fill="rgba(100,200,100,0.08)"></rect>
+          <text x="101" y="14" fill="rgba(255,255,255,0.3)" font-size="8" font-family="system-ui"
+            >LCK</text
+          >
+          <rect x="0" y="28" width="60" height="8" rx="2" fill="rgba(255,255,255,0.04)"></rect>
+          <rect x="68" y="28" width="72" height="8" rx="2" fill="rgba(255,255,255,0.04)"></rect>
+          <rect x="0" y="40" width="45" height="8" rx="2" fill="rgba(255,255,255,0.04)"></rect>
+          <rect x="53" y="40" width="87" height="8" rx="2" fill="rgba(255,255,255,0.04)"></rect>
+        </svg>
+      </div>
+    </a>
+
+    <a href="/sqlkraft/xevents/" class="matrix-card">
+      <div class="matrix-card-header">
+        <svg class="matrix-icon" viewBox="0 0 20 20" fill="none">
+          <path
+            d="M3 17L9 3l4 14 4-14"
+            stroke="currentColor"
+            stroke-width="1.3"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <div class="matrix-title-row">
+          <h3 class="matrix-title">Extended Events</h3>
+        </div>
+      </div>
+      <p class="matrix-desc">
+        Event-driven diagnostics pipeline — system_health session, deadlock graph capture, query
+        performance tracking, and wait statistics with zero polling overhead.
+      </p>
+      <div class="matrix-graph" aria-hidden="true">
+        <svg viewBox="0 0 140 48" fill="none">
+          <rect x="0" y="0" width="140" height="44" rx="4" fill="rgba(0,0,0,0.2)"></rect>
+          <circle cx="12" cy="12" r="3" fill="rgba(255,100,100,0.5)"></circle>
+          <rect x="22" y="9" width="40" height="2" rx="1" fill="rgba(255,255,255,0.12)"></rect>
+          <rect x="22" y="15" width="30" height="2" rx="1" fill="rgba(255,255,255,0.08)"></rect>
+          <circle cx="12" cy="24" r="3" fill="rgba(100,200,255,0.5)"></circle>
+          <rect x="22" y="21" width="50" height="2" rx="1" fill="rgba(255,255,255,0.12)"></rect>
+          <rect x="22" y="27" width="35" height="2" rx="1" fill="rgba(255,255,255,0.08)"></rect>
+          <circle cx="12" cy="36" r="3" fill="rgba(100,255,150,0.5)"></circle>
+          <rect x="22" y="33" width="45" height="2" rx="1" fill="rgba(255,255,255,0.12)"></rect>
+          <rect x="22" y="39" width="25" height="2" rx="1" fill="rgba(255,255,255,0.08)"></rect>
+        </svg>
+      </div>
+    </a>
+  </section>
+
+  <!-- ──────────────── Secondary Links ──────────────── -->
+  <section class="secondary-links">
+    <a href="/sqlkraft/catalog-views/" class="sec-link">Catalog Views</a>
+    <a href="/sqlkraft/functions/" class="sec-link">System Functions</a>
+    <a href="/sqlkraft/tsql-reference/" class="sec-link">T-SQL Reference</a>
+    <a href="/sqlkraft/errors/" class="sec-link">Error Codes</a>
+    <a href="/sqlkraft/architecture/" class="sec-link">Architecture</a>
+    <a href="/sqlkraft/stored-procedures/" class="sec-link">Stored Procedures</a>
+    <a href="/sqlkraft/operations/" class="sec-link">Operations</a>
+  </section>
+
+  <footer class="footer">
+    <p>SqlKraft — Curated enterprise DBA reference.</p>
+    <p>
+      Open source. MIT licensed.
+      <a href="https://github.com/kedharsairam/sqlkraft">GitHub</a>
+    </p>
+  </footer>
+</BaseLayout>
+
+<style>
+  /* ============================
+     SUB-SURFACE BACKGROUND DEPTH
+  ============================ */
+  .bg-canvas {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background-image:
+      radial-gradient(ellipse 60% 40% at 50% 30%, rgba(255, 255, 255, 0.025), transparent),
+      linear-gradient(rgba(255, 255, 255, 0.006) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.006) 1px, transparent 1px);
+    background-size:
+      100% 100%,
+      48px 48px,
+      48px 48px;
+  }
+
+  /* ============================
+     HERO — centered, typography-first
+  ============================ */
+  .hero {
+    text-align: left;
+    padding: 0;
+    margin-bottom: clamp(3.5rem, 6vw, 6rem);
+  }
+  .hero h1 {
+    font-size: clamp(2.25rem, 5vw, 4.5rem);
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+  }
+  .tagline {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    color: var(--text-primary);
+    margin-top: clamp(4px, 0.6vw, 8px);
+    font-weight: 500;
+  }
+  .subtitle {
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    color: var(--text-secondary);
+    max-width: min(55ch, 90vw);
+    margin-top: clamp(8px, 1vw, 14px);
+    line-height: 1.7;
+  }
+
+  /* ============================
+     MATRIX GRID
+  ============================ */
+  .matrix-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(1rem, 1.5vw, 1.5rem);
+    margin-top: 0;
+  }
+
+  .matrix-card {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(1.5rem, 2vw, 2rem);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: clamp(12px, 1.4vw, 18px);
+    background: var(--bg-secondary);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    isolation: isolate;
+  }
+  .matrix-card:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    transform: translateY(-4px);
+  }
+
+  .matrix-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(10px, 0.9vw, 14px);
+    margin-bottom: clamp(10px, 0.9vw, 14px);
+  }
+  .matrix-icon {
+    width: clamp(20px, 1.8vw, 26px);
+    height: clamp(20px, 1.8vw, 26px);
+    color: var(--text-secondary);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .matrix-title-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: clamp(6px, 0.6vw, 10px);
+  }
+  .matrix-title {
+    font-size: clamp(16px, 1.3vw, 19px);
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.3;
+  }
+  .matrix-desc {
+    font-size: clamp(12px, 0.95vw, 13.5px);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: auto;
+  }
+  .matrix-graph {
+    margin-top: clamp(14px, 1.4vw, 20px);
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+  }
+  .matrix-graph svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* ============================
+     SECONDARY LINKS
+  ============================ */
+  .secondary-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(6px, 0.6vw, 10px);
+    margin-top: clamp(1.5rem, 3vw, 2.5rem);
+  }
+  .sec-link {
+    padding: clamp(6px, 0.5vw, 8px) clamp(12px, 1vw, 18px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    font-size: clamp(11px, 0.85vw, 13px);
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    white-space: nowrap;
+  }
+  .sec-link:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+
+  /* ============================
+     FOOTER
+  ============================ */
+  .footer {
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+    padding-top: clamp(16px, 2vw, 26px);
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    color: var(--text-secondary);
+    font-size: clamp(11px, 1.2vw, 13px);
+    line-height: 1.8;
+  }
+  .footer a {
+    color: var(--text-secondary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .footer a:hover {
+    color: var(--text-primary);
+  }
+
+  /* ============================
+     RESPONSIVE
+  ============================ */
+  @media (max-width: 900px) {
+    .matrix-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 540px) {
+    .matrix-grid {
+      grid-template-columns: 1fr;
+    }
+    .secondary-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

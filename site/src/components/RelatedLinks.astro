@@ -1,0 +1,196 @@
+---
+/**
+ * RelatedLinks.astro
+ *
+ * Reusable glassmorphism component that resolves a flat array of
+ * `collection/slug` references into rich link cards with titles
+ * and descriptions fetched from the content collections at build time.
+ *
+ * Usage in frontmatter:
+ *   related:
+ *     - xevents/deadlock-graph-capture
+ *     - dmvs/sys-dm-exec-requests
+ *
+ * Then in the template:
+ *   <RelatedLinks related={related} />
+ */
+
+import { getEntry } from "astro:content";
+
+export interface Props {
+  related?: string[];
+}
+
+const { related } = Astro.props;
+
+interface ResolvedLink {
+  href: string;
+  title: string;
+  description: string;
+  collection: string;
+  slug: string;
+}
+
+const COLLECTION_LABELS: Record<string, string> = {
+  dmvs: "DMV",
+  "wait-statistics": "Wait",
+  scripts: "Script",
+  errors: "Error",
+  xevents: "XEvent",
+  architecture: "Arch",
+  operations: "Ops",
+  functions: "Function",
+  "stored-procedures": "SP",
+  "catalog-views": "Catalog",
+  "tsql-reference": "TSQL",
+  cookbook: "Guide",
+};
+
+const resolvedLinks: ResolvedLink[] = related
+  ? await Promise.all(
+      related.map(async (ref) => {
+        const parts = ref.split("/");
+        const collection = parts[0];
+        const slug = parts.slice(1).join("/");
+        const label = COLLECTION_LABELS[collection] || collection;
+
+        try {
+          const entry = await getEntry(collection, slug);
+          if (entry) {
+            return {
+              href: `/sqlkraft/${collection}/${slug}/`,
+              title: entry.data.title || entry.data.name || slug,
+              description: (entry.data.description || "").slice(0, 120),
+              collection,
+              slug,
+            };
+          }
+        } catch {
+          // Entry not found — still render a fallback link
+        }
+
+        return {
+          href: `/sqlkraft/${collection}/${slug}/`,
+          title: slug.replace(/-/g, " ").replace(/_/g, " "),
+          description: "",
+          collection,
+          slug,
+        };
+      }),
+    )
+  : [];
+---
+
+{
+  resolvedLinks.length > 0 && (
+    <section class="related-links">
+      <h2 class="related-heading">Related Diagnostics</h2>
+      <div class="related-grid">
+        {resolvedLinks.map((link) => (
+          <a href={link.href} class="related-card">
+            <div class="related-card-body">
+              <span class="related-badge">
+                {COLLECTION_LABELS[link.collection] || link.collection}
+              </span>
+              <span class="related-title">{link.title}</span>
+              {link.description && <p class="related-desc">{link.description}</p>}
+            </div>
+            <svg
+              class="related-arrow"
+              viewBox="0 0 16 16"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M6 4l4 4-4 4" />
+            </svg>
+          </a>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .related-links {
+    margin-top: clamp(28px, 4vw, 48px);
+    padding-top: clamp(16px, 2vw, 28px);
+    border-top: 1px solid var(--border-glass);
+  }
+  .related-heading {
+    font-size: clamp(1rem, 1.8vw, 1.25rem);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: clamp(12px, 1.5vw, 20px);
+  }
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(260px, 20vw, 320px), 1fr));
+    gap: clamp(8px, 1vw, 14px);
+  }
+  .related-card {
+    display: flex;
+    align-items: flex-start;
+    gap: clamp(8px, 1vw, 14px);
+    padding: clamp(12px, 1.2vw, 18px);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: clamp(8px, 0.9vw, 12px);
+    background: rgba(255, 255, 255, 0.02);
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .related-card:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-2px);
+    text-decoration: none;
+  }
+  .related-card-body {
+    flex: 1;
+    min-width: 0;
+  }
+  .related-badge {
+    display: inline-block;
+    font-size: clamp(9px, 0.85vw, 11px);
+    font-weight: 600;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.07);
+    padding: clamp(1px, 0.15vw, 3px) clamp(5px, 0.6vw, 9px);
+    border-radius: 4px;
+    margin-bottom: clamp(4px, 0.4vw, 7px);
+    font-family: var(--font-mono);
+    letter-spacing: 0.3px;
+  }
+  .related-title {
+    display: block;
+    font-size: clamp(12px, 1.2vw, 14px);
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.4;
+    margin-bottom: clamp(2px, 0.25vw, 5px);
+  }
+  .related-desc {
+    font-size: clamp(11px, 1vw, 12.5px);
+    color: var(--text-secondary);
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+  }
+  .related-arrow {
+    width: clamp(14px, 1.2vw, 18px);
+    height: clamp(14px, 1.2vw, 18px);
+    color: var(--text-secondary);
+    flex-shrink: 0;
+    margin-top: clamp(2px, 0.3vw, 5px);
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  .related-card:hover .related-arrow {
+    opacity: 1;
+  }
+</style>

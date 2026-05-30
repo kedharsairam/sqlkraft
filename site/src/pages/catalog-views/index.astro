@@ -1,0 +1,150 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../components/Card.astro";
+import { getCollection } from "astro:content";
+
+const allViews = await getCollection("catalog-views");
+const sorted = allViews.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+// Group by category
+const grouped = {};
+for (const entry of sorted) {
+  const cat = entry.data.category || "other";
+  if (!grouped[cat]) grouped[cat] = [];
+  grouped[cat].push(entry);
+}
+const categories = Object.keys(grouped).sort();
+---
+
+<BaseLayout
+  title="System Catalog Views"
+  description="700+ catalog views covering databases, objects, indexes, security, and configuration."
+>
+  <nav class="breadcrumb">
+    <a href="/sqlkraft/">&larr; Home</a>
+    <span class="sep">/</span>
+    <span>Catalog Views</span>
+  </nav>
+
+  <header class="page-header">
+    <h1>System Catalog Views</h1>
+    <p class="page-desc">
+      SQL Server system catalog views provide metadata about databases, tables, indexes, columns,
+      security principals, permissions, and server configuration.
+    </p>
+  </header>
+
+  <!-- Category jump nav -->
+  <nav class="section-jump">
+    {
+      categories.map((cat) => (
+        <a href={`#cat-${cat}`} class="jump-link">
+          {cat}
+        </a>
+      ))
+    }
+  </nav>
+
+  <!-- Sectioned card grids -->
+  {
+    categories.map((cat) => (
+      <section id={`cat-${cat}`} class="category-section">
+        <h2 class="section-heading">{cat}</h2>
+        <div class="card-grid">
+          {grouped[cat].map((entry) => {
+            const { name, description, tags } = entry.data;
+            return (
+              <Card href={`/sqlkraft/catalog-views/${entry.slug}/`}>
+                <span slot="title">{name}</span>
+                <p slot="description">{description || "No description available."}</p>
+                <div slot="tags">
+                  {tags.slice(0, 3).map((tag) => (
+                    <span class="card-tag">#{tag}</span>
+                  ))}
+                  {tags.length > 3 && <span class="card-tag-more">+{tags.length - 3} more</span>}
+                </div>
+              </Card>
+            );
+          })}
+        </div>
+      </section>
+    ))
+  }
+</BaseLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: clamp(4px, 0.8vw, 10px);
+    font-size: clamp(11px, 1.2vw, 14px);
+    color: var(--text-secondary);
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+  }
+  .breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb .sep {
+    color: var(--border-glass);
+  }
+  .page-header {
+    margin-bottom: clamp(12px, 2.5vw, 28px);
+  }
+  .page-header h1 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .page-desc {
+    font-size: clamp(0.8rem, 1.3vw, 0.95rem);
+    color: var(--text-secondary);
+    margin-top: clamp(6px, 0.8vw, 10px);
+    max-width: min(700px, 90vw);
+    line-height: 1.6;
+  }
+  /* ── Section jump nav ── */
+  .section-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(4px, 0.6vw, 8px);
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+  }
+  .jump-link {
+    font-size: clamp(11px, 1.1vw, 13px);
+    color: var(--text-secondary);
+    padding: clamp(3px, 0.4vw, 6px) clamp(8px, 1vw, 14px);
+    border: 1px solid var(--border-glass);
+    border-radius: 20px;
+    text-decoration: none;
+    transition:
+      border-color 0.2s,
+      color 0.2s;
+  }
+  .jump-link:hover {
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+    text-decoration: none;
+  }
+  .category-section {
+    margin-bottom: clamp(20px, 3vw, 36px);
+    scroll-margin-top: 72px;
+  }
+  .section-heading {
+    font-size: clamp(13px, 1.3vw, 16px);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: clamp(8px, 1vw, 14px);
+    padding-bottom: clamp(4px, 0.5vw, 8px);
+    border-bottom: 1px solid var(--border-glass);
+    text-transform: capitalize;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(240px, 18vw, 320px), 1fr));
+    gap: clamp(8px, 1vw, 14px);
+  }
+</style>

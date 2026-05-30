@@ -1,0 +1,130 @@
+# T-SQL Reference Content Audit Report
+
+**Date:** 2026-05-30
+**Files scanned:** 515
+**Total defects found:** 91
+
+## Summary
+
+| Defect Category | Count |
+|-----------------|-------:|
+| Empty descriptions | 0 |
+| Suspicious descriptions | 0 |
+| Garbled/extraction artifacts | 0 |
+| Fragmented body content | 70 |
+| Undersized content (< 20 words) | 21 |
+| Title/capitalization issues | 0 |
+| Invalid categories | 0 |
+
+## Fragmented / Extraction-Damaged Content (70)
+
+Files where >70% of non-code lines are single words/fragments (likely PDF extraction damage):
+
+| File | Fragment % | Non-Code Lines |
+|------|-----------:|:--------------:|
+| `abs.md` | 100% | 21 |
+| `applock-test.md` | 100% | 16 |
+| `asymmetric-encryption-and-decryption.md` | 86% | 21 |
+| `available-commands.md` | 72% | 18 |
+| `bitwise-operators.md` | 79% | 111 |
+| `c-four-ranking-functions-used-in-the-same-query.md` | 96% | 125 |
+| `ceiling.md` | 100% | 23 |
+| `certificate-copying.md` | 76% | 17 |
+| `char-and-varchar.md` | 94% | 18 |
+| `comparing-sql-variant-values.md` | 93% | 41 |
+| `compatibility-level-90-and-above.md` | 74% | 155 |
+| `compress.md` | 100% | 20 |
+| `control-of-flow.md` | 88% | 26 |
+| `cursors.md` | 74% | 23 |
+| `date-and-time-data-types.md` | 93% | 85 |
+| `date-and-time-related-articles.md` | 76% | 71 |
+| `date-and-time-styles.md` | 86% | 227 |
+| `degrees.md` | 100% | 21 |
+| `enhanced-collations.md` | 87% | 15 |
+| `examples-analytics-platform-system-pdw.md` | 80% | 10 |
+| `float-and-real.md` | 95% | 21 |
+| `floor.md` | 100% | 23 |
+| `function-support.md` | 75% | 24 |
+| `future-keywords.md` | 99% | 276 |
+| `generate-series.md` | 93% | 14 |
+| `geomfromgml-geography-data-type.md` | 70% | 10 |
+| `hierarchyid-data-type-method-reference.md` | 79% | 14 |
+| `instanceof-geography-data-type.md` | 100% | 12 |
+| `instanceof-geometry-data-type.md` | 100% | 21 |
+| `int-bigint-smallint-and-tinyint-transact.md` | 100% | 30 |
+| `miscellaneous-statements.md` | 96% | 24 |
+| `nchar-and-nvarchar.md` | 89% | 18 |
+| `odbc-reserved-keywords.md` | 97% | 257 |
+| `operators.md` | 75% | 28 |
+| `oracle.md` | 89% | 221 |
+| `point-geometry-data-type.md` | 86% | 14 |
+| `power.md` | 100% | 28 |
+| `precision-scale-and-length.md` | 100% | 21 |
+| `radians.md` | 100% | 21 |
+| `reorientobject-geography-data-type.md` | 100% | 10 |
+| `rowversion.md` | 100% | 16 |
+| `security-functions.md` | 82% | 39 |
+| `service-broker-routes.md` | 82% | 33 |
+| `set-dateformat.md` | 93% | 14 |
+| `set-statements.md` | 84% | 74 |
+| `set-textsize.md` | 100% | 12 |
+| `shortestlineto-geography-data-type.md` | 100% | 13 |
+| `shortestlineto-geometry-data-type.md` | 100% | 13 |
+| `sign.md` | 100% | 12 |
+| `smalldatetime.md` | 94% | 16 |
+| `stcurven-geography-data-type.md` | 100% | 12 |
+| `stcurven-geometry-data-type.md` | 100% | 18 |
+| `stcurvetoline-geography-data-type.md` | 100% | 12 |
+| `stcurvetoline-geometry-data-type.md` | 100% | 20 |
+| `stgeometryn-geography-data-type.md` | 100% | 12 |
+| `stgeometrytype-geography-data-type.md` | 100% | 13 |
+| `stgeometrytype-geometry-data-type.md` | 100% | 11 |
+| `stnumcurves-geography-data-type.md` | 100% | 12 |
+| `stnumgeometries-geography-data-type.md` | 100% | 10 |
+| `strelate-geometry-data-type.md` | 73% | 11 |
+| `supported-data-types.md` | 82% | 28 |
+| `supported-string-literal-formats-for-datetimeoffset.md` | 86% | 69 |
+| `supported-string-literal-formats-for-time.md` | 80% | 46 |
+| `system-functions.md` | 91% | 45 |
+| `system-statistical-functions.md` | 88% | 24 |
+| `transactions.md` | 100% | 10 |
+| `truncating-and-rounding-results.md` | 81% | 118 |
+| `unistr.md` | 80% | 10 |
+| `xquery-modules-prologs.md` | 75% | 32 |
+| `year-month-and-day-datepart-arguments.md` | 79% | 52 |
+
+## Undersized Content (21)
+
+Files with fewer than 20 words of body content (excluding frontmatter):
+
+| File | Word Count |
+|------|-----------:|
+| `applock-test.md` | 19 |
+| `compound-assignment.md` | 13 |
+| `cursor.md` | 10 |
+| `generate-series.md` | 17 |
+| `instanceof-geography-data-type.md` | 14 |
+| `reorientobject-geography-data-type.md` | 10 |
+| `rowversion.md` | 16 |
+| `set-textsize.md` | 18 |
+| `shortestlineto-geography-data-type.md` | 13 |
+| `shortestlineto-geometry-data-type.md` | 13 |
+| `sign.md` | 16 |
+| `stcurven-geography-data-type.md` | 12 |
+| `stcurven-geometry-data-type.md` | 18 |
+| `stcurvetoline-geography-data-type.md` | 12 |
+| `stgeometryn-geography-data-type.md` | 12 |
+| `stgeometrytype-geography-data-type.md` | 13 |
+| `stgeometrytype-geometry-data-type.md` | 12 |
+| `stnumcurves-geography-data-type.md` | 12 |
+| `stnumgeometries-geography-data-type.md` | 10 |
+| `transactions.md` | 10 |
+| `unistr.md` | 19 |
+
+## Recommendations
+
+- **Critical**: 70 files show severe PDF extraction fragmentation. These files need manual content restoration or replacement with properly sourced content.
+- 21 files have very little body content and may need manual authoring.
+
+---
+*Report generated by tools/audit-tsql-reference.mjs*

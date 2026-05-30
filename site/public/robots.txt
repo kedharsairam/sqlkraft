@@ -1,0 +1,9 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Exclude trash directory (ghost/pruned content)
+Disallow: /trash/
+
+# Sitemap
+Sitemap: https://kedharsairam.github.io/sqlkraft/sitemap-index.xml

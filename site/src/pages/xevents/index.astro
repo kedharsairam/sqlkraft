@@ -1,0 +1,123 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import Card from "../../components/Card.astro";
+import { getCollection } from "astro:content";
+
+const allEvents = await getCollection("xevents");
+const sorted = allEvents.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+// Category labels for display
+const CATEGORY_LABELS = {
+  "system-health": "System Health",
+  deadlock: "Deadlock Analysis",
+  "query-performance": "Query Performance",
+  "wait-statistics": "Wait Statistics",
+  general: "General",
+};
+---
+
+<BaseLayout
+  title="Extended Events (XEvents)"
+  description="Extended Events reference guide — system_health, deadlock capture, query performance tracking, and wait statistics pipelines."
+>
+  <nav class="breadcrumb">
+    <a href="/sqlkraft/">&larr; Home</a>
+    <span class="sep">/</span>
+    <span>Extended Events</span>
+  </nav>
+
+  <header class="page-header">
+    <h1>Extended Events (XEvents)</h1>
+    <p class="page-desc">
+      Production-grade reference for SQL Server Extended Events — lightweight, highly-scalable
+      event-driven diagnostics replacing legacy SQL Trace and Profiler. Configure event sessions,
+      capture deadlock graphs, monitor query performance, and build wait statistics pipelines.
+    </p>
+  </header>
+
+  <div class="xevents-grid">
+    {
+      sorted.map((entry) => {
+        const { name, title, description, category, tags } = entry.data;
+        return (
+          <Card href={`/sqlkraft/xevents/${entry.slug}/`}>
+            <div class="xevent-header">
+              <span class="card-badge">{CATEGORY_LABELS[category] || category}</span>
+              <span class="card-name">{name}</span>
+            </div>
+            <h3 class="card-title">{title}</h3>
+            <p class="card-desc">{description || "No description available."}</p>
+            <div class="card-tags">
+              {tags.slice(0, 4).map((tag) => (
+                <span class="card-tag">#{tag}</span>
+              ))}
+              {tags.length > 4 && <span class="card-tag-more">+{tags.length - 4} more</span>}
+            </div>
+          </Card>
+        );
+      })
+    }
+  </div>
+</BaseLayout>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: clamp(4px, 0.8vw, 10px);
+    font-size: clamp(11px, 1.2vw, 14px);
+    color: var(--text-secondary);
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+  }
+  .breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb .sep {
+    color: var(--border-glass);
+  }
+  .page-header {
+    margin-bottom: clamp(12px, 2.5vw, 28px);
+  }
+  .page-header h1 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .page-desc {
+    font-size: clamp(0.8rem, 1.3vw, 0.95rem);
+    color: var(--text-secondary);
+    margin-top: clamp(6px, 0.8vw, 10px);
+    max-width: min(700px, 90vw);
+    line-height: 1.6;
+  }
+
+  .xevents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(280px, 22vw, 360px), 1fr));
+    gap: clamp(10px, 1.2vw, 18px);
+  }
+  .xevent-header {
+    display: flex;
+    align-items: center;
+    gap: clamp(6px, 0.8vw, 12px);
+  }
+  .card-badge {
+    font-size: clamp(10px, 0.9vw, 12px);
+    font-weight: 500;
+    color: var(--text-secondary);
+    background: rgba(255, 255, 255, 0.06);
+    padding: clamp(1px, 0.2vw, 3px) clamp(6px, 0.8vw, 11px);
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .card-name {
+    font-family: var(--font-mono);
+    font-size: clamp(11px, 1vw, 13px);
+    color: var(--accent);
+    letter-spacing: -0.01em;
+  }
+</style>
