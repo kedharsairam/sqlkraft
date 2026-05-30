@@ -5,6 +5,10 @@ export default defineConfig({
   site: "https://kedharsairam.github.io",
   base: "/sqlkraft",
   output: "static",
+  prefetch: {
+    prefetchAll: true,
+    defaultStrategy: "hover",
+  },
   build: {
     format: "directory",
   },

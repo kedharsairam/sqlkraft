@@ -1,5 +1,62 @@
 # SqlKraft Session Notes
-## Project Status: **Stable / Production Ready** (with active maintenance)
+## Project Status: **Stable / Production Ready** — Performance Tuning
+
+---
+
+## v0.44.0 — Stage 49: Ultra-Snappy Navigation & Prefetch Optimization
+
+### What was built
+
+Three performance upgrades for page navigation speed:
+
+#### 1. Aggressive Link Prefetching
+
+**Config**: `astro.config.mjs`
+```js
+prefetch: {
+  prefetchAll: true,
+  defaultStrategy: "hover",
+}
+```
+
+- **`prefetchAll: true`** — Makes every internal link (nav anchors, card titles, detail page links, breadcrumbs) eligible for prefetching without needing explicit `data-astro-prefetch` attributes
+- **`defaultStrategy: "hover"`** — Prefetches the linked page's data when the user hovers over the link. For card grids, this means the page content starts loading before the user clicks, eliminating network latency on click.
+- **Native Astro 5** — No separate `@astrojs/prefetch` package needed. The prefetch engine is built into the framework.
+
+#### 2. View Transition Speed Tightening
+
+Added global CSS overrides in BaseLayout.astro:
+
+| Pseudo-element | Duration | Curve |
+|---|---|---|
+| `::view-transition-group(*)` | 120ms | `cubic-bezier(0.16, 1, 0.3, 1)` |
+| `::view-transition-old(*)` | 100ms | `cubic-bezier(0.16, 1, 0.3, 1)` |
+| `::view-transition-new(*)` | 120ms | `cubic-bezier(0.16, 1, 0.3, 1)` |
+
+- Old page fades out in 100ms (barely perceptible)
+- New page fades in over 120ms with snappy deceleration
+- Total transition completes in ~120ms (down from browser default ~700ms)
+
+The timing curve `cubic-bezier(0.16, 1, 0.3, 1)` provides high initial velocity with rapid deceleration — the page swap feels instantaneous rather than "slow-motion."
+
+#### 3. notransition Pages Instant Swap
+
+The errors page (1,129 cards, `notransition` prop) uses the default view transition crossfade. With the CSS overrides, this crossfade now completes in 120ms instead of the browser default. No custom scheduling or micro-delays — the fallback fires instantly.
+
+### Key Decisions
+
+- **`prefetchAll: true` with `hover` strategy** — Prefetching ALL links on hover is the right tradeoff for a reference site. Users scan cards by hovering; prefetching on hover means the content is ready by the time they click. The network cost is minimal for a static site (HTML files are small).
+- **100ms/120ms split** — Old page fades out slightly faster than new page fades in. This creates a smooth "crossfade" feel without visible blank frames.
+- **Global CSS overrides** — Applied in BaseLayout.astro's `<style is:global>` block, so they affect every page uniformly. No per-page configuration needed.
+
+### Files Modified
+- `site/astro.config.mjs` — added prefetch configuration
+- `site/src/layouts/BaseLayout.astro` — added view transition CSS pseudo-element overrides
+
+### Build
+- 5,246 pages, 0 errors, ~70s
+
+---
 
 ---
 
