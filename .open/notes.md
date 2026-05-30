@@ -1,5 +1,48 @@
 # SqlKraft Session Notes
-## Project Status: **Stable / Production Ready** — Performance Tuning
+## Project Status: **v0.45.0-Beta / Structural Polish** — Apple DNA Architecture Overhaul
+
+---
+
+## v0.45.0-Beta — Stage 51: Apple DNA Architecture Overhaul — Grid Unification & Copy Engine
+
+### What was built
+
+Four collection index pages (DMVs, Catalog Views, Functions, T-SQL Reference) converted from per-category `<section>`-wrapped grids to the unified Wait Statistics blueprint pattern.
+
+#### 1. Index Grid Unification (4 Pages)
+| Page | Before | After |
+|------|--------|-------|
+| **DMVs** | 17 per-category `<section>` wrappers with `section-jump` anchors | Single `.card-grid` with 17 filter pills, `data-cat` on each `<Card>` |
+| **Catalog Views** | 13 per-category `<section>` wrappers with `section-jump` anchors | Single `.card-grid` with 13 filter pills |
+| **Functions** | 6 per-category `<section>` wrappers with `section-jump` anchors | Single `.card-grid` with 6 filter pills (preserved `returnType` badge via `meta` slot) |
+| **T-SQL Reference** | 10 per-category `<section>` wrappers with `.category-nav` anchors + default-slot cards | Single `.card-grid` with 10 labeled filter pills (`CATEGORY_LABELS`), converted to named-slot `<Card>` for uniform rendering |
+
+#### 2. Search Palette Redesign
+- **Palette backdrop**: `backdrop-filter: blur(25px)` (was 16px), `background: rgba(20,20,20,0.65)` (was `rgba(0,0,0,0.4)`)
+- **Input tray**: Rounded top corners (`12px 12px 0 0`), larger padding (18px 22px), subtle `rgba(255,255,255,0.02)` background, `:focus-within` glow enhancement
+- **Hint label**: Switched from `var(--font-mono)` to system font for visual harmony
+- **Result items**: Micro-hover `transition` with `background: rgba(255,255,255,0.03)` on `.palette-card:hover`
+
+#### 3. Code Block Copy Engine Overhaul
+- **Wrapper pattern**: Each `<pre>` now wrapped in `<div class="code-wrap" style="position: relative; overflow: hidden">`. Horizontal scroll stays on `<pre>` (`overflow-x: auto`).
+- **Floating copy button**: Pinned absolute top-right on wrapper (not inside `<pre>`), so it remains stationary while code scrolls horizontally underneath. `z-index: 10`.
+- **Visibility**: Starts `opacity: 0` (hidden), full `opacity: 1` on wrapper hover — cleaner look, no permanent visual noise.
+- **CSS updates**: Updated selector from `.copy-code-wrap` → `.code-wrap`, added `.code-wrap { position: relative; overflow: hidden; border-radius: 8px; }`
+
+#### 4. Rogue Import Leak Fix
+- Moved `import Card from "./Card.astro";` inside `---` frontmatter block in CardPalette.astro (was outside, causing Astro to emit it as plain text on every page's rendered HTML — 5,246 pages affected)
+
+### Files Modified
+- `site/src/pages/dmvs/index.astro` — complete rewrite, unified single-grid
+- `site/src/pages/catalog-views/index.astro` — complete rewrite, unified single-grid
+- `site/src/pages/functions/index.astro` — complete rewrite, unified single-grid (preserved return-badge)
+- `site/src/pages/tsql-reference/index.astro` — complete rewrite, unified single-grid, converted to named slots
+- `site/src/components/SearchPalette.astro` — backdrop blur/color, input tray refinement
+- `site/src/components/CardPalette.astro` — import leak fix, micro-hover transitions
+- `site/src/layouts/BaseLayout.astro` — code copy wrapper overhaul, CSS updates
+
+### Build
+- 5,246 pages, 0 errors, ~31s
 
 ---
 

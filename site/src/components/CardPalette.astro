@@ -8,9 +8,8 @@
 // Imports Card.astro to load its unified global card CSS on every page.
 // Provides .palette-card modifier and .card-tag-badge--* colors.
 // Must be included before SearchPalette.astro.
----
-
 import Card from "./Card.astro";
+---
 
 <!-- Runtime render function — generates a .item-card from palette index item -->
 <script is:inline>
@@ -133,10 +132,14 @@ import Card from "./Card.astro";
     padding: 8px 14px;
     gap: 4px;
     border-radius: 8px;
-    /* no translateY hover inside compact palette */
+    transition:
+      background 0.12s ease,
+      border-color 0.12s ease,
+      box-shadow 0.12s ease;
   }
   .palette-card:hover {
     border-color: var(--accent);
+    background: rgba(255, 255, 255, 0.03);
     transform: none;
   }
 
