@@ -1,6 +1,43 @@
 # SqlKraft Session Notes
 
-## v0.39.0 — Stage 41: Cookbook & XEvents Card Migration
+## v0.43.0 — Stage 46: Fluid Spatial View Transitions & Component Polish
+
+### What was built
+Comprehensive interaction upgrade implementing morphing view transitions, elastic micro-interactions, and codebase cleanup.
+
+#### 1. Morphing View Transitions
+- **View Transitions** already globally enabled via `<ViewTransitions />` in BaseLayout.astro's `<head>`
+- **Card.astro**: Computes `transitionName` from href's last path segment, adds `transition:name={transitionName}` to `.card-title` span
+- **All 12 `[id].astro` templates**: Added `transition:name={entry.slug}` to detail page title elements (`.detail-title`, `.doc-title`, etc.)
+- Removed conflicting manual `page-fade-in` CSS animation and `transition:animate="fade"` from main shell — View Transitions handles all cross-page animation natively
+
+#### 2. Elastic Micro-Interactions
+- `.item-card` hover transitions upgraded to `cubic-bezier(0.25, 1, 0.5, 1)` — crisp, elastic feel
+- Hover now includes `translateY(-3px)`, `box-shadow: 0 8px 24px rgba(0,0,0,0.3)`, and background darkening for depth
+
+#### 3. Repository Cleanup
+- Removed all design-language references from comments: "macOS Spotlight", "glassmorphism", "premium aesthetic"
+- Removed Stage numbering comments in source files
+- Updated package.json version to 0.43.0
+
+### Key Decisions
+- **`transition:name` values derived from URL slug only** — Card.astro extracts slug from `href` prop; detail pages use `entry.slug`. Both resolve to the same string, ensuring morph matching.
+- **Named-slot cards only** — Cards using the default slot (xevents) don't get `transition:name` on their titles. This is acceptable since View Transitions gracefully falls back to `fade` animation when names are unmatched.
+- **cubic-bezier(0.25, 1, 0.5, 1)** — Chosen for its "overshoot-free elastic" feel. Fast ramp-up with smooth deceleration, visually responsive without being overly animated.
+
+### Files Modified
+- `site/src/components/Card.astro` — transition:name on title, elastic hover
+- `site/src/layouts/BaseLayout.astro` — removed fade-in animation, cleaned comments
+- `site/src/pages/*/[id].astro` — 12 files, added transition:name
+- `site/src/components/SearchPalette.astro` — scrubbed design refs
+- `site/src/components/CardPalette.astro` — scrubbed design refs
+- `site/src/components/RelatedLinks.astro` — scrubbed design refs
+- `site/package.json` — version bump 0.36.0 → 0.43.0
+
+### Build
+- 5,246 pages, 0 errors, ~29s
+
+---
 
 ### What was built
 Migrated the 2 remaining collection index pages (cookbook, xevents) from manual card HTML to the unified Card.astro component, achieving 100% component parity across all 11 collections.

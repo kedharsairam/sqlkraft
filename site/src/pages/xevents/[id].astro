@@ -33,7 +33,7 @@ const CATEGORY_LABELS = {
   </nav>
 
   <div class="detail-header">
-    <h1 class="detail-title">{title}</h1>
+    <h1 class="detail-title" transition:name={entry.slug}>{title}</h1>
     <div class="header-meta">
       <span class="badge">{CATEGORY_LABELS[category] || category}</span>
       {targetVersion && <span class="target-ver">{targetVersion}</span>}

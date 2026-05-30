@@ -1,9 +1,9 @@
 ---
-// SearchPalette — High-Fidelity macOS Spotlight (v5)
+// SearchPalette — global search overlay (v5)
 // Pure Vanilla JS. No third-party dependencies.
 // Keyboard: Cmd+K / Ctrl+K to open, Esc to close
 // ArrowUp/Down to navigate, Enter to select
-// Design: macOS Spotlight aesthetic — uses CardPalette.astro for result cards
+// Uses CardPalette.astro for result cards
 
 import CardPalette from "./CardPalette.astro";
 
@@ -157,7 +157,7 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
         return hits.slice(0, 28);
       }
 
-      /* ── Render results as macOS Spotlight-style <ul>/<li> using __renderCard ── */
+      /* ── Render results as <ul>/<li> using __renderCard ── */
       function render(hits) {
         if (hits.length === 0) {
           results.style.display = "none";
@@ -377,7 +377,7 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
 </script>
 
 <style>
-  /* ── Overlay (glassmorphism backdrop) ── */
+  /* ── Overlay backdrop ── */
   .palette-overlay {
     position: fixed;
     inset: 0;
@@ -399,7 +399,7 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
     -webkit-backdrop-filter: blur(16px);
   }
 
-  /* ── Panel — macOS Spotlight glass ── */
+  /* ── Panel ── */
   .palette-panel {
     position: relative;
     width: 680px;
