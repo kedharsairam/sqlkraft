@@ -208,12 +208,12 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
   <!-- ──────────────── Secondary Links ──────────────── -->
   <section class="secondary-links">
+    <a href="/sqlkraft/stored-procedures/" class="sec-link">Stored Procedures</a>
     <a href="/sqlkraft/catalog-views/" class="sec-link">Catalog Views</a>
     <a href="/sqlkraft/functions/" class="sec-link">System Functions</a>
-    <a href="/sqlkraft/tsql-reference/" class="sec-link">T-SQL Reference</a>
     <a href="/sqlkraft/errors/" class="sec-link">Error Codes</a>
+    <a href="/sqlkraft/tsql-reference/" class="sec-link">T-SQL Reference</a>
     <a href="/sqlkraft/architecture/" class="sec-link">Architecture</a>
-    <a href="/sqlkraft/stored-procedures/" class="sec-link">Stored Procedures</a>
     <a href="/sqlkraft/operations/" class="sec-link">Operations</a>
   </section>
 
@@ -278,7 +278,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   ============================ */
   .matrix-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: clamp(1rem, 1.5vw, 1.5rem);
     margin-top: 0;
   }
@@ -392,12 +392,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   /* ============================
      RESPONSIVE
   ============================ */
-  @media (max-width: 900px) {
+  @media (max-width: 1100px) {
+    .matrix-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
     .matrix-grid {
       grid-template-columns: repeat(2, 1fr);
     }
   }
-  @media (max-width: 540px) {
+  @media (max-width: 480px) {
     .matrix-grid {
       grid-template-columns: 1fr;
     }

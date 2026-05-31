@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.54.0] — 2026-05-31 — **Single-Row Homepage Matrix Grid and DBA-Priority Navbar Restructure**
+
+### Changed
+
+- **Homepage matrix grid switched to 5-column single-row layout** — `.matrix-grid` `grid-template-columns` changed from `repeat(4, 1fr)` to `repeat(5, 1fr)` so the 5 critical entry pillars (DMVs, Wait Statistics, T-SQL Scripts, Troubleshooting Cookbook, Extended Events) render in a single horizontal row on desktop. Responsive breakpoints retain 3-column at 1100px, 2-column at 768px, and 1-column at 480px.
+
+- **Secondary homepage links reordered** — Stored Procedures → Catalog Views → System Functions → Error Codes → T-SQL Reference → Architecture → Operations (aligned to DBA operational workflow).
+
+- **Global navbar reordered by DBA priority** — Both `.nav-links` (desktop) and `.mobile-nav-links` (drawer) updated to: DMVs → Waits → Cookbook → Scripts → XEvents → SPs → Catalog → Functions → Errors → T-SQL → Arch → Ops. XEvents link added to both navigation contexts; "Recipes" entry renamed to "Cookbook" to match collection naming.
+
+### Build
+
+- 5,241 pages, 0 errors
+- Prettier lint passes
+
+---
+
 ## [0.52.0] — 2026-05-31 — **Universal Wait Statistics Layout Blueprint Alignment and Ingestion Truncation**
 
 ### Added
