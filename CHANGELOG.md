@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 - **Global navbar reordered by DBA priority** — Both `.nav-links` (desktop) and `.mobile-nav-links` (drawer) updated to: DMVs → Waits → Cookbook → Scripts → XEvents → SPs → Catalog → Functions → Errors → T-SQL → Arch → Ops. XEvents link added to both navigation contexts; "Recipes" entry renamed to "Cookbook" to match collection naming.
 
+### Fixed
+
+- **Search palette badge label inconsistency** — `CardPalette.astro` category badge labels dictionary updated: `cookbook: "Recipes"` → `cookbook: "Cookbook"` for visual consistency with navbar, mobile drawer, and homepage matrix cards.
+
 ### Build
 
 - 5,241 pages, 0 errors
