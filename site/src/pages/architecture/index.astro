@@ -67,7 +67,9 @@ const sorted = allArch.sort((a, b) => a.data.title.localeCompare(b.data.title));
                     description={description || "No description available."}
                   >
                     <span slot="title">{title}</span>
-                    <span slot="category" class="cat-badge cat-badge--architecture">Architecture</span>
+                    <span slot="category" class="cat-badge cat-badge--architecture">
+                      Architecture
+                    </span>
                     <div slot="tags">
                       {tags.slice(0, 2).map((tag) => (
                         <span class="card-tag">#{tag}</span>

@@ -9,7 +9,6 @@ const sorted = allErrors.sort((a, b) => parseInt(a.data.name) - parseInt(b.data.
 // Unique categories sorted
 const categorySet = new Set(sorted.map((e) => e.data.category || "other"));
 const CATEGORIES = [...categorySet].sort();
-
 ---
 
 <BaseLayout
@@ -58,7 +57,9 @@ const CATEGORIES = [...categorySet].sort();
             <span slot="severity">
               <span class="card-pill pill--{severity}">{severity}</span>
             </span>
-            <span slot="category" class="cat-badge cat-badge--errors">Errors</span>
+            <span slot="category" class="cat-badge cat-badge--errors">
+              Errors
+            </span>
             <div slot="tags">
               {tags.slice(0, 3).map((tag) => (
                 <span class="card-tag">#{tag}</span>
@@ -150,6 +151,4 @@ const CATEGORIES = [...categorySet].sort();
     grid-template-columns: repeat(auto-fill, minmax(clamp(240px, 18vw, 320px), 1fr));
     gap: clamp(8px, 1vw, 14px);
   }
-
-
 </style>

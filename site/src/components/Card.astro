@@ -59,9 +59,7 @@ if (!notransition) titleAttrs["transition:name"] = transitionName;
 // (e.g., 'MoveOperation','OnOperation','SwitchOperation')
 function truncateDescription(text: string): string {
   if (!text) return "";
-  const literalMatch = text.match(
-    /(?:'[^']*')(?:,\s*'[^']*'){2,}/,
-  );
+  const literalMatch = text.match(/(?:'[^']*')(?:,\s*'[^']*'){2,}/);
   if (literalMatch && literalMatch.index !== undefined && literalMatch.index > 0) {
     return text.slice(0, literalMatch.index).trim();
   }
@@ -69,9 +67,7 @@ function truncateDescription(text: string): string {
 }
 
 const displayDesc =
-  rawDesc !== undefined
-    ? truncateDescription(rawDesc || "No description available.")
-    : null;
+  rawDesc !== undefined ? truncateDescription(rawDesc || "No description available.") : null;
 const useNamedSlots = hasTitle;
 ---
 
@@ -83,12 +79,24 @@ const useNamedSlots = hasTitle;
         <span class="card-title" {...titleAttrs}>
           <slot name="title" />
         </span>
-        {hasSeverity && <span class="card-severity"><slot name="severity" /></span>}
-        {!hasSeverity && hasMeta && <span class="card-meta"><slot name="meta" /></span>}
+        {hasSeverity && (
+          <span class="card-severity">
+            <slot name="severity" />
+          </span>
+        )}
+        {!hasSeverity && hasMeta && (
+          <span class="card-meta">
+            <slot name="meta" />
+          </span>
+        )}
       </div>
 
       {/* ── Row 2: Category Badge ── */}
-      {hasCategory && <div class="card-row card-row-category"><slot name="category" /></div>}
+      {hasCategory && (
+        <div class="card-row card-row-category">
+          <slot name="category" />
+        </div>
+      )}
 
       {/* ── Row 3: Description (CSS clamped + JS truncated) ── */}
       {displayDesc !== null && (
@@ -98,7 +106,9 @@ const useNamedSlots = hasTitle;
       )}
       {displayDesc === null && Astro.slots.has("description") && (
         <div class="card-desc-wrapper">
-          <p class="card-desc"><slot name="description" /></p>
+          <p class="card-desc">
+            <slot name="description" />
+          </p>
         </div>
       )}
 
@@ -106,7 +116,11 @@ const useNamedSlots = hasTitle;
       <span class="card-doc-link">View documentation &rarr;</span>
 
       {/* ── Row 5: Tags ── */}
-      {hasTags && <div class="card-row card-row-tags"><slot name="tags" /></div>}
+      {hasTags && (
+        <div class="card-row card-row-tags">
+          <slot name="tags" />
+        </div>
+      )}
     </a>
   ) : (
     <a href={href} class="item-card" {...extraAttrs}>
@@ -221,21 +235,51 @@ const useNamedSlots = hasTitle;
     white-space: nowrap;
     line-height: 1.5;
   }
-  .cat-badge--dmvs { background: #4a90d9; color: #fff; }
-  .cat-badge--functions { background: #7b68ee; color: #fff; }
-  .cat-badge--scripts { background: #2ecc71; color: #fff; }
-  .cat-badge--errors { background: #e74c3c; color: #fff; }
-  .cat-badge--catalog-views { background: #3498db; color: #fff; }
-  .cat-badge--stored-procedures { background: #e67e22; color: #fff; }
-  .cat-badge--tsql-reference { background: #9b59b6; color: #fff; }
-  .cat-badge--cookbook { background: #1abc9c; color: #fff; }
-  .cat-badge--architecture { background: #95a5a6; color: #111; }
-  .cat-badge--xevents { background: #34495e; color: #fff; }
+  .cat-badge--dmvs {
+    background: #4a90d9;
+    color: #fff;
+  }
+  .cat-badge--functions {
+    background: #7b68ee;
+    color: #fff;
+  }
+  .cat-badge--scripts {
+    background: #2ecc71;
+    color: #fff;
+  }
+  .cat-badge--errors {
+    background: #e74c3c;
+    color: #fff;
+  }
+  .cat-badge--catalog-views {
+    background: #3498db;
+    color: #fff;
+  }
+  .cat-badge--stored-procedures {
+    background: #e67e22;
+    color: #fff;
+  }
+  .cat-badge--tsql-reference {
+    background: #9b59b6;
+    color: #fff;
+  }
+  .cat-badge--cookbook {
+    background: #1abc9c;
+    color: #fff;
+  }
+  .cat-badge--architecture {
+    background: #95a5a6;
+    color: #111;
+  }
+  .cat-badge--xevents {
+    background: #34495e;
+    color: #fff;
+  }
 
   /* ── Row 3: Description (3-line CSS clamp + JS literal-block guard) ── */
   .card-desc-wrapper {
     /* Enforce 3-line max-height regardless of content length */
-    max-height: 4.5em;           /* 3 lines at 1.5em line-height */
+    max-height: 4.5em; /* 3 lines at 1.5em line-height */
     overflow: hidden;
     flex: 1;
   }
@@ -263,7 +307,9 @@ const useNamedSlots = hasTitle;
     color: var(--accent);
     display: inline-block;
     opacity: 0.85;
-    transition: opacity 0.2s, text-decoration 0.2s;
+    transition:
+      opacity 0.2s,
+      text-decoration 0.2s;
   }
   .item-card:hover .card-doc-link {
     opacity: 1;
@@ -282,7 +328,7 @@ const useNamedSlots = hasTitle;
     color: var(--text-secondary);
     background: rgba(255, 255, 255, 0.05);
     padding: clamp(1px, 0.2vw, 3px) clamp(5px, 0.7vw, 9px);
-    border-radius: 10px;          /* capsule shape */
+    border-radius: 10px; /* capsule shape */
     font-family: var(--font-mono);
   }
   .card-tag-more {
