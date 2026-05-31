@@ -62,10 +62,13 @@ const sorted = allArch.sort((a, b) => a.data.title.localeCompare(b.data.title));
               {entries.map((entry) => {
                 const { title, description, tags } = entry.data;
                 return (
-                  <Card href={`/sqlkraft/architecture/${entry.slug}/`}>
-                    <div class="card-title">{title}</div>
-                    <p class="card-desc">{description || "No description available."}</p>
-                    <div class="card-tags">
+                  <Card
+                    href={`/sqlkraft/architecture/${entry.slug}/`}
+                    description={description || "No description available."}
+                  >
+                    <span slot="title">{title}</span>
+                    <span slot="category" class="cat-badge cat-badge--architecture">Architecture</span>
+                    <div slot="tags">
                       {tags.slice(0, 2).map((tag) => (
                         <span class="card-tag">#{tag}</span>
                       ))}

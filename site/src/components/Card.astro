@@ -1,88 +1,132 @@
 ---
-// Card — Unified card shell component
+// Card — Unified Card Shell
 //
-// Single source of truth for card-level CSS across all collection
-// index pages and the search palette.
+// Universal Wait Statistics layout blueprint v1.
+// Every card across all 11 collections renders the identical 5-row
+// structure cloned from the gold-standard Wait Statistics design:
 //
-// USAGE (named slots — standard cards):
-//   <Card href="/sqlkraft/dmvs/sys-dm-exec-requests/">
+//   Row 1 — Title (left) + Severity Pill or Meta Badge (right)
+//   Row 2 — Sub-title Category Badge (collection-colored)
+//   Row 3 — Description Text (CSS 3-line clamp + JS literal-block truncation)
+//   Row 4 — "View documentation →" link token (auto-generated from href)
+//   Row 5 — Capsule-style gray tags (flex-wrap)
+//
+// USAGE — named slots (standard):
+//   <Card href="/sqlkraft/dmvs/sys-dm-exec-requests/" description={entry.data.description}>
 //     <span slot="title">{name}</span>
-//     <span slot="meta" class="return-badge">{returnType}</span>
-//     <p slot="description">{description}</p>
+//     <span slot="severity" class="card-pill">HIGH</span>
+//     <span slot="category" class="cat-badge cat-badge--dmvs">DMVs</span>
 //     <div slot="tags">
 //       <span class="card-tag">#tag1</span>
-//       <span class="card-tag">#tag2</span>
 //     </div>
 //   </Card>
 //
-// USAGE (default slot — complex cards with extra elements):
+// USAGE — default slot (custom/complex cards, e.g., Wait Statistics page):
 //   <Card href="/sqlkraft/wait-statistics/async_network_io/">
-//     <div class="card-header">
-//       <span class="card-title">{name}</span>
-//       <span class="card-meta">{severity}</span>
-//     </div>
-//     ... custom content ...
-//     <div class="card-tags">...</div>
+//     <div class="card-header">...</div>
+//     <!-- fully custom content -->
 //   </Card>
+//
+// Backward compatibility:
+//   - `slot="meta"` still renders in the top-right if `slot="severity"` is absent.
+//   - `slot="description"` works as a fallback if no `description` prop is supplied.
+//   - If no named slots are detected, the entire default slot content is rendered as-is.
 
 export interface Props {
   href: string;
   "data-cat"?: string;
   notransition?: boolean;
+  /** Raw description string — automatically truncated at literal blocks and CSS clamped. */
+  description?: string;
 }
 
-const { href, "data-cat": dataCat, notransition } = Astro.props;
+const { href, description: rawDesc, "data-cat": dataCat, notransition } = Astro.props;
 const hasTitle = Astro.slots.has("title");
+const hasSeverity = Astro.slots.has("severity");
+const hasMeta = Astro.slots.has("meta");
+const hasCategory = Astro.slots.has("category");
+const hasTags = Astro.slots.has("tags");
 const extraAttrs: Record<string, string> = {};
 if (dataCat !== undefined) extraAttrs["data-cat"] = dataCat;
 
 // Derive unique transition name from the href slug for view transition morphing
-// Skip on pages with very high card counts (notransition) to prevent
-// browser-thread freeze from excessive named elements during View Transitions
 const transitionName = href.replace(/\/+$/, "").split("/").pop() || "";
 const titleAttrs: Record<string, string> = {};
 if (!notransition) titleAttrs["transition:name"] = transitionName;
+
+// ─── Description processing ──────────────────────────────────────────
+// Truncate before long comma-separated single-quoted literal blocks
+// (e.g., 'MoveOperation','OnOperation','SwitchOperation')
+function truncateDescription(text: string): string {
+  if (!text) return "";
+  const literalMatch = text.match(
+    /(?:'[^']*')(?:,\s*'[^']*'){2,}/,
+  );
+  if (literalMatch && literalMatch.index !== undefined && literalMatch.index > 0) {
+    return text.slice(0, literalMatch.index).trim();
+  }
+  return text;
+}
+
+const displayDesc =
+  rawDesc !== undefined
+    ? truncateDescription(rawDesc || "No description available.")
+    : null;
+const useNamedSlots = hasTitle;
 ---
 
-<a href={href} class="item-card" {...extraAttrs}>
-  {
-    hasTitle ? (
-      <>
-        <div class="card-header">
-          <span class="card-title" {...titleAttrs}>
-            <slot name="title" />
-          </span>
-          {Astro.slots.has("meta") && <slot name="meta" />}
+{
+  useNamedSlots ? (
+    <a href={href} class="item-card" {...extraAttrs}>
+      {/* ── Row 1: Title + Severity/Meta ── */}
+      <div class="card-row card-row-top">
+        <span class="card-title" {...titleAttrs}>
+          <slot name="title" />
+        </span>
+        {hasSeverity && <span class="card-severity"><slot name="severity" /></span>}
+        {!hasSeverity && hasMeta && <span class="card-meta"><slot name="meta" /></span>}
+      </div>
+
+      {/* ── Row 2: Category Badge ── */}
+      {hasCategory && <div class="card-row card-row-category"><slot name="category" /></div>}
+
+      {/* ── Row 3: Description (CSS clamped + JS truncated) ── */}
+      {displayDesc !== null && (
+        <div class="card-desc-wrapper">
+          <p class="card-desc">{displayDesc}</p>
         </div>
-        {Astro.slots.has("description") && (
-          <p class="card-desc">
-            <slot name="description" />
-          </p>
-        )}
-        {Astro.slots.has("tags") && (
-          <div class="card-tags">
-            <slot name="tags" />
-          </div>
-        )}
-      </>
-    ) : (
+      )}
+      {displayDesc === null && Astro.slots.has("description") && (
+        <div class="card-desc-wrapper">
+          <p class="card-desc"><slot name="description" /></p>
+        </div>
+      )}
+
+      {/* ── Row 4: Auto-generated doc link ── */}
+      <span class="card-doc-link">View documentation &rarr;</span>
+
+      {/* ── Row 5: Tags ── */}
+      {hasTags && <div class="card-row card-row-tags"><slot name="tags" /></div>}
+    </a>
+  ) : (
+    <a href={href} class="item-card" {...extraAttrs}>
       <slot />
-    )
-  }
-</a>
+    </a>
+  )
+}
 
 <style is:global>
-  /* ═══════════════════════════════════════════════════════════
-     UNIFIED CARD SHELL — Wait Statistics Blueprint v2
-     Cloned from the gold-standard Wait Statistics card design.
-     Every metric — padding, gap, font, border, height — matches
-     the wait-statistics dashboard tokens exactly.
-     ═══════════════════════════════════════════════════════════ */
+  /* ═══════════════════════════════════════════════════════════════════
+     UNIVERSAL WAIT STATISTICS LAYOUT BLUEPRINT v1
+     Every metric — padding, gap, font, border, height — enforces the
+     gold-standard Wait Statistics card design across all 11 collections.
+     ═══════════════════════════════════════════════════════════════════ */
 
+  /* ── Shell ── */
   .item-card {
     display: flex;
     flex-direction: column;
-    gap: clamp(4px, 0.6vw, 8px);
+    gap: clamp(4px, 0.6vw, 10px);
     padding: clamp(12px, 1.5vw, 22px);
     border: 1px solid var(--border-glass);
     border-radius: clamp(6px, 0.8vw, 10px);
@@ -90,7 +134,6 @@ if (!notransition) titleAttrs["transition:name"] = transitionName;
     text-decoration: none;
     color: inherit;
     min-width: 0;
-    /* Wait Stats uniform card height enforcement */
     min-height: 160px;
     transition:
       border-color 0.25s cubic-bezier(0.25, 1, 0.5, 1),
@@ -106,14 +149,14 @@ if (!notransition) titleAttrs["transition:name"] = transitionName;
     text-decoration: none;
   }
 
-  .card-header {
+  /* ── Row 1: Title + Severity ── */
+  .card-row-top {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     gap: clamp(4px, 0.8vw, 10px);
     min-width: 0;
   }
-
   .card-title {
     font-family: var(--font-mono);
     font-size: clamp(11px, 1.2vw, 14px);
@@ -124,44 +167,124 @@ if (!notransition) titleAttrs["transition:name"] = transitionName;
     hyphens: auto;
     min-width: 0;
   }
-
   .card-meta {
     flex-shrink: 0;
   }
 
+  /* ── Severity Pill ── */
+  .card-severity {
+    flex-shrink: 0;
+  }
+  .card-severity :global(.card-pill) {
+    display: inline-block;
+    font-size: clamp(9px, 0.9vw, 11px);
+    font-weight: 700;
+    padding: 2px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    line-height: 1.4;
+  }
+  .card-severity :global(.pill--critical),
+  .card-severity :global(.pill--high) {
+    background: rgba(231, 76, 60, 0.18);
+    color: #e74c3c;
+  }
+  .card-severity :global(.pill--medium) {
+    background: rgba(243, 156, 18, 0.18);
+    color: #f39c12;
+  }
+  .card-severity :global(.pill--low) {
+    background: rgba(39, 174, 96, 0.18);
+    color: #27ae60;
+  }
+  .card-severity :global(.pill--info) {
+    background: rgba(88, 166, 255, 0.18);
+    color: #58a6ff;
+  }
+
+  /* ── Row 2: Category Badge ── */
+  .card-row-category {
+    display: flex;
+  }
+
+  /* Collection-tinted category badges */
+  .cat-badge {
+    display: inline-block;
+    font-size: clamp(10px, 0.9vw, 11px);
+    font-weight: 600;
+    padding: 2px 10px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    line-height: 1.5;
+  }
+  .cat-badge--dmvs { background: #4a90d9; color: #fff; }
+  .cat-badge--functions { background: #7b68ee; color: #fff; }
+  .cat-badge--scripts { background: #2ecc71; color: #fff; }
+  .cat-badge--errors { background: #e74c3c; color: #fff; }
+  .cat-badge--catalog-views { background: #3498db; color: #fff; }
+  .cat-badge--stored-procedures { background: #e67e22; color: #fff; }
+  .cat-badge--tsql-reference { background: #9b59b6; color: #fff; }
+  .cat-badge--cookbook { background: #1abc9c; color: #fff; }
+  .cat-badge--architecture { background: #95a5a6; color: #111; }
+  .cat-badge--xevents { background: #34495e; color: #fff; }
+
+  /* ── Row 3: Description (3-line CSS clamp + JS literal-block guard) ── */
+  .card-desc-wrapper {
+    /* Enforce 3-line max-height regardless of content length */
+    max-height: 4.5em;           /* 3 lines at 1.5em line-height */
+    overflow: hidden;
+    flex: 1;
+  }
   .card-desc {
     font-size: clamp(11px, 1.1vw, 13px);
     color: var(--text-secondary);
     line-height: 1.5;
+    margin: 0;
+    /* 3-line clamp */
     display: -webkit-box;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    /* Safety nets for long unbroken strings */
     word-break: break-all;
     overflow-wrap: anywhere;
     box-sizing: border-box;
     width: 100%;
-    /* Stretch description to fill card height, pushing tags to bottom */
-    flex: 1;
   }
 
-  .card-tags {
+  /* ── Row 4: Documentation Link ── */
+  .card-doc-link {
+    font-size: clamp(11px, 1vw, 12px);
+    color: var(--accent);
+    display: inline-block;
+    opacity: 0.85;
+    transition: opacity 0.2s, text-decoration 0.2s;
+  }
+  .item-card:hover .card-doc-link {
+    opacity: 1;
+    text-decoration: underline;
+  }
+
+  /* ── Row 5: Tags ── */
+  .card-row-tags {
     display: flex;
     flex-wrap: wrap;
     gap: clamp(3px, 0.4vw, 6px);
     margin-top: auto;
   }
-
   .card-tag {
     font-size: clamp(10px, 1vw, 12px);
     color: var(--text-secondary);
     background: rgba(255, 255, 255, 0.05);
     padding: clamp(1px, 0.2vw, 3px) clamp(5px, 0.7vw, 9px);
-    border-radius: 4px;
+    border-radius: 10px;          /* capsule shape */
     font-family: var(--font-mono);
   }
-
   .card-tag-more {
     font-size: clamp(10px, 1vw, 12px);
     color: var(--text-secondary);

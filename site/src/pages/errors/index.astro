@@ -10,13 +10,6 @@ const sorted = allErrors.sort((a, b) => parseInt(a.data.name) - parseInt(b.data.
 const categorySet = new Set(sorted.map((e) => e.data.category || "other"));
 const CATEGORIES = [...categorySet].sort();
 
-const SEVERITY_COLORS = {
-  critical: "#e74c3c",
-  high: "#ff6b6b",
-  medium: "#f39c12",
-  low: "#3498db",
-  info: "#6272a4",
-};
 ---
 
 <BaseLayout
@@ -54,18 +47,18 @@ const SEVERITY_COLORS = {
     {
       sorted.map((entry) => {
         const { name, description, severity, category, tags } = entry.data;
-        const color = SEVERITY_COLORS[severity] || "#6272a4";
         return (
-          <Card href={`/sqlkraft/errors/error-${name}/`} data-cat={category} notransition>
+          <Card
+            href={`/sqlkraft/errors/error-${name}/`}
+            data-cat={category}
+            notransition
+            description={description || "No description available."}
+          >
             <span slot="title">#{name}</span>
-            <span
-              slot="meta"
-              class="severity-badge"
-              style={`background: ${color}20; color: ${color}; border-color: ${color}40;`}
-            >
-              {severity}
+            <span slot="severity">
+              <span class="card-pill pill--{severity}">{severity}</span>
             </span>
-            <p slot="description">{description || "No description available."}</p>
+            <span slot="category" class="cat-badge cat-badge--errors">Errors</span>
             <div slot="tags">
               {tags.slice(0, 3).map((tag) => (
                 <span class="card-tag">#{tag}</span>
@@ -158,14 +151,5 @@ const SEVERITY_COLORS = {
     gap: clamp(8px, 1vw, 14px);
   }
 
-  .severity-badge {
-    font-size: clamp(9px, 1vw, 11px);
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: clamp(1px, 0.2vw, 3px) clamp(5px, 0.7vw, 9px);
-    border-radius: 4px;
-    border: 1px solid;
-    letter-spacing: 0.5px;
-    white-space: nowrap;
-  }
+
 </style>

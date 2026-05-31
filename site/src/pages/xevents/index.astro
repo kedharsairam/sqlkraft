@@ -6,14 +6,6 @@ import { getCollection } from "astro:content";
 const allEvents = await getCollection("xevents");
 const sorted = allEvents.sort((a, b) => a.data.name.localeCompare(b.data.name));
 
-// Category labels for display
-const CATEGORY_LABELS = {
-  "system-health": "System Health",
-  deadlock: "Deadlock Analysis",
-  "query-performance": "Query Performance",
-  "wait-statistics": "Wait Statistics",
-  general: "General",
-};
 ---
 
 <BaseLayout
@@ -38,16 +30,15 @@ const CATEGORY_LABELS = {
   <div class="xevents-grid">
     {
       sorted.map((entry) => {
-        const { name, title, description, category, tags } = entry.data;
+        const { name, description, tags } = entry.data;
         return (
-          <Card href={`/sqlkraft/xevents/${entry.slug}/`}>
-            <div class="xevent-header">
-              <span class="card-badge">{CATEGORY_LABELS[category] || category}</span>
-              <span class="card-name">{name}</span>
-            </div>
-            <h3 class="card-title">{title}</h3>
-            <p class="card-desc">{description || "No description available."}</p>
-            <div class="card-tags">
+          <Card
+            href={`/sqlkraft/xevents/${entry.slug}/`}
+            description={description || "No description available."}
+          >
+            <span slot="title">{name}</span>
+            <span slot="category" class="cat-badge cat-badge--xevents">Extended Events</span>
+            <div slot="tags">
               {tags.slice(0, 4).map((tag) => (
                 <span class="card-tag">#{tag}</span>
               ))}
@@ -100,24 +91,5 @@ const CATEGORY_LABELS = {
     grid-template-columns: repeat(auto-fill, minmax(clamp(280px, 22vw, 360px), 1fr));
     gap: clamp(10px, 1.2vw, 18px);
   }
-  .xevent-header {
-    display: flex;
-    align-items: center;
-    gap: clamp(6px, 0.8vw, 12px);
-  }
-  .card-badge {
-    font-size: clamp(10px, 0.9vw, 12px);
-    font-weight: 500;
-    color: var(--text-secondary);
-    background: rgba(255, 255, 255, 0.06);
-    padding: clamp(1px, 0.2vw, 3px) clamp(6px, 0.8vw, 11px);
-    border-radius: 4px;
-    white-space: nowrap;
-  }
-  .card-name {
-    font-family: var(--font-mono);
-    font-size: clamp(11px, 1vw, 13px);
-    color: var(--accent);
-    letter-spacing: -0.01em;
-  }
+
 </style>

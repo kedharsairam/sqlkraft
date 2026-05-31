@@ -48,12 +48,15 @@ const scriptsData = sorted;
   <div class="card-grid" id="card-grid">
     {
       scriptsData.map((s) => (
-        <Card href={`/sqlkraft/scripts/${s.slug}/`}>
+        <Card
+          href={`/sqlkraft/scripts/${s.slug}/`}
+          description={s.data.description || "No description available."}
+        >
           <span slot="title">{s.data.name}</span>
-          <span slot="meta" class="cat-badge">
+          <span slot="meta" class="cat-sub-badge">
             {CATEGORY_LABELS[s.data.category] || s.data.category}
           </span>
-          <p slot="description">{s.data.description || "No description available."}</p>
+          <span slot="category" class="cat-badge cat-badge--scripts">Scripts</span>
           <div slot="tags">
             {s.data.tags.slice(0, 4).map((tag) => (
               <span class="card-tag">#{tag}</span>
@@ -109,7 +112,7 @@ const scriptsData = sorted;
     grid-template-columns: repeat(auto-fill, minmax(clamp(240px, 18vw, 320px), 1fr));
     gap: clamp(8px, 1vw, 14px);
   }
-  .cat-badge {
+  .cat-sub-badge {
     font-size: clamp(10px, 1vw, 12px);
     font-weight: 500;
     color: var(--text-secondary);

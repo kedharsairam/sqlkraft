@@ -47,14 +47,18 @@ const CATEGORIES = [...categorySet].sort();
       sorted.map((entry) => {
         const { name, description, returnType, category, tags } = entry.data;
         return (
-          <Card href={`/sqlkraft/functions/${entry.slug}/`} data-cat={category}>
+          <Card
+            href={`/sqlkraft/functions/${entry.slug}/`}
+            data-cat={category}
+            description={description || "No description available."}
+          >
             <span slot="title">{name}</span>
             {returnType && (
               <span slot="meta" class="return-badge">
                 {returnType}
               </span>
             )}
-            <p slot="description">{description || "No description available."}</p>
+            <span slot="category" class="cat-badge cat-badge--functions">Functions</span>
             <div slot="tags">
               {tags.slice(0, 3).map((tag) => (
                 <span class="card-tag">#{tag}</span>
