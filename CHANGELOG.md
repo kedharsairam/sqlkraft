@@ -5,6 +5,46 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.52.0] — 2026-05-31 — **Universal Wait Statistics Layout Blueprint Alignment and Ingestion Truncation**
+
+### Added
+
+- **Universal 5-row Wait Statistics card layout blueprint** — Every card across all 11 collections now renders the exact flex-row and flex-column structure cloned from the gold-standard Wait Statistics page. `Card.astro` rewritten from 170-line slot shell to full 5-row layout engine:
+  - **Row 1** — Title (left, mono font, break-word) + Semantic Status Pill (right, uppercase badge with collection-tinted color). Supports `slot="severity"` with `.pill--{level}` classes (critical/high=red, medium=amber, low=green, info=blue) and fallback to `slot="meta"` for backward compatibility.
+  - **Row 2** — Sub-title category badge block with colored background matching the item's collection type (`.cat-badge--dmvs`, `--functions`, `--scripts`, `--errors`, `--catalog-views`, `--stored-procedures`, `--tsql-reference`, `--cookbook`, `--architecture`, `--xevents`).
+  - **Row 3** — Description text with aggressive 3-line CSS clamp (`-webkit-line-clamp: 3`, `max-height: 4.5em`, `overflow: hidden`) plus JS-based literal-block truncation in component frontmatter. The `truncateDescription()` function automatically chops the snippet at the first occurrence of long comma-separated single-quoted blocks (`'MoveOperation','OnOperation','SwitchOperation'`).
+  - **Row 4** — Auto-generated "View documentation →" link token matching the blue `Diagnostic script available →` styling. Color: `var(--accent)`, reveals underline on card hover.
+  - **Row 5** — Capsule-shaped `border-radius: 10px` gray tags (`.card-tag`) with flex-wrap layout.
+  - Description accepted as a `description` prop (auto-truncated) or via `slot="description"` fallback (raw render).
+  - Default slot fallback preserved for complex cards (Wait Statistics, custom layouts).
+
+- **11 collection index pages migrated to blueprint** — Added `slot="category"` with collection-specific `.cat-badge--*` class to every `<Card>` invocation. Collections with severity data (errors, cookbook) migrated from `slot="meta"` to `slot="severity"` with proper `.card-pill.pill--{level}` markup. Architecture and XEvents pages converted from default-slot custom HTML to the named-slots blueprint.
+
+### Removed
+
+- **Stale per-collection card CSS purged** — Deleted `.severity-badge` (errors page, 9 lines), `.sev-badge` + all `.sev-*` severity classes (cookbook page, 28 lines), old `.cat-badge` renamed to `.cat-sub-badge` (scripts page to avoid conflict with Card.astro's global `.cat-badge`), `.xevent-header` + `.card-badge` + `.card-name` (xevents page, 22 lines). Removed unused `SEVERITY_COLORS` object (errors), `CATEGORY_LABELS` (xevents), and `color` variable computation from errors page frontmatter.
+
+### Changed
+
+- `site/src/components/Card.astro` — Complete structural rewrite: 5-row layout template, `description` prop with `truncateDescription()` literal-block guard, `slot="severity"` with `.pill--{level}` CSS classes, auto-generated doc-link, `slot="category"` with `.cat-badge--*` collection-tinted colors, `max-height: 4.5em` + `-webkit-line-clamp: 3` guarantee on `.card-desc`, capsule `border-radius: 10px` on `.card-tag`
+- `site/src/pages/dmvs/index.astro` — Added `slot="category"` with DMVs badge
+- `site/src/pages/scripts/index.astro` — Added `slot="category"` with Scripts badge; renamed local `.cat-badge` → `.cat-sub-badge`
+- `site/src/pages/functions/index.astro` — Added `slot="category"` with Functions badge
+- `site/src/pages/errors/index.astro` — Added `slot="category"` + `slot="severity"`; removed `SEVERITY_COLORS` + `.severity-badge` CSS
+- `site/src/pages/catalog-views/index.astro` — Added `slot="category"` with Catalog Views badge
+- `site/src/pages/stored-procedures/index.astro` — Added `slot="category"` with Stored Procedures badge
+- `site/src/pages/tsql-reference/index.astro` — Added `slot="category"` with T-SQL Reference badge
+- `site/src/pages/cookbook/index.astro` — Added `slot="category"` + `slot="severity"`; removed `.sev-badge` CSS
+- `site/src/pages/architecture/index.astro` — Converted from default slot to named slots: `slot="title"`, `slot="category"` with Architecture badge
+- `site/src/pages/xevents/index.astro` — Converted from default slot to named slots: `slot="title"`, `slot="category"` with Extended Events badge; removed `CATEGORY_LABELS` + `.xevent-header`/`.card-badge`/`.card-name` CSS
+- `site/package.json` — version updated to `0.52.0-beta`
+
+### Build
+
+- 5,241 pages, 0 errors
+
+---
+
 ## [0.51.0] — 2026-05-31 — **Remove Redundant Category Section Headers from Search Palette**
 
 ### Removed

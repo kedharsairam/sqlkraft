@@ -60,9 +60,13 @@ const CATEGORY_LABELS = {
       sorted.map((entry) => {
         const { name, description, category, tags } = entry.data;
         return (
-          <Card href={`/sqlkraft/tsql-reference/${entry.slug}/`} data-cat={category}>
+          <Card
+            href={`/sqlkraft/tsql-reference/${entry.slug}/`}
+            data-cat={category}
+            description={description || "No description available."}
+          >
             <span slot="title">{name}</span>
-            <p slot="description">{description || "No description available."}</p>
+            <span slot="category" class="cat-badge cat-badge--tsql-reference">T-SQL Reference</span>
             <div slot="tags">
               {tags.slice(0, 3).map((tag) => (
                 <span class="card-tag">#{tag}</span>
