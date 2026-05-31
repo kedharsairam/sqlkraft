@@ -164,7 +164,7 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
         return hits.slice(0, 28);
       }
 
-      /* ── Render results as <ul>/<li> using __renderCard ── */
+      /* ── Render results as flat <ul>/<li> (no category headers) ── */
       function render(hits) {
         if (hits.length === 0) {
           results.style.display = "none";
@@ -175,80 +175,15 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
 
         results.style.display = "";
 
-        var groups = {};
-        for (var ri = 0; ri < hits.length; ri++) {
-          var h = hits[ri];
-          var cat = h.item.c || "other";
-          if (!groups[cat]) groups[cat] = [];
-          groups[cat].push(h);
-        }
-
-        var catOrder = [
-          "dmvs",
-          "wait-statistics",
-          "scripts",
-          "cookbook",
-          "catalog-views",
-          "stored-procedures",
-          "functions",
-          "tsql-reference",
-          "errors",
-          "architecture",
-          "operations",
-        ];
-
-        /* ── Simple badge label (matching CardPalette labels) ── */
-        function badgeLabel(cat) {
-          var labels = {
-            dmvs: "DMVs",
-            "wait-statistics": "Waits",
-            scripts: "Scripts",
-            cookbook: "Recipes",
-            "catalog-views": "Catalog",
-            "stored-procedures": "SPs",
-            functions: "Functions",
-            "tsql-reference": "T-SQL",
-            errors: "Errors",
-            architecture: "Arch",
-            operations: "Ops",
-            xevents: "XEvents",
-          };
-          return (
-            labels[cat] ||
-            cat.replace(/-/g, " ").replace(/\b\w/g, function (c) {
-              return c.toUpperCase();
-            })
-          );
-        }
-
         var html = '<ul class="palette-list">';
-
-        function appendGroup(key, group) {
-          html += '<li class="palette-cat-header" role="separator">' + badgeLabel(key) + "</li>";
-          for (var gj = 0; gj < group.length; gj++) {
-            var gItem = group[gj];
-            html +=
-              '<li class="palette-item" style="animation-delay:' +
-              gj * 20 +
-              'ms">' +
-              window.__renderCard(gItem.item, baseUrl) +
-              "</li>";
-          }
+        for (var ri = 0; ri < hits.length; ri++) {
+          html +=
+            '<li class="palette-item" style="animation-delay:' +
+            ri * 20 +
+            'ms">' +
+            window.__renderCard(hits[ri].item, baseUrl) +
+            "</li>";
         }
-
-        for (var ck = 0; ck < catOrder.length; ck++) {
-          var key = catOrder[ck];
-          if (groups[key]) {
-            appendGroup(key, groups[key]);
-            delete groups[key];
-          }
-        }
-        for (var catKey in groups) {
-          if (groups.hasOwnProperty(catKey)) {
-            appendGroup(catKey, groups[catKey]);
-          }
-        }
-
         html += "</ul>";
         results.innerHTML = html;
         resultItems = [].slice.call(results.querySelectorAll(".palette-item"));
@@ -522,16 +457,14 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
 
   /* ── Zero text-underlines across entire palette ── */
   .palette-results a,
-  .palette-list a,
-  .palette-item a,
   .palette-result {
     text-decoration: none !important;
   }
 
-  /* ── Visual separation between distinct result sets ── */
+  /* ── Flat list — seamless result stacking ── */
   .palette-list {
-    /* Separation between category groups */
-    border-top: 1px solid rgba(255, 255, 255, 0.03);
-    padding-top: 2px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
   }
 </style>

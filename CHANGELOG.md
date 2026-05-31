@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.51.0] — 2026-05-31 — **Remove Redundant Category Section Headers from Search Palette**
+
+### Removed
+
+- **Category header labels from search results** — The `.palette-cat-header` rendering logic in `SearchPalette.astro`'s `render()` function has been deleted entirely. Category headers (DMVs, Waits, Scripts, etc.) between result groups were redundant because every individual result row already displays its category badge on the right side. The search list now renders as a pure flat list of back-to-back result rows with zero intervening label bars.
+  - Removed: `groups` object, `catOrder` array, `badgeLabel()`, `appendGroup()`, and the header iteration loops
+  - `render()` simplified to iterate all hits in score order with a single loop
+  - Removed `.palette-cat-header` CSS block (17 properties + `:first-child` variant) from `CardPalette.astro`
+  - Removed `.palette-list a`, `.palette-item a` from text-decoration rule in `SearchPalette.astro` (stale selectors)
+  - Replaced `.palette-list` `border-top` / `padding-top` with clean `margin: 0; padding: 0; list-style: none` reset
+
+### Changed
+
+- `site/src/components/SearchPalette.astro` — Flattened `render()` function; removed category grouping and header generation; pruned stale CSS selectors
+- `site/src/components/CardPalette.astro` — Removed entire `.palette-cat-header` rule set (~20 lines)
+- `site/package.json` — version updated to `0.51.0-beta`
+
+### Build
+
+- 5,241 pages, 0 errors
+
+---
+
 ## [0.50.0] — 2026-05-31 — **Global CSS Override for Spotlight Search UI Components**
 
 ### Fixed
