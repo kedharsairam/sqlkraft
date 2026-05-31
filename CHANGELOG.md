@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [0.50.0] — 2026-05-31 — **Global CSS Override for Spotlight Search UI Components**
+
+### Fixed
+
+- **Astro scoped CSS blind spot for runtime-injected search elements (critical)** — Search palette results are dynamically injected via client-side `innerHTML` in the `render()` and `__renderCard()` functions. Astro's `<style>` block uses data-attribute scoping that only applies to elements present in the component template at compile time. Runtime-injected elements (`.palette-cat-header`, `.palette-list`, `.palette-result`, `.palette-item`) received zero styling because the scoped CSS selectors never matched them.
+  - Changed `<style>` to `<style is:global>` in `SearchPalette.astro` — all palette CSS rules now emit as unscoped global styles that match runtime-injected DOM elements
+  - Added `!important` flags to every property on `.palette-cat-header` in `CardPalette.astro` — ensures Apple-grade spec (11px, 600 weight, 0.05em tracking, `rgba(255,255,255,0.4)` color, 8px 20px 4px padding, zero margin, no border) dominates over any inherited or default user-agent styles
+  - Added `!important` to `.palette-cat-header:first-child` margin reset
+
+### Changed
+
+- `site/src/components/SearchPalette.astro` — `<style>` → `<style is:global>`
+- `site/src/components/CardPalette.astro` — All `.palette-cat-header` properties now carry `!important`
+
+### Build
+
+- 5,241 pages, 0 errors
+
+---
+
 ## [0.49.0] — 2026-05-31 — **High-Fidelity Search Category Labeling and Card Text Wrapping Geometry**
 
 ### Changed

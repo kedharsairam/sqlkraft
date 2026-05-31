@@ -1,24 +1,26 @@
 # SqlKraft — Session Notes
 
-## v0.49.0-Beta — High-Fidelity Search Category Labeling and Card Text Wrapping Geometry
+## v0.50.0-Beta — Global CSS Override for Spotlight Search UI Components
 
 ### What was done
 
-1. **Apple-grade search category headers** (CardPalette.astro)
-   - font-size: 11px (was 10px), font-weight: 600 (was 700)
-   - letter-spacing: 0.05em (was 0.1em)
-   - color: rgba(255,255,255,0.4) (was 0.25)
-   - Removed border-bottom separator
-   - Padding tightened to 8px 20px 4px — minimal vertical footprint
+1. **Fixed Astro scoped CSS blind spot** (SearchPalette.astro)
+   - Changed `<style>` to `<style is:global>` — Astro's scoped CSS uses data-attribute selectors
+     that only apply to compile-time elements. Search palette results are injected at runtime
+     via `innerHTML`, so scoped CSS never matched them. Now emits unscoped global styles.
 
-2. **Card description padding boundaries sealed** (Card.astro)
-   - Added `word-break: break-all` (was break-word)
-   - Added `overflow-wrap: anywhere`
-   - Added `box-sizing: border-box; width: 100%;`
-   - Long unbroken strings now wrap before touching the card's right padding
+2. **!important enforcement on category headers** (CardPalette.astro)
+   - Every `.palette-cat-header` property now has `!important` to dominate over
+     inherited/user-agent styles: font-size, font-weight, letter-spacing, text-transform,
+     color, padding, margin, border, position, z-index, background, backdrop-filter, font-family
 
-3. **SearchPalette.astro stale CSS cleaned**
-   - Replaced `.palette-card` reference with `.palette-result`
+### Root cause
+- `.palette-list`, `.palette-cat-header`, `.palette-result`, `.palette-item` elements are
+  created by `render()` / `__renderCard()` via `innerHTML` — they never existed in the
+  Astro component template at compile time, so scoped data-attribute CSS never matched them.
+- CardPalette.astro already used `<style is:global>` (v0.48.0), but SearchPalette.astro
+  still used `<style>` (scoped), which caused the `.palette-list` and text-decoration rules
+  to silently fail.
 
 ### Build results
-- 5,241 pages, 0 errors, ~25s
+- 5,241 pages, 0 errors, ~48s
