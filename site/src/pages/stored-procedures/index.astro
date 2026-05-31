@@ -53,7 +53,9 @@ const CATEGORIES = [...categorySet].sort();
             description={description || "No description available."}
           >
             <span slot="title">{name}</span>
-            <span slot="category" class="cat-badge cat-badge--stored-procedures">Stored Procedures</span>
+            <span slot="category" class="cat-badge cat-badge--stored-procedures">
+              Stored Procedures
+            </span>
             <div slot="tags">
               {tags.slice(0, 3).map((tag) => (
                 <span class="card-tag">#{tag}</span>

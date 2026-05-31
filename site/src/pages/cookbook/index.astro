@@ -80,7 +80,9 @@ const globallySorted = [...sorted].sort((a, b) => {
             <span slot="severity">
               <span class="card-pill pill--{sev}">{sev}</span>
             </span>
-            <span slot="category" class="cat-badge cat-badge--cookbook">Cookbook</span>
+            <span slot="category" class="cat-badge cat-badge--cookbook">
+              Cookbook
+            </span>
             <div slot="tags">
               {tags.slice(0, 3).map((tag) => (
                 <span class="card-tag">#{tag}</span>
@@ -172,6 +174,4 @@ const globallySorted = [...sorted].sort((a, b) => {
     grid-template-columns: repeat(auto-fill, minmax(clamp(240px, 18vw, 320px), 1fr));
     gap: clamp(8px, 1vw, 14px);
   }
-
-
 </style>

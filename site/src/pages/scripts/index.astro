@@ -56,7 +56,9 @@ const scriptsData = sorted;
           <span slot="meta" class="cat-sub-badge">
             {CATEGORY_LABELS[s.data.category] || s.data.category}
           </span>
-          <span slot="category" class="cat-badge cat-badge--scripts">Scripts</span>
+          <span slot="category" class="cat-badge cat-badge--scripts">
+            Scripts
+          </span>
           <div slot="tags">
             {s.data.tags.slice(0, 4).map((tag) => (
               <span class="card-tag">#{tag}</span>
