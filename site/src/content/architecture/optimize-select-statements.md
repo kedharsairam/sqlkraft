@@ -1,7 +1,7 @@
 ---
 title: "Optimize SELECT statements"
 topic: "query-processing"
-description: "You can change the meaning of the query by adding parentheses to force evaluation of the"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

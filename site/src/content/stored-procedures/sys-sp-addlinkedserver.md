@@ -2,7 +2,7 @@
 name: "sys.sp_addlinkedserver"
 title: "sp_addlinkedserver"
 category: "general"
-description: "be specified in the parameter. Optionally, the connection string can also supply a failover partner name. from a local login, or a login that isn't part of the role, you might receive the following error: To resolve this issue, add the parameter to your connection string. In the following is the User ID passed to the connection string: For more information, see Access to the remote server is denie"
+description: "be specified in the parameter. Optionally, the connection string can also supply a failover partner name. from a local login, or a login that isn't part of the role, you might receive the following error: To resolve this issue, add the parameter to your connection string."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

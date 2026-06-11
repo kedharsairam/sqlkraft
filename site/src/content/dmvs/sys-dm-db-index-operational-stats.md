@@ -2,7 +2,7 @@
 name: "sys.dm_db_index_operational_stats"
 title: "sys.dm_db_index_operational_stats"
 category: "index"
-description: "SQL database in Microsoft Fabric Returns the lower level data access, locking, and latching statistics for each partition of a table Transact-SQL syntax conventions . Valid inputs are the ID number of a database, NULL, 0, or DEFAULT. The default is 0. NULL, 0, and DEFAULT are equivalent values in this Specify NULL to return information for all databases in the instance of SQL Server. If you , you "
+description: "SQL database in Microsoft Fabric Returns the lower level data access, locking, and latching statistics for each partition of a table Transact-SQL syntax conventions . Valid inputs are the ID number of a database, NULL, 0, or DEFAULT. The default is 0. NULL, 0, and DEFAULT are equivalent values in this Specify NULL to return information for all databases in the instance of SQL Server."
 tags: ["index", "dmv"]
 pubDate: 2026-05-29
 syntax: |

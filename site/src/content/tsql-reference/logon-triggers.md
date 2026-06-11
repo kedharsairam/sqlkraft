@@ -2,7 +2,7 @@
 name: "Logon triggers"
 title: "Logon triggers"
 category: "statements"
-description: "For more information about DDL triggers, see"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

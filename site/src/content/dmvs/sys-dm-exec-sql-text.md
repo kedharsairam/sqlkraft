@@ -2,7 +2,7 @@
 name: "sys.dm_exec_sql_text"
 title: "sys.dm_exec_sql_text"
 category: "execution"
-description: "Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Size of the unpars"
+description: "Number of characters into the currently executing batch or stored procedure at occurs."
 tags: ["execution", "dmv"]
 pubDate: 2026-05-29
 syntax: "sys.dm_exec_sql_text(sql_handle | plan_handle)"

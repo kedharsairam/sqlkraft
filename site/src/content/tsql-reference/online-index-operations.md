@@ -2,7 +2,7 @@
 name: "Online index operations"
 title: "Online index operations"
 category: "queries"
-description: "is specified when the row or page lock options are set, the settings are applied to all"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

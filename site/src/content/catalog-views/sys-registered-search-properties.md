@@ -2,7 +2,7 @@
 name: "sys.registered_search_properties"
 title: "sys.registered_search_properties"
 category: "compatibility"
-description: "To view the integer identifier of any property that exists in a search property list of the current database, use the sys.registered_search_properties catalog view, as follows: PROPERTY_DESCRIPTION =' property_description Specifies a user-defined description of the property. property_description is a string of up to 512 characters. This option is optional. Drops the specified property from the pro"
+description: "To view the integer identifier of any property that exists in a search property list of the current database, use the sys.registered_search_properties catalog view, as follows: PROPERTY_DESCRIPTION =' property_description Specifies a user-defined description of the property. property_description is a string of up to 512 characters. This option is optional."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

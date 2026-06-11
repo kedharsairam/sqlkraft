@@ -2,7 +2,7 @@
 name: "ONLINE option"
 title: "ONLINE option"
 category: "queries"
-description: "index is disabled, the"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

@@ -2,7 +2,7 @@
 name: "sys.sp_help_log_shipping_secondary_primary"
 title: "sp_help_log_shipping_secondary_primary"
 category: "general"
-description: "This stored procedure retrieves the settings for a given primary database on the secondary Transact-SQL syntax conventions The name of the primary instance of the SQL Server Database Engine in the log shipping The name of the database on the primary server. The result set contains the following columns from"
+description: "This stored procedure retrieves the settings for a given primary database on the secondary Transact-SQL syntax conventions The name of the primary instance of the SQL Server Database Engine in the log shipping The name of the database on the primary server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

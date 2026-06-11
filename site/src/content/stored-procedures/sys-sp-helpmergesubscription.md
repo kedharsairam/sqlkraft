@@ -2,7 +2,7 @@
 name: "sys.sp_helpmergesubscription"
 title: "sp_helpmergesubscription"
 category: "general"
-description: "Returns information about a subscription to a merge publication, both push and pull. This stored procedure is executed at the Publisher on the publication database or at a republishing Subscriber on the subscription database. Transact-SQL syntax conventions must already exist and conform to the rules for merge publications and subscriptions in the current database is returned. information about al"
+description: "Returns information about a subscription to a merge publication, both push and pull. This stored procedure is executed at the Publisher on the publication database or at a republishing Subscriber on the subscription database. Transact-SQL syntax conventions must already exist and conform to the rules for merge publications and subscriptions in the current database is returned."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

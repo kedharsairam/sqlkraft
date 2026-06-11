@@ -1,7 +1,7 @@
 ---
 title: "Analyze current wait buffer latches"
 topic: "memory-management"
-description: "A similar command can be run to clear the"
+description: ""
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -94,8 +94,6 @@ The statistics exposed by this query are described as follows:
 
 ## Description
 
-ID of the session associated with the task.
-
 The type of wait that SQL Server has recorded in the engine, which is
 
 preventing a current request from being executed.
@@ -108,19 +106,7 @@ The total wait time in milliseconds spent waiting on this wait type since SQL
 
 Server instance was started or since cumulative wait statistics were reset.
 
-ID of the session that is blocking the request.
-
-ID of the execution context associated with the task.
-
-The
-
 column lists the exact page being waited for in
-
-the format:
-
-ﾉ
-
-Expand table
 
 The following query returns information for all non-buffer latches:
 

@@ -2,7 +2,7 @@
 name: "sys.all_columns"
 title: "sys.all_columns"
 category: "objects"
-description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Shows the union of all columns belonging to user-defined objects and system objects. ID of the object to which this column belongs. Name of the column. Is unique within the object. ID of the column. Is unique within the object. Column IDs might not be sequential. ID of the system-type of the column. ID of the type of the column as de"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Shows the union of all columns belonging to user-defined objects and system objects."
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "sp_tableoption 'text in row'"

@@ -2,7 +2,7 @@
 name: "sys.database_audit_specification_details"
 title: "sys.database_audit_specification_details"
 category: "compatibility"
-description: "Contains information about the database audit specifications in a SQL Server audit on a server instance for all databases. For more information, see SQL Server Audit (Database Engine) list of all audit_action_id's and their names, query sys.dm_audit_actions (Transact-SQL) ID of the audit specification. Name of audit action or audit action group Identifies class of object which is being audited. De"
+description: "Contains information about the database audit specifications in a SQL Server audit on a server instance for all databases. For more information, see SQL Server Audit (Database Engine) list of all audit_action_id's and their names, query sys.dm_audit_actions (Transact-SQL) ID of the audit specification."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

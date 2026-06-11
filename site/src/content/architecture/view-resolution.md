@@ -1,7 +1,7 @@
 ---
 title: "View resolution"
 topic: "io-fundamentals"
-description: "is optimized in SQL Server, the value of"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

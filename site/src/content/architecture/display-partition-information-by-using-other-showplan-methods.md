@@ -1,7 +1,7 @@
 ---
 title: "Display partition information by using other Showplan methods"
 topic: "io-fundamentals"
-description: "As shown in the previous illustration, this attribute is displayed in the properties of the"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

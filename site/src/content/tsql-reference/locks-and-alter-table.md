@@ -2,7 +2,7 @@
 name: "Locks and ALTER TABLE"
 title: "Locks and ALTER TABLE"
 category: "statements"
-description: "You can change the length, precision, or scale of a column by specifying a new size for the"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

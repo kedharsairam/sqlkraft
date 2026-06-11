@@ -2,7 +2,7 @@
 name: "level 150"
 title: "Level 150"
 category: "statements"
-description: "data distribution and usage patterns for all"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

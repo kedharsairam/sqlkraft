@@ -2,7 +2,7 @@
 name: "Upgrade databases"
 title: "Upgrade databases"
 category: "statements"
-description: "and a path that only visits the root is represented by a single slash. For levels underneath the"
+description: "and a path that only visits the root is represented by a single slash."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

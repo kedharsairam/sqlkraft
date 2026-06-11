@@ -1,7 +1,7 @@
 ---
 title: "Appendix: Automate memory dump capture"
 topic: "memory-management"
-description: "observed contention points also on the"
+description: ""
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---

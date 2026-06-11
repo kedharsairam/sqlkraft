@@ -2,7 +2,7 @@
 name: "xquery-aggregate-functions-max"
 title: "XQuery - Aggregate Functions - max"
 category: "xquery"
-description: "XQuery Language Reference: Aggregate Functions - max"
+description: ""
 syntax: "fn:max($arg as xdt:anyAtomicType*) as xdt:anyAtomicType?"
 tags:
   - "xquery"

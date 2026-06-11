@@ -2,7 +2,7 @@
 name: "xquery-aggregate-functions-sum"
 title: "XQuery - Aggregate Functions - sum"
 category: "xquery"
-description: "XQuery Language Reference: Aggregate Functions - sum"
+description: ""
 syntax: "AdventureWorks2022"
 tags:
   - "xquery"

@@ -2,7 +2,7 @@
 name: "Basic PIVOT example"
 title: "Basic PIVOT example"
 category: "queries"
-description: "In Microsoft Fabric and Azure Synapse Analytics pools, queries with"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

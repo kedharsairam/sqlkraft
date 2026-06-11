@@ -2,7 +2,7 @@
 name: "sys.sp_recompile"
 title: "sp_recompile"
 category: "general"
-description: "Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Causes stored procedures, triggers, and user-defined functions to be recompiled the next time that they're run. It does this by dropping the existing plan from the procedure cache, forcing a new plan to be created the next time that the procedure or trigger is run. In a SQL Server Profiler collection, the event is logge"
+description: "Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Causes stored procedures, triggers, and user-defined functions to be recompiled the next time that they're run. It does this by dropping the existing plan from the procedure cache, forcing a new plan to be created the next time that the procedure or trigger is run."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

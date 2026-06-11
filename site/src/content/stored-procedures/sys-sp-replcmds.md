@@ -2,7 +2,7 @@
 name: "sys.sp_replcmds"
 title: "sp_replcmds"
 category: "general"
-description: "Returns the commands for transactions marked for replication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The number of transactions to return information about. which specifies the next transaction waiting for distribution. procedure should be run only to troubleshoot problems with replication. Arguments for extended stored proce"
+description: "Returns the commands for transactions marked for replication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The number of transactions to return information about. which specifies the next transaction waiting for distribution. procedure should be run only to troubleshoot problems with replication."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

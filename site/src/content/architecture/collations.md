@@ -1,7 +1,7 @@
 ---
 title: "Collations"
 topic: "io-fundamentals"
-description: ". For more information, see"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

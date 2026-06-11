@@ -55,10 +55,6 @@ Cursor Functions
 
 Return information about cursors.
 
-Date and Time Data Types
-
-and Functions
-
 Perform operations on a date and time input values and return string,
 
 numeric, or date and time values.
@@ -69,10 +65,6 @@ Perform operations to convert to and from character representations of
 
 graph node and edge IDs.
 
-JSON Functions
-
 Validate, query, or change JSON data.
-
-Expand table
 
 #### Function category

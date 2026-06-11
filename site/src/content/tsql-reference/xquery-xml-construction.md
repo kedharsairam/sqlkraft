@@ -54,8 +54,6 @@ The element has three element node children,
 
 , respectively.
 
-SQL
-
 ７
 
 Note

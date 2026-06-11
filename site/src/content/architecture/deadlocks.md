@@ -1,7 +1,7 @@
 ---
 title: "Deadlocks"
 topic: "locking"
-description: "), and the log sequence number (LSN) of the"
+description: ""
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

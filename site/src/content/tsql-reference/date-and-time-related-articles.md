@@ -2,7 +2,7 @@
 name: "Date and time-related articles"
 title: "Date and time-related articles"
 category: "data-types"
-description: "function returns the"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -225,39 +225,23 @@ sp_helplanguage [ [
 '*language*'
 ```
 
-```sql
-sp_helplanguage
-```
+`sp_helplanguage`
 
 ```sql
 ISDATE (
 <expression> )
 ```
 
-```sql
-ISDATE
-```
+`ISDATE`
 
-```sql
-ISDATE
-```
+`ISDATE`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-FORMAT
-```
+`FORMAT`
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`

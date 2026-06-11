@@ -2,7 +2,7 @@
 name: "sys.sp_enable_event_stream"
 title: "sys.sp_enable_event_stream"
 category: "general"
-description: "Enables change event streaming at the database level for the current database context. change event streaming (preview)? was introduced in SQL Server 2025 (17.x) and Azure SQL Transact-SQL syntax conventions server role membership can execute this procedure. Change event streaming is currently in Azure SQL Database (preview feature database scoped configuration not required). During preview, this "
+description: "Enables change event streaming at the database level for the current database context. change event streaming (preview)? was introduced in SQL Server 2025 (17.x) and Azure SQL Transact-SQL syntax conventions server role membership can execute this procedure. Change event streaming is currently in Azure SQL Database (preview feature database scoped configuration not required)."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

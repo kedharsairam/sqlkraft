@@ -2,7 +2,7 @@
 name: "xquery-boolean-constructor-functions-false"
 title: "XQuery - Boolean Constructor Functions - false"
 category: "xquery"
-description: "XQuery Language Reference: Boolean Constructor Functions - false"
+description: ""
 syntax: 'xs:boolean("0")'
 tags:
   - "xquery"

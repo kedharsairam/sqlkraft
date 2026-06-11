@@ -1,7 +1,7 @@
 ---
 title: "GAM and SGAM pages"
 topic: "query-processing"
-description: "Starting with SQL Server 2019 (15.x), the"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

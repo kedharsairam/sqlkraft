@@ -2,7 +2,7 @@
 name: "sys.sp_changemergesubscription"
 title: "sp_changemergesubscription"
 category: "general"
-description: "Changes selected properties of a merge push subscription. This stored procedure is executed at the Publisher on the publication database. The name of the publication to change. publication must already exist and must conform to the rules for identifiers. When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encry"
+description: "Changes selected properties of a merge push subscription. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

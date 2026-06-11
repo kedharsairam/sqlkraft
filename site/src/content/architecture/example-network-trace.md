@@ -1,7 +1,7 @@
 ---
 title: "Example network trace"
 topic: "query-processing"
-description: "This article presents several examples of a network trace that captures various handshakes and"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

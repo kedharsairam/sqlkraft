@@ -77,8 +77,6 @@ STBoundary
 
 ## Returns the boundary of a geometry instance as a lower-dimensional geometry.
 
-
-
 Expand table
 
 #### Method

@@ -2,7 +2,7 @@
 name: "File metadata functions"
 title: "File metadata functions"
 category: "statements"
-description: "assumes that, if not specified, the maximum length of"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

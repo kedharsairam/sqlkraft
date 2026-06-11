@@ -2,7 +2,7 @@
 name: "sys.registered_search_property_lists"
 title: "sys.registered_search_property_lists"
 category: "compatibility"
-description: "Azure SQL Managed Instance Drops a property list from the current database if the search property list is currently not associated with any full-text index in the database. property_list_name Is the name of the search property list to be dropped. property_list_name is an identifier. To view the names of the existing property lists, use the sys.registered_search_property_lists catalog view, as foll"
+description: "Azure SQL Managed Instance Drops a property list from the current database if the search property list is currently not associated with any full-text index in the database. property_list_name Is the name of the search property list to be dropped. property_list_name is an identifier."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

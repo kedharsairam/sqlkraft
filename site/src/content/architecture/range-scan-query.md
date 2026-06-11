@@ -1,7 +1,7 @@
 ---
 title: "Range scan query"
 topic: "query-processing"
-description: "To ensure a range scan query is serializable, the same query should return the same results each"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

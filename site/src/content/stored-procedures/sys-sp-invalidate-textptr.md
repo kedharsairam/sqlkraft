@@ -2,7 +2,7 @@
 name: "sys.sp_invalidate_textptr"
 title: "sp_invalidate_textptr"
 category: "general"
-description: "Invalidates the specified in-row text pointer, or all in-row text pointers, in the transaction. can be used only on in-row text pointers. These pointers are from tables that have the option enabled. Transact-SQL syntax conventions The in-row text pointer that to be invalidated. , with a default of invalidates all in-row text pointers in the transaction. SQL Server allows for a maximum of 1,024 act"
+description: "Invalidates the specified in-row text pointer, or all in-row text pointers, in the transaction."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_invalidate_textptr"

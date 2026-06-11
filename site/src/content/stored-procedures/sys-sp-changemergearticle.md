@@ -2,7 +2,7 @@
 name: "sys.sp_changemergearticle"
 title: "sp_changemergearticle"
 category: "general"
-description: "Changes the properties of a merge article. This stored procedure is executed at the Publisher Transact-SQL syntax conventions The name of the publication in which the article exists. The name of the article to change. The property to change for the given article and publication. one of the values listed in the following table."
+description: "Changes the properties of a merge article. This stored procedure is executed at the Publisher Transact-SQL syntax conventions The name of the publication in which the article exists."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

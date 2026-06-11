@@ -2,7 +2,7 @@
 name: "sys.sp_wait_for_database_copy_sync"
 title: "sp_wait_for_database_copy_sync"
 category: "general"
-description: "This procedure is scoped to an Active Geo-Replication relationship between a primary and causes the application to wait until all committed transactions are replicated and acknowledged by the active secondary database. The name of the Azure SQL Database server that hosts the active secondary database. The name of the active secondary database. Returns 0 for success or an error number for failure. "
+description: "This procedure is scoped to an Active Geo-Replication relationship between a primary and causes the application to wait until all committed transactions are replicated and acknowledged by the active secondary database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sys.sp_wait_for_database_copy_sync"

@@ -2,7 +2,7 @@
 name: "sys.types"
 title: "sys.types"
 category: "compatibility"
-description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each system and user-defined type. Name of the type. Is unique within the schema. ID of the internal system type. ID of the type. Is unique within the database. data type is an internal data type based ID of the schema to which the type belongs. ID of the individual owner if different from schema owner. By default,"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each system and user-defined type."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

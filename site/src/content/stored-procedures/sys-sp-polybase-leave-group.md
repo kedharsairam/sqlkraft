@@ -2,7 +2,7 @@
 name: "sys.sp_polybase_leave_group"
 title: "sp_polybase_leave_group"
 category: "general"
-description: "SQL Server 2016 (13.x) and later versions Removes a SQL Server instance from a PolyBase group for scale-out computation. The SQL Server instance must have the feature installed. PolyBase enables the integration of non-SQL Server data sources, such as Hadoop and Azure Blob Storage. See also sp_polybase_join_group Transact-SQL syntax conventions Requires CONTROL SERVER permission. You can only remov"
+description: "SQL Server 2016 (13.x) and later versions Removes a SQL Server instance from a PolyBase group for scale-out computation. The SQL Server instance must have the feature installed. PolyBase enables the integration of non-SQL Server data sources, such as Hadoop and Azure Blob Storage. See also sp_polybase_join_group Transact-SQL syntax conventions Requires CONTROL SERVER permission."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_polybase_leave_group;"

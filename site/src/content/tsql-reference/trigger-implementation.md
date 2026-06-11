@@ -2,7 +2,7 @@
 name: "Trigger implementation"
 title: "Trigger implementation"
 category: "statements"
-description: "At least one of the three"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

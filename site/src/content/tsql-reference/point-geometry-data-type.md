@@ -2,14 +2,12 @@
 name: "Point (geometry Data Type)"
 title: "Point (geometry Data Type)"
 category: "data-types"
-description: "The following example uses"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
 
 The following example uses to create a instance.
-
-SQL
 
 STGeomFromText
 
@@ -35,21 +33,16 @@ geometry
 
 geometry
 
-```sql
-Parse()
-```
+`Parse()`
 
-```sql
-geometry
-```
+`geometry`
 
 ```sql
 DECLARE
 @g geometry;
 SET
 @g = geometry::
-Parse
-(
+Parse (
 'LINESTRING (100 100, 20 180, 180 180)'
 );
 SELECT

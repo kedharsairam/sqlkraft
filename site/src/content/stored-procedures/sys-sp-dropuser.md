@@ -2,7 +2,7 @@
 name: "sys.sp_dropuser"
 title: "sp_dropuser"
 category: "general"
-description: "Removes a database user from the current database. provides compatibility with earlier versions of SQL Server. Transact-SQL syntax conventions The name of the user to remove. , with no default. must exist in the current database. When specifying a Windows account, use the name by which the database knows that account. to remove the user from the current database. This feature will be removed in a "
+description: "Removes a database user from the current database. provides compatibility with earlier versions of SQL Server. Transact-SQL syntax conventions The name of the user to remove. , with no default. must exist in the current database. When specifying a Windows account, use the name by which the database knows that account. to remove the user from the current database. This feature will be removed in a"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

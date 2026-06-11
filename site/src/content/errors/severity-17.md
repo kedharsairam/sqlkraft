@@ -4,7 +4,7 @@ title: "Severity Level 17"
 errorNumber: 17
 severity: "medium"
 category: "system"
-description: "Indicates that the statement caused SQL Server to run out of resources (such as memory, locks, or disk space for the database) or to exceed some limit set by the system administrator. \uff89 Expand table"
+description: "Indicates that the statement caused SQL Server to run out of resources (such as memory, locks, or disk space for the database) or to exceed some limit set by the system administrator."
 tags:
   - "error-severity"
   - "level-17"

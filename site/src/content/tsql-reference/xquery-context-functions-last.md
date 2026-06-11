@@ -2,7 +2,7 @@
 name: "xquery-context-functions-last"
 title: "XQuery - Context Functions - last"
 category: "xquery"
-description: "XQuery Language Reference: Context Functions - last"
+description: ""
 syntax: "[ ]"
 tags:
   - "xquery"

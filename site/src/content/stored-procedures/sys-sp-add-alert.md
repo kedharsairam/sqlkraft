@@ -2,7 +2,7 @@
 name: "sys.sp_add_alert"
 title: "sp_add_alert"
 category: "general"
-description: "Transact-SQL syntax conventions The name of the alert. The name appears in the e-mail or pager message sent in response to the alert. It must be unique and can contain the percent ( The message error number that defines the alert. (It usually corresponds to an error number in"
+description: "Transact-SQL syntax conventions The name of the alert. The name appears in the e-mail or pager message sent in response to the alert. It must be unique and can contain the percent ( The message error number that defines the alert."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

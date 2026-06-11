@@ -2,7 +2,7 @@
 name: "sys.database_ledger_transactions"
 title: "sys.database_ledger_transactions"
 category: "compatibility"
-description: "Captures the cryptographically protected history of database transactions against ledger tables in the database. A row in this view represents a database transaction. For more information on database ledger, see A transaction ID that is unique for the database (it corresponds to a transaction ID in the database transaction log). A sequence number identifying a row. Offset of the transaction in the"
+description: "Captures the cryptographically protected history of database transactions against ledger tables in the database. A row in this view represents a database transaction. For more information on database ledger, see A transaction ID that is unique for the database (it corresponds to a transaction ID in the database transaction log). A sequence number identifying a row."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

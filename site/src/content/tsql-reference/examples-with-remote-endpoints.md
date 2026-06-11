@@ -2,7 +2,7 @@
 name: "Examples with remote endpoints"
 title: "Examples with remote endpoints"
 category: "queries"
-description: "This example creates an external model of the"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

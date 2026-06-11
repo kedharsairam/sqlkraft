@@ -2,7 +2,7 @@
 name: "sys.dm_exec_query_resource_semaphores"
 title: "sys.dm_exec_query_resource_semaphores"
 category: "execution"
-description: "Analytics Platform System (PDW) Returns the information about the current query-resource semaphore status in SQL Server. provides general query-execution memory status and allows you to determine whether the system can access enough memory. This view complements memory information obtained from complete picture of server memory status. one row for the regular resource semaphore and another row for"
+description: "Analytics Platform System (PDW) Returns the information about the current query-resource semaphore status in SQL Server. provides general query-execution memory status and allows you to determine whether the system can access enough memory. This view complements memory information obtained from complete picture of server memory status."
 tags: ["execution", "dmv"]
 pubDate: 2026-05-29
 syntax: "sys.dm_pdw_nodes_exec_query_resource_semaphores"

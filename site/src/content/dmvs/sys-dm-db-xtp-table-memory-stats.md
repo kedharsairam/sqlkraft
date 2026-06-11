@@ -2,7 +2,7 @@
 name: "sys.dm_db_xtp_table_memory_stats"
 title: "sys.dm_db_xtp_table_memory_stats"
 category: "in-memory"
-description: "Returns memory usage statistics for each In-Memory OLTP table (user and system) in the current database. The system tables have negative object IDs and are used to store run-time information for the In-Memory OLTP engine. Unlike user objects, system tables are internal and only exist in-memory, therefore, they are not visible through catalog views. System tables are used to store information such "
+description: "Returns memory usage statistics for each In-Memory OLTP table (user and system) in the current database. The system tables have negative object IDs and are used to store run-time information for the In-Memory OLTP engine. Unlike user objects, system tables are internal and only exist in-memory, therefore, they are not visible through catalog views."
 tags: ["in-memory", "dmv"]
 pubDate: 2026-05-29
 syntax: |

@@ -2,7 +2,7 @@
 name: "xquery-aggregate-functions-min"
 title: "XQuery - Aggregate Functions - min"
 category: "xquery"
-description: "XQuery Language Reference: Aggregate Functions - min"
+description: ""
 syntax: "fn:min($arg as xdt:anyAtomicType*) as xdt:anyAtomicType?"
 tags:
   - "xquery"

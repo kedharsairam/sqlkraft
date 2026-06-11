@@ -2,7 +2,7 @@
 name: "calculations"
 title: "Calculations"
 category: "statements"
-description: "This example returns only the rows for"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

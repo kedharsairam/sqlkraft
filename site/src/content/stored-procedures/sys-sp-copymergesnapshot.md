@@ -2,7 +2,7 @@
 name: "sys.sp_copymergesnapshot"
 title: "sp_copymergesnapshot"
 category: "general"
-description: "Azure SQL Managed Instance Copies the snapshot folder of the specified publication to the folder listed in the @destination_folder . This stored procedure is executed at the Publisher on the publication Transact-SQL syntax conventions The name of the publication whose snapshot contents are to be copied. , with no default. The name of the folder where the contents of the publication snapshot is to "
+description: "Azure SQL Managed Instance Copies the snapshot folder of the specified publication to the folder listed in the @destination_folder . This stored procedure is executed at the Publisher on the publication Transact-SQL syntax conventions The name of the publication whose snapshot contents are to be copied. , with no default."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

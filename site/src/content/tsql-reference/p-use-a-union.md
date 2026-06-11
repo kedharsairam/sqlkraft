@@ -2,7 +2,7 @@
 name: "P. Use a UNION"
 title: "P. Use a UNION"
 category: "statements"
-description: "In the following example, the result set includes the contents of the"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

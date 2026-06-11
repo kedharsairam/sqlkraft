@@ -2,7 +2,7 @@
 name: "Service Broker Routes"
 title: "Service Broker Routes"
 category: "statements"
-description: "A Service Broker route is a database-level securable that is contained by the database that is its"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -2,7 +2,7 @@
 name: "sys.services"
 title: "sys.services"
 category: "compatibility"
-description: "This catalog view contains a row for each service in the database. Case-sensitive name of service, unique within the database. Not Identifier of the service. Not NULLABLE. Identifier for the database principal that owns this service. NULLABLE. Object id for the queue that this service uses. Not NULLABLE. The visibility of the metadata in catalog views is limited to securables that a user either ow"
+description: "This catalog view contains a row for each service in the database. Case-sensitive name of service, unique within the database. Not Identifier of the service. Not NULLABLE. Identifier for the database principal that owns this service. NULLABLE. Object id for the queue that this service uses. Not NULLABLE."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

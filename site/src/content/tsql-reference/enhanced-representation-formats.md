@@ -79,8 +79,6 @@ Type)
 
 geometry instance.
 
-
-
 Expand table
 
 #### Method

@@ -2,7 +2,7 @@
 name: "sys.change_tracking_tables"
 title: "sys.change_tracking_tables"
 category: "objects"
-description: "SQL database in Microsoft Fabric Returns one row for each table in the current database that has change tracking enabled. ID of a table that has a change journal. The table can have a change journal even if change tracking is currently off. The table ID is unique within the database. Current state of change tracking on the table: Version of the database when change tracking began for the table. Th"
+description: "SQL database in Microsoft Fabric Returns one row for each table in the current database that has change tracking enabled."
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "sys.change_tracking_tables"

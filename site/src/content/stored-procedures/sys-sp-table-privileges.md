@@ -2,7 +2,7 @@
 name: "sys.sp_table_privileges"
 title: "sp_table_privileges"
 category: "general"
-description: "Returns a list of table permissions (such as Transact-SQL syntax conventions The table used to return catalog information. Wildcard pattern matching is supported. The table owner of the table used to return catalog information. . Wildcard pattern matching is supported. If the owner isn't specified, the default table visibility rules of the underlying DBMS apply. If the current user owns a table wi"
+description: "Returns a list of table permissions (such as Transact-SQL syntax conventions The table used to return catalog information. Wildcard pattern matching is supported. The table owner of the table used to return catalog information. Wildcard pattern matching is supported. If the owner isn't specified, the default table visibility rules of the underlying DBMS apply."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

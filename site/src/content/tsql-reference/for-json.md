@@ -2,7 +2,7 @@
 name: "FOR JSON"
 title: "FOR JSON"
 category: "queries"
-description: "In Fabric Data Warehouse, the query must end with"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

@@ -2,7 +2,7 @@
 name: "money and smallmoney styles"
 title: "Money and smallmoney styles"
 category: "data-types"
-description: "When converting character data to"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

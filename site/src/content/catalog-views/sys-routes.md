@@ -2,7 +2,7 @@
 name: "sys.routes"
 title: "sys.routes"
 category: "compatibility"
-description: "This catalog views contains one row per route. Service Broker uses routes to locate the network Name of the route, unique within the database. Not NULLABLE. Identifier for the route. Not NULLABLE. Identifier for the database principal that owns the route. Name of the remote service. NULLABLE. Identifier of the broker that hosts the remote service. NULLABLE. The date and time when the route expires"
+description: "This catalog views contains one row per route. Service Broker uses routes to locate the network Name of the route, unique within the database. Not NULLABLE. Identifier for the route. Not NULLABLE. Identifier for the database principal that owns the route."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "//Adventure-Works.com/Expenses"

@@ -1,7 +1,7 @@
 ---
 title: "Hash partitioning script"
 topic: "io-fundamentals"
-description: "The use of this script is described in"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

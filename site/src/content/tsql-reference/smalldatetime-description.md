@@ -117,10 +117,6 @@ CREATE TABLE Table1 (Column1 SMALLDATETIME);
 2024-05-10 00:00:00
 ```
 
-```sql
-yyyy
-```
+`yyyy`
 
-```sql
-MM
-```
+`MM`

@@ -2,7 +2,7 @@
 name: "sys.security_policies"
 title: "sys.security_policies"
 category: "security"
-description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns a row for each security policy in the database. Name of the security policy, unique within the database. ID of the owner of the security policy, as registered to the database. NULL if the owner is determined via the schema. ID of the schema where the object resides. ID of the object to which the policy belongs. Must"
+description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns a row for each security policy in the database."
 tags: ["security", "catalog-view"]
 pubDate: 2026-05-29
 ---

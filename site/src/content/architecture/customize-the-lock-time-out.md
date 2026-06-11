@@ -1,7 +1,7 @@
 ---
 title: "Customize the lock time-out"
 topic: "locking"
-description: "Any snapshot transaction that's active when the"
+description: ""
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

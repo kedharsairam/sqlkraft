@@ -2,7 +2,7 @@
 name: "Remarks for DDL triggers"
 title: "Remarks for DDL triggers"
 category: "statements"
-description: "Triggers work in transactions (implied or otherwise) and while they're open, they lock"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

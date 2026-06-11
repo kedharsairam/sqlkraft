@@ -74,8 +74,6 @@ type.
 
 The following example returns an empty JSON array.
 
-SQL
-
 ７
 
 Note
@@ -98,15 +96,11 @@ JSON
 
 The following example constructs a JSON array with three elements from a result set.
 
-SQL
-
 Result
 
 JSON
 
 The following example constructs a JSON array with three elements ordered by the value of the column.
-
-SQL
 
 Result
 
@@ -115,8 +109,6 @@ JSON
 The following example returns a result with two columns. The first column contains the value. The second column contains a JSON
 
 array containing the names of the columns. The columns in the JSON array are ordered based on the value.
-
-SQL
 
 Result
 
@@ -153,8 +145,6 @@ aggregate on the column. The fourth column
 ## returns the value of JSON_ARRAYAGG aggregate on the
 
 column.
-
-SQL
 
 Result
 
@@ -194,8 +184,6 @@ The following example returns a JSON array as json
 
 type.
 
-SQL
-
 Result
 
 JSON
@@ -208,50 +196,34 @@ JSON_OBJECTAGG (Transact-SQL)
 
 Example 6
 
-```sql
-JSON_ARRAYAGG
-```
+`JSON_ARRAYAGG`
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 GROUP BY
 GROUPING SETS
 ```
 
-```sql
-JSON_OBJECTAGG
-```
+`JSON_OBJECTAGG`
 
-```sql
-JSON_ARRAYAGG
-```
+`JSON_ARRAYAGG`
 
-```sql
-JSON_ARRAYAGG
-```
+`JSON_ARRAYAGG`
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 NULL ON NULL
 ```
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 ABSENT ON NULL
 ```
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 ABSENT ON NULL
@@ -264,11 +236,8 @@ RETURNING json
 ```sql
 JSON
 _
-ARRAYAGG
-(value_expression [ order_by_clause ] [ json_null_clause ] [
-RETURNING
-json ] )
-json_null_clause
+ARRAYAGG (value_expression [ order_by_clause ] [ json_null_clause ] [
+RETURNING json ] ) json_null_clause
 ::=
 NULL
 ON
@@ -276,8 +245,7 @@ NULL
 |
 ABSENT
 ON
-NULL
-order_by_clause
+NULL order_by_clause
 ::=
 ORDER
 BY
@@ -291,13 +259,9 @@ NULL
 );
 ```
 
-```sql
-object_id
-```
+`object_id`
 
-```sql
-column_id
-```
+`column_id`
 
 ```sql
 ["rsid","rscolid","hbcolid","rcmodified","ti","cid","ordkey","maxinrowlen","status","offset","nullbit","bitpos","colguid","ordlock"]
@@ -323,18 +287,15 @@ column_id
 ```sql
 SELECT
 JSON_ARRAYAGG(c1)
-FROM
-(
-VALUES
-(
+FROM (
+VALUES (
 'c'
 ), (
 'b'
 ), (
 'a'
 ))
-AS
-t(c1);
+AS t(c1);
 [
 "c"
 ,
@@ -348,12 +309,9 @@ t(c1);
 SELECT
 JSON_ARRAYAGG( c1
 ORDER
-BY
-c1)
-FROM
-(
-VALUES
-(
+BY c1)
+FROM (
+VALUES (
 'c'
 ), (
 'b'
@@ -361,8 +319,7 @@ VALUES
 'a'
 )
 )
-AS
-t(c1);
+AS t(c1);
 [
 "a"
 ,
@@ -376,42 +333,25 @@ t(c1);
 SELECT
 TOP(5) c.object_id, JSON_ARRAYAGG(c.name
 ORDER
-BY
-c.column_id)
-AS
-column_list
-FROM
-sys.columns
-AS
-c
+BY c.column_id)
+AS column_list
+FROM sys.columns
+AS c
 GROUP
-BY
-c.object_id;
+BY c.object_id;
 ```
 
-```sql
-id
-```
+`id`
 
-```sql
-type
-```
+`type`
 
-```sql
-total_amount
-```
+`total_amount`
 
-```sql
-amount
-```
+`amount`
 
-```sql
-json_total_amount
-```
+`json_total_amount`
 
-```sql
-amount
-```
+`amount`
 
 ```sql
 [2]
@@ -446,17 +386,13 @@ NULL
 [2,4,3,9,7]
 ```
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 [3,4,2]
 ```
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 [9,7]
@@ -465,14 +401,11 @@ NULL
 ```sql
 WITH
 T
-AS
-(
+AS (
 SELECT
 *
-FROM
-(
-VALUES
-(1,
+FROM (
+VALUES (1,
 'k1'
 ,
 'a'
@@ -493,33 +426,27 @@ VALUES
 ,
 'd'
 , 9))
-AS
-b(
+AS b(
 id
 ,
 name
 ,
 type
 , amount))
-SELECT
-id
+SELECT id
 ,
 type
 ,
-SUM
-(amount)
-AS
-total_amount,
+SUM (amount)
+AS total_amount,
 JSON_ARRAYAGG(amount)
-AS
-json_total_amount
+AS json_total_amount
 FROM
 T
 GROUP
 BY
 GROUPING
-SETS
-((
+SETS ((
 id
 ), (
 type

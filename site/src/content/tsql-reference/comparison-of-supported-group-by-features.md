@@ -2,7 +2,7 @@
 name: "Comparison of supported GROUP BY features"
 title: "Comparison of supported GROUP BY features"
 category: "queries"
-description: ", the maximum number of"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

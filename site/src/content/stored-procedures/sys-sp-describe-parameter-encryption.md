@@ -2,7 +2,7 @@
 name: "sys.sp_describe_parameter_encryption"
 title: "sp_describe_parameter_encryption"
 category: "general"
-description: "SQL Server 2016 (13.x) and later Analyzes the specified Transact-SQL statement and its parameters, to determine which parameters correspond to database columns that are protected by using the Always Encrypted feature. Returns encryption metadata for the parameters that correspond to encrypted columns. One or more Transact-SQL statements. provides a declaration string for parameters for A string th"
+description: "SQL Server 2016 (13.x) and later Analyzes the specified Transact-SQL statement and its parameters, to determine which parameters correspond to database columns that are protected by using the Always Encrypted feature. Returns encryption metadata for the parameters that correspond to encrypted columns. One or more Transact-SQL statements."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -2,7 +2,7 @@
 name: "Examples: SQL Server , Azure SQL Database, and"
 title: "Examples: SQL Server , Azure SQL Database, and"
 category: "operators"
-description: "In versions before SQL Server 2012 (11.x) Service Pack 1, the user must own the table or the"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

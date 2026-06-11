@@ -2,7 +2,7 @@
 name: "sys.database_files"
 title: "sys.database_files"
 category: "databases-files"
-description: "Analytics Platform System (PDW) Contains a row per file of a database as stored in the database itself. This is a per-database ID of the file within database. = Database was upgraded from an earlier version of SQL Server (Valid for SQL Server 2005 and earlier 3 = Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. Value can be zero or greater than zer"
+description: "Analytics Platform System (PDW) Contains a row per file of a database as stored in the database itself. This is a per-database ID of the file within database. = Database was upgraded from an earlier version of SQL Server (Valid for SQL Server 2005 and earlier 3 = Identified for informational purposes only. Not supported. Future compatibility is not guaranteed."
 tags: ["databases-files", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

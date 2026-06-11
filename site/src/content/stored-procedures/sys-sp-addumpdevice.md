@@ -2,7 +2,7 @@
 name: "sys.sp_addumpdevice"
 title: "sp_addumpdevice"
 category: "general"
-description: "Adds a backup device to an instance of SQL Server. Transact-SQL syntax conventions , with no default, and can be one of the Hard disk file as a backup device. Any tape devices supported by Microsoft Windows. : Support for tape backup devices will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use"
+description: "Adds a backup device to an instance of SQL Server. Transact-SQL syntax conventions , with no default, and can be one of the Hard disk file as a backup device. Any tape devices supported by Microsoft Windows. : Support for tape backup devices will be removed in a future version of SQL Server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

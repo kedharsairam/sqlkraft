@@ -2,7 +2,7 @@
 name: "Result Sets"
 title: "Result Sets"
 category: "statements"
-description: "For descriptions of the RESTORE LABELONLY arguments, see"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -18,8 +18,6 @@ SQL)
 The result set from RESTORE LABELONLY consists of a single row with this information.
 
 ## Description
-
-Name of the media.
 
 Unique identification number of the media set.
 
@@ -39,14 +37,6 @@ Whether the media description contains:
 
 Media description, in free-form text, or the Tape Format
 
-media label.
-
-Name of the backup software that wrote the label.
-
-７
-
-Note
-
 URL is the format used to specify the location and the file name for Microsoft Azure Blob
 
 Storage and is supported starting with SQL Server 2012 (11.x) SP1 CU2. Although
@@ -55,20 +45,10 @@ Microsoft Azure storage is a service, the implementation is similar to disk and 
 
 allow for a consistent and seamless restore experience for all the three devices.
 
-Expand table
-
 #### Column name
 
-#### Data type
-
 #### SoftwareVendorId
-
-#### MediaDate
 
 #### Mirror_Count
 
 #### IsCompressed
-
-```sql
-}
-```

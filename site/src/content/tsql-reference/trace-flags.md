@@ -3105,43 +3105,13 @@ Note
 
 the server shuts down. For a SQL Server shutdown, the command
 
-can be
-
 used instead of this trace flag to force an immediate shutdown.
 
-: Global only.
-
 Enables asynchronous load of Query Store.
-
-Note
 
 : Use this trace flag if SQL Server is experiencing high number of QDS_LOADDB waits related
 
 to Query Store synchronous load (default behavior during database recovery).
-
-#### Trace
-
-#### flag
-
-#### Scope
-
-#### 7806
-
-#### Scope
-
-#### 8002
-
-#### Scope
-
-#### 8011
-
-#### Scope
-
-#### 8012
-
-#### Scope
-
-#### 8015
 
 ## Description
 

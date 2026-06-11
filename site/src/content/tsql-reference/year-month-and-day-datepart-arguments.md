@@ -2,7 +2,7 @@
 name: "year, month, and day datepart Arguments"
 title: "Year, month, and day datepart Arguments"
 category: "operators"
-description: "return value depends on the"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -110,9 +110,7 @@ Weeks assigned two times
 
 Used by/in
 
-```sql
-DATEPART
-```
+`DATEPART`
 
 ```sql
 SET DATEFIRST 7 -- ( Sunday )

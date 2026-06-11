@@ -2,7 +2,7 @@
 name: "sys.sp_changepublication_snapshot"
 title: "sp_changepublication_snapshot"
 category: "general"
-description: "Changes properties of the Snapshot Agent for the specified publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions When you configure a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher and its remote Distributor be"
+description: "Changes properties of the Snapshot Agent for the specified publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions When you configure a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

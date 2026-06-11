@@ -2,7 +2,7 @@
 name: "sys.partition_parameters"
 title: "sys.partition_parameters"
 category: "partitions"
-description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each parameter of a partition function. ID of the partition function to which this parameter belongs. ID of the parameter. Is unique within the partition function, beginning with ID of the system type of the parameter. Corresponds to the Maximum length of the parameter in bytes. Precision of the parameter if numeri"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each parameter of a partition function."
 tags: ["partitions", "catalog-view"]
 pubDate: 2026-05-29
 ---

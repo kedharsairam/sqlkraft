@@ -4,7 +4,7 @@ title: "Error 8903"
 errorNumber: 8903
 severity: "medium"
 category: "io"
-description: "Description 8903 16 No Extent %S_PGID in database ID %d is allocated in both GAM %S_PGID and SGAM %S_PGID. 8904 16 No Extent %S_PGID in database ID %d is allocated by more than one allocation object. "
+description: "Description 8903 16 No Extent %S_PGID in database ID %d is allocated in both GAM %S_PGID and SGAM %S_PGID. 8904 16 No Extent %S_PGID in database ID %d is allocated by more than one allocation object."
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---

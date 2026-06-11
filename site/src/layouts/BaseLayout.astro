@@ -44,13 +44,23 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
           <a href="/sqlkraft/cookbook/">Cookbook</a>
           <a href="/sqlkraft/scripts/">Scripts</a>
           <a href="/sqlkraft/xevents/">XEvents</a>
-          <a href="/sqlkraft/stored-procedures/">SPs</a>
-          <a href="/sqlkraft/catalog-views/">Catalog</a>
-          <a href="/sqlkraft/functions/">Functions</a>
-          <a href="/sqlkraft/errors/">Errors</a>
-          <a href="/sqlkraft/tsql-reference/">T-SQL</a>
-          <a href="/sqlkraft/architecture/">Arch</a>
-          <a href="/sqlkraft/operations/">Ops</a>
+          <div class="nav-dropdown">
+            <button class="nav-dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+              More
+              <svg class="dropdown-chevron" width="10" height="10" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 3.5l3 3 3-3"/>
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu" role="menu">
+              <a href="/sqlkraft/stored-procedures/" role="menuitem">SPs</a>
+              <a href="/sqlkraft/catalog-views/" role="menuitem">Catalog</a>
+              <a href="/sqlkraft/functions/" role="menuitem">Functions</a>
+              <a href="/sqlkraft/errors/" role="menuitem">Errors</a>
+              <a href="/sqlkraft/tsql-reference/" role="menuitem">T-SQL</a>
+              <a href="/sqlkraft/architecture/" role="menuitem">Arch</a>
+              <a href="/sqlkraft/operations/" role="menuitem">Ops</a>
+            </div>
+          </div>
         </div>
         <button id="search-btn" class="nav-search-btn" aria-label="Search (Ctrl+K)">
           <svg
@@ -174,6 +184,8 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
     if (badge) badge.textContent = "⌘K";
     const btn = document.getElementById("search-btn");
     if (btn) btn.setAttribute("aria-label", "Search (⌘K)");
+    const mobileHint = document.querySelector(".mobile-search-hint");
+    if (mobileHint) mobileHint.textContent = "⌘K";
   }
 
   // ── Mobile hamburger menu ──
@@ -541,7 +553,7 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
     --fluid-gap-sm: clamp(8px, 1vw, 16px);
     --fluid-gap-md: clamp(16px, 2vw, 28px);
     --fluid-gap-lg: clamp(24px, 3vw, 48px);
-    --fluid-padding-h: clamp(16px, 3vw, 40px);
+    --fluid-padding-h: clamp(20px, 3vw, 40px);
     --fluid-padding-v: clamp(24px, 3vw, 48px);
 
     /* ── Unified spacing rhythm ── */
@@ -559,6 +571,10 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+  :focus-visible {
+    outline: 2px solid var(--accent, #2f80ed);
+    outline-offset: 2px;
   }
   body {
     font-family: var(--font-sans);
@@ -594,18 +610,91 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
   }
   .nav-links {
     display: flex;
-    gap: clamp(8px, 1.5vw, 16px);
+    align-items: center;
+    gap: clamp(12px, 1.8vw, 24px);
   }
   .nav-links a {
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: clamp(11px, 1.3vw, 14px);
+    font-size: clamp(12px, 1.2vw, 14px);
     font-weight: 500;
     transition: color 0.2s;
     white-space: nowrap;
   }
   .nav-links a:hover {
     color: var(--text-primary);
+  }
+
+  /* ── Nav Dropdown ── */
+  .nav-dropdown {
+    position: relative;
+    display: flex;
+  }
+  .nav-dropdown-trigger {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    font-family: inherit;
+    font-size: clamp(12px, 1.2vw, 14px);
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    padding: 0;
+    transition: color 0.2s;
+    white-space: nowrap;
+    line-height: inherit;
+  }
+  .nav-dropdown-trigger:hover {
+    color: var(--text-primary);
+  }
+  .dropdown-chevron {
+    transition: transform 0.2s ease;
+    margin-top: 1px;
+  }
+  .nav-dropdown:hover .dropdown-chevron {
+    transform: rotate(180deg);
+  }
+  .nav-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(-4px);
+    min-width: 130px;
+    background: rgba(22, 22, 22, 0.95);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    z-index: 200;
+    padding: 5px;
+  }
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown-trigger:focus + .nav-dropdown-menu,
+  .nav-dropdown-menu:hover {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
+  .nav-dropdown-menu a {
+    display: block;
+    padding: 7px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s;
+  }
+  .nav-dropdown-menu a:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--text-primary);
+    text-decoration: none;
   }
   .nav-search-btn {
     display: flex;
@@ -697,11 +786,55 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
     }
   }
 
+  /* ── Mobile detail page optimizations (small phones) ── */
+  @media (max-width: 480px) {
+    .app-shell {
+      --fluid-padding-h: 24px;
+    }
+    .prose-content p,
+    .prose-content li,
+    .body-content p,
+    .body-content li {
+      font-size: 0.925rem !important;
+    }
+    .body-content pre {
+      font-size: 0.9rem !important;
+      padding: 14px 16px !important;
+      border-radius: 10px !important;
+    }
+    .body-content h2 {
+      font-size: 1.25rem !important;
+    }
+    .body-content h3 {
+      font-size: 1.05rem !important;
+    }
+    .breadcrumb {
+      font-size: 13px !important;
+      gap: 6px !important;
+    }
+    .breadcrumb a {
+      padding: 6px 0;
+    }
+    .detail-header {
+      gap: 10px !important;
+    }
+    .detail-title {
+      font-size: 1.3rem !important;
+    }
+    .tag-strip {
+      gap: 6px !important;
+    }
+    .tag-pill {
+      font-size: 12px !important;
+      padding: 4px 10px !important;
+    }
+  }
+
   /* ── Fluid code blocks (1.75rem max padding) ── */
   .body-content pre {
-    padding: clamp(12px, 2vw, 28px) !important;
-    border-radius: clamp(6px, 1vw, 10px);
-    font-size: clamp(0.85rem, 1.2vw, 0.95rem) !important;
+    padding: clamp(14px, 2vw, 28px) !important;
+    border-radius: clamp(8px, 1vw, 12px) !important;
+    font-size: clamp(0.88rem, 1.2vw, 0.95rem) !important;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
   }
@@ -836,7 +969,7 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
   }
 
   /* ── Responsive: switch to hamburger on narrow viewports ── */
-  @media (max-width: 768px) {
+  @media (max-width: 850px) {
     .nav-links {
       display: none;
     }
@@ -1093,6 +1226,12 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
   .shortcut-overlay.hidden {
     display: none;
   }
+  .hidden {
+    display: none !important;
+  }
+  .visible {
+    display: revert;
+  }
   .shortcut-backdrop {
     position: absolute;
     inset: 0;
@@ -1230,7 +1369,7 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
   .prose-content li,
   .body-content p,
   .body-content li {
-    font-size: clamp(0.85rem, 1.2vw, 0.95rem) !important;
+    font-size: clamp(0.9rem, 1.2vw, 0.95rem) !important;
     line-height: 1.7;
   }
   .prose-content a,
@@ -1245,11 +1384,9 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
   }
 
   /* ── Global text containment (overflow ellipsis) ── */
-  .section-heading,
   .xref-label,
   .xref-heading,
-  .page-header h1,
-  .collection-header h1 {
+  .page-header h1 {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1268,5 +1405,54 @@ const pageTitle = title === "SqlKraft" ? title : `${title} — SqlKraft`;
   ::view-transition-new(*) {
     animation-duration: 120ms;
     animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  /* ── Print styles ── */
+  @media print {
+    /* Strip chrome — keep only the main content */
+    .nav-bar,
+    .toc-sidebar,
+    #link-preview-card,
+    .shortcut-overlay,
+    .palette-overlay,
+    footer {
+      display: none !important;
+    }
+    body {
+      background: white;
+      color: black;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .main-content,
+    .prose-content,
+    .body-content {
+      max-width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+    /* Show link URLs after anchor text */
+    .prose-content a::after,
+    .body-content a::after {
+      content: " (" attr(href) ")";
+      font-size: 0.85em;
+      color: #555;
+    }
+    /* Ensure code blocks don't break across pages */
+    pre,
+    code {
+      page-break-inside: avoid;
+      white-space: pre-wrap;
+      word-break: break-all;
+    }
+    h1, h2, h3, h4 {
+      page-break-after: avoid;
+    }
+    img {
+      page-break-inside: avoid;
+    }
+    table {
+      page-break-inside: avoid;
+    }
   }
 </style>

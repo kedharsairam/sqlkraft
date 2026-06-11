@@ -4,7 +4,7 @@ title: "Error 9002"
 errorNumber: 9002
 severity: "medium"
 category: "io"
-description: "Output If you encounter a similar scenario, address the underlying OS 112 error. In this case work with your system administrator to free up disk space on the device and then attempt to address the fu"
+description: "Output If you encounter a similar scenario, address the underlying OS 112 error."
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---

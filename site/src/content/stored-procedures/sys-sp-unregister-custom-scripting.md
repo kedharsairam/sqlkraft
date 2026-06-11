@@ -2,7 +2,7 @@
 name: "sys.sp_unregister_custom_scripting"
 title: "sp_unregister_custom_scripting"
 category: "general"
-description: "This stored procedure removes a user-defined custom stored procedure or Transact-SQL script file that was registered by executing executed at the Publisher on the publication database. Transact-SQL syntax conventions The type of custom stored procedure or script being removed. be one of the following values. Registered custom stored procedure or script is executed when an Registered custom stored "
+description: "This stored procedure removes a user-defined custom stored procedure or Transact-SQL script file that was registered by executing executed at the Publisher on the publication database. Transact-SQL syntax conventions The type of custom stored procedure or script being removed. be one of the following values. Registered custom stored procedure or script is executed when an Registered custom stored"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

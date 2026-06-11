@@ -1,7 +1,7 @@
 ---
 title: "Locking and row versioning basics"
 topic: "locking"
-description: "The Database Engine uses deferred name resolution, where object names are resolved at"
+description: ""
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

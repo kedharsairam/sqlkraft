@@ -2,7 +2,7 @@
 name: "sys.configurations"
 title: "sys.configurations"
 category: "configuration"
-description: "Summarize this article for me Returns a row for each server-wide configuration option value in the system. Unique ID for the configuration value. Name of the configuration option. Configured value for this option. Minimum value for the configuration option. Maximum value for the configuration option. Running value currently in effect for this option. Description of the configuration option. 1 = Th"
+description: "Summarize this article for me Returns a row for each server-wide configuration option value in the system. Unique ID for the configuration value."
 tags: ["configuration", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

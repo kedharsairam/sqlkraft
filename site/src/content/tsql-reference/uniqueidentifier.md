@@ -8,9 +8,7 @@ pubDate: 2026-05-29
 ---
 ## Syntax
 
-```sql
-uniqueidentifier
-```
+`uniqueidentifier`
 
 ## Arguments
 

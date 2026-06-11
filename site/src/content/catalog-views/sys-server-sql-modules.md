@@ -2,7 +2,7 @@
 name: "sys.server_sql_modules"
 title: "sys.server_sql_modules"
 category: "compatibility"
-description: "Contains the set of SQL modules for server-level triggers of type TR. You can join this relation to sys.server_triggers. The tuple (object_id) is the key of the relation. This is a FOREIGN KEY reference back to the server-level trigger where this module is defined. SQL text that defines this module. Module was created with ANSI NULLS set option set to ON. Module was created with QUOTED IDENTIFIER "
+description: "Contains the set of SQL modules for server-level triggers of type TR. You can join this relation to sys.server_triggers. The tuple (object_id) is the key of the relation. This is a FOREIGN KEY reference back to the server-level trigger where this module is defined. SQL text that defines this module. Module was created with ANSI NULLS set option set to ON. Module was created with QUOTED IDENTIFIER"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

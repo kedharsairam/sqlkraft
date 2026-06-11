@@ -2,7 +2,7 @@
 name: "sys.sp_delete_jobserver"
 title: "sp_delete_jobserver"
 category: "general"
-description: "Removes the specified target server. Transact-SQL syntax conventions The identification number of the job from which the specified target server will be removed. must be specified, but both can't be specified. The name of the job from which the specified target server will be removed. must be specified, but both can't be specified. The name of the target server to remove from the specified job. or"
+description: "Removes the specified target server. Transact-SQL syntax conventions The identification number of the job from which the specified target server will be removed. must be specified, but both can't be specified."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

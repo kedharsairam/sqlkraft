@@ -1,7 +1,7 @@
 ---
 title: "Parallel query example"
 topic: "query-processing"
-description: "Setting the max degree of parallelism option to 0 (default) enables SQL Server to use all"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

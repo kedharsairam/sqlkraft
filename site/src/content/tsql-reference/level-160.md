@@ -2,7 +2,7 @@
 name: "level 160"
 title: "Level 160"
 category: "statements"
-description: "Regular expressions can be used to match"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Step 6. Execute a command and read the response"
 topic: "query-processing"
-description: "Otherwise, you see a response packet, which either confirms the login (has the login"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

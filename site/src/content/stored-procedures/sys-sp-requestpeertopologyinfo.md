@@ -2,7 +2,7 @@
 name: "sys.sp_requestpeertopologyinfo"
 title: "sp_requestpeertopologyinfo"
 category: "general"
-description: "MSpeer_topologyresponse system table with information about a peer-to-peer transactional replication topology. Execute sp_gettopologyinfo to obtain information from the table in XML format. Transact-SQL syntax conventions The name of the publication for which to perform a topology-wide status request. , with no default. The ID number that is assigned to the topology status request. parameter of ty"
+description: "MSpeer_topologyresponse system table with information about a peer-to-peer transactional replication topology. Execute sp_gettopologyinfo to obtain information from the table in XML format. Transact-SQL syntax conventions The name of the publication for which to perform a topology-wide status request. , with no default. The ID number that is assigned to the topology status request."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

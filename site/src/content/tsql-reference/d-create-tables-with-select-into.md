@@ -2,7 +2,7 @@
 name: "D. Create tables with SELECT INTO"
 title: "D. Create tables with SELECT INTO"
 category: "statements"
-description: "The following example uses"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

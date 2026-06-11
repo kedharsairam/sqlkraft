@@ -2,7 +2,7 @@
 name: "xquery-functions-on-sequences-id"
 title: "XQuery - Functions on Sequences - id"
 category: "xquery"
-description: "XQuery Language Reference: Functions on Sequences - id"
+description: ""
 syntax: "AdventureWorks2022"
 tags:
   - "xquery"

@@ -2,7 +2,7 @@
 name: "sys.fulltext_indexes"
 title: "sys.fulltext_indexes"
 category: "indexes"
-description: "Contains a row per full-text index of a tabular object. ID of the object to which this full-text index belongs. ID of the corresponding unique, non-full-text index that is used to relate the full-text index to the rows. Version of full-text filter and wordbreaker components that are used to populate and query this index. If you perform an in-place upgrade from SQL Server 2022 (16.x) and earlier ve"
+description: "Contains a row per full-text index of a tabular object."
 tags: ["indexes", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "change_tracking_state"

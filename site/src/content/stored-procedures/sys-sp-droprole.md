@@ -2,7 +2,7 @@
 name: "sys.sp_droprole"
 title: "sp_droprole"
 category: "general"
-description: "Removes a database role from the current database. Transact-SQL syntax conventions The name of the database role to remove from the current database. with no default. must already exist in the current database. Only database roles can be removed by using In SQL Server 2005 (9.x), was replaced by the DROP ROLE statement. is included only for compatibility with earlier versions of SQL Server and mig"
+description: "Removes a database role from the current database. Transact-SQL syntax conventions The name of the database role to remove from the current database. with no default. must already exist in the current database. Only database roles can be removed by using In SQL Server 2005 (9.x), was replaced by the DROP ROLE statement."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

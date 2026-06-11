@@ -2,7 +2,7 @@
 name: "sys.dm_external_script_requests"
 title: "sys.dm_external_script_requests"
 category: "execution"
-description: "SQL Server 2016 (13.x) and later Returns a row for each active worker account that is running an external script. ID of the process that sent the external script request. This corresponds to the process ID as received the SQL instance. Keyword that represents a supported script language. Number indicating the number of parallel processes that were created. This value might be different from the nu"
+description: "SQL Server 2016 (13.x) and later Returns a row for each active worker account that is running an external script."
 tags: ["execution", "dmv"]
 pubDate: 2026-05-29
 syntax: |

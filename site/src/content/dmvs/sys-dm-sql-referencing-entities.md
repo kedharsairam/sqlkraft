@@ -2,7 +2,7 @@
 name: "sys.dm_sql_referencing_entities"
 title: "sys.dm_sql_referencing_entities"
 category: "execution"
-description: "SQL database in Microsoft Fabric Returns one row for each entity in the current database that references another user-defined entity by name. A dependency between two entities is created when one entity, called the , appears by name in a persisted SQL expression of another entity, called the . For example, if a user-defined type (UDT) is specified as the referenced entity, this function returns ea"
+description: "SQL database in Microsoft Fabric Returns one row for each entity in the current database that references another user-defined entity by name. A dependency between two entities is created when one entity, called the , appears by name in a persisted SQL expression of another entity, called the ."
 tags: ["execution", "dmv"]
 pubDate: 2026-05-29
 syntax: |

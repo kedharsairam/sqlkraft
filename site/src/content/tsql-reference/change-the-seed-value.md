@@ -2,7 +2,7 @@
 name: "Change the seed value"
 title: "Change the seed value"
 category: "statements"
-description: "value. If a transaction inserts a row and is later rolled back, the next"
+description: "value."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

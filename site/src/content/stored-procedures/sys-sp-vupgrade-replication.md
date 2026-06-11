@@ -2,7 +2,7 @@
 name: "sys.sp_vupgrade_replication"
 title: "sp_vupgrade_replication"
 category: "general"
-description: "Activated by setup when upgrading a replication server. Upgrades schema and system data as needed to support replication at the current product level. Creates new replication system objects in system and user databases. This stored procedure is executed at the machine where the replication upgrade is to occur. Transact-SQL syntax conventions The system administrator login to use when creating new "
+description: "Activated by setup when upgrading a replication server. Upgrades schema and system data as needed to support replication at the current product level. Creates new replication system objects in system and user databases. This stored procedure is executed at the machine where the replication upgrade is to occur."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

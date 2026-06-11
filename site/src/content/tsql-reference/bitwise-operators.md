@@ -228,17 +228,11 @@ Data types (Transact-SQL)
 
 Compound Operators (Transact-SQL)
 
-```sql
-AND
-```
+`AND`
 
-```sql
-OR
-```
+`OR`
 
-```sql
-NOT
-```
+`NOT`
 
 ```sql
 170
@@ -256,9 +250,7 @@ NOT
 0100 1011
 ```
 
-```sql
-AND
-```
+`AND`
 
 ```sql
 1
@@ -280,9 +272,7 @@ AND
 0000 1010
 ```
 
-```sql
-OR
-```
+`OR`
 
 ```sql
 1
@@ -304,9 +294,7 @@ OR
 1110 1011
 ```
 
-```sql
-NOT
-```
+`NOT`
 
 ```sql
 1010 1010

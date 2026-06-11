@@ -2,7 +2,7 @@
 name: "sys.dm_fts_index_population"
 title: "sys.dm_fts_index_population"
 category: "io"
-description: "SQL database in Microsoft Fabric Returns information about the full-text index and semantic key phrase populations currently in ID of the database that contains the full-text ID of the full-text catalog that contains this full- ID of the table for which the full-text index is Memory address of the internal data structure that is used to represent an active population. Type of population. One of th"
+description: "SQL database in Microsoft Fabric Returns information about the full-text index and semantic key phrase populations currently in ID of the database that contains the full-text ID of the full-text catalog that contains this full- ID of the table for which the full-text index is Memory address of the internal data structure that is used to represent an active population. Type of population."
 tags: ["io", "dmv"]
 pubDate: 2026-05-29
 syntax: |

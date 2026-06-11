@@ -2,7 +2,7 @@
 name: "sys.server_event_notifications"
 title: "sys.server_event_notifications"
 category: "compatibility"
-description: "Returns a row for each server-level event notification object. Server event notification name. Is unique across all server-level Object identification number. Is unique within the Class of parent. Is always 100 = Server. Description of class of parent. Is always Date object was last modified by using an Name of the target service to which the notification is sent. The service broker where the name"
+description: "Returns a row for each server-level event notification object. Server event notification name."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "sys.server_event_notifications"

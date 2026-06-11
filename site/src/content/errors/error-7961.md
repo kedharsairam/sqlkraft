@@ -4,7 +4,7 @@ title: "Error 7961"
 errorNumber: 7961
 severity: "medium"
 category: "io"
-description: "Description 7961 16 No Object ID %d, index ID %d, partition ID %I64d, alloc unit ID %I64d (type %.*ls) , page ID %S_PGID, row ID %d. Column '%.*ls' is a var column with a NULL value and non-zero data "
+description: "Description 7961 16 No Object ID %d, index ID %d, partition ID %I64d, alloc unit ID %I64d (type %.*ls) , page ID %S_PGID, row ID %d."
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---

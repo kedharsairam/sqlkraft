@@ -2,7 +2,7 @@
 name: "sys.fn_cdc_get_net_changes_"
 title: "cdc.fn_cdc_get_net_changes_<capture_instance>"
 category: "change-data-capture"
-description: "'D' - delete operation 'M' - either insert operation or update operation @update_flag_list> A bit flag that is named by appending _uflag to the column name. The flag takes on a non-NULL value only when row_filter_option and __CDC_OPERATION . It is set to 1 if the corresponding column was modified within the query window. function serves as a wrapper for the query function. The stored procedure is "
+description: "'D' - delete operation 'M' - either insert operation or update operation @update_flag_list> A bit flag that is named by appending _uflag to the column name. The flag takes on a non-NULL value only when row_filter_option and __CDC_OPERATION . It is set to 1 if the corresponding column was modified within the query window. function serves as a wrapper for the query function."
 tags: ["change-data-capture", "function"]
 pubDate: 2026-05-29
 syntax: "cdc.fn_cdc_get_net_changes_<capture_instance>"

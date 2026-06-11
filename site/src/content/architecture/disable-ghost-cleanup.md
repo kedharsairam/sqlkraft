@@ -1,7 +1,7 @@
 ---
 title: "Disable ghost cleanup"
 topic: "query-processing"
-description: "Ghost cleanup is a background process that physically removes the rows that were marked for"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

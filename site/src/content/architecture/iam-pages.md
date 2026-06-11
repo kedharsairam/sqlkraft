@@ -1,7 +1,7 @@
 ---
 title: "IAM pages"
 topic: "query-processing"
-description: "enough free space, a new page is added, and approximately half of the original page data is"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

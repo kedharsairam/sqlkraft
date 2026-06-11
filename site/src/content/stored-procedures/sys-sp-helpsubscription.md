@@ -2,7 +2,7 @@
 name: "sys.sp_helpsubscription"
 title: "sp_helpsubscription"
 category: "general"
-description: "Lists subscription information associated with a particular publication, article, Subscriber, or set of subscriptions. This stored procedure is executed at a Publisher on the publication database. Transact-SQL syntax conventions The name of the associated publication. returns all subscription information for this server. , which returns all subscription information for the selected publications an"
+description: "Lists subscription information associated with a particular publication, article, Subscriber, or set of subscriptions. This stored procedure is executed at a Publisher on the publication database. Transact-SQL syntax conventions The name of the associated publication. returns all subscription information for this server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

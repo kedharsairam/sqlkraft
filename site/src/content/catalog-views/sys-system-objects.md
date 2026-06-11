@@ -2,7 +2,7 @@
 name: "sys.system_objects"
 title: "sys.system_objects"
 category: "objects"
-description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains one row for all schema-scoped system objects that are included with Microsoft SQL Server. All system objects are contained in the schemas named sys or INFORMATION_SCHEMA. Object identification number. Is unique within a database. ID of the individual owner if different from the schema owner. By default, schema-contained obje"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains one row for all schema-scoped system objects that are included with Microsoft SQL Server. All system objects are contained in the schemas named sys or INFORMATION_SCHEMA."
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

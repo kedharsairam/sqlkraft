@@ -2,7 +2,7 @@
 name: "sys.all_objects"
 title: "sys.all_objects"
 category: "objects"
-description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Shows the UNION of all schema-scoped user-defined objects and system objects. Object identification number. Is unique within a database. ID of the individual owner if different from the schema owner. By default, schema-contained objects are owned by the schema owner. However, another owner can be specified by using the ALTER AUTHORIZ"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Shows the UNION of all schema-scoped user-defined objects and system objects."
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "sys.extended_procedures"

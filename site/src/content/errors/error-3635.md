@@ -4,7 +4,7 @@ title: "Error 3635"
 errorNumber: 3635
 severity: "medium"
 category: "deadlock"
-description: "Description 3635 16 Yes An error occurred while processing '%ls' metadata for database id %d, file id %d, and transaction='%.*ls'. Additional Context='%ls'. Location='%hs'(%d). Retry the operation; if"
+description: "Description 3635 16 Yes An error occurred while processing '%ls' metadata for database id %d, file id %d, and transaction='%.*ls'. Additional Context='%ls'. Location='%hs'(%d)."
 tags: ["deadlock", "severity-medium"]
 pubDate: 2026-05-29
 ---

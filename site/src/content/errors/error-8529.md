@@ -4,7 +4,7 @@ title: "Error 8529"
 errorNumber: 8529
 severity: "medium"
 category: "io"
-description: "Description 8529 16 No Unable to extract the Kernel Transaction Manager (KTM) transaction handle from the Microsoft Distributed Transaction Coordinator (MS DTC) transaction: 0x%x. 8530 16 Yes The oper"
+description: "Description 8529 16 No Unable to extract the Kernel Transaction Manager (KTM) transaction handle from the Microsoft Distributed Transaction Coordinator (MS DTC) transaction: 0x%x."
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---

@@ -2,7 +2,7 @@
 name: "sys.sp_migrate_user_to_contained"
 title: "sp_migrate_user_to_contained"
 category: "general"
-description: "Converts a database user that is mapped to a SQL Server login, to a contained database user with password. In a contained database, use this procedure to remove dependencies on the instance of SQL Server where the database is installed. separates the user from the original SQL Server login, so that settings such as password and default language can be administered separately for the contained data"
+description: "Converts a database user that is mapped to a SQL Server login, to a contained database user with password. In a contained database, use this procedure to remove dependencies on the instance of SQL Server where the database is installed."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_migrate_user_to_contained"

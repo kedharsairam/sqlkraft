@@ -1,7 +1,7 @@
 ---
 title: "Guidelines for indexes with included columns"
 topic: "index-architecture"
-description: "An index with included nonkey columns can significantly improve query performance when it"
+description: ""
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

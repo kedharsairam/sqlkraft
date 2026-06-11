@@ -2,7 +2,7 @@
 name: "sys.sp_help_fulltext_tables_cursor"
 title: "sp_help_fulltext_tables_cursor"
 category: "general"
-description: "Uses a cursor to return a list of tables that are registered for full-text indexing. Transact-SQL syntax conventions . The cursor is a read-only, scrollable, dynamic cursor. The name of the full-text catalog. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. catalog view"
+description: "Uses a cursor to return a list of tables that are registered for full-text indexing. Transact-SQL syntax conventions . The cursor is a read-only, scrollable, dynamic cursor."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

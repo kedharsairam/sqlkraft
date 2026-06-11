@@ -2,7 +2,7 @@
 name: "Additional Considerations About RESTORE Options"
 title: "Additional Considerations About RESTORE Options"
 category: "statements"
-description: "Under the full or bulk-logged recovery model, restoring log backups is required to reach"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

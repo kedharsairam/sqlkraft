@@ -320,8 +320,7 @@ See also
 SET
 DATEFORMAT dmy;
 SELECT
-CONVERT
-(
+CONVERT (
 DATE
 , @yourDateString)
 AS
@@ -335,8 +334,7 @@ format
 SET
 DATEFORMAT mdy;
 SELECT
-CONVERT
-(
+CONVERT (
 DATE
 , @yourDateString)
 AS
@@ -350,8 +348,7 @@ format
 SET
 DATEFORMAT ymd;
 SELECT
-CONVERT
-(
+CONVERT (
 DATE
 , @yourDateString)
 AS
@@ -372,20 +369,13 @@ YMD-Interpretation--?--NotGuaranteed
 national character varying
 ```
 
-```sql
-VarCharCol
-```
+`VarCharCol`
 
 ```sql
 CREATE
 TABLE
-ExampleTable (PriKey
-int
+ExampleTable (PriKey int
 PRIMARY
 KEY
-, VarCharCol
-national
-character
-varying
-(10))
+, VarCharCol national character varying (10))
 ```

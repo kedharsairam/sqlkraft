@@ -2,7 +2,7 @@
 name: "Microsoft Fabric support"
 title: "Microsoft Fabric support"
 category: "statements"
-description: "The ANSI and ISO 8601 compliance sections of the"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -45,9 +45,7 @@ datetimeoffset
 
 datetime2
 
-```sql
-SQL_WVARCHAR
-```
+`SQL_WVARCHAR`
 
 ```sql
 SQL_VARCHAR
@@ -57,13 +55,9 @@ Java.sql.String
 String
 ```
 
-```sql
-SqString
-```
+`SqString`
 
-```sql
-SQL_WVARCHAR
-```
+`SQL_WVARCHAR`
 
 ```sql
 SQL_VARCHAR
@@ -73,13 +67,9 @@ Java.sql.String
 String
 ```
 
-```sql
-SqString
-```
+`SqString`
 
-```sql
-SQL_WVARCHAR
-```
+`SQL_WVARCHAR`
 
 ```sql
 SQL_VARCHAR
@@ -89,13 +79,9 @@ Java.sql.String
 String
 ```
 
-```sql
-SqString
-```
+`SqString`
 
-```sql
-SQL_WVARCHAR
-```
+`SQL_WVARCHAR`
 
 ```sql
 SQL_VARCHAR
@@ -105,16 +91,12 @@ Java.sql.String
 String
 ```
 
-```sql
-SqString
-```
+`SqString`
 
 ```sql
 SELECT
-CAST
-(
-CAST
-(
+CAST (
+CAST (
 '2024-07-03 00:00:00'
 AS
 DATETIMEOFFSET)

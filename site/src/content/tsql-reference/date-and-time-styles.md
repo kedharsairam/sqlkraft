@@ -2,7 +2,7 @@
 name: "Date and time styles"
 title: "Date and time styles"
 category: "data-types"
-description: "An integer expression that specifies how the"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -458,17 +458,13 @@ Output
 
 1
 
-```sql
-CONVERT
-```
+`CONVERT`
 
 ```sql
 mon dd yyyy hh:miAM
 ```
 
-```sql
-PM
-```
+`PM`
 
 ```sql
 mm/dd/yy
@@ -478,13 +474,9 @@ mm/dd/yy
 mm/dd/yyyy
 ```
 
-```sql
-yy.mm.dd
-```
+`yy.mm.dd`
 
-```sql
-yyyy.mm.dd
-```
+`yyyy.mm.dd`
 
 ```sql
 dd/mm/yy
@@ -494,13 +486,9 @@ dd/mm/yy
 dd/mm/yyyy
 ```
 
-```sql
-dd.mm.yy
-```
+`dd.mm.yy`
 
-```sql
-dd.mm.yyyy
-```
+`dd.mm.yyyy`
 
 ```sql
 dd-mm-yy
@@ -531,13 +519,10 @@ hh:mi:ss
 ```
 
 ```sql
-mon dd yyyy
-hh:mi:ss:mmmAM
+mon dd yyyy hh:mi:ss:mmmAM
 ```
 
-```sql
-PM
-```
+`PM`
 
 ```sql
 mm-dd-yyyy
@@ -547,13 +532,10 @@ mm-dd-yyyy
 yyyy/mm/dd
 ```
 
-```sql
-yyyymmdd
-```
+`yyyymmdd`
 
 ```sql
-dd mon yyyy
-hh:mi:ss:mmm
+dd mon yyyy hh:mi:ss:mmm
 ```
 
 ```sql
@@ -572,9 +554,7 @@ yyyy-mm-dd hh:mi:ss.mmm
 mm/dd/yy hh:mi:ss AM
 ```
 
-```sql
-PM
-```
+`PM`
 
 ```sql
 yyyy-mm-dd
@@ -590,30 +570,20 @@ ddThh:mm:ss.fffZ
 ```
 
 ```sql
-dd mon yyyy
-hh:mi:ss:mmmAM
+dd mon yyyy hh:mi:ss:mmmAM
 ```
 
 ```sql
-dd/mm/yyyy
-hh:mi:ss:mmmAM
+dd/mm/yyyy hh:mi:ss:mmmAM
 ```
 
-```sql
-yy
-```
+`yy`
 
-```sql
-yyyy
-```
+`yyyy`
 
-```sql
-yyyy
-```
+`yyyy`
 
-```sql
-mmm
-```
+`mmm`
 
 ```sql
 2022-11-07T18:26:20.000
@@ -623,9 +593,7 @@ mmm
 2022-11-07T18:26:20
 ```
 
-```sql
-mon
-```
+`mon`
 
 ```sql
 00:00:00.000

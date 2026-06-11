@@ -2,7 +2,7 @@
 name: "sys.dm_exec_input_buffer"
 title: "sys.dm_exec_input_buffer"
 category: "execution"
-description: "SQL Server 2014 (12.x) SP2 and later versions SQL database in Microsoft Fabric Returns information about statements submitted to an instance of SQL Server. Is the session ID executing the batch to be looked up. can be obtained from the following dynamic management objects: The type of event in the input buffer for the given session ID (SPID). Any parameters provided for the statement. The text of "
+description: "SQL Server 2014 (12.x) SP2 and later versions SQL database in Microsoft Fabric Returns information about statements submitted to an instance of SQL Server. Is the session ID executing the batch to be looked up."
 tags: ["execution", "dmv"]
 pubDate: 2026-05-29
 syntax: "sys.dm_exec_input_buffer ( session_id , request_id )"

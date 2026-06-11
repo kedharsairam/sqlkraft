@@ -1,7 +1,7 @@
 ---
 name: "To Get an Email Notification"
 title: "To Get an Email Notification"
-description: "add this stored procedure as a new step in a job and setup"
+description: ""
 category: automation
 tags: ["automation"]
 pubDate: 2025-03-15

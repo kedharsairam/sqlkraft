@@ -2,7 +2,7 @@
 name: "sys.sp_revoke_publication_access"
 title: "sp_revoke_publication_access"
 category: "general"
-description: "Removes the login from a publications access list. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to access. Identified for informational purposes only. Not supported. Future compatibility is not"
+description: "Removes the login from a publications access list. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to access. Identified for informational purposes only. Not supported."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

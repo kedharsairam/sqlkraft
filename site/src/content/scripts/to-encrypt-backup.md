@@ -1,7 +1,7 @@
 ---
 name: "To Encrypt Backup"
 title: "To Encrypt Backup"
-description: "create a master key"
+description: ""
 category: security-audit
 tags: ["backup", "encryption", "security-audit"]
 pubDate: 2025-03-15

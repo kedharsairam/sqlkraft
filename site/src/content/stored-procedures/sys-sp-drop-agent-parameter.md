@@ -2,7 +2,7 @@
 name: "sys.sp_drop_agent_parameter"
 title: "sp_drop_agent_parameter"
 category: "general"
-description: "Drops one or all parameters from a profile in the table. This stored procedure is executed at the Distributor where the agent is running, on any database. Transact-SQL syntax conventions The ID of the profile for which a parameter is to be dropped. , with no default. The name of the parameter to be dropped. @parameter_name , with a default of , all parameters for the specified profile are dropped."
+description: "Drops one or all parameters from a profile in the table. This stored procedure is executed at the Distributor where the agent is running, on any database. Transact-SQL syntax conventions The ID of the profile for which a parameter is to be dropped. , with no default."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_drop_agent_parameter"

@@ -4,7 +4,7 @@ title: "Error 4080"
 errorNumber: 4080
 severity: "medium"
 category: "connection"
-description: "Description 4080 16 No The incoming tabular data stream (TDS) protocol stream is incorrect. The TRACE TDS header contained errors. 4081 16 No The parameter '%.*ls' was deduced to be a table-valued par"
+description: "Description 4080 16 No The incoming tabular data stream (TDS) protocol stream is incorrect. The TRACE TDS header contained errors."
 tags: ["connection", "severity-medium"]
 pubDate: 2026-05-29
 ---

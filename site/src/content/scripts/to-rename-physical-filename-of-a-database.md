@@ -1,7 +1,7 @@
 ---
 name: "To Rename Physical Filename of a Database"
 title: "To Rename Physical Filename of a Database"
-description: "set database in single user mode"
+description: ""
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

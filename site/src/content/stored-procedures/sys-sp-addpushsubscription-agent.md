@@ -2,7 +2,7 @@
 name: "sys.sp_addpushsubscription_agent"
 title: "sp_addpushsubscription_agent"
 category: "general"
-description: "Adds a new scheduled agent job used to synchronize a push subscription to a transactional publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher "
+description: "Adds a new scheduled agent job used to synchronize a push subscription to a transactional publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

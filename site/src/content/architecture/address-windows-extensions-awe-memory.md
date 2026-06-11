@@ -1,7 +1,7 @@
 ---
 title: "Address Windows Extensions (AWE) memory"
 topic: "memory-management"
-description: "grow. To resolve this problem, add physical memory, or tune the queries to use a different and"
+description: "grow."
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---

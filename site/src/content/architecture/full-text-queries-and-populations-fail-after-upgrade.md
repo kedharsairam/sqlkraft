@@ -1,7 +1,7 @@
 ---
 title: "Full-Text queries and populations fail after upgrade"
 topic: "io-fundamentals"
-description: "SQL Server 2025 (17.x) includes changes to"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

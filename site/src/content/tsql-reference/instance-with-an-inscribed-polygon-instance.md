@@ -2,7 +2,7 @@
 name: "instance with an inscribed Polygon instance"
 title: "Instance with an inscribed Polygon instance"
 category: "queries"
-description: "The following example uses"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

@@ -67,21 +67,15 @@ GROUPING(b) + GROUPING(c)
 
 GROUPING_ID() output
 
-```sql
-GROUPING_ID
-```
+`GROUPING_ID`
 
-```sql
-GROUPING_ID
-```
+`GROUPING_ID`
 
 ```sql
 SELECT <select>
 ```
 
-```sql
-HAVING
-```
+`HAVING`
 
 ```sql
 ORDER BY
@@ -104,8 +98,7 @@ DATEPART (yyyy, <column name>)
 ```
 
 ```sql
-GROUPING_ID
-(DATEPART (yyyy, <column name>))
+GROUPING_ID (DATEPART (yyyy, <column name>))
 ```
 
 ```sql
@@ -113,8 +106,7 @@ GROUPING_ID
 ```
 
 ```sql
-GROUPING_ID
-(<column name>)
+GROUPING_ID (<column name>)
 ```
 
 ```sql
@@ -122,15 +114,13 @@ GROUPING_ID (<column_expression> [ , ...n ])
 ```
 
 ```sql
-GROUPING
-(<column_expression>)
+GROUPING (<column_expression>)
 ```
 
 ```sql
 GROUPING
 _
-ID
-(
+ID (
 <column_expression>
 [ , ...n ] )
 ```

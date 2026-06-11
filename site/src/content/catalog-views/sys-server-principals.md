@@ -2,7 +2,7 @@
 name: "sys.server_principals"
 title: "sys.server_principals"
 category: "compatibility"
-description: "Azure SQL Managed Instance Returns the login identification number of the user. Transact-SQL syntax conventions Is the login name of the user. is specified as can be any SQL Server login or Windows user or group that has permission to connect to an instance of SQL Server. If is not specified, the login identification number for the current user is returned. If the parameter contains the word NULL "
+description: "Azure SQL Managed Instance Returns the login identification number of the user. Transact-SQL syntax conventions Is the login name of the user. is specified as can be any SQL Server login or Windows user or group that has permission to connect to an instance of SQL Server. If is not specified, the login identification number for the current user is returned. If the parameter contains the word NULL"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

@@ -2,7 +2,7 @@
 name: "Resolve errors in database emergency mode"
 title: "Resolve errors in database emergency mode"
 category: "predicates"
-description: "detects a corruption error. When the"
+description: "detects a corruption error."
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

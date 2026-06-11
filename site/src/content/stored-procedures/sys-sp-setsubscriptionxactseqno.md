@@ -2,7 +2,7 @@
 name: "sys.sp_setsubscriptionxactseqno"
 title: "sp_setsubscriptionxactseqno"
 category: "general"
-description: "Used during troubleshooting to specify the last delivered transaction using the log sequence number (LSN), allowing the Distribution Agent to begin delivering at the next transaction. After it restarts, the Distribution Agent returns transactions greater than this watermark (LSN) from the Distribution database cache (msrepl_commands). This stored procedure is executed at the Subscriber on the subs"
+description: "Used during troubleshooting to specify the last delivered transaction using the log sequence number (LSN), allowing the Distribution Agent to begin delivering at the next transaction. After it restarts, the Distribution Agent returns transactions greater than this watermark (LSN) from the Distribution database cache (msrepl_commands)."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

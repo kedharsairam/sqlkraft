@@ -2,7 +2,7 @@
 name: "N. Use the INDEX optimizer hint"
 title: "N. Use the INDEX optimizer hint"
 category: "statements"
-description: "To see the products with total sales greater than"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

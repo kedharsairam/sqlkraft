@@ -2,7 +2,7 @@
 name: "sys.assemblies"
 title: "sys.assemblies"
 category: "compatibility"
-description: "Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Returns a row for each assembly. Name of the assembly. Is unique within the database. ID of the principal that owns this assembly. Assembly identification number. Is unique within a database. Canonical string that encodes the simple name, version number, culture, public key, and architecture of the assembly. This value uniq"
+description: "Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Returns a row for each assembly."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

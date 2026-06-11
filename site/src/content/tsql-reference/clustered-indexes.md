@@ -2,7 +2,7 @@
 name: "Clustered indexes"
 title: "Clustered indexes"
 category: "statements"
-description: "You can also specify the"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

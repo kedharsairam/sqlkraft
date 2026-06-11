@@ -4,7 +4,7 @@ title: "Error 7926"
 errorNumber: 7926
 severity: "medium"
 category: "io"
-description: "Description pages used in %I64d dedicated extents. 7926 16 No Check statement aborted. The database could not be checked as a database snapshot could not be created and the database or table could not"
+description: "Description pages used in %I64d dedicated extents. 7926 16 No Check statement aborted."
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---

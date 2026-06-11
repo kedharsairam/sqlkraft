@@ -2,7 +2,7 @@
 name: "sys.cryptographic_providers"
 title: "sys.cryptographic_providers"
 category: "compatibility"
-description: "Returns one row for each registered cryptographic provider. Identification number of the cryptographic provider. Name of the cryptographic provider. Version of the provider in the format ' Path to DLL that implements the Extensible Key Management (EKM) Application Program Interface (API). Whether the provider is enabled on the server or not. view is visible to the public. Security Catalog Views (T"
+description: "Returns one row for each registered cryptographic provider. Identification number of the cryptographic provider."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

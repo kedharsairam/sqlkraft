@@ -2,7 +2,7 @@
 name: "ODBC Reserved Keywords"
 title: "ODBC Reserved Keywords"
 category: "statements"
-description: "The following table lists reserved keywords that are exclusive to"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -266,8 +266,6 @@ INTEGER
 COLUMN
 
 INTERSECT
-
-SQL
 
 SQLCA
 

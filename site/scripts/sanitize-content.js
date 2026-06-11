@@ -269,7 +269,157 @@ function collapseBlankLines(lines) {
 }
 
 /**
- * Pass 6 — Check if file is an empty stub (only frontmatter + headings/no content).
+ * Pass 6 — Fix concatenated column-description salad in frontmatter descriptions.
+ *
+ * DMVs and catalog views extracted from Microsoft docs often have descriptions
+ * that start with a real sentence then dump column metadata:
+ *   "Returns a row for each broker connection. ID of the connection. Name of the endpoint. Current state of the connection."
+ *
+ * This pass truncates the description to the first 1-2 natural-sentence fragments
+ * before the column-metadata begins.
+ */
+function COL_DESC_MARKERS_RE() {
+  // These phrases signal that a sentence is describing a column, not the object itself.
+  // These are only checked against text that FOLLOWS a sentence break — NOT against the
+  // first sentence of a description (which may start with platform prefixes naturally).
+  return /^(ID of|Name of|Identifier of|Object identification|The name of|The class of|Date and time|Current state|Possible values|Possible |Value written|Maps to|Is unique|Can be|Related to the value|This view is visible|The item)/i;
+}
+
+function fixConcatenatedDescriptions(frontmatter, body) {
+  // Fix frontmatter description
+  const descMatch = frontmatter.match(/^description:\s*"(.+)"\s*$/m);
+  if (descMatch) {
+    const original = descMatch[1];
+    const cleaned = truncateAfterFirstSentence(original);
+    if (cleaned !== original) {
+      stats.fragmented_sentences_joined++; // reuse counter for stats
+      frontmatter = frontmatter.replace(
+        /^description:\s*".+"/m,
+        `description: "${cleaned}"`
+      );
+    }
+  }
+
+  // Fix body: remove column-description-salad after the first paragraph
+  const bodyLines = body.split("\n");
+  const fixedLines = [];
+  let inDescription = false;
+  let columnSaladStarted = false;
+
+  for (let i = 0; i < bodyLines.length; i++) {
+    const line = bodyLines[i];
+
+    // Track when we're in the ## Description section
+    if (/^## Description\s*$/i.test(line.trim())) {
+      inDescription = true;
+      columnSaladStarted = false;
+      fixedLines.push(line);
+      continue;
+    }
+
+    // Stop at next heading
+    if (inDescription && /^##\s/.test(line.trim())) {
+      inDescription = false;
+      fixedLines.push(line);
+      continue;
+    }
+
+    if (inDescription) {
+      const trimmed = line.trim();
+      if (trimmed === "") {
+        // Keep blank lines in description section but track them
+        fixedLines.push(line);
+        continue;
+      }
+
+      // If we haven't found salad yet, check if this sentence starts with column markers
+      if (!columnSaladStarted) {
+        if (COL_DESC_MARKERS_RE().test(trimmed)) {
+          columnSaladStarted = true;
+          // Skip this line and subsequent column descriptions
+          continue;
+        }
+        fixedLines.push(line);
+      } else {
+        // In salad territory - skip lines that look like column descriptions
+        if (
+          COL_DESC_MARKERS_RE().test(trimmed) ||
+          /^[A-Z][a-z]+ [a-z]+ [a-z]+ [a-z]+\.$/.test(trimmed) ||
+          trimmed.length < 15
+        ) {
+          continue;
+        }
+        // If we see a proper sentence again, include it
+        fixedLines.push(line);
+      }
+    } else {
+      fixedLines.push(line);
+    }
+  }
+
+  body = fixedLines.join("\n");
+  return { frontmatter, body };
+}
+
+function truncateAfterFirstSentence(text) {
+  // Split into sentences (rough heuristic: text before . followed by space and capital letter or column marker)
+  const sentences = [];
+  let current = "";
+  let i = 0;
+
+  while (i < text.length) {
+    current += text[i];
+    if (text[i] === "." && (i + 1 >= text.length || (i + 1 < text.length && text[i + 1] === " "))) {
+      // Check if next starts with a column marker
+      const remainder = text.slice(i + 1).trim();
+      if (remainder === "") {
+        current += remainder;
+        sentences.push(current.trim());
+        current = "";
+        break;
+      }
+      // Check if the next sentence starts with a column-description marker
+      if (COL_DESC_MARKERS_RE().test(remainder)) {
+        // We've found the first column-description marker after a sentence
+        // Keep only up to this point
+        if (current.trim()) {
+          sentences.push(current.trim());
+        }
+        current = "";
+        break;
+      }
+      // Otherwise, this is a normal sentence continuation
+      if (current.trim()) {
+        sentences.push(current.trim());
+      }
+      current = "";
+      i++;
+      continue;
+    }
+    i++;
+  }
+
+  // If we have leftover text and it doesn't start with column markers
+  if (current.trim() && !COL_DESC_MARKERS_RE().test(current.trim())) {
+    sentences.push(current.trim());
+  }
+
+  // Keep only up to where the main loop broke on a column marker (already handled above).
+  // No arbitrary sentence limit — clean descriptions are kept in full.
+  const keep = [];
+  for (let s = 0; s < sentences.length; s++) {
+    const sentence = sentences[s].replace(/^\.\s*/, "").trim();
+    if (!sentence) continue;
+    // Skip if it looks like truncated content (ends mid-word mid-sentence)
+    if (/ [a-z]{2,5}$/.test(sentence) && !/[.!?:;]$/.test(sentence)) continue;
+    keep.push(sentence);
+  }
+
+  return keep.join(" ");
+}
+
+/**
+ * Pass 7 — Check if file is an empty stub (only frontmatter + headings/no content).
  * Returns true if the file should be deleted.
  */
 function isEmptyStub(bodyLines) {
@@ -316,10 +466,15 @@ function processFile(filePath) {
     return;
   }
 
-  const frontmatter = frontmatterMatch[0];
+  let frontmatter = frontmatterMatch[0];
   let body = content.slice(frontmatter.length);
 
   // ── Apply passes ──
+
+  // 0. Fix concatenated column-description salad (DMVs, catalog-views)
+  const descResult = fixConcatenatedDescriptions(frontmatter, body);
+  frontmatter = descResult.frontmatter;
+  body = descResult.body;
 
   // 2. Fix stray code blocks
   body = fixStrayCodeBlocks(body);

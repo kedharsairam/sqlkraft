@@ -4,7 +4,7 @@ title: "Error 5527"
 errorNumber: 5527
 severity: "medium"
 category: "io"
-description: "Description 5527 16 No The primary FILESTREAM log file cannot be dropped because other FILESTREAM filegroups exist. 5528 16 No A database can have at most one primary FILESTREAM log filegroup and log "
+description: "Description 5527 16 No The primary FILESTREAM log file cannot be dropped because other FILESTREAM filegroups exist."
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---

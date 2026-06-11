@@ -2,7 +2,7 @@
 name: "sys.sp_syscollector_update_collection_item"
 title: "sp_syscollector_update_collection_item"
 category: "general"
-description: "Used to modify the properties of a user-defined collection item or to rename a user-defined Transact-SQL syntax conventions The unique identifier that identifies the collection item. The name of the collection item. The new name for the collection item. used, can't be an empty string."
+description: "Used to modify the properties of a user-defined collection item or to rename a user-defined Transact-SQL syntax conventions The unique identifier that identifies the collection item."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

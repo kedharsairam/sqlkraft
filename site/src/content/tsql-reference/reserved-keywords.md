@@ -2,7 +2,7 @@
 name: "Reserved keywords"
 title: "Reserved keywords"
 category: "statements"
-description: "This behavior is applicable only when"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

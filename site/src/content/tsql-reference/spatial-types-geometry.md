@@ -15,4 +15,3 @@ pubDate: 2026-05-29
 ## Remarks
 
 The geometry spatial data type represents data in a Euclidean (flat) coordinate system.
-

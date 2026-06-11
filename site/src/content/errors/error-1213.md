@@ -4,7 +4,7 @@ title: "Error 1213"
 errorNumber: 1213
 severity: "medium"
 category: "deadlock"
-description: "Description 1213 21 Yes Error spawning Lock Monitor thread: %ls 1214 17 Yes Internal Error. There are too many parallel transactions. 1215 16 No A conflicting ABORT_AFTER_WAIT = BLOCKERS request is wa"
+description: "Description 1213 21 Yes Error spawning Lock Monitor thread: %ls 1214 17 Yes Internal Error. There are too many parallel transactions."
 tags: ["deadlock", "severity-medium"]
 pubDate: 2026-05-29
 ---

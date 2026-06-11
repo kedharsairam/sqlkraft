@@ -2,7 +2,7 @@
 name: "About working with SQL Server backups"
 title: "About working with SQL Server backups"
 category: "queries"
-description: "Backs up the tail of the log and leaves the database in a read-only and"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

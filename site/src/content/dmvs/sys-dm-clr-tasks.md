@@ -2,7 +2,7 @@
 name: "sys.dm_clr_tasks"
 title: "sys.dm_clr_tasks"
 category: "clr"
-description: "Returns a row for all common language runtime (CLR) tasks that are currently running. A Transact-SQL batch that contains a reference to a CLR routine creates a separate task for execution of all the managed code in that batch. Multiple statements in the batch that require managed code execution use the same CLR task. The CLR task is responsible for maintaining objects and state pertaining to manag"
+description: "Returns a row for all common language runtime (CLR) tasks that are currently running. A Transact-SQL batch that contains a reference to a CLR routine creates a separate task for execution of all the managed code in that batch. Multiple statements in the batch that require managed code execution use the same CLR task."
 tags: ["clr", "dmv"]
 pubDate: 2026-05-29
 syntax: "##MS_ServerStateReader##"

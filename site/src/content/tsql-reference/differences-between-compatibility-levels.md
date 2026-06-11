@@ -2,7 +2,7 @@
 name: "Differences between compatibility levels"
 title: "Differences between compatibility levels"
 category: "predicates"
-description: "resulting in different converted values. To restore previous conversion behavior, set the"
+description: "resulting in different converted values."
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

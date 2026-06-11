@@ -2,7 +2,7 @@
 name: "sys.sp_reinitsubscription"
 title: "sp_reinitsubscription"
 category: "general"
-description: "Marks the subscription for reinitialization. This stored procedure is executed at the Publisher Transact-SQL syntax conventions . Otherwise, the stored procedure skips the publication and"
+description: "Marks the subscription for reinitialization. This stored procedure is executed at the Publisher Transact-SQL syntax conventions ."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

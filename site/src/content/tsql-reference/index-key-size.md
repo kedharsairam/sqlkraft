@@ -2,7 +2,7 @@
 name: "Index key size"
 title: "Index key size"
 category: "hints"
-description: "compatibility level is set to 90 or higher. If the database compatibility level is set to 80 or"
+description: "compatibility level is set to 90 or higher."
 tags: ["tsql", "hints"]
 pubDate: 2026-05-29
 ---

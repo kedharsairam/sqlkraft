@@ -2,7 +2,7 @@
 name: "sys.sp_query_store_force_plan"
 title: "sp_query_store_force_plan"
 category: "general"
-description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Enables forcing a particular plan for a particular query in the Query Store. When a plan is forced for a particular query, every time SQL Server encounters the query, it tries to force the plan in the Query Optimizer. If plan forcing fails, an Extended Event is fired and the Query Optimizer is instructed to optimize in the "
+description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Enables forcing a particular plan for a particular query in the Query Store. When a plan is forced for a particular query, every time SQL Server encounters the query, it tries to force the plan in the Query Optimizer."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

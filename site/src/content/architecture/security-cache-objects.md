@@ -1,7 +1,7 @@
 ---
 title: "Security cache objects"
 topic: "query-processing"
-description: "7. Verify user permissions on all columns, for example, the permissions of the user on"
+description: "7."
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

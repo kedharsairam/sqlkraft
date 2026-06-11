@@ -2,7 +2,7 @@
 name: "level 130"
 title: "Level 130"
 category: "statements"
-description: "the memory grant size of a cached plan if an"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
