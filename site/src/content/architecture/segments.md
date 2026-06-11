@@ -1,7 +1,7 @@
 ---
 title: "segments"
 topic: "query-processing"
-description: "When discussing columnstore indexes, we use the terms"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

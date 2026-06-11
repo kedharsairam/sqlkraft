@@ -2,7 +2,7 @@
 name: "sys.messages"
 title: "Messages (for errors) - sys.messages"
 category: "compatibility"
-description: "Contains information about all available SQL Server Agent proxy subsystems. The table is stored in the ID of the subsystem. Name of the subsystem. Message ID of the row in the catalog view that contains the subsystem description. Location of the subsystem DLL. Full path to the executable that uses the subsystem. Function that is called when the subsystem is initialized. Function that is called whe"
+description: "Contains information about all available SQL Server Agent proxy subsystems. The table is stored in the ID of the subsystem."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

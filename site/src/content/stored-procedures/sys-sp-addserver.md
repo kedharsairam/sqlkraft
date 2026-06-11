@@ -2,7 +2,7 @@
 name: "sys.sp_addserver"
 title: "sp_addserver"
 category: "general"
-description: "Defines the name of the local instance of SQL Server. When the computer hosting SQL Server is to inform the instance of the SQL Server Database Engine of the new computer name. This procedure must be executed on all instances of the Database Engine The instance name of the Database Engine can't be changed. To change the instance name of a named instance, install a new instance with the desired nam"
+description: "Defines the name of the local instance of SQL Server. When the computer hosting SQL Server is to inform the instance of the SQL Server Database Engine of the new computer name. This procedure must be executed on all instances of the Database Engine The instance name of the Database Engine can't be changed."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

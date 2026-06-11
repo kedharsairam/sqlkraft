@@ -2,7 +2,7 @@
 name: "ORDER BY"
 title: "ORDER BY"
 category: "queries"
-description: "The order of certain parameters used with the"
+description: ""
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---

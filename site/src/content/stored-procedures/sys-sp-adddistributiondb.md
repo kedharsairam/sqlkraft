@@ -2,7 +2,7 @@
 name: "sys.sp_adddistributiondb"
 title: "sp_adddistributiondb"
 category: "general"
-description: "Creates a new distribution database and installs the Distributor schema. The distribution database stores procedures, schema, and metadata used in replication. This stored procedure is executed at the Distributor on the database in order to create the distribution database, and install the necessary tables and stored procedures required to enable the Transact-SQL syntax conventions The name of the"
+description: "Creates a new distribution database and installs the Distributor schema. The distribution database stores procedures, schema, and metadata used in replication."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

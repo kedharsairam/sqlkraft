@@ -1,7 +1,7 @@
 ---
 title: "Update locks"
 topic: "locking"
-description: "Additional locking resources are available for"
+description: ""
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

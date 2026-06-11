@@ -2,7 +2,7 @@
 name: "Date and time functions"
 title: "Date and time functions"
 category: "data-types"
-description: "The following tables list the Transact-SQL date and time functions. For more information about determinism, see"
+description: "The following tables list the Transact-SQL date and time functions."
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -552,79 +552,45 @@ data type, see
 
 ## Functions that validate date and time values
 
-```sql
-GetSystemTimeAsFileTime()
-```
+`GetSystemTimeAsFileTime()`
+
+`GetSystemTimeAdjustment()`
+
+`SYSDATETIME()`
+
+`SYSDATETIME`
 
 ```sql
-GetSystemTimeAdjustment()
+SYSDATETIMEOFFSET ()
 ```
 
-```sql
-SYSDATETIME()
-```
+`SYSDATETIMEOFFSET`
 
 ```sql
-SYSDATETIME
+SYSUTCDATETIME ()
 ```
 
-```sql
-SYSDATETIMEOFFSET
-()
-```
+`SYSUTCDATETIME`
 
-```sql
-SYSDATETIMEOFFSET
-```
+`SYSUTCDATETIME`
 
-```sql
-SYSUTCDATETIME
-()
-```
+`CURRENT_TIMESTAMP`
 
-```sql
-SYSUTCDATETIME
-```
+`CURRENT_TIMESTAMP`
 
-```sql
-SYSUTCDATETIME
-```
+`GETDATE()`
 
-```sql
-CURRENT_TIMESTAMP
-```
+`GETDATE`
 
-```sql
-CURRENT_TIMESTAMP
-```
+`GETUTCDATE()`
 
-```sql
-GETDATE()
-```
+`GETUTCDATE`
 
-```sql
-GETDATE
-```
+`GETUTCDATE`
 
-```sql
-GETUTCDATE()
-```
+`CURRENT_DATE`
 
-```sql
-GETUTCDATE
-```
-
-```sql
-GETUTCDATE
-```
-
-```sql
-CURRENT_DATE
-```
-
-```sql
-CURRENT_DATE
-```
+`CURRENT_DATE`
 
 ```sql
 DATE_BUCKET (
@@ -633,9 +599,7 @@ DATE_BUCKET (
 <origin>)
 ```
 
-```sql
-DATE_BUCKET
-```
+`DATE_BUCKET`
 
 ```sql
 1900-01-01 00:00:00.000
@@ -647,9 +611,7 @@ DATENAME (
 <date> )
 ```
 
-```sql
-DATENAME
-```
+`DATENAME`
 
 ```sql
 DATEPART (
@@ -657,9 +619,7 @@ DATEPART (
 <date> )
 ```
 
-```sql
-DATEPART
-```
+`DATEPART`
 
 ```sql
 DATETRUNC (
@@ -667,42 +627,32 @@ DATETRUNC (
 <date> )
 ```
 
-```sql
-DATETRUNC
-```
+`DATETRUNC`
 
 ```sql
 DAY ( <date> )
 ```
 
-```sql
-DAY
-```
+`DAY`
 
 ```sql
 MONTH ( <date> )
 ```
 
-```sql
-MONTH
-```
+`MONTH`
 
 ```sql
 YEAR ( <date> )
 ```
 
-```sql
-YEAR
-```
+`YEAR`
 
 ```sql
 DATEFROMPARTS ( <year>,
 <month>, <day> )
 ```
 
-```sql
-DATEFROMPARTS
-```
+`DATEFROMPARTS`
 
 ```sql
 DATETIME2FROMPARTS (
@@ -712,9 +662,7 @@ DATETIME2FROMPARTS (
 <precision> )
 ```
 
-```sql
-DATETIME2FROMPARTS
-```
+`DATETIME2FROMPARTS`
 
 ```sql
 DATETIMEFROMPARTS (
@@ -724,13 +672,10 @@ DATETIMEFROMPARTS (
 <milliseconds> )
 ```
 
-```sql
-DATETIMEFROMPARTS
-```
+`DATETIMEFROMPARTS`
 
 ```sql
-DATETIMEOFFSETFROMPARTS
-( <year>, <month>,
+DATETIMEOFFSETFROMPARTS ( <year>, <month>,
 <day>, <hour>,
 <minute>, <seconds>,
 <fractions>,
@@ -739,20 +684,15 @@ DATETIMEOFFSETFROMPARTS
 <precision> )
 ```
 
-```sql
-DATETIMEOFFSETFROMPARTS
-```
+`DATETIMEOFFSETFROMPARTS`
 
 ```sql
-SMALLDATETIMEFROMPARTS
-( <year>, <month>,
+SMALLDATETIMEFROMPARTS ( <year>, <month>,
 <day>, <hour>, <minute>
 )
 ```
 
-```sql
-SMALLDATETIMEFROMPARTS
-```
+`SMALLDATETIMEFROMPARTS`
 
 ```sql
 TIMEFROMPARTS ( <hour>,
@@ -761,18 +701,14 @@ TIMEFROMPARTS ( <hour>,
 <precision> )
 ```
 
-```sql
-TIMEFROMPARTS
-```
+`TIMEFROMPARTS`
 
 ```sql
 DATEDIFF ( <datepart>,
 <startdate>, <enddate> )
 ```
 
-```sql
-DATEDIFF
-```
+`DATEDIFF`
 
 ```sql
 DATEDIFF_BIG (
@@ -780,18 +716,14 @@ DATEDIFF_BIG (
 <enddate> )
 ```
 
-```sql
-DATEDIFF_BIG
-```
+`DATEDIFF_BIG`
 
 ```sql
 DATEADD (<datepart>,
 <number>, <date> )
 ```
 
-```sql
-DATEADD
-```
+`DATEADD`
 
 ```sql
 EOMONTH (
@@ -799,30 +731,20 @@ EOMONTH (
 <month_to_add> ] )
 ```
 
-```sql
-EOMONTH
-```
+`EOMONTH`
 
 ```sql
-SWITCHOFFSET
-(<DATETIMEOFFSET>,
+SWITCHOFFSET (<DATETIMEOFFSET>,
 <time_zone> )
 ```
 
-```sql
-SWITCHOFFSET
-```
+`SWITCHOFFSET`
 
 ```sql
-TODATETIMEOFFSET
-(<expression>,
+TODATETIMEOFFSET (<expression>,
 <time_zone> )
 ```
 
-```sql
-TODATETIMEOFFSET
-```
+`TODATETIMEOFFSET`
 
-```sql
-TODATETIMEOFFSET
-```
+`TODATETIMEOFFSET`

@@ -2,7 +2,7 @@
 name: "xquery-aggregate-functions-avg"
 title: "XQuery - Aggregate Functions - avg"
 category: "xquery"
-description: "XQuery Language Reference: Aggregate Functions - avg"
+description: ""
 syntax: "fn:avg($arg as xdt:anyAtomicType*) as xdt:anyAtomicType?"
 tags:
   - "xquery"

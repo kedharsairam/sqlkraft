@@ -2,7 +2,7 @@
 name: "sys.database_role_members"
 title: "sys.database_role_members"
 category: "security"
-description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns one row for each member of each database role. Database users, application roles, and other database roles can be members of a database role. To add members to a role, use the Database principal ID of the role. Database principal ID of the member. Any user can view their own role membership. To view other role memberships req"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns one row for each member of each database role. Database users, application roles, and other database roles can be members of a database role. To add members to a role, use the Database principal ID of the role. Database principal ID of the member. Any user can view their own role membership."
 tags: ["security", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

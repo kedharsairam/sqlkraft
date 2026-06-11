@@ -19,4 +19,3 @@ binary(8)
 ## Remarks
 
 Returns the lowest active rowversion value in the current database.
-

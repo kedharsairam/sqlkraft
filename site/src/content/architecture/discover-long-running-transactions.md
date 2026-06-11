@@ -1,7 +1,7 @@
 ---
 title: "Discover long-running transactions"
 topic: "io-fundamentals"
-description: "In addition, when the"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

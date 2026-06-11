@@ -1,7 +1,7 @@
 ---
 title: "Clustered index architecture"
 topic: "index-architecture"
-description: "If you don't create a clustered index, the table is stored as a heap, which is generally not"
+description: ""
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

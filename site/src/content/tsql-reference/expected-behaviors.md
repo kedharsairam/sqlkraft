@@ -2,7 +2,7 @@
 name: "Expected behaviors"
 title: "Expected behaviors"
 category: "statements"
-description: "The following sample demonstrates the INNER JOIN with filtering on multiple tables. Use when"
+description: "The following sample demonstrates the INNER JOIN with filtering on multiple tables."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Behavior when reading data"
 topic: "io-fundamentals"
-description: "Row versions are held long enough to satisfy the requirements of transactions running under row"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

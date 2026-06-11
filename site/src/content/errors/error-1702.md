@@ -4,7 +4,7 @@ title: "Error 1702"
 errorNumber: 1702
 severity: "medium"
 category: "io"
-description: "Description 1702 16 No CREATE TABLE failed because column '%.*ls' in table '%.*ls' exceeds the maximum of %d columns. 1706 16 No The system table '%.*ls' can only be created or altered during an upgra"
+description: "Description 1702 16 No CREATE TABLE failed because column '%.*ls' in table '%.*ls' exceeds the maximum of %d columns."
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
 name: "To Hide Table or Unhide Table"
 title: "To Hide Table or Unhide Table"
-description: "this won't delete the table"
+description: ""
 category: database
 tags: ["database", "table"]
 pubDate: 2025-03-15

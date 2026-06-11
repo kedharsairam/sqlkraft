@@ -2,7 +2,7 @@
 name: "sys.server_event_session_events"
 title: "sys.server_event_session_events"
 category: "compatibility"
-description: "Azure SQL Managed Instance Returns a row for each event in an event session. The ID of the event session. Is not nullable. The ID of the event. This ID is unique within an event session object. Is The name of the event. Is not nullable. The name of the event package that contains the event. Is not nullable. The name of the module that contains the event. Is not nullable. The predicate expression t"
+description: "Azure SQL Managed Instance Returns a row for each event in an event session. The ID of the event session. Is not nullable. The ID of the event. This ID is unique within an event session object. Is The name of the event. Is not nullable."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "VIEW SERVER PERFORMANCE STATE"

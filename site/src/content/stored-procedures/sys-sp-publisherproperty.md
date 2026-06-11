@@ -2,7 +2,7 @@
 name: "sys.sp_publisherproperty"
 title: "sp_publisherproperty"
 category: "general"
-description: "Displays or changes publisher properties for non-SQL Server Publishers. This stored procedure is executed at the Distributor. Transact-SQL syntax conventions The name of the heterogeneous Publisher. The name of the property being set. Specifies whether transactions at the Publisher are grouped into transactionally consistent sets (Xactsets) for subsequent processing. A value of that Xactsets can b"
+description: "Displays or changes publisher properties for non-SQL Server Publishers. This stored procedure is executed at the Distributor. Transact-SQL syntax conventions The name of the heterogeneous Publisher."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -2,7 +2,7 @@
 name: "Supported string literal formats for date"
 title: "Supported string literal formats for date"
 category: "data-types"
-description: "This value is used for the appended date part for implicit conversion from"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

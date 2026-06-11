@@ -1,7 +1,7 @@
 ---
 title: "Types of concurrency"
 topic: "query-processing"
-description: "Missing an updated row or seeing an updated row multiple times"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

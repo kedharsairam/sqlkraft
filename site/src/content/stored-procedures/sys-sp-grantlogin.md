@@ -2,7 +2,7 @@
 name: "sys.sp_grantlogin"
 title: "sp_grantlogin"
 category: "general"
-description: "Creates a SQL Server login. Transact-SQL syntax conventions The name of a Windows user or group. , with no default. The Windows user or group must be qualified with a Windows domain name in the form , which supports extra options. For information on creating SQL Server logins, see This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and "
+description: "Creates a SQL Server login. Transact-SQL syntax conventions The name of a Windows user or group. , with no default. The Windows user or group must be qualified with a Windows domain name in the form , which supports extra options. For information on creating SQL Server logins, see This feature will be removed in a future version of SQL Server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

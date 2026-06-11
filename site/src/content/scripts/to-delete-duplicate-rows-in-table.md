@@ -1,7 +1,7 @@
 ---
 name: "To Delete Duplicate Rows in Table"
 title: "To Delete Duplicate Rows in Table"
-description: "method 1 = create and drop a table"
+description: ""
 category: database
 tags: ["database", "table"]
 pubDate: 2025-03-15

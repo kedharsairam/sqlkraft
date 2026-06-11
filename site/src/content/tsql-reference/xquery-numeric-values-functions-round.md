@@ -2,7 +2,7 @@
 name: "xquery-numeric-values-functions-round"
 title: "XQuery - Numeric Values Functions - round"
 category: "xquery"
-description: "XQuery Language Reference: Numeric Values Functions - round"
+description: ""
 syntax: "fn:round ( $arg as numeric?) as numeric?"
 tags:
   - "xquery"

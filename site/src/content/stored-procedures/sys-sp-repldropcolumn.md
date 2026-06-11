@@ -2,7 +2,7 @@
 name: "sys.sp_repldropcolumn"
 title: "sp_repldropcolumn"
 category: "general"
-description: "Drops a column from an existing table article that was published. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the table article that contains the column to drop. The name of the column in the table to be dropped. This stored procedure has been deprecated and is being supported mainly for backward- compatibility. It sho"
+description: "Drops a column from an existing table article that was published. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the table article that contains the column to drop."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

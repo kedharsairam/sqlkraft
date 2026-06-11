@@ -2,7 +2,7 @@
 name: "sys.sp_changedistributor_property"
 title: "sp_changedistributor_property"
 category: "general"
-description: "SQL Server 2025 (17.x) and later versions. Specifies whether to trust the certificate used by the Distributor for encrypted connections. The default is SQL Server 2025 (17.x) and later versions. Specifies the expected host name in the Distributor's certificate. SQL Server 2025 (17.x) and later versions. The value for the given Distributor property. , with a default of Secure defaults pertain to th"
+description: "SQL Server 2025 (17.x) and later versions. Specifies whether to trust the certificate used by the Distributor for encrypted connections. The default is SQL Server 2025 (17.x) and later versions. Specifies the expected host name in the Distributor's certificate. SQL Server 2025 (17.x) and later versions. The value for the given Distributor property."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

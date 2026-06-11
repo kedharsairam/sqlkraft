@@ -449,22 +449,12 @@ ServiceName (SN)
 
 None. If no value is specified for either the SID, Service Name, or TNSNames option, the driver attempts to connect to the ORCL SID by default.
 
-```sql
-CONNECTION_OPTIONS
-```
+`CONNECTION_OPTIONS`
 
-```sql
-CONNECTION_OPTIONS
-```
+`CONNECTION_OPTIONS`
 
-```sql
-CONNECTION_OPTIONS
-```
+`CONNECTION_OPTIONS`
 
-```sql
-key_value_pair
-```
+`key_value_pair`
 
-```sql
-SQL_ATTR_TXN_ISOLATION
-```
+`SQL_ATTR_TXN_ISOLATION`

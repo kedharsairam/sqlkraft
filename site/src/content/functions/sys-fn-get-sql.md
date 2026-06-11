@@ -2,7 +2,7 @@
 name: "sys.fn_get_sql"
 title: "sys.fn_get_sql"
 category: "system"
-description: "Returns the text of the SQL statement for the specified SQL handle. Transact-SQL syntax conventions Database ID. For ad hoc and prepared SQL statements, the ID of the database where the statements were compiled. ID of the database object. Is NULL for ad hoc SQL statements. Indicates the number of the group, if the procedures are grouped. This feature will be removed in a future version of Microsof"
+description: "Returns the text of the SQL statement for the specified SQL handle. Transact-SQL syntax conventions Database ID. For ad hoc and prepared SQL statements, the ID of the database where the statements were compiled."
 tags: ["system", "function"]
 pubDate: 2026-05-29
 syntax: "sys.fn_get_sql ( SqlHandle )"

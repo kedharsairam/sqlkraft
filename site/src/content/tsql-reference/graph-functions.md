@@ -52,58 +52,30 @@ SQL Graph Database Sample
 
 Next steps
 
-```sql
-edge_id
-```
+`edge_id`
 
-```sql
-object_id
-```
+`object_id`
 
-```sql
-graph_id
-```
+`graph_id`
 
-```sql
-graph_id
-```
+`graph_id`
 
-```sql
-edge_id
-```
+`edge_id`
 
-```sql
-graph_id
-```
+`graph_id`
 
-```sql
-node_id
-```
+`node_id`
 
-```sql
-node_id
-```
+`node_id`
 
-```sql
-object_id
-```
+`object_id`
 
-```sql
-graph_id
-```
+`graph_id`
 
-```sql
-object_id
-```
+`object_id`
 
-```sql
-edge_id
-```
+`edge_id`
 
-```sql
-object_id
-```
+`object_id`
 
-```sql
-node_id
-```
+`node_id`

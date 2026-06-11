@@ -2,7 +2,7 @@
 name: "sys.sp_delete_log_shipping_primary_secondary"
 title: "sp_delete_log_shipping_primary_secondary"
 category: "general"
-description: "Removes the entry for a secondary database on the primary server. Transact-SQL syntax conventions The name of the database on the primary server. The name of the secondary server. The name of the secondary database."
+description: "Removes the entry for a secondary database on the primary server. Transact-SQL syntax conventions The name of the database on the primary server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

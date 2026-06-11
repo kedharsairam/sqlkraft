@@ -1,7 +1,7 @@
 ---
 title: "Performance considerations for indexes with included columns"
 topic: "index-architecture"
-description: "Regardless of the presence of included columns, index key columns must follow the"
+description: ""
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

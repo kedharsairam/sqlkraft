@@ -1,7 +1,7 @@
 ---
 title: "databases?"
 topic: "query-processing"
-description: "In the previous query example, only table"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -63,49 +63,17 @@ Handle for the conversation that this message is part of.
 
 Sequence number of the message in the conversation.
 
-Name of the service that the conversation is to.
-
 SQL Server object identifier of the service that the
 
 conversation is to.
 
-Expand table
-
 #### Column name
 
-#### Data type
-
 #### nvarchar(128)
 
 #### nvarchar(128)
-
-#### nchar(2)
 
 #### varbinary(MAX)
-
-`status`
-
-```sql
-0
-```
-
-```sql
-0
-```
-
-```sql
-1
-```
-
-```sql
-2
-```
-
-```sql
-3
-```
-
-`priority`
 
 `queuing_order`
 
@@ -114,7 +82,3 @@ Expand table
 `conversation_handle`
 
 `message_sequence_number`
-
-`service_name`
-
-`service_id`

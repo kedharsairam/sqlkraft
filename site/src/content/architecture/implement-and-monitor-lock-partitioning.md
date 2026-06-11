@@ -1,7 +1,7 @@
 ---
 title: "Implement and monitor lock partitioning"
 topic: "locking"
-description: "executed, based on the characteristics of the schema and query. For example, to reduce the"
+description: "executed, based on the characteristics of the schema and query."
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

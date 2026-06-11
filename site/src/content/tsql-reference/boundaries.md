@@ -2,7 +2,7 @@
 name: "boundaries"
 title: "Boundaries"
 category: "statements"
-description: "difference between the"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -119,8 +119,6 @@ datepart
 
 .
 
-SQL
-
 datetime2
 
 datetime
@@ -149,57 +147,39 @@ SELECT DATEDIFF(day, '2036-03-01', '2036-02-28');
 2036-02-28
 ```
 
-```sql
-DATEDIFF
-```
+`DATEDIFF`
 
-```sql
-millisecond
-```
+`millisecond`
 
-```sql
-second
-```
+`second`
 
-```sql
-DATEDIFF
-```
+`DATEDIFF`
 
 ```sql
 0
 ```
 
-```sql
-DATEDIFF
-```
+`DATEDIFF`
 
 ```sql
 0
 ```
 
-```sql
-DATEDIFF
-```
+`DATEDIFF`
 
 ```sql
 1900-01-01
 ```
 
-```sql
-DATEDIFF
-```
+`DATEDIFF`
 
 ```sql
 00:00:00
 ```
 
-```sql
-DATEDIFF
-```
+`DATEDIFF`
 
-```sql
-DATEDIFF
-```
+`DATEDIFF`
 
 ```sql
 0

@@ -2,7 +2,7 @@
 name: "Week and weekday datepart arguments"
 title: "Week and weekday datepart arguments"
 category: "operators"
-description: "The return value depends on the language environment set by using"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

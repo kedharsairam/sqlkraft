@@ -1,7 +1,7 @@
 ---
 title: "Workers"
 topic: "query-processing"
-description: "represents the unit of work that needs to be completed to fulfill the request. One or"
+description: "represents the unit of work that needs to be completed to fulfill the request."
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

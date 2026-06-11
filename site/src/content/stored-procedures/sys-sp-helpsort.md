@@ -2,7 +2,7 @@
 name: "sys.sp_helpsort"
 title: "sp_helpsort"
 category: "general"
-description: "SQL database in Microsoft Fabric Displays the sort order and character set for the instance of SQL Server. Transact-SQL syntax conventions Returns server default collation. If an instance of SQL Server is installed with a collation specified to be compatible with an earlier installation of SQL Server, returns blank results. When this behavior occurs, you can determine the collation by querying the"
+description: "SQL database in Microsoft Fabric Displays the sort order and character set for the instance of SQL Server. Transact-SQL syntax conventions Returns server default collation. If an instance of SQL Server is installed with a collation specified to be compatible with an earlier installation of SQL Server, returns blank results."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

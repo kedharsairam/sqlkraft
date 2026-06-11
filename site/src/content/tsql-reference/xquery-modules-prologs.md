@@ -75,15 +75,5 @@ Describes the XQuery prolog.
 XQuery Language Reference (SQL Server)
 
 ```sql
-version
-module namespace
-xmlspace
-declare default collation
-declare base-uri
-declare construction
-declare ordering
-import schema namespace
-import module
-declare variable
-declare function
+version module namespace xmlspace declare default collation declare base-uri declare construction declare ordering import schema namespace import module declare variable declare function
 ```

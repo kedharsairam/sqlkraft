@@ -2,7 +2,7 @@
 name: "Limitations and considerations"
 title: "Limitations and considerations"
 category: "operators"
-description: "To resolve this error, remove the"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

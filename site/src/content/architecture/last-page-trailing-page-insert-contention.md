@@ -1,7 +1,7 @@
 ---
 title: "Last page/trailing page insert contention"
 topic: "io-fundamentals"
-description: "means some statistics such as"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

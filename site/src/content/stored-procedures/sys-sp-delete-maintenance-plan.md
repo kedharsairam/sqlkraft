@@ -2,7 +2,7 @@
 name: "sys.sp_delete_maintenance_plan"
 title: "sp_delete_maintenance_plan"
 category: "general"
-description: "Deletes the specified maintenance plan. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Transact-SQL syntax conventions Specifies the ID of the maintenance plan to be deleted. must be run from the This stored procedure is used with database maintenance plans. This feat"
+description: "Deletes the specified maintenance plan. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Transact-SQL syntax conventions Specifies the ID of the maintenance plan to be deleted. must be run from the This stored procedure is used with database maintenance plans."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_delete_maintenance_plan"

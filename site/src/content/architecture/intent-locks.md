@@ -1,7 +1,7 @@
 ---
 title: "Intent locks"
 topic: "locking"
-description: "Data modification statements, such as"
+description: ""
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

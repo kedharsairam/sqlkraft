@@ -1,7 +1,7 @@
 ---
 name: "To Extract Linked Server Password"
 title: "To Extract Linked Server Password"
-description: "use this resource and follow the steps"
+description: ""
 category: security-audit
 tags: ["security-audit"]
 pubDate: 2025-03-15

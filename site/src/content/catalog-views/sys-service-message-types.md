@@ -2,7 +2,7 @@
 name: "sys.service_message_types"
 title: "sys.service_message_types"
 category: "compatibility"
-description: "This catalog view contains a row per message type registered in the service broker. Name of message type, unique within the database. Not NULLABLE. Identifier of the message type, unique within the database. Not Identifier for the database principal that owns this message type. Validation done by Broker prior to sending messages of this type. Not Description of the validation done by Broker prior "
+description: "This catalog view contains a row per message type registered in the service broker."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

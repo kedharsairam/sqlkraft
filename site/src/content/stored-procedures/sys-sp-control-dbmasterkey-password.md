@@ -2,7 +2,7 @@
 name: "sys.sp_control_dbmasterkey_password"
 title: "sp_control_dbmasterkey_password"
 category: "general"
-description: "Adds or drops a credential containing the password needed to open a database master key Transact-SQL syntax conventions Specifies the name of the database associated with this credential. Can't be a system database. Specifies the password of the DMK. Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered out of order, an error"
+description: "Adds or drops a credential containing the password needed to open a database master key Transact-SQL syntax conventions Specifies the name of the database associated with this credential. Can't be a system database. Specifies the password of the DMK. Arguments for extended stored procedures must be entered in the specific order as section."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

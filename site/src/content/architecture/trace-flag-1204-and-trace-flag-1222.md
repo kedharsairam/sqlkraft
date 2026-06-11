@@ -1,7 +1,7 @@
 ---
 title: "Trace flag 1204 and trace flag 1222"
 topic: "query-processing"
-description: "### Deadlock extended event"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

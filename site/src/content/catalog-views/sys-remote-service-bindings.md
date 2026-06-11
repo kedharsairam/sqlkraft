@@ -2,7 +2,7 @@
 name: "sys.remote_service_bindings"
 title: "sys.remote_service_bindings"
 category: "compatibility"
-description: "This catalog view contains a row per remote service binding. Name of this remote service binding. Not NULLABLE. ID of this remote service binding. Not NULLABLE. ID of the database principal that owns this remote service Name of the remote service that this binding applies to. ID of the contract that this binding applies to. A value of 0 is a wildcard that means this binding applies to all contract"
+description: "This catalog view contains a row per remote service binding."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

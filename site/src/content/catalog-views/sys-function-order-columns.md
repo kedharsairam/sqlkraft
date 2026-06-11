@@ -2,7 +2,7 @@
 name: "sys.function_order_columns"
 title: "sys.function_order_columns"
 category: "objects"
-description: "Returns one row per column that is a part of an expression of a common language runtime (CLR) table-valued function. ID of the object (CLR table-valued function) the order is defined on. represents the position of this column in the ordering. 1 = order column has a descending sort direction. 0 = order column has an ascending sort direction. The visibility of the metadata in catalog views is limite"
+description: "Returns one row per column that is a part of an expression of a common language runtime (CLR) table-valued function."
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
 ---

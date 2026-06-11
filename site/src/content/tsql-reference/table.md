@@ -2,7 +2,7 @@
 name: "table"
 title: "Table"
 category: "data-types"
-description: "statement positioned on a cursor that uses"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

@@ -2,7 +2,7 @@
 name: "xquery-numeric-values-functions-floor"
 title: "XQuery - Numeric Values Functions - floor"
 category: "xquery"
-description: "XQuery Language Reference: Numeric Values Functions - floor"
+description: ""
 syntax: "fn:floor ($arg as numeric?) as numeric?"
 tags:
   - "xquery"

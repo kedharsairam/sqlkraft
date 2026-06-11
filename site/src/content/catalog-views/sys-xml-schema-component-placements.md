@@ -2,7 +2,7 @@
 name: "sys.xml_schema_component_placements"
 title: "sys.xml_schema_component_placements"
 category: "xml"
-description: "Returns a row per placement for XML schema components. ID of the XML schema component that owns this ID of the placement. This is unique within the owning XML ID of the placed XML schema component. 1 = The default value is a fixed value. This value cannot be overridden in an XML instance. 0 = The value can be overridden.(default) Minimum number of placed component occurs. Maximum number of placed "
+description: "Returns a row per placement for XML schema components."
 tags: ["xml", "catalog-view"]
 pubDate: 2026-05-29
 ---

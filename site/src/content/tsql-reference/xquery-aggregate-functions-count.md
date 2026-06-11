@@ -2,7 +2,7 @@
 name: "xquery-aggregate-functions-count"
 title: "XQuery - Aggregate Functions - count"
 category: "xquery"
-description: "XQuery Language Reference: Aggregate Functions - count"
+description: ""
 syntax: "fn:count($arg as item()*) as xs:integer"
 tags:
   - "xquery"

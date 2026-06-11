@@ -126,8 +126,6 @@ This format by ISO definition indicates the portion should be expressed in Coord
 
 The following example compares the results of casting a string to each and data type.
 
-SQL
-
 Here's the result set.
 
 time
@@ -169,34 +167,25 @@ DATEFORMAT
 
 ```sql
 time
-12:35:29.1234567
-date
-2007-05-08
-smalldatetime
-2007-05-08 12:35:00
-datetime
-2007-05-08 12:35:29.123
-datetime2
-2007-05-08 12:35:29.1234567
-datetimeoffset
-2007-05-08 12:35:29.1234567 +12:15
-datetimeoffset ISO8601
+12:35:29.1234567 date
+2007-05-08 smalldatetime
+2007-05-08 12:35:00 datetime
+2007-05-08 12:35:29.123 datetime2
+2007-05-08 12:35:29.1234567 datetimeoffset
+2007-05-08 12:35:29.1234567 +12:15 datetimeoffset ISO8601
 2007-05-08 12:35:29.1234567 +12:15
 ```
 
 ```sql
 SELECT
-CAST
-(
+CAST (
 '2007-05-08 12:35:29. 1234567 +12:15'
 AS
-TIME
-(7))
+TIME (7))
 AS
 'time'
 ,
-CAST
-(
+CAST (
 '2007-05-08 12:35:29. 1234567 +12:15'
 AS
 DATE
@@ -204,40 +193,35 @@ DATE
 AS
 'date'
 ,
-CAST
-(
+CAST (
 '2007-05-08 12:35:29.123'
 AS
 SMALLDATETIME)
 AS
 'smalldatetime'
 ,
-CAST
-(
+CAST (
 '2007-05-08 12:35:29.123'
 AS
 DATETIME)
 AS
 'datetime'
 ,
-CAST
-(
+CAST (
 '2007-05-08 12:35:29.1234567+12:15'
 AS
 DATETIME2 (7))
 AS
 'datetime2'
 ,
-CAST
-(
+CAST (
 '2007-05-08 12:35:29.1234567 +12:15'
 AS
 DATETIMEOFFSET (7))
 AS
 'datetimeoffset'
 ,
-CAST
-(
+CAST (
 '2007-05-08 12:35:29.1234567+12:15'
 AS
 DATETIMEOFFSET (7))

@@ -9,13 +9,9 @@ pubDate: 2026-05-29
 
 The following example drops the certificate from the database.
 
-SQL
-
 The following example drops the certificate
 
 .
-
-SQL
 
 BACKUP CERTIFICATE (Transact-SQL)
 
@@ -27,17 +23,11 @@ Encryption hierarchy
 
 EVENTDATA (Transact-SQL)
 
-```sql
-Shipping04
-```
+`Shipping04`
 
-```sql
-AdventureWorks
-```
+`AdventureWorks`
 
-```sql
-Shipping04
-```
+`Shipping04`
 
 ```sql
 USE
@@ -47,8 +37,7 @@ CERTIFICATE Shipping04;
 ```
 
 ```sql
-USE
-master
+USE master
 ;
 DROP
 CERTIFICATE Shipping04;

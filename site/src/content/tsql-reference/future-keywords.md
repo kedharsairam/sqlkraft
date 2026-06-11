@@ -2,7 +2,7 @@
 name: "Future Keywords"
 title: "Future Keywords"
 category: "statements"
-description: "The following keywords could be reserved in future releases of SQL Server as new features are"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -160,8 +160,6 @@ SPECIFICTYPE
 CAST
 
 LOCAL
-
-SQL
 
 CATALOG
 

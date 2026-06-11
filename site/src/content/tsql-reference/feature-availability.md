@@ -2,7 +2,7 @@
 name: "Feature availability"
 title: "Feature availability"
 category: "statements"
-description: "The following example declares vectors using the new"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -13,11 +13,7 @@ distances using the function.
 
 The type can be used with variables:
 
-SQL
-
 The data type can be used as parameter in stored procedure or functions. For example:
-
-SQL
 
 The new type is available under all database compatibility levels.
 
@@ -33,21 +29,17 @@ Supported
 
 TDS version 7.4 or higher
 
-```sql
-VECTOR_DISTANCE
-```
+`VECTOR_DISTANCE`
 
 ```sql
 v VECTOR(3, float16)
 -- Uses float16 for reduced storage and precision
 );
 INSERT
-INTO
-dbo.vectors (
+INTO dbo.vectors (
 id
 , v)
-VALUES
-(1,
+VALUES (1,
 '[0.1, 2, 30]'
 ),
 (2,
@@ -57,8 +49,7 @@ VALUES
 -- Using JSON_ARRAY to create a vector
 SELECT
 *
-FROM
-dbo.vectors;
+FROM dbo.vectors;
 ```
 
 ```sql
@@ -83,8 +74,7 @@ SELECT
 
 ```sql
 CREATE
-PROCEDURE
-dbo.SampleStoredProcedure
+PROCEDURE dbo.SampleStoredProcedure
 @V VECTOR(3),
 @V2 VECTOR(3)
 OUTPUT

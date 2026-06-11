@@ -2,7 +2,7 @@
 name: "sys.sp_flush_commit_table_on_demand"
 title: "sys.sp_flush_commit_table_on_demand"
 category: "general"
-description: "Transact-SQL syntax conventions Specifies the number of rows you want to delete from syscommittab. is an OUTPUT parameter of type is an OUTPUT parameter of type is an OUTPUT parameter of type"
+description: "Transact-SQL syntax conventions Specifies the number of rows you want to delete from syscommittab."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

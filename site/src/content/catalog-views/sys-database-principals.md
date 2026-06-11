@@ -2,7 +2,7 @@
 name: "sys.database_principals"
 title: "sys.database_principals"
 category: "compatibility"
-description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns a row for each security principal in a SQL Server database. Name of principal, unique within the database. ID of principal, unique within the database. C = User mapped to a certificate E = External user from Microsoft Entra ID K = User mapped to an asymmetric key X = External group from Microsoft Entra group Description of pr"
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns a row for each security principal in a SQL Server database."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

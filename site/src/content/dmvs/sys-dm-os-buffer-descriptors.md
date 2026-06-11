@@ -2,7 +2,7 @@
 name: "sys.dm_os_buffer_descriptors"
 title: "sys.dm_os_buffer_descriptors"
 category: "os"
-description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns information about all the data pages that are currently in the SQL Server buffer pool. The output of this view can be used to determine the distribution of database pages in the buffer pool according to database, object, or type. In SQL Server, this dynamic management view also returns information about the data pages in the "
+description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns information about all the data pages that are currently in the SQL Server buffer pool. The output of this view can be used to determine the distribution of database pages in the buffer pool according to database, object, or type."
 tags: ["os", "dmv"]
 pubDate: 2026-05-29
 syntax: |

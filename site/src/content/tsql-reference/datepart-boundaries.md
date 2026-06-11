@@ -2,7 +2,7 @@
 name: "datepart boundaries"
 title: "Datepart boundaries"
 category: "data-types"
-description: "difference between the"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

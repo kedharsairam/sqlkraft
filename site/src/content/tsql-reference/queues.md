@@ -2,7 +2,7 @@
 name: "Queues"
 title: "Queues"
 category: "statements"
-description: "for parallelism depending on the subtree cost. The target table referenced in the"
+description: "for parallelism depending on the subtree cost."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

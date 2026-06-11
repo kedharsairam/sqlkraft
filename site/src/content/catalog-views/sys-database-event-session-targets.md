@@ -2,7 +2,7 @@
 name: "sys.database_event_session_targets"
 title: "sys.database_event_session_targets (Azure SQL Database)"
 category: "compatibility"
-description: "SQL Server 2016 (13.x) and later versions Azure SQL Database Managed Instance SQL database in Microsoft Fabric dynamic management view (DMV) returns a row for each event target for a database-scoped event session. For information about database-scoped sys.dm_xe_database_session_targets Azure SQL Database and SQL database in Fabric support only database-scoped sessions Azure SQL Managed Instance su"
+description: "SQL Server 2016 (13.x) and later versions Azure SQL Database Managed Instance SQL database in Microsoft Fabric dynamic management view (DMV) returns a row for each event target for a database-scoped event session."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "sys.database_event_session_targets"

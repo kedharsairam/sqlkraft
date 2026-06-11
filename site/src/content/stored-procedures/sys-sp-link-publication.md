@@ -2,7 +2,7 @@
 name: "sys.sp_link_publication"
 title: "sp_link_publication"
 category: "general"
-description: "Sets the configuration and security information used by synchronization triggers of immediate updating subscriptions when connecting to the Publisher. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions The name of the Publisher to link to. When you configure a Publisher with a remote Distributor, the values supplied for all , are sent "
+description: "Sets the configuration and security information used by synchronization triggers of immediate updating subscriptions when connecting to the Publisher. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions The name of the Publisher to link to."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -1,7 +1,7 @@
 ---
 title: "Remove execution plans from the plan cache"
 topic: "query-processing"
-description: "Notice there are now two entries in the"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

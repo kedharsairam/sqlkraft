@@ -2,7 +2,7 @@
 name: "level 100"
 title: "Level 100"
 category: "statements"
-description: "same ordinal position in the select list) must be"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

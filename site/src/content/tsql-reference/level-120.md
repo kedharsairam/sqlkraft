@@ -2,7 +2,7 @@
 name: "level 120"
 title: "Level 120"
 category: "statements"
-description: "Database improvements in handling some data types and"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

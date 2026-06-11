@@ -2,7 +2,7 @@
 name: "Context switching"
 title: "Context switching"
 category: "statements"
-description: "data types can be specified that allow for"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

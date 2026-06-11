@@ -1,7 +1,7 @@
 ---
 name: "Log File Full"
 title: "Log File Full"
-description: "1) Verify the space utilization of the log file"
+description: ""
 category: troubleshooting
 tags: ["troubleshooting"]
 pubDate: 2025-03-15

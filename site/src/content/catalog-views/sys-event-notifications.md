@@ -2,7 +2,7 @@
 name: "sys.event_notifications"
 title: "sys.event_notifications"
 category: "compatibility"
-description: "SQL database in Microsoft Fabric Returns a row for each object that is an event notification, with Object identification number. Is unique within a database. Non-zero ID of the parent object. 0 = The parent class is the database. Name of the target service to which the notification is sent. Broker instance to which the notification is sent. ID of the database principal that owns this event notific"
+description: "SQL database in Microsoft Fabric Returns a row for each object that is an event notification, with Object identification number."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

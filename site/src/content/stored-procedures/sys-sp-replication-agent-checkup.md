@@ -2,7 +2,7 @@
 name: "sys.sp_replication_agent_checkup"
 title: "sp_replication_agent_checkup"
 category: "general"
-description: "Checks each distribution database for replication agents that are running but haven't logged history within the specified heartbeat interval. This stored procedure is executed at the Transact-SQL syntax conventions The maximum number of minutes that an agent can go without logging a progress message. raises error 14151 for each agent it detects as suspect. It also logs a failure history message ab"
+description: "Checks each distribution database for replication agents that are running but haven't logged history within the specified heartbeat interval. This stored procedure is executed at the Transact-SQL syntax conventions The maximum number of minutes that an agent can go without logging a progress message. raises error 14151 for each agent it detects as suspect."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_replication_agent_checkup"

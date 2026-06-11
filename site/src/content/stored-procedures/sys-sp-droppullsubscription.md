@@ -2,7 +2,7 @@
 name: "sys.sp_droppullsubscription"
 title: "sp_droppullsubscription"
 category: "general"
-description: "Drops a subscription at the current database of the Subscriber. This stored procedure is executed at the Subscriber on the pull subscription database. Transact-SQL syntax conventions dropped at all the Publishers. The name of the Publisher database. means all the Publisher databases. dropped to all the publications."
+description: "Drops a subscription at the current database of the Subscriber. This stored procedure is executed at the Subscriber on the pull subscription database. Transact-SQL syntax conventions dropped at all the Publishers."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

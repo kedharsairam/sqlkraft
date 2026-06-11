@@ -1,7 +1,7 @@
 ---
 title: "Transaction log logical architecture"
 topic: "io-fundamentals"
-description: "SQL Server transaction log architecture and"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -1,7 +1,7 @@
 ---
 name: "To Enable Dynamic Data Masking"
 title: "To Enable Dynamic Data Masking"
-description: "default type"
+description: ""
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

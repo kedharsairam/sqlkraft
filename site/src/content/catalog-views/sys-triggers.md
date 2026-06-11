@@ -2,7 +2,7 @@
 name: "sys.triggers"
 title: "sys.triggers"
 category: "compatibility"
-description: "SQL database in Microsoft Fabric Contains a row for each object that is a trigger, with a type of TR or TA. DML trigger names are schema-scoped and, therefore, are visible in . DDL trigger names are scoped by the parent entity and are only visible in this view. columns uniquely identify the trigger in the database. Trigger name. DML trigger names are schema-scoped. DDL trigger names are scoped wit"
+description: "SQL database in Microsoft Fabric Contains a row for each object that is a trigger, with a type of TR or TA. DML trigger names are schema-scoped and, therefore, are visible in . DDL trigger names are scoped by the parent entity and are only visible in this view. columns uniquely identify the trigger in the database. Trigger name. DML trigger names are schema-scoped."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

@@ -2,7 +2,7 @@
 name: "sys.sp_msx_set_account"
 title: "sp_msx_set_account"
 category: "general"
-description: "Sets the SQL Server Agent master server account name and password on the target server. Transact-SQL syntax conventions The name of the credential to use to sign in to the master server. . The name provided must be the name of an existing The identifier for the credential to use to sign in to the master server. . The identifier must be an identifier for an existing credential."
+description: "Sets the SQL Server Agent master server account name and password on the target server. Transact-SQL syntax conventions The name of the credential to use to sign in to the master server. The name provided must be the name of an existing The identifier for the credential to use to sign in to the master server. The identifier must be an identifier for an existing credential."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

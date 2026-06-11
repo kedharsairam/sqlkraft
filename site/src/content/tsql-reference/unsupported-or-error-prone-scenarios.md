@@ -2,7 +2,7 @@
 name: "Unsupported or error-prone scenarios"
 title: "Unsupported or error-prone scenarios"
 category: "operators"
-description: "SQL Server supports both"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

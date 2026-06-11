@@ -2,7 +2,7 @@
 name: "sys.sp_dropanonymousagent"
 title: "sp_dropanonymousagent"
 category: "general"
-description: "Drops an anonymous agent for replication monitoring at the distributor from the Publisher. This stored procedure is executed at the Publisher on any database. Transact-SQL syntax conventions The global identifier for an anonymous subscription. default. This identifier can be retrieved at the Subscriber using field of the returned result set is this global identifier. The type of subscription. , wi"
+description: "Drops an anonymous agent for replication monitoring at the distributor from the Publisher. This stored procedure is executed at the Publisher on any database. Transact-SQL syntax conventions The global identifier for an anonymous subscription. default. This identifier can be retrieved at the Subscriber using field of the returned result set is this global identifier. The type of subscription."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_helppullsubscription"

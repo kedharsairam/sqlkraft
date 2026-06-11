@@ -2,7 +2,7 @@
 name: "Special Cases and Conditions"
 title: "Special Cases and Conditions"
 category: "operators"
-description: "If the target entity is not a database and the entity is being transferred to a new owner, all"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

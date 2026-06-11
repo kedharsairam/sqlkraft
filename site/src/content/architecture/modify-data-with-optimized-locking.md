@@ -1,7 +1,7 @@
 ---
 title: "Modify data with optimized locking"
 topic: "locking"
-description: "With optimized locking enabled and with the"
+description: ""
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

@@ -4,7 +4,7 @@ title: "Error 3031"
 errorNumber: 3031
 severity: "medium"
 category: "io"
-description: "Description 3031 16 No Option '%ls' conflicts with option(s) '%ls'. Remove the conflicting option and reissue the statement. 3032 16 No One or more of the options (%ls) are not supported for this stat"
+description: "Description 3031 16 No Option '%ls' conflicts with option(s) '%ls'. Remove the conflicting option and reissue the statement."
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---

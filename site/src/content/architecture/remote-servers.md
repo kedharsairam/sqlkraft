@@ -1,7 +1,7 @@
 ---
 title: "Remote servers"
 topic: "query-processing"
-description: "value appears in trace events as the ObjectName and in performance counters and"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---

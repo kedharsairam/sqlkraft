@@ -19,4 +19,3 @@ varbinary
 ## Remarks
 
 Returns the public portion of a certificate in binary format.
-

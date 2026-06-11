@@ -29,13 +29,9 @@ json vector
 
 vector
 
-```sql
-vector_dimensions
-```
+`vector_dimensions`
 
-```sql
-vector_base_type
-```
+`vector_base_type`
 
 ```sql
 0
@@ -47,19 +43,16 @@ float32
 ```
 
 ```sql
-float16
-vector_base_type_desc
+float16 vector_base_type_desc
 ```
 
 ```sql
 CREATE
 VECTOR
-INDEX
-vec_idx
+INDEX vec_idx
 ON
 Articles(embedding)
-WITH
-(
+WITH (
 metric =
 'cosine'
 ,
@@ -74,8 +67,7 @@ AS
 VECTOR(5, float16) =
 '[0.3, 0.3, 0.3, 0.3, 0.3]'
 ;
-SELECT
-t.id,
+SELECT t.id,
 t.title,
 t.content,
 s.distance
@@ -83,8 +75,7 @@ FROM
 VECTOR_SEARCH(
 table
 = Articles
-AS
-t,
+AS t,
 column
 = embedding,
 similar_to = @qv,
@@ -93,28 +84,22 @@ metric =
 ,
 top_n = 3
 )
-AS
-s
+AS s
 ORDER
-BY
-s.distance, t.title;
+BY s.distance, t.title;
 ```
 
 ```sql
 --Inspect Vector Base type Metadata in sys.columns
-SELECT
-name
-AS
-column_name,
+SELECT name
+AS column_name,
 system_type_id,
 user_type_id,
 vector_dimensions,
 vector_base_type,
 vector_base_type_desc
-FROM
-sys.columns
-WHERE
-object_id = OBJECT_ID(
+FROM sys.columns
+WHERE object_id = OBJECT_ID(
 'dbo.Articles'
 );
 ```

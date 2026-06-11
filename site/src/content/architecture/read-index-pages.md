@@ -1,7 +1,7 @@
 ---
 title: "Read index pages"
 topic: "index-architecture"
-description: "The storage engine reads index pages serially in key order. For example, this illustration shows"
+description: "The storage engine reads index pages serially in key order."
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---

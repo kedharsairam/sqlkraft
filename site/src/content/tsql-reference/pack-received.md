@@ -29,49 +29,34 @@ INSERT (Transact-SQL)
 
 SELECT (Transact-SQL) integer sp_monitor
 
-```sql
-SCOPE_IDENTITY()
-```
+`SCOPE_IDENTITY()`
 
-```sql
-ProductID
-```
+`ProductID`
 
-```sql
-Products
-```
+`Products`
 
 ```sql
 @@IDENTITY
 ```
 
-```sql
-AuditID
-```
+`AuditID`
 
-```sql
-ProductAudit
-```
+`ProductAudit`
 
-```sql
-SCOPE_IDENTITY()
-```
+`SCOPE_IDENTITY()`
 
 ```sql
 SELECT
 ProductID,
 'INSERT'
-FROM
-inserted;
+FROM inserted;
 END
 ;
 GO
 -- Insert a product and compare identity values
 INSERT
-INTO
-dbo.Products (ProductName)
-VALUES
-(
+INTO dbo.Products (ProductName)
+VALUES (
 'Test Product'
 );
 SELECT

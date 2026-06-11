@@ -2,7 +2,7 @@
 name: "sys.extended_procedures"
 title: "sys.extended_procedures"
 category: "compatibility"
-description: "Contains a row for each object that is an extended stored procedure, with . Because extended stored procedures are installed into the database, they're only visible from that database context. Selecting from the view in any other database context returns an empty result set. For a list of columns that this view inherits, see Name, including path, of the DLL for this extended The visibility of the "
+description: "Contains a row for each object that is an extended stored procedure, with . Because extended stored procedures are installed into the database, they're only visible from that database context. Selecting from the view in any other database context returns an empty result set."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "sys.extended_procedures"

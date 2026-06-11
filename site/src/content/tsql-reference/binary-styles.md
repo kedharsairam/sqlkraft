@@ -2,7 +2,7 @@
 name: "Binary styles"
 title: "Binary styles"
 category: "data-types"
-description: "No commas every three digits to the left of the decimal point, and four digits to the right of"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

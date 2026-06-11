@@ -4,7 +4,7 @@ title: "Error 8690"
 errorNumber: 8690
 severity: "medium"
 category: "io"
-description: "Description existing database. 8690 16 No Query cannot be compiled because USE PLAN hint conflicts with hint %ls. Consider removing hint %ls. 8691 16 No Query cannot be compiled because USE PLAN hint "
+description: "Description existing database. 8690 16 No Query cannot be compiled because USE PLAN hint conflicts with hint %ls. Consider removing hint %ls."
 tags: ["io", "severity-medium"]
 pubDate: 2026-05-29
 ---

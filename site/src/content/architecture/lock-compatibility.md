@@ -1,7 +1,7 @@
 ---
 title: "Lock compatibility"
 topic: "locking"
-description: ") locks allow multiple threads to bulk load data concurrently into the same table"
+description: ""
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

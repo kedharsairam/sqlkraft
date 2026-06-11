@@ -2,7 +2,7 @@
 name: "the index"
 title: "The index"
 category: "hints"
-description: "fragments containing multiple languages are supported. For more information, see"
+description: "fragments containing multiple languages are supported."
 tags: ["tsql", "hints"]
 pubDate: 2026-05-29
 ---

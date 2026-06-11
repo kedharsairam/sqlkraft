@@ -2,7 +2,7 @@
 name: "sys.sp_xtp_force_gc"
 title: "sys.sp_xtp_force_gc"
 category: "general"
-description: "Causes the in-memory engine to release memory related to deleted rows of in-memory data that are eligible for garbage collection, which haven't yet been released by the process. In cases where a large volume of in-memory data has been released, and where the memory isn't soon be needed for other in-memory data, this procedure can free up memory for other uses. If you anticipate the memory being us"
+description: "Causes the in-memory engine to release memory related to deleted rows of in-memory data that are eligible for garbage collection, which haven't yet been released by the process. In cases where a large volume of in-memory data has been released, and where the memory isn't soon be needed for other in-memory data, this procedure can free up memory for other uses."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

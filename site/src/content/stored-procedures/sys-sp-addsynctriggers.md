@@ -2,7 +2,7 @@
 name: "sys.sp_addsynctriggers"
 title: "sp_addsynctriggers"
 category: "general"
-description: "Creates triggers at the Subscriber used with all types of updatable subscriptions (immediate, queued, and immediate updating with queued updating as failover). This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions procedure should be used instead of generates a script that contains the"
+description: "Creates triggers at the Subscriber used with all types of updatable subscriptions (immediate, queued, and immediate updating with queued updating as failover). This stored procedure is executed at the Subscriber on the subscription database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

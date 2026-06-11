@@ -2,7 +2,7 @@
 name: "sys.sp_detach_schedule"
 title: "sp_detach_schedule"
 category: "general"
-description: "Removes an association between a schedule and a job. Transact-SQL syntax conventions The job identification number of the job to remove the schedule from. must be specified, but both can't be specified. The name of the job to remove the schedule from. must be specified, but both can't be specified."
+description: "Removes an association between a schedule and a job. Transact-SQL syntax conventions The job identification number of the job to remove the schedule from. must be specified, but both can't be specified."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

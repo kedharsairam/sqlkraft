@@ -2,7 +2,7 @@
 name: "sys.schemas"
 title: "Schemas - sys.schemas"
 category: "compatibility"
-description: "Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Contains a row for each database schema. Name of the schema. Is unique within the database. ID of the schema. Is unique within the database. ID of the principal that owns this schema. Database schemas act as namespaces or containers for objects, such as tables, views, procedures, and functions, that can be found in the Each"
+description: "Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Contains a row for each database schema."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

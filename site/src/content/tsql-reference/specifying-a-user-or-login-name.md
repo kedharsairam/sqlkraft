@@ -2,7 +2,7 @@
 name: "Specifying a User or Login Name"
 title: "Specifying a User or Login Name"
 category: "operators"
-description: "When used inside a module, specifies the statements inside the module are executed in the"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

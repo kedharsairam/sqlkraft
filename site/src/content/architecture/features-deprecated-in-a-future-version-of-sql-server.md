@@ -1,7 +1,7 @@
 ---
 title: "Features deprecated in a future version of SQL Server"
 topic: "io-fundamentals"
-description: "Compatibility Level as long as possible, to make the"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---

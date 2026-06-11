@@ -2,7 +2,7 @@
 name: "sys.sp_dropmergearticle"
 title: "sp_dropmergearticle"
 category: "general"
-description: "Removes an article from a merge publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication from which to drop an article. The name of the article to drop from the given publication. , all existing articles in the specified merge publication are removed. Even if , the publication still must be dropped sepa"
+description: "Removes an article from a merge publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication from which to drop an article."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

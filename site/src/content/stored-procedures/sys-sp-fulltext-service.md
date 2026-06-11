@@ -2,7 +2,7 @@
 name: "sys.sp_fulltext_service"
 title: "sp_fulltext_service"
 category: "general"
-description: "Changes the server properties of full-text search for SQL Server. Transact-SQL syntax conventions The property to be changed or reset. , with no default. For a list of properties, their descriptions, and the values that can be set, see the table under the This argument returns the following properties: deprecation status, if applicable. action isn't fully supported in SQL Server 2022 (16.x) and la"
+description: "Changes the server properties of full-text search for SQL Server. Transact-SQL syntax conventions The property to be changed or reset. , with no default. For a list of properties, their descriptions, and the values that can be set, see the table under the This argument returns the following properties: deprecation status, if applicable."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

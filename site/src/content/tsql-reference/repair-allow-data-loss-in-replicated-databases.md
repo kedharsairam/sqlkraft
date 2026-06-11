@@ -2,7 +2,7 @@
 name: "REPAIR_ALLOW_DATA_LOSS in replicated databases"
 title: "REPAIR_ALLOW_DATA_LOSS in replicated databases"
 category: "predicates"
-description: "an alternative for restoring from a known good"
+description: ""
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---

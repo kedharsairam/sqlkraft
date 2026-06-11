@@ -1,7 +1,7 @@
 ---
 title: "Diagnostic additions for optimized locking"
 topic: "locking"
-description: "The following improvements help you monitor and troubleshoot blocking and deadlocks when"
+description: ""
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

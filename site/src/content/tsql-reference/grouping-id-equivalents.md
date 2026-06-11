@@ -2,7 +2,7 @@
 name: "GROUPING_ID() equivalents"
 title: "GROUPING_ID() equivalents"
 category: "statements"
-description: "interprets that string as a base-2 number and returns the"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

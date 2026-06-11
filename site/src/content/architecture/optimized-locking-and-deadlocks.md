@@ -1,7 +1,7 @@
 ---
 title: "Optimized locking and deadlocks"
 topic: "locking"
-description: "The second update statement in"
+description: ""
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---

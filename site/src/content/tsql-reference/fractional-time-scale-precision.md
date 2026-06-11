@@ -52,40 +52,21 @@ datetime2
 datetimeoffset
 
 ```sql
-minute
-mi, n
-second
-ss
+minute mi, n second ss
 ```
 
 ```sql
-s
-millisecond
-ms
-microsecond
-mcs
+s millisecond ms microsecond mcs
 ```
 
-```sql
-DATETRUNC
-```
+`DATETRUNC`
 
-```sql
-DATETRUNC
-```
+`DATETRUNC`
 
-```sql
-DATETRUNC
-```
+`DATETRUNC`
 
-```sql
-DATETRUNC
-```
+`DATETRUNC`
 
-```sql
-DATETRUNC
-```
+`DATETRUNC`
 
-```sql
-DATETRUNC
-```
+`DATETRUNC`

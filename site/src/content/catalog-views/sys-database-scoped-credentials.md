@@ -2,7 +2,7 @@
 name: "sys.database_scoped_credentials"
 title: "sys.database_scoped_credentials"
 category: "compatibility"
-description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns one row for each database scoped credential in the database. Name of the database scoped credential. Is unique in the ID of the database scoped credential. Is unique in the database. ID of the database principal who owns the key. Name of the identity to use. It does not have to be unique. Time at which the database "
+description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Returns one row for each database scoped credential in the database."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 ---

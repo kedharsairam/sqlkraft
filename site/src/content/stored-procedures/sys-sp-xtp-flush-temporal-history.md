@@ -2,7 +2,7 @@
 name: "sys.sp_xtp_flush_temporal_history"
 title: "sp_xtp_flush_temporal_history"
 category: "general"
-description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Invokes the data flush task to move all committed rows from in-memory staging table to the Transact-SQL syntax conventions The schema name for the current or temporal table. The name of the current or temporal table."
+description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Invokes the data flush task to move all committed rows from in-memory staging table to the Transact-SQL syntax conventions The schema name for the current or temporal table."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

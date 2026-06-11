@@ -1,7 +1,7 @@
 ---
 name: "To Transfer Maintenance Plans from One Instance"
 title: "To Transfer Maintenance Plans from One Instance"
-description: "use the blog to transfer the maintenance plans"
+description: ""
 category: migration
 tags: ["migration"]
 pubDate: 2025-03-15

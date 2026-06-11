@@ -2,7 +2,7 @@
 name: "Index best practices"
 title: "Index best practices"
 category: "hints"
-description: "triggers are defined on"
+description: ""
 tags: ["tsql", "hints"]
 pubDate: 2026-05-29
 ---

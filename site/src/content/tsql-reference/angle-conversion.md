@@ -2,7 +2,7 @@
 name: "Angle conversion"
 title: "Angle conversion"
 category: "statements"
-description: "This group provides the elementary trigonometric functions that compute ratios of a right"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

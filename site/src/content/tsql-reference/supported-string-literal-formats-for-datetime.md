@@ -2,7 +2,7 @@
 name: "Supported string literal formats for datetime"
 title: "Supported string literal formats for datetime"
 category: "data-types"
-description: "is two digits, ranging from"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---

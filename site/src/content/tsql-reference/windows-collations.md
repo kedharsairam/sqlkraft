@@ -2,7 +2,7 @@
 name: "Windows collations"
 title: "Windows collations"
 category: "statements"
-description: "Collation uses the Latin1 General dictionary sorting rules and maps to"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

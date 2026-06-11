@@ -2,12 +2,10 @@
 name: "Function support"
 title: "Function support"
 category: "statements"
-description: "data type must be a JSON object or a JSON array. Scalars, booleans, and"
+description: "data type must be a JSON object or a JSON array."
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-SQL
 
 Input to the data type must be a JSON object or a JSON array. Scalars, booleans, and values are not supported. The JSON data type conforms to IETF RFC 4627 which allows only a
 JSON object or array. The data type and all JSON functions only work with IETF RFC 4627 compliant JSON documents.
@@ -54,9 +52,7 @@ nvarchar
 
 json
 
-```sql
-NULL
-```
+`NULL`
 
 ```sql
 DROP
@@ -66,8 +62,7 @@ EXISTS
 JsonTable;
 CREATE
 TABLE
-JsonTable
-(
+JsonTable (
 id
 INT
 PRIMARY
@@ -81,29 +76,24 @@ INTO
 JsonTable (
 id
 , d)
-VALUES
-(1,
+VALUES (1,
 '{"a":1, "b":"abc", "c":true}'
 );
 UPDATE
 JsonTable
-SET
-d.modify(
+SET d.modify(
 '$.a'
 , 14859)
-WHERE
-id
+WHERE id
 = 1;
 UPDATE
 JsonTable
-SET
-d.modify(
+SET d.modify(
 '$.b'
 ,
 'def'
 )
-WHERE
-id
+WHERE id
 = 1;
 ```
 

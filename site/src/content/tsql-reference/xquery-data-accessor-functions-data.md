@@ -2,7 +2,7 @@
 name: "xquery-data-accessor-functions-data"
 title: "XQuery - Data Accessor Functions - data"
 category: "xquery"
-description: "XQuery Language Reference: Data Accessor Functions - data"
+description: ""
 syntax: "xdt:untypedAtomic"
 tags:
   - "xquery"

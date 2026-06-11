@@ -2,7 +2,7 @@
 name: "sys.sp_redirect_publisher"
 title: "sp_redirect_publisher"
 category: "general"
-description: "Specifies a redirected publisher for an existing publisher/database pair. If the publisher database belongs to an Always On availability group (AG), the redirected publisher is the AG listener name associated with the AG. Transact-SQL syntax conventions The name of the instance of SQL Server that originally published the database. The name of the database being published. The AG listener name asso"
+description: "Specifies a redirected publisher for an existing publisher/database pair. If the publisher database belongs to an Always On availability group (AG), the redirected publisher is the AG listener name associated with the AG. Transact-SQL syntax conventions The name of the instance of SQL Server that originally published the database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

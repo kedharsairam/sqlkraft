@@ -2,7 +2,7 @@
 name: "sys.xml_schema_collections"
 title: "sys.xml_schema_collections"
 category: "xml"
-description: "SQL database in Microsoft Fabric Returns a row per XML schema collection. An XML schema collection is a named set of XSD definitions. The XML schema collection itself is contained in a relational schema, and it is identified by a schema-scoped Transact-SQL name. The following tuples are unique: xml_collection_id, and schema_id and name. ID of the XML schema collection. Unique within the database. "
+description: "SQL database in Microsoft Fabric Returns a row per XML schema collection. An XML schema collection is a named set of XSD definitions. The XML schema collection itself is contained in a relational schema, and it is identified by a schema-scoped Transact-SQL name. The following tuples are unique: xml_collection_id, and schema_id and name."
 tags: ["xml", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

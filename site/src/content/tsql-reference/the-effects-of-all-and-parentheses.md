@@ -2,7 +2,7 @@
 name: "the effects of ALL and parentheses"
 title: "The effects of ALL and parentheses"
 category: "operators"
-description: "The following examples use"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

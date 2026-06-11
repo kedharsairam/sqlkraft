@@ -2,7 +2,7 @@
 name: "Filtered indexes"
 title: "Filtered indexes"
 category: "statements"
-description: "When partitioning a non-unique, clustered index, the Database Engine by default adds any"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---

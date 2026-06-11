@@ -9,8 +9,6 @@ pubDate: 2026-05-29
 
 ## Description
 
-Name of the compute pool. Is not nullable. Returns Unique identifier for the pool. Key for this view. Endpoint to controller in a SQL Big Data cluster. Is not nullable. Requires VIEW SERVER PERFORMANCE STATE permission on the server. What are SQL Server Big Data Clusters
-
 ## Code Blocks
 
 `sysname`

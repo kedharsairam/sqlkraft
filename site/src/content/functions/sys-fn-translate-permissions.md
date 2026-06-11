@@ -2,7 +2,7 @@
 name: "sys.fn_translate_permissions"
 title: "sys.fn_translate_permissions"
 category: "system"
-description: "Translates the permissions bitmask returned by SQL Trace into a table of permissions names. Transact-SQL syntax conventions Is the kind of securable to which the permission is applied. Is a bitmask that is returned in the permissions column. column of a SQL Trace is an integer representation of a bitmask used by SQL Server to calculate effective permissions. Each of the 25 kinds of securables has "
+description: "Translates the permissions bitmask returned by SQL Trace into a table of permissions names. Transact-SQL syntax conventions Is the kind of securable to which the permission is applied. Is a bitmask that is returned in the permissions column. column of a SQL Trace is an integer representation of a bitmask used by SQL Server to calculate effective permissions."
 tags: ["system", "function"]
 pubDate: 2026-05-29
 syntax: "sys.fn_translate_permissions ( level , perms )"

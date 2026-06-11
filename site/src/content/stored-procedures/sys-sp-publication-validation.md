@@ -2,7 +2,7 @@
 name: "sys.sp_publication_validation"
 title: "sp_publication_validation"
 category: "general"
-description: "Initiates an article validation request for each article in the specified publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions Specifies whether to return only the rowcount for the table. can be one of the following values. Perform a SQL Server 7.0 compatible checksum. When an article is horizontally filtered, a rowcount opera"
+description: "Initiates an article validation request for each article in the specified publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions Specifies whether to return only the rowcount for the table."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

@@ -2,7 +2,7 @@
 name: "Truncating and rounding results"
 title: "Truncating and rounding results"
 category: "operators"
-description: "When you explicitly or implicitly cast the"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -117,8 +117,6 @@ Error returned because result length is too short to display.
 SQL Server guarantees that only roundtrip conversions, in other words conversions that convert a data type from its original data type and back again, yield the same values from version to version. The following example shows such a roundtrip conversion: SQL
 
 The following example shows a resulting expression that is too small to display.
-
-SQL
 
 1
 
@@ -241,30 +239,19 @@ numeric
 
 decimal
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
-```sql
-CAST
-```
+`CAST`
 
-```sql
-CONVERT
-```
+`CONVERT`
 
 ```sql
 SELECT
-CAST
-(
+CAST (
 'abc'
-AS
-varchar
-(5))
+AS varchar (5))
 COLLATE
 French_CS_AS;
 ```
@@ -272,28 +259,21 @@ French_CS_AS;
 ```sql
 DECLARE
 @myval
-DECIMAL
-(5, 2);
+DECIMAL (5, 2);
 SET
 @myval = 193.57;
 SELECT
-CAST
-(
-CAST
-(@myval
+CAST (
+CAST (@myval
 AS
 VARBINARY(20))
 AS
-DECIMAL
-(10, 5));
+DECIMAL (10, 5));
 -- Or, using CONVERT
 SELECT
-CONVERT
-(
-DECIMAL
-(10, 5),
-CONVERT
-(VARBINARY(20), @myval));
+CONVERT (
+DECIMAL (10, 5),
+CONVERT (VARBINARY(20), @myval));
 GO
 ```
 
@@ -301,18 +281,14 @@ GO
 USE
 AdventureWorks2022;
 GO
-SELECT
-p.FirstName,
+SELECT p.FirstName,
 p.LastName,
-SUBSTRING
-(p.Title, 1, 25)
+SUBSTRING (p.Title, 1, 25)
 AS
 Title,
-CAST
-(e.SickLeaveHours
+CAST (e.SickLeaveHours
 AS
-CHAR
-(1))
+CHAR (1))
 AS
 [Sick Leave]
 FROM
@@ -320,14 +296,12 @@ HumanResources.Employee e
 INNER
 JOIN
 Person.Person p
-ON
-e.BusinessEntityID = p.BusinessEntityID
+ON e.BusinessEntityID = p.BusinessEntityID
 ```
 
 ```sql
 WHERE
-NOT
-e.BusinessEntityID > 5;
+NOT e.BusinessEntityID > 5;
 GO
 FirstName   LastName      Title   Sick Leave
 ---------   ------------- ------- --------`

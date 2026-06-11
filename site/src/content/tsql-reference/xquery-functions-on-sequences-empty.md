@@ -2,7 +2,7 @@
 name: "xquery-functions-on-sequences-empty"
 title: "XQuery - Functions on Sequences - empty"
 category: "xquery"
-description: "XQuery Language Reference: Functions on Sequences - empty"
+description: ""
 syntax: "fn:empty($arg as item()*) as xs:boolean"
 tags:
   - "xquery"

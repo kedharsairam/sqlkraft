@@ -2,7 +2,7 @@
 name: "sys.credentials"
 title: "sys.credentials"
 category: "compatibility"
-description: "Analytics Platform System (PDW) Returns one row for each server-level credential. ID of the credential. Is unique in the server. Name of the credential. Is unique in the server. Name of the identity to use. This will generally be a Windows user. It does not have to be unique. Time at which the credential was created. Time at which the credential was last modified. Type of credential. Returns NULL "
+description: "Analytics Platform System (PDW) Returns one row for each server-level credential."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |

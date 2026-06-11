@@ -2,7 +2,7 @@
 name: "sys.fn_check_object_signatures"
 title: "sys.fn_check_object_signatures"
 category: "system"
-description: "Returns a list of all signable objects and indicates whether an object is signed by a specified certificate or asymmetric key. If the object is signed by the specified certificate or asymmetric key signed, it also returns whether the object's signature is valid. Transact-SQL syntax conventions Identifies the type of thumbprint being provided: SHA-1 hash of the certificate with which the key is enc"
+description: "Returns a list of all signable objects and indicates whether an object is signed by a specified certificate or asymmetric key. If the object is signed by the specified certificate or asymmetric key signed, it also returns whether the object's signature is valid."
 tags: ["system", "function"]
 pubDate: 2026-05-29
 syntax: |

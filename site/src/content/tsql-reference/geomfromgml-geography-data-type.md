@@ -29,4 +29,3 @@ An int expression representing the spatial reference ID.
 ## Remarks
 
 Constructs a geography instance from a GML representation.
-

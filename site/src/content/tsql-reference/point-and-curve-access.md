@@ -2,7 +2,7 @@
 name: "Point and curve access"
 title: "Point and curve access"
 category: "operators"
-description: "Returns the geometric center (centroid) of a geometry instance consisting of one or more"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---

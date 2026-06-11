@@ -2,14 +2,12 @@
 name: "C. Four ranking functions used in the same query"
 title: "C. Four ranking functions used in the same query"
 category: "predicates"
-description: "This example returns the top ten employees ranked by their salary. Because the"
+description: "This example returns the top ten employees ranked by their salary."
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---
 
 This example returns the top ten employees ranked by their salary. Because the statement did not specify a clause, the function applied to all result set rows.
-
-SQL
 
 Here's the result set.
 
@@ -22,8 +20,6 @@ NTILE()
 RANK()
 
 ROW_NUMBER() used in the same query. See each ranking function for function-specific examples.
-
-SQL
 
 FirstName
 
@@ -257,17 +253,13 @@ Chudukatil
 
 98055
 
-```sql
-SELECT
-```
+`SELECT`
 
 ```sql
 PARTITION BY
 ```
 
-```sql
-DENSE_RANK
-```
+`DENSE_RANK`
 
 ```sql
 (10 row(s) affected)
@@ -279,10 +271,8 @@ AdventureWorks2022;
 GO
 SELECT
 TOP(10) BusinessEntityID, Rate,
-DENSE_RANK
-()
-OVER
-(
+DENSE_RANK ()
+OVER (
 ORDER
 BY
 Rate
@@ -310,64 +300,48 @@ BusinessEntityID Rate                  RankBySalary
 USE
 AdventureWorks2022;
 GO
-SELECT
-p.FirstName, p.LastName
+SELECT p.FirstName, p.LastName
 ,ROW_NUMBER()
-OVER
-(
+OVER (
 ORDER
-BY
-a.PostalCode)
+BY a.PostalCode)
 AS
 "Row Number"
 ,
-RANK
-()
-OVER
-(
+RANK ()
+OVER (
 ORDER
-BY
-a.PostalCode)
+BY a.PostalCode)
 AS
 Rank
 ,
-DENSE_RANK
-()
-OVER
-(
+DENSE_RANK ()
+OVER (
 ORDER
-BY
-a.PostalCode)
+BY a.PostalCode)
 AS
 "Dense Rank"
 ,NTILE(4)
-OVER
-(
+OVER (
 ORDER
-BY
-a.PostalCode)
+BY a.PostalCode)
 AS
 Quartile
 ,s.SalesYTD
 ,a.PostalCode
 FROM
 Sales.SalesPerson
-AS
-s
+AS s
 INNER
 JOIN
 Person.Person
-AS
-p
-ON
-s.BusinessEntityID = p.BusinessEntityID
+AS p
+ON s.BusinessEntityID = p.BusinessEntityID
 INNER
 JOIN
 Person.Address
-AS
-a
-ON
-a.AddressID = p.BusinessEntityID
+AS a
+ON a.AddressID = p.BusinessEntityID
 WHERE
 TerritoryID
 IS

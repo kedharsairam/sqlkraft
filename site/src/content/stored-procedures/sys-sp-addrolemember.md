@@ -2,7 +2,7 @@
 name: "sys.sp_addrolemember"
 title: "sp_addrolemember"
 category: "general"
-description: "Analytics Platform System (PDW) Adds a database user, database role, Windows login, or Windows group to a database role in Transact-SQL syntax conventions The name of the database role in the current database. The security account being added to the role. can be a database user, database role, Windows login, or Windows group. This feature will be removed in a future version of SQL Server. Avoid us"
+description: "Analytics Platform System (PDW) Adds a database user, database role, Windows login, or Windows group to a database role in Transact-SQL syntax conventions The name of the database role in the current database. The security account being added to the role."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |

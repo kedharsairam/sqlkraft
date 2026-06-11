@@ -2,7 +2,7 @@
 name: "sys.server_event_session_targets"
 title: "sys.server_event_session_targets"
 category: "compatibility"
-description: "Azure SQL Managed Instance Returns a row for each event target for an event session. The ID of the event session. Is not nullable. The ID of the target. ID is unique within the event session object. Is not The name of the event target. Is not nullable. The name of the event package that contains the event target. Is not nullable. The name of the module that contains the event target. Is not nullab"
+description: "Azure SQL Managed Instance Returns a row for each event target for an event session. The ID of the event session. Is not nullable. The ID of the target. ID is unique within the event session object. Is not The name of the event target. Is not nullable."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "VIEW SERVER PERFORMANCE STATE"

@@ -2,7 +2,7 @@
 name: "sys.index_columns"
 title: "sys.index_columns"
 category: "objects"
-description: "Analytics Platform System (PDW) Contains one row per column that is part of an index or unordered table (heap). ID of the object the index is defined on. ID of the index in which the column is defined. = Row Identifier (RID) in a nonclustered index. Ordinal (1-based) within set of key-columns. 0 = Not a key column, or is an XML index, columnstore index, Note: An XML or spatial or JSON index can't "
+description: "Analytics Platform System (PDW) Contains one row per column that is part of an index or unordered table (heap)."
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "data_clustering_ordinal"

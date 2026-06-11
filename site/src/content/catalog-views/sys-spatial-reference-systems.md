@@ -2,7 +2,7 @@
 name: "sys.spatial_reference_systems"
 title: "sys.spatial_reference_systems"
 category: "spatial"
-description: "SQL database in Microsoft Fabric Lists the spatial reference systems (SRIDs) supported by SQL Server. The SRID supported by SQL Server. authorized_spatial_reference_id The SRID given by the authority named in The WKT representation of the SRID. The name of the unit of measure. The length of the unit of measure in meters. The visibility of the metadata in catalog views is limited to securables that"
+description: "SQL database in Microsoft Fabric Lists the spatial reference systems (SRIDs) supported by SQL Server. The SRID supported by SQL Server. authorized_spatial_reference_id The SRID given by the authority named in The WKT representation of the SRID."
 tags: ["spatial", "catalog-view"]
 pubDate: 2026-05-29
 ---

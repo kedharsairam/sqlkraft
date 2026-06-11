@@ -2,7 +2,7 @@
 name: "Supplementary characters (surrogate pairs)"
 title: "Supplementary characters (surrogate pairs)"
 category: "statements"
-description: "A positive integer or"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -112,14 +112,8 @@ Initial
 
 ThirdAndFourthCharacters
 
-```sql
-NULL
-```
+`NULL`
 
-```sql
-SUBSTRING
-```
+`SUBSTRING`
 
-```sql
-NULL
-```
+`NULL`
