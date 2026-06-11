@@ -168,8 +168,7 @@ const BASE_PATH = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "")
       function render(hits) {
         if (hits.length === 0) {
           results.style.display = "";
-          results.innerHTML =
-            '<div class="palette-empty">No results found</div>';
+          results.innerHTML = '<div class="palette-empty">No results found</div>';
           resultItems = [];
           activeIdx = -1;
           return;
