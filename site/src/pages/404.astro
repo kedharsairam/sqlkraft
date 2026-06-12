@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Page Not Found — SqlKraft">
+  <main class="not-found">
+    <h1>404</h1>
+    <p class="not-found-desc">
+      This page doesn't exist in the SqlKraft reference.
+    </p>
+    <p class="not-found-hint">
+      Try searching, or head back to the
+      <a href="/sqlkraft/">home page</a>.
+    </p>
+  </main>
+</BaseLayout>
+
+<style>
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+    padding: var(--fluid-padding-h);
+  }
+  .not-found h1 {
+    font-size: clamp(5rem, 12vw, 8rem);
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -0.03em;
+    line-height: 1;
+  }
+  .not-found-desc {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    color: var(--text-secondary);
+    margin-top: var(--space-md);
+    max-width: 40ch;
+  }
+  .not-found-hint {
+    font-size: clamp(0.875rem, 1.2vw, 1rem);
+    color: var(--text-secondary);
+    margin-top: var(--space-sm);
+  }
+  .not-found-hint a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .not-found-hint a:hover {
+    text-decoration: underline;
+  }
+</style>
