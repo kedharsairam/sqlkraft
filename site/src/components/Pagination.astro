@@ -24,37 +24,77 @@ const baseUrl = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "");
 
   <!-- Prev / Next buttons -->
   <div class="page-buttons">
-    {prevUrl ? (
-      <a href={prevUrl} class="page-btn page-btn--prev" rel="prev">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="15 18 9 12 15 6"></polyline>
-        </svg>
-        Previous
-      </a>
-    ) : (
-      <span class="page-btn page-btn--disabled">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="15 18 9 12 15 6"></polyline>
-        </svg>
-        Previous
-      </span>
-    )}
+    {
+      prevUrl ? (
+        <a href={prevUrl} class="page-btn page-btn--prev" rel="prev">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+          Previous
+        </a>
+      ) : (
+        <span class="page-btn page-btn--disabled">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+          Previous
+        </span>
+      )
+    }
 
-    {nextUrl ? (
-      <a href={nextUrl} class="page-btn page-btn--next" rel="next">
-        Next
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </a>
-    ) : (
-      <span class="page-btn page-btn--disabled">
-        Next
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <polyline points="9 18 15 12 9 6"></polyline>
-        </svg>
-      </span>
-    )}
+    {
+      nextUrl ? (
+        <a href={nextUrl} class="page-btn page-btn--next" rel="next">
+          Next
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </a>
+      ) : (
+        <span class="page-btn page-btn--disabled">
+          Next
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </span>
+      )
+    }
   </div>
 </nav>
 
