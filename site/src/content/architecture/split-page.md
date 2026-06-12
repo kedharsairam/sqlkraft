@@ -40,6 +40,6 @@ An index page in Bw-tree grows on as-needed basis starting from storing a single
 
 storing a maximum of 8 KB. Once the index page grows to 8 KB, a new insert of a single row
 
-### Step 1:
+## Step 1:
 
-### Step 2:
+## Step 2:

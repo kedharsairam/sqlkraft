@@ -97,7 +97,7 @@ assemblies, any attempt to call.NET Framework APIs that
 
 are annotated with certain HostProtectionAttributes fails.
 
-### sysadmin
+## sysadmin
 
 ```sql
 CREATE ASSEMBLY

@@ -67,13 +67,13 @@ for compact Storage
 
 for general use and higher precision tasks
 
-### vector
+## vector
 
-### varchar(max)
+## varchar(max)
 
-### vector
+## vector
 
-### half-precision
+## half-precision
 
 `float32`
 

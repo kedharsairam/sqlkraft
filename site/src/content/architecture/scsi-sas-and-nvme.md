@@ -6,7 +6,7 @@ tags: ["query-processing","architecture"]
 pubDate: "2026-05-29"
 ---
 
-### Windows Hardware Compatibility Program
+## Windows Hardware Compatibility Program
 
 Also review the following archived content:
 
@@ -62,6 +62,6 @@ Although SQL Server doesn't interact directly with iSCSI, it operates seamlessly
 
 Windows presents iSCSI storage as standard drives. SQL Server can then read from, and
 
-### iSCSI Target Server Scalability
+## iSCSI Target Server Scalability
 
-### Limits
+## Limits

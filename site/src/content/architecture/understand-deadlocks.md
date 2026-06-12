@@ -120,13 +120,13 @@ Task T2 has a lock on resource R2 (indicated by the arrow from R2 to T2), and ha
 
 requested a lock on resource R1 (indicated by the arrow from T2 to R1).
 
-### Locks
+## Locks
 
-### Worker threads
+## Worker threads
 
-### Memory
+## Memory
 
-### Parallel query execution-related resources
+## Parallel query execution-related resources
 
 Because neither task can continue until a resource is available and neither resource can be
 
@@ -196,13 +196,13 @@ The Database Engine automatically detects deadlock cycles. It chooses one of the
 
 transactions as a deadlock victim and terminates it with an error to break the deadlock.
 
-### Multiple Active Result Sets (MARS) resources
+## Multiple Active Result Sets (MARS) resources
 
-### User resource
+## User resource
 
-### Session mutex
+## Session mutex
 
-### Transaction mutex
+## Transaction mutex
 
 start running on the server or the system runs out of worker threads, then a deadlock
 

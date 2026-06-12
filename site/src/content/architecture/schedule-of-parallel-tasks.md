@@ -6,9 +6,9 @@ tags: ["thread-task","architecture"]
 pubDate: "2026-05-29"
 ---
 
-### AdventureWorks2016_EXT sample
+## AdventureWorks2016_EXT sample
 
-### database
+## database
 
 In this scenario and up to SQL Server 2014 (12.x), Worker 1 is allowed to basically monopolize
 
@@ -60,9 +60,9 @@ enlarged 50 times and renamed to
 
 and.
 
-### Showplan Logical and Physical Operators
+## Showplan Logical and Physical Operators
 
-### Reference
+## Reference
 
 While there are three branches in the execution plan, at any point during execution only two
 
@@ -364,7 +364,7 @@ The SQL Server Database Engine will always try to assign schedulers from the sam
 
 node for task execution, and assign them sequentially (in round-robin fashion) if
 
-### sys.dm_os_waiting_tasks
+## sys.dm_os_waiting_tasks
 
 ```sql
 SELECT h.SalesOrderID,

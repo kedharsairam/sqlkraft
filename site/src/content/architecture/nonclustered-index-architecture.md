@@ -258,7 +258,7 @@ columns.
 
 Expand table
 
-### nvarchar(max)
+## nvarchar(max)
 
 `ManagerID`
 

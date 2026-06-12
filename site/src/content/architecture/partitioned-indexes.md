@@ -66,9 +66,9 @@ queries use a partitioned index, the Database Engine can process multiple partit
 
 the same time and skip (eliminate) partitions that aren't needed by the query.
 
-### Sort
+## Sort
 
-### Sort
+## Sort
 
 ```sql
 MOVE TO

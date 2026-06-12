@@ -6,9 +6,9 @@ tags: ["query-processing","architecture"]
 pubDate: "2026-05-29"
 ---
 
-### Bound Trees
+## Bound Trees
 
-### Extended Stored Procedures
+## Extended Stored Procedures
 
 greater reuse of the stored procedure and trigger execution plans.
 
@@ -76,9 +76,9 @@ using Transact-SQL statements. The cached structure contains only the function
 
 name and the DLL name in which the procedure is implemented.
 
-### Execution Context
+## Execution Context
 
-### Cardinality Estimation
+## Cardinality Estimation
 
 The order of these operators, which determines the order in which data is accessed,
 
@@ -192,11 +192,11 @@ such as bulk operation statements running on rowstore or statements containing s
 
 literals larger than 8 KB in size. These plans only exist while the query is being executed.
 
-### query plan hash
+## query plan hash
 
-### query hash
+## query hash
 
-### Plan Handle
+## Plan Handle
 
 ```sql
 SELECT

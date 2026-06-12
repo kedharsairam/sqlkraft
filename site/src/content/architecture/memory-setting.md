@@ -102,15 +102,15 @@ Expand table
 
 might commit memory over the max server
 
-### Multi-Page Allocator (MPA)
+## Multi-Page Allocator (MPA)
 
-### CLR Allocator
+## CLR Allocator
 
-### thread stacks
+## thread stacks
 
-### Direct Windows
+## Direct Windows
 
-### allocations (DWA)
+## allocations (DWA)
 
 ```sql
 max server memory (MB)

@@ -82,10 +82,10 @@ physical files that implement the transaction log. There must be at least one lo
 
 database.
 
-### This can slow down database startup, log backup and restore operations, and cause
+## This can slow down database startup, log backup and restore operations, and cause
 
-### transactional replication/CDC and Always On redo latency.
+## transactional replication/CDC and Always On redo latency.
 
-### required size
+## required size
 
-### autogrow
+## autogrow

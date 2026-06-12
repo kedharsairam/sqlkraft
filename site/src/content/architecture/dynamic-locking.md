@@ -26,9 +26,9 @@ Database Engine automatically determines what locks are most appropriate when th
 
 
 
-### Spinlock
+## Spinlock
 
-### Memory
+## Memory
 
 `lock_escalation`
 

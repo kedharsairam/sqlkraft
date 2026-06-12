@@ -6,7 +6,7 @@ tags: ["query-processing","architecture"]
 pubDate: "2026-05-29"
 ---
 
-### Database Engine Configuration - MaxDOP page
+## Database Engine Configuration - MaxDOP page
 
 Starting with SQL Server 2014 (12.x) and database compatibility level 110, the
 
@@ -82,7 +82,7 @@ interface allows you to either accept the recommended settings or enter your own
 
 value. For more information, see.
 
-### MAXDOP recommendations
+## MAXDOP recommendations
 
 ```sql
 SELECT. INTO

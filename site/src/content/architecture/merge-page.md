@@ -74,11 +74,11 @@ size (8 KB), or with a single row on it, that page is merged with a contiguous p
 
 
 
-### Step 1:
+## Step 1:
 
-### Step 2:
+## Step 2:
 
-### Step 3:
+## Step 3:
 
 When a row is deleted from a page, a delta record for the delete is added. Additionally, a check
 

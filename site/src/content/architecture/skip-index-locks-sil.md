@@ -68,9 +68,9 @@ If the modified row has any columns using the LOB data types, such as
 
 For rows on pages that were split in the same transaction.
 
-### query plan
+## query plan
 
-### database
+## database
 
 ```sql
 SET b = b + 10

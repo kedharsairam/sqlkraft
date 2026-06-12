@@ -48,9 +48,9 @@ The application can control when the execution plan is created and when it is re
 
 The prepare/execute model is portable to other databases, including earlier versions of.
 
-### All Density
+## All Density
 
-### average density
+## average density
 
 `AdventureWorks`
 

@@ -7,9 +7,9 @@ tags: ["tsql","statements"]
 pubDate: "2026-05-29"
 ---
 
-### Examples:
+## Examples:
 
-### Server and Azure SQL index architecture and design guide
+## Server and Azure SQL index architecture and design guide
 
 Analytics Platform System (PDW)
 
@@ -51,7 +51,7 @@ indexes, the Database Engine implements a B+ tree. This does not apply to column
 
 indexes or indexes on memory-optimized tables. For more information, see the.
 
-### Key scenario:
+## Key scenario:
 
 ```sql
 CREATE

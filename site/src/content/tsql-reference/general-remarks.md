@@ -39,9 +39,9 @@ Microsoft Azure storage is a service, the implementation is similar to disk and 
 
 allow for a consistent and seamless restore experience for all the three devices.
 
-### File-Snapshot
+## File-Snapshot
 
-### Backups for Database Files in Azure
+## Backups for Database Files in Azure
 
 ```sql
 | {

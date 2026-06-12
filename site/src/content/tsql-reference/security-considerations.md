@@ -81,19 +81,19 @@ to a condition where a login with no access to SQL Server appears to be logged i
 
 the impersonated login would only have the permissions granted to public or guest.
 
-### EXECUTE AS
+## EXECUTE AS
 
-### IMPERSONATE
+## IMPERSONATE
 
-### IMPERSONATE ANY LOGIN
+## IMPERSONATE ANY LOGIN
 
-### EXECUTE AS
+## EXECUTE AS
 
-### IMPERSONATE
+## IMPERSONATE
 
-### EXECUTE AS CALLER
+## EXECUTE AS CALLER
 
-### IMPERSONATE
+## IMPERSONATE
 
 ```sql
 EXECUTE AS USER = 'CompanyDomain\SqlUser1'

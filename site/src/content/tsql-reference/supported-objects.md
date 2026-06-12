@@ -171,7 +171,7 @@ Starting in SQL Server 2016 (13.x) Service Pack 1.
 
 2
 
-### sysadmin
+## sysadmin
 
 ```sql
 DBCC CLONEDATABASE

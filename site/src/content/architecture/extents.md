@@ -136,9 +136,9 @@ can report page allocation information for a database, table, index, and partiti
 
 Important
 
-### Global Allocation Map (GAM)
+## Global Allocation Map (GAM)
 
-### Shared Global Allocation Map (SGAM)
+## Shared Global Allocation Map (SGAM)
 
 `ROW_OVERFLOW_DATA`
 

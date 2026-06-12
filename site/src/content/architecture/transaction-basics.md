@@ -38,13 +38,13 @@ To determine if optimized locking is enabled on your database, see
 
 Optimized locking introduces significant changes to some sections of this article, including:
 
-### Atomicity
+## Atomicity
 
-### Consistency
+## Consistency
 
-### Isolation
+## Isolation
 
-### Durability
+## Durability
 
 A transaction is a sequence of operations performed as a single logical unit of work. A logical unit
 

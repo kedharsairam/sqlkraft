@@ -87,17 +87,17 @@ statement and the
 
 and
 
-### sysadmin
+## sysadmin
 
-### sysadmin
+## sysadmin
 
-### Triggers
+## Triggers
 
-### Server Objects
+## Server Objects
 
-### Database Triggers
+## Database Triggers
 
-### Programmability
+## Programmability
 
 ```sql
 PRIMARY KEY

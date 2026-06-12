@@ -59,17 +59,17 @@ or transaction that occurred after the end of the data backup. For more informat
 
 tail-log backups, see.
 
-### upgrade_option
+## upgrade_option
 
-### upgrade_option
+## upgrade_option
 
-### upgrade_option
+## upgrade_option
 
-### upgrade_option
+## upgrade_option
 
-### OPEN MASTER KEY
+## OPEN MASTER KEY
 
-### ALTER MASTER KEY REGENERATE
+## ALTER MASTER KEY REGENERATE
 
 ```sql
 RESTORE DATABASE. WITH RESTRICTED_USER

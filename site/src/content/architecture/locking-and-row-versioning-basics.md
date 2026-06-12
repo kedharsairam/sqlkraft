@@ -38,9 +38,9 @@ of each row that is modified. Applications can specify that a transaction use th
 
 versions to view data as it existed at the start of the transaction or statement, instead of
 
-### Lost updates
+## Lost updates
 
-### Uncommitted dependency (dirty read)
+## Uncommitted dependency (dirty read)
 
 `INSERT`
 

@@ -69,9 +69,9 @@ The
 
 method is currently in preview and only available in SQL Server 2025 (17.x).
 
-### json
+## json
 
-### json
+## json
 
 `modify`
 

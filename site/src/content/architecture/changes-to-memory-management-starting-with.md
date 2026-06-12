@@ -78,21 +78,21 @@ because starting in SQL Server 2012 (11.x), such configurations now include and 
 
 for more memory allocations compared to earlier versions. These changes apply to both
 
-### Total Server
+## Total Server
 
-### Memory (KB)
+## Memory (KB)
 
-### Target Server Memory (KB)
+## Target Server Memory (KB)
 
-### Total Server
+## Total Server
 
-### Memory (KB)
+## Memory (KB)
 
-### Target Server Memory (KB)
+## Target Server Memory (KB)
 
-### Total Server Memory (KB)
+## Total Server Memory (KB)
 
-### Target Server Memory (KB)
+## Target Server Memory (KB)
 
 ```sql
 max server memory (MB)

@@ -50,11 +50,11 @@ Avoid creating indexes with a very large number of included columns. Even though
 
 might be covering for more queries, its performance benefit is decreased because:
 
-### varchar(max)
+## varchar(max)
 
-### nvarchar(max)
+## nvarchar(max)
 
-### varbinary(max)
+## varbinary(max)
 
 `PostalCode`
 

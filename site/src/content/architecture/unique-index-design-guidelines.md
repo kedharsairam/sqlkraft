@@ -94,9 +94,9 @@ on the column when the enforcement of business rules is the goal. By doing this,
 
 of the index is clear.
 
-### Improved query performance and plan quality
+## Improved query performance and plan quality
 
-### Reduced index update costs
+## Reduced index update costs
 
 `NationalIDNumber`
 

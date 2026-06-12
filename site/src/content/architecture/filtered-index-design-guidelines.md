@@ -76,7 +76,7 @@ frequently affected data, the smaller size of the index reduces the cost of upda
 
 statistics.
 
-### Reduced index storage costs
+## Reduced index storage costs
 
 `UNIQUE`
 

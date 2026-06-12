@@ -134,9 +134,9 @@ run-time error.
 
 Compile and run-time errors in autocommit mode
 
-### Locking
+## Locking
 
-### Row versioning
+## Row versioning
 
 `COMMIT`
 

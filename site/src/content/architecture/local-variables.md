@@ -79,9 +79,9 @@ predicates, and 30% for inequalities and ranges, which might lead to less accura
 
 plans. Here's an example of a query that uses a local variable.
 
-### Scalar UDFs
+## Scalar UDFs
 
-### Remote Query
+## Remote Query
 
 `sp_executesql`
 

@@ -6,7 +6,7 @@ tags: ["io-fundamentals","architecture"]
 pubDate: "2026-05-29"
 ---
 
-### fiber mode
+## fiber mode
 
 The
 
@@ -86,9 +86,9 @@ using this feature in any version of SQL Server.
 
 Important
 
-### lightweight
+## lightweight
 
-### pooling
+## pooling
 
 ```sql
 lightweight pooling

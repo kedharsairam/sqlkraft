@@ -97,7 +97,7 @@ replicated in two different databases: the tables are served by different replic
 
 and the order of the updates is not guaranteed.
 
-### Applies to
+## Applies to
 
 ```sql
 SET ROWCOUNT

@@ -86,11 +86,11 @@ Avoid over-indexing heavily updated tables and keep indexes narrow, that is, wit
 
 few columns as possible.
 
-### S
+## S
 
-### ARG
+## ARG
 
-### able
+## able
 
 `ONLINE`
 

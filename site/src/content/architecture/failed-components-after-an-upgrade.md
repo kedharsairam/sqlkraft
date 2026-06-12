@@ -72,7 +72,7 @@ option to
 
 Note
 
-### sp_changedistributor_property
+## sp_changedistributor_property
 
 ```sql
 TrustServerCertificate=False

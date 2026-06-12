@@ -57,17 +57,17 @@ compatibility level for backward compatibility, see
 
 Compatibility certification.
 
-### Discontinued
+## Discontinued
 
-### not
+## not
 
-### Breaking changes
+## Breaking changes
 
-### might not
+## might not
 
-### not
+## not
 
-### protected
+## protected
 
 `compatibility_level`
 

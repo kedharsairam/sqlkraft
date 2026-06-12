@@ -88,17 +88,17 @@ execute a query. To see which indexes the query optimizer uses for a specific qu
 
 1
 
-### Query
+## Query
 
-### Display Estimated Execution Plan
+## Display Estimated Execution Plan
 
-### Include Actual Execution Plan
+## Include Actual Execution Plan
 
-### Understand the characteristics of the database and the application
+## Understand the characteristics of the database and the application
 
-### Understand the characteristics of the most frequently used queries
+## Understand the characteristics of the most frequently used queries
 
-### Understand the data distribution in the columns used in the query predicates
+## Understand the data distribution in the columns used in the query predicates
 
 `SQL`
 

@@ -66,9 +66,9 @@ statement is explicitly executed. A checkpoint occurs in the current
 
 database for the connection.
 
-### recovery interval
+## recovery interval
 
-### recovery interval
+## recovery interval
 
 `COMMIT`
 

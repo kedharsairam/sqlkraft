@@ -40,17 +40,17 @@ controls this
 
 behavior.
 
-### varchar(7000)
+## varchar(7000)
 
-### varchar(2000)
+## varchar(2000)
 
-### varchar(7000)
+## varchar(7000)
 
-### varchar(max)
+## varchar(max)
 
-### nvarchar(max)
+## nvarchar(max)
 
-### varbinary(max)
+## varbinary(max)
 
 The 8,060-byte restriction is relaxed for tables and indexes that contain variable length
 
@@ -178,9 +178,9 @@ are exempt from the 8,060-
 
 byte row limit.
 
-### Uniform
+## Uniform
 
-### Mixed
+## Mixed
 
 `LOB_DATA`
 

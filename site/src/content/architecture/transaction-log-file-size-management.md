@@ -72,9 +72,9 @@ Microsoft recommends that you avoid using this feature in SQL Server administrat
 
 any version of SQL Server.
 
-### max degree of parallelism (MAXDOP)
+## max degree of parallelism (MAXDOP)
 
-### max worker threads
+## max worker threads
 
 ```sql
 SET PROCESS AFFINITY

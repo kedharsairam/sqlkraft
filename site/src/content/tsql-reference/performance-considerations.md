@@ -77,9 +77,9 @@ again, you might have to do additional manual work to remove a
 
 part of the rows that were inserted successfully, before a failure occurred.
 
-### osql
+## osql
 
-### Storage Blob Data Contributor
+## Storage Blob Data Contributor
 
 ```sql
 BULK INSERT

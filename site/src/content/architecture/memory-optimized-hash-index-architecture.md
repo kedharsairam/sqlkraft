@@ -6,9 +6,9 @@ tags: ["index-architecture","architecture"]
 pubDate: "2026-05-29"
 ---
 
-### Configure the hash index bucket
+## Configure the hash index bucket
 
-### count
+## count
 
 A hash index consists of an array of pointers, and each element of the array is called a hash
 

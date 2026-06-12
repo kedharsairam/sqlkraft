@@ -112,7 +112,7 @@ is 0, you're not in a transaction.
 
 Note
 
-### savepoint
+## savepoint
 
 `TransProc`
 

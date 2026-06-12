@@ -63,13 +63,13 @@ canonical property names introduced in Windows Vista (Windows canonical name).
 
 Note
 
-### To create a property list
+## To create a property list
 
-### To drop a property list
+## To drop a property list
 
-### To add or remove a property list on a full-text index
+## To add or remove a property list on a full-text index
 
-### To run a population on a full-text index
+## To run a population on a full-text index
 
 `System.Author`
 

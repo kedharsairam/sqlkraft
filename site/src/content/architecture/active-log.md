@@ -72,7 +72,7 @@ setup option applies to automatic checkpoints and any otherwise
 
 unthrottled checkpoints.
 
-### recovery interval
+## recovery interval
 
 `CHECKPOINT`
 

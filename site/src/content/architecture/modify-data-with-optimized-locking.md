@@ -84,7 +84,7 @@ transaction encounters an update conflict and is terminated.
 
 Update conflicts must be handled and retried by the application.
 
-### Query behavior changes with optimized locking and RCSI
+## Query behavior changes with optimized locking and RCSI
 
 `READ_COMMITTED_SNAPSHOT`
 

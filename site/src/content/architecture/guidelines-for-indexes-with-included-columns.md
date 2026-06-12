@@ -82,7 +82,7 @@ At least one key column must be defined in an index. The maximum number of inclu
 
 columns is 1,023. This is the maximum number of table columns minus 1.
 
-### Index Seek
+## Index Seek
 
 `INCLUDE`
 

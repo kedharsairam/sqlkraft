@@ -55,9 +55,9 @@ mark a transaction that is already marked:
 
 Output
 
-### Applies to
+## Applies to
 
-### Applies to
+## Applies to
 
 ```sql
 WITH MARK

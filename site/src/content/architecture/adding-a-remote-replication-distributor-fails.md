@@ -96,7 +96,7 @@ property back to the secure
 
 default.
 
-### sp_changedistributor_property
+## sp_changedistributor_property
 
 `sp_adddistributor`
 

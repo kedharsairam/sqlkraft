@@ -84,9 +84,9 @@ Log Manager for write-ahead logging.
 
 The buffer manager supports the following features:
 
-### trace
+## trace
 
-### flag 834
+## flag 834
 
 `committed_target_kb`
 

@@ -7,9 +7,9 @@ tags: ["tsql","queries"]
 pubDate: "2026-05-29"
 ---
 
-### Table hints
+## Table hints
 
-### for vector search
+## for vector search
 
 For large-scale data replacement (for example, deleting most rows and inserting an
 
@@ -63,11 +63,11 @@ neighbor index, use the
 
 table hint. For more information, see.
 
-### Performance benefit:
+## Performance benefit:
 
-### vector index
+## vector index
 
-### traditional index
+## traditional index
 
 `VECTOR_SEARCH`
 

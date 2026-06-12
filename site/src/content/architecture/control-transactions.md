@@ -84,6 +84,6 @@ Using
 
 Multiple Active Result Sets (MARS).
 
-### Explicit transactions
+## Explicit transactions
 
-### Autocommit Transactions
+## Autocommit Transactions

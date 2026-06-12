@@ -48,9 +48,9 @@ split. This doesn't occur when you're using the
 
 isolation level.
 
-### Pessimistic
+## Pessimistic
 
-### Optimistic
+## Optimistic
 
 ```sql
 READ UNCOMMITTED

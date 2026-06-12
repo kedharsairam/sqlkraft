@@ -6,9 +6,9 @@ tags: ["io-fundamentals","architecture"]
 pubDate: "2026-05-29"
 ---
 
-### SysPrep
+## SysPrep
 
-### SysPrep
+## SysPrep
 
 - Windows only
 

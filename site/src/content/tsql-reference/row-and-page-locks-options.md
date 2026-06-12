@@ -93,7 +93,7 @@ index can't be reorganized when
 
 is set to.
 
-### Applies to
+## Applies to
 
 `WAIT_AT_LOW_PRIORITY`
 

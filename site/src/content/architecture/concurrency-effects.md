@@ -56,9 +56,9 @@ made by the other editor. This problem could be avoided if one editor couldn't a
 
 file until the other editor had finished and committed the transaction.
 
-### Inconsistent analysis (nonrepeatable read)
+## Inconsistent analysis (nonrepeatable read)
 
-### Phantom reads
+## Phantom reads
 
 Uncommitted dependency occurs when a second transaction reads a row that's being
 
@@ -114,7 +114,7 @@ statements in the first transaction might return different results because the
 
 statement in the second transaction changes the data used by both.
 
-### Missing and double reads caused by row updates
+## Missing and double reads caused by row updates
 
 `SELECT`
 

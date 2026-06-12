@@ -6,9 +6,9 @@ tags: ["query-processing","architecture"]
 pubDate: "2026-05-29"
 ---
 
-### sys.dm_db_index_usage_stats
+## sys.dm_db_index_usage_stats
 
-### sys.dm_db_index_operational_stats
+## sys.dm_db_index_operational_stats
 
 You can have more indexes on tables that have few data modifications but large
 
@@ -102,14 +102,14 @@ Index usage statistics are available in
 
 and.
 
-### varchar(max)
+## varchar(max)
 
-### nvarchar(max)
+## nvarchar(max)
 
-### varbinary(max)
+## varbinary(max)
 
-### json
+## json
 
-### vector
+## vector
 
-### nonclustered index
+## nonclustered index

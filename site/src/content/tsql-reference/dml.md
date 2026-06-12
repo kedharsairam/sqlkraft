@@ -7,31 +7,31 @@ tags: ["tsql","statements"]
 pubDate: "2026-05-29"
 ---
 
-### insert
+## insert
 
-### delete
+## delete
 
-### replace value of
+## replace value of
 
-### modify()
+## modify()
 
-### xml,
+## xml,
 
-### xmlns
+## xmlns
 
-### xmlns:\*
+## xmlns:\*
 
-### xml:base
+## xml:base
 
-### xsi:nil
+## xsi:nil
 
-### xsi:type
+## xsi:type
 
-### xml:base
+## xml:base
 
-### xsi:nil
+## xsi:nil
 
-### xs:type
+## xs:type
 
 The XML Data Modification Language (XML DML) is an extension of the XQuery language. As
 

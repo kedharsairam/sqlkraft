@@ -74,7 +74,7 @@ can be
 
 expensive, since both scan the entire version store, which could be large.
 
-### Free Space in tempdb (KB). Returns a virtual table for all active
+## Free Space in tempdb (KB). Returns a virtual table for all active
 
 transactions in all databases within the SQL Server instance that use row versioning. System
 
@@ -138,19 +138,19 @@ per database.
 
 Performance counters
 
-### Version Store Size (KB)
+## Version Store Size (KB)
 
-### Version Generation rate (KB/s)
+## Version Generation rate (KB/s)
 
-### Version Cleanup rate (KB/s)
+## Version Cleanup rate (KB/s)
 
-### Version Store unit count
+## Version Store unit count
 
-### Version Store unit creation
+## Version Store unit creation
 
-### Version Store unit truncation
+## Version Store unit truncation
 
-### Update conflict ratio
+## Update conflict ratio
 
 The following formula provides a rough estimate of the size of the version store. For long-
 
@@ -204,15 +204,15 @@ used to predict
 
 space requirements.
 
-### Longest Transaction Running Time
+## Longest Transaction Running Time
 
-### Transactions
+## Transactions
 
-### Snapshot Transactions
+## Snapshot Transactions
 
-### Update Snapshot Transactions
+## Update Snapshot Transactions
 
-### NonSnapshot Version Transactions
+## NonSnapshot Version Transactions
 
 `tempdb`
 

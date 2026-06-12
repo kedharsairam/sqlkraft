@@ -220,9 +220,9 @@ protection.
 
 latch modes and compatibility
 
-### Yes
+## Yes
 
-### No
+## No
 
 : Destroy latch. Must be acquired before destroying contents of referenced structure.
 
@@ -334,7 +334,7 @@ Expand table
 
 Superlatches and sublatches
 
-### Server and Azure SQL index architecture and design guide
+## Server and Azure SQL index architecture and design guide
 
 broadly in line with throughput, which can degrade performance. Superlatches can enable
 
@@ -398,13 +398,13 @@ indexes or indexes on memory-optimized tables. For more information, see the.
 
 
 
-### Server:Latches
+## Server:Latches
 
-### Buffer (BUF) latch:
+## Buffer (BUF) latch:
 
-### Non-buffer (Non-BUF) latch:
+## Non-buffer (Non-BUF) latch:
 
-### IO latch:
+## IO latch:
 
 `PAGELATCH`
 
