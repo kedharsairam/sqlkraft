@@ -20,9 +20,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server on Azure VM
+on Azure VM
 
 This article introduces Always On availability groups (AG) for SQL Server on Azure Virtual
 
@@ -30,9 +28,7 @@ Machines (VMs).
 
 To get started, see the
 
-Availability group tutorial
-
-.
+Availability group tutorial.
 
 Always On availability groups on Azure Virtual Machines are similar to
 
@@ -42,9 +38,7 @@ groups on-premises
 
 and rely on the underlying
 
-Windows Server Failover Cluster
-
-. However,
+Windows Server Failover Cluster. However,
 
 since the virtual machines are hosted in Azure, there are a few additional considerations as
 

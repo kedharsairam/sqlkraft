@@ -29,8 +29,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Lists the Transact-SQL statements and the SQL Server database objects that support
@@ -41,9 +39,7 @@ For the list of database objects that support the FileTable feature, see
 
 FileTable DDL, Functions,
 
-Stored Procedures, and Views
-
-.
+Stored Procedures, and Views.
 
 CREATE DATABASE (SQL Server Transact-SQL)
 

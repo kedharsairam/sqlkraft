@@ -25,15 +25,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server on Linux
+on Linux
 
 Article
 
 •
 
 11/21/2024
-
-Applies to:
 
 SQL Server
 
@@ -87,17 +85,13 @@ CREATE USER
 
 statement to create a
 
-user named Larry that is associated with the login named
-
-. Though the login and the user
+user named Larry that is associated with the login named. Though the login and the user
 
 Ｕ
 
 Caution
 
-Your password should follow the SQL Server default
-
-. By default, the
+Your password should follow the SQL Server default. By default, the
 
 password must be at least eight characters long and contain characters from three of the
 

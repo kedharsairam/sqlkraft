@@ -2,7 +2,7 @@
 name: "sys.sp_syscollector_create_collector_type"
 title: "sp_syscollector_create_collector_type"
 category: "general"
-description: "Creates a collector type for the data collector. A collector type is a logical wrapper around the SSIS packages that provide the actual mechanism for collecting data and uploading it to the Transact-SQL syntax conventions The GUID for the collector type. is an OUTPUT parameter of type it will be automatically created and returned as The name of the collector type. The XML schema for this collector"
+description: "Creates a collector type for the data collector. A collector type is a logical wrapper around the SSIS packages that provide the actual mechanism for collecting data and uploading it to the The GUID for the collector type. is an OUTPUT parameter of type it will be automatically created and returned as The name of the collector type. The XML schema for this collector"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -31,7 +31,7 @@ syntax: |
 
 ## Description
 
-Creates a collector type for the data collector. A collector type is a logical wrapper around the SSIS packages that provide the actual mechanism for collecting data and uploading it to the Transact-SQL syntax conventions The GUID for the collector type. is an OUTPUT parameter of type it will be automatically created and returned as The name of the collector type. The XML schema for this collector type.
+Creates a collector type for the data collector. A collector type is a logical wrapper around the SSIS packages that provide the actual mechanism for collecting data and uploading it to the The GUID for the collector type. is an OUTPUT parameter of type it will be automatically created and returned as The name of the collector type. The XML schema for this collector type.
 
 ## Syntax
 

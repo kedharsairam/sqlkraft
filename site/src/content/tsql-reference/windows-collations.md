@@ -9,11 +9,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Collation uses the Latin1 General dictionary sorting rules and maps to
-
-code page
-
-. It's a version
+code page. It's a version
 
 collation, and is case-insensitive
 
@@ -23,11 +19,7 @@ collation, and is case-insensitive
 
 ).
 
-Collation uses the Estonian dictionary sorting rules and maps to code
-
-page
-
-. It's a version
+page. It's a version
 
 collation (implied by no version number
 
@@ -37,9 +29,7 @@ in the name), and is case-sensitive (
 
 ).
 
-Collation uses binary code point sorting rules and maps to code page
-
-. It's a version
+Collation uses binary code point sorting rules and maps to code page. It's a version
 
 collation, and the Japanese Bushu Kakusu
 
@@ -64,60 +54,3 @@ DECLARE @local_variable (Transact-SQL)
 Table (Transact-SQL)
 
 sys.fn_helpcollations
-
-Last updated on 11/18/2025
-
-Related content
-
-`Latin1_General_100_CI_AS`
-
-```sql
-1252
-```
-
-```sql
-_100
-```
-
-`CI`
-
-`AS`
-
-`Estonian_CS_AS`
-
-```sql
-1257
-```
-
-```sql
-_80
-```
-
-`CS`
-
-`AS`
-
-`Japanese_Bushu_Kakusu_140_BIN2`
-
-```sql
-932
-```
-
-```sql
-_140
-```
-
-```sql
-SELECT
-*
-FROM sys.fn_helpcollations()
-WHERE
-[
-name
-]
-NOT
-LIKE
-N
-'SQL%'
-;
-```

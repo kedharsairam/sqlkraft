@@ -19,11 +19,9 @@ pubDate: 2025-12-01
 
 08/26/2025
 
-Applies to:
-
 SQL Server
 
-SQL Server Always On failover cluster instances use Windows Server Failover Clustering (WSFC)
+Always On failover cluster instances use Windows Server Failover Clustering (WSFC)
 
 to provide local high availability. A failover cluster instance (FCI) is redundant at the server-
 
@@ -45,25 +43,19 @@ database level. For more information, see
 
 Failover clustering and Always On availability groups
 
-(SQL Server)
+(SQL Server).
 
-.
-
-SQL Server failover cluster instances support Storage Spaces Direct for cluster storage
+failover cluster instances support Storage Spaces Direct for cluster storage
 
 resources, which was introduced in Windows Server 2016 Datacenter edition. For more
 
 information, see
 
-Storage Spaces Direct in Windows Server
-
-.
+Storage Spaces Direct in Windows Server.
 
 Failover cluster instances also support Cluster Shared Volumes (CSV). For more information, see
 
-Understanding Cluster Shared Volumes in a failover cluster
-
-.
+Understanding Cluster Shared Volumes in a failover cluster.
 
 When there's server hardware or software failure, the applications or clients connecting to the
 
@@ -87,7 +79,7 @@ cluster instances provide:
 
 Note
 
-SQL Server 2025 (17.x) Preview introduces support to
+2025 (17.x) Preview introduces support to
 
 to your
 

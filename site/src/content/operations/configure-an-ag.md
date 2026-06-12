@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -37,9 +35,7 @@ also include read-scale replicas. This article explains how to create the AG for
 
 You can also create an AG without a cluster manager for
 
-read-scale
-
-. The AG for read scale only
+read-scale. The AG for read scale only
 
 provides read-only replicas for performance scale-out. It doesn't provide high availability. To
 
@@ -47,9 +43,7 @@ create an AG for read-scale, see
 
 Configure a SQL Server availability group for read-scale on
 
-Linux
-
-.
+Linux.
 
 Configurations that guarantee high availability and data protection require either two or three
 
@@ -59,9 +53,7 @@ recover even if one server isn't available. For more information, see
 
 High availability and data
 
-protection for availability group configurations
-
-.
+protection for availability group configurations.
 
 All servers must be either physical or virtual, and virtual servers must be on the same
 
@@ -69,9 +61,7 @@ virtualization platform. This requirement exists because the fencing agents are 
 
 specific. See
 
-Policies for Guest Clusters
-
-.
+Policies for Guest Clusters.
 
 The steps to create an AG on Linux servers for high availability differ from the steps on a
 
@@ -79,9 +69,7 @@ Windows Server failover cluster. The following list describes the high-level ste
 
 1.
 
-Installation guidance for SQL Server on Linux
-
-.
+Installation guidance for SQL Server on Linux.
 
 2. Create the AG. This step is covered in this current article.
 

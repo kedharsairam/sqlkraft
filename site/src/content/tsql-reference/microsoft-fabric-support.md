@@ -9,9 +9,7 @@ pubDate: 2026-05-29
 
 The ANSI and ISO 8601 compliance sections of the date and time
 
-articles apply to
-
-.
+articles apply to.
 
 Some down-level clients don't support the
 

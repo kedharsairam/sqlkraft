@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -35,31 +33,23 @@ If you don't need an unattended installation script, the fastest way to install 
 
 follow the
 
-quickstart for SLES
-
-. For other setup information, see
+quickstart for SLES. For other setup information, see
 
 Installation guidance for SQL
 
-Server on Linux
-
-.
+Server on Linux.
 
 You need at least 2 GB of memory to run SQL Server on Linux.
 
 The file system must be
 
-or
-
-. Other file systems, such as
+or. Other file systems, such as
 
 , aren't supported.
 
 For other system requirements, see
 
-System requirements for SQL Server on Linux
-
-.
+System requirements for SQL Server on Linux.
 
 This example installs SQL Server 2019 (15.x) on SLES v15 SP6. If you want to install a different
 
@@ -81,7 +71,7 @@ Starting in SQL Server 2025 (17.x), SUSE Linux Enterprise Server (SLES) isn't su
 
 Important
 
-SQL Server requires
+requires
 
 , which the default SLES repositories don't provide.
 

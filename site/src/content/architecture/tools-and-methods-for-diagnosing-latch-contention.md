@@ -16,9 +16,7 @@ more information, see
 
 TempDB Monitoring and Troubleshooting: Allocation
 
-Bottleneck
-
-.
+Bottleneck.
 
 Significant
 

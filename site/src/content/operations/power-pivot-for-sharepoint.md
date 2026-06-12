@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/03/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -37,15 +35,11 @@ Power Pivot for SharePoint Add-in (
 
 ).
 
-Applies to:
-
 SharePoint 2010 | SharePoint 2013
 
 For release notes, see
 
-SQL Server 2016 release notes
-
-.
+2016 release notes.
 
 If you're upgrading a multi-server SharePoint 2010 farm that has two or more Power Pivot
 
@@ -75,7 +69,7 @@ The Power Pivot configuration tools are one of the SQL Server shared features an
 
 shared features upgrade at the same time. If during an upgrade process you select other
 
-SQL Server instances or features that require a shared feature upgrade, then the Power
+instances or features that require a shared feature upgrade, then the Power
 
 Pivot configuration tool is also upgraded. You might have issues if the Power Pivot
 
@@ -85,17 +79,13 @@ about SQL Server shared features, see
 
 Upgrade SQL Server Using the Installation Wizard
 
-(Setup)
-
-.
+(Setup).
 
 The Power Pivot for SharePoint Add-in (
 
 ) installs side by side with
 
-previous versions. For example, the add-in installs to the folder
-
-. See
+previous versions. For example, the add-in installs to the folder. See
 
 File locations
 

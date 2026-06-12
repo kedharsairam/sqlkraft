@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,11 +37,9 @@ This section describes how to use the replay features of SQL Server Profiler. Fo
 
 information about the Distributed Replay Utility, see
 
-SQL Server Distributed Replay overview
+Distributed Replay overview.
 
-.
-
-SQL Server Profiler features a multithreaded playback engine that can simulate user
+Profiler features a multithreaded playback engine that can simulate user
 
 connections and SQL Server Authentication. Replay is useful to troubleshoot an application or
 
@@ -69,9 +65,7 @@ For information about the permissions required to replay traces, see
 
 Permissions required to
 
-run SQL Server Profiler
-
-.
+run SQL Server Profiler.
 
 Description
 

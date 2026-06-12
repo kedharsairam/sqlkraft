@@ -62,9 +62,7 @@ Use the
 
 dynamic management view to determine whether a task is
 
-being blocked and what is blocking it. For more information and examples, see
-
-.
+being blocked and what is blocking it. For more information and examples, see.
 
 ```sql
 ALTER INDEX

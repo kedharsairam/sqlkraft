@@ -27,8 +27,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 In the SQL Server common language runtime (CLR) integration, using Windows Authentication
@@ -63,9 +61,7 @@ After you call
 
 , you can't access local data and you
 
-can't access system data. To access data again, you have to call
-
-.
+can't access system data. To access data again, you have to call.
 
 The following C# example shows how to impersonate the caller by using the
 

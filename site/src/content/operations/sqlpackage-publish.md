@@ -35,13 +35,9 @@ deployment package. A new database can be created by the publish action when the
 
 create
 
-database permissions
+database permissions. The required permissions for the publish action on an existing database is
 
-. The required permissions for the publish action on an existing database is
-
-db_owner
-
-.
+db_owner.
 
 SqlPackage
 

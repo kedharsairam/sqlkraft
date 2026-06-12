@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -35,7 +33,7 @@ Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics (serverless SQL pool only)
+(serverless SQL pool only)
 
 database in Microsoft Fabric
 
@@ -47,9 +45,7 @@ JSON output in SQL Server or in client apps. For more information, see
 
 Format query results as
 
-JSON with FOR JSON
-
-.
+JSON with FOR JSON.
 
 In Fabric Data Warehouse,
 

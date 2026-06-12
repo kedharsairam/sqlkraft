@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-If or succeeds to the IP address, but fails to the , there's likely a DNS or name resolution issue. See Check for name resolution issues . If or work using , but fail using the IP address, then there
+If or succeeds to the IP address, but fails to the , there's likely a DNS or name resolution issue. See Check for name resolution issues.
 
 ## Severity
 

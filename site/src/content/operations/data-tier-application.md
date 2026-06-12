@@ -35,9 +35,7 @@ development and deployment of data-tier elements that support your application. 
 
 information, see
 
-Data-tier applications (DAC) overview
-
-.
+Data-tier applications (DAC) overview.
 
 Deploy a
 
@@ -61,10 +59,5 @@ To use the Data-tier Application features, install the MSSQL extension for Visua
 
 icon to view available extensions.
 
-```cmd
-.dacpac
-.bacpac
-.dacpac
-.bacpac
-.dacpac
+```cmd.dacpac.bacpac.dacpac.bacpac.dacpac
 ```

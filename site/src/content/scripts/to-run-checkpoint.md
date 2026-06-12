@@ -1,7 +1,7 @@
 ---
 name: "To Run Checkpoint"
 title: "To Run Checkpoint"
-description: "SQL Server diagnostic script for architecture operations."
+description: "diagnostic script for architecture operations."
 category: architecture
 tags: ["architecture", "health-check"]
 pubDate: 2025-03-15

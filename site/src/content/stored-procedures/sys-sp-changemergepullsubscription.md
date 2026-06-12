@@ -2,7 +2,7 @@
 name: "sys.sp_changemergepullsubscription"
 title: "sp_changemergepullsubscription"
 category: "general"
-description: "Changes the properties of the merge pull subscription. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions The name of the Publisher database."
+description: "Changes the properties of the merge pull subscription. This stored procedure is executed at the Subscriber on the subscription database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -32,7 +32,7 @@ syntax: |
 
 ## Description
 
-Changes the properties of the merge pull subscription. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions The name of the Publisher database.
+Changes the properties of the merge pull subscription. This stored procedure is executed at the Subscriber on the subscription database.
 
 ## Syntax
 

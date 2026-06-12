@@ -29,8 +29,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -41,9 +39,7 @@ procedures, where the stored procedures used depend on the type of publication.
 
 1. At the Publisher, execute
 
-sp_addpublication
-
-. Specify a publication name for
+sp_addpublication. Specify a publication name for
 
 ,
 
@@ -87,15 +83,11 @@ only in a non-default location.
 
 For more information about creating publications, see
 
-Create a Publication
-
-.
+Create a Publication.
 
 1. At the Publisher, execute
 
-sp_addmergepublication
-
-. Specify a publication name for
+sp_addmergepublication. Specify a publication name for
 
 , a value of either
 

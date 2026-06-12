@@ -29,9 +29,7 @@ constraints use
 
 , and
 
-constraints use
-
-.
+constraints use.
 
 can be specified for only one constraint. If
 
@@ -41,9 +39,7 @@ constraint and a
 
 constraint is also specified, the
 
-uses
-
-.
+uses.
 
 A constraint that enforces domain integrity by limiting the possible values that can be entered
 
@@ -53,9 +49,7 @@ logical_expression
 
 A logical expression that returns
 
-or
-
-.
+or.
 
 Specifies one or more index options. Indexes can't be created explicitly on table variables, and
 
@@ -71,9 +65,7 @@ statistics.
 
 For a complete description of these options, see
 
-CREATE TABLE
-
-.
+CREATE TABLE.
 
 ```sql
 PRIMARY KEY

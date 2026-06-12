@@ -34,9 +34,7 @@ running. For more information about recovery models, see
 
 Back up and restore of SQL Server
 
-databases
-
-.
+databases.
 
 Before you can create the first log backup, you must create a full backup, such as a database
 
@@ -70,9 +68,7 @@ specifically the full and differential database backup cadence.
 
 For more information about transaction log backups, see
 
-Transaction log backups (SQL Server)
-
-.
+Transaction log backups (SQL Server).
 
 You should take frequent enough log backups to support your business requirements,
 

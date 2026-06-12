@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 SQL:BatchStarting Event Class
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database

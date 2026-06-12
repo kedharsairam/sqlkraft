@@ -27,9 +27,7 @@ For information related to data security on cloned databases, see
 
 Understanding data security
 
-in cloned databases
-
-.
+in cloned databases.
 
 uses an internal database snapshot of the source database for the
 

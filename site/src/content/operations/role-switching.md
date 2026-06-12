@@ -29,17 +29,13 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Within the context of a database mirroring session, the principal and mirror roles are typically
 
 interchangeable in a process known as
 
-role switching
-
-. In role switching, the mirror server acts
+role switching. In role switching, the mirror server acts
 
 as the
 
@@ -69,9 +65,7 @@ Note
 
 This topic assumes that you are familiar with the database mirroring operating modes. For
 
-more information, see
-
-.
+more information, see.
 
 ）
 

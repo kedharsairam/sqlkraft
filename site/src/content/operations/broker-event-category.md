@@ -35,8 +35,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -127,9 +125,7 @@ Audit Broker Login Event Class
 
 and
 
-Audit Broker Conversation Event Class
-
-.
+Audit Broker Conversation Event Class.
 
 ﾉ
 

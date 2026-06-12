@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 9989 16 No Cannot use full-text search in this instance. 9990 16 No Failed to retrieve full-text batch size configuration. A batch size of %d will be used instead. 9991 16 No Failed to ret
+Description 9989 16 No Cannot use full-text search in this instance. 9990 16 No Failed to retrieve full-text batch size configuration. A batch size of %d will be used instead.
 
 ## Severity
 

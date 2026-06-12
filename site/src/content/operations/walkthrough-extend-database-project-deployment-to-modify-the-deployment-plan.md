@@ -33,9 +33,7 @@ DeploymentPlanModifier
 
 or a
 
-DeploymentPlanExecutor
-
-. Use a
+DeploymentPlanExecutor. Use a
 
 DeploymentPlanModifier
 
@@ -83,7 +81,7 @@ Note
 
 This walkthrough is intended for users who are already familiar with the SQL features of
 
-SQL Server Data Tools. You're also expected to be familiar with basic Visual Studio
+Data Tools. You're also expected to be familiar with basic Visual Studio
 
 concepts, such as how to create a class library and how to use the code editor to add code
 

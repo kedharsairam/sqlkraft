@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description existing database. 8690 16 No Query cannot be compiled because USE PLAN hint conflicts with hint %ls. Consider removing hint %ls. 8691 16 No Query cannot be compiled because USE PLAN hint
+Description existing database. 8690 16 No Query cannot be compiled because USE PLAN hint conflicts with hint %ls. Consider removing hint %ls.
 
 ## Severity
 

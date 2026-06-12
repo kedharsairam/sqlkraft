@@ -13,9 +13,7 @@ Configuration functions are scalar functions that return information about curre
 
 configuration option settings, for example,
 
-@@SERVERNAME (Transact-SQL)
-
-.
+@@SERVERNAME (Transact-SQL).
 
 All configuration functions operate in a nondeterministic way. In other words, these functions
 
@@ -25,9 +23,7 @@ input values. For more information about function determinism, see
 
 Deterministic and
 
-Nondeterministic Functions
-
-.
+Nondeterministic Functions.
 
 Ranking functions return a ranking value for each row in a partition. Depending on the function
 
@@ -60,8 +56,6 @@ Perform operations on a date and time input values and return string,
 numeric, or date and time values.
 
 Graph Functions
-
-Perform operations to convert to and from character representations of
 
 graph node and edge IDs.
 

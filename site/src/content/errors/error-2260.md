@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 2260 16 No %sThere is no element named '%ls' 2261 16 No %sThere is no element named '%ls' in the type '%ls'. 2262 16 No %sThere is no element named '%ls:%ls' 2263 16 No %sThere is no eleme
+Description 2260 16 No %sThere is no element named '%ls' 2261 16 No %sThere is no element named '%ls' in the type '%ls'.
 
 ## Severity
 

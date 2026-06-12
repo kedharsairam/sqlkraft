@@ -9,11 +9,9 @@ pubDate: 2026-05-29
 
 For descriptions of the arguments, see
 
-RESTORE Arguments
+RESTORE Arguments.
 
-.
-
-SQL Server supports a variety of restore scenarios:
+supports a variety of restore scenarios:
 
 Complete database restore
 
@@ -29,9 +27,7 @@ or
 
 Complete
 
-Database Restores - Full Recovery Model
-
-.
+Database Restores - Full Recovery Model.
 
 File restore
 
@@ -45,9 +41,7 @@ File Restores - Full Recovery Model
 
 and
 
-File Restores - Simple Recovery Model
-
-.
+File Restores - Simple Recovery Model.
 
 Page restore
 
@@ -55,9 +49,7 @@ Restores individual pages. Page restore is available only under the full and bul
 
 recovery models. For more information, see
 
-Restore Pages - SQL Server
-
-.
+Restore Pages - SQL Server.
 
 Piecemeal restore
 
@@ -69,9 +61,7 @@ PARTIAL option and specifying one or more secondary filegroups to be restored. F
 
 more information, see
 
-Piecemeal Restores - SQL Server
-
-.
+Piecemeal Restores - SQL Server.
 
 Recovery only
 
@@ -79,15 +69,13 @@ Recovers data that is already consistent with the database and needs only to be 
 
 available. For more information, see
 
-Recover a Database Without Restoring Data
-
-.
+Recover a Database Without Restoring Data.
 
 Transaction log restore.
 
 #### Discontinued keyword
 
-#### Replaced by...
+#### Replaced by.
 
 #### Example of replacement keyword
 

@@ -18,8 +18,6 @@ A placeholder for the values of extra parameters. Values can only be constants o
 
 ## Arguments
 
-Applies to:
-
 Azure SQL Database
 
 Azure SQL Managed Instance
@@ -40,8 +38,6 @@ Executes a Transact-SQL statement or batch that can be reused many times, or one
 
 dynamically. The Transact-SQL statement or batch can contain embedded parameters.
 
-Transact-SQL syntax conventions
-
 Syntax for SQL Server, Azure SQL Database, Azure SQL Managed Instance, Azure Synapse
 
 Analytics, and Analytics Platform System (PDW).
@@ -54,9 +50,7 @@ Microsoft SQL Server Samples and Community
 
 Runtime-compiled Transact-SQL statements can expose applications to malicious attacks.
 
-You should parameterize your queries when using
-
-. For more information,
+You should parameterize your queries when using. For more information,
 
 SQL injection
 
@@ -98,15 +92,11 @@ that called
 
 batch can't reference variables declared in the
 
-batch that calls
-
-. Local cursors or variables in the
+batch that calls. Local cursors or variables in the
 
 batch aren't
 
-visible to the batch that calls
-
-. Changes in database context last only to the end
+visible to the batch that calls. Changes in database context last only to the end
 
 can be used instead of stored procedures to execute a Transact-SQL statement
 
@@ -124,9 +114,7 @@ supports the setting of parameter values separately from the Transact-SQL
 
 string, as shown in the following example.
 
-Output parameters can also be used with
-
-. The following example retrieves a job
+Output parameters can also be used with. The following example retrieves a job
 
 title from the
 

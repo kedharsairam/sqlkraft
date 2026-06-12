@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -73,9 +71,7 @@ For more information about these settings and other related MSDTC settings, see
 
 Configure SQL
 
-Server on Linux with the mssql-conf tool
-
-.
+Server on Linux with the mssql-conf tool.
 
 ﾉ
 

@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -39,9 +37,7 @@ want to find any errors in a schema that you didn't develop and whose quality ha
 
 verified. For more information, see the
 
-code analysis overview
-
-.
+code analysis overview.
 
 For this initial assessment, you want to find all the potential problems in the database code.
 
@@ -57,21 +53,15 @@ For more information on using an existing database to create a project, see
 
 Tutorial: start from
 
-an existing database
-
-.
+an existing database.
 
 To enable SQL code analysis in Visual Studio, right-click the project in
 
 and
 
-select
+select. In the
 
-. In the
-
-tab of the properties window, select the checkbox for
-
-.
+tab of the properties window, select the checkbox for.
 
 Save the project properties window and return to solution explorer.
 
@@ -79,9 +69,7 @@ To analyze the code in a database project with code analysis enabled on build, r
 
 project in
 
-and select
-
-.
+and select.
 
 The
 
@@ -89,14 +77,10 @@ window displays the results of the overall build process.
 
 The T-SQL code in your database project is analyzed during build. Errors and warnings from
 
-code analysis appear in the
-
-. If the
+code analysis appear in the. If the
 
 doesn't appear, open the View menu, and
 
-select
-
-. You can double-click a warning to navigate to the line of code that caused the
+select. You can double-click a warning to navigate to the line of code that caused the
 
 warning.

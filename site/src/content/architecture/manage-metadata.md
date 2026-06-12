@@ -29,8 +29,6 @@ Article
 
 04/15/2024
 
-Applies to:
-
 SQL Server
 
 This article is relevant in the following situations:
@@ -73,9 +71,7 @@ the
 
 database, you must re-create those jobs on the destination server instance. Similarly,
 
-the metadata for a server-level trigger is stored in
-
-.
+the metadata for a server-level trigger is stored in.
 
 When you move the database for an application to another server instance, you must re-create
 

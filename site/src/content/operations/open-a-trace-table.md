@@ -26,8 +26,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -38,9 +36,7 @@ This article describes how to open an existing trace table by using SQL Server P
 
 menu, point to
 
-, and then select
-
-.
+, and then select.
 
 2. Connect to the server instance that contains the trace table.
 
@@ -54,12 +50,10 @@ list.
 
 4. From the
 
-list, select the table name. Select
-
-.
+list, select the table name. Select.
 
 View and analyze traces with SQL Server Profiler
 
 Save traces and trace templates
 
-SQL Server Profiler
+Profiler

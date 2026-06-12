@@ -29,9 +29,7 @@ data type and the index isn't the result of a
 
 constraint. See the example in the short section titled
 
-Altering a Column Definition
-
-.
+Altering a Column Definition.
 
 Changes you specify in
 
@@ -77,9 +75,7 @@ and
 
 online index
 
-rebuilds
-
-.
+rebuilds.
 
 lock_request_priority_state
 
@@ -93,9 +89,7 @@ column with a
 
 default value is an online operation when the default value is a
 
-runtime constant
-
-. This default
+runtime constant. This default
 
 behavior means that the operation finishes almost instantaneously despite the number of rows in
 
@@ -142,7 +136,7 @@ ALTER TABLE
 ```
 
 ```sql
-ALTER TABLE...SWITCH
+ALTER TABLE.SWITCH
 ```
 
 ```sql
@@ -160,7 +154,7 @@ ALTER TABLE
 `DELETE`
 
 ```sql
-ALTER TABLE ... SWITCH PARTITION
+ALTER TABLE. SWITCH PARTITION
 ```
 
 ```sql

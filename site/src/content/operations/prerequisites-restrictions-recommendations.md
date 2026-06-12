@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 Prerequisites, restrictions, and
 
-Applies to:
-
 SQL Server
 
 This article describes considerations for deploying Always On availability groups, including
@@ -33,7 +31,7 @@ security considerations and required permissions, if any, are indicated.
 
 Depending on the SQL Server components and features you'll use with Always On availability
 
-groups, you might need to install additional .NET hotfixes identified in the following table. You
+groups, you might need to install additional.NET hotfixes identified in the following table. You
 
 can install the hotfixes in any order.
 
@@ -41,7 +39,7 @@ Reporting
 
 Services
 
-Hotfix for .NET 3.5 SP1 adds support to SQL Client for Always
+Hotfix for.NET 3.5 SP1 adds support to SQL Client for Always
 
 On features of Read-intent, readonly, and
 
@@ -51,9 +49,7 @@ Reporting Services report server.
 
 KB 2654347:
 
-Hotfix for
-
-.NET 3.5 SP1 to add
+Hotfix for.NET 3.5 SP1 to add
 
 support for Always On
 

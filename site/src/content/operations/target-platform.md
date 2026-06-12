@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -83,10 +81,8 @@ Serverless SQL Pool)
 
 SQL project file sample and syntax
 
-```cmd
-.dacpac
+```cmd.dacpac
 /p:AllowIncompatiblePlatform=true
-DSP
-.sqlproj
+DSP.sqlproj
 <PropertyGroup>
 ```

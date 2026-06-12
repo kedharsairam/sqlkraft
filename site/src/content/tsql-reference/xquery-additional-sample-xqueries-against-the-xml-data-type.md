@@ -15,8 +15,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 The topics in this section provide additional samples that show how to use XQuery queries

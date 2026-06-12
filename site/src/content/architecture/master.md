@@ -33,8 +33,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -51,9 +49,7 @@ configuration settings. In SQL Server, system objects are no longer stored in th
 
 database; instead, they are stored in the
 
-Resource database
-
-. Also,
+Resource database. Also,
 
 is the database that
 
@@ -91,9 +87,7 @@ For information about how to move the
 
 data and log files, see
 
-Move System Databases
-
-.
+Move System Databases.
 
 ）
 
@@ -101,11 +95,7 @@ Important
 
 For Azure SQL Database single databases and elastic pools, only master database and
 
-tempdb database apply. For more information, see
-
-. For a discussion of tempdb in the context of Azure SQL Database, see
-
-. For Azure SQL Managed Instance, all system databases
+tempdb database apply. For more information, see. For a discussion of tempdb in the context of Azure SQL Database, see. For Azure SQL Managed Instance, all system databases
 
 apply. For more information on Managed Instances in Azure SQL Database, see
 

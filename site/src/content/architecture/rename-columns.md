@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -67,9 +65,7 @@ sp_refreshsqlmodule
 
 or
 
-sp_refreshview
-
-.
+sp_refreshview.
 
 Requires
 
@@ -81,9 +77,7 @@ permission on the object.
 
 2. In
 
-, right-click the table in which you want to rename columns and choose
-
-.
+, right-click the table in which you want to rename columns and choose.
 
 3. Type a new column name.
 
@@ -91,9 +85,7 @@ permission on the object.
 
 , right-click the table to which you want to rename columns and
 
-choose
-
-.
+choose.
 
 ```sql
 SELECT

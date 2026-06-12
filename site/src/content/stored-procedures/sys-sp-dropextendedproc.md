@@ -2,7 +2,7 @@
 name: "sys.sp_dropextendedproc"
 title: "sp_dropextendedproc"
 category: "general"
-description: "Drops an extended stored procedure. Transact-SQL syntax conventions The name of the extended stored procedure to drop. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature."
+description: "Drops an extended stored procedure."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-Drops an extended stored procedure. Transact-SQL syntax conventions The name of the extended stored procedure to drop. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
+Drops an extended stored procedure.
 
 ## Syntax
 
@@ -79,4 +79,4 @@ GO
 sp_addextendedproc sp_dropextendedproc sp_helpextendedproc
 ```
 
-_(... and 18 more examples)_
+_(. and 18 more examples)_

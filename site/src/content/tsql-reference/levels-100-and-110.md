@@ -65,9 +65,7 @@ explicit values to be inserted.
 
 You can't insert explicit values for an identity column in a table when
 
-is set to
-
-.
+is set to.
 
 When the database
 
@@ -245,9 +243,7 @@ styles,
 
 see
 
-CAST and CONVERT
-
-.
+CAST and CONVERT.
 
 Under compatibility level 110, the default style for
 
@@ -299,9 +295,7 @@ operand of type
 
 if the other operand has type
 
-or
-
-.
+or.
 
 Attempting to apply the addition operator to an
 
@@ -323,9 +317,7 @@ Any columns in remote tables of type
 
 that are referenced in a
 
-partitioned view are mapped as
-
-.
+partitioned view are mapped as.
 
 Corresponding columns in local tables (in the
 
@@ -333,9 +325,7 @@ Any columns in remote tables of type
 
 that are referenced in a partitioned view are mapped
 
-as
-
-. Corresponding columns in local
+as. Corresponding columns in local
 
 tables (in the same ordinal position in the select list)
 

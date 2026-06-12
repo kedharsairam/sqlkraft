@@ -2,7 +2,7 @@
 name: "sys.sp_syscollector_disable_collector"
 title: "sp_syscollector_disable_collector"
 category: "general"
-description: "Disables the data collector. Because there's only one data collector per server, no parameters Transact-SQL syntax conventions Defaults to the data collector on the server. (with EXECUTE permission) fixed database role to execute this procedure. The following example disables the data collector."
+description: "Disables the data collector. Because there's only one data collector per server, no parameters Defaults to the data collector on the server. (with EXECUTE permission) fixed database role to execute this procedure. The following example disables the data collector."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -12,7 +12,7 @@ syntax: |
 
 ## Description
 
-Disables the data collector. Because there's only one data collector per server, no parameters Transact-SQL syntax conventions Defaults to the data collector on the server. (with EXECUTE permission) fixed database role to execute this procedure. The following example disables the data collector.
+Disables the data collector. Because there's only one data collector per server, no parameters Defaults to the data collector on the server. (with EXECUTE permission) fixed database role to execute this procedure. The following example disables the data collector.
 
 ## Syntax
 

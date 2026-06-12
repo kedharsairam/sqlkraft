@@ -13,21 +13,15 @@ operator fail if
 
 there's a
 
-on the nonpivot column output by
+on the nonpivot column output by. As a workaround, remove
 
-. As a workaround, remove
-
-the nonpivot column from the
-
-. Query results are the same, as this
+the nonpivot column from the. Query results are the same, as this
 
 clause is a duplicate.
 
 Column names are of type
 
-or
-
-. Because
+or. Because
 
 projects column
 
@@ -43,9 +37,7 @@ to a table in a warehouse in Fabric, cast it to a
 
 supported data type in Fabric Data
 
-Warehouse
-
-. For example:
+Warehouse. For example:
 
 The following code example produces a two-column table that has four rows.
 
@@ -53,9 +45,7 @@ Here's the result set.
 
 No products are defined with a value of
 
-for
-
-.
+for.
 
 #### Output
 
@@ -116,10 +106,10 @@ Production.Product
 GROUP
 BY
 DaysToManufacture;
-DaysToManufacture  AverageCost
+DaysToManufacture AverageCost
 ------------------ ------------
-0                  5.0885
-1                  223.88
-2                  359.1082
-4                  949.4105
+0 5.0885
+1 223.88
+2 359.1082
+4 949.4105
 ```

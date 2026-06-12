@@ -1,7 +1,7 @@
 ---
 name: "To Find Outdated Statistics"
 title: "To Find Outdated Statistics"
-description: "SQL Server diagnostic script for database operations."
+description: "diagnostic script for database operations."
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

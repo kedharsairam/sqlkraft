@@ -17,9 +17,7 @@ This query produces the following error:
 
 Output
 
-When you first declare a variable, its value is
-
-. To assign a value to a variable, use the
+When you first declare a variable, its value is. To assign a value to a variable, use the
 
 statement. This method is the preferred way to assign a value to a variable. You can also assign
 

@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 When you install the SQL Server Database Engine, the tools that are installed depend upon the
@@ -41,7 +39,7 @@ you need and helps you select the right tool for a job. All tools can be accesse
 
 menu. Some tools, such as
 
-SQL Server Management Studio (SSMS)
+Management Studio (SSMS)
 
 , aren't installed by default.
 

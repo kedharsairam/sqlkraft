@@ -62,7 +62,7 @@ syntax: |
 
 ## Description
 
-Creates triggers at the Subscriber used with all types of updatable subscriptions (immediate, queued, and immediate updating with queued updating as failover). This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions procedure should be used instead of generates a script that contains the
+Creates triggers at the Subscriber used with all types of updatable subscriptions (immediate, queued, and immediate updating with queued updating as failover). This stored procedure is executed at the Subscriber on the subscription database.
 
 ## Syntax
 
@@ -123,15 +123,11 @@ N
 
 ## Arguments
 
-Applies to:
-
 Creates triggers at the Subscriber used with all types of updatable subscriptions (immediate,
 
 queued, and immediate updating with queued updating as failover). This stored procedure is
 
 executed at the Subscriber on the subscription database.
-
-Transact-SQL syntax conventions
 
 procedure should be used instead of
 
@@ -139,4 +135,4 @@ generates a script that contains the
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . Updatable Subscriptions - For Transactional Replication sp_script_synctran_commands (Transact-SQL) System stored procedures (Transact-SQL) Related content
+Only members of the fixed server role or fixed database role can execute. Updatable Subscriptions - For Transactional Replication sp_script_synctran_commands (Transact-SQL) System stored procedures (Transact-SQL)

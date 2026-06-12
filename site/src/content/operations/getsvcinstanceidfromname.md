@@ -33,9 +33,7 @@ This article describes a native code API that is used by SQL Server and may also
 
 other Microsoft products. For a managed code method, see
 
-InstAPI.GetSvcInstanceIDFromName Method
-
-.
+InstAPI.GetSvcInstanceIDFromName Method.
 
 C
 
@@ -59,15 +57,13 @@ A pointer to a buffer to receive the instance ID.
 
 Boolean
 
-if the call succeeded; otherwise,
-
-.
+if the call succeeded; otherwise,.
 
 ```cmd
 true false
 GetSvcInstanceIDFromName(
-LPCWSTR     sInstanceName,
-SQL_SVCS    Service,
-PINST_ID    pInstanceID
+LPCWSTR sInstanceName,
+SQL_SVCS Service,
+PINST_ID pInstanceID
 );
 ```

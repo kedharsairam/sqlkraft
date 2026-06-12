@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 5527 16 No The primary FILESTREAM log file cannot be dropped because other FILESTREAM filegroups exist. 5528 16 No A database can have at most one primary FILESTREAM log filegroup and log
+Description 5527 16 No The primary FILESTREAM log file cannot be dropped because other FILESTREAM filegroups exist.
 
 ## Severity
 

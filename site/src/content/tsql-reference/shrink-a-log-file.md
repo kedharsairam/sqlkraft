@@ -17,9 +17,7 @@ Currently, LOB column types (
 
 compressed columnstore segments are not affected by
 
-and
-
-.
+and.
 
 The shrink database and shrink file commands can lead to concurrency issues, especially with
 
@@ -51,17 +49,13 @@ mode. For
 
 more information, see
 
-WAIT_AT_LOW_PRIORITY with shrink operations
-
-.
+WAIT_AT_LOW_PRIORITY with shrink operations.
 
 For more information on Sch-S and Sch-M locks, see
 
 Transaction locking and row versioning
 
-guide
-
-.
+guide.
 
 For log files, the Database Engine uses
 

@@ -10,7 +10,7 @@ syntax: "sp_scriptpublicationcustomprocs"
 
 ## Description
 
-procedures for all table articles in a publication in which the autogenerate custom procedure schema option is enabled. can be useful for setting up subscriptions for which the Transact-SQL syntax conventions Identified for informational purposes only. Not supported. Future compatibility is not
+procedures for all table articles in a publication in which the autogenerate custom procedure schema option is enabled.
 
 ## Syntax
 

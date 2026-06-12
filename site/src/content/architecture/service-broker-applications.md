@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -79,6 +77,4 @@ security credentials without changes to application code. For more information o
 
 configuring routes and remote service bindings, see
 
-Administration (Service Broker)
-
-.
+Administration (Service Broker).

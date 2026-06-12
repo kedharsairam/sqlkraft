@@ -57,11 +57,9 @@ The
 
 permission on the table or view is required.
 
-Azure SQL Database doesn't support filegroups other than
+doesn't support filegroups other than.
 
-.
-
-Azure SQL Database and Azure SQL Managed Instance don't support
+and Azure SQL Managed Instance don't support
 
 options.
 
@@ -72,7 +70,7 @@ Resumable index operations are available in SQL Server 2017 (14.x) and later ver
 Azure SQL Database, and Azure SQL Managed Instance.
 
 ```sql
-ALTER INDEX <index> ... REBUILD PARTITION ... WITH DATA_COMPRESSION = ...
+ALTER INDEX <index>. REBUILD PARTITION. WITH DATA_COMPRESSION =.
 ```
 
 ```sql
@@ -80,15 +78,15 @@ WITH DATA_COMPRESSION
 ```
 
 ```sql
-ALTER INDEX <index> ... REBUILD PARTITION = ALL
+ALTER INDEX <index>. REBUILD PARTITION = ALL
 ```
 
 ```sql
-ALTER INDEX <index> ... REBUILD PARTITION = ALL (WITH ...)
+ALTER INDEX <index>. REBUILD PARTITION = ALL (WITH.)
 ```
 
 ```sql
-DATA_COMPRESSION = ... ON PARTITIONS ( ...)
+DATA_COMPRESSION =. ON PARTITIONS (.)
 ```
 
 `PAGE`

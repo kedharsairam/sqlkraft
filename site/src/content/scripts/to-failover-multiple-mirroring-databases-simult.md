@@ -1,7 +1,7 @@
 ---
 name: "To Failover Multiple Mirroring Databases simult"
 title: "To Failover Multiple Mirroring Databases simult"
-description: "SQL Server diagnostic script for high-availability operations."
+description: "diagnostic script for high-availability operations."
 category: high-availability
 tags: ["database", "failover", "high-availability", "mirroring"]
 pubDate: 2025-03-15

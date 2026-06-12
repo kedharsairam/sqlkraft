@@ -12,17 +12,11 @@ pubDate: 2025-12-01
 
 09/29/2025
 
-Applies to:
-
 SQL Server
 
 Returns the typed value for each item specified by
 
-$arg
-
-.
-
-syntaxsql
+$arg.
 
 Sequence of items whose typed values are returned.
 
@@ -48,9 +42,7 @@ accordingly.
 
 If the attribute node is untyped, its typed value is equal to its string value that is returned
 
-as an instance of
-
-.
+as an instance of.
 
 ```sql
 xdt:untypedAtomic fn:data ($arg as item()*) as xdt:untyped

@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/04/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -33,9 +31,7 @@ to take advantage of features introduced in the current release, as described in
 
 What's new in
 
-Analysis Services
-
-.
+Analysis Services.
 
 You can upgrade each instance in-place, independently of other instances running on the same
 
@@ -61,9 +57,7 @@ Backup all databases and verify that each can be restored. To learn more, see
 
 Backup and
 
-restore Analysis Services databases
-
-.
+restore Analysis Services databases.
 
 Identify a subset of reports, spreadsheets, or dashboard snapshots to use later as the
 

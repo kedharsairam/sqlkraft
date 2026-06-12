@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -65,9 +63,7 @@ upon insertion.
 
 Set the row value for a date field to the current date.
 
-Set the row value for a field to a deterministic system function, for example,
-
-.
+Set the row value for a field to a deterministic system function, for example,.
 
 Before you begin, be aware of the following limitations and restrictions:
 

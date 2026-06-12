@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Returns the data type of a remote stored procedure call parameter.

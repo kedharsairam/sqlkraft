@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Use this dialog box to configure and to modify the properties of a secondary database in the
@@ -39,9 +37,7 @@ log shipping configuration.
 
 For an explanation of log shipping concepts, see
 
-About Log Shipping (SQL Server)
-
-.
+About Log Shipping (SQL Server).
 
 Displays the name of the instance of SQL Server currently configured to be a secondary server
 

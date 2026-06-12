@@ -16,9 +16,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 This tutorial helps you understand how to use the Azure Blob Storage for data files and
 
@@ -30,9 +28,7 @@ Pack 1 CU2, and enhanced in later versions. For an overview of the functionality
 
 using this feature, see
 
-SQL Server data files in Microsoft Azure
-
-.
+data files in Microsoft Azure.
 
 This tutorial shows you how to work with SQL Server data files in Azure Blob Storage in
 
@@ -76,39 +72,27 @@ permissions.
 
 Get a free
 
-Azure Account
-
-.
+Azure Account.
 
 Create an
 
-Azure storage account
-
-.
+Azure storage account.
 
 Install
 
-SQL Server 2017 Developer Edition
-
-.
+2017 Developer Edition.
 
 Provision an
 
-Azure VM running SQL Server
-
-.
+Azure VM running SQL Server.
 
 Install
 
-SQL Server Management Studio
-
-.
+Management Studio.
 
 Download
 
-AdventureWorks sample databases
-
-.
+AdventureWorks sample databases.
 
 Assign the user account to the role of
 

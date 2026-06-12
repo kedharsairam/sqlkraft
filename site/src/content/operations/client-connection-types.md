@@ -27,8 +27,6 @@ Article
 
 11/25/2024
 
-Applies to:
-
 SQL Server
 
 In an Always On availability group, you can configure one or more availability replicas to allow
@@ -53,9 +51,7 @@ connection requests of read-intent applications to a readable secondary replica.
 
 information, see
 
-Configure Read-Only Routing for an Availability Group (SQL Server)
-
-.
+Configure Read-Only Routing for an Availability Group (SQL Server).
 
 During a failover, a secondary replica transitions to the primary role and the former primary
 
@@ -85,6 +81,4 @@ Note
 
 For information about the availability group listener, which handles client connection
 
-requests, see
-
-.
+requests, see.

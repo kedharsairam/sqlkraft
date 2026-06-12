@@ -2,7 +2,7 @@
 name: "SET Statements"
 title: "SET Statements"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -10,8 +10,6 @@ pubDate: 2026-05-29
 Category
 
 Statements
-
-Applies to:
 
 SQL Server
 
@@ -35,9 +33,7 @@ For information about setting local variables with the SET statement, see
 
 SET @local_variable
 
-(Transact-SQL)
-
-.
+(Transact-SQL).
 
 Date and time statements
 

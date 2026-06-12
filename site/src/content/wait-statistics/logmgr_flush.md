@@ -15,11 +15,11 @@ Occurs when the log manager is flushing dirty pages to make log buffer space ava
 
 ## Key Metrics
 
-| Metric    | Description    |
+| Metric | Description |
 | --------- | -------------- |
 | Wait Type | `LOGMGR_FLUSH` |
-| Category  | Io             |
-| Severity  | MEDIUM         |
+| Category | Io |
+| Severity | MEDIUM |
 
 ## Troubleshooting
 
@@ -29,10 +29,10 @@ Use the following query to identify the top queries contributing to `LOGMGR_FLUS
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'LOGMGR_FLUSH'
 ORDER BY wait_time_ms DESC;

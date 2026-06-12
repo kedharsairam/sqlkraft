@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -95,9 +93,7 @@ property for period columns.
 
 You can't use direct
 
-for the following schema changes. For these types of changes, set
-
-.
+for the following schema changes. For these types of changes, set.
 
 Adding a computed column
 

@@ -12,8 +12,6 @@ pubDate: 2025-12-01
 
 09/29/2025
 
-Applies to:
-
 SQL Server
 
 In XQuery, you can use the direct
@@ -32,21 +30,15 @@ element. The constructed element has three child elements
 
 A text node.
 
-Two element nodes, and
+Two element nodes, and.
 
-.
-
-The element has one text node child whose value is
-
-.
+The element has one text node child whose value is.
 
 The element has three element node children,
 
 ,
 
-, and
-
-. Each of these nodes has one text node child and have the values
+, and. Each of these nodes has one text node child and have the values
 
 ,
 

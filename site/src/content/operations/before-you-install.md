@@ -27,8 +27,6 @@ Article
 
 09/28/2023
 
-Applies to:
-
 SQL Server
 
 Before you install a SQL Server failover cluster, you must select the hardware and the operating
@@ -87,13 +85,11 @@ Analysis Services
 
 Review the release notes for
 
-SQL Server 2019
+2019
 
 and
 
-SQL Server 2022
-
-.
+2022.
 
 Install prerequisite software. Before running Setup to install or upgrade, install the following
 

@@ -24,13 +24,11 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 This article describes how to remove a log shipping secondary database in SQL Server by using
 
-SQL Server Management Studio or Transact-SQL.
+Management Studio or Transact-SQL.
 
 1. Connect to the instance of SQL Server that is currently the log shipping primary server
 
@@ -38,15 +36,11 @@ and expand that instance.
 
 2. Expand
 
-, right-click the log shipping primary database, and then select
-
-.
+, right-click the log shipping primary database, and then select.
 
 3. Under
 
-, select
-
-.
+, select.
 
 4. Under
 
@@ -54,9 +48,7 @@ and expand that instance.
 
 remove.
 
-5. Select
-
-.
+5. Select.
 
 6. Select
 

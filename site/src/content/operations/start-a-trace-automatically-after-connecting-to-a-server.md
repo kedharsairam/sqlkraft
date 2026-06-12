@@ -22,8 +22,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -34,9 +32,7 @@ Server by using SQL Server Profiler.
 
 1. On the
 
-menu, select
-
-.
+menu, select.
 
 2. Select the
 
@@ -52,4 +48,4 @@ box fails to appear and the trace begins instead. To edit trace properties, you 
 
 this setting off.
 
-SQL Server Profiler
+Profiler

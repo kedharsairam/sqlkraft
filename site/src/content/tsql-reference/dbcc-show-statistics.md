@@ -2,12 +2,10 @@
 name: "DBCC SHOW_STATISTICS"
 title: "DBCC SHOW_STATISTICS"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -57,9 +55,7 @@ and
 
 Cardinality Estimation (SQL
 
-Server)
-
-.
+Server).
 
 displays the header, histogram, and density vector based on data stored
 
@@ -103,9 +99,7 @@ This syntax is not supported by serverless SQL pool in Azure Synapse Analytics.
 
 For more information on statistics in Microsoft Fabric Data Warehouse, see
 
-Statistics
-
-.
+Statistics.
 
 ```sql
 DBCC SHOW_STATISTICS

@@ -20,9 +20,7 @@ For more information about how to create filtered indexes and how to define the 
 
 predicate expression, see
 
-Create filtered indexes
-
-.
+Create filtered indexes.
 
 When a table has heterogeneous data rows, you can create a filtered index for one or more
 

@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 10/24/2025
 
-Applies to:
-
 SQL Server
 
 Always On basic availability groups provide a high availability solution for SQL Server 2016
@@ -45,9 +43,7 @@ commit mode. For more information about availability modes, see
 
 Differences between
 
-availability modes for an Always On availability group
-
-. The secondary replica remains inactive
+availability modes for an Always On availability group. The secondary replica remains inactive
 
 unless there's a need to fail over. This failover reverses the primary and secondary role
 
@@ -55,15 +51,13 @@ assignments, causing the secondary replica to become the primary active database
 
 information on failover, see
 
-Failover and Failover Modes
-
-. Basic availability groups can operate
+Failover and Failover Modes. Basic availability groups can operate
 
 in a hybrid environment that spans on-premises and Microsoft Azure.
 
 Basic availability groups use a subset of features compared to advanced availability groups on
 
-SQL Server 2016 (13.x) Enterprise edition. Basic availability groups include the following
+2016 (13.x) Enterprise edition. Basic availability groups include the following
 
 limitations:
 

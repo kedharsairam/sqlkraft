@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -57,27 +55,19 @@ from the shortcut menu. For more information,
 
 see
 
-Table Properties - SSMS
-
-.
+Table Properties - SSMS.
 
 You can script out existing objects from the Object Explorer in SSMS. For more information, see
 
-Generate Scripts
-
-.
+Generate Scripts.
 
 1. In
 
 , connect to an instance of Database Engine.
 
-2. On the Standard bar, select
+2. On the Standard bar, select.
 
-.
-
-3. Copy and paste the following example into the query window and select
-
-. The
+3. Copy and paste the following example into the query window and select. The
 
 example executes the system stored procedure
 
@@ -85,8 +75,6 @@ to return all column information
 
 for the specified object. For more information, see
 
-sp_help
-
-.
+sp_help.
 
 `sp_help`

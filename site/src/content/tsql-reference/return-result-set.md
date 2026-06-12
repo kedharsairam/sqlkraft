@@ -21,9 +21,7 @@ compatible ANN indexes, a warning is raised and the kNN (k-nearest neighbor) alg
 
 used.
 
-The maximum number of similar vectors that must be returned. It must be a positive
-
-.
+The maximum number of similar vectors that must be returned. It must be a positive.
 
 This parameter is not supported with vector indexes created using the latest version.
 

@@ -27,8 +27,6 @@ Article
 
 04/02/2024
 
-Applies to:
-
 SQL Server
 
 All critical errors and warning events for the SQL Server Resource DLL are written to the
@@ -53,7 +51,7 @@ File name, location and format
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 ,
 
@@ -89,9 +87,7 @@ function can be used to read the files that are created by Extended Events and d
 
 a result-set. One event, in XML format, is returned per row. For more information, see
 
-sys.fn_xe_file_target_read_file (Transact-SQL)
-
-.
+sys.fn_xe_file_target_read_file (Transact-SQL).
 
 ```cmd
 MACHINE_SQLINSTANCE_SQLDIAG_0_xxxxxxxxxxxxxxxxx.xel

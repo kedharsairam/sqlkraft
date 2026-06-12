@@ -29,7 +29,7 @@ OUTPUT
 
 ## Permissions
 
-06/23/2025 Applies to: SQL Server Enables statistics collection for natively compiled stored procedures for the instance. To enable statistics collection at the query level for natively compiled stored procedures, see sys.sp_xtp_control_query_exec_stats . syntaxsql Determines whether procedure-level statistics collection is on ( ) or off ( ). @new_collection_value is . @new_collection_value is set to zero when SQL Server or the database starts. Returns the current status. @old_collection_value is . for success. Nonzero for failure.
+06/23/2025 To enable statistics collection at the query level for natively compiled stored procedures, see sys.sp_xtp_control_query_exec_stats. syntaxsql Determines whether procedure-level statistics collection is on ( ) or off ( ). @new_collection_value is. @new_collection_value is set to zero when SQL Server or the database starts. Returns the current status. @old_collection_value is. for success. Nonzero for failure.
 
 ## Examples
 

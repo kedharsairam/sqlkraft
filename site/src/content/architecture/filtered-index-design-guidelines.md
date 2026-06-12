@@ -28,9 +28,7 @@ A unique nonclustered index can contain included nonkey columns. For more
 
 information, see
 
-Use included columns in nonclustered indexes
-
-.
+Use included columns in nonclustered indexes.
 
 Unlike a
 

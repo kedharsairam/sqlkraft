@@ -35,8 +35,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -51,7 +49,7 @@ within server scope, such as EXECUTE AS <
 
 login
 
-> .
+>.
 
 Description
 
@@ -103,7 +101,7 @@ statement is running.
 
 Yes
 
-SQL Server user name of the client.
+user name of the client.
 
 40
 

@@ -31,8 +31,6 @@ Article
 
 10/17/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database

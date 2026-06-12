@@ -43,7 +43,7 @@ SQL Database Projects extension
 
 Database DevOps in SQL Server Management Studio
 
-SQL Server Data Tools
+Data Tools
 
 Command line tools
 
@@ -55,9 +55,7 @@ build and publish process.
 
 SQL Database Projects extension
 
-is an extension for
-
-. This extension
+is an extension for. This extension
 
 provides a graphical interface for SQL projects, a T-SQL editor, and a build and publish process.
 
@@ -65,13 +63,13 @@ Database DevOps
 
 in
 
-SQL Server Management Studio (SSMS)
+Management Studio (SSMS)
 
 provides a graphical interface for
 
 SQL projects, a T-SQL editor, and a build and publish process.
 
-SQL Server Data Tools
+Data Tools
 
 (SSDT) is a
 

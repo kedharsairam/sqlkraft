@@ -28,15 +28,11 @@ operations spill to disk. A hash operation that spills is supported by a Workfil
 
 a sort operation that spills is supported by a
 
-Worktable
-
-.
+Worktable.
 
 A spill that occurs during a Sort operation is known as a
 
-Sort Warnings Event Class
-
-. Sort
+Sort Warnings Event Class. Sort
 
 warnings indicate that sort operations don't fit into memory. This doesn't include sort
 
@@ -48,9 +44,7 @@ statement).
 
 A spill that occurs during a hash operation is known as a
 
-Hash Warning Event Class
-
-. These
+Hash Warning Event Class. These
 
 occur when a hash recursion or cessation of hashing (hash bailout) has occurred during a
 
@@ -94,9 +88,7 @@ operations still don't fit into memory, then the operations spill to disk.
 
 For more information on execution modes, see the
 
-Query Processing Architecture Guide
-
-.
+Query Processing Architecture Guide.
 
 The primary purpose of a SQL Server database is to store and retrieve data, so intensive disk
 

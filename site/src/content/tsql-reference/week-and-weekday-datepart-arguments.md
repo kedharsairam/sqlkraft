@@ -23,9 +23,7 @@ is a string literal of some formats. SET DATEFORMAT doesn't change the return va
 
 This table lists all datepart
 
-## arguments, with corresponding return values, for the statement
-
-. The date argument has a data type. The last two positions of the datepart
+## arguments, with corresponding return values, for the statement. The date argument has a data type. The last two positions of the datepart
 
 return value are always and this value has a scale of 9:
 

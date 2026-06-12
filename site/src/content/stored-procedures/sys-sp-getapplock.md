@@ -2,7 +2,7 @@
 name: "sys.sp_getapplock"
 title: "sp_getapplock"
 category: "general"
-description: "SQL database in Microsoft Fabric Places a lock on an application resource. Transact-SQL syntax conventions A string specifying a name that identifies the lock resource. If a resource string is longer than The application must ensure that the resource name is unique. The specified name is hashed internally into a value that can be stored in the SQL Server lock manager."
+description: "Places a lock on an application resource. A string specifying a name that identifies the lock resource. If a resource string is longer than The application must ensure that the resource name is unique. The specified name is hashed internally into a value that can be stored in the SQL Server lock manager."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -48,7 +48,7 @@ syntax: |
 
 ## Description
 
-SQL database in Microsoft Fabric Places a lock on an application resource. Transact-SQL syntax conventions A string specifying a name that identifies the lock resource. . If a resource string is longer than The application must ensure that the resource name is unique. The specified name is hashed internally into a value that can be stored in the SQL Server lock manager. is binary-compared, and thus is case-sensitive regardless of the collation settings of
+Places a lock on an application resource. A string specifying a name that identifies the lock resource. If a resource string is longer than The application must ensure that the resource name is unique. The specified name is hashed internally into a value that can be stored in the SQL Server lock manager.
 
 ## Syntax
 
@@ -201,4 +201,4 @@ Resource
 GO
 ```
 
-_(... and 2 more examples)_
+_(. and 2 more examples)_

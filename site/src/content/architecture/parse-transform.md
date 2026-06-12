@@ -23,9 +23,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -33,7 +31,7 @@ Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics (serverless SQL pool only)
+(serverless SQL pool only)
 
 analytics endpoint in Microsoft Fabric
 
@@ -55,9 +53,7 @@ returned data or insert it into a SQL Server table. For more information about w
 
 JSON data in the SQL Server Database Engine, see
 
-JSON data in SQL Server
-
-.
+JSON data in SQL Server.
 
 The
 

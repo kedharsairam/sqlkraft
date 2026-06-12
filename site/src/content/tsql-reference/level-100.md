@@ -9,13 +9,9 @@ pubDate: 2026-05-29
 
 same ordinal position in the select list) must be
 
-of type
+of type.
 
-.
-
-must be of type
-
-.
+must be of type.
 
 After upgrading to 110, the distributed partitioned
 
@@ -91,17 +87,11 @@ function. For more
 
 information, see
 
-SOUNDEX
+SOUNDEX.
 
-.
+is available without an.
 
-is available without an
-
-.
-
-is available with an optional
-
-. For more information, see
+is available with an optional. For more information, see
 
 STRING_AGG
 
@@ -417,9 +407,7 @@ type. For more information, see
 
 Wildcard
 
-components and content validation
-
-.
+components and content validation.
 
 Low
 
@@ -451,9 +439,7 @@ and
 
 attributes for consistency with
 
-, even if
-
-.
+, even if.
 
 The special attributes
 
@@ -469,9 +455,7 @@ For example, executing the query
 
 ## returns all attributes including
 
-and
-
-. To exclude these types in the
+and. To exclude these types in the
 
 query, replace
 
@@ -481,9 +465,7 @@ insert xsi namespace uri
 
 and not
 
-or
-
-.
+or.
 
 Low
 

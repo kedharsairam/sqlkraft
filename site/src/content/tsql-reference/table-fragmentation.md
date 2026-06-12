@@ -39,13 +39,9 @@ data types, such as
 
 ,
 
-, and
+, and.
 
-.
-
-Spatial indexes aren't supported by
-
-.
+Spatial indexes aren't supported by.
 
 All new features are fully supported by the
 
@@ -75,9 +71,7 @@ Re-creating a clustered index reorganizes the data, and causes full data pages. 
 
 of fullness can be configured by using the
 
-option in
-
-. The
+option in. The
 
 drawbacks of this method are that the index is offline during the drop or re-create cycle,
 
@@ -137,9 +131,7 @@ to rebuild the index. For more information, see
 
 ALTER
 
-INDEX (Transact-SQL)
-
-.
+INDEX (Transact-SQL).
 
 The
 
@@ -169,15 +161,11 @@ The fragmentation level of an index can be determined in the following ways:
 
 By comparing the values of
 
-and
-
-.
+and.
 
 The value of
 
-should be as close as possible to that of
-
-.
+should be as close as possible to that of.
 
 This ratio is calculated as the
 
@@ -258,7 +246,7 @@ CREATE INDEX
 ```
 
 ```sql
-ALTER INDEX...REORGANIZE
+ALTER INDEX.REORGANIZE
 ```
 
 ```sql

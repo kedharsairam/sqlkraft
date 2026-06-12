@@ -19,11 +19,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Express LocalDB header and
+Express LocalDB header and
 
 07/14/2025
-
-Applies to:
 
 SQL Server
 
@@ -47,7 +45,7 @@ LocalDB versions are maintained and patched independently. This means that the u
 
 specify which LocalDB baseline release (that is, major SQL Server version) they're using. The
 
-version is specified in the standard version format defined by the .NET Framework
+version is specified in the standard version format defined by the.NET Framework
 
 class:
 
@@ -67,9 +65,7 @@ user leaves them out. This means that if the user specifies only
 
 as the LocalDB version
 
-number, it's treated as if the user specified
-
-.
+number, it's treated as if the user specified.
 
 The version for the LocalDB installation is defined in the
 

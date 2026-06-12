@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 You can suspend an availability database in Always On availability groups by using SQL Server

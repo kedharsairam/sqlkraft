@@ -29,15 +29,13 @@ Article
 
 05/02/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
 
 This article helps you troubleshoot Active Directory Domain Services authentication issues with
 
-SQL Server on Linux and containers. It includes prerequisite checks and tips for a successful
+on Linux and containers. It includes prerequisite checks and tips for a successful
 
 Active Directory configuration, and a list of common errors and troubleshooting steps.
 

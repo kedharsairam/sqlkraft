@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -61,9 +59,7 @@ The IP address creation for the AG or FCI is done on the VLAN. In the following 
 
 VLAN has a subnet of
 
-, so the IP address created for the AG or FCI is
-
-. Nothing additional needs to be configured, since there's a single IP address
+, so the IP address created for the AG or FCI is. Nothing additional needs to be configured, since there's a single IP address
 
 assigned to the AG or FCI.
 

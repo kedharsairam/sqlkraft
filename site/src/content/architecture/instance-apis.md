@@ -19,11 +19,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Express LocalDB instance APIs
+Express LocalDB instance APIs
 
 07/14/2025
-
-Applies to:
 
 SQL Server
 

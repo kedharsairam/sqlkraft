@@ -110,17 +110,13 @@ For example, assume that a session performs these operations:
 
 Begins a transaction.
 
-Updates
-
-. This generates exclusive row locks in
+Updates. This generates exclusive row locks in
 
 that are held until the
 
 transaction completes.
 
-Updates
-
-. This generates exclusive row locks in
+Updates. This generates exclusive row locks in
 
 that are held until the
 
@@ -130,15 +126,11 @@ Performs a
 
 that joins
 
-with
-
-. The query execution plan calls for the
+with. The query execution plan calls for the
 
 rows to be retrieved from
 
-before the rows are retrieved from
-
-.
+before the rows are retrieved from.
 
 The
 
@@ -146,9 +138,7 @@ statement triggers lock escalation while it's retrieving rows from
 
 and
 
-before it has accessed
-
-.
+before it has accessed.
 
 If lock escalation succeeds, only the locks held by the session on
 

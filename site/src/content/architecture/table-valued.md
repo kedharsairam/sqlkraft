@@ -27,13 +27,11 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 A table-valued function is a user-defined function that returns a table.
 
-SQL Server extends the functionality of table-valued functions by allowing you to define a
+extends the functionality of table-valued functions by allowing you to define a
 
 table-valued function in any managed language. Data is returned from a table-valued function
 
@@ -81,15 +79,13 @@ they don't have to be materialized in memory as a whole. For example, a managed 
 
 valued function could be used to parse a text file and return each line as a row.
 
-Implement table-valued functions as methods on a class in a .NET Framework assembly. Your
+Implement table-valued functions as methods on a class in a.NET Framework assembly. Your
 
 table-valued function code must implement the
 
 interface. The
 
-interface is defined in the .NET Framework. Types representing arrays and collections in the
-
-.NET Framework already implement the
+interface is defined in the.NET Framework. Types representing arrays and collections in the.NET Framework already implement the
 
 interface. This makes it easy for writing
 

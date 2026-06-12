@@ -1,12 +1,10 @@
 ---
 title: "Batch mode execution"
 topic: "io-fundamentals"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 

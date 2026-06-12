@@ -27,8 +27,6 @@ Article
 
 03/27/2025
 
-Applies to:
-
 SQL Server
 
 The performance aspect of Always On Availability Groups is crucial to maintaining the service-

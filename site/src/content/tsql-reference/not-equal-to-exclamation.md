@@ -2,12 +2,10 @@
 name: "Not equal to - exclamation"
 title: "Not equal to - exclamation"
 category: "operators"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -44,11 +42,3 @@ comparison operator.
 Expressions (Transact-SQL)
 
 Operators (Transact-SQL)
-
-Last updated on 05/08/2026
-
-Related content
-
-`NULL`
-
-`NULL`

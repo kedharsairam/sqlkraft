@@ -29,8 +29,6 @@ Article
 
 10/03/2023
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -55,9 +53,7 @@ an availability replica for the availability group. For more information, see
 
 Enable and
 
-Configure FILESTREAM
-
-.
+Configure FILESTREAM.
 
 On a Windows Server 2012-based failover cluster, you should apply the hotfix discussed
 
@@ -71,9 +67,7 @@ to access file share using
 
 Virtual Network Name (VNN). This hotfix is also available at
 
-Microsoft Update Catalog
-
-.
+Microsoft Update Catalog.
 
 When you enable FILESTREAM on an instance of SQL Server, an instance-level share is created
 

@@ -51,11 +51,11 @@ DECRYPTION BY PASSWORD='[password]');
 --Restore User Database with NORECOVERY in all Replicas
 USE [master]
 RESTORE DATABASE [databasename]
-FROM  DISK = N'path\filename.bak'
-WITH  FILE = 1,
+FROM DISK = N'path\filename.bak'
+WITH FILE = 1,
 MOVE N'logicalfilename' TO N'path\filename.mdf',
 MOVE N'logicalfinename_log' TO N'path\filename_log.ldf',
-NOUNLOAD,  STATS = 5
+NOUNLOAD, STATS = 5
 GO
 
 --Create Availability Group on Primary Replica

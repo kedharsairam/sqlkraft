@@ -29,9 +29,7 @@ across multiple principals. When called, the REVERT statement switches the conte
 
 or user in the next level up in the context stack. For a demonstration of this behavior, see
 
-Example A
-
-.
+Example A.
 
 The user or login name specified in EXECUTE AS <context_specification> must exist as a
 
@@ -57,9 +55,7 @@ parameter for is currently documented as
 
 which is
 
-the correct maximum length. However the current implementation returns
-
-.
+the correct maximum length. However the current implementation returns.
 
 Applications should reserve
 

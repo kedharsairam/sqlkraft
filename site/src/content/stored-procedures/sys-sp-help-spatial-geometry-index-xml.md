@@ -2,7 +2,7 @@
 name: "sys.sp_help_spatial_geometry_index_xml"
 title: "sp_help_spatial_geometry_index_xml"
 category: "general"
-description: "Returns the names and values for a specified set of properties about a You can choose to return a core set of properties or all properties of the index. Results are returned in an XML fragment that displays the name and value of the properties Transact-SQL syntax conventions Spatial index stored procedures - arguments and properties User must be a member of the permission on the server and Propert"
+description: "Returns the names and values for a specified set of properties about a You can choose to return a core set of properties or all properties of the index. Results are returned in an XML fragment that displays the name and value of the properties Spatial index stored procedures - arguments and properties User must be a member of the permission on the server and Propert"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -24,7 +24,7 @@ syntax: |
 
 ## Description
 
-Returns the names and values for a specified set of properties about a You can choose to return a core set of properties or all properties of the index. Results are returned in an XML fragment that displays the name and value of the properties Transact-SQL syntax conventions Spatial index stored procedures - arguments and properties User must be a member of the permission on the server and Properties containing values aren't included in the XML return set.
+Returns the names and values for a specified set of properties about a You can choose to return a core set of properties or all properties of the index. Results are returned in an XML fragment that displays the name and value of the properties Spatial index stored procedures - arguments and properties User must be a member of the permission on the server and Properties containing values aren't included in the XML return set.
 
 ## Syntax
 
@@ -47,8 +47,6 @@ OUTPUT
 
 ## Remarks
 
-Applies to:
-
 Returns the names and values for a specified set of properties about a
 
 spatial index.
@@ -56,8 +54,6 @@ spatial index.
 You can choose to return a core set of properties or all properties of the index.
 
 Results are returned in an XML fragment that displays the name and value of the properties
-
-Transact-SQL syntax conventions
 
 Spatial index stored procedures - arguments and properties
 

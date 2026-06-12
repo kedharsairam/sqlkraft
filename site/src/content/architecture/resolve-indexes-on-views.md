@@ -18,9 +18,7 @@ The join order in the query plan is
 
 ,
 
-,
-
-.
+,.
 
 As with any index, SQL Server chooses to use an indexed view in its query plan only if the
 

@@ -10,7 +10,7 @@ syntax: "is_honor_broker_priority_on"
 
 ## Description
 
-When a symmetric key is created, the symmetric key must be encrypted by using at least one of the following options: The key can have more than one encryption of each type. In other words, a single symmetric key can be encrypted by using multiple certificates, passwords, symmetric keys, and asymmetric keys at the same time. To protect the key material of the symmetric key, SQL Server and Azure SQL store the key material in encrypted form. Historically, this encryption used PKCS#1 v1.5 padding mode; starting with database compatibility level 170, the encryption uses OAEP-256 padding mode for encryption by certificate or asymmetric key. In The optional password can be used to encrypt the symmetric key before distributing the key to multiple users. Temporary keys are owned by the user that creates them. Temporary keys are only valid for the
+When a symmetric key is created, the symmetric key must be encrypted by using at least one of the following options: The key can have more than one encryption of each type. In other words, a single symmetric key can be encrypted by using multiple certificates, passwords, symmetric keys, and asymmetric keys at the same time. To protect the key material of the symmetric key, SQL Server and Azure SQL store the key material in encrypted form. Historically, this encryption used PKCS#1 v1.5 padding mode; starting with database compatibility level 170, the encryption uses OAEP-256 padding mode for encryption by certificate or asymmetric key. In The optional password can be used to encrypt the symmetric key before distributing the key to multiple users. Temporary keys are owned by the user that creates them.
 
 ## Syntax
 

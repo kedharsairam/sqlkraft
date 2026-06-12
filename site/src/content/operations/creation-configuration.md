@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 02/05/2024
 
-Applies to:
-
 SQL Server
 
 The topics in this section explain how to deploy a Always On availability groups

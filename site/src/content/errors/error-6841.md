@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 6841 16 No FOR XML could not serialize the data for node '%.\*ls' because it contains a character (0x%04X) which is not allowed in XML. To retrieve this data using FOR XML, convert it to bi
+Description 6841 16 No FOR XML could not serialize the data for node '%.\*ls' because it contains a character (0x%04X) which is not allowed in XML.
 
 ## Severity
 

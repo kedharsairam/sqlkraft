@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -39,7 +37,7 @@ Backing up the transaction log file on the primary SQL Server instance
 
 Copying the transaction log backup file across the network to one or more secondary
 
-SQL Server instances
+instances
 
 Restoring the transaction log backup file on the secondary SQL Server instances
 

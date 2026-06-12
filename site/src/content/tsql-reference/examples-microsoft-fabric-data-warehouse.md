@@ -21,9 +21,7 @@ clause is applied.
 
 For more information, see
 
-FOR TIMESTAMP query hint
-
-.
+FOR TIMESTAMP query hint.
 
 Use the
 
@@ -43,9 +41,7 @@ clause. For more
 
 information, see
 
-Query labels in Fabric Data Warehouse
-
-.
+Query labels in Fabric Data Warehouse.
 
 Query hints (Transact-SQL)
 
@@ -56,77 +52,3 @@ UPDATE (Transact-SQL)
 MERGE (Transact-SQL)
 
 DELETE (Transact-SQL)
-
-Last updated on 11/18/2025
-
-Related content
-
-`WHERE`
-
-`WHERE`
-
-`TIMESTAMP`
-
-`OPTION`
-
-`SELECT`
-
-`OPTION`
-
-```sql
-SELECT
-ID
-FROM
-External_Table_AS A
-WHERE
-ID
-< 1000000
-OPTION (
-FORCE
-EXTERNALPUSHDOWN);
-SELECT
-ID
-FROM
-External_Table_AS A
-WHERE
-ID
-< 10
-OPTION (
-DISABLE
-EXTERNALPUSHDOWN);
-```
-
-```sql
-SELECT
-OrderDateKey,
-SUM (SalesAmount)
-AS
-TotalSales
-FROM
-FactInternetSales
-GROUP
-BY
-OrderDateKey
-ORDER
-BY
-OrderDateKey
-OPTION (
-FOR
-TIMESTAMP
-AS
-OF
-'2024-03-13T19:39:35.28'
-);
---March 13, 2024 at 7:39:35.28
-PM UTC
-```
-
-```sql
-SELECT
-*
-FROM
-FactResellerSales
-OPTION (LABEL =
-'q17'
-);
-```

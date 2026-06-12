@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -55,9 +53,7 @@ JSON string.
 
 For all JSON functions, review
 
-JSON functions (Transact-SQL)
-
-.
+JSON functions (Transact-SQL).
 
 The code samples in this article use the
 

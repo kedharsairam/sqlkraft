@@ -2,7 +2,7 @@
 name: "Transaction isolation levels"
 title: "Transaction isolation levels"
 category: "transactions"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "transactions"]
 pubDate: 2026-05-29
 ---
@@ -15,13 +15,11 @@ pubDate: 2026-05-29
 
 07/16/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server doesn't guarantee that lock hints will be honored in queries that access metadata
+doesn't guarantee that lock hints will be honored in queries that access metadata
 
 through catalog views, compatibility views, information schema views, metadata-emitting built-
 
@@ -37,9 +35,7 @@ and
 
 within the transaction, an attempt is made to access metadata by using catalog views or
 
-metadata-emitting built-in functions, those queries will run until they are completed as
-
-. However, under snapshot isolation, access to metadata might fail because of
+metadata-emitting built-in functions, those queries will run until they are completed as. However, under snapshot isolation, access to metadata might fail because of
 
 concurrent DDL operations. This is because metadata isn't versioned. Therefore, accessing the
 
@@ -55,15 +51,13 @@ Metadata-emitting built-in functions
 
 group of stored procedures
 
-SQL Server Native Client catalog procedures
+Native Client catalog procedures
 
 Dynamic management views and functions
 
 For more information about isolation levels, see
 
-SET TRANSACTION ISOLATION LEVEL
-
-.
+SET TRANSACTION ISOLATION LEVEL.
 
 The following table provides a summary of metadata access under various isolation levels.
 

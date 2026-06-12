@@ -16,8 +16,6 @@ Article
 
 08/10/2023
 
-Applies to:
-
 SQL Server
 
 This function converts each character in

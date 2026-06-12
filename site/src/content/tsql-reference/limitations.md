@@ -25,9 +25,7 @@ If the database is involved in log shipping, remove log shipping before dropping
 
 For more information, see
 
-About log shipping (SQL Server)
-
-.
+About log shipping (SQL Server).
 
 System databases
 
@@ -61,9 +59,7 @@ and
 
 in the same batch, to avoid another connection
 
-claiming single user session allowed. For more information, see
-
-.
+claiming single user session allowed. For more information, see.
 
 SQL Server
 
@@ -86,7 +82,7 @@ DROP DATABASE
 ```
 
 ```sql
-SQL Server has encountered %d occurrence(s) of cachestore flush for the '%s'
+has encountered %d occurrence(s) of cachestore flush for the '%s'
 cachestore (part of plan cache) due to some database maintenance or reconfigure operations.
 ```
 

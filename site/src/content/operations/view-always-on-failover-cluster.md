@@ -27,15 +27,13 @@ Article
 
 07/30/2024
 
-Applies to:
-
 SQL Server
 
 Azure portal provides information about SQL Server failover cluster instances when they are
 
 enabled by Azure Arc. The Azure SQL extension agent must be installed on all the nodes of the
 
-SQL Server failover cluster instance. The agents project the installation into Azure as a SQL
+failover cluster instance. The agents project the installation into Azure as a SQL
 
 Server enabled by Azure Arc resource.
 
@@ -43,9 +41,7 @@ For details about failover cluster instances, review
 
 Always On failover cluster instances (SQL
 
-Server)
-
-.
+Server).
 
 You can see all the resources like network name, databases and all the nodes in the
 
@@ -59,23 +55,17 @@ enabled by Azure Arc.
 
 To list only the failover cluster instances:
 
-1. Select
-
-.
+1. Select.
 
 2. Set
 
 to
 
-SQL Server instance type
+instance type
 
-equals
+equals.
 
-.
-
-3. Select
-
-.
+3. Select.
 
 ）
 
@@ -83,6 +73,4 @@ Important
 
 To view the latest features, make sure the server resource has the latest extension. The
 
-latest extension information is published at
-
-. To update extensions, follow the instructions at either of these locations:
+latest extension information is published at. To update extensions, follow the instructions at either of these locations:

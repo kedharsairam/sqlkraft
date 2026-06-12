@@ -1,7 +1,7 @@
 ---
 name: "To View Masking Function of Column in Table"
 title: "To View Masking Function of Column in Table"
-description: "SQL Server diagnostic script for database operations."
+description: "diagnostic script for database operations."
 category: database
 tags: ["database", "table"]
 pubDate: 2025-03-15

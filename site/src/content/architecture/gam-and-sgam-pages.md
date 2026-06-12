@@ -32,9 +32,7 @@ GAM pages record the extents have been allocated. Each GAM page covers an interv
 
 approximately 64,000 extents, or about 4 gigabytes (GiB) of data, called a
 
-GAM interval
-
-.
+GAM interval.
 
 The GAM page has 1 bit for each extent in the interval it covers. If the bit is
 

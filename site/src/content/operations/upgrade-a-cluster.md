@@ -23,11 +23,9 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
-SQL Server supports upgrading a failover cluster to a new version of SQL Server, to a new SQL
+supports upgrading a failover cluster to a new version of SQL Server, to a new SQL
 
 Server service pack or cumulative update, or when installing to a new Windows service pack or
 
@@ -41,13 +39,11 @@ instance isn't supported for operating systems before Windows Server 2012 R2. To
 
 Windows Server failover cluster node running on Windows Server 2012 R2 or later versions, see
 
-Perform a rolling upgrade or update
-
-.
+Perform a rolling upgrade or update.
 
 Support details are as follows:
 
-SQL Server upgrade is supported both through the user interface and from the command
+upgrade is supported both through the user interface and from the command
 
 prompt. You can run upgrade from the command prompt on each failover cluster node,
 
@@ -77,9 +73,7 @@ Changing the edition of the failover cluster instance is limited to certain scen
 
 more information, see
 
-Supported version & edition upgrades (SQL Server 2016)
-
-.
+Supported version & edition upgrades (SQL Server 2016).
 
 During the failover cluster instance upgrade, downtime is limited to failover time and the
 

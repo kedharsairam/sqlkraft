@@ -39,17 +39,13 @@ Create indexes with included columns
 
 and the
 
-SQL Server index
+index
 
-architecture and design guide
-
-.
+architecture and design guide.
 
 Indexes can be created on computed columns. In addition, computed columns can have the
 
-property
-
-. This means that the Database Engine stores the computed values in the
+property. This means that the Database Engine stores the computed values in the
 
 table, and updates them when any other columns on which the computed column depends are
 
@@ -79,9 +75,7 @@ options to be set as shown in the
 
 previous section
 
-Required SET options for filtered indexes
-
-.
+Required SET options for filtered indexes.
 
 ７
 

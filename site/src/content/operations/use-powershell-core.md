@@ -25,15 +25,13 @@ pubDate: 2025-12-01
 
 07/11/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
 
 This article introduces
 
-SQL Server PowerShell
+PowerShell
 
 and walks you through a couple of examples on
 
@@ -41,9 +39,7 @@ how to use it with PowerShell on macOS and Linux. PowerShell is now an open sour
 
 on
 
-GitHub
-
-.
+GitHub.
 
 For more information about Windows PowerShell, see
 
@@ -75,9 +71,7 @@ The
 
 module is maintained in the
 
-PowerShell Gallery
-
-. When working with SQL
+PowerShell Gallery. When working with SQL
 
 Server, you should always use the most recent version of the
 

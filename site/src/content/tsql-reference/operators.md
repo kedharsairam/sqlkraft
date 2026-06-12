@@ -2,12 +2,10 @@
 name: "Operators"
 title: "Operators"
 category: "operators"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 

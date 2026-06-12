@@ -11,9 +11,7 @@ SQL) CONNECTION_OPTIONS
 
 08/21/2025
 
-Applies to:
-
-SQL Server 2016 (13.x) and later
+2016 (13.x) and later
 
 Azure SQL Database
 
@@ -75,15 +73,13 @@ AllowedOpenSSLVersions (AOV)
 
 latest
 
-SQL Server external data source
+external data source
 
 ７
 
 Note
 
-PolyBase supports only the Microsoft ODBC Driver version 17 and 18. For more information, see
-
-.
+PolyBase supports only the Microsoft ODBC Driver version 17 and 18. For more information, see.
 
 Attribute (Short Name)
 

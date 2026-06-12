@@ -41,7 +41,7 @@ standalone install of SqlPackage is available on the path
 
 (DacFx.msi). In both Windows and Linux environments, if you download the
 
-self-contained .zip SqlPackage for .NET, you can extract the executable to a location of your
+self-contained.zip SqlPackage for.NET, you can extract the executable to a location of your
 
 choosing.
 
@@ -61,9 +61,7 @@ but is no longer
 
 included by default in
 
-and
-
-. Updates to the images in
+and. Updates to the images in
 
 runner-
 

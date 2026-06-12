@@ -9,9 +9,7 @@ pubDate: 2026-05-29
 
 The following example drops the certificate from the database.
 
-The following example drops the certificate
-
-.
+The following example drops the certificate.
 
 BACKUP CERTIFICATE (Transact-SQL)
 

@@ -60,9 +60,7 @@ settings for locking and lock escalation.
 
 Take advantage of
 
-optimized locking
-
-.
+optimized locking.
 
 Optimized locking
 
@@ -74,9 +72,7 @@ likely to ever occur when optimized locking is enabled.
 
 Avoid using
 
-table hints with optimized locking
-
-. Table hints might reduce the effectiveness
+table hints with optimized locking. Table hints might reduce the effectiveness
 
 of optimized locking.
 
@@ -104,9 +100,7 @@ Use an isolation level that doesn't generate shared locks for read operations:
 
 isolation level when the
 
-database option is
-
-.
+database option is.
 
 isolation level.
 
@@ -166,9 +160,7 @@ to perform an automatic index analysis on the query. For more information,
 
 see
 
-Tutorial: Database Engine Tuning Advisor
-
-. One goal of this optimization is to make
+Tutorial: Database Engine Tuning Advisor. One goal of this optimization is to make
 
 index seeks return as few rows as possible to minimize the cost of key lookups (maximize
 
@@ -178,9 +170,7 @@ key lookup logical operator might return many rows, it might use a prefetch opti
 
 perform the lookup. If the Database Engine does use prefetch for a lookup, it must increase
 
-the transaction isolation level of a portion of the query to
-
-. This means that
+the transaction isolation level of a portion of the query to. This means that
 
 what might look similar to a
 

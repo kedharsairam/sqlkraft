@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -35,9 +33,7 @@ Profiler.
 
 1. Open a trace file, trace table, or SQL script, and on the
 
-menu, select
-
-. If
+menu, select. If
 
 you're editing a trace template or creating a new trace, skip this step.
 
@@ -45,9 +41,7 @@ you're editing a trace template or creating a new trace, skip this step.
 
 tab, right-click the data column name for the filter you want to
 
-view, and select
-
-.
+view, and select.
 
 3. In the
 
@@ -59,4 +53,4 @@ to view filter information.
 
 Comparison operators with assigned values are formatted bold.
 
-SQL Server Profiler
+Profiler

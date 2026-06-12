@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -63,9 +61,9 @@ C#
 //
 // Arguments: [-q] input.xsd [output.xsd]
 //
-// input.xsd       - file to normalize
-// output.xsd      - file to output, default is console
-// -q              - quiet
+// input.xsd - file to normalize
+// output.xsd - file to output, default is console
+// -q - quiet
 //
 // Example:
 //

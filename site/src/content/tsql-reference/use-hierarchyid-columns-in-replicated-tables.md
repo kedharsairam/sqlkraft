@@ -128,9 +128,3 @@ Row filtering is supported as long as the filter doesn't include a
 column.
 
 Hierarchical data (SQL Server)
-
-Last updated on 11/18/2025
-
-Related content
-
-`IDENTITY`

@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -43,9 +41,7 @@ subelement of the <row> element. Together with the ELEMENTS directive, you can o
 
 specify the XSINIL option to map NULL column values in the result set to an element that has
 
-the attribute,
-
-.
+the attribute,.
 
 You can request a schema for the resulting XML. Specifying the XMLDATA option returns an in-
 

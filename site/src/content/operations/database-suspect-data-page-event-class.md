@@ -29,8 +29,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -47,9 +45,7 @@ suspect_pages
 
 table in
 
-msdb
-
-. Include this event class in traces that are monitoring the
+msdb. Include this event class in traces that are monitoring the
 
 occurrence of suspect pages.
 

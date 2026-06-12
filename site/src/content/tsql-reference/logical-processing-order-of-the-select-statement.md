@@ -74,7 +74,7 @@ INTO new_table ]
 FROM
 {
 <table_source>
-} [ , ...n ] ]
+} [ ,.n ] ]
 [
 WHERE
 <search_condition>
@@ -90,7 +90,7 @@ HAVING
 [
 WITH
 <common_table_expression>
-[ , ...n ] ]
+[ ,.n ] ]
 SELECT
 <select_criteria>
 [ ; ]
@@ -103,10 +103,10 @@ ALL
 |
 DISTINCT
 ]
-{ * | column_name | expression } [ , ...n ]
+{ * | column_name | expression } [ ,.n ]
 [
 FROM
-{ table_source } [ , ...n ] ]
+{ table_source } [ ,.n ] ]
 [
 WHERE
 <search_condition>
@@ -128,5 +128,5 @@ BY
 [
 OPTION (
 <query_option>
-[ , ...n ] ) ]
+[ ,.n ] ) ]
 ```

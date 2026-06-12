@@ -22,7 +22,7 @@ syntax: |
 
 ## Description
 
-When executed from a node in a peer-to-peer topology, this procedure requests a response from every other node in the topology. By executing this procedure and reviewing the corresponding responses, you can guarantee that all previous commands are delivered to the responding nodes. This stored procedure is executed at the requesting node on any database. Transact-SQL syntax conventions The name of the publication in a peer-to-peer topology for which the status is being verified.
+When executed from a node in a peer-to-peer topology, this procedure requests a response from every other node in the topology. By executing this procedure and reviewing the corresponding responses, you can guarantee that all previous commands are delivered to the responding nodes. This stored procedure is executed at the requesting node on any database.
 
 ## Syntax
 

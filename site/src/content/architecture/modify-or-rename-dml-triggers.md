@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -39,9 +37,7 @@ When you rename a trigger, the trigger must be in the current database, and the 
 
 must follow the rules for
 
-identifiers
-
-.
+identifiers.
 
 Avoid using the
 

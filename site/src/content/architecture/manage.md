@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Describes common administrative tasks for managing FileTables.
@@ -49,9 +47,7 @@ To get a list of the system-defined objects that were created when the associate
 
 were created, query the catalog view
 
-sys.filetable_system_defined_objects (Transact-SQL)
-
-.
+sys.filetable_system_defined_objects (Transact-SQL).
 
 To acquire the exclusive access that is required for certain administrative tasks, you may have
 

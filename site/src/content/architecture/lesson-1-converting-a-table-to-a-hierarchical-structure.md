@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -34,9 +32,7 @@ Customers who have tables using self joins to express hierarchical relationships
 
 their tables to a hierarchical structure using this lesson as a guide. It's relatively easy to migrate
 
-from this representation to one using
-
-. After migration, users will have a compact
+from this representation to one using. After migration, users will have a compact
 
 and easy to understand hierarchical representation, which can be indexed in several ways for
 
@@ -56,27 +52,19 @@ running SQL Server, and an AdventureWorks database.
 
 Install
 
-SQL Server Management Studio
-
-.
+Management Studio.
 
 Install
 
-SQL Server 2022 Developer Edition
-
-.
+2022 Developer Edition.
 
 Download
 
-AdventureWorks sample databases
-
-.
+AdventureWorks sample databases.
 
 For instructions on restoring databases in SSMS, see
 
-Restore a Database Backup Using SSMS
-
-.
+Restore a Database Backup Using SSMS.
 
 The sample
 
@@ -88,9 +76,7 @@ schema. To avoid changing the original table, this step makes a copy of the
 
 table
 
-named
-
-. To simplify the example, you only copy five columns from the original
+named. To simplify the example, you only copy five columns from the original
 
 table. Then, you query the
 
@@ -102,9 +88,7 @@ data type.
 
 In a Query Editor window, run the following code to copy the table structure and data from the
 
-table into a new table named
-
-. Since the original table already uses
+table into a new table named. Since the original table already uses
 
 ```sql
 AdventureWorks2025

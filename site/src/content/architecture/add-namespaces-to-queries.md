@@ -33,8 +33,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -55,9 +53,7 @@ queries.
 
 It makes the namespace to URI mapping available to the static namespace context of the
 
-xml Data Type Methods
-
-.
+xml Data Type Methods.
 
 WITH XMLNAMESPACES lets you include XML namespaces in FOR XML queries. For example,
 

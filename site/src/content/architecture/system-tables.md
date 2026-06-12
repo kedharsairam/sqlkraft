@@ -78,9 +78,7 @@ Compatibility views. For more information, see
 
 System
 
-Compatibility Views
-
-.
+Compatibility Views.
 
 Important:
 
@@ -94,9 +92,7 @@ catalog views. For more information, see
 
 System catalog
 
-views
-
-.
+views.
 
 sysaltfiles
 

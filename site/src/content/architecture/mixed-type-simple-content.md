@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -31,7 +29,7 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-SQL Server doesn't support restricting a mixed type to a simple content.
+doesn't support restricting a mixed type to a simple content.
 
 In the following XML schema collection,
 

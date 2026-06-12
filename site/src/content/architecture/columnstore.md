@@ -43,5 +43,5 @@ compressing the rowgroup into the columnstore. This improves the compression of 
 columnstore index. When a delta rowgroup reaches the maximum number of rows, it
 
 ```sql
-INSERT INTO ... VALUES
+INSERT INTO. VALUES
 ```

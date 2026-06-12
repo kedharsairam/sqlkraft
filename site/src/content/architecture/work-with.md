@@ -29,9 +29,7 @@ Article
 
 02/04/2025
 
-Applies to:
-
-SQL Server 2016 (13.x) and later
+2016 (13.x) and later
 
 Azure SQL Managed Instance
 
@@ -47,9 +45,7 @@ sys.tables
 
 and
 
-sys.internal_tables
-
-. A system-versioned temporal
+sys.internal_tables. A system-versioned temporal
 
 table is presented as parent_object_id of the internal in-memory history table
 

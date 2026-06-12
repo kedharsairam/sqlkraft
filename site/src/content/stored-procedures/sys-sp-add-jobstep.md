@@ -69,7 +69,7 @@ syntax: |
 
 ## Description
 
-Adds a step (operation) to a SQL Server Agent job. Transact-SQL syntax conventions , most, but not all SQL Server Agent job types are
+Adds a step (operation) to a SQL Server Agent job.
 
 ## Syntax
 

@@ -160,13 +160,9 @@ duration of the
 
 transaction.
 
-sys.dm_tran_locks
+sys.dm_tran_locks.
 
-.
-
-sys.dm_exec_sessions
-
-.
+sys.dm_exec_sessions.
 
 Some latch contention is to be expected as a normal part of the operation of the SQL Server
 
@@ -202,9 +198,7 @@ writer process is used with SQL Server buffer page management, see
 
 Write pages in the
 
-Database Engine
-
-.
+Database Engine.
 
 : Shared latch. Required to read the referenced structure (for example, read a data
 
@@ -226,7 +220,7 @@ structure. One example of use would be to modify contents of a page for torn pag
 
 protection.
 
-SQL Server latch modes and compatibility
+latch modes and compatibility
 
 ### Yes
 
@@ -340,7 +334,7 @@ In an insert-heavy and high-concurrency OLTP workload, the number of page splits
 
 Expand table
 
-SQL Server Superlatches and sublatches
+Superlatches and sublatches
 
 ### Server and Azure SQL index architecture and design guide
 
@@ -402,9 +396,7 @@ Documentation uses the term B-tree generally in reference to indexes. In rowstor
 
 indexes, the Database Engine implements a B+ tree. This does not apply to columnstore
 
-indexes or indexes on memory-optimized tables. For more information, see the
-
-.
+indexes or indexes on memory-optimized tables. For more information, see the.
 
 
 

@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 09/15/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -47,9 +45,7 @@ analyzes the configuration between the services and report any configuration pro
 
 For more information, see
 
-ssbdiagnose utility (Service Broker)
-
-.
+ssbdiagnose utility (Service Broker).
 
 Ensure that Service Broker message delivery is activated in the database. The
 
@@ -65,15 +61,11 @@ wrong database. For more information about Service Broker message delivery, see
 
 Manage
 
-Service Broker identities
-
-. For more information about how to activate Service Broker message
+Service Broker identities. For more information about how to activate Service Broker message
 
 delivery, see
 
-How to: Activate Service Broker message delivery in databases
-
-.
+How to: Activate Service Broker message delivery in databases.
 
 If Service Broker message delivery is active, check the
 

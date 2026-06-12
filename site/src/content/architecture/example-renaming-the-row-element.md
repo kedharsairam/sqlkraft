@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -33,9 +31,7 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-For each row in the result set, the RAW mode generates an element
-
-. You can optionally
+For each row in the result set, the RAW mode generates an element. You can optionally
 
 specify another name for this element by specifying an optional argument to the RAW mode,
 
@@ -52,8 +48,6 @@ centric.
 XML
 
 Use RAW Mode with FOR XML
-
-Last updated on 11/18/2025
 
 ```sql
 <row>

@@ -73,9 +73,7 @@ Caution
 
 A table-level
 
-does not take precedence over a column-level
-
-. This
+does not take precedence over a column-level. This
 
 inconsistency in the permissions hierarchy has been preserved for the sake of backward
 
@@ -104,7 +102,7 @@ CREATE USER
 `DENY`
 
 ```sql
-GRANT ... WITH GRANT OPTION
+GRANT. WITH GRANT OPTION
 ```
 
 `AS`

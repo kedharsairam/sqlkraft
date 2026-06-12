@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -33,7 +31,7 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-SQL Server doesn't support types derived from
+doesn't support types derived from
 
 by the use of an XML schema
 
@@ -54,8 +52,6 @@ type as a member type of the union:
 Both statements fail with an error.
 
 Requirements and Limitations for XML Schema Collections on the Server
-
-Last updated on 11/18/2025
 
 ```sql
 CREATE XML SCHEMA COLLECTION xs:QName

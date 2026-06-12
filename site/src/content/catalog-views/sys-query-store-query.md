@@ -2,7 +2,7 @@
 name: "sys.query_store_query"
 title: "sys.query_store_query"
 category: "query-store"
-description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Contains information about the query and its associated overall aggregated runtime execution ID of the database object that the query is part of (stored procedure, trigger, CLR UDF/UDAgg, etc.). if the query isn't executed as part of a database object (ad hoc query). See the ID of the statement batch the query is part of. P"
+description: "2016 (13.x) and later versions SQL database in Microsoft Fabric Contains information about the query and its associated overall aggregated runtime execution ID of the database object that the query is part of (stored procedure, trigger, CLR UDF/UDAgg, etc.). if the query isn't executed as part of a database object (ad hoc query). See the ID of the statement batch the query is part of. P"
 tags: ["query-store", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "query_parameterization_type"
@@ -10,7 +10,7 @@ syntax: "query_parameterization_type"
 
 ## Description
 
-SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Contains information about the query and its associated overall aggregated runtime execution ID of the database object that the query is part of (stored procedure, trigger, CLR UDF/UDAgg, etc.). if the query isn't executed as part of a database object (ad hoc query). See the ID of the statement batch the query is part of. Populated only if query references temporary
+2016 (13.x) and later versions SQL database in Microsoft Fabric Contains information about the query and its associated overall aggregated runtime execution ID of the database object that the query is part of (stored procedure, trigger, CLR UDF/UDAgg, etc.). if the query isn't executed as part of a database object (ad hoc query). See the ID of the statement batch the query is part of. Populated only if query references temporary
 
 ## Syntax
 

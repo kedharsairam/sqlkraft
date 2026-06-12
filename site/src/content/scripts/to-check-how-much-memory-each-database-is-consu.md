@@ -1,7 +1,7 @@
 ---
 name: "To Check How much Memory each Database is Consu"
 title: "To Check How much Memory each Database is Consu"
-description: "SQL Server diagnostic script for database operations."
+description: "diagnostic script for database operations."
 category: database
 tags: ["database", "health-check", "memory"]
 pubDate: 2025-03-15

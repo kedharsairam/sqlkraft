@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -41,9 +39,7 @@ instructions for restoring them to your database.
 
 For more information about samples, see the
 
-Samples GitHub repository
-
-.
+Samples GitHub repository.
 
 SQL Server
 
@@ -51,7 +47,7 @@ or
 
 Azure SQL Database
 
-SQL Server Management Studio (SSMS)
+Management Studio (SSMS)
 
 or
 

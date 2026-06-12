@@ -2,7 +2,7 @@
 name: "sys.sp_addmergearticle"
 title: "sp_addmergearticle"
 category: "general"
-description: "Adds an article to an existing merge publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions"
+description: "Adds an article to an existing merge publication. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -107,9 +107,7 @@ syntax: |
 
 ## Description
 
-Adds an article to an existing merge publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions
-
-## Syntax
+Adds an article to an existing merge publication. This stored procedure is executed at the Publisher on the publication database. ## Syntax
 
 ```sql
 sp_addmergearticle

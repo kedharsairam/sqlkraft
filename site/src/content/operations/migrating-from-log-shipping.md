@@ -27,8 +27,6 @@ Prerequisites to convert log shipping to
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 This article describes the prerequisites for converting a log shipping primary database and one

@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 Azure SQL Managed Instance
 
 This article provides an overview of Azure SQL Managed Instance, a fully managed platform as
@@ -25,11 +23,11 @@ a service (PaaS) database engine that handles most database management functions
 
 upgrading, patching, backups, and monitoring without user involvement.
 
-Azure SQL Managed Instance is a scalable cloud database service that's always running on the
+is a scalable cloud database service that's always running on the
 
 latest stable version of the
 
-SQL Server Database Engine
+Database Engine
 
 and a patched OS with
 
@@ -57,7 +55,7 @@ Azure SQL video series
 
 :
 
-Azure SQL Managed Instance is a PaaS service that has near 100% compatibility with the latest
+is a PaaS service that has near 100% compatibility with the latest
 
 Enterprise Edition SQL Server Database Engine. It provides a native
 

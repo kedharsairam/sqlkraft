@@ -22,9 +22,7 @@ mode key-range lock is necessary only to test
 
 the range and isn't held for the duration of the transaction performing the insert operation. Other
 
-transactions can insert or delete values before or after the inserted row with the value
-
-.
+transactions can insert or delete values before or after the inserted row with the value.
 
 However, any transaction attempting to read, insert, or delete the row with the value
 
@@ -72,9 +70,7 @@ mode key-range lock is necessary only to test the range and isn't held for the
 
 duration of the transaction performing the insert operation. Other transactions can insert or
 
-delete values before or after the inserted row with the value
-
-. However, any transaction
+delete values before or after the inserted row with the value. However, any transaction
 
 attempting to read, insert, or delete the row with the value
 

@@ -167,23 +167,23 @@ available the DB-Library DLL from SQL Server
 
 version 6.5, SQL Server 7.0, or SQL Server 2000
 
-SQL Server Profiler for Trace Capture
+Profiler for Trace Capture
 
 Use Extended Events Profiler embedded in SQL
 
 Server Management Studio.
 
-SQL Server Profiler
+Profiler
 
-SQL Server Profiler for Trace Replay
+Profiler for Trace Replay
 
-SQL Server Distributed Replay overview
+Distributed Replay overview
 
-SQL Server Profiler
+Profiler
 
 Microsoft.SqlServer.Management.Trace namespace (contains the APIs for
 
-SQL Server Trace and Replay objects)
+Trace and Replay objects)
 
 Trace Configuration:
 
@@ -235,9 +235,7 @@ which is the correct maximum length. However
 
 the current implementation returns
 
-varbinary(50)
-
-. If developers have allocated
+varbinary(50). If developers have allocated
 
 varbinary(50)
 

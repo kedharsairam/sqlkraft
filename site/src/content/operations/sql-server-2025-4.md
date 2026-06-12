@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to: SQL Server 2025
-
 The following table lists the release history for SQL Server 2025 (17.x).
 
 CU 4 GDR (May 2026)
@@ -79,17 +77,11 @@ GA
 
 For release history on other editions, see the following articles:
 
-Release history for SQL Server 2017 on Linux
+Release history for SQL Server 2017 on Linux.
 
-.
+Release history for SQL Server 2019 on Linux.
 
-Release history for SQL Server 2019 on Linux
-
-.
-
-Release history for SQL Server 2022 on Linux
-
-.
+Release history for SQL Server 2022 on Linux.
 
 Starting with SQL Server 2025 (17.x),
 
@@ -101,19 +93,17 @@ changes to your support for existing deployments. For more information about ver
 
 lifecycle policies, see
 
-SQL Server 2022
+2022
 
 ,
 
-SQL Server 2019
+2019
 
 , and
 
-SQL Server 2017
+2017. To upgrade to
 
-. To upgrade to
-
-SQL Server 2025 (17.x),
+2025 (17.x),
 
 back up your databases and restore them
 
@@ -121,9 +111,7 @@ to a
 
 supported
 
-distribution
-
-.
+distribution.
 
 ﾉ
 

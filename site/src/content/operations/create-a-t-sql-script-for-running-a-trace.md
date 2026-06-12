@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,9 +37,7 @@ Open a trace file (SQL Server Profiler)
 
 or
 
-Open a trace table (SQL Server Profiler)
-
-.
+Open a trace table (SQL Server Profiler).
 
 2. On the
 
@@ -55,10 +51,8 @@ version that corresponds to the server you want to trace.
 
 3. In the
 
-dialog box, enter a name for the script file, and then select
+dialog box, enter a name for the script file, and then select.
 
-.
+Profiler templates and permissions
 
-SQL Server Profiler templates and permissions
-
-SQL Server Profiler
+Profiler

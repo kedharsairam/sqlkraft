@@ -10,7 +10,7 @@ Setting the max degree of parallelism option to 0 (default) enables SQL Server t
 
 available processors up to a maximum of 64 processors in a parallel plan execution. Although
 
-SQL Server sets a runtime target of 64 logical processors when MAXDOP option is set to 0, a
+sets a runtime target of 64 logical processors when MAXDOP option is set to 0, a
 
 different value can be manually set if needed. Setting MAXDOP to 0 for queries and indexes
 
@@ -90,9 +90,7 @@ column to meet the input requirement of the Merge Join operator.
 
 The parallelism operator above the Index Seek operator is repartitioning its input streams using
 
-the value of
-
-. Because its input isn't sorted on the
+the value of. Because its input isn't sorted on the
 
 column values and
 
@@ -171,15 +169,15 @@ DEFINE:([Expr1005]=Count(*)))
 RESIDUAL:([ORDERS].[o_orderkey]=
 [LINEITEM].[l_orderkey]))
 |--Sort(ORDER BY:([ORDERS].[o_orderkey] ASC))
-|    |--Parallelism(Repartition Streams,
+| |--Parallelism(Repartition Streams,
 PARTITION COLUMNS:
 ([ORDERS].[o_orderkey]))
-|         |--Index Seek(OBJECT:
+| |--Index Seek(OBJECT:
 ([tpcd1G].[dbo].[ORDERS].[O_DATKEYOPR_IDX]),
 SEEK:([ORDERS].[o_orderdate] >=
-Apr  1 2000 12:00AM AND
+Apr 1 2000 12:00AM AND
 [ORDERS].[o_orderdate] <
-Jul  1 2000 12:00AM) ORDERED)
+Jul 1 2000 12:00AM) ORDERED)
 |--Parallelism(Repartition Streams,
 PARTITION COLUMNS:
 ([LINEITEM].[l_orderkey]),

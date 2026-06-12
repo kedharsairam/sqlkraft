@@ -25,8 +25,6 @@ SET STATISTICS TIME (Transact-SQL)
 
 SET STATISTICS IO (Transact-SQL)
 
-Last updated on 11/18/2025
-
 See Also
 
 ### lightweight pooling

@@ -27,8 +27,6 @@ Article
 
 04/26/2024
 
-Applies to:
-
 SQL Server
 
 Always On availability groups (AGs) require an underlying Windows Server Failover Cluster
@@ -39,9 +37,7 @@ participating in a WSFC, also known as nodes, were joined to the same domain. Fo
 
 information on Active Directory Domain Services (AD DS), see
 
-here
-
-.
+here.
 
 The dependency on AD DS and WSFC is more complex than previously deployed with a
 

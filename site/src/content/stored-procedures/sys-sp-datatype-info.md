@@ -2,7 +2,7 @@
 name: "sys.sp_datatype_info"
 title: "sp_datatype_info"
 category: "general"
-description: "Returns information about the data types supported by the current environment. Transact-SQL syntax conventions The code number for the specified data type. list of all data types, omit this parameter. The version of ODBC that is used."
+description: "Returns information about the data types supported by the current environment. The code number for the specified data type. list of all data types, omit this parameter. The version of ODBC that is used."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -18,7 +18,7 @@ syntax: |
 
 ## Description
 
-Returns information about the data types supported by the current environment. Transact-SQL syntax conventions The code number for the specified data type. list of all data types, omit this parameter. The version of ODBC that is used.
+Returns information about the data types supported by the current environment. The code number for the specified data type. list of all data types, omit this parameter. The version of ODBC that is used.
 
 ## Syntax
 

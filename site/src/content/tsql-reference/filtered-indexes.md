@@ -21,9 +21,7 @@ Partitioned tables and indexes
 
 and the
 
-SQL Server index architecture and design guide
-
-.
+index architecture and design guide.
 
 When an index is created or rebuilt, the query optimizes updates statistics on the index. For a
 

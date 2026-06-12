@@ -15,13 +15,9 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
-By default, the ordering mode for all operations in SQL Server is
-
-. Therefore, the node
+By default, the ordering mode for all operations in SQL Server is. Therefore, the node
 
 sequences returned by the path expressions and the FLWOR expressions, without the
 

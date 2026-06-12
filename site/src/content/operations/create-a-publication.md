@@ -29,8 +29,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -63,9 +61,7 @@ Publication and article names can't include any of the following characters:
 
 ,
 
-, or
-
-. If objects in the database include any of these characters and
+, or. If objects in the database include any of these characters and
 
 you want to replicate them, you must specify an article name that is different from the
 
@@ -81,7 +77,7 @@ credentials, use the
 
 cryptographic services
 
-provided by the Microsoft Windows .NET
+provided by the Microsoft Windows.NET
 
 Framework.
 
@@ -93,9 +89,7 @@ dialog box. For information about creating a publication from an Oracle database
 
 Create a
 
-Publication from an Oracle Database
-
-.
+Publication from an Oracle Database.
 
 1. Connect to the Publisher in Microsoft SQL Server Management Studio, and then expand
 
@@ -107,9 +101,7 @@ folder, and then right-click the
 
 folder.
 
-3. Select
-
-.
+3. Select.
 
 4. Follow the pages in the New Publication Wizard to:
 

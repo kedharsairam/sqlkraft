@@ -31,8 +31,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 This topic provides information to help you troubleshoot problems in setting up a database
@@ -51,7 +49,7 @@ Accounts
 
 Discusses requirements for correctly configuring the accounts under which
 
-SQL Server is running.
+is running.
 
 Endpoints
 
@@ -117,9 +115,7 @@ Note
 
 Ensure that you are meeting all the
 
-prerequisites for database mirroring
-
-.
+prerequisites for database mirroring.
 
 ﾉ
 

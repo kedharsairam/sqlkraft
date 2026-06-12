@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Checks whether the current connection or task needs to be aborted and returns TRUE if the

@@ -27,8 +27,6 @@ pubDate: 2025-12-01
 
 10/07/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -37,15 +35,11 @@ This article explains known limitations, issues, and errors with change data cap
 
 SQL Server
 
-and
-
-.
+and.
 
 For Azure SQL Database, see
 
-Known issues with CDC in Azure SQL Database
-
-.
+Known issues with CDC in Azure SQL Database.
 
 For CDC to function properly, you shouldn't manually modify any CDC metadata such as
 
@@ -57,9 +51,7 @@ permissions
 
 sys.database_principals
 
-) or rename the
-
-.
+) or rename the.
 
 Any objects in
 

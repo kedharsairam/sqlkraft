@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to determine the operational health of an Always On availability
@@ -39,9 +37,7 @@ Server. For information about Always On Policy Based Management, see
 
 Always On Policies for
 
-Operational Issues with Always On Availability Groups (SQL Server)
-
-.
+Operational Issues with Always On Availability Groups (SQL Server).
 
 Requires CONNECT, VIEW SERVER STATE, and VIEW ANY DEFINITION permissions.
 
@@ -71,9 +67,7 @@ For information about how to use the Always On Dashboard, see
 
 Use the Always On
 
-Dashboard (SQL Server Management Studio)
-
-.
+Dashboard (SQL Server Management Studio).
 
 ）
 

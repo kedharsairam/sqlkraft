@@ -29,8 +29,6 @@ Article
 
 02/05/2024
 
-Applies to:
-
 SQL Server
 
 Managing an existing Always On availability group in SQL Server involves one or more of the

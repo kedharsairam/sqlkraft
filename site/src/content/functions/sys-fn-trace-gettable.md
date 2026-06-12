@@ -2,7 +2,7 @@
 name: "sys.fn_trace_gettable"
 title: "sys.fn_trace_gettable"
 category: "system"
-description: "Returns the content of one or more trace files in tabular form. Transact-SQL syntax conventions Specifies the initial trace file to be read. , with no default. Specifies the number of rollover files to be read. This number includes the initial file specified in is specified as reads all rollover files until it reaches the end of the trace. returns a table with all the columns valid for the specifi"
+description: "Returns the content of one or more trace files in tabular form. Specifies the initial trace file to be read. , with no default. Specifies the number of rollover files to be read. This number includes the initial file specified in is specified as reads all rollover files until it reaches the end of the trace. returns a table with all the columns valid for the specifi"
 tags: ["system", "function"]
 pubDate: 2026-05-29
 syntax: "fn_trace_gettable ( 'filename' , number_files )"
@@ -10,7 +10,7 @@ syntax: "fn_trace_gettable ( 'filename' , number_files )"
 
 ## Description
 
-Returns the content of one or more trace files in tabular form. Transact-SQL syntax conventions Specifies the initial trace file to be read. , with no default. Specifies the number of rollover files to be read. This number includes the initial file specified in is specified as reads all rollover files until it reaches the end of the trace. returns a table with all the columns valid for the specified trace. For more information, see sp_trace_setevent (Transact-SQL) Be aware that the fn_trace_gettable function will not load rollover files (when this option is specified by using the argument) where the original trace file name ends with an underscore and a numeric value. (This does not apply to the underscore and number that are This feature will be removed in a future version of SQL Server. Avoid using this feature in Invalid parameters. Returned when the user supplied incompatible parameters.
+Returns the content of one or more trace files in tabular form. Specifies the initial trace file to be read. , with no default. Specifies the number of rollover files to be read. This number includes the initial file specified in is specified as reads all rollover files until it reaches the end of the trace. returns a table with all the columns valid for the specified trace. For more information, see sp_trace_setevent (Transact-SQL) Be aware that the fn_trace_gettable function will not load rollover files (when this option is specified by using the argument) where the original trace file name ends with an underscore and a numeric value. (This does not apply to the underscore and number that are This feature will be removed in a future version of SQL Server. Avoid using this feature in Invalid parameters. Returned when the user supplied incompatible parameters.
 
 ## Syntax
 
@@ -24,11 +24,7 @@ Description Note: The columns that are returned by the snapshots.fn_trace_gettab
 
 ## Remarks
 
-Applies to:
-
 Returns the content of one or more trace files in tabular form.
-
-Transact-SQL syntax conventions
 
 Specifies the initial trace file to be read.
 

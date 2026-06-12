@@ -79,9 +79,7 @@ problems might occur, and certain functionality might be unavailable. For exampl
 
 index can't be reorganized when
 
-is set to
-
-.
+is set to.
 
 ### Applies to
 
@@ -95,9 +93,7 @@ rebuilding an existing index on the same table.
 
 For more information, see
 
-Perform index operations online
-
-.
+Perform index operations online.
 
 : SQL Server 2017 (14.x) and later versions, Azure SQL Database, and Azure SQL
 
@@ -165,9 +161,7 @@ priority locks if the index operation is blocked, before taking action. For more
 
 information, see
 
-WAIT_AT_LOW_PRIORITY with online index operations
-
-.
+WAIT_AT_LOW_PRIORITY with online index operations.
 
 To pause the index operation immediately, you can execute the
 
@@ -329,9 +323,7 @@ makes the online index operation wait using low priority locks, allowing
 
 other operations using normal priority locks to proceed in the meantime. Omitting the
 
-option is equivalent to
-
-.
+option is equivalent to.
 
 =
 

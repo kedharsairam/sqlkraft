@@ -23,17 +23,13 @@ Specify either the
 
 option or the
 
-option when you run
-
-. If you don't, the result is the same as if you run a
+option when you run. If you don't, the result is the same as if you run a
 
 operation with
 
 followed by running a
 
-operation with
-
-.
+operation with.
 
 The shrunk database doesn't have to be in single user mode. Other users can be working in the
 
@@ -57,8 +53,6 @@ addition, there will be costing implications to your data warehouse snapshots af
 
 command.
 
-Applies to:
-
 SQL Server, Azure SQL Database, Azure SQL Managed Instance, Azure Synapse
 
 Analytics dedicated SQL pool
@@ -71,9 +65,7 @@ Currently, columns using LOB data types (
 
 ) in compressed columnstore segments are not affected by
 
-and
-
-.
+and.
 
 shrinks data files on a per-file basis, but shrinks log files as if all the log
 
@@ -81,9 +73,7 @@ files existed in one contiguous log pool. Files are always shrunk from the end.
 
 ## Understand concurrency issues with DBCC SHRINKDATABASE
 
-Assume you have a couple of log files, a data file, and a database named
-
-. The data and
+Assume you have a couple of log files, a data file, and a database named. The data and
 
 log files are 10 MB each and the data file contains 6 MB of data. The Database Engine
 

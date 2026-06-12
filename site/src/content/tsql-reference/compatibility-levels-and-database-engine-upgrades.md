@@ -13,9 +13,7 @@ levels on Azure SQL Database, see
 
 Improved Query Performance with Compatibility Level 130
 
-in Azure SQL Database
-
-. This article refers to compatibility level 130 and SQL Server, but the
+in Azure SQL Database. This article refers to compatibility level 130 and SQL Server, but the
 
 same methodology applies for upgrades to 140 or higher levels in SQL Server and Azure SQL
 
@@ -27,9 +25,7 @@ To determine the current compatibility level, query the
 
 column of
 
-sys.databases
-
-.
+sys.databases.
 
 To determine the version of the Database Engine that you're connected to, execute the
 
@@ -49,9 +45,7 @@ Instance) with no application changes (except for database connectivity). For mo
 
 see
 
-Compatibility certification
-
-.
+Compatibility certification.
 
 As long as the application doesn't need to use enhancements that are only available in a higher
 
@@ -61,9 +55,7 @@ and maintain the previous database compatibility level. For more information on 
 
 compatibility level for backward compatibility, see
 
-Compatibility certification
-
-.
+Compatibility certification.
 
 ### Discontinued
 

@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Obtains a bind token of the transaction in the current client session that invokes the extended

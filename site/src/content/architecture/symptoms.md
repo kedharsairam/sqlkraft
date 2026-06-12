@@ -98,9 +98,7 @@ the contention lies.
 
 For more information about Extended Events in SQL Server, see
 
-Extended Events overview
-
-.
+Extended Events overview.
 
 By analyzing the output, we can see the call stacks for the most common code paths for the
 

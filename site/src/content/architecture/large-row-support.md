@@ -90,9 +90,7 @@ columns back to the original data page.
 
 For example, a table can be created with two columns: one
 
-and another
-
-. Individually, neither column exceeds 8,060 bytes, but combined they would do
+and another. Individually, neither column exceeds 8,060 bytes, but combined they would do
 
 so if the entire width of each column is filled. If this happens, the Database Engine dynamically
 

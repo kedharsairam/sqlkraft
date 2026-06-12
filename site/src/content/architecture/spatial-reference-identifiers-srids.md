@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -61,9 +59,7 @@ If two spatial instances do not have the same SRID, the results from a
 
 or
 
-Data Type method used on the instances will return
-
-. For example, for the following
+Data Type method used on the instances will return. For example, for the following
 
 predicate term to return a non-
 
@@ -76,8 +72,6 @@ and
 , must have the same SRID:
 
 Spatial Data Types Overview
-
-Last updated on 11/18/2025
 
 ７
 

@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -111,7 +109,7 @@ SELECT
 *
 FROM
 MyView;
-ProductID   PName
+ProductID PName
 ----------- ------------
-1           SomeName
+1 SomeName
 ```

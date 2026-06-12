@@ -12,8 +12,6 @@ pubDate: 2025-12-01
 
 09/29/2025
 
-Applies to:
-
 SQL Server
 
 Atomization is the process of extracting the typed value of an item. This process is implied
@@ -26,9 +24,7 @@ operators directly to nodes, the typed value of a node is first retrieved by imp
 
 the
 
-data function
-
-. This passes the atomic value as an operand to the arithmetic operator.
+data function. This passes the atomic value as an operand to the arithmetic operator.
 
 For example, the following query returns the total of the
 
@@ -62,13 +58,9 @@ In constructing the
 
 attribute, atomization is implicitly applied to the
 
-singleton sequence returned by
+singleton sequence returned by. The typed value of the
 
-. The typed value of the
-
-attribute is assigned to
-
-.
+attribute is assigned to.
 
 ```sql
 LaborHours data() data()

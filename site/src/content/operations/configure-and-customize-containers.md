@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -35,9 +33,7 @@ to build a customized SQL Server container. For more
 
 information, see
 
-a demo that combines SQL Server and a Node application
-
-. If you do create
+a demo that combines SQL Server and a Node application. If you do create
 
 your own Dockerfile, be aware of the foreground process, because this process controls the life of
 
@@ -55,9 +51,7 @@ Your SQL Server configuration changes and database files are persisted in the co
 
 you restart the container with
 
-and
-
-. However, if you remove the
+and. However, if you remove the
 
 container with
 
@@ -71,9 +65,7 @@ You can use
 
 (Go) to create a new instance of SQL Server in a container for
 
-development purposes. For more information, see
-
-.
+development purposes. For more information, see.
 
 ```cmd
 docker stop docker start docker rm sqlcmd

@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -87,7 +85,7 @@ statement or the default database if no USE
 
 statement has been issued for a given instance.
 
-SQL Server Profiler displays the name of the
+Profiler displays the name of the
 
 database if the
 

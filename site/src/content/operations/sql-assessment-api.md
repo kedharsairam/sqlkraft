@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 SQL Assessment API
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -45,13 +43,13 @@ can be tracked by regularly scheduled assessments.
 
 The API can be used to assess:
 
-SQL Server on Azure Virtual Machines
+on Azure Virtual Machines
 
 Azure SQL Managed Instance
 
-SQL Server 2012 and higher
+2012 and higher
 
-SQL Server on
+on
 
 Linux-based systems and containers
 
@@ -67,9 +65,7 @@ entire ruleset
 
 in the
 
-samples repository
-
-.
+samples repository.
 
 ７
 

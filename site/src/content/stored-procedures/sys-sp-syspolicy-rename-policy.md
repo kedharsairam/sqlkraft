@@ -2,7 +2,7 @@
 name: "sys.sp_syspolicy_rename_policy"
 title: "sp_syspolicy_rename_policy"
 category: "general"
-description: "Renames an existing policy in Policy-Based Management. Transact-SQL syntax conventions The name of the policy that you want to rename. The identifier for the policy that you want to rename."
+description: "Renames an existing policy in Policy-Based Management."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -19,7 +19,7 @@ syntax: |
 
 ## Description
 
-Renames an existing policy in Policy-Based Management. Transact-SQL syntax conventions The name of the policy that you want to rename. The identifier for the policy that you want to rename.
+Renames an existing policy in Policy-Based Management.
 
 ## Syntax
 

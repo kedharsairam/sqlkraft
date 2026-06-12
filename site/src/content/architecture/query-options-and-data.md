@@ -31,8 +31,6 @@ Article
 
 03/17/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -83,7 +81,7 @@ If the options aren't set as shown, queries and modifications on
 
 data type methods will fail.
 
-SQL Server preserves the content of the XML instance, but doesn't preserve aspects of the XML
+preserves the content of the XML instance, but doesn't preserve aspects of the XML
 
 instance that aren't considered significant in the XML data model. This means that a retrieved
 

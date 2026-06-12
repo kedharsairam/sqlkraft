@@ -29,8 +29,6 @@ Article
 
 01/21/2025
 
-Applies to:
-
 SQL Server
 
 - Linux

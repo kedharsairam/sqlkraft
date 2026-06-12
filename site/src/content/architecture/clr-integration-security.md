@@ -27,11 +27,9 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
-The security model of the SQL Server integration with the .NET Framework common language
+The security model of the SQL Server integration with the.NET Framework common language
 
 runtime (CLR) manages and secures access between different types of CLR and non-CLR
 
@@ -63,7 +61,7 @@ User-defined code shouldn't be able to gain unauthorized access to system resour
 
 virtue of running in the SQL Server process.
 
-SQL Server now integrates the user-based security model of SQL Server with the code access-
+now integrates the user-based security model of SQL Server with the code access-
 
 based security model of the CLR. Some of the advantages of this combined approach to
 

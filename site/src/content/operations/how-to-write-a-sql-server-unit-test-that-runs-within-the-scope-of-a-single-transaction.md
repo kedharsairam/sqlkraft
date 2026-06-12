@@ -25,9 +25,7 @@ following procedures explain how to:
 
 Create a transaction in your Transact-SQL test script that uses
 
-and
-
-.
+and.
 
 Create a transaction for a single test method in a test class.
 

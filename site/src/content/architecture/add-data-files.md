@@ -29,8 +29,6 @@ Article
 
 01/22/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to add data or log files to a database in SQL Server by using SQL
@@ -41,7 +39,7 @@ Limitations and Restrictions
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 

@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -33,9 +31,7 @@ HA add-on
 
 built on top of
 
-Pacemaker
-
-. The SQL Server instance is active on either
+Pacemaker. The SQL Server instance is active on either
 
 one node or the other.
 
@@ -51,9 +47,7 @@ resources to the other node.
 
 For more information on cluster configuration, resource agents options, and management, visit
 
-RHEL reference documentation
-
-.
+RHEL reference documentation.
 
 At this point, SQL Server integration with Pacemaker isn't as coupled as with WSFC on
 

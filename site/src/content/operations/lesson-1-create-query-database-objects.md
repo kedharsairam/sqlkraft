@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -51,9 +49,7 @@ Management Studio, but you can also use Management Studio Express, which is avai
 
 as a free download from the
 
-Microsoft Download Center
-
-.
+Microsoft Download Center.
 
 By using the
 
@@ -77,9 +73,7 @@ instance.
 
 Install
 
-SQL Server Management Studio
-
-.
+Management Studio.
 
 If you don't have a SQL Server instance, create one. To create one, select your platform from
 

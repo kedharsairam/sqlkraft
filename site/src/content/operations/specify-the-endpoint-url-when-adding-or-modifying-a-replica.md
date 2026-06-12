@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 To host an availability replica for an availability group, a server instance must possess a
@@ -69,9 +67,7 @@ fully qualified domain name, or an IP address:
 
 Because the nodes of Windows Server Failover Clustering (WSFC) cluster are the same
 
-domain, you can use the name of the computer system; for example,
-
-.
+domain, you can use the name of the computer system; for example,.
 
 To use an IP address, it must be unique in your environment. We recommend that you
 
@@ -81,9 +77,7 @@ Version 6 (IPv6). An IPv6 address must be enclosed within square brackets, for
 
 example:
 
-<IPv6_address>
-
-.
+<IPv6_address>.
 
 To learn the IP address of a system, at the Windows command prompt, enter the
 

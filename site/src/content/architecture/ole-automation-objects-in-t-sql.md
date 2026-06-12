@@ -27,8 +27,6 @@ Article
 
 01/29/2024
 
-Applies to:
-
 SQL Server
 
 Transact-SQL includes several system stored procedures that allow OLE Automation objects to
@@ -83,9 +81,7 @@ When there is no more need for the object, call
 
 to deallocate the instance of the
 
-object created by using
-
-.
+object created by using.
 
 OLE Automation objects return data through property values and methods. The
 

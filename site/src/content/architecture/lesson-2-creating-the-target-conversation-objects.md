@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 09/04/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance

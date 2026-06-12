@@ -33,8 +33,6 @@ Article
 
 04/04/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -109,9 +107,7 @@ restored. A file set to offline can only be set online by restoring the file fro
 
 more information about restoring a single file, see
 
-RESTORE (Transact-SQL)
-
-.
+RESTORE (Transact-SQL).
 
 A database file is also set OFFLINE when a database is in full or bulk logged recovery and
 
@@ -119,9 +115,7 @@ a file is dropped. The entry in sys.master_files persists until a transaction lo
 
 past the drop_lsn value. For more information, see
 
-Transaction Log Truncation
-
-.
+Transaction Log Truncation.
 
 ﾉ
 

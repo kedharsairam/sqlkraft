@@ -15,7 +15,7 @@ syntax: |
 
 ## Description
 
-Contains a row for each full-text catalog. ID of the full-text catalog. Is unique across the full-text catalogs Name of the catalog. Is unique within the database. Name of the catalog directory in the file system. The default full-text catalog. Accent-sensitivity setting of the catalog. False = Is not accent-sensitive. Filegroup where this catalog was created. File ID of the full-text file associated with the catalog.
+Contains a row for each full-text catalog.
 
 ## Syntax
 

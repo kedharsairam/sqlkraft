@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -55,9 +53,7 @@ permission in the destination database.
 
 1. Make sure you are connected to the database in which you want to create the table and
 
-that the database is selected in
-
-.
+that the database is selected in.
 
 2. In
 
@@ -65,15 +61,11 @@ that the database is selected in
 
 and select
 
-and then
-
-.
+and then.
 
 3. In
 
-right-click the table you want to copy, and select
-
-. The existing
+right-click the table you want to copy, and select. The existing
 
 table opens in a separate tab.
 
@@ -107,13 +99,9 @@ to save.
 
 8. In the
 
-dialog box, type a name for the new table. Select
+dialog box, type a name for the new table. Select. The table will
 
-. The table will
-
-be created and visible in the
-
-.
+be created and visible in the.
 
 ```sql
 CREATE TABLE

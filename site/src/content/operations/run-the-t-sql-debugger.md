@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-Applies to:
-
 SQL Server
 
 You can start the Transact-SQL debugger after you open a Database Engine Query Editor
@@ -37,9 +35,7 @@ on another computer, you must configure the debugger for remote debugging. For m
 
 information, see
 
-Configure firewall rules before running the Transact-SQL debugger
-
-.
+Configure firewall rules before running the Transact-SQL debugger.
 
 The Database Engine Query Editor window must be connected by using either a Windows
 

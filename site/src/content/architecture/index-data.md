@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -43,9 +41,7 @@ or the
 
 native
 
-data type
-
-.
+data type.
 
 Database indexes improve the performance of filter and sort operations. Without indexes, SQL
 
@@ -101,11 +97,9 @@ is generally available for Azure SQL Database and Azure SQL Managed Instance wit
 
 the
 
-SQL Server 2025
+2025
 
-or
-
-.
+or.
 
 is in preview for SQL Server 2025 (17.x) and SQL database in Fabric.
 

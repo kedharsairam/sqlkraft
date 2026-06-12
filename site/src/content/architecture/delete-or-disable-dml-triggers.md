@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -37,7 +35,7 @@ Recommendations
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 

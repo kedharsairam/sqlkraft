@@ -8,9 +8,7 @@ pubDate: 2026-05-29
 
 Each VLF contains one or more
 
-log blocks
-
-. Each log block consists of the log records (aligned at
+log blocks. Each log block consists of the log records (aligned at
 
 a 4-byte boundary). A log block is variable in size and is always an integer multiple of 512 bytes
 
@@ -24,9 +22,7 @@ logging when writing log records to disk.
 
 Each log block within a VLF is uniquely addressed by its
 
-block offset
-
-. The first block always has a
+block offset. The first block always has a
 
 block offset that points past the first 8 KB in the VLF.
 

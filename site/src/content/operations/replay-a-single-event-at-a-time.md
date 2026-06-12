@@ -23,15 +23,13 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
 This article describes how to replay one event at a time in a replay trace file or table by using
 
-SQL Server Profiler.
+Profiler.
 
 1. Open the trace file or trace table you want to replay. For more information, see
 
@@ -41,17 +39,13 @@ trace file (SQL Server Profiler)
 
 or
 
-Open a trace table (SQL Server Profiler)
-
-.
+Open a trace table (SQL Server Profiler).
 
 Make sure that the trace file or table you open contains the event classes necessary for
 
 replay. For more information, see
 
-Replay Requirements
-
-.
+Replay Requirements.
 
 2. On the
 
@@ -63,9 +57,7 @@ replay the trace.
 
 3. In the
 
-dialog box, verify the settings, and then select
-
-. For more
+dialog box, verify the settings, and then select. For more
 
 information about specifying settings on the
 
@@ -77,9 +69,7 @@ a trace file (SQL Server Profiler)
 
 or
 
-Replay a trace table (SQL Server Profiler)
-
-.
+Replay a trace table (SQL Server Profiler).
 
 4. To replay the first event, select
 
@@ -99,4 +89,4 @@ or pressing F10 for each event.
 
 Replay Traces
 
-SQL Server Profiler
+Profiler

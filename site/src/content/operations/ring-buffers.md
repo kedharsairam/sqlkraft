@@ -29,8 +29,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Some diagnostic Always On availability group (AG) information can be obtained from the SQL

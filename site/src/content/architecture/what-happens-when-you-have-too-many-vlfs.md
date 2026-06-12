@@ -40,9 +40,7 @@ and
 
 ALTER
 
-DATABASE (Transact-SQL) File and Filegroup Options
-
-.
+DATABASE (Transact-SQL) File and Filegroup Options.
 
 During the initial stages of a database recovery process, SQL Server discovers all VLFs in all
 

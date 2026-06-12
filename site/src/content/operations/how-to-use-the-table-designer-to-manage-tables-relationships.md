@@ -55,21 +55,15 @@ folder, select
 
 , and
 
-then select
-
-.
+then select.
 
 3. Name the new table
 
-and select
-
-.
+and select.
 
 4. The Table Designer opens. In the Columns Grid, add a new column to the table with name
 
-and Data Type
-
-.
+and Data Type.
 
 5. You can also edit the properties of columns in the
 
@@ -85,9 +79,7 @@ to
 
 , and
 
-to
-
-. As you shift your focus out of the field, the Script pane
+to. As you shift your focus out of the field, the Script pane
 
 and the Columns Grid of the designer automatically update to reflect your change.
 

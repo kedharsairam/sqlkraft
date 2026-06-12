@@ -32,9 +32,7 @@ setting,
 
 see
 
-ALTER DATABASE (Transact-SQL) File and Filegroup Options
-
-.
+ALTER DATABASE (Transact-SQL) File and Filegroup Options.
 
 If the
 
@@ -48,9 +46,7 @@ growth_increment
 
 information, see
 
-Troubleshoot a full transaction log (SQL Server Error 9002)
-
-.
+Troubleshoot a full transaction log (SQL Server Error 9002).
 
 If the log contains multiple physical log files, the logical log moves through all the physical log
 
@@ -78,9 +74,7 @@ marked as reusable. Thereafter, a log truncation can free the inactive portion. 
 
 information about checkpoints, see
 
-Database checkpoints (SQL Server)
-
-.
+Database checkpoints (SQL Server).
 
 The following diagrams show a transaction log before and after truncation. The first diagram
 
@@ -98,9 +92,7 @@ current logical log.
 
 Important
 
-For more information about transaction log size management, see
-
-.
+For more information about transaction log size management, see.
 
 `FILEGROWTH`
 

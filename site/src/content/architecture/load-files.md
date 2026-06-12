@@ -29,8 +29,6 @@ Article
 
 07/09/2024
 
-Applies to:
-
 SQL Server
 
 Describes how to load or migrate files into FileTables.
@@ -43,7 +41,7 @@ Files are currently stored
 
 in the file system.
 
-SQL Server has no
+has no
 
 knowledge of the files.
 
@@ -67,7 +65,7 @@ Files are currently stored
 
 in the file system.
 
-SQL Server contains a
+contains a
 
 table of metadata that
 

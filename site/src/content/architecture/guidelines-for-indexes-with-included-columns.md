@@ -50,17 +50,13 @@ All data types are allowed except
 
 ,
 
-, and
-
-.
+, and.
 
 Computed columns that are deterministic and either precise or imprecise can be included
 
 columns. For more information, see
 
-Indexes on computed columns
-
-.
+Indexes on computed columns.
 
 As with key columns, computed columns derived from
 

@@ -77,7 +77,7 @@ AzureActiveDirectoryAuthority=
 
 {value};DatabaseServicePrincipalName=
 
-{value}" .
+{value}".
 
 /DeployReportPath:
 

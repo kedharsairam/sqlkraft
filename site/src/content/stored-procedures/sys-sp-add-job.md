@@ -45,7 +45,7 @@ syntax: |
 
 ## Description
 
-Creates a new job executed by the SQL Server Agent service. Transact-SQL syntax conventions , most, but not all SQL Server Agent features are
+Creates a new job executed by the SQL Server Agent service.
 
 ## Syntax
 

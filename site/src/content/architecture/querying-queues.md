@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -77,9 +75,7 @@ statement on a queue, specify the
 
 hint to avoid blocking
 
-applications that use the queue. For a description of the columns in a queue, see
-
-.
+applications that use the queue. For a description of the columns in a queue, see.
 
 ```sql
 SELECT

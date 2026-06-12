@@ -10,9 +10,7 @@ A minimally logged operation is performed in the database; for example, a bulk-c
 
 operation is performed on a database that is using the Bulk-Logged recovery model.
 
-Database files have been added or removed by using
-
-.
+Database files have been added or removed by using.
 
 An instance of SQL Server is stopped by a
 

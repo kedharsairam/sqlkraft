@@ -19,8 +19,6 @@ syntax: |
 
 ## Description
 
-To get more details about the memory consumption of off-row columns you can use the following query, which shows the memory consumption of all internal tables and their indexes that are used to store the off-row columns: Use the following query to show the memory consumption of columnstore indexes on
-
 ## Syntax
 
 ```sql

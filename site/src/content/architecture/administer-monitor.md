@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 08/22/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -37,13 +35,9 @@ For Azure SQL Database, which uses a different job mechanism, see
 
 CDC with Azure SQL
 
-Database
+Database.
 
-.
-
-The capture job is initiated by running the parameterless stored procedure
-
-. This stored procedure starts by extracting the configured values for
+The capture job is initiated by running the parameterless stored procedure. This stored procedure starts by extracting the configured values for
 
 ,
 
@@ -51,21 +45,15 @@ The capture job is initiated by running the parameterless stored procedure
 
 , and
 
-for the capture job from
+for the capture job from. These configured values are then passed as parameters to the stored
 
-. These configured values are then passed as parameters to the stored
-
-procedure
-
-. This is used to invoke
+procedure. This is used to invoke
 
 to perform the log scan.
 
 To understand capture job behavior, you must understand how the configurable parameters
 
-are used by
-
-.
+are used by.
 
 The
 
@@ -77,9 +65,7 @@ reaches this limit, no additional transactions are included in the current scan.
 
 is complete, the number of transactions that were processed will always be less than or equal
 
-to
-
-.
+to.
 
 The
 

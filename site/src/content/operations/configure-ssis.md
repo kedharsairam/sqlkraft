@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -33,9 +31,7 @@ for Red Hat Enterprise Linux and Ubuntu. For more info about installing SSIS, se
 
 Install SQL
 
-Server Integration Services (SSIS) on Linux
-
-.
+Server Integration Services (SSIS) on Linux.
 
 You can also use the
 
@@ -51,25 +47,19 @@ Initialize and set up Microsoft SQL Server Integration Services.
 
 The examples in this article run
 
-by specifying the full path:
-
-. If
+by specifying the full path:. If
 
 you navigate to that location before you run
 
 , you can run the utility in the context of
 
-the current directory:
-
-.
+the current directory:.
 
 Be sure to run the commands that are described in this article with root (super user) privileges.
 
 For example, run
 
-and not
-
-.
+and not.
 
 To run these commands with prompts in the language that you prefer, you can specify a locale.
 

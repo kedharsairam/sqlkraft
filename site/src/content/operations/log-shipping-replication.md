@@ -27,8 +27,6 @@ Article
 
 04/11/2023
 
-Applies to:
-
 SQL Server
 
 Log shipping involves two copies of a single database that typically reside on different
@@ -67,9 +65,7 @@ For information about recovering databases involved in replication without any n
 
 reconfigure replication, see
 
-Back Up and Restore Replicated Databases
-
-.
+Back Up and Restore Replicated Databases.
 
 Be aware of the following requirements and considerations:
 
@@ -83,6 +79,4 @@ Note
 
 Use Always On availability groups, rather than log shipping, to provide availability for the
 
-publication database. For more information, see
-
-.
+publication database. For more information, see.

@@ -33,8 +33,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 : Availability Database Data Synchronization State

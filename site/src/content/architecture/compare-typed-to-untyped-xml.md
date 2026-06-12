@@ -33,8 +33,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -53,13 +51,9 @@ case, the
 
 data type instance is called
 
-typed
+typed. Otherwise, the XML instance is called
 
-. Otherwise, the XML instance is called
-
-untyped
-
-.
+untyped.
 
 The
 
@@ -91,9 +85,7 @@ data type instance. The type information provides more precise
 
 operational semantics to the values contained in the instance than is possible with
 
-untyped
-
-. For example, decimal arithmetic operations can be performed on a decimal
+untyped. For example, decimal arithmetic operations can be performed on a decimal
 
 value, but not on a string value. Because of this, typed XML storage can be made
 

@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -43,9 +41,7 @@ statement contains options for associating a new conversation with an existing
 
 conversation group. For more information on conversation groups, see
 
-Conversation groups
-
-.
+Conversation groups.
 
 A conversation group lock is, in effect, an exclusive lock on a set of messages that share the
 

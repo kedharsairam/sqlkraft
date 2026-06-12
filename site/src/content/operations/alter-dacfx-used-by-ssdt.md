@@ -33,13 +33,11 @@ standalone version of DacFx if an alternative version from SQL Server Data Tools
 
 Follow the process below to alter the version of DacFx used by SQL Server Data Tools (SSDT).
 
-SQL Server Data Tools stores the DacFx files under
+Data Tools stores the DacFx files under
 
 within the Visual Studio program files. For Visual
 
-Studio 2022 Community, the full path is commonly
-
-.
+Studio 2022 Community, the full path is commonly.
 
 Substitution should be done within the same major version of DacFx. For example, if Visual
 
@@ -53,9 +51,7 @@ SSDT DacFx folder and use the context menu to open the file properties.
 
 DacFx is published to
 
-NuGet
-
-. Identify the desired version within the
+NuGet. Identify the desired version within the
 
 Microsoft.SqlServer.DacFx NuGet feed and follow these steps to use it with SSDT:
 

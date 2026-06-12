@@ -27,8 +27,6 @@ Article
 
 11/21/2024
 
-Applies to:
-
 SQL Server
 
 This article describes how to increase the size of a database in SQL Server by using SQL Server
@@ -53,9 +51,7 @@ expand that instance.
 
 2. Expand
 
-, right-click the database to increase, and then select
-
-.
+, right-click the database to increase, and then select.
 
 3. In
 
@@ -75,23 +71,15 @@ and then enter the
 
 values for the new file. For more information, see
 
-Add Data or Log Files to a Database
+Add Data or Log Files to a Database.
 
-.
-
-6. Select
-
-.
+6. Select.
 
 1. Connect to the Database Engine.
 
-2. From the Standard bar, select
+2. From the Standard bar, select.
 
-.
-
-3. Copy and paste the following example into the query window and select
-
-.
+3. Copy and paste the following example into the query window and select.
 
 ```sql
 BACKUP

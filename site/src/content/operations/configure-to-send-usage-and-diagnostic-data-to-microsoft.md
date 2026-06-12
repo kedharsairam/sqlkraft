@@ -17,15 +17,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
 
 By default, Microsoft collects information about how its customers use SQL Server. Specifically,
 
-SQL Server collects information about the installation experience, usage, and performance. This
+collects information about the installation experience, usage, and performance. This
 
 information helps Microsoft improve the product to better meet customer needs. For example,
 
@@ -43,9 +41,7 @@ includes a privacy statement that explains what information we do and don't coll
 
 For more information, see the
 
-privacy statement
-
-.
+privacy statement.
 
 Specifically, Microsoft doesn't send any of the following types of information through this
 
@@ -57,15 +53,13 @@ Any sign-in credentials or other authentication information
 
 Personal data
 
-SQL Server always collects and sends information about the installation experience from the
+always collects and sends information about the installation experience from the
 
 setup process so that we can quickly find and fix any installation problems that the customer is
 
 experiencing. SQL Server can be configured not to send information (on a per-server instance
 
-basis) to Microsoft through
-
-.
+basis) to Microsoft through.
 
 is a configuration script that installs with SQL
 

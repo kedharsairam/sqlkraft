@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -46,8 +44,6 @@ element will be absent.
 XML
 
 Use PATH Mode with FOR XML
-
-Last updated on 11/18/2025
 
 ```sql
 <Middle>

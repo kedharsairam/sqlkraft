@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 If the database mirroring endpoints use Windows Authentication, you can use SQL Server
@@ -43,9 +41,7 @@ For high availability, use Always On availability groups instead.
 
 Important
 
-Database Mirroring in SQL Server is a distinct technology from
-
-. Mirroring to Fabric provides better analytical performance, the ability to unify
+Database Mirroring in SQL Server is a distinct technology from. Mirroring to Fabric provides better analytical performance, the ability to unify
 
 your data estate with OneLake in Fabric, and open access to your data in Delta Parquet
 

@@ -69,15 +69,13 @@ SqlPackage actions
 
 Expand table
 
-```cmd
-.dacpac
+```cmd.dacpac
 /Action:Extract
 /TargetFile:"C:\sqlpackageoutput\output_current_version.dacpac"
 /SourceServerName:"localhost"
 /SourceDatabaseName:"Contoso"
 /p:IgnoreUserLoginMappings=True
-/p:Storage=Memory
-.dacpac
+/p:Storage=Memory.dacpac
 SqlPackage {parameters} {properties} {SQLCMD variables}
 SqlPackage /Action:Extract /TargetFile:
 "C:\sqlpackageoutput\output_current_version.dacpac"

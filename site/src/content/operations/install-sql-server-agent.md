@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -31,7 +29,7 @@ This article describes how to enable or install the SQL Server Agent on Linux.
 
 The
 
-SQL Server Agent
+Agent
 
 runs scheduled SQL Server jobs. Starting with SQL Server 2017 (14.x) CU
 
@@ -63,11 +61,11 @@ Bash
 
 Server:
 
-SQL Server 2017 (14.x) CU 4 and later versions
+2017 (14.x) CU 4 and later versions
 
 Enable the SQL Server Agent
 
-SQL Server 2017 (14.x) CU 3 and earlier versions
+2017 (14.x) CU 3 and earlier versions
 
 Install the SQL Server Agent
 

@@ -20,15 +20,11 @@ When a delta rowgroup has been compressed, the existing delta rowgroup transitio
 
 state to be removed later by the tuple-mover when there's no reference to it, and
 
-the new compressed rowgroup is marked as
-
-.
+the new compressed rowgroup is marked as.
 
 For more information about rowgroup statuses, see
 
-sys.dm_db_column_store_row_group_physical_stats
-
-.
+sys.dm_db_column_store_row_group_physical_stats.
 
 You can force delta rowgroups into the columnstore by using
 

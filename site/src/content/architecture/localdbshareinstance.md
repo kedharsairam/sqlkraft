@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 07/14/2025
 
-Applies to:
-
 SQL Server
 
 Shares the specified SQL Server Express LocalDB instance with other users of the computer,
@@ -39,9 +37,7 @@ C++
 
 [Input] The shared name for the LocalDB instance to share.
 
-[Input] Reserved for future use. Currently should be set to
-
-.
+[Input] Reserved for future use. Currently should be set to.
 
 ```sql
 msoledbsql.h

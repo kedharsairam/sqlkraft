@@ -19,13 +19,11 @@ pubDate: 2025-12-01
 
 08/26/2025
 
-Applies to:
-
 SQL Server
 
 This topic describes how to join a secondary replica to an Always On availability group by using
 
-SQL Server Management Studio, Transact-SQL, or PowerShell in SQL Server. After a secondary
+Management Studio, Transact-SQL, or PowerShell in SQL Server. After a secondary
 
 replica is added to an Always On availability group, the secondary replica must be joined to the
 
@@ -37,9 +35,7 @@ The instance that you intend on joining to the availability group has already be
 
 added
 
-as a secondary replica
-
-.
+as a secondary replica.
 
 To use SQL Server Management Studio (SSMS), you must be connected to the server
 
@@ -73,6 +69,4 @@ add the secondary replica before you can join it to the availability group. For 
 
 information, see
 
-and
-
-.
+and.

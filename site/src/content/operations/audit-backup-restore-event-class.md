@@ -35,8 +35,6 @@ Article
 
 08/27/2024
 
-Applies to:
-
 SQL Server
 
 The

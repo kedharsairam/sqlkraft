@@ -2,7 +2,7 @@
 name: "sys.sp_helplanguage"
 title: "sp_helplanguage"
 category: "general"
-description: "SQL database in Microsoft Fabric Reports information about a particular alternative language or about all languages in SQL Transact-SQL syntax conventions The name of the alternative language for which to display information. is specified, information about the specified language is returned. If language isn't specified, information about all languages in the compatibility view is returned. Langua"
+description: "Reports information about a particular alternative language or about all languages in SQL The name of the alternative language for which to display information. is specified, information about the specified language is returned. If language isn't specified, information about all languages in the compatibility view is returned. Langua"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -15,7 +15,7 @@ syntax: |
 
 ## Description
 
-SQL database in Microsoft Fabric Reports information about a particular alternative language or about all languages in SQL Transact-SQL syntax conventions The name of the alternative language for which to display information. is specified, information about the specified language is returned. If language isn't specified, information about all languages in the compatibility view is returned. Language identification number.
+Reports information about a particular alternative language or about all languages in SQL The name of the alternative language for which to display information. is specified, information about the specified language is returned. If language isn't specified, information about all languages in the compatibility view is returned. Language identification number.
 
 ## Syntax
 

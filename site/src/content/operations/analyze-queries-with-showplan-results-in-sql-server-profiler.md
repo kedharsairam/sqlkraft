@@ -21,11 +21,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Profiler
+Profiler
 
 06/05/2025
-
-Applies to:
 
 SQL Server
 
@@ -55,9 +53,7 @@ option on the
 
 menu.
 
-By extracting and saving individual events by right-clicking a specific event and choosing
-
-.
+By extracting and saving individual events by right-clicking a specific event and choosing.
 
 The Showplan trace events are listed and described in the following table.
 
@@ -71,9 +67,7 @@ column contains the Showplan
 
 in XML format. For more information, see
 
-Performance Statistics Event Class
-
-.
+Performance Statistics Event Class.
 
 Displays the query plan with full compilation details of the executed Transact-SQL
 
@@ -81,9 +75,7 @@ statement. For example, it might display costing estimates and column lists. For
 
 more information, see
 
-Showplan All Event Class
-
-.
+Showplan All Event Class.
 
 Occurs when a query is compiled or recompiled on SQL Server. This is the compile
 
@@ -99,9 +91,7 @@ occurs when a query is compiled. For
 
 more information, see
 
-Showplan All for Query Compile Event Class
-
-.
+Showplan All for Query Compile Event Class.
 
 Displays the query plan with full run-time details of the Transact-SQL statement
 

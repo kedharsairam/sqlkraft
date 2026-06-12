@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to remove both the primary database and the corresponding
@@ -75,8 +73,6 @@ Use the
 
 Object Explorer Details to Monitor Availability Groups (SQL Server Management
 
-Studio)
-
-.
+Studio).
 
 Prerequisites and Restrictions

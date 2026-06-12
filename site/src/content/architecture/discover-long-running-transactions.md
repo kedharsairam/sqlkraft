@@ -42,9 +42,7 @@ option. These options control active and
 
 indirect checkpoints, respectively. For more information about the types of checkpoints, see
 
-Database checkpoints (SQL Server)
-
-.
+Database checkpoints (SQL Server).
 
 More importantly, although a waiting transaction might generate very little log, it holds up
 
@@ -54,7 +52,7 @@ transaction log fills up, the database can't perform any more writes. For more i
 
 see
 
-SQL Server transaction log architecture and management guide
+transaction log architecture and management guide
 
 ,
 
@@ -64,9 +62,7 @@ transaction log (SQL Server Error 9002)
 
 , and
 
-The transaction log
-
-.
+The transaction log.
 
 To look for long-running transactions, use one of the following:
 
@@ -93,7 +89,7 @@ recovery interval
 ```
 
 ```sql
-ALTER DATABASE ... SET TARGET_RECOVERY_TIME
+ALTER DATABASE. SET TARGET_RECOVERY_TIME
 ```
 
 `sys.dm_tran_database_transactions`

@@ -21,9 +21,7 @@ Studio
 
 tasks. For more information, see
 
-Restore and recovery overview (SQL Server)
-
-.
+Restore and recovery overview (SQL Server).
 
 This table describes interactions between the {
 

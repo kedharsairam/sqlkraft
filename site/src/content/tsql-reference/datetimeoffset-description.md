@@ -2,12 +2,10 @@
 name: "datetimeoffset description"
 title: "Datetimeoffset description"
 category: "data-types"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -107,15 +105,11 @@ the fractional seconds.
 
 is two digits that range from
 
-to
-
-.
+to.
 
 is two digits that range from
 
-to
-
-.
+to.
 
 Expand table
 

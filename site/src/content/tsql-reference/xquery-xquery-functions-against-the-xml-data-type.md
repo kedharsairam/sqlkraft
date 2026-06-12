@@ -11,17 +11,13 @@ pubDate: 2025-12-01
 
 08/21/2025
 
-Applies to:
-
 SQL Server
 
 This topic and its subtopics describe the functions you can use when specifying XQuery against the
 
 data type. For the W3C specifications, see http://www.w3.org/TR/2004/WD-xpath-
 
-functions-20040723
-
-.
+functions-20040723.
 
 The XQuery functions belong to the http://www.w3.org/2004/07/xpath-functions
 

@@ -14,25 +14,19 @@ Records all permissions for a securable object for a UserToken or SecContextToke
 
 Key is the class and ID of a securable object. The entry is a series of lists containing
 
-audit IDs for each auditable operation on an object. Server audit is based on
+audit IDs for each auditable operation on an object.
 
 permission checks, detailing each auditable operation a specific user has on a
 
 particular object.
 
-This cache stores query permission check results for individual queries, with one
-
-entry per query plan. It's the most important and commonly used cache, as it's the
+entry per query plan.
 
 first thing checked during query execution. To prevent ad hoc queries from flooding
 
-the cache, it only stores query permission check results if the query is executed three
-
 times.
 
-This records all permissions for an object in the database for all users within the
-
-database. The difference between TokenPerm and ObjectPerm is that TokenPerm is
+database.
 
 for a specific user, while ObjectPerm can be for all users in the database.
 
@@ -56,25 +50,17 @@ Access check result (ACR) store. Every login has their own separate security
 
 context user store.
 
-Access check result store
-
 -
 
 -
 
-Every user has individual ACR user store. For example, two logins with five users
-
-in two different databases amounts to two
+Every user has individual ACR user store.
 
 and 10
 
-different
-
-.
+different.
 
 ﾉ
-
-Expand table
 
 `TokenPerm`
 

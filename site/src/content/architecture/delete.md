@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -39,7 +37,7 @@ Limitations and Restrictions
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 
@@ -55,9 +53,7 @@ with the DROP CONSTRAINT clause in Transact-SQL. For
 
 more information, see
 
-Delete Primary Keys
-
-.
+Delete Primary Keys.
 
 Requires ALTER permission on the table or view. This permission is granted by default to the
 

@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to change the IP address resource in an Always On Failover Cluster
@@ -45,9 +43,7 @@ Before you begin, review the following SQL Server Books Online topic:
 
 Before Installing Failover
 
-Clustering
-
-.
+Clustering.
 
 To maintain or update an FCI, you must be a local administrator with permission to logon as a
 
@@ -79,6 +75,4 @@ to close the dialog box.
 
 6. In the right-hand pane, right-click the SQL IP Address1(failover cluster instance name)
 
-and select
-
-. You will see the SQL IP Address1(failover cluster instance name),
+and select. You will see the SQL IP Address1(failover cluster instance name),

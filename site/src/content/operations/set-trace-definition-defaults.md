@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -35,9 +33,7 @@ server. You can set default trace templates for SQL Server or for Analysis Servi
 
 menu, select
 
-, and then select
-
-.
+, and then select.
 
 2. In the
 
@@ -55,18 +51,14 @@ list, select the name of the template that you want to use as
 
 the trace definition default.
 
-4. Select
-
-.
+4. Select.
 
 5. If necessary, select the
 
 tab to modify the template.
 
-6. Select
+6. Select.
 
-.
+Profiler Templates
 
-SQL Server Profiler Templates
-
-SQL Server Profiler
+Profiler

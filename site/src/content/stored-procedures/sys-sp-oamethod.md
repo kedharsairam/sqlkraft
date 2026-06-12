@@ -2,7 +2,7 @@
 name: "sys.sp_oamethod"
 title: "sp_OAMethod"
 category: "general"
-description: "Calls a method of an OLE object. Transact-SQL syntax conventions The object token of an OLE object that was previously created by using The method name of the OLE object to call. The return value of the method of the OLE object. If specified, it must be a local variable of the Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered o"
+description: "Calls a method of an OLE object. The object token of an OLE object that was previously created by using The method name of the OLE object to call. The return value of the method of the OLE object. If specified, it must be a local variable of the Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered o"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -20,7 +20,7 @@ syntax: |
 
 ## Description
 
-Calls a method of an OLE object. Transact-SQL syntax conventions The object token of an OLE object that was previously created by using The method name of the OLE object to call. The return value of the method of the OLE object. If specified, it must be a local variable of the Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered out of order, an error
+Calls a method of an OLE object. The object token of an OLE object that was previously created by using The method name of the OLE object to call. The return value of the method of the OLE object. If specified, it must be a local variable of the Arguments for extended stored procedures must be entered in the specific order as section.
 
 ## Syntax
 
@@ -32,7 +32,7 @@ OUTPUT
 ]
 [ , [ @parametername = ] parameter [
 OUTPUT
-] [ ...n ] ]
+] [.n ] ]
 [ ; ]
 ```
 

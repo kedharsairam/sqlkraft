@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -52,9 +50,7 @@ home page.
 
 For a list of limitations and restrictions related to creating DML triggers, see
 
-CREATE TRIGGER
-
-.
+CREATE TRIGGER.
 
 Requires
 
@@ -62,7 +58,7 @@ permission on the table or view on which the trigger is being created.
 
 You can use one of the following methods:
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 
@@ -80,21 +76,15 @@ database, expand
 
 , and then
 
-expand the table
-
-.
+expand the table.
 
 3. Right-click
 
-, and then select
-
-.
+, and then select.
 
 4. On the
 
-menu, select
-
-. Alternatively, you
+menu, select. Alternatively, you
 
 can press (Ctrl-Shift-M) to open the
 

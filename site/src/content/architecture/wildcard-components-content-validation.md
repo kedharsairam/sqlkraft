@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -83,11 +81,9 @@ validation for elements of the
 
 type. Because
 
-SQL Server 2005 (9.x) didn't support lax validation, strict validation was applied for elements of
+2005 (9.x) didn't support lax validation, strict validation was applied for elements of
 
-the
-
-. Beginning with SQL Server 2008 (10.0.x), lax validation is supported. Content of
+the. Beginning with SQL Server 2008 (10.0.x), lax validation is supported. Content of
 
 elements of type
 

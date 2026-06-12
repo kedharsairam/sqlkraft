@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/07/2025
 
-Applies to:
-
 SQL Server
 
 This article describes how to create a database in SQL Server by using SQL Server Management
@@ -31,9 +29,7 @@ Studio or Transact-SQL.
 
 To create a database in Azure SQL Database using T-SQL, see
 
-CREATE DATABASE
-
-.
+CREATE DATABASE.
 
 A maximum of 32,767 databases can be specified on an instance of SQL Server.
 

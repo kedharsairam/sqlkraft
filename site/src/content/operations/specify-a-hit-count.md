@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 09/09/2025
 
-Applies to:
-
 SQL Server
 
 A breakpoint hit count is a counter that the Transact-SQL debugger increments each time the
@@ -55,9 +53,7 @@ breakpoint condition are satisfied. For information about specifying other actio
 
 Specify a
 
-breakpoint action
-
-.
+breakpoint action.
 
 1. In the editor window, right-click the breakpoint glyph, and then select
 
@@ -85,6 +81,4 @@ from the dropdown list.
 
 ,
 
-, or
-
-.
+, or.

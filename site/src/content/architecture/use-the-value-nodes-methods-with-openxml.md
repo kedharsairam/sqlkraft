@@ -37,8 +37,6 @@ Article
 
 10/17/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -109,9 +107,7 @@ methods
 
 relative to those references.
 
-SQL Server 2000 provides the capability for generating a rowset from an XML instance by using
-
-. You can specify the relational schema for the rowset and how values inside the
+2000 provides the capability for generating a rowset from an XML instance by using. You can specify the relational schema for the rowset and how values inside the
 
 XML instance map to columns in the rowset.
 

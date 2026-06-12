@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 1775 16 No Cannot create foreign key '%.*ls' because it references object '%.*ls' whose PRIMARY KEY index '%.\*ls' is disabled. 1776 16 No There are no primary or candidate keys in the refe
+Description 1775 16 No Cannot create foreign key '%.*ls' because it references object '%.*ls' whose PRIMARY KEY index '%.\*ls' is disabled.
 
 ## Severity
 

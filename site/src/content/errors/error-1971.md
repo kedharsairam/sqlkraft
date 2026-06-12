@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 1971 16 No Cannot disable index '%.*ls' on table '%.*ls'. Permission denied to disable foreign key '%.*ls' on table '%.*ls' that uses this index. 1972 16 No Cannot disable clustered index
+Description 1971 16 No Cannot disable index '%.*ls' on table '%.*ls'. Permission denied to disable foreign key '%.*ls' on table '%.*ls' that uses this index.
 
 ## Severity
 

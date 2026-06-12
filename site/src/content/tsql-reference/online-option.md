@@ -13,9 +13,7 @@ index is disabled, the
 
 operation must be performed with
 
-set to
-
-. If a nonclustered index is disabled and isn't associated with a disabled
+set to. If a nonclustered index is disabled and isn't associated with a disabled
 
 clustered index, the
 
@@ -23,9 +21,7 @@ operation can be performed with
 
 set to
 
-or
-
-.
+or.
 
 The following guidelines apply for performing index operations online:
 
@@ -51,9 +47,7 @@ WAIT_AT_LOW_PRIORITY
 
 For more information, see
 
-Perform index operations online
-
-.
+Perform index operations online.
 
 : SQL Server 2019 (15.x) and later versions, Azure SQL Database, SQL database in
 
@@ -93,9 +87,7 @@ When indexes with 128 extents or more are dropped or rebuilt, the Database Engin
 
 defers the actual page deallocations, and their associated locks, until after the transaction
 
-commits. For more information, see
-
-.
+commits. For more information, see.
 
 The
 
@@ -133,9 +125,7 @@ priority locks if the index operation is blocked, before taking action. For more
 
 information, see
 
-WAIT_AT_LOW_PRIORITY with online index operations
-
-.
+WAIT_AT_LOW_PRIORITY with online index operations.
 
 To pause the index operation immediately, you can execute the
 

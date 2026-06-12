@@ -36,9 +36,7 @@ system failure before the log record is hardened to disk. For more information o
 
 transaction durability, see the article
 
-Control Transaction Durability
-
-.
+Control Transaction Durability.
 
 Transaction management features that enforce transaction atomicity and consistency. After
 
@@ -68,9 +66,7 @@ in ODBC
 
 , and
 
-Transactions in SQL Server Native Client
-
-.
+Transactions in SQL Server Native Client.
 
 By default, transactions are managed at the connection level. When a transaction is started on a
 
@@ -86,9 +82,7 @@ back, it's automatically rolled back by the Database Engine. For more informatio
 
 Using
 
-Multiple Active Result Sets (MARS)
-
-.
+Multiple Active Result Sets (MARS).
 
 ### Explicit transactions
 

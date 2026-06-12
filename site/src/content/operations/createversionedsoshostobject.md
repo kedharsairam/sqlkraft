@@ -57,10 +57,10 @@ Host object returned.
 
 ```cmd
 CreateVersionedSOSHostObject(
-REFIID                 interfacIid,
+REFIID interfacIid,
 const
 SOSHOST_CLIENTID clientId,
 const
-PCWSTR           szClientName
+PCWSTR szClientName
 );
 ```

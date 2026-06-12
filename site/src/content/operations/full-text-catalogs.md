@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 To mirror a database that has a full-text catalog, use backup as usual to create a full database
@@ -37,9 +35,7 @@ backup of the principal database, and then restore the backup to copy the databa
 
 mirror server. For more information, see
 
-Prepare a Mirror Database for Mirroring (SQL Server)
-
-.
+Prepare a Mirror Database for Mirroring (SQL Server).
 
 In a newly created mirror database, the full-text catalog is the same as when the database was
 

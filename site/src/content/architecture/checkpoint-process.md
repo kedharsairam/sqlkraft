@@ -24,9 +24,7 @@ modifying the page during the write, but still allows readers to use it.
 
 For more information about disk I/O page protection options, see
 
-Buffer management
-
-.
+Buffer management.
 
 A dirty page is written to disk in one of three ways:
 
@@ -78,16 +76,8 @@ database, or when the instance of SQL Server is stopped.
 
 For more information, see
 
-Checkpoints and the active portion of the log
-
-.
+Checkpoints and the active portion of the log.
 
 Pages and extents architecture guide
 
 Read data pages in the Database Engine
-
-Last updated on 11/18/2025
-
-Related content
-
-`CHECKPOINT`

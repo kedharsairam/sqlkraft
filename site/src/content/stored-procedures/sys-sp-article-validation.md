@@ -2,7 +2,7 @@
 name: "sys.sp_article_validation"
 title: "sp_article_validation"
 category: "general"
-description: "Initiates a data validation request for the specified article. This stored procedure is executed at the Publisher on the publication database and at the Subscriber on the subscription database. Transact-SQL syntax conventions The name of the publication in which the article exists."
+description: "Initiates a data validation request for the specified article. This stored procedure is executed at the Publisher on the publication database and at the Subscriber on the subscription database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -27,7 +27,7 @@ syntax: |
 
 ## Description
 
-Initiates a data validation request for the specified article. This stored procedure is executed at the Publisher on the publication database and at the Subscriber on the subscription database. Transact-SQL syntax conventions The name of the publication in which the article exists. The name of the article to validate. Specifies if only the rowcount for the table is returned. , perform a rowcount and a SQL Server 7.0 compatible checksum.
+Initiates a data validation request for the specified article. This stored procedure is executed at the Publisher on the publication database and at the Subscriber on the subscription database.
 
 ## Syntax
 

@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article describes ways to identify unhealthy extensions that aren't installed correctly,
@@ -47,9 +45,7 @@ Tip
 
 Create your own custom dashboard with this file from the sql-server-samples GitHub
 
-repository:
-
-.
+repository:.
 
 
 

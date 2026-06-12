@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -65,9 +63,7 @@ names are often chosen to avoid collation issues and naming conflicts. For more 
 
 on naming, see
 
-Naming Service Broker Objects
-
-.
+Naming Service Broker Objects.
 
 CREATE CONTRACT (Transact-SQL)
 

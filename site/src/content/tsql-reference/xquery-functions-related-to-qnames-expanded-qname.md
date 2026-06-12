@@ -12,8 +12,6 @@ pubDate: 2025-12-01
 
 08/21/2025
 
-Applies to:
-
 SQL Server
 
 Returns a value of the xs:QName type with the namespace URI specified in the
@@ -24,9 +22,7 @@ and
 
 the local name specified in the
 
-$paramLocal
-
-. If
+$paramLocal. If
 
 $paramURI
 
@@ -73,6 +69,6 @@ to xdt:untypedAtomic. However, this is not
 supported. A solution is provided in an example later in this topic.
 
 ```sql
-<e> expanded-QName(...) </e>
+<e> expanded-QName(.) </e>
 expanded-QName() fn:expanded-QName($paramURI as xs:string?, $paramLocal as xs:string?) as xs:QName?
 ```

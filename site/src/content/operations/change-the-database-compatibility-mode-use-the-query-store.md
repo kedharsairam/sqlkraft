@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 06/04/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -91,17 +89,13 @@ The upgrade process to enable new query processor functionality is related to th
 
 servicing model of the product. Some of those fixes are released under
 
-Trace Flag 4199
-
-.
+Trace Flag 4199.
 
 Customers needing fixes can opt in to those fixes without causing unexpected regressions for
 
 other customers. The post-release servicing model for query processor hotfixes is documented
 
-here
-
-. Beginning with SQL Server 2016 (13.x), moving to a new compatibility level implies that
+here. Beginning with SQL Server 2016 (13.x), moving to a new compatibility level implies that
 
 Trace Flag 4199 is no longer needed, because those fixes are now enabled by default in the
 

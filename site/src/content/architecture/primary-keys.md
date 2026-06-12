@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -69,9 +67,7 @@ makes sure that every row in the
 
 table has a unique combination of
 
-and
-
-. This prevents the insertion of duplicate rows.
+and. This prevents the insertion of duplicate rows.
 
 A table can contain only one primary key constraint.
 

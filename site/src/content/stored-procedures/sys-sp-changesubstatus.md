@@ -2,7 +2,7 @@
 name: "sys.sp_changesubstatus"
 title: "sp_changesubstatus"
 category: "general"
-description: "Changes the status of an existing Subscriber. This stored procedure is executed at the Publisher Transact-SQL syntax conventions"
+description: "Changes the status of an existing Subscriber. This stored procedure is executed at the Publisher"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -78,9 +78,7 @@ syntax: |
 
 ## Description
 
-Changes the status of an existing Subscriber. This stored procedure is executed at the Publisher Transact-SQL syntax conventions
-
-## Syntax
+Changes the status of an existing Subscriber. This stored procedure is executed at the Publisher ## Syntax
 
 ```sql
 sp_changesubstatus
@@ -155,16 +153,12 @@ N
 
 ## Arguments
 
-Applies to:
-
 Azure SQL Managed Instance
 
 Changes the status of an existing Subscriber. This stored procedure is executed at the Publisher
 
 on the publication database.
 
-Transact-SQL syntax conventions
-
 ## Permissions
 
-changes the status of the Subscriber in the table with the changed status. If required, it updates the article status in the table to indicate active or inactive. If required, it sets the replication flag on or off in the table for the replicated table. Only members of the fixed server role, fixed database role, or the creator of the subscription can execute . sp_addsubscription (Transact-SQL) sp_dropsubscription (Transact-SQL) sp_helpdistributor (Transact-SQL) sp_helpsubscription (Transact-SQL) System stored procedures (Transact-SQL) Related content
+changes the status of the Subscriber in the table with the changed status. If required, it updates the article status in the table to indicate active or inactive. If required, it sets the replication flag on or off in the table for the replicated table. Only members of the fixed server role, fixed database role, or the creator of the subscription can execute. sp_addsubscription (Transact-SQL) sp_dropsubscription (Transact-SQL) sp_helpdistributor (Transact-SQL) sp_helpsubscription (Transact-SQL) System stored procedures (Transact-SQL)

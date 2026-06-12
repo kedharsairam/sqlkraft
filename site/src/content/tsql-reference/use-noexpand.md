@@ -17,9 +17,7 @@ Granularity hints:
 
 ,
 
-, or
-
-.
+, or.
 
 Isolation level hints:
 
@@ -29,9 +27,7 @@ Isolation level hints:
 
 ,
 
-,
-
-.
+,.
 
 A filtered index can be used as a table hint, but causes the query optimizer to generate error
 
@@ -53,9 +49,7 @@ query optimizer can't use the filtered index hint and generates error 8622. For 
 
 information, see
 
-Create filtered indexes
-
-.
+Create filtered indexes.
 
 The query optimizer doesn't consider an index hint if the
 
@@ -63,15 +57,11 @@ options don't have the required
 
 values for filtered indexes. For more information, see
 
-CREATE INDEX
-
-.
+CREATE INDEX.
 
 applies only to
 
-indexed views
-
-. An indexed view is a view with a unique clustered index
+indexed views. An indexed view is a view with a unique clustered index
 
 created on it. If a query contains references to columns that are present both in an indexed
 
@@ -81,9 +71,7 @@ the best method for executing the query, the query optimizer uses the index on t
 
 functionality is called
 
-indexed view matching
-
-. Automatic use of an indexed view by the query
+indexed view matching. Automatic use of an indexed view by the query
 
 optimizer is supported only in specific editions of SQL Server. Azure SQL Database and Azure
 
@@ -93,9 +81,7 @@ hint.
 
 For more information, see
 
-Query processing architecture guide
-
-.
+Query processing architecture guide.
 
 For a list of features supported by the editions of SQL Server on Windows, see:
 
@@ -115,9 +101,7 @@ view that is referenced with the
 
 hint, the following
 
-options must be set to
-
-.
+options must be set to.
 
 ANSI_NULLS
 
@@ -135,17 +119,13 @@ is implicitly set to
 
 when
 
-is set to
-
-. Therefore, you don't have
+is set to. Therefore, you don't have
 
 to manually adjust this setting.
 
 Also, the
 
-option must be set to
-
-.
+option must be set to.
 
 To force the query optimizer to use an index for an indexed view, specify the
 

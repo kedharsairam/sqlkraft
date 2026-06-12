@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 You can configure a SQL Server Always On availability group for read-scale workloads on
@@ -41,9 +39,7 @@ business continuity and that can include readable-secondary replicas. To create 
 
 availability architecture, see
 
-Create and configure availability groups on Windows
-
-.
+Create and configure availability groups on Windows.
 
 An architecture that supports only read-scale workloads.
 
@@ -73,9 +69,7 @@ can include replicas that are hosted on a
 
 variety of operating system platforms. It cannot support high availability. For the Linux
 
-operating system, see
-
-.
+operating system, see.
 
 ７
 

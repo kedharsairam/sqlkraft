@@ -12,8 +12,6 @@ pubDate: 2025-12-01
 
 09/29/2025
 
-Applies to:
-
 SQL Server
 
 This article provides general examples of XQuery use.
@@ -41,10 +39,9 @@ namespace
 <Product
 ProductModelID
 =
-"..."
+"."
 >
-<Weight>
-...
+<Weight>.
 </Weight>
 </Product>
 SELECT
@@ -52,7 +49,7 @@ CatalogDescription.query(
 '
 declare namespace p1="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelDescription";
-<Product  ProductModelID="{ (/p1:ProductDescription/@ProductModelID)[1] }">
+<Product ProductModelID="{ (/p1:ProductDescription/@ProductModelID)[1] }">
 {
 /p1:ProductDescription/p1:Specifications/Weight
 }

@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -81,9 +79,7 @@ This avoids code page conversion issues. For other considerations, see
 
 Storage
 
-differences between UTF-8 and UTF-16
-
-.
+differences between UTF-8 and UTF-16.
 
 Up to SQL Server 2017 (14.x), replace all uses of the
 
@@ -97,9 +93,7 @@ types with
 
 ,
 
-, and
-
-. If using a
+, and. If using a
 
 supplementary character (SC)
 
@@ -109,9 +103,7 @@ being encoded using UCS-2. This avoids code page conversion issues. For more
 
 information, see
 
-Collation and Unicode Support
-
-.
+Collation and Unicode Support.
 
 When doing month and day-of-week comparisons and operations, use the numeric date
 
@@ -151,9 +143,7 @@ data type is deprecated and should not be used in new development work.
 
 Plan to convert
 
-data to
-
-.
+data to.
 
 ```sql
 DATENAME(MONTH,GETDATE())

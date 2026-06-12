@@ -2,7 +2,7 @@
 name: "sys.sp_addsubscriber_schedule"
 title: "sp_addsubscriber_schedule"
 category: "general"
-description: "Adds a schedule for the Distribution Agent and Merge Agent. This stored procedure is executed at the Publisher on any database. Transact-SQL syntax conventions unique in the database, must not already exist, and can't be , and can be one of these values."
+description: "Adds a schedule for the Distribution Agent and Merge Agent. This stored procedure is executed at the Publisher on any database. unique in the database, must not already exist, and can't be , and can be one of these values."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -30,7 +30,7 @@ syntax: |
 
 ## Description
 
-Adds a schedule for the Distribution Agent and Merge Agent. This stored procedure is executed at the Publisher on any database. Transact-SQL syntax conventions unique in the database, must not already exist, and can't be , and can be one of these values.
+Adds a schedule for the Distribution Agent and Merge Agent. This stored procedure is executed at the Publisher on any database. unique in the database, must not already exist, and can't be , and can be one of these values.
 
 ## Syntax
 

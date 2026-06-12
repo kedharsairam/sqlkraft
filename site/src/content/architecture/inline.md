@@ -30,8 +30,6 @@ Complex expressions based on columnar data - evaluate the need to instead create
 
 persisted computed columns, which can be indexed;
 
-Applies to:
-
 Foreign platform (such as Oracle, DB2, MySQL, and Sybase) and SQL Server to SQL
 
 Server migration.

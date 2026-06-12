@@ -21,11 +21,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server on Linux
+on Linux
 
 07/03/2025
-
-Applies to:
 
 SQL Server
 
@@ -69,9 +67,7 @@ on a Linux-based NFS solution is shown, where
 
 the folder is restricted to
 
-and
-
-.
+and.
 
 Output
 

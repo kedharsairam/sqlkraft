@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 09/03/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -41,7 +39,7 @@ When the stored procedure also specifies an
 
 clause, two impersonations occur.
 
-SQL Server first impersonates the user specified for the queue and executes the stored
+first impersonates the user specified for the queue and executes the stored
 
 procedure. When the stored procedure executes, the procedure impersonates the user
 
@@ -65,9 +63,7 @@ Identity and access control
 
 and
 
-Service Broker dialog security
-
-.
+Service Broker dialog security.
 
 Service Broker executes internally activated service programs on a background session distinct
 

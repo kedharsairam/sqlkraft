@@ -15,9 +15,7 @@ Don't confuse the date
 
 parameter with the data type.
 
-also accepts a string literal (of any string type) that can resolve to a
-
-.
+also accepts a string literal (of any string type) that can resolve to a.
 
 The returned data type for is dynamic.
 
@@ -25,11 +23,9 @@ The returned data type for is dynamic.
 
 same data type (and, if applicable, the same fractional time scale) as the input date. For example, if
 
-was given a input date, it would return a
-. If it was given a string literal that could resolve to a
+was given a input date, it would return a. If it was given a string literal that could resolve to a
 
-, would return a
-.
+, would return a.
 
 ７
 
@@ -41,9 +37,7 @@ The weekday
 
 , and nanosecond
 
-T-SQL dateparts aren't supported for
-
-.
+T-SQL dateparts aren't supported for.
 
 time
 

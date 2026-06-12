@@ -2,7 +2,7 @@
 name: "sys.sp_cursorprepexec"
 title: "sp_cursorprepexec"
 category: "general"
-description: "Analytics Platform System (PDW) Compiles a plan for the submitted cursor statement or batch, then creates and populates the This procedure is invoked by specifying in a tabular data stream (TDS) packet. Transact-SQL syntax conventions parameter is a required parameter that must be supplied on all subsequent procedures that act upon this cursor, for example, Arguments for extended stored procedures"
+description: "Compiles a plan for the submitted cursor statement or batch, then creates and populates the This procedure is invoked by specifying in a tabular data stream (TDS) packet. parameter is a required parameter that must be supplied on all subsequent procedures that act upon this cursor, for example, Arguments for extended stored procedures"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -20,7 +20,7 @@ syntax: |
 
 ## Description
 
-Analytics Platform System (PDW) Compiles a plan for the submitted cursor statement or batch, then creates and populates the This procedure is invoked by specifying in a tabular data stream (TDS) packet. Transact-SQL syntax conventions parameter is a required parameter that must be supplied on all subsequent procedures that act upon this cursor, for example, Arguments for extended stored procedures must be entered in the specific order as
+Analytics Platform System (PDW) Compiles a plan for the submitted cursor statement or batch, then creates and populates the This procedure is invoked by specifying in a tabular data stream (TDS) packet.
 
 ## Syntax
 
@@ -33,7 +33,7 @@ OUTPUT
 options
 [ , scrollopt [ , ccopt [ , rowcount ] ] ]
 [ ,
-'@parameter_name [ , ...n ]'
+'@parameter_name [ ,.n ]'
 ]
 ```
 

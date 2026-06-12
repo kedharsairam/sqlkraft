@@ -25,9 +25,7 @@ more information about temporary tables and inline index creation, see
 
 CREATE TABLE
 
-(Transact-SQL)
-
-.
+(Transact-SQL).
 
 CHECK constraints, DEFAULT values, and computed columns in the
 
@@ -97,16 +95,12 @@ procedures so that recompilation takes place on smaller units is helpful.
 
 Database compatibility level 150 improves the performance of table variables with the
 
-introduction of
-
-. For more information, see
-
-.
+introduction of. For more information, see.
 
 `INTO`
 
 ```sql
-SELECT ... INTO
+SELECT. INTO
 ```
 
 `sp_executesql`

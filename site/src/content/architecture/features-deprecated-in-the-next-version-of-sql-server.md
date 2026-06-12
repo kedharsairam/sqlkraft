@@ -1,16 +1,14 @@
 ---
 title: "Features deprecated in the next version of SQL Server"
 topic: "io-fundamentals"
-description: "SQL Server 2016 (13.x) and later versions"
+description: "2016 (13.x) and later versions"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
 
-Applies to:
+2016 (13.x) and later versions
 
-SQL Server 2016 (13.x) and later versions
-
-SQL Server 2016 (13.x) deprecates:
+2016 (13.x) deprecates:
 
 Data Quality Services (DQS)
 
@@ -46,17 +44,13 @@ features as soon as possible.
 
 For SQL Server 2017 (14.x), see
 
-Deprecated Database Engine features in SQL Server 2017 (14.x)
-
-.
+Deprecated Database Engine features in SQL Server 2017 (14.x).
 
 You can monitor the use of deprecated features by using the SQL Server Deprecated Features Object performance counter and trace events. For
 
 more information, see
 
-Use SQL Server Objects
-
-.
+Use SQL Server Objects.
 
 The value of these counters is also available by executing the following statement:
 

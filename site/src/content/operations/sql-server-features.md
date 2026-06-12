@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -63,9 +61,7 @@ The application frequently uses AJAX calls to query these tables: Persons, Custo
 
 Suppliers, and StockItems. The calls return the data in JSON format. For example, see
 
-the stored procedure
-
-.
+the stored procedure.
 
 JSON
 
@@ -105,9 +101,7 @@ action, use the corresponding script in sample-script.zip, which is part of the
 
 release of
 
-the sample
-
-.
+the sample.
 
 Real-time
 
@@ -127,17 +121,13 @@ the operational workload. Running transactions and analytics in the same databas
 
 also referred to as
 
-Hybrid Transactional/Analytical Processing (HTAP)
-
-. To see this in
+Hybrid Transactional/Analytical Processing (HTAP). To see this in
 
 action, use the corresponding script in sample-script.zip, which is part of the
 
 release of
 
-the sample
-
-.
+the sample.
 
 ﾉ
 

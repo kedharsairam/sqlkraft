@@ -23,9 +23,7 @@ pubDate: 2025-12-01
 
 07/11/2025
 
-Applies to:
-
-SQL Server 2019 (15.x) - Linux and later versions
+2019 (15.x) - Linux and later versions
 
 Learn how to install the
 
@@ -35,7 +33,7 @@ component for SQL Server on Linux. The Java
 
 Language Extension is part of
 
-SQL Server Language Extensions
+Language Extensions
 
 and an add-on to the Database
 
@@ -85,9 +83,7 @@ containers with Language Extensions, but you can create one from the SQL Server
 
 containers using
 
-an example template available on GitHub
-
-.
+an example template available on GitHub.
 
 Language Extensions and
 
@@ -101,9 +97,7 @@ in this article. For more information, see
 
 Run Python and R scripts with Machine Learning
 
-Services on SQL Server 2019 Big Data Clusters
-
-.
+Services on SQL Server 2019 Big Data Clusters.
 
 On an internet-connected device, packages are downloaded and installed independently of the
 

@@ -27,8 +27,6 @@ Article
 
 07/22/2024
 
-Applies to:
-
 SQL Server
 
 Sometimes you might find it useful to copy a database from one computer to another. Reasons
@@ -47,9 +45,7 @@ upgrade a SQL Server database to a later version. For more information, see
 
 Use the Copy
 
-Database Wizard
-
-.
+Database Wizard.
 
 Restore a database backup
 
@@ -61,9 +57,7 @@ from one computer to another for various reasons. For information on using backu
 
 restore to copy a database, see
 
-Copy Databases with Backup and Restore
-
-.
+Copy Databases with Backup and Restore.
 
 Use the Copy Database Wizard
 
@@ -75,13 +69,9 @@ Note
 
 To set up a mirror database for database mirroring, you must restore the database
 
-onto the mirror server by using
+onto the mirror server by using.
 
-.
-
-For more information, see
-
-.
+For more information, see.
 
 ```sql
 RESTORE DATABASE <database_name> WITH NORECOVERY

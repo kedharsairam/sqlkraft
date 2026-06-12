@@ -27,8 +27,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -137,9 +135,7 @@ the
 
 clause of
 
-ALTER TABLE
-
-.
+ALTER TABLE.
 
 To create a new database, you need the
 

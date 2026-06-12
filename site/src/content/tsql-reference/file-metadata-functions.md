@@ -51,9 +51,7 @@ When you use
 
 , it's important to understand how SQL Server handles
 
-impersonation. For information about security considerations, see
-
-.
+impersonation. For information about security considerations, see.
 
 ７
 
@@ -83,9 +81,7 @@ sections, you'll find short descriptions along samples.
 
 This function returns the file name that the row originates from.
 
-Return data type is
-
-. For optimal performance, always cast result of filename
+Return data type is. For optimal performance, always cast result of filename
 
 function to appropriate data type. If you use character data type, make sure appropriate length is
 
@@ -127,9 +123,7 @@ specified in the parameter. For example, parameter value 1 would return part of 
 
 matches the first wildcard.
 
-Return data type is
-
-. For optimal performance, always cast result of
+Return data type is. For optimal performance, always cast result of
 
 function to appropriate data type. If you use character data type, make sure appropriate length is
 
@@ -153,7 +147,7 @@ to be read.
 
 ### varbinary(max)
 
-`OPENROWSET(BULK...)`
+`OPENROWSET(BULK.)`
 
 `SQLCHAR`
 

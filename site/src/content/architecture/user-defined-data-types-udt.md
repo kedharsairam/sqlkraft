@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -44,8 +42,6 @@ serialization, and use an explicit cast to XML in the
 select clause.
 
 FOR XML support for various SQL Server data types
-
-Last updated on 11/18/2025
 
 ```sql
 FOR XML

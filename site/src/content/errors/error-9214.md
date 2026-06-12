@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 9214 16 No The query notification delivery failed to decode the error message from the Service Broker. 9215 16 No Query notification delivery failed to encode message. Delivery failed for
+Description 9214 16 No The query notification delivery failed to decode the error message from the Service Broker. 9215 16 No Query notification delivery failed to encode message.
 
 ## Severity
 

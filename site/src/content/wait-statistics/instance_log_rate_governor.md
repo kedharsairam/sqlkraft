@@ -14,11 +14,11 @@ Occurs when the instance-level log rate governor throttles log generation. Azure
 
 ## Key Metrics
 
-| Metric    | Description                  |
+| Metric | Description |
 | --------- | ---------------------------- |
 | Wait Type | `INSTANCE_LOG_RATE_GOVERNOR` |
-| Category  | Triage                       |
-| Severity  | HIGH                         |
+| Category | Triage |
+| Severity | HIGH |
 
 ## Troubleshooting
 
@@ -28,10 +28,10 @@ Use the following query to identify the top queries contributing to `INSTANCE_LO
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'INSTANCE_LOG_RATE_GOVERNOR'
 ORDER BY wait_time_ms DESC;

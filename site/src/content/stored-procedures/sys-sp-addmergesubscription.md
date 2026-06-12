@@ -2,7 +2,7 @@
 name: "sys.sp_addmergesubscription"
 title: "sp_addmergesubscription"
 category: "general"
-description: "Creates a push or pull merge subscription. This stored procedure is executed at the Publisher Transact-SQL syntax conventions"
+description: "Creates a push or pull merge subscription. This stored procedure is executed at the Publisher"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -75,9 +75,7 @@ syntax: |
 
 ## Description
 
-Creates a push or pull merge subscription. This stored procedure is executed at the Publisher Transact-SQL syntax conventions
-
-## Syntax
+Creates a push or pull merge subscription. This stored procedure is executed at the Publisher ## Syntax
 
 ```sql
 sp_addmergesubscription
@@ -149,4 +147,4 @@ N
 
 ## Permissions
 
-SQL Only members of the fixed server role or fixed database role can execute . Create a push subscription Create a Pull Subscription Advanced Merge Replication Conflict - Interactive Resolution Related content
+SQL Only members of the fixed server role or fixed database role can execute. Create a push subscription Create a Pull Subscription Advanced Merge Replication Conflict - Interactive Resolution

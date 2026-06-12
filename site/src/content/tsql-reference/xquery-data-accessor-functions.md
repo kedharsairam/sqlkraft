@@ -15,8 +15,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 The topics in this section discuss and provide sample code for the data-accessor functions.

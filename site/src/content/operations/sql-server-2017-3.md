@@ -15,17 +15,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2017 (14.x) on Linux
+2017 (14.x) on Linux
 
 The following release notes apply to SQL Server 2017 (14.x) running on Linux. This article is
 
 broken into sections for each release. For detailed supportability and known issues, see
 
-Server on Linux: Known issues
-
-. Each release links to a support article describing the changes, in
+Server on Linux: Known issues. Each release links to a support article describing the changes, in
 
 addition to the Linux package downloads.
 
@@ -45,7 +41,7 @@ distributions.
 
 Microsoft supports users with problems pertaining to supported distributions.
 
-SQL Server is supported on Linux distributions until the earlier of two events: the end of the
+is supported on Linux distributions until the earlier of two events: the end of the
 
 distribution's support lifecycle, or the end of the SQL Server support lifecycle.
 
@@ -57,7 +53,7 @@ that move from Mainstream to Extended support and are still recognized as suppor
 
 Microsoft can release CUs and bug fixes at its discretion.
 
-SQL Server support policy
+support policy
 
 ﾉ
 

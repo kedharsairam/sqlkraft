@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -33,9 +31,7 @@ Extension (HAE)
 
 built on top of
 
-Pacemaker
-
-.
+Pacemaker.
 
 For more information on cluster configuration, resource agent options, management, best
 
@@ -43,9 +39,7 @@ practices, and recommendations, see
 
 SUSE Linux Enterprise High Availability Extension 12
 
-SP5
-
-.
+SP5.
 
 To complete the following end-to-end scenario, you need two machines to deploy the two
 
@@ -61,9 +55,7 @@ use SLES with a valid subscription for the HA add-on.
 
 Installation
 
-guidance for SQL Server on Linux
-
-.
+guidance for SQL Server on Linux.
 
 2. Designate one node as primary and the other as secondary, for purposes of
 

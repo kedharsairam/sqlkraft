@@ -20,8 +20,6 @@ in this guide.
 
 4.
 
-.
-
 For example, creating a clustered index on an existing large table could benefit from the
 
 index option. The
@@ -38,13 +36,9 @@ can improve performance by reducing the I/O and memory footprint of the
 
 index. For more information, see
 
-CREATE INDEX
-
-.
+CREATE INDEX.
 
 5.
-
-.
 
 It's often better to modify an existing index than to create a new but mostly duplicate
 

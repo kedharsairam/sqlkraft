@@ -15,19 +15,17 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
-User-defined types (UDTs) are written using any of the languages supported by the .NET
+User-defined types (UDTs) are written using any of the languages supported by the.NET
 
 Framework common language runtime (CLR) that produce verifiable code. This includes C# and
 
-Visual Basic .NET. UDTs allow objects and custom data structures to be stored in a SQL Server
+Visual Basic.NET. UDTs allow objects and custom data structures to be stored in a SQL Server
 
 database.
 
-The data is exposed as public members of a .NET Framework class or structure, and behaviors
+The data is exposed as public members of a.NET Framework class or structure, and behaviors
 
 are defined by methods of the class or structure. A UDT can be used as the column definition
 
@@ -69,13 +67,9 @@ Describes how to work with UDTs in a
 
 and how to
 
-update UDT data using a
-
-.
+update UDT data using a.
 
 CLR user-defined types
-
-Last updated on 03/23/2026
 
 ﾉ
 

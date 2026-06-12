@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 5372 16 No The specified bulk option '%ls' is not supported for file format '%ls'. Review the documentation for supported options. 5373 16 No All the input parameters should be of the same
+Description 5372 16 No The specified bulk option '%ls' is not supported for file format '%ls'. Review the documentation for supported options.
 
 ## Severity
 

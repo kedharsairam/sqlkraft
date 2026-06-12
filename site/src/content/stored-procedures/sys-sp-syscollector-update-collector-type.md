@@ -2,7 +2,7 @@
 name: "sys.sp_syscollector_update_collector_type"
 title: "sp_syscollector_update_collector_type"
 category: "general"
-description: "Updates a collector type for a collection item. Given the name and GUID of a collector type, updates the collector type configuration, including the collection and upload package, the parameter schema, and the parameter formatter schema. Transact-SQL syntax conventions The GUID for the collector type. is automatically created and returned as OUTPUT."
+description: "Updates a collector type for a collection item. Given the name and GUID of a collector type, updates the collector type configuration, including the collection and upload package, the parameter schema, and the parameter formatter schema. The GUID for the collector type. is automatically created and returned as OUTPUT."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -31,7 +31,7 @@ syntax: |
 
 ## Description
 
-Updates a collector type for a collection item. Given the name and GUID of a collector type, updates the collector type configuration, including the collection and upload package, the parameter schema, and the parameter formatter schema. Transact-SQL syntax conventions The GUID for the collector type. is automatically created and returned as OUTPUT. The name of the collector type. The XML schema for this collector type.
+Updates a collector type for a collection item. Given the name and GUID of a collector type, updates the collector type configuration, including the collection and upload package, the parameter schema, and the parameter formatter schema. The GUID for the collector type. is automatically created and returned as OUTPUT.
 
 ## Syntax
 

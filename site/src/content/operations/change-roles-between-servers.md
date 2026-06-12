@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 After you have failed over a SQL Server log shipping configuration to a secondary server, you
@@ -51,9 +49,7 @@ the active transaction log on your primary server with NORECOVERY. For more
 
 information, see
 
-Fail Over to a Log Shipping Secondary (SQL Server)
-
-.
+Fail Over to a Log Shipping Secondary (SQL Server).
 
 2. Disable the log shipping backup job on the original primary server, and the copy and
 
@@ -65,9 +61,7 @@ log shipping using SQL Server Management Studio. For more information, see
 
 Configure
 
-Log Shipping (SQL Server)
-
-. Include the following steps:
+Log Shipping (SQL Server). Include the following steps:
 
 a. Use the same share for creating backups that you created for the original primary
 
@@ -83,9 +77,7 @@ box.
 
 c. In the
 
-dialog box, select
-
-.
+dialog box, select.
 
 4. If log shipping monitoring was enabled on your former log shipping configuration,
 

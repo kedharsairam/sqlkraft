@@ -52,9 +52,7 @@ Add a hash column of type tinyint or smallint to the table.
 
 Calculate a good hash distribution. For example, use
 
-with modulo or
-
-.
+with modulo or.
 
 ７
 

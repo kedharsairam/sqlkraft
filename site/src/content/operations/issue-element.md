@@ -35,8 +35,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Reports an issue that was found by the
@@ -59,9 +57,7 @@ Reports an issue that has prevented
 
 from completing its analysis.
 
-Correct the problem and rerun
-
-.
+Correct the problem and rerun.
 
 Reports a SQL Server Profiler event found when you run a
 
@@ -86,11 +82,10 @@ ComputerName\InstanceName.
 Expand table
 
 ```cmd
-<Issue type="..."
-code="..."
-server="..."
-database="..."
-object="...">
-...
+<Issue type="."
+code="."
+server="."
+database="."
+object=".">.
 </Issue>
 ```

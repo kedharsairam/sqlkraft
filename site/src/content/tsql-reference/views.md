@@ -93,13 +93,9 @@ Any columns in remote tables of type
 
 that are referenced in a partitioned
 
-view are mapped as
+view are mapped as. Therefore, the corresponding columns (in the same ordinal
 
-. Therefore, the corresponding columns (in the same ordinal
-
-position in the select list) in the local tables must also be of type
-
-.
+position in the select list) in the local tables must also be of type.
 
 ７
 
@@ -159,7 +155,7 @@ BULK INSERT
 ```
 
 ```sql
-INSERT ... SELECT * FROM OPENROWSET(BULK...)
+INSERT. SELECT * FROM OPENROWSET(BULK.)
 ```
 
 ```sql

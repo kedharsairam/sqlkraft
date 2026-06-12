@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Transport security involves authentication and, optionally, encryption of messages exchanged
@@ -27,9 +25,7 @@ and encryption are configured on the database mirroring endpoint. For an introdu
 
 database mirroring endpoints, see
 
-The database mirroring endpoint (SQL Server)
-
-.
+The database mirroring endpoint (SQL Server).
 
 Authentication is the process of verifying that a user is who the user claims to be. Connections
 

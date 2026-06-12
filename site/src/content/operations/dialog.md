@@ -29,15 +29,13 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic contains information about how to use the
 
 dialog box of
 
-SQL Server Management Studio to create an Always On availability group on instances of SQL
+Management Studio to create an Always On availability group on instances of SQL
 
 Server that are enabled for Always On availability groups. An
 
@@ -63,9 +61,7 @@ groups prerequisites. For more information, we strongly recommend that you read
 
 Prerequisites, Restrictions, and Recommendations for Always On Availability Groups (SQL
 
-Server)
-
-.
+Server).
 
 Before you create an availability group, ensure that every server instance that will host an
 
@@ -73,9 +69,7 @@ availability replica has a fully functioning database mirroring endpoint. For mo
 
 information, see
 
-The Database Mirroring Endpoint (SQL Server)
-
-.
+The Database Mirroring Endpoint (SQL Server).
 
 To use the
 
@@ -89,9 +83,7 @@ databases that you intend to add to your new availability group, and you need to
 
 Note
 
-For an introduction to availability groups, see
-
-.
+For an introduction to availability groups, see.
 
 ７
 

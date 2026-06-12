@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Use this procedure to manage nodes to an existing SQL Server failover cluster instance.

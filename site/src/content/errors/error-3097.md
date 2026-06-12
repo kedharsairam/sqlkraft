@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 3097 16 No The Backup cannot be performed because the existing media set is formatted with an incompatible version. 3098 16 No The backup cannot be performed because '%ls' was requested af
+Description 3097 16 No The Backup cannot be performed because the existing media set is formatted with an incompatible version.
 
 ## Severity
 

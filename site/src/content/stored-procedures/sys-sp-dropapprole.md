@@ -2,7 +2,7 @@
 name: "sys.sp_dropapprole"
 title: "sp_dropapprole"
 category: "general"
-description: "Removes an application role from the current database. Transact-SQL syntax conventions The application role to remove. , with no default. in the current database. can only be used to remove application roles. If a role owns any securables, the role can't be dropped. Before dropping an application role that owns securables, you must first transfer ownership of the securables, or drop them."
+description: "Removes an application role from the current database. The application role to remove. , with no default. in the current database. can only be used to remove application roles. If a role owns any securables, the role can't be dropped. Before dropping an application role that owns securables, you must first transfer ownership of the securables, or drop them."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-Removes an application role from the current database. Transact-SQL syntax conventions The application role to remove. , with no default. in the current database. can only be used to remove application roles. If a role owns any securables, the role can't be dropped. Before dropping an application role that owns securables, you must first transfer ownership of the securables, or drop them. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
+Removes an application role from the current database. The application role to remove. , with no default. in the current database. can only be used to remove application roles. If a role owns any securables, the role can't be dropped. Before dropping an application role that owns securables, you must first transfer ownership of the securables, or drop them. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
 
 ## Syntax
 
@@ -27,11 +27,7 @@ N
 
 ## Remarks
 
-Applies to:
-
 Removes an application role from the current database.
-
-Transact-SQL syntax conventions
 
 The application role to remove.
 

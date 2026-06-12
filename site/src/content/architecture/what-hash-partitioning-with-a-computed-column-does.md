@@ -12,9 +12,7 @@ This script can be used to hash partition a table that is experiencing problems 
 
 Last
 
-page/trailing page insert contention
-
-. This technique moves contention from the last page by
+page/trailing page insert contention. This technique moves contention from the last page by
 
 partitioning the table and distributing inserts across table partitions with a hash value modulus
 

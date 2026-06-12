@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/16/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -45,9 +43,7 @@ binding is available for the target service. If a remote service binding isn't a
 
 Broker checks the routing table for the Broker Configuration Notice (BCN) service; the service
 
-name is
-
-. If a BCN route exists, Service Broker creates a
+name is. If a BCN route exists, Service Broker creates a
 
 new conversation with the BCN and sends a message on that conversation that requests
 
@@ -55,9 +51,7 @@ creation of a remote service binding. The application defined for the BCN queue 
 
 respond to the request.
 
-Requests for remote service bindings use the message type
-
-. The message is in XML format and contains the name of the service for which
+Requests for remote service bindings use the message type. The message is in XML format and contains the name of the service for which
 
 remote service binding information should be available.
 
@@ -71,9 +65,7 @@ XML
 
 Note
 
-The behavior is comparable to
-
-.
+The behavior is comparable to.
 
 ```sql
 SQL/ServiceBroker/BrokerConfiguration https://schemas.microsoft.com/SQL/ServiceBroker/BrokerConfigurationNotice/MissingRemoteSe rviceBinding https://Adventure-Works.com/Elsewhere

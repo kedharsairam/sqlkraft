@@ -2,7 +2,7 @@
 name: "sys.sp_columns_ex"
 title: "sp_columns_ex"
 category: "general"
-description: "Returns the column information, one row per column, for the specified linked server tables. returns column information for only the specific column if Transact-SQL syntax conventions The name of the linked server for which to return column information."
+description: "Returns the column information, one row per column, for the specified linked server tables. returns column information for only the specific column if The name of the linked server for which to return column information."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -36,7 +36,7 @@ syntax: |
 
 ## Description
 
-Returns the column information, one row per column, for the specified linked server tables. returns column information for only the specific column if Transact-SQL syntax conventions The name of the linked server for which to return column information. The name of the table for which to return column information. The schema name of the table for which to return column information.
+Returns the column information, one row per column, for the specified linked server tables. returns column information for only the specific column if The name of the linked server for which to return column information.
 
 ## Syntax
 
@@ -109,4 +109,4 @@ ODBCV er ]
 
 `JobTitle`
 
-_(... and 4 more examples)_
+_(. and 4 more examples)_

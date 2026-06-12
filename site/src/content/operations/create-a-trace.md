@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 06/05/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -71,9 +69,7 @@ if you don't want to use a template.
 
 Select
 
-to capture the trace to a file. Specify a value for
-
-. The default value is 5 megabytes (MB).
+to capture the trace to a file. Specify a value for. The default value is 5 megabytes (MB).
 
 Optionally, select
 

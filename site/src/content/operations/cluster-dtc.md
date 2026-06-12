@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Windows
@@ -33,9 +31,7 @@ Cross-
 
 Database Transactions and Distributed Transactions for Always On Availability Groups and
 
-Database Mirroring (SQL Server)
-
-.
+Database Mirroring (SQL Server).
 
 Ensure all nodes, services and the
 
@@ -61,13 +57,9 @@ A shared-storage drive.
 
 Configuring the Shared-Storage
 
-Drive
+Drive. Consider using drive
 
-. Consider using drive
-
-letter
-
-.
+letter.
 
 A unique DTC Network Name resource. The name will be registered as a
 

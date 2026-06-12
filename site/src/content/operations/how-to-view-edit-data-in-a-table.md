@@ -31,19 +31,15 @@ You can view, edit, and delete data in an existing table by using a visual Data 
 
 table in
 
-SQL Server Object Explorer
+Object Explorer
 
-, and select
-
-.
+, and select.
 
 2. The Data Editor launches. Notice the rows we added to the table in previous procedures.
 
 3. Right-click the
 
-table in SQL Server Object Explorer, and select
-
-.
+table in SQL Server Object Explorer, and select.
 
 4. In the Data Editor, type
 
@@ -85,11 +81,9 @@ executed later.
 
 database in
 
-SQL Server Object Explorer
+Object Explorer
 
-, and select
-
-. In
+, and select. In
 
 the editor, type
 

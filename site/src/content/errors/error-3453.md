@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 3453 16 No This version cannot redo any index creation or non-logged operation done by SQL Server 7.0. Further roll forward is not possible. 3454 10 Yes Recovery is writing a checkpoint in
+Description 3453 16 No This version cannot redo any index creation or non-logged operation done by SQL Server 7.0. Further roll forward is not possible.
 
 ## Severity
 

@@ -2,12 +2,10 @@
 name: "Collation labels"
 title: "Collation labels"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -49,9 +47,7 @@ The collation precedence rules apply only to the character string data types:
 
 ,
 
-, and
-
-. Objects that have other data types don't participate in collation
+, and. Objects that have other data types don't participate in collation
 
 evaluations.
 

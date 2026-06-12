@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 You can configure automatic updates for SQL Server enabled by Azure Arc. Automatic updates:
@@ -45,9 +43,7 @@ Apply Windows and SQL Server updates marked as
 
 Important
 
-or
-
-.
+or.
 
 You must manually install other SQL Server updates, such as service packs and cumulative
 
@@ -55,9 +51,7 @@ updates that aren't marked as
 
 Important
 
-or
-
-.
+or.
 
 You can configure automatic updates:
 

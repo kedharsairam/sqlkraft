@@ -1,7 +1,7 @@
 ---
 name: "To View CPU Utilization History"
 title: "To View CPU Utilization History"
-description: "SQL Server diagnostic script for architecture operations."
+description: "diagnostic script for architecture operations."
 category: architecture
 tags: ["architecture", "cpu"]
 pubDate: 2025-03-15

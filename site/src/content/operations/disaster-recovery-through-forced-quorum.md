@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Quorum failure is usually caused by a systemic disaster, or a persistent communications failure,

@@ -1,14 +1,14 @@
 ---
 name: "To Automate Database Snapshot"
 title: "To Automate Database Snapshot"
-description: "SQL Server diagnostic script for automation operations."
+description: "diagnostic script for automation operations."
 category: automation
 tags: ["automation", "database"]
 pubDate: 2025-03-15
 ---
 
 ```sql
-/****** Object:  StoredProcedure [dbo].[Automate_DB_Snapshot] ******/
+/****** Object: StoredProcedure [dbo].[Automate_DB_Snapshot] ******/
 SET ANSI_NULLS ON
 GO
 
@@ -98,7 +98,7 @@ PHYSICAL_NAME
 EXECUTE SP_EXECUTESQL
 @COMMAND = @SQL
 
-SET @SQL = 'CREATE DATABASE  ' + QUOTENAME(@SSNAME) +' ON ' + CHAR(13) + CHAR(10)
+SET @SQL = 'CREATE DATABASE ' + QUOTENAME(@SSNAME) +' ON ' + CHAR(13) + CHAR(10)
 
 WHILE @LOOP < (SELECT MAX(ID) FROM #FILENAMELIST) + 1
 BEGIN
@@ -141,9 +141,9 @@ EXECUTE SP_EXECUTESQL
 @COMMAND = @SQL
 
 IF @@ERROR = 0
-PRINT 'SNAPSHOT '  + @SSNAME + ' CREATED SUCCESSFULLY.'
+PRINT 'SNAPSHOT ' + @SSNAME + ' CREATED SUCCESSFULLY.'
 ELSE
-PRINT 'SNAPSHOT '  + @SSNAME + ' CREATION FAILED.'
+PRINT 'SNAPSHOT ' + @SSNAME + ' CREATION FAILED.'
 END
 
 IF @@ERROR <> 0

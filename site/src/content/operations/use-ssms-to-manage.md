@@ -21,15 +21,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
 
 This article introduces
 
-SQL Server Management Studio (SSMS)
+Management Studio (SSMS)
 
 and walks you through a few
 
@@ -37,7 +35,7 @@ common tasks. SSMS is a Windows application, so use SSMS when you have a Windows
 
 that can connect to a remote SQL Server instance on Linux.
 
-SQL Server Management Studio (SSMS) is part of a suite of SQL tools that Microsoft offers free of
+Management Studio (SSMS) is part of a suite of SQL tools that Microsoft offers free of
 
 charge for your development and management needs. SSMS is an integrated environment to
 
@@ -89,8 +87,6 @@ sqlcmd
 
 ,
 
-SQL Server Management Studio (SSMS)
+Management Studio (SSMS)
 
-, or the
-
-.
+, or the.

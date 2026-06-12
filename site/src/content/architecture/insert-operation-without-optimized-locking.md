@@ -20,9 +20,7 @@ through Query Optimizer hints such as
 
 ,
 
-, or
-
-. When
+, or. When
 
 or
 
@@ -42,9 +40,7 @@ statement:
 
 A TID lock is placed on all the modified rows for the duration of the transaction. A lock is
 
-acquired on the TID of the index rows corresponding to the value
-
-. With optimized locking,
+acquired on the TID of the index rows corresponding to the value. With optimized locking,
 
 page and row locks continue to be acquired for updates, but each page and row lock is released
 

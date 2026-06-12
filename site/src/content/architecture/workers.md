@@ -22,9 +22,7 @@ parent task
 
 (or coordinating task) and multiple
 
-child tasks
-
-. An execution
+child tasks. An execution
 
 plan for a parallel request may have serial branches - areas of the plan with operators that
 
@@ -38,15 +36,11 @@ Tasks exist in various states throughout their lifetime. For more information ab
 
 states, see
 
-sys.dm_os_tasks
-
-. Tasks in SUSPENDED state are waiting on resources required
+sys.dm_os_tasks. Tasks in SUSPENDED state are waiting on resources required
 
 to execute the task to become available. For more information about waiting tasks, see
 
-sys.dm_os_waiting_tasks
-
-.
+sys.dm_os_waiting_tasks.
 
 A SQL Server
 

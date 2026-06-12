@@ -25,15 +25,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Replication
+Replication
 
 Article
 
 •
 
 09/29/2024
-
-Applies to:
 
 SQL Server
 
@@ -71,13 +69,13 @@ synchronizing data across your enterprise. Replication to SQLCE 3.5 and SQLCE 4.
 
 on both Windows Server 2012 and Windows 8.
 
-SQL Server 2022 hasn't introduced significant new features to SQL Server replication.
+2022 hasn't introduced significant new features to SQL Server replication.
 
-SQL Server 2019 hasn't introduced significant new features to SQL Server replication.
+2019 hasn't introduced significant new features to SQL Server replication.
 
-SQL Server 2017 hasn't introduced significant new features to SQL Server replication.
+2017 hasn't introduced significant new features to SQL Server replication.
 
-SQL Server 2016 hasn't introduced significant new features to SQL Server replication.
+2016 hasn't introduced significant new features to SQL Server replication.
 
 For backward compatibility information see,
 

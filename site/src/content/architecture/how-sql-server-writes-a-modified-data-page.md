@@ -1,12 +1,10 @@
 ---
 title: "How SQL Server writes a modified data page"
 topic: "query-processing"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -42,15 +40,13 @@ in the log cache that records the modification. The log records must be written 
 
 the associated dirty page is removed from the buffer cache and written to disk.
 
-SQL Server uses a technique known as write-ahead logging (WAL) that prevents writing a dirty
+uses a technique known as write-ahead logging (WAL) that prevents writing a dirty
 
 page before the associated log record is written to disk. This is essential to the correct working
 
 of the recovery manager. For more information, see
 
-Write-ahead transaction log
-
-.
+Write-ahead transaction log.
 
 The following illustration shows the process for writing a modified data page.
 

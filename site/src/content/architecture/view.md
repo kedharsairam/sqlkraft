@@ -29,8 +29,6 @@ Article
 
 05/12/2023
 
-Applies to:
-
 SQL Server
 
 This article explains how to view a SQL Server database snapshot using SQL Server
@@ -51,9 +49,7 @@ expand that instance.
 
 2. From the
 
-bar, select
-
-.
+bar, select.
 
 3. To list the database snapshots of the instance of SQL Server, query the
 

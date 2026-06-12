@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -89,9 +87,9 @@ view.
 AdventureWorks2025
 AdventureWorksDW2025
 SELECT
-SELECT ...
+SELECT.
 INTO
-INSERT ... SELECT
+INSERT. SELECT
 SELECT
 SELECT
 LastName

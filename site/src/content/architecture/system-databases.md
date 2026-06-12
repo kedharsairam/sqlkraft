@@ -29,8 +29,6 @@ Article
 
 11/25/2024
 
-Applies to:
-
 SQL Server
 
 This article describes how to move system databases in SQL Server. Moving system databases

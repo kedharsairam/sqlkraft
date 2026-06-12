@@ -45,21 +45,15 @@ No
 
 No
 
-The following tables list the supported string literal formats for
-
-. Except for ODBC,
+The following tables list the supported string literal formats for. Except for ODBC,
 
 string literals are in single quotation marks (
 
-), for example,
-
-. If the
+), for example,. If the
 
 environment isn't
 
-, the string literals should be in Unicode format
-
-.
+, the string literals should be in Unicode format.
 
 You can specify date data with a numeric month specified. For example,
 
@@ -139,9 +133,7 @@ Enclose the date and time data in single quotation marks (
 
 ). For languages other than
 
-English, use
-
-.
+English, use.
 
 Characters that are enclosed in brackets are optional.
 
@@ -167,9 +159,7 @@ interpreted as
 
 and
 
-is interpreted as
-
-. To avoid ambiguity, use four-digit
+is interpreted as. To avoid ambiguity, use four-digit
 
 years.
 
@@ -279,16 +269,13 @@ n*
 999
 ```
 
-```sql
-.000
+```sql.000
 ```
 
-```sql
-.003
+```sql.003
 ```
 
-```sql
-.007
+```sql.007
 ```
 
 ```sql
@@ -321,8 +308,7 @@ N'string_literaL'
 -
 ```
 
-```sql
-.
+```sql.
 ```
 
 ```sql
@@ -418,8 +404,7 @@ T
 :
 ```
 
-```sql
-.
+```sql.
 ```
 
 ```sql

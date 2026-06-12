@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -63,9 +61,7 @@ they're mapped. For more information about the syntax of OPENXML, see
 
 OPENXML (Transact-
 
-SQL)
-
-.
+SQL).
 
 To access the metaproperty attributes, a namespace that is specific to SQL Server is provided.
 
@@ -105,9 +101,7 @@ the unconsumed data.
 
 The following table lists the metaproperty attributes that each parsed XML element possesses.
 
-These metaproperty attributes can be accessed by using the namespace
-
-. Any value that the user sets directly in the XML document by
+These metaproperty attributes can be accessed by using the namespace. Any value that the user sets directly in the XML document by
 
 using these metaproperties is ignored.
 

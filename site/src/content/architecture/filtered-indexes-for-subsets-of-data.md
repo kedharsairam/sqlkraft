@@ -38,9 +38,7 @@ indexed computed column
 
 or an
 
-indexed view
-
-.
+indexed view.
 
 In order to design effective filtered indexes, it's important to understand what queries your
 
@@ -74,9 +72,7 @@ column has only 199 rows that contain a non-NULL value and the
 
 other 2480 rows contain NULL. The following filtered index covers queries that return the
 
-columns defined in the index and that require only rows with a non-NULL value for
-
-.
+columns defined in the index and that require only rows with a non-NULL value for.
 
 `Production.BillOfMaterials`
 

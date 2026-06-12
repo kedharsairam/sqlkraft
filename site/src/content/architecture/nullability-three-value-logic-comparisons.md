@@ -27,13 +27,11 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 If you're familiar with the SQL Server data types, you find similar semantics and precision in the
 
-namespace in the .NET Framework. There are some differences, however,
+namespace in the.NET Framework. There are some differences, however,
 
 and this article covers the most important of these differences.
 
@@ -121,9 +119,9 @@ or
 
 value.
 
-Decimal data types in the .NET Framework CLR have different maximum values than numeric
+Decimal data types in the.NET Framework CLR have different maximum values than numeric
 
-and decimal data types in SQL Server. In addition, in the .NET Framework CLR decimal data
+and decimal data types in SQL Server. In addition, in the.NET Framework CLR decimal data
 
 types assume the maximum precision. In the CLR for SQL Server, however,
 

@@ -20,9 +20,7 @@ DMV:
 
 : This was illustrated in
 
-Example of Latch Contention
-
-.
+Example of Latch Contention.
 
 : If the CPU utilization
 
@@ -54,9 +52,7 @@ DMV
 
 because this DMW measures wait times since the last time that the instance of SQL
 
-Server was started or the cumulative wait statistics were reset using
-
-. To
+Server was started or the cumulative wait statistics were reset using. To
 
 calculate the relative wait time for each wait type take a snapshot of
 
@@ -94,11 +90,7 @@ The statistics exposed by this query are described as follows:
 
 ## Description
 
-The type of wait that SQL Server has recorded in the engine, which is
-
 preventing a current request from being executed.
-
-If this request has previously been blocked, this column returns the type of
 
 the last wait. Isn't nullable.
 
@@ -106,15 +98,11 @@ The total wait time in milliseconds spent waiting on this wait type since SQL
 
 Server instance was started or since cumulative wait statistics were reset.
 
-column lists the exact page being waited for in
-
 The following query returns information for all non-buffer latches:
 
 The statistics exposed by this query are described as follows:
 
 ## Description
-
-The type of latch that SQL Server has recorded in the engine, which is
 
 preventing a current request from being executed.
 
@@ -126,23 +114,17 @@ The total wait time in milliseconds spent waiting on this latch type.
 
 Maximum time in milliseconds any request spent waiting on this latch type.
 
-The values returned by this DMV are cumulative since last time the database engine was
-
-restarted or the DMV was reset. Use the
-
-column in
+restarted or the DMV was reset.
 
 sys.dm_os_sys_info
 
 to
 
-find the last database engine startup time. On a system that has been running a long time this
+find the last database engine startup time.
 
 
 
 ﾉ
-
-Expand table
 
 `sys.dm_os_wait_stats`
 
@@ -189,14 +171,14 @@ wt.blocking_session_id,
 wt.blocking_exec_context_id,
 resource_description
 FROM sys.dm_os_waiting_tasks
-AS wt
+
 INNER
 JOIN sys.dm_exec_sessions
-AS es
+
 ON wt.session_id = es.session_id
 INNER
 JOIN sys.dm_exec_requests
-AS er
+
 ON wt.session_id = er.session_id
 WHERE es.is_user_process = 1
 AND wt.wait_type <>

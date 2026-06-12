@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -37,29 +35,21 @@ In Red Hat Enterprise Linux (RHEL), the clustering layer is based on Red Hat Ent
 
 (RHEL)
 
-HA add-on
-
-.
+HA add-on.
 
 In SUSE Linux Enterprise Server (SLES), the clustering layer is based on SUSE Linux Enterprise
 
-High Availability Extension (HAE)
-
-.
+High Availability Extension (HAE).
 
 For more information on cluster configuration, resource agent options, management, best
 
 practices, and recommendations, see
 
-SUSE Linux Enterprise High Availability Extension 15
-
-.
+SUSE Linux Enterprise High Availability Extension 15.
 
 Both the RHEL HA add-on and the SUSE HAE are built on
 
-Pacemaker
-
-.
+Pacemaker.
 
 As the following diagram shows, storage is presented to two servers. Clustering components -
 

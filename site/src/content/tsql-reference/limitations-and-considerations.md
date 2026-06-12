@@ -19,17 +19,13 @@ and use the
 
 ## syntax instead. For detailed information, see
 
-Error using legacy syntax
-
-.
+Error using legacy syntax.
 
 Earlier vector index versions have the following additional limitations. To check your index
 
 version, see
 
-Verify the index version
-
-.
+Verify the index version.
 
 : Predicates are applied only after vector retrieval, not during the search
 
@@ -59,17 +55,13 @@ The table must have a primary key clustered index.
 
 Vector indexes aren't replicated to subscribers.
 
-Tables with vector indexes can't be truncated using
-
-. To remove all data,
+Tables with vector indexes can't be truncated using. To remove all data,
 
 drop the vector index first, truncate the table, repopulate with at least 100 rows, then
 
 recreate the index. For more information, see
 
-TRUNCATE TABLE restrictions
-
-.
+TRUNCATE TABLE restrictions.
 
 Vector indexes can't be deployed with DacPac or BACPAC. Vector indexes require at least
 

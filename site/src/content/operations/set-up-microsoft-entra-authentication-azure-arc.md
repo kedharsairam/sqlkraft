@@ -15,9 +15,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2022 (16.x)
+2022 (16.x)
 
 This article describes a step-by-step process to set up authentication with Microsoft Entra ID
 
@@ -35,29 +33,23 @@ For SQL Server on Azure VMs, review
 
 Enable Microsoft Entra authentication for SQL
 
-Server on Azure VMs
-
-.
+Server on Azure VMs.
 
 The server and instance enabled by Azure Arc. For more information, see
 
 Connect your
 
-SQL Server to Azure Arc
-
-.
+to Azure Arc.
 
 Access to Microsoft Entra ID is available for authentication purpose. For more
 
 information, see
 
-Microsoft Entra authentication for SQL Server
-
-.
+Microsoft Entra authentication for SQL Server.
 
 A supported version of
 
-SQL Server Management Studio
+Management Studio
 
 is installed on the client machine.
 

@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 10/06/2025
 
-Applies to:
-
 SQL Server
 
 This article describes how to perform a forced failover (with possible data loss) on an Always

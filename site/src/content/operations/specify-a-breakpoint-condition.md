@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-Applies to:
-
 SQL Server
 
 A breakpoint condition is a Transact-SQL expression that the debugger evaluates when the
@@ -33,9 +31,7 @@ The expression specified must be a valid Transact-SQL expression that evaluates 
 
 value. For more information, see
 
-Expressions
-
-.
+Expressions.
 
 If you specify a breakpoint condition with invalid syntax, a warning message appears
 
@@ -69,9 +65,7 @@ option and select
 
 from the dropdown list.
 
-3. Enter a valid Boolean expression for the
-
-.
+3. Enter a valid Boolean expression for the.
 
 4. Select
 

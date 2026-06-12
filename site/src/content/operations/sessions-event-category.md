@@ -30,8 +30,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -55,8 +53,6 @@ Class
 Indicates properties of existing user connections when the trace was
 
 started.
-
-Last updated on 11/18/2025
 
 ﾉ
 

@@ -2,12 +2,10 @@
 name: "date description"
 title: "Date description"
 category: "data-types"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -75,9 +73,7 @@ limits
 
 to the range
 
-to
-
-.
+to.
 
 is two digits from
 

@@ -208,7 +208,7 @@ database option is set
 
 , which is the default setting in
 
-SQL Server and Azure SQL Managed Instance,
+and Azure SQL Managed Instance,
 
 isolation uses shared locks to
 
@@ -240,9 +240,7 @@ only use
 
 isolation when the
 
-database option is set to
-
-.
+database option is set to.
 
 By default, this option is set to
 

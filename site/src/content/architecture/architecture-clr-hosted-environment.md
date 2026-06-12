@@ -29,15 +29,13 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server integration with the .NET Framework common language runtime (CLR) enables
+integration with the.NET Framework common language runtime (CLR) enables
 
-database programmers to use languages such as C#, Visual Basic .NET, and Visual C++.
+database programmers to use languages such as C#, Visual Basic.NET, and Visual C++.
 
 Functions, stored procedures, triggers, data types, and aggregates are among the kinds of
 
@@ -61,7 +59,7 @@ in which CLR code access security (CAS) and SQL Server security are integrated t
 
 reliable and secure execution environment for user code.
 
-In the .NET Framework, a programmer writes in a high-level language that implements a class
+In the.NET Framework, a programmer writes in a high-level language that implements a class
 
 defining its structure (for example, the fields or properties of the class) and methods. Some of
 
@@ -83,7 +81,7 @@ Note
 
 Assemblies are a vital element in the architecture of the CLR. They are the units of
 
-packaging, deployment, and versioning of application code in .NET Framework. Using
+packaging, deployment, and versioning of application code in.NET Framework. Using
 
 assemblies, you can deploy application code inside the database and provide a uniform
 

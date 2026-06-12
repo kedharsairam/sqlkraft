@@ -2,7 +2,7 @@
 name: "sys.sp_trace_setfilter"
 title: "sp_trace_setfilter"
 category: "general"
-description: "can be executed only on existing traces that are ). SQL Server returns an error if this stored procedure is executed on a trace that doesn't exist or whose Transact-SQL syntax conventions This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature."
+description: "can be executed only on existing traces that are ). SQL Server returns an error if this stored procedure is executed on a trace that doesn't exist or whose This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -83,4 +83,4 @@ N'MS%'
 10
 ```
 
-_(... and 18 more examples)_
+_(. and 18 more examples)_

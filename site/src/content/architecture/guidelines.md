@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -39,9 +37,7 @@ contains the following large object (LOB) data types:
 
 ,
 
-, and
-
-.
+, and.
 
 Nonunique nonclustered indexes can be created online when the table has columns using
 
@@ -61,9 +57,7 @@ CREATE INDEX
 
 or
 
-ALTER INDEX
-
-. A resumable index operation can restart after an
+ALTER INDEX. A resumable index operation can restart after an
 
 unexpected failure, database failover, or an
 
@@ -103,9 +97,7 @@ indexes apply. For more information, see
 
 Disable
 
-indexes and constraints
-
-.
+indexes and constraints.
 
 ７
 
@@ -113,9 +105,7 @@ Note
 
 Online index operations aren't available in every edition of Microsoft SQL Server. For a list
 
-of features that are supported by the editions of SQL Server, see
-
-.
+of features that are supported by the editions of SQL Server, see.
 
 ﾉ
 

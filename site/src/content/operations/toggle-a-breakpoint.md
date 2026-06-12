@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-Applies to:
-
 SQL Server
 
 The act of setting a breakpoint on a Transact-SQL statement is called toggling a breakpoint.
@@ -55,9 +53,7 @@ editing its properties or temporarily disabling it. For more information, see
 
 Transact-SQL
 
-breakpoints
-
-.
+breakpoints.
 
 1. Select the gray bar to the left side of the Transact-SQL statement.
 
@@ -65,12 +61,8 @@ breakpoints
 
 statement, and then perform either action:
 
-Press
-
-.
+Press.
 
 On the
 
-menu, select
-
-.
+menu, select.

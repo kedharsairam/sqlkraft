@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -43,9 +41,7 @@ enhancements introduced in SQL Server 2005 (9.x) and later versions. Instead, yo
 
 an inline XSD schema by using
 
-the XMLSCHEMA directive
-
-.
+the XMLSCHEMA directive.
 
 Also note the following about the inline XDR schema support:
 
@@ -78,8 +74,6 @@ is specified.
 URL encoding is used in AUTO mode when
 
 isn't specified.
-
-Last updated on 11/18/2025
 
 ）
 

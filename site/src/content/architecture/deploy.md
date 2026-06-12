@@ -27,8 +27,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 Deployment is the process by which you distribute a finished application or module to be
@@ -37,7 +35,7 @@ installed and run on another computer. Using Visual Studio, you can develop comm
 
 language runtime (CLR) database objects and deploy them to a test server. Alternatively, the
 
-managed database objects can also be compiled with the .NET Framework redistribution files,
+managed database objects can also be compiled with the.NET Framework redistribution files,
 
 instead of Visual Studio. Once compiled, the assemblies containing the CLR database objects
 
@@ -53,9 +51,7 @@ The CLR integration feature is turned off by default in SQL Server and must be e
 
 to use CLR assemblies. For more information, see
 
-Enable CLR integration
-
-.
+Enable CLR integration.
 
 Using Visual Studio, you can develop CLR functions, procedures, triggers, user-defined types
 
@@ -63,7 +59,7 @@ Using Visual Studio, you can develop CLR functions, procedures, triggers, user-d
 
 database objects can also be compiled with the command line compilers, such as csc.exe and
 
-vbc.exe, included with the .NET Framework redistribution files. The Visual Studio Integrated
+vbc.exe, included with the.NET Framework redistribution files. The Visual Studio Integrated
 
 Development Environment isn't required to develop managed database objects for SQL Server.
 
@@ -87,6 +83,4 @@ The TCP/IP network protocol must be enabled on the SQL Server instance in order 
 
 Visual Studio for remote development, debugging, and development. For more
 
-information about enabling TCP/IP protocol on the server, see
-
-.
+information about enabling TCP/IP protocol on the server, see.

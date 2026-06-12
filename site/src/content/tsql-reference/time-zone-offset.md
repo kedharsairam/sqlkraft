@@ -19,9 +19,7 @@ data types
 
 ,
 
-, and
-
-.
+, and.
 
 Milliseconds have a scale of 3 (
 
@@ -57,9 +55,7 @@ of
 
 ,
 
-, or
-
-.
+, or.
 
 Here's the result set.
 
@@ -78,20 +74,16 @@ DATEADD
 
 `nanosecond`
 
-```sql
-.123
+```sql.123
 ```
 
-```sql
-.123456
+```sql.123456
 ```
 
-```sql
-.123456789
+```sql.123456789
 ```
 
-```sql
-.1234567
+```sql.1234567
 ```
 
 `nanosecond`
@@ -153,11 +145,11 @@ SELECT
 '150 nanoseconds'
 ,
 DATEADD (nanosecond, 150, @datetime2);
-1 millisecond     2024-01-01 13:10:10.1121111
-2 milliseconds    2024-01-01 13:10:10.1131111
-1 microsecond     2024-01-01 13:10:10.1111121
-2 microseconds    2024-01-01 13:10:10.1111131
-49 nanoseconds    2024-01-01 13:10:10.1111111
-50 nanoseconds    2024-01-01 13:10:10.1111112
-150 nanoseconds   2024-01-01 13:10:10.1111113
+1 millisecond 2024-01-01 13:10:10.1121111
+2 milliseconds 2024-01-01 13:10:10.1131111
+1 microsecond 2024-01-01 13:10:10.1111121
+2 microseconds 2024-01-01 13:10:10.1111131
+49 nanoseconds 2024-01-01 13:10:10.1111111
+50 nanoseconds 2024-01-01 13:10:10.1111112
+150 nanoseconds 2024-01-01 13:10:10.1111113
 ```

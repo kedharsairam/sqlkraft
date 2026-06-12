@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 Quickstart: Deploy a SQL Server container
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -31,7 +29,7 @@ This quickstart demonstrates how to configure a highly available SQL Server inst
 
 container with persistent storage, on Azure Kubernetes Service (AKS) or Red Hat OpenShift. If the
 
-SQL Server instance fails, the orchestrator automatically re-creates it in a new pod. The cluster
+instance fails, the orchestrator automatically re-creates it in a new pod. The cluster
 
 service also provides resiliency against a node failure.
 
@@ -51,9 +49,7 @@ oc
 
 An Azure account with an active subscription.
 
-Create an account for free
-
-.
+Create an account for free.
 
 A Kubernetes cluster. For more information on creating and connecting to a
 
@@ -63,9 +59,7 @@ Kubernetes cluster in AKS with
 
 Deploy an Azure Kubernetes Service (AKS)
 
-cluster
-
-.
+cluster.
 
 Azure CLI. See
 

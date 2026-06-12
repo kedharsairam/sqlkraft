@@ -29,9 +29,7 @@ EXIT
 
 PROC
 
-The following table lists reserved keywords that are exclusive to
-
-.
+The following table lists reserved keywords that are exclusive to.
 
 Additionally, the ISO standard defines a list of reserved keywords. Avoid using ISO reserved keywords for object names and identifiers. The ODBC reserved keyword list, shown in the following table, is the same as the ISO reserved keyword list.
 
@@ -43,9 +41,7 @@ Note
 
 The ISO standards reserved keywords list sometimes can be more restrictive than SQL
 
-Server and at other times less restrictive. For example, the ISO reserved keywords list contains
-
-. SQL Server does not have to distinguish this as a reserved keyword.
+Server and at other times less restrictive. For example, the ISO reserved keywords list contains. SQL Server does not have to distinguish this as a reserved keyword.
 
 ABSOLUTE
 

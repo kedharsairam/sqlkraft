@@ -2,7 +2,7 @@
 name: "sys.sp_dbmmonitorupdate"
 title: "sp_dbmmonitorupdate"
 category: "general"
-description: "Updates the database mirroring monitor status table by inserting a new table row for each mirrored database, and truncates rows older than the current retention period. The default retention period is seven days (168 hours). When evaluates the performance metrics. Transact-SQL syntax conventions The name of the database for which to update mirroring status. isn't specified, the procedure updates t"
+description: "Updates the database mirroring monitor status table by inserting a new table row for each mirrored database, and truncates rows older than the current retention period. The default retention period is seven days (168 hours). When evaluates the performance metrics."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -15,7 +15,7 @@ syntax: |
 
 ## Description
 
-Updates the database mirroring monitor status table by inserting a new table row for each mirrored database, and truncates rows older than the current retention period. The default retention period is seven days (168 hours). When evaluates the performance metrics. Transact-SQL syntax conventions The name of the database for which to update mirroring status. isn't specified, the procedure updates the status table
+Updates the database mirroring monitor status table by inserting a new table row for each mirrored database, and truncates rows older than the current retention period. The default retention period is seven days (168 hours). When evaluates the performance metrics.
 
 ## Syntax
 

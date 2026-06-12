@@ -46,9 +46,7 @@ and
 
 CREATE_DROP_RULE
 
-Use
-
-.
+Use.
 
 and
 

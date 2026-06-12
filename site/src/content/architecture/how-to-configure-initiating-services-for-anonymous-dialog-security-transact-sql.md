@@ -21,13 +21,11 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server uses dialog security for any conversation to a service for which a remote service
+uses dialog security for any conversation to a service for which a remote service
 
 binding exists. If the database that hosts the target service doesn't contain a user that
 
@@ -39,15 +37,11 @@ corresponds to the user that created the dialog, the dialog uses anonymous secur
 
 3. Install the certificate for the remote service. The user created in step 3 owns the
 
-certificate. By default the certificate is active for
-
-.
+certificate. By default the certificate is active for.
 
 4. Create a remote service binding that specifies the user and the target service. For
 
-anonymous dialog security, the remote service binding specifies
-
-.
+anonymous dialog security, the remote service binding specifies.
 
 This example configures anonymous dialog security for conversations between the service
 

@@ -31,8 +31,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -55,9 +53,7 @@ statement. For more information, see
 
 CREATE SELECTIVE
 
-XML INDEX (Transact-SQL)
-
-.
+XML INDEX (Transact-SQL).
 
 In the
 
@@ -67,15 +63,11 @@ statement. For more information, see
 
 ALTER INDEX
 
-(Selective XML Indexes)
-
-.
+(Selective XML Indexes).
 
 For more information about selective XML indexes, see
 
-Selective XML Indexes (SXI)
-
-.
+Selective XML Indexes (SXI).
 
 Selective XML indexes support two type systems: XQuery types and SQL Server types. The
 

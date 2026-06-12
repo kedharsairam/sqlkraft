@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 07/03/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
@@ -33,17 +31,13 @@ Server Agent on Linux by using the command line, or Transact-SQL.
 
 For SQL Server on Windows, see
 
-Start, stop, pause, resume, and restart SQL Server services
-
-.
+Start, stop, pause, resume, and restart SQL Server services.
 
 For SQL Server on Linux containers, see
 
-Configure and customize SQL Server Linux containers
+Configure and customize SQL Server Linux containers.
 
-.
-
-SQL Server components are executable programs that run as services (also known as
+components are executable programs that run as services (also known as
 
 daemons
 
@@ -57,23 +51,17 @@ instances aren't supported on Linux. To run multiple instances of SQL Server on 
 
 computer using containers, see
 
-Deploy and connect to SQL Server Linux containers
-
-.
+Deploy and connect to SQL Server Linux containers.
 
 The SQL Server Agent service executes scheduled administrative tasks, which are called jobs
 
 and alerts. For more information, see
 
-SQL Server Agent
-
-. SQL Server Agent isn't available in
+Agent. SQL Server Agent isn't available in
 
 every edition of SQL Server. For a list of features supported by the editions of SQL Server, see
 
-Editions and supported features of SQL Server 2022
-
-.
+Editions and supported features of SQL Server 2022.
 
 On Linux, you can't pause the Database Engine service like you can on Windows. The SQL
 
@@ -89,6 +77,6 @@ Linux
 
 for an example using Pacemaker.
 
-SQL Server Database Engine service
+Database Engine service
 
-SQL Server Agent service
+Agent service

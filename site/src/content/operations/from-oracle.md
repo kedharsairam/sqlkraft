@@ -29,8 +29,6 @@ Article
 
 01/08/2025
 
-Applies to:
-
 SQL Server
 
 In this guide, you learn how to migrate your Oracle databases to SQL Server by using SQL
@@ -39,9 +37,7 @@ Server Migration Assistant for Oracle (SSMA for Oracle).
 
 For other migration guides, see
 
-Azure Database Migration Guides
-
-.
+Azure Database Migration Guides.
 
 For detailed code assessment and conversion, continue with SSMA for Oracle.
 
@@ -51,15 +47,11 @@ Verify that your source environment is supported.
 
 Download and install
 
-SQL Server
-
-.
+SQL Server.
 
 Download and install
 
-SSMA for Oracle
-
-.
+SSMA for Oracle.
 
 Get the
 
@@ -67,9 +59,7 @@ necessary permissions for SSMA for Oracle
 
 and
 
-provider
-
-.
+provider.
 
 Get connectivity and sufficient permissions to access both source and target.
 
@@ -101,6 +91,4 @@ To use the MAP Toolkit to perform an inventory scan, perform the following steps
 
 1. Open the
 
-MAP Toolkit
-
-.
+MAP Toolkit.

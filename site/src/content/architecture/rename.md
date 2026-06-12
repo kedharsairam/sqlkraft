@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -41,9 +39,7 @@ example, two tables can have an index named
 
 , but the same table cannot have two
 
-indexes named
-
-. You cannot create an index with the same name as an existing disabled
+indexes named. You cannot create an index with the same name as an existing disabled
 
 index. Renaming an index does not cause the index to be rebuilt.
 
@@ -51,7 +47,7 @@ Limitations and Restrictions
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 

@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to create a database mirroring endpoint that uses Windows

@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 When a SQL Server instance is part of a failover cluster, the process of renaming the virtual
@@ -37,9 +35,7 @@ server differs from that of renaming a stand-alone instance. For more informatio
 
 Rename
 
-a Computer that Hosts a Stand-Alone Instance of SQL Server
-
-.
+a Computer that Hosts a Stand-Alone Instance of SQL Server.
 
 The name of the virtual server is always the same as the name of the SQL Network Name (the
 
@@ -53,7 +49,7 @@ name, instance1, will remain unchanged.
 
 Before you begin the renaming process, review the items below.
 
-SQL Server does not support renaming servers involved in replication, except in the case
+does not support renaming servers involved in replication, except in the case
 
 of using log shipping with replication. The secondary server in log shipping can be
 
@@ -61,9 +57,7 @@ renamed if the primary server is permanently lost. For more information, see
 
 Log
 
-Shipping and Replication (SQL Server)
-
-.
+Shipping and Replication (SQL Server).
 
 When renaming a virtual server that is configured to use database mirroring, you must
 

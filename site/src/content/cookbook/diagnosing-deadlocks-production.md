@@ -51,12 +51,12 @@ Trace flag 1222 writes full deadlock graphs to the SQL Server error log.
 
 ```sql
 SELECT deadlock.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
-    deadlock.query('event/data/value/deadlock') AS deadlock_graph_xml
+ deadlock.query('event/data/value/deadlock') AS deadlock_graph_xml
 FROM (
-    SELECT CAST(target_data AS XML) AS session_target
-    FROM sys.dm_xe_session_targets
-    WHERE event_session_address = (SELECT [address] FROM sys.dm_xe_sessions WHERE name = 'system_health')
-        AND target_name = 'ring_buffer'
+ SELECT CAST(target_data AS XML) AS session_target
+ FROM sys.dm_xe_session_targets
+ WHERE event_session_address = (SELECT [address] FROM sys.dm_xe_sessions WHERE name = 'system_health')
+ AND target_name = 'ring_buffer'
 ) AS sh
 CROSS APPLY sh.session_target.nodes('/RingBufferTarget/event[@name="xml_deadlock_report"]') AS d(deadlock)
 ORDER BY deadlock_time DESC;
@@ -70,7 +70,7 @@ For environments with frequent deadlocks, create a persistent session as detaile
 
 ```sql
 SELECT event_data.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
-    event_data.query('event/data/value/deadlock') AS deadlock_graph
+ event_data.query('event/data/value/deadlock') AS deadlock_graph
 FROM sys.fn_xe_file_target_read_file(N'D:\XELogs\deadlock_capture*.xel', NULL, NULL, NULL)
 ORDER BY deadlock_time DESC;
 ```
@@ -90,25 +90,25 @@ The deadlock graph XML contains three critical sections. Parse it at the process
 ```sql
 -- Parse all processes from the most recent deadlock
 WITH DeadlockEvents AS (
-    SELECT d.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
-        d.query('event/data/value/deadlock') AS graph
-    FROM (
-        SELECT CAST(target_data AS XML) AS target_data
-        FROM sys.dm_xe_session_targets
-        WHERE event_session_address = (SELECT [address] FROM sys.dm_xe_sessions WHERE name = 'system_health')
-            AND target_name = 'ring_buffer'
-    ) AS sh
-    CROSS APPLY sh.target_data.nodes('/RingBufferTarget/event[@name="xml_deadlock_report"]') AS d(event)
+ SELECT d.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
+ d.query('event/data/value/deadlock') AS graph
+ FROM (
+ SELECT CAST(target_data AS XML) AS target_data
+ FROM sys.dm_xe_session_targets
+ WHERE event_session_address = (SELECT [address] FROM sys.dm_xe_sessions WHERE name = 'system_health')
+ AND target_name = 'ring_buffer'
+ ) AS sh
+ CROSS APPLY sh.target_data.nodes('/RingBufferTarget/event[@name="xml_deadlock_report"]') AS d(event)
 )
 SELECT deadlock_time,
-    p.value('@id', 'varchar(50)') AS process_id,
-    p.value('@spid', 'int') AS spid,
-    p.value('@lockmode', 'varchar(20)') AS lock_mode_held,
-    p.value('@clientapp', 'varchar(256)') AS application,
-    p.value('@hostname', 'varchar(128)') AS host,
-    p.value('@loginname', 'varchar(128)') AS login,
-    p.value('@lasttranstarted', 'datetime2') AS transaction_start,
-    p.value('(inputbuf)[1]', 'nvarchar(max)') AS query_text
+ p.value('@id', 'varchar(50)') AS process_id,
+ p.value('@spid', 'int') AS spid,
+ p.value('@lockmode', 'varchar(20)') AS lock_mode_held,
+ p.value('@clientapp', 'varchar(256)') AS application,
+ p.value('@hostname', 'varchar(128)') AS host,
+ p.value('@loginname', 'varchar(128)') AS login,
+ p.value('@lasttranstarted', 'datetime2') AS transaction_start,
+ p.value('(inputbuf)[1]', 'nvarchar(max)') AS query_text
 FROM DeadlockEvents
 CROSS APPLY graph.nodes('//deadlock/process-list/process') AS p(process)
 ORDER BY deadlock_time DESC, spid;
@@ -130,7 +130,7 @@ The deadlock graph identifies the victim explicitly:
 
 ```xml
 <victim-list>
-  <victimProcess id="processXXXXXXX" />
+ <victimProcess id="processXXXXXXX" />
 </victim-list>
 ```
 
@@ -172,8 +172,8 @@ Set up a dedicated [XEvent deadlock session](/sqlkraft/xevents/deadlock-graph-ca
 ```sql
 -- Daily deadlock report
 SELECT
-    CAST(event_data AS XML).value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
-    CAST(event_data AS XML).value('(event/action[@name="database_name"]/value)[1]', 'nvarchar(256)') AS database_name
+ CAST(event_data AS XML).value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
+ CAST(event_data AS XML).value('(event/action[@name="database_name"]/value)[1]', 'nvarchar(256)') AS database_name
 FROM sys.fn_xe_file_target_read_file(N'D:\XELogs\deadlock_capture*.xel', NULL, NULL, NULL)
 WHERE CAST(event_data AS XML).value('(event/@timestamp)[1]', 'datetime2') >= DATEADD(DAY, -1, GETUTCDATE())
 ORDER BY deadlock_time DESC;

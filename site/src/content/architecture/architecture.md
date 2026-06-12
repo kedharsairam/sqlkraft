@@ -25,9 +25,7 @@ pubDate: 2025-12-01
 
 SQL Graph Architecture
 
-Applies to:
-
-SQL Server 2017 (14.x) and later versions
+2017 (14.x) and later versions
 
 Azure SQL Database
 
@@ -57,9 +55,7 @@ edge table holds all the edges that
 
 connect a
 
-to another
-
-. Since nodes and edges are stored in tables, most of the
+to another. Since nodes and edges are stored in tables, most of the
 
 operations supported on regular tables are supported on node or edge tables.
 

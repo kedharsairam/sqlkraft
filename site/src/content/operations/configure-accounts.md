@@ -31,8 +31,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 For two server instances to connect to each other's
@@ -79,9 +77,7 @@ LOGIN Transact-SQL statement to create a login for the startup service account o
 
 instance for each server instance. For more information, see
 
-CREATE LOGIN (Transact-SQL)
-
-.
+CREATE LOGIN (Transact-SQL).
 
 ）
 
@@ -97,6 +93,4 @@ Important
 
 If you run SQL Server under a non-domain account, you must use certificates. For more
 
-information, see
-
-.
+information, see.

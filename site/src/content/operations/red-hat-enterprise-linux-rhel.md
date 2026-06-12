@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -35,17 +33,13 @@ You need at least 2 GB of memory to run SQL Server on Linux.
 
 The file system must be
 
-or
-
-. Other file systems, such as
+or. Other file systems, such as
 
 , are unsupported.
 
 For other system requirements, see
 
-System requirements for SQL Server on Linux
-
-.
+System requirements for SQL Server on Linux.
 
 This example installs SQL Server 2019 (15.x) on RHEL 8.x. If you want to install a different
 
@@ -59,9 +53,7 @@ remove them from the script file.
 
 Your password should follow the SQL Server default
 
-password policy
-
-. By default, the password
+password policy. By default, the password
 
 must be at least eight characters long and contain characters from three of the following four
 
@@ -77,11 +69,7 @@ If you don't need an unattended installation script, the fastest way to install 
 
 to follow the
 
-Quickstart: Install SQL Server and create a database on Red Hat Enterprise
-
-. For other setup information, see
-
-.
+Quickstart: Install SQL Server and create a database on Red Hat Enterprise. For other setup information, see.
 
 ）
 

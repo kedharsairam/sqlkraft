@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-non-operational state. This can lead to the lease timeout expiration between SQL Server and the cluster processes. Resolve any issues with the VM migration first before you address lease timeout issue
+non-operational state. This can lead to the lease timeout expiration between SQL Server and the cluster processes.
 
 ## Severity
 

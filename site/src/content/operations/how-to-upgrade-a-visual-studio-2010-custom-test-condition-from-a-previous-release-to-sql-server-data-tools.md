@@ -31,9 +31,7 @@ To update the project references:
 
 1. For Visual Basic only, in
 
-, select
-
-.
+, select.
 
 2. In
 
@@ -53,9 +51,7 @@ b. Microsoft.Data.Schema
 
 menu, or by right-clicking the project folder in
 
-, select
-
-.
+, select.
 
 5. Select the
 
@@ -65,13 +61,9 @@ tab.
 
 list, select
 
-and select
+and select.
 
-.
-
-7. Add the required assembly references. Right-click the project node and then select
-
-. Select
+7. Add the required assembly references. Right-click the project node and then select. Select
 
 and navigate to the
 
@@ -79,23 +71,17 @@ folder. Choose Microsoft.Data.Tools.Schema.Sql.dll and select
 
 ,
 
-then select
-
-.
+then select.
 
 8. On the
 
-menu, select
-
-.
+menu, select.
 
 9. Right-click on the
 
 in
 
-and choose
-
-.
+and choose.
 
 10. Add the following Import statement after the import of
 

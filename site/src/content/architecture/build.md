@@ -27,19 +27,15 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
-You can build database objects using the SQL Server integration with the .NET Framework
+You can build database objects using the SQL Server integration with the.NET Framework
 
 common language runtime (CLR). Managed code that runs inside of SQL Server is called a
 
 CLR
 
-routine
-
-. These routines include:
+routine. These routines include:
 
 Scalar-valued user-defined functions (scalar UDFs)
 
@@ -51,13 +47,13 @@ User-defined triggers
 
 CLR routines have the same structure in managed code. They're mapped to public, static
 
-(shared in Visual Basic .NET) methods of a class. In addition to routines, user-defined types
+(shared in Visual Basic.NET) methods of a class. In addition to routines, user-defined types
 
-(UDTs) and user-defined aggregate functions can also be defined using the .NET Framework.
+(UDTs) and user-defined aggregate functions can also be defined using the.NET Framework.
 
-UDTs and user-defined aggregates are mapped to entire .NET Framework classes.
+UDTs and user-defined aggregates are mapped to entire.NET Framework classes.
 
-Each type of .NET Framework routine has a Transact-SQL declaration and can be used
+Each type of.NET Framework routine has a Transact-SQL declaration and can be used
 
 anywhere in SQL Server that the Transact-SQL equivalent can be used. For instance, scalar UDFs
 
@@ -91,11 +87,11 @@ compile object using CLR integration with SQL Server. Includes an example
 
 "Hello World" CLR stored procedure.
 
-Supported .NET Framework
+Supported.NET Framework
 
 libraries
 
-Provides information on the .NET Framework libraries supported by CLR
+Provides information on the.NET Framework libraries supported by CLR
 
 integration.
 

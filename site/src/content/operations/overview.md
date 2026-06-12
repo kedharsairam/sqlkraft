@@ -29,11 +29,9 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
-SQL Server Log shipping allows you to automatically send transaction log backups from a
+Log shipping allows you to automatically send transaction log backups from a
 
 primary database
 
@@ -97,6 +95,4 @@ backup file, which it sends to the backup folder. In this figure, the backup fol
 
 shared directory-the
 
-backup share
-
-.
+backup share.

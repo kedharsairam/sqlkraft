@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 09/09/2025
 
-Applies to:
-
 SQL Server
 
 Windows Firewall rules must be configured to enable Transact-SQL debugging when
@@ -61,15 +59,11 @@ both Windows 7 and Windows Server 2008 R2, open
 
 ,
 
-and select
-
-. In Windows Server 2008 R2, you can also open
+and select. In Windows Server 2008 R2, you can also open
 
 , expand
 
-in the left pane, and expand
-
-.
+in the left pane, and expand.
 
 Ｕ
 

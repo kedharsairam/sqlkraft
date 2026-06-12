@@ -31,8 +31,6 @@ Article
 
 04/09/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -71,9 +69,7 @@ SQL Trace event, which can be used in
 
 Event
 
-Notifications
-
-. The primary difference between triggers and event notifications is that triggers
+Notifications. The primary difference between triggers and event notifications is that triggers
 
 are raised synchronously with events, whereas event notifications are asynchronous. This
 

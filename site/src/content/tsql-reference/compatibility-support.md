@@ -41,9 +41,7 @@ forward far enough to be consistent with the database and RECOVERY is specified,
 
 Database Engine issues an error. For more information about the recovery process, see
 
-Restore and Recovery Overview (SQL Server)
-
-.
+Restore and Recovery Overview (SQL Server).
 
 ７
 
@@ -59,9 +57,7 @@ contains either the WITH REPLACE or the WITH STOPAT clause, which must specify a
 
 or transaction that occurred after the end of the data backup. For more information about
 
-tail-log backups, see
-
-.
+tail-log backups, see.
 
 ### upgrade_option
 
@@ -76,5 +72,5 @@ tail-log backups, see
 ### ALTER MASTER KEY REGENERATE
 
 ```sql
-RESTORE DATABASE ... WITH RESTRICTED_USER
+RESTORE DATABASE. WITH RESTRICTED_USER
 ```

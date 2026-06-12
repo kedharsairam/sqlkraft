@@ -27,9 +27,7 @@ inappropriate join algorithm will remain in use until
 
 the cached plan is recompiled.
 
-There's an additional join operator called
-
-. If cardinality estimates are incorrect for the
+There's an additional join operator called. If cardinality estimates are incorrect for the
 
 outer build join input, an inappropriate join
 
@@ -81,9 +79,7 @@ applicable for new query optimizer fixes that are released after SQL Server 2017
 
 information, see
 
-trace flag 4199
-
-.
+trace flag 4199.
 
 This section describes new behaviors introduced with compatibility level 130.
 
@@ -239,9 +235,7 @@ A given table can be referenced by up to 10,000 incoming
 
 foreign keys or similar references. For restrictions, see
 
-Create foreign key relationships
-
-.
+Create foreign key relationships.
 
 The deprecated MD2, MD4, MD5, SHA, and
 
@@ -251,13 +245,13 @@ Only SHA2_256 and SHA2_512 hash algorithms are
 
 permitted.
 
-SQL Server 2016 (13.x) includes improvements in some
+2016 (13.x) includes improvements in some
 
 data types conversions and some (mostly uncommon)
 
 operations. For details see
 
-SQL Server and Azure SQL
+and Azure SQL
 
 #### Compatibility level setting of 120 or lower
 

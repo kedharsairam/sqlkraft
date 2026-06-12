@@ -37,8 +37,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -101,7 +99,7 @@ statement is running.
 
 Yes
 
-SQL Server user name of the client.
+user name of the client.
 
 40
 

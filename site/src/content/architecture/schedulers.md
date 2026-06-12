@@ -48,13 +48,9 @@ with that worker, and to the request associated with the task. For more informat
 
 worker states, see
 
-sys.dm_os_workers
+sys.dm_os_workers. For more information about schedulers, see
 
-. For more information about schedulers, see
-
-sys.dm_os_schedulers
-
-.
+sys.dm_os_schedulers.
 
 In summary, a
 
@@ -104,6 +100,4 @@ means that during a parallel query execution, a single request can spawn multipl
 
 to the MAXDOP limit, and each task will use one worker. For more information about
 
-MAXDOP, see
-
-.
+MAXDOP, see.

@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 The XQuery primary expressions include literals, variable references, context item expressions,
@@ -62,7 +60,7 @@ Expand table
 
 Note
 
-SQL Server uses XML version 1.0 as the basis for parsing.
+uses XML version 1.0 as the basis for parsing.
 
 ```sql
 &lt;

@@ -18,8 +18,6 @@ Converts a database user that is mapped to a SQL Server login, to a contained da
 
 ## Arguments
 
-Applies to:
-
 Converts a database user that is mapped to a SQL Server login, to a contained database user
 
 with password. In a contained database, use this procedure to remove dependencies on the
@@ -34,7 +32,7 @@ can be used before moving the contained database to a
 
 different instance of the SQL Server Database Engine to eliminate dependencies on the current
 
-SQL Server instance logins.
+instance logins.
 
 Be careful when using
 
@@ -53,5 +51,3 @@ message occurs.
 Migrate to a Partially Contained Database
 
 Contained Databases
-
-Related content

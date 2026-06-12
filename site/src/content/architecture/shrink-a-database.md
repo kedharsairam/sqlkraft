@@ -31,8 +31,6 @@ Article
 
 01/22/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -53,9 +51,7 @@ The database can't be made smaller than the minimum size of the database. The
 
 minimum size is the size specified when the database was originally created, or the last
 
-explicit size set by using a file-size-changing operation, such as
-
-. For
+explicit size set by using a file-size-changing operation, such as. For
 
 example, if a database was originally created with a size of 10 MB and grew to 100 MB,
 

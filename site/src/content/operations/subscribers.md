@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 When an Always On availability group (AG) fails over, containing a database that is a replication
@@ -37,7 +35,7 @@ subscriber (primary replica of the AG). For merge subscribers, a replication adm
 
 manually reconfigure the subscriber, by recreating the subscription.
 
-SQL Server replication supports the automatic failover of the publisher and the automatic
+replication supports the automatic failover of the publisher and the automatic
 
 failover of transactional subscribers. Merge subscribers can be part of an AG. However, manual
 

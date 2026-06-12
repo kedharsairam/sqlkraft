@@ -16,8 +16,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Returns an integer value that indicates the position of the context item within the sequence of

@@ -17,9 +17,7 @@ sys.columns
 
 , and
 
-sys.sql_expression_dependencies
-
-. The text of the
+sys.sql_expression_dependencies. The text of the
 
 statement is stored in the
 
@@ -69,9 +67,7 @@ underlying metadata. For more information, see
 
 T-SQL views with dedicated SQL pool and
 
-serverless SQL pool in Azure Synapse Analytics
-
-.
+serverless SQL pool in Azure Synapse Analytics.
 
 In Azure Synapse Analytics, updatable views, DML triggers (of either type
 
@@ -83,29 +79,21 @@ and partitioned views are not supported. For more information, see
 
 T-SQL views with
 
-dedicated SQL pool and serverless SQL pool in Azure Synapse Analytics
-
-.
+dedicated SQL pool and serverless SQL pool in Azure Synapse Analytics.
 
 In Azure Synapse Analytics, partitioned views are not supported. For more information, see
 
 T-
 
-SQL views with dedicated SQL pool and serverless SQL pool in Azure Synapse Analytics
-
-.
+SQL views with dedicated SQL pool and serverless SQL pool in Azure Synapse Analytics.
 
 In Fabric SQL database, views can be created, but they are not
 
 mirrored into the Fabric
 
-OneLake
+OneLake. For more information, see
 
-. For more information, see
-
-Limitations of Fabric SQL database mirroring
-
-.
+Limitations of Fabric SQL database mirroring.
 
 You can modify the data of an underlying base table through a view, as long as the following
 
@@ -145,9 +133,7 @@ An aggregate function:
 
 ,
 
-, and
-
-.
+, and.
 
 ### INSTEAD OF triggers
 

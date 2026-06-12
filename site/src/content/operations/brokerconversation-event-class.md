@@ -35,13 +35,11 @@ Article
 
 03/30/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server generates a
+generates a
 
 event to report the progress of a Service Broker
 
@@ -107,9 +105,7 @@ Yes
 
 The type of event class captured. Always
 
-for
-
-.
+for.
 
 27
 

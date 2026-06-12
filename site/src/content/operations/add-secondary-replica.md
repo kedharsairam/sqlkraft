@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to add a secondary replica to an existing Always On availability group
@@ -41,9 +39,7 @@ For more information, see
 
 Prerequisites, Restrictions, and Recommendations for Always On
 
-Availability Groups (SQL Server)
-
-.
+Availability Groups (SQL Server).
 
 Requires ALTER AVAILABILITY GROUP permission on the availability group, CONTROL
 

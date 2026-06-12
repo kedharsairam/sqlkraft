@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 07/23/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -51,9 +49,7 @@ that the managed code must meet depend on whether the assembly is registered as
 
 ,
 
-, or
-
-.
+, or.
 
 is the strictest security level.
 
@@ -73,9 +69,7 @@ assemblies have different CAS
 
 permissions. For more information, see
 
-CLR integration code access security
-
-.
+CLR integration code access security.
 
 If the
 
@@ -85,7 +79,7 @@ is set,
 
 fails.
 
-CLR uses Code Access Security (CAS) in the .NET Framework, which is no longer supported as a
+CLR uses Code Access Security (CAS) in the.NET Framework, which is no longer supported as a
 
 security boundary. A CLR assembly created with
 
@@ -93,7 +87,7 @@ might be able to
 
 access external system resources, call unmanaged code, and acquire sysadmin privileges. In
 
-SQL Server 2017 (14.x) and later versions, the
+2017 (14.x) and later versions, the
 
 option,
 
@@ -107,9 +101,7 @@ is enabled by default, and treats
 
 and
 
-assemblies as if they were marked
-
-. The
+assemblies as if they were marked. The
 
 option
 
@@ -125,9 +117,7 @@ database. SQL Server administrators can also add assemblies to a list of assembl
 
 Database Engine should trust. For more information, see
 
-sys.sp_add_trusted_assembly
-
-.
+sys.sp_add_trusted_assembly.
 
 ```sql
 CREATE ASSEMBLY

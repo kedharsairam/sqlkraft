@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/04/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -55,9 +53,7 @@ endpoints. For more information, see
 
 How to: Create certificates for Service Broker
 
-transport security
-
-.
+transport security.
 
 ```sql
 USE master

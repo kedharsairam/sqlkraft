@@ -37,8 +37,6 @@ Inverse trigonometric functions return the angle that corresponds to a given tri
 
 ratio. These functions enable you to recover an angle from coordinate or sensor data. Use
 
-them in navigation, geospatial analytics, error-vector calculations, and any scenario where you
-
 compute direction or orientation from component values.
 
 ## Description
@@ -57,19 +55,13 @@ Angle (in radians) whose tangent is the given value (arctangent).
 
 ATN2
 
-Angle (in radians) between the positive x-axis and a ray to point
-
-.
+Angle (in radians) between the positive x-axis and a ray to point.
 
 These functions convert values between degrees and radians. They serve as utility operations
 
 that support interoperability with APIs, libraries, and mathematical formulas that expect a
 
 specific angular measurement unit.
-
-Expand table
-
-Expand table
 
 #### Function
 

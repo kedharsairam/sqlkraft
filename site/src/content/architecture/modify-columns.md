@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -51,9 +49,7 @@ Requires ALTER permission on the table.
 
 , right-click the table with columns for which you want to change the
 
-scale and select
-
-.
+scale and select.
 
 2. Select the column for which you want to modify the data type.
 
@@ -69,9 +65,7 @@ a new data type from the dropdown list.
 
 menu, select
 
-table name
-
-.
+table name.
 
 ２
 

@@ -21,19 +21,17 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server provides a queue activation event to notify external applications when a queue has
+provides a queue activation event to notify external applications when a queue has
 
 messages to process. This topic describes the event and strategies for receiving and
 
 responding to the event.
 
-SQL Server includes a QUEUE_ACTIVATION event. This event reports that there's useful work for
+includes a QUEUE_ACTIVATION event. This event reports that there's useful work for
 
 another queue reader. The activation event contains the name of the queue and the name of
 
@@ -41,7 +39,7 @@ the database and schema that contain the queue. An external program can use this
 
 information to start the correct program to read from the queue.
 
-SQL Server can't track the capacity or the number of external processes that are reading from
+can't track the capacity or the number of external processes that are reading from
 
 the queue. Therefore, SQL Server produces queue activation events periodically for as long as
 

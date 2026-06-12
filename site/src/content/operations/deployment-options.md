@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure Arc automatically installs the Azure extension for SQL Server when a server connected to
@@ -31,9 +29,7 @@ To automatically connect your server, see
 
 Azure Connected Machine agent deployment
 
-options
-
-.
+options.
 
 If your server is already connected to Azure, but Azure extension for SQL Server didn't deploy
 
@@ -80,8 +76,6 @@ Tip
 Beginning with SQL Server 2022, you can connect a new SQL Server instance to Azure Arc
 
 when you're installing it on Windows Operating System.
-
-.
 
 ﾉ
 

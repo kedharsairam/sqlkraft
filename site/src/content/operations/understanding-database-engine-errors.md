@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -79,9 +77,7 @@ problems that should be addressed as soon as possible. For more information abou
 
 severities, see
 
-Database Engine Error Severities
-
-.
+Database Engine Error Severities.
 
 State
 

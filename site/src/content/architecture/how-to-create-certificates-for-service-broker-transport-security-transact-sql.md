@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 09/02/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -43,9 +41,7 @@ statement to load an existing X.509 certificate. For more information on creatin
 
 certificates, see
 
-CREATE CERTIFICATE
-
-. After creating the certificate, use the
+CREATE CERTIFICATE. After creating the certificate, use the
 
 or
 
@@ -55,9 +51,7 @@ For more information using certificates for Service Broker transport security, s
 
 How to: Allow
 
-Service Broker network access by using certificates
-
-.
+Service Broker network access by using certificates.
 
 Create a certificate in the
 

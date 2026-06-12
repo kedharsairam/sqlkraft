@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 07/03/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
@@ -41,7 +39,7 @@ Users authenticate via single sign-on, without being prompted for a password.
 
 By creating logins for Active Directory groups, you can manage access and permissions in
 
-SQL Server using Active Directory group memberships.
+using Active Directory group memberships.
 
 Each user has a single identity across your organization, so you don't have to keep track
 
@@ -57,50 +55,34 @@ Controller (Windows) on your network.
 
 The details for how to configure Active Directory authentication are provided in the tutorial,
 
-Tutorial: Use Active Directory authentication with SQL Server on Linux
-
-. The following list
+Tutorial: Use Active Directory authentication with SQL Server on Linux. The following list
 
 provides a summary with a link to each section in the tutorial:
 
 1.
 
-Join SQL Server on a Linux host to an Active Directory domain
-
-.
+Join SQL Server on a Linux host to an Active Directory domain.
 
 2.
 
-Create an Active Directory user for SQL Server and set the Service Principal Name
-
-.
+Create an Active Directory user for SQL Server and set the Service Principal Name.
 
 3.
 
-Configure the SQL Server service keytab
-
-.
+Configure the SQL Server service keytab.
 
 4.
 
-Secure the keytab file
-
-.
+Secure the keytab file.
 
 5.
 
-Configure SQL Server to use the keytab file for Kerberos authentication
-
-.
+Configure SQL Server to use the keytab file for Kerberos authentication.
 
 6.
 
-Create Active Directory-based SQL Server logins in Transact-SQL
-
-.
+Create Active Directory-based SQL Server logins in Transact-SQL.
 
 7.
 
-Connect to SQL Server using Active Directory authentication
-
-.
+Connect to SQL Server using Active Directory authentication.

@@ -9,7 +9,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Returns the stored resource pool configuration. Each row represents a resource pool. Unique ID of the resource pool. Not nullable. Name of the resource pool. Not nullable. Guaranteed average CPU bandwidth for all requests in the resource pool when there is CPU contention. Not nullable. Maximum average CPU bandwidth allowed for all requests in the resource pool when there is CPU contention. Not nullable.
+Returns the stored resource pool configuration. Each row represents a resource pool. Unique ID of the resource pool. Not nullable.
 
 ## Code Blocks
 

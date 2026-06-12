@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes the following fundamental concepts of XQuery:

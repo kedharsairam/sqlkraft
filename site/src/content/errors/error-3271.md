@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 3271 16 No A nonrecoverable I/O error occurred on file "%ls:" %ls. 3272 16 No The '%ls' device has a hardware sector size of %d, but the block size parameter specifies an incompatible over
+Description 3271 16 No A nonrecoverable I/O error occurred on file "%ls:" %ls.
 
 ## Severity
 

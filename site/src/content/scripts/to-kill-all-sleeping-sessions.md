@@ -1,7 +1,7 @@
 ---
 name: "To Kill all Sleeping Sessions"
 title: "To Kill all Sleeping Sessions"
-description: "SQL Server diagnostic script for architecture operations."
+description: "diagnostic script for architecture operations."
 category: architecture
 tags: ["architecture", "session"]
 pubDate: 2025-03-15

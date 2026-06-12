@@ -37,9 +37,7 @@ or from the
 
 changelog notification.
 
-2. Select or browse to your
-
-.
+2. Select or browse to your.
 
 3. Choose the items to import:
 

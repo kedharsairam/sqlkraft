@@ -10,7 +10,7 @@ syntax: "cdc.fn_cdc_get_all_changes_<capture_instance>"
 
 ## Description
 
-function serves as a wrapper for the query function. The stored procedure is used to generate the script to create the Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to systematically query for changes that occurred within an interval bounded by values instead of by LSN values. The wrapper functions perform all the required conversions between the provided values and the LSN values needed internally as arguments to the query functions. When the wrapper functions are used serially to process a stream of change data, they ensure that no data is lost or repeated provided that the
+function serves as a wrapper for the query function. The stored procedure is used to generate the script to create the Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function. Wrapper functions enable users to systematically query for changes that occurred within an interval bounded by values instead of by LSN values. The wrapper functions perform all the required conversions between the provided values and the LSN values needed internally as arguments to the query functions.
 
 ## Syntax
 
@@ -60,7 +60,7 @@ column in the
 
 catalog view to
 
-SQL Server Agent doesn't have to be running when CDC is enabled for a table. However, the
+Agent doesn't have to be running when CDC is enabled for a table. However, the
 
 capture process doesn't process the transaction log and write entries to the change table
 

@@ -175,9 +175,7 @@ The Unicode data type of the simple expression
 
 has a higher data type precedence.
 
-Therefore, the resulting expression has the Unicode data type assigned to
-
-. However,
+Therefore, the resulting expression has the Unicode data type assigned to. However,
 
 the expression
 
@@ -187,9 +185,7 @@ has a lower coercion label
 
 of Coercible-default. Therefore, the collation that is used is the
 
-collation of
-
-.
+collation of.
 
 The following examples show how the collation rules work. To run the examples, create the
 
@@ -371,9 +367,9 @@ TestTab
 WHERE
 GreekCol = LatinCol
 COLLATE greek_ci_as;
-id          GreekCol             LatinCol
+id GreekCol LatinCol
 ----------- -------------------- --------------------
-1 A                    a
+1 A a
 ```
 
 ```sql

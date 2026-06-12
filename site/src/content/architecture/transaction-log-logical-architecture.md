@@ -6,9 +6,7 @@ tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL Server transaction log architecture and
-
-Applies to:
+transaction log architecture and
 
 SQL Server
 
@@ -58,9 +56,7 @@ transaction are individually linked in a chain using backward pointers that spee
 
 the transaction.
 
-The basic structure of an LSN is
-
-. For more information,
+The basic structure of an LSN is. For more information,
 
 see the
 

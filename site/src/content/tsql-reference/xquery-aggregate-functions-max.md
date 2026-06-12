@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns from a sequence of atomic values,
@@ -66,9 +64,7 @@ an xdt:untypedAtomic value cannot be cast to xs:double, the value is ignored in 
 
 sequence,
 
-$arg
-
-. If the input is a dynamically calculated empty sequence, the empty sequence is
+$arg. If the input is a dynamically calculated empty sequence, the empty sequence is
 
 returned.
 

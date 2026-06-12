@@ -23,21 +23,17 @@ pubDate: 2025-12-01
 
 08/22/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
 
-SQL Server Setup supports edition upgrade among various editions of SQL Server. For
+Setup supports edition upgrade among various editions of SQL Server. For
 
 information about supported edition upgrade paths, see
 
 Supported version and edition
 
-upgrades (SQL Server 2022)
-
-.
+upgrades (SQL Server 2022).
 
 For a list of features supported by the editions of SQL Server on Windows, see:
 

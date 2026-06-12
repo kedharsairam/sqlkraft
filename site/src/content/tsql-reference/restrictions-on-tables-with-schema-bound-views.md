@@ -75,9 +75,7 @@ option. For
 
 more information, see
 
-Server configuration: max degree of parallelism
-
-.
+Server configuration: max degree of parallelism.
 
 In addition to performing
 
@@ -97,9 +95,7 @@ SQL)
 
 and
 
-ALTER PARTITION FUNCTION (Transact-SQL)
-
-. Additionally, you can't change the data
+ALTER PARTITION FUNCTION (Transact-SQL). Additionally, you can't change the data
 
 type of a column of a partitioned table.
 

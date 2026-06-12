@@ -27,8 +27,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -57,9 +55,7 @@ The exterior and any interior rings of a
 
 define its boundary. The space within the rings
 
-defines the interior of the
-
-.
+defines the interior of the.
 
 The following illustration shows examples of
 

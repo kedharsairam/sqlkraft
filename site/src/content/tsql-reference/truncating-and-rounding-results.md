@@ -9,13 +9,9 @@ pubDate: 2026-05-29
 
 When you explicitly or implicitly cast the data type to a string or binary data type, the content of the data type is serialized based on a defined set of rules. For information about these rules, see
 
-Define the Serialization of XML Data
+Define the Serialization of XML Data. For information about conversion from other data types to the data type, see
 
-. For information about conversion from other data types to the data type, see
-
-Create Instances of XML Data
-
-.
+Create Instances of XML Data.
 
 The and data types don't support automatic data type conversion. You can explicitly convert data to character data, and data to or
 
@@ -24,9 +20,7 @@ The and data types don't support automatic data type conversion. You can explici
 
 When the or functions output a character string, and they receive a character string input, the output has the same collation and collation label as the input. If the input isn't a character string, the output has the default collation of the database, and a collation label of coercible-default. For more information, see
 
-Collation Precedence (Transact-SQL)
-
-.
+Collation Precedence (Transact-SQL).
 
 To assign a different collation to the output, apply the COLLATE clause to the result expression of the or function. For example: SQL
 
@@ -114,7 +108,7 @@ Error
 
 Error returned because result length is too short to display.
 
-SQL Server guarantees that only roundtrip conversions, in other words conversions that convert a data type from its original data type and back again, yield the same values from version to version. The following example shows such a roundtrip conversion: SQL
+guarantees that only roundtrip conversions, in other words conversions that convert a data type from its original data type and back again, yield the same values from version to version. The following example shows such a roundtrip conversion: SQL
 
 The following example shows a resulting expression that is too small to display.
 
@@ -303,12 +297,12 @@ ON e.BusinessEntityID = p.BusinessEntityID
 WHERE
 NOT e.BusinessEntityID > 5;
 GO
-FirstName   LastName      Title   Sick Leave
----------   ------------- ------- --------`
-Ken         Sanchez       NULL   *
-Terri       Duffy         NULL   *
-Roberto     Tamburello    NULL   *
-Rob         Walters       NULL   *
-Gail        Erickson      Ms.    *
+FirstName LastName Title Sick Leave
+--------- ------------- ------- --------`
+Ken Sanchez NULL *
+Terri Duffy NULL *
+Roberto Tamburello NULL *
+Rob Walters NULL *
+Gail Erickson Ms. *
 (5 row(s) affected)
 ```

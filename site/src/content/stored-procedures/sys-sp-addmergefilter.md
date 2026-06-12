@@ -2,7 +2,7 @@
 name: "sys.sp_addmergefilter"
 title: "sp_addmergefilter"
 category: "general"
-description: "Adds a new merge filter to create a partition based on a join with another table. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication in which the merge filter is being added."
+description: "Adds a new merge filter to create a partition based on a join with another table. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -31,7 +31,7 @@ syntax: |
 
 ## Description
 
-Adds a new merge filter to create a partition based on a join with another table. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication in which the merge filter is being added. The name of the article on which the merge filter is being added.
+Adds a new merge filter to create a partition based on a join with another table. This stored procedure is executed at the Publisher on the publication database.
 
 ## Syntax
 
@@ -61,8 +61,7 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . Define an Article Define and Modify a Join Filter Between Merge Articles Join Filters sp_changemergefilter (Transact-SQL) sp_dropmergefilter (Transact-SQL) sp_helpmergefilter (Transact-SQL) Replication stored procedures (Transact-SQL) Related content
-
+Only members of the fixed server role or fixed database role can execute. Define an Article Define and Modify a Join Filter Between Merge Articles Join Filters sp_changemergefilter (Transact-SQL) sp_dropmergefilter (Transact-SQL) sp_helpmergefilter (Transact-SQL) Replication stored procedures (Transact-SQL)
 ## Examples
 
 ### Example 1

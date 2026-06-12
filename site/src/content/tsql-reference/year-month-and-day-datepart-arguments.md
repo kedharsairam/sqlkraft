@@ -19,13 +19,9 @@ For a
 
 ) datepart
 
-, the return value depends on the value set by SET DATEFIRST
+, the return value depends on the value set by SET DATEFIRST.
 
-.
-
-January 1 of any year defines the starting number for the datepart
-
-. For example:
+January 1 of any year defines the starting number for the datepart. For example:
 
 DATEPART (
 

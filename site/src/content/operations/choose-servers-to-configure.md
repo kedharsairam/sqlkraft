@@ -28,8 +28,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Use this page to specify which server instances you want to configure now. You must select at

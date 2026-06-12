@@ -17,15 +17,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
 
 SQL Server's backup and restore feature is the recommended way to migrate a database from
 
-SQL Server on Windows to SQL Server on Linux. In this tutorial, you walk through the steps
+on Windows to SQL Server on Linux. In this tutorial, you walk through the steps
 
 required to move a database to Linux with backup and restore techniques.
 
@@ -33,9 +31,7 @@ You can also create a SQL Server Always On Availability Group to migrate a SQL S
 
 from Windows to Linux. See
 
-sql-server-linux-availability-group-cross-platform
-
-.
+sql-server-linux-availability-group-cross-platform.
 
 The following prerequisites are required to complete this tutorial:
 
@@ -45,7 +41,7 @@ SQL Server
 
 installed.
 
-SQL Server Management Studio
+Management Studio
 
 installed.
 
@@ -53,7 +49,7 @@ Target database to migrate.
 
 On a Linux machine:
 
-SQL Server (
+(
 
 Red Hat Enterprise Linux
 

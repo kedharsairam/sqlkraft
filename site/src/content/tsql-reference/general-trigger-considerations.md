@@ -33,7 +33,7 @@ a logon trigger generates a result set, the trigger fails to launch and the logi
 
 fired the trigger is denied.
 
-SQL Server lets you create multiple triggers for each DML, DDL, or
+lets you create multiple triggers for each DML, DDL, or
 
 event. For example, if
 
@@ -49,37 +49,25 @@ update trigger is created. In earlier versions of SQL Server, only one trigger f
 
 data modification event is allowed for each table.
 
-SQL Server also supports recursive invocation of triggers when the
+also supports recursive invocation of triggers when the
 
 setting
 
-is enabled using
-
-.
+is enabled using.
 
 Recursive triggers enable the following types of recursion to occur:
 
-: With indirect recursion, an application updates table
-
-. This fires
+: With indirect recursion, an application updates table. This fires
 
 trigger
 
-, updating table
+, updating table. Trigger
 
-. Trigger
+then fires and updates table.
 
-then fires and updates table
+: In direct recursion, the application updates table. This fires trigger
 
-.
-
-: In direct recursion, the application updates table
-
-. This fires trigger
-
-, updating table
-
-. Because table
+, updating table. Because table
 
 was updated, trigger
 
@@ -91,9 +79,7 @@ triggers,
 
 and
 
-, are defined on table
-
-. Trigger
+, are defined on table. Trigger
 
 updates table
 
@@ -109,9 +95,7 @@ triggers the
 
 execution of
 
-(recursively) and
-
-. The inserted and deleted tables for a specific trigger
+(recursively) and. The inserted and deleted tables for a specific trigger
 
 contain rows that correspond only to the
 

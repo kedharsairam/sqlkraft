@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -62,7 +60,7 @@ You need the following components to complete this walkthrough:
 
 A version of Visual Studio installed, which includes SQL Server Data Tools, and supports
 
-C# .NET Framework development.
+C#.NET Framework development.
 
 A SQL Server project that contains SQL Server objects.
 
@@ -70,7 +68,7 @@ An instance of SQL Server to which you can deploy a database project.
 
 This walkthrough is intended for users who are already familiar with the SQL Server features of
 
-SQL Server Data Tools. You should be familiar with Visual Studio concepts, such as how to
+Data Tools. You should be familiar with Visual Studio concepts, such as how to
 
 create a class library, add NuGet packages, and how to use the code editor to add code to a
 
@@ -78,15 +76,11 @@ class.
 
 First create a class library. To create a class library project:
 
-1. Create a C# (.NET Framework) class library project named
-
-.
+1. Create a C# (.NET Framework) class library project named.
 
 2. Rename the file
 
-to
-
-.
+to.
 
 ```cmd
 WAITFOR DELAY

@@ -27,8 +27,6 @@ Article
 
 02/05/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to use Transact-SQL to create and configure an availability group on
@@ -57,9 +55,7 @@ recommend that you read
 
 Prerequisites, Restrictions, and Recommendations for Always
 
-On Availability Groups (SQL Server)
-
-.
+On Availability Groups (SQL Server).
 
 Requires membership in the
 
@@ -73,9 +69,7 @@ permission.
 
 Note
 
-For an introduction to availability groups, see
-
-.
+For an introduction to availability groups, see.
 
 ７
 
@@ -87,8 +81,6 @@ or SQL Server PowerShell cmdlets. For more information, see
 
 ,
 
-, or
-
-.
+, or.
 
 Prerequisites, Restrictions, and Recommendations

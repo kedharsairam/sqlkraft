@@ -43,9 +43,7 @@ data type argument, the return value depends on the
 
 setting specified by
 
-SET DATEFIRST
-
-.
+SET DATEFIRST.
 
 If the
 
@@ -95,7 +93,7 @@ only if the
 
 date
 
-argument has a literal .
+argument has a literal.
 
 For example, the default year-month-day for any
 
@@ -111,9 +109,7 @@ date
 
 , and
 
-## returns
-
-.
+## returns.
 
 If
 

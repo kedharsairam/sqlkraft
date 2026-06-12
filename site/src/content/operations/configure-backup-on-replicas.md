@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to configure backup on secondary replicas for an Always On
@@ -71,9 +69,7 @@ AVAILABILITY GROUP permission, or CONTROL SERVER permission.
 
 Note
 
-For an introduction to backup on secondary replicas, see
-
-.
+For an introduction to backup on secondary replicas, see.
 
 ７
 
@@ -87,9 +83,7 @@ is set to
 
 , with the
 
-exception of
-
-.
+exception of.
 
 ﾉ
 

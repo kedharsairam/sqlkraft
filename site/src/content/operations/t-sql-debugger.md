@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 09/15/2025
 
-Applies to:
-
 SQL Server
 
 The Transact-SQL debugger helps you find errors in Transact-SQL code by investigating the
@@ -33,7 +31,7 @@ data that is used by or returned by those Transact-SQL statements.
 
 T-SQL debugging is available in
 
-SQL Server Data Tools
+Data Tools
 
 for Visual Studio.
 
@@ -47,9 +45,7 @@ A breakpoint specifies a point at which you want execution to pause so you can e
 
 data. When you start the debugger, it pauses on the first line of code in the Query Editor
 
-window. To run to the first breakpoint, use
-
-. You can also use
+window. To run to the first breakpoint, use. You can also use
 
 to run to
 

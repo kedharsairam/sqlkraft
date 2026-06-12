@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -61,9 +59,7 @@ of each distinct value varies significantly. For more information, see
 
 Query Processing
 
-Architecture Guide
-
-.
+Architecture Guide.
 
 The number of processors that are used by the query optimizer typically provides optimal
 
@@ -91,8 +87,6 @@ Note
 
 Parallel index operations aren't available in every SQL Server edition. For more
 
-information, see
-
-.
+information, see.
 
 `MAXDOP`

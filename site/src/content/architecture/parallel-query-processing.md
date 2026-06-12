@@ -10,7 +10,7 @@ In this case, SQL Server doesn't use the value 100 to optimize the query. It use
 
 estimate.
 
-SQL Server provides parallel queries to optimize query execution and index operations for
+provides parallel queries to optimize query execution and index operations for
 
 computers that have more than one microprocessor (CPU). Because SQL Server can perform a
 
@@ -44,9 +44,7 @@ For more information on scalar user-defined functions, see
 
 Create User-defined
 
-Functions
-
-. Starting with SQL Server 2019 (15.x), the SQL Server Database Engine has the
+Functions. Starting with SQL Server 2019 (15.x), the SQL Server Database Engine has the
 
 ability to inline these functions, and unlock use of parallelism during query processing.
 
@@ -54,17 +52,13 @@ For more information on scalar UDF inlining, see
 
 Intelligent query processing in SQL
 
-databases
-
-.
+databases.
 
 For more information on Remote Query, see
 
 Showplan Logical and Physical Operators
 
-Reference
-
-.
+Reference.
 
 ）
 
@@ -88,9 +82,7 @@ plan, or parts or the execution plan.
 
 For more information on cursors, see
 
-DECLARE CURSOR
-
-.
+DECLARE CURSOR.
 
 For more information on recursion, see
 
@@ -100,21 +92,15 @@ Common Table Expressions
 
 and
 
-Recursion in T-SQL
-
-.
+Recursion in T-SQL.
 
 For more information on MSTVFs, see
 
-Create User-defined Functions (Database Engine)
-
-.
+Create User-defined Functions (Database Engine).
 
 For more information, see
 
-TOP (Transact-SQL)
-
-.
+TOP (Transact-SQL).
 
 A query execution plan can contain the
 
@@ -125,8 +111,6 @@ element, which describes why parallelism wasn't used. Values for this attribute 
 ## Description
 
 MaxDOPSetToOne
-
-Maximum degree of parallelism set
 
 to 1.
 
@@ -142,19 +126,13 @@ queries.
 
 NoParallelDynamicCursor
 
-Parallel plans not supported for
-
 dynamic cursors.
 
 NoParallelFastForwardCursor
 
-Parallel plans not supported for fast
-
 forward cursors.
 
 NoParallelCursorFetchByBookmark
-
-Parallel plans not supported for
 
 cursors that fetch by bookmark.
 
@@ -165,8 +143,6 @@ Parallel index creation not supported
 for non-Enterprise edition.
 
 NoParallelPlansInDesktopOrExpressEdition
-
-Parallel plans not supported for
 
 Desktop and Express edition.
 
@@ -183,8 +159,6 @@ Parallelism not supported for a CLR
 UDF that requires data access.
 
 ﾉ
-
-Expand table
 
 ## Description
 
@@ -210,8 +184,6 @@ and isn't parallelizable.
 
 MixedSerialAndParallelOnlineIndexBuildNotSupported
 
-Unsupported mix of serial and
-
 parallel plans for a single online
 
 index build.
@@ -224,19 +196,13 @@ back to serial.
 
 NoParallelForMemoryOptimizedTables
 
-Parallelism not supported for
-
 referenced In-Memory OLTP tables.
 
 NoParallelForDmlOnMemoryOptimizedTable
 
-Parallelism not supported for DML on
-
 an In-Memory OLTP table.
 
 NoParallelForNativelyCompiledModule
-
-Parallelism not supported for
 
 referenced natively compiled
 
@@ -252,21 +218,13 @@ After exchange operators are inserted, the result is a parallel-query execution 
 
 query execution plan can use more than one worker thread. A serial execution plan, used by a
 
-non-parallel (serial) query, uses only one worker thread for its execution. The actual number of
-
-worker threads used by a parallel query is determined at query plan execution initialization and
+non-parallel (serial) query, uses only one worker thread for its execution.
 
 is determined by the complexity of the plan and the degree of parallelism.
 
-Degree of parallelism (DOP) determines the maximum number of CPUs that are being used; it
+doesn't mean the number of worker threads that are being used.
 
-doesn't mean the number of worker threads that are being used. The DOP limit is set per
-
-task
-
-.
-
-It isn't a per
+task.
 
 request
 
@@ -274,21 +232,15 @@ or per query limit. This means that during a parallel query execution, a
 
 single request can spawn multiple tasks that are assigned to a
 
-scheduler
-
-. More processors than
+scheduler.
 
 specified by the MAXDOP might be used concurrently at any given point of query execution,
 
-when different tasks are executed concurrently. For more information, see the
+when different tasks are executed concurrently.
 
 Thread and Task
 
-Architecture Guide
-
-.
-
-The SQL Server Query Optimizer doesn't use a parallel execution plan for a query if any one of
+Architecture Guide.
 
 the following conditions is true:
 

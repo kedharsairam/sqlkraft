@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article provides information to help you troubleshoot typical problems with configuring
@@ -45,7 +43,7 @@ Accounts
 
 Discusses requirements for correctly configuring the accounts under which
 
-SQL Server is running.
+is running.
 
 Endpoints
 
@@ -89,9 +87,7 @@ Ensure that you're meeting the Always On availability groups prerequisites. For 
 
 information, see
 
-Prerequisites, Restrictions, and Recommendations for Always On
-
-.
+Prerequisites, Restrictions, and Recommendations for Always On.
 
 ﾉ
 

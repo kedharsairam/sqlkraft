@@ -2,7 +2,7 @@
 name: "sys.sp_query_store_remove_plan"
 title: "sp_query_store_remove_plan"
 category: "general"
-description: "SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Removes a single plan from the Query Store. Transact-SQL syntax conventions The ID of the query plan to be removed. Requires the ALTER permission on the database. The following example returns information about the queries in the Query Store."
+description: "2016 (13.x) and later versions SQL database in Microsoft Fabric Removes a single plan from the Query Store. The ID of the query plan to be removed. Requires the ALTER permission on the database. The following example returns information about the queries in the Query Store."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -12,7 +12,7 @@ syntax: |
 
 ## Description
 
-SQL Server 2016 (13.x) and later versions SQL database in Microsoft Fabric Removes a single plan from the Query Store. Transact-SQL syntax conventions The ID of the query plan to be removed. Requires the ALTER permission on the database. The following example returns information about the queries in the Query Store. Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered out of order, an error
+2016 (13.x) and later versions SQL database in Microsoft Fabric Removes a single plan from the Query Store. The ID of the query plan to be removed. Requires the ALTER permission on the database. The following example returns information about the queries in the Query Store. Arguments for extended stored procedures must be entered in the specific order as section.
 
 ## Syntax
 

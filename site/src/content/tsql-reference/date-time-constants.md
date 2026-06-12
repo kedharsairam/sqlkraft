@@ -27,9 +27,7 @@ or
 
 quotation marks. If a number larger than
 
-is used, it's converted to
-
-.
+is used, it's converted to.
 
 constants are represented by using character date values in specific formats,
 

@@ -174,9 +174,7 @@ is 0. When MARS is enabled, the value
 
 for active batches is 1 to
 
-n
-
-. If there are
+n. If there are
 
 no active batches in the session,
 
@@ -324,9 +322,7 @@ State of the task. For
 
 more information, see
 
-sys.dm_os_tasks
-
-.
+sys.dm_os_tasks.
 
 The resource
 
@@ -340,9 +336,7 @@ The scheduler
 
 associated with this task. See
 
-sys.dm_os_schedulers
-
-.
+sys.dm_os_schedulers.
 
 The name of the
 
@@ -398,15 +392,11 @@ options usually controlled by
 
 statements such as
 
-and
-
-.
+and.
 
 For more information, see
 
-@@OPTIONS
-
-.
+@@OPTIONS.
 
 Represents the HoBT (heap or
 
@@ -420,13 +410,9 @@ identifies the single row within a
 
 table on which a lock is held or
 
-requested. RID is represented as RID:
+requested. RID is represented as RID:. For
 
-. For
-
-example,
-
-.
+example,.
 
 identifies the table on which a
 
@@ -434,11 +420,7 @@ lock is held or requested.
 
 is
 
-represented as
-
-. For example,
-
-.
+represented as. For example,.
 
 Identifies the key range within an
 
@@ -452,27 +434,17 @@ index key hash value
 
 ).
 
-For example,
-
-.
+For example,.
 
 Identifies the page resource on
 
 which a lock is held or requested.
 
-is represented as
-
-. For example,
-
-.
+is represented as. For example,.
 
 Identifies the extent structure.
 
-is represented as
-
-. For example,
-
-.
+is represented as. For example,.
 
 None exclusive
 

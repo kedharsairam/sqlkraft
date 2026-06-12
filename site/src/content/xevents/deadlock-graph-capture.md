@@ -28,15 +28,15 @@ The system_health session automatically captures `xml_deadlock_report` events in
 -- Extract deadlock graphs from the system_health ring buffer
 -- Returns the most recent deadlock events with parsed process/resource details
 SELECT deadlock.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
-    deadlock.query('event/data/value/deadlock') AS deadlock_graph_xml,
-    deadlock.value('(event/data[@name="database_name"]/value)[1]', 'nvarchar(256)') AS database_name
+ deadlock.query('event/data/value/deadlock') AS deadlock_graph_xml,
+ deadlock.value('(event/data[@name="database_name"]/value)[1]', 'nvarchar(256)') AS database_name
 FROM (
-    SELECT CAST(target_data AS XML) AS session_target
-    FROM sys.dm_xe_session_targets
-    WHERE event_session_address = (
-        SELECT [address] FROM sys.dm_xe_sessions WHERE name = 'system_health'
-    )
-    AND target_name = 'ring_buffer'
+ SELECT CAST(target_data AS XML) AS session_target
+ FROM sys.dm_xe_session_targets
+ WHERE event_session_address = (
+ SELECT [address] FROM sys.dm_xe_sessions WHERE name = 'system_health'
+ )
+ AND target_name = 'ring_buffer'
 ) AS sh
 CROSS APPLY sh.session_target.nodes('/RingBufferTarget/event[@name="xml_deadlock_report"]') AS d(deadlock)
 ORDER BY deadlock_time DESC;
@@ -47,30 +47,30 @@ ORDER BY deadlock_time DESC;
 ```sql
 -- Extract individual processes involved in each deadlock
 WITH DeadlockEvents AS (
-    SELECT d.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
-        d.query('event/data/value/deadlock') AS graph
-    FROM (
-        SELECT CAST(target_data AS XML) AS target_data
-        FROM sys.dm_xe_session_targets
-        WHERE event_session_address = (
-            SELECT [address] FROM sys.dm_xe_sessions WHERE name = 'system_health'
-        )
-        AND target_name = 'ring_buffer'
-    ) AS sh
-    CROSS APPLY sh.target_data.nodes('/RingBufferTarget/event[@name="xml_deadlock_report"]') AS d(event)
+ SELECT d.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
+ d.query('event/data/value/deadlock') AS graph
+ FROM (
+ SELECT CAST(target_data AS XML) AS target_data
+ FROM sys.dm_xe_session_targets
+ WHERE event_session_address = (
+ SELECT [address] FROM sys.dm_xe_sessions WHERE name = 'system_health'
+ )
+ AND target_name = 'ring_buffer'
+ ) AS sh
+ CROSS APPLY sh.target_data.nodes('/RingBufferTarget/event[@name="xml_deadlock_report"]') AS d(event)
 )
 SELECT deadlock_time,
-    p.value('@id', 'varchar(50)') AS process_id,
-    p.value('@spid', 'int') AS spid,
-    p.value('@ecid', 'int') AS ecid,
-    p.value('@transactionname', 'varchar(100)') AS transaction_name,
-    p.value('@lasttranstarted', 'datetime2') AS transaction_start_time,
-    p.value('@lockmode', 'varchar(20)') AS lock_mode,
-    p.value('@clientapp', 'varchar(256)') AS client_application,
-    p.value('@hostname', 'varchar(128)') AS host_name,
-    p.value('@loginname', 'varchar(128)') AS login_name,
-    p.value('@isolationlevel', 'varchar(20)') AS isolation_level,
-    p.value('(inputbuf)[1]', 'nvarchar(max)') AS input_buffer
+ p.value('@id', 'varchar(50)') AS process_id,
+ p.value('@spid', 'int') AS spid,
+ p.value('@ecid', 'int') AS ecid,
+ p.value('@transactionname', 'varchar(100)') AS transaction_name,
+ p.value('@lasttranstarted', 'datetime2') AS transaction_start_time,
+ p.value('@lockmode', 'varchar(20)') AS lock_mode,
+ p.value('@clientapp', 'varchar(256)') AS client_application,
+ p.value('@hostname', 'varchar(128)') AS host_name,
+ p.value('@loginname', 'varchar(128)') AS login_name,
+ p.value('@isolationlevel', 'varchar(20)') AS isolation_level,
+ p.value('(inputbuf)[1]', 'nvarchar(max)') AS input_buffer
 FROM DeadlockEvents
 CROSS APPLY graph.nodes('//deadlock/process-list/process') AS p(process)
 ORDER BY deadlock_time DESC, spid;
@@ -85,31 +85,31 @@ For environments with frequent deadlocks, create a dedicated XEvent session with
 CREATE EVENT SESSION [deadlock_capture]
 ON SERVER
 ADD EVENT sqlserver.xml_deadlock_report (
-    ACTION (
-        sqlserver.database_name,
-        sqlserver.client_app_name,
-        sqlserver.client_hostname,
-        sqlserver.username,
-        sqlserver.session_id
-    )
-    WHERE (
-        [sqlserver].[database_name] = N'YourDatabaseName'
-        OR [sqlserver].[database_name] IS NULL
-    )
+ ACTION (
+ sqlserver.database_name,
+ sqlserver.client_app_name,
+ sqlserver.client_hostname,
+ sqlserver.username,
+ sqlserver.session_id
+ )
+ WHERE (
+ [sqlserver].[database_name] = N'YourDatabaseName'
+ OR [sqlserver].[database_name] IS NULL
+ )
 )
 ADD TARGET package0.event_file (
-    SET filename = N'D:\XELogs\deadlock_capture.xel',
-        max_file_size = 50,
-        max_rollover_files = 5
+ SET filename = N'D:\XELogs\deadlock_capture.xel',
+ max_file_size = 50,
+ max_rollover_files = 5
 )
 WITH (
-    MAX_MEMORY = 2048 KB,
-    EVENT_RETENTION_MODE = ALLOW_SINGLE_EVENT_LOSS,
-    MAX_DISPATCH_LATENCY = 15 SECONDS,
-    MAX_EVENT_SIZE = 0 KB,
-    MEMORY_PARTITION_MODE = NONE,
-    TRACK_CAUSALITY = ON,
-    STARTUP_STATE = ON
+ MAX_MEMORY = 2048 KB,
+ EVENT_RETENTION_MODE = ALLOW_SINGLE_EVENT_LOSS,
+ MAX_DISPATCH_LATENCY = 15 SECONDS,
+ MAX_EVENT_SIZE = 0 KB,
+ MEMORY_PARTITION_MODE = NONE,
+ TRACK_CAUSALITY = ON,
+ STARTUP_STATE = ON
 );
 GO
 
@@ -123,18 +123,18 @@ GO
 ```sql
 -- Read deadlock events from the file target and parse deadlock graphs
 WITH xevents AS (
-    SELECT event_data AS deadlock_event
-    FROM sys.fn_xe_file_target_read_file (
-        N'D:\XELogs\deadlock_capture*.xel',
-        N'D:\XELogs\deadlock_capture*.xem',
-        NULL,
-        NULL
-    )
+ SELECT event_data AS deadlock_event
+ FROM sys.fn_xe_file_target_read_file (
+ N'D:\XELogs\deadlock_capture*.xel',
+ N'D:\XELogs\deadlock_capture*.xem',
+ NULL,
+ NULL
+ )
 )
 SELECT event_data.value('(event/@timestamp)[1]', 'datetime2') AS deadlock_time,
-    event_data.value('(event/action[@name="database_name"]/value)[1]', 'nvarchar(256)') AS database_name,
-    event_data.value('(event/action[@name="client_app_name"]/value)[1]', 'nvarchar(256)') AS application_name,
-    event_data.query('event/data/value/deadlock') AS deadlock_graph
+ event_data.value('(event/action[@name="database_name"]/value)[1]', 'nvarchar(256)') AS database_name,
+ event_data.value('(event/action[@name="client_app_name"]/value)[1]', 'nvarchar(256)') AS application_name,
+ event_data.query('event/data/value/deadlock') AS deadlock_graph
 FROM xevents
 ORDER BY deadlock_time DESC;
 ```
@@ -166,34 +166,34 @@ Understanding the deadlock graph XML enables programmatic analysis:
 
 ```xml
 <deadlock>
-  <victim-list>
-    <victimProcess id="processXXXXXXX" />
-  </victim-list>
-  <process-list>
-    <process id="processXXXXXXX" spid="NN" ecid="0"
-             priority="0" logused="0" waitresource="KEY: ..."
-             waittime="XXXX" schedulerid="N" kpid="NNNN"
-             status="suspended" ... >
-      <executionStack>
-        <frame procname="dbname.schema.procname" line="NN" sqlhandle="..." />
-      </executionStack>
-      <inputbuf>
-        /* Full T-SQL batch text */
-      </inputbuf>
-    </process>
-  </process-list>
-  <resource-list>
-    <keylock hobtid="NNNNNNNNNN" dbid="N" objectname="db.schema.table"
-             indexname="index_name" id="lockXXXXXXX" mode="X"
-             associatedObjectId="NNNNNNNNNN">
-      <owner-list>
-        <owner id="processXXXXXXX" mode="X" />
-      </owner-list>
-      <waiter-list>
-        <waiter id="processXXXXXXX" mode="S" requestType="wait" />
-      </waiter-list>
-    </keylock>
-  </resource-list>
+ <victim-list>
+ <victimProcess id="processXXXXXXX" />
+ </victim-list>
+ <process-list>
+ <process id="processXXXXXXX" spid="NN" ecid="0"
+ priority="0" logused="0" waitresource="KEY:."
+ waittime="XXXX" schedulerid="N" kpid="NNNN"
+ status="suspended". >
+ <executionStack>
+ <frame procname="dbname.schema.procname" line="NN" sqlhandle="." />
+ </executionStack>
+ <inputbuf>
+ /* Full T-SQL batch text */
+ </inputbuf>
+ </process>
+ </process-list>
+ <resource-list>
+ <keylock hobtid="NNNNNNNNNN" dbid="N" objectname="db.schema.table"
+ indexname="index_name" id="lockXXXXXXX" mode="X"
+ associatedObjectId="NNNNNNNNNN">
+ <owner-list>
+ <owner id="processXXXXXXX" mode="X" />
+ </owner-list>
+ <waiter-list>
+ <waiter id="processXXXXXXX" mode="S" requestType="wait" />
+ </waiter-list>
+ </keylock>
+ </resource-list>
 </deadlock>
 ```
 

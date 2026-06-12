@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 5901 16 No One or more recovery units belonging to database '%.\*ls' failed to generate a checkpoint. This is typically caused by lack of system resources such as disk or memory, or in some
+Description 5901 16 No One or more recovery units belonging to database '%.\*ls' failed to generate a checkpoint.
 
 ## Severity
 

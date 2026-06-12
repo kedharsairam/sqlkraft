@@ -53,9 +53,7 @@ Data type depends on requested value.
 
 , and
 
-are of type
-
-.
+are of type.
 
 1 if the login is in the specified state.
 
@@ -63,27 +61,19 @@ are of type
 
 and
 
-are of type
-
-.
+are of type.
 
 ,
 
 ,
 
-are of type
+are of type.
 
-.
-
-is of type
-
-.
+is of type.
 
 NULL if the login isn't a valid SQL Server login.
 
-is of type
-
-.
+is of type.
 
 0 if the login is expired or if it will expire on the day when queried.
 

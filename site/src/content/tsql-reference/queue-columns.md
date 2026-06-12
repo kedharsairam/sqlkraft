@@ -33,11 +33,9 @@ The following table lists the columns in a queue:
 
 ## Description
 
-Status of the message. For messages returned by the
+Status of the message.
 
-RECEIVE command, the status is always
-
-. Messages in the
+RECEIVE command, the status is always.
 
 queue can contain one of the following values:
 
@@ -48,8 +46,6 @@ queue can contain one of the following values:
 =Not yet complete
 
 =Retained sent message
-
-The conversation priority level that is applied to the
 
 message.
 
@@ -63,11 +59,7 @@ Handle for the conversation that this message is part of.
 
 Sequence number of the message in the conversation.
 
-SQL Server object identifier of the service that the
-
 conversation is to.
-
-#### Column name
 
 #### nvarchar(128)
 

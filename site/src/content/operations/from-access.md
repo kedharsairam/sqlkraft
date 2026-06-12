@@ -27,19 +27,15 @@ Article
 
 09/16/2024
 
-Applies to:
-
 SQL Server
 
 In this guide, you learn how to migrate your Microsoft Access databases to SQL Server by using
 
-SQL Server Migration Assistant for Access (SSMA for Access).
+Migration Assistant for Access (SSMA for Access).
 
 For other migration guides, see
 
-Azure Database Migration Guides
-
-.
+Azure Database Migration Guides.
 
 Before you begin migrating your Access database to SQL Server:
 
@@ -47,9 +43,7 @@ Verify that your source environment is supported.
 
 Get
 
-SSMA for Access
-
-.
+SSMA for Access.
 
 Get connectivity and sufficient permissions to access both the source and target.
 
@@ -61,28 +55,20 @@ By using SSMA for Access, you can review database objects and data and assess da
 
 migration. To learn more about the tool, see
 
-SQL Server Migration Assistant for Access
+Migration Assistant for Access
 
-(AccessToSQL)
-
-.
+(AccessToSQL).
 
 To create an assessment:
 
 1. Open
 
-SSMA for Access
-
-.
+SSMA for Access.
 
 2. Select
 
-, and then select
-
-.
+, and then select.
 
 3. Enter a project name and a location to save your project. Then select a SQL Server
 
-migration target from the dropdown list, and select
-
-.
+migration target from the dropdown list, and select.

@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -41,9 +39,7 @@ dialog box. For more information about accessing this dialog box,
 
 see
 
-View and Modify Distributor and Publisher Properties
-
-.
+View and Modify Distributor and Publisher Properties.
 
 1. On the
 
@@ -59,10 +55,6 @@ properties button (
 
 box.
 
-3. Select
-
-.
+3. Select.
 
 Configure Distribution
-
-Last updated on 01/07/2026

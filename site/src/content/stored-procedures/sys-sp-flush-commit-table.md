@@ -2,7 +2,7 @@
 name: "sys.sp_flush_commit_table"
 title: "sys.sp_flush_commit_table"
 category: "general"
-description: "to disk to help with change tracking cleanup. Transact-SQL syntax conventions Specifies the current change tracking version."
+description: "to disk to help with change tracking cleanup. Specifies the current change tracking version."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-to disk to help with change tracking cleanup. Transact-SQL syntax conventions Specifies the current change tracking version. The watermark change tracking version for
+to disk to help with change tracking cleanup. Specifies the current change tracking version.
 
 ## Syntax
 

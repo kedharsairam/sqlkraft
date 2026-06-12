@@ -19,8 +19,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Accepts zero or more strings as arguments and returns a string created by concatenating the
@@ -43,9 +41,7 @@ see the section "XQuery Functions Are Surrogate-Aware" in the topic
 
 Breaking Changes to
 
-Database Engine Features in SQL Server 2016
-
-. Also see
+Database Engine Features in SQL Server 2016. Also see
 
 ALTER DATABASE Compatibility Level
 
@@ -53,9 +49,7 @@ ALTER DATABASE Compatibility Level
 
 and
 
-Collation and Unicode Support
-
-.
+Collation and Unicode Support.
 
 This topic provides XQuery examples against XML instances that are stored in various
 
@@ -66,5 +60,5 @@ columns in the AdventureWorks sample database.
 ```sql
 fn:concat ($string as xs:string?
 ,$string as xs:string?
-[, ...]) as xs:string
+[,.]) as xs:string
 ```

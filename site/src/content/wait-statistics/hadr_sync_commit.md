@@ -15,11 +15,11 @@ Occurs on the primary replica when waiting for a secondary replica to acknowledg
 
 ## Key Metrics
 
-| Metric    | Description        |
+| Metric | Description |
 | --------- | ------------------ |
 | Wait Type | `HADR_SYNC_COMMIT` |
-| Category  | Latency            |
-| Severity  | HIGH               |
+| Category | Latency |
+| Severity | HIGH |
 
 ## Troubleshooting
 
@@ -29,10 +29,10 @@ Use the following query to identify the top queries contributing to `HADR_SYNC_C
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'HADR_SYNC_COMMIT'
 ORDER BY wait_time_ms DESC;

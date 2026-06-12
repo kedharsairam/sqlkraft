@@ -42,17 +42,13 @@ needed. The only difference is that the buffer pool never drops its memory alloc
 
 the level specified in min server memory, and never acquires more memory than the level
 
-specified in
-
-.
+specified in.
 
 The amount of memory acquired by the SQL Server Database Engine is entirely dependent on
 
 the workload placed on the instance. A SQL Server instance that isn't processing many requests
 
-might never reach the value specified by
-
-.
+might never reach the value specified by.
 
 If the same value is specified for both min server memory and
 
@@ -80,7 +76,7 @@ options to control how much memory SQL Server can use. The
 
 Note
 
-SQL Server as a process acquires more memory than specified by
+as a process acquires more memory than specified by
 
 option. Both internal and external components can allocate memory outside of the buffer
 

@@ -23,9 +23,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -33,7 +31,7 @@ Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics (serverless SQL pool only)
+(serverless SQL pool only)
 
 analytics endpoint in Microsoft Fabric
 
@@ -67,9 +65,7 @@ or let the structure of the
 
 statement determine the output.
 
-To maintain full control over the format of the JSON output, use
-
-. You can
+To maintain full control over the format of the JSON output, use. You can
 
 create wrapper objects and nest complex properties.
 
@@ -77,9 +73,7 @@ To format the JSON output automatically based on the structure of the
 
 statement,
 
-use
-
-.
+use.
 
 Here's an example of a
 

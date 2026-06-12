@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 SQLTransaction Event Class
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database

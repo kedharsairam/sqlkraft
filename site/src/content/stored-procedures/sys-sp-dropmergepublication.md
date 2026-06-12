@@ -2,7 +2,7 @@
 name: "sys.sp_dropmergepublication"
 title: "sp_dropmergepublication"
 category: "general"
-description: "Drops a merge publication and its associated Snapshot Agent. All subscriptions must be dropped before dropping a merge publication. The articles in the publication are dropped automatically. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to drop. existing merge publications are removed as well as the Snaps"
+description: "Drops a merge publication and its associated Snapshot Agent. All subscriptions must be dropped before dropping a merge publication. The articles in the publication are dropped automatically. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -18,7 +18,7 @@ syntax: |
 
 ## Description
 
-Drops a merge publication and its associated Snapshot Agent. All subscriptions must be dropped before dropping a merge publication. The articles in the publication are dropped automatically. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication to drop. existing merge publications are removed as well as the Snapshot Agent job associated with
+Drops a merge publication and its associated Snapshot Agent. All subscriptions must be dropped before dropping a merge publication. The articles in the publication are dropped automatically. This stored procedure is executed at the Publisher on the publication database.
 
 ## Syntax
 
@@ -35,4 +35,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or the fixed database role can execute . Delete a Publication sp_addmergepublication (Transact-SQL) sp_changemergepublication (Transact-SQL) sp_helpmergepublication (Transact-SQL) Replication stored procedures (Transact-SQL) Related content
+Only members of the fixed server role or the fixed database role can execute. Delete a Publication sp_addmergepublication (Transact-SQL) sp_changemergepublication (Transact-SQL) sp_helpmergepublication (Transact-SQL) Replication stored procedures (Transact-SQL)

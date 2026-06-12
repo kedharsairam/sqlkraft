@@ -14,9 +14,7 @@ Feature name
 
 DBCC DBREINDEX
 
-option of
-
-.
+option of.
 
 DBCC DBREINDEX
 
@@ -64,9 +62,7 @@ or VIEW, or level-2 types such as COLUMN or TRIGGER.
 
 For more information, see
 
-sp_addextendedproperty
-
-.
+sp_addextendedproperty.
 
 EXTPROP_LEVEL0
 

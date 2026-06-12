@@ -48,9 +48,7 @@ these transactions aren't replicated in a timely manner, they can prevent the tr
 
 log. For more information, see
 
-Transactional Replication
-
-.
+Transactional Replication.
 
 The transaction log
 
@@ -69,7 +67,3 @@ sys.dm_db_log_info (Transact-SQL)
 sys.dm_db_log_space_usage (Transact-SQL)
 
 Understanding Logging and Recovery in SQL Server
-
-Last updated on 11/18/2025
-
-Related content

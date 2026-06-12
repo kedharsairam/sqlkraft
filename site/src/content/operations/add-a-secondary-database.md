@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 This article describes how to add a secondary database to an existing log shipping
@@ -33,21 +31,15 @@ configuration in SQL Server by using SQL Server Management Studio or Transact-SQ
 
 1. Right-click the database you want to use as your primary database in the log shipping
 
-configuration, and then select
-
-.
+configuration, and then select.
 
 2. Under
 
-, select
-
-.
+, select.
 
 3. Under
 
-, select
-
-.
+, select.
 
 4. Select
 
@@ -79,9 +71,7 @@ located on the secondary server.
 
 8. Note the copy schedule listed in the
 
-box under
-
-. If you want to
+box under. If you want to
 
 customize the schedule for your installation, select
 

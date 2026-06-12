@@ -33,8 +33,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 : Availability Group Automatic Failover Readiness
@@ -57,9 +55,7 @@ The policy is in a healthy state when at least one secondary replica is automati
 
 The availability group is not ready for
 
-automatic failover
-
-. The primary replica is configured for
+automatic failover. The primary replica is configured for
 
 automatic failover; however, the secondary replica is not ready for automatic failover. The
 
@@ -67,17 +63,13 @@ secondary replica that is configured for automatic failover might be unavailable
 
 data
 
-synchronization state is currently not SYNCHRONIZED
-
-.
+synchronization state is currently not SYNCHRONIZED.
 
 Following are possible solutions for this issue:
 
 Verify that at least one secondary replica is configured as
 
-automatic failover
-
-. If there is not
+automatic failover. If there is not
 
 a secondary replica configured as automatic failover, update the configuration of a
 

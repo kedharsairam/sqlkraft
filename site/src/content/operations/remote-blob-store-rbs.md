@@ -31,8 +31,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Always On availability groups can provide a high-availability and disaster recovery solution for

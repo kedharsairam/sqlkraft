@@ -29,8 +29,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This article lists useful links to tools for troubleshooting and performance tuning for Always On
@@ -39,7 +37,7 @@ Availability Groups.
 
 Always On Availability Groups policies
 
-SQL Server error log (Always On Availability Groups)
+error log (Always On Availability Groups)
 
 CLUSTER.LOG (Always On Availability Groups)
 

@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 7908 16 No Table error: The file "%.*ls" in the rowset directory ID %.*ls is not a valid FILESTREAM file in container ID %d. 7909 20 No The emergency-mode repair failed.You must restore fr
+Description 7908 16 No Table error: The file "%.*ls" in the rowset directory ID %.*ls is not a valid FILESTREAM file in container ID %d.
 
 ## Severity
 

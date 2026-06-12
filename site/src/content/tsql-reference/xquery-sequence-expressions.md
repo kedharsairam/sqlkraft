@@ -29,11 +29,9 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
-SQL Server supports the XQuery operators that are used to construct, filter, and combine a
+supports the XQuery operators that are used to construct, filter, and combine a
 
 sequence of items. An item can be an atomic value or a node.
 

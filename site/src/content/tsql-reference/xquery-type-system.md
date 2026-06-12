@@ -16,8 +16,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 XQuery is a strongly-typed language for schema types and a weakly-typed language for
@@ -42,9 +40,7 @@ data Function (XQuery)
 
 and the
 
-string Function (XQuery)
-
-.
+string Function (XQuery).
 
 Matching the sequence type returned by an expression.
 
@@ -52,9 +48,7 @@ The built-in types of XML schema have a predefined namespace prefix of xs. Some 
 
 types include
 
-and
-
-. All these built-in types are supported. You can use these
+and. All these built-in types are supported. You can use these
 
 types when you create an XML schema collection.
 
@@ -66,9 +60,7 @@ information about static and dynamic types, see
 
 Expression Context and Query Evaluation
 
-(XQuery)
-
-. For example, the following query is specified against a typed
+(XQuery). For example, the following query is specified against a typed
 
 column
 

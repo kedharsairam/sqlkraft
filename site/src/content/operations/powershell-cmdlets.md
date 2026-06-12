@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 Microsoft PowerShell is a task-based command-line shell and scripting language designed
@@ -81,9 +79,7 @@ Note
 
 For a list of topics in SQL Server Books Online that describe how to use cmdlets to
 
-perform Always On availability groups tasks, see the "Related Tasks" section of
-
-.
+perform Always On availability groups tasks, see the "Related Tasks" section of.
 
 ﾉ
 

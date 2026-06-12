@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to: SQL Server 2019
-
 The following table lists the release history for SQL Server 2019 (15.x).
 
 CU 32 GDR (May 2026)

@@ -62,7 +62,7 @@ options. This change provided a more accurate sizing ability for all memory requ
 
 go through the SQL Server memory manager.
 
-SQL Server 2012
+2012
 
 ）
 

@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -81,9 +79,7 @@ instance that performs message forwarding fails, no messages are lost. Each mess
 
 maintained at the sender until the final destination acknowledges the message, as described in
 
-Service Broker communication protocols
-
-.
+Service Broker communication protocols.
 
 ```sql
 msdb.sys.routes

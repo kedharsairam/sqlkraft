@@ -21,13 +21,11 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 Azure SQL Database
 
 Azure SQL Managed Instance
 
-SQL Server on
+on
 
 Azure VM
 
@@ -73,6 +71,4 @@ Azure SQL.
 
 For an explanation of the
 
-decision tree and its choices, see
-
-.
+decision tree and its choices, see.

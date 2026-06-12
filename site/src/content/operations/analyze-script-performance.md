@@ -53,9 +53,7 @@ menu, point to
 
 , select
 
-and
-
-.
+and.
 
 Alternatively, select the
 
@@ -63,9 +61,7 @@ button (the fifth one from the right) on the
 
 Transact-SQL Editor toolbar, or by right-clicking in the Transact-SQL editor and then selecting
 
-and
-
-. In order to gather statistics for a query, you
+and. In order to gather statistics for a query, you
 
 have to turn on this feature before executing it.
 
@@ -89,9 +85,7 @@ and
 
 Client
 
-Statistics Tab
-
-.
+Statistics Tab.
 
 Execution plans display how the database engine navigates tables and uses indexes to access
 

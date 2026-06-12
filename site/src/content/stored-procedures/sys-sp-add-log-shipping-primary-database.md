@@ -2,7 +2,7 @@
 name: "sys.sp_add_log_shipping_primary_database"
 title: "sp_add_log_shipping_primary_database"
 category: "general"
-description: "Sets up the primary database for a log shipping configuration, including the backup job, local monitor record, and remote monitor record. Transact-SQL syntax conventions"
+description: "Sets up the primary database for a log shipping configuration, including the backup job, local monitor record, and remote monitor record."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -66,9 +66,7 @@ syntax: |
 
 ## Description
 
-Sets up the primary database for a log shipping configuration, including the backup job, local monitor record, and remote monitor record. Transact-SQL syntax conventions
-
-## Syntax
+Sets up the primary database for a log shipping configuration, including the backup job, local monitor record, and remote monitor record. ## Syntax
 
 ```sql
 sys.sp_add_log_shipping_primary_database

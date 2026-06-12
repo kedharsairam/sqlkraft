@@ -35,9 +35,7 @@ connect your SQL Server to Azure Arc
 
 and
 
-enable the primary managed identity
-
-.
+enable the primary managed identity.
 
 Create access credentials to Azure OpenAI using a managed identity:
 
@@ -51,11 +49,7 @@ If you use Managed Identity with Azure OpenAI and SQL Server 2025 (17.x), the
 
 role must be granted to
 
-SQL Server's system-assigned
-
-. For more information, see
-
-.
+SQL Server's system-assigned. For more information, see.
 
 ## Create an external model with Azure OpenAI using API keys
 

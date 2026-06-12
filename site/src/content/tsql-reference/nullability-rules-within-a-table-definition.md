@@ -31,19 +31,13 @@ An index created for a constraint can't be dropped by using
 
 ; the constraint
 
-must be dropped by using
+must be dropped by using. An index created for and used by a constraint
 
-. An index created for and used by a constraint
-
-can be rebuilt by using
-
-. For more information, see
+can be rebuilt by using. For more information, see
 
 Optimize
 
-index maintenance to improve query performance and reduce resource consumption
-
-.
+index maintenance to improve query performance and reduce resource consumption.
 
 Constraint names must follow the rules for
 
@@ -105,21 +99,15 @@ conditions are evaluated before the trigger is executed.
 
 For a report on a table and its columns, use
 
-or
+or. To rename a table,
 
-. To rename a table,
-
-use
-
-. For a report on the views and stored procedures that depend on a table, use
+use. For a report on the views and stored procedures that depend on a table, use
 
 sys.dm_sql_referenced_entities
 
 and
 
-sys.dm_sql_referencing_entities
-
-.
+sys.dm_sql_referencing_entities.
 
 #### Column data
 
@@ -163,9 +151,7 @@ Alias data type
 
 The Database Engine uses the nullability that is specified when the data type was
 
-created. To determine the default nullability of the data type, use
-
-.
+created. To determine the default nullability of the data type, use.
 
 CLR user-
 
@@ -232,7 +218,7 @@ ALTER TABLE
 ```
 
 ```sql
-ALTER INDEX ... REBUILD
+ALTER INDEX. REBUILD
 ```
 
 `INSERT`

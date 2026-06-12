@@ -20,9 +20,7 @@ if all their inputs are known:
 
 ,
 
-, and
-
-. The following operators are also evaluated at compile time if all their inputs are
+, and. The following operators are also evaluated at compile time if all their inputs are
 
 known:
 
@@ -50,9 +48,7 @@ During optimization of the
 
 statement in the procedure, the Query Optimizer tries to
 
-evaluate the expected cardinality of the result set for the condition
-
-. The
+evaluate the expected cardinality of the result set for the condition. The
 
 expression
 

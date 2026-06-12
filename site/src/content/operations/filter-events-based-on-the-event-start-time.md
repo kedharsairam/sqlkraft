@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -89,4 +87,4 @@ value in the field that
 
 appears beneath the comparison operator.
 
-SQL Server Profiler
+Profiler

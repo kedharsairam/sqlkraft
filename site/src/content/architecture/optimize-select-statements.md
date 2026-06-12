@@ -74,9 +74,7 @@ defined in the join specifications, which might appear in the
 
 clause or in an
 
-clause following
-
-.
+clause following.
 
 The conditions that the rows in the source tables must satisfy to qualify for the
 
@@ -104,9 +102,7 @@ matching rows from
 
 , and then use the data from
 
-to extract data from
-
-. The other sequences in which the database server could access the tables are:
+to extract data from. The other sequences in which the database server could access the tables are:
 
 ,
 
@@ -200,7 +196,7 @@ resources and that returns the results the fastest. For example, processing a qu
 
 typically uses more resources than processing it serially, but completes the query faster. The
 
-SQL Server Query Optimizer will use a parallel execution plan to return results if the load on the
+Query Optimizer will use a parallel execution plan to return results if the load on the
 
 server won't be adversely affected.
 
@@ -224,9 +220,7 @@ If the index statistics aren't current, the Query Optimizer might not make the b
 
 the current state of the table. For more information about densities, see
 
-Statistics
-
-.
+Statistics.
 
 Density defines the distribution of unique values that exist in the data, or the average number
 

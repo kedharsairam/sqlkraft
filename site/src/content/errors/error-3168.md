@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-trying to restore the backup. If the builds are different, the statement issues a "3168" error message, and the restore operation terminates abnormally. Some scenarios in which this problem might occu
+trying to restore the backup. If the builds are different, the statement issues a "3168" error message, and the restore operation terminates abnormally.
 
 ## Severity
 

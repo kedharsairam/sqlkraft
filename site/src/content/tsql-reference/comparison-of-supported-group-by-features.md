@@ -65,15 +65,13 @@ the intermediate worktable that holds intermediate query results. You can use a 
 
 of 12 grouping expressions when you specify
 
-or
-
-.
+or.
 
 The following table describes the
 
 features that different products support.
 
-SQL Server Integration Services
+Integration Services
 
 SQL Server
 
@@ -81,9 +79,7 @@ aggregates
 
 Not supported for
 
-or
-
-.
+or.
 
 Supported for
 
@@ -185,16 +181,16 @@ GROUPING SETS
 `CUBE`
 
 ```sql
-GROUP BY GROUPING SETS( CUBE(a1, ..., a12), b)
+GROUP BY GROUPING SETS( CUBE(a1,., a12), b)
 ```
 
 ```sql
-GROUP BY GROUPING SETS( CUBE(a1, ..., a12), ())
+GROUP BY GROUPING SETS( CUBE(a1,., a12), ())
 ```
 
 ```sql
-GROUP BY CUBE (a1, ..., a13)
-GROUP BY a1, ..., a13
+GROUP BY CUBE (a1,., a13)
+GROUP BY a1,., a13
 WITH
 CUBE
 ```

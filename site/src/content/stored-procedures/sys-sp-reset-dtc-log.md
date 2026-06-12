@@ -2,7 +2,7 @@
 name: "sys.sp_reset_dtc_log"
 title: "sp_reset_dtc_log"
 category: "general"
-description: "Clears the Microsoft Distributed Transaction Coordinator (MSDTC) log. Transact-SQL syntax conventions or have CONTROL SERVER permissions."
+description: "Clears the Microsoft Distributed Transaction Coordinator (MSDTC) log. or have CONTROL SERVER permissions."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -12,7 +12,7 @@ syntax: |
 
 ## Description
 
-Clears the Microsoft Distributed Transaction Coordinator (MSDTC) log. Transact-SQL syntax conventions or have CONTROL SERVER permissions.
+Clears the Microsoft Distributed Transaction Coordinator (MSDTC) log. or have CONTROL SERVER permissions.
 
 ## Syntax
 

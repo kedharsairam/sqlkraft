@@ -27,7 +27,7 @@ There are no restrictions on the updatability of the partitioning column.
 
 The tables can be either local tables or tables from other computers that are running
 
-SQL Server that are referenced either through a four-part name or an
+that are referenced either through a four-part name or an
 
 OPENDATASOURCE- or OPENROWSET-based name. The OPENDATASOURCE and
 
@@ -41,9 +41,7 @@ and
 
 OPENROWSET
 
-(Transact-SQL)
-
-.
+(Transact-SQL).
 
 If one or more of the member tables are remote, the view is called distributed
 
@@ -87,12 +85,10 @@ values. For those member table columns that have
 
 definitions, the
 
-statements cannot explicitly use the keyword
-
-.
+statements cannot explicitly use the keyword.
 
 ```sql
-T1, ..., Tn
+T1,., Tn
 ```
 
 ```sql

@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -43,9 +41,7 @@ reorganizing an index
 
 and
 
-rebuilding an index
-
-. The article also suggests an index maintenance
+rebuilding an index. The article also suggests an index maintenance
 
 strategy
 
@@ -85,9 +81,7 @@ This article doesn't apply to a dedicated SQL pool in Azure Synapse Analytics. F
 
 information on index maintenance for a dedicated SQL pool in Azure Synapse Analytics,
 
-see
-
-.
+see.
 
 ７
 
@@ -101,6 +95,4 @@ columnstore indexes or indexes on memory-optimized tables. For more information,
 
 see the
 
-SQL Server and Azure SQL index architecture and design guide
-
-.
+and Azure SQL index architecture and design guide.

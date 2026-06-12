@@ -88,9 +88,7 @@ Specified ProgID or CLSID isn't registered as an OLE object on an instance
 
 of SQL Server. Custom OLE automation servers must be registered before
 
-they can be instantiated using
-
-. You can register servers using
+they can be instantiated using. You can register servers using
 
 utility for in-process (
 
@@ -100,13 +98,11 @@ command-line switch for local (
 
 Specified OLE object is registered as a local OLE server (
 
-file) but the
-
-.exe file couldn't be found or started.
+file) but the.exe file couldn't be found or started.
 
 Specified OLE object is registered as an in-process OLE server (
 
-but the .dll file couldn't be found or loaded.
+but the.dll file couldn't be found or loaded.
 
 Data type of a Transact-SQL local variable that is used to store a returned
 

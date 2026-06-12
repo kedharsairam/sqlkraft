@@ -2,7 +2,7 @@
 name: "sys.sp_start_job"
 title: "sp_start_job"
 category: "general"
-description: "Instructs SQL Server Agent to execute a job immediately. Transact-SQL syntax conventions must be specified, but both can't be specified. The identification number of the job to start. must be specified, but both can't be specified. Identified for informational purposes only. Not supported."
+description: "Instructs SQL Server Agent to execute a job immediately. must be specified, but both can't be specified. The identification number of the job to start. must be specified, but both can't be specified. Identified for informational purposes only. Not supported."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -29,7 +29,7 @@ syntax: |
 
 ## Description
 
-Instructs SQL Server Agent to execute a job immediately. Transact-SQL syntax conventions must be specified, but both can't be specified. The identification number of the job to start. must be specified, but both can't be specified. Identified for informational purposes only. Not supported. Future compatibility is not
+Instructs SQL Server Agent to execute a job immediately. must be specified, but both can't be specified. The identification number of the job to start. must be specified, but both can't be specified. Identified for informational purposes only. Not supported.
 
 ## Syntax
 

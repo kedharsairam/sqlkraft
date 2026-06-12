@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 9668 10 No Service Queues analyzed: %d. 9669 10 No Conversation Endpoints analyzed: %d. 9670 10 No Remote Service Bindings analyzed: %d. 9671 16 No Messages with conversation ID '%ls' have
+Description 9668 10 No Service Queues analyzed: %d. 9669 10 No Conversation Endpoints analyzed: %d. 9670 10 No Remote Service Bindings analyzed: %d.
 
 ## Severity
 

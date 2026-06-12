@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -43,13 +41,11 @@ SQL database in Microsoft Fabric
 
 This topic describes the table properties that are displayed in the Table Properties dialog box in
 
-SQL Server Management Studio. For more information about how to display these properties,
+Management Studio. For more information about how to display these properties,
 
 see
 
-View the Table Definition
-
-.
+View the Table Definition.
 
 1.
 

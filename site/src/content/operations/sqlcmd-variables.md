@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 SQLCMD variables overview
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -61,8 +59,7 @@ in the publish dialog of graphical tools for SQL projects. The default value isn
 
 SQL project file sample and syntax
 
-```cmd
-.sqlproj
+```cmd.sqlproj
 <ItemGroup>
 EnvironmentName testing
 DefaultValue

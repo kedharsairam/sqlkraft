@@ -1,10 +1,21 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Card from "../../components/Card.astro";
+import Pagination from "../../components/Pagination.astro";
 import { getCollection } from "astro:content";
+
+const PAGE_SIZE = 100;
 
 const allRefs = await getCollection("tsql-reference");
 const sorted = allRefs.sort((a, b) => a.data.name.localeCompare(b.data.name));
+
+// Paginate
+const totalItems = sorted.length;
+const lastPage = Math.ceil(totalItems / PAGE_SIZE);
+const items = sorted.slice(0, PAGE_SIZE);
+const baseUrl = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "");
+const currentUrl = `${baseUrl}/tsql-reference/`;
+const nextUrl = totalItems > PAGE_SIZE ? `${baseUrl}/tsql-reference/page/2/` : undefined;
 
 // Unique categories sorted
 const categorySet = new Set(sorted.map((e) => e.data.category || "other"));
@@ -57,7 +68,7 @@ const CATEGORY_LABELS = {
   <!-- Unified card grid -->
   <div class="card-grid" id="tsqlGrid">
     {
-      sorted.map((entry) => {
+      items.map((entry) => {
         const { name, description, category, tags } = entry.data;
         return (
           <Card
@@ -80,6 +91,14 @@ const CATEGORY_LABELS = {
       })
     }
   </div>
+
+  <Pagination
+    currentUrl={currentUrl}
+    nextUrl={nextUrl}
+    currentPage={1}
+    lastPage={lastPage}
+    totalItems={totalItems}
+  />
 </BaseLayout>
 
 <script>

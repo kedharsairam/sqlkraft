@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -43,7 +41,7 @@ revalidate all instances of the
 
 data type associated with the redefined schema. Therefore,
 
-SQL Server doesn't support this element. XML schemas that include the
+doesn't support this element. XML schemas that include the
 
 element are rejected by the server.
 
@@ -64,5 +62,3 @@ constraints on variables or parameters.
 3. Drop the old version of the XML Schema collection.
 
 Requirements and Limitations for XML Schema Collections on the Server
-
-Last updated on 11/18/2025

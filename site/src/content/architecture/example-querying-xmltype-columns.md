@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -108,11 +106,9 @@ Name
 =
 "HL Touring Frame"
 >
-<MI:step>
-...
+<MI:step>.
 </MI:step>
-<MI:step>
-...
+<MI:step>.
 </MI:step>
 </ProductModelData>
 USE

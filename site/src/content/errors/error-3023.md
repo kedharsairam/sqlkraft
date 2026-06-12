@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-, State: 1. <Datetime> Backup BACKUP failed to complete the command BACKUP DATABASE MyDatabase WITH DIFFERENTIAL. Check the backup application log for detailed messages. You might also notice that the
+, State: 1. <Datetime> Backup BACKUP failed to complete the command BACKUP DATABASE MyDatabase WITH DIFFERENTIAL. Check the backup application log for detailed messages.
 
 ## Severity
 

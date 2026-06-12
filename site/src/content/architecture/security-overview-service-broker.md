@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -73,13 +71,11 @@ between databases, rather than executing commands on a remote database. This sty
 
 communication allows Service Broker to provide services without requiring databases to share
 
-SQL Server logins or Windows security credentials.
+logins or Windows security credentials.
 
 For more information on certificates, see
 
-CREATE CERTIFICATE
-
-.
+CREATE CERTIFICATE.
 
 ７
 

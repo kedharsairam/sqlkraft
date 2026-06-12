@@ -16,9 +16,7 @@ in smaller log files.
 
 A continuous sequence of log backups is called a
 
-log chain
-
-. A log chain starts with a full backup
+log chain. A log chain starts with a full backup
 
 of the database. Usually, a new log chain is only started when the database is backed up for the
 
@@ -34,9 +32,7 @@ backups up through your recovery point. The recovery point could be the end of t
 
 backup or a specific recovery point in any of the log backups. For more information, see
 
-Transaction log backups (SQL Server)
-
-.
+Transaction log backups (SQL Server).
 
 To restore a database up to the point of failure, the log chain must be intact. That is, an
 
@@ -50,9 +46,7 @@ extend from the end of a database or partial backup. For a set of file backups, 
 
 log backups must extend from the start of a full set of file backups. For more information, see
 
-Apply Transaction Log Backups (SQL Server)
-
-.
+Apply Transaction Log Backups (SQL Server).
 
 Restoring a log backup rolls forward the changes that were recorded in the transaction log to
 
@@ -72,6 +66,4 @@ database online. After the database has been recovered, you can't restore any mo
 
 For more information, see
 
-Apply Transaction Log Backups (SQL Server)
-
-.
+Apply Transaction Log Backups (SQL Server).

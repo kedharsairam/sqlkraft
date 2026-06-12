@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 06/04/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -59,9 +57,7 @@ download the SQL Server 2016 (13.x) MDS add-in for Excel from
 
 Master Data Services Add-in
 
-for Microsoft Excel
-
-.
+for Microsoft Excel.
 
 By default, the files are installed at
 
@@ -71,9 +67,7 @@ represents the SQL Server version. For example, SQL Server 2017
 
 (14.x) is
 
-, and SQL Server 2019 (15.x) is
-
-.
+, and SQL Server 2019 (15.x) is.
 
 ）
 

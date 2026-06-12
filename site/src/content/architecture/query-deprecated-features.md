@@ -1,18 +1,16 @@
 ---
 title: "Query deprecated features"
 topic: "query-processing"
-description: "SQL Server 2019 (15.x)"
+description: "2019 (15.x)"
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL Server 2019 (15.x)
+2019 (15.x)
 
-Applies to:
+2019 (15.x)
 
-SQL Server 2019 (15.x)
-
-SQL Server 2019 (15.x) deprecates:
+2019 (15.x) deprecates:
 
 Data Quality Services (DQS)
 
@@ -54,30 +52,10 @@ and
 
 extended events. For more information, see
 
-Use SQL Server Objects
-
-.
+Use SQL Server Objects.
 
 The values of these counters are also available by executing the following statement:
 
 Breaking changes to Database Engine features in SQL Server 2019
 
 Discontinued Database Engine functionality in SQL Server
-
-Last updated on 11/18/2025
-
-Related content
-
-`deprecation_announcement`
-
-`deprecation_final_support`
-
-```sql
-SELECT
-*
-FROM sys.dm_os_performance_counters
-WHERE object_name
-LIKE
-'%SQL%Deprecated Features%'
-;
-```

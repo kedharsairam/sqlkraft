@@ -7,17 +7,13 @@ tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-SQL Server 2005 (9.x) introduced new index options and also modified the way in which
+2005 (9.x) introduced new index options and also modified the way in which
 
 options are specified. In the backward compatible syntax,
 
-is equivalent to
+is equivalent to. When you set index options, the following rules apply:
 
-. When you set index options, the following rules apply:
-
-New index options can only be specified by using
-
-.
+New index options can only be specified by using.
 
 Options can't be specified by using both the backward compatible and new syntax in the
 
@@ -27,9 +23,7 @@ causes the
 
 statement to fail.
 
-When you create an XML index, the options must be specified by using
-
-.
+When you create an XML index, the options must be specified by using.
 
 You can use the
 
@@ -83,9 +77,7 @@ indexes previously aligned with the clustered index, they might no longer be ali
 
 For more information about partitioned index alignment, see
 
-Partitioned tables and indexes
-
-.
+Partitioned tables and indexes.
 
 The
 
@@ -95,9 +87,7 @@ in the same order and with the same ascending or descending order, unless the in
 
 statement specifies a nonclustered index and the
 
-option is set to
-
-. If the clustered
+option is set to. If the clustered
 
 ### Applies to
 

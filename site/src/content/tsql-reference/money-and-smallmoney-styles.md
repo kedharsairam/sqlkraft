@@ -39,9 +39,7 @@ Always 17 digits. Use for lossless conversion. With this style, every distinct f
 
 is guaranteed to convert to a distinct character string.
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions, and Azure SQL Database.
+2016 (13.x) and later versions, and Azure SQL Database.
 
 Included for legacy reasons. Don't use these values for new development.
 

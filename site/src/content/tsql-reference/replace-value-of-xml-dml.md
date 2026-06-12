@@ -49,8 +49,6 @@ XML Data Modification Language (XML DML)
 
 See Also
 
-Last updated on 11/18/2025
-
 ```sql
 -- delete the second feature
 UPDATE
@@ -108,7 +106,7 @@ Instructions.modify(
 '
 DECLARE namespace MI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelManuInstructions";
-INSERT <MI:Location LocationID="1000"  LaborHours="1000" >
+INSERT <MI:Location LocationID="1000" LaborHours="1000" >
 These are manu steps at location 1000.
 <MI:step>New step1 instructions</MI:step>
 Instructions for step 2 are here
@@ -118,7 +116,7 @@ Instructions for step 2 are here
 ```sql
 </MI:Location>
 AS first
-INTO   (/MI:root)[1]
+INTO (/MI:root)[1]
 '
 )
 GO

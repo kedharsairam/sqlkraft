@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 3316 21 Yes During undo of a logged operation in database '%.\*ls', an error occurred at log record ID %S_LSN. The row was not found. Restore the database from a full backup, or repair the
+Description 3316 21 Yes During undo of a logged operation in database '%.\*ls', an error occurred at log record ID %S_LSN. The row was not found.
 
 ## Severity
 

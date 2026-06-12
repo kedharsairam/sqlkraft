@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns part of the value of
@@ -30,9 +28,7 @@ $startingLoc,
 
 and continues for the number of characters indicated by the value of
 
-$length
-
-.
+$length.
 
 $sourceString
 

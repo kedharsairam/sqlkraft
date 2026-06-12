@@ -2,7 +2,7 @@
 name: "sys.sp_syscollector_delete_collection_set"
 title: "sp_syscollector_delete_collection_set"
 category: "general"
-description: "Deletes a user-defined collection set and all its collection items. Transact-SQL syntax conventions The unique identifier for the collection set. @collection_set_id , with a default of @collection_set_id must have a value if The name of the collection set. , with a default of @collection_set_id"
+description: "Deletes a user-defined collection set and all its collection items. The unique identifier for the collection set. @collection_set_id , with a default of @collection_set_id must have a value if The name of the collection set. , with a default of @collection_set_id"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -17,7 +17,7 @@ syntax: |
 
 ## Description
 
-Deletes a user-defined collection set and all its collection items. Transact-SQL syntax conventions The unique identifier for the collection set. @collection_set_id , with a default of @collection_set_id must have a value if The name of the collection set. , with a default of @collection_set_id
+Deletes a user-defined collection set and all its collection items. The unique identifier for the collection set. @collection_set_id , with a default of @collection_set_id must have a value if The name of the collection set. , with a default of @collection_set_id
 
 ## Syntax
 
@@ -33,11 +33,7 @@ N
 
 ## Remarks
 
-Applies to:
-
 Deletes a user-defined collection set and all its collection items.
-
-Transact-SQL syntax conventions
 
 The unique identifier for the collection set.
 

@@ -14,9 +14,7 @@ For information about setting the recovery interval, see
 
 Server configuration: recovery interval
 
-(min)
-
-.
+(min).
 
 Automatic checkpoints truncate the unused section of the transaction log if the database is
 
@@ -24,9 +22,7 @@ using the simple recovery model. However, if the database is using the full or b
 
 recovery models, the log isn't truncated by automatic checkpoints. For more information, see
 
-The transaction log
-
-.
+The transaction log.
 
 The
 
@@ -36,9 +32,7 @@ specifies the requested period of time, in seconds, for checkpoints to finish. F
 
 information, see
 
-CHECKPOINT
-
-.
+CHECKPOINT.
 
 The section of the log file from the MinLSN to the last-written log record is called the active
 
@@ -68,7 +62,7 @@ Tip
 
 The
 
-SQL Server advanced setup option enables a database administrator to throttle
+advanced setup option enables a database administrator to throttle
 
 checkpoint I/O behavior based on the throughput of the I/O subsystem for some types of
 

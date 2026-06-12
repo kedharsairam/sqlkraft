@@ -35,13 +35,11 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server creates a
+creates a
 
 event when Service Broker receives a
 

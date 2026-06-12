@@ -29,8 +29,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Use this dialog box to view the history of mirroring status for a mirrored database on a

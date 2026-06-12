@@ -19,15 +19,11 @@ In SQL database in Microsoft Fabric, some table features can be created but aren
 
 mirrored
 
-into the Fabric OneLake
-
-. For more information, see
+into the Fabric OneLake. For more information, see
 
 Limitations for Fabric SQL database
 
-mirroring
-
-.
+mirroring.
 
 You can create local and global temporary tables. Local temporary tables are visible only in the
 
@@ -137,9 +133,7 @@ then global temporary tables are only dropped using
 
 Engine instance restarts. For more information, see
 
-GLOBAL_TEMPORARY_TABLE_AUTO_DROP
-
-.
+GLOBAL_TEMPORARY_TABLE_AUTO_DROP.
 
 A local temporary table created within a stored procedure or trigger can have the same name
 

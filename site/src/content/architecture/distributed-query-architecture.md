@@ -90,7 +90,7 @@ are specified with the information needed to connect to the linked server. The r
 
 then be referenced the same way a table is referenced in Transact-SQL statements:
 
-SQL Server uses OLE DB to communicate between the relational engine and the storage
+uses OLE DB to communicate between the relational engine and the storage
 
 engine. The relational engine breaks down each Transact-SQL statement into a series of
 

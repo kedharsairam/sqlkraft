@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -41,9 +39,7 @@ configuration errors in the associated services. For more information, see
 
 ssbdiagnose utility
 
-(Service Broker)
-
-.
+(Service Broker).
 
 If the activated stored procedure produces incorrect results or doesn't read from the queue,
 

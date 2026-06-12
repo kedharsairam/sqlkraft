@@ -35,9 +35,7 @@ Article
 
 This article covers SqlPackage support for
 
-Azure Synapse Analytics
-
-. It includes information on
+Azure Synapse Analytics. It includes information on
 
 the following topics:
 
@@ -83,9 +81,7 @@ An additional parameter is optional, which sets the storage root path within the
 
 /p:AzureStorageRootPath
 
-Without this property, the path defaults to
-
-. Data is stored
+Without this property, the path defaults to. Data is stored
 
 in individual folders named with 2-part table names.
 
@@ -101,16 +97,12 @@ directory. The data is written to a container named
 
 in a storage account named
 
-using a storage account key named
-
-. The data is written to
+using a storage account key named. The data is written to
 
 the default path of
 
 in the container.
 
-```cmd
-.bacpac
-.dacpac servername/databasename/timestamp/
+```cmd.bacpac.dacpac servername/databasename/timestamp/
 databasename yourserver.sql.azuresynapse.net
 ```

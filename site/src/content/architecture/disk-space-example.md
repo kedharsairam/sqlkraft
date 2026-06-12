@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -39,9 +37,7 @@ sorting operations might also be needed. For more information, see
 
 Disk space requirements
 
-for index DDL operations
-
-.
+for index DDL operations.
 
 In this example, disk space requirements to create a clustered index are determined.
 

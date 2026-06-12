@@ -20,9 +20,7 @@ For information about closing connections, see
 
 Trace the network connection close sequence
 
-on the Database Engine
-
-.
+on the Database Engine.
 
 You can connect to the Database Engine with
 

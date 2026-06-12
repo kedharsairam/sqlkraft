@@ -10,8 +10,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 You can add comments to XQuery. Add comment strings by using the and

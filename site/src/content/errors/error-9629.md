@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 9629 16 No The decrypted signature size is wrong. 9630 16 No The signature did not verify the internal hash. 9631 16 No The salt size is unacceptable for this key object. 9632 16 No The sa
+Description 9629 16 No The decrypted signature size is wrong. 9630 16 No The signature did not verify the internal hash. 9631 16 No The salt size is unacceptable for this key object.
 
 ## Severity
 

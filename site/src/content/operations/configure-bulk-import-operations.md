@@ -15,9 +15,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2022 (16.x) and later versions on Linux
+2022 (16.x) and later versions on Linux
 
 Starting with SQL Server 2022 (16.x) Cumulative Update 24 (CU24) and SQL Server 2025 (17.x)
 
@@ -35,11 +33,11 @@ BULK INSERT
 
 or
 
-OPENROWSET(BULK...)
+OPENROWSET(BULK.)
 
 on Linux.
 
-SQL Server on Linux enforces additional file system and path validation checks for bulk
+on Linux enforces additional file system and path validation checks for bulk
 
 operations, beyond what's required on Windows. An administrator must:
 
@@ -49,7 +47,7 @@ Grant Linux file system permissions on the data files
 
 Explicitly approve directory paths using
 
-SQL Server 2022 (16.x) CU24 or later version on Linux, or SQL Server 2025 (17.x) CU3 or
+2022 (16.x) CU24 or later version on Linux, or SQL Server 2025 (17.x) CU3 or
 
 later version on Linux
 

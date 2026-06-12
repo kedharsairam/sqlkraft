@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -63,11 +61,9 @@ memory visible to SQL Server (in units of MB). For detailed sizing guidance, see
 
 Guidelines for
 
-setting memory limits on Linux and in containers
+setting memory limits on Linux and in containers.
 
-.
-
-SQL Server detects and honors control group (cgroup) v2 constraints, starting with SQL Server
+detects and honors control group (cgroup) v2 constraints, starting with SQL Server
 
 2025 (17.x) and SQL Server 2022 (16.x) Cumulative Update (CU) 20. These constraints provide
 
@@ -83,9 +79,7 @@ Kubernetes Service v1.25+) could experience out of memory (OOM) errors because S
 
 Note
 
-For storage, kernel, CPU, and network recommendations, see
-
-.
+For storage, kernel, CPU, and network recommendations, see.
 
 ```cmd
 mssql-conf cgroup

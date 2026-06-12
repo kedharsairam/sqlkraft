@@ -2,7 +2,7 @@
 name: "sys.sp_dropdistpublisher"
 title: "sp_dropdistpublisher"
 category: "general"
-description: "Drops a distribution Publisher. This stored procedure is executed at the Distributor on any Transact-SQL syntax conventions checks that the Publisher has uninstalled the server as , replication verifies that the remote Publisher has uninstalled the local server as the Distributor. If the Publisher is local, replication verifies that there are no publication or Using a custom port for the SQL Serve"
+description: "Drops a distribution Publisher. This stored procedure is executed at the Distributor on any checks that the Publisher has uninstalled the server as , replication verifies that the remote Publisher has uninstalled the local server as the Distributor. If the Publisher is local, replication verifies that there are no publication or Using a custom port for the SQL Serve"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -17,7 +17,7 @@ syntax: |
 
 ## Description
 
-Drops a distribution Publisher. This stored procedure is executed at the Distributor on any Transact-SQL syntax conventions checks that the Publisher has uninstalled the server as , replication verifies that the remote Publisher has uninstalled the local server as the Distributor. If the Publisher is local, replication verifies that there are no publication or Using a custom port for the SQL Server publisher was introduced in SQL Server 2019
+Drops a distribution Publisher. This stored procedure is executed at the Distributor on any checks that the Publisher has uninstalled the server as , replication verifies that the remote Publisher has uninstalled the local server as the Distributor. If the Publisher is local, replication verifies that there are no publication or Using a custom port for the SQL Server publisher was introduced in SQL Server 2019
 
 ## Syntax
 
@@ -33,4 +33,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role can execute . Disable Publishing and Distribution sp_adddistpublisher (Transact-SQL) sp_changedistpublisher (Transact-SQL) sp_helpdistpublisher (Transact-SQL) Replication stored procedures (Transact-SQL) Related content sp_dropdistpublisher (Transact-SQL) sp_helpdistpublisher (Transact-SQL) System stored procedures (Transact-SQL) Configure Distribution
+Only members of the fixed server role can execute. Disable Publishing and Distribution sp_adddistpublisher (Transact-SQL) sp_changedistpublisher (Transact-SQL) sp_helpdistpublisher (Transact-SQL) Replication stored procedures (Transact-SQL)

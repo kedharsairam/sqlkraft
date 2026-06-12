@@ -27,8 +27,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -67,9 +65,7 @@ shows that
 
 instance might be accepted, but not valid. The following
 
-CircularString instance declaration is not accepted. This declaration throws a
-
-.
+CircularString instance declaration is not accepted. This declaration throws a.
 
 ```sql
 @g3

@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 Quickstart: Run SQL Server in the cloud
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -33,9 +31,7 @@ Enterprise Server (SLES), or Ubuntu in the cloud of your choice. To run SQL Serv
 
 Azure, see
 
-Provision a Linux virtual machine running SQL Server in the Azure portal
-
-.
+Provision a Linux virtual machine running SQL Server in the Azure portal.
 
 If you choose to run a paid edition of SQL Server, you must bring your own license (BYOL).
 
@@ -47,9 +43,7 @@ SLES v15
 
 Ubuntu 22.04
 
-2. Connect to the AMI by using
-
-.
+2. Connect to the AMI by using.
 
 3. Follow the quickstart for the Linux distribution you chose:
 
@@ -65,17 +59,11 @@ Windows Subsystem for Linux (WSL 2)
 
 a. Open the
 
-Amazon EC2 console
+Amazon EC2 console.
 
-.
+b. In the navigation pane, choose.
 
-b. In the navigation pane, choose
-
-.
-
-c. Choose
-
-.
+c. Choose.
 
 d. Add an inbound rule to allow traffic on the port on which SQL Server listens (default
 

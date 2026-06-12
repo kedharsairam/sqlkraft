@@ -36,9 +36,7 @@ a simulated data device and log device. For more information, see
 
 Use the SQLIOSim utility to
 
-simulate SQL Server activity on a disk subsystem
-
-. For broader storage benchmarking, you can
+simulate SQL Server activity on a disk subsystem. For broader storage benchmarking, you can
 
 also use the
 
@@ -54,15 +52,13 @@ and obtain the appropriate utility to disable write-caching operations. On older
 
 you might also need jumper settings.
 
-SQL Server requires systems to support
+requires systems to support
 
 guaranteed delivery to stable media
 
 , as outlined under the
 
-SQL Server I/O Reliability Program Requirements
-
-.
+I/O Reliability Program Requirements.
 
 ７
 
@@ -74,9 +70,7 @@ delay flush commands. Always confirm the effective cache state before deployment
 
 testing tools such as
 
-SQLIOSim
-
-.
+SQLIOSim.
 
 ７
 

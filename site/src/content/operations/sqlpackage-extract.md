@@ -29,7 +29,7 @@ Article
 
 The SqlPackage Extract action creates a schema of a connected database in a DACPAC file (.dacpac). By default, data isn't
 
-included in the .dacpac file. To include data, utilize the
+included in the.dacpac file. To include data, utilize the
 
 Export action
 
@@ -39,9 +39,7 @@ ExtractAllTableData
 
 /
 
-TableData
-
-.
+TableData.
 
 SqlPackage
 
@@ -79,7 +77,7 @@ after the dacpac is published.
 
 ```cmd
 SqlPackage /Action:Extract {parameters} {properties}
-# example extract to create a schema-only .dacpac file connecting using SQL authentication
+# example extract to create a schema-only.dacpac file connecting using SQL authentication
 SqlPackage /Action:Extract /TargetFile:{filename}.dacpac /DiagnosticsFile:{logFile}.
 log
 /p:ExtractAllTableData=
@@ -89,14 +87,14 @@ true
 \
 /SourceServerName:{serverFQDN} /SourceDatabaseName:{databaseName} /SourceUser:{username}
 /SourcePassword:{password}
-# example extract to create a .sql file containing the schema definition of the database
+# example extract to create a.sql file containing the schema definition of the database
 SqlPackage /Action:Extract /TargetFile:{filename}.dacpac /DiagnosticsFile:{logFile}.
 log
 /SourceServerName:
 {serverFQDN} \
 /SourceDatabaseName:{databaseName} /SourceUser:{username} /SourcePassword:{password}
 /p:ExtractTarget=File
-# example extract to create a .dacpac file with data connecting using SQL authentication
+# example extract to create a.dacpac file with data connecting using SQL authentication
 SqlPackage /Action:Extract /TargetFile:{filename}.dacpac /DiagnosticsFile:{logFile}.
 log
 /p:ExtractAllTableData=
@@ -106,7 +104,7 @@ true
 \
 /SourceServerName:{serverFQDN} /SourceDatabaseName:{databaseName} /SourceUser:{username}
 /SourcePassword:{password}
-# example extract to create a schema-only .dacpac file connecting using Microsoft Entra managed identity
+# example extract to create a schema-only.dacpac file connecting using Microsoft Entra managed identity
 SqlPackage /Action:Extract /TargetFile:
 "C:\AdventureWorksLT.dacpac"
 \

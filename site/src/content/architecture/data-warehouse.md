@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -39,7 +37,7 @@ data warehouse. This article focuses on key use cases and examples for data ware
 
 designs with the SQL Database Engine.
 
-SQL Server 2016 (13.x) introduced these features for columnstore performance enhancements:
+2016 (13.x) introduced these features for columnstore performance enhancements:
 
 Always On availability groups support querying a columnstore index on a readable
 
@@ -91,23 +89,17 @@ and
 
 Performance tuning with
 
-ordered columnstore indexes
-
-. For ordered columnstore index availability, see
+ordered columnstore indexes. For ordered columnstore index availability, see
 
 Ordered
 
-column index availability
-
-.
+column index availability.
 
 For more information about new features in versions and platforms of SQL Server and Azure
 
 SQL, see
 
-What's new in columnstore indexes
-
-.
+What's new in columnstore indexes.
 
 Starting with SQL Server 2016 (13.x), you can create rowstore nonclustered indexes on a
 

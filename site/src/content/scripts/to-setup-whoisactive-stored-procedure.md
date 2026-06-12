@@ -17,7 +17,7 @@ SET ARITHABORT ON;
 GO
 
 IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.ROUTINES WHERE ROUTINE_NAME = 'sp_WhoIsActive')
-    EXEC ('CREATE PROC dbo.sp_WhoIsActive AS SELECT ''stub version, to be replaced''')
+ EXEC ('CREATE PROC dbo.sp_WhoIsActive AS SELECT ''stub version, to be replaced''')
 GO
 
 /*********************************************************************************************
@@ -31,10 +31,10 @@ License: https://github.com/amachanic/sp_whoisactive/blob/master/LICENSE
 *********************************************************************************************/
 
 ALTER PROC dbo.sp_WhoIsActive (
-    --Filters - Both inclusive and exclusive
-    --Set either filter to '' to disable
-    --Valid filter types are: session, program, database, login, and host
-    --Session is a session ID, and either 0 or '' can be used to indicate "all" sessions
+ --Filters - Both inclusive and exclusive
+ --Set either filter to '' to disable
+ --Valid filter types are: session, program, database, login, and host
+ --Session is a session ID, and either 0 or '' can be used to indicate "all" sessions
 ```
 
 > **Note:** This is a reference stub for the sp_WhoIsActive stored procedure. The full source code (~5,500 lines) is maintained by Adam Machanic.

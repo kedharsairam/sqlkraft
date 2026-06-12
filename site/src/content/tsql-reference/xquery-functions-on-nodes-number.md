@@ -16,15 +16,11 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns the numeric value of the node that is indicated by
 
-$arg
-
-.
+$arg.
 
 $arg
 

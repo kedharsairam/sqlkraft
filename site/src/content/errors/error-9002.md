@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Output If you encounter a similar scenario, address the underlying OS 112 error. In this case work with your system administrator to free up disk space on the device and then attempt to address the fu
+Output If you encounter a similar scenario, address the underlying OS 112 error.
 
 ## Severity
 

@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -33,15 +31,11 @@ dialog box. To launch this dialog box, open the replay trace file or table in SQ
 
 Server Profiler, and on the
 
-menu, select
-
-. For information about what permissions
+menu, select. For information about what permissions
 
 are required to replay a trace, see
 
-Permissions required to run SQL Server Profiler
-
-.
+Permissions required to run SQL Server Profiler.
 
 This article describes the options specified with the
 
@@ -55,21 +49,17 @@ replay trace data from multiple computers, better simulating a mission-critical 
 
 more information, see
 
-SQL Server Distributed Replay overview
-
-.
+Distributed Replay overview.
 
 The server is the name of the instance of SQL Server against which you want to replay the
 
 trace. The server must adhere to the replay requirements described in
 
-Replay Requirements
-
-."
+Replay Requirements."
 
 The output file where the result of replaying the trace is written for later viewing. By default,
 
-SQL Server Profiler displays only the results of replaying the trace on the screen.
+Profiler displays only the results of replaying the trace on the screen.
 
 The database table where the result of replaying the trace is written for later viewing.
 

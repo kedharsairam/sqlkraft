@@ -27,8 +27,6 @@ Article
 
 08/10/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to move a detached database to another location and re-attach it to
@@ -39,15 +37,11 @@ databases by using the ALTER DATABASE planned relocation procedure, instead of u
 
 detach and attach. For more information, see
 
-Move User Databases
-
-.
+Move User Databases.
 
 1. Detach the database. For more information, see
 
-Detach a Database
-
-.
+Detach a Database.
 
 2. In a Windows Explorer or Windows Command Prompt window, move the detached
 

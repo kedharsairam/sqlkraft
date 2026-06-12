@@ -19,35 +19,27 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
-SQL Server instances are automatically connected to Azure Arc when they are installed on an
+instances are automatically connected to Azure Arc when they are installed on an
 
 Azure Arc-enabled Server and the Arc server resource is in a
 
-supported region
-
-. All the SQL Server
+supported region. All the SQL Server
 
 instance resources are automatically created in Azure, providing a centralized management
 
 platform for all your SQL Server instances. For more information, visit
 
-SQL Server enabled by
+enabled by
 
-Azure Arc
-
-.
+Azure Arc.
 
 This article details how the streamlined process of connecting SQL Server to Azure works.
 
 1. Complete the
 
-Prerequisites - SQL Server enabled by Azure Arc
-
-.
+Prerequisites - SQL Server enabled by Azure Arc.
 
 2. For Always On availability groups, complete the steps on all nodes.
 
@@ -59,9 +51,7 @@ workflow requires that tag. For more information, visit
 
 Tag resources, resource groups, and
 
-subscriptions for a logical organization
-
-.
+subscriptions for a logical organization.
 
 The automatic connection workflow checks for the tag at the subscription level first, then
 
@@ -79,9 +69,7 @@ or greater will eventually have the least
 
 privileged configuration applied. This extension was released in November, 2024. To prevent
 
-the automatic application of least privilege, block extension upgrades after
-
-.
+the automatic application of least privilege, block extension upgrades after.
 
 ```cmd
 1.1.2859.223

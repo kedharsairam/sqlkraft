@@ -17,13 +17,9 @@ by any string of zero or more characters.
 
 For example, the following query shows all dynamic management views in the
 
-database, because they all start with the letters
+database, because they all start with the letters.
 
-.
-
-To see all objects that aren't dynamic management views, use
-
-. If you have a
+To see all objects that aren't dynamic management views, use. If you have a
 
 total of 32 objects and
 
@@ -37,9 +33,7 @@ Note
 
 comparisons are affected by collation. For more information, see
 
-SQL)
-
-.
+SQL).
 
 #### Symbol
 

@@ -15,11 +15,9 @@ Create clustered indexes
 
 and the
 
-SQL Server index
+index
 
-architecture and design guide
-
-.
+architecture and design guide.
 
 Starting with SQL Server 2016 (13.x), in Azure SQL Database, SQL database in Microsoft Fabric,
 

@@ -1,14 +1,12 @@
 ---
 title: "Storage engine architecture and I/O"
 topic: "io-fundamentals"
-description: "SQL Server internals and architecture"
+description: "internals and architecture"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL Server internals and architecture
-
-Applies to:
+internals and architecture
 
 SQL Server
 
@@ -46,17 +44,9 @@ internal structures, and how to diagnose contention-related issues.
 
 ## Description
 
-Transaction locking and row
-
-versioning guide
-
-Explains the locking and row versioning mechanisms that SQL Server uses
-
-to preserve transaction integrity. Describes how applications can
+to preserve transaction integrity.
 
 efficiently control transactions.
-
-Deadlocks guide
 
 Deep dive on Database Engine deadlocks that competing locks cause.
 
@@ -64,11 +54,7 @@ Explains how deadlocks form and how SQL Server detects and breaks
 
 them.
 
-Diagnose and resolve latch
-
 contention on SQL Server
-
-Focuses on identifying and resolving latch contention (notably page latch
 
 contention) in high-concurrency SQL Server workloads.
 
@@ -83,5 +69,3 @@ In-depth guide on identifying and resolving spinlock contention in high-
 concurrency SQL Server workloads.
 
 ﾉ
-
-Expand table

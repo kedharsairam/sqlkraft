@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -56,8 +54,6 @@ Class
 Indicates that a feature will be removed in the next major release of
 
 SQL Server.
-
-Last updated on 11/18/2025
 
 ﾉ
 

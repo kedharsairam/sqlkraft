@@ -15,9 +15,7 @@ defined by Microsoft, see
 
 Find Property Set GUIDs and Property Integer IDs for Search
 
-Properties
-
-. For information about properties defined by an independent software vendor (ISV),
+Properties. For information about properties defined by an independent software vendor (ISV),
 
 see the documentation of that vendor.
 

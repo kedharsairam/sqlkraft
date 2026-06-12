@@ -36,9 +36,7 @@ using simultaneous multithreading (SMT) technology. On Intel CPUs, SMT is called
 
 Hyper-
 
-Threading
-
-. As the number of logical processors on x86 compatible computers increases,
+Threading. As the number of logical processors on x86 compatible computers increases,
 
 concurrency-related issues increase as logical processors compete for resources. This guide
 

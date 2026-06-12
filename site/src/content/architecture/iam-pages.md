@@ -52,9 +52,7 @@ Holds LOB data pages, used by data types such as
 
 ,
 
-, and
-
-.
+, and.
 
 ROW_OVERFLOW_DATA
 

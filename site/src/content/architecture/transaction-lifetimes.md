@@ -27,8 +27,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 There's an important difference between transactions started in Transact-SQL stored

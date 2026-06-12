@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -53,9 +51,7 @@ English set of these messages. Additionally, you can add user-defined messages i
 
 specific language by using
 
-sp_addmessage
-
-.
+sp_addmessage.
 
 The format of date and time data.
 
@@ -67,29 +63,21 @@ Currency data.
 
 There are 33 languages available for use as session settings. For a list of languages, see
 
-sys.syslanguages
-
-.
+sys.syslanguages.
 
 To set the session language from the server side, use
 
-SET LANGUAGE
-
-.
+SET LANGUAGE.
 
 The session language can be set on the client side by using OLE DB, ODBC or ADO.NET. For
 
 OLE DB, use the SSPROP_INIT_CURRENTLANGUAGE property. For more information, see
 
-Initialization and Authorization Properties
-
-.
+Initialization and Authorization Properties.
 
 For ODBC, use the Language keyword. For more information, see
 
-SQLConfigDataSource
-
-.
+SQLConfigDataSource.
 
 For ADO.NET, use the
 

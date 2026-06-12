@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 10/21/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,9 +37,7 @@ Displays the name of the database.
 
 Displays the database state. For more information, see
 
-Database States
-
-.
+Database States.
 
 Displays the name of the database owner. The owner can be changed on the
 

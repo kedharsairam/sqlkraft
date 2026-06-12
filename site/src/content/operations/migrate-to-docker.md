@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -57,9 +55,7 @@ Server. Use the command line interface (CLI) instructions to create a container 
 
 of your choice. For more information, see
 
-Deploy and connect to SQL Server Linux containers
-
-.
+Deploy and connect to SQL Server Linux containers.
 
 1. Open a bash terminal on Linux.
 

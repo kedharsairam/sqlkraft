@@ -2,12 +2,10 @@
 name: "Find system views"
 title: "Find system views"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -37,17 +35,15 @@ For detailed technical documents about how certain standards are implemented in 
 
 see the
 
-Microsoft SQL Server Standards Support documentation
-
-.
+Microsoft SQL Server Standards Support documentation.
 
 Some of the Microsoft tools that issue T-SQL commands are:
 
-SQL Server Management Studio (SSMS)
+Management Studio (SSMS)
 
 MSSQL extension for Visual Studio Code
 
-SQL Server Data Tools (SSDT)
+Data Tools (SSDT)
 
 sqlcmd
 
@@ -67,8 +63,6 @@ DELETE
 
 For more information, see
 
-Transact-SQL statements
-
-.
+Transact-SQL statements.
 
 ### Applies to

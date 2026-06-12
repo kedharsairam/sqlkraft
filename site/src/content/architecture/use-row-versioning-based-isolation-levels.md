@@ -8,15 +8,11 @@ pubDate: 2026-05-29
 
 ## Description
 
-The support for
-
 isolation transactions isn't activated. No
 
 isolation
 
 transactions are allowed.
-
-The support for
 
 isolation transactions is in transition state (from
 
@@ -28,13 +24,9 @@ No
 
 isolation transactions are allowed.
 
-The support for
-
 isolation transactions is activated.
 
 transactions are allowed.
-
-The support for
 
 isolation transactions is in transition state (from
 
@@ -44,59 +36,37 @@ to
 
 transactions started after this time can't access this database. Existing
 
-transactions can still access this database. Existing write transactions still
+transactions can still access this database.
 
-use versioning in this database. The state
+use versioning in this database.
 
 doesn't become
 
-until all
-
 transactions that started when the database
 
-isolation state was
-
 finish.
-
-Use the
 
 catalog view to determine the state of both row versioning database
 
 options.
 
-All updates to user tables and some system tables stored in
-
 and
-
-generate row
 
 versions.
 
 The
 
-option is automatically set to
-
-in the
-
 and
 
 databases, and can't be disabled.
-
-Users can't set the
-
-option to
 
 in
 
 ,
 
-, or
-
-.
+, or.
 
 The row versioning framework is always enabled and is used by multiple features. Besides
-
-providing row versioning-based isolation levels, it's used to support modifications made in
 
 triggers and multiple active result sets (MARS) sessions, and to support data reads for online
 
@@ -106,43 +76,21 @@ Row versioning-based isolation levels are enabled at the database level. Any app
 
 accessing objects from enabled databases can run queries using the following isolation levels:
 
-that uses row versioning by setting the
-
 database
 
-option to
-
 as shown in the following code example:
-
-When the database is enabled for
-
-, all queries running under the
 
 isolation level use row versioning, which means that read operations don't
 
 block update operations.
 
-isolation by setting the
-
-database option to
-
 as
 
 shown in the following code example:
 
-When using cross-database queries, a transaction running under
-
-isolation can
-
-access tables in the database(s) that have the
-
 database option
 
-set to
-
-. To access tables in databases that don't have the
-
-database option set to
+set to.
 
 , the isolation level must be changed. For example, the following
 
@@ -150,27 +98,17 @@ code example shows a
 
 statement that joins two tables while running under a
 
-transaction. One table belongs to a database in which
+transaction.
 
 isolation isn't
 
-enabled. When the
-
-statement runs under
+enabled.
 
 isolation, it fails to execute
 
 successfully.
 
-The following code example shows the same
-
-statement that has been modified to
-
-change the transaction isolation level to
-
 when accessing a specific table.
-
-Because of this change, the
 
 statement executes successfully.
 

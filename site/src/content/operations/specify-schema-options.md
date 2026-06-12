@@ -29,8 +29,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -49,7 +47,7 @@ Limitations and Restrictions
 
 Recommendations
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 

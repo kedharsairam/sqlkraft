@@ -38,9 +38,7 @@ for each victim transaction. If a transaction is marked as a victim, it can no l
 
 versions in the version store. When it attempts to read row versions, message 3966 is generated
 
-and the transaction is rolled back. If the shrinking process succeeds, space becomes available in
-
-. Otherwise,
+and the transaction is rolled back. If the shrinking process succeeds, space becomes available in. Otherwise,
 
 runs out of space and the following occurs:
 

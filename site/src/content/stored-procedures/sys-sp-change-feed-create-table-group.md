@@ -2,7 +2,7 @@
 name: "sys.sp_change_feed_create_table_group"
 title: "sp_change_feed_create_table_group"
 category: "general"
-description: "SQL Server 2022 (16.x) and later versions Mirrored databases in Microsoft SQL database in Microsoft Fabric Creates a source to maintain metadata specific to each table group. A table group represents the container for all the individual tables that will be replicated. This system stored procedure is used for: SQL database in Microsoft Fabric Microsoft Fabric mirrored databases Transact-SQL syntax"
+description: "2022 (16.x) and later versions Mirrored databases in Microsoft SQL database in Microsoft Fabric Creates a source to maintain metadata specific to each table group. A table group represents the container for all the individual tables that will be replicated. This system stored procedure is used for: SQL database in Microsoft Fabric Microsoft Fabric mirrored databases Transact-SQL syntax"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -18,9 +18,7 @@ syntax: |
 
 ## Description
 
-SQL Server 2022 (16.x) and later versions Mirrored databases in Microsoft SQL database in Microsoft Fabric Creates a source to maintain metadata specific to each table group. A table group represents the container for all the individual tables that will be replicated. This system stored procedure is used for: SQL database in Microsoft Fabric Microsoft Fabric mirrored databases Transact-SQL syntax conventions
-
-## Syntax
+2022 (16.x) and later versions Mirrored databases in Microsoft SQL database in Microsoft Fabric Creates a source to maintain metadata specific to each table group. A table group represents the container for all the individual tables that will be replicated. This system stored procedure is used for: SQL database in Microsoft Fabric Microsoft Fabric mirrored databases ## Syntax
 
 ```sql
 EXECUTE sys.sp_change_feed_create_table_group

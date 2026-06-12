@@ -41,9 +41,7 @@ references with the
 
 and
 
-tables associated with
-
-.
+tables associated with.
 
 If the
 
@@ -85,9 +83,7 @@ clause supports the large object data types:
 
 ,
 
-, and
-
-. When you use the
+, and. When you use the
 
 clause in the
 
@@ -197,8 +193,7 @@ INSTEAD OF
 
 `OUTPUT`
 
-```sql
-.WRITE
+```sql.WRITE
 ```
 
 `UPDATE`

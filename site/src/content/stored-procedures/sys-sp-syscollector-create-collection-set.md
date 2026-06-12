@@ -2,7 +2,7 @@
 name: "sys.sp_syscollector_create_collection_set"
 title: "sp_syscollector_create_collection_set"
 category: "general"
-description: "Creates a new collection set. You can use this stored procedure to create a custom collection Transact-SQL syntax conventions In cases where the Windows account configured as a proxy is a non-interactive or interactive user that hasn't yet logged in, the profile directory will not exist, and the creation of the staging directory will fail."
+description: "Creates a new collection set. You can use this stored procedure to create a custom collection In cases where the Windows account configured as a proxy is a non-interactive or interactive user that hasn't yet logged in, the profile directory will not exist, and the creation of the staging directory will fail."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -44,7 +44,7 @@ syntax: |
 
 ## Description
 
-Creates a new collection set. You can use this stored procedure to create a custom collection Transact-SQL syntax conventions In cases where the Windows account configured as a proxy is a non-interactive or interactive user that hasn't yet logged in, the profile directory will not exist, and the creation of the staging directory will fail. Therefore, if you're using a proxy account on a domain controller, you must specify an interactive account that has been used at least
+Creates a new collection set. You can use this stored procedure to create a custom collection In cases where the Windows account configured as a proxy is a non-interactive or interactive user that hasn't yet logged in, the profile directory will not exist, and the creation of the staging directory will fail.
 
 ## Syntax
 

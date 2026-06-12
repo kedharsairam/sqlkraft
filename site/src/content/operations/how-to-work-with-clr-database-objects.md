@@ -17,7 +17,7 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-In addition to the Transact-SQL programming language, you can use .NET Framework
+In addition to the Transact-SQL programming language, you can use.NET Framework
 
 languages to create database objects that retrieve and update data. Database objects that are
 
@@ -33,9 +33,7 @@ and
 
 Advantages
 
-of Using Managed Code to Create Database Objects
-
-.
+of Using Managed Code to Create Database Objects.
 
 To create a CLR database object using SQL Server Data Tools, you create a database project
 
@@ -61,21 +59,15 @@ page contains all the compiler options that you can set to configure the compila
 
 code in the project. These property pages can be accessed by right-clicking your project in
 
-and select
-
-.
+and select.
 
 To enable debugging of CLR database objects, open
 
-SQL Server Object Explorer
-
-. Right-click
+Object Explorer. Right-click
 
 the server containing the CLR database artifacts you want to debug, and choose
 
-SQL/CLR Debugging
-
-. A message box appears with the warning:
+SQL/CLR Debugging. A message box appears with the warning:
 
 Output
 
@@ -87,11 +79,9 @@ database objects on a production server. You should also note that once you have
 
 debugging, it's too late to change settings in
 
-SQL Server Object Explorer
+Object Explorer. Changes made in
 
-. Changes made in
-
-SQL Server Object Explorer
+Object Explorer
 
 don't take effect until the start of the next debugging session.
 
@@ -99,9 +89,7 @@ For more information on the requirements of building CLR database objects, see
 
 Build
 
-database objects with common language runtime (CLR) integration
-
-.
+database objects with common language runtime (CLR) integration.
 
 ```cmd
 During debugging, all managed threads on this server stop. Do you wish to enable

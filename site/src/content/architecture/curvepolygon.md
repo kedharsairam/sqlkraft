@@ -27,8 +27,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -73,9 +71,7 @@ instance can
 
 contain the following circular arc segments:
 
-and
-
-.
+and.
 
 Illustration below shows valid
 
@@ -107,9 +103,7 @@ CircularString
 
 , and
 
-CompoundCurve
-
-.
+CompoundCurve.
 
 2. Has at least four points.
 
@@ -123,6 +117,4 @@ For a detailed description and examples of spatial features introduced in SQL Se
 
 (11.x), including the
 
-subtype, download the white paper,
-
-.
+subtype, download the white paper,.

@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 Before you can create and configure an Always On availability group, you must enable the
@@ -51,9 +49,7 @@ The server instance must run an edition of SQL Server that supports Always On av
 
 groups. For more information, see
 
-Editions and supported features of SQL Server 2025
-
-.
+Editions and supported features of SQL Server 2025.
 
 Enable availability groups on only one server instance at a time. After enabling availability
 
@@ -65,9 +61,7 @@ For more information, see
 
 Prerequisites, Restrictions, and Recommendations for Always
 
-On Availability Groups (SQL Server)
-
-.
+On Availability Groups (SQL Server).
 
 When you enable availability groups on an instance of SQL Server, the server instance has full
 

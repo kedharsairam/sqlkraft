@@ -18,7 +18,7 @@ syntax: |
 
 ## Description
 
-Sets up a notification for an alert. The alert for this notification. The operator to be notified when the alert occurs. The method by which the operator is notified. can be one or more of these values combined with an
+Sets up a notification for an alert. The alert for this notification. The operator to be notified when the alert occurs. The method by which the operator is notified.
 
 ## Syntax
 

@@ -53,9 +53,7 @@ For more information about each of these questions, see
 
 How to: Configure SQL Server unit
 
-test execution
-
-. As an alternative to creating multiple test projects, you can also provide your
+test execution. As an alternative to creating multiple test projects, you can also provide your
 
 own
 

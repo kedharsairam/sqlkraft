@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 06/10/2025
 
-Applies to:
-
 SQL Server
 
 An Always On availability group is an enterprise level high availability and disaster recovery
@@ -47,9 +45,7 @@ permissions in at least one of
 
 the Azure subscriptions that your organization created.
 
-Learn how to create a new subscription
-
-.
+Learn how to create a new subscription.
 
 Follow the steps to view the availability groups that are configured for the SQL Server enabled
 

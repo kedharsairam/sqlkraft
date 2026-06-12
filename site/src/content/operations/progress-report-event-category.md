@@ -27,8 +27,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -53,9 +51,7 @@ Indicates the progress of an online index build
 
 operation.
 
-SQL Server Profiler
-
-Last updated on 11/18/2025
+Profiler
 
 ﾉ
 

@@ -2,12 +2,10 @@
 name: "Example: Cross-domain Query Using sql:variable()"
 title: "Example: Cross-domain Query Using sql:variable()"
 category: "variables"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "variables"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -47,9 +45,7 @@ Lets you use the values from a relational column in your
 
 XQuery or XML DML expression.
 
-sql:variable() Function (XQuery)
-
-. Lets you use the value of a SQL variable in your XQuery
+sql:variable() Function (XQuery). Lets you use the value of a SQL variable in your XQuery
 
 or XML DML expression.
 
@@ -108,8 +104,6 @@ the column may be used for efficiency, as decided by the cost-based query optimi
 computed column may store a promoted property.
 
 xml Data Type Methods
-
-Last updated on 11/18/2025
 
 See Also
 

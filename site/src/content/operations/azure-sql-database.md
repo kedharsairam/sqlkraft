@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 Azure SQL Database
 
 This article provides an overview of Azure SQL Database, a fully managed platform as a service
@@ -29,13 +27,13 @@ With Azure SQL Database, you can create a highly available and high-performance 
 
 layer for the applications and solutions in Azure.
 
-Azure SQL Database always runs on the latest stable version of the
+always runs on the latest stable version of the
 
 SQL Database Engine
 
 and patched OS.
 
-Azure SQL Database offers an
+offers an
 
 enterprise-class availability SLA
 
@@ -47,7 +45,7 @@ redundancy
 
 is implemented.
 
-Azure SQL Database is a
+is a
 
 multi-model database
 
@@ -61,7 +59,7 @@ platforms and languages with modern cloud applications.
 
 The
 
-Azure SQL Database Hyperscale service tier
+Hyperscale service tier
 
 (recommended) offers the best
 
@@ -77,9 +75,7 @@ performance in-memory technologies
 
 and
 
-intelligent query processing
-
-. In fact, the newest
+intelligent query processing. In fact, the newest
 
 capabilities of SQL Server are often released first to Azure SQL Database, and later to SQL Server
 

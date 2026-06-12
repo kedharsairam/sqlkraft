@@ -19,9 +19,7 @@ syntax: |
 
 ## Description
 
-Returns information on all status requests received by participants in a peer-to-peer replication topology, where these requests were initiated by executing published database in the topology. This stored procedure is executed on the publication database at a Publisher participating in a peer-to-peer replication topology. For more Peer-to-Peer - Transactional Replication Transact-SQL syntax conventions
-
-## Syntax
+Returns information on all status requests received by participants in a peer-to-peer replication topology, where these requests were initiated by executing published database in the topology. This stored procedure is executed on the publication database at a Publisher participating in a peer-to-peer replication topology. For more Peer-to-Peer - Transactional Replication ## Syntax
 
 ```sql
 sp_helppeerrequests

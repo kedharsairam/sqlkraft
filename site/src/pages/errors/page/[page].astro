@@ -1,0 +1,200 @@
+---
+import BaseLayout from "../../../layouts/BaseLayout.astro";
+import Card from "../../../components/Card.astro";
+import Pagination from "../../../components/Pagination.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const PAGE_SIZE = 100;
+  const allErrors = await getCollection("errors");
+  const sorted = allErrors.sort((a, b) => parseInt(a.data.name) - parseInt(b.data.name));
+  const totalItems = sorted.length;
+  const lastPage = Math.ceil(totalItems / PAGE_SIZE);
+  // Unique categories sorted
+  const categorySet = new Set(sorted.map((e) => e.data.category || "other"));
+  const CATEGORIES = [...categorySet].sort();
+
+  // Generate pages 2 through lastPage (page 1 is handled by index.astro)
+  const paths = [];
+  for (let p = 2; p <= lastPage; p++) {
+    const start = (p - 1) * PAGE_SIZE;
+    const end = Math.min(start + PAGE_SIZE, totalItems);
+    paths.push({
+      params: { page: String(p) },
+      props: {
+        items: sorted.slice(start, end),
+        categories: CATEGORIES,
+        currentPage: p,
+        lastPage,
+        totalItems,
+      },
+    });
+  }
+  return paths;
+}
+
+const { items, categories, currentPage, lastPage, totalItems } = Astro.props;
+const CATEGORIES = categories as string[];
+const baseUrl = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "");
+const currentUrl = `${baseUrl}/errors/page/${currentPage}/`;
+const prevUrl =
+  currentPage === 2
+    ? `${baseUrl}/errors/`
+    : `${baseUrl}/errors/page/${currentPage - 1}/`;
+const nextUrl =
+  currentPage < lastPage ? `${baseUrl}/errors/page/${currentPage + 1}/` : undefined;
+---
+
+<BaseLayout
+  title={`Database Engine Errors — Page ${currentPage}`}
+  description={`SQL Server error codes — page ${currentPage} of ${lastPage} (${totalItems} total errors).`}
+>
+  <nav class="breadcrumb">
+    <a href="/sqlkraft/">&larr; Home</a>
+    <span class="sep">/</span>
+    <a href="/sqlkraft/errors/">Database Engine Errors</a>
+    <span class="sep">/</span>
+    <span>Page {currentPage}</span>
+  </nav>
+
+  <header class="page-header">
+    <h1>Database Engine Errors</h1>
+    <p class="page-desc">
+      SQL Server diagnostic error codes organized by severity level and category. Each error
+      includes error number, severity classification, and description.
+      — Page {currentPage} of {lastPage}.
+    </p>
+  </header>
+
+  <!-- Category filter pills -->
+  <div class="category-strip">
+    <button class="cat-pill active" data-cat="all" onclick="filterCards('all')">All</button>
+    {
+      CATEGORIES.map((cat) => (
+        <button class="cat-pill" data-cat={cat} onclick={`filterCards('${cat}')`}>
+          {cat}
+        </button>
+      ))
+    }
+  </div>
+
+  <!-- Unified card grid -->
+  <div class="card-grid" id="errorGrid">
+    {
+      items.map((entry: any) => {
+        const { name, description, severity, category, tags } = entry.data;
+        return (
+          <Card
+            href={`/sqlkraft/errors/error-${name}/`}
+            data-cat={category}
+            notransition
+            description={description || "No description available."}
+          >
+            <span slot="title">#{name}</span>
+            <span slot="severity">
+              <span class="card-pill pill--{severity}">{severity}</span>
+            </span>
+            <span slot="category" class="cat-badge cat-badge--errors">
+              Errors
+            </span>
+            <div slot="tags">
+              {tags.slice(0, 3).map((tag: string) => (
+                <span class="card-tag">#{tag}</span>
+              ))}
+              {tags.length > 3 && <span class="card-tag-more">+{tags.length - 3} more</span>}
+            </div>
+          </Card>
+        );
+      })
+    }
+  </div>
+
+  <Pagination
+    currentUrl={currentUrl}
+    prevUrl={prevUrl}
+    nextUrl={nextUrl}
+    currentPage={currentPage}
+    lastPage={lastPage}
+    totalItems={totalItems}
+  />
+</BaseLayout>
+
+<script>
+  function filterCards(category) {
+    document.querySelectorAll(".cat-pill").forEach((p) => p.classList.remove("active"));
+    const activePill = document.querySelector(`[data-cat="${category}"]`);
+    if (activePill) activePill.classList.add("active");
+    document.querySelectorAll(".item-card").forEach((card) => {
+      card.style.display = category === "all" || card.dataset.cat === category ? "" : "none";
+    });
+  }
+</script>
+
+<style>
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: clamp(4px, 0.8vw, 10px);
+    font-size: clamp(11px, 1.2vw, 14px);
+    color: var(--text-secondary);
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+  }
+  .breadcrumb a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  .breadcrumb .sep {
+    color: var(--border-glass);
+  }
+  .page-header {
+    margin-bottom: clamp(12px, 2.5vw, 28px);
+  }
+  .page-header h1 {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .page-desc {
+    font-size: clamp(0.8rem, 1.3vw, 0.95rem);
+    color: var(--text-secondary);
+    margin-top: clamp(6px, 0.8vw, 10px);
+    max-width: min(700px, 90vw);
+    line-height: 1.6;
+  }
+
+  .category-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(6px, 0.8vw, 10px);
+    margin-bottom: clamp(16px, 2.5vw, 28px);
+  }
+  .cat-pill {
+    padding: clamp(4px, 0.6vw, 8px) clamp(10px, 1.3vw, 16px);
+    border-radius: 20px;
+    border: 1px solid var(--border-glass);
+    background: transparent;
+    color: var(--text-secondary);
+    font-size: clamp(11px, 1.2vw, 14px);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-family: inherit;
+  }
+  .cat-pill:hover {
+    border-color: var(--text-secondary);
+    color: var(--text-primary);
+  }
+  .cat-pill.active {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+    border-color: var(--text-secondary);
+  }
+
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(300px, 28vw, 400px), 1fr));
+    gap: clamp(16px, 1.5vw, 24px);
+  }
+</style>

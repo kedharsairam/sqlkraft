@@ -2,14 +2,12 @@
 name: "Key benefits of float16 support"
 title: "Key benefits of float16 support"
 category: "statements"
-description: "SQL Server 2025 (17.x)"
+description: "2025 (17.x)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 Beginning with SQL Server 2025 (17.x), you can specify the underlying base type for the
 
@@ -41,27 +39,19 @@ While
 
 offers significant storage and performance advantages, it provides reduced
 
-numerical precision compared to
-
-. This tradeoff makes it well-suited for approximate
+numerical precision compared to. This tradeoff makes it well-suited for approximate
 
 similarity scenarios, such as semantic search, but less appropriate for workloads that require
 
 high-precision arithmetic or exact numerical fidelity.
 
-SQL Server supports vectors with up to
+supports vectors with up to
 
 (
 
-) when using
+) when using. This feature doubles the limitation 1,998 dimensions for. This capability
 
-. This feature doubles the limitation 1,998 dimensions for
-
-. This capability
-
-enables more expressive embeddings and compatibility with larger models, for example
-
-.
+enables more expressive embeddings and compatibility with larger models, for example.
 
 Storing vectors in a 16-bit format significantly decreases the amount of storage required
 

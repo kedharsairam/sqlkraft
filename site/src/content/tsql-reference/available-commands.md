@@ -2,7 +2,7 @@
 name: "Available commands"
 title: "Available commands"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -13,13 +13,11 @@ Article
 
 12/06/2022
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server provides the following management commands.
+provides the following management commands.
 
 CHECKPOINT
 

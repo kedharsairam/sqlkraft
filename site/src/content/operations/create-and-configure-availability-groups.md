@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -37,9 +35,7 @@ Deploy the Pacemaker high availability cluster as described in
 
 Deploy a Pacemaker cluster for
 
-SQL Server on Linux
-
-.
+on Linux.
 
 Unlike on Windows, you can't use PowerShell or SQL Server Configuration Manager to enable
 

@@ -13,13 +13,9 @@ to prevent the retrieval of duplicate titles.
 
 The following first example creates a temporary table named
 
-in
+in.
 
-.
-
-This second example creates the permanent table
-
-.
+This second example creates the permanent table.
 
 `DISTINCT`
 

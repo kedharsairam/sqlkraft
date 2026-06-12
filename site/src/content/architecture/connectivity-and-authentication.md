@@ -8,17 +8,11 @@ pubDate: 2026-05-29
 
 ## Description
 
-Thread and task
-
-architecture guide
-
 Describes threading and task concepts in the context of OS scheduling. It
 
 explains how work is executed through threads and tasks.
 
 Security cache concepts
-
-Explains how SQL Server uses a security cache to validate permissions for
 
 principals accessing securables.
 
@@ -34,17 +28,9 @@ troubleshooting and monitoring
 
 guide
 
-A troubleshooting and monitoring guide that also explicitly serves as
-
 a landing page pointing to other published resources for common
 
 AG scenarios and tools.
-
-Post-migration validation and
-
-optimization guide
-
-Frames post-migration as reconciling data accuracy and
 
 completeness and uncovering performance issues, then enumerates
 
@@ -64,12 +50,6 @@ establishment handshakes and authentication sequences between
 
 client and server.
 
-Last updated on 01/20/2026
-
 ﾉ
 
-Expand table
-
 ﾉ
-
-Expand table

@@ -15,15 +15,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server unit test files
+unit test files
 
 09/10/2025
 
 Like the unit tests for managed code, SQL Server unit tests reside in test projects. You can see
 
-the items that compose a SQL Server unit test in the hierarchy of a test project in
-
-.
+the items that compose a SQL Server unit test in the hierarchy of a test project in.
 
 A SQL Server unit test consists of multiple items that are contained in several files. The
 
@@ -37,7 +35,7 @@ This source-code file contains a class that is decorated with the [TestClass]
 
 attribute. This class contains a single test method for each of the contained
 
-SQL Server unit tests. These methods are decorated with the [TestMethod]
+unit tests. These methods are decorated with the [TestMethod]
 
 attribute.
 
@@ -61,9 +59,7 @@ file to see its
 
 source code, right-click the file in
 
-, and then select
-
-.
+, and then select.
 
 This resource file contains the Transact-SQL scripts for all tests in the
 
@@ -79,15 +75,11 @@ you can edit. The resource file is compiled into the test assembly.
 
 You should code your Transact-SQL scripts by using the
 
-SQL Server Unit Test
-
-. For more information about the scripts that are used in SQL Server
+Unit Test. For more information about the scripts that are used in SQL Server
 
 unit tests, see
 
-Scripts in SQL Server Unit Tests
-
-.
+Scripts in SQL Server Unit Tests.
 
 This file stores the database connection strings for the test project, in
 
@@ -97,9 +89,7 @@ command timeout. For more information, see
 
 Scripts in SQL Server Unit
 
-Tests
-
-.
+Tests.
 
 or
 
@@ -115,10 +105,5 @@ database.
 
 Expand table
 
-```cmd
-.cs
-.vb
-.cs
-.vb
-.resx
+```cmd.cs.vb.cs.vb.resx
 ```

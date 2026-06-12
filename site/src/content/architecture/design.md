@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 07/23/2025
 
-Applies to:
-
 SQL Server
 
 This article describes the following factors you should consider when you design assemblies:
@@ -69,15 +67,13 @@ Implement assemblies
 
 and
 
-ALTER ASSEMBLY
-
-.
+ALTER ASSEMBLY.
 
 If a piece of managed code requires higher permission, it's better to separate that code
 
 into a separate assembly from code that doesn't require higher permission.
 
-CLR uses Code Access Security (CAS) in the .NET Framework, which is no longer supported as a
+CLR uses Code Access Security (CAS) in the.NET Framework, which is no longer supported as a
 
 security boundary. A CLR assembly created with
 
@@ -85,7 +81,7 @@ might be able to
 
 access external system resources, call unmanaged code, and acquire sysadmin privileges. In
 
-SQL Server 2017 (14.x) and later versions, the
+2017 (14.x) and later versions, the
 
 option,
 

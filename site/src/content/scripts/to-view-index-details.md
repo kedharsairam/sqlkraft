@@ -1,7 +1,7 @@
 ---
 name: "To View Index Details"
 title: "To View Index Details"
-description: "SQL Server diagnostic script for index-maintenance operations."
+description: "diagnostic script for index-maintenance operations."
 category: index-maintenance
 tags: ["index-maintenance", "indexing"]
 pubDate: 2025-03-15

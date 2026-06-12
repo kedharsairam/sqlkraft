@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/05/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -41,9 +39,7 @@ the
 
 menu, select
 
-, and then choose
-
-.
+, and then choose.
 
 2. In the
 
@@ -73,9 +69,7 @@ grouped by event category. The remaining columns list the data columns that can 
 
 returned for each event class.
 
-4. Select
-
-.
+4. Select.
 
 5. In the
 
@@ -87,4 +81,4 @@ want to edit, and type the new value or delete a value. You can also add extra f
 
 and save the template.
 
-SQL Server Profiler
+Profiler

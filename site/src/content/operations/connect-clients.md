@@ -27,21 +27,15 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
-To connect to a database mirroring session, a client can use either SQL Server Native Client or
-
-.NET Framework Data Provider for SQL Server. When configured for a SQL Server database,
+To connect to a database mirroring session, a client can use either SQL Server Native Client or.NET Framework Data Provider for SQL Server. When configured for a SQL Server database,
 
 these data access providers both fully support database mirroring. For information about
 
 programming considerations for using a mirrored database, see
 
-Using Database Mirroring
-
-. In
+Using Database Mirroring. In
 
 addition, the current principal server instance must be available and the login of the client must
 
@@ -49,9 +43,7 @@ have been created on the server instance. For more information, see
 
 Troubleshoot Orphaned
 
-Users (SQL Server)
-
-. Client connections to a database mirroring session do not involve the
+Users (SQL Server). Client connections to a database mirroring session do not involve the
 
 witness server instance, if one exists.
 
@@ -61,9 +53,7 @@ minimally supplies the name of a server instance. This required server name shou
 
 current principal server instance and is known as the
 
-initial partner name
-
-.
+initial partner name.
 
 Optionally, the connection string can also supply the name of another server instance, which
 
@@ -71,9 +61,7 @@ should identify the current mirror server instance, for use if the initial partn
 
 during the first connection attempt. The second name is known as the
 
-failover partner name
-
-.
+failover partner name.
 
 The connection string must also supply a database name. This is necessary to enable failover
 

@@ -21,13 +21,11 @@ pubDate: 2025-12-01
 
 06/04/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
 
-SQL Server supports upgrade from SQL Server 2008 (10.0.x) and later versions. This article
+supports upgrade from SQL Server 2008 (10.0.x) and later versions. This article
 
 documents support and behavior for upgrading SQL Server Management Tools and
 
@@ -49,9 +47,7 @@ information about MSX/TSX in SQL Server, see
 
 Automated Administration Across an
 
-Enterprise
-
-.
+Enterprise.
 
 All components in an instance of SQL Server must be upgraded at the same time. Version
 
@@ -65,11 +61,9 @@ upgrade to SQL Server. For more information, see
 
 Upgrade SQL Server Using the
 
-Installation Wizard (Setup)
+Installation Wizard (Setup).
 
-.
-
-SQL Server Client Tools, such as SQL Server Management Studio, SQL Server Profiler, the
+Client Tools, such as SQL Server Management Studio, SQL Server Profiler, the
 
 Database Engine Tuning Advisor, sqlcmd, and osql aren't upgraded to SQL Server.
 

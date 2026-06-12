@@ -2,7 +2,7 @@
 name: "sys.sp_dropserver"
 title: "sp_dropserver"
 category: "general"
-description: "Azure SQL Managed Instance Removes a server from the list of known remote and linked servers on the local instance of SQL Transact-SQL syntax conventions The server to be removed. , with no default. Indicates that related remote and linked server logins for must also be removed if , with a default of An error is returned if you run on a server with associated remote and linked server login entries"
+description: "Removes a server from the list of known remote and linked servers on the local instance of SQL The server to be removed. , with no default. Indicates that related remote and linked server logins for must also be removed if , with a default of An error is returned if you run on a server with associated remote and linked server login entries"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -18,7 +18,7 @@ syntax: |
 
 ## Description
 
-Azure SQL Managed Instance Removes a server from the list of known remote and linked servers on the local instance of SQL Transact-SQL syntax conventions The server to be removed. , with no default. Indicates that related remote and linked server logins for must also be removed if , with a default of An error is returned if you run on a server with associated remote and linked server login entries, or is configured as a replication publisher. To remove all remote and linked server logins for a server when you remove the server, use the
+Removes a server from the list of known remote and linked servers on the local instance of SQL The server to be removed. , with no default. Indicates that related remote and linked server logins for must also be removed if , with a default of An error is returned if you run on a server with associated remote and linked server login entries, or is configured as a replication publisher.
 
 ## Syntax
 
@@ -35,13 +35,9 @@ N
 
 ## Remarks
 
-Applies to:
-
 Azure SQL Managed Instance
 
 Removes a server from the list of known remote and linked servers on the local instance of SQL
-
-Transact-SQL syntax conventions
 
 The server to be removed.
 

@@ -47,9 +47,7 @@ the database ownership to the new user. For more information about configuring M
 
 Entra users with SQL Database, see
 
-Configure Microsoft Entra authentication
-
-.
+Configure Microsoft Entra authentication.
 
 You must
 
@@ -63,7 +61,7 @@ logical server in Azure
 
 was created.
 
-The Microsoft Entra administrator for the logical server..
+The Microsoft Entra administrator for the logical server.
 
 The current owner of the database.
 
@@ -81,13 +79,13 @@ Expand table
 
 ### db_owner
 
-SQL Server Authentication login
+Authentication login
 
-SQL Server Authentication login
+Authentication login
 
 Success
 
-SQL Server Authentication login
+Authentication login
 
 Microsoft Entra user
 
@@ -95,7 +93,7 @@ Fail
 
 Microsoft Entra user
 
-SQL Server Authentication login
+Authentication login
 
 Success
 
@@ -117,9 +115,7 @@ corresponds to the object ID of the Microsoft Entra user or service principal as
 
 database owner. You can verify this by
 
-checking the user's object ID in Microsoft Entra ID
-
-.
+checking the user's object ID in Microsoft Entra ID.
 
 When a SQL Server authentication login user is the database owner, execute the following
 

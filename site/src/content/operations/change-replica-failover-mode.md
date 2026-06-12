@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to change the failover mode of an availability replica in an Always On
@@ -45,15 +43,13 @@ and
 
 Availability Modes (Always On
 
-Availability Groups)
-
-.
+Availability Groups).
 
 This task is supported only on primary replicas. You must be connected to the server
 
 instance that hosts the primary replica.
 
-SQL Server Failover Cluster Instances (FCIs) do not support automatic failover by
+Failover Cluster Instances (FCIs) do not support automatic failover by
 
 availability groups, so any availability replica that is hosted by an FCI can only be
 
@@ -77,8 +73,6 @@ node.
 
 3. Click the availability group whose replica you want to change.
 
-4. Right-click the replica, and click
-
-.
+4. Right-click the replica, and click.
 
 Prerequisites and Restrictions

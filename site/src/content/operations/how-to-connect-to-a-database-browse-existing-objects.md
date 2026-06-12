@@ -29,7 +29,7 @@ node, under which all connected SQL
 
 Server instances and their databases are grouped in an SSMS-like hierarchy. The connected
 
-SQL Server instances can be an on-premises one, such as SQL Server 2022 (16.x), or off-
+instances can be an on-premises one, such as SQL Server 2022 (16.x), or off-
 
 premises in Azure SQL.
 
@@ -45,15 +45,13 @@ If you prefer, you can also follow the steps and use an existing database on you
 
 1. In Visual Studio, make sure that
 
-SQL Server Object Explorer
+Object Explorer
 
 is open. If it's not, select the
 
 menu and select
 
-SQL Server Object Explorer
-
-.
+Object Explorer.
 
 2. Right-click the
 
@@ -61,11 +59,9 @@ SQL Server
 
 node in
 
-SQL Server Object Explorer
+Object Explorer
 
-and select
-
-.
+and select.
 
 3. In the
 
@@ -73,13 +69,11 @@ dialog box, enter the
 
 of the server instance you
 
-want to connect to, your credentials, and select
-
-.
+want to connect to, your credentials, and select.
 
 4. In
 
-SQL Server Object Explorer
+Object Explorer
 
 , expand the
 

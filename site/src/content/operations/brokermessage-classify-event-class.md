@@ -35,13 +35,11 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server generates a
+generates a
 
 event when Service Broker determines the
 
@@ -111,9 +109,7 @@ Yes
 
 The type of event class captured. Always
 
-for
-
-.
+for.
 
 27
 

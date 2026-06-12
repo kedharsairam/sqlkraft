@@ -100,7 +100,7 @@ boost'
 
 System tables are no longer updatable. Setting has no effect. Use the
 
-Windows start /high ... program.exe option instead.
+Windows start /high. program.exe option instead.
 
 'priority
 

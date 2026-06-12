@@ -27,8 +27,6 @@ pubDate: 2025-12-01
 
 SQL Server
 
-Applies to:
-
 SQL Server
 
 This article lists the permissions the Azure Extension for SQL Server grants to the
@@ -39,11 +37,9 @@ least privilege
 
 for
 
-SQL Server instances
+instances
 
-enabled by Azure Arc
-
-. With the least privilege configuration, the extension grants only necessary
+enabled by Azure Arc. With the least privilege configuration, the extension grants only necessary
 
 permissions when you enable features in the Azure portal.
 
@@ -117,9 +113,7 @@ or greater will eventually have the least
 
 privileged configuration applied. This extension was released in November, 2024. To prevent
 
-the automatic application of least privilege, block extension upgrades after
-
-.
+the automatic application of least privilege, block extension upgrades after.
 
 ```cmd
 NT

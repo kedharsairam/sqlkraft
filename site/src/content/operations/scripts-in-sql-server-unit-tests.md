@@ -59,9 +59,7 @@ than the test action. For more information, see
 
 Overview of connection strings and
 
-permissions
-
-.
+permissions.
 
 In addition to these three actions, there are also two test scripts (referred to as common
 

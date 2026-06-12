@@ -1,12 +1,10 @@
 ---
 title: "Operating system task scheduling"
 topic: "thread-task"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["thread-task", "architecture"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -88,14 +86,10 @@ locks
 
 or
 
-latches
-
-. For more
+latches. For more
 
 information about request states, see
 
-sys.dm_exec_requests
+sys.dm_exec_requests.
 
-.
-
-SQL Server task scheduling
+task scheduling

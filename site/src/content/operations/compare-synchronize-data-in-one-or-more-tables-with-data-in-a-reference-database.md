@@ -83,6 +83,5 @@ Each table or view can have more than one primary key, unique index, or unique c
 
 you might want to specify which key, index, or constraint to use.
 
-```cmd
-.dacpac
+```cmd.dacpac
 ```

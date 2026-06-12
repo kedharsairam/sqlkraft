@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 You can create a database snapshot on a primary or secondary database in an availability
@@ -39,13 +37,9 @@ state.
 
 You should create database snapshots when the database synchronization state is
 
-or
+or. However, you can still create database snapshots when the
 
-. However, you can still create database snapshots when the
-
-database synchronization state is
-
-.
+database synchronization state is.
 
 A database snapshot on a secondary replica continues to work if the replica is
 

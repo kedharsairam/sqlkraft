@@ -21,9 +21,7 @@ pubDate: 2025-12-01
 
 SQL Server?
 
-Applies to:
-
-SQL Server 2014 (12.x)
+2014 (12.x)
 
 This article provides information on how to receive Extended Security Updates (ESUs) for
 
@@ -33,7 +31,7 @@ Extended Security Updates (ESUs) are available for SQL Server 2014 (12.x).
 
 ESUs released for
 
-SQL Server 2014 (12.x)
+2014 (12.x)
 
 include the most recent cumulative update (CU). If
 
@@ -57,9 +55,7 @@ as
 
 by the
 
-Microsoft Security Response Center (MSRC)
-
-. Therefore, there's no regular
+Microsoft Security Response Center (MSRC). Therefore, there's no regular
 
 release cadence for SQL Server ESUs.
 
@@ -75,21 +71,15 @@ For information about ESU pricing, see
 
 Plan your Windows Server and SQL Server end of
 
-support
-
-.
+support.
 
 For more information about other options, see
 
-SQL Server end of support options
-
-.
+end of support options.
 
 You can also review the
 
-Frequently asked questions
-
-.
+Frequently asked questions.
 
 When SQL Server reaches the end of its support lifecycle, you can sign up for an Extended
 
@@ -99,9 +89,7 @@ after the support lifecycle ends. Keep the subscription until you're ready to up
 
 version of SQL Server or
 
-migrate to Azure SQL
-
-.
+migrate to Azure SQL.
 
 The method of receiving Extended Security Updates depends on where your SQL Server is
 

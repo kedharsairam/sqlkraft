@@ -24,9 +24,7 @@ is used in the comparison
 
 which isn't equivalent to the filtered index expression. The query processor can't execute this
 
-query without examining the values of
-
-. Therefore,
+query without examining the values of. Therefore,
 
 should be a key or
 

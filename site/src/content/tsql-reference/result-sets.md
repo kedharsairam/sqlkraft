@@ -11,9 +11,7 @@ For descriptions of the RESTORE LABELONLY arguments, see
 
 RESTORE Arguments (Transact-
 
-SQL)
-
-.
+SQL).
 
 The result set from RESTORE LABELONLY consists of a single row with this information.
 
@@ -31,8 +29,6 @@ Sequence number of this media in the media family.
 
 Whether the media description contains:
 
-= Microsoft Tape Format media label
-
 = Media description
 
 Media description, in free-form text, or the Tape Format
@@ -41,11 +37,7 @@ URL is the format used to specify the location and the file name for Microsoft A
 
 Storage and is supported starting with SQL Server 2012 (11.x) SP1 CU2. Although
 
-Microsoft Azure storage is a service, the implementation is similar to disk and tape to
-
 allow for a consistent and seamless restore experience for all the three devices.
-
-#### Column name
 
 #### SoftwareVendorId
 

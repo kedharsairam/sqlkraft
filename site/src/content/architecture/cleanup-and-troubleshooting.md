@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 08/22/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database

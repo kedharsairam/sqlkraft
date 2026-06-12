@@ -2,7 +2,7 @@
 name: "sys.sp_syscollector_stop_collection_set"
 title: "sp_syscollector_stop_collection_set"
 category: "general"
-description: "Transact-SQL syntax conventions The unique local identifier for the collection set."
+description: "The unique local identifier for the collection set."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -17,8 +17,6 @@ syntax: |
 ---
 
 ## Description
-
-Transact-SQL syntax conventions The unique local identifier for the collection set. The name of the collection set. Specifies that the collection job for the collection set should be stopped if it's running. applies only to collection sets with collection mode set to cached. For sp_syscollector_create_collection_set
 
 ## Syntax
 

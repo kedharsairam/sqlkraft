@@ -126,13 +126,13 @@ Expand table
 
 Expand table
 
-SQL Server Agent
+Agent
 
 ﾉ
 
 Expand table
 
-SQL Server Management Studio
+Management Studio
 
 ﾉ
 

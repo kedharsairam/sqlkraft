@@ -33,8 +33,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -47,9 +45,7 @@ data type is a built-in data type in SQL Server and is somewhat similar to other
 
 types such as
 
-and
-
-. As with other built-in types, you can use the
+and. As with other built-in types, you can use the
 
 data type as a
 
@@ -57,9 +53,7 @@ column type when you create a table as a variable type, a parameter type, a func
 
 type, or in
 
-CAST and CONVERT
-
-.
+CAST and CONVERT.
 
 To create an
 
@@ -110,6 +104,5 @@ CREATE
 PROCEDURE
 SampleProc(@XmlDoc xml
 )
-AS
-...
+AS.
 ```

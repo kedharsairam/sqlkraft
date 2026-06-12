@@ -15,7 +15,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server on Linux - Security and
+on Linux - Security and
 
 10/15/2025
 
@@ -25,9 +25,7 @@ on Linux. For more information about SQL Server on Windows permissions, see
 
 Configure
 
-Windows service accounts and permissions
-
-.
+Windows service accounts and permissions.
 
 Even though SQL Server on Linux runs under the
 

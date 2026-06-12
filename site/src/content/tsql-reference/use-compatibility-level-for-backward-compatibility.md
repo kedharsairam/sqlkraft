@@ -49,9 +49,7 @@ For more information, including the recommended workflow for upgrading database
 
 compatibility level, see
 
-## Best Practices for upgrading database compatibility level
-
-.
+## Best Practices for upgrading database compatibility level.
 
 functionality introduced in a given SQL Server version is
 
@@ -71,9 +69,7 @@ compatibility level to 110 won't restore the discontinued hint. For more informa
 
 discontinued functionality, see
 
-Discontinued Database Engine functionality in SQL Server
-
-.
+Discontinued Database Engine functionality in SQL Server.
 
 introduced in a given SQL Server version
 

@@ -42,28 +42,28 @@ select @name = inserted.name from inserted select @newname = deleted.name from d
 
 select @Salary = inserted.Salary from inserted select @newname = deleted.salary from deleted
 IF UPDATE(id)
-       BEGIN
-              SET @id = @id
-       END
+ BEGIN
+ SET @id = @id
+ END
 
 IF UPDATE(name)
-       BEGIN
-              SET @Name = @name
-       END
+ BEGIN
+ SET @Name = @name
+ END
 IF UPDATE(salary)
-       BEGIN
-              SET @salary = @salary
-       END
+ BEGIN
+ SET @salary = @salary
+ END
 
  update tableb set ID = @id ,name= @name,salary = @salary where id = @idnew end
 
 --Final Step:insert,delete and update the data in table a and see the same is there or not in table b insert into tablea values (1,'harsha','100') insert into tablea values (2,'harsha','200') insert into tablea values (3,'harsha','300')
 
-select  * from tableA go select * from tableb
+select * from tableA go select * from tableb
 
 delete from tablea where id = 2
 
-update tablea set ID = 10 where id = 1 update tablea set name ='super'  where id = 3 update tablea set Salary=3000 where id = 3
+update tablea set ID = 10 where id = 1 update tablea set name ='super' where id = 3 update tablea set Salary=3000 where id = 3
 
 --Clean Up drop table tableA drop table tableb
 

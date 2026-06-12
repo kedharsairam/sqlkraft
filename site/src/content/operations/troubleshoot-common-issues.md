@@ -55,17 +55,13 @@ If you encounter issues with the Arc agent, such as an unhealthy extension state
 
 disconnected SQL Server instance, use the following extension troubleshooting guide:
 
-Troubleshoot Azure extension for SQL Server
-
-.
+Troubleshoot Azure extension for SQL Server.
 
 ７
 
 Note
 
-You can provide feedback about your migration experience
-
-.
+You can provide feedback about your migration experience.
 
 ```cmd
 To enable migration and monitoring capabilities,

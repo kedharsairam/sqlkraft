@@ -2,7 +2,7 @@
 name: "sys.sp_addsubscription"
 title: "sp_addsubscription"
 category: "general"
-description: "Adds a subscription to a publication and sets the Subscriber status. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions"
+description: "Adds a subscription to a publication and sets the Subscriber status. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -111,9 +111,7 @@ syntax: |
 
 ## Description
 
-Adds a subscription to a publication and sets the Subscriber status. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions
-
-## Syntax
+Adds a subscription to a publication and sets the Subscriber status. This stored procedure is executed at the Publisher on the publication database. ## Syntax
 
 ```sql
 sp_addsubscription
@@ -221,7 +219,7 @@ N
 
 ## Permissions
 
-The implemented security mode. @security_mode is , with a default of . specifies SQL Server authentication. specifies Windows authentication. This parameter is deprecated and is provided for backward-compatibility only. Setting @encrypted_password to any value but results in an error. Specifies a non-SQL Server Publisher. @publisher is , with a default of . @publisher shouldn't be used when publishing from a SQL Server Publisher. (success) or (failure). is used in snapshot replication, transactional replication, and merge replication. isn't required when the Subscriber only has anonymous subscriptions to merge publications. writes to the MSsubscriber_info table in the database. ７ Note This parameter is deprecated and is maintained for backward compatibility of scripts. The property is now specified on a per-subscription basis when executing . When a value is specified, it's used as a default when creating subscriptions at this Subscriber and a warning message is returned.
+The implemented security mode. @security_mode is , with a default of. specifies SQL Server authentication. specifies Windows authentication. This parameter is deprecated and is provided for backward-compatibility only. Setting @encrypted_password to any value but results in an error. Specifies a non-SQL Server Publisher. @publisher is , with a default of. @publisher shouldn't be used when publishing from a SQL Server Publisher. (success) or (failure). is used in snapshot replication, transactional replication, and merge replication. isn't required when the Subscriber only has anonymous subscriptions to merge publications. writes to the MSsubscriber_info table in the database. ７ Note This parameter is deprecated and is maintained for backward compatibility of scripts. The property is now specified on a per-subscription basis when executing. When a value is specified, it's used as a default when creating subscriptions at this Subscriber and a warning message is returned.
 
 ## Examples
 

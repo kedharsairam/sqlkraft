@@ -169,9 +169,7 @@ In fact, it can result in more data lost than if a user were to restore the data
 
 known good backup. Microsoft always recommends a user restore from the last known good
 
-backup as the primary method to recover from errors reported by
-
-.
+backup as the primary method to recover from errors reported by.
 
 ７
 

@@ -2,12 +2,10 @@
 name: "Object identification and name resolution"
 title: "Object identification and name resolution"
 category: "operators"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -19,9 +17,7 @@ objects.
 
 All metadata functions are
 
-nondeterministic
-
-. They don't always return the same results every
+nondeterministic. They don't always return the same results every
 
 time they're called, even with the same set of input values.
 

@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,22 +37,18 @@ using SQL Server Profiler.
 
 menu, point to
 
-, and then select
+, and then select.
 
-.
-
-3. Type a name or select one from the list. Select
-
-.
+3. Type a name or select one from the list. Select.
 
 If you select an existing template file, you're asked if you want to overwrite the file. You can
 
 only select a user-defined template. Predefined system trace templates can't be overwritten.
 
-SQL Server Profiler templates and permissions
+Profiler templates and permissions
 
 Create a trace template (SQL Server Profiler)
 
 Modify trace templates
 
-SQL Server Profiler
+Profiler

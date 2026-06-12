@@ -31,8 +31,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 After the mirror database is prepared (see
@@ -49,9 +47,7 @@ server instances must be separate server instances, which should be on separate 
 
 Prepare a Mirror Database for
 
-Mirroring (SQL Server)
-
-.
+Mirroring (SQL Server).
 
 2. Set up security on each server instance.
 
@@ -91,9 +87,7 @@ edition of SQL Server as the principal server instance. Database mirroring is no
 
 in every edition of Microsoft SQL Server. For a list of features that are supported by the
 
-editions of SQL Server, see
-
-. Also,
+editions of SQL Server, see. Also,
 
 we strongly recommend that they run on comparable systems that can handle identical
 

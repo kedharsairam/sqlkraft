@@ -64,17 +64,13 @@ and
 
 columns for each record, which refer to the currently executing
 
-statement of a currently executing batch or persisted object. For more information, see
-
-. The
+statement of a currently executing batch or persisted object. For more information, see. The
 
 DMV also contains
 
 these columns for each record, which refer to the position of a statement within a batch or
 
-persisted object. For more information, see
-
-.
+persisted object. For more information, see.
 
 The actual Transact-SQL text of a batch is stored in a separate memory space from the plan
 
@@ -196,10 +192,10 @@ ON qs.plan_handle = cp.plan_handle
 WHERE text
 LIKE
 '%usp_SalesByCustomer%'
-GO memory_object_address    objtype   refcounts   usecounts   query_plan_hash query_hash
----------------------   -------  ---------  ---------  ------------------ ----------
+GO memory_object_address objtype refcounts usecounts query_plan_hash query_hash
+--------------------- ------- --------- --------- ------------------ ----------
 --------
-0x000001CC6C534060        Proc      2           1           0x3B4303441A1D7E6D
+0x000001CC6C534060 Proc 2 1 0x3B4303441A1D7E6D
 0xA05D5197DA1EAC2D plan_handle
 ------------------------------------------------------------------------------------
 ------
@@ -210,10 +206,10 @@ GO memory_object_address    objtype   refcounts   usecounts   query_plan_hash qu
 0x0300130095555D02C864C10061AB000001000000000000000000000000000000000000000000000000
 000000
 EXEC usp_SalesByCustomer 8
-GO memory_object_address    objtype   refcounts   usecounts   query_plan_hash query_hash
----------------------   -------  ---------  ---------  ------------------ ----------
+GO memory_object_address objtype refcounts usecounts query_plan_hash query_hash
+--------------------- ------- --------- --------- ------------------ ----------
 --------
-0x000001CC6C534060        Proc      2           2           0x3B4303441A1D7E6D
+0x000001CC6C534060 Proc 2 2 0x3B4303441A1D7E6D
 ```
 
 `usecounts`
@@ -238,12 +234,12 @@ ANSI_DEFAULTS
 OFF
 GO
 EXEC usp_SalesByCustomer 8
-GO memory_object_address    objtype   refcounts   usecounts   query_plan_hash query_hash
----------------------   -------  ---------  ---------  ------------------ ----------
+GO memory_object_address objtype refcounts usecounts query_plan_hash query_hash
+--------------------- ------- --------- --------- ------------------ ----------
 --------
-0x000001CD01DEC060        Proc      2           1           0x3B4303441A1D7E6D
+0x000001CD01DEC060 Proc 2 1 0x3B4303441A1D7E6D
 0xA05D5197DA1EAC2D
-0x000001CC6C534060        Proc      2           2           0x3B4303441A1D7E6D
+0x000001CC6C534060 Proc 2 2 0x3B4303441A1D7E6D
 0xA05D5197DA1EAC2D plan_handle
 ------------------------------------------------------------------------------------
 ------

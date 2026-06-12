@@ -33,17 +33,13 @@ Verify that the databases are online and updateable. Review
 
 Verify state of user
 
-databases
-
-.
+databases.
 
 Check the error logs. The error log might show Microsoft SQL Server error 945:
 
 To resolve, follow the steps at
 
-MSSQLSERVER_945
-
-.
+MSSQLSERVER_945.
 
 Currently
 

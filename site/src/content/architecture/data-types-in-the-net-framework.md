@@ -25,7 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server data types in the .NET
+data types in the.NET
 
 Article
 
@@ -33,17 +33,15 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 The
 
-library is part of the base class library of the .NET Framework. It provides data
+library is part of the base class library of the.NET Framework. It provides data
 
 types with the same semantics and precision as data types found in the SQL Server database.
 
-This article describes the new semantics to .NET Framework programmers, and introduces the
+This article describes the new semantics to.NET Framework programmers, and introduces the
 
 types implemented in the
 
@@ -81,7 +79,7 @@ Map CLR parameter data
 
 Shows data type mappings between SQL Server, CLR integration,
 
-and the .NET Framework.
+and the.NET Framework.
 
 ﾉ
 

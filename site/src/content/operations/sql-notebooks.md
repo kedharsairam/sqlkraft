@@ -61,9 +61,7 @@ Combine SQL cells with other language kernels (such as Python) in the same noteb
 
 installing the
 
-Jupyter extension
-
-.
+Jupyter extension.
 
 
 
@@ -75,6 +73,5 @@ community at
 
 to share ideas or report issues.
 
-```cmd
-.ipynb
+```cmd.ipynb
 ```

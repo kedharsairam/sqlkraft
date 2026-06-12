@@ -16,17 +16,13 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns the sequence of element nodes with xs:ID values that match the values of one or more
 
 of the xs:IDREF values supplied in
 
-$arg
-
-.
+$arg.
 
 $arg
 

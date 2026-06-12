@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 06/26/2025
 
-Applies to:
-
 SQL Server
 
 In Always On availability groups, the
@@ -101,9 +99,7 @@ state of every database on this secondary replica as
 
 and the replica
 
-state as
-
-. When the secondary replica reconnects with the primary replica,
+state as. When the secondary replica reconnects with the primary replica,
 
 they resume synchronous-commit mode.
 

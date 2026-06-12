@@ -8,9 +8,7 @@ pubDate: 2026-05-29
 
 For more information, see
 
-Table Hints (Transact-SQL)
-
-.
+Table Hints (Transact-SQL).
 
 The SQL Server query processor optimizes the performance of distributed partitioned views.
 
@@ -18,7 +16,7 @@ The most important aspect of distributed partitioned view performance is minimiz
 
 amount of data transferred between member servers.
 
-SQL Server builds intelligent, dynamic plans that make efficient use of distributed queries to
+builds intelligent, dynamic plans that make efficient use of distributed queries to
 
 access data from remote member tables:
 

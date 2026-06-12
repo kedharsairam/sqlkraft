@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 XQuery path expressions locate nodes, such as element, attribute, and text nodes, in a

@@ -27,8 +27,6 @@ pubDate: 2025-12-01
 
 07/03/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
@@ -37,9 +35,7 @@ Before you upgrade an availability group, review the patterns and practices at
 
 Upgrade
 
-availability group replicas
-
-.
+availability group replicas.
 
 The following sections explain how to perform a rolling upgrade with SQL Server instances on
 
@@ -49,13 +45,9 @@ When availability group replicas are on instances of SQL Server in Linux, the cl
 
 availability group is either
 
-or
+or. An availability group that is managed by a cluster
 
-. An availability group that is managed by a cluster
-
-manager besides Windows Server Failover Cluster (WSFC) is
-
-. Pacemaker with
+manager besides Windows Server Failover Cluster (WSFC) is. Pacemaker with
 
 Corosync is an example of an external cluster manager. An availability group with no cluster
 
@@ -65,9 +57,7 @@ The upgrade steps outlined here are specific for availability
 
 groups of cluster type
 
-or
-
-.
+or.
 
 The order in which you upgrade instances depends on if their role is secondary and whether or
 

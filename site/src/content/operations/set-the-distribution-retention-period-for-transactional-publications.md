@@ -33,8 +33,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -55,9 +53,7 @@ more information about accessing this dialog box, see
 
 View and Modify Distributor and
 
-Publisher Properties
-
-.
+Publisher Properties.
 
 1. On the
 
@@ -77,9 +73,7 @@ specify the maximum distribution retention period, enter a value in the
 
 box.
 
-3. Select
-
-.
+3. Select.
 
 Configure Distribution
 

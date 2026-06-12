@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -34,7 +32,7 @@ Deploying, or publishing, a registered data-tier application (DAC) from a DAC pa
 
 existing instance of the database engine or Azure SQL Database is available in a wizard from
 
-SQL Server Management Studio or Visual Studio SQL Server Data Tools. The publish action
+Management Studio or Visual Studio SQL Server Data Tools. The publish action
 
 incrementally updates a database schema to match the schema of a source
 
@@ -88,6 +86,5 @@ DATABASE statement, SQL Server Management Studio, or SQL Server PowerShell to ta
 
 database.
 
-```cmd
-.dacpac msdb master
+```cmd.dacpac msdb master
 ```

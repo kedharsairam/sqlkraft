@@ -29,9 +29,3 @@ Read committed snapshot isolation (RCSI)
 sys.dm_tran_locks (Transact-SQL)
 
 Accelerated database recovery
-
-Last updated on 11/24/2025
-
-Related content
-
-`READCOMMITTEDLOCK`

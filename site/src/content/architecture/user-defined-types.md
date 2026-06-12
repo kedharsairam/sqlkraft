@@ -27,13 +27,11 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
-SQL Server gives you the ability to create database objects that are programmed against an
+gives you the ability to create database objects that are programmed against an
 
-assembly created in the .NET Framework common language runtime (CLR). Database objects
+assembly created in the.NET Framework common language runtime (CLR). Database objects
 
 that can take advantage of the rich programming model provided by the CLR include triggers,
 
@@ -65,11 +63,11 @@ The process of developing UDTs in SQL Server consists of the following steps:
 
 UDTs are defined using any of the
 
-languages supported by the .NET Framework common language runtime (CLR) that
+languages supported by the.NET Framework common language runtime (CLR) that
 
-produce verifiable code. This includes C# and Visual Basic .NET. The data is exposed as
+produce verifiable code. This includes C# and Visual Basic.NET. The data is exposed as
 
-fields and properties of a .NET Framework class or structure, and behaviors are defined by
+fields and properties of a.NET Framework class or structure, and behaviors are defined by
 
 methods of the class or structure.
 

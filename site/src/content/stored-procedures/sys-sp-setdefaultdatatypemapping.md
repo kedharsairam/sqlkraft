@@ -2,7 +2,7 @@
 name: "sys.sp_setdefaultdatatypemapping"
 title: "sp_setdefaultdatatypemapping"
 category: "general"
-description: "Marks an existing data type mapping between SQL Server and a non-SQL Server database management system (DBMS) as the default. This stored procedure is executed at the Transact-SQL syntax conventions Identifies an existing data type mapping. , then the remaining parameters aren't required."
+description: "Marks an existing data type mapping between SQL Server and a non-SQL Server database management system (DBMS) as the default. This stored procedure is executed at the Identifies an existing data type mapping. , then the remaining parameters aren't required."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -46,7 +46,7 @@ syntax: |
 
 ## Description
 
-Marks an existing data type mapping between SQL Server and a non-SQL Server database management system (DBMS) as the default. This stored procedure is executed at the Transact-SQL syntax conventions Identifies an existing data type mapping. , then the remaining parameters aren't required.
+Marks an existing data type mapping between SQL Server and a non-SQL Server database management system (DBMS) as the default. This stored procedure is executed at the Identifies an existing data type mapping. , then the remaining parameters aren't required.
 
 ## Syntax
 
@@ -91,4 +91,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role can execute . Specify Data Type Mappings for an Oracle Publisher sp_getdefaultdatatypemapping (Transact-SQL) sp_helpdatatypemap (Transact-SQL) Related content sp_getdefaultdatatypemapping (Transact-SQL) sp_setdefaultdatatypemapping (Transact-SQL)
+Only members of the fixed server role can execute. Specify Data Type Mappings for an Oracle Publisher sp_getdefaultdatatypemapping (Transact-SQL) sp_helpdatatypemap (Transact-SQL)

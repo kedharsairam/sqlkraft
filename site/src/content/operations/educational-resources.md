@@ -45,7 +45,7 @@ Upgrade SQL Server
 
 Use the Query Tuning Assistant
 
-SQL Server workshops
+workshops
 
 ｆ
 

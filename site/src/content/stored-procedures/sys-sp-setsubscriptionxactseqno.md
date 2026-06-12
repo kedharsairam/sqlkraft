@@ -43,4 +43,4 @@ N
 
 ## Permissions
 
-Specify a value of for @xact_seqno to deliver all pending commands in the distribution database to the Subscriber. might fail if the Distribution Agent uses multi-subscription streams. When this error occurs, you must run the Distribution Agent with a single subscription stream. For more information, see Replication Distribution Agent . Only members of the fixed server role or fixed database role can execute .
+Specify a value of for @xact_seqno to deliver all pending commands in the distribution database to the Subscriber. might fail if the Distribution Agent uses multi-subscription streams. When this error occurs, you must run the Distribution Agent with a single subscription stream. For more information, see Replication Distribution Agent. Only members of the fixed server role or fixed database role can execute.

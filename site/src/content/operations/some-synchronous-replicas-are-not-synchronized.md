@@ -35,8 +35,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 : Synchronous Replicas Data Synchronization State

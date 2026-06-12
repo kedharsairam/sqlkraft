@@ -8,8 +8,7 @@ pubDate: 2026-05-29
 ---
 ## Syntax
 
-```sql
-.STmpointfromwkb ( )
+```sql.STmpointfromwkb ( )
 ```
 
 ## Return Type

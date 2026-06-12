@@ -29,29 +29,21 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-The common language runtime (CLR) is the heart of the .NET Framework and provides the
+The common language runtime (CLR) is the heart of the.NET Framework and provides the
 
-execution environment for all .NET Framework code. Code that runs within the CLR is referred
+execution environment for all.NET Framework code. Code that runs within the CLR is referred
 
 to as
 
-managed code
-
-. The CLR provides various functions and services required for program
+managed code. The CLR provides various functions and services required for program
 
 execution, including just-in-time (JIT) compilation, allocating and managing memory, enforcing
 
-type safety, exception handling, thread management, and security. For more information, see
-
-.NET Framework development guide
-
-.
+type safety, exception handling, thread management, and security. For more information, see.NET Framework development guide.
 
 With the CLR hosted in SQL Server (called CLR integration), you can author stored procedures,
 
@@ -65,7 +57,7 @@ In SQL Server 2016 (13.x) and earlier versions, Code Access Security (CAS) preve
 
 assemblies from performing certain operations.
 
-CLR uses Code Access Security (CAS) in the .NET Framework, which is no longer supported as a
+CLR uses Code Access Security (CAS) in the.NET Framework, which is no longer supported as a
 
 security boundary. A CLR assembly created with
 
@@ -73,7 +65,7 @@ might be able to
 
 access external system resources, call unmanaged code, and acquire sysadmin privileges. In
 
-SQL Server 2017 (14.x) and later versions, the
+2017 (14.x) and later versions, the
 
 option,
 
@@ -87,9 +79,7 @@ is enabled by default, and treats
 
 and
 
-assemblies as if they were marked
-
-. The
+assemblies as if they were marked. The
 
 option
 
@@ -105,17 +95,13 @@ database. SQL Server administrators can also add assemblies to a list of assembl
 
 Database Engine should trust. For more information, see
 
-sys.sp_add_trusted_assembly
-
-.
+sys.sp_add_trusted_assembly.
 
 ７
 
 Note
 
-For more information about using the new .NET with SQL Server Language Extensions, see
-
-.
+For more information about using the new.NET with SQL Server Language Extensions, see.
 
 ```sql
 PERMISSION_SET = SAFE sp_configure clr strict security

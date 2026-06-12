@@ -35,8 +35,6 @@ Article
 
 11/01/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -73,9 +71,7 @@ schema from this
 
 Microsoft Web
 
-site
-
-. The built-in components include the following:
+site. The built-in components include the following:
 
 XSD types
 

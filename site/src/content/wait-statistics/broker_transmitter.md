@@ -14,11 +14,11 @@ Occurs when the Service Broker transmitter is waiting to send messages across th
 
 ## Key Metrics
 
-| Metric    | Description          |
+| Metric | Description |
 | --------- | -------------------- |
 | Wait Type | `BROKER_TRANSMITTER` |
-| Category  | Baseline             |
-| Severity  | LOW                  |
+| Category | Baseline |
+| Severity | LOW |
 
 ## Troubleshooting
 
@@ -28,10 +28,10 @@ Use the following query to identify the top queries contributing to `BROKER_TRAN
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'BROKER_TRANSMITTER'
 ORDER BY wait_time_ms DESC;

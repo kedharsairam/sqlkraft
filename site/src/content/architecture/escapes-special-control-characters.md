@@ -23,9 +23,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -33,7 +31,7 @@ Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics (serverless SQL pool only)
+(serverless SQL pool only)
 
 analytics endpoint in Microsoft Fabric
 
@@ -55,9 +53,7 @@ This article describes the built-in support for JSON in Microsoft SQL Server. Fo
 
 information about escaping and encoding in JSON, see Section 2.5 of the
 
-JSON RFC
-
-.
+JSON RFC.
 
 If the source data contains special characters, the
 

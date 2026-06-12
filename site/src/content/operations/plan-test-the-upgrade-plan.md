@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 06/16/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -35,13 +33,13 @@ required.
 
 Before upgrading the Database Engine, review:
 
-SQL Server 2022 release notes
+2022 release notes
 
-SQL Server 2019 release notes
+2019 release notes
 
-SQL Server 2017 release notes
+2017 release notes
 
-SQL Server 2016 release notes
+2016 release notes
 
 Discontinued Database Engine functionality in SQL Server
 
@@ -61,9 +59,7 @@ upgrading from a 32-bit version of SQL Server. For a decision tree, see
 
 Choose a Database
 
-Engine upgrade method
-
-.
+Engine upgrade method.
 
 Review the hardware and software requirements
 
@@ -71,9 +67,7 @@ to for installing SQL Server. These requirements can be found at:
 
 Hardware and software
 
-requirements for SQL Server 2016 and SQL Server 2017
-
-. A part of any upgrade planning
+requirements for SQL Server 2016 and SQL Server 2017. A part of any upgrade planning
 
 cycle is to consider upgrading hardware and the operating system. Newer hardware is
 

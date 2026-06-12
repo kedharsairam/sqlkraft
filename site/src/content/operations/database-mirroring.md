@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/02/2025
 
-Applies to:
-
 SQL Server
 
 Database mirroring
@@ -73,9 +71,7 @@ new development work, and plan to modify applications that currently use this fe
 
 Use Always On availability groups instead. Database Mirroring in SQL Server is a distinct
 
-technology from
-
-.
+technology from.
 
 ）
 
@@ -87,6 +83,4 @@ recommendations for configuring partner servers, and recommendations for deployi
 
 database mirroring, see
 
-Prerequisites, Restrictions, and Recommendations for Database
-
-.
+Prerequisites, Restrictions, and Recommendations for Database.

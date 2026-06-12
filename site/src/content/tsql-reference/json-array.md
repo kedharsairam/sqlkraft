@@ -19,19 +19,13 @@ SCALAR value at top level.
 
 The following example returns 1 since the input is a valid JSON value -
 
-true
-
-.
+true.
 
 The following example returns 0 since the input is an invalid JSON value.
 
 The following example returns 1 since the input is a valid JSON scalar according to RFC 8259.
 
 JSON data in SQL Server
-
-Last updated on 11/18/2025
-
-Related content
 
 ### nvarchar(max)
 

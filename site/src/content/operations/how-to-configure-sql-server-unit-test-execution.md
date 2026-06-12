@@ -31,17 +31,13 @@ unit tests (one set for each test project) that are configured to run differentl
 
 These settings control how your test connects to the database that you test, how you deploy a
 
-schema from a database project to that database:
-
-. You use this setting to specify the connection strings that are
+schema from a database project to that database:. You use this setting to specify the connection strings that are
 
 used to connect to the database that you're testing. For more information, see
 
 Specify
 
-Connection Strings
-
-. A database project is an offline representation of your database.
+Connection Strings. A database project is an offline representation of your database.
 
 The database project represents the structure of your database objects but contains no
 
@@ -53,9 +49,7 @@ are copied from your database project into the database on which you run tests. 
 
 more information about schema deployment, see
 
-Deploy a Database Schema
-
-.
+Deploy a Database Schema.
 
 ７
 
@@ -65,6 +59,4 @@ Tests don't run in the solution folder but in a separate folder on the local har
 
 Although you can configure aspects of test deployment, you typically don't need to
 
-configure them for unit tests. For more information about test deployment, see
-
-.
+configure them for unit tests. For more information about test deployment, see.

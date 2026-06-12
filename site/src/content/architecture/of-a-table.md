@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -51,17 +49,13 @@ Estimate the size of a heap
 
 or
 
-Estimate the size of a clustered index
-
-.
+Estimate the size of a clustered index.
 
 2. For each nonclustered index, calculate the space required for it by following the
 
 instructions in
 
-Estimate the size of a nonclustered index
-
-.
+Estimate the size of a nonclustered index.
 
 3. Add the values calculated in steps 1 and 2.
 
@@ -72,5 +66,3 @@ Estimate the size of a heap
 Estimate the size of a clustered index
 
 Estimate the size of a nonclustered index
-
-Last updated on 11/18/2025

@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -43,9 +41,7 @@ The examples in this article show how OPENXML is used to create a rowset view of
 
 document. For information about the syntax of OPENXML, see
 
-OPENXML (Transact-SQL)
-
-. The
+OPENXML (Transact-SQL). The
 
 examples show all aspects of OPENXML, but don't specify metaproperties in OPENXML. For
 
@@ -53,9 +49,7 @@ more information about how to specify metaproperties in OPENXML, see
 
 Specify
 
-Metaproperties in OPENXML
-
-.
+Metaproperties in OPENXML.
 
 When retrieving the data,
 
@@ -73,9 +67,7 @@ used in the MSXML XPath implementation. For example, if the pattern ends in an e
 
 attribute, a row is created for each element or attribute node that is selected by
 
-rowpattern
-
-.
+rowpattern.
 
 The
 
@@ -103,9 +95,7 @@ ColPattern
 
 is specified in
 
-SchemaDeclaration
-
-. The specified
+SchemaDeclaration. The specified
 
 ColPattern
 
@@ -151,9 +141,7 @@ and indicates attribute-centric mapping. As a result,
 
 the XML attributes map to the columns in the rowset defined in
 
-SchemaDeclaration
-
-.
+SchemaDeclaration.
 
 In
 
@@ -171,9 +159,7 @@ ColPattern
 
 parameter isn't specified in
 
-SchemaDeclaration
-
-.
+SchemaDeclaration.
 
 ```sql
 <Customer>

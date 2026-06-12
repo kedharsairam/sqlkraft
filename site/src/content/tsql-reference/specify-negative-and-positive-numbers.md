@@ -2,12 +2,12 @@
 name: "Specify negative and positive numbers"
 title: "Specify negative and positive numbers"
 category: "operators"
-description: "SQL Server doesn't enforce any kind of grouping rules such as inserting a comma ("
+description: "doesn't enforce any kind of grouping rules such as inserting a comma ("
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
 
-SQL Server doesn't enforce any kind of grouping rules such as inserting a comma (
+doesn't enforce any kind of grouping rules such as inserting a comma (
 
 ) every
 

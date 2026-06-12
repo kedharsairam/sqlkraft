@@ -2,7 +2,7 @@
 name: "sys.sp_help_spatial_geography_index"
 title: "sp_help_spatial_geography_index"
 category: "general"
-description: "Returns the names and values for a specified set of properties about a The result is returned in a table format. You can choose to return a core set of properties or all Transact-SQL syntax conventions Spatial index stored procedures - arguments and properties role to access the procedure. Requires READ ACCESS permission on the server and the object. This example returns only the core properties"
+description: "Returns the names and values for a specified set of properties about a The result is returned in a table format. You can choose to return a core set of properties or all Spatial index stored procedures - arguments and properties role to access the procedure. Requires READ ACCESS permission on the server and the object. This example returns only the core properties"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_help_spatial_geography_index"
@@ -10,7 +10,7 @@ syntax: "sp_help_spatial_geography_index"
 
 ## Description
 
-Returns the names and values for a specified set of properties about a The result is returned in a table format. You can choose to return a core set of properties or all Transact-SQL syntax conventions Spatial index stored procedures - arguments and properties role to access the procedure. Requires READ ACCESS permission on the server and the object. . This example returns only the core properties of the specified index.
+Returns the names and values for a specified set of properties about a The result is returned in a table format. You can choose to return a core set of properties or all Spatial index stored procedures - arguments and properties role to access the procedure. Requires READ ACCESS permission on the server and the object. This example returns only the core properties of the specified index.
 
 ## Syntax
 

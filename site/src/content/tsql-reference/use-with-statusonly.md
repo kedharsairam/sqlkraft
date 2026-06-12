@@ -17,9 +17,7 @@ to use this option. For more information, see
 
 distributed
 
-transactions
-
-.
+transactions.
 
 is commonly used to end a process that is blocking other important processes with locks.
 
@@ -61,9 +59,7 @@ column in the
 
 result set for that
 
-session ID indicates
-
-.
+session ID indicates.
 
 When a particular connection has a lock on a database resource and blocks the progress of
 
@@ -73,9 +69,7 @@ column of
 
 or the
 
-column returned by
-
-.
+column returned by.
 
 The
 
@@ -89,9 +83,7 @@ transactions, see the "Two-Phase Commit" section in
 
 Use Marked Transactions to Recover
 
-Related Databases Consistently
-
-.
+Related Databases Consistently.
 
 ### sysadmin
 

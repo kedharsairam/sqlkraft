@@ -17,9 +17,7 @@ use the MAXDOP query hint. For more information, see
 
 Configure the max degree of
 
-parallelism Server Configuration Option
-
-.
+parallelism Server Configuration Option.
 
 For the specified table,
 
@@ -75,9 +73,7 @@ Note
 
 To perform
 
-on every table in the database, use
-
-.
+on every table in the database, use.
 
 ```sql
 DBCC CHECKTABLE

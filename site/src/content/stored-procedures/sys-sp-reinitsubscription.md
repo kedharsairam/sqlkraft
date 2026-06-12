@@ -2,7 +2,7 @@
 name: "sys.sp_reinitsubscription"
 title: "sp_reinitsubscription"
 category: "general"
-description: "Marks the subscription for reinitialization. This stored procedure is executed at the Publisher Transact-SQL syntax conventions ."
+description: "Marks the subscription for reinitialization. This stored procedure is executed at the Publisher ."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -34,7 +34,7 @@ syntax: |
 
 ## Description
 
-Marks the subscription for reinitialization. This stored procedure is executed at the Publisher Transact-SQL syntax conventions . Otherwise, the stored procedure skips the publication and
+Marks the subscription for reinitialization. This stored procedure is executed at the Publisher.
 
 ## Syntax
 
@@ -67,8 +67,7 @@ N
 
 ## Permissions
 
-Only members of the fixed server role, members of the fixed database role, or the creator of the subscription can execute . Reinitialize a Subscription Reinitialize Subscriptions Replication stored procedures (Transact-SQL) Related content
-
+Only members of the fixed server role, members of the fixed database role, or the creator of the subscription can execute. Reinitialize a Subscription Reinitialize Subscriptions Replication stored procedures (Transact-SQL)
 ## Examples
 
 ### Example 1

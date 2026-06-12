@@ -41,7 +41,7 @@ syntax: |
 
 ## Description
 
-Creates a schedule for a SQL Server Agent job. Transact-SQL syntax conventions , most, but not all SQL Server Agent features are
+Creates a schedule for a SQL Server Agent job.
 
 ## Syntax
 

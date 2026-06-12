@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article helps you prepare your environment for a
@@ -33,7 +31,7 @@ Managed Instance link migration
 
 of your
 
-SQL Server instance enabled by Azure Arc to
+instance enabled by Azure Arc to
 
 Azure SQL Managed Instance
 
@@ -49,9 +47,7 @@ portal, you need the following prerequisites:
 
 An active Azure subscription. If you don't have one,
 
-create a free account
-
-.
+create a free account.
 
 A
 
@@ -69,23 +65,17 @@ of the
 
 Azure extension for SQL Server. To upgrade your extension, see
 
-Upgrade the extension
-
-.
+Upgrade the extension.
 
 ７
 
 Note
 
-You can provide feedback about your migration experience
-
-.
+You can provide feedback about your migration experience.
 
 Migrate up to 10 databases at a time starting with Azure Extension for SQL Server
 
-version
-
-.
+version.
 
 ```cmd
 1.1.3348.364

@@ -17,7 +17,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server docs navigation guide
+docs navigation guide
 
 This article provides some tips and tricks for navigating the SQL Server technical
 
@@ -45,9 +45,7 @@ options to do so. You can either create a PDF wherever you're in the SQL Server 
 
 documentation, or you can download the offline content using
 
-SQL Server offline Help Viewer
-
-.
+offline Help Viewer.
 
 If you'd like to create a PDF, select the
 

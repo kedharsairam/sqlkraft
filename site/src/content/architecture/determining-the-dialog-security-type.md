@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -91,13 +89,13 @@ Anonymous security
 
 Dialog fails
 
-SQL Server doesn't have the information required to provide the requested security.
+doesn't have the information required to provide the requested security.
 
 Service Broker ends the conversation and puts an error message on the queue for the
 
 initiating service.
 
-SQL Server doesn't provide dialog security for the dialog. Operations on behalf of the
+doesn't provide dialog security for the dialog. Operations on behalf of the
 
 initiating service run as
 

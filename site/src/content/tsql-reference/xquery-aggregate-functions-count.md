@@ -16,15 +16,11 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns the number of items that are contained in the sequence specified by
 
-$arg
-
-.
+$arg.
 
 $arg
 

@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -43,7 +41,7 @@ SQL database in Microsoft Fabric
 
 This article describes how to delete table columns in SQL Server using
 
-SQL Server Management
+Management
 
 Studio (SSMS)
 

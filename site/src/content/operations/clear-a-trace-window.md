@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -37,12 +35,10 @@ Server Profiler.
 
 2. On the
 
-menu, select
-
-.
+menu, select.
 
 The contents of the trace window are removed. If the trace file or table has been saved,
 
 the contents of the file or table remains unchanged.
 
-SQL Server Profiler
+Profiler

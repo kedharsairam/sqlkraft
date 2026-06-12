@@ -15,7 +15,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server enabled by Azure Arc in US
+enabled by Azure Arc in US
 
 This article describes features and limitations currently available for SQL Server enabled by
 
@@ -51,9 +51,7 @@ or later.
 
 The latest updates are available in the
 
-Release notes - SQL Server enabled by Azure Arc
-
-.
+Release notes - SQL Server enabled by Azure Arc.
 
 To onboard your SQL Server, complete the following steps from the Azure (US Gov) portal.
 

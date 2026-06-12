@@ -2,12 +2,10 @@
 name: "Transaction control syntax"
 title: "Transaction control syntax"
 category: "transactions"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "transactions"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -27,23 +25,17 @@ transaction encounters errors and must be canceled or rolled back, then all of t
 
 modifications are erased.
 
-SQL Server operates in the following transaction modes:
+operates in the following transaction modes:
 
 ## Description
 
 Each individual statement is a transaction.
-
-Each transaction is explicitly started with the
-
-statement and
 
 explicitly ended with a
 
 or
 
 statement.
-
-A new transaction is implicitly started when the prior transaction completes, but each
 
 transaction is explicitly completed with a
 
@@ -59,17 +51,13 @@ batch-scoped transaction that isn't committed or rolled back when a batch comple
 
 is automatically rolled back by SQL Server.
 
-For special considerations related to data warehouse products, see
-
 Transactions in Fabric Data
 
 Warehouse
 
 or
 
-Transactions (Azure Synapse Analytics)
-
-.
+Transactions (Azure Synapse Analytics).
 
 The SQL Database Engine provides the following transaction statements:
 
@@ -87,24 +75,6 @@ SAVE TRANSACTION
 
 COMMIT WORK
 
-Expand table
-
 SET IMPLICIT_TRANSACTIONS (Transact-SQL)
 
 @@TRANCOUNT (Transact-SQL)
-
-Last updated on 11/18/2025
-
-Related content
-
-```sql
-BEGIN TRANSACTION
-```
-
-`COMMIT`
-
-`ROLLBACK`
-
-`COMMIT`
-
-`ROLLBACK`

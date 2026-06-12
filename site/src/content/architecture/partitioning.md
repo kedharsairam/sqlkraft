@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -51,15 +49,11 @@ with temporal tables.
 
 to the current table can be used to facilitate data loading and querying while
 
-is
-
-.
+is.
 
 isn't permitted while
 
-is
-
-.
+is.
 
 You can run
 

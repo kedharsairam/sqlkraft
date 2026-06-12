@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -47,9 +45,7 @@ index clear. For more information on UNIQUE constraints, see
 
 Unique Constraints and Check
 
-Constraints
-
-.
+Constraints.
 
 When you create a unique index, you can set an option to ignore duplicate keys. If this option
 
@@ -71,7 +67,7 @@ Limitations and Restrictions
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 

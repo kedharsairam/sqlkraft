@@ -49,7 +49,7 @@ syntax: |
 
 ## Description
 
-Creates a new distribution database and installs the Distributor schema. The distribution database stores procedures, schema, and metadata used in replication. This stored procedure is executed at the Distributor on the database in order to create the distribution database, and install the necessary tables and stored procedures required to enable the Transact-SQL syntax conventions The name of the distribution database to be created.
+Creates a new distribution database and installs the Distributor schema. The distribution database stores procedures, schema, and metadata used in replication. This stored procedure is executed at the Distributor on the database in order to create the distribution database, and install the necessary tables and stored procedures required to enable the The name of the distribution database to be created.
 
 ## Syntax
 
@@ -97,4 +97,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role can execute . Configure Publishing and Distribution sp_changedistributiondb (Transact-SQL) sp_dropdistributiondb (Transact-SQL) sp_helpdistributiondb (Transact-SQL) System stored procedures (Transact-SQL) Configure Distribution Related content
+Only members of the fixed server role can execute. Configure Publishing and Distribution sp_changedistributiondb (Transact-SQL) sp_dropdistributiondb (Transact-SQL) sp_helpdistributiondb (Transact-SQL) System stored procedures (Transact-SQL) Configure Distribution

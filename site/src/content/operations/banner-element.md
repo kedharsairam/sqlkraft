@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Identifies which utility generated the
@@ -72,12 +70,12 @@ Expand table
 ```cmd
 <Banner title
 =
-"..."
+"."
 product
 =
-"..."
+"."
 version
 =
-"..."
+"."
 />
 ```

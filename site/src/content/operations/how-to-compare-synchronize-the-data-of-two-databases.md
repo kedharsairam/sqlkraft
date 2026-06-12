@@ -35,9 +35,7 @@ source
 
 and the
 
-target
-
-.
+target.
 
 As the data is compared, a
 
@@ -55,23 +53,17 @@ After the comparison finishes, you can take other steps:
 
 You can view the differences between the two databases. For more information, see
 
-Viewing Data Differences
-
-.
+Viewing Data Differences.
 
 You can update all or part of the target to match the source. For more information, see
 
-Synchronizing Database Data
-
-.
+Synchronizing Database Data.
 
 For more information, see
 
 Compare and synchronize data in one or more tables with data in a
 
-reference database
-
-.
+reference database.
 
 1. From the main menu, go to
 
@@ -79,9 +71,7 @@ reference database
 
 SQL Server
 
->
-
-.
+>.
 
 ７
 
@@ -107,11 +97,7 @@ schema
 
 of two databases or of two versions of the same
 
-database. For more information, see
+database. For more information, see.
 
-.
-
-```cmd
-.dacpac
-.bacpac
+```cmd.dacpac.bacpac
 ```

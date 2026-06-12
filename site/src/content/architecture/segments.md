@@ -40,17 +40,13 @@ physically stored in a row-wise data format. This has been the traditional way t
 
 relational table data such as a clustered B+ tree index or a heap.
 
-A columnstore index also physically stores some rows in a rowstore format called a
-
-. The deltastore, also called delta rowgroups, is a holding place for rows that
+A columnstore index also physically stores some rows in a rowstore format called a. The deltastore, also called delta rowgroups, is a holding place for rows that
 
 are too few in number to qualify for compression into the columnstore. Each delta
 
 rowgroup is implemented as a clustered B+ tree index, which is a rowstore.
 
-The columnstore index groups rows into manageable units. Each of these units is called a
-
-. For best performance, the number of rows in a rowgroup is large enough to
+The columnstore index groups rows into manageable units. Each of these units is called a. For best performance, the number of rows in a rowgroup is large enough to
 
 improve the compression ratio and small enough to benefit from in memory operations.
 
@@ -82,9 +78,7 @@ Reports on rowgroup health and fragmentation in the dynamic management views
 
 (DMVs).
 
-The deltastore is comprised of one or more rowgroups called
-
-. Each delta
+The deltastore is comprised of one or more rowgroups called. Each delta
 
 rowgroup is a clustered B+ tree index that stores small bulk loads and inserts until the
 
@@ -94,9 +88,7 @@ automatically compresses a closed rowgroup into the columnstore.
 
 For more information about rowgroup statuses, see
 
-sys.dm_db_column_store_row_group_physical_stats
-
-.
+sys.dm_db_column_store_row_group_physical_stats.
 
 In SQL Server 2019 (15.x) and later versions, the tuple-mover is helped by a background merge
 
@@ -106,9 +98,7 @@ time as determined by an internal threshold, or merges compressed rowgroups from
 
 large number of rows has been deleted.
 
-Each column has some of its values in each rowgroup. These values are called
-
-. Each rowgroup contains one column segment for every column in the table. Each
+Each column has some of its values in each rowgroup. These values are called. Each rowgroup contains one column segment for every column in the table. Each
 
 column has one column segment in each rowgroup.
 
@@ -125,9 +115,9 @@ determines how to remove deleted rows and combine the compressed rowgroups. Afte
 merge, the index quality is improved.
 
 ```sql
-ALTER INDEX ... REORGANIZE
+ALTER INDEX. REORGANIZE
 ```
 
 ```sql
-ALTER INDEX ... REBUILD
+ALTER INDEX. REBUILD
 ```

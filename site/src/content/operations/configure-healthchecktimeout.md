@@ -27,13 +27,11 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 The HealthCheckTimeout setting is used to specify the length of time, in milliseconds, that the
 
-SQL Server resource DLL should wait for information returned by the
+resource DLL should wait for information returned by the
 
 sp_server_diagnostics
 
@@ -67,9 +65,7 @@ The default value for this property is 30,000 milliseconds (30 seconds). The min
 
 Requires ALTER SETTINGS and VIEW SERVER STATE permissions.
 
-1. Start an elevated Windows PowerShell via
-
-.
+1. Start an elevated Windows PowerShell via.
 
 2. Import the
 

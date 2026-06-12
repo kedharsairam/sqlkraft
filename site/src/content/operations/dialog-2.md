@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to add a database to an Always On availability group by using SQL
@@ -45,9 +43,7 @@ information, see
 
 Prerequisites, Restrictions, and Recommendations for Always On
 
-Availability Groups (SQL Server)
-
-.
+Availability Groups (SQL Server).
 
 Requires ALTER AVAILABILITY GROUP permission on the availability group, CONTROL
 
@@ -73,9 +69,7 @@ command. For more information, see
 
 Use the Add Database to Availability Group
 
-Wizard (SQL Server Management Studio)
-
-.
+Wizard (SQL Server Management Studio).
 
 To add one or more databases by specifying them in the
 

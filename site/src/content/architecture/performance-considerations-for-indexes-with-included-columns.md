@@ -40,9 +40,7 @@ To validate that the index covers the query, create the index, then
 
 display the estimated
 
-execution plan
-
-. If the execution plan shows an
+execution plan. If the execution plan shows an
 
 operator for the
 

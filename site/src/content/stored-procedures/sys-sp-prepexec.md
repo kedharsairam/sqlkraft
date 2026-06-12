@@ -2,7 +2,7 @@
 name: "sys.sp_prepexec"
 title: "sp_prepexec"
 category: "general"
-description: "Prepares and executes a parameterized Transact-SQL statement. Transact-SQL syntax conventions is a required parameter with an Identifies parameterized statements. The definition of variables is substituted for parameter markers in the statement. is a required parameter that calls for an value if the statement isn't parameterized."
+description: "Prepares and executes a parameterized Transact-SQL statement. is a required parameter with an Identifies parameterized statements. The definition of variables is substituted for parameter markers in the statement. is a required parameter that calls for an value if the statement isn't parameterized."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -15,7 +15,7 @@ syntax: |
 
 ## Description
 
-Prepares and executes a parameterized Transact-SQL statement. Transact-SQL syntax conventions is a required parameter with an Identifies parameterized statements. The definition of variables is substituted for parameter markers in the statement. is a required parameter that calls for an value if the statement isn't parameterized. Arguments for extended stored procedures must be entered in the specific order as
+Prepares and executes a parameterized Transact-SQL statement. is a required parameter with an Identifies parameterized statements. The definition of variables is substituted for parameter markers in the statement. is a required parameter that calls for an value if the statement isn't parameterized.
 
 ## Syntax
 
@@ -23,7 +23,7 @@ Prepares and executes a parameterized Transact-SQL statement. Transact-SQL synta
 sp_prepexec handle
 OUTPUT
 , params , stmt
-[ , bound param ] [ , ...n ]
+[ , bound param ] [ ,.n ]
 [ ; ]
 ```
 

@@ -2,12 +2,10 @@
 name: "Implicit and explicit conversion"
 title: "Implicit and explicit conversion"
 category: "operators"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -65,13 +63,9 @@ before the comparison proceeds.
 
 implicitly converts to
 
-date style
+date style.
 
-.
-
-implicitly converts to date style
-
-.
+implicitly converts to date style.
 
 Explicit conversions use the
 
@@ -103,9 +97,7 @@ if you want Transact-SQL program code to comply with ISO. Use
 
 instead of
 
-to take advantage of the style functionality in
-
-.
+to take advantage of the style functionality in.
 
 The following illustration shows all explicit and implicit data type conversions that are allowed
 
@@ -115,9 +107,7 @@ for SQL Server system-supplied data types. These include
 
 , and
 
-sql_variant
-
-. There is
+sql_variant. There is
 
 no implicit conversion on assignment from the
 
@@ -127,9 +117,7 @@ data type, but there is implicit
 
 conversion to
 
-sql_variant
-
-.
+sql_variant.
 
 While the previous chart illustrates all the explicit and implicit conversions that are allowed in
 
@@ -151,9 +139,7 @@ For comparison operators or other expressions, the resulting data type depends o
 
 rules of
 
-data type precedence
-
-.
+data type precedence.
 
 As an example, the following script defines a variable of type
 
@@ -171,9 +157,7 @@ is converted to a
 
 , so the
 
-statement returns the value
-
-.
+statement returns the value.
 
 The following example shows a similar script with an
 
@@ -209,9 +193,7 @@ can be converted to the integer value
 
 statement
 
-## returns the value
-
-. The
+## returns the value. The
 
 operator becomes addition rather than concatenation when the
 
@@ -241,9 +223,7 @@ is not supported. However, an
 
 can be
 
-explicitly or implicitly converted to
-
-.
+explicitly or implicitly converted to.
 
 The following articles describe the conversion behaviors exhibited by their corresponding data
 
@@ -339,7 +319,7 @@ Expand table
 
 #### String
 
-SQL Server data type
+data type
 
 ,
 
@@ -395,7 +375,7 @@ values.
 
 These are the conversions from Visual Basic data types to SQL Server data types.
 
-SQL Server data type
+data type
 
 ,
 
@@ -423,7 +403,7 @@ Expand table
 
 #### Visual Basic data type
 
-SQL Server data type
+data type
 
 One-dimensional
 
@@ -436,139 +416,3 @@ CAST and CONVERT (Transact-SQL)
 Data Types (Transact-SQL)
 
 COLLATE (Transact-SQL)
-
-Last updated on 11/18/2025
-
-Related content
-
-`GETDATE()`
-
-```sql
-0
-```
-
-`SYSDATETIME()`
-
-```sql
-21
-```
-
-`CAST`
-
-`CONVERT`
-
-`CAST`
-
-```sql
-$157.27
-```
-
-```sql
-'157.27'
-```
-
-`CAST`
-
-`CONVERT`
-
-`CONVERT`
-
-`CAST`
-
-`CONVERT`
-
-```sql
-CAST ( $157.27 AS VARCHAR(10) )
-```
-
-```sql
-1
-```
-
-`SELECT`
-
-```sql
-1 is a string.
-```
-
-`SELECT`
-
-```sql
-Msg 245, Level 16, State 1, Line 3
-Conversion failed when converting the varchar value '
-is not a string.' to data type int.
-```
-
-```sql
-@notastring + ' is not a string.'
-```
-
-```sql
-1
-```
-
-```sql
-1
-```
-
-`SELECT`
-
-```sql
-2
-```
-
-```sql
-+
-```
-
-```sql
-DECLARE
-@
-string
-VARCHAR (10);
-SET
-@
-string
-= 1;
-SELECT
-@
-string
-+
-' is a string.'
-DECLARE
-@notastring
-INT
-;
-SET
-@notastring =
-'1'
-;
-SELECT
-@notastring +
-' is not a string.'
-DECLARE
-@notastring
-INT
-;
-SET
-@notastring =
-'1'
-;
-SELECT
-@notastring +
-'1'
-```
-
-`Byte()`
-
-`NULL`
-
-`Byte()`
-
-```sql
-Byte( 0 to length 1)
-```
-
-`Byte()`
-
-`Byte()`

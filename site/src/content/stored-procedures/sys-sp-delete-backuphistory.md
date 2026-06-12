@@ -2,7 +2,7 @@
 name: "sys.sp_delete_backuphistory"
 title: "sp_delete_backuphistory"
 category: "general"
-description: "Reduces the size of the backup and restore history tables by deleting the entries for backup sets older than the specified date. More rows are added to the backup and restore history tables after each backup or restore operation is performed; therefore, we recommend that you Transact-SQL syntax conventions The oldest date retained in the backup and restore history tables."
+description: "Reduces the size of the backup and restore history tables by deleting the entries for backup sets older than the specified date. More rows are added to the backup and restore history tables after each backup or restore operation is performed; therefore, we recommend that you The oldest date retained in the backup and restore history tables."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_delete_backuphistory"
@@ -10,7 +10,7 @@ syntax: "sp_delete_backuphistory"
 
 ## Description
 
-Reduces the size of the backup and restore history tables by deleting the entries for backup sets older than the specified date. More rows are added to the backup and restore history tables after each backup or restore operation is performed; therefore, we recommend that you Transact-SQL syntax conventions The oldest date retained in the backup and restore history tables. The backup and restore history tables reside in the
+Reduces the size of the backup and restore history tables by deleting the entries for backup sets older than the specified date. More rows are added to the backup and restore history tables after each backup or restore operation is performed; therefore, we recommend that you The oldest date retained in the backup and restore history tables.
 
 ## Syntax
 

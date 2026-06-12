@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 When using Windows Authentication, if the server instances use different accounts, specify the

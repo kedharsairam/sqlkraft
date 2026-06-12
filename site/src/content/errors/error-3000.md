@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-1. Determine the port your SQL instance is running on, see Get the TCP port of the instance . 2. Try to connect to the named instance by using the port number appended to the server name in the format
+1. Determine the port your SQL instance is running on, see Get the TCP port of the instance. 2. Try to connect to the named instance by using the port number appended to the server name in the format
 
 ## Severity
 

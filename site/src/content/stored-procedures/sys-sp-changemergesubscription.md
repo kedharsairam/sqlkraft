@@ -33,7 +33,7 @@ syntax: |
 
 ## Description
 
-Changes selected properties of a merge push subscription. This stored procedure is executed at the Publisher on the publication database. The name of the publication to change. publication must already exist and must conform to the rules for identifiers. When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher and its remote Distributor
+Changes selected properties of a merge push subscription. This stored procedure is executed at the Publisher on the publication database.
 
 ## Syntax
 
@@ -65,4 +65,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . sp_addmergesubscription (Transact-SQL) sp_dropmergesubscription (Transact-SQL) sp_helpmergesubscription (Transact-SQL) System stored procedures (Transact-SQL) Related content Subscribe to Publications sp_changemergesubscription (Transact-SQL) sp_dropmergesubscription (Transact-SQL) sp_helpmergesubscription (Transact-SQL) sp_changemergesubscription (Transact-SQL) sp_dropmergesubscription (Transact-SQL) System stored procedures (Transact-SQL)
+Only members of the fixed server role or fixed database role can execute. sp_addmergesubscription (Transact-SQL) sp_dropmergesubscription (Transact-SQL) sp_helpmergesubscription (Transact-SQL) System stored procedures (Transact-SQL)

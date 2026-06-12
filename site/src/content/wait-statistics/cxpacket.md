@@ -15,11 +15,11 @@ Occurs when waiting for parallel query execution to complete. Caused by skewed p
 
 ## Key Metrics
 
-| Metric    | Description  |
+| Metric | Description |
 | --------- | ------------ |
-| Wait Type | `CXPACKET`   |
-| Category  | Top Consumer |
-| Severity  | HIGH         |
+| Wait Type | `CXPACKET` |
+| Category | Top Consumer |
+| Severity | HIGH |
 
 ## Troubleshooting
 
@@ -29,10 +29,10 @@ Use the following query to identify the top queries contributing to `CXPACKET` w
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'CXPACKET'
 ORDER BY wait_time_ms DESC;

@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -69,9 +67,7 @@ dialog box appears.
 
 4. Specify a path and filename in the
 
-dialog box. Select
-
-.
+dialog box. Select.
 
 Ensure that the SQL Server service has sufficient permissions to write to a file in the
 

@@ -21,7 +21,7 @@ and
 
 shared among all user sessions across the entire SQL Server instance.
 
-Azure SQL Database supports global temporary tables that are also stored in
+supports global temporary tables that are also stored in
 
 but are
 
@@ -45,9 +45,7 @@ Database and follow the same syntax and semantics that SQL Server uses. For more
 
 information, see
 
-Temporary tables
-
-.
+Temporary tables.
 
 Any user can create and access temporary objects.
 
@@ -55,25 +53,19 @@ Before creating a partitioned table by using CREATE TABLE, you must first create
 
 function to specify how the table becomes partitioned. A partition function is created by using
 
-CREATE PARTITION FUNCTION
-
-. Second, you must create a partition scheme to specify the
+CREATE PARTITION FUNCTION. Second, you must create a partition scheme to specify the
 
 filegroups to hold the partitions indicated by the partition function. A partition scheme is
 
 created by using
 
-CREATE PARTITION SCHEME
-
-. Placement of PRIMARY KEY or UNIQUE
+CREATE PARTITION SCHEME. Placement of PRIMARY KEY or UNIQUE
 
 constraints to separate filegroups can't be specified for partitioned tables. For more
 
 information, see
 
-Partitioned tables and indexes
-
-.
+Partitioned tables and indexes.
 
 A table can contain only one PRIMARY KEY constraint.
 

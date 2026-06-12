@@ -27,8 +27,7 @@ FULLTEXT
 
 ## Permissions
 
-Description Azure Blob Storage, a credential is configured with the access credentials to the storage location. When you drop or rebuild large indexes, or drop or truncate large tables, the Database Engine defers the actual page deallocations, and their associated locks, until after the transaction commits. Deferred drop operations don't release allocated space immediately. Therefore, the values returned by immediately after dropping or truncating a large object might not reflect the actual disk space available. For the database, shows the initial size. The values are used as a template for creation at startup of SQL Server. growth isn't reflected in this view. To get the current size of files, query instead. The minimum permissions that are required to see the corresponding row are , , or . Databases and Files Catalog Views (Transact-SQL) File States sys.databases (Transact-SQL) sys.database_files (Transact-SQL) Database Files and Filegroups Related content sys.database_files (Transact-SQL) sys.filegroups (Transact-SQL) sys.master_files (Transact-SQL) System stored procedures (Transact-SQL)
-
+Description Azure Blob Storage, a credential is configured with the access credentials to the storage location. When you drop or rebuild large indexes, or drop or truncate large tables, the Database Engine defers the actual page deallocations, and their associated locks, until after the transaction commits. Deferred drop operations don't release allocated space immediately. Therefore, the values returned by immediately after dropping or truncating a large object might not reflect the actual disk space available. For the database, shows the initial size. The values are used as a template for creation at startup of SQL Server. growth isn't reflected in this view. To get the current size of files, query instead. The minimum permissions that are required to see the corresponding row are , , or. Databases and Files Catalog Views (Transact-SQL) File States sys.databases (Transact-SQL) sys.database_files (Transact-SQL) Database Files and Filegroups
 ## Examples
 
 ### Example 1
@@ -104,9 +103,9 @@ IN (
 ,
 'LOG'
 );
-file_id  type_desc  name  BlobTier  AccountType  IsInferredTier  IsPageBlob
+file_id type_desc name BlobTier AccountType IsInferredTier IsPageBlob
 ------------------------------------------------------------------------------------
 --
-1     ROWS      data_0  P30  PremiumBlobStorage  0   1
-2     LOG       log     P30  PremiumBlobStorage  0   1 (2 rows affected)
+1 ROWS data_0 P30 PremiumBlobStorage 0 1
+2 LOG log P30 PremiumBlobStorage 0 1 (2 rows affected)
 ```

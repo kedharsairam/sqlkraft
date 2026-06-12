@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 This article describes how to configure log shipping in SQL Server by using SQL Server
@@ -59,27 +57,23 @@ fixed server role.
 
 Note
 
-SQL Server 2008 (10.0.x) Enterprise and later versions support backup compression. When
+2008 (10.0.x) Enterprise and later versions support backup compression. When
 
 creating a log shipping configuration, you can control the backup compression behavior
 
-of log backups. For more information, see
-
-.
+of log backups. For more information, see.
 
 ）
 
 Important
 
-SQL Server 2025 (17.x) uses
+2025 (17.x) uses
 
 as the default version for linked
 
 servers, which has a default
 
-value of
-
-. Changes to the linked
+value of. Changes to the linked
 
 server configuration might be required when adding a SQL Server 2025 (17.x)
 

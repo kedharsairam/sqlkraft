@@ -2,7 +2,7 @@
 name: "Control-of-Flow"
 title: "Control-of-Flow"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -13,15 +13,13 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
 The Transact-SQL control-of-flow language keywords are:
 
-BEGIN...END
+BEGIN.END
 
 RETURN
 
@@ -31,7 +29,7 @@ THROW
 
 CONTINUE
 
-TRY...CATCH
+TRY.CATCH
 
 GOTO
 
@@ -39,7 +37,7 @@ label
 
 WAITFOR
 
-IF...ELSE
+IF.ELSE
 
 WHILE
 

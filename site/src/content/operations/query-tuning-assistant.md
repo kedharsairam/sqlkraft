@@ -29,9 +29,7 @@ Article
 
 03/28/2025
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 When migrating from an older version of SQL Server to SQL Server 2014 (12.x) or later versions,
 
@@ -55,15 +53,11 @@ database option to the latest available.
 
 For more information on query optimizer changes introduced in SQL Server 2014 (12.x), see
 
-Cardinality Estimation (SQL Server)
-
-. For more information about compatibility levels and how
+Cardinality Estimation (SQL Server). For more information about compatibility levels and how
 
 they can affect upgrades, see
 
-Compatibility Levels and Database Engine Upgrades
-
-.
+Compatibility Levels and Database Engine Upgrades.
 
 This gating capability provided by the database compatibility level, in combination with Query
 
@@ -75,9 +69,7 @@ information on the recommended workflow for upgrading the compatibility level, s
 
 Change
 
-the database compatibility level and use the Query Store
-
-.
+the database compatibility level and use the Query Store.
 
 This control over upgrades was further improved with SQL Server 2017 (14.x) where
 
@@ -101,9 +93,7 @@ stability during the upgrade to newer SQL Server
 
 of
 
-Query Store Usage Scenarios
-
-. However, QTA
+Query Store Usage Scenarios. However, QTA
 
 doesn't roll back to a previously known good plan as seen in the last step of the recommended
 

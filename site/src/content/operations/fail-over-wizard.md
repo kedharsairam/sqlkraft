@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to perform a planned manual failover or forced manual failover
@@ -61,9 +59,7 @@ Before your first planned manual failover, see the "Before You Begin" section in
 
 Perform a
 
-Planned Manual Failover of an Availability Group (SQL Server)
-
-.
+Planned Manual Failover of an Availability Group (SQL Server).
 
 Before your first forced failover, see the "Before You Begin" and "Follow Up: Essential Tasks
 
@@ -71,9 +67,7 @@ After a Forced Failover" sections in
 
 Perform a Forced Manual Failover of an Availability Group
 
-(SQL Server)
-
-.
+(SQL Server).
 
 A failover command returns as soon as the target secondary replica has accepted the
 

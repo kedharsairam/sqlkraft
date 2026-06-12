@@ -39,8 +39,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Returns information about a parameter. This function supersedes the following functions:
@@ -57,9 +55,7 @@ srv_parammaxlen
 
 , and
 
-srv_paramdata
-
-.
+srv_paramdata.
 
 supports
 

@@ -27,8 +27,6 @@ Article
 
 10/23/2024
 
-Applies to:
-
 SQL Server
 
 You can monitor SQL Server enabled by Azure Arc by using the performance dashboard in the
@@ -49,9 +47,7 @@ To view metrics in the portal:
 
 2. Select
 
->
-
-.
+>.
 
 Monitoring is automatic, assuming that you meet all prerequisites.
 
@@ -59,12 +55,8 @@ Monitoring is automatic, assuming that you meet all prerequisites.
 
 Note
 
-As a preview feature, the technology presented in this article is subject to
+As a preview feature, the technology presented in this article is subject to.
 
-.
-
-The latest updates are available in the
-
-.
+The latest updates are available in the.
 
 

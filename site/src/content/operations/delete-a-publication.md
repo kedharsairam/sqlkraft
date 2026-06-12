@@ -29,8 +29,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,7 +37,7 @@ This topic describes how to delete a publication in SQL Server by using SQL Serv
 
 Management Studio, Transact-SQL, or Replication Management Objects (RMO).
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 
@@ -57,9 +55,7 @@ folder, and then expand the
 
 folder.
 
-3. Right-click the publication you want to delete, and then click
-
-.
+3. Right-click the publication you want to delete, and then click.
 
 Publications can be deleted programmatically using replication stored procedures. The stored
 

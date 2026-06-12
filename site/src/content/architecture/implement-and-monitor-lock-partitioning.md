@@ -22,9 +22,7 @@ multiple lock resources. Only object locks can be partitioned. Object locks that
 
 aren't partitioned. For more information, see
 
-sys.dm_tran_locks (Transact-SQL)
-
-.
+sys.dm_tran_locks (Transact-SQL).
 
 Locking tasks access internal resources, two of which are optimized by lock partitioning:
 

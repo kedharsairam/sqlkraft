@@ -23,15 +23,13 @@ This article describes how you can move resources to a new resource group or sub
 
 with SQL Server enabled by Azure Arc. The capability applies to both:
 
-SQL Server instances
+instances
 
 Databases
 
 Before you begin, review
 
-Known limitations
-
-.
+Known limitations.
 
 To complete this task, make sure that:
 
@@ -43,9 +41,7 @@ resource and all SQL Server instances are in the same resource
 
 group.
 
-The new subscription or resource group needs to meet all
-
-.
+The new subscription or resource group needs to meet all.
 
 In addition:
 
@@ -55,7 +51,7 @@ move.
 
 If best practices assessment is enabled, you must disable it before the move.
 
-SQL Server license and SQL Server extended security update license aren't moved
+license and SQL Server extended security update license aren't moved
 
 automatically.
 

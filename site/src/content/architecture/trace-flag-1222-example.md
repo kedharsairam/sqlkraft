@@ -16,7 +16,7 @@ Output
 
 ```sql
 Node:1
-RID: 6:1:20789:0               CleanCnt:3 Mode:X Flags: 0x2
+RID: 6:1:20789:0 CleanCnt:3 Mode:X Flags: 0x2
 Grant List 0:
 Owner:0x0315D6A0 Mode: X
 Flg:0x0 Ref:0 Life:02000000 SPID:55 ECID:0 XactLockInfo: 0x04D9E27C

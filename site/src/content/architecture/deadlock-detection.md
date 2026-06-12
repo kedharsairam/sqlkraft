@@ -12,9 +12,7 @@ somewhere on the other transactions partition, this causes a deadlock. This type
 
 can be avoided by setting
 
-to
-
-. However, this setting reduces
+to. However, this setting reduces
 
 concurrency by forcing large updates to a partition to wait for a table lock.
 

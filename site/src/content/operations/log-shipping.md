@@ -27,8 +27,6 @@ Article
 
 11/18/2022
 
-Applies to:
-
 SQL Server
 
 A given database can be mirrored or log shipped; it can also be simultaneously mirrored and
@@ -69,9 +67,7 @@ Note
 
 For introductions to these technologies, see
 
-and
-
-.
+and.
 
 ７
 

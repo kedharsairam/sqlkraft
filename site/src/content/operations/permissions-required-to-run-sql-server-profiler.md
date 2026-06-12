@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/05/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -35,9 +33,7 @@ granted the
 
 permission. For more information, see
 
-GRANT Server Permissions
-
-.
+GRANT Server Permissions.
 
 Query plans and query text, captured by SQL Trace as well as by other means, for
 
@@ -61,7 +57,7 @@ Showplan-related events to a location that uses the NTFS file system and restric
 
 to users who are authorized to view potentially sensitive information.
 
-SQL Server Profiler for Analysis Services workloads are supported.
+Profiler for Analysis Services workloads are supported.
 
 When you try to connect to an Azure SQL Database from SQL Server Profiler, it incorrectly
 
@@ -87,9 +83,7 @@ Use Extended Events instead. For more information on
 
 Quickstart: Extended Events
 
-and
-
-.
+and.
 
 ```cmd
 ALTER TRACE

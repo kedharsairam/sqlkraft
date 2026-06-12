@@ -29,8 +29,6 @@ Article
 
 09/28/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes the synchronous and asynchronous operating modes for database
@@ -75,6 +73,4 @@ use high-performance mode, and how to respond if the principal server fails.
 
 Note
 
-For an introduction to database mirroring, see
-
-.
+For an introduction to database mirroring, see.

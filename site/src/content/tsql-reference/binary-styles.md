@@ -43,17 +43,13 @@ data type, SQL Server insignificant white space is handled
 
 differently than in XML 1.0. For more information, see
 
-Create Instances of XML Data
-
-.
+Create Instances of XML Data.
 
 Preserve insignificant white space. This style setting sets the default
 
 handling to
 
-match the behavior of
-
-.
+match the behavior of.
 
 Enable limited internal DTD subset processing.
 

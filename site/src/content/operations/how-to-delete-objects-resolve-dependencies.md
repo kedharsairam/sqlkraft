@@ -25,7 +25,7 @@ pubDate: 2025-12-01
 
 When you rename or delete an object in
 
-SQL Server Object Explorer
+Object Explorer
 
 , SQL Server Data Tools
 
@@ -37,17 +37,13 @@ rename or drop the dependency as needed.
 
 1. Right-click a database in
 
-SQL Server Object Explorer
+Object Explorer
 
-, and select
-
-.
+, and select.
 
 2. Accept all the default settings in the
 
-dialog, and select
-
-.
+dialog, and select.
 
 1. Make sure that the
 
@@ -59,15 +55,11 @@ Transact-SQL Editor.
 
 node in
 
-SQL Server Object Explorer
-
-. Right-click the
+Object Explorer. Right-click the
 
 table
 
-and select
-
-.
+and select.
 
 3. Change the table name to
 
@@ -93,11 +85,9 @@ procedure.
 
 table in
 
-SQL Server Object Explorer
+Object Explorer
 
-again, and select
-
-. Table data is intact after the rename operation.
+again, and select. Table data is intact after the rename operation.
 
 ２
 

@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -73,17 +71,13 @@ The supported Full-Text languages and document types have changed in SQL Server 
 
 (17.x) on Linux. You must rebuild any existing indexes upgraded from SQL Server 2022
 
-(16.x). For more information, see
-
-.
+(16.x). For more information, see.
 
 ７
 
 Note
 
-Before you install SQL Server Full-Text Search, first
-
-. This step configures
+Before you install SQL Server Full-Text Search, first. This step configures
 
 the keys and repositories that you use when installing the
 

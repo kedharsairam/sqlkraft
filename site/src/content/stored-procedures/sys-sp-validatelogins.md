@@ -2,7 +2,7 @@
 name: "sys.sp_validatelogins"
 title: "sp_validatelogins"
 category: "general"
-description: "Reports information about Windows users and groups that are mapped to SQL Server principals but no longer exist in the Windows environment. Transact-SQL syntax conventions Windows security identifier (SID) of the Windows user or group."
+description: "Reports information about Windows users and groups that are mapped to SQL Server principals but no longer exist in the Windows environment. Windows security identifier (SID) of the Windows user or group."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -12,7 +12,7 @@ syntax: |
 
 ## Description
 
-Reports information about Windows users and groups that are mapped to SQL Server principals but no longer exist in the Windows environment. Transact-SQL syntax conventions Windows security identifier (SID) of the Windows user or group. Name of the Windows user or group. If the orphaned server-level principal owns a database user, the database user must be removed before the orphaned server principal can be removed. To remove a database user, use . If the server-level principal owns securables in the database, ownership of the securables must be transferred or they must be dropped. To transfer ownership of database securables, use ALTER AUTHORIZATION To remove mappings to Windows users and groups that no longer exist, use
+Reports information about Windows users and groups that are mapped to SQL Server principals but no longer exist in the Windows environment. Windows security identifier (SID) of the Windows user or group.
 
 ## Syntax
 
@@ -23,13 +23,9 @@ sp_validatelogins
 
 ## Remarks
 
-Applies to:
-
 Reports information about Windows users and groups that are mapped to SQL Server
 
 principals but no longer exist in the Windows environment.
-
-Transact-SQL syntax conventions
 
 (success) or
 
@@ -41,9 +37,7 @@ Name of the Windows user or group.
 
 If the orphaned server-level principal owns a database user, the database user must be
 
-removed before the orphaned server principal can be removed. To remove a database user, use
-
-. If the server-level principal owns securables in the database, ownership of the
+removed before the orphaned server principal can be removed. To remove a database user, use. If the server-level principal owns securables in the database, ownership of the
 
 securables must be transferred or they must be dropped. To transfer ownership of database
 

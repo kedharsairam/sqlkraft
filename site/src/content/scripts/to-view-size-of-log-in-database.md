@@ -1,7 +1,7 @@
 ---
 name: "To View Size of Log in Database"
 title: "To View Size of Log in Database"
-description: "SQL Server diagnostic script for database operations."
+description: "diagnostic script for database operations."
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

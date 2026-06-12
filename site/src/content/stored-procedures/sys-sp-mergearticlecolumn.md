@@ -2,7 +2,7 @@
 name: "sys.sp_mergearticlecolumn"
 title: "sp_mergearticlecolumn"
 category: "general"
-description: "Partitions a merge publication vertically. This stored procedure is executed at the Publisher on Transact-SQL syntax conventions The name of the article in the publication. Identifies the columns on which to create the vertical partition. , all columns in the source table are added columns from an article, execute for each column to be removed from the specified"
+description: "Partitions a merge publication vertically. This stored procedure is executed at the Publisher on The name of the article in the publication. Identifies the columns on which to create the vertical partition. , all columns in the source table are added columns from an article, execute for each column to be removed from the specified"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_mergearticlecolumn"
@@ -10,7 +10,7 @@ syntax: "sp_mergearticlecolumn"
 
 ## Description
 
-Partitions a merge publication vertically. This stored procedure is executed at the Publisher on Transact-SQL syntax conventions The name of the article in the publication. Identifies the columns on which to create the vertical partition. , all columns in the source table are added columns from an article, execute for each column to be removed from the specified
+Partitions a merge publication vertically. This stored procedure is executed at the Publisher on The name of the article in the publication. Identifies the columns on which to create the vertical partition. , all columns in the source table are added columns from an article, execute for each column to be removed from the specified
 
 ## Syntax
 
@@ -18,8 +18,7 @@ Partitions a merge publication vertically. This stored procedure is executed at 
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . Define and Modify a Join Filter Between Merge Articles Define and Modify a Parameterized Row Filter for a Merge Article Filter Published Data Replication stored procedures (Transact-SQL) Related content
-
+Only members of the fixed server role or fixed database role can execute. Define and Modify a Join Filter Between Merge Articles Define and Modify a Parameterized Row Filter for a Merge Article Filter Published Data Replication stored procedures (Transact-SQL)
 ## Examples
 
 ### Example 1

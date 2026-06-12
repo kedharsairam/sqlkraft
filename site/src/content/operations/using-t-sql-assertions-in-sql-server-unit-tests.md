@@ -25,9 +25,7 @@ result set or to verify how long a particular test took to run. For more informa
 
 conditions, see
 
-Use test conditions in SQL Server unit tests
-
-.
+Use test conditions in SQL Server unit tests.
 
 Instead of using test conditions, you can also use Transact-SQL assertions, which are
 
@@ -39,27 +37,17 @@ use a Transact-SQL assertion instead of a test condition.
 
 You should consider the following points before you decide to validate data either by using
 
-Transact-SQL assertions or by using test conditions.
+Transact-SQL assertions or by using test conditions. It's faster to run a Transact-SQL assertion on the server than to first move
 
-. It's faster to run a Transact-SQL assertion on the server than to first move
-
-data to a client computer and manipulate it locally.
-
-. You might prefer a particular language based on your current
+data to a client computer and manipulate it locally. You might prefer a particular language based on your current
 
 expertise and therefore choose Transact-SQL assertions or C# or Visual Basic test
 
-conditions.
+conditions. In some instances, you can build more complex tests in C# or
 
-. In some instances, you can build more complex tests in C# or
+Visual Basic and validate your tests on the client. It's often simpler to use a pre-defined test condition than to write the
 
-Visual Basic and validate your tests on the client.
-
-. It's often simpler to use a pre-defined test condition than to write the
-
-equivalent script in Transact-SQL.
-
-. If you already have code that performs validation, you can use
+equivalent script in Transact-SQL. If you already have code that performs validation, you can use
 
 it in a SQL Server unit test instead of using test conditions.
 

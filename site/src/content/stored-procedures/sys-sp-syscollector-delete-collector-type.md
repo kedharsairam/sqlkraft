@@ -2,7 +2,7 @@
 name: "sys.sp_syscollector_delete_collector_type"
 title: "sp_syscollector_delete_collector_type"
 category: "general"
-description: "Deletes the definition of a collector type. Transact-SQL syntax conventions The GUID for the collector type. @collector_type_uid , with a default of and must have a value if The name of the collector type."
+description: "Deletes the definition of a collector type. The GUID for the collector type. @collector_type_uid , with a default of and must have a value if The name of the collector type."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -19,7 +19,7 @@ syntax: |
 
 ## Description
 
-Deletes the definition of a collector type. Transact-SQL syntax conventions The GUID for the collector type. @collector_type_uid , with a default of and must have a value if The name of the collector type. , and must have a value if @collector_type_uid @collector_type_uid must have a value; both can't be
+Deletes the definition of a collector type. The GUID for the collector type. @collector_type_uid , with a default of and must have a value if The name of the collector type.
 
 ## Syntax
 
@@ -37,11 +37,7 @@ N
 
 ## Remarks
 
-Applies to:
-
 Deletes the definition of a collector type.
-
-Transact-SQL syntax conventions
 
 The GUID for the collector type.
 

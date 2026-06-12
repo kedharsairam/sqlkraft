@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 07/23/2025
 
-Applies to:
-
 SQL Server
 
 The common language runtime (CLR) supports a security model called code access security for
@@ -29,9 +27,7 @@ managed code. In this model, permissions are granted to assemblies based on the 
 
 the code. For more information, see
 
-Code Access Security
-
-.
+Code Access Security.
 
 The security policy that determines the permissions granted to assemblies is defined in three
 
@@ -73,7 +69,7 @@ Server, the eventual set of permissions given to user code might be further rest
 
 user and machine-level policies.
 
-CLR uses Code Access Security (CAS) in the .NET Framework, which is no longer supported as a
+CLR uses Code Access Security (CAS) in the.NET Framework, which is no longer supported as a
 
 security boundary. A CLR assembly created with
 
@@ -81,7 +77,7 @@ might be able to
 
 access external system resources, call unmanaged code, and acquire sysadmin privileges. In
 
-SQL Server 2017 (14.x) and later versions, the
+2017 (14.x) and later versions, the
 
 option,
 

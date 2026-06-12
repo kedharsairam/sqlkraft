@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Transaction safety is the attribute that controls the operating mode of the session. At any time,

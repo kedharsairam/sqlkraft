@@ -109,9 +109,7 @@ functions also work in a
 
 block inside a
 
-natively compiled stored procedure
-
-.
+natively compiled stored procedure.
 
 constructs don't trap the following conditions:
 
@@ -193,7 +191,7 @@ block. The error is handled by the
 
 construct.
 
-`TRY...CATCH`
+`TRY.CATCH`
 
 `CATCH`
 
@@ -217,7 +215,7 @@ construct.
 
 `CATCH`
 
-`TRY...CATCH`
+`TRY.CATCH`
 
 `CATCH`
 
@@ -231,7 +229,7 @@ construct.
 
 `CATCH`
 
-`TRY...CATCH`
+`TRY.CATCH`
 
 ```sql
 -- Verify that the stored procedure does not already exist.
@@ -247,15 +245,15 @@ ERROR_*
 
 `CATCH`
 
-`TRY...CATCH`
+`TRY.CATCH`
 
-`TRY...CATCH`
+`TRY.CATCH`
 
 `KILL`
 
 `CATCH`
 
-`TRY...CATCH`
+`TRY.CATCH`
 
 ```sql
 -- Create procedure to retrieve error information.
@@ -301,25 +299,25 @@ CATCH;
 
 `TRY`
 
-`TRY...CATCH`
+`TRY.CATCH`
 
 `CATCH`
 
 `SELECT`
 
-`TRY...CATCH`
+`TRY.CATCH`
 
 `CATCH`
 
 `SELECT`
 
-`TRY...CATCH`
+`TRY.CATCH`
 
 `SELECT`
 
 `TRY`
 
-`TRY...CATCH`
+`TRY.CATCH`
 
 ```sql
 BEGIN

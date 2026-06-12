@@ -17,11 +17,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server end of support options
+end of support options
 
-Applies to:
-
-SQL Server 2014 (12.x)
+2014 (12.x)
 
 This article explains your options for addressing SQL Server products that reach end of support.
 
@@ -39,9 +37,7 @@ its lifecycle. Microsoft no longer provides servicing and support for the produc
 
 information about the Microsoft Lifecycle, see
 
-Microsoft Lifecycle Policy
-
-.
+Microsoft Lifecycle Policy.
 
 When your SQL Server instance reaches the end of support, choose from the following options:
 
@@ -49,31 +45,25 @@ Migrate
 
 your workload to
 
-Azure SQL
-
-.
+Azure SQL.
 
 Migrate your workload to an Azure Virtual Machine as-is for
 
 free Extended Security
 
-Updates
-
-.
+Updates.
 
 Upgrade to a current version of SQL Server.
 
 Purchase an
 
-Extended Security Updates subscription
-
-.
+Extended Security Updates subscription.
 
 For more information, guidance, and tools to plan and automate your upgrade or migration,
 
 see:
 
-SQL Server 2014 end of support
+2014 end of support
 
 What are Extended Security Updates for SQL Server?
 

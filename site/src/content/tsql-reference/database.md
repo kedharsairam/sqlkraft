@@ -41,11 +41,9 @@ sys.indexes
 
 catalog view.
 
-Azure SQL Database and SQL database in Microsoft Fabric don't support filegroups other
+and SQL database in Microsoft Fabric don't support filegroups other
 
-than
-
-.
+than.
 
 Azure SQL Database, SQL database in Microsoft Fabric, and Azure SQL Managed Instance
 

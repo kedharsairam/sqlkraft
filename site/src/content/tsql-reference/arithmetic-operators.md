@@ -2,7 +2,7 @@
 name: "Arithmetic operators"
 title: "Arithmetic operators"
 category: "operators"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -14,8 +14,6 @@ Meaning
 datetime
 
 smalldatetime
-
-Applies to:
 
 SQL Server
 
@@ -33,11 +31,7 @@ Warehouse in Microsoft Fabric
 
 SQL database in Microsoft Fabric
 
-Arithmetic operators run mathematical operations on two expressions of one or more data types. They're run from the numeric data type category. For more information about data type categories, see
-
-Transact-SQL syntax conventions
-
-.
+Arithmetic operators run mathematical operations on two expressions of one or more data types. They're run from the numeric data type category. For more information about data type categories, see.
 
 - (Add)
 
@@ -63,8 +57,7 @@ Division
 
 ## Returns the integer remainder of a division. For example,
 
-because the remainder of divided by is
-.
+because the remainder of divided by is.
 
 The plus (
 
@@ -74,9 +67,7 @@ The plus (
 
 For more information about the precision and scale of an arithmetic operation result, see
 
-Precision, scale, and length
-
-.
+Precision, scale, and length.
 
 Mathematical functions (Transact-SQL)
 

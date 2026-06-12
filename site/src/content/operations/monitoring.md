@@ -30,8 +30,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 This section introduces Database Mirroring Monitor and the

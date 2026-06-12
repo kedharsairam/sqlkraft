@@ -10,9 +10,7 @@ pubDate: 2026-05-29
 
 Handling Latch
 
-Contention for Different Table Patterns
-
-.
+Contention for Different Table Patterns.
 
 As stated previously, latch contention is only problematic when the contention and wait time
 
@@ -40,9 +38,7 @@ common type of latch contention is buffer latch contention, observed as an incre
 
 times for latches with a
 
-of
-
-. Non-buffer latches are grouped under the
+of. Non-buffer latches are grouped under the
 
 wait type. As the following diagram illustrates, you should first take a cumulative look
 

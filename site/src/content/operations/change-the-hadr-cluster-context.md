@@ -29,8 +29,6 @@ Article
 
 09/27/2023
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -57,9 +55,7 @@ Server 2012 with minimal downtime of availability groups. For more information, 
 
 Cross-
 
-Cluster Migration of Always On Availability Groups for OS Upgrade
-
-.
+Cluster Migration of Always On Availability Groups for OS Upgrade.
 
 You can switch the HADR cluster context only from the local WSFC cluster to a remote
 
@@ -69,7 +65,7 @@ HADR cluster context from one remote cluster to another remote cluster.
 
 The HADR cluster context can be switched to a remote cluster only when the instance of
 
-SQL Server is not hosting any availability replicas.
+is not hosting any availability replicas.
 
 A remote HADR cluster context can be switched back to the local cluster at any time.
 

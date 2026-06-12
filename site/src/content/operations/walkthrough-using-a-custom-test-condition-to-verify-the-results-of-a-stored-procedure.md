@@ -27,9 +27,7 @@ that you want to update, see
 
 How to: Upgrade a Visual Studio 2010 Custom Test Condition
 
-from a Previous Release to SQL Server Data Tools
-
-.
+from a Previous Release to SQL Server Data Tools.
 
 This walkthrough illustrates the following tasks:
 
@@ -51,9 +49,7 @@ Data Tools to complete this walkthrough. For more information, see
 
 Install SQL Server Data
 
-Tools (SSDT) for Visual Studio
-
-.
+Tools (SSDT) for Visual Studio.
 
 First, you create a class library.
 
@@ -61,9 +57,7 @@ First, you create a class library.
 
 menu, select
 
-and then select
-
-.
+and then select.
 
 2. In the
 
@@ -73,25 +67,19 @@ dialog box, under
 
 3. Under
 
-, select
-
-.
+, select.
 
 4. In the
 
 text box, type
 
-and then select
-
-.
+and then select.
 
 Next, sign the project.
 
 1. On the
 
-menu, select
-
-.
+menu, select.
 
 2. On the
 
@@ -101,6 +89,4 @@ check box.
 
 3. In the
 
-box, select
-
-.
+box, select.

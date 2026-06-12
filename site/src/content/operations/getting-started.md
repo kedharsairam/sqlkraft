@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 10/10/2025
 
-Applies to:
-
 SQL Server
 
 This topic introduces the steps for configuring instances of SQL Server to support Always On
@@ -53,9 +51,7 @@ scale availability group
 
 or on
 
-Linux
-
-.
+Linux.
 
 For information about the other prerequisites, see "SQL
 
@@ -63,9 +59,7 @@ Server Instance Prerequisites and Restrictions" in
 
 Prerequisites, Restrictions, and Recommendations for
 
-Always On Availability Groups (SQL Server)
-
-.
+Always On Availability Groups (SQL Server).
 
 Enable and disable Always On Availability
 

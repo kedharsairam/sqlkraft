@@ -31,8 +31,6 @@ Article
 
 08/08/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -81,9 +79,7 @@ a schema associated with the
 
 type, validation is also performed. For more information, see
 
-Compare typed XML to untyped XML
-
-.
+Compare typed XML to untyped XML.
 
 XML documents can be encoded with different encodings (for example, UTF-8, UTF-16,
 

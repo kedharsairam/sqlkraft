@@ -29,8 +29,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 The Always On availability groups active secondary capabilities include support for read-only
@@ -73,9 +71,7 @@ read-only routing
 
 see
 
-Using a Listener to Connect to a Read-Only Secondary Replica (Read-Only Routing)
-
-.
+Using a Listener to Connect to a Read-Only Secondary Replica (Read-Only Routing).
 
 Directing read-only connections to readable secondary replicas provides the following benefits:
 
@@ -97,6 +93,4 @@ Though you cannot write data to secondary databases, you can write to read-write
 
 databases on the server instance that hosts the secondary replica, including user
 
-databases and system databases such as
-
-.
+databases and system databases such as.

@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2019 (15.x) and later versions
+2019 (15.x) and later versions
 
 Azure SQL Database
 
@@ -52,8 +50,6 @@ nodes that the edge is trying to connect, exist in the proper node tables. It's 
 a node can't be dropped, if any edge is referencing that node.
 
 A single edge constraint consists of one or more edge constraint clause(s).
-
-syntaxsql
 
 An edge constraint clause is a pair of node table names, separated by the
 
@@ -94,5 +90,5 @@ TO
 AND
 OR
 CONSTRAINT constraint_name
-CONNECTION (cause1[, clause2...])
+CONNECTION (cause1[, clause2.])
 ```

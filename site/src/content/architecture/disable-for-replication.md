@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -57,9 +55,7 @@ then expand the
 
 folder.
 
-2. Right-click the check constraint you wish to modify and then click
-
-.
+2. Right-click the check constraint you wish to modify and then click.
 
 3. In the
 
@@ -67,9 +63,7 @@ dialog box, under
 
 , select a value of
 
-for
-
-.
+for.
 
 ７
 
@@ -85,6 +79,4 @@ insert, update, or delete, the constraint is checked. The constraint is disabled
 
 replication agent because the constraint was already checked at the Publisher when the
 
-data was originally inserted, updated, or deleted. For more information, see
-
-.
+data was originally inserted, updated, or deleted. For more information, see.

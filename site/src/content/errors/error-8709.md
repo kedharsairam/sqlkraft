@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description you continue to see this error, consider using Repeatable Read or higher isolation level. 8709 16 No Error due to negative or NULL window delimiter. 8710 16 No Aggregate functions that are
+Description you continue to see this error, consider using Repeatable Read or higher isolation level. 8709 16 No Error due to negative or NULL window delimiter.
 
 ## Severity
 

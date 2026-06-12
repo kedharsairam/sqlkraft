@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 3960 16 No Snapshot isolation transaction aborted due to update conflict. You cannot use snapshot isolation to access table '%.*ls' directly or indirectly in database '%.*ls' to update, de
+Description 3960 16 No Snapshot isolation transaction aborted due to update conflict.
 
 ## Severity
 

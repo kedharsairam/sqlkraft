@@ -19,9 +19,7 @@ compatibility mode, an empty string is treated as a single space.
 
 Character string constants support enhanced
 
-collations
-
-.
+collations.
 
 Unicode strings have a format similar to character strings, but are prefixed with an
 
@@ -45,9 +43,7 @@ clause is used, the conversion to the database default collation still happens b
 
 conversion to the collation specified by the COLLATE clause. For more information, see
 
-Collation and Unicode Support
-
-.
+Collation and Unicode Support.
 
 Unicode string constants support enhanced collations.
 

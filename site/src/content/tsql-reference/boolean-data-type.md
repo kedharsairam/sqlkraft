@@ -2,12 +2,10 @@
 name: "Boolean Data Type"
 title: "Boolean Data Type"
 category: "data-types"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -106,8 +104,6 @@ WHILE, for example:
 Expressions (Transact-SQL)
 
 Operators (Transact-SQL)
-
-Last updated on 11/18/2025
 
 See Also
 

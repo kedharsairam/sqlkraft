@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -63,17 +61,13 @@ expand that instance.
 
 , expand the database that contains the table with the specified index,
 
-and then expand
-
-.
+and then expand.
 
 3. Expand the table for which you want to create the index.
 
 4. Right-click
 
-and select
-
-.
+and select.
 
 5. In the
 
@@ -81,9 +75,7 @@ field, enter a name for the index.
 
 6. In the
 
-drop-down list, select
-
-.
+drop-down list, select.
 
 ７
 
@@ -91,8 +83,6 @@ Note
 
 For information about the relationship of spatial indexes to partition and to filegroups, see
 
-the "Remarks" section in
-
-.
+the "Remarks" section in.
 
 To create a spatial index in Management Studio

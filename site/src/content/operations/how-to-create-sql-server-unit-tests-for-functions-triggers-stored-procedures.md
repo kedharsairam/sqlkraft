@@ -43,9 +43,7 @@ this test condition from your test after you add other test conditions. For more
 
 information, see
 
-How to: Add Test Conditions to SQL Server Unit Tests
-
-.
+How to: Add Test Conditions to SQL Server Unit Tests.
 
 Create and define SQL Server unit tests
 

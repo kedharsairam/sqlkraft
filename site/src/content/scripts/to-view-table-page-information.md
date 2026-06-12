@@ -1,7 +1,7 @@
 ---
 name: "To View Table Page Information"
 title: "To View Table Page Information"
-description: "SQL Server diagnostic script for index-maintenance operations."
+description: "diagnostic script for index-maintenance operations."
 category: index-maintenance
 tags: ["index-maintenance", "table"]
 pubDate: 2025-03-15

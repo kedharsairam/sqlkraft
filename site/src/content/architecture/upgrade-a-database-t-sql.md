@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to use detach and attach operations to upgrade a database in SQL
@@ -69,9 +67,7 @@ option to 0. For information about enabling chaining,
 
 see
 
-cross db ownership chaining Server Configuration Option
-
-.
+cross db ownership chaining Server Configuration Option.
 
 When attaching a replicated database that was copied instead of detached:
 

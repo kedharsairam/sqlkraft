@@ -27,8 +27,6 @@ Article
 
 04/15/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to remove a witness from a database mirroring session in SQL Server
@@ -41,7 +39,7 @@ session.
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 

@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 Quickstart: Deploy a SQL Server Linux
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -55,13 +53,9 @@ An Azure subscription. If you don't have an Azure subscription, you can create a
 
 free
 
-account
+account.
 
-.
-
-Create an AKS cluster
-
-.
+Create an AKS cluster.
 
 Download and review the sample
 
@@ -91,9 +85,7 @@ to interact with the Kubernetes cluster. For more information, see
 
 az aks
 
-install-cli
-
-.
+install-cli.
 
 To install
 

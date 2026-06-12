@@ -2,7 +2,7 @@
 name: "sys.sp_addmergepublication"
 title: "sp_addmergepublication"
 category: "general"
-description: "Creates a new merge publication. This stored procedure is executed at the Publisher on the database that is being published. Transact-SQL syntax conventions"
+description: "Creates a new merge publication. This stored procedure is executed at the Publisher on the database that is being published."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -124,9 +124,7 @@ syntax: |
 
 ## Description
 
-Creates a new merge publication. This stored procedure is executed at the Publisher on the database that is being published. Transact-SQL syntax conventions
-
-## Syntax
+Creates a new merge publication. This stored procedure is executed at the Publisher on the database that is being published. ## Syntax
 
 ```sql
 sp_addmergepublication
@@ -247,4 +245,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . Create a publication Publish Data and Database Objects sp_changemergepublication (Transact-SQL) sp_dropmergepublication (Transact-SQL) sp_helpmergepublication (Transact-SQL) Replication stored procedures (Transact-SQL) Related content
+Only members of the fixed server role or fixed database role can execute. Create a publication Publish Data and Database Objects sp_changemergepublication (Transact-SQL) sp_dropmergepublication (Transact-SQL) sp_helpmergepublication (Transact-SQL) Replication stored procedures (Transact-SQL)

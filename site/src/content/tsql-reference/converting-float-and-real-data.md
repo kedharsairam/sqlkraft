@@ -61,9 +61,7 @@ STR (Transact-SQL)
 
 and
 
-Functions (Transact-SQL)
-
-.
+Functions (Transact-SQL).
 
 Prior to SQL Server 2016 (13.x), conversion of
 
@@ -94,7 +92,3 @@ Data types (Transact-SQL)
 DECLARE @local_variable (Transact-SQL)
 
 SET @local_variable (Transact-SQL)
-
-Related content
-
-Last updated on 11/18/2025

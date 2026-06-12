@@ -73,12 +73,12 @@ timeout:
 
 Output
 
-SQL Server 2025 improved health check timeout
+2025 improved health check timeout
 
 ```cmd
-[Verbose] 000035b8.00001a64::2024/04/18-23:56:35.536 ERR   [RES] SQL Server Availability
+[Verbose] 000035b8.00001a64::2024/04/18-23:56:35.536 ERR [RES] SQL Server Availability
 Group: [hadrag] Failure detected, diagnostics heartbeat is lost
-[Verbose] 000035b8.00001a64::2024/04/18-23:56:35.536 WARN  [RES] SQL Server Availability
+[Verbose] 000035b8.00001a64::2024/04/18-23:56:35.536 WARN [RES] SQL Server Availability
 Group: [hadrag] AG health check failed, logging perf counter data collected so far
-[Verbose] 000035b8.00001a64::2024/04/18-23:56:35.536 WARN  [RES] SQL Server Availability
+[Verbose] 000035b8.00001a64::2024/04/18-23:56:35.536 WARN [RES] SQL Server Availability
 ```

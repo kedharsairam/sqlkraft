@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 - Linux
@@ -33,15 +31,11 @@ For editions and supported features of SQL Server on Windows, see
 
 Editions and supported
 
-features of SQL Server 2019
-
-. For more information on what's new in SQL Server 2019 (15.x) on
+features of SQL Server 2019. For more information on what's new in SQL Server 2019 (15.x) on
 
 Windows, see
 
-What's new in SQL Server 2019
-
-.
+What's new in SQL Server 2019.
 
 Installation requirements vary based on your application needs. The different editions of SQL
 
@@ -57,15 +51,11 @@ For the latest release notes and what's new information, see
 
 Release notes for SQL Server 2019
 
-on Linux
-
-.
+on Linux.
 
 For a list of SQL Server features not available on Linux, see
 
-Unsupported features and services
-
-.
+Unsupported features and services.
 
 Download SQL Server 2019
 
@@ -85,11 +75,9 @@ Enterprise edition is available for evaluation. An evaluation deployment is avai
 
 days. For more information, see
 
-SQL Server Licensing Resources and Documents
+Licensing Resources and Documents.
 
-.
-
-SQL Server editions
+editions
 
 ﾉ
 

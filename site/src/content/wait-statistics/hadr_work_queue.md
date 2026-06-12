@@ -14,11 +14,11 @@ Occurs when AG work items are queued waiting for worker threads. Indicates the A
 
 ## Key Metrics
 
-| Metric    | Description       |
+| Metric | Description |
 | --------- | ----------------- |
 | Wait Type | `HADR_WORK_QUEUE` |
-| Category  | Latency           |
-| Severity  | MEDIUM            |
+| Category | Latency |
+| Severity | MEDIUM |
 
 ## Troubleshooting
 
@@ -28,10 +28,10 @@ Use the following query to identify the top queries contributing to `HADR_WORK_Q
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'HADR_WORK_QUEUE'
 ORDER BY wait_time_ms DESC;

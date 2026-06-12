@@ -16,8 +16,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Most
@@ -62,7 +60,7 @@ Instructions.query(
 declare namespace
 AWMI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelManuInstructions";
-\<ManuInstr  ProdModelID = "
+\<ManuInstr ProdModelID = "
 {sql:column("Production.ProductModel.ProductModelID") }"
 ProductModelName = "{ sql:column("Production.ProductModel.Name")
 }" >

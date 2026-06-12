@@ -2,7 +2,7 @@
 name: "sys.sp_change_log_shipping_secondary_primary"
 title: "sp_change_log_shipping_secondary_primary"
 category: "general"
-description: "Changes secondary database settings. Transact-SQL syntax conventions The name of the primary instance of the SQL Server Database Engine in the log shipping The name of the database on the primary server."
+description: "Changes secondary database settings."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -37,7 +37,7 @@ syntax: |
 
 ## Description
 
-Changes secondary database settings. Transact-SQL syntax conventions The name of the primary instance of the SQL Server Database Engine in the log shipping The name of the database on the primary server.
+Changes secondary database settings.
 
 ## Syntax
 
@@ -66,7 +66,7 @@ N
 'monitor_server_password'
 ]
 [ , [ @monitor_connection_options = ]
-'<key_value_pairs>;[...]'
+'<key_value_pairs>;[.]'
 ]
 [ ; ]
 ```

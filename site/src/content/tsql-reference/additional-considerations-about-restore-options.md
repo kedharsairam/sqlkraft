@@ -15,9 +15,7 @@ the desired recovery point. For more information about restoring log backups, se
 
 Apply
 
-Transaction Log Backups - SQL Server
-
-.
+Transaction Log Backups - SQL Server.
 
 Prepare an availability database for an Always On availability group
 
@@ -25,17 +23,13 @@ For more information, see
 
 Manually Prepare a Secondary Database for an Availability
 
-Group - SQL Server
-
-.
+Group - SQL Server.
 
 Prepare a mirror database for database mirroring
 
 For more information, see
 
-Prepare a Mirror Database for Mirroring - SQL Server
-
-.
+Prepare a Mirror Database for Mirroring - SQL Server.
 
 Online Restore
 
@@ -47,9 +41,7 @@ a piecemeal restore.
 
 For more information, see
 
-Online Restore
-
-.
+Online Restore.
 
 The following keywords were discontinued in SQL Server 2008 (10.0.x):
 
@@ -71,15 +63,13 @@ Online restore is allowed only in Enterprise edition of SQL Server.
 
 Note
 
-Online restores can involve
-
-.
+Online restores can involve.
 
 Expand table
 
 #### Discontinued keyword
 
-#### Replaced by...
+#### Replaced by.
 
 #### Example of replacement keyword
 

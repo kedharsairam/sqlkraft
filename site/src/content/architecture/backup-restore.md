@@ -27,8 +27,6 @@ Article
 
 08/27/2024
 
-Applies to:
-
 SQL Server
 
 In SQL Server, you can create a new database by restoring a backup of a user database created
@@ -51,9 +49,7 @@ The general steps are:
 
 1. Back up the source database, which can reside on an instance of SQL Server 2005 (9.x) or
 
-later. The computer on which this instance of SQL Server is running is the
-
-.
+later. The computer on which this instance of SQL Server is running is the.
 
 2. On the computer to which you want to copy the database (the
 
@@ -83,12 +79,10 @@ Some additional considerations that may affect this process:
 
 Important
 
-SQL Server 2016 uses a different default path than earlier versions. Therefore, to restore
+2016 uses a different default path than earlier versions. Therefore, to restore
 
 backups of a database created in the default location of earlier versions you must use the
 
-MOVE option. For information about the new default path see
-
-. For more information about moving database files,
+MOVE option. For information about the new default path see. For more information about moving database files,
 
 see "Moving the Database Files," later in this topic.

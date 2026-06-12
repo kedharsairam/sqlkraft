@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/26/2025
 
-Applies to:
-
 SQL Server
 
 When an error is raised by the SQL Server Database Engine, the severity of the error indicates

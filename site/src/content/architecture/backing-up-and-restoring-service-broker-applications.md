@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -55,9 +53,7 @@ take care to change this identifier. For more information on Service Broker data
 
 see
 
-Manage Service Broker identities
-
-.
+Manage Service Broker identities.
 
 Migration (Service Broker)
 

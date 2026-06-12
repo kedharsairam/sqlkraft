@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Use this page to specify information about the server instance of the principal database. The
@@ -69,9 +67,7 @@ displayed. If you need to change the port, use an ALTER ENDPOINT command. For mo
 
 information, see
 
-ALTER ENDPOINT (Transact-SQL)
-
-.
+ALTER ENDPOINT (Transact-SQL).
 
 ７
 

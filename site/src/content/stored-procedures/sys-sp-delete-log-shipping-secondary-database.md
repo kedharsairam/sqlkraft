@@ -18,4 +18,4 @@ fixed server role can run this procedure. About log shipping (SQL Server) System
 
 ## Permissions
 
-must be run from the database on the secondary server. Only members of the fixed server role can run this procedure. About log shipping (SQL Server) System stored procedures (Transact-SQL) Related content
+must be run from the database on the secondary server. Only members of the fixed server role can run this procedure. About log shipping (SQL Server) System stored procedures (Transact-SQL)

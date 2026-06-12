@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 A failover cluster is a combination of one or more physical disks in a Microsoft Cluster Service
@@ -45,9 +43,7 @@ becomes unavailable. For more information, see
 
 Always On Failover Cluster Instances (SQL
 
-Server)
-
-.
+Server).
 
 Failover clusters provide high-availability support for an entire Microsoft SQL Server instance,
 
@@ -77,9 +73,7 @@ the principal server on the same cluster, or on a different cluster or an unclus
 
 depending on the
 
-operating mode
-
-. Therefore, when deciding how to configure database
+operating mode. Therefore, when deciding how to configure database
 
 mirroring in a clustered environment, the operating mode you use for mirroring is significant.
 
@@ -87,6 +81,4 @@ mirroring in a clustered environment, the operating mode you use for mirroring i
 
 Note
 
-For an introduction to database mirroring, see
-
-.
+For an introduction to database mirroring, see.

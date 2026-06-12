@@ -31,8 +31,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 In previous versions of SQL Server, it was common to write a stored procedure (or an extended
@@ -67,9 +65,7 @@ class found in ASP.NET.
 
 For more information, see
 
-Microsoft.SqlServer.Server.SqlPipe
-
-.
+Microsoft.SqlServer.Server.SqlPipe.
 
 The
 
@@ -91,9 +87,7 @@ calls
 
 with the
 
-command text
-
-.
+command text.
 
 is also a managed stored procedure. If
 
@@ -113,9 +107,7 @@ message, equivalent to
 
 in Transact-SQL. It can also send a single-row result-set using
 
-, or a multi-row result-set using a
-
-.
+, or a multi-row result-set using a.
 
 The
 

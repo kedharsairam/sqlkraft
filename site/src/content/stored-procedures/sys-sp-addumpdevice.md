@@ -2,7 +2,7 @@
 name: "sys.sp_addumpdevice"
 title: "sp_addumpdevice"
 category: "general"
-description: "Adds a backup device to an instance of SQL Server. Transact-SQL syntax conventions , with no default, and can be one of the Hard disk file as a backup device. Any tape devices supported by Microsoft Windows. : Support for tape backup devices will be removed in a future version of SQL Server."
+description: "Adds a backup device to an instance of SQL Server. , with no default, and can be one of the Hard disk file as a backup device. Any tape devices supported by Microsoft Windows. : Support for tape backup devices will be removed in a future version of SQL Server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -24,7 +24,7 @@ syntax: |
 
 ## Description
 
-Adds a backup device to an instance of SQL Server. Transact-SQL syntax conventions , with no default, and can be one of the Hard disk file as a backup device. Any tape devices supported by Microsoft Windows. : Support for tape backup devices will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use
+Adds a backup device to an instance of SQL Server. , with no default, and can be one of the Hard disk file as a backup device. Any tape devices supported by Microsoft Windows. : Support for tape backup devices will be removed in a future version of SQL Server.
 
 ## Syntax
 
@@ -47,13 +47,9 @@ N
 
 ## Arguments
 
-Applies to:
-
 Rewinds and closes specified tape devices that were left open by BACKUP or RESTORE
 
 statements executed with the NOREWIND option. This command is supported only for tape
-
-Transact-SQL syntax conventions
 
 Specifies the logical or physical backup devices to use for the restore operation.
 
@@ -147,4 +143,4 @@ Ability to insert null values into
 
 varchar(max)
 
-_(... and 18 more arguments)_
+_(. and 18 more arguments)_

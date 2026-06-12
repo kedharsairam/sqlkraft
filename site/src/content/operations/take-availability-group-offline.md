@@ -27,8 +27,6 @@ Article
 
 09/27/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to take an Always On availability group from the ONLINE state to the
@@ -63,9 +61,7 @@ more information, see
 
 Cross-Cluster Migration of Always On Availability Groups for OS
 
-Upgrade
-
-.
+Upgrade.
 
 The server instance on which you enter the OFFLINE command must be running SQL
 
@@ -77,9 +73,7 @@ Before you take the availability group offline, delete the availability group li
 
 For more information, see
 
-Remove an Availability Group Listener (SQL Server)
-
-.
+Remove an Availability Group Listener (SQL Server).
 
 Ｕ
 

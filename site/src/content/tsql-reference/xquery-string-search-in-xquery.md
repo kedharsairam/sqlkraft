@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic provides sample queries that show how to search text in XML documents.

@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -33,7 +31,7 @@ SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-SQL Server and SQL Database include several metabase views and functions to enable
+and SQL Database include several metabase views and functions to enable
 
 administrators to retrieve information about temporal tables.
 
@@ -68,5 +66,3 @@ Temporal table security
 Manage retention of historical data in system-versioned temporal tables
 
 System-versioned temporal tables with memory-optimized tables
-
-Last updated on 11/18/2025

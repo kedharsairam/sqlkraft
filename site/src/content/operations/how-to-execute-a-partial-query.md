@@ -24,7 +24,7 @@ as a single query. This makes it easy for you to debug sections of complex queri
 
 1. In
 
-SQL Server Object Explorer
+Object Explorer
 
 , double-click
 
@@ -38,9 +38,7 @@ Transact-SQL editor.
 
 segment in the code, right-click
 
-and select
-
-.
+and select.
 
 3. All the rows with the specified fields in the
 

@@ -13,7 +13,7 @@ type was
 
 introduced in Azure SQL Database and Azure SQL Managed Instance, and is also available in
 
-SQL Server 2025 (17.x).
+2025 (17.x).
 
 The
 
@@ -55,11 +55,9 @@ is generally available for Azure SQL Database and Azure SQL Managed Instance wit
 
 the
 
-SQL Server 2025
+2025
 
-or
-
-.
+or.
 
 is in preview for SQL Server 2025 (17.x) and SQL database in Fabric.
 

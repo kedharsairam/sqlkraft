@@ -27,17 +27,13 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 Once the assembly containing the user-defined type (UDT) definition is registered in a SQL
 
 Server database, it can be used in a column definition. For more information, see
 
-CREATE TYPE
-
-.
+CREATE TYPE.
 
 There's no special syntax for creating a UDT column in a table. You can use the name of the
 
@@ -57,13 +53,9 @@ identity column and the primary key for the table. The
 
 second column is named
 
-, with a data type of
+, with a data type of. The schema name used in this
 
-. The schema name used in this
-
-example is
-
-. You must have the necessary permissions to specify a schema name. If you
+example is. You must have the necessary permissions to specify a schema name. If you
 
 omit the schema name, the default schema for the database user is used.
 
@@ -83,9 +75,7 @@ expression must be deterministic and must not perform data access.
 
 For more information, see
 
-CREATE INDEX
-
-.
+CREATE INDEX.
 
 ```sql
 CREATE TABLE

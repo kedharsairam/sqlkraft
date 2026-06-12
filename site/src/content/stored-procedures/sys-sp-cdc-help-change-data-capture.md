@@ -18,7 +18,7 @@ syntax: |
 
 ## Description
 
-Returns the change data capture configuration for each table enabled for change data capture in the current database. Up to two rows can be returned for each source table, one row for each capture instance. Change data capture isn't available in every edition of SQL Server. For a list of features that are supported by the editions of SQL Server, see Transact-SQL syntax conventions The name of the schema in which the source table belongs.
+Returns the change data capture configuration for each table enabled for change data capture in the current database. Up to two rows can be returned for each source table, one row for each capture instance. Change data capture isn't available in every edition of SQL Server. For a list of features that are supported by the editions of SQL Server, see The name of the schema in which the source table belongs.
 
 ## Syntax
 

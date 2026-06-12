@@ -2,7 +2,7 @@
 name: "sys.sp_fkeys"
 title: "sp_fkeys"
 category: "general"
-description: "Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns logical foreign key information for the current environment. This procedure shows foreign key relationships including disabled foreign keys. Transact-SQL syntax conventions The name of the table, with the primary key, used to return catalog information. Wildcard pattern matching isn't supported."
+description: "Returns logical foreign key information for the current environment. This procedure shows foreign key relationships including disabled foreign keys."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -36,7 +36,7 @@ syntax: |
 
 ## Description
 
-Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns logical foreign key information for the current environment. This procedure shows foreign key relationships including disabled foreign keys. Transact-SQL syntax conventions The name of the table, with the primary key, used to return catalog information. . Wildcard pattern matching isn't supported. parameter, or both, must be supplied.
+Analytics Platform System (PDW) SQL database in Microsoft Fabric Returns logical foreign key information for the current environment. This procedure shows foreign key relationships including disabled foreign keys.
 
 ## Syntax
 

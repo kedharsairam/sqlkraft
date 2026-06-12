@@ -35,9 +35,7 @@ database cannot contain any user-defined schema objects. Alternatively, a new da
 
 action when the authenticated user has
 
-create database permissions
-
-. The Import action is part of the
+create database permissions. The Import action is part of the
 
 database
 
@@ -55,7 +53,7 @@ Bash
 
 The Import action requires a
 
-parameter to specify the name and location of the .bacpac file containing the
+parameter to specify the name and location of the.bacpac file containing the
 
 database objects and data.
 
@@ -99,9 +97,7 @@ or alternatively
 
 achieve database portability through
 
-data in parquet files
-
-.
+data in parquet files.
 
 ```cmd
 SourceFile

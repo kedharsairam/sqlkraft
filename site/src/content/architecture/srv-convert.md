@@ -32,8 +32,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Changes data from one data type to another.

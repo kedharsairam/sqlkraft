@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -35,9 +33,7 @@ integration and resources for the Pacemaker portion of an AG or FCI deployment a
 
 cluster is configured.
 
-Install SQL Server on Linux
-
-.
+Install SQL Server on Linux.
 
 Use the following syntax to install the packages that make up the high availability (HA) add-on
 

@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description command when the remote database is started. 1414 16 No The database is being closed before database mirroring is fully initialized. The ALTER DATABASE command failed. 1415 16 No The datab
+Description command when the remote database is started. 1414 16 No The database is being closed before database mirroring is fully initialized. The ALTER DATABASE command failed.
 
 ## Severity
 

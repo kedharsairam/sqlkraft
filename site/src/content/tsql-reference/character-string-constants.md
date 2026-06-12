@@ -2,7 +2,7 @@
 name: "Character string constants"
 title: "Character string constants"
 category: "data-types"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -10,8 +10,6 @@ pubDate: 2026-05-29
 ### UTF8-enabled collation
 
 ### Unicode string
-
-Applies to:
 
 SQL Server
 
@@ -73,9 +71,7 @@ and
 
 ODBC Driver for SQL Server
 
-automatically use
-
-. We recommend
+automatically use. We recommend
 
 using single quotation marks.
 
@@ -115,9 +111,7 @@ database default code page still happens before the conversion to the collation 
 
 by the COLLATE clause. Conversion isn't done directly to the specified Unicode-enabled
 
-collation. For more information, see
-
-.
+collation. For more information, see.
 
 ### varchar(max)
 

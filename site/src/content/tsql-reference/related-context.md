@@ -17,9 +17,7 @@ ROLLBACK TRANSACTION (Transact-SQL)
 
 SAVE TRANSACTION (Transact-SQL)
 
-TRY...CATCH (Transact-SQL)
-
-Last updated on 12/17/2025
+TRY.CATCH (Transact-SQL)
 
 ```sql
 -- Test whether the transaction is uncommittable.

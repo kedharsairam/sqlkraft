@@ -31,9 +31,7 @@ shows how to authenticate and interact with Azure Arc-enabled SQL Server in Micr
 
 Purview. For more information about Microsoft Purview, read the
 
-introductory article
-
-.
+introductory article.
 
 Yes
 

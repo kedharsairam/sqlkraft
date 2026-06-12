@@ -1,7 +1,7 @@
 ---
 title: "Read data pages"
 topic: "query-processing"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -11,8 +11,6 @@ Article
 •
 
 04/01/2025
-
-Applies to:
 
 SQL Server
 
@@ -28,9 +26,7 @@ cache
 
 , also known as the
 
-buffer pool
-
-. If the page isn't currently in the buffer cache, a physical
+buffer pool. If the page isn't currently in the buffer cache, a physical
 
 read first copies the page from disk into the cache.
 
@@ -72,9 +68,7 @@ data pages
 
 and one for
 
-index pages
-
-.
+index pages.
 
 Table scans used by the Database Engine to read data pages are efficient. The index allocation
 
@@ -86,6 +80,4 @@ allows the storage engine to optimize its I/Os as large sequential reads that ar
 
 sequence, based on their location on the disk. For more information about IAM pages, see
 
-Manage space used by objects
-
-.
+Manage space used by objects.

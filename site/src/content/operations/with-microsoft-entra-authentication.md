@@ -17,9 +17,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2022 (16.x)
+2022 (16.x)
 
 This article provides steps to configure Transactional and Snapshot replication by using
 
@@ -29,11 +27,9 @@ formerly Azure Active Directory
 
 ) for
 
-SQL Server enabled
+enabled
 
-by Azure Arc
-
-.
+by Azure Arc.
 
 Microsoft Entra authentication support for replication was introduced in SQL Server 2022 (16.x)
 
@@ -57,9 +53,7 @@ enabled by Azure-Arc
 
 starting with
 
-Cumulative Update 6
-
-.
+Cumulative Update 6.
 
 Configured Microsoft Entra authentication for every server in the replication topology.
 
@@ -73,9 +67,7 @@ to learn more.
 
 A supported version of
 
-SQL Server Management Studio (SSMS)
-
-.
+Management Studio (SSMS).
 
 The user connecting to the publisher and subscriber is a member of the
 

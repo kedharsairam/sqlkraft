@@ -27,15 +27,13 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 User-defined functions are routines that can take parameters, perform calculations or other
 
-actions, and return a result. You can write user-defined functions in any .NET Framework
+actions, and return a result. You can write user-defined functions in any.NET Framework
 
-programming language, such as C# or Visual Basic .NET, to use on SQL Server.
+programming language, such as C# or Visual Basic.NET, to use on SQL Server.
 
 There are two types of functions:
 

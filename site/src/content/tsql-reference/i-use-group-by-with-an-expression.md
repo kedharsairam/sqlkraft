@@ -19,9 +19,7 @@ product ID and special offer ID.
 
 The following example puts the results into groups after retrieving only the rows with list prices
 
-greater than
-
-.
+greater than.
 
 The following example groups by an expression. You can group by an expression if the
 

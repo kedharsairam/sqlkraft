@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -45,15 +43,11 @@ The information in this section applies to stopping an application temporarily f
 
 purposes. For information about permanently removing a service from the database, see
 
-Uninstall Service Broker applications
-
-.
+Uninstall Service Broker applications.
 
 To temporarily stop a service, alter the queue that the application uses so that the queue status
 
-is
-
-. When the queue status is
+is. When the queue status is
 
 , the queue is unavailable for receive operations, which
 

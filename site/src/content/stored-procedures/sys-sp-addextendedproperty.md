@@ -2,7 +2,7 @@
 name: "sys.sp_addextendedproperty"
 title: "sp_addextendedproperty"
 category: "general"
-description: "SQL database in Microsoft Fabric Adds a new extended property to a database object. Transact-SQL syntax conventions The name of the property to be added. , with no default, and can't be Names can include blank or non-alphanumeric character strings, and binary values. The value to be associated with the property. can't be more than 7,500 bytes."
+description: "Adds a new extended property to a database object."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -37,7 +37,7 @@ syntax: |
 
 ## Description
 
-SQL database in Microsoft Fabric Adds a new extended property to a database object. Transact-SQL syntax conventions The name of the property to be added. , with no default, and can't be Names can include blank or non-alphanumeric character strings, and binary values. The value to be associated with the property. can't be more than 7,500 bytes.
+Adds a new extended property to a database object.
 
 ## Syntax
 

@@ -2,7 +2,7 @@
 name: "sys.sp_delete_targetsvrgrp_member"
 title: "sp_delete_targetsvrgrp_member"
 category: "general"
-description: "Removes a target server from a target server group. Transact-SQL syntax conventions The name of the server to remove from the specified group."
+description: "Removes a target server from a target server group."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -18,7 +18,7 @@ syntax: |
 
 ## Description
 
-Removes a target server from a target server group. Transact-SQL syntax conventions The name of the server to remove from the specified group.
+Removes a target server from a target server group.
 
 ## Syntax
 

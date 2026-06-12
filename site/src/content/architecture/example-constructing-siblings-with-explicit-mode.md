@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -79,52 +77,38 @@ Parent
 <OrderHeader>
 <OrderHeader
 SalesOrderID
-=
-...
+=.
 OrderDate
-=
-...
+=.
 CustomerID
-=
-...
+=.
 >
 <SalesPerson
 SalesPersonID
-=
-...
+=.
 />
 <OrderDetail
 SalesOrderID
-=
-...
+=.
 LineTotal
-=
-...
+=.
 ProductID
-=
-...
+=.
 OrderQty
-=
-...
+=.
 />
 <OrderDetail
 SalesOrderID
-=
-...
+=.
 LineTotal
-=
-...
+=.
 ProductID
-=
-...
+=.
 OrderQty
-=
-.../
->
-...
+=./
+>.
 </OrderHeader>
-<OrderHeader
-...
+<OrderHeader.
 </
 OrderHeader
 >

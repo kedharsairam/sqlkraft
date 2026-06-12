@@ -2,7 +2,7 @@
 name: "sys.sp_add_log_file_recover_suspect_db"
 title: "sp_add_log_file_recover_suspect_db"
 category: "general"
-description: "Adds a log file to a database when recovery can't complete on a database due to insufficient log space (error 9002). After the file is added, the suspect setting and completes the recovery of the database. The parameters are the same Transact-SQL syntax conventions The name used in the SQL Server to reference the file. The name must be unique in the server."
+description: "Adds a log file to a database when recovery can't complete on a database due to insufficient log space (error 9002). After the file is added, the suspect setting and completes the recovery of the database. The parameters are the same The name used in the SQL Server to reference the file. The name must be unique in the server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_add_log_file_recover_suspect_db"
@@ -10,7 +10,7 @@ syntax: "sp_add_log_file_recover_suspect_db"
 
 ## Description
 
-Adds a log file to a database when recovery can't complete on a database due to insufficient log space (error 9002). After the file is added, the suspect setting and completes the recovery of the database. The parameters are the same Transact-SQL syntax conventions The name used in the SQL Server to reference the file. The name must be unique in the server. The path and file name used by the operating system for the file. The file must reside on an
+Adds a log file to a database when recovery can't complete on a database due to insufficient log space (error 9002). After the file is added, the suspect setting and completes the recovery of the database. The parameters are the same The name used in the SQL Server to reference the file. The name must be unique in the server. The path and file name used by the operating system for the file.
 
 ## Syntax
 

@@ -15,8 +15,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 The following W3C XQuery 1.0 and XPath 2.0 Functions and Operators specifications diagram

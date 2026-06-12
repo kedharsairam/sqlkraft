@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -63,9 +61,7 @@ The examples for outgoing messages don't use the routing table in
 
 , and the examples for incoming
 
-messages and message forwarding don't use the routing table for
-
-.
+messages and message forwarding don't use the routing table for.
 
 This example describes the default configuration for Service Broker routing. By default, all databases except
 

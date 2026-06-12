@@ -16,8 +16,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Returns the average of a sequence of numbers.
@@ -58,9 +56,7 @@ If an xdt:untypedAtomic value cannot be cast to xs:double, the value is disregar
 
 sequence,
 
-$arg
-
-.
+$arg.
 
 In all other cases, the function returns a static error.
 

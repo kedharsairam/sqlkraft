@@ -2,7 +2,7 @@
 name: "sys.sp_addmergepullsubscription_agent"
 title: "sp_addmergepullsubscription_agent"
 category: "general"
-description: "Adds a new agent job used to schedule synchronization of a pull subscription to a merge publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions"
+description: "Adds a new agent job used to schedule synchronization of a pull subscription to a merge publication. This stored procedure is executed at the Subscriber on the subscription database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -90,9 +90,7 @@ syntax: |
 
 ## Description
 
-Adds a new agent job used to schedule synchronization of a pull subscription to a merge publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions
-
-## Syntax
+Adds a new agent job used to schedule synchronization of a pull subscription to a merge publication. This stored procedure is executed at the Subscriber on the subscription database. ## Syntax
 
 ```sql
 sp_addmergepullsubscription_agent
@@ -179,4 +177,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . Create a Pull Subscription Subscribe to Publications sp_addmergepullsubscription (Transact-SQL) sp_changemergepullsubscription (Transact-SQL) sp_dropmergepullsubscription (Transact-SQL) sp_helpmergepullsubscription (Transact-SQL) sp_helpsubscription_properties (Transact-SQL) Related content
+Only members of the fixed server role or fixed database role can execute. Create a Pull Subscription Subscribe to Publications sp_addmergepullsubscription (Transact-SQL) sp_changemergepullsubscription (Transact-SQL) sp_dropmergepullsubscription (Transact-SQL) sp_helpmergepullsubscription (Transact-SQL) sp_helpsubscription_properties (Transact-SQL)

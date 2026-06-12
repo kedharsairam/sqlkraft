@@ -2,7 +2,7 @@
 name: "sys.databases"
 title: "sys.databases"
 category: "databases-files"
-description: "Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway. Transact-SQL syntax conventions Name of the database. In the Database Engine, this column represents the database name as stored in the Size of database, in kilobytes. For the Database Engine, this field always returns Database names that are returned can be used as parameters in the s"
+description: "Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway."
 tags: ["databases-files", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "sys.dm_database_copies"
@@ -10,7 +10,7 @@ syntax: "sys.dm_database_copies"
 
 ## Description
 
-Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway. Transact-SQL syntax conventions Name of the database. In the Database Engine, this column represents the database name as stored in the Size of database, in kilobytes. For the Database Engine, this field always returns Database names that are returned can be used as parameters in the statement to change the current database context. value for databases larger than 2.15 TB. Azure SQL Database Azure SQL Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric This function returns the database identification (ID) number of a specified database. Transact-SQL syntax conventions READ_WRITE | READWRITE Specifies the group is READ_WRITE. Updates are enabled for the Specifies the name of a database snapshot to be removed. ALTER DATABASE (Transact-SQL) target_service_name Azure SQL Database
+Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway.
 
 ## Syntax
 
@@ -40,9 +40,7 @@ to return the database ID of the
 
 database in the
 
-system function
-
-. The function takes a database ID as the
+system function. The function takes a database ID as the
 
 By default, the public role has the
 
@@ -64,17 +62,11 @@ sys.databases (Transact-SQL)
 
 sys.dm_db_index_operational_stats (Transact-SQL)
 
-Last updated on 11/18/2025
-
 ## Remarks
-
-Applies to:
 
 Lists databases that either reside in an instance of the SQL Server or are accessible through a
 
 database gateway.
-
-Transact-SQL syntax conventions
 
 Description
 
@@ -98,8 +90,6 @@ value for databases larger than 2.15 TB.
 
 Expand table
 
-Applies to:
-
 Azure SQL Database
 
 Azure SQL Managed Instance
@@ -118,8 +108,6 @@ SQL database in Microsoft Fabric
 
 This function returns the database identification (ID) number of a specified database.
 
-Transact-SQL syntax conventions
-
 database_name
 
 The name of the database whose database ID number
@@ -136,9 +124,7 @@ Database. NULL is returned if the specified database name is other than the curr
 
 In Azure SQL Database,
 
-may not return the same value as the
-
-. These two views return
+may not return the same value as the. These two views return
 
 values that are unique within the logical server, while
 
@@ -264,7 +250,7 @@ database files. The file will be truncated, but will not be physically deleted i
 
 backups intact. For more information, see
 
-SQL Server backup and
+backup and
 
 ALTER DATABASE (Transact-SQL)
 
@@ -273,140 +259,6 @@ CREATE DATABASE
 EVENTDATA (Transact-SQL)
 
 sys.databases
-
-Related content
-
-target_service_name
-
-string. In other words, the comparison is case-sensitive and does not take
-
-into account the current collation.
-
-service_broker_guid
-
-Specifies the database that hosts the target service. When more than one database hosts an
-
-instance of the target service, you can communicate with a specific database by providing a
-
-service_broker_guid
-
-service_broker_guid
-
-. To find the
-
-service_broker_guid
-
-for a database,
-
-run the following query in the database:
-
-Specifies that the conversation use the
-
-service_broker_guid
-
-for the current database.
-
-ON CONTRACT
-
-contract_name
-
-Specifies the contract that this conversation follows. The contract must exist in the current
-
-database. If the target service does not accept new conversations on the contract specified,
-
-Service Broker returns an error message on the conversation. When this clause is omitted, the
-
-conversation follows the contract named
-
-RELATED_CONVERSATION
-
-related_conversation_handle
-
-Specifies the existing conversation group that the new dialog is added to. When this clause is
-
-present, the new dialog belongs to the same conversation group as the dialog specified by
-
-related_conversation_handle
-
-related_conversation_handle
-
-must be of a type implicitly
-
-convertible to type
-
-. The statement fails if the
-
-related_conversation_handle
-
-does not reference an existing dialog.
-
-RELATED_CONVERSATION_GROUP
-
-related_conversation_group_id
-
-Specifies the existing conversation group that the new dialog is added to. When this clause is
-
-present, the new dialog will be added to the conversation group specified by
-
-related_conversation_group_id
-
-related_conversation_group_id
-
-must be of a type implicitly
-
-convertible to type
-
-related_conversation_group_id
-
-does not reference an
-
-This option is not available in a contained database.
-
-Applies to:
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
-
-Controls the behavior of the Transact-SQL COMMIT TRANSACTION statement. The default
-
-value for this setting is OFF. This means that the server will not close cursors when you commit
-
-a transaction.
-
-Transact-SQL syntax conventions
-
-When SET CURSOR_CLOSE_ON_COMMIT is ON, this setting closes any open cursors on commit
-
-or rollback in compliance with ISO. When SET CURSOR_CLOSE_ON_COMMIT is OFF, the cursor
-
-is not closed when a transaction is committed.
-
-When SET CURSOR_CLOSE_ON_COMMIT is OFF, a ROLLBACK statement closes only open
-
-asynchronous cursors that are not fully populated. STATIC or INSENSITIVE cursors that were
-
-opened after modifications were made will no longer reflect the state of the data if the
-
-modifications are rolled back.
-
-SET CURSOR_CLOSE_ON_COMMIT controls the same behavior as the
-
-CURSOR_CLOSE_ON_COMMIT database option. If CURSOR_CLOSE_ON_COMMIT is set to ON
-
-or OFF, that setting is used on the connection. If SET CURSOR_CLOSE_ON_COMMIT has not
-
-been specified, the value in the
-
-column in the
-
-catalog view applies.
-
-SET CURSOR_CLOSE_ON_COMMIT to ON will not close open cursors on rollback when the
-
-rollback is applied to a savepoint_name from a SAVE TRANSACTION statement.
 
 ## Examples
 

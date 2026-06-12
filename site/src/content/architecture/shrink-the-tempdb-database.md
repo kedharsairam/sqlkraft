@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -33,17 +31,13 @@ database in SQL
 
 Server.
 
-You can use any of the following methods to change the size of
-
-. The first three options
+You can use any of the following methods to change the size of. The first three options
 
 are described in this article. If you want to use SQL Server Management Studio (SSMS), follow
 
 the instructions in
 
-Shrink a database
-
-.
+Shrink a database.
 
 Yes
 
@@ -63,7 +57,7 @@ No
 
 Lets you shrink individual files.
 
-SQL Server Management
+Management
 
 Studio
 

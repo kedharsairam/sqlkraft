@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,9 +37,7 @@ database.
 
 Copy and paste the following code into a Query Editor window, then run it to start a
 
-conversation and send a request message to the
-
-. The code
+conversation and send a request message to the. The code
 
 must be run in one block, because a variable is used to pass a dialog handle from
 

@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -44,9 +42,7 @@ primarily correspond to Transact-SQL statements that start with the keywords
 
 ,
 
-, or
-
-. Certain system stored procedures that
+, or. Certain system stored procedures that
 
 perform DDL-like operations can also fire DDL triggers.
 
@@ -66,15 +62,13 @@ trigger might fire if a statement such as
 
 is executed or if a table is
 
-deleted by using
-
-.
+deleted by using.
 
 Instead of executing a Transact-SQL stored procedure, a common language runtime (CLR)
 
 trigger executes one or more methods written in managed code that are members of an
 
-assembly created in the .NET Framework and uploaded in SQL Server.
+assembly created in the.NET Framework and uploaded in SQL Server.
 
 DDL triggers fire only after the DDL statements that trigger them are run. DDL triggers can't be
 

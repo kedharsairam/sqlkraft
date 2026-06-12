@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2022 (16.x) and later versions
+2022 (16.x) and later versions
 
 Azure SQL Database
 
@@ -75,8 +73,5 @@ deployment
 
 of the build artifact to new or existing databases
 
-```cmd
-.dacpac
-.dacpac
-.dacpac
+```cmd.dacpac.dacpac.dacpac
 ```

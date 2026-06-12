@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description reasons including transient service failure. 1401 21 Yes Startup of the database-mirroring master thread routine failed for the following reason: %ls. Correct the cause of this error, and
+Description reasons including transient service failure. 1401 21 Yes Startup of the database-mirroring master thread routine failed for the following reason: %ls.
 
 ## Severity
 

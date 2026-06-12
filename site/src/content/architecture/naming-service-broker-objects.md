@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -45,9 +43,7 @@ case, the name of the service can be used in a transport route. For more informa
 
 routing, see
 
-Service Broker routing
-
-.
+Service Broker routing.
 
 When sending and receiving messages, Service Broker uses binary matching for the names of
 

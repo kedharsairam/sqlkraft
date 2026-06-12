@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 08/07/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -49,17 +47,13 @@ For more information, see
 
 Open Activity Monitor in SQL Server Management Studio
 
-(SSMS)
-
-.
+(SSMS).
 
 In SQL Server, you can set a database in single user mode to close any open
 
 connections. For more information, see
 
-set the database to single-user mode
-
-.
+set the database to single-user mode.
 
 In Azure SQL Database, you must make sure no other users have an open connection
 
@@ -69,9 +63,7 @@ Renaming a database doesn't change the physical name of the database files on di
 
 the logical names of the files. For more information, see
 
-Database Files and Filegroups
-
-.
+Database Files and Filegroups.
 
 It isn't possible to rename an Azure SQL database configured in an
 

@@ -29,8 +29,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -43,7 +41,7 @@ Limitations and Restrictions
 
 Recommendations
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 
@@ -67,9 +65,7 @@ and
 
 Add
 
-Articles to and Drop Articles from Existing Publications
-
-.
+Articles to and Drop Articles from Existing Publications.
 
 View and modify publication properties in the
 

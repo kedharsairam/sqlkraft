@@ -24,9 +24,7 @@ To allocate a uniform extent, the Database Engine searches the GAM page for a
 
 bit and
 
-sets it to
-
-.
+sets it to.
 
 To find a mixed extent with free pages, the Database Engine searches the SGAM page for
 
@@ -40,17 +38,13 @@ bit, sets
 
 it to
 
-, and then also sets the corresponding bit on the SGAM page to
-
-.
+, and then also sets the corresponding bit on the SGAM page to.
 
 To deallocate an extent, the Database Engine makes sure that the bit on the GAM page is
 
 set to
 
-, and the bit on the SGAM page is set to
-
-.
+, and the bit on the SGAM page is set to.
 
 The Database Engine allocates extents from those available in the filegroup using a
 
@@ -66,9 +60,7 @@ up with similar percentage of space used.
 
 For more information, see
 
-File and filegroup fill strategy
-
-.
+File and filegroup fill strategy.
 
 pages record the allocation status of each page and the amount of free
 

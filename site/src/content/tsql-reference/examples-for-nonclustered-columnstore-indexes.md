@@ -17,15 +17,11 @@ the same results:
 
 Starting with SQL Server 2016 (13.x), use
 
-instead of
-
-.
+instead of.
 
 For more information, see
 
-Columnstore index rowgroup
-
-.
+Columnstore index rowgroup.
 
 In previous versions of SQL Server, you can use
 
@@ -39,9 +35,7 @@ and the
 
 option.
 
-Start by determining the clustered columnstore index name in
-
-.
+Start by determining the clustered columnstore index name in.
 
 Remove fragmentation by performing a REORGANIZE on the columnstore index.
 
@@ -81,8 +75,6 @@ is non-NULL.
 
 ## D. Change the data in a nonclustered columnstore index
 
-Applies to: SQL Server 2012 (11.x) through SQL Server 2014 (12.x).
-
 In SQL Server 2014 (12.x) and earlier versions, after you create a nonclustered columnstore
 
 index on a table, you can't directly modify the data in that table. A query with INSERT, UPDATE,
@@ -112,7 +104,7 @@ Perform any updates. Build (or rebuild) the columnstore index. Switch the stagin
 back into the (now empty) partition of the main table.
 
 ```sql
-ALTER INDEX...REORGANIZE
+ALTER INDEX.REORGANIZE
 ```
 
 `REBUILD`

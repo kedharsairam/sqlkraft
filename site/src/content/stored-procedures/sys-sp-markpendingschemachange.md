@@ -20,7 +20,7 @@ syntax: |
 
 ## Description
 
-Used for supportability of merge publications by enabling an administrator to skip selected pending schema changes, so that they aren't replicated. This stored procedure is executed at the Publisher on the publication database. Identifies a pending schema change. sp_enumeratependingschemachanges to list the pending schema changes for the publication. This stored procedure can cause schema changes not to be replicated. It should only be
+Used for supportability of merge publications by enabling an administrator to skip selected pending schema changes, so that they aren't replicated. This stored procedure is executed at the Publisher on the publication database. Identifies a pending schema change. sp_enumeratependingschemachanges to list the pending schema changes for the publication. This stored procedure can cause schema changes not to be replicated.
 
 ## Syntax
 

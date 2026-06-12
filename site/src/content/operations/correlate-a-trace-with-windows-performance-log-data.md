@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -63,9 +61,7 @@ data columns.
 
 2. On the SQL Server Profiler
 
-menu, select
-
-.
+menu, select.
 
 3. In the
 
@@ -81,9 +77,7 @@ dialog box, select the check boxes that correspond to
 
 the System Monitor objects and counters that you want to display alongside the trace.
 
-Select
-
-.
+Select.
 
 5. Select an event in the trace events window, or navigate through several adjacent rows in
 

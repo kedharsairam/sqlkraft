@@ -31,9 +31,7 @@ works well in combination with offline database development using SQL Server dat
 
 projects. For more information,
 
-What are SQL database projects?
-
-. Once you have a baseline set
+What are SQL database projects?. Once you have a baseline set
 
 of SQL Server unit tests, you can use these tests to verify that the database is working correctly
 

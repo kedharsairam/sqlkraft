@@ -31,8 +31,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to view the properties of an Always On

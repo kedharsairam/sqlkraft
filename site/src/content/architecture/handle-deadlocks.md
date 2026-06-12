@@ -26,23 +26,17 @@ Profiler.
 
 For more information about the deadlock event, see
 
-Lock:Deadlock Event Class
-
-. For more
+Lock:Deadlock Event Class. For more
 
 information about SQL Profiler deadlock graphs, see
 
 Save deadlock graphs (SQL Server
 
-Profiler)
-
-.
+Profiler).
 
 Extended Events provides equivalents of SQL Trace event classes. For more information, see
 
-View the Extended Events Equivalents to SQL Trace Event Classes
-
-. Extended Events is
+View the Extended Events Equivalents to SQL Trace Event Classes. Extended Events is
 
 recommended over SQL Trace.
 
@@ -63,6 +57,6 @@ Implementing an error handler that catches error 1205 allows an application to h
 deadlocks and take remedial action (for example, automatically resubmitting the query that
 
 ```sql
-Your transaction (process ID #...) was deadlocked on {lock | communication buffer |
+Your transaction (process ID #.) was deadlocked on {lock | communication buffer |
 thread} resources with another process and has been chosen as the deadlock victim. Rerun your transaction.
 ```

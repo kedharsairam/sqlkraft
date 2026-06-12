@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -32,9 +30,7 @@ SQL database in Microsoft Fabric
 
 A computed column is a virtual column that isn't physically stored in the table, unless the
 
-column is marked
-
-. A computed column expression can use data from other columns
+column is marked. A computed column expression can use data from other columns
 
 to calculate a value for the column to which it belongs. You can specify an expression for a
 
@@ -80,9 +76,7 @@ computed columns or indexed views. For more information, see
 
 SET QUOTED_IDENTIFIER
 
-(Transact-SQL)
-
-.
+(Transact-SQL).
 
 Requires ALTER permission on the table.
 
@@ -92,9 +86,7 @@ Requires ALTER permission on the table.
 
 column. Right-click
 
-and select
-
-.
+and select.
 
 ```sql
 PERSISTED

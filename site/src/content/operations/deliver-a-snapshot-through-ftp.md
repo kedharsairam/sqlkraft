@@ -29,8 +29,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to deliver a snapshot through FTP in SQL Server by using SQL Server
@@ -67,9 +65,7 @@ such as \\ftpserver\home\snapshots. For more information, see
 
 Secure the Snapshot
 
-Folder
-
-.
+Folder.
 
 To transfer snapshot files using File Transfer Protocol (FTP), you must first configure an
 

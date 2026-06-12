@@ -16,13 +16,9 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
-Returns the xs:boolean value True. This is equivalent to
-
-.
+Returns the xs:boolean value True. This is equivalent to.
 
 This topic provides XQuery examples against XML instances that are stored in various
 

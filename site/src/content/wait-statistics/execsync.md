@@ -14,11 +14,11 @@ Occurs during parallel query synchronization phases such as exchange iterator co
 
 ## Key Metrics
 
-| Metric    | Description |
+| Metric | Description |
 | --------- | ----------- |
-| Wait Type | `EXECSYNC`  |
-| Category  | Baseline    |
-| Severity  | LOW         |
+| Wait Type | `EXECSYNC` |
+| Category | Baseline |
+| Severity | LOW |
 
 ## Troubleshooting
 
@@ -28,10 +28,10 @@ Use the following query to identify the top queries contributing to `EXECSYNC` w
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'EXECSYNC'
 ORDER BY wait_time_ms DESC;

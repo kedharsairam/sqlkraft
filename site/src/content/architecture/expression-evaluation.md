@@ -14,9 +14,7 @@ Expressions whose results depend on a local variable or parameter, such as @x.
 
 Nondeterministic functions.
 
-User-defined Transact-SQL functions
-
-.
+User-defined Transact-SQL functions.
 
 Expressions whose results depend on language settings.
 
@@ -46,9 +44,7 @@ The expression doesn't have to be evaluated repeatedly at run time.
 
 The value of the expression after it is evaluated is used by the Query Optimizer to
 
-estimate the size of the result set of the portion of the query
-
-.
+estimate the size of the result set of the portion of the query.
 
 On the other hand, if
 

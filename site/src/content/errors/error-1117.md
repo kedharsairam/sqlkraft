@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-The examples with OS 483 and 1117 indicate I/O device failure. Check for malfunction or damage of the storage media. Review System event logs, hardware configuration and logs and work with hardware ad
+The examples with OS 483 and 1117 indicate I/O device failure. Check for malfunction or damage of the storage media.
 
 ## Severity
 

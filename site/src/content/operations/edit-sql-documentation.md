@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -65,21 +63,15 @@ You can make simple edits to SQL Server content in your browser and then submit 
 
 Microsoft. For more information, see the
 
-contributor guide overview
-
-.
+contributor guide overview.
 
 The following steps summarize the process:
 
 1. On the page you want to suggest a change for, select the
 
-near
+near.
 
-.
-
-2. Select
-
-. The browser takes you to the GitHub repository for that article source file.
+2. Select. The browser takes you to the GitHub repository for that article source file.
 
 3. In the source file, select the
 
@@ -91,21 +83,15 @@ might need to sign in to your GitHub account first. GitHub returns the editing p
 
 text, see the
 
-Markdown Cheatsheet
+Markdown Cheatsheet.
 
-.
-
-5. After you make your edits, scroll back to the top of the page and select
-
-.
+5. After you make your edits, scroll back to the top of the page and select.
 
 a. In the
 
 dialog box, provide a name for your pull request, such as
 
-Fixing typo
-
-.
+Fixing typo.
 
 b. In the
 

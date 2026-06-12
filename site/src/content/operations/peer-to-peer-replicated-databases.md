@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Windows
@@ -75,9 +73,7 @@ group, follow these steps:
 
 by stopping all applications and distribution agents from
 
-any other peers that replicate to this instance. For example, stop the distribution agent on
-
-.
+any other peers that replicate to this instance. For example, stop the distribution agent on.
 
 ﾉ
 

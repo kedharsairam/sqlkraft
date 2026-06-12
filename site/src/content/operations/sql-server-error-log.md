@@ -23,15 +23,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server error log (Always On
+error log (Always On
 
 Article
 
 •
 
 02/01/2024
-
-Applies to:
 
 SQL Server
 
@@ -51,7 +49,7 @@ Statuses of the availability group listeners
 
 Lease status between the SQL Server resource DLL (running in the WSFC cluster) and the
 
-SQL Server instance (for more information, see
+instance (for more information, see
 
 How It Works: SQL Server Always On lease
 
@@ -73,6 +71,4 @@ Availability group in an indeterminate state
 
 For more information, see
 
-View the SQL Server error log (SQL Server Management Studio)
-
-.
+View the SQL Server error log (SQL Server Management Studio).

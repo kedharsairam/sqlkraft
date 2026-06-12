@@ -2,12 +2,10 @@
 name: "Remarks"
 title: "Remarks"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -26,8 +24,6 @@ Fabric
 Specifies whether SQL Server automatically rolls back the current transaction when a Transact-
 
 SQL statement raises a run-time error.
-
-Transact-SQL syntax conventions
 
 ## syntaxsql
 
@@ -61,17 +57,13 @@ Note
 
 The
 
-statement honors
-
-.
+statement honors.
 
 does not. New applications
 
 should use
 
-instead of
-
-.
+instead of.
 
 ```sql
 SET

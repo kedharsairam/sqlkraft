@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 9610 16 No The service '%.*ls' in the FROM SERVICE clause must match the service '%.*ls' referenced by %s = '%.*ls'. 9611 16 No Cannot find the specified user '%.*ls'. 9613 16 No The queue
+Description 9610 16 No The service '%.*ls' in the FROM SERVICE clause must match the service '%.*ls' referenced by %s = '%.*ls'. 9611 16 No Cannot find the specified user '%.*ls'.
 
 ## Severity
 

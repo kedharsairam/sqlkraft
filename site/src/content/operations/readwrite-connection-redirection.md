@@ -29,11 +29,9 @@ Article
 
 03/15/2025
 
-Applies to:
+2019 (15.x) and later
 
-SQL Server 2019 (15.x) and later
-
-SQL Server 2019 (15.x) introduces
+2019 (15.x) introduces
 
 secondary to primary replica read/write connection redirection
 
@@ -79,9 +77,7 @@ The secondary replica must be online.
 
 The replica spec
 
-must include
-
-.
+must include.
 
 The connection string must be
 

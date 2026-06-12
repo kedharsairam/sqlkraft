@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -43,9 +41,7 @@ Copy and paste the following code into a Query Editor window, then run it to beg
 
 conversation and send a request message to the
 
-in the
-
-. The code must be run in one block because a variable is used to pass a dialog
+in the. The code must be run in one block because a variable is used to pass a dialog
 
 handle from
 

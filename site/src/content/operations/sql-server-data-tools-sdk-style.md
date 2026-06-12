@@ -15,9 +15,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Data Tools, SDK-style (preview)
+Data Tools, SDK-style (preview)
 
-SQL Server Data Tools (SSDT)
+Data Tools (SSDT)
 
 is a set of development tools in Visual Studio with focused on
 
@@ -25,7 +25,7 @@ building SQL Server databases and Azure SQL databases. SDK-style SQL projects in
 
 Studio enable the next generation of SQL projects as part of the
 
-SQL Server Data Tools, SDK-
+Data Tools, SDK-
 
 feature available for Visual Studio 2022. The
 
@@ -37,9 +37,7 @@ CI/CD pipelines, enabling you to automate the build and deployment of your datab
 
 with the
 
-SqlPackage
-
-.
+SqlPackage.
 
 The original SQL project format is based on MSBuild (.NET Framework) and is the format used
 
@@ -49,9 +47,7 @@ SDK-style projects (Microsoft.Build.Sql) and is the format used by the SQL Datab
 
 extension for Visual Studio Code. The Microsoft.Build.Sql project SDK is more flexible than the
 
-original SQL projects and contains new features:
-
-.NET 8 support (cross platform)
+original SQL projects and contains new features:.NET 8 support (cross platform)
 
 NuGet
 
@@ -69,15 +65,13 @@ the only SQL project format available in that version of Visual Studio. Visual S
 
 only version of Visual Studio that contains SDK-style SQL projects in the
 
-SQL Server Data
+Data
 
 component.
 
 For more information about SQL projects, see
 
-What are SQL database projects?
-
-. The
+What are SQL database projects?. The
 
 Microsoft.Build.Sql SDK is available on
 
@@ -85,9 +79,7 @@ GitHub
 
 and on
 
-NuGet.org
-
-.
+NuGet.org.
 
 To install the SDK-style SQL projects in Visual Studio 2022, follow these steps:
 
@@ -95,9 +87,7 @@ To install the SDK-style SQL projects in Visual Studio 2022, follow these steps:
 
 Visual Studio download
 
-page
-
-.
+page.
 
 ２
 
@@ -109,6 +99,5 @@ SQL projects isn't supported. Installing the SDK-style SQL projects in a standal
 
 Studio instance is advised.
 
-```cmd
-.sql
+```cmd.sql
 ```

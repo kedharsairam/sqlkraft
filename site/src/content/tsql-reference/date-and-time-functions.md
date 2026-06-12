@@ -15,9 +15,7 @@ pubDate: 2026-05-29
 
 The following tables list the Transact-SQL date and time functions. For more information about determinism, see
 
-Deterministic and Nondeterministic Functions
-
-.
+Deterministic and Nondeterministic Functions.
 
 Transact-SQL derives all system date and time values from the operating system of the computer on which the instance of SQL Server runs.
 
@@ -184,9 +182,7 @@ The return type depends on the
 
 argument supplied for
 
-date
-
-.
+date.
 
 Nondeterministic
 
@@ -210,9 +206,7 @@ representing the specified datepart
 
 of the specified
 
-date
-
-.
+date.
 
 int
 
@@ -224,17 +218,13 @@ The function returns an input
 
 date
 
-truncated to a specified datepart
-
-.
+truncated to a specified datepart.
 
 The return type depends on the
 
 argument supplied for
 
-date
-
-.
+date.
 
 Nondeterministic
 
@@ -256,9 +246,7 @@ The function returns an integer
 
 representing the day part of the specified
 
-date
-
-.
+date.
 
 int
 
@@ -270,9 +258,7 @@ The function returns an integer
 
 representing the month part of a specified
 
-date
-
-.
+date.
 
 int
 
@@ -284,9 +270,7 @@ The function returns an integer
 
 representing the year part of a specified
 
-date
-
-.
+date.
 
 int
 
@@ -466,9 +450,7 @@ value by adding an interval to the specified
 
 datepart of the specified
 
-date
-
-.
+date.
 
 The data type of the date
 
@@ -524,9 +506,7 @@ interprets the datetime2
 
 value in local time, for the specified
 
-time_zone
-
-.
+time_zone.
 
 datetimeoffset
 
@@ -544,9 +524,7 @@ Tip
 
 For more information and recommendations about manipulating time zone information in SQL Server with the
 
-data type, see
-
-.
+data type, see.
 
 ## Functions that set or return session format functions
 

@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 09/09/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -37,7 +35,7 @@ Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
-SQL Server Data Tools (SSDT) provides project templates and design surfaces for building SQL
+Data Tools (SSDT) provides project templates and design surfaces for building SQL
 
 Server content types - relational databases, Analysis Services models, Reporting Services
 
@@ -55,23 +53,19 @@ Historically, the Visual Studio shell used to create SQL Server content types ha
 
 under various names, including
 
-SQL Server Data Tools
+Data Tools
 
 ,
 
-SQL Server Data Tools - Business
+Data Tools - Business
 
-, and
-
-. Previous versions came with
+, and. Previous versions came with
 
 distinct sets of project templates. To get all of the project templates together in one SSDT, you
 
 need
 
-the newest version
-
-. Otherwise, you probably need to install multiple previous versions to
+the newest version. Otherwise, you probably need to install multiple previous versions to
 
 get all of the templates used in SQL Server. Only one shell is installed per version of Visual
 
@@ -93,9 +87,7 @@ Warning
 
 Visual Studio 2017 is out of mainstream support and use of Visual Studio 2019 or 2022 is
 
-recommended. Learn more about SSDT for Visual Studio 2019 and 2022 at
-
-.
+recommended. Learn more about SSDT for Visual Studio 2019 and 2022 at.
 
 ﾉ
 

@@ -2,12 +2,10 @@
 name: "Result value"
 title: "Result value"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -19,17 +17,13 @@ SQL database in Microsoft Fabric
 
 Compares a scalar value with a single-column set of values. SOME and ANY are equivalent.
 
-Transact-SQL syntax conventions
-
 ## syntaxsql
 
 scalar_expression
 
 Is any valid
 
-expression
-
-.
+expression.
 
 { = | <> | != | > | >= | !> | < | <= | !< }
 
@@ -41,9 +35,7 @@ Is a subquery that has a result set of one column. The data type of the column r
 
 be the same data type as
 
-scalar_expression
-
-.
+scalar_expression.
 
 ### TRUE
 

@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Discusses and compares the options that are available for storing files and documents in SQL
@@ -71,7 +69,7 @@ Many years ago, SQL Server did not offer any variety of ways to store unstructur
 
 relational database. But nowadays it does offer ways to store unstructured data.
 
-SQL Server already has the FILESTREAM feature. The FILESTREAM feature provides efficient
+already has the FILESTREAM feature. The FILESTREAM feature provides efficient
 
 storage, management, and streaming of unstructured data stored as files on the file system.
 

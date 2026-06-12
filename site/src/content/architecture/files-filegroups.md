@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -31,7 +29,7 @@ Log files contain the information that is required to recover all transactions i
 
 Data files can be grouped together in filegroups for allocation and administration purposes.
 
-SQL Server databases have three types of files, as shown in the following table.
+databases have three types of files, as shown in the following table.
 
 Description
 
@@ -39,23 +37,17 @@ Contains startup information for the database and points to the other files in t
 
 database. Every database has one primary data file. The recommended file name
 
-extension for primary data files is
-
-.
+extension for primary data files is.
 
 Optional user-defined data files. Data can be spread across multiple disks by putting each
 
 file on a different disk drive. The recommended file name extension for secondary data
 
-files is
-
-.
+files is.
 
 The log holds information used to recover the database. There must be at least one log
 
-file for each database. The recommended file name extension for transaction logs is
-
-.
+file for each database. The recommended file name extension for transaction logs is.
 
 For example, a simple database named
 
@@ -77,7 +69,7 @@ disk systems. This choice might not be optimal for production environments. We r
 
 that you put data and log files on separate disks.
 
-SQL Server files have two file name types:
+files have two file name types:
 
 : The name used to refer to the physical file in all Transact-SQL
 
@@ -87,10 +79,7 @@ statements. The logical file name must comply with the rules for SQL Server iden
 
 Expand table
 
-```sql
-.mdf
-.ndf
-.ldf
+```sql.mdf.ndf.ldf
 Sales
 Orders logical_file_name
 ```

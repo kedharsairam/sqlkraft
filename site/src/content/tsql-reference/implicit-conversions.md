@@ -75,9 +75,7 @@ into two hexadecimal characters. Suppose the length of the converted expression 
 
 length of the
 
-data_type
-
-. In that case, it's truncated.
+data_type. In that case, it's truncated.
 
 For a fixed size character type
 
@@ -115,9 +113,7 @@ for SQL Server system-supplied data types. These include
 
 sql_variant
 
-, and
-
-.
+, and.
 
 There is no implicit conversion on assignment from the
 
@@ -127,9 +123,7 @@ data type, but there is
 
 implicit conversion to
 
-sql_variant
-
-.
+sql_variant.
 
 Expand table
 
@@ -159,9 +153,7 @@ For comparison operators or other expressions, the resulting data type will depe
 
 rules of
 
-data type precedence
-
-.
+data type precedence.
 
 ### varbinary(max)
 

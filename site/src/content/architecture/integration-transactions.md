@@ -31,8 +31,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 The
@@ -45,11 +43,9 @@ and ADO.NET work together to extend and simplify the use of local and
 
 distributed transactions in managed applications.
 
-For more information about transactions and the .NET Framework, see
+For more information about transactions and the.NET Framework, see
 
-Transaction Processing
-
-.
+Transaction Processing.
 
 Description
 

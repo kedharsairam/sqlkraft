@@ -23,7 +23,7 @@ Article
 
 05/22/2025
 
-The .NET Data-tier Application Framework (DacFx) library provides extensibility points that you
+The.NET Data-tier Application Framework (DacFx) library provides extensibility points that you
 
 can use to modify the behavior of the build and deployment actions for database projects.
 

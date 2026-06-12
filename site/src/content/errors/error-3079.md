@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description device type. 3079 16 No Could not find the blob file %.\*ls. Please make sure that the file name points to a valid blob file. 3080 16 No Invalid Backup Path. The length of the default backu
+Description device type. 3079 16 No Could not find the blob file %.\*ls. Please make sure that the file name points to a valid blob file. 3080 16 No Invalid Backup Path.
 
 ## Severity
 

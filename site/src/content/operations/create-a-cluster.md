@@ -27,8 +27,6 @@ Article
 
 09/28/2023
 
-Applies to:
-
 SQL Server
 
 To install or upgrade a SQL Server failover cluster instance (FCI), you must run the Setup
@@ -55,13 +53,11 @@ configuration is called a SQL Server multi-subnet failover cluster instance conf
 
 For more information, see
 
-SQL Server Multi-Subnet Clustering (SQL Server)
-
-.
+Multi-Subnet Clustering (SQL Server).
 
 The following options are available for SQL Server failover cluster installation:
 
-SQL Server integrated failover cluster installation consists of the following steps:
+integrated failover cluster installation consists of the following steps:
 
 Create and configure a single-node SQL Server failover cluster instance. When you
 
@@ -85,8 +81,6 @@ information on the different possible scenarios during Add Node operations, see
 
 Add
 
-or Remove Nodes in an Always On Failover Cluster Instance (Setup)
+or Remove Nodes in an Always On Failover Cluster Instance (Setup).
 
-.
-
-SQL Server Advanced/Enterprise failover cluster installation consists of the following steps:
+Advanced/Enterprise failover cluster installation consists of the following steps:

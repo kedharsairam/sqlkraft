@@ -2,7 +2,7 @@
 name: "CREATE INDEX"
 title: "CREATE INDEX"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -10,8 +10,6 @@ pubDate: 2026-05-29
 ### Examples:
 
 ### Server and Azure SQL index architecture and design guide
-
-Applies to:
 
 SQL Server
 
@@ -35,7 +33,7 @@ the table. Use a rowstore index to improve query performance, especially when th
 
 select from specific columns or require values to be sorted in a particular order.
 
-Azure Synapse Analytics and Analytics Platform System (PDW) currently don't support unique
+and Analytics Platform System (PDW) currently don't support unique
 
 constraints. Any examples referencing unique constraints are only applicable to SQL Server,
 
@@ -43,9 +41,7 @@ Azure SQL Database, SQL database in Microsoft Fabric, and Azure SQL Managed Inst
 
 For information on index design guidelines, refer to the
 
-SQL Server index design guide
-
-.
+index design guide.
 
 1. Create a nonclustered index on a table or view
 
@@ -61,9 +57,7 @@ Documentation uses the term B-tree generally in reference to indexes. In rowstor
 
 indexes, the Database Engine implements a B+ tree. This does not apply to columnstore
 
-indexes or indexes on memory-optimized tables. For more information, see the
-
-.
+indexes or indexes on memory-optimized tables. For more information, see the.
 
 ### Key scenario:
 

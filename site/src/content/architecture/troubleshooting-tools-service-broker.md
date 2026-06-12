@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -59,9 +57,7 @@ between services.
 
 For more information about how to use the utility, see
 
-ssbdiagnose utility
-
-.
+ssbdiagnose utility.
 
 Service Broker messages that aren't successfully transmitted to the receiving queue are held in
 

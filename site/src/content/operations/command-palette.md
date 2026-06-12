@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -37,15 +35,11 @@ bindings. For more information, see
 
 Create Azure Functions with the SQL Bindings extension
 
-for Visual Studio Code
-
-. To install the extension, see
+for Visual Studio Code. To install the extension, see
 
 SQL Bindings extension for Visual Studio
 
-Code
-
-.
+Code.
 
 Run the
 

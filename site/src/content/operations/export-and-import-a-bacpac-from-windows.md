@@ -29,15 +29,13 @@ pubDate: 2025-12-01
 
 07/03/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
 
 This article shows how to use
 
-SQL Server Management Studio
+Management Studio
 
 (SSMS) and
 
@@ -55,15 +53,11 @@ You should always install and use the most recent version of SSMS as described i
 
 Use SQL
 
-Server Management Studio on Windows to manage SQL Server on Linux
-
-.
+Server Management Studio on Windows to manage SQL Server on Linux.
 
 For information about migrating a database from one SQL Server instance to another, see
 
-Migrate a SQL Server database from Windows to Linux using backup and restore
-
-.
+Migrate a SQL Server database from Windows to Linux using backup and restore.
 
 1. Start SSMS by typing
 
@@ -97,9 +91,7 @@ the database objects that you wish to export.
 
 6. Select
 
-and then select
-
-.
+and then select.
 
 The
 
@@ -107,6 +99,5 @@ file is successfully created at the location you chose, and you're ready to impo
 
 into a target database.
 
-```cmd
-.bacpac
+```cmd.bacpac
 ```

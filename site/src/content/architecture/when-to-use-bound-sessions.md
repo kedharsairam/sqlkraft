@@ -64,9 +64,7 @@ stable than extended stored procedures. CLR-stored procedures use the
 
 object to
 
-join the context of the calling session, not
-
-.
+join the context of the calling session, not.
 
 ```sql
 SET TRANSACTION

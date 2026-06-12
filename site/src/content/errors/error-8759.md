@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 8759 16 No Get length of node list from XML DOM node failed. 8760 16 No Recompile with replay script for long haul testing for Optimization Replay feature 8761 16 No Unsupported virtual co
+Description 8759 16 No Get length of node list from XML DOM node failed.
 
 ## Severity
 

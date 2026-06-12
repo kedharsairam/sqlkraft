@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -73,9 +71,7 @@ Create a new empty SQL project
 
 Import objects from an existing database
 
-Build the SQL project
-
-.NET 8 SDK
+Build the SQL project.NET 8 SDK
 
 Visual Studio 2022 Community, Professional, or Enterprise
 
@@ -89,11 +85,9 @@ To complete the tutorial, you need access to an Azure SQL or SQL Server instance
 
 develop locally for free with
 
-SQL Server developer edition
+developer edition
 
-on Windows or in
-
-.
+on Windows or in.
 
 ```cmd
 CREATE

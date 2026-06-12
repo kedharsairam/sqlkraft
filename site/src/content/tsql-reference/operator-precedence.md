@@ -2,7 +2,7 @@
 name: "Operator precedence"
 title: "Operator precedence"
 category: "operators"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -10,8 +10,6 @@ pubDate: 2026-05-29
 #### Level
 
 #### Operators
-
-Applies to:
 
 SQL Server
 
@@ -139,17 +137,13 @@ statement, the multiplication operator
 
 has a higher precedence than the addition operator. The multiplication operation is evaluated
 
-first. The expression result is
-
-.
+first. The expression result is.
 
 In the expression used in the following
 
 statement, the parentheses cause the addition to
 
-be evaluated first. The expression result is
-
-.
+be evaluated first. The expression result is.
 
 If an expression has nested parentheses, the most deeply nested expression is evaluated first.
 
@@ -157,247 +151,18 @@ The following example contains nested parentheses, with the expression
 
 in the most
 
-deeply nested set of parentheses. This expression yields a value of
-
-. Then, the addition
+deeply nested set of parentheses. This expression yields a value of. Then, the addition
 
 operator (
 
 ) adds this result to
 
-, which yields a value of
-
-. Finally, the
+, which yields a value of. Finally, the
 
 is multiplied by
 
 to
 
-yield an expression result of
-
-.
+yield an expression result of.
 
 Logical operators (Transact-SQL)
-
-Related content
-
-Operators (Transact-SQL)
-
-What are the SQL database functions?
-
-Last updated on 01/30/2026
-
-```sql
-~
-```
-
-`NOT`
-
-```sql
-*
-```
-
-```sql
-/
-```
-
-```sql
-%
-```
-
-```sql
-+
-```
-
-```sql
--
-```
-
-```sql
-+
-```
-
-```sql
-+
-```
-
-```sql
--
-```
-
-```sql
-&
-```
-
-`AND`
-
-```sql
-^
-```
-
-`OR`
-
-```sql
-|
-```
-
-`OR`
-
-```sql
-<<
-```
-
-```sql
->>
-```
-
-```sql
-=
-```
-
-```sql
->
-```
-
-```sql
-<
-```
-
-```sql
->=
-```
-
-```sql
-<=
-```
-
-```sql
-<>
-```
-
-```sql
-!=
-```
-
-```sql
-!>
-```
-
-```sql
-!<
-```
-
-`NOT`
-
-`AND`
-
-`ALL`
-
-`ANY`
-
-`BETWEEN`
-
-`IN`
-
-`LIKE`
-
-`OR`
-
-`SOME`
-
-```sql
-=
-```
-
-`SET`
-
-```sql
-DECLARE
-@MyNumber
-AS
-INT
-;
-SET
-@MyNumber = 4 - 2 + 27;
--- Evaluates to 2 + 27 which yields an expression result of 29.
-SELECT
-@MyNumber;
-```
-
-`SET`
-
-```sql
-13
-```
-
-`SET`
-
-```sql
-18
-```
-
-```sql
-5 - 3
-```
-
-```sql
-2
-```
-
-```sql
-+
-```
-
-```sql
-4
-```
-
-```sql
-6
-```
-
-```sql
-6
-```
-
-```sql
-2
-```
-
-```sql
-12
-```
-
-```sql
-DECLARE
-@MyNumber
-AS
-INT
-;
-SET
-@MyNumber = 2 * 4 + 5;
--- Evaluates to 8 + 5 which yields an expression result of 13.
-SELECT
-@MyNumber;
-DECLARE
-@MyNumber
-AS
-INT
-;
-SET
-@MyNumber = 2 * (4 + 5);
--- Evaluates to 2 * 9 which yields an expression result of 18.
-SELECT
-@MyNumber;
-DECLARE
-@MyNumber
-AS
-INT
-;
-SET
-@MyNumber = 2 * (4 + (5 - 3));
--- Evaluates to 2 * (4 + 2) which then evaluates to 2 * 6, and
--- yields an expression result of 12.
-SELECT
-@MyNumber;
-```

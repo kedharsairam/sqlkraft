@@ -123,9 +123,7 @@ trigger
 
 (regardless of data modification statements the trigger captures) will reflect the total
 
-number of rows affected by the
-
-. For example, if a
+number of rows affected by the. For example, if a
 
 statement inserts one row,
 

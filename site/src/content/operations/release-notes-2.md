@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article lists:
@@ -57,9 +55,7 @@ Automatically perform backups to local storage or network shares.
 
 Note
 
-Features currently in preview are available under
-
-. Review the
+Features currently in preview are available under. Review the
 
 legal terms that apply to features that are in beta, preview, or otherwise not yet released
 

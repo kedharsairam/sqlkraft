@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -41,7 +39,7 @@ conversation.
 
 Each message type specifies the validation that SQL Server performs for messages of that type.
 
-SQL Server can validate that the message contains valid XML, that the message contains XML
+can validate that the message contains valid XML, that the message contains XML
 
 that conforms to a particular schema, or that the message contains no data at all. For arbitrary
 
@@ -67,9 +65,7 @@ message type that specifies no validation, SQL Server accepts any message conten
 
 includes binary data, XML, or empty messages.
 
-Service Broker offers a built-in message type named
-
-. If the message type isn't
+Service Broker offers a built-in message type named. If the message type isn't
 
 specified in a Service Broker
 
@@ -81,9 +77,7 @@ Service Broker includes system messages types that are used to report errors and
 
 dialogs. For more information, see
 
-Broker system messages
-
-.
+Broker system messages.
 
 ）
 

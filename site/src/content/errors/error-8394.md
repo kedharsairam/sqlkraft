@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description new development work, and plan to modify applications that currently use it. 8394 10 No Usage of deprecated index option syntax. The deprecated relational index option syntax structure wil
+Description new development work, and plan to modify applications that currently use it. 8394 10 No Usage of deprecated index option syntax.
 
 ## Severity
 

@@ -15,9 +15,7 @@ This value is used for the appended date part for implicit conversion from
 
 to
 
-or
-
-.
+or.
 
 Calendar
 
@@ -75,9 +73,7 @@ For Informatica,
 
 is limited to the range
 
-to
-
-.
+to.
 
 A two-digit year that is less than or equal to the last two digits of the cutoff year is in the same
 
@@ -95,9 +91,7 @@ and the two-digit year
 
 is
 
-interpreted as
-
-.
+interpreted as.
 
 The current language setting determines the default date format. You can change the date
 
@@ -113,9 +107,7 @@ statements.
 
 The
 
-format isn't supported for
-
-.
+format isn't supported for.
 
 ## String literal formats for month-year-day
 
@@ -147,9 +139,7 @@ The
 
 data can be specified with four, six, or eight digits. A six-digit or eight-digit string is
 
-always interpreted as
-
-. The month and day must always be two digits. A four-digit string is
+always interpreted as. The month and day must always be two digits. A four-digit string is
 
 interpreted as the year.
 
@@ -177,8 +167,7 @@ interpreted as the year.
 -
 ```
 
-```sql
-.
+```sql.
 ```
 
 ```sql

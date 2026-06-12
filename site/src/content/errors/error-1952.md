@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 1952 16 No Index on view '%.*ls' cannot be created because the view contains an imprecise expression in a join. 1953 16 No Index on view '%.*ls' cannot be created because some arguments ar
+Description 1952 16 No Index on view '%.*ls' cannot be created because the view contains an imprecise expression in a join.
 
 ## Severity
 

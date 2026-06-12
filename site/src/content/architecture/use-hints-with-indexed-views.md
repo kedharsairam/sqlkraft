@@ -166,9 +166,7 @@ don't also specify the
 
 hint, the index hint is ignored. To specify use of a particular
 
-index, use
-
-.
+index, use.
 
 Generally, when the Query Optimizer matches an indexed view to a query, any hints specified
 
@@ -188,7 +186,7 @@ used in the plan.
 
 Hints aren't allowed in the definitions of indexed views. In compatibility mode 80 and higher,
 
-SQL Server ignores hints inside indexed view definitions when maintaining them, or when
+ignores hints inside indexed view definitions when maintaining them, or when
 
 executing queries that use indexed views. Although using hints in indexed view definitions
 
@@ -253,7 +251,7 @@ EXPAND VIEWS
 `XLOCK`
 
 ```sql
-INDEX (index_val[ ,...n] )
+INDEX (index_val[ ,.n] )
 ```
 
 `NOEXPAND`

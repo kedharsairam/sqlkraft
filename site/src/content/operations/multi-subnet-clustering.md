@@ -19,11 +19,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server multi-subnet clustering
+multi-subnet clustering
 
 08/26/2025
-
-Applies to:
 
 SQL Server
 
@@ -35,9 +33,7 @@ same location or in geographically dispersed sites. Clusters in geographically d
 
 are sometimes referred to as
 
-stretch clusters
-
-. Because there's no shared storage that all the
+stretch clusters. Because there's no shared storage that all the
 
 nodes can access, data should be replicated between the data storage on the multiple subnets.
 
@@ -51,4 +47,4 @@ SQL Server.
 
 Following are some examples of SQL Server FCIs that use multiple subnets:
 
-SQL Server multi-subnet failover cluster (two
+multi-subnet failover cluster (two

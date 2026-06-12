@@ -38,7 +38,7 @@ pass up data from the rowsets requested from the relational engine.
 
 format defined for the result set and returns the result set to the client.
 
-SQL Server evaluates some constant expressions early to improve query performance. This
+evaluates some constant expressions early to improve query performance. This
 
 optimization technique used by the query optimizer aims to simplify expressions at compile
 
@@ -48,7 +48,7 @@ time rather than at runtime. It involves evaluating constant expressions during 
 
 Note
 
-SQL Server Management Studio has three options to display execution plans:
+Management Studio has three options to display execution plans:
 
 The
 

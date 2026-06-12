@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 5570 16 No FILESTREAM Failed to find the garbage collection table. 5571 23 No Internal FILESTREAM error: failed to access the garbage collection table. 5572 23 No Internal FILESTREAM error
+Description 5570 16 No FILESTREAM Failed to find the garbage collection table. 5571 23 No Internal FILESTREAM error: failed to access the garbage collection table.
 
 ## Severity
 

@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Both SQL Server Always On availability groups and Always On Failover Cluster Instances (FCI)
@@ -57,9 +55,7 @@ node set is a majority of the voting nodes and witnesses in the WSFC cluster. Th
 
 overall health and status of a WSFC cluster is determined by a periodic
 
-quorum vote
-
-. The
+quorum vote. The
 
 presence of a quorum means that the cluster is healthy and able to provide node-level fault
 
@@ -83,6 +79,4 @@ If a WSFC cluster is set offline because of quorum failure, manual intervention 
 
 to bring it back online.
 
-For more information, see:
-
-.
+For more information, see:.

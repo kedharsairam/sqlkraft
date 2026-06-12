@@ -47,21 +47,15 @@ to open the script in Transact-SQL Editor.
 
 in the script, select
 
-, and
-
-.
+, and.
 
 3. In the
 
-field, change it to
-
-. Leave the
+field, change it to. Leave the
 
 option checked
 
-and select
-
-.
+and select.
 
 4. In the next screen, you can preview a list of scripts that this rename operation is going to
 
@@ -75,9 +69,7 @@ top pane and view the actual change in the scripts (highlighted in green) in the
 
 pane.
 
-5. Select
-
-.
+5. Select.
 
 6. For script files that are already opened in Table Designer or Transact-SQL Editor, the
 
@@ -87,9 +79,7 @@ on the left.
 
 7. Notice the addition of
 
-in
-
-. Double-click to open
+in. Double-click to open
 
 it. It contains an XML representation of all the changes in this session.
 

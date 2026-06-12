@@ -19,9 +19,7 @@ propagates to all SQL Server Subscribers by default. This functionality has some
 
 can disable it. For more information, see
 
-Make Schema Changes on Publication Databases
-
-.
+Make Schema Changes on Publication Databases.
 
 You can't enable compression for system tables. If the table is a heap, the rebuild operation for
 
@@ -31,9 +29,7 @@ mode for a multithreaded heap rebuild operation.
 
 For more information about data compression, see
 
-Data compression
-
-.
+Data compression.
 
 To evaluate how changing the compression state affects a table, an index, or a partition, use the
 
@@ -47,13 +43,9 @@ You can't change the compression setting of a single partition if the table has 
 
 indexes.
 
-The
+The. syntax rebuilds the specified partition.
 
-... syntax rebuilds the specified partition.
-
-The
-
-... syntax rebuilds all partitions.
+The. syntax rebuilds all partitions.
 
 When you drop columns that use the deprecated
 

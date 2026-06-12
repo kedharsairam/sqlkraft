@@ -23,9 +23,7 @@ infrastructure or production environments. Understanding these boundaries ensure
 
 expectations and supports a productive development workflow.
 
-GitHub Copilot
-
-. Developers must manually
+GitHub Copilot. Developers must manually
 
 review and execute all generated SQL or object-relational mapping (ORM) code.
 
@@ -57,15 +55,11 @@ GitHub Copilot sessions
 
 changing files or databases). New context resets the chat memory.
 
-The chat participant works
-
-. Cross-
+The chat participant works. Cross-
 
 database operations aren't supported.
 
-The integration is
-
-. Legacy or deprecated features might be unsupported.
+The integration is. Legacy or deprecated features might be unsupported.
 
 and its Dedicated SQL pool (formerly SQL DW) features
 

@@ -74,9 +74,7 @@ transaction mode on through either an API function or the Transact-SQL
 
 statement. This mode is also known as Autocommit OFF, see
 
-setAutoCommit Method (SQLServerConnection)
-
-.
+setAutoCommit Method (SQLServerConnection).
 
 After implicit transaction mode is enabled for a connection, the instance of the Database Engine
 
@@ -146,9 +144,7 @@ transaction log buffers on each resource manager are flushed to disk. For more i
 
 on delayed transaction durability, see the article
 
-Control Transaction Durability
-
-.
+Control Transaction Durability.
 
 If the transaction manager receives successful prepares from all of the resource managers, it
 

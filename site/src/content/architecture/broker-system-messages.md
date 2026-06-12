@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -59,31 +57,23 @@ logic to handle Dialog Timer messages. Service Broker provides these message typ
 
 service, whether they appear in the contract for the service or not. For more information, see
 
-Handle Service Broker error messages
-
-.
+Handle Service Broker error messages.
 
 When a remote service ends a dialog with an error or the local broker detects an unrecoverable
 
 error in a dialog, the local broker creates an Error Message. Error messages are of message
 
-type
-
-. Error messages are validated as
+type. Error messages are validated as
 
 well-formed XML.
 
-The XML document that is contained in an error message uses the namespace
-
-. The root element of the document has the
+The XML document that is contained in an error message uses the namespace. The root element of the document has the
 
 local name
 
 , and contains an element named
 
-and an element named
-
-. The
+and an element named. The
 
 element holds an integer value. The
 

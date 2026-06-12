@@ -15,9 +15,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2017 (14.x) and later versions
+2017 (14.x) and later versions
 
 This article explains the steps to create an Always On availability group (AG) with one replica on a
 
@@ -37,15 +35,13 @@ instances on Windows and Linux.
 
 Important
 
-SQL Server cross-platform availability groups, which include heterogeneous replicas with
+cross-platform availability groups, which include heterogeneous replicas with
 
 complete high-availability and disaster recovery support, is available with DH2i DxEnterprise.
 
 For more information, see
 
-SQL Server Availability Groups with Mixed Operating Systems
-
-.
+Availability Groups with Mixed Operating Systems.
 
 View the following video to find out about cross-platform availability groups with DH2i.
 

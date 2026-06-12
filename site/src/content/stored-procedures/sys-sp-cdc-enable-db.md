@@ -12,7 +12,7 @@ syntax: |
 
 ## Description
 
-Enables change data capture for the current database. This procedure must be executed for a database before any tables can be enabled for change data capture (CDC) in that database. Change data capture records insert, update, and delete activity applied to enabled tables, making the details of the changes available in an easily consumed relational format. Column information that mirrors the column structure of a tracked source table is captured for the modified rows, along with the metadata needed to apply the changes to a target environment. Transact-SQL syntax conventions Change data capture can't be enabled on system databases or distribution databases. Change data capture isn't available in every edition of SQL Server. For a list of features that are supported by the editions of SQL Server, see
+Enables change data capture for the current database. This procedure must be executed for a database before any tables can be enabled for change data capture (CDC) in that database. Change data capture records insert, update, and delete activity applied to enabled tables, making the details of the changes available in an easily consumed relational format. Column information that mirrors the column structure of a tracked source table is captured for the modified rows, along with the metadata needed to apply the changes to a target environment. Change data capture can't be enabled on system databases or distribution databases. Change data capture isn't available in every edition of SQL Server.
 
 ## Syntax
 
@@ -22,8 +22,6 @@ sys.sp_cdc_enable_db
 ```
 
 ## Remarks
-
-Applies to:
 
 Enables change data capture for the current database. This procedure must be executed for a
 
@@ -37,8 +35,6 @@ information that mirrors the column structure of a tracked source table is captu
 
 modified rows, along with the metadata needed to apply the changes to a target environment.
 
-Transact-SQL syntax conventions
-
 (success) or
 
 Change data capture can't be enabled on
@@ -51,7 +47,7 @@ Change data capture isn't available in every edition of SQL Server. For a list o
 
 that are supported by the editions of SQL Server, see
 
-SQL Server 2022
+2022
 
 ## Examples
 

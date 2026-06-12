@@ -17,13 +17,11 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
 
-SQL Server 2017 (14.x) containers start up as the root user by default, which can cause some
+2017 (14.x) containers start up as the root user by default, which can cause some
 
 security concerns. This article talks about security options that you have when running SQL Server
 
@@ -43,13 +41,11 @@ root) user.
 
 sample Dockerfile for non-root SQL Server containers
 
-and save it as
-
-.
+and save it as.
 
 2. Run the following command in the context of the dockerfile directory to build the non-root
 
-SQL Server container:
+container:
 
 3. Start the container.
 
@@ -61,9 +57,7 @@ Containers for SQL Server 2019 (15.x) and later versions automatically start up 
 
 while SQL Server 2017 (14.x) containers start as root by default. For more information on
 
-running SQL Server containers as non-root, see
-
-.
+running SQL Server containers as non-root, see.
 
 ）
 
@@ -78,7 +72,7 @@ instead.
 ```cmd
 mssql dockerfile cd
 <path to dockerfile>
-docker build -t 2017-latest-non-root .
+docker build -t 2017-latest-non-root.
 SA_PASSWORD
 MSSQL_SA_PASSWORD
 ```

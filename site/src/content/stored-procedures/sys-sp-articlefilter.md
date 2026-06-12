@@ -2,7 +2,7 @@
 name: "sys.sp_articlefilter"
 title: "sp_articlefilter"
 category: "general"
-description: "Filters data that is published based on a table article. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication that contains the article."
+description: "Filters data that is published based on a table article. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -32,7 +32,7 @@ syntax: |
 
 ## Description
 
-Filters data that is published based on a table article. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication that contains the article. The name of the filter stored procedure to be created from the . You must specify a unique name for the article filter.
+Filters data that is published based on a table article. This stored procedure is executed at the Publisher on the publication database.
 
 ## Syntax
 
@@ -63,8 +63,7 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . Define an Article Define and Modify a Static Row Filter sp_addarticle (Transact-SQL) sp_articleview (Transact-SQL) sp_changearticle (Transact-SQL) sp_droparticle (Transact-SQL) sp_helparticle (Transact-SQL) Replication stored procedures (Transact-SQL) Related content
-
+Only members of the fixed server role or fixed database role can execute. Define an Article Define and Modify a Static Row Filter sp_addarticle (Transact-SQL) sp_articleview (Transact-SQL) sp_changearticle (Transact-SQL) sp_droparticle (Transact-SQL) sp_helparticle (Transact-SQL) Replication stored procedures (Transact-SQL)
 ## Examples
 
 ### Example 1
@@ -166,4 +165,4 @@ EXEC sp_addarticle
 EXEC sp_articlefilter
 ```
 
-_(... and 6 more examples)_
+_(. and 6 more examples)_

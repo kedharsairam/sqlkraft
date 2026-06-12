@@ -2,16 +2,14 @@
 name: "Graph functions"
 title: "Graph functions"
 category: "statements"
-description: "SQL Server 2017 (14.x) and later versions"
+description: "2017 (14.x) and later versions"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 Function
 
-Applies to:
-
-SQL Server 2017 (14.x) and later versions
+2017 (14.x) and later versions
 
 Azure SQL Database
 
@@ -27,8 +25,6 @@ Use the functions described on the pages in this section to extract values from,
 
 EDGE_ID_FROM_PARTS
 
-Construct an from
-
 and
 
 GRAPH_ID_FROM_EDGE_ID
@@ -42,15 +38,12 @@ NODE_ID_FROM_PARTS
 Construct a from an and a
 OBJECT_ID_FROM_EDGE_ID
 
-Extract the from an
 OBJECT_ID_FROM_NODE_ID
 
 Extract the from a
 SQL Graph Architecture
 
 SQL Graph Database Sample
-
-Next steps
 
 `edge_id`
 

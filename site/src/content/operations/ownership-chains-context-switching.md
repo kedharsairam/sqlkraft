@@ -29,8 +29,6 @@ Article
 
 08/10/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -85,9 +83,7 @@ the
 
 database installed. For more information about Mixed Mode
 
-security, see
-
-.
+security, see.
 
 ```cmd
 AdventureWorks2022

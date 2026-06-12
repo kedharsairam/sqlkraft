@@ -59,9 +59,7 @@ extension or portal.
 
 Install the latest version of the
 
-MSSQL extension for Visual Studio Code
-
-.
+MSSQL extension for Visual Studio Code.
 
 Active Fabric subscription and workspace permissions.
 

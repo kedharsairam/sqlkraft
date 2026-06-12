@@ -112,9 +112,7 @@ and
 
 database
 
-options to
-
-.
+options to.
 
 2. Set the appropriate transaction isolation level in an application:
 

@@ -29,33 +29,27 @@ Article
 
 07/18/2024
 
-Applies to:
-
 SQL Server
 
 This article describes the data that SQL Server enabled by Azure Arc transmits to Microsoft.
 
 Specifically:
 
-SQL Server enabled by Azure Arc collects usage data as described in this article and at
+enabled by Azure Arc collects usage data as described in this article and at
 
-Monitor Azure Arc-enabled SQL Server
-
-.
+Monitor Azure Arc-enabled SQL Server.
 
 Azure Connected Machine agent transmits this data to
 
 as outlined in
 
-Connected Machine agent network requirements - URLs
+Connected Machine agent network requirements - URLs.
 
-.
-
-SQL Server enabled by Azure Arc does not collect any personally identifiable information (PII)
+enabled by Azure Arc does not collect any personally identifiable information (PII)
 
 or end-user identifiable information or store any customer data.
 
-SQL Server enabled by Azure Arc uses the following products:
+enabled by Azure Arc uses the following products:
 
 Azure Arc-enabled servers
 
@@ -77,7 +71,7 @@ SQL Server update level
 
 SQL Server collation
 
-SQL Server enabled by Azure Arc instance
+enabled by Azure Arc instance
 
 ﾉ
 

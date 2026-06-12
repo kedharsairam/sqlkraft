@@ -1,7 +1,7 @@
 ---
 name: "To Generate Script to Enable Query Store on all"
 title: "To Generate Script to Enable Query Store on all"
-description: "SQL Server diagnostic script for database operations."
+description: "diagnostic script for database operations."
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

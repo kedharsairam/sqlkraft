@@ -25,15 +25,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server on Linux VDI client SDK
+on Linux VDI client SDK
 
 Article
 
 •
 
 01/21/2025
-
-Applies to:
 
 SQL Server
 
@@ -61,15 +59,13 @@ are changed to integer equivalents.
 
 The COM interfaces are removed and replaced with a pair of C++ classes.
 
-SQL Server on Linux doesn't support named instances, so references to instance name
+on Linux doesn't support named instances, so references to instance name
 
 have been removed.
 
 The shared library is implemented in
 
-, installed at
-
-.
+, installed at.
 
 This article is an addendum to
 
@@ -81,9 +77,7 @@ Server VDI Specifications on Windows.
 
 Also review the sample VDI backup solution on the
 
-SQL Server Samples GitHub repository
-
-.
+Samples GitHub repository.
 
 On Linux, POSIX primitives are owned by the user creating them and their default group. For
 

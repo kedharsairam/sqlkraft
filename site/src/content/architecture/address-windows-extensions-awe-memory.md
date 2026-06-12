@@ -20,9 +20,7 @@ later versions).
 
 For more information, see
 
-Memory Limits for Windows
-
-.
+Memory Limits for Windows.
 
 By using
 
@@ -52,9 +50,7 @@ Lock pages in memory
 
 (SeLockMemoryPrivilege) privilege; see
 
-AllocateUserPhysicalPages notes
-
-. Therefore, the main benefit of using the AWE API is to keep
+AllocateUserPhysicalPages notes. Therefore, the main benefit of using the AWE API is to keep
 
 most of the memory resident in RAM if there's memory pressure on the system. For
 
@@ -62,9 +58,7 @@ information on how to allow SQL Server to use AWE, see
 
 Enable the Lock pages in memory
 
-option (Windows)
-
-.
+option (Windows).
 
 If LPIM is granted, we strongly recommend that you set
 
@@ -80,9 +74,7 @@ and
 
 Lock pages in memory
 
-(LPIM)
-
-.
+(LPIM).
 
 If LPIM isn't enabled, SQL Server switches to using conventional memory and in cases of OS
 

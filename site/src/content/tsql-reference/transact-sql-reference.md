@@ -46,21 +46,3 @@ sys.dm_audit_actions (Transact-SQL)
 sys.dm_audit_class_type_map (Transact-SQL)
 
 Create a Server Audit and Server Audit Specification
-
-Related content
-
-```sql
-ALTER
-SERVER
-AUDIT
-HIPAA_Audit
-WITH (STATE =
-OFF
-);
-GO
-DROP
-SERVER
-AUDIT
-HIPAA_Audit;
-GO
-```

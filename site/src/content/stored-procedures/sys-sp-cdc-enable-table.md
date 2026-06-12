@@ -35,7 +35,7 @@ syntax: |
 
 ## Description
 
-Enables change data capture for the specified source table in the current database. When a table is enabled for change data capture, a record of each data manipulation language (DML) operation applied to the table is written to the transaction log. The change data capture process retrieves this information from the log and writes it to change tables that are accessed Change data capture isn't available in every edition of SQL Server. For a list of features that are
+Enables change data capture for the specified source table in the current database. When a table is enabled for change data capture, a record of each data manipulation language (DML) operation applied to the table is written to the transaction log. The change data capture process retrieves this information from the log and writes it to change tables that are accessed Change data capture isn't available in every edition of SQL Server.
 
 ## Syntax
 

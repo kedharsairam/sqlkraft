@@ -31,7 +31,7 @@ syntax: |
 
 ## Description
 
-The percentage of space on each index page for storing data when the index is created or replaces the fill factor when the index was created, becoming the new default for the index and for any other nonclustered indexes rebuilt, because a clustered index is uses the fill factor value last specified for the index. This value is stored in the must be specified. If isn't specified, the default fill factor, 100, is used. For more information, see Specify Fill Factor for an Index Suppresses all informational messages that have severity levels from 0 through 10. rebuilds an index for a table or all indexes defined for a table. By allowing an index to be rebuilt dynamically, indexes enforcing either PRIMARY KEY or UNIQUE constraints can be rebuilt without having to drop and re-create those constraints. This means that an index
+The percentage of space on each index page for storing data when the index is created or replaces the fill factor when the index was created, becoming the new default for the index and for any other nonclustered indexes rebuilt, because a clustered index is uses the fill factor value last specified for the index. This value is stored in the must be specified. If isn't specified, the default fill factor, 100, is used. For more information, see Specify Fill Factor for an Index Suppresses all informational messages that have severity levels from 0 through 10. rebuilds an index for a table or all indexes defined for a table. By allowing an index to be rebuilt dynamically, indexes enforcing either PRIMARY KEY or UNIQUE constraints can be rebuilt without having to drop and re-create those constraints.
 
 ## Syntax
 

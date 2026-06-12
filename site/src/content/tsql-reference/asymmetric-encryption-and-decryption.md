@@ -2,12 +2,10 @@
 name: "Asymmetric encryption and decryption"
 title: "Asymmetric encryption and decryption"
 category: "operators"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 

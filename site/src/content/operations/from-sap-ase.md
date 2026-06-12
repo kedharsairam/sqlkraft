@@ -28,8 +28,6 @@ Article
 
 09/16/2024
 
-Applies to:
-
 SQL Server
 
 In this guide, you learn how to migrate your SAP ASE databases to SQL Server by using SQL
@@ -38,9 +36,7 @@ Server Migration Assistant for SAP ASE (SSMA for SAP ASE).
 
 For other migration guides, see
 
-Azure Database Migration Guides
-
-.
+Azure Database Migration Guides.
 
 Before you begin migrating your SAP ASE database to SQL Server:
 
@@ -48,11 +44,9 @@ Verify that your source environment is supported.
 
 Get
 
-SQL Server Migration Assistant for SAP Adaptive Server Enterprise (formerly SAP
+Migration Assistant for SAP Adaptive Server Enterprise (formerly SAP
 
-Sybase ASE)
-
-.
+Sybase ASE).
 
 Get connectivity and sufficient permissions to access both the source and target.
 
@@ -66,23 +60,17 @@ migration, migrate Sybase database objects to SQL Server, and then migrate data 
 
 Server. To learn more, see
 
-SQL Server Migration Assistant for Sybase (SybaseToSQL)
-
-.
+Migration Assistant for Sybase (SybaseToSQL).
 
 To create an assessment:
 
 1. Open
 
-SSMA for SAP ASE
-
-.
+SSMA for SAP ASE.
 
 2. On the
 
-menu, select
-
-.
+menu, select.
 
 3. Enter a project name and a location to save your project. Then select
 
@@ -90,9 +78,7 @@ SQL Server
 
 as the
 
-migration target from the dropdown list, and select
-
-.
+migration target from the dropdown list, and select.
 
 4. In the
 

@@ -21,13 +21,11 @@ pubDate: 2025-12-01
 
 09/02/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server uses dialog security for any conversation to a service for which a remote service
+uses dialog security for any conversation to a service for which a remote service
 
 binding exists in the database that hosts the initiating service. When the database that hosts
 
@@ -61,9 +59,7 @@ for the remote database.
 
 Note
 
-The certificate must be encrypted with the master key. For more information, see
-
-.
+The certificate must be encrypted with the master key. For more information, see.
 
 ７
 

@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to configure the session-timeout period of an Always On availability
@@ -47,9 +45,7 @@ and the primary replica of the availability group. For more information about th
 
 timeout period, see
 
-Overview of Always On Availability Groups (SQL Server)
-
-.
+Overview of Always On Availability Groups (SQL Server).
 
 You must be connected to the server instance that hosts the primary replica.
 

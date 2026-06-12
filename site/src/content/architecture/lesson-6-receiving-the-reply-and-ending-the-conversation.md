@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -47,9 +45,7 @@ reply message and end the conversation. The
 
 statement retrieves the reply
 
-message from the
-
-. The
+message from the. The
 
 statement ends the initiator
 

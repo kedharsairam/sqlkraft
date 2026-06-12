@@ -27,8 +27,6 @@ Article
 
 10/03/2023
 
-Applies to:
-
 SQL Server
 
 The FileTable feature brings support for the Windows file namespace and compatibility with
@@ -51,9 +49,7 @@ The FileTable feature builds on top of SQL Server FILESTREAM technology. To lear
 
 FILESTREAM, see
 
-FILESTREAM (SQL Server)
-
-.
+FILESTREAM (SQL Server).
 
 The goals of the FileTable feature include the following:
 

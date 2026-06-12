@@ -2,12 +2,10 @@
 name: "Predicates"
 title: "Predicates"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -35,9 +33,7 @@ is an expression that evaluates to
 
 ,
 
-, or
-
-. Predicates are used in
+, or. Predicates are used in
 
 the search condition of
 
@@ -55,11 +51,9 @@ clauses, and other constructs where a Boolean value is required.
 
 For more information, including how to specify a search condition, see
 
-Search condition
+Search condition.
 
-.
-
-SQL Server provides the following predicates:
+provides the following predicates:
 
 CONTAINS (Transact-SQL)
 
@@ -78,13 +72,3 @@ IN (Transact-SQL)
 LIKE (Transact-SQL)
 
 Search condition (Transact-SQL)
-
-Last updated on 11/18/2025
-
-Related content
-
-`TRUE`
-
-`FALSE`
-
-`UNKNOWN`

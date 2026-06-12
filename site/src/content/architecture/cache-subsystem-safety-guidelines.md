@@ -44,15 +44,13 @@ Some storage vendors use persistent memory (PMEM) as storage rather than a cache
 
 can improve overall performance. For more information, see
 
-and
-
-.
+and.
 
 ）
 
 Important
 
-SQL Server depends on
+depends on
 
 guaranteed delivery to stable media
 

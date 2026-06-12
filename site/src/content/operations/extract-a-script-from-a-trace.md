@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,9 +37,7 @@ Open a trace file (SQL Server Profiler)
 
 or
 
-Open a trace table (SQL Server Profiler)
-
-.
+Open a trace table (SQL Server Profiler).
 
 2. On the
 
@@ -49,14 +45,10 @@ menu, point to
 
 , point to
 
-, and then select
-
-.
+, and then select.
 
 3. In the
 
-dialog box, type a name for the Transact-SQL file, and select
+dialog box, type a name for the Transact-SQL file, and select.
 
-.
-
-SQL Server Profiler
+Profiler

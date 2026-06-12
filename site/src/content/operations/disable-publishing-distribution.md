@@ -29,8 +29,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -55,7 +53,7 @@ publication databases. If you want the data at the Subscriber to be deleted, you
 
 delete it manually.
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 
@@ -75,6 +73,4 @@ only offline copy of a database and is not related to a replication snapshot. Fo
 
 information, see
 
-Database Snapshots (SQL Server)
-
-.
+Database Snapshots (SQL Server).

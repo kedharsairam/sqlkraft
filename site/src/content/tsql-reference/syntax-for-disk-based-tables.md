@@ -2,12 +2,10 @@
 name: "Syntax for disk-based tables"
 title: "Syntax for disk-based tables"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -45,11 +43,7 @@ the appropriate syntax examples:
 
 Altering Memory-Optimized Tables
 
-For more information about the syntax conventions, see
-
-Transact-SQL syntax conventions
-
-.
+For more information about the syntax conventions, see.
 
 
 
@@ -57,11 +51,7 @@ Tip
 
 The syntax of
 
-varies in different versions of the
-
-. Use the version selector dropdown list to
-
-.
+varies in different versions of the. Use the version selector dropdown list to.
 
 ```sql
 ALTER TABLE
@@ -161,7 +151,7 @@ ADD
 <table_constraint>
 |
 <column_set_definition>
-} [ ,...n ]
+} [ ,.n ]
 | [ system_start_time_column_name datetime2
 GENERATED
 ALWAYS
@@ -291,12 +281,12 @@ constraint_name
 [
 WITH (
 <drop_clustered_constraint_option>
-[ ,...n ] )
+[ ,.n ] )
 ]
 ```
 
 ```sql
-} [ ,...n ]
+} [ ,.n ]
 |
 COLUMN
 [
@@ -305,14 +295,14 @@ EXISTS
 ]
 {
 column_name
-} [ ,...n ]
+} [ ,.n ]
 |
 PERIOD
 FOR
 SYSTEM
 _
 TIME
-} [ ,...n ] ]
+} [ ,.n ] ]
 | [
 WITH
 {
@@ -327,7 +317,7 @@ NOCHECK
 CONSTRAINT
 {
 ALL
-| constraint_name [ ,...n ] }
+| constraint_name [ ,.n ] }
 | {
 ENABLE
 |
@@ -336,7 +326,7 @@ DISABLE
 TRIGGER
 {
 ALL
-| trigger_name [ ,...n ] }
+| trigger_name [ ,.n ] }
 | {
 ENABLE
 |
@@ -393,7 +383,7 @@ ON
 HISTORY
 _
 TABLE
-= schema_name . history_table_name
+= schema_name. history_table_name
 [,
 DATA
 _
@@ -445,7 +435,7 @@ DELETION
 OFF
 |
 ON
-[(  [
+[( [
 FILTER
 _
 COLUMN
@@ -485,14 +475,14 @@ ALL
 [
 WITH (
 <rebuild_option>
-[ ,...n ] ) ]
+[ ,.n ] ) ]
 | [
 PARTITION
 = partition_number
 [
 WITH (
 <single_partition_rebuild_option>
-[ ,...n ] ) ]
+[ ,.n ] ) ]
 ```
 
 ```sql
@@ -603,7 +593,7 @@ PAUSED
 )
 | (
 <table_stretch_options>
-[, ...n] )
+[,.n] )
 }
 )
 }

@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 9690 10 Yes The %S_MSG endpoint is now listening for connections. 9691 10 No The %S_MSG endpoint has stopped listening for connections. 9692 16 No The %S_MSG endpoint cannot listen on port
+Description 9690 10 Yes The %S_MSG endpoint is now listening for connections. 9691 10 No The %S_MSG endpoint has stopped listening for connections.
 
 ## Severity
 

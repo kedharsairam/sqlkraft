@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 To create a user-defined type (UDT) on the client, the assembly registered as a UDT in a SQL
@@ -63,9 +61,7 @@ occur. In this case, use regular troubleshooting mechanisms to determine why the
 
 assembly containing the UDT can't be found by the calling application. For more
 
-information, see
-
-.
+information, see.
 
 ```sql
 Native

@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to prepare a database for an Always On availability group in SQL
@@ -77,8 +75,6 @@ availability group primary replica and one or more secondary replicas. For more
 
 information, see
 
-Prerequisites for migrating from log Shipping to Always On Availability
-
-.
+Prerequisites for migrating from log Shipping to Always On Availability.
 
 Prerequisites and restrictions

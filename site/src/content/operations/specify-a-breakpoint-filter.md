@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-Applies to:
-
 SQL Server
 
 A breakpoint filter limits the breakpoint to acting only on specified computers, operating

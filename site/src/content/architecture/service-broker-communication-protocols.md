@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/03/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -31,7 +29,7 @@ Service Broker uses a broker-specific protocol to communicate with remote broker
 
 manages connections separately from the normal pool of client connections. In order for two
 
-SQL Server instances to exchange Service Broker messages, each instance must be able to send
+instances to exchange Service Broker messages, each instance must be able to send
 
 TCP/IP traffic to the port that the other instance uses for Service Broker communications. By
 

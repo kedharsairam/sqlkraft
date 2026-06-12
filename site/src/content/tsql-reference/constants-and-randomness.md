@@ -51,11 +51,7 @@ SQUARE
 
 Square of the specified value.
 
-These functions provide numerical constants and pseudo-random number generation for
-
 sampling, stochastic modeling, testing, and procedural computations. Use them for simulation,
-
-Monte Carlo analysis, randomized selection, or creating reproducible test scenarios when
 
 seeded.
 

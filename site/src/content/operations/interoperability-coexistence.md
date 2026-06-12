@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Database mirroring can be used with the following features or components of SQL Server:
@@ -55,9 +53,7 @@ Cross-Database
 
 Transactions and Distributed Transactions for Always On Availability Groups and Database
 
-Mirroring (SQL Server)
-
-.
+Mirroring (SQL Server).
 
 Always On availability groups
 

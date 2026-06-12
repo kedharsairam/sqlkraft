@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -57,7 +55,7 @@ icon or press the Windows key and start to type "SQL Server Profiler
 
 18", or a later version as appropriate. When the
 
-SQL Server Profiler 18
+Profiler 18
 
 tile appears, select it.
 
@@ -65,9 +63,7 @@ On the Database Engine Tuning Advisor
 
 menu, select
 
-SQL Server Profiler
-
-.
+Profiler.
 
 You can start SQL Server Profiler from several locations in SQL Server Management Studio.
 
@@ -83,6 +79,4 @@ In the SQL Server Management Studio
 
 menu, select
 
-SQL Server Profiler
-
-.
+Profiler.

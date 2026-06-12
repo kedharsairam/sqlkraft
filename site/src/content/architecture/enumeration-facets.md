@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -31,7 +29,7 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-SQL Server rejects XML schemas with types that have pattern facets or enumerations that
+rejects XML schemas with types that have pattern facets or enumerations that
 
 violate those facets.
 
@@ -42,8 +40,6 @@ mixed-case value. It would also be rejected because this value violates the patt
 limits values to only lowercase letters.
 
 Requirements and Limitations for XML Schema Collections on the Server
-
-Last updated on 11/18/2025
 
 ```sql
 CREATE

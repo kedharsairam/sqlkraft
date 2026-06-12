@@ -15,9 +15,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2022 (16.x) and later versions on Linux
+2022 (16.x) and later versions on Linux
 
 This article describes how to set up and manage password policies for SQL Server logins on Linux.
 
@@ -57,9 +55,7 @@ be changed.
 
 Note
 
-Password policies are also available on Windows. For more information, see
-
-.
+Password policies are also available on Windows. For more information, see.
 
 ﾉ
 

@@ -27,8 +27,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 If a transaction is active at the point at which common language runtime (CLR) code running
@@ -65,9 +63,7 @@ If you want to terminate the external transaction from within your stored proced
 
 function. In this case, you use
 
-TransactionScope
-
-. For example, the following code rolls
+TransactionScope. For example, the following code rolls
 
 back the current transaction:
 
@@ -83,17 +79,13 @@ The managed procedure or function can return a value by using an output paramete
 
 The calling Transact-SQL procedure can check the returned value and, if appropriate,
 
-execute
-
-.
+execute.
 
 The managed procedure or function can throw a custom exception. The calling Transact-
 
 SQL procedure can catch the exception thrown by the managed procedure or function in
 
-a try/catch block and execute
-
-.
+a try/catch block and execute.
 
 ```sql
 System.Transactions.Transaction

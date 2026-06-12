@@ -35,8 +35,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -87,17 +85,13 @@ First, the query must produce the following two metadata columns:
 
 The first column must provide the tag number, integer type, of the current element, and
 
-the column name must be
-
-. Your query must provide a unique tag number for each
+the column name must be. Your query must provide a unique tag number for each
 
 element that will be constructed from the rowset.
 
 The second column must provide a tag number of the parent element, and this column
 
-name must be
-
-. In this way, the Tag and the Parent column provide hierarchy
+name must be. In this way, the Tag and the Parent column provide hierarchy
 
 information.
 

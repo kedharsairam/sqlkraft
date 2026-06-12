@@ -2,7 +2,7 @@
 name: "sys.sp_create_removable"
 title: "sp_create_removable"
 category: "general"
-description: "Creates a removable media database. Creates three or more files (one for the system catalog tables, one for the transaction log, and one or more for the data tables) and places the Transact-SQL syntax conventions This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature."
+description: "Creates a removable media database. Creates three or more files (one for the system catalog tables, one for the transaction log, and one or more for the data tables) and places the This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -53,7 +53,7 @@ syntax: |
 
 ## Description
 
-Creates a removable media database. Creates three or more files (one for the system catalog tables, one for the transaction log, and one or more for the data tables) and places the Transact-SQL syntax conventions This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
+Creates a removable media database. Creates three or more files (one for the system catalog tables, one for the transaction log, and one or more for the data tables) and places the This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
 
 ## Syntax
 
@@ -90,7 +90,7 @@ N
 'dataphysical1'
 ]
 [ , [ @datasize1 = ] datasize1 ]
-[ , ... ]
+[ ,. ]
 [ , [ @datalogical16 = ]
 N
 'datalogical16'

@@ -2,7 +2,7 @@
 name: "sys.sp_purge_jobhistory"
 title: "sp_purge_jobhistory"
 category: "general"
-description: "Removes the history records for a job in the SQL Server Agent service. Transact-SQL syntax conventions The name of the job for which to delete the history records. must be specified, but both can't be specified."
+description: "Removes the history records for a job in the SQL Server Agent service."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -20,7 +20,7 @@ syntax: |
 
 ## Description
 
-Removes the history records for a job in the SQL Server Agent service. Transact-SQL syntax conventions The name of the job for which to delete the history records. must be specified, but both can't be specified. fixed server role or members of the users don't specify these arguments, the job history for all local and multiserver jobs is deleted within the time specified by users don't specify these arguments, the job history for all local jobs is
+Removes the history records for a job in the SQL Server Agent service.
 
 ## Syntax
 

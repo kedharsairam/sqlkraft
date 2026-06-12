@@ -32,8 +32,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Transact-SQL supports a subset of the XQuery language that is used for querying the
@@ -54,9 +52,7 @@ of the subset of XQuery that is supported in SQL Server.
 
 For more information, see the
 
-W3C XQuery 1.0 Language Specification
-
-.
+W3C XQuery 1.0 Language Specification.
 
 XQuery is a language that can query structured or semi-structured XML data. With the
 
@@ -82,9 +78,7 @@ type, you use the
 
 xml Data
 
-Type Methods
-
-. For example, you can declare a variable of
+Type Methods. For example, you can declare a variable of
 
 type and query it by using the
 

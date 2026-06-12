@@ -27,8 +27,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 The problem of internal data access is a fairly common scenario. That is, you wish to access the

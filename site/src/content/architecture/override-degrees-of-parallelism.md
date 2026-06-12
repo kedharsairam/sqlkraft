@@ -26,9 +26,7 @@ enabled for parallelism using the TABLOCK hint. For more information, see
 
 INSERT (Transact-
 
-SQL)
-
-.
+SQL).
 
 Static and keyset-driven cursors can be populated by parallel execution plans. However, the
 
@@ -42,11 +40,7 @@ configuration can be set at various levels:
 
 1. Server level, using the
 
-server configuration option
-
-.
-
-Applies to:
+server configuration option.
 
 SQL Server
 
@@ -54,23 +48,15 @@ SQL Server
 
 Resource Governor workload group configuration
 
-option
-
-.
-
-Applies to:
+option.
 
 SQL Server
 
 3. Database level, using the
 
-database scoped configuration
+database scoped configuration.
 
-.
-
-Applies to:
-
-SQL Server and Azure SQL Database
+and Azure SQL Database
 
 4. Query or index statement level, using the
 
@@ -86,31 +72,27 @@ number of processors dedicated to an online index operation. In this way, you ca
 
 balance the resources used by an index operation with those of the concurrent users.
 
-Applies to:
-
-SQL Server and Azure SQL Database
+and Azure SQL Database
 
 ７
 
 Note
 
-SQL Server 2019 (15.x) introduces automatic recommendations for setting the
+2019 (15.x) introduces automatic recommendations for setting the
 
 MAXDOP server configuration option during the installation process. The setup user
 
 interface allows you to either accept the recommended settings or enter your own
 
-value. For more information, see
-
-.
+value. For more information, see.
 
 ### MAXDOP recommendations
 
 ```sql
-SELECT ... INTO
+SELECT. INTO
 ```
 
 ```sql
-INSERT ...
+INSERT.
 SELECT
 ```

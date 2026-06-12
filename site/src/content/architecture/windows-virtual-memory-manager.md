@@ -1,12 +1,10 @@
 ---
 title: "Windows Virtual Memory Manager"
 topic: "memory-management"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -26,9 +24,7 @@ For more information on the amount of physical memory supported by different ope
 
 systems, see the Windows documentation on
 
-Memory Limits for Windows Releases
-
-.
+Memory Limits for Windows Releases.
 
 Virtual memory systems allow the over-commitment of physical memory, so that the ratio of
 
@@ -38,7 +34,7 @@ with various physical memory configurations. However, using significantly more v
 
 than the combined average working sets of all the processes can cause poor performance.
 
-SQL Server dynamically acquires and frees memory as required. Typically, an administrator
+dynamically acquires and frees memory as required. Typically, an administrator
 
 doesn't have to specify how much memory should be allocated to SQL Server, although the
 
@@ -64,9 +60,7 @@ can't get the minimum amount of requested memory, and receive a time-out error w
 
 waiting for memory resources. To resolve this, increase the
 
-query wait Option
-
-. For a parallel
+query wait Option. For a parallel
 
 query, consider reducing the
 
@@ -86,7 +80,7 @@ database, causing
 
 to
 
-SQL Server memory architecture
+memory architecture
 
 `tempdb`
 

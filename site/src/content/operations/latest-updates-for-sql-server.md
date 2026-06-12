@@ -37,15 +37,13 @@ available. The Excel file also contains detailed fix lists for SQL Server 2022, 
 
 2019, and SQL Server 2017.
 
-.
-
 To learn what a specific version number of SQL Server maps to, or to find the KB article
 
 information for a specific cumulative update package or a service pack, search for the
 
 version number in the
 
-SQL Server Complete Version
+Complete Version
 
 list tables.
 
@@ -71,6 +69,4 @@ Note
 
 For information about SQL Server Support lifecycle, see
 
-SQL Server support lifecycle
-
-.
+support lifecycle.

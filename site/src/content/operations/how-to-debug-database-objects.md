@@ -37,9 +37,7 @@ or
 
 How to: Debug while a Test Is Running
 
-(Visual Studio 2012)
-
-.
+(Visual Studio 2012).
 
 One or more Transact-SQL scripts that run on objects in the database that you're testing.
 
@@ -61,26 +59,18 @@ testing.
 
 4. Debug your unit test. In this procedure, you run the test in debug mode.
 
-5. Open
-
-.
+5. Open.
 
 2. In
 
-, right-click the test project, and select
-
-.
+, right-click the test project, and select.
 
 A properties page that has the same name as the test project opens.
 
-3. On the properties page, select
-
-.
+3. On the properties page, select.
 
 4. Under
 
-, select
-
-.
+, select.
 
 5. Save your changes.

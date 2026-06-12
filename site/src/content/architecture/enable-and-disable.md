@@ -40,13 +40,13 @@ No
 
 N/A
 
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 Yes
 
 No (can be enabled per database)
 
-SQL Server 2022 (16.x) and older versions
+2022 (16.x) and older versions
 
 No
 
@@ -58,9 +58,7 @@ command. For more information, see
 
 ALTER DATABASE SET
 
-options
-
-.
+options.
 
 Optimized locking builds on other database features:
 
@@ -107,6 +105,6 @@ AUTD
 2022
 
 ```sql
-ALTER DATABASE ...
+ALTER DATABASE.
 SET OPTIMIZED_LOCKING = ON | OFF
 ```

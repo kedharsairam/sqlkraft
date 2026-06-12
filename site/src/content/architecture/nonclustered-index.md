@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -63,9 +61,7 @@ on the table doesn't already exist. For more information, see
 
 Unique constraints and
 
-check constraints
-
-.
+check constraints.
 
 By default, a nonclustered index is created if clustered isn't specified. The maximum
 
@@ -81,9 +77,7 @@ After a unique clustered index has been created on a view, nonclustered indexes 
 
 created. For more information, see
 
-Create indexed views
-
-.
+Create indexed views.
 
 ```sql
 UNIQUE

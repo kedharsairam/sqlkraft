@@ -2,7 +2,7 @@
 name: "Syntax options"
 title: "Syntax options"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -10,8 +10,6 @@ pubDate: 2026-05-29
 ## Common syntax
 
 ## Full syntax
-
-Applies to:
 
 SQL Server
 
@@ -22,8 +20,6 @@ Azure SQL Managed Instance
 SQL database in Microsoft Fabric
 
 Creates a new table in the database.
-
-Transact-SQL syntax conventions
 
 Simple CREATE TABLE syntax (common if not using options):
 
@@ -37,13 +33,9 @@ Disk-based CREATE TABLE syntax:
 
 Note
 
-For reference to Warehouse in Microsoft Fabric, visit
+For reference to Warehouse in Microsoft Fabric, visit. For reference to Azure Synapse Analytics and Analytics Platform System
 
-. For reference to Azure Synapse Analytics and Analytics Platform System
-
-(PDW), visit
-
-.
+(PDW), visit.
 
 ## Syntax for memory optimized tables
 
@@ -57,7 +49,7 @@ TABLE
 { database_name.schema_name.table_name | schema_name.table_name | table_name }
 ( {
 <column_definition>
-} [ ,... n ] )
+} [ ,. n ] )
 [ ; ]
 ```
 
@@ -77,11 +69,11 @@ T able ]
 <column_set_definition>
 | [
 <table_constraint>
-] [ ,... n ]
+] [ ,. n ]
 | [
 <table_index>
 ] }
-[ ,... n ]
+[ ,. n ]
 [
 PERIOD
 FOR
@@ -119,7 +111,7 @@ ON
 [
 WITH (
 <table_option>
-[ ,... n ] ) ]
+[ ,. n ] ) ]
 [ ; ]
 <column_definition>
 ::=
@@ -206,7 +198,7 @@ ALGORITHM
 ) ]
 [
 <column_constraint>
-[ ,... n ] ]
+[ ,. n ] ]
 [
 <column_index>
 ]
@@ -237,7 +229,7 @@ NONCLUSTERED
 ]
 [ (
 <column_name>
-[ ,... n ] ) ]
+[ ,. n ] ) ]
 [
 WITH
 FILLFACTOR
@@ -245,7 +237,7 @@ FILLFACTOR
 |
 WITH (
 <index_option>
-[ ,... n ] )
+[ ,. n ] )
 ]
 [
 ON
@@ -315,7 +307,7 @@ NONCLUSTERED
 [
 WITH (
 <index_option>
-[ ,... n ] ) ]
+[ ,. n ] ) ]
 [
 ON
 { partition_scheme_name ( column_name )
@@ -361,7 +353,7 @@ FILLFACTOR
 |
 WITH (
 <index_option>
-[ ,... n ] )
+[ ,. n ] )
 ]
 [
 ON
@@ -436,7 +428,7 @@ NONCLUSTERED
 ASC
 |
 DESC
-] [ ,... n ] )
+] [ ,. n ] )
 [
 WITH
 FILLFACTOR
@@ -444,7 +436,7 @@ FILLFACTOR
 |
 WITH (
 <index_option>
-[ ,... n ] )
+[ ,. n ] )
 ]
 [
 ON
@@ -454,11 +446,11 @@ ON
 } ]
 |
 FOREIGN
-KEY ( column_name [ ,... n ] )
+KEY ( column_name [ ,. n ] )
 ```
 
 ```sql
-REFERENCES referenced_table_name [ ( ref_column [ ,... n ] ) ]
+REFERENCES referenced_table_name [ ( ref_column [ ,. n ] ) ]
 [
 ON
 DELETE
@@ -517,21 +509,21 @@ NONCLUSTERED
 ASC
 |
 DESC
-] [ ,... n ] )
+] [ ,. n ] )
 |
 INDEX index_name
 CLUSTERED
 COLUMNSTORE
 [
-ORDER (column_name [ , ...n ] ) ]
+ORDER (column_name [ ,.n ] ) ]
 |
 INDEX index_name [
 NONCLUSTERED
 ]
-COLUMNSTORE ( column_name [ ,... n ] )
+COLUMNSTORE ( column_name [ ,. n ] )
 }
 [
-INCLUDE ( column_name [ ,... n ] ) ]
+INCLUDE ( column_name [ ,. n ] ) ]
 [
 WHERE
 <filter_predicate>
@@ -539,7 +531,7 @@ WHERE
 [
 WITH (
 <index_option>
-[ ,... n ] ) ]
+[ ,. n ] ) ]
 [
 ON
 { partition_scheme_name ( column_name )
@@ -576,7 +568,7 @@ PARTITIONS ( {
 |
 <range>
 }
-[ ,... n ] ) ] ]
+[ ,. n ] ) ] ]
 [
 XML
 _
@@ -593,7 +585,7 @@ PARTITIONS ( {
 |
 <range>
 }
-[ ,... n ] ) ] ]
+[ ,. n ] ) ] ]
 [
 FILETABLE
 _
@@ -693,7 +685,7 @@ ARCHIVE
 ON
 [ (
 <table_stretch_options>
-[ ,... n] ) ]
+[ ,. n] ) ]
 |
 OFF (
 MIGRATION
@@ -748,7 +740,7 @@ LEDGER
 ON
 [ (
 <ledger_option>
-[ ,... n ] ) ]
+[ ,. n ] ) ]
 |
 OFF
 ]
@@ -762,7 +754,7 @@ _
 VIEW
 = schema_name.ledger_view_name [ (
 <ledger_view_option>
-[ ,... n ]
+[ ,. n ]
 ) ] ]
 [
 APPEND
@@ -943,7 +935,7 @@ ON
 PARTITIONS ( { partition_number_expression |
 <range>
 }
-[ ,... n ] ) ]
+[ ,. n ] ) ]
 |
 XML
 _
@@ -960,7 +952,7 @@ PARTITIONS ( {
 |
 <range>
 }
-[ ,... n ] ) ]
+[ ,. n ] ) ]
 }
 <range>
 ::=
@@ -977,11 +969,11 @@ TABLE
 <column_definition>
 | [
 <table_constraint>
-] [ ,... n ]
+] [ ,. n ]
 | [
 <table_index>
 ]
-[ ,... n ] }
+[ ,. n ] }
 [
 PERIOD
 FOR
@@ -993,7 +985,7 @@ TIME ( system_start_time_column_name
 [
 WITH (
 <table_option>
-[ ,... n ] ) ]
+[ ,. n ] ) ]
 [ ; ]
 <column_definition>
 ::=
@@ -1058,7 +1050,7 @@ COUNT
 }
 [ (
 <column_name>
-[ ,... n ] ) ]
+[ ,. n ] ) ]
 | [
 FOREIGN
 KEY
@@ -1084,10 +1076,10 @@ NONCLUSTERED ( column_name [
 ASC
 |
 DESC
-] [ ,... n ])
+] [ ,. n ])
 |
 NONCLUSTERED
-HASH ( column_name [ ,... n ] )
+HASH ( column_name [ ,. n ] )
 WITH (
 BUCKET
 _
@@ -1097,6 +1089,6 @@ bucket_count )
 }
 |
 FOREIGN
-KEY ( column_name [ ,... n ] )
-REFERENCES referenced_table_name [ ( ref_column [ ,... n ] ) ]
+KEY ( column_name [ ,. n ] )
+REFERENCES referenced_table_name [ ( ref_column [ ,. n ] ) ]
 ```

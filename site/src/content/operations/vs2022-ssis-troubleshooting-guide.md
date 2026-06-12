@@ -27,8 +27,6 @@ pubDate: 2025-12-01
 
 10/14/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -37,7 +35,7 @@ Azure Synapse Analytics
 
 Visit the
 
-SQL Server Integration Services (SSIS) Blog
+Integration Services (SSIS) Blog
 
 for the latest information, tips, news, and
 
@@ -45,13 +43,11 @@ announcements about SSIS directly from the product team. Integration Services (S
 
 extension release notes are listed on the
 
-extension marketplace
-
-.
+extension marketplace.
 
 To design packages using Oracle and Teradata connectors and target an earlier version of
 
-SQL Server before SQL Server 2019 (15.x), in addition to the
+before SQL Server 2019 (15.x), in addition to the
 
 Microsoft Oracle
 
@@ -97,8 +93,6 @@ Important
 
 You can download the
 
-SQL Server Integration Services (SSIS)
+Integration Services (SSIS)
 
-extension from the
-
-.
+extension from the.

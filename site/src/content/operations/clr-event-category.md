@@ -33,8 +33,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -43,7 +41,7 @@ Azure SQL Managed Instance
 
 The
 
-event category includes event classes that are produced by the execution of .NET
+event category includes event classes that are produced by the execution of.NET
 
 Framework common language runtime (CLR) objects inside SQL Server.
 

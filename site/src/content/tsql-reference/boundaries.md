@@ -13,9 +13,7 @@ startdate and
 
 enddate
 
-, expressed in the boundary set by datepart
-
-.
+, expressed in the boundary set by datepart.
 
 For example,
 
@@ -29,9 +27,7 @@ For example,
 
 days, we reach the enddate
 
-of
-
-.
+of.
 
 For a return value out of range for
 
@@ -59,9 +55,7 @@ isn't a time datepart
 
 ,
 
-## returns
-
-.
+## returns.
 
 uses the time zone offset component of startdate
 
@@ -81,12 +75,9 @@ or enddate
 
 have a value.
 
-If only a time value is assigned to a date data type variable, sets the value of the missing date part to the default value:
-. If only a date value is assigned to a variable of a time or date data type,
+If only a time value is assigned to a date data type variable, sets the value of the missing date part to the default value:. If only a date value is assigned to a variable of a time or date data type,
 
-sets the value of the missing time part to the default value:
-
-. If either startdate
+sets the value of the missing time part to the default value:. If either startdate
 
 or enddate
 
@@ -98,8 +89,7 @@ If startdate
 
 and enddate
 
-have different date data types, and one has more time parts or fractional seconds precision than the other, sets the missing parts of the other to
-.
+have different date data types, and one has more time parts or fractional seconds precision than the other, sets the missing parts of the other to.
 
 The following statements have the same startdate
 
@@ -113,11 +103,7 @@ and enddate
 
 in each statement crosses one calendar or time boundary of its
 
-datepart
-
-. Each statement returns
-
-.
+datepart. Each statement returns.
 
 datetime2
 

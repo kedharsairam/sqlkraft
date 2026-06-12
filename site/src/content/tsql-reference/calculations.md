@@ -13,9 +13,7 @@ that have a product line of
 
 and that have
 
-days to manufacture that's less than
-
-.
+days to manufacture that's less than.
 
 The following examples return all rows from the
 

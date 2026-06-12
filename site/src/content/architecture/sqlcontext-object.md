@@ -31,15 +31,13 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 You invoke managed code in the server when you call a procedure or function, when you call a
 
 method on a common language runtime (CLR) user-defined type, or when your action fires a
 
-trigger defined in any of the .NET Framework languages. Because execution of this code is
+trigger defined in any of the.NET Framework languages. Because execution of this code is
 
 requested as part of a user connection, access to the context of the caller from the code
 
@@ -53,9 +51,7 @@ The context of the caller is abstracted in a
 
 object. For more information, see
 
-Microsoft.SqlServer.Server.SqlContext
-
-.
+Microsoft.SqlServer.Server.SqlContext.
 
 provides access to the following components.
 
@@ -69,9 +65,7 @@ through which results flow to the client. For more
 
 information, see
 
-SqlPipe object
-
-.
+SqlPipe object.
 
 This object can only be retrieved from within a CLR trigger. It provides information
 
@@ -79,9 +73,7 @@ about the operation that caused the trigger to fire and a map of the columns tha
 
 were updated. For more information, see
 
-SqlTriggerContext object
-
-.
+SqlTriggerContext object.
 
 This property is used to determine context availability.
 

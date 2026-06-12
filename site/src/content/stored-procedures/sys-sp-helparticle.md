@@ -2,7 +2,7 @@
 name: "sys.sp_helparticle"
 title: "sp_helparticle"
 category: "general"
-description: "Displays information about an article. This stored procedure is executed at the Publisher on the publication database. For Oracle Publishers, this stored procedure is executed at the Distributor Transact-SQL syntax conventions The name of an article in the publication. isn't supplied, information on all articles for the specified publication is returned. Specifies whether the filter clause should"
+description: "Displays information about an article. This stored procedure is executed at the Publisher on the publication database. For Oracle Publishers, this stored procedure is executed at the Distributor The name of an article in the publication. isn't supplied, information on all articles for the specified publication is returned. Specifies whether the filter clause should"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -27,7 +27,7 @@ syntax: |
 
 ## Description
 
-Displays information about an article. This stored procedure is executed at the Publisher on the publication database. For Oracle Publishers, this stored procedure is executed at the Distributor Transact-SQL syntax conventions The name of an article in the publication. isn't supplied, information on all articles for the specified publication is returned. Specifies whether the filter clause should be returned.
+Displays information about an article. This stored procedure is executed at the Publisher on the publication database. For Oracle Publishers, this stored procedure is executed at the Distributor The name of an article in the publication. isn't supplied, information on all articles for the specified publication is returned. Specifies whether the filter clause should be returned.
 
 ## Syntax
 

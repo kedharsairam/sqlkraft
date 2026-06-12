@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -49,7 +47,7 @@ database.
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 
@@ -67,9 +65,7 @@ or on which the user was granted some permission. For more information, see
 
 Metadata
 
-Visibility Configuration
-
-.
+Visibility Configuration.
 
 OBJECT_DEFINITION, OBJECTPROPERTY,
 

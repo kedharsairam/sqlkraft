@@ -54,23 +54,15 @@ Engine doesn't start generating row versions for modified data until all active 
 
 have modified data in the database complete. If there are active modification transactions, the
 
-Database Engine sets the state of the option to
+Database Engine sets the state of the option to. After all of the modification
 
-. After all of the modification
+transactions complete, the state of the option is changed to. Users can't start a
 
-transactions complete, the state of the option is changed to
-
-. Users can't start a
-
-transaction in the database until the option is
-
-. Similarly, the database passes through a
+transaction in the database until the option is. Similarly, the database passes through a
 
 state when the database administrator sets the
 
-option to
-
-.
+option to.
 
 The following Transact-SQL statement enables
 

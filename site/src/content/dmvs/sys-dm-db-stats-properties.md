@@ -10,7 +10,7 @@ syntax: "sys.dm_db_stats_properties (object_id, stats_id)"
 
 ## Description
 
-filtered index, the number of rows might be less than the number of rows in the table. Total number of rows sampled for statistics calculations. Number of steps in the histogram. For more information, see DBCC SHOW_STATISTICS (Transact-SQL) unfiltered_rows Total number of rows in the table before applying the filter expression (for filtered statistics). If statistics are not filtered, unfiltered_rows is equal to the value returns in the rows column. modification_counter Total number of modifications for the leading statistics column (the column on which the histogram is built) since the last time statistics were updated. Memory-optimized tables: starting SQL Server 2016 (13.x) and in Azure SQL Database this column contains: total number of modifications for the table since the last time statistics were
+filtered index, the number of rows might be less than the number of rows in the table. Total number of rows sampled for statistics calculations. Number of steps in the histogram. For more information, see DBCC SHOW_STATISTICS (Transact-SQL) unfiltered_rows Total number of rows in the table before applying the filter expression (for filtered statistics). If statistics are not filtered, unfiltered_rows is equal to the value returns in the rows column. modification_counter Total number of modifications for the leading statistics column (the column on which the histogram is built) since the last time statistics were updated.
 
 ## Syntax
 
@@ -50,7 +50,7 @@ statistics were updated.
 
 Memory-optimized tables: starting SQL Server 2016 (13.x) and in
 
-Azure SQL Database this column contains: total number of
+this column contains: total number of
 
 modifications for the table since the last time statistics were
 
@@ -64,7 +64,7 @@ not explicitly specify a sampling percentage. If value is zero, then
 
 no persisted sample percentage is set for this statistic.
 
-SQL Server 2016 (13.x) SP1 CU4
+2016 (13.x) SP1 CU4
 
 returns an empty rowset under any of the following conditions:
 

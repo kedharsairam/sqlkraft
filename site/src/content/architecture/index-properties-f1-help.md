@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -78,9 +76,7 @@ the dialog box. Indexes can be:
 
 ,
 
-, or
-
-.
+, or.
 
 Note
 

@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -43,39 +41,27 @@ Foreign keys reference keys in other tables, for more information, see
 
 Primary and Foreign Key
 
-Constraints
-
-.
+Constraints.
 
 Requires ALTER permission on the table.
 
 1. In
 
-, expand the table with the constraint and then expand
+, expand the table with the constraint and then expand.
 
-.
-
-2. Right-click the constraint and then select
-
-.
+2. Right-click the constraint and then select.
 
 3. In the
 
-dialog box, select
-
-.
+dialog box, select.
 
 1. In
 
 , connect to an instance of Database Engine.
 
-2. On the Standard bar, select
+2. On the Standard bar, select.
 
-.
-
-3. Copy and paste the following example into the query window and select
-
-.
+3. Copy and paste the following example into the query window and select.
 
 ```sql
 USE

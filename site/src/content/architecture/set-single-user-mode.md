@@ -27,8 +27,6 @@ Article
 
 07/22/2024
 
-Applies to:
-
 SQL Server
 
 This article describes how to set a user-defined database to single-user mode in SQL Server by
@@ -47,9 +45,7 @@ disconnected. At that point, a different user, but only one, can connect to the 
 
 Before you set the database to SINGLE_USER, verify that the
 
-AUTO_UPDATE_STATISTICS_ASYNC option is set to
-
-. When this option is set to
+AUTO_UPDATE_STATISTICS_ASYNC option is set to. When this option is set to
 
 , the
 
@@ -59,9 +55,7 @@ database, and you will be unable to access the database in single-user mode. For
 
 information, see
 
-ALTER DATABASE SET Options (Transact-SQL)
-
-.
+ALTER DATABASE SET Options (Transact-SQL).
 
 Requires ALTER permission on the database.
 
@@ -73,9 +67,7 @@ To set a database to single-user mode:
 
 expand that instance.
 
-2. Right-click the database to change, and then select
-
-.
+2. Right-click the database to change, and then select.
 
 3. In the
 
@@ -85,9 +77,7 @@ page.
 
 4. From the
 
-option, select
-
-.
+option, select.
 
 ```sql
 OFF

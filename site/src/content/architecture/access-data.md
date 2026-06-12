@@ -29,8 +29,6 @@ Article
 
 01/22/2024
 
-Applies to:
-
 SQL Server
 
 This article describes how to use the Transact-SQL INSERT, UPDATE, and DELETE statements to
@@ -43,9 +41,7 @@ statement. When you insert data into a FILESTREAM column, you can insert NULL or
 
 value.
 
-The following example shows how to insert
-
-. When the FILESTREAM value is
+The following example shows how to insert. When the FILESTREAM value is
 
 , the
 
@@ -67,9 +63,7 @@ The examples in this article require the FILESTREAM-enabled database and table t
 
 created in
 
-and
-
-.
+and.
 
 ```sql
 NULL

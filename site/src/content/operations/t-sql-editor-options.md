@@ -49,9 +49,7 @@ if you want SQL
 
 Server to halt the query after it obtains the specified number of rows. To
 
-turn off this option (so that all rows are returned), specify
-
-.
+turn off this option (so that all rows are returned), specify.
 
 The default value of 2,147,483,647 bytes indicates that SQL Server
 
@@ -99,9 +97,7 @@ affected by a Transact-SQL statement from being returned as part of the
 
 results. For more information, see
 
-SET NOCOUNT
-
-.
+SET NOCOUNT.
 
 When the value is
 

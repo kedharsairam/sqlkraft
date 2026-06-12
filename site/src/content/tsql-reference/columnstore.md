@@ -15,9 +15,7 @@ pubDate: 2026-05-29
 
 This example creates a table as a heap, and then converts it to a clustered columnstore index
 
-named
-
-. The creation of the clustered columnstore index changes the storage for
+named. The creation of the clustered columnstore index changes the storage for
 
 the entire table from rowstore to columnstore.
 
@@ -65,17 +63,13 @@ table.
 
 script out the
 
-indexes to re-create them later
-
-.
+indexes to re-create them later.
 
 3. Convert the rowstore table to a columnstore table with a clustered columnstore index.
 
 First, look up the name of the existing clustered rowstore index. In Step 1, we set the
 
-name of the index to
-
-. If the index name wasn't specified, it was given
+name of the index to. If the index name wasn't specified, it was given
 
 an automatically generated unique index name. You can retrieve the automatically
 
@@ -107,9 +101,7 @@ isn't typically recommended, but can some have narrow uses. For more information
 
 heaps, see
 
-Heaps (tables without clustered indexes)
-
-.
+Heaps (tables without clustered indexes).
 
 ## G. Defragment by reorganizing the columnstore index
 

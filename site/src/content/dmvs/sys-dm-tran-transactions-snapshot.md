@@ -10,7 +10,7 @@ syntax: "transaction_sequence_num"
 
 ## Description
 
-Transaction sequence number (XSN) of a snapshot transaction. Snapshot ID for each Transact-SQL statement started under read- committed using row versioning. This value is used to generate a transactionally consistent view of the database supporting each query that is being run under read-committed using row Transaction sequence number of a transaction that was active when the snapshot transaction started. On SQL Server and SQL Managed Instance, requires On SQL Database service objectives, and for databases in Microsoft Entra admin account, or membership in the is required. On all other SQL Database service objectives, permission on the database, or membership in the server role is required. Requires VIEW SERVER PERFORMANCE STATE permission on the server. When a snapshot transaction starts, the Database Engine records all of the transactions that are
+Transaction sequence number (XSN) of a snapshot transaction. Snapshot ID for each Transact-SQL statement started under read- committed using row versioning. This value is used to generate a transactionally consistent view of the database supporting each query that is being run under read-committed using row Transaction sequence number of a transaction that was active when the snapshot transaction started. On SQL Server and SQL Managed Instance, requires On SQL Database service objectives, and for databases in Microsoft Entra admin account, or membership in the is required. On all other SQL Database service objectives, permission on the database, or membership in the server role is required. Requires VIEW SERVER PERFORMANCE STATE permission on the server.
 
 ## Syntax
 

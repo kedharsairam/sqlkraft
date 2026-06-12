@@ -39,9 +39,7 @@ called
 
 , and the column that holds the values that currently exist under the columns
 
-being rotated, is called
-
-. These columns correspond to the
+being rotated, is called. These columns correspond to the
 
 pivot_column
 
@@ -69,9 +67,7 @@ value column aren't considered when computing an aggregation.
 
 Here's a partial result set.
 
-isn't the exact reverse of
-
-.
+isn't the exact reverse of.
 
 carries out an aggregation and merges possible
 
@@ -109,136 +105,8 @@ folder
 
 for the
 
-database. Right-click the view name, and then select
-
-.
+database. Right-click the view name, and then select.
 
 FROM clause (Transact-SQL)
 
 CASE (Transact-SQL)
-
-Last updated on 02/25/2026
-
-Related content
-
-`UNPIVOT`
-
-`PIVOT`
-
-`pvt`
-
-`Emp1`
-
-`Emp2`
-
-`Emp3`
-
-`Emp4`
-
-`Emp5`
-
-`Emp1`
-
-`Emp2`
-
-`Employee`
-
-`Orders`
-
-`PIVOT`
-
-```sql
--- Create the table and insert values as portrayed in the previous example.
-CREATE
-TABLE pvt (
-VendorID
-INT
-,
-Emp1
-INT
-,
-Emp2
-INT
-,
-Emp3
-INT
-,
-Emp4
-INT
-,
-Emp5
-INT
-);
-GO
-INSERT
-INTO pvt
-VALUES (1, 4, 3, 5, 4, 4);
-INSERT
-INTO pvt
-VALUES (2, 4, 1, 5, 5, 5);
-INSERT
-INTO pvt
-VALUES (3, 4, 3, 5, 4, 4);
-INSERT
-INTO pvt
-VALUES (4, 4, 2, 5, 5, 4);
-INSERT
-INTO pvt
-VALUES (5, 5, 1, 5, 5, 5);
-GO
--- Unpivot the table.
-SELECT
-VendorID, Employee, Orders
-FROM (
-SELECT
-VendorID, Emp1, Emp2, Emp3, Emp4, Emp5
-FROM pvt
-```
-
-`UNPIVOT`
-
-`PIVOT`
-
-`PIVOT`
-
-`UNPIVOT`
-
-`NULL`
-
-`UNPIVOT`
-
-`NULL`
-
-`PIVOT`
-
-`Sales.vSalesPersonSalesByFiscalYears`
-
-`AdventureWorks2025`
-
-`PIVOT`
-
-`AdventureWorks2025`
-
-```sql
-) p
-UNPIVOT (
-Orders
-FOR
-Employee
-IN (Emp1, Emp2, Emp3, Emp4, Emp5)
-)
-AS unpvt;
-GO
-VendorID    Employee    Orders
------------ ----------- ------
-1            Emp1       4
-1            Emp2       3
-1            Emp3       5
-1            Emp4       4
-1            Emp5       4
-2            Emp1       4
-2            Emp2       1
-2            Emp3       5
-2            Emp4       5
-2            Emp5       5
-```

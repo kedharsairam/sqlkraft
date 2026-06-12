@@ -10,7 +10,7 @@ syntax: "failure_condition_level"
 
 ## Description
 
-Returns a row for each Always On availability group in Windows Server Failover Clustering (WSFC). Each row contains the availability group metadata from the WSFC cluster. Unique identifier (GUID) of the availability group. Name of the availability group. This is a user- specified name that must be unique within the Windows Server Failover Cluster (WSFC). Resource ID for the WSFC cluster resource. Resource Group ID for the WSFC cluster resource
+Returns a row for each Always On availability group in Windows Server Failover Clustering (WSFC). Each row contains the availability group metadata from the WSFC cluster. Unique identifier (GUID) of the availability group.
 
 ## Syntax
 

@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Applications that use SqlOpenFilestream() to open Win32 file handles for reading or writing

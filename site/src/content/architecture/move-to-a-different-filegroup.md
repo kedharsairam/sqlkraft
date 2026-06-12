@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -31,9 +29,7 @@ For design considerations including why you might want to place a nonclustered i
 
 different filegroup, see
 
-Index Placement on Filegroups or Partitions Schemes
-
-.
+Index Placement on Filegroups or Partitions Schemes.
 
 If a table has a clustered index, moving the clustered index to a new filegroup moves the
 
@@ -67,6 +63,4 @@ containing the index that you want to move.
 
 folder.
 
-3. Right-click the table containing the index that you want to move and select
-
-.
+3. Right-click the table containing the index that you want to move and select.

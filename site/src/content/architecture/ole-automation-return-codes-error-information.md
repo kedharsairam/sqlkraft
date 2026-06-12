@@ -29,8 +29,6 @@ Article
 
 12/21/2022
 
-Applies to:
-
 SQL Server
 
 The OLE automation system stored procedures return an
@@ -51,9 +49,7 @@ value in a stored procedure return code, HRESULT has the form
 
 -214
 
-nnnnnnn
-
-.
+nnnnnnn.
 
 For example, passing an invalid object name (SQLDMO.Xyzzy) to sp_OACreate causes the
 
@@ -71,9 +67,7 @@ value.
 
 For examples of supported conversion, see
 
-H. Using CONVERT with binary and character data
-
-.
+H. Using CONVERT with binary and character data.
 
 sp_OAGetErrorInfo (Transact-SQL)
 

@@ -73,9 +73,7 @@ This sample runs
 
 on a specific partition.
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions, Azure SQL Database, and Azure SQL
+2016 (13.x) and later versions, Azure SQL Database, and Azure SQL
 
 Managed Instance
 
@@ -150,8 +148,6 @@ The following example performs a
 to defragment the index by physically removing
 
 rows that have been logically deleted from the table, and merging rowgroups.
-
-Applies to: SQL Server, Azure SQL Database, and Azure SQL Managed Instance
 
 ７
 
@@ -247,9 +243,7 @@ partition option. This example rebuilds partition 12. Starting with SQL Server 2
 
 recommend replacing
 
-with
-
-.
+with.
 
 : SQL Server 2012 (11.x)
 
@@ -419,7 +413,7 @@ FROM staging;
 SELECT
 *
 FROM sys.dm_db_column_store_row_group_physical_stats
-WHERE object_id  = object_id(
+WHERE object_id = object_id(
 'cci_target'
 );
 ALTER

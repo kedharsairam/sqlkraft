@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description action is required. 1844 16 No %ls is not supported on %ls. 1845 16 No Cannot find SQL Volume Shadow Copy Service (VSS) Writer in writer metadata document provided by VSS while creating au
+Description action is required. 1844 16 No %ls is not supported on %ls.
 
 ## Severity
 

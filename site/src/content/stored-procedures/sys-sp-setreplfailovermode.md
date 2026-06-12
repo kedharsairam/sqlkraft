@@ -2,7 +2,7 @@
 name: "sys.sp_setreplfailovermode"
 title: "sp_setreplfailovermode"
 category: "general"
-description: "Allows you to set the failover operation mode for subscriptions enabled for immediate updating, with queued updating as failover. This stored procedure is executed at the Subscriber on the subscription database. For more information about failover modes, see Updatable Subscriptions - For Transactional Replication Transact-SQL syntax conventions , with no default. The publication must The name of t"
+description: "Allows you to set the failover operation mode for subscriptions enabled for immediate updating, with queued updating as failover. This stored procedure is executed at the Subscriber on the subscription database. For more information about failover modes, see Updatable Subscriptions - For Transactional Replication , with no default. The publication must The name of t"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -25,7 +25,7 @@ syntax: |
 
 ## Description
 
-Allows you to set the failover operation mode for subscriptions enabled for immediate updating, with queued updating as failover. This stored procedure is executed at the Subscriber on the subscription database. For more information about failover modes, see Updatable Subscriptions - For Transactional Replication Transact-SQL syntax conventions , with no default. The publication must The name of the publication database.
+Allows you to set the failover operation mode for subscriptions enabled for immediate updating, with queued updating as failover. This stored procedure is executed at the Subscriber on the subscription database. For more information about failover modes, see Updatable Subscriptions - For Transactional Replication , with no default. The publication must The name of the publication database.
 
 ## Syntax
 

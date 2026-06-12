@@ -33,7 +33,7 @@ the changes take effect. These changes include any changes you make to
 
 with the
 
-SQL Server Test Configuration
+Test Configuration
 
 dialog box. If you don't rebuild the test project, the changes
 

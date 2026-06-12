@@ -27,15 +27,13 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 This article provides information about the tools that can be used to monitor and troubleshoot
 
 managed database objects and assemblies running in SQL Server.
 
-SQL Server provides SQL Trace and event notifications to monitor events that occur in the
+provides SQL Trace and event notifications to monitor events that occur in the
 
 Database Engine. By recording specified events, SQL Trace helps you troubleshoot
 
@@ -49,13 +47,11 @@ SQL Trace
 
 and
 
-Extended Events overview
-
-.
+Extended Events overview.
 
 Description
 
-SQL Server Event Class Reference
+Event Class Reference
 
 Used to monitor assembly load requests (success and
 
@@ -93,7 +89,7 @@ Used to monitor the execution of CLR and Transact-
 
 SQL routines.
 
-SQL Server provides objects and counters that can be used by Performance Monitor to monitor
+provides objects and counters that can be used by Performance Monitor to monitor
 
 activity in computers running an instance of SQL Server. An object is any SQL Server resource,
 
@@ -103,9 +99,7 @@ that determine various aspects of the objects to monitor. For more information, 
 
 Use SQL
 
-Server Objects
-
-.
+Server Objects.
 
 ﾉ
 

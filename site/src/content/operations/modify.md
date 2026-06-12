@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -45,9 +43,7 @@ original system template is left intact. For more information, see
 
 Save traces and trace
 
-templates
-
-.
+templates.
 
 You might need to derive a template from an existing trace file if you can't remember (or
 
@@ -63,17 +59,13 @@ Derive a template from a trace file or trace table (SQL Server Profiler)
 
 and
 
-Derive a template from a running trace (SQL Server Profiler)
-
-.
+Derive a template from a running trace (SQL Server Profiler).
 
 1. On the
 
 menu, point to
 
-, and then select
-
-.
+, and then select.
 
 2. In the
 

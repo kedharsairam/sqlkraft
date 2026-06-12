@@ -13,7 +13,7 @@ syntax: |
 
 ## Description
 
-Lists all the server-scoped event session definitions that exist in SQL Server or Azure SQL The unique ID of the event session. Not nullable. The user-defined name for identifying the event session. name Determines how event loss is handled. The default is nullable. Can be one of the following values: Describes how event loss is handled. The default is . Not nullable. Can be one of the . Events can be lost from the session.
+Lists all the server-scoped event session definitions that exist in SQL Server or Azure SQL The unique ID of the event session. Not nullable. The user-defined name for identifying the event session. name Determines how event loss is handled. The default is nullable.
 
 ## Syntax
 

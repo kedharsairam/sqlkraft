@@ -39,9 +39,7 @@ table hint as a query hint only in the
 
 context of a
 
-plan guide
-
-. Plan guides are useful when you can't modify the original query, for
+plan guide. Plan guides are useful when you can't modify the original query, for
 
 example, because it's a third-party application. The query hint specified in the plan guide is
 
@@ -125,9 +123,7 @@ guide must also contain the
 
 hint. See
 
-Example K
-
-.
+Example K.
 
 `INSERT`
 

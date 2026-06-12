@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -37,25 +35,19 @@ use the template with another instance of SQL Server Profiler.
 
 menu, point to
 
-, and then select
-
-.
+, and then select.
 
 2. In the
 
 dialog box, select the template to export in the
 
-list, and then select
-
-.
+list, and then select.
 
 The
 
 dialog box appears.
 
-3. Enter a file name for the exported template file, and then select
-
-.
+3. Enter a file name for the exported template file, and then select.
 
 Create a trace template (SQL Server Profiler)
 
@@ -65,4 +57,4 @@ Derive a template from a running trace (SQL Server Profiler)
 
 Derive a template from a trace file or trace table (SQL Server Profiler)
 
-SQL Server Profiler
+Profiler

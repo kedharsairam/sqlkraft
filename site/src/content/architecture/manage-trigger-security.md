@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -43,9 +41,7 @@ to run, the code inside
 
 executes in the context of the user
 
-privileges for
-
-. This default behavior can be exploited by users who want to introduce
+privileges for. This default behavior can be exploited by users who want to introduce
 
 malicious code in the database or server instance. For example, the following DDL trigger is
 

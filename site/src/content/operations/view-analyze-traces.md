@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -41,15 +39,15 @@ data column is included in the trace. To make sure that the correct events and
 
 columns are captured for use with Database Engine Tuning Advisor, use the predefined Tuning
 
-template that is supplied with SQL Server Profiler .
+template that is supplied with SQL Server Profiler.
 
-When you open a trace by using SQL Server Profiler , the trace file doesn't need to have the .trc
+When you open a trace by using SQL Server Profiler , the trace file doesn't need to have the.trc
 
 file extension if the file was created by either SQL Server Profiler or SQL Trace system stored
 
 procedures.
 
-SQL Server Profiler can also read SQL Trace
+Profiler can also read SQL Trace
 
 files and generic SQL script files. When
 
@@ -93,10 +91,7 @@ events had
 
 excessive wait time, execute the following:
 
-```cmd
-.log
-.log
-.log trace.txt
+```cmd.log.log.log trace.txt
 SELECT
 TextData,
 Duration

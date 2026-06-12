@@ -17,7 +17,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server help and feedback
+help and feedback
 
 ﾃ
 
@@ -35,9 +35,7 @@ with Microsoft support.
 
 For more information, visit the
 
-Microsoft Services Hub Resource Center
-
-.
+Microsoft Services Hub Resource Center.
 
 Customers with a Professional or Business support plan can
 
@@ -47,9 +45,7 @@ with Microsoft
 
 support. For more information, review
 
-Professional Support FAQ
-
-.
+Professional Support FAQ.
 
 Customers with an Azure technical support plan can
 
@@ -67,15 +63,13 @@ Find the latest troubleshooting guidance and resolution to common issues in the
 
 SQL Server
 
-Troubleshooting documentation
-
-.
+Troubleshooting documentation.
 
 Check the following resources to understand if you encounter any known issues.
 
 The
 
-SQL Server builds spreadsheet
+builds spreadsheet
 
 lists bugs that the product team fixes. This spreadsheet
 
@@ -93,9 +87,7 @@ article that corresponds to that update. For example,
 
 KB5075211 - Cumulative Update 2 for
 
-SQL Server 2025
-
-. View the table in that article under the "Improvements and fixes included in
+2025. View the table in that article under the "Improvements and fixes included in
 
 this update" section.
 

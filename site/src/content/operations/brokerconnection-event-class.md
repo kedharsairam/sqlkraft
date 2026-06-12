@@ -35,13 +35,11 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server generates a
+generates a
 
 event to report the status of a transport connection
 
@@ -125,9 +123,7 @@ No
 
 The type of event class captured. Always
 
-for
-
-.
+for.
 
 27
 

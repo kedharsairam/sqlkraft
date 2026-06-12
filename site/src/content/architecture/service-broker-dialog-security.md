@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/03/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -47,9 +45,7 @@ clause on the
 
 statement. However, if a remote service binding exists for the service that the
 
-conversation targets, the dialog uses security even when
-
-.
+conversation targets, the dialog uses security even when.
 
 For a dialog that uses security, Service Broker encrypts all messages sent outside a SQL Server
 
@@ -85,7 +81,7 @@ Security. Service Broker also performs a message integrity check to help detect 
 
 corruption or tampering.
 
-SQL Server creates a session key for a conversation that uses dialog security. To protect the
+creates a session key for a conversation that uses dialog security. To protect the
 
 session key while it's stored in the database, Service Broker encrypts the session key with the
 

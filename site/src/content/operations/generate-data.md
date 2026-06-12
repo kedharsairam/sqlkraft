@@ -29,8 +29,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -47,9 +45,7 @@ To generate sample data up to the current date:
 
 installation instructions, see
 
-Installation and configuration
-
-.
+Installation and configuration.
 
 2. Execute the following statement in the database:
 
@@ -63,9 +59,7 @@ runs.
 
 To increase or decrease the amount of data generated for orders per day, change the
 
-value for the parameter
-
-. Use the parameters
+value for the parameter. Use the parameters
 
 and
 

@@ -41,7 +41,7 @@ DESC
 /* Snapshot the current wait stats and store so that this can be compared over a time period
 Return the statistics between this point in time and the last collection point in time.
 **This data is maintained in tempdb so the connection must persist between each execution**
-**alternatively this could be modified to use a persisted table in tempdb.  if that is changed code should be included to clean up the table at some point.**
+**alternatively this could be modified to use a persisted table in tempdb. if that is changed code should be included to clean up the table at some point.**
 */
 USE tempdb;
 GO

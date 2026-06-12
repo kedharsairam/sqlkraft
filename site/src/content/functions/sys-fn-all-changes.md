@@ -104,17 +104,13 @@ Template Explorer
 
 The wrapper functions
 
-are dependent on the system functions
-
-. Error 313 is expected if LSN range supplied is
+are dependent on the system functions. Error 313 is expected if LSN range supplied is
 
 not appropriate when calling
 
 parameter is beyond the
 
-time of lowest LSN or highest LSN, then execution of these functions will return in error 313:
-
-. This error should be handled by the developer.
+time of lowest LSN or highest LSN, then execution of these functions will return in error 313:. This error should be handled by the developer.
 
 sys.fn*net_changes*<capture_instance>
 
@@ -156,17 +152,13 @@ Template Explorer
 
 The wrapper functions
 
-are dependent on the system functions
-
-. Error 313 is expected if LSN range supplied is
+are dependent on the system functions. Error 313 is expected if LSN range supplied is
 
 not appropriate when calling
 
 parameter is beyond the
 
-time of lowest LSN or highest LSN, then execution of these functions will return in error 313:
-
-. This error should be handled by the developer.
+time of lowest LSN or highest LSN, then execution of these functions will return in error 313:. This error should be handled by the developer.
 
 sys.fn*all_changes*<capture_instance>
 

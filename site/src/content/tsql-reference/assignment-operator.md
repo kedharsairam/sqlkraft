@@ -2,12 +2,10 @@
 name: "= (Assignment Operator)"
 title: "= (Assignment Operator)"
 category: "operators"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -41,9 +39,7 @@ heading and the expression that defines the values for the column. The following
 
 displays the column headings
 
-and
-
-. The string
+and. The string
 
 is
 
@@ -62,8 +58,6 @@ Operators (Transact-SQL)
 Compound Operators (Transact-SQL)
 
 Expressions (Transact-SQL)
-
-Last updated on 11/18/2025
 
 See Also
 

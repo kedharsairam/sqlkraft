@@ -2,7 +2,7 @@
 name: "sys.sp_help_operator"
 title: "sp_help_operator"
 category: "general"
-description: "Reports information about the operators defined for the server. Transact-SQL syntax conventions isn't specified, information about all operators is returned. must be specified, but both can't be specified. The identification number of the operator for which information is requested. must be specified, but both can't be specified."
+description: "Reports information about the operators defined for the server. isn't specified, information about all operators is returned. must be specified, but both can't be specified. The identification number of the operator for which information is requested. must be specified, but both can't be specified."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -17,7 +17,7 @@ syntax: |
 
 ## Description
 
-Reports information about the operators defined for the server. Transact-SQL syntax conventions isn't specified, information about all operators is returned. must be specified, but both can't be specified. The identification number of the operator for which information is requested. must be specified, but both can't be specified.
+Reports information about the operators defined for the server. isn't specified, information about all operators is returned. must be specified, but both can't be specified. The identification number of the operator for which information is requested. must be specified, but both can't be specified.
 
 ## Syntax
 

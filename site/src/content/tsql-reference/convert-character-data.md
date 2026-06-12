@@ -9,15 +9,11 @@ pubDate: 2026-05-29
 
 For information about converting character data, see
 
-char and varchar
-
-. For more information
+char and varchar. For more information
 
 about converting between data types, see
 
-CAST and CONVERT
-
-.
+CAST and CONVERT.
 
 ALTER TABLE (Transact-SQL)
 
@@ -41,8 +37,6 @@ Collation and Unicode Support
 
 Single-Byte and Multibyte Character Sets
 
-Last updated on 11/18/2025
-
 Each non-null
 
 or
@@ -64,5 +58,3 @@ columns in a table. No special error is provided when the table is created
 error 512) that users might not anticipate during some normal operations. Two examples
 
 of operations are a clustered index key update, or sorts of the full column set.
-
-Related content

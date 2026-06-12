@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -61,13 +59,9 @@ a
 
 statement rolls back five times, Service Broker disables all queues from which the
 
-transaction received messages by automatically setting the queue status to
+transaction received messages by automatically setting the queue status to. In addition,
 
-. In addition,
-
-Service Broker generates an event of type
-
-.
+Service Broker generates an event of type.
 
 An administrator might use SQL Server Agent alerts to be notified when a queue is disabled. A
 
@@ -87,9 +81,7 @@ conversation when ending the conversation. For more information on creating an a
 
 to recover from poison messages, see
 
-Handle poison messages
-
-.
+Handle poison messages.
 
 ```sql
 RECEIVE

@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -77,9 +75,7 @@ function that reads the contents of a JSON file and
 
 returns it to the user as a single value:
 
-reads the content of the file and returns it in
-
-.
+reads the content of the file and returns it in.
 
 You can also load the contents of the file into a local variable or into a table, as shown in the
 

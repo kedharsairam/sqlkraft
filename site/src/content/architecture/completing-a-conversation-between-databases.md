@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,9 +37,7 @@ This tutorial builds on the tasks that you learned in the tutorial
 
 Complete a conversation in a
 
-single database
-
-. In this tutorial, you learn how to configure the conversation so that it runs
+single database. In this tutorial, you learn how to configure the conversation so that it runs
 
 between two databases on the same instance of the Database Engine.
 
@@ -51,23 +47,17 @@ these exceptions:
 
 Create two databases:
 
-and
-
-. You need to create all the initiator
+and. You need to create all the initiator
 
 service and queue in the
 
-and the target service and queue in the
-
-.
+and the target service and queue in the.
 
 Create two copies of the message types and contracts, one in the
 
 and the
 
-other in
-
-. Both sides of the conversation must have access to message type and
+other in. Both sides of the conversation must have access to message type and
 
 contract definitions that are identical.
 
@@ -75,9 +65,7 @@ Set the
 
 database property to
 
-in the
-
-. This is the simplest
+in the. This is the simplest
 
 mechanism for enabling conversations between two databases when they are on the
 

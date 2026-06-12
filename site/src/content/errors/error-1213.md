@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 1213 21 Yes Error spawning Lock Monitor thread: %ls 1214 17 Yes Internal Error. There are too many parallel transactions. 1215 16 No A conflicting ABORT_AFTER_WAIT = BLOCKERS request is wa
+Description 1213 21 Yes Error spawning Lock Monitor thread: %ls 1214 17 Yes Internal Error. There are too many parallel transactions.
 
 ## Severity
 

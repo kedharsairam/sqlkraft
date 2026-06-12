@@ -27,8 +27,6 @@ Article
 
 08/10/2023
 
-Applies to:
-
 SQL Server
 
 This article describes how to attach a database in SQL Server with SQL Server Management
@@ -39,9 +37,7 @@ database.
 
 For a list of limitations and restrictions, see
 
-Database Detach and Attach (SQL Server)
-
-.
+Database Detach and Attach (SQL Server).
 
 Review all of the following prerequisites before proceeding:
 
@@ -53,13 +49,11 @@ database that has not been detached returns an error. For more information, see
 
 Detach a
 
-Database
-
-.
+Database.
 
 When you attach a database, all data files for the database must be available. Often, these
 
-files have extensions .mdf or .ndf (for data files) and .ldf (for transaction log files).
+files have extensions.mdf or.ndf (for data files) and.ldf (for transaction log files).
 
 Additionally, any filegroups for FILESTREAM data must be present and available. For more
 
@@ -67,9 +61,7 @@ information to attach a FILESTREAM-enabled database, see
 
 Move a FILESTREAM-Enabled
 
-Database
-
-.
+Database.
 
 If any data file has a different path from when the database was first created or last
 
@@ -91,9 +83,7 @@ relocation procedure instead of detach and attach, when moving database files wi
 
 same instance. For more information, see
 
-Move User Databases
-
-.
+Move User Databases.
 
 ```sql
 \\?

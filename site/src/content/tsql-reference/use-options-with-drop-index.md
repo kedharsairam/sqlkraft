@@ -35,9 +35,7 @@ You can set the following index options when you drop a clustered index:
 
 ,
 
-, and
-
-.
+, and.
 
 Use
 
@@ -57,9 +55,7 @@ clustered index can be dropped online at a time. For a complete description of t
 
 option, see
 
-CREATE INDEX
-
-.
+CREATE INDEX.
 
 You can't drop a clustered index online if the index is disabled on a view, or contains
 
@@ -95,9 +91,7 @@ column. To view the table name, join
 
 with
 
-on
-
-. For an example query, see example D.
+on. For an example query, see example D.
 
 On multiprocessor computers that are running SQL Server 2005 Enterprise edition or later,
 
@@ -111,9 +105,7 @@ statement by specifying the
 
 index option. For more information, see
 
-Configure Parallel Index Operations
-
-.
+Configure Parallel Index Operations.
 
 ```sql
 DROP INDEX

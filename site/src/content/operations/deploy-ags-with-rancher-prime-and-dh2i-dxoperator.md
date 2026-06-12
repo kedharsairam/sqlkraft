@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -57,11 +55,7 @@ automate the deployment of DxEnterprise clusters. DxEnterprise then provides all
 
 instrumentation to create, configure, manage, and provide automatic failover for SQL
 
-Server AG workloads in Kubernetes. You can register for a
-
-. For more information, see the
-
-. For support
+Server AG workloads in Kubernetes. You can register for a. For more information, see the. For support
 
 issues, contact SUSE directly.
 

@@ -10,7 +10,7 @@ syntax: "sys.dm_db_xtp_hash_index_stats"
 
 ## Description
 
-These statistics are useful for understanding and tuning the bucket counts for . It can also be used to detect cases where the index key has many A large average chain length indicates that many rows are hashed to the same bucket. This If the number of empty buckets is low or the average and maximum chain lengths are similar, it is likely that the total bucket count is too low. This causes many different index
+These statistics are useful for understanding and tuning the bucket counts for. It can also be used to detect cases where the index key has many A large average chain length indicates that many rows are hashed to the same bucket. This If the number of empty buckets is low or the average and maximum chain lengths are similar, it is likely that the total bucket count is too low.
 
 ## Syntax
 

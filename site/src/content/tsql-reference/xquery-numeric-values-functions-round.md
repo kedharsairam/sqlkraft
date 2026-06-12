@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns the number not having a fractional part that is closest to the argument. If there is more
@@ -78,9 +76,7 @@ functions is
 
 , untyped data, it
 
-is implicitly cast to
-
-.
+is implicitly cast to.
 
 Any other type generates a static error.
 

@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -39,9 +37,7 @@ commands:
 
 Output
 
-If you get this error on Linux, try running the same commands prefaced with
-
-. If that fails,
+If you get this error on Linux, try running the same commands prefaced with. If that fails,
 
 verify the docker service is running, and start it if necessary.
 
@@ -73,7 +69,7 @@ environment variable is deprecated. Use
 
 instead.
 
-SQL Server container startup errors
+container startup errors
 
 ```cmd
 docker docker sudo failed to create endpoint CONTAINER_NAME on network bridge.

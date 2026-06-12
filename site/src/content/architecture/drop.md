@@ -27,8 +27,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Dropping a database snapshot deletes the database snapshot from SQL Server and deletes the
@@ -45,9 +43,7 @@ database in SQL Server Management Studio. For more information, see
 
 View a Database
 
-Snapshot (SQL Server)
-
-.
+Snapshot (SQL Server).
 
 2. Issue a
 
@@ -61,9 +57,7 @@ DROP DATABASE
 
 database_snapshot_name
 
-[
-
-...
+[.
 
 n
 

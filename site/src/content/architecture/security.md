@@ -88,7 +88,7 @@ develop new applications. Remove any dependencies on either DB-Library or Embedd
 
 modifying existing applications. Instead of these APIs, use the SQLClient namespace or an API such as ODBC.
 
-SQL Server 2019 (15.x) doesn't include the DB-Library DLL required to run these applications. To run DB-
+2019 (15.x) doesn't include the DB-Library DLL required to run these applications. To run DB-
 
 Library or Embedded SQL applications, you must have available the DB-Library DLL from SQL Server version
 

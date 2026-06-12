@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -49,15 +47,11 @@ listens on port 1500 on Linux. To configure
 
 for distribution, run
 
-with
-
-. For example:
+with. For example:
 
 listens on port 1500 on Linux. To configure a publisher for the distributor, run
 
-with
-
-. For example:
+with. For example:
 
 ７
 

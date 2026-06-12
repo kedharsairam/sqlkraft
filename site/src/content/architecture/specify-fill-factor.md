@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -31,7 +29,7 @@ SQL database in Microsoft Fabric
 
 This article describes what fill factor is and how to specify a fill factor value for an index using
 
-SQL Server Management Studio or Transact-SQL.
+Management Studio or Transact-SQL.
 
 The fill factor option is provided for fine-tuning index data storage and performance. When an
 
@@ -53,7 +51,7 @@ Performance Considerations
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 

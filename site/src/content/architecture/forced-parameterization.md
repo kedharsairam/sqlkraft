@@ -24,9 +24,7 @@ parameterized, subject to certain limitations, by setting the
 
 option of the
 
-command to
-
-. Doing so can improve the performance of databases that
+command to. Doing so can improve the performance of databases that
 
 experience high volumes of concurrent queries by reducing the frequency of query
 
@@ -86,9 +84,7 @@ parameterized, which impacts plan re-use and the ability to track queries in the
 
 Store. For more information, see
 
-and
-
-.
+and.
 
 certain limitations. Forced parameterization is enabled by setting the
 
@@ -130,7 +126,7 @@ statements.
 
 Statements inside the bodies of stored procedures, triggers, or user-defined functions.
 
-SQL Server already reuses query plans for these routines.
+already reuses query plans for these routines.
 
 Prepared statements that have already been parameterized on the client-side application.
 
@@ -156,15 +152,11 @@ Any statement that is run in the context of
 
 or
 
-set to
-
-.
+set to.
 
 Statements that contain more than 2,097 literals that are eligible for parameterization.
 
-Statements that reference variables, such as
-
-.
+Statements that reference variables, such as.
 
 Statements that contain the
 
@@ -425,7 +417,7 @@ ALTER DATABASE
 
 `DELETE`
 
-`INSERT...EXECUTE`
+`INSERT.EXECUTE`
 
 `WHERE`
 
@@ -475,7 +467,7 @@ GROUP BY
 ORDER BY
 ```
 
-`OUTPUT...INTO`
+`OUTPUT.INTO`
 
 ```sql
 FOR XML

@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 ```sql
 CREATE CREDENTIAL credential_name
 WITH IDENTITY = 'identity_name'
-    [ , SECRET = 'secret' ]
+ [ , SECRET = 'secret' ]
 [ FOR CRYPTOGRAPHIC PROVIDER cryptographic_provider_name ]
 ```
 
@@ -43,5 +43,5 @@ Credentials are used by SQL Server to authenticate to external resources such as
 -- Create a credential for Azure Storage access
 CREATE CREDENTIAL MyAzureStorageCredential
 WITH IDENTITY = 'mystorageaccount',
-     SECRET = '<storage_account_key>';
+ SECRET = '<storage_account_key>';
 ```

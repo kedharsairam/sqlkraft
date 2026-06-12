@@ -8,9 +8,7 @@ pubDate: 2026-05-29
 
 For a detailed explanation of disk I/O in SQL Server, see
 
-SQL Server I/O fundamentals
-
-.
+I/O fundamentals.
 
 A buffer is an 8-KB page in memory, the same size as a data or index page. Thus, the buffer
 
@@ -28,9 +26,7 @@ Read data pages in the Database Engine
 
 and
 
-Write pages in the Database Engine
-
-.
+Write pages in the Database Engine.
 
 When SQL Server starts, it computes the size of virtual address space for the buffer cache
 
@@ -68,9 +64,7 @@ up to finish much faster, especially on machines with a lot of memory. For more 
 
 about pages and extents, see
 
-Page and extent architecture guide
-
-.
+Page and extent architecture guide.
 
 Because the buffer manager uses most of the memory in the SQL Server process, it cooperates
 

@@ -15,8 +15,6 @@ rowversion
 
 ﾃ
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -173,6 +171,4 @@ Note
 
 The Transact-SQL data type isn't a date or time data type.
 
-is a deprecated synonym for
-
-.
+is a deprecated synonym for.

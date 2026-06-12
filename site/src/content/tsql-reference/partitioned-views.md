@@ -39,9 +39,7 @@ modifications from the view definition to one base table. For more information, 
 
 Modify
 
-Data Through a View
-
-.
+Data Through a View.
 
 If the previous restrictions prevent you from modifying data directly through a view, consider
 
@@ -71,9 +69,7 @@ triggers,
 
 see
 
-DML Triggers
-
-.
+DML Triggers.
 
 If the view is a partitioned view, the view is updatable, subject to certain restrictions.
 

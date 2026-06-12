@@ -19,9 +19,7 @@ or deterministic and persisted. For more information about determinism, see
 
 Deterministic and
 
-Nondeterministic Functions
-
-.
+Nondeterministic Functions.
 
 Computed columns derived from
 
@@ -67,9 +65,7 @@ statement fails.
 
 For more information, see
 
-Indexes on computed columns
-
-.
+Indexes on computed columns.
 
 Non-key columns, called included columns, can be added to the leaf level of a nonclustered
 
@@ -87,9 +83,7 @@ columns
 
 and the
 
-SQL Server index architecture and design guide
-
-.
+index architecture and design guide.
 
 `UNIQUE`
 

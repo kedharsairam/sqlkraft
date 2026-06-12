@@ -21,15 +21,13 @@ pubDate: 2025-12-01
 
 You can add test conditions to a SQL Server unit test by using the
 
-SQL Server Unit Test
-
-. When you save the test class, the test conditions are automatically saved in your test
+Unit Test. When you save the test class, the test conditions are automatically saved in your test
 
 project as C# or Visual Basic code in the source-code file containing the test class. After you
 
 save a test condition, you can edit it either in the
 
-SQL Server Unit Test Designer
+Unit Test Designer
 
 or in its
 
@@ -37,9 +35,7 @@ source-code file.
 
 1. Open a SQL Server unit test in the
 
-SQL Server Unit Test Designer
-
-.
+Unit Test Designer.
 
 The name of the test you opened is displayed in the navigation bar at the top of the SQL
 
@@ -49,17 +45,13 @@ methods that are in your test class.
 
 2. In the navigation bar, select the test method to which you want to add test conditions, or
 
-select
-
-.
+select.
 
 Common scripts don't belong to a particular unit test. Rather, they precede or follow unit
 
 tests in the test class. For more information, see
 
-Scripts in SQL Server Unit Tests
-
-.
+Scripts in SQL Server Unit Tests.
 
 3. In the navigation bar, select the Transact-SQL script to which you want to add test
 

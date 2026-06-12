@@ -1,7 +1,7 @@
 ---
 name: "To Get Alert Whenever Instance is Restarted"
 title: "To Get Alert Whenever Instance is Restarted"
-description: "SQL Server diagnostic script for automation operations."
+description: "diagnostic script for automation operations."
 category: automation
 tags: ["automation"]
 pubDate: 2025-03-15
@@ -11,11 +11,11 @@ pubDate: 2025-03-15
 USE [msdb]
 GO
 
-/****** Object:  Job [server restart notification alert job]    Script Date: 8/31/2024 8:47:02 AM ******/
+/****** Object: Job [server restart notification alert job] Script Date: 8/31/2024 8:47:02 AM ******/
 BEGIN TRANSACTION
 DECLARE @ReturnCode INT
 SELECT @ReturnCode = 0
-/****** Object:  JobCategory [[Uncategorized (Local)]]    Script Date: 8/31/2024 8:47:02 AM ******/
+/****** Object: JobCategory [[Uncategorized (Local)]] Script Date: 8/31/2024 8:47:02 AM ******/
 IF NOT EXISTS (SELECT name FROM msdb.dbo.syscategories WHERE name=N'[Uncategorized (Local)]' AND category_class=1)
 BEGIN
 EXEC @ReturnCode = msdb.dbo.sp_add_category @class=N'JOB', @type=N'LOCAL', @name=N'[Uncategorized (Local)]'
@@ -24,7 +24,7 @@ IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 END
 
 DECLARE @jobId BINARY(16)
-EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'server restart notification alert job',
+EXEC @ReturnCode = msdb.dbo.sp_add_job @job_name=N'server restart notification alert job',
 		@enabled=1,
 		@notify_level_eventlog=0,
 		@notify_level_email=0,
@@ -35,7 +35,7 @@ EXEC @ReturnCode =  msdb.dbo.sp_add_job @job_name=N'server restart notification 
 		@category_name=N'[Uncategorized (Local)]',
 		@owner_login_name=N'sa', @job_id = @jobId OUTPUT
 IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
-/****** Object:  Step [server restart alert]    Script Date: 8/31/2024 8:47:02 AM ******/
+/****** Object: Step [server restart alert] Script Date: 8/31/2024 8:47:02 AM ******/
 EXEC @ReturnCode = msdb.dbo.sp_add_jobstep @job_id=@jobId, @step_name=N'server restart alert',
 		@step_id=1,
 		@cmdexec_success_code=0,
@@ -81,7 +81,7 @@ IF (@@ERROR <> 0 OR @ReturnCode <> 0) GOTO QuitWithRollback
 COMMIT TRANSACTION
 GOTO EndSave
 QuitWithRollback:
-    IF (@@TRANCOUNT > 0) ROLLBACK TRANSACTION
+ IF (@@TRANCOUNT > 0) ROLLBACK TRANSACTION
 EndSave:
 GO
 ```

@@ -8,8 +8,7 @@ pubDate: 2026-05-29
 ---
 ## Syntax
 
-```sql
-.STNumGeometries ( )
+```sql.STNumGeometries ( )
 ```
 
 ## Return Type

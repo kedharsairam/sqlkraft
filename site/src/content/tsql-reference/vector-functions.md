@@ -2,7 +2,7 @@
 name: "Vector functions"
 title: "Vector functions"
 category: "statements"
-description: "SQL Server 2025 (17.x)"
+description: "2025 (17.x)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -15,9 +15,7 @@ pubDate: 2026-05-29
 
 ### update policy
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 Azure SQL Database
 
@@ -37,9 +35,7 @@ applications to store and manipulate vectors in the SQL Database Engine.
 
 All vector functions support the
 
-data type
-
-.
+data type.
 
 ## Description
 
@@ -51,29 +47,19 @@ VECTOR_SEARCH
 
 (preview)
 
-Return the closest vectors to a given query vector and distance metric using an
-
 approximate vector search algorithm.
 
 VECTOR_NORM
 
 Takes a vector as an input and returns the norm of the vector (which is a
 
-measure of its length or magnitude) in a given
-
-norm type
-
-.
+norm type.
 
 VECTOR_NORMALIZE
 
 Takes a vector as an input and returns the normalized vector, which is a vector
 
-scaled to have a length of 1 in a given
-
-norm type
-
-. Adjusts a vector so that its
+norm type.
 
 length is normalized following the rules of specified norm type.
 
@@ -87,20 +73,14 @@ Vector search and vector indexes in the SQL Database Engine
 
 Intelligent applications and AI
 
-Last updated on 01/07/2026
-
 ７
 
 Note
 
 Vector features are available in Azure SQL Managed Instance with the
 
-SQL Server 2025
+2025
 
-or
-
-.
+or.
 
 Expand table
-
-Related content

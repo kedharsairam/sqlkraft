@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -37,9 +35,7 @@ To participate in Always On availability groups or database mirroring a server i
 
 its own, dedicated
 
-database mirroring endpoint
-
-. This endpoint is a special-purpose endpoint
+database mirroring endpoint. This endpoint is a special-purpose endpoint
 
 that is used exclusively to receive connections from other server instances. On a given server
 
@@ -77,9 +73,7 @@ identified. The server network addresses of both server instances contain the sa
 
 name,
 
-, and domain name,
-
-. To enable the system to
+, and domain name,. To enable the system to
 
 route connections to a server instance, a server network address includes the port number
 

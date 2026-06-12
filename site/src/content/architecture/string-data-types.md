@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -53,9 +51,7 @@ XML
 
 Note the following from the previous query:
 
-The carriage return in the first row is entitized as
-
-.
+The carriage return in the first row is entitized as.
 
 ```sql
 FOR XML
@@ -124,7 +120,7 @@ c2
 "2"
 c2
 =
-"Special character 0x9 for tab     after tab"
+"Special character 0x9 for tab after tab"
 />
 <T c1
 =

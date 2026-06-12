@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 4996 16 No Change tracking is already enabled for table '%.*ls'. 4997 16 No Cannot enable change tracking on table '%.*ls'. Change tracking requires a primary key on the table. Create a pr
+Description 4996 16 No Change tracking is already enabled for table '%.*ls'. 4997 16 No Cannot enable change tracking on table '%.*ls'. Change tracking requires a primary key on the table.
 
 ## Severity
 

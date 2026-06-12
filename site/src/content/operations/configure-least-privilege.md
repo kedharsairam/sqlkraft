@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 The information security principle of least privilege asserts that accounts and applications only
@@ -49,7 +47,7 @@ enabled.
 
 Granted the minimum required permissions and privileges to run the Azure Extension for
 
-SQL Server service on the Windows operating system. It only has access to folders and
+service on the Windows operating system. It only has access to folders and
 
 directories used for reading and storing configuration or writing logs.
 
@@ -71,9 +69,7 @@ or greater will eventually have the least
 
 privileged configuration applied. This extension was released in November, 2024. To prevent
 
-the automatic application of least privilege, block extension upgrades after
-
-.
+the automatic application of least privilege, block extension upgrades after.
 
 ```cmd
 NT

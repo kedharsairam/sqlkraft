@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 3292 16 No A failure occurred while attempting to execute Backup or Restore with a URL device specified. Consult the operating system error log for details. 3293 16 No An error occurred wh
+Description 3292 16 No A failure occurred while attempting to execute Backup or Restore with a URL device specified. Consult the operating system error log for details.
 
 ## Severity
 

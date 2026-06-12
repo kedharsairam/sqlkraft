@@ -10,7 +10,7 @@ syntax: "[dbo].[wikipedia_articles_embeddings]"
 
 ## Description
 
-Contains a row per vector index. Type of vector index (DiskANN only for now) Metric used to create the vector index The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see The following example returns all indexes for the table
+Contains a row per vector index. Type of vector index (DiskANN only for now) Metric used to create the vector index The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission.
 
 ## Syntax
 

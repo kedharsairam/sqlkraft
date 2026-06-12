@@ -15,7 +15,7 @@ syntax: |
 
 ## Description
 
-105 = A permanent backup device. All permanent device names and device numbers can be Physical block size used to write the media family. Can be Mirror number (0-3). RESTORE VERIFYONLY FROM WITH LOADHISTORY populates the columns of the table with the appropriate values from the media-set header. To reduce the number of rows in this table and in other backup and history tables, execute the sp_delete_backuphistory stored procedure. Backup and Restore Tables (Transact-SQL) backupfile (Transact-SQL) backupfilegroup (Transact-SQL) backupmediaset (Transact-SQL) backupset (Transact-SQL) System Tables (Transact-SQL) Deprecated feature BACKUP { DATABASE | LOG } TO device_that_is_a_disk Korean_Wansung_Unicode Lithuanian_Classic SQL_AltDiction_CP1253_CS_AS None. These collations exist in SQL Server 2005
+105 = A permanent backup device. All permanent device names and device numbers can be Physical block size used to write the media family.
 
 ## Syntax
 

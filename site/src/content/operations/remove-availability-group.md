@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This article describes how to delete (drop) an Always On availability group by using SQL Server

@@ -16,15 +16,11 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Returns an xs:NCNAME that represents the local part of QName specified by
 
-$arg
-
-. The result is
+$arg. The result is
 
 an empty sequence if
 

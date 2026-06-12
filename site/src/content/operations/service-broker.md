@@ -31,8 +31,6 @@ Article
 
 10/08/2024
 
-Applies to:
-
 SQL Server
 
 This topic contains information about configuring Service Broker to work with Always On
@@ -43,9 +41,7 @@ availability groups in SQL Server.
 
 For more information, see
 
-Create or Configure an Availability Group Listener (SQL Server)
-
-.
+Create or Configure an Availability Group Listener (SQL Server).
 
 2.
 
@@ -82,6 +78,6 @@ catalog view, where
 ```cmd
 CREATE ENDPOINT [SSBEndpoint]
 STATE = STARTED
-AS TCP  (LISTENER_PORT = 4022, LISTENER_IP = ALL )
+AS TCP (LISTENER_PORT = 4022, LISTENER_IP = ALL )
 FOR SERVICE_BROKER (AUTHENTICATION = WINDOWS)
 ```

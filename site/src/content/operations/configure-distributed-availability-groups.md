@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 05/27/2025
 
-Applies to:
-
 SQL Server
 
 To create a distributed availability group, you must create two availability groups each with its
@@ -35,17 +33,13 @@ key requirements.
 
 For a technical overview of distributed availability groups, see
 
-Distributed availability groups
-
-.
+Distributed availability groups.
 
 To configure a distributed availability group, you must have the following:
 
 A supported version of
 
-SQL Server
-
-.
+SQL Server.
 
 Requires
 
@@ -71,9 +65,7 @@ by using a distributed network name (DNN), then configuring a distributed availa
 
 group on top of your availability group isn't supported. To learn more, see
 
-SQL Server on
-
-.
+on.
 
 ```cmd
 sysadmin

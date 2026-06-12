@@ -2,7 +2,7 @@
 name: "sys.sp_recompile"
 title: "sp_recompile"
 category: "general"
-description: "Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Causes stored procedures, triggers, and user-defined functions to be recompiled the next time that they're run. It does this by dropping the existing plan from the procedure cache, forcing a new plan to be created the next time that the procedure or trigger is run."
+description: "Causes stored procedures, triggers, and user-defined functions to be recompiled the next time that they're run. It does this by dropping the existing plan from the procedure cache, forcing a new plan to be created the next time that the procedure or trigger is run."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Causes stored procedures, triggers, and user-defined functions to be recompiled the next time that they're run. It does this by dropping the existing plan from the procedure cache, forcing a new plan to be created the next time that the procedure or trigger is run. In a SQL Server Profiler collection, the event is logged instead of the event Transact-SQL syntax conventions The qualified or unqualified name of a stored procedure, trigger, table, view, or user-defined function in the current database. , with no default. is the name of a stored procedure, trigger, or user-defined function, the stored procedure, trigger, or function will be recompiled the next time that it's run. is the name of a table or view, all the stored procedures, triggers, or user-
+Causes stored procedures, triggers, and user-defined functions to be recompiled the next time that they're run. It does this by dropping the existing plan from the procedure cache, forcing a new plan to be created the next time that the procedure or trigger is run. In a SQL Server Profiler collection, the event is logged instead of the event The qualified or unqualified name of a stored procedure, trigger, table, view, or user-defined function in the current database. , with no default. is the name of a stored procedure, trigger, or user-defined function, the stored procedure, trigger, or function will be recompiled the next time that it's run. is the name of a table or view, all the stored procedures, triggers, or user-
 
 ## Syntax
 
@@ -26,8 +26,6 @@ N
 ```
 
 ## Remarks
-
-Applies to:
 
 Azure SQL Database
 
@@ -44,8 +42,6 @@ new plan to be created the next time that the procedure or trigger is run. In a 
 Profiler collection, the event
 
 is logged instead of the event
-
-Transact-SQL syntax conventions
 
 The qualified or unqualified name of a stored procedure, trigger, table, view, or user-defined
 

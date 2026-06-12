@@ -27,8 +27,6 @@ Article
 
 11/25/2024
 
-Applies to:
-
 SQL Server
 
 This example shows all the stages required to create a database mirroring session using
@@ -71,9 +69,7 @@ For information about this stage of setting up database mirroring, see
 
 Allow a Database
 
-Mirroring Endpoint to Use Certificates for Outbound Connections (Transact-SQL)
-
-.
+Mirroring Endpoint to Use Certificates for Outbound Connections (Transact-SQL).
 
 2.
 

@@ -25,9 +25,7 @@ pubDate: 2026-05-29
 
 Summarize this article for me
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 Azure SQL Database
 
@@ -51,9 +49,7 @@ To provide a familiar experience for developers, the
 
 data type is created and displayed
 
-as a JSON array. For example, a vector with three dimensions can be represented as
-
-. Implicit and explicit conversion from and to the
+as a JSON array. For example, a vector with three dimensions can be represented as. Implicit and explicit conversion from and to the
 
 type can be done using
 
@@ -69,9 +65,7 @@ database
 
 scoped configuration option. For details, review
 
-PREVIEW_FEATURES = { ON | OFF }
-
-.
+PREVIEW_FEATURES = { ON | OFF }.
 
 For limitations, review
 
@@ -79,9 +73,7 @@ Limitations
 
 and
 
-Known issues
-
-.
+Known issues.
 
 For more information on working with vector data, see:
 
@@ -93,13 +85,11 @@ Intelligent applications
 
 Note
 
-SQL Server 2025 (17.x) supports half-precision (
+2025 (17.x) supports half-precision (
 
 ) vectors. For more information,
 
-see
-
-.
+see.
 
 ７
 

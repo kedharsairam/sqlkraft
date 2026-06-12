@@ -2,7 +2,7 @@
 name: "Compare GROUPING_ID() to GROUPING()"
 title: "Compare GROUPING_ID() to GROUPING()"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -12,8 +12,6 @@ Article
 •
 
 09/06/2024
-
-Applies to:
 
 SQL Server
 
@@ -30,8 +28,6 @@ list,
 , or clauses when
 
 is specified.
-
-Transact-SQL syntax conventions
 
 ## syntaxsql
 
@@ -51,9 +47,7 @@ For example, if you're grouping by
 
 ; or if you're grouping by
 
-, use
-
-.
+, use.
 
 inputs the equivalent of the return for each column in its column list in each output row, as a string
 
@@ -110,7 +104,7 @@ GROUPING_ID (<column name>)
 ```
 
 ```sql
-GROUPING_ID (<column_expression> [ , ...n ])
+GROUPING_ID (<column_expression> [ ,.n ])
 ```
 
 ```sql
@@ -122,5 +116,5 @@ GROUPING
 _
 ID (
 <column_expression>
-[ , ...n ] )
+[ ,.n ] )
 ```

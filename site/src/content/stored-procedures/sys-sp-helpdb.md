@@ -2,7 +2,7 @@
 name: "sys.sp_helpdb"
 title: "sp_helpdb"
 category: "general"
-description: "Reports information about a specified database or all databases. Transact-SQL syntax conventions The name of the database for which information is reported."
+description: "Reports information about a specified database or all databases."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -15,7 +15,7 @@ syntax: |
 
 ## Description
 
-Reports information about a specified database or all databases. Transact-SQL syntax conventions The name of the database for which information is reported. reports on all databases in the
+Reports information about a specified database or all databases.
 
 ## Syntax
 

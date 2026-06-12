@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-Applies to:
-
 SQL Server
 
 Breakpoints specify that the Transact-SQL debugger pause execution on a specific Transact-

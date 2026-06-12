@@ -31,8 +31,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -57,9 +55,7 @@ dialog box. For more information about accessing this dialog box, see
 
 Create a
 
-Publication
-
-.
+Publication.
 
 1. On the
 
@@ -77,9 +73,7 @@ replicate. Select
 
 to enable the database for snapshot replication.
 
-2. Select
-
-.
+2. Select.
 
 You can enable a database for replication with the following Transact-SQL code:
 

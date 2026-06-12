@@ -29,8 +29,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -69,11 +67,9 @@ access the database from an Analysis Services client.
 
 Use a data provider that supports the tabular data stream (TDS) protocol version 7.4 or newer,
 
-such as the SQL Server Native Client 11.0 or the Data Provider for SQL Server in .NET
+such as the SQL Server Native Client 11.0 or the Data Provider for SQL Server in.NET
 
-Framework 4.02.
-
-. The secondary replica role must be configured for read-only
+Framework 4.02. The secondary replica role must be configured for read-only
 
 connections, the availability group must have a routing list, and the connection in the Analysis
 

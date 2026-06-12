@@ -21,9 +21,7 @@ compatibility level is set to 90 or higher. If the database compatibility level 
 
 earlier, the
 
-option must explicitly be set to
-
-.
+option must explicitly be set to.
 
 If the
 
@@ -53,9 +51,7 @@ and the
 
 SQL Server
 
-index architecture and design guide
-
-.
+index architecture and design guide.
 
 For information about spatial indexes, see
 
@@ -65,9 +61,7 @@ and
 
 Spatial indexes
 
-overview
-
-.
+overview.
 
 For information about XML indexes see,
 
@@ -75,9 +69,7 @@ CREATE XML INDEX
 
 and
 
-XML Indexes (SQL Server)
-
-.
+XML Indexes (SQL Server).
 
 The maximum size for an index key is 900 bytes for a clustered index and 1,700 bytes for a
 

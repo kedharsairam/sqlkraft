@@ -48,9 +48,7 @@ eliminated from consideration.
 
 The following information is provided:
 
-, and
-
-.
+, and.
 
 is the total number of partitions accessed by the query.
 

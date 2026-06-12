@@ -25,8 +25,8 @@ The uniqueidentifier data type stores 16-byte binary values that are globally un
 ```sql
 -- Create a table with a uniqueidentifier column
 CREATE TABLE Example.GuidTable (
-    ID uniqueidentifier DEFAULT NEWID(),
-    Name nvarchar(50)
+ ID uniqueidentifier DEFAULT NEWID(),
+ Name nvarchar(50)
 );
 
 -- Insert with explicit GUID

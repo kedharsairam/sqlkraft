@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns the largest number with no fraction part that is not greater than the value of its
@@ -56,9 +54,7 @@ If input to the fn:floor, fn:ceiling, or fn:round functions is
 
 , untyped data, it
 
-is implicitly cast to
-
-. Any other type generates a static error.
+is implicitly cast to. Any other type generates a static error.
 
 This topic provides XQuery examples against XML instances that are stored in various
 

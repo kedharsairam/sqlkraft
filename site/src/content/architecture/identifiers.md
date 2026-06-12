@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -67,15 +65,11 @@ and
 
 This table has an unnamed constraint. The primary key constraint has no user-specified
 
-identifier, so the system assigns it a generated name like
-
-. You
+identifier, so the system assigns it a generated name like. You
 
 can see this name in system metadata views like
 
-sys.key_constraints
-
-.
+sys.key_constraints.
 
 Constraint names and other schema-scoped objects must be unique within a database schema.
 

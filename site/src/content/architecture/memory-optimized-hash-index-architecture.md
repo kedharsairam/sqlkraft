@@ -64,9 +64,7 @@ the hash buckets.
 
 If two index keys are mapped to the same hash bucket, there's a
 
-hash collision
-
-. A large
+hash collision. A large
 
 number of hash collisions can have a performance effect on read operations. A realistic
 
@@ -78,8 +76,6 @@ Tip
 
 To determine the right
 
-for your data, see
-
-.
+for your data, see.
 
 `BUCKET_COUNT`

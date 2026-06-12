@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -49,9 +47,7 @@ joined machine. For more information about
 
 and how to download the tool, see
 
-Introduction to adutil - Active Directory utility
-
-.
+Introduction to adutil - Active Directory utility.
 
 It's critical to update the new password in the keytab with the next
 
@@ -73,19 +69,13 @@ Linux. In the
 
 file, you set the
 
-to
-
-. The account
+to. The account
 
 is already created in Active Directory, and the keytab is also created at the
 
-default location
+default location. Now you want to change the password
 
-. Now you want to change the password
-
-for the
-
-. Here are the steps that you need to follow:
+for the. Here are the steps that you need to follow:
 
 1.
 
@@ -107,9 +97,7 @@ this case, we're using the account
 
 that has permissions to
 
-create accounts and SPNs in our domain called
-
-.
+create accounts and SPNs in our domain called.
 
 ```cmd
 network.privilegedadaccount mssql.conf mssql.conf network.privilegedadaccount sqluser

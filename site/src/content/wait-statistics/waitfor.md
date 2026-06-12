@@ -14,11 +14,11 @@ Occurs when a session executes the WAITFOR command (DELAY or TIME). This is inte
 
 ## Key Metrics
 
-| Metric    | Description |
+| Metric | Description |
 | --------- | ----------- |
-| Wait Type | `WAITFOR`   |
-| Category  | Baseline    |
-| Severity  | INFO        |
+| Wait Type | `WAITFOR` |
+| Category | Baseline |
+| Severity | INFO |
 
 ## Troubleshooting
 
@@ -28,10 +28,10 @@ Use the following query to identify the top queries contributing to `WAITFOR` wa
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'WAITFOR'
 ORDER BY wait_time_ms DESC;

@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -89,9 +87,7 @@ column(s) across queries. It's important to
 
 review index suggestions and combine where
 
-possible
-
-.
+possible.
 
 Suggestions aren't made for trivial query plans.
 

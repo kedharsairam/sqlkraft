@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article describes considerations for client connectivity to Always On availability groups,
@@ -59,7 +57,7 @@ No
 
 No
 
-ADO.NET with .NET
+ADO.NET with.NET
 
 Framework 4.0 with
 
@@ -75,7 +73,7 @@ Yes
 
 Yes
 
-ADO.NET with .NET
+ADO.NET with.NET
 
 Framework 3.5 SP1
 

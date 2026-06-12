@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 09/03/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -131,9 +129,7 @@ Use nested FOR XML queries
 
 and
 
-TYPE directive in FOR XML queries
-
-.
+TYPE directive in FOR XML queries.
 
 The
 

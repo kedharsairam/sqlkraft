@@ -23,13 +23,11 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server uses Service Broker endpoints for Service Broker communication outside of the SQL
+uses Service Broker endpoints for Service Broker communication outside of the SQL
 
 Server instance.
 
@@ -53,9 +51,7 @@ Service Broker endpoint to send or receive messages outside the SQL Server insta
 
 information on creating Service Broker endpoints, see
 
-CREATE ENDPOINT
-
-. An instance might
+CREATE ENDPOINT. An instance might
 
 contain only one Service Broker endpoint.
 
@@ -77,6 +73,4 @@ firewall enabled, the firewall configuration on the computer must allow both inc
 
 outgoing connections for the port that's specified in the endpoint. For more information
 
-on Service Broker transport security, see
-
-.
+on Service Broker transport security, see.

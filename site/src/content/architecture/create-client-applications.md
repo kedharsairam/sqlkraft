@@ -31,8 +31,6 @@ Article
 
 01/22/2024
 
-Applies to:
-
 SQL Server
 
 You can use Win32 APIs to read and write data to a FILESTREAM BLOB. The following steps are
@@ -103,9 +101,7 @@ SetEndOfFile
 
 , or
 
-FlushFileBuffers
-
-. If
+FlushFileBuffers. If
 
 ７
 
@@ -115,6 +111,4 @@ The examples in this topic require the FILESTREAM-enabled database and table tha
 
 created in
 
-and
-
-.
+and.

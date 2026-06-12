@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -75,13 +73,9 @@ All functions that are referenced by the expression are deterministic and precis
 
 functions include both user-defined and built-in functions. For more information, see
 
-Deterministic and Nondeterministic Functions
+Deterministic and Nondeterministic Functions. Functions might be imprecise if the
 
-. Functions might be imprecise if the
-
-computed column is
-
-. For more information, see
+computed column is. For more information, see
 
 Create indexes on persisted
 
@@ -101,9 +95,7 @@ must be
 
 when you are creating or changing indexes on
 
-computed columns or indexed views. For more information, see
-
-.
+computed columns or indexed views. For more information, see.
 
 ```sql
 IsDeterministic

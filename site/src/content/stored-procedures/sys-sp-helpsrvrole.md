@@ -2,7 +2,7 @@
 name: "sys.sp_helpsrvrole"
 title: "sp_helpsrvrole"
 category: "general"
-description: "Returns a list of the SQL Server fixed server roles. Transact-SQL syntax conventions The name of the fixed server role."
+description: "Returns a list of the SQL Server fixed server roles."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -15,7 +15,7 @@ syntax: |
 
 ## Description
 
-Returns a list of the SQL Server fixed server roles. Transact-SQL syntax conventions The name of the fixed server role.
+Returns a list of the SQL Server fixed server roles.
 
 ## Syntax
 

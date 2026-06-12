@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -52,5 +50,3 @@ returned for each NULL column value.
 Use RAW Mode with FOR XML
 
 SELECT - FOR clause
-
-Last updated on 11/18/2025

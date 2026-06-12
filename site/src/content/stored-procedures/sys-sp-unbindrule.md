@@ -2,7 +2,7 @@
 name: "sys.sp_unbindrule"
 title: "sp_unbindrule"
 category: "general"
-description: "Unbinds a rule from a column or an alias data type in the current database. Transact-SQL syntax conventions The name of the table and column or the alias data type from which the rule is unbound. , with no default. SQL Server attempts to resolve two-part identifiers to column names first, then to alias data types."
+description: "Unbinds a rule from a column or an alias data type in the current database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -18,7 +18,7 @@ syntax: |
 
 ## Description
 
-Unbinds a rule from a column or an alias data type in the current database. Transact-SQL syntax conventions The name of the table and column or the alias data type from which the rule is unbound. , with no default. SQL Server attempts to resolve two-part identifiers to column names first, then to alias data types. When unbinding a rule from an alias data type, any columns of the data type that have the same rule are also unbound. Columns of
+Unbinds a rule from a column or an alias data type in the current database.
 
 ## Syntax
 
@@ -89,4 +89,4 @@ DROP RULE sp_bindrule sp_unbindrule
 CHECK
 ```
 
-_(... and 30 more examples)_
+_(. and 30 more examples)_

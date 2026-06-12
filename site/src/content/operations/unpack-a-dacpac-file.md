@@ -19,9 +19,7 @@ pubDate: 2025-12-01
 
 A data-tier application (DAC) is a self-contained unit of the entire database model and is
 
-portable in an artifact known as a DAC package, or
-
-. It's a good practice to review the
+portable in an artifact known as a DAC package, or. It's a good practice to review the
 
 contents of a
 
@@ -61,9 +59,7 @@ definitions is more efficiently accomplished by using
 
 Extract
 
-in SqlPackage with the property
-
-. The result directly creates a single
+in SqlPackage with the property. The result directly creates a single
 
 file that contains the object
 
@@ -73,9 +69,7 @@ Importing a
 
 to a SQL project in Visual Studio results in the contents of the
 
-being transformed into
-
-.sql
+being transformed into.sql
 
 files and organized into folders. Following the import, post-
 
@@ -87,7 +81,7 @@ explorer.
 
 1. Install
 
-SQL Server Data Tools
+Data Tools
 
 as a part of Visual Studio and create a new SQL project.
 
@@ -107,10 +101,5 @@ isolated test instance of the Database Engine, unpack the DAC and examine the co
 
 such as stored procedures or other user-defined code.
 
-```cmd
-.dacpac
-.dacpac
-.dacpac
-.dacpac
-.dacpac
+```cmd.dacpac.dacpac.dacpac.dacpac.dacpac
 ```

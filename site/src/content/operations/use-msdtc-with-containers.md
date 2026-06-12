@@ -21,11 +21,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Linux containers
+Linux containers
 
 07/03/2025
-
-Applies to:
 
 SQL Server
 
@@ -35,7 +33,7 @@ This article explains how to set up SQL Server Linux containers for distributed 
 
 including special requirements and scenarios.
 
-SQL Server container images can use the Microsoft Distributed Transaction Coordinator
+container images can use the Microsoft Distributed Transaction Coordinator
 
 (MSDTC), which is required for distributed transactions. To understand the communications
 
@@ -43,9 +41,7 @@ requirements for MSDTC, see
 
 How to configure the Microsoft Distributed Transaction
 
-Coordinator (MSDTC) on Linux
-
-.
+Coordinator (MSDTC) on Linux.
 
 To enable MSDTC transaction in SQL Server containers, you must set two new environment
 
@@ -57,7 +53,7 @@ variables:
 
 The following example shows how to use these environment variables to pull and run a single
 
-SQL Server 2019 (15.x) container configured for MSDTC. This allows it to communicate with any
+2019 (15.x) container configured for MSDTC. This allows it to communicate with any
 
 application on any hosts.
 
@@ -67,7 +63,7 @@ Bash
 
 Note
 
-SQL Server 2017 (14.x) runs in root containers by default, whereas SQL Server 2019 (15.x)
+2017 (14.x) runs in root containers by default, whereas SQL Server 2019 (15.x)
 
 and later containers run as a non-root user.
 

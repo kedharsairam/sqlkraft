@@ -2,7 +2,7 @@
 name: "sys.sp_change_log_shipping_primary_database"
 title: "sp_change_log_shipping_primary_database"
 category: "general"
-description: "Changes the primary database settings. Transact-SQL syntax conventions The name of the database on the primary server. The path to the backup folder on the primary server."
+description: "Changes the primary database settings."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -50,7 +50,7 @@ syntax: |
 
 ## Description
 
-Changes the primary database settings. Transact-SQL syntax conventions The name of the database on the primary server. The path to the backup folder on the primary server.
+Changes the primary database settings.
 
 ## Syntax
 
@@ -92,7 +92,7 @@ N
 ]
 [ , [ @backup_compression = ] backup_compression_option ]
 [ , [ @monitor_connection_options = ]
-'<key_value_pairs>;[...]'
+'<key_value_pairs>;[.]'
 ]
 [ ; ]
 ```

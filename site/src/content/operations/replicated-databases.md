@@ -29,13 +29,11 @@ Article
 
 02/26/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
 
-SQL Server supports upgrading replicated databases from previous versions of SQL Server; it
+supports upgrading replicated databases from previous versions of SQL Server; it
 
 isn't required to stop activity at other nodes while a node is being upgraded.
 

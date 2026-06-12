@@ -1,7 +1,7 @@
 ---
 name: "To View list of Sessions"
 title: "To View list of Sessions"
-description: "SQL Server diagnostic script for security-audit operations."
+description: "diagnostic script for security-audit operations."
 category: security-audit
 tags: ["security-audit", "session"]
 pubDate: 2025-03-15

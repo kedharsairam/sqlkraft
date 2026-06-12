@@ -31,8 +31,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 Assemblies that are registered in SQL Server can be updated from a more recent version using
@@ -59,13 +57,9 @@ methods can be modified in any way, and public methods can be modified as long a
 
 signatures or attributes aren't changed. Fields that are contained within a native-serialized
 
-user-defined type, including data members or base classes, can't be changed by using
+user-defined type, including data members or base classes, can't be changed by using. All other changes are unsupported. For more information, see
 
-. All other changes are unsupported. For more information, see
-
-ALTER ASSEMBLY
-
-.
+ALTER ASSEMBLY.
 
 The permission set of an assembly can also be changed using the
 
@@ -73,9 +67,7 @@ statement.
 
 The following statement changes the permission set of the
 
-assembly to
-
-.
+assembly to.
 
 If the permission set of an assembly is being changed from
 
@@ -93,9 +85,7 @@ permission for the assembly must first be created. For more information,
 
 see
 
-Create an assembly
-
-.
+Create an assembly.
 
 ```sql
 ALTER ASSEMBLY

@@ -33,17 +33,13 @@ Article
 
 01/15/2024
 
-Applies to:
-
 SQL Server
 
 In this guide, you learn how to migrate your MySQL databases to SQL Server.
 
 For other migration guides, see
 
-Azure Database Migration Guides
-
-.
+Azure Database Migration Guides.
 
 Before you begin migrating your MySQL database to SQL Server:
 
@@ -53,9 +49,7 @@ supported.
 
 Get
 
-SQL Server Migration Assistant for MySQL (SSMA for MySQL)
-
-.
+Migration Assistant for MySQL (SSMA for MySQL).
 
 Get connectivity and sufficient permissions to access both the source and target.
 
@@ -73,9 +67,7 @@ To create an assessment:
 
 2. On the
 
-menu, select
-
-.
+menu, select.
 
 3. Enter the project name and a location to save your project and the migration target. Then
 

@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -71,15 +69,13 @@ The second component supports 100-nanosecond precision. The timezone indication 
 
 optional.
 
-SQL Server 2005 supported years in the range -9999 to 9999. SQL Server now supports a
+2005 supported years in the range -9999 to 9999. SQL Server now supports a
 
 more restricted range of years. For more information, see
 
 Compare Typed XML to Untyped
 
-XML
-
-.
+XML.
 
 The year part must be within the range of 1 to 9999. The month part must be within the
 
@@ -89,15 +85,13 @@ calendar date. For example, SQL Server detects and returns an error for an inval
 
 such as 1974-02-31, because the month of February doesn't have 31 days.
 
-SQL Server 2005 supported years in the range -9999 to 9999. SQL Server now supports a
+2005 supported years in the range -9999 to 9999. SQL Server now supports a
 
 more restricted range of years. For more information, see
 
 Compare Typed XML to Untyped
 
-XML
-
-.
+XML.
 
 The year part must be within the range of -9999 to 9999.
 

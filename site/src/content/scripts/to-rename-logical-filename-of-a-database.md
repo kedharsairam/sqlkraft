@@ -1,7 +1,7 @@
 ---
 name: "To Rename Logical Filename of a Database"
 title: "To Rename Logical Filename of a Database"
-description: "SQL Server diagnostic script for database operations."
+description: "diagnostic script for database operations."
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

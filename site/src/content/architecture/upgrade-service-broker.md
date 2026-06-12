@@ -20,8 +20,6 @@ Service Broker operations don't change when a database or an instance of the Dat
 
 are upgraded. The Service Broker features available in SQL Server across supported versions.
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -44,4 +42,4 @@ CREATE BROKER PRIORITY (Transact-SQL)
 
 Conversation priorities
 
-SQL Server installation guide
+installation guide

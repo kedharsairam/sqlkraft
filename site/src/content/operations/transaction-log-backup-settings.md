@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Use this dialog box to configure and modify the transaction log backup settings for a log
@@ -39,9 +37,7 @@ shipping configuration.
 
 For an explanation of log shipping concepts, see
 
-About Log Shipping (SQL Server)
-
-.
+About Log Shipping (SQL Server).
 
 Type the network share to your backup folder in this box. The local folder where your
 

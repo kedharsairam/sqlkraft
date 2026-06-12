@@ -25,9 +25,7 @@ enter data in a table visually, use the Data Editor as described in
 
 Connected Database
 
-Development
-
-.
+Development.
 
 1. Expand the
 
@@ -35,13 +33,11 @@ node of the
 
 database in
 
-SQL Server Object Explorer
+Object Explorer
 
 , and right-
 
-click
-
-.
+click.
 
 2. Select
 
@@ -67,9 +63,7 @@ article.
 
 1. Right-click the
 
-database node and select
-
-.
+database node and select.
 
 2. In the script pane, paste in the following code.
 

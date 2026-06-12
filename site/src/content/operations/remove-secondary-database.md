@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to remove a secondary database from an Always On availability group
@@ -69,9 +67,7 @@ Use the
 
 Object Explorer Details to Monitor Availability Groups (SQL Server Management
 
-Studio)
-
-.
+Studio).
 
 To remove a single database, select it in either the
 

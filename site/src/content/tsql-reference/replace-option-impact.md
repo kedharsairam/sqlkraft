@@ -15,9 +15,7 @@ on the database, setting the proper metadata for the
 
 statistics auto drop feature. For more information, see
 
-statistics auto drop option
-
-.
+statistics auto drop option.
 
 Certain operations, including configuring server (instance level) settings, or manually adding a
 
@@ -37,19 +35,15 @@ endpoint manually.
 
 For instructions, see
 
-Connect to databases on the primary replica
+Connect to databases on the primary replica.
 
-.
-
-SQL Server includes backup and restore history tables that track the backup and restore activity
+includes backup and restore history tables that track the backup and restore activity
 
 for each server instance. When a restore is performed, the backup history tables are also
 
 modified. For information on these tables, see
 
-Backup History and Header Information
-
-.
+Backup History and Header Information.
 
 REPLACE should be used rarely and only after careful consideration. Restore normally prevents
 
@@ -75,7 +69,7 @@ the database name recorded in the backup set. This can result in accidentally ov
 
 a database by a different database.
 
-SQL Server Big Data Clusters
+Big Data Clusters
 
 `sp_updatestats`
 

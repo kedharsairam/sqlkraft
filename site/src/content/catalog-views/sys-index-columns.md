@@ -2,7 +2,7 @@
 name: "sys.index_columns"
 title: "sys.index_columns"
 category: "objects"
-description: "Analytics Platform System (PDW) Contains one row per column that is part of an index or unordered table (heap)."
+description: "Contains one row per column that is part of an index or unordered table (heap)."
 tags: ["objects", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "data_clustering_ordinal"
@@ -10,7 +10,7 @@ syntax: "data_clustering_ordinal"
 
 ## Description
 
-Analytics Platform System (PDW) Contains one row per column that is part of an index or unordered table (heap). ID of the object the index is defined on. ID of the index in which the column is defined. = Row Identifier (RID) in a nonclustered index. Ordinal (1-based) within set of key-columns. 0 = Not a key column, or is an XML index, columnstore index, Note: An XML or spatial or JSON index can't be a key because
+Analytics Platform System (PDW) Contains one row per column that is part of an index or unordered table (heap).
 
 ## Syntax
 
@@ -18,13 +18,9 @@ Analytics Platform System (PDW) Contains one row per column that is part of an i
 
 ## Arguments
 
-Applies to:
-
 Azure SQL Managed Instance
 
 Returns information about the index key. Returns NULL for XML indexes.
-
-Transact-SQL syntax conventions
 
 Is the object identification number of the table or indexed view.
 
@@ -59,8 +55,6 @@ sys.index_columns (Transact-SQL)
 sys.stats (Transact-SQL)
 
 sys.stats_columns (Transact-SQL)
-
-Last updated on 11/18/2025
 
 DROP INDEX (Transact-SQL)
 

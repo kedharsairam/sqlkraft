@@ -33,9 +33,7 @@ n
 
 bits might be
 
-lit
-
-. A lit bit indicates the corresponding argument
+lit. A lit bit indicates the corresponding argument
 
 isn't a grouping column for the given output row. The lowest-order bit corresponds to
 
@@ -55,9 +53,7 @@ For a single grouping query,
 
 is equivalent to
 
-, and both return
-
-.
+, and both return.
 
 Expand table
 

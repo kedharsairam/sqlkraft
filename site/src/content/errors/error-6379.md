@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 6379 16 No selective XML index '%.*ls' already exists on column '%.*ls' in table '%.*ls'. Multiple selective XML indexes per column are not allowed. 6380 16 No Path '%.*ls'. Multiple value
+Description 6379 16 No selective XML index '%.*ls' already exists on column '%.*ls' in table '%.*ls'. Multiple selective XML indexes per column are not allowed. 6380 16 No Path '%.*ls'.
 
 ## Severity
 

@@ -29,8 +29,6 @@ Article
 
 11/18/2022
 
-Applies to:
-
 SQL Server
 
 This topic describes all of the tables and stored procedures associated with a log shipping

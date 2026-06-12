@@ -16,15 +16,11 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns a string representing the namespace uri of the QName specified by
 
-$arg
-
-. The result is
+$arg. The result is
 
 the empty sequence if
 
@@ -44,9 +40,7 @@ columns in the AdventureWorks database.
 
 For a working sample, see
 
-local-name-from-QName (XQuery)
-
-.
+local-name-from-QName (XQuery).
 
 These are the limitations:
 

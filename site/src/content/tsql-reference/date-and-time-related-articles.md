@@ -19,8 +19,7 @@ Determinism
 
 @@DATEFIRST
 
-The function returns the current value, for the session, of
-.
+The function returns the current value, for the session, of.
 
 tinyint
 

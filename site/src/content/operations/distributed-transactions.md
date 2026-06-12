@@ -29,15 +29,13 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This article describes cross-database and distributed transactions support for Always On
 
 availability groups and database mirroring.
 
-SQL Server 2017 supports distributed transactions for databases in availability groups. This
+2017 supports distributed transactions for databases in availability groups. This
 
 support includes databases on the same instance of SQL Server or databases on different
 
@@ -49,9 +47,7 @@ To configure an availability group for distributed transactions, see
 
 Configure Availability Group
 
-for Distributed Transactions
-
-.
+for Distributed Transactions.
 
 See more information at:
 
@@ -65,7 +61,7 @@ DTC Programmers Reference
 
 Note
 
-SQL Server 2016 (13.x) Service Pack 2 and later provides full support for distributed
+2016 (13.x) Service Pack 2 and later provides full support for distributed
 
 transactions in availability groups.
 
@@ -75,4 +71,4 @@ transactions (i.e. transaction using databases on the same SQL Server instance) 
 
 database in an availability group are not supported.
 
-SQL Server 2016 SP1 and before: Support for cross-
+2016 SP1 and before: Support for cross-

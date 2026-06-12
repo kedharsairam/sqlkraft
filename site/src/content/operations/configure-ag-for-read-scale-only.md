@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 07/03/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
@@ -55,9 +53,7 @@ architecture, see
 
 Configure SQL Server Always On Availability Group for high availability on
 
-Linux
-
-.
+Linux.
 
 An availability group with
 
@@ -85,9 +81,7 @@ Each SQL Server instance name must be:
 
 Unique within the network.
 
-To set the computer name, edit
-
-. The following script lets you edit
+To set the computer name, edit. The following script lets you edit
 
 with
 

@@ -29,8 +29,6 @@ Article
 
 12/17/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -45,7 +43,7 @@ Recommendations
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 

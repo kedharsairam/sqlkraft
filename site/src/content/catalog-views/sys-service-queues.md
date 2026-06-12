@@ -54,7 +54,7 @@ syntax: |
 
 ## Description
 
-Contains a row for each object in the database that is a service queue, with For a list of columns that this view inherits, see Maximum number of the concurrent readers Three-part name of the activation procedure. ID of the EXECUTE AS database principal. NULL by default or if EXECUTE AS CALLER. ID of the specified principal if EXECUTE AS SELF 1 = Messages are retained until dialog end. : SQL Server 2012 (11.x) and later.
+Contains a row for each object in the database that is a service queue, with For a list of columns that this view inherits, see Maximum number of the concurrent readers Three-part name of the activation procedure.
 
 ## Syntax
 
@@ -90,4 +90,4 @@ GO
 
 ## Permissions
 
-Article • 02/28/2023 Applies to: SQL Server Contains a row for each object in the database that is a service queue, with = SQ. Description For a list of columns that this view inherits, see sys.objects (Transact-SQL) . Maximum number of the concurrent readers allowed in the queue. Three-part name of the activation procedure. ID of the EXECUTE AS database principal. NULL by default or if EXECUTE AS CALLER. ID of the specified principal if EXECUTE AS SELF EXECUTE AS <principal>. -2 = EXECUTE AS OWNER. 1 = Activation is enabled. 1 = Receive is enabled. 1 = Enqueue is enabled. 1 = Messages are retained until dialog end. : SQL Server 2012 (11.x) and later. 1 = Poison message handling is enabled. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration . ﾉ Expand table
+Article • 02/28/2023 Description For a list of columns that this view inherits, see sys.objects (Transact-SQL). Maximum number of the concurrent readers allowed in the queue. Three-part name of the activation procedure. ID of the EXECUTE AS database principal. NULL by default or if EXECUTE AS CALLER. ID of the specified principal if EXECUTE AS SELF EXECUTE AS <principal>. -2 = EXECUTE AS OWNER. 1 = Activation is enabled. 1 = Receive is enabled. 1 = Enqueue is enabled. 1 = Messages are retained until dialog end. : SQL Server 2012 (11.x) and later. 1 = Poison message handling is enabled. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration. ﾉ Expand table

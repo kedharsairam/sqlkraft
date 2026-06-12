@@ -15,9 +15,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Data Tools
+Data Tools
 
-SQL Server Data Tools (SSDT)
+Data Tools (SSDT)
 
 is a set of development tools in Visual Studio with focus on
 
@@ -35,9 +35,7 @@ capability extends to CI/CD pipelines, enabling you to automate the build and de
 
 your database projects with the
 
-SqlPackage CLI
-
-.
+SqlPackage CLI.
 
 The core of SQL Server Data Tools functionality is available as a workload component with
 
@@ -47,9 +45,7 @@ and more information on installing SSDT can be found at
 
 Install SQL Server Data Tools (SSDT)
 
-for Visual Studio
-
-.
+for Visual Studio.
 
 ７
 
@@ -57,16 +53,14 @@ Note
 
 SDK-style SQL projects in Visual Studio are available as part of the
 
-SQL Server Data Tools,
+Data Tools,
 
 feature for Visual Studio 2022, separate from the original SSDT. The
 
-SDK-style project format is based on the new SDK-style projects introduced in .NET Core
+SDK-style project format is based on the new SDK-style projects introduced in.NET Core
 
 and is the format used by the SQL Database Projects extension for Visual Studio Code. For
 
 more information, see
 
-SQL Server Data Tools, SDK-style (preview)
-
-.
+Data Tools, SDK-style (preview).

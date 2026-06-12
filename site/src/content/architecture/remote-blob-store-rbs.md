@@ -27,11 +27,9 @@ Article
 
 11/29/2023
 
-Applies to:
-
 SQL Server
 
-SQL Server Remote BLOB Store (RBS) is an optional add-on component that lets database
+Remote BLOB Store (RBS) is an optional add-on component that lets database
 
 administrators store binary large objects in commodity storage solutions instead of directly on
 
@@ -45,19 +43,19 @@ If you do not have SQL Server installation media, you can download RBS at one of
 
 following locations:
 
-SQL Server version
+version
 
-SQL Server 2016 (13.x)
+2016 (13.x)
 
-SQL Server 2016 (13.x) SP2 Feature Pack
+2016 (13.x) SP2 Feature Pack
 
-SQL Server 2017 (14.x)
+2017 (14.x)
 
-SQL Server 2017 (14.x) Feature Pack
+2017 (14.x) Feature Pack
 
-SQL Server 2019 (15.x)
+2019 (15.x)
 
-SQL Server 2019 (15.x) RBS download page
+2019 (15.x) RBS download page
 
 Storing BLOBs in the database can consume large amounts of file space and expensive server
 

@@ -27,15 +27,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server enabled by Azure Arc
+enabled by Azure Arc
 
 Article
 
 •
 
 09/09/2024
-
-Applies to:
 
 SQL Server
 
@@ -49,7 +47,7 @@ your SQL Server instance. After you enable the feature, an assessment scans your
 
 instance and databases to provide recommendations for things like:
 
-SQL Server and database configurations
+and database configurations
 
 Index management
 
@@ -81,9 +79,7 @@ Make sure that your Windows-based SQL Server instance is connected to Azure. Fol
 
 the instructions at
 
-Automatically connect your SQL Server to Azure Arc
-
-.
+Automatically connect your SQL Server to Azure Arc.
 
 ）
 
@@ -97,6 +93,4 @@ or
 
 licensing options.
 
-For instructions to configure the appropriate license type, review
-
-.
+For instructions to configure the appropriate license type, review.

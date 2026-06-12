@@ -59,9 +59,7 @@ multiple rows into a temporary table first with the option set to
 
 and again with the option
 
-set to
-
-. A single row is inserted into the
+set to. A single row is inserted into the
 
 table that will intentionally cause a duplicate
 
@@ -87,9 +85,7 @@ ignored, but the entire transaction was not rolled back.
 
 The same statements are executed again, but with
 
-set to
-
-.
+set to.
 
 Here are the results of the second
 
@@ -266,7 +262,7 @@ CREATE
 INDEX
 IX_VendorID
 ON
-Purchasing..ProductVendor (VendorID);
+Purchasing.ProductVendor (VendorID);
 ```
 
 ```sql
@@ -284,7 +280,7 @@ CLUSTERED
 INDEX
 IX_ProductVendor_VendorID
 ON
-Purchasing..ProductVendor (VendorID);
+Purchasing.ProductVendor (VendorID);
 ```
 
 ```sql

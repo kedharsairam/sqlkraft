@@ -31,7 +31,7 @@ SQL Server
 
 node in
 
-SQL Server Object Explorer
+Object Explorer
 
 similar to SQL Server
 
@@ -51,7 +51,7 @@ script pane, which allows you to directly edit the script that defines this tabl
 
 1. In
 
-SQL Server Object Explorer
+Object Explorer
 
 , under the
 
@@ -63,21 +63,15 @@ server instance.
 
 2. Right-click the
 
-node and select
+node and select.
 
-.
-
-3. Rename the new database to
-
-.
+3. Rename the new database to.
 
 1. Expand the newly created
 
 node. Right-click the
 
-node and select
-
-.
+node and select.
 
 2. The Table Designer opens in a new window. The designer consists of the Columns Grid,
 
@@ -85,9 +79,7 @@ Script pane, and Context pane. The Columns Grid lists all the columns in the tab
 
 revisit other components of the designer in later procedures.
 
-3. In the Script pane, rename the new table to
-
-. Specifically, replace
+3. In the Script pane, rename the new table to. Specifically, replace
 
 with
 

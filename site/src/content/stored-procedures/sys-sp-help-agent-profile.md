@@ -2,7 +2,7 @@
 name: "sys.sp_help_agent_profile"
 title: "sp_help_agent_profile"
 category: "general"
-description: "Displays the profile of a specified agent. This stored procedure is executed at the Distributor on Transact-SQL syntax conventions , and can be one of these values."
+description: "Displays the profile of a specified agent. This stored procedure is executed at the Distributor on , and can be one of these values."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-Displays the profile of a specified agent. This stored procedure is executed at the Distributor on Transact-SQL syntax conventions , and can be one of these values.
+Displays the profile of a specified agent. This stored procedure is executed at the Distributor on , and can be one of these values.
 
 ## Syntax
 

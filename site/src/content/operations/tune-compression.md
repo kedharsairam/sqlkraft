@@ -27,8 +27,6 @@ Article
 
 01/26/2024
 
-Applies to:
-
 SQL Server
 
 By default, SQL Server compresses data streams where appropriate for availability groups.

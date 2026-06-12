@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2025 (17.x) - Linux
+2025 (17.x) - Linux
 
 This article guides you to enable and run
 
@@ -33,7 +31,7 @@ filesystem in SQL
 
 Server 2025 (17.x).
 
-SQL Server on Linux and containers traditionally support
+on Linux and containers traditionally support
 
 and
 
@@ -57,9 +55,7 @@ filesystem, see
 
 tmpfs - The Linux Kernel
 
-documentation
-
-.
+documentation.
 
 Description
 
@@ -79,9 +75,7 @@ only for development purposes. However, this configuration isn't supported. You
 
 can provide feedback for this scenario on
 
-GitHub
-
-.
+GitHub.
 
 To enable
 

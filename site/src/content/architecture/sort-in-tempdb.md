@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -51,9 +49,7 @@ database. For more information about
 
 Configure the index create memory Server
 
-Configuration Option
-
-.
+Configuration Option.
 
 As the Database Engine builds an index, it goes through the following phases:
 
@@ -81,9 +77,7 @@ nonclustered sort run can be large. For more information about including nonkey
 
 columns, see
 
-Create Indexes with Included Columns
-
-.
+Create Indexes with Included Columns.
 
 The Database Engine merges the sorted runs of index leaf rows into a single, sorted
 

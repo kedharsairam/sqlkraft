@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -35,9 +33,7 @@ Transact-SQL scripts, and compare performance before and after your changes.
 
 menu, point to
 
-, and then select
-
-.
+, and then select.
 
 2. Select the Transact-SQL script file you want to open. Make sure that the Transact-SQL
 
@@ -45,9 +41,7 @@ script contains events necessary for replay. For more information, see
 
 Replay
 
-Requirements
-
-.
+Requirements.
 
 3. On the
 
@@ -59,10 +53,8 @@ script.
 
 4. In the
 
-dialog box, verify the settings, and then select
-
-.
+dialog box, verify the settings, and then select.
 
 Replay Traces
 
-SQL Server Profiler
+Profiler

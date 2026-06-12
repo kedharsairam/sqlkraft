@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -46,8 +44,6 @@ This is the result:
 XML
 
 Use EXPLICIT Mode with FOR XML
-
-Last updated on 11/18/2025
 
 ```sql
 USE

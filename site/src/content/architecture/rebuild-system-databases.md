@@ -41,8 +41,6 @@ Article
 
 07/22/2024
 
-Applies to:
-
 SQL Server
 
 System databases must be rebuilt to fix corruption problems in the
@@ -67,9 +65,7 @@ step-by-step instructions to rebuild system databases in SQL Server.
 
 This article is unrelated to
 
-rebuilding indexes
-
-.
+rebuilding indexes.
 
 When the
 

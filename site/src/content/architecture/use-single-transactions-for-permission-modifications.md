@@ -25,5 +25,3 @@ in a single transaction. Instead, execute security-related DDL operations in sep
 transactions to minimize lock contention.
 
 Get started with Database Engine permissions
-
-Related content

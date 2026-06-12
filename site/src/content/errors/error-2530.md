@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 2530 16 No The index "%.*ls" on table "%.*ls" is disabled. 2531 16 No Table error: object ID %d, index ID %d, partition ID %I64d, alloc unit ID %I64d (type %.\*ls) B-tree level mismatch, pa
+Description 2530 16 No The index "%.*ls" on table "%.*ls" is disabled.
 
 ## Severity
 

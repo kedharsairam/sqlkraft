@@ -41,8 +41,6 @@ pubDate: 2025-12-01
 
 07/14/2025
 
-Applies to:
-
 SQL Server
 
 Product
@@ -57,7 +55,7 @@ Event ID
 
 Event Source
 
-SQL Server Local Database Runtime 12.0
+Local Database Runtime 12.0
 
 Component
 

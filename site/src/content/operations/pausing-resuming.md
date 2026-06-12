@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 The database owner can pause and later resume a database mirroring session at any time.
@@ -73,6 +71,4 @@ Following a forced service, when the original principal server reconnects mirror
 
 suspended. Resuming mirroring in this situation could possibly cause data loss on the
 
-original principal server. For information about managing the potential data loss, see
-
-.
+original principal server. For information about managing the potential data loss, see.

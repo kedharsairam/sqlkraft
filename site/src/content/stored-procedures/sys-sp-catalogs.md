@@ -2,7 +2,7 @@
 name: "sys.sp_catalogs"
 title: "sp_catalogs"
 category: "general"
-description: "Returns the list of catalogs in the specified linked server. This is equivalent to databases in SQL Transact-SQL syntax conventions"
+description: "Returns the list of catalogs in the specified linked server. This is equivalent to databases in SQL"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -14,9 +14,7 @@ syntax: |
 
 ## Description
 
-Returns the list of catalogs in the specified linked server. This is equivalent to databases in SQL Transact-SQL syntax conventions
-
-## Syntax
+Returns the list of catalogs in the specified linked server. This is equivalent to databases in SQL ## Syntax
 
 ```sql
 sp_catalogs [ @server_name = ]

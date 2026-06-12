@@ -45,9 +45,7 @@ conditions. SQL Server Data Tools provides a set of predefined test conditions. 
 
 create and use custom conditions; see
 
-Custom Test Conditions for SQL Server Unit Tests
-
-.
+Custom Test Conditions for SQL Server Unit Tests.
 
 The following table lists the predefined test conditions that you can add by using the Test
 
@@ -61,9 +59,7 @@ Fails if the checksum of the result set returned from the Transact-SQL script do
 
 match the expected checksum. For more information, see
 
-Specifying a Data Checksum
-
-.
+Specifying a Data Checksum.
 
 Note:
 
@@ -101,9 +97,7 @@ test condition. You must specify a schema through the properties of the test con
 
 For more information, see
 
-Specifying an Expected Schema
-
-.
+Specifying an Expected Schema.
 
 Inconclusive
 

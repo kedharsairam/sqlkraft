@@ -15,7 +15,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Data Tools usage and
+Data Tools usage and
 
 09/10/2025
 
@@ -31,17 +31,13 @@ at the computer.
 
 For more information about the VSCEIP, including how to opt in or opt out, see the
 
-VSCEIP
-
-.
+VSCEIP.
 
 For more information about the system-generated diagnostic logs collected, see the
 
 documentation on
 
-system-generated logs
-
-.
+system-generated logs.
 
 SSDT doesn't collect your name, address, or any other data related to an identified or
 
@@ -49,6 +45,4 @@ identifiable individual. For more information about the information collected, p
 
 transmitted by the VSCEIP, see the
 
-Microsoft Privacy Statement
-
-.
+Microsoft Privacy Statement.

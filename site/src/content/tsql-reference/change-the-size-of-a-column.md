@@ -35,15 +35,9 @@ Specifies whether an
 
 operation is resumable. Add table constraint
 
-operation is resumable when
+operation is resumable when. Add table constraint operation isn't resumable when.
 
-. Add table constraint operation isn't resumable when
-
-.
-
-Default is
-
-. The
+Default is. The
 
 option can be used as part of the
 
@@ -53,9 +47,7 @@ ALTER TABLE index_option
 
 in the
 
-ALTER TABLE table_constraint (Transact-SQL)
-
-.
+ALTER TABLE table_constraint (Transact-SQL).
 
 when used with
 
@@ -73,15 +65,11 @@ operations,
 
 see
 
-Resumable add table constraints
-
-.
+Resumable add table constraints.
 
 To add new rows of data, use
 
-INSERT (Transact-SQL)
-
-. To remove rows of data, use
+INSERT (Transact-SQL). To remove rows of data, use
 
 DELETE
 
@@ -89,13 +77,9 @@ DELETE
 
 or
 
-TRUNCATE TABLE (Transact-SQL)
+TRUNCATE TABLE (Transact-SQL). To change the values in existing rows, use
 
-. To change the values in existing rows, use
-
-UPDATE (Transact-SQL)
-
-.
+UPDATE (Transact-SQL).
 
 If there are any execution plans in the procedure cache that reference the table,
 

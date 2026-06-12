@@ -23,9 +23,7 @@ This article lists the features and fixes delivered by the released versions of 
 
 For the latest version information, see
 
-Release notes for SqlPackage
-
-.
+Release notes for SqlPackage.
 
 The
 
@@ -47,7 +45,7 @@ Tools (SSDT) integration)
 
 NuGet APIs, schema compare
 
-- ScriptDom, Microsoft.Data.SqlClient, .NET support, system DACPACs,
+- ScriptDom, Microsoft.Data.SqlClient,.NET support, system DACPACs,
 
 compatibility defaults
 
@@ -55,13 +53,9 @@ The following releases are archived and no longer supported.
 
 November 21, 2024
 
-Windows .NET 8
+Windows.NET 8.zip file
 
-.zip file
-
-Windows
-
-.msi file
+Windows.msi file
 
 ﾉ
 

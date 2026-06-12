@@ -1,14 +1,12 @@
 ---
 title: "What is optimized locking?"
 topic: "locking"
-description: "SQL Server 2025 (17.x)"
+description: "2025 (17.x)"
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 Azure SQL Database
 
@@ -30,9 +28,7 @@ of deadlocks. This allows more concurrent access to the table.
 
 Optimized locking is composed of two primary components:
 
-and
-
-.
+and.
 
 A transaction ID (TID) is a unique identifier of a transaction. Each row is labeled with the
 
@@ -40,9 +36,7 @@ last TID that modified it. Instead of potentially many key or row identifier loc
 
 lock on the TID is used to protect all modified rows. For more information, see
 
-Transaction ID (TID) locking
-
-.
+Transaction ID (TID) locking.
 
 Lock after qualification (LAQ) is an optimization that evaluates query predicates using the
 
@@ -50,15 +44,11 @@ latest committed version of the row without acquiring a lock, thus improving con
 
 LAQ requires
 
-read committed snapshot isolation (RCSI)
-
-. For more information, see
+read committed snapshot isolation (RCSI). For more information, see
 
 Lock
 
-after qualification (LAQ)
-
-.
+after qualification (LAQ).
 
 For example:
 
@@ -96,9 +86,7 @@ Data Modification Language (DML) statements such as
 
 ,
 
-,
-
-. It
+,. It
 
 has no effect on other kinds of database and object locks, such as schema locks.
 

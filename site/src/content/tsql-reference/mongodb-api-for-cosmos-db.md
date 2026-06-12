@@ -63,9 +63,7 @@ You can only specify the key-value pairs that have an entry in the connector con
 
 the
 
-Teradata Connector Configuration Options
-
-.
+Teradata Connector Configuration Options.
 
 You can only specify the key-value pairs that have an entry in the following driver configuration options.
 
@@ -81,9 +79,7 @@ Required
 
 No
 
-The maximum number of characters that can be contained in
-
-columns. The maximum value that you can set for this option is
+columns.
 
 2147483647.
 
@@ -91,15 +87,9 @@ False
 
 No
 
-This option specifies whether the driver allows active cursors on the
-
 data source server to expire. When
 
-, the data source server will
-
-time out idle cursors after the threshold inactivity period set on the
-
-server. When set to
+server.
 
 , the driver prevents the data source server
 
@@ -108,8 +98,6 @@ from timing out idle cursors, and there's a risk that if the driver should
 quit or lose the connection to the server unexpectedly, the cursor
 
 remains open on the server indefinitely. You can adjust the threshold
-
-for idle cursor timeouts on the MongoDB server, see
 
 MongoDB Server
 
@@ -121,13 +109,9 @@ for details.
 
 No
 
-The maximum number of records that the driver can sample to
-
 generate a temporary schema definition. When this option is set to 0,
 
 the driver samples every document in the database.
-
-Expand table
 
 `DefaultStringColumnLength`
 

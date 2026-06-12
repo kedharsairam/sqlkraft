@@ -1,7 +1,7 @@
 ---
 name: "To Identify When was Password got Changed"
 title: "To Identify When was Password got Changed"
-description: "SQL Server diagnostic script for security-audit operations."
+description: "diagnostic script for security-audit operations."
 category: security-audit
 tags: ["security-audit"]
 pubDate: 2025-03-15

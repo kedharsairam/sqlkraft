@@ -2,7 +2,7 @@
 name: "sys.sp_adddynamicsnapshot_job"
 title: "sp_adddynamicsnapshot_job"
 category: "general"
-description: "Creates an agent job that generates a filtered data snapshot for a publication with parameterized row filters. This stored procedure is executed at the Publisher on the publication database. This stored procedure is used by an administrator to manually create filtered data snapshot jobs for Subscribers. Create a Snapshot for a Merge Publication with Parameterized Transact-SQL syntax conventions In"
+description: "Creates an agent job that generates a filtered data snapshot for a publication with parameterized row filters. This stored procedure is executed at the Publisher on the publication database. This stored procedure is used by an administrator to manually create filtered data snapshot jobs for Subscribers. Create a Snapshot for a Merge Publication with Parameterized In"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -42,7 +42,7 @@ syntax: |
 
 ## Description
 
-Creates an agent job that generates a filtered data snapshot for a publication with parameterized row filters. This stored procedure is executed at the Publisher on the publication database. This stored procedure is used by an administrator to manually create filtered data snapshot jobs for Subscribers. Create a Snapshot for a Merge Publication with Parameterized Transact-SQL syntax conventions In order for a filtered data snapshot job to be created, a standard snapshot job for the
+Creates an agent job that generates a filtered data snapshot for a publication with parameterized row filters. This stored procedure is executed at the Publisher on the publication database. This stored procedure is used by an administrator to manually create filtered data snapshot jobs for Subscribers.
 
 ## Syntax
 
@@ -83,4 +83,4 @@ OUTPUT
 
 ## Permissions
 
-Only members of the fixed server role or the fixed database role can execute . Create a Snapshot for a Merge Publication with Parameterized Filters Parameterized Filters - Parameterized Row Filters sp_dropdynamicsnapshot_job (Transact-SQL) sp_helpdynamicsnapshot_job (Transact-SQL) Related content
+Only members of the fixed server role or the fixed database role can execute. Create a Snapshot for a Merge Publication with Parameterized Filters Parameterized Filters - Parameterized Row Filters sp_dropdynamicsnapshot_job (Transact-SQL) sp_helpdynamicsnapshot_job (Transact-SQL)

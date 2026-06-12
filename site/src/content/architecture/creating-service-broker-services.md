@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -61,9 +59,7 @@ are often chosen to avoid collation issues and naming conflicts. For more inform
 
 naming, see
 
-Naming Service Broker Objects
-
-.
+Naming Service Broker Objects.
 
 To create a service, you must do the following:
 
