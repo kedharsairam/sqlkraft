@@ -160,49 +160,6 @@ function parseFrontmatterMap(frontmatterText) {
   return map;
 }
 
-/**
- * Rebuild frontmatter text from a key-value map, converting all
- * values to quoted strings (simpler, more consistent format).
- */
-function rebuildFrontmatter(frontmatterText, overrides) {
-  // Parse current frontmatter
-  const fm = parseFrontmatterMap(frontmatterText);
-
-  // Apply overrides
-  for (const [key, value] of Object.entries(overrides)) {
-    if (value === undefined) continue;
-    fm[key] = value;
-  }
-
-  // Rebuild
-  const lines = [];
-  for (const [key, value] of Object.entries(fm)) {
-    if (value === null || value === undefined) continue;
-    const strVal = String(value);
-
-    // JSON array — output inline even if it contains quotes
-    if (/^\[[\s\S]*\]$/.test(strVal.trim())) {
-      lines.push(`${key}: ${strVal}`);
-    } else if (strVal === "true" || strVal === "false") {
-      // Boolean values — unquoted for YAML boolean parsing
-      lines.push(`${key}: ${strVal}`);
-    } else if (/^\d{4}-\d{2}-\d{2}$/.test(strVal)) {
-      // Date value (e.g., 2025-12-01) — output unquoted for YAML date parsing
-      lines.push(`${key}: ${strVal}`);
-    } else if (strVal.includes('"') || strVal.includes("\n")) {
-      // Multi-line or contains quotes — use YAML literal block
-      lines.push(`${key}: |`);
-      for (const subLine of strVal.split("\n")) {
-        lines.push(`  ${subLine}`);
-      }
-    } else {
-      lines.push(`${key}: "${strVal}"`);
-    }
-  }
-
-  return lines.join("\n");
-}
-
 /* ════════════════════════════════════════════════════════════════
    SANITIZATION PASSES
    ════════════════════════════════════════════════════════════════ */
