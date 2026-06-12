@@ -27,9 +27,9 @@ The following example returns 1 since the input is a valid JSON scalar according
 
 JSON data in SQL Server
 
-### nvarchar(max)
+## nvarchar(max)
 
-### json
+## json
 
 `json_col`
 

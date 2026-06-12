@@ -27,7 +27,7 @@ hierarchyid
 
 hierarchyid
 
-### Support for arbitrary insertions and deletions
+## Support for arbitrary insertions and deletions
 
 Encoding is limited to 892 bytes: hierarchyid
 

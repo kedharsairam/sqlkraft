@@ -6,23 +6,23 @@ tags: ["locking","architecture"]
 pubDate: "2026-05-29"
 ---
 
-### Session A
+## Session A
 
-### Session B
+## Session B
 
-### Session A
+## Session A
 
-### Session B
+## Session B
 
-### Session A
+## Session A
 
-### Session B
+## Session B
 
-### Session A
+## Session A
 
-### Session B
+## Session B
 
-### Session A
+## Session A
 
 The second update statement in
 

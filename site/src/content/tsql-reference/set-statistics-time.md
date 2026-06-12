@@ -27,10 +27,10 @@ SET STATISTICS IO (Transact-SQL)
 
 See Also
 
-### lightweight pooling
+## lightweight pooling
 
-### cpu
+## cpu
 
-### sysprocesses
+## sysprocesses
 
-### 0
+## 0

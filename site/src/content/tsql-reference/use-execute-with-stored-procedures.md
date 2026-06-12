@@ -97,11 +97,11 @@ about executing stored procedures, see
 
 Execute a stored procedure.
 
-### varchar(max)
+## varchar(max)
 
-### nvarchar(max)
+## nvarchar(max)
 
-### sysadmin
+## sysadmin
 
 ```sql
 @@NESTLEVEL

@@ -60,6 +60,6 @@ When the end of the logical log reaches the end of the physical log file, the ne
 
 wrap around to the start of the physical log file.
 
-### Manage the size of the
+## Manage the size of the
 
-### transaction log file
+## transaction log file

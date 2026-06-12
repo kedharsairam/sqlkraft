@@ -52,7 +52,7 @@ model. Like the GAM and SGAM pages, these structures are bitmaps in which each b
 
 represents a single extent.
 
-### BCM pages
+## BCM pages
 
 These pages track the extents that have changed since the last full database backup. If
 

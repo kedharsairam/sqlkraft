@@ -78,7 +78,7 @@ to change. Compatibility isn't guaranteed.
 
 Expand table
 
-### Page Free Space (PFS)
+## Page Free Space (PFS)
 
 ```sql
 DBCC PAGE

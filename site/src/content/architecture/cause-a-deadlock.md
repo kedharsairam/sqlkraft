@@ -70,21 +70,21 @@ applications, unless an application relies upon the blocking behavior of the loc
 
 isolation level.
 
-### Session A
+## Session A
 
-### Session B
+## Session B
 
-### Session A
+## Session A
 
-### Session B
+## Session B
 
-### Session B
+## Session B
 
-### Session A
+## Session A
 
-### Session B
+## Session B
 
-### Session A
+## Session A
 
 To cause a deadlock, you need to connect two sessions to the
 

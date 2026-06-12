@@ -49,15 +49,15 @@ clause. A solution is to call a user-defined function that uses XML
 
 methods inside of it.
 
-### node()
+## node()
 
-### value()
+## value()
 
-### nodes()
+## nodes()
 
-### value()
+## value()
 
-### XACT_ABORT
+## XACT_ABORT
 
 `PRINT`
 

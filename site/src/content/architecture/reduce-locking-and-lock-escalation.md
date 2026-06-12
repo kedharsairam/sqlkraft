@@ -244,7 +244,7 @@ create a Transact-SQL job that contains the following code, and schedule the new
 
 start several minutes before the batch job's start time:
 
-### MSSQLSERVER_1204
+## MSSQLSERVER_1204
 
 `IX`
 

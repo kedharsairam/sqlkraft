@@ -89,13 +89,13 @@ current identity value is the last identity value generated for the table or vie
 
 Expand table
 
-### sysadmin
+## sysadmin
 
-### db_owner
+## db_owner
 
-### db_ddladmin
+## db_ddladmin
 
-### db_owner
+## db_owner
 
 `new_reseed_value`
 

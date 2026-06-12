@@ -89,7 +89,7 @@ way, but stored separately as multiple tables in either the same instance of SQL
 
 group of autonomous instances of SQL Server servers, called federated database servers.
 
-### Partitioned Tables and Indexes
+## Partitioned Tables and Indexes
 
 ```sql
 GROUP BY

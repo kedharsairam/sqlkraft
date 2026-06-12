@@ -81,63 +81,63 @@ function will be generated in the order specified by the
 
 clause.
 
-### NEXT VALUE FOR
+## NEXT VALUE FOR
 
-### OVER
+## OVER
 
-### NEXT VALUE FOR
+## NEXT VALUE FOR
 
-### OVER
+## OVER
 
-### OVER
+## OVER
 
-### ORDER BY
+## ORDER BY
 
-### NEXT VALUE FOR
+## NEXT VALUE FOR
 
-### OVER
+## OVER
 
-### NEXT VALUE FOR
+## NEXT VALUE FOR
 
-### OVER
+## OVER
 
-### NEXT VALUE FOR
+## NEXT VALUE FOR
 
-### OVER
+## OVER
 
-### OVER
+## OVER
 
-### NEXT VALUE FOR
+## NEXT VALUE FOR
 
-### PARTITION BY
+## PARTITION BY
 
-### NEXT VALUE FOR
+## NEXT VALUE FOR
 
-### SELECT
+## SELECT
 
-### OVER
+## OVER
 
-### ORDER BY
+## ORDER BY
 
-### SELECT
+## SELECT
 
-### OVER
+## OVER
 
-### NEXT VALUE FOR
+## NEXT VALUE FOR
 
-### SELECT
+## SELECT
 
-### OVER
+## OVER
 
-### NEXT
+## NEXT
 
-### VALUE FOR
+## VALUE FOR
 
-### UPDATE
+## UPDATE
 
-### MERGE
+## MERGE
 
-### UPDATE
+## UPDATE
 
 ```sql
 INSERT. SELECT

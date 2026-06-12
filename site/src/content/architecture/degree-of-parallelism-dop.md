@@ -74,9 +74,9 @@ parallelism setting. This indicates that the total estimated subtree cost of the
 
 exceeded it, and the query plan with the lower total estimated subtree cost was chosen.
 
-### sufficient number of rows to process
+## sufficient number of rows to process
 
-### current distribution statistics are available
+## current distribution statistics are available
 
 with the
 
@@ -164,15 +164,15 @@ Parallel index operations are only available in SQL Server Enterprise, Developer
 
 Evaluation editions.
 
-### max degree of parallelism (MAXDOP)
+## max degree of parallelism (MAXDOP)
 
-### MAX_DOP
+## MAX_DOP
 
-### MAXDOP
+## MAXDOP
 
-### MAXDOP
+## MAXDOP
 
-### MAXDOP
+## MAXDOP
 
 `WHERE`
 

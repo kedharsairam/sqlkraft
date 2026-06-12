@@ -98,8 +98,8 @@ determine the set of indexes for these tables.
 
 1
 
-### Determine which index options can enhance performance
+## Determine which index options can enhance performance
 
-### Examine existing indexes on the table to prevent creating duplicate or very similar
+## Examine existing indexes on the table to prevent creating duplicate or very similar
 
-### indexes
+## indexes

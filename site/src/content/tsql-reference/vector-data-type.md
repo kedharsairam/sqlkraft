@@ -7,19 +7,19 @@ tags: ["tsql","data-types"]
 pubDate: "2026-05-29"
 ---
 
-### vector
+## vector
 
-### vector
+## vector
 
-### vector
+## vector
 
-### json
+## json
 
-### Half-precision float support in vector data type
+## Half-precision float support in vector data type
 
-### Always-
+## Always-
 
-### up-to-date
+## up-to-date
 
 ﾃ
 
@@ -95,13 +95,13 @@ Vector features are available in Azure SQL Managed Instance configured with the
 
 policy.
 
-### vector
+## vector
 
-### half-precision
+## half-precision
 
-### vector
+## vector
 
-### vector
+## vector
 
 ```sql
 '[0.1, 2,

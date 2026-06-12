@@ -58,16 +58,16 @@ you can experience delays or bottlenecks. Ensure the server's caching performanc
 
 optimal, and latency is minimized. For more information, see.
 
-### Bit corruption
+## Bit corruption
 
-### Flying writes
+## Flying writes
 
-### Shorn writes
+## Shorn writes
 
-### Metadata corruption
+## Metadata corruption
 
-### Unresponsive device
+## Unresponsive device
 
-### Unserializability
+## Unserializability
 
-### Recommendation
+## Recommendation

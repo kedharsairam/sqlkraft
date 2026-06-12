@@ -7,17 +7,17 @@ tags: ["tsql","statements"]
 pubDate: "2026-05-29"
 ---
 
-### Delimited text
+## Delimited text
 
-### Hive RCFile
+## Hive RCFile
 
-### Hive ORC
+## Hive ORC
 
-### Parquet
+## Parquet
 
-### JSON
+## JSON
 
-### Delta
+## Delta
 
 SQL)
 

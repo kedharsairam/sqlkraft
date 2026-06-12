@@ -78,10 +78,10 @@ of events that significantly affect performance.
 
 Important
 
-### Extended Events
+## Extended Events
 
-### Quick Start:
+## Quick Start:
 
-### Extended events in SQL Server
+## Extended events in SQL Server
 
-### SSMS XEvent Profiler
+## SSMS XEvent Profiler

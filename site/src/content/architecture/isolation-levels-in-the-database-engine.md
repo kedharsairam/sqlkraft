@@ -322,15 +322,15 @@ No
 
 Expand table
 
-### Transact-SQL
+## Transact-SQL
 
-### ADO
+## ADO
 
-### ADO.NET
+## ADO.NET
 
-### OLE DB
+## OLE DB
 
-### ODBC
+## ODBC
 
 `SERIALIZABLE`
 

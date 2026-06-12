@@ -94,7 +94,7 @@ Yes
 
 Expand table
 
-### Server memory configuration options
+## Server memory configuration options
 
 `memory_to_reserve`
 

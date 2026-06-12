@@ -84,15 +84,15 @@ BTree indexes don't require page free space tracking because the point at which 
 
 row is always determined by the index key values. If a page in a BTree index doesn't have
 
-### Index Allocation Map (IAM)
+## Index Allocation Map (IAM)
 
-### varchar(max)
+## varchar(max)
 
-### nvarchar(max)
+## nvarchar(max)
 
-### varbinary(max)
+## varbinary(max)
 
-### json
+## json
 
 ```sql
 1

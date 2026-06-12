@@ -68,11 +68,11 @@ in SQL
 
 Server help.
 
-### Average page latch wait time consistently increases with throughput
+## Average page latch wait time consistently increases with throughput
 
-### MSSQL%InstanceName%\Wait Statistics\Page Latch Waits\Average Wait Time
+## MSSQL%InstanceName%\Wait Statistics\Page Latch Waits\Average Wait Time
 
-### Percentage of total wait time spent on latch wait types during peak load
+## Percentage of total wait time spent on latch wait types during peak load
 
 For more information about the
 
@@ -174,15 +174,15 @@ by the number of waiting tasks (returned as
 
 ).
 
-### non-production environment
+## non-production environment
 
-### Throughput doesn't increase, and in some case decreases, as application load increases
+## Throughput doesn't increase, and in some case decreases, as application load increases
 
-### and the number of CPUs available to SQL Server increases
+## and the number of CPUs available to SQL Server increases
 
-### CPU Utilization doesn't increase as application workload increases
+## CPU Utilization doesn't increase as application workload increases
 
-### Calculate Waits Over a Time Period
+## Calculate Waits Over a Time Period
 
 `sys.dm_os_wait_stats`
 

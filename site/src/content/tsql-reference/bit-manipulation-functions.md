@@ -77,17 +77,17 @@ You can use the following images to visualize how SQL Server's bit manipulation 
 
 interpret bit and byte expression values and bit offsets.
 
-### binary(
+## binary(
 
-### n
+## n
 
-### )
+## )
 
-### varbinary(
+## varbinary(
 
-### n
+## n
 
-### )
+## )
 
 ```sql
 1

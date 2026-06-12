@@ -78,11 +78,11 @@ Partitioning rarely improves query performance in OLTP systems, but it can intro
 
 significant overhead if a transactional query must access many partitions.
 
-### Sort
+## Sort
 
-### Sort
+## Sort
 
-### base table
+## base table
 
 ```sql
 CREATE INDEX

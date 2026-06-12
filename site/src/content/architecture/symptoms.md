@@ -38,7 +38,7 @@ events for the spinlock types of interest.
 
 Expand table
 
-### Script
+## Script
 
 14,752,117
 
@@ -112,7 +112,7 @@ stacks have a slot count that is two orders of magnitude greater than the next h
 
 This condition indicates a code path of interest.
 
-### Output 1
+## Output 1
 
 XML
 
@@ -132,11 +132,11 @@ Note
 
 The formatting of the following output has been cleaned for readability purposes.
 
-### Output 2
+## Output 2
 
 XML
 
-### Fully Qualified Names:
+## Fully Qualified Names:
 
 `sys.dm_os_spinlock_stats`
 

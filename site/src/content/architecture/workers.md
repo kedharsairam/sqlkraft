@@ -98,6 +98,6 @@ If a query plan has serial and parallel branches, one of the parallel tasks will
 
 for executing the serial branch.
 
-### max degree of parallelism (MAXDOP)
+## max degree of parallelism (MAXDOP)
 
-### Configure the max degree of parallelism Server Configuration Option
+## Configure the max degree of parallelism Server Configuration Option

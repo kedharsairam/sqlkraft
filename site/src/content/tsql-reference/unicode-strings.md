@@ -7,7 +7,7 @@ tags: ["tsql","data-types"]
 pubDate: "2026-05-29"
 ---
 
-### nvarchar(max)
+## nvarchar(max)
 
 The following are examples of character strings:
 

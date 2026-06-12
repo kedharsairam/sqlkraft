@@ -96,17 +96,17 @@ In SQL Server 2022 (16.x) and earlier versions, SQL Server Standard edition supp
 
 128 GB.
 
-### Single-Page Allocator (SPA)
+## Single-Page Allocator (SPA)
 
-### Multi-Page Allocator (MPA)
+## Multi-Page Allocator (MPA)
 
-### CLR Allocator
+## CLR Allocator
 
-### thread stacks
+## thread stacks
 
-### Direct Windows allocations (DWA)
+## Direct Windows allocations (DWA)
 
-### "Any size" Page Allocator
+## "Any size" Page Allocator
 
 ```sql
 max server memory (MB)

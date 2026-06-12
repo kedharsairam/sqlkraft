@@ -85,7 +85,7 @@ statement can't reference log
 
 files, offline files, restoring files, and defunct files.
 
-### true
+## true
 
 ```sql
 CREATE DATABASE

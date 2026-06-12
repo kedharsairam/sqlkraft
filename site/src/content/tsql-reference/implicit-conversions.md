@@ -7,7 +7,7 @@ tags: ["tsql","statements"]
 pubDate: "2026-05-29"
 ---
 
-### Microsoft Download Center
+## Microsoft Download Center
 
 (default)
 
@@ -155,15 +155,15 @@ rules of
 
 data type precedence.
 
-### varbinary(max)
+## varbinary(max)
 
-### varchar(max)
+## varchar(max)
 
-### nvarchar(max)
+## nvarchar(max)
 
-### varchar(max)
+## varchar(max)
 
-### effects of data type precedence in conversions
+## effects of data type precedence in conversions
 
 `CAST`
 

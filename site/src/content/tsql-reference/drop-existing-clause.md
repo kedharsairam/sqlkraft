@@ -89,9 +89,9 @@ statement specifies a nonclustered index and the
 
 option is set to. If the clustered
 
-### Applies to
+## Applies to
 
-### Deferred deallocation
+## Deferred deallocation
 
 ```sql
 WITH option_name

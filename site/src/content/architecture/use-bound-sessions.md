@@ -82,9 +82,9 @@ or
 
 to succeed.
 
-### Local bound session
+## Local bound session
 
-### Distributed bound session
+## Distributed bound session
 
 `sp_bindsession`
 

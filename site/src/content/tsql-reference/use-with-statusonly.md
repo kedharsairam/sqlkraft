@@ -85,13 +85,13 @@ Use Marked Transactions to Recover
 
 Related Databases Consistently.
 
-### sysadmin
+## sysadmin
 
-### processadmin
+## processadmin
 
-### Microsoft Fabric Data Warehouse:
+## Microsoft Fabric Data Warehouse:
 
-### Azure Synapse Analytics:
+## Azure Synapse Analytics:
 
 `KILL`
 

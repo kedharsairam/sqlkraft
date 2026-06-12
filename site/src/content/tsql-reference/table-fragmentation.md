@@ -81,33 +81,33 @@ created.
 
 Reorder the leaf-level pages of the index in a logical order.
 
-### Avg. Bytes free per page
+## Avg. Bytes free per page
 
-### Avg. Page density (full)
+## Avg. Page density (full)
 
-### Avg. Bytes free per page
+## Avg. Bytes free per page
 
-### Avg.
+## Avg.
 
-### Page density (full)
+## Page density (full)
 
-### Extent Switches
+## Extent Switches
 
-### Extents Scanned
+## Extents Scanned
 
-### Extent Switches
+## Extent Switches
 
-### Extents Scanned
+## Extents Scanned
 
-### Scan Density
+## Scan Density
 
-### Logical Scan Fragmentation
+## Logical Scan Fragmentation
 
-### Extent Scan Fragmentation
+## Extent Scan Fragmentation
 
-### Logical Scan Fragmentation
+## Logical Scan Fragmentation
 
-### Extent Scan Fragmentation
+## Extent Scan Fragmentation
 
 Use
 
@@ -203,13 +203,13 @@ Note
 
 This method does not work if the index spans multiple files.
 
-### sysadmin
+## sysadmin
 
-### db_owner
+## db_owner
 
-### db_ddladmin
+## db_ddladmin
 
-### Extent Scan Fragmentation
+## Extent Scan Fragmentation
 
 ```sql
 WITH FAST

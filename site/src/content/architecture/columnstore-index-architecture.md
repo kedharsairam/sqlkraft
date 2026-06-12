@@ -54,13 +54,13 @@ Knowing these basics makes it easier to understand other columnstore articles th
 
 how to use this technology effectively.
 
-### columnstore
+## columnstore
 
-### rowstore
+## rowstore
 
-### deltastore
+## deltastore
 
-### rowgroup
+## rowgroup
 
 ```sql
 b

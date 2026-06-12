@@ -6,7 +6,7 @@ tags: ["locking","architecture"]
 pubDate: "2026-05-29"
 ---
 
-### Avoid locking hints with optimized locking
+## Avoid locking hints with optimized locking
 
 Locking hints can be specified for individual table references in the
 

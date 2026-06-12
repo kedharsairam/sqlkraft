@@ -82,6 +82,6 @@ detail on waiting tasks is available by querying the
 
 DMV.
 
-### lightweight pooling
+## lightweight pooling
 
-### affinity mask option
+## affinity mask option

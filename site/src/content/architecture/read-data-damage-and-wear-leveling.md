@@ -68,7 +68,7 @@ CHECKDB
 
 , and it reports an error. If you run it a second time, there's a small chance that
 
-### Recommendations:
+## Recommendations:
 
 ```sql
 1

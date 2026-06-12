@@ -73,19 +73,19 @@ Note
 
 This doesn't apply to the statistics related SET options.
 
-### sp_configure user options
+## sp_configure user options
 
-### db1.dbo.sp1
+## db1.dbo.sp1
 
-### db2.dbo.sp2
+## db2.dbo.sp2
 
-### sp1
+## sp1
 
-### db1
+## db1
 
-### sp2
+## sp2
 
-### db2
+## db2
 
 SET statement settings override identical database option settings that are set by using
 

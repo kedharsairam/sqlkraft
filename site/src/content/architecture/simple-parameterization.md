@@ -50,11 +50,11 @@ statement, or the
 
 stored procedure.
 
-### EF Query caching and parameterization
+## EF Query caching and parameterization
 
-### EF Raw SQL
+## EF Raw SQL
 
-### Queries
+## Queries
 
 ```sql
 SELECT

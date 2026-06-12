@@ -69,16 +69,16 @@ Note
 
 This option is not available in Azure Synapse Analytics.
 
-### CompanyDomain\SQLUsers
+## CompanyDomain\SQLUsers
 
-### Sales
+## Sales
 
-### CompanyDomain\SqlUser1
+## CompanyDomain\SqlUser1
 
-### Sales
+## Sales
 
-### CompanyDomain\SqlUser1
+## CompanyDomain\SqlUser1
 
-### WITHOUT LOGIN
+## WITHOUT LOGIN
 
-### EXECUTE AS
+## EXECUTE AS

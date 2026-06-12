@@ -114,7 +114,7 @@ system view isn't supported and is subject to
 
 change. Compatibility isn't guaranteed. This view isn't available in Azure SQL Database.
 
-### DCM pages
+## DCM pages
 
 `IN_ROW_DATA`
 

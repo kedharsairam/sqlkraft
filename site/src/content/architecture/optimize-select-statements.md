@@ -42,13 +42,13 @@ The inputs and outputs of the Query Optimizer during optimization of a single
 
 statement are illustrated in the following diagram:
 
-### The sequence in which the source tables are accessed.
+## The sequence in which the source tables are accessed.
 
-### The methods used to extract data from each table.
+## The methods used to extract data from each table.
 
-### The methods used to compute calculations, and how to filter, aggregate, and sort data
+## The methods used to compute calculations, and how to filter, aggregate, and sort data
 
-### from each table.
+## from each table.
 
 A
 
@@ -240,11 +240,11 @@ efficient execution plan for the state of the database every time the statement 
 
 1
 
-### Estimated Execution Plan
+## Estimated Execution Plan
 
-### Actual Execution Plan
+## Actual Execution Plan
 
-### Live Query Statistics
+## Live Query Statistics
 
 `OR`
 

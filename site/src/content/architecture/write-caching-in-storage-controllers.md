@@ -74,10 +74,10 @@ optimizations of the caching controller.
 
 Note
 
-### Configure persistent memory
+## Configure persistent memory
 
-### (PMEM) for SQL Server on Windows
+## (PMEM) for SQL Server on Windows
 
-### Configure persistent memory (PMEM) for SQL
+## Configure persistent memory (PMEM) for SQL
 
-### Server on Linux
+## Server on Linux

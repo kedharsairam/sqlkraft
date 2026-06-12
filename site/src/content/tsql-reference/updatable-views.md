@@ -135,9 +135,9 @@ An aggregate function:
 
 , and.
 
-### INSTEAD OF triggers
+## INSTEAD OF triggers
 
-### Partitioned views
+## Partitioned views
 
 ```sql
 CREATE VIEW

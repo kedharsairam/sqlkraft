@@ -6,9 +6,9 @@ tags: ["query-processing","architecture"]
 pubDate: "2026-05-29"
 ---
 
-### Server configuration: min memory
+## Server configuration: min memory
 
-### per query
+## per query
 
 and
 

@@ -100,9 +100,9 @@ performance of queries that require range scans that utilize the clustered index
 
 analysis of the workload patterns is required to determine if this design approach works
 
-### Original table definition
+## Original table definition
 
-### Reordered index definition
+## Reordered index definition
 
 This pattern was implemented during a performance lab engagement and resolved latch
 
@@ -146,7 +146,7 @@ The object names in the table definition have been changed from their original v
 
 Important
 
-### Using a hash value as the leading column in primary key
+## Using a hash value as the leading column in primary key
 
 `PAGELATCH_UP`
 

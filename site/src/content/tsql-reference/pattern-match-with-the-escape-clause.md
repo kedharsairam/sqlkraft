@@ -75,7 +75,7 @@ specified, the Database Engine returns any rows with the string.
 
 Expand table
 
-### char(0)
+## char(0)
 
 `LIKE`
 

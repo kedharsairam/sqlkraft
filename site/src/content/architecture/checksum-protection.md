@@ -86,7 +86,7 @@ whenever they are written next. This means that the database might be composed o
 
 pages with different kinds of protection.
 
-### PAGE_VERIFY
+## PAGE_VERIFY
 
 ```sql
 ALTER DATABASE SET

@@ -52,13 +52,13 @@ improve the compression ratio and small enough to benefit from in memory operati
 
 For example, the columnstore index performs these operations on rowgroups:
 
-### delta rowgroups
+## delta rowgroups
 
-### tuple-mover
+## tuple-mover
 
-### column
+## column
 
-### segments
+## segments
 
 Compresses rowgroups into the columnstore. Compression is performed on each column
 

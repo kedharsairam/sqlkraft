@@ -7,7 +7,7 @@ tags: ["tsql","statements"]
 pubDate: "2026-05-29"
 ---
 
-### Create Synonyms
+## Create Synonyms
 
 DROP SYNONYM (Transact-SQL)
 

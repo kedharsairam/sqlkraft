@@ -43,9 +43,9 @@ best approach". The first step in troubleshooting and resolving any performance 
 identify the root cause. Using the techniques and tools described in this article is the first step
 
 in performing the analysis needed to understand the spinlock-
-### Parameterized Queries:
+## Parameterized Queries:
 
-### Contention:
+## Contention:
 
 ```sql
 CMEDCatalogOwner::GetProxyOwnerBySID & CMEDProxyDatabase::GetOwnerBySID)

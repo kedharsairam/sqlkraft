@@ -55,4 +55,4 @@ For more information, see
 
 Transact-SQL statements.
 
-### Applies to
+## Applies to

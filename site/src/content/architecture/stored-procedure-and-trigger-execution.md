@@ -56,9 +56,9 @@ The execution plan for stored procedures and triggers is executed separately fro
 
 execution plan for the batch calling the stored procedure or firing the trigger. This allows for
 
-### Object Plans
+## Object Plans
 
-### Compiled Plan
+## Compiled Plan
 
 ```sql
 @CustomerIDParameter

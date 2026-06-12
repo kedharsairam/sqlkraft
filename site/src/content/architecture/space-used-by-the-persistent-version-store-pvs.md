@@ -80,9 +80,9 @@ is stored as a part of the modified row. The difference is constructed in a way 
 
 database engine reconstruct the entire old row version if needed.
 
-### in-row
+## in-row
 
-### off-row
+## off-row
 
 `READ_COMMITTED_SNAPSHOT`
 

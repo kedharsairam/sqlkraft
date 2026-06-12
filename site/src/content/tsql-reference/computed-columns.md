@@ -89,11 +89,11 @@ combined size of the indexed columns (not counting included columns), plus any a
 
 partitioning columns cannot exceed 1800 bytes in a non-unique clustered index.
 
-### varchar(max)
+## varchar(max)
 
-### nvarchar(max)
+## nvarchar(max)
 
-### varbinary(max)
+## varbinary(max)
 
 `ROW_OVERFLOW_DATA`
 
