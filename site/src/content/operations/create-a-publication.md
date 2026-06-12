@@ -3,7 +3,7 @@ title: "Create a publication"
 topic: "migration"
 description: "This article describes how to create a publication in SQL Server by using SQL Server Management Studio, Transact-SQL, or R"
 tags: ["migration","create-a-publication"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to create a publication in SQL Server by using SQL Server

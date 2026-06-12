@@ -3,7 +3,7 @@ title: "Ownership Chains & Context Switching"
 topic: "configuration"
 description: ""
 tags: ["configuration","ownership-chains-context-switching"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This tutorial uses a scenario to illustrate SQL Server security concepts involving ownership

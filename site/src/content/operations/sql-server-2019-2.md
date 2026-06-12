@@ -3,7 +3,7 @@ title: "SQL Server 2019"
 topic: "linux-operations"
 description: "- Linux This article provides details of features supported by the various editions of SQL Server 2019 (15.x) on Linux."
 tags: ["linux-operations","sql-server-2019-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Linux

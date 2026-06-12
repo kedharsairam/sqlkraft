@@ -3,7 +3,7 @@ title: "Change Existing Columns"
 topic: "xml-data"
 description: "The ALTER TABLE statement supports the data type."
 tags: ["xml-data","change-existing-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The ALTER TABLE statement supports the

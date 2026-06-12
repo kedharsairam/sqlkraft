@@ -3,7 +3,7 @@ title: "Audit Server Starts & Stops Event Class"
 topic: "event-classes"
 description: "The event class occurs when the Microsoft SQL Server service state is modified."
 tags: ["event-classes","audit-server-starts-stops-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

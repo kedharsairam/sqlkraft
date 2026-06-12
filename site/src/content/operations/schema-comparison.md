@@ -3,7 +3,7 @@ title: "Schema comparison"
 topic: "ssms"
 description: ""
 tags: ["ssms","schema-comparison"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The schema comparison tooling enables you to compare two database definitions, where the

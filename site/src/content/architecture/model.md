@@ -3,7 +3,7 @@ title: "model"
 topic: "collation"
 description: "The database is used as the template for all databases created on an instance of SQL Server."
 tags: ["collation","model"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

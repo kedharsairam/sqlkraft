@@ -3,7 +3,7 @@ title: "GetSvcInstanceIDFromName"
 topic: "event-classes"
 description: "Retrieves the instance ID of an instance when given the friendly name, conditioned to search only the instance maps for the given service."
 tags: ["event-classes","getsvcinstanceidfromname"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Retrieves the instance ID of an instance when given the friendly name, conditioned to search

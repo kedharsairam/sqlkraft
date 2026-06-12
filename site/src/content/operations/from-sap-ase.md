@@ -3,7 +3,7 @@ title: "From SAP ASE"
 topic: "migration"
 description: "In this guide, you learn how to migrate your SAP ASE databases to SQL Server by using SQL Server Migration Assistant for SAP ASE (SSMA for SAP ASE)."
 tags: ["migration","from-sap-ase"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this guide, you learn how to migrate your SAP ASE databases to SQL Server by using SQL

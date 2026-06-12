@@ -3,7 +3,7 @@ title: "SQL Server Analysis Services (SSAS)"
 topic: "high-availability"
 description: "- Windows only An Always On availability group is a predefined collection of SQL Server relational databases that failover together when conditions t"
 tags: ["high-availability","sql-server-analysis-services-ssas"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Windows only

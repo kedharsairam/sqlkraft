@@ -3,7 +3,7 @@ title: "Resume availability database"
 topic: "high-availability"
 description: "You can resume a suspended availability database in Always On availability groups by using SQL Server Management Studio, Transact-SQL, or PowerShell i"
 tags: ["high-availability","resume-availability-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can resume a suspended availability database in Always On availability groups by using

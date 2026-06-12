@@ -3,7 +3,7 @@ title: "Accessing the Current Transaction"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","accessing-the-current-transaction"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If a transaction is active at the point at which common language runtime (CLR) code running

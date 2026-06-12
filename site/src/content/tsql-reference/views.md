@@ -4,7 +4,7 @@ title: "Views"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The value being inserted into the partitioning column satisfies at least one of the

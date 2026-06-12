@@ -4,7 +4,7 @@ title: "sys.databases"
 category: "databases-files"
 description: "Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway."
 tags: ["databases-files","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.dm_database_copies"
 ---
 

@@ -4,7 +4,7 @@ title: "Angle conversion"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 This group provides the elementary trigonometric functions that compute ratios of a right

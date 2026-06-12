@@ -3,7 +3,7 @@ title: "Load Files"
 topic: "filestream"
 description: "Describes how to load or migrate files into FileTables. The method that you choose for loading or migrating files into a FileTable depends on where t"
 tags: ["filestream","load-files"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Describes how to load or migrate files into FileTables.

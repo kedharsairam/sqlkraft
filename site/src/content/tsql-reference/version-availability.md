@@ -4,7 +4,7 @@ title: "Version availability"
 category: "statements"
 description: "Syntax for Azure Synapse Analytics and Analytics Platform System (PDW):"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Syntax for Azure Synapse Analytics and Analytics Platform System (PDW):

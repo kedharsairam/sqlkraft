@@ -4,7 +4,7 @@ title: "sys.fn_trace_gettable"
 category: "system"
 description: "Returns the content of one or more trace files in tabular form. Specifies the initial trace file to be read. , with no default. Specifies the number of rollover files to be read. This number includes the initial file specified in is specified as reads all rollover files until it reaches the end of the trace. returns a table with all the columns valid for the specifi"
 tags: ["system","function"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "fn_trace_gettable ( 'filename' , number_files )"
 ---
 

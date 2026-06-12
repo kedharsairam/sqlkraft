@@ -4,14 +4,10 @@ title: "Operators"
 category: "operators"
 description: ""
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Analytics Platform System (PDW)
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 An operator is a symbol specifying an action that is performed on one or more expressions.
 

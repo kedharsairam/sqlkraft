@@ -5,7 +5,7 @@ category: "baseline"
 severity: "info"
 description: "Occurs during preemptive OS operations where SQL Server calls Windows API GetProcAddress to resolve DLL function addresses. Typically a startup or configuration operation."
 tags: ["os","preemptive","api"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

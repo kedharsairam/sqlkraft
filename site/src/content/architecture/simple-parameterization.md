@@ -3,7 +3,7 @@ title: "Simple parameterization"
 topic: "io-fundamentals"
 description: "However, it can be parameterized according to simple parameterization rules. When forced"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 However, it can be parameterized according to simple parameterization rules. When forced

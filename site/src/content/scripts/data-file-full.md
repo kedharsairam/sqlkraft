@@ -4,7 +4,7 @@ title: "Data File Full"
 description: "1) Find the space utilization"
 category: "troubleshooting"
 tags: ["troubleshooting"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

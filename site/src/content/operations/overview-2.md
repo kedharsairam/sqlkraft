@@ -3,7 +3,7 @@ title: "Overview"
 topic: "upgrade"
 description: "06/04/2025 The articles in this section help you upgrade the SQL Server Database Engine from a prior release of SQL Server to SQL Server 2022 (16.x). 1. Choose a Database"
 tags: ["upgrade","overview-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The articles in this section help you upgrade the SQL Server Database Engine from a prior

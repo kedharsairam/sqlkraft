@@ -3,7 +3,7 @@ title: "Query Notifications Event Category"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","query-notifications-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

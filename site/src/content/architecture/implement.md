@@ -3,7 +3,7 @@ title: "Implement"
 topic: "change-data-capture"
 description: ""
 tags: ["change-data-capture","implement"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic provides information to help you create DDL triggers, modify DDL triggers, and

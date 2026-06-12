@@ -3,7 +3,7 @@ title: "Creating Service Broker Contracts"
 topic: "service-broker"
 description: "08/29/2025 Contracts define the name of a specific business task and list the message types used in that task."
 tags: ["service-broker","creating-service-broker-contracts"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Contracts define the name of a specific business task and list the message types used in that

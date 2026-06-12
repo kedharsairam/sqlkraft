@@ -3,7 +3,7 @@ title: "srv_paramlen"
 topic: "clr-integration"
 description: "Returns the data length of a remote stored procedure call parameter. This function has been superseded by the function."
 tags: ["clr-integration","srv-paramlen"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the data length of a remote stored procedure call parameter. This function has been

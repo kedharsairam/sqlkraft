@@ -3,7 +3,7 @@ title: "Modify data"
 topic: "tables"
 description: "2016 (13.x) and later versions Azure SQL Managed Instance Data in a system-versioned temporal table is modified using r"
 tags: ["tables","modify-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

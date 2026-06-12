@@ -4,15 +4,15 @@ title: "sp_addextendedproc"
 category: "general"
 description: "Registers the name of a new extended stored procedure to SQL Server."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_addextendedproc
-      [ @functname = ]
-      N
-      'functname'
-      , [ @dllname = ]
-      'dllname'
-      [ ; ]
+              [ @functname = ]
+              N
+              'functname'
+              , [ @dllname = ]
+              'dllname'
+              [ ; ]
 ---
 
 ## Description

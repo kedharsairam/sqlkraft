@@ -4,7 +4,7 @@ title: "To Get Backup Reports of Multiple Servers to Em"
 description: "diagnostic script for backup-restore operations."
 category: "backup-restore"
 tags: ["backup","backup-restore"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

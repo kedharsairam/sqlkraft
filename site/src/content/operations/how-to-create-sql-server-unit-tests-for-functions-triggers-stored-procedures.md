@@ -3,14 +3,14 @@ title: "How to: Create SQL Server Unit Tests for Functions, Triggers, & Stored P
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    You can write unit tests that evaluate changes to any database object. However SQL Server
-  
-    Data Tools includes support for creating tests for database functions, triggers, and stored
-  
-    proc
+          
+            You can write unit tests that evaluate changes to any database object. However SQL Server
+          
+            Data Tools includes support for creating tests for database functions, triggers, and stored
+          
+            proc
 tags: ["ssb-diagnose","how-to-create-sql-server-unit-tests-for-functions-triggers-stored-procedures"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can write unit tests that evaluate changes to any database object. However SQL Server

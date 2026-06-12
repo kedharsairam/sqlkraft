@@ -4,7 +4,7 @@ title: "Service Broker Contracts"
 category: "statements"
 description: "Specifies a principal from which the principal executing this query derives its right to revoke"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 AS

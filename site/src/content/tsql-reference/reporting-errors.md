@@ -4,7 +4,7 @@ title: "Reporting errors"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 This article describes guidelines for using the

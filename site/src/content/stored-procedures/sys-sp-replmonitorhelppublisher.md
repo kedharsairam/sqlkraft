@@ -4,15 +4,15 @@ title: "sp_replmonitorhelppublisher"
 category: "general"
 description: "Returns current status information for one or more Publishers associated with a Distributor. This stored procedure, which is used to monitor replication, is executed at the Distributor on The name of the Publisher the status of which is being monitored. , information is returned for all Publishers that use the Distributor. Identified for informational purposes only."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_replmonitorhelppublisher
-      [ [ @publisher = ]
-      N
-      'publisher'
-      ]
-      [ , [ @refreshpolicy = ] refreshpolicy ]
-      [ ; ]
+              [ [ @publisher = ]
+              N
+              'publisher'
+              ]
+              [ , [ @refreshpolicy = ] refreshpolicy ]
+              [ ; ]
 ---
 
 ## Description

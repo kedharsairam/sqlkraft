@@ -3,7 +3,7 @@ title: "Configure"
 topic: "change-data-capture"
 description: "2025 (17.x) Azure SQL Managed Instance This article describes how to configure the change event streaming (CES) feature introduced in SQL Server 2025"
 tags: ["change-data-capture","configure"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2025 (17.x)

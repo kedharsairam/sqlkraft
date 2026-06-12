@@ -3,7 +3,7 @@ title: "Enable & disable"
 topic: "change-data-capture"
 description: "08/22/2025 This article describes how to enable and disable change data capture (CDC) for a database and a table for SQL Server and Azure SQL Man"
 tags: ["change-data-capture","enable-disable"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to enable and disable change data capture (CDC) for a database and

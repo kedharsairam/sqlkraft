@@ -3,7 +3,7 @@ title: "Extended events"
 topic: "high-availability"
 description: "defines Extended Events that are specific to availability groups. You can monitor these Extended Events in a session to help with root-caus"
 tags: ["high-availability","extended-events"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 defines Extended Events that are specific to availability groups. You can monitor

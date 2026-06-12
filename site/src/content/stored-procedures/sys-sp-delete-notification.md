@@ -4,16 +4,16 @@ title: "sp_delete_notification"
 category: "general"
 description: "Removes a SQL Server Agent notification definition for a specific alert and operator."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_delete_notification
-      [ @alert_name = ]
-      N
-      'alert_name'
-      , [ @operator_name = ]
-      N
-      'operator_name'
-      [ ; ]
+              [ @alert_name = ]
+              N
+              'alert_name'
+              , [ @operator_name = ]
+              N
+              'operator_name'
+              [ ; ]
 ---
 
 ## Description

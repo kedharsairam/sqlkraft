@@ -4,7 +4,7 @@ title: "Transaction control syntax"
 category: "transactions"
 description: ""
 tags: ["tsql","transactions"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Warehouse in Microsoft Fabric

@@ -3,7 +3,7 @@ title: "Example: Specifying the ELEMENTXSINIL Directive"
 topic: "xml-data"
 description: "When you specify the ELEMENT directive to retrieve element-centric XML, if the column has a"
 tags: ["xml-data","example-specifying-the-elementxsinil-directive"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When you specify the ELEMENT directive to retrieve element-centric XML, if the column has a

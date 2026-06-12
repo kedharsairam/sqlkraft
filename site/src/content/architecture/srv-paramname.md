@@ -3,7 +3,7 @@ title: "srv_paramname"
 topic: "clr-integration"
 description: "Returns the name of a remote stored procedure call parameter."
 tags: ["clr-integration","srv-paramname"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the name of a remote stored procedure call parameter.

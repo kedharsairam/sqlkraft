@@ -3,7 +3,7 @@ title: "Removing Poison Messages"
 topic: "service-broker"
 description: "09/11/2025 A poison message is a message containing information that an application can't successfully process."
 tags: ["service-broker","removing-poison-messages"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A poison message is a message containing information that an application can't successfully

@@ -3,7 +3,7 @@ title: "Configure Quorum NodeWeight Settings"
 topic: "high-availability"
 description: "This topic describes how to configure NodeWeight settings for a member node in a Windows Server Failover Clustering (WSFC) cluster. NodeWeight setting"
 tags: ["high-availability","configure-quorum-nodeweight-settings"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to configure NodeWeight settings for a member node in a Windows

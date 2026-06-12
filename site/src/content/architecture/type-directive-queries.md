@@ -3,7 +3,7 @@ title: "TYPE directive queries"
 topic: "xml-data"
 description: "support for the xml (Transact-SQL) data type enables you to optionally request that the r"
 tags: ["xml-data","type-directive-queries"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 support for the

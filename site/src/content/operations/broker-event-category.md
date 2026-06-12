@@ -3,7 +3,7 @@ title: "Broker Event Category"
 topic: "event-classes"
 description: "The event category contains general Service Broker events. Description Broker:Activation Event Class An event generated"
 tags: ["event-classes","broker-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

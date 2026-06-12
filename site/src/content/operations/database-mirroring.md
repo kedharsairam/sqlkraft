@@ -3,7 +3,7 @@ title: "Database mirroring"
 topic: "high-availability"
 description: "09/02/2025 Database mirroring is a solution for increasing the availability of a SQL Server database. Mirroring is implemented on a per-database basis and works only with d"
 tags: ["high-availability","database-mirroring"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Database mirroring

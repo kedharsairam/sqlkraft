@@ -3,7 +3,7 @@ title: "Install & configure"
 topic: "monitor"
 description: "This article contains installation and config"
 tags: ["monitor","install-configure-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

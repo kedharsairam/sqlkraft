@@ -3,7 +3,7 @@ title: "Enable a Database for Replication"
 topic: "migration"
 description: "A database is implicitly enabled for replication when a member of the fixed server role creates a publication with the Ne"
 tags: ["migration","enable-a-database-for-replication"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A database is implicitly enabled for replication when a member of the

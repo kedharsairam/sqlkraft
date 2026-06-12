@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Atomization"
 syntax: "LaborHours"
 tags: ["xquery","atomization"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Atomization is the process of extracting the typed value of an item. This process is implied

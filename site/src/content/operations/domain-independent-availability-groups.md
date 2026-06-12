@@ -3,7 +3,7 @@ title: "Domain-independent availability groups"
 topic: "high-availability"
 description: "Always On availability groups (AGs) require an underlying Windows Server Failover Cluster (WSFC)."
 tags: ["high-availability","domain-independent-availability-groups"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Always On availability groups (AGs) require an underlying Windows Server Failover Cluster

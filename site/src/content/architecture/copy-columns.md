@@ -3,7 +3,7 @@ title: "Copy Columns"
 topic: "tables"
 description: "2016 (13.x) and later versions Azure SQL Managed Instance Thi"
 tags: ["tables","copy-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

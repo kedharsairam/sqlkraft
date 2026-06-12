@@ -3,7 +3,7 @@ title: "Copy Database Wizard"
 topic: "collation"
 description: "06/16/2025 The Copy Database Wizard moves or copies databases and certain server objects easily from one instance of SQL Server to another instance, with no server downtime."
 tags: ["collation","copy-database-wizard"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Copy Database Wizard moves or copies databases and certain server objects easily from

@@ -4,7 +4,7 @@ title: "Clustered indexes"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 You can also specify the

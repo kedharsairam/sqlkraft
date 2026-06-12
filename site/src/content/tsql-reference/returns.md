@@ -4,7 +4,7 @@ title: "Returns"
 category: "statements"
 description: "Returns the number of passwords tracked for the login, using the password-"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

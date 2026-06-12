@@ -3,7 +3,7 @@ title: "Use in Applications"
 topic: "xml-data"
 description: "This article describes the options that are available to you for working with the data type in your a"
 tags: ["xml-data","use-in-applications"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes the options that are available to you for working with the

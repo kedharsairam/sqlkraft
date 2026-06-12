@@ -3,18 +3,18 @@ title: "Troubleshooting SQL Server Database Unit Testing Issues"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    You might encounter the following issues when you work with SQL Server unit tests on a
-  
-    database.
-  
-    If you modify the
-  
-    file in the test project, you must rebuild the test project before
-  
-    th
+          
+            You might encounter the following issues when you work with SQL Server unit tests on a
+          
+            database.
+          
+            If you modify the
+          
+            file in the test project, you must rebuild the test project before
+          
+            th
 tags: ["ssb-diagnose","troubleshooting-sql-server-database-unit-testing-issues"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You might encounter the following issues when you work with SQL Server unit tests on a

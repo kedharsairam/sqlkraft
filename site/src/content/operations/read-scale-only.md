@@ -3,7 +3,7 @@ title: "Read-scale only"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","read-scale-only"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 An availability group is a comprehensive solution that brings high-availability capabilities to

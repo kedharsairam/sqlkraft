@@ -5,7 +5,7 @@ category: "baseline"
 severity: "info"
 description: "Occurs when waiting for SQL Trace buffer flushes. Extended Events is the modern replacement. High values indicate trace bottlenecks that may be mitigated by switching to XEvent sessions."
 tags: ["trace","xevent","profiler"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

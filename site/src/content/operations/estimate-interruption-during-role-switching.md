@@ -3,7 +3,7 @@ title: "Estimate interruption during role switching"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","estimate-interruption-during-role-switching"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 During a role switch, the amount of time that database mirroring will be out of service depends

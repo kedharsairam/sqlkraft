@@ -4,7 +4,7 @@ title: "Trace flags"
 category: "statements"
 description: "The following table lists and describes the trace flags that are available in SQL Server."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following table lists and describes the trace flags that are available in SQL Server.
@@ -1353,7 +1353,7 @@ and Log Pool memory).
 
 retaining most of its usefulness as preferred option in most situations where mini dumps aren't
 
-sufficient..
+sufficient.
 
 : Global only.
 

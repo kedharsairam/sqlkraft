@@ -3,7 +3,7 @@ title: "Execution plan caching and reuse"
 topic: "query-processing"
 description: "### Extended Stored Procedures"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Bound Trees

@@ -3,7 +3,7 @@ title: "Audit Database Principal Impersonation Event Class"
 topic: "event-classes"
 description: "The event class occurs when an impersonation occurs within the database scope, such as EXECUTE AS <"
 tags: ["event-classes","audit-database-principal-impersonation-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

@@ -3,7 +3,7 @@ title: "History Page"
 topic: "high-availability"
 description: "Use this dialog box to view the history of mirroring status for a mirrored database on a specified server instance. Start Database Mirroring Monitor"
 tags: ["high-availability","history-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this dialog box to view the history of mirroring status for a mirrored database on a

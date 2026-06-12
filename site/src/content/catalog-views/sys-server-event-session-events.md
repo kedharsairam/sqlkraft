@@ -4,7 +4,7 @@ title: "sys.server_event_session_events"
 category: "compatibility"
 description: "Returns a row for each event in an event session. The ID of the event session. Is not nullable. The ID of the event. This ID is unique within an event session object. Is The name of the event. Is not nullable."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "VIEW SERVER PERFORMANCE STATE"
 ---
 

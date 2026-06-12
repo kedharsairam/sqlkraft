@@ -3,7 +3,7 @@ title: "XQuery Static Type Event Class"
 topic: "event-classes"
 description: "The XQuery Static Type event class occurs when SQL Server executes an XQuery expression. Thi"
 tags: ["event-classes","xquery-static-type-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The XQuery Static Type event class occurs when SQL Server executes an XQuery expression.

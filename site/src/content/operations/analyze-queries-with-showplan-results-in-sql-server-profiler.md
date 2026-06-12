@@ -3,7 +3,7 @@ title: "Analyze Queries with SHOWPLAN Results in SQL Server Profiler"
 topic: "profiler"
 description: ""
 tags: ["profiler","analyze-queries-with-showplan-results-in-sql-server-profiler"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Profiler

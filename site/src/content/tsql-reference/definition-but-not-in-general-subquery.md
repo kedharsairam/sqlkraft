@@ -4,7 +4,7 @@ title: "Definition but not in general subquery"
 category: "queries"
 description: "```sql VALUES (1, 1, 1); INSERT INTO NestedCTE_t1 VALUES (2, 2, 2); INSERT INTO NestedCTE_t1 VALUES (3, 3, 3); GO."
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ```sql

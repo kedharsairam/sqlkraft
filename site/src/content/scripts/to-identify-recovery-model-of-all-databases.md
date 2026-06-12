@@ -4,7 +4,7 @@ title: "To Identify Recovery Model of all Databases"
 description: "diagnostic script for database operations."
 category: "database"
 tags: ["database"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

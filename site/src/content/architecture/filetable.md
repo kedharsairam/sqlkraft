@@ -3,7 +3,7 @@ title: "FileTable"
 topic: "filestream"
 description: "The FileTable feature brings support for the Windows file namespace and compatibility with Windows applications to the file data stored in SQL Server."
 tags: ["filestream","filetable"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The FileTable feature brings support for the Windows file namespace and compatibility with

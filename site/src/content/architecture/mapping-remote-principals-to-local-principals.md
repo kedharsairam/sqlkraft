@@ -3,7 +3,7 @@ title: "Mapping Remote Principals to Local Principals"
 topic: "service-broker"
 description: "09/11/2025 Service Broker dialog security uses certificates to map remote operations to a local security principal."
 tags: ["service-broker","mapping-remote-principals-to-local-principals"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker dialog security uses certificates to map remote operations to a local security

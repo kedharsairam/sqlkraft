@@ -3,7 +3,7 @@ title: "Establish a session"
 topic: "high-availability"
 description: "To establish a database mirroring session and to modify the properties of database mirroring for a database, use the page of the dialog box.Before y"
 tags: ["high-availability","establish-a-session"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To establish a database mirroring session and to modify the properties of database mirroring

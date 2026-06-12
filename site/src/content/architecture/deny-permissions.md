@@ -3,7 +3,7 @@ title: "Deny Permissions"
 topic: "xml-data"
 description: "Permission can be denied to either create a new XML schema collection or use an existing one."
 tags: ["xml-data","deny-permissions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Permission can be denied to either create a new XML schema collection or use an existing one.

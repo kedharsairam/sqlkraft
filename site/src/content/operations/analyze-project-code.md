@@ -3,7 +3,7 @@ title: "Analyze project code"
 topic: "ssms"
 description: ""
 tags: ["ssms","analyze-project-code"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can improve the quality of the Transact-SQL code in a database schema by importing it

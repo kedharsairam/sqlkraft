@@ -4,7 +4,7 @@ title: "Transaction isolation levels"
 category: "transactions"
 description: ""
 tags: ["tsql","transactions"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 #### Isolation level

@@ -3,7 +3,7 @@ title: "Example: Specifying the ELEMENT Directive & Entity Encoding"
 topic: "xml-data"
 description: "This example illustrates the difference between the and directives. The directive entitize"
 tags: ["xml-data","example-specifying-the-element-directive-entity-encoding"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This example illustrates the difference between the

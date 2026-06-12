@@ -3,7 +3,7 @@ title: "Security Wizard"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","security-wizard"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Configure Database Mirroring Security Wizard can be used to initially configure security

@@ -3,7 +3,7 @@ title: "Configure MSDTC"
 topic: "linux-operations"
 description: "on Linux This article describes how to configure the Microsoft Distributed Transaction Coordinator (MSDTC) on Linux. MSDTC on Linux is supported on SQL Server 2017 (14.x) C"
 tags: ["linux-operations","configure-msdtc"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

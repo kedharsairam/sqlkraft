@@ -3,7 +3,7 @@ title: "Prerequisites, Restrictions, & Recommendations"
 topic: "high-availability"
 description: "Prerequisites, Restrictions, and This topic describes the prerequisites and recommendations for setting up database mirroring."
 tags: ["high-availability","prerequisites-restrictions-recommendations-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Prerequisites, Restrictions, and

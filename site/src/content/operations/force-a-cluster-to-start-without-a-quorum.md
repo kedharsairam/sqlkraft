@@ -3,7 +3,7 @@ title: "Force a cluster to start without a Quorum"
 topic: "high-availability"
 description: "This topic describes how to force a Windows Server Failover Clustering (WSFC) cluster node to start without a quorum. This may be required in disaster"
 tags: ["high-availability","force-a-cluster-to-start-without-a-quorum"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to force a Windows Server Failover Clustering (WSFC) cluster node to

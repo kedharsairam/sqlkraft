@@ -3,7 +3,7 @@ title: "SQLCMD variables"
 topic: "ssms"
 description: ""
 tags: ["ssms","sqlcmd-variables"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQLCMD variables overview

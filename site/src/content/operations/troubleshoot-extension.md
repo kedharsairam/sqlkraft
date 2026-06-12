@@ -3,7 +3,7 @@ title: "Troubleshoot extension"
 topic: "azure-synapse"
 description: "This article describes ways to identify unhealthy extensions that aren't installed correctly, running properly, or not connected to Azure. You can use the built-in extensio"
 tags: ["azure-synapse","troubleshoot-extension"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes ways to identify unhealthy extensions that aren't installed correctly,

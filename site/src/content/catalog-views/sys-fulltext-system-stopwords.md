@@ -4,7 +4,7 @@ title: "sys.fulltext_system_stopwords"
 category: "full-text"
 description: "Provides access to the system stoplist. The term that is considered for a stop-word match. Locale identifier (LCID) of the language. This LCID is used for word The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. Object Catalog Views (Transact-SQL) sys.fulltext_stoplists (Transact-SQL) sys.fulltext_stopw"
 tags: ["full-text","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

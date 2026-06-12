@@ -3,7 +3,7 @@ title: "Revert to a Snapshot"
 topic: "collation"
 description: ""
 tags: ["collation","revert-to-a-snapshot"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If data in an online database becomes damaged, in some cases, reverting the database to a

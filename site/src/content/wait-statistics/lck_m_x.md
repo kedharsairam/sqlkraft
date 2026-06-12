@@ -5,7 +5,7 @@ category: "blocking"
 severity: "high"
 description: "Occurs when a task waits to acquire an exclusive (X) lock. High durations indicate write-write contention, often from long-running DDL or DML in serializable isolation level."
 tags: ["lock","exclusive","write-write"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-blocking-chains"]
 ---
 

@@ -3,7 +3,7 @@ title: "OLEDB Errors Event Class"
 topic: "event-classes"
 description: "The OLEDB Errors event class occurs in Microsoft SQL Server when a call to an OLE DB provider returns"
 tags: ["event-classes","oledb-errors-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The OLEDB Errors event class occurs in Microsoft SQL Server when a call to an OLE DB provider

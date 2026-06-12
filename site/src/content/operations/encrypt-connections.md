@@ -3,7 +3,7 @@ title: "Encrypt connections"
 topic: "linux-operations"
 description: "on Linux SQL Server on Linux can use Transport Layer Security (TLS) to encrypt data that is transmitted across a network between a client application and an instance of SQL"
 tags: ["linux-operations","encrypt-connections"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

@@ -3,7 +3,7 @@ title: "Remove Mirroring"
 topic: "high-availability"
 description: "The database owner can manually stop a database mirroring session at any time, at either partner. When mirroring is removed, the following occurs: T"
 tags: ["high-availability","remove-mirroring-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The database owner can manually stop a database mirroring session at any time, at either

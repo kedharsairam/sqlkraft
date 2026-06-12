@@ -4,7 +4,7 @@ title: "sys.trace_categories"
 category: "compatibility"
 description: "Similar event classes are grouped by a category. Each row in the view identifies a category that is unique across the server. These categories do not change for a given version of the SQL Server Database Engine. For a complete list of supported trace events, see SQL Server Event Class Reference Unique ID of this category. This column is also in the Unique name of this category. This parameter is n"
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

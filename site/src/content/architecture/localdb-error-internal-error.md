@@ -3,7 +3,7 @@ title: "LOCALDB_ERROR_INTERNAL_ERROR"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","localdb-error-internal-error"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Product

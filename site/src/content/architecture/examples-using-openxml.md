@@ -3,7 +3,7 @@ title: "Examples: Using OPENXML"
 topic: "xml-data"
 description: "The examples in this article show how OPENXML is used to create a rowset view of an XML document. For"
 tags: ["xml-data","examples-using-openxml"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The examples in this article show how OPENXML is used to create a rowset view of an XML

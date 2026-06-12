@@ -3,7 +3,7 @@ title: "Use the inserted & deleted Tables"
 topic: "change-data-capture"
 description: "DML trigger statements use two special tables: the deleted and inserted tables. SQL Serve"
 tags: ["change-data-capture","use-the-inserted-deleted-tables"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 DML trigger statements use two special tables: the

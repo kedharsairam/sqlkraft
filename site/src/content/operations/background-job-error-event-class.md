@@ -3,7 +3,7 @@ title: "Background Job Error Event Class"
 topic: "event-classes"
 description: "The event class occurs when a background job has terminated abnormally."
 tags: ["event-classes","background-job-error-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

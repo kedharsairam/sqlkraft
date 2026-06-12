@@ -3,7 +3,7 @@ title: "Accessing in ADO.NET"
 topic: "clr-integration"
 description: "User-defined types (UDTs) are written using any of the languages supported by the .NET Framework common language runtime (CLR) that produce verifiable code. This includes C#"
 tags: ["clr-integration","accessing-in-adonet"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 User-defined types (UDTs) are written using any of the languages supported by the.NET

@@ -4,7 +4,7 @@ title: "Extended methods on geography instances"
 category: "queries"
 description: "T-SQL reference covering Extended methods."
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ### OGC methods

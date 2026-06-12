@@ -3,7 +3,7 @@ title: "Manage"
 topic: "filestream"
 description: "Describes common administrative tasks for managing FileTables. To get a list of FileTables, query one of the following catalog views: sys.filetables"
 tags: ["filestream","manage"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Describes common administrative tasks for managing FileTables.

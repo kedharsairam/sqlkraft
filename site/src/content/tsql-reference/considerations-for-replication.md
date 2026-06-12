@@ -4,7 +4,7 @@ title: "Considerations for replication"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Under database compatibility level 110 and higher, any columns in remote tables of type

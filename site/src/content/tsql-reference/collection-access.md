@@ -4,7 +4,7 @@ title: "Collection access"
 category: "statements"
 description: "Returns the start point of a geometry instance (for LineString types)."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

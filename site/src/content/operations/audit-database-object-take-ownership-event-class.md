@@ -3,7 +3,7 @@ title: "Audit Database Object Take Ownership Event Class"
 topic: "event-classes"
 description: "The event class occurs when a change of owner for objects within database scope occurs. Description"
 tags: ["event-classes","audit-database-object-take-ownership-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

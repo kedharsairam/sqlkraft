@@ -3,7 +3,7 @@ title: "Bulk update locks"
 topic: "locking"
 description: "Protects requested or acquired shared locks on all resources lower in the hierarchy and intent"
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

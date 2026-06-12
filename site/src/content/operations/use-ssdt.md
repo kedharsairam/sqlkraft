@@ -3,7 +3,7 @@ title: "Use SSDT"
 topic: "linux-operations"
 description: ""
 tags: ["linux-operations","use-ssdt"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

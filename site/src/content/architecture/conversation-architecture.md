@@ -3,7 +3,7 @@ title: "Conversation Architecture"
 topic: "service-broker"
 description: "08/29/2025 All Service Broker applications communicate through conversations."
 tags: ["service-broker","conversation-architecture"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 All Service Broker applications communicate through conversations. Conversations are reliable,

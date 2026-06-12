@@ -4,7 +4,7 @@ title: "To Create Login"
 description: "windows authentication:"
 category: "security-audit"
 tags: ["login","security-audit"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

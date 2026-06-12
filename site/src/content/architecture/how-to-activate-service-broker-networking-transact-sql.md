@@ -3,7 +3,7 @@ title: "How to: Activate Service Broker Networking (Transact-SQL)"
 topic: "service-broker"
 description: "08/29/2025 Service Broker doesn't send or receive messages over the network by default."
 tags: ["service-broker","how-to-activate-service-broker-networking-transact-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker doesn't send or receive messages over the network by default. To activate

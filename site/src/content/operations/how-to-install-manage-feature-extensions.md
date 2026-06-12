@@ -3,14 +3,14 @@ title: "How to: Install & Manage Feature Extensions"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    You can add rules for analyzing database code, conditions for database unit tests and
-  
-    build/deployment contributors to increase the functionality that Visual Studio editions
-  
-    including SQ
+          
+            You can add rules for analyzing database code, conditions for database unit tests and
+          
+            build/deployment contributors to increase the functionality that Visual Studio editions
+          
+            including SQ
 tags: ["ssb-diagnose","how-to-install-manage-feature-extensions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can add rules for analyzing database code, conditions for database unit tests and

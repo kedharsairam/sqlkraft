@@ -4,13 +4,13 @@ title: "sys.database_files"
 category: "databases-files"
 description: "Contains a row per file of a database as stored in the database itself. This is a per-database ID of the file within database. = Database was upgraded from an earlier version of SQL Server (Valid for SQL Server 2005 and earlier 3 = Identified for informational purposes only. Not supported. Future compatibility is not guaranteed."
 tags: ["databases-files","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   ROWS
-      LOG
-      FILESTREAM
-      FULLTEXT
-      data_space_id
+              LOG
+              FILESTREAM
+              FULLTEXT
+              data_space_id
 ---
 
 ## Description

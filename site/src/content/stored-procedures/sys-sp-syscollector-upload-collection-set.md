@@ -4,15 +4,15 @@ title: "sp_syscollector_upload_collection_set"
 category: "general"
 description: "Starts an upload of collection set data if the collection set is enabled. The unique local identifier for the collection set."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_syscollector_upload_collection_set
-      [ [ @collection_set_id = ] collection_set_id ]
-      [ , [ @name = ]
-      N
-      'name'
-      ]
-      [ ; ]
+              [ [ @collection_set_id = ] collection_set_id ]
+              [ , [ @name = ]
+              N
+              'name'
+              ]
+              [ ; ]
 ---
 
 ## Description

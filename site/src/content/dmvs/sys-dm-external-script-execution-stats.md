@@ -4,17 +4,17 @@ title: "sys.dm_external_script_execution_stats"
 category: "execution"
 description: "2016 (13.x) and later Returns one row for each type of external script request. The external script requests are grouped by the supported external script language. One row is generated for each registered external script function. Arbitrary external script functions aren't recorded unless sent by a Name of the registered external script language."
 tags: ["execution","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   SELECT
-      counter_name, counter_value
-      FROM
-      sys.dm_external_script_execution_stats
-      WHERE
-      language
-      =
-      'R'
-      ;
+                counter_name, counter_value
+                FROM
+                sys.dm_external_script_execution_stats
+                WHERE
+                language
+                =
+                'R'
+                ;
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Disk space requirements"
 topic: "filestream"
 description: "Disk space is an important consideration when you create, rebuild, or drop indexes. Inadequat"
 tags: ["filestream","disk-space-requirements"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Disk space is an important consideration when you create, rebuild, or drop indexes. Inadequate

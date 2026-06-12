@@ -1,12 +1,12 @@
 ---
-name: 1844
+name: "1844"
 title: "Error 1844"
 errorNumber: 1844
 severity: "medium"
 category: "io"
 description: "Description action is required. 1844 16 No %ls is not supported on %ls."
 tags: ["io","severity-medium"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

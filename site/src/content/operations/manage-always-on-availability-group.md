@@ -3,7 +3,7 @@ title: "Manage Always On availability group"
 topic: "azure-synapse"
 description: "06/10/2025 An Always On availability group is an enterprise level high availability and disaster recovery solution for SQL Server. This article describes how to manage a SQL"
 tags: ["azure-synapse","manage-always-on-availability-group"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 An Always On availability group is an enterprise level high availability and disaster recovery

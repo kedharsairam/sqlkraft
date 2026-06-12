@@ -3,7 +3,7 @@ title: "Analyze Deadlocks with SQL Server Profiler"
 topic: "profiler"
 description: "06/06/2025 Use SQL Server Profiler to identify the cause of a deadlock."
 tags: ["profiler","analyze-deadlocks-with-sql-server-profiler"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use SQL Server Profiler to identify the cause of a deadlock. A deadlock occurs when there's a

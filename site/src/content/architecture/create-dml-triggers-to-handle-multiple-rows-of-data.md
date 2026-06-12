@@ -3,7 +3,7 @@ title: "Create DML Triggers to Handle Multiple Rows of Data"
 topic: "change-data-capture"
 description: "When you write the code for a DML trigger, consider that the statement that causes the trigge"
 tags: ["change-data-capture","create-dml-triggers-to-handle-multiple-rows-of-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When you write the code for a DML trigger, consider that the statement that causes the trigger

@@ -3,7 +3,7 @@ title: "Developer Responsibilities for Service Broker"
 topic: "service-broker"
 description: "08/29/2025 The application developer is responsible for designing the Service Broker application and creating elements that require programming."
 tags: ["service-broker","developer-responsibilities-for-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The application developer is responsible for designing the Service Broker application and

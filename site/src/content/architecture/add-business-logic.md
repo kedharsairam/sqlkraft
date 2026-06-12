@@ -3,7 +3,7 @@ title: "Add Business Logic"
 topic: "xml-data"
 description: "Your business logic can be added to XML data in several ways: You can write row or column constraints to enforce domain-specific c"
 tags: ["xml-data","add-business-logic"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Your business logic can be added to XML data in several ways:

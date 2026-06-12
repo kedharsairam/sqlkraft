@@ -3,16 +3,16 @@ title: "How to: Use Rename & Refactoring to Make Changes to your Database Object
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    The
-  
-    contextual menu in the Transact-SQL Editor allows you to rename or move an
-  
-    object to a different schema and preview all affected areas before committing the change. You
-  
-    can also use
+          
+            The
+          
+            contextual menu in the Transact-SQL Editor allows you to rename or move an
+          
+            object to a different schema and preview all affected areas before committing the change. You
+          
+            can also use
 tags: ["ssb-diagnose","how-to-use-rename-refactoring-to-make-changes-to-your-database-objects"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

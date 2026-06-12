@@ -4,10 +4,10 @@ title: "sp_query_store_reset_exec_stats"
 category: "general"
 description: "2016 (13.x) and later versions Azure SQL Database SQL Managed Instance SQL database in Microsoft Fabric Clears the runtime stats for a specific query plan from the Query Store. The ID of the query plan to be cleared. , with no default. Requires the ALTER permission on the database. Arguments for extended stored procedures must be entered in the specific o"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_query_store_reset_exec_stats [ @plan_id = ] plan_id
-      [ ; ]
+              [ ; ]
 ---
 
 ## Description

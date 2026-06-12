@@ -4,7 +4,7 @@ title: "Service Broker Remote Service Bindings"
 category: "statements"
 description: "A Service Broker message type is a database-level securable that is contained by the database"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 VIEW DEFINITION

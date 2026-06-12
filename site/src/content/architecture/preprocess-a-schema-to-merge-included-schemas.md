@@ -3,7 +3,7 @@ title: "Preprocess a schema to merge included schemas"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","preprocess-a-schema-to-merge-included-schemas"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The W3C XSD

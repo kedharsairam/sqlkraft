@@ -3,7 +3,7 @@ title: "Architecture"
 topic: "sql-graph"
 description: "SQL Graph Architecture SQL Server 2017 (14.x) and later versions Azure SQL Managed Instance Learn about the architecture of SQL G"
 tags: ["sql-graph","architecture"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQL Graph Architecture

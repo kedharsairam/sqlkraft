@@ -3,7 +3,7 @@ title: "Sample"
 topic: "sql-graph"
 description: ""
 tags: ["sql-graph","sample"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2017 (14.x) and later versions

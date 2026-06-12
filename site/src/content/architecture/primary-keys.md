@@ -3,7 +3,7 @@ title: "Primary keys"
 topic: "tables"
 description: ""
 tags: ["tables","primary-keys"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

@@ -3,7 +3,7 @@ title: "Get Information About DML Triggers"
 topic: "change-data-capture"
 description: "This topic describes how to get information about DML triggers in SQL Server by using SQL Se"
 tags: ["change-data-capture","get-information-about-dml-triggers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to get information about DML triggers in SQL Server by using SQL

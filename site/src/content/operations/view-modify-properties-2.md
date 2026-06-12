@@ -3,7 +3,7 @@ title: "View & modify properties"
 topic: "migration"
 description: "This topic describes how to view and modify publication properties in SQL Server by using SQL Server Management Studio, Tr"
 tags: ["migration","view-modify-properties-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to view and modify publication properties in SQL Server by using SQL

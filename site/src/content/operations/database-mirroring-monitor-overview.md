@@ -3,7 +3,7 @@ title: "Database Mirroring Monitor Overview"
 topic: "high-availability"
 description: "If you have the correct permissions, you can use Database Mirroring Monitor to monitor any subset of the mirrored databases on a server instance. Moni"
 tags: ["high-availability","database-mirroring-monitor-overview"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If you have the correct permissions, you can use Database Mirroring Monitor to monitor any

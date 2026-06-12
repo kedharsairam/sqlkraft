@@ -3,7 +3,7 @@ title: "User-defined aggregates"
 topic: "clr-integration"
 description: "Aggregate functions perform a calculation on a set of values and return a single value."
 tags: ["clr-integration","user-defined-aggregates"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Aggregate functions perform a calculation on a set of values and return a single value.

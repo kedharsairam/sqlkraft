@@ -3,7 +3,7 @@ title: "Options page"
 topic: "collation"
 description: "Use this page to view or modify options for the selected database. For more information about the options available on this page, see ALTER DATABASE"
 tags: ["collation","options-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to view or modify options for the selected database. For more information about

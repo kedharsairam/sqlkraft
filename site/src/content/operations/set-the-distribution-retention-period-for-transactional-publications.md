@@ -3,7 +3,7 @@ title: "Set the Distribution Retention Period for Transactional Publications"
 topic: "migration"
 description: "Specify the minimum distribution retention period and maximum distribution retention period on the dialog box. This is a"
 tags: ["migration","set-the-distribution-retention-period-for-transactional-publications"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Specify the minimum distribution retention period and maximum distribution retention period

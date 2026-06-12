@@ -3,7 +3,7 @@ title: "User-defined types"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","user-defined-types"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 gives you the ability to create database objects that are programmed against an

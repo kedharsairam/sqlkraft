@@ -3,7 +3,7 @@ title: "Include Witness Server"
 topic: "high-availability"
 description: "Use this page to specify whether you want to include a witness server in this security configuration for database mirroring. Establish a Database Mir"
 tags: ["high-availability","include-witness-server"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to specify whether you want to include a witness server in this security

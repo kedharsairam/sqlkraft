@@ -3,7 +3,7 @@ title: "LocalDBUnshareInstance"
 topic: "clr-integration"
 description: "07/14/2025 Stops the sharing of the specified SQL Server Express LocalDB instance. C++ [Input] The shared name for the LocalDB instance to unshare."
 tags: ["clr-integration","localdbunshareinstance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Stops the sharing of the specified SQL Server Express LocalDB instance.

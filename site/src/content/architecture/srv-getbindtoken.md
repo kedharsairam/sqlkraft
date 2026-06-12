@@ -3,7 +3,7 @@ title: "srv_getbindtoken"
 topic: "clr-integration"
 description: "Obtains a bind token of the transaction in the current client session that invokes the extended stored procedure. The extended stored procedure can t"
 tags: ["clr-integration","srv-getbindtoken"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Obtains a bind token of the transaction in the current client session that invokes the extended

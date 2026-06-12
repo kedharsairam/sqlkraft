@@ -3,7 +3,7 @@ title: "Broker:Forwarded Message Dropped Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","brokerforwarded-message-dropped-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 generates a Broker:Forwarded Message Dropped event when Service Broker drops

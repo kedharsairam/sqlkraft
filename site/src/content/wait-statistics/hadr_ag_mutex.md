@@ -5,7 +5,7 @@ category: "latency"
 severity: "medium"
 description: "Occurs when waiting to access availability group internal state. Indicates AG metadata contention, often during failover or replica state transitions."
 tags: ["ag","mutex","failover"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

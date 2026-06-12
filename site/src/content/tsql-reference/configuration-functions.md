@@ -4,12 +4,10 @@ title: "Configuration functions"
 category: "statements"
 description: "T-SQL reference for Configuration functions syntax and usage."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ﾃ
-
-Summarize this article for me
 
 Analytics Platform System (PDW)
 

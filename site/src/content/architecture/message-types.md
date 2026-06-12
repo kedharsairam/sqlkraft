@@ -3,7 +3,7 @@ title: "Message Types"
 topic: "service-broker"
 description: "09/11/2025 Applications that use Service Broker communicate by sending messages to each other as part of a conversation."
 tags: ["service-broker","message-types"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Applications that use Service Broker communicate by sending messages to each other as part

@@ -4,7 +4,7 @@ title: "sys.dm_resource_governor_resource_pools"
 category: "resource-governor"
 description: "Returns information about the current resource pool state, the current configuration of resource pools, and resource pool statistics. The ID of the resource pool. Not nullable."
 tags: ["resource-governor","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "statistics_start_time"
 ---
 

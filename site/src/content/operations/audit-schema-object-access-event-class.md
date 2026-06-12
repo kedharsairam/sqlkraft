@@ -3,7 +3,7 @@ title: "Audit Schema Object Access Event Class"
 topic: "event-classes"
 description: "The event class occurs when an object permission (such as SELECT) is used."
 tags: ["event-classes","audit-schema-object-access-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

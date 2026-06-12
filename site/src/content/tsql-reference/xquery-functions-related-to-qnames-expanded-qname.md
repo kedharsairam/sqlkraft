@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions Related to QNames - expanded-QName"
 syntax: "<e> expanded-QName(...) </e>"
 tags: ["xquery","functions-related-to-qnames-expanded-qname"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns a value of the xs:QName type with the namespace URI specified in the

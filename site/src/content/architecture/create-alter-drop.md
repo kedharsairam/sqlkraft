@@ -3,7 +3,7 @@ title: "Create, Alter, & Drop"
 topic: "filestream"
 description: "09/29/2025 Describes how to create a new FileTable, or alter or drop an existing FileTable. A FileTable is a specialized user table that has a predefined and fixed schema. T"
 tags: ["filestream","create-alter-drop"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Describes how to create a new FileTable, or alter or drop an existing FileTable.

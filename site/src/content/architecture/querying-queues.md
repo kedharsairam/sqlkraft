@@ -3,7 +3,7 @@ title: "Querying Queues"
 topic: "service-broker"
 description: "09/11/2025 Sometimes it might be necessary to inspect the content of a queue as a whole."
 tags: ["service-broker","querying-queues"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Sometimes it might be necessary to inspect the content of a queue as a whole. You might want

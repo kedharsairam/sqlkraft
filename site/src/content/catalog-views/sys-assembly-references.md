@@ -4,7 +4,7 @@ title: "sys.assembly_references"
 category: "compatibility"
 description: "Contains a row for each pair of assemblies where one is directly referencing another."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

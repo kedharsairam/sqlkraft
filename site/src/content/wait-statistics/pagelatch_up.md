@@ -5,7 +5,7 @@ category: "blocking"
 severity: "high"
 description: "Occurs when waiting for an update latch on a buffer pool page in memory. The classic 'last-page insert contention' signal on index leaf pages — common on sequential identity columns and datetime clustered indexes."
 tags: ["latch","page","update","last-page"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-last-page-insert-contention"]
 ---
 

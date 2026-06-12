@@ -3,7 +3,7 @@ title: "Compare Typed to Untyped XML"
 topic: "xml-data"
 description: "You can create variables, parameters, and columns of the type. You can optionally associate a collect"
 tags: ["xml-data","compare-typed-to-untyped-xml"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can create variables, parameters, and columns of the

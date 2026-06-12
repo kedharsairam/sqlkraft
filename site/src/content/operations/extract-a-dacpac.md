@@ -3,7 +3,7 @@ title: "Extract a dacpac"
 topic: "ssms"
 description: ""
 tags: ["ssms","extract-a-dacpac"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The extraction process creates a DAC package file (

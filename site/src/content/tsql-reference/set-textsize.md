@@ -4,7 +4,7 @@ title: "SET TEXTSIZE"
 category: "statements"
 description: "varchar(max) nvarchar(max) varbinary(max) text ntext image varchar(max) nvarchar(max) varbinary(max) text ntext image ntext text image nvarchar(max) varchar(max) varbinary(max)"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 varchar(max) nvarchar(max) varbinary(max)

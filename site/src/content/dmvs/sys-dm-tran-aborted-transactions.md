@@ -4,7 +4,7 @@ title: "sys.dm_tran_aborted_transactions"
 category: "io"
 description: "2019 (15.x) and later versions SQL database in Microsoft Fabric Returns information about unresolved, aborted transactions in the Database Engine instance. In Azure SQL Database, the values are unique within a single database or an elastic pool, but not within a logical server. The starting LSN of the aborted transaction. The ending LSN of the aborted transaction."
 tags: ["io","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "##MS_ServerStateReader##"
 ---
 

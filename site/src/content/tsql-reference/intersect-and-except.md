@@ -4,7 +4,7 @@ title: "Intersect, and except"
 category: "queries"
 description: "CTE names can be reused at different nesting levels. CTE names at the same nesting level can't"
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 CTE names can be reused at different nesting levels. CTE names at the same nesting level can't

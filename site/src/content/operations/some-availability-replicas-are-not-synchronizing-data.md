@@ -3,7 +3,7 @@ title: "Some availability replicas are not synchronizing data"
 topic: "high-availability"
 description: ": Availability Replicas Data Synchronization State : Some availability replicas are not synchronizing data."
 tags: ["high-availability","some-availability-replicas-are-not-synchronizing-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 : Availability Replicas Data Synchronization State

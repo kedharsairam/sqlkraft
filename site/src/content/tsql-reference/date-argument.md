@@ -4,7 +4,7 @@ title: "Date Argument"
 category: "data-types"
 description: ""
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The return value depends on the language environment set by using

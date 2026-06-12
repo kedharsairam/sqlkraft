@@ -4,7 +4,7 @@ title: "sys.dm_os_host_info"
 category: "os"
 description: "2017 (14.x) and later Returns one row that displays operating system version information. The type of operating system."
 tags: ["os","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "host_service_pack_level"
 ---
 

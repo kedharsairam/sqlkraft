@@ -3,7 +3,7 @@ title: "Programming model restrictions"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","programming-model-restrictions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When you build a managed stored procedure or other managed database object, SQL Server

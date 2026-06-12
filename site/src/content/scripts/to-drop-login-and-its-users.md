@@ -4,7 +4,7 @@ title: "To Drop Login and it’s Users"
 description: "diagnostic script for security-audit operations."
 category: "security-audit"
 tags: ["login","security-audit","user"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

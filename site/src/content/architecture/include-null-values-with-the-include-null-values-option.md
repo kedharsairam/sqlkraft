@@ -3,7 +3,7 @@ title: "Include null values with the INCLUDE_NULL_VALUES option"
 topic: "json-data"
 description: "2016 (13.x) and later versions Azure SQL Managed Instance Azure Synapse Analytics (serverless SQL pool only) SQL analytics endpoint in Microsoft Fabric"
 tags: ["json-data","include-null-values-with-the-include-null-values-option"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

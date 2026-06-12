@@ -4,7 +4,7 @@ title: "Xml data type"
 category: "data-types"
 description: "When you convert between"
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 When you convert between

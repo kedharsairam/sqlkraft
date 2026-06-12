@@ -3,7 +3,7 @@ title: "States"
 topic: "collation"
 description: "A database is always in one specif"
 tags: ["collation","states"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

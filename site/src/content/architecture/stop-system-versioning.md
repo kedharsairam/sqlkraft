@@ -3,7 +3,7 @@ title: "Stop system-versioning"
 topic: "tables"
 description: ""
 tags: ["tables","stop-system-versioning"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

@@ -5,7 +5,7 @@ category: "io"
 severity: "medium"
 description: "Occurs when a task waits for asynchronous I/O operations to complete. Covers a broad range of I/O operations including checkpoint writes, lazy writer, and backup reads."
 tags: ["io","async","checkpoint"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

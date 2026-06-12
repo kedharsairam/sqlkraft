@@ -3,7 +3,7 @@ title: "Detach & attach (T-SQL)"
 topic: "collation"
 description: "This topic describes how to move a detached database to another location and re-attach it to the same or a different server instance in SQL Server. Ho"
 tags: ["collation","detach-attach-t-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to move a detached database to another location and re-attach it to

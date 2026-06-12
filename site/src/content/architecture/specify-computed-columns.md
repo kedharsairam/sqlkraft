@@ -3,7 +3,7 @@ title: "Specify Computed Columns"
 topic: "tables"
 description: ""
 tags: ["tables","specify-computed-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A computed column is a virtual column that isn't physically stored in the table, unless the

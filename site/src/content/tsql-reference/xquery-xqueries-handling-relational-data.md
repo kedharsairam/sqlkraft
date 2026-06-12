@@ -4,7 +4,7 @@ title: "XQuery - XQueries Handling Relational Data"
 category: "xquery"
 description: "XQuery Language Reference: XQueries Handling Relational Data"
 tags: ["xquery","xqueries-handling-relational-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You specify XQuery against an

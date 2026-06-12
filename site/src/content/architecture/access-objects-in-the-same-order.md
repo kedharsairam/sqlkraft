@@ -3,7 +3,7 @@ title: "Access objects in the same order"
 topic: "query-processing"
 description: "Access objects in consistent order to minimize deadlocks in concurrent transactions."
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 If all concurrent transactions access objects in the same order, deadlocks are less likely to occur. For example, if two concurrent transactions obtain a lock on the `Supplier` table and then on the `Part` table, one transaction is blocked on the `Part` table until the other completes.

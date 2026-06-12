@@ -4,7 +4,7 @@ title: "See other language references"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 To find the system tables, views, functions, and procedures, see these links, which are in the

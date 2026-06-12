@@ -3,7 +3,7 @@ title: "Disallowed Types & Members in System.Core.dll"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","disallowed-types-members-in-systemcoredll"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 common language integration (CLR) programming disallows the use of a type or

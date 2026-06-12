@@ -3,7 +3,7 @@ title: "Of a clustered index"
 topic: "collation"
 description: ""
 tags: ["collation","of-a-clustered-index"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can use the following steps to estimate the amount of space that is required to store data

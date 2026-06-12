@@ -5,7 +5,7 @@ category: "xquery"
 description: ""
 syntax: "fn:floor ($arg as numeric?) as numeric?"
 tags: ["xquery","numeric-values-functions-floor"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the largest number with no fraction part that is not greater than the value of its

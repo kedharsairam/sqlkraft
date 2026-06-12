@@ -3,7 +3,7 @@ title: "SqlPipe Object"
 topic: "clr-integration"
 description: "SqlPipe object In previous versions of SQL Server, it was common to write a stored procedure (or an extended stored procedure) that sent results or o"
 tags: ["clr-integration","sqlpipe-object"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SqlPipe object

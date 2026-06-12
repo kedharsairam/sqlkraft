@@ -3,7 +3,7 @@ title: "Command-Line Management Tool: SqlLocalDB.exe"
 topic: "clr-integration"
 description: "SqlLocalDB.exe 07/14/2025 SqlLocalDB.exe is a simple tool that enables the user to easily manage LocalDB instances from the command line."
 tags: ["clr-integration","command-line-management-tool-sqllocaldbexe"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SqlLocalDB.exe

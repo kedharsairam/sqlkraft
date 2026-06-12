@@ -4,46 +4,46 @@ title: "sp_getapplock"
 category: "general"
 description: "Places a lock on an application resource. A string specifying a name that identifies the lock resource. If a resource string is longer than The application must ensure that the resource name is unique. The specified name is hashed internally into a value that can be stored in the SQL Server lock manager."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.sp_getapplock
-      [ [ @
-      R
-      esource = ]
-      N
-      'Resource'
-      ]
-      , [ @
-      L
-      ock
-      M
-      ode = ]
-      'LockMode'
-      [ , [ @
-      L
-      ock
-      O
-      wner = ]
-      'LockOwner'
-      ]
-      [ , [ @
-      L
-      ock
-      T
-      imeout = ]
-      L
-      ock
-      T
-      imeout ]
-      [ , [ @
-      D
-      b
-      P
-      rincipal = ]
-      N
-      'DbPrincipal'
-      ]
-      [ ; ]
+              [ [ @
+              R
+              esource = ]
+              N
+              'Resource'
+              ]
+              , [ @
+              L
+              ock
+              M
+              ode = ]
+              'LockMode'
+              [ , [ @
+              L
+              ock
+              O
+              wner = ]
+              'LockOwner'
+              ]
+              [ , [ @
+              L
+              ock
+              T
+              imeout = ]
+              L
+              ock
+              T
+              imeout ]
+              [ , [ @
+              D
+              b
+              P
+              rincipal = ]
+              N
+              'DbPrincipal'
+              ]
+              [ ; ]
 ---
 
 ## Description

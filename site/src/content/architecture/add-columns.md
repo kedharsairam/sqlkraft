@@ -3,7 +3,7 @@ title: "Add Columns"
 topic: "tables"
 description: ""
 tags: ["tables","add-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

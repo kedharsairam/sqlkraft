@@ -3,7 +3,7 @@ title: "FOR XML Query Compared to Nested FOR XML Query"
 topic: "xml-data"
 description: "This article compares a single-level query to a nested query. One of the benefits of using nested q"
 tags: ["xml-data","for-xml-query-compared-to-nested-for-xml-query"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article compares a single-level

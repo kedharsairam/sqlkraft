@@ -3,7 +3,7 @@ title: "Transaction log shipping page"
 topic: "collation"
 description: "Use this page to configure and modify the properties of log shipping for a database. For an explanation of log shipping concepts, see About Log Shipp"
 tags: ["collation","transaction-log-shipping-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to configure and modify the properties of log shipping for a database.

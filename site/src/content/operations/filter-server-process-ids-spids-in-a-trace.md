@@ -3,7 +3,7 @@ title: "Filter server process IDs (SPIDs) in a trace"
 topic: "profiler"
 description: "06/06/2025 This article describes how to filter session identifiers (SPIDs) in a trace by using SQL Server Profiler. 1. On the menu, select ,"
 tags: ["profiler","filter-server-process-ids-spids-in-a-trace"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to filter session identifiers (SPIDs) in a trace by using SQL Server

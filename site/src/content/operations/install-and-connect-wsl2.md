@@ -3,7 +3,7 @@ title: "Install and connect (WSL2)"
 topic: "linux-operations"
 description: ""
 tags: ["linux-operations","install-and-connect-wsl2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Quickstart: Install SQL Server and create a

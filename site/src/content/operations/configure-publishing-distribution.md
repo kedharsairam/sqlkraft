@@ -3,7 +3,7 @@ title: "Configure Publishing & Distribution"
 topic: "migration"
 description: "This topic describes how to configure publishing and distribution in SQL Server by using SQL Server Management Studio, Tra"
 tags: ["migration","configure-publishing-distribution"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to configure publishing and distribution in SQL Server by using SQL

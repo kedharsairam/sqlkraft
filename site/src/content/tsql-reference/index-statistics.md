@@ -4,7 +4,7 @@ title: "Index statistics"
 category: "hints"
 description: "To evaluate how changing the compression state affects the space usage by a table, an index,"
 tags: ["tsql","hints"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 To evaluate how changing the compression state affects the space usage by a table, an index,

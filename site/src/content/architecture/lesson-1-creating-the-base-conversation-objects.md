@@ -3,7 +3,7 @@ title: "Lesson 1: Creating the Base Conversation Objects"
 topic: "service-broker"
 description: "09/04/2025 In this lesson, learn how to build all the objects that enable a database to support a conversation in the database. Copy and paste t"
 tags: ["service-broker","lesson-1-creating-the-base-conversation-objects"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this lesson, learn how to build all the objects that enable a database to support a

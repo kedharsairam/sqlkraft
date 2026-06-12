@@ -3,7 +3,7 @@ title: "Use MSDTC with containers"
 topic: "linux-operations"
 description: "Linux containers 07/03/2025 - Linux This article explains how to set up SQL Server Linux containers for distributed transactions, including special requirements"
 tags: ["linux-operations","use-msdtc-with-containers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Linux containers

@@ -3,7 +3,7 @@ title: "Environment variables"
 topic: "linux-operations"
 description: "on Linux You can use several different environment variables to configure SQL Server on Linux."
 tags: ["linux-operations","environment-variables"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

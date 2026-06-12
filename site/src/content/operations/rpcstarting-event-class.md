@@ -3,7 +3,7 @@ title: "RPC:Starting Event Class"
 topic: "event-classes"
 description: "The RPC:Starting event class indicates that a remote procedure call has started. Description"
 tags: ["event-classes","rpcstarting-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The RPC:Starting event class indicates that a remote procedure call has started.

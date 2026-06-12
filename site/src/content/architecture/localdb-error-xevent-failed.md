@@ -3,7 +3,7 @@ title: "LOCALDB_ERROR_XEVENT_FAILED"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","localdb-error-xevent-failed"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Product Name

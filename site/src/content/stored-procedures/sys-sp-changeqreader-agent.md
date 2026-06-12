@@ -4,19 +4,19 @@ title: "sp_changeqreader_agent"
 category: "general"
 description: "Changes security properties of a Queue Reader agent. This stored procedure is executed at the Distributor on the distribution database or at the Publisher on the publication database. The login for the Windows account under which the agent runs. The password for the Windows account under which the agent runs."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_changeqreader_agent
-      [ [ @job_login = ]
-      N
-      'job_login'
-      ]
-      [ , [ @job_password = ]
-      N
-      'job_password'
-      ]
-      [ , [ @frompublisher = ] frompublisher ]
-      [ ; ]
+              [ [ @job_login = ]
+              N
+              'job_login'
+              ]
+              [ , [ @job_password = ]
+              N
+              'job_password'
+              ]
+              [ , [ @frompublisher = ] frompublisher ]
+              [ ; ]
 ---
 
 ## Description

@@ -4,7 +4,7 @@ title: "sys.assembly_types"
 category: "compatibility"
 description: "SQL analytics endpoint in Microsoft Fabric Contains a row for each user-defined type that is defined by a CLR assembly. The following appear in the list of inherited columns (see ID of the assembly from which this type was created."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

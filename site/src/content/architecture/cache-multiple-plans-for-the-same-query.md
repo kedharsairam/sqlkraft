@@ -3,7 +3,7 @@ title: "Cache multiple plans for the same query"
 topic: "query-processing"
 description: "### sys.dm_exec_requests (Transact-SQL)"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## sys.dm_exec_requests (Transact-SQL)

@@ -3,7 +3,7 @@ title: "Package references"
 topic: "ssms"
 description: ""
 tags: ["ssms","package-references"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQL projects package references

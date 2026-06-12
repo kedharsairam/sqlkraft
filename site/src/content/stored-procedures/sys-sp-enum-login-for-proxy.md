@@ -4,19 +4,19 @@ title: "sp_enum_login_for_proxy"
 category: "general"
 description: "Lists associations between security principals and proxies."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_enum_login_for_proxy
-      [ [ @name = ]
-      N
-      'name'
-      ]
-      [ , [ @proxy_id = ] proxy_id ]
-      [ , [ @proxy_name = ]
-      N
-      'proxy_name'
-      ]
-      [ ; ]
+              [ [ @name = ]
+              N
+              'name'
+              ]
+              [ , [ @proxy_id = ] proxy_id ]
+              [ , [ @proxy_name = ]
+              N
+              'proxy_name'
+              ]
+              [ ; ]
 ---
 
 ## Description

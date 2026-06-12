@@ -3,7 +3,7 @@ title: "Generate Elements for NULL Values with the XSINIL Parameter"
 topic: "xml-data"
 description: "The directive constructs XML in which each column value maps to an element in the XML. By d"
 tags: ["xml-data","generate-elements-for-null-values-with-the-xsinil-parameter"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

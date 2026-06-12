@@ -4,19 +4,19 @@ title: "To Deal with Wait Types"
 description: "most common wait types:"
 category: "troubleshooting"
 tags: ["troubleshooting","wait-statistics"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql
 --most common wait types:
---1) ASYNC_NETWORK_IO   - Network Issue for sending results to client.
---2) LCK_M_S    - Its a lock wait type.
---3) WRITELOG    - Contention in log file, writing to log file is taking more time could be due to storage issue.
---4) PAGE_IO_LATCH   - Data file contention issue, it could be a Storage Issue or may be load on the disk.
---5) PAGE_LATCH    - TEMPDB Contention issue
---6) RESOURCE_SEMAPHORE   - Wait type due to memory not available.
+--1) ASYNC_NETWORK_IO - Network Issue for sending results to client.
+--2) LCK_M_S - Its a lock wait type.
+--3) WRITELOG - Contention in log file, writing to log file is taking more time could be due to storage issue.
+--4) PAGE_IO_LATCH - Data file contention issue, it could be a Storage Issue or may be load on the disk.
+--5) PAGE_LATCH - TEMPDB Contention issue
+--6) RESOURCE_SEMAPHORE - Wait type due to memory not available.
 --7) SOS_SCHEDULER_YIELD - Worker Thread allocation issue to processor. Getting quantum on Processor is taking time.
---8) CXPACKET     - Parallelism Issue, threads waiting for depending tasks.
+--8) CXPACKET - Parallelism Issue, threads waiting for depending tasks.
 
 --to view what are the wait types are in sql server right now, use the following script:
 WITH [Waits] AS (SELECT

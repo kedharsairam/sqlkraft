@@ -4,7 +4,7 @@ title: "sys.fulltext_stoplists"
 category: "full-text"
 description: "Contains a row per full-text stoplist in the database."
 tags: ["full-text","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

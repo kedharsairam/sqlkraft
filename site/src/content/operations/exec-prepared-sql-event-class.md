@@ -3,7 +3,7 @@ title: "Exec Prepared SQL Event Class"
 topic: "event-classes"
 description: "The Exec Prepared SQL event class indicates that the SqlClient, ODBC, OLE DB, or DB-Library"
 tags: ["event-classes","exec-prepared-sql-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Exec Prepared SQL event class indicates that the SqlClient, ODBC, OLE DB, or DB-Library

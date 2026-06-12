@@ -3,12 +3,12 @@ title: "Fabric integration"
 topic: "profiler"
 description: |
   The MSSQL extension for Visual Studio Code supports connecting to SQL database in
-  
-    Microsoft Fabric. The Connection dialog includes a Fabric connectivity option that you use to
-  
-    sign in using Microsof
+          
+            Microsoft Fabric. The Connection dialog includes a Fabric connectivity option that you use to
+          
+            sign in using Microsof
 tags: ["profiler","fabric-integration"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The MSSQL extension for Visual Studio Code supports connecting to SQL database in

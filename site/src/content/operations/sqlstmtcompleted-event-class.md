@@ -3,7 +3,7 @@ title: "SQL:StmtCompleted Event Class"
 topic: "event-classes"
 description: "SQL:StmtCompleted Event Class The SQL:StmtCompleted event class indicates that a Transact-SQ"
 tags: ["event-classes","sqlstmtcompleted-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQL:StmtCompleted Event Class

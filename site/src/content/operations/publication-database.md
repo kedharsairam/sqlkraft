@@ -3,7 +3,7 @@ title: "Publication database"
 topic: "high-availability"
 description: "This topic discusses special considerations for maintaining a publication database when you use Always On availability groups. Maintaining an Always"
 tags: ["high-availability","publication-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic discusses special considerations for maintaining a publication database when you

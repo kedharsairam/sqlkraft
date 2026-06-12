@@ -3,7 +3,7 @@ title: "Use the EVENTDATA Function"
 topic: "change-data-capture"
 description: ""
 tags: ["change-data-capture","use-the-eventdata-function"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Information about an event that fires a DDL trigger is captured by using the EVENTDATA

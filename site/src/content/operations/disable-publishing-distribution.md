@@ -3,7 +3,7 @@ title: "Disable Publishing & Distribution"
 topic: "migration"
 description: "This topic describes how to disable publishing and distribution in SQL Server by using SQL Server Management Studio, Trans"
 tags: ["migration","disable-publishing-distribution"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to disable publishing and distribution in SQL Server by using SQL

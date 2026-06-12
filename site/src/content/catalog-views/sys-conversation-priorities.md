@@ -4,10 +4,10 @@ title: "sys.conversation_priorities"
 category: "compatibility"
 description: "Contains a row for each conversation priority created in the current database, as shown in the A number that uniquely identifies the conversation priority. Not Name of the conversation priority. Not NULLABLE. The identifier of the contract that is specified for the conversation priority. This can be joined on the service_contract_id column in sys.service_contracts. NULLABLE."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   SELECT scp.name AS priority_name,
-      ssc.name AS contract_name,
+              ssc.name AS contract_name,
 ---
 
 ## Description

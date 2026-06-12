@@ -3,7 +3,7 @@ title: "Data types in the .NET Framework"
 topic: "clr-integration"
 description: "data types in the .NET The library is part of the base class library of the .NET Framework. It provides data types with the same semantic"
 tags: ["clr-integration","data-types-in-the-net-framework"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 data types in the.NET

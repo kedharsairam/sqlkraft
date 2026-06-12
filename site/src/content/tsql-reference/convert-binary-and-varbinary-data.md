@@ -4,7 +4,7 @@ title: "Convert binary and varbinary data"
 category: "data-types"
 description: ""
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Analytics Platform System (PDW)

@@ -3,7 +3,7 @@ title: "How to: Resume Service Broker Networking (Transact-SQL)"
 topic: "service-broker"
 description: "09/02/2025 Service Broker sends and receives messages over the network while any endpoint for Service Broker is in the state. To resume Service"
 tags: ["service-broker","how-to-resume-service-broker-networking-transact-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker sends and receives messages over the network while any endpoint for Service

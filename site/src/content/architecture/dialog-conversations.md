@@ -3,7 +3,7 @@ title: "Dialog Conversations"
 topic: "service-broker"
 description: "08/29/2025 All messages sent by Service Broker are part of a conversation. A dialog is a conversation between two services. A dialog is a reliabl"
 tags: ["service-broker","dialog-conversations"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 All messages sent by Service Broker are part of a conversation. A dialog is a conversation

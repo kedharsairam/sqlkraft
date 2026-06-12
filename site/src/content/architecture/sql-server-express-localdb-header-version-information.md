@@ -3,7 +3,7 @@ title: "SQL Server Express LocalDB Header & Version Information"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","sql-server-express-localdb-header-version-information"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Express LocalDB header and

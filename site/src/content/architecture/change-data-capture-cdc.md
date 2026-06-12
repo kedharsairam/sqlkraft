@@ -3,7 +3,7 @@ title: "Change data capture (CDC)"
 topic: "change-data-capture"
 description: "08/22/2025 In this article, learn about change data capture (CDC), which records activity on a database when tables and rows have been modified."
 tags: ["change-data-capture","change-data-capture-cdc"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this article, learn about change data capture (CDC), which records activity on a database

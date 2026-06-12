@@ -4,7 +4,7 @@ title: "Date and time styles"
 category: "data-types"
 description: ""
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 An integer expression that specifies how the function will translate expression. For a style value of NULL, NULL is returned.

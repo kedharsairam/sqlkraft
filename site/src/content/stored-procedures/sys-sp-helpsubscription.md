@@ -4,33 +4,33 @@ title: "sp_helpsubscription"
 category: "general"
 description: "Lists subscription information associated with a particular publication, article, Subscriber, or set of subscriptions. This stored procedure is executed at a Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_helpsubscription
-      [ [ @publication = ]
-      N
-      'publication'
-      ]
-      [ , [ @article = ]
-      N
-      'article'
-      ]
-      [ , [ @subscriber = ]
-      N
-      'subscriber'
-      ]
-      [ , [ @destination_db = ]
-      N
-      'destination_db'
-      ]
-      [ , [ @found = ] found
-      OUTPUT
-      ]
-      [ , [ @publisher = ]
-      N
-      'publisher'
-      ]
-      [ ; ]
+              [ [ @publication = ]
+              N
+              'publication'
+              ]
+              [ , [ @article = ]
+              N
+              'article'
+              ]
+              [ , [ @subscriber = ]
+              N
+              'subscriber'
+              ]
+              [ , [ @destination_db = ]
+              N
+              'destination_db'
+              ]
+              [ , [ @found = ] found
+              OUTPUT
+              ]
+              [ , [ @publisher = ]
+              N
+              'publisher'
+              ]
+              [ ; ]
 ---
 
 ## Description

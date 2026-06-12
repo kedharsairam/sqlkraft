@@ -4,13 +4,13 @@ title: "sys.sp_cdc_drop_job"
 category: "general"
 description: ""
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.sp_cdc_drop_job [ [ @job_type = ]
-      N
-      'job_type'
-      ]
-      [ ; ]
+              N
+              'job_type'
+              ]
+              [ ; ]
 ---
 
 ## Description

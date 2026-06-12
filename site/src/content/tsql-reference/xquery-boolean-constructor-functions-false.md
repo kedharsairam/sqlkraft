@@ -6,7 +6,7 @@ description: ""
 syntax: |
   'xs:boolean("0")'
 tags: ["xquery","boolean-constructor-functions-false"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the xs:boolean value False. This is equivalent to.

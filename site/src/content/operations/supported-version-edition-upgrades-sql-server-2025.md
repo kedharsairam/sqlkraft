@@ -3,7 +3,7 @@ title: "Supported version & edition upgrades SQL Server 2025"
 topic: "upgrade"
 description: "- Windows only This article lists the supported upgrade paths from the following SQL Server versions, and the supported edition upgrades for SQL Server 2025 (17.x)."
 tags: ["upgrade","supported-version-edition-upgrades-sql-server-2025"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Windows only

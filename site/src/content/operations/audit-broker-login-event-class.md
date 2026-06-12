@@ -3,7 +3,7 @@ title: "Audit Broker Login Event Class"
 topic: "event-classes"
 description: "creates an event to report audit messages related to Service Broker transport security. D"
 tags: ["event-classes","audit-broker-login-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 creates an

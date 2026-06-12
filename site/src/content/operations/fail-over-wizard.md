@@ -3,7 +3,7 @@ title: "Fail over - wizard"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","fail-over-wizard"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to perform a planned manual failover or forced manual failover

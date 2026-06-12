@@ -3,7 +3,7 @@ title: "Change roles between servers"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","change-roles-between-servers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 After you have failed over a SQL Server log shipping configuration to a secondary server, you

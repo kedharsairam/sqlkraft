@@ -3,7 +3,7 @@ title: "DCM and BCM pages"
 topic: "query-processing"
 description: ""
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 An IAM page has a header that indicates the starting extent of the range of extents mapped by

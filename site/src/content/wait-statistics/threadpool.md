@@ -5,7 +5,7 @@ category: "triage"
 severity: "critical"
 description: "Occurs when a task is waiting for an available worker thread. Indicates all worker threads are busy — typically from blocker chains, excessive parallel queries, or connection storms. A server-wide crisis signal."
 tags: ["threads","worker","pool-exhaustion"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-blocking-chains"]
 ---
 

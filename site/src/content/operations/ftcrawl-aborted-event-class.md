@@ -3,7 +3,7 @@ title: "FT:Crawl Aborted Event Class"
 topic: "event-classes"
 description: "The event class indicates that an exception has been encountered during a full-text crawl."
 tags: ["event-classes","ftcrawl-aborted-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

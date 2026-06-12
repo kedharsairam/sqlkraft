@@ -3,7 +3,7 @@ title: "Sequence Properties"
 topic: "service-broker"
 description: "Creates a sequence object and specifies its properties. A sequence is a user-defined schema"
 tags: ["service-broker","sequence-properties"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Creates a sequence object and specifies its properties. A sequence is a user-defined schema

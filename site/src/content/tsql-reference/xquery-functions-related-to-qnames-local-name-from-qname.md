@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions Related to QNames - local-name-from-QName"
 syntax: "AdventureWorks2022"
 tags: ["xquery","functions-related-to-qnames-local-name-from-qname"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns an xs:NCNAME that represents the local part of QName specified by

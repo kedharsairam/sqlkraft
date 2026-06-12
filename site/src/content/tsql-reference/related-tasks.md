@@ -4,7 +4,7 @@ title: "Related tasks"
 category: "statements"
 description: "The following example creates a server audit called"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following example creates a server audit called

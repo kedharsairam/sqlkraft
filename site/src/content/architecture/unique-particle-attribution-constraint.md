@@ -3,7 +3,7 @@ title: "Unique particle attribution constraint"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","unique-particle-attribution-constraint"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In XSD, complex content models are constrained by the unique particle attribution (UPA)

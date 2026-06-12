@@ -3,7 +3,7 @@ title: "Partition information enhancements"
 topic: "io-fundamentals"
 description: "into the clustered index on column b to find the rows that meet the condition"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 into the clustered index on column b to find the rows that meet the condition

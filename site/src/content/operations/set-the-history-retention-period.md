@@ -3,7 +3,7 @@ title: "Set the History Retention Period"
 topic: "migration"
 description: "Specify the history retention period on the page of the dialog box. This setting controls how long replication agent history is stored."
 tags: ["migration","set-the-history-retention-period"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Specify the history retention period on the

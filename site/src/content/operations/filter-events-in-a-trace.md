@@ -3,7 +3,7 @@ title: "Filter events in a trace"
 topic: "profiler"
 description: "06/05/2025 Filters limit the events collected in a trace."
 tags: ["profiler","filter-events-in-a-trace"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Filters limit the events collected in a trace. If a filter isn't set, all events of the selected event

@@ -3,7 +3,7 @@ title: "Table-valued"
 topic: "clr-integration"
 description: "A table-valued function is a user-defined function that returns a table."
 tags: ["clr-integration","table-valued"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A table-valued function is a user-defined function that returns a table.

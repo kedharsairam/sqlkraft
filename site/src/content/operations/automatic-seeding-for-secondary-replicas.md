@@ -3,7 +3,7 @@ title: "Automatic seeding for secondary replicas"
 topic: "high-availability"
 description: "In SQL Server 2012 and 2014, the only way to initialize a secondary replica in a SQL Server Always On availability group is to use backup, copy, and r"
 tags: ["high-availability","automatic-seeding-for-secondary-replicas"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In SQL Server 2012 and 2014, the only way to initialize a secondary replica in a SQL Server

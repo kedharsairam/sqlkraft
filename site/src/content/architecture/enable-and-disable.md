@@ -3,7 +3,7 @@ title: "Enable and disable"
 topic: "query-processing"
 description: "The following table summarizes the availability and the enabled state of optimized locking"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following table summarizes the availability and the enabled state of optimized locking

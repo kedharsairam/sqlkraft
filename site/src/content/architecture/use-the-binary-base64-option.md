@@ -3,7 +3,7 @@ title: "Use the BINARY BASE64 Option"
 topic: "xml-data"
 description: "If the BINARY BASE64 option is specified in the query, the binary data is returned in base64 encoding"
 tags: ["xml-data","use-the-binary-base64-option"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If the BINARY BASE64 option is specified in the query, the binary data is returned in base64

@@ -3,7 +3,7 @@ title: "Instant file initialization"
 topic: "collation"
 description: ""
 tags: ["collation","instant-file-initialization"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this article, you learn about instant file initialization (IFI) and how to enable it to speed up

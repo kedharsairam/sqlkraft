@@ -3,7 +3,7 @@ title: "View Collation Information"
 topic: "collation"
 description: "You can view the collation of a server, database, or column in SQL Server Management Studio"
 tags: ["collation","view-collation-information"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can view the collation of a server, database, or column in SQL Server Management Studio

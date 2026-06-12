@@ -5,7 +5,7 @@ category: "blocking"
 severity: "low"
 description: "Occurs when waiting for a schema stability (Sch-S) lock. Normally very short; used when compiling queries to ensure the schema doesn't change during compilation."
 tags: ["lock","schema","compile"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

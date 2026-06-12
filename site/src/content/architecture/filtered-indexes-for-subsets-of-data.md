@@ -3,7 +3,7 @@ title: "Filtered indexes for subsets of data"
 topic: "index-architecture"
 description: "Creating a filtered index can reduce disk storage for nonclustered indexes when a full-"
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Creating a filtered index can reduce disk storage for nonclustered indexes when a full-

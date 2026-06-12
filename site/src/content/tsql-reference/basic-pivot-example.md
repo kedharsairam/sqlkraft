@@ -4,7 +4,7 @@ title: "Basic PIVOT example"
 category: "queries"
 description: ""
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 In Microsoft Fabric and Azure Synapse Analytics pools, queries with

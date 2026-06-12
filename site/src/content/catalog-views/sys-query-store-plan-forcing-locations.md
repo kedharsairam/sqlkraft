@@ -4,7 +4,7 @@ title: "sys.query_store_plan_forcing_locations"
 category: "query-store"
 description: "Contains information about Query Store plans that have been forced on secondary replicas , when Query Store for secondary replicas is enabled. You can use this information to determine what queries have plans forced on different replica sets. Query Store for secondary replicas is supported starting in SQL Server 2025 (17.x) and later versions, and in Azure SQL Database."
 tags: ["query-store","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "plan_forcing_location_id"
 ---
 

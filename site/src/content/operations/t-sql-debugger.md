@@ -3,7 +3,7 @@ title: "T-SQL Debugger"
 topic: "ssb-diagnose"
 description: "09/15/2025 The Transact-SQL debugger helps you find errors in Transact-SQL code by investigating the run-time behavior of the code. After you set the Database Engine Query E"
 tags: ["ssb-diagnose","t-sql-debugger"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Transact-SQL debugger helps you find errors in Transact-SQL code by investigating the

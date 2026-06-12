@@ -3,7 +3,7 @@ title: "Monitor performance for availability groups"
 topic: "high-availability"
 description: "The performance aspect of Always On Availability Groups is crucial to maintaining the service- level agreement (SLA) for your mission-critical databas"
 tags: ["high-availability","monitor-performance-for-availability-groups"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The performance aspect of Always On Availability Groups is crucial to maintaining the service-

@@ -3,7 +3,7 @@ title: "Managing Service Broker Identities"
 topic: "service-broker"
 description: "09/03/2025 Each database contains a unique identifier that is used for routing Service Broker messages to that database. This topic describes Ser"
 tags: ["service-broker","managing-service-broker-identities"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Each database contains a unique identifier that is used for routing Service Broker messages to

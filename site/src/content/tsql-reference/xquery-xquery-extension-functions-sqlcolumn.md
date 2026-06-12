@@ -6,7 +6,7 @@ description: "XQuery Language Reference: XQuery Extension Functions - sql:column
 syntax: |
   'sql:column("columnName")'
 tags: ["xquery","xquery-extension-functions-sqlcolumn"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 As described in the topic,

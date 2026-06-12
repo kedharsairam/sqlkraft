@@ -3,7 +3,7 @@ title: "Transmission Queue"
 topic: "service-broker"
 description: "09/11/2025 Service Broker uses a transmission queue as a holding area for messages. Each database contains a separate transmission queue."
 tags: ["service-broker","transmission-queue"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker uses a transmission queue as a holding area for messages. Each database

@@ -3,7 +3,7 @@ title: "Tune compression"
 topic: "high-availability"
 description: "By default, SQL Server compresses data streams where appropriate for availability groups."
 tags: ["high-availability","tune-compression"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 By default, SQL Server compresses data streams where appropriate for availability groups.

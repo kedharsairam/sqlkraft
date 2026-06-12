@@ -3,7 +3,7 @@ title: "Files page"
 topic: "collation"
 description: "Use this page to create a new database, or view or modify properties for the selected database."
 tags: ["collation","files-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to create a new database, or view or modify properties for the selected database.

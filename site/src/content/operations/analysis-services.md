@@ -3,7 +3,7 @@ title: "Analysis Services"
 topic: "upgrade"
 description: "06/04/2025 - Windows only Analysis Services instances can be upgraded to a SQL Server version of the same server mode to take advantage of features introduced in the curren"
 tags: ["upgrade","analysis-services"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Windows only

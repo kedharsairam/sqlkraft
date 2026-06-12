@@ -3,7 +3,7 @@ title: "Diagnose spinlock contention"
 topic: "locking"
 description: ""
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 As stated previously spinlocks are most common on high concurrency systems that are under

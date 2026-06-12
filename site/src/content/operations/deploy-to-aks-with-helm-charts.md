@@ -3,7 +3,7 @@ title: "Deploy to AKS with Helm charts"
 topic: "linux-operations"
 description: ""
 tags: ["linux-operations","deploy-to-aks-with-helm-charts"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Quickstart: Deploy a SQL Server Linux

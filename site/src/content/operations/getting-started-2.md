@@ -3,7 +3,7 @@ title: "Getting Started"
 topic: "configuration"
 description: "06/06/2025 This tutorial is intended for users who are new to SQL Server and who have installed SQL Server or SQL Server Express."
 tags: ["configuration","getting-started-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This tutorial is intended for users who are new to SQL Server and who have installed SQL

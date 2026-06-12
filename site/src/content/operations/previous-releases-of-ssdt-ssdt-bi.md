@@ -3,7 +3,7 @@ title: "Previous releases of SSDT & SSDT-BI"
 topic: "data-tools"
 description: "09/09/2025 SQL Server Data Tools (SSDT) provides project templates a"
 tags: ["data-tools","previous-releases-of-ssdt-ssdt-bi"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

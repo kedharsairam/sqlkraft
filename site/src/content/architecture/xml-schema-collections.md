@@ -3,7 +3,7 @@ title: "XML Schema Collections"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","xml-schema-collections"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 As described in the

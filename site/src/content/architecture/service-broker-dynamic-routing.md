@@ -3,7 +3,7 @@ title: "Service Broker Dynamic Routing"
 topic: "service-broker"
 description: "09/11/2025 For most scenarios, Service Broker applications use routes configured by an administrator. In some cases, you might need to dynamicall"
 tags: ["service-broker","service-broker-dynamic-routing"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 For most scenarios, Service Broker applications use routes configured by an administrator. In

@@ -3,7 +3,7 @@ title: "Clustered index architecture"
 topic: "index-architecture"
 description: ""
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 If you don't create a clustered index, the table is stored as a heap, which is generally not

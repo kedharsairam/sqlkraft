@@ -4,7 +4,7 @@ title: "sp_removedistpublisherdbreplication"
 category: "general"
 description: "Removes publishing metadata belonging to a specific publication at the Distributor. This stored procedure is executed at the Distributor on the distribution database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_removedistpublisherdbreplication"
 ---
 

@@ -3,7 +3,7 @@ title: "Run SQL Server Profiler"
 topic: "profiler"
 description: "06/06/2025 You can run SQL Server Profiler in several different ways, to support gathering trace output in various scenarios. You can start SQL S"
 tags: ["profiler","run-sql-server-profiler"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can run SQL Server Profiler in several different ways, to support gathering trace output in

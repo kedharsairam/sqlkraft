@@ -4,23 +4,23 @@ title: "sp_help_publication_access"
 category: "general"
 description: "Returns a list of all granted logins for a publication. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_help_publication_access
-      [ @publication = ]
-      N
-      'publication'
-      [ , [ @return_granted = ] return_granted ]
-      [ , [ @login = ]
-      N
-      'login'
-      ]
-      [ , [ @initial_list = ] initial_list ]
-      [ , [ @publisher = ]
-      N
-      'publisher'
-      ]
-      [ ; ]
+              [ @publication = ]
+              N
+              'publication'
+              [ , [ @return_granted = ] return_granted ]
+              [ , [ @login = ]
+              N
+              'login'
+              ]
+              [ , [ @initial_list = ] initial_list ]
+              [ , [ @publisher = ]
+              N
+              'publisher'
+              ]
+              [ ; ]
 ---
 
 ## Description

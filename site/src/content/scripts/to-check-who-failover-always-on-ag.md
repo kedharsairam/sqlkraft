@@ -4,7 +4,7 @@ title: "To Check Who Failover Always on Ag"
 description: "diagnostic script for high-availability operations."
 category: "high-availability"
 tags: ["failover","health-check","high-availability"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

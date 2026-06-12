@@ -4,12 +4,12 @@ title: "sp_grantlogin"
 category: "general"
 description: "Creates a SQL Server login."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_grantlogin [ @loginame = ]
-      N
-      'loginame'
-      [ ; ]
+              N
+              'loginame'
+              [ ; ]
 ---
 
 ## Description

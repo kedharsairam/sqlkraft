@@ -4,7 +4,7 @@ title: "sys.fulltext_document_types"
 category: "full-text"
 description: "Returns a row for each document type that is available for full-text indexing operations. Each row represents the IFilter interface that is registered in the instance of SQL Server. The file extension of the supported document type. This value can be used to identify the filter that will be used during full-text indexing of columns of type GUID of the IFilter class that supports file extension. Th"
 tags: ["full-text","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

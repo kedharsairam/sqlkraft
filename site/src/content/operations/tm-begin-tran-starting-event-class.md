@@ -3,7 +3,7 @@ title: "TM: Begin Tran Starting Event Class"
 topic: "event-classes"
 description: "The TM: Begin Tran Starting event class indicates that a BEGIN TRANSACTION request is starti"
 tags: ["event-classes","tm-begin-tran-starting-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The TM: Begin Tran Starting event class indicates that a BEGIN TRANSACTION request is

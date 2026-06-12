@@ -3,7 +3,7 @@ title: "Performance considerations for indexes with included columns"
 topic: "index-architecture"
 description: ""
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Regardless of the presence of included columns, index key columns must follow the

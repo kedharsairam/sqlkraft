@@ -3,7 +3,7 @@ title: "Extended Security Updates"
 topic: "azure-synapse"
 description: "Extended Security Updates SQL Server 2014 (12.x) This article explains how to manage a SQL Server subscription to Extended Security Updates enabled by Azure Arc."
 tags: ["azure-synapse","extended-security-updates"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Extended Security Updates

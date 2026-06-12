@@ -3,7 +3,7 @@ title: "Latest updates for SQL Server"
 topic: "upgrade"
 description: "This article lists various builds or updates that are available for different versions of SQL Server."
 tags: ["upgrade","latest-updates-for-sql-server"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article lists various builds or updates that are available for different versions of SQL Server.

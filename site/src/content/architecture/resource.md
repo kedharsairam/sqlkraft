@@ -3,7 +3,7 @@ title: "Resource"
 topic: "collation"
 description: "The Resource database is a read-only database that contains all the system objects that are included with SQL Server."
 tags: ["collation","resource"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Resource database is a read-only database that contains all the system objects that are

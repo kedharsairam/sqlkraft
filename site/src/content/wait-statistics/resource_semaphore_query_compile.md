@@ -5,7 +5,7 @@ category: "triage"
 severity: "high"
 description: "Occurs when waiting for memory to compile queries. High values indicate the compile memory lock is contended, often from a high rate of ad-hoc query compilations or plan cache churn."
 tags: ["memory","compile","plan-cache"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-plan-cache-churn"]
 ---
 

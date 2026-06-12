@@ -4,7 +4,7 @@ title: "sp_replflush"
 category: "general"
 description: "Flushes the article cache. This stored procedure is executed at the Publisher on the publication is used in transactional replication. Article definitions are stored in the cache for efficiency. is used by other replication stored procedures whenever an article definition is modified or dropped. You shouldn't have to execute this procedure"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

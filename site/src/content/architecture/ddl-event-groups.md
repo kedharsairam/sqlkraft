@@ -3,7 +3,7 @@ title: "DDL Event Groups"
 topic: "change-data-capture"
 description: "The following tables list the DDL event groups that can be used to run a DDL trigger or an e"
 tags: ["change-data-capture","ddl-event-groups"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following tables list the DDL event groups that can be used to run a DDL trigger or an

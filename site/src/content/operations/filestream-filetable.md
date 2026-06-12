@@ -3,7 +3,7 @@ title: "FILESTREAM & FileTable"
 topic: "high-availability"
 description: "- Windows only This article contains information about the using the FILESTREAM and FileTable features with Always On availability groups in SQL Serv"
 tags: ["high-availability","filestream-filetable"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Windows only

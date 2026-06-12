@@ -4,7 +4,7 @@ title: "sys.fn_cdc_decrement_lsn"
 category: "change-data-capture"
 description: ""
 tags: ["change-data-capture","function"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.fn_cdc_decrement_lsn ( lsn_value )"
 ---
 

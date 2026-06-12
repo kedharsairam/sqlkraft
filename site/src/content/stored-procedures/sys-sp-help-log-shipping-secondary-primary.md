@@ -4,16 +4,16 @@ title: "sp_help_log_shipping_secondary_primary"
 category: "general"
 description: "This stored procedure retrieves the settings for a given primary database on the secondary The name of the primary instance of the SQL Server Database Engine in the log shipping The name of the database on the primary server."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_help_log_shipping_secondary_primary
-      [ @primary_server = ]
-      N
-      'primary_server'
-      , [ @primary_database = ]
-      N
-      'primary_database'
-      [ ; ]
+              [ @primary_server = ]
+              N
+              'primary_server'
+              , [ @primary_database = ]
+              N
+              'primary_database'
+              [ ; ]
 ---
 
 ## Description

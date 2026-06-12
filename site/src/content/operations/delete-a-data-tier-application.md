@@ -3,7 +3,7 @@ title: "Delete a data-tier application"
 topic: "ssms"
 description: "You can delete a registered data-tier application by using the Delete Data-tier Application"
 tags: ["ssms","delete-a-data-tier-application"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can delete a registered data-tier application by using the Delete Data-tier Application

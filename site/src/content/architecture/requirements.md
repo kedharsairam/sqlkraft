@@ -3,7 +3,7 @@ title: "Requirements"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","requirements"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A type in a common language runtime (CLR) assembly can be registered as a user-defined

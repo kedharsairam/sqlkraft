@@ -3,7 +3,7 @@ title: "OLE automation objects in T-SQL"
 topic: "spatial-data"
 description: "Transact-SQL includes several system stored procedures that allow OLE Automation objects to be referenced in Transact-SQL batches, stored procedures,"
 tags: ["spatial-data","ole-automation-objects-in-t-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Transact-SQL includes several system stored procedures that allow OLE Automation objects to

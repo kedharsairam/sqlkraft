@@ -3,7 +3,7 @@ title: "Configure a Kubernetes cluster"
 topic: "linux-operations"
 description: ""
 tags: ["linux-operations","configure-a-kubernetes-cluster"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Quickstart: Deploy a SQL Server container

@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions on String Values - substring"
 syntax: "$sourceString"
 tags: ["xquery","functions-on-string-values-substring"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns part of the value of

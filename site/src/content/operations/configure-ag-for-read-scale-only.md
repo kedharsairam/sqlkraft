@@ -3,7 +3,7 @@ title: "Configure AG for read-scale only"
 topic: "linux-operations"
 description: "07/03/2025 - Linux This article explains how to create a SQL Server Always On Availability Group (AG) on Linux without a cluster manager. This architecture provides read-s"
 tags: ["linux-operations","configure-ag-for-read-scale-only"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Linux

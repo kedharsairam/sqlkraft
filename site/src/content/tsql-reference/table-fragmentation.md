@@ -4,7 +4,7 @@ title: "Table fragmentation"
 category: "data-types"
 description: "performance. A fast scan doesn't read the leaf or data level pages of the index. The"
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 performance. A fast scan doesn't read the leaf or data level pages of the index. The

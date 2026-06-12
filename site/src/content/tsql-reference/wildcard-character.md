@@ -4,7 +4,7 @@ title: "Wildcard character"
 category: "statements"
 description: "symbol is specified, the Database Engine searches for the number"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 If the

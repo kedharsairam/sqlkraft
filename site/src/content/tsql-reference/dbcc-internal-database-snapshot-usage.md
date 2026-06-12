@@ -4,7 +4,7 @@ title: "DBCC internal database snapshot usage"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The Transact-SQL programming language provides DBCC statements that act as Database

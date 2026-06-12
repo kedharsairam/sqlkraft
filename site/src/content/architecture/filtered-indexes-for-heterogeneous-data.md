@@ -3,7 +3,7 @@ title: "Filtered indexes for heterogeneous data"
 topic: "index-architecture"
 description: "is valid for the following query."
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The filtered index

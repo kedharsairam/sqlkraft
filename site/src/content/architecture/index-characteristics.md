@@ -3,7 +3,7 @@ title: "Index characteristics"
 topic: "index-architecture"
 description: "Examine column uniqueness."
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Examine column uniqueness. A unique index instead of a nonunique index on the same

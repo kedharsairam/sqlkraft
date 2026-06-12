@@ -4,7 +4,7 @@ title: "XQuery - Additional Sample XQueries Against the xml Data Type"
 category: "xquery"
 description: "XQuery Language Reference: Additional Sample XQueries Against the xml Data Type"
 tags: ["xquery","additional-sample-xqueries-against-the-xml-data-type"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The topics in this section provide additional samples that show how to use XQuery queries

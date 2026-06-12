@@ -3,7 +3,7 @@ title: "Create"
 topic: "collation"
 description: "The only way to create a SQL Server database snapshot is to use Transact-SQL. SQL Server Management Studio doesn't support the creation of database snapshots."
 tags: ["collation","create"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The only way to create a SQL Server database snapshot is to use Transact-SQL. SQL Server

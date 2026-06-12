@@ -3,7 +3,7 @@ title: "Troubleshoot SQL project build"
 topic: "ssms"
 description: "The SQL project build output provides feedback on the database model construction and T- SQL validation."
 tags: ["ssms","troubleshoot-sql-project-build"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The SQL project build output provides feedback on the database model construction and T-

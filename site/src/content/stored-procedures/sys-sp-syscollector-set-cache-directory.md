@@ -4,7 +4,7 @@ title: "sp_syscollector_set_cache_directory"
 category: "general"
 description: "Specifies the directory where collected data is stored before it's uploaded to the management The directory in the file system where collected data is stored temporarily. , with a default of an empty string. If no value is specified, the default temporary You must disable the data collector before changing the cache directory configuration."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_syscollector_set_cache_directory"
 ---
 

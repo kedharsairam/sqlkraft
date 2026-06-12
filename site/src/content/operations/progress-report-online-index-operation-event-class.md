@@ -3,7 +3,7 @@ title: "Progress Report: Online Index Operation Event Class"
 topic: "event-classes"
 description: "The Progress Report: Online Index Operation event class indicates the progress of an online"
 tags: ["event-classes","progress-report-online-index-operation-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Progress Report: Online Index Operation event class indicates the progress of an online

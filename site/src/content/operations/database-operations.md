@@ -3,12 +3,12 @@ title: "Database operations"
 topic: "profiler"
 description: |
   The MSSQL extension for Visual Studio Code provides built-in tools for common database
-  
-    operations. You can create and manage databases, search for objects, back up and restore
-  
-    databases, and import
+          
+            operations. You can create and manage databases, search for objects, back up and restore
+          
+            databases, and import
 tags: ["profiler","database-operations"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The MSSQL extension for Visual Studio Code provides built-in tools for common database

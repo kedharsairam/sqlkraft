@@ -3,7 +3,7 @@ title: "Disable"
 topic: "filestream"
 description: "This article describes how to disable an index or constraints in SQL Server by using SQL Serv"
 tags: ["filestream","disable"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to disable an index or constraints in SQL Server by using SQL Server

@@ -4,12 +4,10 @@ title: "Enhanced representation formats"
 category: "statements"
 description: "Describes enhanced date and time representation formats available in T-SQL for greater precision and compatibility."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ﾃ
-
-Summarize this article for me
 
 supports extended methods on
 

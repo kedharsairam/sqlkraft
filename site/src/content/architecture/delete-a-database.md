@@ -3,7 +3,7 @@ title: "Delete a database"
 topic: "collation"
 description: "This article describes how to delete a user-defined database in SQL Server by using SQL Server Management Studio or Transact-S"
 tags: ["collation","delete-a-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to delete a user-defined database in SQL Server by using SQL Server

@@ -5,7 +5,7 @@ category: "top-consumer"
 severity: "high"
 description: "Occurs when waiting for parallel query execution to complete. Caused by skewed parallelism, exchange buffers filling up, or uneven row distribution across threads. The most commonly observed high-signal wait type."
 tags: ["parallelism","cpu","skew"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-parallelism-skew"]
 ---
 

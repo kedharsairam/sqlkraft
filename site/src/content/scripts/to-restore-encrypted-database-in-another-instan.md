@@ -4,7 +4,7 @@ title: "To Restore Encrypted Database in Another Instan"
 description: ""
 category: "security-audit"
 tags: ["database","encryption","restore","security-audit"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

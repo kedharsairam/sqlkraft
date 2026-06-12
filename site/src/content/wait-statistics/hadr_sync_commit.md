@@ -5,7 +5,7 @@ category: "latency"
 severity: "high"
 description: "Occurs on the primary replica when waiting for a secondary replica to acknowledge a transaction commit. High values indicate network latency between AG replicas or a slow secondary."
 tags: ["ag","synchronous","commit","latency"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-ag-latency"]
 ---
 

@@ -3,7 +3,7 @@ title: "Remove mirroring"
 topic: "high-availability"
 description: "This topic describes how to remove database mirroring from a database in SQL Server by using SQL Server Management Studio or Transact-SQL."
 tags: ["high-availability","remove-mirroring"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to remove database mirroring from a database in SQL Server by using

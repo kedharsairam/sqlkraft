@@ -3,7 +3,7 @@ title: "Automatic backups (preview)"
 topic: "azure-synapse"
 description: "enabled by Azure Arc 06/30/2025 The Azure extension for SQL Server can perform backups automatically to local storage or network shares. Backups are written to t"
 tags: ["azure-synapse","automatic-backups-preview"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 enabled by Azure Arc

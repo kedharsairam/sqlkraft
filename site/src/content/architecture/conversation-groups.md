@@ -3,7 +3,7 @@ title: "Conversation Groups"
 topic: "service-broker"
 description: "08/29/2025 A conversation group identifies a group of related conversations."
 tags: ["service-broker","conversation-groups"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A conversation group identifies a group of related conversations. A conversation group allows

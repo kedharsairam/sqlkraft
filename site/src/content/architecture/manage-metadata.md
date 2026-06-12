@@ -3,7 +3,7 @@ title: "Manage metadata"
 topic: "collation"
 description: "This article is relevant in the following situations: Configuring the availability replicas of an Always On availability groups availability group. S"
 tags: ["collation","manage-metadata"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article is relevant in the following situations:

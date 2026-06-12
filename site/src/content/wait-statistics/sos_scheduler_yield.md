@@ -5,7 +5,7 @@ category: "scheduling"
 severity: "medium"
 description: "Occurs when a task voluntarily yields the scheduler for other tasks to execute. High counts indicate CPU pressure or inefficient query plans that refuse to yield. Normal under healthy CPU load."
 tags: ["scheduler","cpu","yield"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["monitor-cpu-pressure"]
 ---
 

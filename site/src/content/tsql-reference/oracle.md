@@ -4,7 +4,7 @@ title: "Oracle"
 category: "operators"
 description: "SQL) CONNECTION_OPTIONS"
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 SQL) CONNECTION_OPTIONS

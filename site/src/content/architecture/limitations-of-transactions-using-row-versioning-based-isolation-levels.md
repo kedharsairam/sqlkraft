@@ -3,7 +3,7 @@ title: "Limitations of transactions using row versioning-based isolation levels"
 topic: "io-fundamentals"
 description: "Consider the following limitations when working with row versioning-based isolation levels:"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Consider the following limitations when working with row versioning-based isolation levels:

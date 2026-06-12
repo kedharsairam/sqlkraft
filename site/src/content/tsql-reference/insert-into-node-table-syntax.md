@@ -4,7 +4,7 @@ title: "INSERT Into node table syntax"
 category: "queries"
 description: "2017 (14.x) and later versions"
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 2017 (14.x) and later versions

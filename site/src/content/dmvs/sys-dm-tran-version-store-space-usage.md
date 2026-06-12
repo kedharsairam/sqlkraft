@@ -4,22 +4,22 @@ title: "sys.dm_tran_version_store_space_usage"
 category: "io"
 description: "2016 (13.x) SP2 and later versions SQL database in Microsoft Fabric Returns a table that displays total space in used by version store records for each is efficient and not expensive to run, as it doesn't navigate through individual version store records, and returns aggregated version store space consumed in tempdb per database. Each versioned record is stored as binary data, together"
 tags: ["io","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   SELECT
-      DB_NAME(database_id)
-      as
-      'Database Name'
-      ,
-      reserved_page_count,
-      reserved_space_kb
-      FROM
-      sys.dm_tran_version_store_space_usage;
-      Database Name            reserved_page_count reserved_space_kb
-      msdb                      0                    0
-      AdventureWorks2022        10                   80
-      AdventureWorks2022DW      0                    0
-      WideWorldImporters        20                   160
+                DB_NAME(database_id)
+                as
+                'Database Name'
+                ,
+                reserved_page_count,
+                reserved_space_kb
+                FROM
+                sys.dm_tran_version_store_space_usage;
+                Database Name            reserved_page_count reserved_space_kb
+                msdb                      0                    0
+                AdventureWorks2022        10                   80
+                AdventureWorks2022DW      0                    0
+                WideWorldImporters        20                   160
 ---
 
 ## Description

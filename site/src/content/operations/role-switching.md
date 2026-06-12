@@ -3,7 +3,7 @@ title: "Role Switching"
 topic: "high-availability"
 description: "Within the context of a database mirroring session, the principal and mirror roles are typically interchangeable in a process known as role switching"
 tags: ["high-availability","role-switching"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Within the context of a database mirroring session, the principal and mirror roles are typically

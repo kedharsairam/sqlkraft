@@ -3,7 +3,7 @@ title: "Optimize with in-memory OLTP"
 topic: "json-data"
 description: ""
 tags: ["json-data","optimize-with-in-memory-oltp"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2017 (14.x) and later versions

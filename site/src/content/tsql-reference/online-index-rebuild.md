@@ -4,7 +4,7 @@ title: "Online index rebuild"
 category: "queries"
 description: "Dropping a clustered index requires temporary disk space that's equal to the size of the existing"
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Dropping a clustered index requires temporary disk space that's equal to the size of the existing

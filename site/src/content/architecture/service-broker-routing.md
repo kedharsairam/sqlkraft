@@ -3,7 +3,7 @@ title: "Service Broker Routing"
 topic: "service-broker"
 description: "09/11/2025 This article describes the details of how Service Broker routes messages. For an overview, see Routes ."
 tags: ["service-broker","service-broker-routing"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes the details of how Service Broker routes messages. For an overview, see

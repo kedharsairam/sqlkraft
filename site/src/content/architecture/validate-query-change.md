@@ -3,7 +3,7 @@ title: "Validate, Query, & Change"
 topic: "json-data"
 description: ""
 tags: ["json-data","validate-query-change"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

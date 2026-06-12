@@ -3,7 +3,7 @@ title: "Specify a Breakpoint Action"
 topic: "ssb-diagnose"
 description: "09/09/2025 A breakpoint action specifies a custom task that the Transact-SQL debugger performs for a breakpoint. If the specified hit count is reached and a specified breakp"
 tags: ["ssb-diagnose","specify-a-breakpoint-action"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A breakpoint action specifies a custom task that the Transact-SQL debugger performs for a

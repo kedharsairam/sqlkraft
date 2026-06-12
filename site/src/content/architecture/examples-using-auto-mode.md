@@ -3,7 +3,7 @@ title: "Examples: Using AUTO Mode"
 topic: "xml-data"
 description: "The following examples illustrate the use of AUTO mode."
 tags: ["xml-data","examples-using-auto-mode"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following examples illustrate the use of AUTO mode. Many of these queries are specified

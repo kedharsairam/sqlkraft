@@ -4,7 +4,7 @@ title: "Shrink a log file"
 category: "statements"
 description: "Currently, LOB column types ("
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Currently, LOB column types (

@@ -4,7 +4,7 @@ title: "K. Use the HAVING clause"
 category: "statements"
 description: "The following example finds the average price of each type of product and orders the results"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following example finds the average price of each type of product and orders the results

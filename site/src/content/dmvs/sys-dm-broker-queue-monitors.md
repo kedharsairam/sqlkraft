@@ -4,12 +4,12 @@ title: "sys.dm_broker_queue_monitors"
 category: "service-broker"
 description: "Returns a row for each queue monitor in the instance. A queue monitor manages activation for Object identifier for the database that contains the queue that the monitor watches. Object identifier for the queue that the monitor State of the monitor. This value is one of the Last time that this queue monitor activated a stored Number of sessions that are currently waiting within This value includes"
 tags: ["service-broker","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   INACTIVE
-      NOTIFIED
-      RECEIVES_OCCURRING
-      last_empty_rowset_time
+                NOTIFIED
+                RECEIVES_OCCURRING
+                last_empty_rowset_time
 ---
 
 ## Description

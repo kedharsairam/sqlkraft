@@ -3,7 +3,7 @@ title: "Planned manual failover"
 topic: "high-availability"
 description: "This topic describes how to perform a manual failover without data loss (a planned manual failover ) on an Always On availability group by using SQL"
 tags: ["high-availability","planned-manual-failover"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to perform a manual failover without data loss (a

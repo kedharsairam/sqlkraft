@@ -4,28 +4,28 @@ title: "sp_dropmergesubscription"
 category: "general"
 description: "Drops a subscription to a merge publication and its associated Merge Agent. This stored procedure is executed at the Publisher on the publication database. already exist and conform to the rules for The name of the subscription database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_dropmergesubscription
-      [ [ @publication = ]
-      N
-      'publication'
-      ]
-      [ , [ @subscriber = ]
-      N
-      'subscriber'
-      ]
-      [ , [ @subscriber_db = ]
-      N
-      'subscriber_db'
-      ]
-      [ , [ @subscription_type = ]
-      N
-      'subscription_type'
-      ]
-      [ , [ @ignore_distributor = ] ignore_distributor ]
-      [ , [ @reserved = ] reserved ]
-      [ ; ]
+              [ [ @publication = ]
+              N
+              'publication'
+              ]
+              [ , [ @subscriber = ]
+              N
+              'subscriber'
+              ]
+              [ , [ @subscriber_db = ]
+              N
+              'subscriber_db'
+              ]
+              [ , [ @subscription_type = ]
+              N
+              'subscription_type'
+              ]
+              [ , [ @ignore_distributor = ] ignore_distributor ]
+              [ , [ @reserved = ] reserved ]
+              [ ; ]
 ---
 
 ## Description

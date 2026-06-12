@@ -3,14 +3,14 @@ title: "How to: Write a SQL Server Unit Test that Runs within the Scope of a Sin
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    You can modify unit tests to run within the scope of a single transaction. If you take this
-  
-    approach, you can roll back any changes that the test enacted after the test ends. The
-  
-    followi
+          
+            You can modify unit tests to run within the scope of a single transaction. If you take this
+          
+            approach, you can roll back any changes that the test enacted after the test ends. The
+          
+            followi
 tags: ["ssb-diagnose","how-to-write-a-sql-server-unit-test-that-runs-within-the-scope-of-a-single-transaction"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can modify unit tests to run within the scope of a single transaction. If you take this

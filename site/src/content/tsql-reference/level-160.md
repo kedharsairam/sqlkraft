@@ -4,7 +4,7 @@ title: "Level 160"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Regular expressions can be used to match

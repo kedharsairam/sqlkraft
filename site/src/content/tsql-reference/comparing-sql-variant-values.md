@@ -4,7 +4,7 @@ title: "Comparing sql_variant Values"
 category: "queries"
 description: "ODBC does not fully support"
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ODBC does not fully support

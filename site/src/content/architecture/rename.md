@@ -3,7 +3,7 @@ title: "Rename"
 topic: "filestream"
 description: "This topic describes how to rename an index in SQL Server by using SQL Server Management Stu"
 tags: ["filestream","rename"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to rename an index in SQL Server by using SQL Server Management

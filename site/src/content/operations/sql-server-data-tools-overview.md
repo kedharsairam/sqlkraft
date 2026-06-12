@@ -3,14 +3,14 @@ title: "SQL Server Data Tools Overview"
 topic: "data-tools"
 description: |
   SQL Server Data Tools
-  
-    SQL Server Data Tools (SSDT)
-  
-    is a set of development tools in Visual Studio with focus on
-  
-    building SQL Server databases and Azure SQL databases. SSDT can be extended to Analys
+          
+            SQL Server Data Tools (SSDT)
+          
+            is a set of development tools in Visual Studio with focus on
+          
+            building SQL Server databases and Azure SQL databases. SSDT can be extended to Analys
 tags: ["data-tools","sql-server-data-tools-overview"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Data Tools

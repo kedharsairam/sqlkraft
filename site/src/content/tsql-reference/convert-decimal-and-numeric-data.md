@@ -4,7 +4,7 @@ title: "Convert decimal and numeric data"
 category: "data-types"
 description: ""
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 10-19

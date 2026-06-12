@@ -3,7 +3,7 @@ title: "Handling Poison Messages"
 topic: "service-broker"
 description: ""
 tags: ["service-broker","handling-poison-messages"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes one way that an application that uses Service Broker can detect a poison

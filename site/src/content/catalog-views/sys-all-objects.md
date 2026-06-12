@@ -4,7 +4,7 @@ title: "sys.all_objects"
 category: "objects"
 description: "Shows the UNION of all schema-scoped user-defined objects and system objects."
 tags: ["objects","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.extended_procedures"
 ---
 

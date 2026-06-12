@@ -3,7 +3,7 @@ title: "Scan:Started Event Class"
 topic: "event-classes"
 description: "The Scan:Started event class occurs when a table or index scan is started. Description Appl"
 tags: ["event-classes","scanstarted-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Scan:Started event class occurs when a table or index scan is started.

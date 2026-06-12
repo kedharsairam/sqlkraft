@@ -3,7 +3,7 @@ title: "Database Project Settings"
 topic: "ssb-diagnose"
 description: "SQL projects properties In addition to the contents of the individual files, SQL database p"
 tags: ["ssb-diagnose","database-project-settings"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQL projects properties

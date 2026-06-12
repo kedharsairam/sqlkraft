@@ -3,7 +3,7 @@ title: "Database Engine"
 topic: "query-processing"
 description: "Starting with SQL Server 2005 (9.x), the Database Engine offers an implementation of an existing"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Starting with SQL Server 2005 (9.x), the Database Engine offers an implementation of an existing

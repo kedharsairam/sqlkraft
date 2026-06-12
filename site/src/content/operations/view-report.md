@@ -3,7 +3,7 @@ title: "View report"
 topic: "high-availability"
 description: "This topic explains how to view the Transaction Log Shipping Status report in SQL Server Management Studio. You can run a status report at a monitor s"
 tags: ["high-availability","view-report"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic explains how to view the Transaction Log Shipping Status report in SQL Server

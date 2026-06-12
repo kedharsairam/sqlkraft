@@ -3,7 +3,7 @@ title: "Service Broker Applications"
 topic: "service-broker"
 description: "09/10/2025 Service Broker applications are made up of one or more programs and the database objects that those programs use. Applications communi"
 tags: ["service-broker","service-broker-applications"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker applications are made up of one or more programs and the database objects

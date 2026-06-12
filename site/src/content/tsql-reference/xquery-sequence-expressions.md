@@ -5,20 +5,20 @@ category: "xquery"
 description: "XQuery Language Reference: Sequence Expressions"
 syntax: |
   declare @x xml
-    set @x=''
-    select @x.query('(1,2,3,4,5)')
-    go
-    -- result 1 2 3 4 5
-    -- sequence of 2 nodes
-    declare @x xml
-    set @x=''
-    select @x.query('(<a/>, <b/>)')
-    go
-    -- result
-    <a />
-    <b />
+            set @x=''
+            select @x.query('(1,2,3,4,5)')
+            go
+            -- result 1 2 3 4 5
+            -- sequence of 2 nodes
+            declare @x xml
+            set @x=''
+            select @x.query('(<a/>, <b/>)')
+            go
+            -- result
+            <a />
+            <b />
 tags: ["xquery","sequence-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 supports the XQuery operators that are used to construct, filter, and combine a

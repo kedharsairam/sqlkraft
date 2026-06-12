@@ -3,7 +3,7 @@ title: "Deprecated features"
 topic: "migration"
 description: "This topic describes the deprecated Replication features that are still available in SQL Server. These features are schedu"
 tags: ["migration","deprecated-features"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes the deprecated Replication features that are still available in SQL Server.

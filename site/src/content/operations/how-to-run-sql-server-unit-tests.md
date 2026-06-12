@@ -3,14 +3,14 @@ title: "How to: Run SQL Server Unit Tests"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    You can run a SQL Server unit test in any one of several ways, such as using various windows
-  
-    and the Command Prompt window.
-  
-    The ways that are available to you depend on the software that
+          
+            You can run a SQL Server unit test in any one of several ways, such as using various windows
+          
+            and the Command Prompt window.
+          
+            The ways that are available to you depend on the software that
 tags: ["ssb-diagnose","how-to-run-sql-server-unit-tests"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can run a SQL Server unit test in any one of several ways, such as using various windows

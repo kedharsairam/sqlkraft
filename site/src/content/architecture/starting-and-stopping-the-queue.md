@@ -3,7 +3,7 @@ title: "Starting and Stopping the Queue"
 topic: "service-broker"
 description: "09/08/2025 Use the statement to start and stop a queue. When a queue is started, the queue is available to send and receive messages."
 tags: ["service-broker","starting-and-stopping-the-queue"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use the

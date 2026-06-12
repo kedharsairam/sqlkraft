@@ -4,7 +4,7 @@ title: "Index key size"
 category: "hints"
 description: "compatibility level is set to 90 or higher."
 tags: ["tsql","hints"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Setting

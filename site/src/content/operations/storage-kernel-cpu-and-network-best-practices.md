@@ -3,7 +3,7 @@ title: "Storage, kernel, CPU, and network best practices"
 topic: "linux-operations"
 description: ""
 tags: ["linux-operations","storage-kernel-cpu-and-network-best-practices"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

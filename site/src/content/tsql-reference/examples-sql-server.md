@@ -4,7 +4,7 @@ title: "Examples: SQL Server"
 category: "statements"
 description: "permissions on the specified user name. When no execution context is specified,"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## A. Use EXECUTE to pass a single parameter

@@ -4,17 +4,17 @@ title: "sp_getsubscriptiondtspackagename"
 category: "general"
 description: "Returns the name of the Data Transformation Services (DTS) package used to transform data before they are sent to a Subscriber."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_getsubscriptiondtspackagename
-      [ @publication = ]
-      N
-      'publication'
-      [ , [ @subscriber = ]
-      N
-      'subscriber'
-      ]
-      [ ; ]
+              [ @publication = ]
+              N
+              'publication'
+              [ , [ @subscriber = ]
+              N
+              'subscriber'
+              ]
+              [ ; ]
 ---
 
 ## Description

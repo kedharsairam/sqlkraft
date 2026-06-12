@@ -3,7 +3,7 @@ title: "srv_alloc"
 topic: "clr-integration"
 description: "Allocates memory dynamically. size Specifies the number of bytes to allocate. A pointer to the newly allocated space."
 tags: ["clr-integration","srv-alloc"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Allocates memory dynamically.

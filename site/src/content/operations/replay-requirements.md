@@ -3,7 +3,7 @@ title: "Replay Requirements"
 topic: "profiler"
 description: "06/05/2025 In order to replay trace data with SQL Server Profiler or the Distributed Replay Utility, a specific set of event classes and columns"
 tags: ["profiler","replay-requirements"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In order to replay trace data with SQL Server Profiler or the Distributed Replay Utility, a specific

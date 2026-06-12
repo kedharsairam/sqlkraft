@@ -3,7 +3,7 @@ title: "QN:Parameter Table Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","qnparameter-table-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The QN:Parameter table event reports information about the operations required to create,

@@ -3,7 +3,7 @@ title: "Full Text Event Category"
 topic: "event-classes"
 description: "The event category contains general full-text events. Description FT:Crawl Aborted Event Class Indi"
 tags: ["event-classes","full-text-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

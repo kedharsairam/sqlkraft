@@ -3,7 +3,7 @@ title: "Full-Text Catalogs"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","full-text-catalogs"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To mirror a database that has a full-text catalog, use backup as usual to create a full database

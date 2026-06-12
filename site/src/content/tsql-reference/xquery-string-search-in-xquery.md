@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: String Search in XQuery"
 syntax: "where"
 tags: ["xquery","string-search-in-xquery"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic provides sample queries that show how to search text in XML documents.

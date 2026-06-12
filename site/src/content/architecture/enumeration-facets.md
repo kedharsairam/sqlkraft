@@ -3,7 +3,7 @@ title: "Enumeration Facets"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","enumeration-facets"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 rejects XML schemas with types that have pattern facets or enumerations that

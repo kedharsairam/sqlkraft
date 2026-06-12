@@ -4,7 +4,7 @@ title: "UNISTR"
 category: "statements"
 description: "T-SQL reference covering Support for Unicode escape sequences."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Support for Unicode escape sequences

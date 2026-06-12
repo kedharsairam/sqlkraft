@@ -3,7 +3,7 @@ title: "Use storage caches with SQL Server"
 topic: "query-processing"
 description: "Most storage device caching controllers perform write caching."
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Most storage device caching controllers perform write caching. You can't always disable the write

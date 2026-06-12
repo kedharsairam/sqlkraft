@@ -3,7 +3,7 @@ title: "Locking overview"
 topic: "locking"
 description: "Optimized locking is enabled per database. Connect to your database, then use the following"
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Optimized locking is enabled per database. Connect to your database, then use the following

@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Sequence & QNames"
 syntax: ","
 tags: ["xquery","sequence-qnames"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes the following fundamental concepts of XQuery:

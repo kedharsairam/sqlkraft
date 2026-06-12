@@ -3,7 +3,7 @@ title: "Availability group is not ready for automatic failover"
 topic: "high-availability"
 description: ": Availability Group Automatic Failover Readiness : Availability group is not ready for automatic failover."
 tags: ["high-availability","availability-group-is-not-ready-for-automatic-failover"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 : Availability Group Automatic Failover Readiness

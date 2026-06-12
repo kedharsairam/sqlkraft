@@ -3,7 +3,7 @@ title: "Specify a Hit Count"
 topic: "ssb-diagnose"
 description: "09/09/2025 A breakpoint hit count is a counter that the Transact-SQL debugger increments each time the breakpoint is reached. If the specified hit count is reached and any s"
 tags: ["ssb-diagnose","specify-a-hit-count"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A breakpoint hit count is a counter that the Transact-SQL debugger increments each time the

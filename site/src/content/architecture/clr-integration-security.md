@@ -3,7 +3,7 @@ title: "CLR Integration Security"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","clr-integration-security"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The security model of the SQL Server integration with the.NET Framework common language

@@ -4,12 +4,12 @@ title: "sys.master_files"
 category: "databases-files"
 description: "Contains a row per file of a database as stored in the ID of the database to which this file applies. The ID of the file within database. The primary Unique identifier of the file. = Database was upgraded from an earlier version of SQL Server (Valid for SQL Server 2005 (9.x) and earlier = Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. = Full-text"
 tags: ["databases-files","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   ROWS
-      LOG
-      FILESTREAM
-      FULLTEXT
+              LOG
+              FILESTREAM
+              FULLTEXT
 ---
 
 ## Description

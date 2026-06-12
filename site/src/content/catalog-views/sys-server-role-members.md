@@ -4,14 +4,14 @@ title: "sys.server_role_members"
 category: "security"
 description: "Returns one row for each member of each fixed and user-defined server role. Server-Principal ID of the role. Server-Principal ID of the member. To add or remove server role membership, use the ALTER SERVER ROLE (Transact-SQL) Logins can view their own server role membership and can view the principal_id's of the members of the fixed server roles."
 tags: ["security","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   SELECT
-      roles.principal_id
-      AS RolePrincipalID
-      ,
-      roles.name
-      AS RolePrincipalName
+              roles.principal_id
+              AS RolePrincipalID
+              ,
+              roles.name
+              AS RolePrincipalName
 ---
 
 ## Description

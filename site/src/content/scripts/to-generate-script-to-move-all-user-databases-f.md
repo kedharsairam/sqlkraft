@@ -4,7 +4,7 @@ title: "To Generate Script to Move all User Databases f"
 description: "diagnostic script for database operations."
 category: "database"
 tags: ["database","user"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

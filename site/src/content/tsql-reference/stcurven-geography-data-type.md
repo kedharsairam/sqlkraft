@@ -4,7 +4,7 @@ title: "STCurveN (geography Data Type)"
 category: "data-types"
 description: "T-SQL reference covering ArgumentOutOfRangeException."
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 geography

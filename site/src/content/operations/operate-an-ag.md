@@ -3,7 +3,7 @@ title: "Operate an AG"
 topic: "linux-operations"
 description: "07/03/2025 - Linux Before you upgrade an availability group, review the patterns and practices at Upgrade availability group replicas ."
 tags: ["linux-operations","operate-an-ag"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Linux

@@ -3,7 +3,7 @@ title: "Step 1. TCP three-way handshake"
 topic: "query-processing"
 description: ""
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The client IP address is

@@ -4,7 +4,7 @@ title: "To Avoid Blocking between Full and Differential"
 description: "Step 1: Check if the full backup job is running"
 category: "performance"
 tags: ["blocking","performance"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

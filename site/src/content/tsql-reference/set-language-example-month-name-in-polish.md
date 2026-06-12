@@ -4,7 +4,7 @@ title: "SET LANGUAGE example: Month name in Polish"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Code example of SET LANGUAGE

@@ -4,7 +4,7 @@ title: "sys.database_event_session_actions (Azure SQL Database)"
 category: "compatibility"
 description: "2016 (13.x) and later versions Azure SQL Database Azure SQL Managed SQL database in Microsoft Fabric dynamic management view (DMV) returns a row for each action on each event of a database-scoped event session. For information on actions in database-scoped event sys.dm_xe_database_session_event_actions Azure SQL Database and SQL database in Fabric support only database-scoped sessions A"
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.database_event_session_actions"
 ---
 

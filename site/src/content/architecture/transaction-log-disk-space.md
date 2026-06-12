@@ -3,7 +3,7 @@ title: "Transaction log disk space"
 topic: "filestream"
 description: ""
 tags: ["filestream","transaction-log-disk-space"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Large-scale index operations can generate large data loads that can cause the transaction log

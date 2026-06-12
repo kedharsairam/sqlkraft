@@ -4,7 +4,7 @@ title: "Example with ONNX Runtime running locally"
 category: "queries"
 description: ""
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Security considerations

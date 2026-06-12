@@ -3,7 +3,7 @@ title: "Virtual log file creation"
 topic: "io-fundamentals"
 description: ""
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The SQL Server Database Engine divides each physical log file internally into several virtual log

@@ -3,7 +3,7 @@ title: "Networking and Remote Security"
 topic: "service-broker"
 description: "09/11/2025 To help enable secure, reliable communication between different instances of SQL Server, Service Broker includes features to let you m"
 tags: ["service-broker","networking-and-remote-security"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To help enable secure, reliable communication between different instances of SQL Server,

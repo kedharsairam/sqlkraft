@@ -3,7 +3,7 @@ title: "Wizard"
 topic: "high-availability"
 description: "Use the Add Database to Availability Group Wizard to help you add one or more databases to an existing Always On availability group."
 tags: ["high-availability","wizard-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use the Add Database to Availability Group Wizard to help you add one or more databases to

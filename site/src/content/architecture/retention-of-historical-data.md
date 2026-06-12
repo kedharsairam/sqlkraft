@@ -3,7 +3,7 @@ title: "Retention of historical data"
 topic: "tables"
 description: ""
 tags: ["tables","retention-of-historical-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

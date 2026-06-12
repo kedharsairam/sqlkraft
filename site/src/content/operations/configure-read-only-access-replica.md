@@ -3,7 +3,7 @@ title: "Configure read-only access replica"
 topic: "high-availability"
 description: "By default both read-write and read-intent access are allowed to the primary replica and no connections are allowed to secondary replicas of an Always"
 tags: ["high-availability","configure-read-only-access-replica"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 By default both read-write and read-intent access are allowed to the primary replica and no

@@ -3,7 +3,7 @@ title: "Set Up on a Failover Cluster"
 topic: "filestream"
 description: "This topic describes how to enable FILESTREAM on a failover cluster."
 tags: ["filestream","set-up-on-a-failover-cluster"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to enable FILESTREAM on a failover cluster. Before you try this

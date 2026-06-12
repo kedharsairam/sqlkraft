@@ -3,7 +3,7 @@ title: "Replay to a Cursor"
 topic: "profiler"
 description: "06/06/2025 This article describes how to replay trace files or tables that pause when a cursor is reached by using SQL Server Profiler. Pausing t"
 tags: ["profiler","replay-to-a-cursor"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to replay trace files or tables that pause when a cursor is reached by

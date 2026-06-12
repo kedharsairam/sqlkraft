@@ -4,7 +4,7 @@ title: "Replace value of (XML DML)"
 category: "statements"
 description: "Note the following from the previous query:"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Note the following from the previous query:

@@ -3,7 +3,7 @@ title: "Audit Add login Event Class"
 topic: "event-classes"
 description: "The event class occurs when a Microsoft SQL Server login is added or removed. If you set additional"
 tags: ["event-classes","audit-add-login-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

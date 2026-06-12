@@ -4,7 +4,7 @@ title: "sys.dm_tran_session_transactions"
 category: "io"
 description: "The identifier for the node that this distribution is on. On SQL Server and SQL Managed Instance, requires In Microsoft Fabric, membership in the or more privileged role is needed to query On SQL Database service objectives, and for databases in Microsoft Entra admin account, or membership in the is required. On all other SQL Database service objectives, permission on the database, or membership i"
 tags: ["io","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.dm_tran_session_transactions"
 ---
 

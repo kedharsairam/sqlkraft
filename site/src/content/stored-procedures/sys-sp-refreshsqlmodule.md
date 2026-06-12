@@ -4,7 +4,7 @@ title: "sp_refreshsqlmodule"
 category: "general"
 description: "(dedicated SQL pool only) SQL database in Microsoft Fabric Updates the metadata for the specified non-schema-bound stored procedure, user-defined function, view, DML trigger, database-level DDL trigger, or server-level DDL trigger in the current database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "The definition for user-defined data type 'typename' has changed"
 ---
 

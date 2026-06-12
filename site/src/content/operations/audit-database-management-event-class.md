@@ -3,7 +3,7 @@ title: "Audit Database Management Event Class"
 topic: "event-classes"
 description: "The event class occurs when a database is created, altered, or dropped."
 tags: ["event-classes","audit-database-management-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

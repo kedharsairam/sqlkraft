@@ -3,7 +3,7 @@ title: "SQL projects overview"
 topic: "ssms"
 description: ""
 tags: ["ssms","sql-projects-overview"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2022 (16.x) and later versions

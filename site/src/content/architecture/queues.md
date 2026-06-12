@@ -3,7 +3,7 @@ title: "Queues"
 topic: "service-broker"
 description: "09/11/2025 Queues store messages."
 tags: ["service-broker","queues"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Queues store messages. When Service Broker receives a message for a service, Service Broker

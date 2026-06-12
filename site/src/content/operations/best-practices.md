@@ -3,7 +3,7 @@ title: "Best practices"
 topic: "migration"
 description: "After you have configured replication, it is important to understand how to administer a replication topology."
 tags: ["migration","best-practices"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 After you have configured replication, it is important to understand how to administer a

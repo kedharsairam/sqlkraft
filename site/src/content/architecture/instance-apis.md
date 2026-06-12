@@ -3,7 +3,7 @@ title: "Instance APIs"
 topic: "clr-integration"
 description: "Express LocalDB instance APIs 07/14/2025 In the traditional, service-based SQL Server world, individual SQL Server instances installed on a single computer are p"
 tags: ["clr-integration","instance-apis"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Express LocalDB instance APIs

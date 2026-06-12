@@ -3,7 +3,7 @@ title: "User Error Message Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","user-error-message-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The User Error Message event class displays the error message as seen by the user in the case

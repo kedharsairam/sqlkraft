@@ -3,7 +3,7 @@ title: "With included columns"
 topic: "filestream"
 description: ""
 tags: ["filestream","with-included-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to add included (or nonkey) columns to extend the functionality of

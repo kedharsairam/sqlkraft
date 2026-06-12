@@ -4,7 +4,7 @@ title: "To View Backup History of All Databases"
 description: "for specific database"
 category: "database"
 tags: ["backup","database"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

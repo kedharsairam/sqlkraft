@@ -3,7 +3,7 @@ title: "Edit SQL Documentation!"
 topic: "monitor"
 description: "Anyone can contribute to SQL Server documentation. This includes correcting typos, suggesting b"
 tags: ["monitor","edit-sql-documentation"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics

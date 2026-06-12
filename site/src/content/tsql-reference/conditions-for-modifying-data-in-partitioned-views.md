@@ -4,7 +4,7 @@ title: "Conditions for modifying data in partitioned views"
 category: "predicates"
 description: ""
 tags: ["tsql","predicates"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 It cannot be a computed, identity, default, or

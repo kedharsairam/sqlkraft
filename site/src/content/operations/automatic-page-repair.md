@@ -3,7 +3,7 @@ title: "Automatic Page Repair"
 topic: "high-availability"
 description: "Automatic page repair is supported by database mirroring and by Always On availability groups."
 tags: ["high-availability","automatic-page-repair"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Automatic page repair is supported by database mirroring and by Always On availability

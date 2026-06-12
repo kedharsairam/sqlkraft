@@ -3,7 +3,7 @@ title: "Integration"
 topic: "clr-integration"
 description: "The common language runtime (CLR) is the heart of the .NET Framework and provides the execution environment for all .NET F"
 tags: ["clr-integration","integration"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The common language runtime (CLR) is the heart of the.NET Framework and provides the

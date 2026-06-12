@@ -4,7 +4,7 @@ title: "Use EXECUTE with stored procedures"
 category: "statements"
 description: "Nesting occurs when one module calls another or executes managed code by referencing a"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Nesting occurs when one module calls another or executes managed code by referencing a

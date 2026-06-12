@@ -3,7 +3,7 @@ title: "Configure to send usage and diagnostic data to Microsoft"
 topic: "linux-operations"
 description: "on Linux By default, Microsoft collects information about how its customers use SQL Server. Specifically, SQL Server collects information about the installation experience,"
 tags: ["linux-operations","configure-to-send-usage-and-diagnostic-data-to-microsoft"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

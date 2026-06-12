@@ -3,7 +3,7 @@ title: "Performance (Service Broker)"
 topic: "service-broker"
 description: ""
 tags: ["service-broker","performance-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The performance of a Service Broker application is generally determined by two factors:

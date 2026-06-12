@@ -4,7 +4,7 @@ title: "AI functions"
 category: "statements"
 description: "2025 (17.x)"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 #### Function

@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Numeric Values Functions - ceiling"
 syntax: "fn:ceiling ( $arg as numeric?) as numeric?"
 tags: ["xquery","numeric-values-functions-ceiling"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the smallest number without a fractional part and that is not less than the value of its

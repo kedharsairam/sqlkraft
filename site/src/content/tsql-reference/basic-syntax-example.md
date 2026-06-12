@@ -4,7 +4,7 @@ title: "Basic syntax example"
 category: "statements"
 description: "You can't change the compression setting of a single partition if the table has nonaligned"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 You can't change the compression setting of a single partition if the table has nonaligned

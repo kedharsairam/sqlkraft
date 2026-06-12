@@ -3,7 +3,7 @@ title: "Described"
 topic: "filestream"
 description: ""
 tags: ["filestream","described"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 An index is an on-disk structure associated with a table or view that speeds retrieval of rows

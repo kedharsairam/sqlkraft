@@ -3,7 +3,7 @@ title: "Indicators of latch contention"
 topic: "io-fundamentals"
 description: "3."
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 3. Alleviate the contention using one of the techniques described in

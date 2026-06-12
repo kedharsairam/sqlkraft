@@ -3,7 +3,7 @@ title: "Effects of min memory per query"
 topic: "query-processing"
 description: "### Server configuration: min memory"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Server configuration: min memory

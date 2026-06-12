@@ -3,7 +3,7 @@ title: "View databases"
 topic: "collation"
 description: "This article describes how to view a list of databases on an instance of SQL Server by using SQL Serve"
 tags: ["collation","view-databases"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to view a list of databases on an instance of SQL Server by using SQL

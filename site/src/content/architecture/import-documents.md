@@ -3,7 +3,7 @@ title: "Import documents"
 topic: "json-data"
 description: "2016 (13.x) and later versions Azure SQL Managed Instance This article describes how to import JSON files into SQL Serv"
 tags: ["json-data","import-documents"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

@@ -4,7 +4,7 @@ title: "sys.trace_subclass_values"
 category: "compatibility"
 description: "catalog view contains a list of named column values. These subclass values do not change for a given version of the SQL Server Database Engine. For a complete list of supported trace events, see SQL Server Event Class Reference ID of the trace event. This parameter is also in the ID of the trace column used for enumeration."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

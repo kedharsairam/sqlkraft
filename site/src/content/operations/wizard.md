@@ -3,7 +3,7 @@ title: "Wizard"
 topic: "high-availability"
 description: "This topic describes how to use the in SQL Server Management Studio to create and configure an Always On availability group in SQL Server. An availa"
 tags: ["high-availability","wizard"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to use the

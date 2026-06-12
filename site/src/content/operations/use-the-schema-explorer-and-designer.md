@@ -3,12 +3,12 @@ title: "Use the schema explorer and designer"
 topic: "profiler"
 description: |
   Quickstart: Use the schema explorer and
-  
-    In this quickstart, you learn how GitHub Copilot assists developers in designing, understanding,
-  
-    and evolving database schemas with context-aware suggestions.
+          
+            In this quickstart, you learn how GitHub Copilot assists developers in designing, understanding,
+          
+            and evolving database schemas with context-aware suggestions.
 tags: ["profiler","use-the-schema-explorer-and-designer"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Quickstart: Use the schema explorer and

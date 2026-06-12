@@ -3,7 +3,7 @@ title: "Debug"
 topic: "clr-integration"
 description: "provides support for debugging Transact-SQL and common language runtime (CLR) objects in the database. The key aspects of debugging in SQL"
 tags: ["clr-integration","debug"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 provides support for debugging Transact-SQL and common language runtime (CLR)

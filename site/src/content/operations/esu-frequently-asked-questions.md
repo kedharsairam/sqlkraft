@@ -3,7 +3,7 @@ title: "ESU frequently asked questions"
 topic: "upgrade"
 description: "2014 (12.x) General frequently asked questions about Extended Security updates can be found at the Extended security updates FAQ ."
 tags: ["upgrade","esu-frequently-asked-questions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2014 (12.x)

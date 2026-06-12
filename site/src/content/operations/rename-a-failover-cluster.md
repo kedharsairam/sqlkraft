@@ -3,7 +3,7 @@ title: "Rename a failover cluster"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","rename-a-failover-cluster"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When a SQL Server instance is part of a failover cluster, the process of renaming the virtual

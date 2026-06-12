@@ -3,7 +3,7 @@ title: "Move to a different filegroup"
 topic: "filestream"
 description: "This topic describes how to move an existing index from its current filegroup to a different filegroup in SQL Server by using SQL Server Managemen"
 tags: ["filestream","move-to-a-different-filegroup"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to move an existing index from its current filegroup to a different

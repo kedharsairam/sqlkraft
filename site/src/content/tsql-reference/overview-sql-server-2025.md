@@ -4,16 +4,12 @@ title: "Overview: SQL Server 2025"
 category: "statements"
 description: "2016 (13.x) and later versions"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 2016 (13.x) and later versions
 
 Analytics Platform System (PDW)
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 Creates an external data source for querying external data, used for PolyBase and data virtualization features.
 

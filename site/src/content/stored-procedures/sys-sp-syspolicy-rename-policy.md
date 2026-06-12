@@ -4,17 +4,17 @@ title: "sp_syspolicy_rename_policy"
 category: "general"
 description: "Renames an existing policy in Policy-Based Management."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_syspolicy_rename_policy
-      { [ @name = ]
-      N
-      'name'
-      | [ @policy_id = ] policy_id }
-      , [ @new_name = ]
-      N
-      'new_name'
-      [ ; ]
+              { [ @name = ]
+              N
+              'name'
+              | [ @policy_id = ] policy_id }
+              , [ @new_name = ]
+              N
+              'new_name'
+              [ ; ]
 ---
 
 ## Description

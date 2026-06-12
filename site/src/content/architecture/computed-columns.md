@@ -3,7 +3,7 @@ title: "Computed Columns"
 topic: "filestream"
 description: "You can define indexes on computed columns as long as the following requirements are met: Ow"
 tags: ["filestream","computed-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can define indexes on computed columns as long as the following requirements are met:

@@ -4,17 +4,17 @@ title: "sp_delete_operator"
 category: "general"
 description: "Removes an operator."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_delete_operator
-      [ @name = ]
-      N
-      'name'
-      [ , [ @reassign_to_operator = ]
-      N
-      'reassign_to_operator'
-      ]
-      [ ; ]
+              [ @name = ]
+              N
+              'name'
+              [ , [ @reassign_to_operator = ]
+              N
+              'reassign_to_operator'
+              ]
+              [ ; ]
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Health diagnostics log"
 topic: "high-availability"
 description: "resource DLL health diagnostic To monitor the health of the primary availability replica, the SQL Server resource DLL run by the Windows S"
 tags: ["high-availability","health-diagnostics-log"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 resource DLL health diagnostic

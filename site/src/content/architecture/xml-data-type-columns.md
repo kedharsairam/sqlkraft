@@ -3,7 +3,7 @@ title: "XML Data Type & Columns"
 topic: "xml-data"
 description: "This article discusses the advantages and the limitations of the data type in SQL Server, and helps y"
 tags: ["xml-data","xml-data-type-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article discusses the advantages and the limitations of the

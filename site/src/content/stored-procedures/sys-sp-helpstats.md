@@ -4,17 +4,17 @@ title: "sp_helpstats"
 category: "general"
 description: "Returns statistics information about columns and indexes on the specified table. Specifies the table on which to provide statistics information. no default. A one-part or two-part name can be specified. Specifies the extent of information to provide."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_helpstats
-      [ @objname = ]
-      N
-      'objname'
-      [ , [ @results = ]
-      N
-      'results'
-      ]
-      [ ; ]
+              [ @objname = ]
+              N
+              'objname'
+              [ , [ @results = ]
+              N
+              'results'
+              ]
+              [ ; ]
 ---
 
 ## Description

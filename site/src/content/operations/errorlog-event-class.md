@@ -3,7 +3,7 @@ title: "ErrorLog Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","errorlog-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The ErrorLog event class indicates that messages have been logged in the SQL Server error log.

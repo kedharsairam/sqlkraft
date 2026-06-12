@@ -3,7 +3,7 @@ title: "Add or remove nodes"
 topic: "high-availability"
 description: "Use this procedure to manage nodes to an existing SQL Server failover cluster instance."
 tags: ["high-availability","add-or-remove-nodes"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this procedure to manage nodes to an existing SQL Server failover cluster instance.

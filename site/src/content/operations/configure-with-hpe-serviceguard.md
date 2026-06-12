@@ -3,7 +3,7 @@ title: "Configure with HPE Serviceguard"
 topic: "linux-operations"
 description: "on Linux This tutorial explains how to configure SQL Server availability groups with HPE Serviceguard for Linux, running on on-premises virtual machines (VMs) or in Azure-ba"
 tags: ["linux-operations","configure-with-hpe-serviceguard"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

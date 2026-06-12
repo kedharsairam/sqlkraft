@@ -4,7 +4,7 @@ title: "JSON_ARRAY"
 category: "statements"
 description: "The following example returns rows in which the column"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following example returns rows in which the column

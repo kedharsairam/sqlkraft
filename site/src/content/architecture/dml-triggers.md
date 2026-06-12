@@ -3,7 +3,7 @@ title: "DML Triggers"
 topic: "change-data-capture"
 description: "The DML trigger is a special type of stored procedure that automatically takes effect when a"
 tags: ["change-data-capture","dml-triggers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The DML trigger is a special type of stored procedure that automatically takes effect when a

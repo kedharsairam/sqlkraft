@@ -4,7 +4,7 @@ title: "Result Sets"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 For descriptions of the RESTORE LABELONLY arguments, see

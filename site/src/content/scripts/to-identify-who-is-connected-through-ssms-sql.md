@@ -4,7 +4,7 @@ title: "To Identify Who is Connected through SSMS (SQL"
 description: "diagnostic script for security-audit operations."
 category: "security-audit"
 tags: ["security-audit"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

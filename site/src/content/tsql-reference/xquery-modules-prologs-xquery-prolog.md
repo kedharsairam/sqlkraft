@@ -3,9 +3,9 @@ name: "xquery-modules-prologs-xquery-prolog"
 title: "XQuery - Modules & Prologs - XQuery Prolog"
 category: "xquery"
 description: "XQuery Language Reference: Modules & Prologs - XQuery Prolog"
-syntax: 10
+syntax: "10"
 tags: ["xquery","modules-prologs-xquery-prolog"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 An XQuery query is made up of a prolog and a body. The XQuery prolog is a series of

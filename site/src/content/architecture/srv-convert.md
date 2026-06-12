@@ -3,7 +3,7 @@ title: "srv_convert"
 topic: "clr-integration"
 description: "Changes data from one data type to another. ） Important This feature will be removed in a future version of SQL Server."
 tags: ["clr-integration","srv-convert"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Changes data from one data type to another.

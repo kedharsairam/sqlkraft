@@ -4,7 +4,7 @@ title: "STGeometryN (geometry Data Type)"
 category: "data-types"
 description: "Returns the specified geometry from a geometry collection."
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 ## Syntax
 

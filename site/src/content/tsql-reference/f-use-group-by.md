@@ -4,7 +4,7 @@ title: "F. Use GROUP BY"
 category: "statements"
 description: "This example uses two correlated subqueries to find the names of employees who sold a"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 This example uses two correlated subqueries to find the names of employees who sold a

@@ -4,7 +4,7 @@ title: "sp_dbfixedrolepermission"
 category: "general"
 description: "Displays the permissions of a fixed database role. information in SQL Server 2000 (8.x). The output doesn't reflect the changes to the permissions hierarchy that were implemented in SQL Server 2005 (9.x). For more information, see , which shows a list of fixed database roles and its corresponding permissions."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_dbfixedrolepermission"
 ---
 

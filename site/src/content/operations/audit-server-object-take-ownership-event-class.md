@@ -3,7 +3,7 @@ title: "Audit Server Object Take Ownership Event Class"
 topic: "event-classes"
 description: "The event class occurs when the owner is changed for objects in server scope. Description Name of t"
 tags: ["event-classes","audit-server-object-take-ownership-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

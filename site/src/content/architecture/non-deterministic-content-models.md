@@ -3,7 +3,7 @@ title: "Non-Deterministic content models"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","non-deterministic-content-models"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Non-deterministic content models are accepted in SQL Server if the occurrence constraints are

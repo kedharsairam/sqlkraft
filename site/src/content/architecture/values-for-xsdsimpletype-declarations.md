@@ -3,7 +3,7 @@ title: "Values for <xsd:simpleType> Declarations"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","values-for-xsdsimpletype-declarations"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following table outlines the restrictions that are applied, based on all recognized XSD

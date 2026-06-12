@@ -3,7 +3,7 @@ title: "AdventureWorks"
 topic: "monitor"
 description: ""
 tags: ["monitor","adventureworks"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article provides direct links for downloading

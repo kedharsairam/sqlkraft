@@ -3,7 +3,7 @@ title: "Setup AD Authentication using adutil"
 topic: "linux-operations"
 description: "on Linux This tutorial explains how to configure SQL Server on Linux containers to support Active Directory authentication, also known as integrated authentication. For an o"
 tags: ["linux-operations","setup-ad-authentication-using-adutil"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

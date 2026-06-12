@@ -3,7 +3,7 @@ title: "View dependencies"
 topic: "spatial-data"
 description: "This topic describes how to view s"
 tags: ["spatial-data","view-dependencies"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

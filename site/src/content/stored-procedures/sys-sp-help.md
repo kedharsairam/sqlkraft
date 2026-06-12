@@ -4,7 +4,7 @@ title: "sp_help"
 category: "general"
 description: "Removes one or more user-defined defaults from the current database. : SQL Server ( SQL Server 2016 (13.x) through current version Conditionally drops the default only if it already exists. Is the name of the schema to which the default belongs. Is the name of an existing default. To see a list of defaults that exist, execute must comply w"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "[Person]."
 ---
 

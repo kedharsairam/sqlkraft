@@ -3,7 +3,7 @@ title: "Deploy AGs with DH2i DxEnterprise"
 topic: "linux-operations"
 description: "- Linux This tutorial explains how to configure SQL Server Always On availability groups (AGs) for SQL Server Linux based containers deployed to an A"
 tags: ["linux-operations","deploy-ags-with-dh2i-dxenterprise"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Linux

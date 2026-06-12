@@ -4,7 +4,7 @@ title: "To View List of Top 10 High CPU Utilization Que"
 description: "diagnostic script for architecture operations."
 category: "architecture"
 tags: ["architecture","cpu"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

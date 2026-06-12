@@ -3,7 +3,7 @@ title: "Example: Renaming the <row> Element"
 topic: "xml-data"
 description: "For each row in the result set, the RAW mode generates an element ."
 tags: ["xml-data","example-renaming-the-row-element"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 For each row in the result set, the RAW mode generates an element. You can optionally

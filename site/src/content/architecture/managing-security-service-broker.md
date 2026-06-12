@@ -3,7 +3,7 @@ title: "Managing Security (Service Broker)"
 topic: "service-broker"
 description: "09/11/2025 Service Broker provides a flexible security framework for helping you secure your applications."
 tags: ["service-broker","managing-security-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker provides a flexible security framework for helping you secure your applications.

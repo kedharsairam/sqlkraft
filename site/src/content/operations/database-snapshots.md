@@ -3,7 +3,7 @@ title: "Database snapshots"
 topic: "high-availability"
 description: "You can create a database snapshot on a primary or secondary database in an availability group. The replica role must be either or , and can't be in the state. You should"
 tags: ["high-availability","database-snapshots"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can create a database snapshot on a primary or secondary database in an availability

@@ -3,7 +3,7 @@ title: "Audit Database Mirroring Login Event Class"
 topic: "event-classes"
 description: "creates an event to report audit messages related to database mirroring transport security"
 tags: ["event-classes","audit-database-mirroring-login-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 creates an

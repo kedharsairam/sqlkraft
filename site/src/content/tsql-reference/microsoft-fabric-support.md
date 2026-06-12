@@ -4,7 +4,7 @@ title: "Microsoft Fabric support"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The ANSI and ISO 8601 compliance sections of the date and time

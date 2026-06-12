@@ -3,7 +3,7 @@ title: "Transaction ID (TID) locking"
 topic: "locking"
 description: ""
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 In the database engine, locking is a mechanism that prevents multiple transactions from

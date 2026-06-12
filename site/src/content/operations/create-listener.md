@@ -3,7 +3,7 @@ title: "Create listener"
 topic: "high-availability"
 description: "This article describes how to create or configure a single availability group listener for an Always On availability group by using SQL Server Mana"
 tags: ["high-availability","create-listener"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to create or configure a single

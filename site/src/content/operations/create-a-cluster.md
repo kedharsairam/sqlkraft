@@ -3,7 +3,7 @@ title: "Create a cluster"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","create-a-cluster"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To install or upgrade a SQL Server failover cluster instance (FCI), you must run the Setup

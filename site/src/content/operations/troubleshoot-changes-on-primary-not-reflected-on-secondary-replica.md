@@ -3,7 +3,7 @@ title: "Troubleshoot: Changes on primary not reflected on secondary replica"
 topic: "high-availability"
 description: "The client application completes an update on the primary replica successfully, but querying the secondary replica shows that the change is not reflec"
 tags: ["high-availability","troubleshoot-changes-on-primary-not-reflected-on-secondary-replica"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The client application completes an update on the primary replica successfully, but querying

@@ -4,19 +4,19 @@ title: "sp_helpreplicationdboption"
 category: "general"
 description: "Shows whether databases at the Publisher are enabled for replication. This stored procedure is executed at the Publisher on any database. Not supported for Oracle Publishers. databases at the Publisher, otherwise only information on the specified database is returned. Information isn't returned for any databases on which the user doesn't have the appropriate Restric"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_helpreplicationdboption
-      [ [ @dbname = ]
-      N
-      'dbname'
-      ]
-      [ , [ @type = ]
-      N
-      'type'
-      ]
-      [ , [ @reserved = ] reserved ]
-      [ ; ]
+              [ [ @dbname = ]
+              N
+              'dbname'
+              ]
+              [ , [ @type = ]
+              N
+              'type'
+              ]
+              [ , [ @reserved = ] reserved ]
+              [ ; ]
 ---
 
 ## Description

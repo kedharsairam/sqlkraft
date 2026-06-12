@@ -4,14 +4,14 @@ title: "sys.fulltext_index_fragments"
 category: "indexes"
 description: "A fulltext index uses internal tables called full-text index fragments to store the inverted index data. This view can be used to query the metadata about these fragments. This view contains a row for each full-text index fragment in every table that contains a full-text index. Object ID of the table that contains the full-text index fragment. fragment"
 tags: ["indexes","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   SELECT table_id, status FROM sys.fulltext_index_fragments
-      WHERE status=4 OR status=6;
-      USE AdventureWorks2022;
-      GO
-      ALTER FULLTEXT CATALOG ftCatalog REORGANIZE;
-      GO
+              WHERE status=4 OR status=6;
+              USE AdventureWorks2022;
+              GO
+              ALTER FULLTEXT CATALOG ftCatalog REORGANIZE;
+              GO
 ---
 
 ## Description

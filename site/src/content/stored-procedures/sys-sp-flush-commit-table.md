@@ -4,12 +4,12 @@ title: "sys.sp_flush_commit_table"
 category: "general"
 description: "to disk to help with change tracking cleanup. Specifies the current change tracking version."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_flush_commit_table
-      [ @flush_ts = ] flush_ts
-      [ , [ @cleanup_version = ] cleanup_version ]
-      [ ; ]
+              [ @flush_ts = ] flush_ts
+              [ , [ @cleanup_version = ] cleanup_version ]
+              [ ; ]
 ---
 
 ## Description

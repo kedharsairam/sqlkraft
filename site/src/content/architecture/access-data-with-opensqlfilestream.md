@@ -3,7 +3,7 @@ title: "Access data with OpenSqlFilestream"
 topic: "filestream"
 description: "The OpenSqlFilestream API obtains a Win32 compatible file handle for a FILESTREAM binary large object (BLOB) stored in the file system."
 tags: ["filestream","access-data-with-opensqlfilestream"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The OpenSqlFilestream API obtains a Win32 compatible file handle for a FILESTREAM binary

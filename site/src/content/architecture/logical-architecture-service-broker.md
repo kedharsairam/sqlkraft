@@ -3,7 +3,7 @@ title: "Logical Architecture [Service Broker]"
 topic: "service-broker"
 description: "09/11/2025 Service Broker applications consist of Service Broker database objects and one or more applications that use those objects."
 tags: ["service-broker","logical-architecture-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker applications consist of Service Broker database objects and one or more

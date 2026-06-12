@@ -3,7 +3,7 @@ title: "Example: Configure with Windows Authentication (T-SQL)"
 topic: "high-availability"
 description: "SQL) This example shows all the stages required to create a database mirroring session with a witness using Windows Authentication. The examples in t"
 tags: ["high-availability","example-configure-with-windows-authentication-t-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQL)

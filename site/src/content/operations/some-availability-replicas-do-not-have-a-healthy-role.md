@@ -3,7 +3,7 @@ title: "Some availability replicas do not have a healthy role"
 topic: "high-availability"
 description: ": Availability Replicas Role State : Some availability replicas do not have a healthy role."
 tags: ["high-availability","some-availability-replicas-do-not-have-a-healthy-role"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 : Availability Replicas Role State

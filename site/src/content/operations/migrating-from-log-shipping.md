@@ -3,14 +3,12 @@ title: "Migrating from log shipping"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","migrating-from-log-shipping"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Prerequisites to convert log shipping to
 
 ﾃ
-
-Summarize this article for me
 
 This article describes the prerequisites for converting a log shipping primary database and one
 

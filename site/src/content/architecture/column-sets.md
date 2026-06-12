@@ -3,7 +3,7 @@ title: "Column Sets"
 topic: "tables"
 description: ""
 tags: ["tables","column-sets"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

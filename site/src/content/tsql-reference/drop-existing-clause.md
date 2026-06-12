@@ -4,7 +4,7 @@ title: "DROP_EXISTING clause"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 2005 (9.x) introduced new index options and also modified the way in which

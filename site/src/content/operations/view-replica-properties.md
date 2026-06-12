@@ -3,7 +3,7 @@ title: "View replica properties"
 topic: "high-availability"
 description: "This topic describes how to view the properties of an availability replica for an Always On availability group by using SQL Server Management Studio o"
 tags: ["high-availability","view-replica-properties"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to view the properties of an availability replica for an Always On

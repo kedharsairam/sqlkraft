@@ -4,20 +4,20 @@ title: "sp_add_agent_profile"
 category: "general"
 description: "Creates a new profile for a replication agent. This stored procedure is executed at the The ID associated with the newly inserted profile. parameter. If specified, the value is set to the new profile ID. The type of replication agent."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_add_agent_profile [ [ @profile_id = ] profile_id
-      OUTPUT
-      ]
-      , [ @profile_name = ]
-      'profile_name'
-      , [ @agent_type = ] agent_type
-      [ , [ @profile_type = ] profile_type ]
-      [ , [ @description = ]
-      N
-      'description'
-      ]
-      [ , [ @default = ] default ]
+              OUTPUT
+              ]
+              , [ @profile_name = ]
+              'profile_name'
+              , [ @agent_type = ] agent_type
+              [ , [ @profile_type = ] profile_type ]
+              [ , [ @description = ]
+              N
+              'description'
+              ]
+              [ , [ @default = ] default ]
 ---
 
 ## Description

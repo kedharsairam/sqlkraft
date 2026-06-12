@@ -3,7 +3,7 @@ title: "Database snapshots"
 topic: "collation"
 description: "A database snapshot is a read-only, static view of a SQL Server database (the source database). It's transactionally consistent with the source databa"
 tags: ["collation","database-snapshots"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A database snapshot is a read-only, static view of a SQL Server database (the source database).

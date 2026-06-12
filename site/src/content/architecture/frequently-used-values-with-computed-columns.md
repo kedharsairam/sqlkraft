@@ -3,7 +3,7 @@ title: "Frequently used values with computed columns"
 topic: "xml-data"
 description: "If queries are made principally on a few element and attribute values, you may want to promote those q"
 tags: ["xml-data","frequently-used-values-with-computed-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If queries are made principally on a few element and attribute values, you may want to

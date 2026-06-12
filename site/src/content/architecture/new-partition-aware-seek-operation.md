@@ -3,7 +3,7 @@ title: "New partition-aware seek operation"
 topic: "io-fundamentals"
 description: ""
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 In SQL Server, the internal representation of a partitioned table is changed so that the table

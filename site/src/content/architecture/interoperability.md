@@ -3,7 +3,7 @@ title: "Interoperability"
 topic: "filestream"
 description: ""
 tags: ["filestream","interoperability"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Because FILESTREAM data is in the file system, this topic provides some considerations,

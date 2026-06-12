@@ -3,7 +3,7 @@ title: "Shrink a database"
 topic: "collation"
 description: "This article describes how to shrink a database in SQL Server by using Object Explorer in SQL Server M"
 tags: ["collation","shrink-a-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to shrink a database in SQL Server by using Object Explorer in SQL

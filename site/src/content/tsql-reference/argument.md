@@ -4,7 +4,7 @@ title: "Argument"
 category: "statements"
 description: ") value as the number of minutes (signed). This statement"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 First Friday,

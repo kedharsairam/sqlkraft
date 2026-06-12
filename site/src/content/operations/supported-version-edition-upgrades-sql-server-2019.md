@@ -3,7 +3,7 @@ title: "Supported version & edition upgrades SQL Server 2019"
 topic: "upgrade"
 description: "06/16/2025 - Windows only You can upgrade from SQL Server 2012 (11.x), SQL Server 2014 (12.x), SQL Server 2016 (13.x), and SQL Server 2017 (14.x)."
 tags: ["upgrade","supported-version-edition-upgrades-sql-server-2019"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Windows only

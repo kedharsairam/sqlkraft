@@ -3,7 +3,7 @@ title: "Configurations page"
 topic: "collation"
 description: ""
 tags: ["collation","configurations-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

@@ -3,7 +3,7 @@ title: "Import a bacpac file"
 topic: "ssms"
 description: "Import a file - to create a copy of the original database, with the data, on a new instance"
 tags: ["ssms","import-a-bacpac-file"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Import a

@@ -3,7 +3,7 @@ title: "How to: Configure Target Services for Anonymous Dialog Security (Transac
 topic: "service-broker"
 description: ""
 tags: ["service-broker","how-to-configure-target-services-for-anonymous-dialog-security-transact-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 uses dialog security for any conversation to a service for which a remote service

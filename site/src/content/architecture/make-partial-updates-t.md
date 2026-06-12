@@ -3,7 +3,7 @@ title: "Make Partial Updates t"
 topic: "filestream"
 description: "An application uses FSCTL_SQL_FILESTREAM_FETCH_OLD_CONTENT to make partial updates to FILESTREAM BLOB data."
 tags: ["filestream","make-partial-updates-t"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 An application uses FSCTL_SQL_FILESTREAM_FETCH_OLD_CONTENT to make partial updates to

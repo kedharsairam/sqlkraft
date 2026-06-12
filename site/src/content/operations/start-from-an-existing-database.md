@@ -3,7 +3,7 @@ title: "Start from an existing database"
 topic: "ssms"
 description: ""
 tags: ["ssms","start-from-an-existing-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 database in Microsoft Fabric

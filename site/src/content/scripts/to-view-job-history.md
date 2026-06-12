@@ -4,7 +4,7 @@ title: "To View Job History"
 description: "diagnostic script for automation operations."
 category: "automation"
 tags: ["agent-job","automation"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql
@@ -26,11 +26,11 @@ FROM msdb.dbo.sysjobs j
 INNER JOIN msdb.dbo.sysjobhistory h ON j.job_id = h.job_id
 INNER JOIN msdb.dbo.sysjobsteps js ON h.job_id = js.job_id AND h.step_id = js.step_id
 WHERE j.enabled = 1 -- Only Enabled Jobs
-  --and j.name = 'DatabaseBackup - USER_DATABASES - FULL' --Uncomment to search for a single job
+ --and j.name = 'DatabaseBackup - USER_DATABASES - FULL' --Uncomment to search for a single job
  AND msdb.dbo.agent_datetime(h.run_date, h.run_time) >= DATEADD(HOUR, -1, GETDATE())
-  --and msdb.dbo.agent_datetime(run_date, run_time) BETWEEN '12/08/2012' and '12/10/2012' --Uncomment for date range queries
-   AND h.run_status = 0 -- Filter for what type of jobs u need
-   AND j.name NOT LIKE '%distribution%' -- Exclude jobs related to distribution
+ --and msdb.dbo.agent_datetime(run_date, run_time) BETWEEN '12/08/2012' and '12/10/2012' --Uncomment for date range queries
+ AND h.run_status = 0 -- Filter for what type of jobs u need
+ AND j.name NOT LIKE '%distribution%' -- Exclude jobs related to distribution
  AND j.name NOT LIKE '%Replication%' -- Exclude jobs related to replication
 ORDER BY JobName, RunDateTime DESC
 ```

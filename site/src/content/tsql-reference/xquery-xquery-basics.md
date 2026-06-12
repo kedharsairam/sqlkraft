@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: XQuery Basics"
 syntax: "(:"
 tags: ["xquery","xquery-basics"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This section describes the fundamentals of XQuery.

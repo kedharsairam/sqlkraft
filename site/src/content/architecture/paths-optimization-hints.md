@@ -3,7 +3,7 @@ title: "Paths & optimization hints"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","paths-optimization-hints"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to specify node paths to index and optimization hints for indexing

@@ -3,7 +3,7 @@ title: "Use the Trustworthy Property"
 topic: "high-availability"
 description: "When a database is backed up, the TRUSTWORTHY database property is set to OFF. Therefore, on a new mirror database TRUSTWORTHY is always OFF."
 tags: ["high-availability","use-the-trustworthy-property"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When a database is backed up, the TRUSTWORTHY database property is set to OFF. Therefore,

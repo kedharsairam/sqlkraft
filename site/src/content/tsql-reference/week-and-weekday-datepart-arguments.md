@@ -4,7 +4,7 @@ title: "Week and weekday datepart arguments"
 category: "operators"
 description: ""
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The return value depends on the language environment set by using

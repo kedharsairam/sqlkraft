@@ -4,7 +4,7 @@ title: "Examples with remote endpoints"
 category: "queries"
 description: ""
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Create an EXTERNAL MODEL with Azure OpenAI using

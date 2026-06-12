@@ -4,22 +4,22 @@ title: "sp_data_source_objects"
 category: "general"
 description: "Returns list of table objects that are available to be virtualized."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.sp_data_source_objects
-      [ @data_source = ]
-      N
-      'data_source'
-      [ , [ @object_root_name = ]
-      N
-      'object_root_name'
-      ]
-      [ , [ @max_search_depth = ] max_search_depth ]
-      [ , [ @search_options = ]
-      N
-      'search_options'
-      ]
-      [ ; ]
+              [ @data_source = ]
+              N
+              'data_source'
+              [ , [ @object_root_name = ]
+              N
+              'object_root_name'
+              ]
+              [ , [ @max_search_depth = ] max_search_depth ]
+              [ , [ @search_options = ]
+              N
+              'search_options'
+              ]
+              [ ; ]
 ---
 
 ## Description

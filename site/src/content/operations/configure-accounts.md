@@ -3,7 +3,7 @@ title: "Configure accounts"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","configure-accounts"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 For two server instances to connect to each other's

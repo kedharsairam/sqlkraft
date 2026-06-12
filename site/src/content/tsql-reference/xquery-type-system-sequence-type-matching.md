@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Type System - Sequence Type Matching"
 syntax: "instance of"
 tags: ["xquery","type-system-sequence-type-matching"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 An XQuery expression value is always a sequence of zero or more items. An item can be either

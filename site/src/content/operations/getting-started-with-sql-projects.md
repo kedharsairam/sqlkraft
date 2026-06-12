@@ -3,7 +3,7 @@ title: "Getting started with SQL projects"
 topic: "ssms"
 description: ""
 tags: ["ssms","getting-started-with-sql-projects"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2022 (16.x) and later versions

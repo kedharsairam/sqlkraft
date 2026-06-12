@@ -3,7 +3,7 @@ title: "Replication transactions"
 topic: "io-fundamentals"
 description: "The active log must include every part of all uncommitted transactions."
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The active log must include every part of all uncommitted transactions. An application that

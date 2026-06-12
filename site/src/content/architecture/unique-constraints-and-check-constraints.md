@@ -3,7 +3,7 @@ title: "Unique constraints and check constraints"
 topic: "tables"
 description: "constraints and constraints are two types of constraints that can be used to enforce data i"
 tags: ["tables","unique-constraints-and-check-constraints"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 constraints and

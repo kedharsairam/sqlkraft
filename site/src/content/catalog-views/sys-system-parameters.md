@@ -4,7 +4,7 @@ title: "sys.system_parameters"
 category: "compatibility"
 description: "Contains one row for each system object that has parameters."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

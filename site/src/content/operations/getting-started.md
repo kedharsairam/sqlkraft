@@ -3,7 +3,7 @@ title: "Getting started"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","getting-started"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic introduces the steps for configuring instances of SQL Server to support Always On

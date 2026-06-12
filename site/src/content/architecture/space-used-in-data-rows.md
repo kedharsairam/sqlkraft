@@ -3,7 +3,7 @@ title: "Space used in data rows"
 topic: "query-processing"
 description: "The online index build version store is used for online index builds."
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The online index build version store is used for online index builds.

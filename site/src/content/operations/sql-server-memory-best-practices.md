@@ -3,7 +3,7 @@ title: "SQL Server memory best practices"
 topic: "linux-operations"
 description: ""
 tags: ["linux-operations","sql-server-memory-best-practices"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

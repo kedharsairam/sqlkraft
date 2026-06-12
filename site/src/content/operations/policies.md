@@ -3,7 +3,7 @@ title: "Policies"
 topic: "high-availability"
 description: "The Always On availability groups health model evaluates a set of predefined policy based management (PBM) policies."
 tags: ["high-availability","policies"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Always On availability groups health model evaluates a set of predefined policy based

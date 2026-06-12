@@ -4,7 +4,7 @@ title: "To Get Always on Availability Group Listener De"
 description: "diagnostic script for high-availability operations."
 category: "high-availability"
 tags: ["availability-group","high-availability"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

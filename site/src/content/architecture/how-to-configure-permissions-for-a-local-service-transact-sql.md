@@ -3,7 +3,7 @@ title: "How to: Configure Permissions for a Local Service (Transact-SQL)"
 topic: "service-broker"
 description: "09/11/2025 SQL Server enforces permission for each service and permissions for each queue."
 tags: ["service-broker","how-to-configure-permissions-for-a-local-service-transact-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 enforces

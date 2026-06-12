@@ -3,7 +3,7 @@ title: "System object reference"
 topic: "azure-synapse"
 description: "This article lists system objects that Azure extension for SQL Server deploys and manages."
 tags: ["azure-synapse","system-object-reference"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article lists system objects that Azure extension for SQL Server deploys and manages. They

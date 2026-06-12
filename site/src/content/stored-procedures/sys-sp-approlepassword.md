@@ -4,16 +4,16 @@ title: "sp_approlepassword"
 category: "general"
 description: "Changes the password of an application role in the current database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_approlepassword
-      [ @rolename = ]
-      N
-      'rolename'
-      , [ @newpwd = ]
-      N
-      'newpwd'
-      [ ; ]
+              [ @rolename = ]
+              N
+              'rolename'
+              , [ @newpwd = ]
+              N
+              'newpwd'
+              [ ; ]
 ---
 
 ## Description

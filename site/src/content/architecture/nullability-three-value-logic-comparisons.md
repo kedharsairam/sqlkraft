@@ -3,7 +3,7 @@ title: "Nullability & three-value logic comparisons"
 topic: "clr-integration"
 description: "If you're familiar with the SQL Server data types, you find similar semantics and precision in the namespace in the .NET Framework."
 tags: ["clr-integration","nullability-three-value-logic-comparisons"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If you're familiar with the SQL Server data types, you find similar semantics and precision in the

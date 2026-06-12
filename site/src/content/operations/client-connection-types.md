@@ -3,7 +3,7 @@ title: "Client connection types"
 topic: "high-availability"
 description: "In an Always On availability group, you can configure one or more availability replicas to allow read-only connections when running under the secondar"
 tags: ["high-availability","client-connection-types"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In an Always On availability group, you can configure one or more availability replicas to allow

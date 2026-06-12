@@ -3,7 +3,7 @@ title: "Showplan XML Event Class"
 topic: "event-classes"
 description: "The Showplan XML event class occurs when Microsoft SQL Server executes a SQL statement. Incl"
 tags: ["event-classes","showplan-xml-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Showplan XML event class occurs when Microsoft SQL Server executes a SQL statement.

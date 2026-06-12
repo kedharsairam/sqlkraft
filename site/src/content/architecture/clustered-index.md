@@ -3,7 +3,7 @@ title: "Clustered index"
 topic: "filestream"
 description: "You can create clustered indexes on tables by using SQL Server Management Studio or Transact"
 tags: ["filestream","clustered-index"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can create clustered indexes on tables by using SQL Server Management Studio or

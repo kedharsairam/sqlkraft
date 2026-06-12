@@ -3,7 +3,7 @@ title: "Timestamp Data Type"
 topic: "xml-data"
 description: "In the transformation, type values are treated as data, and is always Base64 encoded. The"
 tags: ["xml-data","timestamp-data-type"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In the

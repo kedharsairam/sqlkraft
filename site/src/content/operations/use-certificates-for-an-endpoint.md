@@ -3,7 +3,7 @@ title: "Use certificates for an endpoint"
 topic: "high-availability"
 description: "To enable certificate authentication for database mirroring on a given server instance, the system administrator must configure each server instance t"
 tags: ["high-availability","use-certificates-for-an-endpoint"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To enable certificate authentication for database mirroring on a given server instance, the

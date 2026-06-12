@@ -3,7 +3,7 @@ title: "ObjectType Trace Event Column"
 topic: "event-classes"
 description: "The Object Type trace event column is used in a variety of trace events. This topic describes"
 tags: ["event-classes","objecttype-trace-event-column"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Object Type trace event column is used in a variety of trace events. This topic describes the

@@ -3,7 +3,7 @@ title: "Known issues and errors"
 topic: "change-data-capture"
 description: "10/07/2025 This article explains known limitations, issues, and errors with change data capture (CDC) for and . For Azure SQL Datab"
 tags: ["change-data-capture","known-issues-and-errors"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article explains known limitations, issues, and errors with change data capture (CDC) for

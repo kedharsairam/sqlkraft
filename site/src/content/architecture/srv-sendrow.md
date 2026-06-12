@@ -3,7 +3,7 @@ title: "srv_sendrow"
 topic: "clr-integration"
 description: "Transmits a row of data to the client."
 tags: ["clr-integration","srv-sendrow"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Transmits a row of data to the client.

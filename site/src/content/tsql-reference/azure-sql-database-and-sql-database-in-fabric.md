@@ -4,7 +4,7 @@ title: "Azure SQL Database and SQL database in Fabric"
 category: "operators"
 description: "2025 (17.x)"
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ### Supplemental

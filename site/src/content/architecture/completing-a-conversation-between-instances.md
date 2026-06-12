@@ -3,7 +3,7 @@ title: "Completing a Conversation Between Instances"
 topic: "service-broker"
 description: "08/29/2025 This tutorial is intended for users who are new to Service Broker, but are familiar with database concepts and Transact-SQL statements"
 tags: ["service-broker","completing-a-conversation-between-instances"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This tutorial is intended for users who are new to Service Broker, but are familiar with database

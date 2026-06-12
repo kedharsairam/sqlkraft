@@ -3,7 +3,7 @@ title: "Enhanced Database Failover"
 topic: "high-availability"
 description: "In SQL Server 2012 and 2014, if a database participating in an availability group on the primary replica loses the ability to write transactions, it w"
 tags: ["high-availability","enhanced-database-failover"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In SQL Server 2012 and 2014, if a database participating in an availability group on the primary

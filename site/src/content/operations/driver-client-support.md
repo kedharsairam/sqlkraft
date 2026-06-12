@@ -3,7 +3,7 @@ title: "Driver & client support"
 topic: "high-availability"
 description: "This article describes considerations for client connectivity to Always On availability groups, including prerequisites, restrictions, and recommendations for client configur"
 tags: ["high-availability","driver-client-support"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes considerations for client connectivity to Always On availability groups,

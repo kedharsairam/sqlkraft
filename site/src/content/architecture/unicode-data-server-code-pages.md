@@ -3,7 +3,7 @@ title: "Unicode data & server code pages"
 topic: "clr-integration"
 description: "The Extended Stored Procedure API is enabled for Unicode data; however, it isn't enabled for Unicode metadata."
 tags: ["clr-integration","unicode-data-server-code-pages"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Extended Stored Procedure API is enabled for Unicode data; however, it isn't enabled for

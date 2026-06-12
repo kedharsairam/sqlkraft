@@ -3,7 +3,7 @@ title: "Server Collation"
 topic: "collation"
 description: "The server collation acts as the default collation for all system databases that are installed with the instance of SQL Se"
 tags: ["collation","server-collation"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The server collation acts as the default collation for all system databases that are installed with

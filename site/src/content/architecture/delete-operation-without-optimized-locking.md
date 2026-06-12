@@ -3,7 +3,7 @@ title: "Delete operation without optimized locking"
 topic: "locking"
 description: "ensures that no new names beginning with the letter"
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 for

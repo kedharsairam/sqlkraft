@@ -3,7 +3,7 @@ title: "Database Suspect Data Page Event Class"
 topic: "event-classes"
 description: "The event class indicates when a page is added to the suspect_pages table in msdb . Incl"
 tags: ["event-classes","database-suspect-data-page-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

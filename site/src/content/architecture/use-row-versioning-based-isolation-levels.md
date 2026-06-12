@@ -3,7 +3,7 @@ title: "Use row versioning-based isolation levels"
 topic: "io-fundamentals"
 description: "isolation transactions isn't activated. No"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Audit Add DB User Event Class"
 topic: "event-classes"
 description: "The event class occurs whenever a login is added or removed as a database user to a database."
 tags: ["event-classes","audit-add-db-user-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

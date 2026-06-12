@@ -4,7 +4,7 @@ title: "To Check if Database is Encrypted or Progress"
 description: "encryption_state = 3 encrypted; =2 in progress"
 category: "security-audit"
 tags: ["database","encryption","health-check","security-audit"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

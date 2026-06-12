@@ -3,7 +3,7 @@ title: "Managing Routing"
 topic: "service-broker"
 description: "09/04/2025 Service Broker uses routes to determine where to deliver messages. This section describes considerations for managing routing."
 tags: ["service-broker","managing-routing"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker uses routes to determine where to deliver messages. This section describes

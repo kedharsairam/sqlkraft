@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: XML Construction"
 syntax: "<ProductModel>"
 tags: ["xquery","xml-construction"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In XQuery, you can use the direct

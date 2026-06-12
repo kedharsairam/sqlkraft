@@ -4,13 +4,13 @@ title: "sp_prepexec"
 category: "general"
 description: "Prepares and executes a parameterized Transact-SQL statement. is a required parameter with an Identifies parameterized statements. The definition of variables is substituted for parameter markers in the statement. is a required parameter that calls for an value if the statement isn't parameterized."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_prepexec handle
-      OUTPUT
-      , params , stmt
-      [ , bound param ] [ , ...n ]
-      [ ; ]
+              OUTPUT
+              , params , stmt
+              [ , bound param ] [ , ...n ]
+              [ ; ]
 ---
 
 ## Description

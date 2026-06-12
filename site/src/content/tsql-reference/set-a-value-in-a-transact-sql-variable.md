@@ -4,7 +4,7 @@ title: "Set a value in a Transact-SQL variable"
 category: "statements"
 description: "Variables have local scope and are only visible within the batch or procedure where you define"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Variables have local scope and are only visible within the batch or procedure where you define

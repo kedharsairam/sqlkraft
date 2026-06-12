@@ -3,7 +3,7 @@ title: "Query performance"
 topic: "filestream"
 description: "This article includes recommendati"
 tags: ["filestream","query-performance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

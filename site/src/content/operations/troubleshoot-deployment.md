@@ -3,7 +3,7 @@ title: "Troubleshoot deployment"
 topic: "azure-synapse"
 description: "Before you start, note the logs locations."
 tags: ["azure-synapse","troubleshoot-deployment"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Before you start, note the logs locations.

@@ -3,7 +3,7 @@ title: "Audit Server Principal Management Event Class"
 topic: "event-classes"
 description: "The event class occurs when server principals are created, altered, or dropped."
 tags: ["event-classes","audit-server-principal-management-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

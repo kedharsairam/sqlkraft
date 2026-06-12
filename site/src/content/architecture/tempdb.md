@@ -3,7 +3,7 @@ title: "tempdb"
 topic: "collation"
 description: "This article describes the system database, a global resource available to all users connec"
 tags: ["collation","tempdb"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes the

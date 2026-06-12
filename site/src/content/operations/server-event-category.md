@@ -3,7 +3,7 @@ title: "Server Event Category"
 topic: "event-classes"
 description: "The event category contains general server events."
 tags: ["event-classes","server-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

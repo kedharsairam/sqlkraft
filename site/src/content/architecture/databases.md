@@ -3,7 +3,7 @@ title: "databases?"
 topic: "query-processing"
 description: ""
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 In the previous query example, only table

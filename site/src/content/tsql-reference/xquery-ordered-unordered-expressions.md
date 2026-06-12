@@ -4,7 +4,7 @@ title: "XQuery - Ordered & Unordered Expressions"
 category: "xquery"
 description: "XQuery Language Reference: Ordered & Unordered Expressions"
 tags: ["xquery","ordered-unordered-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 By default, the ordering mode for all operations in SQL Server is. Therefore, the node

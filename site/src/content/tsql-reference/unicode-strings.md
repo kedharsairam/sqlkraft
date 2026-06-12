@@ -4,7 +4,7 @@ title: "Unicode strings"
 category: "data-types"
 description: "The following are examples of character strings:"
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## nvarchar(max)

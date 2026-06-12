@@ -3,7 +3,7 @@ title: "System Databases"
 topic: "collation"
 description: "This article describes how to move system databases in SQL Server."
 tags: ["collation","system-databases"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to move system databases in SQL Server. Moving system databases

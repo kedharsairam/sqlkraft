@@ -3,7 +3,7 @@ title: "Of a Database"
 topic: "collation"
 description: ""
 tags: ["collation","of-a-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

@@ -3,14 +3,14 @@ title: "Verifying Database Code by Using SQL Server Unit Tests"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    You can use SQL Server unit tests to establish a baseline state for your database and then to
-  
-    verify any subsequent changes that you make to database objects.
-  
-    To establish a baseline sta
+          
+            You can use SQL Server unit tests to establish a baseline state for your database and then to
+          
+            verify any subsequent changes that you make to database objects.
+          
+            To establish a baseline sta
 tags: ["ssb-diagnose","verifying-database-code-by-using-sql-server-unit-tests"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can use SQL Server unit tests to establish a baseline state for your database and then to

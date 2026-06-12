@@ -4,7 +4,7 @@ title: "To Get Report of DDL Changes"
 description: "diagnostic script for automation operations."
 category: "automation"
 tags: ["automation"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

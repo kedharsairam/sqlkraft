@@ -3,7 +3,7 @@ title: "Trace File Close Event Class"
 topic: "event-classes"
 description: "The event class indicates that a trace file has been closed during a trace file rollover. Descriptio"
 tags: ["event-classes","trace-file-close-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

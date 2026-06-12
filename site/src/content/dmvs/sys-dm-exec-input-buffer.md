@@ -4,7 +4,7 @@ title: "sys.dm_exec_input_buffer"
 category: "execution"
 description: "2014 (12.x) SP2 and later versions SQL database in Microsoft Fabric Returns information about statements submitted to an instance of SQL Server. Is the session ID executing the batch to be looked up."
 tags: ["execution","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.dm_exec_input_buffer ( session_id , request_id )"
 ---
 

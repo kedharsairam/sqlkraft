@@ -4,7 +4,7 @@ title: "To Enable Dynamic Data Masking"
 description: ""
 category: "database"
 tags: ["database"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

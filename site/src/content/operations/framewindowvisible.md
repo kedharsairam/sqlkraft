@@ -3,7 +3,7 @@ title: "FrameWindowVisible"
 topic: "profiler"
 description: "SqlToolsVSNativeHelpers - Property that specifies whether a given window frame is visible. The helper method is used from managed"
 tags: ["profiler","framewindowvisible"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SqlToolsVSNativeHelpers -

@@ -3,7 +3,7 @@ title: "Example: Specifying the HIDE Directive"
 topic: "xml-data"
 description: "This example illustrates the use of the directive."
 tags: ["xml-data","example-specifying-the-hide-directive"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This example illustrates the use of the

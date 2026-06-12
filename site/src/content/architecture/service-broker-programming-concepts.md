@@ -3,7 +3,7 @@ title: "Service Broker Programming Concepts"
 topic: "service-broker"
 description: "09/15/2025 Service Broker introduces concepts that are unique to developing a Service Broker application."
 tags: ["service-broker","service-broker-programming-concepts"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker introduces concepts that are unique to developing a Service Broker application.

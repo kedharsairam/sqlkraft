@@ -2,15 +2,13 @@
 name: "sys.tcp_endpoints"
 title: "sys.tcp_endpoints"
 category: "compatibility"
-description: "Summarize this article for me Returns one row for each TCP endpoint in the system. The endpoints that are described by provide an object to grant and revoke the connection privilege. The information that is displayed regarding ports and IP addresses isn't used to configure the protocols and might not match the actual protocol configuration. To view and configure protocols, use SQL Server Configura"
+description: "Returns one row for each TCP endpoint in the system. The endpoints that are described by provide an object to grant and revoke the connection privilege. The information that is displayed regarding ports and IP addresses isn't used to configure the protocols and might not match the actual protocol configuration. To view and configure protocols, use SQL Server Configura"
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "WHERE des.session_id = @@SPID"
 ---
 
 ## Description
-
-Summarize this article for me Returns one row for each TCP endpoint in the system. The endpoints that are described by provide an object to grant and revoke the connection privilege. The information that is displayed regarding ports and IP addresses isn't used to configure the protocols and might not match the actual protocol configuration. To view and configure protocols, use SQL Server Configuration Manager. Inherits columns from The port number that the endpoint is listening on. Not nullable. 1 = Port number was dynamically assigned. Listener IP address as specified by the LISTENER_IP clause. Execute the following query to gather information about the endpoints and connections. Endpoints without current connections or without TCP connections will appear with NULL values.
 
 ## Syntax
 
@@ -19,8 +17,6 @@ WHERE des.session_id = @@SPID
 ```
 
 ## Remarks
-
-Summarize this article for me
 
 Returns one row for each TCP endpoint in the system. The endpoints that are described by
 

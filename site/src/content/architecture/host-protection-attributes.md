@@ -3,7 +3,7 @@ title: "Host Protection Attributes"
 topic: "clr-integration"
 description: "The common language runtime (CLR) provides a mechanism to annotate managed application programming interfaces (APIs) that are part of the .NET Framewo"
 tags: ["clr-integration","host-protection-attributes"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The common language runtime (CLR) provides a mechanism to annotate managed application

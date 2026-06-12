@@ -4,17 +4,17 @@ title: "sp_help_log_shipping_secondary_database"
 category: "general"
 description: "This stored procedure retrieves the settings for one or more secondary databases."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_help_log_shipping_secondary_database
-      [ [ @secondary_database = ]
-      N
-      'secondary_database'
-      ]
-      [ , [ @secondary_id = ]
-      'secondary_id'
-      ]
-      [ ; ]
+              [ [ @secondary_database = ]
+              N
+              'secondary_database'
+              ]
+              [ , [ @secondary_id = ]
+              'secondary_id'
+              ]
+              [ ; ]
 ---
 
 ## Description

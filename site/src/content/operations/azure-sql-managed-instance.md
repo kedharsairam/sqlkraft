@@ -3,7 +3,7 @@ title: "Azure SQL Managed Instance >"
 topic: "azure-synapse"
 description: ""
 tags: ["azure-synapse","azure-sql-managed-instance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article provides an overview of Azure SQL Managed Instance, a fully managed platform as

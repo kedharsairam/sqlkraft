@@ -3,7 +3,7 @@ title: "Install & configure"
 topic: "monitor"
 description: "Wide World Importers OLTP database installation and configuration instructions. SQL Server 2016 (or higher) or Azure SQL Databas"
 tags: ["monitor","install-configure"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Wide World Importers OLTP database installation and configuration instructions.

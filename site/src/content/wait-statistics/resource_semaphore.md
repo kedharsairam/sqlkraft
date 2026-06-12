@@ -5,7 +5,7 @@ category: "triage"
 severity: "critical"
 description: "Occurs when a query cannot start execution because it is waiting for memory grant. High values indicate the server is out of query memory — queries are queued until memory is available. A memory pressure crisis."
 tags: ["memory","grant","query-memory","pressure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-memory-grant-wait"]
 ---
 

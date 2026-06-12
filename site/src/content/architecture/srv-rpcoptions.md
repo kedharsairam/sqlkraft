@@ -3,7 +3,7 @@ title: "srv_rpcoptions"
 topic: "clr-integration"
 description: "Returns run-time options for the current remote stored procedure. srvproc Is a pointer to the SRV_PROC structure that is the handle for a particular"
 tags: ["clr-integration","srv-rpcoptions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns run-time options for the current remote stored procedure.

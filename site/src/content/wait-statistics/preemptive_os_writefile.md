@@ -5,7 +5,7 @@ category: "io"
 severity: "low"
 description: "Occurs during preemptive OS write operations. Related to FileStream/FileTable operations or custom assembly I/O using Win32 WriteFile API."
 tags: ["os","preemptive","write","filestream"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

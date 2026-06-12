@@ -4,17 +4,17 @@ title: "sp_describe_parameter_encryption"
 category: "general"
 description: "2016 (13.x) and later Analyzes the specified Transact-SQL statement and its parameters, to determine which parameters correspond to database columns that are protected by using the Always Encrypted feature. Returns encryption metadata for the parameters that correspond to encrypted columns. One or more Transact-SQL statements."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_describe_parameter_encryption
-      [ @tsql = ]
-      N
-      'tsql'
-      [ , [ @params = ]
-      N
-      '@parameter_name data_type [ , ... n ]'
-      ]
-      [ ; ]
+              [ @tsql = ]
+              N
+              'tsql'
+              [ , [ @params = ]
+              N
+              '@parameter_name data_type [ , ... n ]'
+              ]
+              [ ; ]
 ---
 
 ## Description

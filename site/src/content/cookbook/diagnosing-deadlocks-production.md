@@ -6,7 +6,7 @@ severity: "critical"
 description: "Step-by-step guide to detect, capture, and analyze SQL Server deadlocks with zero downtime — using system_health, XEvent sessions, trace flags, and deadlock graph XML parsing."
 tags: ["deadlock","blocking","xevents","xml_deadlock_report","system-health","victim","lock-contention"]
 related: ["xevents/deadlock-graph-capture","xevents/system-health-session","dmvs/sys-dm-exec-requests","dmvs/sys-dm-tran-locks","dmvs/sys-dm-os-waiting-tasks","wait-statistics/lck_m_s","wait-statistics/lck_m_x","wait-statistics/lck_m_sch_m","scripts/to-identify-deadlock"]
-pubDate: "2026-05-30"
+pubDate: 2026-05-30
 ---
 
 Deadlocks in production are inevitable — two concurrent sessions acquire locks in different orders, forming a cyclic dependency the lock monitor must break by choosing a victim. The victim's transaction is rolled back, and the application receives error 1205.

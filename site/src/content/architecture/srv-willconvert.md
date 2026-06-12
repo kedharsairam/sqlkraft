@@ -3,7 +3,7 @@ title: "srv_willconvert"
 topic: "clr-integration"
 description: "Determines whether a specific data type conversion is available within the ODS Library. srctype Indicates the data type of the data to be converted."
 tags: ["clr-integration","srv-willconvert"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Determines whether a specific data type conversion is available within the ODS Library.

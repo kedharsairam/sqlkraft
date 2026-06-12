@@ -3,7 +3,7 @@ title: "System tables"
 topic: "query-processing"
 description: "fn_servershareddrives"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Deprecated feature

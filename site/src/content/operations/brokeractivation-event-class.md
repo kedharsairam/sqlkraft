@@ -3,7 +3,7 @@ title: "Broker:Activation Event Class"
 topic: "event-classes"
 description: "generates a event when a queue monitor starts an activation stored procedure, sends a QUEUE_ACTIVATION notific"
 tags: ["event-classes","brokeractivation-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 generates a

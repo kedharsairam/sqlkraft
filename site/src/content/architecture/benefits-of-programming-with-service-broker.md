@@ -3,7 +3,7 @@ title: "Benefits of Programming with Service Broker"
 topic: "service-broker"
 description: "08/29/2025 Queuing and asynchronous messaging are needed for many database applications today."
 tags: ["service-broker","benefits-of-programming-with-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Queuing and asynchronous messaging are needed for many database applications today.

@@ -3,7 +3,7 @@ title: "Columns without a Name"
 topic: "xml-data"
 description: "Any column without a name will be inlined."
 tags: ["xml-data","columns-without-a-name"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Any column without a name will be inlined. For example, computed columns or nested scalar

@@ -4,7 +4,7 @@ title: "Troubleshoot"
 category: "statements"
 description: "Consider the following information when you plan to shrink a file:"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## The file doesn't shrink

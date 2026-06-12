@@ -3,7 +3,7 @@ title: "Example: Specifying XSINIL with the ELEMENTS Directive"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","example-specifying-xsinil-with-the-elements-directive"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following query specifies the

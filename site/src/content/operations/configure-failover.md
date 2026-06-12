@@ -3,7 +3,7 @@ title: "Configure failover"
 topic: "linux-operations"
 description: ""
 tags: ["linux-operations","configure-failover"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

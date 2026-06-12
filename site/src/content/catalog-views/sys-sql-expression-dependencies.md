@@ -4,7 +4,7 @@ title: "sys.sql_expression_dependencies"
 category: "compatibility"
 description: "SQL analytics endpoint in Microsoft Fabric Contains one row for each by-name dependency on a user-defined entity in the current database. This includes dependencies between natively compiled, scalar user-defined functions and other SQL Server modules."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.sql_expression_dependencies"
 ---
 

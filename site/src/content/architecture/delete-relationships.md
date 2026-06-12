@@ -3,7 +3,7 @@ title: "Delete relationships"
 topic: "tables"
 description: ""
 tags: ["tables","delete-relationships"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

@@ -3,7 +3,7 @@ title: "T-SQL Event Category"
 topic: "event-classes"
 description: "The event category contains general Transact-SQL events. Description Exec Prepared SQL Eve"
 tags: ["event-classes","t-sql-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

@@ -3,7 +3,7 @@ title: "OLE automation return codes & error information"
 topic: "spatial-data"
 description: "The OLE automation system stored procedures return an return code that is the HRESULT returned by the underlying OLE automation operation. An HRESULT"
 tags: ["spatial-data","ole-automation-return-codes-error-information"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The OLE automation system stored procedures return an

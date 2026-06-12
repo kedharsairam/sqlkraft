@@ -3,7 +3,7 @@ title: "Creating Service Broker Objects"
 topic: "service-broker"
 description: "08/29/2025 An application uses Service Broker by executing Transact-SQL statements that operate on Service Broker objects defined in a database."
 tags: ["service-broker","creating-service-broker-objects"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 An application uses Service Broker by executing Transact-SQL statements that operate on

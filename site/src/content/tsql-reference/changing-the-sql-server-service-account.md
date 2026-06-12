@@ -4,7 +4,7 @@ title: "Changing the SQL Server Service Account"
 category: "statements"
 description: "Specifies the name of the new Windows service account."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 NEW_ACCOUNT

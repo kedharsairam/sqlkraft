@@ -4,7 +4,7 @@ title: "Supported string literal formats for date"
 category: "data-types"
 description: ""
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## String literal formats for month-day-year

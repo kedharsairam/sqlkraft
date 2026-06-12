@@ -5,7 +5,7 @@ category: "latency"
 severity: "medium"
 description: "Occurs when AG work items are queued waiting for worker threads. Indicates the AG worker pool is saturated — often during large redo operations or failovers."
 tags: ["ag","work-queue","redo"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

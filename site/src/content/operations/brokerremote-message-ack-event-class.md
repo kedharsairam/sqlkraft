@@ -3,7 +3,7 @@ title: "Broker:Remote Message Ack Event Class"
 topic: "event-classes"
 description: "generates a event when Service Broker sends or receives a message acknowledgement. Description The name of t"
 tags: ["event-classes","brokerremote-message-ack-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 generates a

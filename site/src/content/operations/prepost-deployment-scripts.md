@@ -3,7 +3,7 @@ title: "Pre/post deployment scripts"
 topic: "ssms"
 description: "Pre-deployment and post-deployment scripts are SQL scripts that are included in the project t"
 tags: ["ssms","prepost-deployment-scripts"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Pre-deployment and post-deployment scripts are SQL scripts that are included in the project to

@@ -3,7 +3,7 @@ title: "Stack sizes"
 topic: "query-processing"
 description: "Memory for thread stacks , CLR , extended procedure .dll files, the OLE DB providers"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Memory for thread stacks , CLR , extended procedure.dll files, the OLE DB providers

@@ -4,34 +4,34 @@ title: "sp_articlecolumn"
 category: "general"
 description: "Used to specify columns included in an article to vertically filter data in a published table. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_articlecolumn
-      [ @publication = ]
-      N
-      'publication'
-      , [ @article = ]
-      N
-      'article'
-      [ , [ @column = ]
-      N
-      'column'
-      ]
-      [ , [ @operation = ]
-      N
-      'operation'
-      ]
-      [ , [ @refresh_synctran_procs = ] refresh_synctran_procs ]
-      [ , [ @ignore_distributor = ] ignore_distributor ]
-      [ , [ @change_active = ] change_active ]
-      [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
-      [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
-      [ , [ @publisher = ]
-      N
-      'publisher'
-      ]
-      [ , [ @internal = ] internal ]
-      [ ; ]
+              [ @publication = ]
+              N
+              'publication'
+              , [ @article = ]
+              N
+              'article'
+              [ , [ @column = ]
+              N
+              'column'
+              ]
+              [ , [ @operation = ]
+              N
+              'operation'
+              ]
+              [ , [ @refresh_synctran_procs = ] refresh_synctran_procs ]
+              [ , [ @ignore_distributor = ] ignore_distributor ]
+              [ , [ @change_active = ] change_active ]
+              [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
+              [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
+              [ , [ @publisher = ]
+              N
+              'publisher'
+              ]
+              [ , [ @internal = ] internal ]
+              [ ; ]
 ---
 
 ## Description

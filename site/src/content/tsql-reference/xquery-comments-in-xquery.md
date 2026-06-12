@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Comments in XQuery"
 syntax: "(:"
 tags: ["xquery","comments-in-xquery"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can add comments to XQuery. Add comment strings by using the and

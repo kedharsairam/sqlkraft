@@ -4,7 +4,7 @@ title: "sp_syspolicy_delete_policy_category"
 category: "general"
 description: "Deletes a policy category in Policy-Based Management."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_syspolicy_delete_policy_category"
 ---
 

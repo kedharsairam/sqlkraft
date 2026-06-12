@@ -4,7 +4,7 @@ title: "sys.module_assembly_usages"
 category: "compatibility"
 description: "Returns a row for each module-to-assembly reference."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Create, Alter, & Drop Secondary Indexes"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","create-alter-drop-secondary-indexes"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Describes how to create a new secondary selective XML index, or alter or drop an existing

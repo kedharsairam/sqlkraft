@@ -3,7 +3,7 @@ title: "Upgrade"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","upgrade"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When upgrading a SQL Server mirrored instance to a new version, to a new SQL Server service

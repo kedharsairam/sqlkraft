@@ -3,7 +3,7 @@ title: "Extended security updates (ESUs)"
 topic: "upgrade"
 description: "? SQL Server 2014 (12.x) This article provides information on how to receive Extended Security Updates (ESUs) for versions of SQL Server that are out of extended support. Ex"
 tags: ["upgrade","extended-security-updates-esus"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ?

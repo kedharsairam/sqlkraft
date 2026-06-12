@@ -4,7 +4,7 @@ title: "Date and time data types"
 category: "data-types"
 description: "Lists and describes the date and time data types available in T-SQL, including their ranges, accuracy, and storage sizes."
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 rowversion

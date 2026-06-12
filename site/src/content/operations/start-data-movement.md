@@ -3,7 +3,7 @@ title: "Start data movement"
 topic: "high-availability"
 description: "This topic contains information about how to start data synchronization after you add a database to an Always On availability group."
 tags: ["high-availability","start-data-movement"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic contains information about how to start data synchronization after you add a

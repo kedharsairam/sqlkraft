@@ -3,7 +3,7 @@ title: "Read data pages"
 topic: "query-processing"
 description: ""
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The I/O from an instance of the SQL Server Database Engine includes logical and physical

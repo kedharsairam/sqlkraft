@@ -3,7 +3,7 @@ title: "Memory-optimized hash index design guidelines"
 topic: "index-architecture"
 description: "A nonclustered index contains a copy of part or all of the rows and columns in the underlying"
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 A nonclustered index contains a copy of part or all of the rows and columns in the underlying

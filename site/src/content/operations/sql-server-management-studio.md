@@ -3,7 +3,7 @@ title: "SQL Server Management Studio"
 topic: "high-availability"
 description: "This topic describes how to use the pane of SQL Server Management Studio to monitor and manage existing Always On availability groups, availability r"
 tags: ["high-availability","sql-server-management-studio"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to use the

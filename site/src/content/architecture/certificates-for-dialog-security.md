@@ -3,7 +3,7 @@ title: "Certificates for Dialog Security"
 topic: "service-broker"
 description: "08/29/2025 When a conversation begins, Service Broker uses remote service bindings to locate the certificate to use for the conversation."
 tags: ["service-broker","certificates-for-dialog-security"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When a conversation begins, Service Broker uses remote service bindings to locate the

@@ -3,7 +3,7 @@ title: "Listener"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","listener"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 An availability group listener is a virtual network name (VNN) that clients can connect to in

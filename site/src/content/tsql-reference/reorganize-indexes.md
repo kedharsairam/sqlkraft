@@ -4,7 +4,7 @@ title: "Reorganize indexes"
 category: "statements"
 description: "On multiprocessor computers, just like other queries do,"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 On multiprocessor computers, just like other queries do,

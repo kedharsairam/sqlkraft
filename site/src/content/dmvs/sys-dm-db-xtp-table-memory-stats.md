@@ -4,20 +4,20 @@ title: "sys.dm_db_xtp_table_memory_stats"
 category: "in-memory"
 description: "Returns memory usage statistics for each In-Memory OLTP table (user and system) in the current database. The system tables have negative object IDs and are used to store run-time information for the In-Memory OLTP engine. Unlike user objects, system tables are internal and only exist in-memory, therefore, they are not visible through catalog views."
 tags: ["in-memory","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   -- finding memory for objects
-      SELECT
-      OBJECT_NAME(object_id), *
-      FROM
-      sys.dm_db_xtp_table_memory_stats;
-      SELECT
-      SUM
-      ( memory_allocated_for_indexes_kb + memory_allocated_for_table_kb)
-      AS
-      memoryallocated_objects_in_kb
-      FROM
-      sys.dm_db_xtp_table_memory_stats;
+                SELECT
+                OBJECT_NAME(object_id), *
+                FROM
+                sys.dm_db_xtp_table_memory_stats;
+                SELECT
+                SUM
+                ( memory_allocated_for_indexes_kb + memory_allocated_for_table_kb)
+                AS
+                memoryallocated_objects_in_kb
+                FROM
+                sys.dm_db_xtp_table_memory_stats;
 ---
 
 ## Description

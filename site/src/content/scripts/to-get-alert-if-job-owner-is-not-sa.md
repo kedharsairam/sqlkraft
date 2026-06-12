@@ -4,7 +4,7 @@ title: "To Get Alert if Job Owner is not SA"
 description: "diagnostic script for automation operations."
 category: "automation"
 tags: ["agent-job","automation"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

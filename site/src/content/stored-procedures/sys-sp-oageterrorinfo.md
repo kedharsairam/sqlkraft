@@ -4,28 +4,28 @@ title: "sp_OAGetErrorInfo"
 category: "general"
 description: "Help context ID in the Help source file. Each call to an OLE Automation stored procedure (except ) resets the error information; therefore, obtains error information only for the most recent OLE Automation stored procedure call. Because doesn't reset the error information, it can be called multiple times to get the same error information. The following table lists OLE Automation errors and their c"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_
-      OAG
-      et
-      E
-      rror
-      I
-      nfo [ objecttoken ]
-      [ , source
-      OUTPUT
-      ]
-      [ , description
-      OUTPUT
-      ]
-      [ , helpfile
-      OUTPUT
-      ]
-      [ , helpid
-      OUTPUT
-      ]
-      [ ; ]
+              OAG
+              et
+              E
+              rror
+              I
+              nfo [ objecttoken ]
+              [ , source
+              OUTPUT
+              ]
+              [ , description
+              OUTPUT
+              ]
+              [ , helpfile
+              OUTPUT
+              ]
+              [ , helpid
+              OUTPUT
+              ]
+              [ ; ]
 ---
 
 ## Description

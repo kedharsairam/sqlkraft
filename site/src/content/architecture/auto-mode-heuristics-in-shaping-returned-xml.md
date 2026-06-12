@@ -3,7 +3,7 @@ title: "AUTO Mode Heuristics in Shaping Returned XML"
 topic: "xml-data"
 description: "AUTO mode determines the shape of returned XML based on the query. In determining how elemen"
 tags: ["xml-data","auto-mode-heuristics-in-shaping-returned-xml"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 AUTO mode determines the shape of returned XML based on the query. In determining how

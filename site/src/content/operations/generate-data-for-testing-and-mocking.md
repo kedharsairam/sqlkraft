@@ -3,12 +3,12 @@ title: "Generate data for testing and mocking"
 topic: "profiler"
 description: |
   Quickstart: Generate data for testing and
-  
-    In this quickstart, you learn how to use GitHub Copilot to create realistic and themed datasets
-  
-    to support application development, testing, and demos. By a
+          
+            In this quickstart, you learn how to use GitHub Copilot to create realistic and themed datasets
+          
+            to support application development, testing, and demos. By a
 tags: ["profiler","generate-data-for-testing-and-mocking"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Quickstart: Generate data for testing and

@@ -3,7 +3,7 @@ title: "Example: Querying XMLType Columns"
 topic: "xml-data"
 description: "The following query includes columns of type. The query retrieves product model ID, name, a"
 tags: ["xml-data","example-querying-xmltype-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following query includes columns of

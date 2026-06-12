@@ -3,7 +3,7 @@ title: "Tools and methods for diagnosing latch contention"
 topic: "io-fundamentals"
 description: ""
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Logical file layout can affect the level of page latch contention caused by

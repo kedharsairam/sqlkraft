@@ -4,13 +4,13 @@ title: "sp_cursor_list"
 category: "general"
 description: "A data type for variables or stored procedure OUTPUT parameters that contain a reference to a The operations that can reference variables and parameters having a @local_variable @local_variable The OPEN, FETCH, CLOSE, and DEALLOCATE cursor statements. Stored procedure output parameters. The CURSOR_STATUS function. syste"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_cursor_list
-      [ @cursor_return = ] cursor_return
-      OUTPUT
-      , [ @cursor_scope = ] cursor_scope
-      [ ; ]
+              [ @cursor_return = ] cursor_return
+              OUTPUT
+              , [ @cursor_scope = ] cursor_scope
+              [ ; ]
 ---
 
 ## Description

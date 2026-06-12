@@ -3,7 +3,7 @@ title: "Design issues"
 topic: "ssms"
 description: ""
 tags: ["ssms","design-issues"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When you analyze the T-SQL code in your database project, one or more warnings might be

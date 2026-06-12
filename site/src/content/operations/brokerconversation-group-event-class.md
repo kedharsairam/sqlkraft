@@ -3,7 +3,7 @@ title: "Broker:Conversation Group Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","brokerconversation-group-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 generates a

@@ -3,7 +3,7 @@ title: "Data warehouse"
 topic: "filestream"
 description: "Columnstore indexes, in conjunction with partitioning, are e"
 tags: ["filestream","data-warehouse"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

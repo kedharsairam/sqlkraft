@@ -3,7 +3,7 @@ title: "Unprepare SQL Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","unprepare-sql-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Unprepare SQL event class indicates that the SqlClient, ODBC, OLE DB, or DB-Library has

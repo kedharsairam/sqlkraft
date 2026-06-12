@@ -3,7 +3,7 @@ title: "Configure with mssql-conf"
 topic: "linux-operations"
 description: "on Linux is a configuration script that installs with SQL Server for Red Hat Enterprise Linux, SUSE Linux Enterprise Server, and Ubuntu."
 tags: ["linux-operations","configure-with-mssql-conf"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

@@ -3,7 +3,7 @@ title: "FILE_FLAG_WRITE_THROUGH"
 topic: "query-processing"
 description: "data modification statements generate logical page writes."
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 data modification statements generate logical page writes. You can picture this

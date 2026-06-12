@@ -4,72 +4,72 @@ title: "sp_send_dbmail"
 category: "general"
 description: "Sends an e-mail message to the specified recipients. The message might include a query result set, file attachments, or both. When mail is successfully placed in the Database Mail queue, of the message."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_send_dbmail [ [ @profile_name = ]
-      'profile_name'
-      ]
-      [ , [ @recipients = ]
-      'recipients [ ; ...n ]'
-      ]
-      [ , [ @copy_recipients = ]
-      'copy_recipient [ ; ...n ]'
-      ]
-      [ , [ @blind_copy_recipients = ]
-      'blind_copy_recipient [ ; ...n ]'
-      ]
-      [ , [ @from_address = ]
-      'from_address'
-      ]
-      [ , [ @reply_to = ]
-      'reply_to'
-      ]
-      [ , [ @subject = ]
-      N
-      'subject'
-      ]
-      [ , [ @body = ]
-      N
-      'body'
-      ]
-      [ , [ @body_format = ]
-      'body_format'
-      ]
-      [ , [ @importance = ]
-      'importance'
-      ]
-      [ , [ @sensitivity = ]
-      'sensitivity'
-      ]
-      [ , [ @file_attachments = ]
-      N
-      'attachment [ ; ...n ]'
-      ]
-      [ , [ @query = ]
-      N
-      'query'
-      ]
-      [ , [ @execute_query_database = ]
-      'execute_query_database'
-      ]
-      [ , [ @attach_query_result_as_file = ] attach_query_result_as_file ]
-      [ , [ @query_attachment_filename = ]
-      N
-      'query_attachment_filename'
-      ]
-      [ , [ @query_result_header = ] query_result_header ]
-      [ , [ @query_result_width = ] query_result_width ]
-      [ , [ @query_result_separator = ]
-      'query_result_separator'
-      ]
-      [ , [ @exclude_query_output = ] exclude_query_output ]
-      [ , [ @append_query_error = ] append_query_error ]
-      [ , [ @query_no_truncate = ] query_no_truncate ]
-      [ , [ @query_result_no_padding = ] @query_result_no_padding ]
-      [ , [ @mailitem_id = ] mailitem_id ] [
-      OUTPUT
-      ]
-      [ ; ]
+              'profile_name'
+              ]
+              [ , [ @recipients = ]
+              'recipients [ ; ...n ]'
+              ]
+              [ , [ @copy_recipients = ]
+              'copy_recipient [ ; ...n ]'
+              ]
+              [ , [ @blind_copy_recipients = ]
+              'blind_copy_recipient [ ; ...n ]'
+              ]
+              [ , [ @from_address = ]
+              'from_address'
+              ]
+              [ , [ @reply_to = ]
+              'reply_to'
+              ]
+              [ , [ @subject = ]
+              N
+              'subject'
+              ]
+              [ , [ @body = ]
+              N
+              'body'
+              ]
+              [ , [ @body_format = ]
+              'body_format'
+              ]
+              [ , [ @importance = ]
+              'importance'
+              ]
+              [ , [ @sensitivity = ]
+              'sensitivity'
+              ]
+              [ , [ @file_attachments = ]
+              N
+              'attachment [ ; ...n ]'
+              ]
+              [ , [ @query = ]
+              N
+              'query'
+              ]
+              [ , [ @execute_query_database = ]
+              'execute_query_database'
+              ]
+              [ , [ @attach_query_result_as_file = ] attach_query_result_as_file ]
+              [ , [ @query_attachment_filename = ]
+              N
+              'query_attachment_filename'
+              ]
+              [ , [ @query_result_header = ] query_result_header ]
+              [ , [ @query_result_width = ] query_result_width ]
+              [ , [ @query_result_separator = ]
+              'query_result_separator'
+              ]
+              [ , [ @exclude_query_output = ] exclude_query_output ]
+              [ , [ @append_query_error = ] append_query_error ]
+              [ , [ @query_no_truncate = ] query_no_truncate ]
+              [ , [ @query_result_no_padding = ] @query_result_no_padding ]
+              [ , [ @mailitem_id = ] mailitem_id ] [
+              OUTPUT
+              ]
+              [ ; ]
 ---
 
 ## Description

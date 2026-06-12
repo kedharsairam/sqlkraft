@@ -4,16 +4,16 @@ title: "sp_changedbowner"
 category: "general"
 description: "Changes the owner of the current database. The login ID of the new owner of the current database. must be an already existing SQL Server login or Windows user. become the owner of the current database if it already has access to the database through an existing user security account within the database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_changedbowner
-      [ @loginame = ]
-      N
-      'loginame'
-      [ , [ @map = ]
-      'map'
-      ]
-      [ ; ]
+              [ @loginame = ]
+              N
+              'loginame'
+              [ , [ @map = ]
+              'map'
+              ]
+              [ ; ]
 ---
 
 ## Description

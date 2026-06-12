@@ -3,7 +3,7 @@ title: "SP:CacheMiss Event Class"
 topic: "event-classes"
 description: "The SP:CacheMiss event class indicates that the procedure is not found in the cache."
 tags: ["event-classes","spcachemiss-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The SP:CacheMiss event class indicates that the procedure is not found in the cache. If the

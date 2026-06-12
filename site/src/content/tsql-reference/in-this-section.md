@@ -4,7 +4,7 @@ title: "In This Section"
 category: "predicates"
 description: ""
 tags: ["tsql","predicates"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 This section describes the RESTORE statements for backups. In addition to the main RESTORE

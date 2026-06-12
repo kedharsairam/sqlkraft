@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: SequenceType Expressions"
 syntax: "instance of"
 tags: ["xquery","sequencetype-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In XQuery, a value is always a sequence. The type of the value is referred to as a sequence type.

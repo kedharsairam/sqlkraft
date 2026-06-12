@@ -3,7 +3,7 @@ title: "Guidelines for using forced parameterization"
 topic: "io-fundamentals"
 description: "Fixed-point numeric literals that are parts of predicates that involve comparison operators"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Fixed-point numeric literals that are parts of predicates that involve comparison operators

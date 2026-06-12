@@ -3,7 +3,7 @@ title: "Restore the master database"
 topic: "linux-operations"
 description: "on Linux Under certain circumstances, you might need to restore the database on an instance of SQL Server in single-user mode on Linux."
 tags: ["linux-operations","restore-the-master-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

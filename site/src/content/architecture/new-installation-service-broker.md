@@ -3,7 +3,7 @@ title: "New Installation (Service Broker)"
 topic: "service-broker"
 description: "09/10/2025 To install a Service Broker service, the developer gives the administrator a set of installation scripts."
 tags: ["service-broker","new-installation-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To install a Service Broker service, the developer gives the administrator a set of installation

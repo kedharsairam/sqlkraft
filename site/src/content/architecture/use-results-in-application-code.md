@@ -3,7 +3,7 @@ title: "Use results in application code"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","use-results-in-application-code"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 By using FOR XML clauses with SQL queries, you can retrieve and cast query results as XML

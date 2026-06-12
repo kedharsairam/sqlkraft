@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions Related to QNames - namespace-uri-from-QName"
 syntax: "namespace-uri-from-QName($arg as xs:QName?) as xs:string?"
 tags: ["xquery","functions-related-to-qnames-namespace-uri-from-qname"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns a string representing the namespace uri of the QName specified by

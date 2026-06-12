@@ -3,7 +3,7 @@ title: "Service Broker Activation"
 topic: "service-broker"
 description: "09/11/2025 Service Broker activation helps applications to scale dynamically to match the message traffic. In general, an application uses activa"
 tags: ["service-broker","service-broker-activation"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker activation helps applications to scale dynamically to match the message traffic.

@@ -3,7 +3,7 @@ title: "Example"
 topic: "query-processing"
 description: "Table Partition 3: A >= 20 AND A < 30"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Table Partition 3: A >= 20 AND A < 30

@@ -4,7 +4,7 @@ title: "sys.dm_tran_top_version_generators"
 category: "io"
 description: "Returns a virtual table for the objects that are producing the most versions in the version store. returns the top 256 aggregated record lengths that are is an inefficient view to run because this view queries the version store, and the version store can be very large."
 tags: ["io","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.dm_tran_top_version_generators"
 ---
 

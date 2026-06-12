@@ -3,7 +3,7 @@ title: "Failover Policy"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","failover-policy"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In a SQL Server failover cluster instance (FCI), only one node can own the Windows Server

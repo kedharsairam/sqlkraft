@@ -3,7 +3,7 @@ title: "Recompile"
 topic: "spatial-data"
 description: "This article describes how to recompile a stored procedure i"
 tags: ["spatial-data","recompile"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

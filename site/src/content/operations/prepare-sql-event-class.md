@@ -3,7 +3,7 @@ title: "Prepare SQL Event Class"
 topic: "event-classes"
 description: "The Prepare SQL event class indicates that SqlClient, ODBC, OLE DB, or DB-Library has prepar"
 tags: ["event-classes","prepare-sql-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Prepare SQL event class indicates that SqlClient, ODBC, OLE DB, or DB-Library has

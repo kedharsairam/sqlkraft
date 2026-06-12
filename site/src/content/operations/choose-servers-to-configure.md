@@ -3,7 +3,7 @@ title: "Choose Servers to Configure"
 topic: "high-availability"
 description: "Use this page to specify which server instances you want to configure now. You must select at least one server instance before continuing the wizard."
 tags: ["high-availability","choose-servers-to-configure"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to specify which server instances you want to configure now. You must select at

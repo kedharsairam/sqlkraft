@@ -3,7 +3,7 @@ title: "Example B"
 topic: "query-processing"
 description: "statement is executed under the transaction that is still active under session"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Session 1:

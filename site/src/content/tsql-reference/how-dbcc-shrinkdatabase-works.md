@@ -4,7 +4,7 @@ title: "How DBCC SHRINKDATABASE works"
 category: "statements"
 description: "size explicitly set by using a file size changing operation."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 size explicitly set by using a file size changing operation. Operations like

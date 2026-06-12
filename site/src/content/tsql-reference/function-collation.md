@@ -4,7 +4,7 @@ title: "Function collation"
 category: "statements"
 description: "Perform logical operations."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

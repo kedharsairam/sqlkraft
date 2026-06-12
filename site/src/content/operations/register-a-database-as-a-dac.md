@@ -3,7 +3,7 @@ title: "Register a database as a DAC"
 topic: "ssms"
 description: ""
 tags: ["ssms","register-a-database-as-a-dac"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The registration process creates a data-tier application (DAC) definition that defines the objects

@@ -3,7 +3,7 @@ title: "Export a bacpac file"
 topic: "ssms"
 description: "Exporting a database creates an export file that includes the definitions of the objects in t"
 tags: ["ssms","export-a-bacpac-file"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Exporting a database creates an export file that includes the definitions of the objects in the

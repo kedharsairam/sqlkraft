@@ -3,7 +3,7 @@ title: "Configure FailureConditionLevel"
 topic: "high-availability"
 description: "Use the FailureConditionLevel property to set the conditions for the Always On Failover Cluster Instance (FCI) to fail over or restart."
 tags: ["high-availability","configure-failureconditionlevel"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use the FailureConditionLevel property to set the conditions for the Always On Failover Cluster

@@ -3,7 +3,7 @@ title: "Attach a Database"
 topic: "collation"
 description: "This article describes how to attach a database in SQL Server with SQL Server Management Studio or Transact-SQL."
 tags: ["collation","attach-a-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to attach a database in SQL Server with SQL Server Management

@@ -3,7 +3,7 @@ title: "Data File Auto Shrink Event Class"
 topic: "event-classes"
 description: "The event class indicates that the data file has been shrunk. This event is not triggered i"
 tags: ["event-classes","data-file-auto-shrink-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

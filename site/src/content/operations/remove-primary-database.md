@@ -3,7 +3,7 @@ title: "Remove primary database"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","remove-primary-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to remove both the primary database and the corresponding

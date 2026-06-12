@@ -4,7 +4,7 @@ title: "Examples: Analytics Platform System (PDW)"
 category: "statements"
 description: "The following example drops the certificate"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following example drops the certificate from the database.

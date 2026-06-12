@@ -3,7 +3,7 @@ title: "Warnings Page"
 topic: "high-availability"
 description: "Displays a read-only list of warnings supported on database mirroring events and the specified warning threshold values, if available. Start Database"
 tags: ["high-availability","warnings-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Displays a read-only list of warnings supported on database mirroring events and the specified

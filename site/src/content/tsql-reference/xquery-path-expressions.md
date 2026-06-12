@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Path Expressions"
 syntax: "child::Features"
 tags: ["xquery","path-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 XQuery path expressions locate nodes, such as element, attribute, and text nodes, in a

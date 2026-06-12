@@ -3,7 +3,7 @@ title: "What is an Always On availability group?"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","what-is-an-always-on-availability-group"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article introduces the Always On availability groups concepts that are central for

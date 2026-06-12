@@ -4,22 +4,22 @@ title: "sp_monitor"
 category: "general"
 description: "Displays statistics about SQL Server. Number of elapsed seconds since Number of seconds that the server computer's CPU has done SQL Server work. Number of seconds that SQL Server spent doing input and output operations. Number of seconds that SQL Server was idle."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   USE
-      master
-      ;
-      GO
-      EXECUTE
-      sp_monitor;
-      last_run                   current_run                seconds
-      2024-05-01 15:27:51.287    2024-08-21 17:20:34.097    9683563
-      cpu_busy           io_busy         idle
-      14452(14451)-0%    2555(2554)-0%   4371742(4371629)-45%
-      packets_received       packets_sent    packet_errors
-      18032(17993)           64572(64533)    0(0)
-      total_read     total_write   total_errors    connections
-      1593(1593)     4687(4687)    0(0)            155625(155557)
+              master
+              ;
+              GO
+              EXECUTE
+              sp_monitor;
+              last_run                   current_run                seconds
+              2024-05-01 15:27:51.287    2024-08-21 17:20:34.097    9683563
+              cpu_busy           io_busy         idle
+              14452(14451)-0%    2555(2554)-0%   4371742(4371629)-45%
+              packets_received       packets_sent    packet_errors
+              18032(17993)           64572(64533)    0(0)
+              total_read     total_write   total_errors    connections
+              1593(1593)     4687(4687)    0(0)            155625(155557)
 ---
 
 ## Description

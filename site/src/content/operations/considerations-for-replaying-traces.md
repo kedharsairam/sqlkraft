@@ -3,7 +3,7 @@ title: "Considerations for Replaying Traces"
 topic: "profiler"
 description: ""
 tags: ["profiler","considerations-for-replaying-traces"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Profiler can't replay the following kinds of traces:

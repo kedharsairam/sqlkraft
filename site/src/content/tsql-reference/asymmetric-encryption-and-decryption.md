@@ -4,7 +4,7 @@ title: "Asymmetric encryption and decryption"
 category: "operators"
 description: ""
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 These functions support digital signing, digital signature validation, encryption, and decryption.

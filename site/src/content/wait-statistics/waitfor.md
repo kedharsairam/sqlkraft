@@ -5,7 +5,7 @@ category: "baseline"
 severity: "info"
 description: "Occurs when a session executes the WAITFOR command (DELAY or TIME). This is intentional application-level waiting and is almost never a performance problem."
 tags: ["waitfor","delay","application"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

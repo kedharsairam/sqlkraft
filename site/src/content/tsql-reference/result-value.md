@@ -4,7 +4,7 @@ title: "Result value"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Compares a scalar value with a single-column set of values. SOME and ANY are equivalent.

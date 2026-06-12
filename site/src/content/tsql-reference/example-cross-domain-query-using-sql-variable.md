@@ -4,7 +4,7 @@ title: "Example: Cross-domain Query Using sql:variable()"
 category: "variables"
 description: ""
 tags: ["tsql","variables"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 You can specify

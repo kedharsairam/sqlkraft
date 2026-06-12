@@ -3,7 +3,7 @@ title: "Of a nonclustered index"
 topic: "collation"
 description: "Follow these steps to estimate the amount of space that is required to store a nonclustered"
 tags: ["collation","of-a-nonclustered-index"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Follow these steps to estimate the amount of space that is required to store a nonclustered

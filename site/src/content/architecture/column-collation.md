@@ -3,7 +3,7 @@ title: "Column Collation"
 topic: "collation"
 description: "You can override the database collation for , , , , , and data by specifying a differe"
 tags: ["collation","column-collation"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can override the database collation for

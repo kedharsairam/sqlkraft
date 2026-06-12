@@ -5,8 +5,7 @@ category: "performance"
 severity: "critical"
 description: "Systematic approach to diagnosing high CPU usage on SQL Server using DMVs, wait statistics, and diagnostic scripts."
 tags: ["cpu","performance","scheduling","diagnostic"]
-relatedContent: ""
-pubDate: "2026-05-30"
+pubDate: 2026-05-30
 ---
 
 When SQL Server consumes excessive CPU, the root cause typically falls into one of three categories: expensive query compilation/recompilation, inefficient execution plans with scans or excessive row operations, or signal waits from OS-level scheduling pressure.

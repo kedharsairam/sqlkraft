@@ -4,7 +4,7 @@ title: "InstanceOf (geometry Data Type)"
 category: "predicates"
 description: "T-SQL reference covering GeometryCollection."
 tags: ["tsql","predicates"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 geometry

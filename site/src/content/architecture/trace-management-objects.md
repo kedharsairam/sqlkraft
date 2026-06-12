@@ -3,7 +3,7 @@ title: "Trace Management Objects"
 topic: "query-processing"
 description: "and CONCAT_NULLS_YIELDS_NULL"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Deprecated feature

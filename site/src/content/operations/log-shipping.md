@@ -3,7 +3,7 @@ title: "Log Shipping"
 topic: "high-availability"
 description: "A given database can be mirrored or log shipped; it can also be simultaneously mirrored and log shipped."
 tags: ["high-availability","log-shipping"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A given database can be mirrored or log shipped; it can also be simultaneously mirrored and

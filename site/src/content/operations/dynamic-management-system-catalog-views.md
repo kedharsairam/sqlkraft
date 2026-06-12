@@ -3,7 +3,7 @@ title: "Dynamic management & system catalog views"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","dynamic-management-system-catalog-views"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Dynamic management views and system

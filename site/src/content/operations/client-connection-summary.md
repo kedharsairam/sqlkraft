@@ -3,7 +3,7 @@ title: "Client connection summary"
 topic: "azure-synapse"
 description: "This article teaches you how to view client connections to SQL Server enabled by Azure Arc in Azure portal. To collect client connection data for SQL Server enabled by Azure"
 tags: ["azure-synapse","client-connection-summary"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article teaches you how to view client connections to SQL Server enabled by Azure Arc in

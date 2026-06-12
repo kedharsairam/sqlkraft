@@ -3,7 +3,7 @@ title: "View availability group properties"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","view-availability-group-properties"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to view the properties of an availability group for an Always On

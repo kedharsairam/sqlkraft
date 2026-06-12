@@ -3,7 +3,7 @@ title: "Parallel query processing"
 topic: "query-processing"
 description: "In this case, SQL Server doesn't use the value 100 to optimize the query. It uses a general"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 In this case, SQL Server doesn't use the value 100 to optimize the query. It uses a general

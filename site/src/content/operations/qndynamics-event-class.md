@@ -3,7 +3,7 @@ title: "QN:Dynamics Event Class"
 topic: "event-classes"
 description: "The QN:Dynamics event class reports information about the background activity that the Datab"
 tags: ["event-classes","qndynamics-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The QN:Dynamics event class reports information about the background activity that the

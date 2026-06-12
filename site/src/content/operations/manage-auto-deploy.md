@@ -3,7 +3,7 @@ title: "Manage auto deploy"
 topic: "azure-synapse"
 description: "instances are automatically connected to Azure Arc when they are installed on an Azure Arc-enabled Server and the Arc server resource is in a supported region ."
 tags: ["azure-synapse","manage-auto-deploy"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 instances are automatically connected to Azure Arc when they are installed on an

@@ -4,7 +4,7 @@ title: "Examples: Azure Synapse Analytics"
 category: "statements"
 description: ": SQL Server 2019 (15.x)."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## A: Basic procedure execution

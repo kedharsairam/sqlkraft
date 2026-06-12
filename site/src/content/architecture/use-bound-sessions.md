@@ -3,7 +3,7 @@ title: "Use bound sessions"
 topic: "io-fundamentals"
 description: "Bound sessions ease the coordination of actions across multiple sessions on the same server."
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Bound sessions ease the coordination of actions across multiple sessions on the same server.

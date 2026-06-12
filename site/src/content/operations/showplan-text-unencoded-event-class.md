@@ -3,7 +3,7 @@ title: "Showplan Text (Unencoded) Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","showplan-text-unencoded-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Showplan Text (Unencoded) event class occurs when Microsoft SQL Server executes a SQL

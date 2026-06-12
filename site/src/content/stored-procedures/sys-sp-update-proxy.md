@@ -4,29 +4,29 @@ title: "sp_update_proxy"
 category: "general"
 description: "Defines attributes of a SQL Server Agent proxy account. This table is stored in the ID of the proxy account."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_update_proxy
-      [ [ @proxy_id = ] proxy_id ]
-      [ , [ @proxy_name = ]
-      N
-      'proxy_name'
-      ]
-      [ , [ @credential_name = ]
-      N
-      'credential_name'
-      ]
-      [ , [ @credential_id = ] credential_id ]
-      [ , [ @new_name = ]
-      N
-      'new_name'
-      ]
-      [ , [ @enabled = ] enabled ]
-      [ , [ @description = ]
-      N
-      'description'
-      ]
-      [ ; ]
+              [ [ @proxy_id = ] proxy_id ]
+              [ , [ @proxy_name = ]
+              N
+              'proxy_name'
+              ]
+              [ , [ @credential_name = ]
+              N
+              'credential_name'
+              ]
+              [ , [ @credential_id = ] credential_id ]
+              [ , [ @new_name = ]
+              N
+              'new_name'
+              ]
+              [ , [ @enabled = ] enabled ]
+              [ , [ @description = ]
+              N
+              'description'
+              ]
+              [ ; ]
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Register Mirrored Database"
 topic: "high-availability"
 description: "Use this dialog box to register one or more mirrored databases on a given server instance by adding the database or databases to the Database Mirrorin"
 tags: ["high-availability","register-mirrored-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this dialog box to register one or more mirrored databases on a given server instance by

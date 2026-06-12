@@ -3,7 +3,7 @@ title: "xml Data Type"
 topic: "xml-data"
 description: "If a query specifies a column of type in the clause, column values are mapped as elements"
 tags: ["xml-data","xml-data-type"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If a

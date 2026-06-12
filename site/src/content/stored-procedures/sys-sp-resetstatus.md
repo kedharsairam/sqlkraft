@@ -4,14 +4,14 @@ title: "sp_resetstatus"
 category: "general"
 description: "Resets the status of a suspect database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_resetstatus [ @
-      DBN
-      ame = ]
-      N
-      'DBName'
-      [ ; ]
+              DBN
+              ame = ]
+              N
+              'DBName'
+              [ ; ]
 ---
 
 ## Description

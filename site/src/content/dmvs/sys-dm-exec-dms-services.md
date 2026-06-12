@@ -4,7 +4,7 @@ title: "sys.dm_exec_dms_services"
 category: "execution"
 description: "2016 (13.x) and later versions Holds information about all of the DMS services running on the PolyBase compute nodes. It lists one row per service instance. sys.dm_exec_compute_nodes (Transact- PolyBase troubleshooting with dynamic management views Dynamic Management Views and Functions (Transact-SQL) Database Related Dynamic Management Views (Transact-SQL)"
 tags: ["execution","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

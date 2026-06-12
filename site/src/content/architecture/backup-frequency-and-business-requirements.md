@@ -3,7 +3,7 @@ title: "Backup frequency and business requirements"
 topic: "query-processing"
 description: ""
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 scans the buffer cache for buffers with pages from a specified database and writes all dirty

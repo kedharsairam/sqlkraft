@@ -5,33 +5,33 @@ category: "xquery"
 description: "XQuery Language Reference: XQuery Operators Against the xml Data Type"
 syntax: |
   WITH
-    XMLNAMESPACES
-    (
-    'https://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactInfo'
-    AS
-    ACI,
-    'https://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactTypes'
-    AS
-    ACT)
-    SELECT
-    ContactID
-    FROM
-    Person.Contact
-    WHERE
-    AdditionalContactInfo.value(
-    '
-    //ACI:AdditionalContactInfo//ACT:telephoneNumber/ACT:number =
-    ("111-111-1111", "222-2222")'
-    ,
-    'bit'
-    )=
-    cast
-    (1
-    as
-    bit
-    )
+            XMLNAMESPACES
+            (
+            'https://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactInfo'
+            AS
+            ACI,
+            'https://schemas.microsoft.com/sqlserver/2004/07/adventure-works/ContactTypes'
+            AS
+            ACT)
+            SELECT
+            ContactID
+            FROM
+            Person.Contact
+            WHERE
+            AdditionalContactInfo.value(
+            '
+            //ACI:AdditionalContactInfo//ACT:telephoneNumber/ACT:number =
+            ("111-111-1111", "222-2222")'
+            ,
+            'bit'
+            )=
+            cast
+            (1
+            as
+            bit
+            )
 tags: ["xquery","xquery-operators-against-the-xml-data-type"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 XQuery supports the following operators:

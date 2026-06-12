@@ -3,7 +3,7 @@ title: "How it works"
 topic: "filestream"
 description: ""
 tags: ["filestream","how-it-works"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article defines the structures that exist during an online index operation and shows the

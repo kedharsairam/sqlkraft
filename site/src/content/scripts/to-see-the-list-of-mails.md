@@ -4,7 +4,7 @@ title: "To See the List of Mails"
 description: "sent mails:"
 category: "automation"
 tags: ["automation"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

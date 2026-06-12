@@ -1,12 +1,12 @@
 ---
-name: 3023
+name: "3023"
 title: "Error 3023"
 errorNumber: 3023
 severity: "medium"
 category: "io"
 description: ", State: 1. <Datetime> Backup BACKUP failed to complete the command BACKUP DATABASE MyDatabase WITH DIFFERENTIAL. Check the backup application log for detailed messages."
 tags: ["io","severity-medium"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

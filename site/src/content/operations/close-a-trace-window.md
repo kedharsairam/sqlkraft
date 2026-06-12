@@ -3,7 +3,7 @@ title: "Close a Trace Window"
 topic: "profiler"
 description: "06/06/2025 This article describes how to close the trace window for traces that are running or for saved traces you're viewing by using SQL Serve"
 tags: ["profiler","close-a-trace-window"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to close the trace window for traces that are running or for saved

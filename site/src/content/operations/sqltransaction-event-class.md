@@ -3,7 +3,7 @@ title: "SQLTransaction Event Class"
 topic: "event-classes"
 description: "SQLTransaction Event Class Use the SQLTransaction event class to monitor when transactions b"
 tags: ["event-classes","sqltransaction-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQLTransaction Event Class

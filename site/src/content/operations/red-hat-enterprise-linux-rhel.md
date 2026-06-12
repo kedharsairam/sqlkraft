@@ -3,7 +3,7 @@ title: "Red Hat Enterprise Linux (RHEL)"
 topic: "linux-operations"
 description: "on Linux This sample bash script installs SQL Server on Red Hat Enterprise Linux (RHEL) without interactive input."
 tags: ["linux-operations","red-hat-enterprise-linux-rhel"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

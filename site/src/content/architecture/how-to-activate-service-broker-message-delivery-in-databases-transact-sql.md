@@ -3,12 +3,10 @@ title: "How to: Activate Service Broker Message Delivery in Databases (Transact-
 topic: "service-broker"
 description: "ﾃ Summarize this article for me By default, Service Broker is enabled and message delivery is active in a database when the database is create"
 tags: ["service-broker","how-to-activate-service-broker-message-delivery-in-databases-transact-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ﾃ
-
-Summarize this article for me
 
 By default,
 

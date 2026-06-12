@@ -3,7 +3,7 @@ title: "Column Properties"
 topic: "tables"
 description: "2016 (13.x) and later versions Azure SQL Managed Instance Use"
 tags: ["tables","column-properties"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

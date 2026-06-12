@@ -4,12 +4,12 @@ title: "sp_browsemergesnapshotfolder"
 category: "general"
 description: "Returns the complete path for the latest snapshot generated for a merge publication. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_browsemergesnapshotfolder [ @publication = ]
-      N
-      'publication'
-      [ ; ]
+              N
+              'publication'
+              [ ; ]
 ---
 
 ## Description

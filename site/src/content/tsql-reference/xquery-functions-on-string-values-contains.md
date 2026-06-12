@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions on String Values - contains"
 syntax: "fn:contains ($arg1 as xs:string?, $arg2 as xs:string?) as xs:boolean?"
 tags: ["xquery","functions-on-string-values-contains"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns a value of type xs:boolean indicating whether the value of

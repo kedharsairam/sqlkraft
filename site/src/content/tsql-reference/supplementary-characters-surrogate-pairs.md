@@ -4,7 +4,7 @@ title: "Supplementary characters (surrogate pairs)"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 A positive integer or expression that specifies how many characters of the expression

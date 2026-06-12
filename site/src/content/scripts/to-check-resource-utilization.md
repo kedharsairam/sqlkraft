@@ -4,7 +4,7 @@ title: "To Check Resource Utilization"
 description: "diagnostic script for architecture operations."
 category: "architecture"
 tags: ["architecture","health-check"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

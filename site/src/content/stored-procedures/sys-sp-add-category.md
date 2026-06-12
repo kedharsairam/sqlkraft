@@ -4,19 +4,19 @@ title: "sp_add_category"
 category: "general"
 description: "Adds the specified category of jobs, alerts, or operators to the server. For alternative method, The class of the category to be added."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_add_category
-      [ [ @class = ]
-      'class'
-      ]
-      [ , [ @type = ]
-      'type'
-      ]
-      [ , [ @name = ]
-      'name'
-      ]
-      [ ; ]
+              [ [ @class = ]
+              'class'
+              ]
+              [ , [ @type = ]
+              'type'
+              ]
+              [ , [ @name = ]
+              'name'
+              ]
+              [ ; ]
 ---
 
 ## Description

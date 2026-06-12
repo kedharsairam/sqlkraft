@@ -4,16 +4,16 @@ title: "sp_configure"
 category: "general"
 description: "Returns information about the current SET options. The options can come from use of the command or from the value. Session values configured with the command override the Many tools, such as Management Studio, automatically configure set options."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_configure
-        [ [ @configname = ]
-        'configname'
-        ]
-        [ , [ @configvalue = ] configvalue ]
-        [ ; ]
-        sp_configure
-        [ ; ]
+                [ [ @configname = ]
+                'configname'
+                ]
+                [ , [ @configvalue = ] configvalue ]
+                [ ; ]
+                sp_configure
+                [ ; ]
 ---
 
 ## Description

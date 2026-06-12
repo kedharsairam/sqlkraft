@@ -3,7 +3,7 @@ title: "Handling Transact-SQL Errors (Service Broker)"
 topic: "service-broker"
 description: "08/29/2025 Two general principles apply when handling Transact-SQL errors in a Service Broker application. First, an application shouldn't perman"
 tags: ["service-broker","handling-transact-sql-errors-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Two general principles apply when handling Transact-SQL errors in a Service Broker application.

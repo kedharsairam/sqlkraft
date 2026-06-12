@@ -3,7 +3,7 @@ title: "Security cache stores"
 topic: "query-processing"
 description: "name. There's one user token per database for a login."
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

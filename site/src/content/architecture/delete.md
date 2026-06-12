@@ -3,7 +3,7 @@ title: "Delete"
 topic: "filestream"
 description: "This topic describes how to delete (drop) an index in SQL Server by using SQL Server Managem"
 tags: ["filestream","delete"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to delete (drop) an index in SQL Server by using SQL Server

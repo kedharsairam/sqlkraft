@@ -3,12 +3,8 @@ title: "Create, Construct, & Query geometry Instances"
 topic: "spatial-data"
 description: "SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric The planar spatia"
 tags: ["spatial-data","create-construct-query-geometry-instances"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 database in Microsoft Fabric
 

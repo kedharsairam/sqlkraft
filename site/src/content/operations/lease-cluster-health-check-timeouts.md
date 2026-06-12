@@ -3,7 +3,7 @@ title: "Lease, cluster, & health check timeouts"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","lease-cluster-health-check-timeouts"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Differences in hardware, software, and cluster configurations as well as different application

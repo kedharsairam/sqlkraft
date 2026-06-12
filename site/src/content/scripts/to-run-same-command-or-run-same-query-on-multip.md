@@ -4,7 +4,7 @@ title: "To Run Same Command or Run Same Query on Multip"
 description: "diagnostic script for database operations."
 category: "database"
 tags: ["database"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

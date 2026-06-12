@@ -3,7 +3,7 @@ title: "Delete a publication"
 topic: "migration"
 description: "This topic describes how to delete a publication in SQL Server by using SQL Server Management Studio, Transact-SQL, or Rep"
 tags: ["migration","delete-a-publication"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to delete a publication in SQL Server by using SQL Server

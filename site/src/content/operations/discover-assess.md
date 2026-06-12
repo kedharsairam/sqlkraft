@@ -3,7 +3,7 @@ title: "Discover & assess"
 topic: "azure-synapse"
 description: "enabled by Azure Arc automatically produces an assessment for migration to Azure."
 tags: ["azure-synapse","discover-assess"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 enabled by Azure Arc automatically produces an assessment for migration to Azure.

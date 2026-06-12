@@ -3,7 +3,7 @@ title: "Usage scenarios"
 topic: "tables"
 description: ""
 tags: ["tables","usage-scenarios"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

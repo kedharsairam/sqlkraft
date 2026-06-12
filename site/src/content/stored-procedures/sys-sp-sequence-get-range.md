@@ -4,31 +4,31 @@ title: "sp_sequence_get_range"
 category: "general"
 description: "Returns a range of sequence values from a sequence object. The sequence object generates and issues the number of values requested and provides the application with metadata related For a more information about sequence numbers, see The name of the sequence object. The schema is optional. The number of values to fetch from the sequen"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_sequence_get_range
-      [ @sequence_name = ]
-      N
-      'sequence_name'
-      , [ @range_size = ] range_size
-      , [ @range_first_value = ] range_first_value
-      OUTPUT
-      [ , [ @range_last_value = ] range_last_value
-      OUTPUT
-      ]
-      [ , [ @range_cycle_count = ] range_cycle_count
-      OUTPUT
-      ]
-      [ , [ @sequence_increment = ] sequence_increment
-      OUTPUT
-      ]
-      [ , [ @sequence_min_value = ] sequence_min_value
-      OUTPUT
-      ]
-      [ , [ @sequence_max_value = ] sequence_max_value
-      OUTPUT
-      ]
-      [ ; ]
+              [ @sequence_name = ]
+              N
+              'sequence_name'
+              , [ @range_size = ] range_size
+              , [ @range_first_value = ] range_first_value
+              OUTPUT
+              [ , [ @range_last_value = ] range_last_value
+              OUTPUT
+              ]
+              [ , [ @range_cycle_count = ] range_cycle_count
+              OUTPUT
+              ]
+              [ , [ @sequence_increment = ] sequence_increment
+              OUTPUT
+              ]
+              [ , [ @sequence_min_value = ] sequence_min_value
+              OUTPUT
+              ]
+              [ , [ @sequence_max_value = ] sequence_max_value
+              OUTPUT
+              ]
+              [ ; ]
 ---
 
 ## Description

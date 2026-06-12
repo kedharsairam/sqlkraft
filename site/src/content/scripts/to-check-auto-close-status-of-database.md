@@ -4,7 +4,7 @@ title: "To Check Auto Close status of Database"
 description: "for single database"
 category: "database"
 tags: ["database","health-check"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

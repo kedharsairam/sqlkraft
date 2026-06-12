@@ -3,7 +3,7 @@ title: "DDL Triggers"
 topic: "change-data-capture"
 description: "DDL triggers fire in response to various Data Definition Language (DDL) events. These events"
 tags: ["change-data-capture","ddl-triggers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 DDL triggers fire in response to various Data Definition Language (DDL) events. These events

@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Primary Expressions"
 syntax: "&lt;"
 tags: ["xquery","primary-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The XQuery primary expressions include literals, variable references, context item expressions,

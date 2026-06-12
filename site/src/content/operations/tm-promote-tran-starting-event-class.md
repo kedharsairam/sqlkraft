@@ -3,7 +3,7 @@ title: "TM: Promote Tran Starting Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","tm-promote-tran-starting-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The TM: Promote Tran Starting event class indicates that a PROMOTE TRANSACTION request is

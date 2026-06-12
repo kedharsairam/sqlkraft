@@ -3,7 +3,7 @@ title: "RAW Mode"
 topic: "xml-data"
 description: "RAW mode transforms each row in the query result set into an XML element that has the generi"
 tags: ["xml-data","raw-mode"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 RAW mode transforms each row in the query result set into an XML element that has the

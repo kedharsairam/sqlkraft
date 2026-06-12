@@ -3,7 +3,7 @@ title: "Building Applications with Service Broker"
 topic: "service-broker"
 description: "08/29/2025 Any program that can run Transact-SQL statements can use Service Broker. A Service Broker application can be implemented as a program"
 tags: ["service-broker","building-applications-with-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Any program that can run Transact-SQL statements can use Service Broker. A Service Broker

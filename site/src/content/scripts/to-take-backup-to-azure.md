@@ -4,7 +4,7 @@ title: "To take Backup to Azure"
 description: "create credential"
 category: "backup-restore"
 tags: ["backup","backup-restore"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

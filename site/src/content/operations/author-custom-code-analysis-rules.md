@@ -3,7 +3,7 @@ title: "Author custom code analysis rules"
 topic: "ssms"
 description: "This walkthrough demonstrates the steps used to create a SQL Server code analysis rule. The"
 tags: ["ssms","author-custom-code-analysis-rules"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This walkthrough demonstrates the steps used to create a SQL Server code analysis rule. The

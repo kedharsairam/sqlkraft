@@ -3,7 +3,7 @@ title: "Example: Configure with Certificates (T-SQL)"
 topic: "high-availability"
 description: "This example shows all the stages required to create a database mirroring session using certificate-based authentication. The examples in this topic u"
 tags: ["high-availability","example-configure-with-certificates-t-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This example shows all the stages required to create a database mirroring session using

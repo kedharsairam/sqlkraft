@@ -4,11 +4,11 @@ title: "sp_add_targetservergroup"
 category: "general"
 description: "Adds the specified server group."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_add_targetservergroup [ @name = ]
-      'name'
-      [ ; ]
+              'name'
+              [ ; ]
 ---
 
 ## Description

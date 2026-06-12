@@ -3,7 +3,7 @@ title: "Principal Server Instance"
 topic: "high-availability"
 description: "Use this page to specify information about the server instance of the principal database."
 tags: ["high-availability","principal-server-instance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to specify information about the server instance of the principal database. The

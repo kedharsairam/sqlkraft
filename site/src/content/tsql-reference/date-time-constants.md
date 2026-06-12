@@ -4,7 +4,7 @@ title: "Date-time constants"
 category: "data-types"
 description: "Binary constants have the prefix"
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Binary constants have the prefix

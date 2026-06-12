@@ -3,7 +3,7 @@ title: "Broker:Message Undeliverable Event Class"
 topic: "event-classes"
 description: "generates a event when Service Broker is unable to retain a received message that should have been delivered t"
 tags: ["event-classes","brokermessage-undeliverable-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 generates a

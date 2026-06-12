@@ -3,7 +3,7 @@ title: "Backward compatibility"
 topic: "migration"
 description: "Backward compatibility is important to understand if you are upgrading, or if you have more than one version of SQL Server"
 tags: ["migration","backward-compatibility"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Backward compatibility is important to understand if you are upgrading, or if you have more

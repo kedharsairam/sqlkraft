@@ -3,7 +3,7 @@ title: "Example: Retrieving Binary Data"
 topic: "xml-data"
 description: "The following query returns the product photo stored in a type column. The option is specif"
 tags: ["xml-data","example-retrieving-binary-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following query returns the product photo stored in a

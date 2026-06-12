@@ -3,7 +3,7 @@ title: "Return data"
 topic: "spatial-data"
 description: "There are three ways of returning data from a procedure to a calling"
 tags: ["spatial-data","return-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 There are three ways of returning data from a procedure to a calling program: result sets,

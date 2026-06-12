@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: XQuery Extension Functions - sql:variable()"
 syntax: "ProductID"
 tags: ["xquery","xquery-extension-functions-sqlvariable"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Exposes a variable that contains a SQL relational value inside an XQuery expression.

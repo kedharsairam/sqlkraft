@@ -4,7 +4,7 @@ title: "sys.server_events"
 category: "compatibility"
 description: "Contains one row for each event for which a server-level event-notification or server-level DDL uniquely identify the server event."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

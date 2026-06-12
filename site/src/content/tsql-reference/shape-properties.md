@@ -4,12 +4,10 @@ title: "Shape properties"
 category: "statements"
 description: "Describes the shape properties available for spatial data types in T-SQL, including geometry and geography methods."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ﾃ
-
-Summarize this article for me
 
 Analytics Platform System (PDW)
 

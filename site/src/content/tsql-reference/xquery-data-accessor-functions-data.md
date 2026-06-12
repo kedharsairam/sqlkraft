@@ -5,7 +5,7 @@ category: "xquery"
 description: ""
 syntax: "xdt:untypedAtomic"
 tags: ["xquery","data-accessor-functions-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the typed value for each item specified by

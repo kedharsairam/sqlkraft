@@ -4,13 +4,13 @@ title: "sys.backup_devices"
 category: "compatibility"
 description: "105 = A permanent backup device. All permanent device names and device numbers can be Physical block size used to write the media family."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_helpdevice [ [ @devname = ]
-      N
-      'devname'
-      ]
-      [ ; ]
+              N
+              'devname'
+              ]
+              [ ; ]
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Configure and customize containers"
 topic: "linux-operations"
 description: "on Linux This article explains how you can configure and customize SQL Server Linux containers using Docker."
 tags: ["linux-operations","configure-and-customize-containers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

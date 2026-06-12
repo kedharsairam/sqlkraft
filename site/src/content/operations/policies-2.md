@@ -3,7 +3,7 @@ title: "Policies"
 topic: "high-availability"
 description: "The Always On availability groups system policies are used by the Always On Dashboard to provide information on the availability group health to the u"
 tags: ["high-availability","policies-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Always On availability groups system policies are used by the Always On Dashboard to

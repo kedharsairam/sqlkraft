@@ -3,7 +3,7 @@ title: "SORT_IN_TEMPDB"
 topic: "filestream"
 description: ""
 tags: ["filestream","sort-in-tempdb"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When you create or rebuild an index, by setting the SORT_IN_TEMPDB option to ON you can

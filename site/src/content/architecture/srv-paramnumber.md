@@ -3,7 +3,7 @@ title: "srv_paramnumber"
 topic: "clr-integration"
 description: "Returns the number of a remote stored procedure call parameter."
 tags: ["clr-integration","srv-paramnumber"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the number of a remote stored procedure call parameter.

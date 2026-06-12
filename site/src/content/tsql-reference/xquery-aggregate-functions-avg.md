@@ -5,7 +5,7 @@ category: "xquery"
 description: ""
 syntax: "fn:avg($arg as xdt:anyAtomicType*) as xdt:anyAtomicType?"
 tags: ["xquery","aggregate-functions-avg"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the average of a sequence of numbers.

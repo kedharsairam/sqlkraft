@@ -3,7 +3,7 @@ title: "SQL projects extensibility"
 topic: "ssms"
 description: "The .NET Data-tier Application Framework (DacFx) library provides extensibility points that you can use to modify the behavior of the build and deployment actions for database"
 tags: ["ssms","sql-projects-extensibility"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The.NET Data-tier Application Framework (DacFx) library provides extensibility points that you

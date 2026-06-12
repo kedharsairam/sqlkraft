@@ -3,7 +3,7 @@ title: "Mapping parameter data"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","mapping-parameter-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following table lists SQL Server data types, their equivalents in the common language

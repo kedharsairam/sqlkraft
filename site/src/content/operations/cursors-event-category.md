@@ -3,7 +3,7 @@ title: "Cursors Event Category"
 topic: "event-classes"
 description: "The event category contains event classes that are used to monitor the behavior of cursors."
 tags: ["event-classes","cursors-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

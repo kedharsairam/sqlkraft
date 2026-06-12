@@ -3,7 +3,7 @@ title: "Understanding Database Engine errors"
 topic: "monitor"
 description: "SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft F"
 tags: ["monitor","understanding-database-engine-errors"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

@@ -4,7 +4,7 @@ title: "sys.dm_os_sys_memory"
 category: "os"
 description: "Returns memory information from the operating system. SQL Server is bounded by, and responds to, external memory conditions at the operating system level and the physical limits of the underlying hardware. Determining the overall system state is an important part of evaluating SQL Server memory usage. Total size of physical memory available to the operating system,"
 tags: ["os","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Broker:Forwarded Message Sent Event Class"
 topic: "event-classes"
 description: "generates a Broker:Forwarded Message Sent event when Service Broker forwards a message. Description Applicati"
 tags: ["event-classes","brokerforwarded-message-sent-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 generates a Broker:Forwarded Message Sent event when Service Broker forwards a

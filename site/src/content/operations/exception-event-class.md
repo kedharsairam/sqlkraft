@@ -3,7 +3,7 @@ title: "Exception Event Class"
 topic: "event-classes"
 description: "The Exception event class indicates that an exception has occurred in SQL Server. Descriptio"
 tags: ["event-classes","exception-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Exception event class indicates that an exception has occurred in SQL Server.

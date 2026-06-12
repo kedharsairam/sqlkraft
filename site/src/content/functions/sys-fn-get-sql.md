@@ -4,7 +4,7 @@ title: "sys.fn_get_sql"
 category: "system"
 description: "Returns the text of the SQL statement for the specified SQL handle. Database ID. For ad hoc and prepared SQL statements, the ID of the database where the statements were compiled."
 tags: ["system","function"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.fn_get_sql ( SqlHandle )"
 ---
 

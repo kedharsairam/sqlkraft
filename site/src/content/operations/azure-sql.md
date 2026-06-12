@@ -3,7 +3,7 @@ title: "Azure SQL >"
 topic: "azure-synapse"
 description: ""
 tags: ["azure-synapse","azure-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on

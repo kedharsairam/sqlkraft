@@ -3,7 +3,7 @@ title: "Archived documentation for old versions of SQL Server"
 topic: "io-fundamentals"
 description: "2016 (13.x) and later versions"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 2016 (13.x) and later versions

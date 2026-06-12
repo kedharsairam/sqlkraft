@@ -4,13 +4,13 @@ title: "sys.server_principals"
 category: "compatibility"
 description: "Returns the login identification number of the user. Is the login name of the user. is specified as can be any SQL Server login or Windows user or group that has permission to connect to an instance of SQL Server. If is not specified, the login identification number for the current user is returned. If the parameter contains the word NULL"
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   SELECT pr.principal_id, pr.name, pr.type_desc,
-      pe.state_desc, pe.permission_name
-      FROM sys.server_principals AS pr
-      JOIN sys.server_permissions AS pe
-      ON pe.grantee_principal_id = pr.principal_id;
+              pe.state_desc, pe.permission_name
+              FROM sys.server_principals AS pr
+              JOIN sys.server_permissions AS pe
+              ON pe.grantee_principal_id = pr.principal_id;
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Index architecture and design guide"
 topic: "index-architecture"
 description: ""
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Designing efficient indexes is key to achieving good database and application performance. A

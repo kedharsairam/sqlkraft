@@ -3,7 +3,7 @@ title: "Batch mode execution"
 topic: "io-fundamentals"
 description: ""
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The SQL Server Database Engine processes queries on various data storage architectures such

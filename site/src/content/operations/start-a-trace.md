@@ -3,7 +3,7 @@ title: "Start a Trace"
 topic: "profiler"
 description: ""
 tags: ["profiler","start-a-trace"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 After you have defined a new trace or created a template by using SQL Server Profiler, you can

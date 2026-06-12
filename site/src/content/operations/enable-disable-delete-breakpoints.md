@@ -3,7 +3,7 @@ title: "Enable, Disable, & Delete Breakpoints"
 topic: "ssb-diagnose"
 description: "09/09/2025 To view and manage all the open breakpoints, you can use the window. Use the window to view breakpoint information and to take actions such as deleting, disablin"
 tags: ["ssb-diagnose","enable-disable-delete-breakpoints"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To view and manage all the open breakpoints, you can use the

@@ -3,7 +3,7 @@ title: "Implicit transactions and avoiding concurrency and resource problems"
 topic: "io-fundamentals"
 description: "Don't open a transaction while browsing through data, if at all possible. Transactions"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Don't open a transaction while browsing through data, if at all possible. Transactions

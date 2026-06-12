@@ -3,7 +3,7 @@ title: "Lock:Deadlock Chain Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","lockdeadlock-chain-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

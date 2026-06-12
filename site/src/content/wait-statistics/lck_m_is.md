@@ -5,7 +5,7 @@ category: "blocking"
 severity: "medium"
 description: "Occurs when waiting for an intent shared (IS) lock. Typical in hierarchy locking scenarios where a table-level IS lock is blocked by an existing X or U lock on a child object."
 tags: ["lock","intent-shared"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-lock-contention"]
 ---
 

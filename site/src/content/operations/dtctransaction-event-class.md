@@ -3,7 +3,7 @@ title: "DTCTransaction Event Class"
 topic: "event-classes"
 description: "Use the event class to monitor the state of SQL Server Database Engine transactions coordinated through Microsoft Distributed Tra"
 tags: ["event-classes","dtctransaction-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use the

@@ -3,7 +3,7 @@ title: "Distribution"
 topic: "migration"
 description: ""
 tags: ["migration","distribution"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Distributor is a server that contains the distribution database, which stores metadata and

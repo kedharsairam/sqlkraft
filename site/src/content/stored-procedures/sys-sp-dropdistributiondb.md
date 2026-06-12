@@ -4,7 +4,7 @@ title: "sp_dropdistributiondb"
 category: "general"
 description: "Drops a distribution database. Drops the physical files used by the database if they aren't used by another database. This stored procedure is executed at the Distributor on any database. The database to drop. , with no default. Specifies whether this node was previously part of an availability group for the distribution @former_ag_seconda"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_dropdistributiondb"
 ---
 

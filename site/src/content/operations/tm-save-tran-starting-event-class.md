@@ -3,7 +3,7 @@ title: "TM: Save Tran Starting Event Class"
 topic: "event-classes"
 description: "The TM: Save Tran Starting event class indicates that a SAVE TRANSACTION request is starting."
 tags: ["event-classes","tm-save-tran-starting-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The TM: Save Tran Starting event class indicates that a SAVE TRANSACTION request is starting.

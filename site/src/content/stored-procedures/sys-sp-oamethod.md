@@ -4,18 +4,18 @@ title: "sp_OAMethod"
 category: "general"
 description: "Calls a method of an OLE object. The object token of an OLE object that was previously created by using The method name of the OLE object to call. The return value of the method of the OLE object. If specified, it must be a local variable of the Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered o"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_
-      OAM
-      ethod objecttoken , methodname
-      [ , returnvalue
-      OUTPUT
-      ]
-      [ , [ @parametername = ] parameter [
-      OUTPUT
-      ] [ ...n ] ]
-      [ ; ]
+              OAM
+              ethod objecttoken , methodname
+              [ , returnvalue
+              OUTPUT
+              ]
+              [ , [ @parametername = ] parameter [
+              OUTPUT
+              ] [ ...n ] ]
+              [ ; ]
 ---
 
 ## Description

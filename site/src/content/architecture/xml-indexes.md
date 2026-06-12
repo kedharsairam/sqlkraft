@@ -3,7 +3,7 @@ title: "XML Indexes"
 topic: "xml-data"
 description: "XML indexes can be created on data type columns. They index all tags, values and paths over the XML i"
 tags: ["xml-data","xml-indexes"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 XML indexes can be created on

@@ -3,7 +3,7 @@ title: "SQL projects automation"
 topic: "ssms"
 description: ""
 tags: ["ssms","sql-projects-automation"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQL projects automation

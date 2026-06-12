@@ -3,7 +3,7 @@ title: "State Management"
 topic: "service-broker"
 description: "09/11/2025 An application that maintains state typically stores that state in database tables."
 tags: ["service-broker","state-management"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 An application that maintains state typically stores that state in database tables. Because each

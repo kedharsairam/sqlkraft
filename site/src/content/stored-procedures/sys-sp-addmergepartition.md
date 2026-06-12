@@ -4,21 +4,21 @@ title: "sp_addmergepartition"
 category: "general"
 description: "Creates a dynamically filtered partition for a subscription, filtered by the values of at the Subscriber. This stored procedure is executed at the Publisher on the database that is being published, and is used to manually generate partitions. The merge publication on which the partition is being created. The value used when creating the partition for a subscription,"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_addmergepartition
-      [ @publication = ]
-      N
-      'publication'
-      [ , [ @suser_sname = ]
-      N
-      'suser_sname'
-      ]
-      [ , [ @host_name = ]
-      N
-      'host_name'
-      ]
-      [ ; ]
+              [ @publication = ]
+              N
+              'publication'
+              [ , [ @suser_sname = ]
+              N
+              'suser_sname'
+              ]
+              [ , [ @host_name = ]
+              N
+              'host_name'
+              ]
+              [ ; ]
 ---
 
 ## Description

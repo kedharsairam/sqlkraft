@@ -4,13 +4,13 @@ title: "sys.server_permissions"
 category: "security"
 description: "Returns one row for each server-level permission. Identifies class of thing on which permission exists. Description of class on which permission exists. One of the ID of the securable on which permission exists, interpreted according to class. For most, this is just the kind of ID that applies to what the class represents. Interpretation for non-standard is as Secondary ID of thing on which permis"
 tags: ["security","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   SELECT pr.principal_id, pr.name, pr.type_desc,
-      pe.state_desc, pe.permission_name
-      FROM sys.server_principals AS pr
-      JOIN sys.server_permissions AS pe
-      ON pe.grantee_principal_id = pr.principal_id;
+              pe.state_desc, pe.permission_name
+              FROM sys.server_principals AS pr
+              JOIN sys.server_permissions AS pe
+              ON pe.grantee_principal_id = pr.principal_id;
 ---
 
 ## Description

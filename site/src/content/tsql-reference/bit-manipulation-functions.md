@@ -4,7 +4,7 @@ title: "Bit manipulation functions"
 category: "data-types"
 description: "2022 (16.x)"
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 2022 (16.x)
@@ -12,10 +12,6 @@ pubDate: "2026-05-29"
 Azure SQL Managed
 
 Instance
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 Bit manipulation functions such as moving, retrieving (getting), setting, or counting single bits
 

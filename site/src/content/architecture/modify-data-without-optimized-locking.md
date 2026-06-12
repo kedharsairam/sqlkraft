@@ -3,7 +3,7 @@ title: "Modify data without optimized locking"
 topic: "locking"
 description: "Not in the list of the transactions active when the snapshot transaction started."
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Not in the list of the transactions active when the snapshot transaction started.

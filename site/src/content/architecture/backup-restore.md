@@ -3,7 +3,7 @@ title: "Backup & Restore"
 topic: "collation"
 description: "In SQL Server, you can create a new database by restoring a backup of a user database created by using SQL Server 2005 (9.x) or a later version. Howev"
 tags: ["collation","backup-restore"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In SQL Server, you can create a new database by restoring a backup of a user database created

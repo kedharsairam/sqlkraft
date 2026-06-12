@@ -4,10 +4,10 @@ title: "sp_replmonitorhelpmergesessiondetail"
 category: "general"
 description: "Returns detailed, article-level information about a specific replication Merge Agent session, which is used to monitor merge replication. The result set includes a detail row for each article that was synchronized during the session. It also includes a row that represents the session initialization and rows that summarize both the upload and download phases of the session."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_replmonitorhelpmergesessiondetail [ @session_id = ] session_id
-      [ ; ]
+              [ ; ]
 ---
 
 ## Description

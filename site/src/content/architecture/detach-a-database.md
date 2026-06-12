@@ -3,7 +3,7 @@ title: "Detach a Database"
 topic: "collation"
 description: "This article describes how to detach a database in SQL Server with SQL Server Management Studio or Transact-SQL."
 tags: ["collation","detach-a-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to detach a database in SQL Server with SQL Server Management

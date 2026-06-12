@@ -5,7 +5,7 @@ category: "baseline"
 severity: "low"
 description: "Occurs when a Service Broker conversation endpoint waits for messages to arrive. Normal part of Service Broker asynchronous messaging."
 tags: ["service-broker","receive","message"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

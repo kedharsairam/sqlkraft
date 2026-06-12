@@ -3,7 +3,7 @@ title: "Permissions Required to Run SQL Server Profiler"
 topic: "profiler"
 description: ""
 tags: ["profiler","permissions-required-to-run-sql-server-profiler"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 By default, running SQL Server Profiler requires the same user permissions as the Transact-SQL

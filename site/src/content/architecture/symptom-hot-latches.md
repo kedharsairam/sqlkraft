@@ -3,7 +3,7 @@ title: "Symptom: Hot latches"
 topic: "latch-contention"
 description: "The following diagram details the hardware used to test the point of sales system:"
 tags: ["latch-contention","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following diagram details the hardware used to test the point of sales system:

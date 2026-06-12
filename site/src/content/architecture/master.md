@@ -3,7 +3,7 @@ title: "master"
 topic: "collation"
 description: "The database records all the system-level information for a SQL Server system. This includes instance"
 tags: ["collation","master"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

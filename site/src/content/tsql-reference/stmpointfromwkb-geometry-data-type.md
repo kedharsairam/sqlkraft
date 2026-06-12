@@ -4,7 +4,7 @@ title: "STMPointFromWKB (geometry Data Type)"
 category: "data-types"
 description: "Constructs a point geometry instance from a Well-Known Binary (WKB) representation."
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 ## Syntax
 

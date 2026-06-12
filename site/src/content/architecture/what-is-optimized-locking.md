@@ -3,7 +3,7 @@ title: "What is optimized locking?"
 topic: "locking"
 description: "2025 (17.x)"
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 2025 (17.x)

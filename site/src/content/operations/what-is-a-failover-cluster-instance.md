@@ -3,7 +3,7 @@ title: "What is a failover cluster instance?"
 topic: "high-availability"
 description: "08/26/2025 SQL Server Always On failover cluster instances use Windows Server Failover Clustering (WSFC) to provide local high availability. A failover cluster instance (FCI"
 tags: ["high-availability","what-is-a-failover-cluster-instance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Always On failover cluster instances use Windows Server Failover Clustering (WSFC)

@@ -4,7 +4,7 @@ title: "sys.database_scoped_configurations"
 category: "configuration"
 description: "2016 (13.x) and later versions Azure SQL Database SQL Managed Instance Azure Synapse Analytics SQL analytics endpoint in Microsoft Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Contains one row per configuration."
 tags: ["configuration","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "ALTER DATABASE SCOPED CONFIGURATION"
 ---
 

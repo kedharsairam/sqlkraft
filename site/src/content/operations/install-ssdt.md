@@ -3,7 +3,7 @@ title: "Install SSDT"
 topic: "data-tools"
 description: ""
 tags: ["data-tools","install-ssdt"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Data Tools (SSDT)

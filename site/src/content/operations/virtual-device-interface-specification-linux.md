@@ -3,7 +3,7 @@ title: "Virtual Device Interface specification (Linux)"
 topic: "linux-operations"
 description: ""
 tags: ["linux-operations","virtual-device-interface-specification-linux"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux VDI client SDK

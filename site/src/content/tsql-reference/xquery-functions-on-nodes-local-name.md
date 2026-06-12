@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions on Nodes - local-name"
 syntax: "xs:string"
 tags: ["xquery","functions-on-nodes-local-name"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the local part of the name of

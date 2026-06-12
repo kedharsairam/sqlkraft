@@ -3,7 +3,7 @@ title: "SQL:BatchCompleted Event Class"
 topic: "event-classes"
 description: "SQL:BatchCompleted Event Class The SQL:BatchCompleted event class indicates that the Transac"
 tags: ["event-classes","sqlbatchcompleted-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQL:BatchCompleted Event Class

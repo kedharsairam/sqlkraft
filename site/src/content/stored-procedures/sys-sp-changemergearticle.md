@@ -4,26 +4,26 @@ title: "sp_changemergearticle"
 category: "general"
 description: "Changes the properties of a merge article. This stored procedure is executed at the Publisher The name of the publication in which the article exists."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_changemergearticle
-      [ @publication = ]
-      N
-      'publication'
-      , [ @article = ]
-      N
-      'article'
-      [ , [ @property = ]
-      N
-      'property'
-      ]
-      [ , [ @value = ]
-      N
-      'value'
-      ]
-      [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
-      [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
-      [ ; ]
+              [ @publication = ]
+              N
+              'publication'
+              , [ @article = ]
+              N
+              'article'
+              [ , [ @property = ]
+              N
+              'property'
+              ]
+              [ , [ @value = ]
+              N
+              'value'
+              ]
+              [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
+              [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
+              [ ; ]
 ---
 
 ## Description

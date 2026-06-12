@@ -3,7 +3,7 @@ title: "Specify First & Last Triggers"
 topic: "change-data-capture"
 description: "You can specify that one of the AFTER triggers associated with a table be either the first AF"
 tags: ["change-data-capture","specify-first-last-triggers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can specify that one of the AFTER triggers associated with a table be either the first AFTER

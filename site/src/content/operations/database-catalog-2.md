@@ -3,7 +3,7 @@ title: "Database catalog"
 topic: "monitor"
 description: "Explanations for the schemas, tables, and stored procedures in the WideW"
 tags: ["monitor","database-catalog-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics

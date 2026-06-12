@@ -3,7 +3,7 @@ title: "Audit Add Login to Server Role Event Class"
 topic: "event-classes"
 description: "The event class occurs whenever a login is added or removed from a fixed server role."
 tags: ["event-classes","audit-add-login-to-server-role-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

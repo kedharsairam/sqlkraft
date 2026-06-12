@@ -3,7 +3,7 @@ title: "How to: Create Database Objects Using Table Designer"
 topic: "ssb-diagnose"
 description: ""
 tags: ["ssb-diagnose","how-to-create-database-objects-using-table-designer"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Not only is the

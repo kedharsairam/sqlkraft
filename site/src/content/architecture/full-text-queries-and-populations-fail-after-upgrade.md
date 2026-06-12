@@ -3,7 +3,7 @@ title: "Full-Text queries and populations fail after upgrade"
 topic: "io-fundamentals"
 description: ""
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 2025 (17.x) includes changes to

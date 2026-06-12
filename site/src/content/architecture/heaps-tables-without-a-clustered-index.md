@@ -3,7 +3,7 @@ title: "Heaps (tables without a clustered index)"
 topic: "filestream"
 description: "A heap is a table without a clustered index. One or more nonclustered indexes can be created"
 tags: ["filestream","heaps-tables-without-a-clustered-index"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A heap is a table without a clustered index. One or more nonclustered indexes can be created

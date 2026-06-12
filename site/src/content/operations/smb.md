@@ -3,7 +3,7 @@ title: "SMB"
 topic: "linux-operations"
 description: "- Linux This article explains how to configure SMB storage for a failover cluster instance (FCI) on Linux."
 tags: ["linux-operations","smb"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Linux

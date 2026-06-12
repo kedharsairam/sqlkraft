@@ -3,7 +3,7 @@ title: "Permissions"
 topic: "profiler"
 description: "Profiler templates and 06/06/2025 SQL Server Profiler shows how SQL Server resolves queries internally."
 tags: ["profiler","permissions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Profiler templates and

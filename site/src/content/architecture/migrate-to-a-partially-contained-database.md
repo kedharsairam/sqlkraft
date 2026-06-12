@@ -3,7 +3,7 @@ title: "Migrate to a partially contained database"
 topic: "collation"
 description: "This topic discusses how to prepare to change to the partially contained database model and then provides the migration steps. Preparing to Migrate a"
 tags: ["collation","migrate-to-a-partially-contained-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic discusses how to prepare to change to the partially contained database model and

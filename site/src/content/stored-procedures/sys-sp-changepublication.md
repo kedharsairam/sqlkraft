@@ -4,28 +4,28 @@ title: "sp_changepublication"
 category: "general"
 description: "Changes the properties of a publication. This stored procedure is executed at the Publisher on The publication property to change. This table describes the properties of the publication that can be changed and restrictions on the values for those properties."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_changepublication
-      [ [ @publication = ]
-      N
-      'publication'
-      ]
-      [ , [ @property = ]
-      N
-      'property'
-      ]
-      [ , [ @value = ]
-      N
-      'value'
-      ]
-      [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
-      [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
-      [ , [ @publisher = ]
-      N
-      'publisher'
-      ]
-      [ ; ]
+              [ [ @publication = ]
+              N
+              'publication'
+              ]
+              [ , [ @property = ]
+              N
+              'property'
+              ]
+              [ , [ @value = ]
+              N
+              'value'
+              ]
+              [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
+              [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
+              [ , [ @publisher = ]
+              N
+              'publisher'
+              ]
+              [ ; ]
 ---
 
 ## Description

@@ -4,13 +4,13 @@ title: "sp_helpuser"
 category: "general"
 description: "Reports information about database-level principals in the current database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_helpuser [ [ @name_in_db = ]
-      N
-      'name_in_db'
-      ]
-      [ ; ]
+              N
+              'name_in_db'
+              ]
+              [ ; ]
 ---
 
 ## Description

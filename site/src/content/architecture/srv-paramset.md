@@ -3,7 +3,7 @@ title: "srv_paramset"
 topic: "clr-integration"
 description: "Sets the value of a remote stored procedure call return parameter. This function has been superseded by the function. srvproc Is a pointer to the S"
 tags: ["clr-integration","srv-paramset"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Sets the value of a remote stored procedure call return parameter. This function has been

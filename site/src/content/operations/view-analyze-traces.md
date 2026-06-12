@@ -3,7 +3,7 @@ title: "View & Analyze Traces"
 topic: "profiler"
 description: "06/06/2025 Use SQL Server Profiler to view captured event data in a trace. SQL Server Profiler displays data based on defined trace properties. O"
 tags: ["profiler","view-analyze-traces"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use SQL Server Profiler to view captured event data in a trace. SQL Server Profiler displays data

@@ -4,22 +4,22 @@ title: "sys.sequences"
 category: "compatibility"
 description: "Contains a row for each sequence object in a database. The starting value for the sequence object. If the sequence object is restarted by using ALTER SEQUENCE it will restart at this value."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   start_value
-      -9223372036854775808
-      increment
-      1
-      minimum_value
-      -9223372036854775808
-      maximum_value
-      9223372036854775807
-      is_cycling
-      0
-      is_cached
-      1
-      current_value
-      -9223372036854775808
+              -9223372036854775808
+              increment
+              1
+              minimum_value
+              -9223372036854775808
+              maximum_value
+              9223372036854775807
+              is_cycling
+              0
+              is_cached
+              1
+              current_value
+              -9223372036854775808
 ---
 
 ## Description

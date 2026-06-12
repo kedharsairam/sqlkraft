@@ -3,7 +3,7 @@ title: "Subscribers"
 topic: "high-availability"
 description: "When an Always On availability group (AG) fails over, containing a database that is a replication subscriber, the replication subscription might fail."
 tags: ["high-availability","subscribers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When an Always On availability group (AG) fails over, containing a database that is a replication

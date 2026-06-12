@@ -4,13 +4,13 @@ title: "sp_bindsession"
 category: "general"
 description: "Binds or unbinds a session to other sessions in the same instance of the SQL Server Database Engine. Binding sessions allows two or more sessions to participate in the same transaction and The token that identifies the transaction originally obtained by using This feature will be removed in a future version of SQL Server. Avoid using this feature in new development"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_bindsession {
-      'bind_token'
-      |
-      NULL
-      }
+              'bind_token'
+              |
+              NULL
+              }
 ---
 
 ## Description

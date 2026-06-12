@@ -4,7 +4,7 @@ title: "core.sp_add_collector_type"
 category: "general"
 description: "warehouse database. The procedure must be executed in the context of the management data The GUID for the collector type. (with EXECUTE permission) fixed database role. The following example adds the Generic T-SQL Query collector type to the view. By default, the Generic T-SQL Query collector type already exists. Therefore, if you run this code on a default installa"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "core.supported_collector_types"
 ---
 

@@ -3,7 +3,7 @@ title: "Data loading guidance"
 topic: "filestream"
 description: ""
 tags: ["filestream","data-loading-guidance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

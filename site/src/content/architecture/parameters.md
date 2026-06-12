@@ -3,7 +3,7 @@ title: "Parameters"
 topic: "spatial-data"
 description: ""
 tags: ["spatial-data","parameters"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

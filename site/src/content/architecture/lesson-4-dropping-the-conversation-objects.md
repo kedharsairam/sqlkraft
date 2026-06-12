@@ -3,7 +3,7 @@ title: "Lesson 4: Dropping the Conversation Objects"
 topic: "service-broker"
 description: ""
 tags: ["service-broker","lesson-4-dropping-the-conversation-objects"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this lesson, you learn to drop the objects that enabled a database to support a conversation

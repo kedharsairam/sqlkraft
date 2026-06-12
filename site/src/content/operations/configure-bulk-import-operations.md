@@ -3,7 +3,7 @@ title: "Configure bulk import operations"
 topic: "linux-operations"
 description: ""
 tags: ["linux-operations","configure-bulk-import-operations"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2022 (16.x) and later versions on Linux

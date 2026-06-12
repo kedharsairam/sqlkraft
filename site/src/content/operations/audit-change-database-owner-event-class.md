@@ -3,7 +3,7 @@ title: "Audit Change Database Owner Event Class"
 topic: "event-classes"
 description: "The event class occurs when you use the ALTER AUTHORIZATION statement to change the owner of a databa"
 tags: ["event-classes","audit-change-database-owner-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

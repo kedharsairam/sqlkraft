@@ -4,15 +4,15 @@ title: "sp_msx_set_account"
 category: "general"
 description: "Sets the SQL Server Agent master server account name and password on the target server."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_msx_set_account
-      [ [ @credential_name = ]
-      N
-      'credential_name'
-      ]
-      [ , [ @credential_id = ] credential_id ]
-      [ ; ]
+              [ [ @credential_name = ]
+              N
+              'credential_name'
+              ]
+              [ , [ @credential_id = ] credential_id ]
+              [ ; ]
 ---
 
 ## Description

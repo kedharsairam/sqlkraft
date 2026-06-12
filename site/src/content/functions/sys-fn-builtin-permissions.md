@@ -4,7 +4,7 @@ title: "sys.fn_builtin_permissions"
 category: "system"
 description: "Returns a description of the built in permissions hierarchy of the server. can only be called on SQL Server and Azure SQL Database, and it returns all permissions regardless of whether they are supported on the current platform. Most permissions apply to all platforms, but some do not. For example server level permissions cannot be granted on SQL Database."
 tags: ["system","function"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.fn_builtin_permissions"
 ---
 

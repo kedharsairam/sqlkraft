@@ -3,12 +3,8 @@ title: "Spatial Reference Identifiers (SRIDs)"
 topic: "spatial-data"
 description: ""
 tags: ["spatial-data","spatial-reference-identifiers-srids"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 database in Microsoft Fabric
 

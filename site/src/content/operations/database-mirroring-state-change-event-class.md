@@ -3,7 +3,7 @@ title: "Database Mirroring State Change Event Class"
 topic: "event-classes"
 description: "The event class indicates when the state of a mirrored database changes. Include this event class in traces that are monitoring c"
 tags: ["event-classes","database-mirroring-state-change-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

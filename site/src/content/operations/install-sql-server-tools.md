@@ -3,7 +3,7 @@ title: "Install SQL Server tools"
 topic: "linux-operations"
 description: "on Linux The following steps install the command-line tools, Microsoft ODBC drivers, and their dependencies. The package contains: : Command-line query utility."
 tags: ["linux-operations","install-sql-server-tools"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

@@ -5,7 +5,7 @@ category: "blocking"
 severity: "medium"
 description: "Occurs when waiting for an intent update (IU) lock. Common during index operations where the intent update at the table level is blocked by concurrent shared locks."
 tags: ["lock","intent-update"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-lock-contention"]
 ---
 

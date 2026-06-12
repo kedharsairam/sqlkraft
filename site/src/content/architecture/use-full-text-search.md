@@ -3,7 +3,7 @@ title: "Use Full-Text Search"
 topic: "xml-data"
 description: "You can create a full-text index on XML columns that indexes the content of the XML values, but ignore"
 tags: ["xml-data","use-full-text-search"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can create a full-text index on XML columns that indexes the content of the XML values,

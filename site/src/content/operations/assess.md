@@ -3,7 +3,7 @@ title: "Assess"
 topic: "azure-synapse"
 description: "enabled by Azure Arc The best practices assessment feature provides a mechanism to evaluate the configuration of your SQL Server instanc"
 tags: ["azure-synapse","assess"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 enabled by Azure Arc

@@ -4,7 +4,7 @@ title: "sp_unregistercustomresolver"
 category: "general"
 description: "Unregisters a previously registered business logic module. Business logic can be in the form of either a COM component or a Microsoft .NET Framework assembly. This stored procedure is executed on the Distributor where the custom business logic was registered. Specifies the name of the custom business logic being unregistered. @article_resolver , with no default. If"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_unregistercustomresolver"
 ---
 

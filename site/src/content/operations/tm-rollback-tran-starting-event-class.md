@@ -3,7 +3,7 @@ title: "TM: Rollback Tran Starting Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","tm-rollback-tran-starting-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The TM: Rollback Tran Starting event class indicates that a ROLLBACK TRANSACTION request is

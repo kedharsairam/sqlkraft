@@ -4,7 +4,7 @@ title: "sys.fulltext_indexes"
 category: "indexes"
 description: "Contains a row per full-text index of a tabular object."
 tags: ["indexes","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "change_tracking_state"
 ---
 

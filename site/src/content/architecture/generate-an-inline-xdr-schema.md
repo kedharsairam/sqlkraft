@@ -3,7 +3,7 @@ title: "Generate an Inline XDR Schema"
 topic: "xml-data"
 description: "The directive in FOR XML returns an inline XDR schema together with the query result. Howev"
 tags: ["xml-data","generate-an-inline-xdr-schema"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

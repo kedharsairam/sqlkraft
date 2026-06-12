@@ -3,7 +3,7 @@ title: "Deployment options"
 topic: "azure-synapse"
 description: "Azure Arc automatically installs the Azure extension for SQL Server when a server connected to Azure Arc has SQL Server installed. All the SQL Server instance resources are a"
 tags: ["azure-synapse","deployment-options"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Azure Arc automatically installs the Azure extension for SQL Server when a server connected to

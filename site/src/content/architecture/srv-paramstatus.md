@@ -3,7 +3,7 @@ title: "srv_paramstatus"
 topic: "clr-integration"
 description: "Returns the status of a particular remote stored procedure call parameter."
 tags: ["clr-integration","srv-paramstatus"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the status of a particular remote stored procedure call parameter.

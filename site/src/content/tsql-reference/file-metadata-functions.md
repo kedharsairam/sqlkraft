@@ -4,7 +4,7 @@ title: "File metadata functions"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 assumes that, if not specified, the maximum length of

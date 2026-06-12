@@ -3,7 +3,7 @@ title: "Deploy a Pacemaker cluster"
 topic: "linux-operations"
 description: "on Linux This tutorial describes the tasks required to deploy a Linux Pacemaker cluster for a SQL Server Always On availability group (AG) or failover cluster instance (FCI)"
 tags: ["linux-operations","deploy-a-pacemaker-cluster"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

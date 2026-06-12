@@ -4,7 +4,7 @@ title: "O. Use the UNION query hint"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following example shows how the

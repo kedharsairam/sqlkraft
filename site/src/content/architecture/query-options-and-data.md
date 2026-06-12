@@ -3,7 +3,7 @@ title: "Query options and data"
 topic: "xml-data"
 description: "This article describes the query options that you have to specify to query XML data. It also describes"
 tags: ["xml-data","query-options-and-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes the query options that you have to specify to query XML data. It also

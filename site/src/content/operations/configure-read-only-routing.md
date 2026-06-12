@@ -3,7 +3,7 @@ title: "Configure read-only routing"
 topic: "high-availability"
 description: "To configure an Always On availability group to support read-only routing in SQL Server, you can use either Transact-SQL or PowerShell."
 tags: ["high-availability","configure-read-only-routing"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To configure an Always On availability group to support read-only routing in SQL Server, you

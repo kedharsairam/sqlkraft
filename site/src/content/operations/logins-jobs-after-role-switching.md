@@ -3,7 +3,7 @@ title: "Logins & Jobs after role switching"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","logins-jobs-after-role-switching"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When deploying a high-availability or disaster-recovery solution for a SQL Server database, it is

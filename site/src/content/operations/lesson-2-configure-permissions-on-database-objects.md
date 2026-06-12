@@ -3,7 +3,7 @@ title: "Lesson 2: Configure permissions on database objects"
 topic: "configuration"
 description: "Granting a user access to a database involves three steps. F"
 tags: ["configuration","lesson-2-configure-permissions-on-database-objects"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

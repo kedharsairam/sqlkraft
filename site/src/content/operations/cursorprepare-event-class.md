@@ -3,7 +3,7 @@ title: "CursorPrepare Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","cursorprepare-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

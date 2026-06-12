@@ -3,7 +3,7 @@ title: "Change session-timeout period"
 topic: "high-availability"
 description: "This topic describes how to configure the session-timeout period of an Always On availability replica by using SQL Server Management Studio, Transact-"
 tags: ["high-availability","change-session-timeout-period"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to configure the session-timeout period of an Always On availability

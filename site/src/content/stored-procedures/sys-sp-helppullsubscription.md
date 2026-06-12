@@ -4,26 +4,26 @@ title: "sp_helppullsubscription"
 category: "general"
 description: "Drops an anonymous agent for replication monitoring at the distributor from the Publisher. This stored procedure is executed at the Publisher on any database. The global identifier for an anonymous subscription. default. This identifier can be retrieved at the Subscriber using field of the returned result set is this global identifier. The type of subscription."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_helppullsubscription
-      [ [ @publisher = ]
-      N
-      'publisher'
-      ]
-      [ , [ @publisher_db = ]
-      N
-      'publisher_db'
-      ]
-      [ , [ @publication = ]
-      N
-      'publication'
-      ]
-      [ , [ @show_push = ]
-      N
-      'show_push'
-      ]
-      [ ; ]
+              [ [ @publisher = ]
+              N
+              'publisher'
+              ]
+              [ , [ @publisher_db = ]
+              N
+              'publisher_db'
+              ]
+              [ , [ @publication = ]
+              N
+              'publication'
+              ]
+              [ , [ @show_push = ]
+              N
+              'show_push'
+              ]
+              [ ; ]
 ---
 
 ## Description

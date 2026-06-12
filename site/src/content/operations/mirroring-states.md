@@ -3,7 +3,7 @@ title: "Mirroring States"
 topic: "high-availability"
 description: "During a database mirroring session, the mirrored database is always in a specific state (the mirroring state ). The state of the database reflects t"
 tags: ["high-availability","mirroring-states"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 During a database mirroring session, the mirrored database is always in a specific state (the

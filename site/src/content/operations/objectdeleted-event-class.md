@@ -3,7 +3,7 @@ title: "Object:Deleted Event Class"
 topic: "event-classes"
 description: "The Object:Deleted event class indicates that an object has been deleted; for example, by DR"
 tags: ["event-classes","objectdeleted-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Object:Deleted event class indicates that an object has been deleted; for example, by

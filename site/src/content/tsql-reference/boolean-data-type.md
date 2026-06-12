@@ -4,7 +4,7 @@ title: "Boolean Data Type"
 category: "data-types"
 description: ""
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Comparison operators test whether two expressions are the same. Comparison operators can

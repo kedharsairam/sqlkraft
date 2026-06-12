@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions on String Values - string-length"
 syntax: "ROOT"
 tags: ["xquery","functions-on-string-values-string-length"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the length of the string in characters.

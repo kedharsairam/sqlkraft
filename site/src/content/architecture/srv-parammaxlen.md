@@ -3,7 +3,7 @@ title: "srv_parammaxlen"
 topic: "clr-integration"
 description: "Returns the maximum data length of a remote stored procedure call parameter. This function has been superseded by the function. srvproc Is a pointe"
 tags: ["clr-integration","srv-parammaxlen"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the maximum data length of a remote stored procedure call parameter. This function

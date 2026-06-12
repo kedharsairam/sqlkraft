@@ -3,7 +3,7 @@ title: "How to: Deactivate Service Broker Message Delivery in Databases (Transac
 topic: "service-broker"
 description: "09/02/2025 When message delivery isn't active, messages remain in the transmission queue."
 tags: ["service-broker","how-to-deactivate-service-broker-message-delivery-in-databases-transact-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When message delivery isn't active, messages remain in the transmission queue. To determine

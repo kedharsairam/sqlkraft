@@ -3,7 +3,7 @@ title: "From MySQL"
 topic: "migration"
 description: "In this guide, you learn how to migrate your MySQL databases to SQL Server. For other migration guides, see Azure Database Migration Guides . Befor"
 tags: ["migration","from-mysql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this guide, you learn how to migrate your MySQL databases to SQL Server.

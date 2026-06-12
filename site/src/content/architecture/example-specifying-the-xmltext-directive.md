@@ -3,7 +3,7 @@ title: "Example: Specifying the XMLTEXT Directive"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","example-specifying-the-xmltext-directive"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This example illustrates how data in the overflow column is addressed by using the

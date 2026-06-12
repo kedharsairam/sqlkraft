@@ -3,7 +3,7 @@ title: "Deploy to Azure VMs with Ansible playbook"
 topic: "linux-operations"
 description: ""
 tags: ["linux-operations","deploy-to-azure-vms-with-ansible-playbook"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Quickstart: Deploy SQL Server on Linux

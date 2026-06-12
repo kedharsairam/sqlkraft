@@ -4,7 +4,7 @@ title: "MongoDB API for Cosmos DB"
 category: "statements"
 description: "Attribute (Short Name)"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Attribute (Short Name)
