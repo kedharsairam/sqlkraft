@@ -1,47 +1,10 @@
 ---
 title: "Use the value() & nodes() Methods with OPENXML"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  10/17/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  You can use multiple
-
-  methods on
-
-  data type in a
-
-  clause to generate a
-
-  rowset of extracted values. The
-tags:
-  - "xml-data"
-  - "use-the-value-nodes-methods-with-openxml"
-pubDate: 2025-12-01
+description: "You can use multiple methods on data type in a clause to generate a rowset of extracted values. The"
+tags: ["xml-data","use-the-value-nodes-methods-with-openxml"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-10/17/2024
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 You can use multiple
 

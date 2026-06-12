@@ -1,33 +1,10 @@
 ---
 title: "srv_message_handler"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Calls the installed Extended Stored Procedure API message handler. This function is usually
-
-  used to call Microsoft SQL Server from an extended stored
-tags:
-  - "clr-integration"
-  - "srv-message-handler"
-pubDate: 2025-12-01
+description: "Calls the installed Extended Stored Procedure API message handler. This function is usually used to call Microsoft SQL Server from an extended stored"
+tags: ["clr-integration","srv-message-handler"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 Calls the installed Extended Stored Procedure API message handler. This function is usually
 

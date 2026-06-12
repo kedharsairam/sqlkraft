@@ -1,32 +1,10 @@
 ---
 title: "RPC Output Parameter Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The RPC Output Parameter event class traces the output parameter values of remote procedure
-
-tags:
-  - "event-classes"
-  - "rpc-output-parameter-event-class"
-pubDate: 2025-12-01
+description: "The RPC Output Parameter event class traces the output parameter values of remote procedure"
+tags: ["event-classes","rpc-output-parameter-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The RPC Output Parameter event class traces the output parameter values of remote procedure
 

@@ -2,9 +2,9 @@
 name: "To Create Linked Server"
 title: "To Create Linked Server"
 description: "to connect another sql server"
-category: security-audit
+category: "security-audit"
 tags: ["security-audit"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

@@ -1,33 +1,10 @@
 ---
 title: "Create an endpoint"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to create a database mirroring endpoint that uses Windows
-
-  Authentication in SQL Server by using Transact-SQL. To support data
-tags:
-  - "high-availability"
-  - "create-an-endpoint"
-pubDate: 2025-12-01
+description: "This topic describes how to create a database mirroring endpoint that uses Windows Authentication in SQL Server by using Transact-SQL."
+tags: ["high-availability","create-an-endpoint"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 This topic describes how to create a database mirroring endpoint that uses Windows
 

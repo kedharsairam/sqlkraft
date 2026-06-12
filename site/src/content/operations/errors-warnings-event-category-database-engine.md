@@ -1,37 +1,10 @@
 ---
 title: "Errors & Warnings Event Category (Database Engine)"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event category contains general error and warning events.
-
-  Description
-
-  Attention Event
-tags:
-  - "event-classes"
-  - "errors-warnings-event-category-database-engine"
-pubDate: 2025-12-01
+description: "The event category contains general error and warning events. Description Attention Event"
+tags: ["event-classes","errors-warnings-event-category-database-engine"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

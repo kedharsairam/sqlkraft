@@ -1,35 +1,10 @@
 ---
 title: "srv_rpcoptions"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Returns run-time options for the current remote stored procedure.
-
-  srvproc
-
-  Is a pointer to the SRV_PROC structure that is the handle for a particular
-tags:
-  - "clr-integration"
-  - "srv-rpcoptions"
-pubDate: 2025-12-01
+description: "Returns run-time options for the current remote stored procedure. srvproc Is a pointer to the SRV_PROC structure that is the handle for a particular"
+tags: ["clr-integration","srv-rpcoptions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Returns run-time options for the current remote stored procedure.
 

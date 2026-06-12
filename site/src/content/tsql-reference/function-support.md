@@ -3,8 +3,8 @@ name: "Function support"
 title: "Function support"
 category: "statements"
 description: "data type must be a JSON object or a JSON array."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Input to the data type must be a JSON object or a JSON array. Scalars, booleans, and values are not supported. The JSON data type conforms to IETF RFC 4627 which allows only a

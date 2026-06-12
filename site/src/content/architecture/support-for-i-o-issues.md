@@ -2,8 +2,8 @@
 title: "Support for I/O issues"
 topic: "io-fundamentals"
 description: "When you enable write caching without proper safeguards, some storage subsystems"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 When you enable write caching without proper safeguards, some storage subsystems

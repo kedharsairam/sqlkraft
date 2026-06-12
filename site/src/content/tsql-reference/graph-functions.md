@@ -3,21 +3,17 @@ name: "Graph functions"
 title: "Graph functions"
 category: "statements"
 description: "2017 (14.x) and later versions"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Function
 
 2017 (14.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Use the functions described on the pages in this section to extract values from, and transform values to, the pseudo-columns used in SQL Graph.
 

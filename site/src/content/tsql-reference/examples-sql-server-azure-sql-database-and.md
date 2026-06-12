@@ -3,8 +3,8 @@ name: "Examples: SQL Server , Azure SQL Database, and"
 title: "Examples: SQL Server , Azure SQL Database, and"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 ## A. Return all statistics information

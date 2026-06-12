@@ -1,23 +1,10 @@
 ---
 title: "Cluster DTC"
 topic: "high-availability"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Windows
-
-  This topic describes the requirements and steps for clustering the Microsoft Distributed
-
-  Transaction Coordinator (DTC) service for Always On availability groups.
-tags:
-  - "high-availability"
-  - "cluster-dtc"
-pubDate: 2025-12-01
+description: "on Windows This topic describes the requirements and steps for clustering the Microsoft Distributed Transaction Coordinator (DTC) service for Always On availability groups."
+tags: ["high-availability","cluster-dtc"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Windows
 

@@ -1,37 +1,12 @@
 ---
 title: "SqlContext Object"
 topic: "clr-integration"
-description: |
-  SqlContext object
-
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  You invoke managed code in the server when you call a procedure or function, when you call a
-
-  method on a common language runtime (C
-tags:
-  - "clr-integration"
-  - "sqlcontext-object"
-pubDate: 2025-12-01
+description: "SqlContext object You invoke managed code in the server when you call a procedure or function, when you call a method on a common language runtime (C"
+tags: ["clr-integration","sqlcontext-object"]
+pubDate: "2025-12-01"
 ---
 
 SqlContext object
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 You invoke managed code in the server when you call a procedure or function, when you call a
 

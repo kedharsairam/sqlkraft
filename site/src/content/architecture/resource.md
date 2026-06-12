@@ -1,33 +1,10 @@
 ---
 title: "Resource"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  The Resource database is a read-only database that contains all the system objects that are
-
-  included with SQL Server. SQL Server system objects, such
-tags:
-  - "collation"
-  - "resource"
-pubDate: 2025-12-01
+description: "The Resource database is a read-only database that contains all the system objects that are included with SQL Server."
+tags: ["collation","resource"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 The Resource database is a read-only database that contains all the system objects that are
 

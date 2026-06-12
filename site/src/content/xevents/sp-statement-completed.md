@@ -3,9 +3,9 @@ name: "sp_statement_completed"
 title: "Query Performance Tracking with sp_statement_completed"
 category: "query-performance"
 description: "Capture real-time query execution performance metrics using the sp_statement_completed Extended Event — duration, CPU, reads, writes, and row counts for every completed statement within a stored procedure or batch."
-tags: ["extended-events", "query-performance", "sp_statement_completed", "duration", "cpu", "logical-reads", "profiling"]
+tags: ["extended-events","query-performance","sp_statement_completed","duration","cpu","logical-reads","profiling"]
 targetVersion: "SQL Server 2012+"
-pubDate: 2026-05-30
+pubDate: "2026-05-30"
 ---
 
 ## Overview

@@ -1,29 +1,10 @@
 ---
 title: "View & Analyze Traces"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Use SQL Server Profiler to view captured event data in a trace. SQL Server Profiler displays data
-
-  based on defined trace properties. O
-tags:
-  - "profiler"
-  - "view-analyze-traces"
-pubDate: 2025-12-01
+description: "06/06/2025 Use SQL Server Profiler to view captured event data in a trace. SQL Server Profiler displays data based on defined trace properties. O"
+tags: ["profiler","view-analyze-traces"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Use SQL Server Profiler to view captured event data in a trace. SQL Server Profiler displays data
 

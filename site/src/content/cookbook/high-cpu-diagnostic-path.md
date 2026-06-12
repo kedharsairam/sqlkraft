@@ -1,15 +1,12 @@
 ---
 name: "High CPU Diagnostic Path"
 title: "High CPU Diagnostic Path"
-category: performance
-severity: critical
+category: "performance"
+severity: "critical"
 description: "Systematic approach to diagnosing high CPU usage on SQL Server using DMVs, wait statistics, and diagnostic scripts."
-tags: ["cpu", "performance", "scheduling", "diagnostic"]
-relatedContent:
-  dmvs: ["sys-dm-os-schedulers", "sys-dm-exec-requests", "sys-dm-exec-query-stats"]
-  waits: ["SOS_SCHEDULER_YIELD", "CXPACKET", "CMEMTHREAD"]
-  scripts: ["to-view-list-of-top-10-high-cpu-utilization-queries", "to-view-cpu-utilization-history", "to-view-list-of-tasks-threads-and-schedulers"]
-pubDate: 2026-05-30
+tags: ["cpu","performance","scheduling","diagnostic"]
+relatedContent: ""
+pubDate: "2026-05-30"
 ---
 
 When SQL Server consumes excessive CPU, the root cause typically falls into one of three categories: expensive query compilation/recompilation, inefficient execution plans with scans or excessive row operations, or signal waits from OS-level scheduling pressure.

@@ -1,35 +1,16 @@
 ---
 title: "Partitioning"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  You can use partitioning on both the current and the history
-tags:
-  - "tables"
-  - "partitioning"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later versions Azure SQL Managed Instance You can use partitioning on both the current and the history"
+tags: ["tables","partitioning"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 You can use partitioning on both the current and the history table independently. However,
 

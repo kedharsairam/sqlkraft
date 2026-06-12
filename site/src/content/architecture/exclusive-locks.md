@@ -2,8 +2,8 @@
 title: "Exclusive locks"
 topic: "locking"
 description: "The Database Engine places update ("
-tags: ["locking", "architecture"]
-pubDate: 2026-05-29
+tags: ["locking","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The Database Engine places update (

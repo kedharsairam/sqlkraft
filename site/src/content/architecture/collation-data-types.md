@@ -1,37 +1,10 @@
 ---
 title: "Collation & data types"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  In the .NET Framework, the
-
-  object handles collations. The .NET Framework string
-
-  application programming interfaces (APIs) use the
-
-  property associate
-tags:
-  - "clr-integration"
-  - "collation-data-types"
-pubDate: 2025-12-01
+description: "In the .NET Framework, the object handles collations. The .NET Framework string application programming interfaces (APIs) use the property associate"
+tags: ["clr-integration","collation-data-types"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 In the.NET Framework, the
 

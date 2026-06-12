@@ -2,8 +2,8 @@
 title: "Filtered index design guidelines"
 topic: "index-architecture"
 description: "constraint can't be created if duplicate"
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 A unique index,

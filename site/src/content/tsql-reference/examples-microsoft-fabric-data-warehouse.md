@@ -3,8 +3,8 @@ name: "Examples: Microsoft Fabric Data Warehouse"
 title: "Examples: Microsoft Fabric Data Warehouse"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## I. Query data as of a point in time

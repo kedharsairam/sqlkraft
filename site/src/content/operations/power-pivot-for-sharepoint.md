@@ -1,27 +1,10 @@
 ---
 title: "Power Pivot for SharePoint"
 topic: "upgrade"
-description: |
-  06/03/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  This article summarizes the steps required to upgrade a deployment of Power Pivot for
-
-  SharePoint to Microsoft SQL Server 2016 (13.x) Power Pivot f
-tags:
-  - "upgrade"
-  - "power-pivot-for-sharepoint"
-pubDate: 2025-12-01
+description: "06/03/2025 - Windows only This article summarizes the steps required to upgrade a deployment of Power Pivot for SharePoint to Microsoft SQL Server 2016 (13.x) Power Pivot f"
+tags: ["upgrade","power-pivot-for-sharepoint"]
+pubDate: "2025-12-01"
 ---
-
-06/03/2025
-
-SQL Server
 
 - Windows only
 

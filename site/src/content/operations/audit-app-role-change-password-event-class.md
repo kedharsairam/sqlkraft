@@ -1,47 +1,10 @@
 ---
 title: "Audit App Role Change Password Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs whenever a password is changed for
-
-  an application role.
-
-  Description
-
-  Name of
-tags:
-  - "event-classes"
-  - "audit-app-role-change-password-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs whenever a password is changed for an application role."
+tags: ["event-classes","audit-app-role-change-password-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

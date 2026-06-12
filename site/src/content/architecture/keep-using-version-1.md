@@ -2,8 +2,8 @@
 title: "Keep using version 1"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Similarly, any Full-Text population on a version 1 index fails to find the filter binaries on disk

@@ -1,25 +1,10 @@
 ---
 title: "Upgrading replica instances"
 topic: "high-availability"
-description: |
-  08/15/2025
-
-  Applies to:
-
-  SQL Server
-
-  When upgrading a SQL Server instance that hosts an Always On availability group (AG) to a
-
-  new SQL Server version, to a new SQL Server service pack or cumulative u
-tags:
-  - "high-availability"
-  - "upgrading-replica-instances"
-pubDate: 2025-12-01
+description: "08/15/2025 When upgrading a SQL Server instance that hosts an Always On availability group (AG) to a new SQL Server version, to a new SQL Server service pack or cumulative u"
+tags: ["high-availability","upgrading-replica-instances"]
+pubDate: "2025-12-01"
 ---
-
-08/15/2025
-
-SQL Server
 
 When upgrading a SQL Server instance that hosts an Always On availability group (AG) to a
 
@@ -41,7 +26,7 @@ node (so expect high network traffic).
 
 Also be aware that after the initial failover to a secondary replica running a newer version of
 
-SQL Server, the databases in that AG will run through an upgrade process to bring them to the
+, the databases in that AG will run through an upgrade process to bring them to the
 
 latest version. During this time, there will be no readable replicas for any of these databases.
 

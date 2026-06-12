@@ -1,35 +1,10 @@
 ---
 title: "Data File Auto Shrink Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event class indicates that the data file has been shrunk. This event is
-
-  not triggered i
-tags:
-  - "event-classes"
-  - "data-file-auto-shrink-event-class"
-pubDate: 2025-12-01
+description: "The event class indicates that the data file has been shrunk. This event is not triggered i"
+tags: ["event-classes","data-file-auto-shrink-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

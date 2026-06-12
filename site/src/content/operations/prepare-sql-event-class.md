@@ -1,33 +1,10 @@
 ---
 title: "Prepare SQL Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Prepare SQL event class indicates that SqlClient, ODBC, OLE DB, or DB-Library has
-
-  prepar
-tags:
-  - "event-classes"
-  - "prepare-sql-event-class"
-pubDate: 2025-12-01
+description: "The Prepare SQL event class indicates that SqlClient, ODBC, OLE DB, or DB-Library has prepar"
+tags: ["event-classes","prepare-sql-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Prepare SQL event class indicates that SqlClient, ODBC, OLE DB, or DB-Library has
 

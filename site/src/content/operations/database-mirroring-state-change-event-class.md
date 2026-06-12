@@ -1,39 +1,10 @@
 ---
 title: "Database Mirroring State Change Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  The
-
-  event class indicates when the state of a mirrored
-
-  database changes. Include this event class in traces that are monitoring c
-tags:
-  - "event-classes"
-  - "database-mirroring-state-change-event-class"
-pubDate: 2025-12-01
+description: "The event class indicates when the state of a mirrored database changes. Include this event class in traces that are monitoring c"
+tags: ["event-classes","database-mirroring-state-change-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
 
 The
 

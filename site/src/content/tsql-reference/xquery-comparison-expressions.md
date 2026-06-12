@@ -5,20 +5,10 @@ category: "xquery"
 description: "XQuery Language Reference: Comparison Expressions"
 syntax: |
   declare @x xml
-  set @x=''
-tags:
-  - "xquery"
-  - "comparison-expressions"
-pubDate: 2025-12-01
+    set @x=''
+tags: ["xquery","comparison-expressions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 XQuery provides the following types of comparison operators:
 

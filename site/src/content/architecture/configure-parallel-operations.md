@@ -1,31 +1,10 @@
 ---
 title: "Configure parallel operations"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article defines max degree of parallelism and explains how to modify this setting in SQL
-tags:
-  - "filestream"
-  - "configure-parallel-operations"
-pubDate: 2025-12-01
+description: "This article defines max degree of parallelism and explains how to modify this setting in SQL"
+tags: ["filestream","configure-parallel-operations"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article defines max degree of parallelism and explains how to modify this setting in SQL
 

@@ -1,35 +1,16 @@
 ---
 title: "Temporal tables"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Temporal tables (also known as system-versioned temporal tabl
-tags:
-  - "tables"
-  - "temporal-tables"
-pubDate: 2025-12-01
+description: ""
+tags: ["tables","temporal-tables"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Temporal tables (also known as system-versioned temporal tables), are a database feature that
 

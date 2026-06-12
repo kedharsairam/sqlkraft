@@ -1,31 +1,10 @@
 ---
 title: "Service Architecture"
 topic: "service-broker"
-description: |
-  09/12/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This section describes the database objects that specify the basic design of an application that
-
-  uses Service Broker.
-
-  At design time,
-tags:
-  - "service-broker"
-  - "service-architecture"
-pubDate: 2025-12-01
+description: "09/12/2025 This section describes the database objects that specify the basic design of an application that uses Service Broker. At design time,"
+tags: ["service-broker","service-architecture"]
+pubDate: "2025-12-01"
 ---
-
-09/12/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This section describes the database objects that specify the basic design of an application that
 

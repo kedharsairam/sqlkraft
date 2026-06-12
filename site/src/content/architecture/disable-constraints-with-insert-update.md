@@ -1,43 +1,18 @@
 ---
 title: "Disable constraints with INSERT & UPDATE"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft Fabric
-
-  You
-tags:
-  - "tables"
-  - "disable-constraints-with-insert-update"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later versions Azure SQL Managed Instance You"
+tags: ["tables","disable-constraints-with-insert-update"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
-
-Azure SQL Database
 
 Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
-
-SQL database in Microsoft Fabric
 
 You can disable a foreign key constraint during INSERT and UPDATE transactions in SQL Server
 

@@ -4,19 +4,9 @@ title: "XQuery - Logical Expressions"
 category: "xquery"
 description: "XQuery Language Reference: Logical Expressions"
 syntax: "expression1,``expression2"
-tags:
-  - "xquery"
-  - "logical-expressions"
-pubDate: 2025-12-01
+tags: ["xquery","logical-expressions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 XQuery supports the logical
 

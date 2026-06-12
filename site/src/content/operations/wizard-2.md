@@ -1,35 +1,10 @@
 ---
 title: "Wizard"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Use the Add Database to Availability Group Wizard to help you add one or more databases to
-
-  an existing Always On availability group.
-
-  If you have neve
-tags:
-  - "high-availability"
-  - "wizard-2"
-pubDate: 2025-12-01
+description: "Use the Add Database to Availability Group Wizard to help you add one or more databases to an existing Always On availability group."
+tags: ["high-availability","wizard-2"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 Use the Add Database to Availability Group Wizard to help you add one or more databases to
 

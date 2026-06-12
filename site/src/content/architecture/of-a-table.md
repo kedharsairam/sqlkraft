@@ -1,37 +1,10 @@
 ---
 title: "Of a Table"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft
-
-  Fabric
-
-  You can use the following steps to
-tags:
-  - "collation"
-  - "of-a-table"
-pubDate: 2025-12-01
+description: ""
+tags: ["collation","of-a-table"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

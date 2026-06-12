@@ -1,33 +1,10 @@
 ---
 title: "Possible cause of failures"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  Physical, operating system, or SQL Server problems can cause a failure in a database mirroring
-
-  session. Database mirroring does not regularly check th
-tags:
-  - "high-availability"
-  - "possible-cause-of-failures"
-pubDate: 2025-12-01
+description: "Physical, operating system, or SQL Server problems can cause a failure in a database mirroring session."
+tags: ["high-availability","possible-cause-of-failures"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 Physical, operating system, or SQL Server problems can cause a failure in a database mirroring
 

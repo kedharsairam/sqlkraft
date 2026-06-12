@@ -1,11 +1,11 @@
 ---
-name: PAGEIOLATCH_EX
+name: "PAGEIOLATCH_EX"
 title: "Page I/O Latch (Exclusive) Wait"
-category: io
-severity: high
+category: "io"
+severity: "high"
 description: "Occurs when a task waits for a data page to be written from the buffer pool to disk (exclusive latch). High durations indicate write latency on the storage subsystem."
-tags: ["io", "buffer-pool", "disk-write", "page"]
-pubDate: 2026-05-29
+tags: ["io","buffer-pool","disk-write","page"]
+pubDate: "2026-05-29"
 relatedScripts: ["analyze-io-latency"]
 ---
 

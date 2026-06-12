@@ -2,9 +2,9 @@
 name: "To Add TDE Enabled Databases to Always on AG"
 title: "To Add TDE Enabled Databases to Always on AG"
 description: "Create Master Key in all Replicas"
-category: high-availability
-tags: ["database", "high-availability"]
-pubDate: 2025-03-15
+category: "high-availability"
+tags: ["database","high-availability"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

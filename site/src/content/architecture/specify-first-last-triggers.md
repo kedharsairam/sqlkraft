@@ -1,31 +1,10 @@
 ---
 title: "Specify First & Last Triggers"
 topic: "change-data-capture"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  You can specify that one of the AFTER triggers associated with a table be either the first AF
-tags:
-  - "change-data-capture"
-  - "specify-first-last-triggers"
-pubDate: 2025-12-01
+description: "You can specify that one of the AFTER triggers associated with a table be either the first AF"
+tags: ["change-data-capture","specify-first-last-triggers"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 You can specify that one of the AFTER triggers associated with a table be either the first AFTER
 

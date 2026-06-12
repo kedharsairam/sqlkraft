@@ -3,21 +3,17 @@ title: "Use T-SQL Editor to Edit & Execute Scripts"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  The Transact-SQL Editor provides you with a rich editing and debugging experience when
-
-  you're working with scripts. It's invoked when you use the
-
-  contextual menu to open
-
-  a database enti
-tags:
-  - "ssb-diagnose"
-  - "use-t-sql-editor-to-edit-execute-scripts"
-pubDate: 2025-12-01
+  
+    The Transact-SQL Editor provides you with a rich editing and debugging experience when
+  
+    you're working with scripts. It's invoked when you use the
+  
+    contextual menu to open
+  
+    a database enti
+tags: ["ssb-diagnose","use-t-sql-editor-to-edit-execute-scripts"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 The Transact-SQL Editor provides you with a rich editing and debugging experience when
 

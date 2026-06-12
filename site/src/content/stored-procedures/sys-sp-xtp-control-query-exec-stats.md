@@ -4,15 +4,15 @@ title: "sys.sp_xtp_control_query_exec_stats"
 category: "general"
 description: "Enables per query statistics collection for all natively compiled stored procedures for the instance, or specific natively compiled stored procedures. Performance decreases when you enable statistics collection. If you only need to troubleshoot one, or a few natively compiled stored procedures, you can enable statistics collection for just those few natively compiled stored procedures. To enable s"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sys.sp_xtp_control_query_exec_stats
-  [ [ @new_collection_value = ] collection_value ]
-  [ , [ @database_id = ] database_id ]
-  [ , [ @xtp_object_id = ] procedure_id ]
-  , [ @old_collection_value = ] old_collection_value
-  OUTPUT
-  [ ; ]
+      [ [ @new_collection_value = ] collection_value ]
+      [ , [ @database_id = ] database_id ]
+      [ , [ @xtp_object_id = ] procedure_id ]
+      , [ @old_collection_value = ] old_collection_value
+      OUTPUT
+      [ ; ]
 ---
 
 ## Description

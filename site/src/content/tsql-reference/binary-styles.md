@@ -3,8 +3,8 @@ name: "Binary styles"
 title: "Binary styles"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 No commas every three digits to the left of the decimal point, and four digits to the right of

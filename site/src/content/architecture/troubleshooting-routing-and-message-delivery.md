@@ -1,31 +1,10 @@
 ---
 title: "Troubleshooting Routing and Message Delivery"
 topic: "service-broker"
-description: |
-  09/15/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This section provides suggestions to correct common problems related to routing and
-
-  message delivery.
-
-  If messages aren't successfully
-tags:
-  - "service-broker"
-  - "troubleshooting-routing-and-message-delivery"
-pubDate: 2025-12-01
+description: "09/15/2025 This section provides suggestions to correct common problems related to routing and message delivery. If messages aren't successfully"
+tags: ["service-broker","troubleshooting-routing-and-message-delivery"]
+pubDate: "2025-12-01"
 ---
-
-09/15/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This section provides suggestions to correct common problems related to routing and
 

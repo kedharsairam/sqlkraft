@@ -1,35 +1,10 @@
 ---
 title: "Load Files"
 topic: "filestream"
-description: |
-  Article
-
-  •
-
-  07/09/2024
-
-  Applies to:
-
-  SQL Server
-
-  Describes how to load or migrate files into FileTables.
-
-  The method that you choose for loading or migrating files into a FileTable depends on where
-
-  t
-tags:
-  - "filestream"
-  - "load-files"
-pubDate: 2025-12-01
+description: "Describes how to load or migrate files into FileTables. The method that you choose for loading or migrating files into a FileTable depends on where t"
+tags: ["filestream","load-files"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-07/09/2024
-
-SQL Server
 
 Describes how to load or migrate files into FileTables.
 

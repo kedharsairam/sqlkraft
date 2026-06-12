@@ -1,28 +1,10 @@
 ---
 title: "Migrating to Windows Server 2012 & 2016"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012 prevent Windows
-
-  Server failover clusters from performing in-place operating system upgrades, capping the
-
-tags:
-  - "high-availability"
-  - "migrating-to-windows-server-2012-2016"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","migrating-to-windows-server-2012-2016"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
 
 Windows Server 2008, Windows Server 2008 R2, and Windows Server 2012 prevent Windows
 

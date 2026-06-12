@@ -1,33 +1,10 @@
 ---
 title: "Performance Statistics Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Performance Statistics event class can be used to monitor the performance of queries,
-
-  st
-tags:
-  - "event-classes"
-  - "performance-statistics-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","performance-statistics-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Performance Statistics event class can be used to monitor the performance of queries,
 

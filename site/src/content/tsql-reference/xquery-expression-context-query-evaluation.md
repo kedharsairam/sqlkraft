@@ -5,23 +5,13 @@ category: "xquery"
 description: "XQuery Language Reference: Expression Context & Query Evaluation"
 syntax: |
   declare @x xml
-  set @x=''
-  select @x.query('<a>  {"Hello"}  </a>,
-  <b> {"Hello2"}  </b>')
-  <a>Hello</a><b>Hello2</b>
-tags:
-  - "xquery"
-  - "expression-context-query-evaluation"
-pubDate: 2025-12-01
+    set @x=''
+    select @x.query('<a>  {"Hello"}  </a>,
+    <b> {"Hello2"}  </b>')
+    <a>Hello</a><b>Hello2</b>
+tags: ["xquery","expression-context-query-evaluation"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 The context of an expression is the information that is used to analyze and evaluate it.
 

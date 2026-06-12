@@ -1,35 +1,10 @@
 ---
 title: "QN:Subscription Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The QN:Subscription event reports information on notification subscriptions.
-
-  Description
-
-  Ap
-tags:
-  - "event-classes"
-  - "qnsubscription-event-class"
-pubDate: 2025-12-01
+description: "The QN:Subscription event reports information on notification subscriptions. Description Ap"
+tags: ["event-classes","qnsubscription-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The QN:Subscription event reports information on notification subscriptions.
 

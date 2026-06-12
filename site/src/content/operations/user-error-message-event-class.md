@@ -1,31 +1,10 @@
 ---
 title: "User Error Message Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The User Error Message event class displays the error message as seen by the user in the case
-tags:
-  - "event-classes"
-  - "user-error-message-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","user-error-message-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The User Error Message event class displays the error message as seen by the user in the case
 

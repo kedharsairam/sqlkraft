@@ -1,37 +1,10 @@
 ---
 title: "Best practices"
 topic: "migration"
-description: |
-  Article
-
-  •
-
-  09/27/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  After you have configured replication, it is important to understand how to administer a
-
-  replication topology. This topic
-tags:
-  - "migration"
-  - "best-practices"
-pubDate: 2025-12-01
+description: "After you have configured replication, it is important to understand how to administer a replication topology."
+tags: ["migration","best-practices"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/27/2024
-
-SQL Server
-
-Azure SQL Managed Instance
 
 After you have configured replication, it is important to understand how to administer a
 

@@ -2,9 +2,9 @@
 name: "To Find How many Pages are Modified since last"
 title: "To Find How many Pages are Modified since last"
 description: "diagnostic script for backup-restore operations."
-category: backup-restore
+category: "backup-restore"
 tags: ["backup-restore"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

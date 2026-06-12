@@ -1,37 +1,12 @@
 ---
 title: "Dynamic management & system catalog views"
 topic: "high-availability"
-description: |
-  Dynamic management views and system
-
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  This topic shows you some of the common queries on the Always On dynamic management
-
-  views (DMV) that you can use
-tags:
-  - "high-availability"
-  - "dynamic-management-system-catalog-views"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","dynamic-management-system-catalog-views"]
+pubDate: "2025-12-01"
 ---
 
 Dynamic management views and system
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 This topic shows you some of the common queries on the Always On dynamic management
 

@@ -2,8 +2,8 @@
 title: "Escalation threshold for a Transact-SQL statement"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Optimized locking helps to reduce lock memory as very few locks are held for the duration of the

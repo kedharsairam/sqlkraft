@@ -4,28 +4,28 @@ title: "sp_refresh_parameter_encryption"
 category: "general"
 description: "2016 (13.x) and later Updates the Always Encrypted metadata for the parameters of the specified non-schema- bound stored procedure, user-defined function, view, DML trigger, database-level DDL trigger, or server-level DDL trigger in the current database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_refresh_parameter_encryption
-  [ @name = ]
-  N
-  'name'
-  [ , [ @namespace = ] {
-  OBJECT
-  |
-  DATABASE
-  _
-  DDL
-  _
-  TRIGGER
-  |
-  SERVER
-  _
-  DDL
-  _
-  TRIGGER
-  } ]
-  [ ; ]
+      [ @name = ]
+      N
+      'name'
+      [ , [ @namespace = ] {
+      OBJECT
+      |
+      DATABASE
+      _
+      DDL
+      _
+      TRIGGER
+      |
+      SERVER
+      _
+      DDL
+      _
+      TRIGGER
+      } ]
+      [ ; ]
 ---
 
 ## Description

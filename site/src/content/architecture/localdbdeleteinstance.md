@@ -1,29 +1,10 @@
 ---
 title: "LocalDBDeleteInstance"
 topic: "clr-integration"
-description: |
-  07/14/2025
-
-  Applies to:
-
-  SQL Server
-
-  Removes the specified SQL Server Express LocalDB instance.
-
-  C++
-
-  [Input] The name of the LocalDB instance to remove.
-
-  [Input] Reserved for future use. Currently sh
-tags:
-  - "clr-integration"
-  - "localdbdeleteinstance"
-pubDate: 2025-12-01
+description: "07/14/2025 Removes the specified SQL Server Express LocalDB instance. C++ [Input] The name of the LocalDB instance to remove. [Input] Reserved for future use."
+tags: ["clr-integration","localdbdeleteinstance"]
+pubDate: "2025-12-01"
 ---
-
-07/14/2025
-
-SQL Server
 
 Removes the specified SQL Server Express LocalDB instance.
 

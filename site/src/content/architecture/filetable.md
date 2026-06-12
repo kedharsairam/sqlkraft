@@ -1,33 +1,10 @@
 ---
 title: "FileTable"
 topic: "filestream"
-description: |
-  Article
-
-  •
-
-  10/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  The FileTable feature brings support for the Windows file namespace and compatibility with
-
-  Windows applications to the file data stored in SQL Server.
-tags:
-  - "filestream"
-  - "filetable"
-pubDate: 2025-12-01
+description: "The FileTable feature brings support for the Windows file namespace and compatibility with Windows applications to the file data stored in SQL Server."
+tags: ["filestream","filetable"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-10/03/2023
-
-SQL Server
 
 The FileTable feature brings support for the Windows file namespace and compatibility with
 

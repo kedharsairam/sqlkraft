@@ -1,32 +1,10 @@
 ---
 title: "Use activity logs"
 topic: "azure-synapse"
-description: |
-  06/24/2025
-
-  Applies to:
-
-  SQL Server
-
-  Activity logs for SQL Server enabled by Azure Arc provide insight into events related to
-
-  SQL
-
-  Server enabled by Azure Arc
-
-  and
-
-  View Azure Arc-enabled inventory
-
-tags:
-  - "azure-synapse"
-  - "use-activity-logs"
-pubDate: 2025-12-01
+description: "06/24/2025 Activity logs for SQL Server enabled by Azure Arc provide insight into events related to SQL Server enabled by Azure Arc and View Azure Arc-enabled inventory"
+tags: ["azure-synapse","use-activity-logs"]
+pubDate: "2025-12-01"
 ---
-
-06/24/2025
-
-SQL Server
 
 Activity logs for SQL Server enabled by Azure Arc provide insight into events related to
 

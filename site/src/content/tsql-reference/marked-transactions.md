@@ -3,8 +3,8 @@ name: "Marked transactions"
 title: "Marked transactions"
 category: "statements"
 description: "option causes the transaction name to be recorded in the transaction log. When"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 The

@@ -1,33 +1,10 @@
 ---
 title: "Drop"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Dropping a database snapshot deletes the database snapshot from SQL Server and deletes the
-
-  sparse files that are used by the snapshot. When you drop a
-tags:
-  - "collation"
-  - "drop"
-pubDate: 2025-12-01
+description: "Dropping a database snapshot deletes the database snapshot from SQL Server and deletes the sparse files that are used by the snapshot. When you drop a"
+tags: ["collation","drop"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Dropping a database snapshot deletes the database snapshot from SQL Server and deletes the
 

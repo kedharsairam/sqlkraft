@@ -2,9 +2,9 @@
 name: "To Move Mdf and Ndf Files of all User Databases"
 title: "To Move Mdf and Ndf Files of all User Databases"
 description: "diagnostic script for database operations."
-category: database
-tags: ["database", "user"]
-pubDate: 2025-03-15
+category: "database"
+tags: ["database","user"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

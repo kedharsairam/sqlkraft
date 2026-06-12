@@ -1,37 +1,12 @@
 ---
 title: "Work with"
 topic: "tables"
-description: |
-  Article
-
-  •
-
-  02/04/2025
-
-  Applies to:
-
-  SQL Server 2016 (13.x) and later
-
-  Azure SQL Managed Instance
-
-  This article discusses how working with a memory-optimized system-versioned temporal table
-
-  is differ
-tags:
-  - "tables"
-  - "work-with"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later This article discusses how working with a memory-optimized system-versioned temporal table is differ"
+tags: ["tables","work-with"]
+pubDate: "2025-12-01"
 ---
 
-Article
-
-•
-
-02/04/2025
-
 2016 (13.x) and later
-
-Azure SQL Managed Instance
 
 This article discusses how working with a memory-optimized system-versioned temporal table
 

@@ -1,45 +1,10 @@
 ---
 title: "Audit Broker Conversation Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  03/31/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL Server creates an
-
-  event to report audit messages related to
-
-  Service Broker dialog security.
-
-  Desc
-tags:
-  - "event-classes"
-  - "audit-broker-conversation-event-class"
-pubDate: 2025-12-01
+description: "creates an event to report audit messages related to Service Broker dialog security. Desc"
+tags: ["event-classes","audit-broker-conversation-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/31/2025
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 creates an
 
@@ -51,9 +16,7 @@ Description
 
 The name of the client application that
 
-created the connection to an instance of
-
-SQL Server. This column is populated with
+created the connection to an instance of. This column is populated with
 
 the values passed by the application rather
 

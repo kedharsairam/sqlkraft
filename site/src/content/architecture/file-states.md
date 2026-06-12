@@ -1,45 +1,10 @@
 ---
 title: "File states"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  04/04/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  In SQL Server, the state of a database file i
-tags:
-  - "collation"
-  - "file-states"
-pubDate: 2025-12-01
+description: "In SQL Server, the state of a database file i"
+tags: ["collation","file-states"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/04/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

@@ -1,27 +1,10 @@
 ---
 title: "SQL Server Management Tools"
 topic: "upgrade"
-description: |
-  06/04/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  SQL Server supports upgrade from SQL Server 2008 (10.0.x) and later versions. This article
-
-  documents support and behavior for upgrading SQL Server
-tags:
-  - "upgrade"
-  - "sql-server-management-tools"
-pubDate: 2025-12-01
+description: "06/04/2025 - Windows only SQL Server supports upgrade from SQL Server 2008 (10.0.x) and later versions. This article documents support and behavior for upgrading SQL Server"
+tags: ["upgrade","sql-server-management-tools"]
+pubDate: "2025-12-01"
 ---
-
-06/04/2025
-
-SQL Server
 
 - Windows only
 

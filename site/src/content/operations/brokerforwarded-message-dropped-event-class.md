@@ -1,37 +1,10 @@
 ---
 title: "Broker:Forwarded Message Dropped Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  SQL Server generates a Broker:Forwarded Message Dropped event when Service Broker drops
-
-  a message that was intended to be
-tags:
-  - "event-classes"
-  - "brokerforwarded-message-dropped-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","brokerforwarded-message-dropped-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Managed Instance
 
 generates a Broker:Forwarded Message Dropped event when Service Broker drops
 
@@ -43,9 +16,7 @@ ApplicationName
 
 The name of the client application that
 
-created the connection to an instance of
-
-SQL Server. This column is populated with
+created the connection to an instance of. This column is populated with
 
 the values passed by the application
 

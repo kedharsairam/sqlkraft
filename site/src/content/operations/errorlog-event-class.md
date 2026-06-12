@@ -1,31 +1,10 @@
 ---
 title: "ErrorLog Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The ErrorLog event class indicates that messages have been logged in the SQL Server error log
-tags:
-  - "event-classes"
-  - "errorlog-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","errorlog-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The ErrorLog event class indicates that messages have been logged in the SQL Server error log.
 

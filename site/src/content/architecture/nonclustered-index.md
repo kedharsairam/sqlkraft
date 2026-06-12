@@ -1,33 +1,10 @@
 ---
 title: "Nonclustered index"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  You can create nonclustered indexes in SQL Server by using SQL Server Management Studio or
-
-  T
-tags:
-  - "filestream"
-  - "nonclustered-index"
-pubDate: 2025-12-01
+description: "You can create nonclustered indexes in SQL Server by using SQL Server Management Studio or T"
+tags: ["filestream","nonclustered-index"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 You can create nonclustered indexes in SQL Server by using SQL Server Management Studio or
 

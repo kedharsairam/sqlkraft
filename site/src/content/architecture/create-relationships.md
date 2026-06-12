@@ -1,35 +1,16 @@
 ---
 title: "Create relationships"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article describes how to create foreign key relationship
-tags:
-  - "tables"
-  - "create-relationships"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later versions Azure SQL Managed Instance This article describes how to create foreign key relationship"
+tags: ["tables","create-relationships"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article describes how to create foreign key relationships in SQL Server by using SQL Server
 

@@ -1,29 +1,10 @@
 ---
 title: "Message Retention"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  When a queue specifies message retention, Service Broker doesn't delete messages from the
-
-  queue until the conversation ends. Further,
-tags:
-  - "service-broker"
-  - "message-retention"
-pubDate: 2025-12-01
+description: "09/11/2025 When a queue specifies message retention, Service Broker doesn't delete messages from the queue until the conversation ends. Further,"
+tags: ["service-broker","message-retention"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 When a queue specifies message retention, Service Broker doesn't delete messages from the
 

@@ -2,8 +2,8 @@
 title: "A. Work with SNAPSHOT isolation"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 . Monitors the longest running time in seconds of any
 

@@ -3,8 +3,8 @@ name: "sys.service_contract_usages"
 title: "sys.service_contract_usages"
 category: "compatibility"
 description: "This catalog view contains a row per (service, contract) pair."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

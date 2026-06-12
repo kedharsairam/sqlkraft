@@ -1,23 +1,10 @@
 ---
 title: "Schedule SSIS packages"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  When you run SQL Server Integration Services (SSIS) and SQL Server on Windows, you can
-
-  automate the execution of SSIS packages by using SQL Server Agent. When you r
-tags:
-  - "linux-operations"
-  - "schedule-ssis-packages"
-pubDate: 2025-12-01
+description: "on Linux When you run SQL Server Integration Services (SSIS) and SQL Server on Windows, you can automate the execution of SSIS packages by using SQL Server Agent. When you r"
+tags: ["linux-operations","schedule-ssis-packages"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

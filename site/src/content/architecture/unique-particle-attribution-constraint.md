@@ -1,33 +1,10 @@
 ---
 title: "Unique particle attribution constraint"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  In XSD, complex content models are constrained by the unique particle attribution (UPA)
-
-  cons
-tags:
-  - "xml-data"
-  - "unique-particle-attribution-constraint"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","unique-particle-attribution-constraint"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 In XSD, complex content models are constrained by the unique particle attribution (UPA)
 

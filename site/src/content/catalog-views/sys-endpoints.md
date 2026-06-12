@@ -3,8 +3,8 @@ name: "sys.endpoints"
 title: "sys.endpoints"
 category: "compatibility"
 description: "Returns one row per endpoint created in the system. There's always exactly one SYSTEM Name of the endpoint. Unique within the server. Not nullable."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "sys.database_mirroring_endpoints"
 ---
 

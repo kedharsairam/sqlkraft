@@ -4,12 +4,12 @@ title: "sp_execute"
 category: "general"
 description: "Executes a prepared Transact-SQL statement using a specified handle and optional parameter in a tabular data stream (TDS) packet. Signifies the use of extra parameters."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_execute handle
-  OUTPUT
-  [ , bound_param ] [ , ...n ]
-  [ ; ]
+      OUTPUT
+      [ , bound_param ] [ , ...n ]
+      [ ; ]
 ---
 
 ## Description

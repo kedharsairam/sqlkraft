@@ -2,8 +2,8 @@
 title: "Deadlock extended event"
 topic: "locking"
 description: "and continue. The 1205 (deadlock victim) error records information about the type of resources"
-tags: ["locking", "architecture"]
-pubDate: 2026-05-29
+tags: ["locking","architecture"]
+pubDate: "2026-05-29"
 ---
 
 and continue. The 1205 (deadlock victim) error records information about the type of resources

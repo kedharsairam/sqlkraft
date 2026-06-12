@@ -3,8 +3,8 @@ name: "Convert decimal and numeric data"
 title: "Convert decimal and numeric data"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 10-19

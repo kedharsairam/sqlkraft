@@ -1,35 +1,10 @@
 ---
 title: "Change Existing Columns"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The ALTER TABLE statement supports the
-
-  data type. For example, you can alter any string
-
-  typ
-tags:
-  - "xml-data"
-  - "change-existing-columns"
-pubDate: 2025-12-01
+description: "The ALTER TABLE statement supports the data type."
+tags: ["xml-data","change-existing-columns"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The ALTER TABLE statement supports the
 

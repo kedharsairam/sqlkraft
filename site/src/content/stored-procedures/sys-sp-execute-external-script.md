@@ -4,7 +4,7 @@ title: "sp_execute_external_script"
 category: "general"
 description: "2016 (13.x) and later stored procedure executes a script provided as an input argument to the procedure, and is used with For Machine Learning Services, are supported languages. For Language Extensions, Java is supported but must be defined with , you must first install Machine Learning Services or Language Extensions. For more information, see Install SQL Server Machine Learning Servic"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_execute_external_script"
 ---
 
@@ -19,8 +19,6 @@ syntax: "sp_execute_external_script"
 ## Arguments
 
 2016 (13.x) and later
-
-Azure SQL Managed Instance
 
 stored procedure executes a script provided as an input
 

@@ -1,43 +1,10 @@
 ---
 title: "Audit Database Object GDR Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs when a GRANT, REVOKE, or DENY has been
-
-  issued for database objects, such as as
-tags:
-  - "event-classes"
-  - "audit-database-object-gdr-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","audit-database-object-gdr-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

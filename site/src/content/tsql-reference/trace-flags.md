@@ -3,8 +3,8 @@ name: "Trace flags"
 title: "Trace flags"
 category: "statements"
 description: "The following table lists and describes the trace flags that are available in SQL Server."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 The following table lists and describes the trace flags that are available in SQL Server.
@@ -709,7 +709,7 @@ instead. This helps avoid "out-of-locks" errors when many locks are being used.
 
 For more information on how to resolve blocking problems that are caused by lock escalation in
 
-SQL Server, see
+, see
 
 Resolve blocking problems caused by lock escalation in SQL Server.
 
@@ -1353,9 +1353,7 @@ and Log Pool memory).
 
 retaining most of its usefulness as preferred option in most situations where mini dumps aren't
 
-sufficient.
-
-SQL Server.
+sufficient..
 
 : Global only.
 

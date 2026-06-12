@@ -3,8 +3,8 @@ name: "CREATE CREDENTIAL"
 title: "CREATE CREDENTIAL"
 category: "statements"
 description: "Creates a server-level credential for authentication to external resources."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

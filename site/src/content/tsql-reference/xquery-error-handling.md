@@ -4,15 +4,9 @@ title: "XQuery - Error Handling"
 category: "xquery"
 description: "XQuery Language Reference: Error Handling"
 syntax: "XML DML"
-tags:
-  - "xquery"
-  - "error-handling"
-pubDate: 2025-12-01
+tags: ["xquery","error-handling"]
+pubDate: "2025-12-01"
 ---
-
-10/14/2025
-
-SQL Server
 
 The W3C specification allows type errors to be raised statically or dynamically, and defines
 

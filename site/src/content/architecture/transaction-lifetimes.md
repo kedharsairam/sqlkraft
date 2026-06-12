@@ -1,33 +1,10 @@
 ---
 title: "Transaction Lifetimes"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  There's an important difference between transactions started in Transact-SQL stored
-
-  procedures, and transactions started in managed code: common langu
-tags:
-  - "clr-integration"
-  - "transaction-lifetimes"
-pubDate: 2025-12-01
+description: ""
+tags: ["clr-integration","transaction-lifetimes"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 There's an important difference between transactions started in Transact-SQL stored
 

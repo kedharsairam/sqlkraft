@@ -3,17 +3,9 @@ name: "Boolean Data Type"
 title: "Boolean Data Type"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Comparison operators test whether two expressions are the same. Comparison operators can
 

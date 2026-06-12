@@ -3,8 +3,8 @@ name: "sys.column_encryption_key_values"
 title: "sys.column_encryption_key_values"
 category: "compatibility"
 description: "Returns information about encrypted values of column encryption keys (CEKs) created with statement. Each row represents a value of a CEK, encrypted with a column ID of the CEK in the database."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

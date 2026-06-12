@@ -1,33 +1,10 @@
 ---
 title: "Configure instance"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  10/17/2024
-
-  Applies to:
-
-  SQL Server
-
-  This article contains information about the requirements for configuring an instance of SQL
-
-  Server to support Always On availability groups in SQL Ser
-tags:
-  - "high-availability"
-  - "configure-instance"
-pubDate: 2025-12-01
+description: "This article contains information about the requirements for configuring an instance of SQL Server to support Always On availability groups in SQL Ser"
+tags: ["high-availability","configure-instance"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-10/17/2024
-
-SQL Server
 
 This article contains information about the requirements for configuring an instance of SQL
 

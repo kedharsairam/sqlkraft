@@ -1,37 +1,10 @@
 ---
 title: "Install SSDT"
 topic: "data-tools"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  SQL database in Microsoft Fabric
-
-  SQL Server Data Tools (SSDT)
-
-  is a set of development tooling for bu
-tags:
-  - "data-tools"
-  - "install-ssdt"
-pubDate: 2025-12-01
+description: ""
+tags: ["data-tools","install-ssdt"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
-
-SQL database in Microsoft Fabric
 
 Data Tools (SSDT)
 

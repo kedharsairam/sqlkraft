@@ -1,29 +1,10 @@
 ---
 title: "Choosing a Startup Strategy"
 topic: "service-broker"
-description: |
-  08/29/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article describes options for Service Broker activation.
-
-  Service Broker supports asynchronous, queued messaging. Because conversa
-tags:
-  - "service-broker"
-  - "choosing-a-startup-strategy"
-pubDate: 2025-12-01
+description: "08/29/2025 This article describes options for Service Broker activation. Service Broker supports asynchronous, queued messaging. Because conversa"
+tags: ["service-broker","choosing-a-startup-strategy"]
+pubDate: "2025-12-01"
 ---
-
-08/29/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article describes options for Service Broker activation.
 

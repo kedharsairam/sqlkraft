@@ -3,16 +3,14 @@ title: "Upgrade SQL Server on Linux"
 topic: "linux-operations"
 description: |
   To minimize downtime and risk, you should consider several approaches when planning to
-
-  upgrade the SQL Server Database Engine from an earlier release of SQL Server on Linux.
-
-  Upgrade in place
-
-  Minute
-tags:
-  - "linux-operations"
-  - "upgrade-sql-server-on-linux"
-pubDate: 2025-12-01
+  
+    upgrade the SQL Server Database Engine from an earlier release of SQL Server on Linux.
+  
+    Upgrade in place
+  
+    Minute
+tags: ["linux-operations","upgrade-sql-server-on-linux"]
+pubDate: "2025-12-01"
 ---
 
 To minimize downtime and risk, you should consider several approaches when planning to

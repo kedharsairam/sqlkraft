@@ -3,21 +3,17 @@ title: "SqlPackage Export"
 topic: "sqlpackage"
 description: |
   SqlPackage Export parameters and properties
-
-  07/28/2025
-
-  The SqlPackage Export action exports a connected database to a BACPAC file (.bacpac). By default, data for all tables will
-
-  be included in the
-tags:
-  - "sqlpackage"
-  - "sqlpackage-export"
-pubDate: 2025-12-01
+  
+    07/28/2025
+  
+    The SqlPackage Export action exports a connected database to a BACPAC file (.bacpac). By default, data for all tables will
+  
+    be included in the
+tags: ["sqlpackage","sqlpackage-export"]
+pubDate: "2025-12-01"
 ---
 
 SqlPackage Export parameters and properties
-
-07/28/2025
 
 The SqlPackage Export action exports a connected database to a BACPAC file (.bacpac). By default, data for all tables will
 

@@ -3,8 +3,8 @@ name: "Use EXECUTE AS CALLER stand-alone statement"
 title: "Use EXECUTE AS CALLER stand-alone statement"
 category: "statements"
 description: "For example, assume the following conditions:"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 For example, assume the following conditions:

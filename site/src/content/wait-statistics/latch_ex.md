@@ -1,11 +1,11 @@
 ---
-name: LATCH_EX
+name: "LATCH_EX"
 title: "Exclusive Latch Wait"
-category: memory
-severity: high
+category: "memory"
+severity: "high"
 description: "Occurs when waiting for an exclusive latch on an in-memory structure. Unlike PAGEIOLATCH, this is pure memory contention — no disk I/O involved. Typically indicates NUMA node contention or THREADPOOL-like pressure."
-tags: ["latch", "memory", "contention"]
-pubDate: 2026-05-29
+tags: ["latch","memory","contention"]
+pubDate: "2026-05-29"
 relatedScripts: ["diagnose-latch-contention"]
 ---
 

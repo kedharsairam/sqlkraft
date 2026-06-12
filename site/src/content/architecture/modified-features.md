@@ -1,37 +1,10 @@
 ---
 title: "Modified Features"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  04/15/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  The following features have been modified to be supported by a partially contained database.
-
-  Features are usually modified
-tags:
-  - "collation"
-  - "modified-features"
-pubDate: 2025-12-01
+description: "The following features have been modified to be supported by a partially contained database. Features are usually modified"
+tags: ["collation","modified-features"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/15/2024
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The following features have been modified to be supported by a partially contained database.
 

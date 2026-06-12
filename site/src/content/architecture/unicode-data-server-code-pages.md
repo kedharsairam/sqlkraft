@@ -1,35 +1,10 @@
 ---
 title: "Unicode data & server code pages"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  08/29/2024
-
-  Applies to:
-
-  SQL Server
-
-  The Extended Stored Procedure API is enabled for Unicode data; however, it isn't enabled for
-
-  Unicode metadata. The
-
-  Unicode directive doesn't have any
-tags:
-  - "clr-integration"
-  - "unicode-data-server-code-pages"
-pubDate: 2025-12-01
+description: "The Extended Stored Procedure API is enabled for Unicode data; however, it isn't enabled for Unicode metadata."
+tags: ["clr-integration","unicode-data-server-code-pages"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-08/29/2024
-
-SQL Server
 
 The Extended Stored Procedure API is enabled for Unicode data; however, it isn't enabled for
 

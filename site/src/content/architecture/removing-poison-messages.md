@@ -1,29 +1,10 @@
 ---
 title: "Removing Poison Messages"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  A poison message is a message containing information that an application can't successfully
-
-  process. For example, a manufacturing work
-tags:
-  - "service-broker"
-  - "removing-poison-messages"
-pubDate: 2025-12-01
+description: "09/11/2025 A poison message is a message containing information that an application can't successfully process."
+tags: ["service-broker","removing-poison-messages"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 A poison message is a message containing information that an application can't successfully
 

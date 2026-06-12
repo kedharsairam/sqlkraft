@@ -1,29 +1,10 @@
 ---
 title: "Messages"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Messages are the information exchanged between applications that use Service Broker.
-
-  Each message is part of a conversation. A message
-tags:
-  - "service-broker"
-  - "messages"
-pubDate: 2025-12-01
+description: "09/11/2025 Messages are the information exchanged between applications that use Service Broker. Each message is part of a conversation. A message"
+tags: ["service-broker","messages"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Messages are the information exchanged between applications that use Service Broker.
 

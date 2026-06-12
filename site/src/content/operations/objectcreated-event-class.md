@@ -1,31 +1,10 @@
 ---
 title: "Object:Created Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Object:Created event class indicates that an object has been created, for example, by the
-tags:
-  - "event-classes"
-  - "objectcreated-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","objectcreated-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Object:Created event class indicates that an object has been created, for example, by the
 

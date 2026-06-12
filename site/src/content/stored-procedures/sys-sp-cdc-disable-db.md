@@ -4,7 +4,7 @@ title: "sys.sp_cdc_disable_db"
 category: "general"
 description: "Disables change data capture (CDC) for the current database. Change data capture isn't available in every edition of SQL Server. For a list of features that are supported by the editions of SQL Server, see Editions and supported features of SQL Server 2022 disables change data capture for all tables in the database currently enabled."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sys.sp_cdc_disable_db"
 ---
 

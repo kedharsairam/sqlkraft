@@ -1,32 +1,10 @@
 ---
 title: "Publish profiles"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  A publish profile is a file that stores deployment configuration for a SQL project. Publish
-
-tags:
-  - "ssms"
-  - "publish-profiles"
-pubDate: 2025-12-01
+description: "A publish profile is a file that stores deployment configuration for a SQL project. Publish"
+tags: ["ssms","publish-profiles"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 A publish profile is a file that stores deployment configuration for a SQL project. Publish
 

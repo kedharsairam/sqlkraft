@@ -1,37 +1,10 @@
 ---
 title: "View dependencies"
 topic: "spatial-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft
-
-  Fabric
-
-  This topic describes how to view s
-tags:
-  - "spatial-data"
-  - "view-dependencies"
-pubDate: 2025-12-01
+description: "This topic describes how to view s"
+tags: ["spatial-data","view-dependencies"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

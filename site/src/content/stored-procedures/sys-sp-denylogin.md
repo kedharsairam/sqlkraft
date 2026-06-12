@@ -4,12 +4,12 @@ title: "sp_denylogin"
 category: "general"
 description: "Prevents a Windows user or Windows group from connecting to an instance of SQL Server."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_denylogin [ @loginame = ]
-  N
-  'loginame'
-  [ ; ]
+      N
+      'loginame'
+      [ ; ]
 ---
 
 ## Description

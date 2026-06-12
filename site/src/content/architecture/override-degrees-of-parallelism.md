@@ -2,8 +2,8 @@
 title: "Override degrees of parallelism"
 topic: "query-processing"
 description: ""
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 ### Database Engine Configuration - MaxDOP page
@@ -42,15 +42,11 @@ configuration can be set at various levels:
 
 server configuration option.
 
-SQL Server
-
 2. Workload level, using the
 
 Resource Governor workload group configuration
 
 option.
-
-SQL Server
 
 3. Database level, using the
 

@@ -1,33 +1,10 @@
 ---
 title: "Logins & jobs"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/06/2024
-
-  Applies to:
-
-  SQL Server
-
-  You should routinely maintain the same set of user logins and SQL Server Agent jobs on every
-
-  primary database of an Always On availability group (AG),
-tags:
-  - "high-availability"
-  - "logins-jobs"
-pubDate: 2025-12-01
+description: "You should routinely maintain the same set of user logins and SQL Server Agent jobs on every primary database of an Always On availability group (AG),"
+tags: ["high-availability","logins-jobs"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/06/2024
-
-SQL Server
 
 You should routinely maintain the same set of user logins and SQL Server Agent jobs on every
 

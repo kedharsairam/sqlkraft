@@ -4,38 +4,38 @@ title: "sp_addlinkedserver"
 category: "general"
 description: "be specified in the parameter. Optionally, the connection string can also supply a failover partner name. from a local login, or a login that isn't part of the role, you might receive the following error: To resolve this issue, add the parameter to your connection string."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_addlinkedserver
-  [ @server = ]
-  N
-  'server'
-  [ , [ @srvproduct = ]
-  N
-  'srvproduct'
-  ]
-  [ , [ @provider = ]
-  N
-  'provider'
-  ]
-  [ , [ @datasrc = ]
-  N
-  'datasrc'
-  ]
-  [ , [ @location = ]
-  N
-  'location'
-  ]
-  [ , [ @provstr = ]
-  N
-  'provstr'
-  ]
-  [ , [ @catalog = ]
-  N
-  'catalog'
-  ]
-  [ , [ @linkedstyle = ] linkedstyle ]
-  [ ; ]
+      [ @server = ]
+      N
+      'server'
+      [ , [ @srvproduct = ]
+      N
+      'srvproduct'
+      ]
+      [ , [ @provider = ]
+      N
+      'provider'
+      ]
+      [ , [ @datasrc = ]
+      N
+      'datasrc'
+      ]
+      [ , [ @location = ]
+      N
+      'location'
+      ]
+      [ , [ @provstr = ]
+      N
+      'provstr'
+      ]
+      [ , [ @catalog = ]
+      N
+      'catalog'
+      ]
+      [ , [ @linkedstyle = ] linkedstyle ]
+      [ ; ]
 ---
 
 ## Description
@@ -79,15 +79,13 @@ N
 
 ## Arguments
 
-Azure SQL Managed Instance
-
 Creates a linked server. A linked server provides access to distributed, heterogeneous queries
 
 against OLE DB data sources. After a linked server is created by using
 
 distributed queries can be run against this server. If the linked server is defined as an instance of
 
-SQL Server, remote stored procedures can be executed.
+, remote stored procedures can be executed.
 
 The name of the linked server to create.
 

@@ -1,33 +1,10 @@
 ---
 title: "Automatic Page Repair"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Automatic page repair is supported by database mirroring and by Always On availability
-
-  groups. After certain types of errors corrupt a page, making it
-tags:
-  - "high-availability"
-  - "automatic-page-repair"
-pubDate: 2025-12-01
+description: "Automatic page repair is supported by database mirroring and by Always On availability groups."
+tags: ["high-availability","automatic-page-repair"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 Automatic page repair is supported by database mirroring and by Always On availability
 

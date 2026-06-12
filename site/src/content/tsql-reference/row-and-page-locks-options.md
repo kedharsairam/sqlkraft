@@ -3,8 +3,8 @@ name: "Row and page locks options"
 title: "Row and page locks options"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 option is equivalent to.

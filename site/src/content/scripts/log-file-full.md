@@ -2,9 +2,9 @@
 name: "Log File Full"
 title: "Log File Full"
 description: ""
-category: troubleshooting
+category: "troubleshooting"
 tags: ["troubleshooting"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

@@ -4,7 +4,7 @@ title: "sp_replrestart"
 category: "general"
 description: "Used by transactional replication during backup and restore so that the replicated data at the Distributor is synchronized with data at the Publisher. This stored procedure is executed at the Publisher on the publication database. is used when the highest log sequence number (LSN) value at the Distributor doesn't match the highest LSN value at the Publisher. fixed d"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 ---
 
 ## Description

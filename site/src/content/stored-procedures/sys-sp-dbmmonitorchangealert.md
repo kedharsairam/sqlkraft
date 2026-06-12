@@ -4,16 +4,16 @@ title: "sp_dbmmonitorchangealert"
 category: "general"
 description: "Adds or changes warning threshold for a specified mirroring performance metric. Specifies the database for which to add or change the specified warning threshold. An integer value that identifies the warning to be added or changed."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_dbmmonitorchangealert
-  [ @database_name = ]
-  N
-  'database_name'
-  , [ @alert_id = ] alert_id
-  , [ @threshold = ] threshold
-  [ , [ @enabled = ] enabled ]
-  [ ; ]
+      [ @database_name = ]
+      N
+      'database_name'
+      , [ @alert_id = ] alert_id
+      , [ @threshold = ] threshold
+      [ , [ @enabled = ] enabled ]
+      [ ; ]
 ---
 
 ## Description

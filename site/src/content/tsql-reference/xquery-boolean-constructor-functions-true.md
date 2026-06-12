@@ -3,20 +3,11 @@ name: "xquery-boolean-constructor-functions-true"
 title: "XQuery - Boolean Constructor Functions - true"
 category: "xquery"
 description: ""
-syntax: 'xs:boolean("1")'
-tags:
-  - "xquery"
-  - "boolean-constructor-functions-true"
-pubDate: 2025-12-01
+syntax: |
+  'xs:boolean("1")'
+tags: ["xquery","boolean-constructor-functions-true"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Returns the xs:boolean value True. This is equivalent to.
 

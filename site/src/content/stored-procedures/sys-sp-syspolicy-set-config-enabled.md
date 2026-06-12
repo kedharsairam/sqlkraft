@@ -4,7 +4,7 @@ title: "sp_syspolicy_set_config_enabled"
 category: "general"
 description: "Enables or disables Policy-Based Management. Determines whether Policy-Based Management is enabled."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_syspolicy_set_config_enabled"
 ---
 

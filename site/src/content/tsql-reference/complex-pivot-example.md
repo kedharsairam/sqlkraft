@@ -3,8 +3,8 @@ name: "Complex PIVOT example"
 title: "Complex PIVOT example"
 category: "queries"
 description: ""
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 The following code displays the same result, pivoted so that the

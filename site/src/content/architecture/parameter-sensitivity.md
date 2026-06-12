@@ -2,8 +2,8 @@
 title: "Parameter sensitivity"
 topic: "query-processing"
 description: "Preparing a statement is more effective if parameter markers are used. For example, assume"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Preparing a statement is more effective if parameter markers are used. For example, assume
@@ -46,9 +46,7 @@ used to match an Transact-SQL statement to existing execution plans.
 
 The application can control when the execution plan is created and when it is reused.
 
-The prepare/execute model is portable to other databases, including earlier versions of
-
-SQL Server.
+The prepare/execute model is portable to other databases, including earlier versions of.
 
 ### All Density
 

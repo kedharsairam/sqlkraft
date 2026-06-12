@@ -1,37 +1,10 @@
 ---
 title: "Convert an original SQL project"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Creating a new SDK-style SQL project is a
-
-  quick task
-
-  . However, if you have existing SQL
-
-  p
-tags:
-  - "ssms"
-  - "convert-an-original-sql-project"
-pubDate: 2025-12-01
+description: "Creating a new SDK-style SQL project is a quick task . However, if you have existing SQL p"
+tags: ["ssms","convert-an-original-sql-project"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Creating a new SDK-style SQL project is a
 

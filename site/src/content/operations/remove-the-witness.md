@@ -1,33 +1,10 @@
 ---
 title: "Remove the witness"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  04/15/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to remove a witness from a database mirroring session in SQL Server
-
-  by using SQL Server Management Studio or Transact-SQL. At
-tags:
-  - "high-availability"
-  - "remove-the-witness"
-pubDate: 2025-12-01
+description: "This topic describes how to remove a witness from a database mirroring session in SQL Server by using SQL Server Management Studio or Transact-SQL. At"
+tags: ["high-availability","remove-the-witness"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/15/2024
-
-SQL Server
 
 This topic describes how to remove a witness from a database mirroring session in SQL Server
 

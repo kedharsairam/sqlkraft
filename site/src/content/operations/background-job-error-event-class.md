@@ -1,35 +1,10 @@
 ---
 title: "Background Job Error Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event class occurs when a background job has terminated
-
-  abnormally. This condition migh
-tags:
-  - "event-classes"
-  - "background-job-error-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs when a background job has terminated abnormally."
+tags: ["event-classes","background-job-error-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

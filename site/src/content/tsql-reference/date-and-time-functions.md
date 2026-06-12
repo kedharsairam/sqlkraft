@@ -3,8 +3,8 @@ name: "Date and time functions"
 title: "Date and time functions"
 category: "data-types"
 description: "The following tables list the Transact-SQL date and time functions."
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 ## Functions that return system date and time values

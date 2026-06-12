@@ -1,33 +1,10 @@
 ---
 title: "Attach a Database"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  08/10/2023
-
-  Applies to:
-
-  SQL Server
-
-  This article describes how to attach a database in SQL Server with SQL Server Management
-
-  Studio or Transact-SQL. You can use this feature to copy, mov
-tags:
-  - "collation"
-  - "attach-a-database"
-pubDate: 2025-12-01
+description: "This article describes how to attach a database in SQL Server with SQL Server Management Studio or Transact-SQL."
+tags: ["collation","attach-a-database"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-08/10/2023
-
-SQL Server
 
 This article describes how to attach a database in SQL Server with SQL Server Management
 

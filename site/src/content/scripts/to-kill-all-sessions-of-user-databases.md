@@ -2,9 +2,9 @@
 name: "To Kill all Sessions of User Databases"
 title: "To Kill all Sessions of User Databases"
 description: "diagnostic script for database operations."
-category: database
-tags: ["database", "session", "user"]
-pubDate: 2025-03-15
+category: "database"
+tags: ["database","session","user"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

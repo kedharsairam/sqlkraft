@@ -2,8 +2,8 @@
 title: "Examples of compile-time expression evaluation"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Specifically, the following built-in functions and special operators are evaluated at compile time

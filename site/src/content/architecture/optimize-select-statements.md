@@ -2,8 +2,8 @@
 title: "Optimize SELECT statements"
 topic: "query-processing"
 description: ""
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 You can change the meaning of the query by adding parentheses to force evaluation of the

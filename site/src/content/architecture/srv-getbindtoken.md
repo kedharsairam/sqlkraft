@@ -1,35 +1,10 @@
 ---
 title: "srv_getbindtoken"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Obtains a bind token of the transaction in the current client session that invokes the extended
-
-  stored procedure.
-
-  The extended stored procedure can t
-tags:
-  - "clr-integration"
-  - "srv-getbindtoken"
-pubDate: 2025-12-01
+description: "Obtains a bind token of the transaction in the current client session that invokes the extended stored procedure. The extended stored procedure can t"
+tags: ["clr-integration","srv-getbindtoken"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Obtains a bind token of the transaction in the current client session that invokes the extended
 

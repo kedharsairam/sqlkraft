@@ -4,30 +4,30 @@ title: "sp_table_privileges"
 category: "general"
 description: "Returns a list of table permissions (such as The table used to return catalog information. Wildcard pattern matching is supported. The table owner of the table used to return catalog information. Wildcard pattern matching is supported. If the owner isn't specified, the default table visibility rules of the underlying DBMS apply."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_table_privileges
-  [ @table_name = ]
-  N
-  'table_name'
-  [ , [ @table_owner = ]
-  N
-  'table_owner'
-  ]
-  [ , [ @table_qualifier = ]
-  N
-  'table_qualifier'
-  ]
-  [ , [ @f
-  U
-  se
-  P
-  attern = ] f
-  U
-  se
-  P
-  attern ]
-  [ ; ]
+      [ @table_name = ]
+      N
+      'table_name'
+      [ , [ @table_owner = ]
+      N
+      'table_owner'
+      ]
+      [ , [ @table_qualifier = ]
+      N
+      'table_qualifier'
+      ]
+      [ , [ @f
+      U
+      se
+      P
+      attern = ] f
+      U
+      se
+      P
+      attern ]
+      [ ; ]
 ---
 
 ## Description

@@ -1,29 +1,10 @@
 ---
 title: "Transactional Messaging"
 topic: "service-broker"
-description: |
-  09/10/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  The foundation of the Service Broker programming model is transactional messaging. Any
-
-  operation that involves Service Broker is part
-tags:
-  - "service-broker"
-  - "transactional-messaging"
-pubDate: 2025-12-01
+description: "09/10/2025 The foundation of the Service Broker programming model is transactional messaging."
+tags: ["service-broker","transactional-messaging"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The foundation of the Service Broker programming model is transactional messaging. Any
 

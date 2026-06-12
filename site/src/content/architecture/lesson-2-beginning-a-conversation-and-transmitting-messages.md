@@ -1,31 +1,10 @@
 ---
 title: "Lesson 2: Beginning a Conversation and Transmitting Messages"
 topic: "service-broker"
-description: |
-  09/04/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  In this lesson, you learn to start a conversation, complete a simple request-reply message cycle,
-
-  and then end the conversation.
-
-  Copy
-tags:
-  - "service-broker"
-  - "lesson-2-beginning-a-conversation-and-transmitting-messages"
-pubDate: 2025-12-01
+description: "09/04/2025 In this lesson, you learn to start a conversation, complete a simple request-reply message cycle, and then end the conversation. Copy"
+tags: ["service-broker","lesson-2-beginning-a-conversation-and-transmitting-messages"]
+pubDate: "2025-12-01"
 ---
-
-09/04/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 In this lesson, you learn to start a conversation, complete a simple request-reply message cycle,
 

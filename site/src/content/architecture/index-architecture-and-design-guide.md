@@ -2,17 +2,9 @@
 title: "Index architecture and design guide"
 topic: "index-architecture"
 description: ""
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Designing efficient indexes is key to achieving good database and application performance. A
 

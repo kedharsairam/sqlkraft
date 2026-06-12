@@ -1,12 +1,12 @@
 ---
-name: "2024"
+name: 2024
 title: "Error 2024"
 errorNumber: 2024
 severity: "medium"
 category: "connection"
 description: "Applies to: Azure SQL Managed Instance Product Name SQL Server Event ID 41962 Event Source MSSQLSERVER Component SQLEngine Message Text Operation was aborted as replication to Azu"
-tags: ["connection", "severity-medium"]
-pubDate: 2026-05-29
+tags: ["connection","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

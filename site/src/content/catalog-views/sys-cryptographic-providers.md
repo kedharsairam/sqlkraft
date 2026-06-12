@@ -3,8 +3,8 @@ name: "sys.cryptographic_providers"
 title: "sys.cryptographic_providers"
 category: "compatibility"
 description: "Returns one row for each registered cryptographic provider. Identification number of the cryptographic provider."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

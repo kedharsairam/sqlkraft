@@ -1,33 +1,10 @@
 ---
 title: "Change replica availability"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/04/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to change the availability mode of an availability replica in an Always
-
-  On availability group in SQL Server by using SQL Serv
-tags:
-  - "high-availability"
-  - "change-replica-availability"
-pubDate: 2025-12-01
+description: "This topic describes how to change the availability mode of an availability replica in an Always On availability group in SQL Server by using SQL Serv"
+tags: ["high-availability","change-replica-availability"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/04/2024
-
-SQL Server
 
 This topic describes how to change the availability mode of an availability replica in an Always
 

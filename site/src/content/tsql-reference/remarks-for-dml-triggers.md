@@ -3,8 +3,8 @@ name: "Remarks for DML triggers"
 title: "Remarks for DML triggers"
 category: "statements"
 description: "For a CLR trigger, specifies the method of an assembly to bind with the trigger. The method"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 For a CLR trigger, specifies the method of an assembly to bind with the trigger. The method

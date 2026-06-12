@@ -3,17 +3,13 @@ title: "How to: Configure SQL Server Unit Test Execution"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  By configuring your test project, you can specify several settings that control aspects of how
-
-  your SQL Server unit tests are run. These configuration settings are stored in your test pro
-tags:
-  - "ssb-diagnose"
-  - "how-to-configure-sql-server-unit-test-execution"
-pubDate: 2025-12-01
+  
+    By configuring your test project, you can specify several settings that control aspects of how
+  
+    your SQL Server unit tests are run. These configuration settings are stored in your test pro
+tags: ["ssb-diagnose","how-to-configure-sql-server-unit-test-execution"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 By configuring your test project, you can specify several settings that control aspects of how
 

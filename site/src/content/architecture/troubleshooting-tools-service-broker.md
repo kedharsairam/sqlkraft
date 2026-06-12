@@ -1,29 +1,10 @@
 ---
 title: "Troubleshooting Tools (Service Broker)"
 topic: "service-broker"
-description: |
-  08/29/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Service Broker provides several tools to diagnose configuration and conversation problems.
-
-  Service Broker is a component of the Databa
-tags:
-  - "service-broker"
-  - "troubleshooting-tools-service-broker"
-pubDate: 2025-12-01
+description: "08/29/2025 Service Broker provides several tools to diagnose configuration and conversation problems. Service Broker is a component of the Databa"
+tags: ["service-broker","troubleshooting-tools-service-broker"]
+pubDate: "2025-12-01"
 ---
-
-08/29/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Service Broker provides several tools to diagnose configuration and conversation problems.
 

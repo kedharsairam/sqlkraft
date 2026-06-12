@@ -4,19 +4,9 @@ title: "XQuery - Aggregate Functions - sum"
 category: "xquery"
 description: ""
 syntax: "AdventureWorks2022"
-tags:
-  - "xquery"
-  - "aggregate-functions-sum"
-pubDate: 2025-12-01
+tags: ["xquery","aggregate-functions-sum"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Returns the sum of a sequence of numbers.
 

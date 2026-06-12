@@ -3,13 +3,13 @@ name: "sys.trace_event_bindings"
 title: "sys.trace_event_bindings"
 category: "compatibility"
 description: "catalog view contains a list of all possible usage combinations of events and columns. For each event listed in the column. Not all available columns are populated each time a given event occurs. These values do not change for a given version of the SQL Server Database For a complete list of supported trace events, see SQL Server Event Class Reference ID of the trace event."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   sp_trace_create
-  sp_trace_setevent
-  sp_trace_setfilter
-  sp_trace_setstatus
+      sp_trace_setevent
+      sp_trace_setfilter
+      sp_trace_setstatus
 ---
 
 ## Description

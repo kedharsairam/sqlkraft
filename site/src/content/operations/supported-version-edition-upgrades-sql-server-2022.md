@@ -1,27 +1,10 @@
 ---
 title: "Supported version & edition upgrades SQL Server 2022"
 topic: "upgrade"
-description: |
-  06/16/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  This article lists the supported upgrade paths from the following SQL Server versions, and the
-
-  supported edition upgrades for SQL Server 2022 (16.
-tags:
-  - "upgrade"
-  - "supported-version-edition-upgrades-sql-server-2022"
-pubDate: 2025-12-01
+description: "06/16/2025 - Windows only This article lists the supported upgrade paths from the following SQL Server versions, and the supported edition upgrades for SQL Server 2022 (16."
+tags: ["upgrade","supported-version-edition-upgrades-sql-server-2022"]
+pubDate: "2025-12-01"
 ---
-
-06/16/2025
-
-SQL Server
 
 - Windows only
 

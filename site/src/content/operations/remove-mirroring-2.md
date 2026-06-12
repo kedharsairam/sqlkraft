@@ -1,37 +1,10 @@
 ---
 title: "Remove Mirroring"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  The database owner can manually stop a database mirroring session at any time, at either
-
-  partner.
-
-  When mirroring is removed, the following occurs:
-
-  T
-tags:
-  - "high-availability"
-  - "remove-mirroring-2"
-pubDate: 2025-12-01
+description: "The database owner can manually stop a database mirroring session at any time, at either partner. When mirroring is removed, the following occurs: T"
+tags: ["high-availability","remove-mirroring-2"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 The database owner can manually stop a database mirroring session at any time, at either
 

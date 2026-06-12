@@ -3,8 +3,8 @@ name: "sys.dm_tran_distributed_transaction_stats"
 title: "sys.dm_tran_distributed_transaction_stats"
 category: "io"
 description: "Returns information about MSDTC statistics in SQL Server. The number of transactions that were shut down before they were The highest number of aborted transactions since DTC last started. The number of aborted transactions that were manually shut down The number of committed transactions for the instance. The highest number of committed transactions since DTC last started. The number of committed"
-tags: ["io", "dmv"]
-pubDate: 2026-05-29
+tags: ["io","dmv"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

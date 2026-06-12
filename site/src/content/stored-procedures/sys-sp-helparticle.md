@@ -4,25 +4,25 @@ title: "sp_helparticle"
 category: "general"
 description: "Displays information about an article. This stored procedure is executed at the Publisher on the publication database. For Oracle Publishers, this stored procedure is executed at the Distributor The name of an article in the publication. isn't supplied, information on all articles for the specified publication is returned. Specifies whether the filter clause should"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_helparticle
-  [ @publication = ]
-  N
-  'publication'
-  [ , [ @article = ]
-  N
-  'article'
-  ]
-  [ , [ @returnfilter = ] returnfilter ]
-  [ , [ @publisher = ]
-  N
-  'publisher'
-  ]
-  [ , [ @found = ] found
-  OUTPUT
-  ]
-  [ ; ]
+      [ @publication = ]
+      N
+      'publication'
+      [ , [ @article = ]
+      N
+      'article'
+      ]
+      [ , [ @returnfilter = ] returnfilter ]
+      [ , [ @publisher = ]
+      N
+      'publisher'
+      ]
+      [ , [ @found = ] found
+      OUTPUT
+      ]
+      [ ; ]
 ---
 
 ## Description

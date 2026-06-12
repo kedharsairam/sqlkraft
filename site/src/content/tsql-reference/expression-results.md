@@ -3,8 +3,8 @@ name: "Expression results"
 title: "Expression results"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Unary operators can be applied only to expressions that evaluate to any one of the data types

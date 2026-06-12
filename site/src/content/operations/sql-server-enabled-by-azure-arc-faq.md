@@ -3,16 +3,14 @@ title: "SQL Server enabled by Azure Arc FAQ"
 topic: "azure-arc"
 description: |
   Yes, you can use the
-
-  setting in the Azure Policy to indicate the SQL Server
-
-  instances that you don't want to include in the onboarding process.
-
-  For example, if you have any standby instances, you m
-tags:
-  - "azure-arc"
-  - "sql-server-enabled-by-azure-arc-faq"
-pubDate: 2025-12-01
+  
+    setting in the Azure Policy to indicate the SQL Server
+  
+    instances that you don't want to include in the onboarding process.
+  
+    For example, if you have any standby instances, you m
+tags: ["azure-arc","sql-server-enabled-by-azure-arc-faq"]
+pubDate: "2025-12-01"
 ---
 
 Yes, you can use the
@@ -35,9 +33,7 @@ matching of the instance names.
 
 No. Microsoft only captures metadata and information about your SQL Server to help
 
-troubleshoot and inventory. The data sent doesn't include user data or about your utilization of
-
-SQL Server.
+troubleshoot and inventory. The data sent doesn't include user data or about your utilization of.
 
 ```cmd
 excludedInstances

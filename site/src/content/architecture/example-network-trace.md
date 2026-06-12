@@ -2,11 +2,9 @@
 title: "Example network trace"
 topic: "query-processing"
 description: ""
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
-
-09/07/2025
 
 This article presents several examples of a network trace that captures various handshakes and
 
@@ -34,7 +32,7 @@ authentication.
 
 This article also describes Multiple Active Result Sets (MARS) connections. MARS is a feature of
 
-SQL Server, introduced with SQL Server 2005 (9.x), that allows multiple commands to be
+, introduced with SQL Server 2005 (9.x), that allows multiple commands to be
 
 executed on a connection without having to clean up the results from the first command,
 

@@ -3,8 +3,8 @@ name: "General trigger considerations"
 title: "General trigger considerations"
 category: "statements"
 description: "The ability to return results from triggers will be removed in a future version of SQL Server."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Return results

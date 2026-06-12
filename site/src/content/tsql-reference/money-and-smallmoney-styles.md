@@ -3,8 +3,8 @@ name: "money and smallmoney styles"
 title: "Money and smallmoney styles"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 When converting character data to

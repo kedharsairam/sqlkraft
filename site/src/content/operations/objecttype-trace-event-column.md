@@ -1,31 +1,10 @@
 ---
 title: "ObjectType Trace Event Column"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Object Type trace event column is used in a variety of trace events. This topic describes
-tags:
-  - "event-classes"
-  - "objecttype-trace-event-column"
-pubDate: 2025-12-01
+description: "The Object Type trace event column is used in a variety of trace events. This topic describes"
+tags: ["event-classes","objecttype-trace-event-column"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Object Type trace event column is used in a variety of trace events. This topic describes the
 

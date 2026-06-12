@@ -2,8 +2,8 @@
 title: "Nonclustered index architecture"
 topic: "index-architecture"
 description: ""
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 values are ordered in the nonclustered index, the query optimizer can quickly find all entries in

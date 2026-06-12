@@ -1,29 +1,10 @@
 ---
 title: "Determining the Dialog Security Type"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  The type of dialog security that's used for a conversation depends on the options in the
-
-  statement, the settings on the remote service
-tags:
-  - "service-broker"
-  - "determining-the-dialog-security-type"
-pubDate: 2025-12-01
+description: "09/11/2025 The type of dialog security that's used for a conversation depends on the options in the statement, the settings on the remote service"
+tags: ["service-broker","determining-the-dialog-security-type"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The type of dialog security that's used for a conversation depends on the options in the
 

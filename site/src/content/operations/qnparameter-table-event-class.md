@@ -1,33 +1,10 @@
 ---
 title: "QN:Parameter Table Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The QN:Parameter table event reports information about the operations required to create,
-
-  ke
-tags:
-  - "event-classes"
-  - "qnparameter-table-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","qnparameter-table-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The QN:Parameter table event reports information about the operations required to create,
 

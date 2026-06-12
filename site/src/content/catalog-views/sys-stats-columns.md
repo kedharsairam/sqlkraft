@@ -3,8 +3,8 @@ name: "sys.stats_columns"
 title: "sys.stats_columns"
 category: "objects"
 description: "Contains a row for each column that is part of ID of the object of which this column is part."
-tags: ["objects", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["objects","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "HumanResources.Employee"
 ---
 

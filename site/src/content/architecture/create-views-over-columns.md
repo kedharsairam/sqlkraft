@@ -1,35 +1,10 @@
 ---
 title: "Create Views over Columns"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  You can use an
-
-  type column to create views. The following example creates a view in which
-
-  t
-tags:
-  - "xml-data"
-  - "create-views-over-columns"
-pubDate: 2025-12-01
+description: "You can use an type column to create views. The following example creates a view in which t"
+tags: ["xml-data","create-views-over-columns"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 You can use an
 

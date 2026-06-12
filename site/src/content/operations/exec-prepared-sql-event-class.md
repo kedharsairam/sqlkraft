@@ -1,32 +1,10 @@
 ---
 title: "Exec Prepared SQL Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Exec Prepared SQL event class indicates that the SqlClient, ODBC, OLE DB, or DB-Library
-
-tags:
-  - "event-classes"
-  - "exec-prepared-sql-event-class"
-pubDate: 2025-12-01
+description: "The Exec Prepared SQL event class indicates that the SqlClient, ODBC, OLE DB, or DB-Library"
+tags: ["event-classes","exec-prepared-sql-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Exec Prepared SQL event class indicates that the SqlClient, ODBC, OLE DB, or DB-Library
 

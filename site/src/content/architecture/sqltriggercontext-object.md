@@ -1,39 +1,12 @@
 ---
 title: "SqlTriggerContext Object"
 topic: "clr-integration"
-description: |
-  SqlTriggerContext object
-
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  The .NET Framework common language runtime (CLR)
-
-  class provides
-
-  context information about the trigger. This contextual info
-tags:
-  - "clr-integration"
-  - "sqltriggercontext-object"
-pubDate: 2025-12-01
+description: "SqlTriggerContext object The .NET Framework common language runtime (CLR) class provides context information about the trigger."
+tags: ["clr-integration","sqltriggercontext-object"]
+pubDate: "2025-12-01"
 ---
 
 SqlTriggerContext object
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 The.NET Framework common language runtime (CLR)
 

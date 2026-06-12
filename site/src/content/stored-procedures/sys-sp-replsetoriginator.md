@@ -4,20 +4,20 @@ title: "sp_replsetoriginator"
 category: "general"
 description: "Used to invoke loopback detection and handling in bidirectional transactional replication. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_replsetoriginator
-  [ @originator_srv = ]
-  N
-  'originator_srv'
-  , [ @originator_db = ]
-  N
-  'originator_db'
-  [ , [ @publication = ]
-  N
-  'publication'
-  ]
-  [ ; ]
+      [ @originator_srv = ]
+      N
+      'originator_srv'
+      , [ @originator_db = ]
+      N
+      'originator_db'
+      [ , [ @publication = ]
+      N
+      'publication'
+      ]
+      [ ; ]
 ---
 
 ## Description

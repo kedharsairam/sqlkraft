@@ -1,29 +1,10 @@
 ---
 title: "Failover & failover modes"
 topic: "high-availability"
-description: |
-  06/16/2025
-
-  Applies to:
-
-  SQL Server
-
-  This article describes failover and failover modes for SQL Server
-
-  Always On availability groups
-
-  .
-
-  Within the context of an availability group, the primary role
-tags:
-  - "high-availability"
-  - "failover-failover-modes"
-pubDate: 2025-12-01
+description: "06/16/2025 This article describes failover and failover modes for SQL Server Always On availability groups ."
+tags: ["high-availability","failover-failover-modes"]
+pubDate: "2025-12-01"
 ---
-
-06/16/2025
-
-SQL Server
 
 This article describes failover and failover modes for SQL Server
 

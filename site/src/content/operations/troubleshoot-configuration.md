@@ -1,21 +1,10 @@
 ---
 title: "Troubleshoot configuration"
 topic: "high-availability"
-description: |
-  Applies to:
-
-  SQL Server
-
-  This article provides information to help you troubleshoot typical problems with configuring
-
-  server instances for Always On availability groups. Typical configuration problem
-tags:
-  - "high-availability"
-  - "troubleshoot-configuration"
-pubDate: 2025-12-01
+description: "This article provides information to help you troubleshoot typical problems with configuring server instances for Always On availability groups. Typical configuration problem"
+tags: ["high-availability","troubleshoot-configuration"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 This article provides information to help you troubleshoot typical problems with configuring
 

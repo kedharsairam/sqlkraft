@@ -2,8 +2,8 @@
 title: "Typical scenarios"
 topic: "io-fundamentals"
 description: "Spinlock contention can occur for any number of reasons that might be unrelated to database"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Spinlock contention can occur for any number of reasons that might be unrelated to database

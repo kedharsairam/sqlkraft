@@ -1,12 +1,12 @@
 ---
-name: "1059"
+name: 1059
 title: "Error 1059"
 errorNumber: 1059
 severity: "medium"
 category: "io"
 description: "Description 1059 15 No Cannot set or reset the 'parseonly' option within a procedure or function."
-tags: ["io", "severity-medium"]
-pubDate: 2026-05-29
+tags: ["io","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

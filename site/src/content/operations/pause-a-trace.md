@@ -1,29 +1,10 @@
 ---
 title: "Pause a Trace"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Pausing a trace prevents further event data from being captured until the trace is restarted.
-
-  When you pause a trace, you prevent even
-tags:
-  - "profiler"
-  - "pause-a-trace"
-pubDate: 2025-12-01
+description: "06/06/2025 Pausing a trace prevents further event data from being captured until the trace is restarted."
+tags: ["profiler","pause-a-trace"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Pausing a trace prevents further event data from being captured until the trace is restarted.
 

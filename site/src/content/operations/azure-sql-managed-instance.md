@@ -1,21 +1,10 @@
 ---
 title: "Azure SQL Managed Instance >"
 topic: "azure-synapse"
-description: |
-  Applies to:
-
-  Azure SQL Managed Instance
-
-  This article provides an overview of Azure SQL Managed Instance, a fully managed platform as
-
-  a service (PaaS) database engine that handles most database manag
-tags:
-  - "azure-synapse"
-  - "azure-sql-managed-instance"
-pubDate: 2025-12-01
+description: ""
+tags: ["azure-synapse","azure-sql-managed-instance"]
+pubDate: "2025-12-01"
 ---
-
-Azure SQL Managed Instance
 
 This article provides an overview of Azure SQL Managed Instance, a fully managed platform as
 
@@ -46,8 +35,6 @@ handles backups, as well as patching and updating of the SQL and operating syste
 which removes the burden on managing the underlying infrastructure.
 
 If you're new to Azure SQL Managed Instance, check out the
-
-Azure SQL Managed Instance
 
 video from our in-depth
 

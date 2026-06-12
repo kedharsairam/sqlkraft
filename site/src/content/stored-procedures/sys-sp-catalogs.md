@@ -4,12 +4,12 @@ title: "sp_catalogs"
 category: "general"
 description: "Returns the list of catalogs in the specified linked server. This is equivalent to databases in SQL"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_catalogs [ @server_name = ]
-  N
-  'server_name'
-  [ ; ]
+      N
+      'server_name'
+      [ ; ]
 ---
 
 ## Description

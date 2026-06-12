@@ -1,43 +1,10 @@
 ---
 title: "Create Variables & Columns"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  data type is a built-in data type in SQL Server and is somewhat similar to other built-in
-
-  types s
-tags:
-  - "xml-data"
-  - "create-variables-columns"
-pubDate: 2025-12-01
+description: "The data type is a built-in data type in SQL Server and is somewhat similar to other built-in types s"
+tags: ["xml-data","create-variables-columns"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

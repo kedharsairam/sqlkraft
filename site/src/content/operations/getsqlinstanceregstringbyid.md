@@ -1,29 +1,10 @@
 ---
 title: "GetSQLInstanceRegStringByID"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/07/2024
-
-  Retrieves a registry string from an instance specific registry tree by the given instance ID, the
-
-  subtree, and the name of the value.
-
-  This article describes a native code API
-tags:
-  - "event-classes"
-  - "getsqlinstanceregstringbyid"
-pubDate: 2025-12-01
+description: "Retrieves a registry string from an instance specific registry tree by the given instance ID, the subtree, and the name of the value. This article describes a native code API"
+tags: ["event-classes","getsqlinstanceregstringbyid"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/07/2024
 
 Retrieves a registry string from an instance specific registry tree by the given instance ID, the
 

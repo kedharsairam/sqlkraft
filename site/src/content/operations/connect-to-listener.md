@@ -1,25 +1,10 @@
 ---
 title: "Connect to listener"
 topic: "high-availability"
-description: |
-  Applies to:
-
-  SQL Server
-
-  This article teaches you how to connect to an
-
-  Always On availability group listener
-
-  for SQL
-
-  Server. An availability group listener is a virtual network name that clients us
-tags:
-  - "high-availability"
-  - "connect-to-listener"
-pubDate: 2025-12-01
+description: "This article teaches you how to connect to an Always On availability group listener for SQL Server."
+tags: ["high-availability","connect-to-listener"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 This article teaches you how to connect to an
 

@@ -1,33 +1,10 @@
 ---
 title: "Analyze project code"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  You can improve the quality of the Transact-SQL code in a database schema by importing it
-
-  in
-tags:
-  - "ssms"
-  - "analyze-project-code"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssms","analyze-project-code"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 You can improve the quality of the Transact-SQL code in a database schema by importing it
 

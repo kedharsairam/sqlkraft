@@ -1,25 +1,10 @@
 ---
 title: "Getting started"
 topic: "high-availability"
-description: |
-  10/10/2025
-
-  Applies to:
-
-  SQL Server
-
-  This topic introduces the steps for configuring instances of SQL Server to support Always On
-
-  availability groups and for creating, managing, and monitoring an ava
-tags:
-  - "high-availability"
-  - "getting-started"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","getting-started"]
+pubDate: "2025-12-01"
 ---
-
-10/10/2025
-
-SQL Server
 
 This topic introduces the steps for configuring instances of SQL Server to support Always On
 

@@ -1,11 +1,11 @@
 ---
-name: LATCH_SH
+name: "LATCH_SH"
 title: "Shared Latch Wait"
-category: memory
-severity: medium
+category: "memory"
+severity: "medium"
 description: "Occurs when waiting for a shared latch on an in-memory structure. Normal at low levels; high values indicate contention on frequently accessed internal data structures."
-tags: ["latch", "shared", "memory"]
-pubDate: 2026-05-29
+tags: ["latch","shared","memory"]
+pubDate: "2026-05-29"
 relatedScripts: ["diagnose-latch-contention"]
 ---
 

@@ -2,8 +2,8 @@
 title: "Query deprecated features"
 topic: "query-processing"
 description: "2019 (15.x)"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 2019 (15.x)

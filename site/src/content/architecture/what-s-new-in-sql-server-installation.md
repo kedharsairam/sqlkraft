@@ -2,17 +2,13 @@
 title: "What's new in SQL Server installation"
 topic: "io-fundamentals"
 description: "Installation is supported on x64 processors only."
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 ### SysPrep
 
 ### SysPrep
-
-09/08/2025
-
-SQL Server
 
 - Windows only
 

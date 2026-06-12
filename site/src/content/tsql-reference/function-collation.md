@@ -3,8 +3,8 @@ name: "Function collation"
 title: "Function collation"
 category: "statements"
 description: "Perform logical operations."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

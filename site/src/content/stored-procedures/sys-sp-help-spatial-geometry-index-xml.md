@@ -4,22 +4,22 @@ title: "sp_help_spatial_geometry_index_xml"
 category: "general"
 description: "Returns the names and values for a specified set of properties about a You can choose to return a core set of properties or all properties of the index. Results are returned in an XML fragment that displays the name and value of the properties Spatial index stored procedures - arguments and properties User must be a member of the permission on the server and Propert"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_help_spatial_geometry_index_xml
-  [ @tabname = ]
-  N
-  'tabname'
-  , [ @indexname = ]
-  N
-  'indexname'
-  , [ @verboseoutput = ] verboseoutput
-  , [ @query_sample = ] query_sample
-  , [ @xml_output = ]
-  N
-  'xml_output'
-  OUTPUT
-  [ ; ]
+      [ @tabname = ]
+      N
+      'tabname'
+      , [ @indexname = ]
+      N
+      'indexname'
+      , [ @verboseoutput = ] verboseoutput
+      , [ @query_sample = ] query_sample
+      , [ @xml_output = ]
+      N
+      'xml_output'
+      OUTPUT
+      [ ; ]
 ---
 
 ## Description

@@ -4,27 +4,27 @@ title: "sp_replmonitorhelpsubscription"
 category: "general"
 description: "Returns current status information for subscriptions belonging to one or more publications at the Publisher and returns one row for each returned subscription. This stored procedure, which is used to monitor replication, is executed at the Distributor on the distribution database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_replmonitorhelpsubscription
-  [ [ @publisher = ]
-  N
-  'publisher'
-  ]
-  [ , [ @publisher_db = ]
-  N
-  'publisher_db'
-  ]
-  [ , [ @publication = ]
-  N
-  'publication'
-  ]
-  [ , [ @publication_type = ] publication_type ]
-  [ , [ @mode = ] mode ]
-  [ , [ @topnum = ] topnum ]
-  [ , [ @exclude_anonymous = ] exclude_anonymous ]
-  [ , [ @refreshpolicy = ] refreshpolicy ]
-  [ ; ]
+      [ [ @publisher = ]
+      N
+      'publisher'
+      ]
+      [ , [ @publisher_db = ]
+      N
+      'publisher_db'
+      ]
+      [ , [ @publication = ]
+      N
+      'publication'
+      ]
+      [ , [ @publication_type = ] publication_type ]
+      [ , [ @mode = ] mode ]
+      [ , [ @topnum = ] topnum ]
+      [ , [ @exclude_anonymous = ] exclude_anonymous ]
+      [ , [ @refreshpolicy = ] refreshpolicy ]
+      [ ; ]
 ---
 
 ## Description

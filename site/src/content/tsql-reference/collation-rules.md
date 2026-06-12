@@ -3,8 +3,8 @@ name: "Collation rules"
 title: "Collation rules"
 category: "statements"
 description: "Indicates that the value of an expression is the result of an operation between two strings"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Indicates that the value of an expression is the result of an operation between two strings

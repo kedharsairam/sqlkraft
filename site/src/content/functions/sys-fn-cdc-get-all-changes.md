@@ -3,8 +3,8 @@ name: "sys.fn_cdc_get_all_changes_"
 title: "cdc.fn_cdc_get_all_changes_<capture_instance>"
 category: "change-data-capture"
 description: "function serves as a wrapper for the query function. The stored procedure is used to generate the script to create the Wrapper functions are not created automatically. There are two things you must do to create wrapper functions: 1. Run the stored procedure to generate the script to create the wrapper. 2. Execute the script to actually create the wrapper function."
-tags: ["change-data-capture", "function"]
-pubDate: 2026-05-29
+tags: ["change-data-capture","function"]
+pubDate: "2026-05-29"
 syntax: "cdc.fn_cdc_get_all_changes_<capture_instance>"
 ---
 

@@ -1,33 +1,10 @@
 ---
 title: "Clustered index"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  You can create clustered indexes on tables by using SQL Server Management Studio or
-
-  Transact
-tags:
-  - "filestream"
-  - "clustered-index"
-pubDate: 2025-12-01
+description: "You can create clustered indexes on tables by using SQL Server Management Studio or Transact"
+tags: ["filestream","clustered-index"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 You can create clustered indexes on tables by using SQL Server Management Studio or
 

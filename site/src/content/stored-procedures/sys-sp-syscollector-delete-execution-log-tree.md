@@ -4,12 +4,12 @@ title: "sp_syscollector_delete_execution_log_tree"
 category: "general"
 description: "Deletes all the log entries for the run of a single collection set. It also deletes the log entries from the SSIS tables for that run. The unique identifier for the collection set log. The identifier for the collection set."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_syscollector_delete_execution_log_tree
-  [ @log_id = ] log_id
-  [ , [ @from_collection_set = ] from_collection_set ]
-  [ ; ]
+      [ @log_id = ] log_id
+      [ , [ @from_collection_set = ] from_collection_set ]
+      [ ; ]
 ---
 
 ## Description

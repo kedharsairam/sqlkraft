@@ -4,37 +4,37 @@ title: "sp_addpullsubscription"
 category: "general"
 description: "Adds a pull subscription to a snapshot or transactional publication. This stored procedure is executed at the Subscriber on the database where the pull subscription is to be created. Server name can be specified as for a named instance."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_addpullsubscription
-  [ @publisher = ]
-  N
-  'publisher'
-  [ , [ @publisher_db = ]
-  N
-  'publisher_db'
-  ]
-  , [ @publication = ]
-  N
-  'publication'
-  [ , [ @independent_agent = ]
-  N
-  'independent_agent'
-  ]
-  [ , [ @subscription_type = ]
-  N
-  'subscription_type'
-  ]
-  [ , [ @description = ]
-  N
-  'description'
-  ]
-  [ , [ @update_mode = ]
-  N
-  'update_mode'
-  ]
-  [ , [ @immediate_sync = ] immediate_sync ]
-  [ ; ]
+      [ @publisher = ]
+      N
+      'publisher'
+      [ , [ @publisher_db = ]
+      N
+      'publisher_db'
+      ]
+      , [ @publication = ]
+      N
+      'publication'
+      [ , [ @independent_agent = ]
+      N
+      'independent_agent'
+      ]
+      [ , [ @subscription_type = ]
+      N
+      'subscription_type'
+      ]
+      [ , [ @description = ]
+      N
+      'description'
+      ]
+      [ , [ @update_mode = ]
+      N
+      'update_mode'
+      ]
+      [ , [ @immediate_sync = ] immediate_sync ]
+      [ ; ]
 ---
 
 ## Description

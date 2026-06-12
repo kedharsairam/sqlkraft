@@ -4,7 +4,7 @@ title: "sp_manage_distributed_transaction"
 category: "general"
 description: "commits, aborts, or forgets a specified transaction. Specifies the MSDTC transaction ID (transaction unit of work). Specifies operation to perform. Valid values are Arguments for extended stored procedures must be entered in the specific order as section."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_manage_distributed_transaction"
 ---
 

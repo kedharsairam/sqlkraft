@@ -4,7 +4,7 @@ title: "core.sp_remove_collector_type"
 category: "general"
 description: "warehouse database. The procedure must be executed in the context of the management data view shows the registered collector types that can upload data to the management data warehouse. The GUID for the collector type. (with EXECUTE permission) fixed database role."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "core.supported_collector_types"
 ---
 

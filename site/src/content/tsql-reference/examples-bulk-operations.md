@@ -3,8 +3,8 @@ name: "Examples: Bulk Operations"
 title: "Examples: Bulk Operations"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## H. Create an external data source for bulk operations retrieving data
@@ -66,8 +66,6 @@ Don't add a trailing
 URL when
 
 configuring an external data source for bulk operations.
-
-SQL Server
 
 ## J. Create external data source using encryption and
 

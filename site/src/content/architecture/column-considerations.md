@@ -2,8 +2,8 @@
 title: "Column considerations"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Covering indexes can improve query performance because all the data needed to meet

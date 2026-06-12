@@ -1,53 +1,14 @@
 ---
 title: "LOCALDB_ERROR_NOT_INSTALLED"
 topic: "clr-integration"
-description: |
-  07/14/2025
-
-  Applies to:
-
-  SQL Server
-
-  Product
-
-  Name
-
-  SQL Server
-
-  Event ID
-
-  278
-
-  Event Source
-
-  SQL Server Local Database Runtime 12.0
-
-  Component
-
-  Local Database Runtime API
-
-  Message
-
-  Text
-
-  Note:
-
-  The me
-tags:
-  - "clr-integration"
-  - "localdb-error-not-installed"
-pubDate: 2025-12-01
+description: ""
+tags: ["clr-integration","localdb-error-not-installed"]
+pubDate: "2025-12-01"
 ---
-
-07/14/2025
-
-SQL Server
 
 Product
 
 Name
-
-SQL Server
 
 Event ID
 

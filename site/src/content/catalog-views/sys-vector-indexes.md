@@ -3,9 +3,9 @@ name: "sys.vector_indexes"
 title: "sys.vector_indexes"
 category: "indexes"
 description: "Contains a row per vector index. Type of vector index (DiskANN only for now) Metric used to create the vector index The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission."
-tags: ["indexes", "catalog-view"]
-pubDate: 2026-05-29
-syntax: "[dbo].[wikipedia_articles_embeddings]"
+tags: ["indexes","catalog-view"]
+pubDate: "2026-05-29"
+syntax: [dbo].[wikipedia_articles_embeddings]
 ---
 
 ## Description

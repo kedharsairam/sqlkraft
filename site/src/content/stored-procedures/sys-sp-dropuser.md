@@ -4,12 +4,12 @@ title: "sp_dropuser"
 category: "general"
 description: "Removes a database user from the current database. provides compatibility with earlier versions of SQL Server."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_dropuser [ @name_in_db = ]
-  N
-  'name_in_db'
-  [ ; ]
+      N
+      'name_in_db'
+      [ ; ]
 ---
 
 ## Description

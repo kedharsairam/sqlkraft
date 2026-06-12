@@ -3,19 +3,11 @@ name: "Transaction control syntax"
 title: "Transaction control syntax"
 category: "transactions"
 description: ""
-tags: ["tsql", "transactions"]
-pubDate: 2026-05-29
+tags: ["tsql","transactions"]
+pubDate: "2026-05-29"
 ---
 
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 A transaction is a single unit of work. If a transaction is successful, all of the data modifications
 

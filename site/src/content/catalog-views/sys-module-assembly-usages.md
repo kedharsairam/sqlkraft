@@ -3,8 +3,8 @@ name: "sys.module_assembly_usages"
 title: "sys.module_assembly_usages"
 category: "compatibility"
 description: "Returns a row for each module-to-assembly reference."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

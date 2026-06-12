@@ -1,29 +1,10 @@
 ---
 title: "Queues"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Queues store messages. When Service Broker receives a message for a service, Service Broker
-
-  inserts the message into the queue for tha
-tags:
-  - "service-broker"
-  - "queues"
-pubDate: 2025-12-01
+description: "09/11/2025 Queues store messages."
+tags: ["service-broker","queues"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Queues store messages. When Service Broker receives a message for a service, Service Broker
 

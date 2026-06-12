@@ -3,8 +3,8 @@ name: "Assembly Validation"
 title: "Assembly Validation"
 category: "statements"
 description: "If any dependent assemblies referenced by the root assembly aren't already in the database"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 If any dependent assemblies referenced by the root assembly aren't already in the database
@@ -29,7 +29,7 @@ segments have valid Microsoft Intermediate language (MSIL) instructions.
 
 The set of system assemblies it references is one of the following supported assemblies in
 
-SQL Server:
+:
 
 ,
 

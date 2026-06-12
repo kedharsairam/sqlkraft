@@ -3,19 +3,9 @@ name: "xquery-data-accessor-functions"
 title: "XQuery - Data Accessor Functions"
 category: "xquery"
 description: "XQuery Language Reference: Data Accessor Functions"
-tags:
-  - "xquery"
-  - "data-accessor-functions"
-pubDate: 2025-12-01
+tags: ["xquery","data-accessor-functions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 The topics in this section discuss and provide sample code for the data-accessor functions.
 

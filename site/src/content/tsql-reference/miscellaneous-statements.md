@@ -3,8 +3,8 @@ name: "Miscellaneous statements"
 title: "Miscellaneous statements"
 category: "statements"
 description: "DBCC CHECKCONSTRAINTS"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 DBCC CHECKCATALOG

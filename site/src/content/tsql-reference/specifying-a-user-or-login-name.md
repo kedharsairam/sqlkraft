@@ -3,8 +3,8 @@ name: "Specifying a User or Login Name"
 title: "Specifying a User or Login Name"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 CALLER

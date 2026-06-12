@@ -3,8 +3,8 @@ name: "sys.query_store_plan"
 title: "sys.query_store_plan"
 category: "query-store"
 description: "2016 (13.x) and later versions SQL database in Microsoft Fabric Contains information about each execution plan associated with a query."
-tags: ["query-store", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["query-store","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "<major>.<minor>.<build>.<revision>"
 ---
 

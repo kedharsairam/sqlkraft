@@ -1,21 +1,10 @@
 ---
 title: "Migration dashboard"
 topic: "azure-synapse"
-description: |
-  Applies to:
-
-  SQL Server
-
-  The migration dashboard is a convenient view that shows all instances of SQL Server enabled
-
-  by Azure Arc and their migration readiness. SQL Server enabled by Azure Arc automa
-tags:
-  - "azure-synapse"
-  - "migration-dashboard"
-pubDate: 2025-12-01
+description: "The migration dashboard is a convenient view that shows all instances of SQL Server enabled by Azure Arc and their migration readiness. SQL Server enabled by Azure Arc automa"
+tags: ["azure-synapse","migration-dashboard"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 The migration dashboard is a convenient view that shows all instances of SQL Server enabled
 
@@ -51,7 +40,7 @@ On the left pane, expand
 
 and go to
 
-SQL servers.
+s.
 
 Select the
 

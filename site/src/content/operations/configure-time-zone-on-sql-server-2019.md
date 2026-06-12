@@ -1,29 +1,10 @@
 ---
 title: "Configure time zone on SQL Server 2019"
 topic: "linux-operations"
-description: |
-  07/03/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Linux
-
-  This article describes how to configure the time zone for SQL Server 2019 (15.x) on Linux. You
-
-  can also configure the time zone on Linux for
-
-  SQL Server
-tags:
-  - "linux-operations"
-  - "configure-time-zone-on-sql-server-2019"
-pubDate: 2025-12-01
+description: "07/03/2025 - Linux This article describes how to configure the time zone for SQL Server 2019 (15.x) on Linux."
+tags: ["linux-operations","configure-time-zone-on-sql-server-2019"]
+pubDate: "2025-12-01"
 ---
-
-07/03/2025
-
-SQL Server
 
 - Linux
 

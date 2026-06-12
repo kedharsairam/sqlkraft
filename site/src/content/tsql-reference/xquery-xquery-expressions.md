@@ -3,19 +3,9 @@ name: "xquery-xquery-expressions"
 title: "XQuery - XQuery Expressions"
 category: "xquery"
 description: "XQuery Language Reference: XQuery Expressions"
-tags:
-  - "xquery"
-  - "xquery-expressions"
-pubDate: 2025-12-01
+tags: ["xquery","xquery-expressions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Topics that describe the XQuery expressions.
 

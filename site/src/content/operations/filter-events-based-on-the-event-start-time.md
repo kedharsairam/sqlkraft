@@ -1,33 +1,10 @@
 ---
 title: "Filter events based on the event start time"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article describes how to filter trace events based on the event start time by using SQL
-
-  Server Profiler.
-
-  1. On the
-
-  menu, select
-tags:
-  - "profiler"
-  - "filter-events-based-on-the-event-start-time"
-pubDate: 2025-12-01
+description: "06/06/2025 This article describes how to filter trace events based on the event start time by using SQL Server Profiler. 1. On the menu, select"
+tags: ["profiler","filter-events-based-on-the-event-start-time"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article describes how to filter trace events based on the event start time by using SQL
 

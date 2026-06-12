@@ -1,43 +1,10 @@
 ---
 title: "Example: Specifying the XMLTEXT Directive"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  This example illustrates how data in the overflow column is addressed by using the
-
-  directive in a
-
-  sta
-tags:
-  - "xml-data"
-  - "example-specifying-the-xmltext-directive"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","example-specifying-the-xmltext-directive"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This example illustrates how data in the overflow column is addressed by using the
 

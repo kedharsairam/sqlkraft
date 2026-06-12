@@ -4,7 +4,7 @@ title: "sp_changearticlecolumndatatype"
 category: "general"
 description: "Changes the article column data type mapping for an Oracle publication. This stored procedure is executed at the Distributor on any database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_changearticlecolumndatatype"
 ---
 

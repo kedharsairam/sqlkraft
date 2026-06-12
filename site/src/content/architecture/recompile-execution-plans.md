@@ -2,8 +2,8 @@
 title: "Recompile execution plans"
 topic: "query-processing"
 description: "An ad hoc execution plan is inserted and isn't referenced again before memory pressure"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 An ad hoc execution plan is inserted and isn't referenced again before memory pressure

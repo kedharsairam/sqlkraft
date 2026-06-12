@@ -1,29 +1,10 @@
 ---
 title: "Start a Trace"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  After you have defined a new trace or created a template by using SQL Server Profiler, you can
-
-  start, pause, or stop capturing data by
-tags:
-  - "profiler"
-  - "start-a-trace"
-pubDate: 2025-12-01
+description: ""
+tags: ["profiler","start-a-trace"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 After you have defined a new trace or created a template by using SQL Server Profiler, you can
 

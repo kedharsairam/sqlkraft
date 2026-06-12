@@ -3,8 +3,8 @@ name: "Pseudocode and semantics"
 title: "Pseudocode and semantics"
 category: "operators"
 description: "CTE query definitions are considered anchor members unless they reference the CTE"
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 CTE query definitions are considered anchor members unless they reference the CTE

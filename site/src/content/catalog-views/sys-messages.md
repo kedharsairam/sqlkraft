@@ -3,44 +3,44 @@ name: "sys.messages"
 title: "Messages (for errors) - sys.messages"
 category: "compatibility"
 description: "Contains information about all available SQL Server Agent proxy subsystems. The table is stored in the ID of the subsystem."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   SELECT
-  message_id
-  AS
-  Error
-  ,
-  severity
-  AS
-  Severity,
-  [
-  Event
-  Logged] =
-  CASE
-  is_event_logged
-  WHEN
-  0
-  THEN
-  'No'
-  ELSE
-  'Yes'
-  END
-  ,
-  [
-  text
-  ]
-  AS
-  [Description]
-  FROM
-  sys.messages
-  WHERE
-  language_id = 1040
-  /* replace 1040 with the desired language ID, such as 1033
-  for US English */
-  ORDER
-  BY
-  message_id;
+      message_id
+      AS
+      Error
+      ,
+      severity
+      AS
+      Severity,
+      [
+      Event
+      Logged] =
+      CASE
+      is_event_logged
+      WHEN
+      0
+      THEN
+      'No'
+      ELSE
+      'Yes'
+      END
+      ,
+      [
+      text
+      ]
+      AS
+      [Description]
+      FROM
+      sys.messages
+      WHERE
+      language_id = 1040
+      /* replace 1040 with the desired language ID, such as 1033
+      for US English */
+      ORDER
+      BY
+      message_id;
 ---
 
 ## Description
@@ -83,12 +83,6 @@ BY message_id;
 
 ## Arguments
 
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
 
 SQL analytics endpoint in
@@ -96,8 +90,6 @@ SQL analytics endpoint in
 Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Generates an error message and initiates error processing for the session.
 

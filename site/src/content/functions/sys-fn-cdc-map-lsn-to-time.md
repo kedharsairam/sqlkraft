@@ -3,8 +3,8 @@ name: "sys.fn_cdc_map_lsn_to_time"
 title: "sys.fn_cdc_map_lsn_to_time"
 category: "date-time"
 description: "Returns the date and time value from the system table for the specified log sequence number (LSN). You can use this function to systematically map LSN ranges to date ranges in a change table. Is the LSN value to match against. This function can be used to determine the time that a change was committed based upon the value returned in the row of change data."
-tags: ["date-time", "function"]
-pubDate: 2026-05-29
+tags: ["date-time","function"]
+pubDate: "2026-05-29"
 syntax: "sys.fn_cdc_map_lsn_to_time ( lsn_value )"
 ---
 

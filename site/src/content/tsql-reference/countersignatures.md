@@ -3,8 +3,8 @@ name: "Countersignatures"
 title: "Countersignatures"
 category: "statements"
 description: "When you execute a signed module, the signatures are temporarily added to the SQL token,"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 When you execute a signed module, the signatures are temporarily added to the SQL token,

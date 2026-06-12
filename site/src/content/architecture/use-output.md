@@ -1,33 +1,12 @@
 ---
 title: "Use output"
 topic: "json-data"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  Azure Synapse Analytics (serverless SQL pool only)
-
-  SQL
-
-  database in Microsoft Fabric
-
-  The foll
-tags:
-  - "json-data"
-  - "use-output"
-pubDate: 2025-12-01
+description: ""
+tags: ["json-data","use-output"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
-
-Azure SQL Database
 
 Azure
 

@@ -3,18 +3,13 @@ title: "How to: Create New Database Objects Using Queries"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  If you prefer to use scripts to create or edit views, stored procedures, functions, triggers, or
-
-  user-defined-types, you can use the Transact-SQL Editor. The Transact-SQL Editor provides
-
-tags:
-  - "ssb-diagnose"
-  - "how-to-create-new-database-objects-using-queries"
-pubDate: 2025-12-01
+  
+    If you prefer to use scripts to create or edit views, stored procedures, functions, triggers, or
+  
+    user-defined-types, you can use the Transact-SQL Editor. The Transact-SQL Editor provides
+tags: ["ssb-diagnose","how-to-create-new-database-objects-using-queries"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 If you prefer to use scripts to create or edit views, stored procedures, functions, triggers, or
 

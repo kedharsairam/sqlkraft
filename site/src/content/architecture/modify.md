@@ -1,33 +1,10 @@
 ---
 title: "Modify"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This topic describes how to modify an index in SQL Server by using SQL Server Management
-
-  Stu
-tags:
-  - "filestream"
-  - "modify"
-pubDate: 2025-12-01
+description: "This topic describes how to modify an index in SQL Server by using SQL Server Management Stu"
+tags: ["filestream","modify"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This topic describes how to modify an index in SQL Server by using SQL Server Management
 

@@ -4,15 +4,9 @@ title: "XQuery - Data Accessor Functions - string"
 category: "xquery"
 description: "XQuery Language Reference: Data Accessor Functions - string"
 syntax: "xs:string"
-tags:
-  - "xquery"
-  - "data-accessor-functions-string"
-pubDate: 2025-12-01
+tags: ["xquery","data-accessor-functions-string"]
+pubDate: "2025-12-01"
 ---
-
-09/29/2025
-
-SQL Server
 
 Returns the value of
 

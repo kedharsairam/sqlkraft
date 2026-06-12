@@ -1,33 +1,10 @@
 ---
 title: "Modify or Rename DML Triggers"
 topic: "change-data-capture"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article describes how to modify or rename a DML trigger in SQL Server by using SQL
-
-  Serv
-tags:
-  - "change-data-capture"
-  - "modify-or-rename-dml-triggers"
-pubDate: 2025-12-01
+description: "This article describes how to modify or rename a DML trigger in SQL Server by using SQL Serv"
+tags: ["change-data-capture","modify-or-rename-dml-triggers"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article describes how to modify or rename a DML trigger in SQL Server by using SQL
 

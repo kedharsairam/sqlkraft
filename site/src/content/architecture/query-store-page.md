@@ -1,31 +1,10 @@
 ---
 title: "Query store page"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  10/09/2024
-
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions, SQL Database
-
-  Access this page from the principal database, and use it to configure and to modify the
-
-  properties of the
-tags:
-  - "collation"
-  - "query-store-page"
-pubDate: 2025-12-01
+description: ""
+tags: ["collation","query-store-page"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-10/09/2024
 
 2016 (13.x) and later versions, SQL Database
 

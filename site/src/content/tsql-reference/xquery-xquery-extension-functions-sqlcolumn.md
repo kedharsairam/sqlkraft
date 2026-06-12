@@ -3,20 +3,11 @@ name: "xquery-xquery-extension-functions-sqlcolumn"
 title: "XQuery - XQuery Extension Functions - sql:column()"
 category: "xquery"
 description: "XQuery Language Reference: XQuery Extension Functions - sql:column()"
-syntax: 'sql:column("columnName")'
-tags:
-  - "xquery"
-  - "xquery-extension-functions-sqlcolumn"
-pubDate: 2025-12-01
+syntax: |
+  'sql:column("columnName")'
+tags: ["xquery","xquery-extension-functions-sqlcolumn"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 As described in the topic,
 

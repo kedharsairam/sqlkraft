@@ -1,33 +1,10 @@
 ---
 title: "Copy Databases to Other Servers"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  07/22/2024
-
-  Applies to:
-
-  SQL Server
-
-  Sometimes you might find it useful to copy a database from one computer to another. Reasons
-
-  include testing, checking consistency, developing software
-tags:
-  - "collation"
-  - "copy-databases-to-other-servers"
-pubDate: 2025-12-01
+description: "Sometimes you might find it useful to copy a database from one computer to another. Reasons include testing, checking consistency, developing software"
+tags: ["collation","copy-databases-to-other-servers"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-07/22/2024
-
-SQL Server
 
 Sometimes you might find it useful to copy a database from one computer to another. Reasons
 

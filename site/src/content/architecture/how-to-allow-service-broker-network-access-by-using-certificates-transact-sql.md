@@ -1,29 +1,10 @@
 ---
 title: "How to: Allow Service Broker Network Access by Using Certificates (Transact-SQL)"
 topic: "service-broker"
-description: |
-  08/29/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  To allow another instance to send messages using certificate-based Service Broker transport
-
-  security, you create a user for the other
-tags:
-  - "service-broker"
-  - "how-to-allow-service-broker-network-access-by-using-certificates-transact-sql"
-pubDate: 2025-12-01
+description: ""
+tags: ["service-broker","how-to-allow-service-broker-network-access-by-using-certificates-transact-sql"]
+pubDate: "2025-12-01"
 ---
-
-08/29/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 To allow another instance to send messages using certificate-based Service Broker transport
 

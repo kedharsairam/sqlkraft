@@ -3,29 +3,19 @@ name: "SET Statements"
 title: "SET Statements"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Category
 
 Statements
 
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
 
 SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 The Transact-SQL programming language provides several SET statements that change the current session handling of specific information. The SET statements are grouped into the categories shown in the following table.
 

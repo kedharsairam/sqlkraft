@@ -3,13 +3,13 @@ name: "sys.registered_search_property_lists"
 title: "sys.registered_search_property_lists"
 category: "compatibility"
 description: "Drops a property list from the current database if the search property list is currently not associated with any full-text index in the database. property_list_name Is the name of the search property list to be dropped. property_list_name is an identifier."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   USE AdventureWorks2022;
-  GO
-  SELECT property_list_id, name FROM sys.registered_search_property_lists;
-  GO
+      GO
+      SELECT property_list_id, name FROM sys.registered_search_property_lists;
+      GO
 ---
 
 ## Description
@@ -26,8 +26,6 @@ GO
 ```
 
 ## Arguments
-
-Azure SQL Managed Instance
 
 Adds a specified search property to, or drops it from the specified search property list.
 
@@ -50,8 +48,6 @@ searching, the associated full-text index or indexes must be repopulated. For mo
 ALTER FULLTEXT INDEX (Transact-SQL)
 
 ## Remarks
-
-Azure SQL Managed Instance
 
 Drops a property list from the current database if the search property list is currently not
 

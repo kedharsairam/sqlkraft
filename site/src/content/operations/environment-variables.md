@@ -1,25 +1,10 @@
 ---
 title: "Environment variables"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  You can use several different environment variables to configure SQL Server on Linux. These
-
-  variables are used in two scenarios:
-
-  To configure initial setup with th
-tags:
-  - "linux-operations"
-  - "environment-variables"
-pubDate: 2025-12-01
+description: "on Linux You can use several different environment variables to configure SQL Server on Linux."
+tags: ["linux-operations","environment-variables"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

@@ -1,35 +1,10 @@
 ---
 title: "The <xsd:redefine> Element"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The W3C XSD
-
-  element provides support for redefining schema components. However,
-
-  support for
-tags:
-  - "xml-data"
-  - "the-xsdredefine-element"
-pubDate: 2025-12-01
+description: "The W3C XSD element provides support for redefining schema components."
+tags: ["xml-data","the-xsdredefine-element"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The W3C XSD
 

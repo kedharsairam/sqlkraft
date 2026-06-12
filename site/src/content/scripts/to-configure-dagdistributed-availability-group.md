@@ -2,9 +2,9 @@
 name: "To Configure DAG(Distributed Availability Group"
 title: "To Configure DAG(Distributed Availability Group"
 description: "Create Endpoints in all the Replicas and in all the Nodes With LISTENER_IP = ALL"
-category: high-availability
-tags: ["availability-group", "configuration", "high-availability"]
-pubDate: 2025-03-15
+category: "high-availability"
+tags: ["availability-group","configuration","high-availability"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

@@ -3,8 +3,8 @@ name: "Histogram"
 title: "Histogram"
 category: "statements"
 description: "(4, 4, 6), (4, 5, 6), (4, 5, 7). Using the prefix (A, B) the same column values have these distinct"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

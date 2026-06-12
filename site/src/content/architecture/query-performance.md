@@ -1,37 +1,10 @@
 ---
 title: "Query performance"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft
-
-  Fabric
-
-  This article includes recommendati
-tags:
-  - "filestream"
-  - "query-performance"
-pubDate: 2025-12-01
+description: "This article includes recommendati"
+tags: ["filestream","query-performance"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

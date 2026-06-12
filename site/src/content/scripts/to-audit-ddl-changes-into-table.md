@@ -2,9 +2,9 @@
 name: "To Audit DDL Changes into Table"
 title: "To Audit DDL Changes into Table"
 description: "diagnostic script for automation operations."
-category: automation
-tags: ["audit", "automation", "table"]
-pubDate: 2025-03-15
+category: "automation"
+tags: ["audit","automation","table"]
+pubDate: "2025-03-15"
 ---
 
 ```sql
@@ -21,12 +21,12 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[objectAuditLog](
-	[EventDateTime] [datetime2](7) NULL,
-	[EventType] [nvarchar](100) NULL,
-	[ObjectName] [nvarchar](500) NULL,
-	[LoginName] [nvarchar](100) NULL,
-	[DatabaseName] [nvarchar](100) NULL,
-	[TSQLCommand] [nvarchar](max) NULL
+  [EventDateTime] [datetime2](7) NULL,
+  [EventType] [nvarchar](100) NULL,
+  [ObjectName] [nvarchar](500) NULL,
+  [LoginName] [nvarchar](100) NULL,
+  [DatabaseName] [nvarchar](100) NULL,
+  [TSQLCommand] [nvarchar](max) NULL
 ) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
 GO
 

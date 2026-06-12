@@ -3,21 +3,13 @@ name: "Oracle"
 title: "Oracle"
 category: "operators"
 description: "SQL) CONNECTION_OPTIONS"
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 SQL) CONNECTION_OPTIONS
 
-08/21/2025
-
 2016 (13.x) and later
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

@@ -4,13 +4,9 @@ title: "XQuery - XQuery Basics"
 category: "xquery"
 description: "XQuery Language Reference: XQuery Basics"
 syntax: "(:"
-tags:
-  - "xquery"
-  - "xquery-basics"
-pubDate: 2025-12-01
+tags: ["xquery","xquery-basics"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 This section describes the fundamentals of XQuery.
 

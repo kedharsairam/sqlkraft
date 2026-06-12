@@ -1,29 +1,10 @@
 ---
 title: "Modify a filter"
 topic: "profiler"
-description: |
-  06/05/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  You add filters to trace templates, which contain the trace definitions, to limit the number of
-
-  events gathered by a trace. Limiting t
-tags:
-  - "profiler"
-  - "modify-a-filter"
-pubDate: 2025-12-01
+description: "06/05/2025 You add filters to trace templates, which contain the trace definitions, to limit the number of events gathered by a trace. Limiting t"
+tags: ["profiler","modify-a-filter"]
+pubDate: "2025-12-01"
 ---
-
-06/05/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 You add filters to trace templates, which contain the trace definitions, to limit the number of
 

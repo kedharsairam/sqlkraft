@@ -1,31 +1,10 @@
 ---
 title: "Sort Warnings Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Sort Warnings event class indicates that sort operations do not fit into memory. This doe
-tags:
-  - "event-classes"
-  - "sort-warnings-event-class"
-pubDate: 2025-12-01
+description: "The Sort Warnings event class indicates that sort operations do not fit into memory."
+tags: ["event-classes","sort-warnings-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Sort Warnings event class indicates that sort operations do not fit into memory. This does
 

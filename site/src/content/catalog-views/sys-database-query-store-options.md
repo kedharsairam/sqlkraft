@@ -3,11 +3,11 @@ name: "sys.database_query_store_options"
 title: "sys.database_query_store_options"
 category: "query-store"
 description: "2016 (13.x) and later versions SQL database in Microsoft Fabric Returns the Query Store options for this database. Indicates the desired operation mode of Query Store, explicitly set by user. Textual description of the desired operation mode of Query Store: Indicates the operation mode of Query Store."
-tags: ["query-store", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["query-store","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   READ_CAPTURE_SECONDARY
-  desired_state_desc
+      desired_state_desc
 ---
 
 ## Description

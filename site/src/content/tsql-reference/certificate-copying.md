@@ -3,8 +3,8 @@ name: "Certificate copying"
 title: "Certificate copying"
 category: "statements"
 description: "VERIFYSIGNEDBYASYMKEY"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 SIGNBYASYMKEY

@@ -3,8 +3,8 @@ name: "Change the seed value"
 title: "Change the seed value"
 category: "statements"
 description: "value."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 increment

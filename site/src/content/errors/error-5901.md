@@ -1,12 +1,12 @@
 ---
-name: "5901"
+name: 5901
 title: "Error 5901"
 errorNumber: 5901
 severity: "medium"
 category: "corruption"
 description: "Description 5901 16 No One or more recovery units belonging to database '%.*ls' failed to generate a checkpoint."
-tags: ["corruption", "severity-medium"]
-pubDate: 2026-05-29
+tags: ["corruption","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

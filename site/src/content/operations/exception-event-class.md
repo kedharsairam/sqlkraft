@@ -1,33 +1,10 @@
 ---
 title: "Exception Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Exception event class indicates that an exception has occurred in SQL Server.
-
-  Descriptio
-tags:
-  - "event-classes"
-  - "exception-event-class"
-pubDate: 2025-12-01
+description: "The Exception event class indicates that an exception has occurred in SQL Server. Descriptio"
+tags: ["event-classes","exception-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Exception event class indicates that an exception has occurred in SQL Server.
 

@@ -4,15 +4,9 @@ title: "XQuery - XML Construction"
 category: "xquery"
 description: "XQuery Language Reference: XML Construction"
 syntax: "<ProductModel>"
-tags:
-  - "xquery"
-  - "xml-construction"
-pubDate: 2025-12-01
+tags: ["xquery","xml-construction"]
+pubDate: "2025-12-01"
 ---
-
-09/29/2025
-
-SQL Server
 
 In XQuery, you can use the direct
 

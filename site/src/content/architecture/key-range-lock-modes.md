@@ -2,8 +2,8 @@
 title: "Key-range lock modes"
 topic: "locking"
 description: "Key-range locks protect a range of rows implicitly included in a record set being read by a"
-tags: ["locking", "architecture"]
-pubDate: 2026-05-29
+tags: ["locking","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Key-range locks protect a range of rows implicitly included in a record set being read by a

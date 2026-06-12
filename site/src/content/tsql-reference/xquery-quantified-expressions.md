@@ -4,19 +4,9 @@ title: "XQuery - Quantified Expressions"
 category: "xquery"
 description: "XQuery Language Reference: Quantified Expressions"
 syntax: "satisfies"
-tags:
-  - "xquery"
-  - "quantified-expressions"
-pubDate: 2025-12-01
+tags: ["xquery","quantified-expressions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Existential and universal quantifiers specify different semantics for Boolean operators that are
 

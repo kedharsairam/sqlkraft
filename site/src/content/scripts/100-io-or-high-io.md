@@ -2,9 +2,9 @@
 name: "100_ IO or High IO"
 title: "100_ IO or High IO"
 description: "first add these counters in performance monitor"
-category: troubleshooting
+category: "troubleshooting"
 tags: ["troubleshooting"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

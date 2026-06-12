@@ -1,35 +1,10 @@
 ---
 title: "Create database mirroring endpoint (PowerShell)"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to create a database mirroring endpoint for use by Always On
-
-  availability groups in SQL Server by using PowerShell.
-
-  Requires
-tags:
-  - "high-availability"
-  - "create-database-mirroring-endpoint-powershell"
-pubDate: 2025-12-01
+description: "This topic describes how to create a database mirroring endpoint for use by Always On availability groups in SQL Server by using PowerShell. Requires"
+tags: ["high-availability","create-database-mirroring-endpoint-powershell"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 This topic describes how to create a database mirroring endpoint for use by Always On
 

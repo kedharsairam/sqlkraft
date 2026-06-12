@@ -1,23 +1,10 @@
 ---
 title: "Configure with custom high availability logic"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article explains how to configure a SQL Server Always On availability group (AG) on Linux
-
-  using custom high availability and failover logic. This architecture
-tags:
-  - "linux-operations"
-  - "configure-with-custom-high-availability-logic"
-pubDate: 2025-12-01
+description: "on Linux This article explains how to configure a SQL Server Always On availability group (AG) on Linux using custom high availability and failover logic. This architecture"
+tags: ["linux-operations","configure-with-custom-high-availability-logic"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

@@ -1,29 +1,10 @@
 ---
 title: "State Management"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  An application that maintains state typically stores that state in database tables. Because each
-
-  conversation group has a unique ident
-tags:
-  - "service-broker"
-  - "state-management"
-pubDate: 2025-12-01
+description: "09/11/2025 An application that maintains state typically stores that state in database tables."
+tags: ["service-broker","state-management"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 An application that maintains state typically stores that state in database tables. Because each
 

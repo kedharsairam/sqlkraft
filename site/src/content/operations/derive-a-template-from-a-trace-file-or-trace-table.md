@@ -1,31 +1,10 @@
 ---
 title: "Derive a Template from a Trace File or Trace Table"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article describes how to create a trace template from an existing trace file or table by using
-
-  SQL Server Profiler.
-
-  1. Open the
-tags:
-  - "profiler"
-  - "derive-a-template-from-a-trace-file-or-trace-table"
-pubDate: 2025-12-01
+description: "06/06/2025 This article describes how to create a trace template from an existing trace file or table by using SQL Server Profiler. 1."
+tags: ["profiler","derive-a-template-from-a-trace-file-or-trace-table"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article describes how to create a trace template from an existing trace file or table by using
 

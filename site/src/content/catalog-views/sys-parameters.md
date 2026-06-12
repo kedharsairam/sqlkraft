@@ -3,46 +3,46 @@ name: "sys.parameters"
 title: "sys.parameters"
 category: "compatibility"
 description: "Contains a row for each parameter of an object that accepts parameters. If the object is a scalar function, there's also a single row describing the return value. That row has a ID of the object to which this parameter belongs."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   SELECT
-  name
-  ,
-  TYPE_NAME(user_type_id)
-  FROM
-  sys.parameters
-  WHERE
-  object_id = OBJECT_ID(
-  'dbo.to_upper'
-  );
-  GO
-  SELECT
-  dbo.to_upper(
-  'abcdefgh'
-  );
-  -- Fails because of truncation
-  GO
-  EXECUTE
-  sys.sp_refreshsqlmodule
-  'dbo.to_upper'
-  ;
-  SELECT
-  name
-  ,
-  TYPE_NAME(user_type_id)
-  FROM
-  sys.parameters
-  WHERE
-  object_id = OBJECT_ID(
-  'dbo.to_upper'
-  );
-  GO
-  SELECT
-  dbo.to_upper(
-  'abcdefgh'
-  );
-  GO
+      name
+      ,
+      TYPE_NAME(user_type_id)
+      FROM
+      sys.parameters
+      WHERE
+      object_id = OBJECT_ID(
+      'dbo.to_upper'
+      );
+      GO
+      SELECT
+      dbo.to_upper(
+      'abcdefgh'
+      );
+      -- Fails because of truncation
+      GO
+      EXECUTE
+      sys.sp_refreshsqlmodule
+      'dbo.to_upper'
+      ;
+      SELECT
+      name
+      ,
+      TYPE_NAME(user_type_id)
+      FROM
+      sys.parameters
+      WHERE
+      object_id = OBJECT_ID(
+      'dbo.to_upper'
+      );
+      GO
+      SELECT
+      dbo.to_upper(
+      'abcdefgh'
+      );
+      GO
 ---
 
 ## Description

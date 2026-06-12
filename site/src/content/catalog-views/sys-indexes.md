@@ -3,30 +3,30 @@ name: "sys.indexes"
 title: "sys.indexes"
 category: "indexes"
 description: "The percentage of space on each index page for storing data when the index is created or replaces the fill factor when the index was created, becoming the new default for the index and for any other nonclustered indexes rebuilt, because a clustered index is uses the fill factor value last specified for the index. This value is stored in the must be specified. If isn't specified, the default fill f"
-tags: ["indexes", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["indexes","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   SUM(mc.used_bytes) / 1024 as [used_kb]
-  FROM sys.memory_optimized_tables_internal_attributes moa
-  JOIN sys.indexes i ON moa.object_id = i.object_id AND i.type in (5,6)
-  JOIN sys.dm_db_xtp_memory_consumers mc ON moa.xtp_object_id=mc.xtp_object_id
-  JOIN sys.objects o on moa.object_id=o.object_id
-  WHERE moa.type IN (0, 2, 3, 4)
-  GROUP BY o.schema_id, moa.object_id, i.name;
-  SELECT
-  QUOTENAME(SCHEMA_NAME(o.schema_id)) + N'.' + QUOTENAME(OBJECT_NAME(moa.object_id))
-  AS 'table',
-  i.name AS 'columnstore index',
-  moa.type_desc AS 'internal table',
-  mc.index_id AS 'index',
-  mc.memory_consumer_desc,
-  mc.allocated_bytes / 1024 as [allocated_kb],
-  mc.used_bytes / 1024 as [used_kb]
-  FROM sys.memory_optimized_tables_internal_attributes moa
-  JOIN sys.indexes i ON moa.object_id = i.object_id AND i.type in (5,6)
-  JOIN sys.dm_db_xtp_memory_consumers mc ON moa.xtp_object_id=mc.xtp_object_id
-  JOIN sys.objects o on moa.object_id=o.object_id
-  WHERE moa.type IN (0, 2, 3, 4)
+      FROM sys.memory_optimized_tables_internal_attributes moa
+      JOIN sys.indexes i ON moa.object_id = i.object_id AND i.type in (5,6)
+      JOIN sys.dm_db_xtp_memory_consumers mc ON moa.xtp_object_id=mc.xtp_object_id
+      JOIN sys.objects o on moa.object_id=o.object_id
+      WHERE moa.type IN (0, 2, 3, 4)
+      GROUP BY o.schema_id, moa.object_id, i.name;
+      SELECT
+      QUOTENAME(SCHEMA_NAME(o.schema_id)) + N'.' + QUOTENAME(OBJECT_NAME(moa.object_id))
+      AS 'table',
+      i.name AS 'columnstore index',
+      moa.type_desc AS 'internal table',
+      mc.index_id AS 'index',
+      mc.memory_consumer_desc,
+      mc.allocated_bytes / 1024 as [allocated_kb],
+      mc.used_bytes / 1024 as [used_kb]
+      FROM sys.memory_optimized_tables_internal_attributes moa
+      JOIN sys.indexes i ON moa.object_id = i.object_id AND i.type in (5,6)
+      JOIN sys.dm_db_xtp_memory_consumers mc ON moa.xtp_object_id=mc.xtp_object_id
+      JOIN sys.objects o on moa.object_id=o.object_id
+      WHERE moa.type IN (0, 2, 3, 4)
 ---
 
 ## Description

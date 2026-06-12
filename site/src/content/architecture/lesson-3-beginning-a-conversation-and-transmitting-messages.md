@@ -1,29 +1,10 @@
 ---
 title: "Lesson 3: Beginning a Conversation and Transmitting Messages"
 topic: "service-broker"
-description: |
-  09/10/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  In this lesson, you learn to complete a basic request-reply message cycle in a system
-
-  configured with an internal activation stored pr
-tags:
-  - "service-broker"
-  - "lesson-3-beginning-a-conversation-and-transmitting-messages"
-pubDate: 2025-12-01
+description: ""
+tags: ["service-broker","lesson-3-beginning-a-conversation-and-transmitting-messages"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 In this lesson, you learn to complete a basic request-reply message cycle in a system
 

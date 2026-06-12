@@ -1,33 +1,10 @@
 ---
 title: "Database Detach & Attach"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  04/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  The data and transaction log files of a database can be detached and then reattached to the
-
-  same or another instance of SQL Server. Detaching and atta
-tags:
-  - "collation"
-  - "database-detach-attach"
-pubDate: 2025-12-01
+description: "The data and transaction log files of a database can be detached and then reattached to the same or another instance of SQL Server."
+tags: ["collation","database-detach-attach"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/01/2024
-
-SQL Server
 
 The data and transaction log files of a database can be detached and then reattached to the
 

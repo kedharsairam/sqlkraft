@@ -3,16 +3,16 @@ name: "sys.configurations"
 title: "sys.configurations"
 category: "configuration"
 description: "Summarize this article for me Returns a row for each server-wide configuration option value in the system. Unique ID for the configuration value."
-tags: ["configuration", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["configuration","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   select
-  *
-  from
-  sys.configurations
-  where
-  value
-  != value_in_use
+      *
+      from
+      sys.configurations
+      where
+      value
+      != value_in_use
 ---
 
 ## Description

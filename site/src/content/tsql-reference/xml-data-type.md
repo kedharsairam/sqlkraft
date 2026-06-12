@@ -3,8 +3,8 @@ name: "xml data type"
 title: "Xml data type"
 category: "data-types"
 description: "When you convert between"
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 When you convert between

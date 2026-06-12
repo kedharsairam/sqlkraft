@@ -1,29 +1,10 @@
 ---
 title: "Permissions Required to Run SQL Server Profiler"
 topic: "profiler"
-description: |
-  06/05/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  By default, running SQL Server Profiler requires the same user permissions as the Transact-SQL
-
-  stored procedures that are used to crea
-tags:
-  - "profiler"
-  - "permissions-required-to-run-sql-server-profiler"
-pubDate: 2025-12-01
+description: ""
+tags: ["profiler","permissions-required-to-run-sql-server-profiler"]
+pubDate: "2025-12-01"
 ---
-
-06/05/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 By default, running SQL Server Profiler requires the same user permissions as the Transact-SQL
 

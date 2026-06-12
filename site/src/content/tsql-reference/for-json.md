@@ -3,8 +3,8 @@ name: "FOR JSON"
 title: "FOR JSON"
 category: "queries"
 description: ""
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 ## JSON

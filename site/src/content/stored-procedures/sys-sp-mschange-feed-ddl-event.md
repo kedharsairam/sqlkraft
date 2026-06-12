@@ -4,18 +4,18 @@ title: "sp_MSchange_feed_ddl_event"
 category: "general"
 description: "2022 (16.x) and later versions Mirrored databases in Microsoft SQL database in Microsoft Fabric Internal procedure that handles data definition language events. This system stored procedure is used for: SQL database in Microsoft Fabric Microsoft Fabric mirrored databases Identified for informational purposes only. Not supported."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sys.sp_
-  MS
-  change_feed_ddl_event [ @
-  E
-  vent
-  D
-  ata = ]
-  N
-  'EventData'
-  [ ; ]
+      MS
+      change_feed_ddl_event [ @
+      E
+      vent
+      D
+      ata = ]
+      N
+      'EventData'
+      [ ; ]
 ---
 
 ## Description

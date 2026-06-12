@@ -3,13 +3,11 @@ name: "Syntax for SQL Server 2019"
 title: "Syntax for SQL Server 2019"
 category: "statements"
 description: "2017 (14.x) and later versions"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 2017 (14.x) and later versions
-
-Azure SQL Managed Instance
 
 Uploads R, Python, or Java package files to a database from the specified byte stream or file
 

@@ -1,35 +1,10 @@
 ---
 title: "Publication database"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  This topic discusses special considerations for maintaining a publication database when you
-
-  use Always On availability groups.
-
-  Maintaining an Always
-tags:
-  - "high-availability"
-  - "publication-database"
-pubDate: 2025-12-01
+description: "This topic discusses special considerations for maintaining a publication database when you use Always On availability groups. Maintaining an Always"
+tags: ["high-availability","publication-database"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 This topic discusses special considerations for maintaining a publication database when you
 

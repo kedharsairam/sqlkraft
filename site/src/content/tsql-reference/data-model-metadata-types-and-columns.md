@@ -3,8 +3,8 @@ name: "Data model metadata (types and columns)"
 title: "Data model metadata (types and columns)"
 category: "operators"
 description: "Returns the ID for a schema-scoped object."
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

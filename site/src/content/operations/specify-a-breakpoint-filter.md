@@ -1,25 +1,10 @@
 ---
 title: "Specify a Breakpoint Filter"
 topic: "ssb-diagnose"
-description: |
-  09/10/2025
-
-  Applies to:
-
-  SQL Server
-
-  A breakpoint filter limits the breakpoint to acting only on specified computers, operating
-
-  system processes, and threads. Breakpoint filters are typically used wh
-tags:
-  - "ssb-diagnose"
-  - "specify-a-breakpoint-filter"
-pubDate: 2025-12-01
+description: "09/10/2025 A breakpoint filter limits the breakpoint to acting only on specified computers, operating system processes, and threads."
+tags: ["ssb-diagnose","specify-a-breakpoint-filter"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
-
-SQL Server
 
 A breakpoint filter limits the breakpoint to acting only on specified computers, operating
 

@@ -1,37 +1,12 @@
 ---
 title: "Project properties"
 topic: "ssms"
-description: |
-  SQL projects properties
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  In addition to the contents of the individual
-
-  files, SQL database p
-tags:
-  - "ssms"
-  - "project-properties"
-pubDate: 2025-12-01
+description: "SQL projects properties In addition to the contents of the individual files, SQL database p"
+tags: ["ssms","project-properties"]
+pubDate: "2025-12-01"
 ---
 
 SQL projects properties
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 In addition to the contents of the individual
 

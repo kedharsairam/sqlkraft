@@ -1,33 +1,10 @@
 ---
 title: "Impersonation & credentials"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  In the SQL Server common language runtime (CLR) integration, using Windows Authentication
-
-  is complex, but is more secure than using SQL Server Authent
-tags:
-  - "clr-integration"
-  - "impersonation-credentials"
-pubDate: 2025-12-01
+description: "In the SQL Server common language runtime (CLR) integration, using Windows Authentication is complex, but is more secure than using SQL Server Authent"
+tags: ["clr-integration","impersonation-credentials"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 In the SQL Server common language runtime (CLR) integration, using Windows Authentication
 

@@ -3,19 +3,9 @@ name: "xquery-validate-expressions"
 title: "XQuery - Validate Expressions"
 category: "xquery"
 description: "XQuery Language Reference: Validate Expressions"
-tags:
-  - "xquery"
-  - "validate-expressions"
-pubDate: 2025-12-01
+tags: ["xquery","validate-expressions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 In this implementation, the
 

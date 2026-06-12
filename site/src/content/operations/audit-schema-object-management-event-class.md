@@ -1,47 +1,10 @@
 ---
 title: "Audit Schema Object Management Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs when server objects are created,
-
-  altered, or dropped.
-
-  Description
-
-  Name of th
-tags:
-  - "event-classes"
-  - "audit-schema-object-management-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs when server objects are created, altered, or dropped."
+tags: ["event-classes","audit-schema-object-management-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

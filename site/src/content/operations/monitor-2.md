@@ -1,33 +1,10 @@
 ---
 title: "Monitor"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  11/18/2022
-
-  Applies to:
-
-  SQL Server
-
-  After you have configured log shipping, you can monitor information about the status of all
-
-  the log shipping servers. The history and status of log sh
-tags:
-  - "high-availability"
-  - "monitor-2"
-pubDate: 2025-12-01
+description: "After you have configured log shipping, you can monitor information about the status of all the log shipping servers."
+tags: ["high-availability","monitor-2"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-11/18/2022
-
-SQL Server
 
 After you have configured log shipping, you can monitor information about the status of all
 

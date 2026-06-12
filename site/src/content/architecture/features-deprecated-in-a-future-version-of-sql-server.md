@@ -2,8 +2,8 @@
 title: "Features deprecated in a future version of SQL Server"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Category
@@ -986,8 +986,6 @@ None
 
 None
 
-SQL Server
-
 Agent
 
 net send
@@ -1001,8 +999,6 @@ E-mail notification
 E-mail notification
 
 None
-
-SQL Server
 
 Management
 

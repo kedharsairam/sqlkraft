@@ -3,8 +3,8 @@ name: "sys.database_audit_specifications"
 title: "sys.database_audit_specifications"
 category: "compatibility"
 description: "This article contains information about the database audit specifications in a SQL Server audit on a server instance. For more information, see SQL Server Audit (Database Engine) Name of the auditing specification."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

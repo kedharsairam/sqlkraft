@@ -3,8 +3,8 @@ name: "Convert date and time data"
 title: "Convert date and time data"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 is two digits, ranging from 01 to 31 depending on the month, which

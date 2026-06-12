@@ -3,8 +3,8 @@ name: "About Restore Scenarios"
 title: "About Restore Scenarios"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 For descriptions of the arguments, see

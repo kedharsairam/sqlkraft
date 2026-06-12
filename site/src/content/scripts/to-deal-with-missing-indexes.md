@@ -2,9 +2,9 @@
 name: "To Deal with Missing Indexes"
 title: "To Deal with Missing Indexes"
 description: "Missing Indexes Script"
-category: index-maintenance
-tags: ["index-maintenance", "indexing"]
-pubDate: 2025-03-15
+category: "index-maintenance"
+tags: ["index-maintenance","indexing"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

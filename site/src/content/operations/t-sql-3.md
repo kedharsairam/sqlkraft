@@ -1,33 +1,10 @@
 ---
 title: "T-SQL"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic introduces the Transact-SQL statements that support deploying Always On
-
-  availability groups and creating and managing an given availability
-tags:
-  - "high-availability"
-  - "t-sql-3"
-pubDate: 2025-12-01
+description: "This topic introduces the Transact-SQL statements that support deploying Always On availability groups and creating and managing an given availability"
+tags: ["high-availability","t-sql-3"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 This topic introduces the Transact-SQL statements that support deploying Always On
 

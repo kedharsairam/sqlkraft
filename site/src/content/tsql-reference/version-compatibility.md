@@ -3,8 +3,8 @@ name: "Version compatibility"
 title: "Version compatibility"
 category: "statements"
 description: "Filter (geometry Data"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

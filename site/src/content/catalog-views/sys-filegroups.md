@@ -3,15 +3,15 @@ name: "sys.filegroups"
 title: "sys.filegroups"
 category: "databases-files"
 description: "Contains a row for each data space that is a filegroup. For a list of columns that this view inherits, see Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. In SQL Server, the value SQL Server 2016 (13.x) and later versions. 1 = When a file in the filegroup meets the autogrow threshold"
-tags: ["databases-files", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["databases-files","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   FILEGROUP
-  _
-  ID
-  (
-  'filegroup_name'
-  )
+      _
+      ID
+      (
+      'filegroup_name'
+      )
 ---
 
 ## Description

@@ -1,33 +1,10 @@
 ---
 title: "Administration & maintenance"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Maintenance tasks like adding or removing nodes from an existing Always On Failover Cluster
-
-  Instance (FCI) are accomplished using the SQL Server Setup
-tags:
-  - "high-availability"
-  - "administration-maintenance"
-pubDate: 2025-12-01
+description: "Maintenance tasks like adding or removing nodes from an existing Always On Failover Cluster Instance (FCI) are accomplished using the SQL Server Setup"
+tags: ["high-availability","administration-maintenance"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 Maintenance tasks like adding or removing nodes from an existing Always On Failover Cluster
 

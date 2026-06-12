@@ -1,11 +1,11 @@
 ---
-name: LCK_M_S
+name: "LCK_M_S"
 title: "Shared Lock Wait"
-category: blocking
-severity: medium
+category: "blocking"
+severity: "medium"
 description: "Occurs when a task waits to acquire a shared (S) lock on a resource. Typical of read operations blocked by write operations. High duration indicates blocking chains in OLTP workloads."
-tags: ["lock", "shared", "read-blocked"]
-pubDate: 2026-05-29
+tags: ["lock","shared","read-blocked"]
+pubDate: "2026-05-29"
 relatedScripts: ["diagnose-blocking-chains"]
 ---
 

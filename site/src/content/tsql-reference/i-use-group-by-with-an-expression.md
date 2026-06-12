@@ -3,8 +3,8 @@ name: "I. Use GROUP BY with an expression"
 title: "I. Use GROUP BY with an expression"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Because of the

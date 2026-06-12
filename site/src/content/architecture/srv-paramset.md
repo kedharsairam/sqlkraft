@@ -1,39 +1,10 @@
 ---
 title: "srv_paramset"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Sets the value of a remote stored procedure call return parameter. This function has been
-
-  superseded by the
-
-  function.
-
-  srvproc
-
-  Is a pointer to the S
-tags:
-  - "clr-integration"
-  - "srv-paramset"
-pubDate: 2025-12-01
+description: "Sets the value of a remote stored procedure call return parameter. This function has been superseded by the function. srvproc Is a pointer to the S"
+tags: ["clr-integration","srv-paramset"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Sets the value of a remote stored procedure call return parameter. This function has been
 

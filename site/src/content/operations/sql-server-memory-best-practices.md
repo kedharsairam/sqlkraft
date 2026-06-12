@@ -1,27 +1,10 @@
 ---
 title: "SQL Server memory best practices"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article covers memory configuration for SQL Server on Linux, including
-
-  memory
-
-  limits, control group (
-
-  ) settings, Docker container memory examples, and swap
-tags:
-  - "linux-operations"
-  - "sql-server-memory-best-practices"
-pubDate: 2025-12-01
+description: ""
+tags: ["linux-operations","sql-server-memory-best-practices"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

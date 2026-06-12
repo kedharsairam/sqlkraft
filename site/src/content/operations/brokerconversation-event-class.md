@@ -1,43 +1,10 @@
 ---
 title: "Broker:Conversation Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  03/30/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  SQL Server generates a
-
-  event to report the progress of a Service Broker
-
-  conversation.
-
-  Description
-
-  The name of the clien
-tags:
-  - "event-classes"
-  - "brokerconversation-event-class"
-pubDate: 2025-12-01
+description: "generates a event to report the progress of a Service Broker conversation."
+tags: ["event-classes","brokerconversation-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/30/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 generates a
 
@@ -49,9 +16,7 @@ Description
 
 The name of the client application that
 
-created the connection to an instance of
-
-SQL Server. This column is populated with
+created the connection to an instance of. This column is populated with
 
 the values passed by the application
 

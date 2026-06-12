@@ -2,8 +2,8 @@
 title: "How does SQL Server use latches?"
 topic: "latch-contention"
 description: "latch. Latches are also used to protect access to internal memory structures other than buffer"
-tags: ["latch-contention", "architecture"]
-pubDate: 2026-05-29
+tags: ["latch-contention","architecture"]
+pubDate: "2026-05-29"
 ---
 
 latch. Latches are also used to protect access to internal memory structures other than buffer
@@ -53,8 +53,6 @@ of in-
 memory
 
 structures.
-
-SQL Server
 
 engine
 
@@ -382,7 +380,7 @@ Superlatch:
 
 Use the
 
-SQL Server:Latches
+:Latches
 
 object and associated counters in Performance Monitor to gather
 

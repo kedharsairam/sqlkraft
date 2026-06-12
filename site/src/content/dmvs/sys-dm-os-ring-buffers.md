@@ -3,8 +3,8 @@ name: "sys.dm_os_ring_buffers"
 title: "sys.dm_os_ring_buffers"
 category: "os"
 description: "Each row represents a record in a ring buffer of a specific type. Identified for informational purposes only. Not supported. Future compatibility is not guaranteed. Not nullable. The type of the ring buffer record. Not nullable. The time when a ring buffer record was added, in milliseconds since the computer started. No"
-tags: ["os", "dmv"]
-pubDate: 2026-05-29
+tags: ["os","dmv"]
+pubDate: "2026-05-29"
 syntax: "sys.dm_os_ring_buffers"
 ---
 
@@ -17,12 +17,6 @@ Each row represents a record in a ring buffer of a specific type. Identified for
 `sys.dm_os_ring_buffers`
 
 ## Remarks
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Each row represents a record in a ring buffer of a specific type.
 

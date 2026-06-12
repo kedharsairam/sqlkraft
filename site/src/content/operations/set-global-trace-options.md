@@ -1,30 +1,10 @@
 ---
 title: "Set Global Trace Options"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article describes how to set options that apply to all traces that are created with a specific
-
-  instance of SQL Server Profiler.
-
-tags:
-  - "profiler"
-  - "set-global-trace-options"
-pubDate: 2025-12-01
+description: "06/06/2025 This article describes how to set options that apply to all traces that are created with a specific instance of SQL Server Profiler."
+tags: ["profiler","set-global-trace-options"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article describes how to set options that apply to all traces that are created with a specific
 

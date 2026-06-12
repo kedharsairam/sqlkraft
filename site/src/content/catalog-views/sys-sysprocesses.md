@@ -3,15 +3,15 @@ name: "sys.sysprocesses"
 title: "sys.sysprocesses"
 category: "compatibility"
 description: "Associates up to 128 bytes of binary information with the current session or connection. constant, or a constant that is implicitly convertible to , to associate with the current session or connection. variable holding a context value to associate with the current session , SET CONTEXT_INFO affects the current session. T"
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   SET
-  CONTEXT_INFO 0x1256698456;
-  GO
-  SELECT
-  CONTEXT_INFO();
-  GO
+      CONTEXT_INFO 0x1256698456;
+      GO
+      SELECT
+      CONTEXT_INFO();
+      GO
 ---
 
 ## Description
@@ -30,10 +30,6 @@ GO
 ```
 
 ## Remarks
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Associates up to 128 bytes of binary information with the current session or connection.
 

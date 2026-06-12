@@ -5,20 +5,10 @@ category: "xquery"
 description: "XQuery Language Reference: Constructor Functions"
 syntax: |
   TYP($atomicvalue as xdt:anyAtomicType?
-  ) as TYP?
-tags:
-  - "xquery"
-  - "constructor-functions"
-pubDate: 2025-12-01
+    ) as TYP?
+tags: ["xquery","constructor-functions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 From a specified input, the constructor functions create instances of any of the XSD built-in or
 

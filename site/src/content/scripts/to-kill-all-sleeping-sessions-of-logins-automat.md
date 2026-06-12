@@ -2,9 +2,9 @@
 name: "To Kill all Sleeping Sessions of Logins Automat"
 title: "To Kill all Sleeping Sessions of Logins Automat"
 description: "Step 1: Set up an Extended Event session to capture session activity."
-category: automation
-tags: ["automation", "login", "session"]
-pubDate: 2025-03-15
+category: "automation"
+tags: ["automation","login","session"]
+pubDate: "2025-03-15"
 ---
 
 ```sql
@@ -106,14 +106,14 @@ END;
 --Step 4: Set up SQL Server Agent Jobs to automate the process.
 
 --Job 1: Log Sleeping Sessions
-		--Name: Log Sleeping Sessions
-		--Step name: LogSleepingSessionsStep
-		--Command: EXEC LogSleepingSessions;
-		--Schedule it to run every minute or as needed.
+    --Name: Log Sleeping Sessions
+    --Step name: LogSleepingSessionsStep
+    --Command: EXEC LogSleepingSessions;
+    --Schedule it to run every minute or as needed.
 
 --Job 2: Kill Specific Login Sessions
-		--Name: Kill Specific Login Sessions
-		--Step name: KillSpecificLoginSessionsStep
-		--Command: EXEC KillSpecificLoginSessions @logins = 'login1,login2,login3';
-		--Schedule it to run every minute or as needed.
+    --Name: Kill Specific Login Sessions
+    --Step name: KillSpecificLoginSessionsStep
+    --Command: EXEC KillSpecificLoginSessions @logins = 'login1,login2,login3';
+    --Schedule it to run every minute or as needed.
 ```

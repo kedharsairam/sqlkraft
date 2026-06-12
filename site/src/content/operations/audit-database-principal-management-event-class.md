@@ -1,43 +1,10 @@
 ---
 title: "Audit Database Principal Management Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs when principals, such as users,
-
-  are created, altered, or dropped from a databa
-tags:
-  - "event-classes"
-  - "audit-database-principal-management-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs when principals, such as users, are created, altered, or dropped from a databa"
+tags: ["event-classes","audit-database-principal-management-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

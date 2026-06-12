@@ -5,21 +5,11 @@ category: "xquery"
 description: "XQuery Language Reference: Functions on String Values - concat"
 syntax: |
   fn:concat ($string as xs:string?
-  ,$string as xs:string?
-  [, ...]) as xs:string
-tags:
-  - "xquery"
-  - "functions-on-string-values-concat"
-pubDate: 2025-12-01
+    ,$string as xs:string?
+    [, ...]) as xs:string
+tags: ["xquery","functions-on-string-values-concat"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Accepts zero or more strings as arguments and returns a string created by concatenating the
 

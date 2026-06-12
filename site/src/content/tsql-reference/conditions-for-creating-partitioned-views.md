@@ -3,8 +3,8 @@ name: "Conditions for creating partitioned views"
 title: "Conditions for creating partitioned views"
 category: "statements"
 description: "When you design a partitioning scheme, it must be clear what data belongs to each partition."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 When you design a partitioning scheme, it must be clear what data belongs to each partition.

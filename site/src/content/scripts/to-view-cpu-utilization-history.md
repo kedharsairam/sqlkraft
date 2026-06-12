@@ -2,9 +2,9 @@
 name: "To View CPU Utilization History"
 title: "To View CPU Utilization History"
 description: "diagnostic script for architecture operations."
-category: architecture
-tags: ["architecture", "cpu"]
-pubDate: 2025-03-15
+category: "architecture"
+tags: ["architecture","cpu"]
+pubDate: "2025-03-15"
 ---
 
 ```sql
@@ -13,10 +13,10 @@ DECLARE @lastNmin BIGINT;
 SET @lastNmin = 60;
 SELECT @ts =(SELECT cpu_ticks/(cpu_ticks/ms_ticks) FROM sys.dm_os_sys_info);
 SELECT TOP(@lastNmin)
-		SQLProcessUtilization AS [SQLServer_CPU_Utilization],
-		SystemIdle AS [System_Idle_Process],
-		100 - SystemIdle - SQLProcessUtilization AS [Other_Process_CPU_Utilization],
-		DATEADD(ms,-1 *(@ts - [timestamp]),GETDATE())AS [Event_Time]
+    SQLProcessUtilization AS [SQLServer_CPU_Utilization],
+    SystemIdle AS [System_Idle_Process],
+    100 - SystemIdle - SQLProcessUtilization AS [Other_Process_CPU_Utilization],
+    DATEADD(ms,-1 *(@ts - [timestamp]),GETDATE())AS [Event_Time]
 FROM (SELECT record.value('(./Record/@id)[1]','int')AS record_id,
 record.value('(./Record/SchedulerMonitorEvent/SystemHealth/SystemIdle)[1]','int')AS [SystemIdle],
 record.value('(./Record/SchedulerMonitorEvent/SystemHealth/ProcessUtilization)[1]','int')AS [SQLProcessUtilization],

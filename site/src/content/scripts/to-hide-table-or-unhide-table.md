@@ -2,9 +2,9 @@
 name: "To Hide Table or Unhide Table"
 title: "To Hide Table or Unhide Table"
 description: ""
-category: database
-tags: ["database", "table"]
-pubDate: 2025-03-15
+category: "database"
+tags: ["database","table"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

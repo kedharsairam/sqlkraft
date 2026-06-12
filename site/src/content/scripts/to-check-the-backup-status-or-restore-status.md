@@ -2,9 +2,9 @@
 name: "To Check the Backup Status or Restore Status"
 title: "To Check the Backup Status or Restore Status"
 description: "diagnostic script for backup-restore operations."
-category: backup-restore
-tags: ["backup", "backup-restore", "health-check", "restore"]
-pubDate: 2025-03-15
+category: "backup-restore"
+tags: ["backup","backup-restore","health-check","restore"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

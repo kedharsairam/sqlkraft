@@ -1,33 +1,10 @@
 ---
 title: "Availability database is suspended"
 topic: "high-availability"
-description: |
-  08/29/2025
-
-  Applies to:
-
-  SQL Server
-
-  : Availability Database Suspension State
-
-  : Availability database is suspended.
-
-  :
-
-  Warning
-
-  : Availability database
-
-  This policy checks the state of data movement
-tags:
-  - "high-availability"
-  - "availability-database-is-suspended"
-pubDate: 2025-12-01
+description: "08/29/2025 : Availability Database Suspension State : Availability database is suspended. : Warning : Availability database This policy checks the state of data movement"
+tags: ["high-availability","availability-database-is-suspended"]
+pubDate: "2025-12-01"
 ---
-
-08/29/2025
-
-SQL Server
 
 : Availability Database Suspension State
 

@@ -1,33 +1,10 @@
 ---
 title: "Example: Retrieving Employee Information"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This example retrieves an employee ID and employee name for each employee. In the
-
-  database,
-tags:
-  - "xml-data"
-  - "example-retrieving-employee-information"
-pubDate: 2025-12-01
+description: "This example retrieves an employee ID and employee name for each employee. In the database,"
+tags: ["xml-data","example-retrieving-employee-information"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This example retrieves an employee ID and employee name for each employee. In the
 

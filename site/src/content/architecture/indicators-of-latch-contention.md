@@ -2,8 +2,8 @@
 title: "Indicators of latch contention"
 topic: "io-fundamentals"
 description: "3."
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 3. Alleviate the contention using one of the techniques described in
@@ -146,7 +146,7 @@ then latch contention might be affecting performance and should be investigated.
 
 Measure page latch waits and non-page latch waits with the
 
-SQL Server, Wait Statistics
+, Wait Statistics
 
 object
 

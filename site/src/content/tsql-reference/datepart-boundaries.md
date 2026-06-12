@@ -3,8 +3,8 @@ name: "datepart boundaries"
 title: "Datepart boundaries"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 Signed

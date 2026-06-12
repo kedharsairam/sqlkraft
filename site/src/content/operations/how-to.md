@@ -1,35 +1,10 @@
 ---
 title: "How-to"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/05/2024
-
-  Applies to:
-
-  SQL Server
-
-  Managing an existing Always On availability group in SQL Server involves one or more of the
-
-  following tasks:
-
-  Altering the properties of an existing a
-tags:
-  - "high-availability"
-  - "how-to"
-pubDate: 2025-12-01
+description: "Managing an existing Always On availability group in SQL Server involves one or more of the following tasks: Altering the properties of an existing a"
+tags: ["high-availability","how-to"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/05/2024
-
-SQL Server
 
 Managing an existing Always On availability group in SQL Server involves one or more of the
 

@@ -1,11 +1,11 @@
 ---
-name: PAGELATCH_EX
+name: "PAGELATCH_EX"
 title: "Page Latch (Exclusive) Wait"
-category: memory
-severity: high
+category: "memory"
+severity: "high"
 description: "Occurs when waiting for an exclusive latch on a buffer pool page already in memory — no I/O is involved. Classic symptom of page-level contention, often on the last page of indexes (PAGELATCH_UP + allocation contention)."
-tags: ["latch", "page", "contention", "allocation"]
-pubDate: 2026-05-29
+tags: ["latch","page","contention","allocation"]
+pubDate: "2026-05-29"
 relatedScripts: ["diagnose-page-latch-contention"]
 ---
 

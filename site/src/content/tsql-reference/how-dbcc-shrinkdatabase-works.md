@@ -3,8 +3,8 @@ name: "How DBCC SHRINKDATABASE works"
 title: "How DBCC SHRINKDATABASE works"
 category: "statements"
 description: "size explicitly set by using a file size changing operation."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 size explicitly set by using a file size changing operation. Operations like
@@ -53,7 +53,7 @@ addition, there will be costing implications to your data warehouse snapshots af
 
 command.
 
-SQL Server, Azure SQL Database, Azure SQL Managed Instance, Azure Synapse
+, Azure SQL Database, Azure SQL Managed Instance, Azure Synapse
 
 Analytics dedicated SQL pool
 

@@ -1,37 +1,12 @@
 ---
 title: "Example: Configure with Windows Authentication (T-SQL)"
 topic: "high-availability"
-description: |
-  SQL)
-
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  This example shows all the stages required to create a database mirroring session with a
-
-  witness using Windows Authentication. The examples in t
-tags:
-  - "high-availability"
-  - "example-configure-with-windows-authentication-t-sql"
-pubDate: 2025-12-01
+description: "SQL) This example shows all the stages required to create a database mirroring session with a witness using Windows Authentication. The examples in t"
+tags: ["high-availability","example-configure-with-windows-authentication-t-sql"]
+pubDate: "2025-12-01"
 ---
 
 SQL)
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 This example shows all the stages required to create a database mirroring session with a
 

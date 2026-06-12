@@ -2,9 +2,9 @@
 name: "To Enable Database Mail XPs"
 title: "To Enable Database Mail XPs"
 description: "diagnostic script for automation operations."
-category: automation
-tags: ["automation", "database"]
-pubDate: 2025-03-15
+category: "automation"
+tags: ["automation","database"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

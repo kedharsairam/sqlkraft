@@ -3,27 +3,21 @@ title: "How to: Connect to a Database & Browse Existing Objects"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  A common task for database administrators and developers is to connect to a live database,
-
-  design, or browse its schema and query against its objects. The SQL Server Object Explorer in
-
-  V
-tags:
-  - "ssb-diagnose"
-  - "how-to-connect-to-a-database-browse-existing-objects"
-pubDate: 2025-12-01
+  
+    A common task for database administrators and developers is to connect to a live database,
+  
+    design, or browse its schema and query against its objects. The SQL Server Object Explorer in
+  
+    V
+tags: ["ssb-diagnose","how-to-connect-to-a-database-browse-existing-objects"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 A common task for database administrators and developers is to connect to a live database,
 
 design, or browse its schema and query against its objects. The SQL Server Object Explorer in
 
 Visual Studio now contains a dedicated
-
-SQL Server
 
 node, under which all connected SQL
 
@@ -54,8 +48,6 @@ menu and select
 Object Explorer.
 
 2. Right-click the
-
-SQL Server
 
 node in
 

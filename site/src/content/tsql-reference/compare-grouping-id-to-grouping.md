@@ -3,21 +3,9 @@ name: "Compare GROUPING_ID() to GROUPING()"
 title: "Compare GROUPING_ID() to GROUPING()"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
-
-Article
-
-•
-
-09/06/2024
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Is a function that computes the level of grouping.
 

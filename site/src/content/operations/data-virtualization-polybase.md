@@ -1,18 +1,9 @@
 ---
 title: "Data virtualization (PolyBase)"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server 2025 (17.x)
-
-  This article describes how you can use PolyBase services with SQL Server on Linux.
-
-  Beginning with SQL Server 2025 (17.x), deployments on Linux can use ODBC data s
-tags:
-  - "linux-operations"
-  - "data-virtualization-polybase"
-pubDate: 2025-12-01
+description: "2025 (17.x) This article describes how you can use PolyBase services with SQL Server on Linux. Beginning with SQL Server 2025 (17.x), deployments on Linux can use ODBC data s"
+tags: ["linux-operations","data-virtualization-polybase"]
+pubDate: "2025-12-01"
 ---
 
 2025 (17.x)

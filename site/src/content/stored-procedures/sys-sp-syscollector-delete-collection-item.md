@@ -4,15 +4,15 @@ title: "sp_syscollector_delete_collection_item"
 category: "general"
 description: "Deletes a collection item from a collection set. The unique identifier for the collection item. @collection_item_id , with a default of @collection_item_id must have a value if The name of the collection item. , with a default of an empty string. must have a value if @collection_item_id"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_syscollector_delete_collection_item
-  [ [ @collection_item_id = ] collection_item_id ]
-  [ , [ @name = ]
-  N
-  'name'
-  ]
-  [ ; ]
+      [ [ @collection_item_id = ] collection_item_id ]
+      [ , [ @name = ]
+      N
+      'name'
+      ]
+      [ ; ]
 ---
 
 ## Description

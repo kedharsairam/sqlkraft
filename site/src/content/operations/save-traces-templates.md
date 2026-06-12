@@ -1,29 +1,10 @@
 ---
 title: "Save traces & templates"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  It's important to distinguish saving trace files from saving trace templates. Saving a trace file
-
-  involves saving the captured event d
-tags:
-  - "profiler"
-  - "save-traces-templates"
-pubDate: 2025-12-01
+description: "06/06/2025 It's important to distinguish saving trace files from saving trace templates. Saving a trace file involves saving the captured event d"
+tags: ["profiler","save-traces-templates"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 It's important to distinguish saving trace files from saving trace templates. Saving a trace file
 

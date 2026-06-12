@@ -1,41 +1,10 @@
 ---
 title: "Extended Properties Page"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Extended properties allow you to add custom properties to database objects. Use this page to
-
-  view or m
-tags:
-  - "collation"
-  - "extended-properties-page"
-pubDate: 2025-12-01
+description: "Extended properties allow you to add custom properties to database objects. Use this page to view or m"
+tags: ["collation","extended-properties-page"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Extended properties allow you to add custom properties to database objects. Use this page to
 

@@ -1,25 +1,10 @@
 ---
 title: "Troubleshoot deployment"
 topic: "azure-synapse"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Before you start, note the logs locations.
-
-  The extension log file is at:
-
-  The log file name depends on the version Azure Extension for SQL Server, for the latest version
-
-  of
-tags:
-  - "azure-synapse"
-  - "troubleshoot-deployment"
-pubDate: 2025-12-01
+description: "Before you start, note the logs locations."
+tags: ["azure-synapse","troubleshoot-deployment"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 Before you start, note the logs locations.
 

@@ -2,9 +2,9 @@
 name: "To Move TempDB to Different Location"
 title: "To Move TempDB to Different Location"
 description: "identify where the temp database files are located"
-category: database
+category: "database"
 tags: ["database"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

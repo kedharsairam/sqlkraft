@@ -1,45 +1,10 @@
 ---
 title: "Audit Change Audit Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs whenever an audit trace modification is made.
-
-  Description
-
-  Name of the client
-tags:
-  - "event-classes"
-  - "audit-change-audit-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs whenever an audit trace modification is made. Description Name of the client"
+tags: ["event-classes","audit-change-audit-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

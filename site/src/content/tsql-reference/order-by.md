@@ -3,8 +3,8 @@ name: "ORDER BY"
 title: "ORDER BY"
 category: "queries"
 description: ""
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 The order of certain parameters used with the

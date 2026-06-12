@@ -1,25 +1,10 @@
 ---
 title: "Restore the master database"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  Under certain circumstances, you might need to restore the
-
-  database on an instance of
-
-  SQL Server in single-user mode on Linux. Scenarios include migrating to a new
-tags:
-  - "linux-operations"
-  - "restore-the-master-database"
-pubDate: 2025-12-01
+description: "on Linux Under certain circumstances, you might need to restore the database on an instance of SQL Server in single-user mode on Linux."
+tags: ["linux-operations","restore-the-master-database"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 
@@ -41,9 +26,7 @@ from the command line.
 
 For starting a SQL Server instance in single-user mode on Windows, see
 
-Single-user mode for
-
-SQL Server.
+Single-user mode for.
 
 Starting SQL Server in single-user mode enables any member of the local administrator group to
 

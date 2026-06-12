@@ -1,33 +1,10 @@
 ---
 title: "T-SQL"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/05/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to use Transact-SQL to create and configure an availability group on
-
-  instances of SQL Server on which the Always On availabil
-tags:
-  - "high-availability"
-  - "t-sql"
-pubDate: 2025-12-01
+description: "This topic describes how to use Transact-SQL to create and configure an availability group on instances of SQL Server on which the Always On availabil"
+tags: ["high-availability","t-sql"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/05/2024
-
-SQL Server
 
 This topic describes how to use Transact-SQL to create and configure an availability group on
 

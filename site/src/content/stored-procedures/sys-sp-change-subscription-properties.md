@@ -4,26 +4,26 @@ title: "sp_change_subscription_properties"
 category: "general"
 description: "Updates information for pull subscriptions. This stored procedure is executed at the Subscriber The name of the Publisher database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_change_subscription_properties
-  [ @publisher = ]
-  N
-  'publisher'
-  , [ @publisher_db = ]
-  N
-  'publisher_db'
-  , [ @publication = ]
-  N
-  'publication'
-  , [ @property = ]
-  N
-  'property'
-  , [ @value = ]
-  N
-  'value'
-  [ , [ @publication_type = ] publication_type ]
-  [ ; ]
+      [ @publisher = ]
+      N
+      'publisher'
+      , [ @publisher_db = ]
+      N
+      'publisher_db'
+      , [ @publication = ]
+      N
+      'publication'
+      , [ @property = ]
+      N
+      'property'
+      , [ @value = ]
+      N
+      'value'
+      [ , [ @publication_type = ] publication_type ]
+      [ ; ]
 ---
 
 ## Description

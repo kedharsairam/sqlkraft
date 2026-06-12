@@ -1,29 +1,12 @@
 ---
 title: "Management"
 topic: "monitor"
-description: |
-  SQL Server managing partners
-
-  09/09/2025
-
-  Applies to:
-
-  SQL Server
-
-  To manage your SQL Server services, choose from a wide variety of industry-leading tools. This
-
-  article highlights Microsoft partner
-tags:
-  - "monitor"
-  - "management"
-pubDate: 2025-12-01
+description: "managing partners 09/09/2025 To manage your SQL Server services, choose from a wide variety of industry-leading tools. This article highlights Microsoft partner"
+tags: ["monitor","management"]
+pubDate: "2025-12-01"
 ---
 
 managing partners
-
-09/09/2025
-
-SQL Server
 
 To manage your SQL Server services, choose from a wide variety of industry-leading tools. This
 

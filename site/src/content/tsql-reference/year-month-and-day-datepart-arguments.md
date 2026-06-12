@@ -3,8 +3,8 @@ name: "year, month, and day datepart Arguments"
 title: "Year, month, and day datepart Arguments"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 For a

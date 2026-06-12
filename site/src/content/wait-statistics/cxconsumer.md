@@ -1,11 +1,11 @@
 ---
-name: CXCONSUMER
+name: "CXCONSUMER"
 title: "Class CXCONSUMER Wait"
-category: top-consumer
-severity: high
+category: "top-consumer"
+severity: "high"
 description: "Occurs when a parallel thread consumer waits for a producer thread to send rows. Related to CXPACKET but from the consumer side — indicates producer-consumer imbalance in parallel queries."
-tags: ["parallelism", "cpu", "consumer"]
-pubDate: 2026-05-29
+tags: ["parallelism","cpu","consumer"]
+pubDate: "2026-05-29"
 relatedScripts: ["diagnose-parallelism-skew"]
 ---
 

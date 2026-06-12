@@ -2,9 +2,9 @@
 name: "To Enable Cardinality Estimation for all Databa"
 title: "To Enable Cardinality Estimation for all Databa"
 description: "diagnostic script for database operations."
-category: database
+category: "database"
 tags: ["database"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

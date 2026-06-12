@@ -1,35 +1,10 @@
 ---
 title: "FOR XML"
 topic: "xml-data"
-description: |
-  09/03/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  A
-
-  query returns results as a rowset. You can optionally retrieve formal results of a SQL
-
-  query as XML by specifyi
-tags:
-  - "xml-data"
-  - "for-xml"
-pubDate: 2025-12-01
+description: "09/03/2025 A query returns results as a rowset. You can optionally retrieve formal results of a SQL query as XML by specifyi"
+tags: ["xml-data","for-xml"]
+pubDate: "2025-12-01"
 ---
-
-09/03/2025
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 A
 

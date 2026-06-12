@@ -3,21 +3,17 @@ title: "Interpreting SQL Server Unit Test Results"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  When you run a SQL Server unit test, test results are automatically produced, saved to disk, and
-
-  summarized in the
-
-  window. As soon as you start a test run, the
-
-  window appears and displa
-tags:
-  - "ssb-diagnose"
-  - "interpreting-sql-server-unit-test-results"
-pubDate: 2025-12-01
+  
+    When you run a SQL Server unit test, test results are automatically produced, saved to disk, and
+  
+    summarized in the
+  
+    window. As soon as you start a test run, the
+  
+    window appears and displa
+tags: ["ssb-diagnose","interpreting-sql-server-unit-test-results"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 When you run a SQL Server unit test, test results are automatically produced, saved to disk, and
 

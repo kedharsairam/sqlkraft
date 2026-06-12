@@ -1,35 +1,10 @@
 ---
 title: "srv_paramnumber"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Returns the number of a remote stored procedure call parameter.
-
-  srvproc
-
-  Is a pointer to the SRV_PROC structure that is the handle for a particular cl
-tags:
-  - "clr-integration"
-  - "srv-paramnumber"
-pubDate: 2025-12-01
+description: "Returns the number of a remote stored procedure call parameter."
+tags: ["clr-integration","srv-paramnumber"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Returns the number of a remote stored procedure call parameter.
 

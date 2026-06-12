@@ -1,37 +1,10 @@
 ---
 title: "srv_sendrow"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Transmits a row of data to the client.
-
-  srvproc
-
-  Is a pointer to the SRV_PROC structure that is the handle for a particular client connection (in
-
-  this
-tags:
-  - "clr-integration"
-  - "srv-sendrow"
-pubDate: 2025-12-01
+description: "Transmits a row of data to the client."
+tags: ["clr-integration","srv-sendrow"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Transmits a row of data to the client.
 

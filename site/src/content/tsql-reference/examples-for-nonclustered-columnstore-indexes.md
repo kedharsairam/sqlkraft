@@ -3,8 +3,8 @@ name: "Examples for nonclustered columnstore indexes"
 title: "Examples for nonclustered columnstore indexes"
 category: "statements"
 description: "There are two ways to maintain the clustered columnstore index, and both methods achieved"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## A. Create a columnstore index as a secondary index on a

@@ -1,29 +1,10 @@
 ---
 title: "Getting Started"
 topic: "configuration"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  This tutorial is intended for users who are new to SQL Server and who have installed SQL
-
-  Server or SQL Server Express. This brief tutorial hel
-tags:
-  - "configuration"
-  - "getting-started-2"
-pubDate: 2025-12-01
+description: "06/06/2025 This tutorial is intended for users who are new to SQL Server and who have installed SQL Server or SQL Server Express."
+tags: ["configuration","getting-started-2"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Database
 
 This tutorial is intended for users who are new to SQL Server and who have installed SQL
 

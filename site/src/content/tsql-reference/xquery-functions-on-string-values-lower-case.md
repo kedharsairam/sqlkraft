@@ -4,19 +4,9 @@ title: "XQuery - Functions on String Values - lower-case"
 category: "xquery"
 description: "XQuery Language Reference: Functions on String Values - lower-case"
 syntax: "fn:lower-case($arg as xs:string?) as xs:string"
-tags:
-  - "xquery"
-  - "functions-on-string-values-lower-case"
-pubDate: 2025-12-01
+tags: ["xquery","functions-on-string-values-lower-case"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-08/10/2023
-
-SQL Server
 
 The lower-case function converts each character in
 

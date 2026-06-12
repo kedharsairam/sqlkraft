@@ -1,33 +1,10 @@
 ---
 title: "Filtered index"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article describes how to create a filtered index using SQL Server Management Studio
-
-  (SS
-tags:
-  - "filestream"
-  - "filtered-index"
-pubDate: 2025-12-01
+description: "This article describes how to create a filtered index using SQL Server Management Studio (SS"
+tags: ["filestream","filtered-index"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article describes how to create a filtered index using SQL Server Management Studio
 

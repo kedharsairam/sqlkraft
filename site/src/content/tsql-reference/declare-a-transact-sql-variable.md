@@ -3,17 +3,9 @@ name: "Declare a Transact-SQL variable"
 title: "Declare a Transact-SQL variable"
 category: "language-elements"
 description: ""
-tags: ["tsql", "language-elements"]
-pubDate: 2026-05-29
+tags: ["tsql","language-elements"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -22,8 +14,6 @@ SQL analytics endpoint in
 Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 A Transact-SQL local variable is an object that can hold a single data value of a specific type.
 

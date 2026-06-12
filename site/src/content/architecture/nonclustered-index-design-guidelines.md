@@ -2,8 +2,8 @@
 title: "Nonclustered index design guidelines"
 topic: "index-architecture"
 description: ""
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The main difference between a clustered and a nonclustered index is that a nonclustered index

@@ -2,39 +2,29 @@
 title: "Enable and disable"
 topic: "query-processing"
 description: "The following table summarizes the availability and the enabled state of optimized locking"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The following table summarizes the availability and the enabled state of optimized locking
 
 across SQL platforms.
 
-Azure SQL Database
+Yes
+
+Yes (always enabled)
 
 Yes
 
 Yes (always enabled)
 
-SQL database in Microsoft Fabric
-
 Yes
 
 Yes (always enabled)
 
-Azure SQL Managed Instance
-
 Yes
 
 Yes (always enabled)
-
-Azure SQL Managed Instance
-
-Yes
-
-Yes (always enabled)
-
-Azure SQL Managed Instance
 
 No
 

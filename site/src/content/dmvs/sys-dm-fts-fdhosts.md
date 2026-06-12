@@ -3,8 +3,8 @@ name: "sys.dm_fts_fdhosts"
 title: "sys.dm_fts_fdhosts"
 category: "os"
 description: "Returns information on the current activity of the filter daemon host or hosts on the server Windows process ID of the filter daemon host. Type of document being processed by the filter daemon host, one Maximum number of threads in the filter daemon host. Number of batches that are being processed in the filter daemon On SQL Server and SQL Managed Instance, require"
-tags: ["os", "dmv"]
-pubDate: 2026-05-29
+tags: ["os","dmv"]
+pubDate: "2026-05-29"
 syntax: "##MS_ServerStateReader##"
 ---
 

@@ -1,20 +1,9 @@
 ---
 title: "With Microsoft Entra authentication"
 topic: "migration"
-description: |
-  Applies to:
-
-  SQL Server 2022 (16.x)
-
-  This article provides steps to configure Transactional and Snapshot replication by using
-
-  authentication with Microsoft Entra ID (
-
-  formerly Azure Active Directory
-tags:
-  - "migration"
-  - "with-microsoft-entra-authentication"
-pubDate: 2025-12-01
+description: "2022 (16.x) This article provides steps to configure Transactional and Snapshot replication by using authentication with Microsoft Entra ID ( formerly Azure Active Directory"
+tags: ["migration","with-microsoft-entra-authentication"]
+pubDate: "2025-12-01"
 ---
 
 2022 (16.x)

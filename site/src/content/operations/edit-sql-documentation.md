@@ -1,33 +1,10 @@
 ---
 title: "Edit SQL Documentation!"
 topic: "monitor"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure Synapse Analytics
-
-  Analytics
-
-  Platform System (PDW)
-
-  Anyone can contribute to SQL Server documentation. This includes correcting typos,
-
-  suggesting b
-tags:
-  - "monitor"
-  - "edit-sql-documentation"
-pubDate: 2025-12-01
+description: "Anyone can contribute to SQL Server documentation. This includes correcting typos, suggesting b"
+tags: ["monitor","edit-sql-documentation"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure Synapse Analytics
 
 Analytics
 

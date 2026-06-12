@@ -1,43 +1,10 @@
 ---
 title: "Revoke Permissions"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The permission to create an XML schema collection can be revoked by using one of the
-
-  following:
-
-  Revok
-tags:
-  - "xml-data"
-  - "revoke-permissions"
-pubDate: 2025-12-01
+description: "The permission to create an XML schema collection can be revoked by using one of the following: Revok"
+tags: ["xml-data","revoke-permissions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The permission to create an XML schema collection can be revoked by using one of the
 

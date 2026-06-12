@@ -4,7 +4,7 @@ title: "sp_cycle_agent_errorlog"
 category: "general"
 description: "Closes the current SQL Server Agent error log file and cycles the SQL Server Agent error log extension numbers just like a server restart. The new SQL Server Agent error log contains a line indicating that the new log was created."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_cycle_agent_errorlog"
 ---
 

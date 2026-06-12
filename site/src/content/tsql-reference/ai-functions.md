@@ -3,15 +3,13 @@ name: "AI functions"
 title: "AI functions"
 category: "statements"
 description: "2025 (17.x)"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 #### Function
 
 2025 (17.x)
-
-Azure SQL Database
 
 SQL database in Microsoft
 

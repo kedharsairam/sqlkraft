@@ -2,8 +2,8 @@
 title: "Memory pressure detection"
 topic: "memory-management"
 description: ""
-tags: ["memory-management", "architecture"]
-pubDate: 2026-05-29
+tags: ["memory-management","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The buffer manager is

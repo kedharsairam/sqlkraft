@@ -2,9 +2,9 @@
 name: "Tempdb Full"
 title: "Tempdb Full"
 description: "TEMPDB Data File Full:-"
-category: troubleshooting
+category: "troubleshooting"
 tags: ["troubleshooting"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

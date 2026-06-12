@@ -2,8 +2,8 @@
 title: "Steps to resolve"
 topic: "query-processing"
 description: "1. If the MSTVF is single statement only, convert to an inline table valued function."
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 1. If the MSTVF is single statement only, convert to an inline table valued function.

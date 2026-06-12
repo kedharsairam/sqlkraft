@@ -3,8 +3,8 @@ name: "Date and time-related articles"
 title: "Date and time-related articles"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 Function
@@ -114,8 +114,6 @@ The function determines whether a datetime or smalldatetime input expression has
 int
 
 The function is deterministic only used with the function, when the style parameter is specified, and when style isn't equal to 0, 100, 9, or 109.
-
-Article
 
 ## Description
 

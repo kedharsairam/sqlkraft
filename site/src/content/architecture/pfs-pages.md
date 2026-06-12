@@ -2,8 +2,8 @@
 title: "PFS pages"
 topic: "query-processing"
 description: "Uniform extent, or full mixed extent"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Uniform extent, or full mixed extent

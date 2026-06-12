@@ -3,8 +3,8 @@ name: "replace value of (XML DML)"
 title: "Replace value of (XML DML)"
 category: "statements"
 description: "Note the following from the previous query:"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Note the following from the previous query:

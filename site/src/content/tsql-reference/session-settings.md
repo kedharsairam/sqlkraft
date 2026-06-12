@@ -3,8 +3,8 @@ name: "Session settings"
 title: "Session settings"
 category: "statements"
 description: "Data Manipulation Language (DML) affect the information stored in the database."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Data Manipulation Language (DML) affect the information stored in the database. Use these

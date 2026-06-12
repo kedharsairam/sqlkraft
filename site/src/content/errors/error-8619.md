@@ -1,12 +1,12 @@
 ---
-name: "8619"
+name: 8619
 title: "Error 8619"
 errorNumber: 8619
 severity: "medium"
 category: "io"
 description: "Description 8619 16 No The query processor could not produce a query plan because a worktable is required, and its minimum row size exceeds the maximum allowable of %d bytes."
-tags: ["io", "severity-medium"]
-pubDate: 2026-05-29
+tags: ["io","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

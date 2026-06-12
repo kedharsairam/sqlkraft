@@ -1,35 +1,16 @@
 ---
 title: "Usage scenarios"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  System-versioned temporal tables are useful in scenarios that
-tags:
-  - "tables"
-  - "usage-scenarios"
-pubDate: 2025-12-01
+description: ""
+tags: ["tables","usage-scenarios"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 System-versioned temporal tables are useful in scenarios that require tracking history of data
 

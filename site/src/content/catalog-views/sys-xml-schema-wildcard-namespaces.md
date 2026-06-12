@@ -3,8 +3,8 @@ name: "sys.xml_schema_wildcard_namespaces"
 title: "sys.xml_schema_wildcard_namespaces"
 category: "xml"
 description: "Returns a row per enumerated namespace for an XML schema wildcard."
-tags: ["xml", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["xml","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

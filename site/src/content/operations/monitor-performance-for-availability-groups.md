@@ -1,33 +1,10 @@
 ---
 title: "Monitor performance for availability groups"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/27/2025
-
-  Applies to:
-
-  SQL Server
-
-  The performance aspect of Always On Availability Groups is crucial to maintaining the service-
-
-  level agreement (SLA) for your mission-critical databas
-tags:
-  - "high-availability"
-  - "monitor-performance-for-availability-groups"
-pubDate: 2025-12-01
+description: "The performance aspect of Always On Availability Groups is crucial to maintaining the service- level agreement (SLA) for your mission-critical databas"
+tags: ["high-availability","monitor-performance-for-availability-groups"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/27/2025
-
-SQL Server
 
 The performance aspect of Always On Availability Groups is crucial to maintaining the service-
 
@@ -65,7 +42,7 @@ be replicated to the secondary replicas.
 
 The log records enter the send queue.
 
-SQL Server:Database > Log bytes
+:Database > Log bytes
 
 flushed/sec
 

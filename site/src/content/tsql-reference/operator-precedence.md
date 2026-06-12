@@ -3,21 +3,13 @@ name: "Operator precedence"
 title: "Operator precedence"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 #### Level
 
 #### Operators
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 When a complex expression contains multiple operators, operator precedence determines the
 

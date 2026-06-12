@@ -4,12 +4,12 @@ title: "sp_droprole"
 category: "general"
 description: "Removes a database role from the current database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_droprole [ @rolename = ]
-  N
-  'rolename'
-  [ ; ]
+      N
+      'rolename'
+      [ ; ]
 ---
 
 ## Description

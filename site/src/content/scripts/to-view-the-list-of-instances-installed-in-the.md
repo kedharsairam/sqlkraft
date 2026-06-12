@@ -2,9 +2,9 @@
 name: "To View the List of Instances Installed in the"
 title: "To View the List of Instances Installed in the"
 description: "diagnostic script for installation operations."
-category: installation
+category: "installation"
 tags: ["installation"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

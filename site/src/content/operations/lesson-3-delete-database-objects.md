@@ -1,35 +1,12 @@
 ---
 title: "Lesson 3: Delete database objects"
 topic: "configuration"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft Fabric
-
-  This short lesson removes the objects that you created in Le
-tags:
-  - "configuration"
-  - "lesson-3-delete-database-objects"
-pubDate: 2025-12-01
+description: "This short lesson removes the objects that you created in Le"
+tags: ["configuration","lesson-3-delete-database-objects"]
+pubDate: "2025-12-01"
 ---
 
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
 Analytics Platform System (PDW)
-
-SQL database in Microsoft Fabric
 
 This short lesson removes the objects that you created in Lesson 1 and Lesson 2, and then
 

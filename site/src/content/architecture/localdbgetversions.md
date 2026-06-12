@@ -1,27 +1,10 @@
 ---
 title: "LocalDBGetVersions"
 topic: "clr-integration"
-description: |
-  07/14/2025
-
-  Applies to:
-
-  SQL Server
-
-  Returns all SQL Server Express LocalDB versions available on the computer.
-
-  C++
-
-  [Output] Contains names of the LocalDB versions that are available on the user's w
-tags:
-  - "clr-integration"
-  - "localdbgetversions"
-pubDate: 2025-12-01
+description: "07/14/2025 Returns all SQL Server Express LocalDB versions available on the computer. C++ [Output] Contains names of the LocalDB versions that are available on the user's w"
+tags: ["clr-integration","localdbgetversions"]
+pubDate: "2025-12-01"
 ---
-
-07/14/2025
-
-SQL Server
 
 Returns all SQL Server Express LocalDB versions available on the computer.
 

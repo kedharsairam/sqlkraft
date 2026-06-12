@@ -1,32 +1,10 @@
 ---
 title: "Change Tracking page"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Use this page to view or modify change tracking settings for the selected database. For more
-
-tags:
-  - "collation"
-  - "change-tracking-page"
-pubDate: 2025-12-01
+description: "Use this page to view or modify change tracking settings for the selected database."
+tags: ["collation","change-tracking-page"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Use this page to view or modify change tracking settings for the selected database. For more
 

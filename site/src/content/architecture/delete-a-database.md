@@ -1,29 +1,10 @@
 ---
 title: "Delete a database"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  This article describes how to delete a user-defined database in SQL Server by using SQL Server
-
-  Management Studio or Transact-S
-tags:
-  - "collation"
-  - "delete-a-database"
-pubDate: 2025-12-01
+description: "This article describes how to delete a user-defined database in SQL Server by using SQL Server Management Studio or Transact-S"
+tags: ["collation","delete-a-database"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This article describes how to delete a user-defined database in SQL Server by using SQL Server
 

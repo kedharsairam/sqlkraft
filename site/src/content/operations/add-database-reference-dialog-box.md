@@ -1,31 +1,10 @@
 ---
 title: "Add Database Reference Dialog Box"
 topic: "ssb-diagnose"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Database references in SQL projects enable you to incorporate objects that aren't included in
-tags:
-  - "ssb-diagnose"
-  - "add-database-reference-dialog-box"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssb-diagnose","add-database-reference-dialog-box"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Database references in SQL projects enable you to incorporate objects that aren't included in a
 

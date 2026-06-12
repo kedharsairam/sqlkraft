@@ -3,8 +3,8 @@ name: "GROUPING_ID() equivalents"
 title: "GROUPING_ID() equivalents"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 of ones and zeros.

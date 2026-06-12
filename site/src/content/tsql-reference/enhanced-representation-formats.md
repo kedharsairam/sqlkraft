@@ -3,21 +3,13 @@ name: "Enhanced representation formats"
 title: "Enhanced representation formats"
 category: "statements"
 description: "Describes enhanced date and time representation formats available in T-SQL for greater precision and compatibility."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ﾃ
 
 Summarize this article for me
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 supports extended methods on
 

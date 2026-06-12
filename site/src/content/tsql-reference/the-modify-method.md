@@ -3,8 +3,8 @@ name: "The modify method"
 title: "The modify method"
 category: "statements"
 description: "JSON function support was first introduced in SQL Server 2016 (13.x). The native"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 JSON function support was first introduced in SQL Server 2016 (13.x). The native

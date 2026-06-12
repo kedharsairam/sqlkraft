@@ -3,8 +3,8 @@ name: "@@PACK_RECEIVED"
 title: "@@PACK_RECEIVED"
 category: "variables"
 description: "table (trigger scope). For"
-tags: ["tsql", "variables"]
-pubDate: 2026-05-29
+tags: ["tsql","variables"]
+pubDate: "2026-05-29"
 ---
 
 In this example,

@@ -1,29 +1,10 @@
 ---
 title: "Overview"
 topic: "upgrade"
-description: |
-  06/04/2025
-
-  Applies to:
-
-  SQL Server
-
-  The articles in this section help you upgrade the SQL Server Database Engine from a prior
-
-  release of SQL Server to SQL Server 2022 (16.x).
-
-  1.
-
-  Choose a Database
-tags:
-  - "upgrade"
-  - "overview-2"
-pubDate: 2025-12-01
+description: "06/04/2025 The articles in this section help you upgrade the SQL Server Database Engine from a prior release of SQL Server to SQL Server 2022 (16.x). 1. Choose a Database"
+tags: ["upgrade","overview-2"]
+pubDate: "2025-12-01"
 ---
-
-06/04/2025
-
-SQL Server
 
 The articles in this section help you upgrade the SQL Server Database Engine from a prior
 
@@ -61,7 +42,7 @@ repopulating full-text catalogs. This article discusses these steps.
 
 Database Compatibility Level.
 
-SQL Server, Azure SQL Database, and Azure SQL Managed Instance
+, Azure SQL Database, and Azure SQL Managed Instance
 
 One of the steps to take after your databases are online in the new version of SQL Server
 

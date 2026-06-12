@@ -1,35 +1,10 @@
 ---
 title: "Warnings Page"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  Displays a read-only list of warnings supported on database mirroring events and the specified
-
-  warning threshold values, if available.
-
-  Start Database
-tags:
-  - "high-availability"
-  - "warnings-page"
-pubDate: 2025-12-01
+description: "Displays a read-only list of warnings supported on database mirroring events and the specified warning threshold values, if available. Start Database"
+tags: ["high-availability","warnings-page"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 Displays a read-only list of warnings supported on database mirroring events and the specified
 

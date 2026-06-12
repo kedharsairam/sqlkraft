@@ -1,33 +1,10 @@
 ---
 title: "Take availability group offline"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/27/2023
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to take an Always On availability group from the ONLINE state to the
-
-  OFFLINE state by using Transact-SQL in SQL Server 2012 S
-tags:
-  - "high-availability"
-  - "take-availability-group-offline"
-pubDate: 2025-12-01
+description: "This topic describes how to take an Always On availability group from the ONLINE state to the OFFLINE state by using Transact-SQL in SQL Server 2012 S"
+tags: ["high-availability","take-availability-group-offline"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/27/2023
-
-SQL Server
 
 This topic describes how to take an Always On availability group from the ONLINE state to the
 

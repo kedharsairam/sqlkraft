@@ -1,35 +1,12 @@
 ---
 title: "How to: Retrieve Information from a Service Broker Error Message (Transact-SQL)"
 topic: "service-broker"
-description: |
-  SQL)
-
-  09/02/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  A message of type
-
-  is a Service Broker
-
-  error message. Messages of this type are XML documents that contain a numeric code for th
-tags:
-  - "service-broker"
-  - "how-to-retrieve-information-from-a-service-broker-error-message-transact-sql"
-pubDate: 2025-12-01
+description: "SQL) 09/02/2025 A message of type is a Service Broker error message."
+tags: ["service-broker","how-to-retrieve-information-from-a-service-broker-error-message-transact-sql"]
+pubDate: "2025-12-01"
 ---
 
 SQL)
-
-09/02/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 A message of type
 

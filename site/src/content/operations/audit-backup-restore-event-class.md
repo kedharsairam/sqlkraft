@@ -1,41 +1,10 @@
 ---
 title: "Audit Backup & Restore Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  08/27/2024
-
-  Applies to:
-
-  SQL Server
-
-  The
-
-  event class occurs whenever a backup or restore command is
-
-  issued.
-
-  Description
-
-  Name of the client application that created the
-
-  connection to a
-tags:
-  - "event-classes"
-  - "audit-backup-restore-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs whenever a backup or restore command is issued. Description Name of the client application that created the connection to a"
+tags: ["event-classes","audit-backup-restore-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-08/27/2024
-
-SQL Server
 
 The
 

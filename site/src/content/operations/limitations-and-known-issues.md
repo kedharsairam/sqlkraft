@@ -3,14 +3,12 @@ title: "Limitations and known issues"
 topic: "profiler"
 description: |
   This article outlines the limitations and known constraints of GitHub Copilot integration with
-
-  the MSSQL extension for Visual Studio Code. This experience is designed for application
-
-  developers buil
-tags:
-  - "profiler"
-  - "limitations-and-known-issues"
-pubDate: 2025-12-01
+  
+    the MSSQL extension for Visual Studio Code. This experience is designed for application
+  
+    developers buil
+tags: ["profiler","limitations-and-known-issues"]
+pubDate: "2025-12-01"
 ---
 
 This article outlines the limitations and known constraints of GitHub Copilot integration with

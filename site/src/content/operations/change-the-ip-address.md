@@ -1,33 +1,10 @@
 ---
 title: "Change the IP Address"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to change the IP address resource in an Always On Failover Cluster
-
-  Instance (FCI) by using the Failover Cluster Manager snap-
-tags:
-  - "high-availability"
-  - "change-the-ip-address"
-pubDate: 2025-12-01
+description: "This topic describes how to change the IP address resource in an Always On Failover Cluster Instance (FCI) by using the Failover Cluster Manager snap-"
+tags: ["high-availability","change-the-ip-address"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 This topic describes how to change the IP address resource in an Always On Failover Cluster
 

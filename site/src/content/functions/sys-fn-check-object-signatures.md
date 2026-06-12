@@ -3,12 +3,12 @@ name: "sys.fn_check_object_signatures"
 title: "sys.fn_check_object_signatures"
 category: "system"
 description: "Returns a list of all signable objects and indicates whether an object is signed by a specified certificate or asymmetric key. If the object is signed by the specified certificate or asymmetric key signed, it also returns whether the object's signature is valid."
-tags: ["system", "function"]
-pubDate: 2026-05-29
+tags: ["system","function"]
+pubDate: "2026-05-29"
 syntax: |
   fn_ check_object_signatures (
-  { '@class' } , { @thumbprint }
-  )
+    { '@class' } , { @thumbprint }
+    )
 ---
 
 ## Description

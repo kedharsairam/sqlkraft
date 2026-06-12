@@ -3,8 +3,8 @@ name: "Summary of support for WITH options"
 title: "Summary of support for WITH options"
 category: "queries"
 description: "contains the backup from a single, successful backup operation. RESTORE, RESTORE"
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 A

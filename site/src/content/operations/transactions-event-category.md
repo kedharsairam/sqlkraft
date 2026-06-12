@@ -1,35 +1,10 @@
 ---
 title: "Transactions Event Category"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event classes can be used to monitor the status of transactions. The event
-
-  class names
-tags:
-  - "event-classes"
-  - "transactions-event-category"
-pubDate: 2025-12-01
+description: "The event classes can be used to monitor the status of transactions."
+tags: ["event-classes","transactions-event-category"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

@@ -1,47 +1,10 @@
 ---
 title: "Audit Database Object Access Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs when database objects, such as schemas,
-
-  are accessed.
-
-  Description
-
-  Name of th
-tags:
-  - "event-classes"
-  - "audit-database-object-access-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs when database objects, such as schemas, are accessed."
+tags: ["event-classes","audit-database-object-access-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

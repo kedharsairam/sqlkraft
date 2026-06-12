@@ -3,8 +3,8 @@ name: "Revert a database to a database snapshot"
 title: "Revert a database to a database snapshot"
 category: "hints"
 description: "Restoring over a database using the full or bulk-logged recovery model where a tail-log"
-tags: ["tsql", "hints"]
-pubDate: 2026-05-29
+tags: ["tsql","hints"]
+pubDate: "2026-05-29"
 ---
 
 ## Restrictions on reverting

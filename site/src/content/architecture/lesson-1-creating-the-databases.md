@@ -1,29 +1,10 @@
 ---
 title: "Lesson 1: Creating the Databases"
 topic: "service-broker"
-description: |
-  09/04/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  In this lesson, you learn to create the databases and enable the trustworthy option.
-
-  Copy and paste the following code into a Query Ed
-tags:
-  - "service-broker"
-  - "lesson-1-creating-the-databases"
-pubDate: 2025-12-01
+description: "09/04/2025 In this lesson, you learn to create the databases and enable the trustworthy option. Copy and paste the following code into a Query Ed"
+tags: ["service-broker","lesson-1-creating-the-databases"]
+pubDate: "2025-12-01"
 ---
-
-09/04/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 In this lesson, you learn to create the databases and enable the trustworthy option.
 

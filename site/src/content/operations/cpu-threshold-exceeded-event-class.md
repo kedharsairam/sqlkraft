@@ -1,35 +1,10 @@
 ---
 title: "CPU Threshold Exceeded Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event class indicates that resource governor detected a batch
-
-  request that exceeds the
-tags:
-  - "event-classes"
-  - "cpu-threshold-exceeded-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","cpu-threshold-exceeded-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

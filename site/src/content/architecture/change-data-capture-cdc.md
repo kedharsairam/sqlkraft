@@ -1,30 +1,10 @@
 ---
 title: "Change data capture (CDC)"
 topic: "change-data-capture"
-description: |
-  08/22/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  In this article, learn about change data capture (CDC), which records activity on a database
-
-  when tables and rows have been modified.
-
-tags:
-  - "change-data-capture"
-  - "change-data-capture-cdc"
-pubDate: 2025-12-01
+description: "08/22/2025 In this article, learn about change data capture (CDC), which records activity on a database when tables and rows have been modified."
+tags: ["change-data-capture","change-data-capture-cdc"]
+pubDate: "2025-12-01"
 ---
-
-08/22/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 In this article, learn about change data capture (CDC), which records activity on a database
 
@@ -32,7 +12,7 @@ when tables and rows have been modified.
 
 This article explains how CDC works with SQL Server and Azure SQL Managed Instance. For
 
-Azure SQL Database, see
+, see
 
 CDC with Azure SQL Database.
 

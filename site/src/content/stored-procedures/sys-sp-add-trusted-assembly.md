@@ -4,15 +4,15 @@ title: "sp_add_trusted_assembly"
 category: "general"
 description: "2017 (14.x) and later Adds an assembly to the list of trusted assemblies for the server. This procedure adds an assembly to The SHA2_512 hash value of the assembly to add to the list of trusted assemblies for the server."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_add_trusted_assembly
-  [ @hash = ]
-  'value'
-  [ , [ @description = ]
-  'description'
-  ]
-  [ ; ]
+      [ @hash = ]
+      'value'
+      [ , [ @description = ]
+      'description'
+      ]
+      [ ; ]
 ---
 
 ## Description

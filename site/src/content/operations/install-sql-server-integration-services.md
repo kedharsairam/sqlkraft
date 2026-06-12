@@ -1,25 +1,10 @@
 ---
 title: "Install SQL Server Integration Services"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  - Linux
-
-  Follow the steps in this article to install SQL Server Integration Services (
-
-  ) on
-
-  Linux. For more information about the features that are supported in Integration
-tags:
-  - "linux-operations"
-  - "install-sql-server-integration-services"
-pubDate: 2025-12-01
+description: "- Linux Follow the steps in this article to install SQL Server Integration Services ( ) on Linux. For more information about the features that are supported in Integration"
+tags: ["linux-operations","install-sql-server-integration-services"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 - Linux
 

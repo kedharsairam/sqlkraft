@@ -1,23 +1,10 @@
 ---
 title: "Configure multiple subnets for availability"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  When an Always On availability group (AG) or failover cluster instance (FCI) spans more than
-
-  one site, each site usually has its own networking, which often means t
-tags:
-  - "linux-operations"
-  - "configure-multiple-subnets-for-availability"
-pubDate: 2025-12-01
+description: "on Linux When an Always On availability group (AG) or failover cluster instance (FCI) spans more than one site, each site usually has its own networking, which often means t"
+tags: ["linux-operations","configure-multiple-subnets-for-availability"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

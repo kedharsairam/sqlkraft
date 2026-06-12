@@ -5,48 +5,38 @@ category: "xquery"
 description: "XQuery Language Reference: XQueries Involving Order"
 syntax: |
   SELECT
-  Instructions.query(
-  '
-  declare namespace
-  AWMI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
-  works/ProductModelManuInstructions";
-  <ManuStep ProdModelID = "
-  {sql:column("Production.ProductModel.ProductModelID")}"
-  ProductModelName = "{ sql:column("Production.ProductModel.Name")
-  }" >
-  <Location>
-  { (//AWMI:root/AWMI:Location)[2]/@* }
-  <Steps>
-  { for $s in (//AWMI:root/AWMI:Location)[2]//AWMI:step
-  return
-  <Step>
-  { string($s) }
-  </Step>
-  }
-  </Steps>
-  </Location>
-  </ManuStep>
-  '
-  )
-  as
-  Result
-  FROM
-  Production.ProductModel
-  WHERE
-  ProductModelID=7
-tags:
-  - "xquery"
-  - "xqueries-involving-order"
-pubDate: 2025-12-01
+    Instructions.query(
+    '
+    declare namespace
+    AWMI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
+    works/ProductModelManuInstructions";
+    <ManuStep ProdModelID = "
+    {sql:column("Production.ProductModel.ProductModelID")}"
+    ProductModelName = "{ sql:column("Production.ProductModel.Name")
+    }" >
+    <Location>
+    { (//AWMI:root/AWMI:Location)[2]/@* }
+    <Steps>
+    { for $s in (//AWMI:root/AWMI:Location)[2]//AWMI:step
+    return
+    <Step>
+    { string($s) }
+    </Step>
+    }
+    </Steps>
+    </Location>
+    </ManuStep>
+    '
+    )
+    as
+    Result
+    FROM
+    Production.ProductModel
+    WHERE
+    ProductModelID=7
+tags: ["xquery","xqueries-involving-order"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Relational databases do not have a concept of sequence. For example, you cannot make a
 

@@ -3,23 +3,19 @@ title: "Keyboard Shortcuts for SQL Server Unit Test Designer"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  You can use the following keyboard shortcuts to navigate within the SQL Server Unit Test
-
-  Designer.
-
-  Move from the Transact-SQL editor to the navigation bar.
-
-  +
-
-  Move forward through navig
-tags:
-  - "ssb-diagnose"
-  - "keyboard-shortcuts-for-sql-server-unit-test-designer"
-pubDate: 2025-12-01
+  
+    You can use the following keyboard shortcuts to navigate within the SQL Server Unit Test
+  
+    Designer.
+  
+    Move from the Transact-SQL editor to the navigation bar.
+  
+    +
+  
+    Move forward through navig
+tags: ["ssb-diagnose","keyboard-shortcuts-for-sql-server-unit-test-designer"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 You can use the following keyboard shortcuts to navigate within the SQL Server Unit Test
 

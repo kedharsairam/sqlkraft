@@ -2,8 +2,8 @@
 title: "Symptoms"
 topic: "query-processing"
 description: "Periodic spikes in CPU were observed, which pushed the CPU utilization to nearly 100%. A"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Periodic spikes in CPU were observed, which pushed the CPU utilization to nearly 100%. A

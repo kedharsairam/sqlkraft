@@ -1,33 +1,10 @@
 ---
 title: "RPC:Starting Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The RPC:Starting event class indicates that a remote procedure call has started.
-
-  Description
-tags:
-  - "event-classes"
-  - "rpcstarting-event-class"
-pubDate: 2025-12-01
+description: "The RPC:Starting event class indicates that a remote procedure call has started. Description"
+tags: ["event-classes","rpcstarting-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The RPC:Starting event class indicates that a remote procedure call has started.
 

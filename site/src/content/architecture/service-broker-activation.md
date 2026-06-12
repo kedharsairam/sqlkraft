@@ -1,29 +1,10 @@
 ---
 title: "Service Broker Activation"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Service Broker activation helps applications to scale dynamically to match the message traffic.
-
-  In general, an application uses activa
-tags:
-  - "service-broker"
-  - "service-broker-activation"
-pubDate: 2025-12-01
+description: "09/11/2025 Service Broker activation helps applications to scale dynamically to match the message traffic. In general, an application uses activa"
+tags: ["service-broker","service-broker-activation"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Service Broker activation helps applications to scale dynamically to match the message traffic.
 

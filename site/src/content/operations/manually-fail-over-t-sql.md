@@ -1,33 +1,10 @@
 ---
 title: "Manually fail over (T-SQL)"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  When the mirrored database is synchronized (that is, when the database is in the
-
-  SYNCHRONIZED state), the database owner can initiate manual failover
-tags:
-  - "high-availability"
-  - "manually-fail-over-t-sql"
-pubDate: 2025-12-01
+description: "When the mirrored database is synchronized (that is, when the database is in the SYNCHRONIZED state), the database owner can initiate manual failover"
+tags: ["high-availability","manually-fail-over-t-sql"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 When the mirrored database is synchronized (that is, when the database is in the
 

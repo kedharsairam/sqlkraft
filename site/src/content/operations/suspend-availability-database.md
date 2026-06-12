@@ -1,33 +1,10 @@
 ---
 title: "Suspend availability database"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/04/2024
-
-  Applies to:
-
-  SQL Server
-
-  You can suspend an availability database in Always On availability groups by using SQL Server
-
-  Management Studio, Transact-SQL, or PowerShell in SQL Se
-tags:
-  - "high-availability"
-  - "suspend-availability-database"
-pubDate: 2025-12-01
+description: "You can suspend an availability database in Always On availability groups by using SQL Server Management Studio, Transact-SQL, or PowerShell in SQL Se"
+tags: ["high-availability","suspend-availability-database"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/04/2024
-
-SQL Server
 
 You can suspend an availability database in Always On availability groups by using SQL Server
 

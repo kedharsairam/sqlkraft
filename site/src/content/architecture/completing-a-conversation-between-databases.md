@@ -1,29 +1,10 @@
 ---
 title: "Completing a Conversation Between Databases"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This tutorial is intended for users who are new to Service Broker, but are familiar with database
-
-  concepts and Transact-SQL statements
-tags:
-  - "service-broker"
-  - "completing-a-conversation-between-databases"
-pubDate: 2025-12-01
+description: "09/11/2025 This tutorial is intended for users who are new to Service Broker, but are familiar with database concepts and Transact-SQL statements"
+tags: ["service-broker","completing-a-conversation-between-databases"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This tutorial is intended for users who are new to Service Broker, but are familiar with database
 

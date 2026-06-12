@@ -1,29 +1,10 @@
 ---
 title: "Shrink the tempdb database"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article discusses various methods that you can use to shrink the
-
-  database in SQL
-
-  Server.
-
-  You can use any of the following methods to change
-tags:
-  - "collation"
-  - "shrink-the-tempdb-database"
-pubDate: 2025-12-01
+description: "This article discusses various methods that you can use to shrink the database in SQL Server. You can use any of the following methods to change"
+tags: ["collation","shrink-the-tempdb-database"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article discusses various methods that you can use to shrink the
 

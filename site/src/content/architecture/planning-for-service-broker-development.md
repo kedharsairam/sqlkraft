@@ -3,21 +3,17 @@ title: "Planning for Service Broker Development"
 topic: "service-broker"
 description: |
   09/03/2025
-
-  Review the following as you design a Service Broker application:
-
-  The metrics concerning the type and volume of input and output expected from your
-
-  application.
-
-  The requirements for your
-tags:
-  - "service-broker"
-  - "planning-for-service-broker-development"
-pubDate: 2025-12-01
+  
+    Review the following as you design a Service Broker application:
+  
+    The metrics concerning the type and volume of input and output expected from your
+  
+    application.
+  
+    The requirements for your
+tags: ["service-broker","planning-for-service-broker-development"]
+pubDate: "2025-12-01"
 ---
-
-09/03/2025
 
 Review the following as you design a Service Broker application:
 

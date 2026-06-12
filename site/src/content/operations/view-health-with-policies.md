@@ -1,33 +1,10 @@
 ---
 title: "View health with policies"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/04/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to determine the operational health of an Always On availability
-
-  group by using an Always On policy in SQL Server Management
-tags:
-  - "high-availability"
-  - "view-health-with-policies"
-pubDate: 2025-12-01
+description: "This topic describes how to determine the operational health of an Always On availability group by using an Always On policy in SQL Server Management"
+tags: ["high-availability","view-health-with-policies"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/04/2024
-
-SQL Server
 
 This topic describes how to determine the operational health of an Always On availability
 

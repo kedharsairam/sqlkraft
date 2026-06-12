@@ -1,23 +1,10 @@
 ---
 title: "Troubleshoot containers"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article talks about common errors seen when deploying and using SQL Server Docker
-
-  containers, and provide troubleshooting techniques to help resolve the issue.
-tags:
-  - "linux-operations"
-  - "troubleshoot-containers"
-pubDate: 2025-12-01
+description: "on Linux This article talks about common errors seen when deploying and using SQL Server Docker containers, and provide troubleshooting techniques to help resolve the issue."
+tags: ["linux-operations","troubleshoot-containers"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

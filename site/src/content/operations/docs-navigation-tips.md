@@ -3,18 +3,16 @@ title: "Docs navigation tips"
 topic: "monitor"
 description: |
   SQL Server docs navigation guide
-
-  This article provides some tips and tricks for navigating the SQL Server technical
-
-  documentation space.
-
-  The SQL Server hub page can be found at
-
-  https://aka.ms/sqld
-tags:
-  - "monitor"
-  - "docs-navigation-tips"
-pubDate: 2025-12-01
+  
+    This article provides some tips and tricks for navigating the SQL Server technical
+  
+    documentation space.
+  
+    The SQL Server hub page can be found at
+  
+    https://aka.ms/sqld
+tags: ["monitor","docs-navigation-tips"]
+pubDate: "2025-12-01"
 ---
 
 docs navigation guide

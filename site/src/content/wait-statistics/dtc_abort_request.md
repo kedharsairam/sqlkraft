@@ -1,11 +1,11 @@
 ---
-name: DTC_ABORT_REQUEST
+name: "DTC_ABORT_REQUEST"
 title: "DTC Abort Request Wait"
-category: blocking
-severity: high
+category: "blocking"
+severity: "high"
 description: "Occurs when waiting for a DTC abort operation. Indicates distributed transactions that are failing to abort cleanly, often leading to lingering transactions."
-tags: ["dtc", "abort", "distributed"]
-pubDate: 2026-05-29
+tags: ["dtc","abort","distributed"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

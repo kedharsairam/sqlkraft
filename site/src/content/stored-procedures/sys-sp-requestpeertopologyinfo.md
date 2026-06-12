@@ -4,16 +4,16 @@ title: "sp_requestpeertopologyinfo"
 category: "general"
 description: "MSpeer_topologyresponse system table with information about a peer-to-peer transactional replication topology. Execute sp_gettopologyinfo to obtain information from the table in XML format."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_requestpeertopologyinfo
-  [ @publication = ]
-  N
-  'publication'
-  [ , [ @request_id = ] request_id
-  OUTPUT
-  ]
-  [ ; ]
+      [ @publication = ]
+      N
+      'publication'
+      [ , [ @request_id = ] request_id
+      OUTPUT
+      ]
+      [ ; ]
 ---
 
 ## Description

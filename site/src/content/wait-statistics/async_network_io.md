@@ -1,11 +1,11 @@
 ---
-name: ASYNC_NETWORK_IO
+name: "ASYNC_NETWORK_IO"
 title: "Async Network I/O Wait"
-category: latency
-severity: medium
+category: "latency"
+severity: "medium"
 description: "Occurs when the task is waiting for the network to send data to the client. High values often indicate the client application is not consuming results fast enough — the classic 'slow client' signal."
-tags: ["network", "client", "result-set"]
-pubDate: 2026-05-29
+tags: ["network","client","result-set"]
+pubDate: "2026-05-29"
 relatedScripts: ["diagnose-slow-client"]
 ---
 

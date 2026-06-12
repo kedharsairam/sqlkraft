@@ -3,25 +3,19 @@ name: "Overview: SQL Server"
 title: "Overview: SQL Server"
 category: "statements"
 description: "2016 (13.x) and later versions"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 2016 (13.x) and later versions
-
-Azure SQL Database
 
 Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Creates an external table.
 
@@ -34,8 +28,6 @@ In the following row, select the product name you're interested in, and only tha
 information is displayed.
 
 SQL Database
-
-Azure SQL Managed Instance
 
 Fabric Data Warehouse
 

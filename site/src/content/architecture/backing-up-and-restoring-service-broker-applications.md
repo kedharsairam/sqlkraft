@@ -1,29 +1,10 @@
 ---
 title: "Backing Up and Restoring Service Broker Applications"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Backup and restore procedures for a Service Broker service are integrated with the database in
-
-  which the service runs. If the service
-tags:
-  - "service-broker"
-  - "backing-up-and-restoring-service-broker-applications"
-pubDate: 2025-12-01
+description: "09/11/2025 Backup and restore procedures for a Service Broker service are integrated with the database in which the service runs. If the service"
+tags: ["service-broker","backing-up-and-restoring-service-broker-applications"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Backup and restore procedures for a Service Broker service are integrated with the database in
 

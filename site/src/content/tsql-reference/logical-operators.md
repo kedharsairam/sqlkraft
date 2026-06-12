@@ -3,8 +3,8 @@ name: "Logical operators"
 title: "Logical operators"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 ### Boolean
@@ -12,10 +12,6 @@ pubDate: 2026-05-29
 #### Operator
 
 #### Meaning
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Logical operators test for the truth of some condition. Logical operators, like comparison
 

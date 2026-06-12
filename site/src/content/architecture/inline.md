@@ -2,8 +2,8 @@
 title: "inline)"
 topic: "query-processing"
 description: ""
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 This might involve comparing any user-defined code construct that is stored in the

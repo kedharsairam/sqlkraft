@@ -1,45 +1,10 @@
 ---
 title: "Install & configure"
 topic: "monitor"
-description: |
-  Article
-
-  •
-
-  08/01/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  This article contains installation and config
-tags:
-  - "monitor"
-  - "install-configure-2"
-pubDate: 2025-12-01
+description: "This article contains installation and config"
+tags: ["monitor","install-configure-2"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-08/01/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -100,8 +65,6 @@ and select the ellipses button (
 , navigate to the database backup in
 
 the filesystem of the server, and select the backup. Select.
-
-SQL Server
 
 ```cmd
 WideWorldImportersDW

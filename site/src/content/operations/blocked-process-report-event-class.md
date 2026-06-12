@@ -1,35 +1,10 @@
 ---
 title: "Blocked Process Report Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event class indicates that a task has been blocked for more than a
-
-  specified amount of
-tags:
-  - "event-classes"
-  - "blocked-process-report-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","blocked-process-report-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

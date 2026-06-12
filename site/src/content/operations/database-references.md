@@ -1,31 +1,10 @@
 ---
 title: "Database references"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Database references in SQL projects enable you to incorporate objects that aren't included in
-tags:
-  - "ssms"
-  - "database-references"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssms","database-references"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Database references in SQL projects enable you to incorporate objects that aren't included in a
 

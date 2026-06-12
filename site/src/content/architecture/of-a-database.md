@@ -1,37 +1,10 @@
 ---
 title: "Of a Database"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft
-
-  Fabric
-
-  When you design a database, you mi
-tags:
-  - "collation"
-  - "of-a-database"
-pubDate: 2025-12-01
+description: ""
+tags: ["collation","of-a-database"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

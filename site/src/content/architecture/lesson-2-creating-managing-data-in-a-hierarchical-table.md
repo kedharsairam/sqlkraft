@@ -1,35 +1,10 @@
 ---
 title: "Lesson 2: Creating & Managing Data in a Hierarchical Table"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  In Lesson 1, you modified an existing table to use the
-
-  data type, and populated the
-
-  column
-tags:
-  - "tables"
-  - "lesson-2-creating-managing-data-in-a-hierarchical-table"
-pubDate: 2025-12-01
+description: "In Lesson 1, you modified an existing table to use the data type, and populated the column"
+tags: ["tables","lesson-2-creating-managing-data-in-a-hierarchical-table"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 In Lesson 1, you modified an existing table to use the
 

@@ -4,20 +4,20 @@ title: "sp_replmonitorsubscriptionpendingcmds"
 category: "general"
 description: "Returns information on the number of pending commands for a subscription to a transactional publication and a rough estimate of how much time it takes to process them. This stored procedure returns one row for each returned subscription. This stored procedure, which is used to monitor replication, is executed at the Distributor on the distribution database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_replmonitorsubscriptionpendingcmds [ @publisher = ]
-  'publisher'
-  , [ @publisher_db = ]
-  'publisher_db'
-  , [ @publication = ]
-  'publication'
-  , [ @subscriber = ]
-  'subscriber'
-  , [ @subscriber_db = ]
-  'subscriber_db'
-  , [ @subscription_type = ] subscription_type
-  , [ @subdb_version = ] subdb_version
+      'publisher'
+      , [ @publisher_db = ]
+      'publisher_db'
+      , [ @publication = ]
+      'publication'
+      , [ @subscriber = ]
+      'subscriber'
+      , [ @subscriber_db = ]
+      'subscriber_db'
+      , [ @subscription_type = ] subscription_type
+      , [ @subdb_version = ] subdb_version
 ---
 
 ## Description

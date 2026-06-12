@@ -1,37 +1,10 @@
 ---
 title: "Backward compatibility"
 topic: "migration"
-description: |
-  Article
-
-  •
-
-  02/26/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Backward compatibility is important to understand if you are upgrading, or if you have more
-
-  than one version of SQL Server
-tags:
-  - "migration"
-  - "backward-compatibility"
-pubDate: 2025-12-01
+description: "Backward compatibility is important to understand if you are upgrading, or if you have more than one version of SQL Server"
+tags: ["migration","backward-compatibility"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/26/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Backward compatibility is important to understand if you are upgrading, or if you have more
 
@@ -50,8 +23,6 @@ The Publisher and Distributor are always the same product:
 If the Publisher is SQL Server, the Distributor is SQL Server.
 
 If the Publisher is
-
-Azure SQL Managed Instance
 
 , the Distributor is Azure SQL Managed
 
@@ -87,13 +58,9 @@ Azure SQL Managed
 
 Instance
 
-Azure SQL Database
-
 Azure SQL Managed
 
 Instance
-
-Azure SQL Managed Instance
 
 ﾉ
 

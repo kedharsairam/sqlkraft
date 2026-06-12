@@ -1,29 +1,10 @@
 ---
 title: "Change edition"
 topic: "upgrade"
-description: |
-  08/22/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  SQL Server Setup supports edition upgrade among various editions of SQL Server. For
-
-  information about supported edition upgrade paths, see
-
-  Suppor
-tags:
-  - "upgrade"
-  - "change-edition"
-pubDate: 2025-12-01
+description: "08/22/2025 - Windows only SQL Server Setup supports edition upgrade among various editions of SQL Server. For information about supported edition upgrade paths, see Suppor"
+tags: ["upgrade","change-edition"]
+pubDate: "2025-12-01"
 ---
-
-08/22/2025
-
-SQL Server
 
 - Windows only
 

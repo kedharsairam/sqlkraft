@@ -4,15 +4,9 @@ title: "XQuery - Atomization"
 category: "xquery"
 description: "XQuery Language Reference: Atomization"
 syntax: "LaborHours"
-tags:
-  - "xquery"
-  - "atomization"
-pubDate: 2025-12-01
+tags: ["xquery","atomization"]
+pubDate: "2025-12-01"
 ---
-
-09/29/2025
-
-SQL Server
 
 Atomization is the process of extracting the typed value of an item. This process is implied
 

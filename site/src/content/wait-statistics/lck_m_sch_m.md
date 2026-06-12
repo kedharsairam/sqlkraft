@@ -1,11 +1,11 @@
 ---
-name: LCK_M_SCH_M
+name: "LCK_M_SCH_M"
 title: "Schema Modification Lock Wait"
-category: blocking
-severity: high
+category: "blocking"
+severity: "high"
 description: "Occurs when waiting for a schema modification (Sch-M) lock. Blocks nearly everything. Typically from DDL operations (ALTER TABLE, CREATE INDEX) running concurrently with active queries."
-tags: ["lock", "schema-modification", "ddl"]
-pubDate: 2026-05-29
+tags: ["lock","schema-modification","ddl"]
+pubDate: "2026-05-29"
 relatedScripts: ["monitor-ddl-blocking"]
 ---
 

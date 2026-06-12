@@ -3,18 +3,16 @@ title: "SQL projects tools"
 topic: "ssms"
 description: |
   SQL projects tools
-
-  Tooling for SQL projects is available in several development environments and command line
-
-  interfaces. The primary tools for SQL projects are the
-
-  SqlPackage
-
-  command line utility
-tags:
-  - "ssms"
-  - "sql-projects-tools"
-pubDate: 2025-12-01
+  
+    Tooling for SQL projects is available in several development environments and command line
+  
+    interfaces. The primary tools for SQL projects are the
+  
+    SqlPackage
+  
+    command line utility
+tags: ["ssms","sql-projects-tools"]
+pubDate: "2025-12-01"
 ---
 
 SQL projects tools

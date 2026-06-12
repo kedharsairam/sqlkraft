@@ -3,8 +3,8 @@ name: "Examples: Columnstore indexes"
 title: "Examples: Columnstore indexes"
 category: "statements"
 description: "These examples apply to columnstore indexes."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## A. REORGANIZE demo

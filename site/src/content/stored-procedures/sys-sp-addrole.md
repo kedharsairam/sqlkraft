@@ -4,17 +4,17 @@ title: "sp_addrole"
 category: "general"
 description: "Creates a new database role in the current database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_addrole
-  [ @rolename = ]
-  N
-  'rolename'
-  [ , [ @ownername = ]
-  N
-  'ownername'
-  ]
-  [ ; ]
+      [ @rolename = ]
+      N
+      'rolename'
+      [ , [ @ownername = ]
+      N
+      'ownername'
+      ]
+      [ ; ]
 ---
 
 ## Description

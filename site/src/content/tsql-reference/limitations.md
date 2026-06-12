@@ -3,8 +3,8 @@ name: "Limitations"
 title: "Limitations"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ### Example D
@@ -43,8 +43,6 @@ Dropping a database enable for Stretch Database doesn't remove the remote data. 
 
 to delete the remote data, you have to remove it manually.
 
-SQL Server
-
 ２
 
 Warning
@@ -60,8 +58,6 @@ and
 in the same batch, to avoid another connection
 
 claiming single user session allowed. For more information, see.
-
-SQL Server
 
 ### db_owner
 

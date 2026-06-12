@@ -2,8 +2,8 @@
 title: "data files"
 topic: "query-processing"
 description: "The number of files depends on the number of (logical) processors on the machine. As a"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The number of files depends on the number of (logical) processors on the machine. As a

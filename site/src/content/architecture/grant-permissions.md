@@ -1,37 +1,10 @@
 ---
 title: "Grant permissions"
 topic: "spatial-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft
-
-  Fabric
-
-  This article describes how to gran
-tags:
-  - "spatial-data"
-  - "grant-permissions"
-pubDate: 2025-12-01
+description: ""
+tags: ["spatial-data","grant-permissions"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

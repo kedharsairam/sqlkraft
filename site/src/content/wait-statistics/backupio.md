@@ -1,11 +1,11 @@
 ---
-name: BACKUPIO
+name: "BACKUPIO"
 title: "Backup I/O Wait"
-category: io
-severity: medium
+category: "io"
+severity: "medium"
 description: "Occurs when a backup task waits for I/O on the backup device. High values indicate slow backup target (tape, network share, slow disk) or compression bottleneck."
-tags: ["io", "backup", "compression"]
-pubDate: 2026-05-29
+tags: ["io","backup","compression"]
+pubDate: "2026-05-29"
 relatedScripts: ["troubleshoot-slow-backup"]
 ---
 

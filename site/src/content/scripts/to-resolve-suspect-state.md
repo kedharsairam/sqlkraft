@@ -2,19 +2,19 @@
 name: "To Resolve Suspect State"
 title: "To Resolve Suspect State"
 description: "Steps to Resolve Suspect State:"
-category: backup-restore
+category: "backup-restore"
 tags: ["backup-restore"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql
 --Steps to Resolve Suspect State:
 --1--check the status of the database using 'databasepropertyex'
-		--select databasepropertyex('databasename', 'status')
+    --select databasepropertyex('databasename', 'status')
 --2--try resetting the status using 'sp_resetstatus'
-		--sp_resetstatus databasename
+    --sp_resetstatus databasename
 --3--try putting in 'emergency mode' and 'single user mode'
-		--ALTER DATABASE databasename SET EMERGENCY
+    --ALTER DATABASE databasename SET EMERGENCY
 --4--then check the integrity with 'dbcc checkdb'
 --5--if corruption found, check backup is available or not and then take action.
 

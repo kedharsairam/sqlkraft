@@ -1,35 +1,10 @@
 ---
 title: "Mirroring States"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  During a database mirroring session, the mirrored database is always in a specific state (the
-
-  mirroring state
-
-  ). The state of the database reflects t
-tags:
-  - "high-availability"
-  - "mirroring-states"
-pubDate: 2025-12-01
+description: "During a database mirroring session, the mirrored database is always in a specific state (the mirroring state ). The state of the database reflects t"
+tags: ["high-availability","mirroring-states"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 During a database mirroring session, the mirrored database is always in a specific state (the
 

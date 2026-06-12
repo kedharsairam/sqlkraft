@@ -1,12 +1,12 @@
 ---
-name: "2008"
+name: 2008
 title: "Error 2008"
 errorNumber: 2008
 severity: "medium"
 category: "io"
 description: "committed process memory. As a result this warning is printed."
-tags: ["io", "severity-medium"]
-pubDate: 2026-05-29
+tags: ["io","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

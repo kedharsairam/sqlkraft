@@ -4,12 +4,12 @@ title: "sp_trace_setstatus"
 category: "general"
 description: "Modifies the current state of the specified trace. The ID of the trace to be modified. , with no default. The user employs this value to identify, modify, and control the trace. For information about retrieving the This feature will be removed in a future version of SQL Server."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_trace_setstatus
-  [ @traceid = ] traceid
-  , [ @status = ] status
-  [ ; ]
+      [ @traceid = ] traceid
+      , [ @status = ] status
+      [ ; ]
 ---
 
 ## Description

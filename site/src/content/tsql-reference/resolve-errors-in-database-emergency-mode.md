@@ -3,8 +3,8 @@ name: "Resolve errors in database emergency mode"
 title: "Resolve errors in database emergency mode"
 category: "predicates"
 description: "detects a corruption error."
-tags: ["tsql", "predicates"]
-pubDate: 2026-05-29
+tags: ["tsql","predicates"]
+pubDate: "2026-05-29"
 ---
 
 A stack dump (
@@ -14,8 +14,6 @@ A stack dump (
 ,
 
 ) is created in the
-
-SQL Server
 
 directory whenever
 

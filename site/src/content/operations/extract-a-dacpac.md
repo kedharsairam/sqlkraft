@@ -1,35 +1,10 @@
 ---
 title: "Extract a dacpac"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The extraction process creates a DAC package file (
-
-  ) that contains definitions of the
-
-  data
-tags:
-  - "ssms"
-  - "extract-a-dacpac"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssms","extract-a-dacpac"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The extraction process creates a DAC package file (
 

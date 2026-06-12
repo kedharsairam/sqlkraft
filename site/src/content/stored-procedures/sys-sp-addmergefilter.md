@@ -4,29 +4,29 @@ title: "sp_addmergefilter"
 category: "general"
 description: "Adds a new merge filter to create a partition based on a join with another table. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_addmergefilter
-  [ @publication = ]
-  N
-  'publication'
-  , [ @article = ]
-  N
-  'article'
-  , [ @filtername = ]
-  N
-  'filtername'
-  , [ @join_articlename = ]
-  N
-  'join_articlename'
-  , [ @join_filterclause = ]
-  N
-  'join_filterclause'
-  [ , [ @join_unique_key = ] join_unique_key ]
-  [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
-  [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
-  [ , [ @filter_type = ] filter_type ]
-  [ ; ]
+      [ @publication = ]
+      N
+      'publication'
+      , [ @article = ]
+      N
+      'article'
+      , [ @filtername = ]
+      N
+      'filtername'
+      , [ @join_articlename = ]
+      N
+      'join_articlename'
+      , [ @join_filterclause = ]
+      N
+      'join_filterclause'
+      [ , [ @join_unique_key = ] join_unique_key ]
+      [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
+      [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
+      [ , [ @filter_type = ] filter_type ]
+      [ ; ]
 ---
 
 ## Description

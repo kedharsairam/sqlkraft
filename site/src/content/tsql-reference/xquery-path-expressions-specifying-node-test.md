@@ -4,19 +4,9 @@ title: "XQuery - Path Expressions - Specifying Node Test"
 category: "xquery"
 description: "XQuery Language Reference: Path Expressions - Specifying Node Test"
 syntax: "/child::ProductDescription"
-tags:
-  - "xquery"
-  - "path-expressions-specifying-node-test"
-pubDate: 2025-12-01
+tags: ["xquery","path-expressions-specifying-node-test"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/17/2024
-
-SQL Server
 
 An axis step in a path expression includes the following components:
 

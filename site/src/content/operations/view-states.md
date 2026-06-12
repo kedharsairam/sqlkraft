@@ -1,37 +1,10 @@
 ---
 title: "View states"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  During a database mirroring session, you can view the status on the
-
-  page of the
-
-  dialog box.
-
-  1. After connecting to the principal server instance, in
-tags:
-  - "high-availability"
-  - "view-states"
-pubDate: 2025-12-01
+description: "During a database mirroring session, you can view the status on the page of the dialog box. 1."
+tags: ["high-availability","view-states"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 During a database mirroring session, you can view the status on the
 

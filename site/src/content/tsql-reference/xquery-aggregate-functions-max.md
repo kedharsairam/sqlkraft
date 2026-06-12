@@ -4,19 +4,9 @@ title: "XQuery - Aggregate Functions - max"
 category: "xquery"
 description: ""
 syntax: "fn:max($arg as xdt:anyAtomicType*) as xdt:anyAtomicType?"
-tags:
-  - "xquery"
-  - "aggregate-functions-max"
-pubDate: 2025-12-01
+tags: ["xquery","aggregate-functions-max"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Returns from a sequence of atomic values,
 

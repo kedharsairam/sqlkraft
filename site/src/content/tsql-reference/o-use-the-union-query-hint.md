@@ -3,8 +3,8 @@ name: "O. Use the UNION query hint"
 title: "O. Use the UNION query hint"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 The following example shows how the

@@ -2,8 +2,8 @@
 title: "Use included columns in nonclustered indexes"
 topic: "index-architecture"
 description: ""
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Nonclustered indexes have one row in

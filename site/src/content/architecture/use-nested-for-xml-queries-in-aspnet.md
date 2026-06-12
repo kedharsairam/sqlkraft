@@ -1,33 +1,10 @@
 ---
 title: "Use Nested FOR XML Queries in ASP.NET"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  In this example, an ASP.NET application returns XML to a browser by executing a stored
-
-  proce
-tags:
-  - "xml-data"
-  - "use-nested-for-xml-queries-in-aspnet"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","use-nested-for-xml-queries-in-aspnet"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 In this example, an ASP.NET application returns XML to a browser by executing a stored
 

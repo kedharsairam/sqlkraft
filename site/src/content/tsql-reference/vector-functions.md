@@ -3,8 +3,8 @@ name: "Vector functions"
 title: "Vector functions"
 category: "statements"
 description: "2025 (17.x)"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ### vector
@@ -17,13 +17,9 @@ pubDate: 2026-05-29
 
 2025 (17.x)
 
-Azure SQL Database
-
 Azure SQL Managed
 
 Instance
-
-SQL database in Microsoft Fabric
 
 The following scalar functions perform operations on
 

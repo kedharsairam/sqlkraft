@@ -4,10 +4,10 @@ title: "sp_help_agent_parameter"
 category: "general"
 description: "Returns all the parameters of a profile from the procedure is executed at the Distributor where the agent is running, on any database. The ID of the profile from the , which returns all parameters."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_help_agent_parameter [ [ @profile_id = ] profile_id ]
-  [ ; ]
+      [ ; ]
 ---
 
 ## Description

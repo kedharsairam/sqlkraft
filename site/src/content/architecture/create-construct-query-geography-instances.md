@@ -1,35 +1,10 @@
 ---
 title: "Create, Construct, & Query geography Instances"
 topic: "spatial-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL analytics endpoint in Microsoft Fabric
-
-  Warehouse in Microsoft Fabric
-
-  SQL
-
-  database in Microsoft Fabric
-
-  The geography spa
-tags:
-  - "spatial-data"
-  - "create-construct-query-geography-instances"
-pubDate: 2025-12-01
+description: ""
+tags: ["spatial-data","create-construct-query-geography-instances"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 SQL analytics endpoint in Microsoft Fabric
 

@@ -3,8 +3,8 @@ name: "sys.database_event_session_fields"
 title: "sys.database_event_session_fields (Azure SQL Database)"
 category: "compatibility"
 description: "2016 (13.x) and later versions Azure SQL Database Azure SQL Managed SQL database in Microsoft Fabric dynamic management view (DMV) returns a row for each customizable column that was explicitly set on in a database-scoped event session."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "sys.database_event_session_fields"
 ---
 
@@ -20,11 +20,7 @@ syntax: "sys.database_event_session_fields"
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure SQL Managed
-
-SQL database in Microsoft Fabric
 
 dynamic management view (DMV) returns a row for each
 

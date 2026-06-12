@@ -1,41 +1,10 @@
 ---
 title: "Some synchronous replicas are not synchronized"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  : Synchronous Replicas Data Synchronization State
-
-  : Some synchronous replicas are not synchronized.
-
-  :
-
-  Warning
-
-  : Availability group
-
-  This policy rol
-tags:
-  - "high-availability"
-  - "some-synchronous-replicas-are-not-synchronized"
-pubDate: 2025-12-01
+description: ": Synchronous Replicas Data Synchronization State : Some synchronous replicas are not synchronized."
+tags: ["high-availability","some-synchronous-replicas-are-not-synchronized"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 : Synchronous Replicas Data Synchronization State
 

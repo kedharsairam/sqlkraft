@@ -1,37 +1,12 @@
 ---
 title: "SQL Server error log"
 topic: "high-availability"
-description: |
-  SQL Server error log (Always On
-
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  The SQL Server error log reports events affecting Always On Availability Groups, such as:
-
-  Communication with the Wind
-tags:
-  - "high-availability"
-  - "sql-server-error-log"
-pubDate: 2025-12-01
+description: "error log (Always On The SQL Server error log reports events affecting Always On Availability Groups, such as: Communication with the Wind"
+tags: ["high-availability","sql-server-error-log"]
+pubDate: "2025-12-01"
 ---
 
 error log (Always On
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 The SQL Server error log reports events affecting Always On Availability Groups, such as:
 

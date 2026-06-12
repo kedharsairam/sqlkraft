@@ -4,10 +4,10 @@ title: "sp_change_feed_disable_db"
 category: "general"
 description: "2022 (16.x) and later versions Azure SQL Database SQL Managed Instance Azure Synapse Analytics Mirrored databases in Microsoft SQL database in Microsoft Fabric Disable the change feed at the database level, and then the metadata for all the associated This system stored procedure is used for: SQL database in Microsoft Fabric Microsoft Fabric mirrored databases Azure Synapse Link Transac"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sys.sp_change_feed_disable_db
-  [ ; ]
+      [ ; ]
 ---
 
 ## Description
@@ -25,21 +25,13 @@ sys.sp_change_feed_disable_db
 
 2022 (16.x) and later versions
 
-Azure SQL Database
-
 SQL Managed Instance
 
-Azure Synapse Analytics
-
 Mirrored databases in Microsoft
-
-SQL database in Microsoft Fabric
 
 Disable the change feed at the database level, and then the metadata for all the associated
 
 This system stored procedure is used for:
-
-SQL database in Microsoft Fabric
 
 Microsoft Fabric mirrored databases
 

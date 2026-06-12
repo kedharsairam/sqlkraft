@@ -2,9 +2,9 @@
 name: "100_ Memory or High Memory Utilization"
 title: "100_ Memory or High Memory Utilization"
 description: "first add these counters in performance monitor"
-category: troubleshooting
-tags: ["memory", "troubleshooting"]
-pubDate: 2025-03-15
+category: "troubleshooting"
+tags: ["memory","troubleshooting"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

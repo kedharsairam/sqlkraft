@@ -1,29 +1,10 @@
 ---
 title: "Troubleshoot connectivity to DPS or telemetry endpoints"
 topic: "azure-synapse"
-description: |
-  06/30/2025
-
-  Applies to:
-
-  SQL Server
-
-  In addition to the usual endpoints, the Azure Arc extension for SQL Server connects to two
-
-  other endpoints:
-
-  Data processing service (DPS) endpoint
-
-  The collected
-tags:
-  - "azure-synapse"
-  - "troubleshoot-connectivity-to-dps-or-telemetry-endpoints"
-pubDate: 2025-12-01
+description: "06/30/2025 In addition to the usual endpoints, the Azure Arc extension for SQL Server connects to two other endpoints: Data processing service (DPS) endpoint The collected"
+tags: ["azure-synapse","troubleshoot-connectivity-to-dps-or-telemetry-endpoints"]
+pubDate: "2025-12-01"
 ---
-
-06/30/2025
-
-SQL Server
 
 In addition to the usual endpoints, the Azure Arc extension for SQL Server connects to two
 

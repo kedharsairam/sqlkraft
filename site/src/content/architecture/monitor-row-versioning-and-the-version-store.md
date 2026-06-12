@@ -2,8 +2,8 @@
 title: "Monitor row versioning and the version store"
 topic: "io-fundamentals"
 description: "Enough disk space should be allocated to accommodate this requirement."
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Enough disk space should be allocated to accommodate this requirement.

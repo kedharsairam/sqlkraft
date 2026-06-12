@@ -1,31 +1,10 @@
 ---
 title: "With included columns"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article describes how to add included (or nonkey) columns to extend the functionality of
-tags:
-  - "filestream"
-  - "with-included-columns"
-pubDate: 2025-12-01
+description: ""
+tags: ["filestream","with-included-columns"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article describes how to add included (or nonkey) columns to extend the functionality of
 

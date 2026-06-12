@@ -1,31 +1,10 @@
 ---
 title: "Of a clustered index"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  You can use the following steps to estimate the amount of space that is required to store dat
-tags:
-  - "collation"
-  - "of-a-clustered-index"
-pubDate: 2025-12-01
+description: ""
+tags: ["collation","of-a-clustered-index"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 You can use the following steps to estimate the amount of space that is required to store data
 

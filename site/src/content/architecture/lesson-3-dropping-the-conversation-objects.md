@@ -1,31 +1,10 @@
 ---
 title: "Lesson 3: Dropping the Conversation Objects"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  In this lesson, you learn to drop the objects that enabled a database to support a conversation
-
-  in the database.
-
-  Copy and paste the f
-tags:
-  - "service-broker"
-  - "lesson-3-dropping-the-conversation-objects"
-pubDate: 2025-12-01
+description: "09/11/2025 In this lesson, you learn to drop the objects that enabled a database to support a conversation in the database. Copy and paste the f"
+tags: ["service-broker","lesson-3-dropping-the-conversation-objects"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 In this lesson, you learn to drop the objects that enabled a database to support a conversation
 

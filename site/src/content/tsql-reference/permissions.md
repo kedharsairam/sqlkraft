@@ -3,8 +3,8 @@ name: "Permissions"
 title: "Permissions"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 For more information, see

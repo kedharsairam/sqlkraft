@@ -1,11 +1,11 @@
 ---
-name: BROKER_TRANSMITTER
+name: "BROKER_TRANSMITTER"
 title: "Broker Transmitter Wait"
-category: baseline
-severity: low
+category: "baseline"
+severity: "low"
 description: "Occurs when the Service Broker transmitter is waiting to send messages across the network. Normal at low levels; high values indicate network issues between broker endpoints."
-tags: ["service-broker", "transmit", "network"]
-pubDate: 2026-05-29
+tags: ["service-broker","transmit","network"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

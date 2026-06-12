@@ -4,35 +4,35 @@ title: "sp_addlogreader_agent"
 category: "general"
 description: "Adds a Log Reader agent for a given database. This stored procedure is executed at the Publisher on the publication database. The login for the Windows account under which the agent runs. This Windows account is always used for agent connections to the Distributor. On Azure SQL Managed Instance, use a SQL Server account. When configuring a Publisher with a remote"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_addlogreader_agent
-  [ [ @job_login = ]
-  N
-  'job_login'
-  ]
-  [ , [ @job_password = ]
-  N
-  'job_password'
-  ]
-  [ , [ @job_name = ]
-  N
-  'job_name'
-  ]
-  [ , [ @publisher_security_mode = ] publisher_security_mode ]
-  [ , [ @publisher_login = ]
-  N
-  'publisher_login'
-  ]
-  [ , [ @publisher_password = ]
-  N
-  'publisher_password'
-  ]
-  [ , [ @publisher = ]
-  N
-  'publisher'
-  ]
-  [ ; ]
+      [ [ @job_login = ]
+      N
+      'job_login'
+      ]
+      [ , [ @job_password = ]
+      N
+      'job_password'
+      ]
+      [ , [ @job_name = ]
+      N
+      'job_name'
+      ]
+      [ , [ @publisher_security_mode = ] publisher_security_mode ]
+      [ , [ @publisher_login = ]
+      N
+      'publisher_login'
+      ]
+      [ , [ @publisher_password = ]
+      N
+      'publisher_password'
+      ]
+      [ , [ @publisher = ]
+      N
+      'publisher'
+      ]
+      [ ; ]
 ---
 
 ## Description

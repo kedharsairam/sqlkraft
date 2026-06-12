@@ -4,16 +4,16 @@ title: "sys.sp_cdc_help_change_data_capture"
 category: "general"
 description: "Returns the change data capture configuration for each table enabled for change data capture in the current database. Up to two rows can be returned for each source table, one row for each capture instance. Change data capture isn't available in every edition of SQL Server."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sys.sp_cdc_help_change_data_capture
-  [ [ @source_schema = ]
-  'source_schema'
-  ]
-  [ , [ @source_name = ]
-  'source_name'
-  ]
-  [ ; ]
+      [ [ @source_schema = ]
+      'source_schema'
+      ]
+      [ , [ @source_name = ]
+      'source_name'
+      ]
+      [ ; ]
 ---
 
 ## Description

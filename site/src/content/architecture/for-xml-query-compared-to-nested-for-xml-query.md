@@ -1,47 +1,10 @@
 ---
 title: "FOR XML Query Compared to Nested FOR XML Query"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  05/24/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  This article compares a single-level
-
-  query to a nested
-
-  query. One of the
-
-  benefits of using nested
-
-  q
-tags:
-  - "xml-data"
-  - "for-xml-query-compared-to-nested-for-xml-query"
-pubDate: 2025-12-01
+description: "This article compares a single-level query to a nested query. One of the benefits of using nested q"
+tags: ["xml-data","for-xml-query-compared-to-nested-for-xml-query"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-05/24/2024
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This article compares a single-level
 

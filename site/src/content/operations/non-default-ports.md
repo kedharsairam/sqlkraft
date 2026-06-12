@@ -1,25 +1,10 @@
 ---
 title: "Non-default ports"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  You can configure replication with SQL Server on Linux instances listening on any port configured
-
-  with the
-
-  mssql-conf setting. The port needs to be appended to the
-tags:
-  - "linux-operations"
-  - "non-default-ports"
-pubDate: 2025-12-01
+description: "on Linux You can configure replication with SQL Server on Linux instances listening on any port configured with the mssql-conf setting."
+tags: ["linux-operations","non-default-ports"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

@@ -2,17 +2,9 @@
 title: "Windows Virtual Memory Manager"
 topic: "memory-management"
 description: ""
-tags: ["memory-management", "architecture"]
-pubDate: 2026-05-29
+tags: ["memory-management","architecture"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

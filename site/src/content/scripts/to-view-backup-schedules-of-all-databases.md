@@ -2,9 +2,9 @@
 name: "To View Backup Schedules of all Databases"
 title: "To View Backup Schedules of all Databases"
 description: "diagnostic script for backup-restore operations."
-category: backup-restore
-tags: ["backup", "backup-restore", "database"]
-pubDate: 2025-03-15
+category: "backup-restore"
+tags: ["backup","backup-restore","database"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

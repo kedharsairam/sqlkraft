@@ -2,9 +2,9 @@
 name: "To Get Always on Availability Group Listener De"
 title: "To Get Always on Availability Group Listener De"
 description: "diagnostic script for high-availability operations."
-category: high-availability
-tags: ["availability-group", "high-availability"]
-pubDate: 2025-03-15
+category: "high-availability"
+tags: ["availability-group","high-availability"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

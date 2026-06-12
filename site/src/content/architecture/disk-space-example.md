@@ -1,31 +1,10 @@
 ---
 title: "Disk space example"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Whenever an index is created, rebuilt, or dropped, disk space for both the old (source) and n
-tags:
-  - "filestream"
-  - "disk-space-example"
-pubDate: 2025-12-01
+description: "Whenever an index is created, rebuilt, or dropped, disk space for both the old (source) and n"
+tags: ["filestream","disk-space-example"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Whenever an index is created, rebuilt, or dropped, disk space for both the old (source) and new
 

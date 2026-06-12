@@ -2,8 +2,8 @@
 title: "Calculate waits over a time period"
 topic: "io-fundamentals"
 description: "The following script calculates and returns latch waits over a time period."
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The following script calculates and returns latch waits over a time period.

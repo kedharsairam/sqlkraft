@@ -3,8 +3,8 @@ name: "sys.destination_data_spaces"
 title: "sys.destination_data_spaces"
 category: "compatibility"
 description: "Contains a row for each data space destination of a partition scheme."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "sys.partition_schemes"
 ---
 

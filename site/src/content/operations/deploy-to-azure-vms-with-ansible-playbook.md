@@ -1,27 +1,12 @@
 ---
 title: "Deploy to Azure VMs with Ansible playbook"
 topic: "linux-operations"
-description: |
-  Quickstart: Deploy SQL Server on Linux
-
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This quickstart takes you through the steps to automate a SQL Server on Linux deployment on
-
-  Azure Virtual Machines, using an
-tags:
-  - "linux-operations"
-  - "deploy-to-azure-vms-with-ansible-playbook"
-pubDate: 2025-12-01
+description: ""
+tags: ["linux-operations","deploy-to-azure-vms-with-ansible-playbook"]
+pubDate: "2025-12-01"
 ---
 
 Quickstart: Deploy SQL Server on Linux
-
-SQL Server
 
 on Linux
 

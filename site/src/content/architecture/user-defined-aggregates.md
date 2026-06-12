@@ -1,33 +1,10 @@
 ---
 title: "User-defined aggregates"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  Aggregate functions perform a calculation on a set of values and return a single value.
-
-  Traditionally, SQL Server supported only built-in aggregate fu
-tags:
-  - "clr-integration"
-  - "user-defined-aggregates"
-pubDate: 2025-12-01
+description: "Aggregate functions perform a calculation on a set of values and return a single value."
+tags: ["clr-integration","user-defined-aggregates"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 Aggregate functions perform a calculation on a set of values and return a single value.
 

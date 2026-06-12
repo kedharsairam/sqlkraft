@@ -1,23 +1,10 @@
 ---
 title: "Contained databases"
 topic: "high-availability"
-description: |
-  Applies to:
-
-  SQL Server
-
-  This article contains information about the using a contained database with Always On
-
-  availability groups in SQL Server.
-
-  Before adding a contained database to an availabilit
-tags:
-  - "high-availability"
-  - "contained-databases"
-pubDate: 2025-12-01
+description: "This article contains information about the using a contained database with Always On availability groups in SQL Server. Before adding a contained database to an availabilit"
+tags: ["high-availability","contained-databases"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 This article contains information about the using a contained database with Always On
 

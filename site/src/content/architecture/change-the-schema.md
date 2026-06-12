@@ -1,39 +1,16 @@
 ---
 title: "Change the schema"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Use the
-
-  statement to add, alter, or remove a column.
-
-  permis
-tags:
-  - "tables"
-  - "change-the-schema"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later versions Azure SQL Managed Instance Use the statement to add, alter, or remove a column. permis"
+tags: ["tables","change-the-schema"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Use the
 

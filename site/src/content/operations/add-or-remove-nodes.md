@@ -1,33 +1,10 @@
 ---
 title: "Add or remove nodes"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Use this procedure to manage nodes to an existing SQL Server failover cluster instance.
-
-  To update or remove a SQL Server FCI, you must be a local admi
-tags:
-  - "high-availability"
-  - "add-or-remove-nodes"
-pubDate: 2025-12-01
+description: "Use this procedure to manage nodes to an existing SQL Server failover cluster instance."
+tags: ["high-availability","add-or-remove-nodes"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 Use this procedure to manage nodes to an existing SQL Server failover cluster instance.
 

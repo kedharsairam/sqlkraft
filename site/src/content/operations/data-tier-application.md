@@ -3,20 +3,18 @@ title: "Data-tier application"
 topic: "profiler"
 description: |
   The Data-tier Application experience provides an easy-to-use experience to deploy and extract
-
-  files and import and export
-
-  files.
-
-  This experience makes it easier to manage
-
-  and
-
-  files. It simplifies
-tags:
-  - "profiler"
-  - "data-tier-application"
-pubDate: 2025-12-01
+  
+    files and import and export
+  
+    files.
+  
+    This experience makes it easier to manage
+  
+    and
+  
+    files. It simplifies
+tags: ["profiler","data-tier-application"]
+pubDate: "2025-12-01"
 ---
 
 The Data-tier Application experience provides an easy-to-use experience to deploy and extract

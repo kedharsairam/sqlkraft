@@ -1,37 +1,10 @@
 ---
 title: "Wizard"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  06/25/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to use the
-
-  in SQL Server Management
-
-  Studio to create and configure an Always On availability group in SQL Server. An
-
-  availa
-tags:
-  - "high-availability"
-  - "wizard"
-pubDate: 2025-12-01
+description: "This topic describes how to use the in SQL Server Management Studio to create and configure an Always On availability group in SQL Server. An availa"
+tags: ["high-availability","wizard"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-06/25/2024
-
-SQL Server
 
 This topic describes how to use the
 

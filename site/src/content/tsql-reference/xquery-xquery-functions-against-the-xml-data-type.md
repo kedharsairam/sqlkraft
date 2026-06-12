@@ -3,15 +3,9 @@ name: "xquery-xquery-functions-against-the-xml-data-type"
 title: "XQuery - XQuery Functions against the xml Data Type"
 category: "xquery"
 description: "XQuery Language Reference: XQuery Functions against the xml Data Type"
-tags:
-  - "xquery"
-  - "xquery-functions-against-the-xml-data-type"
-pubDate: 2025-12-01
+tags: ["xquery","xquery-functions-against-the-xml-data-type"]
+pubDate: "2025-12-01"
 ---
-
-08/21/2025
-
-SQL Server
 
 This topic and its subtopics describe the functions you can use when specifying XQuery against the
 

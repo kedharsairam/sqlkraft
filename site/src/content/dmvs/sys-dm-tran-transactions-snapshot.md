@@ -3,8 +3,8 @@ name: "sys.dm_tran_transactions_snapshot"
 title: "sys.dm_tran_transactions_snapshot"
 category: "io"
 description: "Transaction sequence number (XSN) of a snapshot transaction. Snapshot ID for each Transact-SQL statement started under read- committed using row versioning. This value is used to generate a transactionally consistent view of the database supporting each query that is being run under read-committed using row Transaction sequence number of a transaction that was active when the snapshot transaction"
-tags: ["io", "dmv"]
-pubDate: 2026-05-29
+tags: ["io","dmv"]
+pubDate: "2026-05-29"
 syntax: "transaction_sequence_num"
 ---
 

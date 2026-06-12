@@ -3,8 +3,8 @@ name: "Syntax Summary"
 title: "Syntax Summary"
 category: "statements"
 description: "CREATE USER can't be used to create a guest user because the guest user already exists inside"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 CREATE USER can't be used to create a guest user because the guest user already exists inside

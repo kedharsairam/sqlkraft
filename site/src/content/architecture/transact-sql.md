@@ -2,8 +2,8 @@
 title: "Transact-SQL"
 topic: "query-processing"
 description: "The use of the vardecimal storage format."
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Deprecated feature

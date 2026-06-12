@@ -1,12 +1,13 @@
 ---
-name: "7848"
+name: 7848
 title: "Error 7848"
 errorNumber: 7848
 severity: "medium"
 category: "io"
-description: 'Description 7848 15 No An invalid or unsupported localeId was specified for parameter "%.*ls". 7849 15 No Invalid sqlCompareOptions were specified for parameter "%.*ls". 7850 16 No The SQL Server Serv'
-tags: ["io", "severity-medium"]
-pubDate: 2026-05-29
+description: |
+  'Description 7848 15 No An invalid or unsupported localeId was specified for parameter "%.*ls". 7849 15 No Invalid sqlCompareOptions were specified for parameter "%.*ls". 7850 16 No The SQL Server Serv'
+tags: ["io","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

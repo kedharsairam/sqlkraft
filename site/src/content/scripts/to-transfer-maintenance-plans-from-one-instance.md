@@ -2,9 +2,9 @@
 name: "To Transfer Maintenance Plans from One Instance"
 title: "To Transfer Maintenance Plans from One Instance"
 description: ""
-category: migration
+category: "migration"
 tags: ["migration"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

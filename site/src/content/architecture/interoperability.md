@@ -1,33 +1,10 @@
 ---
 title: "Interoperability"
 topic: "filestream"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Because FILESTREAM data is in the file system, this topic provides some considerations,
-
-  guidelines, and limitations for using FILESTREAM with the foll
-tags:
-  - "filestream"
-  - "interoperability"
-pubDate: 2025-12-01
+description: ""
+tags: ["filestream","interoperability"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 Because FILESTREAM data is in the file system, this topic provides some considerations,
 

@@ -3,8 +3,8 @@ name: "Q. Use SELECT INTO with UNION"
 title: "Q. Use SELECT INTO with UNION"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 In the following example, the

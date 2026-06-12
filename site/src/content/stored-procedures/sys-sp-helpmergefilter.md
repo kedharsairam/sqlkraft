@@ -4,22 +4,22 @@ title: "sp_helpmergefilter"
 category: "general"
 description: "Returns information about merge filters. This stored procedure is executed at the Publisher on , which returns the names of all The name of the filter about which to return information."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_helpmergefilter
-  [ @publication = ]
-  N
-  'publication'
-  [ , [ @article = ]
-  N
-  'article'
-  ]
-  [ , [ @filtername = ]
-  N
-  'filtername'
-  ]
-  [ , [ @filter_type_bm = ] filter_type_bm ]
-  [ ; ]
+      [ @publication = ]
+      N
+      'publication'
+      [ , [ @article = ]
+      N
+      'article'
+      ]
+      [ , [ @filtername = ]
+      N
+      'filtername'
+      ]
+      [ , [ @filter_type_bm = ] filter_type_bm ]
+      [ ; ]
 ---
 
 ## Description

@@ -1,11 +1,11 @@
 ---
-name: IO_COMPLETION
+name: "IO_COMPLETION"
 title: "I/O Completion Wait"
-category: io
-severity: medium
+category: "io"
+severity: "medium"
 description: "Occurs when waiting for synchronous I/O operations to finish. Often related to network I/O, backup/restore, or bulk insert operations."
-tags: ["io", "sync", "backup"]
-pubDate: 2026-05-29
+tags: ["io","sync","backup"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

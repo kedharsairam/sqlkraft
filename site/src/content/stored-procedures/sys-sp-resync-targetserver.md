@@ -4,7 +4,7 @@ title: "sp_resync_targetserver"
 category: "general"
 description: "Resynchronizes all multiserver jobs in the specified target server."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_post_msx_operation"
 ---
 

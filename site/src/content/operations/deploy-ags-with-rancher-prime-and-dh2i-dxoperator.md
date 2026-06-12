@@ -1,23 +1,10 @@
 ---
 title: "Deploy AGs with Rancher Prime and DH2i DxOperator"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This tutorial provides instructions on setting up SQL Server configured with Always On
-
-  availability groups (AGs) in an Azure Kubernetes Service (AKS) cluster. It ut
-tags:
-  - "linux-operations"
-  - "deploy-ags-with-rancher-prime-and-dh2i-dxoperator"
-pubDate: 2025-12-01
+description: "on Linux This tutorial provides instructions on setting up SQL Server configured with Always On availability groups (AGs) in an Azure Kubernetes Service (AKS) cluster."
+tags: ["linux-operations","deploy-ags-with-rancher-prime-and-dh2i-dxoperator"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

@@ -1,29 +1,10 @@
 ---
 title: "Azure SQL >"
 topic: "azure-synapse"
-description: |
-  Applies to:
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL Server on
-
-  Azure VM
-
-  Azure SQL is a family of managed, secure, and intelligent products that use the SQL Server
-
-  database engine in the
-tags:
-  - "azure-synapse"
-  - "azure-sql"
-pubDate: 2025-12-01
+description: ""
+tags: ["azure-synapse","azure-sql"]
+pubDate: "2025-12-01"
 ---
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 on
 

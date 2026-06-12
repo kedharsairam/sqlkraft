@@ -1,37 +1,10 @@
 ---
 title: "Understanding Database Engine errors"
 topic: "monitor"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL analytics endpoint in
-
-  Microsoft Fabric
-
-  Warehouse in Microsoft F
-tags:
-  - "monitor"
-  - "understanding-database-engine-errors"
-pubDate: 2025-12-01
+description: "SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft F"
+tags: ["monitor","understanding-database-engine-errors"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -40,8 +13,6 @@ SQL analytics endpoint in
 Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Errors raised by the Microsoft SQL Server Database Engine have the attributes described in the
 

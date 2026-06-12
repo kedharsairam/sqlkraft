@@ -3,8 +3,8 @@ name: "STPointFromText (geography Data Type)"
 title: "STPointFromText (geography Data Type)"
 category: "data-types"
 description: "Constructs a point geography instance from a Well-Known Text (WKT) representation."
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

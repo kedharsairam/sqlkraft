@@ -4,19 +4,9 @@ title: "XQuery - Functions on Nodes - namespace-uri"
 category: "xquery"
 description: "XQuery Language Reference: Functions on Nodes - namespace-uri"
 syntax: "namespace-uri(/ROOT[1])"
-tags:
-  - "xquery"
-  - "functions-on-nodes-namespace-uri"
-pubDate: 2025-12-01
+tags: ["xquery","functions-on-nodes-namespace-uri"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Returns the namespace URI of the QName specified in
 

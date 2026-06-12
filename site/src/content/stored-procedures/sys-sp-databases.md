@@ -4,14 +4,14 @@ title: "sp_databases"
 category: "general"
 description: "Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   USE
-  master
-  ;
-  GO
-  EXECUTE
-  sp_databases;
+      master
+      ;
+      GO
+      EXECUTE
+      sp_databases;
 ---
 
 ## Description

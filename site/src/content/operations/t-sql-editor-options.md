@@ -3,29 +3,25 @@ title: "T-SQL Editor Options"
 topic: "ssb-diagnose"
 description: |
   09/09/2025
-
-  This article describes some of the options of the Transact-SQL Editor. To set these options, go
-
-  to the
-
-  dialog through the
-
-  >
-
-  menu.
-
-  Description
-
-  The default value of
-
-  indicates that SQL
-tags:
-  - "ssb-diagnose"
-  - "t-sql-editor-options"
-pubDate: 2025-12-01
+  
+    This article describes some of the options of the Transact-SQL Editor. To set these options, go
+  
+    to the
+  
+    dialog through the
+  
+    >
+  
+    menu.
+  
+    Description
+  
+    The default value of
+  
+    indicates that SQL
+tags: ["ssb-diagnose","t-sql-editor-options"]
+pubDate: "2025-12-01"
 ---
-
-09/09/2025
 
 This article describes some of the options of the Transact-SQL Editor. To set these options, go
 

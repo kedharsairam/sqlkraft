@@ -3,19 +3,15 @@ title: "How to: Run SQL Server Unit Tests from Team Foundation Build"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  You can use Team Foundation Build to run your SQL Server unit tests as part of a build
-
-  verification test (BVT). You can configure your unit tests to deploy the database, generate test
-
-  da
-tags:
-  - "ssb-diagnose"
-  - "how-to-run-sql-server-unit-tests-from-team-foundation-build"
-pubDate: 2025-12-01
+  
+    You can use Team Foundation Build to run your SQL Server unit tests as part of a build
+  
+    verification test (BVT). You can configure your unit tests to deploy the database, generate test
+  
+    da
+tags: ["ssb-diagnose","how-to-run-sql-server-unit-tests-from-team-foundation-build"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 You can use Team Foundation Build to run your SQL Server unit tests as part of a build
 

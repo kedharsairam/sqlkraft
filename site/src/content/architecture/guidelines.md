@@ -1,33 +1,10 @@
 ---
 title: "Guidelines"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  When you perform online index operations, the following guidelines apply:
-
-  Clustered indexes
-tags:
-  - "filestream"
-  - "guidelines"
-pubDate: 2025-12-01
+description: "When you perform online index operations, the following guidelines apply: Clustered indexes"
+tags: ["filestream","guidelines"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 When you perform online index operations, the following guidelines apply:
 

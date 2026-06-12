@@ -4,19 +4,9 @@ title: "XQuery - Numeric Values Functions - ceiling"
 category: "xquery"
 description: "XQuery Language Reference: Numeric Values Functions - ceiling"
 syntax: "fn:ceiling ( $arg as numeric?) as numeric?"
-tags:
-  - "xquery"
-  - "numeric-values-functions-ceiling"
-pubDate: 2025-12-01
+tags: ["xquery","numeric-values-functions-ceiling"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Returns the smallest number without a fractional part and that is not less than the value of its
 

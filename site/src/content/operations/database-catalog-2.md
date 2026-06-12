@@ -1,43 +1,10 @@
 ---
 title: "Database catalog"
 topic: "monitor"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure Synapse Analytics
-
-  Analytics
-
-  Platform System (PDW)
-
-  Explanations for the schemas, tables, and stored procedures in the WideW
-tags:
-  - "monitor"
-  - "database-catalog-2"
-pubDate: 2025-12-01
+description: "Explanations for the schemas, tables, and stored procedures in the WideW"
+tags: ["monitor","database-catalog-2"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure Synapse Analytics
 
 Analytics
 

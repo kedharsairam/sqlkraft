@@ -1,11 +1,11 @@
 ---
-name: INSTANCE_LOG_RATE_GOVERNOR
+name: "INSTANCE_LOG_RATE_GOVERNOR"
 title: "Instance Log Rate Governor Wait"
-category: triage
-severity: high
+category: "triage"
+severity: "high"
 description: "Occurs when the instance-level log rate governor throttles log generation. Azure SQL DB only. Indicates the log generation rate exceeds the service tier's maximum log rate."
-tags: ["log", "governor", "throttle", "azure"]
-pubDate: 2026-05-29
+tags: ["log","governor","throttle","azure"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

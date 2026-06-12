@@ -2,9 +2,9 @@
 name: "To Deny Permission or Revoke Permission to a Sp"
 title: "To Deny Permission or Revoke Permission to a Sp"
 description: "to block a permission:"
-category: security-audit
-tags: ["permissions", "security-audit"]
-pubDate: 2025-03-15
+category: "security-audit"
+tags: ["permissions","security-audit"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

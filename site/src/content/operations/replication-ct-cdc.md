@@ -1,33 +1,10 @@
 ---
 title: "Replication, CT, & CDC"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  01/03/2025
-
-  Applies to:
-
-  SQL Server
-
-  SQL Server Replication, change data capture (CDC), and change tracking (CT) are supported on
-
-  Always On availability groups. Always On availability gro
-tags:
-  - "high-availability"
-  - "replication-ct-cdc"
-pubDate: 2025-12-01
+description: "Replication, change data capture (CDC), and change tracking (CT) are supported on Always On availability groups."
+tags: ["high-availability","replication-ct-cdc"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-01/03/2025
-
-SQL Server
 
 Replication, change data capture (CDC), and change tracking (CT) are supported on
 

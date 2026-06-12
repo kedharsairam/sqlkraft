@@ -4,13 +4,13 @@ title: "sp_helpdbfixedrole"
 category: "general"
 description: "Returns a list of the fixed database roles."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_helpdbfixedrole [ [ @rolename = ]
-  N
-  'rolename'
-  ]
-  [ ; ]
+      N
+      'rolename'
+      ]
+      [ ; ]
 ---
 
 ## Description

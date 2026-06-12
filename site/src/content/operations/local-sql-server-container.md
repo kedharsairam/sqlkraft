@@ -3,14 +3,12 @@ title: "Local SQL Server container"
 topic: "profiler"
 description: |
   With the Local SQL Server container feature in the MSSQL extension for Visual Studio Code, you
-
-  can create and manage SQL Server containers without manually running Docker commands.
-
-  Containers can be
-tags:
-  - "profiler"
-  - "local-sql-server-container"
-pubDate: 2025-12-01
+  
+    can create and manage SQL Server containers without manually running Docker commands.
+  
+    Containers can be
+tags: ["profiler","local-sql-server-container"]
+pubDate: "2025-12-01"
 ---
 
 With the Local SQL Server container feature in the MSSQL extension for Visual Studio Code, you

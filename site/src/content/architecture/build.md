@@ -1,33 +1,10 @@
 ---
 title: "Build"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  You can build database objects using the SQL Server integration with the .NET Framework
-
-  common language runtime (CLR). Managed code that runs inside o
-tags:
-  - "clr-integration"
-  - "build"
-pubDate: 2025-12-01
+description: "You can build database objects using the SQL Server integration with the .NET Framework common language runtime (CLR). Managed code that runs inside o"
+tags: ["clr-integration","build"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 You can build database objects using the SQL Server integration with the.NET Framework
 

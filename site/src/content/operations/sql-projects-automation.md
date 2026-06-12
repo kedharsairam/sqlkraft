@@ -1,33 +1,12 @@
 ---
 title: "SQL projects automation"
 topic: "ssms"
-description: |
-  SQL projects automation
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  This article provides an overview of automation options for SQL projects across different
-
-  software de
-tags:
-  - "ssms"
-  - "sql-projects-automation"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssms","sql-projects-automation"]
+pubDate: "2025-12-01"
 ---
 
 SQL projects automation
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This article provides an overview of automation options for SQL projects across different
 

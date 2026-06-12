@@ -2,13 +2,9 @@
 title: "What is SQL Server latch contention?"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-07/17/2025
 
 This guide describes how to identify and resolve latch contention issues observed when
 

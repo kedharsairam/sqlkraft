@@ -2,8 +2,8 @@
 title: "Linked servers"
 topic: "query-processing"
 description: "Always On availability groups"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Deprecated feature

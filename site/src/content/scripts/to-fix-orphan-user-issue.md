@@ -2,9 +2,9 @@
 name: "To Fix Orphan user Issue"
 title: "To Fix Orphan user Issue"
 description: "Method 1_Auto Fix:"
-category: security-audit
-tags: ["security-audit", "user"]
-pubDate: 2025-03-15
+category: "security-audit"
+tags: ["security-audit","user"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

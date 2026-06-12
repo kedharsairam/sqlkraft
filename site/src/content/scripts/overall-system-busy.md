@@ -2,9 +2,9 @@
 name: "Overall System Busy"
 title: "Overall System Busy"
 description: "Ask some basic questions:-"
-category: troubleshooting
+category: "troubleshooting"
 tags: ["troubleshooting"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

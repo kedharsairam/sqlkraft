@@ -1,35 +1,10 @@
 ---
 title: "srv_paramstatus"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Returns the status of a particular remote stored procedure call parameter.
-
-  srvproc
-
-  Is a pointer to the SRV_PROC structure that is the handle for a pa
-tags:
-  - "clr-integration"
-  - "srv-paramstatus"
-pubDate: 2025-12-01
+description: "Returns the status of a particular remote stored procedure call parameter."
+tags: ["clr-integration","srv-paramstatus"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Returns the status of a particular remote stored procedure call parameter.
 

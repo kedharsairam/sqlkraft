@@ -2,9 +2,9 @@
 name: "To Create Clustered Index"
 title: "To Create Clustered Index"
 description: "if table contains <=1000 rows, don't create an index."
-category: index-maintenance
-tags: ["index-maintenance", "indexing"]
-pubDate: 2025-03-15
+category: "index-maintenance"
+tags: ["index-maintenance","indexing"]
+pubDate: "2025-03-15"
 ---
 
 ```sql
@@ -16,7 +16,7 @@ CREATE CLUSTERED INDEX clustername ON tablename(columnname)
 --if we want to create composite clustered index use the following command create clustered index clustername on tablename(columnname1, columnname2)
 
 --Conditions for clustered index:
-	--all rows together the value should not exceed 900 bytes.
-	--we can configure upto 32 columns (composite)
-	--we can only create 1 clustered index on a table
+  --all rows together the value should not exceed 900 bytes.
+  --we can configure upto 32 columns (composite)
+  --we can only create 1 clustered index on a table
 ```

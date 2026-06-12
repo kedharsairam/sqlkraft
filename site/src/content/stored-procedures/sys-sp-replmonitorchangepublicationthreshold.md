@@ -4,28 +4,28 @@ title: "sp_replmonitorchangepublicationthreshold"
 category: "general"
 description: "Changes the monitoring threshold metric for a publication. This stored procedure, which is used to monitor replication, is executed at the Distributor on the distribution database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_replmonitorchangepublicationthreshold
-  [ @publisher = ]
-  N
-  'publisher'
-  , [ @publisher_db = ]
-  N
-  'publisher_db'
-  , [ @publication = ]
-  N
-  'publication'
-  [ , [ @publication_type = ] publication_type ]
-  [ , [ @metric_id = ] metric_id ]
-  [ , [ @thresholdmetricname = ]
-  N
-  'thresholdmetricname'
-  ]
-  [ , [ @value = ] value ]
-  [ , [ @shouldalert = ] shouldalert ]
-  [ , [ @mode = ] mode ]
-  [ ; ]
+      [ @publisher = ]
+      N
+      'publisher'
+      , [ @publisher_db = ]
+      N
+      'publisher_db'
+      , [ @publication = ]
+      N
+      'publication'
+      [ , [ @publication_type = ] publication_type ]
+      [ , [ @metric_id = ] metric_id ]
+      [ , [ @thresholdmetricname = ]
+      N
+      'thresholdmetricname'
+      ]
+      [ , [ @value = ] value ]
+      [ , [ @shouldalert = ] shouldalert ]
+      [ , [ @mode = ] mode ]
+      [ ; ]
 ---
 
 ## Description

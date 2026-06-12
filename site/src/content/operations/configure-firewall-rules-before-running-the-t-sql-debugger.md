@@ -1,25 +1,10 @@
 ---
 title: "Configure firewall rules before running the T-SQL Debugger"
 topic: "ssb-diagnose"
-description: |
-  09/09/2025
-
-  Applies to:
-
-  SQL Server
-
-  Windows Firewall rules must be configured to enable Transact-SQL debugging when
-
-  connected to an instance of the Database Engine that is running on a different com
-tags:
-  - "ssb-diagnose"
-  - "configure-firewall-rules-before-running-the-t-sql-debugger"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssb-diagnose","configure-firewall-rules-before-running-the-t-sql-debugger"]
+pubDate: "2025-12-01"
 ---
-
-09/09/2025
-
-SQL Server
 
 Windows Firewall rules must be configured to enable Transact-SQL debugging when
 

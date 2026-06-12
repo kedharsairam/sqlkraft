@@ -3,8 +3,8 @@ name: "General Remarks"
 title: "General Remarks"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 For descriptions of the RESTORE VERIFYONLY arguments, see

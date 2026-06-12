@@ -3,25 +3,17 @@ name: "Overview: SQL Server 2025"
 title: "Overview: SQL Server 2025"
 category: "statements"
 description: "2016 (13.x) and later versions"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 2016 (13.x) and later versions
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
 SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Creates an external data source for querying external data, used for PolyBase and data virtualization features.
 
@@ -32,8 +24,6 @@ choose.
 In the following row, select the product name you're interested in, and only that product's information is displayed.
 
 - SQL Server \*
-
-Azure SQL Database
 
 SQL Managed
 

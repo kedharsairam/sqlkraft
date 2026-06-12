@@ -1,35 +1,10 @@
 ---
 title: "History Page"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  Use this dialog box to view the history of mirroring status for a mirrored database on a
-
-  specified server instance.
-
-  Start Database Mirroring Monitor
-tags:
-  - "high-availability"
-  - "history-page"
-pubDate: 2025-12-01
+description: "Use this dialog box to view the history of mirroring status for a mirrored database on a specified server instance. Start Database Mirroring Monitor"
+tags: ["high-availability","history-page"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 Use this dialog box to view the history of mirroring status for a mirrored database on a
 

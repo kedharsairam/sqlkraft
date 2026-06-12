@@ -1,43 +1,10 @@
 ---
 title: "Audit Change Database Owner Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs when you use the ALTER
-
-  AUTHORIZATION statement to change the owner of a databa
-tags:
-  - "event-classes"
-  - "audit-change-database-owner-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs when you use the ALTER AUTHORIZATION statement to change the owner of a databa"
+tags: ["event-classes","audit-change-database-owner-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

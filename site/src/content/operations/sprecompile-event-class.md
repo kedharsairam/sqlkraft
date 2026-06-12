@@ -1,33 +1,10 @@
 ---
 title: "SP:Recompile Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The SP:Recompile event class indicates that a stored procedure, trigger, or user-defined
-
-  fun
-tags:
-  - "event-classes"
-  - "sprecompile-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","sprecompile-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The SP:Recompile event class indicates that a stored procedure, trigger, or user-defined
 

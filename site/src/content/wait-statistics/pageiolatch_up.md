@@ -1,11 +1,11 @@
 ---
-name: PAGEIOLATCH_UP
+name: "PAGEIOLATCH_UP"
 title: "Page I/O Latch (Update) Wait"
-category: io
-severity: medium
+category: "io"
+severity: "medium"
 description: "Occurs when a task waits for a data page I/O operation with an update latch. Less common than SH/EX variants; indicates pages being read for update operations."
-tags: ["io", "buffer-pool", "update", "page"]
-pubDate: 2026-05-29
+tags: ["io","buffer-pool","update","page"]
+pubDate: "2026-05-29"
 relatedScripts: ["analyze-io-latency"]
 ---
 

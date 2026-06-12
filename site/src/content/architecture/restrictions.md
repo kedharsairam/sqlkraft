@@ -1,35 +1,10 @@
 ---
 title: "Restrictions"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  This article discusses the restrictions associated with code executing in the SQL Server process
-
-  through context and regular connections.
-
-  When develo
-tags:
-  - "clr-integration"
-  - "restrictions"
-pubDate: 2025-12-01
+description: "This article discusses the restrictions associated with code executing in the SQL Server process through context and regular connections. When develo"
+tags: ["clr-integration","restrictions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 This article discusses the restrictions associated with code executing in the SQL Server process
 

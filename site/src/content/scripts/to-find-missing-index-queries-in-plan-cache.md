@@ -2,9 +2,9 @@
 name: "To Find Missing Index Queries in Plan Cache"
 title: "To Find Missing Index Queries in Plan Cache"
 description: "diagnostic script for index-maintenance operations."
-category: index-maintenance
-tags: ["cache", "index-maintenance", "indexing"]
-pubDate: 2025-03-15
+category: "index-maintenance"
+tags: ["cache","index-maintenance","indexing"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

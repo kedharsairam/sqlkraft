@@ -3,14 +3,12 @@ title: "Schema designer"
 topic: "profiler"
 description: |
   The Schema Designer in the MSSQL extension for Visual Studio Code provides a graphical
-
-  environment for visualizing, designing, and managing database schemas without writing
-
-  Transact-SQL (T-SQL) stat
-tags:
-  - "profiler"
-  - "schema-designer"
-pubDate: 2025-12-01
+  
+    environment for visualizing, designing, and managing database schemas without writing
+  
+    Transact-SQL (T-SQL) stat
+tags: ["profiler","schema-designer"]
+pubDate: "2025-12-01"
 ---
 
 The Schema Designer in the MSSQL extension for Visual Studio Code provides a graphical

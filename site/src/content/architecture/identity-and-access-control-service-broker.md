@@ -1,29 +1,10 @@
 ---
 title: "Identity and Access Control (Service Broker)"
 topic: "service-broker"
-description: |
-  09/02/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Most Service Broker applications that involve more than one instance run in the security
-
-  context of a database principal created speci
-tags:
-  - "service-broker"
-  - "identity-and-access-control-service-broker"
-pubDate: 2025-12-01
+description: ""
+tags: ["service-broker","identity-and-access-control-service-broker"]
+pubDate: "2025-12-01"
 ---
-
-09/02/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Most Service Broker applications that involve more than one instance run in the security
 

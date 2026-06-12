@@ -2,8 +2,8 @@
 title: "Key and included columns in filtered indexes"
 topic: "index-architecture"
 description: "covers the following query because the query results"
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The filtered index

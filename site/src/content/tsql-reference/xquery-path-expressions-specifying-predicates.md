@@ -5,35 +5,25 @@ category: "xquery"
 description: "XQuery Language Reference: Path Expressions - Specifying Predicates"
 syntax: |
   declare @x xml
-  set @x = '
-  <People>
-  <Person>
-  <Name>John</Name>
-  <Age>24</Age>
-  </Person>
-  <Person>
-  <Name>Goofy</Name>
-  <Age>54</Age>
-  </Person>
-  <Person>
-  <Name>Daffy</Name>
-  <Age>30</Age>
-  </Person>
-  </People>
-  '
-tags:
-  - "xquery"
-  - "path-expressions-specifying-predicates"
-pubDate: 2025-12-01
+    set @x = '
+    <People>
+    <Person>
+    <Name>John</Name>
+    <Age>24</Age>
+    </Person>
+    <Person>
+    <Name>Goofy</Name>
+    <Age>54</Age>
+    </Person>
+    <Person>
+    <Name>Daffy</Name>
+    <Age>30</Age>
+    </Person>
+    </People>
+    '
+tags: ["xquery","path-expressions-specifying-predicates"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-10/17/2024
-
-SQL Server
 
 As described in the topic,
 

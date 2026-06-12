@@ -1,20 +1,9 @@
 ---
 title: "ESU frequently asked questions"
 topic: "upgrade"
-description: |
-  Applies to:
-
-  SQL Server 2014 (12.x)
-
-  General frequently asked questions about Extended Security updates can be found at the
-
-  Extended security updates FAQ
-
-  . This article lists SQL Server-specific fre
-tags:
-  - "upgrade"
-  - "esu-frequently-asked-questions"
-pubDate: 2025-12-01
+description: "2014 (12.x) General frequently asked questions about Extended Security updates can be found at the Extended security updates FAQ ."
+tags: ["upgrade","esu-frequently-asked-questions"]
+pubDate: "2025-12-01"
 ---
 
 2014 (12.x)
@@ -35,7 +24,7 @@ of SQL Server that are out of extended support, see
 
 What are Extended Security Updates for
 
-SQL Server?
+?
 
 For information about ESU pricing, see
 

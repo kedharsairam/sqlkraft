@@ -1,23 +1,10 @@
 ---
 title: "Troubleshooting guide"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article describes how to troubleshoot SQL Server running on Linux or in a Linux container.
-
-  When troubleshooting SQL Server on Linux, remember to review the sup
-tags:
-  - "linux-operations"
-  - "troubleshooting-guide"
-pubDate: 2025-12-01
+description: "on Linux This article describes how to troubleshoot SQL Server running on Linux or in a Linux container."
+tags: ["linux-operations","troubleshooting-guide"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

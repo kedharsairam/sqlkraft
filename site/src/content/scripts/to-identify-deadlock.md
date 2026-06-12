@@ -2,9 +2,9 @@
 name: "To Identify Deadlock"
 title: "To Identify Deadlock"
 description: "old method"
-category: performance
-tags: ["deadlock", "performance"]
-pubDate: 2025-03-15
+category: "performance"
+tags: ["deadlock","performance"]
+pubDate: "2025-03-15"
 ---
 
 ```sql
@@ -15,12 +15,12 @@ pubDate: 2025-03-15
 --moderate method
 --use sql server profiler
 --by default sql server record these following events:
-		--audit login
-		--audit logout
-		--existing connection
-		--rpc competion
-		--batch starting
-		--batch completed
+    --audit login
+    --audit logout
+    --existing connection
+    --rpc competion
+    --batch starting
+    --batch completed
 --it is not recommended to run sql server profiler for longer periods
 
 --new method
@@ -32,11 +32,11 @@ pubDate: 2025-03-15
 --then search for deadlock in event_ile table
 
 --to send it as a report, use the following steps:
-	--after finding the deadlock in event_file
-	--right click on the value and then click on copy to copy the entire report
-	--then paste it in notepad
-	--then remove "xml_report" word in the beginning of the report
-	--then save the file in ".xdl" format
-	--then email the file to the respective developer
+  --after finding the deadlock in event_file
+  --right click on the value and then click on copy to copy the entire report
+  --then paste it in notepad
+  --then remove "xml_report" word in the beginning of the report
+  --then save the file in ".xdl" format
+  --then email the file to the respective developer
 --in this way they can also view entire report in ssms.
 ```

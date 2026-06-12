@@ -4,19 +4,9 @@ title: "XQuery - Functions on Sequences - id"
 category: "xquery"
 description: ""
 syntax: "AdventureWorks2022"
-tags:
-  - "xquery"
-  - "functions-on-sequences-id"
-pubDate: 2025-12-01
+tags: ["xquery","functions-on-sequences-id"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Returns the sequence of element nodes with xs:ID values that match the values of one or more
 

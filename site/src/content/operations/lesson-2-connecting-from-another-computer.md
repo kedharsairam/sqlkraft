@@ -1,25 +1,10 @@
 ---
 title: "Lesson 2: Connecting from Another Computer"
 topic: "configuration"
-description: |
-  08/26/2025
-
-  Applies to:
-
-  SQL Server
-
-  For enhanced security, the Database Engine of SQL Server Developer, Express, and Evaluation
-
-  editions can't be accessed from another computer when initially instal
-tags:
-  - "configuration"
-  - "lesson-2-connecting-from-another-computer"
-pubDate: 2025-12-01
+description: "08/26/2025 For enhanced security, the Database Engine of SQL Server Developer, Express, and Evaluation editions can't be accessed from another computer when initially instal"
+tags: ["configuration","lesson-2-connecting-from-another-computer"]
+pubDate: "2025-12-01"
 ---
-
-08/26/2025
-
-SQL Server
 
 For enhanced security, the Database Engine of SQL Server Developer, Express, and Evaluation
 

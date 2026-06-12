@@ -3,8 +3,8 @@ name: "Index key size"
 title: "Index key size"
 category: "hints"
 description: "compatibility level is set to 90 or higher."
-tags: ["tsql", "hints"]
-pubDate: 2026-05-29
+tags: ["tsql","hints"]
+pubDate: "2026-05-29"
 ---
 
 Setting
@@ -48,8 +48,6 @@ For more information about filtered indexes, see
 Create filtered indexes
 
 and the
-
-SQL Server
 
 index architecture and design guide.
 

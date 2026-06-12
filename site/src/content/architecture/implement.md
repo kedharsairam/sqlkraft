@@ -1,33 +1,10 @@
 ---
 title: "Implement"
 topic: "change-data-capture"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This topic provides information to help you create DDL triggers, modify DDL triggers, and
-
-  di
-tags:
-  - "change-data-capture"
-  - "implement"
-pubDate: 2025-12-01
+description: ""
+tags: ["change-data-capture","implement"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This topic provides information to help you create DDL triggers, modify DDL triggers, and
 

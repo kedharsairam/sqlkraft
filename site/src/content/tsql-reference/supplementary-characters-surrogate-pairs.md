@@ -3,8 +3,8 @@ name: "Supplementary characters (surrogate pairs)"
 title: "Supplementary characters (surrogate pairs)"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 A positive integer or expression that specifies how many characters of the expression

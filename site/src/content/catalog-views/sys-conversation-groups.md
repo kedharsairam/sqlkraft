@@ -3,8 +3,8 @@ name: "sys.conversation_groups"
 title: "sys.conversation_groups"
 category: "compatibility"
 description: "This catalog view contains a row for each conversation group. Identifier for the conversation group. Not NULLABLE."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

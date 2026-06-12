@@ -3,21 +3,17 @@ title: "SqlPackage Script"
 topic: "sqlpackage"
 description: |
   SqlPackage Script parameters and properties
-
-  07/30/2025
-
-  The SqlPackage Script action creates a Transact-SQL incremental update script that updates the schema of a target
-
-  database to match the schema
-tags:
-  - "sqlpackage"
-  - "sqlpackage-script"
-pubDate: 2025-12-01
+  
+    07/30/2025
+  
+    The SqlPackage Script action creates a Transact-SQL incremental update script that updates the schema of a target
+  
+    database to match the schema
+tags: ["sqlpackage","sqlpackage-script"]
+pubDate: "2025-12-01"
 ---
 
 SqlPackage Script parameters and properties
-
-07/30/2025
 
 The SqlPackage Script action creates a Transact-SQL incremental update script that updates the schema of a target
 

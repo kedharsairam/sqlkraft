@@ -1,25 +1,10 @@
 ---
 title: "Failover cluster concepts"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article explains the concepts related to SQL Server failover cluster instances (FCI) on Linux.
-
-  To create a SQL Server FCI on Linux, see
-
-  Configure failover clu
-tags:
-  - "linux-operations"
-  - "failover-cluster-concepts"
-pubDate: 2025-12-01
+description: "on Linux This article explains the concepts related to SQL Server failover cluster instances (FCI) on Linux."
+tags: ["linux-operations","failover-cluster-concepts"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

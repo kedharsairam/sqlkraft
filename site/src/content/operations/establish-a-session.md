@@ -1,37 +1,10 @@
 ---
 title: "Establish a session"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  To establish a database mirroring session and to modify the properties of database mirroring
-
-  for a database, use the
-
-  page of the
-
-  dialog box.Before y
-tags:
-  - "high-availability"
-  - "establish-a-session"
-pubDate: 2025-12-01
+description: "To establish a database mirroring session and to modify the properties of database mirroring for a database, use the page of the dialog box.Before y"
+tags: ["high-availability","establish-a-session"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 To establish a database mirroring session and to modify the properties of database mirroring
 

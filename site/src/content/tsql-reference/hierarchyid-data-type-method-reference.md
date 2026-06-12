@@ -3,8 +3,8 @@ name: "hierarchyid data type method reference"
 title: "Hierarchyid data type method reference"
 category: "data-types"
 description: "T-SQL reference covering Extremely compact."
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 hierarchyid

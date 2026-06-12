@@ -2,19 +2,15 @@
 title: "What is optimized locking?"
 topic: "locking"
 description: "2025 (17.x)"
-tags: ["locking", "architecture"]
-pubDate: 2026-05-29
+tags: ["locking","architecture"]
+pubDate: "2026-05-29"
 ---
 
 2025 (17.x)
 
-Azure SQL Database
-
 Azure SQL Managed
 
 Instance
-
-SQL database in Microsoft Fabric
 
 Optimized locking offers an improved transaction locking mechanism to reduce lock blocking
 

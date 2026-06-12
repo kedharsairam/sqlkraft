@@ -3,21 +3,17 @@ title: "Move resources"
 topic: "azure-synapse"
 description: |
   09/30/2025
-
-  This article describes how you can move resources to a new resource group or subscription
-
-  with SQL Server enabled by Azure Arc. The capability applies to both:
-
-  SQL Server instances
-
-  Data
-tags:
-  - "azure-synapse"
-  - "move-resources"
-pubDate: 2025-12-01
+  
+    This article describes how you can move resources to a new resource group or subscription
+  
+    with SQL Server enabled by Azure Arc. The capability applies to both:
+  
+    SQL Server instances
+  
+    Data
+tags: ["azure-synapse","move-resources"]
+pubDate: "2025-12-01"
 ---
-
-09/30/2025
 
 This article describes how you can move resources to a new resource group or subscription
 

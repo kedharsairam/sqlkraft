@@ -1,29 +1,12 @@
 ---
 title: "SQL Server Express LocalDB Header & Version Information"
 topic: "clr-integration"
-description: |
-  SQL Server Express LocalDB header and
-
-  07/14/2025
-
-  Applies to:
-
-  SQL Server
-
-  There's no separate header file for the SQL Server Express LocalDB instance API; the LocalDB
-
-  function signatures and error
-tags:
-  - "clr-integration"
-  - "sql-server-express-localdb-header-version-information"
-pubDate: 2025-12-01
+description: ""
+tags: ["clr-integration","sql-server-express-localdb-header-version-information"]
+pubDate: "2025-12-01"
 ---
 
 Express LocalDB header and
-
-07/14/2025
-
-SQL Server
 
 There's no separate header file for the SQL Server Express LocalDB instance API; the LocalDB
 

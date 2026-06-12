@@ -1,43 +1,10 @@
 ---
 title: "Capture Logon Trigger Event Data"
 topic: "change-data-capture"
-description: |
-  Article
-
-  •
-
-  08/27/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  To capture XML data about
-
-  events for use inside logon triggers, use the
-
-  EVENTDATA
-
-  function. The
-
-  event returns the follo
-tags:
-  - "change-data-capture"
-  - "capture-logon-trigger-event-data"
-pubDate: 2025-12-01
+description: "To capture XML data about events for use inside logon triggers, use the EVENTDATA function."
+tags: ["change-data-capture","capture-logon-trigger-event-data"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-08/27/2024
-
-SQL Server
-
-Azure SQL Managed Instance
 
 To capture XML data about
 

@@ -1,35 +1,16 @@
 ---
 title: "Validate, Query, & Change"
 topic: "json-data"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The built-in support for JSON in the SQL Database Engine incl
-tags:
-  - "json-data"
-  - "validate-query-change"
-pubDate: 2025-12-01
+description: ""
+tags: ["json-data","validate-query-change"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The built-in support for JSON in the SQL Database Engine includes the following functions:
 

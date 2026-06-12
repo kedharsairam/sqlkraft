@@ -1,33 +1,10 @@
 ---
 title: "TM: Begin Tran Completed Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The TM: Begin Tran Completed event class indicates that a BEGIN TRANSACTION request has
-
-  been
-tags:
-  - "event-classes"
-  - "tm-begin-tran-completed-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","tm-begin-tran-completed-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The TM: Begin Tran Completed event class indicates that a BEGIN TRANSACTION request has
 

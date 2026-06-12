@@ -3,21 +3,13 @@ name: "Shape properties"
 title: "Shape properties"
 category: "statements"
 description: "Describes the shape properties available for spatial data types in T-SQL, including geometry and geography methods."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ﾃ
 
 Summarize this article for me
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -25,7 +17,7 @@ SQL database in Microsoft
 
 Fabric
 
-SQL Server's
+'s
 
 data type implements methods defined by the Open Geospatial
 

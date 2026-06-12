@@ -1,11 +1,11 @@
 ---
-name: EXECSYNC
+name: "EXECSYNC"
 title: "Class EXECSYNC Wait"
-category: baseline
-severity: low
+category: "baseline"
+severity: "low"
 description: "Occurs during parallel query synchronization phases such as exchange iterator completion and batching. Normal part of parallel execution and rarely actionable by itself."
-tags: ["parallelism", "synchronization"]
-pubDate: 2026-05-29
+tags: ["parallelism","synchronization"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

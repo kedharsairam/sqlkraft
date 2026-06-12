@@ -4,10 +4,10 @@ title: "sp_testlinkedserver"
 category: "general"
 description: "Tests the connection to a linked server. If the test is unsuccessful, the procedure raises an exception with the reason of the failure."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_testlinkedserver [ @servername ] = servername
-  [ ; ]
+      [ ; ]
 ---
 
 ## Description

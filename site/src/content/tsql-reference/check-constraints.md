@@ -3,8 +3,8 @@ name: "CHECK constraints"
 title: "CHECK constraints"
 category: "statements"
 description: "Columns participating in a foreign key relationship must be defined with the same length"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Columns participating in a foreign key relationship must be defined with the same length

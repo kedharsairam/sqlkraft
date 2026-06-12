@@ -1,35 +1,10 @@
 ---
 title: "srv_willconvert"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Determines whether a specific data type conversion is available within the ODS Library.
-
-  srctype
-
-  Indicates the data type of the data to be converted.
-tags:
-  - "clr-integration"
-  - "srv-willconvert"
-pubDate: 2025-12-01
+description: "Determines whether a specific data type conversion is available within the ODS Library. srctype Indicates the data type of the data to be converted."
+tags: ["clr-integration","srv-willconvert"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Determines whether a specific data type conversion is available within the ODS Library.
 

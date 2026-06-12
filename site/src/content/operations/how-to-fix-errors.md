@@ -3,17 +3,13 @@ title: "How to: Fix Errors"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  The Error List pane displays any deployment or build errors. Syntax and semantic errors caused
-
-  by editing in either the Transact-SQL Editor or Table Designer also shows up in the list whe
-tags:
-  - "ssb-diagnose"
-  - "how-to-fix-errors"
-pubDate: 2025-12-01
+  
+    The Error List pane displays any deployment or build errors. Syntax and semantic errors caused
+  
+    by editing in either the Transact-SQL Editor or Table Designer also shows up in the list whe
+tags: ["ssb-diagnose","how-to-fix-errors"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 The Error List pane displays any deployment or build errors. Syntax and semantic errors caused
 

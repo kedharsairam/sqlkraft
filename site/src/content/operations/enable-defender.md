@@ -3,19 +3,15 @@ title: "Enable Defender"
 topic: "azure-synapse"
 description: |
   09/21/2025
-
-  The Defender for SQL Servers on Machines plan is one of the Defender for Databases plans in
-
-  Microsoft Defender for Cloud. Use Defender for SQL Servers on Machines to protect SQL
-
-  virtual
-tags:
-  - "azure-synapse"
-  - "enable-defender"
-pubDate: 2025-12-01
+  
+    The Defender for SQL Servers on Machines plan is one of the Defender for Databases plans in
+  
+    Microsoft Defender for Cloud. Use Defender for SQL Servers on Machines to protect SQL
+  
+    virtual
+tags: ["azure-synapse","enable-defender"]
+pubDate: "2025-12-01"
 ---
-
-09/21/2025
 
 The Defender for SQL Servers on Machines plan is one of the Defender for Databases plans in
 

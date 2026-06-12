@@ -2,9 +2,9 @@
 name: "To View VLF’s in Database"
 title: "To View VLF’s in Database"
 description: "for a specific database"
-category: database
+category: "database"
 tags: ["database"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

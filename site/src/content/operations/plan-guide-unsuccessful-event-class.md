@@ -1,33 +1,10 @@
 ---
 title: "Plan Guide Unsuccessful Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  07/25/2023
-
-  Applies to:
-
-  SQL Server
-
-  The Plan Guide Unsuccessful event class indicates that SQL Server could not produce an
-
-  execution plan for a query or batch that contained a plan guide
-tags:
-  - "event-classes"
-  - "plan-guide-unsuccessful-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","plan-guide-unsuccessful-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-07/25/2023
-
-SQL Server
 
 The Plan Guide Unsuccessful event class indicates that SQL Server could not produce an
 

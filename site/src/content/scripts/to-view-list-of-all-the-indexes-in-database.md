@@ -2,9 +2,9 @@
 name: "To View List of all the Indexes in Database"
 title: "To View List of all the Indexes in Database"
 description: "diagnostic script for index-maintenance operations."
-category: index-maintenance
-tags: ["database", "index-maintenance", "indexing"]
-pubDate: 2025-03-15
+category: "index-maintenance"
+tags: ["database","index-maintenance","indexing"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

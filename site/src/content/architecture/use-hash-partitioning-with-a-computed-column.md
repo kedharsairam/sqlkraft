@@ -2,8 +2,8 @@
 title: "Use hash partitioning with a computed column"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 the index key approach enables use of partitioning for other features, this technique can also

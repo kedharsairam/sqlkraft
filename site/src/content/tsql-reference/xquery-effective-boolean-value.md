@@ -4,19 +4,9 @@ title: "XQuery - Effective Boolean Value"
 category: "xquery"
 description: "XQuery Language Reference: Effective Boolean Value"
 syntax: "/a[1]"
-tags:
-  - "xquery"
-  - "effective-boolean-value"
-pubDate: 2025-12-01
+tags: ["xquery","effective-boolean-value"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 These are the effective Boolean values:
 

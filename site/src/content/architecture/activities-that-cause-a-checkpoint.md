@@ -2,8 +2,8 @@
 title: "Activities that cause a checkpoint"
 topic: "query-processing"
 description: "Checkpoints flush dirty data pages from the buffer cache of the current database to disk. This"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Checkpoints flush dirty data pages from the buffer cache of the current database to disk. This

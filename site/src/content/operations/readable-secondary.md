@@ -1,35 +1,10 @@
 ---
 title: "Readable secondary"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  The Always On availability groups active secondary capabilities include support for read-only
-
-  access to one or more secondary replicas (
-
-  readable sec
-tags:
-  - "high-availability"
-  - "readable-secondary"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","readable-secondary"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 The Always On availability groups active secondary capabilities include support for read-only
 

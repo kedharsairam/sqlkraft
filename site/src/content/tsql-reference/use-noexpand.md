@@ -3,8 +3,8 @@ name: "Use NOEXPAND"
 title: "Use NOEXPAND"
 category: "statements"
 description: "Isolation level hints:"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Granularity hints:

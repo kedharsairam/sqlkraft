@@ -1,31 +1,12 @@
 ---
 title: "Parse & transform"
 topic: "json-data"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  Azure Synapse Analytics (serverless SQL pool only)
-
-  SQL
-
-  analytics endpoint in Microsoft Fabric
-tags:
-  - "json-data"
-  - "parse-transform"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later versions Azure SQL Managed Instance Azure Synapse Analytics (serverless SQL pool only) SQL analytics endpoint in Microsoft Fabric"
+tags: ["json-data","parse-transform"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
-
-Azure SQL Database
 
 Azure
 

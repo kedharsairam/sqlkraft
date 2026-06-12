@@ -3,20 +3,10 @@ name: "xquery-context-functions-last"
 title: "XQuery - Context Functions - last"
 category: "xquery"
 description: ""
-syntax: "[ ]"
-tags:
-  - "xquery"
-  - "context-functions-last"
-pubDate: 2025-12-01
+syntax: [ ]
+tags: ["xquery","context-functions-last"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Returns the number of items in the sequence that is currently being processed. Specifically, it
 

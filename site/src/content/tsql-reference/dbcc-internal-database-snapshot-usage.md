@@ -3,17 +3,9 @@ name: "DBCC internal database snapshot usage"
 title: "DBCC internal database snapshot usage"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Transact-SQL programming language provides DBCC statements that act as Database
 

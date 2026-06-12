@@ -1,33 +1,10 @@
 ---
 title: "Set a session language"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The session language can be used to set how the following elements are displayed on the
-
-  serv
-tags:
-  - "collation"
-  - "set-a-session-language"
-pubDate: 2025-12-01
+description: ""
+tags: ["collation","set-a-session-language"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The session language can be used to set how the following elements are displayed on the
 

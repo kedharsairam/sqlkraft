@@ -1,29 +1,10 @@
 ---
 title: "Find a Value or Data Column While Tracing"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article describes how to search for a specific value or data column in the trace output
-
-  while the trace is running by using SQL S
-tags:
-  - "profiler"
-  - "find-a-value-or-data-column-while-tracing"
-pubDate: 2025-12-01
+description: "06/06/2025 This article describes how to search for a specific value or data column in the trace output while the trace is running by using SQL S"
+tags: ["profiler","find-a-value-or-data-column-while-tracing"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article describes how to search for a specific value or data column in the trace output
 

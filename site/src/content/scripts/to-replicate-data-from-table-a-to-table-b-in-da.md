@@ -2,9 +2,9 @@
 name: "To Replicate Data from Table A to Table B in Da"
 title: "To Replicate Data from Table A to Table B in Da"
 description: "Requirement:whenever data is inserterd,updated,or deleted in tablea that has to replicate to the tableb in same database."
-category: automation
-tags: ["automation", "table"]
-pubDate: 2025-03-15
+category: "automation"
+tags: ["automation","table"]
+pubDate: "2025-03-15"
 ---
 
 ```sql
@@ -15,15 +15,15 @@ pubDate: 2025-03-15
 --Demo:
 --Step1:
 CREATE TABLE [dbo].[tableA](
-	[ID] [int] NULL,
-	[Name] [varchar](100) NULL,
-	[Salary] [int] NULL
+  [ID] [int] NULL,
+  [Name] [varchar](100) NULL,
+  [Salary] [int] NULL
 ) ON [PRIMARY]
 GO
 CREATE TABLE [dbo].[tableb](
-	[ID] [int] NULL,
-	[Name] [varchar](100) NULL,
-	[Salary] [int] NULL
+  [ID] [int] NULL,
+  [Name] [varchar](100) NULL,
+  [Salary] [int] NULL
 ) ON [PRIMARY]
 GO
 

@@ -1,43 +1,16 @@
 ---
 title: "Database Collation"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article describes how to set or change the database
-
-  collation
-
-  by using
-
-  SQL Server
-
-  Management Studio (SSMS)
-
-  or Transact-SQL.
-
-  If no databa
-tags:
-  - "collation"
-  - "database-collation"
-pubDate: 2025-12-01
+description: "This article describes how to set or change the database collation by using Management Studio (SSMS) or Transact-SQL. If no databa"
+tags: ["collation","database-collation"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article describes how to set or change the database
 
 collation
 
 by using
-
-SQL Server
 
 Management Studio (SSMS)
 
@@ -54,8 +27,6 @@ You can find the supported collation names in
 Windows Collation Name
 
 and
-
-SQL Server
 
 Collation Name
 

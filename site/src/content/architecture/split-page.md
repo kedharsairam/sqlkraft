@@ -2,8 +2,8 @@
 title: "Split page"
 topic: "query-processing"
 description: "Point lookups are similar to B-trees, except that because pages are linked in only one direction,"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Point lookups are similar to B-trees, except that because pages are linked in only one direction,

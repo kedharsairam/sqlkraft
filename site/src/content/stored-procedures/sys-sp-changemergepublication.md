@@ -4,23 +4,23 @@ title: "sp_changemergepublication"
 category: "general"
 description: "Changes the properties of a merge publication. This stored procedure is executed at the Publisher on the publication database. The property to change for the given publication. values listed in the table that follows. The new value for the specified property. , and can be one of the values listed in the table that follows."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_changemergepublication
-  [ @publication = ]
-  N
-  'publication'
-  [ , [ @property = ]
-  N
-  'property'
-  ]
-  [ , [ @value = ]
-  N
-  'value'
-  ]
-  [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
-  [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
-  [ ; ]
+      [ @publication = ]
+      N
+      'publication'
+      [ , [ @property = ]
+      N
+      'property'
+      ]
+      [ , [ @value = ]
+      N
+      'value'
+      ]
+      [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
+      [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
+      [ ; ]
 ---
 
 ## Description

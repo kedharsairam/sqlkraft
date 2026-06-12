@@ -4,19 +4,9 @@ title: "XQuery - XQuery & Static Typing"
 category: "xquery"
 description: "XQuery Language Reference: XQuery & Static Typing"
 syntax: "element(age,xs:integer)*"
-tags:
-  - "xquery"
-  - "xquery-static-typing"
-pubDate: 2025-12-01
+tags: ["xquery","xquery-static-typing"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 XQuery in SQL Server is a statically typed language. That is, it raises type errors during query
 

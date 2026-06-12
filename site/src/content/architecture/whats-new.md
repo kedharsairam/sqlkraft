@@ -1,37 +1,10 @@
 ---
 title: "What's new"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Warehouse in Microsoft Fabric
-
-  SQL database in Microsoft
-
-  Fabric
-
-  Learn about which columnstore featur
-tags:
-  - "filestream"
-  - "whats-new"
-pubDate: 2025-12-01
+description: "Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Learn about which columnstore featur"
+tags: ["filestream","whats-new"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Warehouse in Microsoft Fabric
 

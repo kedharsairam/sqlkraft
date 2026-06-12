@@ -4,19 +4,9 @@ title: "XQuery - Aggregate Functions - count"
 category: "xquery"
 description: ""
 syntax: "fn:count($arg as item()*) as xs:integer"
-tags:
-  - "xquery"
-  - "aggregate-functions-count"
-pubDate: 2025-12-01
+tags: ["xquery","aggregate-functions-count"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Returns the number of items that are contained in the sequence specified by
 

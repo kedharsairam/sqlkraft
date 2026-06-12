@@ -1,33 +1,10 @@
 ---
 title: "Allow access to an endpoint"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  Using Windows Authentication for connecting the database mirroring endpoints of two
-
-  instances of SQL Server requires manual configuration of login acc
-tags:
-  - "high-availability"
-  - "allow-access-to-an-endpoint"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","allow-access-to-an-endpoint"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 Using Windows Authentication for connecting the database mirroring endpoints of two
 

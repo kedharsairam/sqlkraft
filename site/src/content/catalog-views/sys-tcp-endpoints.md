@@ -3,8 +3,8 @@ name: "sys.tcp_endpoints"
 title: "sys.tcp_endpoints"
 category: "compatibility"
 description: "Summarize this article for me Returns one row for each TCP endpoint in the system. The endpoints that are described by provide an object to grant and revoke the connection privilege. The information that is displayed regarding ports and IP addresses isn't used to configure the protocols and might not match the actual protocol configuration. To view and configure protocols, use SQL Server Configura"
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "WHERE des.session_id = @@SPID"
 ---
 

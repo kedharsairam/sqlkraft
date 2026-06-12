@@ -1,33 +1,10 @@
 ---
 title: "Table-Valued Parameters"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Table-valued parameters are declared by using user-defined table types. You can use table-
-
-  v
-tags:
-  - "tables"
-  - "table-valued-parameters"
-pubDate: 2025-12-01
+description: "Table-valued parameters are declared by using user-defined table types. You can use table- v"
+tags: ["tables","table-valued-parameters"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Table-valued parameters are declared by using user-defined table types. You can use table-
 

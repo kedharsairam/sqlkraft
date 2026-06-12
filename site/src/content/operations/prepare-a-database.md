@@ -1,21 +1,10 @@
 ---
 title: "Prepare a database"
 topic: "high-availability"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Before a database mirroring session can start, the database owner or system administrator
-
-  must make sure that the mirror database has been created and is ready for mirroring.
-tags:
-  - "high-availability"
-  - "prepare-a-database"
-pubDate: 2025-12-01
+description: "Before a database mirroring session can start, the database owner or system administrator must make sure that the mirror database has been created and is ready for mirroring."
+tags: ["high-availability","prepare-a-database"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 Before a database mirroring session can start, the database owner or system administrator
 

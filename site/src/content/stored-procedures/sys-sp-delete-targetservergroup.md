@@ -4,7 +4,7 @@ title: "sp_delete_targetservergroup"
 category: "general"
 description: "Deletes the specified target server group."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "Servers Processing Customer Orders"
 ---
 

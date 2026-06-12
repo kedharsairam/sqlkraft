@@ -3,8 +3,8 @@ name: "Table variables vs temporary tables"
 title: "Table variables vs temporary tables"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 Indexes can't be created explicitly on

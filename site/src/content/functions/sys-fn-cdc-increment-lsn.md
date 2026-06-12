@@ -3,8 +3,8 @@ name: "sys.fn_cdc_increment_lsn"
 title: "sys.fn_cdc_increment_lsn"
 category: "change-data-capture"
 description: "Returns the next log sequence number (LSN) in the sequence based upon the specified LSN. The LSN value returned by the function is always greater than the specified value, and no LSN values exist between the two values."
-tags: ["change-data-capture", "function"]
-pubDate: 2026-05-29
+tags: ["change-data-capture","function"]
+pubDate: "2026-05-29"
 syntax: "sys.fn_cdc_increment_lsn"
 ---
 

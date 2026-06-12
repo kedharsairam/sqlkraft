@@ -1,31 +1,14 @@
 ---
 title: "Choose a method"
 topic: "upgrade"
-description: |
-  ﾃ
-
-  Summarize this article for me
-
-  Applies to:
-
-  SQL Server
-
-  on Windows
-
-  There are several approaches to consider when you're planning to upgrade the Database
-
-  Engine from a prior release of SQL Server,
-tags:
-  - "upgrade"
-  - "choose-a-method"
-pubDate: 2025-12-01
+description: "ﾃ Summarize this article for me on Windows There are several approaches to consider when you're planning to upgrade the Database Engine from a prior release of SQL Server,"
+tags: ["upgrade","choose-a-method"]
+pubDate: "2025-12-01"
 ---
 
 ﾃ
 
 Summarize this article for me
-
-SQL Server
 
 on Windows
 

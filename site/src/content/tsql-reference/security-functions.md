@@ -3,19 +3,9 @@ name: "Security Functions"
 title: "Security Functions"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The following functions return information that is useful in managing security. Additional functions are listed under
 

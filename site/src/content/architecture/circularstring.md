@@ -1,37 +1,10 @@
 ---
 title: "CircularString"
 topic: "spatial-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL analytics endpoint in Microsoft Fabric
-
-  Warehouse in Microsoft Fabric
-
-  SQL
-
-  database in Microsoft Fabric
-
-  A
-
-  is a collectio
-tags:
-  - "spatial-data"
-  - "circularstring"
-pubDate: 2025-12-01
+description: "SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric A is a collectio"
+tags: ["spatial-data","circularstring"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 SQL analytics endpoint in Microsoft Fabric
 

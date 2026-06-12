@@ -2,9 +2,9 @@
 name: "To Get an Email Notification"
 title: "To Get an Email Notification"
 description: ""
-category: automation
+category: "automation"
 tags: ["automation"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

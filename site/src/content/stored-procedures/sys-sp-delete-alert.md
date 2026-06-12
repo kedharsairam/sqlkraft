@@ -4,12 +4,12 @@ title: "sp_delete_alert"
 category: "general"
 description: "Removing an alert also removes any notifications associated with the alert. permissions on this procedure, but these permissions might be overridden during a SQL Server upgrade."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_delete_alert [ @name = ]
-  N
-  'name'
-  [ ; ]
+      N
+      'name'
+      [ ; ]
 ---
 
 ## Description

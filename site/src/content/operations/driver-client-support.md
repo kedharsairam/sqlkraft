@@ -1,21 +1,10 @@
 ---
 title: "Driver & client support"
 topic: "high-availability"
-description: |
-  Applies to:
-
-  SQL Server
-
-  This article describes considerations for client connectivity to Always On availability groups,
-
-  including prerequisites, restrictions, and recommendations for client configur
-tags:
-  - "high-availability"
-  - "driver-client-support"
-pubDate: 2025-12-01
+description: "This article describes considerations for client connectivity to Always On availability groups, including prerequisites, restrictions, and recommendations for client configur"
+tags: ["high-availability","driver-client-support"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 This article describes considerations for client connectivity to Always On availability groups,
 
@@ -94,8 +83,6 @@ Yes
 Microsoft ODBC
 
 Driver 13.1+ for
-
-SQL Server
 
 Yes
 

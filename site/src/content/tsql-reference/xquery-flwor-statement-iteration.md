@@ -4,15 +4,9 @@ title: "XQuery - FLWOR Statement & Iteration"
 category: "xquery"
 description: "XQuery Language Reference: FLWOR Statement & Iteration"
 syntax: "for"
-tags:
-  - "xquery"
-  - "flwor-statement-iteration"
-pubDate: 2025-12-01
+tags: ["xquery","flwor-statement-iteration"]
+pubDate: "2025-12-01"
 ---
-
-09/29/2025
-
-SQL Server
 
 XQuery defines the FLWOR iteration syntax. FLWOR is the acronym for
 

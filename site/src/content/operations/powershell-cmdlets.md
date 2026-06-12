@@ -1,33 +1,10 @@
 ---
 title: "PowerShell Cmdlets"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/04/2024
-
-  Applies to:
-
-  SQL Server
-
-  Microsoft PowerShell is a task-based command-line shell and scripting language designed
-
-  especially for system administration. Always On availability g
-tags:
-  - "high-availability"
-  - "powershell-cmdlets"
-pubDate: 2025-12-01
+description: "Microsoft PowerShell is a task-based command-line shell and scripting language designed especially for system administration. Always On availability g"
+tags: ["high-availability","powershell-cmdlets"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/04/2024
-
-SQL Server
 
 Microsoft PowerShell is a task-based command-line shell and scripting language designed
 

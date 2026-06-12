@@ -1,25 +1,10 @@
 ---
 title: "SQL Server 2025"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article provides details of features supported by the various editions of SQL Server 2025
-
-  (17.x) on Linux.
-
-  For editions and supported features of SQL Server o
-tags:
-  - "linux-operations"
-  - "sql-server-2025-2"
-pubDate: 2025-12-01
+description: "on Linux This article provides details of features supported by the various editions of SQL Server 2025 (17.x) on Linux. For editions and supported features of SQL Server o"
+tags: ["linux-operations","sql-server-2025-2"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

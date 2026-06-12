@@ -1,35 +1,10 @@
 ---
 title: "Scan:Started Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Scan:Started event class occurs when a table or index scan is started.
-
-  Description
-
-  Appl
-tags:
-  - "event-classes"
-  - "scanstarted-event-class"
-pubDate: 2025-12-01
+description: "The Scan:Started event class occurs when a table or index scan is started. Description Appl"
+tags: ["event-classes","scanstarted-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Scan:Started event class occurs when a table or index scan is started.
 

@@ -1,37 +1,10 @@
 ---
 title: "Example: Specifying the ID & IDREFS Directives"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  An element attribute can be specified as an
-
-  type attribute, and the
-
-  attribute can
-
-  then be
-tags:
-  - "xml-data"
-  - "example-specifying-the-id-idrefs-directives"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","example-specifying-the-id-idrefs-directives"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 An element attribute can be specified as an
 

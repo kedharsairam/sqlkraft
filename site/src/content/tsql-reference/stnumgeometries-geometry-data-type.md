@@ -3,8 +3,8 @@ name: "STNumGeometries (geometry Data Type)"
 title: "STNumGeometries (geometry Data Type)"
 category: "data-types"
 description: "Returns the number of geometries in a geometry collection."
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

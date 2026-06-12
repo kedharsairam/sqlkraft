@@ -3,8 +3,8 @@ name: "Comparison of supported GROUP BY features"
 title: "Comparison of supported GROUP BY features"
 category: "queries"
 description: ""
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 For a
@@ -72,8 +72,6 @@ The following table describes the
 features that different products support.
 
 Integration Services
-
-SQL Server
 
 aggregates
 

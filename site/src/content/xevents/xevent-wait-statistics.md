@@ -3,9 +3,9 @@ name: "xevent_wait_statistics"
 title: "Wait Statistics Capture with Extended Events"
 category: "wait-statistics"
 description: "Architect a high-precision wait statistics monitoring pipeline using Extended Events — capture wait_type, wait_time, and blocking_session_id at per-wait granularity without the overhead of sys.dm_os_wait_stats polling."
-tags: ["extended-events", "wait-statistics", "wait_info", "performance-monitoring", "sql_os", "diagnostics"]
+tags: ["extended-events","wait-statistics","wait_info","performance-monitoring","sql_os","diagnostics"]
 targetVersion: "SQL Server 2012+"
-pubDate: 2026-05-30
+pubDate: "2026-05-30"
 ---
 
 ## Overview

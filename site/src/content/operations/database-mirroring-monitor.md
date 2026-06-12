@@ -1,35 +1,10 @@
 ---
 title: "Database Mirroring Monitor"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  The Database Mirroring Monitor is part of the SQL Server Monitor, which is launched from SQL
-
-  Server Management Studio.
-
-  1. After connecting to the pri
-tags:
-  - "high-availability"
-  - "database-mirroring-monitor"
-pubDate: 2025-12-01
+description: "The Database Mirroring Monitor is part of the SQL Server Monitor, which is launched from SQL Server Management Studio. 1."
+tags: ["high-availability","database-mirroring-monitor"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 The Database Mirroring Monitor is part of the SQL Server Monitor, which is launched from SQL
 

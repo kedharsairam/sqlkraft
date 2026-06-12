@@ -1,33 +1,10 @@
 ---
 title: "Mixed type & simple content"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  SQL Server doesn't support restricting a mixed type to a simple content.
-
-  In the following XM
-tags:
-  - "xml-data"
-  - "mixed-type-simple-content"
-pubDate: 2025-12-01
+description: "doesn't support restricting a mixed type to a simple content. In the following XM"
+tags: ["xml-data","mixed-type-simple-content"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 doesn't support restricting a mixed type to a simple content.
 

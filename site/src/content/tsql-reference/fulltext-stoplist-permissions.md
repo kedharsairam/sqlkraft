@@ -3,8 +3,8 @@ name: "FULLTEXT STOPLIST Permissions"
 title: "FULLTEXT STOPLIST Permissions"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 database user mapped to a Windows group

@@ -3,8 +3,8 @@ name: "Spatial operations"
 title: "Spatial operations"
 category: "data-types"
 description: "Reduce (geometry Data Type)"
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

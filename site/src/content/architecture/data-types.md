@@ -1,35 +1,10 @@
 ---
 title: "Data Types"
 topic: "spatial-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL analytics endpoint in Microsoft Fabric
-
-  Warehouse in Microsoft Fabric
-
-  SQL
-
-  database in Microsoft Fabric
-
-  There are two typ
-tags:
-  - "spatial-data"
-  - "data-types"
-pubDate: 2025-12-01
+description: ""
+tags: ["spatial-data","data-types"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 SQL analytics endpoint in Microsoft Fabric
 

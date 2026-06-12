@@ -1,47 +1,10 @@
 ---
 title: "Rebuild System Databases"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  07/22/2024
-
-  Applies to:
-
-  SQL Server
-
-  System databases must be rebuilt to fix corruption problems in the
-
-  master
-
-  ,
-
-  model
-
-  ,
-
-  msdb
-
-  , or
-
-  resource
-
-  system databases, or to modify the defau
-tags:
-  - "collation"
-  - "rebuild-system-databases"
-pubDate: 2025-12-01
+description: ""
+tags: ["collation","rebuild-system-databases"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-07/22/2024
-
-SQL Server
 
 System databases must be rebuilt to fix corruption problems in the
 

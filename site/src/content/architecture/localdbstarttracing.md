@@ -1,33 +1,10 @@
 ---
 title: "LocalDBStartTracing"
 topic: "clr-integration"
-description: |
-  07/14/2025
-
-  Applies to:
-
-  SQL Server
-
-  Enables tracing of API calls for all the SQL Server Express LocalDB instances owned by the
-
-  current Windows user.
-
-  C++
-
-  : The function succeeded.
-
-  Description
-
-  LOC
-tags:
-  - "clr-integration"
-  - "localdbstarttracing"
-pubDate: 2025-12-01
+description: "07/14/2025 Enables tracing of API calls for all the SQL Server Express LocalDB instances owned by the current Windows user. C++ : The function succeeded. Description LOC"
+tags: ["clr-integration","localdbstarttracing"]
+pubDate: "2025-12-01"
 ---
-
-07/14/2025
-
-SQL Server
 
 Enables tracing of API calls for all the SQL Server Express LocalDB instances owned by the
 

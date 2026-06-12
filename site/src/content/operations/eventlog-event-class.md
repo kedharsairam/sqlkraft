@@ -1,33 +1,10 @@
 ---
 title: "EventLog Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The EventLogevent class indicates that events have been logged in the Microsoft Windows
-
-  even
-tags:
-  - "event-classes"
-  - "eventlog-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","eventlog-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The EventLogevent class indicates that events have been logged in the Microsoft Windows
 

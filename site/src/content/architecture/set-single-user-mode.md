@@ -1,33 +1,10 @@
 ---
 title: "Set single-user mode"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  07/22/2024
-
-  Applies to:
-
-  SQL Server
-
-  This article describes how to set a user-defined database to single-user mode in SQL Server by
-
-  using SQL Server Management Studio or Transact-SQL. Sin
-tags:
-  - "collation"
-  - "set-single-user-mode"
-pubDate: 2025-12-01
+description: "This article describes how to set a user-defined database to single-user mode in SQL Server by using SQL Server Management Studio or Transact-SQL. Sin"
+tags: ["collation","set-single-user-mode"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-07/22/2024
-
-SQL Server
 
 This article describes how to set a user-defined database to single-user mode in SQL Server by
 

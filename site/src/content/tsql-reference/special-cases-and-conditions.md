@@ -3,8 +3,8 @@ name: "Special Cases and Conditions"
 title: "Special Cases and Conditions"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 If the target entity is not a database and the entity is being transferred to a new owner, all

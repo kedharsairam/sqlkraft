@@ -1,43 +1,10 @@
 ---
 title: "OLEDB QueryInterface Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs when SQL Server issues an OLE DB
-
-  call for distributed queries and remote store
-tags:
-  - "event-classes"
-  - "oledb-queryinterface-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","oledb-queryinterface-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

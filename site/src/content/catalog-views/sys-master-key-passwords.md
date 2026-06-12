@@ -3,8 +3,8 @@ name: "sys.master_key_passwords"
 title: "sys.master_key_passwords"
 category: "compatibility"
 description: "Returns a row for each database master key password added by using the stored procedure. The passwords that are used to protect the master keys are stored in the credential store. The credential name follows this format: ##DBMKEY_<database_family_guid>_<random_password_guid>##. The password is stored as the credential secret. For each password added by using of which is protected by the password a"
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "sp_control_dbmasterkey_password"
 ---
 

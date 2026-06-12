@@ -2,8 +2,8 @@
 title: "Hot add CPU"
 topic: "query-processing"
 description: "Microsoft Windows uses a numeric priority system that ranges from 1 through 31 to schedule"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Microsoft Windows uses a numeric priority system that ranges from 1 through 31 to schedule

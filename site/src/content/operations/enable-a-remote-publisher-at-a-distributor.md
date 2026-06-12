@@ -1,39 +1,10 @@
 ---
 title: "Enable a Remote Publisher at a Distributor"
 topic: "migration"
-description: |
-  Article
-
-  •
-
-  09/27/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Enable a Publisher to use a remote Distributor on the
-
-  page. This page is available in
-
-  the Configure Distribution Wizard a
-tags:
-  - "migration"
-  - "enable-a-remote-publisher-at-a-distributor"
-pubDate: 2025-12-01
+description: "Enable a Publisher to use a remote Distributor on the page. This page is available in the Configure Distribution Wizard a"
+tags: ["migration","enable-a-remote-publisher-at-a-distributor"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/27/2024
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Enable a Publisher to use a remote Distributor on the
 

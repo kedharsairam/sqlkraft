@@ -1,47 +1,10 @@
 ---
 title: "Nested queries"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  data type and the
-
-  TYPE directive in FOR XML queries
-
-  enable the XML returned by the
-
-  FOR XML quer
-tags:
-  - "xml-data"
-  - "nested-queries"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","nested-queries"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

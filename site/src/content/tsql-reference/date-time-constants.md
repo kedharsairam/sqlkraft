@@ -3,8 +3,8 @@ name: "Date-time constants"
 title: "Date-time constants"
 category: "data-types"
 description: "Binary constants have the prefix"
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 Binary constants have the prefix

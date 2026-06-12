@@ -3,8 +3,8 @@ name: "Use compatibility level for backward compatibility"
 title: "Use compatibility level for backward compatibility"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 When a stored procedure executes, it uses the current compatibility level of the database in

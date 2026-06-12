@@ -1,33 +1,10 @@
 ---
 title: "Create a Trace"
 topic: "profiler"
-description: |
-  06/05/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article describes how to use SQL Server Profiler to create a trace.
-
-  1. On the
-
-  menu, select
-
-  , and connect to an instance of SQL
-tags:
-  - "profiler"
-  - "create-a-trace"
-pubDate: 2025-12-01
+description: "06/05/2025 This article describes how to use SQL Server Profiler to create a trace. 1. On the menu, select , and connect to an instance of SQL"
+tags: ["profiler","create-a-trace"]
+pubDate: "2025-12-01"
 ---
-
-06/05/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article describes how to use SQL Server Profiler to create a trace.
 

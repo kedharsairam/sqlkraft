@@ -1,33 +1,10 @@
 ---
 title: "Namespace Support in PATH Mode"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Namespace support in the PATH mode is provided by using WITH NAMESPACES. For example,
-
-  the fo
-tags:
-  - "xml-data"
-  - "namespace-support-in-path-mode"
-pubDate: 2025-12-01
+description: "Namespace support in the PATH mode is provided by using WITH NAMESPACES."
+tags: ["xml-data","namespace-support-in-path-mode"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Namespace support in the PATH mode is provided by using WITH NAMESPACES. For example,
 

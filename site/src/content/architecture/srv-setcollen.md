@@ -1,37 +1,10 @@
 ---
 title: "srv_setcollen"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Specifies the current data length in bytes of a variable-length column or a column that allows
-
-  NULL values.
-
-  srvproc
-
-  Is a pointer to the SRV_PROC str
-tags:
-  - "clr-integration"
-  - "srv-setcollen"
-pubDate: 2025-12-01
+description: "Specifies the current data length in bytes of a variable-length column or a column that allows NULL values."
+tags: ["clr-integration","srv-setcollen"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Specifies the current data length in bytes of a variable-length column or a column that allows
 

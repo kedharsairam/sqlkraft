@@ -4,22 +4,22 @@ title: "sp_droppullsubscription"
 category: "general"
 description: "Drops a subscription at the current database of the Subscriber. This stored procedure is executed at the Subscriber on the pull subscription database. dropped at all the Publishers."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_droppullsubscription
-  [ @publisher = ]
-  N
-  'publisher'
-  [ , [ @publisher_db = ]
-  N
-  'publisher_db'
-  ]
-  , [ @publication = ]
-  N
-  'publication'
-  [ , [ @reserved = ] reserved ]
-  [ , [ @from_backup = ] from_backup ]
-  [ ; ]
+      [ @publisher = ]
+      N
+      'publisher'
+      [ , [ @publisher_db = ]
+      N
+      'publisher_db'
+      ]
+      , [ @publication = ]
+      N
+      'publication'
+      [ , [ @reserved = ] reserved ]
+      [ , [ @from_backup = ] from_backup ]
+      [ ; ]
 ---
 
 ## Description

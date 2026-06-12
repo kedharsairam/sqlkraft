@@ -1,41 +1,10 @@
 ---
 title: "Requirements & Limitations"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  04/15/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The XML schema definition language (XSD) validation has some limitations regarding SQL
-
-  columns that us
-tags:
-  - "xml-data"
-  - "requirements-limitations"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","requirements-limitations"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/15/2024
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The XML schema definition language (XSD) validation has some limitations regarding SQL
 

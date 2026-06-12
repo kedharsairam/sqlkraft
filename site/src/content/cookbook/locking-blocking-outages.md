@@ -1,15 +1,12 @@
 ---
 name: "Locking & Blocking Outages"
 title: "Locking & Blocking Outages"
-category: blocking
-severity: critical
+category: "blocking"
+severity: "critical"
 description: "Diagnostic workflow for identifying and resolving blocking chains, deadlocks, and lock contention using DMVs, wait types, and troubleshooting scripts."
-tags: ["blocking", "locking", "deadlock", "contention", "performance"]
-relatedContent:
-  dmvs: ["sys-dm-tran-locks", "sys-dm-exec-requests", "sys-dm-os-waiting-tasks"]
-  waits: ["LCK_M_S", "LCK_M_U", "LCK_M_X", "LCK_M_IX", "LCK_M_SCH_M", "LCK_M_SCH_S"]
-  scripts: ["to-identify-blockings", "to-identify-the-lead-blocker-or-blocking-chain", "to-identify-deadlock", "to-view-locks"]
-pubDate: 2026-05-30
+tags: ["blocking","locking","deadlock","contention","performance"]
+relatedContent: ""
+pubDate: "2026-05-30"
 ---
 
 Blocking is a natural part of transactional SQL Server — but prolonged blocking chains halt throughput and cause application timeouts. This guide walks through identifying the lead blocker, resolving lock contention, and capturing deadlock graphs.

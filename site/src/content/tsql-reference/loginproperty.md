@@ -3,8 +3,8 @@ name: "LOGINPROPERTY"
 title: "LOGINPROPERTY"
 category: "statements"
 description: "Returns information about login policy settings."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

@@ -4,13 +4,9 @@ title: "XQuery - Comments in XQuery"
 category: "xquery"
 description: "XQuery Language Reference: Comments in XQuery"
 syntax: "(:"
-tags:
-  - "xquery"
-  - "comments-in-xquery"
-pubDate: 2025-12-01
+tags: ["xquery","comments-in-xquery"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 You can add comments to XQuery. Add comment strings by using the and
 

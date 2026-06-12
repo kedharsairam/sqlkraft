@@ -2,8 +2,8 @@
 title: "Configure the hash index bucket count"
 topic: "index-architecture"
 description: "The interplay of the hash index and the buckets is summarized in the following image."
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The interplay of the hash index and the buckets is summarized in the following image.

@@ -2,8 +2,8 @@
 title: "Appendix: Alternate technique"
 topic: "query-processing"
 description: "Using the technique above we were able to confirm that the contention was occurring on a"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Using the technique above we were able to confirm that the contention was occurring on a

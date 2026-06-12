@@ -1,37 +1,10 @@
 ---
 title: "SQL Server features"
 topic: "monitor"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  WideWorldImporters use of SQL Server features and capabilities in the OLTP database.
-
-  WideWorldImporters is designed to showcase ma
-tags:
-  - "monitor"
-  - "sql-server-features"
-pubDate: 2025-12-01
+description: "WideWorldImporters use of SQL Server features and capabilities in the OLTP database."
+tags: ["monitor","sql-server-features"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
 
 WideWorldImporters use of SQL Server features and capabilities in the OLTP database.
 
@@ -42,8 +15,6 @@ including the latest features introduced in SQL Server 2016. The following table
 features and capabilities of SQL Server. Each row also provides a description of how the
 
 features are used in WideWorldImporters.
-
-SQL Server
 
 Temporal tables
 

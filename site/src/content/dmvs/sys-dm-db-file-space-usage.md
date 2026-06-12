@@ -3,8 +3,8 @@ name: "sys.dm_db_file_space_usage"
 title: "sys.dm_db_file_space_usage"
 category: "file"
 description: "Returns space usage information for each data file in the database. In Azure SQL Database, the values are unique within a single database or an elastic pool, but not within a : SQL Server 2012 (11.x) and later versions. : SQL Server 2012 (11.x) and later versions. Total number of pages in the data file. : SQL Server 2012 (11.x) and later versions."
-tags: ["file", "dmv"]
-pubDate: 2026-05-29
+tags: ["file","dmv"]
+pubDate: "2026-05-29"
 syntax: "allocated_extent_page_count"
 ---
 

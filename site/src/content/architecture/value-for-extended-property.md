@@ -1,45 +1,10 @@
 ---
 title: "Value for Extended Property"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Use the
-
-  <property name>
-
-  dialog box to enter or view a value. This is a common
-
-  dialog box that can be
-tags:
-  - "collation"
-  - "value-for-extended-property"
-pubDate: 2025-12-01
+description: "Use the <property name> dialog box to enter or view a value."
+tags: ["collation","value-for-extended-property"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Use the
 

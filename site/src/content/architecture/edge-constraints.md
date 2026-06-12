@@ -1,35 +1,16 @@
 ---
 title: "Edge constraints"
 topic: "sql-graph"
-description: |
-  Applies to:
-
-  SQL Server 2019 (15.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Edge constraints can be used to enforce data integrity and sp
-tags:
-  - "sql-graph"
-  - "edge-constraints"
-pubDate: 2025-12-01
+description: ""
+tags: ["sql-graph","edge-constraints"]
+pubDate: "2025-12-01"
 ---
 
 2019 (15.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Edge constraints can be used to enforce data integrity and specific semantics on the edge
 

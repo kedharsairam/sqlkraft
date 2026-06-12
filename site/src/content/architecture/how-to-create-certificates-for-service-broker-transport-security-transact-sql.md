@@ -1,31 +1,10 @@
 ---
 title: "How to: Create Certificates for Service Broker Transport Security (Transact-SQL)"
 topic: "service-broker"
-description: |
-  09/02/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  To set up Service Broker transport security for an instance of SQL Server, you first create a
-
-  certificate in the
-
-  database by using th
-tags:
-  - "service-broker"
-  - "how-to-create-certificates-for-service-broker-transport-security-transact-sql"
-pubDate: 2025-12-01
+description: ""
+tags: ["service-broker","how-to-create-certificates-for-service-broker-transport-security-transact-sql"]
+pubDate: "2025-12-01"
 ---
-
-09/02/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 To set up Service Broker transport security for an instance of SQL Server, you first create a
 

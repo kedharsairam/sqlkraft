@@ -2,8 +2,8 @@
 title: "Isolation levels in the Database Engine"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 When multiple transactions attempt to modify data in a database at the same time, a system of
@@ -184,7 +184,7 @@ database option is set
 
 , which is the default setting in
 
-Azure SQL Database, the
+, the
 
 isolation level uses row versioning to provide
 

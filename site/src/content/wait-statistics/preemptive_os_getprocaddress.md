@@ -1,11 +1,11 @@
 ---
-name: PREEMPTIVE_OS_GETPROCADDRESS
+name: "PREEMPTIVE_OS_GETPROCADDRESS"
 title: "Preemptive OS GetProcAddress Wait"
-category: baseline
-severity: info
+category: "baseline"
+severity: "info"
 description: "Occurs during preemptive OS operations where SQL Server calls Windows API GetProcAddress to resolve DLL function addresses. Typically a startup or configuration operation."
-tags: ["os", "preemptive", "api"]
-pubDate: 2026-05-29
+tags: ["os","preemptive","api"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

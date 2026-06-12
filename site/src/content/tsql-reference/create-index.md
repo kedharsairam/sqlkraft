@@ -3,21 +3,13 @@ name: "CREATE INDEX"
 title: "CREATE INDEX"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ### Examples:
 
 ### Server and Azure SQL index architecture and design guide
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -37,7 +29,7 @@ and Analytics Platform System (PDW) currently don't support unique
 
 constraints. Any examples referencing unique constraints are only applicable to SQL Server,
 
-Azure SQL Database, SQL database in Microsoft Fabric, and Azure SQL Managed Instance.
+, SQL database in Microsoft Fabric, and Azure SQL Managed Instance.
 
 For information on index design guidelines, refer to the
 

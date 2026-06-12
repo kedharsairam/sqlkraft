@@ -1,29 +1,10 @@
 ---
 title: "Complete the upgrade"
 topic: "upgrade"
-description: |
-  06/04/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  After upgrading the Database Engine, complete the following tasks:
-
-  Perform a full backup of each database.
-
-  In SQL Server 2016 (13.x) and later ve
-tags:
-  - "upgrade"
-  - "complete-the-upgrade"
-pubDate: 2025-12-01
+description: "06/04/2025 - Windows only After upgrading the Database Engine, complete the following tasks: Perform a full backup of each database."
+tags: ["upgrade","complete-the-upgrade"]
+pubDate: "2025-12-01"
 ---
-
-06/04/2025
-
-SQL Server
 
 - Windows only
 

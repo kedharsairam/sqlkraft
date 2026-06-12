@@ -3,25 +3,21 @@ title: "How to: Delete Objects & Resolve Dependencies"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  When you rename or delete an object in
-
-  SQL Server Object Explorer
-
-  , SQL Server Data Tools
-
-  (SSDT) automatically detects all its dependency objects, and prepares an
-
-  script to
-
-  rename or
-tags:
-  - "ssb-diagnose"
-  - "how-to-delete-objects-resolve-dependencies"
-pubDate: 2025-12-01
+  
+    When you rename or delete an object in
+  
+    SQL Server Object Explorer
+  
+    , SQL Server Data Tools
+  
+    (SSDT) automatically detects all its dependency objects, and prepares an
+  
+    script to
+  
+    rename or
+tags: ["ssb-diagnose","how-to-delete-objects-resolve-dependencies"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 When you rename or delete an object in
 

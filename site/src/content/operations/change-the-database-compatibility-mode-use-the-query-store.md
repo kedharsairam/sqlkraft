@@ -1,31 +1,10 @@
 ---
 title: "Change the database compatibility mode & use the Query Store"
 topic: "upgrade"
-description: |
-  06/04/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  In SQL Server 2016 (13.x) and later, some changes are only enabled once the
-
-  database
-
-  compatibility level
-
-  has been changed. This was done for sev
-tags:
-  - "upgrade"
-  - "change-the-database-compatibility-mode-use-the-query-store"
-pubDate: 2025-12-01
+description: "06/04/2025 - Windows only In SQL Server 2016 (13.x) and later, some changes are only enabled once the database compatibility level has been changed."
+tags: ["upgrade","change-the-database-compatibility-mode-use-the-query-store"]
+pubDate: "2025-12-01"
 ---
-
-06/04/2025
-
-SQL Server
 
 - Windows only
 

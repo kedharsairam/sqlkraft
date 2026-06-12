@@ -1,29 +1,12 @@
 ---
 title: "Linux FAQ"
 topic: "linux-operations"
-description: |
-  SQL Server on Linux frequently asked
-
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  The following sections provide common questions and answers for SQL Server running on Linux.
-
-  1.
-
-  SQL Server is currently suppo
-tags:
-  - "linux-operations"
-  - "linux-faq"
-pubDate: 2025-12-01
+description: "on Linux frequently asked on Linux The following sections provide common questions and answers for SQL Server running on Linux. 1."
+tags: ["linux-operations","linux-faq"]
+pubDate: "2025-12-01"
 ---
 
 on Linux frequently asked
-
-SQL Server
 
 on Linux
 

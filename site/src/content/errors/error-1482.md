@@ -1,12 +1,12 @@
 ---
-name: "1482"
+name: 1482
 title: "Error 1482"
 errorNumber: 1482
 severity: "medium"
 category: "io"
 description: "Description column of the sys.database_mirroring catalog view."
-tags: ["io", "severity-medium"]
-pubDate: 2026-05-29
+tags: ["io","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

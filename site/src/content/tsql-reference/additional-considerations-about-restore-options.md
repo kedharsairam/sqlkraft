@@ -3,8 +3,8 @@ name: "Additional Considerations About RESTORE Options"
 title: "Additional Considerations About RESTORE Options"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Discontinued RESTORE Keywords

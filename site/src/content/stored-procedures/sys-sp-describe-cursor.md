@@ -4,25 +4,25 @@ title: "sp_describe_cursor"
 category: "general"
 description: "A data type for variables or stored procedure OUTPUT parameters that contain a reference to a The operations that can reference variables and parameters having a @local_variable @local_variable The OPEN, FETCH, CLOSE, and DEALLOCATE cursor statements. Stored procedure output parameters. The CURSOR_STATUS function. syste"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_describe_cursor
-  [ @cursor_return = ] cursor_return
-  OUTPUT
-  , [ @cursor_source = ] {
-  N
-  'local'
-  |
-  N
-  'global'
-  |
-  N
-  '*cursor_source*'
-  }
-  , [ @cursor_identity = ]
-  N
-  'cursor_identity'
-  [ ; ]
+      [ @cursor_return = ] cursor_return
+      OUTPUT
+      , [ @cursor_source = ] {
+      N
+      'local'
+      |
+      N
+      'global'
+      |
+      N
+      '*cursor_source*'
+      }
+      , [ @cursor_identity = ]
+      N
+      'cursor_identity'
+      [ ; ]
 ---
 
 ## Description
@@ -52,12 +52,6 @@ N
 ```
 
 ## Remarks
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 A data type for variables or stored procedure OUTPUT parameters that contain a reference to a
 

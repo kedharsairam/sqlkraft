@@ -4,22 +4,22 @@ title: "sp_addumpdevice"
 category: "general"
 description: "Adds a backup device to an instance of SQL Server. , with no default, and can be one of the Hard disk file as a backup device. Any tape devices supported by Microsoft Windows. : Support for tape backup devices will be removed in a future version of SQL Server."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_addumpdevice
-  [ @devtype = ]
-  'devtype'
-  , [ @logicalname = ]
-  N
-  'logicalname'
-  , [ @physicalname = ]
-  N
-  'physicalname'
-  [ , [ @cntrltype = ] cntrltype ]
-  [ , [ @devstatus = ]
-  'devstatus'
-  ]
-  [ ; ]
+      [ @devtype = ]
+      'devtype'
+      , [ @logicalname = ]
+      N
+      'logicalname'
+      , [ @physicalname = ]
+      N
+      'physicalname'
+      [ , [ @cntrltype = ] cntrltype ]
+      [ , [ @devstatus = ]
+      'devstatus'
+      ]
+      [ ; ]
 ---
 
 ## Description

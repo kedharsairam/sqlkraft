@@ -3,8 +3,8 @@ name: "level 120"
 title: "Level 120"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Database improvements in handling some data types and

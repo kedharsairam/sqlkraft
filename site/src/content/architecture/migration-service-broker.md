@@ -1,29 +1,10 @@
 ---
 title: "Migration (Service Broker)"
 topic: "service-broker"
-description: |
-  09/10/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  The usual process for migrating a Service Broker application is to move the database that
-
-  contains the application to another instance
-tags:
-  - "service-broker"
-  - "migration-service-broker"
-pubDate: 2025-12-01
+description: "09/10/2025 The usual process for migrating a Service Broker application is to move the database that contains the application to another instance"
+tags: ["service-broker","migration-service-broker"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The usual process for migrating a Service Broker application is to move the database that
 

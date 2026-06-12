@@ -1,37 +1,10 @@
 ---
 title: "Configure accounts"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  For two server instances to connect to each other's
-
-  database mirroring endpoint
-
-  point, the
-
-  login account of each instance requires access to the oth
-tags:
-  - "high-availability"
-  - "configure-accounts"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","configure-accounts"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 For two server instances to connect to each other's
 

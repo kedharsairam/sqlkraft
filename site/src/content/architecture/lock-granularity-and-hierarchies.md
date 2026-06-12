@@ -2,8 +2,8 @@
 title: "Lock granularity and hierarchies"
 topic: "locking"
 description: ""
-tags: ["locking", "architecture"]
-pubDate: 2026-05-29
+tags: ["locking","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Locking is a mechanism used by the Database Engine to synchronize access by multiple users to

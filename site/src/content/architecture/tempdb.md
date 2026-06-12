@@ -1,35 +1,10 @@
 ---
 title: "tempdb"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article describes the
-
-  system database, a global resource available to all users
-
-  connec
-tags:
-  - "collation"
-  - "tempdb"
-pubDate: 2025-12-01
+description: "This article describes the system database, a global resource available to all users connec"
+tags: ["collation","tempdb"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article describes the
 

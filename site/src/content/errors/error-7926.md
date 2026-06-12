@@ -1,12 +1,12 @@
 ---
-name: "7926"
+name: 7926
 title: "Error 7926"
 errorNumber: 7926
 severity: "medium"
 category: "io"
 description: "Description pages used in %I64d dedicated extents. 7926 16 No Check statement aborted."
-tags: ["io", "severity-medium"]
-pubDate: 2026-05-29
+tags: ["io","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

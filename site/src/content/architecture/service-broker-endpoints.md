@@ -1,31 +1,10 @@
 ---
 title: "Service Broker Endpoints"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  SQL Server uses Service Broker endpoints for Service Broker communication outside of the SQL
-
-  Server instance.
-
-  An endpoint is a SQL Se
-tags:
-  - "service-broker"
-  - "service-broker-endpoints"
-pubDate: 2025-12-01
+description: "09/11/2025 SQL Server uses Service Broker endpoints for Service Broker communication outside of the SQL Server instance. An endpoint is a SQL Se"
+tags: ["service-broker","service-broker-endpoints"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 uses Service Broker endpoints for Service Broker communication outside of the SQL
 

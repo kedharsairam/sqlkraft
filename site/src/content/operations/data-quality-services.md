@@ -1,27 +1,10 @@
 ---
 title: "Data Quality Services"
 topic: "upgrade"
-description: |
-  06/04/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  This article provides information on how to upgrade your existing installation of SQL Server Data
-
-  Quality Services (DQS). As part of upgrading you
-tags:
-  - "upgrade"
-  - "data-quality-services"
-pubDate: 2025-12-01
+description: "06/04/2025 - Windows only This article provides information on how to upgrade your existing installation of SQL Server Data Quality Services (DQS)."
+tags: ["upgrade","data-quality-services"]
+pubDate: "2025-12-01"
 ---
-
-06/04/2025
-
-SQL Server
 
 - Windows only
 

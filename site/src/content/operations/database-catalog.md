@@ -1,37 +1,10 @@
 ---
 title: "Database catalog"
 topic: "monitor"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  The WideWorldImporters database contains all the transaction information and daily data for
-
-  sales and purchases, as well as sensor
-tags:
-  - "monitor"
-  - "database-catalog"
-pubDate: 2025-12-01
+description: "The WideWorldImporters database contains all the transaction information and daily data for sales and purchases, as well as sensor"
+tags: ["monitor","database-catalog"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
 
 The WideWorldImporters database contains all the transaction information and daily data for
 

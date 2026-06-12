@@ -1,33 +1,10 @@
 ---
 title: "Add secondary replica"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/04/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to add a secondary replica to an existing Always On availability group
-
-  by using SQL Server Management Studio, Transact-SQL, o
-tags:
-  - "high-availability"
-  - "add-secondary-replica"
-pubDate: 2025-12-01
+description: "This topic describes how to add a secondary replica to an existing Always On availability group by using SQL Server Management Studio, Transact-SQL, o"
+tags: ["high-availability","add-secondary-replica"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/04/2024
-
-SQL Server
 
 This topic describes how to add a secondary replica to an existing Always On availability group
 

@@ -3,19 +3,9 @@ name: "System Statistical Functions"
 title: "System Statistical Functions"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The following scalar functions return statistical information about the system:
 

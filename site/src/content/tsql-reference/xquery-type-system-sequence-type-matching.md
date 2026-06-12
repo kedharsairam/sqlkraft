@@ -4,19 +4,9 @@ title: "XQuery - Type System - Sequence Type Matching"
 category: "xquery"
 description: "XQuery Language Reference: Type System - Sequence Type Matching"
 syntax: "instance of"
-tags:
-  - "xquery"
-  - "type-system-sequence-type-matching"
-pubDate: 2025-12-01
+tags: ["xquery","type-system-sequence-type-matching"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 An XQuery expression value is always a sequence of zero or more items. An item can be either
 

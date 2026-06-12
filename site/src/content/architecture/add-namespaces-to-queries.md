@@ -1,43 +1,10 @@
 ---
 title: "Add namespaces to queries"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  WITH XMLNAMESPACES (Transact-SQL)
-
-  provides namespace URI support in the following way:
-
-  It makes the n
-tags:
-  - "xml-data"
-  - "add-namespaces-to-queries"
-pubDate: 2025-12-01
+description: "WITH XMLNAMESPACES (Transact-SQL) provides namespace URI support in the following way: It makes the n"
+tags: ["xml-data","add-namespaces-to-queries"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 WITH XMLNAMESPACES (Transact-SQL)
 

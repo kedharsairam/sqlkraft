@@ -3,8 +3,8 @@ name: "CREATE EXTERNAL FILE FORMAT (Transact-"
 title: "CREATE EXTERNAL FILE FORMAT (Transact-"
 category: "statements"
 description: "2016 (13.x) and later versions"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ### Delimited text
@@ -23,17 +23,11 @@ SQL)
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
-
-SQL database in Microsoft Fabric
 
 Creates an external file format object defining external data stored in Hadoop, Azure Blob
 

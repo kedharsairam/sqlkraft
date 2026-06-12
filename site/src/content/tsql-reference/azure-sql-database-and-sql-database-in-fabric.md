@@ -3,8 +3,8 @@ name: "Azure SQL Database and SQL database in Fabric"
 title: "Azure SQL Database and SQL database in Fabric"
 category: "operators"
 description: "2025 (17.x)"
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 ### Supplemental
@@ -18,8 +18,6 @@ pubDate: 2026-05-29
 ## Regional availability
 
 2025 (17.x)
-
-Azure SQL Database
 
 SQL database in Microsoft
 

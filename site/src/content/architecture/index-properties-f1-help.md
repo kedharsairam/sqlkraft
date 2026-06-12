@@ -1,32 +1,10 @@
 ---
 title: "Index Properties F1 Help"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The sections in this topic refer to various index properties that are available by using SQL
-
-tags:
-  - "filestream"
-  - "index-properties-f1-help"
-pubDate: 2025-12-01
+description: "The sections in this topic refer to various index properties that are available by using SQL"
+tags: ["filestream","index-properties-f1-help"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The sections in this topic refer to various index properties that are available by using SQL
 

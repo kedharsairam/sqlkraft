@@ -1,35 +1,10 @@
 ---
 title: "Configure replication"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  01/08/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  Configuring SQL Server replication and Always On availability groups involves seven steps.
-
-  Each step is described in more detail in th
-tags:
-  - "high-availability"
-  - "configure-replication"
-pubDate: 2025-12-01
+description: "- Windows only Configuring SQL Server replication and Always On availability groups involves seven steps."
+tags: ["high-availability","configure-replication"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-01/08/2025
-
-SQL Server
 
 - Windows only
 

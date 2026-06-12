@@ -4,7 +4,7 @@ title: "sp_helpmergeconflictrows"
 category: "general"
 description: "Returns the rows in the specified conflict table. This stored procedure is run on the computer where the conflict table is stored. specified, all conflicts qualified by the publication are returned. For example, if the table has conflict rows for the retrieves conflicts that pertain to the The name of the conflict table. , with no default."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "MSmerge_conflict_Customers"
 ---
 

@@ -2,8 +2,8 @@
 title: "Security"
 topic: "query-processing"
 description: "Specifying the SQLOLEDB provider for linked servers."
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Deprecated feature

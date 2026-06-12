@@ -3,8 +3,8 @@ name: "sys.database_mirroring"
 title: "sys.database_mirroring"
 category: "compatibility"
 description: "Returns one row for each database in the instance of SQL Server. If the database isn't ONLINE or database mirroring isn't enabled, the values of all columns except database_id are NULL."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

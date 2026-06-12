@@ -1,33 +1,10 @@
 ---
 title: "Domain-independent availability groups"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  04/26/2024
-
-  Applies to:
-
-  SQL Server
-
-  Always On availability groups (AGs) require an underlying Windows Server Failover Cluster
-
-  (WSFC). Deploying a WSFC through Windows Server 2012 R2 requ
-tags:
-  - "high-availability"
-  - "domain-independent-availability-groups"
-pubDate: 2025-12-01
+description: "Always On availability groups (AGs) require an underlying Windows Server Failover Cluster (WSFC)."
+tags: ["high-availability","domain-independent-availability-groups"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/26/2024
-
-SQL Server
 
 Always On availability groups (AGs) require an underlying Windows Server Failover Cluster
 

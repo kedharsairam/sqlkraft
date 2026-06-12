@@ -3,8 +3,8 @@ name: "Security considerations"
 title: "Security considerations"
 category: "statements"
 description: "principal must exist even when the user is accessing the database or instance of SQL Server"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 principal must exist even when the user is accessing the database or instance of SQL Server

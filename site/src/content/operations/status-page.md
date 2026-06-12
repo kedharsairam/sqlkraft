@@ -1,33 +1,10 @@
 ---
 title: "Status Page"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  This read-only page displays the most recent mirroring status for the principal and mirror
-
-  server instances of the database currently selected in the
-tags:
-  - "high-availability"
-  - "status-page"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","status-page"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 This read-only page displays the most recent mirroring status for the principal and mirror
 

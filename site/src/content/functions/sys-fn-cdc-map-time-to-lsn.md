@@ -3,19 +3,19 @@ name: "sys.fn_cdc_map_time_to_lsn"
 title: "sys.fn_cdc_map_time_to_lsn"
 category: "date-time"
 description: "Returns the log sequence number (LSN) value from the system table for the specified time. You can use this function to systematically map datetime ranges into the LSN-based range needed by the change data cdc.fn_cdc_get_all_changes_<capture_instance> cdc.fn_cdc_get_net_changes_<capture_instance> to return data changes within that range. Used to identify a distinct L"
-tags: ["date-time", "function"]
-pubDate: 2026-05-29
+tags: ["date-time","function"]
+pubDate: "2026-05-29"
 syntax: |
   sys.fn_cdc_map_time_to_lsn (
-  '<relational_operator>'
-  , tracking_time )
-  <relational_operator>
-  ::=
-  { largest less than
-  | largest less than or equal
-  | smallest greater than
-  | smallest greater than or equal
-  }
+    '<relational_operator>'
+    , tracking_time )
+    <relational_operator>
+    ::=
+    { largest less than
+    | largest less than or equal
+    | smallest greater than
+    | smallest greater than or equal
+    }
 ---
 
 ## Description

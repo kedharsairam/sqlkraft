@@ -3,8 +3,8 @@ name: "ShortestLineTo (geography Data Type)"
 title: "ShortestLineTo (geography Data Type)"
 category: "data-types"
 description: "LineString geography LineString geography geography geography geography LineString geography LineString geography LineString geography"
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 LineString

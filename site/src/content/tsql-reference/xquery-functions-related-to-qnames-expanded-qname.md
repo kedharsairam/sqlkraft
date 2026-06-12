@@ -4,15 +4,9 @@ title: "XQuery - Functions Related to QNames - expanded-QName"
 category: "xquery"
 description: "XQuery Language Reference: Functions Related to QNames - expanded-QName"
 syntax: "<e> expanded-QName(...) </e>"
-tags:
-  - "xquery"
-  - "functions-related-to-qnames-expanded-qname"
-pubDate: 2025-12-01
+tags: ["xquery","functions-related-to-qnames-expanded-qname"]
+pubDate: "2025-12-01"
 ---
-
-08/21/2025
-
-SQL Server
 
 Returns a value of the xs:QName type with the namespace URI specified in the
 

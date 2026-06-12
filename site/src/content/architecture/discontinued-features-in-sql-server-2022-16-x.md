@@ -2,11 +2,9 @@
 title: "Discontinued features in SQL Server 2022 (16.x)"
 topic: "query-processing"
 description: "This article describes the Database Engine features that are no longer available in SQL Server."
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
 
 This article describes the Database Engine features that are no longer available in SQL Server.
 

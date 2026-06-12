@@ -2,8 +2,8 @@
 title: "Columnstore index architecture"
 topic: "index-architecture"
 description: "The following example creates a table with columns of different data types."
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The following example creates a table with columns of different data types.

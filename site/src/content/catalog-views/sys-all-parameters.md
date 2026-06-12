@@ -3,8 +3,8 @@ name: "sys.all_parameters"
 title: "sys.all_parameters"
 category: "compatibility"
 description: "Shows the union of all parameters that belong to user-defined or system objects."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

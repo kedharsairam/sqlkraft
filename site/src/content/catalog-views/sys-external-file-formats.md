@@ -3,21 +3,21 @@ name: "sys.external_file_formats"
 title: "sys.external_file_formats"
 category: "external"
 description: "2016 (13.x) and later Azure SQL Database Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) Removes a PolyBase external file format."
-tags: ["external", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["external","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   -- Drop an external file format
-  DROP
-  EXTERNAL
-  FILE
-  FORMAT
-  external_file_format_name
-  [;]
+      DROP
+      EXTERNAL
+      FILE
+      FORMAT
+      external_file_format_name
+      [;]
 ---
 
 ## Description
 
-2016 (13.x) and later Azure SQL Database Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) Removes a PolyBase external file format.
+2016 (13.x) and later Azure SQL Database Managed Instance Removes a PolyBase external file format.
 
 ## Syntax
 
@@ -34,11 +34,7 @@ FORMAT external_file_format_name
 
 2016 (13.x) and later
 
-Azure SQL Database
-
 Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

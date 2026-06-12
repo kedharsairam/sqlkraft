@@ -3,8 +3,8 @@ name: "Unsupported or error-prone scenarios"
 title: "Unsupported or error-prone scenarios"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 ## Explicit and implicit conversion between base types float32

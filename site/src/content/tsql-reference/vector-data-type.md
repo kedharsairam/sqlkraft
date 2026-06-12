@@ -3,8 +3,8 @@ name: "Vector data type"
 title: "Vector data type"
 category: "data-types"
 description: "T-SQL reference for Vector data type syntax and usage."
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 ### vector
@@ -27,13 +27,9 @@ Summarize this article for me
 
 2025 (17.x)
 
-Azure SQL Database
-
 Azure SQL Managed
 
 Instance
-
-SQL database in Microsoft Fabric
 
 The
 

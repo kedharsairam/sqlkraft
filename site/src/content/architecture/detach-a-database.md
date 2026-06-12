@@ -1,33 +1,10 @@
 ---
 title: "Detach a Database"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  04/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  This article describes how to detach a database in SQL Server with SQL Server Management
-
-  Studio or Transact-SQL. The detached files aren't deleted and
-tags:
-  - "collation"
-  - "detach-a-database"
-pubDate: 2025-12-01
+description: "This article describes how to detach a database in SQL Server with SQL Server Management Studio or Transact-SQL."
+tags: ["collation","detach-a-database"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/01/2024
-
-SQL Server
 
 This article describes how to detach a database in SQL Server with SQL Server Management
 

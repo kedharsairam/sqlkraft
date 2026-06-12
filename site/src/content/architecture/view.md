@@ -1,35 +1,10 @@
 ---
 title: "View"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  05/12/2023
-
-  Applies to:
-
-  SQL Server
-
-  This article explains how to view a SQL Server database snapshot using SQL Server
-
-  Management Studio.
-
-  1. In Object Explorer, connect to the instance o
-tags:
-  - "collation"
-  - "view"
-pubDate: 2025-12-01
+description: "This article explains how to view a SQL Server database snapshot using SQL Server Management Studio. 1. In Object Explorer, connect to the instance o"
+tags: ["collation","view"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-05/12/2023
-
-SQL Server
 
 This article explains how to view a SQL Server database snapshot using SQL Server
 
