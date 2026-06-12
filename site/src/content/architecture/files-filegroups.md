@@ -3,7 +3,7 @@ title: "Files & filegroups"
 topic: "collation"
 description: "At a minimum, every SQL Server database has two operating system files: a data file and a log file."
 tags: ["collation","files-filegroups"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 At a minimum, every SQL Server database has two operating system files: a data file and a log

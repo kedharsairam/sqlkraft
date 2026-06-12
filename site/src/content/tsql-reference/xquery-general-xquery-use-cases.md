@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: General XQuery Use Cases"
 syntax: "namespace"
 tags: ["xquery","general-xquery-use-cases"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article provides general examples of XQuery use.

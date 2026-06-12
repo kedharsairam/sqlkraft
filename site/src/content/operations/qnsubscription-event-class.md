@@ -3,7 +3,7 @@ title: "QN:Subscription Event Class"
 topic: "event-classes"
 description: "The QN:Subscription event reports information on notification subscriptions. Description Ap"
 tags: ["event-classes","qnsubscription-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The QN:Subscription event reports information on notification subscriptions.

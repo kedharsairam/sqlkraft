@@ -3,7 +3,7 @@ title: "Use hints with indexed views"
 topic: "index-architecture"
 description: "The estimated cost for using the index has the lowest cost of any access mechanisms"
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 clauses

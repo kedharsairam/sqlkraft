@@ -3,7 +3,7 @@ title: "Hash Warning Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","hash-warning-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Hash Warning event class can be used to monitor when a hash recursion or cessation of

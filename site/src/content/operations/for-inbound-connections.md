@@ -3,7 +3,7 @@ title: "For inbound connections"
 topic: "high-availability"
 description: "This topic describes the steps for configuring server instances to use certificates to authenticate inbound connections for database mirroring. Before"
 tags: ["high-availability","for-inbound-connections"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes the steps for configuring server instances to use certificates to authenticate

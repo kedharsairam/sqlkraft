@@ -3,7 +3,7 @@ title: "Integration Code Access Security"
 topic: "clr-integration"
 description: "07/23/2025 The common language runtime (CLR) supports a security model called code access security for managed code."
 tags: ["clr-integration","integration-code-access-security"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The common language runtime (CLR) supports a security model called code access security for

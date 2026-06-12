@@ -3,7 +3,7 @@ title: "CursorOpen Event Class"
 topic: "event-classes"
 description: "The event class describes cursor open events that occur in application programming interfac"
 tags: ["event-classes","cursoropen-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

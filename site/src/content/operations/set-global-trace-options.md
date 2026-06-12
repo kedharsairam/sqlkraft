@@ -3,7 +3,7 @@ title: "Set Global Trace Options"
 topic: "profiler"
 description: "06/06/2025 This article describes how to set options that apply to all traces that are created with a specific instance of SQL Server Profiler."
 tags: ["profiler","set-global-trace-options"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to set options that apply to all traces that are created with a specific

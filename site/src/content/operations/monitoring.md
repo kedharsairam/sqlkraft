@@ -3,7 +3,7 @@ title: "Monitoring"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","monitoring"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This section introduces Database Mirroring Monitor and the

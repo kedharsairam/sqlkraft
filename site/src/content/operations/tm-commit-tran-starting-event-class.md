@@ -3,7 +3,7 @@ title: "TM: Commit Tran Starting Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","tm-commit-tran-starting-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The TM: Commit Tran Starting event class indicates that a COMMIT TRANSACTION request is

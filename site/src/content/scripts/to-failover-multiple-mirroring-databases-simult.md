@@ -4,7 +4,7 @@ title: "To Failover Multiple Mirroring Databases simult"
 description: "diagnostic script for high-availability operations."
 category: "high-availability"
 tags: ["database","failover","high-availability","mirroring"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

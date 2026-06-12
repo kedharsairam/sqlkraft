@@ -3,12 +3,8 @@ title: "Polygon"
 topic: "spatial-data"
 description: "SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric A is a two-dimen"
 tags: ["spatial-data","polygon"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 database in Microsoft Fabric
 

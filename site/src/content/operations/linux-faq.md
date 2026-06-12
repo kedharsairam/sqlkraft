@@ -3,7 +3,7 @@ title: "Linux FAQ"
 topic: "linux-operations"
 description: "on Linux frequently asked on Linux The following sections provide common questions and answers for SQL Server running on Linux. 1."
 tags: ["linux-operations","linux-faq"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux frequently asked

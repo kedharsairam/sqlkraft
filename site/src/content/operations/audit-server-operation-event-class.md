@@ -3,7 +3,7 @@ title: "Audit Server Operation Event Class"
 topic: "event-classes"
 description: "The event class occurs when Security Audit operations such as altering settings, resources, external"
 tags: ["event-classes","audit-server-operation-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

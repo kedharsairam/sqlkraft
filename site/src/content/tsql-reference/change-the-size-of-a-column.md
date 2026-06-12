@@ -4,7 +4,7 @@ title: "Change the size of a column"
 category: "statements"
 description: "or online index rebuild DDL operation currently being run without taking"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Exit the

@@ -3,7 +3,7 @@ title: "Troubleshoot AD Authentication"
 topic: "linux-operations"
 description: "- Linux This article helps you troubleshoot Active Directory Domain Services authentication issues with SQL Server on Linux and containers. It includ"
 tags: ["linux-operations","troubleshoot-ad-authentication"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Linux

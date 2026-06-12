@@ -4,7 +4,7 @@ title: "To Encrypt Backup"
 description: ""
 category: "security-audit"
 tags: ["backup","encryption","security-audit"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

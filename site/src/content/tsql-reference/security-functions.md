@@ -4,7 +4,7 @@ title: "Security Functions"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following functions return information that is useful in managing security. Additional functions are listed under

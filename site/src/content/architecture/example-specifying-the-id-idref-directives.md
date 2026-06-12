@@ -3,7 +3,7 @@ title: "Example: Specifying the ID & IDREF Directives"
 topic: "xml-data"
 description: "This example is almost the same as the Specifying the ELEMENTXSINIL Directive example. The"
 tags: ["xml-data","example-specifying-the-id-idref-directives"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This example is almost the same as the

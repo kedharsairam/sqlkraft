@@ -3,7 +3,7 @@ title: "Shape XML with Nested FOR XML Queries"
 topic: "xml-data"
 description: "The following example queries the table to retrieve the and values of a specific product."
 tags: ["xml-data","shape-xml-with-nested-for-xml-queries"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following example queries the

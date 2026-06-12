@@ -3,7 +3,7 @@ title: "srv_rpcname"
 topic: "clr-integration"
 description: "Returns the procedure name component for the current remote stored procedure. srvproc Is a pointer to the SRV_PROC structure that is the handle for a"
 tags: ["clr-integration","srv-rpcname"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the procedure name component for the current remote stored procedure.

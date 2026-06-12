@@ -3,7 +3,7 @@ title: "Columns with a Name"
 topic: "xml-data"
 description: "The following are the specific conditions in which rowset columns with a name are mapped, case-sensiti"
 tags: ["xml-data","columns-with-a-name"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following are the specific conditions in which rowset columns with a name are mapped,

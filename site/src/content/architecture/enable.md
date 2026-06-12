@@ -3,7 +3,7 @@ title: "Enable"
 topic: "filestream"
 description: "This article describes how to enable a disabled index in SQL Server by using SQL Server Mana"
 tags: ["filestream","enable"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to enable a disabled index in SQL Server by using SQL Server

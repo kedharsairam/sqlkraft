@@ -3,7 +3,7 @@ title: "SQL Assessment API"
 topic: "linux-operations"
 description: "SQL Assessment API The SQL Assessment API provides a mechanism to evaluate the configuration of your SQL Server for best practices."
 tags: ["linux-operations","sql-assessment-api"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQL Assessment API

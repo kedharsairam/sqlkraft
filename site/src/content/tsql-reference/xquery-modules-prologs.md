@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Modules & Prologs"
 syntax: "version"
 tags: ["xquery","modules-prologs"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 XQuery Prolog is a series of namespace declarations. In using the declare namespace in prolog, you can specify prefix to namespace binding and use the prefix in the query body.

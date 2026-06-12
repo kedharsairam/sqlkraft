@@ -3,7 +3,7 @@ title: "Coding"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","coding"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When coding your user-defined type (UDT) definition, you must implement various features,

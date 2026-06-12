@@ -3,7 +3,7 @@ title: "Backup on Secondary Replica"
 topic: "high-availability"
 description: "The Always On availability groups active secondary capabilities include support for taking backups on secondary replicas. Backup operations can put significant strain on I/O"
 tags: ["high-availability","backup-on-secondary-replica"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Always On availability groups active secondary capabilities include support for taking

@@ -4,13 +4,13 @@ title: "sp_help_log_shipping_primary_secondary"
 category: "general"
 description: "This stored procedure returns information regarding all the secondary databases for a given The name of the database on the primary server."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_help_log_shipping_primary_secondary
-      [ @primary_database = ]
-      N
-      'primary_database'
-      [ ; ]
+              [ @primary_database = ]
+              N
+              'primary_database'
+              [ ; ]
 ---
 
 ## Description

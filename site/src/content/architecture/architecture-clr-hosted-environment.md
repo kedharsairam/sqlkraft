@@ -3,7 +3,7 @@ title: "Architecture - CLR Hosted Environment"
 topic: "clr-integration"
 description: "integration with the .NET Framework common language runtime (CLR) enables database programmers to use languages"
 tags: ["clr-integration","architecture-clr-hosted-environment"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 integration with the.NET Framework common language runtime (CLR) enables

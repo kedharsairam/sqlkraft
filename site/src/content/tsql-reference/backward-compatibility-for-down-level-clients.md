@@ -4,7 +4,7 @@ title: "Backward Compatibility for Down-level Clients"
 category: "statements"
 description: "Milliseconds can be preceded by either a colon (:) or a period (.)."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

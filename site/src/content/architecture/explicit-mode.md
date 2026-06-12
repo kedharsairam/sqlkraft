@@ -3,7 +3,7 @@ title: "EXPLICIT Mode"
 topic: "xml-data"
 description: "As described in the article, Constructing XML Using FOR XML , RAW and AUTO mode don't provide much c"
 tags: ["xml-data","explicit-mode"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 As described in the article,

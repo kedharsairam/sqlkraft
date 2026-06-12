@@ -4,16 +4,16 @@ title: "sp_addrolemember"
 category: "general"
 description: "Adds a database user, database role, Windows login, or Windows group to a database role in The name of the database role in the current database. The security account being added to the role."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_addrolemember
-      [ @rolename = ]
-      N
-      'rolename'
-      , [ @membername = ]
-      N
-      'membername'
-      [ ; ]
+              [ @rolename = ]
+              N
+              'rolename'
+              , [ @membername = ]
+              N
+              'membername'
+              [ ; ]
 ---
 
 ## Description

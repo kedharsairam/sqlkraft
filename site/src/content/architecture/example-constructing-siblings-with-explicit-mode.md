@@ -3,7 +3,7 @@ title: "Example: Constructing Siblings with EXPLICIT Mode"
 topic: "xml-data"
 description: "Assume that you want to construct XML that provides sales order information. In this example,"
 tags: ["xml-data","example-constructing-siblings-with-explicit-mode"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Assume that you want to construct XML that provides sales order information. In this example,

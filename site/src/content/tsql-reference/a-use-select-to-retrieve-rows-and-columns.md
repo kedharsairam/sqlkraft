@@ -4,7 +4,7 @@ title: "A. Use SELECT to retrieve rows and columns"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 This article provides examples of using the

@@ -3,7 +3,7 @@ title: "For outbound connections"
 topic: "high-availability"
 description: "This topic describes the steps for configuring server instances to use certificates to authenticate outbound connections for database mirroring. Outbo"
 tags: ["high-availability","for-outbound-connections"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes the steps for configuring server instances to use certificates to authenticate

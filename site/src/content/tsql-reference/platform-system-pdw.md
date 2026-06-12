@@ -4,7 +4,7 @@ title: "Platform System (PDW)"
 category: "statements"
 description: "SET ROWCOUNT stops processing after the specified number of rows. In the following"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 SET ROWCOUNT stops processing after the specified number of rows. In the following

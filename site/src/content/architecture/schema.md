@@ -3,7 +3,7 @@ title: "Schema"
 topic: "filestream"
 description: "Describes the pre-defined and fixed schema of a FileTable. Description variable A that identifies the position of this item. The position of t"
 tags: ["filestream","schema"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Describes the pre-defined and fixed schema of a FileTable.

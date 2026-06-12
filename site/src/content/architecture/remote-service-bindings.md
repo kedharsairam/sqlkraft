@@ -3,7 +3,7 @@ title: "Remote Service Bindings"
 topic: "service-broker"
 description: ""
 tags: ["service-broker","remote-service-bindings"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A remote service binding establishes a relationship between a local database user, the

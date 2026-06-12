@@ -4,7 +4,7 @@ title: "managed_backup.fn_backup_db_config"
 category: "backup-restore"
 description: "2016 (13.x) and later versions Returns 0, 1 or more rows with SQL Server managed backup to Microsoft Azure configuration settings. Returns 1 row for the specified database, or returns the information for all the databases configured with SQL Server managed backup to Microsoft Azure on the instance."
 tags: ["backup-restore","function"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "managed_backup.fn_backup_db_config ('database_name' | '' | NULL)"
 ---
 

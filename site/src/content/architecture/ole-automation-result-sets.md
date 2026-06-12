@@ -3,7 +3,7 @@ title: "OLE automation result sets"
 topic: "spatial-data"
 description: "If an OLE Automation property or method returns data in an array with one or two dimensions, the array is returned to the client as a result set: A o"
 tags: ["spatial-data","ole-automation-result-sets"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If an OLE Automation property or method returns data in an array with one or two dimensions,

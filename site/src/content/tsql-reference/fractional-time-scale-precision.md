@@ -4,7 +4,7 @@ title: "Fractional time scale precision"
 category: "data-types"
 description: "Accepts any expression, column, or user-defined variable that can resolve to any valid T-SQL"
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ,

@@ -3,7 +3,7 @@ title: "Monitor (preview)"
 topic: "azure-synapse"
 description: "You can monitor SQL Server enabled by Azure Arc by using the performance dashboard in the Azure portal. Performance metrics are automatically collecte"
 tags: ["azure-synapse","monitor-preview"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can monitor SQL Server enabled by Azure Arc by using the performance dashboard in the

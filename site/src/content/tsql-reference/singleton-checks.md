@@ -4,7 +4,7 @@ title: "Singleton checks"
 category: "statements"
 description: "When reporting errors,"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Example: Known singleton

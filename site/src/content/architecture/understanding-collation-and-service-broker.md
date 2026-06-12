@@ -3,7 +3,7 @@ title: "Understanding Collation and Service Broker"
 topic: "service-broker"
 description: "09/11/2025 Service Broker is designed to let services and applications communicate easily and efficiently in instances with different collation c"
 tags: ["service-broker","understanding-collation-and-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker is designed to let services and applications communicate easily and efficiently in

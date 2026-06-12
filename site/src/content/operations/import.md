@@ -3,7 +3,7 @@ title: "Import"
 topic: "profiler"
 description: "06/06/2025 This article describes how to import a trace template file (.tdf) by using SQL Server Profiler. 1."
 tags: ["profiler","import"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to import a trace template file (.tdf) by using SQL Server Profiler.

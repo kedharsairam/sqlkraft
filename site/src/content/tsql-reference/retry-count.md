@@ -4,7 +4,7 @@ title: "Retry count"
 category: "statements"
 description: "specifies the directory on the local SQL Server instance where the ONNX"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 specifies the directory on the local SQL Server instance where the ONNX

@@ -4,7 +4,7 @@ title: "sys.spatial_reference_systems"
 category: "spatial"
 description: "Lists the spatial reference systems (SRIDs) supported by SQL Server. The SRID supported by SQL Server. authorized_spatial_reference_id The SRID given by the authority named in The WKT representation of the SRID."
 tags: ["spatial","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

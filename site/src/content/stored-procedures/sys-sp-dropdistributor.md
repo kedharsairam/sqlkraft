@@ -4,12 +4,12 @@ title: "sp_dropdistributor"
 category: "general"
 description: "Uninstalls the Distributor. This stored procedure is executed at the Distributor on any database except the distribution database. Indicates whether to check for dependent objects before dropping the Distributor. checks to make sure that all publishing and distribution objects were dropped, in addition to the Distributor."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_dropdistributor
-      [ [ @no_checks = ] no_checks ]
-      [ , [ @ignore_distributor = ] ignore_distributor ]
-      [ ; ]
+              [ [ @no_checks = ] no_checks ]
+              [ , [ @ignore_distributor = ] ignore_distributor ]
+              [ ; ]
 ---
 
 ## Description

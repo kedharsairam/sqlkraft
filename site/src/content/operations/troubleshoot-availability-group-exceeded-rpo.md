@@ -3,7 +3,7 @@ title: "Troubleshoot: Availability group exceeded RPO"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","troubleshoot-availability-group-exceeded-rpo"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 After you perform a forced manual failover on an availability group to an asynchronous-

@@ -3,7 +3,7 @@ title: "Failover to secondary"
 topic: "high-availability"
 description: "Failing over to a log shipping secondary is useful if the primary server instance fails or requires maintenance. Typically, the primary and secondary"
 tags: ["high-availability","failover-to-secondary"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Failing over to a log shipping secondary is useful if the primary server instance fails or requires

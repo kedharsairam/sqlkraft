@@ -3,7 +3,7 @@ title: "Security Overview (Service Broker)"
 topic: "service-broker"
 description: "08/29/2025 Service Broker helps you write highly scalable database applications that are also secure and reliable. Service Broker security allows"
 tags: ["service-broker","security-overview-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker helps you write highly scalable database applications that are also secure and

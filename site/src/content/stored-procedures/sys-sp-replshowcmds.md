@@ -4,10 +4,10 @@ title: "sp_replshowcmds"
 category: "general"
 description: "Returns the commands for transactions marked for replication in readable format."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_replshowcmds [ [ @maxtrans = ] maxtrans ]
-      [ ; ]
+              [ ; ]
 ---
 
 ## Description

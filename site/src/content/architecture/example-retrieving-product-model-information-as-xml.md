@@ -3,7 +3,7 @@ title: "Example: Retrieving Product Model Information as XML"
 topic: "xml-data"
 description: "The following query returns product model information. mode is specified in the clause. SQ"
 tags: ["xml-data","example-retrieving-product-model-information-as-xml"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following query returns product model information.

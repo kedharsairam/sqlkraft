@@ -3,7 +3,7 @@ title: "How to: Create Certificates for Service Broker Transport Security (Trans
 topic: "service-broker"
 description: ""
 tags: ["service-broker","how-to-create-certificates-for-service-broker-transport-security-transact-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To set up Service Broker transport security for an instance of SQL Server, you first create a

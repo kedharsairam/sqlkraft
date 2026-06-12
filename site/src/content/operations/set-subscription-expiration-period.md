@@ -3,7 +3,7 @@ title: "Set Subscription expiration period"
 topic: "migration"
 description: "This topic describes how to set the expiration period for subscriptions in SQL Server by using SQL Server Management Studi"
 tags: ["migration","set-subscription-expiration-period"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to set the expiration period for subscriptions in SQL Server by using

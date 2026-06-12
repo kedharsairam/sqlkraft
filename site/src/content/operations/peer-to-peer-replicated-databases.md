@@ -3,7 +3,7 @@ title: "Peer-to-peer replicated databases"
 topic: "upgrade"
 description: "on Windows This article provides guidance on how to upgrade or patch SQL Server instances that participate in peer-to-peer (P2P) replication , both outside of an Always On"
 tags: ["upgrade","peer-to-peer-replicated-databases"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Windows

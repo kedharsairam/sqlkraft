@@ -3,7 +3,7 @@ title: "Failover & failover modes"
 topic: "high-availability"
 description: "06/16/2025 This article describes failover and failover modes for SQL Server Always On availability groups ."
 tags: ["high-availability","failover-failover-modes"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes failover and failover modes for SQL Server

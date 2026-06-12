@@ -3,7 +3,7 @@ title: "Design guidance"
 topic: "filestream"
 description: ""
 tags: ["filestream","design-guidance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

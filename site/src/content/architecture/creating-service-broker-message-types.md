@@ -3,7 +3,7 @@ title: "Creating Service Broker Message Types"
 topic: "service-broker"
 description: "08/29/2025 A message type defines the name of a specific kind of message and the validation that Service Broker performs on that kind of message."
 tags: ["service-broker","creating-service-broker-message-types"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A message type defines the name of a specific kind of message and the validation that Service

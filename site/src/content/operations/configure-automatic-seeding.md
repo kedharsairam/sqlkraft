@@ -3,7 +3,7 @@ title: "Configure automatic seeding"
 topic: "high-availability"
 description: "2016 introduced automatic seeding of availability groups. When you create an availability group with automatic seeding, SQL Server automati"
 tags: ["high-availability","configure-automatic-seeding"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 introduced automatic seeding of availability groups. When you create an

@@ -3,7 +3,7 @@ title: "Delete data or log files from a database"
 topic: "collation"
 description: "This topic describes how to delete data or log files in SQL Server by using SQL Server Management Studio or Transact-SQL."
 tags: ["collation","delete-data-or-log-files-from-a-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to delete data or log files in SQL Server by using SQL Server

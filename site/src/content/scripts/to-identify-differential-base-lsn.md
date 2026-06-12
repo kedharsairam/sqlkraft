@@ -4,7 +4,7 @@ title: "To Identify Differential Base LSN"
 description: "diagnostic script for backup-restore operations."
 category: "backup-restore"
 tags: ["backup-restore"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

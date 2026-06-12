@@ -3,7 +3,7 @@ title: "Transaction log logical architecture"
 topic: "io-fundamentals"
 description: ""
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 transaction log architecture and

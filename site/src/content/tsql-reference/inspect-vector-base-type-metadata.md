@@ -4,7 +4,7 @@ title: "Inspect vector base type metadata"
 category: "predicates"
 description: "The following query confirms actual base type and dimensions of a"
 tags: ["tsql","predicates"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following query confirms actual base type and dimensions of a column: SQL

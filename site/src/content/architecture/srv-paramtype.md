@@ -3,7 +3,7 @@ title: "srv_paramtype"
 topic: "clr-integration"
 description: "Returns the data type of a remote stored procedure call parameter. srvproc Is a pointer to the SRV_PROC structure that is the handle for a particular"
 tags: ["clr-integration","srv-paramtype"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the data type of a remote stored procedure call parameter.

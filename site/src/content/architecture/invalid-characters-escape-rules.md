@@ -3,7 +3,7 @@ title: "Invalid Characters & escape rules"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","invalid-characters-escape-rules"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how invalid XML characters are handled by the FOR XML clause, and lists

@@ -3,7 +3,7 @@ title: "Step 3. SSL/TLS handshake"
 topic: "query-processing"
 description: "Both the client driver and SQL Server need to know a bit about each other."
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Both the client driver and SQL Server need to know a bit about each other. In this

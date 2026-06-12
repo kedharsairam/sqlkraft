@@ -5,7 +5,7 @@ category: "xquery"
 description: ""
 syntax: "fn:max($arg as xdt:anyAtomicType*) as xdt:anyAtomicType?"
 tags: ["xquery","aggregate-functions-max"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns from a sequence of atomic values,

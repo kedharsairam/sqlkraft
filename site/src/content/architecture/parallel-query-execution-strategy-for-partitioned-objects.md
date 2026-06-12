@@ -3,7 +3,7 @@ title: "Parallel query execution strategy for partitioned objects"
 topic: "query-processing"
 description: "In this case, multiple worker threads on the outer side of the join each read and work on a"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 In this case, multiple worker threads on the outer side of the join each read and work on a

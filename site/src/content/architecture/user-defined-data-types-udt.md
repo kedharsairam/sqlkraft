@@ -3,7 +3,7 @@ title: "User-Defined Data Types (UDT)"
 topic: "xml-data"
 description: "doesn't support common language runtime (CLR) user-defined data types (UDTs). To use with C"
 tags: ["xml-data","user-defined-data-types-udt"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 doesn't support common language runtime (CLR) user-defined data types (UDTs).

@@ -3,7 +3,7 @@ title: "Readable secondary"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","readable-secondary"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Always On availability groups active secondary capabilities include support for read-only

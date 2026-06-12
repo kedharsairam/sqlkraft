@@ -3,7 +3,7 @@ title: "Use Nested FOR XML Queries in ASP.NET"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","use-nested-for-xml-queries-in-aspnet"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this example, an ASP.NET application returns XML to a browser by executing a stored

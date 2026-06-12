@@ -3,7 +3,7 @@ title: "Understanding When Activation Occurs"
 topic: "service-broker"
 description: "09/10/2025 The Service Broker activation process consists of two steps. First, Service Broker determines whether activation is necessary. Second,"
 tags: ["service-broker","understanding-when-activation-occurs"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Service Broker activation process consists of two steps. First, Service Broker determines

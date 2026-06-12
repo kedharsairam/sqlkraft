@@ -3,7 +3,7 @@ title: "Add namespaces to queries"
 topic: "xml-data"
 description: "WITH XMLNAMESPACES (Transact-SQL) provides namespace URI support in the following way: It makes the n"
 tags: ["xml-data","add-namespaces-to-queries"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 WITH XMLNAMESPACES (Transact-SQL)

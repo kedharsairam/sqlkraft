@@ -3,7 +3,7 @@ title: "Locking in the Database Engine"
 topic: "locking"
 description: ""
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 For more information about the specific types of locking or row versioning controlled by each

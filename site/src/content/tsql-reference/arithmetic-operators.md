@@ -4,7 +4,7 @@ title: "Arithmetic operators"
 category: "operators"
 description: ""
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Operator
@@ -16,10 +16,6 @@ datetime
 smalldatetime
 
 Analytics Platform System (PDW)
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 Arithmetic operators run mathematical operations on two expressions of one or more data types. They're run from the numeric data type category. For more information about data type categories, see.
 

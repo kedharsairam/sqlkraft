@@ -3,7 +3,7 @@ title: "Canonical forms & pattern restrictions"
 topic: "xml-data"
 description: "The XSD pattern facet allows for the restriction of the lexical space of simple types. When a"
 tags: ["xml-data","canonical-forms-pattern-restrictions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The XSD pattern facet allows for the restriction of the lexical space of simple types. When a

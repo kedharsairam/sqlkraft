@@ -3,7 +3,7 @@ title: "Compare a database and a project"
 topic: "ssms"
 description: ""
 tags: ["ssms","compare-a-database-and-a-project"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Understanding the object definition differences between a database and a SQL project can

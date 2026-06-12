@@ -4,7 +4,7 @@ title: "CollectionAggregate (geometry Data Type)"
 category: "data-types"
 description: "Returns a geometry instance from a collection of geometry types."
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 ## Syntax
 

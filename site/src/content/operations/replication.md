@@ -3,7 +3,7 @@ title: "Replication"
 topic: "high-availability"
 description: "Database mirroring can be used in conjunction with replication to improve availability for the publication database. Database mirroring involves two c"
 tags: ["high-availability","replication"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Database mirroring can be used in conjunction with replication to improve availability for the

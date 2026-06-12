@@ -3,7 +3,7 @@ title: "Specify a Breakpoint Condition"
 topic: "ssb-diagnose"
 description: "09/10/2025 A breakpoint condition is a Transact-SQL expression that the debugger evaluates when the breakpoint is reached."
 tags: ["ssb-diagnose","specify-a-breakpoint-condition"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A breakpoint condition is a Transact-SQL expression that the debugger evaluates when the

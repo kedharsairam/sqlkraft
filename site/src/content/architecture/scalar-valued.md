@@ -3,7 +3,7 @@ title: "Scalar-valued"
 topic: "clr-integration"
 description: "A scalar-valued function (SVF) returns a single value, such as a string, integer, or bit value."
 tags: ["clr-integration","scalar-valued"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A scalar-valued function (SVF) returns a single value, such as a string, integer, or bit value. You

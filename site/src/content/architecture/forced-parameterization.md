@@ -3,7 +3,7 @@ title: "Forced parameterization"
 topic: "io-fundamentals"
 description: "When processing complex Transact-SQL statements, the relational engine can have difficulty"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 When processing complex Transact-SQL statements, the relational engine can have difficulty

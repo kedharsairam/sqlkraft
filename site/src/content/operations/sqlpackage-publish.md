@@ -3,16 +3,16 @@ title: "SqlPackage Publish"
 topic: "sqlpackage"
 description: |
   SqlPackage Publish parameters, properties, and
-  
-    SQLCMD variables
-  
-    07/30/2025
-  
-    The SqlPackage publish operation incrementally updates the schema of a target database to match the structure of a
-  
-    source
+          
+            SQLCMD variables
+          
+            07/30/2025
+          
+            The SqlPackage publish operation incrementally updates the schema of a target database to match the structure of a
+          
+            source
 tags: ["sqlpackage","sqlpackage-publish"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SqlPackage Publish parameters, properties, and

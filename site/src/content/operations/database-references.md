@@ -3,7 +3,7 @@ title: "Database references"
 topic: "ssms"
 description: ""
 tags: ["ssms","database-references"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Database references in SQL projects enable you to incorporate objects that aren't included in a

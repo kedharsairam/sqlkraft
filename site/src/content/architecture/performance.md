@@ -3,7 +3,7 @@ title: "Performance"
 topic: "clr-integration"
 description: "This article discusses some of the design choices that enhance the performance of SQL Server integration with the .NET Fra"
 tags: ["clr-integration","performance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article discusses some of the design choices that enhance the performance of SQL Server

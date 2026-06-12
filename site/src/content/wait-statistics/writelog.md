@@ -5,7 +5,7 @@ category: "io"
 severity: "high"
 description: "Occurs when waiting for the transaction log to be flushed to disk. One of the most important I/O signals. High WRITELOG indicates log drive latency, excessive transactions, or insufficient log throughput."
 tags: ["io","log","transaction","flush"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["analyze-log-throughput"]
 ---
 

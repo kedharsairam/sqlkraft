@@ -3,7 +3,7 @@ title: "CursorUnprepare Event Class"
 topic: "event-classes"
 description: "The event class provides information about cursor unprepare events that occur in applicatio"
 tags: ["event-classes","cursorunprepare-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

@@ -3,7 +3,7 @@ title: "Automatic checkpoints"
 topic: "query-processing"
 description: "A minimally logged operation is performed in the database; for example, a bulk-copy"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 A minimally logged operation is performed in the database; for example, a bulk-copy

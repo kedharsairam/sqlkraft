@@ -4,7 +4,7 @@ title: "Change the seed value"
 category: "statements"
 description: "value."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 increment

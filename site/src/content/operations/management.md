@@ -3,7 +3,7 @@ title: "Management"
 topic: "monitor"
 description: "managing partners 09/09/2025 To manage your SQL Server services, choose from a wide variety of industry-leading tools. This article highlights Microsoft partner"
 tags: ["monitor","management"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 managing partners

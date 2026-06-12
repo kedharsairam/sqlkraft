@@ -3,7 +3,7 @@ title: "Internal Activation Context"
 topic: "service-broker"
 description: "09/03/2025 This article describes the execution context for a stored procedure that is started by internal activation."
 tags: ["service-broker","internal-activation-context"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes the execution context for a stored procedure that is started by internal

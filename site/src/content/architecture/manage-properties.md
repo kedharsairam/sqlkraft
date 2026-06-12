@@ -3,7 +3,7 @@ title: "Manage properties"
 topic: "collation"
 description: "This topic describes how to view or change the properties of a database in SQL Server by using SQL Ser"
 tags: ["collation","manage-properties"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to view or change the properties of a database in SQL Server by using

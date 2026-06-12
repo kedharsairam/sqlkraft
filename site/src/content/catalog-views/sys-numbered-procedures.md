@@ -4,10 +4,10 @@ title: "sys.numbered_procedures"
 category: "compatibility"
 description: "SQL analytics endpoint in Microsoft Fabric Contains a row for each SQL Server stored procedure that was created as a numbered procedure. This does not show a row for the base (number = 1) stored procedure. Entries for the base stored procedures can be found in views such as ID of the object of the stored procedure."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.numbered_procedures
-      sys.numbered_procedure_parameters
+              sys.numbered_procedure_parameters
 ---
 
 ## Description

@@ -4,7 +4,7 @@ title: "POWER"
 category: "statements"
 description: "float float bit Input type Return type float real float decimal( p , s ) decimal(38, s )..."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 float

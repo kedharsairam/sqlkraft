@@ -3,7 +3,7 @@ title: "Creating and deploying a SQL project"
 topic: "ssms"
 description: "The development cycle of a SQL database project enables database development to be integrate"
 tags: ["ssms","creating-and-deploying-a-sql-project"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The development cycle of a SQL database project enables database development to be

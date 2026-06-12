@@ -4,7 +4,7 @@ title: "Levels 100 and 110"
 category: "operators"
 description: "value to a string value. This"
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 value to a string value. This

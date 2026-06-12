@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Quantified Expressions"
 syntax: "satisfies"
 tags: ["xquery","quantified-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Existential and universal quantifiers specify different semantics for Boolean operators that are

@@ -3,7 +3,7 @@ title: "PreConnect:Starting Event Class"
 topic: "event-classes"
 description: "The PreConnect:Starting event class indicates when a LOGON trigger or the Resource Governor"
 tags: ["event-classes","preconnectstarting-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The PreConnect:Starting event class indicates when a LOGON trigger or the Resource Governor

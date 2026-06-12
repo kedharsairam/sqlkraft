@@ -3,7 +3,7 @@ title: "Optimized locking and deadlocks"
 topic: "locking"
 description: ""
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Session A

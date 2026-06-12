@@ -3,7 +3,7 @@ title: "Change transaction safety"
 topic: "high-availability"
 description: "Transaction safety is the attribute that controls the operating mode of the session. At any time, however, the database owner can change the transacti"
 tags: ["high-availability","change-transaction-safety"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Transaction safety is the attribute that controls the operating mode of the session. At any time,

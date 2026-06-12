@@ -3,7 +3,7 @@ title: "SQL Server 2025"
 topic: "linux-operations"
 description: "2025 (17.x) on Linux This article describes the major features and services available for SQL Server 2025 (17.x) running on Linux."
 tags: ["linux-operations","sql-server-2025"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2025 (17.x) on Linux

@@ -4,7 +4,7 @@ title: "UNPIVOT example"
 category: "queries"
 description: ""
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 carries out almost the reverse operation of

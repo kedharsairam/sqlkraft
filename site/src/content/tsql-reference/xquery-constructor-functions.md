@@ -5,9 +5,9 @@ category: "xquery"
 description: "XQuery Language Reference: Constructor Functions"
 syntax: |
   TYP($atomicvalue as xdt:anyAtomicType?
-    ) as TYP?
+            ) as TYP?
 tags: ["xquery","constructor-functions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 From a specified input, the constructor functions create instances of any of the XSD built-in or

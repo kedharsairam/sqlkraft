@@ -3,7 +3,7 @@ title: "Context vs. regular connections"
 topic: "clr-integration"
 description: "If you're connecting to a remote server, always use regular connections rather than context connections."
 tags: ["clr-integration","context-vs-regular-connections"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If you're connecting to a remote server, always use regular connections rather than context

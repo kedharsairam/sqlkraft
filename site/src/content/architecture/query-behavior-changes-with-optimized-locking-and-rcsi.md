@@ -3,7 +3,7 @@ title: "Query behavior changes with optimized locking and RCSI"
 topic: "query-processing"
 description: "Lock after qualification is not used in the following scenarios:"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Lock after qualification is not used in the following scenarios:

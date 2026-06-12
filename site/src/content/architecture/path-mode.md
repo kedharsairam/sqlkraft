@@ -3,7 +3,7 @@ title: "PATH Mode"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","path-mode"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 As described in

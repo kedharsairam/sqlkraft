@@ -4,7 +4,7 @@ title: "sp_dropdevice"
 category: "general"
 description: "Drops a database device or backup device from a SQL Server Database Engine instance, The logical name of the database device or backup device as listed in Specifies whether the physical backup device file should be deleted. , the physical backup device disk file is deleted."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "master.dbo.sysdevices"
 ---
 

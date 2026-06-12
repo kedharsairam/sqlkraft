@@ -3,7 +3,7 @@ title: "CreateVersionedSOSHostObject"
 topic: "event-classes"
 description: "Creates a versioned object for the root hosting interface."
 tags: ["event-classes","createversionedsoshostobject"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Creates a versioned object for the root hosting interface.

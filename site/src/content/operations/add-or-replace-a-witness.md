@@ -3,7 +3,7 @@ title: "Add or replace a witness"
 topic: "high-availability"
 description: "If the database mirroring endpoints use Windows Authentication, you can use SQL Server Management Studio to add or replace a witness."
 tags: ["high-availability","add-or-replace-a-witness"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If the database mirroring endpoints use Windows Authentication, you can use SQL Server

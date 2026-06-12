@@ -3,7 +3,7 @@ title: "Prepare for migration"
 topic: "azure-synapse"
 description: ""
 tags: ["azure-synapse","prepare-for-migration"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article helps you prepare your environment for a

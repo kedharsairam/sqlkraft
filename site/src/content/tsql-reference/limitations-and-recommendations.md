@@ -4,7 +4,7 @@ title: "Limitations and Recommendations"
 category: "operators"
 description: "Removes the specified availability group and all of its replicas."
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Removes the specified availability group and all of its replicas. If a server instance that hosts

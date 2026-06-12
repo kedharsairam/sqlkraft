@@ -3,7 +3,7 @@ title: "Replay Options"
 topic: "profiler"
 description: "06/06/2025 Before replaying a captured trace with SQL Server Profiler, specify replay options in the dialog box."
 tags: ["profiler","replay-options"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Before replaying a captured trace with SQL Server Profiler, specify replay options in the

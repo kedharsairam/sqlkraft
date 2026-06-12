@@ -4,7 +4,7 @@ title: "Use APPLY"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Same as above in the

@@ -3,7 +3,7 @@ title: "User Databases"
 topic: "collation"
 description: ""
 tags: ["collation","user-databases"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In SQL Server, you can move the data, log, and full-text catalog files of a user database to a

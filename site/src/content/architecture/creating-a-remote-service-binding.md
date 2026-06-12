@@ -3,7 +3,7 @@ title: "Creating a Remote Service Binding"
 topic: "service-broker"
 description: "09/16/2025 To exchange messages with Service Broker, you must create the appropriate user security context. The most flexible way to do this is w"
 tags: ["service-broker","creating-a-remote-service-binding"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To exchange messages with Service Broker, you must create the appropriate user security

@@ -4,7 +4,7 @@ title: "Working with parquet"
 category: "queries"
 description: "In Azure Synapse Analytics dedicated SQL pools, and Analytics Platform System, PolyBase"
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 In Azure Synapse Analytics dedicated SQL pools, and Analytics Platform System, PolyBase

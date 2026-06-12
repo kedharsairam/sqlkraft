@@ -3,7 +3,7 @@ title: "Monitor"
 topic: "high-availability"
 description: "After you have configured log shipping, you can monitor information about the status of all the log shipping servers."
 tags: ["high-availability","monitor-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 After you have configured log shipping, you can monitor information about the status of all

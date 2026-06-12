@@ -3,7 +3,7 @@ title: "Example: Retrieving Employee Information"
 topic: "xml-data"
 description: "This example retrieves an employee ID and employee name for each employee. In the database,"
 tags: ["xml-data","example-retrieving-employee-information"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This example retrieves an employee ID and employee name for each employee. In the

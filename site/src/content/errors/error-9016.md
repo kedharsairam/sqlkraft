@@ -1,12 +1,12 @@
 ---
-name: 9016
+name: "9016"
 title: "Error 9016"
 errorNumber: 9016
 severity: "medium"
 category: "corruption"
 description: "Description 9016 21 Yes An error occurred while processing the log for database '%.*ls'. The log block could not be decrypted."
 tags: ["corruption","severity-medium"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

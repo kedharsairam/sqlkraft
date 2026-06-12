@@ -3,7 +3,7 @@ title: "SQL Server 2017"
 topic: "linux-operations"
 description: "2017 (14.x) on Linux This article describes the major features and services available for SQL Server 2017 (14.x) running on Linux."
 tags: ["linux-operations","sql-server-2017"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2017 (14.x) on Linux

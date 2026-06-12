@@ -3,7 +3,7 @@ title: "Service Broker Transport Security"
 topic: "service-broker"
 description: "09/15/2025 Service Broker transport security allows database administrators to restrict network connections to a database and can encrypt message"
 tags: ["service-broker","service-broker-transport-security"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker transport security allows database administrators to restrict network

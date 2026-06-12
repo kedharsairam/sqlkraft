@@ -3,7 +3,7 @@ title: "Use the value() & nodes() Methods with OPENXML"
 topic: "xml-data"
 description: "You can use multiple methods on data type in a clause to generate a rowset of extracted values. The"
 tags: ["xml-data","use-the-value-nodes-methods-with-openxml"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can use multiple

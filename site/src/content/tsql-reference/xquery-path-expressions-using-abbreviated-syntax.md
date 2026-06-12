@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Path Expressions - Using Abbreviated Syntax"
 syntax: "child"
 tags: ["xquery","path-expressions-using-abbreviated-syntax"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 All the examples in

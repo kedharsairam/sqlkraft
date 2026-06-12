@@ -4,7 +4,7 @@ title: "sys.dm_exec_sql_text"
 category: "execution"
 description: "Number of characters into the currently executing batch or stored procedure at occurs."
 tags: ["execution","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.dm_exec_sql_text(sql_handle | plan_handle)"
 ---
 

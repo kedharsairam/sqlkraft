@@ -3,7 +3,7 @@ title: "Maintain publications"
 topic: "migration"
 description: ""
 tags: ["migration","maintain-publications"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 After you have created a publication, it might be necessary to add or drop articles, or change

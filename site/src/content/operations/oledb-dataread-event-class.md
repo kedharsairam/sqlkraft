@@ -3,7 +3,7 @@ title: "OLEDB DataRead Event Class"
 topic: "event-classes"
 description: "The OLEDB DataRead event class occurs when SQL Server calls an OLE DB provider for distributed queries"
 tags: ["event-classes","oledb-dataread-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The OLEDB DataRead event class occurs when SQL Server calls an OLE DB provider for

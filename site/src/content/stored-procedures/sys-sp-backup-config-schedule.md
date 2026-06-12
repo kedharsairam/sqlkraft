@@ -4,23 +4,23 @@ title: "managed_backup.sp_backup_config_schedule"
 category: "general"
 description: "managed_backup.sp_backup_config_basic (Transact-SQL) managed_backup.sp_backup_config_schedule (Transact-SQL)"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   USE
-      msdb;
-      GO
-      EXECUTE
-      managed_backup.sp_backup_config_advanced
-      @encryption_algorithm =
-      'AES_128'
-      ,
-      @encryptor_type =
-      'CERTIFICATE'
-      ,
-      @encryptor_name =
-      'MyTestDBBackupEncryptCert'
-      ;
-      GO
+              msdb;
+              GO
+              EXECUTE
+              managed_backup.sp_backup_config_advanced
+              @encryption_algorithm =
+              'AES_128'
+              ,
+              @encryptor_type =
+              'CERTIFICATE'
+              ,
+              @encryptor_name =
+              'MyTestDBBackupEncryptCert'
+              ;
+              GO
 ---
 
 ## Description

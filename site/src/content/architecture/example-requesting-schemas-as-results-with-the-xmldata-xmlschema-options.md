@@ -3,7 +3,7 @@ title: "Example: Requesting Schemas as Results with the XMLDATA & XMLSCHEMA Opti
 topic: "xml-data"
 description: "The following query returns the XML-DATA schema that describes the document structure. SQL"
 tags: ["xml-data","example-requesting-schemas-as-results-with-the-xmldata-xmlschema-options"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following query returns the XML-DATA schema that describes the document structure.

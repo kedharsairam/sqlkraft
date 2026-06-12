@@ -3,7 +3,7 @@ title: "SP:Starting Event Class"
 topic: "event-classes"
 description: "The SP:Starting event class indicates that a stored procedure is beginning execution. Descri"
 tags: ["event-classes","spstarting-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The SP:Starting event class indicates that a stored procedure is beginning execution.

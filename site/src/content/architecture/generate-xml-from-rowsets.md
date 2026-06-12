@@ -3,7 +3,7 @@ title: "Generate XML from rowsets"
 topic: "xml-data"
 description: "You can generate an data type instance from a rowset by using FOR XML with the new directiv"
 tags: ["xml-data","generate-xml-from-rowsets"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can generate an

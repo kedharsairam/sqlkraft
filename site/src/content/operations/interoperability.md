@@ -3,7 +3,7 @@ title: "Interoperability"
 topic: "high-availability"
 description: "This article documents interoperability of Always On availability groups with other SQL Server features. The following table lists SQL Server feature"
 tags: ["high-availability","interoperability"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article documents interoperability of Always On availability groups with other SQL Server

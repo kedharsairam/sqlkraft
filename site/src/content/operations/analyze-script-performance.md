@@ -3,14 +3,14 @@ title: "Analyze Script Performance"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    You can use the tools provided by SQL Server Data Tools to determine whether you can
-  
-    improve the performance of your query, stored procedures, or scripts. For example, by
-  
-    monitoring clie
+          
+            You can use the tools provided by SQL Server Data Tools to determine whether you can
+          
+            improve the performance of your query, stored procedures, or scripts. For example, by
+          
+            monitoring clie
 tags: ["ssb-diagnose","analyze-script-performance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can use the tools provided by SQL Server Data Tools to determine whether you can

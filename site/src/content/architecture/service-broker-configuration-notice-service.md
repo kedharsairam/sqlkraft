@@ -3,7 +3,7 @@ title: "Service Broker Configuration Notice Service"
 topic: "service-broker"
 description: "09/12/2025 You can create a Broker Configuration Notice (BCN) service on an initiating server which automatically binds conversations to a specif"
 tags: ["service-broker","service-broker-configuration-notice-service"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can create a Broker Configuration Notice (BCN) service on an initiating server which

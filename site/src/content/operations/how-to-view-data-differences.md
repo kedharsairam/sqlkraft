@@ -3,16 +3,16 @@ title: "How to: View Data Differences"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    After you compare the data in two databases, you see each
-  
-    database object
-  
-    that you compared
-  
-    and its status. You can also view results for the records within each object, grouped by stat
+          
+            After you compare the data in two databases, you see each
+          
+            database object
+          
+            that you compared
+          
+            and its status. You can also view results for the records within each object, grouped by stat
 tags: ["ssb-diagnose","how-to-view-data-differences"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 After you compare the data in two databases, you see each

@@ -3,7 +3,7 @@ title: "SCSI, SAS, and NVMe"
 topic: "query-processing"
 description: "### Windows Hardware Compatibility Program"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Windows Hardware Compatibility Program

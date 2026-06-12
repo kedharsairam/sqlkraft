@@ -3,7 +3,7 @@ title: "Service Broker Endpoints"
 topic: "service-broker"
 description: "09/11/2025 SQL Server uses Service Broker endpoints for Service Broker communication outside of the SQL Server instance. An endpoint is a SQL Se"
 tags: ["service-broker","service-broker-endpoints"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 uses Service Broker endpoints for Service Broker communication outside of the SQL

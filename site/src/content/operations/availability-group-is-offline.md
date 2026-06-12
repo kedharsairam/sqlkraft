@@ -3,7 +3,7 @@ title: "Availability group is offline"
 topic: "high-availability"
 description: ": Availability Group Online State : Availability group is offline."
 tags: ["high-availability","availability-group-is-offline"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 : Availability Group Online State

@@ -3,7 +3,7 @@ title: "Audit Login Change Password Event Class"
 topic: "event-classes"
 description: "The event class occurs whenever a user changes their Microsoft SQL Server login password. Descriptio"
 tags: ["event-classes","audit-login-change-password-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

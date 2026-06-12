@@ -3,7 +3,7 @@ title: "Project references"
 topic: "ssms"
 description: "With project references in SQL database projects, you can create dependencies between your S"
 tags: ["ssms","project-references"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 With project references in SQL database projects, you can create dependencies between your

@@ -4,7 +4,7 @@ title: "Usage guidelines"
 category: "statements"
 description: "Specifies a column name in the common table expression. Duplicate names within a single CTE"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Guidelines for nonrecursive common table expressions

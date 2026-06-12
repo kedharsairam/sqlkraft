@@ -3,7 +3,7 @@ title: "Run the T-SQL Debugger"
 topic: "ssb-diagnose"
 description: "09/10/2025 You can start the Transact-SQL debugger after you open a Database Engine Query Editor window."
 tags: ["ssb-diagnose","run-the-t-sql-debugger"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can start the Transact-SQL debugger after you open a Database Engine Query Editor

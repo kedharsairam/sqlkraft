@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Type System"
 syntax: "Instructions"
 tags: ["xquery","type-system"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 XQuery is a strongly-typed language for schema types and a weakly-typed language for

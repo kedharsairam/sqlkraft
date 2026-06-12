@@ -3,7 +3,7 @@ title: "Requirements & Limitations"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","requirements-limitations"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The XML schema definition language (XSD) validation has some limitations regarding SQL

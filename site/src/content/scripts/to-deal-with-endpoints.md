@@ -4,7 +4,7 @@ title: "To Deal with Endpoints"
 description: "to see the list of endpoints"
 category: "general"
 tags: ["general"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

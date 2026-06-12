@@ -3,7 +3,7 @@ title: "Custom attributes for CLR routines"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","custom-attributes-for-clr-routines"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The attributes listed can be applied to common language runtime (CLR) routines, user-defined

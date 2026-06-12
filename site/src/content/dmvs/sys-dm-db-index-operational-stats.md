@@ -4,30 +4,30 @@ title: "sys.dm_db_index_operational_stats"
 category: "index"
 description: "Returns the lower level data access, locking, and latching statistics for each partition of a table . Valid inputs are the ID number of a database, NULL, 0, or DEFAULT. The default is 0. NULL, 0, and DEFAULT are equivalent values in this Specify NULL to return information for all databases in the instance of SQL Server."
 tags: ["index","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.dm_db_index_operational_stats (
-      { database_id |
-      NULL
-      | 0 |
-      DEFAULT
-      }
-      , { object_id |
-      NULL
-      | 0 |
-      DEFAULT
-      }
-      , { index_id | 0 |
-      NULL
-      | -1 |
-      DEFAULT
-      }
-      , { partition_number |
-      NULL
-      | 0 |
-      DEFAULT
-      }
-      )
+                { database_id |
+                NULL
+                | 0 |
+                DEFAULT
+                }
+                , { object_id |
+                NULL
+                | 0 |
+                DEFAULT
+                }
+                , { index_id | 0 |
+                NULL
+                | -1 |
+                DEFAULT
+                }
+                , { partition_number |
+                NULL
+                | 0 |
+                DEFAULT
+                }
+                )
 ---
 
 ## Description

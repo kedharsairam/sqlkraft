@@ -3,7 +3,7 @@ title: "Wait types"
 topic: "high-availability"
 description: "When troubleshooting Always On Availability Groups latency, wait statistics can be monitored for accumulation using the availability groups-specific w"
 tags: ["high-availability","wait-types"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When troubleshooting Always On Availability Groups latency, wait statistics can be monitored

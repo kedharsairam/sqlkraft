@@ -3,7 +3,7 @@ title: "Witness Server Instance"
 topic: "high-availability"
 description: "Use this page to specify information about the server instance that is to serve as the witness for the session. Establish a Database Mirroring Sessio"
 tags: ["high-availability","witness-server-instance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to specify information about the server instance that is to serve as the witness for

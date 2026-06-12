@@ -3,7 +3,7 @@ title: "Trace Templates"
 topic: "profiler"
 description: "Profiler Templates 06/06/2025 You can use SQL Server Profiler to create templates that define the event classes and data columns to i"
 tags: ["profiler","trace-templates"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Profiler Templates

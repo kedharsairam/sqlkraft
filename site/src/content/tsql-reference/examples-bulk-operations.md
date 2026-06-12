@@ -4,7 +4,7 @@ title: "Examples: Bulk Operations"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## H. Create an external data source for bulk operations retrieving data

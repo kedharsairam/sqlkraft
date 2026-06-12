@@ -4,7 +4,7 @@ title: "Retrieve error information"
 category: "statements"
 description: "If the stored procedure contains a"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 statement.

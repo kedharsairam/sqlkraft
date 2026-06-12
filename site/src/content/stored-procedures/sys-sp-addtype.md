@@ -4,23 +4,23 @@ title: "sp_addtype"
 category: "general"
 description: "The name of the alias data type. Alias data type names must follow the rules for must be unique in each database. The physical, or SQL Server supplied, data type on which the alias data type is based. , with no default, and can be one of these values: This feature will be removed in a future version of SQL Server."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_addtype
-      [ @typename = ]
-      N
-      'typename'
-      , [ @phystype = ]
-      N
-      'phystype'
-      [ , [ @nulltype = ]
-      'nulltype'
-      ]
-      [ , [ @owner = ]
-      N
-      'owner'
-      ]
-      [ ; ]
+              [ @typename = ]
+              N
+              'typename'
+              , [ @phystype = ]
+              N
+              'phystype'
+              [ , [ @nulltype = ]
+              'nulltype'
+              ]
+              [ , [ @owner = ]
+              N
+              'owner'
+              ]
+              [ ; ]
 ---
 
 ## Description

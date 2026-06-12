@@ -4,7 +4,7 @@ title: "Concurrency considerations for MERGE"
 category: "queries"
 description: "optimizer doesn't need to perform extra validation processing to locate and update"
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 optimizer doesn't need to perform extra validation processing to locate and update

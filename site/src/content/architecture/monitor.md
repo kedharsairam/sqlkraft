@@ -3,7 +3,7 @@ title: "Monitor"
 topic: "tables"
 description: "2016 (13.x) and later You can use existing views to track detailed and summarized memory consumption for every system-vers"
 tags: ["tables","monitor"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later

@@ -3,7 +3,7 @@ title: "LOCALDB_ERROR_INVALID_INSTANCE_NAME"
 topic: "clr-integration"
 description: "07/14/2025 Product Name Event ID 283 Event Source SQL Server Local Database Runtime 12.0 Component Local Database Runtime API Message Text The instance n"
 tags: ["clr-integration","localdb-error-invalid-instance-name"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Product

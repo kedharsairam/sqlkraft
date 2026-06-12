@@ -4,7 +4,7 @@ title: "Syntax for memory-optimized tables"
 category: "statements"
 description: "For more information, see:"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 For more information, see:

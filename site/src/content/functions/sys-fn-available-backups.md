@@ -4,7 +4,7 @@ title: "managed_backup.fn_available_backups"
 category: "backup-restore"
 description: "2016 (13.x) and later versions Returns a table of 0, one or more rows of the available backup files for the specified database. The backup files returned are backups created by SQL Server managed backup to Microsoft The name of the database. The @database_name is NVARCHAR(512). The table has a unique clustered constraint on (database_guid, backup_start_da"
 tags: ["backup-restore","function"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "managed_backup.fn_available_backups ([@database_name = ] 'database name')"
 ---
 

@@ -3,7 +3,7 @@ title: "Prerequisites, restrictions, & recommendations"
 topic: "high-availability"
 description: "Prerequisites, restrictions, and This article describes considerations for deploying Always On availability groups, including prerequisites, restrictions, and recommendation"
 tags: ["high-availability","prerequisites-restrictions-recommendations"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Prerequisites, restrictions, and

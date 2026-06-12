@@ -3,7 +3,7 @@ title: "Parallel index operations"
 topic: "index-architecture"
 description: ""
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 this plan has two exchange segments, with degree of parallelism equal to 4, it uses eight

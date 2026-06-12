@@ -4,10 +4,10 @@ title: "sys.sp_cdc_enable_db"
 category: "general"
 description: "Enables change data capture for the current database. This procedure must be executed for a database before any tables can be enabled for change data capture (CDC) in that database. Change data capture records insert, update, and delete activity applied to enabled tables, making the details of the changes available in an easily consumed relational format. Column information that mirrors the column"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.sp_cdc_enable_db
-      [ ; ]
+              [ ; ]
 ---
 
 ## Description

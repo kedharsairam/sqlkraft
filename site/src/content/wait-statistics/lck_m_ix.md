@@ -5,7 +5,7 @@ category: "blocking"
 severity: "high"
 description: "Occurs when waiting for an intent exclusive (IX) lock. Frequently observed during DML operations (INSERT/UPDATE/DELETE) on pages blocked by other transactions holding incompatible locks."
 tags: ["lock","intent-exclusive","dml"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-blocking-chains"]
 ---
 

@@ -3,7 +3,7 @@ title: "Change tracking"
 topic: "change-data-capture"
 description: ""
 tags: ["change-data-capture","change-tracking"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes the change tracking feature for SQL Server, which is a lightweight solution

@@ -3,7 +3,7 @@ title: "OLEDB Event Category"
 topic: "event-classes"
 description: "The event category contains general OLEDB events."
 tags: ["event-classes","oledb-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

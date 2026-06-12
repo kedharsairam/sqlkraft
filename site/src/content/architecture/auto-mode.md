@@ -3,7 +3,7 @@ title: "AUTO Mode"
 topic: "xml-data"
 description: "As described in FOR XML (SQL Server) , AUTO mode returns query results as nested XML elements. This"
 tags: ["xml-data","auto-mode"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 As described in

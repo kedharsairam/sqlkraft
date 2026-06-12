@@ -3,12 +3,12 @@ title: "Generate code"
 topic: "profiler"
 description: |
   Quickstart: Generate code
-  
-    In this quickstart, you learn how GitHub Copilot accelerates SQL and object-relational mapping
-  
-    (ORM) development by generating context-aware code directly within Visual Stu
+          
+            In this quickstart, you learn how GitHub Copilot accelerates SQL and object-relational mapping
+          
+            (ORM) development by generating context-aware code directly within Visual Stu
 tags: ["profiler","generate-code"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Quickstart: Generate code

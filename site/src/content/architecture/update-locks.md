@@ -3,7 +3,7 @@ title: "Update locks"
 topic: "locking"
 description: ""
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Additional locking resources are available for

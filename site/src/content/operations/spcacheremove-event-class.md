@@ -3,7 +3,7 @@ title: "SP:CacheRemove Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","spcacheremove-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The SP:CacheRemove event class indicates that the stored procedure has been removed from

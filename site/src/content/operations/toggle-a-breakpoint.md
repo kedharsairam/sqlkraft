@@ -3,7 +3,7 @@ title: "Toggle a Breakpoint"
 topic: "ssb-diagnose"
 description: "09/10/2025 The act of setting a breakpoint on a Transact-SQL statement is called toggling a breakpoint. Once the breakpoint is set, it's represented by an icon in the gray b"
 tags: ["ssb-diagnose","toggle-a-breakpoint"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The act of setting a breakpoint on a Transact-SQL statement is called toggling a breakpoint.

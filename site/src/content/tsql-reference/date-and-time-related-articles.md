@@ -4,7 +4,7 @@ title: "Date and time-related articles"
 category: "data-types"
 description: ""
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Function

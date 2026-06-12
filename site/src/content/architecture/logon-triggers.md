@@ -3,7 +3,7 @@ title: "Logon Triggers"
 topic: "change-data-capture"
 description: "Logon triggers fire stored procedures in response to a event."
 tags: ["change-data-capture","logon-triggers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Logon triggers fire stored procedures in response to a

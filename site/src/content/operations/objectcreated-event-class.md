@@ -3,7 +3,7 @@ title: "Object:Created Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","objectcreated-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Object:Created event class indicates that an object has been created, for example, by the

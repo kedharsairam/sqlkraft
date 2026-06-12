@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Logical Expressions"
 syntax: "expression1,``expression2"
 tags: ["xquery","logical-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 XQuery supports the logical

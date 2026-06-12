@@ -4,7 +4,7 @@ title: "To Backup Database"
 description: "full backup"
 category: "backup-restore"
 tags: ["backup","backup-restore","database"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

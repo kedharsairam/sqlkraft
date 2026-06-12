@@ -3,18 +3,18 @@ title: "Build from the Command Line"
 topic: "profiler"
 description: |
   While the SQL Database Project extension in
-  
-    provides a graphical user
-  
-    interface to build
-  
-    SQL database projects
-  
-    , a command line build experience is also available for
-  
-    Windows, macOS, and Linux en
+          
+            provides a graphical user
+          
+            interface to build
+          
+            SQL database projects
+          
+            , a command line build experience is also available for
+          
+            Windows, macOS, and Linux en
 tags: ["profiler","build-from-the-command-line"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 While the SQL Database Project extension in

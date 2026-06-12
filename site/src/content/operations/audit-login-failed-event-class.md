@@ -3,12 +3,10 @@ title: "Audit Login Failed Event Class"
 topic: "event-classes"
 description: "ﾃ Summarize this article for me The event class indicates that a user tried to sign in to Microsoft SQL Server and failed."
 tags: ["event-classes","audit-login-failed-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ﾃ
-
-Summarize this article for me
 
 The
 

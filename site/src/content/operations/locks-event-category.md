@@ -3,7 +3,7 @@ title: "Locks Event Category"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","locks-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

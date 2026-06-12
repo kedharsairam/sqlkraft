@@ -4,7 +4,7 @@ title: "Use hierarchyid columns in replicated tables"
 category: "statements"
 description: "If a user type with conflicting name exists during the upgrade, no special steps are taken. After"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## One-directional replication

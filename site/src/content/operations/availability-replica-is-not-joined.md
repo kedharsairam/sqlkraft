@@ -3,7 +3,7 @@ title: "Availability replica is not joined"
 topic: "high-availability"
 description: ": Availability Replica Join State : Availability Replica is not joined."
 tags: ["high-availability","availability-replica-is-not-joined"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 : Availability Replica Join State

@@ -3,7 +3,7 @@ title: "Replication, CT, & CDC"
 topic: "high-availability"
 description: "Replication, change data capture (CDC), and change tracking (CT) are supported on Always On availability groups."
 tags: ["high-availability","replication-ct-cdc"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Replication, change data capture (CDC), and change tracking (CT) are supported on

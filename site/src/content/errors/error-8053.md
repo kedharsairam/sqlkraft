@@ -1,12 +1,12 @@
 ---
-name: 8053
+name: "8053"
 title: "Error 8053"
 errorNumber: 8053
 severity: "medium"
 category: "io"
 description: "Description %I64d, column %d: Data type 0x%02X (user-defined table type) timestamp column is required to be default."
 tags: ["io","severity-medium"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

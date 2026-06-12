@@ -5,7 +5,7 @@ category: "xquery"
 description: ""
 syntax: "fn:min($arg as xdt:anyAtomicType*) as xdt:anyAtomicType?"
 tags: ["xquery","aggregate-functions-min"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns from a sequence of atomic values,

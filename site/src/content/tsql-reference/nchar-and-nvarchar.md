@@ -4,7 +4,7 @@ title: "Nchar and nvarchar"
 category: "data-types"
 description: "T-SQL reference covering national character varying."
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 nchar

@@ -3,7 +3,7 @@ title: "TM: Begin Tran Completed Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","tm-begin-tran-completed-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The TM: Begin Tran Completed event class indicates that a BEGIN TRANSACTION request has

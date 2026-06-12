@@ -3,7 +3,7 @@ title: "Configure (HA add-on)"
 topic: "linux-operations"
 description: "on Linux This guide provides instructions to create a two-node shared disk failover cluster for SQL Server on Red Hat Enterprise Linux. The clustering layer is based on Red"
 tags: ["linux-operations","configure-ha-add-on"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

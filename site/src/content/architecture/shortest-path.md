@@ -3,7 +3,7 @@ title: "SHORTEST_PATH"
 topic: "sql-graph"
 description: "2019 (15.x) and later versions Azure SQL Managed Instance Specifies a search condition for a graph, which is searched r"
 tags: ["sql-graph","shortest-path"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2019 (15.x) and later versions

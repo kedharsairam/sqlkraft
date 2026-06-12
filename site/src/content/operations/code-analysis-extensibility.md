@@ -3,7 +3,7 @@ title: "Code analysis extensibility"
 topic: "ssms"
 description: "The provided code analysis rules report on Transact-SQL design, naming, and performance warnings in your database code."
 tags: ["ssms","code-analysis-extensibility"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

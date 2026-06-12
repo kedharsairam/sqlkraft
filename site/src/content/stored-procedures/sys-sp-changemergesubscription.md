@@ -4,31 +4,31 @@ title: "sp_changemergesubscription"
 category: "general"
 description: "Changes selected properties of a merge push subscription. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_changemergesubscription
-      [ [ @publication = ]
-      N
-      'publication'
-      ]
-      [ , [ @subscriber = ]
-      N
-      'subscriber'
-      ]
-      [ , [ @subscriber_db = ]
-      N
-      'subscriber_db'
-      ]
-      [ , [ @property = ]
-      N
-      'property'
-      ]
-      [ , [ @value = ]
-      N
-      'value'
-      ]
-      [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
-      [ ; ]
+              [ [ @publication = ]
+              N
+              'publication'
+              ]
+              [ , [ @subscriber = ]
+              N
+              'subscriber'
+              ]
+              [ , [ @subscriber_db = ]
+              N
+              'subscriber_db'
+              ]
+              [ , [ @property = ]
+              N
+              'property'
+              ]
+              [ , [ @value = ]
+              N
+              'value'
+              ]
+              [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
+              [ ; ]
 ---
 
 ## Description

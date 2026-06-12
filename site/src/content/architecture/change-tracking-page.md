@@ -3,7 +3,7 @@ title: "Change Tracking page"
 topic: "collation"
 description: "Use this page to view or modify change tracking settings for the selected database."
 tags: ["collation","change-tracking-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to view or modify change tracking settings for the selected database. For more

@@ -3,7 +3,7 @@ title: "Large collections & out-of-memory conditions"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","large-collections-out-of-memory-conditions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 During a call to the built-in XML_SCHEMA_NAMESPACE() function on a large XML schema

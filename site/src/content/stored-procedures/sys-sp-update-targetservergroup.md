@@ -4,16 +4,16 @@ title: "sp_update_targetservergroup"
 category: "general"
 description: "Changes the name of the specified target server group."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_update_targetservergroup
-      [ @name = ]
-      N
-      'name'
-      , [ @new_name = ]
-      N
-      'new_name'
-      [ ; ]
+              [ @name = ]
+              N
+              'name'
+              , [ @new_name = ]
+              N
+              'new_name'
+              [ ; ]
 ---
 
 ## Description

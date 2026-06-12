@@ -3,7 +3,7 @@ title: "Lock:Acquired Event Class"
 topic: "event-classes"
 description: "2016 (13.x) and later versions Azure SQL Managed Instance The Lock:Acquired event class indicates that acquisition of a"
 tags: ["event-classes","lockacquired-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

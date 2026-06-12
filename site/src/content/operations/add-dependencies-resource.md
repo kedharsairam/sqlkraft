@@ -3,7 +3,7 @@ title: "Add Dependencies resource"
 topic: "high-availability"
 description: "This topic describes how to add dependencies to an Always On failover cluster instance (FCI) resource by using the Failover Cluster Manager snap-in. T"
 tags: ["high-availability","add-dependencies-resource"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to add dependencies to an Always On failover cluster instance (FCI)

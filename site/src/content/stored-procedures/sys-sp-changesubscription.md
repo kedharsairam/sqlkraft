@@ -4,7 +4,7 @@ title: "sp_changesubscription"
 category: "general"
 description: "Changes the properties of a snapshot or transactional push subscription or a pull subscription involved in queued updating transactional replication. To change properties of all other types sp_change_subscription_properties executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_changesubscription"
 ---
 

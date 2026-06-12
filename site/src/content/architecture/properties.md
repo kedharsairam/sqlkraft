@@ -3,7 +3,7 @@ title: "Properties"
 topic: "spatial-data"
 description: ""
 tags: ["spatial-data","properties"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

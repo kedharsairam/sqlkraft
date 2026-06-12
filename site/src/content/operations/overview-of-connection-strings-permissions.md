@@ -3,14 +3,14 @@ title: "Overview of Connection Strings & Permissions"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    To run SQL Server unit tests, you must connect to a database server by using one or two
-  
-    specific connection strings. Each connection string represents an account that has the specific
-  
-    pe
+          
+            To run SQL Server unit tests, you must connect to a database server by using one or two
+          
+            specific connection strings. Each connection string represents an account that has the specific
+          
+            pe
 tags: ["ssb-diagnose","overview-of-connection-strings-permissions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To run SQL Server unit tests, you must connect to a database server by using one or two

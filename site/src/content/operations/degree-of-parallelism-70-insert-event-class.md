@@ -3,7 +3,7 @@ title: "Degree of Parallelism (7.0 Insert) Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","degree-of-parallelism-70-insert-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

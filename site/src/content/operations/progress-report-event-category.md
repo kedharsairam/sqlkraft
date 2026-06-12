@@ -3,7 +3,7 @@ title: "Progress Report Event Category"
 topic: "event-classes"
 description: "The event category contains the event class. Description Progress Report: Online Index Op"
 tags: ["event-classes","progress-report-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

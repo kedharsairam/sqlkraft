@@ -3,7 +3,7 @@ title: "Audit Schema Object Management Event Class"
 topic: "event-classes"
 description: "The event class occurs when server objects are created, altered, or dropped."
 tags: ["event-classes","audit-schema-object-management-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

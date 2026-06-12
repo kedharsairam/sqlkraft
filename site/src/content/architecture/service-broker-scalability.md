@@ -3,7 +3,7 @@ title: "Service Broker Scalability"
 topic: "service-broker"
 description: "09/15/2025 Service Broker is designed to help your database applications scale well, whether you scale up or scale out."
 tags: ["service-broker","service-broker-scalability"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker is designed to help your database applications scale well, whether you scale up

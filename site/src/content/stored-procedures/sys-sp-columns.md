@@ -4,30 +4,30 @@ title: "sp_columns"
 category: "general"
 description: "Returns column information for the specified objects that can be queried in the current The name of the object that is used to return catalog information. view, or other object that's columns such as table-valued functions. , with no default. Wildcard pattern matching is supported."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_columns
-      [ @table_name = ]
-      N
-      'table_name'
-      [ , [ @table_owner = ]
-      N
-      'table_owner'
-      ]
-      [ , [ @table_qualifier = ]
-      N
-      'table_qualifier'
-      ]
-      [ , [ @column_name = ]
-      N
-      'column_name'
-      ]
-      [ , [ @
-      ODBCV
-      er = ]
-      ODBCV
-      er ]
-      [ ; ]
+              [ @table_name = ]
+              N
+              'table_name'
+              [ , [ @table_owner = ]
+              N
+              'table_owner'
+              ]
+              [ , [ @table_qualifier = ]
+              N
+              'table_qualifier'
+              ]
+              [ , [ @column_name = ]
+              N
+              'column_name'
+              ]
+              [ , [ @
+              ODBCV
+              er = ]
+              ODBCV
+              er ]
+              [ ; ]
 ---
 
 ## Description

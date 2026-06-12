@@ -3,7 +3,7 @@ title: "Service Script Example"
 topic: "service-broker"
 description: "09/15/2025 This Transact-SQL code sample defines a service that archives untyped XML documents."
 tags: ["service-broker","service-script-example"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This Transact-SQL code sample defines a service that archives untyped XML documents. Two

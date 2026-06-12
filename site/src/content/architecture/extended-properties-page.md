@@ -3,7 +3,7 @@ title: "Extended Properties Page"
 topic: "collation"
 description: "Extended properties allow you to add custom properties to database objects. Use this page to view or m"
 tags: ["collation","extended-properties-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Extended properties allow you to add custom properties to database objects. Use this page to

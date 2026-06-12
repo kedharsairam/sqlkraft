@@ -4,7 +4,7 @@ title: "Physical storage and full-text metadata"
 category: "operators"
 description: "Returns a data type name by ID."
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Database Event Category"
 topic: "event-classes"
 description: "The event category contains event classes to monitor the SQL Server Database Engine. Descr"
 tags: ["event-classes","database-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

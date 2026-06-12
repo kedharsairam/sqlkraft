@@ -3,7 +3,7 @@ title: "Transactional integrity and SQL Server recovery"
 topic: "io-fundamentals"
 description: "caching mechanisms can't guarantee writes across a power cycle or similar failure point. They"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 caching mechanisms can't guarantee writes across a power cycle or similar failure point. They

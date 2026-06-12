@@ -3,7 +3,7 @@ title: "Connect to listener"
 topic: "high-availability"
 description: "This article teaches you how to connect to an Always On availability group listener for SQL Server."
 tags: ["high-availability","connect-to-listener"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article teaches you how to connect to an

@@ -3,7 +3,7 @@ title: "LocalDBStopInstance"
 topic: "clr-integration"
 description: "07/14/2025 Stops the specified SQL Server Express LocalDB instance from running. C++ [Input] The name of the LocalDB instance to stop."
 tags: ["clr-integration","localdbstopinstance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Stops the specified SQL Server Express LocalDB instance from running.

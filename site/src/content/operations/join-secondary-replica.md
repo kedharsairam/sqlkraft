@@ -3,7 +3,7 @@ title: "Join secondary replica"
 topic: "high-availability"
 description: "08/26/2025 This topic describes how to join a secondary replica to an Always On availability group by using SQL Server Management Studio, Transact-SQL, or PowerShell in SQL"
 tags: ["high-availability","join-secondary-replica"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to join a secondary replica to an Always On availability group by using

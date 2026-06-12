@@ -3,7 +3,7 @@ title: "Secondary Database Settings"
 topic: "high-availability"
 description: "Use this dialog box to configure and to modify the properties of a secondary database in the log shipping configuration."
 tags: ["high-availability","secondary-database-settings"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this dialog box to configure and to modify the properties of a secondary database in the

@@ -3,7 +3,7 @@ title: "Audit Broker Conversation Event Class"
 topic: "event-classes"
 description: "creates an event to report audit messages related to Service Broker dialog security. Desc"
 tags: ["event-classes","audit-broker-conversation-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 creates an

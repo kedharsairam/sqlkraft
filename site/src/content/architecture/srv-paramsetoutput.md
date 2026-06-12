@@ -3,7 +3,7 @@ title: "srv_paramsetoutput"
 topic: "clr-integration"
 description: "Sets the value of a return parameter. This function supersedes the function. srvproc Is a handle for a client connection. n Is the ordinal number"
 tags: ["clr-integration","srv-paramsetoutput"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Sets the value of a return parameter. This function supersedes the

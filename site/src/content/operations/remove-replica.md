@@ -3,7 +3,7 @@ title: "Remove replica"
 topic: "high-availability"
 description: "This topic describes how to remove a secondary replica from an Always On availability group by using SQL Server Management Studio, Transact-SQL, or Po"
 tags: ["high-availability","remove-replica"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to remove a secondary replica from an Always On availability group

@@ -3,7 +3,7 @@ title: "Mount Tape Event Class"
 topic: "event-classes"
 description: "The Mount Tape event class occurs when a tape mount request is received."
 tags: ["event-classes","mount-tape-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Mount Tape event class occurs when a tape mount request is received. Use this event class

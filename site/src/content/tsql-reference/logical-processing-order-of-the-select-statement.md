@@ -4,7 +4,7 @@ title: "Logical processing order of the SELECT statement"
 category: "queries"
 description: "Syntax for Azure Synapse Analytics, Analytics Platform System (PDW), and Microsoft Fabric:"
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Syntax for Azure Synapse Analytics, Analytics Platform System (PDW), and Microsoft Fabric:

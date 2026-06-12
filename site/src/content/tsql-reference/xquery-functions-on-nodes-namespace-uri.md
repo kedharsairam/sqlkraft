@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions on Nodes - namespace-uri"
 syntax: "namespace-uri(/ROOT[1])"
 tags: ["xquery","functions-on-nodes-namespace-uri"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the namespace URI of the QName specified in

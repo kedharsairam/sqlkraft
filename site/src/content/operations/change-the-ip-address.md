@@ -3,7 +3,7 @@ title: "Change the IP Address"
 topic: "high-availability"
 description: "This topic describes how to change the IP address resource in an Always On Failover Cluster Instance (FCI) by using the Failover Cluster Manager snap-"
 tags: ["high-availability","change-the-ip-address"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to change the IP address resource in an Always On Failover Cluster

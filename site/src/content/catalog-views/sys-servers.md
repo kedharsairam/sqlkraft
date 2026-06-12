@@ -5,20 +5,20 @@ category: "compatibility"
 description: |
   'Returns a row per linked or remote server registered, and a row for the local server that has value is the local name of linked Product name of the linked server. A value of "SQL Server" indicates another instance of SQL Server. Starting with SQL Server 2019 (15.x), the value "SQLNCLI" maps to the Microsoft OLE DB Driver for SQL OLE DB provider-string connection Is NULL unless the caller has the'
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_helpserver
-      [ [ @server = ]
-      N
-      'server'
-      ]
-      [ , [ @optname = ]
-      'optname'
-      ]
-      [ , [ @show_topology = ]
-      'show_topology'
-      ]
-      [ ; ]
+              [ [ @server = ]
+              N
+              'server'
+              ]
+              [ , [ @optname = ]
+              'optname'
+              ]
+              [ , [ @show_topology = ]
+              'show_topology'
+              ]
+              [ ; ]
 ---
 
 ## Description

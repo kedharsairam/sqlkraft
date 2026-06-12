@@ -4,7 +4,7 @@ title: "XQuery - Type Casting Rules in XQuery"
 category: "xquery"
 description: "XQuery Language Reference: Type Casting Rules in XQuery"
 tags: ["xquery","type-casting-rules-in-xquery"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following W3C XQuery 1.0 and XPath 2.0 Functions and Operators specifications diagram

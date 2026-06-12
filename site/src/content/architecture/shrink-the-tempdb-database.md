@@ -3,7 +3,7 @@ title: "Shrink the tempdb database"
 topic: "collation"
 description: "This article discusses various methods that you can use to shrink the database in SQL Server. You can use any of the following methods to change"
 tags: ["collation","shrink-the-tempdb-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article discusses various methods that you can use to shrink the

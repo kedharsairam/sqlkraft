@@ -4,7 +4,7 @@ title: "Upgrade vector indexes to the latest version"
 category: "statements"
 description: "Newly created vector indexes automatically use the latest data structure, which provides:"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ### Deprecation notice

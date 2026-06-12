@@ -4,7 +4,7 @@ title: "Related context"
 category: "statements"
 description: "@@TRANCOUNT (Transact-SQL)"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 @@TRANCOUNT (Transact-SQL)

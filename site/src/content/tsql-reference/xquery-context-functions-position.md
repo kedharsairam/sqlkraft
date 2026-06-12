@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Context Functions - position"
 syntax: "AdventureWorks2022"
 tags: ["xquery","context-functions-position"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns an integer value that indicates the position of the context item within the sequence of

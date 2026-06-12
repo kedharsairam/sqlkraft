@@ -3,7 +3,7 @@ title: "Generate Siblings with a Nested AUTO Mode Query"
 topic: "xml-data"
 description: "The following example shows how to generate siblings by using a nested AUTO mode query."
 tags: ["xml-data","generate-siblings-with-a-nested-auto-mode-query"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following example shows how to generate siblings by using a nested AUTO mode query.

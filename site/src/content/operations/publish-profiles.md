@@ -3,7 +3,7 @@ title: "Publish profiles"
 topic: "ssms"
 description: "A publish profile is a file that stores deployment configuration for a SQL project. Publish"
 tags: ["ssms","publish-profiles"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A publish profile is a file that stores deployment configuration for a SQL project. Publish

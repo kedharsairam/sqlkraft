@@ -3,7 +3,7 @@ title: "Service Broker Routing Examples"
 topic: "service-broker"
 description: "09/11/2025 This section presents examples of the Service Broker routing process."
 tags: ["service-broker","service-broker-routing-examples"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This section presents examples of the Service Broker routing process. Each example contains sample routing

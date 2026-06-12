@@ -3,7 +3,7 @@ title: "Execution Warnings Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","execution-warnings-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Execution Warnings event class indicates memory grant warnings that occurred during the

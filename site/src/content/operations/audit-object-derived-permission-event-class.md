@@ -3,7 +3,7 @@ title: "Audit Object Derived Permission Event Class"
 topic: "event-classes"
 description: "The event class records when a CREATE, ALTER, or DROP command is issued for a specified object. This"
 tags: ["event-classes","audit-object-derived-permission-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

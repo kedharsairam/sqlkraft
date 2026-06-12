@@ -4,7 +4,7 @@ title: "sys.dm_tran_current_snapshot"
 category: "transactions"
 description: "Returns a virtual table that displays all active transactions at the time when the current snapshot transaction starts. If the current transaction is not a snapshot transaction, this the active transactions for the current snapshot transaction. Transaction sequence number of the active transaction. : Azure Synapse Analytics, Analytics Platform System The identifier"
 tags: ["transactions","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.dm_tran_current_snapshot"
 ---
 

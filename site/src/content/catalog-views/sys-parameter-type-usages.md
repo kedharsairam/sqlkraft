@@ -4,7 +4,7 @@ title: "sys.parameter_type_usages"
 category: "compatibility"
 description: "Returns one row for each parameter that is of user-defined type."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Set Options"
 topic: "filestream"
 description: "This topic describes how to modify the properties of an index in SQL Server by using SQL Ser"
 tags: ["filestream","set-options"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to modify the properties of an index in SQL Server by using SQL

@@ -3,7 +3,7 @@ title: "Guidelines"
 topic: "filestream"
 description: "When you perform online index operations, the following guidelines apply: Clustered indexes"
 tags: ["filestream","guidelines"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When you perform online index operations, the following guidelines apply:

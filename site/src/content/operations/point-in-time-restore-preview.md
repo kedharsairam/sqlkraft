@@ -3,7 +3,7 @@ title: "Point-in-time restore (preview)"
 topic: "azure-synapse"
 description: "This article demonstrates how to restore a database to a point-in-time as a new database on the same instance of SQL Server enabled by Azure Arc. The"
 tags: ["azure-synapse","point-in-time-restore-preview"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article demonstrates how to restore a database to a point-in-time as a new database on

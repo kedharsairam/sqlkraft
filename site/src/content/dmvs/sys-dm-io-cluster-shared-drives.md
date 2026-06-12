@@ -4,7 +4,7 @@ title: "sys.dm_io_cluster_shared_drives"
 category: "io"
 description: "Analytics Platform System This view returns the drive name of each of the shared drives if the current server instance is a clustered server. If the current server instance is not a clustered instance it returns an empty The name of the drive (the drive letter) that represents an individual disk taking part in the cluster shared disk array. Column is not nullable."
 tags: ["io","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "SELECT * FROM sys.dm_io_cluster_shared_drives;"
 ---
 

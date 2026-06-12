@@ -3,7 +3,7 @@ title: "Specify fill factor"
 topic: "filestream"
 description: ""
 tags: ["filestream","specify-fill-factor"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes what fill factor is and how to specify a fill factor value for an index using

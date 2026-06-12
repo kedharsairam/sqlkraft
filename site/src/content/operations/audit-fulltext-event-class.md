@@ -3,7 +3,7 @@ title: "Audit Fulltext Event Class"
 topic: "event-classes"
 description: "The event class occurs when SQL Server connects to and communicates with the full-text filter daemon"
 tags: ["event-classes","audit-fulltext-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

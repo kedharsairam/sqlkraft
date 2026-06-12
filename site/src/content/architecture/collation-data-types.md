@@ -3,7 +3,7 @@ title: "Collation & data types"
 topic: "clr-integration"
 description: "In the .NET Framework, the object handles collations. The .NET Framework string application programming interfaces (APIs) use the property associate"
 tags: ["clr-integration","collation-data-types"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In the.NET Framework, the

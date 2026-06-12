@@ -3,7 +3,7 @@ title: "Specify schema options"
 topic: "migration"
 description: "This topic describes how to specify schema options in SQL Server by using SQL Server Management Studio or Transact-SQL. Wh"
 tags: ["migration","specify-schema-options"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to specify schema options in SQL Server by using SQL Server

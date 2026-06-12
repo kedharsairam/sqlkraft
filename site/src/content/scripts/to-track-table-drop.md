@@ -4,7 +4,7 @@ title: "To Track Table Drop"
 description: "1) Read fn_dblog (try to get data from the log file) OR fn_dump_dblog (try to get data from the log backup)."
 category: "database"
 tags: ["database","table"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

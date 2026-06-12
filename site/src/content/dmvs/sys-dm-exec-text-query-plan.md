@@ -4,14 +4,14 @@ title: "sys.dm_exec_text_query_plan"
 category: "execution"
 description: "Indicates whether the corresponding stored procedure is encrypted. 0 = not encrypted Column is not nullable. Contains the compile-time Showplan representation of the query execution plan that is specified with . The Showplan is in text format. One plan is generated for each batch that contains, for example ad hoc Transact-SQL statements, stored procedure calls, and user-defined function calls. Col"
 tags: ["execution","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.dm_exec_text_query_plan
-      (
-      plan_handle
-      , { statement_start_offset | 0 | DEFAULT }
-      , { statement_end_offset | -1 | DEFAULT }
-      )
+                (
+                plan_handle
+                , { statement_start_offset | 0 | DEFAULT }
+                , { statement_end_offset | -1 | DEFAULT }
+                )
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Compatibility level"
 topic: "collation"
 description: "This article describes how to view or change the compatibility level of a database in SQL Ser"
 tags: ["collation","compatibility-level"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to view or change the compatibility level of a database in SQL Server,

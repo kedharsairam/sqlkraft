@@ -4,23 +4,23 @@ title: "sys.dm_db_page_info"
 category: "execution"
 description: "2019 (15.x) and later versions SQL database in Microsoft Fabric Returns information about a page in a database. The function returns one row that contains the header information from the page, including the function replaces the need to use . Valid input is the ID number of a database. The default is NULL, however sending a NULL value for this parameter will result in an error. Valid"
 tags: ["execution","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.dm_db_page_info (
-      D
-      atabase
-      I
-      d ,
-      F
-      ile
-      I
-      d ,
-      P
-      age
-      I
-      d ,
-      M
-      ode )
+                D
+                atabase
+                I
+                d ,
+                F
+                ile
+                I
+                d ,
+                P
+                age
+                I
+                d ,
+                M
+                ode )
 ---
 
 ## Description

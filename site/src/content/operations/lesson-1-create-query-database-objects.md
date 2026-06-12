@@ -3,7 +3,7 @@ title: "Lesson 1: Create & query database objects"
 topic: "configuration"
 description: ""
 tags: ["configuration","lesson-1-create-query-database-objects"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

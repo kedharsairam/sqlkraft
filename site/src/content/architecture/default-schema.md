@@ -3,7 +3,7 @@ title: "Default Schema"
 topic: "json-data"
 description: ""
 tags: ["json-data","default-schema"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

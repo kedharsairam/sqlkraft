@@ -3,7 +3,7 @@ title: "Security Audit Event Category (SQL Server Profiler)"
 topic: "event-classes"
 description: "The event category contains security audit events. Description Audit Add DB User Event Class Indica"
 tags: ["event-classes","security-audit-event-category-sql-server-profiler"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

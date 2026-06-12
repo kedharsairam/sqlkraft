@@ -3,7 +3,7 @@ title: "Log Shipping Monitor Settings"
 topic: "high-availability"
 description: "Use this page to configure and to modify the properties of the log shipping monitor server. For an explanation of log shipping concepts, see About Lo"
 tags: ["high-availability","log-shipping-monitor-settings"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to configure and to modify the properties of the log shipping monitor server.

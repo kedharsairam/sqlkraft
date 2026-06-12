@@ -3,7 +3,7 @@ title: "Managing Queues and Messages"
 topic: "service-broker"
 description: "09/11/2025 When a Service Broker application is in production, most day-to-day management occurs as a normal part of maintenance of the Database"
 tags: ["service-broker","managing-queues-and-messages"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When a Service Broker application is in production, most day-to-day management occurs as a

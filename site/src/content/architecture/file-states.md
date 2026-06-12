@@ -3,7 +3,7 @@ title: "File states"
 topic: "collation"
 description: "In SQL Server, the state of a database file i"
 tags: ["collation","file-states"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

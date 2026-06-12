@@ -3,7 +3,7 @@ title: "Increase the size of a database"
 topic: "collation"
 description: "This article describes how to increase the size of a database in SQL Server by using SQL Server Management Studio or Transact-SQL."
 tags: ["collation","increase-the-size-of-a-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to increase the size of a database in SQL Server by using SQL Server

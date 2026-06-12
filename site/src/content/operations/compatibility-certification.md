@@ -3,7 +3,7 @@ title: "Compatibility Certification"
 topic: "upgrade"
 description: "06/16/2025 Compatibility certification allows businesses to upgrade and modernize a SQL Server database on-premises, in the c"
 tags: ["upgrade","compatibility-certification"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Compatibility certification allows businesses to upgrade and modernize a SQL Server database

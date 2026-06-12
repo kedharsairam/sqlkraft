@@ -4,12 +4,12 @@ title: "sp_dropextendedproc"
 category: "general"
 description: "Drops an extended stored procedure."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_dropextendedproc [ @functname = ]
-      N
-      'functname'
-      [ ; ]
+              N
+              'functname'
+              [ ; ]
 ---
 
 ## Description

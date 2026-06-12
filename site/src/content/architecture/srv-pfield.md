@@ -3,7 +3,7 @@ title: "srv_pfield"
 topic: "clr-integration"
 description: "Returns information about a database connection. srvproc Pointer identifying a database connection."
 tags: ["clr-integration","srv-pfield"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns information about a database connection.

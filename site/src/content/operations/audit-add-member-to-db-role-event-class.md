@@ -3,7 +3,7 @@ title: "Audit Add Member to DB Role Event Class"
 topic: "event-classes"
 description: "The event class occurs whenever a login is added to or removed from a database role."
 tags: ["event-classes","audit-add-member-to-db-role-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

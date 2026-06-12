@@ -3,7 +3,7 @@ title: "LocalDBFormatMessage"
 topic: "clr-integration"
 description: "07/14/2025 Returns the localized textual description for the specified SQL Server Express LocalDB error. C++ [Input] The LocalDB error code. [Input] The flags specifying t"
 tags: ["clr-integration","localdbformatmessage"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the localized textual description for the specified SQL Server Express LocalDB error.

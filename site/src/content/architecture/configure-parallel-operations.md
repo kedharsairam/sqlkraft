@@ -3,7 +3,7 @@ title: "Configure parallel operations"
 topic: "filestream"
 description: "This article defines max degree of parallelism and explains how to modify this setting in SQL"
 tags: ["filestream","configure-parallel-operations"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article defines max degree of parallelism and explains how to modify this setting in SQL

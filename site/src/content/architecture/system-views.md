@@ -3,7 +3,7 @@ title: "System views"
 topic: "query-processing"
 description: "numbered_procedure_parameters"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Deprecated feature

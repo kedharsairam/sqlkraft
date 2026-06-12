@@ -4,7 +4,7 @@ title: "Indexes and ALTER TABLE"
 category: "statements"
 description: "statement requires changing a column used in a schema-bound view,"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 view. If the

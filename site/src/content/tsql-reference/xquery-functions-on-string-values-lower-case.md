@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions on String Values - lower-case"
 syntax: "fn:lower-case($arg as xs:string?) as xs:string"
 tags: ["xquery","functions-on-string-values-lower-case"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The lower-case function converts each character in

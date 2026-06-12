@@ -3,7 +3,7 @@ title: "Lesson 4: Beginning the Conversation"
 topic: "service-broker"
 description: ""
 tags: ["service-broker","lesson-4-beginning-the-conversation"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this lesson, you learn to start a conversation that spans two instances of the Database Engine

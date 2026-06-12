@@ -3,7 +3,7 @@ title: "CursorClose Event Class"
 topic: "event-classes"
 description: "Cursor close events occur when the Database Engine closes and deallocates a cursor."
 tags: ["event-classes","cursorclose-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Cursor close events occur when the Database Engine closes and deallocates a cursor. The

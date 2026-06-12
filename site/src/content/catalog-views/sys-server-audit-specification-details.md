@@ -4,7 +4,7 @@ title: "sys.server_audit_specification_details"
 category: "compatibility"
 description: "Contains information about the server audit specification details (actions) in a SQL Server audit on a server instance. For more information, see SQL Server Audit (Database Engine) all audit_action_id's and their names, query sys.dm_audit_actions (Transact-SQL) ID of the audit server specification Name of group or name of audit action Whether the audited object is a group:"
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

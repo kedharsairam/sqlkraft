@@ -4,7 +4,7 @@ title: "Vector data type"
 category: "data-types"
 description: "T-SQL reference for Vector data type syntax and usage."
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## vector
@@ -22,8 +22,6 @@ pubDate: "2026-05-29"
 ## up-to-date
 
 ﾃ
-
-Summarize this article for me
 
 2025 (17.x)
 

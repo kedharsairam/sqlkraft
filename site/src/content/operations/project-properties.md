@@ -3,7 +3,7 @@ title: "Project properties"
 topic: "ssms"
 description: "SQL projects properties In addition to the contents of the individual files, SQL database p"
 tags: ["ssms","project-properties"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQL projects properties

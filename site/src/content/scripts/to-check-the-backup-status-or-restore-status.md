@@ -4,7 +4,7 @@ title: "To Check the Backup Status or Restore Status"
 description: "diagnostic script for backup-restore operations."
 category: "backup-restore"
 tags: ["backup","backup-restore","health-check","restore"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

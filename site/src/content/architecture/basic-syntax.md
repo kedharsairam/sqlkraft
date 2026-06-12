@@ -3,7 +3,7 @@ title: "Basic Syntax"
 topic: "xml-data"
 description: "The FOR XML mode can be RAW, AUTO, EXPLICIT, or PATH. It determines the shape of the resulting XML. F"
 tags: ["xml-data","basic-syntax"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The FOR XML mode can be RAW, AUTO, EXPLICIT, or PATH. It determines the shape of the

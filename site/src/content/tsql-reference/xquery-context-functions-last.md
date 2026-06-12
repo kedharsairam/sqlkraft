@@ -3,9 +3,9 @@ name: "xquery-context-functions-last"
 title: "XQuery - Context Functions - last"
 category: "xquery"
 description: ""
-syntax: [ ]
+syntax: "[ ]"
 tags: ["xquery","context-functions-last"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the number of items in the sequence that is currently being processed. Specifically, it

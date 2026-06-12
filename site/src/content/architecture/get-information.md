@@ -3,7 +3,7 @@ title: "Get Information"
 topic: "change-data-capture"
 description: "The catalog views listed in this section can be used to get information about DDL Triggers."
 tags: ["change-data-capture","get-information"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The catalog views listed in this section can be used to get information about DDL Triggers.

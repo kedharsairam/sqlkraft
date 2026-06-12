@@ -3,7 +3,7 @@ title: "DDL, Functions, Stored Procedures, & Views"
 topic: "filestream"
 description: "Lists the Transact-SQL statements and the SQL Server database objects that support FILESTREAM. For the list of database objects that support the File"
 tags: ["filestream","ddl-functions-stored-procedures-views"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Lists the Transact-SQL statements and the SQL Server database objects that support

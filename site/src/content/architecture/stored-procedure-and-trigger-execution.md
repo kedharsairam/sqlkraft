@@ -3,7 +3,7 @@ title: "Stored procedure and trigger execution"
 topic: "io-fundamentals"
 description: ""
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 can't predict what key value will be supplied by the

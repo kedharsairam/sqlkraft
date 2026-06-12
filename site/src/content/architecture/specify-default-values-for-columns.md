@@ -3,7 +3,7 @@ title: "Specify default values for Columns"
 topic: "tables"
 description: "2016 (13.x) and later versions Azure SQL Managed Instance You"
 tags: ["tables","specify-default-values-for-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

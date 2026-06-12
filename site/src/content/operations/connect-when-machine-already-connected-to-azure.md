@@ -3,7 +3,7 @@ title: "Connect when machine already connected to Azure"
 topic: "azure-synapse"
 description: "This article explains how to connect your SQL Server instance to Azure Arc on an Arc-enabled server. For example, you need to use this method to connect a SQL Server instance"
 tags: ["azure-synapse","connect-when-machine-already-connected-to-azure"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article explains how to connect your SQL Server instance to Azure Arc on an Arc-enabled

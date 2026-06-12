@@ -3,7 +3,7 @@ title: "File system configuration"
 topic: "io-fundamentals"
 description: "For more information, see:"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 For more information, see:

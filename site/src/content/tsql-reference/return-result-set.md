@@ -4,7 +4,7 @@ title: "Return result set"
 category: "statements"
 description: "The vector used for search."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The vector used for search. It must be a variable or a column of

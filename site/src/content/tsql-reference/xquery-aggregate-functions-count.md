@@ -5,7 +5,7 @@ category: "xquery"
 description: ""
 syntax: "fn:count($arg as item()*) as xs:integer"
 tags: ["xquery","aggregate-functions-count"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the number of items that are contained in the sequence specified by

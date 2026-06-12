@@ -3,7 +3,7 @@ title: "Example: Specifying the CDATA Directive"
 topic: "xml-data"
 description: "If the directive is set to , the contained data isn't entity encoded, but is put in the CDAT"
 tags: ["xml-data","example-specifying-the-cdata-directive"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If the directive is set to

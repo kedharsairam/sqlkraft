@@ -3,7 +3,7 @@ title: "srv_rpcparams"
 topic: "clr-integration"
 description: "Returns the number of parameters for the current remote stored procedure."
 tags: ["clr-integration","srv-rpcparams"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the number of parameters for the current remote stored procedure.

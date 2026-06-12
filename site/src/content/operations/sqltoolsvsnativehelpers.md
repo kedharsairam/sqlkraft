@@ -3,7 +3,7 @@ title: "SqlToolsVSNativeHelpers"
 topic: "profiler"
 description: "SqlToolsVSNativeHelpers Library that supports SQL Server functionality in Visual Studio."
 tags: ["profiler","sqltoolsvsnativehelpers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SqlToolsVSNativeHelpers

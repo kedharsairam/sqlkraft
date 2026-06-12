@@ -3,7 +3,7 @@ title: "Audit Login GDR Event Class"
 topic: "event-classes"
 description: "The event class occurs whenever a Microsoft Windows login right is added or removed."
 tags: ["event-classes","audit-login-gdr-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

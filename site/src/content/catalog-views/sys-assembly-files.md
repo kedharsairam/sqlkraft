@@ -4,7 +4,7 @@ title: "sys.assembly_files"
 category: "databases-files"
 description: "Contains a row for each file that makes up an assembly."
 tags: ["databases-files","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Status Page"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","status-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This read-only page displays the most recent mirroring status for the principal and mirror

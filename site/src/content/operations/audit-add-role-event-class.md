@@ -3,7 +3,7 @@ title: "Audit Add Role Event Class"
 topic: "event-classes"
 description: "The event class occurs when a database role is added to or removed from a database."
 tags: ["event-classes","audit-add-role-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

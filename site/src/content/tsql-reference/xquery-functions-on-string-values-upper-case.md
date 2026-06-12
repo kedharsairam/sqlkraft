@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions on String Values - upper-case"
 syntax: "fn:upper-case($arg as xs:string?) as xs:string"
 tags: ["xquery","functions-on-string-values-upper-case"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This function converts each character in

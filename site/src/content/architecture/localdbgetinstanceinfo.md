@@ -3,7 +3,7 @@ title: "LocalDBGetInstanceInfo"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","localdbgetinstanceinfo"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns information for the specified SQL Server Express LocalDB instance, such as whether it

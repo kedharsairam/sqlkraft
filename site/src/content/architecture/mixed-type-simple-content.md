@@ -3,7 +3,7 @@ title: "Mixed type & simple content"
 topic: "xml-data"
 description: "doesn't support restricting a mixed type to a simple content. In the following XM"
 tags: ["xml-data","mixed-type-simple-content"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 doesn't support restricting a mixed type to a simple content.

@@ -3,7 +3,7 @@ title: "System objects"
 topic: "high-availability"
 description: "Description sys.database_mirroring_witnesses Contains a row for every witness role that a server plays in a database mirroring partnership. Descrip"
 tags: ["high-availability","system-objects-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Description

@@ -3,19 +3,17 @@ title: "Troubleshoot common issues"
 topic: "azure-synapse"
 description: |
   ﾃ
-  
-    Summarize this article for me
-  
-    This article helps you troubleshoot common issues you might encounter when migrating SQL
-  
-    Server databases to Azure SQL Managed Instance by using SQL Server migration
+          
+            Summarize this article for me
+          
+            This article helps you troubleshoot common issues you might encounter when migrating SQL
+          
+            Server databases to Azure SQL Managed Instance by using SQL Server migration
 tags: ["azure-synapse","troubleshoot-common-issues"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ﾃ
-
-Summarize this article for me
 
 This article helps you troubleshoot common issues you might encounter when migrating SQL
 

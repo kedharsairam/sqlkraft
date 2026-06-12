@@ -3,7 +3,7 @@ title: "Mirror Server Instance"
 topic: "high-availability"
 description: "Use this page to specify information about the server instance with the mirror database. Establish a Database Mirroring Session Using Windows Authenti"
 tags: ["high-availability","mirror-server-instance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to specify information about the server instance with the mirror database.

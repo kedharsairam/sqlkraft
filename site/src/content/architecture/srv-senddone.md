@@ -3,7 +3,7 @@ title: "srv_senddone"
 topic: "clr-integration"
 description: "Sends a result completion message to the client. srvproc Is a pointer to the SRV_PROC structure that is the handle for a particular client connection"
 tags: ["clr-integration","srv-senddone"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Sends a result completion message to the client.

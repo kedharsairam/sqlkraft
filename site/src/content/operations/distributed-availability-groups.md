@@ -3,7 +3,7 @@ title: "Distributed availability groups"
 topic: "high-availability"
 description: "A distributed availability group (AG) is a special type of availability group that spans two separate availability groups."
 tags: ["high-availability","distributed-availability-groups"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A distributed availability group (AG) is a special type of availability group that spans two

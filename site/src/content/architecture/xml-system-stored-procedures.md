@@ -3,7 +3,7 @@ title: "XML System Stored Procedures"
 topic: "xml-data"
 description: "provides the following system stored procedures that are used together with OPENX"
 tags: ["xml-data","xml-system-stored-procedures"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 provides the following system stored procedures that are used together with

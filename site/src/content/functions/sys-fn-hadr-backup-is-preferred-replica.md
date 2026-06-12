@@ -4,11 +4,11 @@ title: "sys.fn_hadr_backup_is_preferred_replica"
 category: "backup-restore"
 description: "Used to determine if the current replica is the preferred backup replica."
 tags: ["backup-restore","function"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.fn_hadr_backup_is_preferred_replica (
-    'dbname'
-    )
+            'dbname'
+            )
 ---
 
 ## Description

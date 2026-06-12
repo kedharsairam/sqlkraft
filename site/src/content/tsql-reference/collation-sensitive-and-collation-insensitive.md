@@ -4,7 +4,7 @@ title: "Collation sensitive and collation insensitive"
 category: "operators"
 description: "Here's the result set."
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Operators and collation

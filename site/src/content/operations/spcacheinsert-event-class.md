@@ -3,7 +3,7 @@ title: "SP:CacheInsert Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","spcacheinsert-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The SP:CacheInsert event class indicates that the stored procedure has been inserted into the

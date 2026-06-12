@@ -3,7 +3,7 @@ title: "Creating Service Broker Queues"
 topic: "service-broker"
 description: "08/29/2025 A queue holds incoming messages for a service."
 tags: ["service-broker","creating-service-broker-queues"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A queue holds incoming messages for a service. To simplify processing, applications typically

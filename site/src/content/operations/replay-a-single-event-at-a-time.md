@@ -3,7 +3,7 @@ title: "Replay a Single Event at a Time"
 topic: "profiler"
 description: "06/06/2025 This article describes how to replay one event at a time in a replay trace file or table by using SQL Server Profiler. 1."
 tags: ["profiler","replay-a-single-event-at-a-time"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to replay one event at a time in a replay trace file or table by using

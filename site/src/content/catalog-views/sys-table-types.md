@@ -4,7 +4,7 @@ title: "sys.table_types"
 category: "compatibility"
 description: "Displays properties of user-defined table types in SQL Server. A table type is a type from which table variables or table-valued parameters could be declared. Each table type has a that is a foreign key into the catalog view."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

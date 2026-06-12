@@ -4,15 +4,15 @@ title: "sp_help_jobcount"
 category: "general"
 description: "Provides the number of jobs that a schedule is attached to. The identifier of the schedule to list."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_help_jobcount
-      [ [ @schedule_name = ]
-      N
-      'schedule_name'
-      ]
-      [ , [ @schedule_id = ] schedule_id ]
-      [ ; ]
+              [ [ @schedule_name = ]
+              N
+              'schedule_name'
+              ]
+              [ , [ @schedule_id = ] schedule_id ]
+              [ ; ]
 ---
 
 ## Description

@@ -5,7 +5,7 @@ category: "triage"
 severity: "high"
 description: "Occurs when the instance-level log rate governor throttles log generation. Azure SQL DB only. Indicates the log generation rate exceeds the service tier's maximum log rate."
 tags: ["log","governor","throttle","azure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

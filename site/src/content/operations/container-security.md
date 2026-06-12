@@ -3,7 +3,7 @@ title: "Container security"
 topic: "linux-operations"
 description: "on Linux SQL Server 2017 (14.x) containers start up as the root user by default, which can cause some security concerns. This article talks about security options that you h"
 tags: ["linux-operations","container-security"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

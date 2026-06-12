@@ -3,7 +3,7 @@ title: "Spatial Indexes Overview"
 topic: "spatial-data"
 description: "supports spatial data and spatial indexes. A spatial index is a type of extended"
 tags: ["spatial-data","spatial-indexes-overview"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 supports spatial data and spatial indexes. A

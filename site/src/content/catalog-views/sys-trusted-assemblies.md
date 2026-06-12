@@ -4,10 +4,10 @@ title: "sys.trusted_assemblies (T-SQL)"
 category: "compatibility"
 description: "Contains a row for each trusted assembly for the server. SHA2_512 hash of the assembly content. Optional user-defined description of the assembly. We recommend using the canonical name that encodes the simple name, version number, culture, public key, and architecture of the assembly to trust."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.assemblies.
-      create_date
+              create_date
 ---
 
 ## Description

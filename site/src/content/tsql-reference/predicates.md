@@ -4,7 +4,7 @@ title: "Predicates"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Analytics Platform System (PDW)

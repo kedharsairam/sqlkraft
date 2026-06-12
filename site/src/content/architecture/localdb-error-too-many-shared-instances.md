@@ -3,7 +3,7 @@ title: "LOCALDB_ERROR_TOO_MANY_SHARED_INSTANCES"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","localdb-error-too-many-shared-instances"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Product

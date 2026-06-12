@@ -3,7 +3,7 @@ title: "Force service to fail over"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","force-service-to-fail-over"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In high-performance mode and high-safety mode without automatic failover, if the principal

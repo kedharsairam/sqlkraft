@@ -3,7 +3,7 @@ title: "Columns with a Name Specified as a Wildcard Character"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","columns-with-a-name-specified-as-a-wildcard-character"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If the column name specified is a wildcard character (\*), the content of that column is inserted

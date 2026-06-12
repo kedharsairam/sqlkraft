@@ -4,7 +4,7 @@ title: "sys.dm_db_xtp_gc_cycle_stats"
 category: "in-memory"
 description: "Outputs the current state of committed transactions that deleted one or more rows. The idle garbage collection thread wakes every minute or when the number of committed DML transactions exceeds an internal threshold since the last garbage collection cycle. As part of the garbage collection cycle, committed transactions move into one or more queues associated with generations."
 tags: ["in-memory","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

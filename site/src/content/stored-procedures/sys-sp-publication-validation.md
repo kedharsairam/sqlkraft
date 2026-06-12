@@ -4,20 +4,20 @@ title: "sp_publication_validation"
 category: "general"
 description: "Initiates an article validation request for each article in the specified publication. This stored procedure is executed at the Publisher on the publication database. Specifies whether to return only the rowcount for the table."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_publication_validation
-      [ @publication = ]
-      N
-      'publication'
-      [ , [ @rowcount_only = ] rowcount_only ]
-      [ , [ @full_or_fast = ] full_or_fast ]
-      [ , [ @shutdown_agent = ] shutdown_agent ]
-      [ , [ @publisher = ]
-      N
-      'publisher'
-      ]
-      [ ; ]
+              [ @publication = ]
+              N
+              'publication'
+              [ , [ @rowcount_only = ] rowcount_only ]
+              [ , [ @full_or_fast = ] full_or_fast ]
+              [ , [ @shutdown_agent = ] shutdown_agent ]
+              [ , [ @publisher = ]
+              N
+              'publisher'
+              ]
+              [ ; ]
 ---
 
 ## Description

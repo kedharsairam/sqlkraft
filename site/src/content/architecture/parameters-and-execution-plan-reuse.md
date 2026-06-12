@@ -3,7 +3,7 @@ title: "Parameters and execution plan reuse"
 topic: "query-processing"
 description: "The use of parameters, including parameter markers in ADO, OLE DB, and ODBC applications,"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The use of parameters, including parameter markers in ADO, OLE DB, and ODBC applications,

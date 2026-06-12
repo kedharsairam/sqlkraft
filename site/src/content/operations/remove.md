@@ -3,12 +3,10 @@ title: "Remove"
 topic: "high-availability"
 description: "ﾃ Summarize this article for me This article describes how to remove log shipping in SQL Server by using SQL Server Management Studio or Transact-SQL. 1."
 tags: ["high-availability","remove"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ﾃ
-
-Summarize this article for me
 
 This article describes how to remove log shipping in SQL Server by using SQL Server
 

@@ -3,7 +3,7 @@ title: "Move files"
 topic: "collation"
 description: "In SQL Server, you can move system and user databases by specifying the new file location in the clause of the ALTER DATABASE statement. Data,"
 tags: ["collation","move-files"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In SQL Server, you can move

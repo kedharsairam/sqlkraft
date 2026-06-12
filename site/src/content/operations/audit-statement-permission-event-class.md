@@ -3,7 +3,7 @@ title: "Audit Statement Permission Event Class"
 topic: "event-classes"
 description: "The event class occurs whenever a statement permission (such as CREATE TABLE) is used."
 tags: ["event-classes","audit-statement-permission-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

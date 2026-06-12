@@ -3,7 +3,7 @@ title: "Generate an Inline XSD Schema"
 topic: "xml-data"
 description: "In a FOR XML clause, you can request that your query return an inline schema together with the query results. If you want an XDR s"
 tags: ["xml-data","generate-an-inline-xsd-schema"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In a FOR XML clause, you can request that your query return an inline schema together with

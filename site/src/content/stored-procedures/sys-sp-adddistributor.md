@@ -4,31 +4,31 @@ title: "sp_adddistributor"
 category: "general"
 description: "table (if there isn't one), marks the server entry as a Distributor, and stores property information. This stored procedure is executed at the database to register and mark the server as a distributor. In the case of a remote distributor, it's also executed at the Publisher from the , with no default. This parameter is only used if setting up a remote Distributor. I"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_adddistributor
-      [ @distributor = ]
-      N
-      'distributor'
-      [ , [ @heartbeat_interval = ] heartbeat_interval ]
-      [ , [ @password = ]
-      N
-      'password'
-      ]
-      [ , [ @from_scripting = ] from_scripting ]
-      [ , [ @encrypt_distributor_connection = ]
-      N
-      'encrypt_distributor_connection'
-      ]
-      [ , [ @trust_distributor_certificate = ]
-      N
-      'trust_distributor_certificate'
-      ]
-      [ , [ @host_name_in_distributor_certificate = ]
-      N
-      'host_name_in_distributor_certificate'
-      ]
-      [ ; ]
+              [ @distributor = ]
+              N
+              'distributor'
+              [ , [ @heartbeat_interval = ] heartbeat_interval ]
+              [ , [ @password = ]
+              N
+              'password'
+              ]
+              [ , [ @from_scripting = ] from_scripting ]
+              [ , [ @encrypt_distributor_connection = ]
+              N
+              'encrypt_distributor_connection'
+              ]
+              [ , [ @trust_distributor_certificate = ]
+              N
+              'trust_distributor_certificate'
+              ]
+              [ , [ @host_name_in_distributor_certificate = ]
+              N
+              'host_name_in_distributor_certificate'
+              ]
+              [ ; ]
 ---
 
 ## Description

@@ -3,12 +3,12 @@ title: "Running SQL Server Unit Tests"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    To improve and maintain the quality of your code, you can create and run SQL Server unit tests
-  
-    that verify the behavior of any database object and then check in those tests to version con
+          
+            To improve and maintain the quality of your code, you can create and run SQL Server unit tests
+          
+            that verify the behavior of any database object and then check in those tests to version con
 tags: ["ssb-diagnose","running-sql-server-unit-tests"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To improve and maintain the quality of your code, you can create and run SQL Server unit tests

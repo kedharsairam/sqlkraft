@@ -4,7 +4,7 @@ title: "Point (geometry Data Type)"
 category: "data-types"
 description: ""
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following example uses to create a instance.

@@ -3,7 +3,7 @@ title: "Audit Server Scope GDR Event Class"
 topic: "event-classes"
 description: "The event class occurs when a GRANT, REVOKE, or DENY is issued for permissions in the server scope, s"
 tags: ["event-classes","audit-server-scope-gdr-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

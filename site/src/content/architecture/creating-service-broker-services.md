@@ -3,7 +3,7 @@ title: "Creating Service Broker Services"
 topic: "service-broker"
 description: "08/29/2025 The definition of a Service Broker service includes the names of the contracts for which the service is a target."
 tags: ["service-broker","creating-service-broker-services"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The definition of a Service Broker service includes the names of the contracts for which the

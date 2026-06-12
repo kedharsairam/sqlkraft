@@ -4,7 +4,7 @@ title: "Miscellaneous statements"
 category: "statements"
 description: "DBCC CHECKCONSTRAINTS"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 DBCC CHECKCATALOG

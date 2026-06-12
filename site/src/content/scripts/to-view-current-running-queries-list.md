@@ -4,7 +4,7 @@ title: "To View Current Running Queries List"
 description: "diagnostic script for architecture operations."
 category: "architecture"
 tags: ["architecture"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

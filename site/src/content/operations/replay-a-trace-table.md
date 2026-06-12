@@ -3,7 +3,7 @@ title: "Replay a Trace Table"
 topic: "profiler"
 description: "06/06/2025 Replay is the ability to open a saved trace and replay it again."
 tags: ["profiler","replay-a-trace-table"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Replay is the ability to open a saved trace and replay it again. SQL Server Profiler features a

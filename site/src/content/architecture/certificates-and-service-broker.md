@@ -3,7 +3,7 @@ title: "Certificates and Service Broker"
 topic: "service-broker"
 description: "08/29/2025 This article describes how SQL Server uses certificates for Service Broker remote security. Service Broker remote security refers to o"
 tags: ["service-broker","certificates-and-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how SQL Server uses certificates for Service Broker remote security.

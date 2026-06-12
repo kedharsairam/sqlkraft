@@ -3,7 +3,7 @@ title: "CLUSTER.LOG"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","clusterlog"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 As a failover cluster resource, there are external interactions between SQL Server, the Windows

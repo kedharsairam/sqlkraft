@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions on Boolean Values - not Function"
 syntax: "Specifications"
 tags: ["xquery","functions-on-boolean-values-not-function"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns TRUE if the effective Boolean value of

@@ -3,7 +3,7 @@ title: "Directories & Paths"
 topic: "filestream"
 description: "Describes the directory structure in which the files are stored in FileTables. You can use the following three functions to work with FileTable direct"
 tags: ["filestream","directories-paths"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Describes the directory structure in which the files are stored in FileTables.

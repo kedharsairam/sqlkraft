@@ -4,17 +4,17 @@ title: "sp_post_msx_operation"
 category: "general"
 description: "Inserts operations (rows) into the system table for target servers to download The type of operation for the posted operation."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   JOB
-      INSERT
-      UPDATE
-      DELETE
-      START
-      STOP
-      SERVER
-      RE-ENLIST
-      DEFECT
+              INSERT
+              UPDATE
+              DELETE
+              START
+              STOP
+              SERVER
+              RE-ENLIST
+              DEFECT
 ---
 
 ## Description

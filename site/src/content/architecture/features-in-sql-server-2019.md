@@ -3,7 +3,7 @@ title: "features in SQL Server 2019"
 topic: "query-processing"
 description: "2019 (15.x)"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 2019 (15.x)

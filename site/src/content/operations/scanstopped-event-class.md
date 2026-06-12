@@ -3,7 +3,7 @@ title: "Scan:Stopped Event Class"
 topic: "event-classes"
 description: "The Scan:Stopped event class occurs when a table or index scan stops. Description Applicati"
 tags: ["event-classes","scanstopped-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Scan:Stopped event class occurs when a table or index scan stops.

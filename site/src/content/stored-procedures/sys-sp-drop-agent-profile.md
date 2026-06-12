@@ -4,7 +4,7 @@ title: "sp_drop_agent_profile"
 category: "general"
 description: "table. This stored procedure is executed at the The ID of the profile to be dropped. is used in all types of replication."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_drop_agent_profile"
 ---
 

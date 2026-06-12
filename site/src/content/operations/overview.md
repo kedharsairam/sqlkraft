@@ -3,12 +3,10 @@ title: "Overview"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","overview"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ﾃ
-
-Summarize this article for me
 
 Log shipping allows you to automatically send transaction log backups from a
 

@@ -3,7 +3,7 @@ title: "Write International T-SQL Statements"
 topic: "collation"
 description: "Databases and database application"
 tags: ["collation","write-international-t-sql-statements"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

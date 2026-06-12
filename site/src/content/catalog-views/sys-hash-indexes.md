@@ -4,12 +4,12 @@ title: "sys.hash_indexes"
 category: "indexes"
 description: "2014 (12.x) and later Shows the current hash indexes and the hash index properties. Hash indexes are supported In-Memory OLTP (In-Memory Optimization) The sys.hash_indexes view contains the same columns as the sys.indexes view and an additional . For more information about the other columns in the Count of hash buckets for hash indexes. For more information about the bucket_count value,"
 tags: ["indexes","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   SELECT object_name([object_id]) AS 'table_name', [object_id],
-      [name] AS 'index_name', [type_desc], [bucket_count]
-      FROM sys.hash_indexes
-      WHERE OBJECT_NAME([object_id]) = 'T1';
+              [name] AS 'index_name', [type_desc], [bucket_count]
+              FROM sys.hash_indexes
+              WHERE OBJECT_NAME([object_id]) = 'T1';
 ---
 
 ## Description

@@ -4,7 +4,7 @@ title: "sp_rename"
 category: "general"
 description: "SQL analytics endpoint in Microsoft Fabric Changes the name of a user-created object in the current database. This object can be a table, index, column, alias data type, or Microsoft .NET Framework common language runtime (CLR) user-defined type. in SQL Server and Azure SQL Database: (preview) in Azure Synapse Analytics: Some system objects and Transact-SQL syntax a"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_rename"
 ---
 

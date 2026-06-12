@@ -3,7 +3,7 @@ title: "Lock:Timeout (timeout > 0) Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","locktimeout-timeout-0-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

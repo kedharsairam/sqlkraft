@@ -3,7 +3,7 @@ title: "Rebuild System Databases"
 topic: "collation"
 description: ""
 tags: ["collation","rebuild-system-databases"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 System databases must be rebuilt to fix corruption problems in the

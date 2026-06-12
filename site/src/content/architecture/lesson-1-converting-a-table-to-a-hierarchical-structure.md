@@ -3,7 +3,7 @@ title: "Lesson 1: Converting a Table to a Hierarchical Structure"
 topic: "tables"
 description: "Customers who have tables using self joins to express hierarchical relationships can convert"
 tags: ["tables","lesson-1-converting-a-table-to-a-hierarchical-structure"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Customers who have tables using self joins to express hierarchical relationships can convert

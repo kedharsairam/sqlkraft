@@ -3,7 +3,7 @@ title: "Reference"
 topic: "xml-data"
 description: "Every database you create has a predefined XML schema collection in the relational schema. It reserv"
 tags: ["xml-data","reference"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Every database you create has a predefined

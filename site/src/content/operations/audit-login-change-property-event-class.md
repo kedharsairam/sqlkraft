@@ -3,7 +3,7 @@ title: "Audit Login Change Property Event Class"
 topic: "event-classes"
 description: "The event class occurs when you use the stored procedure, the stored procedure, or the ALTER LOGIN"
 tags: ["event-classes","audit-login-change-property-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

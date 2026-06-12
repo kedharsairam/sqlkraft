@@ -3,7 +3,7 @@ title: "Remove listener"
 topic: "high-availability"
 description: "This topic describes how to remove an availability group listener from an Always On availability group by using SQL Server Management Studio, Transact"
 tags: ["high-availability","remove-listener"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to remove an availability group listener from an Always On availability

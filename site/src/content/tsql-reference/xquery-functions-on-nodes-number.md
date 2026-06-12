@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions on Nodes - number"
 syntax: "ROOT"
 tags: ["xquery","functions-on-nodes-number"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the numeric value of the node that is indicated by

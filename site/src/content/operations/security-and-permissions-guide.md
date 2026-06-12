@@ -3,14 +3,14 @@ title: "Security and permissions guide"
 topic: "linux-operations"
 description: |
   SQL Server on Linux - Security and
-  
-    10/15/2025
-  
-    This article describes the required service accounts, and file system permissions for SQL Server
-  
-    on Linux. For more information about SQL Server on Win
+          
+            10/15/2025
+          
+            This article describes the required service accounts, and file system permissions for SQL Server
+          
+            on Linux. For more information about SQL Server on Win
 tags: ["linux-operations","security-and-permissions-guide"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux - Security and

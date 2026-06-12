@@ -3,7 +3,7 @@ title: "Bulk copy with bcp"
 topic: "linux-operations"
 description: "on Linux This article shows how to use the bcp utility to bulk copy data between an instance of SQL Server on Linux and a data file in a user-specified format."
 tags: ["linux-operations","bulk-copy-with-bcp"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

@@ -3,7 +3,7 @@ title: "Define serialization"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","define-serialization"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When casting the

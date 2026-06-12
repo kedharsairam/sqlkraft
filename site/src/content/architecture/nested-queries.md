@@ -3,7 +3,7 @@ title: "Nested queries"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","nested-queries"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

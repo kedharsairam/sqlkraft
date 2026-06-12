@@ -3,7 +3,7 @@ title: "Filegroups page"
 topic: "collation"
 description: "Use this page to view the filegroups or add a new filegroup to the selected database. Filegroup types are separated into row filegroups, FILESTREAM"
 tags: ["collation","filegroups-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to view the filegroups or add a new filegroup to the selected database. Filegroup

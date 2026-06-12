@@ -3,7 +3,7 @@ title: "Overview of Extensibility for Database Code Analysis Rules"
 topic: "ssb-diagnose"
 description: "The provided code analysis rules report on Transact-SQL design, naming, and performance warnings in your database code."
 tags: ["ssb-diagnose","overview-of-extensibility-for-database-code-analysis-rules"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

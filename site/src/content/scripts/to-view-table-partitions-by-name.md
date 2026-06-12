@@ -4,7 +4,7 @@ title: "To View Table Partitions by Name"
 description: "diagnostic script for database operations."
 category: "database"
 tags: ["database","table"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

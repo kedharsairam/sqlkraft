@@ -3,7 +3,7 @@ title: "Azure SQL Database >"
 topic: "azure-synapse"
 description: ""
 tags: ["azure-synapse","azure-sql-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article provides an overview of Azure SQL Database, a fully managed platform as a service

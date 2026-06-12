@@ -3,7 +3,7 @@ title: "Rename a database"
 topic: "collation"
 description: "08/07/2025 This article describes how to rename a user-defined database in SQL Server, Azure SQL Database, or Azure SQL Manag"
 tags: ["collation","rename-a-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to rename a user-defined database in SQL Server, Azure SQL

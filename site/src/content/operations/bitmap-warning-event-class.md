@@ -3,7 +3,7 @@ title: "Bitmap Warning Event Class"
 topic: "event-classes"
 description: "The event class can be used to monitor bitmap filter usage in queries. The event subclass c"
 tags: ["event-classes","bitmap-warning-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

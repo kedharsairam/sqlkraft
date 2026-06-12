@@ -3,7 +3,7 @@ title: "Configure snapshot properties"
 topic: "migration"
 description: ""
 tags: ["migration","configure-snapshot-properties"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Snapshot properties can be defined and modified programmatically using replication stored

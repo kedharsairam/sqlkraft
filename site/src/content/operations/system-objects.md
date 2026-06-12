@@ -3,7 +3,7 @@ title: "System Objects"
 topic: "high-availability"
 description: "10/21/2025 - Windows only This article serves as a reference page to all the various system objects that can be used when working with availability groups (AGs). Descripti"
 tags: ["high-availability","system-objects"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Windows only

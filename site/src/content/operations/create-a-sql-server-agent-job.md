@@ -3,7 +3,7 @@ title: "Create a SQL Server Agent job"
 topic: "linux-operations"
 description: "on Linux SQL Server jobs are used to regularly perform the same sequence of commands in your SQL Server database. This tutorial provides an example of how to create a SQL Se"
 tags: ["linux-operations","create-a-sql-server-agent-job"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

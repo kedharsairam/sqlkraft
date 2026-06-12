@@ -3,7 +3,7 @@ title: "Query considerations"
 topic: "query-processing"
 description: "### sys.dm_db_index_usage_stats"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## sys.dm_db_index_usage_stats

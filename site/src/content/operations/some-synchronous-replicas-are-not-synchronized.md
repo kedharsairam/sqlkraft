@@ -3,7 +3,7 @@ title: "Some synchronous replicas are not synchronized"
 topic: "high-availability"
 description: ": Synchronous Replicas Data Synchronization State : Some synchronous replicas are not synchronized."
 tags: ["high-availability","some-synchronous-replicas-are-not-synchronized"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 : Synchronous Replicas Data Synchronization State

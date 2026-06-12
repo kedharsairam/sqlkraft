@@ -4,7 +4,7 @@ title: "sys.xml_schema_component_placements"
 category: "xml"
 description: "Returns a row per placement for XML schema components."
 tags: ["xml","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

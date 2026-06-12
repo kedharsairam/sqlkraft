@@ -3,7 +3,7 @@ title: "Set up encryption"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","set-up-encryption"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To enable automatic decryption of the database master key of a mirror database, you must

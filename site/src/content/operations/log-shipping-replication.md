@@ -3,7 +3,7 @@ title: "Log Shipping & Replication"
 topic: "high-availability"
 description: "Log shipping involves two copies of a single database that typically reside on different computers. At any given time, only one copy of the database i"
 tags: ["high-availability","log-shipping-replication"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Log shipping involves two copies of a single database that typically reside on different

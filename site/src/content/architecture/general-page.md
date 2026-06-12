@@ -3,7 +3,7 @@ title: "General page"
 topic: "collation"
 description: "10/21/2025 Use this page to view or modify properties for the selected database. Displays the date that the database was last backed up. Display"
 tags: ["collation","general-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this page to view or modify properties for the selected database.

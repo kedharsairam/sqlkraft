@@ -3,7 +3,7 @@ title: "Handling Service Broker Error Messages"
 topic: "service-broker"
 description: "08/29/2025 Service Broker applications must handle two types of error messages received from conversations: error messages created by an applicat"
 tags: ["service-broker","handling-service-broker-error-messages"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker applications must handle two types of error messages received from

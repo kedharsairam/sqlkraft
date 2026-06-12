@@ -5,9 +5,9 @@ category: "xquery"
 description: "XQuery Language Reference: Comparison Expressions"
 syntax: |
   declare @x xml
-    set @x=''
+            set @x=''
 tags: ["xquery","comparison-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 XQuery provides the following types of comparison operators:

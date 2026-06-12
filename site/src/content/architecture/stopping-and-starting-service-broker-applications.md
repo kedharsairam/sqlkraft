@@ -3,7 +3,7 @@ title: "Stopping and Starting Service Broker Applications"
 topic: "service-broker"
 description: "09/11/2025 Sometimes it might be necessary to temporarily stop a Service Broker application."
 tags: ["service-broker","stopping-and-starting-service-broker-applications"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Sometimes it might be necessary to temporarily stop a Service Broker application. For example,

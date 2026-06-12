@@ -3,7 +3,7 @@ title: "Audit Database Operation Event Class"
 topic: "event-classes"
 description: "The event class occurs when operations in a database, such as checkpoint or subscribe query notificat"
 tags: ["event-classes","audit-database-operation-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

@@ -4,7 +4,7 @@ title: "Compare GROUPING_ID() to GROUPING()"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Is a function that computes the level of grouping.

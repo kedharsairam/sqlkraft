@@ -4,22 +4,22 @@ title: "sp_droprolemember"
 category: "general"
 description: "Removes a security account from a SQL Server role in the current database. Syntax for SQL Server and Azure SQL Edge. Syntax for Azure Synapse Analytics and Analytics Platform System (PDW). This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications t"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_droprolemember
-      [ @rolename = ]
-      N
-      'rolename'
-      , [ @membername = ]
-      N
-      'membername'
-      [ ; ]
-      sp_droprolemember
-      N
-      'rolename'
-      ,
-      'membername'
-      [ ; ]
+              [ @rolename = ]
+              N
+              'rolename'
+              , [ @membername = ]
+              N
+              'membername'
+              [ ; ]
+              sp_droprolemember
+              N
+              'rolename'
+              ,
+              'membername'
+              [ ; ]
 ---
 
 ## Description

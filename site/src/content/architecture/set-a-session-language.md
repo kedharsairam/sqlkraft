@@ -3,7 +3,7 @@ title: "Set a session language"
 topic: "collation"
 description: ""
 tags: ["collation","set-a-session-language"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The session language can be used to set how the following elements are displayed on the

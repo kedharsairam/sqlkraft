@@ -3,7 +3,7 @@ title: "Allow access to an endpoint"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","allow-access-to-an-endpoint"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Using Windows Authentication for connecting the database mirroring endpoints of two

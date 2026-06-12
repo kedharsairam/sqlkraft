@@ -3,7 +3,7 @@ title: "Database catalog"
 topic: "monitor"
 description: "The WideWorldImporters database contains all the transaction information and daily data for sales and purchases, as well as sensor"
 tags: ["monitor","database-catalog"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The WideWorldImporters database contains all the transaction information and daily data for

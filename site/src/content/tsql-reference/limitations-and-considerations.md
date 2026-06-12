@@ -4,7 +4,7 @@ title: "Limitations and considerations"
 category: "operators"
 description: ""
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Earlier vector index version limitations

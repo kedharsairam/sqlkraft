@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Conditional Expressions"
 syntax: "expression1"
 tags: ["xquery","conditional-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 XQuery supports the following conditional

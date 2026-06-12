@@ -3,12 +3,12 @@ title: "Manage pay-as-you-go transition"
 topic: "azure-synapse"
 description: |
   This article explains how to transition the SQL Server instances to pay-as-you-go subscriptions.
-  
-    This option is available for instances of SQL Server that currently:
-  
-    Use a SQL Server license with So
+          
+            This option is available for instances of SQL Server that currently:
+          
+            Use a SQL Server license with So
 tags: ["azure-synapse","manage-pay-as-you-go-transition"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article explains how to transition the SQL Server instances to pay-as-you-go subscriptions.

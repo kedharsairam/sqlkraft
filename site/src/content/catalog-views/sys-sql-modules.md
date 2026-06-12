@@ -4,7 +4,7 @@ title: "sys.sql_modules"
 category: "compatibility"
 description: "The one-part or two-part name of a schema-scoped securable to be moved into the schema. Users and schemas are completely separate. Schemas aren't equivalent to database users. Use System catalog views to identify any differences between database users and schemas. ALTER SCHEMA can only be used to move securables between schemas in the same database. To change or drop a securable within a schema, u"
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "uses_quoted_identifier"
 ---
 

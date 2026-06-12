@@ -4,7 +4,7 @@ title: "PRIMARY KEY constraints"
 category: "statements"
 description: "statement that creates the temp table. For example, if a stored procedure creates a temporary"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 statement that creates the temp table. For example, if a stored procedure creates a temporary

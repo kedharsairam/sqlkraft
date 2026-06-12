@@ -4,7 +4,7 @@ title: "ONLINE option"
 category: "queries"
 description: ""
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Resumable index operations

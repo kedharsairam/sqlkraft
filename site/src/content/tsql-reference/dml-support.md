@@ -4,7 +4,7 @@ title: "DML support"
 category: "statements"
 description: "DacPac, BACPAC, or the Import/Export service, the import process creates schema objects"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Behavior notes

@@ -3,7 +3,7 @@ title: "System stored procedures and functions"
 topic: "io-fundamentals"
 description: "c2 audit option default trace enabled"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Deprecated feature

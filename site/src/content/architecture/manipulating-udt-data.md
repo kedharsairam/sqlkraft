@@ -3,7 +3,7 @@ title: "Manipulating UDT data"
 topic: "clr-integration"
 description: "Transact-SQL provides no specialized syntax for , , or statements when modifying data in user-defined type (UDT) columns."
 tags: ["clr-integration","manipulating-udt-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Transact-SQL provides no specialized syntax for

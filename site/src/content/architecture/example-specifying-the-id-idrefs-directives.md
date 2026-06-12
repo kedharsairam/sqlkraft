@@ -3,7 +3,7 @@ title: "Example: Specifying the ID & IDREFS Directives"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","example-specifying-the-id-idrefs-directives"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 An element attribute can be specified as an

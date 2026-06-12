@@ -3,7 +3,7 @@ title: "Convert an original SQL project"
 topic: "ssms"
 description: "Creating a new SDK-style SQL project is a quick task . However, if you have existing SQL p"
 tags: ["ssms","convert-an-original-sql-project"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Creating a new SDK-style SQL project is a

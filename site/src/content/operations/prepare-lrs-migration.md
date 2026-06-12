@@ -3,7 +3,7 @@ title: "Prepare LRS migration"
 topic: "azure-synapse"
 description: "migration in Azure Arc This article helps you prepare your environment for a Log Replay Service (LRS) migration of your SQL Server instance enabled by Azure Arc"
 tags: ["azure-synapse","prepare-lrs-migration"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 migration in Azure Arc

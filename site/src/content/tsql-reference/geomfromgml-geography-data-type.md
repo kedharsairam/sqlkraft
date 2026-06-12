@@ -4,7 +4,7 @@ title: "GeomFromGml (geography Data Type)"
 category: "data-types"
 description: "Constructs a geography instance from a GML representation."
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 ## Syntax
 

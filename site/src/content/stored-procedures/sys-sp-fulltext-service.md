@@ -4,15 +4,15 @@ title: "sp_fulltext_service"
 category: "general"
 description: "Changes the server properties of full-text search for SQL Server. The property to be changed or reset. , with no default. For a list of properties, their descriptions, and the values that can be set, see the table under the This argument returns the following properties: deprecation status, if applicable."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_fulltext_service
-      [ [ @action = ]
-      N
-      'action'
-      ]
-      [ , [ @value = ] value ]
-      [ ; ]
+              [ [ @action = ]
+              N
+              'action'
+              ]
+              [ , [ @value = ] value ]
+              [ ; ]
 ---
 
 ## Description

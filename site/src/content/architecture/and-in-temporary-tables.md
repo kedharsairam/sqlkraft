@@ -3,7 +3,7 @@ title: "and in temporary tables?"
 topic: "query-processing"
 description: "Is optimized locking enabled?"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 See

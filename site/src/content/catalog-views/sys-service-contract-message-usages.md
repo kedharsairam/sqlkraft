@@ -4,7 +4,7 @@ title: "sys.service_contract_message_usages"
 category: "compatibility"
 description: "This catalog view contains a row per (contract, message type) pair."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

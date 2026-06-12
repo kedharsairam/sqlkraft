@@ -5,7 +5,7 @@ category: "latency"
 severity: "medium"
 description: "Occurs when waiting for a database-level operation to start in the availability group context. Typically seen during database joins or role transitions."
 tags: ["ag","database","operation"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

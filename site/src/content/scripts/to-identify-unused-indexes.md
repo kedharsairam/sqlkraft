@@ -4,7 +4,7 @@ title: "To Identify Unused Indexes"
 description: "Unused Index Script"
 category: "index-maintenance"
 tags: ["index-maintenance","indexing"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

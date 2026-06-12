@@ -4,7 +4,7 @@ title: "To Check How much Memory each Database is Consu"
 description: "diagnostic script for database operations."
 category: "database"
 tags: ["database","health-check","memory"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

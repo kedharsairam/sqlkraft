@@ -3,7 +3,7 @@ title: "Getting started"
 topic: "tables"
 description: "2016 (13.x) and later versions Azure SQL Managed Instance Depending on your scenario, you can either create new system-"
 tags: ["tables","getting-started"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

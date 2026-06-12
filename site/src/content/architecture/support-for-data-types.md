@@ -3,7 +3,7 @@ title: "Support for Data Types"
 topic: "xml-data"
 description: "The articles in this section describe support for data types in SQL Server. Description FO"
 tags: ["xml-data","support-for-data-types"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The articles in this section describe

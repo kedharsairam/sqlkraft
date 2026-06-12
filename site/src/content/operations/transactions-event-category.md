@@ -3,7 +3,7 @@ title: "Transactions Event Category"
 topic: "event-classes"
 description: "The event classes can be used to monitor the status of transactions."
 tags: ["event-classes","transactions-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

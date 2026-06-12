@@ -3,7 +3,7 @@ title: "Active log"
 topic: "transaction-log"
 description: ""
 tags: ["transaction-log","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The number of log records reaches the number the Database Engine estimates it can

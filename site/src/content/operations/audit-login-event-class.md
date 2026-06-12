@@ -3,7 +3,7 @@ title: "Audit Login Event Class"
 topic: "event-classes"
 description: "The event class indicates that a user has successfully logged in to Microsoft SQL Server. Events in t"
 tags: ["event-classes","audit-login-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

@@ -3,7 +3,7 @@ title: "Consistency checks"
 topic: "tables"
 description: "2016 (13.x) and later versions Azure SQL Managed Instance With temporal tables, the system performs several consistency"
 tags: ["tables","consistency-checks"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

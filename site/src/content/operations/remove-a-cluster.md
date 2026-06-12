@@ -3,7 +3,7 @@ title: "Remove a cluster"
 topic: "high-availability"
 description: "Use this procedure to uninstall an Always On SQL Server failover cluster instance. Consider the following important points before you uninstall a SQL"
 tags: ["high-availability","remove-a-cluster"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use this procedure to uninstall an Always On SQL Server failover cluster instance.

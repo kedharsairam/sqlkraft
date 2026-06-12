@@ -3,12 +3,8 @@ title: "Query Spatial Data for Nearest Neighbor"
 topic: "spatial-data"
 description: ""
 tags: ["spatial-data","query-spatial-data-for-nearest-neighbor"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 database in Microsoft Fabric
 

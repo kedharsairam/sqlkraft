@@ -3,7 +3,7 @@ title: "Audit Server Object Management Event Class"
 topic: "event-classes"
 description: "The event class occurs in the case of CREATE, ALTER, or DROP for server objects. Description Name o"
 tags: ["event-classes","audit-server-object-management-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

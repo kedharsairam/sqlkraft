@@ -3,7 +3,7 @@ title: "User defined data type alias"
 topic: "collation"
 description: ""
 tags: ["collation","user-defined-data-type-alias"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to create a new user-defined data type alias in SQL Server by using

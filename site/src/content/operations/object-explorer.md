@@ -3,7 +3,7 @@ title: "Object Explorer"
 topic: "profiler"
 description: "SQL Bindings for Visual Studio Code lets you develop Azure Functions with Azure SQL bindings."
 tags: ["profiler","object-explorer"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQL Bindings for Visual Studio Code lets you develop Azure Functions with Azure SQL

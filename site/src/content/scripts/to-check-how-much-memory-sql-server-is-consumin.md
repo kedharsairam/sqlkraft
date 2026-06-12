@@ -4,7 +4,7 @@ title: "To Check How much Memory SQL Server is Consumin"
 description: "it will give you an approx. value of how much sql server is using memory in mb."
 category: "architecture"
 tags: ["architecture","health-check","memory"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

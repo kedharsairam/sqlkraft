@@ -3,7 +3,7 @@ title: "Agent roles"
 topic: "azure-synapse"
 description: "This article lists the server and database roles and mappings that the installation of Azure extension for SQL Server creates. When you install Azure extension for SQL Serve"
 tags: ["azure-synapse","agent-roles"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article lists the server and database roles and mappings that the installation of Azure

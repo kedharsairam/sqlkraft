@@ -3,7 +3,7 @@ title: "Invoking functions"
 topic: "clr-integration"
 description: "In Transact-SQL statements, you can invoke common language runtime (CLR) user- defined aggregates, subject to all the rules that apply to system aggregate functions."
 tags: ["clr-integration","invoking-functions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In Transact-SQL

@@ -3,7 +3,7 @@ title: "Design"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","design"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes the following factors you should consider when you design assemblies:

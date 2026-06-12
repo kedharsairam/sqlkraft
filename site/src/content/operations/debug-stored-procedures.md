@@ -3,12 +3,12 @@ title: "Debug Stored Procedures"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    The Transact-SQL debugger allows you to interactively debug stored procedures by displaying
-  
-    the SQL call stack, local variables, and parameters for the SQL stored procedure. The Transact-
+          
+            The Transact-SQL debugger allows you to interactively debug stored procedures by displaying
+          
+            the SQL call stack, local variables, and parameters for the SQL stored procedure. The Transact-
 tags: ["ssb-diagnose","debug-stored-procedures"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Transact-SQL debugger allows you to interactively debug stored procedures by displaying

@@ -4,7 +4,7 @@ title: "Combining vector indexes with traditional indexes"
 category: "queries"
 description: ""
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Table hints

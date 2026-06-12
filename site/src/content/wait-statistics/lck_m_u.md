@@ -5,7 +5,7 @@ category: "blocking"
 severity: "medium"
 description: "Occurs when a task waits to acquire an update (U) lock. Update locks are used during the initial phase of a modification to prevent concurrent modifications while allowing reads."
 tags: ["lock","update"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-blocking-chains"]
 ---
 

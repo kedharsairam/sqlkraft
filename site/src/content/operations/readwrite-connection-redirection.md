@@ -3,7 +3,7 @@ title: "Read/write connection redirection"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","readwrite-connection-redirection"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2019 (15.x) and later

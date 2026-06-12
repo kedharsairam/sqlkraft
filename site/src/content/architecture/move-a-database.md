@@ -3,7 +3,7 @@ title: "Move a Database"
 topic: "filestream"
 description: "This article shows how to move a FILESTREAM-enabled database. 1. In SQL Server Management Studio, select to open the Query Editor. 2."
 tags: ["filestream","move-a-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article shows how to move a FILESTREAM-enabled database.

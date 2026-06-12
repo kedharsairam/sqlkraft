@@ -3,7 +3,7 @@ title: "Query Tuning Assistant"
 topic: "upgrade"
 description: ""
 tags: ["upgrade","query-tuning-assistant"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

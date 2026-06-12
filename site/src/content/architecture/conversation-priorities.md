@@ -3,7 +3,7 @@ title: "Conversation Priorities"
 topic: "service-broker"
 description: ""
 tags: ["service-broker","conversation-priorities"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Conversation priorities are a set of user-defined rules, each of which specifies a priority level

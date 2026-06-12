@@ -3,7 +3,7 @@ title: "Failover cluster instances"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","failover-cluster-instances"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A failover cluster is a combination of one or more physical disks in a Microsoft Cluster Service

@@ -3,7 +3,7 @@ title: "Performance Event Category"
 topic: "event-classes"
 description: "Use the event category to monitor event classes and event classes that are produced from t"
 tags: ["event-classes","performance-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use the

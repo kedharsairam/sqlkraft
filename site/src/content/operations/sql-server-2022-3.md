@@ -3,7 +3,7 @@ title: "SQL Server 2022"
 topic: "linux-operations"
 description: "2022 (16.x) on Linux The following release notes apply to SQL Server 2022 (16.x) running on Linux. This article is broken into sections for each release. For detailed support"
 tags: ["linux-operations","sql-server-2022-3"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2022 (16.x) on Linux

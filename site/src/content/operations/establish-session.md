@@ -3,7 +3,7 @@ title: "Establish session"
 topic: "high-availability"
 description: "After the mirror database is prepared (see Prepare a Mirror Database for Mirroring (SQL Server) ), you can establish a database mirroring session. T"
 tags: ["high-availability","establish-session"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 After the mirror database is prepared (see

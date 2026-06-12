@@ -4,7 +4,7 @@ title: "sys.dm_os_memory_pools"
 category: "os"
 description: "Returns a row for each object store in the instance of SQL Server. You can use this view to monitor cache memory use and to identify bad caching behavior Memory address of the entry that represents the ID of a specific pool within a set of pools. Is not nullable. Type of object pool. Is not nullable. For more sys.dm_os_memory_clerks (Transact- System-assigned name o"
 tags: ["os","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

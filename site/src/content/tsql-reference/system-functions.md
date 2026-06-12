@@ -4,12 +4,8 @@ title: "System Functions"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 The following system functions perform operations on and return information about values, objects, and settings in SQL Server.
 

@@ -3,7 +3,7 @@ title: "Migrate from Windows"
 topic: "linux-operations"
 description: "on Linux SQL Server's backup and restore feature is the recommended way to migrate a database from SQL Server on Windows to SQL Server on Linux. In this tutorial, you walk t"
 tags: ["linux-operations","migrate-from-windows"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

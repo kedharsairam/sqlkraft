@@ -3,7 +3,7 @@ title: "FILESTREAM"
 topic: "filestream"
 description: "09/03/2025 - Windows only FILESTREAM enables SQL Server-based applications to store unstructured data, such as documents and images, on the file system."
 tags: ["filestream","filestream"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Windows only

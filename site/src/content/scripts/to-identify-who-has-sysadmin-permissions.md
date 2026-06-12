@@ -4,7 +4,7 @@ title: "To Identify Who has Sysadmin Permissions"
 description: "diagnostic script for security-audit operations."
 category: "security-audit"
 tags: ["permissions","security-audit"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

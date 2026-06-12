@@ -3,7 +3,7 @@ title: "Audit Database Object Access Event Class"
 topic: "event-classes"
 description: "The event class occurs when database objects, such as schemas, are accessed."
 tags: ["event-classes","audit-database-object-access-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

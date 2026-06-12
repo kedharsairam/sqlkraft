@@ -4,19 +4,19 @@ title: "sys.credentials"
 category: "compatibility"
 description: "Returns one row for each server-level credential."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   ALTER
-      CREDENTIAL Saddles
-      WITH
-      IDENTITY
-      =
-      'RettigB'
-      ,
-      SECRET =
-      'sdrlk8$40-dksli87nNN8'
-      ;
-      GO
+              CREDENTIAL Saddles
+              WITH
+              IDENTITY
+              =
+              'RettigB'
+              ,
+              SECRET =
+              'sdrlk8$40-dksli87nNN8'
+              ;
+              GO
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "ETL workflow"
 topic: "monitor"
 description: ""
 tags: ["monitor","etl-workflow"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use the

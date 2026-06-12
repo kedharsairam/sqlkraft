@@ -3,7 +3,7 @@ title: "Log blocks"
 topic: "locking"
 description: "Additionally, SQL Server can log a"
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Additionally, SQL Server can log a

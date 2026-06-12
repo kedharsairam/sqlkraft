@@ -4,7 +4,7 @@ title: "Version compatibility"
 category: "statements"
 description: "Filter (geometry Data"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

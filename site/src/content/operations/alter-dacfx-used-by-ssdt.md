@@ -3,18 +3,18 @@ title: "Alter DacFx Used by SSDT"
 topic: "data-tools"
 description: |
   09/10/2025
-  
-    Under specific circumstances you might need to use a different version of
-  
-    DacFx
-  
-    with the SQL
-  
-    Server Data Tools interface in Visual Studio. When possible, it's recommended to use a
-  
-    stan
+          
+            Under specific circumstances you might need to use a different version of
+          
+            DacFx
+          
+            with the SQL
+          
+            Server Data Tools interface in Visual Studio. When possible, it's recommended to use a
+          
+            stan
 tags: ["data-tools","alter-dacfx-used-by-ssdt"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Under specific circumstances you might need to use a different version of

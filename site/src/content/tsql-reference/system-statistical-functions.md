@@ -4,7 +4,7 @@ title: "System Statistical Functions"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following scalar functions return statistical information about the system:

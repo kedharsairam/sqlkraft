@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Data Accessor Functions - string"
 syntax: "xs:string"
 tags: ["xquery","data-accessor-functions-string"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the value of

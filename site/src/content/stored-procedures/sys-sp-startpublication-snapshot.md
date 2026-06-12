@@ -4,7 +4,7 @@ title: "sp_startpublication_snapshot"
 category: "general"
 description: "Used to start the Snapshot Agent job that generates the initial snapshot for a publication. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_startpublication_snapshot"
 ---
 

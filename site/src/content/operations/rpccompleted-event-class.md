@@ -3,7 +3,7 @@ title: "RPC:Completed Event Class"
 topic: "event-classes"
 description: "The event class indicates that a remote procedure call has been completed. Description Nam"
 tags: ["event-classes","rpccompleted-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

@@ -3,7 +3,7 @@ title: "Create, Modify, & Drop Spatial Indexes"
 topic: "spatial-data"
 description: ""
 tags: ["spatial-data","create-modify-drop-spatial-indexes"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A spatial index can more efficiently perform certain operations on a column of the

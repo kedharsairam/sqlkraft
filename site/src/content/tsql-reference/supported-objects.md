@@ -4,7 +4,7 @@ title: "Supported objects"
 category: "statements"
 description: "Starting with SQL Server 2019 (15.x),"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Starting with SQL Server 2019 (15.x),

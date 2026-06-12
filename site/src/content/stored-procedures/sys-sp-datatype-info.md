@@ -4,16 +4,16 @@ title: "sp_datatype_info"
 category: "general"
 description: "Returns information about the data types supported by the current environment. The code number for the specified data type. list of all data types, omit this parameter. The version of ODBC that is used."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_datatype_info
-      [ [ @data_type = ] data_type ]
-      [ , [ @
-      ODBCV
-      er = ]
-      ODBCV
-      er ]
-      [ ; ]
+              [ [ @data_type = ] data_type ]
+              [ , [ @
+              ODBCV
+              er = ]
+              ODBCV
+              er ]
+              [ ; ]
 ---
 
 ## Description

@@ -4,17 +4,17 @@ title: "sys.objects"
 category: "objects"
 description: "SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Catalog views return information that is used by the SQL Server Database Engine."
 tags: ["objects","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   SELECT
-      *
-      FROM
-      sys.objects
-      WHERE
-      type
-      =
-      'IT'
-      ;
+              *
+              FROM
+              sys.objects
+              WHERE
+              type
+              =
+              'IT'
+              ;
 ---
 
 ## Description

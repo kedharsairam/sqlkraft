@@ -4,7 +4,7 @@ title: "sys.dm_db_objects_disabled_on_compatibility_level_change"
 category: "execution"
 description: "Lists the indexes and constraints that will be disabled as a result of changing compatibility level in SQL Server. Indexes and constraints that contain persisted computed columns whose expressions use spatial UDTs will be disabled after upgrading or changing compatibility level. Use this dynamic management function to determine the impact of a change in compatibili"
 tags: ["execution","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.dm_db_objects_disabled_on_compatibility_level_change ( compatibility_level )"
 ---
 

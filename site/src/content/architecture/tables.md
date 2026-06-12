@@ -3,7 +3,7 @@ title: "tables"
 topic: "query-processing"
 description: "The performance of a hash index is:"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The performance of a hash index is:

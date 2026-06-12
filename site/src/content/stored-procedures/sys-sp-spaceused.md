@@ -4,7 +4,7 @@ title: "sp_spaceused"
 category: "general"
 description: "system stored procedure displays either: the number of rows, disk space reserved, and disk space used by a table, indexed view, or Service Broker queue in the current database the disk space reserved and used by the whole database For Azure Synapse Analytics and Analytics Platform System (PDW), upon the ordinal position of parameters."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_spaceused (@objname= N'Table1');"
 ---
 

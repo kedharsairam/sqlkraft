@@ -3,7 +3,7 @@ title: "User-Configurable Event Class"
 topic: "event-classes"
 description: "Use the User-Configurable event category to monitor user-defined events. Create user-defined"
 tags: ["event-classes","user-configurable-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use the User-Configurable event category to monitor user-defined events. Create user-defined

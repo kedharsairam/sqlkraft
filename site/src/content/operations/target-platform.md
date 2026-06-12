@@ -3,7 +3,7 @@ title: "Target platform"
 topic: "ssms"
 description: "The target platform setting is a project property that is used during project build to valida"
 tags: ["ssms","target-platform"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The target platform setting is a project property that is used during project build to validate

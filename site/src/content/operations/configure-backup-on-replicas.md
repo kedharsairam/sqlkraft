@@ -3,7 +3,7 @@ title: "Configure backup on replicas"
 topic: "high-availability"
 description: "This topic describes how to configure backup on secondary replicas for an Always On availability group by using SQL Server Management Studio, Transact"
 tags: ["high-availability","configure-backup-on-replicas"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to configure backup on secondary replicas for an Always On

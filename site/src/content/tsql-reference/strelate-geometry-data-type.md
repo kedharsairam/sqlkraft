@@ -4,7 +4,7 @@ title: "STRelate (geometry Data Type)"
 category: "data-types"
 description: "Returns true if the geometry instance is spatially related to another geometry according to the specified DE-9IM intersection pattern."
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 ## Syntax
 

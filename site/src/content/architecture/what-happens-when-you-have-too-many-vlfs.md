@@ -3,7 +3,7 @@ title: "What happens when you have too many VLFs?"
 topic: "query-processing"
 description: ""
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The

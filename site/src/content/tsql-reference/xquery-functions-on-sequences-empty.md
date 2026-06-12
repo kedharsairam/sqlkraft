@@ -5,7 +5,7 @@ category: "xquery"
 description: ""
 syntax: "fn:empty($arg as item()*) as xs:boolean"
 tags: ["xquery","functions-on-sequences-empty"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns True if the value of

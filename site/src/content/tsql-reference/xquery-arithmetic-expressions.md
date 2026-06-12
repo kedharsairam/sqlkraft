@@ -5,17 +5,17 @@ category: "xquery"
 description: "XQuery Language Reference: Arithmetic Expressions"
 syntax: |
   DECLARE @x xml
-    SET @x=''
-    SELECT @x.query('2 div 2')
-    SELECT @x.query('2 * 2')
-    DECLARE @x xml
-    SET @x=''
-    -- Following will not work
-    -- SELECT @x.query('2 idiv 2')
-    -- Workaround
-    SELECT @x.query('xs:integer(2 div 3)')
+            SET @x=''
+            SELECT @x.query('2 div 2')
+            SELECT @x.query('2 * 2')
+            DECLARE @x xml
+            SET @x=''
+            -- Following will not work
+            -- SELECT @x.query('2 idiv 2')
+            -- Workaround
+            SELECT @x.query('xs:integer(2 div 3)')
 tags: ["xquery","arithmetic-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 All arithmetic operators are supported, except for. The following examples illustrate the

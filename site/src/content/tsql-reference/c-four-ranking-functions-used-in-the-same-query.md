@@ -4,7 +4,7 @@ title: "C. Four ranking functions used in the same query"
 category: "predicates"
 description: "This example returns the top ten employees ranked by their salary."
 tags: ["tsql","predicates"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 This example returns the top ten employees ranked by their salary. Because the statement did not specify a clause, the function applied to all result set rows.

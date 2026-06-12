@@ -3,7 +3,7 @@ title: "Supported version & edition upgrades SQL Server 2016"
 topic: "upgrade"
 description: "06/03/2025 - Windows only You can upgrade from SQL Server 2008 (10.0.x), SQL Server 2008 R2 (10.50.x), SQL Server 2012 (11.x), and SQL Server 2014 (12.x)."
 tags: ["upgrade","supported-version-edition-upgrades-sql-server-2016"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Windows only

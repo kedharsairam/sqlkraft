@@ -4,19 +4,19 @@ title: "sp_dropmergepartition"
 category: "general"
 description: "Removes a partition for a parameterized row filter from a publication. This stored procedure is executed at the Publisher on the publication database. This stored procedure also removes the corresponding snapshot job and snapshot files for the partition. function at the Subscriber used to define the partition. function at the Subscrib"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_dropmergepartition
-      [ @publication = ]
-      N
-      'publication'
-      , [ @suser_sname = ]
-      N
-      'suser_sname'
-      , [ @host_name = ]
-      N
-      'host_name'
-      [ ; ]
+              [ @publication = ]
+              N
+              'publication'
+              , [ @suser_sname = ]
+              N
+              'suser_sname'
+              , [ @host_name = ]
+              N
+              'host_name'
+              [ ; ]
 ---
 
 ## Description

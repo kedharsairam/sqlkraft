@@ -3,7 +3,7 @@ title: "Create Variables & Columns"
 topic: "xml-data"
 description: "The data type is a built-in data type in SQL Server and is somewhat similar to other built-in types s"
 tags: ["xml-data","create-variables-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

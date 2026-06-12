@@ -4,7 +4,7 @@ title: "Pattern match using LIKE"
 category: "predicates"
 description: "Here's the result set."
 tags: ["tsql","predicates"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Here's the result set.

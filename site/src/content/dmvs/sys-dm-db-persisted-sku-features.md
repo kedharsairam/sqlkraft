@@ -4,7 +4,7 @@ title: "sys.dm_db_persisted_sku_features"
 category: "execution"
 description: "SQL database in Microsoft Some features of the Database Engine change the way that information is stored in the database files. These features are restricted to specific editions of SQL Server. A database that contains these features can't be moved to an edition of SQL Server that doesn't support"
 tags: ["execution","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.dm_db_persisted_sku_features"
 ---
 

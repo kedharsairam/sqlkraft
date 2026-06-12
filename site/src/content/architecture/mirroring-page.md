@@ -3,7 +3,7 @@ title: "Mirroring page"
 topic: "collation"
 description: "Access this page from the principal database, and use it to configure and to modify the properties of database mirroring for a database. Also use it t"
 tags: ["collation","mirroring-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Access this page from the principal database, and use it to configure and to modify the

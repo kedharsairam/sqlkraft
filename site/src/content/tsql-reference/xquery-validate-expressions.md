@@ -4,7 +4,7 @@ title: "XQuery - Validate Expressions"
 category: "xquery"
 description: "XQuery Language Reference: Validate Expressions"
 tags: ["xquery","validate-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this implementation, the

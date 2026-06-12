@@ -3,7 +3,7 @@ title: "Troubleshoot configuration"
 topic: "high-availability"
 description: "This article provides information to help you troubleshoot typical problems with configuring server instances for Always On availability groups. Typical configuration problem"
 tags: ["high-availability","troubleshoot-configuration"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article provides information to help you troubleshoot typical problems with configuring

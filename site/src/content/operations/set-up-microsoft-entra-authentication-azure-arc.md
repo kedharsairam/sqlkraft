@@ -3,7 +3,7 @@ title: "Set up Microsoft Entra authentication | Azure Arc"
 topic: "azure-arc"
 description: "2022 (16.x) This article describes a step-by-step process to set up authentication with Microsoft Entra ID with app registration, and demonstrates how to use different Micros"
 tags: ["azure-arc","set-up-microsoft-entra-authentication-azure-arc"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2022 (16.x)

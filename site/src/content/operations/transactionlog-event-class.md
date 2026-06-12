@@ -3,7 +3,7 @@ title: "TransactionLog Event Class"
 topic: "event-classes"
 description: "Use the TransactionLog event class to monitor activity in the transaction logs in an instance"
 tags: ["event-classes","transactionlog-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use the TransactionLog event class to monitor activity in the transaction logs in an instance of

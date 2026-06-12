@@ -4,7 +4,7 @@ title: "Scalar functions"
 category: "statements"
 description: "Configuration functions are scalar functions that return information about current"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Categories of scalar functions

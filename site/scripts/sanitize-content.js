@@ -183,7 +183,11 @@ function rebuildFrontmatter(frontmatterText, overrides) {
     // JSON array — output inline even if it contains quotes
     if (/^\[[\s\S]*\]$/.test(strVal.trim())) {
       lines.push(`${key}: ${strVal}`);
-    } else if (strVal === "true" || strVal === "false" || /^\d+$/.test(strVal)) {
+    } else if (strVal === "true" || strVal === "false") {
+      // Boolean values — unquoted for YAML boolean parsing
+      lines.push(`${key}: ${strVal}`);
+    } else if (/^\d{4}-\d{2}-\d{2}$/.test(strVal)) {
+      // Date value (e.g., 2025-12-01) — output unquoted for YAML date parsing
       lines.push(`${key}: ${strVal}`);
     } else if (strVal.includes('"') || strVal.includes("\n")) {
       // Multi-line or contains quotes — use YAML literal block
@@ -725,21 +729,92 @@ function stripBoilerplate(body) {
 }
 
 /**
+ * Replace a specific frontmatter field value using regex.
+ * Works for both `key: "value"` and `key: |` literal block formats.
+ * Preserves all other fields exactly as-is.
+ */
+function replaceFrontmatterField(frontmatter, key, newValue) {
+  // Handle description: "..." (quoted string)
+  const quotedRe = new RegExp(`^(${key}:\\s*)"([^"]*)"\\s*$`, "m");
+  if (quotedRe.test(frontmatter)) {
+    return frontmatter.replace(quotedRe, `$1"${newValue}"`);
+  }
+
+  // Handle description: | (YAML literal block)
+  const literalBlockRe = new RegExp(
+    `^(${key}:\\s*\\|)\\s*\\n((?:\\s{2}.*\\n?)*)`,
+    "m"
+  );
+  if (literalBlockRe.test(frontmatter)) {
+    // Replace literal block with inline quoted value
+    return frontmatter.replace(literalBlockRe, `$1 "${newValue}"`);
+  }
+
+  // Handle key: bare value (unquoted)
+  const bareRe = new RegExp(`^(${key}:\\s*)(\\S.*)$`, "m");
+  if (bareRe.test(frontmatter)) {
+    // Check if the current value is already a JSON array
+    const match = frontmatter.match(bareRe);
+    if (match && /^\[/.test(newValue)) {
+      // JSON array — output unquoted
+      return frontmatter.replace(bareRe, `$1${newValue}`);
+    }
+    return frontmatter.replace(bareRe, `$1"${newValue}"`);
+  }
+
+  return frontmatter;
+}
+
+/**
+ * Replace a YAML list-format field (tags:\n  - "item") with inline JSON array.
+ */
+function replaceYamlListWithJson(frontmatter, key, jsonArray) {
+  // Match: key:\n  - "item1"\n  - "item2"
+  const listRe = new RegExp(
+    `^(${key}:)\\s*\\n((?:\\s+-\\s+"[^"]*"\\n?)*)`,
+    "m"
+  );
+  if (listRe.test(frontmatter)) {
+    return frontmatter.replace(listRe, `$1 ${jsonArray}`);
+  }
+  return frontmatter;
+}
+
+/**
  * Pass 8 — Clean frontmatter description field (YAML literal blocks + quoted).
  * Strips boilerplate ("Article", "Applies to:", dates, platform names, etc.)
  * from the description field in the frontmatter, regardless of format.
  */
 function cleanFrontmatterDescription(frontmatter) {
-  const fm = parseFrontmatterMap(frontmatter);
-  if (!fm.description || fm.description.trim() === "") return frontmatter;
+  // Extract description value directly from frontmatter text
+  let desc = "";
 
-  let desc = fm.description;
+  // Try quoted format: description: "..."
+  const quotedMatch = frontmatter.match(/^description:\s*"([^"]*)"\s*$/m);
+  if (quotedMatch) {
+    desc = quotedMatch[1];
+  } else {
+    // Try literal block format: description: |\n  ...
+    const literalMatch = frontmatter.match(/^description:\s*\|\s*\n((?:\s{2}.*\n?)*)/m);
+    if (literalMatch) {
+      desc = literalMatch[1]
+        .split("\n")
+        .map((l) => l.replace(/^\s{2}/, ""))
+        .join("\n")
+        .trim();
+    }
+  }
+
+  if (!desc || desc.trim() === "") return frontmatter;
+
+  // Clean the description
+  let cleaned = desc;
 
   // Remove "Article" + bullet + date pattern at the start
-  desc = desc.replace(/^Article\s*\n\s*•?\s*\n?\s*\d{2}\/\d{2}\/\d{4}\s*\n*/i, "");
+  cleaned = cleaned.replace(/^Article\s*\n\s*•?\s*\n?\s*\d{2}\/\d{2}\/\d{4}\s*\n*/i, "");
 
   // Remove "Applies to:" and any content until the next non-blank, non-list line
-  desc = desc.replace(/Applies to:[\s\S]*?(?=\n\s*[A-Za-z]|\n\n|$)/i, "");
+  cleaned = cleaned.replace(/Applies to:[\s\S]*?(?=\n\s*[A-Za-z]|\n\n|$)/i, "");
 
   // Remove standalone platform name lines (with optional leading whitespace)
   const platformNames = [
@@ -751,79 +826,106 @@ function cleanFrontmatterDescription(frontmatter) {
   for (const name of platformNames) {
     const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const reIndented = new RegExp(`^\\s*${escaped}\\s*$`, "gim");
-    desc = desc.replace(reIndented, "");
+    cleaned = cleaned.replace(reIndented, "");
   }
-
-  // Remove "Transact-SQL syntax conventions"
-  desc = desc.replace(/Transact-SQL syntax conventions/gi, "");
-
-  // Remove "Last updated on ..."
-  desc = desc.replace(/Last updated on\s+\d{1,2}\/\d{1,2}\/\d{4}\s*/gi, "");
-
-  // Remove "Related content" and everything after it
-  desc = desc.replace(/Related content[\s\S]*$/gi, "");
 
   // Remove "Summarize this article for me" (Microsoft AI-generated summary header)
-  desc = desc.replace(/^Summarize this article for me\s*/i, "");
+  cleaned = cleaned.replace(/^Summarize this article for me\s*/i, "");
 
   // Remove "syntaxsql" remnants
-  desc = desc.replace(/^syntaxsql\s*$/gim, "");
+  cleaned = cleaned.replace(/^syntaxsql\s*$/gim, "");
+
+  // Remove "Transact-SQL syntax conventions"
+  cleaned = cleaned.replace(/Transact-SQL syntax conventions/gi, "");
+
+  // Remove "Last updated on ..."
+  cleaned = cleaned.replace(/Last updated on\s+\d{1,2}\/\d{1,2}\/\d{4}\s*/gi, "");
+
+  // Remove "Related content" and everything after it
+  cleaned = cleaned.replace(/Related content[\s\S]*$/gi, "");
 
   // Clean up the actual description: flatten newlines, remove excessive whitespace
-  desc = desc.replace(/\n+/g, " ").replace(/\s+/g, " ").trim();
+  cleaned = cleaned.replace(/\n+/g, " ").replace(/\s+/g, " ").trim();
 
-  // If description is now empty, try to extract a meaningful first sentence from the body
-  if (!desc || desc.length < 5) {
-    return frontmatter; // Keep original, let the body handle it
+  // If description is now empty, keep original
+  if (!cleaned || cleaned.length < 5) {
+    return frontmatter;
   }
 
-  // Only update if the cleaned version is meaningfully different
-  if (desc !== fm.description.replace(/\n+/g, " ").replace(/\s+/g, " ").trim()) {
-    const overrides = { description: desc };
-    return "---\n" + rebuildFrontmatter(frontmatter, overrides) + "\n---\n";
+  // Only update if cleaned version is different
+  const originalFlat = desc.replace(/\n+/g, " ").replace(/\s+/g, " ").trim();
+  if (cleaned === originalFlat) {
+    return frontmatter;
   }
 
-  return frontmatter;
+  // Replace the description field using targeted regex
+  return replaceFrontmatterField(frontmatter, "description", cleaned);
 }
 
 /**
  * Pass 9 — Normalize tags to JSON array format.
  */
 function normalizeTags(frontmatter) {
-  const fm = parseFrontmatterMap(frontmatter);
-  if (!fm.tags) return frontmatter;
+  // Try to extract tags value from frontmatter
+  let tags = "";
+  let isLiteralBlock = false;
+  let isYamlList = false;
 
-  let tags = fm.tags;
-
-  // If it's already a JSON array, ensure it's output inline (not in YAML literal block)
-  if (/^\[[\s\S]*\]$/.test(tags.trim())) {
-    try {
-      const parsed = JSON.parse(tags);
-      if (Array.isArray(parsed)) {
-        // Rewrite to ensure inline format, even if currently in YAML literal block
-        const overrides = { tags: JSON.stringify(parsed) };
-        return "---\n" + rebuildFrontmatter(frontmatter, overrides) + "\n---\n";
+  // Check for YAML list format: tags:\n  - "item"
+  if (/^tags:\s*\n\s+-/m.test(frontmatter)) {
+    isYamlList = true;
+    // Extract the list items
+    const listMatch = frontmatter.match(/^tags:\s*\n((?:\s+-[^\n]*\n?)*)/m);
+    if (listMatch) {
+      tags = listMatch[1].trim();
+    }
+  } else {
+    // Check for literal block: tags: |\n  [...]
+    const literalMatch = frontmatter.match(/^tags:\s*\|\s*\n\s+(\[.*?\])\s*$/m);
+    if (literalMatch) {
+      isLiteralBlock = true;
+      tags = literalMatch[1];
+    } else {
+      // Check for inline: tags: [...]
+      const inlineMatch = frontmatter.match(/^tags:\s*(\[.*?\])\s*$/m);
+      if (inlineMatch) {
+        tags = inlineMatch[1];
+        // Already inline JSON — nothing to do
+        try {
+          const parsed = JSON.parse(tags);
+          if (Array.isArray(parsed)) return frontmatter;
+        } catch {}
       }
-    } catch {
-      // Invalid JSON — fall through to fix
     }
   }
 
-  // If it's a YAML list (- "item"), convert to JSON array
-  const yamlListMatch = tags.match(/^-\s+"([^"]+)"\s*$/m);
-  if (yamlListMatch) {
+  if (!tags) return frontmatter;
+
+  // If it's a YAML list, convert items to JSON array
+  if (isYamlList) {
     const items = [];
-    for (const match of tags.matchAll(/^-\s+"([^"]+)"\s*$/gm)) {
+    for (const match of tags.matchAll(/-\s+"([^"]+)"/g)) {
       items.push(match[1]);
     }
     if (items.length > 0) {
-      const overrides = { tags: JSON.stringify(items) };
-      return "---\n" + rebuildFrontmatter(frontmatter, overrides) + "\n---\n";
+      return replaceYamlListWithJson(frontmatter, "tags", JSON.stringify(items));
     }
+  }
+
+  // If it's a literal block with JSON, replace inline
+  if (isLiteralBlock) {
+    try {
+      const parsed = JSON.parse(tags);
+      if (Array.isArray(parsed)) {
+        return replaceFrontmatterField(frontmatter, "tags", JSON.stringify(parsed));
+      }
+    } catch {}
   }
 
   return frontmatter;
 }
+
+/* ════════════════════════════════════════════════════════════════
 
 /* ════════════════════════════════════════════════════════════════
    MAIN PROCESSOR

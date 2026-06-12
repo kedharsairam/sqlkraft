@@ -3,7 +3,7 @@ title: "Performance considerations"
 topic: "tables"
 description: "2016 (13.x) and later This article discusses some specific performance considerations when using system-versioned memory-o"
 tags: ["tables","performance-considerations"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later

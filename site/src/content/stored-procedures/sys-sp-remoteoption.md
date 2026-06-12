@@ -4,7 +4,7 @@ title: "sp_remoteoption"
 category: "general"
 description: "Displays or changes options for a remote login defined on the local server running SQL Server. This stored procedure returns the following error message: Linked servers (Database Engine) This feature will be removed in a future version of SQL Server."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "The trusted option in remote login mapping is no longer supported."
 ---
 

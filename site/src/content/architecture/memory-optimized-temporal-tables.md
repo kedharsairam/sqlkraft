@@ -3,7 +3,7 @@ title: "Memory-optimized temporal tables"
 topic: "tables"
 description: "09/07/2025 SQL Server 2016 (13.x) and later System-versioned temporal tables for memory-optimized tables provide a cost-effective solution for scenarios w"
 tags: ["tables","memory-optimized-temporal-tables"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later

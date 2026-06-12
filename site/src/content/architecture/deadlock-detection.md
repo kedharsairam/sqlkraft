@@ -3,7 +3,7 @@ title: "Deadlock detection"
 topic: "locking"
 description: ""
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 However, when separate transactions hold partition locks in a table and want a lock

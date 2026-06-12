@@ -3,7 +3,7 @@ title: "Metadata views & functions"
 topic: "tables"
 description: ""
 tags: ["tables","metadata-views-functions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

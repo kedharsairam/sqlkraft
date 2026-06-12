@@ -4,12 +4,12 @@ title: "sp_drop_trusted_assembly"
 category: "general"
 description: "2017 (14.x) and later Drops an assembly from the list of trusted assemblies on the server. The SHA2_512 hash value of the assembly to drop from the list of trusted assemblies for the server. Trusted assemblies might load when CLR strict security is enabled, even if the assembly is unsigned or the database isn't marked as trustworthy. This procedure remove"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_drop_trusted_assembly
-      [ @hash = ]
-      'value'
-      [ ; ]
+              [ @hash = ]
+              'value'
+              [ ; ]
 ---
 
 ## Description

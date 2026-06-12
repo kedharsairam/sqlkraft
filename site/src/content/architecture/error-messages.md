@@ -3,7 +3,7 @@ title: "Error messages"
 topic: "clr-integration"
 description: "Express LocalDB error messages 07/14/2025 This section provides reference information about the following SQL Server Express LocalDB error messages: Description"
 tags: ["clr-integration","error-messages"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Express LocalDB error messages

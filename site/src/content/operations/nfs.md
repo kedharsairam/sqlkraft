@@ -3,7 +3,7 @@ title: "NFS"
 topic: "linux-operations"
 description: "on Linux 07/03/2025 - Linux This article explains how to configure NFS storage for a failover cluster instance (FCI) on Linux. NFS, or network file system, is a"
 tags: ["linux-operations","nfs"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

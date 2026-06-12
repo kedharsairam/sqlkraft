@@ -3,7 +3,7 @@ title: "Partitioned attribute"
 topic: "io-fundamentals"
 description: ""
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 When an operator such as an Index Seek is executed on a partitioned table or index, the

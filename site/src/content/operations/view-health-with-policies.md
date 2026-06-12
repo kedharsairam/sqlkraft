@@ -3,7 +3,7 @@ title: "View health with policies"
 topic: "high-availability"
 description: "This topic describes how to determine the operational health of an Always On availability group by using an Always On policy in SQL Server Management"
 tags: ["high-availability","view-health-with-policies"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to determine the operational health of an Always On availability

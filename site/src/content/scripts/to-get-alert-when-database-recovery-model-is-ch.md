@@ -4,7 +4,7 @@ title: "To Get Alert When Database Recovery Model is Ch"
 description: "This code will trigger an alert to your email when recovery model got change."
 category: "automation"
 tags: ["automation","database"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

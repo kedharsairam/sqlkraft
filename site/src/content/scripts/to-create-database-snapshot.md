@@ -4,7 +4,7 @@ title: "To Create Database Snapshot"
 description: "diagnostic script for database operations."
 category: "database"
 tags: ["database"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

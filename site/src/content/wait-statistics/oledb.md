@@ -5,7 +5,7 @@ category: "latency"
 severity: "high"
 description: "Occurs when SQL Server is waiting on OLE DB calls to a linked server or remote data source. High values indicate slow remote queries, network latency between servers, or under-powered remote targets."
 tags: ["network","linked-server","remote"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-linked-server"]
 ---
 

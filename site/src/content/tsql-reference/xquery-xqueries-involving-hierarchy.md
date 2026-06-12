@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: XQueries Involving Hierarchy"
 syntax: "ManuInstr"
 tags: ["xquery","xqueries-involving-hierarchy"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Most

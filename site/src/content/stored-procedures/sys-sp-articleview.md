@@ -4,33 +4,33 @@ title: "sp_articleview"
 category: "general"
 description: "Creates the view that defines the published article when a table is filtered vertically or horizontally. This view is used as the filtered source of the schema and data for the destination tables. Only unsubscribed articles can be modified by this stored procedure. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_articleview
-      [ @publication = ]
-      N
-      'publication'
-      , [ @article = ]
-      N
-      'article'
-      [ , [ @view_name = ]
-      N
-      'view_name'
-      ]
-      [ , [ @filter_clause = ]
-      N
-      'filter_clause'
-      ]
-      [ , [ @change_active = ] change_active ]
-      [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
-      [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
-      [ , [ @publisher = ]
-      N
-      'publisher'
-      ]
-      [ , [ @refreshsynctranprocs = ] refreshsynctranprocs ]
-      [ , [ @internal = ] internal ]
-      [ ; ]
+              [ @publication = ]
+              N
+              'publication'
+              , [ @article = ]
+              N
+              'article'
+              [ , [ @view_name = ]
+              N
+              'view_name'
+              ]
+              [ , [ @filter_clause = ]
+              N
+              'filter_clause'
+              ]
+              [ , [ @change_active = ] change_active ]
+              [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
+              [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
+              [ , [ @publisher = ]
+              N
+              'publisher'
+              ]
+              [ , [ @refreshsynctranprocs = ] refreshsynctranprocs ]
+              [ , [ @internal = ] internal ]
+              [ ; ]
 ---
 
 ## Description

@@ -4,7 +4,7 @@ title: "sys.syslockinfo"
 category: "compatibility"
 description: "Contains information about all granted, converting, and waiting lock requests. Textual description of a lock resource. Contains a part of the Binary lock resource. Contains the actual lock resource that is contained in the lock manager."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

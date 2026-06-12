@@ -4,7 +4,7 @@ title: "Temporary tables"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The Database Engine doesn't enforce an order in which DEFAULT, IDENTITY, ROWGUIDCOL, or

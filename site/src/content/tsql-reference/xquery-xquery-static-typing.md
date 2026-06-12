@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: XQuery & Static Typing"
 syntax: "element(age,xs:integer)*"
 tags: ["xquery","xquery-static-typing"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 XQuery in SQL Server is a statically typed language. That is, it raises type errors during query

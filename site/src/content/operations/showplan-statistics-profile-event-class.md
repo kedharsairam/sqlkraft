@@ -3,7 +3,7 @@ title: "Showplan Statistics Profile Event Class"
 topic: "event-classes"
 description: "The Showplan Statistics Profile event class occurs when Microsoft SQL Server executes a SQL"
 tags: ["event-classes","showplan-statistics-profile-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Showplan Statistics Profile event class occurs when Microsoft SQL Server executes a SQL

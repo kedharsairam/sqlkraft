@@ -3,7 +3,7 @@ title: "The xs:QName Type"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","the-xsqname-type"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 doesn't support types derived from

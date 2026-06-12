@@ -4,10 +4,10 @@ title: "sys.external_data_sources"
 category: "external"
 description: "2016 (13.x) and later versions Analytics Platform System (PDW) SQL database in Microsoft Fabric Contains a row for each external data source in the current database for SQL Server, Azure SQL Database, and Azure Synapse Analytics. Contains a row for each external data source on the server for Analytics Platform System Object ID for the external data Data source type displayed as a Data s"
 tags: ["external","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   REMOTE_DATA_ARCHIVE
-      4
+              4
 ---
 
 ## Description

@@ -3,14 +3,14 @@ title: "SQL Server enabled by Azure Arc FAQ"
 topic: "azure-arc"
 description: |
   Yes, you can use the
-  
-    setting in the Azure Policy to indicate the SQL Server
-  
-    instances that you don't want to include in the onboarding process.
-  
-    For example, if you have any standby instances, you m
+          
+            setting in the Azure Policy to indicate the SQL Server
+          
+            instances that you don't want to include in the onboarding process.
+          
+            For example, if you have any standby instances, you m
 tags: ["azure-arc","sql-server-enabled-by-azure-arc-faq"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Yes, you can use the

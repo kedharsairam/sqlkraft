@@ -3,7 +3,7 @@ title: "Disk space example"
 topic: "filestream"
 description: "Whenever an index is created, rebuilt, or dropped, disk space for both the old (source) and n"
 tags: ["filestream","disk-space-example"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Whenever an index is created, rebuilt, or dropped, disk space for both the old (source) and new

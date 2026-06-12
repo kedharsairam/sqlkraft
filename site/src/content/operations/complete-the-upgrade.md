@@ -3,7 +3,7 @@ title: "Complete the upgrade"
 topic: "upgrade"
 description: "06/04/2025 - Windows only After upgrading the Database Engine, complete the following tasks: Perform a full backup of each database."
 tags: ["upgrade","complete-the-upgrade"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Windows only

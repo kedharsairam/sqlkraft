@@ -3,7 +3,7 @@ title: "Disaster Recovery through Forced Quorum"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","disaster-recovery-through-forced-quorum"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Quorum failure is usually caused by a systemic disaster, or a persistent communications failure,

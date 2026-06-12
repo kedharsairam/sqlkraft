@@ -3,7 +3,7 @@ title: "Hash partitioning script"
 topic: "io-fundamentals"
 description: ""
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The use of this script is described in

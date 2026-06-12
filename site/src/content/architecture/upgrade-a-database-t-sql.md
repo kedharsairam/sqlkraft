@@ -3,7 +3,7 @@ title: "Upgrade a Database (T-SQL)"
 topic: "collation"
 description: "This topic describes how to use detach and attach operations to upgrade a database in SQL Server."
 tags: ["collation","upgrade-a-database-t-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to use detach and attach operations to upgrade a database in SQL

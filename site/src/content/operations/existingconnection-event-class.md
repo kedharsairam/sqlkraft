@@ -3,7 +3,7 @@ title: "ExistingConnection Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","existingconnection-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The ExistingConnection event class indicates the properties of existing user connections when

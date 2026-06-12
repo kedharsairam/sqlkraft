@@ -3,7 +3,7 @@ title: "Always On Dashboard"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","always-on-dashboard"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Database administrators use the Always On Availability Group dashboard to obtain an at-a-

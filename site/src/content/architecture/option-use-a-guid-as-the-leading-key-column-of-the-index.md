@@ -3,7 +3,7 @@ title: "Option: Use a GUID as the leading key column of the index"
 topic: "index-architecture"
 description: ""
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 The following table definition can be used to generate a modulo that aligns to the number of

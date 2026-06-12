@@ -4,7 +4,7 @@ title: "To View List of Memory Clerks"
 description: "diagnostic script for architecture operations."
 category: "architecture"
 tags: ["architecture","memory"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

@@ -3,7 +3,7 @@ title: "Create Client Applications"
 topic: "filestream"
 description: "You can use Win32 APIs to read and write data to a FILESTREAM BLOB. The following steps are required: Read the FILESTREAM file path. Read the curren"
 tags: ["filestream","create-client-applications"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can use Win32 APIs to read and write data to a FILESTREAM BLOB. The following steps are

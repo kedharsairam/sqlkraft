@@ -3,7 +3,7 @@ title: "Change replica failover mode"
 topic: "high-availability"
 description: "This topic describes how to change the failover mode of an availability replica in an Always On availability group in SQL Server by using SQL Server M"
 tags: ["high-availability","change-replica-failover-mode"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to change the failover mode of an availability replica in an Always On

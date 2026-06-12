@@ -4,7 +4,7 @@ title: "Use PIVOT and UNPIVOT"
 category: "statements"
 description: "can include table-valued functions, but it can't contain"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 function. The

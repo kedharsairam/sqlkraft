@@ -3,7 +3,7 @@ title: "Lesson 1: Creating the Target Database"
 topic: "service-broker"
 description: ""
 tags: ["service-broker","lesson-1-creating-the-target-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this lesson, you learn to create the target database and all the Service Broker target objects

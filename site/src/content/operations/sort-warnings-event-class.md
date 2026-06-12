@@ -3,7 +3,7 @@ title: "Sort Warnings Event Class"
 topic: "event-classes"
 description: "The Sort Warnings event class indicates that sort operations do not fit into memory."
 tags: ["event-classes","sort-warnings-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Sort Warnings event class indicates that sort operations do not fit into memory. This does

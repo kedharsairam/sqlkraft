@@ -3,7 +3,7 @@ title: "Generate data"
 topic: "monitor"
 description: "The released versions of the WideWorldImporters and WideWorldImportersDW databases have data from January 1, 2013, up to the day t"
 tags: ["monitor","generate-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The released versions of the WideWorldImporters and WideWorldImportersDW databases have

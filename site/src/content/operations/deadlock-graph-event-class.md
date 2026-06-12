@@ -3,7 +3,7 @@ title: "Deadlock Graph Event Class"
 topic: "event-classes"
 description: "2016 (13.x) and later versions Azure SQL Managed Instance The event class provides an XML description of a deadlock. T"
 tags: ["event-classes","deadlock-graph-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

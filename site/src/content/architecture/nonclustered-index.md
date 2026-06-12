@@ -3,7 +3,7 @@ title: "Nonclustered index"
 topic: "filestream"
 description: "You can create nonclustered indexes in SQL Server by using SQL Server Management Studio or T"
 tags: ["filestream","nonclustered-index"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can create nonclustered indexes in SQL Server by using SQL Server Management Studio or

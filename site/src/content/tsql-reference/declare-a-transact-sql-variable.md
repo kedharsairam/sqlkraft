@@ -4,7 +4,7 @@ title: "Declare a Transact-SQL variable"
 category: "language-elements"
 description: ""
 tags: ["tsql","language-elements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Analytics Platform System (PDW)

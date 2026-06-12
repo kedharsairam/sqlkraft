@@ -3,12 +3,10 @@ title: "XML schema collections"
 topic: "ssms"
 description: "ﾃ Summarize this article for me SQL database projects support automatic generation of XML s"
 tags: ["ssms","xml-schema-collections"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ﾃ
-
-Summarize this article for me
 
 SQL database projects support automatic generation of XML schema collection objects from
 

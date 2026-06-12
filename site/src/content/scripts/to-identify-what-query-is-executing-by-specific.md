@@ -4,7 +4,7 @@ title: "To Identify What Query is Executing by Specific"
 description: "if the query is small, use the following"
 category: "general"
 tags: ["general"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

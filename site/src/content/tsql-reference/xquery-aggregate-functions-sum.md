@@ -5,7 +5,7 @@ category: "xquery"
 description: ""
 syntax: "AdventureWorks2022"
 tags: ["xquery","aggregate-functions-sum"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the sum of a sequence of numbers.

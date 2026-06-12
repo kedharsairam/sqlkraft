@@ -3,7 +3,7 @@ title: "Logical operator precedence"
 topic: "transaction-log"
 description: "When it was first introduced, batch mode execution was closely integrated with, and optimized"
 tags: ["transaction-log","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 When it was first introduced, batch mode execution was closely integrated with, and optimized

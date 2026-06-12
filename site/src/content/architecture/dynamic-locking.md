@@ -3,7 +3,7 @@ title: "Dynamic locking"
 topic: "locking"
 description: ""
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Monitor lock escalation by using the

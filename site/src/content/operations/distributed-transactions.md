@@ -3,7 +3,7 @@ title: "Distributed transactions"
 topic: "high-availability"
 description: "This article describes cross-database and distributed transactions support for Always On availability groups and database mirroring. SQL Server 2017"
 tags: ["high-availability","distributed-transactions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes cross-database and distributed transactions support for Always On

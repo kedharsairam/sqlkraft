@@ -3,7 +3,7 @@ title: "Create Views over Columns"
 topic: "xml-data"
 description: "You can use an type column to create views. The following example creates a view in which t"
 tags: ["xml-data","create-views-over-columns"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can use an

@@ -3,7 +3,7 @@ title: "T-SQL"
 topic: "high-availability"
 description: "This topic introduces the Transact-SQL statements that support deploying Always On availability groups and creating and managing an given availability"
 tags: ["high-availability","t-sql-3"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic introduces the Transact-SQL statements that support deploying Always On

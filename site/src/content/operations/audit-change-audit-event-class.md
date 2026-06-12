@@ -3,7 +3,7 @@ title: "Audit Change Audit Event Class"
 topic: "event-classes"
 description: "The event class occurs whenever an audit trace modification is made. Description Name of the client"
 tags: ["event-classes","audit-change-audit-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

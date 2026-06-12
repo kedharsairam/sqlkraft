@@ -4,7 +4,7 @@ title: "sys.index_columns"
 category: "objects"
 description: "Contains one row per column that is part of an index or unordered table (heap)."
 tags: ["objects","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "data_clustering_ordinal"
 ---
 

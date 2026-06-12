@@ -3,7 +3,7 @@ title: "Extract a Script from a Trace"
 topic: "profiler"
 description: ""
 tags: ["profiler","extract-a-script-from-a-trace"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to extract Transact-SQL events from a trace file or table and save

@@ -4,7 +4,7 @@ title: "@@PACK_RECEIVED"
 category: "variables"
 description: "table (trigger scope). For"
 tags: ["tsql","variables"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 In this example,

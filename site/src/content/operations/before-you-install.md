@@ -3,7 +3,7 @@ title: "Before you install"
 topic: "high-availability"
 description: "Before you install a SQL Server failover cluster, you must select the hardware and the operating system on which SQL Server will run."
 tags: ["high-availability","before-you-install"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Before you install a SQL Server failover cluster, you must select the hardware and the operating

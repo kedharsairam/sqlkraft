@@ -3,7 +3,7 @@ title: "Specify parameters"
 topic: "spatial-data"
 description: "By specifying procedure parameters"
 tags: ["spatial-data","specify-parameters"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

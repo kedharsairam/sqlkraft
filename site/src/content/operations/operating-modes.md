@@ -3,7 +3,7 @@ title: "Operating Modes"
 topic: "high-availability"
 description: "This topic describes the synchronous and asynchronous operating modes for database mirroring sessions. This section introduces a few terms that are c"
 tags: ["high-availability","operating-modes"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes the synchronous and asynchronous operating modes for database

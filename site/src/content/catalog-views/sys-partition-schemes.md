@@ -4,7 +4,7 @@ title: "sys.partition_schemes"
 category: "partitions"
 description: "SQL analytics endpoint in Microsoft Fabric Contains a row for each Data Space that is a partition scheme, with sys.data_spaces (Transact-SQL) ID of partition function used in the scheme. For a list of columns that this view inherits, see sys.data_spaces (Transact-SQL) role. For more information, see Querying the SQL Server System Catalog FAQ"
 tags: ["partitions","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.partition_schemes"
 ---
 

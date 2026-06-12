@@ -3,7 +3,7 @@ title: "Overview"
 topic: "collation"
 description: ""
 tags: ["collation","overview"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A database in SQL Server is made up of a collection of tables that stores a specific set of

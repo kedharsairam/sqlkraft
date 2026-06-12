@@ -3,7 +3,7 @@ title: "Native client error 50,000"
 topic: "monitor"
 description: "Product Name Product Version 11"
 tags: ["monitor","native-client-error-50000"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

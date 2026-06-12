@@ -3,7 +3,7 @@ title: "Run and connect (containers)"
 topic: "linux-operations"
 description: "Quickstart: Run SQL Server Linux container on Linux In this quickstart, you use Docker to pull and run the SQL Server 2025 (17.x) Linux container image, mssql-server-linux"
 tags: ["linux-operations","run-and-connect-containers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Quickstart: Run SQL Server Linux container

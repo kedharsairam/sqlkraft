@@ -3,7 +3,7 @@ title: "FT:Crawl Stopped Event Class"
 topic: "event-classes"
 description: "The event class indicates that a full-text crawl (population) has stopped. The stop can be due to a s"
 tags: ["event-classes","ftcrawl-stopped-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

@@ -3,12 +3,10 @@ title: "Add a secondary database"
 topic: "high-availability"
 description: "ﾃ Summarize this article for me This article describes how to add a secondary database to an existing log shipping configuration in SQL Server by using SQL Server Managemen"
 tags: ["high-availability","add-a-secondary-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ﾃ
-
-Summarize this article for me
 
 This article describes how to add a secondary database to an existing log shipping
 

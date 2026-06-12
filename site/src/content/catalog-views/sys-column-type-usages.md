@@ -4,7 +4,7 @@ title: "sys.column_type_usages"
 category: "compatibility"
 description: "Contains one row for each column that is of user-defined type."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

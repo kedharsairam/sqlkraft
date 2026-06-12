@@ -3,7 +3,7 @@ title: "Get started with security features"
 topic: "linux-operations"
 description: "on Linux - Linux If you're a Linux user who is new to SQL Server, the following tasks walk you through some of the security tasks. These"
 tags: ["linux-operations","get-started-with-security-features"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

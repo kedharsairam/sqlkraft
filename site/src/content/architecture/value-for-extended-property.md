@@ -3,7 +3,7 @@ title: "Value for Extended Property"
 topic: "collation"
 description: "Use the <property name> dialog box to enter or view a value."
 tags: ["collation","value-for-extended-property"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use the

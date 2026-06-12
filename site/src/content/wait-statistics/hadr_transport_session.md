@@ -5,7 +5,7 @@ category: "latency"
 severity: "medium"
 description: "Occurs when waiting for the AG transport session to become available. Indicates network connectivity issues or AG communication bottlenecks between replicas."
 tags: ["ag","transport","network"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["diagnose-ag-network"]
 ---
 

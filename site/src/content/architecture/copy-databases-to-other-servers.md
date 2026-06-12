@@ -3,7 +3,7 @@ title: "Copy Databases to Other Servers"
 topic: "collation"
 description: "Sometimes you might find it useful to copy a database from one computer to another. Reasons include testing, checking consistency, developing software"
 tags: ["collation","copy-databases-to-other-servers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Sometimes you might find it useful to copy a database from one computer to another. Reasons

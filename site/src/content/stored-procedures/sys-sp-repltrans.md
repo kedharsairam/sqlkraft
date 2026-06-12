@@ -4,23 +4,23 @@ title: "sp_repltrans"
 category: "general"
 description: "Returns a result set of all the transactions in the publication database transaction log that are marked for replication but aren't marked as distributed. This stored procedure is executed at the Publisher on a publication database. returns information about the publication database from which it's executed, allowing you to view transactions currently not distribute"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   EXECUTE
-      sp_repldone
-      @xactid =
-      NULL
-      ,
-      @xact_seqno =
-      NULL
-      ,
-      @numtrans = 0,
-      @
-      time
-      = 0,
-      @
-      reset
-      = 1;
+              sp_repldone
+              @xactid =
+              NULL
+              ,
+              @xact_seqno =
+              NULL
+              ,
+              @numtrans = 0,
+              @
+              time
+              = 0,
+              @
+              reset
+              = 1;
 ---
 
 ## Description

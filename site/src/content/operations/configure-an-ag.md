@@ -3,7 +3,7 @@ title: "Configure an AG"
 topic: "linux-operations"
 description: "on Linux This article describes how to create a SQL Server Always On availability group (AG) for high availability on Linux. There are two configuration types for AGs."
 tags: ["linux-operations","configure-an-ag"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

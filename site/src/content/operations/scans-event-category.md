@@ -3,7 +3,7 @@ title: "Scans Event Category"
 topic: "event-classes"
 description: "The event category contains scan events. Description Scan:Started Event Class Indicates t"
 tags: ["event-classes","scans-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

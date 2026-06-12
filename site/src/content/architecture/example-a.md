@@ -3,7 +3,7 @@ title: "Example A"
 topic: "query-processing"
 description: "statement is executed under a transaction."
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Session 1:

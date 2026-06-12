@@ -3,7 +3,7 @@ title: "Security best practices"
 topic: "collation"
 description: "Contained databases have some unique threats that should be understood and mitigated by SQL Server Database Engine adminis"
 tags: ["collation","security-best-practices"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Contained databases have some unique threats that should be understood and mitigated by

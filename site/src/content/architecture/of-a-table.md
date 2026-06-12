@@ -3,7 +3,7 @@ title: "Of a Table"
 topic: "collation"
 description: ""
 tags: ["collation","of-a-table"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

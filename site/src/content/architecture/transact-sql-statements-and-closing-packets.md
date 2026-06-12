@@ -3,7 +3,7 @@ title: "Transact-SQL statements and closing packets"
 topic: "query-processing"
 description: "This example shows closing a nonpooled connection, after two Transact-SQL statements. If"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Output

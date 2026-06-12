@@ -3,7 +3,7 @@ title: "Manage Trigger Security"
 topic: "change-data-capture"
 description: "By default, both DML and DDL triggers execute under the context of the user that calls the t"
 tags: ["change-data-capture","manage-trigger-security"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 By default, both DML and DDL triggers execute under the context of the user that calls the

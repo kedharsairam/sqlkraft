@@ -3,7 +3,7 @@ title: "Service Broker Communication Protocols"
 topic: "service-broker"
 description: "09/03/2025 Service Broker uses a broker-specific protocol to communicate with remote brokers."
 tags: ["service-broker","service-broker-communication-protocols"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker uses a broker-specific protocol to communicate with remote brokers. The broker

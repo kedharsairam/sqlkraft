@@ -3,7 +3,7 @@ title: "Database Snapshots"
 topic: "high-availability"
 description: "You can take advantage of a mirror database that you are maintaining for availability purposes to offload reporting."
 tags: ["high-availability","database-snapshots-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can take advantage of a mirror database that you are maintaining for availability purposes

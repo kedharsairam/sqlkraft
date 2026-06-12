@@ -3,7 +3,7 @@ title: "Configure cross-platform (Windows and Linux)"
 topic: "linux-operations"
 description: "2017 (14.x) and later versions This article explains the steps to create an Always On availability group (AG) with one replica on a Windows server and the other replica on a"
 tags: ["linux-operations","configure-cross-platform-windows-and-linux"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2017 (14.x) and later versions

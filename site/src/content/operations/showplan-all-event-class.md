@@ -3,7 +3,7 @@ title: "Showplan All Event Class"
 topic: "event-classes"
 description: "The Showplan All event class occurs when Microsoft SQL Server executes a SQL statement. The"
 tags: ["event-classes","showplan-all-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Showplan All event class occurs when Microsoft SQL Server executes a SQL statement. The

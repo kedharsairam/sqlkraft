@@ -3,7 +3,7 @@ title: "Add Database Reference Dialog Box"
 topic: "ssb-diagnose"
 description: ""
 tags: ["ssb-diagnose","add-database-reference-dialog-box"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Database references in SQL projects enable you to incorporate objects that aren't included in a

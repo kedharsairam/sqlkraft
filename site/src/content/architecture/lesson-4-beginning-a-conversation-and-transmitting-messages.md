@@ -3,7 +3,7 @@ title: "Lesson 4: Beginning a Conversation and Transmitting Messages"
 topic: "service-broker"
 description: "09/04/2025 In this lesson, you learn to start a conversation that spans two databases in the same instance of the Database Engine."
 tags: ["service-broker","lesson-4-beginning-a-conversation-and-transmitting-messages"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this lesson, you learn to start a conversation that spans two databases in the same instance

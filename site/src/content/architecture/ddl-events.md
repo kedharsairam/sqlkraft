@@ -3,7 +3,7 @@ title: "DDL Events"
 topic: "change-data-capture"
 description: ""
 tags: ["change-data-capture","ddl-events"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following tables list the DDL events that can be used to fire a DDL trigger or event

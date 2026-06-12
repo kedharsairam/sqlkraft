@@ -5,7 +5,7 @@ category: "system-health"
 description: "Comprehensive reference on SQL Server's built-in system_health Extended Events session — how to query, interpret, and export session data for root-cause analysis of critical server events."
 tags: ["extended-events","system-health","diagnostics","ring-buffer","default-session"]
 targetVersion: "SQL Server 2012+"
-pubDate: "2026-05-30"
+pubDate: 2026-05-30
 ---
 
 ## Overview

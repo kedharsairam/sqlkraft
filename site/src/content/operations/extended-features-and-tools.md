@@ -3,12 +3,10 @@ title: "Extended features and tools"
 topic: "profiler"
 description: "ﾃ Summarize this article for me This article provides a brief explanation of the various downloads a"
 tags: ["profiler","extended-features-and-tools"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ﾃ
-
-Summarize this article for me
 
 This article provides a brief explanation of the various downloads and stand-alone packages
 

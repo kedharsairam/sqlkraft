@@ -3,7 +3,7 @@ title: "Log File Auto Grow Event Class"
 topic: "event-classes"
 description: "The event class indicates that the log file grew automatically. This event is not triggered"
 tags: ["event-classes","log-file-auto-grow-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

@@ -4,12 +4,8 @@ title: "Hints"
 category: "hints"
 description: ""
 tags: ["tsql","hints"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 database in Microsoft Fabric
 

@@ -4,7 +4,7 @@ title: "Implicit conversions"
 category: "statements"
 description: "Translates ASCII characters to binary bytes, or binary bytes to ASCII characters. Each character"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Microsoft Download Center

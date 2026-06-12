@@ -3,7 +3,7 @@ title: "Broker:Corrupted Message Event Class"
 topic: "event-classes"
 description: "creates a event when Service Broker receives a corrupted message. Description The name of the client applica"
 tags: ["event-classes","brokercorrupted-message-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 creates a

@@ -4,7 +4,7 @@ title: "sys.remote_service_bindings"
 category: "compatibility"
 description: "This catalog view contains a row per remote service binding."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

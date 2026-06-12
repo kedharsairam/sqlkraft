@@ -4,13 +4,13 @@ title: "sp_dbmmonitorupdate"
 category: "general"
 description: "Updates the database mirroring monitor status table by inserting a new table row for each mirrored database, and truncates rows older than the current retention period. The default retention period is seven days (168 hours). When evaluates the performance metrics."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_dbmmonitorupdate [ [ @database_name = ]
-      N
-      'database_name'
-      ]
-      [ ; ]
+              N
+              'database_name'
+              ]
+              [ ; ]
 ---
 
 ## Description

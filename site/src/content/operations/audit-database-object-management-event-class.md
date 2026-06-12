@@ -3,7 +3,7 @@ title: "Audit Database Object Management Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","audit-database-object-management-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

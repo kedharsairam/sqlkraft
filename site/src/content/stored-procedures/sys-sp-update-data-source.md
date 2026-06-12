@@ -4,7 +4,7 @@ title: "core.sp_update_data_source"
 category: "general"
 description: "Updates an existing row or inserts a new row in the management data warehouse table. This procedure is called by the data collector run-time component every time an upload package starts uploading data to the management data The GUID for the collection set."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "core.source_info_internal"
 ---
 

@@ -4,21 +4,21 @@ title: "sys.sp_cdc_cleanup_change_table"
 category: "general"
 description: "performs the following operations: @low_water_mark @capture_instance is left unchanged. However, if the current low watermark is greater than the low watermark value specified using the @low_water_mark parameter for the is thrown. The error message for Error 22957 is 2. Change table entries with values less than the low watermark are then deleted. The delete threshold is used to limit the number o"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.sp_cdc_cleanup_change_table [ @capture_instance = ]
-      'capture_instance'
-      , [ @low_water_mark = ] low_water_mark
-      , [ @threshold = ]
-      'delete threshold'
-      , [ @f
-      C
-      leanup
-      F
-      ailed = ]
-      'cleanup failed'
-      OUTPUT
-      [ ; ]
+              'capture_instance'
+              , [ @low_water_mark = ] low_water_mark
+              , [ @threshold = ]
+              'delete threshold'
+              , [ @f
+              C
+              leanup
+              F
+              ailed = ]
+              'cleanup failed'
+              OUTPUT
+              [ ; ]
 ---
 
 ## Description

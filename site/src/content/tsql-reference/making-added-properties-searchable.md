@@ -4,7 +4,7 @@ title: "Making Added Properties Searchable"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Full-text search maps a search property to a full-text index by using its property set GUID and

@@ -4,7 +4,7 @@ title: "To Automate Database Snapshot"
 description: "diagnostic script for automation operations."
 category: "automation"
 tags: ["automation","database"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql
@@ -24,31 +24,31 @@ CREATE PROCEDURE [DBO].[AUTOMATE_DB_SNAPSHOT]
 AS
 /*
 Here's a breakdown of what the stored procedure does:
-1.  It accepts several input parameters:
-  •  @DBName: The name of the database for which a snapshot needs to be created.
-  •  @CreateSS: A bit parameter (0 or 1) indicating whether to actually create the snapshot or just generate the script for it. (Default is 0, which generates the script only.)
-  •  @DriveLetterOverride: An optional parameter that allows overriding the drive letter where the snapshot folder will be created.
-  •  @SSName: An output parameter that will contain the name of the created snapshot.
+1. It accepts several input parameters:
+ • @DBName: The name of the database for which a snapshot needs to be created.
+ • @CreateSS: A bit parameter (0 or 1) indicating whether to actually create the snapshot or just generate the script for it. (Default is 0, which generates the script only.)
+ • @DriveLetterOverride: An optional parameter that allows overriding the drive letter where the snapshot folder will be created.
+ • @SSName: An output parameter that will contain the name of the created snapshot.
 
-2.  The stored procedure checks if the specified database exists. If it doesn't, an error message is raised.
+2. The stored procedure checks if the specified database exists. If it doesn't, an error message is raised.
 
-3.  It creates a temporary table (#FileNameList) to store the logical and physical file names of the database files.
+3. It creates a temporary table (#FileNameList) to store the logical and physical file names of the database files.
 
-4.  It generates a SQL script to create the snapshot database using the CREATE DATABASE statement. The script includes file mappings from the original database to the snapshot database.
+4. It generates a SQL script to create the snapshot database using the CREATE DATABASE statement. The script includes file mappings from the original database to the snapshot database.
 
-5.  For each file in the original database, it retrieves the file's ID, drive letter, physical name, and logical name from the #FileNameList table.
+5. For each file in the original database, it retrieves the file's ID, drive letter, physical name, and logical name from the #FileNameList table.
 
-6.  It constructs the snapshot folder path based on the drive letter and file path of the original database files. It replaces the "\Data" portion of the path with "\SnapShot".
+6. It constructs the snapshot folder path based on the drive letter and file path of the original database files. It replaces the "\Data" portion of the path with "\SnapShot".
 
-7.  It executes the xp_create_subdir system stored procedure to create the snapshot folder if it doesn't already exist.
+7. It executes the xp_create_subdir system stored procedure to create the snapshot folder if it doesn't already exist.
 
-8.  It builds the file mappings for the snapshot database using the file information obtained earlier.
+8. It builds the file mappings for the snapshot database using the file information obtained earlier.
 
-9.  If @CreateSS is set to 1, it executes the dynamically generated SQL script to create the snapshot database.
+9. If @CreateSS is set to 1, it executes the dynamically generated SQL script to create the snapshot database.
 
-10.  If the snapshot creation is successful, it prints a success message. Otherwise, it prints a failure message.
+10. If the snapshot creation is successful, it prints a success message. Otherwise, it prints a failure message.
 
-11.  If an error occurs during the execution of the stored procedure, an error message is printed.
+11. If an error occurs during the execution of the stored procedure, an error message is printed.
 
 In summary, this stored procedure automates the process of creating a database snapshot in SQL Server.*/
 

@@ -3,7 +3,7 @@ title: "Large object (LOB) parameters"
 topic: "clr-integration"
 description: "Use and to pass large object (LOB) binary type ( ) and LOB character type ( ) parameters, respectively."
 tags: ["clr-integration","large-object-lob-parameters"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use

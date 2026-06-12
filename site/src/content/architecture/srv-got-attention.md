@@ -3,7 +3,7 @@ title: "srv_got_attention"
 topic: "clr-integration"
 description: "Checks whether the current connection or task needs to be aborted and returns TRUE if the connection is killed or the batch is aborted srvproc Point"
 tags: ["clr-integration","srv-got-attention"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Checks whether the current connection or task needs to be aborted and returns TRUE if the

@@ -3,7 +3,7 @@ title: "Using hierarchyid data type"
 topic: "tables"
 description: ""
 tags: ["tables","using-hierarchyid-data-type"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This tutorial is intended for users who are experienced with Transact-SQL, but are new to the

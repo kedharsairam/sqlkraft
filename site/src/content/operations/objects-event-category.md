@@ -3,7 +3,7 @@ title: "Objects Event Category"
 topic: "event-classes"
 description: "The event category contains general objects events. Description Auto Stats Event Class I"
 tags: ["event-classes","objects-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

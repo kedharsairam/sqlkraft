@@ -3,7 +3,7 @@ title: "Configure for distributed transactions"
 topic: "high-availability"
 description: "2017 (14.x) and later versions support all distributed transactions including databases in an availability group."
 tags: ["high-availability","configure-for-distributed-transactions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2017 (14.x) and later versions support all distributed transactions including

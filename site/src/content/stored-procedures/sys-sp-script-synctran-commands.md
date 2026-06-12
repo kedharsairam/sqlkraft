@@ -4,7 +4,7 @@ title: "sp_script_synctran_commands"
 category: "general"
 description: "Generates a script that contains the calls to be applied at Subscribers for updatable subscriptions. There's one call for each article in the publication. The generated script also contains the table that is needed to process queued publications. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "MSsubsciption_articles"
 ---
 

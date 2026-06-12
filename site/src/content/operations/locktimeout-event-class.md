@@ -3,7 +3,7 @@ title: "Lock:Timeout Event Class"
 topic: "event-classes"
 description: "2016 (13.x) and later versions Azure SQL Managed Instance The Lock:Timeout event class indicates that a request for a l"
 tags: ["event-classes","locktimeout-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

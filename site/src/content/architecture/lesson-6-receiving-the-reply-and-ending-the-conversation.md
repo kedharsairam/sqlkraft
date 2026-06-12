@@ -3,7 +3,7 @@ title: "Lesson 6: Receiving the Reply and Ending the Conversation"
 topic: "service-broker"
 description: "09/11/2025 In this lesson, you learn to receive the reply message from the target service and end the conversation. Open SQL Server Management St"
 tags: ["service-broker","lesson-6-receiving-the-reply-and-ending-the-conversation"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this lesson, you learn to receive the reply message from the target service and end the

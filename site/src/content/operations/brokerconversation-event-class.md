@@ -3,7 +3,7 @@ title: "Broker:Conversation Event Class"
 topic: "event-classes"
 description: "generates a event to report the progress of a Service Broker conversation."
 tags: ["event-classes","brokerconversation-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 generates a

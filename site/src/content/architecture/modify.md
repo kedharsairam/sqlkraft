@@ -3,7 +3,7 @@ title: "Modify"
 topic: "filestream"
 description: "This topic describes how to modify an index in SQL Server by using SQL Server Management Stu"
 tags: ["filestream","modify"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to modify an index in SQL Server by using SQL Server Management

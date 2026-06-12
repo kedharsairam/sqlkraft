@@ -3,7 +3,7 @@ title: "The <xsd:redefine> Element"
 topic: "xml-data"
 description: "The W3C XSD element provides support for redefining schema components."
 tags: ["xml-data","the-xsdredefine-element"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The W3C XSD

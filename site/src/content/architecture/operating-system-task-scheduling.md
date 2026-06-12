@@ -3,7 +3,7 @@ title: "Operating system task scheduling"
 topic: "thread-task"
 description: ""
 tags: ["thread-task","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Threads are the smallest units of processing that are executed by an operating system, and

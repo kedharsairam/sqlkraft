@@ -3,7 +3,7 @@ title: "Witness"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","witness"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To support automatic failover, a database mirroring session must be configured in high-safety

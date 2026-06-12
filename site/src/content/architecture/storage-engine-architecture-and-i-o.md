@@ -3,7 +3,7 @@ title: "Storage engine architecture and I/O"
 topic: "io-fundamentals"
 description: "internals and architecture"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 internals and architecture

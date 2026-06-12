@@ -3,7 +3,7 @@ title: "Blocked Process Report Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","blocked-process-report-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

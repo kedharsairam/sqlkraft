@@ -3,7 +3,7 @@ title: "Broker:Message Classify Event Class"
 topic: "event-classes"
 description: "generates a event when Service Broker determines the routing for a message."
 tags: ["event-classes","brokermessage-classify-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 generates a

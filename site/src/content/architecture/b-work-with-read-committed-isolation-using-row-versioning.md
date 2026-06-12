@@ -3,7 +3,7 @@ title: "B. Work with READ COMMITTED isolation using row versioning"
 topic: "io-fundamentals"
 description: ""
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 On session 2:

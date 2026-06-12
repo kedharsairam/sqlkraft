@@ -3,7 +3,7 @@ title: "Feature support and considerations for SSIS"
 topic: "linux-operations"
 description: "on Linux This article describes limitations and known issues for SQL Server Integration Services (SSIS) on Linux."
 tags: ["linux-operations","feature-support-and-considerations-for-ssis"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

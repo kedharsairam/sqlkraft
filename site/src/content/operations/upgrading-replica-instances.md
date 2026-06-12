@@ -3,7 +3,7 @@ title: "Upgrading replica instances"
 topic: "high-availability"
 description: "08/15/2025 When upgrading a SQL Server instance that hosts an Always On availability group (AG) to a new SQL Server version, to a new SQL Server service pack or cumulative u"
 tags: ["high-availability","upgrading-replica-instances"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When upgrading a SQL Server instance that hosts an Always On availability group (AG) to a

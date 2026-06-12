@@ -4,7 +4,7 @@ title: "Assembly Validation"
 category: "statements"
 description: "If any dependent assemblies referenced by the root assembly aren't already in the database"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 If any dependent assemblies referenced by the root assembly aren't already in the database

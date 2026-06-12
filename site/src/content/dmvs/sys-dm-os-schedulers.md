@@ -4,7 +4,7 @@ title: "sys.dm_os_schedulers"
 category: "os"
 description: "Returns one row per scheduler in SQL Server where each scheduler is mapped to an individual processor. Use this view to monitor the condition of a scheduler or to identify runaway tasks. For more information about schedulers, see the Thread and Task Architecture Guide Memory address of the scheduler. Is not nullable."
 tags: ["os","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "##MS_ServerStateReader##"
 ---
 

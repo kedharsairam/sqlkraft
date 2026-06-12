@@ -3,7 +3,7 @@ title: "Troubleshoot failed add-file"
 topic: "high-availability"
 description: "In some Always On availability group deployments, file paths differ between the system that hosts the primary replica and systems that host a secondary replica. If the file p"
 tags: ["high-availability","troubleshoot-failed-add-file"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In some Always On availability group deployments, file paths differ between the system that

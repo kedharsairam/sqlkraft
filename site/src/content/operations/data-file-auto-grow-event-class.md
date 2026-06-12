@@ -3,7 +3,7 @@ title: "Data File Auto Grow Event Class"
 topic: "event-classes"
 description: "The event class indicates that the data file grew automatically. This event is not triggere"
 tags: ["event-classes","data-file-auto-grow-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

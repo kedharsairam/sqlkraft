@@ -3,7 +3,7 @@ title: "Clear a Trace Window"
 topic: "profiler"
 description: "06/06/2025 This article describes how to clear the trace window for a trace that is running by using SQL Server Profiler. 1."
 tags: ["profiler","clear-a-trace-window"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to clear the trace window for a trace that is running by using SQL

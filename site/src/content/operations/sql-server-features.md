@@ -3,7 +3,7 @@ title: "SQL Server features"
 topic: "monitor"
 description: "WideWorldImporters use of SQL Server features and capabilities in the OLTP database."
 tags: ["monitor","sql-server-features"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 WideWorldImporters use of SQL Server features and capabilities in the OLTP database.

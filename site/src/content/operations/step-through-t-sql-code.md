@@ -3,7 +3,7 @@ title: "Step Through T-SQL Code"
 topic: "ssb-diagnose"
 description: "09/10/2025 The Transact-SQL debugger enables you to control which Transact-SQL statements are run in a Database Engine Query Editor window."
 tags: ["ssb-diagnose","step-through-t-sql-code"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Transact-SQL debugger enables you to control which Transact-SQL statements are run in a

@@ -3,7 +3,7 @@ title: "SP:StmtCompleted Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","spstmtcompleted-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The SP:StmtCompleted event class indicates that a Transact-SQL statement within a stored

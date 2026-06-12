@@ -3,7 +3,7 @@ title: "Create DML Triggers"
 topic: "change-data-capture"
 description: "This article describes how to create a Transact-SQL Data Manipulation Language (DML) trigger"
 tags: ["change-data-capture","create-dml-triggers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to create a Transact-SQL Data Manipulation Language (DML) trigger

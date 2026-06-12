@@ -3,7 +3,7 @@ title: "Modify"
 topic: "profiler"
 description: "06/06/2025 You can modify templates that are saved in a file on the local computer on which SQL Server Profiler is running. You can also modify t"
 tags: ["profiler","modify"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 You can modify templates that are saved in a file on the local computer on which SQL Server

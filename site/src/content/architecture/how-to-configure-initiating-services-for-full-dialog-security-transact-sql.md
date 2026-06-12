@@ -3,7 +3,7 @@ title: "How to: Configure Initiating Services for Full Dialog Security (Transact
 topic: "service-broker"
 description: ""
 tags: ["service-broker","how-to-configure-initiating-services-for-full-dialog-security-transact-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 uses dialog security for any conversation to a service for which a remote service

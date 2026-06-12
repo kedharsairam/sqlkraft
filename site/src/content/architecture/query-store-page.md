@@ -3,7 +3,7 @@ title: "Query store page"
 topic: "collation"
 description: ""
 tags: ["collation","query-store-page"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions, SQL Database

@@ -3,7 +3,7 @@ title: "T-SQL Breakpoints"
 topic: "ssb-diagnose"
 description: ""
 tags: ["ssb-diagnose","t-sql-breakpoints"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Breakpoints specify that the Transact-SQL debugger pause execution on a specific Transact-

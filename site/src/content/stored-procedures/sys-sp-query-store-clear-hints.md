@@ -4,14 +4,14 @@ title: "sp_query_store_clear_hints"
 category: "general"
 description: "2022 (16.x) and later versions SQL database in Microsoft Fabric argument defaults to the local replica (primary or secondary), but you can optionally specify a value matching a value in the to clear a hint for a different replica group. Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_query_store_clear_hints
-      [ @query_id = ] query_id
-      [ , [ @replica_group_id = ]
-      'replica_group_id'
-      ]
-      [ ; ]
+              [ @query_id = ] query_id
+              [ , [ @replica_group_id = ]
+              'replica_group_id'
+              ]
+              [ ; ]
 ---
 
 ## Description

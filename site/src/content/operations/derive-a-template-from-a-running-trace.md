@@ -3,7 +3,7 @@ title: "Derive a Template from a Running Trace"
 topic: "profiler"
 description: "06/06/2025 This article describes how to create a trace template from an existing trace while it's running by using SQL Server Profiler. 1. If n"
 tags: ["profiler","derive-a-template-from-a-running-trace"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to create a trace template from an existing trace while it's running by

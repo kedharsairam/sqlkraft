@@ -4,7 +4,7 @@ title: "Compatibility levels and database engine upgrades"
 category: "operators"
 description: "performance differences of your most important queries between two different compatibility"
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 performance differences of your most important queries between two different compatibility

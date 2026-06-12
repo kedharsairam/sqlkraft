@@ -3,7 +3,7 @@ title: "Using System.Transactions"
 topic: "clr-integration"
 description: "The namespace provides a transaction framework that is fully integrated with ADO.NET and SQL Server common language runtime (CLR) integration. The c"
 tags: ["clr-integration","using-systemtransactions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

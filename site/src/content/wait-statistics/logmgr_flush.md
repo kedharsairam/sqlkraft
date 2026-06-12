@@ -5,7 +5,7 @@ category: "io"
 severity: "medium"
 description: "Occurs when the log manager is flushing dirty pages to make log buffer space available. Related to WRITELOG but at the internal log manager level."
 tags: ["io","log","flush"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 relatedScripts: ["analyze-log-throughput"]
 ---
 

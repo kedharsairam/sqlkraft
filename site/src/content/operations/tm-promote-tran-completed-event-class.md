@@ -3,7 +3,7 @@ title: "TM: Promote Tran Completed Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","tm-promote-tran-completed-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The TM: Promote Tran Completed event class indicates that a PROMOTE TRANSACTION

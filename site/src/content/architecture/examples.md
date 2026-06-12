@@ -3,7 +3,7 @@ title: "Examples"
 topic: "query-processing"
 description: "Some of the more common causes for increased CPU consumption include:"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Some of the more common causes for increased CPU consumption include:

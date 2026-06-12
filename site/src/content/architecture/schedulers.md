@@ -3,7 +3,7 @@ title: "Schedulers"
 topic: "thread-task"
 description: "What the actual available"
 tags: ["thread-task","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 What the actual available

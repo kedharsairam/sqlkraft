@@ -3,7 +3,7 @@ title: "Avoid higher isolation levels"
 topic: "io-fundamentals"
 description: "transaction is completed. After the first transaction commits or rolls back, the second"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 transaction is completed. After the first transaction commits or rolls back, the second

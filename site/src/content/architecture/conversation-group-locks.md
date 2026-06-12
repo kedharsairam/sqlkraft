@@ -3,7 +3,7 @@ title: "Conversation Group Locks"
 topic: "service-broker"
 description: ""
 tags: ["service-broker","conversation-group-locks"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker uses conversation group locks to guarantee that only one queue reader can

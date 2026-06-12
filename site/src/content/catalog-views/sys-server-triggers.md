@@ -4,25 +4,25 @@ title: "sys.server_triggers"
 category: "compatibility"
 description: "Contains the set of all server-level DDL triggers with object_type of TR or TA. In the case of CLR triggers, the assembly must be loaded into the database. All server-level DDL trigger names exist in a single, global scope. Description of class of parent. Is always: Always 0 for triggers on the SERVER. Description of the class of the object type. Date the trigger was last modified by using an ALTE"
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   SELECT
-      name
-      , is_disabled, create_date, modify_date
-      FROM
-      sys.server_triggers
-      WHERE
-      type_desc =
-      'LOGON'
-      ;
-      DISABLE TRIGGER trigger_name ON ALL SERVER;
-      DROP
-      TRIGGER
-      trigger_name
-      ON
-      ALL
-      SERVER
-      ;
+              name
+              , is_disabled, create_date, modify_date
+              FROM
+              sys.server_triggers
+              WHERE
+              type_desc =
+              'LOGON'
+              ;
+              DISABLE TRIGGER trigger_name ON ALL SERVER;
+              DROP
+              TRIGGER
+              trigger_name
+              ON
+              ALL
+              SERVER
+              ;
 ---
 
 ## Description

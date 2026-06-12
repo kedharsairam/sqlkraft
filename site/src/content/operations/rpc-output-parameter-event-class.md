@@ -3,7 +3,7 @@ title: "RPC Output Parameter Event Class"
 topic: "event-classes"
 description: "The RPC Output Parameter event class traces the output parameter values of remote procedure"
 tags: ["event-classes","rpc-output-parameter-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The RPC Output Parameter event class traces the output parameter values of remote procedure

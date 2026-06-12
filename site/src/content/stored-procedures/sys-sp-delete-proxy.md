@@ -4,15 +4,15 @@ title: "sp_delete_proxy"
 category: "general"
 description: "Removes the specified proxy. The proxy identification number of the proxy to remove. , with a default of The name of the proxy to remove."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_delete_proxy
-      [ [ @proxy_id = ] proxy_id ]
-      [ , [ @proxy_name = ]
-      N
-      'proxy_name'
-      ]
-      [ ; ]
+              [ [ @proxy_id = ] proxy_id ]
+              [ , [ @proxy_name = ]
+              N
+              'proxy_name'
+              ]
+              [ ; ]
 ---
 
 ## Description

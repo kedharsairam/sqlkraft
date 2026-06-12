@@ -3,7 +3,7 @@ title: "Partitioned indexes"
 topic: "index-architecture"
 description: "Hash or nonclustered for memory-optimized tables"
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Hash or nonclustered for memory-optimized tables

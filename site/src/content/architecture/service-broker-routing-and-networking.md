@@ -3,7 +3,7 @@ title: "Service Broker Routing and Networking"
 topic: "service-broker"
 description: "09/15/2025 Service Broker communications are designed around reliable, asynchronous message delivery."
 tags: ["service-broker","service-broker-routing-and-networking"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker communications are designed around reliable, asynchronous message delivery.

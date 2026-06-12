@@ -3,7 +3,7 @@ title: "PreConnect:Completed Event Class"
 topic: "event-classes"
 description: "The PreConnect:Completedevent class indicates when a LOGON trigger or the Resource Governor"
 tags: ["event-classes","preconnectcompleted-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The PreConnect:Completedevent class indicates when a LOGON trigger or the Resource

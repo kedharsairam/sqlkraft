@@ -3,7 +3,7 @@ title: "View Quorum NodeWeight Settings"
 topic: "high-availability"
 description: "This topic describes how to view NodeWeight settings for each member node in a Windows Server Failover Clustering (WSFC) cluster. NodeWeight settings"
 tags: ["high-availability","view-quorum-nodeweight-settings"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to view NodeWeight settings for each member node in a Windows

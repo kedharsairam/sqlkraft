@@ -4,7 +4,7 @@ title: "To Encrypt Database using Transparent Data Encr"
 description: ""
 category: "security-audit"
 tags: ["database","encryption","security-audit"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

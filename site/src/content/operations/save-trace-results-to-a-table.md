@@ -3,7 +3,7 @@ title: "Save Trace Results to a Table"
 topic: "profiler"
 description: "06/06/2025 This article describes how to save trace results to a database table by using SQL Server Profiler. 1."
 tags: ["profiler","save-trace-results-to-a-table"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to save trace results to a database table by using SQL Server Profiler.

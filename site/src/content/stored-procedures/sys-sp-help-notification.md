@@ -4,22 +4,22 @@ title: "sp_help_notification"
 category: "general"
 description: "Reports a list of alerts for a given operator or a list of operators for a given alert. The type of information to be returned. , which lists the alerts assigned to the supplied operator name, or which lists the operators responsible for the supplied alert name. , and can be one of these values."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_help_notification
-      [ @object_type = ]
-      'object_type'
-      , [ @name = ]
-      N
-      'name'
-      , [ @enum_type = ]
-      'enum_type'
-      , [ @notification_method = ] notification_method
-      [ , [ @target_name = ]
-      N
-      'target_name'
-      ]
-      [ ; ]
+              [ @object_type = ]
+              'object_type'
+              , [ @name = ]
+              N
+              'name'
+              , [ @enum_type = ]
+              'enum_type'
+              , [ @notification_method = ] notification_method
+              [ , [ @target_name = ]
+              N
+              'target_name'
+              ]
+              [ ; ]
 ---
 
 ## Description

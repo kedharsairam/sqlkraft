@@ -4,18 +4,18 @@ title: "sp_delete_backup"
 category: "general"
 description: "2016 (13.x) and later versions Deletes all snapshots and the backup file that comprise a snapshot backup set from the specified database. This system stored procedure is the only recommended method for managing snapshot backup sets. For more information, see The URL of the backup to be deleted, which deletes all snapshots comprising the specified backup s"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.sp_delete_backup
-      [ @backup_url = ]
-      N
-      'backup_metadata_file_url'
-      , [ [ @db_name = ]
-      N
-      'database_name'
-      |
-      NULL
-      ]
+              [ @backup_url = ]
+              N
+              'backup_metadata_file_url'
+              , [ [ @db_name = ]
+              N
+              'database_name'
+              |
+              NULL
+              ]
 ---
 
 ## Description

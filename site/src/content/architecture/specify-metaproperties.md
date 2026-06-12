@@ -3,7 +3,7 @@ title: "Specify Metaproperties"
 topic: "xml-data"
 description: "Metaproperty attributes in an XML document are attributes that describe the properties of an XML item,"
 tags: ["xml-data","specify-metaproperties"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Metaproperty attributes in an XML document are attributes that describe the properties of an

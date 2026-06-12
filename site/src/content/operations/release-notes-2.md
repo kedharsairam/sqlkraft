@@ -3,7 +3,7 @@ title: "Release notes"
 topic: "azure-synapse"
 description: "This article lists: Features in preview Features that have reached general availability (GA) within the last 12 months Release dates Azure extension for SQL Server version"
 tags: ["azure-synapse","release-notes-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article lists:

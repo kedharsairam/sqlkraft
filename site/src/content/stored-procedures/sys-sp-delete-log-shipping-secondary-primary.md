@@ -4,7 +4,7 @@ title: "sp_delete_log_shipping_secondary_primary"
 category: "general"
 description: "removes the information about the specified primary server from the secondary server, and removes the copy job and restore job from the The name of the primary instance of the SQL Server Database Engine in the log shipping The name of the database on the primary server."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_delete_log_shipping_secondary_primary"
 ---
 

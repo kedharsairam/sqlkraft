@@ -3,7 +3,7 @@ title: "Service Architecture"
 topic: "service-broker"
 description: "09/12/2025 This section describes the database objects that specify the basic design of an application that uses Service Broker. At design time,"
 tags: ["service-broker","service-architecture"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This section describes the database objects that specify the basic design of an application that

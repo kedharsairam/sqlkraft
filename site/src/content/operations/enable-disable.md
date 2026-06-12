@@ -3,12 +3,10 @@ title: "Enable & disable"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","enable-disable"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ﾃ
-
-Summarize this article for me
 
 Before you can create and configure an Always On availability group, you must enable the
 

@@ -4,13 +4,13 @@ title: "sp_helprolemember"
 category: "general"
 description: "Returns information about the direct members of a role in the current database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_helprolemember [ [ @rolename = ]
-      N
-      'rolename'
-      ]
-      [ ; ]
+              N
+              'rolename'
+              ]
+              [ ; ]
 ---
 
 ## Description

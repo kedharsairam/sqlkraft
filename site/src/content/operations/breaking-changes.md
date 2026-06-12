@@ -3,7 +3,7 @@ title: "Breaking changes"
 topic: "migration"
 description: "This topic describes breaking changes in SQL Server Replication."
 tags: ["migration","breaking-changes"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes breaking changes in SQL Server Replication. These changes might break

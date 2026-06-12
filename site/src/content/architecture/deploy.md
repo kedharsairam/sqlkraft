@@ -3,7 +3,7 @@ title: "Deploy"
 topic: "clr-integration"
 description: "Deployment is the process by which you distribute a finished application or module to be installed and run on another computer. Using Visual Studio, y"
 tags: ["clr-integration","deploy"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Deployment is the process by which you distribute a finished application or module to be

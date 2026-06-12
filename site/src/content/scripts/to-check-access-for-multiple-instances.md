@@ -4,7 +4,7 @@ title: "To Check Access for Multiple Instances"
 description: "diagnostic script for security-audit operations."
 category: "security-audit"
 tags: ["health-check","security-audit"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

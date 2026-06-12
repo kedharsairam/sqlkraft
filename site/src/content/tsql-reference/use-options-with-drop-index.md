@@ -4,7 +4,7 @@ title: "Use options with DROP INDEX"
 category: "statements"
 description: "When indexes with 128 extents or more are dropped, the Database Engine defers the actual"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 When indexes with 128 extents or more are dropped, the Database Engine defers the actual

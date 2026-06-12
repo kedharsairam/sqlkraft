@@ -3,7 +3,7 @@ title: "What does service broker do?"
 topic: "service-broker"
 description: ""
 tags: ["service-broker","what-does-service-broker-do"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker helps developers build asynchronous, loosely coupled applications in which

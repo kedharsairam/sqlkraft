@@ -4,16 +4,16 @@ title: "sp_dropmergepublication"
 category: "general"
 description: "Drops a merge publication and its associated Snapshot Agent. All subscriptions must be dropped before dropping a merge publication. The articles in the publication are dropped automatically. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_dropmergepublication
-      [ @publication = ]
-      N
-      'publication'
-      [ , [ @ignore_distributor = ] ignore_distributor ]
-      [ , [ @reserved = ] reserved ]
-      [ , [ @ignore_merge_metadata = ] ignore_merge_metadata ]
-      [ ; ]
+              [ @publication = ]
+              N
+              'publication'
+              [ , [ @ignore_distributor = ] ignore_distributor ]
+              [ , [ @reserved = ] reserved ]
+              [ , [ @ignore_merge_metadata = ] ignore_merge_metadata ]
+              [ ; ]
 ---
 
 ## Description

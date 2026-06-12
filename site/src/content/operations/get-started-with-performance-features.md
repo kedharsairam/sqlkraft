@@ -3,7 +3,7 @@ title: "Get started with performance features"
 topic: "linux-operations"
 description: "on Linux If you're a Linux user who is new to SQL Server, the following tasks walk you through some of the performance features."
 tags: ["linux-operations","get-started-with-performance-features"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

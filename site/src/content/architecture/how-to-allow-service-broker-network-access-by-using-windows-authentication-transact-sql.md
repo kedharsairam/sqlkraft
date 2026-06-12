@@ -3,7 +3,7 @@ title: "How to: Allow Service Broker Network Access by Using Windows Authenticat
 topic: "service-broker"
 description: ""
 tags: ["service-broker","how-to-allow-service-broker-network-access-by-using-windows-authentication-transact-sql"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To allow another instance to send messages using Windows Authentication for transport

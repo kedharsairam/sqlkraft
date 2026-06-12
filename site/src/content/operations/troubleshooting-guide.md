@@ -3,7 +3,7 @@ title: "Troubleshooting guide"
 topic: "linux-operations"
 description: "on Linux This article describes how to troubleshoot SQL Server running on Linux or in a Linux container."
 tags: ["linux-operations","troubleshooting-guide"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

@@ -3,7 +3,7 @@ title: "Selective XML Indexes (SXI)"
 topic: "xml-data"
 description: "Selective XML indexes are another type of XML index that is available to you in addition to ordinary X"
 tags: ["xml-data","selective-xml-indexes-sxi"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Selective XML indexes are another type of XML index that is available to you in addition to

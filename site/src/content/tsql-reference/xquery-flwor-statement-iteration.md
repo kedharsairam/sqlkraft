@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: FLWOR Statement & Iteration"
 syntax: "for"
 tags: ["xquery","flwor-statement-iteration"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 XQuery defines the FLWOR iteration syntax. FLWOR is the acronym for

@@ -3,7 +3,7 @@ title: "QN:Template Event Class"
 topic: "event-classes"
 description: "The QN:Template event reports information on the internal use of query templates."
 tags: ["event-classes","qntemplate-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The QN:Template event reports information on the internal use of query templates. Query

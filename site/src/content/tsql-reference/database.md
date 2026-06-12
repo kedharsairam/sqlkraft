@@ -4,7 +4,7 @@ title: "Database"
 category: "statements"
 description: "command isn't supported for the statistics object on a"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## A. Create a simple nonclustered rowstore index

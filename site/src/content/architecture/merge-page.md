@@ -3,7 +3,7 @@ title: "Merge page"
 topic: "query-processing"
 description: "causes the index page to split."
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 causes the index page to split. For an internal page, this means when there's no more room to

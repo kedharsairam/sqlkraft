@@ -5,8 +5,7 @@ category: "blocking"
 severity: "critical"
 description: "Diagnostic workflow for identifying and resolving blocking chains, deadlocks, and lock contention using DMVs, wait types, and troubleshooting scripts."
 tags: ["blocking","locking","deadlock","contention","performance"]
-relatedContent: ""
-pubDate: "2026-05-30"
+pubDate: 2026-05-30
 ---
 
 Blocking is a natural part of transactional SQL Server — but prolonged blocking chains halt throughput and cause application timeouts. This guide walks through identifying the lead blocker, resolving lock contention, and capturing deadlock graphs.

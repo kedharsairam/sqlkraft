@@ -3,7 +3,7 @@ title: "Types of concurrency"
 topic: "query-processing"
 description: ""
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Missing an updated row or seeing an updated row multiple times

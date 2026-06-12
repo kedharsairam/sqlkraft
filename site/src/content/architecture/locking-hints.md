@@ -3,7 +3,7 @@ title: "Locking hints"
 topic: "locking"
 description: "### Avoid locking hints with optimized locking"
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Avoid locking hints with optimized locking

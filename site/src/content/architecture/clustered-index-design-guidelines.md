@@ -3,7 +3,7 @@ title: "Clustered index design guidelines"
 topic: "index-architecture"
 description: ""
 tags: ["index-architecture","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 If a disk-based rowstore index is created with key columns that match those in the

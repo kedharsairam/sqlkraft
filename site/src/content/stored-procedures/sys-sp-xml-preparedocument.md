@@ -4,7 +4,7 @@ title: "sp_xml_preparedocument"
 category: "general"
 description: "Number of characters into the currently executing batch or stored procedure at occurs."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_xml_preparedocument"
 ---
 

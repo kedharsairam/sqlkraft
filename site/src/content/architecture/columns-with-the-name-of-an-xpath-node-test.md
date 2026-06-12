@@ -3,7 +3,7 @@ title: "Columns with the Name of an XPath Node Test"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","columns-with-the-name-of-an-xpath-node-test"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If the column name is one of the XPath node tests, the content is mapped as shown in the

@@ -3,7 +3,7 @@ title: "Lesson 3: Delete database objects"
 topic: "configuration"
 description: "This short lesson removes the objects that you created in Le"
 tags: ["configuration","lesson-3-delete-database-objects"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

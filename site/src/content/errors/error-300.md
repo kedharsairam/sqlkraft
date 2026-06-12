@@ -1,12 +1,12 @@
 ---
-name: 300
+name: "300"
 title: "Error 300"
 errorNumber: 300
 severity: "medium"
 category: "connection"
 description: "The information below outlines the more common scenarios but isn't an exhaustive list of troubleshooting steps."
 tags: ["connection","severity-medium"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

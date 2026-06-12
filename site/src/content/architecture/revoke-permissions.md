@@ -3,7 +3,7 @@ title: "Revoke Permissions"
 topic: "xml-data"
 description: "The permission to create an XML schema collection can be revoked by using one of the following: Revok"
 tags: ["xml-data","revoke-permissions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The permission to create an XML schema collection can be revoked by using one of the

@@ -3,7 +3,7 @@ title: "Some availability replicas are disconnected"
 topic: "high-availability"
 description: ": Availability Replicas Connection State : Some availability replicas are disconnected."
 tags: ["high-availability","some-availability-replicas-are-disconnected"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 : Availability Replicas Connection State

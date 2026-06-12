@@ -3,12 +3,8 @@ title: "Create, Construct, & Query geography Instances"
 topic: "spatial-data"
 description: ""
 tags: ["spatial-data","create-construct-query-geography-instances"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 database in Microsoft Fabric
 

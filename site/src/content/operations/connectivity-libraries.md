@@ -3,12 +3,10 @@ title: "Connectivity libraries"
 topic: "linux-operations"
 description: ""
 tags: ["linux-operations","connectivity-libraries"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ﾃ
-
-Summarize this article for me
 
 on Linux
 

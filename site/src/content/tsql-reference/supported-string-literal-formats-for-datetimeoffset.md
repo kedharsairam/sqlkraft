@@ -4,7 +4,7 @@ title: "Supported string literal formats for datetimeoffset"
 category: "data-types"
 description: "26 positions minimum (yyyy-MM-dd HH:mm:ss {+|-}hh:mm) to 34"
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 26 positions minimum (yyyy-MM-dd HH:mm:ss {+|-}hh:mm) to 34 maximum (yyyy-MM-dd HH:mm:ss.nnnnnnn {+|-}hh:mm)

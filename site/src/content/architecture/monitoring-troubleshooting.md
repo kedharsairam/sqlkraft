@@ -3,7 +3,7 @@ title: "Monitoring & troubleshooting"
 topic: "clr-integration"
 description: "This article provides information about the tools that can be used to monitor and troubleshoot managed database objects and assemblies running in SQL"
 tags: ["clr-integration","monitoring-troubleshooting"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article provides information about the tools that can be used to monitor and troubleshoot

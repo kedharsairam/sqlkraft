@@ -3,7 +3,7 @@ title: "Audit App Role Change Password Event Class"
 topic: "event-classes"
 description: "The event class occurs whenever a password is changed for an application role."
 tags: ["event-classes","audit-app-role-change-password-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

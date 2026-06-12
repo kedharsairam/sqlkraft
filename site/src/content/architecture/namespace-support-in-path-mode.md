@@ -3,7 +3,7 @@ title: "Namespace Support in PATH Mode"
 topic: "xml-data"
 description: "Namespace support in the PATH mode is provided by using WITH NAMESPACES."
 tags: ["xml-data","namespace-support-in-path-mode"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Namespace support in the PATH mode is provided by using WITH NAMESPACES. For example,

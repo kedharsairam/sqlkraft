@@ -3,7 +3,7 @@ title: "In-Process Specific Extensions"
 topic: "clr-integration"
 description: "in-process specific extensions There are four main functional extensions to ADO.NET that are specifically for in-process use. The followin"
 tags: ["clr-integration","in-process-specific-extensions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 in-process specific extensions

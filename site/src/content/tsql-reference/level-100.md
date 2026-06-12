@@ -4,7 +4,7 @@ title: "Level 100"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 same ordinal position in the select list) must be

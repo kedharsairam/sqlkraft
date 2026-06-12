@@ -4,15 +4,15 @@ title: "sys.assemblies"
 category: "compatibility"
 description: "SQL analytics endpoint in Microsoft Fabric Returns a row for each assembly."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   EXECUTE
-      sp_add_trusted_assembly
-      0x8893AD6D78D14EE43DF482E2EAD44123E3A0B684A8873C3F7BF3B5E8D8F09503F3E62370CE742BBC
-      96FE3394477214B84C7C1B0F7A04DCC788FA99C2C09DFCCC, N
-      'pointudt, version=0.0.0.0,
-      culture=neutral, publickeytoken=null, processorarchitecture=msil'
-      ;
+              sp_add_trusted_assembly
+              0x8893AD6D78D14EE43DF482E2EAD44123E3A0B684A8873C3F7BF3B5E8D8F09503F3E62370CE742BBC
+              96FE3394477214B84C7C1B0F7A04DCC788FA99C2C09DFCCC, N
+              'pointudt, version=0.0.0.0,
+              culture=neutral, publickeytoken=null, processorarchitecture=msil'
+              ;
 ---
 
 ## Description

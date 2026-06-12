@@ -4,33 +4,33 @@ title: "sp_addqueued_artinfo"
 category: "general"
 description: "table at the Subscriber that is used to track article subscription information (queued, updating, and immediate updating with queued updating as failover). This stored procedure is executed at the Subscriber on the subscription database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_addqueued_artinfo
-      [ @artid = ] artid
-      , [ @article = ]
-      N
-      'article'
-      , [ @publisher = ]
-      N
-      'publisher'
-      , [ @publisher_db = ]
-      N
-      'publisher_db'
-      , [ @publication = ]
-      N
-      'publication'
-      , [ @dest_table = ]
-      N
-      'dest_table'
-      , [ @owner = ]
-      N
-      'owner'
-      , [ @cft_table = ]
-      N
-      'cft_table'
-      [ , [ @columns = ] columns ]
-      [ ; ]
+              [ @artid = ] artid
+              , [ @article = ]
+              N
+              'article'
+              , [ @publisher = ]
+              N
+              'publisher'
+              , [ @publisher_db = ]
+              N
+              'publisher_db'
+              , [ @publication = ]
+              N
+              'publication'
+              , [ @dest_table = ]
+              N
+              'dest_table'
+              , [ @owner = ]
+              N
+              'owner'
+              , [ @cft_table = ]
+              N
+              'cft_table'
+              [ , [ @columns = ] columns ]
+              [ ; ]
 ---
 
 ## Description

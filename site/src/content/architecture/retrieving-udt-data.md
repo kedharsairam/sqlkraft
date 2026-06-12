@@ -3,7 +3,7 @@ title: "Retrieving UDT data"
 topic: "clr-integration"
 description: "To create a user-defined type (UDT) on the client, the assembly registered as a UDT in a SQL Server database must be available to the client application."
 tags: ["clr-integration","retrieving-udt-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To create a user-defined type (UDT) on the client, the assembly registered as a UDT in a SQL

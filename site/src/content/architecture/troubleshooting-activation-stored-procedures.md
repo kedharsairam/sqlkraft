@@ -3,7 +3,7 @@ title: "Troubleshooting Activation Stored Procedures"
 topic: "service-broker"
 description: "09/11/2025 Activated stored procedures run on a background session. Therefore, the techniques for troubleshooting an activation stored procedure"
 tags: ["service-broker","troubleshooting-activation-stored-procedures"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Activated stored procedures run on a background session. Therefore, the techniques for

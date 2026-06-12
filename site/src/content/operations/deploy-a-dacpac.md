@@ -3,7 +3,7 @@ title: "Deploy a dacpac"
 topic: "ssms"
 description: ""
 tags: ["ssms","deploy-a-dacpac"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Deploying, or publishing, a registered data-tier application (DAC) from a DAC package to an

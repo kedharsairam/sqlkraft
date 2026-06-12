@@ -3,7 +3,7 @@ title: "SQL:StmtStarting Event Class"
 topic: "event-classes"
 description: "SQL:StmtStarting Event Class The SQL:StmtStarting event class indicates that a Transact-SQL"
 tags: ["event-classes","sqlstmtstarting-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SQL:StmtStarting Event Class

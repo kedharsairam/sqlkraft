@@ -3,7 +3,7 @@ title: "Pause a Trace"
 topic: "profiler"
 description: "06/06/2025 Pausing a trace prevents further event data from being captured until the trace is restarted."
 tags: ["profiler","pause-a-trace"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Pausing a trace prevents further event data from being captured until the trace is restarted.

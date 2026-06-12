@@ -3,7 +3,7 @@ title: "Identifiers"
 topic: "collation"
 description: "SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft F"
 tags: ["collation","identifiers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

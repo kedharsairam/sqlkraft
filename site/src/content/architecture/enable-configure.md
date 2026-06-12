@@ -3,7 +3,7 @@ title: "Enable & Configure"
 topic: "filestream"
 description: "Before you can start to use FILESTREAM, you must enable FILESTREAM on the instance of the SQL Server Database Engine."
 tags: ["filestream","enable-configure"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Before you can start to use FILESTREAM, you must enable FILESTREAM on the instance of the

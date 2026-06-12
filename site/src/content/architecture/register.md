@@ -3,7 +3,7 @@ title: "Register"
 topic: "clr-integration"
 description: "In order to use a user-defined type (UDT) in SQL Server, you must register it."
 tags: ["clr-integration","register"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In order to use a user-defined type (UDT) in SQL Server, you must register it. Registering a UDT

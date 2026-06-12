@@ -3,7 +3,7 @@ title: "Real-time operational analytics"
 topic: "filestream"
 description: "2016 (13.x) introduces real-time operational analytics, the ability to run both a"
 tags: ["filestream","real-time-operational-analytics"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) introduces real-time operational analytics, the ability to run both

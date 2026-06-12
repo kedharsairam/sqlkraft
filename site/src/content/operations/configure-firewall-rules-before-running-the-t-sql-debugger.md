@@ -3,7 +3,7 @@ title: "Configure firewall rules before running the T-SQL Debugger"
 topic: "ssb-diagnose"
 description: ""
 tags: ["ssb-diagnose","configure-firewall-rules-before-running-the-t-sql-debugger"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Windows Firewall rules must be configured to enable Transact-SQL debugging when

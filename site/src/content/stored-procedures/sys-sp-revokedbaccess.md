@@ -4,12 +4,12 @@ title: "sp_revokedbaccess"
 category: "general"
 description: "Removes a database user from the current database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_revokedbaccess [ @name_in_db = ]
-      N
-      'name_in_db'
-      [ ; ]
+              N
+              'name_in_db'
+              [ ; ]
 ---
 
 ## Description

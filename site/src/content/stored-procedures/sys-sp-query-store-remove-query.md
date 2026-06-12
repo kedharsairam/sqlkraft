@@ -4,10 +4,10 @@ title: "sp_query_store_remove_query"
 category: "general"
 description: "2016 (13.x) and later versions SQL database in Microsoft Fabric Removes the query and all associated plans and runtime stats from the Query Store. The ID of the query to be removed from the Query Store. Requires the ALTER permission on the database. Arguments for extended stored procedures must be entered in the specific order as section. If the parameter"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_query_store_remove_query [ @query_id = ] query_id
-      [ ; ]
+              [ ; ]
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Errors & Warnings Event Category (Database Engine)"
 topic: "event-classes"
 description: "The event category contains general error and warning events. Description Attention Event"
 tags: ["event-classes","errors-warnings-event-category-database-engine"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

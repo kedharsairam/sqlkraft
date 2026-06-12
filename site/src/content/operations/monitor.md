@@ -3,7 +3,7 @@ title: "Monitor"
 topic: "high-availability"
 description: "To monitor the properties and state of an Always On availability group you can use the following tools. System Center Monitoring pack for SQL Serv"
 tags: ["high-availability","monitor"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To monitor the properties and state of an Always On availability group you can use the

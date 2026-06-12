@@ -3,7 +3,7 @@ title: "View listener properties"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","view-listener-properties"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to view the properties of an Always On

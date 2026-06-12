@@ -3,7 +3,7 @@ title: "Create Instances"
 topic: "xml-data"
 description: "This article describes how to generate XML instances."
 tags: ["xml-data","create-instances"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to generate XML instances.

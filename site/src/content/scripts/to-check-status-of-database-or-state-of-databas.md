@@ -4,7 +4,7 @@ title: "To Check Status of Database or State of Databas"
 description: "for a specific database"
 category: "database"
 tags: ["database","health-check"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

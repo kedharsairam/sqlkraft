@@ -4,7 +4,7 @@ title: "sys.database_ledger_blocks"
 category: "compatibility"
 description: "Captures the cryptographically chained blocks, each of which represents a block of transactions For more information on database ledger, see A sequence number identifying the row in this view. The hash of the root of the Merkle tree, formed by transactions The number of transactions in the block. A SHA-256 hash of the previous row in the view."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.database_ledger_blocks"
 ---
 

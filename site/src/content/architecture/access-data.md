@@ -3,7 +3,7 @@ title: "Access Data"
 topic: "filestream"
 description: "This article describes how to use the Transact-SQL INSERT, UPDATE, and DELETE statements to manage FILESTREAM data."
 tags: ["filestream","access-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to use the Transact-SQL INSERT, UPDATE, and DELETE statements to

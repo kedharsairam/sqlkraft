@@ -3,7 +3,7 @@ title: "Service Accounts"
 topic: "high-availability"
 description: "When using Windows Authentication, if the server instances use different accounts, specify the service accounts for SQL Server. These service accounts"
 tags: ["high-availability","service-accounts"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 When using Windows Authentication, if the server instances use different accounts, specify the

@@ -3,7 +3,7 @@ title: "TM: Commit Tran Completed Event Class"
 topic: "event-classes"
 description: "The TM: Commit Tran Completed event class indicates that a COMMIT TRANSACTION request comple"
 tags: ["event-classes","tm-commit-tran-completed-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The TM: Commit Tran Completed event class indicates that a COMMIT TRANSACTION request

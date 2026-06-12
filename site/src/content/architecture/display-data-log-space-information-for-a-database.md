@@ -3,7 +3,7 @@ title: "Display data & log space information for a database"
 topic: "collation"
 description: ""
 tags: ["collation","display-data-log-space-information-for-a-database"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

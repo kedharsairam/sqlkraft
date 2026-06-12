@@ -3,7 +3,7 @@ title: "Add using Windows authentication"
 topic: "high-availability"
 description: "To set up a witness for a database, the database owner assigns a Database Engine instance to the role of witness server."
 tags: ["high-availability","add-using-windows-authentication"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 To set up a witness for a database, the database owner assigns a Database Engine instance to

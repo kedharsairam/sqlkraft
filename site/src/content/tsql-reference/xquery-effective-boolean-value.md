@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Effective Boolean Value"
 syntax: "/a[1]"
 tags: ["xquery","effective-boolean-value"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 These are the effective Boolean values:

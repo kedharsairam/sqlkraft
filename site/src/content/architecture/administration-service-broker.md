@@ -3,7 +3,7 @@ title: "Administration (Service Broker)"
 topic: "service-broker"
 description: "09/11/2025 This section describes the tasks that are involved in administering a database that hosts a Service Broker application. Most administr"
 tags: ["service-broker","administration-service-broker"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This section describes the tasks that are involved in administering a database that hosts a

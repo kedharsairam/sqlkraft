@@ -3,7 +3,7 @@ title: "PowerShell Cmdlets"
 topic: "high-availability"
 description: "Microsoft PowerShell is a task-based command-line shell and scripting language designed especially for system administration. Always On availability g"
 tags: ["high-availability","powershell-cmdlets"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Microsoft PowerShell is a task-based command-line shell and scripting language designed

@@ -4,7 +4,7 @@ title: "Graph functions"
 category: "statements"
 description: "2017 (14.x) and later versions"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Function

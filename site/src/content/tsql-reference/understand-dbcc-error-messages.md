@@ -4,7 +4,7 @@ title: "Understand DBCC error messages"
 category: "statements"
 description: "command finishes, a message is written to the SQL Server error log."
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 After the

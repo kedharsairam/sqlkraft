@@ -4,7 +4,7 @@ title: "Geometry simplification"
 category: "data-types"
 description: "ToString (geometry Data"
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

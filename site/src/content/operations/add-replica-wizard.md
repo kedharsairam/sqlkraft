@@ -3,7 +3,7 @@ title: "Add replica - wizard"
 topic: "high-availability"
 description: "Use the to help you add a new secondary replica to an existing Always On availability group."
 tags: ["high-availability","add-replica-wizard"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Use the

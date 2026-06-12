@@ -3,7 +3,7 @@ title: "Audit DBCC Event Class"
 topic: "event-classes"
 description: "The event class occurs whenever a DBCC command is issued. Description Name of the client application"
 tags: ["event-classes","audit-dbcc-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

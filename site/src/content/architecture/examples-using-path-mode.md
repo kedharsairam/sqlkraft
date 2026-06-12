@@ -3,7 +3,7 @@ title: "Examples: Using PATH Mode"
 topic: "xml-data"
 description: "The following examples illustrate the use of PATH mode in generating XML from a SELECT query."
 tags: ["xml-data","examples-using-path-mode"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following examples illustrate the use of PATH mode in generating XML from a SELECT

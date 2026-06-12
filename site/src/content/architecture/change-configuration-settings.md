@@ -3,7 +3,7 @@ title: "Change configuration settings"
 topic: "collation"
 description: "This topic describes how to change database-level options in SQL Server by using SQL Server Management Studio or Transact-SQL. The"
 tags: ["collation","change-configuration-settings"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to change database-level options in SQL Server by using SQL Server

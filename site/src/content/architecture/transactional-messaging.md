@@ -3,7 +3,7 @@ title: "Transactional Messaging"
 topic: "service-broker"
 description: "09/10/2025 The foundation of the Service Broker programming model is transactional messaging."
 tags: ["service-broker","transactional-messaging"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The foundation of the Service Broker programming model is transactional messaging. Any

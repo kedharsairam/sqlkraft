@@ -3,7 +3,7 @@ title: "srv_setutype"
 topic: "clr-integration"
 description: "Sets the user-defined data type for a column in a row."
 tags: ["clr-integration","srv-setutype"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Sets the user-defined data type for a column in a row.

@@ -3,7 +3,7 @@ title: "Delete or Disable DML Triggers"
 topic: "change-data-capture"
 description: "This topic describes how to delete or disable a DML trigger in SQL Server by using SQL Server"
 tags: ["change-data-capture","delete-or-disable-dml-triggers"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to delete or disable a DML trigger in SQL Server by using SQL Server

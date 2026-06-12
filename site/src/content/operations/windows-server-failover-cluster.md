@@ -3,7 +3,7 @@ title: "Windows Server failover cluster"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","windows-server-failover-cluster"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article provides an overview of using a Windows Server Failover Cluster (WSFC) with SQL

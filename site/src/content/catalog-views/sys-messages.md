@@ -4,43 +4,43 @@ title: "Messages (for errors) - sys.messages"
 category: "compatibility"
 description: "Contains information about all available SQL Server Agent proxy subsystems. The table is stored in the ID of the subsystem."
 tags: ["compatibility","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   SELECT
-      message_id
-      AS
-      Error
-      ,
-      severity
-      AS
-      Severity,
-      [
-      Event
-      Logged] =
-      CASE
-      is_event_logged
-      WHEN
-      0
-      THEN
-      'No'
-      ELSE
-      'Yes'
-      END
-      ,
-      [
-      text
-      ]
-      AS
-      [Description]
-      FROM
-      sys.messages
-      WHERE
-      language_id = 1040
-      /* replace 1040 with the desired language ID, such as 1033
-      for US English */
-      ORDER
-      BY
-      message_id;
+              message_id
+              AS
+              Error
+              ,
+              severity
+              AS
+              Severity,
+              [
+              Event
+              Logged] =
+              CASE
+              is_event_logged
+              WHEN
+              0
+              THEN
+              'No'
+              ELSE
+              'Yes'
+              END
+              ,
+              [
+              text
+              ]
+              AS
+              [Description]
+              FROM
+              sys.messages
+              WHERE
+              language_id = 1040
+              /* replace 1040 with the desired language ID, such as 1033
+              for US English */
+              ORDER
+              BY
+              message_id;
 ---
 
 ## Description

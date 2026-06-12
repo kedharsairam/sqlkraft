@@ -3,7 +3,7 @@ title: "Step 4. Login packet"
 topic: "transaction-log"
 description: ""
 tags: ["transaction-log","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Output

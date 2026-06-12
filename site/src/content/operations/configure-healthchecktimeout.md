@@ -3,7 +3,7 @@ title: "Configure HealthCheckTimeout"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","configure-healthchecktimeout"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The HealthCheckTimeout setting is used to specify the length of time, in milliseconds, that the

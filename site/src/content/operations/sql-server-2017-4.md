@@ -3,7 +3,7 @@ title: "SQL Server 2017 >"
 topic: "linux-operations"
 description: "The following table lists the release history for SQL Server 2017 (14.x). CU 31 GDR (May 2026) 14.0.3530.2 2026-05-12 CU 31 GDR (Apr 2026) 14.0.3525.1 2026-04-14 CU"
 tags: ["linux-operations","sql-server-2017-4"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The following table lists the release history for SQL Server 2017 (14.x).

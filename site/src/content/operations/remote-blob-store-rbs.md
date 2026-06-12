@@ -3,7 +3,7 @@ title: "Remote blob store (RBS)"
 topic: "high-availability"
 description: "Always On availability groups can provide a high-availability and disaster recovery solution for Remote Blob Store (RBS) BLOB objects (bl"
 tags: ["high-availability","remote-blob-store-rbs"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Always On availability groups can provide a high-availability and disaster recovery solution for

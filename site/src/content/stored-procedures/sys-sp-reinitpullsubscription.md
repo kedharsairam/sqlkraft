@@ -4,21 +4,21 @@ title: "sp_reinitpullsubscription"
 category: "general"
 description: "Marks a transactional pull or anonymous subscription for reinitialization the next time the Distribution Agent runs. This stored procedure is executed at the Subscriber on the pull The name of the Publisher database. subscriptions for reinitialization."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_reinitpullsubscription
-      [ @publisher = ]
-      N
-      'publisher'
-      [ , [ @publisher_db = ]
-      N
-      'publisher_db'
-      ]
-      [ , [ @publication = ]
-      N
-      'publication'
-      ]
-      [ ; ]
+              [ @publisher = ]
+              N
+              'publisher'
+              [ , [ @publisher_db = ]
+              N
+              'publisher_db'
+              ]
+              [ , [ @publication = ]
+              N
+              'publication'
+              ]
+              [ ; ]
 ---
 
 ## Description

@@ -4,7 +4,7 @@ title: "sys.dm_exec_query_parallel_workers"
 category: "execution"
 description: "2016 (13.x) and later versions SQL database in Microsoft Fabric Returns worker availability information per node. Number of schedulers on this node. Maximum number of workers for parallel queries. Number of workers reserved by parallel queries, plus number of main Number of workers available for tasks."
 tags: ["execution","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "##MS_ServerStateReader##"
 ---
 

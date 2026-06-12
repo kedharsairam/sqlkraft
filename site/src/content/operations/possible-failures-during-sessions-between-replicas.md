@@ -3,7 +3,7 @@ title: "Possible failures during sessions between replicas"
 topic: "high-availability"
 description: "Physical, operating system, or SQL Server problems can cause a failure in a session between two availability replicas. An availability replica doesn't"
 tags: ["high-availability","possible-failures-during-sessions-between-replicas"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Physical, operating system, or SQL Server problems can cause a failure in a session between

@@ -3,7 +3,7 @@ title: "SP:Completed Event Class"
 topic: "event-classes"
 description: "The SP:Completed event class indicates that the stored procedure has completed executing. De"
 tags: ["event-classes","spcompleted-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The SP:Completed event class indicates that the stored procedure has completed executing.

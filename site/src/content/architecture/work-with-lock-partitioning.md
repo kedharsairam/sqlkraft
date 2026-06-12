@@ -3,7 +3,7 @@ title: "Work with lock partitioning"
 topic: "locking"
 description: "Lock partitioning is enabled automatically on the Database Engine instances with a larger number"
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Lock partitioning is enabled automatically on the Database Engine instances with a larger number

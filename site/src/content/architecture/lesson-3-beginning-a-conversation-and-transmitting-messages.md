@@ -3,7 +3,7 @@ title: "Lesson 3: Beginning a Conversation and Transmitting Messages"
 topic: "service-broker"
 description: ""
 tags: ["service-broker","lesson-3-beginning-a-conversation-and-transmitting-messages"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 In this lesson, you learn to complete a basic request-reply message cycle in a system

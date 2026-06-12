@@ -4,7 +4,7 @@ title: "Examples: SQL Server , Azure SQL Database, and"
 category: "operators"
 description: ""
 tags: ["tsql","operators"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## A. Return all statistics information

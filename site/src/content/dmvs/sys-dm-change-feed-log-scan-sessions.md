@@ -4,7 +4,7 @@ title: "sys.dm_change_feed_log_scan_sessions"
 category: "io"
 description: "2022 (16.x) and later versions Mirrored databases in Microsoft SQL database in Microsoft Fabric Returns activity from the SQL change feed."
 tags: ["io","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

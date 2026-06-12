@@ -3,7 +3,7 @@ title: "Banner Element"
 topic: "ssb-diagnose"
 description: "Identifies which utility generated the output XML file. XML Description Identifies the utility that generated the XML output file. Identifies the product that generated"
 tags: ["ssb-diagnose","banner-element"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Identifies which utility generated the

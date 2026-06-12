@@ -3,16 +3,16 @@ title: "How to: Open a SQL Server Unit Test to Edit"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-  
-    After you create a SQL Server unit test, you use the
-  
-    SQL Server Unit Test Designer
-  
-    to add
-  
-    Transact-SQL statements and test conditions. The tests created by using the designer generate
+          
+            After you create a SQL Server unit test, you use the
+          
+            SQL Server Unit Test Designer
+          
+            to add
+          
+            Transact-SQL statements and test conditions. The tests created by using the designer generate
 tags: ["ssb-diagnose","how-to-open-a-sql-server-unit-test-to-edit"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 After you create a SQL Server unit test, you use the

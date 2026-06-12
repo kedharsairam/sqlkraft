@@ -4,24 +4,24 @@ title: "sp_data_source_table_columns"
 category: "general"
 description: "Returns a list of columns in external data source table."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.sp_data_source_table_columns
-      [ @data_source = ]
-      N
-      'data_source'
-      , [ @table_location = ]
-      N
-      'table_location'
-      [ , [ @column_name = ]
-      N
-      'column_name'
-      ]
-      [ , [ @search_options = ]
-      N
-      'search_options'
-      ]
-      [ ; ]
+              [ @data_source = ]
+              N
+              'data_source'
+              , [ @table_location = ]
+              N
+              'table_location'
+              [ , [ @column_name = ]
+              N
+              'column_name'
+              ]
+              [ , [ @search_options = ]
+              N
+              'search_options'
+              ]
+              [ ; ]
 ---
 
 ## Description

@@ -3,12 +3,12 @@ title: "Transition from Azure Data Studio"
 topic: "profiler"
 description: |
   The Azure Data Studio Migration feature in the MSSQL extension for Visual Studio Code helps
-  
-    you transition from Azure Data Studio to the MSSQL extension by importing existing connections,
-  
-    connection
+          
+            you transition from Azure Data Studio to the MSSQL extension by importing existing connections,
+          
+            connection
 tags: ["profiler","transition-from-azure-data-studio"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Azure Data Studio Migration feature in the MSSQL extension for Visual Studio Code helps

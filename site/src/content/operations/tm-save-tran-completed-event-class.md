@@ -3,7 +3,7 @@ title: "TM: Save Tran Completed Event Class"
 topic: "event-classes"
 description: "The TM: Save Tran Completed event class indicates that a SAVE TRANSACTION request has comple"
 tags: ["event-classes","tm-save-tran-completed-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The TM: Save Tran Completed event class indicates that a SAVE TRANSACTION request has

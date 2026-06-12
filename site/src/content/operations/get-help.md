@@ -3,23 +3,21 @@ title: "Get help"
 topic: "monitor"
 description: |
   SQL Server help and feedback
-  
-    ﾃ
-  
-    Summarize this article for me
-  
-    This article explains different ways to get assistance with an issue or provide feedback for SQL
-  
-    Server or the SQL Server technical doc
+          
+            ﾃ
+          
+            Summarize this article for me
+          
+            This article explains different ways to get assistance with an issue or provide feedback for SQL
+          
+            Server or the SQL Server technical doc
 tags: ["monitor","get-help"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 help and feedback
 
 ﾃ
-
-Summarize this article for me
 
 This article explains different ways to get assistance with an issue or provide feedback for SQL
 

@@ -4,7 +4,7 @@ title: "sys.dm_os_wait_stats"
 category: "os"
 description: "Returns information about all the waits encountered by threads that executed. You can use this aggregated view to diagnose performance issues with SQL Server and also with specific queries sys.dm_exec_session_wait_stats provides similar information by session."
 tags: ["os","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.dm_pdw_nodes_os_wait_stats"
 ---
 

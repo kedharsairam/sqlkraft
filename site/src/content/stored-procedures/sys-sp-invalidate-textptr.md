@@ -4,7 +4,7 @@ title: "sp_invalidate_textptr"
 category: "general"
 description: "Invalidates the specified in-row text pointer, or all in-row text pointers, in the transaction."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_invalidate_textptr"
 ---
 

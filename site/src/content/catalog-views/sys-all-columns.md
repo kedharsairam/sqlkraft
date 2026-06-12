@@ -4,7 +4,7 @@ title: "sys.all_columns"
 category: "objects"
 description: "Shows the union of all columns belonging to user-defined objects and system objects."
 tags: ["objects","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sp_tableoption 'text in row'"
 ---
 

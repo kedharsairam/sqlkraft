@@ -4,7 +4,7 @@ title: "Check objects in parallel"
 category: "predicates"
 description: ""
 tags: ["tsql","predicates"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 If a snapshot can't be created, or

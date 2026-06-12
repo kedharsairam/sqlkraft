@@ -3,7 +3,7 @@ title: "Remote Blob Store (RBS)"
 topic: "filestream"
 description: "Remote BLOB Store (RBS) is an optional add-on component that lets database administrators store binary large objects in commodity storage s"
 tags: ["filestream","remote-blob-store-rbs"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Remote BLOB Store (RBS) is an optional add-on component that lets database

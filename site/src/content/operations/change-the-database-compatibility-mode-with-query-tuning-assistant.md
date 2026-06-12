@@ -3,7 +3,7 @@ title: "Change the database compatibility mode with Query Tuning Assistant"
 topic: "upgrade"
 description: ""
 tags: ["upgrade","change-the-database-compatibility-mode-with-query-tuning-assistant"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

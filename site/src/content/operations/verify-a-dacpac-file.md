@@ -3,7 +3,7 @@ title: "Verify a dacpac file"
 topic: "ssms"
 description: ""
 tags: ["ssms","verify-a-dacpac-file"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The process of converting an

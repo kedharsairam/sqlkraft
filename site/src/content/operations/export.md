@@ -3,7 +3,7 @@ title: "Export"
 topic: "profiler"
 description: "06/06/2025 This article describes how to export an existing trace template to save as a template file (.tdf) by using SQL Server Profiler. When y"
 tags: ["profiler","export"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to export an existing trace template to save as a template file (.tdf)

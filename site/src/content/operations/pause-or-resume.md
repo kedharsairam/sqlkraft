@@ -3,7 +3,7 @@ title: "Pause or resume"
 topic: "high-availability"
 description: "This topic describes how to pause or resume database mirroring in SQL Server by using SQL Server Management Studio or Transact-SQL. Security SQL Ser"
 tags: ["high-availability","pause-or-resume"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to pause or resume database mirroring in SQL Server by using SQL

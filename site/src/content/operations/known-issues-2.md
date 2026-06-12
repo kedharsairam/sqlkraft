@@ -3,21 +3,19 @@ title: "Known issues"
 topic: "azure-synapse"
 description: |
   ﾃ
-  
-    Summarize this article for me
-  
-    This article provides information about known issues associated with SQL Server enabled by
-  
-    Azure Arc.
-  
-    If a database isn't online and updatable, required permissions
+          
+            Summarize this article for me
+          
+            This article provides information about known issues associated with SQL Server enabled by
+          
+            Azure Arc.
+          
+            If a database isn't online and updatable, required permissions
 tags: ["azure-synapse","known-issues-2"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 ﾃ
-
-Summarize this article for me
 
 This article provides information about known issues associated with SQL Server enabled by
 

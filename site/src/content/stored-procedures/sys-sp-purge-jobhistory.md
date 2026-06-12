@@ -4,18 +4,18 @@ title: "sp_purge_jobhistory"
 category: "general"
 description: "Removes the history records for a job in the SQL Server Agent service."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_purge_jobhistory
-      [ [ @job_name = ]
-      N
-      'job_name'
-      ]
-      [ , [ @job_id = ]
-      'job_id'
-      ]
-      [ , [ @oldest_date = ] oldest_date ]
-      [ ; ]
+              [ [ @job_name = ]
+              N
+              'job_name'
+              ]
+              [ , [ @job_id = ]
+              'job_id'
+              ]
+              [ , [ @oldest_date = ] oldest_date ]
+              [ ; ]
 ---
 
 ## Description

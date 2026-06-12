@@ -4,7 +4,7 @@ title: "sys.fulltext_stopwords"
 category: "full-text"
 description: "Contains a row per stopword for all stoplists in the database. belongs. This ID is unique within the The term to be considered for a stop-word match."
 tags: ["full-text","catalog-view"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Description

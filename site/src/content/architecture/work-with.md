@@ -3,7 +3,7 @@ title: "Work with"
 topic: "tables"
 description: "2016 (13.x) and later This article discusses how working with a memory-optimized system-versioned temporal table is differ"
 tags: ["tables","work-with"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later

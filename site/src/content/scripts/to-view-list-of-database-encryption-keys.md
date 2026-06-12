@@ -4,7 +4,7 @@ title: "To View List of Database Encryption Keys"
 description: "diagnostic script for security-audit operations."
 category: "security-audit"
 tags: ["database","encryption","security-audit"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

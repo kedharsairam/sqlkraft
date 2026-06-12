@@ -3,7 +3,7 @@ title: "Install and connect (Ubuntu)"
 topic: "linux-operations"
 description: "Quickstart: Install SQL Server and create a on Linux In this quickstart, you install SQL Server 2025 (17.x) on Ubuntu 22.04."
 tags: ["linux-operations","install-and-connect-ubuntu"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Quickstart: Install SQL Server and create a

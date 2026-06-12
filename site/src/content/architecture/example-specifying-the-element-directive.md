@@ -3,7 +3,7 @@ title: "Example: Specifying the ELEMENT Directive"
 topic: "xml-data"
 description: "This retrieves employee information and generates element-centric XML as shown in the follow"
 tags: ["xml-data","example-specifying-the-element-directive"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This retrieves employee information and generates element-centric XML as shown in the

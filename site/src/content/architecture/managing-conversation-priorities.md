@@ -3,7 +3,7 @@ title: "Managing Conversation Priorities"
 topic: "service-broker"
 description: ""
 tags: ["service-broker","managing-conversation-priorities"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Service Broker conversation priorities let you specify which conversations to prioritize so that

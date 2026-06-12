@@ -4,7 +4,7 @@ title: "sys.dm_db_log_info"
 category: "log"
 description: "2016 (13.x) SP2 and later versions SQL database in Microsoft Fabric information of the transaction log. Note all transaction log files are combined in the table output. Each row in the output represents a VLF in the transaction log and provides information relevant to that VLF in the log. Valid inputs are the ID number of a database, NULL, or DEFAULT. The default is NULL. NULL and DEF"
 tags: ["log","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.dm_db_log_info ( database_id )"
 ---
 

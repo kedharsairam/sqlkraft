@@ -3,7 +3,7 @@ title: "Deprecation Event Category"
 topic: "event-classes"
 description: "The event category contains general deprecation events. Description Deprecation Announceme"
 tags: ["event-classes","deprecation-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

@@ -4,7 +4,7 @@ title: "STInteriorRingN (geometry Data Type)"
 category: "data-types"
 description: "Returns the specified interior ring of a polygon geometry instance."
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 ## Syntax
 

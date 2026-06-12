@@ -3,7 +3,7 @@ title: "Stored Procedures Event Category"
 topic: "event-classes"
 description: "The event category contains general stored procedure events. Description RPC:Completed Eve"
 tags: ["event-classes","stored-procedures-event-category"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

@@ -3,12 +3,8 @@ title: "CurvePolygon"
 topic: "spatial-data"
 description: "SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric A is a topologic"
 tags: ["spatial-data","curvepolygon"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 database in Microsoft Fabric
 

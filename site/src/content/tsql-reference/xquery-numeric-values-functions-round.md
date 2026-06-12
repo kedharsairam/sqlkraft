@@ -5,7 +5,7 @@ category: "xquery"
 description: ""
 syntax: "fn:round ( $arg as numeric?) as numeric?"
 tags: ["xquery","numeric-values-functions-round"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the number not having a fractional part that is closest to the argument. If there is more

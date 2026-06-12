@@ -3,7 +3,7 @@ title: "View & Modify properties"
 topic: "migration"
 description: "This topic describes how to view and modify Distributor and Publisher properties in SQL Server by using SQL Server Managem"
 tags: ["migration","view-modify-properties"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes how to view and modify Distributor and Publisher properties in SQL Server

@@ -3,7 +3,7 @@ title: "Page and extent architecture guide"
 topic: "query-processing"
 description: ""
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Analytics Platform System (PDW)

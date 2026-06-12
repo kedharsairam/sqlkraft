@@ -4,7 +4,7 @@ title: "Reserved keywords"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 This behavior is applicable only when

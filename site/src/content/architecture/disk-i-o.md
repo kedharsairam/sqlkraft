@@ -3,7 +3,7 @@ title: "Disk I/O"
 topic: "io-fundamentals"
 description: "I/O fundamentals"
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 I/O fundamentals

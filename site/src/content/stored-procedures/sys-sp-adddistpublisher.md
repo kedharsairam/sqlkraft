@@ -4,43 +4,43 @@ title: "sp_adddistpublisher"
 category: "general"
 description: "Configures a Publisher to use a specified distribution database. This stored procedure is executed at the Distributor on any database. The stored procedures must have been run prior to using this stored procedure. Server name can be specified as for a named instance. Specify the port number for your connection when SQL Server is deployed on Linux or Windows with a c"
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_adddistpublisher
-      [ @publisher = ]
-      N
-      'publisher'
-      , [ @distribution_db = ]
-      N
-      'distribution_db'
-      [ , [ @security_mode = ] security_mode ]
-      [ , [ @login = ]
-      N
-      'login'
-      ]
-      [ , [ @password = ]
-      N
-      'password'
-      ]
-      [ , [ @working_directory = ]
-      N
-      'working_directory'
-      ]
-      [ , [ @trusted = ]
-      N
-      'trusted'
-      ]
-      [ , [ @encrypted_password = ] encrypted_password ]
-      [ , [ @thirdparty_flag = ] thirdparty_flag ]
-      [ , [ @publisher_type = ]
-      N
-      'publisher_type'
-      ]
-      [ , [ @storage_connection_string = ]
-      N
-      'storage_connection_string'
-      ]
-      [ ; ]
+              [ @publisher = ]
+              N
+              'publisher'
+              , [ @distribution_db = ]
+              N
+              'distribution_db'
+              [ , [ @security_mode = ] security_mode ]
+              [ , [ @login = ]
+              N
+              'login'
+              ]
+              [ , [ @password = ]
+              N
+              'password'
+              ]
+              [ , [ @working_directory = ]
+              N
+              'working_directory'
+              ]
+              [ , [ @trusted = ]
+              N
+              'trusted'
+              ]
+              [ , [ @encrypted_password = ] encrypted_password ]
+              [ , [ @thirdparty_flag = ] thirdparty_flag ]
+              [ , [ @publisher_type = ]
+              N
+              'publisher_type'
+              ]
+              [ , [ @storage_connection_string = ]
+              N
+              'storage_connection_string'
+              ]
+              [ ; ]
 ---
 
 ## Description

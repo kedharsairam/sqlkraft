@@ -4,15 +4,15 @@ title: "sp_mergedummyupdate"
 category: "general"
 description: "Does a dummy update on the given row, so that it sends again during the next merge. This stored procedure can be executed at the Publisher, on the publication database, or at the Subscriber, on the subscription database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_mergedummyupdate
-      [ @source_object = ]
-      N
-      'source_object'
-      , [ @rowguid = ]
-      'rowguid'
-      [ ; ]
+              [ @source_object = ]
+              N
+              'source_object'
+              , [ @rowguid = ]
+              'rowguid'
+              [ ; ]
 ---
 
 ## Description

@@ -3,7 +3,7 @@ title: "Object:Altered Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","objectaltered-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Object:Altered event class indicates that an object has been altered; for example, by an

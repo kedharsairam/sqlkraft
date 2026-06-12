@@ -3,7 +3,7 @@ title: "Supported .NET Framework Libraries"
 topic: "clr-integration"
 description: "With the common language runtime (CLR) hosted in SQL Server, you can author stored procedures, triggers, user-defined functions, user-defined types, a"
 tags: ["clr-integration","supported-net-framework-libraries"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 With the common language runtime (CLR) hosted in SQL Server, you can author stored

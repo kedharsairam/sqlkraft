@@ -4,7 +4,7 @@ title: "XQuery - XQuery Expressions"
 category: "xquery"
 description: "XQuery Language Reference: XQuery Expressions"
 tags: ["xquery","xquery-expressions"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Topics that describe the XQuery expressions.

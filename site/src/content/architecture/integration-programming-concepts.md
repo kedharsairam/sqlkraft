@@ -3,7 +3,7 @@ title: "Integration programming concepts"
 topic: "clr-integration"
 description: "features the integration of the common language runtime (CLR) component of the .NET Framework for Windows. You"
 tags: ["clr-integration","integration-programming-concepts"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 features the integration of the common language runtime (CLR) component of the.NET Framework for Windows.

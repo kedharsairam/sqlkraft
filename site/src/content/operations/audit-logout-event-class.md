@@ -3,7 +3,7 @@ title: "Audit Logout Event Class"
 topic: "event-classes"
 description: "The event class indicates that a user has logged out of (logged off) Microsoft SQL Server."
 tags: ["event-classes","audit-logout-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

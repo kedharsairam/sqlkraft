@@ -4,7 +4,7 @@ title: "Specify table hints as query hints"
 category: "data-types"
 description: ""
 tags: ["tsql","data-types"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Query hints can't be specified in an

@@ -3,7 +3,7 @@ title: "LocalDBGetVersionInfo"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","localdbgetversioninfo"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns information for the specified SQL Server Express LocalDB version, such as whether it

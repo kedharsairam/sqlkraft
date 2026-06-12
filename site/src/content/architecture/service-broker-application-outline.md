@@ -3,7 +3,7 @@ title: "Service Broker Application Outline"
 topic: "service-broker"
 description: "09/11/2025 Most Service Broker applications follow the same basic steps to receive and process messages: 1. The application begins a transaction."
 tags: ["service-broker","service-broker-application-outline"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Most Service Broker applications follow the same basic steps to receive and process messages:

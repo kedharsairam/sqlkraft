@@ -4,7 +4,7 @@ title: "TimeTicks"
 category: "variables"
 description: "Represents the number of 100-nanosecond intervals (ticks) for time-related calculations."
 tags: ["tsql","variables"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 ## Syntax
 

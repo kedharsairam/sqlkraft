@@ -3,7 +3,7 @@ title: "Create a Table"
 topic: "filestream"
 description: "This topic shows how to create a table for storing FILESTREAM data. When the database has a FILESTREAM filegroup, you can create or modify tables to s"
 tags: ["filestream","create-a-table"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic shows how to create a table for storing FILESTREAM data.

@@ -3,7 +3,7 @@ title: "Transaction Promotion"
 topic: "clr-integration"
 description: "Transaction promotion describes a lightweight, local transaction that can be automatically promoted to a fully distributable transaction as needed."
 tags: ["clr-integration","transaction-promotion"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Transaction

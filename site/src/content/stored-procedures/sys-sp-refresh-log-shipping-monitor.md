@@ -4,18 +4,18 @@ title: "sp_refresh_log_shipping_monitor"
 category: "general"
 description: "This stored procedure refreshes the remote monitor tables with the latest information from a given primary or secondary server for the specified log shipping agent. The procedure is invoked on the primary or secondary server. The primary ID for backup or the secondary ID for copy or restore."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_refresh_log_shipping_monitor
-      [ @agent_id = ]
-      'agent_id'
-      , [ @agent_type = ] agent_type
-      [ , [ @database = ]
-      N
-      'database'
-      ]
-      , [ @mode = ] mode
-      [ ; ]
+              [ @agent_id = ]
+              'agent_id'
+              , [ @agent_type = ] agent_type
+              [ , [ @database = ]
+              N
+              'database'
+              ]
+              , [ @mode = ] mode
+              [ ; ]
 ---
 
 ## Description

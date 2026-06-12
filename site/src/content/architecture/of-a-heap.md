@@ -3,7 +3,7 @@ title: "Of a heap"
 topic: "collation"
 description: ""
 tags: ["collation","of-a-heap"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Analytics Platform System (PDW)

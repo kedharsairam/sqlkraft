@@ -3,7 +3,7 @@ title: "Transaction Lifetimes"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","transaction-lifetimes"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 There's an important difference between transactions started in Transact-SQL stored

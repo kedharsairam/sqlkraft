@@ -3,7 +3,7 @@ title: "Concurrency effects"
 topic: "query-processing"
 description: "protecting all reads with locks. By using row versioning, the chance that a read operation"
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 protecting all reads with locks. By using row versioning, the chance that a read operation

@@ -3,7 +3,7 @@ title: "Audit Server Alter Trace Event Class"
 topic: "event-classes"
 description: "The event class occurs for all statements that check for the ALTER TRACE permission."
 tags: ["event-classes","audit-server-alter-trace-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

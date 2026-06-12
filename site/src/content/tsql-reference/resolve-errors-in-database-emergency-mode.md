@@ -4,7 +4,7 @@ title: "Resolve errors in database emergency mode"
 category: "predicates"
 description: "detects a corruption error."
 tags: ["tsql","predicates"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 A stack dump (

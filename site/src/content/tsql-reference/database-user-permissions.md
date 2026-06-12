@@ -4,7 +4,7 @@ title: "Database User Permissions"
 category: "statements"
 description: "Database_user_mapped_to_Windows_User"
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Database_user_mapped_to_Windows_User

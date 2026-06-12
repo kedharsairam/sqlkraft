@@ -4,7 +4,7 @@ title: "sys.fn_cdc_get_min_lsn"
 category: "change-data-capture"
 description: "Returns the start_lsn column value for the specified capture instance from the cdc.change_tables system table. This value represents the low endpoint of the validity interval for the capture instance. capture_instance_name Is the name of the capture instance."
 tags: ["change-data-capture","function"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.fn_cdc_get_min_lsn ( 'capture_instance_name' )"
 ---
 

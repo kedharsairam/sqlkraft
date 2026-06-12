@@ -3,7 +3,7 @@ title: "Multi-Subnet Clustering"
 topic: "high-availability"
 description: "multi-subnet clustering 08/26/2025 A SQL Server multi-subnet failover cluster is a configuration in which each failover cluster node is connected to a different"
 tags: ["high-availability","multi-subnet-clustering"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 multi-subnet clustering

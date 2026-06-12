@@ -3,7 +3,7 @@ title: "srv_pfieldex"
 topic: "clr-integration"
 description: "Returns a pointer to data containing the requested SRV_PROC field. srvproc Is a pointer to the SRV_PROC structure that is the handle for a particular"
 tags: ["clr-integration","srv-pfieldex"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns a pointer to data containing the requested SRV_PROC field.

@@ -3,7 +3,7 @@ title: "Understand AD Authentication"
 topic: "linux-operations"
 description: "on Linux This article provides you details on how Active Directory authentication works for SQL Server deployed on Linux or containers."
 tags: ["linux-operations","understand-ad-authentication"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 on Linux

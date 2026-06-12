@@ -3,7 +3,7 @@ title: "Set up"
 topic: "high-availability"
 description: "This topic describes the prerequisites and recommendations for setting up database mirroring. For an introduction to database mirroring, see Database Mirroring (SQL Server)"
 tags: ["high-availability","set-up"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This topic describes the prerequisites and recommendations for setting up database mirroring.

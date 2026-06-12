@@ -4,7 +4,7 @@ title: "Operations"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Generates a manual checkpoint in the SQL Server database to which you are currently

@@ -3,7 +3,7 @@ title: "Data access from CLR database objects"
 topic: "clr-integration"
 description: ""
 tags: ["clr-integration","data-access-from-clr-database-objects"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A common language runtime (CLR) routine might easily access data stored in the instance of

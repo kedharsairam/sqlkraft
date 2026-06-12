@@ -3,7 +3,7 @@ title: "Resolve distributed partitioned views"
 topic: "io-fundamentals"
 description: ""
 tags: ["io-fundamentals","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 For more information, see

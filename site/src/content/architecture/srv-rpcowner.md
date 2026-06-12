@@ -3,7 +3,7 @@ title: "srv_rpcowner"
 topic: "clr-integration"
 description: "Returns the owner component for the current remote stored procedure. srvproc Is a pointer to the SRV_PROC structure that is the handle for a particul"
 tags: ["clr-integration","srv-rpcowner"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the owner component for the current remote stored procedure.

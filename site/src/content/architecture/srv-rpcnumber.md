@@ -3,7 +3,7 @@ title: "srv_rpcnumber"
 topic: "clr-integration"
 description: "Returns the number component for the current remote stored procedure call."
 tags: ["clr-integration","srv-rpcnumber"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the number component for the current remote stored procedure call.

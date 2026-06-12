@@ -4,7 +4,7 @@ title: "To Log Who Created a Job and Renamed a Job"
 description: "diagnostic script for automation operations."
 category: "automation"
 tags: ["agent-job","automation"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql
@@ -19,13 +19,13 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 CREATE TABLE [dbo].[JobChanges](
-  [JobChangeID] [int] IDENTITY(1,1) NOT NULL,
-  [JobName] [varchar](100) NOT NULL,
-  [OldJobName] [varchar](100) NULL,
-  [ChangeType] [varchar](20) NOT NULL,
-  [ChangeTime] [datetime] NOT NULL,
-  [LoginName] [varchar](100) NOT NULL,
-  [JobOwner] [varchar](100) NOT NULL,
+ [JobChangeID] [int] IDENTITY(1,1) NOT NULL,
+ [JobName] [varchar](100) NOT NULL,
+ [OldJobName] [varchar](100) NULL,
+ [ChangeType] [varchar](20) NOT NULL,
+ [ChangeTime] [datetime] NOT NULL,
+ [LoginName] [varchar](100) NOT NULL,
+ [JobOwner] [varchar](100) NOT NULL,
 )
 
 -------------------------------------------------------

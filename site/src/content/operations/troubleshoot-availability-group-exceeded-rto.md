@@ -3,7 +3,7 @@ title: "Troubleshoot: Availability group exceeded RTO"
 topic: "high-availability"
 description: ""
 tags: ["high-availability","troubleshoot-availability-group-exceeded-rto"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 After an automatic failover or a planned manual failover without data loss on an availability

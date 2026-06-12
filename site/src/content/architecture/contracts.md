@@ -3,7 +3,7 @@ title: "Contracts"
 topic: "service-broker"
 description: "08/29/2025 A contract defines which message types an application uses to accomplish a particular task."
 tags: ["service-broker","contracts"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 A contract defines which message types an application uses to accomplish a particular task. A

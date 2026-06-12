@@ -3,7 +3,7 @@ title: "Dynamic memory management"
 topic: "memory-management"
 description: "2005 (9.x), SQL Server 2008"
 tags: ["memory-management","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 2005 (9.x), SQL Server 2008

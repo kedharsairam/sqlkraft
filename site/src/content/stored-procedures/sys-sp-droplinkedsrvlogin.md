@@ -4,16 +4,16 @@ title: "sp_droplinkedsrvlogin"
 category: "general"
 description: "Removes an existing mapping between a login on the local server running SQL Server, and a login on the linked server."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_droplinkedsrvlogin
-      [ @rmtsrvname = ]
-      N
-      'rmtsrvname'
-      , [ @locallogin = ]
-      N
-      'locallogin'
-      [ ; ]
+              [ @rmtsrvname = ]
+              N
+              'rmtsrvname'
+              , [ @locallogin = ]
+              N
+              'locallogin'
+              [ ; ]
 ---
 
 ## Description

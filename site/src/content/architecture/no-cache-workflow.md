@@ -3,7 +3,7 @@ title: "No cache workflow"
 topic: "query-processing"
 description: ""
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 This article explains how SQL Server uses a security cache to validate permissions a principal

@@ -3,7 +3,7 @@ title: "Column Names with the Path Specified as data()"
 topic: "xml-data"
 description: ""
 tags: ["xml-data","column-names-with-the-path-specified-as-data"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 If the path specified as column name is

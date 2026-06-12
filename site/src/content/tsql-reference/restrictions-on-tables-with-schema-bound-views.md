@@ -4,7 +4,7 @@ title: "Restrictions on tables with schema-bound views"
 category: "queries"
 description: "are runtime constants. In contrast, the functions"
 tags: ["tsql","queries"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 are runtime constants. In contrast, the functions

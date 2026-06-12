@@ -3,7 +3,7 @@ title: "Missing Column Statistics Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","missing-column-statistics-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Missing Column Statistics event class indicates that column statistics that could have been

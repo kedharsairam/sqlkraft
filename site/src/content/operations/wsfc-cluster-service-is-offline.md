@@ -3,7 +3,7 @@ title: "WSFC cluster service is offline"
 topic: "high-availability"
 description: "- Windows only : WSFC Cluster State : WSFC cluster service is offline. : : Instance of SQL Server This policy checks the state of the Windows Serv"
 tags: ["high-availability","wsfc-cluster-service-is-offline"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 - Windows only

@@ -3,7 +3,7 @@ title: "View states"
 topic: "high-availability"
 description: "During a database mirroring session, you can view the status on the page of the dialog box. 1."
 tags: ["high-availability","view-states"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 During a database mirroring session, you can view the status on the

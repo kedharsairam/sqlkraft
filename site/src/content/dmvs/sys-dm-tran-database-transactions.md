@@ -4,7 +4,7 @@ title: "sys.dm_tran_database_transactions"
 category: "io"
 description: "dynamic management view returns information about transactions at the database level."
 tags: ["io","dmv"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: "sys.dm_tran_database_transactions"
 ---
 

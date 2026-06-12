@@ -3,7 +3,7 @@ title: "Configure instance"
 topic: "high-availability"
 description: "This article contains information about the requirements for configuring an instance of SQL Server to support Always On availability groups in SQL Ser"
 tags: ["high-availability","configure-instance"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article contains information about the requirements for configuring an instance of SQL

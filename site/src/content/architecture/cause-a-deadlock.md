@@ -3,7 +3,7 @@ title: "Cause a deadlock"
 topic: "locking"
 description: ""
 tags: ["locking","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 shorter duration than a higher isolation level, such as. This reduces lock

@@ -3,7 +3,7 @@ title: "Secondary database is not joined"
 topic: "high-availability"
 description: ": Availability Database Join State : Secondary database is not joined."
 tags: ["high-availability","secondary-database-is-not-joined"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 : Availability Database Join State

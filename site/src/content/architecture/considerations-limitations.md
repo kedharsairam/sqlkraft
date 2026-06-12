@@ -3,7 +3,7 @@ title: "Considerations & limitations"
 topic: "tables"
 description: ""
 tags: ["tables","considerations-limitations"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 2016 (13.x) and later versions

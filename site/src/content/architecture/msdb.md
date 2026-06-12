@@ -3,7 +3,7 @@ title: "msdb"
 topic: "collation"
 description: "The database is used by SQL Server Agent for scheduling alerts and jobs and by other features such as SQL Server Manageme"
 tags: ["collation","msdb"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

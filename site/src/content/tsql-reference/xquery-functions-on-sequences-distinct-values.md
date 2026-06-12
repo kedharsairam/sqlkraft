@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Functions on Sequences - distinct-values"
 syntax: "fn:distinct-values($arg as xdt:anyAtomicType*) as xdt:anyAtomicType*"
 tags: ["xquery","functions-on-sequences-distinct-values"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Removes duplicate values from the sequence specified by

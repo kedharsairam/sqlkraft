@@ -3,12 +3,8 @@ title: "Point"
 topic: "spatial-data"
 description: ""
 tags: ["spatial-data","point"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
-
-SQL analytics endpoint in Microsoft Fabric
-
-Warehouse in Microsoft Fabric
 
 database in Microsoft Fabric
 

@@ -4,7 +4,7 @@ title: "To Get Alert for Blocking"
 description: "diagnostic script for automation operations."
 category: "automation"
 tags: ["automation","blocking"]
-pubDate: "2025-03-15"
+pubDate: 2025-03-15
 ---
 
 ```sql

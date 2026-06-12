@@ -3,7 +3,7 @@ title: "srv_paraminfo"
 topic: "clr-integration"
 description: "Returns information about a parameter."
 tags: ["clr-integration","srv-paraminfo"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns information about a parameter. This function supersedes the following functions:

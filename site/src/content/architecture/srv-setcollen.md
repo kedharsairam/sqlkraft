@@ -3,7 +3,7 @@ title: "srv_setcollen"
 topic: "clr-integration"
 description: "Specifies the current data length in bytes of a variable-length column or a column that allows NULL values."
 tags: ["clr-integration","srv-setcollen"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Specifies the current data length in bytes of a variable-length column or a column that allows

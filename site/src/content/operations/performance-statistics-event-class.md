@@ -3,7 +3,7 @@ title: "Performance Statistics Event Class"
 topic: "event-classes"
 description: ""
 tags: ["event-classes","performance-statistics-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The Performance Statistics event class can be used to monitor the performance of queries,

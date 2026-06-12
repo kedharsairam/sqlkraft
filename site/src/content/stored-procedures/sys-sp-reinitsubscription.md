@@ -4,32 +4,32 @@ title: "sp_reinitsubscription"
 category: "general"
 description: "Marks the subscription for reinitialization. This stored procedure is executed at the Publisher ."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_reinitsubscription
-      [ [ @publication = ]
-      N
-      'publication'
-      ]
-      [ , [ @article = ]
-      N
-      'article'
-      ]
-      , [ @subscriber = ]
-      N
-      'subscriber'
-      [ , [ @destination_db = ]
-      N
-      'destination_db'
-      ]
-      [ , [ @for_schema_change = ] for_schema_change ]
-      [ , [ @publisher = ]
-      N
-      'publisher'
-      ]
-      [ , [ @ignore_distributor_failure = ] ignore_distributor_failure ]
-      [ , [ @invalidate_snapshot = ] invalidate_snapshot ]
-      [ ; ]
+              [ [ @publication = ]
+              N
+              'publication'
+              ]
+              [ , [ @article = ]
+              N
+              'article'
+              ]
+              , [ @subscriber = ]
+              N
+              'subscriber'
+              [ , [ @destination_db = ]
+              N
+              'destination_db'
+              ]
+              [ , [ @for_schema_change = ] for_schema_change ]
+              [ , [ @publisher = ]
+              N
+              'publisher'
+              ]
+              [ , [ @ignore_distributor_failure = ] ignore_distributor_failure ]
+              [ , [ @invalidate_snapshot = ] invalidate_snapshot ]
+              [ ; ]
 ---
 
 ## Description

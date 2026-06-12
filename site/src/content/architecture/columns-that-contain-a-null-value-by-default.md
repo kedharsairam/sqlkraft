@@ -3,7 +3,7 @@ title: "Columns that Contain a Null Value By Default"
 topic: "xml-data"
 description: "By default, a null value in a column maps to the absence of the attribute, node, or element."
 tags: ["xml-data","columns-that-contain-a-null-value-by-default"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 By default, a null value in a column maps to the absence of the attribute, node, or element. This

@@ -4,12 +4,12 @@ title: "sys.sp_cdc_get_captured_columns"
 category: "general"
 description: "Returns change data capture metadata information for the captured source columns tracked by the specified capture instance. Change data capture isn't available in every edition of SQL Server."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sys.sp_cdc_get_captured_columns
-      [ @capture_instance = ]
-      'capture_instance'
-      [ ; ]
+              [ @capture_instance = ]
+              'capture_instance'
+              [ ; ]
 ---
 
 ## Description

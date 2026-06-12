@@ -3,7 +3,7 @@ title: "FT:Crawl Started Event Class"
 topic: "event-classes"
 description: "The event class indicates that a full-text crawl (population) has started."
 tags: ["event-classes","ftcrawl-started-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 The

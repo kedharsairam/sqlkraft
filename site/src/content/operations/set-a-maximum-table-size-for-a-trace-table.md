@@ -3,7 +3,7 @@ title: "Set a Maximum Table Size for a Trace Table"
 topic: "profiler"
 description: "06/06/2025 This article describes how to set a maximum table size for trace tables by using SQL Server Profiler. 1."
 tags: ["profiler","set-a-maximum-table-size-for-a-trace-table"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article describes how to set a maximum table size for trace tables by using SQL Server

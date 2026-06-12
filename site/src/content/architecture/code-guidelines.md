@@ -3,7 +3,7 @@ title: "Code guidelines"
 topic: "query-processing"
 description: ""
 tags: ["query-processing","architecture"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 Bound sessions can be used to develop three-tier applications in which business logic is

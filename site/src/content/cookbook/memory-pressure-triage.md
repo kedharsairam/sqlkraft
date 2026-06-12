@@ -5,8 +5,7 @@ category: "performance"
 severity: "critical"
 description: "Structured approach to detecting and resolving memory pressure in SQL Server using buffer pool analysis, memory clerks, and wait statistics."
 tags: ["memory","buffer-pool","page-life-expectancy","performance"]
-relatedContent: ""
-pubDate: "2026-05-30"
+pubDate: 2026-05-30
 ---
 
 Memory pressure degrades SQL Server performance by forcing pages out of the buffer cache, increasing physical I/O, and blocking query compilation. Early detection using DMV-based threshold monitoring is critical.

@@ -3,7 +3,7 @@ title: "Encrypted databases"
 topic: "high-availability"
 description: "This article contains information about the using currently encrypted or recently decrypted databases with Always On availability groups in SQL Server"
 tags: ["high-availability","encrypted-databases"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 This article contains information about the using currently encrypted or recently decrypted

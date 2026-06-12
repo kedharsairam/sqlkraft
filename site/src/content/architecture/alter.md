@@ -3,7 +3,7 @@ title: "Alter"
 topic: "clr-integration"
 description: "Assemblies that are registered in SQL Server can be updated from a more recent version using the statement. To update an assembly, use the statement"
 tags: ["clr-integration","alter"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Assemblies that are registered in SQL Server can be updated from a more recent version using

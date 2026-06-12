@@ -3,7 +3,7 @@ title: "Broker:Connection Event Class"
 topic: "event-classes"
 description: "generates a event to report the status of a transport connection managed by Service Broker. Description The"
 tags: ["event-classes","brokerconnection-event-class"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 generates a

@@ -4,7 +4,7 @@ title: "Examples: Microsoft Fabric Data Warehouse"
 category: "statements"
 description: ""
 tags: ["tsql","statements"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## I. Query data as of a point in time

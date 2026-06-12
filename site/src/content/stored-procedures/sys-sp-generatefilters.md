@@ -4,12 +4,12 @@ title: "sp_generatefilters"
 category: "general"
 description: "Creates filters on foreign key tables when a specified table is replicated. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_generatefilters [ @publication = ]
-      N
-      'publication'
-      [ ; ]
+              N
+              'publication'
+              [ ; ]
 ---
 
 ## Description

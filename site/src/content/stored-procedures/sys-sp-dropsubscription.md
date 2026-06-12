@@ -4,34 +4,34 @@ title: "sp_dropsubscription"
 category: "general"
 description: "Drops subscriptions to a particular article, publication, or set of subscriptions on the Publisher. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 syntax: |
   sp_dropsubscription
-      [ [ @publication = ]
-      N
-      'publication'
-      ]
-      [ , [ @article = ]
-      N
-      'article'
-      ]
-      , [ @subscriber = ]
-      N
-      'subscriber'
-      [ , [ @destination_db = ]
-      N
-      'destination_db'
-      ]
-      [ , [ @ignore_distributor = ] ignore_distributor ]
-      [ , [ @reserved = ]
-      N
-      'reserved'
-      ]
-      [ , [ @publisher = ]
-      N
-      'publisher'
-      ]
-      [ ; ]
+              [ [ @publication = ]
+              N
+              'publication'
+              ]
+              [ , [ @article = ]
+              N
+              'article'
+              ]
+              , [ @subscriber = ]
+              N
+              'subscriber'
+              [ , [ @destination_db = ]
+              N
+              'destination_db'
+              ]
+              [ , [ @ignore_distributor = ] ignore_distributor ]
+              [ , [ @reserved = ]
+              N
+              'reserved'
+              ]
+              [ , [ @publisher = ]
+              N
+              'publisher'
+              ]
+              [ ; ]
 ---
 
 ## Description

@@ -5,7 +5,7 @@ category: "xquery"
 description: ""
 syntax: "AdventureWorks2022"
 tags: ["xquery","functions-on-sequences-id"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 Returns the sequence of element nodes with xs:ID values that match the values of one or more

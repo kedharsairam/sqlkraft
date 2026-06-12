@@ -3,7 +3,7 @@ title: "SqlDataRecord Object"
 topic: "clr-integration"
 description: "SqlDataRecord object In the .NET common language runtime (CLR), the object represents a single row of data, along with its related metadata. Manage"
 tags: ["clr-integration","sqldatarecord-object"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 SqlDataRecord object

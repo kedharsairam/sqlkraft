@@ -5,7 +5,7 @@ category: "baseline"
 severity: "low"
 description: "Occurs when waiting for a File Control Block replica operation — part of the database startup and recovery process. Rarely performance-relevant."
 tags: ["fcb","replica","startup"]
-pubDate: "2026-05-29"
+pubDate: 2026-05-29
 ---
 
 ## Overview

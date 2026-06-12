@@ -5,7 +5,7 @@ category: "xquery"
 description: "XQuery Language Reference: Path Expressions - Specifying Axis"
 syntax: "child::ProductDescription/child::Summary"
 tags: ["xquery","path-expressions-specifying-axis"]
-pubDate: "2025-12-01"
+pubDate: 2025-12-01
 ---
 
 An axis step in a path expression includes the following components:
