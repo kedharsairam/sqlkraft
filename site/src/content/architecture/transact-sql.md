@@ -98,9 +98,7 @@ Feature name
 
 function-calling sequence
 
-Replaced by
-
-.
+Replaced by.
 
 For example, replace
 
@@ -124,9 +122,7 @@ Replacement
 
 Feature name
 
-with
-
-.
+with.
 
 Three-part and four-part column
 
@@ -204,9 +200,7 @@ table_name.index_name
 
 ## syntax in
 
-## syntax in
-
-.
+## syntax in.
 
 with two-part
 

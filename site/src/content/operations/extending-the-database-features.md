@@ -29,4 +29,4 @@ Overview of Extensibility for Database Code Analysis Rules
 
 How to: Install and Manage Feature Extensions
 
-SQL Server Data Tools
+Data Tools

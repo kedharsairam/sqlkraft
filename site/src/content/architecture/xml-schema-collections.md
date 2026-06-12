@@ -35,8 +35,6 @@ Article
 
 10/17/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -111,9 +109,7 @@ You can use the intrinsic function XML_SCHEMA_NAMESPACE to retrieve the schema c
 
 that is stored in the database. For more information, see
 
-View a Stored XML Schema Collection
-
-.
+View a Stored XML Schema Collection.
 
 You can also use the XML schema collection to type XML variables, parameters, and columns.
 

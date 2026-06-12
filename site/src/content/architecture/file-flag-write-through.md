@@ -1,16 +1,16 @@
 ---
 title: "FILE_FLAG_WRITE_THROUGH"
 topic: "query-processing"
-description: "SQL Server data modification statements generate logical page writes."
+description: "data modification statements generate logical page writes."
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL Server data modification statements generate logical page writes. You can picture this
+data modification statements generate logical page writes. You can picture this
 
 stream of writes as going to two places: the log and the database itself. For performance reasons,
 
-SQL Server defers writes to the database through its own cache buffer system. The system only
+defers writes to the database through its own cache buffer system. The system only
 
 momentarily defers writes to the log until
 
@@ -24,7 +24,7 @@ write-ahead log
 
 (WAL).
 
-SQL Server maintains the
+maintains the
 
 atomicity, consistency, isolation, and durability (ACID) properties of
 
@@ -40,9 +40,7 @@ is an excellent way to describe WAL. The WAL used by SQL Server is known as
 
 ARIES (Algorithm for Recovery and Isolation Exploiting Semantics). For more information, see
 
-Manage accelerated database recovery
-
-.
+Manage accelerated database recovery.
 
 It's a specific and defined set of implementation steps necessary to ensure that data is stored and
 
@@ -62,7 +60,7 @@ the
 
 option when opened by SQL Server.
 
-SQL Server creates its database files using the
+creates its database files using the
 
 flag. This option instructs
 
@@ -70,9 +68,7 @@ the system to write through any intermediate cache and go directly to storage. T
 
 still cache write operations, but it can't lazily flush them. For more information, see
 
-CreateFileA
-
-.
+CreateFileA.
 
 The
 

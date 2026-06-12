@@ -35,8 +35,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -47,7 +45,7 @@ The
 
 event class occurs whenever a user changes their Microsoft
 
-SQL Server login password.
+login password.
 
 Description
 

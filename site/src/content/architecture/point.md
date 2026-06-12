@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -105,9 +103,7 @@ The following example creates a geometry Point instance representing the point
 
 with
 
-an SRID of
-
-.
+an SRID of.
 
 ```sql
 (3, 4)

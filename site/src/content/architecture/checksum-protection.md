@@ -20,9 +20,7 @@ Checksum protection is the default protection for databases created in SQL Serve
 
 and later versions. The page protection mechanism is specified at database creation time, and
 
-can be altered by using
-
-. You can determine the current page protection
+can be altered by using. You can determine the current page protection
 
 setting by querying the
 
@@ -64,9 +62,7 @@ detect all errors caused by disk hardware failures. For information on setting t
 
 detection, see
 
-ALTER DATABASE SET Options
-
-.
+ALTER DATABASE SET Options.
 
 Checksum protection, introduced in SQL Server 2005 (9.x), provides stronger data integrity
 

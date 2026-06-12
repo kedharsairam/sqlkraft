@@ -33,22 +33,22 @@ select suser_sname(transactionsid)
 
 --For Point in Time recovery mention STOPAT parameter with appropriate timeline (or) STOPBEFOREMARK with LSN Number.
 USE [master]
-RESTORE DATABASE [newdatabasename] FROM  DISK = N'path\filename.bak'
+RESTORE DATABASE [newdatabasename] FROM DISK = N'path\filename.bak'
 WITH
 MOVE N'mdffilename' TO N'newpath\filename.mdf',
 MOVE N'ldffilename' TO N'newpath\filename.ldf',
-NORECOVERY,  STATS = 5
+NORECOVERY, STATS = 5
 
-RESTORE DATABASE [newdatabasename] FROM  DISK = N'path\filename.bak' WITH NORECOVERY
+RESTORE DATABASE [newdatabasename] FROM DISK = N'path\filename.bak' WITH NORECOVERY
 
-RESTORE LOG [newdatabasename] FROM  DISK = N'path\filename.trn' WITH  NORECOVERY
+RESTORE LOG [newdatabasename] FROM DISK = N'path\filename.trn' WITH NORECOVERY
 
 --Restores to specific Time provided.
-RESTORE LOG [newdatabasename] FROM  DISK = N'path\filename.trn' WITH  RECOVERY,
+RESTORE LOG [newdatabasename] FROM DISK = N'path\filename.trn' WITH RECOVERY,
 STOPAT = N'Jul 10, 2017 07:06:06:136 AM'
 
 --Restores to specific LSN Number.
-RESTORE LOG [newdatabasename] FROM  DISK = N'path\filename.trn'
+RESTORE LOG [newdatabasename] FROM DISK = N'path\filename.trn'
 WITH STOPBEFOREMARK = 'lsn:0x00000020:00000161:0001'
 GO
 --Prefix 'lsn:0x' along with the LSN number for hexadecimal format.

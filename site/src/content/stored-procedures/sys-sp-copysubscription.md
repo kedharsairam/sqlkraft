@@ -2,7 +2,7 @@
 name: "sys.sp_copysubscription"
 title: "sp_copysubscription"
 category: "general"
-description: "Copies a subscription database that's pull subscriptions, but no push subscriptions. Only single file databases can be copied. This stored procedure is executed at the Subscriber on the Transact-SQL syntax conventions The string that specifies the complete path, including file name, to which a copy of the data file This feature will be removed in a future version of SQL Server."
+description: "Copies a subscription database that's pull subscriptions, but no push subscriptions. Only single file databases can be copied. This stored procedure is executed at the Subscriber on the The string that specifies the complete path, including file name, to which a copy of the data file This feature will be removed in a future version of SQL Server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -20,7 +20,7 @@ syntax: |
 
 ## Description
 
-Copies a subscription database that's pull subscriptions, but no push subscriptions. Only single file databases can be copied. This stored procedure is executed at the Subscriber on the Transact-SQL syntax conventions The string that specifies the complete path, including file name, to which a copy of the data file This feature will be removed in a future version of SQL Server. Avoid using this feature in
+Copies a subscription database that's pull subscriptions, but no push subscriptions. Only single file databases can be copied. This stored procedure is executed at the Subscriber on the The string that specifies the complete path, including file name, to which a copy of the data file This feature will be removed in a future version of SQL Server.
 
 ## Syntax
 

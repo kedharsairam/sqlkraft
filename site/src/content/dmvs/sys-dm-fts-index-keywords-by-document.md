@@ -20,6 +20,6 @@ Returns information about the document-level content of a full-text index associ
 
 ```sql
 sys.dm_fts_index_keywords_by_document (
-DB_ID('database_name'),     OBJECT_ID('table_name')
+DB_ID('database_name'), OBJECT_ID('table_name')
 )
 ```

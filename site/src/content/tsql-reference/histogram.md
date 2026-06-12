@@ -25,8 +25,6 @@ Columns
 
 Names of columns in the prefix for which All density and Average length are displayed.
 
-The following table describes the columns returned in the result set when the
-
 option is specified.
 
 ## Description
@@ -38,8 +36,6 @@ key value.
 Estimated number of rows whose column value falls within a histogram step,
 
 excluding the upper bound.
-
-Estimated number of rows whose column value equals the upper bound of the
 
 histogram step.
 
@@ -55,9 +51,7 @@ is greater than 0,
 
 is calculated by dividing
 
-by
-
-.
+by.
 
 When
 
@@ -81,9 +75,7 @@ density vector
 
 statistics blob isn't created, the date isn't available, and the
 
-column is
-
-. This is the
+column is. This is the
 
 case for filtered statistics for which the predicate doesn't return any rows, or for new empty
 

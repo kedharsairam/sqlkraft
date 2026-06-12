@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns the smallest number without a fractional part and that is not less than the value of its
@@ -58,9 +56,7 @@ If the input to the fn:floor, fn:ceiling, or fn:round functions is
 
 , it is implicitly
 
-cast to
-
-.
+cast to.
 
 Any other type generates a static error.
 

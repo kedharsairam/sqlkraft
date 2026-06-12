@@ -36,7 +36,7 @@ Server and no other applications. However, if a memory-intensive operation occur
 
 Server, however, other applications aren't likely to have a high-enough priority to preempt the
 
-SQL Server thread.
+thread.
 
 If you are running multiple instances of SQL Server on a computer, and turn on priority boost
 
@@ -52,9 +52,7 @@ Do not use fiber mode scheduling for routine operation. This can decrease perfor
 
 by inhibiting the regular benefits of context switching, and because some components of
 
-SQL Server cannot function correctly in fiber mode. For more information, see
-
-.
+cannot function correctly in fiber mode. For more information, see.
 
 ）
 

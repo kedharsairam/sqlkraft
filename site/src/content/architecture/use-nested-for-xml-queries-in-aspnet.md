@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -39,13 +37,11 @@ similar SELECT statement is shown in the article
 
 Generating Siblings by Using a Nested AUTO
 
-Mode Query
-
-. This example demonstrates one way to use nested FOR XML queries to generate
+Mode Query. This example demonstrates one way to use nested FOR XML queries to generate
 
 element-centric XML in SQL Server.
 
-This is the .aspx application. It executes the stored procedure and returns XML in the browser:
+This is the.aspx application. It executes the stored procedure and returns XML in the browser:
 
 ```sql
 CREATE

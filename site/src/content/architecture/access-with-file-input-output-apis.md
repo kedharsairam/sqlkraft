@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Describes how file system I/O works on a FileTable.
@@ -51,9 +49,7 @@ function to obtain the logical path for the file or directory. For more
 
 information, see
 
-Work with Directories and Paths in FileTables
-
-.
+Work with Directories and Paths in FileTables.
 
 2. Then the application uses this logical path to obtain a handle to the file or directory and
 
@@ -87,8 +83,4 @@ null.
 
 For files, the
 
-column contains
-
-. For directories, this column contains
-
-.
+column contains. For directories, this column contains.

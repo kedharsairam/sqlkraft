@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 7376 16 No Could not enforce the remote join hint for this query. 7377 16 No Cannot specify an index hint for a remote data source. 7380 16 No Table-valued parameters are not allowed in re
+Description 7376 16 No Could not enforce the remote join hint for this query. 7377 16 No Cannot specify an index hint for a remote data source.
 
 ## Severity
 

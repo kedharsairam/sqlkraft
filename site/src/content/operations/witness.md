@@ -27,17 +27,13 @@ Article
 
 12/14/2022
 
-Applies to:
-
 SQL Server
 
 To support automatic failover, a database mirroring session must be configured in high-safety
 
 mode and also possess a third server instance, known as the
 
-witness
-
-. The witness is an optional
+witness. The witness is an optional
 
 instance of SQL Server that enables the mirror server in a high-safety mode session to
 
@@ -65,6 +61,4 @@ data loss) is impossible. Therefore, for high-performance mode, we strongly reco
 
 that you always keep the witness set to OFF. For information about the impact of a witness
 
-on high-performance mode, see
-
-.
+on high-performance mode, see.

@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/26/2025
 
-Applies to:
-
 SQL Server
 
 To install a SQL Server failover cluster, you must create and configure a failover cluster instance
@@ -61,9 +59,7 @@ information on specific requirements for a SQL Server failover cluster, see
 
 Before
 
-installing failover clustering
-
-.
+installing failover clustering.
 
 2. Add or remove nodes from a failover cluster configuration without affecting the other
 
@@ -71,9 +67,7 @@ cluster nodes. For more information, see
 
 Add or remove nodes in a SQL Server failover
 
-cluster (Setup)
-
-.
+cluster (Setup).
 
 All nodes in a failover cluster must be of the same platform, either 32-bit or 64-bit,
 

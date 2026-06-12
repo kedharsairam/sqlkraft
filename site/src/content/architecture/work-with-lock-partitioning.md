@@ -10,7 +10,7 @@ Lock partitioning is enabled automatically on the Database Engine instances with
 
 of logical CPUs. When lock partitioning is enabled, an informational message is recorded in the
 
-SQL Server error log.
+error log.
 
 When acquiring locks on a partitioned resource:
 
@@ -66,9 +66,7 @@ Dynamic Management View
 
 provides the lock partition ID for a lock partitioned resource. For more information, see
 
-sys.dm_tran_locks (Transact-SQL)
-
-.
+sys.dm_tran_locks (Transact-SQL).
 
 Because more lock resources are acquired with lock partitioning, the likelihood of
 
@@ -82,9 +80,7 @@ partitioning is not common. As with all deadlocks, applications should follow be
 
 deadlock detection and resolution. For more information, see
 
-Handle deadlocks
-
-.
+Handle deadlocks.
 
 The following code examples illustrate lock partitioning. In the examples, two transactions are
 

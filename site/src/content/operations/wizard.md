@@ -31,8 +31,6 @@ Article
 
 06/25/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to use the
@@ -75,9 +73,7 @@ information, we strongly recommend that you read
 
 Prerequisites, Restrictions, and
 
-Recommendations for Always On Availability Groups (SQL Server)
-
-.
+Recommendations for Always On Availability Groups (SQL Server).
 
 If a server instance that you select to host an availability replica is running under a
 
@@ -95,8 +91,6 @@ certificates for endpoint authentication, and the wizard will be unable to creat
 
 Note
 
-For an introduction to availability groups, see
-
-.
+For an introduction to availability groups, see.
 
 Prerequisites, Restrictions, and Recommendations

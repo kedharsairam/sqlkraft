@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 5586 10 No The FILESTREAM feature is already configured to the specified level. No change has been made. 5588 16 No Access to FILESTREAM data is not supported under snapshot isolation leve
+Description 5586 10 No The FILESTREAM feature is already configured to the specified level. No change has been made.
 
 ## Severity
 

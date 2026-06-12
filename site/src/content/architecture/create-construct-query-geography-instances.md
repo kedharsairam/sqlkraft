@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -43,7 +41,7 @@ The geography spatial data type,
 
 , represents data in a round-earth coordinate
 
-system. This type is implemented as a .NET common language runtime (CLR) data type in SQL
+system. This type is implemented as a.NET common language runtime (CLR) data type in SQL
 
 Server. The SQL Server
 

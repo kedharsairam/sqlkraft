@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -57,9 +55,7 @@ check box.
 
 2. In the
 
-box, type a name for the trace, and then select
-
-.
+box, type a name for the trace, and then select.
 
 3. In the
 
@@ -79,9 +75,7 @@ list, select the owner for the trace.
 
 6. In the
 
-list, type or select the table name for the trace results. Select
-
-.
+list, type or select the table name for the trace results. Select.
 
 7. In the
 
@@ -91,4 +85,4 @@ check
 
 box to specify the maximum number of rows to save.
 
-SQL Server Profiler
+Profiler

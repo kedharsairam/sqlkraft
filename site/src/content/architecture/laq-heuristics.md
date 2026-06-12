@@ -42,9 +42,7 @@ thresholds. If both of these ratios fall below thresholds, LAQ is reenabled.
 
 LAQ feedback data is tracked at two levels:
 
-For a
-
-.
+For a.
 
 The database engine starts tracking LAQ feedback for a plan on the first occurrence of
 
@@ -76,9 +74,7 @@ columns are set to 4 and
 
 respectively.
 
-For a
-
-.
+For a.
 
 Feedback is aggregated for all statements that don't have query plan level feedback,
 

@@ -43,9 +43,7 @@ For example, you might want to create a custom rule that avoids using the WAITFO
 
 statement, as demonstrated in
 
-Author custom code analysis rules
-
-. To create custom database
+Author custom code analysis rules. To create custom database
 
 code analysis rules, you use the classes in the
 
@@ -65,17 +63,13 @@ according to how you configured them in your project. For more information, see
 
 How to:
 
-Enable and Disable Specific Rules for Static Analysis of Database Code
-
-. The Extension Manager
+Enable and Disable Specific Rules for Static Analysis of Database Code. The Extension Manager
 
 also loads any custom rule assemblies that you created and registered.
 
 A custom code analysis rule class inherits from
 
-SqlCodeAnalysisRule
-
-. The custom rule class can
+SqlCodeAnalysisRule. The custom rule class can
 
 access useful objects via its rule execution context. These objects include:
 

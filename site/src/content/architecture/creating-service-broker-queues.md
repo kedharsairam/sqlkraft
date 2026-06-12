@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,9 +37,7 @@ application requires persistent access to the exact messages sent and received. 
 
 information about message retention, see
 
-Message Retention
-
-.
+Message Retention.
 
 For applications that don't use internal activation, don't specify an activation clause on the
 
@@ -59,9 +55,7 @@ owned objects. Therefore, queue names follow SQL Server naming conventions. For 
 
 information about naming, see
 
-Naming Service Broker Objects
-
-.
+Naming Service Broker Objects.
 
 A queue can be associated with a stored procedure. SQL Server activates the stored procedure
 

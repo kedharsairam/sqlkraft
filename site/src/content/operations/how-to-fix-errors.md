@@ -31,9 +31,7 @@ table (
 
 ) in
 
-and select
-
-.
+and select.
 
 2. In the Columns Grid of the designer, right-click the
 

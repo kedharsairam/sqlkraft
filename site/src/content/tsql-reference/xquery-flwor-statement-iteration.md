@@ -12,8 +12,6 @@ pubDate: 2025-12-01
 
 09/29/2025
 
-Applies to:
-
 SQL Server
 
 XQuery defines the FLWOR iteration syntax. FLWOR is the acronym for
@@ -24,9 +22,7 @@ XQuery defines the FLWOR iteration syntax. FLWOR is the acronym for
 
 ,
 
-, and
-
-.
+, and.
 
 A FLWOR statement is made up of the following parts:
 

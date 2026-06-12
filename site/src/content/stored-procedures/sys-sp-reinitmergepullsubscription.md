@@ -2,7 +2,7 @@
 name: "sys.sp_reinitmergepullsubscription"
 title: "sp_reinitmergepullsubscription"
 category: "general"
-description: "Marks a merge pull subscription for reinitialization the next time the Merge Agent runs. This stored procedure is executed at the Subscriber in the subscription database. Transact-SQL syntax conventions The name of the Publisher database."
+description: "Marks a merge pull subscription for reinitialization the next time the Merge Agent runs. This stored procedure is executed at the Subscriber in the subscription database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -28,7 +28,7 @@ syntax: |
 
 ## Description
 
-Marks a merge pull subscription for reinitialization the next time the Merge Agent runs. This stored procedure is executed at the Subscriber in the subscription database. Transact-SQL syntax conventions The name of the Publisher database.
+Marks a merge pull subscription for reinitialization the next time the Merge Agent runs. This stored procedure is executed at the Subscriber in the subscription database.
 
 ## Syntax
 
@@ -55,4 +55,4 @@ N
 
 ## Permissions
 
-SQL Only members of the fixed server role or the fixed database role can execute . Reinitialize a Subscription Reinitialize Subscriptions System stored procedures (Transact-SQL) Related content
+SQL Only members of the fixed server role or the fixed database role can execute. Reinitialize a Subscription Reinitialize Subscriptions System stored procedures (Transact-SQL)

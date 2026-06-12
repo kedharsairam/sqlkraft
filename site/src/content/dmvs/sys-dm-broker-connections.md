@@ -16,7 +16,7 @@ syntax: |
 
 ## Description
 
-Returns a row for each Service Broker network connection. The following table provides more Identifier of the SQL Server Network Interface (SNI) connection used by this connection for TCP/IP communications. Current state of the connection. Possible Current state of the connection. Possible Date and time at which the connection was Date and time at which login for the Name of the Windows Authentication
+Returns a row for each Service Broker network connection. The following table provides more Identifier of the SQL Server Network Interface (SNI) connection used by this connection for TCP/IP communications.
 
 ## Syntax
 

@@ -1,14 +1,12 @@
 ---
 title: "Replication components fail after an upgrade"
 topic: "io-fundamentals"
-description: "SQL Server 2025 (17.x)"
+description: "2025 (17.x)"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 This article describes the breaking changes to features in the SQL Server Database Engine
 
@@ -16,15 +14,13 @@ introduced with SQL Server 2025 (17.x). These changes can break applications, sc
 
 functionalities that are based on earlier versions of SQL Server.
 
-SQL Server 2025 (17.x) includes changes to
+2025 (17.x) includes changes to
 
 encryption
 
 that introduce a breaking change to
 
-linked servers
-
-. These changes can break applications, scripts, or functionalities that are based
+linked servers. These changes can break applications, scripts, or functionalities that are based
 
 on earlier versions of SQL Server.
 
@@ -50,11 +46,9 @@ For information about how to connect securely to SQL Server 2025 (17.x) instance
 
 TDS
 
-8.0
+8.0.
 
-.
-
-SQL Server 2025 (17.x) includes changes to
+2025 (17.x) includes changes to
 
 encryption
 

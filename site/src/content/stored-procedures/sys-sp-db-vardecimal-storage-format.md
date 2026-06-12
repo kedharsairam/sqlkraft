@@ -19,7 +19,7 @@ syntax: |
 
 ## Description
 
-storage format state of a database or enables a database for storage format. In SQL Server 2008 (10.0.x) and later versions, user databases are always enabled. However, because storage format is deprecated. Enabling databases for the format is only necessary in SQL Server 2005 (9.x). The name of the database for which the storage format is to be changed. . If the database name is omitted, the format status of all the databases in the instance of SQL Server are returned.
+storage format state of a database or enables a database for storage format. In SQL Server 2008 (10.0.x) and later versions, user databases are always enabled. However, because storage format is deprecated. Enabling databases for the format is only necessary in SQL Server 2005 (9.x).
 
 ## Syntax
 

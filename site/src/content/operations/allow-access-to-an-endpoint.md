@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Using Windows Authentication for connecting the database mirroring endpoints of two
@@ -77,9 +75,7 @@ clause.
 
 For more information, see
 
-Create a Login
-
-.
+Create a Login.
 
 2. Also, to ensure that the login user has access to the endpoint, use the
 
@@ -93,17 +89,13 @@ permissions to the endpoint is unnecessary if the user is an Administrator.
 
 For more information, see
 
-Grant a Permission to a Principal
-
-.
+Grant a Permission to a Principal.
 
 ７
 
 Note
 
-Ensure that an endpoint exists for each of the server instances. For more information, see
-
-.
+Ensure that an endpoint exists for each of the server instances. For more information, see.
 
 ```cmd
 FROM WINDOWS

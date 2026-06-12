@@ -2,7 +2,7 @@
 name: "sys.sp_denylogin"
 title: "sp_denylogin"
 category: "general"
-description: "Prevents a Windows user or Windows group from connecting to an instance of SQL Server. Transact-SQL syntax conventions The name of a Windows user or group. , with no default. SQL permission to the server-level principal mapped to the specified Windows user or Windows group. If the server principal doesn't exist, it's created. The new principal is visible in the sys.server_principals This feature w"
+description: "Prevents a Windows user or Windows group from connecting to an instance of SQL Server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-Prevents a Windows user or Windows group from connecting to an instance of SQL Server. Transact-SQL syntax conventions The name of a Windows user or group. , with no default. SQL permission to the server-level principal mapped to the specified Windows user or Windows group. If the server principal doesn't exist, it's created. The new principal is visible in the sys.server_principals This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
+Prevents a Windows user or Windows group from connecting to an instance of SQL Server.
 
 ## Syntax
 
@@ -27,11 +27,7 @@ N
 
 ## Remarks
 
-Applies to:
-
 Prevents a Windows user or Windows group from connecting to an instance of SQL Server.
-
-Transact-SQL syntax conventions
 
 The name of a Windows user or group.
 

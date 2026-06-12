@@ -23,15 +23,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server in-process specific extensions
+in-process specific extensions
 
 Article
 
 •
 
 12/30/2024
-
-Applies to:
 
 SQL Server
 

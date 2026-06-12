@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article lists the server and database roles and mappings that the installation of Azure
@@ -47,9 +45,7 @@ mode (available in preview). For details, review
 
 Operate SQL Server enabled by Azure Arc
 
-with least privilege (preview)
-
-.
+with least privilege (preview).
 
 In addition, Azure extension for SQL Server revokes permissions for these roles when they're no
 
@@ -61,7 +57,7 @@ Server when it detects:
 
 A new SQL Server instance is installed on the host
 
-SQL Server instance is uninstalled from host
+instance is uninstalled from host
 
 An instance level feature is enabled or disabled or settings are updated
 

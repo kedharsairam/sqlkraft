@@ -46,8 +46,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Relational databases do not have a concept of sequence. For example, you cannot make a

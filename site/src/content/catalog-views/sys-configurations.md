@@ -17,7 +17,7 @@ syntax: |
 
 ## Description
 
-Summarize this article for me Returns a row for each server-wide configuration option value in the system. Unique ID for the configuration value. Name of the configuration option. Configured value for this option. Minimum value for the configuration option. Maximum value for the configuration option. Running value currently in effect for this option. Description of the configuration option. 1 = The variable that takes effect when the RECONFIGURE statement 1 = The variable is displayed only when the For a list of all server configuration options, see Server Configuration Options (SQL Server) The sys.configurations catalog view can be used to determine the config_value (the value column), the run_value (the value_in_use column), and whether the configuration option is dynamic (doesn't require a server engine restart or the is_dynamic column).
+Summarize this article for me Returns a row for each server-wide configuration option value in the system. Unique ID for the configuration value.
 
 ## Syntax
 
@@ -35,8 +35,6 @@ The following query can be used to determine if any configured values haven't be
 ## Remarks
 
 Summarize this article for me
-
-Applies to:
 
 Returns a row for each server-wide configuration option value in the system.
 
@@ -82,6 +80,4 @@ dynamic (doesn't require a server engine restart or the is_dynamic column).
 
 Expand table
 
-For database-level configuration options, see
-
-. To configure Soft-NUMA, see
+For database-level configuration options, see. To configure Soft-NUMA, see

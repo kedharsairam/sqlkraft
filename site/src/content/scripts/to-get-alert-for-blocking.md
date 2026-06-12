@@ -1,7 +1,7 @@
 ---
 name: "To Get Alert for Blocking"
 title: "To Get Alert for Blocking"
-description: "SQL Server diagnostic script for automation operations."
+description: "diagnostic script for automation operations."
 category: automation
 tags: ["automation", "blocking"]
 pubDate: 2025-03-15
@@ -11,7 +11,7 @@ pubDate: 2025-03-15
 USE [master]
 GO
 
-/****** Object:  StoredProcedure [dbo].[BlockingMonitor]    Script Date: 22-05-2023 04:48:32 PM ******/
+/****** Object: StoredProcedure [dbo].[BlockingMonitor] Script Date: 22-05-2023 04:48:32 PM ******/
 SET ANSI_NULLS ON
 GO
 
@@ -31,7 +31,7 @@ SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
 SET NOCOUNT ON
 
 /* Drop/Create our temp tables */
-If Object_Id('tempdb..#dbmail_profile') is not null
+If Object_Id('tempdb.#dbmail_profile') is not null
 Drop Table #dbmail_profile;
 
 Create Table #dbmail_profile (
@@ -41,7 +41,7 @@ accountid int NULL,
 accountname varchar(125) NULL,
 sequencenumber int NULL )
 
-If Object_Id('tempdb..#Blocking') is not null
+If Object_Id('tempdb.#Blocking') is not null
 Drop Table #Blocking
 
 Create table #Blocking (
@@ -118,7 +118,7 @@ Join sys.dm_exec_sessions BlockedSess ON (Waits.session_id = BlockedSess.session
 Cross Apply sys.dm_exec_sql_text(Blocking.most_recent_sql_handle) AS BlockingSQL
 Cross Apply sys.dm_exec_sql_text(Blocked.sql_handle) AS BlockedSQL
 Where
-Waits.wait_duration_ms / 1000 > 30  --Mentioned the time in seconds
+Waits.wait_duration_ms / 1000 > 30 --Mentioned the time in seconds
 Order By
 WaitInSeconds Desc;
 
@@ -131,7 +131,7 @@ SET @TableTail = '</tbody></table>';
 SET @TableHead = '<table>' +
 '<tr>' +
 '<td> <font style="font-family:Verdana; font-size:12pt; font-weight:bold; width:auto; float:left;"> '+@@servername+' </font> </td>' +
-'<td> <font style="font-family:Verdana; font-size:12pt; width:auto; float:left; padding-left:5px; ">If Blocking is there for more than 15 minutes and If It is select command  Drop an email to client and if no response then please kill the spid to release the blocking. Do not wait for confirmation on this. Apart from this If Any Follow SOP”” </font> </td>' +
+'<td> <font style="font-family:Verdana; font-size:12pt; width:auto; float:left; padding-left:5px; ">If Blocking is there for more than 15 minutes and If It is select command Drop an email to client and if no response then please kill the spid to release the blocking. Do not wait for confirmation on this. Apart from this If Any Follow SOP”” </font> </td>' +
 '</tr>' +
 '</table>' +
 '<br>' +

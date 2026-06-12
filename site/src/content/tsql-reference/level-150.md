@@ -39,9 +39,7 @@ default in compatibility level 160. For more
 
 information, see
 
-Cardinality estimation (CE) feedback
-
-.
+Cardinality estimation (CE) feedback.
 
 No automatic determination of the optimal
 
@@ -83,9 +81,7 @@ database. For more information, see
 
 Degree of
 
-parallelism (DOP) feedback
-
-.
+parallelism (DOP) feedback.
 
 This section describes new behaviors introduced with compatibility level 150.
 
@@ -123,9 +119,7 @@ consecutive executions. For more information,
 
 see
 
-row mode memory grant feedback
-
-.
+row mode memory grant feedback.
 
 Row-mode queries that request an excessive memory
 

@@ -33,8 +33,6 @@ Article
 
 03/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -79,11 +77,7 @@ files before and after the conversion.
 
 Similar to the SqlPackage command line tool, the DacpacVerify CLI (preview) is available as a
 
-dotnet tool
-
-. DacpacVerify can be installed on Windows, macOS, and Linux and requires the
-
-.NET SDK
+dotnet tool. DacpacVerify can be installed on Windows, macOS, and Linux and requires the.NET SDK
 
 to be installed on your machine. To install the DacpacVerify CLI, run the following
 
@@ -109,10 +103,5 @@ pre-deployment scripts
 
 post-deployment scripts
 
-```cmd
-.sqlproj
-.dacpac
-.dacpac
-.dacpac
-.dacpac
+```cmd.sqlproj.dacpac.dacpac.dacpac.dacpac
 ```

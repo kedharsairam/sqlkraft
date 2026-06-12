@@ -14,9 +14,7 @@ can be added after
 
 , such
 
-as
-
-.
+as.
 
 If a query within a transaction attempts to select a row that doesn't exist, issuing the query at a
 
@@ -32,17 +30,13 @@ because the name
 
 would be inserted between these two adjacent index entries. The
 
-mode key-range lock is placed on the index entry
-
-. This prevents any other
+mode key-range lock is placed on the index entry. This prevents any other
 
 transaction from inserting values, such as
 
 , between the index entries
 
-and
-
-.
+and.
 
 When deleting a row within a transaction, the range the row falls into doesn't have to be locked
 
@@ -56,9 +50,7 @@ statement:
 
 An exclusive (
 
-) lock is placed on the index entry corresponding to the name
-
-. Other
+) lock is placed on the index entry corresponding to the name. Other
 
 transactions can insert or delete values before or after the row with the value
 

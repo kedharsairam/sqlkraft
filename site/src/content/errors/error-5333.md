@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 5333 16 No The identifier '%.\*ls' cannot be bound. Only source columns and columns in the clause scope are allowed in the 'WHEN NOT MATCHED' clause of a MERGE statement. 5334 16 No The ide
+Description 5333 16 No The identifier '%.\*ls' cannot be bound. Only source columns and columns in the clause scope are allowed in the 'WHEN NOT MATCHED' clause of a MERGE statement.
 
 ## Severity
 

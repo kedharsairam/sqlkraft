@@ -2,7 +2,7 @@
 name: "sys.sp_lookupcustomresolver"
 title: "sp_lookupcustomresolver"
 category: "general"
-description: "Returns the information on a business logic handler or the class identifier (CLSID) value of a COM-based custom resolver component that is registered at the Distributor. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions Specifies the name of the custom business logic being unregistered. , with no default."
+description: "Returns the information on a business logic handler or the class identifier (CLSID) value of a COM-based custom resolver component that is registered at the Distributor. This stored procedure is executed at the Publisher on the publication database. Specifies the name of the custom business logic being unregistered. , with no default."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -36,7 +36,7 @@ syntax: |
 
 ## Description
 
-Returns the information on a business logic handler or the class identifier (CLSID) value of a COM-based custom resolver component that is registered at the Distributor. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions Specifies the name of the custom business logic being unregistered. , with no default. If the business logic being removed is a COM component, then
+Returns the information on a business logic handler or the class identifier (CLSID) value of a COM-based custom resolver component that is registered at the Distributor. This stored procedure is executed at the Publisher on the publication database. Specifies the name of the custom business logic being unregistered. , with no default.
 
 ## Syntax
 

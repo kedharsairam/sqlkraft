@@ -27,13 +27,11 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 You can create a database object inside SQL Server that is programmed in an assembly created
 
-in the .NET Framework common language runtime (CLR). Database objects that can use the
+in the.NET Framework common language runtime (CLR). Database objects that can use the
 
 rich programming model provided by the CLR include DML triggers, DDL triggers, stored
 
@@ -41,15 +39,13 @@ procedures, functions, aggregate functions, and types.
 
 Creating a CLR trigger (DML or DDL) in SQL Server involves the following steps:
 
-Define the trigger as a class in a .NET Framework-supported language. For more
+Define the trigger as a class in a.NET Framework-supported language. For more
 
 information about how to program triggers in the CLR, see
 
-CLR Triggers
+CLR Triggers. Then, compile
 
-. Then, compile
-
-the class to build an assembly in the .NET Framework using the appropriate language
+the class to build an assembly in the.NET Framework using the appropriate language
 
 compiler.
 
@@ -59,9 +55,7 @@ statement. For more
 
 information about assemblies in SQL Server, see
 
-Assemblies (Database Engine)
-
-.
+Assemblies (Database Engine).
 
 Create the trigger that references the registered assembly.
 
@@ -75,9 +69,7 @@ clr enabled
 
 server configuration option is enabled by using
 
-sp_configure
-
-.
+sp_configure.
 
 CREATE ASSEMBLY
 
@@ -97,9 +89,7 @@ database for all methods annotated with the
 
 attribute. For more information,
 
-see
-
-.
+see.
 
 ```sql
 CREATE ASSEMBLY

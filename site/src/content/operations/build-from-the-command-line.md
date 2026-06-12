@@ -63,12 +63,11 @@ Bash
 
 Starting with Microsoft.Build.Sql 2.0.0-preview.3, you can build SDK-style SQL projects from the
 
-command line using .NET Framework and msbuild. For SQLCLR objects, .NET Framework is
+command line using.NET Framework and msbuild. For SQLCLR objects,.NET Framework is
 
 required to build the SQL project.
 
 Bash
 
-```cmd
-.dacpac dotnet build dotnet build AdventureWorks/AdventureWorks.sqlproj msbuild AdventureWorks/AdventureWorks.sqlproj
+```cmd.dacpac dotnet build dotnet build AdventureWorks/AdventureWorks.sqlproj msbuild AdventureWorks/AdventureWorks.sqlproj
 ```

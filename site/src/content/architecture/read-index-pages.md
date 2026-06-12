@@ -14,9 +14,7 @@ intermediate index node mapping the leaf pages. For more information about the s
 
 pages in an index, see
 
-Clustered and nonclustered indexes
-
-.
+Clustered and nonclustered indexes.
 
 The storage engine uses the information in the intermediate index page above the leaf level to
 
@@ -70,9 +68,7 @@ prefetching isn't configurable in any edition. For more information about nonclu
 
 see
 
-Clustered and nonclustered indexes
-
-.
+Clustered and nonclustered indexes.
 
 `ABC`
 

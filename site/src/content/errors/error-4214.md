@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-, State: 1. <Datetime> Backup BACKUP failed to complete the command BACKUP LOG <db_name>. Check the backup application log for detailed messages. Perform a full database backup before you try to backu
+, State: 1. <Datetime> Backup BACKUP failed to complete the command BACKUP LOG <db_name>. Check the backup application log for detailed messages.
 
 ## Severity
 

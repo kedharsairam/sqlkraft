@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -35,7 +33,7 @@ Azure Synapse Analytics
 
 SQL database in Microsoft Fabric
 
-SQL Server Data Tools (SSDT)
+Data Tools (SSDT)
 
 is a set of development tooling for building SQL Server
 
@@ -49,21 +47,15 @@ capability extends to CI/CD pipelines, enabling you to automate the build and
 
 deployment of your database projects with the
 
-SqlPackage CLI
-
-.
+SqlPackage CLI.
 
 The release notes for SSDT and its components are available for
 
 Visual Studio 2017, 2019, 2022,
 
-and 2026
+and 2026. An overview of the core SSDT functionality is provided in the
 
-. An overview of the core SSDT functionality is provided in the
-
-SSDT Overview
-
-.
+SSDT Overview.
 
 SSDT is installed as a Visual Studio component, both for
 
@@ -73,9 +65,7 @@ and
 
 offline
 
-installation
-
-. Analysis Services, Integration Services, and Reporting Services projects are available
+installation. Analysis Services, Integration Services, and Reporting Services projects are available
 
 as separate extensions for each version.
 
@@ -85,8 +75,8 @@ Note
 
 SDK-style SQL projects in Visual Studio are available as part of the
 
-SQL Server Data Tools,
+Data Tools,
 
 feature for Visual Studio 2022, separate from the original SSDT. The
 
-SDK-style project format is based on the new SDK-style projects introduced in .NET Core
+SDK-style project format is based on the new SDK-style projects introduced in.NET Core

@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -63,9 +61,7 @@ can be started in several different ways. For more information about starting an
 
 that uses Service Broker, see
 
-Choose a startup strategy
-
-.
+Choose a startup strategy.
 
 However the application starts, the application begins a transaction and uses the
 

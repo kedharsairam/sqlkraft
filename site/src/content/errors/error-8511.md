@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 8511 16 Yes Unknown isolation level 0x%x requested from Microsoft Distributed Transaction Coordinator (MS DTC). 8512 20 Yes Microsoft Distributed Transaction Coordinator (MS DTC) commit tr
+Description 8511 16 Yes Unknown isolation level 0x%x requested from Microsoft Distributed Transaction Coordinator (MS DTC).
 
 ## Severity
 

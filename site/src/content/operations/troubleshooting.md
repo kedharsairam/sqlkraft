@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 10/21/2025
 
-Applies to:
-
 SQL Server
 
 This article provides information about the following issues:
@@ -39,9 +37,7 @@ Use extended stored procedures and COM objects
 
 The first diagnostic step is to run a fresh cluster validation check. For details on validation, see
 
-Create a Failover Cluster: Validate the Configuration
-
-. This can be completed without any
+Create a Failover Cluster: Validate the Configuration. This can be completed without any
 
 interruption of service as it doesn't affect any online cluster resources.
 
@@ -73,9 +69,7 @@ this prompt isn't displayed. This enables cluster validation with no downtime.
 
 is selected and then, under
 
-, select
-
-.
+, select.
 
 2. Follow the instructions in the wizard to specify the servers and the tests, and run the tests.
 

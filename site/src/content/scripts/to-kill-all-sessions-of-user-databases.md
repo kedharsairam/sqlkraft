@@ -1,7 +1,7 @@
 ---
 name: "To Kill all Sessions of User Databases"
 title: "To Kill all Sessions of User Databases"
-description: "SQL Server diagnostic script for database operations."
+description: "diagnostic script for database operations."
 category: database
 tags: ["database", "session", "user"]
 pubDate: 2025-03-15
@@ -13,14 +13,14 @@ SET @SQL = ''
 DECLARE @SessionID INT
 DECLARE spid_cursor CURSOR FOR
 SELECT spid
-FROM master..sysprocesses
+FROM master.sysprocesses
 WHERE DB_NAME(dbid) NOT IN ('master', 'tempdb', 'model', 'msdb', 'distribution') -- Exclude specified database names
 OPEN spid_cursor
 FETCH NEXT FROM spid_cursor INTO @SessionID
 WHILE @@FETCH_STATUS = 0
 BEGIN
-    SET @SQL = @SQL + 'KILL ' + CAST(@SessionID AS NVARCHAR(10)) + ';' + CHAR(13)
-    FETCH NEXT FROM spid_cursor INTO @SessionID
+ SET @SQL = @SQL + 'KILL ' + CAST(@SessionID AS NVARCHAR(10)) + ';' + CHAR(13)
+ FETCH NEXT FROM spid_cursor INTO @SessionID
 END
 CLOSE spid_cursor
 DEALLOCATE spid_cursor

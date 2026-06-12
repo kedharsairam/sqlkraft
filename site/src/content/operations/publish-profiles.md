@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -54,9 +52,7 @@ A publish profile is an XML file with the
 
 extension. The file contains properties
 
-and items that define deployment behavior in the XML path
-
-.
+and items that define deployment behavior in the XML path.
 
 A publish profile can include the following information:
 
@@ -78,9 +74,7 @@ The following example shows a publish profile that targets a local SQL Server in
 
 two deployment options and provides a value for one SQLCMD variable:
 
-```cmd
-.publish.xml
-.publish.xml
+```cmd.publish.xml.publish.xml
 /Project/PropertyGroup
 <?xml version="1.0" encoding="utf-8"?>
 <Project >

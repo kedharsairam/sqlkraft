@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 In SQL Server 2012 and 2014, if a database participating in an availability group on the primary
@@ -37,7 +35,7 @@ replica loses the ability to write transactions, it will not trigger a failover 
 
 synchronized and configured for automatic failover.
 
-SQL Server 2016 introduces a new optional behavior named
+2016 introduces a new optional behavior named
 
 enhanced database failover
 

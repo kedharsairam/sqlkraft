@@ -2,14 +2,12 @@
 name: "Multipart names"
 title: "Multipart names"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 SQL)
-
-Applies to:
 
 SQL Server
 
@@ -172,11 +170,11 @@ Displayed in code
 ```
 
 ```sql
-[ , ...n ]
+[ ,.n ]
 ```
 
 ```sql
-[ ...n ]
+[.n ]
 ```
 
 ```sql

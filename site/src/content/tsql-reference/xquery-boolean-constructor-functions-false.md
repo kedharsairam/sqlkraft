@@ -16,13 +16,9 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
-Returns the xs:boolean value False. This is equivalent to
-
-.
+Returns the xs:boolean value False. This is equivalent to.
 
 This topic provides XQuery examples against XML instances that are stored in various
 
@@ -32,9 +28,7 @@ columns in the AdventureWorks database.
 
 For a working sample, see
 
-true Function (XQuery)
-
-.
+true Function (XQuery).
 
 Boolean Constructor Functions (XQuery)
 

@@ -2,7 +2,7 @@
 name: "sys.sp_monitor"
 title: "sp_monitor"
 category: "general"
-description: "Displays statistics about SQL Server. Transact-SQL syntax conventions Number of elapsed seconds since Number of seconds that the server computer's CPU has done SQL Server work. Number of seconds that SQL Server spent doing input and output operations. Number of seconds that SQL Server was idle."
+description: "Displays statistics about SQL Server. Number of elapsed seconds since Number of seconds that the server computer's CPU has done SQL Server work. Number of seconds that SQL Server spent doing input and output operations. Number of seconds that SQL Server was idle."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -28,7 +28,7 @@ syntax: |
 
 ## Description
 
-Displays statistics about SQL Server. Transact-SQL syntax conventions Number of elapsed seconds since Number of seconds that the server computer's CPU has done SQL Server work. Number of seconds that SQL Server spent doing input and output operations. Number of seconds that SQL Server was idle.
+Displays statistics about SQL Server. Number of elapsed seconds since Number of seconds that the server computer's CPU has done SQL Server work. Number of seconds that SQL Server spent doing input and output operations. Number of seconds that SQL Server was idle.
 
 ## Syntax
 
@@ -37,16 +37,16 @@ USE master
 ;
 GO
 EXECUTE sp_monitor;
-last_run                   current_run                seconds
------------------------    -----------------------    ---------
-2024-05-01 15:27:51.287    2024-08-21 17:20:34.097    9683563 cpu_busy           io_busy         idle
----------------    -------------   --------------------
-14452(14451)-0%    2555(2554)-0%   4371742(4371629)-45%
-packets_received       packets_sent    packet_errors
-----------------       ------------    -------------
-18032(17993)           64572(64533)    0(0) total_read     total_write   total_errors    connections
------------    -----------   -------------   --------------
-1593(1593)     4687(4687)    0(0)            155625(155557)
+last_run current_run seconds
+----------------------- ----------------------- ---------
+2024-05-01 15:27:51.287 2024-08-21 17:20:34.097 9683563 cpu_busy io_busy idle
+--------------- ------------- --------------------
+14452(14451)-0% 2555(2554)-0% 4371742(4371629)-45%
+packets_received packets_sent packet_errors
+---------------- ------------ -------------
+18032(17993) 64572(64533) 0(0) total_read total_write total_errors connections
+----------- ----------- ------------- --------------
+1593(1593) 4687(4687) 0(0) 155625(155557)
 ```
 
 ## Examples
@@ -103,9 +103,9 @@ AS
 ### Example 6
 
 ```sql
-Today's Date and Time  Login Attempts
+Today's Date and Time Login Attempts
 ---------------------- --------------
-12/5/2006 10:32:45 AM  211023
+12/5/2006 10:32:45 AM 211023
 ```
 
 ### Example 7
@@ -135,9 +135,9 @@ AS
 'as of'
 ;
 I
-Idle microseconds  as of
+Idle microseconds as of
 ----------------- ----------------------
-8199934           12/5/2006 10:23:00 AM
+8199934 12/5/2006 10:23:00 AM
 ```
 
 ### Example 10
@@ -146,4 +146,4 @@ Idle microseconds  as of
 @@PACK_SENT
 ```
 
-_(... and 13 more examples)_
+_(. and 13 more examples)_

@@ -2,12 +2,10 @@
 name: "datetime2 description"
 title: "Datetime2 description"
 category: "data-types"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -131,9 +129,7 @@ fractional seconds. In Informatica, the fractional seconds are truncated when
 
 n
 
-is less than
-
-.
+is less than.
 
 Character length
 
@@ -219,9 +215,7 @@ sys.systypes
 
 or
 
-TYPEPROPERTY
-
-. Precision and scale are variable for
+TYPEPROPERTY. Precision and scale are variable for
 
 some date and time data types. To obtain the precision and scale for a column, see
 
@@ -233,9 +227,7 @@ COL_LENGTH
 
 , or
 
-sys.columns
-
-.
+sys.columns.
 
 1
 

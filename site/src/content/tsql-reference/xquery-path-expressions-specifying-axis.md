@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 An axis step in a path expression includes the following components:
@@ -32,9 +30,7 @@ Zero or more step qualifiers (optional)
 
 For more information, see
 
-Path Expressions (XQuery)
-
-.
+Path Expressions (XQuery).
 
 The XQuery implementation in SQL Server supports the following axis steps,
 

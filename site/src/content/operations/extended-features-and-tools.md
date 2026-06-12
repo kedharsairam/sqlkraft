@@ -27,8 +27,6 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -69,7 +67,7 @@ NuGets for Analysis Services
 
 Description
 
-SQL Server Backup to
+Backup to
 
 Windows Azure Tool
 

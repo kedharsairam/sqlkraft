@@ -2,7 +2,7 @@
 name: "sys.symmetric_keys"
 title: "sys.symmetric_keys"
 category: "compatibility"
-description: "Analytics Platform System (PDW) Returns one row for every symmetric key created with the CREATE SYMMETRIC KEY statement."
+description: "Returns one row for every symmetric key created with the CREATE SYMMETRIC KEY statement."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |
@@ -73,7 +73,7 @@ syntax: |
 
 ## Description
 
-Analytics Platform System (PDW) Returns one row for every symmetric key created with the CREATE SYMMETRIC KEY statement. Name of the key. Unique within the database. ID of the database principal who owns the key. ID of the key. Unique within the database. Description of the algorithm used with the key:
+Analytics Platform System (PDW) Returns one row for every symmetric key created with the CREATE SYMMETRIC KEY statement.
 
 ## Syntax
 

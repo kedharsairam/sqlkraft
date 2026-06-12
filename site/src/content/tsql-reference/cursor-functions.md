@@ -2,12 +2,10 @@
 name: "Cursor Functions"
 title: "Cursor Functions"
 category: "data-types"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -36,7 +34,5 @@ for more information about function
 determinism.
 
 Built-in Functions (Transact-SQL)
-
-Last updated on 11/18/2025
 
 See also

@@ -9,8 +9,8 @@ pubDate: 2026-05-29
 
 ## Description
 
-Returns one row for each registered cryptographic provider. Identification number of the cryptographic provider. Name of the cryptographic provider. Version of the provider in the format ' Path to DLL that implements the Extensible Key Management (EKM) Application Program Interface (API). Whether the provider is enabled on the server or not. view is visible to the public. Security Catalog Views (Transact-SQL)
+Returns one row for each registered cryptographic provider. Identification number of the cryptographic provider.
 
 ## Permissions
 
-Article • 02/28/2023 Applies to: SQL Server Azure SQL Database Azure SQL Managed Instance Returns one row for each registered cryptographic provider. Description Identification number of the cryptographic provider. Name of the cryptographic provider. Unique provider GUID. Version of the provider in the format ' aa.bb.cccc.dd '. Path to DLL that implements the Extensible Key Management (EKM) Application Program Interface (API). Whether the provider is enabled on the server or not. 0 = not enabled (default) 1 = enabled The view is visible to the public. Security Catalog Views (Transact-SQL) Encryption Hierarchy Extensible Key Management (EKM) CREATE CRYPTOGRAPHIC PROVIDER (Transact-SQL) ﾉ Expand table See Also
+Article • 02/28/2023 Returns one row for each registered cryptographic provider. Description Identification number of the cryptographic provider. Name of the cryptographic provider. Unique provider GUID. Version of the provider in the format ' aa.bb.cccc.dd '. Path to DLL that implements the Extensible Key Management (EKM) Application Program Interface (API). Whether the provider is enabled on the server or not. 0 = not enabled (default) 1 = enabled The view is visible to the public. Security Catalog Views (Transact-SQL) Encryption Hierarchy Extensible Key Management (EKM) CREATE CRYPTOGRAPHIC PROVIDER (Transact-SQL) ﾉ Expand table See Also

@@ -2,7 +2,7 @@
 name: "sys.sp_update_targetservergroup"
 title: "sp_update_targetservergroup"
 category: "general"
-description: "Changes the name of the specified target server group. Transact-SQL syntax conventions The name of the target server group. , with no default. The new name for the target server group. , with no default. To run this stored procedure, users must be granted the fixed server role."
+description: "Changes the name of the specified target server group."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -18,7 +18,7 @@ syntax: |
 
 ## Description
 
-Changes the name of the specified target server group. Transact-SQL syntax conventions The name of the target server group. , with no default. The new name for the target server group. , with no default. To run this stored procedure, users must be granted the fixed server role.
+Changes the name of the specified target server group.
 
 ## Syntax
 
@@ -35,11 +35,7 @@ N
 
 ## Remarks
 
-Applies to:
-
 Changes the name of the specified target server group.
-
-Transact-SQL syntax conventions
 
 The name of the target server group.
 

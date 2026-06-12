@@ -27,8 +27,6 @@ Article
 
 05/25/2023
 
-Applies to:
-
 SQL Server
 
 Starting in SQL Server 2016, database level health detection (DB_FAILOVER) option is available
@@ -43,9 +41,7 @@ detection include database in suspect mode, database is offline, database in rec
 
 recover). For more information see
 
-State column in sys.databases
-
-.
+State column in sys.databases.
 
 The database level health detection is enabled for the availability group as a whole, therefore
 
@@ -83,8 +79,6 @@ There are several easy ways to enable database level health detection setting:
 
 the Object Explorer window, right-click on the Always On High Availability node, and run
 
-the
-
-. Check the
+the. Check the
 
 checkbox on the Specify Name page. Then complete the rest of the pages in the wizard.

@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description %I64d, column %d: Data type 0x%02X (user-defined table type) timestamp column is required to be default. 8053 16 No The incoming tabular data stream (TDS) remote procedure call (RPC) proto
+Description %I64d, column %d: Data type 0x%02X (user-defined table type) timestamp column is required to be default.
 
 ## Severity
 

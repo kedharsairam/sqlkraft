@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns the number of items in the sequence that is currently being processed. Specifically, it

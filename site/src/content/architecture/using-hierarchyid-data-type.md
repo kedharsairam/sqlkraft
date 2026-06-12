@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -72,7 +70,5 @@ hierarchyid Data Type Method Reference
 Hierarchical Data (SQL Server)
 
 hierarchyid (Transact-SQL)
-
-Last updated on 11/18/2025
 
 `AdventureWorks2025`

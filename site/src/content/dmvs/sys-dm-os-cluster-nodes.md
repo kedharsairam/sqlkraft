@@ -12,7 +12,7 @@ syntax: |
 
 ## Description
 
-Analytics Platform System (PDW) Returns one row for each node in the failover cluster instance configuration. If the current instance is a failover clustered instance, it returns a list of nodes on which this failover cluster instance (formerly "virtual server") has been defined. If the current server instance is not a failover clustered instance, it returns an empty rowset. Name of a node in the SQL Server failover cluster instance (virtual
+Analytics Platform System (PDW) Returns one row for each node in the failover cluster instance configuration. If the current instance is a failover clustered instance, it returns a list of nodes on which this failover cluster instance (formerly "virtual server") has been defined. If the current server instance is not a failover clustered instance, it returns an empty rowset.
 
 ## Syntax
 

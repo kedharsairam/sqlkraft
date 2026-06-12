@@ -23,9 +23,7 @@ on
 
 , and
 
-on
-
-.
+on.
 
 A partitioned view on
 
@@ -43,9 +41,7 @@ Note
 
 The preferred method for partitioning data local to one server is through partitioned
 
-tables. For more information, see
-
-.
+tables. For more information, see.
 
 In the column list of the view definition, select all columns in the member tables.
 
@@ -55,9 +51,7 @@ are of the
 
 same type, including collations. It is not sufficient for the columns to be implicitly
 
-convertible types, as is generally the case for
-
-.
+convertible types, as is generally the case for.
 
 Also, at least one column (for example
 
@@ -179,8 +173,7 @@ FROM
 T
 2
 UNION
-ALL
-...
+ALL.
 SELECT
 <select_listn>
 FROM
@@ -202,12 +195,12 @@ select list
 ```
 
 ```sql
-T1, ...,
+T1,.,
 Tn
 ```
 
 ```sql
-C1, ..., Cn
+C1,., Cn
 ```
 
 ```sql
@@ -223,7 +216,7 @@ C1, ..., Cn
 ```
 
 ```sql
-C1, ..., Cn
+C1,., Cn
 ```
 
 ```sql
@@ -250,8 +243,7 @@ C
 [
 OR
 < simple_interval >
-OR
-...]
+OR.]
 < simple_interval >
 :: =
 < col >

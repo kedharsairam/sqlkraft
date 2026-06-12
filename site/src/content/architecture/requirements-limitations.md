@@ -31,8 +31,6 @@ Article
 
 04/15/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -63,7 +61,7 @@ attributes must fit into
 
 server.
 
-SQL Server rejects schemas that have an
+rejects schemas that have an
 
 particle
 
@@ -85,9 +83,7 @@ server. For more information, see
 
 Preprocess a Schema to Merge
 
-Included Schemas
-
-.
+Included Schemas.
 
 ,
 
@@ -101,17 +97,15 @@ references. XML schemas that contain these elements can't be
 
 registered.
 
-SQL Server doesn't support this element. For information about
+doesn't support this element. For information about
 
 another way to update schemas, see
 
-The <xsd:redefine> Element
-
-.
+The <xsd:redefine> Element.
 
 values
 
-SQL Server only supports millisecond precision for simple types
+only supports millisecond precision for simple types
 
 that have second components other than
 
@@ -119,9 +113,7 @@ and
 
 , and 100-nanosecond precision for
 
-and
-
-. SQL Server puts limitations on all recognized XSD
+and. SQL Server puts limitations on all recognized XSD
 
 simple type enumerations.
 

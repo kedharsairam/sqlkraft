@@ -29,8 +29,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 The Database Mirroring Monitor is part of the SQL Server Monitor, which is launched from SQL
@@ -47,9 +45,7 @@ to expand the server tree.
 
 3. Right-click the database, select
 
-, and then click
-
-.
+, and then click.
 
 4. In the
 
@@ -63,9 +59,7 @@ For more information about Database Mirroring Monitor, see
 
 Database Mirroring Monitor
 
-Overview
-
-.
+Overview.
 
 ７
 
@@ -73,9 +67,7 @@ Note
 
 Database Mirroring Monitor is not available in every edition of Microsoft SQL Server. For a
 
-list of features that are supported by the editions of SQL Server, see
-
-.
+list of features that are supported by the editions of SQL Server, see.
 
 ７
 
@@ -89,6 +81,4 @@ the other partner instance, those are used to connect. Otherwise the monitor
 
 attempts to connect using Windows Authentication. If you want to change the
 
-credentials used to connect to either server instance, click
-
-.
+credentials used to connect to either server instance, click.

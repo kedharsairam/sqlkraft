@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description once the connection is re-established. This is an informational message only. No user action is required. 8563 10 Yes An error occurred while trying to determine the state of the RPCSS ser
+Description once the connection is re-established. This is an informational message only. No user action is required.
 
 ## Severity
 

@@ -2,7 +2,7 @@
 name: "sys.sp_dropmergepullsubscription"
 title: "sp_dropmergepullsubscription"
 category: "general"
-description: "Drops a merge pull subscription. This stored procedure is executed at the Subscriber on the Transact-SQL syntax conventions to remove subscriptions to all publications."
+description: "Drops a merge pull subscription. This stored procedure is executed at the Subscriber on the to remove subscriptions to all publications."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -25,7 +25,7 @@ syntax: |
 
 ## Description
 
-Drops a merge pull subscription. This stored procedure is executed at the Subscriber on the Transact-SQL syntax conventions to remove subscriptions to all publications. The name of the Publisher database.
+Drops a merge pull subscription. This stored procedure is executed at the Subscriber on the to remove subscriptions to all publications.
 
 ## Syntax
 

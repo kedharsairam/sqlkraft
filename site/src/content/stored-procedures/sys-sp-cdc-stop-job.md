@@ -16,7 +16,7 @@ syntax: |
 
 ## Description
 
-Stops a change data capture cleanup or capture job for the current database. Transact-SQL syntax conventions can be used by an administrator to explicitly stop either the capture job
+Stops a change data capture cleanup or capture job for the current database.
 
 ## Syntax
 
@@ -31,7 +31,7 @@ N
 
 ## Permissions
 
-06/23/2025 Applies to: SQL Server Stops a change data capture cleanup or capture job for the current database. Transact-SQL syntax conventions syntaxsql Type of job to add. @job_type is with a default of . Valid inputs are and . (success) or (failure). None. can be used by an administrator to explicitly stop either the capture job or the cleanup job.
+06/23/2025 syntaxsql Type of job to add. @job_type is with a default of. Valid inputs are and. (success) or (failure). None. can be used by an administrator to explicitly stop either the capture job or the cleanup job.
 
 ## Examples
 

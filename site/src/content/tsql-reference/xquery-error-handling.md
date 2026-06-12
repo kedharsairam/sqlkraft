@@ -12,8 +12,6 @@ pubDate: 2025-12-01
 
 10/14/2025
 
-Applies to:
-
 SQL Server
 
 The W3C specification allows type errors to be raised statically or dynamically, and defines
@@ -48,9 +46,7 @@ Static errors are returned by using the Transact-SQL error mechanism. In SQL Ser
 
 type errors are returned statically. For more information, see
 
-XQuery and Static Typing
-
-.
+XQuery and Static Typing.
 
 In XQuery, most dynamic errors are mapped to an empty sequence ("()"). However, these are
 

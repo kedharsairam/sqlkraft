@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -55,7 +53,7 @@ version 1.1.0 and is compliant with SQL MM (ISO
 
 standard).
 
-SQL Server also supports the
+also supports the
 
 data type, which stores ellipsoidal (round-earth) data,
 
@@ -91,7 +89,7 @@ are indicated in blue.
 
 Tip
 
-SQL Server spatial tools is a Microsoft sponsored open-source collection of tools for use
+spatial tools is a Microsoft sponsored open-source collection of tools for use
 
 with the spatial types in SQL Server. This project provides a set of reusable functions which
 

@@ -112,13 +112,9 @@ isolation is in use, the transaction must
 
 have access to the latest version of the row. If the latest version is no longer visible, it's
 
-possible to receive
+possible to receive. For an example, see
 
-. For an example, see
-
-Work with snapshot isolation
-
-.
+Work with snapshot isolation.
 
 Exclusive (
 

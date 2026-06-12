@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -63,17 +61,14 @@ a SQLCMD script that calls each file in order.
 
 SQL project file sample and syntax
 
-```cmd
-.dacpac prep-db.sql populate-app-settings.sql
-...
+```cmd.dacpac prep-db.sql populate-app-settings.sql.
 <ItemGroup>
 <PreDeploy
 Include
 =
 "prep-db.sql"
 />
-</ItemGroup>
-...
+</ItemGroup>.
 <ItemGroup>
 <PostDeploy
 Include

@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 07/14/2025
 
-Applies to:
-
 SQL Server
 
 Returns all SQL Server Express LocalDB instances with the given version.

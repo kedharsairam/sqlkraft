@@ -31,17 +31,13 @@ Article
 
 03/26/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes the prerequisites and recommendations for setting up database mirroring.
 
 For an introduction to database mirroring, see
 
-Database Mirroring (SQL Server)
-
-.
+Database Mirroring (SQL Server).
 
 For a list of features supported by the editions of SQL Server on Windows, see:
 
@@ -61,9 +57,7 @@ information about the supported compatibility levels, see
 
 ALTER DATABASE Compatibility Level
 
-(Transact-SQL)
-
-.
+(Transact-SQL).
 
 For a mirroring session to be established, the partners and the witness, if any, must be
 
@@ -85,6 +79,4 @@ new development work, and plan to modify applications that currently use this fe
 
 Use Always On availability groups instead.
 
-Database Mirroring in SQL Server is a distinct technology from
-
-.
+Database Mirroring in SQL Server is a distinct technology from.

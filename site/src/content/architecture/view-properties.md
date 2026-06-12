@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -51,9 +49,7 @@ or on which the user was granted some permission. For more information, see
 
 Metadata
 
-Visibility Configuration
-
-.
+Visibility Configuration.
 
 1. Open the Table Designer for the table containing the foreign key you want to view, right-
 
@@ -77,13 +73,9 @@ by a primary key symbol in the row selector.
 
 , connect to an instance of Database Engine.
 
-2. On the Standard bar, select
+2. On the Standard bar, select.
 
-.
-
-3. Copy and paste the following example into the query window and select
-
-. The
+3. Copy and paste the following example into the query window and select. The
 
 example returns all foreign keys and their properties for the table
 

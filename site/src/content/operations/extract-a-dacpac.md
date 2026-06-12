@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -47,7 +45,7 @@ database users. The
 
 file can be used to deploy the database to another instance of
 
-SQL Server or Azure SQL Database or to register the database as a data-tier application (DAC)
+or Azure SQL Database or to register the database as a data-tier application (DAC)
 
 in the current instance.
 
@@ -73,23 +71,17 @@ and database scope
 
 permissions, and
 
-permissions on
-
-. Members of the
+permissions on. Members of the
 
 fixed server role who are also members of the database_owner fixed database
 
-role are eligible to extract a
-
-. Members of the
+role are eligible to extract a. Members of the
 
 fixed server role or the built-in
 
-SQL Server system administrator account named
+system administrator account named
 
-can also extract a
-
-.
+can also extract a.
 
 1. In
 
@@ -117,12 +109,7 @@ a.
 
 Introduction Page
 
-SQL Server Management Studio
+Management Studio
 
-```cmd
-.dacpac
-.dacpac
-.dacpac
-.dacpac
-.dacpac
+```cmd.dacpac.dacpac.dacpac.dacpac.dacpac
 ```

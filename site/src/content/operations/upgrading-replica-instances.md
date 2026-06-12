@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 08/15/2025
 
-Applies to:
-
 SQL Server
 
 When upgrading a SQL Server instance that hosts an Always On availability group (AG) to a
@@ -81,6 +79,4 @@ Upgrading the Windows operating system hosting the failover cluster isn't suppor
 
 operating systems before Windows Server 2012 R2. To upgrade a cluster node running on
 
-Windows Server 2012 R2, see
-
-.
+Windows Server 2012 R2, see.

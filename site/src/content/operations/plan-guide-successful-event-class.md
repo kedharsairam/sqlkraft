@@ -27,8 +27,6 @@ Article
 
 07/25/2023
 
-Applies to:
-
 SQL Server
 
 The Plan Guide Successful event class indicates that SQL Server successfully produced an

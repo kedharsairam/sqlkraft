@@ -10,7 +10,7 @@ syntax: "sys.dm_exec_sql_text(sql_handle | plan_handle)"
 
 ## Description
 
-Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Number of characters into the currently executing batch or stored procedure at occurs. Can be used together with the management function to retrieve the currently executing statement for the Size of the unparsed XML document in Size of the unparsed XML namespace document, in bytes. NULL if there is no namespace document. Number of OPENXML calls with this document handle. Number of rows returned by all previous OPENXML calls for this document handle. Milliseconds since the last OPENXML call. If OPENXML has not been called, returns milliseconds since the The lifetime of used to retrieve the SQL text that executed a call to BACKUP DATABASE Execution Related Dynamic Management Views and Functions (Transact-SQL)
+Number of characters into the currently executing batch or stored procedure at occurs.
 
 ## Syntax
 
@@ -26,9 +26,7 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-Returns the text of the SQL batch that is identified by the specified
-
-. This table-
+Returns the text of the SQL batch that is identified by the specified. This table-
 
 valued function replaces the system function
 
@@ -195,10 +193,6 @@ sys.dm_exec_procedure_stats (Transact-SQL)
 sys.dm_exec_trigger_stats (Transact-SQL)
 
 sys.dm_exec_cached_plans (Transact-SQL)
-
-Last updated on 11/18/2025
-
-Related content
 
 ## Examples
 

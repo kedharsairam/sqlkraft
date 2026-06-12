@@ -39,9 +39,7 @@ Against a database that has been set in emergency mode by using the
 
 statement.
 
-Against
-
-. In this case, a database snapshot can't be created because of internal
+Against. In this case, a database snapshot can't be created because of internal
 
 restrictions.
 
@@ -133,39 +131,19 @@ progress.
 
 ## Description
 
-The logical and physical consistency of the objects in the
-
 database is checked during this phase.
-
-Progress reported at the
 
 database page level.
 
 The progress reporting
 
-value is updated for each
-
-1000 database pages that
-
 are checked.
-
-Database repairs are performed during this phase if
 
 ,
 
-, or
-
-is specified, and there are object errors that must be
-
 repaired.
 
-Progress reported at the
-
 individual repair level.
-
-The counter is updated for
-
-each repair that is
 
 completed.
 
@@ -179,13 +157,7 @@ performs the same checks.
 
 Progress isn't reported
 
-Database repairs are performed during this phase if
-
 ,
-
-, or
-
-is specified, and there are allocation errors that must be
 
 repaired.
 
@@ -193,19 +165,11 @@ Progress isn't reported.
 
 Database system tables are checked during this phase.
 
-Progress reported at the
-
 database page level.
 
 The progress reporting
 
-value is updated for every
-
-Expand table
-
 #### Execution
-
-#### phase
 
 #### Progress reporting
 

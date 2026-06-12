@@ -33,8 +33,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -53,9 +51,7 @@ The WideWorldImportersDW database is used for data warehousing and analytical pr
 
 The transactional data about sales and purchases is generated in the WideWorldImporters
 
-database, and loaded into the WideWorldImportersDW database using a
-
-.
+database, and loaded into the WideWorldImportersDW database using a.
 
 The data in WideWorldImportersDW thus mirrors the data in WideWorldImporters, but the
 

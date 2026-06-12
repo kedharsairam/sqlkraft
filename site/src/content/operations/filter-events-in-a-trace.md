@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/05/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -65,9 +63,7 @@ grouped by event category. The remaining columns list the data columns that can 
 
 returned for each event class.
 
-2. Select
-
-.
+2. Select.
 
 The
 
@@ -79,9 +75,7 @@ operators that you can use to filter events in a trace.
 
 3. To apply a filter, select the comparison operator, and type a value to use for the filter.
 
-4. Select
-
-.
+4. Select.
 
 If you set filter conditions on the
 
@@ -91,9 +85,7 @@ data columns of the Events Selection
 
 tab, then make sure that:
 
-The date you enter matches this format:
-
-.
+The date you enter matches this format:.
 
 -OR-
 

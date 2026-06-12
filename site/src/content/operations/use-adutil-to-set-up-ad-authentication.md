@@ -19,23 +19,17 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
 
 This tutorial explains how to configure Windows Active Directory authentication for SQL Server
 
-on Linux using
-
-. For another method of configuring Active Directory authentication using
+on Linux using. For another method of configuring Active Directory authentication using
 
 , see
 
-Tutorial: Use Active Directory authentication with SQL Server on Linux
-
-.
+Tutorial: Use Active Directory authentication with SQL Server on Linux.
 
 This tutorial consists of the following tasks:
 
@@ -51,9 +45,7 @@ Make sure there's a forwarding host (A) entry added in Active Directory for the 
 
 address. In this tutorial, the IP address of
 
-host machine is
-
-. We add the forwarding
+host machine is. We add the forwarding
 
 host entry in Active Directory in the following example. The entry ensures that when users
 

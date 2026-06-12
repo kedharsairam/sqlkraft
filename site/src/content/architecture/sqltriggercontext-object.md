@@ -33,11 +33,9 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
-The .NET Framework common language runtime (CLR)
+The.NET Framework common language runtime (CLR)
 
 class provides
 
@@ -63,9 +61,7 @@ triggers
 
 and
 
-Microsoft.SqlServer.Server.SqlTriggerContext
-
-.
+Microsoft.SqlServer.Server.SqlTriggerContext.
 
 CLR triggers
 

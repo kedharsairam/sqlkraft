@@ -31,8 +31,6 @@ Article
 
 04/15/2024
 
-Applies to:
-
 SQL Server
 
 Defines the column name and source and destination data types for a specific column in a row.

@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 5241 10 No File ID %d of database ID %d cannot be shrunk as the target shrink size (%I64d KB) is greater than the actual file size (%I64d KB). 5242 16 No An inconsistency was detected duri
+Description 5241 10 No File ID %d of database ID %d cannot be shrunk as the target shrink size (%I64d KB) is greater than the actual file size (%I64d KB).
 
 ## Severity
 

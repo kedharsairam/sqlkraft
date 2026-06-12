@@ -28,13 +28,9 @@ backup.
 
 Identifies an application lock.
 
-is represented as
+is represented as.
 
-.
-
-For example,
-
-.
+For example,.
 
 Represents metadata
 
@@ -50,17 +46,13 @@ depends upon the subresource that
 
 has deadlocked. For example,
 
-## returns
-
-. For
+## returns. For
 
 more information about
 
 resources and subresources, see
 
-sys.dm_tran_locks
-
-.
+sys.dm_tran_locks.
 
 Represents a heap or B-tree
 
@@ -114,6 +106,6 @@ user_type_id = *integer_value*
 `HOBT`
 
 ```sql
-Deadlock encountered .... Printing deadlock information
+Deadlock encountered. Printing deadlock information
 Wait-for graph
 ```

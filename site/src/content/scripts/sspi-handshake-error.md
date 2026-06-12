@@ -31,7 +31,7 @@ pubDate: 2025-03-15
 
 --This may lead to authentication problems. Make sure that this computer is connected to the network. If the problem persists, please contact your domain administrator.}
 
---2) Cannot generate SSPI context:  We generally get this error when the client is trying a Kerberos authentication and that fails but it does not fall back to NTLM.
+--2) Cannot generate SSPI context: We generally get this error when the client is trying a Kerberos authentication and that fails but it does not fall back to NTLM.
 
 --Listing SPNs:-
 setspn -l KDSSG\SQLService

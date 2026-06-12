@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 As a failover cluster resource, there are external interactions between SQL Server, the Windows
@@ -57,9 +55,7 @@ directory for the generated cluster logs. For more information, see
 
 How to create the
 
-cluster.log in Windows Server 2008 Failover Clustering
-
-.
+cluster.log in Windows Server 2008 Failover Clustering.
 
 2. Use the
 
@@ -93,6 +89,5 @@ FailoverClusters
 Get-ClusterLog
 -TimeSpan
 15
--Destination
-.
+-Destination.
 ```

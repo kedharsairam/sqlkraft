@@ -30,9 +30,7 @@ For more information about the specific locking hints and their behaviors, see
 
 Table Hints
 
-(Transact-SQL)
-
-.
+(Transact-SQL).
 
 The Database Engine might have to acquire locks when reading metadata, even when processing
 
@@ -60,9 +58,7 @@ Locking hints aren't recommended for use when optimized locking is enabled. Whil
 
 and query hints are honored, they reduce the benefit of optimized locking. For more
 
-information, see
-
-.
+information, see.
 
 ７
 
@@ -93,8 +89,7 @@ READ UNCOMMITTED
 `SELECT`
 
 ```sql
-dateformat                   mdy datefirst                    7
-...                          ...
-Isolation level              repeatable read (14 row(s) affected)
+dateformat mdy datefirst 7.
+Isolation level repeatable read (14 row(s) affected)
 DBCC execution completed. If DBCC printed error messages, contact your system administrator.
 ```

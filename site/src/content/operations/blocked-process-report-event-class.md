@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -51,9 +49,7 @@ default, no blocked process reports are produced. For more information about set
 
 option, see
 
-blocked process threshold Server Configuration Option
-
-.
+blocked process threshold Server Configuration Option.
 
 For information about filtering the data returned by the
 
@@ -69,9 +65,7 @@ Set a Trace Filter (Transact-SQL)
 
 , or
 
-sp_trace_setfilter (Transact-SQL)
-
-.
+sp_trace_setfilter (Transact-SQL).
 
 Description
 
@@ -107,9 +101,7 @@ not populated for starting event classes, such as
 
 SQL:BatchStarting
 
-or
-
-.
+or.
 
 15
 

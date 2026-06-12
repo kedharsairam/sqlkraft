@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 SQL:FullTextQuery Event Class
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database

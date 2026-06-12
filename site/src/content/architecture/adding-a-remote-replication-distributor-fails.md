@@ -6,7 +6,7 @@ tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL Server 2025 (17.x) includes changes to
+2025 (17.x) includes changes to
 
 encryption
 
@@ -52,9 +52,7 @@ A remote distributor uses a linked server for communication between the publishe
 
 distributor. The secure default introduced in SQL Server 2025 (17.x) of the OLEDB 19 provider
 
-requires that
-
-.
+requires that.
 
 To resolve this issue, configure the distributor SQL Server instance to use a
 
@@ -64,9 +62,7 @@ certificate
 
 or a certificate from an
 
-internal certificate authority
-
-.
+internal certificate authority.
 
 Alternatively, you can choose the less secure option to override the secure default of the
 

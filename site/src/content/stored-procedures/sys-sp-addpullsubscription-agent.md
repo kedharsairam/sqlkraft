@@ -2,7 +2,7 @@
 name: "sys.sp_addpullsubscription_agent"
 title: "sp_addpullsubscription_agent"
 category: "general"
-description: "Adds a new scheduled agent job used to synchronize a pull subscription to a transactional publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions"
+description: "Adds a new scheduled agent job used to synchronize a pull subscription to a transactional publication. This stored procedure is executed at the Subscriber on the subscription database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -94,9 +94,7 @@ syntax: |
 
 ## Description
 
-Adds a new scheduled agent job used to synchronize a pull subscription to a transactional publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions
-
-## Syntax
+Adds a new scheduled agent job used to synchronize a pull subscription to a transactional publication. This stored procedure is executed at the Subscriber on the subscription database. ## Syntax
 
 ```sql
 sp_addpullsubscription_agent
@@ -187,4 +185,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . Create a Pull Subscription Subscribe to Publications sp_addpullsubscription (Transact-SQL) sp_change_subscription_properties (Transact-SQL) sp_droppullsubscription (Transact-SQL) sp_helppullsubscription (Transact-SQL) sp_helpsubscription_properties (Transact-SQL) Related content
+Only members of the fixed server role or fixed database role can execute. Create a Pull Subscription Subscribe to Publications sp_addpullsubscription (Transact-SQL) sp_change_subscription_properties (Transact-SQL) sp_droppullsubscription (Transact-SQL) sp_helppullsubscription (Transact-SQL) sp_helpsubscription_properties (Transact-SQL)

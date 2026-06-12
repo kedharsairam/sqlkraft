@@ -77,7 +77,7 @@ help analyze spinlock contention:
 ```sql
 /*
 This script is provided "AS IS" with no warranties, and confers no rights.
-Use:    This procedure will monitor for spinlocks with a high number of backoff events over a defined time period which would indicate that there is likely
+Use: This procedure will monitor for spinlocks with a high number of backoff events over a defined time period which would indicate that there is likely
 ```
 
 ```sql
@@ -151,12 +151,12 @@ ACTION(package0.callstack) WHERE type = 61 --LOCK_HASH
 ```
 
 ```sql
---or type = 144           --SOS_CACHESTORE
---or type = 8             --MUTEX
---or type = 53            --LOGCACHE_ACCESS
---or type = 41            --LOGFLUSHQ
---or type = 25            --SQL_MGR
---or type = 39            --XDESMGR
+--or type = 144 --SOS_CACHESTORE
+--or type = 8 --MUTEX
+--or type = 53 --LOGCACHE_ACCESS
+--or type = 41 --LOGFLUSHQ
+--or type = 25 --SQL_MGR
+--or type = 39 --XDESMGR
 ) ADD target package0.asynchronous_bucketizer (
 SET filtering_event_name = '
 sqlos.spinlock_backoff
@@ -289,8 +289,7 @@ Server
 Process
 ID is
 ', ''),
-'
-.
+'.
 ', '')))
 FROM @error_log
 WHERE TEXT LIKE ('

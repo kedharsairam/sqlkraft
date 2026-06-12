@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -93,13 +91,11 @@ that are executed to update a database to match the project.
 
 Visual Studio 2022 Community, Professional, or Enterprise
 
-SQL Server Data Tools (SSDT) installed in Visual Studio
+Data Tools (SSDT) installed in Visual Studio
 
 Graphical schema comparison isn't yet available in the SDK-style SQL projects preview in Visual
 
-Studio. Use Visual Studio Code or Visual Studio to compare schemas.
-
-.NET 8 SDK
+Studio. Use Visual Studio Code or Visual Studio to compare schemas.NET 8 SDK
 
 SQL Database Projects extension
 
@@ -107,6 +103,4 @@ Schema compare is available in Visual Studio, or through the
 
 MSSQL extension for Visual
 
-Studio Code
-
-.
+Studio Code.

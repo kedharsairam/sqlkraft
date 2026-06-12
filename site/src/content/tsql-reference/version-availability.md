@@ -17,39 +17,35 @@ the versions when the options are introduced in clustered columnstore and nonclu
 
 columnstore indexes:
 
-SQL Server 2016 (13.x)
+2016 (13.x)
 
-SQL Server 2016 (13.x)
+2016 (13.x)
 
-SQL Server 2016 (13.x)
+2016 (13.x)
 
-SQL Server 2016 (13.x)
+2016 (13.x)
 
-SQL Server 2019 (15.x)
+2019 (15.x)
 
-SQL Server 2017 (14.x)
+2017 (14.x)
 
 clause
 
 N/A
 
-SQL Server 2016 (13.x)
+2016 (13.x)
 
 clause
 
-SQL Server 2016 (13.x)
+2016 (13.x)
 
-SQL Server 2025 (17.x)
+2025 (17.x)
 
-All options are available in Azure SQL Database and Azure SQL Managed Instance
-
-.
+All options are available in Azure SQL Database and Azure SQL Managed Instance.
 
 For more detail on feature availability, see
 
-What's new in columnstore indexes
-
-.
+What's new in columnstore indexes.
 
 Expand table
 
@@ -86,7 +82,7 @@ ARCHIVE
 }
 [
 ON
-PARTITIONS ( { partition_number_expression | range } [ , ...n ] ) ]
+PARTITIONS ( { partition_number_expression | range } [ ,.n ] ) ]
 <on_option>
 ::=
 partition_scheme_name ( column_name )
@@ -96,7 +92,7 @@ partition_scheme_name ( column_name )
 <filter_expression>
 ::=
 column_name
-IN ( constant [ , ...n ]
+IN ( constant [ ,.n ]
 | column_name {
 IS
 |
@@ -115,7 +111,7 @@ ON
 { database_name.schema_name.table_name | schema_name.table_name | table_name
 }
 [
-ORDER ( column [ , ...n ] ) ]
+ORDER ( column [ ,.n ] ) ]
 [
 WITH (
 DROP

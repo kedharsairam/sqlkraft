@@ -2,7 +2,7 @@
 name: "sys.sp_browsesnapshotfolder"
 title: "sp_browsesnapshotfolder"
 category: "general"
-description: "Returns the complete path for the latest snapshot generated for a publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication that contains the article."
+description: "Returns the complete path for the latest snapshot generated for a publication. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -27,7 +27,7 @@ syntax: |
 
 ## Description
 
-Returns the complete path for the latest snapshot generated for a publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The name of the publication that contains the article. The name of the subscription database. Identified for informational purposes only. Not supported. Future compatibility is not
+Returns the complete path for the latest snapshot generated for a publication. This stored procedure is executed at the Publisher on the publication database.
 
 ## Syntax
 

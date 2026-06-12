@@ -23,15 +23,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server resource DLL health diagnostic
+resource DLL health diagnostic
 
 Article
 
 •
 
 11/25/2024
-
-Applies to:
 
 SQL Server
 
@@ -41,9 +39,7 @@ Windows Server Failover Clustering (WSFC) cluster uses a stored procedure in the
 
 instance called
 
-sp_server_diagnostics
-
-.
+sp_server_diagnostics.
 
 The SQL Server resource DLL maintains a dedicated open connection with the SQL Server
 
@@ -59,9 +55,7 @@ group resource. This stored procedure is the SQL Server 2012 and above instance 
 
 to the WSFC cluster, which is more granular and reliable than in SQL Server 2008 R2 or lower,
 
-where a periodic connection to the instance is made with the query
-
-. You
+where a periodic connection to the instance is made with the query. You
 
 can then control the conditions that trigger failovers by setting the availability group
 
@@ -83,7 +77,7 @@ logs, you may be able to determine the root cause of availability group resource
 
 failover event.
 
-To view a SQLDIAG log, drag the .xel file into SQL Server Management Studio.
+To view a SQLDIAG log, drag the.xel file into SQL Server Management Studio.
 
 ```cmd
 SELECT @@SERVERNAME

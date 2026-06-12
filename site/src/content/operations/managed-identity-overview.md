@@ -15,19 +15,15 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
+2025 (17.x)
 
-SQL Server 2025 (17.x)
-
-SQL Server 2025 (17.x) includes managed identity support for SQL Server on Windows. Use a
+2025 (17.x) includes managed identity support for SQL Server on Windows. Use a
 
 managed identity to interact with resources in Azure by using Microsoft Entra authentication.
 
-SQL Server 2025 (17.x) introduces support for
+2025 (17.x) introduces support for
 
-Microsoft Entra managed identities
-
-. Use
+Microsoft Entra managed identities. Use
 
 managed identities to authenticate to Azure services without needing to manage credentials.
 
@@ -51,9 +47,7 @@ For step-by-step setup instructions, see
 
 Set up managed identity for SQL Server enabled by
 
-Azure Arc
-
-.
+Azure Arc.
 
 When using managed identity with SQL Server enabled by Azure Arc, consider the following:
 
@@ -61,11 +55,9 @@ The managed identity is assigned at the Azure Arc server level.
 
 Only system-assigned managed identities are supported.
 
-SQL Server uses this Azure Arc server level managed identity as the
+uses this Azure Arc server level managed identity as the.
 
-.
-
-SQL Server can use this primary managed identity in either
+can use this primary managed identity in either
 
 and/or
 

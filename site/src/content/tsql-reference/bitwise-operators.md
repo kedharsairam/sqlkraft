@@ -2,7 +2,7 @@
 name: "Bitwise operators"
 title: "Bitwise operators"
 category: "data-types"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
@@ -10,8 +10,6 @@ pubDate: 2026-05-29
 Operator
 
 Bitwise math
-
-Applies to:
 
 SQL Server
 
@@ -41,19 +39,13 @@ Bitwise operators convert two integer values to binary bits, perform the
 
 , or operation on each bit, producing a result. Then converts the result to an integer.
 
-For example, the integer converts to binary
+For example, the integer converts to binary.
 
-.
-
-The integer converts to binary
-
-.
+The integer converts to binary.
 
 If bits at any position are both
 
-, the result is
-
-.
+, the result is.
 
 = 170
 
@@ -65,9 +57,7 @@ If bits at any position are both
 
 If either bit at any position is
 
-, the result is
-
-.
+, the result is.
 
 = 170
 

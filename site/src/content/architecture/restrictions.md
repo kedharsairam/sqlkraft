@@ -29,8 +29,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 This article discusses the restrictions associated with code executing in the SQL Server process
@@ -67,9 +65,7 @@ The
 
 method silently ignores the request.
 
-No other connection string keywords can be used when you use
-
-.
+No other connection string keywords can be used when you use.
 
 The
 

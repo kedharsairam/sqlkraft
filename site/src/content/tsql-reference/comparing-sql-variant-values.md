@@ -9,9 +9,7 @@ pubDate: 2026-05-29
 
 ODBC does not fully support
 
-sql_variant
-
-. Therefore, queries of sql_variant columns are returned as binary data when you use Microsoft OLE DB Provider for ODBC (MSDASQL). For example, a sql_variant column that contains the character string data 'PS2091' is returned as
+sql_variant. Therefore, queries of sql_variant columns are returned as binary data when you use Microsoft OLE DB Provider for ODBC (MSDASQL). For example, a sql_variant column that contains the character string data 'PS2091' is returned as
 0x505332303931.
 
 The

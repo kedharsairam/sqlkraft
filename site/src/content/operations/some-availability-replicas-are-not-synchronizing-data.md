@@ -35,8 +35,6 @@ Article
 
 01/14/2025
 
-Applies to:
-
 SQL Server
 
 : Availability Replicas Data Synchronization State

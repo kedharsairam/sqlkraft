@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-1. Terminate your backups and ensure previous backups for this database aren't overwritten or lost 2. Run a full DBCC CHECKB against the database for which the backup failed with . Don't use with 3. R
+1. Terminate your backups and ensure previous backups for this database aren't overwritten or lost 2. Run a full DBCC CHECKB against the database for which the backup failed with. Don't use with 3. R
 
 ## Severity
 

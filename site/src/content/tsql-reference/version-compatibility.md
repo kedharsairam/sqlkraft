@@ -47,10 +47,6 @@ The author created this article with assistance from AI.
 
 Learn more
 
-Last updated on 02/24/2026
-
 Expand table
 
 Expand table
-
-Related content

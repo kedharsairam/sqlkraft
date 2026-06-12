@@ -26,8 +26,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -38,9 +36,7 @@ This article describes how to create a new trace template by using SQL Server Pr
 
 menu, point to
 
-, and then select
-
-.
+, and then select.
 
 2. In the
 
@@ -60,9 +56,7 @@ the list.
 
 All events, data columns, and filters are initially set as specified in the selected template.
 
-5. Optionally, select
-
-.
+5. Optionally, select.
 
 6. On the
 
@@ -96,6 +90,4 @@ dialog box. Select
 
 to add the filter.
 
-8. Select
-
-.
+8. Select.

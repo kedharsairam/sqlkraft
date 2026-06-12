@@ -20,7 +20,7 @@ syntax: |
 
 ## Description
 
-This catalog view contains a row for each contract in the database. Name of the contract, unique within the database. Not NULLABLE. Identifier of the contract. Not NULLABLE. Identifier for the database principal that owns this contract. NULLABLE. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see
+This catalog view contains a row for each contract in the database.
 
 ## Syntax
 
@@ -39,4 +39,4 @@ local_service_name, remote_service_name;
 
 ## Permissions
 
-Article • 02/28/2023 Applies to: SQL Server This catalog view contains a row for each contract in the database. Description Name of the contract, unique within the database. Not NULLABLE. Identifier of the contract. Not NULLABLE. Identifier for the database principal that owns this contract. NULLABLE. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration . ﾉ Expand table ALTER BROKER PRIORITY (Transact-SQL) CREATE BROKER PRIORITY (Transact-SQL) DROP BROKER PRIORITY (Transact-SQL) sys.services (Transact-SQL) sys.service_contracts (Transact-SQL) See Also
+Article • 02/28/2023 Description Name of the contract, unique within the database. Not NULLABLE. Identifier of the contract. Not NULLABLE. Identifier for the database principal that owns this contract. NULLABLE. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration. ﾉ Expand table ALTER BROKER PRIORITY (Transact-SQL) CREATE BROKER PRIORITY (Transact-SQL) DROP BROKER PRIORITY (Transact-SQL) sys.services (Transact-SQL) sys.service_contracts (Transact-SQL) See Also

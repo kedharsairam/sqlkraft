@@ -21,8 +21,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 The context of an expression is the information that is used to analyze and evaluate it.
@@ -63,7 +61,7 @@ A set of predefined namespaces.
 
 ```sql
 declare @x xml set @x=''
-select @x.query('<a>  {"Hello"}  </a>,
-<b> {"Hello2"}  </b>')
+select @x.query('<a> {"Hello"} </a>,
+<b> {"Hello2"} </b>')
 <a>Hello</a><b>Hello2</b>
 ```

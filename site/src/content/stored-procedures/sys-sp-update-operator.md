@@ -2,7 +2,7 @@
 name: "sys.sp_update_operator"
 title: "sp_update_operator"
 category: "general"
-description: "Updates information about an operator (notification recipient) for use with alerts and jobs. Transact-SQL syntax conventions The name of the operator to modify. The new name for the operator. This name must be unique."
+description: "Updates information about an operator (notification recipient) for use with alerts and jobs."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -43,7 +43,7 @@ syntax: |
 
 ## Description
 
-Updates information about an operator (notification recipient) for use with alerts and jobs. Transact-SQL syntax conventions The name of the operator to modify. The new name for the operator. This name must be unique.
+Updates information about an operator (notification recipient) for use with alerts and jobs.
 
 ## Syntax
 

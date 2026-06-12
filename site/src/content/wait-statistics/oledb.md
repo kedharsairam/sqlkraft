@@ -15,11 +15,11 @@ Occurs when SQL Server is waiting on OLE DB calls to a linked server or remote d
 
 ## Key Metrics
 
-| Metric    | Description |
+| Metric | Description |
 | --------- | ----------- |
-| Wait Type | `OLEDB`     |
-| Category  | Latency     |
-| Severity  | HIGH        |
+| Wait Type | `OLEDB` |
+| Category | Latency |
+| Severity | HIGH |
 
 ## Troubleshooting
 
@@ -29,10 +29,10 @@ Use the following query to identify the top queries contributing to `OLEDB` wait
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'OLEDB'
 ORDER BY wait_time_ms DESC;

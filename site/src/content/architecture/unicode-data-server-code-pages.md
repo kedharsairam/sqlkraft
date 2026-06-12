@@ -29,8 +29,6 @@ Article
 
 08/29/2024
 
-Applies to:
-
 SQL Server
 
 The Extended Stored Procedure API is enabled for Unicode data; however, it isn't enabled for
@@ -49,9 +47,7 @@ default code page of an Extended Stored Procedure API server application is the 
 
 page of the computer on which the application is running, which can be obtained by calling
 
-with the field parameter set to
-
-.
+with the field parameter set to.
 
 If your Extended Stored Procedure API application is Unicode-enabled, you must convert your
 

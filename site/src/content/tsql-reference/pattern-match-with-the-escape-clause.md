@@ -11,9 +11,7 @@ objects that don't match the
 
 pattern.
 
-You may not always find the same names with a pattern such as
-
-. Instead of
+You may not always find the same names with a pattern such as. Instead of
 
 19 names, you may find only 14, with all the names that start with
 
@@ -71,13 +69,9 @@ database contains a column named comment that contains the text 30%. To search f
 
 rows that contain the string 30% anywhere in the comment column, specify a WHERE clause
 
-such as
+such as. If ESCAPE and the escape character aren't
 
-. If ESCAPE and the escape character aren't
-
-specified, the Database Engine returns any rows with the string
-
-.
+specified, the Database Engine returns any rows with the string.
 
 Expand table
 

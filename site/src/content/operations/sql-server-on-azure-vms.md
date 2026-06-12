@@ -18,9 +18,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server on Azure VM
+on Azure VM
 
 This article provides an overview of SQL Server on Azure Virtual Machines (VMs) on the
 
@@ -28,7 +26,7 @@ Windows platform.
 
 If you're new to SQL Server on Azure VMs, check out the
 
-SQL Server on Azure VM Overview
+on Azure VM Overview
 
 video from our in-depth
 
@@ -36,7 +34,7 @@ Azure SQL video series
 
 :
 
-SQL Server on Azure Virtual Machines
+on Azure Virtual Machines
 
 enables you to use full versions of SQL Server in the
 
@@ -52,9 +50,7 @@ around the world. They also
 
 offer various
 
-machine sizes
-
-. The virtual machine image gallery allows you to create a SQL
+machine sizes. The virtual machine image gallery allows you to create a SQL
 
 Server VM with the right version, edition, and operating system. This makes virtual machines a
 

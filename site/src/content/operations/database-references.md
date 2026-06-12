@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -57,6 +55,5 @@ development.
 
 Note
 
-```cmd
-.dacpac
+```cmd.dacpac
 ```

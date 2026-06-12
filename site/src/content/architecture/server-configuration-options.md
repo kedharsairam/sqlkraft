@@ -32,15 +32,13 @@ USER_ID
 
 These stored procedures return information that was correct in
 
-SQL Server 2000 (8.x). The output doesn't reflect changes to
+2000 (8.x). The output doesn't reflect changes to
 
 the permissions hierarchy implemented in SQL Server 2008.
 
 For more information, see
 
-## Permissions of Fixed Server Roles
-
-.
+## Permissions of Fixed Server Roles.
 
 ,
 

@@ -23,9 +23,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -33,7 +31,7 @@ Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics (serverless SQL pool only)
+(serverless SQL pool only)
 
 analytics endpoint in Microsoft Fabric
 
@@ -67,15 +65,11 @@ For more info about the
 
 option, see
 
-Format nested JSON output with PATH mode
-
-.
+Format nested JSON output with PATH mode.
 
 For an overview of both options, see
 
-Format query results as JSON with FOR JSON
-
-.
+Format query results as JSON with FOR JSON.
 
 A query that uses the
 
@@ -107,9 +101,7 @@ When a query references only one table, the results of the
 
 clause are similar to
 
-the results of
-
-. In this case,
+the results of. In this case,
 
 doesn't create nested objects. The
 

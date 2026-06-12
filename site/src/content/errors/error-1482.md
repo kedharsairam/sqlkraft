@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description column of the sys.database_mirroring catalog view. If they are connected, for information about why the partner could not provide a copy of the page, examine its error log entries from aro
+Description column of the sys.database_mirroring catalog view.
 
 ## Severity
 

@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -41,9 +39,7 @@ the change on your applications. For more information, see
 
 ALTER DATABASE compatibility
 
-level
-
-.
+level.
 
 The code samples in this article use the
 
@@ -65,15 +61,13 @@ permission on the database.
 
 To view or change the compatibility level of a database using
 
-SQL Server Management Studio
+Management Studio
 
 (SSMS)
 
 1. Connect to the appropriate server or instance hosting your database.
 
-2. Select the server name in
-
-.
+2. Select the server name in.
 
 3. Expand
 
@@ -83,9 +77,7 @@ expand
 
 and select a system database.
 
-4. Right-click the database, and then select
-
-.
+4. Right-click the database, and then select.
 
 The
 

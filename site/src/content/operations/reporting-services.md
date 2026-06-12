@@ -27,8 +27,6 @@ Article
 
 01/29/2024
 
-Applies to:
-
 SQL Server
 
 This article contains information about configuring Reporting Services to work with Always On
@@ -51,23 +49,19 @@ For general information on Always On availability groups, see
 
 Always On FAQ for SQL Server
 
-2012 (../../../sql-server/index.yml)
+2012 (./././sql-server/index.yml).
 
-.
-
-SQL Server Reporting Services and Power BI Report Server uses the .NET framework 4.0 and
+Reporting Services and Power BI Report Server uses the.NET framework 4.0 and
 
 supports Always On availability groups connection string properties for use with data sources.
 
 To use Always On availability groups with Reporting Services 2014, and earlier, you need to
 
-download and install a hotfix for .NET 3.5 SP1. The hotfix adds support to SQL Client for AG
+download and install a hotfix for.NET 3.5 SP1. The hotfix adds support to SQL Client for AG
 
 features and support of the connection string properties
 
-and
-
-. If the Hotfix isn't installed on each computer that hosts a report server,
+and. If the Hotfix isn't installed on each computer that hosts a report server,
 
 then users attempting to preview reports see an error message similar to the following, and the
 

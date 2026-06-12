@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 on Windows
@@ -43,12 +41,8 @@ diagram is also discussed in the article. To assist you with the decision points
 
 also review
 
-Plan and test the Database Engine upgrade plan
+Plan and test the Database Engine upgrade plan.
 
-.
-
-To download SQL Server, visit the
-
-.
+To download SQL Server, visit the.
 
 

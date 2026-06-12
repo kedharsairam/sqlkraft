@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -37,9 +35,7 @@ SQL database in Microsoft Fabric
 
 Creating a new SDK-style SQL project is a
 
-quick task
-
-. However, if you have existing SQL
+quick task. However, if you have existing SQL
 
 projects you can convert them to SDK-style SQL projects in place to take advantage of the new
 
@@ -79,9 +75,7 @@ the command line
 
 the SQL Database Projects extension in Visual Studio Code
 
-the SQL Server Data Tools, SDK-style (preview) in Visual Studio 2022
-
-.NET 8 SDK
+the SQL Server Data Tools, SDK-style (preview) in Visual Studio 2022.NET 8 SDK
 
 ７
 
@@ -95,8 +89,5 @@ can be used to understand the changes necessary to upgrade from an original SQL 
 
 to SDK-style SQL projects.
 
-```cmd
-.dacpac
-.dacpac
-.dacpac
+```cmd.dacpac.dacpac.dacpac
 ```

@@ -27,9 +27,7 @@ Article
 
 02/13/2023
 
-Applies to:
-
-SQL Server on Azure VM
+on Azure VM
 
 This tutorial explains how to configure a SQL Server Always On availability group with DH2i
 
@@ -37,15 +35,11 @@ DxEnterprise running on Linux-based Azure Virtual Machines (VMs).
 
 For more information about DxEnterprise, see
 
-DH2i DxEnterprise
-
-.
+DH2i DxEnterprise.
 
 In this tutorial, you'll set up a DxEnterprise cluster using
 
-DxAdmin Client UI
-
-. Optionally, you
+DxAdmin Client UI. Optionally, you
 
 can also set up the cluster using the
 
@@ -77,15 +71,13 @@ in the Azure portal
 
 article.
 
-Install .NET 3.1 on all the Linux-based VMs that are going to be part of the cluster. For
+Install.NET 3.1 on all the Linux-based VMs that are going to be part of the cluster. For
 
 instructions for the Linux operating system that you choose, see
 
-Install .NET on Linux
+Install.NET on Linux
 
-distributions
-
-.
+distributions.
 
 ７
 

@@ -1,20 +1,18 @@
 ---
 title: "Disk I/O"
 topic: "io-fundamentals"
-description: "SQL Server I/O fundamentals"
+description: "I/O fundamentals"
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL Server I/O fundamentals
-
-Applies to:
+I/O fundamentals
 
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server on Azure Virtual
+on Azure Virtual
 
 Machines
 
@@ -32,7 +30,7 @@ drives and solid-state storage. This article provides details on how to use driv
 
 to improve Database Engine I/O.
 
-SQL Server requires that systems support
+requires that systems support
 
 guaranteed delivery to stable media
 
@@ -40,9 +38,7 @@ as outlined under
 
 the
 
-SQL Server I/O Reliability Program Requirements
-
-.
+I/O Reliability Program Requirements.
 
 This requirement includes, but isn't limited to, the following conditions:
 

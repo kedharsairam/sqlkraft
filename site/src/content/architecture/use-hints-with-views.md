@@ -28,9 +28,7 @@ in the view
 
 when it is expanded. However, expanding the view also reveals the
 
-hint on
-
-. Because the
+hint on. Because the
 
 and
 
@@ -64,9 +62,7 @@ table hints.
 
 Hints can propagate through levels of nested views. For example, suppose a query applies the
 
-hint on a view
-
-. When
+hint on a view. When
 
 is expanded, we find that view
 
@@ -76,9 +72,7 @@ is part of its definition.
 
 hint on one of its base tables. But this table also inherits the
 
-hint from the query on view
-
-. Because the
+hint from the query on view. Because the
 
 and
 

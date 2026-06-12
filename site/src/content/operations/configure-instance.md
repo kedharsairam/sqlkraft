@@ -27,8 +27,6 @@ Article
 
 10/17/2024
 
-Applies to:
-
 SQL Server
 
 This article contains information about the requirements for configuring an instance of SQL
@@ -61,9 +59,7 @@ primary replica
 
 and one to four
 
-secondary replicas
-
-. The server instances that host the availability replicas for a given availability
+secondary replicas. The server instances that host the availability replicas for a given availability
 
 group must reside on different nodes of a single Windows Server Failover Clustering (WSFC)
 
@@ -91,6 +87,4 @@ restrictions for Windows Server Failover Clustering (WSFC) nodes and instances o
 
 Server, see
 
-Prerequisites, Restrictions, and Recommendations for Always On Availability
-
-.
+Prerequisites, Restrictions, and Recommendations for Always On Availability.

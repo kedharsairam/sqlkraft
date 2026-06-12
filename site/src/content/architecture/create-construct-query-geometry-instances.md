@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -69,13 +67,11 @@ OGC Specifications, Simple Feature Access Part 1 - Common Architecture
 
 OGC Specifications, Simple Feature Access Part 2 - SQL Options
 
-SQL Server supports a subset of the existing GML 3.1 standard which is defined in the following
+supports a subset of the existing GML 3.1 standard which is defined in the following
 
 schema:
 
-https://schemas.microsoft.com/sqlserver/profiles/gml/SpatialGML.xsd
-
-.
+https://schemas.microsoft.com/sqlserver/profiles/gml/SpatialGML.xsd.
 
 The
 

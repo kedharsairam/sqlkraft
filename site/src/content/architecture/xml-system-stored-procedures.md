@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -31,7 +29,7 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-SQL Server provides the following system stored procedures that are used together with
+provides the following system stored procedures that are used together with
 
 OPENXML:
 
@@ -41,9 +39,7 @@ sp_xml_removedocument (Transact-SQL)
 
 To write queries by using OPENXML, you must first create an internal representation of the
 
-XML document by calling
-
-. The stored procedure returns a handle to
+XML document by calling. The stored procedure returns a handle to
 
 the internal representation of the XML document. This handle is then passed to OPENXML.
 
@@ -58,8 +54,6 @@ system stored procedure.
 OPENXML (Transact-SQL)
 
 OPENXML (SQL Server)
-
-Last updated on 11/18/2025
 
 ７
 

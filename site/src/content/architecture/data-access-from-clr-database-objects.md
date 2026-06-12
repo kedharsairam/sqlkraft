@@ -27,19 +27,15 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 A common language runtime (CLR) routine might easily access data stored in the instance of
 
-SQL Server in which it runs, and data stored in remote instances. The user context in which the
+in which it runs, and data stored in remote instances. The user context in which the
 
 code runs, determines the particular data the routine can access. Access data from within a CLR
 
-database object by using the .NET Framework Data Provider for SQL Server, also referred to as
-
-. This is the same provider used by developers accessing SQL Server data from
+database object by using the.NET Framework Data Provider for SQL Server, also referred to as. This is the same provider used by developers accessing SQL Server data from
 
 managed client and middle-tier applications. Because of this, you can use your knowledge of
 
@@ -69,7 +65,7 @@ This section discusses only the specific functional and behavioral differences w
 
 data from within a CLR database object. For more information about the features and
 
-functionality of ADO.NET, see the ADO.NET documentation included in the .NET Framework
+functionality of ADO.NET, see the ADO.NET documentation included in the.NET Framework
 
 SDK.
 
@@ -87,7 +83,7 @@ credentials for connections
 
 Describes impersonating connections and connection credentials.
 
-SQL Server in-process specific
+in-process specific
 
 extensions to ADO.NET
 

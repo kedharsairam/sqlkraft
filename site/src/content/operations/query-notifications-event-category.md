@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -61,8 +59,6 @@ Reports information about the internal use of query templates.
 
 SQL Trace
 
-SQL Server Profiler
+Profiler
 
 sp_trace_setevent (Transact-SQL)
-
-Last updated on 11/18/2025

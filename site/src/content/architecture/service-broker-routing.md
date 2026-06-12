@@ -25,17 +25,13 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
 This article describes the details of how Service Broker routes messages. For an overview, see
 
-Routes
-
-.
+Routes.
 
 For most applications, a simple approach to Service Broker routing works well. In each
 
@@ -47,11 +43,9 @@ handling cases where an application needs more complex behavior. For examples th
 
 the routing process, see
 
-Service Broker routing examples
+Service Broker routing examples.
 
-.
-
-SQL Server maintains two distinct levels of routing information. Each database contains a local
+maintains two distinct levels of routing information. Each database contains a local
 
 routing table,
 
@@ -61,9 +55,7 @@ originate in the instance of SQL Server, SQL Server searches the routing table i
 
 that created the conversation. For conversations that arrive from outside the instance, SQL
 
-Server searches
-
-.
+Server searches.
 
 The basic matching process is identical whether the conversation originates in the instance or
 
@@ -103,9 +95,7 @@ Service Broker. For more information about acknowledgment messages, see
 
 Service Broker
 
-communication protocols
-
-.
+communication protocols.
 
 ```sql
 sys.routes msdb.sys.routes

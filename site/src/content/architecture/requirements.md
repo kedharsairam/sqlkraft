@@ -27,8 +27,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 A type in a common language runtime (CLR) assembly can be registered as a user-defined
@@ -47,9 +45,7 @@ aggregation, and the mechanism to accumulate new values, which consist of four m
 
 ,
 
-, and
-
-. Once you meet these requirements, you can take full
+, and. Once you meet these requirements, you can take full
 
 advantage of user-defined aggregates in SQL Server. This article provides more information
 
@@ -57,15 +53,11 @@ about how to create and work with user-defined aggregates. For an example, see
 
 Invoke CLR
 
-user-defined aggregate functions
-
-.
+user-defined aggregate functions.
 
 For more information, see
 
-SqlUserDefinedAggregateAttribute
-
-.
+SqlUserDefinedAggregateAttribute.
 
 The class registered as a user-defined aggregate should support the following instance
 

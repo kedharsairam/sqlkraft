@@ -44,9 +44,7 @@ Disallowing row locks forces one of the operations to wait, avoiding the deadloc
 
 about deadlocks, see the
 
-Deadlocks guide
-
-.
+Deadlocks guide.
 
 The granularity of locking used on an index can be set using the
 

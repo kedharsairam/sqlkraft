@@ -61,10 +61,9 @@ How to: Create Test Conditions for the SQL Server Unit Test Designer
 
 How to: Upgrade a Visual Studio 2010 Custom Test Condition from a Previous Release to
 
-SQL Server Data Tools
+Data Tools
 
-```cmd
-.dll
+```cmd.dll
 %ProgramFiles%\Microsoft Visual Studio
 <Version>\Common7\IDE\Extensions\Microsoft\SQLDB\TestConditions
 ```

@@ -27,8 +27,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -106,8 +104,6 @@ Add namespaces to queries using WITH XMLNAMESPACES
 SELECT (Transact-SQL)
 
 FOR XML (SQL Server)
-
-Last updated on 11/18/2025
 
 ```sql
 PATH

@@ -33,8 +33,6 @@ Article
 
 12/17/2024
 
-Applies to:
-
 SQL Server
 
 Returns information about a database connection.

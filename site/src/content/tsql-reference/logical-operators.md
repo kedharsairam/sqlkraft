@@ -2,7 +2,7 @@
 name: "Logical operators"
 title: "Logical operators"
 category: "operators"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -12,8 +12,6 @@ pubDate: 2026-05-29
 #### Operator
 
 #### Meaning
-
-Applies to:
 
 SQL Server
 
@@ -27,27 +25,19 @@ data type with a value of
 
 ,
 
-, or
-
-.
+, or.
 
 ALL
 
-if all of a set of comparisons are
-
-.
+if all of a set of comparisons are.
 
 AND
 
-if both Boolean expressions are
-
-.
+if both Boolean expressions are.
 
 ANY
 
-if any one of a set of comparisons are
-
-.
+if any one of a set of comparisons are.
 
 BETWEEN
 
@@ -71,54 +61,12 @@ Reverses the value of any other Boolean operator.
 
 OR
 
-if either Boolean expression is
-
-.
+if either Boolean expression is.
 
 SOME | ANY
 
-if some of a set of comparisons are
-
-.
+if some of a set of comparisons are.
 
 Operator precedence (Transact-SQL)
 
-Last updated on 01/30/2026
-
 Expand table
-
-Related content
-
-`TRUE`
-
-`FALSE`
-
-`UNKNOWN`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`
-
-`TRUE`

@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -47,9 +45,7 @@ you specify as further input. Each top-level command represents a category of ad
 
 functions. Within that category, each subcommand is an operation. This article shows you how to
 
-download and get started with
-
-.
+download and get started with.
 
 You should use Lightweight Directory Access Protocol over SSL (LDAPS) instead of Lightweight
 
@@ -57,9 +53,7 @@ Directory Access Protocol (LDAP). For more information about LDAP, see
 
 Lightweight Directory
 
-Access Protocol (LDAP)
-
-.
+Access Protocol (LDAP).
 
 You can set the
 
@@ -71,9 +65,7 @@ configuration file. When you run
 
 under the
 
-user, the configuration file is located at
-
-. This JSON code sample shows how to configure the
+user, the configuration file is located at. This JSON code sample shows how to configure the
 
 setting:
 
@@ -87,9 +79,7 @@ is limited to SQL Server use cases only. You can also use other utilities
 
 like
 
-to enable Active Directory authentication, as explained in
-
-.
+to enable Active Directory authentication, as explained in.
 
 ```cmd
 useLdaps true adutil.json mssql

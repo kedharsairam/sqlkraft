@@ -33,8 +33,6 @@ Article
 
 09/29/2024
 
-Applies to:
-
 SQL Server
 
 This article describes how to create or configure a single

@@ -37,7 +37,7 @@ Know about Authentication Types
 
 Encrypt and Trust Server Certificate
 
-SQL Server Object Explorer (SSOX)
+Object Explorer (SSOX)
 
 is a tool available in SSDT for Visual Studio. It allows you to
 
@@ -57,17 +57,13 @@ version of Visual Studio. Launch Visual Studio.
 
 menu and select
 
-SQL Server Object
-
-. Alternatively, you can use the shortcut
+Object. Alternatively, you can use the shortcut
 
 -
 
 (backslash) and then type
 
--
-
-.
+-.
 
 3.
 
@@ -81,9 +77,7 @@ icon to its top left) or right-click on the
 
 SQL Server
 
-node and choose
-
-.
+node and choose.
 
 4.
 

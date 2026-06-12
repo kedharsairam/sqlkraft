@@ -34,21 +34,21 @@ Data
 ```
 
 ```sql
-Frame Time Offset Source IP    Dest IP      Description
+Frame Time Offset Source IP Dest IP Description
 ----- ----------- ------------ ------------ ----------------------------------
 -----------------------------------------------------------------
-6132  116.5835288 10.10.10.10  10.10.10.120 TLS:TLS Rec Layer-1 HandShake:
+6132 116.5835288 10.10.10.10 10.10.10.120 TLS:TLS Rec Layer-1 HandShake:
 Client Hello. {TLS:328, SSLVersionSelector:327, TDS:326, TCP:325, IP
-6133  116.5845058 10.10.10.120 10.10.10.10  TLS:TLS Rec Layer-1 HandShake:
+6133 116.5845058 10.10.10.120 10.10.10.10 TLS:TLS Rec Layer-1 HandShake:
 Server Hello. Certificate. Server Hello Done. {TLS:328, SSLVersionSe
-6134  116.5864588 10.10.10.10  10.10.10.120 TLS:TLS Rec Layer-1 HandShake:
+6134 116.5864588 10.10.10.10 10.10.10.120 TLS:TLS Rec Layer-1 HandShake:
 Client Key Exchange.; TLS Rec Layer-2 Cipher Change Spec; TLS Rec La
-6135  116.5923178 10.10.10.120 10.10.10.10  TLS:TLS Rec Layer-1 Cipher Change
+6135 116.5923178 10.10.10.120 10.10.10.10 TLS:TLS Rec Layer-1 Cipher Change
 Spec; TLS Rec Layer-2 HandShake: Encrypted Handshake Message. {TL
 ```
 
 ```sql
-Frame Time Offset Source IP    Dest IP      Description
+Frame Time Offset Source IP Dest IP Description
 ----- ----------- ------------ ------------ ----------------------------------
 -----------------------------------------------------------------
 ```

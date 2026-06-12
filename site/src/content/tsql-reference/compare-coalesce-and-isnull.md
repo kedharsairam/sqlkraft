@@ -11,13 +11,9 @@ If all arguments are
 
 ,
 
-## returns
+## returns. At least one of the null values must be a
 
-. At least one of the null values must be a
-
-typed
-
-.
+typed.
 
 The
 
@@ -103,17 +99,13 @@ data type of value with the highest precedence.
 
 3. The NULLability of the result expression is different for
 
-and
-
-. The
+and. The
 
 return value is always considered not nullable (assuming the return value is a non-
 
 nullable one). By contrast,
 
-with non-null parameters is considered to be
-
-. So
+with non-null parameters is considered to be. So
 
 the expressions
 
@@ -164,7 +156,7 @@ parameters.
 `CASE`
 
 ```sql
-COALESCE(<expression1>, ...n)
+COALESCE(<expression1>,.n)
 ```
 
 `CASE`
@@ -194,8 +186,7 @@ SNAPSHOT ISOLATION
 ```sql
 CASE
 WHEN (expression1 IS NOT NULL) THEN expression1
-WHEN (expression2 IS NOT NULL) THEN expression2
-...
+WHEN (expression2 IS NOT NULL) THEN expression2.
 ELSE expressionN
 END
 SELECT

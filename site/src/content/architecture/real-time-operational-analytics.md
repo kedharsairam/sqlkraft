@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -31,7 +29,7 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-SQL Server 2016 (13.x) introduces real-time operational analytics, the ability to run both
+2016 (13.x) introduces real-time operational analytics, the ability to run both
 
 analytics and OLTP workloads on the same database tables at the same time. Besides running
 

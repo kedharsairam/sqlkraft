@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -49,9 +47,7 @@ and
 
 values must
 
-be defined with a data type of
-
-.
+be defined with a data type of.
 
 Temporal syntax works on tables or views that are
 

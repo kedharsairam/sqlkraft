@@ -27,13 +27,11 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 The common language runtime (CLR) provides a mechanism to annotate managed application
 
-programming interfaces (APIs) that are part of the .NET Framework. These attributes might be
+programming interfaces (APIs) that are part of the.NET Framework. These attributes might be
 
 of interest to a host of the CLR, such as SQL Server. Examples of such host protection attributes
 
@@ -59,9 +57,7 @@ three SQL Server permission sets:
 
 ,
 
-, or
-
-. One of these three
+, or. One of these three
 
 security levels is specified when the assembly is registered on the server, using the
 
@@ -81,9 +77,7 @@ Create an assembly
 
 and
 
-CLR integration programming model restrictions
-
-.
+CLR integration programming model restrictions.
 
 The
 

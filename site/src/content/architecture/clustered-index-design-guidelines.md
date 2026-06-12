@@ -66,21 +66,17 @@ narrow key, or a key where the total length of key columns is small, reduces the
 
 I/O, and memory overhead of all indexes on a table.
 
-To calculate the key length, add up the storage sizes for the data types used by key
+columns.
 
-columns. For more information, see
-
-Data type categories
-
-.
+Data type categories.
 
 If the clustered index isn't unique, a 4-byte internal uniqueifier column is automatically
 
-added to the index key to ensure uniqueness. Adding an existing unique column to the
+added to the index key to ensure uniqueness.
 
 clustered index key avoids the storage, I/O, and memory overhead of the uniqueifier
 
-column in all indexes on a table. Additionally, the query optimizer can generate more
+column in all indexes on a table.
 
 efficient query plans when an index is unique.
 
@@ -98,33 +94,27 @@ The clustered index key is a part of any nonclustered index. When a key column o
 
 clustered index is modified, a change must also be made in all nonclustered indexes,
 
-which adds a CPU, logging, I/O, and memory overhead. The overhead is avoided if the
+which adds a CPU, logging, I/O, and memory overhead.
 
 key columns of the clustered index are immutable.
 
 If a row has nullable columns, it must include an internal structure called a
 
-NULL block
-
 ,
 
-which adds 3-4 bytes of storage per row in an index. Making all columns of the
+which adds 3-4 bytes of storage per row in an index.
 
 clustered index not nullable avoids this overhead.
-
-Columns using variable width data types such as
 
 or
 
 use an additional
 
-2 bytes per value compared to fixed width data types. Using fixed width data types such
+2 bytes per value compared to fixed width data types.
 
 as
 
 avoids this overhead in all indexes on the table.
-
-Satisfying as many of these properties as possible when designing a clustered index makes not
 
 only the clustered index, but also all nonclustered indexes on the same table more efficient.
 
@@ -134,10 +124,6 @@ For example, a clustered index key with a single
 
 or
 
-not nullable column has all of
-
-these properties if it's populated by an
-
 clause or a default constraint using a
 
 sequence
@@ -146,19 +132,9 @@ and isn't updated after a row is inserted.
 
 Conversely, a clustered index key with a single
 
-column is wider because it uses
-
-16 bytes of storage instead of 4 bytes for
-
-and 8 bytes for
-
-, and doesn't satisfy the
-
 property unless the values are generated sequentially.
 
 ﾉ
-
-Expand table
 
 ### nvarchar(max)
 

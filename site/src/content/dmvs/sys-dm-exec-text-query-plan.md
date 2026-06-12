@@ -16,7 +16,7 @@ syntax: |
 
 ## Description
 
-Indicates whether the corresponding stored procedure is encrypted. 0 = not encrypted Column is not nullable. Contains the compile-time Showplan representation of the query execution plan that is specified with . The Showplan is in text format. One plan is generated for each batch that contains, for example ad hoc Transact-SQL statements, stored procedure calls, and user-defined function calls. Column is nullable. Under the following conditions, no Showplan output is returned in the returned table for If the query plan that is specified by using has been evicted from the plan column of the returned table is null. For example, this condition may occur if there is a time delay between when the plan handle was captured and when it was used with Some Transact-SQL statements are not cached, such as bulk operation statements or
+Indicates whether the corresponding stored procedure is encrypted. 0 = not encrypted Column is not nullable. Contains the compile-time Showplan representation of the query execution plan that is specified with. The Showplan is in text format. One plan is generated for each batch that contains, for example ad hoc Transact-SQL statements, stored procedure calls, and user-defined function calls. Column is nullable. Under the following conditions, no Showplan output is returned in the returned table for If the query plan that is specified by using has been evicted from the plan column of the returned table is null.
 
 ## Syntax
 
@@ -54,8 +54,6 @@ Individual statements within the batch can be specified.
 
 : SQL Server (SQL Server 2008 (10.0.x) and later), Azure SQL Database.
 
-Transact-SQL syntax conventions
-
 plan_handle
 
 Is a token that uniquely identifies a query execution plan for a batch that has executed and its
@@ -88,9 +86,7 @@ Contains the compile-time Showplan representation of the query
 
 execution plan that is specified with
 
-plan_handle
-
-. The Showplan is in text
+plan_handle. The Showplan is in text
 
 format. One plan is generated for each batch that contains, for example
 

@@ -82,9 +82,7 @@ transaction is rolled back later.
 
 Applications that use ODBC can set the
 
-attribute by using
-
-.
+attribute by using.
 
 When the isolation level is specified, the locking behavior for all queries and data manipulation
 
@@ -192,7 +190,7 @@ READ
 GO
 DBCC USEROPTIONS;
 GO
-Set Option                   Value
+Set Option Value
 ---------------------------- -------------------------------------------
-textsize                     2147483647 language                     us_english
+textsize 2147483647 language us_english
 ```

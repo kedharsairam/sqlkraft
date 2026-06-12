@@ -1,7 +1,7 @@
 ---
 name: "To Identify Who is Connected through SSMS (SQL"
 title: "To Identify Who is Connected through SSMS (SQL"
-description: "SQL Server diagnostic script for security-audit operations."
+description: "diagnostic script for security-audit operations."
 category: security-audit
 tags: ["security-audit"]
 pubDate: 2025-03-15
@@ -9,12 +9,12 @@ pubDate: 2025-03-15
 
 ```sql
 CREATE TABLE #sp_who2 (SPID INT,Status VARCHAR(255),
-      Login  VARCHAR(255),HostName  VARCHAR(255),
-      BlkBy  VARCHAR(255),DBName  VARCHAR(255),
-      Command VARCHAR(255),CPUTime INT,
-      DiskIO INT,LastBatch VARCHAR(255),
-      ProgramName VARCHAR(255),SPID2 INT,
-      REQUESTID INT)
+ Login VARCHAR(255),HostName VARCHAR(255),
+ BlkBy VARCHAR(255),DBName VARCHAR(255),
+ Command VARCHAR(255),CPUTime INT,
+ DiskIO INT,LastBatch VARCHAR(255),
+ ProgramName VARCHAR(255),SPID2 INT,
+ REQUESTID INT)
 Insert into #sp_who2 EXEC sp_who2
 --Filter the results
 Select * FROM #sp_who2 ---- filter the results by using where condition.

@@ -55,11 +55,9 @@ A mini-dump file (
 
 directory whenever
 
-detects a corruption error. When the
+detects a corruption error.
 
 Feature Usage
-
-data collection and
 
 Error
 
@@ -69,27 +67,19 @@ features are enabled for the instance of SQL Server, the file is automatically
 
 forwarded to Microsoft. The collected data is used to improve SQL Server functionality.
 
-The dump file contains the results of the
-
 command and additional diagnostic
 
-output. The file has restricted discretionary access-control lists (DACLs). Access is limited to the
+output. The file has restricted discretionary access-control lists (DACLs).
 
-SQL Server service account and members of the sysadmin role. By default, the sysadmin role
+service account and members of the sysadmin role.
 
 ７
 
 Note
 
-This feature is not available in every edition of SQL Server. For more information, see
+This feature is not available in every edition of SQL Server.
 
-parallel consistency check in the
-
-section of
-
-.
-
-Expand table
+section of.
 
 ```sql
 DBCC CHECKTABLE

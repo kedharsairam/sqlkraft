@@ -65,9 +65,7 @@ Warning
 
 You can experience rounding errors through truncation, when storing monetary values as
 
-and
-
-. Avoid using this data type if your money or currency values are
+and. Avoid using this data type if your money or currency values are
 
 used in calculations. Instead, use the
 
@@ -86,42 +84,3 @@ DECLARE @local_variable (Transact-SQL)
 SET @local_variable (Transact-SQL)
 
 sys.types (Transact-SQL)
-
-Last updated on 11/18/2025
-
-Related content
-
-`FFE5`
-
-`FFE6`
-
-```sql
-'
-```
-
-```sql
-4
-```
-
-```sql
-DECLARE
-@mymoney_sm SMALLMONEY = 3148.29,
-@mymoney MONEY = 3148.29;
-SELECT
-CAST (@mymoney_sm
-AS
-VARCHAR (20))
-AS
-'SM_MONEY VARCHAR(20)'
-,
-CAST (@mymoney
-AS
-DECIMAL
-)
-AS
-'MONEY DECIMAL'
-;
-SM_MONEY VARCHAR(20)           MONEY DECIMAL
------------------------------- ----------------------
-3148.29                        3148
-```

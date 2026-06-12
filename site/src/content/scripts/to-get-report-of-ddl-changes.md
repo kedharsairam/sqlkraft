@@ -1,7 +1,7 @@
 ---
 name: "To Get Report of DDL Changes"
 title: "To Get Report of DDL Changes"
-description: "SQL Server diagnostic script for automation operations."
+description: "diagnostic script for automation operations."
 category: automation
 tags: ["automation"]
 pubDate: 2025-03-15
@@ -24,18 +24,18 @@ N'<tr style="text-align: left;">
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: auto;">New Tables Created</th>
 </tr>' +
 CAST((
-    SELECT
-        Currents.TableName AS 'td'
-    FROM (SELECT table_name AS TableName
-         FROM information_schema.tables
-         WHERE table_type = 'BASE TABLE') AS Currents
-    LEFT JOIN
-        TableStructureSnapshot AS Snapshots
-    ON
-        Currents.TableName = Snapshots.TableName
-    WHERE
-        Snapshots.TableName IS NULL
-    FOR XML PATH('tr'), TYPE
+ SELECT
+ Currents.TableName AS 'td'
+ FROM (SELECT table_name AS TableName
+ FROM information_schema.tables
+ WHERE table_type = 'BASE TABLE') AS Currents
+ LEFT JOIN
+ TableStructureSnapshot AS Snapshots
+ ON
+ Currents.TableName = Snapshots.TableName
+ WHERE
+ Snapshots.TableName IS NULL
+ FOR XML PATH('tr'), TYPE
 ) AS NVARCHAR(MAX) ) +
 N'</table>';
 
@@ -47,10 +47,10 @@ N'<tr style="text-align: left;">
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">New Tables Count</th>
 </tr>' +
 CAST((
-    SELECT
-        COUNT(*) AS 'td'
-    FROM information_schema.tables
-    FOR XML PATH('tr'), TYPE
+ SELECT
+ COUNT(*) AS 'td'
+ FROM information_schema.tables
+ FOR XML PATH('tr'), TYPE
 ) AS NVARCHAR(MAX) ) +
 N'</table>';
 
@@ -62,49 +62,49 @@ N'<tr style="text-align: left;">
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">Missing Tables</th>
 </tr>' +
 CAST((
-    SELECT
-      DISTINCT
-        Snapshots.TableName, ''
-    FROM
-        TableStructureSnapshot AS Snapshots
-    LEFT JOIN information_schema.tables AS Currents
-    ON
-        Snapshots.TableName = Currents.table_name
-    WHERE
-        Currents.table_name IS NULL
-    FOR XML PATH('tr'), TYPE
+ SELECT
+ DISTINCT
+ Snapshots.TableName, ''
+ FROM
+ TableStructureSnapshot AS Snapshots
+ LEFT JOIN information_schema.tables AS Currents
+ ON
+ Snapshots.TableName = Currents.table_name
+ WHERE
+ Currents.table_name IS NULL
+ FOR XML PATH('tr'), TYPE
 ) AS NVARCHAR(MAX) ) +
 N'</table>';
 
 -- Create a temporary table for column comparison results
-IF OBJECT_ID('tempdb..#ComparisonResults') IS NOT NULL
-    DROP TABLE #ComparisonResults;
+IF OBJECT_ID('tempdb.#ComparisonResults') IS NOT NULL
+ DROP TABLE #ComparisonResults;
 
 CREATE TABLE #ComparisonResults (
-    TableName NVARCHAR(255),
-    ColumnName NVARCHAR(255),
-    DataType NVARCHAR(255),
-    IsNullable NVARCHAR(3)
+ TableName NVARCHAR(255),
+ ColumnName NVARCHAR(255),
+ DataType NVARCHAR(255),
+ IsNullable NVARCHAR(3)
 );
 
 -- Insert comparison results into the temporary table
 INSERT INTO #ComparisonResults (TableName, ColumnName, DataType, IsNullable)
 SELECT curr.TableName,
-    curr.ColumnName,
-    curr.DataType,
-    curr.IsNullable
+ curr.ColumnName,
+ curr.DataType,
+ curr.IsNullable
 FROM (SELECT table_name AS TableName, column_name AS ColumnName, data_type AS DataType, is_nullable AS IsNullable
-     FROM information_schema.columns) AS curr
+ FROM information_schema.columns) AS curr
 FULL OUTER JOIN
-    TableStructureSnapshot AS snap
+ TableStructureSnapshot AS snap
 ON curr.TableName = snap.TableName
-    AND curr.ColumnName = snap.ColumnName
+ AND curr.ColumnName = snap.ColumnName
 WHERE curr.TableName IS NULL
-    OR snap.TableName IS NULL
-    OR curr.ColumnName IS NULL
-    OR snap.ColumnName IS NULL
-    OR curr.DataType <> snap.DataType
-    OR curr.IsNullable <> snap.IsNullable;
+ OR snap.TableName IS NULL
+ OR curr.ColumnName IS NULL
+ OR snap.ColumnName IS NULL
+ OR curr.DataType <> snap.DataType
+ OR curr.IsNullable <> snap.IsNullable;
 
 -- Generate HTML for New Columns Detected
 SET @HTMLNewColumns =
@@ -117,16 +117,16 @@ N'<tr style="text-align: left;">
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">IsNullable</th>
 </tr>' +
 CAST((
-    SELECT
-      TableName AS 'TD',
-      ColumnName AS 'TD',
-      DataType AS 'TD',
-      IsNullable AS 'TD'
-    FROM
-        #ComparisonResults
-    WHERE
-        TableName IS NOT NULL
-    FOR XML PATH('tr'), TYPE
+ SELECT
+ TableName AS 'TD',
+ ColumnName AS 'TD',
+ DataType AS 'TD',
+ IsNullable AS 'TD'
+ FROM
+ #ComparisonResults
+ WHERE
+ TableName IS NOT NULL
+ FOR XML PATH('tr'), TYPE
 ) AS NVARCHAR(MAX) ) +
 N'</table>';
 
@@ -141,25 +141,25 @@ N'<tr style="text-align: left;">
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">NewDataType</th>
 </tr>' +
 CAST((
-    SELECT tss.TableName AS 'TD',
-      tss.ColumnName AS 'TD',
-      tss.OldDataType AS 'TD',
-      tss.NewDataType AS 'TD'
-    FROM (SELECT tss.TableName,
-            tss.ColumnName,
-            tss.DataType AS OldDataType,
-            ic.DATA_TYPE AS NewDataType
-        FROM
-            TableStructureSnapshot tss
-        JOIN information_schema.columns ic
-        ON tss.TableName = ic.TABLE_NAME
-            AND tss.ColumnName = ic.COLUMN_NAME
-        JOIN information_schema.tables it
-        ON it.TABLE_NAME = tss.TableName
-        WHERE tss.DataType <> ic.DATA_TYPE
-            AND it.TABLE_TYPE = 'BASE TABLE'
-        ) AS tss
-    FOR XML PATH('tr'), TYPE
+ SELECT tss.TableName AS 'TD',
+ tss.ColumnName AS 'TD',
+ tss.OldDataType AS 'TD',
+ tss.NewDataType AS 'TD'
+ FROM (SELECT tss.TableName,
+ tss.ColumnName,
+ tss.DataType AS OldDataType,
+ ic.DATA_TYPE AS NewDataType
+ FROM
+ TableStructureSnapshot tss
+ JOIN information_schema.columns ic
+ ON tss.TableName = ic.TABLE_NAME
+ AND tss.ColumnName = ic.COLUMN_NAME
+ JOIN information_schema.tables it
+ ON it.TABLE_NAME = tss.TableName
+ WHERE tss.DataType <> ic.DATA_TYPE
+ AND it.TABLE_TYPE = 'BASE TABLE'
+ ) AS tss
+ FOR XML PATH('tr'), TYPE
 ) AS NVARCHAR(MAX) ) +
 N'</table>';
 
@@ -174,25 +174,25 @@ N'<tr style="text-align: left;">
 <th style="text-align:left;background-color: #FFA500; color:#FFF; font-weight: bold; width: 25%;">NewMaxLength</th>
 </tr>' +
 CAST((
-    SELECT tss.TableName AS 'TD',
-      tss.ColumnName AS 'TD',
-      tss.OldMaxLength AS 'TD',
-      tss.NewMaxLength AS 'TD'
-    FROM (SELECT tss.TableName,
-            tss.ColumnName,
-            tss.CHARACTER_MAXIMUM_LENGTH AS OldMaxLength,
-            ic.CHARACTER_MAXIMUM_LENGTH AS NewMaxLength
-        FROM
-            TableStructureSnapshot tss
-        JOIN information_schema.columns ic
-        ON tss.TableName = ic.TABLE_NAME
-            AND tss.ColumnName = ic.COLUMN_NAME
-        JOIN information_schema.tables it
-        ON it.TABLE_NAME = tss.TableName
-        WHERE tss.CHARACTER_MAXIMUM_LENGTH <> ic.CHARACTER_MAXIMUM_LENGTH
-            AND it.TABLE_TYPE = 'BASE TABLE'
-        ) AS tss
-    FOR XML PATH('tr'), TYPE
+ SELECT tss.TableName AS 'TD',
+ tss.ColumnName AS 'TD',
+ tss.OldMaxLength AS 'TD',
+ tss.NewMaxLength AS 'TD'
+ FROM (SELECT tss.TableName,
+ tss.ColumnName,
+ tss.CHARACTER_MAXIMUM_LENGTH AS OldMaxLength,
+ ic.CHARACTER_MAXIMUM_LENGTH AS NewMaxLength
+ FROM
+ TableStructureSnapshot tss
+ JOIN information_schema.columns ic
+ ON tss.TableName = ic.TABLE_NAME
+ AND tss.ColumnName = ic.COLUMN_NAME
+ JOIN information_schema.tables it
+ ON it.TABLE_NAME = tss.TableName
+ WHERE tss.CHARACTER_MAXIMUM_LENGTH <> ic.CHARACTER_MAXIMUM_LENGTH
+ AND it.TABLE_TYPE = 'BASE TABLE'
+ ) AS tss
+ FOR XML PATH('tr'), TYPE
 ) AS NVARCHAR(MAX) ) +
 N'</table>';
 
@@ -201,13 +201,13 @@ SET @EmailBody = @HTMLTablecount + N'<br/><br/>' + @HTMLtable + N'<br/><br/>' + 
 
 -- Send email with the combined HTML body
 EXEC msdb.dbo.sp_send_dbmail
-    @profile_name = 'your_db_mail_profile',
-    @recipients = 'your_email@example.com',
-    @body = @EmailBody,
-    @body_format = 'HTML',
-    @subject = 'Database Health Report';
+ @profile_name = 'your_db_mail_profile',
+ @recipients = 'your_email@example.com',
+ @body = @EmailBody,
+ @body_format = 'HTML',
+ @subject = 'Database Health Report';
 
 -- Optionally, drop the temporary table when done
-IF OBJECT_ID('tempdb..#ComparisonResults') IS NOT NULL
-    DROP TABLE #ComparisonResults;
+IF OBJECT_ID('tempdb.#ComparisonResults') IS NOT NULL
+ DROP TABLE #ComparisonResults;
 ```

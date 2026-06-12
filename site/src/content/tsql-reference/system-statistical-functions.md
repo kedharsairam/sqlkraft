@@ -2,7 +2,7 @@
 name: "System Statistical Functions"
 title: "System Statistical Functions"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -12,8 +12,6 @@ Article
 •
 
 02/28/2023
-
-Applies to:
 
 SQL Server
 
@@ -47,9 +45,7 @@ All system statistical functions are nondeterministic. This means these function
 
 Deterministic and Nondeterministic
 
-Functions
-
-.
+Functions.
 
 Built-in Functions (Transact-SQL)
 

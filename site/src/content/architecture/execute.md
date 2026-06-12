@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -79,9 +77,7 @@ procedure might not ever execute.
 
 Use the following recommendations for executing stored procedures.
 
-System procedures begin with the prefix
-
-. Because they logically appear in all user- and
+System procedures begin with the prefix. Because they logically appear in all user- and
 
 system- defined databases, system procedures can be executed from any database without
 

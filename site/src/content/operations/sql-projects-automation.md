@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 SQL projects automation
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -85,9 +83,6 @@ executed during deployment, without applying changes. The provided T-SQL script 
 
 
 
-```cmd
-.dacpac dotnet build
-.dacpac
-.dacpac
+```cmd.dacpac dotnet build.dacpac.dacpac
 Script
 ```

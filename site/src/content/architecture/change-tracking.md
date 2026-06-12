@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -35,9 +33,7 @@ that provides an efficient change tracking mechanism for applications.
 
 To get started, review
 
-Configure change tracking
-
-.
+Configure change tracking.
 
 Previously, to enable applications to query for changes to data in a database and access
 
@@ -83,6 +79,4 @@ If an application requires information about all the changes that were made and 
 
 intermediate values of the changed data, using change data capture, instead of change
 
-tracking, might be appropriate. For more information, see
-
-.
+tracking, might be appropriate. For more information, see.

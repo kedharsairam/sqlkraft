@@ -12,8 +12,6 @@ pubDate: 2025-12-01
 
 09/29/2025
 
-Applies to:
-
 SQL Server
 
 Returns the value of
@@ -21,8 +19,6 @@ Returns the value of
 $arg
 
 represented as a string.
-
-syntaxsql
 
 A node or an atomic value.
 

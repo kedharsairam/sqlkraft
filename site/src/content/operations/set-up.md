@@ -18,17 +18,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This topic describes the prerequisites and recommendations for setting up database mirroring.
 
 For an introduction to database mirroring, see
 
-Database Mirroring (SQL Server)
-
-.
+Database Mirroring (SQL Server).
 
 For each database mirroring session:
 
@@ -58,9 +54,7 @@ For high availability, use Always On availability groups instead.
 
 Important
 
-Database Mirroring in SQL Server is a distinct technology from
-
-. Mirroring to Fabric provides better analytical performance, the ability to unify
+Database Mirroring in SQL Server is a distinct technology from. Mirroring to Fabric provides better analytical performance, the ability to unify
 
 your data estate with OneLake in Fabric, and open access to your data in Delta Parquet
 

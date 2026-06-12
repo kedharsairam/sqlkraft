@@ -29,8 +29,6 @@ Article
 
 01/21/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
@@ -41,9 +39,7 @@ In the non-Windows world, SMB is also referred to as a Common Internet File Syst
 
 share and implemented via Samba. In the Windows world, accessing an SMB share is done this
 
-way:
-
-. For Linux-based SQL Server installations, the SMB share must be
+way:. For Linux-based SQL Server installations, the SMB share must be
 
 mounted as a folder.
 

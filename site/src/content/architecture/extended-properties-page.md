@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -55,7 +53,7 @@ View or specify the extended properties for the object. Each extended property c
 
 name/value pair of metadata associated with the object.
 
-Click the browse (...) button after
+Click the browse (.) button after
 
 to open the
 

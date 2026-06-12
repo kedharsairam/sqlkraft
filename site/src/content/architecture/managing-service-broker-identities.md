@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/03/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -77,9 +75,7 @@ statement to control the type of routing to be performed:
 
 To route conversations to a specific copy of a service, specify a
 
-service_broker_guid
-
-. For
+service_broker_guid. For
 
 example, you could have three copies of a service in three databases on the network: a
 
@@ -97,15 +93,11 @@ To let Service Broker balance conversation loads across multiple copies of a ser
 
 specify
 
-service_broker_guid
-
-. Service Broker will alternatively pick among the routes with
+service_broker_guid. Service Broker will alternatively pick among the routes with
 
 the same service name as is specified in the
 
-clause of
-
-.
+clause of.
 
 ```sql
 service_broker_guid sys.databases

@@ -29,8 +29,6 @@ Article
 
 12/17/2024
 
-Applies to:
-
 SQL Server
 
 Use this page to view or modify options for the selected database. For more information about
@@ -43,37 +41,27 @@ and
 
 ALTER
 
-DATABASE SCOPED CONFIGURATION (Transact-SQL)
-
-.
+DATABASE SCOPED CONFIGURATION (Transact-SQL).
 
 Specify the collation of the database by selecting from the list. For more information, see
 
 Set or
 
-Change the Database Collation
-
-.
+Change the Database Collation.
 
 Specify one of the following models for recovering the database:
 
 ,
 
-, or
-
-.
+, or.
 
 For more information about recovery models, see
 
-Recovery Models (SQL Server)
-
-.
+Recovery Models (SQL Server).
 
 Specify the latest version of SQL Server that the database supports. For possible values, see
 
-ALTER DATABASE (Transact-SQL) Compatibility Level
-
-. When a SQL Server database is upgraded,
+ALTER DATABASE (Transact-SQL) Compatibility Level. When a SQL Server database is upgraded,
 
 the compatibility level for that database is retained if possible, or changed to the minimum
 
@@ -83,9 +71,7 @@ Specify none or partial to designate if this is a contained database. For more i
 
 contained databases, see
 
-Contained Databases
-
-. The server property
+Contained Databases. The server property
 
 must be set to
 
@@ -99,6 +85,4 @@ Important
 
 Enabling partially contained databases delegates control over access to the instance of
 
-SQL Server to the owners of the database. For more information, see
-
-.
+to the owners of the database. For more information, see.

@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to change the availability mode of an availability replica in an Always
@@ -47,9 +45,7 @@ performance at the expense of high availability and supports only forced manual 
 
 possible data loss), typically called
 
-forced failover
-
-.
+forced failover.
 
 Synchronous-commit mode
 
@@ -79,9 +75,7 @@ node.
 
 3. Click the availability group whose replica you want to change.
 
-4. Right-click the replica, and click
-
-.
+4. Right-click the replica, and click.
 
 5. In the
 

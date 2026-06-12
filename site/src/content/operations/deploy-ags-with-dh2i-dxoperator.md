@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -55,13 +53,9 @@ Server AG workloads in Kubernetes. You can register for a
 
 free DxEnterprise software
 
-license
+license. For more information, see the
 
-. For more information, see the
-
-DxOperator Quick Start Guide
-
-.
+DxOperator Quick Start Guide.
 
 Using the steps mentioned in this article, learn how to deploy a StatefulSet and use the DH2i
 

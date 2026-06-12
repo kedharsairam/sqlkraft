@@ -19,9 +19,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server availability basics for Linux
-
-Applies to:
+availability basics for Linux
 
 SQL Server
 
@@ -35,7 +33,7 @@ highly available under Linux.
 
 This article covers the technical aspects of planning and deploying highly available Linux-based
 
-SQL Server instances and databases, and highlights key differences from Windows-based
+instances and databases, and highlights key differences from Windows-based
 
 installations. Because either SQL Server or Linux might be new to you, this article discusses
 
@@ -61,9 +59,7 @@ Clustering implementation in Linux is discussed in
 
 Pacemaker for availability groups and
 
-failover cluster instances on Linux
-
-.
+failover cluster instances on Linux.
 
 While some Linux installations include an interface, most don't. You use the command line for
 
@@ -73,9 +69,7 @@ the Linux world is a
 
 shell
 
-, the most common being
-
-.
+, the most common being.
 
 In Linux, you need elevated privileges to run many commands, similar to needing administrator
 
@@ -89,7 +83,7 @@ without a username, you enter a shell as
 
 if you know the
 
-SQL Server availability options for Linux
+availability options for Linux
 
 ```cmd
 bash su su root

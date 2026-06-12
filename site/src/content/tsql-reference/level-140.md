@@ -11,9 +11,7 @@ consecutive executions. For more information,
 
 see
 
-row mode memory grant feedback
-
-.
+row mode memory grant feedback.
 
 Queries referencing T-SQL scalar UDFs will use
 
@@ -59,9 +57,7 @@ What's new in SQL Server 2019
 
 and
 
-Intelligent query processing in SQL databases
-
-.
+Intelligent query processing in SQL databases.
 
 This section describes new behaviors introduced with compatibility level 140.
 

@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 This read-only page displays the most recent mirroring status for the principal and mirror
@@ -39,9 +37,7 @@ an instance is currently unavailable, some of the cells in the
 
 grid corresponding to that
 
-instance are grayed out and display
-
-.
+instance are grayed out and display.
 
 Start Database Mirroring Monitor (SQL Server Management Studio)
 
@@ -65,23 +61,17 @@ row.
 
 Current role of the server instance, either
 
-or
-
-.
+or.
 
 The mirroring state reported by the server instance and an icon that indicates the severity
 
 of the state. The possible statuses and their associated icons are as follows:
 
-Icon: -, status
-
-. The monitor is not connected to either partner. The only
+Icon: -, status. The monitor is not connected to either partner. The only
 
 available information is what has been cached by the monitor.
 
-Icon: Warning icon, status
-
-. The contents of the mirror database are lagging
+Icon: Warning icon, status. The contents of the mirror database are lagging
 
 behind the contents of the principal database. The principal server instance is sending log
 

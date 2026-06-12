@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -77,9 +75,7 @@ more than one instance of the stored procedure, up to a configured maximum. For 
 
 information, see
 
-Service Broker activation
-
-.
+Service Broker activation.
 
 CREATE QUEUE (Transact-SQL)
 

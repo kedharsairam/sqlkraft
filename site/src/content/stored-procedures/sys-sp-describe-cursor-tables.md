@@ -2,7 +2,7 @@
 name: "sys.sp_describe_cursor_tables"
 title: "sp_describe_cursor_tables"
 category: "general"
-description: "Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric A data type for variables or stored procedure OUTPUT parameters that contain a reference to a The operations that can reference variables and parameters having a @local_variable @local_variable The OPEN, FETCH, CLOSE, and DEALLOCATE cursor statements. Stored procedure output parameters. The CURSOR_STATUS function. syste"
+description: "A data type for variables or stored procedure OUTPUT parameters that contain a reference to a The operations that can reference variables and parameters having a @local_variable @local_variable The OPEN, FETCH, CLOSE, and DEALLOCATE cursor statements. Stored procedure output parameters. The CURSOR_STATUS function. syste"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_describe_cursor_tables"
@@ -10,15 +10,13 @@ syntax: "sp_describe_cursor_tables"
 
 ## Description
 
-Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric A data type for variables or stored procedure OUTPUT parameters that contain a reference to a The operations that can reference variables and parameters having a @local_variable @local_variable The OPEN, FETCH, CLOSE, and DEALLOCATE cursor statements. Stored procedure output parameters. The CURSOR_STATUS function. system stored procedures. output column of returns the name of the cursor variable. Any variables created with the data type are nullable. data type cannot be used for a column in a CREATE TABLE statement. CAST and CONVERT (Transact-SQL) CURSOR_STATUS (Transact-SQL) Data Type Conversion (Database Engine) Data Types (Transact-SQL) DECLARE CURSOR (Transact-SQL) DECLARE @local_variable (Transact-SQL) SET @local_variable (Transact-SQL)
+A data type for variables or stored procedure OUTPUT parameters that contain a reference to a The operations that can reference variables and parameters having a @local_variable @local_variable The OPEN, FETCH, CLOSE, and DEALLOCATE cursor statements. Stored procedure output parameters. The CURSOR_STATUS function. system stored procedures. output column of returns the name of the cursor variable. Any variables created with the data type are nullable. data type cannot be used for a column in a CREATE TABLE statement. CAST and CONVERT (Transact-SQL) CURSOR_STATUS (Transact-SQL) Data Type Conversion (Database Engine) Data Types (Transact-SQL) DECLARE CURSOR (Transact-SQL) DECLARE @local_variable (Transact-SQL) SET @local_variable (Transact-SQL)
 
 ## Syntax
 
 `sp_describe_cursor_tables`
 
 ## Remarks
-
-Applies to:
 
 Azure SQL Database
 
@@ -74,8 +72,6 @@ DECLARE @local_variable (Transact-SQL)
 
 SET @local_variable (Transact-SQL)
 
-Last updated on 11/18/2025
-
 ## Examples
 
 ### Example 1
@@ -118,4 +114,4 @@ Last updated on 11/18/2025
 
 `dbid`
 
-_(... and 12 more examples)_
+_(. and 12 more examples)_

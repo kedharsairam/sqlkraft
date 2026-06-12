@@ -27,8 +27,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 The Resource database is a read-only database that contains all the system objects that are
@@ -65,7 +63,7 @@ instance of SQL Server has one and only one associated mssqlsystemresource.mdf f
 
 instances do not share this file.
 
-SQL Server cannot back up the Resource database. You can perform your own file-based or a
+cannot back up the Resource database. You can perform your own file-based or a
 
 disk-based backup by treating the mssqlsystemresource.mdf file as if it were a binary (.EXE) file,
 

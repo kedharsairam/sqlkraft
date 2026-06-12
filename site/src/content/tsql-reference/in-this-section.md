@@ -2,7 +2,7 @@
 name: "In This Section"
 title: "In This Section"
 category: "predicates"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---
@@ -12,8 +12,6 @@ Article
 •
 
 03/03/2023
-
-Applies to:
 
 SQL Server
 
@@ -34,8 +32,6 @@ RESTORE LABELONLY, RESTORE REWINDONLY, and RESTORE VERIFYONLY.
 RESTORE
 
 (Transact-SQL)
-
-Describes the RESTORE DATABASE and RESTORE LOG Transact-SQL statements used
 
 to restore and recover a database from backups taken using the BACKUP command.
 
@@ -75,9 +71,7 @@ later versions these statements require CREATE DATABASE permission. This require
 
 secures your backup files and protects your backup information more fully than in
 
-previous versions. For information about this permission, see
-
-.
+previous versions. For information about this permission, see.
 
 Expand table
 
@@ -95,10 +89,6 @@ FILELISTONLY
 
 (Transact-SQL)
 
-Describes the RESTORE FILELISTONLY Transact-SQL statement, which is used to
-
-return a result set containing a list of the database and log files contained in the
-
 backup set.
 
 RESTORE
@@ -106,10 +96,6 @@ RESTORE
 HEADERONLY
 
 (Transact-SQL)
-
-Describes the RESTORE HEADERONLY Transact-SQL statement, which is used to
-
-return a result set containing all the backup header information for all backup sets
 
 on a particular backup device.
 
@@ -121,8 +107,6 @@ LABELONLY
 
 Describes the RESTORE LABELONLY Transact-SQL statement, which is used to return
 
-a result set containing information about the backup media identified by the given
-
 backup device.
 
 RESTORE
@@ -130,8 +114,6 @@ RESTORE
 REWINDONLY
 
 (Transact-SQL)
-
-Describes the RESTORE REWINDONLY Transact-SQL statement, which is used to
 
 rewind and close tape devices that were left open by BACKUP or RESTORE
 
@@ -144,8 +126,6 @@ VERIFYONLY
 (Transact-SQL)
 
 Describes the RESTORE VERIFYONLY Transact-SQL statement, which is used to verify
-
-the backup but does not restore it, and checks to see that the backup set is
 
 complete and the entire backup is readable; does not attempt to verify the structure
 

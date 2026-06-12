@@ -2,12 +2,10 @@
 name: "time Description"
 title: "Time Description"
 category: "data-types"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -155,9 +153,7 @@ This value is used for the appended time part for implicit conversion from
 
 to
 
-or
-
-.
+or.
 
 User-defined fractional
 

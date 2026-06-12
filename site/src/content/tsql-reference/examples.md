@@ -17,9 +17,7 @@ statements execute successfully and the transaction is successfully committed. I
 
 set of statements,
 
-is set to
-
-. This causes the statement error to terminate the
+is set to. This causes the statement error to terminate the
 
 batch and the transaction is rolled back.
 
@@ -34,8 +32,6 @@ ROLLBACK TRANSACTION (Transact-SQL)
 SET Statements (Transact-SQL)
 
 @@TRANCOUNT (Transact-SQL)
-
-Last updated on 11/18/2025
 
 See Also
 

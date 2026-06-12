@@ -91,9 +91,7 @@ stored procedure on the remote
 
 server
 
-and stores the return status that indicates success or failure in
-
-.
+and stores the return status that indicates success or failure in.
 
 ## E. Use EXECUTE with a stored procedure variable
 
@@ -147,9 +145,7 @@ in the AdventureWorks2025 database. It uses the variable
 
 to store the value
 
-returned by the function. The function expects one input parameter,
-
-. This is defined as
+returned by the function. The function expects one input parameter,. This is defined as
 
 a
 
@@ -173,9 +169,7 @@ example begins by adding the Oracle server as a linked server and creating linke
 
 The following example executes a Transact-SQL string that creates a table and specifies the
 
-clause to switch the execution context of the statement from the caller to
-
-. The
+clause to switch the execution context of the statement from the caller to. The
 
 Database Engine checks the permissions of
 

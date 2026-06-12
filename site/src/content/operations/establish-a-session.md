@@ -31,8 +31,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 To establish a database mirroring session and to modify the properties of database mirroring
@@ -67,9 +65,7 @@ database (using WITH NORECOVERY). For more information, see
 
 Prepare a Mirror
 
-Database for Mirroring (SQL Server)
-
-.
+Database for Mirroring (SQL Server).
 
 If the server instances are running under different domain user accounts, each requires a
 
@@ -81,9 +77,7 @@ before configuring mirroring. For more information, see
 
 Allow Network Access to a
 
-Database Mirroring Endpoint Using Windows Authentication (SQL Server)
-
-.
+Database Mirroring Endpoint Using Windows Authentication (SQL Server).
 
 ７
 
@@ -101,6 +95,4 @@ Note
 
 A witness server instance is not available in every edition of Microsoft SQL Server. For
 
-a list of features that are supported by the editions of SQL Server, see
-
-.
+a list of features that are supported by the editions of SQL Server, see.

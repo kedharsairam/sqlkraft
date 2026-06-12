@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -45,17 +43,13 @@ captured to enable replay. These events are captured by default if you use the
 
 trace template. For more information, see
 
-Replay Requirements
-
-.
+Replay Requirements.
 
 1. On the
 
 menu, point to
 
-, and then select
-
-. Select a trace file that
+, and then select. Select a trace file that
 
 contains the event classes necessary for replay.
 
@@ -71,9 +65,7 @@ replay the trace.
 
 dialog box, on the
 
-tab, specify the
-
-. Select
+tab, specify the. Select
 
 to change the server displayed in the
 
@@ -87,9 +79,7 @@ box.
 
 5. Choose either
 
-or
-
-. The following table explains the difference between these settings.
+or. The following table explains the difference between these settings.
 
 Description
 

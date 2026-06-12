@@ -10,15 +10,13 @@ syntax: "sp_scriptdynamicupdproc"
 
 ## Description
 
-statement that creates a dynamic update stored procedure. statement within the custom stored procedure is built dynamically based on the syntax that indicates which columns to change. Use this stored procedure if the number of indexes on the subscribing table is growing and the number of columns being changed is small. This stored procedure is run at the Publisher on the publication database. Transact-SQL syntax conventions The article ID. , with no default. Returns a result set that consists of a single column. The result set forms the statement used to create the custom stored procedure. is used in transactional replication. The default scripting logic includes all columns within the statement and uses a bitmap to determine the columns that have changed. If a column didn't change, the column is set back to itself, which usually
+statement that creates a dynamic update stored procedure. statement within the custom stored procedure is built dynamically based on the syntax that indicates which columns to change. Use this stored procedure if the number of indexes on the subscribing table is growing and the number of columns being changed is small. This stored procedure is run at the Publisher on the publication database. The article ID. , with no default. Returns a result set that consists of a single column. The result set forms the statement used to create the custom stored procedure. is used in transactional replication. The default scripting logic includes all columns within the statement and uses a bitmap to determine the columns that have changed. If a column didn't change, the column is set back to itself, which usually
 
 ## Syntax
 
 `sp_scriptdynamicupdproc`
 
 ## Remarks
-
-Applies to:
 
 Generates the
 
@@ -31,8 +29,6 @@ syntax that indicates which columns to change. Use this stored procedure if the 
 of indexes on the subscribing table is growing and the number of columns being changed is
 
 small. This stored procedure is run at the Publisher on the publication database.
-
-Transact-SQL syntax conventions
 
 The article ID.
 

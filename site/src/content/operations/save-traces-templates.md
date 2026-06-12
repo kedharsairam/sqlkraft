@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -67,9 +65,7 @@ automatically when the trace file is saved, regardless of any other specified ex
 
 example, if you specify a trace file called
 
-, the file created is called
-
-.
+, the file created is called.
 
 ）
 

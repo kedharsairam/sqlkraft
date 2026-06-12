@@ -20,7 +20,7 @@ operators can cause a section of the query plan to run in serial mode, or the wh
 
 to run in serial mode.
 
-SQL Server automatically detects the best degree of parallelism for each instance of a parallel
+automatically detects the best degree of parallelism for each instance of a parallel
 
 query execution or index data definition language (DDL) operation. It does this based on the
 
@@ -32,9 +32,7 @@ following criteria:
 
 more than one CPU can use parallel queries.
 
-2. Whether
-
-. Each query or index operation requires a
+2. Whether. Each query or index operation requires a
 
 certain number of worker threads to execute. Executing a parallel plan requires more
 
@@ -50,9 +48,7 @@ plan in the specified workload context. It then executes the serial plan (one wo
 
 thread).
 
-3. The
-
-. Index operations that create or rebuild
+3. The. Index operations that create or rebuild
 
 an index, or drop a clustered index and queries that use CPU cycles heavily are the best
 
@@ -96,9 +92,7 @@ if proper testing found that a different value is better suited for the
 
 running workload.
 
-4. Whether there are a
-
-. If the Query Optimizer
+4. Whether there are a. If the Query Optimizer
 
 determines that the number of rows is too low, it doesn't introduce exchange operators
 
@@ -108,9 +102,7 @@ in a serial plan avoids scenarios when the startup, distribution, and coordinati
 
 exceed the gains achieved by parallel operator execution.
 
-5. Whether
-
-. If the highest degree of parallelism
+5. Whether. If the highest degree of parallelism
 
 isn't possible, lower degrees are considered before the parallel plan is abandoned. For
 

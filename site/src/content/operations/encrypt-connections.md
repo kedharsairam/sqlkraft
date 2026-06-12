@@ -17,13 +17,11 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
 
-SQL Server on Linux can use Transport Layer Security (TLS) to encrypt data that is transmitted
+on Linux can use Transport Layer Security (TLS) to encrypt data that is transmitted
 
 across a network between a client application and an instance of SQL Server. SQL Server supports
 
@@ -43,15 +41,11 @@ property of the certificate.
 
 The certificate must be meant for server authentication. This requires the
 
-property of the certificate to specify
-
-.
+property of the certificate to specify.
 
 The certificate must be created by using the
 
-option of
-
-. Usually, the
+option of. Usually, the
 
 certificate's key usage property (
 

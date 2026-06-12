@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -59,9 +57,7 @@ Studio. Though it isn't recommended, for more information on reordering tables, 
 
 Change
 
-Column Order in a Table
-
-.
+Column Order in a Table.
 
 To query existing columns, use the
 
@@ -73,7 +69,7 @@ Requires
 
 permission on the table.
 
-SQL Server Management Studio (SSMS) doesn't support all data definition language (DDL)
+Management Studio (SSMS) doesn't support all data definition language (DDL)
 
 options in Azure Synapse. Use
 
@@ -83,9 +79,7 @@ instead.
 
 1. In
 
-, right-click the table to which you want to add columns and choose
-
-.
+, right-click the table to which you want to add columns and choose.
 
 2. Select the first blank cell in the
 
@@ -99,9 +93,7 @@ Important
 
 Install the latest version of
 
-SQL Server Management Studio (SSMS)
-
-.
+Management Studio (SSMS).
 
 ```sql
 ALTER TABLE

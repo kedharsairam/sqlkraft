@@ -10,7 +10,7 @@ syntax: "classifier_function_id"
 
 ## Description
 
-Returns the stored resource governor configuration. The object ID of the classifier function in This function is used to classify new sessions and uses rules to route the workload to the appropriate workload group. For more information, see Indicates the current state of resource governor: : SQL Server 2014 (12.x) and later. The maximum number of outstanding I/O requests per The catalog view displays resource governor configuration as stored in metadata. To see the
+Returns the stored resource governor configuration. The object ID of the classifier function in This function is used to classify new sessions and uses rules to route the workload to the appropriate workload group. For more information, see Indicates the current state of resource governor: : SQL Server 2014 (12.x) and later. The maximum number of outstanding I/O requests per The catalog view displays resource governor configuration as stored in metadata.
 
 ## Syntax
 

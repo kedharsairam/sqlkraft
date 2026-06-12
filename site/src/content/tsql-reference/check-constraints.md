@@ -15,9 +15,7 @@ A column can have only one DEFAULT definition.
 
 A DEFAULT definition can contain constant values, functions, SQL standard niladic
 
-functions, or
-
-. The following table shows the niladic functions and the values they
+functions, or. The following table shows the niladic functions and the values they
 
 return for the default during an INSERT statement.
 

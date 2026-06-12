@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -53,9 +51,7 @@ SSIS isn't available for SQL Server 2025 (17.x) on Linux
 
 For other limitations and known issues with SSIS on Linux, see
 
-SQL Server on Linux: Known issues
-
-.
+on Linux: Known issues.
 
 The following built-in Integration Services components are supported on Linux. Some of them
 

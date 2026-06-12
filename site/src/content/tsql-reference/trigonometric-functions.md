@@ -2,12 +2,10 @@
 name: "Trigonometric functions"
 title: "Trigonometric functions"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 

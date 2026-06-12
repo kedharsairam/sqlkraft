@@ -27,9 +27,7 @@ calls procedure
 
 , which calls procedure
 
-, which selects from table
-
-. Alice has
+, which selects from table. Alice has
 
 permission on
 
@@ -51,15 +49,11 @@ ownership chaining is involved in this entire chain. Alice can't access table
 
 by using
 
-and
-
-. Since we want Alice to always use
+and. Since we want Alice to always use
 
 for
 
-access, we don't want to grant her permission to execute
-
-. How can we
+access, we don't want to grant her permission to execute. How can we
 
 accomplish this scenario?
 
@@ -71,9 +65,7 @@ can access
 
 , then Alice can invoke
 
-directly and she doesn't have to call
-
-.
+directly and she doesn't have to call.
 
 We could deny
 
@@ -81,15 +73,11 @@ permission on
 
 to Alice, but then Alice can't call
 
-through
-
-.
+through.
 
 Signing
 
-wouldn't work by itself, because the signature is lost in the call to
-
-.
+wouldn't work by itself, because the signature is lost in the call to.
 
 However, by countersigning
 
@@ -97,9 +85,7 @@ with the same certificate used to sign
 
 ,
 
-the signature is kept across the call chain and is allowed access to
-
-. If Alice attempts to call
+the signature is kept across the call chain and is allowed access to. If Alice attempts to call
 
 directly, she can't access
 

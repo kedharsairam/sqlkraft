@@ -22,9 +22,7 @@ workload/code. Also keep in mind other recommendations for
 
 Optimizing
 
-tempdb performance in SQL Server
-
-.
+tempdb performance in SQL Server.
 
 However, by carefully considering the concurrency needs of
 
@@ -40,7 +38,7 @@ The following table lists SQL Server components and indicates whether they can u
 
 64 CPUs.
 
-SQL Server Database Engine
+Database Engine
 
 Sqlserver.exe
 
@@ -68,19 +66,17 @@ Use Extended Events instead. For more information on
 
 , see
 
-and
-
-.
+and.
 
 ７
 
 Note
 
-SQL Server Profiler for Analysis Services workloads is NOT deprecated, and will continue to
+Profiler for Analysis Services workloads is NOT deprecated, and will continue to
 
 be supported.
 
-SQL Server components that can use more than 64 CPUs
+components that can use more than 64 CPUs
 
 ﾉ
 
@@ -110,25 +106,23 @@ Fts.exe
 
 No
 
-SQL Server Agent
+Agent
 
 Sqlagent.exe
 
 No
 
-SQL Server Management Studio
+Management Studio
 
 Ssms.exe
 
 No
 
-SQL Server Setup
+Setup
 
 Setup.exe
 
 No
-
-Last updated on 11/18/2025
 
 `tempdb`
 

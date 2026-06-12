@@ -140,9 +140,9 @@ clause.
 ### UPDATE
 
 ```sql
-INSERT ... SELECT
+INSERT. SELECT
 ```
 
 ```sql
-INSERT ... EXEC
+INSERT. EXEC
 ```

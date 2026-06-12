@@ -27,8 +27,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 In order to use a user-defined type (UDT) in SQL Server, you must register it. Registering a UDT
@@ -43,9 +41,7 @@ registered and the type created, you can use the UDT in Transact-SQL and in clie
 
 more information, see
 
-CLR user-defined types
-
-.
+CLR user-defined types.
 
 The easiest way to deploy your UDT is by using Visual Studio. For more complex deployment
 
@@ -73,9 +69,7 @@ class.
 
 5. From the
 
-menu, select
-
-. This registers the assembly and creates the type in
+menu, select. This registers the assembly and creates the type in
 
 the SQL Server database.
 
@@ -97,9 +91,7 @@ CREATE ASSEMBLY
 
 and
 
-CREATE TYPE
-
-.
+CREATE TYPE.
 
 ```sql
 CREATE ASSEMBLY

@@ -7,9 +7,7 @@ tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
 
-option is equivalent to
-
-.
+option is equivalent to.
 
 =
 
@@ -93,9 +91,7 @@ problems might occur, and certain functionality might be unavailable. For exampl
 
 index can't be reorganized when
 
-is set to
-
-.
+is set to.
 
 ### Applies to
 

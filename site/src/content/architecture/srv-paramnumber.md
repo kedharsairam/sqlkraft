@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Returns the number of a remote stored procedure call parameter.
@@ -49,9 +47,7 @@ name
 
 Is a pointer to the parameter
 
-name
-
-.
+name.
 
 ）
 

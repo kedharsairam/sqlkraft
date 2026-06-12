@@ -77,9 +77,7 @@ No
 
 5 to 7
 
-The following table lists the supported ISO 8601 string literal formats for
-
-. For information about alphabetical, numeric, unseparated, and time formats for the date and time
+The following table lists the supported ISO 8601 string literal formats for. For information about alphabetical, numeric, unseparated, and time formats for the date and time
 
 datetimeoffset
 
@@ -111,9 +109,7 @@ date
 
 and
 
-time
-
-.
+time.
 
 ## Description
 
@@ -121,8 +117,7 @@ These two formats aren't affected by the and session locale settings. Spaces are
 
 (UTC)
 
-This format by ISO definition indicates the portion should be expressed in Coordinated Universal Time (UTC). For example, should be represented as
-.
+This format by ISO definition indicates the portion should be expressed in Coordinated Universal Time (UTC). For example, should be represented as.
 
 The following example compares the results of casting a string to each and data type.
 
@@ -167,7 +162,7 @@ DATEFORMAT
 
 ```sql
 time
-12:35:29.1234567 date
+
 2007-05-08 smalldatetime
 2007-05-08 12:35:00 datetime
 2007-05-08 12:35:29.123 datetime2

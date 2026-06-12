@@ -29,9 +29,7 @@ Article
 
 02/04/2025
 
-Applies to:
-
-SQL Server 2016 (13.x) and later
+2016 (13.x) and later
 
 Azure SQL Managed Instance
 
@@ -55,9 +53,7 @@ in multiple batches, with manually invoked data flush in between, with
 
 sp_xtp_flush_temporal_history
 
-, or while
-
-.
+, or while.
 
 Don't perform massive table updates at once, as it can result in memory consumption
 

@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 After an automatic failover or a planned manual failover without data loss on an availability
@@ -49,9 +47,7 @@ If your automatic failover still has not completed, see
 
 Troubleshooting automatic failover
 
-problems in SQL Server 2012 Always On environments
-
-.
+problems in SQL Server 2012 Always On environments.
 
 The following sections describe the common causes for a failover time that exceeds RTO.
 

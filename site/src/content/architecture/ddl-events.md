@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -45,17 +43,11 @@ when they occur in the database in which the trigger or event notification is cr
 
 anywhere in the server instance.
 
-CREATE_APPLICATION_ROLE (Applies to the CREATE APPLICATION ROLE statement and
+CREATE_APPLICATION_ROLE (Applies to the CREATE APPLICATION ROLE statement and. If a new schema is created, this event also triggers a CREATE_SCHEMA event.)
 
-. If a new schema is created, this event also triggers a CREATE_SCHEMA event.)
+ALTER_APPLICATION_ROLE (Applies to the ALTER APPLICATION ROLE statement and.)
 
-ALTER_APPLICATION_ROLE (Applies to the ALTER APPLICATION ROLE statement and
-
-.)
-
-DROP_APPLICATION_ROLE (Applies to the DROP APPLICATION ROLE statement and
-
-.)
+DROP_APPLICATION_ROLE (Applies to the DROP APPLICATION ROLE statement and.)
 
 CREATE_ASSEMBLY
 

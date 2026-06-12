@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -45,9 +43,7 @@ A database is always in one specific state. For example, these states include
 
 ,
 
-, or
-
-. To verify the current state of a database, select the
+, or. To verify the current state of a database, select the
 
 column in the
 
@@ -85,7 +81,7 @@ automatically becomes online if the recovery succeeds. If the recovery fails, th
 
 becomes suspect. The database is unavailable.
 
-SQL Server has encountered a resource-related error during recovery. The database isn't
+has encountered a resource-related error during recovery. The database isn't
 
 damaged, but files might be missing or system resource limitations might be preventing it
 
@@ -99,9 +95,7 @@ recovered during startup of SQL Server. The database is unavailable. Further act
 
 user is required to resolve the problem.
 
-User has changed the database and sets the status to
-
-. The database is in single-
+User has changed the database and sets the status to. The database is in single-
 
 user mode and might be repaired or restored. The database is marked
 

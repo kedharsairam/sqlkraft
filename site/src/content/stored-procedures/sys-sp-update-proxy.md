@@ -31,7 +31,7 @@ syntax: |
 
 ## Description
 
-Defines attributes of a SQL Server Agent proxy account. This table is stored in the ID of the proxy account. Name of the proxy account. ID of the credential that the proxy account uses. Status of the proxy account: Description that the user entered when the proxy account was Microsoft Windows security_identifier of the user or group associated with the proxy credential at the time the proxy is added. To ensure that you have the latest information (for example, after an Date and time that the credential was created. Only members of the fixed server role can access the dbo.sysproxylogin (Transact-SQL) dbo.sysproxysubsystem (Transact-SQL) dbo.syssubsystems (Transact-SQL)
+Defines attributes of a SQL Server Agent proxy account. This table is stored in the ID of the proxy account.
 
 ## Syntax
 
@@ -60,8 +60,6 @@ N
 ```
 
 ## Remarks
-
-Applies to:
 
 Defines attributes of a SQL Server Agent proxy account. This table is stored in the
 

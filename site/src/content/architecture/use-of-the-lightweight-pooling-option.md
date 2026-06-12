@@ -14,9 +14,7 @@ affinity mask option
 
 is set by using
 
-ALTER SERVER CONFIGURATION
-
-. When the affinity
+ALTER SERVER CONFIGURATION. When the affinity
 
 mask isn't set, the instance of SQL Server allocates worker threads evenly among the
 
@@ -40,7 +38,7 @@ improves performance.
 
 The overhead involved in switching thread contexts may not be very large. Most instances of
 
-SQL Server don't see any performance differences between setting the
+don't see any performance differences between setting the
 
 option to 0 or 1. The only instances of SQL Server that might benefit from
 
@@ -68,9 +66,7 @@ in SQL Server. These settings are attempting to achieve the same result, and if 
 
 configurations are inconsistent, you may have unpredictable results. For more information,
 
-see
-
-.
+see.
 
 ）
 

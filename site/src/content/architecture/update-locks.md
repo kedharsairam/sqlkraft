@@ -10,9 +10,7 @@ Additional locking resources are available for
 
 lock resources. For more information, see
 
-Diagnostic additions for optimized locking
-
-.
+Diagnostic additions for optimized locking.
 
 The Database Engine locks resources using different lock modes that determine how the
 
@@ -30,13 +28,9 @@ Used on resources that can be updated. Prevents a common form of deadlock that o
 
 when multiple sessions are reading, locking, and potentially updating resources later.
 
-Used for data-modification operations, such as
-
 ,
 
-, or
-
-. Ensures that
+, or.
 
 multiple updates can't be made to the same resource at the same time.
 
@@ -50,7 +44,7 @@ exclusive (
 
 ).
 
-Used when an operation dependent on the schema of a table is executing. The types of
+Used when an operation dependent on the schema of a table is executing.
 
 schema locks are: schema modification (
 
@@ -58,15 +52,11 @@ schema locks are: schema modification (
 
 ).
 
-Used when bulk copying data into a table with the
-
 hint.
-
-Protects the range of rows read by a query when using the
 
 transaction isolation
 
-level. Ensures that other transactions can't insert rows that would qualify for the queries of the
+level.
 
 transaction if the queries were run again.
 
@@ -80,10 +70,6 @@ control. No other transactions can modify the data while shared (
 
 Shared (
 
-) locks on a resource are released as soon as the read operation completes, unless the
-
-transaction isolation level is set to
-
 or higher, or a locking hint is used to retain
 
 the shared (
@@ -93,8 +79,6 @@ the shared (
 2
 
 ﾉ
-
-Expand table
 
 `XACT`
 

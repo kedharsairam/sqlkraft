@@ -14,11 +14,11 @@ Occurs when a task waits for asynchronous I/O operations to complete. Covers a b
 
 ## Key Metrics
 
-| Metric    | Description           |
+| Metric | Description |
 | --------- | --------------------- |
 | Wait Type | `ASYNC_IO_COMPLETION` |
-| Category  | Io                    |
-| Severity  | MEDIUM                |
+| Category | Io |
+| Severity | MEDIUM |
 
 ## Troubleshooting
 
@@ -28,10 +28,10 @@ Use the following query to identify the top queries contributing to `ASYNC_IO_CO
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'ASYNC_IO_COMPLETION'
 ORDER BY wait_time_ms DESC;

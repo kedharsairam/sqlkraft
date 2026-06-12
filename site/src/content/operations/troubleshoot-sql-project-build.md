@@ -45,9 +45,7 @@ degradation in build speed. The two primary options are:
 
 using the
 
-MSBuild Log Viewer
-
-. This viewer is helpful for diagnosing dependency issues
+MSBuild Log Viewer. This viewer is helpful for diagnosing dependency issues
 
 and optimizing the build process. The command to generate this log is:
 
@@ -65,9 +63,7 @@ Bash
 
 The full set of switches can be found at the
 
-MSBuild Command-Line Reference
-
-.
+MSBuild Command-Line Reference.
 
 ```cmd
 msbuild.binlog dotnet build -bl dotnet build -flp:v=diag dotnet build -bl -flp:v=diag

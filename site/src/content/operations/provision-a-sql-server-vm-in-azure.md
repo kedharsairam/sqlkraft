@@ -17,11 +17,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server in the Azure portal
+in the Azure portal
 
-Applies to:
-
-SQL Server on Azure VM
+on Azure VM
 
 In this quickstart tutorial, you use the Azure portal to create a Linux virtual machine with SQL
 
@@ -43,19 +41,13 @@ before you begin.
 
 1. Sign in to the
 
-Azure portal
+Azure portal.
 
-.
-
-2. In the left pane, select
-
-.
+2. In the left pane, select.
 
 3. In the
 
-pane, select
-
-.
+pane, select.
 
 4. Select
 

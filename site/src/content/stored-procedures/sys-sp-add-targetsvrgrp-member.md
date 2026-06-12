@@ -2,7 +2,7 @@
 name: "sys.sp_add_targetsvrgrp_member"
 title: "sp_add_targetsvrgrp_member"
 category: "general"
-description: "Adds the specified target server to the specified target server group. Transact-SQL syntax conventions The name of the server that should be added to the specified group."
+description: "Adds the specified target server to the specified target server group."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -17,7 +17,7 @@ syntax: |
 
 ## Description
 
-Adds the specified target server to the specified target server group. Transact-SQL syntax conventions The name of the server that should be added to the specified group.
+Adds the specified target server to the specified target server group.
 
 ## Syntax
 

@@ -16,8 +16,6 @@ Article
 
 12/17/2024
 
-Applies to:
-
 SQL Server
 
 An axis step in a path expression includes the following components:
@@ -30,17 +28,13 @@ Zero or more step qualifiers (optional)
 
 For more information, see
 
-Path Expressions (XQuery)
-
-.
+Path Expressions (XQuery).
 
 A node test is a condition and is the second component of the axis step in a path expression.
 
 All the nodes selected by a step must satisfy this condition. For the path expression,
 
-, the node test is
-
-. This step retrieves only
+, the node test is. This step retrieves only
 
 those element node children whose name is ProductDescription.
 

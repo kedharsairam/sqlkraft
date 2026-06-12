@@ -118,7 +118,7 @@ ADD
 ```sql
 |
 <column_index>
-} [ ,...n ]
+} [ ,.n ]
 |
 DROP
 [ {
@@ -129,7 +129,7 @@ EXISTS
 ]
 {
 constraint_name
-} [ ,...n ]
+} [ ,.n ]
 |
 INDEX
 [
@@ -138,7 +138,7 @@ EXISTS
 ]
 {
 index_name
-} [ ,...n ]
+} [ ,.n ]
 |
 COLUMN
 [
@@ -147,14 +147,14 @@ EXISTS
 ]
 {
 column_name
-} [ ,...n ]
+} [ ,.n ]
 |
 PERIOD
 FOR
 SYSTEM
 _
 TIME
-} [ ,...n ] ]
+} [ ,.n ] ]
 | [
 WITH
 {
@@ -169,7 +169,7 @@ NOCHECK
 CONSTRAINT
 {
 ALL
-| constraint_name [ ,...n ] }
+| constraint_name [ ,.n ] }
 | {
 ENABLE
 |
@@ -178,7 +178,7 @@ DISABLE
 TRIGGER
 {
 ALL
-| trigger_name [ ,...n ] }
+| trigger_name [ ,.n ] }
 |
 SWITCH
 [ [
@@ -210,10 +210,10 @@ NONCLUSTERED (column [
 ASC
 |
 DESC
-] [ ,... n ])
+] [ ,. n ])
 |
 NONCLUSTERED
-HASH (column [ ,... n ] )
+HASH (column [ ,. n ] )
 WITH (
 BUCKET
 _
@@ -222,8 +222,8 @@ COUNT
 }
 |
 FOREIGN
-KEY ( column [ ,...n ] )
-REFERENCES referenced_table_name [ ( ref_column [ ,...n ] ) ]
+KEY ( column [ ,.n ] )
+REFERENCES referenced_table_name [ ( ref_column [ ,.n ] ) ]
 |
 CHECK ( logical_expression )
 }

@@ -29,8 +29,6 @@ Article
 
 02/05/2024
 
-Applies to:
-
 SQL Server
 
 This article documents interoperability of Always On availability groups with other SQL Server

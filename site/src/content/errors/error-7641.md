@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 7641 16 No Full-Text catalog '%ls' does not exist in database '%.\*ls' or user does not have permission to perform this action. 7642 16 No A full-text catalog named '%ls' already exists in
+Description 7641 16 No Full-Text catalog '%ls' does not exist in database '%.\*ls' or user does not have permission to perform this action.
 
 ## Severity
 

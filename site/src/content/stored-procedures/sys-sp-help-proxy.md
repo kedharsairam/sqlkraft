@@ -2,7 +2,7 @@
 name: "sys.sp_help_proxy"
 title: "sp_help_proxy"
 category: "general"
-description: "Lists information for one or more proxies. Transact-SQL syntax conventions The proxy identification number of the proxy to list information for."
+description: "Lists information for one or more proxies. The proxy identification number of the proxy to list information for."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -25,7 +25,7 @@ syntax: |
 
 ## Description
 
-Lists information for one or more proxies. Transact-SQL syntax conventions The proxy identification number of the proxy to list information for. The name of the proxy to list information for. The name of the subsystem to list proxies for. The following table lists the values for each subsystem.
+Lists information for one or more proxies. The proxy identification number of the proxy to list information for.
 
 ## Syntax
 

@@ -37,9 +37,7 @@ Designer.
 
 2. On the
 
-menu, select
-
-.
+menu, select.
 
 3. Select the
 
@@ -51,13 +49,9 @@ list, select
 
 and then
 
-select
+select.
 
-.
-
-5. Add the required assembly references. Right-click the project node and then select
-
-. Select
+5. Add the required assembly references. Right-click the project node and then select. Select
 
 and navigate to the
 
@@ -65,21 +59,15 @@ folder. Choose Microsoft.Data.Tools.Schema.Sql.dll and select
 
 ,
 
-then select
-
-.
+then select.
 
 6. On the
 
-menu, select
-
-.
+menu, select.
 
 7. Right-click on the project in
 
-and choose
-
-.
+and choose.
 
 8. Add the following
 

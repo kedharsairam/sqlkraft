@@ -27,23 +27,17 @@ Article
 
 10/09/2024
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions, SQL Database
+2016 (13.x) and later versions, SQL Database
 
 Access this page from the principal database, and use it to configure and to modify the
 
 properties of the database Query Store. These options can also be configure by using the
 
-ALTER DATABASE SET options
-
-. For information about the Query Store, see
+ALTER DATABASE SET options. For information about the Query Store, see
 
 Monitoring
 
-Performance By Using the Query Store
-
-.
+Performance By Using the Query Store.
 
 Operation Mode
 

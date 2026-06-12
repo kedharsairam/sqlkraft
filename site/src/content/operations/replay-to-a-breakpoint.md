@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -45,17 +43,13 @@ trace file (SQL Server Profiler)
 
 or
 
-Open a trace table (SQL Server Profiler)
-
-.
+Open a trace table (SQL Server Profiler).
 
 Make sure that the trace file or table you open contains the event classes necessary for
 
 replay. For more information, see
 
-Replay Requirements
-
-.
+Replay Requirements.
 
 2. In the trace window, select an event that you want to use as a breakpoint. Use one of the
 
@@ -65,13 +59,9 @@ Press F9.
 
 On the
 
-menu, select
+menu, select.
 
-.
-
-Right-click the event, and then select
-
-.
+Right-click the event, and then select.
 
 A red bullet appears next to the selected trace event, indicating that it's the trace
 
@@ -89,9 +79,7 @@ trace.
 
 4. In the
 
-dialog box, verify the settings, and then select
-
-.
+dialog box, verify the settings, and then select.
 
 The replay starts, pausing when the breakpoint is reached.
 

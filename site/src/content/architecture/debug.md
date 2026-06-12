@@ -27,11 +27,9 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
-SQL Server provides support for debugging Transact-SQL and common language runtime (CLR)
+provides support for debugging Transact-SQL and common language runtime (CLR)
 
 objects in the database. The key aspects of debugging in SQL Server are the ease of setup and
 

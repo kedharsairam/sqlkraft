@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -98,8 +96,6 @@ Indicates that the log file grew automatically. This event is not triggered if
 the log file shrinks explicitly through ALTER DATABASE.
 
 Extended Events
-
-Last updated on 11/18/2025
 
 ﾉ
 

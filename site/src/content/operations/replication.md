@@ -27,8 +27,6 @@ Article
 
 11/18/2022
 
-Applies to:
-
 SQL Server
 
 Database mirroring can be used in conjunction with replication to improve availability for the
@@ -53,9 +51,7 @@ database. For information about recovering a distribution database or subscripti
 
 without any need to reconfigure replication, see
 
-Back Up and Restore Replicated Databases
-
-.
+Back Up and Restore Replicated Databases.
 
 Be aware of the following requirements and considerations when using replication with
 

@@ -50,23 +50,19 @@ For detailed information on how to address these issues, see
 
 Troubleshoot slow SQL Server
 
-performance caused by I/O issues
-
-.
+performance caused by I/O issues.
 
 For information on how to configure antivirus protection on SQL Server, see
 
 Configure antivirus
 
-software to work with SQL Server
-
-.
+software to work with SQL Server.
 
 I/O transfers that don't use a cache can take much longer on mechanical drives because of hard
 
 drive spin rates, the mechanical time needed to move the drive heads, and other limiting factors.
 
-SQL Server installations target systems that provide caching controllers. These controllers disable
+installations target systems that provide caching controllers. These controllers disable
 
 the on-disk caches and provide stable media caches to satisfy SQL Server I/O requirements. They
 

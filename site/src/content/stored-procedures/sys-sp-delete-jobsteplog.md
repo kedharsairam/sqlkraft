@@ -2,7 +2,7 @@
 name: "sys.sp_delete_jobsteplog"
 title: "sp_delete_jobsteplog"
 category: "general"
-description: "Removes all SQL Server Agent job step logs that are specified with the arguments. Use this stored procedure to maintain the Transact-SQL syntax conventions The job identification number for the job that contains the job step log to be removed. must be specified, but both can't be specified. must be specified, but both can't be specified."
+description: "Removes all SQL Server Agent job step logs that are specified with the arguments. Use this stored procedure to maintain the The job identification number for the job that contains the job step log to be removed. must be specified, but both can't be specified. must be specified, but both can't be specified."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -26,7 +26,7 @@ syntax: |
 
 ## Description
 
-Removes all SQL Server Agent job step logs that are specified with the arguments. Use this stored procedure to maintain the Transact-SQL syntax conventions The job identification number for the job that contains the job step log to be removed. must be specified, but both can't be specified. must be specified, but both can't be specified.
+Removes all SQL Server Agent job step logs that are specified with the arguments. Use this stored procedure to maintain the The job identification number for the job that contains the job step log to be removed. must be specified, but both can't be specified. must be specified, but both can't be specified.
 
 ## Syntax
 

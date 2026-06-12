@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article describes how to disconnect SQL Server instances from Azure Arc by using the Azure
@@ -47,9 +45,7 @@ lists of the extensions that you want to allow and block on the server. To learn
 
 Allow
 
-lists and block lists
-
-.
+lists and block lists.
 
 ７
 

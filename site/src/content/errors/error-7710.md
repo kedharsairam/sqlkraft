@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 7710 10 No Warning: The partition scheme '%.\*ls' does not have any next used filegroup. Partition scheme has not been changed. 7711 16 No The %ls option was specified more than once for th
+Description 7710 10 No Warning: The partition scheme '%.\*ls' does not have any next used filegroup. Partition scheme has not been changed.
 
 ## Severity
 

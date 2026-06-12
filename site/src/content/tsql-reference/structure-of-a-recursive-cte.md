@@ -2,12 +2,10 @@
 name: "Structure of a recursive CTE"
 title: "Structure of a recursive CTE"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -57,9 +55,7 @@ recursive steps. For more information about common table expressions, see
 
 WITH
 
-common_table_expression
-
-.
+common_table_expression.
 
 In Microsoft Fabric, Fabric Data Warehouse and the SQL analytics endpoint both support
 

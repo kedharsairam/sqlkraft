@@ -2,7 +2,7 @@
 name: "sys.sp_syscollector_update_collection_set"
 title: "sp_syscollector_update_collection_set"
 category: "general"
-description: "Used to modify the properties of a user-defined collection set or to rename a user-defined Transact-SQL syntax conventions In cases where the Windows account configured as a proxy is a non-interactive or interactive user that hasn't yet logged in, the profile directory will not exist, and the creation of the staging directory will fail. Therefore, if you're using a proxy account on a domain contro"
+description: "Used to modify the properties of a user-defined collection set or to rename a user-defined In cases where the Windows account configured as a proxy is a non-interactive or interactive user that hasn't yet logged in, the profile directory will not exist, and the creation of the staging directory will fail. Therefore, if you're using a proxy account on a domain contro"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -44,7 +44,7 @@ syntax: |
 
 ## Description
 
-Used to modify the properties of a user-defined collection set or to rename a user-defined Transact-SQL syntax conventions In cases where the Windows account configured as a proxy is a non-interactive or interactive user that hasn't yet logged in, the profile directory will not exist, and the creation of the staging directory will fail. Therefore, if you're using a proxy account on a domain controller, you must specify an interactive account that has been used at least
+Used to modify the properties of a user-defined collection set or to rename a user-defined In cases where the Windows account configured as a proxy is a non-interactive or interactive user that hasn't yet logged in, the profile directory will not exist, and the creation of the staging directory will fail.
 
 ## Syntax
 

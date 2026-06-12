@@ -31,13 +31,11 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
-In the .NET Framework, the
+In the.NET Framework, the
 
-object handles collations. The .NET Framework string
+object handles collations. The.NET Framework string
 
 application programming interfaces (APIs) use the
 
@@ -77,7 +75,7 @@ rather than
 
 database isn't associated with the parameter.
 
-SQL Server data types in the .NET Framework
+data types in the.NET Framework
 
 ```sql
 CompareInfo

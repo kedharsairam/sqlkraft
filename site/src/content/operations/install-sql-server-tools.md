@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -63,9 +61,7 @@ at the end of this article.
 
 These instructions are for installing the Microsoft ODBC 18 packages. For previous versions, see
 
-Install the Microsoft ODBC driver for SQL Server (Linux)
-
-.
+Install the Microsoft ODBC driver for SQL Server (Linux).
 
 Use the following steps to install the
 
@@ -87,9 +83,7 @@ and
 
 architectures. For a
 
-modern alternative across Linux, macOS, and Windows, see
-
-.
+modern alternative across Linux, macOS, and Windows, see.
 
 Red Hat Enterprise Linux
 

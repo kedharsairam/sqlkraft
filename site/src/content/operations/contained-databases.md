@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article contains information about the using a contained database with Always On
@@ -35,17 +33,13 @@ hosts an availability replica for the availability group.
 
 For more information, see
 
-Server Configuration: contained database authentication
-
-.
+Server Configuration: contained database authentication.
 
 Server configuration options
 
 What is an Always On availability group?
 
 Contained Databases
-
-Last updated on 02/05/2026
 
 ```cmd
 contained database authentication

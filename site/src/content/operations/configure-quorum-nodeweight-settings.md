@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to configure NodeWeight settings for a member node in a Windows
@@ -37,7 +35,7 @@ Server Failover Clustering (WSFC) cluster. NodeWeight settings are used during q
 
 to support disaster recovery and multi-subnet scenarios for Always On availability groups and
 
-SQL Server Failover Cluster Instances.
+Failover Cluster Instances.
 
 ,
 

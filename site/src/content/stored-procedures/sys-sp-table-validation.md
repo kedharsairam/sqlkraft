@@ -31,7 +31,7 @@ syntax: |
 
 ## Description
 
-If the Distribution Agent is executing , specifies whether the Distribution Agent should shut down immediately upon completion of the validation. @shutdown_agent , with a default of , the replication agent doesn't shut down. If , error 20578 is raised and the replication agent is signaled to shut down. This parameter is ignored when is executed directly by a user. The table name of the view used for output messages. , with a default of The list of columns that should be used in the checksum function. , with a default of . Enables validation of merge articles to specify a column list that excludes computed and timestamp columns. If performing a checksum validation and the expected checksum equals the checksum in the returns a message that the table passed checksum validation. Otherwise, it returns a message that the table might be out of synchronization and reports the
+If the Distribution Agent is executing , specifies whether the Distribution Agent should shut down immediately upon completion of the validation. @shutdown_agent , with a default of , the replication agent doesn't shut down. If , error 20578 is raised and the replication agent is signaled to shut down. This parameter is ignored when is executed directly by a user. The table name of the view used for output messages. , with a default of The list of columns that should be used in the checksum function. , with a default of. Enables validation of merge articles to specify a column list that excludes computed and timestamp columns. If performing a checksum validation and the expected checksum equals the checksum in the returns a message that the table passed checksum validation.
 
 ## Syntax
 
@@ -87,9 +87,7 @@ The list of columns that should be used in the checksum function.
 
 column_list
 
-, with a default of
-
-. Enables validation of merge articles to specify a column
+, with a default of. Enables validation of merge articles to specify a column
 
 list that excludes computed and timestamp columns.
 

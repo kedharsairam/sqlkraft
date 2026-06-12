@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -61,13 +59,13 @@ best suits your
 
 business needs.
 
-SQL Server 2025 (17.x) is
+2025 (17.x) is
 
 supported
 
 on Red Hat Enterprise Linux (RHEL) and Ubuntu.
 
-SQL Server 2022 (16.x) and earlier versions are
+2022 (16.x) and earlier versions are
 
 also supported
 
@@ -79,9 +77,7 @@ After you choose the appropriate distribution of Linux, familiarize yourself wit
 
 getting around
 
-Linux directories
-
-.
+Linux directories.
 
 This module helps you answer the following questions:
 

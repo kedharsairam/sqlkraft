@@ -41,8 +41,6 @@ Article
 
 09/19/2024
 
-Applies to:
-
 SQL Server
 
 In SQL Server, you can move

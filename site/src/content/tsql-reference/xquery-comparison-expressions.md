@@ -18,8 +18,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 XQuery provides the following types of comparison operators:

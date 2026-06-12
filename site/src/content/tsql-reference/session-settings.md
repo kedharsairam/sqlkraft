@@ -27,24 +27,16 @@ MERGE
 
 operations. For more information about authentication and access, see the
 
-Security center
-
-.
+Security center.
 
 Service Broker is a feature that provides native support for messaging and queuing
 
 applications. For more information, see
 
-Service Broker
-
-.
+Service Broker.
 
 SET statements determine how the current session handles run time settings. For an overview,
 
 see
 
-SET statements
-
-.
-
-Last updated on 11/18/2025
+SET statements.

@@ -63,9 +63,7 @@ datepart
 
 only when a literal is specified for
 
-date
-
-.
+date.
 
 For example, the default year-month-day for any
 
@@ -79,9 +77,7 @@ datepart
 
 date
 
-, and it returns
-
-.
+, and it returns.
 
 ### smalldatetime
 
@@ -103,7 +99,7 @@ date
 ```sql
 SELECT
 DATEPART (tzoffset,
-'2007-05-10  00:00:01.1234567 +05:10'
+'2007-05-10 00:00:01.1234567 +05:10'
 );
 ```
 

@@ -29,8 +29,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -41,9 +39,7 @@ Server Management Studio, Transact-SQL, or Replication Management Objects (RMO).
 
 For more information, see
 
-View and modify replication security settings
-
-.
+View and modify replication security settings.
 
 Configure distribution using the New Publication Wizard or the Configure Distribution Wizard.
 
@@ -65,15 +61,11 @@ expand the server node.
 
 2. Right-click the
 
-folder, and then click
-
-.
+folder, and then click.
 
 3. Follow the Configure Distribution Wizard to:
 
-Select a Distributor. To use a local Distributor, select
-
-. To use a remote
+Select a Distributor. To use a local Distributor, select. To use a remote
 
 Distributor, select
 
@@ -85,9 +77,7 @@ enabled to use the Distributor. For more information, see
 
 Enable a Remote Publisher at a
 
-Distributor (SQL Server Management Studio)
-
-.
+Distributor (SQL Server Management Studio).
 
 If you select a remote Distributor, you must enter a password on the
 

@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -45,7 +43,7 @@ To register a database as a DAC, use:
 
 The Register Data-tier Application Wizard in SQL Server Management Studio
 
-SQL Server Data Tools
+Data Tools
 
 The SqlPackage command-line utility
 
@@ -105,7 +103,7 @@ d.
 
 Register DAC Page
 
-SQL Server Management Studio
+Management Studio
 
 ```cmd
 msdb master sys.sql_expression_dependencies

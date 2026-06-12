@@ -27,8 +27,6 @@ Article
 
 01/22/2024
 
-Applies to:
-
 SQL Server
 
 This topic shows how to create a table for storing FILESTREAM data.
@@ -47,21 +45,15 @@ to display the Query Editor.
 
 Transact-SQL code creates a FILESTREAM-enabled table called Records.
 
-3. To create the table, click
+3. To create the table, click.
 
-.
-
-The following code example shows how to create a table that is named
-
-. The
+The following code example shows how to create a table that is named. The
 
 column is a
 
 column and is required to use FILESTREAM data with Win32 APIs. The
 
-column is a
-
-. The
+column is a. The
 
 column is a
 
@@ -75,9 +67,7 @@ in the file system.
 
 Note
 
-This example refers to the Archive database that is created in
-
-.
+This example refers to the Archive database that is created in.
 
 ```sql
 Records

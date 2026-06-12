@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 4080 16 No The incoming tabular data stream (TDS) protocol stream is incorrect. The TRACE TDS header contained errors. 4081 16 No The parameter '%.\*ls' was deduced to be a table-valued par
+Description 4080 16 No The incoming tabular data stream (TDS) protocol stream is incorrect. The TRACE TDS header contained errors.
 
 ## Severity
 

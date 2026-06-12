@@ -23,31 +23,23 @@ pubDate: 2025-12-01
 
 06/16/2025
 
-Applies to:
-
 SQL Server
 
 This article describes failover and failover modes for SQL Server
 
-Always On availability groups
-
-.
+Always On availability groups.
 
 Within the context of an availability group, the primary role and secondary role of availability
 
 replicas are typically interchangeable in a process known as
 
-failover
-
-. Three forms of failover
+failover. Three forms of failover
 
 exist: automatic failover (without data loss), planned manual failover (without data loss), and
 
 forced manual failover (with possible data loss), typically called
 
-forced failover
-
-. Both automatic
+forced failover. Both automatic
 
 and planned manual failover preserve all your data. An availability group fails over at the
 

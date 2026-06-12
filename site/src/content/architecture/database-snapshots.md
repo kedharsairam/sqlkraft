@@ -27,8 +27,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 A database snapshot is a read-only, static view of a SQL Server database (the source database).
@@ -79,9 +77,7 @@ they reside.
 
 The snapshot stores the copied original pages using one or more
 
-sparse files
-
-. Initially, a sparse
+sparse files. Initially, a sparse
 
 file is an empty file that contains no user data and hasn't yet been allocated disk space for user
 

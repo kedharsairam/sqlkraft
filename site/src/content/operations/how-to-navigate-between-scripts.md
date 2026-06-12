@@ -31,9 +31,7 @@ definition.
 
 folder in
 
-and double-click
-
-.
+and double-click.
 
 2. Right-click
 
@@ -47,15 +45,11 @@ type is
 
 defined.
 
-4. Go back to
-
-. This time selects
+4. Go back to. This time selects
 
 in the
 
-contextual menu for
-
-. In the
+contextual menu for. In the
 
 pane, you see a list of
 

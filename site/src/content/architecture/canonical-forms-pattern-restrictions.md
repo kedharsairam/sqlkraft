@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -75,9 +73,7 @@ following primitive types:
 
 ,
 
-and
-
-. SQL Server issues a warning when you add any such components to a
+and. SQL Server issues a warning when you add any such components to a
 
 schema collection.
 
@@ -97,17 +93,13 @@ facets for its type on reinsertion:
 
 ,
 
-, or
-
-. To prevent this, SQL Server rejects any values of types derived from
+, or. To prevent this, SQL Server rejects any values of types derived from
 
 or
 
 that can't be serialized and reinserted.
 
 Requirements and Limitations for XML Schema Collections on the Server
-
-Last updated on 11/18/2025
 
 ```sql
 xs:float xs:double

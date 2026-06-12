@@ -15,7 +15,7 @@ pubDate: 2025-03-15
 --SQL Server: Memory Manager: Memory Grants Pending
 --SQL Server: Buffer Manager -> Free List Stalls/sec
 --SQL Server: Buffer Manager -> Page Life Expectancy
---SQL Server: Buffer Manager -> Buffer Cache Hit Ratio  (>95% is good)
+--SQL Server: Buffer Manager -> Buffer Cache Hit Ratio (>95% is good)
 --SQL Server: BufferManager -> Lazy Writes/sec
 --SQL Server: BufferManager -> Page Reads/sec
 

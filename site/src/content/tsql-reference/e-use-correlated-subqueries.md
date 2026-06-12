@@ -51,9 +51,7 @@ requires a value for
 
 , but this value changes as the SQL Server Database
 
-Engine examines different rows in
-
-.
+Engine examines different rows in.
 
 You can also use a correlated subquery in the
 

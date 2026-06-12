@@ -57,9 +57,7 @@ server instance must be set to either PARTNER or ALL. For information about how 
 
 endpoint, see
 
-Create a Database Mirroring Endpoint for Windows Authentication
-
-. To learn the
+Create a Database Mirroring Endpoint for Windows Authentication. To learn the
 
 role and state of the database mirroring endpoint of a server instance, on that instance, use the
 

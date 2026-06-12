@@ -27,8 +27,6 @@ Article
 
 07/25/2023
 
-Applies to:
-
 SQL Server
 
 The Plan Guide Unsuccessful event class indicates that SQL Server could not produce an

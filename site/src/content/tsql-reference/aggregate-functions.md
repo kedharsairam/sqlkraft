@@ -2,12 +2,10 @@
 name: "Aggregate functions"
 title: "Aggregate functions"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -106,31 +104,3 @@ SUM
 VAR
 
 VARP
-
-Related content
-
-What are the SQL database functions?
-
-SELECT - OVER clause (Transact-SQL)
-
-Last updated on 03/23/2026
-
-```sql
-COUNT(*)
-```
-
-`NULL`
-
-```sql
-GROUP BY
-```
-
-`STRING_AGG`
-
-`GROUPING`
-
-`GROUPING_ID`
-
-`SELECT`
-
-`HAVING`

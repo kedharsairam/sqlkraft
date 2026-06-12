@@ -10,9 +10,7 @@ Lock after qualification is not used in the following scenarios:
 
 When disabled by
 
-LAQ heuristics
-
-.
+LAQ heuristics.
 
 When conflicting locking hints, such as
 

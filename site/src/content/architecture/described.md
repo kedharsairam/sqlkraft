@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -85,6 +83,4 @@ Documentation uses the term B-tree generally in reference to indexes. In rowstor
 
 indexes, the Database Engine implements a B+ tree. This does not apply to columnstore
 
-indexes or indexes on memory-optimized tables. For more information, see the
-
-.
+indexes or indexes on memory-optimized tables. For more information, see the.

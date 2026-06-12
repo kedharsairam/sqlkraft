@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2019 (15.x) and later versions
+2019 (15.x) and later versions
 
 Azure SQL Database
 
@@ -38,8 +36,6 @@ Specifies a search condition for a graph, which is searched recursively or repet
 SHORTEST_PATH can be used inside MATCH with graph node and edge tables, in the SELECT
 
 statement.
-
-Transact-SQL syntax conventions
 
 The SHORTEST_PATH function lets you find:
 
@@ -63,9 +59,7 @@ SHORTEST_PATH function.
 
 For complete syntax, refer to
 
-MATCH (SQL Graph)
-
-.
+MATCH (SQL Graph).
 
 FOR PATH must be used with any node or edge table name in the FROM clause, which
 

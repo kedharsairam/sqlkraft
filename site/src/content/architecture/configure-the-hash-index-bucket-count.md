@@ -61,7 +61,7 @@ duplicate value. The rate of value duplication is used to decide whether a hash 
 nonclustered index is the appropriate index type, not to calculate the bucket count.
 
 ```sql
-ALTER TABLE...ALTER INDEX REBUILD
+ALTER TABLE.ALTER INDEX REBUILD
 ```
 
 `BUCKET_COUNT`

@@ -31,8 +31,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic shows you some of the common queries on the Always On dynamic management
@@ -43,17 +41,13 @@ For more information on the availability group DMVs, see
 
 Always On Availability Groups
 
-dynamic management views and functions (Transact-SQL)
-
-. For more information on the
+dynamic management views and functions (Transact-SQL). For more information on the
 
 availability groups catalog views, see
 
 Always On Availability Groups catalog views (Transact-
 
-SQL)
-
-.
+SQL).
 
 The following Transact-SQL (T-SQL) query retrieves the status of all the nodes in the current
 

@@ -78,7 +78,7 @@ parenthesis
 
 The following SQL Server Database Engine features are supported in the next version of SQL Server. The specific version of
 
-SQL Server hasn't been determined.
+hasn't been determined.
 
 Deprecated feature
 

@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 8619 16 No The query processor could not produce a query plan because a worktable is required, and its minimum row size exceeds the maximum allowable of %d bytes. A typical reason why a wo
+Description 8619 16 No The query processor could not produce a query plan because a worktable is required, and its minimum row size exceeds the maximum allowable of %d bytes.
 
 ## Severity
 

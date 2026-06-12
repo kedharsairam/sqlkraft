@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -35,7 +33,7 @@ This topic describes how to modify an index in SQL Server by using SQL Server Ma
 
 Studio or Transact-SQL.
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 
@@ -45,17 +43,11 @@ expand that instance.
 
 2. Expand
 
-, expand the database in which the table belongs, and then expand
+, expand the database in which the table belongs, and then expand.
 
-.
+3. Expand the table in which the index belongs and then expand.
 
-3. Expand the table in which the index belongs and then expand
-
-.
-
-4. Right-click the index that you want to modify and then click
-
-.
+4. Right-click the index that you want to modify and then click.
 
 5. In the
 

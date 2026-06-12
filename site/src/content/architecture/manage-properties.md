@@ -31,8 +31,6 @@ Article
 
 01/22/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -41,7 +39,7 @@ Azure SQL Managed Instance
 
 This topic describes how to view or change the properties of a database in SQL Server by using
 
-SQL Server Management Studio or Transact-SQL. After you change a database property, the
+Management Studio or Transact-SQL. After you change a database property, the
 
 modification takes effect immediately.
 
@@ -49,7 +47,7 @@ Recommendations
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 

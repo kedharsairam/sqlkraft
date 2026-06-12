@@ -15,11 +15,11 @@ Occurs when the task is waiting for the network to send data to the client. High
 
 ## Key Metrics
 
-| Metric    | Description        |
+| Metric | Description |
 | --------- | ------------------ |
 | Wait Type | `ASYNC_NETWORK_IO` |
-| Category  | Latency            |
-| Severity  | MEDIUM             |
+| Category | Latency |
+| Severity | MEDIUM |
 
 ## Troubleshooting
 
@@ -29,10 +29,10 @@ Use the following query to identify the top queries contributing to `ASYNC_NETWO
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'ASYNC_NETWORK_IO'
 ORDER BY wait_time_ms DESC;

@@ -23,9 +23,7 @@ enddate
 
 by
 
-datepart
-
-.
+datepart.
 
 For a return value out of range for
 
@@ -111,17 +109,13 @@ If only a time value is assigned to a date data type variable,
 
 sets the value of the
 
-missing date part to the default value:
-
-. If only a date value is assigned to a variable
+missing date part to the default value:. If only a date value is assigned to a variable
 
 of a time or date data type,
 
 sets the value of the missing time part to the default
 
-value:
-
-. If either
+value:. If either
 
 startdate
 
@@ -175,9 +169,7 @@ in each statement crosses one calendar or time
 
 boundary of its
 
-datepart
-
-. Each statement returns 1. If
+datepart. Each statement returns 1. If
 
 startdate
 
@@ -191,9 +183,7 @@ values but they have the same calendar week values,
 
 will return 0 for
 
-datepart
-
-.
+datepart.
 
 ### smalldatetime
 

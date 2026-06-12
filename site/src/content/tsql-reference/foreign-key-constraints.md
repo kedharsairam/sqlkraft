@@ -25,9 +25,7 @@ If a primary key is defined on a CLR user-defined type column, the implementatio
 
 type must support binary ordering. For more information, see
 
-CLR user-defined types
-
-.
+CLR user-defined types.
 
 If CLUSTERED or NONCLUSTERED isn't specified for a UNIQUE constraint,
 
@@ -43,9 +41,7 @@ If a unique constraint is defined on a CLR user-defined type column, the impleme
 
 of the type must support binary or operator-based ordering. For more information, see
 
-CLR user-defined types
-
-.
+CLR user-defined types.
 
 When a value other than NULL is entered into the column of a FOREIGN KEY constraint,
 
@@ -63,9 +59,7 @@ server. Cross-database referential integrity must be implemented through trigger
 
 more information, see
 
-CREATE TRIGGER
-
-.
+CREATE TRIGGER.
 
 ７
 
@@ -141,8 +135,6 @@ If a foreign key is defined on a CLR user-defined type column, the implementatio
 
 type must support binary ordering. For more information, see
 
-CLR user-defined types
-
-.
+CLR user-defined types.
 
 #### Value returned

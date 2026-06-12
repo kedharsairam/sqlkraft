@@ -114,9 +114,7 @@ Note
 
 For more information on behavior changes with the lock after qualification (LAQ) feature of
 
-optimized locking, see
-
-.
+optimized locking, see.
 
 ﾉ
 

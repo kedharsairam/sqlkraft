@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -37,7 +35,7 @@ with a specific service, and all conversations in the group are conversations to
 
 service. A conversation group can contain any number of conversations.
 
-SQL Server uses conversation groups to provide exactly-once-in-order (EOIO) access to
+uses conversation groups to provide exactly-once-in-order (EOIO) access to
 
 messages that are related to a specific business task. When an application sends or receives a
 

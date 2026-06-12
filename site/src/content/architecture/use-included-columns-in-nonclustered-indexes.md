@@ -10,9 +10,7 @@ Nonclustered indexes have one row in
 
 sys.partitions
 
-for each partition used by the index, with
-
-. By default, a nonclustered index has a single partition. When a nonclustered
+for each partition used by the index, with. By default, a nonclustered index has a single partition. When a nonclustered
 
 index has multiple partitions, each partition has a B+ tree structure that contains the index
 
@@ -32,9 +30,7 @@ stores the index B+ tree pages. The nonclustered index also has one
 
 allocation unit
 
-per partition if it contains large object (LOB) columns such as
-
-. Additionally, it
+per partition if it contains large object (LOB) columns such as. Additionally, it
 
 has one
 

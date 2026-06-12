@@ -21,9 +21,7 @@ pubDate: 2025-12-01
 
 07/03/2025
 
-Applies to:
-
-SQL Server 2019 (15.x) and later - Linux
+2019 (15.x) and later - Linux
 
 SQL Server Reporting Services
 
@@ -69,7 +67,7 @@ repository for demand driven or
 
 scheduled report output
 
-SQL Server Reporting
+Reporting
 
 Services (
 
@@ -87,7 +85,7 @@ Windows 11 client, running SQL Server
 
 Management Studio (SSMS)
 
-SQL Server 2019
+2019
 
 (
 

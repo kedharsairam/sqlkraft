@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 In a SQL Server failover cluster instance (FCI), only one node can own the Windows Server
@@ -67,9 +65,7 @@ for quorum configuration and health detection, see
 
 WSFC Quorum Modes and Voting
 
-Configuration (SQL Server)
-
-.
+Configuration (SQL Server).
 
 The failover process can be broken down into the following steps:
 

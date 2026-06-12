@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server migration in Azure Arc
-
-Applies to:
+migration in Azure Arc
 
 SQL Server
 
@@ -51,9 +49,7 @@ portal, you need the following prerequisites:
 
 An active Azure subscription. If you don't have one,
 
-create a free account
-
-.
+create a free account.
 
 A
 
@@ -71,9 +67,7 @@ of the
 
 Azure extension for SQL Server. To upgrade your extension, see
 
-Upgrade the extension
-
-.
+Upgrade the extension.
 
 Migration with LRS works with every edition of SQL Server on Windows. While migration to
 
@@ -83,6 +77,4 @@ both the General Purpose and Business Critical service tiers of SQL Managed Inst
 
 Note
 
-You can provide feedback about your migration experience
-
-.
+You can provide feedback about your migration experience.

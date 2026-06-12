@@ -58,9 +58,7 @@ were
 
 enlarged 50 times and renamed to
 
-and
-
-.
+and.
 
 ### Showplan Logical and Physical Operators
 
@@ -114,9 +112,7 @@ and excludes the
 
 parent worker thread. Each branch is limited to a number of worker threads that's equal to
 
-MaxDOP. In this example there are two concurrent branches and MaxDOP is set to 8, therefore
-
-.
+MaxDOP. In this example there are two concurrent branches and MaxDOP is set to 8, therefore.
 
 ７
 
@@ -130,9 +126,7 @@ is an area of the plan that groups one
 
 or more operators between Parallelism operators, also called Exchange Iterators. For more
 
-information about plan operators, see
-
-.
+information about plan operators, see.
 
 For reference, observe the live execution plan from
 

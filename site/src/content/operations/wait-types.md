@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 When troubleshooting Always On Availability Groups latency, wait statistics can be monitored
@@ -37,15 +35,11 @@ for accumulation using the availability groups-specific wait types in the dynami
 
 view (DMV)
 
-sys.dm_os_wait_stats (Transact-SQL)
-
-.
+sys.dm_os_wait_stats (Transact-SQL).
 
 For general information on using wait statistics, see
 
-SQL Server 2005 Waits and Queues
-
-. That
+2005 Waits and Queues. That
 
 document was written for SQL Server 2005, but its information can be applied to later SQL
 

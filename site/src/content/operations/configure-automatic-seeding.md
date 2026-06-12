@@ -27,11 +27,9 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
-SQL Server 2016 introduced automatic seeding of availability groups. When you create an
+2016 introduced automatic seeding of availability groups. When you create an
 
 availability group with automatic seeding, SQL Server automatically creates the secondary
 
@@ -43,9 +41,7 @@ use the latest version of SQL Server Management Studio.
 
 For background information, see
 
-Automatic seeding for secondary replicas
-
-.
+Automatic seeding for secondary replicas.
 
 In SQL Server 2016, automatic seeding requires that the data and log file path is the same on
 
@@ -57,9 +53,7 @@ hosted on the same platform (for example either Windows or Linux). Cross-platfor
 
 groups have different paths for the replicas. For details, see
 
-Disk layout
-
-.
+Disk layout.
 
 Availability group seeding communicates over the database mirroring endpoint. Open inbound
 
@@ -71,9 +65,7 @@ a current full backup and transaction log backup. These backup files are not use
 
 seeding, but they are required before including the database in an availability group.
 
-To create an availability group with automatic seeding, set
-
-.
+To create an availability group with automatic seeding, set.
 
 The following example creates an availability group on a two-node Windows Server failover
 

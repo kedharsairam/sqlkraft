@@ -27,8 +27,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 Aggregate functions perform a calculation on a set of values and return a single value.
@@ -41,7 +39,7 @@ or
 
 operate on a set of input scalar values and generate a single aggregate value from that set.
 
-SQL Server integration with the .NET Framework common language runtime (CLR) now allows
+integration with the.NET Framework common language runtime (CLR) now allows
 
 developers to create custom aggregate functions in managed code, and to make these
 

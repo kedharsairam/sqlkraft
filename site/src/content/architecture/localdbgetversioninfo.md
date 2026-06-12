@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 07/14/2025
 
-Applies to:
-
 SQL Server
 
 Returns information for the specified SQL Server Express LocalDB version, such as whether it
@@ -46,17 +44,17 @@ _
 LocalDBVersionInfo
 {
 // Contains the size of the LocalDBVersionInfo struct
-DWORD  cbLocalDBVersionInfoSize;
+DWORD cbLocalDBVersionInfoSize;
 // Holds the version name
 TLocalDBVersionwszVersion;
 // TRUE if the instance files exist on disk, FALSE otherwise
-BOOL   bExists;
+BOOL bExists;
 // Holds the LocalDB version for the instance in the format:
 major.minor.build.revision
-DWORD  dwMajor;
-DWORD  dwMinor;
-DWORD  dwBuild;
-DWORD  dwRevision;
+DWORD dwMajor;
+DWORD dwMinor;
+DWORD dwBuild;
+DWORD dwRevision;
 } LocalDBVersionInfo;
 HRESULT
 LocalDBGetVersionInfo (

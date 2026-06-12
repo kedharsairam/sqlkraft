@@ -11,7 +11,7 @@ Regular expressions can be used to match
 
 complex patterns and manipulate data in
 
-SQL Server and Azure SQL database.
+and Azure SQL database.
 
 Regular expression support within T-SQL
 
@@ -23,9 +23,7 @@ compatibility levels For more information,
 
 see
 
-Regular expressions functions preview
-
-.
+Regular expressions functions preview.
 
 Regular expression functions such as
 
@@ -47,9 +45,7 @@ added the Database engine. For more
 
 information, see
 
-AI functions
-
-.
+AI functions.
 
 Introduces the
 
@@ -121,9 +117,7 @@ default in compatibility level 160. For more
 
 information, see
 
-PSP Optimization
-
-.
+PSP Optimization.
 
 Cardinality estimation uses only one default set
 

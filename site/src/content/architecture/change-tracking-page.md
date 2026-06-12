@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -36,9 +34,7 @@ information about the options available on this page, see
 
 Enable and Disable Change Tracking
 
-(SQL Server)
-
-.
+(SQL Server).
 
 Use to enable or disable change tracking for the database.
 
@@ -52,17 +48,13 @@ individual tables.
 
 You can also configure change tracking by using
 
-ALTER DATABASE
-
-.
+ALTER DATABASE.
 
 Specifies the minimum period for keeping change track information in the database. Data is
 
 removed only if the
 
-value is
-
-.
+value is.
 
 The default value is 2.
 
@@ -70,13 +62,9 @@ Specifies the units for the Retention Period value. You can select
 
 ,
 
-, or
+, or. The
 
-. The
-
-default value is
-
-.
+default value is.
 
 The minimum retention period is 1 minute. There is no maximum retention period.
 

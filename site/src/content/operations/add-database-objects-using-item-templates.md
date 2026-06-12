@@ -71,8 +71,7 @@ Add database objects to your project using item templates from the Database Proj
 
 Expand table
 
-```cmd
-.sqlproj
+```cmd.sqlproj
 INSERT
 UPDATE
 DELETE

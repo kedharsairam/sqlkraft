@@ -39,7 +39,7 @@ Tools (SSDT) integration)
 
 NuGet APIs, schema compare
 
-- ScriptDom, Microsoft.Data.SqlClient, .NET support, system DACPACs,
+- ScriptDom, Microsoft.Data.SqlClient,.NET support, system DACPACs,
 
 compatibility defaults
 
@@ -47,21 +47,13 @@ The following releases are the currently supported versions of SqlPackage.
 
 February 10, 2026
 
-Windows .NET 10
+Windows.NET 10.zip file
 
-.zip file
+Windows.msi file
 
-Windows
+macOS.NET 10.zip file
 
-.msi file
-
-macOS .NET 10
-
-.zip file
-
-Linux .NET 10
-
-.zip file
+Linux.NET 10.zip file
 
 ﾉ
 

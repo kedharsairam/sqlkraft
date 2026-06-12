@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 When SQL Server engine instances or associated services are enabled by Azure Arc, you can
@@ -35,9 +33,7 @@ On a physical or virtual machine that's running the Windows operating system.
 
 Connected to Azure Arc. See
 
-Connect your SQL Server to Azure Arc
-
-.
+Connect your SQL Server to Azure Arc.
 
 Connected to the internet directly or through a proxy server.
 
@@ -47,13 +43,9 @@ conventions and don't contain reserved words. For a list of reserved words, see
 
 Resolve errors
 
-for reserved resource names
+for reserved resource names. For a complete list of naming rules and restrictions, review
 
-. For a complete list of naming rules and restrictions, review
-
-naming rules and restrictions
-
-.
+naming rules and restrictions.
 
 To inventory databases:
 
@@ -63,13 +55,11 @@ To inventory databases:
 
 3. Under
 
-, select
-
-.
+, select.
 
 4. Use the
 
-SQL Server databases - Azure Arc
+databases - Azure Arc
 
 area to view the databases that belong to the
 

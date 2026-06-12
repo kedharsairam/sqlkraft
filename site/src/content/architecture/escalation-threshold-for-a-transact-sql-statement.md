@@ -70,9 +70,7 @@ sequence:
 
 ,
 
-, and
-
-. The statement acquires 3,000 row locks in the clustered
+, and. The statement acquires 3,000 row locks in the clustered
 
 ```sql
 READ COMMITTED

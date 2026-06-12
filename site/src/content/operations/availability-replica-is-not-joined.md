@@ -35,8 +35,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 : Availability Replica Join State
@@ -67,9 +65,7 @@ to the availability group. For more information about joining secondary replicas
 
 groups, see
 
-Joining a Secondary Replica to an Availability Group (SQL Server)
-
-.
+Joining a Secondary Replica to an Availability Group (SQL Server).
 
 Overview of Always On Availability Groups (SQL Server)
 

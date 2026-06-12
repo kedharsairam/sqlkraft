@@ -21,17 +21,15 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server on Linux
+on Linux
 
 07/03/2025
-
-Applies to:
 
 SQL Server
 
 - Linux
 
-SQL Server Data Tools (SSDT) turns Visual Studio into a powerful development and database
+Data Tools (SSDT) turns Visual Studio into a powerful development and database
 
 lifecycle management (DLM) environment for SQL Server on Linux. You can develop, build, test,
 
@@ -43,9 +41,7 @@ code.
 
 Download and
 
-Install Visual Studio
-
-. If you don't have a Visual Studio license, Visual Studio Community
+Install Visual Studio. If you don't have a Visual Studio license, Visual Studio Community
 
 edition is a free, fully featured IDE for students, open-source, and individual developers.
 

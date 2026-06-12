@@ -6,9 +6,7 @@ tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
 
-shorter duration than a higher isolation level, such as
-
-. This reduces lock
+shorter duration than a higher isolation level, such as. This reduces lock
 
 contention.
 
@@ -26,9 +24,7 @@ Snapshot isolation also uses row versioning, which doesn't use shared locks duri
 
 operations. Before a transaction can run under snapshot isolation, the
 
-database option must be set
-
-.
+database option must be set.
 
 Use row versioning-based isolation levels to minimize deadlocks that can occur between read
 
@@ -50,23 +46,17 @@ sample database with the default
 
 schema and data when
 
-READ_COMMITTED_SNAPSHOT has been enabled
-
-. To download this
+READ_COMMITTED_SNAPSHOT has been enabled. To download this
 
 sample, visit
 
-AdventureWorks sample databases
-
-.
+AdventureWorks sample databases.
 
 For an example that causes a deadlock when optimized locking is enabled, see
 
 Optimized
 
-locking and deadlocks
-
-.
+locking and deadlocks.
 
 
 
@@ -102,9 +92,7 @@ database.
 
 We refer to these sessions as
 
-and
-
-. You can create these two sessions by
+and. You can create these two sessions by
 
 creating two query windows in SQL Server Management Studio (SSMS).
 
@@ -136,9 +124,7 @@ Now, in
 
 Instead, it operates in
 
-autocommit transaction mode
-
-. This statement updates the
+autocommit transaction mode. This statement updates the
 
 table. The update takes an update (
 
@@ -158,17 +144,11 @@ needs shared (
 
 ,
 
-including the rows that are locked by
+including the rows that are locked by.
 
-.
+is blocked on.
 
-is blocked on
-
-.
-
-Return to
-
-. Run the following
+Return to. Run the following
 
 statement. This statement executes as a part of
 

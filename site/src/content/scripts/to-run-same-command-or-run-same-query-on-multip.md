@@ -1,7 +1,7 @@
 ---
 name: "To Run Same Command or Run Same Query on Multip"
 title: "To Run Same Command or Run Same Query on Multip"
-description: "SQL Server diagnostic script for database operations."
+description: "diagnostic script for database operations."
 category: database
 tags: ["database"]
 pubDate: 2025-03-15

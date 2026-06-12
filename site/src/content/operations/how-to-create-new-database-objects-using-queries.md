@@ -24,9 +24,7 @@ IntelliSense and other language support. For more information, see
 
 Use Transact-SQL Editor to
 
-edit and execute scripts
-
-.
+edit and execute scripts.
 
 The Transact-SQL Editor is invoked when you use the
 
@@ -52,9 +50,7 @@ Editor.
 
 1. Right-click the
 
-database node and select
-
-.
+database node and select.
 
 2. In the script pane, paste in this code:
 
@@ -66,11 +62,9 @@ button in the Transact-SQL Editor toolbar to run this query.
 
 database in
 
-SQL Server Object Explorer
+Object Explorer
 
-and select
-
-. A new
+and select. A new
 
 table has been added to the database.
 

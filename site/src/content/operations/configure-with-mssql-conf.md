@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -117,7 +115,5 @@ Starting in SQL Server 2025 (17.x), SUSE Linux Enterprise Server (SLES) isn't su
 
 Expand table
 
-```cmd
-.mdf
-.ldf master master
+```cmd.mdf.ldf master master
 ```

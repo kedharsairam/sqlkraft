@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -44,8 +42,6 @@ of these queries are specified against the bicycle manufacturing instructions XM
 that are stored in the Instructions column of the ProductModel table.
 
 Use PATH Mode with FOR XML
-
-Last updated on 11/18/2025
 
 ```sql
 WITH

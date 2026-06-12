@@ -25,9 +25,7 @@ and
 
 of an
 
-or
-
-.
+or.
 
 In terms of locking,
 
@@ -125,9 +123,7 @@ and
 
 SET
 
-TRANSACTION ISOLATION LEVEL (Transact-SQL)
-
-.
+TRANSACTION ISOLATION LEVEL (Transact-SQL).
 
 ## JOIN best practices
 
@@ -165,9 +161,7 @@ it must satisfy the conditions for updating views. For more information about up
 
 data by using a view, see
 
-Modify Data Through a View
-
-.
+Modify Data Through a View.
 
 Use the
 
@@ -223,9 +217,7 @@ the statement
 
 ## TOP clause best practices
 
-internally as
-
-. This process, which is called
+internally as. This process, which is called
 
 simple parameterization
 
@@ -273,17 +265,13 @@ the
 
 query hint in the plan guide. For more information, see
 
-Specify Query Parameterization Behavior by Using Plan Guides
-
-.
+Specify Query Parameterization Behavior by Using Plan Guides.
 
 If
 
 statements are executed frequently on the database, consider setting the
 
-option on the database to
-
-. Use caution when setting this
+option on the database to. Use caution when setting this
 
 option. The
 
@@ -293,17 +281,13 @@ queries against the database are processed. For more information, see
 
 Forced
 
-Parameterization
-
-.
+Parameterization.
 
 As a newer and easier alternative to plan guides, consider a similar strategy with Query
 
 Store hints. For more information, see
 
-Query Store hints
-
-.
+Query Store hints.
 
 In the
 
@@ -510,7 +494,7 @@ ON <merge_search_condition>
 `WHEN`
 
 ```sql
-WHEN NOT MATCHED AND S.EmployeeName LIKE 'S%' THEN INSERT....
+WHEN NOT MATCHED AND S.EmployeeName LIKE 'S%' THEN INSERT.
 ```
 
 ```sql
@@ -619,7 +603,7 @@ WHEN MATCHED
 
 `MERGE`
 
-`OPENROWSET(BULK...)`
+`OPENROWSET(BULK.)`
 
 `MERGE`
 
@@ -627,6 +611,6 @@ WHEN MATCHED
 
 `UNIQUE`
 
-`OPENROWSET(BULK...)`
+`OPENROWSET(BULK.)`
 
 `ORDER`

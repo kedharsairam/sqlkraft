@@ -33,8 +33,6 @@ Article
 
 08/10/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -79,9 +77,7 @@ sample database. Specifically, the query looks for the instance value of this
 
 column for the row where the
 
-is equal to
-
-.
+is equal to.
 
 VB
 

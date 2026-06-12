@@ -27,8 +27,6 @@ Article
 
 11/18/2022
 
-Applies to:
-
 SQL Server
 
 After you have configured log shipping, you can monitor information about the status of all
@@ -81,9 +79,7 @@ enable log shipping. If you add a monitor server later, you must remove the log 
 
 configuration and then replace it with a new configuration that includes a monitor server.
 
-For more information, see
-
-. Furthermore, after the
+For more information, see. Furthermore, after the
 
 monitor server has been configured, it cannot be changed without removing log shipping
 

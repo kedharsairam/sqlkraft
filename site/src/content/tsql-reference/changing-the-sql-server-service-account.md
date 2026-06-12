@@ -23,7 +23,7 @@ the local machine key or the Windows Data Protection API. This API uses a key th
 
 from the Windows credentials of the SQL Server service account.
 
-SQL Server 2012 (11.x) uses the AES encryption algorithm to protect the service master key
+2012 (11.x) uses the AES encryption algorithm to protect the service master key
 
 (SMK) and the database master key (DMK). AES is a newer encryption algorithm than 3DES
 
@@ -35,9 +35,7 @@ AES. For more information about regenerating the DMK, see
 
 ALTER MASTER KEY (Transact-
 
-SQL)
-
-.
+SQL).
 
 To change the SQL Server service account, use SQL Server Configuration Manager. To manage
 

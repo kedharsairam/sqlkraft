@@ -30,15 +30,13 @@ MicrosoftML
 
 (R package in SQL Server Machine Learning Services)
 
-SQL Server Big Data Clusters retired on February 28, 2025. For more information, see
+Big Data Clusters retired on February 28, 2025. For more information, see
 
 Big
 
-data options on the Microsoft SQL Server platform
+data options on the Microsoft SQL Server platform.
 
-.
-
-SQL Server PolyBase scale-out groups will be retired. Scale out group functionality is
+PolyBase scale-out groups will be retired. Scale out group functionality is
 
 removed from the product in SQL Server 2022 (16.x). PolyBase data virtualization
 
@@ -48,9 +46,7 @@ Support for Hadoop (HDFS) external data sources will be retired for SQL Server P
 
 See
 
-Changes to PolyBase support in SQL Server
-
-.
+Changes to PolyBase support in SQL Server.
 
 In SQL Server 2022 (16.x) and later versions, Hadoop external data sources are no longer
 

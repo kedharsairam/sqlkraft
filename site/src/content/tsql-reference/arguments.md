@@ -45,17 +45,13 @@ isolation level with the
 
 database option set
 
-to
-
-.
+to.
 
 The
 
 isolation level. For more information about snapshot isolation, see
 
-Snapshot Isolation in SQL Server
-
-.
+Snapshot Isolation in SQL Server.
 
 Specifies that statements can't read data that was modified but not committed by other
 
@@ -149,9 +145,7 @@ isolation level uses row versions to select rows to update. For read operations,
 
 isolation levels primarily define the level of protection from the effects of modifications
 
-made by other transactions. For more information, see
-
-.
+made by other transactions. For more information, see.
 
 ７
 
@@ -259,9 +253,7 @@ doing so causes the transaction to abort. If a transaction starts in the
 
 isolation level,
 
-you can change it to another isolation level and then back to
-
-. A transaction starts the
+you can change it to another isolation level and then back to. A transaction starts the
 
 first time it accesses data.
 

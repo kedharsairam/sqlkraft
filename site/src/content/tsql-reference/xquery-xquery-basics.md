@@ -10,8 +10,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This section describes the fundamentals of XQuery.
@@ -73,8 +71,6 @@ XQuery and Static Typing
 Describes XQuery in SQL Server as a statically typed language.
 
 XQuery Language Reference (SQL Server)
-
-Last updated on 12/11/2025
 
 Expand table
 

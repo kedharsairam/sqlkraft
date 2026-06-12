@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -79,7 +77,7 @@ atypical, forcing a recompile of the procedure and a new plan based on different
 
 parameter values can improve performance.
 
-SQL Server features statement-level recompilation of procedures. When SQL Server
+features statement-level recompilation of procedures. When SQL Server
 
 recompiles stored procedures, only the statement that caused the recompilation is
 

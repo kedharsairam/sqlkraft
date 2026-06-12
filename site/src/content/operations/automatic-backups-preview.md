@@ -19,11 +19,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server enabled by Azure Arc
+enabled by Azure Arc
 
 06/30/2025
-
-Applies to:
 
 SQL Server
 
@@ -53,9 +51,7 @@ Automated backups are only available for licenses with Software Assurance, SQL s
 
 or pay-as-you-go. For details, see
 
-Feature availability depending on license type
-
-.
+Feature availability depending on license type.
 
 You can configure two properties for automated backups:
 
@@ -79,13 +75,9 @@ Transaction log backups: Increments of 5 minutes.
 
 Note
 
-As a preview feature, the technology presented in this article is subject to
+As a preview feature, the technology presented in this article is subject to.
 
-.
-
-The latest updates are available in the
-
-.
+The latest updates are available in the.
 
 ```cmd
 az

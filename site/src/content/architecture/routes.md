@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/04/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -81,11 +79,9 @@ instance identifier match any broker instance identifier. When more than one rou
 
 conversation, SQL Server selects a route, as described in
 
-Service Broker Routing
+Service Broker Routing.
 
-.
-
-SQL Server guarantees that once the target acknowledges the first message, all subsequent
+guarantees that once the target acknowledges the first message, all subsequent
 
 messages on that conversation route to the same database. However, other conversations on
 

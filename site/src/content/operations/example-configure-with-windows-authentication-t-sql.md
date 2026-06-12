@@ -31,8 +31,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 This example shows all the stages required to create a database mirroring session with a
@@ -45,9 +43,7 @@ Security Wizard for database mirroring setup. For more information, see
 
 Establish a Database
 
-Mirroring Session Using Windows Authentication (SQL Server Management Studio)
-
-.
+Mirroring Session Using Windows Authentication (SQL Server Management Studio).
 
 The example uses the
 
@@ -61,9 +57,7 @@ For information on changing the recovery model in SQL Server Management Studio, 
 
 View
 
-or Change the Recovery Model of a Database (SQL Server)
-
-.
+or Change the Recovery Model of a Database (SQL Server).
 
 Requires ALTER permission on the database and CREATE ENDPOINT permission, or
 

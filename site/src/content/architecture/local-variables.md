@@ -58,9 +58,7 @@ time. For parameters, this process refers not to the values originally passed to
 
 stored procedure, but to their values at the time of recompilation. These values might have
 
-been modified within the procedure before reaching the statement that includes
-
-.
+been modified within the procedure before reaching the statement that includes.
 
 This behavior can improve performance for queries with highly variable or skewed input data.
 

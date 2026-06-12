@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Physical, operating system, or SQL Server problems can cause a failure in a database mirroring
@@ -41,9 +39,7 @@ of failures, the affected component reports an error to Sqlservr.exe. An error r
 
 another component is called a
 
-hard error
-
-. To detect other failures that would otherwise go
+hard error. To detect other failures that would otherwise go
 
 unnoticed, database mirroring implements its own time-out mechanism. When a mirroring
 
@@ -51,9 +47,7 @@ time-out occurs, database mirroring assumes that a failure has occurred and decl
 
 soft
 
-error
-
-. However, some failures that happen at the SQL Server instance level do not cause
+error. However, some failures that happen at the SQL Server instance level do not cause
 
 mirroring to time-out and can go undetected.
 

@@ -37,9 +37,9 @@ connection at this stage if the TLS versions don't line up, or they don't have a
 suites in common.
 
 ```sql
-Frame Time Offset Source IP    Dest IP      Description
+Frame Time Offset Source IP Dest IP Description
 ----- ----------- ------------ ------------ ----------------------------------
 -----------------------------------------------------------------
-6130  116.5786458 10.10.10.10  10.10.10.120 TDS:Prelogin, Version = 7.1 (0x71000001), SPID = 0, PacketID = 0, Flags=...AP..., SrcPort=60123, Ds
-6131  116.5805998 10.10.10.120 10.10.10.10  TDS:Response, Version = 7.1 (0x71000001), SPID = 0, PacketID = 1, Flags=...AP..., SrcPort=1433, Dst
+6130 116.5786458 10.10.10.10 10.10.10.120 TDS:Prelogin, Version = 7.1 (0x71000001), SPID = 0, PacketID = 0, Flags=.AP., SrcPort=60123, Ds
+6131 116.5805998 10.10.10.120 10.10.10.10 TDS:Response, Version = 7.1 (0x71000001), SPID = 0, PacketID = 1, Flags=.AP., SrcPort=1433, Dst
 ```

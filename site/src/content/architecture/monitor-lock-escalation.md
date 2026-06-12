@@ -52,9 +52,7 @@ table option. For more information, see the
 
 option of
 
-ALTER TABLE
-
-.
+ALTER TABLE.
 
 ７
 

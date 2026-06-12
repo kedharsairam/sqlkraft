@@ -2,7 +2,7 @@
 name: "sys.server_principals"
 title: "sys.server_principals"
 category: "compatibility"
-description: "Azure SQL Managed Instance Returns the login identification number of the user. Transact-SQL syntax conventions Is the login name of the user. is specified as can be any SQL Server login or Windows user or group that has permission to connect to an instance of SQL Server. If is not specified, the login identification number for the current user is returned. If the parameter contains the word NULL"
+description: "Returns the login identification number of the user. Is the login name of the user. is specified as can be any SQL Server login or Windows user or group that has permission to connect to an instance of SQL Server. If is not specified, the login identification number for the current user is returned. If the parameter contains the word NULL"
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |
@@ -15,7 +15,7 @@ syntax: |
 
 ## Description
 
-Azure SQL Managed Instance Returns the login identification number of the user. Transact-SQL syntax conventions Is the login name of the user. is specified as can be any SQL Server login or Windows user or group that has permission to connect to an instance of SQL Server. If is not specified, the login identification number for the current user is returned. If the parameter contains the word NULL will return NULL. SUSER_ID returns an identification number only for logins that have been explicitly provisioned inside SQL Server. This ID is used within SQL Server to track ownership and permissions. This ID is not equivalent to the SID of the login that is returned by SUSER_SID. If is a SQL Server Starting with SQL Server 2005 (9.x), SUSER_ID returns the value listed as Azure SQL Database Azure SQL Managed Instance
+Returns the login identification number of the user. Is the login name of the user. is specified as can be any SQL Server login or Windows user or group that has permission to connect to an instance of SQL Server. If is not specified, the login identification number for the current user is returned. If the parameter contains the word NULL will return NULL. SUSER_ID returns an identification number only for logins that have been explicitly provisioned inside SQL Server. This ID is used within SQL Server to track ownership and permissions. This ID is not equivalent to the SID of the login that is returned by SUSER_SID. If is a SQL Server Starting with SQL Server 2005 (9.x), SUSER_ID returns the value listed as Azure SQL Database Azure SQL Managed Instance
 
 ## Syntax
 
@@ -29,17 +29,11 @@ ON pe.grantee_principal_id = pr.principal_id;
 
 ## Permissions
 
-Applies to: SQL Server Azure SQL Database Azure SQL Managed Instance Analytics Platform System (PDW) Returns one row for every SQL Server authentication login. Description N/A Inherits from . Password policy is checked. Password expiration is checked. Hash of SQL login password. In SQL Server 2022 (16.x) and earlier versions, the stored password information is calculated using SHA-512 of the salted password. Starting with SQL Server 2025 (17.x), an iterated hash algorithm, RFC2898 (PBKDF), is used. The first byte of the hash indicates the version: for version 2 (SQL Server 2022 (16.x) and earlier versions) and for version 3 (SQL Server 2025 (17.x) and later versions). For a list of columns that this view inherits, see sys.server_principals . The columns and isn't inherited from sys.server_principals. To view both SQL Server authentication logins and Windows authentication logins, see sys.server_principals . When contained database users are enabled, connections can be made without logins. To identify those accounts, see sys.database_principals . In SQL Server, any SQL Server authentication login can see their own login name, and the login. To see other logins, the principal requires , , or a permission on the login. ﾉ Expand table Description sys.login_token (Transact-SQL) sys.server_principals (Transact-SQL) sys.database_principals (Transact-SQL) Principals (Database Engine) Last updated on 11/18/2025 See Also Description sys.user_token (Transact-SQL) sys.server_principals (Transact-SQL) sys.database_principals (Transact-SQL) Principals (Database Engine) See Also
-
 ## Remarks
-
-Applies to:
 
 Azure SQL Managed Instance
 
 Returns the login identification number of the user.
-
-Transact-SQL syntax conventions
 
 Is the login name of the user.
 
@@ -71,8 +65,6 @@ Starting with SQL Server 2005 (9.x), SUSER_ID returns the value listed as
 
 catalog view.
 
-Applies to:
-
 Azure SQL Database
 
 Azure SQL Managed Instance
@@ -90,8 +82,6 @@ Warehouse in Microsoft Fabric
 SQL database in Microsoft Fabric
 
 Returns the login name associated with a security identification number (SID).
-
-Transact-SQL syntax conventions
 
 The optional login security identification number.
 

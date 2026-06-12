@@ -29,15 +29,13 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
 This article discusses some of the design choices that enhance the performance of SQL Server
 
-integration with the .NET Framework common language runtime (CLR).
+integration with the.NET Framework common language runtime (CLR).
 
 During compilation of SQL expressions, when a reference to a managed routine is
 

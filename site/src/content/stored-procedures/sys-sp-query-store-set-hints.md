@@ -2,7 +2,7 @@
 name: "sys.sp_query_store_set_hints"
 title: "sp_query_store_set_hints"
 category: "general"
-description: "SQL Server 2022 (16.x) and later versions SQL database in Microsoft Fabric Transact-SQL syntax conventions A character string of query options beginning with argument, the single quotes around individual hint names must be repeated. For example, Arguments for extended stored procedures must be entered in the specific order as section."
+description: "2022 (16.x) and later versions SQL database in Microsoft Fabric A character string of query options beginning with argument, the single quotes around individual hint names must be repeated. For example, Arguments for extended stored procedures must be entered in the specific order as section."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -12,7 +12,7 @@ syntax: |
 
 ## Description
 
-SQL Server 2022 (16.x) and later versions SQL database in Microsoft Fabric Transact-SQL syntax conventions A character string of query options beginning with argument, the single quotes around individual hint names must be repeated. For example, Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered out of order, an error
+2022 (16.x) and later versions SQL database in Microsoft Fabric A character string of query options beginning with argument, the single quotes around individual hint names must be repeated. For example, Arguments for extended stored procedures must be entered in the specific order as section.
 
 ## Syntax
 

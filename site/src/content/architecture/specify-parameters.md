@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -63,13 +61,9 @@ The parameter values supplied with a procedure call must be constants or a varia
 
 name cannot be used as a parameter value. Variables can be user-defined or system variables
 
-such as
+such as.
 
-.
-
-The following examples demonstrate passing parameter values to the procedure
-
-. They illustrate how to pass parameters as constants and variables
+The following examples demonstrate passing parameter values to the procedure. They illustrate how to pass parameters as constants and variables
 
 and also how to use a variable to pass the value of a function.
 
@@ -81,9 +75,7 @@ Refer to the
 
 series of sample databases for this article's exercises. For
 
-more information, see
-
-.
+more information, see.
 
 ```sql
 OUTPUT

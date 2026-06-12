@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -39,7 +37,7 @@ through Azure Arc.
 
 Microsoft Entra ID is configured for your tenant.
 
-SQL Server can reach Microsoft Entra ID endpoints.
+can reach Microsoft Entra ID endpoints.
 
 A Microsoft Entra application is registered.
 
@@ -55,9 +53,7 @@ create in the first step of the tutorial.
 
 A supported SQL Server Linux container image.
 
-Access to Docker or a Kubernetes cluster with
-
-.
+Access to Docker or a Kubernetes cluster with.
 
 Deployment models require:
 

@@ -2,7 +2,7 @@
 name: "sys.sp_dropmergealternatepublisher"
 title: "sp_dropmergealternatepublisher"
 category: "general"
-description: "Removes an alternate Publisher from a merge publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions The name of the current Publisher."
+description: "Removes an alternate Publisher from a merge publication. This stored procedure is executed at the Subscriber on the subscription database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -30,7 +30,7 @@ syntax: |
 
 ## Description
 
-Removes an alternate Publisher from a merge publication. This stored procedure is executed at the Subscriber on the subscription database. Transact-SQL syntax conventions The name of the current Publisher. The name of the current publication database. The name of the current publication.
+Removes an alternate Publisher from a merge publication. This stored procedure is executed at the Subscriber on the subscription database.
 
 ## Syntax
 

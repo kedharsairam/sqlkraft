@@ -33,8 +33,6 @@ Article
 
 10/17/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -47,11 +45,7 @@ resulting XML.
 
 Following is the basic syntax that is described in
 
-FOR Clause (Transact-SQL)
-
-.
-
-syntaxsql
+FOR Clause (Transact-SQL).
 
 ）
 
@@ -59,9 +53,7 @@ Important
 
 The
 
-directive to the FOR XML option is
-
-. Use XSD generation in the
+directive to the FOR XML option is. Use XSD generation in the
 
 case of RAW and AUTO modes. There is no replacement for the XMLDATA directive in
 

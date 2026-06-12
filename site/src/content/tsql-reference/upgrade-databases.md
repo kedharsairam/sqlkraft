@@ -27,17 +27,13 @@ but before
 
 can be
 
-represented as
-
-. Nodes inserted before
+represented as. Nodes inserted before
 
 have the logical representation as a negative
 
 number. For example, a node that comes before
 
-can be represented as
-
-. Nodes
+can be represented as. Nodes
 
 can't have leading zeros. For example,
 
@@ -77,9 +73,7 @@ Write
 
 to convert
 
-to
-
-.
+to.
 
 To transmit
 

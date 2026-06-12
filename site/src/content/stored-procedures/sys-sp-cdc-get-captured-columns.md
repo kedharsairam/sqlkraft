@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-Returns change data capture metadata information for the captured source columns tracked by the specified capture instance. Change data capture isn't available in every edition of SQL Server. For a list of features that are supported by the editions of SQL Server, see supported features of SQL Server 2022 Transact-SQL syntax conventions The name of the capture instance associated with a source table.
+Returns change data capture metadata information for the captured source columns tracked by the specified capture instance. Change data capture isn't available in every edition of SQL Server. For a list of features that are supported by the editions of SQL Server, see supported features of SQL Server 2022 The name of the capture instance associated with a source table.
 
 ## Syntax
 

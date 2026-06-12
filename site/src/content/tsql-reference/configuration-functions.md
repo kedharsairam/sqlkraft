@@ -11,8 +11,6 @@ pubDate: 2026-05-29
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -65,9 +63,7 @@ they run on the same input values. For more information, see
 
 Deterministic and
 
-nondeterministic functions
-
-.
+nondeterministic functions.
 
 Analytic functions compute an aggregate value based on a group of rows. However, unlike
 
@@ -77,9 +73,7 @@ analytic functions to compute moving averages, running totals, percentages, or t
 
 within a group.
 
-Applies to:
-
-SQL Server 2022 (16.x) and later versions, Azure SQL Managed Instance, Azure SQL
+2022 (16.x) and later versions, Azure SQL Managed Instance, Azure SQL
 
 Database, SQL database in Microsoft Fabric
 
@@ -87,9 +81,7 @@ Bit manipulation functions allow you to process and store data more efficiently 
 
 individual bits. For more information, see
 
-Bit manipulation functions
-
-.
+Bit manipulation functions.
 
 #### Function category
 

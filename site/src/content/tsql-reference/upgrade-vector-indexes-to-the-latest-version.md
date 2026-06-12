@@ -119,7 +119,7 @@ parameter in
 
 with a latest version vector index,
 
-SQL Server returns the following error:
+returns the following error:
 
 Recreate the index
 

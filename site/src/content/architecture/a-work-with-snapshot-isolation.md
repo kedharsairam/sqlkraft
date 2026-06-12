@@ -5,24 +5,15 @@ description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
-
 . Monitors the longest running time in seconds of any
 
 transaction using row versioning. This can be used to determine if any transaction is running
 
-for an unexpected amount of time.
+for an unexpected amount of time. Monitors the total number of active transactions. This doesn't include system
 
-. Monitors the total number of active transactions. This doesn't include system
+transactions. Monitors the total number of active snapshot transactions. Monitors the total number of active snapshot transactions
 
-transactions.
-
-. Monitors the total number of active snapshot transactions.
-
-. Monitors the total number of active snapshot transactions
-
-that perform update operations.
-
-. Monitors the total number of active nonsnapshot
+that perform update operations. Monitors the total number of active nonsnapshot
 
 transactions that generate version records.
 

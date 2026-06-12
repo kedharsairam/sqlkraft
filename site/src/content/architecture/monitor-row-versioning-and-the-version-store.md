@@ -18,33 +18,19 @@ The following DMVs provide information about the current system state of
 
 and the
 
-version store, as well as transactions using row versioning.
-
-. Returns space usage information for each file in the database.
+version store, as well as transactions using row versioning. Returns space usage information for each file in the database.
 
 For more information, see
 
-sys.dm_db_file_space_usage (Transact-SQL)
-
-.
-
-. Returns page allocation and deallocation activity by session
+sys.dm_db_file_space_usage (Transact-SQL). Returns page allocation and deallocation activity by session
 
 for the database. For more information, see
 
-sys.dm_db_session_space_usage (Transact-SQL)
-
-.
-
-. Returns page allocation and deallocation activity by task for
+sys.dm_db_session_space_usage (Transact-SQL). Returns page allocation and deallocation activity by task for
 
 the database. For more information, see
 
-sys.dm_db_task_space_usage (Transact-SQL)
-
-.
-
-. Returns a virtual table for the objects producing the
+sys.dm_db_task_space_usage (Transact-SQL). Returns a virtual table for the objects producing the
 
 most versions in the version store. It groups the top 256 aggregated record lengths by
 
@@ -54,11 +40,7 @@ store. Applies to the version store in
 
 only. For more information, see
 
-sys.dm_tran_top_version_generators (Transact-SQL)
-
-.
-
-. Returns a virtual table that displays all version records in the
+sys.dm_tran_top_version_generators (Transact-SQL). Returns a virtual table that displays all version records in the
 
 common version store. Applies to the version store in
 
@@ -66,11 +48,7 @@ only. For more information,
 
 see
 
-sys.dm_tran_version_store (Transact-SQL)
-
-.
-
-. Returns a virtual table that displays the total space
+sys.dm_tran_version_store (Transact-SQL). Returns a virtual table that displays the total space
 
 in
 
@@ -80,9 +58,7 @@ only. For more information, see
 
 sys.dm_tran_version_store_space_usage (Transact-
 
-SQL)
-
-.
+SQL).
 
 DMVs
 
@@ -98,19 +74,13 @@ can be
 
 expensive, since both scan the entire version store, which could be large.
 
-### Free Space in tempdb (KB)
-
-. Returns a virtual table for all active
+### Free Space in tempdb (KB). Returns a virtual table for all active
 
 transactions in all databases within the SQL Server instance that use row versioning. System
 
 transactions don't appear in this DMV. For more information, see
 
-sys.dm_tran_active_snapshot_database_transactions (Transact-SQL)
-
-.
-
-. Returns a virtual table that displays snapshots taken by
+sys.dm_tran_active_snapshot_database_transactions (Transact-SQL). Returns a virtual table that displays snapshots taken by
 
 each transaction. The snapshot contains the sequence number of the active transactions
 
@@ -118,19 +88,11 @@ that use row versioning. For more information, see
 
 sys.dm_tran_transactions_snapshot
 
-(Transact-SQL)
-
-.
-
-. Returns a single row that displays row versioning-related
+(Transact-SQL). Returns a single row that displays row versioning-related
 
 state information of the transaction in the current session. For more information, see
 
-sys.dm_tran_current_transaction (Transact-SQL)
-
-.
-
-. Returns a virtual table that displays all active transactions at
+sys.dm_tran_current_transaction (Transact-SQL). Returns a virtual table that displays all active transactions at
 
 the time the current snapshot isolation transaction starts. If the current transaction is using
 
@@ -144,19 +106,13 @@ similar to
 
 transactions for the current snapshot. For more information, see
 
-sys.dm_tran_current_snapshot (Transact-SQL)
-
-.
-
-. Returns statistics for the persistent version
+sys.dm_tran_current_snapshot (Transact-SQL). Returns statistics for the persistent version
 
 store in each database used when accelerated database recovery is enabled. For more
 
 information, see
 
-sys.dm_tran_persistent_version_store_stats (Transact-SQL)
-
-.
+sys.dm_tran_persistent_version_store_stats (Transact-SQL).
 
 The following performance counters monitor the version store in
 
@@ -164,9 +120,7 @@ The following performance counters monitor the version store in
 
 using row versioning. The performance counters are contained in the
 
-performance object.
-
-. Monitors the amount, in kilobytes (KB), of free space in the
+performance object. Monitors the amount, in kilobytes (KB), of free space in the
 
 database. There must be enough free space in
 
@@ -216,11 +170,7 @@ separate version store. The approximate size of the online index build version s
 
 the amount of data modified in the table, including all indexes, while the online index build
 
-is active.
-
-. Monitors the size in KB of all version stores in
-
-. This
+is active. Monitors the size in KB of all version stores in. This
 
 information helps determine the amount of space needed in the
 
@@ -228,37 +178,19 @@ database for the
 
 version store. Monitoring this counter over a period of time provides a useful estimate of
 
-additional space needed for
+additional space needed for. Monitors the version generation rate in KB per second in all
 
-.
+version stores in. Monitors the version cleanup rate in KB per second in all
 
-. Monitors the version generation rate in KB per second in all
+version stores in. Monitors the count of version store units. Monitors the total number of version store units created to
 
-version stores in
-
-.
-
-. Monitors the version cleanup rate in KB per second in all
-
-version stores in
-
-.
-
-. Monitors the count of version store units.
-
-. Monitors the total number of version store units created to
-
-store row versions since the instance was started.
-
-. Monitors the total number of version store units truncated
+store row versions since the instance was started. Monitors the total number of version store units truncated
 
 since the instance was started. A version store unit is truncated when SQL Server determines
 
 that none of the version rows stored in the version store unit are needed to run active
 
-transactions.
-
-. Monitors the ratio of update snapshot transactions that have update
+transactions. Monitors the ratio of update snapshot transactions that have update
 
 conflicts to the total number of update snapshot transactions.
 

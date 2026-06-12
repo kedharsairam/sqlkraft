@@ -21,23 +21,17 @@ Management Studio (SSMS).
 
 For other migration guides, see
 
-Azure Database Migration
-
-.
+Azure Database Migration.
 
 Before beginning your migration project, address the associated prerequisites. Learn about the
 
 supported versions and considerations for
 
-upgrading SQL Server
-
-.
+upgrading SQL Server.
 
 To prepare for the migration, use the
 
-SQL Server migration component in SSMS
-
-.
+migration component in SSMS.
 
 Once you confirm that the source environment is supported and you address any prerequisites,
 
@@ -69,14 +63,10 @@ Review the preparation steps for migration of your databases and logins using
 
 SQL Server
 
-migration component in SQL Server Management Studio
-
-.
+migration component in SQL Server Management Studio.
 
 Preserve backup logs, maintenance plans, and other automated tasks, including jobs, by creating
 
 a backup of the system
 
-database msdb
-
-.
+database msdb.

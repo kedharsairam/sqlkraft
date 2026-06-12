@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 09/04/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -35,9 +33,7 @@ considerations for managing routing.
 
 By default, each user database, including
 
-, contains the route
-
-. This
+, contains the route. This
 
 route matches any service name and broker instance and specifies that the message should be
 
@@ -57,9 +53,7 @@ messages from outside of the instance within the current instance. In many cases
 
 administrator restricts access to services from outside of the instance by dropping
 
-in
-
-. The database administrator then creates a route for each service
+in. The database administrator then creates a route for each service
 
 that communicates with a remote instance.
 

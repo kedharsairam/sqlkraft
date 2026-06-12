@@ -29,8 +29,6 @@ Article
 
 04/05/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -81,15 +79,11 @@ is based upon the locale of the operating system.
 
 For example, the default collation for systems using US English (en-US) is
 
-SQL_Latin1_General_CP1_CI_AS
-
-. For more information, including the list of OS locale to default
+SQL_Latin1_General_CP1_CI_AS. For more information, including the list of OS locale to default
 
 collation mappings, see the "Server-level collations" section of
 
-Collation and Unicode Support
-
-.
+Collation and Unicode Support.
 
 Changing the default collation for an instance of SQL Server can be a complex operation.
 

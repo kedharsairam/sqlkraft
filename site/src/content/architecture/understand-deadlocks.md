@@ -1,12 +1,10 @@
 ---
 title: "Understand deadlocks"
 topic: "locking"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["locking", "architecture"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -28,9 +26,7 @@ competing, concurrent locks in the database, often in multi-step transactions. F
 
 information about transactions and locks, see
 
-Transaction locking and row versioning guide
-
-.
+Transaction locking and row versioning guide.
 
 For more specific information on identification and prevention of deadlocks in Azure SQL
 
@@ -38,9 +34,7 @@ Database and SQL database in Fabric, see
 
 Analyze and prevent deadlocks in Azure SQL
 
-Database and SQL database in Fabric
-
-.
+Database and SQL database in Fabric.
 
 A deadlock occurs when two or more tasks permanently block each other by each task having
 
@@ -150,9 +144,7 @@ Each user session might have one or more tasks running on its behalf where each 
 
 acquire or wait to acquire resources. The following types of resources can cause blocking that
 
-could result in a deadlock.
-
-. Waiting to acquire locks on resources, such as objects, pages, rows, metadata, and
+could result in a deadlock. Waiting to acquire locks on resources, such as objects, pages, rows, metadata, and
 
 applications can cause a deadlock. For example, transaction T1 has a shared (
 
@@ -168,9 +160,7 @@ lock on r2 and is waiting to get an exclusive (
 
 ) lock on row r1. This results in a lock cycle
 
-in which T1 and T2 wait for each other to release the locked resources.
-
-. A queued task waiting for an available worker thread can cause a
+in which T1 and T2 wait for each other to release the locked resources. A queued task waiting for an available worker thread can cause a
 
 deadlock. If the queued task owns resources that are blocking all worker threads, a
 
@@ -186,9 +176,7 @@ threads are trying to acquire exclusive (
 
 acquire a worker thread, it can't commit the transaction and release the lock on row r1.
 
-This results in a deadlock.
-
-. When concurrent requests are waiting for memory grants that can't be satisfied
+This results in a deadlock. When concurrent requests are waiting for memory grants that can't be satisfied
 
 with the available memory, a deadlock can occur. For example, two concurrent queries,
 
@@ -196,9 +184,7 @@ Q1 and Q2, execute as user-defined functions that acquire 10 MB and 20 MB of mem
 
 respectively. If each query needs 30 MB and the total available memory is 20 MB, then Q1
 
-and Q2 must wait for each other to release memory, which results in a deadlock.
-
-. Coordinator, producer, or consumer threads
+and Q2 must wait for each other to release memory, which results in a deadlock. Coordinator, producer, or consumer threads
 
 associated with an exchange port might block each other causing a deadlock usually
 
@@ -228,31 +214,21 @@ transactions as a deadlock victim and terminates it with an error to break the d
 
 start running on the server or the system runs out of worker threads, then a deadlock
 
-could occur.
-
-. These resources are used to control
+could occur. These resources are used to control
 
 interleaving of multiple active requests under MARS. For more information, see
 
 Using
 
-Multiple Active Result Sets (MARS) in SQL Server Native Client
-
-.
-
-. When a thread is waiting for a resource that is potentially controlled by
+Multiple Active Result Sets (MARS) in SQL Server Native Client. When a thread is waiting for a resource that is potentially controlled by
 
 a user application, the resource is considered to be an external or user resource and is
 
-treated like a lock.
-
-. The tasks running in one session are interleaved, meaning that only
+treated like a lock. The tasks running in one session are interleaved, meaning that only
 
 one task can run under the session at a given time. Before the task can run, it must
 
-have exclusive access to the session mutex.
-
-. All tasks running in one transaction are interleaved, meaning that
+have exclusive access to the session mutex. All tasks running in one transaction are interleaved, meaning that
 
 only one task can run under the transaction at a given time. Before the task can run, it
 
@@ -290,9 +266,7 @@ Deadlocks can also occur when a table is partitioned and the
 
 setting of
 
-is set to
-
-. When
+is set to. When
 
 is set to
 
@@ -344,6 +318,6 @@ TABLE
 `AUTO`
 
 ```sql
-U1:    Rs1=Command1.Execute("insert sometable EXEC usp_someproc");
-U2:    Rs2=Command2.Execute("select colA from sometable");
+U1: Rs1=Command1.Execute("insert sometable EXEC usp_someproc");
+U2: Rs2=Command2.Execute("select colA from sometable");
 ```

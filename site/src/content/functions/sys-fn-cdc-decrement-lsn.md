@@ -10,8 +10,6 @@ syntax: "sys.fn_cdc_decrement_lsn ( lsn_value )"
 
 ## Description
 
-Returns the previous log sequence number (LSN) in the sequence based upon the specified Transact-SQL syntax conventions The LSN returned by the function is always less than the specified value, and no LSN values can
-
 ## Syntax
 
 ```sql

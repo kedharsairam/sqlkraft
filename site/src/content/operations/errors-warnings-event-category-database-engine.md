@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -99,7 +97,7 @@ Class
 
 Indicates that memory grant warnings occurred during the execution of a
 
-SQL Server statement or stored procedure.
+statement or stored procedure.
 
 Hash Warning Event Class
 

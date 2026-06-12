@@ -1,12 +1,12 @@
 ---
 title: "Dynamic memory management"
 topic: "memory-management"
-description: "SQL Server 2005 (9.x), SQL Server 2008"
+description: "2005 (9.x), SQL Server 2008"
 tags: ["memory-management", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL Server 2005 (9.x), SQL Server 2008
+2005 (9.x), SQL Server 2008
 
 Thread stacks
 

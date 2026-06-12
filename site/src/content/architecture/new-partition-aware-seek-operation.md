@@ -26,9 +26,7 @@ partitioned on column a, and has a clustered index on column b. In SQL Server, t
 
 table is treated internally as a nonpartitioned table with the schema
 
-and a clustered index on the composite key
-
-. This allows the Query Optimizer
+and a clustered index on the composite key. This allows the Query Optimizer
 
 to perform seek operations based on
 
@@ -64,9 +62,7 @@ following partition function:
 
 To solve the query, the query processor performs a first-level seek operation to find every
 
-partition that contains rows that meet the condition
-
-. This identifies the partitions to
+partition that contains rows that meet the condition. This identifies the partitions to
 
 be accessed. Within each partition identified, the processor then performs a second-level seek
 

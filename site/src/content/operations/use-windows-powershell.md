@@ -25,11 +25,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server on Linux
+on Linux
 
 07/03/2025
-
-Applies to:
 
 SQL Server
 
@@ -37,7 +35,7 @@ SQL Server
 
 This article introduces
 
-SQL Server PowerShell
+PowerShell
 
 and walks you through a couple of examples on
 
@@ -49,7 +47,7 @@ connect to a remote SQL Server instance on Linux.
 
 The
 
-SQL Server PowerShell module
+PowerShell module
 
 on Windows is maintained in the PowerShell Gallery. When
 
@@ -73,11 +71,9 @@ type
 
 to launch a new Windows PowerShell session.
 
-SQL Server provides a PowerShell module named
+provides a PowerShell module named
 
-SqlServer
-
-. You can use the
+SqlServer. You can use the
 
 SqlServer
 

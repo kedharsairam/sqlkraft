@@ -17,9 +17,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2019 (15.x) on Linux
+2019 (15.x) on Linux
 
 This article describes the major features and services available for SQL Server 2019 (15.x) running
 
@@ -31,23 +29,17 @@ intervals. These cumulative updates provide many improvements and fixes. For det
 
 information about the latest CU release, see
 
-SQL Server 2019 build versions
-
-. For package
+2019 build versions. For package
 
 downloads and known issues, see the
 
-Release notes
-
-.
+Release notes.
 
 Red Hat Enterprise Linux (RHEL) 8 is supported in SQL Server 2019 (15.x) CU 1 and later versions.
 
 For more information, see
 
-Quickstart: Install SQL Server and create a database on Red Hat
-
-.
+Quickstart: Install SQL Server and create a database on Red Hat.
 
 SUSE Linux Enterprise Server (SLES) 15 is supported in SQL Server 2019 (15.x) CU 14 and later
 
@@ -55,9 +47,7 @@ versions. For more information, see
 
 Quickstart: Install SQL Server and create a database on SUSE
 
-Linux Enterprise Server
-
-.
+Linux Enterprise Server.
 
 Ubuntu 18.04 is supported in SQL Server 2019 (15.x) CU 3 and later versions.
 
@@ -65,9 +55,7 @@ Ubuntu 20.04 is supported in SQL Server 2019 (15.x) CU 10 and later versions.
 
 For more information, see
 
-Quickstart: Install SQL Server and create a database on Ubuntu
-
-.
+Quickstart: Install SQL Server and create a database on Ubuntu.
 
 The following updates are available in SQL Server 2019 (15.x) on Linux:
 

@@ -23,8 +23,6 @@ SqlLocalDB.exe
 
 07/14/2025
 
-Applies to:
-
 SQL Server
 
 SqlLocalDB.exe is a simple tool that enables the user to easily manage LocalDB instances from

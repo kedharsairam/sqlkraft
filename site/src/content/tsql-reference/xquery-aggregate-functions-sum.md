@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns the sum of a sequence of numbers.
@@ -50,9 +48,7 @@ function returns the sum of the numeric values. If an xdt:untypedAtomic value
 
 cannot be cast to xs:double, the value is ignored in the input sequence,
 
-$arg
-
-. If the input is a
+$arg. If the input is a
 
 dynamically calculated empty sequence, the value 0 of the used base type is returned.
 

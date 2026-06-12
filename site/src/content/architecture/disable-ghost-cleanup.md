@@ -14,9 +14,7 @@ Rows that are deleted from the leaf level pages of an index aren't physically re
 
 page. Instead, the row is marked for future removal, or
 
-ghosted
-
-. This means that the row stays
+ghosted. This means that the row stays
 
 on the page but a bit is changed in the row header to indicate that the row is a ghost. This is to
 
@@ -60,9 +58,7 @@ generating extra disk I/O and increasing query latency. If this occurs, you can 
 
 cleanup using
 
-trace flag 661
-
-.
+trace flag 661.
 
 Without ghost cleanup, your database can grow unnecessarily large, which can also reduce
 
@@ -76,9 +72,7 @@ add data to new pages instead, leading to bloated database files, and can also c
 
 page
 
-splits
-
-. Page splits increase disk I/O, which can reduce query performance. If ghost cleanup is
+splits. Page splits increase disk I/O, which can reduce query performance. If ghost cleanup is
 
 disabled, the database might run out of space.
 
@@ -90,37 +84,8 @@ rows in the process.
 
 Pages and extents architecture guide
 
-Last updated on 12/08/2025
-
 ２
 
 Warning
 
 Disabling the ghost cleanup process permanently isn't recommended.
-
-Related content
-
-```sql
-SELECT
-SUM (ghost_record_count)
-AS total_ghost_records,
-DB_NAME(database_id)
-AS database_name
-FROM sys.dm_db_index_physical_stats(
-NULL
-,
-NULL
-,
-NULL
-,
-NULL
-,
-'SAMPLED'
-)
-GROUP
-BY database_id
-ORDER
-BY total_ghost_records
-DESC
-;
-```

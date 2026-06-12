@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -81,9 +79,7 @@ server. Cross-database referential integrity must be implemented through trigger
 
 more information, see
 
-CREATE TRIGGER (Transact-SQL)
-
-.
+CREATE TRIGGER (Transact-SQL).
 
 constraints can reference another column in the same table, and is referred
 

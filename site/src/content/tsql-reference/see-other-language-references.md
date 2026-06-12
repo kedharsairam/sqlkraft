@@ -35,8 +35,6 @@ that indicates which products and services support subject of the article.
 
 For example, this article applies to all versions, and has the following label.
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -50,8 +48,6 @@ Analytics Platform System (PDW)
 Another example, the following label indicates an article that applies only to Azure Synapse
 
 Analytics and Parallel Data Warehouse.
-
-Applies to:
 
 Azure Synapse Analytics
 
@@ -67,15 +63,11 @@ sections are inserted into the appropriate argument
 
 For more information, see
 
-SQL Server docs navigation guide
-
-.
+docs navigation guide.
 
 For online help, see the
 
-Microsoft Q & A Transact-SQL Forum
-
-.
+Microsoft Q & A Transact-SQL Forum.
 
 The SQL docs include these other language references:
 
@@ -88,9 +80,3 @@ Replication language reference
 Multidimensional Expressions (MDX) reference
 
 Tutorial: Write Transact-SQL statements
-
-Transact-SQL syntax conventions (Transact-SQL)
-
-Last updated on 01/26/2026
-
-Related content

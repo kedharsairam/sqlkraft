@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -32,13 +30,13 @@ SQL database in Microsoft Fabric
 
 This topic describes how to create a new user-defined data type alias in SQL Server by using
 
-SQL Server Management Studio or Transact-SQL.
+Management Studio or Transact-SQL.
 
 Limitations and Restrictions
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 
@@ -46,9 +44,7 @@ The name of a user-defined data type alias must comply with the rules for identi
 
 Requires CREATE TYPE permission in the current database and ALTER permission on
 
-schema_name
-
-. If
+schema_name. If
 
 schema_name
 

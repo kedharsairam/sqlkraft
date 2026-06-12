@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 09/02/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -35,9 +33,7 @@ Broker is in the
 
 state. To pause Service Broker networking, alter all Service Broker
 
-endpoints to set the state to
-
-. This state prevents Service Broker from transmitting
+endpoints to set the state to. This state prevents Service Broker from transmitting
 
 messages out of the instance or receiving messages from outside of the instance, but doesn't
 
@@ -47,9 +43,7 @@ use
 
 to deactivate Service Broker in that database.
 
-Alter all Service Broker endpoints to set the state to
-
-.
+Alter all Service Broker endpoints to set the state to.
 
 How to: Deactivate Service Broker networking (Transact-SQL)
 

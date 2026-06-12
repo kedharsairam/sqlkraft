@@ -16,11 +16,9 @@ can be detected any time the buffer manager reads a page from disk. For informat
 
 setting checksum, see
 
-ALTER DATABASE SET Options
+ALTER DATABASE SET Options.
 
-.
-
-SQL Server is non-uniform memory access (NUMA) aware, and performs well on NUMA
+is non-uniform memory access (NUMA) aware, and performs well on NUMA
 
 hardware without special configuration. As clock speed and the number of processors increase,
 
@@ -30,13 +28,11 @@ processing power. To circumvent this, hardware vendors provide large L3 caches, 
 
 only a limited solution. NUMA architecture provides a scalable solution to this problem.
 
-SQL Server is designed to take advantage of NUMA-based computers without requiring any
+is designed to take advantage of NUMA-based computers without requiring any
 
 application changes. For more information, see
 
-Soft-NUMA (SQL Server)
-
-.
+Soft-NUMA (SQL Server).
 
 Heap allocators, known as
 
@@ -72,9 +68,7 @@ or
 
 ) is retained. We highly recommend that
 
-you use
-
-.
+you use.
 
 might use fewer resources, but provides a
 
@@ -140,11 +134,9 @@ DMV columns
 
 ,
 
-, and
+, and.
 
-.
-
-SQL Server I/O fundamentals
+I/O fundamentals
 
 Server memory configuration options
 
@@ -160,8 +152,6 @@ Troubleshoot out of memory or low memory issues in SQL Server
 
 Resolve Out Of Memory issues
 
-Last updated on 12/29/2025
-
 ７
 
 Note
@@ -171,37 +161,3 @@ Before SQL Server 2016 (13.x), trace flag 8048 could be used to force a node-bas
 to become a CPU-based PMO. Starting with SQL Server 2014 (12.x) SP2 and SQL Server
 
 2016 (13.x), this behavior is dynamic and controlled by the engine.
-
-Related content
-
-`CMemThread`
-
-`CMemThread`
-
-`NONE`
-
-`TORN_PAGE_DETECTION`
-
-`CHECKSUM`
-
-`TORN_PAGE_DETECTION`
-
-`CHECKSUM`
-
-`CMemThread`
-
-`CMemThread`
-
-`CMemThread`
-
-`CMemThread`
-
-`CMEMTHREAD`
-
-`contention_factor`
-
-`partition_type`
-
-`exclusive_allocations_count`
-
-`waiting_tasks_count`

@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -29,9 +27,7 @@ authentication, also known as integrated authentication. For an overview, see
 
 Active Directory
 
-authentication for SQL Server on Linux
-
-.
+authentication for SQL Server on Linux.
 
 This tutorial consists of the following tasks:
 

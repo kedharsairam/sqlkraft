@@ -22,15 +22,13 @@ Starting with Windows Server 2012, hot add is supported on Standard edition.
 
 Requires SQL Server Enterprise edition.
 
-SQL Server can't be configured to use soft NUMA. For more information about soft
+can't be configured to use soft NUMA. For more information about soft
 
 NUMA, see
 
-Soft-NUMA (SQL Server)
+Soft-NUMA (SQL Server).
 
-.
-
-SQL Server doesn't automatically use CPUs after they are added. This prevents SQL Server from
+doesn't automatically use CPUs after they are added. This prevents SQL Server from
 
 using CPUs that might be added for some other purpose. After adding CPUs, execute the
 

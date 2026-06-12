@@ -96,9 +96,7 @@ updated by a DML statement such as
 
 ,
 
-, or
-
-. For example:
+, or. For example:
 
 `locking_stats2`
 

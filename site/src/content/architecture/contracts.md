@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -57,15 +55,11 @@ initiator or a message type sent by either participant; otherwise, there's no wa
 
 to begin a conversation that uses the contract.
 
-Service Broker also includes a built-in contract named
-
-. The
+Service Broker also includes a built-in contract named. The
 
 contract contains
 
-only the message type
-
-. If no contract is specified in the
+only the message type. If no contract is specified in the
 
 statement,
 
@@ -77,9 +71,7 @@ For example, a contract can have message types
 
 ,
 
-, and
-
-. Only the initiating endpoint can use
+, and. Only the initiating endpoint can use
 
 , and only the target
 

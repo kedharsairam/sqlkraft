@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -63,9 +61,7 @@ Expands to show
 
 ,
 
-and
-
-.
+and.
 
 Displays the name of the selected column.
 

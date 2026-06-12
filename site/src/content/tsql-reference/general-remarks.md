@@ -11,9 +11,7 @@ For descriptions of the RESTORE VERIFYONLY arguments, see
 
 RESTORE Arguments (Transact-
 
-SQL)
-
-.
+SQL).
 
 The media set or the backup set must contain minimal correct information to enable it to be
 
@@ -74,7 +72,7 @@ UNLOAD
 |
 NOUNLOAD
 }
-} [ ,...n ]
+} [ ,.n ]
 ]
 [;]
 <backup_device>

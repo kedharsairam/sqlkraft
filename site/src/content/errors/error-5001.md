@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 5001 16 No User must be in the master database. 5002 16 No Database '%.\*ls' does not exist. Verify the name in sys.databases and try the operation again. 5003 16 No Database mirroring cann
+Description 5001 16 No User must be in the master database. 5002 16 No Database '%.\*ls' does not exist. Verify the name in sys.databases and try the operation again.
 
 ## Severity
 

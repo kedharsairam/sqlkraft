@@ -19,11 +19,7 @@ and the character types
 
 , the converted time zone offset part should always have double digits for both
 
-and
-
-. For example,
-
-.
+and. For example,.
 
 Because Unicode data always uses an even number of bytes, use caution when you convert
 
@@ -35,9 +31,7 @@ conversion doesn't return a hexadecimal value of 41. It returns a hexadecimal va
 
 For more information, see
 
-Collation and Unicode Support
-
-.
+Collation and Unicode Support.
 
 Large-value data types have the same implicit and explicit conversion behavior as their smaller
 
@@ -63,9 +57,7 @@ and
 
 , and
 
-and
-
-.
+and.
 
 Conversion from large-value data types, such as
 
@@ -107,9 +99,7 @@ data type, see
 
 Create Instances of XML
 
-Data
-
-.
+Data.
 
 
 

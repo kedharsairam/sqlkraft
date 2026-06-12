@@ -2,7 +2,7 @@
 name: "sys.sp_delete_log_shipping_primary_database"
 title: "sp_delete_log_shipping_primary_database"
 category: "general"
-description: "This stored procedure removes log shipping of primary database including backup job, local and remote history. Only use this stored procedure after you remove the secondary databases Transact-SQL syntax conventions The name of the log shipping primary database. Identified for informational purposes only. Not supported."
+description: "This stored procedure removes log shipping of primary database including backup job, local and remote history. Only use this stored procedure after you remove the secondary databases The name of the log shipping primary database. Identified for informational purposes only. Not supported."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_delete_log_shipping_primary_secondary"
@@ -10,7 +10,7 @@ syntax: "sp_delete_log_shipping_primary_secondary"
 
 ## Description
 
-This stored procedure removes log shipping of primary database including backup job, local and remote history. Only use this stored procedure after you remove the secondary databases Transact-SQL syntax conventions The name of the log shipping primary database. Identified for informational purposes only. Not supported. Future compatibility is not
+This stored procedure removes log shipping of primary database including backup job, local and remote history. Only use this stored procedure after you remove the secondary databases The name of the log shipping primary database. Identified for informational purposes only. Not supported.
 
 ## Syntax
 
@@ -58,4 +58,4 @@ This stored procedure removes log shipping of primary database including backup 
 
 `sp_delete_log_shipping_alert_job`
 
-_(... and 3 more examples)_
+_(. and 3 more examples)_

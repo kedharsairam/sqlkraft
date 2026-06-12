@@ -2,7 +2,7 @@
 name: "sys.sp_dropmergesubscription"
 title: "sp_dropmergesubscription"
 category: "general"
-description: "Drops a subscription to a merge publication and its associated Merge Agent. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions already exist and conform to the rules for The name of the subscription database."
+description: "Drops a subscription to a merge publication and its associated Merge Agent. This stored procedure is executed at the Publisher on the publication database. already exist and conform to the rules for The name of the subscription database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -30,7 +30,7 @@ syntax: |
 
 ## Description
 
-Drops a subscription to a merge publication and its associated Merge Agent. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions already exist and conform to the rules for The name of the subscription database.
+Drops a subscription to a merge publication and its associated Merge Agent. This stored procedure is executed at the Publisher on the publication database. already exist and conform to the rules for The name of the subscription database.
 
 ## Syntax
 
@@ -59,4 +59,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or the fixed database role can execute . Delete a Push Subscription Delete a Pull Subscription sp_addmergesubscription (Transact-SQL) sp_changemergesubscription (Transact-SQL) sp_helpmergesubscription (Transact-SQL) Related content sp_changemergesubscription (Transact-SQL) sp_dropmergesubscription (Transact-SQL) System stored procedures (Transact-SQL) Subscribe to Publications sp_changemergesubscription (Transact-SQL) sp_dropmergesubscription (Transact-SQL) sp_helpmergesubscription (Transact-SQL)
+Only members of the fixed server role or the fixed database role can execute. Delete a Push Subscription Delete a Pull Subscription sp_addmergesubscription (Transact-SQL) sp_changemergesubscription (Transact-SQL) sp_helpmergesubscription (Transact-SQL)

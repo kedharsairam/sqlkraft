@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 SQL projects properties
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -99,29 +97,19 @@ The following properties are used to define the data-tier application (DAC) that
 
 DacApplicationName
 
-: The name of the data-tier application
-
-. The default value is the project name.
+: The name of the data-tier application. The default value is the project name.
 
 DacDescription
 
-: An optional description of the data-tier application
-
-.
+: An optional description of the data-tier application.
 
 DacVersion
 
-: The version of the data-tier application
-
-. The default value is
-
-.
+: The version of the data-tier application. The default value is.
 
 The
 
-property sets the default schema for the SQL project. This property applies to 1-part named objects. The default value is
-
-.
+property sets the default schema for the SQL project. This property applies to 1-part named objects. The default value is.
 
 The
 
@@ -135,9 +123,7 @@ The
 
 property treats T-SQL warnings as errors, causing any T-SQL warnings to fail the build. The default value for
 
-is
-
-.
+is.
 
 The following example shows how to set the
 
@@ -159,9 +145,7 @@ property is set to
 
 property is
 
-set to
-
-. The
+set to. The
 
 property is only set to
 
@@ -177,10 +161,7 @@ Default schema
 
 T-SQL warnings
 
-```cmd
-.sql
-.sqlproj
-.sqlproj
+```cmd.sql.sqlproj.sqlproj
 ScriptDatabaseOptions
 DSP
 ```

@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -51,9 +49,7 @@ collation. For this reason, many broker services find it convenient to follow th
 
 recommendations in
 
-Name Service Broker objects
-
-. An application that follows these guidelines
+Name Service Broker objects. An application that follows these guidelines
 
 and treats all names as case-sensitive should function correctly regardless of differences in
 

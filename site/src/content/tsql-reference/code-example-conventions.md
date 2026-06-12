@@ -23,27 +23,17 @@ Server and schema name are omitted.
 
 Server and database name are omitted.
 
-Server, database, and schema name are
-
 omitted.
 
 When used inline in an article, data types are rendered in lowercase and bold. For example,
 
 ,
 
-, and
-
-.
+, and.
 
 When used in Transact-SQL code blocks, data types are rendered in uppercase. For example:
 
-Unless stated otherwise, the examples provided in the Transact-SQL reference were tested by
-
 using SQL Server Management Studio and its default settings for the following options:
-
-Expand table
-
-### Applies to
 
 ```sql
 <server_name>.<database_name>.<schema_name>.
@@ -51,15 +41,15 @@ Expand table
 ```
 
 ```sql
-<server_name>.<database_name>..<object_name>
+<server_name>.<database_name>.<object_name>
 ```
 
 ```sql
-<server_name>..<schema_name>.<object_name>
+<server_name>.<schema_name>.<object_name>
 ```
 
 ```sql
-<server_name>...<object_name>
+<server_name>.<object_name>
 ```
 
 ```sql
@@ -67,7 +57,7 @@ Expand table
 ```
 
 ```sql
-<database_name>..<object_name>
+<database_name>.<object_name>
 ```
 
 ```sql

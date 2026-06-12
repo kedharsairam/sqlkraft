@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to add dependencies to an Always On failover cluster instance (FCI)
@@ -73,8 +71,8 @@ FTP with SQL Server replication: For instances of SQL Server that use FTP with S
 
 replication, your FTP service must use one of the same physical disks as the installation of
 
-SQL Server that is set up to use the FTP service.
+that is set up to use the FTP service.
 
-SQL Server resource dependencies: If you add a resource to a SQL Server group and you
+resource dependencies: If you add a resource to a SQL Server group and you
 
 have a dependency on the SQL Server resource to make sure that SQL Server is available,

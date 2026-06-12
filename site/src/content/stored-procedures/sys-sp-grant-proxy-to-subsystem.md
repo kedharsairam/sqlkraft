@@ -2,7 +2,7 @@
 name: "sys.sp_grant_proxy_to_subsystem"
 title: "sp_grant_proxy_to_subsystem"
 category: "general"
-description: "Grants a proxy access to a subsystem. Transact-SQL syntax conventions The proxy identification number of the proxy to grant access for. must be specified, but both can't be specified."
+description: "Grants a proxy access to a subsystem. The proxy identification number of the proxy to grant access for. must be specified, but both can't be specified."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -22,7 +22,7 @@ syntax: |
 
 ## Description
 
-Grants a proxy access to a subsystem. Transact-SQL syntax conventions The proxy identification number of the proxy to grant access for. must be specified, but both can't be specified. The name of the proxy to grant access for. must be specified, but both can't be specified. The ID number of the subsystem to grant access to.
+Grants a proxy access to a subsystem. The proxy identification number of the proxy to grant access for. must be specified, but both can't be specified.
 
 ## Syntax
 

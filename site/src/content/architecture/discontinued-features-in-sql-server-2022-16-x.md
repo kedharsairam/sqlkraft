@@ -6,8 +6,6 @@ tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
 
-Applies to:
-
 SQL Server
 
 This article describes the Database Engine features that are no longer available in SQL Server.
@@ -36,9 +34,7 @@ instead.
 
 For more information, see
 
-Mirroring in Fabric – What's new
-
-.
+Mirroring in Fabric – What's new.
 
 Purview access policies (DevOps policies and data owner policies) are discontinued in SQL
 

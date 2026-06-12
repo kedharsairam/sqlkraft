@@ -43,7 +43,7 @@ with format
 --buffer count range = 1 to int_max
 --by default sql server uses buffer count of 7 (7 during taking backup and 6 during restoring the backup) and int_max means the maximum value of an int on the platform being used.
 --buffer size (maxtransfersize) range = 64 KB to 4 MB and we should write in bytes, so 65536 bytes(64 KB) and 4194304 (4 MB)
---stats will tell how much the backup is completed 1 to 100, like every 5% or 10% and so on... based on the value that we want.
+--stats will tell how much the backup is completed 1 to 100, like every 5% or 10% and so on. based on the value that we want.
 backup database databasename to disk = 'path\filename.bak'
 with buffercount = 14, maxtransfersize = 4194304, stats = 5
 ```

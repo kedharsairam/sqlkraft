@@ -20,7 +20,7 @@ syntax: |
 
 ## Description
 
-Contains one row for each Extended Events event that is mapped to a SQL Trace event class. This table is stored in the master database, in the sys schema. The ID of the SQL Trace event class that is being mapped. The name of the Extended Events package where the mapped event The name of the Extended Events event that is mapped to the SQL Trace You can use the following query to identify the Extended Events events that are equivalent to the SQL Trace event classes: Not all event classes have equivalent Extended Events events. You can use the following query to list the event classes that do not have an Extended Events equivalent: Deprecated feature Embedded SQL for C Although the Database Engine still supports connections from existing applications that use the DB-Library and Embedded SQL APIs, it
+Contains one row for each Extended Events event that is mapped to a SQL Trace event class. This table is stored in the master database, in the sys schema. The ID of the SQL Trace event class that is being mapped.
 
 ## Syntax
 
@@ -39,11 +39,9 @@ WHERE xe.trace_event_id IS NULL
 
 ## Permissions
 
-Article • 02/28/2023 Applies to: SQL Server Azure SQL Managed Instance The catalog view contains a list of all SQL trace events. These trace events do not change for a given version of the SQL Server Database Engine. For more information about these trace events, see SQL Server Event Class Reference . Description Unique ID of the event. This column is also in the and catalog views. Category ID of the event. This column is also in the catalog view. Unique name of this event. This parameter is not localized. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration . Object Catalog Views (Transact-SQL) sys.traces (Transact-SQL) sys.trace_categories (Transact-SQL) sys.trace_columns (Transact-SQL) ） Important This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Use Extended Event catalog views instead. ﾉ Expand table See also Article • 02/28/2023 Applies to: SQL Server Azure SQL Managed Instance The catalog view contains a list of all possible usage combinations of events and columns. For each event listed in the column, all available columns are listed in the column. Not all available columns are populated each time a given event occurs. These values do not change for a given version of the SQL Server Database Engine. For a complete list of supported trace events, see SQL Server Event Class Reference . Description ID of the trace event. This column is also in the catalog view. ID of the trace column. This column is also in the catalog view. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration . Object Catalog Views (Transact-SQL) sys.traces (Transact-SQL) sys.trace_categories (Transact-SQL) sys.trace_columns (Transact-SQL) ） Important This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Use Extended Event catalog views instead. ﾉ Expand table See Also sys.trace_events (Transact-SQL) sys.trace_subclass_values (Transact-SQL) Article • 02/28/2023 Applies to: SQL Server Similar event classes are grouped by a category. Each row in the catalog view identifies a category that is unique across the server. These categories do not change for a given version of the SQL Server Database Engine. For a complete list of supported trace events, see SQL Server Event Class Reference . Description Unique ID of this category. This column is also in the catalog view. Unique name of this category. This parameter is not localized. Category type: 0 = Normal 1 = Connection 2 = Error The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration . ） Important This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Use Extended Event catalog views instead. ﾉ Expand table See Also Article • 02/28/2023 Applies to: SQL Server Azure SQL Managed Instance The catalog view contains a list of named column values. These subclass values do not change for a given version of the SQL Server Database Engine. For a complete list of supported trace events, see SQL Server Event Class Reference . Description ID of the trace event. This parameter is also in the catalog view. ID of the trace column used for enumeration. This parameter is also in the catalog view. Meaning of the column value. Column value. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration . Object Catalog Views (Transact-SQL) sys.traces (Transact-SQL) sys.trace_categories (Transact-SQL) sys.trace_columns (Transact-SQL) ） Important This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Use Extended Event catalog views instead. ﾉ Expand table See Also sys.trace_events (Transact-SQL) sys.trace_event_bindings (Transact-SQL)
+Article • 02/28/2023 The catalog view contains a list of all SQL trace events. These trace events do not change for a given version of the SQL Server Database Engine. For more information about these trace events, see SQL Server Event Class Reference. Description Unique ID of the event. This column is also in the and catalog views. Category ID of the event. This column is also in the catalog view. Unique name of this event. This parameter is not localized. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration. Object Catalog Views (Transact-SQL) sys.traces (Transact-SQL) sys.trace_categories (Transact-SQL) sys.trace_columns (Transact-SQL) ） Important This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Use Extended Event catalog views instead. ﾉ Expand table See also Article • 02/28/2023 The catalog view contains a list of all possible usage combinations of events and columns. For each event listed in the column, all available columns are listed in the column. Not all available columns are populated each time a given event occurs. These values do not change for a given version of the SQL Server Database Engine. For a complete list of supported trace events, see SQL Server Event Class Reference. Description ID of the trace event. This column is also in the catalog view. ID of the trace column. This column is also in the catalog view. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration. Object Catalog Views (Transact-SQL) sys.traces (Transact-SQL) sys.trace_categories (Transact-SQL) sys.trace_columns (Transact-SQL) ） Important This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Use Extended Event catalog views instead. ﾉ Expand table See Also sys.trace_events (Transact-SQL) sys.trace_subclass_values (Transact-SQL) Article • 02/28/2023 Each row in the catalog view identifies a category that is unique across the server. These categories do not change for a given version of the SQL Server Database Engine. For a complete list of supported trace events, see SQL Server Event Class Reference. Description Unique ID of this category. This column is also in the catalog view. Unique name of this category. This parameter is not localized. Category type: 0 = Normal 1 = Connection 2 = Error The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration. ） Important This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Use Extended Event catalog views instead. ﾉ Expand table See Also Article • 02/28/2023 The catalog view contains a list of named column values. These subclass values do not change for a given version of the SQL Server Database Engine. For a complete list of supported trace events, see SQL Server Event Class Reference. Description ID of the trace event. This parameter is also in the catalog view. ID of the trace column used for enumeration. This parameter is also in the catalog view. Meaning of the column value. Column value. The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration. Object Catalog Views (Transact-SQL) sys.traces (Transact-SQL) sys.trace_categories (Transact-SQL) sys.trace_columns (Transact-SQL) ） Important This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Use Extended Event catalog views instead. ﾉ Expand table See Also sys.trace_events (Transact-SQL) sys.trace_event_bindings (Transact-SQL)
 
 ## Remarks
-
-Applies to:
 
 Contains one row for each Extended Events event that is mapped to a SQL Trace event class.
 
@@ -123,23 +121,23 @@ available the DB-Library DLL from SQL Server
 
 version 6.5, SQL Server 7.0, or SQL Server 2000
 
-SQL Server Profiler for Trace Capture
+Profiler for Trace Capture
 
 Use Extended Events Profiler embedded in SQL
 
 Server Management Studio.
 
-SQL Server Profiler
+Profiler
 
-SQL Server Profiler for Trace Replay
+Profiler for Trace Replay
 
-SQL Server Distributed Replay overview
+Distributed Replay overview
 
-SQL Server Profiler
+Profiler
 
 Microsoft.SqlServer.Management.Trace namespace (contains the APIs for
 
-SQL Server Trace and Replay objects)
+Trace and Replay objects)
 
 Trace Configuration:
 
@@ -191,9 +189,7 @@ which is the correct maximum length. However
 
 the current implementation returns
 
-varbinary(50)
-
-. If developers have allocated
+varbinary(50). If developers have allocated
 
 varbinary(50)
 

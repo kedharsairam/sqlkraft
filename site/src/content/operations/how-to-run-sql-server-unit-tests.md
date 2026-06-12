@@ -23,17 +23,13 @@ and the Command Prompt window.
 
 The ways that are available to you depend on the software that you installed, as described in
 
-Run SQL Server unit tests
-
-.
+Run SQL Server unit tests.
 
 1. On the
 
 menu, point to
 
-, and then select
-
-.
+, and then select.
 
 The
 
@@ -51,23 +47,17 @@ key, you can specify discontinuous or continuous blocks of tests.
 
 Right-click the surface of the
 
-window, and then select
-
-.
+window, and then select.
 
 On the
 
-toolbar, select
-
-.
+toolbar, select.
 
 1. On the
 
 menu, point to
 
-, and then select
-
-.
+, and then select.
 
 The
 
@@ -79,9 +69,7 @@ window opens.
 
 the SHIFT key, you can specify discontinuous or continuous blocks of tests.
 
-3. Right-click one of the highlighted tests and select
-
-.
+3. Right-click one of the highlighted tests and select.
 
 ７
 

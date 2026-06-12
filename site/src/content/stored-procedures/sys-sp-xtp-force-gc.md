@@ -15,7 +15,7 @@ syntax: |
 
 ## Description
 
-Causes the in-memory engine to release memory related to deleted rows of in-memory data that are eligible for garbage collection, which haven't yet been released by the process. In cases where a large volume of in-memory data has been released, and where the memory isn't soon be needed for other in-memory data, this procedure can free up memory for other uses. If you anticipate the memory being used soon for other in-memory data, freeing it here
+Causes the in-memory engine to release memory related to deleted rows of in-memory data that are eligible for garbage collection, which haven't yet been released by the process. In cases where a large volume of in-memory data has been released, and where the memory isn't soon be needed for other in-memory data, this procedure can free up memory for other uses.
 
 ## Syntax
 

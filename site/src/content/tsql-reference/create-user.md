@@ -19,8 +19,6 @@ pubDate: 2026-05-29
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database

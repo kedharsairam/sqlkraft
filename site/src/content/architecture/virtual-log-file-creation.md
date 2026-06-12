@@ -70,9 +70,7 @@ section of
 
 Manage the size of the transaction log
 
-file
-
-.
+file.
 
 We recommend that you create your log files close to the final size required, using the
 

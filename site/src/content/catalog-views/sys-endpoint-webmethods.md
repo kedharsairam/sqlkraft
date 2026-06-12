@@ -9,7 +9,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Returns a row for each SOAP method defined on a SOAP-enabled HTTP endpoint. The combination of the endpoint_id and namespace columns is unique. ID of the endpoint that the webmethod is defined on. Note: Transact-SQL identifiers allow characters that aren't legal in
+This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Returns a row for each SOAP method defined on a SOAP-enabled HTTP endpoint. The combination of the endpoint_id and namespace columns is unique.
 
 ## Code Blocks
 

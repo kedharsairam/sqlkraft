@@ -9,8 +9,8 @@ pubDate: 2025-03-15
 
 ```sql
 --first add these counters in performance monitor
---Avg Disk Reads/sec     (<=8 is good, >20 is bad)
---Avg Disk Writes/sec    (<=1 is good, >4 is bad)
+--Avg Disk Reads/sec (<=8 is good, >20 is bad)
+--Avg Disk Writes/sec (<=1 is good, >4 is bad)
 --Avg Disk Transfer
 --Avg Disk Queue Length
 

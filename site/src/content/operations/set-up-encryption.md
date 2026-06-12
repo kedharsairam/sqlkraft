@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 To enable automatic decryption of the database master key of a mirror database, you must
@@ -43,9 +41,7 @@ you start database mirroring. You must repeat this process for every database th
 
 mirrored. For more information, see
 
-sp_control_dbmasterkey_password (Transact-SQL)
-
-.
+sp_control_dbmasterkey_password (Transact-SQL).
 
 sp_control_dbmasterkey_password (Transact-SQL)
 

@@ -29,6 +29,6 @@ By default, the container wizard uses SQL Server 2025 (17.x), which includes AI-
 
 such as vector data types and JSON functions. You can also choose from SQL Server 2022 (16.x),
 
-SQL Server 2019 (15.x), or SQL Server 2017 (14.x), depending on your testing needs.
+2019 (15.x), or SQL Server 2017 (14.x), depending on your testing needs.
 
 

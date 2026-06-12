@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -41,7 +39,7 @@ files
 
 and NuGet packages that provide database object definitions.
 
-- References from .NET projects to SQL projects for scenarios like
+- References from.NET projects to SQL projects for scenarios like
 
 integration testing, deployment automation, and code generation.
 
@@ -79,18 +77,14 @@ For detailed information about configuring database references, including exampl
 
 relationship type and guidance on building and publishing projects with references, see
 
-Database references overview
+Database references overview.
 
-.
-
-```cmd
-.dacpac
-.dacpac
+```cmd.dacpac.dacpac
 <ItemGroup>
 <ProjectReference
 Include
 =
-"..\Database1\Database1.sqlproj"
+".\Database1\Database1.sqlproj"
 />
 </ItemGroup>
 ```

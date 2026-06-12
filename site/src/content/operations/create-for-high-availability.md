@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 10/20/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
@@ -53,9 +51,7 @@ Server instances store configuration metadata in the
 
 database.
 
-For example, an availability group on a Linux cluster has
-
-. There's no
+For example, an availability group on a Linux cluster has. There's no
 
 WSFC to arbitrate failover. In this case, the configuration metadata is managed and maintained
 

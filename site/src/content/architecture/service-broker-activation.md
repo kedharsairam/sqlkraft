@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -57,9 +55,7 @@ run as a scheduled job. For more information about choosing a strategy to start 
 
 that uses Service Broker, see
 
-Choose a startup strategy
-
-.
+Choose a startup strategy.
 
 Description
 

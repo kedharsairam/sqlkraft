@@ -14,11 +14,11 @@ Occurs when waiting for a DTC abort operation. Indicates distributed transaction
 
 ## Key Metrics
 
-| Metric    | Description         |
+| Metric | Description |
 | --------- | ------------------- |
 | Wait Type | `DTC_ABORT_REQUEST` |
-| Category  | Blocking            |
-| Severity  | HIGH                |
+| Category | Blocking |
+| Severity | HIGH |
 
 ## Troubleshooting
 
@@ -28,10 +28,10 @@ Use the following query to identify the top queries contributing to `DTC_ABORT_R
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'DTC_ABORT_REQUEST'
 ORDER BY wait_time_ms DESC;

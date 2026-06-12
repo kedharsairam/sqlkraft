@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 Quickstart: Install SQL Server and create a
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -37,7 +35,7 @@ simultaneously. For more information, see
 
 What is the Windows Subsystem for Linux?
 
-SQL Server on WSL 2 is intended for development purposes only, and is
+on WSL 2 is intended for development purposes only, and is
 
 supported for
 
@@ -51,9 +49,7 @@ for the version of SQL Server you intend to run.
 
 For any support related issues, you can
 
-obtain support from Microsoft
-
-.
+obtain support from Microsoft.
 
 There are two ways to get started with SQL Server on WSL 2:
 
@@ -67,9 +63,7 @@ on WSL. For more information, see
 
 How to
 
-enable systemd
-
-.
+enable systemd.
 
 Deploy SQL Server containers in WSL. For this option, you need to install a Linux container
 
@@ -81,7 +75,7 @@ higher), or Windows 11. To install WSL, open a PowerShell or Windows command pro
 
 administrator mode, and follow the instructions in the next section.
 
-SQL Server on WSL is for development use only
+on WSL is for development use only
 
 ```cmd
 systemd systemctl systemd

@@ -57,9 +57,7 @@ Database settings set by using ALTER DATABASE are valid only at the database lev
 
 take effect only if explicitly set. Database settings override instance option settings that
 
-are set by using
-
-.
+are set by using.
 
 If a SET statement uses ON and OFF, you can specify either one for multiple SET options.
 
@@ -157,9 +155,7 @@ executes under the current compatibility level setting of database
 
 stored procedure
 
-executes under the current compatibility level setting of database
-
-.
+executes under the current compatibility level setting of database.
 
 When a Transact-SQL statement concerns objects that are in multiple databases, the
 
@@ -198,8 +194,6 @@ OFF at the database level. When SET RESULT_SET_CACHING is OFF, the result set ca
 feature is disabled for the current client session. Changing this setting requires
 
 membership in the public role. Applies to: Azure Synapse Analytics Gen2
-
-Last updated on 11/18/2025
 
 ```sql
 SET QUOTED_IDENTIFIER, ANSI_NULLS ON

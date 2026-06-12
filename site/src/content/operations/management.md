@@ -19,11 +19,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server managing partners
+managing partners
 
 09/09/2025
-
-Applies to:
 
 SQL Server
 
@@ -57,11 +55,11 @@ X
 
 Video
 
-SQL Server high availability and disaster recovery partners
+high availability and disaster recovery partners
 
-SQL Server monitoring partners
+monitoring partners
 
-SQL Server development partners
+development partners
 
 ﾉ
 

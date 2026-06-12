@@ -27,9 +27,7 @@ statement. It produces groups and summary values but does so after eliminating t
 
 products with prices over $25 and average order quantities under 5. It also organizes the
 
-results by
-
-.
+results by.
 
 The following example groups the
 
@@ -39,9 +37,7 @@ those groups of products that have orders totaling more than
 
 and whose average
 
-order quantities are less than
-
-.
+order quantities are less than.
 
 `LIKE`
 

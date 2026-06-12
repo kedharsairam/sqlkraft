@@ -21,15 +21,13 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
 This article describes how to set tool options, which specify the font types, size, and style that
 
-SQL Server Profiler uses to display traces in the trace window. You can also specify that SQL
+Profiler uses to display traces in the trace window. You can also specify that SQL
 
 Server Profiler displays all dates and times with the regional settings that are configured for
 
@@ -37,15 +35,11 @@ your operating system.
 
 1. On the
 
-menu, select
-
-.
+menu, select.
 
 2. In the
 
-dialog box, select
-
-.
+dialog box, select.
 
 3. In the
 
@@ -79,4 +73,4 @@ to close the
 
 dialog box.
 
-SQL Server Profiler
+Profiler

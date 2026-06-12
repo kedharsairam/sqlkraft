@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-prevent the use of the machine account for remote authentication requests. , select the option if the setting is disabled, and then select . Note : As detailed on the tab, this policy is enabled in Wi
+prevent the use of the machine account for remote authentication requests. , select the option if the setting is disabled, and then select. Note : As detailed on the tab, this policy is enabled in Wi
 
 ## Severity
 

@@ -39,9 +39,7 @@ snapshot
 
 of the
 
-source database
-
-. A database snapshot is transactionally consistent with the
+source database. A database snapshot is transactionally consistent with the
 
 source database as it existed at the time when the snapshot was created. A source database
 
@@ -51,13 +49,9 @@ If creating a database snapshot fails, the snapshot becomes suspect and must be 
 
 more information, see
 
-DROP DATABASE
+DROP DATABASE.
 
-.
-
-Each snapshot persists until it's deleted by using
-
-.
+Each snapshot persists until it's deleted by using.
 
 For more information, see
 
@@ -65,17 +59,13 @@ Database snapshots (SQL Server)
 
 and
 
-Create a database snapshot
-
-.
+Create a database snapshot.
 
 Several database options are automatically set whenever you create a database. For a list of
 
 these options, see
 
-ALTER DATABASE SET options
-
-.
+ALTER DATABASE SET options.
 
 All user-defined objects in the
 

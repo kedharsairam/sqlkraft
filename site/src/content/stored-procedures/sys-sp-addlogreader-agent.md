@@ -2,7 +2,7 @@
 name: "sys.sp_addlogreader_agent"
 title: "sp_addlogreader_agent"
 category: "general"
-description: "Adds a Log Reader agent for a given database. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The login for the Windows account under which the agent runs. This Windows account is always used for agent connections to the Distributor. On Azure SQL Managed Instance, use a SQL Server account. When configuring a Publisher with a remote"
+description: "Adds a Log Reader agent for a given database. This stored procedure is executed at the Publisher on the publication database. The login for the Windows account under which the agent runs. This Windows account is always used for agent connections to the Distributor. On Azure SQL Managed Instance, use a SQL Server account. When configuring a Publisher with a remote"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -37,7 +37,7 @@ syntax: |
 
 ## Description
 
-Adds a Log Reader agent for a given database. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions The login for the Windows account under which the agent runs. . This Windows account is always used for agent connections to the Distributor. On Azure SQL Managed Instance, use a SQL Server account. When configuring a Publisher with a remote Distributor, the values supplied for all
+Adds a Log Reader agent for a given database. This stored procedure is executed at the Publisher on the publication database. The login for the Windows account under which the agent runs. This Windows account is always used for agent connections to the Distributor. On Azure SQL Managed Instance, use a SQL Server account.
 
 ## Syntax
 
@@ -73,8 +73,7 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . Windows authentication logins must have a user account in the database representing their Windows user account. A user account representing a Windows group isn't sufficient. sp_addlogreader_agent (Transact-SQL) sp_addpublication_snapshot (Transact-SQL) sp_changepublication (Transact-SQL) sp_droppublication (Transact-SQL) sp_helppublication (Transact-SQL) sp_replicationdboption (Transact-SQL) Publish Data and Database Objects Related content Only members of the fixed server role or fixed database role can execute . Create a publication Create and Apply the Initial Snapshot sp_addpublication (Transact-SQL) sp_changepublication_snapshot (Transact-SQL) sp_startpublication_snapshot (Transact-SQL) Replication stored procedures (Transact-SQL) Related content
-
+Only members of the fixed server role or fixed database role can execute. Windows authentication logins must have a user account in the database representing their Windows user account. A user account representing a Windows group isn't sufficient. sp_addlogreader_agent (Transact-SQL) sp_addpublication_snapshot (Transact-SQL) sp_changepublication (Transact-SQL) sp_droppublication (Transact-SQL) sp_helppublication (Transact-SQL) sp_replicationdboption (Transact-SQL) Publish Data and Database Objects
 ## Examples
 
 ### Example 1

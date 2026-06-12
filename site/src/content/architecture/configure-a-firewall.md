@@ -27,8 +27,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 To use FILESTREAM in a firewall-protected environment, both the client and server must be
@@ -37,13 +35,9 @@ able to resolve DNS names to the server that contains the FILESTREAM files. FILE
 
 requires the Windows file-sharing ports 139 and 445 to be open.
 
-1. In Control Panel, open
+1. In Control Panel, open.
 
-.
-
-2. In the left pane, click
-
-. If you're prompted for an administrator
+2. In the left pane, click. If you're prompted for an administrator
 
 password or confirmation, type the password or provide confirmation.
 
@@ -51,9 +45,7 @@ password or confirmation, type the password or provide confirmation.
 
 dialog box, in the left pane, click
 
-, and then, in the right pane, click
-
-.
+, and then, in the right pane, click.
 
 4. Follow the instructions in the New Inbound Rule wizard to add TCP port 139.
 

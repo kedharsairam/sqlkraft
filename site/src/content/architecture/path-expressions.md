@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -35,7 +33,7 @@ Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics (serverless SQL pool only)
+(serverless SQL pool only)
 
 database in Microsoft Fabric
 
@@ -75,9 +73,7 @@ path mode
 
 , with a value of
 
-or
-
-.
+or.
 
 2. The
 
@@ -89,11 +85,7 @@ At the beginning of the path expression, optionally declare the path mode by spe
 
 keyword
 
-or
-
-. The default is
-
-.
+or. The default is.
 
 In
 
@@ -127,6 +119,6 @@ SET
 @
 json
 = N
-'{ ... }'
+'{. }'
 ;
 ```

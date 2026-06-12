@@ -2,14 +2,12 @@
 name: "Syntax for SQL Server 2019"
 title: "Syntax for SQL Server 2019"
 category: "statements"
-description: "SQL Server 2017 (14.x) and later versions"
+description: "2017 (14.x) and later versions"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-Applies to:
-
-SQL Server 2017 (14.x) and later versions
+2017 (14.x) and later versions
 
 Azure SQL Managed Instance
 
@@ -57,9 +55,7 @@ users
 
 and
 
-can both individually and separately upload the R library
-
-.
+can both individually and separately upload the R library.
 
 However, if
 
@@ -97,9 +93,7 @@ paths. The first path is always the path to the shared library created by the da
 
 second part of
 
-specifies the path containing packages uploaded individually by
-
-.
+specifies the path containing packages uploaded individually by.
 
 Specifies the content of the package for a specific platform. Only one file artifact per platform
 
@@ -119,7 +113,7 @@ LIBRARY library_name
 AUTHORIZATION owner_name ]
 FROM
 <file_spec>
-[ ,...2 ]
+[ ,.2 ]
 WITH (
 LANGUAGE
 =

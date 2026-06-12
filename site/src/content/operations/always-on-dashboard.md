@@ -27,8 +27,6 @@ Article
 
 02/26/2024
 
-Applies to:
-
 SQL Server
 
 Database administrators use the Always On Availability Group dashboard to obtain an at-a-

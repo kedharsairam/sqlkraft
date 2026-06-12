@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 When the mirrored database is synchronized (that is, when the database is in the
@@ -43,9 +41,7 @@ principal database becomes the mirror. For example, the following table shows th
 
 manual failover swaps the roles of two mirroring partners:
 
-and
-
-.
+and.
 
 PRINCIPAL
 
@@ -59,9 +55,7 @@ Note that the server roles for other database mirroring sessions are not affecte
 
 information, see
 
-Role Switching During a Database Mirroring Session (SQL Server)
-
-.
+Role Switching During a Database Mirroring Session (SQL Server).
 
 1. Connect to the principal server instance and, in the
 
@@ -75,17 +69,13 @@ name to expand the server tree.
 
 3. Right-click the database, select
 
-, and then click
-
-. This opens the
+, and then click. This opens the
 
 page of the
 
 dialog box.
 
-4. Click
-
-.
+4. Click.
 
 A confirmation box appears. The principal server begins by trying to connect to the mirror
 
@@ -97,7 +87,7 @@ dialog box. If the mirror server uses SQL
 
 Server Authentication, select
 
-SQL Server Authentication
+Authentication
 
 in the
 

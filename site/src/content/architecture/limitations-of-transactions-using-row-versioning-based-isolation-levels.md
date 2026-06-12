@@ -12,13 +12,9 @@ can't be enabled in
 
 ,
 
-, or
+, or.
 
-.
-
-Global temp tables are stored in
-
-. When accessing global temp tables inside a
+Global temp tables are stored in. When accessing global temp tables inside a
 
 transaction, one of the following must happen:
 
@@ -26,9 +22,7 @@ Set the
 
 database option to
 
-in
-
-.
+in.
 
 Use an isolation hint to change the isolation level for the statement.
 
@@ -80,9 +74,7 @@ transactions don't have
 
 this limitation when the
 
-database option is set to
-
-.
+database option is set to.
 
 For example, a database administrator executes the following
 

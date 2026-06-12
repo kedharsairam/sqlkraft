@@ -29,17 +29,13 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Use this page to create a new database, or view or modify properties for the selected database.
 
 This topic applies to the
 
-for existing databases, and to the
-
-.
+for existing databases, and to the.
 
 Add or display the name of the database.
 
@@ -49,9 +45,7 @@ This check box is checked and disabled because full-text indexing is always enab
 
 Server. For more information, see
 
-Full-Text Search
-
-.
+Full-Text Search.
 
 Add, view, modify, or remove database files for the associated database. Database files have
 
@@ -63,9 +57,7 @@ Select the file type from the list. The file type can be
 
 ,
 
-, or
-
-. You cannot
+, or. You cannot
 
 modify the file type of an existing file.
 

@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -45,9 +43,7 @@ the row moved into the history table from the current table; the data isn't perm
 
 When you insert new data, you need to account for the
 
-columns if they aren't
-
-.
+columns if they aren't.
 
 You can also use partition switching with temporal tables.
 

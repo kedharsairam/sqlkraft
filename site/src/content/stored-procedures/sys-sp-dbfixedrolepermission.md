@@ -2,7 +2,7 @@
 name: "sys.sp_dbfixedrolepermission"
 title: "sp_dbfixedrolepermission"
 category: "general"
-description: "Displays the permissions of a fixed database role. information in SQL Server 2000 (8.x). The output doesn't reflect the changes to the permissions hierarchy that were implemented in SQL Server 2005 (9.x). For more information, see , which shows a list of fixed database roles and its corresponding permissions. Transact-SQL syntax conventions The name of a valid SQL Server fixed database role. isn't"
+description: "Displays the permissions of a fixed database role. information in SQL Server 2000 (8.x). The output doesn't reflect the changes to the permissions hierarchy that were implemented in SQL Server 2005 (9.x). For more information, see , which shows a list of fixed database roles and its corresponding permissions."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_dbfixedrolepermission"
@@ -10,7 +10,7 @@ syntax: "sp_dbfixedrolepermission"
 
 ## Description
 
-Displays the permissions of a fixed database role. information in SQL Server 2000 (8.x). The output doesn't reflect the changes to the permissions hierarchy that were implemented in SQL Server 2005 (9.x). For more information, see , which shows a list of fixed database roles and its corresponding permissions. Transact-SQL syntax conventions The name of a valid SQL Server fixed database role. isn't specified, the permissions for all fixed database roles are displayed.
+Displays the permissions of a fixed database role. information in SQL Server 2000 (8.x). The output doesn't reflect the changes to the permissions hierarchy that were implemented in SQL Server 2005 (9.x). For more information, see , which shows a list of fixed database roles and its corresponding permissions.
 
 ## Syntax
 
@@ -75,4 +75,4 @@ EXECUTE AS
 
 `DESX`
 
-_(... and 15 more examples)_
+_(. and 15 more examples)_

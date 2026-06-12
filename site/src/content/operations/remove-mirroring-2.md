@@ -31,8 +31,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 The database owner can manually stop a database mirroring session at any time, at either
@@ -67,9 +65,7 @@ column and all other mirroring columns are set to
 
 NULL. For more information, see
 
-sys.database_mirroring (Transact-SQL)
-
-.
+sys.database_mirroring (Transact-SQL).
 
 Each partner server instance is left with a separate copy of the database.
 

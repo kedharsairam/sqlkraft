@@ -19,8 +19,6 @@ Selective XML Indexes (SXI)
 
 Create, Alter, and Drop Selective XML Indexes
 
-Last updated on 11/18/2025
-
 See Also
 
 ```sql

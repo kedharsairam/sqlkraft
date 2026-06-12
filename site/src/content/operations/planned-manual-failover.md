@@ -31,8 +31,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to perform a manual failover without data loss (a
@@ -75,9 +73,7 @@ If the secondary and primary replicas are both configured for automatic failover
 
 after the secondary replica is synchronized, it also can serve as the target for an automatic
 
-failover. For more information, see
-
-.
+failover. For more information, see.
 
 ）
 
@@ -87,6 +83,4 @@ There are specific procedures to fail over a read-scale availability group with 
 
 manager. When an availability group has CLUSTER_TYPE = NONE, follow the procedures
 
-under
-
-.
+under.

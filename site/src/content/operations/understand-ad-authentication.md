@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -37,9 +35,7 @@ passwords. That information is encrypted and then shared with other devices on t
 
 To find out more about securing LDAP, see
 
-How to enable LDAP signing in Windows Server
-
-.
+How to enable LDAP signing in Windows Server.
 
 Kerberos is an authentication protocol used to verify the identity of a user or host computer. You
 

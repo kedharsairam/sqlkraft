@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 The
@@ -71,9 +69,7 @@ is user configurable. To learn the current recovery model of the model, see
 
 View or Change the
 
-Recovery Model of a Database (SQL Server)
-
-.
+Recovery Model of a Database (SQL Server).
 
 When a CREATE DATABASE statement is issued, the first part of the database is created by
 
@@ -109,11 +105,7 @@ If you modify the
 
 database with user-specific template information, we recommend
 
-that you back up
-
-. For more information, see
-
-.
+that you back up. For more information, see.
 
 ﾉ
 

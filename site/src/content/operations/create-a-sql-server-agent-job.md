@@ -17,13 +17,11 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
 
-SQL Server jobs are used to regularly perform the same sequence of commands in your SQL
+jobs are used to regularly perform the same sequence of commands in your SQL
 
 Server database. This tutorial provides an example of how to create a SQL Server Agent job on
 
@@ -31,9 +29,7 @@ Linux using both Transact-SQL and SQL Server Management Studio (SSMS).
 
 For known issues with SQL Server Agent on Linux, see
 
-SQL Server on Linux: Known issues
-
-.
+on Linux: Known issues.
 
 The following prerequisites are required to complete this tutorial:
 

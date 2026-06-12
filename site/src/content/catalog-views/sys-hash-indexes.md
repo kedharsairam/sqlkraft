@@ -2,7 +2,7 @@
 name: "sys.hash_indexes"
 title: "sys.hash_indexes"
 category: "indexes"
-description: "SQL Server 2014 (12.x) and later Shows the current hash indexes and the hash index properties. Hash indexes are supported In-Memory OLTP (In-Memory Optimization) The sys.hash_indexes view contains the same columns as the sys.indexes view and an additional . For more information about the other columns in the Count of hash buckets for hash indexes. For more information about the bucket_count value,"
+description: "2014 (12.x) and later Shows the current hash indexes and the hash index properties. Hash indexes are supported In-Memory OLTP (In-Memory Optimization) The sys.hash_indexes view contains the same columns as the sys.indexes view and an additional . For more information about the other columns in the Count of hash buckets for hash indexes. For more information about the bucket_count value,"
 tags: ["indexes", "catalog-view"]
 pubDate: 2026-05-29
 syntax: |
@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-SQL Server 2014 (12.x) and later Shows the current hash indexes and the hash index properties. Hash indexes are supported In-Memory OLTP (In-Memory Optimization) The sys.hash_indexes view contains the same columns as the sys.indexes view and an additional . For more information about the other columns in the Count of hash buckets for hash indexes. For more information about the bucket_count value, including guidelines
+2014 (12.x) and later Shows the current hash indexes and the hash index properties. Hash indexes are supported In-Memory OLTP (In-Memory Optimization) The sys.hash_indexes view contains the same columns as the sys.indexes view and an additional. For more information about the other columns in the Count of hash buckets for hash indexes. For more information about the bucket_count value, including guidelines
 
 ## Syntax
 

@@ -29,8 +29,6 @@ Article
 
 04/15/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -41,9 +39,7 @@ Features are usually modified so they do not cross the database boundary.
 
 For more information, see
 
-Contained Databases
-
-.
+Contained Databases.
 
 When using the ALTER DATABASE statement from inside of a contained database, the syntax
 
@@ -53,9 +49,7 @@ elements of the statement that extend beyond the database to the instance. For m
 
 information, see
 
-ALTER DATABASE (Transact-SQL)
-
-.
+ALTER DATABASE (Transact-SQL).
 
 The syntax for the ALTER DATABASE when used outside of a contained database differs from
 
@@ -63,9 +57,7 @@ that used for non-contained databases. These changes prevent crossing the databa
 
 boundary. For more information, see
 
-ALTER DATABASE (Transact-SQL)
-
-.
+ALTER DATABASE (Transact-SQL).
 
 The CREATE DATABASE syntax for a contained database differs from that for a non-contained
 
@@ -81,9 +73,7 @@ Local temporary tables are permitted within a contained database, but their beha
 
 from those in non-contained databases. In non-contained databases, temporary table data is
 
-collated in the collation of
-
-. In a contained database temporary table data is collated in
+collated in the collation of. In a contained database temporary table data is collated in
 
 the collation of the contained database.
 

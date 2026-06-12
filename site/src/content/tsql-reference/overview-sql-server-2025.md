@@ -2,14 +2,12 @@
 name: "Overview: SQL Server 2025"
 title: "Overview: SQL Server 2025"
 category: "statements"
-description: "SQL Server 2016 (13.x) and later versions"
+description: "2016 (13.x) and later versions"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -73,9 +71,7 @@ Supports Managed Identity connections for instances enabled by Azure Arc. For de
 
 Connect to Azure
 
-Storage with managed identity from PolyBase
-
-.
+Storage with managed identity from PolyBase.
 
 ７
 

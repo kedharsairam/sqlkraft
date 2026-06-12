@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-file ID being referenced is < 0 or is not a valid file ID in a database (per the valid file IDs listed in system catalog views such as sys.database_files), then a 5180 error can be encountered. One po
+file ID being referenced is < 0 or is not a valid file ID in a database (per the valid file IDs listed in system catalog views such as sys.database_files), then a 5180 error can be encountered.
 
 ## Severity
 

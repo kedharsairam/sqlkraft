@@ -32,9 +32,7 @@ When there are no RLQ queries accessing a row, the database engine can skip taki
 
 page locks when modifying a row, and use only an exclusive page
 
-latch
-
-. This optimization
+latch. This optimization
 
 reduces the locking overhead while preserving ACID transaction semantics. Skipping row and
 
@@ -66,9 +64,7 @@ If the modified row has any columns using the LOB data types, such as
 
 ,
 
-, and
-
-.
+, and.
 
 For rows on pages that were split in the same transaction.
 

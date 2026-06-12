@@ -92,7 +92,7 @@ UNION ALL
 `SELECT`
 
 ```sql
-WITH cte_name ( column_name [ ,...n ] )
+WITH cte_name ( column_name [ ,.n ] )
 AS (
 CTE
 _query_definition

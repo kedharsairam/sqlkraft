@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -35,9 +33,7 @@ command.
 
 To configure a new
 
-SQL Server Linux container image
-
-.
+Linux container image.
 
 Description
 
@@ -45,9 +41,7 @@ Sets the
 
 variable to any value to confirm your acceptance of the
 
-End-User Licensing Agreement
-
-. Required setting for the SQL Server image.
+End-User Licensing Agreement. Required setting for the SQL Server image.
 
 Configures the
 
@@ -79,9 +73,7 @@ isn't set, this variable is
 
 ignored.
 
-Sets the password of the user whose name is in
-
-. If this variable is
+Sets the password of the user whose name is in. If this variable is
 
 used,
 
@@ -91,13 +83,13 @@ isn't set, this variable is ignored.
 
 Sets the
 
-SQL Server edition
+edition
 
 or product key. Possible values are listed in the
 
 following
 
-SQL Server editions
+editions
 
 table. If you specify a product key, it must be in the
 
@@ -105,9 +97,7 @@ table. If you specify a product key, it must be in the
 
 Tip
 
-To configure SQL Server after these setup scenarios, see
-
-.
+To configure SQL Server after these setup scenarios, see.
 
 ﾉ
 

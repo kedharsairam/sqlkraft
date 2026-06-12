@@ -2,7 +2,7 @@
 name: "sys.fn_cdc_is_bit_set"
 title: "sys.fn_cdc_is_bit_set"
 category: "change-data-capture"
-description: "Indicates whether a captured column has been updated by checking whether its ordinal position is set within a provided bitmask. Transact-SQL syntax conventions Is the ordinal position in the mask to check. Is the mask identifying updated columns. This function is typically used as part of a change data query to indicate whether a column has changed. In this scenario, the function sys.fn_cdc_get_co"
+description: "Indicates whether a captured column has been updated by checking whether its ordinal position is set within a provided bitmask. Is the ordinal position in the mask to check. Is the mask identifying updated columns. This function is typically used as part of a change data query to indicate whether a column has changed. In this scenario, the function sys.fn_cdc_get_co"
 tags: ["change-data-capture", "function"]
 pubDate: 2026-05-29
 syntax: "sys.fn_cdc_is_bit_set ( position , update_mask )"
@@ -10,7 +10,7 @@ syntax: "sys.fn_cdc_is_bit_set ( position , update_mask )"
 
 ## Description
 
-Indicates whether a captured column has been updated by checking whether its ordinal position is set within a provided bitmask. Transact-SQL syntax conventions Is the ordinal position in the mask to check. Is the mask identifying updated columns. This function is typically used as part of a change data query to indicate whether a column has changed. In this scenario, the function sys.fn_cdc_get_column_ordinal is used before the query to obtain the required column ordinal. is then applied to each row of change data that is returned, providing the column-specific information as part of the returned We recommend using this function instead of the function sys.fn_cdc_has_column_changed when determining whether columns have changed for all rows of a returned result set.
+Indicates whether a captured column has been updated by checking whether its ordinal position is set within a provided bitmask. Is the ordinal position in the mask to check. Is the mask identifying updated columns. This function is typically used as part of a change data query to indicate whether a column has changed. In this scenario, the function sys.fn_cdc_get_column_ordinal is used before the query to obtain the required column ordinal. is then applied to each row of change data that is returned, providing the column-specific information as part of the returned We recommend using this function instead of the function sys.fn_cdc_has_column_changed when determining whether columns have changed for all rows of a returned result set.
 
 ## Syntax
 
@@ -20,13 +20,9 @@ sys.fn_cdc_is_bit_set ( position , update_mask )
 
 ## Remarks
 
-Applies to:
-
 Indicates whether a captured column has been updated by checking whether its ordinal
 
 position is set within a provided bitmask.
-
-Transact-SQL syntax conventions
 
 Is the ordinal position in the mask to check.
 

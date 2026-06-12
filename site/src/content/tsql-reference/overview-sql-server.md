@@ -2,14 +2,12 @@
 name: "Overview: SQL Server"
 title: "Overview: SQL Server"
 category: "statements"
-description: "SQL Server 2016 (13.x) and later versions"
+description: "2016 (13.x) and later versions"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 

@@ -30,9 +30,7 @@ Indexes on views can provide significant performance gains when the view contain
 
 aggregations and/or joins. For more information, see
 
-Create indexed views
-
-.
+Create indexed views.
 
 Databases on primary replicas in Azure SQL Database automatically generate
 
@@ -44,9 +42,7 @@ for indexes. You can optionally
 
 enable automatic
 
-index tuning
-
-.
+index tuning.
 
 Query Store helps identify queries with suboptimal performance
 
@@ -92,9 +88,7 @@ predicate
 
 that can use an index to speed up the execution of the query. For more information, see
 
-SQL Server and Azure SQL index architecture and design guide
-
-.
+and Azure SQL index architecture and design guide.
 
 
 
@@ -106,9 +100,7 @@ workload. Drop unused indexes.
 
 Index usage statistics are available in
 
-and
-
-.
+and.
 
 ### varchar(max)
 

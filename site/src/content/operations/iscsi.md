@@ -19,9 +19,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server on Linux
-
-Applies to:
+on Linux
 
 SQL Server
 

@@ -88,9 +88,7 @@ Although BCM pages appear in all databases, they are only relevant when the data
 
 using the bulk-logged
 
-recovery model
-
-. In this recovery model, when a transaction log
+recovery model. In this recovery model, when a transaction log
 
 backup is performed, the backup process scans BCM pages for extents that have been
 
@@ -112,7 +110,7 @@ GAM and SGAM pages. The DCM and BCM pages follow the GAM and SGAM pages in a
 
 physical file as follows:
 
-SQL Server I/O fundamentals
+I/O fundamentals
 
 sys.allocation_units (Transact-SQL)
 
@@ -121,33 +119,3 @@ Heaps (Tables without Clustered Indexes)
 sys.dm_db_page_info (Transact-SQL)
 
 Read data pages in the Database Engine
-
-Related content
-
-Write pages in the Database Engine
-
-Last updated on 12/29/2025
-
-```sql
-0
-```
-
-```sql
-1
-```
-
-```sql
-1
-```
-
-```sql
-0
-```
-
-```sql
-1
-```
-
-```sql
-0
-```

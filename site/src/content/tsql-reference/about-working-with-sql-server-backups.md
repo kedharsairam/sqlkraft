@@ -23,9 +23,7 @@ option is equivalent to
 
 followed
 
-by a
-
-.
+by a.
 
 Using standby mode requires a standby file, specified by
 
@@ -63,9 +61,7 @@ option of
 
 is equivalent to specifying both
 
-and
-
-.
+and.
 
 Without the
 
@@ -73,9 +69,7 @@ option, the database must be in the
 
 state. If the database is in
 
-the SUSPENDED state, you might be able to create a backup by specifying
-
-. But if
+the SUSPENDED state, you might be able to create a backup by specifying. But if
 
 the database is in the
 
@@ -83,15 +77,11 @@ or
 
 state,
 
-isn't allowed even with
-
-.
+isn't allowed even with.
 
 For information about database states, see
 
-Database states
-
-.
+Database states.
 
 This section introduces the following essential backup concepts:
 
@@ -135,9 +125,7 @@ cover the whole database.
 
 Optionally, each database backup can serve as the base of a series of one or more
 
-differential database backups
-
-.
+differential database backups.
 
 Partial
 
@@ -151,9 +139,7 @@ files or filegroups.
 
 Optionally, each partial backup can serve as the base of a series of one or more
 
-differential partial backups
-
-.
+differential partial backups.
 
 File or
 
@@ -169,9 +155,7 @@ backups are essentially restricted to read-only secondary filegroups.
 
 Optionally, each file backup can serve as the base of a series of one or more
 
-differential file backups
-
-.
+differential file backups.
 
 Under the full recovery model or bulk-logged recovery model, conventional backups also
 
@@ -201,9 +185,7 @@ We recommend that you put log backups on a separate volume than the database
 
 backups.
 
-For an introduction to backup in SQL Server, see
-
-.
+For an introduction to backup in SQL Server, see.
 
 Expand table
 
@@ -235,9 +217,7 @@ statement. For more information, see
 
 Copy-only
 
-backups
-
-.
+backups.
 
 To avoid filling up the transaction log of a database, routine backups are essential. Under the
 
@@ -249,9 +229,7 @@ the truncation process can be delayed. For information about factors that can de
 
 truncation, see
 
-The transaction log
-
-.
+The transaction log.
 
 Backup media is formatted by a
 
@@ -293,9 +271,7 @@ you're using the full or bulk-logged recovery model recovery and you must remove
 
 log backup chain from a database, switch to the simple recovery model. For more
 
-information, see
-
-.
+information, see.
 
 ## Work with a mirrored media set
 
@@ -401,17 +377,13 @@ order as they were specified when the media set was created.
 
 For more information about mirrored media sets, see
 
-Mirrored Backup Media Sets (SQL Server)
-
-.
+Mirrored Backup Media Sets (SQL Server).
 
 For more information about media sets and media families in general, see
 
 Media sets, media
 
-families, and backup sets (SQL Server)
-
-.
+families, and backup sets (SQL Server).
 
 ）
 

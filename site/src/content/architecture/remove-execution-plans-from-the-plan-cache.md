@@ -16,9 +16,7 @@ column shows the value
 
 in the first record, which is the plan executed
 
-once with
-
-.
+once with.
 
 The
 
@@ -118,7 +116,7 @@ automatically when memory pressure exists; it is removed only when the SQL Serve
 
 Engine examines the plan and the current cost is zero. When examining an execution plan, the
 
-SQL Server Database Engine pushes the current cost toward zero by decreasing the current
+Database Engine pushes the current cost toward zero by decreasing the current
 
 cost if a query isn't currently using the plan.
 
@@ -150,9 +148,7 @@ maximum server memory. For more information on configuring the maximum server me
 
 see the
 
-setting in
-
-.
+setting in.
 
 The user worker threads remove execution plans from the plan cache when single cache
 

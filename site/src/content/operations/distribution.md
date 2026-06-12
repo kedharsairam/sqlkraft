@@ -29,8 +29,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -67,9 +65,7 @@ Ensure that this folder is already shared and has the appropriate permissions se
 
 more information, see
 
-Secure the Snapshot Folder
-
-.
+Secure the Snapshot Folder.
 
 A name and file locations for the distribution database. The distribution database cannot
 
@@ -95,9 +91,7 @@ more information about changing the size of a database, see
 
 ALTER DATABASE (Transact-
 
-SQL)
-
-.
+SQL).
 
 Set the
 

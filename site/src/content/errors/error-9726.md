@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 9726 16 No The remote service binding with ID %d has been dropped. 9727 16 Yes Dialog security is not available for this conversation because there is no remote service binding for the tar
+Description 9726 16 No The remote service binding with ID %d has been dropped.
 
 ## Severity
 

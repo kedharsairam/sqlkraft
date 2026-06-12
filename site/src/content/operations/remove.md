@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 This article describes how to remove log shipping in SQL Server by using SQL Server
@@ -39,15 +37,11 @@ and expand that instance.
 
 2. Expand
 
-, right-click the log shipping primary database, and then select
-
-.
+, right-click the log shipping primary database, and then select.
 
 3. Under
 
-, select
-
-.
+, select.
 
 4. Clear the
 

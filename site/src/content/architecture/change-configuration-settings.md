@@ -29,8 +29,6 @@ Article
 
 01/22/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -45,7 +43,7 @@ Limitations and Restrictions
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 

@@ -33,9 +33,7 @@ To release the trigger for a command that doesn't change any rows, employ the sy
 
 variable
 
-ROWCOUNT_BIG
-
-.
+ROWCOUNT_BIG.
 
 The following T-SQL code snippet shows how to release the trigger for a command that
 
@@ -65,9 +63,7 @@ statements. The statement types include
 
 ,
 
-, and
-
-. Certain system stored procedures that carry out DDL-like operations can also fire
+, and. Certain system stored procedures that carry out DDL-like operations can also fire
 
 DDL triggers.
 

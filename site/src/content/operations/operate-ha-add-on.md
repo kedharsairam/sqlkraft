@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -45,9 +43,7 @@ HA add-on
 
 built on top of
 
-Pacemaker
-
-. Corosync and Pacemaker coordinate cluster communications and resource
+Pacemaker. Corosync and Pacemaker coordinate cluster communications and resource
 
 management. The SQL Server instance is active on either one node or the other.
 
@@ -55,9 +51,7 @@ The following diagram illustrates the components in a Linux cluster with SQL Ser
 
 For more information on cluster configuration, resource agents options, and management, visit
 
-RHEL reference documentation
-
-.
+RHEL reference documentation.
 
 The
 

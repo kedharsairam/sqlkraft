@@ -30,9 +30,7 @@ Factors that can delay log truncation
 
 and
 
-Troubleshoot a full transaction log (SQL Server Error 9002)
-
-.
+Troubleshoot a full transaction log (SQL Server Error 9002).
 
 This section describes the role of the write-ahead transaction log in recording data
 
@@ -44,9 +42,7 @@ written to disk. This maintains the ACID properties for a transaction.
 
 For more information about WAL, see
 
-SQL Server I/O fundamentals
-
-.
+I/O fundamentals.
 
 To understand how write-ahead logging works in relation to the transaction log, it's important
 
@@ -58,9 +54,7 @@ is modified in the buffer cache, it isn't immediately written back to disk; inst
 
 marked as
 
-dirty
-
-. A data page can have more than one logical write made before it's physically
+dirty. A data page can have more than one logical write made before it's physically
 
 written to disk. For each logical write, a transaction log record is inserted in the log cache that
 

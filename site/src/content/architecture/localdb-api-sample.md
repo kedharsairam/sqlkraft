@@ -21,19 +21,17 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Express LocalDB reference
+Express LocalDB reference
 
 07/14/2025
-
-Applies to:
 
 SQL Server
 
 This section contains information about the SQL Server Express LocalDB:
 
-SQL Server Express LocalDB error messages
+Express LocalDB error messages
 
-SQL Server Express LocalDB instance APIs
+Express LocalDB instance APIs
 
 The following sample demonstrates the LocalDB API. Make sure that LocalDB is installed on the
 

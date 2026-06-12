@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description command failed. 1430 16 No Database '%.\*ls' is in an unstable state for removing database mirroring, so recovery may fail. Verify the data after recovery. 1431 16 No Neither the partner no
+Description command failed. 1430 16 No Database '%.\*ls' is in an unstable state for removing database mirroring, so recovery may fail. Verify the data after recovery.
 
 ## Severity
 

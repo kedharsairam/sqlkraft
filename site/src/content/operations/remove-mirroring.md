@@ -27,19 +27,17 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to remove database mirroring from a database in SQL Server by using
 
-SQL Server Management Studio or Transact-SQL. At any time, the database owner can
+Management Studio or Transact-SQL. At any time, the database owner can
 
 manually stop a database mirroring session by removing mirroring from the database.
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 

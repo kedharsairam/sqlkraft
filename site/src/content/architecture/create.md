@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 The only way to create a SQL Server database snapshot is to use Transact-SQL. SQL Server
@@ -33,9 +31,7 @@ The server instance must be running an edition of SQL Server that supports datab
 
 snapshot. For information about support for database snapshots in SQL Server, see
 
-Editions and supported features of SQL Server 2022
-
-.
+Editions and supported features of SQL Server 2022.
 
 The source database must be online, unless the database is a mirror database within a
 
@@ -45,9 +41,7 @@ To create a database snapshot on a mirror database, the database must be in the
 
 synchronized
 
-mirroring state
-
-.
+mirroring state.
 
 The source database can't be configured as a scalable shared database.
 
@@ -69,8 +63,6 @@ Best practice: client connections to a database snapshot
 
 Important
 
-For information about other significant considerations, see
-
-.
+For information about other significant considerations, see.
 
 `MEMORY_OPTIMIZED_DATA`

@@ -2,7 +2,7 @@
 name: "sys.sp_attachsubscription"
 title: "sp_attachsubscription"
 category: "general"
-description: "Attaches an existing subscription database to any Subscriber. This stored procedure is executed Transact-SQL syntax conventions This feature is deprecated and will be removed in a future release. This feature shouldn't be used in new development work. For merge publications that are partitioned using parameterized filters, we recommend using the new features of partitioned snapshots, which simplif"
+description: "Attaches an existing subscription database to any Subscriber. This stored procedure is executed This feature is deprecated and will be removed in a future release. This feature shouldn't be used in new development work. For merge publications that are partitioned using parameterized filters, we recommend using the new features of partitioned snapshots, which simplif"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -57,7 +57,7 @@ syntax: |
 
 ## Description
 
-Attaches an existing subscription database to any Subscriber. This stored procedure is executed Transact-SQL syntax conventions This feature is deprecated and will be removed in a future release. This feature shouldn't be used in new development work. For merge publications that are partitioned using parameterized filters, we recommend using the new features of partitioned snapshots, which simplify the initialization of a large number of subscriptions. For more information,
+Attaches an existing subscription database to any Subscriber. This stored procedure is executed This feature is deprecated and will be removed in a future release. This feature shouldn't be used in new development work. For merge publications that are partitioned using parameterized filters, we recommend using the new features of partitioned snapshots, which simplify the initialization of a large number of subscriptions. For more information,
 
 ## Syntax
 
@@ -113,15 +113,11 @@ N
 
 ## Arguments
 
-Applies to:
-
 Azure SQL Database
 
 Attaches an existing subscription database to any Subscriber. This stored procedure is executed
 
 at the new Subscriber on the
-
-Transact-SQL syntax conventions
 
 This feature is deprecated and will be removed in a future release. This feature shouldn't
 

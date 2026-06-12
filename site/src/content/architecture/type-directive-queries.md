@@ -35,15 +35,13 @@ Article
 
 08/10/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
 
 Azure SQL Managed Instance
 
-SQL Server support for the
+support for the
 
 xml (Transact-SQL)
 
@@ -59,9 +57,7 @@ XQuery against it, assign the result to an
 
 type variable, or write
 
-Nested FOR XML queries
-
-.
+Nested FOR XML queries.
 
 The following examples illustrate the use of the TYPE directive with FOR XML queries.
 
@@ -85,7 +81,7 @@ XML
 
 Note
 
-SQL Server returns
+returns
 
 data type instance data to the client as a result of different server-
 

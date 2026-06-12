@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/22/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -97,6 +95,6 @@ query is the following:
 
 ```sql
 Msg 313, Level 16, State 3, Line 1
-An insufficient number of arguments were supplied for the procedure or function cdc.fn_cdc_get_all_changes_ ...
+An insufficient number of arguments were supplied for the procedure or function cdc.fn_cdc_get_all_changes_.
 Msg 313, Level 16, State 3, Line 1
 ```

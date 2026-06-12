@@ -34,9 +34,7 @@ hint, or row versioning. For more
 
 information, see
 
-Table Hints (Transact-SQL)
-
-.
+Table Hints (Transact-SQL).
 
 Missing one or more rows that weren't the target of update
 

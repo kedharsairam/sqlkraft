@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -51,9 +49,7 @@ The following examples use the
 
 sample database. For instructions on
 
-how to obtain and install this sample database, see
-
-.
+how to obtain and install this sample database, see.
 
 ```cmd
 SalesOrderDetail

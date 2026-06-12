@@ -56,9 +56,7 @@ unpredictable behavior due to their nature. See
 
 Implicit Transactions and concurrency
 
-problems
-
-.
+problems.
 
 To prevent concurrency and resource problems, manage implicit transactions carefully. When
 

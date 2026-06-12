@@ -25,9 +25,7 @@ statement. For example,
 
 after the
 
-in this following statement is run, the database context is
-
-.
+in this following statement is run, the database context is.
 
 You can use the
 

@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -100,8 +98,6 @@ Class
 Occurs when SQL Server executes an XQuery expression.
 
 Transact-SQL Reference (Database Engine)
-
-Last updated on 11/18/2025
 
 ﾉ
 

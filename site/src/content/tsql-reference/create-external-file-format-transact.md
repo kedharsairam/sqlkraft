@@ -2,7 +2,7 @@
 name: "CREATE EXTERNAL FILE FORMAT (Transact-"
 title: "CREATE EXTERNAL FILE FORMAT (Transact-"
 category: "statements"
-description: "SQL Server 2016 (13.x) and later versions"
+description: "2016 (13.x) and later versions"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -21,9 +21,7 @@ pubDate: 2026-05-29
 
 SQL)
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -49,13 +47,11 @@ the data referenced by an external table. To create an External Table, see
 
 CREATE EXTERNAL
 
-TABLE (Transact-SQL)
-
-.
+TABLE (Transact-SQL).
 
 The following file formats are supported:
 
-SQL database in Microsoft Fabric only supports CSV format of delimited text.
+only supports CSV format of delimited text.
 
 Doesn't apply to Azure Synapse Analytics, Azure SQL Managed Instance, Azure SQL
 
@@ -67,9 +63,7 @@ Database, SQL database in Microsoft Fabric, or SQL Server 2022 (16.x).
 
 Applies to Azure SQL Edge
 
-only
-
-. For information on using
+only. For information on using
 
 to import JSON
 
@@ -81,9 +75,7 @@ or
 
 Query JSON files
 
-using serverless SQL pool in Azure Synapse Analytics
-
-.
+using serverless SQL pool in Azure Synapse Analytics.
 
 Applies
 
@@ -97,9 +89,7 @@ serverless SQL pools in Azure Synapse Analytics
 
 Server 2022 (16.x) and later versions. You can query
 
-Delta Lake version 1.0
-
-. Changes
+Delta Lake version 1.0. Changes
 
 introduced since, in
 

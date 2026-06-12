@@ -10,15 +10,13 @@ syntax: "HumanResources.Employee"
 
 ## Description
 
-filtered index, the number of rows might be less than the number of rows in the table. Total number of rows sampled for statistics calculations. Number of steps in the histogram. For more information, see DBCC SHOW_STATISTICS (Transact-SQL) unfiltered_rows Total number of rows in the table before applying the filter expression (for filtered statistics). If statistics are not filtered, unfiltered_rows is equal to the value returns in the rows column. modification_counter Total number of modifications for the leading statistics column (the column on which the histogram is built) since the last time statistics were updated. Memory-optimized tables: starting SQL Server 2016 (13.x) and in Azure SQL Database this column contains: total number of modifications for the table since the last time statistics were
+filtered index, the number of rows might be less than the number of rows in the table. Total number of rows sampled for statistics calculations. Number of steps in the histogram. For more information, see DBCC SHOW_STATISTICS (Transact-SQL) unfiltered_rows Total number of rows in the table before applying the filter expression (for filtered statistics). If statistics are not filtered, unfiltered_rows is equal to the value returns in the rows column. modification_counter Total number of modifications for the leading statistics column (the column on which the histogram is built) since the last time statistics were updated.
 
 ## Syntax
 
 `HumanResources.Employee`
 
 ## Permissions
-
-Applies to: SQL Server Azure SQL Database Azure SQL Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Contains a row for each column that is part of statistics. Description ID of the object of which this column is part. ID of the statistics of which this column is part. If statistics correspond to an index, the stats_id value is the same as the index_id value in the sys.indexes catalog view. 1-based ordinal within set of stats columns. ID of the column from . The visibility of the metadata in catalog views is limited to securables that a user either owns, or on which the user was granted some permission. For more information, see Metadata Visibility Configuration . Object Catalog Views (Transact-SQL) Catalog Views (Transact-SQL) Querying the SQL Server System Catalog FAQ Statistics sys.dm_db_stats_properties (Transact-SQL) sys.dm_db_stats_histogram (Transact-SQL) sys.stats (Transact-SQL) Statistics in Microsoft Fabric Last updated on 11/18/2025 ﾉ Expand table See Also
 
 ## Remarks
 
@@ -52,7 +50,7 @@ statistics were updated.
 
 Memory-optimized tables: starting SQL Server 2016 (13.x) and in
 
-Azure SQL Database this column contains: total number of
+this column contains: total number of
 
 modifications for the table since the last time statistics were
 
@@ -66,7 +64,7 @@ not explicitly specify a sampling percentage. If value is zero, then
 
 no persisted sample percentage is set for this statistic.
 
-SQL Server 2016 (13.x) SP1 CU4
+2016 (13.x) SP1 CU4
 
 returns an empty rowset under any of the following conditions:
 

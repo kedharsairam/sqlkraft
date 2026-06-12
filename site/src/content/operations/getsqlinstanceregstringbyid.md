@@ -33,9 +33,7 @@ This article describes a native code API that is used by SQL Server and may also
 
 other Microsoft products. For a managed code method, see
 
-InstAPI.GetSvcInstanceRegStringByName Method
-
-.
+InstAPI.GetSvcInstanceRegStringByName Method.
 
 C
 
@@ -76,10 +74,10 @@ supplied buffer is too small.
 ```cmd
 DWORD
 GetSQLInstanceRegStringByID(
-PINST_ID  pInstanceID,
-LPCWSTR   sRegPath,
-LPCWSTR   sValueName,
-LPWSTR    sString,
-PDWORD    pdwSize
+PINST_ID pInstanceID,
+LPCWSTR sRegPath,
+LPCWSTR sValueName,
+LPWSTR sString,
+PDWORD pdwSize
 );
 ```

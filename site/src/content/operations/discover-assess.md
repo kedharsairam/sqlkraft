@@ -15,11 +15,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
-SQL Server enabled by Azure Arc automatically produces an assessment for migration to Azure.
+enabled by Azure Arc automatically produces an assessment for migration to Azure.
 
 This assessment plays a vital role in the success of your cloud migration and modernization
 
@@ -63,4 +61,4 @@ Pinpoints SQL Server workloads that are ready for migration.
 
 Identifies potential compatibility issues with the target environment.
 
-SQL Server migration assessment features
+migration assessment features

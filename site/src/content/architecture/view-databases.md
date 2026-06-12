@@ -31,8 +31,6 @@ Article
 
 09/29/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -55,9 +53,7 @@ DATABASE or VIEW ANY DATABASE server-level permission, or CREATE DATABASE permis
 
 the
 
-database. The database to which the caller is connected can always be viewed in
-
-.
+database. The database to which the caller is connected can always be viewed in.
 
 1. In
 
@@ -65,19 +61,13 @@ database. The database to which the caller is connected can always be viewed in
 
 expand that instance.
 
-2. To see a list of all databases on the instance, expand
-
-.
+2. To see a list of all databases on the instance, expand.
 
 1. Connect to the Database Engine.
 
-2. From the Standard bar, select
+2. From the Standard bar, select.
 
-.
-
-3. Copy and paste the following example into the query window and select
-
-. This
+3. Copy and paste the following example into the query window and select. This
 
 example returns a list of databases on the instance of SQL Server. The list includes the
 

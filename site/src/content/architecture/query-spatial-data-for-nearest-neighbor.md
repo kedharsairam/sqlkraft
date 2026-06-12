@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -48,8 +46,6 @@ store locator for a web site often must find the closest store locations to a cu
 A nearest neighbor query can be written in various valid query formats, but for the nearest
 
 neighbor query to use a spatial index the following syntax must be used.
-
-syntaxsql
 
 In SQL Server,
 
@@ -82,8 +78,8 @@ WITH
 TIES
 ]
 [ * | expression ]
-[, ...]
-FROM spatial_table_reference, ...
+[,.]
+FROM spatial_table_reference,.
 [
 WITH (
 [
@@ -99,7 +95,7 @@ CELLS
 =
 <value>
 ]
-[ ,... ]
+[ ,. ]
 )
 ]
 WHERE column_ref.
@@ -124,6 +120,6 @@ AND
 }
 ORDER
 BY column_ref.
-STD istance ( @spatial_ object ) [ ,...n ]
+STD istance ( @spatial_ object ) [ ,.n ]
 [ ; ]
 ```

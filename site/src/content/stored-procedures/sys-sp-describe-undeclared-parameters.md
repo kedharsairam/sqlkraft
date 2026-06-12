@@ -27,13 +27,11 @@ sp_describe_undeclared_parameters
 'Transact-SQL_batch'
 [ , [ @params = ]
 N
-'@parameter_name data_type [ , ... n ]'
+'@parameter_name data_type [ ,. n ]'
 ]
 ```
 
 ## Permissions
-
-Applies to: SQL Server Azure SQL Database Azure SQL Managed Instance Azure Synapse Analytics Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Returns only metadata to the client. Can be used to test the format of the response without actually running the query. Transact-SQL syntax conventions syntaxsql When is , a rowset is returned with the column names, but without any data rows. has no effect when the Transact-SQL batch is parsed. The effect occurs during execution run time. The default value is . Requires membership in the public role. ７ Note Do not use this feature. This feature has been replaced by the following items:
 
 ## Remarks
 

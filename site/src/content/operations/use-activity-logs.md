@@ -26,8 +26,6 @@ pubDate: 2025-12-01
 
 06/24/2025
 
-Applies to:
-
 SQL Server
 
 Activity logs for SQL Server enabled by Azure Arc provide insight into events related to
@@ -58,15 +56,11 @@ responsible for event creation.
 
 You can access an activity log from most menus in the Azure portal. Go to the Azure Arc-
 
-enabled SQL Server resource, and then select
-
-.
+enabled SQL Server resource, and then select.
 
 The initial filter depends on the page where you access the activity log. You can change the
 
-filter to view all other entries. To add more properties to the filter, select
-
-.
+filter to view all other entries. To add more properties to the filter, select.
 
 
 

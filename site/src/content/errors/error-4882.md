@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 4882 16 No Cannot bulk load. A prefix length, field length, or terminator is required for the source column %d in the format file "%s". 4883 16 No The XML reader returned 0x%08X for the in
+Description 4882 16 No Cannot bulk load. A prefix length, field length, or terminator is required for the source column %d in the format file "%s".
 
 ## Severity
 

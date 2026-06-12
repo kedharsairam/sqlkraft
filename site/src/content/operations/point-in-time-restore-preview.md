@@ -29,8 +29,6 @@ Article
 
 11/19/2024
 
-Applies to:
-
 SQL Server
 
 This article demonstrates how to restore a database to a point-in-time as a new database on
@@ -47,9 +45,7 @@ have to enable automatic backups. For instructions, see
 
 Manage automated backups - SQL
 
-Server enabled by Azure Arc
-
-.
+Server enabled by Azure Arc.
 
 Automated backups are disabled by default.
 
@@ -73,12 +69,8 @@ selected database as the source database.
 
 Note
 
-As a preview feature, the technology presented in this article is subject to
+As a preview feature, the technology presented in this article is subject to.
 
-.
-
-The latest updates are available in the
-
-.
+The latest updates are available in the.
 
 Azure portal

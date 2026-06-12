@@ -27,8 +27,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Access this page from the principal database, and use it to configure and to modify the
@@ -61,9 +59,7 @@ At the end of the wizard, you are prompted to start database mirroring using the
 
 default server network addresses and operating mode. If you need to change the
 
-addresses or operating mode, click
-
-.
+addresses or operating mode, click.
 
 If mirroring has
 

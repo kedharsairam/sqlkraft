@@ -27,8 +27,6 @@ Article
 
 04/15/2024
 
-Applies to:
-
 SQL Server
 
 When upgrading a SQL Server mirrored instance to a new version, to a new SQL Server service
@@ -93,6 +91,4 @@ Note
 
 For information on using database mirroring with log shipping during a migration,
 
-download this
-
-.
+download this.

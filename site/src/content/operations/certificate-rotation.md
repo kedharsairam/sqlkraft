@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 08/28/2025
 
-Applies to:
-
 SQL Server
 
 On SQL Server enabled by Azure Arc, Azure extension for SQL Server can automatically rotate
@@ -49,9 +47,7 @@ default, after the certificate lifetime is at 80%. You can configure this settin
 
 review
 
-Configure certificate auto-rotation in Key Vault
-
-. If the certificate has expired, then the
+Configure certificate auto-rotation in Key Vault. If the certificate has expired, then the
 
 automatic rotation fails.
 

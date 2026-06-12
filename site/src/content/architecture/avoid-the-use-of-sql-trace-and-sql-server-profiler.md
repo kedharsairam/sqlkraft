@@ -22,25 +22,19 @@ server configuration option,
 
 consider adjusting the parallelism for index operations using the
 
-MAXDOP option
-
-. For more
+MAXDOP option. For more
 
 information, see
 
-Configure Parallel Index Operations
-
-. For more information and guidelines
+Configure Parallel Index Operations. For more information and guidelines
 
 about adjusting the max degree of parallelism server configuration option, see
 
 Configure the
 
-max degree of parallelism server configuration option
+max degree of parallelism server configuration option.
 
-.
-
-SQL Server dynamically configures the
+dynamically configures the
 
 server configuration option at
 
@@ -48,9 +42,7 @@ startup. SQL Server uses the number of available CPUs and the system architectur
 
 determine this server configuration during startup, using a documented
 
-formula
-
-.
+formula.
 
 This option is an advanced option, and should be changed only by an experienced database
 
@@ -70,9 +62,7 @@ CPUs that are present on the system. For more information, see
 
 Configure the max worker
 
-threads
-
-.
+threads.
 
 We recommend that you don't use SQL Trace and SQL Profiler in a production environment.
 

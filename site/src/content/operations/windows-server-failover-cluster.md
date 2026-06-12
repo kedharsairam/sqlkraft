@@ -31,8 +31,6 @@ Article
 
 09/29/2024
 
-Applies to:
-
 SQL Server
 
 This article provides an overview of using a Windows Server Failover Cluster (WSFC) with SQL

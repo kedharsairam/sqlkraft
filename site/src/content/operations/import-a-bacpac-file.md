@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -103,14 +101,7 @@ statement, SQL Server Management Studio, or SQL Server PowerShell to tailor the 
 
 For more information, see
 
-Databases
+Databases.
 
-.
-
-```cmd
-.bacpac
-.bacpac
-.bacpac
-.dacpac
-.dacpac
+```cmd.bacpac.bacpac.bacpac.dacpac.dacpac
 ```

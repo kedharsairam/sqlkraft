@@ -63,7 +63,7 @@ Unit Tests
 
 -
 
-SQL Server Unit Test
+Unit Test
 
 Files
 

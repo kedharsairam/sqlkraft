@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -29,9 +27,7 @@ Linux, running on on-premises virtual machines (VMs) or in Azure-based Virtual M
 
 For an overview of the HPE Serviceguard clusters, see
 
-HPE Serviceguard Clusters
-
-.
+HPE Serviceguard Clusters.
 
 This tutorial consists of the following tasks:
 
@@ -39,9 +35,7 @@ In Azure, create three Linux-based VMs (Virtual Machines). To create Linux-based
 
 machines in Azure, see
 
-Quickstart: Create Linux virtual machine in Azure portal
-
-. When
+Quickstart: Create Linux virtual machine in Azure portal. When
 
 deploying the VMs, make sure to use HPE Serviceguard supported Linux distributions.
 
@@ -49,9 +43,7 @@ You can also deploy the VMs locally in an on-premises environment if you prefer.
 
 For an example of a supported distribution, see
 
-HPE Serviceguard for Linux
-
-. Check with
+HPE Serviceguard for Linux. Check with
 
 HPE for information about support for public cloud environments.
 
@@ -59,9 +51,7 @@ The instructions in this tutorial are validated against HPE Serviceguard for Lin
 
 edition is available for download from
 
-HPE
-
-.
+HPE.
 
 ７
 

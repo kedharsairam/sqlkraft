@@ -82,21 +82,11 @@ Intent locks include intent shared (
 
 ## Description
 
-Protects requested or acquired shared locks on some (but not all) resources lower in the
-
 hierarchy.
 
-Protects requested or acquired exclusive locks on some (but not all) resources lower in the
-
 hierarchy.
-
-is a superset of
-
-, and it also protects requesting shared locks on lower level
 
 ﾉ
-
-Expand table
 
 `INSERT`
 

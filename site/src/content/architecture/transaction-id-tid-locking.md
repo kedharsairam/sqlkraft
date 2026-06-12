@@ -30,9 +30,7 @@ must resolve potentially complex conflicts with concurrent reads and writes. Loc
 
 the mechanisms by which the engine can provide the semantics for the ANSI SQL transaction
 
-isolation levels
-
-. Although locking in databases is essential, reduced concurrency, deadlocks,
+isolation levels. Although locking in databases is essential, reduced concurrency, deadlocks,
 
 complexity, and lock overhead can affect performance and scalability.
 

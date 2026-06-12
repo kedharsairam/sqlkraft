@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/02/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -75,9 +73,7 @@ dialog security determines the database principal in the remote instance. For mo
 
 information, see
 
-Service Broker Dialog Security
-
-. Service Broker doesn't consider
+Service Broker Dialog Security. Service Broker doesn't consider
 
 membership in Windows roles when checking
 

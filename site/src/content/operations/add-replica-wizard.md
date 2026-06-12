@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Use the
@@ -35,9 +33,7 @@ instances" and "Availability groups and replicas" sections in
 
 Prerequisites, restrictions, and
 
-recommendations for Always On availability groups
-
-.
+recommendations for Always On availability groups.
 
 You must be connected to the server instance that hosts the current primary replica.
 
@@ -51,9 +47,7 @@ availability groups prerequisites. For more information, see
 
 Prerequisites, restrictions, and
 
-recommendations for Always On availability groups
-
-.
+recommendations for Always On availability groups.
 
 If a server instance that you select to host an availability replica is running under a
 
@@ -81,6 +75,4 @@ Note
 
 For information about using Transact-SQL or PowerShell to add a secondary replica to an
 
-availability group, see
-
-.
+availability group, see.

@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -35,9 +33,7 @@ predicate. This could result in a long-running query. For more information on jo
 
 see
 
-Predicates (Transact-SQL)
-
-.
+Predicates (Transact-SQL).
 
 Description
 

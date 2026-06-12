@@ -43,9 +43,7 @@ is converted into a
 
 value, with a precision of
 
-, and a scale of
-
-.
+, and a scale of.
 
 and
 
@@ -105,9 +103,7 @@ scientific notation of
 
 or the decimal notation of
 
-) rounds down to
-
-. This restriction doesn't appear in SQL Server 2016 (13.x) and later versions.
+) rounds down to. This restriction doesn't appear in SQL Server 2016 (13.x) and later versions.
 
 ７
 

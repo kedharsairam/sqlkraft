@@ -14,9 +14,7 @@ For more information on the operators used in this example, see the
 
 Showplan Logical and
 
-Physical Operators Reference
-
-.
+Physical Operators Reference.
 
 The query plans built for the index operations that create or rebuild an index, or drop a
 
@@ -24,7 +22,7 @@ clustered index, allow for parallel, multi-worker threaded operations on compute
 
 multiple microprocessors.
 
-SQL Server uses the same algorithms to determine the degree of parallelism (the total number
+uses the same algorithms to determine the degree of parallelism (the total number
 
 of separate worker threads to run) for index operations as it does for other queries. The
 

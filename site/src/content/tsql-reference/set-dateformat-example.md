@@ -23,9 +23,7 @@ format says that an example date string of '01-03-2018' would be
 
 interpreted to mean
 
-the first day of March in the year 2018
-
-.
+the first day of March in the year 2018.
 
 If instead
 
@@ -33,9 +31,7 @@ was specified, then the same '01-03-2018' string would mean
 
 the third day of
 
-January in 2018
-
-.
+January in 2018.
 
 And if
 
@@ -55,15 +51,11 @@ international
 
 format. It's international because the four digits of the year are unambiguous,
 
-and no country/region on Earth uses the archaic format of
-
-.
+and no country/region on Earth uses the archaic format of.
 
 In other countries/regions such as Germany and France, the DATEFORMAT is
 
-, meaning
-
-. The
+, meaning. The
 
 format doesn't sort well, but it's a sensible sequence of smallest unit
 
@@ -107,5 +99,5 @@ DECLARE
 NVARCHAR (10) =
 '12-09-2018'
 ;
-PRINT @yourDateString + '  = the input.';
+PRINT @yourDateString + ' = the input.';
 ```

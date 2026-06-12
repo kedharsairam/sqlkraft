@@ -55,9 +55,7 @@ Relocation for scheduled disk maintenance.
 
 For more information, see
 
-Move Database Files
-
-.
+Move Database Files.
 
 By default, data and log files are initialized by filling the files with zeros when you perform one
 
@@ -75,9 +73,7 @@ Data files can be initialized instantaneously. This enables for fast execution o
 
 operations. For more information, see
 
-Database File Initialization
-
-.
+Database File Initialization.
 
 `UPDATE`
 

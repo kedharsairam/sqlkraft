@@ -21,17 +21,13 @@ for a bulk import of data into SQL Server. For information about the requirement
 
 importing data from a CSV data file, see
 
-Prepare data for bulk export or import
-
-.
+Prepare data for bulk export or import.
 
 For information about when row-insert operations that are performed by bulk import into SQL
 
 Server are logged in the transaction log, see
 
-Prerequisites for minimal logging in bulk import
-
-.
+Prerequisites for minimal logging in bulk import.
 
 Minimal logging isn't supported in Azure SQL Database.
 

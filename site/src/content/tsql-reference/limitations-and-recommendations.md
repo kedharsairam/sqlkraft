@@ -13,8 +13,6 @@ Article
 
 09/03/2024
 
-Applies to:
-
 SQL Server
 
 Removes the specified availability group and all of its replicas. If a server instance that hosts
@@ -29,11 +27,7 @@ For information about alternative ways to drop an availability group, see
 
 Remove an Availability
 
-Group (SQL Server)
-
-.
-
-Transact-SQL syntax conventions
+Group (SQL Server).
 
 ## syntaxsql
 
@@ -49,9 +43,7 @@ feature is enabled on the server instance. For more information, see
 
 Enable and Disable
 
-Always On Availability Groups (SQL Server)
-
-.
+Always On Availability Groups (SQL Server).
 
 ）
 

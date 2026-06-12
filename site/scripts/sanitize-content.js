@@ -289,10 +289,32 @@ function fixConcatenatedDescriptions(frontmatter, body) {
   // Fix frontmatter description
   const descMatch = frontmatter.match(/^description:\s*"(.+)"\s*$/m);
   if (descMatch) {
-    const original = descMatch[1];
-    const cleaned = truncateAfterFirstSentence(original);
-    if (cleaned !== original) {
-      stats.fragmented_sentences_joined++; // reuse counter for stats
+    let original = descMatch[1];
+
+    // First, strip embedded boilerplate from the description
+    const platRe = /^(?:Azure SQL Database|Azure SQL Managed Instance|SQL Server|SQL database in Microsoft Fabric|Analytics Platform System \(PDW\)|Azure Synapse Analytics)(?:\s+(?:Azure SQL Database|Azure SQL Managed Instance|SQL Server|SQL database in Microsoft Fabric|Analytics Platform System \(PDW\)|Azure Synapse Analytics))*\s*/i;
+    const stripped = original
+      .replace(platRe, "")  // Strip platform list at start
+      .replace(/\s*Transact-SQL syntax conventions\s*/gi, " ")
+      .replace(/Article\s*•\s*\d{2}\/\d{2}\/\d{4}\s*/gi, "")
+      .replace(/\s*Last updated on\s+\d{1,2}\/\d{1,2}\/\d{4}\s*/gi, " ")
+      .replace(/\s*Related content[\s\S]*$/gi, "")
+      .replace(/\s*For more information about SQL Server Audit\s*/gi, " ")
+      .replace(/  +/g, " ")
+      .trim();
+
+    // Always write back after boilerplate stripping (even if truncation is a no-op)
+    if (stripped !== original) {
+      frontmatter = frontmatter.replace(
+        /^description:\s*".+"/m,
+        `description: "${stripped}"`
+      );
+    }
+
+    // Then apply column-marker truncation on the stripped version
+    const cleaned = truncateAfterFirstSentence(stripped);
+    if (cleaned !== stripped) {
+      stats.fragmented_sentences_joined++;
       frontmatter = frontmatter.replace(
         /^description:\s*".+"/m,
         `description: "${cleaned}"`
@@ -300,11 +322,12 @@ function fixConcatenatedDescriptions(frontmatter, body) {
     }
   }
 
-  // Fix body: remove column-description-salad after the first paragraph
+  // Fix body: remove column-description-salad from the Description section.
+  // Unlike the line-level check below, this works at the sentence level so it
+  // catches column metadata that's all in one paragraph (the common case).
   const bodyLines = body.split("\n");
   const fixedLines = [];
   let inDescription = false;
-  let columnSaladStarted = false;
 
   for (let i = 0; i < bodyLines.length; i++) {
     const line = bodyLines[i];
@@ -312,7 +335,6 @@ function fixConcatenatedDescriptions(frontmatter, body) {
     // Track when we're in the ## Description section
     if (/^## Description\s*$/i.test(line.trim())) {
       inDescription = true;
-      columnSaladStarted = false;
       fixedLines.push(line);
       continue;
     }
@@ -327,31 +349,13 @@ function fixConcatenatedDescriptions(frontmatter, body) {
     if (inDescription) {
       const trimmed = line.trim();
       if (trimmed === "") {
-        // Keep blank lines in description section but track them
+        // Keep blank lines
         fixedLines.push(line);
         continue;
       }
-
-      // If we haven't found salad yet, check if this sentence starts with column markers
-      if (!columnSaladStarted) {
-        if (COL_DESC_MARKERS_RE().test(trimmed)) {
-          columnSaladStarted = true;
-          // Skip this line and subsequent column descriptions
-          continue;
-        }
-        fixedLines.push(line);
-      } else {
-        // In salad territory - skip lines that look like column descriptions
-        if (
-          COL_DESC_MARKERS_RE().test(trimmed) ||
-          /^[A-Z][a-z]+ [a-z]+ [a-z]+ [a-z]+\.$/.test(trimmed) ||
-          trimmed.length < 15
-        ) {
-          continue;
-        }
-        // If we see a proper sentence again, include it
-        fixedLines.push(line);
-      }
+      // Apply sentence-level truncation to the entire Description paragraph
+      const cleaned = truncateAfterColumnMeta(trimmed);
+      fixedLines.push(cleaned);
     } else {
       fixedLines.push(line);
     }
@@ -442,6 +446,149 @@ function isEmptyStub(bodyLines) {
   return false;
 }
 
+function truncateAfterColumnMeta(text) {
+  // Like truncateAfterFirstSentence, but keeps ALL clean sentences and only
+  // stops at a column marker (no arbitrary sentence limit). Used for body content.
+  const sentences = [];
+  let current = "";
+  let i = 0;
+
+  while (i < text.length) {
+    current += text[i];
+    if (text[i] === "." && (i + 1 >= text.length || (i + 1 < text.length && text[i + 1] === " "))) {
+      const remainder = text.slice(i + 1).trim();
+      if (remainder === "") {
+        sentences.push((current + remainder).trim());
+        current = "";
+        break;
+      }
+      if (COL_DESC_MARKERS_RE().test(remainder)) {
+        if (current.trim()) sentences.push(current.trim());
+        current = "";
+        break;
+      }
+      if (current.trim()) sentences.push(current.trim());
+      current = "";
+      i++;
+      continue;
+    }
+    i++;
+  }
+
+  if (current.trim() && !COL_DESC_MARKERS_RE().test(current.trim())) {
+    sentences.push(current.trim());
+  }
+
+  const keep = [];
+  for (const s of sentences) {
+    const sentence = s.replace(/^\.\s*/, "").trim();
+    if (!sentence) continue;
+    if (/ [a-z]{2,5}$/.test(sentence) && !/[.!?:;]$/.test(sentence)) continue;
+    keep.push(sentence);
+  }
+
+  return keep.join(" ");
+}
+
+/**
+ * Strip Microsoft Docs boilerplate artifacts from body content.
+ * Operates on text within each section, removing patterns that appear mid-paragraph.
+ */
+function stripBoilerplate(body) {
+  // First pass: strip standalone lines
+  let lines = body.split("\n");
+  const result = [];
+  let skipUntilHeading = false;
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmed = line.trim();
+
+    // Strip lines that start with "Applies to:"
+    if (/^Applies to:/i.test(trimmed)) {
+      while (i < lines.length) {
+        const next = lines[i + 1]?.trim() || "";
+        if (!next || /^[A-Z]/.test(next) || /^##/.test(next)) break;
+        i++;
+      }
+      continue;
+    }
+
+    // Strip "Transact-SQL syntax conventions" standalone lines
+    if (/^Transact-SQL syntax conventions/i.test(trimmed)) continue;
+
+    // Strip "syntaxsql" standalone remnants
+    if (/^syntaxsql$/i.test(trimmed)) continue;
+
+    // Strip "Last updated on ..." lines
+    if (/^Last updated on\s+\d{1,2}\/\d{1,2}\/\d{4}/i.test(trimmed)) continue;
+
+    // Strip "Related content" sections
+    if (/^Related content/i.test(trimmed)) {
+      skipUntilHeading = true;
+      continue;
+    }
+    if (skipUntilHeading) {
+      if (/^##/.test(trimmed)) {
+        skipUntilHeading = false;
+        result.push(line);
+      }
+      continue;
+    }
+
+    result.push(line);
+  }
+
+  body = result.join("\n");
+
+  // Second pass: strip embedded boilerplate within paragraphs (text-level)
+  body = body.replace(/(?:\.\s*)?Applies to:[\s\S]*?(?:SQL database in Microsoft Fabric|Azure SQL Managed Instance|Analytics Platform System \(PDW\)|\.)\s*/gi, (match) => {
+    // If it starts with ". " keep the period, otherwise remove entirely
+    if (match.startsWith(". ")) return ". ";
+    if (match.startsWith(".")) return ". ";
+    return "";
+  });
+
+  body = body.replace(/\s*Transact-SQL syntax conventions\s*/gi, " ");
+
+  body = body.replace(/\s*Last updated on\s+\d{1,2}\/\d{1,2}\/\d{4}\s*/gi, " ");
+
+  body = body.replace(/\s*Related content[\s\S]*?(?=\n##|\n$|$)/gi, "");
+
+  // Strip orphaned platform names at line start (no "Applies to:" prefix).
+  // Line-by-line to avoid consuming newlines.
+  const platformNames = [
+    "Azure SQL Database", "Azure SQL Managed Instance",
+    "SQL Server", "SQL database in Microsoft Fabric",
+    "Analytics Platform System (PDW)", "Azure Synapse Analytics"
+  ];
+  const platformRe = new RegExp(
+    "^(?:" + platformNames.join("|") + ")" +
+    "(?:\\s+(?:" + platformNames.join("|") + "))*\\s+",
+    "gi"
+  );
+
+  const platformFix = body.split("\n").map((line) => {
+    // Only apply to lines that start with platform names (not headings)
+    if (/^##/.test(line.trim())) return line;
+    return line.replace(platformRe, "");
+  }).join("\n");
+
+  body = platformFix;
+
+  // Clean up orphaned prefixes mid-sentence
+  body = body.replace(/ \. /g, ". ");
+
+  // Clean up double spaces
+  body = body.replace(/  +/g, " ");
+  // Clean up double periods
+  body = body.replace(/\.\.+/g, ".");
+  // Clean up space before period
+  body = body.replace(/\s+\./g, ".");
+
+  return body;
+}
+
 /* ════════════════════════════════════════════════════════════════
    MAIN PROCESSOR
    ════════════════════════════════════════════════════════════════ */
@@ -471,7 +618,10 @@ function processFile(filePath) {
 
   // ── Apply passes ──
 
-  // 0. Fix concatenated column-description salad (DMVs, catalog-views)
+  // 0a. Strip Microsoft Docs boilerplate (Applies to, syntax conventions, etc.)
+  body = stripBoilerplate(body);
+
+  // 0b. Fix concatenated column-description salad (DMVs, catalog-views)
   const descResult = fixConcatenatedDescriptions(frontmatter, body);
   frontmatter = descResult.frontmatter;
   body = descResult.body;

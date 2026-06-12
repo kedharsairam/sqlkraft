@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 5138 16 No Trailing space is not allowed in SQL file name '%.*ls' on cloud storage. 5139 16 No Operation (%.*ls) failed on '%.\*ls'. Operating system error %d: "%ls" 5140 16 No Failed to lo
+Description 5138 16 No Trailing space is not allowed in SQL file name '%.*ls' on cloud storage. 5139 16 No Operation (%.*ls) failed on '%.\*ls'.
 
 ## Severity
 

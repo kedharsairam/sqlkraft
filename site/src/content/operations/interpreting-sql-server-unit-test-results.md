@@ -49,13 +49,9 @@ or
 
 How to: Add or Remove
 
-Columns in Test Windows (Visual Studio 2012)
+Columns in Test Windows (Visual Studio 2012).
 
-.
-
-Results of unit tests are automatically stored on your hard disk in files that have the extension
-
-. A
+Results of unit tests are automatically stored on your hard disk in files that have the extension. A
 
 file is an XML file that contains the details of a test run. You can load
 
@@ -65,9 +61,7 @@ from previous test runs to review the results from the test runs or to rerun ear
 
 more information, see
 
-How to: Rerun a Test (Visual Studio 2010)
-
-.
+How to: Rerun a Test (Visual Studio 2010).
 
 If your team is using a Azure DevOps Server team project to help manage its work, you can
 
@@ -83,9 +77,7 @@ or
 
 How to: Save and Open
 
-Test Results in Visual Studio 2012
-
-.
+Test Results in Visual Studio 2012.
 
 Run SQL Server unit tests
 
@@ -95,8 +87,5 @@ Note
 
 You can't run unit tests remotely.
 
-```cmd
-.trx
-.trx
-.trx
+```cmd.trx.trx.trx
 ```

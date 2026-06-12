@@ -10,9 +10,9 @@ pubDate: 2026-05-29
 
 Also review the following archived content:
 
-SQL Server 2000 I/O Basics
+2000 I/O Basics
 
-SQL Server I/O Basics Chapter 2
+I/O Basics Chapter 2
 
 The concepts in these two articles remain broadly applicable to current versions of SQL Server.
 
@@ -54,11 +54,9 @@ Contain sophisticated heuristics to help predict imminent failures.
 
 Note
 
-SQL Server supports Internet Small Computer System Interface (iSCSI) technology
+supports Internet Small Computer System Interface (iSCSI) technology
 
-components that meet the requirements of the
-
-.
+components that meet the requirements of the.
 
 Although SQL Server doesn't interact directly with iSCSI, it operates seamlessly because
 

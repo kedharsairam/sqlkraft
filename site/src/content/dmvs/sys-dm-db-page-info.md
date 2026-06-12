@@ -2,7 +2,7 @@
 name: "sys.dm_db_page_info"
 title: "sys.dm_db_page_info"
 category: "execution"
-description: "SQL Server 2019 (15.x) and later versions SQL database in Microsoft Fabric Returns information about a page in a database. The function returns one row that contains the header information from the page, including the function replaces the need to use . Valid input is the ID number of a database. The default is NULL, however sending a NULL value for this parameter will result in an error. Valid"
+description: "2019 (15.x) and later versions SQL database in Microsoft Fabric Returns information about a page in a database. The function returns one row that contains the header information from the page, including the function replaces the need to use . Valid input is the ID number of a database. The default is NULL, however sending a NULL value for this parameter will result in an error. Valid"
 tags: ["execution", "dmv"]
 pubDate: 2026-05-29
 syntax: |
@@ -25,7 +25,7 @@ syntax: |
 
 ## Description
 
-SQL Server 2019 (15.x) and later versions SQL database in Microsoft Fabric Returns information about a page in a database. The function returns one row that contains the header information from the page, including the function replaces the need to use . Valid input is the ID number of a database. The default is NULL, however sending a NULL value for this parameter will result in an error. . Valid input is the ID number of a file in the database specified by
+2019 (15.x) and later versions SQL database in Microsoft Fabric Returns information about a page in a database. The function returns one row that contains the header information from the page, including the function replaces the need to use. Valid input is the ID number of a database. The default is NULL, however sending a NULL value for this parameter will result in an error.
 
 ## Syntax
 

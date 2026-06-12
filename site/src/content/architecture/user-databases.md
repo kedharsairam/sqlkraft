@@ -27,8 +27,6 @@ Article
 
 11/25/2024
 
-Applies to:
-
 SQL Server
 
 In SQL Server, you can move the data, log, and full-text catalog files of a user database to a
@@ -49,9 +47,7 @@ restore
 
 or
 
-detach and attach operations
-
-.
+detach and attach operations.
 
 When you move a database onto another server instance, to provide a consistent experience to
 
@@ -61,9 +57,7 @@ For more information, see
 
 Manage Metadata When Making a Database Available on Another
 
-Server
-
-.
+Server.
 
 Some features of the SQL Server Database Engine change the way that the Database Engine
 
@@ -93,9 +87,7 @@ The full-text catalogs move automatically when you move a database.
 
 Note
 
-This article covers moving user database files. For moving system database files, see
-
-.
+This article covers moving user database files. For moving system database files, see.
 
 ７
 
@@ -105,9 +97,7 @@ Make sure the service account for the
 
 has permissions to the new file location in the file system. For more
 
-information, see
-
-.
+information, see.
 
 ```sql
 FILENAME sys.dm_db_persisted_sku_features

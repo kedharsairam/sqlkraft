@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -43,9 +41,7 @@ the endpoint. For more information on Service Broker transport security, see
 
 Service Broker
 
-Transport Security
-
-.
+Transport Security.
 
 Create a Service Broker endpoint, specifying the port number and the authentication level.
 

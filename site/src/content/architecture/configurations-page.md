@@ -37,9 +37,7 @@ Article
 
 01/07/2025
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -59,9 +57,7 @@ more information about the options available on this page, see
 
 ALTER DATABASE SCOPED
 
-CONFIGURATION
-
-.
+CONFIGURATION.
 
 Displays the name of the database scoped option for the database.
 

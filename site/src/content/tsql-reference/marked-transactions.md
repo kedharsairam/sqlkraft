@@ -21,9 +21,7 @@ Recover Related Databases Consistently
 
 and
 
-RESTORE Statements
-
-.
+RESTORE Statements.
 
 Additionally, transaction log marks are necessary if you need to recover a set of related
 
@@ -78,17 +76,17 @@ BEGIN TRANSACTION <new_name> WITH MARK
 ```sql
 BEGIN
 TRAN T1;
-UPDATE table1 ...;
+UPDATE table1.;
 BEGIN
 TRAN M2
 WITH
 MARK;
-UPDATE table2 ...;
+UPDATE table2.;
 SELECT column1
 FROM table1;
 COMMIT
 TRAN M2;
-UPDATE table3 ...;
+UPDATE table3.;
 COMMIT
 TRAN T1;
 Server: Msg 3920, Level 16, State 1, Line 3

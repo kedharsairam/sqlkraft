@@ -27,8 +27,6 @@ Article
 
 09/06/2024
 
-Applies to:
-
 SQL Server
 
 You should routinely maintain the same set of user logins and SQL Server Agent jobs on every
@@ -39,7 +37,7 @@ databases. The logins and jobs must be reproduced on every instance of SQL Serve
 
 an availability replica for the AG.
 
-SQL Server Agent jobs
+Agent jobs
 
 You need to manually copy relevant jobs from the server instance that hosts the original
 
@@ -77,9 +75,7 @@ condition in your backup jobs, so they execute only on the preferred replica. Fo
 
 information, see
 
-Offload supported backups to secondary replicas of an availability group
-
-.
+Offload supported backups to secondary replicas of an availability group.
 
 If you're using contained databases, you can configure contained users in the databases,
 
@@ -91,9 +87,7 @@ the logins on the server instances that host the availability replicas. For more
 
 see
 
-CREATE USER
-
-.
+CREATE USER.
 
 If any of your applications use SQL Server Authentication or a local Windows login, see
 

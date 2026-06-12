@@ -2,14 +2,12 @@
 name: "Bit manipulation functions"
 title: "Bit manipulation functions"
 category: "data-types"
-description: "SQL Server 2022 (16.x)"
+description: "2022 (16.x)"
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
 
-Applies to:
-
-SQL Server 2022 (16.x)
+2022 (16.x)
 
 Azure SQL Database
 
@@ -65,9 +63,7 @@ and largest.
 
 For example, a binary sequence of
 
-is the decimal equivalent of the number
-
-. You
+is the decimal equivalent of the number. You
 
 can calculate this out using powers of 2 as follows:
 
@@ -77,9 +73,7 @@ What this means in practice is that while SQL Server stores this value as
 
 (byte-
 
-reversed), the bit manipulation functions will treat it as though it's
-
-.
+reversed), the bit manipulation functions will treat it as though it's.
 
 When looking at multiple bytes, the first byte (reading left to right) is the biggest.
 

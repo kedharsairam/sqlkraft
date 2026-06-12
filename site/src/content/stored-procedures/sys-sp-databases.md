@@ -2,7 +2,7 @@
 name: "sys.sp_databases"
 title: "sp_databases"
 category: "general"
-description: "Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway. Transact-SQL syntax conventions Name of the database. In the Database Engine, this column represents the database name as stored in the Size of database, in kilobytes. For the Database Engine, this field always returns Database names that are returned can be used as parameters in the s"
+description: "Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -16,7 +16,7 @@ syntax: |
 
 ## Description
 
-Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway. Transact-SQL syntax conventions Name of the database. In the Database Engine, this column represents the database name as stored in the Size of database, in kilobytes. For the Database Engine, this field always returns Database names that are returned can be used as parameters in the statement to change the current database context. value for databases larger than 2.15 TB.
+Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway.
 
 ## Syntax
 
@@ -29,13 +29,9 @@ EXECUTE sp_databases;
 
 ## Remarks
 
-Applies to:
-
 Lists databases that either reside in an instance of the SQL Server or are accessible through a
 
 database gateway.
-
-Transact-SQL syntax conventions
 
 Description
 

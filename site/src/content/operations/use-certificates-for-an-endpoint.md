@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 To enable certificate authentication for database mirroring on a given server instance, the
@@ -57,9 +55,7 @@ For more information, see
 
 Allow a Database Mirroring Endpoint to Use Certificates for
 
-Outbound Connections (Transact-SQL)
-
-.
+Outbound Connections (Transact-SQL).
 
 Next, follow these steps for each partner that you are configuring for database mirroring. In the
 

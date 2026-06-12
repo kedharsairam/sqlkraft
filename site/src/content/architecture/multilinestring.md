@@ -27,8 +27,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -83,9 +81,7 @@ Figure 4 is a nonsimple, nonclosed
 
 instance.
 
-Figure 5 is a simple, nonclosed
-
-. It is not closed because its
+Figure 5 is a simple, nonclosed. It is not closed because its
 
 elements are not closed. It is simple because none of the interiors of any of the
 

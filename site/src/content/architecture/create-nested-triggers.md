@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -57,13 +55,9 @@ trigger in effect, deleting
 
 1965 from
 
-deletes the corresponding row or rows from
+deletes the corresponding row or rows from. To save the data, you can create a DELETE trigger on
 
-. To save the data, you can create a DELETE trigger on
-
-that saves the deleted data into another separately created table,
-
-. For example:
+that saves the deleted data into another separately created table,. For example:
 
 We do not recommend using nested triggers in an order-dependent sequence. Use separate
 

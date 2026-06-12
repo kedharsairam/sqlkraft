@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -51,27 +49,19 @@ database.
 
 Install
 
-SQL Server Management Studio (SSMS)
-
-.
+Management Studio (SSMS).
 
 Install
 
-SQL Server 2022 Developer Edition
-
-.
+2022 Developer Edition.
 
 Download
 
-AdventureWorks sample databases
-
-.
+AdventureWorks sample databases.
 
 For instructions on restoring databases in SSMS, see
 
-Restore a Database Backup Using SSMS
-
-.
+Restore a Database Backup Using SSMS.
 
 The following example creates a table named
 

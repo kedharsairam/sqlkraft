@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -51,9 +49,7 @@ Sales order header information,
 
 ,
 
-, and
-
-.
+, and.
 
 stores this information in the
 
@@ -67,9 +63,7 @@ table.
 
 Sales person information. This is the salesperson who took the order. The
 
-table provides the
-
-. For this query, you have to join this table to the
+table provides the. For this query, you have to join this table to the
 
 table to find the name of the sales person.
 

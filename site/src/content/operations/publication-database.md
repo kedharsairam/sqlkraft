@@ -29,8 +29,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic discusses special considerations for maintaining a publication database when you
@@ -89,8 +87,6 @@ must specify the name of the original publisher instead of the current publisher
 
 parameter of
 
-or
-
-.
+or.
 
 However, if you enable a publication database after failover, the publisher instance name

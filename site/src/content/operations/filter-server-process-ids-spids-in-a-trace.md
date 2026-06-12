@@ -27,8 +27,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -75,9 +73,7 @@ tab, select the
 
 column heading to launch the
 
-dialog box. You can also right-click the column heading and choose
-
-. If
+dialog box. You can also right-click the column heading and choose. If
 
 the
 
@@ -91,4 +87,4 @@ dialog box, expand the appropriate comparison operator, and enter a
 
 session ID as a value for the comparison.
 
-SQL Server Profiler
+Profiler

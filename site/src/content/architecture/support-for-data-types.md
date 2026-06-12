@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -55,9 +53,7 @@ Describes how
 
 works with string data types such as
 
-and
-
-.
+and.
 
 FOR XML Support for the User-Defined
 
@@ -76,8 +72,6 @@ Describes how
 works with the
 
 data type.
-
-Last updated on 11/18/2025
 
 ﾉ
 

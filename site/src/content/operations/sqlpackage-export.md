@@ -21,7 +21,7 @@ SqlPackage Export parameters and properties
 
 The SqlPackage Export action exports a connected database to a BACPAC file (.bacpac). By default, data for all tables will
 
-be included in the .bacpac file. Optionally, you can specify only a subset of tables for which to export data. The Export
+be included in the.bacpac file. Optionally, you can specify only a subset of tables for which to export data. The Export
 
 action is part of the
 
@@ -47,7 +47,7 @@ Bash
 
 The Export action requires a
 
-parameter to specify the name and location of the .bacpac file to be created.
+parameter to specify the name and location of the.bacpac file to be created.
 
 This location must be writable by the user running the command and the containing folder must exist.
 
@@ -89,9 +89,7 @@ or alternatively
 
 achieve database portability through
 
-data in parquet files
-
-.
+data in parquet files.
 
 ```cmd
 TargetFile

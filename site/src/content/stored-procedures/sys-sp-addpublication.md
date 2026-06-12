@@ -2,7 +2,7 @@
 name: "sys.sp_addpublication"
 title: "sp_addpublication"
 category: "general"
-description: "Creates a snapshot or transactional publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions"
+description: "Creates a snapshot or transactional publication. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -138,9 +138,7 @@ syntax: |
 
 ## Description
 
-Creates a snapshot or transactional publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions
-
-## Syntax
+Creates a snapshot or transactional publication. This stored procedure is executed at the Publisher on the publication database. ## Syntax
 
 ```sql
 sp_addpublication
@@ -275,4 +273,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . Windows authentication logins must have a user account in the database representing their Windows user account. A user account representing a Windows group isn't sufficient. sp_addlogreader_agent (Transact-SQL) sp_addpublication_snapshot (Transact-SQL) sp_changepublication (Transact-SQL) sp_droppublication (Transact-SQL) sp_helppublication (Transact-SQL) sp_replicationdboption (Transact-SQL) Publish Data and Database Objects Related content Create a publication sp_addpublication (Transact-SQL) sp_changelogreader_agent (Transact-SQL) Replication stored procedures (Transact-SQL) Related content Delete a Publication sp_addpublication (Transact-SQL) sp_changepublication (Transact-SQL) sp_helppublication (Transact-SQL) Replication stored procedures (Transact-SQL) Related content
+Only members of the fixed server role or fixed database role can execute. Windows authentication logins must have a user account in the database representing their Windows user account. A user account representing a Windows group isn't sufficient. sp_addlogreader_agent (Transact-SQL) sp_addpublication_snapshot (Transact-SQL) sp_changepublication (Transact-SQL) sp_droppublication (Transact-SQL) sp_helppublication (Transact-SQL) sp_replicationdboption (Transact-SQL) Publish Data and Database Objects

@@ -9,17 +9,13 @@ pubDate: 2026-05-29
 
 SET ROWCOUNT stops processing after the specified number of rows. In the following
 
-example, note that more than 20 rows meet the criteria of
-
-. However,
+example, note that more than 20 rows meet the criteria of. However,
 
 after applying SET ROWCOUNT, you can see that not all rows were returned.
 
 To return all rows, set ROWCOUNT to 0.
 
 SET Statements (Transact-SQL)
-
-Last updated on 11/18/2025
 
 See Also
 

@@ -33,8 +33,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Returns the value of a remote stored procedure call parameter. This function has been

@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -47,9 +45,7 @@ Information on this page is read-only. To modify the column, close the
 
 dialog box, expand the table and columns in Object Explorer, right-click the column, and then
 
-click
-
-.
+click.
 
 The name of the column.
 
@@ -59,9 +55,7 @@ user-defined data type is displayed. If the data type is not a user-defined data
 
 system data type is displayed. For more information, see
 
-Data Types (Transact-SQL)
-
-.
+Data Types (Transact-SQL).
 
 The type of data that the column can hold. If the data type is a system data type, then the
 
@@ -71,15 +65,11 @@ that makes up the user-defined data type is displayed.
 
 Indicates whether the column is a primary key. Possible values are
 
-and
-
-.
+and.
 
 Indicates whether the column accepts null values. Possible values are
 
-and
-
-.
+and.
 
 Indicates whether the column value is the result of a computed expression.
 
@@ -87,12 +77,8 @@ Indicates the statement used to compute the column text. For more information,
 
 Specify
 
-Computed Columns in a Table
-
-.
+Computed Columns in a Table.
 
 Indicates whether the column is the identity column for the table. Possible values are
 
-and
-
-.
+and.

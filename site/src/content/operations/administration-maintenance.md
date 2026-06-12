@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Maintenance tasks like adding or removing nodes from an existing Always On Failover Cluster
@@ -47,7 +45,7 @@ program. For example, you can add additional nodes to an FCI, run an FCI as a st
 
 instance, or remove a node from a FCI configuration.
 
-SQL Server Setup gives you the option of maintaining an existing FCI. If you choose this option,
+Setup gives you the option of maintaining an existing FCI. If you choose this option,
 
 you can add other nodes to your FCI by running SQL Server Setup on the computer that you
 
@@ -59,9 +57,7 @@ Create a New SQL Server Failover Cluster
 
 and
 
-Add or Remove Nodes in a SQL Server Failover Cluster (Setup)
-
-.
+Add or Remove Nodes in a SQL Server Failover Cluster (Setup).
 
 You can remove a node from an FCI by running SQL Server Setup on the computer that you
 
@@ -75,9 +71,7 @@ from the unavailable node. A removed node can be added back to a FCI at any time
 
 information, see
 
-Add or Remove Nodes in a SQL Server Failover Cluster (Setup)
-
-.
+Add or Remove Nodes in a SQL Server Failover Cluster (Setup).
 
 You should not change passwords for any of the SQL Server service accounts when an FCI node
 

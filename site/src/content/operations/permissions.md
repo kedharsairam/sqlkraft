@@ -21,17 +21,15 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Profiler templates and
+Profiler templates and
 
 06/06/2025
-
-Applies to:
 
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server Profiler shows how SQL Server resolves queries internally. This allows administrators
+Profiler shows how SQL Server resolves queries internally. This allows administrators
 
 to see exactly what Transact-SQL statements or Multi-Dimensional Expressions are submitted
 
@@ -63,7 +61,7 @@ Trace column values greater than 1 GB return an error and are truncated in the t
 
 Description
 
-SQL Server Profiler Templates
+Profiler Templates
 
 Contains information about the predefined trace templates that
 
@@ -87,7 +85,7 @@ Modify trace templates
 
 Contains information about modifying trace templates by using
 
-SQL Server Profiler or by using Transact-SQL.
+Profiler or by using Transact-SQL.
 
 ﾉ
 

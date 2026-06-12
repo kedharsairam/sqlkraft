@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -33,9 +31,7 @@ Management Studio or Transact-SQL.
 
 Delete any database snapshots that exist on the database. For more information, see
 
-Drop a Database Snapshot
-
-.
+Drop a Database Snapshot.
 
 If the database is involved in log shipping, remove log shipping.
 
@@ -57,19 +53,13 @@ expand that instance.
 
 2. Expand
 
-, right-click the database to delete, and then select
+, right-click the database to delete, and then select.
 
-.
-
-3. Confirm the correct database is selected, and then select
-
-.
+3. Confirm the correct database is selected, and then select.
 
 For more information, see
 
-DROP DATABASE
-
-.
+DROP DATABASE.
 
 1. Connect to the Database Engine.
 
@@ -81,9 +71,7 @@ Consider taking a full backup of the database before dropping it. You can recrea
 
 deleted database only by restoring a full backup. For more information, see
 
-Quickstart:
-
-.
+Quickstart:.
 
 ```sql
 DROP DATABASE

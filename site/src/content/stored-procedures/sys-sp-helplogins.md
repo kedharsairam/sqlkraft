@@ -2,7 +2,7 @@
 name: "sys.sp_helplogins"
 title: "sp_helplogins"
 category: "general"
-description: "Provides information about logins and the users associated with them in each database. Transact-SQL syntax conventions isn't specified, information about all logins is The first report contains information about each login specified, as shown in the following"
+description: "Provides information about logins and the users associated with them in each database. isn't specified, information about all logins is The first report contains information about each login specified, as shown in the following"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -21,7 +21,7 @@ syntax: |
 
 ## Description
 
-Provides information about logins and the users associated with them in each database. Transact-SQL syntax conventions isn't specified, information about all logins is The first report contains information about each login specified, as shown in the following
+Provides information about logins and the users associated with them in each database. isn't specified, information about all logins is The first report contains information about each login specified, as shown in the following
 
 ## Syntax
 
@@ -65,10 +65,10 @@ EXECUTE sp_helplogins
 'John'
 ;
 GO
-LoginName SID                        DefDBName DefLangName AUser ARemote
+LoginName SID DefDBName DefLangName AUser ARemote
 --------- -------------------------- --------- ----------- ----- -------
-John      0x23B348613497D11190C100C  master    us_english  yes   no
-LoginName   DBName   UserName   UserOrAlias
----------   ------   --------   -----------
-John        pubs     John       User
+John 0x23B348613497D11190C100C master us_english yes no
+LoginName DBName UserName UserOrAlias
+--------- ------ -------- -----------
+John pubs John User
 ```

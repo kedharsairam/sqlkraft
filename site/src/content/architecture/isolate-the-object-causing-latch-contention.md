@@ -36,9 +36,7 @@ function.
 
 As shown here, the contention is on the table
 
-and index name
-
-. Note
+and index name. Note
 
 names have been changed to anonymize the workload.
 

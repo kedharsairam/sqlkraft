@@ -49,9 +49,7 @@ administrative installation point. For more information about an administrative 
 
 point, see
 
-Install SQL Server Data Tools (SSDT) for Visual Studio
-
-. Then install
+Install SQL Server Data Tools (SSDT) for Visual Studio. Then install
 
 SSDTBuildUtilities.msi onto the build server from the location (/location) used for the
 

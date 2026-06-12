@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -43,9 +41,7 @@ local security principal is determined by the certificate used for the conversat
 
 information, see
 
-Certificates for dialog security
-
-.
+Certificates for dialog security.
 
 The local principal need only have
 
@@ -63,9 +59,7 @@ has no other permissions, and shouldn't be used for any other purpose. For a dis
 
 security principals in SQL Server, see
 
-Principals (Database Engine)
-
-.
+Principals (Database Engine).
 
 In general, you use one principal for each service. This helps to limit access to services. In some
 

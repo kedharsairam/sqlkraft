@@ -56,9 +56,7 @@ write to, remote block-level storage across IP networks. Since iSCSI depends on 
 
 you can experience delays or bottlenecks. Ensure the server's caching performance is
 
-optimal, and latency is minimized. For more information, see
-
-.
+optimal, and latency is minimized. For more information, see.
 
 ### Bit corruption
 

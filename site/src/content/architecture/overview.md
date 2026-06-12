@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -40,7 +38,7 @@ type of information, for example, dates, names, dollar amounts, and numbers.
 
 A computer can have one or more than one instance of SQL Server installed. Each instance of
 
-SQL Server can contain one or many databases. Within a database, there are one or many
+can contain one or many databases. Within a database, there are one or many
 
 object ownership groups called schemas. Within each schema there are database objects such
 
@@ -50,17 +48,13 @@ are contained within the database, but are not contained within a schema. For mo
 
 information about creating tables, see
 
-Tables
+Tables.
 
-.
-
-SQL Server databases are stored in the file system in files. Files can be grouped into filegroups.
+databases are stored in the file system in files. Files can be grouped into filegroups.
 
 For more information about files and filegroups, see
 
-Database Files and Filegroups
-
-.
+Database Files and Filegroups.
 
 When people gain access to an instance of SQL Server they are identified as a login. When
 
@@ -70,9 +64,7 @@ based on a login. If contained databases are enabled, a database user can be cre
 
 not based on a login. For more information about users, see
 
-CREATE USER (Transact-SQL)
-
-.
+CREATE USER (Transact-SQL).
 
 A user that has access to a database can be given permission to access the objects in the
 
@@ -92,9 +84,7 @@ and
 
 Principals (Database
 
-Engine)
-
-.
+Engine).
 
 Most people who work with databases use the SQL Server Management Studio tool. The
 

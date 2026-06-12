@@ -29,8 +29,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -51,9 +49,7 @@ user-defined aggregate. Every user-defined aggregate must be annotated with this
 
 For more information, see
 
-SqlUserDefinedAggregateAttribute
-
-.
+SqlUserDefinedAggregateAttribute.
 
 The
 
@@ -63,9 +59,7 @@ appropriate function attributes set.
 
 For more information, see
 
-SqlFunctionAttribute
-
-.
+SqlFunctionAttribute.
 
 The
 
@@ -75,9 +69,7 @@ type (UDT) expression.
 
 For more information, see
 
-SqlFacetAttribute
-
-.
+SqlFacetAttribute.
 
 The
 

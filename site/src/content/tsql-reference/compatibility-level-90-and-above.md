@@ -91,8 +91,6 @@ varchar(max)
 
 char
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -111,7 +109,7 @@ SQL database in Microsoft Fabric
 
 When an operator combines expressions of different data types, the data type with the lower precedence is first converted to the data type with the higher precedence. If the conversion isn't a supported implicit conversion, an error is returned. For an operator combining operand expressions having the same data type, the result of the operation has that data type.
 
-SQL Server uses the following precedence order for data types:
+uses the following precedence order for data types:
 
 1. user-defined data types (highest)
 
@@ -259,8 +257,6 @@ rowversion
 
 timestamp
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -279,7 +275,7 @@ SQL database in Microsoft Fabric
 
 Data type synonyms are included in SQL Server for ISO compatibility. The following table lists the synonyms and the SQL Server system data types that they map to.
 
-SQL Server system data type n n
+system data type n n
 
 [ n
 
@@ -297,9 +293,7 @@ Data type synonyms can be used instead of the corresponding base data type name 
 
 PROCEDURE, and DECLARE
 
-@variable
-
-. However, after the object is created, the synonyms have sp_help nvarchar(10) nvarchar(10) national character varying(10) no visibility. When the object is created, the object is assigned the base data type that is associated with the synonym. There's no record that the synonym was specified in the statement that created the object.
+@variable. However, after the object is created, the synonyms have sp_help nvarchar(10) nvarchar(10) national character varying(10) no visibility. When the object is created, the object is assigned the base data type that is associated with the synonym. There's no record that the synonym was specified in the statement that created the object.
 
 Objects that are derived from the original object, such as result set columns or expressions, are assigned the base data type. Any metadata functions that use the original object or any derived objects will report the base data type, not the synonym, including:
 
@@ -354,8 +348,8 @@ DATE
 AS
 [YMD-Interpretation
 --?--NotGuaranteed];
-/***  Actual output:
-12-09-2018  = the input.
+/*** Actual output:
+12-09-2018 = the input.
 DMY-Interpretation-of-input-format
 2018-09-12
 MDY-Interpretation-of-input-format

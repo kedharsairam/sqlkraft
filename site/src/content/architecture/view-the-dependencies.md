@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -69,13 +67,9 @@ database.
 
 , expand
 
-, expand a database, and then expand
+, expand a database, and then expand.
 
-.
-
-2. Right-click a table, and then select
-
-.
+2. Right-click a table, and then select.
 
 3. In the
 
@@ -87,9 +81,7 @@ dialog box, select either
 
 , or
 
-<object name>
-
-.
+<object name>.
 
 4. Select an object in the
 
@@ -109,9 +101,7 @@ Viewing dependencies using
 
 isn't supported in
 
-Azure Synapse Analytics. Instead, use
-
-. Azure Synapse
+Azure Synapse Analytics. Instead, use. Azure Synapse
 
 Analytics SQL pools support tables, views, filtered statistics, and Transact-SQL stored
 

@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Use this page to view the filegroups or add a new filegroup to the selected database. Filegroup
@@ -57,21 +55,15 @@ section will not be available. You can enable
 
 FILESTREAM storage by using
 
-Server Properties (Advanced Page)
-
-.
+Server Properties (Advanced Page).
 
 For information about how SQL Server uses row filegroups, see
 
-Database Files and Filegroups
-
-.
+Database Files and Filegroups.
 
 For more information about FILESTREAM data and filegroups, see
 
-FILESTREAM (SQL Server)
-
-.
+FILESTREAM (SQL Server).
 
 Memory-optimized file groups are required for a database to contain one or more memory-
 

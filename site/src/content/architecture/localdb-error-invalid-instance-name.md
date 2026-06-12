@@ -37,8 +37,6 @@ pubDate: 2025-12-01
 
 07/14/2025
 
-Applies to:
-
 SQL Server
 
 Product
@@ -53,7 +51,7 @@ Event ID
 
 Event Source
 
-SQL Server Local Database Runtime 12.0
+Local Database Runtime 12.0
 
 Component
 
@@ -71,9 +69,7 @@ Consult the Local Database Runtime API documentation on legal names for Local Da
 
 Runtime instances. For additional information, see
 
-SQL Server Express LocalDB instance APIs
-
-.
+Express LocalDB instance APIs.
 
 ﾉ
 

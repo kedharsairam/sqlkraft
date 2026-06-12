@@ -14,4 +14,4 @@ pubDate: 2026-05-29
 
 ## Remarks
 
-A single tick represents 100 nanoseconds. Time values in SQL Server and .NET use ticks for internal precision calculations.
+A single tick represents 100 nanoseconds. Time values in SQL Server and.NET use ticks for internal precision calculations.

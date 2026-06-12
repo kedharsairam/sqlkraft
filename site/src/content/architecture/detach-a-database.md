@@ -27,8 +27,6 @@ Article
 
 04/01/2024
 
-Applies to:
-
 SQL Server
 
 This article describes how to detach a database in SQL Server with SQL Server Management
@@ -45,9 +43,7 @@ same or newer version.
 
 For a list of limitations and restrictions, see
 
-Database detach and attach (SQL Server)
-
-.
+Database detach and attach (SQL Server).
 
 Requires membership in the
 
@@ -67,9 +63,7 @@ Server Database Engine and then expand the instance.
 
 , and select the name of the user database you want to detach.
 
-3. Right-click the database name, select
-
-. Select the
+3. Right-click the database name, select. Select the
 
 page and review the
 
@@ -83,11 +77,9 @@ attach. Then, proceed with the detach steps in the next section. For more inform
 
 attaching the database in its new location, see
 
-Attach a Database
-
-.
+Attach a Database.
 
 ```sql
-CREATE DATABASE ... FOR ATTACH
+CREATE DATABASE. FOR ATTACH
 FOR ATTACH_REBUILD_LOG
 ```

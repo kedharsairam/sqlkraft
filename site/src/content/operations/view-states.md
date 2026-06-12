@@ -31,8 +31,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 During a database mirroring session, you can view the status on the
@@ -51,9 +49,7 @@ to expand the server tree.
 
 3. Right-click the database, select
 
-, and then click
-
-. This opens the
+, and then click. This opens the
 
 page of the
 

@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -61,9 +59,7 @@ table.
 
 2. The datatypes match for each column between the current table and the history table.
 
-3. The period columns are set to
-
-.
+3. The period columns are set to.
 
 4. The current table has a primary key constraint and the history table doesn't have a
 

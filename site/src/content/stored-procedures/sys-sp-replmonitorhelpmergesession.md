@@ -30,7 +30,7 @@ syntax: |
 
 ## Description
 
-Returns information on past sessions for a given replication Merge Agent, with one row returned for each session that matches the filtering criterion. This stored procedure, which is used to monitor merge replication, is executed at the Distributor on the distribution database or at the Subscriber on the subscription database. Transact-SQL syntax conventions The range of time, in hours, for which historical agent session information is returned.
+Returns information on past sessions for a given replication Merge Agent, with one row returned for each session that matches the filtering criterion. This stored procedure, which is used to monitor merge replication, is executed at the Distributor on the distribution database or at the Subscriber on the subscription database. The range of time, in hours, for which historical agent session information is returned.
 
 ## Syntax
 

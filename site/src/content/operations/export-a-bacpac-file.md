@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -49,9 +47,7 @@ export and extract include the database schema in the produced file, but the exp
 
 limited to functionality available in the Azure SQL Database surface area. Learn more from the
 
-SqlPackage portability documentation
-
-.
+SqlPackage portability documentation.
 
 The export process builds a
 
@@ -87,9 +83,7 @@ To export a DAC, you need to possess at least ALTER ANY sign-in and database-lev
 
 permissions and
 
-permissions on
-
-. This
+permissions on. This
 
 task is achievable for individuals holding membership in the
 
@@ -99,11 +93,7 @@ and the
 
 fixed database role within the source database of the DAC.
 
-```cmd
-.bacpac
-.bacpac
-.bacpac
-.bacpac
+```cmd.bacpac.bacpac.bacpac.bacpac
 VIEW
 DEFINITION
 ```

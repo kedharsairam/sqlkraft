@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -41,7 +39,7 @@ You can use
 
 to import large numbers of rows into SQL Server tables or to export data from
 
-SQL Server tables into data files. Except when used with the queryout option,
+tables into data files. Except when used with the queryout option,
 
 requires no
 

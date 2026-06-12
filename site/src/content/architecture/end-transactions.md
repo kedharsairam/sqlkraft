@@ -16,9 +16,7 @@ SQL or through the database API. For more information, see
 
 BEGIN DISTRIBUTED
 
-TRANSACTION (Transact-SQL)
-
-.
+TRANSACTION (Transact-SQL).
 
 You can end transactions with either a COMMIT or ROLLBACK statement, or through a
 
@@ -80,15 +78,11 @@ is
 
 executed, any run-time statement error causes an automatic rollback of the current transaction.
 
-Compile errors, such as syntax errors, aren't affected by
-
-. For more information,
+Compile errors, such as syntax errors, aren't affected by. For more information,
 
 see
 
-SET XACT_ABORT (Transact-SQL)
-
-.
+SET XACT_ABORT (Transact-SQL).
 
 When errors occur, the appropriate action (
 
@@ -100,9 +94,7 @@ code. One effective tool for handling errors, including those in transactions, i
 
 construct. For more information with examples that include transactions, see
 
-TRY...CATCH (Transact-SQL)
-
-. Beginning with SQL Server 2012 (11.x), you can use the
+TRY.CATCH (Transact-SQL). Beginning with SQL Server 2012 (11.x), you can use the
 
 statement to raise an exception and transfers execution to a
 
@@ -110,9 +102,7 @@ block of a
 
 construct. For more information, see
 
-THROW (Transact-SQL)
-
-.
+THROW (Transact-SQL).
 
 In autocommit mode, it sometimes appears as if an instance of the Database Engine has rolled
 
@@ -168,13 +158,13 @@ SET XACT_ABORT
 
 `ROLLBACK`
 
-`TRY...CATCH`
+`TRY.CATCH`
 
 `THROW`
 
 `CATCH`
 
-`TRY...CATCH`
+`TRY.CATCH`
 
 `INSERT`
 

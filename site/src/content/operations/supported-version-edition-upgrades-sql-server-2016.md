@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/03/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -31,7 +29,7 @@ You can upgrade from SQL Server 2008 (10.0.x), SQL Server 2008 R2 (10.50.x), SQL
 
 (11.x), and SQL Server 2014 (12.x). This article lists the supported upgrade paths from these
 
-SQL Server versions, and the supported edition upgrades for SQL Server 2016 (13.x).
+versions, and the supported edition upgrades for SQL Server 2016 (13.x).
 
 Before upgrading from one edition of SQL Server 2016 (13.x) to another, verify that the
 
@@ -49,9 +47,7 @@ system. For more information, see
 
 Hardware and software requirements for SQL Server
 
-2016 and SQL Server 2017
-
-.
+2016 and SQL Server 2017.
 
 Upgrade is blocked if there's a pending restart.
 
@@ -63,7 +59,7 @@ the Database Engine, Analysis Services, and Reporting Services components must b
 
 same in an instance of SQL Server 2016 (13.x).
 
-SQL Server 2016 (13.x) is only available for 64-bit platforms. Cross-platform upgrade isn't
+2016 (13.x) is only available for 64-bit platforms. Cross-platform upgrade isn't
 
 supported. You can't upgrade a 32-bit instance of SQL Server to native 64-bit using SQL
 

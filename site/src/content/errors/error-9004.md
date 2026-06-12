@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-These are all various checks on log blocks when processing log records. These including parity, sector, and other logical checks on the consistency of the transaction log In most cases, this error is
+These are all various checks on log blocks when processing log records.
 
 ## Severity
 

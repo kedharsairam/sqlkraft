@@ -27,8 +27,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 When coding your user-defined type (UDT) definition, you must implement various features,

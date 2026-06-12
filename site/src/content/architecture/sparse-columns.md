@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -61,9 +59,7 @@ combined into a single XML column. This column is called a column set. For more
 
 information about column sets, see
 
-Use Column Sets
-
-.
+Use Column Sets.
 
 Filtered indexes
 
@@ -75,9 +71,7 @@ populated values. This creates a smaller and more efficient index. For more info
 
 see
 
-Create Filtered Indexes
-
-.
+Create Filtered Indexes.
 
 Sparse columns and filtered indexes enable applications, such as Windows SharePoint Services,
 
@@ -105,5 +99,5 @@ statement does not copy over the sparse column property
 
 ```sql
 sys.columns
-SELECT ... INTO
+SELECT. INTO
 ```

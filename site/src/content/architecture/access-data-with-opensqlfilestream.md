@@ -27,8 +27,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 The OpenSqlFilestream API obtains a Win32 compatible file handle for a FILESTREAM binary
@@ -57,9 +55,7 @@ SetEndOfFile
 
 , or
 
-FlushFileBuffers
-
-. If
+FlushFileBuffers. If
 
 you pass this handle to any other Win32 API, the error ERROR_ACCESS_DENIED is returned. The
 

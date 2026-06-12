@@ -18,9 +18,7 @@ A remote distributor uses a linked server for communication between the publishe
 
 distributor. The secure default introduced in SQL Server 2025 (17.x) of the OLEDB 19 provider
 
-requires that
-
-.
+requires that.
 
 You can resolve this issue preemptively before you start the upgrade, or you can resolve the
 
@@ -34,9 +32,7 @@ public commercial certificate
 
 or a certificate from an
 
-internal certificate authority
-
-.
+internal certificate authority.
 
 This is the recommended option for maximum security.
 
@@ -50,9 +46,7 @@ or a certificate from an
 
 internal certificate
 
-authority
-
-.
+authority.
 
 Alternatively, you can choose the less secure option to override the secure default of the
 

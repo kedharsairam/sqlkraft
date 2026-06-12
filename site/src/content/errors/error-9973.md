@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 9973 10 No Informational: Full-text %ls population paused for table or indexed view '%ls' (table or indexed view ID '%d', database ID '%d'). Number of documents processed: %d. Number of do
+Description 9973 10 No Informational: Full-text %ls population paused for table or indexed view '%ls' (table or indexed view ID '%d', database ID '%d'). Number of documents processed: %d.
 
 ## Severity
 

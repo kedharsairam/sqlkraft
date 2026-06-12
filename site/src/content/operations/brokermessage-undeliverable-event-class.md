@@ -31,13 +31,11 @@ Article
 
 03/31/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server generates a
+generates a
 
 event when Service Broker is unable to
 
@@ -47,9 +45,7 @@ messages that should have been forwarded, see
 
 Broker:Forwarded Message Dropped Event
 
-Class
-
-.
+Class.
 
 Description
 
@@ -105,7 +101,7 @@ default database if no
 
 statement was issued for a given instance.
 
-SQL Server Profiler displays the name of
+Profiler displays the name of
 
 the database if the
 

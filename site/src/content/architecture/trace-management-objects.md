@@ -24,9 +24,7 @@ database option
 
 and CONCAT_NULLS_YIELDS_NULL
 
-are always set to
-
-.
+are always set to.
 
 are unavailable.
 
@@ -42,9 +40,7 @@ sp_describe_first_result_set
 
 , and
 
-sp_describe_undeclared_parameters
-
-.
+sp_describe_undeclared_parameters.
 
 Specifying
 
@@ -78,9 +74,7 @@ the
 
 keyword.
 
-Use
-
-.
+Use.
 
 Table hint without
 
@@ -94,15 +88,15 @@ Replacement
 
 Feature name
 
-SQL Server Profiler for Trace Capture
+Profiler for Trace Capture
 
 Use Extended Events Profiler embedded in SQL Server Management Studio.
 
-SQL Server Profiler
+Profiler
 
-SQL Server Profiler for Trace Replay
+Profiler for Trace Replay
 
-SQL Server Distributed Replay overview
+Distributed Replay overview
 
 Deprecated feature
 
@@ -158,8 +152,6 @@ XMLDATA
 
 Discontinued Database Engine functionality in SQL Server
 
-Last updated on 11/18/2025
-
 ﾉ
 
 Expand table
@@ -180,9 +172,7 @@ which is the correct
 
 maximum length. However the current implementation returns
 
-varbinary(50)
-
-. If developers have allocated
+varbinary(50). If developers have allocated
 
 varbinary(50)
 
@@ -192,97 +182,4 @@ a deprecation issue this is mentioned in this topic because the application adju
 
 information, see
 
-sp_setapprole
-
-.
-
-Related content
-
-```sql
-SET ANSI_PADDING OFF
-```
-
-```sql
-ANSI_PADDING OFF
-```
-
-```sql
-SET CONCAT_NULL_YIELDS_NULL OFF
-```
-
-```sql
-CONCAT_NULL_YIELDS_NULL OFF
-```
-
-```sql
-SET OFFSETS
-ANSI_NULLS
-```
-
-`ANSI_PADDING`
-
-`ON`
-
-```sql
-SET OFFSETS
-```
-
-```sql
-SET ANSI_PADDING OFF
-SET CONCAT_NULL_YIELDS_NULL
-OFF
-SET OFFSETS
-ALTER DATABASE SET
-ANSI_NULLS OFF
-ALTER DATABASE SET
-ANSI_PADDING OFF
-ALTER DATABASE SET
-CONCAT_NULL_YIELDS_NULL OFF
-SET FMTONLY
-```
-
-```sql
-SET FMTONLY
-```
-
-`NOLOCK`
-
-`READUNCOMMITTED`
-
-`FROM`
-
-`UPDATE`
-
-`DELETE`
-
-`NOLOCK`
-
-`READUNCOMMITTED`
-
-`FROM`
-
-`NOLOCK`
-
-`READUNCOMMITTED`
-
-`UPDATE`
-
-`DELETE`
-
-`WITH`
-
-`WITH`
-
-`WITH`
-
-```sql
-FOR XML
-```
-
-`RAW`
-
-`AUTO`
-
-`OUTPUT`
-
-`sp_setapprole`
+sp_setapprole.

@@ -26,13 +26,9 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
-All arithmetic operators are supported, except for
-
-. The following examples illustrate the
+All arithmetic operators are supported, except for. The following examples illustrate the
 
 basic use of arithmetic operators:
 
@@ -48,9 +44,7 @@ operands are different types, either one or both when required will be cast to a
 
 primitive base type according to the type hierarchy. For information about type hierarchy, see
 
-Type Casting Rules in XQuery
-
-.
+Type Casting Rules in XQuery.
 
 Numeric type promotion occurs if the two operations are different numeric base types. For
 
@@ -60,7 +54,7 @@ to an
 
 would first change the decimal value to a
 
-double . Next, addition would be performed that would result in a double value.
+double. Next, addition would be performed that would result in a double value.
 
 Untyped atomic values are cast to the other operand's numeric base type, or to
 
@@ -70,17 +64,13 @@ the other operand is also untyped.
 
 These are the limitations:
 
-Arguments for the arithmetic operators must be of numeric type or
-
-.
+Arguments for the arithmetic operators must be of numeric type or.
 
 Operations on
 
 values result in a value of type
 
-instead of
-
-.
+instead of.
 
 ```sql
 DECLARE @x xml

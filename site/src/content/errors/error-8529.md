@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 8529 16 No Unable to extract the Kernel Transaction Manager (KTM) transaction handle from the Microsoft Distributed Transaction Coordinator (MS DTC) transaction: 0x%x. 8530 16 Yes The oper
+Description 8529 16 No Unable to extract the Kernel Transaction Manager (KTM) transaction handle from the Microsoft Distributed Transaction Coordinator (MS DTC) transaction: 0x%x.
 
 ## Severity
 

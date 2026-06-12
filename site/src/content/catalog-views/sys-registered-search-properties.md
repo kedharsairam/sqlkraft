@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-To view the integer identifier of any property that exists in a search property list of the current database, use the sys.registered_search_properties catalog view, as follows: PROPERTY_DESCRIPTION =' property_description Specifies a user-defined description of the property. property_description is a string of up to 512 characters. This option is optional. Drops the specified property from the property list specified by . Dropping a property unregisters it, so it is no longer searchable. Each full-text index can have only one search property list. To enable querying on a given search property, you must add it to the search property list of the full-text index and then repopulate the index. When specifying a property you can arrange the PROPERTY_SET_GUID, PROPERTY_INT_ID, and PROPERTY_DESCRIPTION clauses in any order, as a comma-separated list within parentheses,
+To view the integer identifier of any property that exists in a search property list of the current database, use the sys.registered_search_properties catalog view, as follows: PROPERTY_DESCRIPTION =' property_description Specifies a user-defined description of the property. property_description is a string of up to 512 characters. This option is optional. Drops the specified property from the property list specified by. Dropping a property unregisters it, so it is no longer searchable. Each full-text index can have only one search property list. To enable querying on a given search property, you must add it to the search property list of the full-text index and then repopulate the index. When specifying a property you can arrange the PROPERTY_SET_GUID, PROPERTY_INT_ID, and PROPERTY_DESCRIPTION clauses in any order, as a comma-separated list within parentheses,
 
 ## Syntax
 
@@ -47,9 +47,7 @@ is a string of up to
 
 512 characters. This option is optional.
 
-Drops the specified property from the property list specified by
-
-. Dropping a property
+Drops the specified property from the property list specified by. Dropping a property
 
 unregisters it, so it is no longer searchable.
 

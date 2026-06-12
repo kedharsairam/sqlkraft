@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -43,13 +41,9 @@ argument
 
 of a
 
-workload group
+workload group. For more information, see
 
-. For more information, see
-
-CREATE WORKLOAD GROUP
-
-.
+CREATE WORKLOAD GROUP.
 
 Description
 
@@ -108,8 +102,6 @@ Resource governor
 Resource governor workload group
 
 ALTER WORKLOAD GROUP
-
-Last updated on 11/18/2025
 
 ﾉ
 

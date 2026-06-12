@@ -29,8 +29,6 @@ Article
 
 11/25/2024
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -45,9 +43,7 @@ The walkthrough creates a clustered DTC resource and the SQL Server AGs to align
 
 requirements at
 
-How to cluster the DTC service for an Always On availability group
-
-.
+How to cluster the DTC service for an Always On availability group.
 
 The walkthrough uses PowerShell and Transact-SQL (T-SQL) scripts. Many of the T-SQL scripts
 
@@ -63,9 +59,7 @@ SQLCMD Mode
 
 Edit
 
-SQLCMD Scripts with Query Editor
-
-. The PowerShell module
+SQLCMD Scripts with Query Editor. The PowerShell module
 
 must be
 
@@ -73,9 +67,7 @@ imported. For more information about importing a PowerShell module, see
 
 Importing a
 
-PowerShell Module
-
-. This walkthrough is based on the following configuration options:
+PowerShell Module. This walkthrough is based on the following configuration options:
 
 All requirements from
 
@@ -85,9 +77,7 @@ availability groups
 
 are met.
 
-The domain is
-
-.
+The domain is.
 
 The user has the Create Computer objects permission in the OU where the DTC Network
 
@@ -101,21 +91,15 @@ has been created for backups.
 
 The default instances of SQL Server are named
 
-and
-
-.
+and.
 
 The same service account is used on all instances of SQL Server.
 
 The user is a member of the fixed SQL Server role sysadmin on all instances of SQL Server.
 
-The default outcome of transactions that DTC can't resolve will be set to
+The default outcome of transactions that DTC can't resolve will be set to.
 
-.
-
-The mirroring endpoint will use port
-
-.
+The mirroring endpoint will use port.
 
 No other AGs or clustered DTC resources exist.
 

@@ -16,8 +16,6 @@ Article
 
 04/15/2024
 
-Applies to:
-
 SQL Server
 
 Returns a value of type xs:boolean indicating whether the value of
@@ -28,9 +26,7 @@ contains a string value
 
 specified by
 
-$arg2
-
-.
+$arg2.
 
 $arg1
 
@@ -44,9 +40,7 @@ If the value of
 
 $arg2
 
-is a zero-length string, the function returns
-
-. If the value of
+is a zero-length string, the function returns. If the value of
 
 $arg1
 
@@ -56,9 +50,7 @@ zero-length string and the value of
 
 $arg2
 
-is not a zero-length string, the function returns
-
-.
+is not a zero-length string, the function returns.
 
 If the value of
 
@@ -86,9 +78,7 @@ value specified is greater than 4000 characters, a dynamic error condition occur
 
 contains() function returns an empty sequence instead of a Boolean value of
 
-or
-
-. SQL
+or. SQL
 
 Server does not raise dynamic errors on XQuery expressions.
 

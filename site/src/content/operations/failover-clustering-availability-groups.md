@@ -21,15 +21,13 @@ pubDate: 2025-12-01
 
 08/26/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
 
 Always On availability groups, the high availability and disaster recovery solution introduced in
 
-SQL Server 2012 (11.x), requires Windows Server Failover Clustering (WSFC). Also, though
+2012 (11.x), requires Windows Server Failover Clustering (WSFC). Also, though
 
 Always On availability groups isn't dependent upon SQL Server failover clustering, you can use
 

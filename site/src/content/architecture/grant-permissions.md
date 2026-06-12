@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -71,9 +69,7 @@ permission on the procedure. For more information, see
 
 GRANT object permissions (Transact-
 
-SQL)
-
-.
+SQL).
 
 1. In
 
@@ -85,17 +81,13 @@ instance.
 
 , expand the database in which the procedure belongs, and then
 
-expand
-
-.
+expand.
 
 3. Expand
 
 , right-click the procedure to grant permissions on, and then
 
-select
-
-.
+select.
 
 4. From
 
@@ -103,9 +95,7 @@ select
 
 page.
 
-5. To grant permissions to a user, database role, or application role, select
-
-.
+5. To grant permissions to a user, database role, or application role, select.
 
 6. In
 

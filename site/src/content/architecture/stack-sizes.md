@@ -6,7 +6,7 @@ tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
 
-Memory for thread stacks , CLR , extended procedure .dll files, the OLE DB providers
+Memory for thread stacks , CLR , extended procedure.dll files, the OLE DB providers
 
 referenced by distributed queries, automation objects referenced in Transact-SQL statements,
 
@@ -14,9 +14,7 @@ and any memory allocated by a non SQL Server DLL, are
 
 not
 
-controlled by
-
-.
+controlled by.
 
 Refer to
 
@@ -28,7 +26,7 @@ worker threads for a given number of affinitized CPUs in the current host. SQL S
 
 sizes are as follows:
 
-SQL Server architecture
+architecture
 
 x86 (32-bit)
 
@@ -60,7 +58,7 @@ allocations starting with SQL Server
 
 2012 (11.x).
 
-SQL Server uses the memory notification API
+uses the memory notification API
 
 to determine
 

@@ -21,11 +21,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Express LocalDB error messages
+Express LocalDB error messages
 
 07/14/2025
-
-Applies to:
 
 SQL Server
 

@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic explains how to view the Transaction Log Shipping Status report in SQL Server

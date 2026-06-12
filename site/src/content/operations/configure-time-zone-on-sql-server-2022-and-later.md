@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 07/03/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
@@ -31,15 +29,13 @@ This article describes how to configure the time zone for SQL Server 2022 (16.x)
 
 versions on Linux. You can also configure the time zone on Linux for
 
-SQL Server 2017
+2017
 
 and
 
-Server 2019
+Server 2019.
 
-.
-
-SQL Server 2022 (16.x) and later versions on Linux uses Windows time zones internally. All
+2022 (16.x) and later versions on Linux uses Windows time zones internally. All
 
 Transact-SQL (T-SQL) commands use Windows time zones, for example the
 
@@ -105,11 +101,11 @@ via the
 
 mapping entry.
 
-SQL Server 2022 CU 2 and later versions
+2022 CU 2 and later versions
 
-SQL Server 2022 CU 1 and earlier versions
+2022 CU 1 and earlier versions
 
-SQL Server 2022 CU 2 and later versions
+2022 CU 2 and later versions
 
 ```cmd
 TZ

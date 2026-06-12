@@ -37,9 +37,7 @@ and
 
 BEGIN DISTRIBUTED
 
-TRANSACTION
-
-.
+TRANSACTION.
 
 When you use cursor variables, if you execute a procedure that passes in a cursor variable with
 
@@ -53,9 +51,7 @@ first one in a batch.
 
 For more information specific to CLR stored procedures, see
 
-CLR Stored Procedures
-
-.
+CLR Stored Procedures.
 
 You don't have to specify the
 
@@ -63,9 +59,7 @@ keyword when you execute stored procedures when the
 
 statement is the first one in a batch.
 
-SQL Server system stored procedures start with the characters
-
-. They are physically stored
+system stored procedures start with the characters. They are physically stored
 
 in the
 
@@ -79,7 +73,7 @@ module such as a user-defined stored procedure or function, we recommend that yo
 
 the stored procedure name with the sys schema name.
 
-SQL Server system extended stored procedures start with the characters
+system extended stored procedures start with the characters
 
 , and these are
 
@@ -89,9 +83,7 @@ database. When you execute a system extended
 
 stored procedure, either in a batch or inside a module such as a user-defined stored procedure
 
-or function, we recommend that you qualify the stored procedure name with
-
-.
+or function, we recommend that you qualify the stored procedure name with.
 
 When you execute a user-defined stored procedure, either in a batch or inside a module such
 
@@ -103,9 +95,7 @@ stored procedure with the same name as a system stored procedure. For more infor
 
 about executing stored procedures, see
 
-Execute a stored procedure
-
-.
+Execute a stored procedure.
 
 ### varchar(max)
 

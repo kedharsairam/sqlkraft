@@ -40,7 +40,7 @@ and the SQL Server Native Client ODBC driver. On a prepare request, either the p
 
 or the driver sends the statement to SQL Server with a request to prepare the statement.
 
-SQL Server compiles an execution plan and returns a handle for that plan to the provider
+compiles an execution plan and returns a handle for that plan to the provider
 
 or driver. On an execute request, either the provider or the driver sends the server a
 

@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Existential and universal quantifiers specify different semantics for Boolean operators that are
@@ -63,7 +61,7 @@ For example, the following query checks every <Location> element to see whether 
 LocationID attribute.
 
 ```sql
-satisfies ( some | every ) <variable> in <Expression> (,...) satisfies <Expression>
+satisfies ( some | every ) <variable> in <Expression> (,.) satisfies <Expression>
 SELECT Instructions.query('
 declare namespace
 AWMI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-

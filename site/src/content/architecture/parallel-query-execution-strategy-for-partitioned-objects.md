@@ -78,9 +78,7 @@ the worker threads will be assigned to the same table partition.
 
 To take another example, suppose that the table has four partitions on column A with
 
-boundary points (10, 20, 30), an index on column B, and the query has a predicate clause
-
-. Because the table partitions are based on the values of A, the values of B
+boundary points (10, 20, 30), an index on column B, and the query has a predicate clause. Because the table partitions are based on the values of A, the values of B
 
 can occur in any of the table partitions. Thus, the query processor will seek for each of the
 

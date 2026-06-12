@@ -38,9 +38,7 @@ locking resources. For more information, see
 
 in
 
-sys.dm_tran_locks
-
-.
+sys.dm_tran_locks.
 
 Wait resource visibility
 
@@ -48,9 +46,7 @@ wait resources. For more information, see
 
 in
 
-sys.dm_exec_requests
-
-.
+sys.dm_exec_requests.
 
 Deadlock graph
 
@@ -64,9 +60,7 @@ member of a deadlock. For more information and an example, see
 
 Optimized locking
 
-and deadlocks
-
-.
+and deadlocks.
 
 Extended events
 
@@ -78,9 +72,7 @@ because of a conflict with another transaction. For more information, see
 
 Lock after
 
-qualification (LAQ)
-
-.
+qualification (LAQ).
 
 The
 
@@ -102,9 +94,7 @@ is to
 
 such as
 
-and
-
-.
+and.
 
 `XACT`
 

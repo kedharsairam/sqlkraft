@@ -92,13 +92,7 @@ session is enabled by default, you
 
 don't need to configure a separate event session to capture deadlock information.
 
-The deadlock graph captured typically has three distinct nodes:
-
-. The deadlock victim process identifier.
-
-. Information on all the processes involved in the deadlock.
-
-. Information about the resources involved in the deadlock.
+The deadlock graph captured typically has three distinct nodes:. The deadlock victim process identifier. Information on all the processes involved in the deadlock. Information about the resources involved in the deadlock.
 
 You can view the
 

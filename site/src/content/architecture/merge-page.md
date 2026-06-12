@@ -36,9 +36,7 @@ page mapping table
 
 is used to
 
-store the physical address of page
-
-. Pages
+store the physical address of page. Pages
 
 and
 
@@ -52,27 +50,19 @@ is set. Then, in one atomic step
 
 update the page mapping table to change the pointer from old
 
-to new
-
-.
+to new.
 
 The nonleaf page points to
 
-but there's no direct pointer from a nonleaf page to
+but there's no direct pointer from a nonleaf page to.
 
-.
-
-is only reachable via
-
-. To create a pointer from a nonleaf page to
+is only reachable via. To create a pointer from a nonleaf page to
 
 , allocate a new
 
 nonleaf page (internal index page), copy all the rows from old nonleaf page, and add a new
 
-row to point to
-
-. Once this is done, in one atomic step, update the page mapping table to
+row to point to. Once this is done, in one atomic step, update the page mapping table to
 
 change the pointer from old nonleaf page to new nonleaf page.
 
@@ -134,9 +124,7 @@ needs to be removed, and
 
 the entry for key value
 
-updated to point to
-
-. To do this, a new nonleaf page
+updated to point to. To do this, a new nonleaf page
 
 is
 
@@ -148,15 +136,11 @@ are copied, except for the row representing key value
 
 then the row for key value
 
-is updated to point to page
-
-. Once this is done, in one atomic
+is updated to point to page. Once this is done, in one atomic
 
 step, the page mapping table entry pointing to
 
-is updated to point to
-
-.
+is updated to point to.
 
 is no
 
@@ -176,15 +160,11 @@ and
 
 are merged, and the delta page
 
-changes are included in the new
-
-. Then, in one atomic step, the page mapping table entry
+changes are included in the new. Then, in one atomic step, the page mapping table entry
 
 pointing to page
 
-is updated to point to page
-
-.
+is updated to point to page.
 
 
 

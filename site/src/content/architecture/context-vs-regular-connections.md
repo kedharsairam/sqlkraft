@@ -27,8 +27,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 If you're connecting to a remote server, always use regular connections rather than context

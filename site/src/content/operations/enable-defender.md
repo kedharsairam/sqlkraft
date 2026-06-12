@@ -29,7 +29,7 @@ you need
 
 permissions.
 
-SQL Server instance permissions
+instance permissions
 
 : SQL Server service accounts must be a member of the
 
@@ -37,9 +37,7 @@ fixed server role on each SQL Server instance, which is the default setting. Lea
 
 more about the
 
-SQL Server service account requirement
-
-.
+service account requirement.
 
 :
 
@@ -55,9 +53,7 @@ On-premises machines must be
 
 onboarded to Arc and registered as Azure Arc SQL
 
-Server instances
-
-.
+Server instances.
 
 : Allow outbound HTTPS traffic on Transmission Control Protocol (TCP) port
 
@@ -67,17 +63,13 @@ URL. Learn more
 
 about
 
-URL requirements
-
-.
+URL requirements.
 
 : Ensure these extensions aren't blocked in your environment. Learn more
 
 about
 
-restricting extensions installation on Windows VMs
-
-.
+restricting extensions installation on Windows VMs.
 
 ）
 
@@ -93,9 +85,7 @@ Important
 
 The Defender for SQL Servers on Machines plan is undergoing a transition to the new
 
-agent architecture. For more information, see
-
-.
+agent architecture. For more information, see.
 
 ```cmd
 *.<region>.arcdataservices.com

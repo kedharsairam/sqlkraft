@@ -1,0 +1,111 @@
+---
+// Pagination — prev / next navigation for collection pages
+// Props: page object from Astro's paginate()
+
+export interface Props {
+  currentUrl: string;
+  prevUrl?: string;
+  nextUrl?: string;
+  currentPage: number;
+  lastPage: number;
+  totalItems: number;
+}
+
+const { currentUrl, prevUrl, nextUrl, currentPage, lastPage, totalItems } = Astro.props;
+const baseUrl = (import.meta.env.BASE_URL || "/sqlkraft/").replace(/\/+$/, "");
+---
+
+<nav class="pagination" aria-label="Page navigation">
+  <!-- Page info -->
+  <span class="page-info">
+    Page {currentPage} of {lastPage}
+    <span class="page-total">&middot; {totalItems} items</span>
+  </span>
+
+  <!-- Prev / Next buttons -->
+  <div class="page-buttons">
+    {prevUrl ? (
+      <a href={prevUrl} class="page-btn page-btn--prev" rel="prev">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        Previous
+      </a>
+    ) : (
+      <span class="page-btn page-btn--disabled">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        Previous
+      </span>
+    )}
+
+    {nextUrl ? (
+      <a href={nextUrl} class="page-btn page-btn--next" rel="next">
+        Next
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </a>
+    ) : (
+      <span class="page-btn page-btn--disabled">
+        Next
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </span>
+    )}
+  </div>
+</nav>
+
+<style>
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px 0;
+    margin-top: 24px;
+    border-top: 1px solid var(--border-glass);
+  }
+
+  .page-info {
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  .page-total {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .page-buttons {
+    display: flex;
+    gap: 8px;
+  }
+
+  .page-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--border-glass);
+    text-decoration: none;
+    transition: all 0.15s;
+    cursor: pointer;
+  }
+  .page-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--text-secondary);
+    text-decoration: none;
+  }
+  .page-btn--disabled {
+    opacity: 0.3;
+    cursor: default;
+    pointer-events: none;
+  }
+</style>

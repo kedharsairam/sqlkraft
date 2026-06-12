@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 10/21/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -69,7 +67,7 @@ sys.availability_groups
 
 Returns a row for each AG for which the local instance of
 
-SQL Server hosts an availability replica. Each row contains a
+hosts an availability replica. Each row contains a
 
 cached copy of the AG metadata.
 

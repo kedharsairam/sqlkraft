@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -51,9 +49,7 @@ with the default schema. For more info and more
 
 examples, see
 
-OPENJSON (Transact-SQL)
-
-.
+OPENJSON (Transact-SQL).
 
 name
 

@@ -29,9 +29,7 @@ For details about how Agent Mode selects and executes tools, see the
 
 Visual Studio Code
 
-documentation on Agent Mode
-
-.
+documentation on Agent Mode.
 
 Agent Mode lets GitHub Copilot perform SQL-related actions using the MSSQL extension, and
 
@@ -55,9 +53,7 @@ You don't need to reference the MSSQL extension (
 
 Mode. If the extension is active, its tools are available automatically. For more information,
 
-see
-
-.
+see.
 
 ```cmd
 #mssql_connect

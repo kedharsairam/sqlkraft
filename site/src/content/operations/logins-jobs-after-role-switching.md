@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 When deploying a high-availability or disaster-recovery solution for a SQL Server database, it is
@@ -59,13 +57,9 @@ primary/principal server instance are orphaned and cannot access the database.
 
 If a user is orphaned, create the login on the new primary/principal server instance and run
 
-sp_change_users_login
+sp_change_users_login. For more information, see
 
-. For more information, see
-
-Troubleshoot Orphaned Users (SQL Server)
-
-.
+Troubleshoot Orphaned Users (SQL Server).
 
 If an application uses SQL Server Authentication or a local Windows login, mismatched SIDs
 

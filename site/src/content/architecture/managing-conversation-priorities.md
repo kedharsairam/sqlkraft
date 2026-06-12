@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -65,9 +63,7 @@ statements. For more information, see
 
 Conversation
 
-priorities
-
-.
+priorities.
 
 ```sql
 RECEIVE

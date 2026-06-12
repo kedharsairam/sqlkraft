@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 9016 21 Yes An error occurred while processing the log for database '%.\*ls'. The log block could not be decrypted. 9017 10 No Database %ls has more than %d virtual log files which is exces
+Description 9016 21 Yes An error occurred while processing the log for database '%.\*ls'. The log block could not be decrypted.
 
 ## Severity
 

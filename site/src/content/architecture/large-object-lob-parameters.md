@@ -37,8 +37,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 Use
@@ -63,7 +61,7 @@ should be used only for small
 
 binary and character string values.
 
-SQL Server data types in the .NET Framework
+data types in the.NET Framework
 
 ```sql
 SqlBytes

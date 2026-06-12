@@ -49,17 +49,13 @@ Import CSV and TXT files into new SQL Server tables with a guided wizard.
 
 The MSSQL extension provides dialogs for creating, renaming, and dropping databases directly
 
-from the
-
-.
+from the.
 
 1. In the
 
 view, right-click a SQL Server instance node.
 
-2. Select
-
-.
+2. Select.
 
 3. In the
 

@@ -92,10 +92,10 @@ LIKE
 GO
 EXEC FindEmployee @EmpLName = 'Barb';
 GO
-FirstName      LastName            City
-----------     -------------------- ---------------
-Angela         Barbariol            Snohomish
-David          Barber               Snohomish (2 row(s) affected)
+FirstName LastName City
+---------- -------------------- ---------------
+Angela Barbariol Snohomish
+David Barber Snohomish (2 row(s) affected)
 ```
 
 ```sql

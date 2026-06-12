@@ -18,9 +18,7 @@ Output
 
 For more information, see
 
-MSSQLSERVER_9017
-
-.
+MSSQLSERVER_9017.
 
 To keep the total number of VLFs at a reasonable amount, such as a maximum of several
 
@@ -48,9 +46,7 @@ a given instance, and the required growth increments to achieve the required siz
 
 the following GitHub script to
 
-fix VLFs
-
-.
+fix VLFs.
 
 ７
 

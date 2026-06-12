@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -67,7 +65,7 @@ more of the following events occurs:
 
 A new message arrives on the queue
 
-SQL Server executes a
+executes a
 
 statement for the queue
 
@@ -77,7 +75,7 @@ statement rolls back
 
 All stored procedures started by the queue monitor exit
 
-SQL Server executes an
+executes an
 
 statement for the queue
 

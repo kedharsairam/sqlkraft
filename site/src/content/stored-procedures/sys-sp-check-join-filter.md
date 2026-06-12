@@ -21,9 +21,7 @@ syntax: |
 
 ## Description
 
-Verifies a join filter between two tables to determine if the join filter clause is valid. This stored procedure also returns information about the supplied join filter, including if it can be used with precomputed partitions for the given table. This stored procedure is executed at the Publisher on the publication. For more information, see Parameterized Filters - Optimize for Transact-SQL syntax conventions
-
-## Syntax
+Verifies a join filter between two tables to determine if the join filter clause is valid. This stored procedure also returns information about the supplied join filter, including if it can be used with precomputed partitions for the given table. This stored procedure is executed at the Publisher on the publication. For more information, see Parameterized Filters - Optimize for ## Syntax
 
 ```sql
 sp_check_join_filter

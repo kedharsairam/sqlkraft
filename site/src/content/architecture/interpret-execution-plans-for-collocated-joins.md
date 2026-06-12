@@ -24,9 +24,7 @@ predicate for a
 
 operator. Partitions 2 and 3 are accessed, and the seek operator filters
 
-on the rows that meet the condition
-
-.
+on the rows that meet the condition.
 
 Output
 

@@ -1,7 +1,7 @@
 ---
 name: "To Get Always on Availability Group Listener De"
 title: "To Get Always on Availability Group Listener De"
-description: "SQL Server diagnostic script for high-availability operations."
+description: "diagnostic script for high-availability operations."
 category: high-availability
 tags: ["availability-group", "high-availability"]
 pubDate: 2025-03-15

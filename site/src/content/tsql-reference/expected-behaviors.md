@@ -125,7 +125,7 @@ found or the search space is exhausted
 
 Not applicable
 
-SQL Server automatically selects the most
+automatically selects the most
 
 efficient execution strategy, including
 
@@ -135,15 +135,13 @@ kNN scans when appropriate
 
 For a practical example of iterative filtering, see
 
-Example C: Vector search with iterative filtering
-
-.
+Example C: Vector search with iterative filtering.
 
 When using
 
 , the ORDER BY clause has specific requirements:
 
-: Queries without an ORDER BY clause fail with error .
+: Queries without an ORDER BY clause fail with error.
 
 : The ORDER BY clause must reference only the distance
 
@@ -153,9 +151,7 @@ To sort by multiple columns, use the subquery pattern described in
 
 Multiple ORDER BY
 
-columns
-
-.
+columns.
 
 : The distance column must be ordered in ascending order (ASC).
 
@@ -231,9 +227,7 @@ function to be present.
 
 ## TRUNCATE TABLE restrictions
 
-Tables with vector indexes cannot be truncated using
-
-. To remove all data from
+Tables with vector indexes cannot be truncated using. To remove all data from
 
 a vector-indexed table:
 
@@ -621,7 +615,7 @@ ON wikipedia_articles;
 TRUNCATE
 TABLE wikipedia_articles;
 -- Step 3: Repopulate with data (at least 100 rows)
--- ... insert operations ...
+--. insert operations.
 -- Step 4: Recreate the vector index
 CREATE
 VECTOR
@@ -634,10 +628,10 @@ WITH (METRIC =
 
 ```sql
 FROM VECTOR_SEARCH(
-TABLE      = table_name,
-COLUMN     = column_name,
+TABLE = table_name,
+COLUMN = column_name,
 SIMILAR_TO = vector_value,
-METRIC     = 'metric_name'
+METRIC = 'metric_name'
 ) AS alias
 WITH (FORCE_ANN_ONLY)
 DECLARE
@@ -660,6 +654,6 @@ AS t,
 COLUMN
 = title_vector,
 SIMILAR_TO = @qembedding,
-METRIC     =
+METRIC =
 'cosine'
 ```

@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -94,10 +92,8 @@ GO
 <Name>
 HL Touring Frame
 </Name>
-<MI:Location
-...LocationID
+<MI:Location.LocationID
 =
-"10"
-...
+"10".
 ></MI:Location>
 ```

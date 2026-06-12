@@ -21,11 +21,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Profiler Templates
+Profiler Templates
 
 06/06/2025
-
-Applies to:
 
 SQL Server
 
@@ -39,7 +37,7 @@ records the data for each event class you selected. You can use a template on ma
 
 template isn't itself executed.
 
-SQL Server Profiler offers predefined trace templates that allow you to easily configure the
+Profiler offers predefined trace templates that allow you to easily configure the
 
 event classes that you'll most likely need for specific traces. The Standard template, for
 
@@ -57,7 +55,7 @@ template can be useful when a planned trace doesn't resemble the configurations 
 
 predefined templates.
 
-SQL Server Profiler can trace a variety of server types. For example you can trace Analysis
+Profiler can trace a variety of server types. For example you can trace Analysis
 
 Services and SQL Server. However, the event classes that can be included aren't the same for
 

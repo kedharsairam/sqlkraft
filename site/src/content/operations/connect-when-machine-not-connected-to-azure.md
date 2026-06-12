@@ -21,17 +21,13 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article explains how to connect your SQL Server instance to Azure Arc. Before you proceed,
 
 complete the
 
-Prerequisites - SQL Server enabled by Azure Arc
-
-.
+Prerequisites - SQL Server enabled by Azure Arc.
 
 If the server that runs your SQL Server instance isn't yet connected to Azure, you can initiate
 
@@ -49,7 +45,7 @@ in the Azure portal.
 
 , select
 
-SQL Server instances
+instances
 
 and then select
 
@@ -67,11 +63,9 @@ connected to Azure Arc has SQL Server installed. All the SQL Server instance res
 
 automatically created in Azure, providing a centralized management platform for all your
 
-SQL Server instances.
+instances.
 
-To automatically connect your SQL Server instances, see
-
-.
+To automatically connect your SQL Server instances, see.
 
 Use the method in this article, if your server is already connected to Azure, but Azure
 
@@ -87,9 +81,7 @@ resource if the extension is deployed using this method.
 
 Note
 
-If your server is already connected to Azure, proceed to
-
-.
+If your server is already connected to Azure, proceed to.
 
 ```cmd
 ArcSQLServerExtensionDeployment = Disabled

@@ -2,7 +2,7 @@
 name: "sys.sp_foreignkeys"
 title: "sp_foreignkeys"
 category: "general"
-description: "Returns the foreign keys that reference primary keys on the table in the linked server. Transact-SQL syntax conventions The name of the linked server for which to return table information."
+description: "Returns the foreign keys that reference primary keys on the table in the linked server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -39,7 +39,7 @@ syntax: |
 
 ## Description
 
-Returns the foreign keys that reference primary keys on the table in the linked server. Transact-SQL syntax conventions The name of the linked server for which to return table information. The name of the table with a primary key. The name of the schema with a primary key. . In SQL Server, this parameter contains the owner name.
+Returns the foreign keys that reference primary keys on the table in the linked server.
 
 ## Syntax
 

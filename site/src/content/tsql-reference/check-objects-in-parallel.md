@@ -53,23 +53,17 @@ configured in the same manner as that of parallel queries. To restrict the maxim
 
 processors available for DBCC checking, use
 
-sp_configure
-
-. For more information, see
+sp_configure. For more information, see
 
 Configure
 
-the max degree of parallelism Server Configuration Option
-
-.
+the max degree of parallelism Server Configuration Option.
 
 Parallel checking can be disabled by using Trace Flag 2528. For more information, see
 
 Trace
 
-Flags (Transact-SQL)
-
-.
+Flags (Transact-SQL).
 
 ７
 
@@ -81,9 +75,7 @@ is run against
 
 , it must acquire a shared table lock. This is
 
-because, for performance reasons, database snapshots are not available on
-
-. This
+because, for performance reasons, database snapshots are not available on. This
 
 means that the required transactional consistency cannot be obtained.
 

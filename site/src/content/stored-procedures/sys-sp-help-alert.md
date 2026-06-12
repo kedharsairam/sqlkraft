@@ -2,7 +2,7 @@
 name: "sys.sp_help_alert"
 title: "sp_help_alert"
 category: "general"
-description: "Reports information about the alerts defined for the server. Transact-SQL syntax conventions information about all alerts is returned. The sorting order to use for producing the results. The identification number of the alert to report information about."
+description: "Reports information about the alerts defined for the server. information about all alerts is returned. The sorting order to use for producing the results. The identification number of the alert to report information about."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -26,7 +26,7 @@ syntax: |
 
 ## Description
 
-Reports information about the alerts defined for the server. Transact-SQL syntax conventions information about all alerts is returned. The sorting order to use for producing the results. The identification number of the alert to report information about.
+Reports information about the alerts defined for the server. information about all alerts is returned. The sorting order to use for producing the results. The identification number of the alert to report information about.
 
 ## Syntax
 

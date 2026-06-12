@@ -35,19 +35,15 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
-In the .NET common language runtime (CLR), the
+In the.NET common language runtime (CLR), the
 
 object represents a single row
 
 of data, along with its related metadata.
 
-Managed stored procedures might send to the client result sets that aren't from a
-
-. The
+Managed stored procedures might send to the client result sets that aren't from a. The
 
 class, along with
 
@@ -63,9 +59,7 @@ result sets to the client.
 
 For more information, see
 
-Microsoft.SqlServer.Server.SqlDataRecord
-
-.
+Microsoft.SqlServer.Server.SqlDataRecord.
 
 The following example creates a new employee record and returns it to the caller.
 
@@ -84,7 +78,7 @@ public static void CreateNewRecordProc()
 {
 // Variables.
 SqlDataRecord record;
-// Create a new record with the column metadata.  The constructor
+// Create a new record with the column metadata. The constructor
 // is able to accept a variable number of parameters.
 record = new SqlDataRecord(new SqlMetaData("EmployeeID", SqlDbType.Int),
 new SqlMetaData("Surname", SqlDbType.NVarChar,

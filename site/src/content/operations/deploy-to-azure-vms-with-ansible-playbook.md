@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 Quickstart: Deploy SQL Server on Linux
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -51,9 +49,7 @@ An Azure subscription. If you don't have an Azure subscription, you can create a
 
 free
 
-account
-
-.
+account.
 
 Create a new
 
@@ -69,33 +65,25 @@ Create an Azure VM
 
 machine (VM) becomes the
 
-controller node
-
-.
+controller node.
 
 Create an Azure VM
 
 , running RHEL, to serve as the first
 
-managed node
-
-.
+managed node.
 
 Create an Azure VM
 
 , running Ubuntu Server, to serve as the second
 
-managed node
-
-.
+managed node.
 
 The first VM, where you configure Ansible Core, is the controller node. On this node, you install
 
 the SQL Server
 
-system role
-
-.
+system role.
 
 The remaining VMs are the target machines, also known as
 

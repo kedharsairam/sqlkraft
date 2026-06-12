@@ -11,9 +11,7 @@ pubDate: 2026-05-29
 
 For more information about DDL triggers, see
 
-DDL triggers
-
-.
+DDL triggers.
 
 DDL triggers don't fire in response to events that affect local or global temporary tables and
 
@@ -35,9 +33,7 @@ about DDL triggers. Use the catalog views instead. For more information, see
 
 Get Information
 
-About DDL Triggers
-
-.
+About DDL Triggers.
 
 Logon triggers carry out stored procedures in response to a
 
@@ -55,9 +51,7 @@ statement, are diverted to the SQL Server error log.
 
 For more information, see
 
-Logon triggers
-
-.
+Logon triggers.
 
 Logon triggers don't fire if authentication fails.
 
@@ -79,9 +73,7 @@ administrator connection, or by starting the Database Engine in minimal configur
 
 ). For more information, see
 
-Database Engine Service startup options
-
-.
+Database Engine Service startup options.
 
 stored procedures fire a DDL trigger that's created on a
 

@@ -18,8 +18,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 From a specified input, the constructor functions create instances of any of the XSD built-in or

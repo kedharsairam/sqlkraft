@@ -10,7 +10,7 @@ syntax: "msdb.dbo.syspolicy_system_health_state"
 
 ## Description
 
-Deletes the policy health states in Policy-Based Management. Policy health states are visual indicators within Object Explorer (a scroll symbol with a red "X") that help you to determine which nodes have failed a policy evaluation. Transact-SQL syntax conventions Represents the node in Object Explorer where you want to clear the health state. @target_tree_root_with_id , with a default of You can specify values from the target_query_expression_with_id column of the in the context of the system database.
+Deletes the policy health states in Policy-Based Management. Policy health states are visual indicators within Object Explorer (a scroll symbol with a red "X") that help you to determine which nodes have failed a policy evaluation. Represents the node in Object Explorer where you want to clear the health state. @target_tree_root_with_id , with a default of You can specify values from the target_query_expression_with_id column of the in the context of the system database.
 
 ## Syntax
 
@@ -18,15 +18,11 @@ Deletes the policy health states in Policy-Based Management. Policy health state
 
 ## Remarks
 
-Applies to:
-
 Deletes the policy health states in Policy-Based Management. Policy health states are visual
 
 indicators within Object Explorer (a scroll symbol with a red "X") that help you to determine
 
 which nodes have failed a policy evaluation.
-
-Transact-SQL syntax conventions
 
 Represents the node in Object Explorer where you want to clear the health state.
 

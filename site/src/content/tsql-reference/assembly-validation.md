@@ -17,7 +17,7 @@ permission set than the root-level assembly, they must be uploaded explicitly be
 
 level assembly with the appropriate permission set.
 
-SQL Server scans the assembly binaries uploaded by the
+scans the assembly binaries uploaded by the
 
 statement to
 
@@ -51,9 +51,7 @@ SQL Server:
 
 ,
 
-, and
-
-. Other system assemblies can be referenced, but they must be
+, and. Other system assemblies can be referenced, but they must be
 
 explicitly registered in the database.
 
@@ -79,9 +77,7 @@ attributes. For more information, see
 
 CLR integration: custom attributes for CLR
 
-routines
-
-.
+routines.
 
 Besides the previous checks that are performed when
 
@@ -89,7 +85,7 @@ executes, there are
 
 extra checks that are performed at execution time of the code in the assembly:
 
-Calling certain .NET Framework APIs that require a specific Code Access Permission might
+Calling certain.NET Framework APIs that require a specific Code Access Permission might
 
 fail if the permission set of the assembly doesn't include that permission.
 
@@ -97,7 +93,7 @@ For
 
 and
 
-assemblies, any attempt to call .NET Framework APIs that
+assemblies, any attempt to call.NET Framework APIs that
 
 are annotated with certain HostProtectionAttributes fails.
 

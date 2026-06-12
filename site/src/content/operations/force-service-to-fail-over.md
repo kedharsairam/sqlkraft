@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 In high-performance mode and high-safety mode without automatic failover, if the principal
@@ -81,6 +79,4 @@ to restore service to the database immediately. If forcing service risks losing 
 
 data, we recommend that you stop mirroring and manually resynchronize the databases.
 
-For more information about the risks of forcing service, see
-
-.
+For more information about the risks of forcing service, see.

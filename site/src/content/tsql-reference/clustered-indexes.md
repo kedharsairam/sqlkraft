@@ -25,9 +25,7 @@ for the scan and sort operations associated with creating the index, in the same
 
 queries do. For more information, see
 
-Configure parallel index operations
-
-.
+Configure parallel index operations.
 
 The
 

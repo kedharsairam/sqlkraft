@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 To preserve your log shipping disaster recovery solution, upgrade, or apply servicing updates in
@@ -101,9 +99,7 @@ is used for the transaction
 
 log backup files. You can specify the backup compression behavior of log backups for
 
-each log shipping configuration. For more information, see
-
-.
+each log shipping configuration. For more information, see.
 
 ﾉ
 

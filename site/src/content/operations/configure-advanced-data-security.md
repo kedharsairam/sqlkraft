@@ -29,8 +29,6 @@ Article
 
 04/25/2025
 
-Applies to:
-
 SQL Server
 
 You can configure your instance of SQL Server enabled by Azure Arc with Microsoft Defender
@@ -41,9 +39,7 @@ Your Windows-based SQL Server instance is connected to Azure. Follow the instruc
 
 to
 
-Connect your SQL Server to Azure Arc
-
-.
+Connect your SQL Server to Azure Arc.
 
 Your user account is assigned one of the
 

@@ -31,23 +31,17 @@ a comparison operator, a logical operator, the string concatenation operator (
 
 operator. For more information about operators, see
 
-Operators
-
-.
+Operators.
 
 Any Transact-SQL ranking function. For more information, see
 
-Ranking Functions
-
-.
+Ranking Functions.
 
 Any Transact-SQL aggregate function with the OVER clause. For more information, see
 
 SELECT -
 
-OVER clause
-
-.
+OVER clause.
 
 For a simple expression made up of a single constant, variable, scalar function, or column
 
@@ -61,15 +55,11 @@ data type is Boolean and the value is either:
 
 ,
 
-, or
-
-. For more information
+, or. For more information
 
 about Boolean data types, see
 
-Comparison Operators
-
-.
+Comparison Operators.
 
 ```sql
 +

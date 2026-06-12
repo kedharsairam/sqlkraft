@@ -1,7 +1,7 @@
 ---
 name: "To check Who is Connected through DAC"
 title: "To check Who is Connected through DAC"
-description: "SQL Server diagnostic script for security-audit operations."
+description: "diagnostic script for security-audit operations."
 category: security-audit
 tags: ["health-check", "security-audit"]
 pubDate: 2025-03-15

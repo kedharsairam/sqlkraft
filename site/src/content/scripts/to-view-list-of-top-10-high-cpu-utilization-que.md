@@ -1,7 +1,7 @@
 ---
 name: "To View List of Top 10 High CPU Utilization Que"
 title: "To View List of Top 10 High CPU Utilization Que"
-description: "SQL Server diagnostic script for architecture operations."
+description: "diagnostic script for architecture operations."
 category: architecture
 tags: ["architecture", "cpu"]
 pubDate: 2025-03-15

@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 8063 16 No The incoming tabular data stream (TDS) remote procedure call stream is sending an unlimited length CLR type. Parameter %d ("%.*ls") is defined as type %.*ls. This type is not su
+Description 8063 16 No The incoming tabular data stream (TDS) remote procedure call stream is sending an unlimited length CLR type. Parameter %d ("%.*ls") is defined as type %.*ls.
 
 ## Severity
 

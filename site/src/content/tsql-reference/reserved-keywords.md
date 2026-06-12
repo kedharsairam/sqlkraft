@@ -19,9 +19,7 @@ operator, but returns
 
 unexpected results. Learn more in
 
-example E
-
-.
+example E.
 
 Variable assignment isn't allowed in a statement
 
@@ -31,9 +29,7 @@ operator. Error 10734
 
 is returned. Find a suggested rewrite in
 
-example E
-
-.
+example E.
 
 Low
 
@@ -69,9 +65,7 @@ converting to the ODBC data types
 
 , SQLDATE,
 
-, and
-
-.
+, and.
 
 Low
 
@@ -99,9 +93,7 @@ input parameter to the
 
 function are trimmed when the
 
-parameter is of type
-
-. For
+parameter is of type. For
 
 example, in the statement
 
@@ -109,9 +101,7 @@ example, in the statement
 
 is
 
-incorrectly evaluated as
-
-.
+incorrectly evaluated as.
 
 Trailing spaces are always preserved. For
 
@@ -125,9 +115,7 @@ specifying the first input parameter for the
 
 function. For example, the following syntax will
 
-reproduce the SQL Server 2005 behavior:
-
-.
+reproduce the SQL Server 2005 behavior:.
 
 Low
 

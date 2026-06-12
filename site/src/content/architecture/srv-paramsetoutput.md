@@ -35,8 +35,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Sets the value of a return parameter. This function supersedes the

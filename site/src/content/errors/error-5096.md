@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 5096 16 No The recovery model cannot be changed to SIMPLE when any files are subject to a RESTORE PAGE operation. Complete the restore sequence involving file "%ls" before attempting to tr
+Description 5096 16 No The recovery model cannot be changed to SIMPLE when any files are subject to a RESTORE PAGE operation.
 
 ## Severity
 

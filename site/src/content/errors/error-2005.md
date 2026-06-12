@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 'publication_compatibility_level' of less than "90RTM" (SQL Server 2005). Specify a 'publication_compatibility_level' greater than or equal to "90RTM" by using sp_addmergepublication or sp
+Description 'publication_compatibility_level' of less than "90RTM" (SQL Server 2005).
 
 ## Severity
 

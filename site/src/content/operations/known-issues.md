@@ -15,7 +15,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server on Linux: Known issues
+on Linux: Known issues
 
 The following sections describe known issues with SQL Server on Linux.
 
@@ -51,11 +51,9 @@ machines
 
 or
 
-Linux containers
+Linux containers.
 
-.
-
-SQL Server Configuration Manager can't connect to SQL Server on
+Configuration Manager can't connect to SQL Server on
 
 Linux.
 
@@ -81,7 +79,7 @@ SHA256. The SQL Server
 
 Database Engine doesn't
 
-validate the signed .dll
+validate the signed.dll
 
 correctly.
 
@@ -101,9 +99,7 @@ continue using the new
 
 password.
 
-Applies to:
-
-SQL Server 2022
+2022
 
 (16.x) container images only.
 

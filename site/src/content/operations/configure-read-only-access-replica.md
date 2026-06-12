@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 By default both read-write and read-intent access are allowed to the primary replica and no
@@ -53,9 +51,7 @@ and
 
 Active Secondaries: Readable Secondary Replicas (Always
 
-On Availability Groups)
-
-.
+On Availability Groups).
 
 To configure different connection access, you must be connected to the server instance
 

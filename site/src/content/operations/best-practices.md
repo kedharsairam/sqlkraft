@@ -29,8 +29,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -47,9 +45,7 @@ acquaint yourself with common questions and issues:
 
 Frequently Asked Questions for
 
-Replication Administrators
-
-.
+Replication Administrators.
 
 It is useful to divide the best practice guidance into two areas:
 

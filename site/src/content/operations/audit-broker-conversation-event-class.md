@@ -35,15 +35,13 @@ Article
 
 03/31/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
 
 Azure SQL Managed Instance
 
-SQL Server creates an
+creates an
 
 event to report audit messages related to
 
@@ -119,9 +117,7 @@ No
 
 The type of event class captured. Always
 
-for
-
-.
+for.
 
 27
 

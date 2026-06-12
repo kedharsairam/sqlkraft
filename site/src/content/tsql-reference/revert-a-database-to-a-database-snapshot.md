@@ -21,7 +21,7 @@ recently has not been backed up.
 
 Overwriting existing files.
 
-For example, a mistake could allow overwriting files of the wrong type, such as .xls files, or
+For example, a mistake could allow overwriting files of the wrong type, such as.xls files, or
 
 that are being used by another database that is not online. Arbitrary data loss is possible
 

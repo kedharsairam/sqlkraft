@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 6327 16 No The specified xml schema collection ID is not valid: %d 6328 16 No Specified collection '%.\*ls' cannot be dropped because it is used by %S_MSG '%ls'. 6329 16 No Unsupported usag
+Description 6327 16 No The specified xml schema collection ID is not valid: %d 6328 16 No Specified collection '%.\*ls' cannot be dropped because it is used by %S_MSG '%ls'.
 
 ## Severity
 

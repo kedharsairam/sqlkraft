@@ -2,7 +2,7 @@
 name: "sys.sp_refresh_parameter_encryption"
 title: "sp_refresh_parameter_encryption"
 category: "general"
-description: "SQL Server 2016 (13.x) and later Updates the Always Encrypted metadata for the parameters of the specified non-schema- bound stored procedure, user-defined function, view, DML trigger, database-level DDL trigger, or server-level DDL trigger in the current database. Transact-SQL syntax conventions The name of the stored procedure, user-defined function, view, DML trigger, database-level DDL trigger"
+description: "2016 (13.x) and later Updates the Always Encrypted metadata for the parameters of the specified non-schema- bound stored procedure, user-defined function, view, DML trigger, database-level DDL trigger, or server-level DDL trigger in the current database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -30,7 +30,7 @@ syntax: |
 
 ## Description
 
-SQL Server 2016 (13.x) and later Updates the Always Encrypted metadata for the parameters of the specified non-schema- bound stored procedure, user-defined function, view, DML trigger, database-level DDL trigger, or server-level DDL trigger in the current database. Transact-SQL syntax conventions The name of the stored procedure, user-defined function, view, DML trigger, database-level DDL trigger, or server-level DDL trigger.
+2016 (13.x) and later Updates the Always Encrypted metadata for the parameters of the specified non-schema- bound stored procedure, user-defined function, view, DML trigger, database-level DDL trigger, or server-level DDL trigger in the current database.
 
 ## Syntax
 
@@ -59,7 +59,7 @@ TRIGGER
 
 ## Permissions
 
-The encryption metadata for parameters of a module can become outdated, if: Encryption properties of a column in a table the module references, have been updated. For example, a column was dropped and a new column is added with the same name, but a different encryption type, encryption key, or an encryption algorithm. The module references another module with outdated parameter encryption metadata. When encryption properties of a table are modified, should be run for any modules directly or indirectly referencing the table. This stored procedure can be called on those modules in any order, without requiring the user to first refresh the inner module before moving to its callers. doesn't affect any permissions, extended properties, or options that are associated with the object. To refresh a server-level DDL trigger, execute this stored procedure from the context of any database. Requires permission on the module and permission on any CLR user-defined types and XML schema collections that are referenced by the object. When the specified module is a database-level DDL trigger, requires permission in the current database. When the specified module is a server-level DDL trigger, requires permission. For modules that are defined with the clause, permission is required on the specified principal. Generally, refreshing an object doesn't change its principal, unless the module was defined with and the user name of the principal now resolves to a different user than it did at the time the module was created. ７ Note Any signatures that are associated with the object are dropped when you run .
+The encryption metadata for parameters of a module can become outdated, if: Encryption properties of a column in a table the module references, have been updated. For example, a column was dropped and a new column is added with the same name, but a different encryption type, encryption key, or an encryption algorithm. The module references another module with outdated parameter encryption metadata. When encryption properties of a table are modified, should be run for any modules directly or indirectly referencing the table. This stored procedure can be called on those modules in any order, without requiring the user to first refresh the inner module before moving to its callers. doesn't affect any permissions, extended properties, or options that are associated with the object. To refresh a server-level DDL trigger, execute this stored procedure from the context of any database. Requires permission on the module and permission on any CLR user-defined types and XML schema collections that are referenced by the object. When the specified module is a database-level DDL trigger, requires permission in the current database. When the specified module is a server-level DDL trigger, requires permission. For modules that are defined with the clause, permission is required on the specified principal. Generally, refreshing an object doesn't change its principal, unless the module was defined with and the user name of the principal now resolves to a different user than it did at the time the module was created. ７ Note Any signatures that are associated with the object are dropped when you run.
 
 ## Examples
 
@@ -209,7 +209,7 @@ ADD
 [SSN]
 CHAR (11)
 COLLATE
-Latin1_General_BIN2  ENCRYPTED
+Latin1_General_BIN2 ENCRYPTED
 WITH (
 COLUMN_ENCRYPTION_KEY = [CEK1],
 ENCRYPTION_TYPE =

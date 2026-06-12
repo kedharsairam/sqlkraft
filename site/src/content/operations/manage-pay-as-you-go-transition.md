@@ -49,9 +49,7 @@ If you license virtual cores or physical cores without using VMs, make sure that
 
 extensions for SQL Server are configured with
 
-set to
-
-. See
+set to. See
 
 License SQL
 
@@ -73,7 +71,7 @@ set to
 
 , activated and all SQL Servers instances
 
-SQL Server subscription
+subscription
 
 ```cmd
 licenseType

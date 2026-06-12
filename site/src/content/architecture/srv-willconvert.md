@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Determines whether a specific data type conversion is available within the ODS Library.

@@ -16,9 +16,7 @@ options are specified in megabytes. For
 
 more information including recommendations on how to set these memory configurations, see
 
-Server memory configuration options
-
-.
+Server memory configuration options.
 
 The following list describes the approximate amount of memory used by different objects in
 
@@ -62,9 +60,7 @@ minimum memory grant. All queries must wait until the minimum memory requested c
 
 secured, before execution can start, or until the value specified in the query wait server
 
-configuration option is exceeded. The wait type that is accumulated in this scenario is
-
-.
+configuration option is exceeded. The wait type that is accumulated in this scenario is.
 
 ）
 
@@ -82,9 +78,7 @@ Decreased concurrency by increasing the amount of memory for every single query,
 
 even if the required memory at runtime is lower that this configuration.
 
-For recommendations on using this configuration, see
-
-.
+For recommendations on using this configuration, see.
 
 ```sql
 min server memory (MB)

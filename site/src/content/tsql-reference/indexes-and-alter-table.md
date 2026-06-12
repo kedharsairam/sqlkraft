@@ -15,9 +15,7 @@ fails and the Database Engine raises an error message. For more information abou
 
 schema binding and indexed views, see
 
-CREATE VIEW (Transact-SQL)
-
-.
+CREATE VIEW (Transact-SQL).
 
 Adding or removing triggers on base tables isn't affected by creating a schema-bound view that
 
@@ -27,17 +25,13 @@ Indexes created as part of a constraint are dropped when the constraint is dropp
 
 indexes that you created by using
 
-, use
-
-. Use the
+, use. Use the
 
 statement
 
 to rebuild an index that's part of a constraint definition. You don't need to drop and add the
 
-constraint again by using
-
-.
+constraint again by using.
 
 You must remove all indexes and constraints that are based on a column before you can remove
 
@@ -79,9 +73,7 @@ has the following restrictions:
 
 isn't valid for clustered indexes that are also disabled. You must drop disabled
 
-indexes by using
-
-.
+indexes by using.
 
 You can only drop one index at a time.
 

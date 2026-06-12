@@ -22,7 +22,7 @@ statement, or the
 
 function, or you
 
-use one of the Bulk Insert API commands such as .NET
+use one of the Bulk Insert API commands such as.NET
 
 , OLEDB Fast Load APIs,
 
@@ -34,9 +34,7 @@ hint is specified or the
 
 table option is set using
 
-sp_tableoption
-
-.
+sp_tableoption.
 
 Key-range locks protect a range of rows implicitly included in a record set being read by a
 
@@ -214,12 +212,6 @@ Illegal
 
 Conflict
 
-No lock
-
-Schema stability lock
-
-Schema modification lock
-
 Shared
 
 Update
@@ -260,8 +252,6 @@ Exclusive range-exclusive
 
 ﾉ
 
-Expand table
-
 ### 'AAA'
 
 ### 'CZZ'
@@ -287,7 +277,7 @@ BULK INSERT
 `TABLOCK`
 
 ```sql
-table lock on bulk load
+
 ```
 
 `SERIALIZABLE`
@@ -311,7 +301,7 @@ U
 `BU`
 
 ```sql
-INSERT INTO...SELECT
+INSERT INTO.SELECT
 ```
 
 `TABLOCK`

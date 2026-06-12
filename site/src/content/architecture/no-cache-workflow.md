@@ -1,7 +1,7 @@
 ---
 title: "No cache workflow"
 topic: "query-processing"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
@@ -11,8 +11,6 @@ Article
 •
 
 05/19/2025
-
-Applies to:
 
 SQL Server
 

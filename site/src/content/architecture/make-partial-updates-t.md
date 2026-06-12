@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 An application uses FSCTL_SQL_FILESTREAM_FETCH_OLD_CONTENT to make partial updates to
@@ -77,9 +75,7 @@ Note
 
 This example requires the FILESTREAM-enabled database and table that are created in
 
-and
-
-.
+and.
 
 ```sql
 FSCTL_SQL_FILESTREAM_FETCH_OLD_CONTENT

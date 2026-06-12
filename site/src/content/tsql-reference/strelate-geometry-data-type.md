@@ -8,8 +8,7 @@ pubDate: 2026-05-29
 ---
 ## Syntax
 
-```sql
-.STRelate ( other_geometry, intersection_pattern )
+```sql.STRelate ( other_geometry, intersection_pattern )
 ```
 
 ## Return Type

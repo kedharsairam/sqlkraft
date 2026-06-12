@@ -38,7 +38,7 @@ The following walkthrough demonstrates the tools and techniques described in
 
 Diagnosing
 
-SQL Server Latch Contention
+Latch Contention
 
 and
 
@@ -58,6 +58,4 @@ core system with 256 GB of memory.
 
 Tip
 
-For more techniques, see the blog post
-
-.
+For more techniques, see the blog post.

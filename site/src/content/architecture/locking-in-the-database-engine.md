@@ -10,9 +10,7 @@ For more information about the specific types of locking or row versioning contr
 
 transaction isolation level, see
 
-SET TRANSACTION ISOLATION LEVEL (Transact-SQL)
-
-.
+SET TRANSACTION ISOLATION LEVEL (Transact-SQL).
 
 Transaction isolation levels can be set using Transact-SQL or through a database API.
 
@@ -30,9 +28,7 @@ object to
 
 ,
 
-, or
-
-.
+, or.
 
 ADO.NET applications using the
 
@@ -58,9 +54,7 @@ option to
 
 ,
 
-or
-
-.
+or.
 
 When starting a transaction, applications using OLE DB call
 
@@ -74,9 +68,7 @@ set to
 
 ,
 
-, or
-
-.
+, or.
 
 When specifying the transaction isolation level in autocommit mode, OLE DB applications can set
 
@@ -100,9 +92,7 @@ to
 
 ,
 
-, or
-
-.
+, or.
 
 ODBC applications call
 
@@ -118,9 +108,7 @@ set to
 
 ,
 
-, or
-
-.
+, or.
 
 For snapshot transactions, applications call
 
@@ -128,15 +116,11 @@ with Attribute set to
 
 and
 
-set to
-
-. A snapshot transaction can
+set to. A snapshot transaction can
 
 be retrieved using either
 
-or
-
-.
+or.
 
 ```sql
 SET TRANSACTION ISOLATION LEVEL

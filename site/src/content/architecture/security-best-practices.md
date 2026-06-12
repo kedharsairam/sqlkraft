@@ -29,15 +29,13 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
 Contained databases have some unique threats that should be understood and mitigated by
 
-SQL Server Database Engine administrators. Most of the threats are related to the
+Database Engine administrators. Most of the threats are related to the
 
 authentication process, which moves the authentication boundary from the
 

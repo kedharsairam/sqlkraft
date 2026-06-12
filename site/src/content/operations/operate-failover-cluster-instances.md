@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -31,9 +29,7 @@ haven't created a SQL Server FCI on Linux, see
 
 Configure failover cluster instance - SQL Server
 
-on Linux (RHEL)
-
-.
+on Linux (RHEL).
 
 Failover for FCIs is similar to a Windows Server failover cluster (WSFC). If the cluster node
 

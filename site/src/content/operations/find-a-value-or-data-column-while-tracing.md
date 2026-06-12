@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -35,9 +33,7 @@ while the trace is running by using SQL Server Profiler.
 
 2. On the
 
-menu, select
-
-.
+menu, select.
 
 3. In the
 
@@ -47,16 +43,12 @@ text box and optionally
 
 specify a data column.
 
-4. To find the next occurrence of a value, select
+4. To find the next occurrence of a value, select.
 
-.
-
-5. To find the previous occurrence of a value, select
-
-.
+5. To find the previous occurrence of a value, select.
 
 The search starts at the row you selected in Step 1.
 
-SQL Server Profiler
+Profiler
 
-SQL Server Profiler templates and permissions
+Profiler templates and permissions

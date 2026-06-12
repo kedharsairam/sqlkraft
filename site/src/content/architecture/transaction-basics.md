@@ -1,12 +1,10 @@
 ---
 title: "Transaction basics"
 topic: "io-fundamentals"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -42,9 +40,7 @@ lock memory, and the number of locks required for concurrent writes. This articl
 
 to describe the Database Engine behavior with and without optimized locking.
 
-For more information and to learn where optimized locking is available, see
-
-.
+For more information and to learn where optimized locking is available, see.
 
 To determine if optimized locking is enabled on your database, see
 
@@ -100,9 +96,7 @@ log record is persisted to disk. For more information on delayed transaction dur
 
 article
 
-Control Transaction Durability
-
-.
+Control Transaction Durability.
 
 Applications are responsible for starting and ending transactions at points that enforce the
 
@@ -118,8 +112,6 @@ the Database Engine implements a B+ tree. This does not apply to columnstore ind
 
 indexes on memory-optimized tables. For more information, see the
 
-SQL Server and Azure
+and Azure
 
-SQL index architecture and design guide
-
-.
+SQL index architecture and design guide.

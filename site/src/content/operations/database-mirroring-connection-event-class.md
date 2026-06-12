@@ -35,13 +35,11 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
 
-SQL Server generates a
+generates a
 
 event to report the status of a
 

@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/04/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -39,9 +37,7 @@ during the schema upgrade. For information about backing up DQS databases, see
 
 Backing Up
 
-and Restoring DQS Databases
-
-.
+and Restoring DQS Databases.
 
 You can connect to SQL Server Data Quality Server by using the current or an earlier version of
 
@@ -59,9 +55,7 @@ of the MDS add-in for Excel no longer works. You can download the SQL Server ver
 
 add-in for Excel from
 
-Master Data Services Installation and Configuration
-
-.
+Master Data Services Installation and Configuration.
 
 You must be logged on as a member of the Administrators group on the Data Quality Server
 

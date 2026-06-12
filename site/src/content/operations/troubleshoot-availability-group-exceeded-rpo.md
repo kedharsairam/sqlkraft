@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 After you perform a forced manual failover on an availability group to an asynchronous-

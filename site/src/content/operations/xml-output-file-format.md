@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 The
@@ -51,9 +49,7 @@ element with header information.
 
 An
 
-element for each issue that is reported by
-
-.
+element for each issue that is reported by.
 
 DiagnosticInformation element (ssbdiagnose)
 
@@ -62,8 +58,6 @@ Banner element (ssbdiagnose)
 Issue element (ssbdiagnose)
 
 ssbdiagnose Utility (Service Broker)
-
-Last updated on 12/17/2025
 
 ```cmd
 -XML

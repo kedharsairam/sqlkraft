@@ -15,8 +15,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 The migration dashboard is a convenient view that shows all instances of SQL Server enabled
@@ -53,9 +51,7 @@ On the left pane, expand
 
 and go to
 
-SQL servers
-
-.
+SQL servers.
 
 Select the
 

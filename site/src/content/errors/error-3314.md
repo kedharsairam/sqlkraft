@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-This error can be caused by a transient condition that existed on the system during an attempt to recover a database. This error can also be a result a permanent failure that occurs every time that yo
+This error can be caused by a transient condition that existed on the system during an attempt to recover a database.
 
 ## Severity
 

@@ -27,8 +27,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -57,9 +55,7 @@ one point with the coordinates (2, 3), one point with the coordinates (7, 8), an
 
 The following example expresses the
 
-instance using
-
-.
+instance using.
 
 The following example uses the method
 

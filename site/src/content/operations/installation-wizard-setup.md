@@ -21,15 +21,13 @@ pubDate: 2025-12-01
 
 06/03/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
 
 The SQL Server Installation Wizard provides a single feature tree for an in-place upgrade of
 
-SQL Server components to the latest version of SQL Server.
+components to the latest version of SQL Server.
 
 For many production and some development environments, a new installation upgrade or a
 
@@ -49,9 +47,7 @@ Upgrade and migrate Reporting Services
 
 Upgrade Analysis Services
 
-Upgrade Power Pivot for SharePoint
-
-.
+Upgrade Power Pivot for SharePoint.
 
 You must run Setup as an administrator. If you install SQL Server from a remote share, you
 
@@ -77,6 +73,4 @@ You can't change the features to be upgraded, and you can't add features during 
 
 upgrade operation. For more information about how to add features to an upgraded
 
-instance of SQL Server after the upgrade operation is complete, see
-
-.
+instance of SQL Server after the upgrade operation is complete, see.

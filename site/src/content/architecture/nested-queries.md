@@ -37,8 +37,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -73,9 +71,7 @@ type methods. For example, you can retrieve the
 
 attribute value by using the
 
-value() method
-
-.
+value() method.
 
 In the following example, the
 

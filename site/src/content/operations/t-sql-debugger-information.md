@@ -20,8 +20,6 @@ pubDate: 2025-12-01
 
 09/09/2025
 
-Applies to:
-
 SQL Server
 
 Every time that the debugger pauses execution on a specific Transact-SQL statement, you can
@@ -70,9 +68,7 @@ expressions in up to five tabs or windows:
 
 ,
 
-, and
-
-.
+, and.
 
 The
 

@@ -39,8 +39,6 @@ Article
 
 04/04/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -69,7 +67,7 @@ SETUP
 
 Component
 
-SQL Server Native Client
+Native Client
 
 Symbolic Name
 

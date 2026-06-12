@@ -83,27 +83,3 @@ time and shared by multiple users, slowing down performance and taxing resources
 Pages and extents architecture guide
 
 Write pages in the Database Engine
-
-Related content
-
-`SELECT`
-
-```sql
-ORDER BY
-```
-
-`UserA`
-
-`UserB`
-
-`UserC`
-
-`UserA`
-
-`UserB`
-
-`UserC`
-
-`UserB`
-
-`UserC`

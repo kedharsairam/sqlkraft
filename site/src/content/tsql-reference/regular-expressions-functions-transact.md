@@ -2,7 +2,7 @@
 name: "Regular expressions functions (Transact-"
 title: "Regular expressions functions (Transact-"
 category: "statements"
-description: "SQL Server 2025 (17.x)"
+description: "2025 (17.x)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -17,9 +17,7 @@ pubDate: 2026-05-29
 
 SQL)
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 Azure SQL Database
 
@@ -31,7 +29,7 @@ SQL database in Microsoft Fabric
 
 Use the functions described in this article to match complex patterns and manipulate data in
 
-SQL Server with regular expressions.
+with regular expressions.
 
 ## Description
 
@@ -85,12 +83,6 @@ Regular expressions are available in Azure SQL Managed Instance with the
 
 SQL Server
 
-or
-
-.
+or.
 
 Expand table
-
-Related content
-
-Last updated on 11/18/2025

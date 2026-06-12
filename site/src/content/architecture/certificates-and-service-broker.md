@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -47,7 +45,7 @@ that the principal has permission to connect to the database that hosts the dest
 
 and permission to send a message to the destination service.
 
-SQL Server uses certificates to verify a remote database's identity and to identify the local
+uses certificates to verify a remote database's identity and to identify the local
 
 database principal for the operation. Therefore, installing a certificate in SQL Server constitutes
 
@@ -71,9 +69,7 @@ For transport security, each database must trust the other database. Transport s
 
 either certificates or Windows Authentication. For more information on transport security, see
 
-Service Broker Transport Security
-
-.
+Service Broker Transport Security.
 
 For dialog security, the initiator of the dialog must trust the target, and must be able to verify
 

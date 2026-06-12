@@ -2,7 +2,7 @@
 name: "SET LANGUAGE example: Month name in Polish"
 title: "SET LANGUAGE example: Month name in Polish"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -14,8 +14,6 @@ Article
 •
 
 11/18/2022
-
-Applies to:
 
 SQL Server
 
@@ -29,9 +27,7 @@ Analytics Platform System (PDW)
 
 Use caution when allowing conversion of your CHARACTER strings into DATE data types. The reason is that such conversions are often
 
-nondeterministic
-
-.
+nondeterministic.
 
 You control these nondeterministic conversions by accounting for the settings of SET
 
@@ -39,9 +35,7 @@ LANGUAGE
 
 and
 
-SET DATEFORMAT
-
-.
+SET DATEFORMAT.
 
 A character string can be the name of a month. But is the name in English, or Polish, or
 
@@ -108,5 +102,5 @@ AS
 SET
 LANGUAGE
 English;
-/***  Actual output:  For the two months, note the 11 versus the 10.
+/*** Actual output: For the two months, note the 11 versus the 10.
 ```

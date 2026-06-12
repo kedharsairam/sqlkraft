@@ -27,11 +27,9 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
-SQL Server defines Extended Events that are specific to availability groups. You can monitor
+defines Extended Events that are specific to availability groups. You can monitor
 
 these Extended Events in a session to help with root-cause diagnosis when you troubleshoot
 
@@ -61,9 +59,7 @@ session:
 
 ,
 
-, and then
-
-.
+, and then.
 
 2. Right-click
 
@@ -73,9 +69,7 @@ session:
 
 ,
 
-and then select
-
-.
+and then select.
 
 ）
 

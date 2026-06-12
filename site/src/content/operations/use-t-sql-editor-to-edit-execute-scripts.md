@@ -57,9 +57,7 @@ fonts and colors, and line numbering. You can also change the database which the
 
 editor is executed against. For more information, see
 
-How to: Clone an Existing Database
-
-. The
+How to: Clone an Existing Database. The
 
 pane displays query results in a grid or text. You can also redirect these query results to
 

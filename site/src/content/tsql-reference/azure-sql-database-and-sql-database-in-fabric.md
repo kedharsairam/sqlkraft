@@ -2,7 +2,7 @@
 name: "Azure SQL Database and SQL database in Fabric"
 title: "Azure SQL Database and SQL database in Fabric"
 category: "operators"
-description: "SQL Server 2025 (17.x)"
+description: "2025 (17.x)"
 tags: ["tsql", "operators"]
 pubDate: 2026-05-29
 ---
@@ -17,9 +17,7 @@ pubDate: 2026-05-29
 
 ## Regional availability
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 Azure SQL Database
 
@@ -35,9 +33,7 @@ differences between exact and approximate search, refer to
 
 Vector search and vector indexes in
 
-the SQL Database Engine
-
-.
+the SQL Database Engine.
 
 The feature is in preview. Check
 
@@ -53,25 +49,19 @@ If a feature or syntax isn't available, it becomes available automatically as de
 
 completes. For current regional availability status, see
 
-Feature availability by region
-
-.
+Feature availability by region.
 
 In SQL Server 2025 this function is in preview and is subject to change. In order to use this
 
 feature, you must enable the
 
-database scoped configuration
-
-.
+database scoped configuration.
 
 ７
 
 Note
 
-As a preview feature, the technology presented in this article is subject to
-
-.
+As a preview feature, the technology presented in this article is subject to.
 
 ２
 
@@ -87,7 +77,7 @@ the steps in the
 
 section.
 
-SQL Server 2025 Preview feature
+2025 Preview feature
 
 ### vector
 

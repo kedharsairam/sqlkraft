@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to view the properties of an availability group for an Always On
@@ -67,9 +65,7 @@ and
 
 Availability Group Properties: New Availability Group (Backup Preferences
 
-Page)
-
-.
+Page).
 
 Use the
 
@@ -79,9 +75,7 @@ associated with the availability group. For more information, see
 
 Permissions or
 
-Securables Page
-
-.
+Securables Page.
 
 To query the properties and states of the availability groups for which the server instance hosts
 

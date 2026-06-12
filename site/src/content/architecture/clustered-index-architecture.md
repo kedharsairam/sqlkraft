@@ -30,9 +30,7 @@ Clustered indexes have one row in
 
 sys.partitions
 
-for each partition used by the index, with
-
-. By default, a clustered index has a single partition. When a clustered index has
+for each partition used by the index, with. By default, a clustered index has a single partition. When a clustered index has
 
 multiple partitions, each partition has a separate B+ tree structure that contains the data for
 
@@ -52,9 +50,7 @@ index also has one
 
 allocation unit per partition if it contains large object (LOB)
 
-columns such as
-
-. It also has one
+columns such as. It also has one
 
 allocation unit per partition
 
@@ -70,9 +66,7 @@ order. However, the page maintains a logical ordering of rows using an internal 
 
 a
 
-slot array
-
-. Entries in the slot array are maintained in the index key order.
+slot array. Entries in the slot array are maintained in the index key order.
 
 This illustration shows the structure of a clustered index in a single partition.
 

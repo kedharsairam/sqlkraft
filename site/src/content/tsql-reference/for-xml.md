@@ -27,15 +27,11 @@ following XML modes must be specified:
 
 ,
 
-,
-
-. For more information about
+,. For more information about
 
 XML data and SQL Server, see
 
-FOR XML (SQL Server)
-
-.
+FOR XML (SQL Server).
 
 Takes the query result and transforms each row in the result set into an XML element with a
 
@@ -49,9 +45,7 @@ as the row element
 
 generated for each row. For more information, see
 
-Use RAW mode with FOR XML
-
-.
+Use RAW mode with FOR XML.
 
 ## Returns query results in a simple, nested XML tree. Each table in the
 
@@ -67,9 +61,7 @@ clause are mapped to the appropriate element attributes. For more
 
 information, see
 
-Use AUTO mode with FOR XML
-
-.
+Use AUTO mode with FOR XML.
 
 Specifies that the shape of the resulting XML tree is defined explicitly. Using this mode, you
 
@@ -77,9 +69,7 @@ must write queries in a particular way so that they specify additional informati
 
 desired nesting explicitly. For more information, see
 
-Use EXPLICIT mode with FOR XML
-
-.
+Use EXPLICIT mode with FOR XML.
 
 ## Returns inline XDR schema, but doesn't add the root element to the result. If you specify
 
@@ -129,9 +119,7 @@ a single line. In these cases, SSMS might insert line break characters between l
 
 the whole XML string. Such line breaks might occur in the middle of a substring that shouldn't
 
-be split across lines. You can prevent the line breaks by using a cast
-
-. This solution
+be split across lines. You can prevent the line breaks by using a cast. This solution
 
 can also apply when you use
 
@@ -145,9 +133,7 @@ specify this directive, which returns the specified namespace in the schema. For
 
 information, see
 
-Generate an inline XSD schema
-
-.
+Generate an inline XSD schema.
 
 Specifies that the columns are returned as subelements. Otherwise, the query maps them to
 
@@ -161,9 +147,7 @@ modes only. For more
 
 information, see
 
-Use RAW mode with FOR XML
-
-.
+Use RAW mode with FOR XML.
 
 Specifies that an element with
 
@@ -177,9 +161,7 @@ You can only specify this option with the
 
 directive. For more information, see:
 
-Generate elements for NULL values with the XSINIL parameter
-
-.
+Generate elements for NULL values with the XSINIL parameter.
 
 Use XSD generation for
 
@@ -223,9 +205,7 @@ Indicates that for
 
 column values, corresponding XML elements aren't added in the XML
 
-result. Specify this option only with
-
-.
+result. Specify this option only with.
 
 Generates a
 
@@ -245,9 +225,7 @@ directive. For more information, see
 
 Use PATH
 
-mode with FOR XML
-
-.
+mode with FOR XML.
 
 Specifies that the query returns the binary data in binary base64-encoded format. When you
 
@@ -267,9 +245,7 @@ type. For more information, see
 
 TYPE directive in
 
-FOR XML queries
-
-.
+FOR XML queries.
 
 Specifies that a single top-level element is added to the resulting XML. You can optionally
 
@@ -281,9 +257,7 @@ element is added.
 
 For more information, see
 
-FOR XML (SQL Server)
-
-.
+FOR XML (SQL Server).
 
 The following example specifies
 

@@ -49,9 +49,7 @@ functions with date and
 
 time data, see
 
-CAST and CONVERT
-
-.
+CAST and CONVERT.
 
 ### smalldatetime
 
@@ -93,9 +91,7 @@ When the conversion is to
 
 , the hours, minutes, and seconds are copied. The fractional
 
-seconds are set to
-
-. The following code shows the results of converting a
+seconds are set to. The following code shows the results of converting a
 
 value to a
 
@@ -145,9 +141,7 @@ value is copied to the
 
 value.
 
-The fractional seconds are set to
-
-. The following code shows the results of converting a
+The fractional seconds are set to. The following code shows the results of converting a
 
 value to a
 
@@ -165,9 +159,7 @@ value is copied to the
 
 value. The fractional seconds are set to
 
-, and the time zone offset is set to
-
-. The following code shows the results of converting a
+, and the time zone offset is set to. The following code shows the results of converting a
 
 value to a
 
@@ -183,9 +175,7 @@ For the conversion to
 
 value is copied to the
 
-value. The fractional seconds are set to
-
-. The following code shows the results of converting a
+value. The fractional seconds are set to. The following code shows the results of converting a
 
 value to a
 
@@ -240,9 +230,9 @@ date
 AS
 'date'
 ;
-@smalldatetime        date
+@smalldatetime date
 --------------------- ----------
-1955-12-13 12:43:00   1955-12-13
+1955-12-13 12:43:00 1955-12-13
 DECLARE
 @smalldatetime
 AS
@@ -264,9 +254,9 @@ time
 AS
 'time'
 ;
-@smalldatetime          time
+@smalldatetime time
 ----------------------- -------------
-1955-12-13 12:43:00     12:43:00.0000
+1955-12-13 12:43:00 12:43:00.0000
 ```
 
 ```sql
@@ -305,9 +295,9 @@ AS
 AS
 'datetime'
 ;
-@smalldatetime          datetime
+@smalldatetime datetime
 ----------------------- -----------------------
-1955-12-13 12:43:00     1955-12-13 12:43:00.000
+1955-12-13 12:43:00 1955-12-13 12:43:00.000
 DECLARE
 @smalldatetime
 AS
@@ -327,7 +317,7 @@ AS
 AS
 'datetimeoffset(4)'
 ;
-@smalldatetime        datetimeoffset(4)
+@smalldatetime datetimeoffset(4)
 --------------------- ------------------------------
-1955-12-13 12:43:00   1955-12-13 12:43:00.0000 +00:0
+1955-12-13 12:43:00 1955-12-13 12:43:00.0000 +00:0
 ```

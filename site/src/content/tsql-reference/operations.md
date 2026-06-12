@@ -2,12 +2,10 @@
 name: "operations"
 title: "Operations"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -20,8 +18,6 @@ SQL database in Microsoft Fabric
 Generates a manual checkpoint in the SQL Server database to which you are currently
 
 connected.
-
-Transact-SQL syntax conventions
 
 ## syntaxsql
 
@@ -57,9 +53,7 @@ Tip
 
 For information about different types of database checkpoints and checkpoint operation
 
-in general, see
-
-.
+in general, see.
 
 ### sysadmin
 

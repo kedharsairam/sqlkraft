@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -31,11 +29,9 @@ availability group on Linux requires three nodes - see
 
 High availability and data protection for
 
-availability group configurations
+availability group configurations.
 
-.
-
-SQL Server isn't as tightly integrated with Pacemaker on Linux as it is with Windows Server
+isn't as tightly integrated with Pacemaker on Linux as it is with Windows Server
 
 failover clustering (WSFC). A SQL Server instance isn't aware of the cluster, and all orchestration
 
@@ -75,9 +71,7 @@ built on top
 
 of
 
-Pacemaker
-
-.
+Pacemaker.
 
 ７
 

@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 09/09/2025
 
-Applies to:
-
 SQL Server
 
 A breakpoint action specifies a custom task that the Transact-SQL debugger performs for a
@@ -55,9 +53,7 @@ Transact-SQL variables, parameters, and built-in functions. Examples include
 
 ,
 
-, or
-
-.
+, or.
 
 One of the following keywords:
 
@@ -79,9 +75,7 @@ returns the name of the unit of Transact-SQL code that called a stored
 
 procedure or function. If the breakpoint is in the editor window,
 
-returns
-
-. If the breakpoint is in a stored procedure or user-defined function
+returns. If the breakpoint is in a stored procedure or user-defined function
 
 called from the code in the editor window,
 

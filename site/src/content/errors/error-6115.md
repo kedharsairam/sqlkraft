@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 6115 16 No KILL command cannot be used inside user transactions. 6117 16 No There is a connection associated with the distributed transaction with UOW %s. First, kill the connection using
+Description 6115 16 No KILL command cannot be used inside user transactions. 6117 16 No There is a connection associated with the distributed transaction with UOW %s.
 
 ## Severity
 

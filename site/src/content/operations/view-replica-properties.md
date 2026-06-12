@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to view the properties of an availability replica for an Always On
@@ -67,9 +65,7 @@ role, read-access for the secondary role (readable-secondary), and the session-t
 
 value. For more information, see
 
-Availability Replica Properties (General Page)
-
-.
+Availability Replica Properties (General Page).
 
 [!NOTE]
 

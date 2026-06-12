@@ -27,8 +27,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic explains how to join a secondary database to an Always On availability group by
@@ -47,15 +45,11 @@ The secondary replica must already be joined to the availability group. For more
 
 information, see
 
-Join a Secondary Replica to an Availability Group (SQL Server)
-
-.
+Join a Secondary Replica to an Availability Group (SQL Server).
 
 The secondary database must have been prepared recently. For more information, see
 
-Manually Prepare a Secondary Database for an Availability Group (SQL Server)
-
-.
+Manually Prepare a Secondary Database for an Availability Group (SQL Server).
 
 Requires ALTER AVAILABILITY GROUP permission on the availability group, CONTROL
 
@@ -71,6 +65,4 @@ expand the server tree.
 
 Note
 
-For information about what happens after a secondary database joins the group, see
-
-.
+For information about what happens after a secondary database joins the group, see.

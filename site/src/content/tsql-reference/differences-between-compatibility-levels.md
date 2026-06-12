@@ -19,9 +19,7 @@ Changed column names in system objects. In SQL Server 2012 (11.x) the column
 
 in
 
-was renamed to
-
-. Regardless of the
+was renamed to. Regardless of the
 
 compatibility level, the query
 
@@ -51,9 +49,7 @@ For all installations of SQL Server, the default compatibility level is associat
 
 of the Database Engine, as seen in
 
-this table
-
-. For new development work, always plan to certify
+this table. For new development work, always plan to certify
 
 applications on the latest database compatibility level.
 
@@ -133,11 +129,7 @@ version of the Database Engine are:
 
 1.
 
-.
-
-Applies to:
-
-SQL Server (Starting with version SQL Server 2016 (13.x)), Azure SQL Database.
+(Starting with version SQL Server 2016 (13.x)), Azure SQL Database.
 
 For example, when SQL Server 2016 (13.x) was released, all the Query Optimizer fixes
 
@@ -153,9 +145,7 @@ To enable Query Optimizer fixes, you can use the following methods:
 
 At the server level, with
 
-trace flag 4199
-
-.
+trace flag 4199.
 
 At the database level, with the
 
@@ -163,9 +153,7 @@ option in
 
 ALTER DATABASE
 
-SCOPED CONFIGURATION (Transact-SQL)
-
-.
+SCOPED CONFIGURATION (Transact-SQL).
 
 At the query level, with the
 
@@ -187,7 +175,7 @@ Later, when SQL Server 2017 (14.x) was released, all the Query Optimizer fixes r
 
 after SQL Server 2016 (13.x) RTM became automatically enabled for databases using the
 
-SQL Server 2017 (14.x) default compatibility level (140). This is a cumulative behavior that
+2017 (14.x) default compatibility level (140). This is a cumulative behavior that
 
 includes all previous versions fixes as well. Again, only post-RTM Query Optimizer fixes
 
@@ -461,7 +449,7 @@ protected by trace flag 4199. Those fixes aren't considered optional.
 
 2.
 
-SQL database in Microsoft Fabric are enabled only in the default compatibility level of a
+are enabled only in the default compatibility level of a
 
 , but not on previous compatibility levels.
 

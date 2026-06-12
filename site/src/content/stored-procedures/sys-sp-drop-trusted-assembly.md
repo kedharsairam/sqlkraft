@@ -2,7 +2,7 @@
 name: "sys.sp_drop_trusted_assembly"
 title: "sp_drop_trusted_assembly"
 category: "general"
-description: "SQL Server 2017 (14.x) and later Drops an assembly from the list of trusted assemblies on the server. Transact-SQL syntax conventions The SHA2_512 hash value of the assembly to drop from the list of trusted assemblies for the server. Trusted assemblies might load when CLR strict security is enabled, even if the assembly is unsigned or the database isn't marked as trustworthy. This procedure remove"
+description: "2017 (14.x) and later Drops an assembly from the list of trusted assemblies on the server. The SHA2_512 hash value of the assembly to drop from the list of trusted assemblies for the server. Trusted assemblies might load when CLR strict security is enabled, even if the assembly is unsigned or the database isn't marked as trustworthy. This procedure remove"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-SQL Server 2017 (14.x) and later Drops an assembly from the list of trusted assemblies on the server. Transact-SQL syntax conventions The SHA2_512 hash value of the assembly to drop from the list of trusted assemblies for the server. Trusted assemblies might load when CLR strict security is enabled, even if the assembly is unsigned or the database isn't marked as trustworthy. This procedure removes an assembly from
+2017 (14.x) and later Drops an assembly from the list of trusted assemblies on the server. The SHA2_512 hash value of the assembly to drop from the list of trusted assemblies for the server. Trusted assemblies might load when CLR strict security is enabled, even if the assembly is unsigned or the database isn't marked as trustworthy.
 
 ## Syntax
 
@@ -27,7 +27,7 @@ sp_drop_trusted_assembly
 
 ## Permissions
 
-SQL) 06/23/2025 Applies to: SQL Server 2017 (14.x) and later Azure SQL Managed Instance Drops an assembly from the list of trusted assemblies on the server. Transact-SQL syntax conventions syntaxsql The SHA2_512 hash value of the assembly to drop from the list of trusted assemblies for the server. Trusted assemblies might load when CLR strict security is enabled, even if the assembly is unsigned or the database isn't marked as trustworthy. This procedure removes an assembly from sys.trusted_assemblies . ） Important Arguments for extended stored procedures must be entered in the specific order as described in the section. If the parameters are entered out of order, an error message occurs.
+SQL) 06/23/2025 x) and later Azure SQL Managed Instance Drops an assembly from the list of trusted assemblies on the server. syntaxsql The SHA2_512 hash value of the assembly to drop from the list of trusted assemblies for the server. Trusted assemblies might load when CLR strict security is enabled, even if the assembly is unsigned or the database isn't marked as trustworthy. This procedure removes an assembly from sys.trusted_assemblies. ） Important Arguments for extended stored procedures must be entered in the specific order as described in the section. If the parameters are entered out of order, an error message occurs.
 
 ## Examples
 

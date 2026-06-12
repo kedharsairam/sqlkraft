@@ -15,9 +15,7 @@ become the column headings. A column is provided for three (
 
 ) days, even though the
 
-results are
-
-.
+results are.
 
 Here's the result set.
 
@@ -117,10 +115,10 @@ IN ([0], [1], [2], [3], [4])
 )
 AS
 PivotTable;
-CostSortedByProductionDays  0           1           2           3           4
+CostSortedByProductionDays 0 1 2 3 4
 --------------------------- ----------- ----------- ----------- ----------- -------
 ----
-AverageCost                 5.0885      223.88      359.1082    NULL
+AverageCost 5.0885 223.88 359.1082 NULL
 949.4105
 ```
 
@@ -198,13 +196,13 @@ IN ([250], [251], [256], [257], [260])
 AS pvt
 ORDER
 BY pvt.VendorID;
-VendorID    Emp1        Emp2        Emp3        Emp4        Emp5
+VendorID Emp1 Emp2 Emp3 Emp4 Emp5
 ----------- ----------- ----------- ----------- ----------- -----------
-1492        2           5           4           4           4
-1494        2           5           4           5           4
-1496        2           4           4           5           5
-1498        2           5           4           4           4
-1500        3           4           4           5           4
+1492 2 5 4 4 4
+1494 2 5 4 5 4
+1496 2 4 4 5 5
+1498 2 5 4 4 4
+1500 3 4 4 5 4
 SELECT
 PurchaseOrderID,
 EmployeeID,

@@ -37,8 +37,6 @@ Article
 
 05/24/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -149,6 +147,5 @@ Name
 =
 "Touring Bike"
 />
-</ProductCategory>
-...
+</ProductCategory>.
 ```

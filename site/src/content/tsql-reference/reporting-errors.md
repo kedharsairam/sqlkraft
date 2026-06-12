@@ -2,14 +2,12 @@
 name: "Reporting errors"
 title: "Reporting errors"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 10/14/2025
-
-Applies to:
 
 SQL Server
 

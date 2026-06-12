@@ -13,7 +13,7 @@ syntax: |
 
 ## Description
 
-Returns a list of all signable objects and indicates whether an object is signed by a specified certificate or asymmetric key. If the object is signed by the specified certificate or asymmetric key signed, it also returns whether the object's signature is valid. Transact-SQL syntax conventions Identifies the type of thumbprint being provided: SHA-1 hash of the certificate with which the key is encrypted, or the GUID of the asymmetric
+Returns a list of all signable objects and indicates whether an object is signed by a specified certificate or asymmetric key. If the object is signed by the specified certificate or asymmetric key signed, it also returns whether the object's signature is valid. Identifies the type of thumbprint being provided: SHA-1 hash of the certificate with which the key is encrypted, or the GUID of the asymmetric
 
 ## Syntax
 

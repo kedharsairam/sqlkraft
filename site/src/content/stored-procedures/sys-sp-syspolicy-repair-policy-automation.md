@@ -10,7 +10,7 @@ syntax: "sp_syspolicy_repair_policy_automation"
 
 ## Description
 
-Repairs policy automation in Policy-Based Management. For example, you can use this stored procedure to repair triggers and jobs that are associated with policies that are configured to use "On schedule" or "On change" evaluation modes. Transact-SQL syntax conventions This stored procedure has no parameters.
+Repairs policy automation in Policy-Based Management. For example, you can use this stored procedure to repair triggers and jobs that are associated with policies that are configured to use "On schedule" or "On change" evaluation modes. This stored procedure has no parameters.
 
 ## Syntax
 
@@ -18,7 +18,7 @@ Repairs policy automation in Policy-Based Management. For example, you can use t
 
 ## Permissions
 
-06/23/2025 Applies to: SQL Server Repairs policy automation in Policy-Based Management. For example, you can use this stored procedure to repair triggers and jobs that are associated with policies that are configured to use "On schedule" or "On change" evaluation modes. Transact-SQL syntax conventions syntaxsql This stored procedure has no parameters. (success) or (failure). You must run in the context of the system database. Requires membership in the fixed database role. ） Important
+06/23/2025 For example, you can use this stored procedure to repair triggers and jobs that are associated with policies that are configured to use "On schedule" or "On change" evaluation modes. syntaxsql This stored procedure has no parameters. (success) or (failure). You must run in the context of the system database. Requires membership in the fixed database role. ） Important
 
 ## Examples
 

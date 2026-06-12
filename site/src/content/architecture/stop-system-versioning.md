@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -37,9 +35,7 @@ You might want to stop versioning on your temporal table either temporarily or p
 
 You can do that by setting the
 
-clause to
-
-.
+clause to.
 
 Stop system-versioning if you want to perform specific maintenance operations on a temporal
 
@@ -51,9 +47,7 @@ Current table with a period definition
 
 History table as a regular table
 
-The history table stops capturing the updates during
-
-.
+The history table stops capturing the updates during.
 
 No data loss happens on the temporal table when you set
 
@@ -77,15 +71,11 @@ You must drop the
 
 period to delete the period columns. To remove the period
 
-columns, use
-
-. For more information, see
+columns, use. For more information, see
 
 Change the
 
-schema of a system-versioned temporal table
-
-.
+schema of a system-versioned temporal table.
 
 When you set
 
@@ -97,13 +87,9 @@ You can't set
 
 if you have other objects created with
 
-using temporal query extensions, such as referencing
+using temporal query extensions, such as referencing. This restriction prevents
 
-. This restriction prevents
-
-these objects from failing if you set
-
-.
+these objects from failing if you set.
 
 ```sql
 SYSTEM_VERSIONING

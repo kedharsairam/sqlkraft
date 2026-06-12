@@ -24,7 +24,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server enabled by Azure Arc
+enabled by Azure Arc
 
 Index of articles about SQL Server enabled by Azure Arc.
 
@@ -32,7 +32,7 @@ Index of articles about SQL Server enabled by Azure Arc.
 
 ｐ
 
-SQL Server best practices assessment
+best practices assessment
 
 Secure SQL Server instances
 

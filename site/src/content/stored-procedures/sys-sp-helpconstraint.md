@@ -2,7 +2,7 @@
 name: "sys.sp_helpconstraint"
 title: "sp_helpconstraint"
 category: "general"
-description: "SQL database in Microsoft Fabric Returns a list of all constraint types, their user-defined or system-supplied name, the columns on which they're defined, and the expression that defines the constraint (for Transact-SQL syntax conventions Specifies the table for which the constraint information is returned. , with no default. The table specified must be local to the current database. An optional p"
+description: "Returns a list of all constraint types, their user-defined or system-supplied name, the columns on which they're defined, and the expression that defines the constraint (for Specifies the table for which the constraint information is returned. , with no default. The table specified must be local to the current database. An optional p"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -18,7 +18,7 @@ syntax: |
 
 ## Description
 
-SQL database in Microsoft Fabric Returns a list of all constraint types, their user-defined or system-supplied name, the columns on which they're defined, and the expression that defines the constraint (for Transact-SQL syntax conventions Specifies the table for which the constraint information is returned. , with no default. The table specified must be local to the current database. An optional parameter that prints the table name.
+Returns a list of all constraint types, their user-defined or system-supplied name, the columns on which they're defined, and the expression that defines the constraint (for Specifies the table for which the constraint information is returned. , with no default. The table specified must be local to the current database. An optional parameter that prints the table name.
 
 ## Syntax
 

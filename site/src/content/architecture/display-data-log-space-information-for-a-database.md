@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -57,27 +55,19 @@ parameter.
 
 1. In Object Explorer, connect to an instance of SQL Server and then expand that instance.
 
-2. Expand
-
-.
+2. Expand.
 
 3. Right-click a database, point to
 
 , point to
 
-, and then select
-
-.
+, and then select.
 
 1. Connect to the Database Engine.
 
-2. On the Standard toolbar, select
+2. On the Standard toolbar, select.
 
-.
-
-3. Paste the following example into the query window and then select
-
-. This example
+3. Paste the following example into the query window and then select. This example
 
 uses the
 

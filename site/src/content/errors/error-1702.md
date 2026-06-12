@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 1702 16 No CREATE TABLE failed because column '%.*ls' in table '%.*ls' exceeds the maximum of %d columns. 1706 16 No The system table '%.\*ls' can only be created or altered during an upgra
+Description 1702 16 No CREATE TABLE failed because column '%.*ls' in table '%.*ls' exceeds the maximum of %d columns.
 
 ## Severity
 

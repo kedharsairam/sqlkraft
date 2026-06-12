@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description pages used in %I64d dedicated extents. 7926 16 No Check statement aborted. The database could not be checked as a database snapshot could not be created and the database or table could not
+Description pages used in %I64d dedicated extents. 7926 16 No Check statement aborted.
 
 ## Severity
 

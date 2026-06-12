@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/09/2025
 
-Applies to:
-
 SQL Server
 
 To view and manage all the open breakpoints, you can use the
@@ -55,9 +53,7 @@ On the
 
 menu, select
 
-, and then select
-
-.
+, and then select.
 
 On the
 
@@ -69,15 +65,11 @@ Press
 
 -
 
--
-
-.
+-.
 
 You can disable a single breakpoint in one of the following ways:
 
-In the Query Editor window, hover over the breakpoint, and then select
-
-.
+In the Query Editor window, hover over the breakpoint, and then select.
 
 In the
 
@@ -87,9 +79,7 @@ You can disable all breakpoints in one of the following ways:
 
 On the
 
-menu, select
-
-.
+menu, select.
 
 On the toolbar of the
 

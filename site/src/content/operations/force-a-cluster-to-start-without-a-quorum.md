@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to force a Windows Server Failover Clustering (WSFC) cluster node to
@@ -37,7 +35,7 @@ start without a quorum. This may be required in disaster recovery and multi-subn
 
 to recover data and fully re-establish high-availability for Always On availability groups and
 
-SQL Server Failover Cluster Instances.
+Failover Cluster Instances.
 
 Recommendations
 
@@ -75,8 +73,6 @@ node of the WSFC cluster.
 
 pane, click
 
-, and then click
-
-.
+, and then click.
 
 To force a cluster to start without a quorum

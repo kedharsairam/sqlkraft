@@ -27,8 +27,6 @@ Article
 
 09/27/2023
 
-Applies to:
-
 SQL Server
 
 The Always On availability groups health model evaluates a set of predefined policy based
@@ -75,9 +73,7 @@ and one to four
 
 secondary
 
-replicas
-
-. The server instances that host the availability replicas for a given availability group
+replicas. The server instances that host the availability replicas for a given availability group
 
 must reside on different nodes of a single Windows Server Failover Clustering (WSFC) cluster.
 

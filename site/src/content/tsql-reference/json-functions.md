@@ -2,16 +2,14 @@
 name: "JSON functions"
 title: "JSON functions"
 category: "statements"
-description: "SQL Server 2016 (13.x) and later versions"
+description: "2016 (13.x) and later versions"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 #### Function
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -77,24 +75,12 @@ Extracts a scalar value from a JSON string.
 
 OPENJSON
 
-Parses JSON text and returns objects and properties from the JSON input as rows
-
 and columns.
 
-For more info about the built-in support for JSON in SQL Server, see
-
-JSON data in SQL Server
-
-.
+JSON data in SQL Server.
 
 Validate, query, and change JSON data with built-in functions (SQL Server)
 
 JSON Path Expressions
 
 JSON data in SQL Server
-
-Last updated on 11/18/2025
-
-Expand table
-
-Related content

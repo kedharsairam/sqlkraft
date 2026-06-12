@@ -20,8 +20,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -52,9 +50,7 @@ obtain the next sequence number without inserting the row by calling the
 
 NEXT VALUE FOR
 
-function
-
-. Use
+function. Use
 
 sp_sequence_get_range
 
@@ -66,9 +62,7 @@ and the
 
 function, see
 
-Sequence Numbers
-
-.
+Sequence Numbers.
 
 This page is accessed in two ways: either by right-clicking
 
@@ -76,9 +70,7 @@ in Object Explorer and
 
 clicking
 
-, or by right-clicking an existing sequence and clicking
-
-.
+, or by right-clicking an existing sequence and clicking.
 
 When you right-click an existing sequence and click
 

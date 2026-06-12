@@ -2,7 +2,7 @@
 name: "sys.sp_marksubscriptionvalidation"
 title: "sp_marksubscriptionvalidation"
 category: "general"
-description: "Marks the current open transaction to be a subscription-level validation transaction for the specified subscriber. This stored procedure is executed at the Publisher on the publication Transact-SQL syntax conventions The name of the destination database."
+description: "Marks the current open transaction to be a subscription-level validation transaction for the specified subscriber. This stored procedure is executed at the Publisher on the publication The name of the destination database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -25,7 +25,7 @@ syntax: |
 
 ## Description
 
-Marks the current open transaction to be a subscription-level validation transaction for the specified subscriber. This stored procedure is executed at the Publisher on the publication Transact-SQL syntax conventions The name of the destination database.
+Marks the current open transaction to be a subscription-level validation transaction for the specified subscriber. This stored procedure is executed at the Publisher on the publication The name of the destination database.
 
 ## Syntax
 

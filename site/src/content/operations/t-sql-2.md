@@ -27,8 +27,6 @@ Article
 
 09/27/2023
 
-Applies to:
-
 SQL Server
 
 For monitoring availability groups and replicas and the associated databases by using Transact-

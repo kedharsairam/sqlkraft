@@ -15,11 +15,11 @@ Occurs when waiting for an update latch on a buffer pool page in memory. The cla
 
 ## Key Metrics
 
-| Metric    | Description    |
+| Metric | Description |
 | --------- | -------------- |
 | Wait Type | `PAGELATCH_UP` |
-| Category  | Blocking       |
-| Severity  | HIGH           |
+| Category | Blocking |
+| Severity | HIGH |
 
 ## Troubleshooting
 
@@ -29,10 +29,10 @@ Use the following query to identify the top queries contributing to `PAGELATCH_U
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'PAGELATCH_UP'
 ORDER BY wait_time_ms DESC;

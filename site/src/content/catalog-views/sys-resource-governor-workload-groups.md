@@ -10,7 +10,7 @@ syntax: "request_max_memory_grant_percent"
 
 ## Description
 
-Returns the stored workload group configuration. Each row represents a workload group. Each workload group uses one resource pool. Unique ID of the workload group. Not nullable. Name of the workload group. Not nullable. Is the relative importance of a request in this workload group. Importance is one of the Importance is relative to other workload groups in the same resource pool. Maximum memory grant for a single request, as
+Returns the stored workload group configuration. Each row represents a workload group. Each workload group uses one resource pool. Unique ID of the workload group. Not nullable.
 
 ## Syntax
 

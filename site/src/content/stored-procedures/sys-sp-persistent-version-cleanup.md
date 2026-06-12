@@ -2,7 +2,7 @@
 name: "sys.sp_persistent_version_cleanup"
 title: "sp_persistent_version_cleanup"
 category: "general"
-description: "SQL Server 2019 (15.x) and later versions SQL database in Microsoft Fabric Manually starts persistent version store (PVS) cleanup process, a key element of accelerated database recovery (ADR). The cleaner removes obsolete row versions from the in-row and off- , and also removes uncommitted changes in PVS from aborted transactions."
+description: "2019 (15.x) and later versions SQL database in Microsoft Fabric Manually starts persistent version store (PVS) cleanup process, a key element of accelerated database recovery (ADR). The cleaner removes obsolete row versions from the in-row and off- , and also removes uncommitted changes in PVS from aborted transactions."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sys.sp_persistent_version_cleanup"
@@ -10,7 +10,7 @@ syntax: "sys.sp_persistent_version_cleanup"
 
 ## Description
 
-SQL Server 2019 (15.x) and later versions SQL database in Microsoft Fabric Manually starts persistent version store (PVS) cleanup process, a key element of accelerated database recovery (ADR). The cleaner removes obsolete row versions from the in-row and off- , and also removes uncommitted changes in PVS from aborted transactions. It isn't typically necessary to start the PVS cleanup process manually using
+2019 (15.x) and later versions SQL database in Microsoft Fabric Manually starts persistent version store (PVS) cleanup process, a key element of accelerated database recovery (ADR). The cleaner removes obsolete row versions from the in-row and off- , and also removes uncommitted changes in PVS from aborted transactions.
 
 ## Syntax
 

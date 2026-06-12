@@ -36,9 +36,7 @@ transaction could issue a
 
 statement that reads all rows whose key values
 
-match the condition
-
-. A key-range lock on the key values in the range
+match the condition. A key-range lock on the key values in the range
 
 from
 
@@ -50,9 +48,7 @@ that range, such as
 
 ,
 
-, or
-
-.
+, or.
 
 Key-range locks include both a range and a row component specified in range-row format:
 
@@ -82,9 +78,7 @@ T
 
 -
 
-K
-
-.
+K.
 
 ## Description
 
@@ -97,8 +91,6 @@ Shared range, update resource lock;
 update scan.
 
 ﾉ
-
-Expand table
 
 `SERIALIZABLE`
 

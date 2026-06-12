@@ -12,15 +12,11 @@ and at least 5,000 row locks in the clustered index for
 
 , but hasn't yet
 
-accessed
-
-. When the Database Engine detects that the statement has acquired at least
+accessed. When the Database Engine detects that the statement has acquired at least
 
 5,000 row locks in
 
-, it attempts to escalate all locks held by the current transaction on
-
-. It also attempts to escalate all locks held by the current transaction on
+, it attempts to escalate all locks held by the current transaction on. It also attempts to escalate all locks held by the current transaction on
 
 , but since
 

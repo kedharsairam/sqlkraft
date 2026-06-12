@@ -51,12 +51,9 @@ view.
 
 2. Right-click your SQL project.
 
-3. Select
-
-.
+3. Select.
 
 The Publish dialog opens in a new editor tab.
 
-```cmd
-.sqlproj
+```cmd.sqlproj
 ```

@@ -17,9 +17,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2017 (14.x) on Linux
+2017 (14.x) on Linux
 
 This article describes the major features and services available for SQL Server 2017 (14.x) running
 
@@ -31,31 +29,23 @@ intervals. These cumulative updates provide many improvements and fixes. For det
 
 information about the latest CU release, see
 
-SQL Server 2017 build versions
-
-. For package
+2017 build versions. For package
 
 downloads and known issues, see the
 
-Release notes
-
-.
+Release notes.
 
 Red Hat Enterprise Linux (RHEL) 8 is supported in SQL Server 2017 (14.x) CU 20 and later versions.
 
 For more information, see
 
-Quickstart: Install SQL Server and create a database on Red Hat
-
-.
+Quickstart: Install SQL Server and create a database on Red Hat.
 
 Ubuntu 18.04 is supported in SQL Server 2017 (14.x) CU 20 and later versions. For more
 
 information, see
 
-Quickstart: Install SQL Server and create a database on Ubuntu
-
-.
+Quickstart: Install SQL Server and create a database on Ubuntu.
 
 Enabled the core SQL Server Database Engine capabilities.
 
@@ -73,9 +63,7 @@ Transport Layer Security
 
 Enabled
 
-Active Directory Authentication
-
-.
+Active Directory Authentication.
 
 Availability Groups functionality
 
@@ -87,7 +75,7 @@ support.
 
 Enabled
 
-SQL Server Agent
+Agent
 
 support for the following tasks:
 
@@ -95,6 +83,6 @@ Transact-SQL jobs
 
 DB mail
 
-SQL Server Database Engine
+Database Engine
 
-SQL Server Agent
+Agent

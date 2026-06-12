@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -49,9 +47,7 @@ instance.
 
 Install
 
-SQL Server Management Studio
-
-.
+Management Studio.
 
 If you don't have access to a SQL Server instance, select your platform from the following links.
 
@@ -59,15 +55,11 @@ If you choose SQL Authentication, use your SQL Server login credentials.
 
 :
 
-Download SQL Server 2022 Developer Edition
-
-.
+Download SQL Server 2022 Developer Edition.
 
 :
 
-Download SQL Server 2022 in a container
-
-.
+Download SQL Server 2022 in a container.
 
 We are listening:
 
@@ -95,8 +87,6 @@ content, along with practical examples.
 
 Note
 
-This lesson relies on objects created in
-
-. Complete
+This lesson relies on objects created in. Complete
 
 Lesson 1 before continuing on to lesson 2.

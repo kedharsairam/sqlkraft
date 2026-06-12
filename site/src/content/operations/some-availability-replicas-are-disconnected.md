@@ -35,8 +35,6 @@ Article
 
 11/25/2024
 
-Applies to:
-
 SQL Server
 
 : Availability Replicas Connection State

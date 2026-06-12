@@ -10,7 +10,7 @@ syntax: "sp_cycle_agent_errorlog"
 
 ## Description
 
-Closes the current SQL Server Agent error log file and cycles the SQL Server Agent error log extension numbers just like a server restart. The new SQL Server Agent error log contains a line indicating that the new log was created. Transact-SQL syntax conventions Every time SQL Server Agent is started, the current SQL Server Agent error log is renamed to enables you to cycle the error log files without stopping and starting This stored procedure must be run from the
+Closes the current SQL Server Agent error log file and cycles the SQL Server Agent error log extension numbers just like a server restart. The new SQL Server Agent error log contains a line indicating that the new log was created.
 
 ## Syntax
 
@@ -18,15 +18,11 @@ Closes the current SQL Server Agent error log file and cycles the SQL Server Age
 
 ## Remarks
 
-Applies to:
-
 Closes the current SQL Server Agent error log file and cycles the SQL Server Agent error log
 
 extension numbers just like a server restart. The new SQL Server Agent error log contains a line
 
 indicating that the new log was created.
-
-Transact-SQL syntax conventions
 
 (success) or
 

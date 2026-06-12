@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Use this dialog box to register one or more mirrored databases on a given server instance by
@@ -43,9 +41,7 @@ Start Database Mirroring Monitor (SQL Server Management Studio)
 
 Select a server instance from the list, which contains server instances to which Database
 
-Mirroring Monitor already has a connection stored, or click
-
-. To specify new credentials
+Mirroring Monitor already has a connection stored, or click. To specify new credentials
 
 for a listed server instance, click
 
@@ -55,9 +51,7 @@ To specify new credentials for the server instance, click
 
 and connect using the new
 
-credentials. While connecting to a server instance, Database Mirroring Monitor displays
-
-.
+credentials. While connecting to a server instance, Database Mirroring Monitor displays.
 
 The
 

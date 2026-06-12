@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -47,9 +45,7 @@ To configure this setup, see
 
 Configure SQL Server availability group for high availability on
 
-Linux
-
-.
+Linux.
 
 Configured with
 
@@ -67,9 +63,7 @@ For setup instructions, see
 
 Configure a SQL Server availability group for read-scale on
 
-Linux
-
-.
+Linux.
 
 Offers flexibility to implement
 

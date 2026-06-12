@@ -27,8 +27,6 @@ Article
 
 11/25/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes the steps for configuring server instances to use certificates to authenticate
@@ -39,9 +37,7 @@ must configure outbound connections on each server instance. For more informatio
 
 Allow a Database Mirroring Endpoint to Use Certificates for Outbound Connections (Transact-
 
-SQL)
-
-.
+SQL).
 
 The process of configuring inbound connections, involves the following general steps:
 
@@ -73,9 +69,7 @@ The following example creates a login for the system, HOST_B, in the
 
 database of
 
-the server instance on HOST_A; in this example, the login is named
-
-. Replace
+the server instance on HOST_A; in this example, the login is named. Replace
 
 with a valid password.
 

@@ -27,8 +27,6 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -73,8 +71,7 @@ The following example shows how to configure an XSD file in a SQL project:
 
 ```cmd
 CREATE XML SCHEMA COLLECTION
-Build
-.sqlproj dbo
+Build.sqlproj dbo
 <?xml version="1.0" encoding="utf-8"?>
 <Project
 DefaultTargets

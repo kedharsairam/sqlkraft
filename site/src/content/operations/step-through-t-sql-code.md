@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-Applies to:
-
 SQL Server
 
 The Transact-SQL debugger enables you to control which Transact-SQL statements are run in a
@@ -33,9 +31,7 @@ A breakpoint signals the debugger to pause execution on a specific Transact-SQL 
 
 For more information about breakpoints, see
 
-Transact-SQL breakpoints
-
-.
+Transact-SQL breakpoints.
 
 In the Transact-SQL debugger, you can specify the following options for executing from the
 

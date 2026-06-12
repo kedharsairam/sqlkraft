@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -47,9 +45,7 @@ available options:
 
 - JSON documents can be stored as-is in columns with the data type
 
-or
-
-. This is the best way for quick data load and ingestion because the loading
+or. This is the best way for quick data load and ingestion because the loading
 
 speed matches the loading speed of string columns. This approach might introduce an
 
@@ -71,9 +67,7 @@ functions. Fragments from the input JSON
 
 documents can be stored in the columns containing JSON sub-elements with data types
 
-or
-
-. This approach increases the load time because JSON parsing is done
+or. This approach increases the load time because JSON parsing is done
 
 during load; however, queries match the performance of classic queries on the relational
 
@@ -93,11 +87,9 @@ is generally available for Azure SQL Database and Azure SQL Managed Instance wit
 
 the
 
-SQL Server 2025
+2025
 
-or
-
-.
+or.
 
 is in preview for SQL Server 2025 (17.x) and SQL database in Fabric.
 

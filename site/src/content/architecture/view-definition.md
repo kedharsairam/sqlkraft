@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -53,9 +51,7 @@ instance.
 
 , expand the database in which the procedure belongs, and then
 
-expand
-
-.
+expand.
 
 3. Expand
 
@@ -65,13 +61,9 @@ expand
 
 ,
 
-, or
+, or.
 
-.
-
-4. Select
-
-. This will display the procedure definition.
+4. Select. This will display the procedure definition.
 
 In T-SQL, you can use one of the following three commands:
 

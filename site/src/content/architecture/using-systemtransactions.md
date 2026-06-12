@@ -31,8 +31,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 The
@@ -47,9 +45,7 @@ enlisting connections in a distributed transaction. You must call the
 
 method at the
 
-end of the code block marked by the
-
-. The
+end of the code block marked by the. The
 
 method is invoked when
 

@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 When the mirrored database is synchronized (that is, when the database is in the

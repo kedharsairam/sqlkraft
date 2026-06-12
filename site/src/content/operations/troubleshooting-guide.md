@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -39,9 +37,7 @@ Release notes for SQL Server 2017 on Linux
 
 For answers to frequently asked questions, see the
 
-SQL Server on Linux FAQ
-
-.
+on Linux FAQ.
 
 If you have difficulty connecting to your Linux SQL Server instance, there are a few things to
 

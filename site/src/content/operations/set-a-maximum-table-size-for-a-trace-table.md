@@ -27,8 +27,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -95,4 +93,4 @@ When the number of rows in the table exceeds the maximum that you have specified
 
 trace events are no longer recorded. However, tracing continues.
 
-SQL Server Profiler
+Profiler

@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 Returns the length of the string in characters.
@@ -48,9 +46,7 @@ and
 
 Collation and
 
-Unicode Support
-
-.
+Unicode Support.
 
 If the value contains a 4-byte Unicode character that is represented by two surrogate
 

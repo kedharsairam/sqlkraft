@@ -44,15 +44,11 @@ columnar data format, called columnstore. For more information, see
 
 Columnstore indexes:
 
-overview
-
-.
+overview.
 
 For version information and to find out what's new, visit
 
-What's new in columnstore indexes
-
-.
+What's new in columnstore indexes.
 
 Knowing these basics makes it easier to understand other columnstore articles that explain
 

@@ -10,9 +10,7 @@ Server Management Studio, on the
 
 menu, select
 
-or
-
-.
+or.
 
 Don't always equate index usage with good performance, and good performance with efficient
 
@@ -54,8 +52,6 @@ The following tasks make up our recommended strategy for designing indexes:
 
 1.
 
-.
-
 For example, in an online transaction processing (OLTP) database with frequent data
 
 modifications that must sustain a high throughput, a few narrow rowstore indexes
@@ -94,15 +90,11 @@ in this guide.
 
 2.
 
-.
-
 For example, knowing that a frequently used query joins two or more tables helps you
 
 determine the set of indexes for these tables.
 
 3.
-
-.
 
 1
 

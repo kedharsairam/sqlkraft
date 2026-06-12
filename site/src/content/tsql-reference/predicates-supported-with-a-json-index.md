@@ -39,9 +39,7 @@ the partitioning scheme of the table.
 
 For more information about creating indexes, see the Remarks section in
 
-CREATE INDEX
-
-.
+CREATE INDEX.
 
 Searching operations on JSON documents contained in a
 
@@ -73,9 +71,7 @@ table in the
 
 database with a
 
-column called
-
-. The
+column called. The
 
 column is created as a
 

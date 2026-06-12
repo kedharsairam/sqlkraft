@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -39,13 +37,9 @@ You can create a secondary selective XML index using Transact-SQL by calling the
 
 INDEX statement. For more information, see
 
-CREATE XML INDEX (Selective XML Indexes)
+CREATE XML INDEX (Selective XML Indexes).
 
-.
-
-The following example creates a secondary selective XML index on the path
-
-. The
+The following example creates a secondary selective XML index on the path. The
 
 path to index is identified by the name that was given to it when it was created with the
 
@@ -53,9 +47,7 @@ CREATE SELECTIVE XML INDEX statement. For more information, see
 
 CREATE SELECTIVE XML
 
-INDEX (Transact-SQL)
-
-.
+INDEX (Transact-SQL).
 
 The ALTER statement isn't supported for secondary selective XML indexes. To change a
 
@@ -65,17 +57,13 @@ secondary selective XML index, drop the existing index and recreate it.
 
 For more information, see
 
-DROP INDEX (Selective XML Indexes)
-
-.
+DROP INDEX (Selective XML Indexes).
 
 2. Recreate the index with the desired options by calling the CREATE XML INDEX statement.
 
 For more information, see
 
-CREATE XML INDEX (Selective XML Indexes)
-
-.
+CREATE XML INDEX (Selective XML Indexes).
 
 The following example changes a secondary selective XML index by dropping it and recreating
 

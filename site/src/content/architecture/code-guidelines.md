@@ -52,9 +52,7 @@ performance, but they don't guarantee durability. For more information, see
 
 Control Transaction
 
-Durability
-
-.
+Durability.
 
 These are the guidelines for coding efficient transactions:
 

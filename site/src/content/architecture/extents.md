@@ -24,9 +24,7 @@ statement pushes the data off-row, the statement fails. For more information, se
 
 Index
 
-architecture and design guide
-
-.
+architecture and design guide.
 
 You can include columns that contain row-overflow data as key or nonkey columns of a
 
@@ -96,9 +94,7 @@ in a user database and in
 
 , except for allocations belonging to the first eight pages of an
 
-IAM chain
-
-. Allocations in the
+IAM chain. Allocations in the
 
 ,
 
@@ -112,15 +108,11 @@ Up to and including SQL Server 2014 (12.x), you can use trace flag (TF) 1118 to 
 
 default allocation to always use uniform extents. For more information about this trace flag, see
 
-trace flag 1118
-
-.
+trace flag 1118.
 
 Starting with SQL Server 2016 (13.x), TF 1118 has no effect. The functionality provided by TF
 
-1118 earlier is automatically enabled for all user databases and for
-
-. For user databases,
+1118 earlier is automatically enabled for all user databases and for. For user databases,
 
 this behavior can be controlled by the
 
@@ -132,9 +124,7 @@ value is
 
 ALTER
 
-DATABASE SET options
-
-.
+DATABASE SET options.
 
 Starting with SQL Server 2012 (11.x), the
 

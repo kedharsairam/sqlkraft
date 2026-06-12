@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 07/16/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -59,15 +57,13 @@ In Azure SQL Database and Azure SQL Managed Instance, instant file initializatio
 
 for transaction log files only.
 
-Applies to:
-
-SQL Server 2022 (16.x) and later versions, and Azure SQL Database and Azure SQL
+2022 (16.x) and later versions, and Azure SQL Database and Azure SQL
 
 Managed Instance.
 
 Historically, transaction log files couldn't be initialized instantaneously. However, starting with
 
-SQL Server 2022 (16.x) (all editions) and in Azure SQL Database and Azure SQL Managed
+2022 (16.x) (all editions) and in Azure SQL Database and Azure SQL Managed
 
 Instance, transaction log autogrowth events up to 64 MB can benefit from instant file
 

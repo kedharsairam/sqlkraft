@@ -9,9 +9,7 @@ pubDate: 2026-05-29
 
 Database improvements in handling some data types and
 
-uncommon operations
-
-.
+uncommon operations.
 
 The
 
@@ -39,9 +37,7 @@ the older query optimizer in SQL Database you must select compatibility level 11
 
 information, see
 
-trace flag 4199
-
-.
+trace flag 4199.
 
 This section describes new behaviors introduced with compatibility level 120.
 
@@ -49,7 +45,7 @@ The older query optimizer is
 
 used.
 
-SQL Server 2014 (12.x) includes substantial improvements to the
+2014 (12.x) includes substantial improvements to the
 
 component that creates and optimizes query plans. This new query
 
@@ -61,7 +57,7 @@ database compatibility level 120 to take advantage of these
 
 improvements. Applications that are migrated from earlier versions of
 
-SQL Server should be carefully tested to confirm that good
+should be carefully tested to confirm that good
 
 performance is maintained or improved. If performance degrades, you
 
@@ -83,9 +79,7 @@ section of
 
 What's
 
-new in SQL Server 2016
-
-.
+new in SQL Server 2016.
 
 In compatibility levels lower
 

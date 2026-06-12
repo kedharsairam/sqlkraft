@@ -23,9 +23,7 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
-SQL Server 2022 (16.x)
+2022 (16.x)
 
 A contained availability group is an Always On availability group (AG) that supports:
 

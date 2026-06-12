@@ -37,15 +37,11 @@ control over who can access the system. For more information, see
 
 What is SELinux (Security-
 
-Enhanced Linux)
-
-.
+Enhanced Linux).
 
 For details about how to enable SELinux for Red Hat systems, see
 
-SELinux Architecture
-
-. You can
+SELinux Architecture. You can
 
 also get started with an
 
@@ -53,15 +49,13 @@ SELinux-enabled operating system
 
 for free.
 
-SQL Server 2022 on Linux
+2022 on Linux
 
 is officially certified with RHEL 9 (as of July 2024), and is now generally
 
 available on the
 
-Red Hat Ecosystem Catalog
-
-.
+Red Hat Ecosystem Catalog.
 
 A
 
@@ -81,7 +75,7 @@ command.
 
 Here's the expected output.
 
-SQL Server and SELinux
+and SELinux
 
 ```cmd
 mssql-server-

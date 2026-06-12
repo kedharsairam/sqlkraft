@@ -2,7 +2,7 @@
 name: "sys.sp_revokedbaccess"
 title: "sp_revokedbaccess"
 category: "general"
-description: "Removes a database user from the current database. Transact-SQL syntax conventions The name of the database user to be removed. , with no default."
+description: "Removes a database user from the current database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-Removes a database user from the current database. Transact-SQL syntax conventions The name of the database user to be removed. , with no default. can be the name of a server login, a Windows login, or a Windows group, and must exist in the current database. When you specify a Windows login or Windows group, specify the name by which it's known in the database. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature.
+Removes a database user from the current database.
 
 ## Syntax
 
@@ -27,11 +27,7 @@ N
 
 ## Remarks
 
-Applies to:
-
 Removes a database user from the current database.
-
-Transact-SQL syntax conventions
 
 The name of the database user to be removed.
 

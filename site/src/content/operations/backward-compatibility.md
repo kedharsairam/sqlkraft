@@ -29,8 +29,6 @@ Article
 
 02/26/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance

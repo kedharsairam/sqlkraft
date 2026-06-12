@@ -89,9 +89,7 @@ for Parquet files in Azure Blob Storage continues to be generally available for
 
 Azure Synapse
 
-Analytics
-
-.
+Analytics.
 
 In SQL databases hosted in Azure, the extract/publish operations with Parquet files offer
 
@@ -113,10 +111,7 @@ or
 
 SQL Server)
 
-```cmd
-.dacpac
-.dacpac
-.bacpac
+```cmd.dacpac.dacpac.bacpac
 /p:AzureStorageBlobEndpoint
 /p:AzureStorageContainer
 /p:AzureSharedAccessSignatureToken

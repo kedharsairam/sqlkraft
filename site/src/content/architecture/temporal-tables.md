@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -43,9 +41,7 @@ Get started with system-versioned temporal tables
 
 , and review
 
-Temporal table usage scenarios
-
-.
+Temporal table usage scenarios.
 
 A system-versioned temporal table is a type of user table designed to keep a full history of
 
@@ -73,17 +69,13 @@ current table
 
 , or simply as the
 
-temporal table
-
-.
+temporal table.
 
 In addition to these period columns, a temporal table also contains a reference to another
 
 table with a mirrored schema, called the
 
-history table
-
-. The system uses the history table to
+history table. The system uses the history table to
 
 automatically store the previous version of the row each time a row in the temporal table gets
 

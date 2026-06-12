@@ -16,15 +16,13 @@ folding. A constant is a Transact-SQL literal, such as
 
 ,
 
-, or
-
-. For example, take this query:
+, or. For example, take this query:
 
 Here, 30 \* 12 is a constant expression. SQL Server can evaluate this during compilation and
 
 rewrite the query internally as:
 
-SQL Server uses constant folding with the following types of expressions:
+uses constant folding with the following types of expressions:
 
 Arithmetic expressions, such as
 
@@ -40,9 +38,7 @@ and
 
 Built-in functions that are considered foldable by SQL Server, including
 
-and
-
-. Generally, an intrinsic function is foldable if it is a function of its inputs only and
+and. Generally, an intrinsic function is foldable if it is a function of its inputs only and
 
 not other contextual information, such as SET options, language settings, database
 
@@ -54,9 +50,7 @@ Deterministic methods of CLR user-defined types and deterministic scalar-valued 
 
 user-defined functions (starting with SQL Server 2012 (11.x)). For more information, see
 
-Constant Folding for CLR User-Defined Functions and Methods
-
-.
+Constant Folding for CLR User-Defined Functions and Methods.
 
 All other expression types aren't foldable. In particular, the following types of expressions
 

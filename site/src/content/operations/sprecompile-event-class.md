@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -41,9 +39,7 @@ The preferred way to trace statement-level recompilations is to use the SQL:Stmt
 
 event class. The SP:Recompile event class is deprecated. For more information, see
 
-SQL:StmtRecompile Event Class
-
-.
+SQL:StmtRecompile Event Class.
 
 Description
 

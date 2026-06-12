@@ -12,9 +12,7 @@ clustered index with a sequentially increasing key value on the table which by f
 
 highest number of inserts. This type of contention isn't uncommon for indexes with a
 
-sequentially increasing key value such as datetime, identity or an application-generated
-
-.
+sequentially increasing key value such as datetime, identity or an application-generated.
 
 To resolve this issue, we used
 

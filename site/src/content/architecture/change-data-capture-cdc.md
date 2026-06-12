@@ -22,8 +22,6 @@ pubDate: 2025-12-01
 
 08/22/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -36,9 +34,7 @@ This article explains how CDC works with SQL Server and Azure SQL Managed Instan
 
 Azure SQL Database, see
 
-CDC with Azure SQL Database
-
-.
+CDC with Azure SQL Database.
 
 Change data capture utilizes the SQL Server Agent to log insertions, updates, and deletions
 

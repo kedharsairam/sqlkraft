@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article shows you how to perform a SQL Server migration in Azure Arc to
@@ -33,9 +31,7 @@ Managed Instance
 
 in the Azure portal for your
 
-SQL Server instance enabled by Azure Arc
-
-.
+instance enabled by Azure Arc.
 
 You can try Azure SQL Managed Instance
 
@@ -43,7 +39,7 @@ for free
 
 for up to a year.
 
-Azure SQL Managed Instance is a fully managed lift-and-shift platform as a service (PaaS)
+is a fully managed lift-and-shift platform as a service (PaaS)
 
 target to run your SQL Server workloads on the Azure cloud platform. After your SQL Server
 
@@ -79,6 +75,4 @@ Then, you can migrate your SQL Server databases to SQL Managed Instance directly
 
 Note
 
-You can provide feedback about your migration experience
-
-.
+You can provide feedback about your migration experience.

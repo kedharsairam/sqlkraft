@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to recover from cluster failures by using the Failover Cluster Manager
@@ -53,9 +51,7 @@ caused by hardware failure in Node 1 of a two-node cluster.
 
 snap-in, right-click Node1, click
 
-, and then click
-
-.
+, and then click.
 
 3. Verify that Node 1 has been evicted from the cluster definition.
 
@@ -65,9 +61,7 @@ snap-in, right-click Node1, click
 
 information, see
 
-Before Installing Failover Clustering
-
-.
+Before Installing Failover Clustering.
 
 6. Ensure that the administrator accounts are the same on all cluster nodes.
 
@@ -75,9 +69,7 @@ Before Installing Failover Clustering
 
 Add or
 
-Remove Nodes in a SQL Server Failover Cluster (Setup)
-
-.
+Remove Nodes in a SQL Server Failover Cluster (Setup).
 
 Us the following steps to recover from a reparable failure. In this case, failure is caused by
 

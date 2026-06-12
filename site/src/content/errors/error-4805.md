@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description that you are using a supported client application programming interface (API). 4805 17 No The front-end tool you are using does not support bulk load from host. Use the supported tools for
+Description that you are using a supported client application programming interface (API). 4805 17 No The front-end tool you are using does not support bulk load from host.
 
 ## Severity
 

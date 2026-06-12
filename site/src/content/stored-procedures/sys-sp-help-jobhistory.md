@@ -2,7 +2,7 @@
 name: "sys.sp_help_jobhistory"
 title: "sp_help_jobhistory"
 category: "general"
-description: "Provides information about the jobs for servers in the multiserver administration domain. Transact-SQL syntax conventions The job identification number."
+description: "Provides information about the jobs for servers in the multiserver administration domain. The job identification number."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -37,7 +37,7 @@ syntax: |
 
 ## Description
 
-Provides information about the jobs for servers in the multiserver administration domain. Transact-SQL syntax conventions The job identification number.
+Provides information about the jobs for servers in the multiserver administration domain. The job identification number.
 
 ## Syntax
 

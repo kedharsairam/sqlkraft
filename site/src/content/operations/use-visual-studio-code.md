@@ -29,9 +29,7 @@ To complete this quickstart, you must have:
 
 from the
 
-official Visual Studio Code website
-
-.
+official Visual Studio Code website.
 
 : In Visual Studio Code, open the Extensions view
 
@@ -51,9 +49,7 @@ portability. For more information, see
 
 Quickstart: Run SQL Server Linux container images
 
-with Docker
-
-.
+with Docker.
 
 : If you prefer a cloud-based option, create a free Azure account and
 
@@ -61,9 +57,7 @@ set up an Azure SQL Database. For more information, see
 
 Quickstart: Create a single
 
-database - Azure SQL Database
-
-.
+database - Azure SQL Database.
 
 SQL database in Fabric
 
@@ -73,17 +67,13 @@ database, create a SQL database in Fabric. For more information, see
 
 Create a SQL
 
-database in Microsoft Fabric
-
-.
+database in Microsoft Fabric.
 
 : Alternatively, download and install SQL Server 2022 Developer Edition
 
 on your local machine. For more information, see
 
-Microsoft SQL Server website
-
-.
+Microsoft SQL Server website.
 
 ```cmd
 mssql

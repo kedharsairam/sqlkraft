@@ -15,11 +15,11 @@ Occurs when waiting for log file space — either waiting for log growth to comp
 
 ## Key Metrics
 
-| Metric    | Description      |
+| Metric | Description |
 | --------- | ---------------- |
 | Wait Type | `LOGMGR_LOGFILE` |
-| Category  | Io               |
-| Severity  | MEDIUM           |
+| Category | Io |
+| Severity | MEDIUM |
 
 ## Troubleshooting
 
@@ -29,10 +29,10 @@ Use the following query to identify the top queries contributing to `LOGMGR_LOGF
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'LOGMGR_LOGFILE'
 ORDER BY wait_time_ms DESC;

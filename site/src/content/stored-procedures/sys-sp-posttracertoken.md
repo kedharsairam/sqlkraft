@@ -43,4 +43,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or the fixed database role can execute . Measure Latency and Validate Connections for Transactional Replication Related content
+Only members of the fixed server role or the fixed database role can execute. Measure Latency and Validate Connections for Transactional Replication

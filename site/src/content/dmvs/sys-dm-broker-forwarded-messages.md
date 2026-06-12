@@ -10,7 +10,7 @@ syntax: "adjacent_broker_address"
 
 ## Description
 
-Returns a row for each Service Broker message that an instance of SQL Server is in the process ID of the conversation to which this message Indicates whether this message is from the initiator of the conversation. Name of the service to which this message is Identifier of the broker that hosts the service to Name of the service that this message is from. Identifier of the broker that hosts the service
+Returns a row for each Service Broker message that an instance of SQL Server is in the process ID of the conversation to which this message Indicates whether this message is from the initiator of the conversation.
 
 ## Syntax
 

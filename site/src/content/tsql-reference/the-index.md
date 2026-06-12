@@ -11,9 +11,7 @@ fragments containing multiple languages are supported. For more information, see
 
 Use Full-
 
-Text Search with XML Columns
-
-.
+Text Search with XML Columns.
 
 We recommend that the index key column is an integer data type. This provides optimizations
 
@@ -25,9 +23,7 @@ its own implicit transaction.
 
 For more information about full-text indexes, see
 
-Create and Manage Full-Text Indexes
-
-.
+Create and Manage Full-Text Indexes.
 
 Whether the full-text index is populated depends on whether change-tracking is enabled and
 
@@ -47,7 +43,7 @@ Specified
 
 No population of the index occurs until an ALTER FULLTEXT
 
-INDEX...START POPULATION statement is issued.
+INDEX.START POPULATION statement is issued.
 
 Enabled
 
@@ -63,9 +59,7 @@ A full population is performed on the index.
 
 For more information about populating full-text indexes, see
 
-Populate Full-Text Indexes
-
-.
+Populate Full-Text Indexes.
 
 The first time that a full-text index is associated with a search property list, the index must be
 
@@ -121,13 +115,9 @@ this population, the Full-Text Engine automatically truncates the index.
 
 Note
 
-For more information about how full-text search works with search property lists, see
+For more information about how full-text search works with search property lists, see. For information about full
 
-. For information about full
-
-populations, see
-
-.
+populations, see.
 
 ### sysadmin
 

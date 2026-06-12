@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 4864 16 No Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row %d, column %d (%ls). 4865 16 No Cannot bulk load because the maximum numb
+Description 4864 16 No Bulk load data conversion error (type mismatch or invalid character for the specified codepage) for row %d, column %d (%ls).
 
 ## Severity
 

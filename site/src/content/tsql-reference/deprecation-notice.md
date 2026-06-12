@@ -73,9 +73,7 @@ names can't contain
 
 or
 
-or end with a
-
-.
+or end with a.
 
 ```sql
 CONTROL SERVER
@@ -102,6 +100,5 @@ because it does not exist or you do not have permission.
 \
 ```
 
-```sql
-.
+```sql.
 ```

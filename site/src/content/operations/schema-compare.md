@@ -49,7 +49,5 @@ To use the Schema Compare features, install the MSSQL extension for Visual Studi
 
 
 
-```cmd
-.dacpac
-.dacpac
+```cmd.dacpac.dacpac
 ```

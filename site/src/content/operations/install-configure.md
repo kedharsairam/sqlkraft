@@ -33,27 +33,21 @@ Article
 
 04/26/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
 
 Wide World Importers OLTP database installation and configuration instructions.
 
-SQL Server 2016
+2016
 
 (or higher) or
 
-Azure SQL Database
-
-. For the Full version of the
+Azure SQL Database. For the Full version of the
 
 sample, use SQL Server Evaluation/Developer/Enterprise Edition.
 
-SQL Server Management Studio
-
-. For the best results use the June 2016 release or later.
+Management Studio. For the best results use the June 2016 release or later.
 
 The latest release of the sample:
 
@@ -77,9 +71,7 @@ To restore a backup to a SQL Server instance, you can use Management Studio.
 
 2. Right-click on the
 
-node, and select
-
-.
+node, and select.
 
 3. Select
 
@@ -91,9 +83,7 @@ and click on the button
 
 , navigate to the database backup in the
 
-filesystem of the server, and select the backup. Click
-
-.
+filesystem of the server, and select the backup. Click.
 
 5. If needed, change the target location for the data and log files, in the
 

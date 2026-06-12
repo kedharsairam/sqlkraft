@@ -21,13 +21,11 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server Profiler can't replay the following kinds of traces:
+Profiler can't replay the following kinds of traces:
 
 Traces that contain transactional replication and other transaction log activity. These
 
@@ -77,21 +75,17 @@ required data, SQL Server Profiler doesn't replay the trace. For more informatio
 
 Replay
 
-Requirements
-
-.
+Requirements.
 
 For information about what permissions are required to replay a trace, see
 
 Permissions
 
-required to run SQL Server Profiler
-
-.
+required to run SQL Server Profiler.
 
 bcp Utility
 
-SQL Server Event Class Reference
+Event Class Reference
 
 sp_getbindtoken
 

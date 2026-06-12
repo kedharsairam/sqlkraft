@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -52,8 +50,6 @@ schema namespace, you can try the call when the system load is lighter, or you c
 the call in single-user mode.
 
 Requirements and Limitations for XML Schema Collections on the Server
-
-Last updated on 11/18/2025
 
 ```sql
 master model tempdb

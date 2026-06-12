@@ -37,9 +37,7 @@ subsystem. Upgrading a database with memory-optimized tables can take extra time
 
 information, see
 
-Plan and test the Database Engine upgrade plan on Windows
-
-.
+Plan and test the Database Engine upgrade plan on Windows.
 
 Make sure that your high availability and disaster recovery (HADR) strategy includes a fallback
 

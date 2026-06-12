@@ -19,11 +19,9 @@ pubDate: 2025-12-01
 
 :
 
-Applies to:
+2025 (17.x)
 
-SQL Server 2025 (17.x)
-
-SQL Server 2025 introduces managed identity support for linked servers, enabling secure,
+2025 introduces managed identity support for linked servers, enabling secure,
 
 credential-free authentication between SQL Server instances. This capability is available for
 
@@ -43,7 +41,7 @@ server to accept managed identity-based authentication.
 
 Before you begin, ensure you have the following:
 
-SQL Server 2025 running on either:
+2025 running on either:
 
 Azure Virtual Machine with SQL Server IaaS Agent extension installed, or
 
@@ -87,9 +85,7 @@ Configure Microsoft Entra authentication following the guidance in
 
 Enable Microsoft
 
-Entra authentication for SQL Server on Azure VMs
-
-.
+Entra authentication for SQL Server on Azure VMs.
 
 Ensure both virtual machines allow inbound and outbound network traffic for SQL Server
 

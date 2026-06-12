@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Use this procedure to uninstall an Always On SQL Server failover cluster instance.
@@ -51,19 +49,15 @@ For information about command prompt syntax, see
 
 Install SQL Server 2016 from the
 
-Command Prompt
-
-.
+Command Prompt.
 
 1. To uninstall a SQL Server failover cluster, use the Remove Node functionality provided by
 
-SQL Server Setup to remove each node individually. For more information, see
+Setup to remove each node individually. For more information, see
 
 Add or
 
-Remove Nodes in an Always On Failover Cluster (Setup)
-
-.
+Remove Nodes in an Always On Failover Cluster (Setup).
 
 View and Read SQL Server Setup Log Files
 

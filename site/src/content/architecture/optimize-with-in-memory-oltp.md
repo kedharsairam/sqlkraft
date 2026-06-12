@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2017 (14.x) and later versions
+2017 (14.x) and later versions
 
 Azure SQL Database
 
@@ -33,7 +31,7 @@ SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-SQL Server and Azure SQL Database let you work with text formatted as JSON. To increase the
+and Azure SQL Database let you work with text formatted as JSON. To increase the
 
 performance of queries that process JSON data, you can store JSON documents in memory-
 

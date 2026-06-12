@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 8409 16 No This message could not be delivered because the targeted service does not support the service contract. Targeted service: '%.*ls', service contract: '%.*ls'. 8410 16 No The conv
+Description 8409 16 No This message could not be delivered because the targeted service does not support the service contract. Targeted service: '%.*ls', service contract: '%.*ls'.
 
 ## Severity
 

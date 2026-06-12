@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -33,9 +31,7 @@ For instructions on how to configure repositories for SQL Server 2022 (16.x) and
 
 versions, see
 
-Configure Repositories for Installing and Upgrading SQL Server on Linux
-
-.
+Configure Repositories for Installing and Upgrading SQL Server on Linux.
 
 When you install SQL Server on Linux, you must configure a Microsoft repository. Use this
 
@@ -47,13 +43,13 @@ packages. The following repositories are currently available:
 
 Description
 
-SQL Server 2025 (17.x) repository.
+2025 (17.x) repository.
 
-SQL Server 2022 (16.x) repository.
+2022 (16.x) repository.
 
-SQL Server 2019 (15.x) Cumulative Update (CU) repository.
+2019 (15.x) Cumulative Update (CU) repository.
 
-SQL Server 2017 (14.x) Cumulative Update (CU) repository.
+2017 (14.x) Cumulative Update (CU) repository.
 
 The Cumulative Update (CU) repository contains packages for the base SQL Server release, and
 
@@ -77,9 +73,7 @@ Tip
 
 RHEL 10 and Ubuntu 24.04 are supported starting with SQL Server 2025 (17.x) CU 1. For
 
-more information, see the
-
-.
+more information, see the.
 
 ﾉ
 

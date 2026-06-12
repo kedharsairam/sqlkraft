@@ -41,7 +41,7 @@ different version of SQL Server Data Tools and from the command line.
 
 Custom Test Condition for
 
-SQL Server Unit Tests
+Unit Tests
 
 Build Contributors
 
@@ -53,11 +53,7 @@ The
 
 varies depending on which version of Visual Studio you're
 
-using and where you chose to install it. For Visual Studio 2012, it's usually
-
-. For Visual Studio 2013, it's usually
-
-.
+using and where you chose to install it. For Visual Studio 2012, it's usually. For Visual Studio 2013, it's usually.
 
 Extensions can be run as part of our command-line services:
 

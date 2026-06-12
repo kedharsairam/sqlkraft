@@ -2,12 +2,10 @@
 name: "Relational operators"
 title: "Relational operators"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -33,7 +31,7 @@ input parameters and returns a result set. Relational operators are used as tabl
 
 DML statement.
 
-SQL Server implements the following relational operators:
+implements the following relational operators:
 
 GENERATE_SERIES (Transact-SQL)
 
@@ -58,7 +56,3 @@ table-valued function
 in a query or T-SQL statement.
 
 What are the SQL database functions?
-
-Last updated on 11/18/2025
-
-Related content

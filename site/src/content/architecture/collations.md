@@ -10,17 +10,11 @@ Deprecated feature
 
 Replacement
 
-Feature name
-
-...
-
-. For more information, see
+Feature name. For more information, see
 
 ALTER DATABASE
 
-(Transact-SQL) compatibility level
-
-.
+(Transact-SQL) compatibility level.
 
 Database
 
@@ -36,9 +30,7 @@ possible, to make the upgrades easier. For more information about compatibility 
 
 see
 
-ALTER DATABASE (Transact-SQL) compatibility level
-
-.
+ALTER DATABASE (Transact-SQL) compatibility level.
 
 Database
 
@@ -152,9 +144,7 @@ data types.
 
 For more information, see
 
-sp_tableoption
-
-.
+sp_tableoption.
 
 Text in row table option
 

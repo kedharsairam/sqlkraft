@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -49,9 +47,7 @@ certificates that aren't yet valid, that have expired, or that aren't marked as 
 
 dialog. For more information on certificates, see
 
-CREATE CERTIFICATE
-
-.
+CREATE CERTIFICATE.
 
 If no remote service binding exists or the user for the remote service binding doesn't own a
 
@@ -67,13 +63,9 @@ binding, the conversation is delayed if encryption is
 
 , or continues without encryption if
 
-encryption is
+encryption is. For more information, see
 
-. For more information, see
-
-Determine the dialog security type
-
-.
+Determine the dialog security type.
 
 Service Broker dialog security uses certificates for remote authorization. When a dialog uses
 

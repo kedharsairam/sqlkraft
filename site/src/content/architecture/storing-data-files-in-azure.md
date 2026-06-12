@@ -17,13 +17,11 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server data files in Microsoft Azure
-
-Applies to:
+data files in Microsoft Azure
 
 SQL Server
 
-SQL Server Data Files in Microsoft Azure enables native support for SQL Server database files
+Data Files in Microsoft Azure enables native support for SQL Server database files
 
 stored as blobs. It allows you to create a database in SQL Server running in on-premises or in a
 

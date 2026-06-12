@@ -31,8 +31,6 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -53,33 +51,23 @@ Publishing and Distribution
 
 and
 
-View and Modify Distributor and Publisher Properties
-
-.
+View and Modify Distributor and Publisher Properties.
 
 1. On the
 
-page of the Configure Distribution Wizard, click
+page of the Configure Distribution Wizard, click.
 
-.
-
-2. Click
-
-. For information about enabling an Oracle Publisher to
+2. Click. For information about enabling an Oracle Publisher to
 
 use a Distributor, see
 
-Create a Publication from an Oracle Database
-
-.
+Create a Publication from an Oracle Database.
 
 3. In the
 
 dialog box, specify connection information for the Publisher that
 
-will use the remote Distributor, and then click
-
-.
+will use the remote Distributor, and then click.
 
 4. On the
 
@@ -99,35 +87,25 @@ connect from the Publisher to the Distributor to perform administrative tasks.
 
 ).
 
-6. Select
-
-.
+6. Select.
 
 1. On the
 
 page of the
 
-dialog box, click
+dialog box, click.
 
-.
-
-2. Click
-
-. For information about enabling an Oracle Publisher to
+2. Click. For information about enabling an Oracle Publisher to
 
 use a Distributor, see
 
-Create a Publication from an Oracle Database
-
-.
+Create a Publication from an Oracle Database.
 
 3. In the
 
 dialog box, specify connection information for the Publisher that
 
-will use the remote Distributor, and then click
-
-.
+will use the remote Distributor, and then click.
 
 4. On the
 

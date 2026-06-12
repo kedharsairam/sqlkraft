@@ -42,8 +42,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 XQuery supports the following operators:
@@ -74,9 +72,7 @@ comparison operator. Each node in the sequence on the right side of the
 
 operator is compared with each node in the sequence on the left side. If the nodes match,
 
-the node comparison is
-
-. It is then converted to an int and compared with 1, and the
+the node comparison is. It is then converted to an int and compared with 1, and the
 
 query returns the customer ID.
 

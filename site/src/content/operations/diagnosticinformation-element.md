@@ -29,8 +29,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 The
@@ -74,7 +72,6 @@ Expand table
 ```cmd
 DiagnosticInformation
 DiagnosticInformation
-<DiagnosticInformation>
-...
+<DiagnosticInformation>.
 </DiagnosticInformation>
 ```

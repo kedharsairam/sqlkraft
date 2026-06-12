@@ -37,9 +37,7 @@ For detailed information about iterative filtering behavior and how it differs f
 
 versions, see
 
-Iterative filtering behavior
-
-.
+Iterative filtering behavior.
 
 ７
 
@@ -63,9 +61,7 @@ nearest neighbor index vs. kNN search). To force the use of the approximate near
 
 neighbor index, use the
 
-table hint. For more information, see
-
-.
+table hint. For more information, see.
 
 ### Performance benefit:
 

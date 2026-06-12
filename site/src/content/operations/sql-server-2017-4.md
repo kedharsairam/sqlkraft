@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to: SQL Server 2017
-
 The following table lists the release history for SQL Server 2017 (14.x).
 
 CU 31 GDR (May 2026)

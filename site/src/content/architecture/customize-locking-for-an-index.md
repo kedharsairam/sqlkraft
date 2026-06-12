@@ -38,13 +38,9 @@ enables HoBT (partition) locks on partitioned tables. This option isn't a lockin
 
 used to reduce
 
-lock escalation
+lock escalation. For more information, see
 
-. For more information, see
-
-ALTER TABLE (Transact-SQL)
-
-.
+ALTER TABLE (Transact-SQL).
 
 The Database Engine uses a dynamic locking strategy that automatically chooses the best locking
 

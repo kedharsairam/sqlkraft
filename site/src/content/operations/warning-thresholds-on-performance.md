@@ -27,8 +27,6 @@ Article
 
 11/25/2024
 
-Applies to:
-
 SQL Server
 
 This topic contains information about the SQL Server events for which warning thresholds can

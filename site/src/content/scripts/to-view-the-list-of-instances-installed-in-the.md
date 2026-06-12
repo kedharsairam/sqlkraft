@@ -1,7 +1,7 @@
 ---
 name: "To View the List of Instances Installed in the"
 title: "To View the List of Instances Installed in the"
-description: "SQL Server diagnostic script for installation operations."
+description: "diagnostic script for installation operations."
 category: installation
 tags: ["installation"]
 pubDate: 2025-03-15

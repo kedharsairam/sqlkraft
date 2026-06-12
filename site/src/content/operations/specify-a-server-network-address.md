@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Setting up a database mirroring session requires a server network address for each of the
@@ -45,9 +43,7 @@ must exist on the server instance. For more information, see
 
 Create a Database Mirroring
 
-Endpoint for Windows Authentication (Transact-SQL)
-
-.
+Endpoint for Windows Authentication (Transact-SQL).
 
 The syntax for a server network address is of the form:
 
@@ -69,9 +65,7 @@ domain), a fully qualified domain name, or an IP address:
 
 If the systems are the same domain, you can use the name of the computer system; for
 
-example,
-
-.
+example,.
 
 To use an IP address, it must be unique in your environment. We recommend that you
 
@@ -81,9 +75,7 @@ Version 6 (IPv6). An IPv6 address must be enclosed within square brackets, for
 
 example:
 
-<IPv6_address>
-
-.
+<IPv6_address>.
 
 To learn the IP address of a system, at the Windows command prompt, enter the
 

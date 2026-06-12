@@ -27,8 +27,6 @@ Article
 
 04/01/2024
 
-Applies to:
-
 SQL Server
 
 The data and transaction log files of a database can be detached and then reattached to the
@@ -57,9 +55,7 @@ The database is replicated and published. If replicated, the database must be
 
 unpublished. Before you can detach it, you must disable publishing by running
 
-sp_replicationdboption
-
-.
+sp_replicationdboption.
 
 ）
 

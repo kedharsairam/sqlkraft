@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server on Linux
-
-Applies to:
+on Linux
 
 SQL Server
 
@@ -33,7 +31,7 @@ This article describes how to configure the persistent memory (PMEM) for SQL Ser
 
 (15.x) and later versions on Linux.
 
-SQL Server 2019 (15.x) introduced many in-memory features that use persistent memory. This
+2019 (15.x) introduced many in-memory features that use persistent memory. This
 
 article covers the steps required to configure persistent memory for SQL Server on Linux.
 
@@ -45,9 +43,7 @@ Install
 
 to configure PMEM device from
 
-Installing NDCTL
-
-.
+Installing NDCTL.
 
 Use
 

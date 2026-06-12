@@ -79,9 +79,7 @@ This syntax is similar to users based on logins in
 
 , but this category of user doesn't have
 
-a login in
-
-. The user must have access to the Database Engine through a Windows
+a login in. The user must have access to the Database Engine through a Windows
 
 group login.
 

@@ -56,9 +56,7 @@ The Database Engine supports several data types that can hold large strings up t
 
 ,
 
-, and
-
-.
+, and.
 
 Large data stored using these data types are stored in a series of data fragments that are linked
 

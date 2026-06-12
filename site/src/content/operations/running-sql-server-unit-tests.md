@@ -27,9 +27,7 @@ functionality. You can run individual tests, or you can run groups of tests, whi
 
 test lists. For more information, see
 
-Using Test Lists (Visual Studio 2010)
-
-.
+Using Test Lists (Visual Studio 2010).
 
 You can run SQL Server unit tests in several ways that vary based on the software that you have
 
@@ -45,15 +43,11 @@ and
 
 How to: Run Automated Tests from Microsoft
 
-Visual Studio 2010
-
-. For Visual Studio 2012, see
+Visual Studio 2010. For Visual Studio 2012, see
 
 How to: Run Automated Tests from
 
-Microsoft Visual Studio 2012
-
-.
+Microsoft Visual Studio 2012.
 
 Run tests by using the MSTest.exe command at a command prompt. For more
 
@@ -67,9 +61,7 @@ or
 
 How to: Run Automated Tests from the Command Line Using
 
-MSTest (Visual Studio 2012)
-
-.
+MSTest (Visual Studio 2012).
 
 Run tests from
 
@@ -81,9 +73,7 @@ or
 
 How to: Run
 
-Automated Tests from Microsoft Visual Studio 2012
-
-.
+Automated Tests from Microsoft Visual Studio 2012.
 
 Rerun tests from the
 
@@ -91,9 +81,7 @@ window. For more information, see
 
 How to: Rerun a
 
-Test (Visual Studio 2010)
-
-.
+Test (Visual Studio 2010).
 
 Run individual tests or test lists (Visual Studio 2010) from the
 
@@ -105,9 +93,7 @@ How to: Run Automated Tests from Microsoft Visual Studio 2010
 
 or
 
-How to: Run Automated Tests from Microsoft Visual Studio 2012
-
-.
+How to: Run Automated Tests from Microsoft Visual Studio 2012.
 
 Run tests as you build a project in Team Foundation Build. For more information, see
 
@@ -121,6 +107,4 @@ or
 
 How to: Configure and Run Scheduled Tests After Building Your Application
 
-(Visual Studio 2012)
-
-.
+(Visual Studio 2012).

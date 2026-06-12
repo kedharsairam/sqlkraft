@@ -33,8 +33,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 : Availability Group Online State

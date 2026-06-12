@@ -2,7 +2,7 @@
 name: "sys.sp_add_targetservergroup"
 title: "sp_add_targetservergroup"
 category: "general"
-description: "Adds the specified server group. Transact-SQL syntax conventions The name of the server group to create. Target server groups provide an easy way to target a job at a collection of target servers. For"
+description: "Adds the specified server group."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -13,7 +13,7 @@ syntax: |
 
 ## Description
 
-Adds the specified server group. Transact-SQL syntax conventions The name of the server group to create. Target server groups provide an easy way to target a job at a collection of target servers. For
+Adds the specified server group.
 
 ## Syntax
 
@@ -25,4 +25,4 @@ sp_add_targetservergroup [ @name = ]
 
 ## Permissions
 
-06/23/2025 Applies to: SQL Server Adds the specified server group. Transact-SQL syntax conventions syntaxsql The name of the server group to create. @name is , with no default. @name can't contain commas. (success) or (failure). None. Target server groups provide an easy way to target a job at a collection of target servers. For more information, see sp_apply_job_to_targets . SQL sp_add_targetservergroup (Transact-SQL) sp_help_targetservergroup (Transact-SQL) sp_update_targetservergroup (Transact-SQL) Related content
+06/23/2025 syntaxsql The name of the server group to create. @name is , with no default. @name can't contain commas. (success) or (failure). None. Target server groups provide an easy way to target a job at a collection of target servers. For more information, see sp_apply_job_to_targets. SQL sp_add_targetservergroup (Transact-SQL) sp_help_targetservergroup (Transact-SQL) sp_update_targetservergroup (Transact-SQL)

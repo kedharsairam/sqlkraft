@@ -29,8 +29,6 @@ Article
 
 03/15/2025
 
-Applies to:
-
 SQL Server
 
 To configure an Always On availability group to support read-only routing in SQL Server, you
@@ -53,17 +51,13 @@ running under the secondary role). To support read-only routing, the availabilit
 
 possess an
 
-availability group listener
-
-. Read-only clients must direct their connection requests
+availability group listener. Read-only clients must direct their connection requests
 
 to this listener, and the client's connection strings must specify the application intent as "read-
 
 only." That is, they must be
 
-read-intent connection requests
-
-.
+read-intent connection requests.
 
 Read-only routing is available in SQL Server 2016 (13.x) and later.
 
@@ -71,9 +65,7 @@ The availability group must possess an availability group listener. For more inf
 
 see
 
-Create or Configure an Availability Group Listener (SQL Server)
-
-.
+Create or Configure an Availability Group Listener (SQL Server).
 
 One or more availability replicas must be configured to accept read-only in the secondary
 
@@ -85,9 +77,7 @@ readable secondary replicas
 
 Configure
 
-Read-Only Access on an Availability Replica (SQL Server)
-
-.
+Read-Only Access on an Availability Replica (SQL Server).
 
 You must be connected to the server instance that hosts the current primary replica.
 
@@ -97,14 +87,10 @@ see
 
 Management of Logins and Jobs for the Databases of an Availability Group (SQL
 
-Server)
-
-.
+Server).
 
 ７
 
 Note
 
-For information about how to configure a readable secondary replica, see
-
-.
+For information about how to configure a readable secondary replica, see.

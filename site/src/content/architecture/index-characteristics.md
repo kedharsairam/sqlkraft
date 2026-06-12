@@ -26,9 +26,7 @@ on family name doesn't expedite locating a person if all people in the city are 
 
 Smith or Jones. For more information about data distribution, see
 
-Statistics
-
-.
+Statistics.
 
 Consider using filtered indexes on columns that have well-defined subsets, for example
 
@@ -70,9 +68,7 @@ query predicate in the
 
 clause is
 
-or
-
-. However, the query optimizer wouldn't use the index for
+or. However, the query optimizer wouldn't use the index for
 
 a query that searched only on
 
@@ -84,9 +80,7 @@ Consider indexing computed columns if they are included in query predicates. For
 
 information, see
 
-Indexes on computed columns
-
-.
+Indexes on computed columns.
 
 After you determine that an index is appropriate for a query, you can select the type of index
 

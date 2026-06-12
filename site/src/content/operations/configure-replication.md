@@ -29,8 +29,6 @@ Article
 
 01/08/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -41,7 +39,7 @@ Each step is described in more detail in the following sections.
 
 The distribution database can't be placed in an availability group with SQL Server 2012 and
 
-SQL Server 2014. Placing the distribution database into an availability group is supported with
+2014. Placing the distribution database into an availability group is supported with
 
 SQL 2016 and greater, except for distribution databases used in merge, bidirectional, or peer-
 
@@ -49,9 +47,7 @@ to-peer replication topologies. For more information, see
 
 Set up replication distribution
 
-database in Always On availability group
-
-.
+database in Always On availability group.
 
 1. Configure distribution at the distributor. If stored procedures are being used for
 

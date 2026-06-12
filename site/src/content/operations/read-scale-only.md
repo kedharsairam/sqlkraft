@@ -27,13 +27,11 @@ Article
 
 10/20/2023
 
-Applies to:
-
 SQL Server
 
 An availability group is a comprehensive solution that brings high-availability capabilities to
 
-SQL Server and offers integrated scaling solutions as well. In a typical database application,
+and offers integrated scaling solutions as well. In a typical database application,
 
 multiple clients run various types of workloads. Sometimes bottlenecks can develop due to
 

@@ -29,8 +29,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -54,8 +52,6 @@ Event Class
 Used to monitor user-defined events that cannot be monitored by the system-
 
 supplied events in other event categories.
-
-Last updated on 11/18/2025
 
 ﾉ
 

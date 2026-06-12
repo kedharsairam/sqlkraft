@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 09/29/2025
 
-Applies to:
-
 SQL Server
 
 Describes how to create a new FileTable, or alter or drop an existing FileTable.
@@ -31,9 +29,7 @@ stores FILESTREAM data, file and directory information, and file attributes. For
 
 about the FileTable schema, see
 
-FileTable Schema
-
-.
+FileTable Schema.
 
 You can create a new FileTable by using Transact-SQL or SQL Server Management Studio. Since
 
@@ -67,9 +63,7 @@ FileTable has a fixed schema, you don't have to specify a list of columns. You c
 
 following settings for the new FileTable:
 
-1.
-
-. Specifies the directory that serves as the root directory for all the
+1. Specifies the directory that serves as the root directory for all the
 
 files and directories stored in the FileTable. This name should be unique among all the
 
@@ -79,9 +73,7 @@ regardless of the current collation settings.
 
 This value has a data type of
 
-and uses a fixed collation of
-
-.
+and uses a fixed collation of.
 
 The directory name that you provide must comply with the requirements of the file
 

@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Invalid or out-of-range data may have been stored in the SQL Server database for the following reasons: Invalid data was inserted into SQL Server through remote procedure call (RPC) events. Other pote
+Invalid or out-of-range data may have been stored in the SQL Server database for the following reasons: Invalid data was inserted into SQL Server through remote procedure call (RPC) events.
 
 ## Severity
 

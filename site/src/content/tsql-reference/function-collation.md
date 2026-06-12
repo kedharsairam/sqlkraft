@@ -15,8 +15,6 @@ Perform logical operations.
 
 Mathematical Functions
 
-Perform calculations based on input values provided as parameters to
-
 the functions, and return numeric values.
 
 Metadata Functions
@@ -39,8 +37,6 @@ string or numeric value.
 
 System Functions
 
-Perform operations and return information about values, objects, and
-
 settings in an instance of SQL Server.
 
 System Statistical Functions
@@ -57,33 +53,23 @@ Scalar functions perform an operation on a string input value and return a strin
 
 value, for example,
 
-ASCII (Transact-SQL)
-
-.
+ASCII (Transact-SQL).
 
 All built-in string functions except
 
-are deterministic. This means they return the same
+are deterministic.
 
-value any time they are called with a specific set of input values. For more information about
+value any time they are called with a specific set of input values.
 
-function determinism, see
+Deterministic and Nondeterministic Functions.
 
-Deterministic and Nondeterministic Functions
-
-.
-
-When string functions are passed arguments that are not string values, the input type is
-
-implicitly converted to a text data type. For more information, see
+implicitly converted to a text data type.
 
 Data Type Conversion
 
-(Database Engine)
+(Database Engine).
 
-.
-
-SQL Server built-in functions are either deterministic or nondeterministic. Functions are
+built-in functions are either deterministic or nondeterministic.
 
 deterministic when they always return the same result anytime they're called by using a specific
 

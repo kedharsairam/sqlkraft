@@ -30,8 +30,6 @@ Article
 
 01/22/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -42,15 +40,13 @@ Management Studio or Transact-SQL.
 
 Security
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 
 A file must be empty before it can be deleted. For more information, see
 
-Shrink a File
-
-.
+Shrink a File.
 
 Requires ALTER permission on the database.
 

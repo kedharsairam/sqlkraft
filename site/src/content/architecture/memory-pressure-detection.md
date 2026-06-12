@@ -76,9 +76,7 @@ lower memory usage caps.
 
 Note
 
-Prior to SQL Server 2012 (11.x), enabling large pages in SQL Server requires
-
-.
+Prior to SQL Server 2012 (11.x), enabling large pages in SQL Server requires.
 
 Memory settings were manually lowered by reducing the
 
@@ -112,9 +110,7 @@ the current condition of
 
 ,
 
-, or
-
-.
+, or.
 
 The Memory Broker ring buffer, which contains records of memory notifications for each
 
@@ -136,9 +132,7 @@ required.
 
 For more information about memory brokers, see
 
-sys.dm_os_memory_brokers
-
-.
+sys.dm_os_memory_brokers.
 
 Database pages can use one of two optional mechanisms that help ensure the integrity of the
 
@@ -150,9 +144,7 @@ and
 
 checksum
 
-protection
-
-. These mechanisms allow an independent method of verifying the correctness of not
+protection. These mechanisms allow an independent method of verifying the correctness of not
 
 only the data storage, but hardware components such as controllers, drivers, cables, and even
 
@@ -160,7 +152,7 @@ the operating system. The protection is added to the page just before writing it
 
 verified after it's read from disk.
 
-SQL Server retries any read that fails with a checksum, torn page, or other I/O error four times.
+retries any read that fails with a checksum, torn page, or other I/O error four times.
 
 If the read is successful in any one of the retry attempts, a message is written to the error log
 

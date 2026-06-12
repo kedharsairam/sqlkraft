@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 - Linux
@@ -33,9 +31,7 @@ Linux. For more information about the features that are supported in Integration
 
 Linux, see
 
-Limitations and known issues for SSIS on Linux
-
-.
+Limitations and known issues for SSIS on Linux.
 
 You can install SQL Server Integration Services (SSIS) on Red Hat Enterprise Linux (RHEL) and
 
@@ -55,15 +51,11 @@ Bash
 
 Bash
 
-3. After installation, run
-
-. For more info, see
+3. After installation, run. For more info, see
 
 Configure SQL Server Integration
 
-Services on Linux with ssis-conf
-
-.
+Services on Linux with ssis-conf.
 
 Bash
 

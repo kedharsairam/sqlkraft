@@ -23,11 +23,7 @@ definition, and thus don't become available in ODBC applications.
 
 Typically, sampling a large number of documents results in a schema
 
-definition that is more accurate and better able to represent all the
-
 data in the database. However, the sampling process might take longer
-
-than expected when many documents are sampled, especially if the
 
 database contains complex, nested data structures.
 
@@ -41,19 +37,13 @@ temporary schema definition.
 
 Forward
 
-: The driver samples data starting from the first record in the
-
 database, then samples the next record, and so on.
 
 Backward
 
-: The driver samples data starting from the last record in the
-
 database, then samples the preceding record, and so on.
 
 Random
-
-: The driver selects sample records from the data source at
 
 random until the SamplingLimit is reached.
 
@@ -64,8 +54,6 @@ Clear
 )
 
 No
-
-This option specifies whether the driver uses SSL to connect to the
 
 server.
 
@@ -103,17 +91,11 @@ Indicates whether or not the driver supports the SQLRowCount
 
 function being called on ODBC catalog functions. Default is false. For
 
-example:
-
-.
+example:.
 
 ,
 
-Indicates whether or not the driver supports setting the
-
-statement attribute. Default is false. For example:
-
-.
+statement attribute. Default is false. For example:.
 
 ,
 
@@ -121,11 +103,7 @@ Indicates whether or not the driver supports bind offsets for row-wise
 
 binding of result sets. If not, use column binding. Default is false. For
 
-example:
-
-.
-
-Expand table
+example:.
 
 Key
 
@@ -137,108 +115,24 @@ values
 
 ,
 
-Contains information specifying how to push down the
-
 operator
 
-to the backend. The default is an empty string, indicating a lack of
-
-support for
+to the backend.
 
 pushdown. If the user specifies
 
 ,
 
-is used
-
 as the format string. If the user specifies
 
 ,
 
-is used as
+the format string.
 
-the format string. This implementation is driver-specific, consult the
-
-external data source and/or driver documentation. For example:
-
-.
+external data source and/or driver documentation. For example:.
 
 Data virtualization with PolyBase in SQL Server
 
 CREATE EXTERNAL DATA SOURCE (Transact-SQL)
 
 PolyBase Frequently asked questions
-
-Related content
-
-`SamplingStrategy`
-
-`SSL`
-
-```sql
-0
-```
-
-`CONNECTION_OPTIONS`
-
-```sql
-PolyBaseOdbcSupportsRowCount
-TRUE
-```
-
-`FALSE`
-
-```sql
-CONNECTION_OPTIONS='PolyBaseOdbcSupportsRowCount=TRUE'
-```
-
-```sql
-PolyBaseOdbcSupportsMetadataIdAttributes
-TRUE
-```
-
-`FALSE`
-
-`METADATA_ID`
-
-```sql
-CONNECTION_OPTIONS='PolyBaseOdbcSupportsMetadataIdAttributes=TRUE'
-```
-
-```sql
-PolyBaseOdbcSupportsBindOffset
-TRUE
-```
-
-`FALSE`
-
-```sql
-CONNECTION_OPTIONS='PolyBaseOdbcSupportsBindOffset=TRUE'
-```
-
-```sql
-PolyBaseQoTopPushdownSyntax
-TOP
-```
-
-`LIMIT`
-
-`TOP`
-
-`TOP`
-
-`TOP`
-
-```sql
-top {0}
-```
-
-`LIMIT`
-
-```sql
-limit {0}
-```
-
-```sql
-CONNECTION_OPTIONS=PolyBaseQoTopPushdownSyntax=TOP'
-```

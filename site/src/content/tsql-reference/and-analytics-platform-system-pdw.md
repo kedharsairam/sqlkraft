@@ -11,9 +11,7 @@ When the database compatibility level is 110 or higher. See
 
 Breaking changes to Database
 
-Engine features in SQL Server 2016
-
-.
+Engine features in SQL Server 2016.
 
 The following guidelines apply to using a recursive common table expression:
 
@@ -57,9 +55,7 @@ value can be specified per statement.
 
 For more information, see
 
-Query hints
-
-.
+Query hints.
 
 A view that contains a recursive common table expression can't be used to update data.
 

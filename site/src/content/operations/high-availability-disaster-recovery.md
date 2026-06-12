@@ -19,11 +19,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server high availability and disaster
+high availability and disaster
 
 09/08/2025
-
-Applies to:
 
 SQL Server
 
@@ -46,8 +44,6 @@ Server virtual machines from on-premises data center to Azure or to
 another on-premises data center or from one Azure data centers to
 
 another Azure data center.
-
-Applies to:
 
 Enterprise and Standard editions of SQL Server 2008 R2
 
@@ -73,9 +69,7 @@ unplanned downtime, unlocks huge cost savings, drastically simplifies
 
 management, and gets you both physical and logical consolidation.
 
-Applies to:
-
-SQL Server 2005 (9.x) and later versions, Windows Server
+2005 (9.x) and later versions, Windows Server
 
 2008 R2 and later versions, Ubuntu 16.04 and later versions, Red Hat
 
@@ -109,9 +103,7 @@ availability group workloads. Maximize uptime with HPE SGLX without
 
 compromising data integrity and performance.
 
-Applies to:
-
-SQL Server on Linux - Red Hat Enterprise Linux and SUSE
+on Linux - Red Hat Enterprise Linux and SUSE
 
 Linux Enterprise Server
 

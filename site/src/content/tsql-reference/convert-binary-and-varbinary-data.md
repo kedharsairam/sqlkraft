@@ -2,12 +2,10 @@
 name: "Convert binary and varbinary data"
 title: "Convert binary and varbinary data"
 category: "data-types"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -57,9 +55,7 @@ maximum storage size is 2^31-1 bytes. The storage size is the actual length of t
 
 - 2 bytes. The data that is entered can be 0 bytes in length. The ANSI SQL synonym for
 
-is
-
-.
+is.
 
 The default length is 1 when
 
@@ -123,9 +119,7 @@ You can convert
 
 to
 
-or
-
-. If you convert the
+or. If you convert the
 
 value back to an integer value, this value is different from the original integer value if
 
@@ -151,17 +145,13 @@ raising an error:
 
 The final result is
 
-, not
-
-.
+, not.
 
 CAST and CONVERT (Transact-SQL)
 
 Data Type Conversion (Database Engine)
 
 Data Types (Transact-SQL)
-
-Last updated on 11/21/2025
 
 ７
 
@@ -172,56 +162,3 @@ Conversions between any data type and the
 data types are not guaranteed to be
 
 the same between versions of SQL Server.
-
-Related content
-
-`CAST`
-
-```sql
-123456
-```
-
-```sql
-0x0001e240
-```
-
-`SELECT`
-
-```sql
-0xe240
-```
-
-```sql
-SELECT
-CAST ( 123456
-AS
-BINARY (4) );
-SELECT
-CAST ( 123456
-AS
-BINARY (2) );
-DECLARE
-@BinaryVariable2
-BINARY (2);
-SET
-@BinaryVariable2 = 123456;
-```
-
-```sql
-57921
-```
-
-```sql
-123457
-```
-
-```sql
-SET
-@BinaryVariable2 = @BinaryVariable2 + 1;
-SELECT
-CAST ( @BinaryVariable2
-AS
-INT
-);
-GO
-```

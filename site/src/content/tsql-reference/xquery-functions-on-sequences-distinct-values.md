@@ -16,15 +16,11 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Removes duplicate values from the sequence specified by
 
-$arg
-
-. If
+$arg. If
 
 $arg
 

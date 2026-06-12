@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 1040 15 No The value %d used with MAX_OUTSTANDING_IO_PER_VOLUME is not valid; MAX_OUTSTANDING_IO_PER_VOLUME must be greater than 0 and less than or equal to %d. 1041 15 No Option %.\*ls is
+Description 1040 15 No The value %d used with MAX_OUTSTANDING_IO_PER_VOLUME is not valid; MAX_OUTSTANDING_IO_PER_VOLUME must be greater than 0 and less than or equal to %d.
 
 ## Severity
 

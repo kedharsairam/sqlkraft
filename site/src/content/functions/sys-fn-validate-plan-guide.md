@@ -10,7 +10,7 @@ syntax: "sys.fn_validate_plan_guide"
 
 ## Description
 
-Verifies the validity of the specified plan guide. The returns the first error message that is encountered when the plan guide is applied to its query. An empty rowset is returned when the plan guide is valid. Plan guides can become invalid after changes are made to the physical design of the database. For example, if a plan guide specifies a particular index and that index is subsequently dropped, the query will no longer be able to
+Verifies the validity of the specified plan guide. The returns the first error message that is encountered when the plan guide is applied to its query. An empty rowset is returned when the plan guide is valid. Plan guides can become invalid after changes are made to the physical design of the database.
 
 ## Syntax
 

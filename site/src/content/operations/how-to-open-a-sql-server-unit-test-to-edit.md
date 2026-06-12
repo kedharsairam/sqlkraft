@@ -22,7 +22,7 @@ pubDate: 2025-12-01
 
 After you create a SQL Server unit test, you use the
 
-SQL Server Unit Test Designer
+Unit Test Designer
 
 to add
 
@@ -40,25 +40,19 @@ file in your test project.
 
 For more information, see
 
-SQL Server Unit Test Files
-
-. You can also customize your tests by
+Unit Test Files. You can also customize your tests by
 
 creating new test conditions. For more information, see
 
 How to: Create Test Conditions for the
 
-Database Unit Test Designer (Visual Studio 2010)
-
-.
+Database Unit Test Designer (Visual Studio 2010).
 
 In
 
 , right-click the source-code file that contains the SQL Server unit test, and
 
-then select
-
-.
+then select.
 
 The test method of the unit test appears in the main editing window of Visual Studio when the
 
@@ -66,13 +60,9 @@ file opens.
 
 1. Run a unit test. For more information, see the "Run SQL Server Unit Tests" section in
 
-Walkthrough: Create and run a SQL Server unit test
+Walkthrough: Create and run a SQL Server unit test.
 
-.
-
-2. In the Test View window, right-click the test, and then select
-
-.
+2. In the Test View window, right-click the test, and then select.
 
 ７
 
@@ -86,9 +76,7 @@ file, the test method still appears in
 
 the
 
-SQL Server Unit Test Designer
-
-. This situation occurs because the InitializeComponent
+Unit Test Designer. This situation occurs because the InitializeComponent
 
 method of the test class still contains member variables for that test. Although the test
 
@@ -102,10 +90,5 @@ or
 
 test file or rebuild the test project.
 
-```cmd
-.cs
-.vb
-.cs
-.vb
-.cs
+```cmd.cs.vb.cs.vb.cs
 ```

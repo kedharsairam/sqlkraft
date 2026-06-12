@@ -19,9 +19,7 @@ is a single threaded operation. For
 
 more information, see
 
-Configure parallel index operations
-
-.
+Configure parallel index operations.
 
 In SQL database in Microsoft Fabric,
 
@@ -45,17 +43,13 @@ defers the actual page deallocations, and their associated locks, until after th
 
 commits. For more information, see
 
-Deferred deallocation
-
-.
+Deferred deallocation.
 
 For more information, see
 
 Optimize index maintenance to improve query performance and
 
-reduce resource consumption
-
-.
+reduce resource consumption.
 
 Reorganizing an index uses minimal system resources. It defragments the leaf level of clustered
 
@@ -73,17 +67,13 @@ on the table are reorganized. Some
 
 restrictions
 
-apply when specifying
-
-.
+apply when specifying.
 
 For more information, see
 
 Optimize index maintenance to improve query performance and
 
-reduce resource consumption
-
-.
+reduce resource consumption.
 
 ７
 
@@ -93,9 +83,7 @@ For a table with an ordered columnstore index,
 
 doesn't re-sort
 
-the data. To resort the data use
-
-.
+the data. To resort the data use.
 
 ```sql
 ALTER INDEX REBUILD
@@ -124,6 +112,5 @@ ALTER INDEX REORGANIZE
 ```
 
 ```sql
-CREATE [CLUSTERED] COLUMNSTORE INDEX ... ORDER (...)
-... WITH (DROP_EXISTING = ON)
+CREATE [CLUSTERED] COLUMNSTORE INDEX. ORDER (.). WITH (DROP_EXISTING = ON)
 ```

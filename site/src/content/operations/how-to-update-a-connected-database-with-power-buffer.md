@@ -16,7 +16,7 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-SQL Server Data Tools (SSDT) Power Buffer technology makes it easy for you to apply changes
+Data Tools (SSDT) Power Buffer technology makes it easy for you to apply changes
 
 to your connected database by storing all your edits in the current session. Any errors caused
 

@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 An XQuery expression value is always a sequence of zero or more items. An item can be either
@@ -46,9 +44,7 @@ information about the
 
 expression, see
 
-SequenceType Expressions (XQuery)
-
-.
+SequenceType Expressions (XQuery).
 
 If an expression returns a sequence of atomic values, you may have to find the type of the
 

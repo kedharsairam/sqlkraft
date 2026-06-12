@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -51,9 +49,7 @@ your own custom container images to work with SQL Server in Windows containers. 
 
 are available on
 
-GitHub
-
-. Sample files are for reference only.
+GitHub. Sample files are for reference only.
 
 This 6-minute video provides an introduction into running SQL Server on containers:
 
@@ -61,15 +57,11 @@ This 6-minute video provides an introduction into running SQL Server on containe
 
 Note
 
-SQL Server container images are supported only on Linux hosts running on
-
-. Emulation or translation environments (for example, Rosetta 2, Prism, or
+container images are supported only on Linux hosts running on. Emulation or translation environments (for example, Rosetta 2, Prism, or
 
 QEMU) aren't tested or supported. If you want to create a feature request, or report an
 
-emulator-related issue, visit the
-
-.
+emulator-related issue, visit the.
 
 ）
 

@@ -19,43 +19,33 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server enabled by Azure Arc
+enabled by Azure Arc
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 This article describes how to use a managed identity to back up and restore databases with
 
 Azure Blob storage using
 
-SQL Server enabled by Azure Arc
-
-.
+enabled by Azure Arc.
 
 For SQL Server on Azure VMs, review
 
-Backup and restore to URL using managed identities
-
-.
+Backup and restore to URL using managed identities.
 
 To back up and restore databases with Azure Blob storage using managed identities, you need
 
 the following:
 
-SQL Server 2025 enabled by Azure Arc
+2025 enabled by Azure Arc
 
 that's been assigned a
 
-primary managed identity
-
-.
+primary managed identity.
 
 An
 
-Azure Blob storage account
-
-.
+Azure Blob storage account.
 
 Valid network access to the Azure Blob storage and Windows Firewall permissions on the
 

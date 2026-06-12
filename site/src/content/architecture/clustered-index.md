@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -41,9 +39,7 @@ control table fragmentation. A clustered index can also be created on a view. (C
 
 indexes are defined in the article
 
-Clustered and nonclustered indexes
-
-.)
+Clustered and nonclustered indexes.)
 
 Clustered indexes are implemented in the following ways:
 
@@ -77,9 +73,7 @@ Primary and foreign key constraints
 
 and
 
-Unique constraints and check constraints
-
-.
+Unique constraints and check constraints.
 
 You can create a clustered index on a column other than primary key column if a
 
@@ -95,9 +89,7 @@ sorting might also be required. For more information, see
 
 Disk Space Requirements for
 
-Index DDL Operations
-
-.
+Index DDL Operations.
 
 ```sql
 PRIMARY KEY

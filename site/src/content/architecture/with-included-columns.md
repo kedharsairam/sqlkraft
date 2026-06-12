@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -83,6 +81,4 @@ Note
 
 When an index contains all the columns referenced by a query it's typically referred to as
 
-covering the query
-
-.
+covering the query.

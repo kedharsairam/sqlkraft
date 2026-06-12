@@ -74,8 +74,6 @@ shows multiple rows for the same
 
 transaction running under that session.
 
-To call from Azure Synapse Analytics or Analytics Platform System (PDW), use the name
-
-. This syntax is not supported by serverless SQL
+To call from Azure Synapse Analytics or Analytics Platform System (PDW), use the name. This syntax is not supported by serverless SQL
 
 pool in Azure Synapse Analytics.

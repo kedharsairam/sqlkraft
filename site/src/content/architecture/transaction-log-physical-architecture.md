@@ -52,9 +52,7 @@ log
 
 , or
 
-tail of the log
-
-. This is the section of the log required to a full
+tail of the log. This is the section of the log required to a full
 
 recovery
 
@@ -70,9 +68,7 @@ minimum recovery LSN
 
 supported by the transaction log, see
 
-The transaction log
-
-.
+The transaction log.
 
 Differential and log backups advance the restored database to a later time, which corresponds
 

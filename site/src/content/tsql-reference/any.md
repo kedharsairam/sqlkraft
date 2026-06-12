@@ -2,12 +2,10 @@
 name: "ANY"
 title: "ANY"
 category: "predicates"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "predicates"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -21,8 +19,4 @@ Compares a scalar value with a single-column set of values. For more information
 
 SOME |
 
-ANY (Transact-SQL)
-
-.
-
-Last updated on 11/18/2025
+ANY (Transact-SQL).

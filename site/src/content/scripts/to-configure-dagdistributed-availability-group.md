@@ -51,7 +51,7 @@ WITH IP ((N'[ip_address]', N'[ip_address]')
 , PORT=1433);
 GO
 
---Create another AG (AG2) Between Node3  and Node4, .
+--Create another AG (AG2) Between Node3 and Node4,.
 CREATE AVAILABILITY GROUP [AG2]
 FOR
 REPLICA ON N'Node3' WITH (ENDPOINT_URL = N'TCP://Node3.abc.com:5022',

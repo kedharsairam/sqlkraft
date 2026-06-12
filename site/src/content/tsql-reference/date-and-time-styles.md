@@ -7,9 +7,7 @@ tags: ["tsql", "data-types"]
 pubDate: 2026-05-29
 ---
 
-An integer expression that specifies how the function will translate expression
-
-. For a style value of NULL, NULL is returned.
+An integer expression that specifies how the function will translate expression. For a style value of NULL, NULL is returned.
 
 data_type determines the range.
 
@@ -17,9 +15,7 @@ data_type determines the range.
 
 expression
 
-, translated to data_type
-
-.
+, translated to data_type.
 
 For a date or time data type expression
 
@@ -75,7 +71,7 @@ Italian
 
 Note
 
-SQL Server supports the date format, in Arabic style, with the Kuwaiti algorithm.
+supports the date format, in Arabic style, with the Kuwaiti algorithm.
 
 1
 
@@ -381,22 +377,16 @@ Hijri is a calendar system with several variations. SQL Server uses the Kuwaiti 
 
 For a milliseconds (
 
-) value of 0, the millisecond decimal fraction value won't display. For example, the value displays as
-
-.
+) value of 0, the millisecond decimal fraction value won't display. For example, the value displays as.
 
 In this style, represents a multi-token Hijri Unicode representation of the full month name. This value doesn't render correctly on a default US installation of SSMS.
 
-Only supported when casting from character data to or
-
-. When casting character data representing only date or only time components to the or data types, the unspecified time component is set to
-, and the unspecified date component is set to
-.
+Only supported when casting from character data to or. When casting character data representing only date or only time components to the or data types, the unspecified time component is set to
+, and the unspecified date component is set to.
 
 Use the optional time zone indicator to make it easier to map XML values that have time zone information to SQL Server values that have no time zone.
 
-indicates time zone at UTC-0. The offset, in the or direction, indicates other time zones. For example:
-.
+indicates time zone at UTC-0. The offset, in the or direction, indicates other time zones. For example:.
 
 When converting to character data, the styles that include seconds or milliseconds show zeros in these positions. When converting from or values, use an appropriate or data type length to truncate unwanted date parts.
 

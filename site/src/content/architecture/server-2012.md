@@ -44,9 +44,7 @@ process virtual address space (VAS) for use by the
 
 memory allocations for
 
-in the SQL Server process, and
-
-. This part of the virtual address space is also known as "Mem-To-Leave" or
+in the SQL Server process, and. This part of the virtual address space is also known as "Mem-To-Leave" or
 
 "non-Buffer Pool" region.
 
@@ -64,7 +62,7 @@ The following table indicates whether a specific type of memory allocation falls
 
 region of the virtual address space for the SQL Server process:
 
-SQL Server 2005 (9.x), SQL Server 2008
+2005 (9.x), SQL Server 2008
 
 Single-page
 

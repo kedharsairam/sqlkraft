@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/12/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -53,9 +51,7 @@ The BCN service also manages dynamic routing. For more information about creatin
 
 Configuration Notice Service, see
 
-Service Broker dynamic routing
-
-.
+Service Broker dynamic routing.
 
 Service Broker dynamic routing
 

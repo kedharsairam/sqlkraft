@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 Azure SQL Database
 
@@ -39,7 +37,7 @@ change event streaming (CES)
 
 feature introduced in
 
-SQL Server 2025 (17.x), Azure SQL Database, and Azure SQL Managed Instance
+2025 (17.x), Azure SQL Database, and Azure SQL Managed Instance
 
 Events emitted by change event streaming follow the
 
@@ -73,16 +71,14 @@ Change event streaming is currently in
 
 for:
 
-SQL Server 2025 (
+2025 (
 
 ).
 
-Azure SQL Database (preview feature database scoped configuration not required).
+(preview feature database scoped configuration not required).
 
-Azure SQL Managed Instance (with the SQL Server 2025 or Always-up-to-date
+(with the SQL Server 2025 or Always-up-to-date
 
 , preview feature database scoped configuration not required). During preview,
 
-this feature is subject to change. For current supportability, see
-
-.
+this feature is subject to change. For current supportability, see.

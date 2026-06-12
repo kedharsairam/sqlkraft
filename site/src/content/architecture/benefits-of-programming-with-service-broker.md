@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -81,6 +79,6 @@ Service Broker uses Transact-SQL to create objects.
 
 Applications that use Service Broker are most often implemented in Transact-SQL or
 
-Microsoft .NET Framework-compatible languages. You don't have to learn a new
+Microsoft.NET Framework-compatible languages. You don't have to learn a new
 
 language to create Service Broker applications.

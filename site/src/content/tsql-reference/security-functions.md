@@ -2,7 +2,7 @@
 name: "Security Functions"
 title: "Security Functions"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -13,17 +13,13 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
 The following functions return information that is useful in managing security. Additional functions are listed under
 
-Cryptographic Functions (Transact-SQL)
-
-.
+Cryptographic Functions (Transact-SQL).
 
 CERTENCODED (Transact-SQL)
 
@@ -71,9 +67,7 @@ ORIGINAL_LOGIN (Transact-SQL)
 
 ## PERMISSIONS (Transact-SQL)
 
-For information about membership in Windows groups, see xp_logininfo (Transact-SQL) and xp_enumgroups (Transact-SQL)
-
-.
+For information about membership in Windows groups, see xp_logininfo (Transact-SQL) and xp_enumgroups (Transact-SQL).
 
 Security Stored Procedures (Transact-SQL)
 

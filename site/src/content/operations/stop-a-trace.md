@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -43,8 +41,6 @@ trace is stopped, you can change the name, events, columns, and filters.
 
 2. On the
 
-menu, select
+menu, select.
 
-.
-
-SQL Server Profiler
+Profiler

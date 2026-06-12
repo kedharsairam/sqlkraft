@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -73,11 +71,9 @@ menu.
 
 Individual events can also be extracted and saved by right-clicking a specific event and
 
-choosing
+choosing.
 
-.
-
-SQL Server Profiler and SQL Server Management Studio use a deadlock wait-for graph to
+Profiler and SQL Server Management Studio use a deadlock wait-for graph to
 
 describe a deadlock. The deadlock wait-for graph contains process nodes, resource nodes, and
 
@@ -95,9 +91,7 @@ A thread that performs a task; for example,
 
 ,
 
-, or
-
-.
+, or.
 
 Resource
 

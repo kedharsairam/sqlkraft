@@ -15,8 +15,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Topics that describe the XQuery expressions.
@@ -67,9 +65,7 @@ RETURN. LET is not supported.
 
 Ordered and Unordered Expressions (XQuery)
 
-Describes the ordering mode for XQuery operations. By default, the ordering mode is set to
-
-.
+Describes the ordering mode for XQuery operations. By default, the ordering mode is set to.
 
 Conditional Expressions (XQuery)
 

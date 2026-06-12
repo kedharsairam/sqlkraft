@@ -2,7 +2,7 @@
 name: "sys.sp_clean_db_file_free_space"
 title: "sp_clean_db_file_free_space"
 category: "general"
-description: "Azure SQL Managed Instance Removes residual information on data pages. cleans all pages in only one file of a database. Transact-SQL syntax conventions The name of the database to clean. , with no default. The data file ID to clean. , with no default. Specifies an interval to delay before the cleanup of each page, in seconds. @cleaning_delay , with a default of . This delay helps reduce the load o"
+description: "Removes residual information on data pages. cleans all pages in only one file of a database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: "sp_clean_db_file_free_space"
@@ -10,15 +10,13 @@ syntax: "sp_clean_db_file_free_space"
 
 ## Description
 
-Azure SQL Managed Instance Removes residual information on data pages. cleans all pages in only one file of a database. Transact-SQL syntax conventions The name of the database to clean. , with no default. The data file ID to clean. , with no default. Specifies an interval to delay before the cleanup of each page, in seconds. @cleaning_delay , with a default of . This delay helps reduce the load on the I/O system at the expense of increasing the duration of the cleanup process.
+Removes residual information on data pages. cleans all pages in only one file of a database.
 
 ## Syntax
 
 `sp_clean_db_file_free_space`
 
 ## Remarks
-
-Applies to:
 
 Azure SQL Managed Instance
 
@@ -27,8 +25,6 @@ Removes residual information on data pages.
 cleans all pages in
 
 only one file of a database.
-
-Transact-SQL syntax conventions
 
 The name of the database to clean.
 
@@ -42,9 +38,7 @@ Specifies an interval to delay before the cleanup of each page, in seconds.
 
 @cleaning_delay
 
-, with a default of
-
-. This delay helps reduce the load on the I/O system at the expense of
+, with a default of. This delay helps reduce the load on the I/O system at the expense of
 
 increasing the duration of the cleanup process.
 

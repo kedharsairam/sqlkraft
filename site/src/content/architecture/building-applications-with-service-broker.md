@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -31,7 +29,7 @@ Any program that can run Transact-SQL statements can use Service Broker. A Servi
 
 application can be implemented as a program running outside of SQL Server, or as a stored
 
-procedure written in Transact-SQL or a .NET language.
+procedure written in Transact-SQL or a.NET language.
 
 A program that uses Service Broker is typically composed of a number of components working
 
@@ -59,16 +57,12 @@ response to an event. For more information on strategies for starting an applica
 
 Service Broker, see
 
-Choose a startup strategy
-
-.
+Choose a startup strategy.
 
 For information on creating applications with Service Broker, see
 
 Benefits of programming with
 
-Service Broker
-
-.
+Service Broker.
 
 The following illustration shows the interaction in an application that uses Service Broker:

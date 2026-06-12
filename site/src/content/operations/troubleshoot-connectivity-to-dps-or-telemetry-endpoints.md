@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 06/30/2025
 
-Applies to:
-
 SQL Server
 
 In addition to the usual endpoints, the Azure Arc extension for SQL Server connects to two
@@ -67,17 +65,13 @@ endpoint is unblocked but the telemetry endpoint is blocked.
 
 You see an error in the Azure extension for SQL Server status in the Azure portal. Review
 
-Check the Azure Extension for SQL Server status in the Azure portal
-
-.
+Check the Azure Extension for SQL Server status in the Azure portal.
 
 You see an error in the Azure extension for SQL Server log. Review
 
 Check the Azure
 
-Extension for SQL Server logs
-
-.
+Extension for SQL Server logs.
 
 You can view the current state of the Azure extension for SQL Server in the portal. The status is
 

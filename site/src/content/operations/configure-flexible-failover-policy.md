@@ -29,8 +29,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -67,7 +65,7 @@ must be configured for synchronous-commit availability mode with automatic failo
 
 and the secondary replica must be synchronized with the primary replica.
 
-SQL Server 2019 (15.x) increased the maximum number of synchronous replicas to 5, up
+2019 (15.x) increased the maximum number of synchronous replicas to 5, up
 
 from 3 in SQL Server 2017 (14.x). You can configure this group of five replicas to have
 

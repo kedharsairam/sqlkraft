@@ -26,9 +26,7 @@ compatibility levels, see
 
 ALTER DATABASE (Transact-SQL)
 
-compatibility level
-
-.
+compatibility level.
 
 Database
 
@@ -142,17 +140,13 @@ Feature name
 
 Compatibility
 
-levels
-
-.
+levels.
 
 For more information, see
 
 ALTER DATABASE
 
-(Transact-SQL) compatibility level
-
-.
+(Transact-SQL) compatibility level.
 
 sp_dbcmptlevel
 
@@ -176,9 +170,7 @@ information about compatibility levels, see
 
 ALTER DATABASE (Transact-SQL) compatibility
 
-level
-
-.
+level.
 
 Database compatibility l
 
@@ -206,9 +198,7 @@ XML
 
 For more information, see
 
-ALTER INDEX
-
-.
+ALTER INDEX.
 
 sys.sp*db_selective_xml*
 
@@ -322,9 +312,7 @@ None.
 
 and
 
-CONCAT_NULLS_YIELDS_NULL are always set to
-
-.
+CONCAT_NULLS_YIELDS_NULL are always set to.
 
 will be unavailable.
 
@@ -378,9 +366,7 @@ data types. For more
 
 information, see
 
-sp_tableoption
-
-.
+sp_tableoption.
 
 Text in row table option
 
@@ -466,9 +452,7 @@ Database
 
 objects
 
-Use
-
-.
+Use.
 
 Database
 
@@ -516,9 +500,7 @@ DBCC
 
 DBCC DBREINDEX
 
-option of
-
-.
+option of.
 
 DBCC DBREINDEX
 
@@ -570,9 +552,7 @@ VIEW, or level-2 types such as COLUMN or
 
 TRIGGER. For more information, see
 
-sp_addextendedproperty
-
-.
+sp_addextendedproperty.
 
 EXTPROP_LEVEL0
 
@@ -912,9 +892,7 @@ output doesn't reflect changes to the
 
 Server 2008 (10.0.x). For more information, see
 
-## Permissions of Fixed Server Roles
-
-.
+## Permissions of Fixed Server Roles.
 
 Security
 
@@ -966,9 +944,7 @@ sp_describe_first_result_set
 
 , and
 
-sp_describe_undeclared_parameters
-
-.
+sp_describe_undeclared_parameters.
 
 Server
 
@@ -1068,9 +1044,7 @@ sysdepends
 
 Compatibility views. For more information, see
 
-System Compatibility Views
-
-.
+System Compatibility Views.
 
 Important:
 
@@ -1084,9 +1058,7 @@ recommend that you upgrade your applications
 
 to use catalog views. For more information, see
 
-System catalog views
-
-.
+System catalog views.
 
 sysaltfiles
 
@@ -1256,7 +1228,7 @@ procedure.
 
 Vardecimal storage format is deprecated. The
 
-SQL Server data compression feature
+data compression feature
 
 compresses decimal values as well as other data
 
@@ -1318,9 +1290,7 @@ Specifying table hints without using the
 
 keyword.
 
-Use
-
-.
+Use.
 
 Table hint without
 
@@ -1360,15 +1330,11 @@ Transact-SQL
 
 function-calling sequence
 
-Replaced by
-
-.
+Replaced by.
 
 For example, replace
 
-with
-
-.
+with.
 
 '::' function calling syntax
 
@@ -1454,9 +1420,7 @@ index_name
 
 table_name
 
-## syntax in
-
-.
+## syntax in.
 
 with two-pa
 
@@ -1618,21 +1582,21 @@ None
 
 Tools
 
-SQL Server Profiler for Trace Capture
+Profiler for Trace Capture
 
 Use Extended Events Profiler embedded in SQL
 
 Server Management Studio.
 
-SQL Server Profiler
+Profiler
 
 Tools
 
-SQL Server Profiler for Trace Replay
+Profiler for Trace Replay
 
-SQL Server Distributed Replay overview
+Distributed Replay overview
 
-SQL Server Profiler
+Profiler
 
 Trace
 
@@ -1642,7 +1606,7 @@ Objects
 
 Microsoft.SqlServer.Management.Trace namespace (contains the APIs for
 
-SQL Server Trace and Replay objects)
+Trace and Replay objects)
 
 Trace Configuration:
 
@@ -1718,9 +1682,7 @@ which is the correct maximum length. However
 
 the current implementation returns
 
-varbinary(50)
-
-. If developers have allocated
+varbinary(50). If developers have allocated
 
 varbinary(50)
 
@@ -1730,668 +1692,8 @@ Discontinued Database Engine functionality in SQL Server
 
 Deprecated Database Engine features in SQL Server 2017 (14.x)
 
-Last updated on 11/18/2025
-
 cookie return size increases in a future release. Though not a deprecation issue this is mentioned in this topic because the application
 
 adjustments are similar. For more information, see
 
-sp_setapprole
-
-.
-
-Related content
-
-```sql
-sp_addremotelogin sp_addserver sp_dropremotelogin sp_helpremotelogin sp_remoteoption
-```
-
-`sp_addserver`
-
-```sql
-sp_addremotelogin sp_addserver sp_dropremotelogin sp_helpremotelogin sp_remoteoption
-```
-
-```sql
-SET REMOTE_PROC_TRANSACTIONS
-```
-
-```sql
-SET
-REMOTE_PROC_TRANSACTIONS
-```
-
-```sql
-sp_dbcmptlevel
-ALTER DATABASE ... SET COMPATIBILITY_LEVEL
-```
-
-```sql
-FOR XML
-```
-
-`RAW`
-
-`AUTO`
-
-```sql
-sys.sp_db_selective_xml_index
-ALTER INDEX ... DISABLE
-```
-
-```sql
-sp_addumpdevice 'tape'
-sp_addumpdevice 'disk'
-ADDING TAPE DEVICE
-```
-
-```sql
-sp_helpdevice sys.backup_devices sp_helpdevice
-```
-
-```sql
-SET ANSI_NULLS OFF
-```
-
-```sql
-ANSI_NULLS OFF
-```
-
-```sql
-SET ANSI_PADDING OFF
-```
-
-```sql
-ANSI_PADDING OFF
-```
-
-```sql
-SET CONCAT_NULL_YIELDS_NULL OFF
-```
-
-```sql
-CONCAT_NULL_YIELDS_NULL OFF
-```
-
-```sql
-SET OFFSETS
-```
-
-`ANSI_NULLS`
-
-`ANSI_PADDING`
-
-`ON`
-
-```sql
-SET OFFSETS
-```
-
-```sql
-SET ANSI_NULLS OFF
-SET ANSI_PADDING OFF
-SET CONCAT_NULL_YIELDS_
-SET OFFSETS
-ALTER DATABASE SET ANSI
-ALTER DATABASE SET ANSI
-ALTER DATABASE SET CONC
-OFF
-```
-
-```sql
-sp_addtype sp_droptype
-CREATE TYPE
-DROP TYPE sp_addtype sp_droptype
-```
-
-`TIMESTAMP`
-
-`DEFAULT`
-
-```sql
-INSERT NULL
-```
-
-`TIMEST`
-
-```sql
-sp_attach_db sp_attach_single_file_db
-CREATE DATABASE
-```
-
-```sql
-FOR
-ATTACH
-```
-
-```sql
-FOR ATTACH_REBUILD_LOG
-```
-
-`sp_attach_db`
-
-```sql
-CREATE DEFAULT
-DROP DEFAULT
-```
-
-```sql
-sp_unbindefault
-DEFAULT
-```
-
-```sql
-CREATE TABLE
-```
-
-```sql
-ALTER
-TABLE
-```
-
-```sql
-sp_bindefault sp_unbindefault
-```
-
-```sql
-CREATE RULE
-DROP RULE sp_bindrule sp_unbindrule
-CHECK
-```
-
-```sql
-CREATE TABLE
-```
-
-```sql
-ALTER
-TABLE
-```
-
-```sql
-sp_bindrule sp_unbindrule
-```
-
-`sp_change_users_login`
-
-```sql
-ALTER USER
-```
-
-`sp_change_users_login`
-
-```sql
-sp_depends sys.dm_sql_referencing_entities
-```
-
-```sql
-sys.dm_sql_referenced_entities sp_depends
-```
-
-```sql
-sp_renamedb
-MODIFY NAME
-```
-
-```sql
-ALTER DATABASE sp_renamedb
-```
-
-`sp_getbindtoken`
-
-`sp_getbindtoken`
-
-`sp_bindsession`
-
-`sp_bindsession`
-
-```sql
-sp_resetstatus
-ALTER DATABASE SET
-```
-
-`ONLINE`
-
-`EMERGENCY`
-
-`sp_resetstatus`
-
-`TORN_PAGE_DETECTION`
-
-```sql
-ALTER DATABASE
-PAGE_VERIFY TORN_PAGE_DETECTION
-```
-
-```sql
-ALTER DATABASE
-ALTER DATABASE WITH TOR
-```
-
-`REBUILD`
-
-```sql
-ALTER INDEX
-```
-
-`REORGANIZE`
-
-```sql
-ALTER INDEX
-```
-
-`sys.dm_db_index_physical_stats`
-
-`SCHEMA`
-
-`TABLE`
-
-`TYPE`
-
-`XP_API`
-
-```sql
-sp_addextendedproc sp_dropextendedproc sp_helpextendedproc
-```
-
-```sql
-sp_addextendedproc sp_dropextendedproc sp_helpextendedproc
-```
-
-```sql
-xp_grantlogin xp_revokelogin xp_loginConfig
-```
-
-```sql
-CREATE LOGIN
-```
-
-```sql
-DROP LOGIN IsIntegratedSecurityOnly
-```
-
-```sql
-SERVERPROPERTY xp_grantlogin xp_revokelogin xp_loginconfig
-```
-
-`sys.dm_exec_sql_text`
-
-```sql
-sp_indexoption
-ALTER INDEX sp_indexoption
-```
-
-```sql
-CREATE TABLE
-```
-
-```sql
-ALTER TABLE
-```
-
-```sql
-CREATE INDEX
-```
-
-`sp_configure`
-
-`sp_configure`
-
-`sp_configure`
-
-`sp_configure`
-
-`sp_configure`
-
-`sp_configure`
-
-`sp_configure`
-
-```sql
-start /high
-... program.exe
-```
-
-`sp_configure`
-
-`sp_configure`
-
-`sp_configure`
-
-```sql
-sp_lock sys.dm_tran_locks sp_lock
-```
-
-`sys.index_columns`
-
-```sql
-CREATE ENDPOINT
-```
-
-```sql
-ALTER ENDPOINT
-```
-
-```sql
-FOR SOAP
-```
-
-`CREATE`
-
-```sql
-ALTER ENDPOINT
-```
-
-`sys.soap_endpoints`
-
-```sql
-sp_certify_removable sp_create_removable sp_detach_db sp_certify_removable sp_create_removable
-```
-
-```sql
-sp_dbremove
-DROP DATABASE sp_dbremove
-```
-
-```sql
-ALTER LOGIN WITH SET CREDENTIAL
-```
-
-```sql
-ALTER LOGIN ADD
-```
-
-```sql
-DROP
-CREDENTIAL
-```
-
-```sql
-ALTER LOGIN WITH SET CR
-```
-
-```sql
-sp_addapprole sp_dropapprole
-CREATE APPLICATION ROLE
-DROP APPLICATION ROLE sp_addapprole sp_dropapprole
-```
-
-```sql
-sp_addlogin sp_droplogin
-CREATE LOGIN
-DROP LOGIN sp_addlogin sp_droplogin
-```
-
-```sql
-sp_adduser sp_dropuser
-CREATE USER
-DROP USER sp_adduser sp_dropuser
-```
-
-```sql
-sp_grantdbaccess sp_revokedbaccess
-CREATE USER
-DROP USER sp_grantdbaccess sp_revokedbaccess
-```
-
-```sql
-sp_addrole sp_droprole
-CREATE ROLE
-DROP ROLE sp_addrole sp_droprole
-```
-
-```sql
-sp_approlepassword sp_password
-ALTER APPLICATION ROLE
-ALTER LOGIN sp_approlepassword sp_password
-```
-
-```sql
-sp_changeobjectowner
-ALTER SCHEMA
-```
-
-```sql
-ALTER AUTHORIZATION sp_changeobjectowner
-```
-
-`sp_control_dbmasterkey_password`
-
-`sp_control_dbmasterkey_`
-
-```sql
-sp_defaultdb sp_defaultlanguage
-ALTER LOGIN sp_defaultdb sp_defaultlanguage
-```
-
-```sql
-sp_denylogin sp_grantlogin
-ALTER LOGIN DISABLE
-CREATE LOGIN sp_denylogin sp_grantlogin
-```
-
-```sql
-sp_revokelogin
-DROP LOGIN
-```
-
-```sql
-sp_srvrolepermission sp_dbfixedrolepermission
-```
-
-```sql
-sp_srvrolepermission sp_dbfixedrolepermissio
-```
-
-```sql
-GRANT ALL
-DENY ALL
-REVOKE ALL
-GRANT
-```
-
-`DENY`
-
-`REVOKE`
-
-`sys.fn_my_permissions`
-
-```sql
-EXECUTE AS
-```
-
-`DESX`
-
-`DESX`
-
-`SET`
-
-```sql
-SET FMTONLY
-```
-
-```sql
-SET FMTONLY
-```
-
-`sp_configure`
-
-`sp_configure`
-
-`Microsoft.SQLServer.Management.Smo.Information`
-
-```sql
-Microsoft.SQLServer. Management.Smo.Settings
-```
-
-`Microsoft.SQLServer.Management.Smo.DatabaseOptions`
-
-```sql
-Microsoft.SqlServer.Management.Smo.DatabaseDdlTrigger.NotForReplication
-```
-
-`Microsoft.SqlServer.Management.Smo.Server`
-
-`Microsoft.SqlServer.Management.Smo.Server`
-
-`Microsoft.SqlServer.Management.Smo.Database`
-
-`sp_db_increased_partitions`
-
-`sp_db_increased_partiti`
-
-```sql
-sys.numbered_procedures sys.numbered_procedure_parameters
-```
-
-```sql
-sys.dm_os_cluster_nodes sys.dm_io_cluster_shared_drives
-```
-
-```sql
-sys.sql_dependencies sys.sql_expression_dependencies sys.sql_dependencies
-```
-
-`sp_db_vardecimal_storage_format`
-
-`sp_db_vardecimal_storag`
-
-`sp_estimated_rowsize_reduction_for_vardecimal`
-
-```sql
-sp_estimate_data_compression_savings sp_estimated_rowsize_re
-```
-
-`NOLOCK`
-
-`READUNCOMMITTED`
-
-`FROM`
-
-`UPDATE`
-
-`DELETE`
-
-`NOLOCK`
-
-`READUNCOMMITTED`
-
-`FROM`
-
-`NOLOCK`
-
-`READUNCOMMITT`
-
-`WITH`
-
-`WITH`
-
-`WITH`
-
-```sql
-::
-```
-
-```sql
-SELECT <column_list> FROM sys.
-<function_name>()
-```
-
-```sql
-SELECT * FROM
-::fn_virtualfilestats(2,1)
-```
-
-```sql
-SELECT * FROM sys.fn_virtualfilestats(2,1)
-```
-
-`SELECT`
-
-```sql
-DROP INDEX
-```
-
-`ON`
-
-```sql
-DROP
-INDEX
-```
-
-```sql
-DROP INDEX
-```
-
-```sql
-;
-```
-
-```sql
-GROUP BY ALL
-```
-
-`UNION`
-
-```sql
-GROUP BY ALL
-```
-
-`ROWGUIDCOL`
-
-`ROWGUIDCOL`
-
-`DEFAULT`
-
-`DEFAULT`
-
-`DEFAULT`
-
-```sql
-ALTER DATABASE
-```
-
-```sql
-MODIFY FILEGROUP READONLY
-MODIFY FILEGROUP READWRITE
-MODIFY FILEGROUP READ_ONLY
-MODIFY FILEGROUP READ_WRITE
-MODIFY FILEGROUP READON
-MODIFY FILEGROUP READWR
-```
-
-```sql
-sp_trace_create sp_trace_setevent sp_trace_setfilter sp_trace_setstatus
-```
-
-```sql
-sys.traces sys.trace_events sys.trace_event_bindings
-```
-
-```sql
-sp_trace_create sp_trace_setevent sp_trace_setfilter sp_trace_setstatus
-```
-
-```sql
-sys.traces sys.trace_events sys.trace_event_binding sys.trace_categories sys.trace_columns sys.trace_subclass_valu
-```
-
-```sql
-SET ROWCOUNT
-```
-
-`INSERT`
-
-`UPDATE`
-
-`DELETE`
-
-`TOP`
-
-```sql
-SET ROWCOUNT
-```
-
-`OUTPUT`
-
-`sp_setapprole`
+sp_setapprole.

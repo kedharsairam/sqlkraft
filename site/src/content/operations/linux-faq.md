@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server on Linux frequently asked
-
-Applies to:
+on Linux frequently asked
 
 SQL Server
 
@@ -33,21 +31,19 @@ The following sections provide common questions and answers for SQL Server runni
 
 1.
 
-SQL Server is currently supported on Red Hat Enterprise Server, SUSE Linux Enterprise
+is currently supported on Red Hat Enterprise Server, SUSE Linux Enterprise
 
 Server, and Ubuntu. It also supported running in a container with Docker. For the latest
 
 information about the supported versions, see
 
-Supported platforms
-
-.
+Supported platforms.
 
 2.
 
 ?
 
-SQL Server is tested and supported on Linux for the previously listed distributions. Other
+is tested and supported on Linux for the previously listed distributions. Other
 
 Linux distributions are closely related and might be able to run SQL Server. If you choose to
 
@@ -73,15 +69,11 @@ some features are currently not supported on Linux. For a list of features that 
 
 supported on Linux, see the
 
-Unsupported features & services
+Unsupported features & services. Also review the
 
-. Also review the
+on
 
-SQL Server on
-
-Linux: Known issues
-
-. Unless specified in these lists, other SQL Server features and services
+Linux: Known issues. Unless specified in these lists, other SQL Server features and services
 
 are supported on Linux.
 
@@ -89,8 +81,6 @@ are supported on Linux.
 
 To understand the support policy, review the
 
-Technical Support Policy for SQL Server
-
-.
+Technical Support Policy for SQL Server.
 
 5.

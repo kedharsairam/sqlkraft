@@ -2,7 +2,7 @@
 name: "System Functions"
 title: "System Functions"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
@@ -12,8 +12,6 @@ Article
 •
 
 05/23/2023
-
-Applies to:
 
 SQL Server
 

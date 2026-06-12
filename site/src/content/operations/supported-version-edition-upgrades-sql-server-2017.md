@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 06/04/2025
 
-Applies to:
-
 SQL Server
 
 - Windows only
@@ -53,9 +51,7 @@ more information, see
 
 Hardware and software requirements for SQL Server 2016 and SQL
 
-Server 2017
-
-.
+Server 2017.
 
 Upgrade is blocked if there's a pending restart.
 
@@ -67,7 +63,7 @@ the Database Engine components must be the same in an instance of SQL Server 201
 
 (14.x).
 
-SQL Server 2017 (14.x) is only available for 64-bit platforms. Cross-platform upgrade isn't
+2017 (14.x) is only available for 64-bit platforms. Cross-platform upgrade isn't
 
 supported. You can't upgrade a 32-bit instance of SQL Server to native 64-bit using SQL
 

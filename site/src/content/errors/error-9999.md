@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 527 16 No Implicit conversion between XML types constrained by different XML schema collections is not allowed. Use the CONVERT function to run this query. 529 16 No Explicit conversion fr
+Description 527 16 No Implicit conversion between XML types constrained by different XML schema collections is not allowed. Use the CONVERT function to run this query.
 
 ## Severity
 

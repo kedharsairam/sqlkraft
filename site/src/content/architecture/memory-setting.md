@@ -12,7 +12,7 @@ and
 
 configuration options:
 
-SQL Server 2005 (9.x), SQL Server 2008
+2005 (9.x), SQL Server 2008
 
 Single-page
 
@@ -66,9 +66,7 @@ value has already reached the
 
 setting, as specified
 
-by
-
-. If there's insufficient contiguous free memory to meet the demand
+by. If there's insufficient contiguous free memory to meet the demand
 
 of multi-page memory requests (more than 8 KB) because of memory fragmentation, SQL
 
@@ -102,7 +100,7 @@ versions of SQL Server 2016 (13.x) and later versions.
 
 Expand table
 
-SQL Server might commit memory over the max server
+might commit memory over the max server
 
 ### Multi-Page Allocator (MPA)
 

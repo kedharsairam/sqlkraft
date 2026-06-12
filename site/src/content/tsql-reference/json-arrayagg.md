@@ -2,16 +2,14 @@
 name: "JSON_ARRAYAGG"
 title: "JSON_ARRAYAGG"
 category: "statements"
-description: "SQL Server 2025 (17.x)"
+description: "2025 (17.x)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 ## Return value
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 Azure SQL Database
 
@@ -28,7 +26,7 @@ Both json
 aggregate functions and
 
 are: generally available for Azure SQL Database, Azure SQL Managed Instance (with the
-SQL Server 2025 or
+2025 or
 
 Always-up-to-date
 
@@ -40,8 +38,6 @@ SQL database in Microsoft Fabric, and Fabric Data Warehouse.
 
 in preview for SQL Server 2025 (17.x).
 
-Transact-SQL syntax conventions
-
 ## syntaxsql
 
 The value expression can be a column or expression in a query or constants/literals.
@@ -52,15 +48,11 @@ json_null_clause can be used to control the behavior of
 
 function when value_expression
 
-is
-
-. The option converts the SQL
+is. The option converts the SQL
 
 value into a JSON null value when generating the value of the element in the JSON array. The option omits
 
-the element in the JSON array if the value is
-
-. If omitted, is default.
+the element in the JSON array if the value is. If omitted, is default.
 
 Optional. The order of elements in the resulting JSON array can be specified to order the input rows to the aggregate.
 
@@ -80,9 +72,7 @@ Note
 
 To create a JSON object from an aggregate instead, use
 
-JSON_OBJECTAGG
-
-.
+JSON_OBJECTAGG.
 
 value_expression json_null_clause
 

@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 06/06/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,9 +37,7 @@ enables you to better analyze SQL Server Profiler trace output. For more informa
 
 View
 
-and analyze traces with SQL Server Profiler
-
-.
+and analyze traces with SQL Server Profiler.
 
 enables you to either group the trace events, or to group and aggregate
 

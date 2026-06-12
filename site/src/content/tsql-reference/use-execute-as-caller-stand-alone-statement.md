@@ -37,9 +37,7 @@ stand-alone statement inside a module to set the execution context
 
 to the caller of the module.
 
-Assume the following stored procedure is called by
-
-.
+Assume the following stored procedure is called by.
 
 Windows domain account that is specified in the
 

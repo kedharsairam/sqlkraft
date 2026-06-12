@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 07/14/2025
 
-Applies to:
-
 SQL Server
 
 Stops the specified SQL Server Express LocalDB instance from running.

@@ -1,7 +1,7 @@
 ---
 name: "To Identify Who has Sysadmin Permissions"
 title: "To Identify Who has Sysadmin Permissions"
-description: "SQL Server diagnostic script for security-audit operations."
+description: "diagnostic script for security-audit operations."
 category: security-audit
 tags: ["permissions", "security-audit"]
 pubDate: 2025-03-15

@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 This article shows how to move a FILESTREAM-enabled database.
@@ -41,17 +39,13 @@ This article shows how to move a FILESTREAM-enabled database.
 
 to open the Query Editor.
 
-2. Copy the following Transact-SQL script into the Query Editor, and then select
-
-.
+2. Copy the following Transact-SQL script into the Query Editor, and then select.
 
 This script displays the location of the physical database files that the FILESTREAM
 
 database uses.
 
-3. Copy the following Transact-SQL script into the Query Editor, and then select
-
-.
+3. Copy the following Transact-SQL script into the Query Editor, and then select.
 
 This code takes the
 
@@ -63,9 +57,7 @@ database offline.
 
 step 2 into it.
 
-5. Copy the following Transact-SQL script into the Query Editor, and then select
-
-.
+5. Copy the following Transact-SQL script into the Query Editor, and then select.
 
 This script sets the
 
@@ -77,9 +69,7 @@ Note
 
 The examples in this topic require the
 
-database that is created in
-
-.
+database that is created in.
 
 ```sql
 Archive

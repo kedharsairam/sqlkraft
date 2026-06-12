@@ -2,7 +2,7 @@
 name: "sys.sp_add_schedule"
 title: "sp_add_schedule"
 category: "general"
-description: "Creates a schedule that can be used by any number of jobs. Transact-SQL syntax conventions Indicates the current status of the schedule. , the schedule isn't enabled. When the schedule isn't enabled, no jobs run on this schedule."
+description: "Creates a schedule that can be used by any number of jobs. Indicates the current status of the schedule. , the schedule isn't enabled. When the schedule isn't enabled, no jobs run on this schedule."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -35,7 +35,7 @@ syntax: |
 
 ## Description
 
-Creates a schedule that can be used by any number of jobs. Transact-SQL syntax conventions Indicates the current status of the schedule. , the schedule isn't enabled. When the schedule isn't enabled, no jobs run on this schedule.
+Creates a schedule that can be used by any number of jobs. Indicates the current status of the schedule. , the schedule isn't enabled. When the schedule isn't enabled, no jobs run on this schedule.
 
 ## Syntax
 

@@ -29,8 +29,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Displays a read-only list of warnings supported on database mirroring events and the specified
@@ -77,9 +75,7 @@ For more information, see
 
 Estimate the Interruption of Service During Role
 
-Switching (Database Mirroring)
-
-.
+Switching (Database Mirroring).
 
 Specifies the number of minutes worth of transactions that can accumulate in the
 

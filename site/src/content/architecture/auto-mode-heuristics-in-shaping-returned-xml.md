@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -107,11 +105,11 @@ FOR
 XML
 AUTO
 ;
-T1.Id  T1.Name  T2.Id
+T1.Id T1.Name T2.Id
 -----------------------
-1       Andrew    2
-1       Andrew    3
-1       Nancy     4
+1 Andrew 2
+1 Andrew 3
+1 Nancy 4
 <T1
 Id
 =

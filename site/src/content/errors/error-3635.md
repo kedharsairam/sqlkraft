@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 3635 16 Yes An error occurred while processing '%ls' metadata for database id %d, file id %d, and transaction='%.\*ls'. Additional Context='%ls'. Location='%hs'(%d). Retry the operation; if
+Description 3635 16 Yes An error occurred while processing '%ls' metadata for database id %d, file id %d, and transaction='%.\*ls'. Additional Context='%ls'. Location='%hs'(%d).
 
 ## Severity
 

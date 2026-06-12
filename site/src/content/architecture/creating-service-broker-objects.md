@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -57,9 +55,7 @@ before queues and contracts.
 
 For more information on these objects, see
 
-Conversation architecture
-
-.
+Conversation architecture.
 
 The procedure for creating a service follows the same basic outline regardless of whether your
 

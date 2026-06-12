@@ -1,7 +1,7 @@
 ---
 name: "To Know When was DBCC Checkdb Last ran"
 title: "To Know When was DBCC Checkdb Last ran"
-description: "SQL Server diagnostic script for database operations."
+description: "diagnostic script for database operations."
 category: database
 tags: ["database", "health-check"]
 pubDate: 2025-03-15
@@ -9,11 +9,11 @@ pubDate: 2025-03-15
 
 ```sql
 CREATE TABLE #DBInfo (
-       Id INT IDENTITY(1,1),
-       ParentObject VARCHAR(255),
-       [Object] VARCHAR(255),
-       Field VARCHAR(255),
-       [Value] VARCHAR(255)
+ Id INT IDENTITY(1,1),
+ ParentObject VARCHAR(255),
+ [Object] VARCHAR(255),
+ Field VARCHAR(255),
+ [Value] VARCHAR(255)
 )
 
 CREATE TABLE #Value(

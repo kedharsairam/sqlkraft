@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -81,9 +79,7 @@ SqlPackage export
 
 and
 
-Export a BACPAC file
-
-.
+Export a BACPAC file.
 
 - the user can import a
 
@@ -95,15 +91,11 @@ SqlPackage import
 
 and
 
-Import a BACPAC file to create a new database
-
-.
+Import a BACPAC file to create a new database.
 
 Learn more about database portability from the
 
-SqlPackage portability documentation
-
-.
+SqlPackage portability documentation.
 
 The
 
@@ -127,22 +119,13 @@ integral part of the SQL database project workflow and database development life
 
 files are used in several operations. The primary operations are:
 
-- extract a database into a
-
-. For more information, see
+- extract a database into a. For more information, see
 
 SqlPackage extract
 
 and
 
-Extract a DACPAC from a database
+Extract a DACPAC from a database.
 
-.
-
-```cmd
-.dacpac
-.bacpac
-.dacpac
-.bacpac
-.bacpac
+```cmd.dacpac.bacpac.dacpac.bacpac.bacpac
 ```

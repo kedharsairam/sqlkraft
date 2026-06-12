@@ -35,9 +35,7 @@ length
 
 ,
 
-## returns
-
-. Review
+## returns. Review
 
 E. Use SUBSTRING with optional length argument for an
 
@@ -102,9 +100,7 @@ expression as a single character. For more information, see
 
 Collation and
 
-Unicode support
-
-.
+Unicode support.
 
 name
 

@@ -27,8 +27,6 @@ Article
 
 01/19/2024
 
-Applies to:
-
 SQL Server
 
 This article contains information about the using currently encrypted or recently decrypted

@@ -15,9 +15,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 This article describes how you can use PolyBase services with SQL Server on Linux.
 
@@ -29,9 +27,7 @@ to how it works on Windows. For more information, see
 
 Configure PolyBase to access external
 
-data with ODBC generic types
-
-.
+data with ODBC generic types.
 
 The following example demonstrates the SQL ODBC driver on Ubuntu.
 

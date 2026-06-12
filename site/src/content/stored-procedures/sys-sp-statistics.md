@@ -2,7 +2,7 @@
 name: "sys.sp_statistics"
 title: "sp_statistics"
 category: "general"
-description: "Analytics Platform System (PDW) Returns a list of all indexes and statistics on a specified table or indexed view. Transact-SQL syntax conventions Specifies the table used to return catalog information. default. Wildcard pattern matching isn't supported."
+description: "Returns a list of all indexes and statistics on a specified table or indexed view. Specifies the table used to return catalog information. default. Wildcard pattern matching isn't supported."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -33,7 +33,7 @@ syntax: |
 
 ## Description
 
-Analytics Platform System (PDW) Returns a list of all indexes and statistics on a specified table or indexed view. Transact-SQL syntax conventions Specifies the table used to return catalog information. default. Wildcard pattern matching isn't supported. The name of the table owner of the table used to return catalog information. . Wildcard pattern matching isn't supported. If specified, the default table visibility rules of the underlying database management system
+Analytics Platform System (PDW) Returns a list of all indexes and statistics on a specified table or indexed view. Specifies the table used to return catalog information. default. Wildcard pattern matching isn't supported.
 
 ## Syntax
 

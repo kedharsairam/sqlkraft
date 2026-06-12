@@ -31,8 +31,6 @@ Article
 
 12/30/2024
 
-Applies to:
-
 SQL Server
 
 Transaction
@@ -63,9 +61,9 @@ was enabled using the
 
 keyword, and doesn't require intervention from the developer.
 
-The .NET Framework Data Provider for SQL Server provides support for transaction promotion,
+The.NET Framework Data Provider for SQL Server provides support for transaction promotion,
 
-handled through the classes in the .NET Framework
+handled through the classes in the.NET Framework
 
 namespace.
 

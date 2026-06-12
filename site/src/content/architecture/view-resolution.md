@@ -26,9 +26,7 @@ statements such as
 
 ,
 
-, and
-
-.
+, and.
 
 and
 

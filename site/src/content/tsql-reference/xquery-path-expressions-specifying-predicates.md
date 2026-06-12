@@ -33,8 +33,6 @@ Article
 
 10/17/2024
 
-Applies to:
-
 SQL Server
 
 As described in the topic,
@@ -45,15 +43,11 @@ Path Expressions in XQuery
 
 the following components:
 
-An axis
-
-.
+An axis.
 
 A node test. For more information, see
 
-Specifying Node Test in a Path Expression Step
-
-.
+Specifying Node Test in a Path Expression Step.
 
 Zero or more predicates. This is optional.
 

@@ -1,7 +1,7 @@
 ---
 name: "To Count the Connections per Login"
 title: "To Count the Connections per Login"
-description: "SQL Server diagnostic script for security-audit operations."
+description: "diagnostic script for security-audit operations."
 category: security-audit
 tags: ["login", "security-audit"]
 pubDate: 2025-03-15

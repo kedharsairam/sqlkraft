@@ -95,9 +95,7 @@ dm_database_encryption_keys, the encryptor_type will be
 
 displayed as
 
-instead of
-
-.
+instead of.
 
 Expand table
 

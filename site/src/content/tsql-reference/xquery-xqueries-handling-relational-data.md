@@ -15,8 +15,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 You specify XQuery against an
@@ -25,17 +23,13 @@ type column or variable by using one of the
 
 XML Data Type
 
-Methods
-
-. These include
+Methods. These include
 
 ,
 
 ,
 
-, or
-
-. The XQuery is executed against
+, or. The XQuery is executed against
 
 the XML instance identified in the query generating the XML.
 
@@ -83,9 +77,7 @@ sql:column() function (XQuery)
 
 and
 
-sql:variable() function (XQuery)
-
-.
+sql:variable() function (XQuery).
 
 XML Data (SQL Server)
 

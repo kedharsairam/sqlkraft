@@ -19,9 +19,7 @@ that represents the symmetric difference
 
 between a
 
-and a
-
-.
+and a.
 
 The following example returns a
 
@@ -32,8 +30,6 @@ ring that
 represents the symmetric difference between the two instances compared.
 
 OGC Methods on Geometry Instances
-
-Last updated on 11/18/2025
 
 See Also
 

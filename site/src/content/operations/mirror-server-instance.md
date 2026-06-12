@@ -27,8 +27,6 @@ Article
 
 11/25/2024
 
-Applies to:
-
 SQL Server
 
 Use this page to specify information about the server instance with the mirror database.
@@ -49,25 +47,19 @@ dialog box), that instance is displayed; for more information, see
 
 Database
 
-Properties (Mirroring Page)
-
-.
+Properties (Mirroring Page).
 
 Otherwise, enter the name of the mirror server instance. Note that the mirror server instance
 
 cannot be the same as the principal server instance.
 
-If a mirror server instance has not been specified, click
-
-. This displays the
+If a mirror server instance has not been specified, click. This displays the
 
 dialog box in which you can specify the server instance and establish a connection.
 
 If the instance has been specified, but the wizard lacks a connection with sufficient permission
 
-to check for the existence of the endpoint, click
-
-. This displays the
+to check for the existence of the endpoint, click. This displays the
 
 dialog box with the server instance pre-selected and unchangeable. Specify a domain account
 

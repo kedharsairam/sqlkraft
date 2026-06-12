@@ -25,15 +25,13 @@ pubDate: 2025-12-01
 
 07/03/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
 
 This article introduces
 
-SQL Server Migration Assistant
+Migration Assistant
 
 that helps you easily migrate databases
 
@@ -73,7 +71,7 @@ SSMA for Sybase ASE
 
 Next, follow the
 
-SQL Server Migration Assistant
+Migration Assistant
 
 to migrate your source database to SQL Server
 
@@ -81,4 +79,4 @@ on Linux.
 
 Microsoft Data Migration blog
 
-SQL Server Migration Assistant (SSMA) blog
+Migration Assistant (SSMA) blog

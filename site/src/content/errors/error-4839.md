@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 4839 16 No Cannot perform the bulk load. Invalid collation name for source column %d in the format file "%s". 4840 16 No The bulk data source provider string has an invalid %ls property va
+Description 4839 16 No Cannot perform the bulk load. Invalid collation name for source column %d in the format file "%s".
 
 ## Severity
 

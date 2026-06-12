@@ -2,12 +2,10 @@
 name: "Declare a Transact-SQL variable"
 title: "Declare a Transact-SQL variable"
 category: "language-elements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "language-elements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -91,9 +89,7 @@ variables, you can assign a precision and optional scale. For variables of type 
 
 can optionally assign a schema collection.
 
-Setting the value to
-
-.
+Setting the value to.
 
 For example, the following
 
@@ -103,9 +99,7 @@ with
 
 an
 
-data type. By default, the value for this variable is
-
-.
+data type. By default, the value for this variable is.
 
 `AdventureWorks2025`
 

@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -79,8 +77,7 @@ However, there are important differences. The SQL view definition is read-only a
 
 manipulated with embedded XQuery. The XML views are created by using annotated schema.
 
-```sql
-.
+```sql.
 CREATE
 VIEW
 V (xmlVal)

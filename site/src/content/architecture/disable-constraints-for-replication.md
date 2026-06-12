@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -57,21 +55,15 @@ and then expand the
 
 folder.
 
-2. Right-click the foreign key constraint and then select
-
-.
+2. Right-click the foreign key constraint and then select.
 
 3. In the
 
 dialog box, select a value of
 
-for
+for.
 
-.
-
-4. Select
-
-.
+4. Select.
 
 ７
 

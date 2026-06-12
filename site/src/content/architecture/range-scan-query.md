@@ -34,9 +34,7 @@ can be
 
 added before
 
-, such as
-
-. Similarly, the
+, such as. Similarly, the
 
 key-range lock on the index entry
 

@@ -19,8 +19,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -29,7 +27,7 @@ Under certain circumstances, you might need to restore the
 
 database on an instance of
 
-SQL Server in single-user mode on Linux. Scenarios include migrating to a new instance, or
+in single-user mode on Linux. Scenarios include migrating to a new instance, or
 
 recovering from inconsistencies.
 
@@ -45,9 +43,7 @@ For starting a SQL Server instance in single-user mode on Windows, see
 
 Single-user mode for
 
-SQL Server
-
-.
+SQL Server.
 
 Starting SQL Server in single-user mode enables any member of the local administrator group to
 
@@ -55,9 +51,7 @@ connect to SQL Server as a member of the
 
 fixed server role. For more information, see
 
-Connect to SQL Server when system administrators are locked out
-
-.
+Connect to SQL Server when system administrators are locked out.
 
 When you start an instance of SQL Server in single-user mode:
 
@@ -73,7 +67,7 @@ process isn't executed. By default, it runs automatically at startup.
 
 Note
 
-SQL Server will automatically shut down after the restore is complete. This behavior is by
+will automatically shut down after the restore is complete. This behavior is by
 
 design.
 

@@ -2,7 +2,7 @@
 name: "sys.sp_update_alert"
 title: "sp_update_alert"
 category: "general"
-description: "Updates the settings of an existing alert. Transact-SQL syntax conventions The name of the alert that is to be updated."
+description: "Updates the settings of an existing alert."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -67,7 +67,7 @@ syntax: |
 
 ## Description
 
-Updates the settings of an existing alert. Transact-SQL syntax conventions The name of the alert that is to be updated.
+Updates the settings of an existing alert.
 
 ## Syntax
 

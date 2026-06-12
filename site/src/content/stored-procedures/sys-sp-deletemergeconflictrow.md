@@ -2,7 +2,7 @@
 name: "sys.sp_deletemergeconflictrow"
 title: "sp_deletemergeconflictrow"
 category: "general"
-description: "Deletes rows from a conflict table or the table. This stored procedure is executed at the computer where the conflict table is stored, in any database. Transact-SQL syntax conventions The name of the conflict table. , the conflict is assumed to be a delete conflict and the The row identifier for the delete conflict."
+description: "Deletes rows from a conflict table or the table. This stored procedure is executed at the computer where the conflict table is stored, in any database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -27,7 +27,7 @@ syntax: |
 
 ## Description
 
-Deletes rows from a conflict table or the table. This stored procedure is executed at the computer where the conflict table is stored, in any database. Transact-SQL syntax conventions The name of the conflict table. , the conflict is assumed to be a delete conflict and the The row identifier for the delete conflict.
+Deletes rows from a conflict table or the table. This stored procedure is executed at the computer where the conflict table is stored, in any database.
 
 ## Syntax
 

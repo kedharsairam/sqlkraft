@@ -42,7 +42,7 @@ Server queries the OLE DB provider to determine the level of SQL grammar it supp
 
 based on that information, pushes as many relational operations as possible to the provider.
 
-SQL Server specifies a mechanism for an OLE DB provider to return statistics indicating how key
+specifies a mechanism for an OLE DB provider to return statistics indicating how key
 
 values are distributed within the OLE DB data source. This lets the SQL Server Query Optimizer
 
@@ -52,7 +52,7 @@ Transact-SQL statement, increasing the ability of the Query Optimizer to generat
 
 execution plans.
 
-SQL Server 2008 (10.0.x) improved query processing performance on partitioned tables for
+2008 (10.0.x) improved query processing performance on partitioned tables for
 
 many parallel plans, changes the way parallel and serial plans are represented, and enhanced
 

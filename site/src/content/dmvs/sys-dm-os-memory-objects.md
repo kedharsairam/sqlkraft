@@ -2,7 +2,7 @@
 name: "sys.dm_os_memory_objects"
 title: "sys.dm_os_memory_objects"
 category: "os"
-description: "Analytics Platform System (PDW) Returns memory objects that are currently allocated by SQL Server. You can use to analyze memory use and to identify possible memory leaks. Address of the memory object. Is not nullable. Address of the parent memory object. Is nullable. : SQL Server 2008 (10.0.x) through SQL Server Number of pages that are allocated by this object."
+description: "Returns memory objects that are currently allocated by SQL Server. You can use to analyze memory use and to identify possible memory leaks. Address of the memory object. Is not nullable. Address of the parent memory object. Is nullable. : SQL Server 2008 (10.0.x) through SQL Server Number of pages that are allocated by this object."
 tags: ["os", "dmv"]
 pubDate: 2026-05-29
 syntax: |

@@ -29,8 +29,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Use this page to specify whether you want to include a witness server in this security

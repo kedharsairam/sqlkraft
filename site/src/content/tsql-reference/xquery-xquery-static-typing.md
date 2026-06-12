@@ -16,8 +16,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 XQuery in SQL Server is a statically typed language. That is, it raises type errors during query
@@ -42,17 +40,13 @@ in the following way:
 
 The static type of 1 is
 
-and the static type of 2.3 is
-
-. Based on the
+and the static type of 2.3 is. Based on the
 
 dynamic semantics, the static semantics of the
 
 operation converts the integer to a
 
-decimal and then returns a decimal. The inferred static type would then be
-
-.
+decimal and then returns a decimal. The inferred static type would then be.
 
 For untyped XML instances, there are special types to indicate that the data was not typed. This
 
@@ -64,15 +58,11 @@ XML data type instance. For example, if the schema allows only elements of type
 
 , the
 
-results of a path expression using that element will be zero or more elements of type
-
-. This is currently expressed by using an expression such as
+results of a path expression using that element will be zero or more elements of type. This is currently expressed by using an expression such as
 
 where the asterisk (\*) indicates the cardinality of the resulting type.
 
-In this example, the expression may result in zero or more elements of name "age" and type
-
-. Other cardinalities are exactly one and are expressed by using the type name alone,
+In this example, the expression may result in zero or more elements of name "age" and type. Other cardinalities are exactly one and are expressed by using the type name alone,
 
 zero or one and expressed by using a question mark (
 
@@ -92,9 +82,7 @@ element inside a <customer> element (/customer/name), but the schema does not al
 
 This will be used to detect incorrect queries and will be reported as a static error, unless the
 
-expression was () or
-
-.
+expression was () or.
 
 ```sql
 element(age,xs:integer)*

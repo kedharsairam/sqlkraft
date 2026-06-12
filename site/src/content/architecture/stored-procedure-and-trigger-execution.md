@@ -6,7 +6,7 @@ tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL Server can't predict what key value will be supplied by the
+can't predict what key value will be supplied by the
 
 parameter every time the procedure is executed. Because the key value can't be predicted, the
 
@@ -24,7 +24,7 @@ can be represented as shown in the following:
 
 Output
 
-SQL Server sometimes builds these types of dynamic execution plans even for queries that
+sometimes builds these types of dynamic execution plans even for queries that
 
 aren't parameterized. The Query Optimizer can parameterize a query so that the execution plan
 
@@ -34,7 +34,7 @@ Query Optimizer can no longer assume the required rows will come from a specifie
 
 table. It will then have to use dynamic filters in the execution plan.
 
-SQL Server stores only the source for stored procedures and triggers. When a stored procedure
+stores only the source for stored procedures and triggers. When a stored procedure
 
 or trigger is first executed, the source is compiled into an execution plan. If the stored
 

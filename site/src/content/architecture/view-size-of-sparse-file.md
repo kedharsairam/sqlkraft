@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to use Transact-SQL to verify that a SQL Server database file is a
@@ -45,9 +43,7 @@ column from either
 
 in the database snapshot or
 
-from
-
-. The value indicates whether the file is a sparse file, as follows:
+from. The value indicates whether the file is a sparse file, as follows:
 
 1 = File is a sparse file.
 

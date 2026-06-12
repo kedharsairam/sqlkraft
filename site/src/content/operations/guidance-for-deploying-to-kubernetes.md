@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -35,9 +33,7 @@ Similarly, the deployment script recommendation is to deploy one SQL Server inst
 
 the
 
-value to
-
-. If you enter a number greater than
+value to. If you enter a number greater than
 
 as the
 
@@ -61,17 +57,13 @@ Another reason we recommend one SQL Server per deployment script is to allow cha
 
 configuration values, edition, trace flags, and other settings to be made independently for each
 
-SQL Server instance deployed.
+instance deployed.
 
 In the following example, the StatefulSet workload name should match the
 
-value, which in this case is
+value, which in this case is. For more information, see
 
-. For more information, see
-
-StatefulSets
-
-.
+StatefulSets.
 
 ）
 

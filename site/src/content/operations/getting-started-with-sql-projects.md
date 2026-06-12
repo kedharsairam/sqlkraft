@@ -21,9 +21,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2022 (16.x) and later versions
+2022 (16.x) and later versions
 
 Azure SQL Database
 
@@ -63,9 +61,7 @@ Build the project
 
 4.
 
-Deploy the project
-
-.NET SDK
+Deploy the project.NET SDK
 
 Visual Studio 2022 Community, Professional, or Enterprise
 
@@ -77,17 +73,13 @@ it. There are other ways to create a project that enable immediately populating 
 
 objects from an existing database, such as using the
 
-schema comparison tools
-
-.
+schema comparison tools.
 
 Select
 
 ,
 
-, then
-
-.
+, then.
 
 ７
 
@@ -97,8 +89,6 @@ To complete the deployment of a SQL database project, you need access to an Azur
 
 or SQL Server instance. You can develop locally for free with
 
-SQL Server developer
+developer
 
-on Windows or in
-
-.
+on Windows or in.

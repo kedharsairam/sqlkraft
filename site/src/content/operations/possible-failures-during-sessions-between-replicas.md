@@ -27,8 +27,6 @@ Article
 
 07/04/2023
 
-Applies to:
-
 SQL Server
 
 Physical, operating system, or SQL Server problems can cause a failure in a session between
@@ -39,15 +37,11 @@ which
 
 relies to verify whether they are functioning correctly or have failed.
 
-However, for some types of failures, the affected component reports an error to
-
-.
+However, for some types of failures, the affected component reports an error to.
 
 An error reported by another component is called a
 
-hard error
-
-.
+hard error.
 
 To detect other failures that would otherwise go unnoticed, Always On availability groups
 
@@ -61,9 +55,7 @@ disconnected. When a session timeout occurs between two availability replicas, t
 
 replicas assume that a failure has occurred and declares a
 
-soft error
-
-.
+soft error.
 
 The speed of error detection and, therefore, the reaction time to a failure, depends on whether
 

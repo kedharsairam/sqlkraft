@@ -27,8 +27,6 @@ Article
 
 04/25/2023
 
-Applies to:
-
 SQL Server
 
 If data in an online database becomes damaged, in some cases, reverting the database to a
@@ -71,9 +69,7 @@ regular backups and testing your restore plan are essential to protect a databas
 
 more information, see
 
-Back Up and Restore of SQL Server Databases
-
-.
+Back Up and Restore of SQL Server Databases.
 
 ７
 

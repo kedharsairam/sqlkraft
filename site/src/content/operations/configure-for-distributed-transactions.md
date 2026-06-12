@@ -27,11 +27,9 @@ Article
 
 09/16/2024
 
-Applies to:
-
 SQL Server
 
-SQL Server 2017 (14.x) and later versions support all distributed transactions including
+2017 (14.x) and later versions support all distributed transactions including
 
 databases in an availability group. This article explains how to configure an availability group
 
@@ -49,19 +47,15 @@ sources. DTC is a service available on supported Windows Server-based operating 
 
 a distributed transaction, DTC is the
 
-transaction coordinator
-
-. Normally, a SQL Server instance is
+transaction coordinator. Normally, a SQL Server instance is
 
 the
 
-resource manager
-
-. When a database is in an availability group, each database needs to be
+resource manager. When a database is in an availability group, each database needs to be
 
 its own resource manager.
 
-SQL Server doesn't prevent distributed transactions for databases in an availability group -
+doesn't prevent distributed transactions for databases in an availability group -
 
 even when the availability group isn't configured for distributed transactions. However when an
 
@@ -83,7 +77,7 @@ Failover Cluster. Within an availability group, the consistency between replicas
 
 Note
 
-SQL Server 2016 (13.x) Service Pack 2 and later versions provide full support for
+2016 (13.x) Service Pack 2 and later versions provide full support for
 
 distributed transactions in availability groups. In SQL Server 2016 (13.x) Service Pack 1 and
 

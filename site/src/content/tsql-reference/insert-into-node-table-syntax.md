@@ -2,14 +2,12 @@
 name: "INSERT Into node table syntax"
 title: "INSERT Into node table syntax"
 category: "queries"
-description: "SQL Server 2017 (14.x) and later versions"
+description: "2017 (14.x) and later versions"
 tags: ["tsql", "queries"]
 pubDate: 2026-05-29
 ---
 
-Applies to:
-
-SQL Server 2017 (14.x) and later versions
+2017 (14.x) and later versions
 
 Azure SQL Database
 
@@ -25,8 +23,6 @@ or
 
 table in SQL Server.
 
-Transact-SQL syntax conventions
-
 The syntax for inserting into a Node table is the same as for a regular table.
 
 ## syntaxsql
@@ -39,7 +35,7 @@ The syntax for inserting into a Node table is the same as for a regular table.
 [
 WITH
 <common_table_expression>
-[ ,...n ] ]
+[ ,.n ] ]
 INSERT
 {
 [
@@ -55,7 +51,7 @@ INTO
 [
 WITH (
 <Table_Hint_Limited>
-[ ...n ] ) ]
+[.n ] ) ]
 }
 {
 [ (column_list) ] | [(
@@ -69,7 +65,7 @@ VALUES ( {
 DEFAULT
 |
 NULL
-| expression } [ ,...n ] ) [ ,...n     ]
+| expression } [ ,.n ] ) [ ,.n ]
 | derived_table
 | execute_statement
 |
@@ -84,11 +80,11 @@ VALUES
 <object>
 ::=
 {
-[ server_name . database_name . schema_name .
-| database_name .[ schema_name ] .
-| schema_name .
+[ server_name. database_name. schema_name.
+| database_name.[ schema_name ].
+| schema_name.
 ]
-node_table_name  | edge_table_name
+node_table_name | edge_table_name
 }
 <dml_table_source>
 ::=
@@ -99,7 +95,7 @@ FROM (
 )
 [
 AS
-] table_alias [ ( column_alias [ ,...n ] ) ]
+] table_alias [ ( column_alias [ ,.n ] ) ]
 [
 WHERE
 <on_or_where_search_condition>
@@ -107,5 +103,5 @@ WHERE
 [
 OPTION (
 <query_hint>
-[ ,...n ] ) ]
+[ ,.n ] ) ]
 ```

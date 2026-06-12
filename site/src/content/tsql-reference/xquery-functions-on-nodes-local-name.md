@@ -12,8 +12,6 @@ pubDate: 2025-12-01
 
 09/29/2025
 
-Applies to:
-
 SQL Server
 
 Returns the local part of the name of
@@ -24,13 +22,9 @@ as an
 
 that is either the zero-length string,
 
-or has the lexical form of an
-
-. If the argument isn't provided, the default is the
+or has the lexical form of an. If the argument isn't provided, the default is the
 
 context node.
-
-syntaxsql
 
 Node name whose local-name part is retrieved.
 

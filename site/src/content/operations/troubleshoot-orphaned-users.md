@@ -29,8 +29,6 @@ pubDate: 2025-12-01
 
 Summarize this article for me
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -43,9 +41,7 @@ Analytics Platform System (PDW)
 
 Users are orphaned in SQL Server when a database user is based on a login in the
 
-database but the login no longer exists in
-
-. This can occur when the login is deleted or
+database but the login no longer exists in. This can occur when the login is deleted or
 
 when the database is moved to another server on which the login doesn't exist. This article
 
@@ -59,7 +55,7 @@ database. This login is used in the authentication process that verifies the pri
 
 and determines whether the principal is allowed to connect to the instance of SQL Server. The
 
-SQL Server logins on a server instance are visible in the
+logins on a server instance are visible in the
 
 sys.server_principals
 
@@ -71,7 +67,7 @@ sys.sql_logins
 
 compatibility view.
 
-SQL Server logins access individual databases as a "database user" that's mapped to the SQL
+logins access individual databases as a "database user" that's mapped to the SQL
 
 Server login. There are three exceptions to this rule:
 
@@ -87,9 +83,7 @@ Note
 
 Reduce the possibility of orphaned users by using contained database users for databases
 
-that might be moved. For more information, see
-
-.
+that might be moved. For more information, see.
 
 ）
 
@@ -103,11 +97,9 @@ but is now deprecated. Use
 
 instead, as described in the
 
-section. For more information, see
-
-.
+section. For more information, see.
 
 ```cmd
 master master master sp_change_users_login
-ALTER USER ... WITH LOGIN
+ALTER USER. WITH LOGIN
 ```

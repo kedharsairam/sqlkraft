@@ -27,8 +27,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -50,8 +48,6 @@ Indicates that a table or index scan has started.
 Scan:Stopped Event Class
 
 Indicates that a table or index scan has stopped.
-
-Last updated on 11/18/2025
 
 ﾉ
 

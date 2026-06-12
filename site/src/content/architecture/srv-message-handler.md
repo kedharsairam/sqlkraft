@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Calls the installed Extended Stored Procedure API message handler. This function is usually

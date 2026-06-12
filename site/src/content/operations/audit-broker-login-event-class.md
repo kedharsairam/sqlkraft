@@ -35,15 +35,13 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
 
 Azure SQL Managed Instance
 
-SQL Server creates an
+creates an
 
 event to report audit messages related to Service
 
@@ -63,7 +61,7 @@ Unused in this event class.
 
 Yes
 
-SQL Server Profiler displays the name of the
+Profiler displays the name of the
 
 database if the
 
@@ -81,9 +79,7 @@ Yes
 
 The type of event class captured. Always
 
-for
-
-.
+for.
 
 27
 
@@ -117,13 +113,7 @@ method is available, the accepting (target)
 
 endpoint determines which method is tried first.
 
-Possible values are:
-
-. No authentication method is configured.
-
-. Requires NTLM authentication.
-
-. Requires Kerberos authentication.
+Possible values are:. No authentication method is configured. Requires NTLM authentication. Requires Kerberos authentication.
 
 36
 

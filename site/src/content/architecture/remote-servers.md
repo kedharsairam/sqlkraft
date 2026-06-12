@@ -96,9 +96,7 @@ possible, to make the upgrades easier. For more information about
 
 compatibility levels, see
 
-ALTER DATABASE (Transact-SQL) compatibility level
-
-.
+ALTER DATABASE (Transact-SQL) compatibility level.
 
 Database
 

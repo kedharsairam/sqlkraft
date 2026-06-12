@@ -2,12 +2,10 @@
 name: "Hints"
 title: "Hints"
 category: "hints"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "hints"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -40,8 +38,6 @@ Join hints
 Query hints
 
 Table hints
-
-Last updated on 11/18/2025
 
 Ｕ
 

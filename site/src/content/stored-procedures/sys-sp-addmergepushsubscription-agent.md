@@ -2,7 +2,7 @@
 name: "sys.sp_addmergepushsubscription_agent"
 title: "sp_addmergepushsubscription_agent"
 category: "general"
-description: "Adds a new agent job used to schedule synchronization of a push subscription to a merge publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text."
+description: "Adds a new agent job used to schedule synchronization of a push subscription to a merge publication. This stored procedure is executed at the Publisher on the publication database. When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -55,7 +55,7 @@ syntax: |
 
 ## Description
 
-Adds a new agent job used to schedule synchronization of a push subscription to a merge publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher and its remote Distributor
+Adds a new agent job used to schedule synchronization of a push subscription to a merge publication. This stored procedure is executed at the Publisher on the publication database. When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher and its remote Distributor
 
 ## Syntax
 
@@ -109,4 +109,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . Create a push subscription Subscribe to Publications sp_addmergesubscription (Transact-SQL) sp_changemergesubscription (Transact-SQL) sp_dropmergesubscription (Transact-SQL) sp_helpmergesubscription (Transact-SQL) Related content
+Only members of the fixed server role or fixed database role can execute. Create a push subscription Subscribe to Publications sp_addmergesubscription (Transact-SQL) sp_changemergesubscription (Transact-SQL) sp_dropmergesubscription (Transact-SQL) sp_helpmergesubscription (Transact-SQL)

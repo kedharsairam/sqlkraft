@@ -27,8 +27,6 @@ Article
 
 05/19/2025
 
-Applies to:
-
 SQL Server
 
 A distributed availability group (AG) is a special type of availability group that spans two
@@ -41,9 +39,7 @@ This article describes the distributed availability group feature. To configure 
 
 availability group, see
 
-Configure distributed availability groups
-
-.
+Configure distributed availability groups.
 
 A distributed availability group is a special type of availability group that spans two separate
 
@@ -69,15 +65,13 @@ Server. To learn how to view information for a distributed availability group, s
 
 Viewing
 
-distributed availability group information
-
-.
+distributed availability group information.
 
 A distributed availability group requires that the underlying availability groups have a listener.
 
 Rather than provide the underlying server name for a standalone instance (or in the case of a
 
-SQL Server failover cluster instance [FCI], the value associated with the network name resource)
+failover cluster instance [FCI], the value associated with the network name resource)
 
 as you would with a traditional availability group, you specify the configured listener for the
 

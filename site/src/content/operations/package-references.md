@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 SQL projects package references
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -45,9 +43,7 @@ Package references are one of several methods for adding database objects to a S
 
 a
 
-database reference
-
-. Package references can contain objects for the same database, a
+database reference. Package references can contain objects for the same database, a
 
 different database on the same server, or a different database on a different server. Package
 

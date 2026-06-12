@@ -8,33 +8,23 @@ pubDate: 2026-05-29
 
 into the clustered index on column b to find the rows that meet the condition
 
-and
-
-.
+and.
 
 The following illustration is a logical representation of the skip scan operation. It shows table
 
 with data in columns
 
-and
-
-. The partitions are numbered 1 through 4 with the partition
+and. The partitions are numbered 1 through 4 with the partition
 
 boundaries shown by dashed vertical lines. A first-level seek operation to the partitions (not
 
 shown in the illustration) has determined that partitions 1, 2, and 3 meet the seek condition
 
-implied by the partitioning defined for the table and the predicate on column
-
-. That is,
-
-. The path traversed by the second-level seek portion of the skip scan operation is illustrated
+implied by the partitioning defined for the table and the predicate on column. That is,. The path traversed by the second-level seek portion of the skip scan operation is illustrated
 
 by the curved line. Essentially, the skip scan operation seeks into each of these partitions for
 
-rows that meet the condition
-
-. The total cost of the skip scan operation is the same as
+rows that meet the condition. The total cost of the skip scan operation is the same as
 
 that of three separate index seeks.
 
@@ -58,9 +48,7 @@ on the
 
 Query Editor toolbar and the run-time plan by selecting
 
-Include Actual Execution Plan
-
-.
+Include Actual Execution Plan.
 
 Using these tools, you can ascertain the following information:
 
@@ -90,7 +78,7 @@ When the skip scan operation is used in a seek or scan operation to retrieve dat
 
 one or more partitions.
 
-SQL Server provides enhanced partitioning information for both compile-time and run-time
+provides enhanced partitioning information for both compile-time and run-time
 
 execution plans. Execution plans now provide the following information:
 
@@ -116,9 +104,7 @@ element with a
 
 subelement that includes
 
-as the leading index key column and filter conditions that specify range seeks on
-
-. The presence of two
+as the leading index key column and filter conditions that specify range seeks on. The presence of two
 
 subelements indicates that a skip scan
 
@@ -132,9 +118,7 @@ information is available only in run-time plans.
 
 To demonstrate how this information is displayed in both the graphical execution plan output
 
-and the XML Showplan output, consider the following query on the partitioned table
-
-. This query updates data in two partitions.
+and the XML Showplan output, consider the following query on the partitioned table. This query updates data in two partitions.
 
 The following illustration shows the properties of the
 

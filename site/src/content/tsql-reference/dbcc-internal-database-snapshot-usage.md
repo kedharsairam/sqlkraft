@@ -2,12 +2,10 @@
 name: "DBCC internal database snapshot usage"
 title: "DBCC internal database snapshot usage"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -51,9 +49,7 @@ Database Engine creates. The snapshot prevents blocking and concurrency problems
 
 these commands are executed. For more information, see
 
-Database Snapshots (SQL Server)
-
-.
+Database Snapshots (SQL Server).
 
 When you execute one of these DBCC commands, the Database Engine creates a database
 

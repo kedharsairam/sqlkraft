@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 06/16/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -51,21 +49,15 @@ Database Engine. But the compatibility level of previous versions is preserved f
 
 compatibility of existing applications. This compatibility matrix can be seen
 
-here
+here. Therefore, an
 
-. Therefore, an
-
-application that was certified to work with a given SQL Server version
-
-.
+application that was certified to work with a given SQL Server version.
 
 For example, database compatibility level 130 was the default in SQL Server 2016 (13.x).
 
 Because compatibility levels force specific Transact-SQL functional and query optimization
 
-behaviors,
-
-. This database can work as-is on a more recent version of SQL
+behaviors,. This database can work as-is on a more recent version of SQL
 
 Server (such as SQL Server 2019 (15.x)) and Azure SQL Database, as long as the database
 
@@ -91,6 +83,4 @@ Hardware and software requirements for SharePoint Server 2016
 
 and
 
-Hardware and software requirements for SharePoint Server 2019
-
-.
+Hardware and software requirements for SharePoint Server 2019.

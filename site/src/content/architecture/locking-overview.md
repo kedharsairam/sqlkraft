@@ -18,25 +18,17 @@ Optimized locking is enabled.
 
 Optimized locking isn't available.
 
-You can also use the
-
 sys.databases
 
-catalog view. For example, to see if optimized locking is
+catalog view.
 
 enabled for all databases, execute the following query:
 
-This is a short summary of the behavior when optimized locking isn't enabled. For more
+This is a short summary of the behavior when optimized locking isn't enabled.
 
-information, review the
-
-Transaction locking and row versioning guide
-
-.
+Transaction locking and row versioning guide.
 
 ﾉ
-
-Expand table
 
 ```sql
 0
@@ -56,7 +48,7 @@ is_accelerated_database_recovery_on,
 is_read_committed_snapshot_on,
 is_optimized_locking_on
 FROM sys.databases
-WHERE name
+
 = DB_NAME();
 ```
 

@@ -27,13 +27,11 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 You can resume a suspended availability database in Always On availability groups by using
 
-SQL Server Management Studio, Transact-SQL, or PowerShell in SQL Server. Resuming a
+Management Studio, Transact-SQL, or PowerShell in SQL Server. Resuming a
 
 suspended database puts the database into the SYNCHRONIZING state. Resuming the primary
 

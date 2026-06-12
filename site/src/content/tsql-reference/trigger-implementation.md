@@ -63,9 +63,7 @@ and
 
 database compatibility levels;
 
-however, the keyword isn't fully reserved when the database compatibility level is set to
-
-.
+however, the keyword isn't fully reserved when the database compatibility level is set to.
 
 For every insert, update, or delete action specified in the
 
@@ -81,9 +79,7 @@ specify. For more information about setting trigger firing order, see
 
 Specify First and Last
 
-Triggers
-
-.
+Triggers.
 
 If the target table has an enabled
 
@@ -105,9 +101,7 @@ Caution
 
 Don't use the
 
-statement when using
-
-. The
+statement when using. The
 
 and
 

@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 This topic introduces the Transact-SQL statements that support deploying Always On
@@ -37,7 +35,7 @@ availability groups and creating and managing an given availability group, avail
 
 and availability database.
 
-CREATE ENDPOINT ... FOR DATABASE_MIRRORING
+CREATE ENDPOINT. FOR DATABASE_MIRRORING
 
 creates a database mirroring endpoint, if
 
@@ -51,9 +49,7 @@ create only one database mirroring endpoint on a given server instance. For more
 
 see
 
-The Database Mirroring Endpoint (SQL Server)
-
-.
+The Database Mirroring Endpoint (SQL Server).
 
 CREATE AVAILABILITY GROUP
 
@@ -71,9 +67,7 @@ of a Windows Server Failover Cluster (WSFC) (for more information, see
 
 Prerequisites,
 
-Restrictions, and Recommendations for Always On Availability Groups (SQL Server)
-
-.
+Restrictions, and Recommendations for Always On Availability Groups (SQL Server).
 
 ALTER AVAILABILITY GROUP
 

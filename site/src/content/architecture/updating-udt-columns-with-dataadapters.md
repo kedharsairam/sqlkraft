@@ -23,15 +23,11 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 You can retrieve and modify user-defined types (UDTs) by using a
 
-and a
-
-.
+and a.
 
 The code examples in this article use
 

@@ -95,7 +95,3 @@ Columnstore indexes: overview
 Indexes on computed columns
 
 Tune nonclustered indexes with missing index suggestions
-
-Last updated on 11/18/2025
-
-Related content

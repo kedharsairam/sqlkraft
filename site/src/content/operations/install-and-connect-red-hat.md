@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 Quickstart: Install SQL Server and create a
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -37,15 +35,11 @@ If you want to automate your installation using Ansible, see
 
 Quickstart: Deploy SQL Server on
 
-Linux using an Ansible playbook
-
-.
+Linux using an Ansible playbook.
 
 For more information on supported platforms, see
 
-Release notes for SQL Server 2025 on Linux
-
-.
+Release notes for SQL Server 2025 on Linux.
 
 You need a machine running RHEL 8.x with
 
@@ -53,9 +47,7 @@ of memory.
 
 To install Red Hat Enterprise Linux on your own machine, go to
 
-https://access.redhat.com/products/red-hat-enterprise-linux/evaluation
-
-. You can also create
+https://access.redhat.com/products/red-hat-enterprise-linux/evaluation. You can also create
 
 RHEL virtual machines in Azure. See
 
@@ -63,9 +55,7 @@ Create and Manage Linux VMs with the Azure CLI
 
 , and use
 
-in the call to
-
-.
+in the call to.
 
 If you previously installed a preview version of SQL Server, you must first remove the old
 
@@ -73,9 +63,7 @@ repository before following these steps. For more information, see
 
 Configure repositories for
 
-installing and upgrading SQL Server 2025 on Linux
-
-.
+installing and upgrading SQL Server 2025 on Linux.
 
 ７
 
@@ -93,9 +81,7 @@ This tutorial requires user input and an internet connection. If you're interest
 
 or
 
-installation procedures, see
-
-. If you choose to have a preinstalled SQL Server VM on RHEL ready to run your
+installation procedures, see. If you choose to have a preinstalled SQL Server VM on RHEL ready to run your
 
 production-based workload, follow the
 

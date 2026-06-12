@@ -19,8 +19,6 @@ pubDate: 2025-12-01
 
 06/16/2025
 
-Applies to:
-
 SQL Server
 
 The Copy Database Wizard moves or copies databases and certain server objects easily from

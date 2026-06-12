@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-If you have persistent data corruption problems, try to swap out different hardware components to isolate the problem. Check to make sure that the system does not have write- caching enabled on the di
+If you have persistent data corruption problems, try to swap out different hardware components to isolate the problem.
 
 ## Severity
 

@@ -14,9 +14,7 @@ Azure SQL Database, batch mode execution no longer requires columnstore indexes.
 
 information, see
 
-Batch mode on rowstore
-
-.
+Batch mode on rowstore.
 
 Batch mode processing operates on compressed data when possible, and eliminates the
 
@@ -30,15 +28,13 @@ When a query is executed in batch mode, and accesses data in columnstore indexes
 
 execution tree operators and child operators read multiple rows together in column segments.
 
-SQL Server reads only the columns required for the result, as referenced by a SELECT
+reads only the columns required for the result, as referenced by a SELECT
 
 statement, JOIN predicate, or filter predicate. For more information on columnstore indexes,
 
 see
 
-Columnstore Index Architecture
-
-.
+Columnstore Index Architecture.
 
 Processing a single Transact-SQL statement is the most basic way that SQL Server executes
 
@@ -54,23 +50,17 @@ is evaluated first, then
 
 ,
 
-and finally
-
-. Arithmetic, and bitwise, operators are handled before logical operators. For
+and finally. Arithmetic, and bitwise, operators are handled before logical operators. For
 
 more information, see
 
-Operator Precedence
-
-.
+Operator Precedence.
 
 In the following example, the color condition pertains to product model 21, and not to product
 
 model 20, because
 
-has precedence over
-
-.
+has precedence over.
 
 ７
 

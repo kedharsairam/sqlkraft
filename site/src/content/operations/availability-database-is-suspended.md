@@ -27,8 +27,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 : Availability Database Suspension State
@@ -57,9 +55,7 @@ The database administrator might have suspended data synchronization for mainten
 
 purposes.
 
-Resume data synchronization by right-clicking the availability group and selecting
-
-. If the issue persists, check the availability group in the Event log, and then
+Resume data synchronization by right-clicking the availability group and selecting. If the issue persists, check the availability group in the Event log, and then
 
 diagnose why the system suspended data movement.
 

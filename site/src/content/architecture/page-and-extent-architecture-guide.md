@@ -1,12 +1,10 @@
 ---
 title: "Page and extent architecture guide"
 topic: "query-processing"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["query-processing", "architecture"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -32,13 +30,11 @@ page
 
 is a fundamental unit of data storage in the Database Engine. The disk space allocated
 
-to a data file (.mdf or .ndf) in a database is logically divided into pages numbered contiguously
+to a data file (.mdf or.ndf) in a database is logically divided into pages numbered contiguously
 
 from 0 to
 
-n
-
-. Disk I/O operations against data files are performed at the page level. That is, the
+n. Disk I/O operations against data files are performed at the page level. That is, the
 
 Database Engine reads or writes whole data pages.
 
@@ -64,9 +60,7 @@ content, for example, the table of contents and the index.
 
 Similarly, most pages in the database contain actual rows of data. These are called
 
-data pages
-
-.
+data pages.
 
 Text/LOB
 
@@ -106,9 +100,7 @@ Data in columns using the LOB data types, such as
 
 ,
 
-, and
-
-.
+, and.
 
 ﾉ
 
@@ -124,9 +116,7 @@ using data types such as
 
 , and
 
-sql_variant
-
-.
+sql_variant.
 
 Index
 

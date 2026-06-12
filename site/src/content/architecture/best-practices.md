@@ -16,9 +16,7 @@ or any securable listed in
 
 the database or schema-scoped
 
-securable list
-
-.
+securable list.
 
 Specified
 
@@ -60,7 +58,7 @@ spinlock, allowing only one thread to perform the search at a time. Consequently
 
 can lead to decreased query performance and higher CPU usage.
 
-SQL Server provides two trace flags (TF) that can be used to set a quota for the
+provides two trace flags (TF) that can be used to set a quota for the
 
 TokenAndPermUserStore cache. By default, there's no quota, meaning the cache can hold an
 
@@ -74,9 +72,7 @@ TF 4618 and TF 4610: Limits the number of entries in the TokenAndPermUserStore t
 
 recommended to use trace flags 4610 and 4618 together. For more information, see
 
-DBCC TRACEON - Trace Flags (Transact-SQL)
-
-.
+DBCC TRACEON - Trace Flags (Transact-SQL).
 
 For more information, you can refer to the article
 

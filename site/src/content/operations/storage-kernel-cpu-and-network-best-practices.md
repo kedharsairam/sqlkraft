@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -31,7 +29,7 @@ Storage configuration recommendation
 
 Kernel and CPU settings for high performance
 
-SQL Server configuration
+configuration
 
 The storage subsystem that hosts data, transaction logs, and other associated files (such as
 
@@ -53,9 +51,7 @@ ensure appropriate IOPS and throughput. For storage considerations when configur
 
 Server on Azure virtual machines, see
 
-Configure storage for SQL Server on Azure VMs
-
-.
+Configure storage for SQL Server on Azure VMs.
 
 The following example shows how to create software RAID in Linux on an Azure Virtual Machine.
 
@@ -67,6 +63,4 @@ Note
 
 For memory configuration and container memory limits, see
 
-SQL Server memory on Linux
-
-.
+memory on Linux.

@@ -25,7 +25,7 @@ permissions that you must have to perform the task or set of tasks in a particul
 
 of the test. You can specify these strings in the
 
-SQL Server Test Configuration
+Test Configuration
 
 dialog box or by
 
@@ -35,7 +35,7 @@ file for your test project.
 
 In the
 
-SQL Server Test Configuration
+Test Configuration
 
 dialog box, you can specify connection strings for each of
 
@@ -49,9 +49,7 @@ important because it ensures that the appropriate permissions have been applied 
 
 database. For more information, see
 
-How to: Configure SQL Server unit test execution
-
-.
+How to: Configure SQL Server unit test execution.
 
 In the
 

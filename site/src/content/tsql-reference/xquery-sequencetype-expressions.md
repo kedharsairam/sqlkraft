@@ -16,8 +16,6 @@ Article
 
 11/19/2024
 
-Applies to:
-
 SQL Server
 
 In XQuery, a value is always a sequence. The type of the value is referred to as a sequence type.

@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -31,9 +29,7 @@ failover exist: automatic failover (without data loss), planned manual failover 
 
 loss), and forced manual failover (with possible data loss), typically called
 
-forced failover
-
-.
+forced failover.
 
 Automatic and planned manual failovers preserve all your data. An AG fails over at the
 
@@ -45,9 +41,7 @@ For background information about failover, see
 
 Failover and Failover Modes (Always On
 
-Availability Groups)
-
-.
+Availability Groups).
 
 Use the cluster management tools to fail over an AG managed by an external cluster manager.
 
@@ -57,9 +51,7 @@ to perform
 
 manual failovers on Red Hat Enterprise Linux (RHEL) or Ubuntu. On SUSE Linux Enterprise
 
-Server (SLES), use
-
-. (Starting in SQL Server 2025 (17.x), SUSE Linux Enterprise Server (SLES)
+Server (SLES), use. (Starting in SQL Server 2025 (17.x), SUSE Linux Enterprise Server (SLES)
 
 isn't supported.)
 
@@ -67,9 +59,7 @@ To fail over, the secondary replica that will become the primary replica must be
 
 a secondary replica is asynchronous,
 
-change the availability mode
-
-.
+change the availability mode.
 
 Manually fail over in two steps.
 
@@ -85,15 +75,11 @@ tools like SSMS or PowerShell. When
 
 for
 
-is
-
-. With these settings, all manual or automatic failover
+is. With these settings, all manual or automatic failover
 
 actions are executed by the external cluster manager. For instructions to force failover
 
-with potential data loss, see
-
-.
+with potential data loss, see.
 
 ```cmd
 pcs crm

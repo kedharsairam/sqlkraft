@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-In this case OS error = 0x139f, which is 5023 in decimal. If you go to a Command Prompt and type to look up this OS error, you'll get: "The group or resource isn't in the correct state to perform the
+In this case OS error = 0x139f, which is 5023 in decimal.
 
 ## Severity
 

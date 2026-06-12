@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description default %.*ls instead. 4018 16 No User default language %.*ls is not an official language name on this SQL Server. Using server-wide default %.\*ls instead. 4019 16 No Language requested in
+Description default %.*ls instead. 4018 16 No User default language %.*ls is not an official language name on this SQL Server. Using server-wide default %.\*ls instead.
 
 ## Severity
 

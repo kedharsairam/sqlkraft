@@ -29,8 +29,6 @@ Article
 
 04/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic provides samples for handling namespaces in queries.
@@ -65,6 +63,5 @@ WHERE ProductModelID=7
 <AWMI:step xmlns:AWMI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
 works/ProductModelManuInstructions">Insert <AWMI:material>aluminum sheet MS-
 2341</AWMI:material> into the <AWMI:tool>T-85A framing tool</AWMI:tool>.
-</AWMI:step>
-...
+</AWMI:step>.
 ```

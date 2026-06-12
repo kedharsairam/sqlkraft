@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -71,17 +69,13 @@ If the common query predicate is on a column (for
 
 example,
 
-) unrelated to the insert order, create a rowstore clustered index on column
-
-. Then, drop the rowstore clustered index and create a clustered columnstore index. If
+) unrelated to the insert order, create a rowstore clustered index on column. Then, drop the rowstore clustered index and create a clustered columnstore index. If
 
 you create the clustered columnstore index explicitly using
 
 , the resulting
 
-clustered columnstore index is perfectly ordered on column
-
-. If you specify
+clustered columnstore index is perfectly ordered on column. If you specify
 
 ,
 

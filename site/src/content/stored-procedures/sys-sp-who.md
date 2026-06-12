@@ -2,7 +2,7 @@
 name: "sys.sp_who"
 title: "sp_who"
 category: "general"
-description: "Provides information about current users, sessions, and processes in an instance of the SQL Server Database Engine. The information can be filtered to return only those processes that aren't idle, that belong to a specific user, or that belong to a specific session. Transact-SQL syntax conventions Used to filter the result set. that identifies processes belonging to a particular login. is a sessio"
+description: "Provides information about current users, sessions, and processes in an instance of the SQL Server Database Engine. The information can be filtered to return only those processes that aren't idle, that belong to a specific user, or that belong to a specific session. Used to filter the result set. that identifies processes belonging to a particular login. is a sessio"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -16,7 +16,7 @@ syntax: |
 
 ## Description
 
-Provides information about current users, sessions, and processes in an instance of the SQL Server Database Engine. The information can be filtered to return only those processes that aren't idle, that belong to a specific user, or that belong to a specific session. Transact-SQL syntax conventions Used to filter the result set. that identifies processes belonging to a particular login. is a session identification number belonging to the SQL Server instance.
+Provides information about current users, sessions, and processes in an instance of the SQL Server Database Engine. The information can be filtered to return only those processes that aren't idle, that belong to a specific user, or that belong to a specific session. Used to filter the result set. that identifies processes belonging to a particular login. is a session identification number belonging to the SQL Server instance.
 
 ## Syntax
 
@@ -54,7 +54,7 @@ USER
 AS
 'User Name'
 ;
-ID     Login Name                     User Name
+ID Login Name User Name
 ------ ------------------------------ ------------------------------
-54     SEATTLE\joanna                 dbo
+54 SEATTLE\joanna dbo
 ```

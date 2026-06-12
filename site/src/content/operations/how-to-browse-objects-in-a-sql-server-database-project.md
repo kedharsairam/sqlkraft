@@ -25,21 +25,19 @@ Management Studio-like hierarchy.
 
 1. In Visual Studio, make sure that
 
-SQL Server Object Explorer
+Object Explorer
 
 is open. If it's not, select the
 
 menu and select
 
-SQL Server Object Explorer
-
-.
+Object Explorer.
 
 2. Make sure you have a SQL Server database project.
 
 3. In
 
-SQL Server Object Explorer
+Object Explorer
 
 , expand the
 

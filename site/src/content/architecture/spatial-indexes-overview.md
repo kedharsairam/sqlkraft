@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -33,7 +31,7 @@ Azure SQL Managed Instance
 
 SQL database in Microsoft Fabric
 
-SQL Server supports spatial data and spatial indexes. A
+supports spatial data and spatial indexes. A
 
 spatial index
 
@@ -43,9 +41,7 @@ that allows you to index a spatial column. A spatial column is a table column th
 
 of a spatial data type, such as
 
-or
-
-.
+or.
 
 In SQL Server, spatial indexes are built using B-trees, which means that the indexes must
 
@@ -59,9 +55,7 @@ decomposes
 
 the space into a four-level
 
-grid hierarchy
-
-.
+grid hierarchy.
 
 These levels are referred to as
 
@@ -77,9 +71,7 @@ level 3
 
 , and
 
-level 4
-
-.
+level 4.
 
 Each successive level further decomposes the level above it, so each upper-level cell contains a
 
@@ -99,7 +91,7 @@ level-four cells.
 
 Tip
 
-SQL Server spatial tools is a Microsoft sponsored open-source collection of tools for use
+spatial tools is a Microsoft sponsored open-source collection of tools for use
 
 with the spatial types in SQL Server. This project provides a set of reusable functions which
 

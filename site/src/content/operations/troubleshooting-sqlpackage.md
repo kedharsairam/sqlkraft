@@ -26,13 +26,11 @@ understand the available parameters and properties is recommended, this article 
 
 starting point in investigating SqlPackage operations.
 
-As general guideline, better performance can be obtained via the
-
-.NET version
+As general guideline, better performance can be obtained via the.NET version
 
 of SqlPackage
 
-instead of the .NET Framework version installed via the DacFramework.msi.
+instead of the.NET Framework version installed via the DacFramework.msi.
 
 If you're unable to install the SqlPackage
 
@@ -46,7 +44,7 @@ commands from the command prompt in any directory:
 
 Download
 
-the zip for SqlPackage on .NET 8 for your operating system (Windows, macOS,
+the zip for SqlPackage on.NET 8 for your operating system (Windows, macOS,
 
 or Linux).
 
@@ -81,9 +79,7 @@ Bash
 For Export, an example command is:
 
 ```cmd
-cd
-.bacpac
-./SqlPackage /Action:Import /sf:<
+cd.bacpac./SqlPackage /Action:Import /sf:<
 source
 -bacpac-file-path> /tsn:<full-target-server-
 name> /tdn:<a new or empty database> /tu:<target-server-username> /tp:<target-

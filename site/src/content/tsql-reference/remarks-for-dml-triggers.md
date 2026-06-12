@@ -39,9 +39,7 @@ and
 
 constraints in
 
-and
-
-. If constraints exist on the trigger table, they're checked after
+and. If constraints exist on the trigger table, they're checked after
 
 the
 
@@ -57,9 +55,7 @@ trigger isn't fired.
 
 You can specify the first and last
 
-triggers to be run on a table by using
-
-. You can specify only one first and one last
+triggers to be run on a table by using. You can specify only one first and one last
 
 trigger for each
 
@@ -77,9 +73,7 @@ If an
 
 statement changes a first or last trigger, the first or last attribute set on the
 
-modified trigger is dropped, and you must reset the order value by using
-
-.
+modified trigger is dropped, and you must reset the order value by using.
 
 An
 
@@ -117,9 +111,7 @@ drop database objects that reference managed code modules, but these references 
 
 run in an instance of SQL Server unless the
 
-option is enabled with
-
-.
+option is enabled with.
 
 ## Test for UPDATE or INSERT actions to specific columns
 
@@ -155,9 +147,7 @@ definition must meet all the restrictions for an updatable view. For a definitio
 
 views, see
 
-Modify Data Through a View
-
-.
+Modify Data Through a View.
 
 For example, if a trigger is defined as an
 
@@ -309,8 +299,7 @@ Add, modify, or drop columns.
 
 ## Optimize DML triggers
 
-```sql
-.
+```sql.
 ```
 
 ```sql

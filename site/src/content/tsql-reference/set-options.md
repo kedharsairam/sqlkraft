@@ -31,9 +31,7 @@ associated with a primary key constraint. These indexes are required by replicat
 
 such an index, you must first drop the table from the publication. For more information, see
 
-Publish Data and Database Objects
-
-.
+Publish Data and Database Objects.
 
 Use the
 
@@ -43,13 +41,9 @@ statement to
 
 enable the index. Rebuilding a disabled clustered index can't be performed with the
 
-option set to
+option set to. For more information, see
 
-. For more information, see
-
-Disable indexes and constraints
-
-.
+Disable indexes and constraints.
 
 You can set the options
 
@@ -65,13 +59,9 @@ for a specified index without rebuilding or
 
 reorganizing that index. The modified values are immediately applied to the index. To view
 
-these settings, use
+these settings, use. For more information, see
 
-. For more information, see
-
-Set Index Options
-
-.
+Set Index Options.
 
 When
 
@@ -99,9 +89,7 @@ Documentation uses the term B-tree generally in reference to indexes. In rowstor
 
 indexes, the Database Engine implements a B+ tree. This does not apply to columnstore
 
-indexes or indexes on memory-optimized tables. For more information, see the
-
-.
+indexes or indexes on memory-optimized tables. For more information, see the.
 
 #### Option
 

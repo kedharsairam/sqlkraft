@@ -12,8 +12,6 @@ pubDate: 2025-12-01
 
 09/26/2025
 
-Applies to:
-
 SQL Server
 
 All the examples in
@@ -40,25 +38,19 @@ in an expression. For example,
 
 can be written
 
-as
-
-.
+as.
 
 An
 
 axis can be abbreviated as @. For example,
 
-can be written as
-
-.
+can be written as.
 
 A
 
 can be abbreviated as //. For example,
 
-can be written as
-
-.
+can be written as.
 
 The previous query retrieves all telephone numbers stored in the AdditionalContactInfo
 

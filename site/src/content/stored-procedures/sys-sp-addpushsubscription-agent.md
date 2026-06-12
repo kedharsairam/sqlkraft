@@ -2,7 +2,7 @@
 name: "sys.sp_addpushsubscription_agent"
 title: "sp_addpushsubscription_agent"
 category: "general"
-description: "Adds a new scheduled agent job used to synchronize a push subscription to a transactional publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher"
+description: "Adds a new scheduled agent job used to synchronize a push subscription to a transactional publication. This stored procedure is executed at the Publisher on the publication database. When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -61,7 +61,7 @@ syntax: |
 
 ## Description
 
-Adds a new scheduled agent job used to synchronize a push subscription to a transactional publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher and its remote Distributor
+Adds a new scheduled agent job used to synchronize a push subscription to a transactional publication. This stored procedure is executed at the Publisher on the publication database. When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher and its remote Distributor
 
 ## Syntax
 
@@ -121,4 +121,4 @@ N
 
 ## Permissions
 
-SQL Only members of the fixed server role or fixed database role can execute . Create a push subscription Create a Subscription for a Non-SQL Server Subscriber Subscribe to Publications Replication stored procedures (Transact-SQL) sp_addsubscription (Transact-SQL) sp_changesubscription (Transact-SQL) sp_dropsubscription (Transact-SQL) sp_helpsubscription (Transact-SQL) Related content Create a Subscription for a Non-SQL Server Subscriber Subscribe to Publications sp_addpushsubscription_agent (Transact-SQL) sp_changesubstatus (Transact-SQL) sp_dropsubscription (Transact-SQL) sp_helpsubscription (Transact-SQL) System stored procedures (Transact-SQL)
+SQL Only members of the fixed server role or fixed database role can execute. Create a push subscription Create a Subscription for a Non-SQL Server Subscriber Subscribe to Publications Replication stored procedures (Transact-SQL) sp_addsubscription (Transact-SQL) sp_changesubscription (Transact-SQL) sp_dropsubscription (Transact-SQL) sp_helpsubscription (Transact-SQL)

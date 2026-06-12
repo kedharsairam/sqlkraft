@@ -2,7 +2,7 @@
 name: "sys.sp_query_store_clear_hints"
 title: "sp_query_store_clear_hints"
 category: "general"
-description: "SQL Server 2022 (16.x) and later versions SQL database in Microsoft Fabric Transact-SQL syntax conventions argument defaults to the local replica (primary or secondary), but you can optionally specify a value matching a value in the to clear a hint for a different replica group. Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered"
+description: "2022 (16.x) and later versions SQL database in Microsoft Fabric argument defaults to the local replica (primary or secondary), but you can optionally specify a value matching a value in the to clear a hint for a different replica group. Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered"
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -16,7 +16,7 @@ syntax: |
 
 ## Description
 
-SQL Server 2022 (16.x) and later versions SQL database in Microsoft Fabric Transact-SQL syntax conventions argument defaults to the local replica (primary or secondary), but you can optionally specify a value matching a value in the to clear a hint for a different replica group. Arguments for extended stored procedures must be entered in the specific order as section. If the parameters are entered out of order, an error
+2022 (16.x) and later versions SQL database in Microsoft Fabric argument defaults to the local replica (primary or secondary), but you can optionally specify a value matching a value in the to clear a hint for a different replica group. Arguments for extended stored procedures must be entered in the specific order as section.
 
 ## Syntax
 
@@ -47,7 +47,7 @@ sp_query_store_clear_hints
 
 | - | - | for a given query ID. |
 
-| - | - | Transact-SQL syntax conventions |
+| - | - | |
 
 | - | - | sys.query_store_query |
 

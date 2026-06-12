@@ -16,9 +16,7 @@ failure.
 
 For more information on FUA support by Linux distribution and its effect on SQL Server, see
 
-Server On Linux: Forced Unit Access (FUA) Internals
-
-.
+Server On Linux: Forced Unit Access (FUA) Internals.
 
 Transactional integrity is one of the fundamental concepts of a relational database system.
 
@@ -42,7 +40,7 @@ application, and experience a system failure due to a momentary power fluctuatio
 
 restoration of power, the server hardware restarts, networking software loads and initializes, and
 
-SQL Server restarts. As SQL Server initializes, it automatically runs its recovery process based on
+restarts. As SQL Server initializes, it automatically runs its recovery process based on
 
 data in the transaction log. This entire process occurs without human intervention. When client
 

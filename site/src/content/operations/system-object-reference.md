@@ -27,8 +27,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article lists system objects that Azure extension for SQL Server deploys and manages. They
@@ -77,7 +75,7 @@ executables
 
 Expand table
 
-SQL Server files
+files
 
 ﾉ
 

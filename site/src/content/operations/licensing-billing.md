@@ -15,21 +15,17 @@ pubDate: 2025-12-01
 
 This article explains how to manage licensing and billing of SQL Server enabled by Azure Arc.
 
-SQL Server enabled by Azure Arc directly supports only the core-based licensing methods. For
+enabled by Azure Arc directly supports only the core-based licensing methods. For
 
 information about how you can manage SQL Server instances with a Server+CAL license, see
 
-Manage SQL Server instances with a Server+CAL license
-
-.
+Manage SQL Server instances with a Server+CAL license.
 
 The full range of the licensing options is described in the
 
-SQL Server licensing guide (download
+licensing guide (download
 
-link)
-
-.
+link).
 
 You can use one of the following three licensing options. The links in the list take you to
 
@@ -43,9 +39,7 @@ license for the Enterprise edition is equivalent to four NCs. For more informati
 
 How
 
-licenses apply to Azure resources
-
-.
+licenses apply to Azure resources.
 
 License by virtual cores
 

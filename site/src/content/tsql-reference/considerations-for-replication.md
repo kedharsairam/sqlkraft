@@ -9,15 +9,11 @@ pubDate: 2026-05-29
 
 Under database compatibility level 110 and higher, any columns in remote tables of type
 
-that are referenced in a partitioned view are mapped as
-
-.
+that are referenced in a partitioned view are mapped as.
 
 Corresponding columns (in the same ordinal position in the select list) in the local tables
 
-must be
-
-. This is a change in behavior from earlier versions of SQL Server in
+must be. This is a change in behavior from earlier versions of SQL Server in
 
 which any columns in remote tables of type
 
@@ -27,15 +23,11 @@ partitioned view are mapped as
 
 and corresponding columns in local tables must
 
-be of type
-
-. For more information, see
+be of type. For more information, see
 
 ALTER DATABASE Compatibility Level
 
-(Transact-SQL)
-
-.
+(Transact-SQL).
 
 Any linked server in the partitioned view cannot be a loopback linked server. This is a
 

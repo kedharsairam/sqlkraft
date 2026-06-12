@@ -9,7 +9,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-The password that is required to decrypt the private key of the certificate or asymmetric key. This clause is only required if the private key isn't protected by the database master key. Specifies the signed, binary large object (BLOB) of the module. This clause is useful if you want to ship a module without shipping the private key. When you use this clause, only the module, signature, and public key are required to add the signed binary large object to a database. is the blob itself in hexadecimal format. The name of an asymmetric key with which to sign or counter-sign the stored procedure, function, assembly, or trigger. The module being signed or countersigned and the certificate or asymmetric key used to sign it must already exist. Every character in the module is included in the signature calculation. This sys.crypt_properties (Transact-SQL)
+The password that is required to decrypt the private key of the certificate or asymmetric key. This clause is only required if the private key isn't protected by the database master key. Specifies the signed, binary large object (BLOB) of the module. This clause is useful if you want to ship a module without shipping the private key. When you use this clause, only the module, signature, and public key are required to add the signed binary large object to a database. is the blob itself in hexadecimal format.
 
 ## Remarks
 

@@ -17,8 +17,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 on Linux
@@ -39,9 +37,7 @@ One Identity
 
 , and
 
-Centrify
-
-.
+Centrify.
 
 This guide includes steps to check your Active Directory configuration. However, it isn't
 
@@ -79,9 +75,7 @@ Note
 
 For information on configuring Active Directory with newer versions of Ubuntu, RHEL, or
 
-SLES, see
-
-.
+SLES, see.
 
 ７
 

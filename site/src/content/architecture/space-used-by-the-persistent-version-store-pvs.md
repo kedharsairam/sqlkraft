@@ -18,9 +18,7 @@ conditions:
 
 or
 
-options are set to
-
-.
+options are set to.
 
 The table has a trigger.
 
@@ -38,9 +36,7 @@ these conditions:
 
 and
 
-options are set to
-
-.
+options are set to.
 
 The trigger no longer exists on the table.
 
@@ -70,9 +66,7 @@ might help to prevent or decrease fragmentation of index pages. To
 
 view current page density information for the data and indexes of a table or view, you can use
 
-sys.dm_db_index_physical_stats
-
-.
+sys.dm_db_index_physical_stats.
 
 When ADR is enabled, row versions can be stored in persistent version store (PVS) in one of the
 

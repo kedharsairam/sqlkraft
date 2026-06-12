@@ -22,23 +22,19 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 This article shows you how to perform a SQL Server migration in Azure Arc to
 
-SQL Server on
+on
 
 Azure VMs
 
 in the Azure portal for your
 
-SQL Server instance enabled by Azure Arc
+instance enabled by Azure Arc.
 
-.
-
-SQL Server on Azure VMs is an infrastructure as a service (IaaS) target to run your SQL Server
+on Azure VMs is an infrastructure as a service (IaaS) target to run your SQL Server
 
 workloads on the Azure cloud platform. After your SQL Server instance is enabled by Azure Arc,
 
@@ -68,10 +64,6 @@ minutes to complete. No extra configuration or setup is required.
 
 Note
 
-Migrating to SQL Server on Azure VMs through the Azure portal is currently in
+Migrating to SQL Server on Azure VMs through the Azure portal is currently in.
 
-.
-
-You can provide feedback about your migration experience
-
-.
+You can provide feedback about your migration experience.

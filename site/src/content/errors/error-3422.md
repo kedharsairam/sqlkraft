@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-In certain situations SQL Server attempts to restart the database at runtime and perform recovery, or it may restart itself (the entire service). If an automatic database restart is unsuccessful or di
+In certain situations SQL Server attempts to restart the database at runtime and perform recovery, or it may restart itself (the entire service).
 
 ## Severity
 

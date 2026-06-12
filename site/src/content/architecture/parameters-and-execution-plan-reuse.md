@@ -26,7 +26,7 @@ column. While the goal is for SQL Server to
 
 always recognize that the statements generate essentially the same plan and reuse the plans,
 
-SQL Server sometimes doesn't detect this in complex Transact-SQL statements.
+sometimes doesn't detect this in complex Transact-SQL statements.
 
 Separating constants from the Transact-SQL statement by using parameters helps the relational
 
@@ -38,9 +38,7 @@ In Transact-SQL , use
 
 In SQL Server prior to 2005, queries continue to recompile based on cardinality changes to
 
-the DML trigger inserted and deleted tables, even when this setting is
-
-.
+the DML trigger inserted and deleted tables, even when this setting is.
 
 ２
 
@@ -102,9 +100,7 @@ option
 
 of the
 
-statement to
-
-.
+statement to.
 
 When forced parameterization is enabled, simple parameterization can still occur. For example,
 

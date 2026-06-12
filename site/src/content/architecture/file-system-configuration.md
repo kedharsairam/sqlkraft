@@ -16,7 +16,7 @@ The following table provides links to additional information for specific I/O co
 
 File system features
 
-SQL Server databases aren't supported on compressed volumes, except for
+databases aren't supported on compressed volumes, except for
 
 read-only files. For more information, see:
 
@@ -54,7 +54,7 @@ Asynchronous disk I/O appears as synchronous on Windows
 
 -
 
-SQL Server diagnostics detects unreported I/O problems due to stale reads or
+diagnostics detects unreported I/O problems due to stale reads or
 
 lost writes
 
@@ -87,15 +87,3 @@ investigation.
 ﾉ
 
 Expand table
-
-Related content
-
-Storage: Performance best practices for SQL Server on Azure VMs
-
-SQL Server On Linux: Forced Unit Access (FUA) Internals
-
-SQL Server I/O Basics, Chapter 2
-
-Last updated on 04/29/2026
-
-`tempdb`

@@ -29,17 +29,13 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Use this page to configure and modify the properties of log shipping for a database.
 
 For an explanation of log shipping concepts, see
 
-About Log Shipping (SQL Server)
-
-.
+About Log Shipping (SQL Server).
 
 Enables this database as a log shipping primary database. Select it and then configure the
 
@@ -73,9 +69,7 @@ database.
 
 Removes a selected database from this log shipping configuration. Select the database first
 
-and then click
-
-.
+and then click.
 
 Sets up a monitor server instance for this log shipping configuration. Select the
 

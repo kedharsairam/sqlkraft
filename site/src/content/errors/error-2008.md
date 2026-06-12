@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-committed process memory. As a result this warning is printed. The normal causes of this warning are: The operating system pages out large portions of the SQL Server committed memory to the paging fil
+committed process memory. As a result this warning is printed.
 
 ## Severity
 

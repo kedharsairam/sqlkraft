@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 07/15/2025
 
-Applies to:
-
 SQL Server
 
 The following table lists SQL Server data types, their equivalents in the common language
@@ -33,9 +31,9 @@ runtime (CLR) for SQL Server in the
 
 namespace, and their native CLR
 
-equivalents in the .NET Framework.
+equivalents in the.NET Framework.
 
-SQL Server data
+data
 
 ,
 

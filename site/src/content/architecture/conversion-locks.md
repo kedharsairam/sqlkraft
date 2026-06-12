@@ -8,13 +8,9 @@ pubDate: 2026-05-29
 
 ## Description
 
-Insert range, null resource lock; used to test ranges before inserting a new key
-
 into an index.
 
 Exclusive range, exclusive resource lock; used when updating a key in a range.
-
-Key-range lock modes have a compatibility matrix that shows which locks are compatible with
 
 other locks obtained on overlapping keys and ranges.
 
@@ -128,11 +124,7 @@ lock mode is compatible with all other lock modes.
 
 ﾉ
 
-Expand table
-
 ﾉ
-
-Expand table
 
 ```sql
 RangeI

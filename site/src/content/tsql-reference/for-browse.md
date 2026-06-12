@@ -39,9 +39,7 @@ The
 
 statement that you use to access the data from your SQL Server table must
 
-end with the keywords
-
-. When you turn on the
+end with the keywords. When you turn on the
 
 option to use
 
@@ -119,9 +117,7 @@ statement.
 
 To reproduce this behavior in the browse mode, follow these steps:
 
-1. In SQL Server Management Studio, create a database named
-
-.
+1. In SQL Server Management Studio, create a database named.
 
 2. In the
 
@@ -131,9 +127,7 @@ table and a
 
 table that both contain a
 
-single column named
-
-. Define a unique index on the
+single column named. Define a unique index on the
 
 column in the
 

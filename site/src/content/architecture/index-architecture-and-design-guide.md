@@ -1,12 +1,10 @@
 ---
 title: "Index architecture and design guide"
 topic: "index-architecture"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["index-architecture", "architecture"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -28,9 +26,7 @@ you design effective indexes to meet the needs of your applications.
 
 For more information about available index types, see
 
-Indexes
-
-.
+Indexes.
 
 This guide covers the following types of indexes:
 
@@ -58,21 +54,15 @@ and
 
 Selective XML indexes
 
-(SXI)
-
-.
+(SXI).
 
 For information about spatial indexes, see
 
-Spatial Indexes Overview
-
-.
+Spatial Indexes Overview.
 
 For information about full-text indexes, see
 
-Populate Full-Text Indexes
-
-.
+Populate Full-Text Indexes.
 
 ﾉ
 

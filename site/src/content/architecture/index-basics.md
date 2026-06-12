@@ -22,17 +22,13 @@ where these values are located. The index itself is also stored on pages, referr
 
 to as
 
-index pages
-
-. In a regular book, if the index spans multiple pages and you have to find
+index pages. In a regular book, if the index spans multiple pages and you have to find
 
 pointers to all the pages that contain the word
 
 for example, you would have to leaf
 
-through from the start of the index until you locate the index page that contains the keyword
-
-. From there, you follow the pointers to all the book pages. This could be optimized further
+through from the start of the index until you locate the index page that contains the keyword. From there, you follow the pointers to all the book pages. This could be optimized further
 
 if at the very beginning of the index, you create a single page that contains an alphabetical list
 
@@ -62,15 +58,11 @@ A rowstore index stores data logically organized as a table with rows and column
 
 physically stored in a row-wise data format called
 
-rowstore
-
-. There's an alternative way to store
+rowstore. There's an alternative way to store
 
 data column-wise, called
 
-columnstore
-
-.
+columnstore.
 
 The design of the right indexes for a database and its workload is a complex balancing act
 

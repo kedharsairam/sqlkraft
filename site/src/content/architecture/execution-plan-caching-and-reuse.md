@@ -12,7 +12,7 @@ pubDate: 2026-05-29
 
 greater reuse of the stored procedure and trigger execution plans.
 
-SQL Server has a pool of memory that is used to store both execution plans and data buffers.
+has a pool of memory that is used to store both execution plans and data buffers.
 
 The percentage of the pool allocated to either execution plans or data buffers fluctuates
 
@@ -38,7 +38,7 @@ or prepared queries.
 
 The query below provides information about memory usage for these two cache stores:
 
-SQL Server execution plans have the following main components:
+execution plans have the following main components:
 
 (or Query Plan)
 
@@ -90,9 +90,7 @@ What support objects must be created, such as
 
 worktables
 
-or workfiles in
-
-. No
+or workfiles in. No
 
 user context or runtime information is stored in the query plan. There are never more
 
@@ -140,7 +138,7 @@ is also stored.
 
 Note
 
-SQL Server has an efficient algorithm to find any existing execution plans for any specific
+has an efficient algorithm to find any existing execution plans for any specific
 
 Transact-SQL statement. In most systems, the minimal resources that are used by this scan are
 

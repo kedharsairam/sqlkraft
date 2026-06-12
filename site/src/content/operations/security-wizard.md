@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 The Configure Database Mirroring Security Wizard can be used to initially configure security
@@ -51,9 +49,7 @@ to expand the server tree.
 
 3. Right-click the database, select
 
-, and then click
-
-. This opens the
+, and then click. This opens the
 
 Mirroring
 
@@ -63,9 +59,7 @@ of the
 
 dialog box.
 
-4. Click
-
-.
+4. Click.
 
 Database Mirroring (SQL Server)
 

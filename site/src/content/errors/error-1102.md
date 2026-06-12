@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description Create the necessary space by dropping objects in the filegroup, adding additional files to the filegroup, or setting autogrowth on for existing files in the filegroup. 1102 22 Yes IAM pag
+Description Create the necessary space by dropping objects in the filegroup, adding additional files to the filegroup, or setting autogrowth on for existing files in the filegroup.
 
 ## Severity
 

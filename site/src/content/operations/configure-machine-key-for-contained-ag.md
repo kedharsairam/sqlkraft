@@ -25,8 +25,6 @@ pubDate: 2025-12-01
 
 07/03/2025
 
-Applies to:
-
 SQL Server
 
 - Linux
@@ -69,9 +67,7 @@ Caution
 
 These instructions should only be used for
 
-contained availability groups
-
-. When you
+contained availability groups. When you
 
 configure a contained AG with a common machine key across all replicas, first ensure
 

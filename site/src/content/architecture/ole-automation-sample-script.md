@@ -27,8 +27,6 @@ Article
 
 10/17/2024
 
-Applies to:
-
 SQL Server
 
 This article contains an example of a Transact-SQL statement batch that uses the OLE

@@ -29,8 +29,6 @@ Article
 
 09/04/2024
 
-Applies to:
-
 SQL Server
 
 This topic describes how to use PowerShell cmdlets to create and configure an Always On
@@ -63,9 +61,7 @@ recommend that you read
 
 Prerequisites, Restrictions, and Recommendations for Always
 
-On Availability Groups (SQL Server)
-
-.
+On Availability Groups (SQL Server).
 
 Requires membership in the
 
@@ -77,9 +73,7 @@ GROUP server permission, ALTER ANY AVAILABILITY GROUP permission, or CONTROL SER
 
 Note
 
-For an introduction to availability groups, see
-
-.
+For an introduction to availability groups, see.
 
 ７
 
@@ -89,8 +83,6 @@ As an alternative to using PowerShell cmdlets, you can use the Create Availabili
 
 wizard or Transact-SQL. For more information, see
 
-or
-
-.
+or.
 
 Prerequisites, Restrictions, and Recommendations

@@ -15,7 +15,7 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-SQL Server Data Tools includes a code library consisting of code snippets that are ready to be
+Data Tools includes a code library consisting of code snippets that are ready to be
 
 inserted in your application. Each snippet performs a complete scripting task such as creating a
 
@@ -59,25 +59,17 @@ project in
 
 and select
 
-, then
+, then. In the
 
-. In the
+dialog box, select.
 
-dialog box, select
-
-.
-
-2. Right-click the Transact-SQL editor and select
-
-. The code snippet picker
+2. Right-click the Transact-SQL editor and select. The code snippet picker
 
 appears.
 
 3. Double-click
 
-in the code snippet picker, then double-click
-
-.
+in the code snippet picker, then double-click.
 
 ２
 

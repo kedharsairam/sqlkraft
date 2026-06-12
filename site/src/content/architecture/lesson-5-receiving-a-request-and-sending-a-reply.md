@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,9 +37,7 @@ context to the
 
 database where you receive the request message and send a
 
-reply message back to the
-
-.
+reply message back to the.
 
 Copy and paste the following code into a Query Editor window. Then, run it to receive the
 

@@ -33,7 +33,7 @@ syntax: |
 
 ## Description
 
-Changes security properties of a Log Reader agent. This stored procedure is executed at the Publisher on the publication database. The login for the account under which the agent runs. . On Azure SQL Managed Instance, use a SQL Server account. When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher and its remote Distributor
+Changes security properties of a Log Reader agent. This stored procedure is executed at the Publisher on the publication database. The login for the account under which the agent runs. On Azure SQL Managed Instance, use a SQL Server account. When configuring a Publisher with a remote Distributor, the values supplied for all , are sent to the Distributor as plain text. You should encrypt the connection between the Publisher and its remote Distributor
 
 ## Syntax
 

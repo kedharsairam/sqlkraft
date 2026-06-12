@@ -14,11 +14,11 @@ Occurs when waiting for a schema stability (Sch-S) lock. Normally very short; us
 
 ## Key Metrics
 
-| Metric    | Description   |
+| Metric | Description |
 | --------- | ------------- |
 | Wait Type | `LCK_M_SCH_S` |
-| Category  | Blocking      |
-| Severity  | LOW           |
+| Category | Blocking |
+| Severity | LOW |
 
 ## Troubleshooting
 
@@ -28,10 +28,10 @@ Use the following query to identify the top queries contributing to `LCK_M_SCH_S
 
 ```sql
 SELECT TOP 10
-    [Wait Type] = wait_type,
-    [Wait Seconds] = wait_time_ms / 1000,
-    [Wait Count] = waiting_tasks_count,
-    [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
+ [Wait Type] = wait_type,
+ [Wait Seconds] = wait_time_ms / 1000,
+ [Wait Count] = waiting_tasks_count,
+ [Avg Wait Ms] = wait_time_ms / NULLIF(waiting_tasks_count, 0)
 FROM sys.dm_os_wait_stats
 WHERE wait_type = 'LCK_M_SCH_S'
 ORDER BY wait_time_ms DESC;

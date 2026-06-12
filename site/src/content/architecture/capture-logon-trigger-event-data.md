@@ -35,8 +35,6 @@ Article
 
 08/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -53,9 +51,7 @@ event returns the following event data schema:
 
 XML
 
-Contains
-
-.
+Contains.
 
 Contains the time when a session requests to be established.
 

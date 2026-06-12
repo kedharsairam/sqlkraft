@@ -45,9 +45,7 @@ with a user that is
 
 granted the
 
-ALTER SETTINGS server-level permission
-
-.
+ALTER SETTINGS server-level permission.
 
 Views created with
 

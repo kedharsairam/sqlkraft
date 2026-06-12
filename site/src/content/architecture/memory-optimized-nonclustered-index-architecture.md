@@ -18,17 +18,13 @@ the buckets and their link lists to clean away old entries. The GC thread perfor
 
 link list chain lengths are short. For more information, see
 
-In-Memory OLTP Garbage Collection
-
-.
+In-Memory OLTP Garbage Collection.
 
 Besides hash indexes, nonclustered indexes are the other possible index types in a memory-
 
 optimized table. For more information, see
 
-Indexes on Memory-Optimized Tables
-
-.
+Indexes on Memory-Optimized Tables.
 
 Nonclustered indexes on memory-optimized tables are implemented using a data structure
 
@@ -38,9 +34,7 @@ is a lock and latch-free variation of a B-tree. For more information, see
 
 The Bw-tree: A B-tree
 
-for New Hardware Platforms
-
-.
+for New Hardware Platforms.
 
 At a high level, the Bw-tree can be understood as a map of pages organized by page ID
 

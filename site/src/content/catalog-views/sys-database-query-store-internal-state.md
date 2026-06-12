@@ -2,7 +2,7 @@
 name: "sys.database_query_store_internal_state"
 title: "sys.database_query_store_internal_state"
 category: "query-store"
-description: "SQL Server 2025 (17.x) Azure SQL Database Contains information about queue length and memory usage for the Query Store when the Query Store for secondary replicas is enabled. Query Store for secondary replicas is supported starting in SQL Server 2025 (17.x) and later versions, and in Azure SQL Database."
+description: "2025 (17.x) Azure SQL Database Contains information about queue length and memory usage for the Query Store when the Query Store for secondary replicas is enabled. Query Store for secondary replicas is supported starting in SQL Server 2025 (17.x) and later versions, and in Azure SQL Database."
 tags: ["query-store", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "pending_message_count"
@@ -10,7 +10,7 @@ syntax: "pending_message_count"
 
 ## Description
 
-SQL Server 2025 (17.x) Azure SQL Database Contains information about queue length and memory usage for the Query Store when the Query Store for secondary replicas is enabled. Query Store for secondary replicas is supported starting in SQL Server 2025 (17.x) and later versions, and in Azure SQL Database. For complete platform support, see Query Store for secondary replicas The number of messages waiting in the queue on the primary for the replica where the system view is being viewed from. Not The amount of memory in total taken up by the messages in the queue. Not nullable. For information on configured replicas for Query Store, see sys.query_store_replicas (Transact- Learn more about Query Store and related concepts in the following articles: Monitor performance by using the Query Store Query Store for secondary replicas sys.database_query_store_internal_state (Transact-SQL) sys.query_store_replicas (Transact-SQL)
+2025 (17.x) Azure SQL Database Contains information about queue length and memory usage for the Query Store when the Query Store for secondary replicas is enabled. Query Store for secondary replicas is supported starting in SQL Server 2025 (17.x) and later versions, and in Azure SQL Database. For complete platform support, see Query Store for secondary replicas The number of messages waiting in the queue on the primary for the replica where the system view is being viewed from. Not The amount of memory in total taken up by the messages in the queue. Not nullable. For information on configured replicas for Query Store, see sys.query_store_replicas (Transact- Learn more about Query Store and related concepts in the following articles: Monitor performance by using the Query Store Query Store for secondary replicas sys.database_query_store_internal_state (Transact-SQL) sys.query_store_replicas (Transact-SQL)
 
 ## Syntax
 
@@ -18,9 +18,7 @@ SQL Server 2025 (17.x) Azure SQL Database Contains information about queue lengt
 
 ## Remarks
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 Azure SQL Database
 
@@ -78,8 +76,6 @@ Monitor performance by using the Query Store
 
 Best practices for monitoring workloads with Query Store
 
-Last updated on 11/18/2025
-
 sys.query_store_replicas (Transact-SQL)
 
 sys.sp_query_store_force_plan (Transact-SQL)
@@ -93,7 +89,3 @@ sys.query_store_query (Transact-SQL)
 Monitoring Performance By Using the Query Store
 
 Best Practice with the Query Store
-
-Last updated on 11/18/2025
-
-Related content

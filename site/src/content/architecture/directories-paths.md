@@ -27,8 +27,6 @@ Article
 
 10/03/2023
 
-Applies to:
-
 SQL Server
 
 Describes the directory structure in which the files are stored in FileTables.

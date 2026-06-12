@@ -29,35 +29,29 @@ Article
 
 09/27/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
 This topic describes how to set the expiration period for subscriptions in SQL Server by using
 
-SQL Server Management Studio or Transact-SQL. The expiration period for subscriptions
+Management Studio or Transact-SQL. The expiration period for subscriptions
 
 determines the period of time before a subscription expires and is removed. For more
 
 information, see
 
-Subscription Expiration and Deactivation
-
-.
+Subscription Expiration and Deactivation.
 
 Recommendations
 
-SQL Server Management Studio
+Management Studio
 
 Transact-SQL
 
 The subscription expiration period is also referred to as the
 
-publication retention period
-
-.
+publication retention period.
 
 Cleanup of merge replication metadata is dependent on this setting:
 

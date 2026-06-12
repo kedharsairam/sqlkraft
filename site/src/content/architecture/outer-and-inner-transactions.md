@@ -48,9 +48,7 @@ Each call to
 
 or
 
-applies to the last executed
-
-. If
+applies to the last executed. If
 
 there are multiple
 

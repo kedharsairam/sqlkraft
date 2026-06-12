@@ -29,8 +29,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Failing over to a log shipping secondary is useful if the primary server instance fails or requires
@@ -51,9 +49,7 @@ database, if possible.
 
 For information about log shipping jobs, see
 
-About Log Shipping (SQL Server)
-
-.
+About Log Shipping (SQL Server).
 
 To fail over to a secondary database:
 
@@ -65,9 +61,7 @@ each secondary server.
 
 For more information, see
 
-Apply Transaction Log Backups (SQL Server)
-
-.
+Apply Transaction Log Backups (SQL Server).
 
 3. If the primary database is accessible back up the active transaction log and apply the log
 
@@ -93,6 +87,4 @@ database.
 
 For more information, see
 
-Transaction Log Backups (SQL Server)
-
-.
+Transaction Log Backups (SQL Server).

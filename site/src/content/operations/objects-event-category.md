@@ -29,8 +29,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -76,8 +74,6 @@ Indicates that an object has been deleted; for example, by the DROP INDEX
 statement or the DROP TABLE statement.
 
 Extended Events
-
-Last updated on 11/18/2025
 
 ﾉ
 

@@ -17,11 +17,9 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server Extended Security Updates
+Extended Security Updates
 
-Applies to:
-
-SQL Server 2014 (12.x)
+2014 (12.x)
 
 This article explains how to manage a SQL Server subscription to Extended Security Updates
 
@@ -57,9 +55,7 @@ license for the Enterprise edition is equivalent to four NCs. For more informati
 
 How
 
-licenses apply to Azure resources
-
-.
+licenses apply to Azure resources.
 
 License by virtual cores
 
@@ -75,6 +71,4 @@ Note
 
 Price structure for Extended Security Updates (ESUs) is changing for SQL Server 2016 on
 
-Azure VMs. For more information, see the
-
-.
+Azure VMs. For more information, see the.

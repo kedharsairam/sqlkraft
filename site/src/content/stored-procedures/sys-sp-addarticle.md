@@ -2,7 +2,7 @@
 name: "sys.sp_addarticle"
 title: "sp_addarticle"
 category: "general"
-description: "Creates an article and adds it to a publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions"
+description: "Creates an article and adds it to a publication. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -116,9 +116,7 @@ syntax: |
 
 ## Description
 
-Creates an article and adds it to a publication. This stored procedure is executed at the Publisher on the publication database. Transact-SQL syntax conventions
-
-## Syntax
+Creates an article and adds it to a publication. This stored procedure is executed at the Publisher on the publication database. ## Syntax
 
 ```sql
 sp_addarticle
@@ -202,7 +200,7 @@ N
 N
 'source_object'
 ]
-[ , [ @artid = ] artid
+
 OUTPUT
 ]
 [ , [ @auto_identity_range = ]
@@ -231,4 +229,4 @@ N
 
 ## Permissions
 
-Only members of the fixed server role or fixed database role can execute . Define an Article sp_articlecolumn (Transact-SQL) sp_articlefilter (Transact-SQL) sp_articleview (Transact-SQL) Related content Description then add the table as an article again using sp_addarticle. Replication will then add the column to the table. 21567 16 No The call format VCALL cannot be used for the specified article. VCALL format can be used only for articles in publications that allow updating subscriptions. If you do not require updating subscriptions, specify a different call format. If you do require updating subscriptions, you must drop the publication and re-create it to specify that updating subscriptions are allowed. 21569 16 No The article %s in the publication %s does not have a valid conflict table entry in the system table sysarticleupdates. This entry is required for publications that allow queued updating subscriptions. Check for errors in the last run of the Snapshot Agent. 21570 16 No Cannot create the logical record relationship. Table '%s' does not have a foreign key referencing table '%s'. A logical record relationship requires a foreign key relationship between the parent and child tables. 21571 16 No Cannot create the logical record relationship in publication '%s'. The use_partition_groups option for the publication must be set to "true" in order to use logical records. Use sp_changemergepublication to set the option to "true". 21572 16 No Cannot add a logical record relationship because the foreign key constraint '%s' on table '%s' is disabled. To create the logical record relationship, first enable the foreign key constraint. 21573 16 No Cannot add a logical record relationship because the foreign key constraint '%s' on table '%s' is defined with the NOT FOR REPLICATION option. To add the logical record relationship, first drop the foreign key constraint, and then re-create it without the NOT FOR REPLICATION option. 21574 16 No Cannot add a logical record relationship because the article '%s' is published in publication '%s', which has a compatibility level lower than 90RTM. Use sp_changemergepublication to set the publication_compatibility_level to 90RTM. 21575 16 No The value specified for the property filter_type is not valid. Valid values are 1 (join filter only), 2 (logical record relation only), and 3 (join filter and logical record relation). 21576 16 No Cannot add a logical record relationship between tables '%s' and '%s' because the foreign key column '%s' in table '%s' allows NULL values. Alter the column to disallow NULL values. 21578 16 No In order to use partition_options of 2 (non overlapping partitions with multiple subscriptions per partition) or 3 (non overlapping partitions one subscription per partition) the publication '%s' must be enabled to use
+Only members of the fixed server role or fixed database role can execute. Define an Article sp_articlecolumn (Transact-SQL) sp_articlefilter (Transact-SQL) sp_articleview (Transact-SQL)

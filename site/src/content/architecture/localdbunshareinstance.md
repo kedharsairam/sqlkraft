@@ -23,8 +23,6 @@ pubDate: 2025-12-01
 
 07/14/2025
 
-Applies to:
-
 SQL Server
 
 Stops the sharing of the specified SQL Server Express LocalDB instance.
@@ -41,7 +39,7 @@ Description
 
 LOCALDB_ERROR_NOT_INSTALLED
 
-SQL Server Express LocalDB isn't installed on the
+Express LocalDB isn't installed on the
 
 computer.
 

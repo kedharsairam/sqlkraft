@@ -17,15 +17,11 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2014 (12.x)
+2014 (12.x)
 
 General frequently asked questions about Extended Security updates can be found at the
 
-Extended security updates FAQ
-
-. This article lists SQL Server-specific frequently asked
+Extended security updates FAQ. This article lists SQL Server-specific frequently asked
 
 questions.
 
@@ -45,9 +41,7 @@ For information about ESU pricing, see
 
 Plan your Windows Server and SQL Server end of
 
-support
-
-.
+support.
 
 The End of Support date for SQL Server 2014 (12.x) was July 9, 2024.
 

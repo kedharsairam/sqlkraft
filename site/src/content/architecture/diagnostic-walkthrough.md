@@ -26,13 +26,9 @@ DMVs using the
 
 wait type. Requires
 
-trace flag 8134
+trace flag 8134. For more information, see
 
-. For more information, see
-
-SPINLOCK_EXT
-
-.
+SPINLOCK_EXT.
 
 SQL Server
 
@@ -62,7 +58,7 @@ experiencing the most contention.
 
 : Obtain debug symbols for sqlservr.exe (sqlservr.pdb) and place the symbols in the
 
-same directory as the SQL Server service .exe file (sqlservr.exe) for the instance of SQL
+same directory as the SQL Server service.exe file (sqlservr.exe) for the instance of SQL
 
 Server.\ In order to see the call stacks for the backoff events, you must have symbols for
 
@@ -72,9 +68,7 @@ available on the Microsoft Symbol Server. For more information about how to down
 
 symbols from the Microsoft Symbol Server, see
 
-Debugging with symbols
-
-.
+Debugging with symbols.
 
 4.
 
@@ -82,9 +76,7 @@ Debugging with symbols
 
 of interest. The events to capture are
 
-and
-
-.
+and.
 
 Extended Events provide the ability to track the backoff events and capture the call stack for
 

@@ -33,8 +33,6 @@ Article
 
 01/30/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -105,6 +103,4 @@ You cannot create or modify an XML index unless the database options are set cor
 
 for working with the
 
-data type. For more information, see
-
-.
+data type. For more information, see.

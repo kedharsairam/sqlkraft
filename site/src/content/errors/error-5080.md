@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description 5080 16 No Vardecimal storage format cannot be disabled for database "%.\*ls" because the database is not under simple recovery model. Change the database recovery model to simple and then
+Description 5080 16 No Vardecimal storage format cannot be disabled for database "%.\*ls" because the database is not under simple recovery model.
 
 ## Severity
 

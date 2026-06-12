@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 In SQL Server 2012 and 2014, the only way to initialize a secondary replica in a SQL Server
@@ -37,9 +35,7 @@ Always On availability group is to use backup, copy, and restore. SQL Server 201
 
 new feature to initialize a secondary replica -
 
-automatic seeding
-
-. Automatic seeding uses the
+automatic seeding. Automatic seeding uses the
 
 log stream transport to stream the backup using VDI to the secondary replica for each
 
@@ -53,9 +49,7 @@ groups, and can be used with both traditional availability groups and
 
 distributed availability
 
-groups
-
-.
+groups.
 
 Security permissions vary depending on the type of replica being initialized:
 
@@ -63,9 +57,7 @@ For a traditional availability group, permissions must be granted to the availab
 
 on the secondary replica as it is joined to the availability group. In Transact-SQL, use the
 
-command
-
-.
+command.
 
 For a distributed availability group where the replica's databases that are being created
 
@@ -81,9 +73,7 @@ availability group name, or automatic seeding may fail.
 
 For a secondary replica on the second availability group of a distributed availability
 
-group, you must use the command
-
-. This secondary replica is seeded from the primary of the second
+group, you must use the command. This secondary replica is seeded from the primary of the second
 
 availability group.
 

@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -133,7 +131,7 @@ CustomerID
 "C1"
 SalesOrderIDList
 =
-" O11 O22 O33..."
+" O11 O22 O33."
 >
 <SalesOrder
 SalesOrderID
@@ -141,7 +139,7 @@ SalesOrderID
 "O11"
 OrderDate
 =
-"..."
+"."
 />
 <SalesOrder
 SalesOrderID
@@ -149,7 +147,7 @@ SalesOrderID
 "O22"
 OrderDate
 =
-"..."
+"."
 />
 <SalesOrder
 SalesOrderID
@@ -157,9 +155,8 @@ SalesOrderID
 "O33"
 OrderDate
 =
-"..."
-/>
-...
+"."
+/>.
 </Customer>
 USE
 AdventureWorks2022;

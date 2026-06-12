@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-For more information about this scenario, see Applications experience forcibly closed TLS connection errors when connecting SQL Servers in Windows . In systems with high workloads on SQL Server 2017 a
+For more information about this scenario, see Applications experience forcibly closed TLS connection errors when connecting SQL Servers in Windows. In systems with high workloads on SQL Server 2017 a
 
 ## Severity
 

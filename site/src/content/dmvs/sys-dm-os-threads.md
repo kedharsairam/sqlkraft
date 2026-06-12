@@ -2,7 +2,7 @@
 name: "sys.dm_os_threads"
 title: "sys.dm_os_threads"
 category: "os"
-description: "Analytics Platform System (PDW) Returns a list of all SQL Server Operating System threads that are running under the SQL Server Memory address (Primary Key) of the thread. Indicates the thread initiator. 1 = SQL Server started the thread. 0 = Another component started the thread, such as an extended stored procedure from within SQL Server."
+description: "Returns a list of all SQL Server Operating System threads that are running under the SQL Server Memory address (Primary Key) of the thread. Indicates the thread initiator. 1 = SQL Server started the thread. 0 = Another component started the thread, such as an extended stored procedure from within SQL Server."
 tags: ["os", "dmv"]
 pubDate: 2026-05-29
 syntax: |
@@ -28,7 +28,7 @@ syntax: |
 
 ## Description
 
-Analytics Platform System (PDW) Returns a list of all SQL Server Operating System threads that are running under the SQL Server Memory address (Primary Key) of the thread. Indicates the thread initiator. 1 = SQL Server started the thread. 0 = Another component started the thread, such as an extended stored procedure from within SQL Server. ID of the thread that is assigned by the operating system. Address of the instruction that is currently being executed.
+Analytics Platform System (PDW) Returns a list of all SQL Server Operating System threads that are running under the SQL Server Memory address (Primary Key) of the thread. Indicates the thread initiator. 1 = SQL Server started the thread. 0 = Another component started the thread, such as an extended stored procedure from within SQL Server.
 
 ## Syntax
 

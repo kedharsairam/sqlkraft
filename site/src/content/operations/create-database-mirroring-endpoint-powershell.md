@@ -29,8 +29,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 This topic describes how to create a database mirroring endpoint for use by Always On
@@ -41,9 +39,7 @@ Requires CREATE ENDPOINT permission, or membership in the sysadmin fixed server 
 
 more information, see
 
-GRANT Endpoint Permissions (Transact-SQL)
-
-.
+GRANT Endpoint Permissions (Transact-SQL).
 
 1. Change directory (
 
@@ -61,7 +57,7 @@ to start the endpoint.
 
 The following PowerShell commands create a database mirroring endpoint on an instance of
 
-SQL Server (
+(
 
 Machine
 

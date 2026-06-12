@@ -14,7 +14,7 @@ syntax: |
 
 ## Description
 
-Returns information about the specified maintenance plan. If a plan isn't specified, this stored procedure returns information about all maintenance plans. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Transact-SQL syntax conventions Specifies the plan ID of the maintenance plan.
+Returns information about the specified maintenance plan. If a plan isn't specified, this stored procedure returns information about all maintenance plans. This feature will be removed in a future version of SQL Server. Avoid using this feature in new development work, and plan to modify applications that currently use this feature. Specifies the plan ID of the maintenance plan.
 
 ## Syntax
 

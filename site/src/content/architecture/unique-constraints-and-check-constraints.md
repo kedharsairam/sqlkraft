@@ -23,8 +23,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -67,9 +65,7 @@ Unlike
 
 constraints,
 
-constraints allow for the value
-
-. However, as with
+constraints allow for the value. However, as with
 
 any value participating in a
 

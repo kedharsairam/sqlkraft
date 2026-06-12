@@ -11,9 +11,7 @@ Under certain conditions, spatial indexes support a number of set-oriented geome
 
 For more information, see
 
-Spatial Indexes Overview
-
-.
+Spatial Indexes Overview.
 
 By default, if a spatial index is created on a partitioned table, the index is partitioned according
 
@@ -59,6 +57,4 @@ For more information about creating indexes, see the "Remarks" section in
 
 CREATE INDEX
 
-(Transact-SQL)
-
-.
+(Transact-SQL).

@@ -6,7 +6,7 @@ tags: ["io-fundamentals", "architecture"]
 pubDate: 2026-05-29
 ---
 
-SQL Server 2025 (17.x) includes changes to
+2025 (17.x) includes changes to
 
 encryption
 
@@ -14,9 +14,7 @@ that introduce a breaking change to
 
 log
 
-shipping
-
-. You might encounter these issues when you upgrade.
+shipping. You might encounter these issues when you upgrade.
 
 Log shipping monitoring can break if the monitor is a remote SQL Server 2025 (17.x) instance
 
@@ -26,31 +24,23 @@ For information about how to connect securely to SQL Server 2025 (17.x) instance
 
 TDS
 
-8.0
+8.0.
 
-.
-
-SQL Server 2025 (17.x) removes all legacy word breaker and filter binaries used by
+2025 (17.x) removes all legacy word breaker and filter binaries used by
 
 Full-Text
 
-Search
-
-. These components are rebuilt with a modern toolset and offer expanded support for
+Search. These components are rebuilt with a modern toolset and offer expanded support for
 
 more languages and document types. For more information, see
 
 Behavior changes in Full-Text
 
-Search
-
-. Existing indexes after upgrade are designated with
+Search. Existing indexes after upgrade are designated with
 
 as per
 
-sys.fulltext_indexes
-
-. Newly created indexes are version 2 and use the new components, unless
+sys.fulltext_indexes. Newly created indexes are version 2 and use the new components, unless
 
 you specify otherwise by using the
 

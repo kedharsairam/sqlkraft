@@ -2,7 +2,7 @@
 name: "sys.sp_update_notification"
 title: "sp_update_notification"
 category: "general"
-description: "Updates the notification method of an alert notification. Transact-SQL syntax conventions The name of the alert associated with this notification. The operator who is notified when the alert occurs. The method by which the operator is notified."
+description: "Updates the notification method of an alert notification."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -19,7 +19,7 @@ syntax: |
 
 ## Description
 
-Updates the notification method of an alert notification. Transact-SQL syntax conventions The name of the alert associated with this notification. The operator who is notified when the alert occurs. The method by which the operator is notified.
+Updates the notification method of an alert notification.
 
 ## Syntax
 

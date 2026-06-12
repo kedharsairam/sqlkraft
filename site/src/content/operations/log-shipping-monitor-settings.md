@@ -29,17 +29,13 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Use this page to configure and to modify the properties of the log shipping monitor server.
 
 For an explanation of log shipping concepts, see
 
-About Log Shipping (SQL Server)
-
-.
+About Log Shipping (SQL Server).
 
 Displays the name of the server instance that is currently configured as the monitor server for
 

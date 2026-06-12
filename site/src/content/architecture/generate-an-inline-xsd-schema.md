@@ -29,8 +29,6 @@ Article
 
 10/17/2024
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -53,9 +51,7 @@ type,
 
 and this result is treated as an instance of untyped XML data. For more information, see
 
-XML Data (SQL Server)
-
-.
+XML Data (SQL Server).
 
 When you specify XMLSCHEMA in a FOR XML query, you receive both a schema and XML data,
 

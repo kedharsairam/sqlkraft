@@ -8,9 +8,7 @@ pubDate: 2026-05-29
 
 For more information, see
 
-Partitioned tables and indexes
-
-.
+Partitioned tables and indexes.
 
 When defining indexes, consider whether each index key column should be stored in
 

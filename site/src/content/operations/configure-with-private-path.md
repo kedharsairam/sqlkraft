@@ -15,7 +15,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-SQL Server enabled by Azure Arc
+enabled by Azure Arc
 
 07/03/2025
 

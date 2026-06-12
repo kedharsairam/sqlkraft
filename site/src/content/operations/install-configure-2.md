@@ -33,8 +33,6 @@ Article
 
 08/01/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -49,13 +47,13 @@ This article contains installation and configuration instructions for the
 
 database.
 
-SQL Server 2016
+2016
 
 with Service Pack 1 (and later versions), or Azure SQL Database. To use
 
 the full version of the sample, use SQL Server Developer or Enterprise editions.
 
-SQL Server Management Studio
+Management Studio
 
 (SSMS).
 
@@ -67,15 +65,11 @@ your edition of SQL Server or Azure SQL Database.
 
 The latest release of the sample is available from
 
-wide-world-importers-release
-
-.
+wide-world-importers-release.
 
 Source code to recreate the sample database is available from
 
-wide-world-importers-source
-
-.
+wide-world-importers-source.
 
 Data population is based on ETL from the OLTP database (
 
@@ -91,9 +85,7 @@ Restore a backup to a SQL Server instance using SSMS:
 
 2. Right-click on the
 
-node, and select
-
-.
+node, and select.
 
 3. Select
 
@@ -107,9 +99,7 @@ and select the ellipses button (
 
 , navigate to the database backup in
 
-the filesystem of the server, and select the backup. Select
-
-.
+the filesystem of the server, and select the backup. Select.
 
 SQL Server
 

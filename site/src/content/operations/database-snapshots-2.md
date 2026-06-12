@@ -27,8 +27,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 You can take advantage of a mirror database that you are maintaining for availability purposes
@@ -91,6 +89,4 @@ snapshot, and drop all of the database snapshots from the former mirror database
 
 Note
 
-For more information about database snapshots, see
-
-.
+For more information about database snapshots, see.

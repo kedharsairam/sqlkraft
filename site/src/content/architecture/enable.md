@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -61,9 +59,7 @@ statement.
 
 Rebuilding a disabled clustered index can't be performed when the
 
-option is set to
-
-.
+option is set to.
 
 When the clustered index is disabled or enabled and the nonclustered index is disabled, the
 
@@ -77,9 +73,7 @@ Rebuilt and enabled
 
 Remains disabled
 
-Creating a new clustered index behaves the same as
-
-.
+Creating a new clustered index behaves the same as.
 
 Allowed actions on nonclustered indexes associated with a clustered index depend on the
 

@@ -29,4 +29,4 @@ Although deadlocks cannot be completely avoided, following certain coding conven
 
 When a deadlock occurs (error 1205), the application should pause briefly before resubmitting its query. This gives the other transaction involved in the deadlock a chance to complete and release its locks. Randomizing the duration of the pause minimizes the likelihood of the deadlock reoccurring when the resubmitted query requests its locks. For example, the error handler might be coded to pause for a random duration between one and three seconds.
 
-You can use `TRY...CATCH` to handle deadlocks. Error 1205 can be caught by the `CATCH` block.
+You can use `TRY.CATCH` to handle deadlocks. Error 1205 can be caught by the `CATCH` block.

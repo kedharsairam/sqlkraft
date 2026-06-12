@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,9 +37,7 @@ information on Service Broker networking, see
 
 How to: Activate Service Broker
 
-networking
-
-.
+networking.
 
 2. Alter the endpoint to activate message forwarding, and specify the maximum size, in
 

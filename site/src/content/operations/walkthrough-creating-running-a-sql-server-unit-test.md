@@ -50,17 +50,13 @@ database) on which you have permissions to create and deploy a database. For mor
 
 information, see
 
-Required Permissions for Database Features of Visual Studio
-
-.
+Required Permissions for Database Features of Visual Studio.
 
 1. On the
 
 menu, point to
 
-, and then select
-
-.
+, and then select.
 
 The
 
@@ -78,9 +74,7 @@ list, select
 
 Sql File
 
-, and then select
-
-.
+, and then select.
 
 The Transact-SQL editor opens.
 

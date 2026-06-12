@@ -29,13 +29,11 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
 
-SQL Server generates a Broker:Forwarded Message Dropped event when Service Broker drops
+generates a Broker:Forwarded Message Dropped event when Service Broker drops
 
 a message that was intended to be forwarded.
 

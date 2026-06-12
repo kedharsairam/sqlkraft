@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 This topic discusses how to prepare to change to the partially contained database model and
@@ -51,17 +49,13 @@ database model.
 
 You should understand the partially contained database model. For more information, see
 
-Contained Databases
-
-.
+Contained Databases.
 
 You should understand risks that are unique to partially contained databases. For more
 
 information, see
 
-Security Best Practices with Contained Databases
-
-.
+Security Best Practices with Contained Databases.
 
 Contained databases do not support replication, change data capture, or change tracking.
 
@@ -71,9 +65,7 @@ Review the list of database features that are modified for partially contained d
 
 For more information, see
 
-Modified Features (Contained Database)
-
-.
+Modified Features (Contained Database).
 
 Query
 

@@ -16,9 +16,7 @@ Name resolution problems caused by a failure to fully qualify names of objects. 
 
 information, see
 
-## Description of SQL Server blocking caused by compile locks
-
-. This specific
+## Description of SQL Server blocking caused by compile locks. This specific
 
 issue is described in more detail within this article.
 
@@ -42,9 +40,7 @@ transaction coordinators. This specific problem is documented in detail in the S
 
 blog entry
 
-Resolving DTC Related Waits and Tuning Scalability of DTC
-
-.
+Resolving DTC Related Waits and Tuning Scalability of DTC.
 
 This section provides information for diagnosing SQL Server spinlock contention. The primary
 

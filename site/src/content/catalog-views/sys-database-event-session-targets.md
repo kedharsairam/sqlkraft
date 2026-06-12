@@ -2,7 +2,7 @@
 name: "sys.database_event_session_targets"
 title: "sys.database_event_session_targets (Azure SQL Database)"
 category: "compatibility"
-description: "SQL Server 2016 (13.x) and later versions Azure SQL Database Managed Instance SQL database in Microsoft Fabric dynamic management view (DMV) returns a row for each event target for a database-scoped event session."
+description: "2016 (13.x) and later versions Azure SQL Database Managed Instance SQL database in Microsoft Fabric dynamic management view (DMV) returns a row for each event target for a database-scoped event session."
 tags: ["compatibility", "catalog-view"]
 pubDate: 2026-05-29
 syntax: "sys.database_event_session_targets"
@@ -10,7 +10,7 @@ syntax: "sys.database_event_session_targets"
 
 ## Description
 
-SQL Server 2016 (13.x) and later versions Azure SQL Database Managed Instance SQL database in Microsoft Fabric dynamic management view (DMV) returns a row for each event target for a database-scoped event session. For information about database-scoped sys.dm_xe_database_session_targets Azure SQL Database and SQL database in Fabric support only database-scoped sessions Azure SQL Managed Instance supports both database-scoped sessions and server-scoped sessions Server-scoped sessions are recommended for SQL managed instances. For more information, see CREATE EVENT SESSION code examples The ID of the event session. Is not nullable. The ID of the target. ID is unique within the event session object. Is not nullable. The name of the event target. Is not nullable. The name of the event package that contains the event target. Is not nullable.
+2016 (13.x) and later versions Azure SQL Database Managed Instance SQL database in Microsoft Fabric dynamic management view (DMV) returns a row for each event target for a database-scoped event session. For information about database-scoped sys.dm_xe_database_session_targets Azure SQL Database and SQL database in Fabric support only database-scoped sessions Azure SQL Managed Instance supports both database-scoped sessions and server-scoped sessions Server-scoped sessions are recommended for SQL managed instances. For more information, see CREATE EVENT SESSION code examples The ID of the event session. Is not nullable. The ID of the target. ID is unique within the event session object. Is not nullable.
 
 ## Syntax
 
@@ -18,9 +18,7 @@ SQL Server 2016 (13.x) and later versions Azure SQL Database Managed Instance SQ
 
 ## Remarks
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -38,11 +36,11 @@ sessions, see
 
 sys.dm_xe_database_session_targets
 
-Azure SQL Database and SQL database in Fabric support only
+and SQL database in Fabric support only
 
 database-scoped sessions
 
-Azure SQL Managed Instance supports both database-scoped sessions and
+supports both database-scoped sessions and
 
 server-scoped sessions
 
@@ -81,5 +79,3 @@ sys.database_event_sessions (Azure SQL Database and Azure SQL Managed Instance)
 Expand table
 
 Expand table
-
-Related content

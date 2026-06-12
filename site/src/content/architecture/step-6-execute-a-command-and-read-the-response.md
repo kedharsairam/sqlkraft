@@ -38,9 +38,7 @@ Output
 Login Failed
 ```
 
-```sql
-.C.h.a.n.g.e.d. .d.a.t.a.b.a.s.e. .c.o.n.t.e.x.t. .t.o.
-.'.A.d.v.e.n.t.u.r.e.W.o.r.ks'
+```sql.C.h.a.n.g.e.d.d.a.t.a.b.a.s.e.c.o.n.t.e.x.t.t.o.'.A.d.v.e.n.t.u.r.e.W.o.r.ks'
 ```
 
 ```sql
@@ -52,21 +50,21 @@ TDS:RPCRequest
 ```
 
 ```sql
-6136  116.5932948 10.10.10.10  10.10.10.120 TLS:TLS Rec Layer-1 SSL
+6136 116.5932948 10.10.10.10 10.10.10.120 TLS:TLS Rec Layer-1 SSL
 Application Data {TLS:328, SSLVersionSelector:327, TDS:326, TCP:325, IPv4:3
 ```
 
 ```sql
-Frame Time Offset Source IP    Dest IP      Description
+Frame Time Offset Source IP Dest IP Description
 ----- ----------- ------------ ------------ ----------------------------------
 -----------------------------------------------------------------
-6137  116.5962248 10.10.10.120 10.10.10.10  TDS:Response, Version = 7.1 (0x71000001), SPID = 96, PacketID = 1, Flags=...AP..., SrcPort=1433, Ds
+6137 116.5962248 10.10.10.120 10.10.10.10 TDS:Response, Version = 7.1 (0x71000001), SPID = 96, PacketID = 1, Flags=.AP., SrcPort=1433, Ds
 ```
 
 ```sql
-Frame Time Offset Source IP    Dest IP      Description
+Frame Time Offset Source IP Dest IP Description
 ----- ----------- ------------ ------------ ----------------------------------
 -----------------------------------------------------------------
-6138  116.5991538 10.10.10.10  10.10.10.120 TDS:SQLBatch, Version = 7.1 (0x71000001), SPID = 0, PacketID = 1, Flags=...AP..., SrcPort=60123, Ds
-6139  116.5991538 10.10.10.120 10.10.10.10  TDS:Response, Version = 7.1
+6138 116.5991538 10.10.10.10 10.10.10.120 TDS:SQLBatch, Version = 7.1 (0x71000001), SPID = 0, PacketID = 1, Flags=.AP., SrcPort=60123, Ds
+6139 116.5991538 10.10.10.120 10.10.10.10 TDS:Response, Version = 7.1
 ```

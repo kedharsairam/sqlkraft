@@ -29,8 +29,6 @@ Article
 
 11/18/2022
 
-Applies to:
-
 SQL Server
 
 This topic describes how to use the
@@ -85,6 +83,4 @@ nodes for this availability group:
 
 Note
 
-For information about using the Object Explorer Details pane, see
-
-.
+For information about using the Object Explorer Details pane, see.

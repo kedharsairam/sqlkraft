@@ -14,9 +14,7 @@ that filters the rows.
 
 You can create an updatable
 
-nonclustered columnstore index on a rowstore table
-
-. The
+nonclustered columnstore index on a rowstore table. The
 
 columnstore index stores a copy of the data so you do need extra storage. However, the data
 
@@ -30,15 +28,11 @@ rowstore table, so both indexes are working against the same data.
 
 A rowstore table can have one nonclustered columnstore index. For more information, see
 
-Columnstore indexes - design guidance
-
-.
+Columnstore indexes - design guidance.
 
 You can have
 
-one or more nonclustered rowstore indexes on a clustered columnstore table
-
-. By
+one or more nonclustered rowstore indexes on a clustered columnstore table. By
 
 doing this, you can perform efficient table seeks on the underlying columnstore. Other options
 
@@ -60,15 +54,11 @@ A memory-optimized table can have one columnstore index. You can create it when 
 
 created or add it later with
 
-ALTER TABLE
-
-.
+ALTER TABLE.
 
 For more information, see
 
-Columnstore indexes - query performance
-
-.
+Columnstore indexes - query performance.
 
 When using
 
@@ -82,8 +72,6 @@ possible index types in a memory-optimized table. For more information, see
 
 Indexes on
 
-Memory-Optimized Tables
-
-.
+Memory-Optimized Tables.
 
 `UNIQUE`

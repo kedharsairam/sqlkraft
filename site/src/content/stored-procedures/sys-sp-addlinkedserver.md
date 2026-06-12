@@ -79,8 +79,6 @@ N
 
 ## Arguments
 
-Applies to:
-
 Azure SQL Managed Instance
 
 Creates a linked server. A linked server provides access to distributed, heterogeneous queries
@@ -90,8 +88,6 @@ against OLE DB data sources. After a linked server is created by using
 distributed queries can be run against this server. If the linked server is defined as an instance of
 
 SQL Server, remote stored procedures can be executed.
-
-Transact-SQL syntax conventions
 
 The name of the linked server to create.
 
@@ -103,9 +99,7 @@ The product name of the OLE DB data source to add as a linked server.
 
 nvarchar(128)
 
-, with a default of
-
-. If the value is
+, with a default of. If the value is
 
 don't have to be specified.
 
@@ -133,7 +127,7 @@ was previously known as Azure Active Directory (Azure AD).
 
 ## Permissions
 
-database of the server (mssqlsystemresource). The resource database is read-only. A link to the object is exposed as a record in the sys schema of every database. Permission to execute or select a system object can be granted, denied, and revoked. Granting permission to execute or select an object doesn't necessarily convey all the permissions required to use the object. Most objects perform operations for which extra permissions are required. For example, a user that is granted permission on can't create a linked server unless the user is also a member of the fixed server role. Default name resolution resolves unqualified procedure names to the resource database. Therefore, the sys qualifier is only required when you're specifying catalog views and dynamic management views. Granting permissions on triggers and on columns of system objects isn't supported. Permissions on system objects are preserved during upgrades of SQL Server. You must be in the database to grant permissions, and the principal you grant the permissions to must be a user in the database. That is, if they're server-level permissions, you can't grant them to server principals, only database principals. System objects are visible in the sys.system_objects catalog view. The permissions on system objects are visible in the sys.database_permissions catalog view in the database. The following query returns information about permissions of system objects: SQL Requires CONTROL SERVER permission. completion of the transaction. When a subsequent COMMIT TRANSACTION or ROLLBACK TRANSACTION statement is issued for the connection, the controlling instance requests that MS DTC manage the completion of the distributed transaction across the computers involved. After a Transact-SQL distributed transaction has been started, remote stored procedure calls can be made to other instances of SQL Server that have been defined as remote servers. The remote servers are all enlisted in the Transact-SQL distributed transaction, and MS DTC ensures that the transaction is completed against each remote server. REMOTE_PROC_TRANSACTIONS is a connection-level setting that can be used to override the instance-level option. When REMOTE_PROC_TRANSACTIONS is OFF, remote stored procedure calls are not made part of a local transaction. The modifications made by the remote stored procedure are committed or rolled back at the time the stored procedure completes. Subsequent COMMIT TRANSACTION or ROLLBACK TRANSACTION statements issued by the connection that called the remote stored procedure have no effect on the processing done by the procedure. The REMOTE_PROC_TRANSACTIONS option is a compatibility option that affects only remote stored procedure calls made to instances of SQL Server defined as remote servers using . The option does not apply to distributed queries that execute a stored procedure on an instance defined as a linked server using . The setting of SET REMOTE_PROC_TRANSACTIONS is set at execute or run time and not at parse time. Requires membership in the role. BEGIN DISTRIBUTED TRANSACTION (Transact-SQL) SET Statements (Transact-SQL) See Also
+database of the server (mssqlsystemresource). The resource database is read-only. A link to the object is exposed as a record in the sys schema of every database. Permission to execute or select a system object can be granted, denied, and revoked. Granting permission to execute or select an object doesn't necessarily convey all the permissions required to use the object. Most objects perform operations for which extra permissions are required. For example, a user that is granted permission on can't create a linked server unless the user is also a member of the fixed server role. Default name resolution resolves unqualified procedure names to the resource database. Therefore, the sys qualifier is only required when you're specifying catalog views and dynamic management views. Granting permissions on triggers and on columns of system objects isn't supported. Permissions on system objects are preserved during upgrades of SQL Server. You must be in the database to grant permissions, and the principal you grant the permissions to must be a user in the database. That is, if they're server-level permissions, you can't grant them to server principals, only database principals. System objects are visible in the sys.system_objects catalog view. The permissions on system objects are visible in the sys.database_permissions catalog view in the database. The following query returns information about permissions of system objects: SQL Requires CONTROL SERVER permission. completion of the transaction. When a subsequent COMMIT TRANSACTION or ROLLBACK TRANSACTION statement is issued for the connection, the controlling instance requests that MS DTC manage the completion of the distributed transaction across the computers involved. After a Transact-SQL distributed transaction has been started, remote stored procedure calls can be made to other instances of SQL Server that have been defined as remote servers. The remote servers are all enlisted in the Transact-SQL distributed transaction, and MS DTC ensures that the transaction is completed against each remote server. REMOTE_PROC_TRANSACTIONS is a connection-level setting that can be used to override the instance-level option. When REMOTE_PROC_TRANSACTIONS is OFF, remote stored procedure calls are not made part of a local transaction. The modifications made by the remote stored procedure are committed or rolled back at the time the stored procedure completes. Subsequent COMMIT TRANSACTION or ROLLBACK TRANSACTION statements issued by the connection that called the remote stored procedure have no effect on the processing done by the procedure. The REMOTE_PROC_TRANSACTIONS option is a compatibility option that affects only remote stored procedure calls made to instances of SQL Server defined as remote servers using. The option does not apply to distributed queries that execute a stored procedure on an instance defined as a linked server using. The setting of SET REMOTE_PROC_TRANSACTIONS is set at execute or run time and not at parse time. Requires membership in the role. BEGIN DISTRIBUTED TRANSACTION (Transact-SQL) SET Statements (Transact-SQL) See Also
 
 ## Remarks
 
@@ -211,13 +205,9 @@ Full path of Excel file
 
 Expand table
 
-Applies to:
-
 Removes an existing mapping between a login on the local server running SQL Server, and a
 
 login on the linked server.
-
-Transact-SQL syntax conventions
 
 The name of a linked server that the SQL Server login mapping applies to.
 
@@ -247,15 +237,11 @@ logins on the local server to logins on the linked server, is deleted.
 
 (success) or
 
-Applies to:
-
 Specifies that when a local transaction is active, executing a remote stored procedure starts a
 
 Transact-SQL distributed transaction managed by Microsoft Distributed Transaction
 
 Coordinator (MS DTC).
-
-Transact-SQL syntax conventions
 
 When ON, a Transact-SQL distributed transaction is started when a remote stored procedure is
 
@@ -333,4 +319,4 @@ EXECUTE sp_testlinkedserver SEATTLESales;
 GO
 ```
 
-_(... and 6 more examples)_
+_(. and 6 more examples)_

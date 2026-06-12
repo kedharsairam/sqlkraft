@@ -27,15 +27,13 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Because FILESTREAM data is in the file system, this topic provides some considerations,
 
 guidelines, and limitations for using FILESTREAM with the following features in SQL Server:
 
-SQL Server Integration Services (SSIS)
+Integration Services (SSIS)
 
 Distributed Queries and Linked Servers
 
@@ -53,11 +51,11 @@ Full-Text Indexing
 
 Failover Clustering
 
-SQL Server Express
+Express
 
 Contained Databases
 
-SQL Server Integration Services (SSIS) handles FILESTREAM data in the data flow like any other
+Integration Services (SSIS) handles FILESTREAM data in the data flow like any other
 
 BLOB data by using the DT_IMAGE SSIS data type.
 
@@ -75,4 +73,4 @@ data. You cannot use the FILESTREAM
 
 function in distributed
 
-SQL Server Integration Services (SSIS)
+Integration Services (SSIS)

@@ -118,7 +118,7 @@ An 8 kilobyte (KB) page in a database, such as data or index pages.
 
 A contiguous group of eight pages, such as data or index pages.
 
-A heap or B-tree. A lock protecting a B-tree (index) or the heap data pages in a table that
+A heap or B-tree.
 
 doesn't have a clustered index.
 
@@ -134,29 +134,15 @@ An allocation unit.
 
 The entire database.
 
-Transaction ID (TID) lock used in
+Optimized locking.
 
-Optimized locking
-
-. For more information, see
-
-Transaction ID (TID) locking
-
-.
+Transaction ID (TID) locking.
 
 and
 
-locks can be affected by the
-
-option of
-
-ALTER TABLE
-
-.
+ALTER TABLE.
 
 ﾉ
-
-Expand table
 
 1
 

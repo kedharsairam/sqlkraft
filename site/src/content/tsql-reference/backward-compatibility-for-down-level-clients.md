@@ -11,11 +11,9 @@ SQL Server
 
 ## Description
 
-Milliseconds can be preceded by either a colon (:) or a period (.). If a colon is used, the
+Milliseconds can be preceded by either a colon (:) or a period (.).
 
-number means thousandths-of-a-second. If a period is used, a single digit means
-
-tenths-of-a-second, two digits mean hundredths-of-a-second, and three digits mean
+number means thousandths-of-a-second.
 
 thousandths-of-a-second. For example, 12:30:20:1 indicates 20 and one-thousandth
 
@@ -29,11 +27,7 @@ hh:mm[:ss].fractional
 
 seconds]
 
-hh is two digits, ranging from 0 to 23, that represent the number of hours in
-
 the time zone offset.
-
-mm is two digits, ranging from 0 to 59, that represent the number of
 
 additional minutes in the time zone offset.
 
@@ -45,8 +39,6 @@ ODBC API specific.
 
 Using hour 24 to represent midnight and leap second over 59 as defined by ISO 8601 (5.3.2
 
-and 5.3) are not supported to be backward compatible and consistent with the existing date
-
 and time types.
 
 The default string literal format (used for down-level client) will align with the SQL standard
@@ -54,8 +46,6 @@ The default string literal format (used for down-level client) will align with t
 form, which is defined as hh:mm:ss[.nnnnnnn]. This format resembles the ISO 8601 definition
 
 for TIME excluding fractional seconds.
-
-Some down-level clients do not support the
 
 ,
 
@@ -68,14 +58,6 @@ data
 types. The following table shows the type mapping between an up-level instance of SQL Server
 
 and down-level clients.
-
-Expand table
-
-Expand table
-
-Expand table
-
-#### data type
 
 #### Default string
 
@@ -98,7 +80,5 @@ Expand table
 #### JDBC
 
 #### Down-
-
-#### level
 
 ### time(n)

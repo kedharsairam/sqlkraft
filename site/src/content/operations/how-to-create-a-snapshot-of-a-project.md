@@ -41,27 +41,17 @@ stages of your development for baseline purpose.
 
 project in
 
-, and select
-
-.
+, and select.
 
 2. SQL Server Data Tools (SSDT) attempts to build the project first. If there's no build error, a
 
-folder is created in
+folder is created in. Inside this folder, SSDT creates a
 
-. Inside this folder, SSDT creates a
-
-file using the name format of
-
-.
+file using the name format of.
 
 3. Right-click the
 
-file and select
-
-. Change the default file name to
-
-.
+file and select. Change the default file name to.
 
 4. Right-click the
 
@@ -73,9 +63,7 @@ to
 
 remove it from the project.
 
-5. Follow the previous steps to create a new snapshot called
-
-.
+5. Follow the previous steps to create a new snapshot called.
 
 1. Right-click the
 
@@ -104,9 +92,7 @@ target. Select
 to start the import.
 
 ```cmd
-TradeDev
-.dacpac
-<Project Name>_YYYYMMDD_HH-MM-SS.dacpac
-.dacpac
+TradeDev.dacpac
+<Project Name>_YYYYMMDD_HH-MM-SS.dacpac.dacpac
 TradeDev1.dacpac
 ```

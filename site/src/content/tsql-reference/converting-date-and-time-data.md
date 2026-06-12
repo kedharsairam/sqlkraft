@@ -341,7 +341,7 @@ AS
 `smalldatetime`
 
 ```sql
-time(3)      time(4)
+time(3) time(4)
 ------------ -------------
 12:34:54.124 12:34:54.1237
 DECLARE
@@ -363,7 +363,7 @@ AS
 AS
 '@datetime'
 ;
-@time         @datetime
+@time @datetime
 ------------- -----------------------
 12:15:04.1237 1900-01-01 12:15:04.123
 DECLARE
@@ -396,9 +396,9 @@ AS
 `datetime2(2)`
 
 ```sql
-@time            @smalldatetime
+@time @smalldatetime
 ---------------- -----------------------
-12:15:59.9999    1900-01-01 12:16:00--
+12:15:59.9999 1900-01-01 12:16:00--
 DECLARE
 @
 time
@@ -418,9 +418,9 @@ AS
 AS
 '@smalldatetime'
 ;
-@time            @smalldatetime
+@time @smalldatetime
 ---------------- -----------------------
-12:59:59.9999    1900-01-01 13:00:00
+12:59:59.9999 1900-01-01 13:00:00
 DECLARE
 @
 time
@@ -440,7 +440,7 @@ AS
 AS
 '@datetimeoffset'
 ;
-@time         @datetimeoffset
+@time @datetimeoffset
 ------------- ------------------------------
 12:15:04.1237 1900-01-01 12:15:04.124 +00:00
 ```
@@ -465,7 +465,7 @@ time
 AS
 '@time'
 ;
-@datetime2              @time
+@datetime2 @time
 ----------------------- -------------
 1900-01-01 12:15:04.124 12:15:04.1237
 ```

@@ -25,8 +25,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -55,9 +53,7 @@ Columnstore indexes: Overview
 
 and
 
-Columnstore Index Architecture
-
-.
+Columnstore Index Architecture.
 
 Before designing a columnstore index, understand as much as possible about your data
 
@@ -83,9 +79,7 @@ Do I need to perform analytics on a transactional workload? If so, see the
 
 columnstore
 
-design guidance for real-time operational analytics
-
-.
+design guidance for real-time operational analytics.
 
 You might not need a columnstore index. Rowstore (or B-tree) tables with heaps or clustered
 

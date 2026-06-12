@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/10/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -37,7 +35,7 @@ back, the Database Engine guarantees that all messaging operations that are part
 
 transaction also roll back. An application manages messaging operations as part of managing
 
-SQL Server transactions.
+transactions.
 
 For example, when a program sends a message within a transaction, Service Broker doesn't
 

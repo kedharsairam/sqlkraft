@@ -29,9 +29,7 @@ manually deleted on ADLS. For more limitations and best practices, see
 
 Filter optimization
 
-## best practices
-
-.
+## best practices.
 
 In Azure Synapse Analytics dedicated SQL pools, and Analytics Platform System, when
 
@@ -47,9 +45,7 @@ has no effect on CREATE EXTERNAL TABLE AS SELECT. To
 
 achieve a similar behavior, use
 
-TOP (Transact-SQL)
-
-.
+TOP (Transact-SQL).
 
 Review
 

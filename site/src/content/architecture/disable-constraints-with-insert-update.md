@@ -25,9 +25,7 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
-SQL Server 2016 (13.x) and later versions
+2016 (13.x) and later versions
 
 Azure SQL Database
 
@@ -61,9 +59,7 @@ Requires ALTER permission on the table.
 
 folder.
 
-2. Right-click the constraint and select
-
-.
+2. Right-click the constraint and select.
 
 3. In the grid under
 
@@ -73,9 +69,7 @@ and select
 
 from the drop-down menu.
 
-4. Select
-
-.
+4. Select.
 
 5. To re-enable the constraint when desired, reverse the above steps. Select
 

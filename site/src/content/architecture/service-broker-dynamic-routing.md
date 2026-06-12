@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 09/11/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -33,9 +31,9 @@ some cases, you might need to dynamically configure routes. In this case, you im
 
 Broker Configuration Notice service.
 
-SQL Server doesn't provide a built-in solution for dynamically creating routing tables. Instead,
+doesn't provide a built-in solution for dynamically creating routing tables. Instead,
 
-SQL Server provides functionality that allows developers to create applications that provide
+provides functionality that allows developers to create applications that provide
 
 dynamic routing.
 
@@ -43,9 +41,7 @@ When Service Broker can't find a route for a conversation, Service Broker checks
 
 table for a service named
 
-SQL/ServiceBroker/BrokerConfiguration
-
-. If an entry exists for that
+SQL/ServiceBroker/BrokerConfiguration. If an entry exists for that
 
 service, Service Broker creates a new conversation to that service and sends a message on that
 
@@ -53,9 +49,7 @@ conversation requesting that a route be created. When the conversation to the
 
 service ends, Service Broker again attempts to route the message. If no
 
-route exists at that point, Service Broker marks all messages for the conversation as
-
-.
+route exists at that point, Service Broker marks all messages for the conversation as.
 
 After a timeout period, Service Broker again requests a route from the
 
@@ -65,15 +59,11 @@ To create a service for dynamic routing, create a service named
 
 SQL/ServiceBroker/BrokerConfiguration
 
-that accepts conversations on the contract
-
-. Then, create a
+that accepts conversations on the contract. Then, create a
 
 route to the service in the routing table for database that will use dynamic routing.
 
-Requests for routes use the message type
-
-.
+Requests for routes use the message type.
 
 The message is in XML format, and contains the name of the service for which routing
 

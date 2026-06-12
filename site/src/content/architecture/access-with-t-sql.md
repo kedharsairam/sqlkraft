@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Describes how Transact-SQL data manipulation language (DML) commands work with

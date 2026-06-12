@@ -31,8 +31,6 @@ Article
 
 02/01/2024
 
-Applies to:
-
 SQL Server
 
 Use this dialog box to enable and configure one or more warning thresholds for the database
@@ -45,9 +43,7 @@ The dialog box tries to connect to both server instances. These connections are 
 
 asynchronously. The dialog shows the connection status of each partner. If the partner is not
 
-connected, you can click
-
-.
+connected, you can click.
 
 Start Database Mirroring Monitor (SQL Server Management Studio)
 
@@ -59,9 +55,7 @@ SYSTEM
 
 \*\*\*\*
 
-INSTANCE_NAME
-
-. For a default
+INSTANCE_NAME. For a default
 
 server instance, only the system name is displayed.
 
@@ -105,6 +99,4 @@ If you do are not a member of the
 
 fixed server role, this status is
 
-server_instance_name
-
-.
+server_instance_name.

@@ -10,7 +10,7 @@ syntax: "sys.dm_db_missing_index_group_stats"
 
 ## Description
 
-Average percentage benefit that user queries could experience if this missing index group was implemented. The value means that the query cost would on average drop by this percentage if this missing index group was implemented. Number of seeks caused by system queries, such as auto stats queries, that the recommended index in the group could have been used for. For more information, see Auto Stats Event Class Number of scans caused by system queries that the recommended index in the group could have been used for. Date and time of last system seek caused by system queries that the recommended index in the group could have been used for. Date and time of last system scan caused by system queries that the recommended index in the group could have been used for. Average cost of the system queries that could be reduced by the
+Average percentage benefit that user queries could experience if this missing index group was implemented. The value means that the query cost would on average drop by this percentage if this missing index group was implemented. Number of seeks caused by system queries, such as auto stats queries, that the recommended index in the group could have been used for. For more information, see Auto Stats Event Class Number of scans caused by system queries that the recommended index in the group could have been used for.
 
 ## Syntax
 

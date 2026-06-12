@@ -15,9 +15,7 @@ can include table-valued functions, but it can't contain
 
 ## arguments that are columns from the
 
-right_table_source
-
-.
+right_table_source.
 
 The APPLY operator works in the following way to produce the table source for the FROM
 
@@ -39,9 +37,7 @@ right_table_source
 
 depend on
 
-left_table_source
-
-.
+left_table_source.
 
 right_table_source
 
@@ -73,9 +69,7 @@ left_table_source
 
 that is combined with the list of columns from the
 
-right_table_source
-
-.
+right_table_source.
 
 The
 
@@ -101,9 +95,7 @@ The grouping columns in the output row obtain the corresponding column values fo
 
 group in the
 
-input_table
-
-.
+input_table.
 
 2. Generates values for the columns in the column list for each output row by performing
 
@@ -113,9 +105,7 @@ a. Grouping additionally the rows generated in the GROUP BY in the previous step
 
 against the
 
-pivot_column
-
-.
+pivot_column.
 
 For each output column in the
 
@@ -137,15 +127,11 @@ on this subgroup and its
 
 result is returned as the value of the corresponding
 
-output_column
-
-. If the subgroup is
+output_column. If the subgroup is
 
 empty, SQL Server generates a null value for that
 
-output_column
-
-. If the aggregate
+output_column. If the aggregate
 
 function is COUNT and the subgroup is empty, zero (0) is returned.
 

@@ -27,8 +27,6 @@ Article
 
 03/03/2023
 
-Applies to:
-
 SQL Server
 
 Use the FailureConditionLevel property to set the conditions for the Always On Failover Cluster
@@ -69,9 +67,7 @@ topic.
 
 Requires ALTER SETTINGS and VIEW SERVER STATE permissions.
 
-1. Start an elevated Windows PowerShell via
-
-.
+1. Start an elevated Windows PowerShell via.
 
 2. Import the
 

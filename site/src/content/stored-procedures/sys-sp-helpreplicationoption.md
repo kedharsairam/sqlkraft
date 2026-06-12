@@ -2,7 +2,7 @@
 name: "sys.sp_helpreplicationoption"
 title: "sp_helpreplicationoption"
 category: "general"
-description: "Shows the types of replication options enabled for a server. This stored procedure is executed at any server on any database. Transact-SQL syntax conventions The name of the replication option to query for. A result set is returned when transactional replication is enabled. A result set is returned when merge replication is enabled."
+description: "Shows the types of replication options enabled for a server. This stored procedure is executed at any server on any database."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -15,7 +15,7 @@ syntax: |
 
 ## Description
 
-Shows the types of replication options enabled for a server. This stored procedure is executed at any server on any database. Transact-SQL syntax conventions The name of the replication option to query for. A result set is returned when transactional replication is enabled. A result set is returned when merge replication is enabled.
+Shows the types of replication options enabled for a server. This stored procedure is executed at any server on any database.
 
 ## Syntax
 

@@ -11,7 +11,7 @@ pubDate: 2026-05-29
 
 ## Description
 
-Description key. 4969 16 No ALTER TABLE SWITCH statement failed. Foreign key constraint '%.*ls' is disabled in source table '%.*ls' and the corresponding constraint '%.\*ls' is enabled in target table
+Description key. 4969 16 No ALTER TABLE SWITCH statement failed.
 
 ## Severity
 

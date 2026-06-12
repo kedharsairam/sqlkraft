@@ -2,12 +2,10 @@
 name: "Data Manipulation Language"
 title: "Data Manipulation Language"
 category: "statements"
-description: "Azure SQL Managed Instance"
+description: ""
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
-
-Applies to:
 
 SQL Server
 
@@ -63,9 +61,7 @@ The backup and restore statements provide ways to create backups and restore fro
 
 For more information, see the
 
-Backup and restore overview
-
-.
+Backup and restore overview.
 
 Data Definition Language (DDL) statements defines data structures. Use these statements to
 

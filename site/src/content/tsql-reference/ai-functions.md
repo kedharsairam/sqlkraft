@@ -2,16 +2,14 @@
 name: "AI functions"
 title: "AI functions"
 category: "statements"
-description: "SQL Server 2025 (17.x)"
+description: "2025 (17.x)"
 tags: ["tsql", "statements"]
 pubDate: 2026-05-29
 ---
 
 #### Function
 
-Applies to:
-
-SQL Server 2025 (17.x)
+2025 (17.x)
 
 Azure SQL Database
 
@@ -37,13 +35,9 @@ parameters
 
 For more info about the built-in support for AI in the database, review the following articles:
 
-Vector data type
-
 Vector functions
 
-Intelligent applications and AI
-
-.
+Intelligent applications and AI.
 
 CREATE EXTERNAL MODEL (Transact-SQL)
 
@@ -52,9 +46,3 @@ ALTER EXTERNAL MODEL (Transact-SQL)
 DROP EXTERNAL MODEL (Transact-SQL)
 
 sp_invoke_external_rest_endpoint
-
-Last updated on 11/18/2025
-
-Expand table
-
-Related content

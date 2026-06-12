@@ -46,7 +46,7 @@ value in the
 
 DMV.
 
-SQL Server latch contention scenarios
+latch contention scenarios
 
 This contention is commonly referred to as "Last Page Insert" contention because it occurs on
 
@@ -134,9 +134,7 @@ waits associated with the same resource_description in the
 
 DMV as returned by the
 
-Query sys.dm_os_waiting_tasks Ordered by Wait Duration
-
-.
+Query sys.dm_os_waiting_tasks Ordered by Wait Duration.
 
 Consider changing the order of the index columns as described in the Non-sequential
 

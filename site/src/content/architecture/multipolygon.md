@@ -27,8 +27,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -91,9 +89,7 @@ more information on accepted
 
 instances, see
 
-Polygon
-
-.
+Polygon.
 
 The following examples show accepted
 

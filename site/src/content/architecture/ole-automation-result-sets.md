@@ -29,8 +29,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 If an OLE Automation property or method returns data in an array with one or two dimensions,

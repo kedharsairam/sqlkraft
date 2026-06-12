@@ -19,9 +19,7 @@ definition aren't allowed. The number of column names specified must match the n
 
 columns in the result set of the
 
-CTE_query_definition
-
-. The list of column names is optional only
+CTE_query_definition. The list of column names is optional only
 
 if distinct names for all resulting columns are supplied in the query definition.
 
@@ -39,9 +37,7 @@ view, except a CTE can't define another CTE. For more information, see the Remar
 
 and
 
-CREATE VIEW
-
-.
+CREATE VIEW.
 
 If more than one
 
@@ -55,9 +51,7 @@ of these set operators:
 
 ,
 
-, or
-
-.
+, or.
 
 Query results from common table expressions aren't materialized. Each outer reference to the
 
@@ -101,9 +95,7 @@ Note
 
 The following guidelines apply to nonrecursive common table expressions. For guidelines
 
-that apply to recursive common table expressions, see
-
-.
+that apply to recursive common table expressions, see.
 
 ## Guidelines for recursive common table expressions
 
@@ -119,9 +111,7 @@ combined by one of these set operators:
 
 ,
 
-, or
-
-.
+, or.
 
 A CTE can reference itself and previously defined CTEs in the same
 
@@ -145,9 +135,7 @@ For more information on nested CTEs in Microsoft Fabric, see
 
 Nested Common Table
 
-Expression (CTE) in Fabric data warehousing (Transact-SQL)
-
-.
+Expression (CTE) in Fabric data warehousing (Transact-SQL).
 
 The following clauses can't be used in the
 
@@ -193,9 +181,7 @@ Note
 
 The following guidelines apply to defining a recursive common table expression. For
 
-guidelines that apply to nonrecursive CTEs, see
-
-.
+guidelines that apply to nonrecursive CTEs, see.
 
 The
 
@@ -217,9 +203,7 @@ Anchor members must be combined by one of these set operators:
 
 ,
 
-, or
-
-.
+, or.
 
 is the only set operator allowed between the last anchor
 
@@ -235,9 +219,7 @@ The
 
 clause of a recursive member must refer only one time to the CTE
 
-expression_name
-
-.
+expression_name.
 
 The following items aren't allowed in the
 
@@ -259,9 +241,7 @@ Subqueries
 
 A hint applied to a recursive reference to a CTE inside a
 
-CTE_query_definition
-
-.
+CTE_query_definition.
 
 ７
 

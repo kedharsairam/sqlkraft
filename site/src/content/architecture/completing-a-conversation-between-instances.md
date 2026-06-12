@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -39,9 +37,7 @@ This tutorial builds on the tasks that you learned in
 
 Complete a conversation between
 
-databases
-
-. In this tutorial, you learn how to configure a conversation so that it runs between
+databases. In this tutorial, you learn how to configure a conversation so that it runs between
 
 two instances of the Database Engine.
 
@@ -67,15 +63,11 @@ In this tutorial, the instance of the Database Engine that contains the initiato
 
 referred to as the
 
-initiator instance
-
-. The instance that contains the target database is referred to
+initiator instance. The instance that contains the target database is referred to
 
 as the
 
-target instance
-
-.
+target instance.
 
 This tutorial is divided into six lessons:
 

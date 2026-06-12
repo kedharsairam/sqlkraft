@@ -31,8 +31,6 @@ Article
 
 02/28/2023
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -43,7 +41,7 @@ This article describes how invalid XML characters are handled by the FOR XML cla
 
 the escape rules for characters that are invalid in XML names.
 
-SQL Server entitizes invalid XML characters when they're returned within FOR XML queries that
+entitizes invalid XML characters when they're returned within FOR XML queries that
 
 don't use the TYPE directive.
 
@@ -79,7 +77,7 @@ In attribute content:
 
 These characters are preserved in output, and a parser won't normalize them.
 
-SQL Server names that contain characters that are invalid in XML names, such as spaces, are
+names that contain characters that are invalid in XML names, such as spaces, are
 
 translated into XML names in a way in which the invalid characters are translated into escaped
 

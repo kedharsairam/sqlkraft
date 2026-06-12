@@ -2,7 +2,7 @@
 name: "sys.sp_add_log_shipping_primary_secondary"
 title: "sp_add_log_shipping_primary_secondary"
 category: "general"
-description: "This stored procedure adds an entry for a secondary database on the primary server. Transact-SQL syntax conventions The name of the database on the primary server."
+description: "This stored procedure adds an entry for a secondary database on the primary server."
 tags: ["stored-procedure"]
 pubDate: 2026-05-29
 syntax: |
@@ -20,7 +20,7 @@ syntax: |
 
 ## Description
 
-This stored procedure adds an entry for a secondary database on the primary server. Transact-SQL syntax conventions The name of the database on the primary server. The name of the secondary server. The name of the secondary database.
+This stored procedure adds an entry for a secondary database on the primary server.
 
 ## Syntax
 

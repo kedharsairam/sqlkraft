@@ -21,8 +21,6 @@ pubDate: 2025-12-01
 
 08/29/2025
 
-Applies to:
-
 SQL Server
 
 Azure SQL Managed Instance
@@ -65,9 +63,7 @@ less-restrictive validation to improve performance when the application is deplo
 
 example, it's possible to exchange a typed XML document as the body of a message that
 
-specifies a validation of
-
-. In this case, your application validates the message when
+specifies a validation of. In this case, your application validates the message when
 
 processing the XML.
 
@@ -77,9 +73,7 @@ type names are often chosen to avoid collation issues and naming conflicts. For 
 
 information on naming, see
 
-Naming Service Broker Objects
-
-.
+Naming Service Broker Objects.
 
 An application typically doesn't define new message types to indicate success or failure.
 

@@ -21,8 +21,6 @@ tags:
 pubDate: 2025-12-01
 ---
 
-Applies to:
-
 SQL Server
 
 Azure SQL Database
@@ -79,13 +77,9 @@ get started with SQL database projects
 
 to
 
-step 4
+step 4. At this end of this tutorial, your SQL project will be automatically building and
 
-. At this end of this tutorial, your SQL project will be automatically building and
-
-deploying changes to a target database.
-
-.NET 8 SDK
+deploying changes to a target database.NET 8 SDK
 
 Visual Studio 2022 Community, Professional, or Enterprise
 
@@ -95,9 +89,7 @@ Make sure you have the following items to complete the pipeline setup in GitHub:
 
 A GitHub account where you can create a repository.
 
-Create one for free
-
-.
+Create one for free.
 
 GitHub actions is
 
@@ -105,6 +97,5 @@ enabled
 
 on your repository.
 
-```cmd
-.dacpac
+```cmd.dacpac
 ```
