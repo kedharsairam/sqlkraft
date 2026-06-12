@@ -3,8 +3,8 @@ name: "SET FMTONLY"
 title: "SET FMTONLY"
 category: "statements"
 description: "Controls whether metadata-only mode is active for query results."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

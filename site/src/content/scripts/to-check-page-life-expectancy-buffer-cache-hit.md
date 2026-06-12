@@ -2,9 +2,9 @@
 name: "To Check Page Life Expectancy, Buffer Cache Hit"
 title: "To Check Page Life Expectancy, Buffer Cache Hit"
 description: "diagnostic script for architecture operations."
-category: architecture
-tags: ["architecture", "cache", "health-check"]
-pubDate: 2025-03-15
+category: "architecture"
+tags: ["architecture","cache","health-check"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

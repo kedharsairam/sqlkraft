@@ -2,8 +2,8 @@
 title: "Conversion locks"
 topic: "locking"
 description: ""
-tags: ["locking", "architecture"]
-pubDate: 2026-05-29
+tags: ["locking","architecture"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

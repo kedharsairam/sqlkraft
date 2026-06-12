@@ -3,8 +3,8 @@ name: "Perform logical consistency checks on indexes"
 title: "Perform logical consistency checks on indexes"
 category: "queries"
 description: "exceeds the value configured with Resource Governor, the Database Engine uses the Resource"
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 exceeds the value configured with Resource Governor, the Database Engine uses the Resource

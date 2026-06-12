@@ -1,35 +1,10 @@
 ---
 title: "CursorUnprepare Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event class provides information about cursor unprepare events that
-
-  occur in applicatio
-tags:
-  - "event-classes"
-  - "cursorunprepare-event-class"
-pubDate: 2025-12-01
+description: "The event class provides information about cursor unprepare events that occur in applicatio"
+tags: ["event-classes","cursorunprepare-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

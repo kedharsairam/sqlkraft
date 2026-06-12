@@ -2,8 +2,8 @@
 title: "Prepare SQL statements"
 topic: "query-processing"
 description: "equivalent but differ only in their parameter values. Conversely, you can specify that forced"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 equivalent but differ only in their parameter values. Conversely, you can specify that forced

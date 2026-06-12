@@ -4,7 +4,7 @@ title: "sp_helpdistributor_properties"
 category: "general"
 description: "Returns Distributor properties. This stored procedure is executed at the Distributor on the The maximum number of minutes that an agent can go without logging is used with all types of replication."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_helpdistributor_properties"
 ---
 

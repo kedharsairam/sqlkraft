@@ -2,9 +2,9 @@
 name: "To View List of Databases Participating in Log"
 title: "To View List of Databases Participating in Log"
 description: ""
-category: high-availability
-tags: ["database", "high-availability"]
-pubDate: 2025-03-15
+category: "high-availability"
+tags: ["database","high-availability"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

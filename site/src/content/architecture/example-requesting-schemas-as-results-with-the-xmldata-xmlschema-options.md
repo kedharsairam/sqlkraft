@@ -1,34 +1,10 @@
 ---
 title: "Example: Requesting Schemas as Results with the XMLDATA & XMLSCHEMA Options"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The following query returns the XML-DATA schema that describes the document structure.
-
-  SQL
-
-tags:
-  - "xml-data"
-  - "example-requesting-schemas-as-results-with-the-xmldata-xmlschema-options"
-pubDate: 2025-12-01
+description: "The following query returns the XML-DATA schema that describes the document structure. SQL"
+tags: ["xml-data","example-requesting-schemas-as-results-with-the-xmldata-xmlschema-options"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The following query returns the XML-DATA schema that describes the document structure.
 

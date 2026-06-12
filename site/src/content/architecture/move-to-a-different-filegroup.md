@@ -1,25 +1,10 @@
 ---
 title: "Move to a different filegroup"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This topic describes how to move an existing index from its current filegroup to a different
-
-  filegroup in SQL Server by using SQL Server Managemen
-tags:
-  - "filestream"
-  - "move-to-a-different-filegroup"
-pubDate: 2025-12-01
+description: "This topic describes how to move an existing index from its current filegroup to a different filegroup in SQL Server by using SQL Server Managemen"
+tags: ["filestream","move-to-a-different-filegroup"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This topic describes how to move an existing index from its current filegroup to a different
 

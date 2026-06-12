@@ -1,37 +1,12 @@
 ---
 title: "Health diagnostics log"
 topic: "high-availability"
-description: |
-  SQL Server resource DLL health diagnostic
-
-  Article
-
-  •
-
-  11/25/2024
-
-  Applies to:
-
-  SQL Server
-
-  To monitor the health of the primary availability replica, the SQL Server resource DLL run by the
-
-  Windows S
-tags:
-  - "high-availability"
-  - "health-diagnostics-log"
-pubDate: 2025-12-01
+description: "resource DLL health diagnostic To monitor the health of the primary availability replica, the SQL Server resource DLL run by the Windows S"
+tags: ["high-availability","health-diagnostics-log"]
+pubDate: "2025-12-01"
 ---
 
 resource DLL health diagnostic
-
-Article
-
-•
-
-11/25/2024
-
-SQL Server
 
 To monitor the health of the primary availability replica, the SQL Server resource DLL run by the
 

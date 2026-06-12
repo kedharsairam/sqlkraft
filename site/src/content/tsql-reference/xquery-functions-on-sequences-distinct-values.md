@@ -4,19 +4,9 @@ title: "XQuery - Functions on Sequences - distinct-values"
 category: "xquery"
 description: "XQuery Language Reference: Functions on Sequences - distinct-values"
 syntax: "fn:distinct-values($arg as xdt:anyAtomicType*) as xdt:anyAtomicType*"
-tags:
-  - "xquery"
-  - "functions-on-sequences-distinct-values"
-pubDate: 2025-12-01
+tags: ["xquery","functions-on-sequences-distinct-values"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Removes duplicate values from the sequence specified by
 

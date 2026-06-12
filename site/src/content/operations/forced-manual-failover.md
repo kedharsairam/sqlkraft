@@ -1,31 +1,14 @@
 ---
 title: "Forced manual failover"
 topic: "high-availability"
-description: |
-  10/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  This article describes how to perform a forced failover (with possible data loss) on an Always
-
-  On availability group by using SQL Server Management Studio, Transa
-tags:
-  - "high-availability"
-  - "forced-manual-failover"
-pubDate: 2025-12-01
+description: "10/06/2025 This article describes how to perform a forced failover (with possible data loss) on an Always On availability group by using SQL Server Management Studio, Transa"
+tags: ["high-availability","forced-manual-failover"]
+pubDate: "2025-12-01"
 ---
-
-10/06/2025
-
-SQL Server
 
 This article describes how to perform a forced failover (with possible data loss) on an Always
 
-On availability group by using SQL Server Management Studio, Transact-SQL, or PowerShell in
-
-SQL Server. A forced failover is a form of manual failover that is intended strictly for disaster
+On availability group by using SQL Server Management Studio, Transact-SQL, or PowerShell in. A forced failover is a form of manual failover that is intended strictly for disaster
 
 recovery, when a
 

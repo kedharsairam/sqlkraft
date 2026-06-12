@@ -2,8 +2,8 @@
 title: "Transaction log physical architecture"
 topic: "io-fundamentals"
 description: "To roll forward the logical operation, the operation is performed again."
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 To roll forward the logical operation, the operation is performed again.

@@ -1,33 +1,10 @@
 ---
 title: "Distributed availability groups"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  05/19/2025
-
-  Applies to:
-
-  SQL Server
-
-  A distributed availability group (AG) is a special type of availability group that spans two
-
-  separate availability groups. Distributed availability gr
-tags:
-  - "high-availability"
-  - "distributed-availability-groups"
-pubDate: 2025-12-01
+description: "A distributed availability group (AG) is a special type of availability group that spans two separate availability groups."
+tags: ["high-availability","distributed-availability-groups"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-05/19/2025
-
-SQL Server
 
 A distributed availability group (AG) is a special type of availability group that spans two
 

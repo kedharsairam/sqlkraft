@@ -3,15 +3,9 @@ name: "Syntax for disk-based tables"
 title: "Syntax for disk-based tables"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Azure
 
@@ -20,8 +14,6 @@ Synapse Analytics
 Analytics Platform System (PDW)
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Modifies a table definition by altering, adding, or dropping columns and constraints.
 

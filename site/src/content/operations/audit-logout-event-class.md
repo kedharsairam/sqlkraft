@@ -1,49 +1,14 @@
 ---
 title: "Audit Logout Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class indicates that a user has logged out of (logged off) Microsoft
-
-  SQL Server. Events in
-tags:
-  - "event-classes"
-  - "audit-logout-event-class"
-pubDate: 2025-12-01
+description: "The event class indicates that a user has logged out of (logged off) Microsoft SQL Server."
+tags: ["event-classes","audit-logout-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 
-event class indicates that a user has logged out of (logged off) Microsoft
-
-SQL Server. Events in this class are fired by new connections or by connections that are reused
+event class indicates that a user has logged out of (logged off) Microsoft. Events in this class are fired by new connections or by connections that are reused
 
 from a connection pool.
 

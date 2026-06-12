@@ -3,8 +3,8 @@ name: "sys.fn_trace_geteventinfo"
 title: "sys.fn_trace_geteventinfo"
 category: "system"
 description: "Returns information about an event being traced. Is the ID of the trace. , with no default."
-tags: ["system", "function"]
-pubDate: 2026-05-29
+tags: ["system","function"]
+pubDate: "2026-05-29"
 syntax: "fn_trace_geteventinfo ( trace_id )"
 ---
 

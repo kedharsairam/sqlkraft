@@ -1,11 +1,11 @@
 ---
-name: FCB_REPLICA
+name: "FCB_REPLICA"
 title: "FCB Replica Wait"
-category: baseline
-severity: low
+category: "baseline"
+severity: "low"
 description: "Occurs when waiting for a File Control Block replica operation — part of the database startup and recovery process. Rarely performance-relevant."
-tags: ["fcb", "replica", "startup"]
-pubDate: 2026-05-29
+tags: ["fcb","replica","startup"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

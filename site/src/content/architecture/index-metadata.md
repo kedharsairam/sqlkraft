@@ -2,8 +2,8 @@
 title: "Index metadata"
 topic: "index-architecture"
 description: "The performance of a nonclustered index is better than with hash indexes when querying a"
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The performance of a nonclustered index is better than with hash indexes when querying a

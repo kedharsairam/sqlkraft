@@ -4,18 +4,18 @@ title: "sp_help_spatial_geometry_index"
 category: "general"
 description: "Returns the names and values for a specified set of properties about a The result is returned in a table format. You can choose to return a core set of properties or all Spatial index stored procedures - arguments and properties role to access the procedure. Requires READ ACCESS permission on the server and the object. values aren't included in the return set."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_help_spatial_geometry_index
-  [ @tabname = ]
-  N
-  'tabname'
-  , [ @indexname = ]
-  N
-  'indexname'
-  , [ @verboseoutput = ] verboseoutput
-  , [ @query_sample = ] query_sample
-  [ ; ]
+      [ @tabname = ]
+      N
+      'tabname'
+      , [ @indexname = ]
+      N
+      'indexname'
+      , [ @verboseoutput = ] verboseoutput
+      , [ @query_sample = ] query_sample
+      [ ; ]
 ---
 
 ## Description

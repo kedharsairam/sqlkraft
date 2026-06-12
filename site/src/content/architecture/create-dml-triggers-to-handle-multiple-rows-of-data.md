@@ -1,31 +1,10 @@
 ---
 title: "Create DML Triggers to Handle Multiple Rows of Data"
 topic: "change-data-capture"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  When you write the code for a DML trigger, consider that the statement that causes the trigge
-tags:
-  - "change-data-capture"
-  - "create-dml-triggers-to-handle-multiple-rows-of-data"
-pubDate: 2025-12-01
+description: "When you write the code for a DML trigger, consider that the statement that causes the trigge"
+tags: ["change-data-capture","create-dml-triggers-to-handle-multiple-rows-of-data"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 When you write the code for a DML trigger, consider that the statement that causes the trigger
 

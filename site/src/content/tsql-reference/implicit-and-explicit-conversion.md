@@ -3,17 +3,9 @@ name: "Implicit and explicit conversion"
 title: "Implicit and explicit conversion"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -22,8 +14,6 @@ SQL analytics endpoint in
 Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Data types can be converted in the following scenarios:
 
@@ -121,7 +111,7 @@ sql_variant.
 
 While the previous chart illustrates all the explicit and implicit conversions that are allowed in
 
-SQL Server, it does not indicate the resulting data type of the conversion.
+, it does not indicate the resulting data type of the conversion.
 
 When SQL Server performs an explicit conversion, the statement itself determines the
 

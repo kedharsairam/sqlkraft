@@ -3,8 +3,8 @@ name: "DML)"
 title: "DML)"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ### insert
@@ -32,18 +32,6 @@ pubDate: 2026-05-29
 ### xsi:nil
 
 ### xs:type
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The XML Data Modification Language (XML DML) is an extension of the XQuery language. As
 

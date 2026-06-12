@@ -1,43 +1,10 @@
 ---
 title: "master"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  database records all the system-level information for a SQL Server system. This
-
-  includes instance
-tags:
-  - "collation"
-  - "master"
-pubDate: 2025-12-01
+description: "The database records all the system-level information for a SQL Server system. This includes instance"
+tags: ["collation","master"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

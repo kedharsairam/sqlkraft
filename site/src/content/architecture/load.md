@@ -1,37 +1,10 @@
 ---
 title: "Load"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  03/20/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  You can transfer XML data into SQL Server in several ways. For example:
-
-  If you have your data in an [n]text or image column in a S
-tags:
-  - "xml-data"
-  - "load"
-pubDate: 2025-12-01
+description: "You can transfer XML data into SQL Server in several ways. For example: If you have your data in an [n]text or image column in a S"
+tags: ["xml-data","load"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/20/2023
-
-SQL Server
-
-Azure SQL Database
 
 You can transfer XML data into SQL Server in several ways. For example:
 

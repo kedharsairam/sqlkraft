@@ -1,31 +1,10 @@
 ---
 title: "Register a database as a DAC"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The registration process creates a data-tier application (DAC) definition that defines the ob
-tags:
-  - "ssms"
-  - "register-a-database-as-a-dac"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssms","register-a-database-as-a-dac"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The registration process creates a data-tier application (DAC) definition that defines the objects
 

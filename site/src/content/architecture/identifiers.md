@@ -1,37 +1,10 @@
 ---
 title: "Identifiers"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL analytics endpoint in
-
-  Microsoft Fabric
-
-  Warehouse in Microsoft F
-tags:
-  - "collation"
-  - "identifiers"
-pubDate: 2025-12-01
+description: "SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft F"
+tags: ["collation","identifiers"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -40,8 +13,6 @@ SQL analytics endpoint in
 Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 The database object name is its identifier.
 

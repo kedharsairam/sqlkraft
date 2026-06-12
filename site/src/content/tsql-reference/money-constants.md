@@ -3,8 +3,8 @@ name: "Money constants"
 title: "Money constants"
 category: "data-types"
 description: ") constants are represented by a string of numbers that aren't enclosed in quotation"
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 Integer (

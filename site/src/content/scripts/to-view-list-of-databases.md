@@ -2,9 +2,9 @@
 name: "To View list of Databases"
 title: "To View list of Databases"
 description: "diagnostic script for database operations."
-category: database
+category: "database"
 tags: ["database"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

@@ -3,8 +3,8 @@ name: "STLineFromText (geography Data Type)"
 title: "STLineFromText (geography Data Type)"
 category: "data-types"
 description: "Constructs a linestring geography instance from a Well-Known Text (WKT) representation."
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

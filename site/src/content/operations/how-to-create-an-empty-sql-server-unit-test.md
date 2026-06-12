@@ -3,19 +3,15 @@ title: "How to: Create an Empty SQL Server Unit Test"
 topic: "ssb-diagnose"
 description: |
   09/09/2025
-
-  Include unit tests in your database project to verify changes you make to database objects
-
-  don't break existing functionality. The following procedures explain how to create SQL Server
-
-  u
-tags:
-  - "ssb-diagnose"
-  - "how-to-create-an-empty-sql-server-unit-test"
-pubDate: 2025-12-01
+  
+    Include unit tests in your database project to verify changes you make to database objects
+  
+    don't break existing functionality. The following procedures explain how to create SQL Server
+  
+    u
+tags: ["ssb-diagnose","how-to-create-an-empty-sql-server-unit-test"]
+pubDate: "2025-12-01"
 ---
-
-09/09/2025
 
 Include unit tests in your database project to verify changes you make to database objects
 

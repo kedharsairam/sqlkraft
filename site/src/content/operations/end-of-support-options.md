@@ -1,20 +1,9 @@
 ---
 title: "End of support options"
 topic: "upgrade"
-description: |
-  SQL Server end of support options
-
-  Applies to:
-
-  SQL Server 2014 (12.x)
-
-  This article explains your options for addressing SQL Server products that reach end of support.
-
-  Each version of SQL Server com
-tags:
-  - "upgrade"
-  - "end-of-support-options"
-pubDate: 2025-12-01
+description: "end of support options SQL Server 2014 (12.x) This article explains your options for addressing SQL Server products that reach end of support."
+tags: ["upgrade","end-of-support-options"]
+pubDate: "2025-12-01"
 ---
 
 end of support options

@@ -4,30 +4,30 @@ title: "sp_articlefilter"
 category: "general"
 description: "Filters data that is published based on a table article. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_articlefilter
-  [ @publication = ]
-  N
-  'publication'
-  , [ @article = ]
-  N
-  'article'
-  [ , [ @filter_name = ]
-  N
-  'filter_name'
-  ]
-  [ , [ @filter_clause = ]
-  N
-  'filter_clause'
-  ]
-  [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
-  [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
-  [ , [ @publisher = ]
-  N
-  'publisher'
-  ]
-  [ ; ]
+      [ @publication = ]
+      N
+      'publication'
+      , [ @article = ]
+      N
+      'article'
+      [ , [ @filter_name = ]
+      N
+      'filter_name'
+      ]
+      [ , [ @filter_clause = ]
+      N
+      'filter_clause'
+      ]
+      [ , [ @force_invalidate_snapshot = ] force_invalidate_snapshot ]
+      [ , [ @force_reinit_subscription = ] force_reinit_subscription ]
+      [ , [ @publisher = ]
+      N
+      'publisher'
+      ]
+      [ ; ]
 ---
 
 ## Description

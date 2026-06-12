@@ -3,8 +3,8 @@ name: "Trigger implementation"
 title: "Trigger implementation"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 At least one of the three

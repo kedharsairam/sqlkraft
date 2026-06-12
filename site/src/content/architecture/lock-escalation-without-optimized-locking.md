@@ -2,8 +2,8 @@
 title: "Lock escalation without optimized locking"
 topic: "locking"
 description: "Lock escalation behaves differently depending on whether"
-tags: ["locking", "architecture"]
-pubDate: 2026-05-29
+tags: ["locking","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Lock escalation behaves differently depending on whether

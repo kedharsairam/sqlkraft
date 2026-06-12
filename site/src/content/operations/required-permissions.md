@@ -1,33 +1,10 @@
 ---
 title: "Required permissions"
 topic: "azure-synapse"
-description: |
-  SQL Server
-
-  Applies to:
-
-  SQL Server
-
-  This article lists the permissions the Azure Extension for SQL Server grants to the
-
-  account when you use
-
-  least privilege
-
-  for
-
-  SQL Server instances
-
-  enabled by A
-tags:
-  - "azure-synapse"
-  - "required-permissions"
-pubDate: 2025-12-01
+description: "This article lists the permissions the Azure Extension for SQL Server grants to the account when you use least privilege for SQL Server instances enabled by A"
+tags: ["azure-synapse","required-permissions"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-SQL Server
 
 This article lists the permissions the Azure Extension for SQL Server grants to the
 

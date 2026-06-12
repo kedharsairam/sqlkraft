@@ -2,19 +2,11 @@
 title: "Transaction log logical architecture"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 transaction log architecture and
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

@@ -1,47 +1,10 @@
 ---
 title: "Audit Server Starts & Stops Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs when the Microsoft SQL Server service
-
-  state is modified.
-
-  Description
-
-  Name of
-tags:
-  - "event-classes"
-  - "audit-server-starts-stops-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs when the Microsoft SQL Server service state is modified."
+tags: ["event-classes","audit-server-starts-stops-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

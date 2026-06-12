@@ -4,13 +4,13 @@ title: "sp_helpdb"
 category: "general"
 description: "Reports information about a specified database or all databases."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_helpdb [ [ @dbname = ]
-  N
-  'dbname'
-  ]
-  [ ; ]
+      N
+      'dbname'
+      ]
+      [ ; ]
 ---
 
 ## Description

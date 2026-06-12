@@ -3,8 +3,8 @@ name: "Supported data types"
 title: "Supported data types"
 category: "data-types"
 description: "When working with parquet files,"
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 When working with parquet files, will generate one parquet file per available CPU, up to the configured maximum degree of parallelism (MAXDOP). Each file can grow up to 190 GB, after that SQL Server will generate more Parquet files as needed.

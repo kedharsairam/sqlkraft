@@ -3,8 +3,8 @@ name: "sys.column_xml_schema_collection_usages"
 title: "sys.column_xml_schema_collection_usages"
 category: "xml"
 description: "Returns a row for each column that is validated by an XML schema. The ID of the object to which this column belongs. The ID of the column."
-tags: ["xml", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["xml","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

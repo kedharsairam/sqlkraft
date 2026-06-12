@@ -3,21 +3,17 @@ title: "How to: Create a Snapshot of a Project"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  A
-
-  file provides you with a read-only representation of the database
-
-  schema at the time it's created. It's essentially being treated as a database schema from which
-
-  you can import the sc
-tags:
-  - "ssb-diagnose"
-  - "how-to-create-a-snapshot-of-a-project"
-pubDate: 2025-12-01
+  
+    A
+  
+    file provides you with a read-only representation of the database
+  
+    schema at the time it's created. It's essentially being treated as a database schema from which
+  
+    you can import the sc
+tags: ["ssb-diagnose","how-to-create-a-snapshot-of-a-project"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 A
 

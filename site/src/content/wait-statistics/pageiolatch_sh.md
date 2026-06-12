@@ -1,11 +1,11 @@
 ---
-name: PAGEIOLATCH_SH
+name: "PAGEIOLATCH_SH"
 title: "Page I/O Latch (Shared) Wait"
-category: io
-severity: high
+category: "io"
+severity: "high"
 description: "Occurs when a task waits for a data page to be read from disk into the buffer pool (shared latch). High durations indicate disk I/O subsystem latency — slow reads, insufficient IOPS, or missing indexes causing excessive page access."
-tags: ["io", "buffer-pool", "disk-read", "page"]
-pubDate: 2026-05-29
+tags: ["io","buffer-pool","disk-read","page"]
+pubDate: "2026-05-29"
 relatedScripts: ["analyze-io-latency"]
 ---
 

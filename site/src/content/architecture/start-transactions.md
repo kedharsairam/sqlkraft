@@ -2,8 +2,8 @@
 title: "Start transactions"
 topic: "io-fundamentals"
 description: "Using API functions and Transact-SQL statements, you can start transactions as explicit,"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Using API functions and Transact-SQL statements, you can start transactions as explicit,

@@ -3,8 +3,8 @@ name: "Index best practices"
 title: "Index best practices"
 category: "hints"
 description: ""
-tags: ["tsql", "hints"]
-pubDate: 2026-05-29
+tags: ["tsql","hints"]
+pubDate: "2026-05-29"
 ---
 
 If any

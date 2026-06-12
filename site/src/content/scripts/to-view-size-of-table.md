@@ -2,9 +2,9 @@
 name: "To View Size of Table"
 title: "To View Size of Table"
 description: "diagnostic script for database operations."
-category: database
-tags: ["database", "table"]
-pubDate: 2025-03-15
+category: "database"
+tags: ["database","table"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

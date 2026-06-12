@@ -1,25 +1,10 @@
 ---
 title: "Troubleshoot extension"
 topic: "azure-synapse"
-description: |
-  Applies to:
-
-  SQL Server
-
-  This article describes ways to identify unhealthy extensions that aren't installed correctly,
-
-  running properly, or not connected to Azure.
-
-  You can use the
-
-  built-in extensio
-tags:
-  - "azure-synapse"
-  - "troubleshoot-extension"
-pubDate: 2025-12-01
+description: "This article describes ways to identify unhealthy extensions that aren't installed correctly, running properly, or not connected to Azure. You can use the built-in extensio"
+tags: ["azure-synapse","troubleshoot-extension"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 This article describes ways to identify unhealthy extensions that aren't installed correctly,
 

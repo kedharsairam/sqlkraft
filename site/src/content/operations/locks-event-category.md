@@ -1,37 +1,16 @@
 ---
 title: "Locks Event Category"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Use the event classes in the
-
-  event category to monitor locki
-tags:
-  - "event-classes"
-  - "locks-event-category"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","locks-event-category"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Use the event classes in the
 

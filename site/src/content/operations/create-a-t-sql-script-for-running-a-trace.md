@@ -1,31 +1,10 @@
 ---
 title: "Create a T-SQL Script for Running a Trace"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article describes how to create a Transact-SQL script from an existing trace file or table by
-
-  using SQL Server Profiler.
-
-  1. Open
-tags:
-  - "profiler"
-  - "create-a-t-sql-script-for-running-a-trace"
-pubDate: 2025-12-01
+description: "06/06/2025 This article describes how to create a Transact-SQL script from an existing trace file or table by using SQL Server Profiler. 1. Open"
+tags: ["profiler","create-a-t-sql-script-for-running-a-trace"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article describes how to create a Transact-SQL script from an existing trace file or table by
 

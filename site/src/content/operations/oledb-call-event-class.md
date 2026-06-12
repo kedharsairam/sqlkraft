@@ -1,43 +1,10 @@
 ---
 title: "OLEDB Call Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs when SQL Server calls an OLE DB provider for distributed
-
-  queries and remote st
-tags:
-  - "event-classes"
-  - "oledb-call-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","oledb-call-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

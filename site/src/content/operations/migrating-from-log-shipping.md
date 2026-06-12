@@ -1,24 +1,9 @@
 ---
 title: "Migrating from log shipping"
 topic: "high-availability"
-description: |
-  Prerequisites to convert log shipping to
-
-  ﾃ
-
-  Summarize this article for me
-
-  Applies to:
-
-  SQL Server
-
-  This article describes the prerequisites for converting a log shipping primary database and one
-
-  or
-tags:
-  - "high-availability"
-  - "migrating-from-log-shipping"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","migrating-from-log-shipping"]
+pubDate: "2025-12-01"
 ---
 
 Prerequisites to convert log shipping to
@@ -26,8 +11,6 @@ Prerequisites to convert log shipping to
 ﾃ
 
 Summarize this article for me
-
-SQL Server
 
 This article describes the prerequisites for converting a log shipping primary database and one
 

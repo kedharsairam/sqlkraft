@@ -1,37 +1,10 @@
 ---
 title: "Display data & log space information for a database"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft
-
-  Fabric
-
-  This article describes how to disp
-tags:
-  - "collation"
-  - "display-data-log-space-information-for-a-database"
-pubDate: 2025-12-01
+description: ""
+tags: ["collation","display-data-log-space-information-for-a-database"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

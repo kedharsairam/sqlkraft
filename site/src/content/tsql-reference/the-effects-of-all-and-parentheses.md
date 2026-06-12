@@ -3,8 +3,8 @@ name: "the effects of ALL and parentheses"
 title: "The effects of ALL and parentheses"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 The following examples use

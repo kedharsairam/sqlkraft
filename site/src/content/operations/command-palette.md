@@ -1,33 +1,10 @@
 ---
 title: "Command Palette"
 topic: "profiler"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  SQL Bindings for Visual Studio Code lets you develop Azure Functions with Azure SQL
-
-  bindings. For mor
-tags:
-  - "profiler"
-  - "command-palette"
-pubDate: 2025-12-01
+description: "SQL Bindings for Visual Studio Code lets you develop Azure Functions with Azure SQL bindings."
+tags: ["profiler","command-palette"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 SQL Bindings for Visual Studio Code lets you develop Azure Functions with Azure SQL
 

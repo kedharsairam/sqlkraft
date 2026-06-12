@@ -1,31 +1,10 @@
 ---
 title: "Data tier applications"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  A data-tier application (DAC) is a logical database entity that defines all of the SQL Server
-tags:
-  - "ssms"
-  - "data-tier-applications"
-pubDate: 2025-12-01
+description: "A data-tier application (DAC) is a logical database entity that defines all of the SQL Server"
+tags: ["ssms","data-tier-applications"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 A data-tier application (DAC) is a logical database entity that defines all of the SQL Server
 

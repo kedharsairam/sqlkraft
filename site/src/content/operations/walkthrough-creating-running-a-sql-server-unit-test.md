@@ -3,18 +3,13 @@ title: "Walkthrough: Creating & Running a SQL Server Unit Test"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  In this walkthrough, you create a SQL Server unit test that verifies the behavior of several
-
-  stored procedures. You create SQL Server unit tests to help identify code defects that might
-
-tags:
-  - "ssb-diagnose"
-  - "walkthrough-creating-running-a-sql-server-unit-test"
-pubDate: 2025-12-01
+  
+    In this walkthrough, you create a SQL Server unit test that verifies the behavior of several
+  
+    stored procedures. You create SQL Server unit tests to help identify code defects that might
+tags: ["ssb-diagnose","walkthrough-creating-running-a-sql-server-unit-test"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 In this walkthrough, you create a SQL Server unit test that verifies the behavior of several
 

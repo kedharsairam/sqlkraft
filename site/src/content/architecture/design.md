@@ -1,29 +1,10 @@
 ---
 title: "Design"
 topic: "clr-integration"
-description: |
-  07/23/2025
-
-  Applies to:
-
-  SQL Server
-
-  This article describes the following factors you should consider when you design assemblies:
-
-  Packaging assemblies
-
-  Managing assembly security
-
-  Restrictions on ass
-tags:
-  - "clr-integration"
-  - "design"
-pubDate: 2025-12-01
+description: ""
+tags: ["clr-integration","design"]
+pubDate: "2025-12-01"
 ---
-
-07/23/2025
-
-SQL Server
 
 This article describes the following factors you should consider when you design assemblies:
 

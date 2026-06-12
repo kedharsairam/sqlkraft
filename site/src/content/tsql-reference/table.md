@@ -3,8 +3,8 @@ name: "table"
 title: "Table"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 You can use

@@ -2,19 +2,9 @@
 title: "Read data pages"
 topic: "query-processing"
 description: ""
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
-
-Article
-
-•
-
-04/01/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The I/O from an instance of the SQL Server Database Engine includes logical and physical
 

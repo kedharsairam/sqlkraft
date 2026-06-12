@@ -2,8 +2,8 @@
 title: "Effects of min memory per query"
 topic: "query-processing"
 description: "### Server configuration: min memory"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 ### Server configuration: min memory
@@ -18,9 +18,7 @@ more information including recommendations on how to set these memory configurat
 
 Server memory configuration options.
 
-The following list describes the approximate amount of memory used by different objects in
-
-SQL Server. The amounts listed are estimates and can vary depending on the environment and
+The following list describes the approximate amount of memory used by different objects in. The amounts listed are estimates and can vary depending on the environment and
 
 how objects are created:
 

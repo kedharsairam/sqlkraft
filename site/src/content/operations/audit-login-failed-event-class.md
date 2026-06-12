@@ -1,35 +1,14 @@
 ---
 title: "Audit Login Failed Event Class"
 topic: "event-classes"
-description: |
-  ﾃ
-
-  Summarize this article for me
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class indicates that a user tried to sign in to Microsoft SQL Server
-
-  and failed. Events in this class
-tags:
-  - "event-classes"
-  - "audit-login-failed-event-class"
-pubDate: 2025-12-01
+description: "ﾃ Summarize this article for me The event class indicates that a user tried to sign in to Microsoft SQL Server and failed."
+tags: ["event-classes","audit-login-failed-event-class"]
+pubDate: "2025-12-01"
 ---
 
 ﾃ
 
 Summarize this article for me
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The
 

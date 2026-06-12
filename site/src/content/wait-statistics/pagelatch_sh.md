@@ -1,11 +1,11 @@
 ---
-name: PAGELATCH_SH
+name: "PAGELATCH_SH"
 title: "Page Latch (Shared) Wait"
-category: memory
-severity: medium
+category: "memory"
+severity: "medium"
 description: "Occurs when waiting for a shared latch on a buffer pool page already in memory. Usually transient; high values indicate contention on frequently read pages (e.g., table metadata or sys.sysschobjs)."
-tags: ["latch", "page", "shared"]
-pubDate: 2026-05-29
+tags: ["latch","page","shared"]
+pubDate: "2026-05-29"
 relatedScripts: ["diagnose-page-latch-contention"]
 ---
 

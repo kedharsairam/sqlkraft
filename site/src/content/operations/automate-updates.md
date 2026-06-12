@@ -1,23 +1,10 @@
 ---
 title: "Automate updates"
 topic: "azure-synapse"
-description: |
-  Applies to:
-
-  SQL Server
-
-  You can configure automatic updates for SQL Server enabled by Azure Arc. Automatic updates:
-
-  Establish a maintenance window for an Azure Arc-enabled SQL Server instance.
-
-  Work
-tags:
-  - "azure-synapse"
-  - "automate-updates"
-pubDate: 2025-12-01
+description: "You can configure automatic updates for SQL Server enabled by Azure Arc. Automatic updates: Establish a maintenance window for an Azure Arc-enabled SQL Server instance. Work"
+tags: ["azure-synapse","automate-updates"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 You can configure automatic updates for SQL Server enabled by Azure Arc. Automatic updates:
 

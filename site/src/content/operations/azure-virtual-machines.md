@@ -1,23 +1,9 @@
 ---
 title: "Azure virtual machines >"
 topic: "high-availability"
-description: |
-  Applies to:
-
-  SQL Server on Azure VM
-
-  This article introduces Always On availability groups (AG) for SQL Server on Azure Virtual
-
-  Machines (VMs).
-
-  To get started, see the
-
-  Availability group tutorial
-
-tags:
-  - "high-availability"
-  - "azure-virtual-machines"
-pubDate: 2025-12-01
+description: "on Azure VM This article introduces Always On availability groups (AG) for SQL Server on Azure Virtual Machines (VMs). To get started, see the Availability group tutorial"
+tags: ["high-availability","azure-virtual-machines"]
+pubDate: "2025-12-01"
 ---
 
 on Azure VM

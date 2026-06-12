@@ -1,31 +1,10 @@
 ---
 title: "Described"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  An index is an on-disk structure associated with a table or view that speeds retrieval of row
-tags:
-  - "filestream"
-  - "described"
-pubDate: 2025-12-01
+description: ""
+tags: ["filestream","described"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 An index is an on-disk structure associated with a table or view that speeds retrieval of rows
 

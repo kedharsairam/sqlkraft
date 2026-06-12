@@ -1,32 +1,10 @@
 ---
 title: "Of a nonclustered index"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Follow these steps to estimate the amount of space that is required to store a nonclustered
-
-tags:
-  - "collation"
-  - "of-a-nonclustered-index"
-pubDate: 2025-12-01
+description: "Follow these steps to estimate the amount of space that is required to store a nonclustered"
+tags: ["collation","of-a-nonclustered-index"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Follow these steps to estimate the amount of space that is required to store a nonclustered
 

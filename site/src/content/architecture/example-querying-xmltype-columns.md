@@ -1,35 +1,10 @@
 ---
 title: "Example: Querying XMLType Columns"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The following query includes columns of
-
-  type. The query retrieves product model ID,
-
-  name, a
-tags:
-  - "xml-data"
-  - "example-querying-xmltype-columns"
-pubDate: 2025-12-01
+description: "The following query includes columns of type. The query retrieves product model ID, name, a"
+tags: ["xml-data","example-querying-xmltype-columns"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The following query includes columns of
 

@@ -1,22 +1,9 @@
 ---
 title: "Back up to URL with managed identity"
 topic: "azure-synapse"
-description: |
-  SQL Server enabled by Azure Arc
-
-  Applies to:
-
-  SQL Server 2025 (17.x)
-
-  This article describes how to use a managed identity to back up and restore databases with
-
-  Azure Blob storage using
-
-  SQL Server e
-tags:
-  - "azure-synapse"
-  - "back-up-to-url-with-managed-identity"
-pubDate: 2025-12-01
+description: "enabled by Azure Arc SQL Server 2025 (17.x) This article describes how to use a managed identity to back up and restore databases with Azure Blob storage using SQL Server e"
+tags: ["azure-synapse","back-up-to-url-with-managed-identity"]
+pubDate: "2025-12-01"
 ---
 
 enabled by Azure Arc

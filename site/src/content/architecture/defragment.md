@@ -1,35 +1,12 @@
 ---
 title: "Defragment"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft Fabric
-
-  This article helps you decide when and how to perform index
-tags:
-  - "filestream"
-  - "defragment"
-pubDate: 2025-12-01
+description: ""
+tags: ["filestream","defragment"]
+pubDate: "2025-12-01"
 ---
 
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
 Analytics Platform System (PDW)
-
-SQL database in Microsoft Fabric
 
 This article helps you decide when and how to perform index maintenance. It covers concepts
 

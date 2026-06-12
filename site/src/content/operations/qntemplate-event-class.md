@@ -1,33 +1,10 @@
 ---
 title: "QN:Template Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The QN:Template event reports information on the internal use of query templates. Query
-
-  temp
-tags:
-  - "event-classes"
-  - "qntemplate-event-class"
-pubDate: 2025-12-01
+description: "The QN:Template event reports information on the internal use of query templates."
+tags: ["event-classes","qntemplate-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The QN:Template event reports information on the internal use of query templates. Query
 

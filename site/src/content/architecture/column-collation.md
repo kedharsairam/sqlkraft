@@ -1,45 +1,10 @@
 ---
 title: "Column Collation"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  You can override the database collation for
-
-  ,
-
-  ,
-
-  ,
-
-  ,
-
-  , and
-
-  data
-
-  by specifying a differe
-tags:
-  - "collation"
-  - "column-collation"
-pubDate: 2025-12-01
+description: "You can override the database collation for , , , , , and data by specifying a differe"
+tags: ["collation","column-collation"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 You can override the database collation for
 

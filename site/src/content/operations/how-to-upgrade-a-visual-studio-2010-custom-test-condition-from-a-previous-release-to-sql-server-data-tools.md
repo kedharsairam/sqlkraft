@@ -3,25 +3,21 @@ title: "How to: Upgrade a Visual Studio 2010 Custom Test Condition from a Previo
 topic: "data-tools"
 description: |
   09/10/2025
-
-  To use a test unit condition that you created in a version before SQL Server Data Tools, you
-
-  must upgrade it.
-
-  To update the project references:
-
-  1. For Visual Basic only, in
-
-  , select
-
-  .
-tags:
-  - "data-tools"
-  - "how-to-upgrade-a-visual-studio-2010-custom-test-condition-from-a-previous-release-to-sql-server-data-tools"
-pubDate: 2025-12-01
+  
+    To use a test unit condition that you created in a version before SQL Server Data Tools, you
+  
+    must upgrade it.
+  
+    To update the project references:
+  
+    1. For Visual Basic only, in
+  
+    , select
+  
+    .
+tags: ["data-tools","how-to-upgrade-a-visual-studio-2010-custom-test-condition-from-a-previous-release-to-sql-server-data-tools"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 To use a test unit condition that you created in a version before SQL Server Data Tools, you
 

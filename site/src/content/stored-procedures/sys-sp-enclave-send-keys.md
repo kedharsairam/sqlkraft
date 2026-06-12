@@ -4,10 +4,10 @@ title: "sp_enclave_send_keys"
 category: "general"
 description: "2019 (15.x) and later - Windows only Sends columns encryption keys, defined in the database, to the server-side secure enclave used Always Encrypted with secure enclaves only sends only the keys that are enclave-enabled and encrypt columns that use randomized encryption and have indexes. For a regular user query, a client driver provides the enclave with the keys needed for computations"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_enclave_send_keys
-  [ ; ]
+      [ ; ]
 ---
 
 ## Description

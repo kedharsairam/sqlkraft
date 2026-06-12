@@ -1,37 +1,10 @@
 ---
 title: "Write International T-SQL Statements"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft
-
-  Fabric
-
-  Databases and database application
-tags:
-  - "collation"
-  - "write-international-t-sql-statements"
-pubDate: 2025-12-01
+description: "Databases and database application"
+tags: ["collation","write-international-t-sql-statements"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

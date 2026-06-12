@@ -2,9 +2,9 @@
 name: "To View list of Logins in Instance"
 title: "To View list of Logins in Instance"
 description: "diagnostic script for security-audit operations."
-category: security-audit
-tags: ["login", "security-audit"]
-pubDate: 2025-03-15
+category: "security-audit"
+tags: ["login","security-audit"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

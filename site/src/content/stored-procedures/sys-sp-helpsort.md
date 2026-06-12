@@ -4,10 +4,10 @@ title: "sp_helpsort"
 category: "general"
 description: "Displays the sort order and character set for the instance of SQL Server. Returns server default collation. If an instance of SQL Server is installed with a collation specified to be compatible with an earlier installation of SQL Server, returns blank results."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   SELECT
-  SERVERPROPERTY ('Collation');
+      SERVERPROPERTY ('Collation');
 ---
 
 ## Description

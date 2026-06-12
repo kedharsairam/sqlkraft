@@ -1,33 +1,10 @@
 ---
 title: "User-defined functions"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  User-defined functions are routines that can take parameters, perform calculations or other
-
-  actions, and return a result. You can write user-defined f
-tags:
-  - "clr-integration"
-  - "user-defined-functions"
-pubDate: 2025-12-01
+description: "User-defined functions are routines that can take parameters, perform calculations or other actions, and return a result. You can write user-defined f"
+tags: ["clr-integration","user-defined-functions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 User-defined functions are routines that can take parameters, perform calculations or other
 

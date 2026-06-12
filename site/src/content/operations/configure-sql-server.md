@@ -1,21 +1,10 @@
 ---
 title: "Configure SQL Server"
 topic: "azure-synapse"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Each Azure Arc-enabled server includes a set of properties that apply to all SQL Server
-
-  instances installed on that server. You can configure these properties after Azure Ext
-tags:
-  - "azure-synapse"
-  - "configure-sql-server"
-pubDate: 2025-12-01
+description: "Each Azure Arc-enabled server includes a set of properties that apply to all SQL Server instances installed on that server. You can configure these properties after Azure Ext"
+tags: ["azure-synapse","configure-sql-server"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 Each Azure Arc-enabled server includes a set of properties that apply to all SQL Server
 

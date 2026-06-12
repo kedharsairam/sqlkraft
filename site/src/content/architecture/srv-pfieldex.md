@@ -1,35 +1,10 @@
 ---
 title: "srv_pfieldex"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Returns a pointer to data containing the requested SRV_PROC field.
-
-  srvproc
-
-  Is a pointer to the SRV_PROC structure that is the handle for a particular
-tags:
-  - "clr-integration"
-  - "srv-pfieldex"
-pubDate: 2025-12-01
+description: "Returns a pointer to data containing the requested SRV_PROC field. srvproc Is a pointer to the SRV_PROC structure that is the handle for a particular"
+tags: ["clr-integration","srv-pfieldex"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Returns a pointer to data containing the requested SRV_PROC field.
 

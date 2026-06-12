@@ -3,17 +3,9 @@ name: "Collation labels"
 title: "Collation labels"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -22,8 +14,6 @@ SQL analytics endpoint in
 Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Collation precedence, also known as collation coercion rules, determines the following two
 

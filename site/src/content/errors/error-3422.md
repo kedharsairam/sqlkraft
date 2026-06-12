@@ -1,12 +1,12 @@
 ---
-name: "3422"
+name: 3422
 title: "Error 3422"
 errorNumber: 3422
 severity: "medium"
 category: "io"
 description: "In certain situations SQL Server attempts to restart the database at runtime and perform recovery, or it may restart itself (the entire service)."
-tags: ["io", "severity-medium"]
-pubDate: 2026-05-29
+tags: ["io","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

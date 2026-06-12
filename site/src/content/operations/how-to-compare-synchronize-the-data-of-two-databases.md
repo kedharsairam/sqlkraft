@@ -3,29 +3,25 @@ title: "How to: Compare & Synchronize the Data of Two Databases"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  You can compare the data that is contained in two databases. The databases that you compare
-
-  are known as the
-
-  source
-
-  and the
-
-  target
-
-  .
-
-  As the data is compared, a
-
-  Data Manipulation Lan
-tags:
-  - "ssb-diagnose"
-  - "how-to-compare-synchronize-the-data-of-two-databases"
-pubDate: 2025-12-01
+  
+    You can compare the data that is contained in two databases. The databases that you compare
+  
+    are known as the
+  
+    source
+  
+    and the
+  
+    target
+  
+    .
+  
+    As the data is compared, a
+  
+    Data Manipulation Lan
+tags: ["ssb-diagnose","how-to-compare-synchronize-the-data-of-two-databases"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 You can compare the data that is contained in two databases. The databases that you compare
 
@@ -68,8 +64,6 @@ reference database.
 1. From the main menu, go to
 
 >
-
-SQL Server
 
 >.
 

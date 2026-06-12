@@ -1,35 +1,12 @@
 ---
 title: "Endpoints"
 topic: "high-availability"
-description: |
-  08/29/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  Azure SQL Managed Instance
-
-  To participate in Always On availability groups or database mirroring a server instance requires
-
-  its own, dedicated
-
-  d
-tags:
-  - "high-availability"
-  - "endpoints"
-pubDate: 2025-12-01
+description: "08/29/2025 - Windows only To participate in Always On availability groups or database mirroring a server instance requires its own, dedicated d"
+tags: ["high-availability","endpoints"]
+pubDate: "2025-12-01"
 ---
 
-08/29/2025
-
-SQL Server
-
 - Windows only
-
-Azure SQL Managed Instance
 
 To participate in Always On availability groups or database mirroring a server instance requires
 

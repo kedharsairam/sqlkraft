@@ -1,35 +1,16 @@
 ---
 title: "Consistency checks"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  With temporal tables, the system performs several consistency
-tags:
-  - "tables"
-  - "consistency-checks"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later versions Azure SQL Managed Instance With temporal tables, the system performs several consistency"
+tags: ["tables","consistency-checks"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 With temporal tables, the system performs several consistency checks to ensure the schema
 

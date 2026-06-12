@@ -1,12 +1,12 @@
 ---
-name: "3314"
+name: 3314
 title: "Error 3314"
 errorNumber: 3314
 severity: "medium"
 category: "io"
 description: "This error can be caused by a transient condition that existed on the system during an attempt to recover a database."
-tags: ["io", "severity-medium"]
-pubDate: 2026-05-29
+tags: ["io","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

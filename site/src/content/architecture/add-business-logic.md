@@ -1,37 +1,10 @@
 ---
 title: "Add Business Logic"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Your business logic can be added to XML data in several ways:
-
-  You can write row or column constraints to enforce domain-specific c
-tags:
-  - "xml-data"
-  - "add-business-logic"
-pubDate: 2025-12-01
+description: "Your business logic can be added to XML data in several ways: You can write row or column constraints to enforce domain-specific c"
+tags: ["xml-data","add-business-logic"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
 
 Your business logic can be added to XML data in several ways:
 

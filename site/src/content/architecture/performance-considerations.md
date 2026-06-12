@@ -1,37 +1,12 @@
 ---
 title: "Performance considerations"
 topic: "tables"
-description: |
-  Article
-
-  •
-
-  02/04/2025
-
-  Applies to:
-
-  SQL Server 2016 (13.x) and later
-
-  Azure SQL Managed Instance
-
-  This article discusses some specific performance considerations when using system-versioned
-
-  memory-o
-tags:
-  - "tables"
-  - "performance-considerations"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later This article discusses some specific performance considerations when using system-versioned memory-o"
+tags: ["tables","performance-considerations"]
+pubDate: "2025-12-01"
 ---
 
-Article
-
-•
-
-02/04/2025
-
 2016 (13.x) and later
-
-Azure SQL Managed Instance
 
 This article discusses some specific performance considerations when using system-versioned
 

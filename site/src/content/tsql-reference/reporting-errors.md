@@ -3,17 +3,9 @@ name: "Reporting errors"
 title: "Reporting errors"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
-
-10/14/2025
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This article describes guidelines for using the
 

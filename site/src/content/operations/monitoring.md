@@ -1,36 +1,10 @@
 ---
 title: "Monitoring"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  This section introduces Database Mirroring Monitor and the
-
-  system stored
-
-  procedures, explains how database mirroring monitoring works (including the
-
-tags:
-  - "high-availability"
-  - "monitoring"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","monitoring"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 This section introduces Database Mirroring Monitor and the
 

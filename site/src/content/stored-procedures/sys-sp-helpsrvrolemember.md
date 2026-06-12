@@ -4,13 +4,13 @@ title: "sp_helpsrvrolemember"
 category: "general"
 description: "Returns information about the members of a SQL Server fixed server role."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_helpsrvrolemember [ [ @srvrolename = ]
-  N
-  'srvrolename'
-  ]
-  [ ; ]
+      N
+      'srvrolename'
+      ]
+      [ ; ]
 ---
 
 ## Description

@@ -1,37 +1,10 @@
 ---
 title: "Performance Event Category"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Use the
-
-  event category to monitor
-
-  event classes and event classes that
-
-  are produced from t
-tags:
-  - "event-classes"
-  - "performance-event-category"
-pubDate: 2025-12-01
+description: "Use the event category to monitor event classes and event classes that are produced from t"
+tags: ["event-classes","performance-event-category"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Use the
 

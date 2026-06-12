@@ -3,8 +3,8 @@ name: "Deprecation notice"
 title: "Deprecation notice"
 category: "statements"
 description: "In some cases, a user can use a database without having a database user account (a database"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 In some cases, a user can use a database without having a database user account (a database

@@ -2,8 +2,8 @@
 title: "Distributed query architecture"
 topic: "query-processing"
 description: "operations, where each key range is estimated to cover similar numbers of rows. For"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 operations, where each key range is estimated to cover similar numbers of rows. For

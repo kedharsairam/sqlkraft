@@ -3,8 +3,8 @@ name: "sys.trigger_event_types"
 title: "sys.trigger_event_types"
 category: "compatibility"
 description: "Returns a row for each event or event group on which a trigger can fire. Type of event or event group that causes a trigger to fire."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

@@ -2,8 +2,8 @@
 title: "Options and workarounds"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 In the previous example, the most interesting stacks have the highest slot counts (35,668 and

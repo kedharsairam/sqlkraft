@@ -1,33 +1,10 @@
 ---
 title: "Specify a server network address"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  Setting up a database mirroring session requires a server network address for each of the
-
-  server instances. The server network address of a server ins
-tags:
-  - "high-availability"
-  - "specify-a-server-network-address"
-pubDate: 2025-12-01
+description: "Setting up a database mirroring session requires a server network address for each of the server instances."
+tags: ["high-availability","specify-a-server-network-address"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 Setting up a database mirroring session requires a server network address for each of the
 

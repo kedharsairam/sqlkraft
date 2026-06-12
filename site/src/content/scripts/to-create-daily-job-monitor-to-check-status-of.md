@@ -2,9 +2,9 @@
 name: "To Create Daily Job Monitor to Check Status of"
 title: "To Create Daily Job Monitor to Check Status of"
 description: "diagnostic script for automation operations."
-category: automation
-tags: ["agent-job", "automation", "health-check", "monitoring"]
-pubDate: 2025-03-15
+category: "automation"
+tags: ["agent-job","automation","health-check","monitoring"]
+pubDate: "2025-03-15"
 ---
 
 ```sql
@@ -48,7 +48,7 @@ SELECT
  , 6, 0, ':')
  AS [LASTRUNDURATION],-- (HH:MM:SS)],
  -- [SJOBH].[MESSAGE] AS [LASTRUNSTATUSMESSAGE],
-	CASE WHEN ENABLED = 1 THEN 'ENABLED' ELSE 'DISABLED' END AS [JOBSTATUS]
+  CASE WHEN ENABLED = 1 THEN 'ENABLED' ELSE 'DISABLED' END AS [JOBSTATUS]
  , CASE [SJOBSCH].[NEXTRUNDATE]
  WHEN 0 THEN NULL
  ELSE CAST(
@@ -60,7 +60,7 @@ SELECT
  , 6, 0, ':')
  AS DATETIME)
  END AS [NEXTRUNDATETIME]
-	 --DROP TABLE #AGENT_JOBSTAUS
+   --DROP TABLE #AGENT_JOBSTAUS
  INTO #AGENT_JOBSTAUS
 FROM
  [MSDB].[DBO].[SYSJOBS] AS [SJOB]
@@ -173,7 +173,7 @@ PRINT @HTML
 
 IF EXISTS(SELECT TOP 1 * FROM #AGENT_JOBSTAUS)
 
-	--SET @CC = 'MUSCICANDR@GMAIL.COM;MUSICNADR@GMAIL.COM'
+  --SET @CC = 'MUSCICANDR@GMAIL.COM;MUSICNADR@GMAIL.COM'
 
 EXEC MSDB.DBO.SP_SEND_DBMAIL @PROFILE_NAME = 'OUTLOOK'
 ,@RECIPIENTS = 'MUSICANDR@GMAIL.COM'

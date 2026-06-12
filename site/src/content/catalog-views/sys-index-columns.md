@@ -3,8 +3,8 @@ name: "sys.index_columns"
 title: "sys.index_columns"
 category: "objects"
 description: "Contains one row per column that is part of an index or unordered table (heap)."
-tags: ["objects", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["objects","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "data_clustering_ordinal"
 ---
 
@@ -17,8 +17,6 @@ Analytics Platform System (PDW) Contains one row per column that is part of an i
 `data_clustering_ordinal`
 
 ## Arguments
-
-Azure SQL Managed Instance
 
 Returns information about the index key. Returns NULL for XML indexes.
 

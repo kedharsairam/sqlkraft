@@ -4,10 +4,10 @@ title: "sp_validatelogins"
 category: "general"
 description: "Reports information about Windows users and groups that are mapped to SQL Server principals but no longer exist in the Windows environment. Windows security identifier (SID) of the Windows user or group."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_validatelogins
-  [ ; ]
+      [ ; ]
 ---
 
 ## Description

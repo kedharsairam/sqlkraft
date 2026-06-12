@@ -2,8 +2,8 @@
 title: "Reduce locking and lock escalation"
 topic: "locking"
 description: ") locks on the clustered index pages containing those rows."
-tags: ["locking", "architecture"]
-pubDate: 2026-05-29
+tags: ["locking","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Intent exclusive (

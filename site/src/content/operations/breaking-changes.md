@@ -1,33 +1,10 @@
 ---
 title: "Breaking changes"
 topic: "migration"
-description: |
-  Article
-
-  •
-
-  09/27/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes breaking changes in SQL Server Replication. These changes might break
-
-  applications, scripts, or functionalities that are based on
-tags:
-  - "migration"
-  - "breaking-changes"
-pubDate: 2025-12-01
+description: "This topic describes breaking changes in SQL Server Replication."
+tags: ["migration","breaking-changes"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/27/2024
-
-SQL Server
 
 This topic describes breaking changes in SQL Server Replication. These changes might break
 

@@ -1,41 +1,10 @@
 ---
 title: "Shrink a database"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  01/22/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  This article describes how to shrink a database in SQL Server by using Object Explorer in SQL
-
-  Server M
-tags:
-  - "collation"
-  - "shrink-a-database"
-pubDate: 2025-12-01
+description: "This article describes how to shrink a database in SQL Server by using Object Explorer in SQL Server M"
+tags: ["collation","shrink-a-database"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-01/22/2024
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This article describes how to shrink a database in SQL Server by using Object Explorer in SQL
 

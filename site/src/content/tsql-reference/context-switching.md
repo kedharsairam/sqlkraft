@@ -3,8 +3,8 @@ name: "Context switching"
 title: "Context switching"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Specify a user or login name

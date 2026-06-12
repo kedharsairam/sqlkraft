@@ -2,8 +2,8 @@
 title: "Constant folding and expression evaluation"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The basic steps that SQL Server uses to process a single SELECT statement include the

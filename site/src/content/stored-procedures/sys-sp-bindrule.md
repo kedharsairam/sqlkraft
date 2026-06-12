@@ -4,19 +4,19 @@ title: "sp_bindrule"
 category: "general"
 description: "condition_expression Is the condition or conditions that define the rule. A rule can be any expression valid in a WHERE clause and can include elements such as arithmetic operators, relational operators, and predicates (for example, IN, LIKE, BETWEEN). A rule cannot reference columns or other database objects. Built-in functions that do not reference database objects can be included. User-defined"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_bindrule
-  [ @rulename = ]
-  N
-  'rulename'
-  , [ @objname = ]
-  N
-  'objname'
-  [ , [ @futureonly = ]
-  'futureonly'
-  ]
-  [ ; ]
+      [ @rulename = ]
+      N
+      'rulename'
+      , [ @objname = ]
+      N
+      'objname'
+      [ , [ @futureonly = ]
+      'futureonly'
+      ]
+      [ ; ]
 ---
 
 ## Description

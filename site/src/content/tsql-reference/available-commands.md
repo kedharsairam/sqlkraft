@@ -3,19 +3,9 @@ name: "Available commands"
 title: "Available commands"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
-
-Article
-
-•
-
-12/06/2022
-
-SQL Server
-
-Azure SQL Managed Instance
 
 provides the following management commands.
 

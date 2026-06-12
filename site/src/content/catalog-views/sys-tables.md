@@ -3,26 +3,20 @@ name: "sys.tables"
 title: "sys.tables"
 category: "objects"
 description: "SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Catalog views return information that is used by the SQL Server Database Engine."
-tags: ["objects", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["objects","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "filestream_data_space_id"
 ---
 
 ## Description
 
-Analytics Platform System (PDW) SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric Catalog views return information that is used by the SQL Server Database Engine. We recommend that you use catalog views because they are the most general interface to the catalog metadata, and provide the most efficient way to obtain, transform, and present customized forms of this information. All user-available catalog metadata is exposed through Some catalog views inherit rows from other catalog views. For example, the view inherits from the catalog view. The catalog view is referred to as the base view, and the view is called the derived view.
+Analytics Platform System (PDW) SQL database in Microsoft Fabric Catalog views return information that is used by the SQL Server Database Engine. We recommend that you use catalog views because they are the most general interface to the catalog metadata, and provide the most efficient way to obtain, transform, and present customized forms of this information. All user-available catalog metadata is exposed through Some catalog views inherit rows from other catalog views. For example, the view inherits from the catalog view. The catalog view is referred to as the base view, and the view is called the derived view.
 
 ## Syntax
 
 `filestream_data_space_id`
 
 ## Remarks
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -31,8 +25,6 @@ SQL analytics endpoint in
 Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Catalog views return information that is used by the SQL Server Database Engine. We
 

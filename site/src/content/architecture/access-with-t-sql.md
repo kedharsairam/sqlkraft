@@ -1,37 +1,10 @@
 ---
 title: "Access with T-SQL"
 topic: "filestream"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Describes how Transact-SQL data manipulation language (DML) commands work with
-
-  FileTables.
-
-  The following considerations apply to
-
-  Operations on FileT
-tags:
-  - "filestream"
-  - "access-with-t-sql"
-pubDate: 2025-12-01
+description: "Describes how Transact-SQL data manipulation language (DML) commands work with FileTables. The following considerations apply to Operations on FileT"
+tags: ["filestream","access-with-t-sql"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Describes how Transact-SQL data manipulation language (DML) commands work with
 

@@ -1,35 +1,16 @@
 ---
 title: "Column Sets"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure SQL Managed
-
-  Instance
-
-  SQL database in Microsoft Fabric
-
-  Tables that use sparse columns can designate a column set to
-tags:
-  - "tables"
-  - "column-sets"
-pubDate: 2025-12-01
+description: ""
+tags: ["tables","column-sets"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure SQL Managed
 
 Instance
-
-SQL database in Microsoft Fabric
 
 Tables that use sparse columns can designate a column set to return all sparse columns in the table. A column
 

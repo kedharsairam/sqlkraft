@@ -1,41 +1,10 @@
 ---
 title: "Some availability replicas are disconnected"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  11/25/2024
-
-  Applies to:
-
-  SQL Server
-
-  : Availability Replicas Connection State
-
-  : Some availability replicas are disconnected.
-
-  :
-
-  Warning
-
-  : Availability group
-
-  This policy rolls up the co
-tags:
-  - "high-availability"
-  - "some-availability-replicas-are-disconnected"
-pubDate: 2025-12-01
+description: ": Availability Replicas Connection State : Some availability replicas are disconnected."
+tags: ["high-availability","some-availability-replicas-are-disconnected"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-11/25/2024
-
-SQL Server
 
 : Availability Replicas Connection State
 

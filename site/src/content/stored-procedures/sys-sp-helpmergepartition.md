@@ -4,21 +4,21 @@ title: "sp_helpmergepartition"
 category: "general"
 description: "Returns partition information for the specified merge publication. This stored procedure is executed at the Publisher on any database. value used to define a partition. Supply this parameter to limit the result set to only partitions where resolves to the supplied value. value used to define a partition."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_helpmergepartition
-  [ @publication = ]
-  N
-  'publication'
-  [ , [ @suser_sname = ]
-  N
-  'suser_sname'
-  ]
-  [ , [ @host_name = ]
-  N
-  'host_name'
-  ]
-  [ ; ]
+      [ @publication = ]
+      N
+      'publication'
+      [ , [ @suser_sname = ]
+      N
+      'suser_sname'
+      ]
+      [ , [ @host_name = ]
+      N
+      'host_name'
+      ]
+      [ ; ]
 ---
 
 ## Description

@@ -4,20 +4,20 @@ title: "sp_revoke_publication_access"
 category: "general"
 description: "Removes the login from a publications access list. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_revoke_publication_access
-  [ @publication = ]
-  N
-  'publication'
-  , [ @login = ]
-  N
-  'login'
-  [ , [ @publisher = ]
-  N
-  'publisher'
-  ]
-  [ ; ]
+      [ @publication = ]
+      N
+      'publication'
+      , [ @login = ]
+      N
+      'login'
+      [ , [ @publisher = ]
+      N
+      'publisher'
+      ]
+      [ ; ]
 ---
 
 ## Description

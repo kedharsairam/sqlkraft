@@ -1,31 +1,10 @@
 ---
 title: "Designing and Implementing (Service Broker)"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This section provides high-level information that can help when you design and implement
-
-  your Service Broker applications.
-
-  Descriptio
-tags:
-  - "service-broker"
-  - "designing-and-implementing-service-broker"
-pubDate: 2025-12-01
+description: "09/11/2025 This section provides high-level information that can help when you design and implement your Service Broker applications. Descriptio"
+tags: ["service-broker","designing-and-implementing-service-broker"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This section provides high-level information that can help when you design and implement
 

@@ -2,9 +2,9 @@
 name: "To Resolve Master Corruption"
 title: "To Resolve Master Corruption"
 description: "Master is the most crucial database in an instance, if it is corrupt entire instance gets affected."
-category: backup-restore
+category: "backup-restore"
 tags: ["backup-restore"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

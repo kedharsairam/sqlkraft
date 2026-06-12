@@ -1,35 +1,12 @@
 ---
 title: "Package references"
 topic: "ssms"
-description: |
-  SQL projects package references
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Package references in SQL projects allow you to reference da
-tags:
-  - "ssms"
-  - "package-references"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssms","package-references"]
+pubDate: "2025-12-01"
 ---
 
 SQL projects package references
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Package references in SQL projects allow you to reference database objects from other projects
 

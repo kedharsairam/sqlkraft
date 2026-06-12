@@ -1,33 +1,10 @@
 ---
 title: "Read-scale only"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  10/20/2023
-
-  Applies to:
-
-  SQL Server
-
-  An availability group is a comprehensive solution that brings high-availability capabilities to
-
-  SQL Server and offers integrated scaling solutions as
-tags:
-  - "high-availability"
-  - "read-scale-only"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","read-scale-only"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-10/20/2023
-
-SQL Server
 
 An availability group is a comprehensive solution that brings high-availability capabilities to
 

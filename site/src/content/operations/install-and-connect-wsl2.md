@@ -1,27 +1,12 @@
 ---
 title: "Install and connect (WSL2)"
 topic: "linux-operations"
-description: |
-  Quickstart: Install SQL Server and create a
-
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  Use the Windows Subsystem for Linux (WSL) to run a Linux environment directly on your
-
-  Windows machine, without the need
-tags:
-  - "linux-operations"
-  - "install-and-connect-wsl2"
-pubDate: 2025-12-01
+description: ""
+tags: ["linux-operations","install-and-connect-wsl2"]
+pubDate: "2025-12-01"
 ---
 
 Quickstart: Install SQL Server and create a
-
-SQL Server
 
 on Linux
 

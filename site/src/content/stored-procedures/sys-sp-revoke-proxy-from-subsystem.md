@@ -4,20 +4,20 @@ title: "sp_revoke_proxy_from_subsystem"
 category: "general"
 description: "Revokes access to a subsystem from a proxy. The proxy identification number of the proxy to revoke access from. must be specified, but both can't be specified."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_revoke_proxy_from_subsystem
-  [ [ @proxy_id = ] proxy_id ]
-  [ , [ @proxy_name = ]
-  N
-  'proxy_name'
-  ]
-  [ , [ @subsystem_id = ] subsystem_id ]
-  [ , [ @subsystem_name = ]
-  N
-  'subsystem_name'
-  ]
-  [ ; ]
+      [ [ @proxy_id = ] proxy_id ]
+      [ , [ @proxy_name = ]
+      N
+      'proxy_name'
+      ]
+      [ , [ @subsystem_id = ] subsystem_id ]
+      [ , [ @subsystem_name = ]
+      N
+      'subsystem_name'
+      ]
+      [ ; ]
 ---
 
 ## Description

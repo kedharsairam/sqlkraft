@@ -4,19 +4,9 @@ title: "XQuery - Functions on String Values - substring"
 category: "xquery"
 description: "XQuery Language Reference: Functions on String Values - substring"
 syntax: "$sourceString"
-tags:
-  - "xquery"
-  - "functions-on-string-values-substring"
-pubDate: 2025-12-01
+tags: ["xquery","functions-on-string-values-substring"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Returns part of the value of
 

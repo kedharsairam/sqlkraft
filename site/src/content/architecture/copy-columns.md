@@ -1,43 +1,18 @@
 ---
 title: "Copy Columns"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft Fabric
-
-  Thi
-tags:
-  - "tables"
-  - "copy-columns"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later versions Azure SQL Managed Instance Thi"
+tags: ["tables","copy-columns"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
-
-Azure SQL Database
 
 Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
-
-SQL database in Microsoft Fabric
 
 This topic describes how to copy columns from one table to another, copying either just the
 

@@ -1,35 +1,10 @@
 ---
 title: "Configure advanced data Security"
 topic: "azure-synapse"
-description: |
-  Article
-
-  •
-
-  04/25/2025
-
-  Applies to:
-
-  SQL Server
-
-  You can configure your instance of SQL Server enabled by Azure Arc with Microsoft Defender
-
-  for Cloud by following these steps.
-
-  Your Windows-based SQL
-tags:
-  - "azure-synapse"
-  - "configure-advanced-data-security"
-pubDate: 2025-12-01
+description: "You can configure your instance of SQL Server enabled by Azure Arc with Microsoft Defender for Cloud by following these steps. Your Windows-based SQL"
+tags: ["azure-synapse","configure-advanced-data-security"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/25/2025
-
-SQL Server
 
 You can configure your instance of SQL Server enabled by Azure Arc with Microsoft Defender
 

@@ -1,39 +1,10 @@
 ---
 title: "srv_paramlen"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Returns the data length of a remote stored procedure call parameter. This function has been
-
-  superseded by the
-
-  function.
-
-  srvproc
-
-  Is a pointer to the
-tags:
-  - "clr-integration"
-  - "srv-paramlen"
-pubDate: 2025-12-01
+description: "Returns the data length of a remote stored procedure call parameter. This function has been superseded by the function."
+tags: ["clr-integration","srv-paramlen"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Returns the data length of a remote stored procedure call parameter. This function has been
 

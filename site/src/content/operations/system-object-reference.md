@@ -1,33 +1,10 @@
 ---
 title: "System object reference"
 topic: "azure-synapse"
-description: |
-  Applies to:
-
-  SQL Server
-
-  This article lists system objects that Azure extension for SQL Server deploys and manages. They
-
-  include:
-
-  Files
-
-  Registry keys
-
-  Windows services
-
-  Tables
-
-  Description
-
-  CLI and
-tags:
-  - "azure-synapse"
-  - "system-object-reference"
-pubDate: 2025-12-01
+description: "This article lists system objects that Azure extension for SQL Server deploys and manages."
+tags: ["azure-synapse","system-object-reference"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 This article lists system objects that Azure extension for SQL Server deploys and manages. They
 

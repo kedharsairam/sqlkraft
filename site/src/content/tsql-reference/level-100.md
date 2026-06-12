@@ -3,8 +3,8 @@ name: "level 100"
 title: "Level 100"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 same ordinal position in the select list) must be

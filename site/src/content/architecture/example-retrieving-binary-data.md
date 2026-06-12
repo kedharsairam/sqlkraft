@@ -1,35 +1,10 @@
 ---
 title: "Example: Retrieving Binary Data"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The following query returns the product photo stored in a
-
-  type column. The
-
-  option is specif
-tags:
-  - "xml-data"
-  - "example-retrieving-binary-data"
-pubDate: 2025-12-01
+description: "The following query returns the product photo stored in a type column. The option is specif"
+tags: ["xml-data","example-retrieving-binary-data"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The following query returns the product photo stored in a
 

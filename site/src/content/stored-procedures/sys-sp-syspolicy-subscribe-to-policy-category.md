@@ -4,7 +4,7 @@ title: "sp_syspolicy_subscribe_to_policy_category"
 category: "general"
 description: "Adds a policy category subscription for the specified database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "msdb.dbo.syspolicy_policy_categories"
 ---
 

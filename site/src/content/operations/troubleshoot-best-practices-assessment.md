@@ -1,41 +1,10 @@
 ---
 title: "Troubleshoot best practices assessment"
 topic: "azure-synapse"
-description: |
-  SQL Server
-
-  Article
-
-  •
-
-  08/08/2024
-
-  Applies to:
-
-  SQL Server
-
-  Before you proceed, verify all the necessary
-
-  are met.
-
-  The extension log file is at:
-
-  The log file name depends on the version Azure Exten
-tags:
-  - "azure-synapse"
-  - "troubleshoot-best-practices-assessment"
-pubDate: 2025-12-01
+description: "Before you proceed, verify all the necessary are met. The extension log file is at: The log file name depends on the version Azure Exten"
+tags: ["azure-synapse","troubleshoot-best-practices-assessment"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Article
-
-•
-
-08/08/2024
-
-SQL Server
 
 Before you proceed, verify all the necessary
 

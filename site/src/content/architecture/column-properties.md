@@ -1,43 +1,18 @@
 ---
 title: "Column Properties"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft Fabric
-
-  Use
-tags:
-  - "tables"
-  - "column-properties"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later versions Azure SQL Managed Instance Use"
+tags: ["tables","column-properties"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
-
-Azure SQL Database
 
 Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
-
-SQL database in Microsoft Fabric
 
 Use this page to view properties for the selected column.
 

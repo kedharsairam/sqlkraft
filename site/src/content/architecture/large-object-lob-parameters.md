@@ -1,43 +1,10 @@
 ---
 title: "Large object (LOB) parameters"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  Use
-
-  and
-
-  to pass large object (LOB) binary type (
-
-  ) and LOB
-
-  character type (
-
-  ) parameters, respectively. These types allow streaming the LOB
-
-  value
-tags:
-  - "clr-integration"
-  - "large-object-lob-parameters"
-pubDate: 2025-12-01
+description: "Use and to pass large object (LOB) binary type ( ) and LOB character type ( ) parameters, respectively."
+tags: ["clr-integration","large-object-lob-parameters"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 Use
 

@@ -2,8 +2,8 @@
 title: "Diagnostic walkthrough"
 topic: "query-processing"
 description: "sys.dm_os_spinlock_stats"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Query the
@@ -29,8 +29,6 @@ wait type. Requires
 trace flag 8134. For more information, see
 
 SPINLOCK_EXT.
-
-SQL Server
 
 Used to track call stacks for spinlocks that are experiencing a high number of spins.
 

@@ -2,23 +2,15 @@
 title: "Transaction basics"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Azure
 
 Synapse Analytics
 
 Analytics Platform System (PDW)
-
-SQL database in Microsoft Fabric
 
 In any database, mismanagement of transactions often leads to contention and performance
 
@@ -93,8 +85,6 @@ The modifications persist even in the event of a system failure. SQL Server 2014
 enable delayed durable transactions. Delayed durable transactions commit before the transaction
 
 log record is persisted to disk. For more information on delayed transaction durability, see the
-
-article
 
 Control Transaction Durability.
 

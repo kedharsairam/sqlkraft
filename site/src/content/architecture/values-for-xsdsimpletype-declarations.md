@@ -1,41 +1,10 @@
 ---
 title: "Values for <xsd:simpleType> Declarations"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The following table outlines the restrictions that are applied, based on all recognized XSD
-
-  simple typ
-tags:
-  - "xml-data"
-  - "values-for-xsdsimpletype-declarations"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","values-for-xsdsimpletype-declarations"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The following table outlines the restrictions that are applied, based on all recognized XSD
 

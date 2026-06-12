@@ -1,49 +1,16 @@
 ---
 title: "Install & configure"
 topic: "monitor"
-description: |
-  Article
-
-  •
-
-  04/26/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Wide World Importers OLTP database installation and configuration instructions.
-
-  SQL Server 2016
-
-  (or higher) or
-
-  Azure SQL Databas
-tags:
-  - "monitor"
-  - "install-configure"
-pubDate: 2025-12-01
+description: "Wide World Importers OLTP database installation and configuration instructions. SQL Server 2016 (or higher) or Azure SQL Databas"
+tags: ["monitor","install-configure"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/26/2024
-
-SQL Server
-
-Azure SQL Database
 
 Wide World Importers OLTP database installation and configuration instructions.
 
 2016
 
-(or higher) or
-
-Azure SQL Database. For the Full version of the
+(or higher) or. For the Full version of the
 
 sample, use SQL Server Evaluation/Developer/Enterprise Edition.
 
@@ -90,5 +57,3 @@ filesystem of the server, and select the backup. Click.
 pane. Note
 
 that it is best practice to place data and log files on different drives.
-
-SQL Server

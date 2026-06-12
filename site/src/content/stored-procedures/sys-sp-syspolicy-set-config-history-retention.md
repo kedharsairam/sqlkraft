@@ -4,7 +4,7 @@ title: "sp_syspolicy_set_config_history_retention"
 category: "general"
 description: "Specifies the number of days to keep policy evaluation history for Policy-Based Management. The number of days to retain Policy-Based Management history. in the context of the , the history isn't automatically removed. To view the current value for history retention, run the following query:"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_syspolicy_set_config_history_retention"
 ---
 

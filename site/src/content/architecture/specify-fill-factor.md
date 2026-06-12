@@ -1,31 +1,10 @@
 ---
 title: "Specify fill factor"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article describes what fill factor is and how to specify a fill factor value for an inde
-tags:
-  - "filestream"
-  - "specify-fill-factor"
-pubDate: 2025-12-01
+description: ""
+tags: ["filestream","specify-fill-factor"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article describes what fill factor is and how to specify a fill factor value for an index using
 

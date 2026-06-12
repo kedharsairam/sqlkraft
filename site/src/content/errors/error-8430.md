@@ -1,12 +1,12 @@
 ---
-name: "8430"
+name: 8430
 title: "Error 8430"
 errorNumber: 8430
 severity: "medium"
 category: "corruption"
 description: "Description endpoint state is '%ls'. 8430 16 No The message body failed the configured validation. 8431 16 No The message type '%.*ls' is not part of the service contract."
-tags: ["corruption", "severity-medium"]
-pubDate: 2026-05-29
+tags: ["corruption","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

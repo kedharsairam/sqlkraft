@@ -1,35 +1,10 @@
 ---
 title: "Secondary Database Settings"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Use this dialog box to configure and to modify the properties of a secondary database in the
-
-  log shipping configuration.
-
-  For an explanation of log sh
-tags:
-  - "high-availability"
-  - "secondary-database-settings"
-pubDate: 2025-12-01
+description: "Use this dialog box to configure and to modify the properties of a secondary database in the log shipping configuration."
+tags: ["high-availability","secondary-database-settings"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Use this dialog box to configure and to modify the properties of a secondary database in the
 

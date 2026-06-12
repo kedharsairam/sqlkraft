@@ -1,37 +1,10 @@
 ---
 title: "Disallowed Types & Members in mscorlib.dll"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  SQL Server common language integration (CLR) programming disallows the use of a type or
-
-  member that has a
-
-  that specifies a
-
-  enumeration with a value
-tags:
-  - "clr-integration"
-  - "disallowed-types-members-in-mscorlibdll"
-pubDate: 2025-12-01
+description: ""
+tags: ["clr-integration","disallowed-types-members-in-mscorlibdll"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 common language integration (CLR) programming disallows the use of a type or
 

@@ -1,45 +1,10 @@
 ---
 title: "Audit Broker Login Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL Server creates an
-
-  event to report audit messages related to Service
-
-  Broker transport security.
-
-  D
-tags:
-  - "event-classes"
-  - "audit-broker-login-event-class"
-pubDate: 2025-12-01
+description: "creates an event to report audit messages related to Service Broker transport security. D"
+tags: ["event-classes","audit-broker-login-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 creates an
 

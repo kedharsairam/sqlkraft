@@ -3,18 +3,16 @@ title: "Unpack a dacpac file"
 topic: "ssms"
 description: |
   A data-tier application (DAC) is a self-contained unit of the entire database model and is
-
-  portable in an artifact known as a DAC package, or
-
-  . It's a good practice to review the
-
-  contents of a
-
-  bef
-tags:
-  - "ssms"
-  - "unpack-a-dacpac-file"
-pubDate: 2025-12-01
+  
+    portable in an artifact known as a DAC package, or
+  
+    . It's a good practice to review the
+  
+    contents of a
+  
+    bef
+tags: ["ssms","unpack-a-dacpac-file"]
+pubDate: "2025-12-01"
 ---
 
 A data-tier application (DAC) is a self-contained unit of the entire database model and is

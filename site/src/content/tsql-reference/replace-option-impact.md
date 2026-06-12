@@ -3,8 +3,8 @@ name: "REPLACE option impact"
 title: "REPLACE option impact"
 category: "queries"
 description: ""
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 When restoring a database to SQL Server 2022 (16.x) from a previous version, it is

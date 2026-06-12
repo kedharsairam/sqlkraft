@@ -3,8 +3,8 @@ name: "FOR XML"
 title: "FOR XML"
 category: "queries"
 description: "Specifies that the results of a query are to be returned as an XML document."
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 ## XML

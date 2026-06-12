@@ -2,8 +2,8 @@
 title: "Checkpoint process"
 topic: "query-processing"
 description: ""
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Just before a page is written, the form of page protection specified in the database is added to

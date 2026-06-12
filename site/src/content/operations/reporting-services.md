@@ -1,33 +1,10 @@
 ---
 title: "Reporting Services"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  01/29/2024
-
-  Applies to:
-
-  SQL Server
-
-  This article contains information about configuring Reporting Services to work with Always On
-
-  availability groups (AG) in SQL Server. The three scenar
-tags:
-  - "high-availability"
-  - "reporting-services"
-pubDate: 2025-12-01
+description: "This article contains information about configuring Reporting Services to work with Always On availability groups (AG) in SQL Server. The three scenar"
+tags: ["high-availability","reporting-services"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-01/29/2024
-
-SQL Server
 
 This article contains information about configuring Reporting Services to work with Always On
 

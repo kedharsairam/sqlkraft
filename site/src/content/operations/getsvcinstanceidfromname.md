@@ -1,29 +1,10 @@
 ---
 title: "GetSvcInstanceIDFromName"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/07/2024
-
-  Retrieves the instance ID of an instance when given the friendly name, conditioned to search
-
-  only the instance maps for the given service.
-
-  This article describes a native cod
-tags:
-  - "event-classes"
-  - "getsvcinstanceidfromname"
-pubDate: 2025-12-01
+description: "Retrieves the instance ID of an instance when given the friendly name, conditioned to search only the instance maps for the given service."
+tags: ["event-classes","getsvcinstanceidfromname"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/07/2024
 
 Retrieves the instance ID of an instance when given the friendly name, conditioned to search
 

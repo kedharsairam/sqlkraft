@@ -3,9 +3,9 @@ name: "xml_deadlock_report"
 title: "Deadlock Graph Capture with xml_deadlock_report"
 category: "deadlock"
 description: "Production-grade techniques for capturing, querying, and analyzing SQL Server deadlock graphs using the xml_deadlock_report Extended Event, including system_health extraction and dedicated event session setup."
-tags: ["extended-events", "deadlock", "xml_deadlock_report", "blocking", "deadlock-graph", "diagnostics"]
+tags: ["extended-events","deadlock","xml_deadlock_report","blocking","deadlock-graph","diagnostics"]
 targetVersion: "SQL Server 2012+"
-pubDate: 2026-05-30
+pubDate: "2026-05-30"
 ---
 
 ## Overview

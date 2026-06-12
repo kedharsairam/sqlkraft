@@ -2,9 +2,9 @@
 name: "To Add Constraint to Column in Table"
 title: "To Add Constraint to Column in Table"
 description: "for unique values"
-category: database
-tags: ["database", "table"]
-pubDate: 2025-03-15
+category: "database"
+tags: ["database","table"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

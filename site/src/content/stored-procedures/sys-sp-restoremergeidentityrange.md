@@ -4,18 +4,18 @@ title: "sp_restoremergeidentityrange"
 category: "general"
 description: "This stored procedure is used to update identity range assignments. It ensures that automatic identity range management functions properly after a Publisher is restored from a backup. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_restoremergeidentityrange
-  [ [ @publication = ]
-  N
-  'publication'
-  ]
-  [ , [ @article = ]
-  N
-  'article'
-  ]
-  [ ; ]
+      [ [ @publication = ]
+      N
+      'publication'
+      ]
+      [ , [ @article = ]
+      N
+      'article'
+      ]
+      [ ; ]
 ---
 
 ## Description

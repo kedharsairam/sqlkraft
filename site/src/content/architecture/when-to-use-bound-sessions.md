@@ -2,8 +2,8 @@
 title: "When to use bound sessions"
 topic: "io-fundamentals"
 description: "Only one session in a set of bound sessions can be active at any time. If one session is executing"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Only one session in a set of bound sessions can be active at any time. If one session is executing

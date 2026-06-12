@@ -1,39 +1,10 @@
 ---
 title: "From MySQL"
 topic: "migration"
-description: |
-  Article
-
-  •
-
-  01/15/2024
-
-  Applies to:
-
-  SQL Server
-
-  In this guide, you learn how to migrate your MySQL databases to SQL Server.
-
-  For other migration guides, see
-
-  Azure Database Migration Guides
-
-  .
-
-  Befor
-tags:
-  - "migration"
-  - "from-mysql"
-pubDate: 2025-12-01
+description: "In this guide, you learn how to migrate your MySQL databases to SQL Server. For other migration guides, see Azure Database Migration Guides . Befor"
+tags: ["migration","from-mysql"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-01/15/2024
-
-SQL Server
 
 In this guide, you learn how to migrate your MySQL databases to SQL Server.
 
@@ -72,8 +43,6 @@ menu, select.
 3. Enter the project name and a location to save your project and the migration target. Then
 
 select
-
-SQL Server
 
 in the
 

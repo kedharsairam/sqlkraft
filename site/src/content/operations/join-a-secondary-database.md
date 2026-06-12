@@ -1,33 +1,10 @@
 ---
 title: "Join a secondary database"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/04/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic explains how to join a secondary database to an Always On availability group by
-
-  using SQL Server Management Studio, Transact-SQL, or PowerS
-tags:
-  - "high-availability"
-  - "join-a-secondary-database"
-pubDate: 2025-12-01
+description: "This topic explains how to join a secondary database to an Always On availability group by using SQL Server Management Studio, Transact-SQL, or PowerS"
+tags: ["high-availability","join-a-secondary-database"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/04/2024
-
-SQL Server
 
 This topic explains how to join a secondary database to an Always On availability group by
 

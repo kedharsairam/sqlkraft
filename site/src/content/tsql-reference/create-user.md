@@ -3,8 +3,8 @@ name: "CREATE USER"
 title: "CREATE USER"
 category: "statements"
 description: "T-SQL reference for CREATE USER syntax and usage."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ### Users based on logins in
@@ -18,14 +18,6 @@ pubDate: 2026-05-29
 ﾃ
 
 Summarize this article for me
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

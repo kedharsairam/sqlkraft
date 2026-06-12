@@ -1,39 +1,10 @@
 ---
 title: "xml Data Type"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  If a
-
-  query specifies a column of
-
-  type in the
-
-  clause, column values are
-
-  mapped as elements
-tags:
-  - "xml-data"
-  - "xml-data-type"
-pubDate: 2025-12-01
+description: "If a query specifies a column of type in the clause, column values are mapped as elements"
+tags: ["xml-data","xml-data-type"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 If a
 

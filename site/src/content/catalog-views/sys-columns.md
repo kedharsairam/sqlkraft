@@ -3,11 +3,11 @@ name: "sys.columns"
 title: "sys.columns"
 category: "objects"
 description: "Returns a row for each column of an object that has columns, such as views or tables. The following list contains the object types that have columns: Table-valued assembly functions (FT) Inline table-valued SQL functions (IF) Table-valued SQL functions (TF) ID of the object to which this column belongs."
-tags: ["objects", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["objects","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   sp_tableoption
-  'text in row'
+      'text in row'
 ---
 
 ## Description
@@ -22,10 +22,6 @@ sp_tableoption
 ```
 
 ## Arguments
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This function returns column or parameter information.
 

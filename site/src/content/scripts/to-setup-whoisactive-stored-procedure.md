@@ -2,9 +2,9 @@
 name: "To Setup WhoIsActive Stored Procedure"
 title: "To Setup WhoIsActive Stored Procedure"
 description: "Deploys Adam Machanic's sp_WhoIsActive — the industry-standard real-time SQL Server activity monitoring stored procedure."
-category: performance
-tags: ["performance", "monitoring", "whoisactive"]
-pubDate: 2025-03-15
+category: "performance"
+tags: ["performance","monitoring","whoisactive"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

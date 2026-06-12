@@ -4,16 +4,16 @@ title: "sp_copymergesnapshot"
 category: "general"
 description: "Copies the snapshot folder of the specified publication to the folder listed in the @destination_folder . This stored procedure is executed at the Publisher on the publication The name of the publication whose snapshot contents are to be copied. , with no default."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_copymergesnapshot
-  [ @publication = ]
-  N
-  'publication'
-  , [ @destination_folder = ]
-  N
-  'destination_folder'
-  [ ; ]
+      [ @publication = ]
+      N
+      'publication'
+      , [ @destination_folder = ]
+      N
+      'destination_folder'
+      [ ; ]
 ---
 
 ## Description
@@ -37,8 +37,6 @@ N
 
 is used in merge replication. Only members of the fixed server role or fixed database role can execute. Modify Snapshot Initialization Options for SQL Replication System stored procedures (Transact-SQL)
 ## Remarks
-
-Azure SQL Managed Instance
 
 Copies the snapshot folder of the specified publication to the folder listed in the
 

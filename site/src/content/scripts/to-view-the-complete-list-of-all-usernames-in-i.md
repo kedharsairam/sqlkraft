@@ -2,9 +2,9 @@
 name: "To View the Complete List of all Usernames in I"
 title: "To View the Complete List of all Usernames in I"
 description: "diagnostic script for security-audit operations."
-category: security-audit
-tags: ["security-audit", "user"]
-pubDate: 2025-03-15
+category: "security-audit"
+tags: ["security-audit","user"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

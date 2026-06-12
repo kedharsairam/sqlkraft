@@ -1,11 +1,11 @@
 ---
-name: DTCWAIT
+name: "DTCWAIT"
 title: "DTC Wait"
-category: blocking
-severity: high
+category: "blocking"
+severity: "high"
 description: "Occurs when waiting for a Distributed Transaction Coordinator (DTC) operation. High values indicate distributed transaction latency or cross-database transaction coordination issues."
-tags: ["dtc", "distributed", "transaction"]
-pubDate: 2026-05-29
+tags: ["dtc","distributed","transaction"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

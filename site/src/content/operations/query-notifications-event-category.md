@@ -1,35 +1,10 @@
 ---
 title: "Query Notifications Event Category"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event category contains event classes that report information that
-
-  developers and admin
-tags:
-  - "event-classes"
-  - "query-notifications-event-category"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","query-notifications-event-category"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

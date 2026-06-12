@@ -1,33 +1,10 @@
 ---
 title: "Troubleshooting Conversation Priorities"
 topic: "service-broker"
-description: |
-  09/03/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article provides suggestions for correcting common symptoms related to Service Broker
-
-  conversation priorities.
-
-  Use the
-
-  column t
-tags:
-  - "service-broker"
-  - "troubleshooting-conversation-priorities"
-pubDate: 2025-12-01
+description: "09/03/2025 This article provides suggestions for correcting common symptoms related to Service Broker conversation priorities. Use the column t"
+tags: ["service-broker","troubleshooting-conversation-priorities"]
+pubDate: "2025-12-01"
 ---
-
-09/03/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article provides suggestions for correcting common symptoms related to Service Broker
 

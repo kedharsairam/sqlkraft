@@ -2,23 +2,21 @@
 name: "sys.sp_configure"
 title: "sp_configure"
 category: "general"
-description: "Summarize this article for me Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Returns information about the current SET options. The options can come from use of the command or from the value. Session values configured with the command override the Many tools, such as Management Studio, automatically configure set options."
+description: "Returns information about the current SET options. The options can come from use of the command or from the value. Session values configured with the command override the Many tools, such as Management Studio, automatically configure set options."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_configure
-  [ [ @configname = ]
-  'configname'
-  ]
-  [ , [ @configvalue = ] configvalue ]
-  [ ; ]
-  sp_configure
-  [ ; ]
+        [ [ @configname = ]
+        'configname'
+        ]
+        [ , [ @configvalue = ] configvalue ]
+        [ ; ]
+        sp_configure
+        [ ; ]
 ---
 
 ## Description
-
-Summarize this article for me Azure SQL Database Azure SQL Managed Instance SQL database in Microsoft Fabric Returns information about the current SET options. The options can come from use of the command or from the value. Session values configured with the command override the Many tools, such as Management Studio, automatically configure set options. Each user has an function that represents the configuration. You can change the language and query-processing options for a specific user session by using can only detect the options that are set to ON or OFF. function returns a bitmap of the options, converted to a base 10 (decimal) integer. The bit settings are stored in the locations described in a table in the article the user options Server Configuration Option sp_configure (Transact-SQL) Azure SQL Managed Instance instead to specify the list of binary values that make up the file. sys.database_files CLR uses Code Access Security (CAS) in the.NET Framework, which is no longer supported as a Azure SQL Database
 
 ## Syntax
 
@@ -38,14 +36,6 @@ sp_configure
 Disabling the setting only prevents direct recursions. To disable indirect recursion also, set the nested triggers server option to 0 by using. If any one of the triggers carries out a , regardless of the nesting level, no more triggers are run. You can nest triggers to a maximum of 32 levels. If a trigger changes a table on which there's another trigger, the second trigger activates and can then call a third trigger, and so on. If any trigger in the chain sets off an infinite loop, the nesting level is exceeded and the trigger is canceled. When a Transact-SQL trigger launches managed code by referencing a CLR routine, type, or aggregate, this reference counts as one level against the 32-level nesting limit. Methods invoked from within managed code don't count against this limit. To disable nested triggers, set the nested triggers option of to 0 (off). The default configuration supports nested triggers. If nested triggers are off, recursive triggers are also disabled, despite the setting that's set by using. The first trigger nested inside an trigger fires even if the server configuration option is 0. But, under this setting, the later triggers don't fire. Review your applications for nested triggers to determine if the applications follow your business rules when the server configuration option is set to 0. If not, make the appropriate modifications. SQL Server allows for Transact-SQL stored procedures, triggers, functions, and batches to refer to tables that don't exist at compile time. This ability is called deferred name resolution. To create a DML trigger, it requires permission on the table or view on which the trigger is being created. ７ Note The previous behavior occurs only if the setting is enabled by using. There's no defined order in which multiple triggers defined for a specific event are run. Each trigger should be self-contained. completion of the transaction. When a subsequent COMMIT TRANSACTION or ROLLBACK TRANSACTION statement is issued for the connection, the controlling instance requests that MS DTC manage the completion of the distributed transaction across the computers involved. After a Transact-SQL distributed transaction has been started, remote stored procedure calls can be made to other instances of SQL Server that have been defined as remote servers. The remote servers are all enlisted in the Transact-SQL distributed transaction, and MS DTC ensures that the transaction is completed against each remote server. REMOTE_PROC_TRANSACTIONS is a connection-level setting that can be used to override the instance-level option. When REMOTE_PROC_TRANSACTIONS is OFF, remote stored procedure calls are not made part of a local transaction. The modifications made by the remote stored procedure are committed or rolled back at the time the stored procedure completes. Subsequent COMMIT TRANSACTION or ROLLBACK TRANSACTION statements issued by the connection that called the remote stored procedure have no effect on the processing done by the procedure. The REMOTE_PROC_TRANSACTIONS option is a compatibility option that affects only remote stored procedure calls made to instances of SQL Server defined as remote servers using. The option does not apply to distributed queries that execute a stored procedure on an instance defined as a linked server using. The setting of SET REMOTE_PROC_TRANSACTIONS is set at execute or run time and not at parse time. Requires membership in the role. BEGIN DISTRIBUTED TRANSACTION (Transact-SQL) SET Statements (Transact-SQL) See Also
 
 ## Remarks
-
-Summarize this article for me
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Returns information about the current SET options.
 
@@ -98,8 +88,6 @@ Consulting the table, you see that those are
 sp_configure (Transact-SQL)
 
 Configure the user options Server Configuration Option
-
-Azure SQL Managed Instance
 
 Updates the currently configured value (the
 
@@ -324,12 +312,6 @@ assembly isn't uploaded but is available to the root assembly. If a dependent as
 previously uploaded, but SQL Server can't locate its manifest file in the source directory,
 
 returns an error.
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Overrides the currently configured
 

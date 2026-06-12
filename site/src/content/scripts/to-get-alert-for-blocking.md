@@ -2,9 +2,9 @@
 name: "To Get Alert for Blocking"
 title: "To Get Alert for Blocking"
 description: "diagnostic script for automation operations."
-category: automation
-tags: ["automation", "blocking"]
-pubDate: 2025-03-15
+category: "automation"
+tags: ["automation","blocking"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

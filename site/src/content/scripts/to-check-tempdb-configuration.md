@@ -2,9 +2,9 @@
 name: "To Check Tempdb Configuration"
 title: "To Check Tempdb Configuration"
 description: "diagnostic script for database operations."
-category: database
-tags: ["database", "health-check"]
-pubDate: 2025-03-15
+category: "database"
+tags: ["database","health-check"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

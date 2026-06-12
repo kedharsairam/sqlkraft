@@ -1,35 +1,10 @@
 ---
 title: "Configure flexible failover policy"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/04/2024
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  This topic describes how to configure the flexible failover policy for an Always On availability
-
-  group by using Transact-SQL or PowerS
-tags:
-  - "high-availability"
-  - "configure-flexible-failover-policy"
-pubDate: 2025-12-01
+description: "- Windows only This topic describes how to configure the flexible failover policy for an Always On availability group by using Transact-SQL or PowerS"
+tags: ["high-availability","configure-flexible-failover-policy"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/04/2024
-
-SQL Server
 
 - Windows only
 

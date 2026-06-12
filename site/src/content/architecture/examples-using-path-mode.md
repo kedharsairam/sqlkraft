@@ -1,41 +1,10 @@
 ---
 title: "Examples: Using PATH Mode"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  08/10/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The following examples illustrate the use of PATH mode in generating XML from a SELECT
-
-  query. Many of
-tags:
-  - "xml-data"
-  - "examples-using-path-mode"
-pubDate: 2025-12-01
+description: "The following examples illustrate the use of PATH mode in generating XML from a SELECT query."
+tags: ["xml-data","examples-using-path-mode"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-08/10/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The following examples illustrate the use of PATH mode in generating XML from a SELECT
 

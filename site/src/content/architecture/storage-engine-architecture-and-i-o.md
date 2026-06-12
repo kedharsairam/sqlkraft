@@ -2,19 +2,11 @@
 title: "Storage engine architecture and I/O"
 topic: "io-fundamentals"
 description: "internals and architecture"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 internals and architecture
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -24,7 +16,7 @@ Fabric
 
 The following guides are available. They discuss general concepts and apply to all versions of
 
-SQL Server, unless stated otherwise in the respective guide.
+, unless stated otherwise in the respective guide.
 
 Concurrency, locking, and contention
 

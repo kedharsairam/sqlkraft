@@ -1,11 +1,11 @@
 ---
-name: MEMORY_ALLOCATION_EXT
+name: "MEMORY_ALLOCATION_EXT"
 title: "Memory Allocation EXT Wait"
-category: memory
-severity: medium
+category: "memory"
+severity: "medium"
 description: "Occurs when allocating memory from the extended memory manager. Can indicate large page allocations or memory pressure at the OS level."
-tags: ["memory", "allocation", "os"]
-pubDate: 2026-05-29
+tags: ["memory","allocation","os"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

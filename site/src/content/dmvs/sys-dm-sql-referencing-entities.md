@@ -3,18 +3,18 @@ name: "sys.dm_sql_referencing_entities"
 title: "sys.dm_sql_referencing_entities"
 category: "execution"
 description: "Returns one row for each entity in the current database that references another user-defined entity by name. A dependency between two entities is created when one entity, called the , appears by name in a persisted SQL expression of another entity, called the ."
-tags: ["execution", "dmv"]
-pubDate: 2026-05-29
+tags: ["execution","dmv"]
+pubDate: "2026-05-29"
 syntax: |
   sys.dm_sql_referencing_entities (
-  ' schema_name.referenced_entity_name ' , ' <referenced_class> ' )
-  <referenced_class> ::=
-  {
-  OBJECT
-  | TYPE
-  | XML_SCHEMA_COLLECTION
-  | PARTITION_FUNCTION
-  }
+      ' schema_name.referenced_entity_name ' , ' <referenced_class> ' )
+      <referenced_class> ::=
+      {
+      OBJECT
+      | TYPE
+      | XML_SCHEMA_COLLECTION
+      | PARTITION_FUNCTION
+      }
 ---
 
 ## Description
@@ -36,12 +36,6 @@ OBJECT
 ```
 
 ## Arguments
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Returns one row for each entity in the current database that references another user-defined
 

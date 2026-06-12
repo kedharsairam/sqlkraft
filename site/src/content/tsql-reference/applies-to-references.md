@@ -1,10 +1,12 @@
 ---
-name: '"Applies to" references'
-title: '"Applies to" references'
+name: |
+  '"Applies to" references'
+title: |
+  '"Applies to" references'
 category: "statements"
 description: "Most code examples in the Transact-SQL reference were tested on servers that are running a"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Most code examples in the Transact-SQL reference were tested on servers that are running a

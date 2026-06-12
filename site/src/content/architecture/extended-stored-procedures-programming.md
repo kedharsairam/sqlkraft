@@ -2,8 +2,8 @@
 title: "Extended stored procedures programming"
 topic: "query-processing"
 description: "Level0type = 'type' and Level0type ="
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Deprecated feature

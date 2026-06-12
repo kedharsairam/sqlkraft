@@ -1,29 +1,12 @@
 ---
 title: "SQL Assessment API"
 topic: "linux-operations"
-description: |
-  SQL Assessment API
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  The SQL Assessment API provides a mechanism to evaluate the configuration of your SQL
-
-  Server for best practices. The API is de
-tags:
-  - "linux-operations"
-  - "sql-assessment-api"
-pubDate: 2025-12-01
+description: "SQL Assessment API The SQL Assessment API provides a mechanism to evaluate the configuration of your SQL Server for best practices."
+tags: ["linux-operations","sql-assessment-api"]
+pubDate: "2025-12-01"
 ---
 
 SQL Assessment API
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The SQL Assessment API provides a mechanism to evaluate the configuration of your SQL
 
@@ -44,8 +27,6 @@ can be tracked by regularly scheduled assessments.
 The API can be used to assess:
 
 on Azure Virtual Machines
-
-Azure SQL Managed Instance
 
 2012 and higher
 

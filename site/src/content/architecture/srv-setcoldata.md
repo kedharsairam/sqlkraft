@@ -1,35 +1,10 @@
 ---
 title: "srv_setcoldata"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Specifies the current address for a column's data.
-
-  srvproc
-
-  Is a pointer to the SRV_PROC structure that is the handle for a particular client connecti
-tags:
-  - "clr-integration"
-  - "srv-setcoldata"
-pubDate: 2025-12-01
+description: "Specifies the current address for a column's data. srvproc Is a pointer to the SRV_PROC structure that is the handle for a particular client connecti"
+tags: ["clr-integration","srv-setcoldata"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Specifies the current address for a column's data.
 

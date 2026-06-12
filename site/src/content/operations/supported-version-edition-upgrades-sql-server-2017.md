@@ -1,27 +1,10 @@
 ---
 title: "Supported version & edition upgrades SQL Server 2017"
 topic: "upgrade"
-description: |
-  06/04/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  You can upgrade from SQL Server 2008 (10.0.x), SQL Server 2008 R2 (10.50.x), SQL Server 2012
-
-  (11.x), SQL Server 2014 (12.x), and SQL Server 2016 (
-tags:
-  - "upgrade"
-  - "supported-version-edition-upgrades-sql-server-2017"
-pubDate: 2025-12-01
+description: "06/04/2025 - Windows only You can upgrade from SQL Server 2008 (10.0.x), SQL Server 2008 R2 (10.50.x), SQL Server 2012 (11.x), SQL Server 2014 (12.x), and SQL Server 2016 ("
+tags: ["upgrade","supported-version-edition-upgrades-sql-server-2017"]
+pubDate: "2025-12-01"
 ---
-
-06/04/2025
-
-SQL Server
 
 - Windows only
 
@@ -69,7 +52,7 @@ supported. You can't upgrade a 32-bit instance of SQL Server to native 64-bit us
 
 Server Setup. However, you can back up or detach databases from a 32-bit instance of
 
-SQL Server, and then restore or attach them to a new instance of SQL Server (64-bit) if the
+, and then restore or attach them to a new instance of SQL Server (64-bit) if the
 
 databases aren't published in replication. You must re-create any logins and other user
 

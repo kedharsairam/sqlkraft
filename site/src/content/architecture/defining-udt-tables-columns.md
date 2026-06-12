@@ -1,33 +1,10 @@
 ---
 title: "Defining UDT tables & columns"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  Once the assembly containing the user-defined type (UDT) definition is registered in a SQL
-
-  Server database, it can be used in a column definition. For
-tags:
-  - "clr-integration"
-  - "defining-udt-tables-columns"
-pubDate: 2025-12-01
+description: "Once the assembly containing the user-defined type (UDT) definition is registered in a SQL Server database, it can be used in a column definition. For"
+tags: ["clr-integration","defining-udt-tables-columns"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 Once the assembly containing the user-defined type (UDT) definition is registered in a SQL
 

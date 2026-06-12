@@ -1,29 +1,10 @@
 ---
 title: "Uninstalling Service Broker Applications"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  You must uninstall a Service Broker application only when the database continues to be hosted
-
-  in the same instance but no longer provi
-tags:
-  - "service-broker"
-  - "uninstalling-service-broker-applications"
-pubDate: 2025-12-01
+description: ""
+tags: ["service-broker","uninstalling-service-broker-applications"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 You must uninstall a Service Broker application only when the database continues to be hosted
 

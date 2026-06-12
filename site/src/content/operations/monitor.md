@@ -1,41 +1,10 @@
 ---
 title: "Monitor"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/29/2024
-
-  Applies to:
-
-  SQL Server
-
-  To monitor the properties and state of an Always On availability group you can use the
-
-  following tools.
-
-  System Center
-
-  Monitoring
-
-  pack for SQL
-
-  Serv
-tags:
-  - "high-availability"
-  - "monitor"
-pubDate: 2025-12-01
+description: "To monitor the properties and state of an Always On availability group you can use the following tools. System Center Monitoring pack for SQL Serv"
+tags: ["high-availability","monitor"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/29/2024
-
-SQL Server
 
 To monitor the properties and state of an Always On availability group you can use the
 
@@ -101,8 +70,6 @@ To download the monitoring pack
 
 (SQLServerMP.msi) and
 
-SQL Server
-
 Management Pack Guide for System
 
 Center Operations Manager
@@ -110,8 +77,6 @@ Center Operations Manager
 (SQLServerMPGuide.doc), see:
 
 System Center Monitoring pack for
-
-SQL Server
 
 Transact-SQL
 

@@ -1,43 +1,10 @@
 ---
 title: "Audit Schema Object GDR Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs whenever a GRANT, REVOKE, or DENY is
-
-  issued for a schema object permission by
-tags:
-  - "event-classes"
-  - "audit-schema-object-gdr-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","audit-schema-object-gdr-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

@@ -1,25 +1,10 @@
 ---
 title: "Configure Power BI Report Server catalog"
 topic: "linux-operations"
-description: |
-  07/03/2025
-
-  Applies to:
-
-  SQL Server 2019 (15.x) and later - Linux
-
-  SQL Server Reporting Services
-
-  (2019 and later)
-
-  This article explains how to install and configure the Power BI Report Server (PBIRS
-tags:
-  - "linux-operations"
-  - "configure-power-bi-report-server-catalog"
-pubDate: 2025-12-01
+description: "07/03/2025 SQL Server 2019 (15.x) and later - Linux SQL Server Reporting Services (2019 and later) This article explains how to install and configure the Power BI Report Server (PBIRS"
+tags: ["linux-operations","configure-power-bi-report-server-catalog"]
+pubDate: "2025-12-01"
 ---
-
-07/03/2025
 
 2019 (15.x) and later - Linux
 

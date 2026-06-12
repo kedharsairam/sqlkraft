@@ -3,8 +3,8 @@ name: "Validity tests"
 title: "Validity tests"
 category: "statements"
 description: "Returns a geometry object representing all points within a specified distance from a"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

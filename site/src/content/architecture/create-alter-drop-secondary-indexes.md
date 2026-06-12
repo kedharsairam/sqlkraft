@@ -1,33 +1,10 @@
 ---
 title: "Create, Alter, & Drop Secondary Indexes"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Describes how to create a new secondary selective XML index, or alter or drop an existing
-
-  se
-tags:
-  - "xml-data"
-  - "create-alter-drop-secondary-indexes"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","create-alter-drop-secondary-indexes"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Describes how to create a new secondary selective XML index, or alter or drop an existing
 

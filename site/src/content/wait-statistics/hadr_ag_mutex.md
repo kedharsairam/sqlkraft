@@ -1,11 +1,11 @@
 ---
-name: HADR_AG_MUTEX
+name: "HADR_AG_MUTEX"
 title: "HADR AG Mutex Wait"
-category: latency
-severity: medium
+category: "latency"
+severity: "medium"
 description: "Occurs when waiting to access availability group internal state. Indicates AG metadata contention, often during failover or replica state transitions."
-tags: ["ag", "mutex", "failover"]
-pubDate: 2026-05-29
+tags: ["ag","mutex","failover"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

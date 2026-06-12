@@ -1,43 +1,10 @@
 ---
 title: "Audit Server Alter Trace Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs for all statements that check for the ALTER
-
-  TRACE permission. Statements that
-tags:
-  - "event-classes"
-  - "audit-server-alter-trace-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs for all statements that check for the ALTER TRACE permission."
+tags: ["event-classes","audit-server-alter-trace-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

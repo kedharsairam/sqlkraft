@@ -3,8 +3,8 @@ name: "Specify negative and positive numbers"
 title: "Specify negative and positive numbers"
 category: "operators"
 description: "doesn't enforce any kind of grouping rules such as inserting a comma ("
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 doesn't enforce any kind of grouping rules such as inserting a comma (

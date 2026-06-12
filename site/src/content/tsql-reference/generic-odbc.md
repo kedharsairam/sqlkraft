@@ -3,8 +3,8 @@ name: "Generic ODBC"
 title: "Generic ODBC"
 category: "statements"
 description: "Make sure to configure the driver to sample all the necessary data."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Key name

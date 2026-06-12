@@ -3,8 +3,8 @@ name: "Examples with remote endpoints"
 title: "Examples with remote endpoints"
 category: "queries"
 description: ""
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 ## Create an EXTERNAL MODEL with Azure OpenAI using
@@ -49,7 +49,7 @@ If you use Managed Identity with Azure OpenAI and SQL Server 2025 (17.x), the
 
 role must be granted to
 
-SQL Server's system-assigned. For more information, see.
+'s system-assigned. For more information, see.
 
 ## Create an external model with Azure OpenAI using API keys
 

@@ -4,12 +4,12 @@ title: "sp_recompile"
 category: "general"
 description: "Causes stored procedures, triggers, and user-defined functions to be recompiled the next time that they're run. It does this by dropping the existing plan from the procedure cache, forcing a new plan to be created the next time that the procedure or trigger is run."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_recompile [ @objname = ]
-  N
-  'object'
-  [ ; ]
+      N
+      'object'
+      [ ; ]
 ---
 
 ## Description
@@ -26,12 +26,6 @@ N
 ```
 
 ## Remarks
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Causes stored procedures, triggers, and user-defined functions to be recompiled the next time
 

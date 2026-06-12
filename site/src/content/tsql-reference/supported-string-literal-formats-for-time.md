@@ -3,8 +3,8 @@ name: "Supported String Literal Formats for time"
 title: "Supported String Literal Formats for time"
 category: "data-types"
 description: "* Not supported in Informatica."
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 (11,2)
@@ -56,8 +56,6 @@ pubDate: 2026-05-29
 * Not supported in Microsoft Fabric.
 
 The following table shows the valid string literal formats for the data type.
-
-SQL Server
 
 ## Description
 

@@ -3,8 +3,8 @@ name: "instance with an inscribed Polygon instance"
 title: "Instance with an inscribed Polygon instance"
 category: "queries"
 description: ""
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 The following example uses

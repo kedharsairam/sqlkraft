@@ -4,7 +4,7 @@ title: "sp_mergearticlecolumn"
 category: "general"
 description: "Partitions a merge publication vertically. This stored procedure is executed at the Publisher on The name of the article in the publication. Identifies the columns on which to create the vertical partition. , all columns in the source table are added columns from an article, execute for each column to be removed from the specified"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_mergearticlecolumn"
 ---
 

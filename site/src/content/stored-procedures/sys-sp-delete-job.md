@@ -4,23 +4,23 @@ title: "sp_delete_job"
 category: "general"
 description: "Deletes a job from the SQL Server Agent service. The identification number of the job to be deleted. must be specified; both can't be specified."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_delete_job
-  [ [ @job_id = ]
-  'job_id'
-  ]
-  [ , [ @job_name = ]
-  N
-  'job_name'
-  ]
-  [ , [ @originating_server = ]
-  N
-  'originating_server'
-  ]
-  [ , [ @delete_history = ] delete_history ]
-  [ , [ @delete_unused_schedule = ] delete_unused_schedule ]
-  [ ; ]
+      [ [ @job_id = ]
+      'job_id'
+      ]
+      [ , [ @job_name = ]
+      N
+      'job_name'
+      ]
+      [ , [ @originating_server = ]
+      N
+      'originating_server'
+      ]
+      [ , [ @delete_history = ] delete_history ]
+      [ , [ @delete_unused_schedule = ] delete_unused_schedule ]
+      [ ; ]
 ---
 
 ## Description

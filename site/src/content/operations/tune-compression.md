@@ -1,33 +1,10 @@
 ---
 title: "Tune compression"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  01/26/2024
-
-  Applies to:
-
-  SQL Server
-
-  By default, SQL Server compresses data streams where appropriate for availability groups.
-
-  Compression reduces network traffic, increases CPU load, and
-tags:
-  - "high-availability"
-  - "tune-compression"
-pubDate: 2025-12-01
+description: "By default, SQL Server compresses data streams where appropriate for availability groups."
+tags: ["high-availability","tune-compression"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-01/26/2024
-
-SQL Server
 
 By default, SQL Server compresses data streams where appropriate for availability groups.
 

@@ -1,27 +1,12 @@
 ---
 title: "Deploy SQL Server container cluster"
 topic: "linux-operations"
-description: |
-  Quickstart: Deploy a SQL Server container
-
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This quickstart demonstrates how to configure a highly available SQL Server instance in a
-
-  container with persistent stora
-tags:
-  - "linux-operations"
-  - "deploy-sql-server-container-cluster"
-pubDate: 2025-12-01
+description: ""
+tags: ["linux-operations","deploy-sql-server-container-cluster"]
+pubDate: "2025-12-01"
 ---
 
 Quickstart: Deploy a SQL Server container
-
-SQL Server
 
 on Linux
 

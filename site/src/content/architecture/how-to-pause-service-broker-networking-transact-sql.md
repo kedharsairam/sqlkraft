@@ -1,31 +1,10 @@
 ---
 title: "How to: Pause Service Broker Networking (Transact-SQL)"
 topic: "service-broker"
-description: |
-  09/02/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Service Broker sends and receives messages over the network while any endpoint for Service
-
-  Broker is in the
-
-  state. To pause Service B
-tags:
-  - "service-broker"
-  - "how-to-pause-service-broker-networking-transact-sql"
-pubDate: 2025-12-01
+description: "09/02/2025 Service Broker sends and receives messages over the network while any endpoint for Service Broker is in the state. To pause Service B"
+tags: ["service-broker","how-to-pause-service-broker-networking-transact-sql"]
+pubDate: "2025-12-01"
 ---
-
-09/02/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Service Broker sends and receives messages over the network while any endpoint for Service
 

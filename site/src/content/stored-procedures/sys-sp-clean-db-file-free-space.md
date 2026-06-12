@@ -4,7 +4,7 @@ title: "sp_clean_db_file_free_space"
 category: "general"
 description: "Removes residual information on data pages. cleans all pages in only one file of a database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_clean_db_file_free_space"
 ---
 
@@ -17,8 +17,6 @@ Removes residual information on data pages. cleans all pages in only one file of
 `sp_clean_db_file_free_space`
 
 ## Remarks
-
-Azure SQL Managed Instance
 
 Removes residual information on data pages.
 

@@ -3,8 +3,8 @@ name: "sys.dm_exec_query_stats"
 title: "sys.dm_exec_query_stats"
 category: "execution"
 description: "Returns aggregate performance statistics for cached query plans in SQL Server. The view contains one row per query statement within the cached plan, and the lifetime of the rows are tied to the plan itself."
-tags: ["execution", "dmv"]
-pubDate: 2026-05-29
+tags: ["execution","dmv"]
+pubDate: "2026-05-29"
 syntax: "sys.dm_exec_query_stats"
 ---
 

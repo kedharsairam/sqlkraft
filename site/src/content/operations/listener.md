@@ -1,33 +1,10 @@
 ---
 title: "Listener"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  An availability group listener is a virtual network name (VNN) that clients can connect to in
-
-  order to access a database in a primary or secondary rep
-tags:
-  - "high-availability"
-  - "listener"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","listener"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 An availability group listener is a virtual network name (VNN) that clients can connect to in
 

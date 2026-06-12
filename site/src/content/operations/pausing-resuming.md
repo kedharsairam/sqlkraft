@@ -1,33 +1,10 @@
 ---
 title: "Pausing & resuming"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  The database owner can pause and later resume a database mirroring session at any time.
-
-  Pausing preserves the session state while suspending mirroring
-tags:
-  - "high-availability"
-  - "pausing-resuming"
-pubDate: 2025-12-01
+description: "The database owner can pause and later resume a database mirroring session at any time. Pausing preserves the session state while suspending mirroring"
+tags: ["high-availability","pausing-resuming"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 The database owner can pause and later resume a database mirroring session at any time.
 

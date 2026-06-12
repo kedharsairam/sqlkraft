@@ -2,8 +2,8 @@
 title: "Effects of min and max server memory"
 topic: "memory-management"
 description: "The instance of SQL Server adjusts its memory consumption. If another application is stopped"
-tags: ["memory-management", "architecture"]
-pubDate: 2026-05-29
+tags: ["memory-management","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The instance of SQL Server adjusts its memory consumption. If another application is stopped

@@ -1,35 +1,10 @@
 ---
 title: "System Databases"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  11/25/2024
-
-  Applies to:
-
-  SQL Server
-
-  This article describes how to move system databases in SQL Server. Moving system databases
-
-  might be useful in the following situations:
-
-  Failure recov
-tags:
-  - "collation"
-  - "system-databases"
-pubDate: 2025-12-01
+description: "This article describes how to move system databases in SQL Server."
+tags: ["collation","system-databases"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-11/25/2024
-
-SQL Server
 
 This article describes how to move system databases in SQL Server. Moving system databases
 

@@ -1,22 +1,9 @@
 ---
 title: "Contained availability groups"
 topic: "high-availability"
-description: |
-  ﾃ
-
-  Summarize this article for me
-
-  Applies to:
-
-  SQL Server 2022 (16.x)
-
-  A contained availability group is an Always On availability group (AG) that supports:
-
-  managing metadata objects (users, logins,
-tags:
-  - "high-availability"
-  - "contained-availability-groups"
-pubDate: 2025-12-01
+description: "ﾃ Summarize this article for me SQL Server 2022 (16.x) A contained availability group is an Always On availability group (AG) that supports: managing metadata objects (users, logins,"
+tags: ["high-availability","contained-availability-groups"]
+pubDate: "2025-12-01"
 ---
 
 ﾃ

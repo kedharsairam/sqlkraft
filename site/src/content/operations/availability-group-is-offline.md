@@ -1,39 +1,10 @@
 ---
 title: "Availability group is offline"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  : Availability Group Online State
-
-  : Availability group is offline.
-
-  :
-
-  : Availability group
-
-  This policy checks the online or offline state of the ava
-tags:
-  - "high-availability"
-  - "availability-group-is-offline"
-pubDate: 2025-12-01
+description: ": Availability Group Online State : Availability group is offline."
+tags: ["high-availability","availability-group-is-offline"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 : Availability Group Online State
 

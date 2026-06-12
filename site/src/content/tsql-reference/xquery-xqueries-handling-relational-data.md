@@ -3,19 +3,9 @@ name: "xquery-xqueries-handling-relational-data"
 title: "XQuery - XQueries Handling Relational Data"
 category: "xquery"
 description: "XQuery Language Reference: XQueries Handling Relational Data"
-tags:
-  - "xquery"
-  - "xqueries-handling-relational-data"
-pubDate: 2025-12-01
+tags: ["xquery","xqueries-handling-relational-data"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 You specify XQuery against an
 

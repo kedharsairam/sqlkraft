@@ -4,19 +4,9 @@ title: "XQuery - Primary Expressions"
 category: "xquery"
 description: "XQuery Language Reference: Primary Expressions"
 syntax: "&lt;"
-tags:
-  - "xquery"
-  - "primary-expressions"
-pubDate: 2025-12-01
+tags: ["xquery","primary-expressions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 The XQuery primary expressions include literals, variable references, context item expressions,
 

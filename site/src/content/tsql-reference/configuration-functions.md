@@ -3,21 +3,13 @@ name: "Configuration functions"
 title: "Configuration functions"
 category: "statements"
 description: "T-SQL reference for Configuration functions syntax and usage."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ﾃ
 
 Summarize this article for me
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -26,8 +18,6 @@ SQL analytics endpoint in
 Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Learn about the categories of built-in functions you can use with SQL databases. You can use
 

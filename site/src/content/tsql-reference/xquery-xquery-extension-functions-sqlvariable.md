@@ -4,19 +4,9 @@ title: "XQuery - XQuery Extension Functions - sql:variable()"
 category: "xquery"
 description: "XQuery Language Reference: XQuery Extension Functions - sql:variable()"
 syntax: "ProductID"
-tags:
-  - "xquery"
-  - "xquery-extension-functions-sqlvariable"
-pubDate: 2025-12-01
+tags: ["xquery","xquery-extension-functions-sqlvariable"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Exposes a variable that contains a SQL relational value inside an XQuery expression.
 

@@ -1,33 +1,10 @@
 ---
 title: "DDL Events"
 topic: "change-data-capture"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The following tables list the DDL events that can be used to fire a DDL trigger or event
-
-  not
-tags:
-  - "change-data-capture"
-  - "ddl-events"
-pubDate: 2025-12-01
+description: ""
+tags: ["change-data-capture","ddl-events"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The following tables list the DDL events that can be used to fire a DDL trigger or event
 

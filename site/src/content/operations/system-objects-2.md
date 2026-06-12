@@ -1,39 +1,10 @@
 ---
 title: "System objects"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  Description
-
-  sys.database_mirroring_witnesses
-
-  Contains a row for every witness role that a server plays in a database
-
-  mirroring partnership.
-
-  Descrip
-tags:
-  - "high-availability"
-  - "system-objects-2"
-pubDate: 2025-12-01
+description: "Description sys.database_mirroring_witnesses Contains a row for every witness role that a server plays in a database mirroring partnership. Descrip"
+tags: ["high-availability","system-objects-2"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 Description
 

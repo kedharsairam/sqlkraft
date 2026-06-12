@@ -3,11 +3,11 @@ name: "sys.dm_fts_memory_buffers"
 title: "sys.dm_fts_memory_buffers"
 category: "full-text"
 description: "Returns information about memory buffers belonging to a specific memory pool that are used as part of a full-text crawl or a full-text crawl range."
-tags: ["full-text", "dmv"]
-pubDate: 2026-05-29
+tags: ["full-text","dmv"]
+pubDate: "2026-05-29"
 syntax: |
   dm_fts_memory_buffers.pool_id
-  dm_fts_memory_pools.pool_id
+      dm_fts_memory_pools.pool_id
 ---
 
 ## Description

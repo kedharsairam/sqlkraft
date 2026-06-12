@@ -3,8 +3,8 @@ name: "Clustered indexes"
 title: "Clustered indexes"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 You can also specify the

@@ -1,33 +1,10 @@
 ---
 title: "Possible failures during sessions between replicas"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  07/04/2023
-
-  Applies to:
-
-  SQL Server
-
-  Physical, operating system, or SQL Server problems can cause a failure in a session between
-
-  two availability replicas. An availability replica doesn't
-tags:
-  - "high-availability"
-  - "possible-failures-during-sessions-between-replicas"
-pubDate: 2025-12-01
+description: "Physical, operating system, or SQL Server problems can cause a failure in a session between two availability replicas. An availability replica doesn't"
+tags: ["high-availability","possible-failures-during-sessions-between-replicas"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-07/04/2023
-
-SQL Server
 
 Physical, operating system, or SQL Server problems can cause a failure in a session between
 

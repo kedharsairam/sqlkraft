@@ -2,8 +2,8 @@
 title: "Cache subsystem safety guidelines"
 topic: "query-processing"
 description: "Use of a write caching (also called write-back caching) storage controller can improve SQL Server"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Use of a write caching (also called write-back caching) storage controller can improve SQL Server

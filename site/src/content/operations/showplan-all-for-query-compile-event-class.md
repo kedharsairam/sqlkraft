@@ -1,33 +1,10 @@
 ---
 title: "Showplan All for Query Compile Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Showplan All for Query Compile event class occurs when Microsoft SQL Server compiles a
-
-  S
-tags:
-  - "event-classes"
-  - "showplan-all-for-query-compile-event-class"
-pubDate: 2025-12-01
+description: "The Showplan All for Query Compile event class occurs when Microsoft SQL Server compiles a S"
+tags: ["event-classes","showplan-all-for-query-compile-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Showplan All for Query Compile event class occurs when Microsoft SQL Server compiles a
 

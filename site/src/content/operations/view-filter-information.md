@@ -1,31 +1,10 @@
 ---
 title: "View filter information"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article describes how to view filters on data columns for event classes by using SQL Server
-
-  Profiler.
-
-  1. Open a trace file, trac
-tags:
-  - "profiler"
-  - "view-filter-information"
-pubDate: 2025-12-01
+description: "06/06/2025 This article describes how to view filters on data columns for event classes by using SQL Server Profiler. 1."
+tags: ["profiler","view-filter-information"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article describes how to view filters on data columns for event classes by using SQL Server
 

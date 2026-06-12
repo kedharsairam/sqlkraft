@@ -1,43 +1,18 @@
 ---
 title: "View the dependencies"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft Fabric
-
-  You
-tags:
-  - "tables"
-  - "view-the-dependencies"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later versions Azure SQL Managed Instance You"
+tags: ["tables","view-the-dependencies"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
-
-Azure SQL Database
 
 Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
-
-SQL database in Microsoft Fabric
 
 You can view a table's dependencies in SQL Server Database Engine, using SQL Server
 
@@ -99,9 +74,7 @@ Viewing dependencies using
 
 >
 
-isn't supported in
-
-Azure Synapse Analytics. Instead, use. Azure Synapse
+isn't supported in. Instead, use. Azure Synapse
 
 Analytics SQL pools support tables, views, filtered statistics, and Transact-SQL stored
 

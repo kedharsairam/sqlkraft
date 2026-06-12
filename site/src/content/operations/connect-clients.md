@@ -1,33 +1,10 @@
 ---
 title: "Connect clients"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  To connect to a database mirroring session, a client can use either SQL Server Native Client or
-
-  .NET Framework Data Provider for SQL Server. When conf
-tags:
-  - "high-availability"
-  - "connect-clients"
-pubDate: 2025-12-01
+description: "To connect to a database mirroring session, a client can use either SQL Server Native Client or .NET Framework Data Provider for SQL Server."
+tags: ["high-availability","connect-clients"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 To connect to a database mirroring session, a client can use either SQL Server Native Client or.NET Framework Data Provider for SQL Server. When configured for a SQL Server database,
 

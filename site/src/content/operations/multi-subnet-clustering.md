@@ -1,29 +1,12 @@
 ---
 title: "Multi-Subnet Clustering"
 topic: "high-availability"
-description: |
-  SQL Server multi-subnet clustering
-
-  08/26/2025
-
-  Applies to:
-
-  SQL Server
-
-  A SQL Server multi-subnet failover cluster is a configuration in which each failover cluster node
-
-  is connected to a different
-tags:
-  - "high-availability"
-  - "multi-subnet-clustering"
-pubDate: 2025-12-01
+description: "multi-subnet clustering 08/26/2025 A SQL Server multi-subnet failover cluster is a configuration in which each failover cluster node is connected to a different"
+tags: ["high-availability","multi-subnet-clustering"]
+pubDate: "2025-12-01"
 ---
 
 multi-subnet clustering
-
-08/26/2025
-
-SQL Server
 
 A SQL Server multi-subnet failover cluster is a configuration in which each failover cluster node
 
@@ -41,9 +24,7 @@ When you replicate data, there's more than one copy of the data available. There
 
 subnet failover cluster provides a disaster recovery solution in addition to high availability.
 
-The following illustration represents a two-node, two-subnet failover cluster instance (FCI) in
-
-SQL Server.
+The following illustration represents a two-node, two-subnet failover cluster instance (FCI) in.
 
 Following are some examples of SQL Server FCIs that use multiple subnets:
 

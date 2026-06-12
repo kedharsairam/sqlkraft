@@ -1,35 +1,10 @@
 ---
 title: "Cleanup and troubleshooting"
 topic: "change-data-capture"
-description: |
-  08/22/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  This article provides ways to troubleshoot common issues observed in change tracking auto
-
-  cleanup.
-
-  Generally, if
-tags:
-  - "change-data-capture"
-  - "cleanup-and-troubleshooting"
-pubDate: 2025-12-01
+description: "08/22/2025 This article provides ways to troubleshoot common issues observed in change tracking auto cleanup."
+tags: ["change-data-capture","cleanup-and-troubleshooting"]
+pubDate: "2025-12-01"
 ---
-
-08/22/2025
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This article provides ways to troubleshoot common issues observed in change tracking auto
 

@@ -1,31 +1,10 @@
 ---
 title: "Using hierarchyid data type"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This tutorial is intended for users who are experienced with Transact-SQL, but are new to the
-tags:
-  - "tables"
-  - "using-hierarchyid-data-type"
-pubDate: 2025-12-01
+description: ""
+tags: ["tables","using-hierarchyid-data-type"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This tutorial is intended for users who are experienced with Transact-SQL, but are new to the
 

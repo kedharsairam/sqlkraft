@@ -2,8 +2,8 @@
 title: "Use of the lightweight pooling option"
 topic: "io-fundamentals"
 description: "affinity mask option"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 ### fiber mode

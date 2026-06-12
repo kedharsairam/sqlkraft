@@ -1,27 +1,10 @@
 ---
 title: "Migrate to SQL managed instance"
 topic: "azure-synapse"
-description: |
-  Applies to:
-
-  SQL Server
-
-  This article shows you how to perform a SQL Server migration in Azure Arc to
-
-  Azure SQL
-
-  Managed Instance
-
-  in the Azure portal for your
-
-  SQL Server instance enabled by Azure A
-tags:
-  - "azure-synapse"
-  - "migrate-to-sql-managed-instance"
-pubDate: 2025-12-01
+description: "This article shows you how to perform a SQL Server migration in Azure Arc to Azure SQL Managed Instance in the Azure portal for your SQL Server instance enabled by Azure A"
+tags: ["azure-synapse","migrate-to-sql-managed-instance"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 This article shows you how to perform a SQL Server migration in Azure Arc to
 

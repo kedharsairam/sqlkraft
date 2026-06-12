@@ -4,15 +4,9 @@ title: "XQuery - General XQuery Use Cases"
 category: "xquery"
 description: "XQuery Language Reference: General XQuery Use Cases"
 syntax: "namespace"
-tags:
-  - "xquery"
-  - "general-xquery-use-cases"
-pubDate: 2025-12-01
+tags: ["xquery","general-xquery-use-cases"]
+pubDate: "2025-12-01"
 ---
-
-09/29/2025
-
-SQL Server
 
 This article provides general examples of XQuery use.
 

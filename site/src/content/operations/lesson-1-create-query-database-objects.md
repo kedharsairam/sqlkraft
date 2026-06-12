@@ -1,35 +1,12 @@
 ---
 title: "Lesson 1: Create & query database objects"
 topic: "configuration"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft Fabric
-
-  This lesson shows you how to create a database, create a tab
-tags:
-  - "configuration"
-  - "lesson-1-create-query-database-objects"
-pubDate: 2025-12-01
+description: ""
+tags: ["configuration","lesson-1-create-query-database-objects"]
+pubDate: "2025-12-01"
 ---
 
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
 Analytics Platform System (PDW)
-
-SQL database in Microsoft Fabric
 
 This lesson shows you how to create a database, create a table in the database, and then
 

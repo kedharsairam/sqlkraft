@@ -4,15 +4,9 @@ title: "XQuery - Data Accessor Functions - data"
 category: "xquery"
 description: ""
 syntax: "xdt:untypedAtomic"
-tags:
-  - "xquery"
-  - "data-accessor-functions-data"
-pubDate: 2025-12-01
+tags: ["xquery","data-accessor-functions-data"]
+pubDate: "2025-12-01"
 ---
-
-09/29/2025
-
-SQL Server
 
 Returns the typed value for each item specified by
 

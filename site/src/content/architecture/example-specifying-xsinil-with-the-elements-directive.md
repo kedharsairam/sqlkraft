@@ -1,35 +1,10 @@
 ---
 title: "Example: Specifying XSINIL with the ELEMENTS Directive"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The following query specifies the
-
-  directive to generate element-centric XML from the
-
-  query
-tags:
-  - "xml-data"
-  - "example-specifying-xsinil-with-the-elements-directive"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","example-specifying-xsinil-with-the-elements-directive"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The following query specifies the
 

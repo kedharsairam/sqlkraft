@@ -1,31 +1,10 @@
 ---
 title: "Migrate with SQL Server Migration Assistant"
 topic: "linux-operations"
-description: |
-  07/03/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Linux
-
-  This article introduces
-
-  SQL Server Migration Assistant
-
-  that helps you easily migrate databases
-
-  to SQL Server on Linux from Microsoft Access, DB2, MySQL
-tags:
-  - "linux-operations"
-  - "migrate-with-sql-server-migration-assistant"
-pubDate: 2025-12-01
+description: "07/03/2025 - Linux This article introduces SQL Server Migration Assistant that helps you easily migrate databases to SQL Server on Linux from Microsoft Access, DB2, MySQL"
+tags: ["linux-operations","migrate-with-sql-server-migration-assistant"]
+pubDate: "2025-12-01"
 ---
-
-07/03/2025
-
-SQL Server
 
 - Linux
 

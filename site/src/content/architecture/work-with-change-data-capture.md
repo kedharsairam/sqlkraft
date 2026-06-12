@@ -1,29 +1,10 @@
 ---
 title: "Work with change data capture"
 topic: "change-data-capture"
-description: |
-  08/22/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Change data is made available to change data capture consumers through table-valued
-
-  functions (TVFs). All queries of these functions r
-tags:
-  - "change-data-capture"
-  - "work-with-change-data-capture"
-pubDate: 2025-12-01
+description: "08/22/2025 Change data is made available to change data capture consumers through table-valued functions (TVFs). All queries of these functions r"
+tags: ["change-data-capture","work-with-change-data-capture"]
+pubDate: "2025-12-01"
 ---
-
-08/22/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Change data is made available to change data capture consumers through table-valued
 

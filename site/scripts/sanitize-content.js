@@ -99,6 +99,107 @@ const stats = {
 };
 
 /* ════════════════════════════════════════════════════════════════
+   FRONTMATTER HELPERS
+   ════════════════════════════════════════════════════════════════ */
+
+/**
+ * Parse frontmatter into key-value pairs, handling both
+ * `key: "value"` and `key: |` (YAML literal block) formats.
+ */
+function parseFrontmatterMap(frontmatterText) {
+  const lines = frontmatterText.split("\n");
+  const map = {};
+  let currentKey = null;
+  let inLiteralBlock = false;
+
+  // Remove the --- markers
+  const bodyLines = lines.filter((l) => !/^---/.test(l.trim()));
+
+  for (const line of bodyLines) {
+    const kv = line.match(/^(\w[\w-]*):\s*(.*)/);
+    if (kv) {
+      currentKey = kv[1];
+      const val = kv[2].trim();
+      if (val === "|") {
+        inLiteralBlock = true;
+        map[currentKey] = ""; // placeholder
+        continue;
+      }
+      inLiteralBlock = false;
+      map[currentKey] = val.replace(/^"|"$/g, "");
+    } else if (inLiteralBlock && currentKey) {
+      // Accumulate literal block content
+      const prev = map[currentKey] || "";
+      map[currentKey] = prev + (prev ? "\n" : "") + line;
+    } else if (/^\s+-\s/.test(line) && currentKey) {
+      // YAML list item:   - "value" or   - value
+      // Reinitialize as array if the current value is empty string (e.g., "tags:" with no inline value)
+      const existing = map[currentKey];
+      if (!Array.isArray(existing)) {
+        map[currentKey] = [];
+      }
+      const itemMatch = line.match(/^\s+-\s+"([^"]*)"\s*$/);
+      if (itemMatch) {
+        map[currentKey].push(itemMatch[1]);
+      } else {
+        const bareItem = line.replace(/^\s+-\s+/, "").trim().replace(/^"|"$/g, "");
+        if (bareItem) map[currentKey].push(bareItem);
+      }
+    }
+  }
+
+  // Convert arrays back to JSON strings for consistency
+  for (const key of Object.keys(map)) {
+    if (Array.isArray(map[key])) {
+      map[key] = JSON.stringify(map[key]);
+    } else if (typeof map[key] === "string") {
+      map[key] = map[key].trim();
+    }
+  }
+
+  return map;
+}
+
+/**
+ * Rebuild frontmatter text from a key-value map, converting all
+ * values to quoted strings (simpler, more consistent format).
+ */
+function rebuildFrontmatter(frontmatterText, overrides) {
+  // Parse current frontmatter
+  const fm = parseFrontmatterMap(frontmatterText);
+
+  // Apply overrides
+  for (const [key, value] of Object.entries(overrides)) {
+    if (value === undefined) continue;
+    fm[key] = value;
+  }
+
+  // Rebuild
+  const lines = [];
+  for (const [key, value] of Object.entries(fm)) {
+    if (value === null || value === undefined) continue;
+    const strVal = String(value);
+
+    // JSON array — output inline even if it contains quotes
+    if (/^\[[\s\S]*\]$/.test(strVal.trim())) {
+      lines.push(`${key}: ${strVal}`);
+    } else if (strVal === "true" || strVal === "false" || /^\d+$/.test(strVal)) {
+      lines.push(`${key}: ${strVal}`);
+    } else if (strVal.includes('"') || strVal.includes("\n")) {
+      // Multi-line or contains quotes — use YAML literal block
+      lines.push(`${key}: |`);
+      for (const subLine of strVal.split("\n")) {
+        lines.push(`  ${subLine}`);
+      }
+    } else {
+      lines.push(`${key}: "${strVal}"`);
+    }
+  }
+
+  return lines.join("\n");
+}
+
+/* ════════════════════════════════════════════════════════════════
    SANITIZATION PASSES
    ════════════════════════════════════════════════════════════════ */
 
@@ -504,6 +605,18 @@ function stripBoilerplate(body) {
     const line = lines[i];
     const trimmed = line.trim();
 
+    // Strip standalone "Article" (Microsoft Docs header artifact)
+    if (/^Article$/i.test(trimmed)) continue;
+
+    // Strip standalone bullet point "•"
+    if (/^•$/.test(trimmed)) continue;
+
+    // Strip standalone date lines (e.g., "02/28/2023")
+    if (/^\d{2}\/\d{2}\/\d{4}$/.test(trimmed)) continue;
+
+    // Strip "Summarize this article for me" (AI summary headers)
+    if (/^Summarize this article for me/i.test(trimmed)) continue;
+
     // Strip lines that start with "Applies to:"
     if (/^Applies to:/i.test(trimmed)) {
       while (i < lines.length) {
@@ -555,6 +668,28 @@ function stripBoilerplate(body) {
 
   body = body.replace(/\s*Related content[\s\S]*?(?=\n##|\n$|$)/gi, "");
 
+  // Strip inline compound platform lists (Microsoft concatenation artifacts)
+  body = body.replace(
+    /Azure SQL Database\s+Azure SQL Managed Instance\s*/gi,
+    ""
+  );
+  body = body.replace(
+    /SQL analytics endpoint in Microsoft Fabric\s+Warehouse in Microsoft Fabric\s*/gi,
+    ""
+  );
+  body = body.replace(
+    /Azure Synapse Analytics\s+Analytics Platform System \(PDW\)\s*/gi,
+    ""
+  );
+  body = body.replace(
+    /Azure SQL Database\s+Azure SQL Managed Instance\s+SQL database in Microsoft Fabric\s*/gi,
+    ""
+  );
+  body = body.replace(
+    /SQL database in Microsoft Fabric\s+Azure SQL Database\s+Azure SQL Managed Instance\s*/gi,
+    ""
+  );
+
   // Strip orphaned platform names at line start (no "Applies to:" prefix).
   // Line-by-line to avoid consuming newlines.
   const platformNames = [
@@ -564,7 +699,7 @@ function stripBoilerplate(body) {
   ];
   const platformRe = new RegExp(
     "^(?:" + platformNames.join("|") + ")" +
-    "(?:\\s+(?:" + platformNames.join("|") + "))*\\s+",
+    "(?:\\s+(?:" + platformNames.join("|") + "))*\\s*",
     "gi"
   );
 
@@ -587,6 +722,107 @@ function stripBoilerplate(body) {
   body = body.replace(/\s+\./g, ".");
 
   return body;
+}
+
+/**
+ * Pass 8 — Clean frontmatter description field (YAML literal blocks + quoted).
+ * Strips boilerplate ("Article", "Applies to:", dates, platform names, etc.)
+ * from the description field in the frontmatter, regardless of format.
+ */
+function cleanFrontmatterDescription(frontmatter) {
+  const fm = parseFrontmatterMap(frontmatter);
+  if (!fm.description || fm.description.trim() === "") return frontmatter;
+
+  let desc = fm.description;
+
+  // Remove "Article" + bullet + date pattern at the start
+  desc = desc.replace(/^Article\s*\n\s*•?\s*\n?\s*\d{2}\/\d{2}\/\d{4}\s*\n*/i, "");
+
+  // Remove "Applies to:" and any content until the next non-blank, non-list line
+  desc = desc.replace(/Applies to:[\s\S]*?(?=\n\s*[A-Za-z]|\n\n|$)/i, "");
+
+  // Remove standalone platform name lines (with optional leading whitespace)
+  const platformNames = [
+    "Azure SQL Database", "Azure SQL Managed Instance",
+    "SQL Server", "SQL database in Microsoft Fabric",
+    "Analytics Platform System (PDW)", "Azure Synapse Analytics",
+    "Parallel Data Warehouse"
+  ];
+  for (const name of platformNames) {
+    const escaped = name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const reIndented = new RegExp(`^\\s*${escaped}\\s*$`, "gim");
+    desc = desc.replace(reIndented, "");
+  }
+
+  // Remove "Transact-SQL syntax conventions"
+  desc = desc.replace(/Transact-SQL syntax conventions/gi, "");
+
+  // Remove "Last updated on ..."
+  desc = desc.replace(/Last updated on\s+\d{1,2}\/\d{1,2}\/\d{4}\s*/gi, "");
+
+  // Remove "Related content" and everything after it
+  desc = desc.replace(/Related content[\s\S]*$/gi, "");
+
+  // Remove "Summarize this article for me" (Microsoft AI-generated summary header)
+  desc = desc.replace(/^Summarize this article for me\s*/i, "");
+
+  // Remove "syntaxsql" remnants
+  desc = desc.replace(/^syntaxsql\s*$/gim, "");
+
+  // Clean up the actual description: flatten newlines, remove excessive whitespace
+  desc = desc.replace(/\n+/g, " ").replace(/\s+/g, " ").trim();
+
+  // If description is now empty, try to extract a meaningful first sentence from the body
+  if (!desc || desc.length < 5) {
+    return frontmatter; // Keep original, let the body handle it
+  }
+
+  // Only update if the cleaned version is meaningfully different
+  if (desc !== fm.description.replace(/\n+/g, " ").replace(/\s+/g, " ").trim()) {
+    const overrides = { description: desc };
+    return "---\n" + rebuildFrontmatter(frontmatter, overrides) + "\n---\n";
+  }
+
+  return frontmatter;
+}
+
+/**
+ * Pass 9 — Normalize tags to JSON array format.
+ */
+function normalizeTags(frontmatter) {
+  const fm = parseFrontmatterMap(frontmatter);
+  if (!fm.tags) return frontmatter;
+
+  let tags = fm.tags;
+
+  // If it's already a JSON array, ensure it's output inline (not in YAML literal block)
+  if (/^\[[\s\S]*\]$/.test(tags.trim())) {
+    try {
+      const parsed = JSON.parse(tags);
+      if (Array.isArray(parsed)) {
+        // Rewrite to ensure inline format, even if currently in YAML literal block
+        const overrides = { tags: JSON.stringify(parsed) };
+        return "---\n" + rebuildFrontmatter(frontmatter, overrides) + "\n---\n";
+      }
+    } catch {
+      // Invalid JSON — fall through to fix
+    }
+  }
+
+  // If it's a YAML list (- "item"), convert to JSON array
+  const yamlListMatch = tags.match(/^-\s+"([^"]+)"\s*$/m);
+  if (yamlListMatch) {
+    const items = [];
+    for (const match of tags.matchAll(/^-\s+"([^"]+)"\s*$/gm)) {
+      items.push(match[1]);
+    }
+    if (items.length > 0) {
+      const overrides = { tags: JSON.stringify(items) };
+      return "---\n" + rebuildFrontmatter(frontmatter, overrides) + "\n---\n";
+    }
+  }
+
+  return frontmatter;
 }
 
 /* ════════════════════════════════════════════════════════════════
@@ -618,10 +854,22 @@ function processFile(filePath) {
 
   // ── Apply passes ──
 
-  // 0a. Strip Microsoft Docs boilerplate (Applies to, syntax conventions, etc.)
+  // 0. Clean frontmatter description (handles YAML literal blocks & quoted)
+  const cleanedFrontmatter1 = cleanFrontmatterDescription(frontmatter);
+  if (cleanedFrontmatter1 !== frontmatter) {
+    frontmatter = cleanedFrontmatter1;
+  }
+
+  // 0a. Normalize tags to JSON array format
+  const cleanedFrontmatter2 = normalizeTags(frontmatter);
+  if (cleanedFrontmatter2 !== frontmatter) {
+    frontmatter = cleanedFrontmatter2;
+  }
+
+  // 0b. Strip Microsoft Docs boilerplate (Applies to, syntax conventions, etc.)
   body = stripBoilerplate(body);
 
-  // 0b. Fix concatenated column-description salad (DMVs, catalog-views)
+  // 0c. Fix concatenated column-description salad (DMVs, catalog-views)
   const descResult = fixConcatenatedDescriptions(frontmatter, body);
   frontmatter = descResult.frontmatter;
   body = descResult.body;

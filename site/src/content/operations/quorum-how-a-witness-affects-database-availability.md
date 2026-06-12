@@ -1,37 +1,10 @@
 ---
 title: "Quorum: How a Witness Affects Database Availability"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Whenever a witness is set for a database mirroring session,
-
-  quorum
-
-  is required. Quorum is a
-
-  relationship that exists when two or more server instanc
-tags:
-  - "high-availability"
-  - "quorum-how-a-witness-affects-database-availability"
-pubDate: 2025-12-01
+description: "Whenever a witness is set for a database mirroring session, quorum is required. Quorum is a relationship that exists when two or more server instanc"
+tags: ["high-availability","quorum-how-a-witness-affects-database-availability"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 Whenever a witness is set for a database mirroring session,
 

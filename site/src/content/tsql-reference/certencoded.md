@@ -3,8 +3,8 @@ name: "CERTENCODED"
 title: "CERTENCODED"
 category: "statements"
 description: "Returns the public portion of a certificate in binary format."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

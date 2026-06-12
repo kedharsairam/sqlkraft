@@ -1,25 +1,10 @@
 ---
 title: "T-SQL Breakpoints"
 topic: "ssb-diagnose"
-description: |
-  09/10/2025
-
-  Applies to:
-
-  SQL Server
-
-  Breakpoints specify that the Transact-SQL debugger pause execution on a specific Transact-
-
-  SQL statement, and you can then view the state of the code elements at
-tags:
-  - "ssb-diagnose"
-  - "t-sql-breakpoints"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssb-diagnose","t-sql-breakpoints"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
-
-SQL Server
 
 Breakpoints specify that the Transact-SQL debugger pause execution on a specific Transact-
 

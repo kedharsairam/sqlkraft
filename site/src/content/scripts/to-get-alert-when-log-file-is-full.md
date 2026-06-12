@@ -2,9 +2,9 @@
 name: "To Get Alert When Log file is full"
 title: "To Get Alert When Log file is full"
 description: "diagnostic script for automation operations."
-category: automation
+category: "automation"
 tags: ["automation"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql
@@ -42,7 +42,7 @@ SELECT db.name AS [Database Name],
  mf.max_size AS [Max Size]
 FROM sys.master_files mf
 JOIN sys.databases db ON mf.database_id = db.database_id
-	 WHERE db.name = 'TEST'
+   WHERE db.name = 'TEST'
 ORDER BY db.name, mf.type_desc;
 
  DECLARE

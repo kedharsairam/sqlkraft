@@ -3,8 +3,8 @@ name: "sys.server_event_notifications"
 title: "sys.server_event_notifications"
 category: "compatibility"
 description: "Returns a row for each server-level event notification object. Server event notification name."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "sys.server_event_notifications"
 ---
 

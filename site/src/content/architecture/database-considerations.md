@@ -2,8 +2,8 @@
 title: "Database considerations"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 For example, an index might be useful for columns with many distinct data values, but

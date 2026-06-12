@@ -1,41 +1,10 @@
 ---
 title: "Examples: Using OPENXML"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The examples in this article show how OPENXML is used to create a rowset view of an XML
-
-  document. For
-tags:
-  - "xml-data"
-  - "examples-using-openxml"
-pubDate: 2025-12-01
+description: "The examples in this article show how OPENXML is used to create a rowset view of an XML document. For"
+tags: ["xml-data","examples-using-openxml"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The examples in this article show how OPENXML is used to create a rowset view of an XML
 

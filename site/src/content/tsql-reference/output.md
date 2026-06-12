@@ -3,21 +3,9 @@ name: "Output"
 title: "Output"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
-
-Article
-
-•
-
-09/03/2024
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Causes SQL Server to display information about the amount of physical and logical IO activity
 

@@ -1,37 +1,10 @@
 ---
 title: "Distribution"
 topic: "migration"
-description: |
-  Article
-
-  •
-
-  09/27/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  The Distributor is a server that contains the distribution database, which stores metadata and
-
-  history data for all types
-tags:
-  - "migration"
-  - "distribution"
-pubDate: 2025-12-01
+description: ""
+tags: ["migration","distribution"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/27/2024
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The Distributor is a server that contains the distribution database, which stores metadata and
 

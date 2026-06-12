@@ -3,8 +3,8 @@ name: "sys.dm_db_log_stats"
 title: "sys.dm_db_log_stats"
 category: "log"
 description: "2016 (13.x) SP2 and later versions SQL database in Microsoft Fabric dynamic management function returns summary level attributes and information on transaction log files of databases. Use this information for monitoring and diagnostics of transaction log health."
-tags: ["log", "dmv"]
-pubDate: 2026-05-29
+tags: ["log","dmv"]
+pubDate: "2026-05-29"
 syntax: "sys.dm_db_log_stats ( database_id )"
 ---
 

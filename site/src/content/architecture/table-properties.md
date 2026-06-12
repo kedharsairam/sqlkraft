@@ -1,43 +1,18 @@
 ---
 title: "Table Properties"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft Fabric
-
-  Thi
-tags:
-  - "tables"
-  - "table-properties"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later versions Azure SQL Managed Instance Thi"
+tags: ["tables","table-properties"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
-
-Azure SQL Database
 
 Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
-
-SQL database in Microsoft Fabric
 
 This topic describes the table properties that are displayed in the Table Properties dialog box in
 

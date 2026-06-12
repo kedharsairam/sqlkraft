@@ -1,35 +1,16 @@
 ---
 title: "Considerations & limitations"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  There are some considerations and limitations to be aware of
-tags:
-  - "tables"
-  - "considerations-limitations"
-pubDate: 2025-12-01
+description: ""
+tags: ["tables","considerations-limitations"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 There are some considerations and limitations to be aware of when working with temporal
 

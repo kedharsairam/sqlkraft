@@ -1,12 +1,12 @@
 ---
-name: "6514"
+name: 6514
 title: "Error 6514"
 errorNumber: 6514
 severity: "medium"
 category: "io"
 description: "Description MemToLeave region of memory. For more information, see the CLR integration documentation in SQL Server Books Online."
-tags: ["io", "severity-medium"]
-pubDate: 2026-05-29
+tags: ["io","severity-medium"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

@@ -2,8 +2,8 @@
 title: "tables and indexes"
 topic: "index-architecture"
 description: "DB provider, thereby limiting users to only those data sources referenced by linked server"
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 DB provider, thereby limiting users to only those data sources referenced by linked server

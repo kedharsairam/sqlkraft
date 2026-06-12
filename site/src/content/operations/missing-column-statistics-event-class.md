@@ -1,31 +1,10 @@
 ---
 title: "Missing Column Statistics Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Missing Column Statistics event class indicates that column statistics that could have be
-tags:
-  - "event-classes"
-  - "missing-column-statistics-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","missing-column-statistics-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Missing Column Statistics event class indicates that column statistics that could have been
 

@@ -1,33 +1,10 @@
 ---
 title: "Real-time operational analytics"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  SQL Server 2016 (13.x) introduces real-time operational analytics, the ability to run both
-
-  a
-tags:
-  - "filestream"
-  - "real-time-operational-analytics"
-pubDate: 2025-12-01
+description: "2016 (13.x) introduces real-time operational analytics, the ability to run both a"
+tags: ["filestream","real-time-operational-analytics"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 2016 (13.x) introduces real-time operational analytics, the ability to run both
 

@@ -3,8 +3,8 @@ name: "FULLTEXTSERVICEPROPERTY"
 title: "FULLTEXTSERVICEPROPERTY"
 category: "statements"
 description: "Returns information about Full-Text Search service-level properties."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

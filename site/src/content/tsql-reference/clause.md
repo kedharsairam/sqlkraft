@@ -3,8 +3,8 @@ name: "Clause"
 title: "Clause"
 category: "statements"
 description: "In the definition of a check constraint."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 In the definition of a check constraint.

@@ -1,45 +1,10 @@
 ---
 title: "EXPLICIT Mode"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  As described in the article,
-
-  Constructing XML Using FOR XML
-
-  , RAW and AUTO mode don't
-
-  provide much c
-tags:
-  - "xml-data"
-  - "explicit-mode"
-pubDate: 2025-12-01
+description: "As described in the article, Constructing XML Using FOR XML , RAW and AUTO mode don't provide much c"
+tags: ["xml-data","explicit-mode"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 As described in the article,
 

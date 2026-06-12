@@ -1,25 +1,10 @@
 ---
 title: "Introduction to adutil"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  The
-
-  tool is a command-line interface (CLI) utility for configuring and managing Windows
-
-  Active Directory domains for SQL Server on Linux and containers. It elimina
-tags:
-  - "linux-operations"
-  - "introduction-to-adutil"
-pubDate: 2025-12-01
+description: "on Linux The tool is a command-line interface (CLI) utility for configuring and managing Windows Active Directory domains for SQL Server on Linux and containers. It elimina"
+tags: ["linux-operations","introduction-to-adutil"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

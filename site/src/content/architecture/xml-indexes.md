@@ -1,43 +1,10 @@
 ---
 title: "XML Indexes"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  01/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  XML indexes can be created on
-
-  data type columns. They index all tags, values and paths
-
-  over the XML i
-tags:
-  - "xml-data"
-  - "xml-indexes"
-pubDate: 2025-12-01
+description: "XML indexes can be created on data type columns. They index all tags, values and paths over the XML i"
+tags: ["xml-data","xml-indexes"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-01/30/2024
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 XML indexes can be created on
 

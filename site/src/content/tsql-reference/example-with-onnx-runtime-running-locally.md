@@ -3,8 +3,8 @@ name: "Example with ONNX Runtime running locally"
 title: "Example with ONNX Runtime running locally"
 category: "queries"
 description: ""
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 ## Security considerations
@@ -59,9 +59,7 @@ To mitigate these risks, consider the following security best practices:
 
 : Ensure that only authorized users have access to
 
-sensitive data and ONNX Runtime models. Validate all models before loading them into
-
-SQL Server. Use the
+sensitive data and ONNX Runtime models. Validate all models before loading them into. Use the
 
 principle of least privilege
 

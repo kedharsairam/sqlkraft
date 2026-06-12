@@ -1,37 +1,10 @@
 ---
 title: "RPC:Completed Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event class indicates that a remote procedure call has been completed.
-
-  Description
-
-  Nam
-tags:
-  - "event-classes"
-  - "rpccompleted-event-class"
-pubDate: 2025-12-01
+description: "The event class indicates that a remote procedure call has been completed. Description Nam"
+tags: ["event-classes","rpccompleted-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

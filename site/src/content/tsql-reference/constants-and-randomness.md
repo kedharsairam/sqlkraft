@@ -3,8 +3,8 @@ name: "Constants and randomness"
 title: "Constants and randomness"
 category: "operators"
 description: "Converts radians to degrees."
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

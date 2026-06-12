@@ -4,19 +4,9 @@ title: "XQuery - Functions on Boolean Values - not Function"
 category: "xquery"
 description: "XQuery Language Reference: Functions on Boolean Values - not Function"
 syntax: "Specifications"
-tags:
-  - "xquery"
-  - "functions-on-boolean-values-not-function"
-pubDate: 2025-12-01
+tags: ["xquery","functions-on-boolean-values-not-function"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Returns TRUE if the effective Boolean value of
 

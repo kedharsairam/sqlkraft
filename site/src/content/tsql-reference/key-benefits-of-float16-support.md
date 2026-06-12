@@ -3,8 +3,8 @@ name: "Key benefits of float16 support"
 title: "Key benefits of float16 support"
 category: "statements"
 description: "2025 (17.x)"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 2025 (17.x)

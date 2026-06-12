@@ -1,37 +1,12 @@
 ---
 title: "SqlPipe Object"
 topic: "clr-integration"
-description: |
-  SqlPipe object
-
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  In previous versions of SQL Server, it was common to write a stored procedure (or an extended
-
-  stored procedure) that sent results or o
-tags:
-  - "clr-integration"
-  - "sqlpipe-object"
-pubDate: 2025-12-01
+description: "SqlPipe object In previous versions of SQL Server, it was common to write a stored procedure (or an extended stored procedure) that sent results or o"
+tags: ["clr-integration","sqlpipe-object"]
+pubDate: "2025-12-01"
 ---
 
 SqlPipe object
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 In previous versions of SQL Server, it was common to write a stored procedure (or an extended
 

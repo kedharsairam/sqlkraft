@@ -4,47 +4,47 @@ title: "sp_adddistributiondb"
 category: "general"
 description: "Creates a new distribution database and installs the Distributor schema. The distribution database stores procedures, schema, and metadata used in replication."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_adddistributiondb
-  [ @database = ]
-  N
-  'database'
-  [ , [ @data_folder = ]
-  N
-  'data_folder'
-  ]
-  [ , [ @data_file = ]
-  N
-  'data_file'
-  ]
-  [ , [ @data_file_size = ] data_file_size ]
-  [ , [ @log_folder = ]
-  N
-  'log_folder'
-  ]
-  [ , [ @log_file = ]
-  N
-  'log_file'
-  ]
-  [ , [ @log_file_size = ] log_file_size ]
-  [ , [ @min_distretention = ] min_distretention ]
-  [ , [ @max_distretention = ] max_distretention ]
-  [ , [ @history_retention = ] history_retention ]
-  [ , [ @security_mode = ] security_mode ]
-  [ , [ @login = ]
-  N
-  'login'
-  ]
-  [ , [ @password = ]
-  N
-  'password'
-  ]
-  [ , [ @createmode = ] createmode ]
-  [ , [ @from_scripting = ] from_scripting ]
-  [ , [ @deletebatchsize_xact = ] deletebatchsize_xact ]
-  [ , [ @deletebatchsize_cmd = ] deletebatchsize_cmd ]
-  [ ; ]
+      [ @database = ]
+      N
+      'database'
+      [ , [ @data_folder = ]
+      N
+      'data_folder'
+      ]
+      [ , [ @data_file = ]
+      N
+      'data_file'
+      ]
+      [ , [ @data_file_size = ] data_file_size ]
+      [ , [ @log_folder = ]
+      N
+      'log_folder'
+      ]
+      [ , [ @log_file = ]
+      N
+      'log_file'
+      ]
+      [ , [ @log_file_size = ] log_file_size ]
+      [ , [ @min_distretention = ] min_distretention ]
+      [ , [ @max_distretention = ] max_distretention ]
+      [ , [ @history_retention = ] history_retention ]
+      [ , [ @security_mode = ] security_mode ]
+      [ , [ @login = ]
+      N
+      'login'
+      ]
+      [ , [ @password = ]
+      N
+      'password'
+      ]
+      [ , [ @createmode = ] createmode ]
+      [ , [ @from_scripting = ] from_scripting ]
+      [ , [ @deletebatchsize_xact = ] deletebatchsize_xact ]
+      [ , [ @deletebatchsize_cmd = ] deletebatchsize_cmd ]
+      [ ; ]
 ---
 
 ## Description

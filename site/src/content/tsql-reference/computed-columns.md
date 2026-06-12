@@ -3,8 +3,8 @@ name: "Computed columns"
 title: "Computed columns"
 category: "statements"
 description: "columns that exceed the byte limit can be created if the existing"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 bytes.) Indexes on

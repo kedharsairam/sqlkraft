@@ -1,31 +1,10 @@
 ---
 title: "Lesson 1: Creating the Conversation Objects"
 topic: "service-broker"
-description: |
-  09/04/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  In this lesson, you learn to build all the objects that enable a database to support a
-
-  conversation in the database.
-
-  Copy and paste t
-tags:
-  - "service-broker"
-  - "lesson-1-creating-the-conversation-objects"
-pubDate: 2025-12-01
+description: "09/04/2025 In this lesson, you learn to build all the objects that enable a database to support a conversation in the database. Copy and paste t"
+tags: ["service-broker","lesson-1-creating-the-conversation-objects"]
+pubDate: "2025-12-01"
 ---
-
-09/04/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 In this lesson, you learn to build all the objects that enable a database to support a
 

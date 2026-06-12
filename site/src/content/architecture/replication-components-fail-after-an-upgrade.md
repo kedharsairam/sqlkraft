@@ -2,8 +2,8 @@
 title: "Replication components fail after an upgrade"
 topic: "io-fundamentals"
 description: "2025 (17.x)"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 2025 (17.x)

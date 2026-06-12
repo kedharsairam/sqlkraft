@@ -1,21 +1,10 @@
 ---
 title: "Backup on Secondary Replica"
 topic: "high-availability"
-description: |
-  Applies to:
-
-  SQL Server
-
-  The Always On availability groups active secondary capabilities include support for taking
-
-  backups on secondary replicas. Backup operations can put significant strain on I/O
-tags:
-  - "high-availability"
-  - "backup-on-secondary-replica"
-pubDate: 2025-12-01
+description: "The Always On availability groups active secondary capabilities include support for taking backups on secondary replicas. Backup operations can put significant strain on I/O"
+tags: ["high-availability","backup-on-secondary-replica"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 The Always On availability groups active secondary capabilities include support for taking
 

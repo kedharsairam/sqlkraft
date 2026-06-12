@@ -1,25 +1,10 @@
 ---
 title: "Configure repositories (SQL Server 2025 and later)"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article describes how to configure the correct repository for installing and upgrading SQL
-
-  Server 2025 (17.x) on Red Hat Enterprise Linux (RHEL) and Ubuntu.
-
-  F
-tags:
-  - "linux-operations"
-  - "configure-repositories-sql-server-2025-and-later"
-pubDate: 2025-12-01
+description: "on Linux This article describes how to configure the correct repository for installing and upgrading SQL Server 2025 (17.x) on Red Hat Enterprise Linux (RHEL) and Ubuntu. F"
+tags: ["linux-operations","configure-repositories-sql-server-2025-and-later"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

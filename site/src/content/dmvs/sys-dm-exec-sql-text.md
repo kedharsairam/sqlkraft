@@ -3,8 +3,8 @@ name: "sys.dm_exec_sql_text"
 title: "sys.dm_exec_sql_text"
 category: "execution"
 description: "Number of characters into the currently executing batch or stored procedure at occurs."
-tags: ["execution", "dmv"]
-pubDate: 2026-05-29
+tags: ["execution","dmv"]
+pubDate: "2026-05-29"
 syntax: "sys.dm_exec_sql_text(sql_handle | plan_handle)"
 ---
 
@@ -19,12 +19,6 @@ sys.dm_exec_sql_text(sql_handle | plan_handle)
 ```
 
 ## Arguments
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Returns the text of the SQL batch that is identified by the specified. This table-
 

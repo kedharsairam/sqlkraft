@@ -1,11 +1,11 @@
 ---
-name: LOGMGR_LOGFILE
+name: "LOGMGR_LOGFILE"
 title: "Log Manager Log File Wait"
-category: io
-severity: medium
+category: "io"
+severity: "medium"
 description: "Occurs when waiting for log file space — either waiting for log growth to complete or waiting for VLFs to be truncated. High values indicate oversized VLFs or slow log backups."
-tags: ["io", "log", "vlf", "backup"]
-pubDate: 2026-05-29
+tags: ["io","log","vlf","backup"]
+pubDate: "2026-05-29"
 relatedScripts: ["monitor-log-file-space"]
 ---
 

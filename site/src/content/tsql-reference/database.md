@@ -3,8 +3,8 @@ name: "database"
 title: "Database"
 category: "statements"
 description: "command isn't supported for the statistics object on a"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## A. Create a simple nonclustered rowstore index
@@ -45,7 +45,7 @@ and SQL database in Microsoft Fabric don't support filegroups other
 
 than.
 
-Azure SQL Database, SQL database in Microsoft Fabric, and Azure SQL Managed Instance
+, SQL database in Microsoft Fabric, and Azure SQL Managed Instance
 
 don't support
 

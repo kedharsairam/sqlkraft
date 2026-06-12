@@ -1,32 +1,10 @@
 ---
 title: "Create DML Triggers"
 topic: "change-data-capture"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article describes how to create a Transact-SQL Data Manipulation Language (DML) trigger
-
-tags:
-  - "change-data-capture"
-  - "create-dml-triggers"
-pubDate: 2025-12-01
+description: "This article describes how to create a Transact-SQL Data Manipulation Language (DML) trigger"
+tags: ["change-data-capture","create-dml-triggers"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article describes how to create a Transact-SQL Data Manipulation Language (DML) trigger
 

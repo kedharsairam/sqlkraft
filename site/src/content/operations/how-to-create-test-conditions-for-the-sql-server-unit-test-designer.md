@@ -3,21 +3,17 @@ title: "How to: Create Test Conditions for the SQL Server Unit Test Designer"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  You can use the extensible
-
-  TestCondition
-
-  class to create new test conditions. For example, you
-
-  might create a new test condition that verifies the number of columns or the values in a r
-tags:
-  - "ssb-diagnose"
-  - "how-to-create-test-conditions-for-the-sql-server-unit-test-designer"
-pubDate: 2025-12-01
+  
+    You can use the extensible
+  
+    TestCondition
+  
+    class to create new test conditions. For example, you
+  
+    might create a new test condition that verifies the number of columns or the values in a r
+tags: ["ssb-diagnose","how-to-create-test-conditions-for-the-sql-server-unit-test-designer"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 You can use the extensible
 

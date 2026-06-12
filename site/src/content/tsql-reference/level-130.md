@@ -3,8 +3,8 @@ name: "level 130"
 title: "Level 130"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 the memory grant size of a cached plan if an

@@ -1,27 +1,10 @@
 ---
 title: "Lease, cluster, & health check timeouts"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  05/19/2025
-
-  Differences in hardware, software, and cluster configurations as well as different application
-
-  requirements for uptime and performance require specific configuration for lease
-tags:
-  - "high-availability"
-  - "lease-cluster-health-check-timeouts"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","lease-cluster-health-check-timeouts"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-05/19/2025
 
 Differences in hardware, software, and cluster configurations as well as different application
 

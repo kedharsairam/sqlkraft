@@ -3,19 +3,15 @@ title: "Connect to an existing database in SSDT"
 topic: "data-tools"
 description: |
   09/09/2025
-
-  This article shows how a user can connect to an existing database in SQL Server Data Tools
-
-  (SSDT). SSDT allows you to connect to an existing database, run queries with Transact-SQL (T-
-
-  S
-tags:
-  - "data-tools"
-  - "connect-to-an-existing-database-in-ssdt"
-pubDate: 2025-12-01
+  
+    This article shows how a user can connect to an existing database in SQL Server Data Tools
+  
+    (SSDT). SSDT allows you to connect to an existing database, run queries with Transact-SQL (T-
+  
+    S
+tags: ["data-tools","connect-to-an-existing-database-in-ssdt"]
+pubDate: "2025-12-01"
 ---
-
-09/09/2025
 
 This article shows how a user can connect to an existing database in SQL Server Data Tools
 
@@ -69,13 +65,9 @@ Object. Alternatively, you can use the shortcut
 
 : In the SQL Server Object Explorer window, select the
 
-SQL Server
-
 button (it looks like a sheet with a
 
 icon to its top left) or right-click on the
-
-SQL Server
 
 node and choose.
 

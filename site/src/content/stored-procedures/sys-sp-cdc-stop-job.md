@@ -4,14 +4,14 @@ title: "sys.sp_cdc_stop_job"
 category: "general"
 description: "Stops a change data capture cleanup or capture job for the current database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sys.sp_cdc_stop_job
-  [ [ @job_type = ]
-  N
-  'job_type'
-  ]
-  [ ; ]
+      [ [ @job_type = ]
+      N
+      'job_type'
+      ]
+      [ ; ]
 ---
 
 ## Description

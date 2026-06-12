@@ -1,35 +1,14 @@
 ---
 title: "Analyze Deadlocks with SQL Server Profiler"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Use SQL Server Profiler to identify the cause of a deadlock. A deadlock occurs when there's a
-
-  cyclic dependency between two or more th
-tags:
-  - "profiler"
-  - "analyze-deadlocks-with-sql-server-profiler"
-pubDate: 2025-12-01
+description: "06/06/2025 Use SQL Server Profiler to identify the cause of a deadlock."
+tags: ["profiler","analyze-deadlocks-with-sql-server-profiler"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Use SQL Server Profiler to identify the cause of a deadlock. A deadlock occurs when there's a
 
-cyclic dependency between two or more threads, or processes, for some set of resources within
-
-SQL Server. Using SQL Server Profiler, you can create a trace that records, replays, and displays
+cyclic dependency between two or more threads, or processes, for some set of resources within. Using SQL Server Profiler, you can create a trace that records, replays, and displays
 
 deadlock events for analysis.
 

@@ -3,8 +3,8 @@ name: "and Analytics Platform System (PDW)"
 title: "And Analytics Platform System (PDW)"
 category: "operators"
 description: "When the database compatibility level is 110 or higher. See"
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 When the database compatibility level is 110 or higher. See

@@ -2,9 +2,9 @@
 name: "To Extract Linked Server Password"
 title: "To Extract Linked Server Password"
 description: ""
-category: security-audit
+category: "security-audit"
 tags: ["security-audit"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

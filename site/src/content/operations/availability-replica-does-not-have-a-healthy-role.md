@@ -1,39 +1,10 @@
 ---
 title: "Availability replica does not have a healthy role"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  : Availability Replica Role State
-
-  : Availability replica does not have a healthy role.
-
-  :
-
-  : Availability replica
-
-  This policy checks the state of the
-tags:
-  - "high-availability"
-  - "availability-replica-does-not-have-a-healthy-role"
-pubDate: 2025-12-01
+description: ": Availability Replica Role State : Availability replica does not have a healthy role."
+tags: ["high-availability","availability-replica-does-not-have-a-healthy-role"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 : Availability Replica Role State
 

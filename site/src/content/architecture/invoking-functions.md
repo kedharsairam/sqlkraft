@@ -1,25 +1,10 @@
 ---
 title: "Invoking functions"
 topic: "clr-integration"
-description: |
-  Applies to:
-
-  SQL Server
-
-  In Transact-SQL
-
-  statements, you can invoke common language runtime (CLR) user-
-
-  defined aggregates, subject to all the rules that apply to system aggregate functions.
-
-  The fo
-tags:
-  - "clr-integration"
-  - "invoking-functions"
-pubDate: 2025-12-01
+description: "In Transact-SQL statements, you can invoke common language runtime (CLR) user- defined aggregates, subject to all the rules that apply to system aggregate functions."
+tags: ["clr-integration","invoking-functions"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 In Transact-SQL
 

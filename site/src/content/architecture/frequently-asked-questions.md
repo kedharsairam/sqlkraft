@@ -1,29 +1,12 @@
 ---
 title: "Frequently asked questions"
 topic: "change-data-capture"
-description: |
-  Applies to:
-
-  SQL Server 2025 (17.x)
-
-  Azure SQL Database
-
-  Azure SQL Managed
-
-  Instance
-
-  The following are answers to questions about the Change Event Streaming (CES) feature for SQL
-
-  Server 2025 (17.x),
-tags:
-  - "change-data-capture"
-  - "frequently-asked-questions"
-pubDate: 2025-12-01
+description: "2025 (17.x) Azure SQL Managed Instance The following are answers to questions about the Change Event Streaming (CES) feature for SQL Server 2025 (17.x),"
+tags: ["change-data-capture","frequently-asked-questions"]
+pubDate: "2025-12-01"
 ---
 
 2025 (17.x)
-
-Azure SQL Database
 
 Azure SQL Managed
 

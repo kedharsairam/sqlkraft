@@ -1,11 +1,11 @@
 ---
-name: CMEMTHREAD
+name: "CMEMTHREAD"
 title: "Class CMEMTHREAD Wait"
-category: memory
-severity: high
+category: "memory"
+severity: "high"
 description: "Occurs when waiting on a thread-safe memory allocation object. High values indicate memory object contention, often from frequent ad-hoc query compilations or parameterization inefficiencies."
-tags: ["memory", "thread", "allocation", "compile"]
-pubDate: 2026-05-29
+tags: ["memory","thread","allocation","compile"]
+pubDate: "2026-05-29"
 relatedScripts: ["diagnose-memory-pressure"]
 ---
 

@@ -2,9 +2,9 @@
 name: "To Track Database Level Changes"
 title: "To Track Database Level Changes"
 description: "first create a table to collect the data in master or desired database"
-category: automation
-tags: ["automation", "database"]
-pubDate: 2025-03-15
+category: "automation"
+tags: ["automation","database"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

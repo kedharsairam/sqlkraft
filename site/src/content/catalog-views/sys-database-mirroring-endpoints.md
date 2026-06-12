@@ -3,17 +3,17 @@ name: "sys.database_mirroring_endpoints"
 title: "sys.database_mirroring_endpoints"
 category: "compatibility"
 description: "Returns one row for the database mirroring endpoint of an instance of SQL Server. Note: This value is relevant only for database mirroring. Description of mirroring role, one of: Note: This value is relevant only for database mirroring. The database mirroring endpoint supports both sessions between database mirroring partners and with witnesses and sessions between the primary replica of an Always"
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   <witness_option>
-  ::=
-  WITNESS
-  { =
-  'witness_server'
-  |
-  OFF
-  }
+      ::=
+      WITNESS
+      { =
+      'witness_server'
+      |
+      OFF
+      }
 ---
 
 ## Description

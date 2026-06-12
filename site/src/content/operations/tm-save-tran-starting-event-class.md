@@ -1,31 +1,10 @@
 ---
 title: "TM: Save Tran Starting Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The TM: Save Tran Starting event class indicates that a SAVE TRANSACTION request is starting.
-tags:
-  - "event-classes"
-  - "tm-save-tran-starting-event-class"
-pubDate: 2025-12-01
+description: "The TM: Save Tran Starting event class indicates that a SAVE TRANSACTION request is starting."
+tags: ["event-classes","tm-save-tran-starting-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The TM: Save Tran Starting event class indicates that a SAVE TRANSACTION request is starting.
 

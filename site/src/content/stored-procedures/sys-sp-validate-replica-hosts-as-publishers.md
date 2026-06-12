@@ -4,7 +4,7 @@ title: "sp_validate_replica_hosts_as_publishers"
 category: "general"
 description: "that allows all secondary replicas to be validated, rather than just the current primary replica. entire Always On replication topology. executed directly on the distributor by using a remote desktop session to avoid a double-hop The name of the instance of SQL Server that originally published the database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_validate_replica_hosts_as_publishers"
 ---
 

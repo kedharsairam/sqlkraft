@@ -3,53 +3,53 @@ name: "sys.service_queues"
 title: "sys.service_queues"
 category: "compatibility"
 description: "Contains a row for each object in the database that is a service queue, with For a list of columns that this view inherits, see Maximum number of the concurrent readers Three-part name of the activation procedure."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   SELECT
-  t.name
-  AS
-  parent_table,
-  t.object_id
-  AS
-  parent_table_id,
-  it.name
-  AS
-  internal_table_name,
-  it.object_id
-  AS
-  internal_table_id,
-  xi.name
-  AS
-  primary_XML_index_name,
-  xi.index_id
-  AS
-  primary_XML_index_id
-  FROM
-  sys.internal_tables
-  AS
-  it
-  INNER
-  JOIN
-  sys.tables
-  AS
-  t
-  ON
-  it.parent_id = t.object_id
-  INNER
-  JOIN
-  sys.xml_indexes
-  AS
-  xi
-  ON
-  it.parent_id = xi.object_id
-  AND
-  it.parent_minor_id = xi.index_id
-  WHERE
-  it.internal_type_desc =
-  'XML_INDEX_NODES'
-  ;
-  GO
+      t.name
+      AS
+      parent_table,
+      t.object_id
+      AS
+      parent_table_id,
+      it.name
+      AS
+      internal_table_name,
+      it.object_id
+      AS
+      internal_table_id,
+      xi.name
+      AS
+      primary_XML_index_name,
+      xi.index_id
+      AS
+      primary_XML_index_id
+      FROM
+      sys.internal_tables
+      AS
+      it
+      INNER
+      JOIN
+      sys.tables
+      AS
+      t
+      ON
+      it.parent_id = t.object_id
+      INNER
+      JOIN
+      sys.xml_indexes
+      AS
+      xi
+      ON
+      it.parent_id = xi.object_id
+      AND
+      it.parent_minor_id = xi.index_id
+      WHERE
+      it.internal_type_desc =
+      'XML_INDEX_NODES'
+      ;
+      GO
 ---
 
 ## Description

@@ -1,35 +1,10 @@
 ---
 title: "AdventureWorks"
 topic: "monitor"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article provides direct links for downloading
-
-  sample databases and
-
-  instructions for re
-tags:
-  - "monitor"
-  - "adventureworks"
-pubDate: 2025-12-01
+description: ""
+tags: ["monitor","adventureworks"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article provides direct links for downloading
 
@@ -41,11 +16,7 @@ For more information about samples, see the
 
 Samples GitHub repository.
 
-SQL Server
-
 or
-
-Azure SQL Database
 
 Management Studio (SSMS)
 

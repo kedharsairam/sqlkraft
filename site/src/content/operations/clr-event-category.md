@@ -1,43 +1,10 @@
 ---
 title: "CLR Event Category"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event category includes event classes that are produced by the execution of .NET
-
-  Framework common
-tags:
-  - "event-classes"
-  - "clr-event-category"
-pubDate: 2025-12-01
+description: "The event category includes event classes that are produced by the execution of .NET Framework common"
+tags: ["event-classes","clr-event-category"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

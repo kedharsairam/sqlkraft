@@ -2,17 +2,9 @@
 title: "Operating system task scheduling"
 topic: "thread-task"
 description: ""
-tags: ["thread-task", "architecture"]
-pubDate: 2026-05-29
+tags: ["thread-task","architecture"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Threads are the smallest units of processing that are executed by an operating system, and
 

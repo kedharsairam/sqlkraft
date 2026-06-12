@@ -4,19 +4,9 @@ title: "XQuery - Functions on Nodes - number"
 category: "xquery"
 description: "XQuery Language Reference: Functions on Nodes - number"
 syntax: "ROOT"
-tags:
-  - "xquery"
-  - "functions-on-nodes-number"
-pubDate: 2025-12-01
+tags: ["xquery","functions-on-nodes-number"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Returns the numeric value of the node that is indicated by
 

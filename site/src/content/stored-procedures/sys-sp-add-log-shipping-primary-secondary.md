@@ -4,18 +4,18 @@ title: "sp_add_log_shipping_primary_secondary"
 category: "general"
 description: "This stored procedure adds an entry for a secondary database on the primary server."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_add_log_shipping_primary_secondary
-  [ @primary_database = ]
-  'primary_database'
-  ,
-  [ @secondary_server = ]
-  'secondary_server'
-  ,
-  [ @secondary_database = ]
-  'secondary_database'
-  [ ; ]
+      [ @primary_database = ]
+      'primary_database'
+      ,
+      [ @secondary_server = ]
+      'secondary_server'
+      ,
+      [ @secondary_database = ]
+      'secondary_database'
+      [ ; ]
 ---
 
 ## Description

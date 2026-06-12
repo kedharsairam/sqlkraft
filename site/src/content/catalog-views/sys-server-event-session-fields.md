@@ -3,8 +3,8 @@ name: "sys.server_event_session_fields"
 title: "sys.server_event_session_fields"
 category: "compatibility"
 description: "Returns a row for each customizable column that was explicitly set on events and targets. The ID of the event session. Is not nullable. The ID of the object this field is associated with. Is not nullable."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "VIEW SERVER PERFORMANCE STATE"
 ---
 
@@ -18,8 +18,6 @@ VIEW SERVER PERFORMANCE STATE
 ```
 
 ## Remarks
-
-Azure SQL Managed Instance
 
 Returns a row for each customizable column that was explicitly set on events and targets.
 

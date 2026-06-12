@@ -1,31 +1,10 @@
 ---
 title: "Transaction log disk space"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Large-scale index operations can generate large data loads that can cause the transaction log
-tags:
-  - "filestream"
-  - "transaction-log-disk-space"
-pubDate: 2025-12-01
+description: ""
+tags: ["filestream","transaction-log-disk-space"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Large-scale index operations can generate large data loads that can cause the transaction log
 

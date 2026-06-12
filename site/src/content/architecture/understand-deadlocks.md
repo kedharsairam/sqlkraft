@@ -2,17 +2,9 @@
 title: "Understand deadlocks"
 topic: "locking"
 description: ""
-tags: ["locking", "architecture"]
-pubDate: 2026-05-29
+tags: ["locking","architecture"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

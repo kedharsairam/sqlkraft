@@ -2,8 +2,8 @@
 title: "Monitor lock escalation"
 topic: "locking"
 description: ""
-tags: ["locking", "architecture"]
-pubDate: 2026-05-29
+tags: ["locking","architecture"]
+pubDate: "2026-05-29"
 ---
 
 This query acquires and holds an

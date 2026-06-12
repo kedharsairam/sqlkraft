@@ -1,35 +1,10 @@
 ---
 title: "Deprecation Final Support Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event class occurs when you use a feature that will be removed
-
-  from the next major rele
-tags:
-  - "event-classes"
-  - "deprecation-final-support-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","deprecation-final-support-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

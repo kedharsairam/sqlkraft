@@ -4,7 +4,7 @@ title: "sp_executesql"
 category: "general"
 description: "A placeholder for the values of extra parameters. Values can only be constants or variables. Values can't be more complex expressions such as functions, or expressions built by using (success) or non-zero (failure). Returns the result sets from all the SQL statements built into the SQL string. parameters must be entered in the specific order as described in the section earlier in this article. If"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "AdventureWorks2025"
 ---
 
@@ -18,12 +18,6 @@ A placeholder for the values of extra parameters. Values can only be constants o
 
 ## Arguments
 
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
 
 SQL analytics endpoint in
@@ -31,8 +25,6 @@ SQL analytics endpoint in
 Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Executes a Transact-SQL statement or batch that can be reused many times, or one that is built
 

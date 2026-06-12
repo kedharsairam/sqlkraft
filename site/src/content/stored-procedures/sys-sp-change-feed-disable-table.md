@@ -4,12 +4,12 @@ title: "sp_change_feed_disable_table"
 category: "general"
 description: "2022 (16.x) and later versions Mirrored databases in Microsoft SQL database in Microsoft Fabric Removes a table from the change feed. This system stored procedure is used for: SQL database in Microsoft Fabric Microsoft Fabric mirrored databases The unique identifier of the change feed table group that the table belongs to."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sys.sp_change_feed_disable_table
-  @table_group_id
-  , @table_id
-  GO
+      @table_group_id
+      , @table_id
+      GO
 ---
 
 ## Description

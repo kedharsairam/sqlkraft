@@ -3,8 +3,8 @@ name: "Truncating and rounding results"
 title: "Truncating and rounding results"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 When you explicitly or implicitly cast the data type to a string or binary data type, the content of the data type is serialized based on a defined set of rules. For information about these rules, see

@@ -1,29 +1,10 @@
 ---
 title: "Replay Options"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Before replaying a captured trace with SQL Server Profiler, specify replay options in the
-
-  dialog box. To launch this dialog box, open
-tags:
-  - "profiler"
-  - "replay-options"
-pubDate: 2025-12-01
+description: "06/06/2025 Before replaying a captured trace with SQL Server Profiler, specify replay options in the dialog box."
+tags: ["profiler","replay-options"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Before replaying a captured trace with SQL Server Profiler, specify replay options in the
 

@@ -1,57 +1,14 @@
 ---
 title: "Native client error 50,000"
 topic: "monitor"
-description: |
-  Article
-
-  •
-
-  04/04/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  Product Name
-
-  SQL Server
-
-  Product Version
-
-  11
-tags:
-  - "monitor"
-  - "native-client-error-50000"
-pubDate: 2025-12-01
+description: "Product Name Product Version 11"
+tags: ["monitor","native-client-error-50000"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/04/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
 Product Name
-
-SQL Server
 
 Product Version
 

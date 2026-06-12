@@ -5,34 +5,24 @@ category: "xquery"
 description: "XQuery Language Reference: xQuery"
 syntax: |
   DECLARE
-  @x
-  xml
-  SET
-  @x =
-  '<ROOT><a>111</a></ROOT>'
-  SELECT
-  @x.query(
-  '/ROOT/a'
-  )
-  SELECT
-  Instructions.query(
-  'declare namespace
-  AWMI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
-  works/ProductModelManuInstructions";
-  /AWMI:root/AWMI:Location[@LocationID=10]
-tags:
-  - "xquery"
-  - "xquery"
-pubDate: 2025-12-01
+    @x
+    xml
+    SET
+    @x =
+    '<ROOT><a>111</a></ROOT>'
+    SELECT
+    @x.query(
+    '/ROOT/a'
+    )
+    SELECT
+    Instructions.query(
+    'declare namespace
+    AWMI="https://schemas.microsoft.com/sqlserver/2004/07/adventure-
+    works/ProductModelManuInstructions";
+    /AWMI:root/AWMI:Location[@LocationID=10]
+tags: ["xquery","xquery"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Transact-SQL supports a subset of the XQuery language that is used for querying the
 

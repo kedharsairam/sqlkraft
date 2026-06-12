@@ -1,23 +1,10 @@
 ---
 title: "Red Hat Enterprise Linux (RHEL)"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This sample bash script installs SQL Server on Red Hat Enterprise Linux (RHEL) without
-
-  interactive input. It provides examples of installing the Database Engine, th
-tags:
-  - "linux-operations"
-  - "red-hat-enterprise-linux-rhel"
-pubDate: 2025-12-01
+description: "on Linux This sample bash script installs SQL Server on Red Hat Enterprise Linux (RHEL) without interactive input."
+tags: ["linux-operations","red-hat-enterprise-linux-rhel"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

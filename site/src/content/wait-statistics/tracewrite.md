@@ -1,11 +1,11 @@
 ---
-name: TRACEWRITE
+name: "TRACEWRITE"
 title: "Trace Write Wait"
-category: baseline
-severity: low
+category: "baseline"
+severity: "low"
 description: "Occurs when the SQL Trace writer thread waits for the trace buffer to flush. Similar to SQLTRACE_WAIT_ENTRIES — consider migrating to Extended Events."
-tags: ["trace", "write", "profiler"]
-pubDate: 2026-05-29
+tags: ["trace","write","profiler"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

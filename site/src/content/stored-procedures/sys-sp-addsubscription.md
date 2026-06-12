@@ -4,109 +4,109 @@ title: "sp_addsubscription"
 category: "general"
 description: "Adds a subscription to a publication and sets the Subscriber status. This stored procedure is executed at the Publisher on the publication database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_addsubscription
-  [ @publication = ]
-  N
-  'publication'
-  [ , [ @article = ]
-  N
-  'article'
-  ]
-  [ , [ @subscriber = ]
-  N
-  'subscriber'
-  ]
-  [ , [ @destination_db = ]
-  N
-  'destination_db'
-  ]
-  [ , [ @sync_type = ]
-  N
-  'sync_type'
-  ]
-  [ , [ @status = ]
-  N
-  'status'
-  ]
-  [ , [ @subscription_type = ]
-  N
-  'subscription_type'
-  ]
-  [ , [ @update_mode = ]
-  N
-  'update_mode'
-  ]
-  [ , [ @loopback_detection = ]
-  N
-  'loopback_detection'
-  ]
-  [ , [ @frequency_type = ] frequency_type ]
-  [ , [ @frequency_interval = ] frequency_interval ]
-  [ , [ @frequency_relative_interval = ] frequency_relative_interval ]
-  [ , [ @frequency_recurrence_factor = ] frequency_recurrence_factor ]
-  [ , [ @frequency_subday = ] frequency_subday ]
-  [ , [ @frequency_subday_interval = ] frequency_subday_interval ]
-  [ , [ @active_start_time_of_day = ] active_start_time_of_day ]
-  [ , [ @active_end_time_of_day = ] active_end_time_of_day ]
-  [ , [ @active_start_date = ] active_start_date ]
-  [ , [ @active_end_date = ] active_end_date ]
-  [ , [ @optional_command_line = ]
-  N
-  'optional_command_line'
-  ]
-  [ , [ @reserved = ]
-  N
-  'reserved'
-  ]
-  [ , [ @enabled_for_syncmgr = ]
-  N
-  'enabled_for_syncmgr'
-  ]
-  [ , [ @offloadagent = ] offloadagent ]
-  [ , [ @offloadserver = ]
-  N
-  'offloadserver'
-  ]
-  [ , [ @dts_package_name = ]
-  N
-  'dts_package_name'
-  ]
-  [ , [ @dts_package_password = ]
-  N
-  'dts_package_password'
-  ]
-  [ , [ @dts_package_location = ]
-  N
-  'dts_package_location'
-  ]
-  [ , [ @distribution_job_name = ]
-  N
-  'distribution_job_name'
-  ]
-  [ , [ @publisher = ]
-  N
-  'publisher'
-  ]
-  [ , [ @backupdevicetype = ]
-  N
-  'backupdevicetype'
-  ]
-  [ , [ @backupdevicename = ]
-  N
-  'backupdevicename'
-  ]
-  [ , [ @mediapassword = ]
-  N
-  'mediapassword'
-  ]
-  [ , [ @password = ]
-  N
-  'password'
-  ]
-  [ , [ @fileidhint = ] fileidhint ]
-  [ , [ @unload = ] unload ]
+      [ @publication = ]
+      N
+      'publication'
+      [ , [ @article = ]
+      N
+      'article'
+      ]
+      [ , [ @subscriber = ]
+      N
+      'subscriber'
+      ]
+      [ , [ @destination_db = ]
+      N
+      'destination_db'
+      ]
+      [ , [ @sync_type = ]
+      N
+      'sync_type'
+      ]
+      [ , [ @status = ]
+      N
+      'status'
+      ]
+      [ , [ @subscription_type = ]
+      N
+      'subscription_type'
+      ]
+      [ , [ @update_mode = ]
+      N
+      'update_mode'
+      ]
+      [ , [ @loopback_detection = ]
+      N
+      'loopback_detection'
+      ]
+      [ , [ @frequency_type = ] frequency_type ]
+      [ , [ @frequency_interval = ] frequency_interval ]
+      [ , [ @frequency_relative_interval = ] frequency_relative_interval ]
+      [ , [ @frequency_recurrence_factor = ] frequency_recurrence_factor ]
+      [ , [ @frequency_subday = ] frequency_subday ]
+      [ , [ @frequency_subday_interval = ] frequency_subday_interval ]
+      [ , [ @active_start_time_of_day = ] active_start_time_of_day ]
+      [ , [ @active_end_time_of_day = ] active_end_time_of_day ]
+      [ , [ @active_start_date = ] active_start_date ]
+      [ , [ @active_end_date = ] active_end_date ]
+      [ , [ @optional_command_line = ]
+      N
+      'optional_command_line'
+      ]
+      [ , [ @reserved = ]
+      N
+      'reserved'
+      ]
+      [ , [ @enabled_for_syncmgr = ]
+      N
+      'enabled_for_syncmgr'
+      ]
+      [ , [ @offloadagent = ] offloadagent ]
+      [ , [ @offloadserver = ]
+      N
+      'offloadserver'
+      ]
+      [ , [ @dts_package_name = ]
+      N
+      'dts_package_name'
+      ]
+      [ , [ @dts_package_password = ]
+      N
+      'dts_package_password'
+      ]
+      [ , [ @dts_package_location = ]
+      N
+      'dts_package_location'
+      ]
+      [ , [ @distribution_job_name = ]
+      N
+      'distribution_job_name'
+      ]
+      [ , [ @publisher = ]
+      N
+      'publisher'
+      ]
+      [ , [ @backupdevicetype = ]
+      N
+      'backupdevicetype'
+      ]
+      [ , [ @backupdevicename = ]
+      N
+      'backupdevicename'
+      ]
+      [ , [ @mediapassword = ]
+      N
+      'mediapassword'
+      ]
+      [ , [ @password = ]
+      N
+      'password'
+      ]
+      [ , [ @fileidhint = ] fileidhint ]
+      [ , [ @unload = ] unload ]
 ---
 
 ## Description

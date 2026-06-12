@@ -1,29 +1,10 @@
 ---
 title: "Lesson 3: Completing the Target Conversation Objects"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  In this lesson, you learn to create the linked server and routes from the target instance of the
-
-  Database Engine to the initiator inst
-tags:
-  - "service-broker"
-  - "lesson-3-completing-the-target-conversation-objects"
-pubDate: 2025-12-01
+description: ""
+tags: ["service-broker","lesson-3-completing-the-target-conversation-objects"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 In this lesson, you learn to create the linked server and routes from the target instance of the
 

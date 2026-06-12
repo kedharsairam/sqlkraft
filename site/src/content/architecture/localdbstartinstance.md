@@ -1,29 +1,10 @@
 ---
 title: "LocalDBStartInstance"
 topic: "clr-integration"
-description: |
-  07/14/2025
-
-  Applies to:
-
-  SQL Server
-
-  Starts the specified SQL Server Express LocalDB instance.
-
-  C++
-
-  [Input] The name of the LocalDB instance to start.
-
-  [Input] Reserved for future use. Currently shou
-tags:
-  - "clr-integration"
-  - "localdbstartinstance"
-pubDate: 2025-12-01
+description: "07/14/2025 Starts the specified SQL Server Express LocalDB instance. C++ [Input] The name of the LocalDB instance to start. [Input] Reserved for future use."
+tags: ["clr-integration","localdbstartinstance"]
+pubDate: "2025-12-01"
 ---
-
-07/14/2025
-
-SQL Server
 
 Starts the specified SQL Server Express LocalDB instance.
 

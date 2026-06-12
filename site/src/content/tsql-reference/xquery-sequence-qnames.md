@@ -4,19 +4,9 @@ title: "XQuery - Sequence & QNames"
 category: "xquery"
 description: "XQuery Language Reference: Sequence & QNames"
 syntax: ","
-tags:
-  - "xquery"
-  - "sequence-qnames"
-pubDate: 2025-12-01
+tags: ["xquery","sequence-qnames"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 This topic describes the following fundamental concepts of XQuery:
 

@@ -3,8 +3,8 @@ name: "sys.service_broker_endpoints"
 title: "sys.service_broker_endpoints"
 category: "service-broker"
 description: "When a route specifies next_hop_address , the network address is determined based on the network address in the name of the service. A route that specifies can specify a service name or broker instance. next_hop_address is the principal server for a database mirror, you must also specify the MIRROR_ADDRESS for the mirror server. Otherwise, this route does not automatically failover to the mirror s"
-tags: ["service-broker", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["service-broker","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "is_message_forwarding_enabled"
 ---
 

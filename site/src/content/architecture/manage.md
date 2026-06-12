@@ -1,35 +1,10 @@
 ---
 title: "Manage"
 topic: "filestream"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Describes common administrative tasks for managing FileTables.
-
-  To get a list of FileTables, query one of the following catalog views:
-
-  sys.filetables
-tags:
-  - "filestream"
-  - "manage"
-pubDate: 2025-12-01
+description: "Describes common administrative tasks for managing FileTables. To get a list of FileTables, query one of the following catalog views: sys.filetables"
+tags: ["filestream","manage"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Describes common administrative tasks for managing FileTables.
 

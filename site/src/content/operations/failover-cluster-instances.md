@@ -1,33 +1,10 @@
 ---
 title: "Failover cluster instances"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  A failover cluster is a combination of one or more physical disks in a Microsoft Cluster Service
-
-  (MSCS) cluster group, known as a resource group, that
-tags:
-  - "high-availability"
-  - "failover-cluster-instances"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","failover-cluster-instances"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 A failover cluster is a combination of one or more physical disks in a Microsoft Cluster Service
 

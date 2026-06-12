@@ -2,8 +2,8 @@
 title: "Supported features"
 topic: "query-processing"
 description: ""
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 For a detailed explanation of disk I/O in SQL Server, see

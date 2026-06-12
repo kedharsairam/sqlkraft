@@ -1,37 +1,10 @@
 ---
 title: "Set Up on a Failover Cluster"
 topic: "filestream"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to enable FILESTREAM on a failover cluster. Before you try this
-
-  procedure, you should understand
-
-  failover clustering
-
-  and ha
-tags:
-  - "filestream"
-  - "set-up-on-a-failover-cluster"
-pubDate: 2025-12-01
+description: "This topic describes how to enable FILESTREAM on a failover cluster."
+tags: ["filestream","set-up-on-a-failover-cluster"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 This topic describes how to enable FILESTREAM on a failover cluster. Before you try this
 
@@ -47,17 +20,13 @@ Enable and Configure FILESTREAM.
 
 1. Set up the primary node for the failover cluster.
 
-After the setup finishes, enable FILESTREAM on the primary node by using
-
-SQL Server. This enables the settings that require Windows Admin privileges.
+After the setup finishes, enable FILESTREAM on the primary node by using. This enables the settings that require Windows Admin privileges.
 
 If remote access is required, select. This will create a file-share cluster resource.
 
 2. Set up a passive node.
 
-After the setup finishes, enable FILESTREAM on the passive node by using
-
-SQL Server. The name that you specify for
+After the setup finishes, enable FILESTREAM on the passive node by using. The name that you specify for
 
 must be
 

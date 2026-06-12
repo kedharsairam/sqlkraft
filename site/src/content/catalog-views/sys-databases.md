@@ -3,8 +3,8 @@ name: "sys.databases"
 title: "sys.databases"
 category: "databases-files"
 description: "Lists databases that either reside in an instance of the SQL Server or are accessible through a database gateway."
-tags: ["databases-files", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["databases-files","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "sys.dm_database_copies"
 ---
 
@@ -90,12 +90,6 @@ value for databases larger than 2.15 TB.
 
 Expand table
 
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
 
 SQL analytics endpoint in
@@ -103,8 +97,6 @@ SQL analytics endpoint in
 Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 This function returns the database identification (ID) number of a specified database.
 

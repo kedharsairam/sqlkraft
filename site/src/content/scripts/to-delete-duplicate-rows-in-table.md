@@ -2,9 +2,9 @@
 name: "To Delete Duplicate Rows in Table"
 title: "To Delete Duplicate Rows in Table"
 description: ""
-category: database
-tags: ["database", "table"]
-pubDate: 2025-03-15
+category: "database"
+tags: ["database","table"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

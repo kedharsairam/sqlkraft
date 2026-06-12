@@ -4,19 +4,9 @@ title: "XQuery - Path Expressions - Specifying Axis"
 category: "xquery"
 description: "XQuery Language Reference: Path Expressions - Specifying Axis"
 syntax: "child::ProductDescription/child::Summary"
-tags:
-  - "xquery"
-  - "path-expressions-specifying-axis"
-pubDate: 2025-12-01
+tags: ["xquery","path-expressions-specifying-axis"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 An axis step in a path expression includes the following components:
 

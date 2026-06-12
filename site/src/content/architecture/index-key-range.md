@@ -2,8 +2,8 @@
 title: "index key range"
 topic: "index-architecture"
 description: "pages can occur if you have relatively few data files in a filegroup and a large number of CPU"
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 pages can occur if you have relatively few data files in a filegroup and a large number of CPU

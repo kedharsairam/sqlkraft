@@ -2,8 +2,8 @@
 title: "Buffer management"
 topic: "memory-management"
 description: ", the initial memory grant can't be exceeded under any condition. If"
-tags: ["memory-management", "architecture"]
-pubDate: 2026-05-29
+tags: ["memory-management","architecture"]
+pubDate: "2026-05-29"
 ---
 
 For

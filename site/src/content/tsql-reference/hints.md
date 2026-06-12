@@ -3,15 +3,9 @@ name: "Hints"
 title: "Hints"
 category: "hints"
 description: ""
-tags: ["tsql", "hints"]
-pubDate: 2026-05-29
+tags: ["tsql","hints"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 SQL analytics endpoint in Microsoft Fabric
 

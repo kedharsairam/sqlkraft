@@ -3,8 +3,8 @@ name: "Queue Columns"
 title: "Queue Columns"
 category: "statements"
 description: "When the WAITFOR clause is specified, the statement waits for the specified time out, or until a"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 When the WAITFOR clause is specified, the statement waits for the specified time out, or until a

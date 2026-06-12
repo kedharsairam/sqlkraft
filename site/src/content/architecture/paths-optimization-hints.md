@@ -1,41 +1,10 @@
 ---
 title: "Paths & optimization hints"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  This article describes how to specify node paths to index and optimization hints for indexing
-
-  when you
-tags:
-  - "xml-data"
-  - "paths-optimization-hints"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","paths-optimization-hints"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This article describes how to specify node paths to index and optimization hints for indexing
 

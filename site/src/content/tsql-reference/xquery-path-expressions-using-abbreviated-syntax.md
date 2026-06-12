@@ -4,15 +4,9 @@ title: "XQuery - Path Expressions - Using Abbreviated Syntax"
 category: "xquery"
 description: "XQuery Language Reference: Path Expressions - Using Abbreviated Syntax"
 syntax: "child"
-tags:
-  - "xquery"
-  - "path-expressions-using-abbreviated-syntax"
-pubDate: 2025-12-01
+tags: ["xquery","path-expressions-using-abbreviated-syntax"]
+pubDate: "2025-12-01"
 ---
-
-09/26/2025
-
-SQL Server
 
 All the examples in
 

@@ -3,8 +3,8 @@ name: "STGeometryN (geometry Data Type)"
 title: "STGeometryN (geometry Data Type)"
 category: "data-types"
 description: "Returns the specified geometry from a geometry collection."
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

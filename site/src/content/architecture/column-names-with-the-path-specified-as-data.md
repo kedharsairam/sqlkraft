@@ -1,35 +1,10 @@
 ---
 title: "Column Names with the Path Specified as data()"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  If the path specified as column name is
-
-  , the value is treated as an atomic value in the
-
-  ge
-tags:
-  - "xml-data"
-  - "column-names-with-the-path-specified-as-data"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","column-names-with-the-path-specified-as-data"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 If the path specified as column name is
 

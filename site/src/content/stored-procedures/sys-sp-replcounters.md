@@ -4,10 +4,10 @@ title: "sp_replcounters"
 category: "general"
 description: "Returns replication statistics about latency, throughput, and transaction count for each published database. This stored procedure is executed at the Publisher on any database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   Replicated
-  transactions
+      transactions
 ---
 
 ## Description

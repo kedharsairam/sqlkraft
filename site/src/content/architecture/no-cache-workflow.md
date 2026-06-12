@@ -2,21 +2,9 @@
 title: "No cache workflow"
 topic: "query-processing"
 description: ""
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
-
-Article
-
-•
-
-05/19/2025
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This article explains how SQL Server uses a security cache to validate permissions a principal
 

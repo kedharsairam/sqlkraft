@@ -1,29 +1,10 @@
 ---
 title: "Typical Uses of Service Broker"
 topic: "service-broker"
-description: |
-  09/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Service Broker can be useful for any application that needs to perform processing
-
-  asynchronously, or that needs to distribute processi
-tags:
-  - "service-broker"
-  - "typical-uses-of-service-broker"
-pubDate: 2025-12-01
+description: "09/11/2025 Service Broker can be useful for any application that needs to perform processing asynchronously, or that needs to distribute processi"
+tags: ["service-broker","typical-uses-of-service-broker"]
+pubDate: "2025-12-01"
 ---
-
-09/11/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Service Broker can be useful for any application that needs to perform processing
 

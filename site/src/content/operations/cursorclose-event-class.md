@@ -1,33 +1,10 @@
 ---
 title: "CursorClose Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Cursor close events occur when the Database Engine closes and deallocates a cursor. The
-
-  even
-tags:
-  - "event-classes"
-  - "cursorclose-event-class"
-pubDate: 2025-12-01
+description: "Cursor close events occur when the Database Engine closes and deallocates a cursor."
+tags: ["event-classes","cursorclose-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Cursor close events occur when the Database Engine closes and deallocates a cursor. The
 

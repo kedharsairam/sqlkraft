@@ -1,45 +1,12 @@
 ---
 title: "LOCALDB_ERROR_INSUFFICIENT_BUFFER"
 topic: "clr-integration"
-description: |
-  07/14/2025
-
-  Applies to:
-
-  SQL Server
-
-  Product Name
-
-  SQL Server
-
-  Event ID
-
-  276
-
-  Event Source
-
-  SQL Server Local Database Runtime 12.0
-
-  Component
-
-  Local Database Runtime API
-
-  Message Text
-
-  The buffer pass
-tags:
-  - "clr-integration"
-  - "localdb-error-insufficient-buffer"
-pubDate: 2025-12-01
+description: ""
+tags: ["clr-integration","localdb-error-insufficient-buffer"]
+pubDate: "2025-12-01"
 ---
 
-07/14/2025
-
-SQL Server
-
 Product Name
-
-SQL Server
 
 Event ID
 

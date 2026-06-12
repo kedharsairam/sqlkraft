@@ -4,16 +4,16 @@ title: "sp_unbindrule"
 category: "general"
 description: "Unbinds a rule from a column or an alias data type in the current database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_unbindrule
-  [ @objname = ]
-  N
-  'objname'
-  [ , [ @futureonly = ]
-  'futureonly'
-  ]
-  [ ; ]
+      [ @objname = ]
+      N
+      'objname'
+      [ , [ @futureonly = ]
+      'futureonly'
+      ]
+      [ ; ]
 ---
 
 ## Description

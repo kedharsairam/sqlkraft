@@ -3,8 +3,8 @@ name: "Additional remarks about creating indexes"
 title: "Additional remarks about creating indexes"
 category: "statements"
 description: "Under certain conditions, spatial indexes support a number of set-oriented geometry methods."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Under certain conditions, spatial indexes support a number of set-oriented geometry methods.

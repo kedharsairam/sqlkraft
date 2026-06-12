@@ -3,23 +3,19 @@ title: "Using Test Conditions in SQL Server Unit Tests"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  In a SQL Server unit test, one or more Transact-SQL test scripts are executed. The results can be
-
-  evaluated within the Transact-SQL script and
-
-  or
-
-  used to return an error and
-
-  fail the t
-tags:
-  - "ssb-diagnose"
-  - "using-test-conditions-in-sql-server-unit-tests"
-pubDate: 2025-12-01
+  
+    In a SQL Server unit test, one or more Transact-SQL test scripts are executed. The results can be
+  
+    evaluated within the Transact-SQL script and
+  
+    or
+  
+    used to return an error and
+  
+    fail the t
+tags: ["ssb-diagnose","using-test-conditions-in-sql-server-unit-tests"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 In a SQL Server unit test, one or more Transact-SQL test scripts are executed. The results can be
 

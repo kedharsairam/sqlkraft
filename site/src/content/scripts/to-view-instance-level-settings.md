@@ -2,9 +2,9 @@
 name: "To View Instance Level Settings"
 title: "To View Instance Level Settings"
 description: "for basic settings:"
-category: security-audit
+category: "security-audit"
 tags: ["security-audit"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

@@ -2,8 +2,8 @@
 title: "Performance when latch contention is resolved"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 On a busy high-concurrency system, it's normal to see active contention on structures that are

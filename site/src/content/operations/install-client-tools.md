@@ -1,33 +1,10 @@
 ---
 title: "Install client tools"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Client tools such as SQL Server Management Studio are shared features common across all
-
-  instances on the same machine. They are backward compatible, w
-tags:
-  - "high-availability"
-  - "install-client-tools"
-pubDate: 2025-12-01
+description: "Client tools such as SQL Server Management Studio are shared features common across all instances on the same machine. They are backward compatible, w"
+tags: ["high-availability","install-client-tools"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/28/2023
-
-SQL Server
 
 Client tools such as SQL Server Management Studio are shared features common across all
 

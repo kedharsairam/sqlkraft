@@ -1,33 +1,10 @@
 ---
 title: "Columns with the Name of an XPath Node Test"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  If the column name is one of the XPath node tests, the content is mapped as shown in the
-
-  fol
-tags:
-  - "xml-data"
-  - "columns-with-the-name-of-an-xpath-node-test"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","columns-with-the-name-of-an-xpath-node-test"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 If the column name is one of the XPath node tests, the content is mapped as shown in the
 

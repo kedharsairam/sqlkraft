@@ -1,29 +1,10 @@
 ---
 title: "Service Broker Routing and Networking"
 topic: "service-broker"
-description: |
-  09/15/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Service Broker communications are designed around reliable, asynchronous message delivery.
-
-  Service Broker uses the authentication feat
-tags:
-  - "service-broker"
-  - "service-broker-routing-and-networking"
-pubDate: 2025-12-01
+description: "09/15/2025 Service Broker communications are designed around reliable, asynchronous message delivery."
+tags: ["service-broker","service-broker-routing-and-networking"]
+pubDate: "2025-12-01"
 ---
-
-09/15/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Service Broker communications are designed around reliable, asynchronous message delivery.
 

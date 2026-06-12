@@ -3,8 +3,8 @@ name: "STPointN (geography Data Type)"
 title: "STPointN (geography Data Type)"
 category: "data-types"
 description: "Returns the specified point from a geography instance."
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

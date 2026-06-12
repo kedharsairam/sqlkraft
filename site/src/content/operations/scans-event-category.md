@@ -1,39 +1,10 @@
 ---
 title: "Scans Event Category"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event category contains scan events.
-
-  Description
-
-  Scan:Started Event Class
-
-  Indicates t
-tags:
-  - "event-classes"
-  - "scans-event-category"
-pubDate: 2025-12-01
+description: "The event category contains scan events. Description Scan:Started Event Class Indicates t"
+tags: ["event-classes","scans-event-category"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

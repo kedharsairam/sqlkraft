@@ -3,8 +3,8 @@ name: "sys.fulltext_index_catalog_usages"
 title: "sys.fulltext_index_catalog_usages"
 category: "indexes"
 description: "Returns a row for each full-text catalog to full-text index reference."
-tags: ["indexes", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["indexes","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

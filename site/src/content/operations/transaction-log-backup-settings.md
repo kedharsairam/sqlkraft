@@ -1,35 +1,10 @@
 ---
 title: "Transaction Log Backup Settings"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Use this dialog box to configure and modify the transaction log backup settings for a log
-
-  shipping configuration.
-
-  For an explanation of log shipping
-tags:
-  - "high-availability"
-  - "transaction-log-backup-settings"
-pubDate: 2025-12-01
+description: "Use this dialog box to configure and modify the transaction log backup settings for a log shipping configuration. For an explanation of log shipping"
+tags: ["high-availability","transaction-log-backup-settings"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Use this dialog box to configure and modify the transaction log backup settings for a log
 

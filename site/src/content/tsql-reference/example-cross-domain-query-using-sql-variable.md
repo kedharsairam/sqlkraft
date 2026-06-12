@@ -3,17 +3,9 @@ name: "Example: Cross-domain Query Using sql:variable()"
 title: "Example: Cross-domain Query Using sql:variable()"
 category: "variables"
 description: ""
-tags: ["tsql", "variables"]
-pubDate: 2026-05-29
+tags: ["tsql","variables"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 You can specify
 

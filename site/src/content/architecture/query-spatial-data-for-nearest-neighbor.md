@@ -1,35 +1,10 @@
 ---
 title: "Query Spatial Data for Nearest Neighbor"
 topic: "spatial-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL analytics endpoint in Microsoft Fabric
-
-  Warehouse in Microsoft Fabric
-
-  SQL
-
-  database in Microsoft Fabric
-
-  A common query us
-tags:
-  - "spatial-data"
-  - "query-spatial-data-for-nearest-neighbor"
-pubDate: 2025-12-01
+description: ""
+tags: ["spatial-data","query-spatial-data-for-nearest-neighbor"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 SQL analytics endpoint in Microsoft Fabric
 

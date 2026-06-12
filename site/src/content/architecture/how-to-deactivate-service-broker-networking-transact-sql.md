@@ -1,31 +1,10 @@
 ---
 title: "How to: Deactivate Service Broker Networking (Transact-SQL)"
 topic: "service-broker"
-description: |
-  09/02/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Service Broker sends and receives messages over the network while any Service Broker
-
-  endpoint is in the
-
-  state. To deactivate Service
-tags:
-  - "service-broker"
-  - "how-to-deactivate-service-broker-networking-transact-sql"
-pubDate: 2025-12-01
+description: "09/02/2025 Service Broker sends and receives messages over the network while any Service Broker endpoint is in the state. To deactivate Service"
+tags: ["service-broker","how-to-deactivate-service-broker-networking-transact-sql"]
+pubDate: "2025-12-01"
 ---
-
-09/02/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Service Broker sends and receives messages over the network while any Service Broker
 

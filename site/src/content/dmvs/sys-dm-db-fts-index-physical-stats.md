@@ -3,8 +3,8 @@ name: "sys.dm_db_fts_index_physical_stats"
 title: "sys.dm_db_fts_index_physical_stats"
 category: "full-text"
 description: "Returns a row for each full-text or semantic index in each table that has an associated full-text Object ID of the table that contains the index. Logical size of the extraction in number of index pages. Logical size of the extraction in number of index pages. Logical size of the extraction in number of index pages. Manage and Monitor Semantic Search For information"
-tags: ["full-text", "dmv"]
-pubDate: 2026-05-29
+tags: ["full-text","dmv"]
+pubDate: "2026-05-29"
 syntax: "##MS_ServerStateReader##"
 ---
 

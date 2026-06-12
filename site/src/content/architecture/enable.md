@@ -1,33 +1,10 @@
 ---
 title: "Enable"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article describes how to enable a disabled index in SQL Server by using SQL Server
-
-  Mana
-tags:
-  - "filestream"
-  - "enable"
-pubDate: 2025-12-01
+description: "This article describes how to enable a disabled index in SQL Server by using SQL Server Mana"
+tags: ["filestream","enable"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article describes how to enable a disabled index in SQL Server by using SQL Server
 

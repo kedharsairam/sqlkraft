@@ -3,8 +3,8 @@ name: "Additional considerations about BACKUP options"
 title: "Additional considerations about BACKUP options"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Interaction of SKIP, NOSKIP, INIT, and NOINIT

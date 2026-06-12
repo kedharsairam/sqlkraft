@@ -3,8 +3,8 @@ name: "sys.spatial_indexes"
 title: "sys.spatial_indexes"
 category: "indexes"
 description: "Represents the main index information of the spatial indexes."
-tags: ["indexes", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["indexes","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

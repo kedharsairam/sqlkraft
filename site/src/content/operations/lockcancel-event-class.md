@@ -1,37 +1,16 @@
 ---
 title: "Lock:Cancel Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event class indicates that acquisition of a lock on a re
-tags:
-  - "event-classes"
-  - "lockcancel-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","lockcancel-event-class"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

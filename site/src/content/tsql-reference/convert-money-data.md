@@ -3,8 +3,8 @@ name: "Convert money data"
 title: "Convert money data"
 category: "data-types"
 description: "You don't need to enclose currency or monetary data in single quotation marks ("
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 ￥

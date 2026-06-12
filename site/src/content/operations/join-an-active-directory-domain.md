@@ -1,23 +1,10 @@
 ---
 title: "Join an Active Directory domain"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article provides general guidance on how to join a SQL Server Linux host machine to an
-
-  Active Directory domain. There are two methods: use a built-in SSSD pack
-tags:
-  - "linux-operations"
-  - "join-an-active-directory-domain"
-pubDate: 2025-12-01
+description: "on Linux This article provides general guidance on how to join a SQL Server Linux host machine to an Active Directory domain."
+tags: ["linux-operations","join-an-active-directory-domain"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

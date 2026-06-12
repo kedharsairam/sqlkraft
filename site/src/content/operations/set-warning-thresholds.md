@@ -1,37 +1,10 @@
 ---
 title: "Set Warning Thresholds"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/01/2024
-
-  Applies to:
-
-  SQL Server
-
-  Use this dialog box to enable and configure one or more warning thresholds for the database
-
-  selected in the navigation tree of the
-
-  dialog box.
-
-  The d
-tags:
-  - "high-availability"
-  - "set-warning-thresholds"
-pubDate: 2025-12-01
+description: "Use this dialog box to enable and configure one or more warning thresholds for the database selected in the navigation tree of the dialog box. The d"
+tags: ["high-availability","set-warning-thresholds"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/01/2024
-
-SQL Server
 
 Use this dialog box to enable and configure one or more warning thresholds for the database
 

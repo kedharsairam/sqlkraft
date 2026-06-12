@@ -1,33 +1,10 @@
 ---
 title: "User Databases"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  11/25/2024
-
-  Applies to:
-
-  SQL Server
-
-  In SQL Server, you can move the data, log, and full-text catalog files of a user database to a
-
-  new location by specifying the new file location in the
-tags:
-  - "collation"
-  - "user-databases"
-pubDate: 2025-12-01
+description: ""
+tags: ["collation","user-databases"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-11/25/2024
-
-SQL Server
 
 In SQL Server, you can move the data, log, and full-text catalog files of a user database to a
 

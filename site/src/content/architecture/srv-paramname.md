@@ -1,35 +1,10 @@
 ---
 title: "srv_paramname"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Returns the name of a remote stored procedure call parameter.
-
-  srvproc
-
-  Is a pointer to the SRV_PROC structure that is the handle for a particular clie
-tags:
-  - "clr-integration"
-  - "srv-paramname"
-pubDate: 2025-12-01
+description: "Returns the name of a remote stored procedure call parameter."
+tags: ["clr-integration","srv-paramname"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Returns the name of a remote stored procedure call parameter.
 

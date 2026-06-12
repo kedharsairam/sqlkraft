@@ -3,8 +3,8 @@ name: "Feature availability"
 title: "Feature availability"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 The following example declares vectors using the new data type and calculates

@@ -2,9 +2,9 @@
 name: "To Put Database in Offline State or Online Stat"
 title: "To Put Database in Offline State or Online Stat"
 description: "to set the database online"
-category: database
+category: "database"
 tags: ["database"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

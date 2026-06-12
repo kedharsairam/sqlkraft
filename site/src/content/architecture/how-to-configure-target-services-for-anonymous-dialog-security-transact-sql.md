@@ -1,29 +1,10 @@
 ---
 title: "How to: Configure Target Services for Anonymous Dialog Security (Transact-SQL)"
 topic: "service-broker"
-description: |
-  09/02/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  SQL Server uses dialog security for any conversation to a service for which a remote service
-
-  binding exists in the database that hosts
-tags:
-  - "service-broker"
-  - "how-to-configure-target-services-for-anonymous-dialog-security-transact-sql"
-pubDate: 2025-12-01
+description: ""
+tags: ["service-broker","how-to-configure-target-services-for-anonymous-dialog-security-transact-sql"]
+pubDate: "2025-12-01"
 ---
-
-09/02/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 uses dialog security for any conversation to a service for which a remote service
 

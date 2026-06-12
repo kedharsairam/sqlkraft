@@ -1,35 +1,10 @@
 ---
 title: "Exchange Spill Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event class indicates that communication buffers in a parallel query plan
-
-  have been tem
-tags:
-  - "event-classes"
-  - "exchange-spill-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","exchange-spill-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

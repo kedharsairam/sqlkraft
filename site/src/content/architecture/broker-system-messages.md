@@ -1,31 +1,10 @@
 ---
 title: "Broker System Messages"
 topic: "service-broker"
-description: |
-  08/29/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Service Broker uses three system message types to communicate status and error information
-
-  from Service Broker.
-
-  Most of the messages
-tags:
-  - "service-broker"
-  - "broker-system-messages"
-pubDate: 2025-12-01
+description: "08/29/2025 Service Broker uses three system message types to communicate status and error information from Service Broker. Most of the messages"
+tags: ["service-broker","broker-system-messages"]
+pubDate: "2025-12-01"
 ---
-
-08/29/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Service Broker uses three system message types to communicate status and error information
 

@@ -3,8 +3,8 @@ name: "Catalog view"
 title: "Catalog view"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Because a collation rule is set at the database level, the following logic applies to keep the

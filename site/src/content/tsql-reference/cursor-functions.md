@@ -3,17 +3,9 @@ name: "Cursor Functions"
 title: "Cursor Functions"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 These scalar functions return information about cursors:
 

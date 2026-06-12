@@ -1,23 +1,10 @@
 ---
 title: "Configure failover"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  Within the context of an availability group (AG), the primary role and secondary role of
-
-  availability replicas are typically interchangeable, in a process known as
-tags:
-  - "linux-operations"
-  - "configure-failover"
-pubDate: 2025-12-01
+description: ""
+tags: ["linux-operations","configure-failover"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

@@ -2,9 +2,9 @@
 name: "To View list of Sessions"
 title: "To View list of Sessions"
 description: "diagnostic script for security-audit operations."
-category: security-audit
-tags: ["security-audit", "session"]
-pubDate: 2025-03-15
+category: "security-audit"
+tags: ["security-audit","session"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

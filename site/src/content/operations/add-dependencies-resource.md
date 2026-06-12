@@ -1,33 +1,10 @@
 ---
 title: "Add Dependencies resource"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to add dependencies to an Always On failover cluster instance (FCI)
-
-  resource by using the Failover Cluster Manager snap-in. T
-tags:
-  - "high-availability"
-  - "add-dependencies-resource"
-pubDate: 2025-12-01
+description: "This topic describes how to add dependencies to an Always On failover cluster instance (FCI) resource by using the Failover Cluster Manager snap-in. T"
+tags: ["high-availability","add-dependencies-resource"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 This topic describes how to add dependencies to an Always On failover cluster instance (FCI)
 

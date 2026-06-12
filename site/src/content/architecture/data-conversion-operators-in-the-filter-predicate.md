@@ -2,8 +2,8 @@
 title: "Data conversion operators in the filter predicate"
 topic: "io-fundamentals"
 description: "A column in the filtered index expression should be a key or included column in the filtered"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 A column in the filtered index expression should be a key or included column in the filtered

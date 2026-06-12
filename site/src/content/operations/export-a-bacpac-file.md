@@ -1,31 +1,10 @@
 ---
 title: "Export a bacpac file"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Exporting a database creates an export file that includes the definitions of the objects in t
-tags:
-  - "ssms"
-  - "export-a-bacpac-file"
-pubDate: 2025-12-01
+description: "Exporting a database creates an export file that includes the definitions of the objects in t"
+tags: ["ssms","export-a-bacpac-file"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Exporting a database creates an export file that includes the definitions of the objects in the
 

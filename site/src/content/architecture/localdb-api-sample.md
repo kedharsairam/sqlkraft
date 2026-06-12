@@ -1,31 +1,12 @@
 ---
 title: "LocalDB API sample"
 topic: "clr-integration"
-description: |
-  SQL Server Express LocalDB reference
-
-  07/14/2025
-
-  Applies to:
-
-  SQL Server
-
-  This section contains information about the SQL Server Express LocalDB:
-
-  SQL Server Express LocalDB error messages
-
-  SQL Serve
-tags:
-  - "clr-integration"
-  - "localdb-api-sample"
-pubDate: 2025-12-01
+description: "Express LocalDB reference 07/14/2025 This section contains information about the SQL Server Express LocalDB: SQL Server Express LocalDB error messages SQL Serve"
+tags: ["clr-integration","localdb-api-sample"]
+pubDate: "2025-12-01"
 ---
 
 Express LocalDB reference
-
-07/14/2025
-
-SQL Server
 
 This section contains information about the SQL Server Express LocalDB:
 

@@ -3,8 +3,8 @@ name: "sys.database_query_store_internal_state"
 title: "sys.database_query_store_internal_state"
 category: "query-store"
 description: "2025 (17.x) Azure SQL Database Contains information about queue length and memory usage for the Query Store when the Query Store for secondary replicas is enabled. Query Store for secondary replicas is supported starting in SQL Server 2025 (17.x) and later versions, and in Azure SQL Database."
-tags: ["query-store", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["query-store","catalog-view"]
+pubDate: "2026-05-29"
 syntax: "pending_message_count"
 ---
 
@@ -19,8 +19,6 @@ syntax: "pending_message_count"
 ## Remarks
 
 2025 (17.x)
-
-Azure SQL Database
 
 Contains information about queue length and memory usage for the Query Store when the
 

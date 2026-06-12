@@ -3,8 +3,8 @@ name: "columnstore"
 title: "Columnstore"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## A. Convert a heap to a clustered columnstore index

@@ -1,27 +1,12 @@
 ---
 title: "iSCSI"
 topic: "linux-operations"
-description: |
-  SQL Server on Linux
-
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article explains how to configure iSCSI storage for a failover cluster instance (FCI) on Linux.
-
-  iSCSI uses networking to present disks fro
-tags:
-  - "linux-operations"
-  - "iscsi"
-pubDate: 2025-12-01
+description: "on Linux on Linux This article explains how to configure iSCSI storage for a failover cluster instance (FCI) on Linux."
+tags: ["linux-operations","iscsi"]
+pubDate: "2025-12-01"
 ---
 
 on Linux
-
-SQL Server
 
 on Linux
 

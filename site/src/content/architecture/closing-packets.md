@@ -2,15 +2,9 @@
 title: "Closing packets"
 topic: "query-processing"
 description: "This article presents examples of a network trace that captures the sequence during when a"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
-
-Article
-
-•
-
-06/06/2024
 
 This article presents examples of a network trace that captures the sequence during when a
 

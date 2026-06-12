@@ -1,35 +1,10 @@
 ---
 title: "Import a bacpac file"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Import a
-
-  file - to create a copy of the original database, with the data, on a new
-
-  instance
-tags:
-  - "ssms"
-  - "import-a-bacpac-file"
-pubDate: 2025-12-01
+description: "Import a file - to create a copy of the original database, with the data, on a new instance"
+tags: ["ssms","import-a-bacpac-file"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Import a
 

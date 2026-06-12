@@ -3,13 +3,9 @@ name: "Object identification and name resolution"
 title: "Object identification and name resolution"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article describes scalar functions that return information about the database and database
 

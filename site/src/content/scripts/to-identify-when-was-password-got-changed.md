@@ -2,9 +2,9 @@
 name: "To Identify When was Password got Changed"
 title: "To Identify When was Password got Changed"
 description: "diagnostic script for security-audit operations."
-category: security-audit
+category: "security-audit"
 tags: ["security-audit"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

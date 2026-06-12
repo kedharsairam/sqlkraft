@@ -3,18 +3,13 @@ title: "How to: Update a Connected Database with Power Buffer"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  SQL Server Data Tools (SSDT) Power Buffer technology makes it easy for you to apply changes
-
-  to your connected database by storing all your edits in the current session. Any errors caused
-
-tags:
-  - "ssb-diagnose"
-  - "how-to-update-a-connected-database-with-power-buffer"
-pubDate: 2025-12-01
+  
+    SQL Server Data Tools (SSDT) Power Buffer technology makes it easy for you to apply changes
+  
+    to your connected database by storing all your edits in the current session. Any errors caused
+tags: ["ssb-diagnose","how-to-update-a-connected-database-with-power-buffer"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 Data Tools (SSDT) Power Buffer technology makes it easy for you to apply changes
 

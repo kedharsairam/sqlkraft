@@ -1,35 +1,16 @@
 ---
 title: "Sparse Columns"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Sparse columns are ordinary columns that have an optimized st
-tags:
-  - "tables"
-  - "sparse-columns"
-pubDate: 2025-12-01
+description: ""
+tags: ["tables","sparse-columns"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Sparse columns are ordinary columns that have an optimized storage for null values. Sparse
 

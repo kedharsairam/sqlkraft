@@ -1,43 +1,10 @@
 ---
 title: "Audit Database Operation Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs when operations in a database, such as
-
-  checkpoint or subscribe query notificat
-tags:
-  - "event-classes"
-  - "audit-database-operation-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs when operations in a database, such as checkpoint or subscribe query notificat"
+tags: ["event-classes","audit-database-operation-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

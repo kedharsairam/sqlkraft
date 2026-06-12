@@ -1,31 +1,10 @@
 ---
 title: "Target platform"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The target platform setting is a project property that is used during project build to valida
-tags:
-  - "ssms"
-  - "target-platform"
-pubDate: 2025-12-01
+description: "The target platform setting is a project property that is used during project build to valida"
+tags: ["ssms","target-platform"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The target platform setting is a project property that is used during project build to validate
 

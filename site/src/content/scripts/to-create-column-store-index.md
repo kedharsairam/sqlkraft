@@ -2,9 +2,9 @@
 name: "To Create Column Store Index"
 title: "To Create Column Store Index"
 description: "this one will only work from sql server 2014"
-category: index-maintenance
-tags: ["index-maintenance", "indexing"]
-pubDate: 2025-03-15
+category: "index-maintenance"
+tags: ["index-maintenance","indexing"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

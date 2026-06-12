@@ -1,29 +1,10 @@
 ---
 title: "Troubleshooting"
 topic: "high-availability"
-description: |
-  10/21/2025
-
-  Applies to:
-
-  SQL Server
-
-  This article provides information about the following issues:
-
-  Basic troubleshooting steps
-
-  Recover from a failover cluster failure
-
-  Resolve the most common failov
-tags:
-  - "high-availability"
-  - "troubleshooting"
-pubDate: 2025-12-01
+description: "10/21/2025 This article provides information about the following issues: Basic troubleshooting steps Recover from a failover cluster failure Resolve the most common failov"
+tags: ["high-availability","troubleshooting"]
+pubDate: "2025-12-01"
 ---
-
-10/21/2025
-
-SQL Server
 
 This article provides information about the following issues:
 

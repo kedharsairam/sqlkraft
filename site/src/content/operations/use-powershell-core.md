@@ -1,31 +1,10 @@
 ---
 title: "Use PowerShell Core"
 topic: "linux-operations"
-description: |
-  07/11/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Linux
-
-  This article introduces
-
-  SQL Server PowerShell
-
-  and walks you through a couple of examples on
-
-  how to use it with PowerShell on macOS and Linux. PowerShel
-tags:
-  - "linux-operations"
-  - "use-powershell-core"
-pubDate: 2025-12-01
+description: "07/11/2025 - Linux This article introduces SQL Server PowerShell and walks you through a couple of examples on how to use it with PowerShell on macOS and Linux. PowerShel"
+tags: ["linux-operations","use-powershell-core"]
+pubDate: "2025-12-01"
 ---
-
-07/11/2025
-
-SQL Server
 
 - Linux
 

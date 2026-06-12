@@ -4,29 +4,29 @@ title: "sp_table_validation"
 category: "general"
 description: "If the Distribution Agent is executing , specifies whether the Distribution Agent should shut down immediately upon completion of the validation. @shutdown_agent , with a default of , the replication agent doesn't shut down. If , error 20578 is raised and the replication agent is signaled to shut down. This parameter is ignored when is executed directly by a user. The table name of the view used f"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_table_validation [ @table = ]
-  'table'
-  [ , [ @expected_rowcount = ] type_of_check_requested
-  OUTPUT
-  ]
-  [ , [ @expected_checksum = ] expected_checksum
-  OUTPUT
-  ]
-  [ , [ @rowcount_only = ] rowcount_only ]
-  [ , [ @owner = ]
-  'owner'
-  ]
-  [ , [ @full_or_fast = ] full_or_fast ]
-  [ , [ @shutdown_agent = ] shutdown_agent ]
-  [ , [ @table_name = ]
-  'table_name'
-  ]
-  [ , [ @column_list = ]
-  'column_list'
-  ]
-  [ ; ]
+      'table'
+      [ , [ @expected_rowcount = ] type_of_check_requested
+      OUTPUT
+      ]
+      [ , [ @expected_checksum = ] expected_checksum
+      OUTPUT
+      ]
+      [ , [ @rowcount_only = ] rowcount_only ]
+      [ , [ @owner = ]
+      'owner'
+      ]
+      [ , [ @full_or_fast = ] full_or_fast ]
+      [ , [ @shutdown_agent = ] shutdown_agent ]
+      [ , [ @table_name = ]
+      'table_name'
+      ]
+      [ , [ @column_list = ]
+      'column_list'
+      ]
+      [ ; ]
 ---
 
 ## Description

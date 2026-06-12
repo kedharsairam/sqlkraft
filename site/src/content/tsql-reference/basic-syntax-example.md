@@ -3,8 +3,8 @@ name: "Basic syntax example"
 title: "Basic syntax example"
 category: "statements"
 description: "You can't change the compression setting of a single partition if the table has nonaligned"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 You can't change the compression setting of a single partition if the table has nonaligned
@@ -67,7 +67,7 @@ Columnstore indexes aren't available before SQL Server 2012 (11.x).
 
 Resumable index operations are available in SQL Server 2017 (14.x) and later versions,
 
-Azure SQL Database, and Azure SQL Managed Instance.
+, and Azure SQL Managed Instance.
 
 ```sql
 ALTER INDEX <index>. REBUILD PARTITION. WITH DATA_COMPRESSION =.

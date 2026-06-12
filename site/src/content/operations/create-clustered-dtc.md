@@ -1,35 +1,10 @@
 ---
 title: "Create clustered DTC"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  11/25/2024
-
-  Applies to:
-
-  SQL Server
-
-  - Windows only
-
-  This article walks you through a complete configuration of a clustered DTC resource for a SQL
-
-  Server Always On availability group (AG)
-tags:
-  - "high-availability"
-  - "create-clustered-dtc"
-pubDate: 2025-12-01
+description: "- Windows only This article walks you through a complete configuration of a clustered DTC resource for a SQL Server Always On availability group (AG)"
+tags: ["high-availability","create-clustered-dtc"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-11/25/2024
-
-SQL Server
 
 - Windows only
 

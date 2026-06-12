@@ -1,25 +1,10 @@
 ---
 title: "Understand AD Authentication"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article provides you details on how Active Directory authentication works for SQL Server
-
-  deployed on Linux or containers.
-
-  LDAP is an application protocol for
-tags:
-  - "linux-operations"
-  - "understand-ad-authentication"
-pubDate: 2025-12-01
+description: "on Linux This article provides you details on how Active Directory authentication works for SQL Server deployed on Linux or containers."
+tags: ["linux-operations","understand-ad-authentication"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

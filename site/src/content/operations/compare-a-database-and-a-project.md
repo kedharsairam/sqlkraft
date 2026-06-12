@@ -1,33 +1,10 @@
 ---
 title: "Compare a database and a project"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  Understanding the object definition differences between a database and a SQL project can
-
-  pro
-tags:
-  - "ssms"
-  - "compare-a-database-and-a-project"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssms","compare-a-database-and-a-project"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Understanding the object definition differences between a database and a SQL project can
 

@@ -1,33 +1,10 @@
 ---
 title: "Fail over - wizard"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to perform a planned manual failover or forced manual failover
-
-  (forced failover) on an Always On availability group by using
-tags:
-  - "high-availability"
-  - "fail-over-wizard"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","fail-over-wizard"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 This topic describes how to perform a planned manual failover or forced manual failover
 

@@ -3,8 +3,8 @@ name: "REPAIR_ALLOW_DATA_LOSS in replicated databases"
 title: "REPAIR_ALLOW_DATA_LOSS in replicated databases"
 category: "predicates"
 description: ""
-tags: ["tsql", "predicates"]
-pubDate: 2026-05-29
+tags: ["tsql","predicates"]
+pubDate: "2026-05-29"
 ---
 
 The

@@ -1,33 +1,10 @@
 ---
 title: "T-SQL"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/27/2023
-
-  Applies to:
-
-  SQL Server
-
-  For monitoring availability groups and replicas and the associated databases by using Transact-
-
-  SQL, Always On availability groups provides a set of c
-tags:
-  - "high-availability"
-  - "t-sql-2"
-pubDate: 2025-12-01
+description: "For monitoring availability groups and replicas and the associated databases by using Transact- SQL, Always On availability groups provides a set of c"
+tags: ["high-availability","t-sql-2"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/27/2023
-
-SQL Server
 
 For monitoring availability groups and replicas and the associated databases by using Transact-
 

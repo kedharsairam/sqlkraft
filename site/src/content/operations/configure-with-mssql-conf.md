@@ -1,27 +1,10 @@
 ---
 title: "Configure with mssql-conf"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  is a configuration script that installs with SQL Server for Red Hat Enterprise Linux,
-
-  SUSE Linux Enterprise Server, and Ubuntu. It modifies the
-
-  mssql.conf file
-
-  wh
-tags:
-  - "linux-operations"
-  - "configure-with-mssql-conf"
-pubDate: 2025-12-01
+description: "on Linux is a configuration script that installs with SQL Server for Red Hat Enterprise Linux, SUSE Linux Enterprise Server, and Ubuntu."
+tags: ["linux-operations","configure-with-mssql-conf"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

@@ -1,35 +1,12 @@
 ---
 title: "Administer & monitor"
 topic: "change-data-capture"
-description: |
-  08/22/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This topic describes how to administer and monitor change data capture for SQL Server and
-
-  Azure SQL Managed Instance.
-
-  For Azure SQL D
-tags:
-  - "change-data-capture"
-  - "administer-monitor"
-pubDate: 2025-12-01
+description: "08/22/2025 This topic describes how to administer and monitor change data capture for SQL Server and Azure SQL Managed Instance. For Azure SQL D"
+tags: ["change-data-capture","administer-monitor"]
+pubDate: "2025-12-01"
 ---
 
-08/22/2025
-
-SQL Server
-
-Azure SQL Managed Instance
-
-This topic describes how to administer and monitor change data capture for SQL Server and
-
-Azure SQL Managed Instance.
+This topic describes how to administer and monitor change data capture for SQL Server and.
 
 For Azure SQL Database, which uses a different job mechanism, see
 

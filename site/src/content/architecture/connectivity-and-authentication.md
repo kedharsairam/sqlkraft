@@ -2,8 +2,8 @@
 title: "Connectivity and authentication"
 topic: "io-fundamentals"
 description: "Describes threading and task concepts in the context of OS scheduling. It"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

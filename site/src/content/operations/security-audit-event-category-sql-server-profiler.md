@@ -1,47 +1,10 @@
 ---
 title: "Security Audit Event Category (SQL Server Profiler)"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  04/15/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event category contains security audit events.
-
-  Description
-
-  Audit Add DB User Event Class
-
-  Indica
-tags:
-  - "event-classes"
-  - "security-audit-event-category-sql-server-profiler"
-pubDate: 2025-12-01
+description: "The event category contains security audit events. Description Audit Add DB User Event Class Indica"
+tags: ["event-classes","security-audit-event-category-sql-server-profiler"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/15/2024
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

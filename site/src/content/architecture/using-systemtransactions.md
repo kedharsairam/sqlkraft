@@ -1,37 +1,10 @@
 ---
 title: "Using System.Transactions"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  The
-
-  namespace provides a transaction framework that is fully integrated
-
-  with ADO.NET and SQL Server common language runtime (CLR) integration. The
-
-  c
-tags:
-  - "clr-integration"
-  - "using-systemtransactions"
-pubDate: 2025-12-01
+description: "The namespace provides a transaction framework that is fully integrated with ADO.NET and SQL Server common language runtime (CLR) integration. The c"
+tags: ["clr-integration","using-systemtransactions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 The
 

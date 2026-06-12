@@ -1,33 +1,12 @@
 ---
 title: "How to: Create Database Objects Using Table Designer"
 topic: "ssb-diagnose"
-description: |
-  09/10/2025
-
-  Not only is the
-
-  SQL Server
-
-  node in
-
-  SQL Server Object Explorer
-
-  similar to SQL Server
-
-  Management Studio (SSMS) visually, but you can create new objects using contextual menus
-
-  that func
-tags:
-  - "ssb-diagnose"
-  - "how-to-create-database-objects-using-table-designer"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssb-diagnose","how-to-create-database-objects-using-table-designer"]
+pubDate: "2025-12-01"
 ---
 
-09/10/2025
-
 Not only is the
-
-SQL Server
 
 node in
 
@@ -54,8 +33,6 @@ script pane, which allows you to directly edit the script that defines this tabl
 Object Explorer
 
 , under the
-
-SQL Server
 
 node, expand your connected
 

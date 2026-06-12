@@ -2,9 +2,9 @@
 name: "To check Who is Connected through DAC"
 title: "To check Who is Connected through DAC"
 description: "diagnostic script for security-audit operations."
-category: security-audit
-tags: ["health-check", "security-audit"]
-pubDate: 2025-03-15
+category: "security-audit"
+tags: ["health-check","security-audit"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

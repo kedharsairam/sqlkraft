@@ -1,41 +1,14 @@
 ---
 title: "Troubleshoot Orphaned Users"
 topic: "high-availability"
-description: |
-  ﾃ
-
-  Summarize this article for me
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  Users are orphaned in SQL Server wh
-tags:
-  - "high-availability"
-  - "troubleshoot-orphaned-users"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","troubleshoot-orphaned-users"]
+pubDate: "2025-12-01"
 ---
 
 ﾃ
 
 Summarize this article for me
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

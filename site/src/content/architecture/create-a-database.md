@@ -1,27 +1,10 @@
 ---
 title: "Create a database"
 topic: "collation"
-description: |
-  08/07/2025
-
-  Applies to:
-
-  SQL Server
-
-  This article describes how to create a database in SQL Server by using SQL Server Management
-
-  Studio or Transact-SQL.
-
-  To create a database in Azure SQL Database u
-tags:
-  - "collation"
-  - "create-a-database"
-pubDate: 2025-12-01
+description: "08/07/2025 This article describes how to create a database in SQL Server by using SQL Server Management Studio or Transact-SQL. To create a database in Azure SQL Database u"
+tags: ["collation","create-a-database"]
+pubDate: "2025-12-01"
 ---
-
-08/07/2025
-
-SQL Server
 
 This article describes how to create a database in SQL Server by using SQL Server Management
 

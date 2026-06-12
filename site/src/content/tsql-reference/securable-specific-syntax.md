@@ -3,8 +3,8 @@ name: "Securable-specific Syntax"
 title: "Securable-specific Syntax"
 category: "statements"
 description: "The full syntax of the REVOKE statement is complex. The syntax diagram above was simplified"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 The full syntax of the REVOKE statement is complex. The syntax diagram above was simplified

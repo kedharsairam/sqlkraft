@@ -3,17 +3,13 @@ title: "Using T-SQL Assertions in SQL Server Unit Tests"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  In a SQL Server unit test, a Transact-SQL test script runs and returns a result. Sometimes, the
-
-  results are returned as a results set. You can validate results by using test conditions. F
-tags:
-  - "ssb-diagnose"
-  - "using-t-sql-assertions-in-sql-server-unit-tests"
-pubDate: 2025-12-01
+  
+    In a SQL Server unit test, a Transact-SQL test script runs and returns a result. Sometimes, the
+  
+    results are returned as a results set. You can validate results by using test conditions. F
+tags: ["ssb-diagnose","using-t-sql-assertions-in-sql-server-unit-tests"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 In a SQL Server unit test, a Transact-SQL test script runs and returns a result. Sometimes, the
 

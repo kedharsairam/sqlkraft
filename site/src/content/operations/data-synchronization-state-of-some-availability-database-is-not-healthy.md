@@ -1,39 +1,10 @@
 ---
 title: "Data synchronization state of some availability database is not healthy"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  : Availability Replica Data Synchronization State
-
-  : Data synchronization state of some availability database is not healthy.
-
-  :
-
-  Warning
-
-  : Availabili
-tags:
-  - "high-availability"
-  - "data-synchronization-state-of-some-availability-database-is-not-healthy"
-pubDate: 2025-12-01
+description: ": Availability Replica Data Synchronization State : Data synchronization state of some availability database is not healthy. : Warning : Availabili"
+tags: ["high-availability","data-synchronization-state-of-some-availability-database-is-not-healthy"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 : Availability Replica Data Synchronization State
 

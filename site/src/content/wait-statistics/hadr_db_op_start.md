@@ -1,11 +1,11 @@
 ---
-name: HADR_DB_OP_START
+name: "HADR_DB_OP_START"
 title: "HADR DB OP Start Wait"
-category: latency
-severity: medium
+category: "latency"
+severity: "medium"
 description: "Occurs when waiting for a database-level operation to start in the availability group context. Typically seen during database joins or role transitions."
-tags: ["ag", "database", "operation"]
-pubDate: 2026-05-29
+tags: ["ag","database","operation"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

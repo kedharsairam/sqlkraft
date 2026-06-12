@@ -3,19 +3,11 @@ name: "Multipart names"
 title: "Multipart names"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 SQL)
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 
@@ -24,8 +16,6 @@ SQL analytics endpoint in
 Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 The following table lists and describes conventions that are used in the syntax diagrams in the
 
@@ -107,9 +97,7 @@ Specifies a linked server name or remote server name.
 
 database_name
 
-Specifies the name of a SQL Server database when the object resides in a local instance of
-
-SQL Server. When the object is in a linked server,
+Specifies the name of a SQL Server database when the object resides in a local instance of. When the object is in a linked server,
 
 database_name
 

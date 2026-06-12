@@ -1,35 +1,16 @@
 ---
 title: "Retention of historical data"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  With system-versioned temporal tables, the history table migh
-tags:
-  - "tables"
-  - "retention-of-historical-data"
-pubDate: 2025-12-01
+description: ""
+tags: ["tables","retention-of-historical-data"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 With system-versioned temporal tables, the history table might increase your database size
 

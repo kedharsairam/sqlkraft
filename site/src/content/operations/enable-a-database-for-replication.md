@@ -1,39 +1,10 @@
 ---
 title: "Enable a Database for Replication"
 topic: "migration"
-description: |
-  Article
-
-  •
-
-  09/27/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  A database is implicitly enabled for replication when a member of the
-
-  fixed server
-
-  role creates a publication with the Ne
-tags:
-  - "migration"
-  - "enable-a-database-for-replication"
-pubDate: 2025-12-01
+description: "A database is implicitly enabled for replication when a member of the fixed server role creates a publication with the Ne"
+tags: ["migration","enable-a-database-for-replication"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/27/2024
-
-SQL Server
-
-Azure SQL Managed Instance
 
 A database is implicitly enabled for replication when a member of the
 

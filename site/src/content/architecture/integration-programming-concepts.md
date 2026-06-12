@@ -1,39 +1,10 @@
 ---
 title: "Integration programming concepts"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  SQL Server features the integration of the common language runtime (CLR) component of the
-
-  .NET Framework for Windows.
-
-  You
-tags:
-  - "clr-integration"
-  - "integration-programming-concepts"
-pubDate: 2025-12-01
+description: "features the integration of the common language runtime (CLR) component of the .NET Framework for Windows. You"
+tags: ["clr-integration","integration-programming-concepts"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
-
-Azure SQL Managed Instance
 
 features the integration of the common language runtime (CLR) component of the.NET Framework for Windows.
 

@@ -4,7 +4,7 @@ title: "sp_get_distributor"
 category: "general"
 description: "Determines whether a Distributor is installed on a server. This stored procedure is executed at the computer where the Distributor is being looked for, on any database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "distribution db installed"
 ---
 

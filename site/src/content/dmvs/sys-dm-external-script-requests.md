@@ -3,11 +3,11 @@ name: "sys.dm_external_script_requests"
 title: "sys.dm_external_script_requests"
 category: "execution"
 description: "2016 (13.x) and later Returns a row for each active worker account that is running an external script."
-tags: ["execution", "dmv"]
-pubDate: 2026-05-29
+tags: ["execution","dmv"]
+pubDate: "2026-05-29"
 syntax: |
   EXECUTE ANY EXTERNAL
-  SCRIPT
+      SCRIPT
 ---
 
 ## Description

@@ -3,8 +3,8 @@ name: "Arithmetic operators"
 title: "Arithmetic operators"
 category: "operators"
 description: ""
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 Operator
@@ -15,21 +15,11 @@ datetime
 
 smalldatetime
 
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
 
 SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Arithmetic operators run mathematical operations on two expressions of one or more data types. They're run from the numeric data type category. For more information about data type categories, see.
 

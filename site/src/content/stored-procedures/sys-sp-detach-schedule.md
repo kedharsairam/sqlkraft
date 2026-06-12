@@ -4,24 +4,24 @@ title: "sp_detach_schedule"
 category: "general"
 description: "Removes an association between a schedule and a job. The job identification number of the job to remove the schedule from. must be specified, but both can't be specified."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_detach_schedule
-  [ [ @job_id = ]
-  'job_id'
-  ]
-  [ , [ @job_name = ]
-  N
-  'job_name'
-  ]
-  [ , [ @schedule_id = ] schedule_id ]
-  [ , [ @schedule_name = ]
-  N
-  'schedule_name'
-  ]
-  [ , [ @delete_unused_schedule = ] delete_unused_schedule ]
-  [ , [ @automatic_post = ] automatic_post ]
-  [ ; ]
+      [ [ @job_id = ]
+      'job_id'
+      ]
+      [ , [ @job_name = ]
+      N
+      'job_name'
+      ]
+      [ , [ @schedule_id = ] schedule_id ]
+      [ , [ @schedule_name = ]
+      N
+      'schedule_name'
+      ]
+      [ , [ @delete_unused_schedule = ] delete_unused_schedule ]
+      [ , [ @automatic_post = ] automatic_post ]
+      [ ; ]
 ---
 
 ## Description

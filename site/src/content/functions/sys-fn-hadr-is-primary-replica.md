@@ -3,12 +3,12 @@ name: "sys.fn_hadr_is_primary_replica"
 title: "sys.fn_hadr_is_primary_replica"
 category: "availability-group"
 description: "Used to determine if the current replica is the primary replica. Is the name of the database. is type sysname. Returns data type : 1 if the database on the current instance is the primary replica, otherwise if the database doesn't exist, or isn't part of an availability group."
-tags: ["availability-group", "function"]
-pubDate: 2026-05-29
+tags: ["availability-group","function"]
+pubDate: "2026-05-29"
 syntax: |
   sys.fn_hadr_is_primary_replica (
-  'dbname'
-  )
+    'dbname'
+    )
 ---
 
 ## Description

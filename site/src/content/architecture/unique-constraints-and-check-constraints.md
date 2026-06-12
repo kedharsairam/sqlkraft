@@ -1,35 +1,10 @@
 ---
 title: "Unique constraints and check constraints"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  constraints and
-
-  constraints are two types of constraints that can be used to
-
-  enforce data i
-tags:
-  - "tables"
-  - "unique-constraints-and-check-constraints"
-pubDate: 2025-12-01
+description: "constraints and constraints are two types of constraints that can be used to enforce data i"
+tags: ["tables","unique-constraints-and-check-constraints"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 constraints and
 

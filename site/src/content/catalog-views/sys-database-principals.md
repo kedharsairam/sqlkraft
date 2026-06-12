@@ -3,14 +3,14 @@ name: "sys.database_principals"
 title: "sys.database_principals"
 category: "compatibility"
 description: "Returns a row for each security principal in a SQL Server database."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   SELECT pr.principal_id, pr.name, pr.type_desc,
-  pr.authentication_type_desc, pe.state_desc, pe.permission_name
-  FROM sys.database_principals AS pr
-  JOIN sys.database_permissions AS pe
-  ON pe.grantee_principal_id = pr.principal_id;
+      pr.authentication_type_desc, pe.state_desc, pe.permission_name
+      FROM sys.database_principals AS pr
+      JOIN sys.database_permissions AS pe
+      ON pe.grantee_principal_id = pr.principal_id;
 ---
 
 ## Description

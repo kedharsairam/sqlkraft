@@ -1,39 +1,10 @@
 ---
 title: "Use the inserted & deleted Tables"
 topic: "change-data-capture"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  DML trigger statements use two special tables: the
-
-  deleted
-
-  and
-
-  inserted
-
-  tables. SQL Serve
-tags:
-  - "change-data-capture"
-  - "use-the-inserted-deleted-tables"
-pubDate: 2025-12-01
+description: "DML trigger statements use two special tables: the deleted and inserted tables. SQL Serve"
+tags: ["change-data-capture","use-the-inserted-deleted-tables"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 DML trigger statements use two special tables: the
 

@@ -4,7 +4,7 @@ title: "sp_changedistributor_password"
 category: "general"
 description: "Changes the password for a Distributor. This stored procedure is executed at the Distributor on any database. If this is a remote Distributor, then it needs to be run on all the Publisher servers that are using this Distributor. If the distribution or Publisher database is in an availability group, then it needs to be run on all the Distributor and Publisher nodes."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: "sp_changedistributor_password"
 ---
 

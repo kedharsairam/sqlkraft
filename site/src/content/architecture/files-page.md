@@ -1,35 +1,10 @@
 ---
 title: "Files page"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Use this page to create a new database, or view or modify properties for the selected database.
-
-  This topic applies to the
-
-  for existing databases, and
-tags:
-  - "collation"
-  - "files-page"
-pubDate: 2025-12-01
+description: "Use this page to create a new database, or view or modify properties for the selected database."
+tags: ["collation","files-page"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Use this page to create a new database, or view or modify properties for the selected database.
 

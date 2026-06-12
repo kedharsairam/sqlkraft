@@ -1,11 +1,11 @@
 ---
-name: LCK_M_IS
+name: "LCK_M_IS"
 title: "Intent Shared Lock Wait"
-category: blocking
-severity: medium
+category: "blocking"
+severity: "medium"
 description: "Occurs when waiting for an intent shared (IS) lock. Typical in hierarchy locking scenarios where a table-level IS lock is blocked by an existing X or U lock on a child object."
-tags: ["lock", "intent-shared"]
-pubDate: 2026-05-29
+tags: ["lock","intent-shared"]
+pubDate: "2026-05-29"
 relatedScripts: ["diagnose-lock-contention"]
 ---
 

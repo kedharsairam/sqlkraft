@@ -1,29 +1,10 @@
 ---
 title: "Lesson 2: Creating the Initiator Database"
 topic: "service-broker"
-description: |
-  09/04/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  In this lesson, you learn to create the initiator database and all the initiator Service Broker
-
-  objects that are used in this tutorial
-tags:
-  - "service-broker"
-  - "lesson-2-creating-the-initiator-database"
-pubDate: 2025-12-01
+description: "09/04/2025 In this lesson, you learn to create the initiator database and all the initiator Service Broker objects that are used in this tutorial"
+tags: ["service-broker","lesson-2-creating-the-initiator-database"]
+pubDate: "2025-12-01"
 ---
-
-09/04/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 In this lesson, you learn to create the initiator database and all the initiator Service Broker
 

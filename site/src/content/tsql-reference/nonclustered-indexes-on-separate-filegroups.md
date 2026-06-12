@@ -3,8 +3,8 @@ name: "Nonclustered indexes on separate filegroups"
 title: "Nonclustered indexes on separate filegroups"
 category: "queries"
 description: "of every table and indexed view in the filegroup."
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 DBCC CHECKTABLE

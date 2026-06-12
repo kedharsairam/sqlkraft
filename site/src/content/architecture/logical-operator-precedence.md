@@ -2,15 +2,15 @@
 title: "Logical operator precedence"
 topic: "transaction-log"
 description: "When it was first introduced, batch mode execution was closely integrated with, and optimized"
-tags: ["transaction-log", "architecture"]
-pubDate: 2026-05-29
+tags: ["transaction-log","architecture"]
+pubDate: "2026-05-29"
 ---
 
 When it was first introduced, batch mode execution was closely integrated with, and optimized
 
 around, the columnstore storage format. However, starting with SQL Server 2019 (15.x) and in
 
-Azure SQL Database, batch mode execution no longer requires columnstore indexes. For more
+, batch mode execution no longer requires columnstore indexes. For more
 
 information, see
 

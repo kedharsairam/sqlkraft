@@ -3,8 +3,8 @@ name: "Use WITH STATUSONLY"
 title: "Use WITH STATUSONLY"
 category: "statements"
 description: "Used to kill an unresolved distributed transaction with rollback. Only applicable to distributed"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 Used to kill an unresolved distributed transaction with rollback. Only applicable to distributed

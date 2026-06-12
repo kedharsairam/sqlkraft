@@ -1,35 +1,16 @@
 ---
 title: "Lock:Released Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Lock:Released event class indicates that a lock on a reso
-tags:
-  - "event-classes"
-  - "lockreleased-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","lockreleased-event-class"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Lock:Released event class indicates that a lock on a resource, such as a page, has been
 

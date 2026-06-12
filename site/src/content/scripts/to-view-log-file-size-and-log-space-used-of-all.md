@@ -2,9 +2,9 @@
 name: "To View Log File Size and Log Space Used of all"
 title: "To View Log File Size and Log Space Used of all"
 description: "diagnostic script for database operations."
-category: database
+category: "database"
 tags: ["database"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

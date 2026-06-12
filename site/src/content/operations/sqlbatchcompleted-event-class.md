@@ -1,35 +1,12 @@
 ---
 title: "SQL:BatchCompleted Event Class"
 topic: "event-classes"
-description: |
-  SQL:BatchCompleted Event Class
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The SQL:BatchCompleted event class indicates that the Transac
-tags:
-  - "event-classes"
-  - "sqlbatchcompleted-event-class"
-pubDate: 2025-12-01
+description: "SQL:BatchCompleted Event Class The SQL:BatchCompleted event class indicates that the Transac"
+tags: ["event-classes","sqlbatchcompleted-event-class"]
+pubDate: "2025-12-01"
 ---
 
 SQL:BatchCompleted Event Class
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The SQL:BatchCompleted event class indicates that the Transact-SQL batch has completed.
 

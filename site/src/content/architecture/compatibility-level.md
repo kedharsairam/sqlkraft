@@ -1,35 +1,14 @@
 ---
 title: "Compatibility level"
 topic: "collation"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article describes how to view or change the compatibility level of a database in SQL Ser
-tags:
-  - "collation"
-  - "compatibility-level"
-pubDate: 2025-12-01
+description: "This article describes how to view or change the compatibility level of a database in SQL Ser"
+tags: ["collation","compatibility-level"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article describes how to view or change the compatibility level of a database in SQL Server,
 
-Azure SQL Database, or Azure SQL Managed Instance by using SQL Server Management Studio
+, or Azure SQL Managed Instance by using SQL Server Management Studio
 
 or Transact-SQL.
 

@@ -4,13 +4,13 @@ title: "sp_helprole"
 category: "general"
 description: "Returns information about the roles in the current database."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_helprole [ [ @rolename = ]
-  N
-  'rolename'
-  ]
-  [ ; ]
+      N
+      'rolename'
+      ]
+      [ ; ]
 ---
 
 ## Description

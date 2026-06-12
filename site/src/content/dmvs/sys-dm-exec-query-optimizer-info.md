@@ -3,8 +3,8 @@ name: "sys.dm_exec_query_optimizer_info"
 title: "sys.dm_exec_query_optimizer_info"
 category: "execution"
 description: "On Azure SQL Database service objectives, and for databases in Microsoft Entra admin account, or membership in the is required. On all other SQL Database service objectives, either the permission on the database, or membership in the server role is required. contains the following properties (counters). All occurrence values are cumulative and are set to at system restart."
-tags: ["execution", "dmv"]
-pubDate: 2026-05-29
+tags: ["execution","dmv"]
+pubDate: "2026-05-29"
 syntax: "VIEW SERVER PERFORMANCE STATE"
 ---
 

@@ -3,8 +3,8 @@ name: "Updatable views"
 title: "Updatable views"
 category: "statements"
 description: "When a view is created, information about the view is stored in the following catalog views:"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 When a view is created, information about the view is stored in the following catalog views:

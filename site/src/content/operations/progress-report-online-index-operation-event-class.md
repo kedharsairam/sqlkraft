@@ -1,32 +1,10 @@
 ---
 title: "Progress Report: Online Index Operation Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Progress Report: Online Index Operation event class indicates the progress of an online
-
-tags:
-  - "event-classes"
-  - "progress-report-online-index-operation-event-class"
-pubDate: 2025-12-01
+description: "The Progress Report: Online Index Operation event class indicates the progress of an online"
+tags: ["event-classes","progress-report-online-index-operation-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Progress Report: Online Index Operation event class indicates the progress of an online
 

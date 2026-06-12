@@ -1,29 +1,10 @@
 ---
 title: "Understanding When Activation Occurs"
 topic: "service-broker"
-description: |
-  09/10/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  The Service Broker activation process consists of two steps. First, Service Broker determines
-
-  whether activation is necessary. Second,
-tags:
-  - "service-broker"
-  - "understanding-when-activation-occurs"
-pubDate: 2025-12-01
+description: "09/10/2025 The Service Broker activation process consists of two steps. First, Service Broker determines whether activation is necessary. Second,"
+tags: ["service-broker","understanding-when-activation-occurs"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The Service Broker activation process consists of two steps. First, Service Broker determines
 

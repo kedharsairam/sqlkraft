@@ -3,8 +3,8 @@ name: "See other language references"
 title: "See other language references"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 To find the system tables, views, functions, and procedures, see these links, which are in the
@@ -35,21 +35,11 @@ that indicates which products and services support subject of the article.
 
 For example, this article applies to all versions, and has the following label.
 
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
 
 Another example, the following label indicates an article that applies only to Azure Synapse
 
 Analytics and Parallel Data Warehouse.
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

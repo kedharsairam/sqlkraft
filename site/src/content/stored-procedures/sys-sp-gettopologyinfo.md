@@ -4,10 +4,10 @@ title: "sp_gettopologyinfo"
 category: "general"
 description: "Returns information about a peer-to-peer transactional replication topology. Execute sp_requestpeertopologyinfo to collect information before you execute this procedure. The ID of a topology status request. , with a default of . To obtain an ID, OUTPUT parameter from sp_requestpeertopologyinfo MSpeer_topologyrequest returns a result set that's a single XML column. T"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_gettopologyinfo [ [ @request_id = ] request_id ]
-  [ ; ]
+      [ ; ]
 ---
 
 ## Description

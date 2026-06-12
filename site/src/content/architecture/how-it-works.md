@@ -1,31 +1,10 @@
 ---
 title: "How it works"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This article defines the structures that exist during an online index operation and shows the
-tags:
-  - "filestream"
-  - "how-it-works"
-pubDate: 2025-12-01
+description: ""
+tags: ["filestream","how-it-works"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This article defines the structures that exist during an online index operation and shows the
 

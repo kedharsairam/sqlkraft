@@ -3,29 +3,23 @@ name: "JSON functions"
 title: "JSON functions"
 category: "statements"
 description: "2016 (13.x) and later versions"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 #### Function
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-Azure Synapse Analytics
 
 SQL analytics endpoint in Microsoft
 
 Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Use the functions described in this article support querying, manipulating, and construction
 

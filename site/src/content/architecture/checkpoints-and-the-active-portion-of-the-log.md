@@ -2,8 +2,8 @@
 title: "Checkpoints and the active portion of the log"
 topic: "io-fundamentals"
 description: "Taking a log backup every 15 to 30 minutes might be enough."
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Taking a log backup every 15 to 30 minutes might be enough. If your business requires that

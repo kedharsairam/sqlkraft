@@ -2,8 +2,8 @@
 title: "columnstore"
 topic: "query-processing"
 description: "When the columnstore index compresses a rowgroup, it compresses each column segment"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 When the columnstore index compresses a rowgroup, it compresses each column segment

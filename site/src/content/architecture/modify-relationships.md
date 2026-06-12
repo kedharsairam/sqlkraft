@@ -1,35 +1,16 @@
 ---
 title: "Modify relationships"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  You can modify the foreign key side of a relationship in SQL
-tags:
-  - "tables"
-  - "modify-relationships"
-pubDate: 2025-12-01
+description: "2016 (13.x) and later versions Azure SQL Managed Instance You can modify the foreign key side of a relationship in SQL"
+tags: ["tables","modify-relationships"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 You can modify the foreign key side of a relationship in SQL Server by using SQL Server
 

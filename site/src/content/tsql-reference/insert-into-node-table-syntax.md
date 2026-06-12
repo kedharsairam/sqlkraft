@@ -3,19 +3,15 @@ name: "INSERT Into node table syntax"
 title: "INSERT Into node table syntax"
 category: "queries"
 description: "2017 (14.x) and later versions"
-tags: ["tsql", "queries"]
-pubDate: 2026-05-29
+tags: ["tsql","queries"]
+pubDate: "2026-05-29"
 ---
 
 2017 (14.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Adds one or more rows to a
 

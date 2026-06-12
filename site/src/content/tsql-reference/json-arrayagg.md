@@ -3,19 +3,13 @@ name: "JSON_ARRAYAGG"
 title: "JSON_ARRAYAGG"
 category: "statements"
 description: "2025 (17.x)"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Return value
 
 2025 (17.x)
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Constructs a JSON array from an aggregation of SQL data or columns.
 
@@ -34,7 +28,7 @@ update policy
 
 \*\*),
 
-SQL database in Microsoft Fabric, and Fabric Data Warehouse.
+, and Fabric Data Warehouse.
 
 in preview for SQL Server 2025 (17.x).
 

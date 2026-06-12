@@ -1,33 +1,10 @@
 ---
 title: "CLUSTER.LOG"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  As a failover cluster resource, there are external interactions between SQL Server, the Windows
-
-  Server Failover Cluster service (WSFC) cluster, and th
-tags:
-  - "high-availability"
-  - "clusterlog"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","clusterlog"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 As a failover cluster resource, there are external interactions between SQL Server, the Windows
 

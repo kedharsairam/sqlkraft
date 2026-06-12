@@ -4,19 +4,9 @@ title: "XQuery - Conditional Expressions"
 category: "xquery"
 description: "XQuery Language Reference: Conditional Expressions"
 syntax: "expression1"
-tags:
-  - "xquery"
-  - "conditional-expressions"
-pubDate: 2025-12-01
+tags: ["xquery","conditional-expressions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 XQuery supports the following conditional
 

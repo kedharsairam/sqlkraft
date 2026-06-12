@@ -1,33 +1,10 @@
 ---
 title: "Disaster Recovery through Forced Quorum"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Quorum failure is usually caused by a systemic disaster, or a persistent communications failure,
-
-  or a misconfiguration involving several nodes in the
-tags:
-  - "high-availability"
-  - "disaster-recovery-through-forced-quorum"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","disaster-recovery-through-forced-quorum"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 Quorum failure is usually caused by a systemic disaster, or a persistent communications failure,
 

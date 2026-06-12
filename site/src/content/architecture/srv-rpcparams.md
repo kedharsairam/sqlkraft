@@ -1,35 +1,10 @@
 ---
 title: "srv_rpcparams"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Returns the number of parameters for the current remote stored procedure.
-
-  srvproc
-
-  Is a pointer to the SRV_PROC structure that is the handle for a par
-tags:
-  - "clr-integration"
-  - "srv-rpcparams"
-pubDate: 2025-12-01
+description: "Returns the number of parameters for the current remote stored procedure."
+tags: ["clr-integration","srv-rpcparams"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Returns the number of parameters for the current remote stored procedure.
 

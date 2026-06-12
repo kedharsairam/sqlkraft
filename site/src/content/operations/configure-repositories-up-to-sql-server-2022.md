@@ -1,23 +1,10 @@
 ---
 title: "Configure repositories (up to SQL Server 2022)"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article describes how to configure the correct repository for installing and upgrading SQL
-
-  Server 2017 (14.x), SQL Server 2019 (15.x), and SQL Server 2022 (16.
-tags:
-  - "linux-operations"
-  - "configure-repositories-up-to-sql-server-2022"
-pubDate: 2025-12-01
+description: "on Linux This article describes how to configure the correct repository for installing and upgrading SQL Server 2017 (14.x), SQL Server 2019 (15.x), and SQL Server 2022 (16."
+tags: ["linux-operations","configure-repositories-up-to-sql-server-2022"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

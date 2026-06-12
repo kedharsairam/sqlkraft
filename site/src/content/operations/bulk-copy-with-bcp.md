@@ -1,29 +1,10 @@
 ---
 title: "Bulk copy with bcp"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This article shows how to use the
-
-  bcp utility
-
-  to bulk copy data between an instance of SQL Server
-
-  on Linux and a data file in a user-specified format.
-
-  You can us
-tags:
-  - "linux-operations"
-  - "bulk-copy-with-bcp"
-pubDate: 2025-12-01
+description: "on Linux This article shows how to use the bcp utility to bulk copy data between an instance of SQL Server on Linux and a data file in a user-specified format."
+tags: ["linux-operations","bulk-copy-with-bcp"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 
@@ -47,9 +28,7 @@ knowledge of Transact-SQL. The
 
 command-line utility works with Microsoft SQL Server
 
-running on-premises or in the cloud, on Linux, Windows or Docker and Azure SQL Database and
-
-Azure Synapse Analytics.
+running on-premises or in the cloud, on Linux, Windows or Docker and Azure SQL Database and.
 
 This article shows you how to:
 

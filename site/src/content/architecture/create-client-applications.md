@@ -1,37 +1,10 @@
 ---
 title: "Create Client Applications"
 topic: "filestream"
-description: |
-  Article
-
-  •
-
-  01/22/2024
-
-  Applies to:
-
-  SQL Server
-
-  You can use Win32 APIs to read and write data to a FILESTREAM BLOB. The following steps are
-
-  required:
-
-  Read the FILESTREAM file path.
-
-  Read the curren
-tags:
-  - "filestream"
-  - "create-client-applications"
-pubDate: 2025-12-01
+description: "You can use Win32 APIs to read and write data to a FILESTREAM BLOB. The following steps are required: Read the FILESTREAM file path. Read the curren"
+tags: ["filestream","create-client-applications"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-01/22/2024
-
-SQL Server
 
 You can use Win32 APIs to read and write data to a FILESTREAM BLOB. The following steps are
 

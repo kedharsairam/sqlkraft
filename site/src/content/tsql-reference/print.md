@@ -3,8 +3,8 @@ name: "PRINT"
 title: "PRINT"
 category: "statements"
 description: "Returns a user-defined message to the client application."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

@@ -3,8 +3,8 @@ name: "@@SERVERNAME"
 title: "@@SERVERNAME"
 category: "variables"
 description: "Returns the name of the SQL Server instance the client is connected to."
-tags: ["tsql", "variables"]
-pubDate: 2026-05-29
+tags: ["tsql","variables"]
+pubDate: "2026-05-29"
 ---
 
 Returns the name of the SQL Server instance the client is connected to.

@@ -1,35 +1,12 @@
 ---
 title: "Use Windows PowerShell"
 topic: "linux-operations"
-description: |
-  SQL Server on Linux
-
-  07/03/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Linux
-
-  This article introduces
-
-  SQL Server PowerShell
-
-  and walks you through a couple of examples on
-
-  how to use it with SQL Server on Linux
-tags:
-  - "linux-operations"
-  - "use-windows-powershell"
-pubDate: 2025-12-01
+description: "on Linux 07/03/2025 - Linux This article introduces SQL Server PowerShell and walks you through a couple of examples on how to use it with SQL Server on Linux"
+tags: ["linux-operations","use-windows-powershell"]
+pubDate: "2025-12-01"
 ---
 
 on Linux
-
-07/03/2025
-
-SQL Server
 
 - Linux
 

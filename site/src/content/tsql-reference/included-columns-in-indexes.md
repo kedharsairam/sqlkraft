@@ -3,8 +3,8 @@ name: "Included columns in indexes"
 title: "Included columns in indexes"
 category: "predicates"
 description: ""
-tags: ["tsql", "predicates"]
-pubDate: 2026-05-29
+tags: ["tsql","predicates"]
+pubDate: "2026-05-29"
 ---
 
 The

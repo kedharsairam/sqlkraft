@@ -1,31 +1,10 @@
 ---
 title: "Lesson 2: Creating the Target Conversation Objects"
 topic: "service-broker"
-description: |
-  09/04/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  In this lesson, you learn to build all the objects that enable a database to be the target of a
-
-  conversation from another database.
-
-  C
-tags:
-  - "service-broker"
-  - "lesson-2-creating-the-target-conversation-objects"
-pubDate: 2025-12-01
+description: "09/04/2025 In this lesson, you learn to build all the objects that enable a database to be the target of a conversation from another database. C"
+tags: ["service-broker","lesson-2-creating-the-target-conversation-objects"]
+pubDate: "2025-12-01"
 ---
-
-09/04/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 In this lesson, you learn to build all the objects that enable a database to be the target of a
 

@@ -2,9 +2,9 @@
 name: "To Change Logshipping Secondary Database Restor"
 title: "To Change Logshipping Secondary Database Restor"
 description: "Execute the below script on the secondary server"
-category: high-availability
-tags: ["database", "high-availability"]
-pubDate: 2025-03-15
+category: "high-availability"
+tags: ["database","high-availability"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

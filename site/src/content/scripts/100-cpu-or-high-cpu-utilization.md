@@ -2,9 +2,9 @@
 name: "100_ CPU or High CPU Utilization"
 title: "100_ CPU or High CPU Utilization"
 description: "first add these counters in performance monitor"
-category: troubleshooting
-tags: ["cpu", "troubleshooting"]
-pubDate: 2025-03-15
+category: "troubleshooting"
+tags: ["cpu","troubleshooting"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

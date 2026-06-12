@@ -3,8 +3,8 @@ name: "E. Use correlated subqueries"
 title: "E. Use correlated subqueries"
 category: "statements"
 description: "A correlated subquery is a query that depends on the outer query for its values."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 A correlated subquery is a query that depends on the outer query for its values. This query can

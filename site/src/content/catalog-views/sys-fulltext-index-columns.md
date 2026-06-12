@@ -2,23 +2,24 @@
 name: "sys.fulltext_index_columns"
 title: "sys.fulltext_index_columns"
 category: "objects"
-description: 'Contains a row for each column that is part of a full-text index. ID of the object of which this is part. ID of the column that is part of the full-text index. ID of the type column that stores the user-supplied document file extension-".doc", ".xls", and so forth-of the document in a given row. The type column is specified only for columns whose data requires filtering during full-text indexing. '
-tags: ["objects", "catalog-view"]
-pubDate: 2026-05-29
+description: |
+  'Contains a row for each column that is part of a full-text index. ID of the object of which this is part. ID of the column that is part of the full-text index. ID of the type column that stores the user-supplied document file extension-".doc", ".xls", and so forth-of the document in a given row. The type column is specified only for columns whose data requires filtering during full-text indexing. '
+tags: ["objects","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   USE
-  AdventureWorks2025;
-  GO
-  SELECT
-  object_id,
-  property_list_id,
-  stoplist_id
-  FROM
-  sys.fulltext_indexes
-  WHERE
-  object_id = object_id(
-  'HumanResources.JobCandidate'
-  );
+      AdventureWorks2025;
+      GO
+      SELECT
+      object_id,
+      property_list_id,
+      stoplist_id
+      FROM
+      sys.fulltext_indexes
+      WHERE
+      object_id = object_id(
+      'HumanResources.JobCandidate'
+      );
 ---
 
 ## Description

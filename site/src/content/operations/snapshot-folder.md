@@ -1,25 +1,10 @@
 ---
 title: "Snapshot folder"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  The snapshot folder is a directory that you have designated as a share; agents that read from
-
-  and write to this folder must have enough permissions to access it.
-
-  B
-tags:
-  - "linux-operations"
-  - "snapshot-folder"
-pubDate: 2025-12-01
+description: "on Linux The snapshot folder is a directory that you have designated as a share; agents that read from and write to this folder must have enough permissions to access it. B"
+tags: ["linux-operations","snapshot-folder"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

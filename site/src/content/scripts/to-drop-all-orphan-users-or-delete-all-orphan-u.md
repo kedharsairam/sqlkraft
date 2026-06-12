@@ -2,9 +2,9 @@
 name: "To Drop All Orphan Users or Delete All Orphan U"
 title: "To Drop All Orphan Users or Delete All Orphan U"
 description: "Drop all orphaned users from custom SP"
-category: security-audit
-tags: ["security-audit", "user"]
-pubDate: 2025-03-15
+category: "security-audit"
+tags: ["security-audit","user"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

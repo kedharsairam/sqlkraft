@@ -2,9 +2,9 @@
 name: "To View Content inside a Page"
 title: "To View Content inside a Page"
 description: "this is useful to findout the modified extents"
-category: backup-restore
+category: "backup-restore"
 tags: ["backup-restore"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

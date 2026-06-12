@@ -4,18 +4,18 @@ title: "sp_syscollector_set_warehouse_instance_name"
 category: "general"
 description: "(with EXECUTE permission) fixed database role to The following example illustrates how to configure the data collector to use a management data warehouse instance on a remote server. In this example, the remote server is named and the database is installed on the default instance. Data collector stored procedures (Transact-SQL) syscollector_config_store (Transact-SQL)"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   USE
-  msdb;
-  GO
-  EXECUTE
-  sp_syscollector_set_warehouse_instance_name N
-  'RemoteSERVER'
-  ;
-  -- the
-  default instance is assumed on the remote server
-  GO
+      msdb;
+      GO
+      EXECUTE
+      sp_syscollector_set_warehouse_instance_name N
+      'RemoteSERVER'
+      ;
+      -- the
+      default instance is assumed on the remote server
+      GO
 ---
 
 ## Description

@@ -1,33 +1,10 @@
 ---
 title: "Upgrade"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  04/15/2024
-
-  Applies to:
-
-  SQL Server
-
-  When upgrading a SQL Server mirrored instance to a new version, to a new SQL Server service
-
-  pack or cumulative update, or to a new Windows service pac
-tags:
-  - "high-availability"
-  - "upgrade"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","upgrade"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/15/2024
-
-SQL Server
 
 When upgrading a SQL Server mirrored instance to a new version, to a new SQL Server service
 

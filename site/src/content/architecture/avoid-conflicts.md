@@ -1,33 +1,10 @@
 ---
 title: "Avoid Conflicts"
 topic: "filestream"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Applications that use SqlOpenFilestream() to open Win32 file handles for reading or writing
-
-  FILESTREAM BLOB data can encounter conflict errors with Tr
-tags:
-  - "filestream"
-  - "avoid-conflicts"
-pubDate: 2025-12-01
+description: "Applications that use SqlOpenFilestream() to open Win32 file handles for reading or writing FILESTREAM BLOB data can encounter conflict errors with Tr"
+tags: ["filestream","avoid-conflicts"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 Applications that use SqlOpenFilestream() to open Win32 file handles for reading or writing
 

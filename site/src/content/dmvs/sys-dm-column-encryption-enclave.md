@@ -3,13 +3,13 @@ name: "sys.dm_column_encryption_enclave"
 title: "sys.dm_column_encryption_enclave"
 category: "io"
 description: "2019 (15.x) and later - Windows only Returns performance counters for the secure enclave for Always Encrypted. For more Always Encrypted with secure enclaves If the enclave is configured and has been correctly initialized after the last restart of SQL Server, the view contains exactly one row."
-tags: ["io", "dmv"]
-pubDate: 2026-05-29
+tags: ["io","dmv"]
+pubDate: "2026-05-29"
 syntax: |
   SELECT
-  *
-  FROM
-  sys.dm_column_encryption_enclave;
+      *
+      FROM
+      sys.dm_column_encryption_enclave;
 ---
 
 ## Description

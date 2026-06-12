@@ -1,35 +1,10 @@
 ---
 title: "Data collection & reporting"
 topic: "azure-synapse"
-description: |
-  Article
-
-  •
-
-  07/18/2024
-
-  Applies to:
-
-  SQL Server
-
-  This article describes the data that SQL Server enabled by Azure Arc transmits to Microsoft.
-
-  Specifically:
-
-  SQL Server enabled by Azure Arc collects u
-tags:
-  - "azure-synapse"
-  - "data-collection-reporting"
-pubDate: 2025-12-01
+description: "This article describes the data that SQL Server enabled by Azure Arc transmits to Microsoft. Specifically: SQL Server enabled by Azure Arc collects u"
+tags: ["azure-synapse","data-collection-reporting"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-07/18/2024
-
-SQL Server
 
 This article describes the data that SQL Server enabled by Azure Arc transmits to Microsoft.
 

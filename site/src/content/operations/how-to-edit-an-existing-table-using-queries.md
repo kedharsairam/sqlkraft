@@ -3,21 +3,17 @@ title: "How to: Edit an Existing Table using Queries"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  You can edit the definition of a table or its data by writing a Transact-SQL query. To view or
-
-  enter data in a table visually, use the Data Editor as described in
-
-  Connected Database
-
-  Dev
-tags:
-  - "ssb-diagnose"
-  - "how-to-edit-an-existing-table-using-queries"
-pubDate: 2025-12-01
+  
+    You can edit the definition of a table or its data by writing a Transact-SQL query. To view or
+  
+    enter data in a table visually, use the Data Editor as described in
+  
+    Connected Database
+  
+    Dev
+tags: ["ssb-diagnose","how-to-edit-an-existing-table-using-queries"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 You can edit the definition of a table or its data by writing a Transact-SQL query. To view or
 

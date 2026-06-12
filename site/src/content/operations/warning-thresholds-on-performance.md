@@ -1,33 +1,10 @@
 ---
 title: "Warning thresholds on performance"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  11/25/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic contains information about the SQL Server events for which warning thresholds can
-
-  be configured and managed for database mirroring. You can
-tags:
-  - "high-availability"
-  - "warning-thresholds-on-performance"
-pubDate: 2025-12-01
+description: "This topic contains information about the SQL Server events for which warning thresholds can be configured and managed for database mirroring."
+tags: ["high-availability","warning-thresholds-on-performance"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-11/25/2024
-
-SQL Server
 
 This topic contains information about the SQL Server events for which warning thresholds can
 

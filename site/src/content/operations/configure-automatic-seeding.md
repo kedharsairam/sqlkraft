@@ -1,33 +1,10 @@
 ---
 title: "Configure automatic seeding"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  SQL Server 2016 introduced automatic seeding of availability groups. When you create an
-
-  availability group with automatic seeding, SQL Server automati
-tags:
-  - "high-availability"
-  - "configure-automatic-seeding"
-pubDate: 2025-12-01
+description: "2016 introduced automatic seeding of availability groups. When you create an availability group with automatic seeding, SQL Server automati"
+tags: ["high-availability","configure-automatic-seeding"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 2016 introduced automatic seeding of availability groups. When you create an
 

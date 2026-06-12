@@ -3,21 +3,13 @@ name: "Syntax options"
 title: "Syntax options"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Common syntax
 
 ## Full syntax
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Creates a new table in the database.
 

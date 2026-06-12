@@ -2,9 +2,9 @@
 name: "To Check Status of Mirroring"
 title: "To Check Status of Mirroring"
 description: "use this on principal and mirror"
-category: high-availability
-tags: ["health-check", "high-availability", "mirroring"]
-pubDate: 2025-03-15
+category: "high-availability"
+tags: ["health-check","high-availability","mirroring"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

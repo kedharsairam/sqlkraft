@@ -1,43 +1,10 @@
 ---
 title: "Use in Applications"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  08/10/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  This article describes the options that are available to you for working with the
-
-  data type in
-
-  your a
-tags:
-  - "xml-data"
-  - "use-in-applications"
-pubDate: 2025-12-01
+description: "This article describes the options that are available to you for working with the data type in your a"
+tags: ["xml-data","use-in-applications"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-08/10/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This article describes the options that are available to you for working with the
 

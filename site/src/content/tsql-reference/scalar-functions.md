@@ -3,8 +3,8 @@ name: "Scalar functions"
 title: "Scalar functions"
 category: "statements"
 description: "Configuration functions are scalar functions that return information about current"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Categories of scalar functions

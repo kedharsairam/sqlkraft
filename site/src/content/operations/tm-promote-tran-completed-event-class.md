@@ -1,33 +1,10 @@
 ---
 title: "TM: Promote Tran Completed Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The TM: Promote Tran Completed event class indicates that a PROMOTE TRANSACTION
-
-  request has
-tags:
-  - "event-classes"
-  - "tm-promote-tran-completed-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","tm-promote-tran-completed-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The TM: Promote Tran Completed event class indicates that a PROMOTE TRANSACTION
 

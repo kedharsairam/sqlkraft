@@ -3,8 +3,8 @@ name: "sys.dm_database_encryption_keys"
 title: "sys.dm_database_encryption_keys"
 category: "io"
 description: "When a symmetric key is created, the symmetric key must be encrypted by using at least one of the following options: The key can have more than one encryption of each type. In other words, a single symmetric key can be encrypted by using multiple certificates, passwords, symmetric keys, and asymmetric keys at the same time. To protect the key material of the symmetric key, SQL Server and Azure SQL"
-tags: ["io", "dmv"]
-pubDate: 2026-05-29
+tags: ["io","dmv"]
+pubDate: "2026-05-29"
 syntax: "is_honor_broker_priority_on"
 ---
 

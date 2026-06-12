@@ -2,8 +2,8 @@
 title: "Memory, threads, and internal scheduling"
 topic: "memory-management"
 description: "Use these guides to understand how SQL Server stores, accesses, and maintains data on disk."
-tags: ["memory-management", "architecture"]
-pubDate: 2026-05-29
+tags: ["memory-management","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Use these guides to understand how SQL Server stores, accesses, and maintains data on disk.

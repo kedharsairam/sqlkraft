@@ -4,19 +4,19 @@ title: "sp_delete_log_shipping_primary_secondary"
 category: "general"
 description: "Removes the entry for a secondary database on the primary server."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_delete_log_shipping_primary_secondary
-  [ @primary_database = ]
-  N
-  'primary_database'
-  , [ @secondary_server = ]
-  N
-  'secondary_server'
-  , [ @secondary_database = ]
-  N
-  'secondary_database'
-  [ ; ]
+      [ @primary_database = ]
+      N
+      'primary_database'
+      , [ @secondary_server = ]
+      N
+      'secondary_server'
+      , [ @secondary_database = ]
+      N
+      'secondary_database'
+      [ ; ]
 ---
 
 ## Description

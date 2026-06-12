@@ -1,39 +1,10 @@
 ---
 title: "PATH Mode"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  As described in
-
-  FOR XML (SQL Server)
-
-  , the
-
-  mode provides a simpler way to mix elements
-
-  an
-tags:
-  - "xml-data"
-  - "path-mode"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","path-mode"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 As described in
 

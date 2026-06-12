@@ -3,8 +3,8 @@ name: "sys.dm_exec_sessions"
 title: "sys.dm_exec_sessions"
 category: "execution"
 description: "Associates up to 128 bytes of binary information with the current session or connection. constant, or a constant that is implicitly convertible to , to associate with the current session or connection. variable holding a context value to associate with the current session , SET CONTEXT_INFO affects the current session. T"
-tags: ["execution", "dmv"]
-pubDate: 2026-05-29
+tags: ["execution","dmv"]
+pubDate: "2026-05-29"
 syntax: "sys.dm_exec_connections"
 ---
 
@@ -17,10 +17,6 @@ Associates up to 128 bytes of binary information with the current session or con
 `sys.dm_exec_connections`
 
 ## Remarks
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Associates up to 128 bytes of binary information with the current session or connection.
 

@@ -1,35 +1,16 @@
 ---
 title: "Optimize with in-memory OLTP"
 topic: "json-data"
-description: |
-  Applies to:
-
-  SQL Server 2017 (14.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  SQL Server and Azure SQL Database let you work with text form
-tags:
-  - "json-data"
-  - "optimize-with-in-memory-oltp"
-pubDate: 2025-12-01
+description: ""
+tags: ["json-data","optimize-with-in-memory-oltp"]
+pubDate: "2025-12-01"
 ---
 
 2017 (14.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 and Azure SQL Database let you work with text formatted as JSON. To increase the
 

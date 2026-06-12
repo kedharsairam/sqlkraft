@@ -4,19 +4,9 @@ title: "XQuery - Path Expressions"
 category: "xquery"
 description: "XQuery Language Reference: Path Expressions"
 syntax: "child::Features"
-tags:
-  - "xquery"
-  - "path-expressions"
-pubDate: 2025-12-01
+tags: ["xquery","path-expressions"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 XQuery path expressions locate nodes, such as element, attribute, and text nodes, in a
 

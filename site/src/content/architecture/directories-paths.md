@@ -1,33 +1,10 @@
 ---
 title: "Directories & Paths"
 topic: "filestream"
-description: |
-  Article
-
-  •
-
-  10/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Describes the directory structure in which the files are stored in FileTables.
-
-  You can use the following three functions to work with FileTable direct
-tags:
-  - "filestream"
-  - "directories-paths"
-pubDate: 2025-12-01
+description: "Describes the directory structure in which the files are stored in FileTables. You can use the following three functions to work with FileTable direct"
+tags: ["filestream","directories-paths"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-10/03/2023
-
-SQL Server
 
 Describes the directory structure in which the files are stored in FileTables.
 

@@ -1,33 +1,10 @@
 ---
 title: "Configure a Firewall"
 topic: "filestream"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  To use FILESTREAM in a firewall-protected environment, both the client and server must be
-
-  able to resolve DNS names to the server that contains the FI
-tags:
-  - "filestream"
-  - "configure-a-firewall"
-pubDate: 2025-12-01
+description: "To use FILESTREAM in a firewall-protected environment, both the client and server must be able to resolve DNS names to the server that contains the FI"
+tags: ["filestream","configure-a-firewall"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 To use FILESTREAM in a firewall-protected environment, both the client and server must be
 

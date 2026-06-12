@@ -1,35 +1,12 @@
 ---
 title: "SQL:StmtRecompile Event Class"
 topic: "event-classes"
-description: |
-  SQL:StmtRecompile Event Class
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The SQL:StmtRecompile event class indicates statement-level re
-tags:
-  - "event-classes"
-  - "sqlstmtrecompile-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","sqlstmtrecompile-event-class"]
+pubDate: "2025-12-01"
 ---
 
 SQL:StmtRecompile Event Class
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The SQL:StmtRecompile event class indicates statement-level recompilations caused by all
 

@@ -3,25 +3,11 @@ name: "SET LANGUAGE example: Month name in Polish"
 title: "SET LANGUAGE example: Month name in Polish"
 category: "statements"
 description: ""
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ## Code example of SET LANGUAGE
-
-Article
-
-•
-
-11/18/2022
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

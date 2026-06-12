@@ -1,41 +1,10 @@
 ---
 title: "Wildcard components & content validation"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Wildcard components are used to increase flexibility in what is allowed to appear in a content
-
-  model.
-tags:
-  - "xml-data"
-  - "wildcard-components-content-validation"
-pubDate: 2025-12-01
+description: "Wildcard components are used to increase flexibility in what is allowed to appear in a content model."
+tags: ["xml-data","wildcard-components-content-validation"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Wildcard components are used to increase flexibility in what is allowed to appear in a content
 

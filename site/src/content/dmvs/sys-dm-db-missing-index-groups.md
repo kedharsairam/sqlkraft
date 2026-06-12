@@ -3,8 +3,8 @@ name: "sys.dm_db_missing_index_groups"
 title: "sys.dm_db_missing_index_groups"
 category: "index"
 description: "This DMV returns information about indexes that are missing in a specific index group. In Azure SQL Database, dynamic management views cannot expose information that would impact database containment or expose information about other databases the user has access to."
-tags: ["index", "dmv"]
-pubDate: 2026-05-29
+tags: ["index","dmv"]
+pubDate: "2026-05-29"
 syntax: "sys.dm_db_missing_index_groups"
 ---
 
@@ -17,12 +17,6 @@ This DMV returns information about indexes that are missing in a specific index 
 `sys.dm_db_missing_index_groups`
 
 ## Remarks
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This DMV returns information about indexes that are missing in a specific index group.
 

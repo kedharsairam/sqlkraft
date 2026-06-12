@@ -3,8 +3,8 @@ name: "Example"
 title: "Example"
 category: "statements"
 description: "ALTER permission on the table or view is required to run DROP INDEX."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 ALTER permission on the table or view is required to run DROP INDEX. This permission is

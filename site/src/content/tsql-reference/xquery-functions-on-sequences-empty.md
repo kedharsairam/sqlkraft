@@ -4,19 +4,9 @@ title: "XQuery - Functions on Sequences - empty"
 category: "xquery"
 description: ""
 syntax: "fn:empty($arg as item()*) as xs:boolean"
-tags:
-  - "xquery"
-  - "functions-on-sequences-empty"
-pubDate: 2025-12-01
+tags: ["xquery","functions-on-sequences-empty"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 Returns True if the value of
 

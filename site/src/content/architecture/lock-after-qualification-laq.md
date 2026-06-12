@@ -2,8 +2,8 @@
 title: "Lock after qualification (LAQ)"
 topic: "locking"
 description: "If optimized locking is enabled, the request holds only a single"
-tags: ["locking", "architecture"]
-pubDate: 2026-05-29
+tags: ["locking","architecture"]
+pubDate: "2026-05-29"
 ---
 
 If optimized locking is enabled, the request holds only a single

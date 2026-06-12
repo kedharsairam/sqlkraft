@@ -1,37 +1,10 @@
 ---
 title: "Performance"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article discusses some of the design choices that enhance the performance of SQL Server
-
-  integration with the .NET Fra
-tags:
-  - "clr-integration"
-  - "performance"
-pubDate: 2025-12-01
+description: "This article discusses some of the design choices that enhance the performance of SQL Server integration with the .NET Fra"
+tags: ["clr-integration","performance"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article discusses some of the design choices that enhance the performance of SQL Server
 

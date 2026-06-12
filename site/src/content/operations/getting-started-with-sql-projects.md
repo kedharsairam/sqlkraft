@@ -1,35 +1,16 @@
 ---
 title: "Getting started with SQL projects"
 topic: "ssms"
-description: |
-  Applies to:
-
-  SQL Server 2022 (16.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  A SQL database project is a local representation of SQL objec
-tags:
-  - "ssms"
-  - "getting-started-with-sql-projects"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssms","getting-started-with-sql-projects"]
+pubDate: "2025-12-01"
 ---
 
 2022 (16.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 A SQL database project is a local representation of SQL objects that comprise the schema for a
 

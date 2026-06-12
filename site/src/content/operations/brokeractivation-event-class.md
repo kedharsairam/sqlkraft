@@ -1,39 +1,10 @@
 ---
 title: "Broker:Activation Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  SQL Server generates a
-
-  event when a queue monitor starts an activation
-
-  stored procedure, sends a QUEUE_ACTIVATION notific
-tags:
-  - "event-classes"
-  - "brokeractivation-event-class"
-pubDate: 2025-12-01
+description: "generates a event when a queue monitor starts an activation stored procedure, sends a QUEUE_ACTIVATION notific"
+tags: ["event-classes","brokeractivation-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Managed Instance
 
 generates a
 

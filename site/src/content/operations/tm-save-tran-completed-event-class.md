@@ -1,33 +1,10 @@
 ---
 title: "TM: Save Tran Completed Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The TM: Save Tran Completed event class indicates that a SAVE TRANSACTION request has
-
-  comple
-tags:
-  - "event-classes"
-  - "tm-save-tran-completed-event-class"
-pubDate: 2025-12-01
+description: "The TM: Save Tran Completed event class indicates that a SAVE TRANSACTION request has comple"
+tags: ["event-classes","tm-save-tran-completed-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The TM: Save Tran Completed event class indicates that a SAVE TRANSACTION request has
 

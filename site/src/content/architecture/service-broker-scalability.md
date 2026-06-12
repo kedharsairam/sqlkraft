@@ -1,29 +1,10 @@
 ---
 title: "Service Broker Scalability"
 topic: "service-broker"
-description: |
-  09/15/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Service Broker is designed to help your database applications scale well, whether you scale up
-
-  or scale out. This topic provides gener
-tags:
-  - "service-broker"
-  - "service-broker-scalability"
-pubDate: 2025-12-01
+description: "09/15/2025 Service Broker is designed to help your database applications scale well, whether you scale up or scale out."
+tags: ["service-broker","service-broker-scalability"]
+pubDate: "2025-12-01"
 ---
-
-09/15/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Service Broker is designed to help your database applications scale well, whether you scale up
 

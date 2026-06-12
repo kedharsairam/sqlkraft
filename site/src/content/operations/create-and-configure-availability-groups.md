@@ -1,23 +1,10 @@
 ---
 title: "Create and configure availability groups"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This tutorial shows how to create and configure an availability group (AG) for SQL Server on
-
-  Linux. Unlike SQL Server 2016 (13.x) and earlier versions on Windows, y
-tags:
-  - "linux-operations"
-  - "create-and-configure-availability-groups"
-pubDate: 2025-12-01
+description: "on Linux This tutorial shows how to create and configure an availability group (AG) for SQL Server on Linux. Unlike SQL Server 2016 (13.x) and earlier versions on Windows, y"
+tags: ["linux-operations","create-and-configure-availability-groups"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

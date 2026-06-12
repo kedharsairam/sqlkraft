@@ -3,8 +3,8 @@ name: "Transaction isolation levels"
 title: "Transaction isolation levels"
 category: "transactions"
 description: ""
-tags: ["tsql", "transactions"]
-pubDate: 2026-05-29
+tags: ["tsql","transactions"]
+pubDate: "2026-05-29"
 ---
 
 #### Isolation level
@@ -12,12 +12,6 @@ pubDate: 2026-05-29
 #### Supported
 
 #### Honored
-
-07/16/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 doesn't guarantee that lock hints will be honored in queries that access metadata
 

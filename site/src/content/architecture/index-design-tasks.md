@@ -2,8 +2,8 @@
 title: "Index design tasks"
 topic: "index-architecture"
 description: ""
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Server Management Studio, on the

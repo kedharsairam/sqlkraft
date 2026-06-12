@@ -4,8 +4,8 @@ title: "sp_revokelogin"
 category: "general"
 description: "Removes the login entries from SQL Server for a Windows user or group created by using The name of the Windows user or group. , with no default."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
-syntax: '<ComputerName>\<User>'
+pubDate: "2026-05-29"
+syntax: "'<ComputerName>\<User>'"
 ---
 
 ## Description

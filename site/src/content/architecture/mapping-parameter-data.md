@@ -1,29 +1,10 @@
 ---
 title: "Mapping parameter data"
 topic: "clr-integration"
-description: |
-  07/15/2025
-
-  Applies to:
-
-  SQL Server
-
-  The following table lists SQL Server data types, their equivalents in the common language
-
-  runtime (CLR) for SQL Server in the
-
-  namespace, and their native CLR
-
-  eq
-tags:
-  - "clr-integration"
-  - "mapping-parameter-data"
-pubDate: 2025-12-01
+description: ""
+tags: ["clr-integration","mapping-parameter-data"]
+pubDate: "2025-12-01"
 ---
-
-07/15/2025
-
-SQL Server
 
 The following table lists SQL Server data types, their equivalents in the common language
 

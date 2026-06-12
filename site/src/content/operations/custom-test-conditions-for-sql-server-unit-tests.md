@@ -3,17 +3,13 @@ title: "Custom Test Conditions  for SQL Server Unit Tests"
 topic: "ssb-diagnose"
 description: |
   09/10/2025
-
-  You can add custom test conditions for SQL Server unit tests. However, you must first install
-
-  the test condition before you can use it, whether you created the extension or you're install
-tags:
-  - "ssb-diagnose"
-  - "custom-test-conditions-for-sql-server-unit-tests"
-pubDate: 2025-12-01
+  
+    You can add custom test conditions for SQL Server unit tests. However, you must first install
+  
+    the test condition before you can use it, whether you created the extension or you're install
+tags: ["ssb-diagnose","custom-test-conditions-for-sql-server-unit-tests"]
+pubDate: "2025-12-01"
 ---
-
-09/10/2025
 
 You can add custom test conditions for SQL Server unit tests. However, you must first install
 

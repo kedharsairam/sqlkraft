@@ -1,33 +1,10 @@
 ---
 title: "Create a cluster"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  To install or upgrade a SQL Server failover cluster instance (FCI), you must run the Setup
-
-  program on each node of the underlying Windows Server failo
-tags:
-  - "high-availability"
-  - "create-a-cluster"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","create-a-cluster"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/28/2023
-
-SQL Server
 
 To install or upgrade a SQL Server failover cluster instance (FCI), you must run the Setup
 

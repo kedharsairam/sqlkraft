@@ -1,39 +1,10 @@
 ---
 title: "Data synchronization state of availability database is not healthy"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  : Availability Database Data Synchronization State
-
-  : Data synchronization state of availability database is not healthy.
-
-  :
-
-  Warning
-
-  : Availability d
-tags:
-  - "high-availability"
-  - "data-synchronization-state-of-availability-database-is-not-healthy"
-pubDate: 2025-12-01
+description: ": Availability Database Data Synchronization State : Data synchronization state of availability database is not healthy. : Warning : Availability d"
+tags: ["high-availability","data-synchronization-state-of-availability-database-is-not-healthy"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 : Availability Database Data Synchronization State
 

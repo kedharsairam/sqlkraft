@@ -1,33 +1,10 @@
 ---
 title: "Example: Specifying the ELEMENT Directive"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This retrieves employee information and generates element-centric XML as shown in the
-
-  follow
-tags:
-  - "xml-data"
-  - "example-specifying-the-element-directive"
-pubDate: 2025-12-01
+description: "This retrieves employee information and generates element-centric XML as shown in the follow"
+tags: ["xml-data","example-specifying-the-element-directive"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This retrieves employee information and generates element-centric XML as shown in the
 

@@ -1,45 +1,20 @@
 ---
 title: "Add Columns"
 topic: "tables"
-description: |
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  Warehouse in Microsoft Fabric
-
-  SQL da
-tags:
-  - "tables"
-  - "add-columns"
-pubDate: 2025-12-01
+description: ""
+tags: ["tables","add-columns"]
+pubDate: "2025-12-01"
 ---
 
 2016 (13.x) and later versions
-
-Azure SQL Database
 
 Azure
 
 SQL Managed Instance
 
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 This article describes how to add new columns to a table in SQL Server by using SQL Server
 

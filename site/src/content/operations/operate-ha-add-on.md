@@ -1,25 +1,10 @@
 ---
 title: "Operate (HA add-on)"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  This document describes how to do the following tasks for SQL Server on a shared disk failover
-
-  cluster with Red Hat Enterprise Linux.
-
-  Manually fail over the cluste
-tags:
-  - "linux-operations"
-  - "operate-ha-add-on"
-pubDate: 2025-12-01
+description: "on Linux This document describes how to do the following tasks for SQL Server on a shared disk failover cluster with Red Hat Enterprise Linux. Manually fail over the cluste"
+tags: ["linux-operations","operate-ha-add-on"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

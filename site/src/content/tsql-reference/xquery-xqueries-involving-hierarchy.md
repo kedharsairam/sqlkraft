@@ -4,19 +4,9 @@ title: "XQuery - XQueries Involving Hierarchy"
 category: "xquery"
 description: "XQuery Language Reference: XQueries Involving Hierarchy"
 syntax: "ManuInstr"
-tags:
-  - "xquery"
-  - "xqueries-involving-hierarchy"
-pubDate: 2025-12-01
+tags: ["xquery","xqueries-involving-hierarchy"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Most
 

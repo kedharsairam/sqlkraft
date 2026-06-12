@@ -3,8 +3,8 @@ name: "uniqueidentifier"
 title: "Uniqueidentifier"
 category: "data-types"
 description: "A 16-byte GUID (globally unique identifier) data type."
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 ## Syntax
 

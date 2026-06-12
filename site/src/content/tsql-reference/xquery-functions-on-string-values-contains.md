@@ -4,19 +4,9 @@ title: "XQuery - Functions on String Values - contains"
 category: "xquery"
 description: "XQuery Language Reference: Functions on String Values - contains"
 syntax: "fn:contains ($arg1 as xs:string?, $arg2 as xs:string?) as xs:boolean?"
-tags:
-  - "xquery"
-  - "functions-on-string-values-contains"
-pubDate: 2025-12-01
+tags: ["xquery","functions-on-string-values-contains"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/15/2024
-
-SQL Server
 
 Returns a value of type xs:boolean indicating whether the value of
 

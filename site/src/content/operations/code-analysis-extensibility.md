@@ -1,31 +1,10 @@
 ---
 title: "Code analysis extensibility"
 topic: "ssms"
-description: |
-  Article
-
-  •
-
-  03/11/2025
-
-  The
-
-  provided code analysis rules
-
-  report on Transact-SQL design, naming, and performance
-
-  warnings in your database code. If the built-in code analysis rules don't include cov
-tags:
-  - "ssms"
-  - "code-analysis-extensibility"
-pubDate: 2025-12-01
+description: "The provided code analysis rules report on Transact-SQL design, naming, and performance warnings in your database code."
+tags: ["ssms","code-analysis-extensibility"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/11/2025
 
 The
 

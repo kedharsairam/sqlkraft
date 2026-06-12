@@ -2,9 +2,9 @@
 name: "SSPI Handshake Error"
 title: "SSPI Handshake Error"
 description: "There can be 2 variants in SSPI errors:"
-category: troubleshooting
+category: "troubleshooting"
 tags: ["troubleshooting"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

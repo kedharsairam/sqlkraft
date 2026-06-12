@@ -1,23 +1,10 @@
 ---
 title: "Pacemaker basics"
 topic: "linux-operations"
-description: |
-  Applies to:
-
-  SQL Server
-
-  on Linux
-
-  Starting with SQL Server 2017 (14.x), SQL Server is supported on both Linux and Windows. Like
-
-  Windows-based SQL Server deployments, SQL Server databases and instanc
-tags:
-  - "linux-operations"
-  - "pacemaker-basics"
-pubDate: 2025-12-01
+description: "on Linux Starting with SQL Server 2017 (14.x), SQL Server is supported on both Linux and Windows. Like Windows-based SQL Server deployments, SQL Server databases and instanc"
+tags: ["linux-operations","pacemaker-basics"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 on Linux
 

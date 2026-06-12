@@ -1,45 +1,10 @@
 ---
 title: "Reference"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  11/01/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Every database you create has a predefined
-
-  XML schema collection in the
-
-  relational
-
-  schema. It reserv
-tags:
-  - "xml-data"
-  - "reference"
-pubDate: 2025-12-01
+description: "Every database you create has a predefined XML schema collection in the relational schema. It reserv"
+tags: ["xml-data","reference"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-11/01/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Every database you create has a predefined
 

@@ -1,33 +1,10 @@
 ---
 title: "Get Information About DML Triggers"
 topic: "change-data-capture"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This topic describes how to get information about DML triggers in SQL Server by using SQL
-
-  Se
-tags:
-  - "change-data-capture"
-  - "get-information-about-dml-triggers"
-pubDate: 2025-12-01
+description: "This topic describes how to get information about DML triggers in SQL Server by using SQL Se"
+tags: ["change-data-capture","get-information-about-dml-triggers"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This topic describes how to get information about DML triggers in SQL Server by using SQL
 

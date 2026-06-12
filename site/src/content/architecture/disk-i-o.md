@@ -2,15 +2,11 @@
 title: "Disk I/O"
 topic: "io-fundamentals"
 description: "I/O fundamentals"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 I/O fundamentals
-
-SQL Server
-
-Azure SQL Managed Instance
 
 on Azure Virtual
 

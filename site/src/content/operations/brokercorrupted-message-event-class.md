@@ -1,43 +1,10 @@
 ---
 title: "Broker:Corrupted Message Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  SQL Server creates a
-
-  event when Service Broker receives a
-
-  corrupted message.
-
-  Description
-
-  The name of the client applica
-tags:
-  - "event-classes"
-  - "brokercorrupted-message-event-class"
-pubDate: 2025-12-01
+description: "creates a event when Service Broker receives a corrupted message. Description The name of the client applica"
+tags: ["event-classes","brokercorrupted-message-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Managed Instance
 
 creates a
 
@@ -49,9 +16,7 @@ Description
 
 The name of the client application that
 
-created the connection to an instance of
-
-SQL Server. This column is populated with
+created the connection to an instance of. This column is populated with
 
 the values passed by the application
 

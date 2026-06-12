@@ -1,31 +1,10 @@
 ---
 title: "Missing Join Predicate Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The Missing Join Predicate event class indicates that a query is being executed that has no j
-tags:
-  - "event-classes"
-  - "missing-join-predicate-event-class"
-pubDate: 2025-12-01
+description: "The Missing Join Predicate event class indicates that a query is being executed that has no j"
+tags: ["event-classes","missing-join-predicate-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The Missing Join Predicate event class indicates that a query is being executed that has no join
 

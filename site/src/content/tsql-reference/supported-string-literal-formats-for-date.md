@@ -3,8 +3,8 @@ name: "Supported string literal formats for date"
 title: "Supported string literal formats for date"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 ## String literal formats for month-day-year

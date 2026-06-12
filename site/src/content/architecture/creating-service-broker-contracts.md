@@ -1,29 +1,10 @@
 ---
 title: "Creating Service Broker Contracts"
 topic: "service-broker"
-description: |
-  08/29/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Contracts define the name of a specific business task and list the message types used in that
-
-  task. Service Broker contracts define tw
-tags:
-  - "service-broker"
-  - "creating-service-broker-contracts"
-pubDate: 2025-12-01
+description: "08/29/2025 Contracts define the name of a specific business task and list the message types used in that task."
+tags: ["service-broker","creating-service-broker-contracts"]
+pubDate: "2025-12-01"
 ---
-
-08/29/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Contracts define the name of a specific business task and list the message types used in that
 

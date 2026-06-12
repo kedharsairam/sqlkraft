@@ -2,8 +2,8 @@
 title: "End transactions"
 topic: "io-fundamentals"
 description: "manager reported a failure to prepare, the transaction manager sends a rollback command"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 manager reported a failure to prepare, the transaction manager sends a rollback command

@@ -1,35 +1,12 @@
 ---
 title: "SQL:FullTextQuery Event Class"
 topic: "event-classes"
-description: |
-  SQL:FullTextQuery Event Class
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The SQL:FullTextQuery event class occurs when SQL Server execu
-tags:
-  - "event-classes"
-  - "sqlfulltextquery-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","sqlfulltextquery-event-class"]
+pubDate: "2025-12-01"
 ---
 
 SQL:FullTextQuery Event Class
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The SQL:FullTextQuery event class occurs when SQL Server executes a full text query. Include
 

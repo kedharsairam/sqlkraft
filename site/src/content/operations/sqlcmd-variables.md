@@ -1,35 +1,12 @@
 ---
 title: "SQLCMD variables"
 topic: "ssms"
-description: |
-  SQLCMD variables overview
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  SQLCMD variables are used in SQL projects to create dynamically re
-tags:
-  - "ssms"
-  - "sqlcmd-variables"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssms","sqlcmd-variables"]
+pubDate: "2025-12-01"
 ---
 
 SQLCMD variables overview
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 SQLCMD variables are used in SQL projects to create dynamically replaceable tokens in SQL
 

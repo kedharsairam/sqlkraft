@@ -1,29 +1,12 @@
 ---
 title: "JSON message format"
 topic: "change-data-capture"
-description: |
-  Applies to:
-
-  SQL Server 2025 (17.x)
-
-  Azure SQL Database
-
-  Azure SQL Managed
-
-  Instance
-
-  This article describes the JSON format of a CloudEvents message that is streamed from SQL
-
-  Server to Azure Event H
-tags:
-  - "change-data-capture"
-  - "json-message-format"
-pubDate: 2025-12-01
+description: "2025 (17.x) Azure SQL Managed Instance This article describes the JSON format of a CloudEvents message that is streamed from SQL Server to Azure Event H"
+tags: ["change-data-capture","json-message-format"]
+pubDate: "2025-12-01"
 ---
 
 2025 (17.x)
-
-Azure SQL Database
 
 Azure SQL Managed
 

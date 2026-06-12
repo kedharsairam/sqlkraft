@@ -1,41 +1,10 @@
 ---
 title: "Set the Distribution Retention Period for Transactional Publications"
 topic: "migration"
-description: |
-  Article
-
-  •
-
-  09/27/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Specify the minimum distribution retention period and maximum distribution retention period
-
-  on the
-
-  dialog box. This is
-
-  a
-tags:
-  - "migration"
-  - "set-the-distribution-retention-period-for-transactional-publications"
-pubDate: 2025-12-01
+description: "Specify the minimum distribution retention period and maximum distribution retention period on the dialog box. This is a"
+tags: ["migration","set-the-distribution-retention-period-for-transactional-publications"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/27/2024
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Specify the minimum distribution retention period and maximum distribution retention period
 

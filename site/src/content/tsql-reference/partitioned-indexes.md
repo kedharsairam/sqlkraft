@@ -3,8 +3,8 @@ name: "Partitioned indexes"
 title: "Partitioned indexes"
 category: "statements"
 description: "sorting and a temporary copy of the original table or existing clustered index data."
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 sorting and a temporary copy of the original table or existing clustered index data. For more

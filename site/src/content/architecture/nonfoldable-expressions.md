@@ -2,8 +2,8 @@
 title: "Nonfoldable expressions"
 topic: "io-fundamentals"
 description: "compilation so that the resulting execution plan is more efficient. This is referred to as constant"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 compilation so that the resulting execution plan is more efficient. This is referred to as constant

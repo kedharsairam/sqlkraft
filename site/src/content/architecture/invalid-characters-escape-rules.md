@@ -1,41 +1,10 @@
 ---
 title: "Invalid Characters & escape rules"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  This article describes how invalid XML characters are handled by the FOR XML clause, and lists
-
-  the esc
-tags:
-  - "xml-data"
-  - "invalid-characters-escape-rules"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","invalid-characters-escape-rules"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This article describes how invalid XML characters are handled by the FOR XML clause, and lists
 

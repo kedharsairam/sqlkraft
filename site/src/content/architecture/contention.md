@@ -2,8 +2,8 @@
 title: "contention"
 topic: "io-fundamentals"
 description: ""
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The following script queries buffer descriptors to determine which objects are associated with

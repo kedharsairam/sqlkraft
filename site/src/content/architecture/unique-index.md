@@ -1,31 +1,10 @@
 ---
 title: "Unique index"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This topic describes how to create a unique index on a table in SQL Server by using SQL Serve
-tags:
-  - "filestream"
-  - "unique-index"
-pubDate: 2025-12-01
+description: "This topic describes how to create a unique index on a table in SQL Server by using SQL Serve"
+tags: ["filestream","unique-index"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This topic describes how to create a unique index on a table in SQL Server by using SQL Server
 

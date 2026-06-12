@@ -3,8 +3,8 @@ name: "sys.dm_io_cluster_valid_path_names"
 title: "sys.dm_io_cluster_valid_path_names"
 category: "io"
 description: "Returns information on all valid shared disks, including clustered shared volumes, for a SQL Server failover cluster instance. If the instance isn't clustered, an empty rowset is returned. Volume mount point or drive path that can be used as a root directory for database and log files. Not nullable. Current owner of the drive. For cluster shared volumes (CSV), the owner is the node which is hostin"
-tags: ["io", "dmv"]
-pubDate: 2026-05-29
+tags: ["io","dmv"]
+pubDate: "2026-05-29"
 syntax: "is_cluster_shared_volume"
 ---
 

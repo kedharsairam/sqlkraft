@@ -4,25 +4,25 @@ title: "sp_stop_job"
 category: "general"
 description: "Instructs SQL Server Agent to stop the execution of a job. The identification number of the job to stop."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_stop_job
-  [ [ @job_name = ]
-  N
-  'job_name'
-  ]
-  [ , [ @job_id = ]
-  'job_id'
-  ]
-  [ , [ @originating_server = ]
-  N
-  'originating_server'
-  ]
-  [ , [ @server_name = ]
-  N
-  'server_name'
-  ]
-  [ ; ]
+      [ [ @job_name = ]
+      N
+      'job_name'
+      ]
+      [ , [ @job_id = ]
+      'job_id'
+      ]
+      [ , [ @originating_server = ]
+      N
+      'originating_server'
+      ]
+      [ , [ @server_name = ]
+      N
+      'server_name'
+      ]
+      [ ; ]
 ---
 
 ## Description

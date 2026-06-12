@@ -2,9 +2,9 @@
 name: "To Get Alert if Database Owner is not SA"
 title: "To Get Alert if Database Owner is not SA"
 description: "diagnostic script for automation operations."
-category: automation
-tags: ["automation", "database"]
-pubDate: 2025-03-15
+category: "automation"
+tags: ["automation","database"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

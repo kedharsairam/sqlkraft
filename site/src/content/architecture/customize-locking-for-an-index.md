@@ -2,8 +2,8 @@
 title: "Customize locking for an index"
 topic: "index-architecture"
 description: ""
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 As shown in the following example, if the transaction isolation level is set to

@@ -3,8 +3,8 @@ name: "Date and time data types"
 title: "Date and time data types"
 category: "data-types"
 description: "Lists and describes the date and time data types available in T-SQL, including their ranges, accuracy, and storage sizes."
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 rowversion
@@ -15,17 +15,9 @@ rowversion
 
 ﾃ
 
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
 Azure Synapse
 
 Analytics
-
-SQL database in Microsoft Fabric
 
 The sections in this article cover all Transact-SQL date and time data types and functions, including usage and
 

@@ -1,35 +1,10 @@
 ---
 title: "Create, Construct, & Query geometry Instances"
 topic: "spatial-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL analytics endpoint in Microsoft Fabric
-
-  Warehouse in Microsoft Fabric
-
-  SQL
-
-  database in Microsoft Fabric
-
-  The planar spatia
-tags:
-  - "spatial-data"
-  - "create-construct-query-geometry-instances"
-pubDate: 2025-12-01
+description: "SQL analytics endpoint in Microsoft Fabric Warehouse in Microsoft Fabric SQL database in Microsoft Fabric The planar spatia"
+tags: ["spatial-data","create-construct-query-geometry-instances"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 SQL analytics endpoint in Microsoft Fabric
 

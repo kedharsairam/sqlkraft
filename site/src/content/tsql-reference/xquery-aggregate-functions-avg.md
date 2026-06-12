@@ -4,19 +4,9 @@ title: "XQuery - Aggregate Functions - avg"
 category: "xquery"
 description: ""
 syntax: "fn:avg($arg as xdt:anyAtomicType*) as xdt:anyAtomicType?"
-tags:
-  - "xquery"
-  - "aggregate-functions-avg"
-pubDate: 2025-12-01
+tags: ["xquery","aggregate-functions-avg"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Returns the average of a sequence of numbers.
 

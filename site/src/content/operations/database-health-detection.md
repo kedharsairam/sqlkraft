@@ -1,33 +1,10 @@
 ---
 title: "Database health detection"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  05/25/2023
-
-  Applies to:
-
-  SQL Server
-
-  Starting in SQL Server 2016, database level health detection (DB_FAILOVER) option is available
-
-  when configuring an Always On availability group. The d
-tags:
-  - "high-availability"
-  - "database-health-detection"
-pubDate: 2025-12-01
+description: "Starting in SQL Server 2016, database level health detection (DB_FAILOVER) option is available when configuring an Always On availability group. The d"
+tags: ["high-availability","database-health-detection"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-05/25/2023
-
-SQL Server
 
 Starting in SQL Server 2016, database level health detection (DB_FAILOVER) option is available
 

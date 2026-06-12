@@ -1,41 +1,10 @@
 ---
 title: "Frequently used values with computed columns"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  If queries are made principally on a few element and attribute values, you may want to
-
-  promote those q
-tags:
-  - "xml-data"
-  - "frequently-used-values-with-computed-columns"
-pubDate: 2025-12-01
+description: "If queries are made principally on a few element and attribute values, you may want to promote those q"
+tags: ["xml-data","frequently-used-values-with-computed-columns"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 If queries are made principally on a few element and attribute values, you may want to
 

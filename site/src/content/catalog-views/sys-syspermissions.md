@@ -3,8 +3,8 @@ name: "sys.syspermissions"
 title: "sys.syspermissions"
 category: "security"
 description: "Contains information about permissions granted and denied to users, groups, and roles in the ID of the object for object permissions."
-tags: ["security", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["security","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

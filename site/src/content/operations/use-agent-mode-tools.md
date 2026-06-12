@@ -3,14 +3,12 @@ title: "Use Agent mode tools"
 topic: "profiler"
 description: |
   Quickstart: Use GitHub Copilot Agent
-
-  Agent Mode allows GitHub Copilot to use the tools available in the MSSQL extension for Visual
-
-  Studio Code. When the extension is installed and active, Copilot ca
-tags:
-  - "profiler"
-  - "use-agent-mode-tools"
-pubDate: 2025-12-01
+  
+    Agent Mode allows GitHub Copilot to use the tools available in the MSSQL extension for Visual
+  
+    Studio Code. When the extension is installed and active, Copilot ca
+tags: ["profiler","use-agent-mode-tools"]
+pubDate: "2025-12-01"
 ---
 
 Quickstart: Use GitHub Copilot Agent

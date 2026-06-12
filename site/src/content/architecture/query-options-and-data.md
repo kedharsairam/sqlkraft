@@ -1,41 +1,10 @@
 ---
 title: "Query options and data"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  03/17/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  This article describes the query options that you have to specify to query XML data. It also
-
-  describes
-tags:
-  - "xml-data"
-  - "query-options-and-data"
-pubDate: 2025-12-01
+description: "This article describes the query options that you have to specify to query XML data. It also describes"
+tags: ["xml-data","query-options-and-data"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/17/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 This article describes the query options that you have to specify to query XML data. It also
 

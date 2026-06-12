@@ -1,35 +1,10 @@
 ---
 title: "Access with File Input-Output APIs"
 topic: "filestream"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Describes how file system I/O works on a FileTable.
-
-  The primary usage of FileTables is expected to be through the Windows file system and file I/O
-
-  AP
-tags:
-  - "filestream"
-  - "access-with-file-input-output-apis"
-pubDate: 2025-12-01
+description: "Describes how file system I/O works on a FileTable. The primary usage of FileTables is expected to be through the Windows file system and file I/O AP"
+tags: ["filestream","access-with-file-input-output-apis"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 Describes how file system I/O works on a FileTable.
 

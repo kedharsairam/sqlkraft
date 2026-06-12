@@ -2,8 +2,8 @@
 title: "Cache considerations and SQLIOSim"
 topic: "io-fundamentals"
 description: "Listen closely to your hardware manufacturer's guidance."
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Listen closely to your hardware manufacturer's guidance.

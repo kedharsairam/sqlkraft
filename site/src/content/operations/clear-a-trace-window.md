@@ -1,31 +1,10 @@
 ---
 title: "Clear a Trace Window"
 topic: "profiler"
-description: |
-  06/06/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  This article describes how to clear the trace window for a trace that is running by using SQL
-
-  Server Profiler.
-
-  1. Select the trace wi
-tags:
-  - "profiler"
-  - "clear-a-trace-window"
-pubDate: 2025-12-01
+description: "06/06/2025 This article describes how to clear the trace window for a trace that is running by using SQL Server Profiler. 1."
+tags: ["profiler","clear-a-trace-window"]
+pubDate: "2025-12-01"
 ---
-
-06/06/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This article describes how to clear the trace window for a trace that is running by using SQL
 

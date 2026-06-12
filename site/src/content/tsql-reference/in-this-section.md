@@ -3,19 +3,9 @@ name: "In This Section"
 title: "In This Section"
 category: "predicates"
 description: ""
-tags: ["tsql", "predicates"]
-pubDate: 2026-05-29
+tags: ["tsql","predicates"]
+pubDate: "2026-05-29"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
-
-Azure SQL Managed Instance
 
 This section describes the RESTORE statements for backups. In addition to the main RESTORE
 

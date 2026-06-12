@@ -2,9 +2,9 @@
 name: "To Analyze Buffer Pool or Manage Buffer Pool"
 title: "To Analyze Buffer Pool or Manage Buffer Pool"
 description: "Step 1: Buffer Pool Utilization by Database"
-category: architecture
+category: "architecture"
 tags: ["architecture"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

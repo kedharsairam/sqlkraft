@@ -1,11 +1,11 @@
 ---
-name: BROKER_RECEIVE_WAIT
+name: "BROKER_RECEIVE_WAIT"
 title: "Broker Receive Wait"
-category: baseline
-severity: low
+category: "baseline"
+severity: "low"
 description: "Occurs when a Service Broker conversation endpoint waits for messages to arrive. Normal part of Service Broker asynchronous messaging."
-tags: ["service-broker", "receive", "message"]
-pubDate: 2026-05-29
+tags: ["service-broker","receive","message"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

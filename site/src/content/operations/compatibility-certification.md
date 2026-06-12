@@ -1,33 +1,10 @@
 ---
 title: "Compatibility Certification"
 topic: "upgrade"
-description: |
-  06/16/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Compatibility certification allows businesses to upgrade and modernize a SQL Server database
-
-  on-premises, in the c
-tags:
-  - "upgrade"
-  - "compatibility-certification"
-pubDate: 2025-12-01
+description: "06/16/2025 Compatibility certification allows businesses to upgrade and modernize a SQL Server database on-premises, in the c"
+tags: ["upgrade","compatibility-certification"]
+pubDate: "2025-12-01"
 ---
-
-06/16/2025
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Compatibility certification allows businesses to upgrade and modernize a SQL Server database
 
@@ -71,9 +48,7 @@ because existing databases keep their current compatibility level, they continue
 
 designed even after upgrades to the underlying Database Engine.
 
-This is also how SharePoint Server 2016 and SharePoint Server 2019 certify on SQL Server and
-
-Azure SQL Managed Instance. You can deploy any SQL Server Database Engine that uses the
+This is also how SharePoint Server 2016 and SharePoint Server 2019 certify on SQL Server and. You can deploy any SQL Server Database Engine that uses the
 
 supported database compatibility levels for those SharePoint Server versions. For more
 

@@ -1,32 +1,10 @@
 ---
 title: "Heaps (tables without a clustered index)"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  A heap is a table without a clustered index. One or more nonclustered indexes can be created
-
-tags:
-  - "filestream"
-  - "heaps-tables-without-a-clustered-index"
-pubDate: 2025-12-01
+description: "A heap is a table without a clustered index. One or more nonclustered indexes can be created"
+tags: ["filestream","heaps-tables-without-a-clustered-index"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 A heap is a table without a clustered index. One or more nonclustered indexes can be created
 

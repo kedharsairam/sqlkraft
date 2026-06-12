@@ -3,8 +3,8 @@ name: "Table variables and row estimates"
 title: "Table variables and row estimates"
 category: "data-types"
 description: "A constraint that enforces entity integrity for a given column or columns through a unique"
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 A constraint that enforces entity integrity for a given column or columns through a unique

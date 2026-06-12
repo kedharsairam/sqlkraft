@@ -3,19 +3,19 @@ name: "sys.trace_events"
 title: "sys.trace_events"
 category: "compatibility"
 description: "Contains one row for each Extended Events event that is mapped to a SQL Trace event class. This table is stored in the master database, in the sys schema. The ID of the SQL Trace event class that is being mapped."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 syntax: |
   SELECT te.name, xe.package_name, xe.xe_event_name
-  FROM sys.trace_events AS te
-  LEFT JOIN sys.trace_xe_event_map AS xe
-  ON te.trace_event_id = xe.trace_event_id
-  WHERE xe.trace_event_id IS NOT NULL
-  SELECT te.trace_event_id, te.name
-  FROM sys.trace_events AS te
-  LEFT JOIN sys.trace_xe_event_map AS xe
-  ON te.trace_event_id = xe.trace_event_id
-  WHERE xe.trace_event_id IS NULL
+      FROM sys.trace_events AS te
+      LEFT JOIN sys.trace_xe_event_map AS xe
+      ON te.trace_event_id = xe.trace_event_id
+      WHERE xe.trace_event_id IS NOT NULL
+      SELECT te.trace_event_id, te.name
+      FROM sys.trace_events AS te
+      LEFT JOIN sys.trace_xe_event_map AS xe
+      ON te.trace_event_id = xe.trace_event_id
+      WHERE xe.trace_event_id IS NULL
 ---
 
 ## Description

@@ -3,19 +3,13 @@ name: "Bitwise operators"
 title: "Bitwise operators"
 category: "data-types"
 description: ""
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 Operator
 
 Bitwise math
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Azure
 
@@ -28,8 +22,6 @@ SQL analytics endpoint in Microsoft
 Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Bitwise operators perform bit manipulations between two expressions of any of the data types of the integer data type category.
 

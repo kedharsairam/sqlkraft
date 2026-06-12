@@ -2,8 +2,8 @@
 title: "Read data damage and wear leveling"
 topic: "query-processing"
 description: "A newly formatted drive usually holds all zeros."
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 A newly formatted drive usually holds all zeros. An erased block of a solid-state device is all

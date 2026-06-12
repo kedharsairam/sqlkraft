@@ -1,11 +1,11 @@
 ---
-name: SLEEP_TASK
+name: "SLEEP_TASK"
 title: "Sleep Task Wait"
-category: baseline
-severity: info
+category: "baseline"
+severity: "info"
 description: "Occurs when a task voluntarily sleeps while waiting for an event such as WAITFOR, query timeout, or connection sleep. High counts are normal — this is the idle wait type."
-tags: ["sleep", "idle", "waitfor"]
-pubDate: 2026-05-29
+tags: ["sleep","idle","waitfor"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

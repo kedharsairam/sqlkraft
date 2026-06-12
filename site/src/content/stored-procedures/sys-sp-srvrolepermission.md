@@ -4,13 +4,13 @@ title: "sp_srvrolepermission"
 category: "general"
 description: "Displays the permissions of a fixed server role."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_srvrolepermission [ [ @srvrolename = ]
-  N
-  'srvrolename'
-  ]
-  [ ; ]
+      N
+      'srvrolename'
+      ]
+      [ ; ]
 ---
 
 ## Description

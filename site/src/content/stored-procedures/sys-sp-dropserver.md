@@ -4,16 +4,16 @@ title: "sp_dropserver"
 category: "general"
 description: "Removes a server from the list of known remote and linked servers on the local instance of SQL The server to be removed. , with no default. Indicates that related remote and linked server logins for must also be removed if , with a default of An error is returned if you run on a server with associated remote and linked server login entries"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_dropserver
-  [ @server = ]
-  N
-  'server'
-  [ , [ @droplogins = ]
-  'droplogins'
-  ]
-  [ ; ]
+      [ @server = ]
+      N
+      'server'
+      [ , [ @droplogins = ]
+      'droplogins'
+      ]
+      [ ; ]
 ---
 
 ## Description
@@ -34,8 +34,6 @@ N
 ```
 
 ## Remarks
-
-Azure SQL Managed Instance
 
 Removes a server from the list of known remote and linked servers on the local instance of SQL
 

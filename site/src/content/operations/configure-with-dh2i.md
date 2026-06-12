@@ -1,31 +1,10 @@
 ---
 title: "Configure with DH2i"
 topic: "linux-operations"
-description: |
-  Article
-
-  •
-
-  02/13/2023
-
-  Applies to:
-
-  SQL Server on Azure VM
-
-  This tutorial explains how to configure a SQL Server Always On availability group with DH2i
-
-  DxEnterprise running on Linux-based Azure Virt
-tags:
-  - "linux-operations"
-  - "configure-with-dh2i"
-pubDate: 2025-12-01
+description: "on Azure VM This tutorial explains how to configure a SQL Server Always On availability group with DH2i DxEnterprise running on Linux-based Azure Virt"
+tags: ["linux-operations","configure-with-dh2i"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/13/2023
 
 on Azure VM
 

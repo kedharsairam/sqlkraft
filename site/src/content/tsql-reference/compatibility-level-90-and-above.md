@@ -3,8 +3,8 @@ name: "Compatibility level 90 and above"
 title: "Compatibility level 90 and above"
 category: "operators"
 description: "In the preceding code example, the final example has a mismatch between format"
-tags: ["tsql", "operators"]
-pubDate: 2026-05-29
+tags: ["tsql","operators"]
+pubDate: "2026-05-29"
 ---
 
 In the preceding code example, the final example has a mismatch between format versus the input string. The third node of the input string represents a numeric value that is too large to be a day. Microsoft doesn't guarantee the output value from such mismatches.
@@ -91,21 +91,11 @@ varchar(max)
 
 char
 
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
 
 SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 When an operator combines expressions of different data types, the data type with the lower precedence is first converted to the data type with the higher precedence. If the conversion isn't a supported implicit conversion, an error is returned. For an operator combining operand expressions having the same data type, the result of the operation has that data type.
 
@@ -257,21 +247,11 @@ rowversion
 
 timestamp
 
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
-
 Analytics Platform System (PDW)
 
 SQL analytics endpoint in Microsoft Fabric
 
 Warehouse in Microsoft Fabric
-
-SQL database in Microsoft Fabric
 
 Data type synonyms are included in SQL Server for ISO compatibility. The following table lists the synonyms and the SQL Server system data types that they map to.
 

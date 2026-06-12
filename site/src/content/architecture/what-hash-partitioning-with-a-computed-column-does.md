@@ -2,8 +2,8 @@
 title: "What hash partitioning with a computed column does"
 topic: "io-fundamentals"
 description: "The following sample script can be customized for purposes of your implementation:"
-tags: ["io-fundamentals", "architecture"]
-pubDate: 2026-05-29
+tags: ["io-fundamentals","architecture"]
+pubDate: "2026-05-29"
 ---
 
 The following sample script can be customized for purposes of your implementation:

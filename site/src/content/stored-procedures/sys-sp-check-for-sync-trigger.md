@@ -4,16 +4,16 @@ title: "sp_check_for_sync_trigger"
 category: "general"
 description: "Determines whether a user-defined trigger or stored procedure is being called in the context of a replication trigger, which is used for immediate updating subscriptions. This stored procedure is executed at the Publisher on the publication database or at the Subscriber on the The object ID of the table being checked for immediate updating triggers."
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_check_for_sync_trigger
-  [ @tabid = ] tabid
-  [ , [ @trigger_op = ]
-  'trigger_op'
-  OUTPUT
-  ]
-  [ , [ @fonpublisher = ] fonpublisher ]
-  [ ; ]
+      [ @tabid = ] tabid
+      [ , [ @trigger_op = ]
+      'trigger_op'
+      OUTPUT
+      ]
+      [ , [ @fonpublisher = ] fonpublisher ]
+      [ ; ]
 ---
 
 ## Description

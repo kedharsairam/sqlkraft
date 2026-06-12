@@ -1,37 +1,10 @@
 ---
 title: "Design guidance"
 topic: "filestream"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  Analytics Platform System (PDW)
-
-  SQL database in Microsoft
-
-  Fabric
-
-  High-level recommendations for des
-tags:
-  - "filestream"
-  - "design-guidance"
-pubDate: 2025-12-01
+description: ""
+tags: ["filestream","design-guidance"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 Analytics Platform System (PDW)
 

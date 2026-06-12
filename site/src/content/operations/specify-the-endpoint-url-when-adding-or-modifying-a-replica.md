@@ -1,33 +1,10 @@
 ---
 title: "Specify the endpoint URL when adding or modifying a replica"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  To host an availability replica for an availability group, a server instance must possess a
-
-  database mirroring endpoint. The server instance uses this
-tags:
-  - "high-availability"
-  - "specify-the-endpoint-url-when-adding-or-modifying-a-replica"
-pubDate: 2025-12-01
+description: "To host an availability replica for an availability group, a server instance must possess a database mirroring endpoint."
+tags: ["high-availability","specify-the-endpoint-url-when-adding-or-modifying-a-replica"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 To host an availability replica for an availability group, a server instance must possess a
 

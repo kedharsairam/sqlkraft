@@ -1,35 +1,16 @@
 ---
 title: "Sample"
 topic: "sql-graph"
-description: |
-  Applies to:
-
-  SQL Server 2017 (14.x) and later versions
-
-  Azure SQL Database
-
-  Azure
-
-  SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  This sample provides a Transact-SQL script to create a graph
-tags:
-  - "sql-graph"
-  - "sample"
-pubDate: 2025-12-01
+description: ""
+tags: ["sql-graph","sample"]
+pubDate: "2025-12-01"
 ---
 
 2017 (14.x) and later versions
 
-Azure SQL Database
-
 Azure
 
 SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 This sample provides a Transact-SQL script to create a graph database with nodes and edges
 

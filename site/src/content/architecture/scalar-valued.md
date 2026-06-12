@@ -1,33 +1,10 @@
 ---
 title: "Scalar-valued"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  A scalar-valued function (SVF) returns a single value, such as a string, integer, or bit value. You
-
-  can create scalar-valued user-defined functions in
-tags:
-  - "clr-integration"
-  - "scalar-valued"
-pubDate: 2025-12-01
+description: "A scalar-valued function (SVF) returns a single value, such as a string, integer, or bit value."
+tags: ["clr-integration","scalar-valued"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 A scalar-valued function (SVF) returns a single value, such as a string, integer, or bit value. You
 

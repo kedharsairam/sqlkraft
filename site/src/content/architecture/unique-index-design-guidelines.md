@@ -2,8 +2,8 @@
 title: "Unique index design guidelines"
 topic: "index-architecture"
 description: "Fewer index rows fit on a page. This increases disk I/O and reduces cache efficiency."
-tags: ["index-architecture", "architecture"]
-pubDate: 2026-05-29
+tags: ["index-architecture","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Fewer index rows fit on a page. This increases disk I/O and reduces cache efficiency.

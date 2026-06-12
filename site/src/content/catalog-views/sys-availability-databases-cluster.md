@@ -3,8 +3,8 @@ name: "sys.availability_databases_cluster"
 title: "sys.availability_databases_cluster"
 category: "databases-files"
 description: "Returns one row for each availability database on the instance of SQL Server that hosts an availability replica for any Always On availability group in the Windows Server Failover Clustering (WSFC) cluster, regardless of whether the local copy database has been joined to the Unique identifier of the availability group in which the database NULL = database isn't part of an availability replica in a"
-tags: ["databases-files", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["databases-files","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

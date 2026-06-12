@@ -1,33 +1,10 @@
 ---
 title: "Full-Text Catalogs"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  To mirror a database that has a full-text catalog, use backup as usual to create a full database
-
-  backup of the principal database, and then restore th
-tags:
-  - "high-availability"
-  - "full-text-catalogs"
-pubDate: 2025-12-01
+description: ""
+tags: ["high-availability","full-text-catalogs"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
 
 To mirror a database that has a full-text catalog, use backup as usual to create a full database
 

@@ -1,39 +1,14 @@
 ---
 title: "Extended features and tools"
 topic: "profiler"
-description: |
-  ﾃ
-
-  Summarize this article for me
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Azure Synapse Analytics
-
-  This article provides a brief explanation of the various downloads a
-tags:
-  - "profiler"
-  - "extended-features-and-tools"
-pubDate: 2025-12-01
+description: "ﾃ Summarize this article for me This article provides a brief explanation of the various downloads a"
+tags: ["profiler","extended-features-and-tools"]
+pubDate: "2025-12-01"
 ---
 
 ﾃ
 
 Summarize this article for me
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-Azure Synapse Analytics
 
 This article provides a brief explanation of the various downloads and stand-alone packages
 

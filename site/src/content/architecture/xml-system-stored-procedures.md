@@ -1,33 +1,10 @@
 ---
 title: "XML System Stored Procedures"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  SQL Server provides the following system stored procedures that are used together with
-
-  OPENX
-tags:
-  - "xml-data"
-  - "xml-system-stored-procedures"
-pubDate: 2025-12-01
+description: "provides the following system stored procedures that are used together with OPENX"
+tags: ["xml-data","xml-system-stored-procedures"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 provides the following system stored procedures that are used together with
 

@@ -1,43 +1,10 @@
 ---
 title: "SQL Server features"
 topic: "monitor"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure Synapse Analytics
-
-  Analytics
-
-  Platform System (PDW)
-
-  WideWorldImportersDW is designed to showcase many of the key features of
-tags:
-  - "monitor"
-  - "sql-server-features-2"
-pubDate: 2025-12-01
+description: ""
+tags: ["monitor","sql-server-features-2"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure Synapse Analytics
 
 Analytics
 

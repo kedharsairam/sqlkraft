@@ -1,33 +1,10 @@
 ---
 title: "Change the database compatibility mode with Query Tuning Assistant"
 topic: "upgrade"
-description: |
-  Article
-
-  •
-
-  03/28/2025
-
-  Applies to:
-
-  SQL Server 2016 (13.x) and later versions
-
-  When migrating from an older version of SQL Server to SQL Server 2014 (12.x) or later versions,
-
-  and
-
-  upgrading the data
-tags:
-  - "upgrade"
-  - "change-the-database-compatibility-mode-with-query-tuning-assistant"
-pubDate: 2025-12-01
+description: ""
+tags: ["upgrade","change-the-database-compatibility-mode-with-query-tuning-assistant"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/28/2025
 
 2016 (13.x) and later versions
 

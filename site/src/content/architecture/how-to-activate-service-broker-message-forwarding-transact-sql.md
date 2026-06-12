@@ -1,29 +1,10 @@
 ---
 title: "How to: Activate Service Broker Message Forwarding (Transact-SQL)"
 topic: "service-broker"
-description: |
-  08/29/2025
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  Message forwarding allows an instance of SQL Server to accept messages from outside the
-
-  instance and send those messages to a differen
-tags:
-  - "service-broker"
-  - "how-to-activate-service-broker-message-forwarding-transact-sql"
-pubDate: 2025-12-01
+description: "08/29/2025 Message forwarding allows an instance of SQL Server to accept messages from outside the instance and send those messages to a differen"
+tags: ["service-broker","how-to-activate-service-broker-message-forwarding-transact-sql"]
+pubDate: "2025-12-01"
 ---
-
-08/29/2025
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Message forwarding allows an instance of SQL Server to accept messages from outside the
 

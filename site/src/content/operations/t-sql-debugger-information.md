@@ -1,26 +1,10 @@
 ---
 title: "T-SQL Debugger Information"
 topic: "ssb-diagnose"
-description: |
-  09/09/2025
-
-  Applies to:
-
-  SQL Server
-
-  Every time that the debugger pauses execution on a specific Transact-SQL statement, you can
-
-  use the various debugger windows to view the current execution state.
-
-tags:
-  - "ssb-diagnose"
-  - "t-sql-debugger-information"
-pubDate: 2025-12-01
+description: "09/09/2025 Every time that the debugger pauses execution on a specific Transact-SQL statement, you can use the various debugger windows to view the current execution state."
+tags: ["ssb-diagnose","t-sql-debugger-information"]
+pubDate: "2025-12-01"
 ---
-
-09/09/2025
-
-SQL Server
 
 Every time that the debugger pauses execution on a specific Transact-SQL statement, you can
 

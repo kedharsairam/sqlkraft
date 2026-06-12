@@ -2,9 +2,9 @@
 name: "To Kill all Sleeping Sessions"
 title: "To Kill all Sleeping Sessions"
 description: "diagnostic script for architecture operations."
-category: architecture
-tags: ["architecture", "session"]
-pubDate: 2025-03-15
+category: "architecture"
+tags: ["architecture","session"]
+pubDate: "2025-03-15"
 ---
 
 ```sql

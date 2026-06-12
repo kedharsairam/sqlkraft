@@ -3,8 +3,8 @@ name: "sys.fn_get_sql"
 title: "sys.fn_get_sql"
 category: "system"
 description: "Returns the text of the SQL statement for the specified SQL handle. Database ID. For ad hoc and prepared SQL statements, the ID of the database where the statements were compiled."
-tags: ["system", "function"]
-pubDate: 2026-05-29
+tags: ["system","function"]
+pubDate: "2026-05-29"
 syntax: "sys.fn_get_sql ( SqlHandle )"
 ---
 
@@ -19,12 +19,6 @@ sys.fn_get_sql ( SqlHandle )
 ```
 
 ## Arguments
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 Returns the text of the SQL batch that is identified by the specified. This table-
 

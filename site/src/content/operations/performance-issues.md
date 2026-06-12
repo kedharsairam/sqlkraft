@@ -1,43 +1,10 @@
 ---
 title: "Performance issues"
 topic: "ssms"
-description: |
-  Article
-
-  •
-
-  11/22/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  When you analyze the T-SQL code in your database project, one or more
-tags:
-  - "ssms"
-  - "performance-issues"
-pubDate: 2025-12-01
+description: ""
+tags: ["ssms","performance-issues"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-11/22/2024
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 When you analyze the T-SQL code in your database project, one or more warnings might be
 

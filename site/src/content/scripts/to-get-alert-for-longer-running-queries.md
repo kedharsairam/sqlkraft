@@ -2,9 +2,9 @@
 name: "To Get Alert for Longer Running Queries"
 title: "To Get Alert for Longer Running Queries"
 description: "diagnostic script for automation operations."
-category: automation
+category: "automation"
 tags: ["automation"]
-pubDate: 2025-03-15
+pubDate: "2025-03-15"
 ---
 
 ```sql

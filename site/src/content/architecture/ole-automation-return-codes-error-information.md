@@ -1,35 +1,10 @@
 ---
 title: "OLE automation return codes & error information"
 topic: "spatial-data"
-description: |
-  Article
-
-  •
-
-  12/21/2022
-
-  Applies to:
-
-  SQL Server
-
-  The OLE automation system stored procedures return an
-
-  return code that is the HRESULT
-
-  returned by the underlying OLE automation operation. An HRESULT
-tags:
-  - "spatial-data"
-  - "ole-automation-return-codes-error-information"
-pubDate: 2025-12-01
+description: "The OLE automation system stored procedures return an return code that is the HRESULT returned by the underlying OLE automation operation. An HRESULT"
+tags: ["spatial-data","ole-automation-return-codes-error-information"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/21/2022
-
-SQL Server
 
 The OLE automation system stored procedures return an
 

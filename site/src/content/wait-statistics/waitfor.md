@@ -1,11 +1,11 @@
 ---
-name: WAITFOR
+name: "WAITFOR"
 title: "WAITFOR Wait"
-category: baseline
-severity: info
+category: "baseline"
+severity: "info"
 description: "Occurs when a session executes the WAITFOR command (DELAY or TIME). This is intentional application-level waiting and is almost never a performance problem."
-tags: ["waitfor", "delay", "application"]
-pubDate: 2026-05-29
+tags: ["waitfor","delay","application"]
+pubDate: "2026-05-29"
 ---
 
 ## Overview

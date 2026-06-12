@@ -1,11 +1,11 @@
 ---
-name: PAGELATCH_UP
+name: "PAGELATCH_UP"
 title: "Page Latch (Update) Wait"
-category: blocking
-severity: high
+category: "blocking"
+severity: "high"
 description: "Occurs when waiting for an update latch on a buffer pool page in memory. The classic 'last-page insert contention' signal on index leaf pages — common on sequential identity columns and datetime clustered indexes."
-tags: ["latch", "page", "update", "last-page"]
-pubDate: 2026-05-29
+tags: ["latch","page","update","last-page"]
+pubDate: "2026-05-29"
 relatedScripts: ["diagnose-last-page-insert-contention"]
 ---
 

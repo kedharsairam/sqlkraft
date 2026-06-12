@@ -4,13 +4,13 @@ title: "sp_helplanguage"
 category: "general"
 description: "Reports information about a particular alternative language or about all languages in SQL The name of the alternative language for which to display information. is specified, information about the specified language is returned. If language isn't specified, information about all languages in the compatibility view is returned. Langua"
 tags: ["stored-procedure"]
-pubDate: 2026-05-29
+pubDate: "2026-05-29"
 syntax: |
   sp_helplanguage [ [ @language = ]
-  N
-  'language'
-  ]
-  [ ; ]
+      N
+      'language'
+      ]
+      [ ; ]
 ---
 
 ## Description

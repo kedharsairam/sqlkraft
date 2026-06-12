@@ -1,35 +1,10 @@
 ---
 title: "PowerShell"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  09/04/2024
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to use PowerShell cmdlets to create and configure an Always On
-
-  availability group by using PowerShell in SQL Server. An
-
-  avai
-tags:
-  - "high-availability"
-  - "powershell"
-pubDate: 2025-12-01
+description: "This topic describes how to use PowerShell cmdlets to create and configure an Always On availability group by using PowerShell in SQL Server."
+tags: ["high-availability","powershell"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-09/04/2024
-
-SQL Server
 
 This topic describes how to use PowerShell cmdlets to create and configure an Always On
 

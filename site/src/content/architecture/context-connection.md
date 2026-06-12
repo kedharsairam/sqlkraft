@@ -1,33 +1,10 @@
 ---
 title: "Context Connection"
 topic: "clr-integration"
-description: |
-  Article
-
-  •
-
-  12/30/2024
-
-  Applies to:
-
-  SQL Server
-
-  The problem of internal data access is a fairly common scenario. That is, you wish to access the
-
-  same server on which your common language runtime (CL
-tags:
-  - "clr-integration"
-  - "context-connection"
-pubDate: 2025-12-01
+description: "The problem of internal data access is a fairly common scenario. That is, you wish to access the same server on which your common language runtime (CL"
+tags: ["clr-integration","context-connection"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-12/30/2024
-
-SQL Server
 
 The problem of internal data access is a fairly common scenario. That is, you wish to access the
 

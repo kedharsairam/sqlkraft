@@ -2,8 +2,8 @@
 title: "Space used in tempdb"
 topic: "query-processing"
 description: "are detected, they're handled and retried"
-tags: ["query-processing", "architecture"]
-pubDate: 2026-05-29
+tags: ["query-processing","architecture"]
+pubDate: "2026-05-29"
 ---
 
 Update conflict

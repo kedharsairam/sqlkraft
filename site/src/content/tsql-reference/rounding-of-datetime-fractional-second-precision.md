@@ -3,8 +3,8 @@ name: "Rounding of datetime fractional second precision"
 title: "Rounding of datetime fractional second precision"
 category: "data-types"
 description: "= timestamp (time + date)"
-tags: ["tsql", "data-types"]
-pubDate: 2026-05-29
+tags: ["tsql","data-types"]
+pubDate: "2026-05-29"
 ---
 
 = timestamp (time + date)

@@ -3,8 +3,8 @@ name: "sys.resource_governor_resource_pools"
 title: "sys.resource_governor_resource_pools"
 category: "compatibility"
 description: "Returns the stored resource pool configuration. Each row represents a resource pool. Unique ID of the resource pool. Not nullable."
-tags: ["compatibility", "catalog-view"]
-pubDate: 2026-05-29
+tags: ["compatibility","catalog-view"]
+pubDate: "2026-05-29"
 ---
 
 ## Description

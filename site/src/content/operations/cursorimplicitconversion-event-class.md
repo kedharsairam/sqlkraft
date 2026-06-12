@@ -1,35 +1,10 @@
 ---
 title: "CursorImplicitConversion Event Class"
 topic: "event-classes"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  The
-
-  event class describes cursor-implicit conversion events that
-
-  occur in application progr
-tags:
-  - "event-classes"
-  - "cursorimplicitconversion-event-class"
-pubDate: 2025-12-01
+description: ""
+tags: ["event-classes","cursorimplicitconversion-event-class"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 The
 

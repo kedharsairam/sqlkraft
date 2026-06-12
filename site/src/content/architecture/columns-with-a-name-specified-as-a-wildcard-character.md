@@ -1,31 +1,10 @@
 ---
 title: "Columns with a Name Specified as a Wildcard Character"
 topic: "xml-data"
-description: |
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  SQL database in Microsoft Fabric
-
-  If the column name specified is a wildcard character (*), the content of that column is inser
-tags:
-  - "xml-data"
-  - "columns-with-a-name-specified-as-a-wildcard-character"
-pubDate: 2025-12-01
+description: ""
+tags: ["xml-data","columns-with-a-name-specified-as-a-wildcard-character"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
-
-SQL database in Microsoft Fabric
 
 If the column name specified is a wildcard character (\*), the content of that column is inserted
 

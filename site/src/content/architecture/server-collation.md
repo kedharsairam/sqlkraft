@@ -1,37 +1,10 @@
 ---
 title: "Server Collation"
 topic: "collation"
-description: |
-  Article
-
-  •
-
-  04/05/2024
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Managed Instance
-
-  The server collation acts as the default collation for all system databases that are installed with
-
-  the instance of SQL Se
-tags:
-  - "collation"
-  - "server-collation"
-pubDate: 2025-12-01
+description: "The server collation acts as the default collation for all system databases that are installed with the instance of SQL Se"
+tags: ["collation","server-collation"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/05/2024
-
-SQL Server
-
-Azure SQL Managed Instance
 
 The server collation acts as the default collation for all system databases that are installed with
 

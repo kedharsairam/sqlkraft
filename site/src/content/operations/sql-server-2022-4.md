@@ -1,28 +1,9 @@
 ---
 title: "SQL Server 2022 >"
 topic: "linux-operations"
-description: |
-  Applies to: SQL Server 2022
-
-  The following table lists the release history for SQL Server 2022 (16.x).
-
-  CU 24 GDR (May 2026)
-
-  16.0.4252.3
-
-  2026-05-12
-
-  CU 24 GDR (Apr 2026)
-
-  16.0.4250.1
-
-  2026-04-14
-
-  CU
-tags:
-  - "linux-operations"
-  - "sql-server-2022-4"
-pubDate: 2025-12-01
+description: "The following table lists the release history for SQL Server 2022 (16.x). CU 24 GDR (May 2026) 16.0.4252.3 2026-05-12 CU 24 GDR (Apr 2026) 16.0.4250.1 2026-04-14 CU"
+tags: ["linux-operations","sql-server-2022-4"]
+pubDate: "2025-12-01"
 ---
 
 The following table lists the release history for SQL Server 2022 (16.x).

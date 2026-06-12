@@ -1,25 +1,10 @@
 ---
 title: "View inventory"
 topic: "azure-synapse"
-description: |
-  Applies to:
-
-  SQL Server
-
-  When SQL Server engine instances or associated services are enabled by Azure Arc, you can
-
-  use Azure to manage your inventory.
-
-  Verify that the SQL Server service is
-
-  Version
-tags:
-  - "azure-synapse"
-  - "view-inventory"
-pubDate: 2025-12-01
+description: "When SQL Server engine instances or associated services are enabled by Azure Arc, you can use Azure to manage your inventory. Verify that the SQL Server service is Version"
+tags: ["azure-synapse","view-inventory"]
+pubDate: "2025-12-01"
 ---
-
-SQL Server
 
 When SQL Server engine instances or associated services are enabled by Azure Arc, you can
 

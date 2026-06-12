@@ -1,31 +1,12 @@
 ---
 title: "Use SSDT"
 topic: "linux-operations"
-description: |
-  SQL Server on Linux
-
-  07/03/2025
-
-  Applies to:
-
-  SQL Server
-
-  - Linux
-
-  SQL Server Data Tools (SSDT) turns Visual Studio into a powerful development and database
-
-  lifecycle management (DLM) environment for
-tags:
-  - "linux-operations"
-  - "use-ssdt"
-pubDate: 2025-12-01
+description: ""
+tags: ["linux-operations","use-ssdt"]
+pubDate: "2025-12-01"
 ---
 
 on Linux
-
-07/03/2025
-
-SQL Server
 
 - Linux
 

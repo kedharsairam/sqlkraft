@@ -1,33 +1,10 @@
 ---
 title: "View Quorum NodeWeight Settings"
 topic: "high-availability"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  This topic describes how to view NodeWeight settings for each member node in a Windows
-
-  Server Failover Clustering (WSFC) cluster. NodeWeight settings
-tags:
-  - "high-availability"
-  - "view-quorum-nodeweight-settings"
-pubDate: 2025-12-01
+description: "This topic describes how to view NodeWeight settings for each member node in a Windows Server Failover Clustering (WSFC) cluster. NodeWeight settings"
+tags: ["high-availability","view-quorum-nodeweight-settings"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
 
 This topic describes how to view NodeWeight settings for each member node in a Windows
 

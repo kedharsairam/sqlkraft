@@ -1,41 +1,10 @@
 ---
 title: "Selective XML Indexes (SXI)"
 topic: "xml-data"
-description: |
-  Article
-
-  •
-
-  02/28/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  Selective XML indexes are another type of XML index that is available to you in addition to
-
-  ordinary X
-tags:
-  - "xml-data"
-  - "selective-xml-indexes-sxi"
-pubDate: 2025-12-01
+description: "Selective XML indexes are another type of XML index that is available to you in addition to ordinary X"
+tags: ["xml-data","selective-xml-indexes-sxi"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-02/28/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 Selective XML indexes are another type of XML index that is available to you in addition to
 

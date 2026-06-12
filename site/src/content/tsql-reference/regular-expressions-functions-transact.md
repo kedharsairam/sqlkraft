@@ -3,8 +3,8 @@ name: "Regular expressions functions (Transact-"
 title: "Regular expressions functions (Transact-"
 category: "statements"
 description: "2025 (17.x)"
-tags: ["tsql", "statements"]
-pubDate: 2026-05-29
+tags: ["tsql","statements"]
+pubDate: "2026-05-29"
 ---
 
 #### Function
@@ -19,13 +19,9 @@ SQL)
 
 2025 (17.x)
 
-Azure SQL Database
-
 Azure SQL Managed
 
 Instance
-
-SQL database in Microsoft Fabric
 
 Use the functions described in this article to match complex patterns and manipulate data in
 
@@ -80,8 +76,6 @@ Regular expressions
 Note
 
 Regular expressions are available in Azure SQL Managed Instance with the
-
-SQL Server
 
 or.
 

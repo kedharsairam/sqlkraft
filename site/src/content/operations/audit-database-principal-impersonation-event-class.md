@@ -1,44 +1,10 @@
 ---
 title: "Audit Database Principal Impersonation Event Class"
 topic: "event-classes"
-description: |
-  Article
-
-  •
-
-  03/03/2023
-
-  Applies to:
-
-  SQL Server
-
-  Azure SQL Database
-
-  Azure SQL Managed Instance
-
-  The
-
-  event class occurs when an impersonation occurs
-
-  within the database scope, such as EXECUTE AS <
-
-tags:
-  - "event-classes"
-  - "audit-database-principal-impersonation-event-class"
-pubDate: 2025-12-01
+description: "The event class occurs when an impersonation occurs within the database scope, such as EXECUTE AS <"
+tags: ["event-classes","audit-database-principal-impersonation-event-class"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-03/03/2023
-
-SQL Server
-
-Azure SQL Database
-
-Azure SQL Managed Instance
 
 The
 

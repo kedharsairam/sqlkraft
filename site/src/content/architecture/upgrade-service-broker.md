@@ -3,26 +3,17 @@ title: "Upgrade (Service Broker)"
 topic: "service-broker"
 description: |
   09/16/2025
-
-  Service Broker operations don't change when a database or an instance of the Database Engine
-
-  are upgraded. The Service Broker features available in SQL Server across supported versions.
-
-tags:
-  - "service-broker"
-  - "upgrade-service-broker"
-pubDate: 2025-12-01
+  
+    Service Broker operations don't change when a database or an instance of the Database Engine
+  
+    are upgraded. The Service Broker features available in SQL Server across supported versions.
+tags: ["service-broker","upgrade-service-broker"]
+pubDate: "2025-12-01"
 ---
-
-09/16/2025
 
 Service Broker operations don't change when a database or an instance of the Database Engine
 
 are upgraded. The Service Broker features available in SQL Server across supported versions.
-
-SQL Server
-
-Azure SQL Managed Instance
 
 Databases are upgraded when the following are true:
 

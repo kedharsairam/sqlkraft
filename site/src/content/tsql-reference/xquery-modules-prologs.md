@@ -4,19 +4,9 @@ title: "XQuery - Modules & Prologs"
 category: "xquery"
 description: "XQuery Language Reference: Modules & Prologs"
 syntax: "version"
-tags:
-  - "xquery"
-  - "modules-prologs"
-pubDate: 2025-12-01
+tags: ["xquery","modules-prologs"]
+pubDate: "2025-12-01"
 ---
-
-Article
-
-•
-
-04/03/2023
-
-SQL Server
 
 XQuery Prolog is a series of namespace declarations. In using the declare namespace in prolog, you can specify prefix to namespace binding and use the prefix in the query body.
 
